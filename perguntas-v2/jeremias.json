@@ -1,0 +1,2934 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Jeremias 1:5",
+    "learningObjective": "Reconhecer que Jeová conhece, santifica e constitui Jeremias profeta às nações antes do nascimento.",
+    "evidence": [
+      "Jeremias 1:5"
+    ],
+    "type": "true_false",
+    "question": "Antes que Jeová formasse Jeremias no ventre, já o conheceu.",
+    "prompt": "Antes que Jeová formasse Jeremias no ventre, já o conheceu.",
+    "cue": "Antes que Jeová formasse Jeremias no ventre, já o conheceu.",
+    "feedbackCorrect": "Certo: o texto diz que Jeová o conheceu antes de formá-lo.",
+    "feedbackWrong": {
+      "false": "Releia Jeremias 1:5: o conhecimento precede a formação no ventre."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-01-antes-que-te-formass",
+    "id": "jeremias-sem-jeremias-chamado-je-01-antes-que-te-formass-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Jeremias 1:5",
+    "learningObjective": "Reconhecer que Jeová conhece, santifica e constitui Jeremias profeta às nações antes do nascimento.",
+    "evidence": [
+      "Jeremias 1:5"
+    ],
+    "type": "tap",
+    "question": "Em Jeremias 1:5, toque a palavra que falta em \"Antes que eu te ___ no ventre, te conheci\"?",
+    "prompt": "Em Jeremias 1:5, toque a palavra que falta em \"Antes que eu te ___ no ventre, te conheci\"?",
+    "cue": "Em Jeremias 1:5, toque a palavra que falta em \"Antes que eu te ___ no ventre, te conheci\"?",
+    "feedbackCorrect": "Exato: o verbo é formasse — o chamado precede a formação.",
+    "feedbackWrong": {
+      "b": "Ventre é o lugar da formação, não o verbo desta lacuna.",
+      "c": "Madre aparece depois, ligada ao nascimento, não a esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "formasse"
+      },
+      {
+        "id": "b",
+        "text": "ventre"
+      },
+      {
+        "id": "c",
+        "text": "madre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-01-antes-que-te-formass",
+    "id": "jeremias-sem-jeremias-chamado-je-01-antes-que-te-formass-02",
+    "template": "Antes que eu te ___ no ventre, te conheci"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Jeremias 1:5",
+    "learningObjective": "Reconhecer que Jeová conhece, santifica e constitui Jeremias profeta às nações antes do nascimento.",
+    "evidence": [
+      "Jeremias 1:5"
+    ],
+    "type": "choice",
+    "question": "O que Jeová afirma ter feito a Jeremias ainda antes do nascimento?",
+    "prompt": "O que Jeová afirma ter feito a Jeremias ainda antes do nascimento?",
+    "cue": "O que Jeová afirma ter feito a Jeremias ainda antes do nascimento?",
+    "feedbackCorrect": "Certo: o texto liga conhecimento, santificação e constituição.",
+    "feedbackWrong": {
+      "b": "O texto não fala de unção no templo, e sim de santificação antes da madre.",
+      "c": "O texto não restringe o chamado a Judá: é profeta para as nações.",
+      "d": "O conhecimento é anterior à formação, não posterior ao ministério."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Conheceu-o, santificou-o e constituiu-o profeta para as nações"
+      },
+      {
+        "id": "b",
+        "text": "Ungeu-o no templo depois que ele já era sacerdote em Jerusalém"
+      },
+      {
+        "id": "c",
+        "text": "Limitou o chamado a profetizar apenas à casa de Judá"
+      },
+      {
+        "id": "d",
+        "text": "Só o conheceu depois que o ministério público já havia começado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-01-antes-que-te-formass",
+    "id": "jeremias-sem-jeremias-chamado-je-01-antes-que-te-formass-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Jeremias 1:5",
+    "learningObjective": "Reconhecer que Jeová conhece, santifica e constitui Jeremias profeta às nações antes do nascimento.",
+    "evidence": [
+      "Jeremias 1:5"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Jeremias 1:5?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Jeremias 1:5?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Jeremias 1:5?",
+    "feedbackCorrect": "Certo: conheceu, santificou e constituiu, nesta ordem.",
+    "feedbackWrong": {
+      "b": "A santificação vem depois do conhecimento, não antes.",
+      "c": "A constituição como profeta é o desfecho, não o início."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Antes que eu te formasse no ventre, te conheci"
+      },
+      {
+        "id": "b",
+        "text": "antes que saísses da madre, te santifiquei"
+      },
+      {
+        "id": "c",
+        "text": "um profeta para as nações te constituí"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-01-antes-que-te-formass",
+    "id": "jeremias-sem-jeremias-chamado-je-01-antes-que-te-formass-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Jeremias 1:5",
+    "learningObjective": "Reconhecer que Jeová conhece, santifica e constitui Jeremias profeta às nações antes do nascimento.",
+    "evidence": [
+      "Jeremias 1:5"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Antes que eu te formasse no ventre, te ___; e, antes que saísses da madre, te santifiquei\"",
+    "prompt": "Complete a frase: \"Antes que eu te formasse no ventre, te ___; e, antes que saísses da madre, te santifiquei\"",
+    "cue": "Complete a frase: \"Antes que eu te formasse no ventre, te ___; e, antes que saísses da madre, te santifiquei\"",
+    "feedbackCorrect": "Certo: o verbo é conheci — o relacionamento precede o ventre.",
+    "feedbackWrong": {
+      "b": "Santifiquei vem na cláusula seguinte, não nesta lacuna.",
+      "c": "Constituí fecha o versículo, ligado às nações."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "conheci"
+      },
+      {
+        "id": "b",
+        "text": "santifiquei"
+      },
+      {
+        "id": "c",
+        "text": "constituí"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-01-antes-que-te-formass",
+    "id": "jeremias-sem-jeremias-chamado-je-01-antes-que-te-formass-05",
+    "template": "Antes que eu te formasse no ventre, te ___; e, antes que saísses da madre, te santifiquei"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Jeremias 1:5",
+    "learningObjective": "Reconhecer que Jeová conhece, santifica e constitui Jeremias profeta às nações antes do nascimento.",
+    "evidence": [
+      "Jeremias 1:5"
+    ],
+    "type": "connect",
+    "question": "O que Jeremias 1:5 comunica que se liga a este contexto?",
+    "prompt": "O que Jeremias 1:5 comunica que se liga a este contexto?",
+    "cue": "O que Jeremias 1:5 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o chamado precede o ventre e aponta às nações.",
+    "feedbackWrong": {
+      "b": "O texto não descreve vocação tardia após o ministério.",
+      "c": "O alcance é às nações, não um chamado só doméstico."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Chamado antes do ventre"
+      },
+      {
+        "id": "b",
+        "text": "Vocação só depois do ministério"
+      },
+      {
+        "id": "c",
+        "text": "Profeta apenas de Judá"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-01-antes-que-te-formass",
+    "id": "jeremias-sem-jeremias-chamado-je-01-antes-que-te-formass-06",
+    "passageA": {
+      "ref": "Jeremias 1:5",
+      "text": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O chamado de Jeremias precede o ventre: Jeová conhece, santifica e constitui o profeta para as nações."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Jeremias 1:5",
+    "learningObjective": "Reconhecer que Jeová conhece, santifica e constitui Jeremias profeta às nações antes do nascimento.",
+    "evidence": [
+      "Jeremias 1:5"
+    ],
+    "type": "true_false",
+    "question": "O chamado de Jeremias começa somente depois que ele sai da madre.",
+    "prompt": "O chamado de Jeremias começa somente depois que ele sai da madre.",
+    "cue": "O chamado de Jeremias começa somente depois que ele sai da madre.",
+    "feedbackCorrect": "Certo: o chamado é anterior à madre, não posterior.",
+    "feedbackWrong": {
+      "true": "O texto situa conhecimento e santificação antes do nascimento."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-01-antes-que-te-formass",
+    "id": "jeremias-cam-jeremias-chamado-je-01-antes-que-te-formass-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Jeremias 1:5",
+    "learningObjective": "Reconhecer que Jeová conhece, santifica e constitui Jeremias profeta às nações antes do nascimento.",
+    "evidence": [
+      "Jeremias 1:5"
+    ],
+    "type": "tap",
+    "question": "Em Jeremias 1:5, toque a palavra que falta em \"antes que saísses da madre, te ___: um profeta para as nações te constituí\"?",
+    "prompt": "Em Jeremias 1:5, toque a palavra que falta em \"antes que saísses da madre, te ___: um profeta para as nações te constituí\"?",
+    "cue": "Em Jeremias 1:5, toque a palavra que falta em \"antes que saísses da madre, te ___: um profeta para as nações te constituí\"?",
+    "feedbackCorrect": "Exato: santifiquei liga a separação ao ofício profético.",
+    "feedbackWrong": {
+      "b": "Conheci pertence à primeira cláusula, no ventre.",
+      "c": "Constituí vem depois, ligado às nações."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "santifiquei"
+      },
+      {
+        "id": "b",
+        "text": "conheci"
+      },
+      {
+        "id": "c",
+        "text": "constituí"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-01-antes-que-te-formass",
+    "id": "jeremias-cam-jeremias-chamado-je-01-antes-que-te-formass-02",
+    "template": "antes que saísses da madre, te ___: um profeta para as nações te constituí"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Jeremias 1:5",
+    "learningObjective": "Reconhecer que Jeová conhece, santifica e constitui Jeremias profeta às nações antes do nascimento.",
+    "evidence": [
+      "Jeremias 1:5"
+    ],
+    "type": "choice",
+    "question": "Como se relacionam conhecimento, santificação e constituição em Jeremias 1:5?",
+    "prompt": "Como se relacionam conhecimento, santificação e constituição em Jeremias 1:5?",
+    "cue": "Como se relacionam conhecimento, santificação e constituição em Jeremias 1:5?",
+    "feedbackCorrect": "Certo: Jeová age primeiro; o ofício às nações é fruto disso.",
+    "feedbackWrong": {
+      "a": "O texto não apresenta o chamado como mérito de Jeremias.",
+      "c": "A sequência não começa pelo cargo e termina no conhecimento.",
+      "d": "Santificar aqui não é consagrar um edifício, e sim a pessoa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeremias conquista o ofício e depois Jeová o reconhece"
+      },
+      {
+        "id": "b",
+        "text": "Jeová conhece e separa; só então constitui o profeta às nações"
+      },
+      {
+        "id": "c",
+        "text": "A constituição às nações precede o conhecimento no ventre"
+      },
+      {
+        "id": "d",
+        "text": "Santificar significa apenas consagrar o templo de Jerusalém"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-01-antes-que-te-formass",
+    "id": "jeremias-cam-jeremias-chamado-je-01-antes-que-te-formass-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Jeremias 1:5",
+    "learningObjective": "Reconhecer que Jeová conhece, santifica e constitui Jeremias profeta às nações antes do nascimento.",
+    "evidence": [
+      "Jeremias 1:5"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Jeremias 1:5?",
+    "prompt": "Como se encadeiam os eventos de Jeremias 1:5?",
+    "cue": "Como se encadeiam os eventos de Jeremias 1:5?",
+    "feedbackCorrect": "Certo: formação no ventre, saída da madre, ofício às nações.",
+    "feedbackWrong": {
+      "b": "A madre vem depois do ventre, não antes.",
+      "c": "O ofício às nações fecha o versículo, não o abre."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "eu te formasse no ventre, te conheci"
+      },
+      {
+        "id": "b",
+        "text": "saísses da madre, te santifiquei"
+      },
+      {
+        "id": "c",
+        "text": "um profeta para as nações te constituí"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-01-antes-que-te-formass",
+    "id": "jeremias-cam-jeremias-chamado-je-01-antes-que-te-formass-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Jeremias 1:5",
+    "learningObjective": "Reconhecer que Jeová conhece, santifica e constitui Jeremias profeta às nações antes do nascimento.",
+    "evidence": [
+      "Jeremias 1:5"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"um profeta para as nações te ___\"",
+    "prompt": "Complete a frase: \"um profeta para as nações te ___\"",
+    "cue": "Complete a frase: \"um profeta para as nações te ___\"",
+    "feedbackCorrect": "Certo: constituí — o ofício é dado por Jeová, não escolhido.",
+    "feedbackWrong": {
+      "b": "Formasse descreve o ventre, não o ofício às nações.",
+      "c": "Santifiquei liga-se à madre, não a esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "constituí"
+      },
+      {
+        "id": "b",
+        "text": "formasse"
+      },
+      {
+        "id": "c",
+        "text": "santifiquei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-01-antes-que-te-formass",
+    "id": "jeremias-cam-jeremias-chamado-je-01-antes-que-te-formass-05",
+    "template": "um profeta para as nações te ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Jeremias 1:5",
+    "learningObjective": "Reconhecer que Jeová conhece, santifica e constitui Jeremias profeta às nações antes do nascimento.",
+    "evidence": [
+      "Jeremias 1:5"
+    ],
+    "type": "connect",
+    "question": "O que Jeremias 1:5 comunica que se liga a este contexto?",
+    "prompt": "O que Jeremias 1:5 comunica que se liga a este contexto?",
+    "cue": "O que Jeremias 1:5 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: vocação anterior e alcance às nações.",
+    "feedbackWrong": {
+      "b": "O texto não reduz o chamado a um talento natural tardio.",
+      "c": "Não há aqui eleição por assembleia de Judá."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Vocação prévia às nações"
+      },
+      {
+        "id": "b",
+        "text": "Talento natural descoberto tarde"
+      },
+      {
+        "id": "c",
+        "text": "Eleição pela assembleia de Judá"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-01-antes-que-te-formass",
+    "id": "jeremias-cam-jeremias-chamado-je-01-antes-que-te-formass-06",
+    "passageA": {
+      "ref": "Jeremias 1:5",
+      "text": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O chamado de Jeremias precede o ventre: Jeová conhece, santifica e constitui o profeta para as nações."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Jeremias 1:5",
+    "learningObjective": "Reconhecer que Jeová conhece, santifica e constitui Jeremias profeta às nações antes do nascimento.",
+    "evidence": [
+      "Jeremias 1:5"
+    ],
+    "type": "true_false",
+    "question": "Jeová constitui Jeremias profeta para as nações, não apenas para um círculo doméstico.",
+    "prompt": "Jeová constitui Jeremias profeta para as nações, não apenas para um círculo doméstico.",
+    "cue": "Jeová constitui Jeremias profeta para as nações, não apenas para um círculo doméstico.",
+    "feedbackCorrect": "Certo: o texto diz expressamente «para as nações».",
+    "feedbackWrong": {
+      "false": "A cláusula final amplia o alcance: profeta para as nações."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-01-antes-que-te-formass",
+    "id": "jeremias-pro-jeremias-chamado-je-01-antes-que-te-formass-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Jeremias 1:5",
+    "learningObjective": "Reconhecer que Jeová conhece, santifica e constitui Jeremias profeta às nações antes do nascimento.",
+    "evidence": [
+      "Jeremias 1:5"
+    ],
+    "type": "tap",
+    "question": "Em Jeremias 1:5, toque a palavra que falta em \"um profeta para as ___ te constituí\"?",
+    "prompt": "Em Jeremias 1:5, toque a palavra que falta em \"um profeta para as ___ te constituí\"?",
+    "cue": "Em Jeremias 1:5, toque a palavra que falta em \"um profeta para as ___ te constituí\"?",
+    "feedbackCorrect": "Exato: nações — o alcance do ofício ultrapassa Judá.",
+    "feedbackWrong": {
+      "b": "Ventre descreve a formação, não o destinatário do ofício.",
+      "c": "Madre descreve o nascimento, não as nações."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "nações"
+      },
+      {
+        "id": "b",
+        "text": "ventre"
+      },
+      {
+        "id": "c",
+        "text": "madre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-01-antes-que-te-formass",
+    "id": "jeremias-pro-jeremias-chamado-je-01-antes-que-te-formass-02",
+    "template": "um profeta para as ___ te constituí"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Jeremias 1:5",
+    "learningObjective": "Reconhecer que Jeová conhece, santifica e constitui Jeremias profeta às nações antes do nascimento.",
+    "evidence": [
+      "Jeremias 1:5"
+    ],
+    "type": "choice",
+    "question": "Que leitura teológica Jeremias 1:5 sustenta sobre o chamado?",
+    "prompt": "Que leitura teológica Jeremias 1:5 sustenta sobre o chamado?",
+    "cue": "Que leitura teológica Jeremias 1:5 sustenta sobre o chamado?",
+    "feedbackCorrect": "Certo: Jeová antecipa, separa e envia — o profeta não se autodestina.",
+    "feedbackWrong": {
+      "a": "O texto não faz do chamado um mérito moral prévio.",
+      "c": "Não há aqui vocação surgida só da crise de Jerusalém.",
+      "d": "O ofício não é hereditário; é constituição divina."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O profeta nasce santo por mérito próprio no ventre"
+      },
+      {
+        "id": "b",
+        "text": "Jeová conhece, separa e envia antes que o profeta exista"
+      },
+      {
+        "id": "c",
+        "text": "O chamado nasce só da crise política de Jerusalém"
+      },
+      {
+        "id": "d",
+        "text": "O ofício passa de pai para filho, como no sacerdócio"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-01-antes-que-te-formass",
+    "id": "jeremias-pro-jeremias-chamado-je-01-antes-que-te-formass-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Jeremias 1:5",
+    "learningObjective": "Reconhecer que Jeová conhece, santifica e constitui Jeremias profeta às nações antes do nascimento.",
+    "evidence": [
+      "Jeremias 1:5"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Jeremias 1:5?",
+    "prompt": "Qual sequência revela o sentido de Jeremias 1:5?",
+    "cue": "Qual sequência revela o sentido de Jeremias 1:5?",
+    "feedbackCorrect": "Certo: conhecer, santificar e constituir desvendam a vocação.",
+    "feedbackWrong": {
+      "b": "Santificar não é o primeiro ato do versículo.",
+      "c": "Constituir às nações é o telos, não o ponto de partida."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "te conheci"
+      },
+      {
+        "id": "b",
+        "text": "te santifiquei"
+      },
+      {
+        "id": "c",
+        "text": "um profeta para as nações te constituí"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-01-antes-que-te-formass",
+    "id": "jeremias-pro-jeremias-chamado-je-01-antes-que-te-formass-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Jeremias 1:5",
+    "learningObjective": "Reconhecer que Jeová conhece, santifica e constitui Jeremias profeta às nações antes do nascimento.",
+    "evidence": [
+      "Jeremias 1:5"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"antes que saísses da ___, te santifiquei\"",
+    "prompt": "Complete a frase: \"antes que saísses da ___, te santifiquei\"",
+    "cue": "Complete a frase: \"antes que saísses da ___, te santifiquei\"",
+    "feedbackCorrect": "Certo: madre — a santificação é anterior ao nascimento.",
+    "feedbackWrong": {
+      "b": "Nações é o alcance do ofício, não o lugar do nascimento.",
+      "c": "Ventre já apareceu na primeira cláusula."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "madre"
+      },
+      {
+        "id": "b",
+        "text": "nações"
+      },
+      {
+        "id": "c",
+        "text": "ventre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-01-antes-que-te-formass",
+    "id": "jeremias-pro-jeremias-chamado-je-01-antes-que-te-formass-05",
+    "template": "antes que saísses da ___, te santifiquei"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Jeremias 1:5",
+    "learningObjective": "Reconhecer que Jeová conhece, santifica e constitui Jeremias profeta às nações antes do nascimento.",
+    "evidence": [
+      "Jeremias 1:5"
+    ],
+    "type": "connect",
+    "question": "O que Jeremias 1:5 comunica que se liga a este contexto?",
+    "prompt": "O que Jeremias 1:5 comunica que se liga a este contexto?",
+    "cue": "O que Jeremias 1:5 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a iniciativa é de Jeová, anterior e universal.",
+    "feedbackWrong": {
+      "b": "O texto não apresenta o profeta como autor da própria vocação.",
+      "c": "Não há aqui um chamado limitado ao recinto do templo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Iniciativa divina anterior"
+      },
+      {
+        "id": "b",
+        "text": "Autovocação do profeta"
+      },
+      {
+        "id": "c",
+        "text": "Chamado só intramuros do templo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-01-antes-que-te-formass",
+    "id": "jeremias-pro-jeremias-chamado-je-01-antes-que-te-formass-06",
+    "passageA": {
+      "ref": "Jeremias 1:5",
+      "text": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O chamado de Jeremias precede o ventre: Jeová conhece, santifica e constitui o profeta para as nações."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Jeremias 7:4",
+    "learningObjective": "Perceber que repetir «Templo de Jeová» enquanto se mente é confiança falsa, não salvação.",
+    "evidence": [
+      "Jeremias 7:4"
+    ],
+    "type": "true_false",
+    "question": "O texto adverte para não confiar em palavras mentirosas que repetem «Templo de Jeová».",
+    "prompt": "O texto adverte para não confiar em palavras mentirosas que repetem «Templo de Jeová».",
+    "cue": "O texto adverte para não confiar em palavras mentirosas que repetem «Templo de Jeová».",
+    "feedbackCorrect": "Certo: essa é a advertência literal de Jeremias 7:4.",
+    "feedbackWrong": {
+      "false": "Releia 7:4: não confieis em palavras mentirosas com esse slogan."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-02-templo-nao-salva",
+    "id": "jeremias-sem-jeremias-chamado-je-02-templo-nao-salva-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Jeremias 7:4",
+    "learningObjective": "Perceber que repetir «Templo de Jeová» enquanto se mente é confiança falsa, não salvação.",
+    "evidence": [
+      "Jeremias 7:4"
+    ],
+    "type": "tap",
+    "question": "Em Jeremias 7:4, toque a palavra que falta em \"Não confieis em palavras ___, dizendo: Templo de Jeová\"?",
+    "prompt": "Em Jeremias 7:4, toque a palavra que falta em \"Não confieis em palavras ___, dizendo: Templo de Jeová\"?",
+    "cue": "Em Jeremias 7:4, toque a palavra que falta em \"Não confieis em palavras ___, dizendo: Templo de Jeová\"?",
+    "feedbackCorrect": "Exato: mentirosas — o slogan do templo é classificado assim.",
+    "feedbackWrong": {
+      "b": "Confieis é o verbo da proibição, não o adjetivo desta lacuna.",
+      "c": "Templo é o objeto do slogan, não a qualidade das palavras."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "mentirosas"
+      },
+      {
+        "id": "b",
+        "text": "confieis"
+      },
+      {
+        "id": "c",
+        "text": "Templo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-02-templo-nao-salva",
+    "id": "jeremias-sem-jeremias-chamado-je-02-templo-nao-salva-02",
+    "template": "Não confieis em palavras ___, dizendo: Templo de Jeová"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Jeremias 7:4",
+    "learningObjective": "Perceber que repetir «Templo de Jeová» enquanto se mente é confiança falsa, não salvação.",
+    "evidence": [
+      "Jeremias 7:4"
+    ],
+    "type": "choice",
+    "question": "O que o texto manda o povo não fazer?",
+    "prompt": "O que o texto manda o povo não fazer?",
+    "cue": "O que o texto manda o povo não fazer?",
+    "feedbackCorrect": "Certo: a ordem é não confiar nesse slogan mentiroso.",
+    "feedbackWrong": {
+      "a": "O texto não manda demolir o templo neste versículo.",
+      "c": "Não há ordem de repetir o slogan três vezes para proteção.",
+      "d": "O texto não elogia a confiança no prédio."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Demolir o templo de Jeová em Jerusalém"
+      },
+      {
+        "id": "b",
+        "text": "Confiar em palavras mentirosas sobre o templo"
+      },
+      {
+        "id": "c",
+        "text": "Repetir «Templo de Jeová» três vezes para proteção"
+      },
+      {
+        "id": "d",
+        "text": "Confiar no prédio porque o nome de Jeová o cobre"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-02-templo-nao-salva",
+    "id": "jeremias-sem-jeremias-chamado-je-02-templo-nao-salva-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Jeremias 7:4",
+    "learningObjective": "Perceber que repetir «Templo de Jeová» enquanto se mente é confiança falsa, não salvação.",
+    "evidence": [
+      "Jeremias 7:4"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Jeremias 7:4?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Jeremias 7:4?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Jeremias 7:4?",
+    "feedbackCorrect": "Certo: a proibição, a classificação e o slogan repetido.",
+    "feedbackWrong": {
+      "b": "O slogan vem depois da classificação das palavras, não antes.",
+      "c": "«É este» fecha o slogan, não abre o versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Não confieis em palavras mentirosas"
+      },
+      {
+        "id": "b",
+        "text": "dizendo: Templo de Jeová"
+      },
+      {
+        "id": "c",
+        "text": "templo de Jeová é este"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-02-templo-nao-salva",
+    "id": "jeremias-sem-jeremias-chamado-je-02-templo-nao-salva-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Jeremias 7:4",
+    "learningObjective": "Perceber que repetir «Templo de Jeová» enquanto se mente é confiança falsa, não salvação.",
+    "evidence": [
+      "Jeremias 7:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Não confieis em ___ mentirosas, dizendo: Templo de Jeová\"",
+    "prompt": "Complete a frase: \"Não confieis em ___ mentirosas, dizendo: Templo de Jeová\"",
+    "cue": "Complete a frase: \"Não confieis em ___ mentirosas, dizendo: Templo de Jeová\"",
+    "feedbackCorrect": "Certo: palavras — o perigo está no slogan, não só no pedra.",
+    "feedbackWrong": {
+      "b": "Templo é o conteúdo do slogan, não esta lacuna.",
+      "c": "Jeová é o nome invocado no slogan, não o termo que falta aqui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "palavras"
+      },
+      {
+        "id": "b",
+        "text": "Templo"
+      },
+      {
+        "id": "c",
+        "text": "Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-02-templo-nao-salva",
+    "id": "jeremias-sem-jeremias-chamado-je-02-templo-nao-salva-05",
+    "template": "Não confieis em ___ mentirosas, dizendo: Templo de Jeová"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Jeremias 7:4",
+    "learningObjective": "Perceber que repetir «Templo de Jeová» enquanto se mente é confiança falsa, não salvação.",
+    "evidence": [
+      "Jeremias 7:4"
+    ],
+    "type": "connect",
+    "question": "O que Jeremias 7:4 comunica que se liga a este contexto?",
+    "prompt": "O que Jeremias 7:4 comunica que se liga a este contexto?",
+    "cue": "O que Jeremias 7:4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o prédio não salva quem usa o nome como mentira.",
+    "feedbackWrong": {
+      "b": "O texto não garante salvação automática pelo templo.",
+      "c": "Não há aqui um hino de segurança institucional."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Templo não salva"
+      },
+      {
+        "id": "b",
+        "text": "Prédio garante perdão automático"
+      },
+      {
+        "id": "c",
+        "text": "Slogan sagrado protege sempre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-02-templo-nao-salva",
+    "id": "jeremias-sem-jeremias-chamado-je-02-templo-nao-salva-06",
+    "passageA": {
+      "ref": "Jeremias 7:4",
+      "text": "Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O templo não salva: confiar no prédio enquanto se mente é palavra mentirosa."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Jeremias 7:4",
+    "learningObjective": "Perceber que repetir «Templo de Jeová» enquanto se mente é confiança falsa, não salvação.",
+    "evidence": [
+      "Jeremias 7:4"
+    ],
+    "type": "true_false",
+    "question": "Repetir «Templo de Jeová» garante, segundo o texto, que o lugar salva quem o invoca.",
+    "prompt": "Repetir «Templo de Jeová» garante, segundo o texto, que o lugar salva quem o invoca.",
+    "cue": "Repetir «Templo de Jeová» garante, segundo o texto, que o lugar salva quem o invoca.",
+    "feedbackCorrect": "Certo: o texto chama essa confiança de palavras mentirosas.",
+    "feedbackWrong": {
+      "true": "7:4 desmente a segurança automática pelo slogan do templo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-02-templo-nao-salva",
+    "id": "jeremias-cam-jeremias-chamado-je-02-templo-nao-salva-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Jeremias 7:4",
+    "learningObjective": "Perceber que repetir «Templo de Jeová» enquanto se mente é confiança falsa, não salvação.",
+    "evidence": [
+      "Jeremias 7:4"
+    ],
+    "type": "tap",
+    "question": "Em Jeremias 7:4, toque a palavra que falta em \"Não ___ em palavras mentirosas, dizendo: Templo de Jeová\"?",
+    "prompt": "Em Jeremias 7:4, toque a palavra que falta em \"Não ___ em palavras mentirosas, dizendo: Templo de Jeová\"?",
+    "cue": "Em Jeremias 7:4, toque a palavra que falta em \"Não ___ em palavras mentirosas, dizendo: Templo de Jeová\"?",
+    "feedbackCorrect": "Exato: confieis — a fé no slogan é o que se proíbe.",
+    "feedbackWrong": {
+      "b": "Dizendo introduz o slogan, não o verbo da proibição.",
+      "c": "Este fecha a frase, não o verbo desta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "confieis"
+      },
+      {
+        "id": "b",
+        "text": "dizendo"
+      },
+      {
+        "id": "c",
+        "text": "este"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-02-templo-nao-salva",
+    "id": "jeremias-cam-jeremias-chamado-je-02-templo-nao-salva-02",
+    "template": "Não ___ em palavras mentirosas, dizendo: Templo de Jeová"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Jeremias 7:4",
+    "learningObjective": "Perceber que repetir «Templo de Jeová» enquanto se mente é confiança falsa, não salvação.",
+    "evidence": [
+      "Jeremias 7:4"
+    ],
+    "type": "choice",
+    "question": "Por que o slogan «Templo de Jeová» é chamado de palavras mentirosas?",
+    "prompt": "Por que o slogan «Templo de Jeová» é chamado de palavras mentirosas?",
+    "cue": "Por que o slogan «Templo de Jeová» é chamado de palavras mentirosas?",
+    "feedbackCorrect": "Certo: usa o nome santo para cobrir uma confiança falsa.",
+    "feedbackWrong": {
+      "a": "O texto não acusa o templo de ser um prédio pagão.",
+      "c": "Não se trata de erro de gramática no slogan.",
+      "d": "Jeová não está ausente; o abuso é a confiança mentirosa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque o templo de Jerusalém era, de fato, um prédio pagão"
+      },
+      {
+        "id": "b",
+        "text": "Porque usa o nome santo para cobrir uma confiança falsa"
+      },
+      {
+        "id": "c",
+        "text": "Porque o slogan está gramaticalmente errado na língua"
+      },
+      {
+        "id": "d",
+        "text": "Porque Jeová já havia abandonado de vez o seu nome"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-02-templo-nao-salva",
+    "id": "jeremias-cam-jeremias-chamado-je-02-templo-nao-salva-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Jeremias 7:4",
+    "learningObjective": "Perceber que repetir «Templo de Jeová» enquanto se mente é confiança falsa, não salvação.",
+    "evidence": [
+      "Jeremias 7:4"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Jeremias 7:4?",
+    "prompt": "Como se encadeiam os eventos de Jeremias 7:4?",
+    "cue": "Como se encadeiam os eventos de Jeremias 7:4?",
+    "feedbackCorrect": "Certo: a proibição recai sobre o slogan repetido.",
+    "feedbackWrong": {
+      "b": "As palavras mentirosas qualificam o que se diz, no meio da frase.",
+      "c": "O slogan repetido é o conteúdo, não o início."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Não confieis"
+      },
+      {
+        "id": "b",
+        "text": "em palavras mentirosas, dizendo"
+      },
+      {
+        "id": "c",
+        "text": "Templo de Jeová, templo de Jeová é este"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-02-templo-nao-salva",
+    "id": "jeremias-cam-jeremias-chamado-je-02-templo-nao-salva-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Jeremias 7:4",
+    "learningObjective": "Perceber que repetir «Templo de Jeová» enquanto se mente é confiança falsa, não salvação.",
+    "evidence": [
+      "Jeremias 7:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Templo de Jeová, templo de Jeová é ___\"",
+    "prompt": "Complete a frase: \"Templo de Jeová, templo de Jeová é ___\"",
+    "cue": "Complete a frase: \"Templo de Jeová, templo de Jeová é ___\"",
+    "feedbackCorrect": "Certo: este — o slogan aponta para o prédio presente.",
+    "feedbackWrong": {
+      "b": "Mentirosas qualifica as palavras, não fecha o slogan.",
+      "c": "Confieis é o verbo da proibição, no início."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "este"
+      },
+      {
+        "id": "b",
+        "text": "mentirosas"
+      },
+      {
+        "id": "c",
+        "text": "confieis"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-02-templo-nao-salva",
+    "id": "jeremias-cam-jeremias-chamado-je-02-templo-nao-salva-05",
+    "template": "Templo de Jeová, templo de Jeová é ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Jeremias 7:4",
+    "learningObjective": "Perceber que repetir «Templo de Jeová» enquanto se mente é confiança falsa, não salvação.",
+    "evidence": [
+      "Jeremias 7:4"
+    ],
+    "type": "connect",
+    "question": "O que Jeremias 7:4 comunica que se liga a este contexto?",
+    "prompt": "O que Jeremias 7:4 comunica que se liga a este contexto?",
+    "cue": "O que Jeremias 7:4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: religião de slogan não substitui fidelidade.",
+    "feedbackWrong": {
+      "b": "O texto não ensina que o templo seja inútil em si.",
+      "c": "Não há aqui uma defesa da mentira piedosa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Slogan sem fidelidade"
+      },
+      {
+        "id": "b",
+        "text": "Templo inútil em si mesmo"
+      },
+      {
+        "id": "c",
+        "text": "Mentira piedosa permitida"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-02-templo-nao-salva",
+    "id": "jeremias-cam-jeremias-chamado-je-02-templo-nao-salva-06",
+    "passageA": {
+      "ref": "Jeremias 7:4",
+      "text": "Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O templo não salva: confiar no prédio enquanto se mente é palavra mentirosa."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Jeremias 7:4",
+    "learningObjective": "Perceber que repetir «Templo de Jeová» enquanto se mente é confiança falsa, não salvação.",
+    "evidence": [
+      "Jeremias 7:4"
+    ],
+    "type": "true_false",
+    "question": "Confiar no prédio do templo enquanto se usa o nome de Jeová como slogan vazio é, no texto, palavra mentirosa.",
+    "prompt": "Confiar no prédio do templo enquanto se usa o nome de Jeová como slogan vazio é, no texto, palavra mentirosa.",
+    "cue": "Confiar no prédio do templo enquanto se usa o nome de Jeová como slogan vazio é, no texto, palavra mentirosa.",
+    "feedbackCorrect": "Certo: o versículo desmascara essa segurança religiosa.",
+    "feedbackWrong": {
+      "false": "7:4 classifica exatamente essa confiança como mentira."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-02-templo-nao-salva",
+    "id": "jeremias-pro-jeremias-chamado-je-02-templo-nao-salva-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Jeremias 7:4",
+    "learningObjective": "Perceber que repetir «Templo de Jeová» enquanto se mente é confiança falsa, não salvação.",
+    "evidence": [
+      "Jeremias 7:4"
+    ],
+    "type": "tap",
+    "question": "Em Jeremias 7:4, toque a palavra que falta em \"dizendo: ___ de Jeová, templo de Jeová é este\"?",
+    "prompt": "Em Jeremias 7:4, toque a palavra que falta em \"dizendo: ___ de Jeová, templo de Jeová é este\"?",
+    "cue": "Em Jeremias 7:4, toque a palavra que falta em \"dizendo: ___ de Jeová, templo de Jeová é este\"?",
+    "feedbackCorrect": "Exato: Templo — o objeto da confiança falsa é o prédio.",
+    "feedbackWrong": {
+      "b": "Jeová é o nome invocado, não a primeira palavra do slogan.",
+      "c": "Dizendo introduz a citação, não substitui Templo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Templo"
+      },
+      {
+        "id": "b",
+        "text": "Jeová"
+      },
+      {
+        "id": "c",
+        "text": "dizendo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-02-templo-nao-salva",
+    "id": "jeremias-pro-jeremias-chamado-je-02-templo-nao-salva-02",
+    "template": "dizendo: ___ de Jeová, templo de Jeová é este"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Jeremias 7:4",
+    "learningObjective": "Perceber que repetir «Templo de Jeová» enquanto se mente é confiança falsa, não salvação.",
+    "evidence": [
+      "Jeremias 7:4"
+    ],
+    "type": "choice",
+    "question": "Que erro teológico Jeremias 7:4 desmascara?",
+    "prompt": "Que erro teológico Jeremias 7:4 desmascara?",
+    "cue": "Que erro teológico Jeremias 7:4 desmascara?",
+    "feedbackCorrect": "Certo: o lugar santo não substitui a verdade diante de Jeová.",
+    "feedbackWrong": {
+      "a": "O texto não ensina que Jeová rejeite todo culto no templo.",
+      "c": "Não se trata de um debate sobre a arquitetura do prédio.",
+      "d": "O problema não é pronunciar o nome, e sim usá-lo para mentir."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Que Jeová rejeita todo culto feito dentro do templo"
+      },
+      {
+        "id": "b",
+        "text": "Que o lugar santo substitui a verdade e cobre a mentira"
+      },
+      {
+        "id": "c",
+        "text": "Que o templo deveria ser substituído por um altar no campo"
+      },
+      {
+        "id": "d",
+        "text": "Que pronunciar o nome de Jeová já é, em si, pecado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-02-templo-nao-salva",
+    "id": "jeremias-pro-jeremias-chamado-je-02-templo-nao-salva-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Jeremias 7:4",
+    "learningObjective": "Perceber que repetir «Templo de Jeová» enquanto se mente é confiança falsa, não salvação.",
+    "evidence": [
+      "Jeremias 7:4"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Jeremias 7:4?",
+    "prompt": "Qual sequência revela o sentido de Jeremias 7:4?",
+    "cue": "Qual sequência revela o sentido de Jeremias 7:4?",
+    "feedbackCorrect": "Certo: a mentira está em confiar no slogan do templo.",
+    "feedbackWrong": {
+      "b": "As palavras mentirosas vêm depois da proibição de confiar.",
+      "c": "O slogan é o conteúdo denunciado, no fim."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Não confieis em palavras mentirosas"
+      },
+      {
+        "id": "b",
+        "text": "dizendo"
+      },
+      {
+        "id": "c",
+        "text": "Templo de Jeová, templo de Jeová é este"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-02-templo-nao-salva",
+    "id": "jeremias-pro-jeremias-chamado-je-02-templo-nao-salva-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Jeremias 7:4",
+    "learningObjective": "Perceber que repetir «Templo de Jeová» enquanto se mente é confiança falsa, não salvação.",
+    "evidence": [
+      "Jeremias 7:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Templo de ___, templo de Jeová é este\"",
+    "prompt": "Complete a frase: \"Templo de ___, templo de Jeová é este\"",
+    "cue": "Complete a frase: \"Templo de ___, templo de Jeová é este\"",
+    "feedbackCorrect": "Certo: Jeová — o nome santo é o que se usa no slogan.",
+    "feedbackWrong": {
+      "b": "Este fecha a frase, não ocupa o lugar do nome.",
+      "c": "Palavras aparece no início, na proibição."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "este"
+      },
+      {
+        "id": "c",
+        "text": "palavras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-02-templo-nao-salva",
+    "id": "jeremias-pro-jeremias-chamado-je-02-templo-nao-salva-05",
+    "template": "Templo de ___, templo de Jeová é este"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Jeremias 7:4",
+    "learningObjective": "Perceber que repetir «Templo de Jeová» enquanto se mente é confiança falsa, não salvação.",
+    "evidence": [
+      "Jeremias 7:4"
+    ],
+    "type": "connect",
+    "question": "O que Jeremias 7:4 comunica que se liga a este contexto?",
+    "prompt": "O que Jeremias 7:4 comunica que se liga a este contexto?",
+    "cue": "O que Jeremias 7:4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: segurança de prédio sem verdade é mentira.",
+    "feedbackWrong": {
+      "b": "O texto não institui o templo como seguro absoluto.",
+      "c": "Não há aqui uma crítica ao nome de Jeová em si."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Segurança falsa de prédio"
+      },
+      {
+        "id": "b",
+        "text": "Templo como seguro absoluto"
+      },
+      {
+        "id": "c",
+        "text": "Nome de Jeová como problema"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este.",
+    "trail": "jeremias",
+    "section": "jeremias-chamado-je-02-templo-nao-salva",
+    "id": "jeremias-pro-jeremias-chamado-je-02-templo-nao-salva-06",
+    "passageA": {
+      "ref": "Jeremias 7:4",
+      "text": "Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O templo não salva: confiar no prédio enquanto se mente é palavra mentirosa."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Jeremias 31:33",
+    "learningObjective": "Identificar que a nova aliança imprime a lei no interior e a escreve no coração.",
+    "evidence": [
+      "Jeremias 31:33"
+    ],
+    "type": "true_false",
+    "question": "Jeová promete imprimir a sua lei no interior e escrevê-la no coração.",
+    "prompt": "Jeová promete imprimir a sua lei no interior e escrevê-la no coração.",
+    "cue": "Jeová promete imprimir a sua lei no interior e escrevê-la no coração.",
+    "feedbackCorrect": "Certo: é exatamente a promessa de Jeremias 31:33.",
+    "feedbackWrong": {
+      "false": "Releia 31:33: imprimirei no interior e escreverei no coração."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-01-lei-no-coracao",
+    "id": "jeremias-sem-jeremias-nova-alian-01-lei-no-coracao-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Jeremias 31:33",
+    "learningObjective": "Identificar que a nova aliança imprime a lei no interior e a escreve no coração.",
+    "evidence": [
+      "Jeremias 31:33"
+    ],
+    "type": "tap",
+    "question": "Em Jeremias 31:33, toque a palavra que falta em \"e a escreverei no seu ___\"?",
+    "prompt": "Em Jeremias 31:33, toque a palavra que falta em \"e a escreverei no seu ___\"?",
+    "cue": "Em Jeremias 31:33, toque a palavra que falta em \"e a escreverei no seu ___\"?",
+    "feedbackCorrect": "Exato: coração — o lugar da nova aliança é interno.",
+    "feedbackWrong": {
+      "b": "Interior aparece na cláusula anterior, com imprimirei.",
+      "c": "Lei é o que se escreve, não o lugar da escrita."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "coração"
+      },
+      {
+        "id": "b",
+        "text": "interior"
+      },
+      {
+        "id": "c",
+        "text": "lei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-01-lei-no-coracao",
+    "id": "jeremias-sem-jeremias-nova-alian-01-lei-no-coracao-02",
+    "template": "e a escreverei no seu ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Jeremias 31:33",
+    "learningObjective": "Identificar que a nova aliança imprime a lei no interior e a escreve no coração.",
+    "evidence": [
+      "Jeremias 31:33"
+    ],
+    "type": "choice",
+    "question": "Com quem Jeová diz que fará esta aliança?",
+    "prompt": "Com quem Jeová diz que fará esta aliança?",
+    "cue": "Com quem Jeová diz que fará esta aliança?",
+    "feedbackCorrect": "Certo: o texto nomeia a casa de Israel.",
+    "feedbackWrong": {
+      "b": "O texto não restringe a aliança aos sacerdotes do templo.",
+      "c": "Não se trata aqui de uma aliança só com nações pagãs.",
+      "d": "O parceiro nomeado é a casa de Israel, não Babilônia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Com a casa de Israel"
+      },
+      {
+        "id": "b",
+        "text": "Somente com os sacerdotes do templo"
+      },
+      {
+        "id": "c",
+        "text": "Apenas com as nações pagãs ao redor"
+      },
+      {
+        "id": "d",
+        "text": "Com a casa de Babilônia, após o exílio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-01-lei-no-coracao",
+    "id": "jeremias-sem-jeremias-nova-alian-01-lei-no-coracao-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Jeremias 31:33",
+    "learningObjective": "Identificar que a nova aliança imprime a lei no interior e a escreve no coração.",
+    "evidence": [
+      "Jeremias 31:33"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Jeremias 31:33?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Jeremias 31:33?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Jeremias 31:33?",
+    "feedbackCorrect": "Certo: aliança, lei no interior e escrita no coração.",
+    "feedbackWrong": {
+      "b": "Imprimir a lei vem depois de anunciar a aliança.",
+      "c": "Escrever no coração fecha o movimento interno, não o abre."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "esta é a aliança que farei com a casa de Israel"
+      },
+      {
+        "id": "b",
+        "text": "Imprimirei a minha lei no seu interior"
+      },
+      {
+        "id": "c",
+        "text": "e a escreverei no seu coração"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-01-lei-no-coracao",
+    "id": "jeremias-sem-jeremias-nova-alian-01-lei-no-coracao-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Jeremias 31:33",
+    "learningObjective": "Identificar que a nova aliança imprime a lei no interior e a escreve no coração.",
+    "evidence": [
+      "Jeremias 31:33"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Imprimirei a minha ___ no seu interior, e a escreverei no seu coração\"",
+    "prompt": "Complete a frase: \"Imprimirei a minha ___ no seu interior, e a escreverei no seu coração\"",
+    "cue": "Complete a frase: \"Imprimirei a minha ___ no seu interior, e a escreverei no seu coração\"",
+    "feedbackCorrect": "Certo: lei — o conteúdo escrito por dentro é a lei de Jeová.",
+    "feedbackWrong": {
+      "b": "Aliança nomeia o pacto, não o que se imprime nesta lacuna.",
+      "c": "Povo aparece no desfecho relacional, no fim."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "lei"
+      },
+      {
+        "id": "b",
+        "text": "aliança"
+      },
+      {
+        "id": "c",
+        "text": "povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-01-lei-no-coracao",
+    "id": "jeremias-sem-jeremias-nova-alian-01-lei-no-coracao-05",
+    "template": "Imprimirei a minha ___ no seu interior, e a escreverei no seu coração"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Jeremias 31:33",
+    "learningObjective": "Identificar que a nova aliança imprime a lei no interior e a escreve no coração.",
+    "evidence": [
+      "Jeremias 31:33"
+    ],
+    "type": "connect",
+    "question": "O que Jeremias 31:33 comunica que se liga a este contexto?",
+    "prompt": "O que Jeremias 31:33 comunica que se liga a este contexto?",
+    "cue": "O que Jeremias 31:33 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a lei passa a ser escrita por dentro.",
+    "feedbackWrong": {
+      "b": "O texto não descreve uma nova lei só em pedra no templo.",
+      "c": "Não há aqui anulação da relação Deus–povo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Lei escrita no coração"
+      },
+      {
+        "id": "b",
+        "text": "Lei só em pedra no templo"
+      },
+      {
+        "id": "c",
+        "text": "Fim da relação Deus–povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-01-lei-no-coracao",
+    "id": "jeremias-sem-jeremias-nova-alian-01-lei-no-coracao-06",
+    "passageA": {
+      "ref": "Jeremias 31:33",
+      "text": "Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A nova aliança escreve a lei no coração — Deus e povo de dentro para fora."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Jeremias 31:33",
+    "learningObjective": "Identificar que a nova aliança imprime a lei no interior e a escreve no coração.",
+    "evidence": [
+      "Jeremias 31:33"
+    ],
+    "type": "true_false",
+    "question": "A aliança de Jeremias 31:33 consiste em gravar a lei somente em pedra no templo.",
+    "prompt": "A aliança de Jeremias 31:33 consiste em gravar a lei somente em pedra no templo.",
+    "cue": "A aliança de Jeremias 31:33 consiste em gravar a lei somente em pedra no templo.",
+    "feedbackCorrect": "Certo: o lugar da escrita é o interior e o coração.",
+    "feedbackWrong": {
+      "true": "31:33 fala de interior e coração, não de pedra no templo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-01-lei-no-coracao",
+    "id": "jeremias-cam-jeremias-nova-alian-01-lei-no-coracao-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Jeremias 31:33",
+    "learningObjective": "Identificar que a nova aliança imprime a lei no interior e a escreve no coração.",
+    "evidence": [
+      "Jeremias 31:33"
+    ],
+    "type": "tap",
+    "question": "Em Jeremias 31:33, toque a palavra que falta em \"___ a minha lei no seu interior, e a escreverei no seu coração\"?",
+    "prompt": "Em Jeremias 31:33, toque a palavra que falta em \"___ a minha lei no seu interior, e a escreverei no seu coração\"?",
+    "cue": "Em Jeremias 31:33, toque a palavra que falta em \"___ a minha lei no seu interior, e a escreverei no seu coração\"?",
+    "feedbackCorrect": "Exato: Imprimirei — a ação é de Jeová, de dentro.",
+    "feedbackWrong": {
+      "b": "Escreverei pertence à cláusula do coração, depois.",
+      "c": "Farei refere-se à aliança, no início do versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Imprimirei"
+      },
+      {
+        "id": "b",
+        "text": "escreverei"
+      },
+      {
+        "id": "c",
+        "text": "farei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-01-lei-no-coracao",
+    "id": "jeremias-cam-jeremias-nova-alian-01-lei-no-coracao-02",
+    "template": "___ a minha lei no seu interior, e a escreverei no seu coração"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Jeremias 31:33",
+    "learningObjective": "Identificar que a nova aliança imprime a lei no interior e a escreve no coração.",
+    "evidence": [
+      "Jeremias 31:33"
+    ],
+    "type": "choice",
+    "question": "Como a nova aliança relaciona lei, interior e pertencimento?",
+    "prompt": "Como a nova aliança relaciona lei, interior e pertencimento?",
+    "cue": "Como a nova aliança relaciona lei, interior e pertencimento?",
+    "feedbackCorrect": "Certo: a lei interna sustenta «eu serei o seu Deus».",
+    "feedbackWrong": {
+      "a": "O texto não abandona a lei; ele a interioriza.",
+      "c": "O pertencimento não depende de um novo prédio.",
+      "d": "A aliança não é só memória de um código antigo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A lei é abolida para que o povo pertença a si mesmo"
+      },
+      {
+        "id": "b",
+        "text": "A lei no interior fundamenta: Deus deles, povo dele"
+      },
+      {
+        "id": "c",
+        "text": "O pertencimento depende de reconstruir o templo primeiro"
+      },
+      {
+        "id": "d",
+        "text": "A aliança é só recordação de um código já esquecido"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-01-lei-no-coracao",
+    "id": "jeremias-cam-jeremias-nova-alian-01-lei-no-coracao-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Jeremias 31:33",
+    "learningObjective": "Identificar que a nova aliança imprime a lei no interior e a escreve no coração.",
+    "evidence": [
+      "Jeremias 31:33"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Jeremias 31:33?",
+    "prompt": "Como se encadeiam os eventos de Jeremias 31:33?",
+    "cue": "Como se encadeiam os eventos de Jeremias 31:33?",
+    "feedbackCorrect": "Certo: interior, coração e então a fórmula da aliança.",
+    "feedbackWrong": {
+      "b": "O coração vem depois do interior, não antes.",
+      "c": "A fórmula «eu serei o seu Deus» é o desfecho, não o início."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Imprimirei a minha lei no seu interior"
+      },
+      {
+        "id": "b",
+        "text": "e a escreverei no seu coração"
+      },
+      {
+        "id": "c",
+        "text": "eu serei o seu Deus, e eles serão o meu povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-01-lei-no-coracao",
+    "id": "jeremias-cam-jeremias-nova-alian-01-lei-no-coracao-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Jeremias 31:33",
+    "learningObjective": "Identificar que a nova aliança imprime a lei no interior e a escreve no coração.",
+    "evidence": [
+      "Jeremias 31:33"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Imprimirei a minha lei no seu ___, e a escreverei no seu coração\"",
+    "prompt": "Complete a frase: \"Imprimirei a minha lei no seu ___, e a escreverei no seu coração\"",
+    "cue": "Complete a frase: \"Imprimirei a minha lei no seu ___, e a escreverei no seu coração\"",
+    "feedbackCorrect": "Certo: interior — o primeiro lugar da impressão é interno.",
+    "feedbackWrong": {
+      "b": "Coração é a segunda cláusula, com escreverei.",
+      "c": "Israel nomeia a casa da aliança, no início."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "interior"
+      },
+      {
+        "id": "b",
+        "text": "coração"
+      },
+      {
+        "id": "c",
+        "text": "Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-01-lei-no-coracao",
+    "id": "jeremias-cam-jeremias-nova-alian-01-lei-no-coracao-05",
+    "template": "Imprimirei a minha lei no seu ___, e a escreverei no seu coração"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Jeremias 31:33",
+    "learningObjective": "Identificar que a nova aliança imprime a lei no interior e a escreve no coração.",
+    "evidence": [
+      "Jeremias 31:33"
+    ],
+    "type": "connect",
+    "question": "O que Jeremias 31:33 comunica que se liga a este contexto?",
+    "prompt": "O que Jeremias 31:33 comunica que se liga a este contexto?",
+    "cue": "O que Jeremias 31:33 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a aliança opera de dentro para fora.",
+    "feedbackWrong": {
+      "b": "O texto não reduz a aliança a um rito externo vazio.",
+      "c": "Não há aqui substituição de Jeová por um deus nacional."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Aliança de dentro para fora"
+      },
+      {
+        "id": "b",
+        "text": "Rito externo sem interior"
+      },
+      {
+        "id": "c",
+        "text": "Deus nacional no lugar de Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-01-lei-no-coracao",
+    "id": "jeremias-cam-jeremias-nova-alian-01-lei-no-coracao-06",
+    "passageA": {
+      "ref": "Jeremias 31:33",
+      "text": "Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A nova aliança escreve a lei no coração — Deus e povo de dentro para fora."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Jeremias 31:33",
+    "learningObjective": "Identificar que a nova aliança imprime a lei no interior e a escreve no coração.",
+    "evidence": [
+      "Jeremias 31:33"
+    ],
+    "type": "true_false",
+    "question": "Na nova aliança, Jeová será o Deus deles e eles serão o seu povo.",
+    "prompt": "Na nova aliança, Jeová será o Deus deles e eles serão o seu povo.",
+    "cue": "Na nova aliança, Jeová será o Deus deles e eles serão o seu povo.",
+    "feedbackCorrect": "Certo: a fórmula da aliança fecha o versículo.",
+    "feedbackWrong": {
+      "false": "31:33 termina: eu serei o seu Deus, e eles serão o meu povo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-01-lei-no-coracao",
+    "id": "jeremias-pro-jeremias-nova-alian-01-lei-no-coracao-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Jeremias 31:33",
+    "learningObjective": "Identificar que a nova aliança imprime a lei no interior e a escreve no coração.",
+    "evidence": [
+      "Jeremias 31:33"
+    ],
+    "type": "tap",
+    "question": "Em Jeremias 31:33, toque a palavra que falta em \"Mas esta é a ___ que farei com a casa de Israel\"?",
+    "prompt": "Em Jeremias 31:33, toque a palavra que falta em \"Mas esta é a ___ que farei com a casa de Israel\"?",
+    "cue": "Em Jeremias 31:33, toque a palavra que falta em \"Mas esta é a ___ que farei com a casa de Israel\"?",
+    "feedbackCorrect": "Exato: aliança — o nome do pacto novo está no texto.",
+    "feedbackWrong": {
+      "b": "Israel é o parceiro, não o nome do pacto nesta lacuna.",
+      "c": "Povo aparece no desfecho, não no início."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "aliança"
+      },
+      {
+        "id": "b",
+        "text": "Israel"
+      },
+      {
+        "id": "c",
+        "text": "povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-01-lei-no-coracao",
+    "id": "jeremias-pro-jeremias-nova-alian-01-lei-no-coracao-02",
+    "template": "Mas esta é a ___ que farei com a casa de Israel"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Jeremias 31:33",
+    "learningObjective": "Identificar que a nova aliança imprime a lei no interior e a escreve no coração.",
+    "evidence": [
+      "Jeremias 31:33"
+    ],
+    "type": "choice",
+    "question": "Que sentido teológico a escrita da lei no coração prepara?",
+    "prompt": "Que sentido teológico a escrita da lei no coração prepara?",
+    "cue": "Que sentido teológico a escrita da lei no coração prepara?",
+    "feedbackCorrect": "Certo: obediência interior, não só código visível.",
+    "feedbackWrong": {
+      "a": "O texto não promete independência do povo em relação a Jeová.",
+      "c": "Não se trata de transferir a lei para um arquivo do templo.",
+      "d": "A aliança não anula o pertencimento; ela o aprofunda."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O povo torna-se autônomo, sem mais necessidade de Jeová"
+      },
+      {
+        "id": "b",
+        "text": "A obediência nasce por dentro, não só de um código visível"
+      },
+      {
+        "id": "c",
+        "text": "A lei muda de suporte: das tábuas para o arquivo do templo"
+      },
+      {
+        "id": "d",
+        "text": "Deus deixa de ser Deus deles para ser só criador distante"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-01-lei-no-coracao",
+    "id": "jeremias-pro-jeremias-nova-alian-01-lei-no-coracao-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Jeremias 31:33",
+    "learningObjective": "Identificar que a nova aliança imprime a lei no interior e a escreve no coração.",
+    "evidence": [
+      "Jeremias 31:33"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Jeremias 31:33?",
+    "prompt": "Qual sequência revela o sentido de Jeremias 31:33?",
+    "cue": "Qual sequência revela o sentido de Jeremias 31:33?",
+    "feedbackCorrect": "Certo: pacto, interiorização e fórmula relacional.",
+    "feedbackWrong": {
+      "b": "A escrita interna vem depois de nomear a aliança.",
+      "c": "A fórmula relacional é o telos, não o primeiro passo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "a aliança que farei com a casa de Israel depois daqueles dias"
+      },
+      {
+        "id": "b",
+        "text": "Imprimirei a minha lei no seu interior, e a escreverei no seu coração"
+      },
+      {
+        "id": "c",
+        "text": "eu serei o seu Deus, e eles serão o meu povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-01-lei-no-coracao",
+    "id": "jeremias-pro-jeremias-nova-alian-01-lei-no-coracao-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Jeremias 31:33",
+    "learningObjective": "Identificar que a nova aliança imprime a lei no interior e a escreve no coração.",
+    "evidence": [
+      "Jeremias 31:33"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"eu serei o seu Deus, e eles serão o meu ___\"",
+    "prompt": "Complete a frase: \"eu serei o seu Deus, e eles serão o meu ___\"",
+    "cue": "Complete a frase: \"eu serei o seu Deus, e eles serão o meu ___\"",
+    "feedbackCorrect": "Certo: povo — a aliança restaura o pertencimento mútuo.",
+    "feedbackWrong": {
+      "b": "Coração é o lugar da escrita, não o termo desta lacuna.",
+      "c": "Lei é o conteúdo impresso, não o nome da relação final."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "povo"
+      },
+      {
+        "id": "b",
+        "text": "coração"
+      },
+      {
+        "id": "c",
+        "text": "lei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-01-lei-no-coracao",
+    "id": "jeremias-pro-jeremias-nova-alian-01-lei-no-coracao-05",
+    "template": "eu serei o seu Deus, e eles serão o meu ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Jeremias 31:33",
+    "learningObjective": "Identificar que a nova aliança imprime a lei no interior e a escreve no coração.",
+    "evidence": [
+      "Jeremias 31:33"
+    ],
+    "type": "connect",
+    "question": "O que Jeremias 31:33 comunica que se liga a este contexto?",
+    "prompt": "O que Jeremias 31:33 comunica que se liga a este contexto?",
+    "cue": "O que Jeremias 31:33 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Deus e povo se reatam por uma lei interior.",
+    "feedbackWrong": {
+      "b": "O texto não descreve um contrato comercial sem relação.",
+      "c": "Não há aqui substituição da aliança por moral autônoma."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus e povo por dentro"
+      },
+      {
+        "id": "b",
+        "text": "Contrato sem relação pessoal"
+      },
+      {
+        "id": "c",
+        "text": "Moral autônoma sem Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-01-lei-no-coracao",
+    "id": "jeremias-pro-jeremias-nova-alian-01-lei-no-coracao-06",
+    "passageA": {
+      "ref": "Jeremias 31:33",
+      "text": "Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A nova aliança escreve a lei no coração — Deus e povo de dentro para fora."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Jeremias 1:5; 31:33",
+    "learningObjective": "Observar o chamado (1:5), a mentira do templo (7:4) e a lei no coração (31:33).",
+    "evidence": [
+      "Jeremias 1:5",
+      "Jeremias 31:33"
+    ],
+    "type": "true_false",
+    "question": "Em Jeremias 1:5, Jeová constitui o profeta para as nações antes do nascimento.",
+    "prompt": "Em Jeremias 1:5, Jeová constitui o profeta para as nações antes do nascimento.",
+    "cue": "Em Jeremias 1:5, Jeová constitui o profeta para as nações antes do nascimento.",
+    "feedbackCorrect": "Certo: 1:5 situa o ofício às nações antes da madre.",
+    "feedbackWrong": {
+      "false": "1:5 diz: um profeta para as nações te constituí."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí.",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-02-desafio-jeremias",
+    "id": "jeremias-sem-jeremias-nova-alian-02-desafio-jeremias-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Jeremias 1:5",
+    "learningObjective": "Observar o chamado (1:5), a mentira do templo (7:4) e a lei no coração (31:33).",
+    "evidence": [
+      "Jeremias 1:5"
+    ],
+    "type": "tap",
+    "question": "Em Jeremias 1:5, toque a palavra que falta em \"um ___ para as nações te constituí\"?",
+    "prompt": "Em Jeremias 1:5, toque a palavra que falta em \"um ___ para as nações te constituí\"?",
+    "cue": "Em Jeremias 1:5, toque a palavra que falta em \"um ___ para as nações te constituí\"?",
+    "feedbackCorrect": "Exato: profeta — o ofício nomeado no chamado.",
+    "feedbackWrong": {
+      "b": "Ventre é o lugar da formação, não o ofício.",
+      "c": "Madre descreve o nascimento, não o título."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "profeta"
+      },
+      {
+        "id": "b",
+        "text": "ventre"
+      },
+      {
+        "id": "c",
+        "text": "madre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí.",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-02-desafio-jeremias",
+    "id": "jeremias-sem-jeremias-nova-alian-02-desafio-jeremias-02",
+    "template": "um ___ para as nações te constituí"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Jeremias 31:33",
+    "learningObjective": "Observar o chamado (1:5), a mentira do templo (7:4) e a lei no coração (31:33).",
+    "evidence": [
+      "Jeremias 31:33"
+    ],
+    "type": "choice",
+    "question": "O que Jeremias 31:33 afirma que Jeová fará com a sua lei?",
+    "prompt": "O que Jeremias 31:33 afirma que Jeová fará com a sua lei?",
+    "cue": "O que Jeremias 31:33 afirma que Jeová fará com a sua lei?",
+    "feedbackCorrect": "Certo: imprimir no interior e escrever no coração.",
+    "feedbackWrong": {
+      "b": "O texto não fala de gravar a lei só na porta do templo.",
+      "c": "Não há aqui substituição da lei por um decreto de Babilônia.",
+      "d": "A lei não é apagada; é escrita por dentro."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Imprimi-la no interior e escrevê-la no coração"
+      },
+      {
+        "id": "b",
+        "text": "Gravá-la somente na porta do templo de Jeová"
+      },
+      {
+        "id": "c",
+        "text": "Substituí-la por um decreto do rei de Babilônia"
+      },
+      {
+        "id": "d",
+        "text": "Apagá-la para que o povo viva sem qualquer lei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-02-desafio-jeremias",
+    "id": "jeremias-sem-jeremias-nova-alian-02-desafio-jeremias-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Jeremias 1:5; 7:4; 31:33",
+    "learningObjective": "Observar o chamado (1:5), a mentira do templo (7:4) e a lei no coração (31:33).",
+    "evidence": [
+      "Jeremias 1:5",
+      "Jeremias 7:4",
+      "Jeremias 31:33"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos nestes textos de Jeremias?",
+    "prompt": "Qual sequência mostra a ordem dos fatos nestes textos de Jeremias?",
+    "cue": "Qual sequência mostra a ordem dos fatos nestes textos de Jeremias?",
+    "feedbackCorrect": "Certo: chamado, denúncia do templo e lei no coração.",
+    "feedbackWrong": {
+      "b": "A denúncia do templo não é o primeiro ato do arco.",
+      "c": "A lei no coração é a promessa posterior, não o início."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "um profeta para as nações te constituí"
+      },
+      {
+        "id": "b",
+        "text": "Não confieis em palavras mentirosas, dizendo: Templo de Jeová"
+      },
+      {
+        "id": "c",
+        "text": "Imprimirei a minha lei no seu interior, e a escreverei no seu coração"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí. Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este. Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-02-desafio-jeremias",
+    "id": "jeremias-sem-jeremias-nova-alian-02-desafio-jeremias-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Jeremias 7:4",
+    "learningObjective": "Observar o chamado (1:5), a mentira do templo (7:4) e a lei no coração (31:33).",
+    "evidence": [
+      "Jeremias 7:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Não ___ em palavras mentirosas, dizendo: Templo de Jeová\"",
+    "prompt": "Complete a frase: \"Não ___ em palavras mentirosas, dizendo: Templo de Jeová\"",
+    "cue": "Complete a frase: \"Não ___ em palavras mentirosas, dizendo: Templo de Jeová\"",
+    "feedbackCorrect": "Certo: confieis — o desafio começa por recusar o slogan.",
+    "feedbackWrong": {
+      "b": "Dizendo introduz o slogan, não o verbo da lacuna.",
+      "c": "Templo é o conteúdo do slogan, não o verbo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "confieis"
+      },
+      {
+        "id": "b",
+        "text": "dizendo"
+      },
+      {
+        "id": "c",
+        "text": "Templo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este.",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-02-desafio-jeremias",
+    "id": "jeremias-sem-jeremias-nova-alian-02-desafio-jeremias-05",
+    "template": "Não ___ em palavras mentirosas, dizendo: Templo de Jeová"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Jeremias 1:5; 31:33",
+    "learningObjective": "Observar o chamado (1:5), a mentira do templo (7:4) e a lei no coração (31:33).",
+    "evidence": [
+      "Jeremias 1:5",
+      "Jeremias 31:33"
+    ],
+    "type": "connect",
+    "question": "O que Jeremias 1:5 e 31:33 comunicam que se liga a este contexto?",
+    "prompt": "O que Jeremias 1:5 e 31:33 comunicam que se liga a este contexto?",
+    "cue": "O que Jeremias 1:5 e 31:33 comunicam que se liga a este contexto?",
+    "feedbackCorrect": "Certo: vocação anterior e aliança interior no mesmo Deus.",
+    "feedbackWrong": {
+      "b": "Os textos não ensinam segurança automática pelo templo.",
+      "c": "Não há aqui um chamado sem qualquer alcance às nações."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Chamado e lei interior"
+      },
+      {
+        "id": "b",
+        "text": "Segurança automática do templo"
+      },
+      {
+        "id": "c",
+        "text": "Profeta sem alcance às nações"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí. Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-02-desafio-jeremias",
+    "id": "jeremias-sem-jeremias-nova-alian-02-desafio-jeremias-06",
+    "passageA": {
+      "ref": "Jeremias 1:5; 31:33",
+      "text": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí. Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O profeta formado no ventre anuncia aliança no coração — não segurança de templo."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Jeremias 7:4",
+    "learningObjective": "Compreender que o profeta formado no ventre denuncia o templo e anuncia aliança no coração.",
+    "evidence": [
+      "Jeremias 7:4"
+    ],
+    "type": "true_false",
+    "question": "Jeremias 7:4 ensina que o templo, por si só, protege quem repete o nome de Jeová.",
+    "prompt": "Jeremias 7:4 ensina que o templo, por si só, protege quem repete o nome de Jeová.",
+    "cue": "Jeremias 7:4 ensina que o templo, por si só, protege quem repete o nome de Jeová.",
+    "feedbackCorrect": "Certo: 7:4 chama essa confiança de palavras mentirosas.",
+    "feedbackWrong": {
+      "true": "O versículo proíbe confiar nesse slogan do templo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este.",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-02-desafio-jeremias",
+    "id": "jeremias-cam-jeremias-nova-alian-02-desafio-jeremias-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Jeremias 31:33",
+    "learningObjective": "Compreender que o profeta formado no ventre denuncia o templo e anuncia aliança no coração.",
+    "evidence": [
+      "Jeremias 31:33"
+    ],
+    "type": "tap",
+    "question": "Em Jeremias 31:33, toque a palavra que falta em \"e a escreverei no seu ___; eu serei o seu Deus\"?",
+    "prompt": "Em Jeremias 31:33, toque a palavra que falta em \"e a escreverei no seu ___; eu serei o seu Deus\"?",
+    "cue": "Em Jeremias 31:33, toque a palavra que falta em \"e a escreverei no seu ___; eu serei o seu Deus\"?",
+    "feedbackCorrect": "Exato: coração — o anúncio do profeta aponta para dentro.",
+    "feedbackWrong": {
+      "b": "Interior liga-se a imprimirei, na cláusula anterior.",
+      "c": "Povo fecha a fórmula relacional, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "coração"
+      },
+      {
+        "id": "b",
+        "text": "interior"
+      },
+      {
+        "id": "c",
+        "text": "povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-02-desafio-jeremias",
+    "id": "jeremias-cam-jeremias-nova-alian-02-desafio-jeremias-02",
+    "template": "e a escreverei no seu ___; eu serei o seu Deus"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Jeremias 1:5; 31:33",
+    "learningObjective": "Compreender que o profeta formado no ventre denuncia o templo e anuncia aliança no coração.",
+    "evidence": [
+      "Jeremias 1:5",
+      "Jeremias 7:4",
+      "Jeremias 31:33"
+    ],
+    "type": "choice",
+    "question": "Como o chamado de 1:5 se liga à denúncia de 7:4 e à promessa de 31:33?",
+    "prompt": "Como o chamado de 1:5 se liga à denúncia de 7:4 e à promessa de 31:33?",
+    "cue": "Como o chamado de 1:5 se liga à denúncia de 7:4 e à promessa de 31:33?",
+    "feedbackCorrect": "Certo: o profeta formado anuncia aliança, não segurança de prédio.",
+    "feedbackWrong": {
+      "a": "O chamado não existe para defender o slogan do templo.",
+      "c": "A nova aliança não restaura a mentira do prédio.",
+      "d": "Os textos não separam vocação e aliança como temas soltos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O profeta é formado para defender o slogan do templo"
+      },
+      {
+        "id": "b",
+        "text": "O formado no ventre denuncia o prédio e aponta ao coração"
+      },
+      {
+        "id": "c",
+        "text": "A nova aliança restaura a confiança automática no templo"
+      },
+      {
+        "id": "d",
+        "text": "Vocação e aliança são temas soltos, sem qualquer ligação"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí. Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este. Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-02-desafio-jeremias",
+    "id": "jeremias-cam-jeremias-nova-alian-02-desafio-jeremias-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Jeremias 1:5; 7:4; 31:33",
+    "learningObjective": "Compreender que o profeta formado no ventre denuncia o templo e anuncia aliança no coração.",
+    "evidence": [
+      "Jeremias 1:5",
+      "Jeremias 7:4",
+      "Jeremias 31:33"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Jeremias 1:5, 7:4 e 31:33?",
+    "prompt": "Como se encadeiam os eventos de Jeremias 1:5, 7:4 e 31:33?",
+    "cue": "Como se encadeiam os eventos de Jeremias 1:5, 7:4 e 31:33?",
+    "feedbackCorrect": "Certo: conhecer no ventre, recusar o slogan, escrever no coração.",
+    "feedbackWrong": {
+      "b": "A denúncia do templo não precede o chamado no ventre.",
+      "c": "A escrita no coração é o horizonte, não o primeiro passo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Antes que eu te formasse no ventre, te conheci"
+      },
+      {
+        "id": "b",
+        "text": "Não confieis em palavras mentirosas"
+      },
+      {
+        "id": "c",
+        "text": "a escreverei no seu coração"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí. Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este. Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-02-desafio-jeremias",
+    "id": "jeremias-cam-jeremias-nova-alian-02-desafio-jeremias-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Jeremias 1:5",
+    "learningObjective": "Compreender que o profeta formado no ventre denuncia o templo e anuncia aliança no coração.",
+    "evidence": [
+      "Jeremias 1:5"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Antes que eu te ___ no ventre, te conheci\"",
+    "prompt": "Complete a frase: \"Antes que eu te ___ no ventre, te conheci\"",
+    "cue": "Complete a frase: \"Antes que eu te ___ no ventre, te conheci\"",
+    "feedbackCorrect": "Certo: formasse — o desafio parte de um chamado anterior.",
+    "feedbackWrong": {
+      "b": "Santifiquei pertence à madre, na cláusula seguinte.",
+      "c": "Constituí fecha o versículo, ligado às nações."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "formasse"
+      },
+      {
+        "id": "b",
+        "text": "santifiquei"
+      },
+      {
+        "id": "c",
+        "text": "constituí"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí.",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-02-desafio-jeremias",
+    "id": "jeremias-cam-jeremias-nova-alian-02-desafio-jeremias-05",
+    "template": "Antes que eu te ___ no ventre, te conheci"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Jeremias 7:4; 31:33",
+    "learningObjective": "Compreender que o profeta formado no ventre denuncia o templo e anuncia aliança no coração.",
+    "evidence": [
+      "Jeremias 7:4",
+      "Jeremias 31:33"
+    ],
+    "type": "connect",
+    "question": "O que Jeremias 7:4 e 31:33 comunicam que se liga a este contexto?",
+    "prompt": "O que Jeremias 7:4 e 31:33 comunicam que se liga a este contexto?",
+    "cue": "O que Jeremias 7:4 e 31:33 comunicam que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o coração substitui a segurança mentirosa do templo.",
+    "feedbackWrong": {
+      "b": "Os textos não ensinam que o slogan do templo salva.",
+      "c": "Não há aqui uma lei só para o recinto sagrado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Coração contra segurança de templo"
+      },
+      {
+        "id": "b",
+        "text": "Slogan do templo como salvação"
+      },
+      {
+        "id": "c",
+        "text": "Lei só para o recinto sagrado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este. Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-02-desafio-jeremias",
+    "id": "jeremias-cam-jeremias-nova-alian-02-desafio-jeremias-06",
+    "passageA": {
+      "ref": "Jeremias 7:4; 31:33",
+      "text": "Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este. Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O profeta formado no ventre anuncia aliança no coração — não segurança de templo."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Jeremias 1:5; 31:33",
+    "learningObjective": "Interpretar o arco: vocação anterior, juízo da religião vazia e aliança escrita por dentro.",
+    "evidence": [
+      "Jeremias 1:5",
+      "Jeremias 31:33"
+    ],
+    "type": "true_false",
+    "question": "O chamado no ventre e a lei no coração revelam que Jeová age antes e por dentro, não por prédio.",
+    "prompt": "O chamado no ventre e a lei no coração revelam que Jeová age antes e por dentro, não por prédio.",
+    "cue": "O chamado no ventre e a lei no coração revelam que Jeová age antes e por dentro, não por prédio.",
+    "feedbackCorrect": "Certo: 1:5 e 31:33 deslocam a segurança do templo para Deus.",
+    "feedbackWrong": {
+      "false": "Os dois textos enfatizam iniciativa divina, não o prédio."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí. Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-02-desafio-jeremias",
+    "id": "jeremias-pro-jeremias-nova-alian-02-desafio-jeremias-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Jeremias 7:4",
+    "learningObjective": "Interpretar o arco: vocação anterior, juízo da religião vazia e aliança escrita por dentro.",
+    "evidence": [
+      "Jeremias 7:4"
+    ],
+    "type": "tap",
+    "question": "Em Jeremias 7:4, toque a palavra que falta em \"Não confieis em ___ mentirosas, dizendo: Templo de Jeová\"?",
+    "prompt": "Em Jeremias 7:4, toque a palavra que falta em \"Não confieis em ___ mentirosas, dizendo: Templo de Jeová\"?",
+    "cue": "Em Jeremias 7:4, toque a palavra que falta em \"Não confieis em ___ mentirosas, dizendo: Templo de Jeová\"?",
+    "feedbackCorrect": "Exato: palavras — o juízo cai sobre o discurso religioso vazio.",
+    "feedbackWrong": {
+      "b": "Templo é o slogan, não o termo desta lacuna.",
+      "c": "Este fecha a frase, não substitui palavras."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "palavras"
+      },
+      {
+        "id": "b",
+        "text": "Templo"
+      },
+      {
+        "id": "c",
+        "text": "este"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este.",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-02-desafio-jeremias",
+    "id": "jeremias-pro-jeremias-nova-alian-02-desafio-jeremias-02",
+    "template": "Não confieis em ___ mentirosas, dizendo: Templo de Jeová"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Jeremias 1:5; 31:33",
+    "learningObjective": "Interpretar o arco: vocação anterior, juízo da religião vazia e aliança escrita por dentro.",
+    "evidence": [
+      "Jeremias 1:5",
+      "Jeremias 7:4",
+      "Jeremias 31:33"
+    ],
+    "type": "choice",
+    "question": "Que leitura une vocação, juízo do templo e nova aliança em Jeremias?",
+    "prompt": "Que leitura une vocação, juízo do templo e nova aliança em Jeremias?",
+    "cue": "Que leitura une vocação, juízo do templo e nova aliança em Jeremias?",
+    "feedbackCorrect": "Certo: Deus forma e escreve por dentro; o prédio não salva.",
+    "feedbackWrong": {
+      "a": "Os textos não fazem do templo o centro da salvação.",
+      "c": "A nova aliança não é um código só para o profeta isolado.",
+      "d": "O chamado não anula a aliança; ele a anuncia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A salvação está no templo, e o profeta só o administra"
+      },
+      {
+        "id": "b",
+        "text": "Jeová forma o profeta e escreve a lei; o prédio não salva"
+      },
+      {
+        "id": "c",
+        "text": "A nova aliança é um código privado, só para o profeta"
+      },
+      {
+        "id": "d",
+        "text": "O chamado no ventre substitui qualquer aliança com o povo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí. Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este. Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-02-desafio-jeremias",
+    "id": "jeremias-pro-jeremias-nova-alian-02-desafio-jeremias-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Jeremias 1:5; 7:4; 31:33",
+    "learningObjective": "Interpretar o arco: vocação anterior, juízo da religião vazia e aliança escrita por dentro.",
+    "evidence": [
+      "Jeremias 1:5",
+      "Jeremias 7:4",
+      "Jeremias 31:33"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Jeremias 1:5, 7:4 e 31:33?",
+    "prompt": "Qual sequência revela o sentido de Jeremias 1:5, 7:4 e 31:33?",
+    "cue": "Qual sequência revela o sentido de Jeremias 1:5, 7:4 e 31:33?",
+    "feedbackCorrect": "Certo: constituição, desmascarar o slogan, lei no interior.",
+    "feedbackWrong": {
+      "b": "O slogan do templo não é o primeiro sentido do arco.",
+      "c": "A lei no interior é o horizonte da aliança, não o início."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "um profeta para as nações te constituí"
+      },
+      {
+        "id": "b",
+        "text": "Templo de Jeová, templo de Jeová é este"
+      },
+      {
+        "id": "c",
+        "text": "Imprimirei a minha lei no seu interior"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí. Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este. Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-02-desafio-jeremias",
+    "id": "jeremias-pro-jeremias-nova-alian-02-desafio-jeremias-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Jeremias 31:33",
+    "learningObjective": "Interpretar o arco: vocação anterior, juízo da religião vazia e aliança escrita por dentro.",
+    "evidence": [
+      "Jeremias 31:33"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Imprimirei a minha ___ no seu interior, e a escreverei no seu coração\"",
+    "prompt": "Complete a frase: \"Imprimirei a minha ___ no seu interior, e a escreverei no seu coração\"",
+    "cue": "Complete a frase: \"Imprimirei a minha ___ no seu interior, e a escreverei no seu coração\"",
+    "feedbackCorrect": "Certo: lei — o fim do arco é a lei escrita por dentro.",
+    "feedbackWrong": {
+      "b": "Aliança nomeia o pacto, não o conteúdo impresso nesta lacuna.",
+      "c": "Povo fecha a fórmula relacional, no fim."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "lei"
+      },
+      {
+        "id": "b",
+        "text": "aliança"
+      },
+      {
+        "id": "c",
+        "text": "povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-02-desafio-jeremias",
+    "id": "jeremias-pro-jeremias-nova-alian-02-desafio-jeremias-05",
+    "template": "Imprimirei a minha ___ no seu interior, e a escreverei no seu coração"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Jeremias 1:5; 31:33",
+    "learningObjective": "Interpretar o arco: vocação anterior, juízo da religião vazia e aliança escrita por dentro.",
+    "evidence": [
+      "Jeremias 1:5",
+      "Jeremias 7:4",
+      "Jeremias 31:33"
+    ],
+    "type": "connect",
+    "question": "O que Jeremias 1:5, 7:4 e 31:33 comunicam que se liga a este contexto?",
+    "prompt": "O que Jeremias 1:5, 7:4 e 31:33 comunicam que se liga a este contexto?",
+    "cue": "O que Jeremias 1:5, 7:4 e 31:33 comunicam que se liga a este contexto?",
+    "feedbackCorrect": "Certo: formado no ventre, sem segurança de templo, lei no coração.",
+    "feedbackWrong": {
+      "b": "O arco não ensina salvação pelo prédio sagrado.",
+      "c": "Não há aqui um profeta formado só para o culto local."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ventre, não templo, coração"
+      },
+      {
+        "id": "b",
+        "text": "Salvação pelo prédio sagrado"
+      },
+      {
+        "id": "c",
+        "text": "Profeta só para o culto local"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí. Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este. Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;",
+    "trail": "jeremias",
+    "section": "jeremias-nova-alian-02-desafio-jeremias",
+    "id": "jeremias-pro-jeremias-nova-alian-02-desafio-jeremias-06",
+    "passageA": {
+      "ref": "Jeremias 1:5; 7:4; 31:33",
+      "text": "Antes que eu te formasse no ventre, te conheci; e, antes que saísses da madre, te santifiquei: um profeta para as nações te constituí. Não confieis em palavras mentirosas, dizendo: Templo de Jeová, templo de Jeová é este. Mas esta é a aliança que farei com a casa de Israel depois daqueles dias, diz Jeová: Imprimirei a minha lei no seu interior, e a escreverei no seu coração; eu serei o seu Deus, e eles serão o meu povo;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O profeta formado no ventre anuncia aliança no coração — não segurança de templo."
+    }
+  }
+]

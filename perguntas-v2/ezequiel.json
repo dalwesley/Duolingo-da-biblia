@@ -1,0 +1,3701 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ezequiel 1:28",
+    "learningObjective": "Reconhecer que a glória de Jeová aparece como resplendor que faz o profeta cair com o rosto em terra.",
+    "evidence": [
+      "Ezequiel 1:28"
+    ],
+    "type": "true_false",
+    "question": "Ao ver a semelhança da glória de Jeová, Ezequiel caiu com o rosto em terra e ouviu uma voz.",
+    "prompt": "Ao ver a semelhança da glória de Jeová, Ezequiel caiu com o rosto em terra e ouviu uma voz.",
+    "cue": "Ao ver a semelhança da glória de Jeová, Ezequiel caiu com o rosto em terra e ouviu uma voz.",
+    "feedbackCorrect": "Certo: o texto une visão, queda e voz.",
+    "feedbackWrong": {
+      "false": "Releia: ele caiu com o rosto em terra e ouviu uma voz."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-01-a-gloria-de-deus",
+    "id": "ezequiel-sem-ezequiel-visoes-01-a-gloria-de-deus-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Como a aparência do arco que se vê na nuvem no dia de chuva, assim era a aparência do resplendor em roda. Esta era a aparência da semelhança da glória de Jeová. Quando a vi, caí com o rosto em terra e ouvi uma voz de quem falava."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ezequiel 1:28",
+    "learningObjective": "Reconhecer que a glória de Jeová aparece como resplendor que faz o profeta cair com o rosto em terra.",
+    "evidence": [
+      "Ezequiel 1:28"
+    ],
+    "type": "tap",
+    "question": "Em Ezequiel 1:28, toque a palavra que falta em \"Esta era a aparência da semelhança da ___ de Jeová\"?",
+    "prompt": "Em Ezequiel 1:28, toque a palavra que falta em \"Esta era a aparência da semelhança da ___ de Jeová\"?",
+    "cue": "Em Ezequiel 1:28, toque a palavra que falta em \"Esta era a aparência da semelhança da ___ de Jeová\"?",
+    "feedbackCorrect": "Exato: é a semelhança da glória de Jeová.",
+    "feedbackWrong": {
+      "b": "Nuvem pertence ao arco no dia de chuva.",
+      "c": "Chuva descreve o dia do arco, não a glória."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-01-a-gloria-de-deus",
+    "id": "ezequiel-sem-ezequiel-visoes-01-a-gloria-de-deus-02",
+    "passageText": "Como a aparência do arco que se vê na nuvem no dia de chuva, assim era a aparência do resplendor em roda. Esta era a aparência da semelhança da glória de Jeová. Quando a vi, caí com o rosto em terra e ouvi uma voz de quem falava.",
+    "template": "Esta era a aparência da semelhança da ___ de Jeová",
+    "options": [
+      {
+        "id": "a",
+        "text": "glória"
+      },
+      {
+        "id": "b",
+        "text": "nuvem"
+      },
+      {
+        "id": "c",
+        "text": "chuva"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ezequiel 1:28",
+    "learningObjective": "Reconhecer que a glória de Jeová aparece como resplendor que faz o profeta cair com o rosto em terra.",
+    "evidence": [
+      "Ezequiel 1:28"
+    ],
+    "type": "choice",
+    "question": "Qual fato o texto afirma sobre o que Ezequiel viu?",
+    "prompt": "Qual fato o texto afirma sobre o que Ezequiel viu?",
+    "cue": "Qual fato o texto afirma sobre o que Ezequiel viu?",
+    "feedbackCorrect": "Certo: o texto chama o que viu de glória de Jeová.",
+    "feedbackWrong": {
+      "b": "O arco ilustra o resplendor, não o reduz a clima.",
+      "c": "Ele caiu com o rosto em terra e ouviu uma voz.",
+      "d": "A comparação é com o arco na nuvem no dia de chuva."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-01-a-gloria-de-deus",
+    "id": "ezequiel-sem-ezequiel-visoes-01-a-gloria-de-deus-03",
+    "passageText": "Como a aparência do arco que se vê na nuvem no dia de chuva, assim era a aparência do resplendor em roda. Esta era a aparência da semelhança da glória de Jeová. Quando a vi, caí com o rosto em terra e ouvi uma voz de quem falava.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Era a aparência da semelhança da glória de Jeová."
+      },
+      {
+        "id": "b",
+        "text": "Era apenas um arco comum, sem qualquer resplendor."
+      },
+      {
+        "id": "c",
+        "text": "Ezequiel permaneceu de pé e não ouviu voz alguma."
+      },
+      {
+        "id": "d",
+        "text": "A visão aconteceu numa sala do templo, sem nuvem nem chuva."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ezequiel 1:28",
+    "learningObjective": "Reconhecer que a glória de Jeová aparece como resplendor que faz o profeta cair com o rosto em terra.",
+    "evidence": [
+      "Ezequiel 1:28"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Ezequiel 1:28?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Ezequiel 1:28?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Ezequiel 1:28?",
+    "feedbackCorrect": "Certo: arco, glória nomeada, queda e voz.",
+    "feedbackWrong": {
+      "b": "A glória é nomeada depois da comparação com o arco.",
+      "c": "A queda e a voz fecham o versículo."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-01-a-gloria-de-deus",
+    "id": "ezequiel-sem-ezequiel-visoes-01-a-gloria-de-deus-04",
+    "passageText": "Como a aparência do arco que se vê na nuvem no dia de chuva, assim era a aparência do resplendor em roda. Esta era a aparência da semelhança da glória de Jeová. Quando a vi, caí com o rosto em terra e ouvi uma voz de quem falava.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Como a aparência do arco que se vê na nuvem no dia de chuva"
+      },
+      {
+        "id": "b",
+        "text": "Esta era a aparência da semelhança da glória de Jeová"
+      },
+      {
+        "id": "c",
+        "text": "Quando a vi, caí com o rosto em terra e ouvi uma voz de quem falava"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ezequiel 1:28",
+    "learningObjective": "Reconhecer que a glória de Jeová aparece como resplendor que faz o profeta cair com o rosto em terra.",
+    "evidence": [
+      "Ezequiel 1:28"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Quando a vi, caí com o ___ em terra e ouvi uma voz de quem falava\"",
+    "prompt": "Complete a frase: \"Quando a vi, caí com o ___ em terra e ouvi uma voz de quem falava\"",
+    "cue": "Complete a frase: \"Quando a vi, caí com o ___ em terra e ouvi uma voz de quem falava\"",
+    "feedbackCorrect": "Certo: caiu com o rosto em terra.",
+    "feedbackWrong": {
+      "b": "Arco ilustra o resplendor, não o que toca a terra.",
+      "c": "Resplendor é o que ele viu, não com o que caiu."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-01-a-gloria-de-deus",
+    "id": "ezequiel-sem-ezequiel-visoes-01-a-gloria-de-deus-05",
+    "passageText": "Como a aparência do arco que se vê na nuvem no dia de chuva, assim era a aparência do resplendor em roda. Esta era a aparência da semelhança da glória de Jeová. Quando a vi, caí com o rosto em terra e ouvi uma voz de quem falava.",
+    "template": "Quando a vi, caí com o ___ em terra e ouvi uma voz de quem falava",
+    "options": [
+      {
+        "id": "a",
+        "text": "rosto"
+      },
+      {
+        "id": "b",
+        "text": "arco"
+      },
+      {
+        "id": "c",
+        "text": "resplendor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ezequiel 1:28",
+    "learningObjective": "Reconhecer que a glória de Jeová aparece como resplendor que faz o profeta cair com o rosto em terra.",
+    "evidence": [
+      "Ezequiel 1:28"
+    ],
+    "type": "connect",
+    "question": "O que Ezequiel 1:28 comunica que se liga a este contexto?",
+    "prompt": "O que Ezequiel 1:28 comunica que se liga a este contexto?",
+    "cue": "O que Ezequiel 1:28 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a glória é resplendor que derruba o profeta.",
+    "feedbackWrong": {
+      "b": "O arco ilustra o resplendor da glória de Jeová.",
+      "c": "A voz vem depois de ele ver e cair."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-01-a-gloria-de-deus",
+    "id": "ezequiel-sem-ezequiel-visoes-01-a-gloria-de-deus-06",
+    "passageText": "Como a aparência do arco que se vê na nuvem no dia de chuva, assim era a aparência do resplendor em roda. Esta era a aparência da semelhança da glória de Jeová. Quando a vi, caí com o rosto em terra e ouvi uma voz de quem falava.",
+    "passageA": {
+      "ref": "Ezequiel 1:28",
+      "text": "Esta era a aparência da semelhança da glória de Jeová. Quando a vi, caí com o rosto em terra"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A glória de Jeová não é ideia: resplendor que derruba o profeta com o rosto em terra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Glória que derruba"
+      },
+      {
+        "id": "b",
+        "text": "Arco sem Jeová"
+      },
+      {
+        "id": "c",
+        "text": "Voz sem visão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ezequiel 1:28",
+    "learningObjective": "Reconhecer que a glória de Jeová aparece como resplendor que faz o profeta cair com o rosto em terra.",
+    "evidence": [
+      "Ezequiel 1:28"
+    ],
+    "type": "true_false",
+    "question": "A glória de Jeová neste versículo é só uma ideia interior, sem resplendor visível nem efeito no corpo do profeta.",
+    "prompt": "A glória de Jeová neste versículo é só uma ideia interior, sem resplendor visível nem efeito no corpo do profeta.",
+    "cue": "A glória de Jeová neste versículo é só uma ideia interior, sem resplendor visível nem efeito no corpo do profeta.",
+    "feedbackCorrect": "Certo: há resplendor, queda e voz.",
+    "feedbackWrong": {
+      "true": "O texto descreve aparência, resplendor e queda com o rosto em terra."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-01-a-gloria-de-deus",
+    "id": "ezequiel-cam-ezequiel-visoes-01-a-gloria-de-deus-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Como a aparência do arco que se vê na nuvem no dia de chuva, assim era a aparência do resplendor em roda. Esta era a aparência da semelhança da glória de Jeová. Quando a vi, caí com o rosto em terra e ouvi uma voz de quem falava."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ezequiel 1:28",
+    "learningObjective": "Reconhecer que a glória de Jeová aparece como resplendor que faz o profeta cair com o rosto em terra.",
+    "evidence": [
+      "Ezequiel 1:28"
+    ],
+    "type": "tap",
+    "question": "Em Ezequiel 1:28, toque a palavra que falta em \"assim era a aparência do ___ em roda\"?",
+    "prompt": "Em Ezequiel 1:28, toque a palavra que falta em \"assim era a aparência do ___ em roda\"?",
+    "cue": "Em Ezequiel 1:28, toque a palavra que falta em \"assim era a aparência do ___ em roda\"?",
+    "feedbackCorrect": "Exato: a aparência do resplendor em roda.",
+    "feedbackWrong": {
+      "b": "Rosto é com o que ele caiu, depois.",
+      "c": "A voz é ouvida depois da visão."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-01-a-gloria-de-deus",
+    "id": "ezequiel-cam-ezequiel-visoes-01-a-gloria-de-deus-02",
+    "passageText": "Como a aparência do arco que se vê na nuvem no dia de chuva, assim era a aparência do resplendor em roda. Esta era a aparência da semelhança da glória de Jeová. Quando a vi, caí com o rosto em terra e ouvi uma voz de quem falava.",
+    "template": "assim era a aparência do ___ em roda",
+    "options": [
+      {
+        "id": "a",
+        "text": "resplendor"
+      },
+      {
+        "id": "b",
+        "text": "rosto"
+      },
+      {
+        "id": "c",
+        "text": "voz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ezequiel 1:28",
+    "learningObjective": "Reconhecer que a glória de Jeová aparece como resplendor que faz o profeta cair com o rosto em terra.",
+    "evidence": [
+      "Ezequiel 1:28"
+    ],
+    "type": "choice",
+    "question": "Como o versículo liga a comparação do arco ao que Ezequiel experimenta?",
+    "prompt": "Como o versículo liga a comparação do arco ao que Ezequiel experimenta?",
+    "cue": "Como o versículo liga a comparação do arco ao que Ezequiel experimenta?",
+    "feedbackCorrect": "Certo: o arco ilustra o resplendor da glória que o derruba.",
+    "feedbackWrong": {
+      "a": "O arco ilustra a aparência da glória de Jeová.",
+      "c": "Ele cai ao ver a glória, não por causa da chuva.",
+      "d": "Ele viu, caiu e então ouviu a voz."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-01-a-gloria-de-deus",
+    "id": "ezequiel-cam-ezequiel-visoes-01-a-gloria-de-deus-03",
+    "passageText": "Como a aparência do arco que se vê na nuvem no dia de chuva, assim era a aparência do resplendor em roda. Esta era a aparência da semelhança da glória de Jeová. Quando a vi, caí com o rosto em terra e ouvi uma voz de quem falava.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O arco serve só de meteorologia, sem ligação com Jeová."
+      },
+      {
+        "id": "b",
+        "text": "O resplendor em roda é a aparência da glória, e isso o derruba."
+      },
+      {
+        "id": "c",
+        "text": "Ezequiel cai porque a chuva o impediu de enxergar."
+      },
+      {
+        "id": "d",
+        "text": "A voz substitui a visão: ele ouve sem ter visto coisa alguma."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ezequiel 1:28",
+    "learningObjective": "Reconhecer que a glória de Jeová aparece como resplendor que faz o profeta cair com o rosto em terra.",
+    "evidence": [
+      "Ezequiel 1:28"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Ezequiel 1:28?",
+    "prompt": "Como se encadeiam os eventos de Ezequiel 1:28?",
+    "cue": "Como se encadeiam os eventos de Ezequiel 1:28?",
+    "feedbackCorrect": "Certo: resplendor, nome da glória, queda e voz.",
+    "feedbackWrong": {
+      "b": "O nome da glória segue a aparência do resplendor.",
+      "c": "Queda e voz vêm depois de ele ver."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-01-a-gloria-de-deus",
+    "id": "ezequiel-cam-ezequiel-visoes-01-a-gloria-de-deus-04",
+    "passageText": "Como a aparência do arco que se vê na nuvem no dia de chuva, assim era a aparência do resplendor em roda. Esta era a aparência da semelhança da glória de Jeová. Quando a vi, caí com o rosto em terra e ouvi uma voz de quem falava.",
+    "options": [
+      {
+        "id": "a",
+        "text": "assim era a aparência do resplendor em roda"
+      },
+      {
+        "id": "b",
+        "text": "Esta era a aparência da semelhança da glória de Jeová"
+      },
+      {
+        "id": "c",
+        "text": "caí com o rosto em terra e ouvi uma voz de quem falava"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ezequiel 1:28",
+    "learningObjective": "Reconhecer que a glória de Jeová aparece como resplendor que faz o profeta cair com o rosto em terra.",
+    "evidence": [
+      "Ezequiel 1:28"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Como a aparência do arco que se vê na nuvem no dia de ___, assim era a aparência do resplendor em roda\"",
+    "prompt": "Complete a frase: \"Como a aparência do arco que se vê na nuvem no dia de ___, assim era a aparência do resplendor em roda\"",
+    "cue": "Complete a frase: \"Como a aparência do arco que se vê na nuvem no dia de ___, assim era a aparência do resplendor em roda\"",
+    "feedbackCorrect": "Certo: o arco se vê no dia de chuva.",
+    "feedbackWrong": {
+      "b": "Glória nomeia o que o resplendor significa.",
+      "c": "Terra é o chão onde ele caiu."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-01-a-gloria-de-deus",
+    "id": "ezequiel-cam-ezequiel-visoes-01-a-gloria-de-deus-05",
+    "passageText": "Como a aparência do arco que se vê na nuvem no dia de chuva, assim era a aparência do resplendor em roda. Esta era a aparência da semelhança da glória de Jeová. Quando a vi, caí com o rosto em terra e ouvi uma voz de quem falava.",
+    "template": "Como a aparência do arco que se vê na nuvem no dia de ___, assim era a aparência do resplendor em roda",
+    "options": [
+      {
+        "id": "a",
+        "text": "chuva"
+      },
+      {
+        "id": "b",
+        "text": "glória"
+      },
+      {
+        "id": "c",
+        "text": "terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ezequiel 1:28",
+    "learningObjective": "Reconhecer que a glória de Jeová aparece como resplendor que faz o profeta cair com o rosto em terra.",
+    "evidence": [
+      "Ezequiel 1:28"
+    ],
+    "type": "connect",
+    "question": "O que Ezequiel 1:28 comunica que se liga a este contexto?",
+    "prompt": "O que Ezequiel 1:28 comunica que se liga a este contexto?",
+    "cue": "O que Ezequiel 1:28 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o resplendor comunica a glória que atinge o profeta.",
+    "feedbackWrong": {
+      "b": "A chuva ilustra o arco, não define Jeová.",
+      "c": "Ele cai precisamente ao ver a glória."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-01-a-gloria-de-deus",
+    "id": "ezequiel-cam-ezequiel-visoes-01-a-gloria-de-deus-06",
+    "passageText": "Como a aparência do arco que se vê na nuvem no dia de chuva, assim era a aparência do resplendor em roda. Esta era a aparência da semelhança da glória de Jeová. Quando a vi, caí com o rosto em terra e ouvi uma voz de quem falava.",
+    "passageA": {
+      "ref": "Ezequiel 1:28",
+      "text": "Como a aparência do arco que se vê na nuvem no dia de chuva, assim era a aparência do resplendor em roda"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A visão não fica no céu: o resplendor nomeia a glória e atinge o profeta."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Resplendor que atinge"
+      },
+      {
+        "id": "b",
+        "text": "Chuva que explica Deus"
+      },
+      {
+        "id": "c",
+        "text": "Queda sem glória"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ezequiel 1:28",
+    "learningObjective": "Reconhecer que a glória de Jeová aparece como resplendor que faz o profeta cair com o rosto em terra.",
+    "evidence": [
+      "Ezequiel 1:28"
+    ],
+    "type": "true_false",
+    "question": "A glória de Jeová, neste texto, não é abstração: é resplendor que derruba o profeta e abre espaço para a voz.",
+    "prompt": "A glória de Jeová, neste texto, não é abstração: é resplendor que derruba o profeta e abre espaço para a voz.",
+    "cue": "A glória de Jeová, neste texto, não é abstração: é resplendor que derruba o profeta e abre espaço para a voz.",
+    "feedbackCorrect": "Certo: glória visível, queda e palavra.",
+    "feedbackWrong": {
+      "false": "O versículo une aparência, queda e voz de quem falava."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-01-a-gloria-de-deus",
+    "id": "ezequiel-pro-ezequiel-visoes-01-a-gloria-de-deus-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Como a aparência do arco que se vê na nuvem no dia de chuva, assim era a aparência do resplendor em roda. Esta era a aparência da semelhança da glória de Jeová. Quando a vi, caí com o rosto em terra e ouvi uma voz de quem falava."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ezequiel 1:28",
+    "learningObjective": "Reconhecer que a glória de Jeová aparece como resplendor que faz o profeta cair com o rosto em terra.",
+    "evidence": [
+      "Ezequiel 1:28"
+    ],
+    "type": "tap",
+    "question": "Em Ezequiel 1:28, toque a palavra que falta em \"caí com o rosto em terra e ouvi uma ___ de quem falava\"?",
+    "prompt": "Em Ezequiel 1:28, toque a palavra que falta em \"caí com o rosto em terra e ouvi uma ___ de quem falava\"?",
+    "cue": "Em Ezequiel 1:28, toque a palavra que falta em \"caí com o rosto em terra e ouvi uma ___ de quem falava\"?",
+    "feedbackCorrect": "Exato: ouviu uma voz de quem falava.",
+    "feedbackWrong": {
+      "b": "Nuvem pertence à comparação do arco.",
+      "c": "Roda descreve o resplendor em volta."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-01-a-gloria-de-deus",
+    "id": "ezequiel-pro-ezequiel-visoes-01-a-gloria-de-deus-02",
+    "passageText": "Como a aparência do arco que se vê na nuvem no dia de chuva, assim era a aparência do resplendor em roda. Esta era a aparência da semelhança da glória de Jeová. Quando a vi, caí com o rosto em terra e ouvi uma voz de quem falava.",
+    "template": "caí com o rosto em terra e ouvi uma ___ de quem falava",
+    "options": [
+      {
+        "id": "a",
+        "text": "voz"
+      },
+      {
+        "id": "b",
+        "text": "nuvem"
+      },
+      {
+        "id": "c",
+        "text": "roda"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ezequiel 1:28",
+    "learningObjective": "Reconhecer que a glória de Jeová aparece como resplendor que faz o profeta cair com o rosto em terra.",
+    "evidence": [
+      "Ezequiel 1:28"
+    ],
+    "type": "choice",
+    "question": "Qual leitura teológica deste versículo o texto sustenta?",
+    "prompt": "Qual leitura teológica deste versículo o texto sustenta?",
+    "cue": "Qual leitura teológica deste versículo o texto sustenta?",
+    "feedbackCorrect": "Certo: ver, cair e ouvir é a ordem da glória.",
+    "feedbackWrong": {
+      "a": "Depois da visão há voz de quem falava.",
+      "b": "Ele cai com o rosto em terra.",
+      "d": "O texto chama o que viu de glória de Jeová."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-01-a-gloria-de-deus",
+    "id": "ezequiel-pro-ezequiel-visoes-01-a-gloria-de-deus-03",
+    "passageText": "Como a aparência do arco que se vê na nuvem no dia de chuva, assim era a aparência do resplendor em roda. Esta era a aparência da semelhança da glória de Jeová. Quando a vi, caí com o rosto em terra e ouvi uma voz de quem falava.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová se reduz a um fenômeno de luz, sem palavra ao profeta."
+      },
+      {
+        "id": "b",
+        "text": "O profeta controla a visão e permanece de pé como igual a Jeová."
+      },
+      {
+        "id": "c",
+        "text": "A glória se dá a ver, derruba o homem e então fala."
+      },
+      {
+        "id": "d",
+        "text": "A queda prova que a glória de Jeová é ilusão óptica."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ezequiel 1:28",
+    "learningObjective": "Reconhecer que a glória de Jeová aparece como resplendor que faz o profeta cair com o rosto em terra.",
+    "evidence": [
+      "Ezequiel 1:28"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Ezequiel 1:28?",
+    "prompt": "Qual sequência revela o sentido de Ezequiel 1:28?",
+    "cue": "Qual sequência revela o sentido de Ezequiel 1:28?",
+    "feedbackCorrect": "Certo: glória vista, homem prostrado, palavra ouvida.",
+    "feedbackWrong": {
+      "b": "A queda segue a visão da glória.",
+      "c": "A voz vem depois da prostração."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-01-a-gloria-de-deus",
+    "id": "ezequiel-pro-ezequiel-visoes-01-a-gloria-de-deus-04",
+    "passageText": "Como a aparência do arco que se vê na nuvem no dia de chuva, assim era a aparência do resplendor em roda. Esta era a aparência da semelhança da glória de Jeová. Quando a vi, caí com o rosto em terra e ouvi uma voz de quem falava.",
+    "options": [
+      {
+        "id": "a",
+        "text": "a aparência da semelhança da glória de Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Quando a vi, caí com o rosto em terra"
+      },
+      {
+        "id": "c",
+        "text": "ouvi uma voz de quem falava"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ezequiel 1:28",
+    "learningObjective": "Reconhecer que a glória de Jeová aparece como resplendor que faz o profeta cair com o rosto em terra.",
+    "evidence": [
+      "Ezequiel 1:28"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Esta era a aparência da ___ da glória de Jeová\"",
+    "prompt": "Complete a frase: \"Esta era a aparência da ___ da glória de Jeová\"",
+    "cue": "Complete a frase: \"Esta era a aparência da ___ da glória de Jeová\"",
+    "feedbackCorrect": "Certo: aparência da semelhança da glória.",
+    "feedbackWrong": {
+      "b": "Chuva ilustra o arco, não nomeia a glória.",
+      "c": "A voz é ouvida no fim, não nesta cláusula."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-01-a-gloria-de-deus",
+    "id": "ezequiel-pro-ezequiel-visoes-01-a-gloria-de-deus-05",
+    "passageText": "Como a aparência do arco que se vê na nuvem no dia de chuva, assim era a aparência do resplendor em roda. Esta era a aparência da semelhança da glória de Jeová. Quando a vi, caí com o rosto em terra e ouvi uma voz de quem falava.",
+    "template": "Esta era a aparência da ___ da glória de Jeová",
+    "options": [
+      {
+        "id": "a",
+        "text": "semelhança"
+      },
+      {
+        "id": "b",
+        "text": "chuva"
+      },
+      {
+        "id": "c",
+        "text": "voz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ezequiel 1:28",
+    "learningObjective": "Reconhecer que a glória de Jeová aparece como resplendor que faz o profeta cair com o rosto em terra.",
+    "evidence": [
+      "Ezequiel 1:28"
+    ],
+    "type": "connect",
+    "question": "O que Ezequiel 1:28 comunica que se liga a este contexto?",
+    "prompt": "O que Ezequiel 1:28 comunica que se liga a este contexto?",
+    "cue": "O que Ezequiel 1:28 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a glória derruba para que a voz seja ouvida.",
+    "feedbackWrong": {
+      "b": "Ele cai com o rosto em terra.",
+      "c": "Há voz de quem falava depois da visão."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-01-a-gloria-de-deus",
+    "id": "ezequiel-pro-ezequiel-visoes-01-a-gloria-de-deus-06",
+    "passageText": "Como a aparência do arco que se vê na nuvem no dia de chuva, assim era a aparência do resplendor em roda. Esta era a aparência da semelhança da glória de Jeová. Quando a vi, caí com o rosto em terra e ouvi uma voz de quem falava.",
+    "passageA": {
+      "ref": "Ezequiel 1:28",
+      "text": "Quando a vi, caí com o rosto em terra e ouvi uma voz de quem falava"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A glória de Jeová não entretém: humilha o profeta para que ele ouça."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Glória que faz ouvir"
+      },
+      {
+        "id": "b",
+        "text": "Profeta que permanece ereto"
+      },
+      {
+        "id": "c",
+        "text": "Luz sem palavra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ezequiel 3:17",
+    "learningObjective": "Entender que o atalaia ouve da boca de Jeová e avisa a casa de Israel.",
+    "evidence": [
+      "Ezequiel 3:17"
+    ],
+    "type": "true_false",
+    "question": "Jeová deu o filho do homem por atalaia à casa de Israel.",
+    "prompt": "Jeová deu o filho do homem por atalaia à casa de Israel.",
+    "cue": "Jeová deu o filho do homem por atalaia à casa de Israel.",
+    "feedbackCorrect": "Certo: o texto diz exatamente isso.",
+    "feedbackWrong": {
+      "false": "Releia: eu te dei por atalaia à casa de Israel."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-02-atalaia-de-israel",
+    "id": "ezequiel-sem-ezequiel-visoes-02-atalaia-de-israel-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ezequiel 3:17",
+    "learningObjective": "Entender que o atalaia ouve da boca de Jeová e avisa a casa de Israel.",
+    "evidence": [
+      "Ezequiel 3:17"
+    ],
+    "type": "tap",
+    "question": "Em Ezequiel 3:17, toque a palavra que falta em \"Filho do homem, eu te dei por ___ à casa de Israel\"?",
+    "prompt": "Em Ezequiel 3:17, toque a palavra que falta em \"Filho do homem, eu te dei por ___ à casa de Israel\"?",
+    "cue": "Em Ezequiel 3:17, toque a palavra que falta em \"Filho do homem, eu te dei por ___ à casa de Israel\"?",
+    "feedbackCorrect": "Exato: deu-o por atalaia à casa de Israel.",
+    "feedbackWrong": {
+      "b": "Palavra é o que ele deve ouvir e avisar.",
+      "c": "Boca é de onde sai a palavra de Jeová."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-02-atalaia-de-israel",
+    "id": "ezequiel-sem-ezequiel-visoes-02-atalaia-de-israel-02",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte.",
+    "template": "Filho do homem, eu te dei por ___ à casa de Israel",
+    "options": [
+      {
+        "id": "a",
+        "text": "atalaia"
+      },
+      {
+        "id": "b",
+        "text": "palavra"
+      },
+      {
+        "id": "c",
+        "text": "boca"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ezequiel 3:17",
+    "learningObjective": "Entender que o atalaia ouve da boca de Jeová e avisa a casa de Israel.",
+    "evidence": [
+      "Ezequiel 3:17"
+    ],
+    "type": "choice",
+    "question": "Qual fato o texto afirma sobre o encargo do filho do homem?",
+    "prompt": "Qual fato o texto afirma sobre o encargo do filho do homem?",
+    "cue": "Qual fato o texto afirma sobre o encargo do filho do homem?",
+    "feedbackCorrect": "Certo: ouvir da boca e avisar da parte de Jeová.",
+    "feedbackWrong": {
+      "b": "O texto manda avisar, não calar.",
+      "c": "O cargo é atalaia à casa de Israel.",
+      "d": "A palavra vem da boca de Jeová."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-02-atalaia-de-israel",
+    "id": "ezequiel-sem-ezequiel-visoes-02-atalaia-de-israel-03",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deve ouvir da boca de Jeová a palavra e avisar Israel."
+      },
+      {
+        "id": "b",
+        "text": "Deve guardar silêncio e não avisar a casa de Israel."
+      },
+      {
+        "id": "c",
+        "text": "Recebeu o cargo de rei sobre as nações vizinhas."
+      },
+      {
+        "id": "d",
+        "text": "Deve inventar a palavra, sem ouvir da boca de Jeová."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ezequiel 3:17",
+    "learningObjective": "Entender que o atalaia ouve da boca de Jeová e avisa a casa de Israel.",
+    "evidence": [
+      "Ezequiel 3:17"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Ezequiel 3:17?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Ezequiel 3:17?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Ezequiel 3:17?",
+    "feedbackCorrect": "Certo: nomeação, ouvir, avisar.",
+    "feedbackWrong": {
+      "b": "Ouvir a palavra segue a nomeação de atalaia.",
+      "c": "Avisar fecha o encargo."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-02-atalaia-de-israel",
+    "id": "ezequiel-sem-ezequiel-visoes-02-atalaia-de-israel-04",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Filho do homem, eu te dei por atalaia à casa de Israel"
+      },
+      {
+        "id": "b",
+        "text": "ouve, pois, da minha boca a palavra"
+      },
+      {
+        "id": "c",
+        "text": "e avisa-os da minha parte"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ezequiel 3:17",
+    "learningObjective": "Entender que o atalaia ouve da boca de Jeová e avisa a casa de Israel.",
+    "evidence": [
+      "Ezequiel 3:17"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"ouve, pois, da minha ___ a palavra e avisa-os da minha parte\"",
+    "prompt": "Complete a frase: \"ouve, pois, da minha ___ a palavra e avisa-os da minha parte\"",
+    "cue": "Complete a frase: \"ouve, pois, da minha ___ a palavra e avisa-os da minha parte\"",
+    "feedbackCorrect": "Certo: da minha boca a palavra.",
+    "feedbackWrong": {
+      "b": "Casa é a de Israel, não a origem da palavra.",
+      "c": "Atalaia é o cargo, não a fonte da palavra."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-02-atalaia-de-israel",
+    "id": "ezequiel-sem-ezequiel-visoes-02-atalaia-de-israel-05",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte.",
+    "template": "ouve, pois, da minha ___ a palavra e avisa-os da minha parte",
+    "options": [
+      {
+        "id": "a",
+        "text": "boca"
+      },
+      {
+        "id": "b",
+        "text": "casa"
+      },
+      {
+        "id": "c",
+        "text": "atalaia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ezequiel 3:17",
+    "learningObjective": "Entender que o atalaia ouve da boca de Jeová e avisa a casa de Israel.",
+    "evidence": [
+      "Ezequiel 3:17"
+    ],
+    "type": "connect",
+    "question": "O que Ezequiel 3:17 comunica que se liga a este contexto?",
+    "prompt": "O que Ezequiel 3:17 comunica que se liga a este contexto?",
+    "cue": "O que Ezequiel 3:17 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o atalaia ouve e avisa.",
+    "feedbackWrong": {
+      "b": "O texto manda avisar, não calar.",
+      "c": "O aviso é à casa de Israel."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-02-atalaia-de-israel",
+    "id": "ezequiel-sem-ezequiel-visoes-02-atalaia-de-israel-06",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte.",
+    "passageA": {
+      "ref": "Ezequiel 3:17",
+      "text": "eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Atalaia: ouvir da boca de Jeová e avisar Israel — a visão vira responsabilidade."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Visão vira aviso"
+      },
+      {
+        "id": "b",
+        "text": "Silêncio do atalaia"
+      },
+      {
+        "id": "c",
+        "text": "Palavra sem Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ezequiel 3:17",
+    "learningObjective": "Entender que o atalaia ouve da boca de Jeová e avisa a casa de Israel.",
+    "evidence": [
+      "Ezequiel 3:17"
+    ],
+    "type": "true_false",
+    "question": "O atalaia só contempla a visão; não precisa ouvir da boca de Jeová nem avisar Israel.",
+    "prompt": "O atalaia só contempla a visão; não precisa ouvir da boca de Jeová nem avisar Israel.",
+    "cue": "O atalaia só contempla a visão; não precisa ouvir da boca de Jeová nem avisar Israel.",
+    "feedbackCorrect": "Certo: o cargo une ouvir e avisar.",
+    "feedbackWrong": {
+      "true": "O versículo manda ouvir a palavra e avisar da parte de Jeová."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-02-atalaia-de-israel",
+    "id": "ezequiel-cam-ezequiel-visoes-02-atalaia-de-israel-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ezequiel 3:17",
+    "learningObjective": "Entender que o atalaia ouve da boca de Jeová e avisa a casa de Israel.",
+    "evidence": [
+      "Ezequiel 3:17"
+    ],
+    "type": "tap",
+    "question": "Em Ezequiel 3:17, toque a palavra que falta em \"ouve, pois, da minha boca a ___ e avisa-os da minha parte\"?",
+    "prompt": "Em Ezequiel 3:17, toque a palavra que falta em \"ouve, pois, da minha boca a ___ e avisa-os da minha parte\"?",
+    "cue": "Em Ezequiel 3:17, toque a palavra que falta em \"ouve, pois, da minha boca a ___ e avisa-os da minha parte\"?",
+    "feedbackCorrect": "Exato: da minha boca a palavra.",
+    "feedbackWrong": {
+      "b": "Casa é o destinatário: Israel.",
+      "c": "Homem pertence ao vocativo Filho do homem."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-02-atalaia-de-israel",
+    "id": "ezequiel-cam-ezequiel-visoes-02-atalaia-de-israel-02",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte.",
+    "template": "ouve, pois, da minha boca a ___ e avisa-os da minha parte",
+    "options": [
+      {
+        "id": "a",
+        "text": "palavra"
+      },
+      {
+        "id": "b",
+        "text": "casa"
+      },
+      {
+        "id": "c",
+        "text": "homem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ezequiel 3:17",
+    "learningObjective": "Entender que o atalaia ouve da boca de Jeová e avisa a casa de Israel.",
+    "evidence": [
+      "Ezequiel 3:17"
+    ],
+    "type": "choice",
+    "question": "Como se relacionam a nomeação de atalaia e o aviso a Israel?",
+    "prompt": "Como se relacionam a nomeação de atalaia e o aviso a Israel?",
+    "cue": "Como se relacionam a nomeação de atalaia e o aviso a Israel?",
+    "feedbackCorrect": "Certo: primeiro ouve, depois avisa da parte de Jeová.",
+    "feedbackWrong": {
+      "a": "Atalaia existe para avisar.",
+      "b": "A palavra é da boca de Jeová.",
+      "d": "Ele avisa a casa de Israel."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-02-atalaia-de-israel",
+    "id": "ezequiel-cam-ezequiel-visoes-02-atalaia-de-israel-03",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O título de atalaia dispensa qualquer aviso ao povo."
+      },
+      {
+        "id": "b",
+        "text": "O aviso vem de opinião pessoal, não da boca de Jeová."
+      },
+      {
+        "id": "c",
+        "text": "Ouvir da boca de Jeová é o que habilita o aviso da parte dele."
+      },
+      {
+        "id": "d",
+        "text": "Israel deve avisar o profeta, não o contrário."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ezequiel 3:17",
+    "learningObjective": "Entender que o atalaia ouve da boca de Jeová e avisa a casa de Israel.",
+    "evidence": [
+      "Ezequiel 3:17"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Ezequiel 3:17?",
+    "prompt": "Como se encadeiam os eventos de Ezequiel 3:17?",
+    "cue": "Como se encadeiam os eventos de Ezequiel 3:17?",
+    "feedbackCorrect": "Certo: cargo, escuta, aviso.",
+    "feedbackWrong": {
+      "b": "A escuta segue o cargo de atalaia.",
+      "c": "O aviso é o desfecho do encargo."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-02-atalaia-de-israel",
+    "id": "ezequiel-cam-ezequiel-visoes-02-atalaia-de-israel-04",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte.",
+    "options": [
+      {
+        "id": "a",
+        "text": "eu te dei por atalaia à casa de Israel"
+      },
+      {
+        "id": "b",
+        "text": "ouve, pois, da minha boca a palavra"
+      },
+      {
+        "id": "c",
+        "text": "avisa-os da minha parte"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ezequiel 3:17",
+    "learningObjective": "Entender que o atalaia ouve da boca de Jeová e avisa a casa de Israel.",
+    "evidence": [
+      "Ezequiel 3:17"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"eu te dei por atalaia à casa de ___; ouve, pois, da minha boca a palavra\"",
+    "prompt": "Complete a frase: \"eu te dei por atalaia à casa de ___; ouve, pois, da minha boca a palavra\"",
+    "cue": "Complete a frase: \"eu te dei por atalaia à casa de ___; ouve, pois, da minha boca a palavra\"",
+    "feedbackCorrect": "Certo: atalaia à casa de Israel.",
+    "feedbackWrong": {
+      "b": "Boca é de onde sai a palavra.",
+      "c": "Parte fecha o aviso: da minha parte."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-02-atalaia-de-israel",
+    "id": "ezequiel-cam-ezequiel-visoes-02-atalaia-de-israel-05",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte.",
+    "template": "eu te dei por atalaia à casa de ___; ouve, pois, da minha boca a palavra",
+    "options": [
+      {
+        "id": "a",
+        "text": "Israel"
+      },
+      {
+        "id": "b",
+        "text": "boca"
+      },
+      {
+        "id": "c",
+        "text": "parte"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ezequiel 3:17",
+    "learningObjective": "Entender que o atalaia ouve da boca de Jeová e avisa a casa de Israel.",
+    "evidence": [
+      "Ezequiel 3:17"
+    ],
+    "type": "connect",
+    "question": "O que Ezequiel 3:17 comunica que se liga a este contexto?",
+    "prompt": "O que Ezequiel 3:17 comunica que se liga a este contexto?",
+    "cue": "O que Ezequiel 3:17 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: da boca de Jeová ao aviso a Israel.",
+    "feedbackWrong": {
+      "b": "O aviso depende de ouvir a palavra.",
+      "c": "O cargo é à casa de Israel."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-02-atalaia-de-israel",
+    "id": "ezequiel-cam-ezequiel-visoes-02-atalaia-de-israel-06",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte.",
+    "passageA": {
+      "ref": "Ezequiel 3:17",
+      "text": "ouve, pois, da minha boca a palavra e avisa-os da minha parte"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A visão não termina no profeta: vira palavra ouvida e aviso ao povo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ouvir para avisar"
+      },
+      {
+        "id": "b",
+        "text": "Avisar sem ouvir"
+      },
+      {
+        "id": "c",
+        "text": "Cargo sem povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ezequiel 3:17",
+    "learningObjective": "Entender que o atalaia ouve da boca de Jeová e avisa a casa de Israel.",
+    "evidence": [
+      "Ezequiel 3:17"
+    ],
+    "type": "true_false",
+    "question": "A vocação de atalaia transforma a palavra ouvida na boca de Jeová em aviso da parte dele a Israel.",
+    "prompt": "A vocação de atalaia transforma a palavra ouvida na boca de Jeová em aviso da parte dele a Israel.",
+    "cue": "A vocação de atalaia transforma a palavra ouvida na boca de Jeová em aviso da parte dele a Israel.",
+    "feedbackCorrect": "Certo: ouvir e avisar são um só cargo.",
+    "feedbackWrong": {
+      "false": "O versículo une boca, palavra e aviso da parte de Jeová."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-02-atalaia-de-israel",
+    "id": "ezequiel-pro-ezequiel-visoes-02-atalaia-de-israel-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ezequiel 3:17",
+    "learningObjective": "Entender que o atalaia ouve da boca de Jeová e avisa a casa de Israel.",
+    "evidence": [
+      "Ezequiel 3:17"
+    ],
+    "type": "tap",
+    "question": "Em Ezequiel 3:17, toque a palavra que falta em \"Filho do ___, eu te dei por atalaia à casa de Israel\"?",
+    "prompt": "Em Ezequiel 3:17, toque a palavra que falta em \"Filho do ___, eu te dei por atalaia à casa de Israel\"?",
+    "cue": "Em Ezequiel 3:17, toque a palavra que falta em \"Filho do ___, eu te dei por atalaia à casa de Israel\"?",
+    "feedbackCorrect": "Exato: Filho do homem.",
+    "feedbackWrong": {
+      "b": "Palavra é o que ele deve ouvir.",
+      "c": "Parte fecha o aviso de Jeová."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-02-atalaia-de-israel",
+    "id": "ezequiel-pro-ezequiel-visoes-02-atalaia-de-israel-02",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte.",
+    "template": "Filho do ___, eu te dei por atalaia à casa de Israel",
+    "options": [
+      {
+        "id": "a",
+        "text": "homem"
+      },
+      {
+        "id": "b",
+        "text": "palavra"
+      },
+      {
+        "id": "c",
+        "text": "parte"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ezequiel 3:17",
+    "learningObjective": "Entender que o atalaia ouve da boca de Jeová e avisa a casa de Israel.",
+    "evidence": [
+      "Ezequiel 3:17"
+    ],
+    "type": "choice",
+    "question": "Qual leitura deste versículo descreve o sentido do atalaia?",
+    "prompt": "Qual leitura deste versículo descreve o sentido do atalaia?",
+    "cue": "Qual leitura deste versículo descreve o sentido do atalaia?",
+    "feedbackCorrect": "Certo: o cargo é ouvir e avisar da parte de Jeová.",
+    "feedbackWrong": {
+      "a": "Há aviso à casa de Israel.",
+      "c": "Ele deve avisar, não calar.",
+      "d": "O texto fala de palavra da boca de Jeová."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-02-atalaia-de-israel",
+    "id": "ezequiel-pro-ezequiel-visoes-02-atalaia-de-israel-03",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O profeta é espectador da glória, sem dever para com Israel."
+      },
+      {
+        "id": "b",
+        "text": "Responsabilidade: a palavra de Jeová deve ser ouvida e anunciada."
+      },
+      {
+        "id": "c",
+        "text": "Israel já conhece tudo; o atalaia só confirma o silêncio."
+      },
+      {
+        "id": "d",
+        "text": "Atalaia significa vigiar muralhas, sem qualquer palavra de Jeová."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ezequiel 3:17",
+    "learningObjective": "Entender que o atalaia ouve da boca de Jeová e avisa a casa de Israel.",
+    "evidence": [
+      "Ezequiel 3:17"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Ezequiel 3:17?",
+    "prompt": "Qual sequência revela o sentido de Ezequiel 3:17?",
+    "cue": "Qual sequência revela o sentido de Ezequiel 3:17?",
+    "feedbackCorrect": "Certo: cargo, origem da palavra, aviso.",
+    "feedbackWrong": {
+      "b": "A palavra vem da boca de Jeová.",
+      "c": "O aviso é da parte dele."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-02-atalaia-de-israel",
+    "id": "ezequiel-pro-ezequiel-visoes-02-atalaia-de-israel-04",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte.",
+    "options": [
+      {
+        "id": "a",
+        "text": "dei por atalaia à casa de Israel"
+      },
+      {
+        "id": "b",
+        "text": "da minha boca a palavra"
+      },
+      {
+        "id": "c",
+        "text": "avisa-os da minha parte"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ezequiel 3:17",
+    "learningObjective": "Entender que o atalaia ouve da boca de Jeová e avisa a casa de Israel.",
+    "evidence": [
+      "Ezequiel 3:17"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"e avisa-os da minha ___\"",
+    "prompt": "Complete a frase: \"e avisa-os da minha ___\"",
+    "cue": "Complete a frase: \"e avisa-os da minha ___\"",
+    "feedbackCorrect": "Certo: avisa-os da minha parte.",
+    "feedbackWrong": {
+      "b": "Casa é Israel, destinatário do aviso.",
+      "c": "Atalaia é o cargo, não a fórmula do aviso."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-02-atalaia-de-israel",
+    "id": "ezequiel-pro-ezequiel-visoes-02-atalaia-de-israel-05",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte.",
+    "template": "e avisa-os da minha ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "parte"
+      },
+      {
+        "id": "b",
+        "text": "casa"
+      },
+      {
+        "id": "c",
+        "text": "atalaia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ezequiel 3:17",
+    "learningObjective": "Entender que o atalaia ouve da boca de Jeová e avisa a casa de Israel.",
+    "evidence": [
+      "Ezequiel 3:17"
+    ],
+    "type": "connect",
+    "question": "O que Ezequiel 3:17 comunica que se liga a este contexto?",
+    "prompt": "O que Ezequiel 3:17 comunica que se liga a este contexto?",
+    "cue": "O que Ezequiel 3:17 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: atalaia liga visão e responsabilidade.",
+    "feedbackWrong": {
+      "b": "Há palavra da boca de Jeová.",
+      "c": "Ele deve avisar a casa de Israel."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-visoes-02-atalaia-de-israel",
+    "id": "ezequiel-pro-ezequiel-visoes-02-atalaia-de-israel-06",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte.",
+    "passageA": {
+      "ref": "Ezequiel 3:17",
+      "text": "eu te dei por atalaia à casa de Israel"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A glória vista não basta: o profeta é posto como sentinela da palavra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Glória com dever"
+      },
+      {
+        "id": "b",
+        "text": "Cargo sem palavra"
+      },
+      {
+        "id": "c",
+        "text": "Israel sem aviso"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ezequiel 36:26",
+    "learningObjective": "Perceber que Jeová tira o coração de pedra, dá coração de carne e põe espírito novo.",
+    "evidence": [
+      "Ezequiel 36:26"
+    ],
+    "type": "true_false",
+    "question": "Jeová promete tirar da carne o coração de pedra e dar um coração de carne.",
+    "prompt": "Jeová promete tirar da carne o coração de pedra e dar um coração de carne.",
+    "cue": "Jeová promete tirar da carne o coração de pedra e dar um coração de carne.",
+    "feedbackCorrect": "Certo: o versículo afirma essa troca.",
+    "feedbackWrong": {
+      "false": "Releia: tirarei o coração de pedra e darei coração de carne."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-01-coracao-de-carne",
+    "id": "ezequiel-sem-ezequiel-restauraca-01-coracao-de-carne-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ezequiel 36:26",
+    "learningObjective": "Perceber que Jeová tira o coração de pedra, dá coração de carne e põe espírito novo.",
+    "evidence": [
+      "Ezequiel 36:26"
+    ],
+    "type": "tap",
+    "question": "Em Ezequiel 36:26, toque a palavra que falta em \"tirarei da vossa carne o coração de ___ e dar-vos-ei um coração de carne\"?",
+    "prompt": "Em Ezequiel 36:26, toque a palavra que falta em \"tirarei da vossa carne o coração de ___ e dar-vos-ei um coração de carne\"?",
+    "cue": "Em Ezequiel 36:26, toque a palavra que falta em \"tirarei da vossa carne o coração de ___ e dar-vos-ei um coração de carne\"?",
+    "feedbackCorrect": "Exato: coração de pedra.",
+    "feedbackWrong": {
+      "b": "Espírito novo é o que Jeová põe dentro deles.",
+      "c": "Novo qualifica o coração e o espírito dados."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-01-coracao-de-carne",
+    "id": "ezequiel-sem-ezequiel-restauraca-01-coracao-de-carne-02",
+    "passageText": "Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne.",
+    "template": "tirarei da vossa carne o coração de ___ e dar-vos-ei um coração de carne",
+    "options": [
+      {
+        "id": "a",
+        "text": "pedra"
+      },
+      {
+        "id": "b",
+        "text": "espírito"
+      },
+      {
+        "id": "c",
+        "text": "novo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ezequiel 36:26",
+    "learningObjective": "Perceber que Jeová tira o coração de pedra, dá coração de carne e põe espírito novo.",
+    "evidence": [
+      "Ezequiel 36:26"
+    ],
+    "type": "choice",
+    "question": "Qual fato o texto afirma sobre o que Jeová dará?",
+    "prompt": "Qual fato o texto afirma sobre o que Jeová dará?",
+    "cue": "Qual fato o texto afirma sobre o que Jeová dará?",
+    "feedbackCorrect": "Certo: coração novo e espírito novo.",
+    "feedbackWrong": {
+      "b": "O texto fala de coração e espírito, não só de leis.",
+      "c": "Ele tira a pedra e dá carne.",
+      "d": "Jeová é quem dá e põe."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-01-coracao-de-carne",
+    "id": "ezequiel-sem-ezequiel-restauraca-01-coracao-de-carne-03",
+    "passageText": "Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um coração novo e um espírito novo no interior deles."
+      },
+      {
+        "id": "b",
+        "text": "Apenas leis novas, sem tocar o coração."
+      },
+      {
+        "id": "c",
+        "text": "Um coração de pedra mais duro do que o anterior."
+      },
+      {
+        "id": "d",
+        "text": "Nada: o povo deve fabricar sozinho o espírito novo."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ezequiel 36:26",
+    "learningObjective": "Perceber que Jeová tira o coração de pedra, dá coração de carne e põe espírito novo.",
+    "evidence": [
+      "Ezequiel 36:26"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Ezequiel 36:26?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Ezequiel 36:26?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Ezequiel 36:26?",
+    "feedbackCorrect": "Certo: coração novo, espírito novo, troca da pedra.",
+    "feedbackWrong": {
+      "b": "O espírito novo segue o coração novo.",
+      "c": "A troca da pedra fecha o versículo."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-01-coracao-de-carne",
+    "id": "ezequiel-sem-ezequiel-restauraca-01-coracao-de-carne-04",
+    "passageText": "Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Também vos darei um coração novo"
+      },
+      {
+        "id": "b",
+        "text": "e dentro de vós porei um espírito novo"
+      },
+      {
+        "id": "c",
+        "text": "tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ezequiel 36:26",
+    "learningObjective": "Perceber que Jeová tira o coração de pedra, dá coração de carne e põe espírito novo.",
+    "evidence": [
+      "Ezequiel 36:26"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"dentro de vós porei um ___ novo\"",
+    "prompt": "Complete a frase: \"dentro de vós porei um ___ novo\"",
+    "cue": "Complete a frase: \"dentro de vós porei um ___ novo\"",
+    "feedbackCorrect": "Certo: porei um espírito novo.",
+    "feedbackWrong": {
+      "b": "Pedra é o que ele tira, não o que põe.",
+      "c": "Carne descreve o coração dado, não esta lacuna."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-01-coracao-de-carne",
+    "id": "ezequiel-sem-ezequiel-restauraca-01-coracao-de-carne-05",
+    "passageText": "Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne.",
+    "template": "dentro de vós porei um ___ novo",
+    "options": [
+      {
+        "id": "a",
+        "text": "espírito"
+      },
+      {
+        "id": "b",
+        "text": "pedra"
+      },
+      {
+        "id": "c",
+        "text": "carne"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ezequiel 36:26",
+    "learningObjective": "Perceber que Jeová tira o coração de pedra, dá coração de carne e põe espírito novo.",
+    "evidence": [
+      "Ezequiel 36:26"
+    ],
+    "type": "connect",
+    "question": "O que Ezequiel 36:26 comunica que se liga a este contexto?",
+    "prompt": "O que Ezequiel 36:26 comunica que se liga a este contexto?",
+    "cue": "O que Ezequiel 36:26 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: tira pedra, dá carne, põe espírito.",
+    "feedbackWrong": {
+      "b": "O texto tira o coração de pedra.",
+      "c": "Jeová põe o espírito novo."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-01-coracao-de-carne",
+    "id": "ezequiel-sem-ezequiel-restauraca-01-coracao-de-carne-06",
+    "passageText": "Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne.",
+    "passageA": {
+      "ref": "Ezequiel 36:26",
+      "text": "tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Restauração é cirurgia divina: tira pedra, dá carne, põe espírito novo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cirurgia do coração"
+      },
+      {
+        "id": "b",
+        "text": "Pedra que permanece"
+      },
+      {
+        "id": "c",
+        "text": "Espírito fabricado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ezequiel 36:26",
+    "learningObjective": "Perceber que Jeová tira o coração de pedra, dá coração de carne e põe espírito novo.",
+    "evidence": [
+      "Ezequiel 36:26"
+    ],
+    "type": "true_false",
+    "question": "O povo troca o coração de pedra por um de carne por esforço próprio, sem ação de Jeová.",
+    "prompt": "O povo troca o coração de pedra por um de carne por esforço próprio, sem ação de Jeová.",
+    "cue": "O povo troca o coração de pedra por um de carne por esforço próprio, sem ação de Jeová.",
+    "feedbackCorrect": "Certo: Jeová é quem dá, põe e tira.",
+    "feedbackWrong": {
+      "true": "Os verbos são de Jeová: darei, porei, tirarei."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-01-coracao-de-carne",
+    "id": "ezequiel-cam-ezequiel-restauraca-01-coracao-de-carne-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ezequiel 36:26",
+    "learningObjective": "Perceber que Jeová tira o coração de pedra, dá coração de carne e põe espírito novo.",
+    "evidence": [
+      "Ezequiel 36:26"
+    ],
+    "type": "tap",
+    "question": "Em Ezequiel 36:26, toque a palavra que falta em \"dar-vos-ei um coração de ___\"?",
+    "prompt": "Em Ezequiel 36:26, toque a palavra que falta em \"dar-vos-ei um coração de ___\"?",
+    "cue": "Em Ezequiel 36:26, toque a palavra que falta em \"dar-vos-ei um coração de ___\"?",
+    "feedbackCorrect": "Exato: um coração de carne.",
+    "feedbackWrong": {
+      "b": "Pedra é o que ele tira.",
+      "c": "Espírito novo é posto dentro, distinto do coração."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-01-coracao-de-carne",
+    "id": "ezequiel-cam-ezequiel-restauraca-01-coracao-de-carne-02",
+    "passageText": "Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne.",
+    "template": "dar-vos-ei um coração de ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "carne"
+      },
+      {
+        "id": "b",
+        "text": "pedra"
+      },
+      {
+        "id": "c",
+        "text": "espírito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ezequiel 36:26",
+    "learningObjective": "Perceber que Jeová tira o coração de pedra, dá coração de carne e põe espírito novo.",
+    "evidence": [
+      "Ezequiel 36:26"
+    ],
+    "type": "choice",
+    "question": "Como o versículo relaciona coração novo, espírito novo e a pedra?",
+    "prompt": "Como o versículo relaciona coração novo, espírito novo e a pedra?",
+    "cue": "Como o versículo relaciona coração novo, espírito novo e a pedra?",
+    "feedbackCorrect": "Certo: dá, põe e tira — obra interior de Jeová.",
+    "feedbackWrong": {
+      "a": "Há coração novo e espírito novo no mesmo versículo.",
+      "c": "Jeová é quem põe o espírito novo.",
+      "d": "Coração de carne é o que ele dá no lugar da pedra."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-01-coracao-de-carne",
+    "id": "ezequiel-cam-ezequiel-restauraca-01-coracao-de-carne-03",
+    "passageText": "Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Só há troca de pedra; espírito e coração novo não aparecem."
+      },
+      {
+        "id": "b",
+        "text": "Jeová dá interior novo e remove a dureza do coração."
+      },
+      {
+        "id": "c",
+        "text": "O espírito novo substitui Jeová, que se retira do povo."
+      },
+      {
+        "id": "d",
+        "text": "A carne aqui é fraqueza moral, não dom de Jeová."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ezequiel 36:26",
+    "learningObjective": "Perceber que Jeová tira o coração de pedra, dá coração de carne e põe espírito novo.",
+    "evidence": [
+      "Ezequiel 36:26"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Ezequiel 36:26?",
+    "prompt": "Como se encadeiam os eventos de Ezequiel 36:26?",
+    "cue": "Como se encadeiam os eventos de Ezequiel 36:26?",
+    "feedbackCorrect": "Certo: dar, pôr, tirar a pedra.",
+    "feedbackWrong": {
+      "b": "O espírito novo é posto depois do coração novo.",
+      "c": "Tirar a pedra vem na segunda metade."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-01-coracao-de-carne",
+    "id": "ezequiel-cam-ezequiel-restauraca-01-coracao-de-carne-04",
+    "passageText": "Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vos darei um coração novo"
+      },
+      {
+        "id": "b",
+        "text": "porei um espírito novo"
+      },
+      {
+        "id": "c",
+        "text": "tirarei da vossa carne o coração de pedra"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ezequiel 36:26",
+    "learningObjective": "Perceber que Jeová tira o coração de pedra, dá coração de carne e põe espírito novo.",
+    "evidence": [
+      "Ezequiel 36:26"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Também vos darei um coração ___ e dentro de vós porei um espírito novo\"",
+    "prompt": "Complete a frase: \"Também vos darei um coração ___ e dentro de vós porei um espírito novo\"",
+    "cue": "Complete a frase: \"Também vos darei um coração ___ e dentro de vós porei um espírito novo\"",
+    "feedbackCorrect": "Certo: um coração novo.",
+    "feedbackWrong": {
+      "b": "Pedra é o coração que ele tira.",
+      "c": "Carne descreve o coração dado no fim."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-01-coracao-de-carne",
+    "id": "ezequiel-cam-ezequiel-restauraca-01-coracao-de-carne-05",
+    "passageText": "Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne.",
+    "template": "Também vos darei um coração ___ e dentro de vós porei um espírito novo",
+    "options": [
+      {
+        "id": "a",
+        "text": "novo"
+      },
+      {
+        "id": "b",
+        "text": "pedra"
+      },
+      {
+        "id": "c",
+        "text": "carne"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ezequiel 36:26",
+    "learningObjective": "Perceber que Jeová tira o coração de pedra, dá coração de carne e põe espírito novo.",
+    "evidence": [
+      "Ezequiel 36:26"
+    ],
+    "type": "connect",
+    "question": "O que Ezequiel 36:26 comunica que se liga a este contexto?",
+    "prompt": "O que Ezequiel 36:26 comunica que se liga a este contexto?",
+    "cue": "O que Ezequiel 36:26 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: coração e espírito novos no interior.",
+    "feedbackWrong": {
+      "b": "O texto fala de coração e espírito, não de muro.",
+      "c": "A pedra é removida, não premiada."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-01-coracao-de-carne",
+    "id": "ezequiel-cam-ezequiel-restauraca-01-coracao-de-carne-06",
+    "passageText": "Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne.",
+    "passageA": {
+      "ref": "Ezequiel 36:26",
+      "text": "Também vos darei um coração novo e dentro de vós porei um espírito novo"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A restauração não é só volta à terra: é troca do interior."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Interior renovado"
+      },
+      {
+        "id": "b",
+        "text": "Só muralha nova"
+      },
+      {
+        "id": "c",
+        "text": "Pedra como prêmio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ezequiel 36:26",
+    "learningObjective": "Perceber que Jeová tira o coração de pedra, dá coração de carne e põe espírito novo.",
+    "evidence": [
+      "Ezequiel 36:26"
+    ],
+    "type": "true_false",
+    "question": "A restauração neste versículo começa por cirurgia divina: espírito novo e coração de carne no lugar da pedra.",
+    "prompt": "A restauração neste versículo começa por cirurgia divina: espírito novo e coração de carne no lugar da pedra.",
+    "cue": "A restauração neste versículo começa por cirurgia divina: espírito novo e coração de carne no lugar da pedra.",
+    "feedbackCorrect": "Certo: Jeová opera o interior do povo.",
+    "feedbackWrong": {
+      "false": "Dar, pôr e tirar descrevem a cirurgia do coração."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-01-coracao-de-carne",
+    "id": "ezequiel-pro-ezequiel-restauraca-01-coracao-de-carne-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ezequiel 36:26",
+    "learningObjective": "Perceber que Jeová tira o coração de pedra, dá coração de carne e põe espírito novo.",
+    "evidence": [
+      "Ezequiel 36:26"
+    ],
+    "type": "tap",
+    "question": "Em Ezequiel 36:26, toque a palavra que falta em \"tirarei da vossa ___ o coração de pedra\"?",
+    "prompt": "Em Ezequiel 36:26, toque a palavra que falta em \"tirarei da vossa ___ o coração de pedra\"?",
+    "cue": "Em Ezequiel 36:26, toque a palavra que falta em \"tirarei da vossa ___ o coração de pedra\"?",
+    "feedbackCorrect": "Exato: da vossa carne o coração de pedra.",
+    "feedbackWrong": {
+      "b": "Espírito é o que ele põe, novo.",
+      "c": "Novo qualifica o que ele dá, não esta lacuna."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-01-coracao-de-carne",
+    "id": "ezequiel-pro-ezequiel-restauraca-01-coracao-de-carne-02",
+    "passageText": "Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne.",
+    "template": "tirarei da vossa ___ o coração de pedra",
+    "options": [
+      {
+        "id": "a",
+        "text": "carne"
+      },
+      {
+        "id": "b",
+        "text": "espírito"
+      },
+      {
+        "id": "c",
+        "text": "novo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ezequiel 36:26",
+    "learningObjective": "Perceber que Jeová tira o coração de pedra, dá coração de carne e põe espírito novo.",
+    "evidence": [
+      "Ezequiel 36:26"
+    ],
+    "type": "choice",
+    "question": "Qual leitura teológica de Ezequiel 36:26 o texto sustenta?",
+    "prompt": "Qual leitura teológica de Ezequiel 36:26 o texto sustenta?",
+    "cue": "Qual leitura teológica de Ezequiel 36:26 o texto sustenta?",
+    "feedbackCorrect": "Certo: tira pedra e dá coração de carne com espírito novo.",
+    "feedbackWrong": {
+      "a": "Os verbos da ação são de Jeová.",
+      "b": "Há troca concreta: pedra por carne.",
+      "d": "Ele dá coração de carne, não apaga o humano."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-01-coracao-de-carne",
+    "id": "ezequiel-pro-ezequiel-restauraca-01-coracao-de-carne-03",
+    "passageText": "Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O povo regenera a si mesmo e Jeová apenas observa."
+      },
+      {
+        "id": "b",
+        "text": "Pedra e carne são metáforas vazias, sem mudança real."
+      },
+      {
+        "id": "c",
+        "text": "Jeová recria o interior: tira dureza e dá vida obediente."
+      },
+      {
+        "id": "d",
+        "text": "Espírito novo anula o coração; o homem deixa de ser humano."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ezequiel 36:26",
+    "learningObjective": "Perceber que Jeová tira o coração de pedra, dá coração de carne e põe espírito novo.",
+    "evidence": [
+      "Ezequiel 36:26"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Ezequiel 36:26?",
+    "prompt": "Qual sequência revela o sentido de Ezequiel 36:26?",
+    "cue": "Qual sequência revela o sentido de Ezequiel 36:26?",
+    "feedbackCorrect": "Certo: novo interior, espírito, carne no lugar da pedra.",
+    "feedbackWrong": {
+      "b": "O espírito novo acompanha o coração novo.",
+      "c": "A carne substitui a pedra no fim."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-01-coracao-de-carne",
+    "id": "ezequiel-pro-ezequiel-restauraca-01-coracao-de-carne-04",
+    "passageText": "Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne.",
+    "options": [
+      {
+        "id": "a",
+        "text": "um coração novo"
+      },
+      {
+        "id": "b",
+        "text": "um espírito novo"
+      },
+      {
+        "id": "c",
+        "text": "um coração de carne no lugar da pedra"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ezequiel 36:26",
+    "learningObjective": "Perceber que Jeová tira o coração de pedra, dá coração de carne e põe espírito novo.",
+    "evidence": [
+      "Ezequiel 36:26"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de ___\"",
+    "prompt": "Complete a frase: \"tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de ___\"",
+    "cue": "Complete a frase: \"tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de ___\"",
+    "feedbackCorrect": "Certo: um coração de carne.",
+    "feedbackWrong": {
+      "b": "Pedra é o que sai, não o que entra.",
+      "c": "Boca não aparece neste versículo."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-01-coracao-de-carne",
+    "id": "ezequiel-pro-ezequiel-restauraca-01-coracao-de-carne-05",
+    "passageText": "Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne.",
+    "template": "tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "carne"
+      },
+      {
+        "id": "b",
+        "text": "pedra"
+      },
+      {
+        "id": "c",
+        "text": "boca"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ezequiel 36:26",
+    "learningObjective": "Perceber que Jeová tira o coração de pedra, dá coração de carne e põe espírito novo.",
+    "evidence": [
+      "Ezequiel 36:26"
+    ],
+    "type": "connect",
+    "question": "O que Ezequiel 36:26 comunica que se liga a este contexto?",
+    "prompt": "O que Ezequiel 36:26 comunica que se liga a este contexto?",
+    "cue": "O que Ezequiel 36:26 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Jeová refez o interior do povo.",
+    "feedbackWrong": {
+      "b": "Há coração novo e espírito novo.",
+      "c": "A pedra é tirada, não chamada."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-01-coracao-de-carne",
+    "id": "ezequiel-pro-ezequiel-restauraca-01-coracao-de-carne-06",
+    "passageText": "Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne.",
+    "passageA": {
+      "ref": "Ezequiel 36:26",
+      "text": "porei um espírito novo; tirarei da vossa carne o coração de pedra"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Sem essa cirurgia, a glória vista não vira povo restaurado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Povo refeito por dentro"
+      },
+      {
+        "id": "b",
+        "text": "Glória sem coração"
+      },
+      {
+        "id": "c",
+        "text": "Pedra como vocação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ezequiel 37:5–6",
+    "learningObjective": "Ver que os ossos secos vivem quando Jeová faz entrar o fôlego e põe nervos e carnes.",
+    "evidence": [
+      "Ezequiel 37:5",
+      "Ezequiel 37:6"
+    ],
+    "type": "true_false",
+    "question": "O Senhor Jeová diz a estes ossos que vai fazer entrar neles o fôlego, e vivereis.",
+    "prompt": "O Senhor Jeová diz a estes ossos que vai fazer entrar neles o fôlego, e vivereis.",
+    "cue": "O Senhor Jeová diz a estes ossos que vai fazer entrar neles o fôlego, e vivereis.",
+    "feedbackCorrect": "Certo: fôlego e vida são a promessa aos ossos.",
+    "feedbackWrong": {
+      "false": "Releia: vou fazer entrar em vós o fôlego, e vivereis."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-02-vale-de-ossos-secos",
+    "id": "ezequiel-sem-ezequiel-restauraca-02-vale-de-ossos-secos-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis. Porei sobre vós nervos, e farei crescer carnes sobre vós; porei em vós o fôlego, e vivereis; sabereis que eu sou Jeová."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ezequiel 37:5–6",
+    "learningObjective": "Ver que os ossos secos vivem quando Jeová faz entrar o fôlego e põe nervos e carnes.",
+    "evidence": [
+      "Ezequiel 37:5",
+      "Ezequiel 37:6"
+    ],
+    "type": "tap",
+    "question": "Em Ezequiel 37:5–6, toque a palavra que falta em \"Eis que vou fazer entrar em vós o ___, e vivereis\"?",
+    "prompt": "Em Ezequiel 37:5–6, toque a palavra que falta em \"Eis que vou fazer entrar em vós o ___, e vivereis\"?",
+    "cue": "Em Ezequiel 37:5–6, toque a palavra que falta em \"Eis que vou fazer entrar em vós o ___, e vivereis\"?",
+    "feedbackCorrect": "Exato: o fôlego, e vivereis.",
+    "feedbackWrong": {
+      "b": "Nervos vêm no versículo 6, sobre os ossos.",
+      "c": "Senhor nomeia quem fala, não o que entra."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-02-vale-de-ossos-secos",
+    "id": "ezequiel-sem-ezequiel-restauraca-02-vale-de-ossos-secos-02",
+    "passageText": "Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis. Porei sobre vós nervos, e farei crescer carnes sobre vós; porei em vós o fôlego, e vivereis; sabereis que eu sou Jeová.",
+    "template": "Eis que vou fazer entrar em vós o ___, e vivereis",
+    "options": [
+      {
+        "id": "a",
+        "text": "fôlego"
+      },
+      {
+        "id": "b",
+        "text": "nervos"
+      },
+      {
+        "id": "c",
+        "text": "Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ezequiel 37:5–6",
+    "learningObjective": "Ver que os ossos secos vivem quando Jeová faz entrar o fôlego e põe nervos e carnes.",
+    "evidence": [
+      "Ezequiel 37:5",
+      "Ezequiel 37:6"
+    ],
+    "type": "choice",
+    "question": "Qual fato o texto afirma sobre o que Jeová fará aos ossos?",
+    "prompt": "Qual fato o texto afirma sobre o que Jeová fará aos ossos?",
+    "cue": "Qual fato o texto afirma sobre o que Jeová fará aos ossos?",
+    "feedbackCorrect": "Certo: nervos, carnes, fôlego e vida.",
+    "feedbackWrong": {
+      "b": "O texto promete fôlego e vida.",
+      "c": "Jeová fala vida aos ossos, não sepultura.",
+      "d": "Eles vivereis e saberão que ele é Jeová."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-02-vale-de-ossos-secos",
+    "id": "ezequiel-sem-ezequiel-restauraca-02-vale-de-ossos-secos-03",
+    "passageText": "Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis. Porei sobre vós nervos, e farei crescer carnes sobre vós; porei em vós o fôlego, e vivereis; sabereis que eu sou Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porá nervos, fará crescer carnes e porá o fôlego."
+      },
+      {
+        "id": "b",
+        "text": "Deixará os ossos secos sem fôlego nem carne."
+      },
+      {
+        "id": "c",
+        "text": "Mandará o profeta enterrar os ossos em silêncio."
+      },
+      {
+        "id": "d",
+        "text": "Prometerá só memória, sem que os ossos vivam."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ezequiel 37:5–6",
+    "learningObjective": "Ver que os ossos secos vivem quando Jeová faz entrar o fôlego e põe nervos e carnes.",
+    "evidence": [
+      "Ezequiel 37:5",
+      "Ezequiel 37:6"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Ezequiel 37:5–6?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Ezequiel 37:5–6?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Ezequiel 37:5–6?",
+    "feedbackCorrect": "Certo: palavra aos ossos, fôlego, nervos e carnes.",
+    "feedbackWrong": {
+      "b": "O fôlego é anunciado depois do endereçamento.",
+      "c": "Nervos e carnes vêm no versículo 6."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-02-vale-de-ossos-secos",
+    "id": "ezequiel-sem-ezequiel-restauraca-02-vale-de-ossos-secos-04",
+    "passageText": "Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis. Porei sobre vós nervos, e farei crescer carnes sobre vós; porei em vós o fôlego, e vivereis; sabereis que eu sou Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Assim diz o Senhor Jeová a estes ossos"
+      },
+      {
+        "id": "b",
+        "text": "Eis que vou fazer entrar em vós o fôlego, e vivereis"
+      },
+      {
+        "id": "c",
+        "text": "Porei sobre vós nervos, e farei crescer carnes sobre vós"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ezequiel 37:5–6",
+    "learningObjective": "Ver que os ossos secos vivem quando Jeová faz entrar o fôlego e põe nervos e carnes.",
+    "evidence": [
+      "Ezequiel 37:5",
+      "Ezequiel 37:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Porei sobre vós ___, e farei crescer carnes sobre vós\"",
+    "prompt": "Complete a frase: \"Porei sobre vós ___, e farei crescer carnes sobre vós\"",
+    "cue": "Complete a frase: \"Porei sobre vós ___, e farei crescer carnes sobre vós\"",
+    "feedbackCorrect": "Certo: porei sobre vós nervos.",
+    "feedbackWrong": {
+      "b": "Ossos já são os destinatários da palavra.",
+      "c": "Voz não aparece neste trecho."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-02-vale-de-ossos-secos",
+    "id": "ezequiel-sem-ezequiel-restauraca-02-vale-de-ossos-secos-05",
+    "passageText": "Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis. Porei sobre vós nervos, e farei crescer carnes sobre vós; porei em vós o fôlego, e vivereis; sabereis que eu sou Jeová.",
+    "template": "Porei sobre vós ___, e farei crescer carnes sobre vós",
+    "options": [
+      {
+        "id": "a",
+        "text": "nervos"
+      },
+      {
+        "id": "b",
+        "text": "ossos"
+      },
+      {
+        "id": "c",
+        "text": "voz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ezequiel 37:5–6",
+    "learningObjective": "Ver que os ossos secos vivem quando Jeová faz entrar o fôlego e põe nervos e carnes.",
+    "evidence": [
+      "Ezequiel 37:5",
+      "Ezequiel 37:6"
+    ],
+    "type": "connect",
+    "question": "O que Ezequiel 37:5–6 comunica que se liga a este contexto?",
+    "prompt": "O que Ezequiel 37:5–6 comunica que se liga a este contexto?",
+    "cue": "O que Ezequiel 37:5–6 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o fôlego de Jeová faz os ossos viverem.",
+    "feedbackWrong": {
+      "b": "O vale é palco da vida, não fim.",
+      "c": "Sabereis que eu sou Jeová."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-02-vale-de-ossos-secos",
+    "id": "ezequiel-sem-ezequiel-restauraca-02-vale-de-ossos-secos-06",
+    "passageText": "Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis. Porei sobre vós nervos, e farei crescer carnes sobre vós; porei em vós o fôlego, e vivereis; sabereis que eu sou Jeová.",
+    "passageA": {
+      "ref": "Ezequiel 37:5–6",
+      "text": "vou fazer entrar em vós o fôlego, e vivereis"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Ossos secos vivem quando Jeová põe fôlego: o vale não é fim, é palco da vida."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fôlego nos ossos"
+      },
+      {
+        "id": "b",
+        "text": "Vale como túmulo final"
+      },
+      {
+        "id": "c",
+        "text": "Vida sem Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ezequiel 37:5–6",
+    "learningObjective": "Ver que os ossos secos vivem quando Jeová faz entrar o fôlego e põe nervos e carnes.",
+    "evidence": [
+      "Ezequiel 37:5",
+      "Ezequiel 37:6"
+    ],
+    "type": "true_false",
+    "question": "Os ossos secos vivem por reorganização humana, sem o fôlego que Jeová faz entrar.",
+    "prompt": "Os ossos secos vivem por reorganização humana, sem o fôlego que Jeová faz entrar.",
+    "cue": "Os ossos secos vivem por reorganização humana, sem o fôlego que Jeová faz entrar.",
+    "feedbackCorrect": "Certo: a vida depende do fôlego de Jeová.",
+    "feedbackWrong": {
+      "true": "Duas vezes o texto liga fôlego e vivereis à ação de Jeová."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-02-vale-de-ossos-secos",
+    "id": "ezequiel-cam-ezequiel-restauraca-02-vale-de-ossos-secos-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis. Porei sobre vós nervos, e farei crescer carnes sobre vós; porei em vós o fôlego, e vivereis; sabereis que eu sou Jeová."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ezequiel 37:5–6",
+    "learningObjective": "Ver que os ossos secos vivem quando Jeová faz entrar o fôlego e põe nervos e carnes.",
+    "evidence": [
+      "Ezequiel 37:5",
+      "Ezequiel 37:6"
+    ],
+    "type": "tap",
+    "question": "Em Ezequiel 37:5–6, toque a palavra que falta em \"Assim diz o Senhor Jeová a estes ___\"?",
+    "prompt": "Em Ezequiel 37:5–6, toque a palavra que falta em \"Assim diz o Senhor Jeová a estes ___\"?",
+    "cue": "Em Ezequiel 37:5–6, toque a palavra que falta em \"Assim diz o Senhor Jeová a estes ___\"?",
+    "feedbackCorrect": "Exato: a estes ossos.",
+    "feedbackWrong": {
+      "b": "Nervos são o que ele porá sobre eles.",
+      "c": "Carnes crescerão sobre eles depois."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-02-vale-de-ossos-secos",
+    "id": "ezequiel-cam-ezequiel-restauraca-02-vale-de-ossos-secos-02",
+    "passageText": "Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis. Porei sobre vós nervos, e farei crescer carnes sobre vós; porei em vós o fôlego, e vivereis; sabereis que eu sou Jeová.",
+    "template": "Assim diz o Senhor Jeová a estes ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "ossos"
+      },
+      {
+        "id": "b",
+        "text": "nervos"
+      },
+      {
+        "id": "c",
+        "text": "carnes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ezequiel 37:5–6",
+    "learningObjective": "Ver que os ossos secos vivem quando Jeová faz entrar o fôlego e põe nervos e carnes.",
+    "evidence": [
+      "Ezequiel 37:5",
+      "Ezequiel 37:6"
+    ],
+    "type": "choice",
+    "question": "Como se relacionam fôlego, nervos e o saber que Jeová é Jeová?",
+    "prompt": "Como se relacionam fôlego, nervos e o saber que Jeová é Jeová?",
+    "cue": "Como se relacionam fôlego, nervos e o saber que Jeová é Jeová?",
+    "feedbackCorrect": "Certo: reconstituição, fôlego e reconhecimento de Jeová.",
+    "feedbackWrong": {
+      "a": "Sabereis segue o vivereis pelo fôlego.",
+      "b": "O fôlego é posto para que vivam.",
+      "d": "A palavra de Jeová abre o oráculo aos ossos."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-02-vale-de-ossos-secos",
+    "id": "ezequiel-cam-ezequiel-restauraca-02-vale-de-ossos-secos-03",
+    "passageText": "Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis. Porei sobre vós nervos, e farei crescer carnes sobre vós; porei em vós o fôlego, e vivereis; sabereis que eu sou Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O saber vem de um livro, não da vida dos ossos."
+      },
+      {
+        "id": "b",
+        "text": "Nervos substituem o fôlego; a vida não precisa de Jeová."
+      },
+      {
+        "id": "c",
+        "text": "Jeová reconstitui o corpo, dá fôlego, e a vida revela quem ele é."
+      },
+      {
+        "id": "d",
+        "text": "Os ossos vivem primeiro e só depois Jeová fala."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ezequiel 37:5–6",
+    "learningObjective": "Ver que os ossos secos vivem quando Jeová faz entrar o fôlego e põe nervos e carnes.",
+    "evidence": [
+      "Ezequiel 37:5",
+      "Ezequiel 37:6"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Ezequiel 37:5–6?",
+    "prompt": "Como se encadeiam os eventos de Ezequiel 37:5–6?",
+    "cue": "Como se encadeiam os eventos de Ezequiel 37:5–6?",
+    "feedbackCorrect": "Certo: fôlego anunciado, corpo refeito, fôlego e conhecimento.",
+    "feedbackWrong": {
+      "b": "Nervos e carnes seguem o anúncio do fôlego.",
+      "c": "O saber que ele é Jeová fecha o trecho."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-02-vale-de-ossos-secos",
+    "id": "ezequiel-cam-ezequiel-restauraca-02-vale-de-ossos-secos-04",
+    "passageText": "Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis. Porei sobre vós nervos, e farei crescer carnes sobre vós; porei em vós o fôlego, e vivereis; sabereis que eu sou Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vou fazer entrar em vós o fôlego, e vivereis"
+      },
+      {
+        "id": "b",
+        "text": "Porei sobre vós nervos, e farei crescer carnes sobre vós"
+      },
+      {
+        "id": "c",
+        "text": "porei em vós o fôlego, e vivereis; sabereis que eu sou Jeová"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ezequiel 37:5–6",
+    "learningObjective": "Ver que os ossos secos vivem quando Jeová faz entrar o fôlego e põe nervos e carnes.",
+    "evidence": [
+      "Ezequiel 37:5",
+      "Ezequiel 37:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"farei crescer ___ sobre vós; porei em vós o fôlego, e vivereis\"",
+    "prompt": "Complete a frase: \"farei crescer ___ sobre vós; porei em vós o fôlego, e vivereis\"",
+    "cue": "Complete a frase: \"farei crescer ___ sobre vós; porei em vós o fôlego, e vivereis\"",
+    "feedbackCorrect": "Certo: farei crescer carnes sobre vós.",
+    "feedbackWrong": {
+      "b": "Ossos já estão no vale como destinatários.",
+      "c": "Senhor é quem fala, não o que cresce."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-02-vale-de-ossos-secos",
+    "id": "ezequiel-cam-ezequiel-restauraca-02-vale-de-ossos-secos-05",
+    "passageText": "Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis. Porei sobre vós nervos, e farei crescer carnes sobre vós; porei em vós o fôlego, e vivereis; sabereis que eu sou Jeová.",
+    "template": "farei crescer ___ sobre vós; porei em vós o fôlego, e vivereis",
+    "options": [
+      {
+        "id": "a",
+        "text": "carnes"
+      },
+      {
+        "id": "b",
+        "text": "ossos"
+      },
+      {
+        "id": "c",
+        "text": "Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ezequiel 37:5–6",
+    "learningObjective": "Ver que os ossos secos vivem quando Jeová faz entrar o fôlego e põe nervos e carnes.",
+    "evidence": [
+      "Ezequiel 37:5",
+      "Ezequiel 37:6"
+    ],
+    "type": "connect",
+    "question": "O que Ezequiel 37:5–6 comunica que se liga a este contexto?",
+    "prompt": "O que Ezequiel 37:5–6 comunica que se liga a este contexto?",
+    "cue": "O que Ezequiel 37:5–6 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: vivereis e sabereis que eu sou Jeová.",
+    "feedbackWrong": {
+      "b": "Os ossos não se explicam sozinhos.",
+      "c": "O fôlego leva ao conhecimento de Jeová."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-02-vale-de-ossos-secos",
+    "id": "ezequiel-cam-ezequiel-restauraca-02-vale-de-ossos-secos-06",
+    "passageText": "Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis. Porei sobre vós nervos, e farei crescer carnes sobre vós; porei em vós o fôlego, e vivereis; sabereis que eu sou Jeová.",
+    "passageA": {
+      "ref": "Ezequiel 37:5–6",
+      "text": "porei em vós o fôlego, e vivereis; sabereis que eu sou Jeová"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A reconstituição do corpo serve ao reconhecimento de Jeová."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Vida que revela Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Ossos que se explicam"
+      },
+      {
+        "id": "c",
+        "text": "Fôlego sem propósito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ezequiel 37:5–6",
+    "learningObjective": "Ver que os ossos secos vivem quando Jeová faz entrar o fôlego e põe nervos e carnes.",
+    "evidence": [
+      "Ezequiel 37:5",
+      "Ezequiel 37:6"
+    ],
+    "type": "true_false",
+    "question": "O vale de ossos secos, neste oráculo, é palco da vida quando Jeová põe o fôlego.",
+    "prompt": "O vale de ossos secos, neste oráculo, é palco da vida quando Jeová põe o fôlego.",
+    "cue": "O vale de ossos secos, neste oráculo, é palco da vida quando Jeová põe o fôlego.",
+    "feedbackCorrect": "Certo: morte visível, vida pela palavra de Jeová.",
+    "feedbackWrong": {
+      "false": "Fôlego, nervos, carnes e vivereis desmentem o vale como fim."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-02-vale-de-ossos-secos",
+    "id": "ezequiel-pro-ezequiel-restauraca-02-vale-de-ossos-secos-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis. Porei sobre vós nervos, e farei crescer carnes sobre vós; porei em vós o fôlego, e vivereis; sabereis que eu sou Jeová."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ezequiel 37:5–6",
+    "learningObjective": "Ver que os ossos secos vivem quando Jeová faz entrar o fôlego e põe nervos e carnes.",
+    "evidence": [
+      "Ezequiel 37:5",
+      "Ezequiel 37:6"
+    ],
+    "type": "tap",
+    "question": "Em Ezequiel 37:5–6, toque a palavra que falta em \"porei em vós o fôlego, e ___; sabereis que eu sou Jeová\"?",
+    "prompt": "Em Ezequiel 37:5–6, toque a palavra que falta em \"porei em vós o fôlego, e ___; sabereis que eu sou Jeová\"?",
+    "cue": "Em Ezequiel 37:5–6, toque a palavra que falta em \"porei em vós o fôlego, e ___; sabereis que eu sou Jeová\"?",
+    "feedbackCorrect": "Exato: e vivereis.",
+    "feedbackWrong": {
+      "b": "Nervos são postos sobre eles antes.",
+      "c": "Ossos são quem recebe o fôlego."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-02-vale-de-ossos-secos",
+    "id": "ezequiel-pro-ezequiel-restauraca-02-vale-de-ossos-secos-02",
+    "passageText": "Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis. Porei sobre vós nervos, e farei crescer carnes sobre vós; porei em vós o fôlego, e vivereis; sabereis que eu sou Jeová.",
+    "template": "porei em vós o fôlego, e ___; sabereis que eu sou Jeová",
+    "options": [
+      {
+        "id": "a",
+        "text": "vivereis"
+      },
+      {
+        "id": "b",
+        "text": "nervos"
+      },
+      {
+        "id": "c",
+        "text": "ossos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ezequiel 37:5–6",
+    "learningObjective": "Ver que os ossos secos vivem quando Jeová faz entrar o fôlego e põe nervos e carnes.",
+    "evidence": [
+      "Ezequiel 37:5",
+      "Ezequiel 37:6"
+    ],
+    "type": "choice",
+    "question": "Qual leitura teológica de Ezequiel 37:5–6 o texto sustenta?",
+    "prompt": "Qual leitura teológica de Ezequiel 37:5–6 o texto sustenta?",
+    "cue": "Qual leitura teológica de Ezequiel 37:5–6 o texto sustenta?",
+    "feedbackCorrect": "Certo: fôlego, corpo e conhecimento de Jeová.",
+    "feedbackWrong": {
+      "a": "O refrão é vivereis, não só descrição.",
+      "c": "Assim diz o Senhor Jeová a estes ossos.",
+      "d": "O saber segue o fôlego e a vida."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-02-vale-de-ossos-secos",
+    "id": "ezequiel-pro-ezequiel-restauraca-02-vale-de-ossos-secos-03",
+    "passageText": "Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis. Porei sobre vós nervos, e farei crescer carnes sobre vós; porei em vós o fôlego, e vivereis; sabereis que eu sou Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová descreve anatomia sem prometer vida real."
+      },
+      {
+        "id": "b",
+        "text": "A vida dos mortos é obra de Jeová, para que saibam quem ele é."
+      },
+      {
+        "id": "c",
+        "text": "Os ossos vivem por magia do vale, independente de Jeová."
+      },
+      {
+        "id": "d",
+        "text": "Saber que ele é Jeová cancela a necessidade de fôlego e carne."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ezequiel 37:5–6",
+    "learningObjective": "Ver que os ossos secos vivem quando Jeová faz entrar o fôlego e põe nervos e carnes.",
+    "evidence": [
+      "Ezequiel 37:5",
+      "Ezequiel 37:6"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Ezequiel 37:5–6?",
+    "prompt": "Qual sequência revela o sentido de Ezequiel 37:5–6?",
+    "cue": "Qual sequência revela o sentido de Ezequiel 37:5–6?",
+    "feedbackCorrect": "Certo: oráculo, reconstituição, vida que conhece Jeová.",
+    "feedbackWrong": {
+      "b": "O corpo refeito segue a palavra aos ossos.",
+      "c": "Vida e conhecimento fecham o sentido."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-02-vale-de-ossos-secos",
+    "id": "ezequiel-pro-ezequiel-restauraca-02-vale-de-ossos-secos-04",
+    "passageText": "Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis. Porei sobre vós nervos, e farei crescer carnes sobre vós; porei em vós o fôlego, e vivereis; sabereis que eu sou Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "palavra do Senhor Jeová a estes ossos"
+      },
+      {
+        "id": "b",
+        "text": "fôlego, nervos e carnes sobre o que estava seco"
+      },
+      {
+        "id": "c",
+        "text": "vida e o saber que ele é Jeová"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ezequiel 37:5–6",
+    "learningObjective": "Ver que os ossos secos vivem quando Jeová faz entrar o fôlego e põe nervos e carnes.",
+    "evidence": [
+      "Ezequiel 37:5",
+      "Ezequiel 37:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"sabereis que eu sou ___\"",
+    "prompt": "Complete a frase: \"sabereis que eu sou ___\"",
+    "cue": "Complete a frase: \"sabereis que eu sou ___\"",
+    "feedbackCorrect": "Certo: sabereis que eu sou Jeová.",
+    "feedbackWrong": {
+      "b": "Fôlego é o que ele põe para que vivam.",
+      "c": "Nervos fazem parte da reconstituição."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-02-vale-de-ossos-secos",
+    "id": "ezequiel-pro-ezequiel-restauraca-02-vale-de-ossos-secos-05",
+    "passageText": "Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis. Porei sobre vós nervos, e farei crescer carnes sobre vós; porei em vós o fôlego, e vivereis; sabereis que eu sou Jeová.",
+    "template": "sabereis que eu sou ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "fôlego"
+      },
+      {
+        "id": "c",
+        "text": "nervos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ezequiel 37:5–6",
+    "learningObjective": "Ver que os ossos secos vivem quando Jeová faz entrar o fôlego e põe nervos e carnes.",
+    "evidence": [
+      "Ezequiel 37:5",
+      "Ezequiel 37:6"
+    ],
+    "type": "connect",
+    "question": "O que Ezequiel 37:5–6 comunica que se liga a este contexto?",
+    "prompt": "O que Ezequiel 37:5–6 comunica que se liga a este contexto?",
+    "cue": "O que Ezequiel 37:5–6 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o vale é palco onde Jeová dá vida.",
+    "feedbackWrong": {
+      "b": "O oráculo promete vivereis.",
+      "c": "Jeová fala a estes ossos."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-02-vale-de-ossos-secos",
+    "id": "ezequiel-pro-ezequiel-restauraca-02-vale-de-ossos-secos-06",
+    "passageText": "Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis. Porei sobre vós nervos, e farei crescer carnes sobre vós; porei em vós o fôlego, e vivereis; sabereis que eu sou Jeová.",
+    "passageA": {
+      "ref": "Ezequiel 37:5–6",
+      "text": "Eis que vou fazer entrar em vós o fôlego, e vivereis"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O vale não encerra a história de Israel: Jeová ainda fala vida."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Vale palco da vida"
+      },
+      {
+        "id": "b",
+        "text": "Secura como destino"
+      },
+      {
+        "id": "c",
+        "text": "Silêncio sobre ossos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ezequiel 3:17; 36:26; 37:5",
+    "learningObjective": "Unir atalaia, coração novo e fôlego nos ossos: glória que restaura, não só impressiona.",
+    "evidence": [
+      "Ezequiel 3:17",
+      "Ezequiel 36:26",
+      "Ezequiel 37:5"
+    ],
+    "type": "true_false",
+    "question": "Os três textos falam de atalaia à casa de Israel, coração novo e fôlego nos ossos.",
+    "prompt": "Os três textos falam de atalaia à casa de Israel, coração novo e fôlego nos ossos.",
+    "cue": "Os três textos falam de atalaia à casa de Israel, coração novo e fôlego nos ossos.",
+    "feedbackCorrect": "Certo: cargo, interior e vida dos ossos.",
+    "feedbackWrong": {
+      "false": "Há atalaia (3:17), coração (36:26) e fôlego (37:5)."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-03-desafio-ezequiel",
+    "id": "ezequiel-sem-ezequiel-restauraca-03-desafio-ezequiel-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte. Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne. Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ezequiel 3:17; 36:26; 37:5",
+    "learningObjective": "Unir atalaia, coração novo e fôlego nos ossos: glória que restaura, não só impressiona.",
+    "evidence": [
+      "Ezequiel 3:17",
+      "Ezequiel 36:26",
+      "Ezequiel 37:5"
+    ],
+    "type": "tap",
+    "question": "Em Ezequiel 3:17; 36:26; 37:5, toque a palavra que falta em \"eu te dei por ___ à casa de Israel\"?",
+    "prompt": "Em Ezequiel 3:17; 36:26; 37:5, toque a palavra que falta em \"eu te dei por ___ à casa de Israel\"?",
+    "cue": "Em Ezequiel 3:17; 36:26; 37:5, toque a palavra que falta em \"eu te dei por ___ à casa de Israel\"?",
+    "feedbackCorrect": "Exato: atalaia à casa de Israel.",
+    "feedbackWrong": {
+      "b": "Pedra é o coração que 36:26 tira.",
+      "c": "Fôlego é o que 37:5 faz entrar nos ossos."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-03-desafio-ezequiel",
+    "id": "ezequiel-sem-ezequiel-restauraca-03-desafio-ezequiel-02",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte. Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne. Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis.",
+    "template": "eu te dei por ___ à casa de Israel",
+    "options": [
+      {
+        "id": "a",
+        "text": "atalaia"
+      },
+      {
+        "id": "b",
+        "text": "pedra"
+      },
+      {
+        "id": "c",
+        "text": "fôlego"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ezequiel 3:17; 36:26; 37:5",
+    "learningObjective": "Unir atalaia, coração novo e fôlego nos ossos: glória que restaura, não só impressiona.",
+    "evidence": [
+      "Ezequiel 3:17",
+      "Ezequiel 36:26",
+      "Ezequiel 37:5"
+    ],
+    "type": "choice",
+    "question": "Qual fato estes três trechos afirmam juntos?",
+    "prompt": "Qual fato estes três trechos afirmam juntos?",
+    "cue": "Qual fato estes três trechos afirmam juntos?",
+    "feedbackCorrect": "Certo: 3:17, 36:26 e 37:5 nessa ordem de temas.",
+    "feedbackWrong": {
+      "b": "Os três textos dão cargo, interior e vida.",
+      "c": "Jeová dá, põe e faz entrar.",
+      "d": "Atalaia é o profeta; fôlego vai aos ossos."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-03-desafio-ezequiel",
+    "id": "ezequiel-sem-ezequiel-restauraca-03-desafio-ezequiel-03",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte. Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne. Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová nomeia atalaia, dá coração novo e faz entrar fôlego."
+      },
+      {
+        "id": "b",
+        "text": "Só há visão de glória, sem cargo, coração ou ossos."
+      },
+      {
+        "id": "c",
+        "text": "O povo fabrica o fôlego e o coração sem Jeová."
+      },
+      {
+        "id": "d",
+        "text": "Os ossos recebem atalaia, e o coração recebe fôlego."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ezequiel 3:17; 36:26; 37:5",
+    "learningObjective": "Unir atalaia, coração novo e fôlego nos ossos: glória que restaura, não só impressiona.",
+    "evidence": [
+      "Ezequiel 3:17",
+      "Ezequiel 36:26",
+      "Ezequiel 37:5"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Ezequiel 3:17; 36:26; 37:5?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Ezequiel 3:17; 36:26; 37:5?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Ezequiel 3:17; 36:26; 37:5?",
+    "feedbackCorrect": "Certo: atalaia, coração, fôlego.",
+    "feedbackWrong": {
+      "b": "O coração de pedra pertence a 36:26.",
+      "c": "O fôlego nos ossos é 37:5."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-03-desafio-ezequiel",
+    "id": "ezequiel-sem-ezequiel-restauraca-03-desafio-ezequiel-04",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte. Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne. Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis.",
+    "options": [
+      {
+        "id": "a",
+        "text": "eu te dei por atalaia à casa de Israel"
+      },
+      {
+        "id": "b",
+        "text": "tirarei da vossa carne o coração de pedra"
+      },
+      {
+        "id": "c",
+        "text": "Eis que vou fazer entrar em vós o fôlego, e vivereis"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ezequiel 3:17; 36:26; 37:5",
+    "learningObjective": "Unir atalaia, coração novo e fôlego nos ossos: glória que restaura, não só impressiona.",
+    "evidence": [
+      "Ezequiel 3:17",
+      "Ezequiel 36:26",
+      "Ezequiel 37:5"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Também vos darei um coração ___ e dentro de vós porei um espírito novo\"",
+    "prompt": "Complete a frase: \"Também vos darei um coração ___ e dentro de vós porei um espírito novo\"",
+    "cue": "Complete a frase: \"Também vos darei um coração ___ e dentro de vós porei um espírito novo\"",
+    "feedbackCorrect": "Certo: um coração novo.",
+    "feedbackWrong": {
+      "b": "Atalaia é o cargo em 3:17.",
+      "c": "Ossos recebem o fôlego em 37:5."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-03-desafio-ezequiel",
+    "id": "ezequiel-sem-ezequiel-restauraca-03-desafio-ezequiel-05",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte. Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne. Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis.",
+    "template": "Também vos darei um coração ___ e dentro de vós porei um espírito novo",
+    "options": [
+      {
+        "id": "a",
+        "text": "novo"
+      },
+      {
+        "id": "b",
+        "text": "atalaia"
+      },
+      {
+        "id": "c",
+        "text": "ossos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ezequiel 3:17; 36:26; 37:5",
+    "learningObjective": "Unir atalaia, coração novo e fôlego nos ossos: glória que restaura, não só impressiona.",
+    "evidence": [
+      "Ezequiel 3:17",
+      "Ezequiel 36:26",
+      "Ezequiel 37:5"
+    ],
+    "type": "connect",
+    "question": "O que Ezequiel 3:17; 36:26; 37:5 comunica que se liga a este contexto?",
+    "prompt": "O que Ezequiel 3:17; 36:26; 37:5 comunica que se liga a este contexto?",
+    "cue": "O que Ezequiel 3:17; 36:26; 37:5 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: cargo, coração e vida — glória que restaura.",
+    "feedbackWrong": {
+      "b": "Os textos restauram povo, não só deslumbram.",
+      "c": "Jeová fala fôlego aos ossos."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-03-desafio-ezequiel",
+    "id": "ezequiel-sem-ezequiel-restauraca-03-desafio-ezequiel-06",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte. Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne. Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis.",
+    "passageA": {
+      "ref": "Ezequiel 3:17; 36:26; 37:5",
+      "text": "eu te dei por atalaia à casa de Israel. Também vos darei um coração novo. Eis que vou fazer entrar em vós o fôlego, e vivereis"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Ezequiel: atalaia, coração novo e fôlego nos ossos — glória que restaura, não só impressiona."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Glória que restaura"
+      },
+      {
+        "id": "b",
+        "text": "Glória que só impressiona"
+      },
+      {
+        "id": "c",
+        "text": "Ossos sem palavra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ezequiel 3:17; 36:26; 37:5",
+    "learningObjective": "Unir atalaia, coração novo e fôlego nos ossos: glória que restaura, não só impressiona.",
+    "evidence": [
+      "Ezequiel 3:17",
+      "Ezequiel 36:26",
+      "Ezequiel 37:5"
+    ],
+    "type": "true_false",
+    "question": "A glória em Ezequiel só impressiona; não há aviso a Israel, coração novo nem vida nos ossos.",
+    "prompt": "A glória em Ezequiel só impressiona; não há aviso a Israel, coração novo nem vida nos ossos.",
+    "cue": "A glória em Ezequiel só impressiona; não há aviso a Israel, coração novo nem vida nos ossos.",
+    "feedbackCorrect": "Certo: os três textos restauram, não só deslumbram.",
+    "feedbackWrong": {
+      "true": "Há atalaia, coração de carne e fôlego que faz viver."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-03-desafio-ezequiel",
+    "id": "ezequiel-cam-ezequiel-restauraca-03-desafio-ezequiel-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte. Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne. Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ezequiel 3:17; 36:26; 37:5",
+    "learningObjective": "Unir atalaia, coração novo e fôlego nos ossos: glória que restaura, não só impressiona.",
+    "evidence": [
+      "Ezequiel 3:17",
+      "Ezequiel 36:26",
+      "Ezequiel 37:5"
+    ],
+    "type": "tap",
+    "question": "Em Ezequiel 3:17; 36:26; 37:5, toque a palavra que falta em \"Eis que vou fazer entrar em vós o ___, e vivereis\"?",
+    "prompt": "Em Ezequiel 3:17; 36:26; 37:5, toque a palavra que falta em \"Eis que vou fazer entrar em vós o ___, e vivereis\"?",
+    "cue": "Em Ezequiel 3:17; 36:26; 37:5, toque a palavra que falta em \"Eis que vou fazer entrar em vós o ___, e vivereis\"?",
+    "feedbackCorrect": "Exato: o fôlego, e vivereis.",
+    "feedbackWrong": {
+      "b": "Atalaia é o cargo do profeta em 3:17.",
+      "c": "Pedra é o coração tirado em 36:26."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-03-desafio-ezequiel",
+    "id": "ezequiel-cam-ezequiel-restauraca-03-desafio-ezequiel-02",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte. Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne. Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis.",
+    "template": "Eis que vou fazer entrar em vós o ___, e vivereis",
+    "options": [
+      {
+        "id": "a",
+        "text": "fôlego"
+      },
+      {
+        "id": "b",
+        "text": "atalaia"
+      },
+      {
+        "id": "c",
+        "text": "pedra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ezequiel 3:17; 36:26; 37:5",
+    "learningObjective": "Unir atalaia, coração novo e fôlego nos ossos: glória que restaura, não só impressiona.",
+    "evidence": [
+      "Ezequiel 3:17",
+      "Ezequiel 36:26",
+      "Ezequiel 37:5"
+    ],
+    "type": "choice",
+    "question": "Como se encadeiam atalaia, coração e fôlego nestes textos?",
+    "prompt": "Como se encadeiam atalaia, coração e fôlego nestes textos?",
+    "cue": "Como se encadeiam atalaia, coração e fôlego nestes textos?",
+    "feedbackCorrect": "Certo: responsabilidade, cirurgia interior e vida.",
+    "feedbackWrong": {
+      "a": "Os três visam Israel e sua restauração.",
+      "c": "O atalaia continua a ouvir e avisar.",
+      "d": "A pedra é tirada, não premiada."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-03-desafio-ezequiel",
+    "id": "ezequiel-cam-ezequiel-restauraca-03-desafio-ezequiel-03",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte. Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne. Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis.",
+    "options": [
+      {
+        "id": "a",
+        "text": "São temas soltos, sem relação com o povo de Jeová."
+      },
+      {
+        "id": "b",
+        "text": "O profeta ouve e avisa; Jeová refaz o interior e dá vida aos mortos."
+      },
+      {
+        "id": "c",
+        "text": "O fôlego substitui o atalaia, tornando o aviso inútil."
+      },
+      {
+        "id": "d",
+        "text": "O coração de pedra é o prêmio de quem vigia bem."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ezequiel 3:17; 36:26; 37:5",
+    "learningObjective": "Unir atalaia, coração novo e fôlego nos ossos: glória que restaura, não só impressiona.",
+    "evidence": [
+      "Ezequiel 3:17",
+      "Ezequiel 36:26",
+      "Ezequiel 37:5"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Ezequiel 3:17; 36:26; 37:5?",
+    "prompt": "Como se encadeiam os eventos de Ezequiel 3:17; 36:26; 37:5?",
+    "cue": "Como se encadeiam os eventos de Ezequiel 3:17; 36:26; 37:5?",
+    "feedbackCorrect": "Certo: aviso, espírito novo, fôlego e vida.",
+    "feedbackWrong": {
+      "b": "O espírito novo é 36:26.",
+      "c": "O fôlego e a vida são 37:5."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-03-desafio-ezequiel",
+    "id": "ezequiel-cam-ezequiel-restauraca-03-desafio-ezequiel-04",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte. Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne. Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ouve, pois, da minha boca a palavra e avisa-os da minha parte"
+      },
+      {
+        "id": "b",
+        "text": "dentro de vós porei um espírito novo"
+      },
+      {
+        "id": "c",
+        "text": "vou fazer entrar em vós o fôlego, e vivereis"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ezequiel 3:17; 36:26; 37:5",
+    "learningObjective": "Unir atalaia, coração novo e fôlego nos ossos: glória que restaura, não só impressiona.",
+    "evidence": [
+      "Ezequiel 3:17",
+      "Ezequiel 36:26",
+      "Ezequiel 37:5"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"tirarei da vossa carne o coração de ___ e dar-vos-ei um coração de carne\"",
+    "prompt": "Complete a frase: \"tirarei da vossa carne o coração de ___ e dar-vos-ei um coração de carne\"",
+    "cue": "Complete a frase: \"tirarei da vossa carne o coração de ___ e dar-vos-ei um coração de carne\"",
+    "feedbackCorrect": "Certo: coração de pedra.",
+    "feedbackWrong": {
+      "b": "Fôlego pertence aos ossos em 37:5.",
+      "c": "Boca é a origem da palavra em 3:17."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-03-desafio-ezequiel",
+    "id": "ezequiel-cam-ezequiel-restauraca-03-desafio-ezequiel-05",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte. Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne. Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis.",
+    "template": "tirarei da vossa carne o coração de ___ e dar-vos-ei um coração de carne",
+    "options": [
+      {
+        "id": "a",
+        "text": "pedra"
+      },
+      {
+        "id": "b",
+        "text": "fôlego"
+      },
+      {
+        "id": "c",
+        "text": "boca"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ezequiel 3:17; 36:26; 37:5",
+    "learningObjective": "Unir atalaia, coração novo e fôlego nos ossos: glória que restaura, não só impressiona.",
+    "evidence": [
+      "Ezequiel 3:17",
+      "Ezequiel 36:26",
+      "Ezequiel 37:5"
+    ],
+    "type": "connect",
+    "question": "O que Ezequiel 3:17; 36:26; 37:5 comunica que se liga a este contexto?",
+    "prompt": "O que Ezequiel 3:17; 36:26; 37:5 comunica que se liga a este contexto?",
+    "cue": "O que Ezequiel 3:17; 36:26; 37:5 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: os três eixos do desafio de Ezequiel.",
+    "feedbackWrong": {
+      "b": "Há cargo, coração e fôlego, não só luz.",
+      "c": "36:26 e 37:5 restauram o povo."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-03-desafio-ezequiel",
+    "id": "ezequiel-cam-ezequiel-restauraca-03-desafio-ezequiel-06",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte. Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne. Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis.",
+    "passageA": {
+      "ref": "Ezequiel 3:17; 36:26; 37:5",
+      "text": "ouve, pois, da minha boca a palavra e avisa-os da minha parte. dar-vos-ei um coração de carne. vou fazer entrar em vós o fôlego, e vivereis"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A visão vira povo: palavra anunciada, interior novo, mortos que vivem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Palavra, interior, vida"
+      },
+      {
+        "id": "b",
+        "text": "Só espetáculo de luz"
+      },
+      {
+        "id": "c",
+        "text": "Aviso sem restauração"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ezequiel 3:17; 36:26; 37:5",
+    "learningObjective": "Unir atalaia, coração novo e fôlego nos ossos: glória que restaura, não só impressiona.",
+    "evidence": [
+      "Ezequiel 3:17",
+      "Ezequiel 36:26",
+      "Ezequiel 37:5"
+    ],
+    "type": "true_false",
+    "question": "Ezequiel mostra glória que restaura: o atalaia avisa, Jeová troca o coração e põe fôlego nos ossos.",
+    "prompt": "Ezequiel mostra glória que restaura: o atalaia avisa, Jeová troca o coração e põe fôlego nos ossos.",
+    "cue": "Ezequiel mostra glória que restaura: o atalaia avisa, Jeová troca o coração e põe fôlego nos ossos.",
+    "feedbackCorrect": "Certo: glória com dever, cirurgia e vida.",
+    "feedbackWrong": {
+      "false": "3:17, 36:26 e 37:5 formam essa linha."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-03-desafio-ezequiel",
+    "id": "ezequiel-pro-ezequiel-restauraca-03-desafio-ezequiel-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte. Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne. Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ezequiel 3:17; 36:26; 37:5",
+    "learningObjective": "Unir atalaia, coração novo e fôlego nos ossos: glória que restaura, não só impressiona.",
+    "evidence": [
+      "Ezequiel 3:17",
+      "Ezequiel 36:26",
+      "Ezequiel 37:5"
+    ],
+    "type": "tap",
+    "question": "Em Ezequiel 3:17; 36:26; 37:5, toque a palavra que falta em \"dar-vos-ei um coração de ___\"?",
+    "prompt": "Em Ezequiel 3:17; 36:26; 37:5, toque a palavra que falta em \"dar-vos-ei um coração de ___\"?",
+    "cue": "Em Ezequiel 3:17; 36:26; 37:5, toque a palavra que falta em \"dar-vos-ei um coração de ___\"?",
+    "feedbackCorrect": "Exato: coração de carne.",
+    "feedbackWrong": {
+      "b": "Ossos recebem o fôlego em 37:5.",
+      "c": "Atalaia é o cargo, não o coração."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-03-desafio-ezequiel",
+    "id": "ezequiel-pro-ezequiel-restauraca-03-desafio-ezequiel-02",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte. Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne. Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis.",
+    "template": "dar-vos-ei um coração de ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "carne"
+      },
+      {
+        "id": "b",
+        "text": "ossos"
+      },
+      {
+        "id": "c",
+        "text": "atalaia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ezequiel 3:17; 36:26; 37:5",
+    "learningObjective": "Unir atalaia, coração novo e fôlego nos ossos: glória que restaura, não só impressiona.",
+    "evidence": [
+      "Ezequiel 3:17",
+      "Ezequiel 36:26",
+      "Ezequiel 37:5"
+    ],
+    "type": "choice",
+    "question": "Qual leitura une estes três textos como desafio de Ezequiel?",
+    "prompt": "Qual leitura une estes três textos como desafio de Ezequiel?",
+    "cue": "Qual leitura une estes três textos como desafio de Ezequiel?",
+    "feedbackCorrect": "Certo: aviso, coração novo e fôlego nos ossos.",
+    "feedbackWrong": {
+      "a": "36:26 tira a pedra; 37:5 dá vida.",
+      "b": "3:17 e 36:26 são centrais com 37:5.",
+      "d": "Tudo parte da boca e da ação de Jeová."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-03-desafio-ezequiel",
+    "id": "ezequiel-pro-ezequiel-restauraca-03-desafio-ezequiel-03",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte. Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne. Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A glória basta como espetáculo; o povo permanece de pedra e seco."
+      },
+      {
+        "id": "b",
+        "text": "Só o vale importa; atalaia e coração novo são enfeite."
+      },
+      {
+        "id": "c",
+        "text": "Jeová chama à responsabilidade, recria o interior e ressuscita o que estava morto."
+      },
+      {
+        "id": "d",
+        "text": "O profeta restaura Israel sem palavra, coração nem fôlego de Jeová."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ezequiel 3:17; 36:26; 37:5",
+    "learningObjective": "Unir atalaia, coração novo e fôlego nos ossos: glória que restaura, não só impressiona.",
+    "evidence": [
+      "Ezequiel 3:17",
+      "Ezequiel 36:26",
+      "Ezequiel 37:5"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Ezequiel 3:17; 36:26; 37:5?",
+    "prompt": "Qual sequência revela o sentido de Ezequiel 3:17; 36:26; 37:5?",
+    "cue": "Qual sequência revela o sentido de Ezequiel 3:17; 36:26; 37:5?",
+    "feedbackCorrect": "Certo: responsabilidade, interior, ressurreição.",
+    "feedbackWrong": {
+      "b": "A cirurgia do coração segue o cargo de atalaia.",
+      "c": "O fôlego nos ossos fecha a restauração."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-03-desafio-ezequiel",
+    "id": "ezequiel-pro-ezequiel-restauraca-03-desafio-ezequiel-04",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte. Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne. Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis.",
+    "options": [
+      {
+        "id": "a",
+        "text": "atalaia que ouve e avisa Israel"
+      },
+      {
+        "id": "b",
+        "text": "coração novo e espírito novo no lugar da pedra"
+      },
+      {
+        "id": "c",
+        "text": "fôlego nos ossos para que vivam"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ezequiel 3:17; 36:26; 37:5",
+    "learningObjective": "Unir atalaia, coração novo e fôlego nos ossos: glória que restaura, não só impressiona.",
+    "evidence": [
+      "Ezequiel 3:17",
+      "Ezequiel 36:26",
+      "Ezequiel 37:5"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Filho do homem, eu te dei por atalaia à casa de ___; ouve, pois, da minha boca a palavra\"",
+    "prompt": "Complete a frase: \"Filho do homem, eu te dei por atalaia à casa de ___; ouve, pois, da minha boca a palavra\"",
+    "cue": "Complete a frase: \"Filho do homem, eu te dei por atalaia à casa de ___; ouve, pois, da minha boca a palavra\"",
+    "feedbackCorrect": "Certo: casa de Israel.",
+    "feedbackWrong": {
+      "b": "Carne descreve o coração dado em 36:26.",
+      "c": "Fôlego é 37:5, não esta lacuna."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-03-desafio-ezequiel",
+    "id": "ezequiel-pro-ezequiel-restauraca-03-desafio-ezequiel-05",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte. Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne. Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis.",
+    "template": "Filho do homem, eu te dei por atalaia à casa de ___; ouve, pois, da minha boca a palavra",
+    "options": [
+      {
+        "id": "a",
+        "text": "Israel"
+      },
+      {
+        "id": "b",
+        "text": "carne"
+      },
+      {
+        "id": "c",
+        "text": "fôlego"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ezequiel 3:17; 36:26; 37:5",
+    "learningObjective": "Unir atalaia, coração novo e fôlego nos ossos: glória que restaura, não só impressiona.",
+    "evidence": [
+      "Ezequiel 3:17",
+      "Ezequiel 36:26",
+      "Ezequiel 37:5"
+    ],
+    "type": "connect",
+    "question": "O que Ezequiel 3:17; 36:26; 37:5 comunica que se liga a este contexto?",
+    "prompt": "O que Ezequiel 3:17; 36:26; 37:5 comunica que se liga a este contexto?",
+    "cue": "O que Ezequiel 3:17; 36:26; 37:5 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o profeta serve à restauração do povo.",
+    "feedbackWrong": {
+      "b": "Há casa de Israel, coração e ossos.",
+      "c": "37:5 promete vivereis."
+    },
+    "trail": "ezequiel",
+    "section": "ezequiel-restauraca-03-desafio-ezequiel",
+    "id": "ezequiel-pro-ezequiel-restauraca-03-desafio-ezequiel-06",
+    "passageText": "Filho do homem, eu te dei por atalaia à casa de Israel; ouve, pois, da minha boca a palavra e avisa-os da minha parte. Também vos darei um coração novo e dentro de vós porei um espírito novo; tirarei da vossa carne o coração de pedra e dar-vos-ei um coração de carne. Assim diz o Senhor Jeová a estes ossos: Eis que vou fazer entrar em vós o fôlego, e vivereis.",
+    "passageA": {
+      "ref": "Ezequiel 3:17; 36:26; 37:5",
+      "text": "avisa-os da minha parte. dentro de vós porei um espírito novo. vou fazer entrar em vós o fôlego, e vivereis"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Quem viu a glória é enviado a um povo que precisa de coração e de vida."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Enviado a restaurar"
+      },
+      {
+        "id": "b",
+        "text": "Visão sem povo"
+      },
+      {
+        "id": "c",
+        "text": "Morte como última palavra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  }
+]

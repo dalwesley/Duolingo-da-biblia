@@ -1,0 +1,2972 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 1:1",
+    "learningObjective": "Reconhecer que o Verbo é eterno, estava com Deus e era Deus.",
+    "evidence": [
+      "João 1:1"
+    ],
+    "type": "true_false",
+    "question": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "prompt": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "cue": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "feedbackCorrect": "Certo: João 1:1 afirma isso palavra por palavra.",
+    "feedbackWrong": {
+      "false": "Releia João 1:1: o Verbo era no princípio, estava com Deus e era Deus."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "id": "cristologia-sem-cr-01-deus-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 1:1",
+    "learningObjective": "Reconhecer que o Verbo é eterno, estava com Deus e era Deus.",
+    "evidence": [
+      "João 1:1"
+    ],
+    "type": "tap",
+    "question": "Em João 1:1, toque a palavra que falta em \"No ___ era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.\"?",
+    "prompt": "Em João 1:1, toque a palavra que falta em \"No ___ era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.\"?",
+    "cue": "Em João 1:1, toque a palavra que falta em \"No ___ era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.\"?",
+    "feedbackCorrect": "Exato: o Verbo \"era\" no princípio.",
+    "feedbackWrong": {
+      "a": "Verbo aparece depois desta lacuna.",
+      "b": "Estava descreve a relação com Deus, não o tempo."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "template": "No ___ era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Verbo"
+      },
+      {
+        "id": "b",
+        "text": "estava"
+      },
+      {
+        "id": "c",
+        "text": "princípio"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "id": "cristologia-sem-cr-01-deus-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 1:1",
+    "learningObjective": "Reconhecer que o Verbo é eterno, estava com Deus e era Deus.",
+    "evidence": [
+      "João 1:1"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelo texto em João 1:1?",
+    "prompt": "Qual afirmação é feita diretamente pelo texto em João 1:1?",
+    "cue": "Qual afirmação é feita diretamente pelo texto em João 1:1?",
+    "feedbackCorrect": "Certo: o versículo declara que o Verbo era Deus.",
+    "feedbackWrong": {
+      "b": "O texto diz que o Verbo era no princípio, não que começou depois.",
+      "c": "João 1:1 não chama o Verbo de criatura ou mensageiro criado.",
+      "d": "O texto afirma que o Verbo estava com Deus."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Verbo era Deus."
+      },
+      {
+        "id": "b",
+        "text": "O Verbo começou a existir depois de Deus."
+      },
+      {
+        "id": "c",
+        "text": "O Verbo era apenas um mensageiro criado."
+      },
+      {
+        "id": "d",
+        "text": "O Verbo não estava com Deus."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "id": "cristologia-sem-cr-01-deus-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 1:1",
+    "learningObjective": "Reconhecer que o Verbo é eterno, estava com Deus e era Deus.",
+    "evidence": [
+      "João 1:1"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em João 1:1?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em João 1:1?",
+    "cue": "Qual sequência mostra a ordem dos fatos em João 1:1?",
+    "feedbackCorrect": "Certo: princípio, comunhão com Deus, deidade do Verbo.",
+    "feedbackWrong": {
+      "b": "Essa cláusula vem depois no versículo.",
+      "c": "Essa cláusula fecha o versículo."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "No princípio era o Verbo"
+      },
+      {
+        "id": "b",
+        "text": "o Verbo estava com Deus"
+      },
+      {
+        "id": "c",
+        "text": "o Verbo era Deus"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "id": "cristologia-sem-cr-01-deus-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 1:1",
+    "learningObjective": "Reconhecer que o Verbo é eterno, estava com Deus e era Deus.",
+    "evidence": [
+      "João 1:1"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era ___.\"",
+    "prompt": "Complete a frase: \"No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era ___.\"",
+    "cue": "Complete a frase: \"No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era ___.\"",
+    "feedbackCorrect": "Certo: o Verbo era Deus.",
+    "feedbackWrong": {
+      "a": "Princípio abre o versículo, não fecha esta cláusula.",
+      "b": "Verbo é o sujeito; a lacuna é o predicado."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "template": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "princípio"
+      },
+      {
+        "id": "b",
+        "text": "Verbo"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "id": "cristologia-sem-cr-01-deus-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 1:1",
+    "learningObjective": "Reconhecer que o Verbo é eterno, estava com Deus e era Deus.",
+    "evidence": [
+      "João 1:1"
+    ],
+    "type": "connect",
+    "question": "O que João 1:1 comunica que se liga a este contexto?",
+    "prompt": "O que João 1:1 comunica que se liga a este contexto?",
+    "cue": "O que João 1:1 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o versículo afirma a deidade plena do Verbo.",
+    "feedbackWrong": {
+      "b": "O texto não apresenta o Verbo como criatura posterior.",
+      "c": "O Verbo estava com Deus; não é só um título vazio."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "passageA": {
+      "ref": "João 1:1",
+      "text": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jesus é plenamente Deus: o Verbo era no princípio, estava com Deus e era Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Verbo era Deus"
+      },
+      {
+        "id": "b",
+        "text": "Verbo criado depois"
+      },
+      {
+        "id": "c",
+        "text": "Só um título"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "id": "cristologia-sem-cr-01-deus-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 1:1",
+    "learningObjective": "Reconhecer que o Verbo é eterno, estava com Deus e era Deus.",
+    "evidence": [
+      "João 1:1"
+    ],
+    "type": "true_false",
+    "question": "João 1:1 apresenta o Verbo como alguém que estava com Deus e, ao mesmo tempo, era Deus.",
+    "prompt": "João 1:1 apresenta o Verbo como alguém que estava com Deus e, ao mesmo tempo, era Deus.",
+    "cue": "João 1:1 apresenta o Verbo como alguém que estava com Deus e, ao mesmo tempo, era Deus.",
+    "feedbackCorrect": "Certo: o texto une comunhão com Deus e identidade divina.",
+    "feedbackWrong": {
+      "false": "As duas cláusulas estão juntas: estava com Deus e era Deus."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "id": "cristologia-cam-cr-01-deus-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 1:1",
+    "learningObjective": "Reconhecer que o Verbo é eterno, estava com Deus e era Deus.",
+    "evidence": [
+      "João 1:1"
+    ],
+    "type": "tap",
+    "question": "Em João 1:1, toque a palavra que falta em \"No princípio era o Verbo, e o Verbo ___ com Deus, e o Verbo era Deus.\"?",
+    "prompt": "Em João 1:1, toque a palavra que falta em \"No princípio era o Verbo, e o Verbo ___ com Deus, e o Verbo era Deus.\"?",
+    "cue": "Em João 1:1, toque a palavra que falta em \"No princípio era o Verbo, e o Verbo ___ com Deus, e o Verbo era Deus.\"?",
+    "feedbackCorrect": "Exato: o Verbo estava com Deus.",
+    "feedbackWrong": {
+      "a": "Era aparece nas outras cláusulas, não nesta lacuna.",
+      "c": "Princípio abre o versículo, não esta cláusula."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "template": "No princípio era o Verbo, e o Verbo ___ com Deus, e o Verbo era Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "era"
+      },
+      {
+        "id": "b",
+        "text": "estava"
+      },
+      {
+        "id": "c",
+        "text": "princípio"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "id": "cristologia-cam-cr-01-deus-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 1:1",
+    "learningObjective": "Reconhecer que o Verbo é eterno, estava com Deus e era Deus.",
+    "evidence": [
+      "João 1:1"
+    ],
+    "type": "choice",
+    "question": "O que João 1:1 mostra sobre a relação entre o Verbo e Deus?",
+    "prompt": "O que João 1:1 mostra sobre a relação entre o Verbo e Deus?",
+    "cue": "O que João 1:1 mostra sobre a relação entre o Verbo e Deus?",
+    "feedbackCorrect": "Certo: há distinção (estava com) e identidade (era Deus).",
+    "feedbackWrong": {
+      "a": "O texto não reduz o Verbo a uma ideia impessoal.",
+      "c": "Estar com Deus não apaga o Pai nem o substitui.",
+      "d": "O Verbo já era no princípio; não se torna Deus depois."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Verbo é só uma ideia, sem relação pessoal com Deus."
+      },
+      {
+        "id": "b",
+        "text": "O Verbo está com Deus e, ao mesmo tempo, é Deus."
+      },
+      {
+        "id": "c",
+        "text": "O Verbo substitui o Pai e o apaga."
+      },
+      {
+        "id": "d",
+        "text": "O Verbo só se torna Deus depois da criação."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "id": "cristologia-cam-cr-01-deus-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 1:1",
+    "learningObjective": "Reconhecer que o Verbo é eterno, estava com Deus e era Deus.",
+    "evidence": [
+      "João 1:1"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de João 1:1?",
+    "prompt": "Como se encadeiam os eventos de João 1:1?",
+    "cue": "Como se encadeiam os eventos de João 1:1?",
+    "feedbackCorrect": "Certo: existência, comunhão, identidade divina.",
+    "feedbackWrong": {
+      "b": "A comunhão com Deus vem no meio do versículo.",
+      "c": "A identidade divina fecha a cadeia."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "No princípio era o Verbo"
+      },
+      {
+        "id": "b",
+        "text": "e o Verbo estava com Deus"
+      },
+      {
+        "id": "c",
+        "text": "e o Verbo era Deus"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "id": "cristologia-cam-cr-01-deus-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 1:1",
+    "learningObjective": "Reconhecer que o Verbo é eterno, estava com Deus e era Deus.",
+    "evidence": [
+      "João 1:1"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"No princípio era o Verbo, e o Verbo estava ___ Deus, e o Verbo era Deus.\"",
+    "prompt": "Complete a frase: \"No princípio era o Verbo, e o Verbo estava ___ Deus, e o Verbo era Deus.\"",
+    "cue": "Complete a frase: \"No princípio era o Verbo, e o Verbo estava ___ Deus, e o Verbo era Deus.\"",
+    "feedbackCorrect": "Certo: o Verbo estava \"com\" Deus.",
+    "feedbackWrong": {
+      "a": "Era pertence a outras cláusulas.",
+      "c": "Princípio não preenche esta lacuna."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "template": "No princípio era o Verbo, e o Verbo estava ___ Deus, e o Verbo era Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "era"
+      },
+      {
+        "id": "b",
+        "text": "com"
+      },
+      {
+        "id": "c",
+        "text": "princípio"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "id": "cristologia-cam-cr-01-deus-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 1:1",
+    "learningObjective": "Reconhecer que o Verbo é eterno, estava com Deus e era Deus.",
+    "evidence": [
+      "João 1:1"
+    ],
+    "type": "connect",
+    "question": "O que João 1:1 comunica que se liga a este contexto?",
+    "prompt": "O que João 1:1 comunica que se liga a este contexto?",
+    "cue": "O que João 1:1 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o Verbo está com Deus e é Deus.",
+    "feedbackWrong": {
+      "a": "O texto não ensina fusão que apague a distinção.",
+      "c": "Não se trata de deidade temporária."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "passageA": {
+      "ref": "João 1:1",
+      "text": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jesus é plenamente Deus: o Verbo era no princípio, estava com Deus e era Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fusão sem distinção"
+      },
+      {
+        "id": "b",
+        "text": "Com Deus e Deus"
+      },
+      {
+        "id": "c",
+        "text": "Deus só depois"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "id": "cristologia-cam-cr-01-deus-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 1:1",
+    "learningObjective": "Reconhecer que o Verbo é eterno, estava com Deus e era Deus.",
+    "evidence": [
+      "João 1:1"
+    ],
+    "type": "true_false",
+    "question": "João 1:1 afirma a deidade plena do Verbo sem negar que ele estava com Deus.",
+    "prompt": "João 1:1 afirma a deidade plena do Verbo sem negar que ele estava com Deus.",
+    "cue": "João 1:1 afirma a deidade plena do Verbo sem negar que ele estava com Deus.",
+    "feedbackCorrect": "Certo: o texto sustenta deidade e distinção juntas.",
+    "feedbackWrong": {
+      "false": "As duas afirmações estão no mesmo versículo."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "id": "cristologia-pro-cr-01-deus-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 1:1",
+    "learningObjective": "Reconhecer que o Verbo é eterno, estava com Deus e era Deus.",
+    "evidence": [
+      "João 1:1"
+    ],
+    "type": "tap",
+    "question": "Em João 1:1, toque a palavra que falta em \"No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era ___.\"?",
+    "prompt": "Em João 1:1, toque a palavra que falta em \"No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era ___.\"?",
+    "cue": "Em João 1:1, toque a palavra que falta em \"No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era ___.\"?",
+    "feedbackCorrect": "Exato: o predicado final é Deus.",
+    "feedbackWrong": {
+      "b": "Princípio abre o versículo.",
+      "c": "Verbo é o sujeito, não o predicado final."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "template": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus"
+      },
+      {
+        "id": "b",
+        "text": "princípio"
+      },
+      {
+        "id": "c",
+        "text": "Verbo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "id": "cristologia-pro-cr-01-deus-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 1:1",
+    "learningObjective": "Reconhecer que o Verbo é eterno, estava com Deus e era Deus.",
+    "evidence": [
+      "João 1:1"
+    ],
+    "type": "choice",
+    "question": "Qual leitura de João 1:1 o texto sustenta?",
+    "prompt": "Qual leitura de João 1:1 o texto sustenta?",
+    "cue": "Qual leitura de João 1:1 o texto sustenta?",
+    "feedbackCorrect": "Certo: o Verbo é Deus eterno, não criatura posterior.",
+    "feedbackWrong": {
+      "b": "O texto diz que o Verbo era Deus, não um deus menor.",
+      "c": "Era Deus não se reduz a mera representação.",
+      "d": "Estar com Deus distingue o Verbo; não apaga a distinção."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Verbo é Deus eterno, não uma criatura posterior."
+      },
+      {
+        "id": "b",
+        "text": "O Verbo é um deus menor, inferior em essência."
+      },
+      {
+        "id": "c",
+        "text": "Era Deus só significa que o Verbo representava Deus."
+      },
+      {
+        "id": "d",
+        "text": "O Verbo e o Pai são a mesma pessoa, sem distinção."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "id": "cristologia-pro-cr-01-deus-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 1:1",
+    "learningObjective": "Reconhecer que o Verbo é eterno, estava com Deus e era Deus.",
+    "evidence": [
+      "João 1:1"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de João 1:1?",
+    "prompt": "Qual sequência revela o sentido de João 1:1?",
+    "cue": "Qual sequência revela o sentido de João 1:1?",
+    "feedbackCorrect": "Certo: preexistência, distinção e identidade divina.",
+    "feedbackWrong": {
+      "b": "A distinção (estava com) vem no meio.",
+      "c": "A identidade (era Deus) fecha o sentido."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "No princípio era o Verbo"
+      },
+      {
+        "id": "b",
+        "text": "o Verbo estava com Deus"
+      },
+      {
+        "id": "c",
+        "text": "o Verbo era Deus"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "id": "cristologia-pro-cr-01-deus-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 1:1",
+    "learningObjective": "Reconhecer que o Verbo é eterno, estava com Deus e era Deus.",
+    "evidence": [
+      "João 1:1"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"No princípio ___ o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.\"",
+    "prompt": "Complete a frase: \"No princípio ___ o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.\"",
+    "cue": "Complete a frase: \"No princípio ___ o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.\"",
+    "feedbackCorrect": "Certo: no princípio era o Verbo.",
+    "feedbackWrong": {
+      "b": "Com pertence à cláusula seguinte.",
+      "c": "Deus fecha o versículo, não esta lacuna."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "template": "No princípio ___ o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "era"
+      },
+      {
+        "id": "b",
+        "text": "com"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "id": "cristologia-pro-cr-01-deus-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 1:1",
+    "learningObjective": "Reconhecer que o Verbo é eterno, estava com Deus e era Deus.",
+    "evidence": [
+      "João 1:1"
+    ],
+    "type": "connect",
+    "question": "O que João 1:1 comunica que se liga a este contexto?",
+    "prompt": "O que João 1:1 comunica que se liga a este contexto?",
+    "cue": "O que João 1:1 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Jesus é plenamente Deus, o Verbo eterno.",
+    "feedbackWrong": {
+      "b": "O texto não ensina que o Verbo se tornou Deus depois.",
+      "c": "Não se trata de um título honorífico vazio."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "passageA": {
+      "ref": "João 1:1",
+      "text": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jesus é plenamente Deus: o Verbo era no princípio, estava com Deus e era Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Plenamente Deus"
+      },
+      {
+        "id": "b",
+        "text": "Deus só depois"
+      },
+      {
+        "id": "c",
+        "text": "Título sem deidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-01-deus",
+    "id": "cristologia-pro-cr-01-deus-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Hebreus 2:17",
+    "learningObjective": "Reconhecer que Jesus se fez semelhante aos irmãos para ser sacerdote que faz propiciação.",
+    "evidence": [
+      "Hebreus 2:17"
+    ],
+    "type": "true_false",
+    "question": "Importava que, em tudo, ele fosse feito semelhante a seus irmãos.",
+    "prompt": "Importava que, em tudo, ele fosse feito semelhante a seus irmãos.",
+    "cue": "Importava que, em tudo, ele fosse feito semelhante a seus irmãos.",
+    "feedbackCorrect": "Certo: o texto afirma essa semelhança em tudo.",
+    "feedbackWrong": {
+      "false": "Hebreus 2:17 começa exatamente com essa necessidade."
+    },
+    "passageText": "Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "id": "cristologia-sem-cr-02-homem-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Hebreus 2:17",
+    "learningObjective": "Reconhecer que Jesus se fez semelhante aos irmãos para ser sacerdote que faz propiciação.",
+    "evidence": [
+      "Hebreus 2:17"
+    ],
+    "type": "tap",
+    "question": "Em Hebreus 2:17, toque a palavra que falta em \"fosse ele feito semelhante a seus ___, para que viesse a ser um sumo sacerdote misericordioso e fiel\"?",
+    "prompt": "Em Hebreus 2:17, toque a palavra que falta em \"fosse ele feito semelhante a seus ___, para que viesse a ser um sumo sacerdote misericordioso e fiel\"?",
+    "cue": "Em Hebreus 2:17, toque a palavra que falta em \"fosse ele feito semelhante a seus ___, para que viesse a ser um sumo sacerdote misericordioso e fiel\"?",
+    "feedbackCorrect": "Exato: semelhante a seus irmãos.",
+    "feedbackWrong": {
+      "b": "Sacerdote descreve o ofício, não a quem ele se assemelha.",
+      "c": "Povo aparece no fim, ligado aos pecados."
+    },
+    "passageText": "Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo.",
+    "template": "fosse ele feito semelhante a seus ___, para que viesse a ser um sumo sacerdote misericordioso e fiel",
+    "options": [
+      {
+        "id": "a",
+        "text": "irmãos"
+      },
+      {
+        "id": "b",
+        "text": "sacerdote"
+      },
+      {
+        "id": "c",
+        "text": "povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "id": "cristologia-sem-cr-02-homem-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Hebreus 2:17",
+    "learningObjective": "Reconhecer que Jesus se fez semelhante aos irmãos para ser sacerdote que faz propiciação.",
+    "evidence": [
+      "Hebreus 2:17"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelo texto em Hebreus 2:17?",
+    "prompt": "Qual afirmação é feita diretamente pelo texto em Hebreus 2:17?",
+    "cue": "Qual afirmação é feita diretamente pelo texto em Hebreus 2:17?",
+    "feedbackCorrect": "Certo: a semelhança visa o ofício sacerdotal e a propiciação.",
+    "feedbackWrong": {
+      "a": "O texto não o descreve como anjo distante.",
+      "c": "O texto fala de propiciação, não de recusa.",
+      "d": "Ele é feito semelhante aos irmãos, não separado deles."
+    },
+    "passageText": "Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele permaneceu distante, como um anjo sem irmãos."
+      },
+      {
+        "id": "b",
+        "text": "Foi feito semelhante aos irmãos para ser sacerdote e fazer propiciação."
+      },
+      {
+        "id": "c",
+        "text": "Ele recusou fazer propiciação pelos pecados do povo."
+      },
+      {
+        "id": "d",
+        "text": "Ele não precisava ser semelhante aos irmãos."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "id": "cristologia-sem-cr-02-homem-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Hebreus 2:17",
+    "learningObjective": "Reconhecer que Jesus se fez semelhante aos irmãos para ser sacerdote que faz propiciação.",
+    "evidence": [
+      "Hebreus 2:17"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Hebreus 2:17?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Hebreus 2:17?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Hebreus 2:17?",
+    "feedbackCorrect": "Certo: semelhança, sacerdócio, propiciação.",
+    "feedbackWrong": {
+      "b": "O sacerdócio vem depois da semelhança.",
+      "c": "A propiciação fecha o versículo."
+    },
+    "passageText": "Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fosse ele feito semelhante a seus irmãos"
+      },
+      {
+        "id": "b",
+        "text": "viesse a ser um sumo sacerdote misericordioso e fiel"
+      },
+      {
+        "id": "c",
+        "text": "fazer propiciação pelos pecados do povo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "id": "cristologia-sem-cr-02-homem-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Hebreus 2:17",
+    "learningObjective": "Reconhecer que Jesus se fez semelhante aos irmãos para ser sacerdote que faz propiciação.",
+    "evidence": [
+      "Hebreus 2:17"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"a fim de fazer ___ pelos pecados do povo.\"",
+    "prompt": "Complete a frase: \"a fim de fazer ___ pelos pecados do povo.\"",
+    "cue": "Complete a frase: \"a fim de fazer ___ pelos pecados do povo.\"",
+    "feedbackCorrect": "Certo: fazer propiciação pelos pecados do povo.",
+    "feedbackWrong": {
+      "a": "Irmãos aparece no início, não nesta lacuna.",
+      "c": "Fiel descreve o sacerdote, não esta ação."
+    },
+    "passageText": "Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo.",
+    "template": "a fim de fazer ___ pelos pecados do povo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "irmãos"
+      },
+      {
+        "id": "b",
+        "text": "propiciação"
+      },
+      {
+        "id": "c",
+        "text": "fiel"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "id": "cristologia-sem-cr-02-homem-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Hebreus 2:17",
+    "learningObjective": "Reconhecer que Jesus se fez semelhante aos irmãos para ser sacerdote que faz propiciação.",
+    "evidence": [
+      "Hebreus 2:17"
+    ],
+    "type": "connect",
+    "question": "O que Hebreus 2:17 comunica que se liga a este contexto?",
+    "prompt": "O que Hebreus 2:17 comunica que se liga a este contexto?",
+    "cue": "O que Hebreus 2:17 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o homem-sacerdote faz propiciação.",
+    "feedbackWrong": {
+      "b": "A semelhança não é só convivência social.",
+      "c": "O texto aponta para propiciação, não para recusa."
+    },
+    "passageText": "Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo.",
+    "passageA": {
+      "ref": "Hebreus 2:17",
+      "text": "Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jesus é plenamente homem: semelhante aos irmãos, sacerdote que faz propiciação."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sacerdote que propicia"
+      },
+      {
+        "id": "b",
+        "text": "Só convivência social"
+      },
+      {
+        "id": "c",
+        "text": "Recusa da propiciação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "id": "cristologia-sem-cr-02-homem-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Hebreus 2:17",
+    "learningObjective": "Reconhecer que Jesus se fez semelhante aos irmãos para ser sacerdote que faz propiciação.",
+    "evidence": [
+      "Hebreus 2:17"
+    ],
+    "type": "true_false",
+    "question": "No texto, a semelhança com os irmãos serve para que ele seja sacerdote misericordioso e fiel e faça propiciação.",
+    "prompt": "No texto, a semelhança com os irmãos serve para que ele seja sacerdote misericordioso e fiel e faça propiciação.",
+    "cue": "No texto, a semelhança com os irmãos serve para que ele seja sacerdote misericordioso e fiel e faça propiciação.",
+    "feedbackCorrect": "Certo: o para que liga semelhança e ofício sacerdotal.",
+    "feedbackWrong": {
+      "false": "A finalidade está explícita: sacerdote e propiciação."
+    },
+    "passageText": "Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "id": "cristologia-cam-cr-02-homem-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Hebreus 2:17",
+    "learningObjective": "Reconhecer que Jesus se fez semelhante aos irmãos para ser sacerdote que faz propiciação.",
+    "evidence": [
+      "Hebreus 2:17"
+    ],
+    "type": "tap",
+    "question": "Em Hebreus 2:17, toque a palavra que falta em \"um sumo sacerdote ___ e fiel nas coisas referentes a Deus\"?",
+    "prompt": "Em Hebreus 2:17, toque a palavra que falta em \"um sumo sacerdote ___ e fiel nas coisas referentes a Deus\"?",
+    "cue": "Em Hebreus 2:17, toque a palavra que falta em \"um sumo sacerdote ___ e fiel nas coisas referentes a Deus\"?",
+    "feedbackCorrect": "Exato: misericordioso e fiel.",
+    "feedbackWrong": {
+      "a": "Semelhante descreve a encarnação, não este adjetivo.",
+      "c": "Propiciação é o objetivo final, não este adjetivo."
+    },
+    "passageText": "Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo.",
+    "template": "um sumo sacerdote ___ e fiel nas coisas referentes a Deus",
+    "options": [
+      {
+        "id": "a",
+        "text": "semelhante"
+      },
+      {
+        "id": "b",
+        "text": "misericordioso"
+      },
+      {
+        "id": "c",
+        "text": "propiciação"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "id": "cristologia-cam-cr-02-homem-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Hebreus 2:17",
+    "learningObjective": "Reconhecer que Jesus se fez semelhante aos irmãos para ser sacerdote que faz propiciação.",
+    "evidence": [
+      "Hebreus 2:17"
+    ],
+    "type": "choice",
+    "question": "Como Hebreus 2:17 encadeia humanidade e salvação?",
+    "prompt": "Como Hebreus 2:17 encadeia humanidade e salvação?",
+    "cue": "Como Hebreus 2:17 encadeia humanidade e salvação?",
+    "feedbackCorrect": "Certo: a humanidade habilita o sacerdócio que propicia.",
+    "feedbackWrong": {
+      "a": "O texto não reduz Jesus a um exemplo moral sem ofício.",
+      "c": "A semelhança não é disfarce: ela visa a propiciação.",
+      "d": "O sacerdócio aqui é misericordioso e fiel, não distante."
+    },
+    "passageText": "Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele se fez homem só para dar um exemplo moral, sem ofício."
+      },
+      {
+        "id": "b",
+        "text": "A semelhança com os irmãos o habilita a ser sacerdote que propicia."
+      },
+      {
+        "id": "c",
+        "text": "A humanidade é um disfarce, sem relação com os pecados do povo."
+      },
+      {
+        "id": "d",
+        "text": "O sacerdócio dispensa misericórdia e fidelidade a Deus."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "id": "cristologia-cam-cr-02-homem-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Hebreus 2:17",
+    "learningObjective": "Reconhecer que Jesus se fez semelhante aos irmãos para ser sacerdote que faz propiciação.",
+    "evidence": [
+      "Hebreus 2:17"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Hebreus 2:17?",
+    "prompt": "Como se encadeiam os eventos de Hebreus 2:17?",
+    "cue": "Como se encadeiam os eventos de Hebreus 2:17?",
+    "feedbackCorrect": "Certo: primeiro a semelhança, depois o ofício, depois a propiciação.",
+    "feedbackWrong": {
+      "b": "O ofício sacerdotal vem no meio da cadeia.",
+      "c": "A propiciação é o fim declarado."
+    },
+    "passageText": "Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "feito semelhante a seus irmãos"
+      },
+      {
+        "id": "b",
+        "text": "sumo sacerdote misericordioso e fiel"
+      },
+      {
+        "id": "c",
+        "text": "propiciação pelos pecados do povo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "id": "cristologia-cam-cr-02-homem-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Hebreus 2:17",
+    "learningObjective": "Reconhecer que Jesus se fez semelhante aos irmãos para ser sacerdote que faz propiciação.",
+    "evidence": [
+      "Hebreus 2:17"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"fosse ele feito ___ a seus irmãos, para que viesse a ser um sumo sacerdote.\"",
+    "prompt": "Complete a frase: \"fosse ele feito ___ a seus irmãos, para que viesse a ser um sumo sacerdote.\"",
+    "cue": "Complete a frase: \"fosse ele feito ___ a seus irmãos, para que viesse a ser um sumo sacerdote.\"",
+    "feedbackCorrect": "Certo: feito semelhante a seus irmãos.",
+    "feedbackWrong": {
+      "b": "Misericordioso descreve o sacerdote, não esta lacuna.",
+      "c": "Fiel também descreve o sacerdote, depois."
+    },
+    "passageText": "Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo.",
+    "template": "fosse ele feito ___ a seus irmãos, para que viesse a ser um sumo sacerdote.",
+    "options": [
+      {
+        "id": "a",
+        "text": "semelhante"
+      },
+      {
+        "id": "b",
+        "text": "misericordioso"
+      },
+      {
+        "id": "c",
+        "text": "fiel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "id": "cristologia-cam-cr-02-homem-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Hebreus 2:17",
+    "learningObjective": "Reconhecer que Jesus se fez semelhante aos irmãos para ser sacerdote que faz propiciação.",
+    "evidence": [
+      "Hebreus 2:17"
+    ],
+    "type": "connect",
+    "question": "O que Hebreus 2:17 comunica que se liga a este contexto?",
+    "prompt": "O que Hebreus 2:17 comunica que se liga a este contexto?",
+    "cue": "O que Hebreus 2:17 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a semelhança existe para a propiciação.",
+    "feedbackWrong": {
+      "a": "Não é humanidade sem propósito salvífico.",
+      "c": "O texto não o isola dos irmãos."
+    },
+    "passageText": "Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo.",
+    "passageA": {
+      "ref": "Hebreus 2:17",
+      "text": "Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jesus é plenamente homem: semelhante aos irmãos, sacerdote que faz propiciação."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Homem sem propósito"
+      },
+      {
+        "id": "b",
+        "text": "Semelhante para propiciar"
+      },
+      {
+        "id": "c",
+        "text": "Distante dos irmãos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "id": "cristologia-cam-cr-02-homem-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Hebreus 2:17",
+    "learningObjective": "Reconhecer que Jesus se fez semelhante aos irmãos para ser sacerdote que faz propiciação.",
+    "evidence": [
+      "Hebreus 2:17"
+    ],
+    "type": "true_false",
+    "question": "A humanidade de Jesus, segundo Hebreus 2:17, habilita a propiciação pelos pecados do povo.",
+    "prompt": "A humanidade de Jesus, segundo Hebreus 2:17, habilita a propiciação pelos pecados do povo.",
+    "cue": "A humanidade de Jesus, segundo Hebreus 2:17, habilita a propiciação pelos pecados do povo.",
+    "feedbackCorrect": "Certo: a semelhança aponta para a propiciação.",
+    "feedbackWrong": {
+      "false": "O texto liga semelhança, sacerdócio e propiciação."
+    },
+    "passageText": "Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "id": "cristologia-pro-cr-02-homem-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Hebreus 2:17",
+    "learningObjective": "Reconhecer que Jesus se fez semelhante aos irmãos para ser sacerdote que faz propiciação.",
+    "evidence": [
+      "Hebreus 2:17"
+    ],
+    "type": "tap",
+    "question": "Em Hebreus 2:17, toque a palavra que falta em \"viesse a ser um sumo ___ misericordioso e fiel nas coisas referentes a Deus\"?",
+    "prompt": "Em Hebreus 2:17, toque a palavra que falta em \"viesse a ser um sumo ___ misericordioso e fiel nas coisas referentes a Deus\"?",
+    "cue": "Em Hebreus 2:17, toque a palavra que falta em \"viesse a ser um sumo ___ misericordioso e fiel nas coisas referentes a Deus\"?",
+    "feedbackCorrect": "Exato: sumo sacerdote.",
+    "feedbackWrong": {
+      "b": "Irmãos é a quem ele se assemelha.",
+      "c": "Povo recebe a propiciação, no fim."
+    },
+    "passageText": "Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo.",
+    "template": "viesse a ser um sumo ___ misericordioso e fiel nas coisas referentes a Deus",
+    "options": [
+      {
+        "id": "a",
+        "text": "sacerdote"
+      },
+      {
+        "id": "b",
+        "text": "irmãos"
+      },
+      {
+        "id": "c",
+        "text": "povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "id": "cristologia-pro-cr-02-homem-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Hebreus 2:17",
+    "learningObjective": "Reconhecer que Jesus se fez semelhante aos irmãos para ser sacerdote que faz propiciação.",
+    "evidence": [
+      "Hebreus 2:17"
+    ],
+    "type": "choice",
+    "question": "Qual leitura teológica Hebreus 2:17 sustenta?",
+    "prompt": "Qual leitura teológica Hebreus 2:17 sustenta?",
+    "cue": "Qual leitura teológica Hebreus 2:17 sustenta?",
+    "feedbackCorrect": "Certo: plena humanidade para um sacerdote que propicia.",
+    "feedbackWrong": {
+      "a": "O texto não trata a humanidade como aparência.",
+      "c": "Ele não se fez homem para aprender a ser Deus.",
+      "d": "A propiciação é pelos pecados do povo, não uma recusa."
+    },
+    "passageText": "Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A humanidade de Jesus é só aparência, sem semelhança real."
+      },
+      {
+        "id": "b",
+        "text": "Jesus é plenamente homem para ser sacerdote que faz propiciação."
+      },
+      {
+        "id": "c",
+        "text": "Ele se fez homem para aprender como ser Deus."
+      },
+      {
+        "id": "d",
+        "text": "O sumo sacerdote recusa tratar dos pecados do povo."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "id": "cristologia-pro-cr-02-homem-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Hebreus 2:17",
+    "learningObjective": "Reconhecer que Jesus se fez semelhante aos irmãos para ser sacerdote que faz propiciação.",
+    "evidence": [
+      "Hebreus 2:17"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Hebreus 2:17?",
+    "prompt": "Qual sequência revela o sentido de Hebreus 2:17?",
+    "cue": "Qual sequência revela o sentido de Hebreus 2:17?",
+    "feedbackCorrect": "Certo: encarnação, ofício e propiciação formam o sentido.",
+    "feedbackWrong": {
+      "b": "O ofício sacerdotal vem depois da semelhança.",
+      "c": "A propiciação é o desfecho do sentido."
+    },
+    "passageText": "Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "feito semelhante a seus irmãos"
+      },
+      {
+        "id": "b",
+        "text": "sumo sacerdote misericordioso e fiel"
+      },
+      {
+        "id": "c",
+        "text": "propiciação pelos pecados do povo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "id": "cristologia-pro-cr-02-homem-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Hebreus 2:17",
+    "learningObjective": "Reconhecer que Jesus se fez semelhante aos irmãos para ser sacerdote que faz propiciação.",
+    "evidence": [
+      "Hebreus 2:17"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"a fim de fazer propiciação pelos pecados do ___.\"",
+    "prompt": "Complete a frase: \"a fim de fazer propiciação pelos pecados do ___.\"",
+    "cue": "Complete a frase: \"a fim de fazer propiciação pelos pecados do ___.\"",
+    "feedbackCorrect": "Certo: pelos pecados do povo.",
+    "feedbackWrong": {
+      "a": "Deus é a quem o sacerdócio se refere, não esta lacuna.",
+      "b": "Irmãos aparece no início do versículo."
+    },
+    "passageText": "Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo.",
+    "template": "a fim de fazer propiciação pelos pecados do ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus"
+      },
+      {
+        "id": "b",
+        "text": "irmãos"
+      },
+      {
+        "id": "c",
+        "text": "povo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "id": "cristologia-pro-cr-02-homem-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Hebreus 2:17",
+    "learningObjective": "Reconhecer que Jesus se fez semelhante aos irmãos para ser sacerdote que faz propiciação.",
+    "evidence": [
+      "Hebreus 2:17"
+    ],
+    "type": "connect",
+    "question": "O que Hebreus 2:17 comunica que se liga a este contexto?",
+    "prompt": "O que Hebreus 2:17 comunica que se liga a este contexto?",
+    "cue": "O que Hebreus 2:17 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o homem que propicia.",
+    "feedbackWrong": {
+      "b": "O texto não ensina aparência sem carne.",
+      "c": "Não é um anjo distante do povo."
+    },
+    "passageText": "Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo.",
+    "passageA": {
+      "ref": "Hebreus 2:17",
+      "text": "Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jesus é plenamente homem: semelhante aos irmãos, sacerdote que faz propiciação."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Homem que propicia"
+      },
+      {
+        "id": "b",
+        "text": "Aparência sem carne"
+      },
+      {
+        "id": "c",
+        "text": "Anjo distante"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-02-homem",
+    "id": "cristologia-pro-cr-02-homem-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 2:9–11",
+    "learningObjective": "Reconhecer que Deus exaltou Jesus com o nome sobre todo nome; toda língua o confessa Senhor.",
+    "evidence": [
+      "Filipenses 2:9",
+      "Filipenses 2:11"
+    ],
+    "type": "true_false",
+    "question": "Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome.",
+    "prompt": "Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome.",
+    "cue": "Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome.",
+    "feedbackCorrect": "Certo: é o que Filipenses 2:9 afirma.",
+    "feedbackWrong": {
+      "false": "Releia: Deus o exaltou e lhe deu esse nome."
+    },
+    "passageText": "Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "id": "cristologia-sem-cr-03-senhor-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 2:9–11",
+    "learningObjective": "Reconhecer que Deus exaltou Jesus com o nome sobre todo nome; toda língua o confessa Senhor.",
+    "evidence": [
+      "Filipenses 2:9",
+      "Filipenses 2:11"
+    ],
+    "type": "tap",
+    "question": "Em Filipenses 2:9–11, toque a palavra que falta em \"Por isso, também Deus o ___ soberanamente e lhe deu o nome que é sobre todo o nome\"?",
+    "prompt": "Em Filipenses 2:9–11, toque a palavra que falta em \"Por isso, também Deus o ___ soberanamente e lhe deu o nome que é sobre todo o nome\"?",
+    "cue": "Em Filipenses 2:9–11, toque a palavra que falta em \"Por isso, também Deus o ___ soberanamente e lhe deu o nome que é sobre todo o nome\"?",
+    "feedbackCorrect": "Exato: Deus o exaltou soberanamente.",
+    "feedbackWrong": {
+      "b": "Confesse aparece no fim, com toda língua.",
+      "c": "Dobre refere-se ao joelho, depois."
+    },
+    "passageText": "Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "template": "Por isso, também Deus o ___ soberanamente e lhe deu o nome que é sobre todo o nome",
+    "options": [
+      {
+        "id": "a",
+        "text": "exaltou"
+      },
+      {
+        "id": "b",
+        "text": "confesse"
+      },
+      {
+        "id": "c",
+        "text": "dobre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "id": "cristologia-sem-cr-03-senhor-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 2:9–11",
+    "learningObjective": "Reconhecer que Deus exaltou Jesus com o nome sobre todo nome; toda língua o confessa Senhor.",
+    "evidence": [
+      "Filipenses 2:9",
+      "Filipenses 2:11"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelo texto em Filipenses 2:9–11?",
+    "prompt": "Qual afirmação é feita diretamente pelo texto em Filipenses 2:9–11?",
+    "cue": "Qual afirmação é feita diretamente pelo texto em Filipenses 2:9–11?",
+    "feedbackCorrect": "Certo: toda língua confessa que Jesus Cristo é o Senhor.",
+    "feedbackWrong": {
+      "a": "O texto fala de joelho que se dobra, não de recusa.",
+      "c": "O nome é sobre todo o nome, não um nome comum.",
+      "d": "A confissão é para glória de Deus Pai, não contra o Pai."
+    },
+    "passageText": "Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nenhum joelho se dobra ao nome de Jesus."
+      },
+      {
+        "id": "b",
+        "text": "Toda língua confesse que Jesus Cristo é o Senhor."
+      },
+      {
+        "id": "c",
+        "text": "Deus lhe deu um nome igual a qualquer outro nome."
+      },
+      {
+        "id": "d",
+        "text": "A confissão de Jesus rivaliza com a glória do Pai."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "id": "cristologia-sem-cr-03-senhor-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 2:9–11",
+    "learningObjective": "Reconhecer que Deus exaltou Jesus com o nome sobre todo nome; toda língua o confessa Senhor.",
+    "evidence": [
+      "Filipenses 2:9",
+      "Filipenses 2:11"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Filipenses 2:9–11?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Filipenses 2:9–11?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Filipenses 2:9–11?",
+    "feedbackCorrect": "Certo: exaltação, joelhos e confissão.",
+    "feedbackWrong": {
+      "b": "O joelho vem depois da exaltação.",
+      "c": "A confissão fecha o trecho."
+    },
+    "passageText": "Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome"
+      },
+      {
+        "id": "b",
+        "text": "em o nome de Jesus se dobre todo joelho"
+      },
+      {
+        "id": "c",
+        "text": "toda língua confesse que Jesus Cristo é o Senhor"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "id": "cristologia-sem-cr-03-senhor-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 2:9–11",
+    "learningObjective": "Reconhecer que Deus exaltou Jesus com o nome sobre todo nome; toda língua o confessa Senhor.",
+    "evidence": [
+      "Filipenses 2:9",
+      "Filipenses 2:11"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"toda língua confesse que Jesus Cristo é o ___ para glória de Deus Pai.\"",
+    "prompt": "Complete a frase: \"toda língua confesse que Jesus Cristo é o ___ para glória de Deus Pai.\"",
+    "cue": "Complete a frase: \"toda língua confesse que Jesus Cristo é o ___ para glória de Deus Pai.\"",
+    "feedbackCorrect": "Certo: Jesus Cristo é o Senhor.",
+    "feedbackWrong": {
+      "a": "Nome aparece antes, na exaltação.",
+      "c": "Joelho é o que se dobra, não esta lacuna."
+    },
+    "passageText": "Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "template": "toda língua confesse que Jesus Cristo é o ___ para glória de Deus Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nome"
+      },
+      {
+        "id": "b",
+        "text": "Senhor"
+      },
+      {
+        "id": "c",
+        "text": "joelho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "id": "cristologia-sem-cr-03-senhor-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 2:9–11",
+    "learningObjective": "Reconhecer que Deus exaltou Jesus com o nome sobre todo nome; toda língua o confessa Senhor.",
+    "evidence": [
+      "Filipenses 2:9",
+      "Filipenses 2:11"
+    ],
+    "type": "connect",
+    "question": "O que Filipenses 2:9–11 comunica que se liga a este contexto?",
+    "prompt": "O que Filipenses 2:9–11 comunica que se liga a este contexto?",
+    "cue": "O que Filipenses 2:9–11 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o nome sobre todo nome.",
+    "feedbackWrong": {
+      "b": "O texto descreve exaltação, não anonimato.",
+      "c": "Todo joelho se dobra; não há recusa universal."
+    },
+    "passageText": "Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "passageA": {
+      "ref": "Filipenses 2:9–11",
+      "text": "Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Morte, ressurreição e senhorio: o exaltado recebe o nome sobre todo nome; todo joelho se dobra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Nome sobre todo nome"
+      },
+      {
+        "id": "b",
+        "text": "Nome sem exaltação"
+      },
+      {
+        "id": "c",
+        "text": "Nenhum joelho dobra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "id": "cristologia-sem-cr-03-senhor-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 2:9–11",
+    "learningObjective": "Reconhecer que Deus exaltou Jesus com o nome sobre todo nome; toda língua o confessa Senhor.",
+    "evidence": [
+      "Filipenses 2:9",
+      "Filipenses 2:11"
+    ],
+    "type": "true_false",
+    "question": "A exaltação no texto leva todo joelho a dobrar-se e toda língua a confessar o senhorio de Jesus.",
+    "prompt": "A exaltação no texto leva todo joelho a dobrar-se e toda língua a confessar o senhorio de Jesus.",
+    "cue": "A exaltação no texto leva todo joelho a dobrar-se e toda língua a confessar o senhorio de Jesus.",
+    "feedbackCorrect": "Certo: o para que liga o nome à adoração universal.",
+    "feedbackWrong": {
+      "false": "Joelhos e línguas são o resultado declarado da exaltação."
+    },
+    "passageText": "Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "id": "cristologia-cam-cr-03-senhor-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 2:9–11",
+    "learningObjective": "Reconhecer que Deus exaltou Jesus com o nome sobre todo nome; toda língua o confessa Senhor.",
+    "evidence": [
+      "Filipenses 2:9",
+      "Filipenses 2:11"
+    ],
+    "type": "tap",
+    "question": "Em Filipenses 2:9–11, toque a palavra que falta em \"para que em o nome de Jesus se dobre todo ___ dos que estão nos céus, na terra e debaixo da terra\"?",
+    "prompt": "Em Filipenses 2:9–11, toque a palavra que falta em \"para que em o nome de Jesus se dobre todo ___ dos que estão nos céus, na terra e debaixo da terra\"?",
+    "cue": "Em Filipenses 2:9–11, toque a palavra que falta em \"para que em o nome de Jesus se dobre todo ___ dos que estão nos céus, na terra e debaixo da terra\"?",
+    "feedbackCorrect": "Exato: todo joelho se dobre.",
+    "feedbackWrong": {
+      "a": "Língua aparece na cláusula seguinte.",
+      "c": "Nome é dado na exaltação, antes."
+    },
+    "passageText": "Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "template": "para que em o nome de Jesus se dobre todo ___ dos que estão nos céus, na terra e debaixo da terra",
+    "options": [
+      {
+        "id": "a",
+        "text": "língua"
+      },
+      {
+        "id": "b",
+        "text": "joelho"
+      },
+      {
+        "id": "c",
+        "text": "nome"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "id": "cristologia-cam-cr-03-senhor-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 2:9–11",
+    "learningObjective": "Reconhecer que Deus exaltou Jesus com o nome sobre todo nome; toda língua o confessa Senhor.",
+    "evidence": [
+      "Filipenses 2:9",
+      "Filipenses 2:11"
+    ],
+    "type": "choice",
+    "question": "O que a exaltação de Filipenses 2:9–11 produz, segundo o texto?",
+    "prompt": "O que a exaltação de Filipenses 2:9–11 produz, segundo o texto?",
+    "cue": "O que a exaltação de Filipenses 2:9–11 produz, segundo o texto?",
+    "feedbackCorrect": "Certo: adoração universal, nos céus, na terra e debaixo da terra.",
+    "feedbackWrong": {
+      "a": "O alcance inclui céus, terra e debaixo da terra.",
+      "c": "A confissão é que Jesus Cristo é o Senhor, não um herói local.",
+      "d": "A glória é de Deus Pai, não uma rivalidade com o Pai."
+    },
+    "passageText": "Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Apenas os que estão na terra reconhecem Jesus."
+      },
+      {
+        "id": "b",
+        "text": "Todo joelho se dobra e toda língua confessa o Senhor, para glória do Pai."
+      },
+      {
+        "id": "c",
+        "text": "Jesus é exaltado só como herói nacional, sem senhorio universal."
+      },
+      {
+        "id": "d",
+        "text": "Confessar Jesus como Senhor tira a glória de Deus Pai."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "id": "cristologia-cam-cr-03-senhor-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 2:9–11",
+    "learningObjective": "Reconhecer que Deus exaltou Jesus com o nome sobre todo nome; toda língua o confessa Senhor.",
+    "evidence": [
+      "Filipenses 2:9",
+      "Filipenses 2:11"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Filipenses 2:9–11?",
+    "prompt": "Como se encadeiam os eventos de Filipenses 2:9–11?",
+    "cue": "Como se encadeiam os eventos de Filipenses 2:9–11?",
+    "feedbackCorrect": "Certo: Deus exalta, joelhos dobram, línguas confessam.",
+    "feedbackWrong": {
+      "b": "O joelho vem depois do nome dado.",
+      "c": "A confissão é o desfecho."
+    },
+    "passageText": "Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus o exaltou soberanamente e lhe deu o nome"
+      },
+      {
+        "id": "b",
+        "text": "se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra"
+      },
+      {
+        "id": "c",
+        "text": "toda língua confesse que Jesus Cristo é o Senhor"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "id": "cristologia-cam-cr-03-senhor-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 2:9–11",
+    "learningObjective": "Reconhecer que Deus exaltou Jesus com o nome sobre todo nome; toda língua o confessa Senhor.",
+    "evidence": [
+      "Filipenses 2:9",
+      "Filipenses 2:11"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"lhe deu o ___ que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho.\"",
+    "prompt": "Complete a frase: \"lhe deu o ___ que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho.\"",
+    "cue": "Complete a frase: \"lhe deu o ___ que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho.\"",
+    "feedbackCorrect": "Certo: deu-lhe o nome sobre todo o nome.",
+    "feedbackWrong": {
+      "b": "Joelho é o que se dobra, depois.",
+      "c": "Senhor é a confissão final."
+    },
+    "passageText": "Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "template": "lhe deu o ___ que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nome"
+      },
+      {
+        "id": "b",
+        "text": "joelho"
+      },
+      {
+        "id": "c",
+        "text": "Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "id": "cristologia-cam-cr-03-senhor-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 2:9–11",
+    "learningObjective": "Reconhecer que Deus exaltou Jesus com o nome sobre todo nome; toda língua o confessa Senhor.",
+    "evidence": [
+      "Filipenses 2:9",
+      "Filipenses 2:11"
+    ],
+    "type": "connect",
+    "question": "O que Filipenses 2:9–11 comunica que se liga a este contexto?",
+    "prompt": "O que Filipenses 2:9–11 comunica que se liga a este contexto?",
+    "cue": "O que Filipenses 2:9–11 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: todo joelho se dobra ao exaltado.",
+    "feedbackWrong": {
+      "a": "O texto não limita a confissão a um povo só.",
+      "c": "Há nome sobre todo nome; não é anonimato."
+    },
+    "passageText": "Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "passageA": {
+      "ref": "Filipenses 2:9–11",
+      "text": "Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Morte, ressurreição e senhorio: o exaltado recebe o nome sobre todo nome; todo joelho se dobra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Só um povo confessa"
+      },
+      {
+        "id": "b",
+        "text": "Todo joelho se dobra"
+      },
+      {
+        "id": "c",
+        "text": "Exaltação sem nome"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "id": "cristologia-cam-cr-03-senhor-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 2:9–11",
+    "learningObjective": "Reconhecer que Deus exaltou Jesus com o nome sobre todo nome; toda língua o confessa Senhor.",
+    "evidence": [
+      "Filipenses 2:9",
+      "Filipenses 2:11"
+    ],
+    "type": "true_false",
+    "question": "Confessar que Jesus Cristo é o Senhor, segundo o texto, é para glória de Deus Pai.",
+    "prompt": "Confessar que Jesus Cristo é o Senhor, segundo o texto, é para glória de Deus Pai.",
+    "cue": "Confessar que Jesus Cristo é o Senhor, segundo o texto, é para glória de Deus Pai.",
+    "feedbackCorrect": "Certo: o senhorio de Jesus glorifica o Pai.",
+    "feedbackWrong": {
+      "false": "O versículo fecha: para glória de Deus Pai."
+    },
+    "passageText": "Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "id": "cristologia-pro-cr-03-senhor-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 2:9–11",
+    "learningObjective": "Reconhecer que Deus exaltou Jesus com o nome sobre todo nome; toda língua o confessa Senhor.",
+    "evidence": [
+      "Filipenses 2:9",
+      "Filipenses 2:11"
+    ],
+    "type": "tap",
+    "question": "Em Filipenses 2:9–11, toque a palavra que falta em \"e toda ___ confesse que Jesus Cristo é o Senhor para glória de Deus Pai\"?",
+    "prompt": "Em Filipenses 2:9–11, toque a palavra que falta em \"e toda ___ confesse que Jesus Cristo é o Senhor para glória de Deus Pai\"?",
+    "cue": "Em Filipenses 2:9–11, toque a palavra que falta em \"e toda ___ confesse que Jesus Cristo é o Senhor para glória de Deus Pai\"?",
+    "feedbackCorrect": "Exato: toda língua confesse.",
+    "feedbackWrong": {
+      "b": "Joelho aparece na cláusula anterior.",
+      "c": "Céus descreve onde estão os que se dobram."
+    },
+    "passageText": "Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "template": "e toda ___ confesse que Jesus Cristo é o Senhor para glória de Deus Pai",
+    "options": [
+      {
+        "id": "a",
+        "text": "língua"
+      },
+      {
+        "id": "b",
+        "text": "joelho"
+      },
+      {
+        "id": "c",
+        "text": "céus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "id": "cristologia-pro-cr-03-senhor-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 2:9–11",
+    "learningObjective": "Reconhecer que Deus exaltou Jesus com o nome sobre todo nome; toda língua o confessa Senhor.",
+    "evidence": [
+      "Filipenses 2:9",
+      "Filipenses 2:11"
+    ],
+    "type": "choice",
+    "question": "Qual sentido Filipenses 2:9–11 sustenta sobre o senhorio de Jesus?",
+    "prompt": "Qual sentido Filipenses 2:9–11 sustenta sobre o senhorio de Jesus?",
+    "cue": "Qual sentido Filipenses 2:9–11 sustenta sobre o senhorio de Jesus?",
+    "feedbackCorrect": "Certo: o exaltado é Senhor, e isso glorifica o Pai.",
+    "feedbackWrong": {
+      "a": "Por isso liga a exaltação ao caminho anterior; não a apaga.",
+      "c": "O nome sobre todo nome não é um título vazio.",
+      "d": "A confissão não rivaliza com o Pai; é para a glória dele."
+    },
+    "passageText": "Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A exaltação apaga a humilhação anterior e a torna irrelevante."
+      },
+      {
+        "id": "b",
+        "text": "O Senhor exaltado recebe adoração universal, para glória do Pai."
+      },
+      {
+        "id": "c",
+        "text": "O nome dado a Jesus é só honra humana, sem alcance nos céus."
+      },
+      {
+        "id": "d",
+        "text": "Confessar Jesus como Senhor diminui a glória de Deus Pai."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "id": "cristologia-pro-cr-03-senhor-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 2:9–11",
+    "learningObjective": "Reconhecer que Deus exaltou Jesus com o nome sobre todo nome; toda língua o confessa Senhor.",
+    "evidence": [
+      "Filipenses 2:9",
+      "Filipenses 2:11"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Filipenses 2:9–11?",
+    "prompt": "Qual sequência revela o sentido de Filipenses 2:9–11?",
+    "cue": "Qual sequência revela o sentido de Filipenses 2:9–11?",
+    "feedbackCorrect": "Certo: o nome, a adoração e a glória do Pai.",
+    "feedbackWrong": {
+      "b": "O joelho vem depois do nome dado.",
+      "c": "A confissão do Senhor fecha o sentido rumo ao Pai."
+    },
+    "passageText": "Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "lhe deu o nome que é sobre todo o nome"
+      },
+      {
+        "id": "b",
+        "text": "se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra"
+      },
+      {
+        "id": "c",
+        "text": "toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "id": "cristologia-pro-cr-03-senhor-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 2:9–11",
+    "learningObjective": "Reconhecer que Deus exaltou Jesus com o nome sobre todo nome; toda língua o confessa Senhor.",
+    "evidence": [
+      "Filipenses 2:9",
+      "Filipenses 2:11"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Jesus Cristo é o Senhor para ___ de Deus Pai.\"",
+    "prompt": "Complete a frase: \"Jesus Cristo é o Senhor para ___ de Deus Pai.\"",
+    "cue": "Complete a frase: \"Jesus Cristo é o Senhor para ___ de Deus Pai.\"",
+    "feedbackCorrect": "Certo: para glória de Deus Pai.",
+    "feedbackWrong": {
+      "a": "Terra descreve onde há joelhos, não esta lacuna.",
+      "c": "Nome foi dado na exaltação, antes."
+    },
+    "passageText": "Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "template": "Jesus Cristo é o Senhor para ___ de Deus Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "terra"
+      },
+      {
+        "id": "b",
+        "text": "glória"
+      },
+      {
+        "id": "c",
+        "text": "nome"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "id": "cristologia-pro-cr-03-senhor-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 2:9–11",
+    "learningObjective": "Reconhecer que Deus exaltou Jesus com o nome sobre todo nome; toda língua o confessa Senhor.",
+    "evidence": [
+      "Filipenses 2:9",
+      "Filipenses 2:11"
+    ],
+    "type": "connect",
+    "question": "O que Filipenses 2:9–11 comunica que se liga a este contexto?",
+    "prompt": "O que Filipenses 2:9–11 comunica que se liga a este contexto?",
+    "cue": "O que Filipenses 2:9–11 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Senhor para glória do Pai.",
+    "feedbackWrong": {
+      "b": "O senhorio não compete com o Pai.",
+      "c": "Não é honra restrita a um único lugar."
+    },
+    "passageText": "Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "passageA": {
+      "ref": "Filipenses 2:9–11",
+      "text": "Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Morte, ressurreição e senhorio: o exaltado recebe o nome sobre todo nome; todo joelho se dobra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Senhor para glória do Pai"
+      },
+      {
+        "id": "b",
+        "text": "Senhor contra o Pai"
+      },
+      {
+        "id": "c",
+        "text": "Honra só na terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-03-senhor",
+    "id": "cristologia-pro-cr-03-senhor-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 1:1; Hebreus 2:17; Filipenses 2:11",
+    "learningObjective": "Articular quem é Jesus: Verbo que é Deus, homem que propicia, Senhor confessado por toda língua.",
+    "evidence": [
+      "João 1:1",
+      "Hebreus 2:17",
+      "Filipenses 2:11"
+    ],
+    "type": "true_false",
+    "question": "O Verbo era Deus; ele foi feito semelhante aos irmãos; toda língua confessa que Jesus Cristo é o Senhor.",
+    "prompt": "O Verbo era Deus; ele foi feito semelhante aos irmãos; toda língua confessa que Jesus Cristo é o Senhor.",
+    "cue": "O Verbo era Deus; ele foi feito semelhante aos irmãos; toda língua confessa que Jesus Cristo é o Senhor.",
+    "feedbackCorrect": "Certo: os três textos afirmam isso.",
+    "feedbackWrong": {
+      "false": "João, Hebreus e Filipenses sustentam essas três frases."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo. Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "id": "cristologia-sem-cr-boss-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 1:1; Hebreus 2:17; Filipenses 2:11",
+    "learningObjective": "Articular quem é Jesus: Verbo que é Deus, homem que propicia, Senhor confessado por toda língua.",
+    "evidence": [
+      "João 1:1",
+      "Hebreus 2:17",
+      "Filipenses 2:11"
+    ],
+    "type": "tap",
+    "question": "Em João 1:1, toque a palavra que falta em \"No princípio era o ___, e o Verbo estava com Deus, e o Verbo era Deus.\"?",
+    "prompt": "Em João 1:1, toque a palavra que falta em \"No princípio era o ___, e o Verbo estava com Deus, e o Verbo era Deus.\"?",
+    "cue": "Em João 1:1, toque a palavra que falta em \"No princípio era o ___, e o Verbo estava com Deus, e o Verbo era Deus.\"?",
+    "feedbackCorrect": "Exato: no princípio era o Verbo.",
+    "feedbackWrong": {
+      "b": "Irmãos pertence a Hebreus 2:17.",
+      "c": "Senhor pertence à confissão de Filipenses."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo. Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "template": "No princípio era o ___, e o Verbo estava com Deus, e o Verbo era Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Verbo"
+      },
+      {
+        "id": "b",
+        "text": "irmãos"
+      },
+      {
+        "id": "c",
+        "text": "Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "id": "cristologia-sem-cr-boss-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 1:1; Hebreus 2:17; Filipenses 2:11",
+    "learningObjective": "Articular quem é Jesus: Verbo que é Deus, homem que propicia, Senhor confessado por toda língua.",
+    "evidence": [
+      "João 1:1",
+      "Hebreus 2:17",
+      "Filipenses 2:11"
+    ],
+    "type": "choice",
+    "question": "Qual conjunto o texto combinado afirma diretamente?",
+    "prompt": "Qual conjunto o texto combinado afirma diretamente?",
+    "cue": "Qual conjunto o texto combinado afirma diretamente?",
+    "feedbackCorrect": "Certo: deidade, humanidade sacerdotal e senhorio confessado.",
+    "feedbackWrong": {
+      "b": "O Verbo era Deus, não uma criatura posterior.",
+      "c": "Hebreus fala de propiciação, não de recusa.",
+      "d": "Toda língua confessa o Senhor; não há silêncio universal."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo. Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Verbo era Deus; fez propiciação; Jesus Cristo é o Senhor."
+      },
+      {
+        "id": "b",
+        "text": "O Verbo começou depois de Deus e nunca foi Deus."
+      },
+      {
+        "id": "c",
+        "text": "Ele recusou ser semelhante aos irmãos e não propiciou."
+      },
+      {
+        "id": "d",
+        "text": "Nenhuma língua confessa que Jesus Cristo é o Senhor."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "id": "cristologia-sem-cr-boss-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 1:1; Hebreus 2:17; Filipenses 2:11",
+    "learningObjective": "Articular quem é Jesus: Verbo que é Deus, homem que propicia, Senhor confessado por toda língua.",
+    "evidence": [
+      "João 1:1",
+      "Hebreus 2:17",
+      "Filipenses 2:11"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos nos três textos?",
+    "prompt": "Qual sequência mostra a ordem dos fatos nos três textos?",
+    "cue": "Qual sequência mostra a ordem dos fatos nos três textos?",
+    "feedbackCorrect": "Certo: Verbo que é Deus, propiciação, Senhor confessado.",
+    "feedbackWrong": {
+      "b": "A propiciação está em Hebreus, no meio deste conjunto.",
+      "c": "A confissão do Senhor fecha Filipenses 2:11."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo. Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o Verbo era Deus"
+      },
+      {
+        "id": "b",
+        "text": "fazer propiciação pelos pecados do povo"
+      },
+      {
+        "id": "c",
+        "text": "Jesus Cristo é o Senhor"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "id": "cristologia-sem-cr-boss-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 1:1; Hebreus 2:17; Filipenses 2:11",
+    "learningObjective": "Articular quem é Jesus: Verbo que é Deus, homem que propicia, Senhor confessado por toda língua.",
+    "evidence": [
+      "João 1:1",
+      "Hebreus 2:17",
+      "Filipenses 2:11"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"toda língua confesse que Jesus Cristo é o ___ para glória de Deus Pai.\"",
+    "prompt": "Complete a frase: \"toda língua confesse que Jesus Cristo é o ___ para glória de Deus Pai.\"",
+    "cue": "Complete a frase: \"toda língua confesse que Jesus Cristo é o ___ para glória de Deus Pai.\"",
+    "feedbackCorrect": "Certo: Jesus Cristo é o Senhor.",
+    "feedbackWrong": {
+      "a": "Verbo abre João 1:1, não esta lacuna.",
+      "c": "Irmãos pertence a Hebreus 2:17."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo. Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "template": "toda língua confesse que Jesus Cristo é o ___ para glória de Deus Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Verbo"
+      },
+      {
+        "id": "b",
+        "text": "Senhor"
+      },
+      {
+        "id": "c",
+        "text": "irmãos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "id": "cristologia-sem-cr-boss-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 1:1; Hebreus 2:17; Filipenses 2:11",
+    "learningObjective": "Articular quem é Jesus: Verbo que é Deus, homem que propicia, Senhor confessado por toda língua.",
+    "evidence": [
+      "João 1:1",
+      "Hebreus 2:17",
+      "Filipenses 2:11"
+    ],
+    "type": "connect",
+    "question": "O que João 1:1, Hebreus 2:17 e Filipenses 2:11 comunicam que se liga a este contexto?",
+    "prompt": "O que João 1:1, Hebreus 2:17 e Filipenses 2:11 comunicam que se liga a este contexto?",
+    "cue": "O que João 1:1, Hebreus 2:17 e Filipenses 2:11 comunicam que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Deus, homem e Senhor.",
+    "feedbackWrong": {
+      "b": "Os textos não o reduzem a um profeta apenas.",
+      "c": "Não é só um título político."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo. Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "passageA": {
+      "ref": "João 1:1; Hebreus 2:17; Filipenses 2:11",
+      "text": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo. e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Quem é Jesus? Verbo que é Deus, homem que propicia, Senhor confessado por toda língua."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus, homem e Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Apenas um profeta"
+      },
+      {
+        "id": "c",
+        "text": "Só título político"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "id": "cristologia-sem-cr-boss-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 1:1; Hebreus 2:17; Filipenses 2:11",
+    "learningObjective": "Articular quem é Jesus: Verbo que é Deus, homem que propicia, Senhor confessado por toda língua.",
+    "evidence": [
+      "João 1:1",
+      "Hebreus 2:17",
+      "Filipenses 2:11"
+    ],
+    "type": "true_false",
+    "question": "João 1:1, Hebreus 2:17 e Filipenses 2:11 descrevem pessoas diferentes, não o mesmo Jesus.",
+    "prompt": "João 1:1, Hebreus 2:17 e Filipenses 2:11 descrevem pessoas diferentes, não o mesmo Jesus.",
+    "cue": "João 1:1, Hebreus 2:17 e Filipenses 2:11 descrevem pessoas diferentes, não o mesmo Jesus.",
+    "feedbackCorrect": "Certo: é o mesmo Cristo nos três retratos.",
+    "feedbackWrong": {
+      "true": "Os três textos falam do mesmo Jesus: Verbo, sacerdote e Senhor."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo. Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "id": "cristologia-cam-cr-boss-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 1:1; Hebreus 2:17; Filipenses 2:11",
+    "learningObjective": "Articular quem é Jesus: Verbo que é Deus, homem que propicia, Senhor confessado por toda língua.",
+    "evidence": [
+      "João 1:1",
+      "Hebreus 2:17",
+      "Filipenses 2:11"
+    ],
+    "type": "tap",
+    "question": "Em Hebreus 2:17, toque a palavra que falta em \"a fim de fazer ___ pelos pecados do povo\"?",
+    "prompt": "Em Hebreus 2:17, toque a palavra que falta em \"a fim de fazer ___ pelos pecados do povo\"?",
+    "cue": "Em Hebreus 2:17, toque a palavra que falta em \"a fim de fazer ___ pelos pecados do povo\"?",
+    "feedbackCorrect": "Exato: fazer propiciação.",
+    "feedbackWrong": {
+      "a": "Princípio pertence a João 1:1.",
+      "c": "Glória fecha Filipenses 2:11."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo. Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "template": "a fim de fazer ___ pelos pecados do povo",
+    "options": [
+      {
+        "id": "a",
+        "text": "princípio"
+      },
+      {
+        "id": "b",
+        "text": "propiciação"
+      },
+      {
+        "id": "c",
+        "text": "glória"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "id": "cristologia-cam-cr-boss-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 1:1; Hebreus 2:17; Filipenses 2:11",
+    "learningObjective": "Articular quem é Jesus: Verbo que é Deus, homem que propicia, Senhor confessado por toda língua.",
+    "evidence": [
+      "João 1:1",
+      "Hebreus 2:17",
+      "Filipenses 2:11"
+    ],
+    "type": "choice",
+    "question": "Como os três textos se encadeiam sobre quem é Jesus?",
+    "prompt": "Como os três textos se encadeiam sobre quem é Jesus?",
+    "cue": "Como os três textos se encadeiam sobre quem é Jesus?",
+    "feedbackCorrect": "Certo: deidade, humanidade que propicia e senhorio confessado.",
+    "feedbackWrong": {
+      "a": "A humanidade em Hebreus não cancela a deidade em João.",
+      "c": "O senhorio não substitui a propiciação; os três se somam.",
+      "d": "Filipenses não o reduz a um herói local."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo. Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Se ele é homem, não pode ser o Verbo que era Deus."
+      },
+      {
+        "id": "b",
+        "text": "O mesmo Jesus é Deus, homem que propicia e Senhor confessado."
+      },
+      {
+        "id": "c",
+        "text": "O senhorio exaltado torna a propiciação desnecessária."
+      },
+      {
+        "id": "d",
+        "text": "Os textos o apresentam só como herói de um povo."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "id": "cristologia-cam-cr-boss-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 1:1; Hebreus 2:17; Filipenses 2:11",
+    "learningObjective": "Articular quem é Jesus: Verbo que é Deus, homem que propicia, Senhor confessado por toda língua.",
+    "evidence": [
+      "João 1:1",
+      "Hebreus 2:17",
+      "Filipenses 2:11"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de João 1:1, Hebreus 2:17 e Filipenses 2:11?",
+    "prompt": "Como se encadeiam os eventos de João 1:1, Hebreus 2:17 e Filipenses 2:11?",
+    "cue": "Como se encadeiam os eventos de João 1:1, Hebreus 2:17 e Filipenses 2:11?",
+    "feedbackCorrect": "Certo: deidade, propiciação, confissão do Senhor.",
+    "feedbackWrong": {
+      "b": "A propiciação está no meio deste encadeamento.",
+      "c": "A confissão do Senhor é o desfecho."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo. Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o Verbo estava com Deus, e o Verbo era Deus"
+      },
+      {
+        "id": "b",
+        "text": "feito semelhante a seus irmãos a fim de fazer propiciação"
+      },
+      {
+        "id": "c",
+        "text": "toda língua confesse que Jesus Cristo é o Senhor"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "id": "cristologia-cam-cr-boss-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 1:1; Hebreus 2:17; Filipenses 2:11",
+    "learningObjective": "Articular quem é Jesus: Verbo que é Deus, homem que propicia, Senhor confessado por toda língua.",
+    "evidence": [
+      "João 1:1",
+      "Hebreus 2:17",
+      "Filipenses 2:11"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"fosse ele feito semelhante a seus ___, para que viesse a ser um sumo sacerdote.\"",
+    "prompt": "Complete a frase: \"fosse ele feito semelhante a seus ___, para que viesse a ser um sumo sacerdote.\"",
+    "cue": "Complete a frase: \"fosse ele feito semelhante a seus ___, para que viesse a ser um sumo sacerdote.\"",
+    "feedbackCorrect": "Certo: semelhante a seus irmãos.",
+    "feedbackWrong": {
+      "a": "Verbo pertence a João 1:1.",
+      "c": "Senhor pertence a Filipenses 2:11."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo. Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "template": "fosse ele feito semelhante a seus ___, para que viesse a ser um sumo sacerdote.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Verbo"
+      },
+      {
+        "id": "b",
+        "text": "irmãos"
+      },
+      {
+        "id": "c",
+        "text": "Senhor"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "id": "cristologia-cam-cr-boss-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 1:1; Hebreus 2:17; Filipenses 2:11",
+    "learningObjective": "Articular quem é Jesus: Verbo que é Deus, homem que propicia, Senhor confessado por toda língua.",
+    "evidence": [
+      "João 1:1",
+      "Hebreus 2:17",
+      "Filipenses 2:11"
+    ],
+    "type": "connect",
+    "question": "O que João 1:1, Hebreus 2:17 e Filipenses 2:11 comunicam que se liga a este contexto?",
+    "prompt": "O que João 1:1, Hebreus 2:17 e Filipenses 2:11 comunicam que se liga a este contexto?",
+    "cue": "O que João 1:1, Hebreus 2:17 e Filipenses 2:11 comunicam que se liga a este contexto?",
+    "feedbackCorrect": "Certo: três retratos de um só Cristo.",
+    "feedbackWrong": {
+      "a": "Não são três cristos distintos.",
+      "c": "Não falta a humanidade que propicia."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo. Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "passageA": {
+      "ref": "João 1:1; Hebreus 2:17; Filipenses 2:11",
+      "text": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo. e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Quem é Jesus? Verbo que é Deus, homem que propicia, Senhor confessado por toda língua."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Três cristos distintos"
+      },
+      {
+        "id": "b",
+        "text": "Três retratos, um Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Deus sem humanidade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "id": "cristologia-cam-cr-boss-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 1:1; Hebreus 2:17; Filipenses 2:11",
+    "learningObjective": "Articular quem é Jesus: Verbo que é Deus, homem que propicia, Senhor confessado por toda língua.",
+    "evidence": [
+      "João 1:1",
+      "Hebreus 2:17",
+      "Filipenses 2:11"
+    ],
+    "type": "true_false",
+    "question": "A confissão de que Jesus é o Senhor se sustenta porque o Verbo é Deus e o homem fez propiciação.",
+    "prompt": "A confissão de que Jesus é o Senhor se sustenta porque o Verbo é Deus e o homem fez propiciação.",
+    "cue": "A confissão de que Jesus é o Senhor se sustenta porque o Verbo é Deus e o homem fez propiciação.",
+    "feedbackCorrect": "Certo: deidade, propiciação e senhorio se articulam.",
+    "feedbackWrong": {
+      "false": "Os três textos juntos sustentam essa leitura."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo. Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "id": "cristologia-pro-cr-boss-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 1:1; Hebreus 2:17; Filipenses 2:11",
+    "learningObjective": "Articular quem é Jesus: Verbo que é Deus, homem que propicia, Senhor confessado por toda língua.",
+    "evidence": [
+      "João 1:1",
+      "Hebreus 2:17",
+      "Filipenses 2:11"
+    ],
+    "type": "tap",
+    "question": "Em Filipenses 2:11, toque a palavra que falta em \"e toda ___ confesse que Jesus Cristo é o Senhor para glória de Deus Pai\"?",
+    "prompt": "Em Filipenses 2:11, toque a palavra que falta em \"e toda ___ confesse que Jesus Cristo é o Senhor para glória de Deus Pai\"?",
+    "cue": "Em Filipenses 2:11, toque a palavra que falta em \"e toda ___ confesse que Jesus Cristo é o Senhor para glória de Deus Pai\"?",
+    "feedbackCorrect": "Exato: toda língua confesse.",
+    "feedbackWrong": {
+      "a": "Verbo pertence a João 1:1.",
+      "c": "Povo pertence a Hebreus 2:17."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo. Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "template": "e toda ___ confesse que Jesus Cristo é o Senhor para glória de Deus Pai",
+    "options": [
+      {
+        "id": "a",
+        "text": "Verbo"
+      },
+      {
+        "id": "b",
+        "text": "língua"
+      },
+      {
+        "id": "c",
+        "text": "povo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "id": "cristologia-pro-cr-boss-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 1:1; Hebreus 2:17; Filipenses 2:11",
+    "learningObjective": "Articular quem é Jesus: Verbo que é Deus, homem que propicia, Senhor confessado por toda língua.",
+    "evidence": [
+      "João 1:1",
+      "Hebreus 2:17",
+      "Filipenses 2:11"
+    ],
+    "type": "choice",
+    "question": "Qual resposta à pergunta “Quem é Jesus?” os três textos sustentam?",
+    "prompt": "Qual resposta à pergunta “Quem é Jesus?” os três textos sustentam?",
+    "cue": "Qual resposta à pergunta “Quem é Jesus?” os três textos sustentam?",
+    "feedbackCorrect": "Certo: Verbo que é Deus, homem que propicia, Senhor confessado.",
+    "feedbackWrong": {
+      "a": "João 1:1 afirma que o Verbo era Deus, não um adotado posterior.",
+      "c": "Hebreus afirma semelhança real, não aparência.",
+      "d": "O senhorio não é um título vazio nem um deus menor."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo. Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um homem que Deus adotou e só então passou a ser Verbo."
+      },
+      {
+        "id": "b",
+        "text": "Verbo que é Deus, homem que propicia, Senhor confessado por toda língua."
+      },
+      {
+        "id": "c",
+        "text": "Um espírito que só parecia homem, sem irmãos reais."
+      },
+      {
+        "id": "d",
+        "text": "Um deus menor, sem nome sobre todo nome."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "id": "cristologia-pro-cr-boss-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 1:1; Hebreus 2:17; Filipenses 2:11",
+    "learningObjective": "Articular quem é Jesus: Verbo que é Deus, homem que propicia, Senhor confessado por toda língua.",
+    "evidence": [
+      "João 1:1",
+      "Hebreus 2:17",
+      "Filipenses 2:11"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de João 1:1, Hebreus 2:17 e Filipenses 2:11?",
+    "prompt": "Qual sequência revela o sentido de João 1:1, Hebreus 2:17 e Filipenses 2:11?",
+    "cue": "Qual sequência revela o sentido de João 1:1, Hebreus 2:17 e Filipenses 2:11?",
+    "feedbackCorrect": "Certo: deidade, propiciação e senhorio para glória do Pai.",
+    "feedbackWrong": {
+      "b": "A propiciação vem no meio deste sentido.",
+      "c": "O Senhor confessado fecha o sentido rumo ao Pai."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo. Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o Verbo era Deus"
+      },
+      {
+        "id": "b",
+        "text": "fazer propiciação pelos pecados do povo"
+      },
+      {
+        "id": "c",
+        "text": "Jesus Cristo é o Senhor para glória de Deus Pai"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "id": "cristologia-pro-cr-boss-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 1:1; Hebreus 2:17; Filipenses 2:11",
+    "learningObjective": "Articular quem é Jesus: Verbo que é Deus, homem que propicia, Senhor confessado por toda língua.",
+    "evidence": [
+      "João 1:1",
+      "Hebreus 2:17",
+      "Filipenses 2:11"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era ___.\"",
+    "prompt": "Complete a frase: \"No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era ___.\"",
+    "cue": "Complete a frase: \"No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era ___.\"",
+    "feedbackCorrect": "Certo: o Verbo era Deus.",
+    "feedbackWrong": {
+      "a": "Povo fecha Hebreus 2:17.",
+      "c": "Joelho pertence a Filipenses."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo. Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "template": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "povo"
+      },
+      {
+        "id": "b",
+        "text": "Deus"
+      },
+      {
+        "id": "c",
+        "text": "joelho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "id": "cristologia-pro-cr-boss-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 1:1; Hebreus 2:17; Filipenses 2:11",
+    "learningObjective": "Articular quem é Jesus: Verbo que é Deus, homem que propicia, Senhor confessado por toda língua.",
+    "evidence": [
+      "João 1:1",
+      "Hebreus 2:17",
+      "Filipenses 2:11"
+    ],
+    "type": "connect",
+    "question": "O que João 1:1, Hebreus 2:17 e Filipenses 2:11 comunicam que se liga a este contexto?",
+    "prompt": "O que João 1:1, Hebreus 2:17 e Filipenses 2:11 comunicam que se liga a este contexto?",
+    "cue": "O que João 1:1, Hebreus 2:17 e Filipenses 2:11 comunicam que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Verbo, sacerdote e Senhor.",
+    "feedbackWrong": {
+      "b": "Não é um Cristo pela metade.",
+      "c": "Não falta o senhorio confessado."
+    },
+    "passageText": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo. Por isso, também Deus o exaltou soberanamente e lhe deu o nome que é sobre todo o nome, para que em o nome de Jesus se dobre todo joelho dos que estão nos céus, na terra e debaixo da terra, e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai.",
+    "passageA": {
+      "ref": "João 1:1; Hebreus 2:17; Filipenses 2:11",
+      "text": "No princípio era o Verbo, e o Verbo estava com Deus, e o Verbo era Deus. Por onde importava que, em tudo, fosse ele feito semelhante a seus irmãos, para que viesse a ser um sumo sacerdote misericordioso e fiel nas coisas referentes a Deus, a fim de fazer propiciação pelos pecados do povo. e toda língua confesse que Jesus Cristo é o Senhor para glória de Deus Pai."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Quem é Jesus? Verbo que é Deus, homem que propicia, Senhor confessado por toda língua."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Verbo, sacerdote, Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Cristo pela metade"
+      },
+      {
+        "id": "c",
+        "text": "Senhor sem deidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cristologia",
+    "section": "cr-boss",
+    "id": "cristologia-pro-cr-boss-06"
+  }
+]

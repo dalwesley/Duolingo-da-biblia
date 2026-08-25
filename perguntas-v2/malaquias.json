@@ -1,0 +1,2225 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Malaquias 1:2–3",
+    "learningObjective": "Perceber que Jeová afirma ter amado Israel e responde à dúvida com a eleição de Jacó, não de Esaú.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 1:3"
+    ],
+    "type": "true_false",
+    "question": "Jeová afirma ao povo: Eu vos tenho amado.",
+    "prompt": "Jeová afirma ao povo: Eu vos tenho amado.",
+    "cue": "Jeová afirma ao povo: Eu vos tenho amado.",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-01-eu-vos-tenho-amado",
+    "id": "malaquias-sem-malaquias-malaquias-01-eu-vos-tenho-amado-01",
+    "feedbackCorrect": "Certo: é a primeira declaração de Jeová em Malaquias 1:2.",
+    "feedbackWrong": {
+      "false": "Releia o início: Jeová diz exatamente isso."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Malaquias 1:2–3",
+    "learningObjective": "Perceber que Jeová afirma ter amado Israel e responde à dúvida com a eleição de Jacó, não de Esaú.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 1:3"
+    ],
+    "type": "tap",
+    "question": "Em Malaquias 1:2–3, toque a palavra que falta em \"Contudo, amei a ___, e aborreci a Esaú\"?",
+    "prompt": "Em Malaquias 1:2–3, toque a palavra que falta em \"Contudo, amei a ___, e aborreci a Esaú\"?",
+    "cue": "Em Malaquias 1:2–3, toque a palavra que falta em \"Contudo, amei a ___, e aborreci a Esaú\"?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-01-eu-vos-tenho-amado",
+    "id": "malaquias-sem-malaquias-malaquias-01-eu-vos-tenho-amado-02",
+    "feedbackCorrect": "Exato: Jeová diz que amou a Jacó.",
+    "feedbackWrong": {
+      "a": "Esaú é quem Jeová aborreceu, não quem amou.",
+      "c": "Jeová é quem fala, não o amado nesta frase."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Esaú"
+      },
+      {
+        "id": "b",
+        "text": "Jacó"
+      },
+      {
+        "id": "c",
+        "text": "Jeová"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto.",
+    "template": "Contudo, amei a ___, e aborreci a Esaú"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Malaquias 1:2–3",
+    "learningObjective": "Perceber que Jeová afirma ter amado Israel e responde à dúvida com a eleição de Jacó, não de Esaú.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 1:3"
+    ],
+    "type": "choice",
+    "question": "Qual fato o texto afirma sobre o amor de Jeová em Malaquias 1:2–3?",
+    "prompt": "Qual fato o texto afirma sobre o amor de Jeová em Malaquias 1:2–3?",
+    "cue": "Qual fato o texto afirma sobre o amor de Jeová em Malaquias 1:2–3?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-01-eu-vos-tenho-amado",
+    "id": "malaquias-sem-malaquias-malaquias-01-eu-vos-tenho-amado-03",
+    "feedbackCorrect": "Certo: Jeová declara ter amado a Jacó e aborrecido a Esaú.",
+    "feedbackWrong": {
+      "a": "O texto não iguala Jacó e Esaú; distingue o amor.",
+      "b": "Jeová responde à pergunta; não fica em silêncio.",
+      "d": "A herança de Esaú vai aos chacais, não a Jacó."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová declara ter amado Jacó e Esaú do mesmo modo"
+      },
+      {
+        "id": "b",
+        "text": "Jeová não responde à pergunta do povo"
+      },
+      {
+        "id": "c",
+        "text": "Jeová amou a Jacó e aborreceu a Esaú"
+      },
+      {
+        "id": "d",
+        "text": "Jeová deu a herança de Esaú a Jacó como prova"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Malaquias 1:2–3",
+    "learningObjective": "Perceber que Jeová afirma ter amado Israel e responde à dúvida com a eleição de Jacó, não de Esaú.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 1:3"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Malaquias 1:2–3?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Malaquias 1:2–3?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Malaquias 1:2–3?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-01-eu-vos-tenho-amado",
+    "id": "malaquias-sem-malaquias-malaquias-01-eu-vos-tenho-amado-04",
+    "feedbackCorrect": "Certo: primeiro o amor declarado, depois a pergunta, então a eleição.",
+    "feedbackWrong": {
+      "b": "A pergunta do povo vem depois da declaração de amor.",
+      "c": "Amei a Jacó é a resposta, não o início."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Eu vos tenho amado, diz Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Contudo, vós dizeis: Em que nos tens amado"
+      },
+      {
+        "id": "c",
+        "text": "Contudo, amei a Jacó, e aborreci a Esaú"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Malaquias 1:2–3",
+    "learningObjective": "Perceber que Jeová afirma ter amado Israel e responde à dúvida com a eleição de Jacó, não de Esaú.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 1:3"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"e dei a sua herança aos ___ do deserto\"",
+    "prompt": "Complete a frase: \"e dei a sua herança aos ___ do deserto\"",
+    "cue": "Complete a frase: \"e dei a sua herança aos ___ do deserto\"",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-01-eu-vos-tenho-amado",
+    "id": "malaquias-sem-malaquias-malaquias-01-eu-vos-tenho-amado-05",
+    "feedbackCorrect": "Certo: a herança de Esaú foi dada aos chacais do deserto.",
+    "feedbackWrong": {
+      "b": "Montes recebem desolação, não esta lacuna.",
+      "c": "Jacó é o amado, não quem recebe a herança aqui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "chacais"
+      },
+      {
+        "id": "b",
+        "text": "montes"
+      },
+      {
+        "id": "c",
+        "text": "Jacó"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto.",
+    "template": "e dei a sua herança aos ___ do deserto"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Malaquias 1:2–3",
+    "learningObjective": "Perceber que Jeová afirma ter amado Israel e responde à dúvida com a eleição de Jacó, não de Esaú.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 1:3"
+    ],
+    "type": "connect",
+    "question": "O que Malaquias 1:2–3 comunica que se liga a este contexto?",
+    "prompt": "O que Malaquias 1:2–3 comunica que se liga a este contexto?",
+    "cue": "O que Malaquias 1:2–3 comunica que se liga a este contexto?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-01-eu-vos-tenho-amado",
+    "id": "malaquias-sem-malaquias-malaquias-01-eu-vos-tenho-amado-06",
+    "feedbackCorrect": "Certo: o trecho liga o amor de Jeová à eleição de Jacó.",
+    "feedbackWrong": {
+      "b": "O povo pergunta, mas Jeová não trata o amor como dívida.",
+      "c": "O texto não reduz o amor a um sentimento negociável."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Eleição gratuita de Jacó"
+      },
+      {
+        "id": "b",
+        "text": "Amor que Israel pode cobrar"
+      },
+      {
+        "id": "c",
+        "text": "Afeto sem escolha histórica"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto.",
+    "passageA": {
+      "ref": "Malaquias 1:2–3",
+      "text": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O amor de Jeová é eleição gratuita, não algo que Israel pode questionar como se faltasse prova."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Malaquias 1:2–3",
+    "learningObjective": "Perceber que Jeová afirma ter amado Israel e responde à dúvida com a eleição de Jacó, não de Esaú.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 1:3"
+    ],
+    "type": "true_false",
+    "question": "A pergunta de Israel prova que o amor de Jeová ainda carecia de evidência.",
+    "prompt": "A pergunta de Israel prova que o amor de Jeová ainda carecia de evidência.",
+    "cue": "A pergunta de Israel prova que o amor de Jeová ainda carecia de evidência.",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-01-eu-vos-tenho-amado",
+    "id": "malaquias-cam-malaquias-malaquias-01-eu-vos-tenho-amado-01",
+    "feedbackCorrect": "Certo: Jeová responde com eleição, não admite falta de prova.",
+    "feedbackWrong": {
+      "true": "A dúvida do povo não anula o amor já declarado e mostrado."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Malaquias 1:2–3",
+    "learningObjective": "Perceber que Jeová afirma ter amado Israel e responde à dúvida com a eleição de Jacó, não de Esaú.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 1:3"
+    ],
+    "type": "tap",
+    "question": "Em Malaquias 1:2–3, toque a palavra que falta em \"Acaso não era Esaú ___ de Jacó\"?",
+    "prompt": "Em Malaquias 1:2–3, toque a palavra que falta em \"Acaso não era Esaú ___ de Jacó\"?",
+    "cue": "Em Malaquias 1:2–3, toque a palavra que falta em \"Acaso não era Esaú ___ de Jacó\"?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-01-eu-vos-tenho-amado",
+    "id": "malaquias-cam-malaquias-malaquias-01-eu-vos-tenho-amado-02",
+    "feedbackCorrect": "Exato: Esaú era irmão de Jacó, segundo o texto.",
+    "feedbackWrong": {
+      "b": "Herança vem depois, ligada a Esaú desolado.",
+      "c": "Deserto fecha o juízo, não o parentesco."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "irmão"
+      },
+      {
+        "id": "b",
+        "text": "herança"
+      },
+      {
+        "id": "c",
+        "text": "deserto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto.",
+    "template": "Acaso não era Esaú ___ de Jacó"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Malaquias 1:2–3",
+    "learningObjective": "Perceber que Jeová afirma ter amado Israel e responde à dúvida com a eleição de Jacó, não de Esaú.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 1:3"
+    ],
+    "type": "choice",
+    "question": "Qual ideia melhor liga Malaquias 1:2–3 à dúvida de Israel?",
+    "prompt": "Qual ideia melhor liga Malaquias 1:2–3 à dúvida de Israel?",
+    "cue": "Qual ideia melhor liga Malaquias 1:2–3 à dúvida de Israel?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-01-eu-vos-tenho-amado",
+    "id": "malaquias-cam-malaquias-malaquias-01-eu-vos-tenho-amado-03",
+    "feedbackCorrect": "Certo: Jeová responde com eleição, não com um sentimento cobrado.",
+    "feedbackWrong": {
+      "a": "O texto não concede a Israel o direito de cobrar prova.",
+      "c": "Jacó e Esaú não recebem o mesmo tratamento.",
+      "d": "A desolação de Esaú é ato de Jeová, não acaso."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Israel tem razão em exigir de Jeová uma prova sentimental"
+      },
+      {
+        "id": "b",
+        "text": "O amor de Jeová se mostra na eleição de Jacó, não na cobrança do povo"
+      },
+      {
+        "id": "c",
+        "text": "Jacó e Esaú ilustram o mesmo favor de Jeová sobre irmãos"
+      },
+      {
+        "id": "d",
+        "text": "A desolação dos montes de Esaú é só um detalhe geográfico"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Malaquias 1:2–3",
+    "learningObjective": "Perceber que Jeová afirma ter amado Israel e responde à dúvida com a eleição de Jacó, não de Esaú.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 1:3"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Malaquias 1:2–3?",
+    "prompt": "Como se encadeiam os eventos de Malaquias 1:2–3?",
+    "cue": "Como se encadeiam os eventos de Malaquias 1:2–3?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-01-eu-vos-tenho-amado",
+    "id": "malaquias-cam-malaquias-malaquias-01-eu-vos-tenho-amado-04",
+    "feedbackCorrect": "Certo: declaração, questionamento e resposta pela eleição.",
+    "feedbackWrong": {
+      "b": "O povo pergunta depois de ouvir o amor declarado.",
+      "c": "A desolação de Esaú fecha a resposta, não a abre."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová declara ter amado o povo"
+      },
+      {
+        "id": "b",
+        "text": "O povo pergunta em que foi amado"
+      },
+      {
+        "id": "c",
+        "text": "Jeová ama Jacó, aborrece Esaú e desola seus montes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Malaquias 1:2–3",
+    "learningObjective": "Perceber que Jeová afirma ter amado Israel e responde à dúvida com a eleição de Jacó, não de Esaú.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 1:3"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"e fiz dos seus ___ uma desolação\"",
+    "prompt": "Complete a frase: \"e fiz dos seus ___ uma desolação\"",
+    "cue": "Complete a frase: \"e fiz dos seus ___ uma desolação\"",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-01-eu-vos-tenho-amado",
+    "id": "malaquias-cam-malaquias-malaquias-01-eu-vos-tenho-amado-05",
+    "feedbackCorrect": "Certo: Jeová fez dos montes de Esaú uma desolação.",
+    "feedbackWrong": {
+      "a": "Chacais recebem a herança, não esta lacuna.",
+      "c": "Irmão descreve o parentesco, não o juízo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "chacais"
+      },
+      {
+        "id": "b",
+        "text": "montes"
+      },
+      {
+        "id": "c",
+        "text": "irmão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto.",
+    "template": "e fiz dos seus ___ uma desolação"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Malaquias 1:2–3",
+    "learningObjective": "Perceber que Jeová afirma ter amado Israel e responde à dúvida com a eleição de Jacó, não de Esaú.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 1:3"
+    ],
+    "type": "connect",
+    "question": "O que Malaquias 1:2–3 comunica que se liga a este contexto?",
+    "prompt": "O que Malaquias 1:2–3 comunica que se liga a este contexto?",
+    "cue": "O que Malaquias 1:2–3 comunica que se liga a este contexto?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-01-eu-vos-tenho-amado",
+    "id": "malaquias-cam-malaquias-malaquias-01-eu-vos-tenho-amado-06",
+    "feedbackCorrect": "Certo: a dúvida do povo não transforma o amor em dívida.",
+    "feedbackWrong": {
+      "a": "Jeová não admite que o amor falte prova.",
+      "c": "O texto não reduz a eleição a um capricho."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Falta de prova do amor"
+      },
+      {
+        "id": "b",
+        "text": "Amor que não se cobra"
+      },
+      {
+        "id": "c",
+        "text": "Sorte entre dois irmãos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto.",
+    "passageA": {
+      "ref": "Malaquias 1:2–3",
+      "text": "Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O amor de Jeová é eleição gratuita, não algo que Israel pode questionar como se faltasse prova."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Malaquias 1:2–3",
+    "learningObjective": "Perceber que Jeová afirma ter amado Israel e responde à dúvida com a eleição de Jacó, não de Esaú.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 1:3"
+    ],
+    "type": "true_false",
+    "question": "O amor de Jeová a Jacó é eleição gratuita, não algo que Israel possa questionar como se faltasse prova.",
+    "prompt": "O amor de Jeová a Jacó é eleição gratuita, não algo que Israel possa questionar como se faltasse prova.",
+    "cue": "O amor de Jeová a Jacó é eleição gratuita, não algo que Israel possa questionar como se faltasse prova.",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-01-eu-vos-tenho-amado",
+    "id": "malaquias-pro-malaquias-malaquias-01-eu-vos-tenho-amado-01",
+    "feedbackCorrect": "Certo: o texto sustenta o amor como eleição, não como dívida.",
+    "feedbackWrong": {
+      "false": "A resposta a 'em que nos tens amado?' é a eleição de Jacó."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Malaquias 1:2–3",
+    "learningObjective": "Perceber que Jeová afirma ter amado Israel e responde à dúvida com a eleição de Jacó, não de Esaú.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 1:3"
+    ],
+    "type": "tap",
+    "question": "Em Malaquias 1:2–3, toque a palavra que falta em \"e dei a sua ___ aos chacais do deserto\"?",
+    "prompt": "Em Malaquias 1:2–3, toque a palavra que falta em \"e dei a sua ___ aos chacais do deserto\"?",
+    "cue": "Em Malaquias 1:2–3, toque a palavra que falta em \"e dei a sua ___ aos chacais do deserto\"?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-01-eu-vos-tenho-amado",
+    "id": "malaquias-pro-malaquias-malaquias-01-eu-vos-tenho-amado-02",
+    "feedbackCorrect": "Exato: a herança de Esaú é dada aos chacais.",
+    "feedbackWrong": {
+      "a": "Desolação descreve os montes, não esta lacuna.",
+      "c": "Amado abre o oráculo, não fecha o juízo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "desolação"
+      },
+      {
+        "id": "b",
+        "text": "herança"
+      },
+      {
+        "id": "c",
+        "text": "amado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto.",
+    "template": "e dei a sua ___ aos chacais do deserto"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Malaquias 1:2–3",
+    "learningObjective": "Perceber que Jeová afirma ter amado Israel e responde à dúvida com a eleição de Jacó, não de Esaú.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 1:3"
+    ],
+    "type": "choice",
+    "question": "Qual leitura melhor capta o sentido teológico de Malaquias 1:2–3?",
+    "prompt": "Qual leitura melhor capta o sentido teológico de Malaquias 1:2–3?",
+    "cue": "Qual leitura melhor capta o sentido teológico de Malaquias 1:2–3?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-01-eu-vos-tenho-amado",
+    "id": "malaquias-pro-malaquias-malaquias-01-eu-vos-tenho-amado-03",
+    "feedbackCorrect": "Certo: Jeová responde com eleição histórica, não com sentimento cobrado.",
+    "feedbackWrong": {
+      "a": "O texto não valida a cobrança sentimental de Israel.",
+      "b": "Aborrecer Esaú explica o amor a Jacó, não o cancela.",
+      "c": "A desolação é ato de Jeová, não acaso da terra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O povo tem razão em tratar o amor de Jeová como sentimento em falta"
+      },
+      {
+        "id": "b",
+        "text": "Aborrecer Esaú prova que Jeová nunca amou de verdade a Israel"
+      },
+      {
+        "id": "c",
+        "text": "A desolação dos montes de Esaú é só um acidente da terra"
+      },
+      {
+        "id": "d",
+        "text": "Jeová responde à dúvida com eleição histórica, não com afeto cobrado"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Malaquias 1:2–3",
+    "learningObjective": "Perceber que Jeová afirma ter amado Israel e responde à dúvida com a eleição de Jacó, não de Esaú.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 1:3"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Malaquias 1:2–3?",
+    "prompt": "Qual sequência revela o sentido de Malaquias 1:2–3?",
+    "cue": "Qual sequência revela o sentido de Malaquias 1:2–3?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-01-eu-vos-tenho-amado",
+    "id": "malaquias-pro-malaquias-malaquias-01-eu-vos-tenho-amado-04",
+    "feedbackCorrect": "Certo: o amor declarado enfrenta a dúvida e se revela na eleição.",
+    "feedbackWrong": {
+      "b": "A dúvida do povo não vem antes da declaração de amor.",
+      "c": "A eleição é a resposta, não o prelúdio da dúvida."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová afirma ter amado o povo"
+      },
+      {
+        "id": "b",
+        "text": "Israel exige prova do amor"
+      },
+      {
+        "id": "c",
+        "text": "A eleição de Jacó e o juízo de Esaú respondem à dúvida"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Malaquias 1:2–3",
+    "learningObjective": "Perceber que Jeová afirma ter amado Israel e responde à dúvida com a eleição de Jacó, não de Esaú.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 1:3"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Contudo, amei a Jacó, e aborreci a ___\"",
+    "prompt": "Complete a frase: \"Contudo, amei a Jacó, e aborreci a ___\"",
+    "cue": "Complete a frase: \"Contudo, amei a Jacó, e aborreci a ___\"",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-01-eu-vos-tenho-amado",
+    "id": "malaquias-pro-malaquias-malaquias-01-eu-vos-tenho-amado-05",
+    "feedbackCorrect": "Certo: Jeová aborreceu a Esaú, irmão de Jacó.",
+    "feedbackWrong": {
+      "b": "Jacó é o amado, não o aborrecido.",
+      "c": "Jeová é quem fala, não o objeto do aborrecimento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Esaú"
+      },
+      {
+        "id": "b",
+        "text": "Jacó"
+      },
+      {
+        "id": "c",
+        "text": "Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto.",
+    "template": "Contudo, amei a Jacó, e aborreci a ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Malaquias 1:2–3",
+    "learningObjective": "Perceber que Jeová afirma ter amado Israel e responde à dúvida com a eleição de Jacó, não de Esaú.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 1:3"
+    ],
+    "type": "connect",
+    "question": "O que Malaquias 1:2–3 comunica que se liga a este contexto?",
+    "prompt": "O que Malaquias 1:2–3 comunica que se liga a este contexto?",
+    "cue": "O que Malaquias 1:2–3 comunica que se liga a este contexto?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-01-eu-vos-tenho-amado",
+    "id": "malaquias-pro-malaquias-malaquias-01-eu-vos-tenho-amado-06",
+    "feedbackCorrect": "Certo: o amor a Jacó é graça eleita, não abandono disfarçado.",
+    "feedbackWrong": {
+      "a": "O texto não trata o amor como contrato negociável.",
+      "b": "Aborrecer Esaú não anula o amor declarado a Israel."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Amor negociável com Israel"
+      },
+      {
+        "id": "b",
+        "text": "Abandono disfarçado de eleição"
+      },
+      {
+        "id": "c",
+        "text": "Graça eleita, não abandono"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto.",
+    "passageA": {
+      "ref": "Malaquias 1:2–3",
+      "text": "Eu vos tenho amado, diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O amor de Jeová é eleição gratuita, não algo que Israel pode questionar como se faltasse prova."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Malaquias 3:1",
+    "learningObjective": "Reconhecer que Jeová envia o mensageiro que prepara o caminho e que o Senhor vem de repente ao templo.",
+    "evidence": [
+      "Malaquias 3:1"
+    ],
+    "type": "true_false",
+    "question": "Jeová envia o seu mensageiro, e ele há de preparar o caminho diante dele.",
+    "prompt": "Jeová envia o seu mensageiro, e ele há de preparar o caminho diante dele.",
+    "cue": "Jeová envia o seu mensageiro, e ele há de preparar o caminho diante dele.",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-02-o-mensageiro-da-alia",
+    "id": "malaquias-sem-malaquias-malaquias-02-o-mensageiro-da-alia-01",
+    "feedbackCorrect": "Certo: é exatamente o anúncio de Malaquias 3:1.",
+    "feedbackWrong": {
+      "false": "Releia: Eis que envio eu o meu mensageiro."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Malaquias 3:1",
+    "learningObjective": "Reconhecer que Jeová envia o mensageiro que prepara o caminho e que o Senhor vem de repente ao templo.",
+    "evidence": [
+      "Malaquias 3:1"
+    ],
+    "type": "tap",
+    "question": "Em Malaquias 3:1, toque a palavra que falta em \"Eis que envio eu o meu ___, e ele há de preparar o caminho diante de mim\"?",
+    "prompt": "Em Malaquias 3:1, toque a palavra que falta em \"Eis que envio eu o meu ___, e ele há de preparar o caminho diante de mim\"?",
+    "cue": "Em Malaquias 3:1, toque a palavra que falta em \"Eis que envio eu o meu ___, e ele há de preparar o caminho diante de mim\"?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-02-o-mensageiro-da-alia",
+    "id": "malaquias-sem-malaquias-malaquias-02-o-mensageiro-da-alia-02",
+    "feedbackCorrect": "Exato: Jeová envia o seu mensageiro.",
+    "feedbackWrong": {
+      "b": "Caminho é o que o mensageiro prepara, não quem é enviado.",
+      "c": "Templo é o destino da vinda, não o enviado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "mensageiro"
+      },
+      {
+        "id": "b",
+        "text": "caminho"
+      },
+      {
+        "id": "c",
+        "text": "templo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos.",
+    "template": "Eis que envio eu o meu ___, e ele há de preparar o caminho diante de mim"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Malaquias 3:1",
+    "learningObjective": "Reconhecer que Jeová envia o mensageiro que prepara o caminho e que o Senhor vem de repente ao templo.",
+    "evidence": [
+      "Malaquias 3:1"
+    ],
+    "type": "choice",
+    "question": "Qual fato o texto afirma sobre a vinda em Malaquias 3:1?",
+    "prompt": "Qual fato o texto afirma sobre a vinda em Malaquias 3:1?",
+    "cue": "Qual fato o texto afirma sobre a vinda em Malaquias 3:1?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-02-o-mensageiro-da-alia",
+    "id": "malaquias-sem-malaquias-malaquias-02-o-mensageiro-da-alia-03",
+    "feedbackCorrect": "Certo: o Senhor virá de repente ao seu templo.",
+    "feedbackWrong": {
+      "a": "O texto fala de vinda ao templo, não de atraso indefinido.",
+      "c": "Quem vem ao templo é o Senhor, não só o povo.",
+      "d": "O Anjo da Aliança é anunciado como quem vem, não como ausente."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor adia para sempre a visita ao templo"
+      },
+      {
+        "id": "b",
+        "text": "De repente, virá ao seu templo o Senhor"
+      },
+      {
+        "id": "c",
+        "text": "O povo é quem virá ao templo no lugar do Senhor"
+      },
+      {
+        "id": "d",
+        "text": "O Anjo da Aliança permanece distante e não vem"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Malaquias 3:1",
+    "learningObjective": "Reconhecer que Jeová envia o mensageiro que prepara o caminho e que o Senhor vem de repente ao templo.",
+    "evidence": [
+      "Malaquias 3:1"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Malaquias 3:1?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Malaquias 3:1?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Malaquias 3:1?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-02-o-mensageiro-da-alia",
+    "id": "malaquias-sem-malaquias-malaquias-02-o-mensageiro-da-alia-04",
+    "feedbackCorrect": "Certo: envio, preparação do caminho e vinda ao templo.",
+    "feedbackWrong": {
+      "b": "O envio do mensageiro abre o anúncio, não o fecha.",
+      "c": "A vinda ao templo vem depois da preparação."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Eis que envio eu o meu mensageiro"
+      },
+      {
+        "id": "b",
+        "text": "ele há de preparar o caminho diante de mim"
+      },
+      {
+        "id": "c",
+        "text": "de repente, virá ao seu templo o Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Malaquias 3:1",
+    "learningObjective": "Reconhecer que Jeová envia o mensageiro que prepara o caminho e que o Senhor vem de repente ao templo.",
+    "evidence": [
+      "Malaquias 3:1"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"e ele há de preparar o ___ diante de mim\"",
+    "prompt": "Complete a frase: \"e ele há de preparar o ___ diante de mim\"",
+    "cue": "Complete a frase: \"e ele há de preparar o ___ diante de mim\"",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-02-o-mensageiro-da-alia",
+    "id": "malaquias-sem-malaquias-malaquias-02-o-mensageiro-da-alia-05",
+    "feedbackCorrect": "Certo: o mensageiro prepara o caminho diante de Jeová.",
+    "feedbackWrong": {
+      "a": "Templo é o destino da vinda, não esta lacuna.",
+      "c": "Senhor é quem vem, não o que se prepara aqui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "templo"
+      },
+      {
+        "id": "b",
+        "text": "caminho"
+      },
+      {
+        "id": "c",
+        "text": "Senhor"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos.",
+    "template": "e ele há de preparar o ___ diante de mim"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Malaquias 3:1",
+    "learningObjective": "Reconhecer que Jeová envia o mensageiro que prepara o caminho e que o Senhor vem de repente ao templo.",
+    "evidence": [
+      "Malaquias 3:1"
+    ],
+    "type": "connect",
+    "question": "O que Malaquias 3:1 comunica que se liga a este contexto?",
+    "prompt": "O que Malaquias 3:1 comunica que se liga a este contexto?",
+    "cue": "O que Malaquias 3:1 comunica que se liga a este contexto?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-02-o-mensageiro-da-alia",
+    "id": "malaquias-sem-malaquias-malaquias-02-o-mensageiro-da-alia-06",
+    "feedbackCorrect": "Certo: Jeová envia quem prepara e anuncia a vinda do Senhor.",
+    "feedbackWrong": {
+      "b": "O texto não descreve abandono do templo.",
+      "c": "Há envio e vinda, não silêncio definitivo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Envio e vinda ao templo"
+      },
+      {
+        "id": "b",
+        "text": "Templo deixado para sempre"
+      },
+      {
+        "id": "c",
+        "text": "Silêncio sem mensageiro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos.",
+    "passageA": {
+      "ref": "Malaquias 3:1",
+      "text": "Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jeová envia o mensageiro que prepara o caminho; o Senhor vem ao templo de repente."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Malaquias 3:1",
+    "learningObjective": "Reconhecer que Jeová envia o mensageiro que prepara o caminho e que o Senhor vem de repente ao templo.",
+    "evidence": [
+      "Malaquias 3:1"
+    ],
+    "type": "true_false",
+    "question": "O texto trata a vinda do Senhor ao templo como algo vago, sem preparação prévia.",
+    "prompt": "O texto trata a vinda do Senhor ao templo como algo vago, sem preparação prévia.",
+    "cue": "O texto trata a vinda do Senhor ao templo como algo vago, sem preparação prévia.",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-02-o-mensageiro-da-alia",
+    "id": "malaquias-cam-malaquias-malaquias-02-o-mensageiro-da-alia-01",
+    "feedbackCorrect": "Certo: o mensageiro prepara o caminho antes da vinda súbita.",
+    "feedbackWrong": {
+      "true": "Há mensageiro que prepara, depois a vinda de repente."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Malaquias 3:1",
+    "learningObjective": "Reconhecer que Jeová envia o mensageiro que prepara o caminho e que o Senhor vem de repente ao templo.",
+    "evidence": [
+      "Malaquias 3:1"
+    ],
+    "type": "tap",
+    "question": "Em Malaquias 3:1, toque a palavra que falta em \"de repente, virá ao seu ___ o Senhor, a quem vós buscais\"?",
+    "prompt": "Em Malaquias 3:1, toque a palavra que falta em \"de repente, virá ao seu ___ o Senhor, a quem vós buscais\"?",
+    "cue": "Em Malaquias 3:1, toque a palavra que falta em \"de repente, virá ao seu ___ o Senhor, a quem vós buscais\"?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-02-o-mensageiro-da-alia",
+    "id": "malaquias-cam-malaquias-malaquias-02-o-mensageiro-da-alia-02",
+    "feedbackCorrect": "Exato: o Senhor virá ao seu templo.",
+    "feedbackWrong": {
+      "a": "Caminho é o que se prepara, não o destino da vinda.",
+      "c": "Mensageiro é o enviado, não o lugar da vinda."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "caminho"
+      },
+      {
+        "id": "b",
+        "text": "templo"
+      },
+      {
+        "id": "c",
+        "text": "mensageiro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos.",
+    "template": "de repente, virá ao seu ___ o Senhor, a quem vós buscais"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Malaquias 3:1",
+    "learningObjective": "Reconhecer que Jeová envia o mensageiro que prepara o caminho e que o Senhor vem de repente ao templo.",
+    "evidence": [
+      "Malaquias 3:1"
+    ],
+    "type": "choice",
+    "question": "Qual ideia melhor conecta Malaquias 3:1 ao anúncio da visita?",
+    "prompt": "Qual ideia melhor conecta Malaquias 3:1 ao anúncio da visita?",
+    "cue": "Qual ideia melhor conecta Malaquias 3:1 ao anúncio da visita?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-02-o-mensageiro-da-alia",
+    "id": "malaquias-cam-malaquias-malaquias-02-o-mensageiro-da-alia-03",
+    "feedbackCorrect": "Certo: a preparação do caminho não cancela a vinda súbita.",
+    "feedbackWrong": {
+      "a": "O mensageiro prepara; não substitui o Senhor.",
+      "b": "Buscar o Senhor não impede que ele venha de repente.",
+      "c": "O Anjo da Aliança é anunciado como quem vem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O mensageiro substitui o Senhor e torna a vinda desnecessária"
+      },
+      {
+        "id": "b",
+        "text": "Buscar o Senhor garante que a visita será lenta e previsível"
+      },
+      {
+        "id": "c",
+        "text": "O Anjo da Aliança é só uma figura de linguagem, sem vinda real"
+      },
+      {
+        "id": "d",
+        "text": "Jeová prepara o caminho e mesmo assim o Senhor vem de repente"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "passageText": "Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Malaquias 3:1",
+    "learningObjective": "Reconhecer que Jeová envia o mensageiro que prepara o caminho e que o Senhor vem de repente ao templo.",
+    "evidence": [
+      "Malaquias 3:1"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Malaquias 3:1?",
+    "prompt": "Como se encadeiam os eventos de Malaquias 3:1?",
+    "cue": "Como se encadeiam os eventos de Malaquias 3:1?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-02-o-mensageiro-da-alia",
+    "id": "malaquias-cam-malaquias-malaquias-02-o-mensageiro-da-alia-04",
+    "feedbackCorrect": "Certo: envio, preparação e então a vinda súbita ao templo.",
+    "feedbackWrong": {
+      "b": "A preparação vem depois do envio, não antes.",
+      "c": "A vinda ao templo fecha o anúncio."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová envia o seu mensageiro"
+      },
+      {
+        "id": "b",
+        "text": "O mensageiro prepara o caminho diante dele"
+      },
+      {
+        "id": "c",
+        "text": "O Senhor e o Anjo da Aliança vêm ao templo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Malaquias 3:1",
+    "learningObjective": "Reconhecer que Jeová envia o mensageiro que prepara o caminho e que o Senhor vem de repente ao templo.",
+    "evidence": [
+      "Malaquias 3:1"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"de repente, virá ao seu templo o ___, a quem vós buscais\"",
+    "prompt": "Complete a frase: \"de repente, virá ao seu templo o ___, a quem vós buscais\"",
+    "cue": "Complete a frase: \"de repente, virá ao seu templo o ___, a quem vós buscais\"",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-02-o-mensageiro-da-alia",
+    "id": "malaquias-cam-malaquias-malaquias-02-o-mensageiro-da-alia-05",
+    "feedbackCorrect": "Certo: é o Senhor quem virá ao templo.",
+    "feedbackWrong": {
+      "a": "Mensageiro prepara o caminho, não ocupa esta lacuna.",
+      "c": "Caminho é o que se prepara, não quem vem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "mensageiro"
+      },
+      {
+        "id": "b",
+        "text": "Senhor"
+      },
+      {
+        "id": "c",
+        "text": "caminho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos.",
+    "template": "de repente, virá ao seu templo o ___, a quem vós buscais"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Malaquias 3:1",
+    "learningObjective": "Reconhecer que Jeová envia o mensageiro que prepara o caminho e que o Senhor vem de repente ao templo.",
+    "evidence": [
+      "Malaquias 3:1"
+    ],
+    "type": "connect",
+    "question": "O que Malaquias 3:1 comunica que se liga a este contexto?",
+    "prompt": "O que Malaquias 3:1 comunica que se liga a este contexto?",
+    "cue": "O que Malaquias 3:1 comunica que se liga a este contexto?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-02-o-mensageiro-da-alia",
+    "id": "malaquias-cam-malaquias-malaquias-02-o-mensageiro-da-alia-06",
+    "feedbackCorrect": "Certo: preparação e vinda súbita caminham juntas.",
+    "feedbackWrong": {
+      "a": "Há preparação, mas a vinda ainda é de repente.",
+      "c": "O texto não descreve atraso eterno."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Preparação que cancela a vinda"
+      },
+      {
+        "id": "b",
+        "text": "Preparação e vinda súbita"
+      },
+      {
+        "id": "c",
+        "text": "Atraso sem qualquer visita"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos.",
+    "passageA": {
+      "ref": "Malaquias 3:1",
+      "text": "Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jeová envia o mensageiro que prepara o caminho; o Senhor vem ao templo de repente."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Malaquias 3:1",
+    "learningObjective": "Reconhecer que Jeová envia o mensageiro que prepara o caminho e que o Senhor vem de repente ao templo.",
+    "evidence": [
+      "Malaquias 3:1"
+    ],
+    "type": "true_false",
+    "question": "Jeová envia o mensageiro que prepara o caminho, e o Senhor vem ao templo de repente.",
+    "prompt": "Jeová envia o mensageiro que prepara o caminho, e o Senhor vem ao templo de repente.",
+    "cue": "Jeová envia o mensageiro que prepara o caminho, e o Senhor vem ao templo de repente.",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-02-o-mensageiro-da-alia",
+    "id": "malaquias-pro-malaquias-malaquias-02-o-mensageiro-da-alia-01",
+    "feedbackCorrect": "Certo: envio, preparação e vinda súbita formam o anúncio.",
+    "feedbackWrong": {
+      "false": "Malaquias 3:1 une o mensageiro e a vinda do Senhor."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Malaquias 3:1",
+    "learningObjective": "Reconhecer que Jeová envia o mensageiro que prepara o caminho e que o Senhor vem de repente ao templo.",
+    "evidence": [
+      "Malaquias 3:1"
+    ],
+    "type": "tap",
+    "question": "Em Malaquias 3:1, toque a palavra que falta em \"de ___, virá ao seu templo o Senhor\"?",
+    "prompt": "Em Malaquias 3:1, toque a palavra que falta em \"de ___, virá ao seu templo o Senhor\"?",
+    "cue": "Em Malaquias 3:1, toque a palavra que falta em \"de ___, virá ao seu templo o Senhor\"?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-02-o-mensageiro-da-alia",
+    "id": "malaquias-pro-malaquias-malaquias-02-o-mensageiro-da-alia-02",
+    "feedbackCorrect": "Exato: a vinda é de repente.",
+    "feedbackWrong": {
+      "b": "Eis abre o anúncio, não descreve o modo da vinda.",
+      "c": "Vem fecha a frase do Anjo, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "repente"
+      },
+      {
+        "id": "b",
+        "text": "Eis"
+      },
+      {
+        "id": "c",
+        "text": "vem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos.",
+    "template": "de ___, virá ao seu templo o Senhor"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Malaquias 3:1",
+    "learningObjective": "Reconhecer que Jeová envia o mensageiro que prepara o caminho e que o Senhor vem de repente ao templo.",
+    "evidence": [
+      "Malaquias 3:1"
+    ],
+    "type": "choice",
+    "question": "Qual leitura melhor capta o sentido de Malaquias 3:1?",
+    "prompt": "Qual leitura melhor capta o sentido de Malaquias 3:1?",
+    "cue": "Qual leitura melhor capta o sentido de Malaquias 3:1?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-02-o-mensageiro-da-alia",
+    "id": "malaquias-pro-malaquias-malaquias-02-o-mensageiro-da-alia-03",
+    "feedbackCorrect": "Certo: buscar o Senhor não torna a visita previsível nem distante.",
+    "feedbackWrong": {
+      "b": "O agrado no Anjo não substitui a vinda real.",
+      "c": "O mensageiro prepara; não é o fim da visita.",
+      "d": "Jeová dos Exércitos afirma a vinda, não a nega."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O povo busca o Senhor, mas ele mesmo vem de repente ao templo"
+      },
+      {
+        "id": "b",
+        "text": "Agradar-se no Anjo da Aliança dispensa qualquer vinda concreta"
+      },
+      {
+        "id": "c",
+        "text": "O mensageiro esgota a ação de Jeová, sem visita posterior"
+      },
+      {
+        "id": "d",
+        "text": "Jeová dos Exércitos só descreve um desejo do povo, sem vinda"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Malaquias 3:1",
+    "learningObjective": "Reconhecer que Jeová envia o mensageiro que prepara o caminho e que o Senhor vem de repente ao templo.",
+    "evidence": [
+      "Malaquias 3:1"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Malaquias 3:1?",
+    "prompt": "Qual sequência revela o sentido de Malaquias 3:1?",
+    "cue": "Qual sequência revela o sentido de Malaquias 3:1?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-02-o-mensageiro-da-alia",
+    "id": "malaquias-pro-malaquias-malaquias-02-o-mensageiro-da-alia-04",
+    "feedbackCorrect": "Certo: envio, busca do povo e vinda súbita do Senhor.",
+    "feedbackWrong": {
+      "b": "O envio do mensageiro abre o sentido, não o fecha.",
+      "c": "A vinda ao templo é o desfecho, não o começo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová envia o mensageiro que prepara o caminho"
+      },
+      {
+        "id": "b",
+        "text": "O povo busca o Senhor e se agrada no Anjo da Aliança"
+      },
+      {
+        "id": "c",
+        "text": "O Senhor vem de repente ao seu templo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Malaquias 3:1",
+    "learningObjective": "Reconhecer que Jeová envia o mensageiro que prepara o caminho e que o Senhor vem de repente ao templo.",
+    "evidence": [
+      "Malaquias 3:1"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"e o Anjo da ___, no qual vós vos agradais, eis que ele vem\"",
+    "prompt": "Complete a frase: \"e o Anjo da ___, no qual vós vos agradais, eis que ele vem\"",
+    "cue": "Complete a frase: \"e o Anjo da ___, no qual vós vos agradais, eis que ele vem\"",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-02-o-mensageiro-da-alia",
+    "id": "malaquias-pro-malaquias-malaquias-02-o-mensageiro-da-alia-05",
+    "feedbackCorrect": "Certo: o texto fala do Anjo da Aliança.",
+    "feedbackWrong": {
+      "b": "Exércitos nomeia Jeová no fim, não esta lacuna.",
+      "c": "Templo é o lugar da vinda, não o título do Anjo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Aliança"
+      },
+      {
+        "id": "b",
+        "text": "Exércitos"
+      },
+      {
+        "id": "c",
+        "text": "templo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos.",
+    "template": "e o Anjo da ___, no qual vós vos agradais, eis que ele vem"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Malaquias 3:1",
+    "learningObjective": "Reconhecer que Jeová envia o mensageiro que prepara o caminho e que o Senhor vem de repente ao templo.",
+    "evidence": [
+      "Malaquias 3:1"
+    ],
+    "type": "connect",
+    "question": "O que Malaquias 3:1 comunica que se liga a este contexto?",
+    "prompt": "O que Malaquias 3:1 comunica que se liga a este contexto?",
+    "cue": "O que Malaquias 3:1 comunica que se liga a este contexto?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-02-o-mensageiro-da-alia",
+    "id": "malaquias-pro-malaquias-malaquias-02-o-mensageiro-da-alia-06",
+    "feedbackCorrect": "Certo: a visita de Jeová não é abandono; ele vem ao templo.",
+    "feedbackWrong": {
+      "a": "O texto anuncia vinda, não ausência definitiva.",
+      "b": "Há preparação, mas a vinda permanece súbita."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ausência definitiva de Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Vinda lenta e controlável"
+      },
+      {
+        "id": "c",
+        "text": "Visita súbita ao templo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos.",
+    "passageA": {
+      "ref": "Malaquias 3:1",
+      "text": "de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jeová envia o mensageiro que prepara o caminho; o Senhor vem ao templo de repente."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Malaquias 1:2; 3:1",
+    "learningObjective": "Unir o amor eleito a Jacó com o envio do mensageiro e a vinda do Senhor ao templo: amor e visita, não abandono.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 3:1"
+    ],
+    "type": "true_false",
+    "question": "O Deus que ama Jacó também envia o mensageiro e vem ao templo.",
+    "prompt": "O Deus que ama Jacó também envia o mensageiro e vem ao templo.",
+    "cue": "O Deus que ama Jacó também envia o mensageiro e vem ao templo.",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-03-desafio-malaquias",
+    "id": "malaquias-sem-malaquias-malaquias-03-desafio-malaquias-01",
+    "feedbackCorrect": "Certo: os dois textos unem amor eleito e visita ao templo.",
+    "feedbackWrong": {
+      "false": "Malaquias 1:2 e 3:1 se leem juntos neste desafio."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto. Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Malaquias 1:2; 3:1",
+    "learningObjective": "Unir o amor eleito a Jacó com o envio do mensageiro e a vinda do Senhor ao templo: amor e visita, não abandono.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 3:1"
+    ],
+    "type": "tap",
+    "question": "Em Malaquias 1:2; 3:1, toque a palavra que falta em \"Eu vos tenho ___, diz Jeová\"?",
+    "prompt": "Em Malaquias 1:2; 3:1, toque a palavra que falta em \"Eu vos tenho ___, diz Jeová\"?",
+    "cue": "Em Malaquias 1:2; 3:1, toque a palavra que falta em \"Eu vos tenho ___, diz Jeová\"?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-03-desafio-malaquias",
+    "id": "malaquias-sem-malaquias-malaquias-03-desafio-malaquias-02",
+    "feedbackCorrect": "Exato: Jeová começa dizendo que tem amado o povo.",
+    "feedbackWrong": {
+      "b": "Jacó é o amado na resposta, não esta lacuna.",
+      "c": "Mensageiro pertence a 3:1, não a esta frase."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "amado"
+      },
+      {
+        "id": "b",
+        "text": "Jacó"
+      },
+      {
+        "id": "c",
+        "text": "mensageiro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto. Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos.",
+    "template": "Eu vos tenho ___, diz Jeová"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Malaquias 1:2; 3:1",
+    "learningObjective": "Unir o amor eleito a Jacó com o envio do mensageiro e a vinda do Senhor ao templo: amor e visita, não abandono.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 3:1"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelos textos de Malaquias 1:2 e 3:1?",
+    "prompt": "Qual afirmação é feita diretamente pelos textos de Malaquias 1:2 e 3:1?",
+    "cue": "Qual afirmação é feita diretamente pelos textos de Malaquias 1:2 e 3:1?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-03-desafio-malaquias",
+    "id": "malaquias-sem-malaquias-malaquias-03-desafio-malaquias-03",
+    "feedbackCorrect": "Certo: amor a Jacó e envio do mensageiro aparecem nos dois textos.",
+    "feedbackWrong": {
+      "a": "Jeová afirma ter amado, não ter abandonado.",
+      "b": "O mensageiro é enviado, não recusado.",
+      "c": "O Senhor vem ao templo, não permanece distante."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová declara que nunca amou a Jacó"
+      },
+      {
+        "id": "b",
+        "text": "Jeová se recusa a enviar qualquer mensageiro"
+      },
+      {
+        "id": "c",
+        "text": "O Senhor permanece longe do templo para sempre"
+      },
+      {
+        "id": "d",
+        "text": "Jeová amou a Jacó e envia o mensageiro que prepara o caminho"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto. Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Malaquias 1:2; 3:1",
+    "learningObjective": "Unir o amor eleito a Jacó com o envio do mensageiro e a vinda do Senhor ao templo: amor e visita, não abandono.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 3:1"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Malaquias 1:2; 3:1?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Malaquias 1:2; 3:1?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Malaquias 1:2; 3:1?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-03-desafio-malaquias",
+    "id": "malaquias-sem-malaquias-malaquias-03-desafio-malaquias-04",
+    "feedbackCorrect": "Certo: amor declarado, eleição de Jacó e então o envio.",
+    "feedbackWrong": {
+      "b": "O amor declarado abre o livro, não vem depois do envio.",
+      "c": "O mensageiro é anunciado depois da eleição de Jacó."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Eu vos tenho amado, diz Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Contudo, amei a Jacó, e aborreci a Esaú"
+      },
+      {
+        "id": "c",
+        "text": "Eis que envio eu o meu mensageiro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto. Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Malaquias 1:2; 3:1",
+    "learningObjective": "Unir o amor eleito a Jacó com o envio do mensageiro e a vinda do Senhor ao templo: amor e visita, não abandono.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 3:1"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Contudo, amei a ___, e aborreci a Esaú\"",
+    "prompt": "Complete a frase: \"Contudo, amei a ___, e aborreci a Esaú\"",
+    "cue": "Complete a frase: \"Contudo, amei a ___, e aborreci a Esaú\"",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-03-desafio-malaquias",
+    "id": "malaquias-sem-malaquias-malaquias-03-desafio-malaquias-05",
+    "feedbackCorrect": "Certo: Jeová amou a Jacó.",
+    "feedbackWrong": {
+      "a": "Amado já aparece na primeira frase, não nesta lacuna.",
+      "c": "Mensageiro pertence a 3:1."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "amado"
+      },
+      {
+        "id": "b",
+        "text": "Jacó"
+      },
+      {
+        "id": "c",
+        "text": "mensageiro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto. Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos.",
+    "template": "Contudo, amei a ___, e aborreci a Esaú"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Malaquias 1:2; 3:1",
+    "learningObjective": "Unir o amor eleito a Jacó com o envio do mensageiro e a vinda do Senhor ao templo: amor e visita, não abandono.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 3:1"
+    ],
+    "type": "connect",
+    "question": "O que Malaquias 1:2; 3:1 comunica que se liga a este contexto?",
+    "prompt": "O que Malaquias 1:2; 3:1 comunica que se liga a este contexto?",
+    "cue": "O que Malaquias 1:2; 3:1 comunica que se liga a este contexto?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-03-desafio-malaquias",
+    "id": "malaquias-sem-malaquias-malaquias-03-desafio-malaquias-06",
+    "feedbackCorrect": "Certo: amor a Jacó e visita ao templo se leem juntos.",
+    "feedbackWrong": {
+      "b": "O texto não opõe o amor à visita.",
+      "c": "Não há abandono: há amor e vinda."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Amor e visita, não abandono"
+      },
+      {
+        "id": "b",
+        "text": "Amor sem qualquer visita"
+      },
+      {
+        "id": "c",
+        "text": "Visita que nega o amor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto. Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos.",
+    "passageA": {
+      "ref": "Malaquias 1:2; 3:1",
+      "text": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto. Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Deus que ama Jacó também envia o mensageiro e vem ao templo — amor e visita, não abandono."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Malaquias 1:2; 3:1",
+    "learningObjective": "Unir o amor eleito a Jacó com o envio do mensageiro e a vinda do Senhor ao templo: amor e visita, não abandono.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 3:1"
+    ],
+    "type": "true_false",
+    "question": "O amor a Jacó e a vinda do Senhor ao templo se excluem no livro de Malaquias.",
+    "prompt": "O amor a Jacó e a vinda do Senhor ao templo se excluem no livro de Malaquias.",
+    "cue": "O amor a Jacó e a vinda do Senhor ao templo se excluem no livro de Malaquias.",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-03-desafio-malaquias",
+    "id": "malaquias-cam-malaquias-malaquias-03-desafio-malaquias-01",
+    "feedbackCorrect": "Certo: os dois textos se somam, não se cancelam.",
+    "feedbackWrong": {
+      "true": "Amor eleito e visita ao templo caminham juntos no desafio."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto. Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Malaquias 1:2; 3:1",
+    "learningObjective": "Unir o amor eleito a Jacó com o envio do mensageiro e a vinda do Senhor ao templo: amor e visita, não abandono.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 3:1"
+    ],
+    "type": "tap",
+    "question": "Em Malaquias 1:2; 3:1, toque a palavra que falta em \"Eis que envio eu o meu ___, e ele há de preparar o caminho diante de mim\"?",
+    "prompt": "Em Malaquias 1:2; 3:1, toque a palavra que falta em \"Eis que envio eu o meu ___, e ele há de preparar o caminho diante de mim\"?",
+    "cue": "Em Malaquias 1:2; 3:1, toque a palavra que falta em \"Eis que envio eu o meu ___, e ele há de preparar o caminho diante de mim\"?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-03-desafio-malaquias",
+    "id": "malaquias-cam-malaquias-malaquias-03-desafio-malaquias-02",
+    "feedbackCorrect": "Exato: o mensageiro prepara o caminho.",
+    "feedbackWrong": {
+      "a": "Jacó pertence ao oráculo do amor, não a esta frase.",
+      "c": "Templo é o destino da vinda, não o enviado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jacó"
+      },
+      {
+        "id": "b",
+        "text": "mensageiro"
+      },
+      {
+        "id": "c",
+        "text": "templo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto. Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos.",
+    "template": "Eis que envio eu o meu ___, e ele há de preparar o caminho diante de mim"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Malaquias 1:2; 3:1",
+    "learningObjective": "Unir o amor eleito a Jacó com o envio do mensageiro e a vinda do Senhor ao templo: amor e visita, não abandono.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 3:1"
+    ],
+    "type": "choice",
+    "question": "Qual ideia melhor une Malaquias 1:2 e 3:1 no desafio do livro?",
+    "prompt": "Qual ideia melhor une Malaquias 1:2 e 3:1 no desafio do livro?",
+    "cue": "Qual ideia melhor une Malaquias 1:2 e 3:1 no desafio do livro?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-03-desafio-malaquias",
+    "id": "malaquias-cam-malaquias-malaquias-03-desafio-malaquias-03",
+    "feedbackCorrect": "Certo: o Deus que elege também visita; não deixa o povo à deriva.",
+    "feedbackWrong": {
+      "a": "A eleição não dispensa a visita ao templo.",
+      "b": "A visita não apaga o amor já declarado.",
+      "d": "O povo pergunta, mas Jeová não se retira."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A eleição de Jacó torna desnecessária qualquer visita posterior"
+      },
+      {
+        "id": "b",
+        "text": "A vinda ao templo anula o amor já declarado a Israel"
+      },
+      {
+        "id": "c",
+        "text": "Quem ama Jacó também envia o mensageiro e vem ao templo"
+      },
+      {
+        "id": "d",
+        "text": "A dúvida de Israel prova que Jeová se afastou de vez"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto. Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Malaquias 1:2; 3:1",
+    "learningObjective": "Unir o amor eleito a Jacó com o envio do mensageiro e a vinda do Senhor ao templo: amor e visita, não abandono.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 3:1"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Malaquias 1:2; 3:1?",
+    "prompt": "Como se encadeiam os eventos de Malaquias 1:2; 3:1?",
+    "cue": "Como se encadeiam os eventos de Malaquias 1:2; 3:1?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-03-desafio-malaquias",
+    "id": "malaquias-cam-malaquias-malaquias-03-desafio-malaquias-04",
+    "feedbackCorrect": "Certo: amor, eleição e então o envio que prepara a visita.",
+    "feedbackWrong": {
+      "b": "A declaração de amor vem primeiro, não depois do envio.",
+      "c": "A vinda ao templo fecha o encadeamento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová declara ter amado o povo e elege Jacó"
+      },
+      {
+        "id": "b",
+        "text": "Jeová envia o mensageiro que prepara o caminho"
+      },
+      {
+        "id": "c",
+        "text": "O Senhor vem de repente ao seu templo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto. Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Malaquias 1:2; 3:1",
+    "learningObjective": "Unir o amor eleito a Jacó com o envio do mensageiro e a vinda do Senhor ao templo: amor e visita, não abandono.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 3:1"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"e ele há de preparar o ___ diante de mim\"",
+    "prompt": "Complete a frase: \"e ele há de preparar o ___ diante de mim\"",
+    "cue": "Complete a frase: \"e ele há de preparar o ___ diante de mim\"",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-03-desafio-malaquias",
+    "id": "malaquias-cam-malaquias-malaquias-03-desafio-malaquias-05",
+    "feedbackCorrect": "Certo: o mensageiro prepara o caminho.",
+    "feedbackWrong": {
+      "b": "Mensageiro é quem prepara, não o que se prepara.",
+      "c": "Templo é o destino da vinda."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "caminho"
+      },
+      {
+        "id": "b",
+        "text": "mensageiro"
+      },
+      {
+        "id": "c",
+        "text": "templo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto. Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos.",
+    "template": "e ele há de preparar o ___ diante de mim"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Malaquias 1:2; 3:1",
+    "learningObjective": "Unir o amor eleito a Jacó com o envio do mensageiro e a vinda do Senhor ao templo: amor e visita, não abandono.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 3:1"
+    ],
+    "type": "connect",
+    "question": "O que Malaquias 1:2; 3:1 comunica que se liga a este contexto?",
+    "prompt": "O que Malaquias 1:2; 3:1 comunica que se liga a este contexto?",
+    "cue": "O que Malaquias 1:2; 3:1 comunica que se liga a este contexto?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-03-desafio-malaquias",
+    "id": "malaquias-cam-malaquias-malaquias-03-desafio-malaquias-06",
+    "feedbackCorrect": "Certo: eleição e visita se somam contra a ideia de abandono.",
+    "feedbackWrong": {
+      "a": "O amor eleito não substitui a vinda.",
+      "c": "A visita não apaga o amor a Jacó."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Eleição que dispensa visita"
+      },
+      {
+        "id": "b",
+        "text": "Eleição e visita unidas"
+      },
+      {
+        "id": "c",
+        "text": "Visita que cancela a eleição"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto. Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos.",
+    "passageA": {
+      "ref": "Malaquias 1:2; 3:1",
+      "text": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto. Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Deus que ama Jacó também envia o mensageiro e vem ao templo — amor e visita, não abandono."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Malaquias 1:2; 3:1",
+    "learningObjective": "Unir o amor eleito a Jacó com o envio do mensageiro e a vinda do Senhor ao templo: amor e visita, não abandono.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 3:1"
+    ],
+    "type": "true_false",
+    "question": "O Deus que ama Jacó também envia o mensageiro e vem ao templo: amor e visita, não abandono.",
+    "prompt": "O Deus que ama Jacó também envia o mensageiro e vem ao templo: amor e visita, não abandono.",
+    "cue": "O Deus que ama Jacó também envia o mensageiro e vem ao templo: amor e visita, não abandono.",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-03-desafio-malaquias",
+    "id": "malaquias-pro-malaquias-malaquias-03-desafio-malaquias-01",
+    "feedbackCorrect": "Certo: o desafio de Malaquias une graça eleita e visita.",
+    "feedbackWrong": {
+      "false": "Os dois textos sustentam amor e vinda, não abandono."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto. Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Malaquias 1:2; 3:1",
+    "learningObjective": "Unir o amor eleito a Jacó com o envio do mensageiro e a vinda do Senhor ao templo: amor e visita, não abandono.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 3:1"
+    ],
+    "type": "tap",
+    "question": "Em Malaquias 1:2; 3:1, toque a palavra que falta em \"de repente, virá ao seu ___ o Senhor\"?",
+    "prompt": "Em Malaquias 1:2; 3:1, toque a palavra que falta em \"de repente, virá ao seu ___ o Senhor\"?",
+    "cue": "Em Malaquias 1:2; 3:1, toque a palavra que falta em \"de repente, virá ao seu ___ o Senhor\"?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-03-desafio-malaquias",
+    "id": "malaquias-pro-malaquias-malaquias-03-desafio-malaquias-02",
+    "feedbackCorrect": "Exato: o Senhor virá ao seu templo.",
+    "feedbackWrong": {
+      "a": "Deserto fecha o juízo de Esaú, não esta vinda.",
+      "b": "Caminho é o que se prepara, não o destino."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "deserto"
+      },
+      {
+        "id": "b",
+        "text": "caminho"
+      },
+      {
+        "id": "c",
+        "text": "templo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto. Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos.",
+    "template": "de repente, virá ao seu ___ o Senhor"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Malaquias 1:2; 3:1",
+    "learningObjective": "Unir o amor eleito a Jacó com o envio do mensageiro e a vinda do Senhor ao templo: amor e visita, não abandono.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 3:1"
+    ],
+    "type": "choice",
+    "question": "Qual leitura melhor capta o sentido conjunto de Malaquias 1:2 e 3:1?",
+    "prompt": "Qual leitura melhor capta o sentido conjunto de Malaquias 1:2 e 3:1?",
+    "cue": "Qual leitura melhor capta o sentido conjunto de Malaquias 1:2 e 3:1?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-03-desafio-malaquias",
+    "id": "malaquias-pro-malaquias-malaquias-03-desafio-malaquias-03",
+    "feedbackCorrect": "Certo: eleição e visita respondem à dúvida sem admitir abandono.",
+    "feedbackWrong": {
+      "a": "A pergunta de Israel não prova que Deus se foi.",
+      "c": "O mensageiro não substitui o Senhor que vem.",
+      "d": "Aborrecer Esaú não cancela o amor a Jacó nem a visita."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A dúvida de Israel prova que Jeová já havia abandonado a aliança"
+      },
+      {
+        "id": "b",
+        "text": "Jeová ama por eleição e ainda assim visita o templo, não se retira"
+      },
+      {
+        "id": "c",
+        "text": "O mensageiro basta; o Senhor não precisa vir de fato"
+      },
+      {
+        "id": "d",
+        "text": "Aborrecer Esaú significa que Israel também ficou sem visita"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto. Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Malaquias 1:2; 3:1",
+    "learningObjective": "Unir o amor eleito a Jacó com o envio do mensageiro e a vinda do Senhor ao templo: amor e visita, não abandono.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 3:1"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Malaquias 1:2; 3:1?",
+    "prompt": "Qual sequência revela o sentido de Malaquias 1:2; 3:1?",
+    "cue": "Qual sequência revela o sentido de Malaquias 1:2; 3:1?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-03-desafio-malaquias",
+    "id": "malaquias-pro-malaquias-malaquias-03-desafio-malaquias-04",
+    "feedbackCorrect": "Certo: amor eleito, envio e visita — não abandono.",
+    "feedbackWrong": {
+      "b": "A eleição de Jacó precede o envio do mensageiro.",
+      "c": "A vinda ao templo é o desfecho, não o início."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová ama Jacó por eleição gratuita"
+      },
+      {
+        "id": "b",
+        "text": "Jeová envia o mensageiro que prepara o caminho"
+      },
+      {
+        "id": "c",
+        "text": "O Senhor vem ao templo: visita, não abandono"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto. Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Malaquias 1:2; 3:1",
+    "learningObjective": "Unir o amor eleito a Jacó com o envio do mensageiro e a vinda do Senhor ao templo: amor e visita, não abandono.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 3:1"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"de ___, virá ao seu templo o Senhor\"",
+    "prompt": "Complete a frase: \"de ___, virá ao seu templo o Senhor\"",
+    "cue": "Complete a frase: \"de ___, virá ao seu templo o Senhor\"",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-03-desafio-malaquias",
+    "id": "malaquias-pro-malaquias-malaquias-03-desafio-malaquias-05",
+    "feedbackCorrect": "Certo: a vinda é de repente.",
+    "feedbackWrong": {
+      "b": "Templo é o destino, já está na frase.",
+      "c": "Amado pertence a 1:2, não a esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "repente"
+      },
+      {
+        "id": "b",
+        "text": "templo"
+      },
+      {
+        "id": "c",
+        "text": "amado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto. Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos.",
+    "template": "de ___, virá ao seu templo o Senhor"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Malaquias 1:2; 3:1",
+    "learningObjective": "Unir o amor eleito a Jacó com o envio do mensageiro e a vinda do Senhor ao templo: amor e visita, não abandono.",
+    "evidence": [
+      "Malaquias 1:2",
+      "Malaquias 3:1"
+    ],
+    "type": "connect",
+    "question": "O que Malaquias 1:2; 3:1 comunica que se liga a este contexto?",
+    "prompt": "O que Malaquias 1:2; 3:1 comunica que se liga a este contexto?",
+    "cue": "O que Malaquias 1:2; 3:1 comunica que se liga a este contexto?",
+    "trail": "malaquias",
+    "section": "malaquias-malaquias-03-desafio-malaquias",
+    "id": "malaquias-pro-malaquias-malaquias-03-desafio-malaquias-06",
+    "feedbackCorrect": "Certo: o fecho de Malaquias é amor eleito e visita, não abandono.",
+    "feedbackWrong": {
+      "a": "Os textos não descrevem silêncio final.",
+      "b": "A eleição não é capricho sem visita."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Silêncio final da aliança"
+      },
+      {
+        "id": "b",
+        "text": "Capricho sem qualquer visita"
+      },
+      {
+        "id": "c",
+        "text": "Amor eleito e visita real"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto. Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos.",
+    "passageA": {
+      "ref": "Malaquias 1:2; 3:1",
+      "text": "Eu vos tenho amado, diz Jeová. Contudo, vós dizeis: Em que nos tens amado? Acaso não era Esaú irmão de Jacó? — diz Jeová. Contudo, amei a Jacó, e aborreci a Esaú, e fiz dos seus montes uma desolação, e dei a sua herança aos chacais do deserto. Eis que envio eu o meu mensageiro, e ele há de preparar o caminho diante de mim; de repente, virá ao seu templo o Senhor, a quem vós buscais; e o Anjo da Aliança, no qual vós vos agradais, eis que ele vem, diz Jeová dos Exércitos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Deus que ama Jacó também envia o mensageiro e vem ao templo — amor e visita, não abandono."
+    }
+  }
+]

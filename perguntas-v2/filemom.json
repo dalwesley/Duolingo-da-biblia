@@ -1,0 +1,2243 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filemom 1:10–11",
+    "learningObjective": "Reconhecer que Paulo gera Onésimo no evangelho nas prisões e o apresenta como útil a Filemom e a si.",
+    "evidence": [
+      "Filemom 1:10",
+      "Filemom 1:11"
+    ],
+    "type": "true_false",
+    "question": "Paulo chama Onésimo de filho que ele gerou nas suas prisões.",
+    "prompt": "Paulo chama Onésimo de filho que ele gerou nas suas prisões.",
+    "cue": "Paulo chama Onésimo de filho que ele gerou nas suas prisões.",
+    "feedbackCorrect": "Certo: o texto diz exatamente isso em Filemom 1:10.",
+    "feedbackWrong": {
+      "false": "Releia: Onésimo é o filho gerado nas prisões."
+    },
+    "passageText": "Rogo-te por meu filho Onésimo, que eu gerei nas minhas prisões, o qual, outrora, te foi inútil, mas agora é útil a ti e a mim;",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "id": "filemom-sem-fm-01-intercessao-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filemom 1:10–11",
+    "learningObjective": "Reconhecer que Paulo gera Onésimo no evangelho nas prisões e o apresenta como útil a Filemom e a si.",
+    "evidence": [
+      "Filemom 1:10",
+      "Filemom 1:11"
+    ],
+    "type": "tap",
+    "question": "Em Filemom 1:10–11, toque a palavra que falta em \"Rogo-te por meu filho ___, que eu gerei nas minhas prisões\"?",
+    "prompt": "Em Filemom 1:10–11, toque a palavra que falta em \"Rogo-te por meu filho ___, que eu gerei nas minhas prisões\"?",
+    "cue": "Em Filemom 1:10–11, toque a palavra que falta em \"Rogo-te por meu filho ___, que eu gerei nas minhas prisões\"?",
+    "feedbackCorrect": "Exato: o nome do filho gerado nas prisões é Onésimo.",
+    "feedbackWrong": {
+      "b": "Prisões é o lugar da geração, não o nome do filho.",
+      "c": "Inútil descreve o passado dele, não o nome."
+    },
+    "passageText": "Rogo-te por meu filho Onésimo, que eu gerei nas minhas prisões, o qual, outrora, te foi inútil, mas agora é útil a ti e a mim;",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "id": "filemom-sem-fm-01-intercessao-02",
+    "template": "Rogo-te por meu filho ___, que eu gerei nas minhas prisões",
+    "options": [
+      {
+        "id": "a",
+        "text": "Onésimo"
+      },
+      {
+        "id": "b",
+        "text": "prisões"
+      },
+      {
+        "id": "c",
+        "text": "inútil"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filemom 1:10–11",
+    "learningObjective": "Reconhecer que Paulo gera Onésimo no evangelho nas prisões e o apresenta como útil a Filemom e a si.",
+    "evidence": [
+      "Filemom 1:10",
+      "Filemom 1:11"
+    ],
+    "type": "choice",
+    "question": "Qual fato o texto afirma sobre Onésimo?",
+    "prompt": "Qual fato o texto afirma sobre Onésimo?",
+    "cue": "Qual fato o texto afirma sobre Onésimo?",
+    "feedbackCorrect": "Certo: outrora inútil, agora útil a Filemom e a Paulo.",
+    "feedbackWrong": {
+      "a": "O texto não o chama de irmão neste versículo.",
+      "b": "O texto o descreve como agora útil, não ainda inútil.",
+      "d": "A utilidade é a Filemom e a Paulo, não só a Paulo."
+    },
+    "passageText": "Rogo-te por meu filho Onésimo, que eu gerei nas minhas prisões, o qual, outrora, te foi inútil, mas agora é útil a ti e a mim;",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "id": "filemom-sem-fm-01-intercessao-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Onésimo é apresentado só como irmão de Filemom"
+      },
+      {
+        "id": "b",
+        "text": "Onésimo permanece inútil a Filemom até hoje"
+      },
+      {
+        "id": "c",
+        "text": "Outrora inútil, agora é útil a Filemom e a Paulo"
+      },
+      {
+        "id": "d",
+        "text": "Onésimo agora é útil somente a Paulo, não a Filemom"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filemom 1:10–11",
+    "learningObjective": "Reconhecer que Paulo gera Onésimo no evangelho nas prisões e o apresenta como útil a Filemom e a si.",
+    "evidence": [
+      "Filemom 1:10",
+      "Filemom 1:11"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Filemom 1:10–11?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Filemom 1:10–11?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Filemom 1:10–11?",
+    "feedbackCorrect": "Certo: primeiro o rogo pelo filho, depois o passado, então o agora.",
+    "feedbackWrong": {
+      "b": "O passado de inutilidade vem depois do rogo, não antes.",
+      "c": "A utilidade presente fecha o trecho, não o abre."
+    },
+    "passageText": "Rogo-te por meu filho Onésimo, que eu gerei nas minhas prisões, o qual, outrora, te foi inútil, mas agora é útil a ti e a mim;",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "id": "filemom-sem-fm-01-intercessao-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rogo-te por meu filho Onésimo, que eu gerei nas minhas prisões"
+      },
+      {
+        "id": "b",
+        "text": "o qual, outrora, te foi inútil"
+      },
+      {
+        "id": "c",
+        "text": "mas agora é útil a ti e a mim"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filemom 1:10–11",
+    "learningObjective": "Reconhecer que Paulo gera Onésimo no evangelho nas prisões e o apresenta como útil a Filemom e a si.",
+    "evidence": [
+      "Filemom 1:10",
+      "Filemom 1:11"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"o qual, outrora, te foi ___, mas agora é útil a ti e a mim\"",
+    "prompt": "Complete a frase: \"o qual, outrora, te foi ___, mas agora é útil a ti e a mim\"",
+    "cue": "Complete a frase: \"o qual, outrora, te foi ___, mas agora é útil a ti e a mim\"",
+    "feedbackCorrect": "Certo: outrora Onésimo foi inútil a Filemom.",
+    "feedbackWrong": {
+      "a": "Útil é o agora, não o outrora.",
+      "c": "Onésimo é o nome, não o adjetivo desta lacuna."
+    },
+    "passageText": "Rogo-te por meu filho Onésimo, que eu gerei nas minhas prisões, o qual, outrora, te foi inútil, mas agora é útil a ti e a mim;",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "id": "filemom-sem-fm-01-intercessao-05",
+    "template": "o qual, outrora, te foi ___, mas agora é útil a ti e a mim",
+    "options": [
+      {
+        "id": "a",
+        "text": "útil"
+      },
+      {
+        "id": "b",
+        "text": "inútil"
+      },
+      {
+        "id": "c",
+        "text": "Onésimo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filemom 1:10–11",
+    "learningObjective": "Reconhecer que Paulo gera Onésimo no evangelho nas prisões e o apresenta como útil a Filemom e a si.",
+    "evidence": [
+      "Filemom 1:10",
+      "Filemom 1:11"
+    ],
+    "type": "connect",
+    "question": "O que Filemom 1:10–11 comunica que se liga a este contexto?",
+    "prompt": "O que Filemom 1:10–11 comunica que se liga a este contexto?",
+    "cue": "O que Filemom 1:10–11 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Paulo gera Onésimo no evangelho e o apresenta como útil.",
+    "feedbackWrong": {
+      "b": "O texto não cobra fuga; ele intercede por um filho.",
+      "c": "A ênfase é utilidade no Senhor, não punição."
+    },
+    "passageText": "Rogo-te por meu filho Onésimo, que eu gerei nas minhas prisões, o qual, outrora, te foi inútil, mas agora é útil a ti e a mim;",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "id": "filemom-sem-fm-01-intercessao-06",
+    "passageA": {
+      "ref": "Filemom 1:10–11",
+      "text": "Rogo-te por meu filho Onésimo, que eu gerei nas minhas prisões, o qual, outrora, te foi inútil, mas agora é útil a ti e a mim;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Paulo não cobra um escravo fugitivo: ele gera Onésimo no evangelho e o apresenta como útil no Senhor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Filho gerado e agora útil"
+      },
+      {
+        "id": "b",
+        "text": "Cobrança de um escravo fugitivo"
+      },
+      {
+        "id": "c",
+        "text": "Pedido de punição exemplar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filemom 1:10–11",
+    "learningObjective": "Reconhecer que Paulo gera Onésimo no evangelho nas prisões e o apresenta como útil a Filemom e a si.",
+    "evidence": [
+      "Filemom 1:10",
+      "Filemom 1:11"
+    ],
+    "type": "true_false",
+    "question": "Paulo descreve Onésimo como alguém que continua inútil a Filemom.",
+    "prompt": "Paulo descreve Onésimo como alguém que continua inútil a Filemom.",
+    "cue": "Paulo descreve Onésimo como alguém que continua inútil a Filemom.",
+    "feedbackCorrect": "Certo: o texto contrapõe outrora inútil e agora útil.",
+    "feedbackWrong": {
+      "true": "Agora é útil a ti e a mim: o contrário de continuar inútil."
+    },
+    "passageText": "Rogo-te por meu filho Onésimo, que eu gerei nas minhas prisões, o qual, outrora, te foi inútil, mas agora é útil a ti e a mim;",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "id": "filemom-cam-fm-01-intercessao-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filemom 1:10–11",
+    "learningObjective": "Reconhecer que Paulo gera Onésimo no evangelho nas prisões e o apresenta como útil a Filemom e a si.",
+    "evidence": [
+      "Filemom 1:10",
+      "Filemom 1:11"
+    ],
+    "type": "tap",
+    "question": "Em Filemom 1:10–11, toque a palavra que falta em \"que eu gerei nas minhas ___\"?",
+    "prompt": "Em Filemom 1:10–11, toque a palavra que falta em \"que eu gerei nas minhas ___\"?",
+    "cue": "Em Filemom 1:10–11, toque a palavra que falta em \"que eu gerei nas minhas ___\"?",
+    "feedbackCorrect": "Exato: a geração de Onésimo acontece nas prisões.",
+    "feedbackWrong": {
+      "a": "Filho nomeia o relacionamento, não o lugar.",
+      "c": "Agora marca o tempo da utilidade, não o lugar."
+    },
+    "passageText": "Rogo-te por meu filho Onésimo, que eu gerei nas minhas prisões, o qual, outrora, te foi inútil, mas agora é útil a ti e a mim;",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "id": "filemom-cam-fm-01-intercessao-02",
+    "template": "que eu gerei nas minhas ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "filho"
+      },
+      {
+        "id": "b",
+        "text": "prisões"
+      },
+      {
+        "id": "c",
+        "text": "agora"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filemom 1:10–11",
+    "learningObjective": "Reconhecer que Paulo gera Onésimo no evangelho nas prisões e o apresenta como útil a Filemom e a si.",
+    "evidence": [
+      "Filemom 1:10",
+      "Filemom 1:11"
+    ],
+    "type": "choice",
+    "question": "O que a troca de inútil para útil revela neste rogo?",
+    "prompt": "O que a troca de inútil para útil revela neste rogo?",
+    "cue": "O que a troca de inútil para útil revela neste rogo?",
+    "feedbackCorrect": "Certo: o evangelho refez o valor de Onésimo para os dois.",
+    "feedbackWrong": {
+      "a": "O texto não apaga o passado; ele o transforma.",
+      "c": "A utilidade é a ambos, não só ao apóstolo.",
+      "d": "Paulo intercede; não devolve um objeto de débito."
+    },
+    "passageText": "Rogo-te por meu filho Onésimo, que eu gerei nas minhas prisões, o qual, outrora, te foi inútil, mas agora é útil a ti e a mim;",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "id": "filemom-cam-fm-01-intercessao-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "O passado de Onésimo é apagado e nunca deve ser lembrado"
+      },
+      {
+        "id": "b",
+        "text": "O evangelho muda o valor de Onésimo para Filemom e Paulo"
+      },
+      {
+        "id": "c",
+        "text": "Só Paulo ganha com Onésimo; Filemom permanece prejudicado"
+      },
+      {
+        "id": "d",
+        "text": "Paulo trata Onésimo como mercadoria a ser devolvida"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filemom 1:10–11",
+    "learningObjective": "Reconhecer que Paulo gera Onésimo no evangelho nas prisões e o apresenta como útil a Filemom e a si.",
+    "evidence": [
+      "Filemom 1:10",
+      "Filemom 1:11"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Filemom 1:10–11?",
+    "prompt": "Como se encadeiam os eventos de Filemom 1:10–11?",
+    "cue": "Como se encadeiam os eventos de Filemom 1:10–11?",
+    "feedbackCorrect": "Certo: geração, contraste do passado e utilidade presente.",
+    "feedbackWrong": {
+      "b": "A utilidade vem depois do contraste, não no meio.",
+      "c": "Releia: primeiro a geração nas prisões."
+    },
+    "passageText": "Rogo-te por meu filho Onésimo, que eu gerei nas minhas prisões, o qual, outrora, te foi inútil, mas agora é útil a ti e a mim;",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "id": "filemom-cam-fm-01-intercessao-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo gera Onésimo nas prisões e o chama de filho"
+      },
+      {
+        "id": "b",
+        "text": "Outrora Onésimo foi inútil a Filemom"
+      },
+      {
+        "id": "c",
+        "text": "Agora ele é útil a Filemom e também a Paulo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filemom 1:10–11",
+    "learningObjective": "Reconhecer que Paulo gera Onésimo no evangelho nas prisões e o apresenta como útil a Filemom e a si.",
+    "evidence": [
+      "Filemom 1:10",
+      "Filemom 1:11"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"mas agora é ___ a ti e a mim\"",
+    "prompt": "Complete a frase: \"mas agora é ___ a ti e a mim\"",
+    "cue": "Complete a frase: \"mas agora é ___ a ti e a mim\"",
+    "feedbackCorrect": "Certo: agora Onésimo é útil a Filemom e a Paulo.",
+    "feedbackWrong": {
+      "b": "Inútil descreve o outrora, não o agora.",
+      "c": "Prisões é o lugar da geração, não este adjetivo."
+    },
+    "passageText": "Rogo-te por meu filho Onésimo, que eu gerei nas minhas prisões, o qual, outrora, te foi inútil, mas agora é útil a ti e a mim;",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "id": "filemom-cam-fm-01-intercessao-05",
+    "template": "mas agora é ___ a ti e a mim",
+    "options": [
+      {
+        "id": "a",
+        "text": "útil"
+      },
+      {
+        "id": "b",
+        "text": "inútil"
+      },
+      {
+        "id": "c",
+        "text": "prisões"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filemom 1:10–11",
+    "learningObjective": "Reconhecer que Paulo gera Onésimo no evangelho nas prisões e o apresenta como útil a Filemom e a si.",
+    "evidence": [
+      "Filemom 1:10",
+      "Filemom 1:11"
+    ],
+    "type": "connect",
+    "question": "O que Filemom 1:10–11 comunica que se liga a este contexto?",
+    "prompt": "O que Filemom 1:10–11 comunica que se liga a este contexto?",
+    "cue": "O que Filemom 1:10–11 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o rogo apresenta um filho agora útil, não um escravo cobrado.",
+    "feedbackWrong": {
+      "a": "O tom é de rogo paterno, não de processo judicial.",
+      "b": "Paulo une Filemom a si na utilidade de Onésimo."
+    },
+    "passageText": "Rogo-te por meu filho Onésimo, que eu gerei nas minhas prisões, o qual, outrora, te foi inútil, mas agora é útil a ti e a mim;",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "id": "filemom-cam-fm-01-intercessao-06",
+    "passageA": {
+      "ref": "Filemom 1:10–11",
+      "text": "Rogo-te por meu filho Onésimo, que eu gerei nas minhas prisões, o qual, outrora, te foi inútil, mas agora é útil a ti e a mim;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O apóstolo não cobra um fugitivo: gera um filho e o recomenda como útil."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pedido de processo contra o fugitivo"
+      },
+      {
+        "id": "b",
+        "text": "Separação entre Paulo e Filemom"
+      },
+      {
+        "id": "c",
+        "text": "Rogo por um filho agora útil"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filemom 1:10–11",
+    "learningObjective": "Reconhecer que Paulo gera Onésimo no evangelho nas prisões e o apresenta como útil a Filemom e a si.",
+    "evidence": [
+      "Filemom 1:10",
+      "Filemom 1:11"
+    ],
+    "type": "true_false",
+    "question": "Gerar Onésimo nas prisões aponta para nascimento no evangelho, não só para parentesco de sangue.",
+    "prompt": "Gerar Onésimo nas prisões aponta para nascimento no evangelho, não só para parentesco de sangue.",
+    "cue": "Gerar Onésimo nas prisões aponta para nascimento no evangelho, não só para parentesco de sangue.",
+    "feedbackCorrect": "Certo: o filho gerado nas prisões é fruto da fé, não da carne.",
+    "feedbackWrong": {
+      "false": "Nas prisões Paulo gera no evangelho; não é genealogia."
+    },
+    "passageText": "Rogo-te por meu filho Onésimo, que eu gerei nas minhas prisões, o qual, outrora, te foi inútil, mas agora é útil a ti e a mim;",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "id": "filemom-pro-fm-01-intercessao-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filemom 1:10–11",
+    "learningObjective": "Reconhecer que Paulo gera Onésimo no evangelho nas prisões e o apresenta como útil a Filemom e a si.",
+    "evidence": [
+      "Filemom 1:10",
+      "Filemom 1:11"
+    ],
+    "type": "tap",
+    "question": "Em Filemom 1:10–11, toque a palavra que falta em \"Rogo-te por meu ___ Onésimo\"?",
+    "prompt": "Em Filemom 1:10–11, toque a palavra que falta em \"Rogo-te por meu ___ Onésimo\"?",
+    "cue": "Em Filemom 1:10–11, toque a palavra que falta em \"Rogo-te por meu ___ Onésimo\"?",
+    "feedbackCorrect": "Exato: o vínculo que Paulo reivindica é o de filho.",
+    "feedbackWrong": {
+      "a": "Inútil é o passado, não o título do rogo.",
+      "b": "Mim fecha a utilidade, não esta lacuna."
+    },
+    "passageText": "Rogo-te por meu filho Onésimo, que eu gerei nas minhas prisões, o qual, outrora, te foi inútil, mas agora é útil a ti e a mim;",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "id": "filemom-pro-fm-01-intercessao-02",
+    "template": "Rogo-te por meu ___ Onésimo",
+    "options": [
+      {
+        "id": "a",
+        "text": "inútil"
+      },
+      {
+        "id": "b",
+        "text": "mim"
+      },
+      {
+        "id": "c",
+        "text": "filho"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filemom 1:10–11",
+    "learningObjective": "Reconhecer que Paulo gera Onésimo no evangelho nas prisões e o apresenta como útil a Filemom e a si.",
+    "evidence": [
+      "Filemom 1:10",
+      "Filemom 1:11"
+    ],
+    "type": "choice",
+    "question": "O que o leitor deve perceber no modo como Paulo apresenta Onésimo?",
+    "prompt": "O que o leitor deve perceber no modo como Paulo apresenta Onésimo?",
+    "cue": "O que o leitor deve perceber no modo como Paulo apresenta Onésimo?",
+    "feedbackCorrect": "Certo: o evangelho redefine a pessoa antes de pedir reconciliação.",
+    "feedbackWrong": {
+      "a": "Paulo não apela a direitos de dono, mas a um filho no Senhor.",
+      "b": "A prisão é o lugar da geração, não a tese da carta.",
+      "c": "A utilidade é compartilhada; Filemom não fica de fora."
+    },
+    "passageText": "Rogo-te por meu filho Onésimo, que eu gerei nas minhas prisões, o qual, outrora, te foi inútil, mas agora é útil a ti e a mim;",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "id": "filemom-pro-fm-01-intercessao-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo reivindica Onésimo como propriedade legal de Roma"
+      },
+      {
+        "id": "b",
+        "text": "A carta ensina que a prisão em si salva automaticamente"
+      },
+      {
+        "id": "c",
+        "text": "A utilidade nova serve só a Paulo, jamais a Filemom"
+      },
+      {
+        "id": "d",
+        "text": "O evangelho gera um filho e o recomenda como útil no Senhor"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filemom 1:10–11",
+    "learningObjective": "Reconhecer que Paulo gera Onésimo no evangelho nas prisões e o apresenta como útil a Filemom e a si.",
+    "evidence": [
+      "Filemom 1:10",
+      "Filemom 1:11"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Filemom 1:10–11?",
+    "prompt": "Qual sequência revela o sentido de Filemom 1:10–11?",
+    "cue": "Qual sequência revela o sentido de Filemom 1:10–11?",
+    "feedbackCorrect": "Certo: intercessão paterna, nomeação do passado e utilidade nova.",
+    "feedbackWrong": {
+      "b": "A utilidade nova vem depois de nomear o passado.",
+      "c": "O rogo pelo filho abre o sentido, não o fecha."
+    },
+    "passageText": "Rogo-te por meu filho Onésimo, que eu gerei nas minhas prisões, o qual, outrora, te foi inútil, mas agora é útil a ti e a mim;",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "id": "filemom-pro-fm-01-intercessao-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo intercede por um filho gerado nas prisões"
+      },
+      {
+        "id": "b",
+        "text": "O passado de inutilidade é confessado sem disfarce"
+      },
+      {
+        "id": "c",
+        "text": "O presente de utilidade é compartilhado com Filemom"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filemom 1:10–11",
+    "learningObjective": "Reconhecer que Paulo gera Onésimo no evangelho nas prisões e o apresenta como útil a Filemom e a si.",
+    "evidence": [
+      "Filemom 1:10",
+      "Filemom 1:11"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"que eu ___ nas minhas prisões\"",
+    "prompt": "Complete a frase: \"que eu ___ nas minhas prisões\"",
+    "cue": "Complete a frase: \"que eu ___ nas minhas prisões\"",
+    "feedbackCorrect": "Certo: Paulo gerou Onésimo nas prisões.",
+    "feedbackWrong": {
+      "a": "Rogo-te abre a carta, não esta lacuna.",
+      "b": "Útil descreve o agora, não o verbo da geração."
+    },
+    "passageText": "Rogo-te por meu filho Onésimo, que eu gerei nas minhas prisões, o qual, outrora, te foi inútil, mas agora é útil a ti e a mim;",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "id": "filemom-pro-fm-01-intercessao-05",
+    "template": "que eu ___ nas minhas prisões",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rogo-te"
+      },
+      {
+        "id": "b",
+        "text": "útil"
+      },
+      {
+        "id": "c",
+        "text": "gerei"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filemom 1:10–11",
+    "learningObjective": "Reconhecer que Paulo gera Onésimo no evangelho nas prisões e o apresenta como útil a Filemom e a si.",
+    "evidence": [
+      "Filemom 1:10",
+      "Filemom 1:11"
+    ],
+    "type": "connect",
+    "question": "O que Filemom 1:10–11 comunica que se liga a este contexto?",
+    "prompt": "O que Filemom 1:10–11 comunica que se liga a este contexto?",
+    "cue": "O que Filemom 1:10–11 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a ponte é a geração no evangelho que torna Onésimo útil.",
+    "feedbackWrong": {
+      "a": "O texto não pede vingança; pede reconhecimento de um filho.",
+      "c": "A ênfase é paternidade evangélica, não contrato de trabalho."
+    },
+    "passageText": "Rogo-te por meu filho Onésimo, que eu gerei nas minhas prisões, o qual, outrora, te foi inútil, mas agora é útil a ti e a mim;",
+    "trail": "filemom",
+    "section": "fm-01-intercessao",
+    "id": "filemom-pro-fm-01-intercessao-06",
+    "passageA": {
+      "ref": "Filemom 1:10–11",
+      "text": "Rogo-te por meu filho Onésimo, que eu gerei nas minhas prisões, o qual, outrora, te foi inútil, mas agora é útil a ti e a mim;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Paulo não cobra um escravo fugitivo: ele gera Onésimo no evangelho e o apresenta como útil no Senhor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pedido de vingança do dono"
+      },
+      {
+        "id": "b",
+        "text": "Novo nascimento que torna útil"
+      },
+      {
+        "id": "c",
+        "text": "Contrato para mão de obra"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filemom 1:15–16",
+    "learningObjective": "Compreender que Onésimo volta não mais como servo, mas como irmão amado, para sempre.",
+    "evidence": [
+      "Filemom 1:15",
+      "Filemom 1:16"
+    ],
+    "type": "true_false",
+    "question": "O texto diz que Onésimo deve voltar somente como servo, nunca como irmão.",
+    "prompt": "O texto diz que Onésimo deve voltar somente como servo, nunca como irmão.",
+    "cue": "O texto diz que Onésimo deve voltar somente como servo, nunca como irmão.",
+    "feedbackCorrect": "Certo: o texto diz o contrário: não mais como servo, mas como irmão amado.",
+    "feedbackWrong": {
+      "true": "Releia: não mais como servo, mas como irmão amado."
+    },
+    "passageText": "Talvez por isso ele se apartasse de ti por algum tempo, para que tu o recuperasses para sempre, não mais como servo, mas, em vez de servo, como irmão amado, de mim principalmente e mais ainda de ti, quer na carne quer no Senhor.",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "id": "filemom-sem-fm-02-reconciliacao-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filemom 1:15–16",
+    "learningObjective": "Compreender que Onésimo volta não mais como servo, mas como irmão amado, para sempre.",
+    "evidence": [
+      "Filemom 1:15",
+      "Filemom 1:16"
+    ],
+    "type": "tap",
+    "question": "Em Filemom 1:15–16, toque a palavra que falta em \"como ___ amado, de mim principalmente\"?",
+    "prompt": "Em Filemom 1:15–16, toque a palavra que falta em \"como ___ amado, de mim principalmente\"?",
+    "cue": "Em Filemom 1:15–16, toque a palavra que falta em \"como ___ amado, de mim principalmente\"?",
+    "feedbackCorrect": "Exato: o texto diz irmão amado, não servo.",
+    "feedbackWrong": {
+      "b": "Servo é o status antigo, não o que preenche esta lacuna.",
+      "c": "Tempo descreve a ausência, não o novo nome."
+    },
+    "passageText": "Talvez por isso ele se apartasse de ti por algum tempo, para que tu o recuperasses para sempre, não mais como servo, mas, em vez de servo, como irmão amado, de mim principalmente e mais ainda de ti, quer na carne quer no Senhor.",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "id": "filemom-sem-fm-02-reconciliacao-02",
+    "template": "como ___ amado, de mim principalmente",
+    "options": [
+      {
+        "id": "a",
+        "text": "irmão"
+      },
+      {
+        "id": "b",
+        "text": "servo"
+      },
+      {
+        "id": "c",
+        "text": "tempo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filemom 1:15–16",
+    "learningObjective": "Compreender que Onésimo volta não mais como servo, mas como irmão amado, para sempre.",
+    "evidence": [
+      "Filemom 1:15",
+      "Filemom 1:16"
+    ],
+    "type": "choice",
+    "question": "Qual fato o texto afirma sobre a volta de Onésimo?",
+    "prompt": "Qual fato o texto afirma sobre a volta de Onésimo?",
+    "cue": "Qual fato o texto afirma sobre a volta de Onésimo?",
+    "feedbackCorrect": "Certo: volta não mais como servo, mas como irmão amado.",
+    "feedbackWrong": {
+      "a": "O texto fala de recuperar para sempre, não de perda definitiva.",
+      "b": "O status novo é irmão amado, não mero servo.",
+      "d": "A afeição vale na carne e no Senhor, não só num dos dois."
+    },
+    "passageText": "Talvez por isso ele se apartasse de ti por algum tempo, para que tu o recuperasses para sempre, não mais como servo, mas, em vez de servo, como irmão amado, de mim principalmente e mais ainda de ti, quer na carne quer no Senhor.",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "id": "filemom-sem-fm-02-reconciliacao-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Onésimo se apartou para que Filemom o perdesse para sempre"
+      },
+      {
+        "id": "b",
+        "text": "Onésimo deve ser recebido apenas como servo de novo"
+      },
+      {
+        "id": "c",
+        "text": "Filemom o recupera para sempre, não mais como servo, mas como irmão amado"
+      },
+      {
+        "id": "d",
+        "text": "A relação nova vale só na carne, nunca no Senhor"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filemom 1:15–16",
+    "learningObjective": "Compreender que Onésimo volta não mais como servo, mas como irmão amado, para sempre.",
+    "evidence": [
+      "Filemom 1:15",
+      "Filemom 1:16"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Filemom 1:15–16?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Filemom 1:15–16?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Filemom 1:15–16?",
+    "feedbackCorrect": "Certo: apartar-se, recuperar para sempre, receber como irmão.",
+    "feedbackWrong": {
+      "b": "O irmão amado vem depois de não mais como servo.",
+      "c": "A ausência temporária abre o trecho, não o fecha."
+    },
+    "passageText": "Talvez por isso ele se apartasse de ti por algum tempo, para que tu o recuperasses para sempre, não mais como servo, mas, em vez de servo, como irmão amado, de mim principalmente e mais ainda de ti, quer na carne quer no Senhor.",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "id": "filemom-sem-fm-02-reconciliacao-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Talvez por isso ele se apartasse de ti por algum tempo"
+      },
+      {
+        "id": "b",
+        "text": "para que tu o recuperasses para sempre"
+      },
+      {
+        "id": "c",
+        "text": "não mais como servo, mas como irmão amado"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filemom 1:15–16",
+    "learningObjective": "Compreender que Onésimo volta não mais como servo, mas como irmão amado, para sempre.",
+    "evidence": [
+      "Filemom 1:15",
+      "Filemom 1:16"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"não mais como ___, mas, em vez de servo, como irmão amado\"",
+    "prompt": "Complete a frase: \"não mais como ___, mas, em vez de servo, como irmão amado\"",
+    "cue": "Complete a frase: \"não mais como ___, mas, em vez de servo, como irmão amado\"",
+    "feedbackCorrect": "Certo: o status antigo nomeado é servo.",
+    "feedbackWrong": {
+      "a": "Irmão é o status novo, não esta lacuna.",
+      "c": "Sempre descreve a duração, não o status antigo."
+    },
+    "passageText": "Talvez por isso ele se apartasse de ti por algum tempo, para que tu o recuperasses para sempre, não mais como servo, mas, em vez de servo, como irmão amado, de mim principalmente e mais ainda de ti, quer na carne quer no Senhor.",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "id": "filemom-sem-fm-02-reconciliacao-05",
+    "template": "não mais como ___, mas, em vez de servo, como irmão amado",
+    "options": [
+      {
+        "id": "a",
+        "text": "irmão"
+      },
+      {
+        "id": "b",
+        "text": "servo"
+      },
+      {
+        "id": "c",
+        "text": "sempre"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filemom 1:15–16",
+    "learningObjective": "Compreender que Onésimo volta não mais como servo, mas como irmão amado, para sempre.",
+    "evidence": [
+      "Filemom 1:15",
+      "Filemom 1:16"
+    ],
+    "type": "connect",
+    "question": "O que Filemom 1:15–16 comunica que se liga a este contexto?",
+    "prompt": "O que Filemom 1:15–16 comunica que se liga a este contexto?",
+    "cue": "O que Filemom 1:15–16 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o evangelho muda o status de servo para irmão amado.",
+    "feedbackWrong": {
+      "b": "A ausência é por algum tempo, não para sempre.",
+      "c": "O texto eleva Onésimo a irmão, não o rebaixa."
+    },
+    "passageText": "Talvez por isso ele se apartasse de ti por algum tempo, para que tu o recuperasses para sempre, não mais como servo, mas, em vez de servo, como irmão amado, de mim principalmente e mais ainda de ti, quer na carne quer no Senhor.",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "id": "filemom-sem-fm-02-reconciliacao-06",
+    "passageA": {
+      "ref": "Filemom 1:15–16",
+      "text": "Talvez por isso ele se apartasse de ti por algum tempo, para que tu o recuperasses para sempre, não mais como servo, mas, em vez de servo, como irmão amado, de mim principalmente e mais ainda de ti, quer na carne quer no Senhor."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O evangelho muda o status: Onésimo volta não como servo, mas como irmão amado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "De servo a irmão amado"
+      },
+      {
+        "id": "b",
+        "text": "Ausência definitiva e sem volta"
+      },
+      {
+        "id": "c",
+        "text": "Retorno só para servir mais"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filemom 1:15–16",
+    "learningObjective": "Compreender que Onésimo volta não mais como servo, mas como irmão amado, para sempre.",
+    "evidence": [
+      "Filemom 1:15",
+      "Filemom 1:16"
+    ],
+    "type": "true_false",
+    "question": "A ausência de Onésimo é lida como ocasião para Filemom recuperá-lo para sempre.",
+    "prompt": "A ausência de Onésimo é lida como ocasião para Filemom recuperá-lo para sempre.",
+    "cue": "A ausência de Onésimo é lida como ocasião para Filemom recuperá-lo para sempre.",
+    "feedbackCorrect": "Certo: apartar-se por algum tempo serve à recuperação para sempre.",
+    "feedbackWrong": {
+      "false": "O texto liga a ausência breve à recuperação permanente."
+    },
+    "passageText": "Talvez por isso ele se apartasse de ti por algum tempo, para que tu o recuperasses para sempre, não mais como servo, mas, em vez de servo, como irmão amado, de mim principalmente e mais ainda de ti, quer na carne quer no Senhor.",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "id": "filemom-cam-fm-02-reconciliacao-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filemom 1:15–16",
+    "learningObjective": "Compreender que Onésimo volta não mais como servo, mas como irmão amado, para sempre.",
+    "evidence": [
+      "Filemom 1:15",
+      "Filemom 1:16"
+    ],
+    "type": "tap",
+    "question": "Em Filemom 1:15–16, toque a palavra que falta em \"para que tu o recuperasses para ___\"?",
+    "prompt": "Em Filemom 1:15–16, toque a palavra que falta em \"para que tu o recuperasses para ___\"?",
+    "cue": "Em Filemom 1:15–16, toque a palavra que falta em \"para que tu o recuperasses para ___\"?",
+    "feedbackCorrect": "Exato: a recuperação é para sempre.",
+    "feedbackWrong": {
+      "a": "Tempo descreve a ausência, não a recuperação.",
+      "c": "Carne aparece depois, no par carne/Senhor."
+    },
+    "passageText": "Talvez por isso ele se apartasse de ti por algum tempo, para que tu o recuperasses para sempre, não mais como servo, mas, em vez de servo, como irmão amado, de mim principalmente e mais ainda de ti, quer na carne quer no Senhor.",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "id": "filemom-cam-fm-02-reconciliacao-02",
+    "template": "para que tu o recuperasses para ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "tempo"
+      },
+      {
+        "id": "b",
+        "text": "sempre"
+      },
+      {
+        "id": "c",
+        "text": "carne"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filemom 1:15–16",
+    "learningObjective": "Compreender que Onésimo volta não mais como servo, mas como irmão amado, para sempre.",
+    "evidence": [
+      "Filemom 1:15",
+      "Filemom 1:16"
+    ],
+    "type": "choice",
+    "question": "O que a oposição servo/irmão amado pede de Filemom?",
+    "prompt": "O que a oposição servo/irmão amado pede de Filemom?",
+    "cue": "O que a oposição servo/irmão amado pede de Filemom?",
+    "feedbackCorrect": "Certo: receber Onésimo numa relação nova, não no status antigo.",
+    "feedbackWrong": {
+      "a": "O texto não restaura o escravo como se nada tivesse mudado.",
+      "c": "A afeição vale também no Senhor, não só na carne.",
+      "d": "Paulo não trata a ausência como prejuízo sem sentido."
+    },
+    "passageText": "Talvez por isso ele se apartasse de ti por algum tempo, para que tu o recuperasses para sempre, não mais como servo, mas, em vez de servo, como irmão amado, de mim principalmente e mais ainda de ti, quer na carne quer no Senhor.",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "id": "filemom-cam-fm-02-reconciliacao-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Restaurar Onésimo exatamente no mesmo lugar de escravo"
+      },
+      {
+        "id": "b",
+        "text": "Recebê-lo numa relação nova, como irmão amado"
+      },
+      {
+        "id": "c",
+        "text": "Amar Onésimo só na carne, nunca no Senhor"
+      },
+      {
+        "id": "d",
+        "text": "Ver a ausência apenas como prejuízo sem propósito"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filemom 1:15–16",
+    "learningObjective": "Compreender que Onésimo volta não mais como servo, mas como irmão amado, para sempre.",
+    "evidence": [
+      "Filemom 1:15",
+      "Filemom 1:16"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Filemom 1:15–16?",
+    "prompt": "Como se encadeiam os eventos de Filemom 1:15–16?",
+    "cue": "Como se encadeiam os eventos de Filemom 1:15–16?",
+    "feedbackCorrect": "Certo: ausência breve, recuperação permanente, novo nome de irmão.",
+    "feedbackWrong": {
+      "b": "O novo status vem depois da recuperação, não antes.",
+      "c": "Releia: primeiro o apartar-se por algum tempo."
+    },
+    "passageText": "Talvez por isso ele se apartasse de ti por algum tempo, para que tu o recuperasses para sempre, não mais como servo, mas, em vez de servo, como irmão amado, de mim principalmente e mais ainda de ti, quer na carne quer no Senhor.",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "id": "filemom-cam-fm-02-reconciliacao-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Onésimo se apartou por algum tempo"
+      },
+      {
+        "id": "b",
+        "text": "Filemom o recupera para sempre"
+      },
+      {
+        "id": "c",
+        "text": "O vínculo agora é de irmão amado, na carne e no Senhor"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filemom 1:15–16",
+    "learningObjective": "Compreender que Onésimo volta não mais como servo, mas como irmão amado, para sempre.",
+    "evidence": [
+      "Filemom 1:15",
+      "Filemom 1:16"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Talvez por isso ele se ___ de ti por algum tempo\"",
+    "prompt": "Complete a frase: \"Talvez por isso ele se ___ de ti por algum tempo\"",
+    "cue": "Complete a frase: \"Talvez por isso ele se ___ de ti por algum tempo\"",
+    "feedbackCorrect": "Certo: o verbo do trecho é apartasse.",
+    "feedbackWrong": {
+      "b": "Recuperasses vem depois, como propósito da ausência.",
+      "c": "Amado descreve o irmão, não este verbo."
+    },
+    "passageText": "Talvez por isso ele se apartasse de ti por algum tempo, para que tu o recuperasses para sempre, não mais como servo, mas, em vez de servo, como irmão amado, de mim principalmente e mais ainda de ti, quer na carne quer no Senhor.",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "id": "filemom-cam-fm-02-reconciliacao-05",
+    "template": "Talvez por isso ele se ___ de ti por algum tempo",
+    "options": [
+      {
+        "id": "a",
+        "text": "apartasse"
+      },
+      {
+        "id": "b",
+        "text": "recuperasses"
+      },
+      {
+        "id": "c",
+        "text": "amado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filemom 1:15–16",
+    "learningObjective": "Compreender que Onésimo volta não mais como servo, mas como irmão amado, para sempre.",
+    "evidence": [
+      "Filemom 1:15",
+      "Filemom 1:16"
+    ],
+    "type": "connect",
+    "question": "O que Filemom 1:15–16 comunica que se liga a este contexto?",
+    "prompt": "O que Filemom 1:15–16 comunica que se liga a este contexto?",
+    "cue": "O que Filemom 1:15–16 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a reconciliação restaura para sempre, sob nome de irmão.",
+    "feedbackWrong": {
+      "a": "O texto recusa o retorno como mero servo.",
+      "b": "A ausência teve propósito; não foi só fuga sem sentido."
+    },
+    "passageText": "Talvez por isso ele se apartasse de ti por algum tempo, para que tu o recuperasses para sempre, não mais como servo, mas, em vez de servo, como irmão amado, de mim principalmente e mais ainda de ti, quer na carne quer no Senhor.",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "id": "filemom-cam-fm-02-reconciliacao-06",
+    "passageA": {
+      "ref": "Filemom 1:15–16",
+      "text": "Talvez por isso ele se apartasse de ti por algum tempo, para que tu o recuperasses para sempre, não mais como servo, mas, em vez de servo, como irmão amado, de mim principalmente e mais ainda de ti, quer na carne quer no Senhor."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O evangelho muda o status: Onésimo volta não como servo, mas como irmão amado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Volta ao mesmo contrato de servo"
+      },
+      {
+        "id": "b",
+        "text": "Fuga definitiva sem reconciliação"
+      },
+      {
+        "id": "c",
+        "text": "Recuperação para sempre como irmão"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filemom 1:15–16",
+    "learningObjective": "Compreender que Onésimo volta não mais como servo, mas como irmão amado, para sempre.",
+    "evidence": [
+      "Filemom 1:15",
+      "Filemom 1:16"
+    ],
+    "type": "true_false",
+    "question": "Chamar Onésimo de irmão amado na carne e no Senhor deixa intacto o status de mero servo.",
+    "prompt": "Chamar Onésimo de irmão amado na carne e no Senhor deixa intacto o status de mero servo.",
+    "cue": "Chamar Onésimo de irmão amado na carne e no Senhor deixa intacto o status de mero servo.",
+    "feedbackCorrect": "Certo: o texto recusa o mero servo e instala o irmão amado.",
+    "feedbackWrong": {
+      "true": "Não mais como servo: o status antigo não permanece intacto."
+    },
+    "passageText": "Talvez por isso ele se apartasse de ti por algum tempo, para que tu o recuperasses para sempre, não mais como servo, mas, em vez de servo, como irmão amado, de mim principalmente e mais ainda de ti, quer na carne quer no Senhor.",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "id": "filemom-pro-fm-02-reconciliacao-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filemom 1:15–16",
+    "learningObjective": "Compreender que Onésimo volta não mais como servo, mas como irmão amado, para sempre.",
+    "evidence": [
+      "Filemom 1:15",
+      "Filemom 1:16"
+    ],
+    "type": "tap",
+    "question": "Em Filemom 1:15–16, toque a palavra que falta em \"quer na carne quer no ___\"?",
+    "prompt": "Em Filemom 1:15–16, toque a palavra que falta em \"quer na carne quer no ___\"?",
+    "cue": "Em Filemom 1:15–16, toque a palavra que falta em \"quer na carne quer no ___\"?",
+    "feedbackCorrect": "Exato: o vínculo vale na carne e no Senhor.",
+    "feedbackWrong": {
+      "a": "Tempo fala da ausência, não deste par.",
+      "b": "Carne é o outro polo do par, não esta lacuna."
+    },
+    "passageText": "Talvez por isso ele se apartasse de ti por algum tempo, para que tu o recuperasses para sempre, não mais como servo, mas, em vez de servo, como irmão amado, de mim principalmente e mais ainda de ti, quer na carne quer no Senhor.",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "id": "filemom-pro-fm-02-reconciliacao-02",
+    "template": "quer na carne quer no ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "tempo"
+      },
+      {
+        "id": "b",
+        "text": "carne"
+      },
+      {
+        "id": "c",
+        "text": "Senhor"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filemom 1:15–16",
+    "learningObjective": "Compreender que Onésimo volta não mais como servo, mas como irmão amado, para sempre.",
+    "evidence": [
+      "Filemom 1:15",
+      "Filemom 1:16"
+    ],
+    "type": "choice",
+    "question": "O que a carta prepara Filemom a reconhecer ao chamar Onésimo de irmão?",
+    "prompt": "O que a carta prepara Filemom a reconhecer ao chamar Onésimo de irmão?",
+    "cue": "O que a carta prepara Filemom a reconhecer ao chamar Onésimo de irmão?",
+    "feedbackCorrect": "Certo: no Senhor, o outro deixa de ser posse e passa a ser família.",
+    "feedbackWrong": {
+      "a": "O evangelho não consagra a escravidão; ele a transfigura em irmandade.",
+      "b": "Paulo também ama Onésimo; Filemom é chamado a amar ainda mais.",
+      "c": "A reconciliação é permanente, não um favor passageiro."
+    },
+    "passageText": "Talvez por isso ele se apartasse de ti por algum tempo, para que tu o recuperasses para sempre, não mais como servo, mas, em vez de servo, como irmão amado, de mim principalmente e mais ainda de ti, quer na carne quer no Senhor.",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "id": "filemom-pro-fm-02-reconciliacao-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "O evangelho existe para reforçar o direito de possuir pessoas"
+      },
+      {
+        "id": "b",
+        "text": "Só Paulo deve amar Onésimo; Filemom pode permanecer distante"
+      },
+      {
+        "id": "c",
+        "text": "A reconciliação é um favor temporário, sem vínculo eterno"
+      },
+      {
+        "id": "d",
+        "text": "No Senhor, Onésimo é família amada, não mais mero servo"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filemom 1:15–16",
+    "learningObjective": "Compreender que Onésimo volta não mais como servo, mas como irmão amado, para sempre.",
+    "evidence": [
+      "Filemom 1:15",
+      "Filemom 1:16"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Filemom 1:15–16?",
+    "prompt": "Qual sequência revela o sentido de Filemom 1:15–16?",
+    "cue": "Qual sequência revela o sentido de Filemom 1:15–16?",
+    "feedbackCorrect": "Certo: ausência lida com propósito, recuperação eterna, irmandade.",
+    "feedbackWrong": {
+      "b": "A irmandade é o destino, não o ponto de partida.",
+      "c": "Releia: primeiro a ausência breve com propósito."
+    },
+    "passageText": "Talvez por isso ele se apartasse de ti por algum tempo, para que tu o recuperasses para sempre, não mais como servo, mas, em vez de servo, como irmão amado, de mim principalmente e mais ainda de ti, quer na carne quer no Senhor.",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "id": "filemom-pro-fm-02-reconciliacao-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "A ausência breve é lida com propósito, não só como perda"
+      },
+      {
+        "id": "b",
+        "text": "Filemom recupera Onésimo para sempre"
+      },
+      {
+        "id": "c",
+        "text": "O nome novo é irmão amado, na carne e no Senhor"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filemom 1:15–16",
+    "learningObjective": "Compreender que Onésimo volta não mais como servo, mas como irmão amado, para sempre.",
+    "evidence": [
+      "Filemom 1:15",
+      "Filemom 1:16"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"como irmão ___, de mim principalmente e mais ainda de ti\"",
+    "prompt": "Complete a frase: \"como irmão ___, de mim principalmente e mais ainda de ti\"",
+    "cue": "Complete a frase: \"como irmão ___, de mim principalmente e mais ainda de ti\"",
+    "feedbackCorrect": "Certo: o adjetivo do irmão é amado.",
+    "feedbackWrong": {
+      "a": "Servo é o status antigo, não este adjetivo.",
+      "b": "Sempre descreve a duração da recuperação."
+    },
+    "passageText": "Talvez por isso ele se apartasse de ti por algum tempo, para que tu o recuperasses para sempre, não mais como servo, mas, em vez de servo, como irmão amado, de mim principalmente e mais ainda de ti, quer na carne quer no Senhor.",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "id": "filemom-pro-fm-02-reconciliacao-05",
+    "template": "como irmão ___, de mim principalmente e mais ainda de ti",
+    "options": [
+      {
+        "id": "a",
+        "text": "servo"
+      },
+      {
+        "id": "b",
+        "text": "sempre"
+      },
+      {
+        "id": "c",
+        "text": "amado"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filemom 1:15–16",
+    "learningObjective": "Compreender que Onésimo volta não mais como servo, mas como irmão amado, para sempre.",
+    "evidence": [
+      "Filemom 1:15",
+      "Filemom 1:16"
+    ],
+    "type": "connect",
+    "question": "O que Filemom 1:15–16 comunica que se liga a este contexto?",
+    "prompt": "O que Filemom 1:15–16 comunica que se liga a este contexto?",
+    "cue": "O que Filemom 1:15–16 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o evangelho instala irmandade onde havia só servo.",
+    "feedbackWrong": {
+      "a": "O texto não devolve Onésimo como objeto.",
+      "c": "A mudança de nome é teológica, não cosmética."
+    },
+    "passageText": "Talvez por isso ele se apartasse de ti por algum tempo, para que tu o recuperasses para sempre, não mais como servo, mas, em vez de servo, como irmão amado, de mim principalmente e mais ainda de ti, quer na carne quer no Senhor.",
+    "trail": "filemom",
+    "section": "fm-02-reconciliacao",
+    "id": "filemom-pro-fm-02-reconciliacao-06",
+    "passageA": {
+      "ref": "Filemom 1:15–16",
+      "text": "Talvez por isso ele se apartasse de ti por algum tempo, para que tu o recuperasses para sempre, não mais como servo, mas, em vez de servo, como irmão amado, de mim principalmente e mais ainda de ti, quer na carne quer no Senhor."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O evangelho muda o status: Onésimo volta não como servo, mas como irmão amado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Devolução de um objeto perdido"
+      },
+      {
+        "id": "b",
+        "text": "Irmandade que substitui o mero servo"
+      },
+      {
+        "id": "c",
+        "text": "Troca de título sem mudar a relação"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filemom 1:17–18",
+    "learningObjective": "Perceber que Paulo assume a dívida de Onésimo e pede que Filemom o receba como a si mesmo.",
+    "evidence": [
+      "Filemom 1:17",
+      "Filemom 1:18"
+    ],
+    "type": "true_false",
+    "question": "Paulo pede que Filemom receba Onésimo como receberia o próprio Paulo.",
+    "prompt": "Paulo pede que Filemom receba Onésimo como receberia o próprio Paulo.",
+    "cue": "Paulo pede que Filemom receba Onésimo como receberia o próprio Paulo.",
+    "feedbackCorrect": "Certo: recebe-o como a mim é o pedido explícito.",
+    "feedbackWrong": {
+      "false": "Releia Filemom 1:17: recebe-o como a mim."
+    },
+    "passageText": "Se, pois, me tens por companheiro, recebe-o como a mim. Se te fez algum mal ou se te deve alguma coisa, lança-o na minha conta.",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "id": "filemom-sem-fm-03-desafio-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filemom 1:17–18",
+    "learningObjective": "Perceber que Paulo assume a dívida de Onésimo e pede que Filemom o receba como a si mesmo.",
+    "evidence": [
+      "Filemom 1:17",
+      "Filemom 1:18"
+    ],
+    "type": "tap",
+    "question": "Em Filemom 1:17–18, toque a palavra que falta em \"Se, pois, me tens por ___, recebe-o como a mim\"?",
+    "prompt": "Em Filemom 1:17–18, toque a palavra que falta em \"Se, pois, me tens por ___, recebe-o como a mim\"?",
+    "cue": "Em Filemom 1:17–18, toque a palavra que falta em \"Se, pois, me tens por ___, recebe-o como a mim\"?",
+    "feedbackCorrect": "Exato: o vínculo invocado é o de companheiro.",
+    "feedbackWrong": {
+      "b": "Conta aparece no versículo 18, não nesta lacuna.",
+      "c": "Mal descreve o prejuízo, não o título de Paulo."
+    },
+    "passageText": "Se, pois, me tens por companheiro, recebe-o como a mim. Se te fez algum mal ou se te deve alguma coisa, lança-o na minha conta.",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "id": "filemom-sem-fm-03-desafio-02",
+    "template": "Se, pois, me tens por ___, recebe-o como a mim",
+    "options": [
+      {
+        "id": "a",
+        "text": "companheiro"
+      },
+      {
+        "id": "b",
+        "text": "conta"
+      },
+      {
+        "id": "c",
+        "text": "mal"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filemom 1:17–18",
+    "learningObjective": "Perceber que Paulo assume a dívida de Onésimo e pede que Filemom o receba como a si mesmo.",
+    "evidence": [
+      "Filemom 1:17",
+      "Filemom 1:18"
+    ],
+    "type": "choice",
+    "question": "Qual fato o texto afirma sobre a dívida de Onésimo?",
+    "prompt": "Qual fato o texto afirma sobre a dívida de Onésimo?",
+    "cue": "Qual fato o texto afirma sobre a dívida de Onésimo?",
+    "feedbackCorrect": "Certo: Paulo manda lançar o mal ou a dívida na sua conta.",
+    "feedbackWrong": {
+      "a": "Paulo assume a conta; não a ignora.",
+      "b": "O pedido é receber como a Paulo, não recusar.",
+      "d": "A conta é de Paulo, não de Onésimo sozinho."
+    },
+    "passageText": "Se, pois, me tens por companheiro, recebe-o como a mim. Se te fez algum mal ou se te deve alguma coisa, lança-o na minha conta.",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "id": "filemom-sem-fm-03-desafio-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo manda Filemom ignorar qualquer prejuízo"
+      },
+      {
+        "id": "b",
+        "text": "Paulo pede que Filemom recuse Onésimo até pagar"
+      },
+      {
+        "id": "c",
+        "text": "Se Onésimo fez mal ou deve, lance-se na conta de Paulo"
+      },
+      {
+        "id": "d",
+        "text": "A dívida permanece só na conta de Onésimo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filemom 1:17–18",
+    "learningObjective": "Perceber que Paulo assume a dívida de Onésimo e pede que Filemom o receba como a si mesmo.",
+    "evidence": [
+      "Filemom 1:17",
+      "Filemom 1:18"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Filemom 1:17–18?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Filemom 1:17–18?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Filemom 1:17–18?",
+    "feedbackCorrect": "Certo: companheiro, receber como a Paulo, lançar na conta dele.",
+    "feedbackWrong": {
+      "b": "A conta vem depois do receber, não antes.",
+      "c": "O vínculo de companheiro abre o trecho."
+    },
+    "passageText": "Se, pois, me tens por companheiro, recebe-o como a mim. Se te fez algum mal ou se te deve alguma coisa, lança-o na minha conta.",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "id": "filemom-sem-fm-03-desafio-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Se, pois, me tens por companheiro"
+      },
+      {
+        "id": "b",
+        "text": "recebe-o como a mim"
+      },
+      {
+        "id": "c",
+        "text": "Se te fez algum mal ou se te deve alguma coisa, lança-o na minha conta"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filemom 1:17–18",
+    "learningObjective": "Perceber que Paulo assume a dívida de Onésimo e pede que Filemom o receba como a si mesmo.",
+    "evidence": [
+      "Filemom 1:17",
+      "Filemom 1:18"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Se te fez algum ___, ou se te deve alguma coisa, lança-o na minha conta\"",
+    "prompt": "Complete a frase: \"Se te fez algum ___, ou se te deve alguma coisa, lança-o na minha conta\"",
+    "cue": "Complete a frase: \"Se te fez algum ___, ou se te deve alguma coisa, lança-o na minha conta\"",
+    "feedbackCorrect": "Certo: o texto fala de algum mal.",
+    "feedbackWrong": {
+      "a": "Conta é o destino da dívida, não este substantivo.",
+      "c": "Companheiro é o título de Paulo no v. 17."
+    },
+    "passageText": "Se, pois, me tens por companheiro, recebe-o como a mim. Se te fez algum mal ou se te deve alguma coisa, lança-o na minha conta.",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "id": "filemom-sem-fm-03-desafio-05",
+    "template": "Se te fez algum ___, ou se te deve alguma coisa, lança-o na minha conta",
+    "options": [
+      {
+        "id": "a",
+        "text": "conta"
+      },
+      {
+        "id": "b",
+        "text": "mal"
+      },
+      {
+        "id": "c",
+        "text": "companheiro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filemom 1:17–18",
+    "learningObjective": "Perceber que Paulo assume a dívida de Onésimo e pede que Filemom o receba como a si mesmo.",
+    "evidence": [
+      "Filemom 1:17",
+      "Filemom 1:18"
+    ],
+    "type": "connect",
+    "question": "O que Filemom 1:17–18 comunica que se liga a este contexto?",
+    "prompt": "O que Filemom 1:17–18 comunica que se liga a este contexto?",
+    "cue": "O que Filemom 1:17–18 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Paulo põe a dívida na própria conta e pede acolhida.",
+    "feedbackWrong": {
+      "b": "O texto assume o custo; não o transfere de volta.",
+      "c": "Receber como a Paulo é graça, não cobrança."
+    },
+    "passageText": "Se, pois, me tens por companheiro, recebe-o como a mim. Se te fez algum mal ou se te deve alguma coisa, lança-o na minha conta.",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "id": "filemom-sem-fm-03-desafio-06",
+    "passageA": {
+      "ref": "Filemom 1:17–18",
+      "text": "Se, pois, me tens por companheiro, recebe-o como a mim. Se te fez algum mal ou se te deve alguma coisa, lança-o na minha conta."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Paulo põe a dívida de Onésimo na própria conta: reconciliação com custo assumido."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Dívida lançada na conta de Paulo"
+      },
+      {
+        "id": "b",
+        "text": "Onésimo deve pagar sozinho"
+      },
+      {
+        "id": "c",
+        "text": "Filemom deve cobrar com rigor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filemom 1:17–18",
+    "learningObjective": "Perceber que Paulo assume a dívida de Onésimo e pede que Filemom o receba como a si mesmo.",
+    "evidence": [
+      "Filemom 1:17",
+      "Filemom 1:18"
+    ],
+    "type": "true_false",
+    "question": "Paulo deixa a dívida de Onésimo exclusivamente nas mãos de Filemom, sem assumir nada.",
+    "prompt": "Paulo deixa a dívida de Onésimo exclusivamente nas mãos de Filemom, sem assumir nada.",
+    "cue": "Paulo deixa a dívida de Onésimo exclusivamente nas mãos de Filemom, sem assumir nada.",
+    "feedbackCorrect": "Certo: lança-o na minha conta é exatamente assumir o custo.",
+    "feedbackWrong": {
+      "true": "O apóstolo transfere a dívida para a própria conta."
+    },
+    "passageText": "Se, pois, me tens por companheiro, recebe-o como a mim. Se te fez algum mal ou se te deve alguma coisa, lança-o na minha conta.",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "id": "filemom-cam-fm-03-desafio-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filemom 1:17–18",
+    "learningObjective": "Perceber que Paulo assume a dívida de Onésimo e pede que Filemom o receba como a si mesmo.",
+    "evidence": [
+      "Filemom 1:17",
+      "Filemom 1:18"
+    ],
+    "type": "tap",
+    "question": "Em Filemom 1:17–18, toque a palavra que falta em \"lança-o na minha ___\"?",
+    "prompt": "Em Filemom 1:17–18, toque a palavra que falta em \"lança-o na minha ___\"?",
+    "cue": "Em Filemom 1:17–18, toque a palavra que falta em \"lança-o na minha ___\"?",
+    "feedbackCorrect": "Exato: a dívida vai para a conta de Paulo.",
+    "feedbackWrong": {
+      "a": "Mal nomeia o prejuízo, não o destino da dívida.",
+      "c": "Companheiro é o título do v. 17."
+    },
+    "passageText": "Se, pois, me tens por companheiro, recebe-o como a mim. Se te fez algum mal ou se te deve alguma coisa, lança-o na minha conta.",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "id": "filemom-cam-fm-03-desafio-02",
+    "template": "lança-o na minha ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "mal"
+      },
+      {
+        "id": "b",
+        "text": "conta"
+      },
+      {
+        "id": "c",
+        "text": "companheiro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filemom 1:17–18",
+    "learningObjective": "Perceber que Paulo assume a dívida de Onésimo e pede que Filemom o receba como a si mesmo.",
+    "evidence": [
+      "Filemom 1:17",
+      "Filemom 1:18"
+    ],
+    "type": "choice",
+    "question": "O que une receber Onésimo como a Paulo e lançar a dívida na conta dele?",
+    "prompt": "O que une receber Onésimo como a Paulo e lançar a dívida na conta dele?",
+    "cue": "O que une receber Onésimo como a Paulo e lançar a dívida na conta dele?",
+    "feedbackCorrect": "Certo: a acolhida tem o mesmo peso da comunhão com o apóstolo.",
+    "feedbackWrong": {
+      "a": "Paulo não pede esquecimento barato; assume o custo.",
+      "c": "A comunhão com Paulo inclui acolher Onésimo.",
+      "d": "O mal é reconhecido e coberto, não negado."
+    },
+    "passageText": "Se, pois, me tens por companheiro, recebe-o como a mim. Se te fez algum mal ou se te deve alguma coisa, lança-o na minha conta.",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "id": "filemom-cam-fm-03-desafio-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo pede que Filemom finja que nunca houve prejuízo"
+      },
+      {
+        "id": "b",
+        "text": "Acolher Onésimo é tratar a comunhão com Paulo como real"
+      },
+      {
+        "id": "c",
+        "text": "Ser companheiro de Paulo dispensa receber Onésimo"
+      },
+      {
+        "id": "d",
+        "text": "A dívida prova que Onésimo não pode ser irmão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filemom 1:17–18",
+    "learningObjective": "Perceber que Paulo assume a dívida de Onésimo e pede que Filemom o receba como a si mesmo.",
+    "evidence": [
+      "Filemom 1:17",
+      "Filemom 1:18"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Filemom 1:17–18?",
+    "prompt": "Como se encadeiam os eventos de Filemom 1:17–18?",
+    "cue": "Como se encadeiam os eventos de Filemom 1:17–18?",
+    "feedbackCorrect": "Certo: comunhão, acolhida equivalente, custo assumido.",
+    "feedbackWrong": {
+      "b": "A conta vem depois do receber, não no meio invertido.",
+      "c": "Releia: primeiro o se me tens por companheiro."
+    },
+    "passageText": "Se, pois, me tens por companheiro, recebe-o como a mim. Se te fez algum mal ou se te deve alguma coisa, lança-o na minha conta.",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "id": "filemom-cam-fm-03-desafio-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Filemom é chamado a tratar Paulo como companheiro"
+      },
+      {
+        "id": "b",
+        "text": "Por isso deve receber Onésimo como receberia a Paulo"
+      },
+      {
+        "id": "c",
+        "text": "Qualquer mal ou dívida passa para a conta de Paulo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filemom 1:17–18",
+    "learningObjective": "Perceber que Paulo assume a dívida de Onésimo e pede que Filemom o receba como a si mesmo.",
+    "evidence": [
+      "Filemom 1:17",
+      "Filemom 1:18"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"ou se te ___ alguma coisa, lança-o na minha conta\"",
+    "prompt": "Complete a frase: \"ou se te ___ alguma coisa, lança-o na minha conta\"",
+    "cue": "Complete a frase: \"ou se te ___ alguma coisa, lança-o na minha conta\"",
+    "feedbackCorrect": "Certo: o verbo é deve.",
+    "feedbackWrong": {
+      "b": "Fez liga ao mal, não a esta lacuna.",
+      "c": "Recebe-o está no versículo 17."
+    },
+    "passageText": "Se, pois, me tens por companheiro, recebe-o como a mim. Se te fez algum mal ou se te deve alguma coisa, lança-o na minha conta.",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "id": "filemom-cam-fm-03-desafio-05",
+    "template": "ou se te ___ alguma coisa, lança-o na minha conta",
+    "options": [
+      {
+        "id": "a",
+        "text": "deve"
+      },
+      {
+        "id": "b",
+        "text": "fez"
+      },
+      {
+        "id": "c",
+        "text": "recebe-o"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filemom 1:17–18",
+    "learningObjective": "Perceber que Paulo assume a dívida de Onésimo e pede que Filemom o receba como a si mesmo.",
+    "evidence": [
+      "Filemom 1:17",
+      "Filemom 1:18"
+    ],
+    "type": "connect",
+    "question": "O que Filemom 1:17–18 comunica que se liga a este contexto?",
+    "prompt": "O que Filemom 1:17–18 comunica que se liga a este contexto?",
+    "cue": "O que Filemom 1:17–18 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: reconciliação custa, e Paulo paga o custo.",
+    "feedbackWrong": {
+      "a": "O texto não pede perdão sem preço; assume a conta.",
+      "b": "A acolhida é como a Paulo, não um favor menor."
+    },
+    "passageText": "Se, pois, me tens por companheiro, recebe-o como a mim. Se te fez algum mal ou se te deve alguma coisa, lança-o na minha conta.",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "id": "filemom-cam-fm-03-desafio-06",
+    "passageA": {
+      "ref": "Filemom 1:17–18",
+      "text": "Se, pois, me tens por companheiro, recebe-o como a mim. Se te fez algum mal ou se te deve alguma coisa, lança-o na minha conta."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Paulo põe a dívida de Onésimo na própria conta: reconciliação com custo assumido."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Perdão barato sem qualquer custo"
+      },
+      {
+        "id": "b",
+        "text": "Acolhida menor do que a devida a Paulo"
+      },
+      {
+        "id": "c",
+        "text": "Graça que assume a dívida do outro"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filemom 1:17–18",
+    "learningObjective": "Perceber que Paulo assume a dívida de Onésimo e pede que Filemom o receba como a si mesmo.",
+    "evidence": [
+      "Filemom 1:17",
+      "Filemom 1:18"
+    ],
+    "type": "true_false",
+    "question": "Ao lançar a dívida na própria conta, Paulo ensina reconciliação que assume o custo do outro.",
+    "prompt": "Ao lançar a dívida na própria conta, Paulo ensina reconciliação que assume o custo do outro.",
+    "cue": "Ao lançar a dívida na própria conta, Paulo ensina reconciliação que assume o custo do outro.",
+    "feedbackCorrect": "Certo: a graça aqui não é barata; ela paga o que o outro deve.",
+    "feedbackWrong": {
+      "false": "Lança-o na minha conta é o custo assumido da reconciliação."
+    },
+    "passageText": "Se, pois, me tens por companheiro, recebe-o como a mim. Se te fez algum mal ou se te deve alguma coisa, lança-o na minha conta.",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "id": "filemom-pro-fm-03-desafio-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filemom 1:17–18",
+    "learningObjective": "Perceber que Paulo assume a dívida de Onésimo e pede que Filemom o receba como a si mesmo.",
+    "evidence": [
+      "Filemom 1:17",
+      "Filemom 1:18"
+    ],
+    "type": "tap",
+    "question": "Em Filemom 1:17–18, toque a palavra que falta em \"recebe-o como a ___\"?",
+    "prompt": "Em Filemom 1:17–18, toque a palavra que falta em \"recebe-o como a ___\"?",
+    "cue": "Em Filemom 1:17–18, toque a palavra que falta em \"recebe-o como a ___\"?",
+    "feedbackCorrect": "Exato: receber Onésimo é recebê-lo como a Paulo.",
+    "feedbackWrong": {
+      "a": "Mal nomeia o prejuízo, não o padrão da acolhida.",
+      "b": "Conta é o destino da dívida, não esta lacuna."
+    },
+    "passageText": "Se, pois, me tens por companheiro, recebe-o como a mim. Se te fez algum mal ou se te deve alguma coisa, lança-o na minha conta.",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "id": "filemom-pro-fm-03-desafio-02",
+    "template": "recebe-o como a ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "mal"
+      },
+      {
+        "id": "b",
+        "text": "conta"
+      },
+      {
+        "id": "c",
+        "text": "mim"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filemom 1:17–18",
+    "learningObjective": "Perceber que Paulo assume a dívida de Onésimo e pede que Filemom o receba como a si mesmo.",
+    "evidence": [
+      "Filemom 1:17",
+      "Filemom 1:18"
+    ],
+    "type": "choice",
+    "question": "O que este gesto de Paulo prepara o leitor a entender sobre a graça?",
+    "prompt": "O que este gesto de Paulo prepara o leitor a entender sobre a graça?",
+    "cue": "O que este gesto de Paulo prepara o leitor a entender sobre a graça?",
+    "feedbackCorrect": "Certo: a graça reconcilia pagando, não fingindo que a dívida não existe.",
+    "feedbackWrong": {
+      "a": "Paulo não apela a um direito de dono; apela à comunhão.",
+      "b": "A dívida é reconhecida e coberta, não negada.",
+      "c": "Filemom é desafiado a uma acolhida do tamanho de Paulo."
+    },
+    "passageText": "Se, pois, me tens por companheiro, recebe-o como a mim. Se te fez algum mal ou se te deve alguma coisa, lança-o na minha conta.",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "id": "filemom-pro-fm-03-desafio-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "A graça autoriza Filemom a exigir Onésimo como posse"
+      },
+      {
+        "id": "b",
+        "text": "A graça consiste em negar que houve mal ou dívida"
+      },
+      {
+        "id": "c",
+        "text": "A graça pede a Filemom uma acolhida fria e distante"
+      },
+      {
+        "id": "d",
+        "text": "A graça reconcilia quando alguém assume o custo do outro"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filemom 1:17–18",
+    "learningObjective": "Perceber que Paulo assume a dívida de Onésimo e pede que Filemom o receba como a si mesmo.",
+    "evidence": [
+      "Filemom 1:17",
+      "Filemom 1:18"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Filemom 1:17–18?",
+    "prompt": "Qual sequência revela o sentido de Filemom 1:17–18?",
+    "cue": "Qual sequência revela o sentido de Filemom 1:17–18?",
+    "feedbackCorrect": "Certo: comunhão invocada, acolhida equivalente, substituição da dívida.",
+    "feedbackWrong": {
+      "b": "A substituição da dívida fecha o sentido, não o abre.",
+      "c": "Releia: primeiro a comunhão de companheiro."
+    },
+    "passageText": "Se, pois, me tens por companheiro, recebe-o como a mim. Se te fez algum mal ou se te deve alguma coisa, lança-o na minha conta.",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "id": "filemom-pro-fm-03-desafio-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo invoca a comunhão de companheiro"
+      },
+      {
+        "id": "b",
+        "text": "Filemom deve receber Onésimo como receberia a Paulo"
+      },
+      {
+        "id": "c",
+        "text": "Paulo substitui Onésimo na conta do mal e da dívida"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filemom 1:17–18",
+    "learningObjective": "Perceber que Paulo assume a dívida de Onésimo e pede que Filemom o receba como a si mesmo.",
+    "evidence": [
+      "Filemom 1:17",
+      "Filemom 1:18"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Se te fez algum mal ou se te deve alguma coisa, ___ na minha conta\"",
+    "prompt": "Complete a frase: \"Se te fez algum mal ou se te deve alguma coisa, ___ na minha conta\"",
+    "cue": "Complete a frase: \"Se te fez algum mal ou se te deve alguma coisa, ___ na minha conta\"",
+    "feedbackCorrect": "Certo: o verbo é lança-o.",
+    "feedbackWrong": {
+      "a": "Recebe-o está no pedido de acolhida, v. 17.",
+      "b": "Deve descreve a dívida, não este imperativo."
+    },
+    "passageText": "Se, pois, me tens por companheiro, recebe-o como a mim. Se te fez algum mal ou se te deve alguma coisa, lança-o na minha conta.",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "id": "filemom-pro-fm-03-desafio-05",
+    "template": "Se te fez algum mal ou se te deve alguma coisa, ___ na minha conta",
+    "options": [
+      {
+        "id": "a",
+        "text": "recebe-o"
+      },
+      {
+        "id": "b",
+        "text": "deve"
+      },
+      {
+        "id": "c",
+        "text": "lança-o"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filemom 1:17–18",
+    "learningObjective": "Perceber que Paulo assume a dívida de Onésimo e pede que Filemom o receba como a si mesmo.",
+    "evidence": [
+      "Filemom 1:17",
+      "Filemom 1:18"
+    ],
+    "type": "connect",
+    "question": "O que Filemom 1:17–18 comunica que se liga a este contexto?",
+    "prompt": "O que Filemom 1:17–18 comunica que se liga a este contexto?",
+    "cue": "O que Filemom 1:17–18 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: reconciliação cristã carrega o custo no lugar do outro.",
+    "feedbackWrong": {
+      "a": "O texto não devolve Onésimo à cobrança.",
+      "c": "A graça aqui é substitutiva, não indiferente."
+    },
+    "passageText": "Se, pois, me tens por companheiro, recebe-o como a mim. Se te fez algum mal ou se te deve alguma coisa, lança-o na minha conta.",
+    "trail": "filemom",
+    "section": "fm-03-desafio",
+    "id": "filemom-pro-fm-03-desafio-06",
+    "passageA": {
+      "ref": "Filemom 1:17–18",
+      "text": "Se, pois, me tens por companheiro, recebe-o como a mim. Se te fez algum mal ou se te deve alguma coisa, lança-o na minha conta."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Paulo põe a dívida de Onésimo na própria conta: reconciliação com custo assumido."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cobrança integral do fugitivo"
+      },
+      {
+        "id": "b",
+        "text": "Substituição que paga a dívida alheia"
+      },
+      {
+        "id": "c",
+        "text": "Indiferença diante do mal feito"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  }
+]

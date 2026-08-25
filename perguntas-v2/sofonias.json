@@ -1,0 +1,2225 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Sofonias 1:14–15",
+    "learningObjective": "Reconhecer que o Dia de Jeová está perto e é dia de indignação, trevas e juízo.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 1:15"
+    ],
+    "type": "true_false",
+    "question": "O grande Dia de Jeová está perto e vem chegando a toda a pressa.",
+    "prompt": "O grande Dia de Jeová está perto e vem chegando a toda a pressa.",
+    "cue": "O grande Dia de Jeová está perto e vem chegando a toda a pressa.",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "id": "sofonias-sem-sofonias-sofonias-01-dia-de-juizo-01",
+    "feedbackCorrect": "Certo: é exatamente o que Sofonias 1:14 afirma.",
+    "feedbackWrong": {
+      "false": "Releia o versículo: o Dia de Jeová está perto."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa, a saber, a voz do Dia de Jeová; ali, o valente clama amargamente. Esse dia é dia de indignação, dia de tribulação e angústia, dia de alvoroço e de assolação, dia de trevas e de escuridão, dia de nuvens e negrume."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Sofonias 1:14–15",
+    "learningObjective": "Reconhecer que o Dia de Jeová está perto e é dia de indignação, trevas e juízo.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 1:15"
+    ],
+    "type": "tap",
+    "question": "Em Sofonias 1:14–15, toque a palavra que falta em \"O grande Dia de Jeová está ___, e vem chegando a toda a pressa\"?",
+    "prompt": "Em Sofonias 1:14–15, toque a palavra que falta em \"O grande Dia de Jeová está ___, e vem chegando a toda a pressa\"?",
+    "cue": "Em Sofonias 1:14–15, toque a palavra que falta em \"O grande Dia de Jeová está ___, e vem chegando a toda a pressa\"?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "id": "sofonias-sem-sofonias-sofonias-01-dia-de-juizo-02",
+    "feedbackCorrect": "Exato: o texto diz que o Dia de Jeová está perto.",
+    "feedbackWrong": {
+      "a": "Grande descreve o Dia, não a proximidade.",
+      "c": "Pressa fala da velocidade, não da proximidade."
+    },
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa, a saber, a voz do Dia de Jeová; ali, o valente clama amargamente. Esse dia é dia de indignação, dia de tribulação e angústia, dia de alvoroço e de assolação, dia de trevas e de escuridão, dia de nuvens e negrume.",
+    "template": "O grande Dia de Jeová está ___, e vem chegando a toda a pressa",
+    "options": [
+      {
+        "id": "a",
+        "text": "grande"
+      },
+      {
+        "id": "b",
+        "text": "perto"
+      },
+      {
+        "id": "c",
+        "text": "pressa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Sofonias 1:14–15",
+    "learningObjective": "Reconhecer que o Dia de Jeová está perto e é dia de indignação, trevas e juízo.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 1:15"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelo texto em Sofonias 1:14–15?",
+    "prompt": "Qual afirmação é feita diretamente pelo texto em Sofonias 1:14–15?",
+    "cue": "Qual afirmação é feita diretamente pelo texto em Sofonias 1:14–15?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "id": "sofonias-sem-sofonias-sofonias-01-dia-de-juizo-03",
+    "feedbackCorrect": "Certo: o valente clama amargamente na voz daquele Dia.",
+    "feedbackWrong": {
+      "a": "O texto não diz que o Dia já passou; diz que está perto.",
+      "b": "O Dia é de trevas e indignação, não de festa.",
+      "d": "O clamor amargo é do valente, não um cântico de paz."
+    },
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa, a saber, a voz do Dia de Jeová; ali, o valente clama amargamente. Esse dia é dia de indignação, dia de tribulação e angústia, dia de alvoroço e de assolação, dia de trevas e de escuridão, dia de nuvens e negrume.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Dia de Jeová já passou e agora reina a paz."
+      },
+      {
+        "id": "b",
+        "text": "O Dia de Jeová é descrito como festa e clareza."
+      },
+      {
+        "id": "c",
+        "text": "Ali, o valente clama amargamente no Dia de Jeová."
+      },
+      {
+        "id": "d",
+        "text": "O valente canta de alegria no Dia de Jeová."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Sofonias 1:14–15",
+    "learningObjective": "Reconhecer que o Dia de Jeová está perto e é dia de indignação, trevas e juízo.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 1:15"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Sofonias 1:14–15?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Sofonias 1:14–15?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Sofonias 1:14–15?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "id": "sofonias-sem-sofonias-sofonias-01-dia-de-juizo-04",
+    "feedbackCorrect": "Certo: primeiro a proximidade do Dia, depois o clamor, então as trevas.",
+    "feedbackWrong": {
+      "b": "O clamor do valente vem depois da proximidade do Dia.",
+      "c": "As trevas descrevem o Dia, não o abrem."
+    },
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa, a saber, a voz do Dia de Jeová; ali, o valente clama amargamente. Esse dia é dia de indignação, dia de tribulação e angústia, dia de alvoroço e de assolação, dia de trevas e de escuridão, dia de nuvens e negrume.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O grande Dia de Jeová está perto e vem a toda a pressa"
+      },
+      {
+        "id": "b",
+        "text": "Ali, o valente clama amargamente"
+      },
+      {
+        "id": "c",
+        "text": "Esse dia é dia de indignação, trevas e escuridão"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Sofonias 1:14–15",
+    "learningObjective": "Reconhecer que o Dia de Jeová está perto e é dia de indignação, trevas e juízo.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 1:15"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Esse dia é dia de ___, dia de tribulação e angústia\"",
+    "prompt": "Complete a frase: \"Esse dia é dia de ___, dia de tribulação e angústia\"",
+    "cue": "Complete a frase: \"Esse dia é dia de ___, dia de tribulação e angústia\"",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "id": "sofonias-sem-sofonias-sofonias-01-dia-de-juizo-05",
+    "feedbackCorrect": "Certo: o texto chama aquele dia de dia de indignação.",
+    "feedbackWrong": {
+      "b": "Trevas aparece depois, nesta mesma lista.",
+      "c": "Pressa descreve a chegada do Dia, não este título."
+    },
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa, a saber, a voz do Dia de Jeová; ali, o valente clama amargamente. Esse dia é dia de indignação, dia de tribulação e angústia, dia de alvoroço e de assolação, dia de trevas e de escuridão, dia de nuvens e negrume.",
+    "template": "Esse dia é dia de ___, dia de tribulação e angústia",
+    "options": [
+      {
+        "id": "a",
+        "text": "indignação"
+      },
+      {
+        "id": "b",
+        "text": "trevas"
+      },
+      {
+        "id": "c",
+        "text": "pressa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Sofonias 1:14–15",
+    "learningObjective": "Reconhecer que o Dia de Jeová está perto e é dia de indignação, trevas e juízo.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 1:15"
+    ],
+    "type": "connect",
+    "question": "O que Sofonias 1:14–15 comunica que se liga a este contexto?",
+    "prompt": "O que Sofonias 1:14–15 comunica que se liga a este contexto?",
+    "cue": "O que Sofonias 1:14–15 comunica que se liga a este contexto?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "id": "sofonias-sem-sofonias-sofonias-01-dia-de-juizo-06",
+    "feedbackCorrect": "Certo: o trecho anuncia o Dia de Jeová como juízo iminente.",
+    "feedbackWrong": {
+      "b": "O texto descreve juízo, não uma festa civil.",
+      "c": "O Dia está perto; não é só memória antiga."
+    },
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa, a saber, a voz do Dia de Jeová; ali, o valente clama amargamente. Esse dia é dia de indignação, dia de tribulação e angústia, dia de alvoroço e de assolação, dia de trevas e de escuridão, dia de nuvens e negrume.",
+    "passageA": {
+      "ref": "Sofonias 1:14–15",
+      "text": "O grande Dia de Jeová está perto e vem chegando a toda a pressa, a saber, a voz do Dia de Jeová; ali, o valente clama amargamente. Esse dia é dia de indignação, dia de tribulação e angústia, dia de alvoroço e de assolação, dia de trevas e de escuridão, dia de nuvens e negrume."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Dia de Jeová não é distante: está perto e traz juízo real sobre a terra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Juízo iminente de Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Festa nacional em Jerusalém"
+      },
+      {
+        "id": "c",
+        "text": "Lembrança de um juízo antigo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Sofonias 1:14–15",
+    "learningObjective": "Reconhecer que o Dia de Jeová está perto e é dia de indignação, trevas e juízo.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 1:15"
+    ],
+    "type": "true_false",
+    "question": "O texto trata o Dia de Jeová como ameaça distante, sem urgência para o ouvinte.",
+    "prompt": "O texto trata o Dia de Jeová como ameaça distante, sem urgência para o ouvinte.",
+    "cue": "O texto trata o Dia de Jeová como ameaça distante, sem urgência para o ouvinte.",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "id": "sofonias-cam-sofonias-sofonias-01-dia-de-juizo-01",
+    "feedbackCorrect": "Certo: o texto insiste que o Dia está perto e vem a toda a pressa.",
+    "feedbackWrong": {
+      "true": "Perto e a toda a pressa são o oposto de uma ameaça vaga."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa, a saber, a voz do Dia de Jeová; ali, o valente clama amargamente. Esse dia é dia de indignação, dia de tribulação e angústia, dia de alvoroço e de assolação, dia de trevas e de escuridão, dia de nuvens e negrume."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Sofonias 1:14–15",
+    "learningObjective": "Reconhecer que o Dia de Jeová está perto e é dia de indignação, trevas e juízo.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 1:15"
+    ],
+    "type": "tap",
+    "question": "Em Sofonias 1:14–15, toque a palavra que falta em \"ali, o ___ clama amargamente\"?",
+    "prompt": "Em Sofonias 1:14–15, toque a palavra que falta em \"ali, o ___ clama amargamente\"?",
+    "cue": "Em Sofonias 1:14–15, toque a palavra que falta em \"ali, o ___ clama amargamente\"?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "id": "sofonias-cam-sofonias-sofonias-01-dia-de-juizo-02",
+    "feedbackCorrect": "Exato: é o valente quem clama amargamente naquele Dia.",
+    "feedbackWrong": {
+      "a": "Dia nomeia o tempo, não quem clama.",
+      "c": "Jeová é o Senhor do Dia, não o que clama aqui."
+    },
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa, a saber, a voz do Dia de Jeová; ali, o valente clama amargamente. Esse dia é dia de indignação, dia de tribulação e angústia, dia de alvoroço e de assolação, dia de trevas e de escuridão, dia de nuvens e negrume.",
+    "template": "ali, o ___ clama amargamente",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dia"
+      },
+      {
+        "id": "b",
+        "text": "valente"
+      },
+      {
+        "id": "c",
+        "text": "Jeová"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Sofonias 1:14–15",
+    "learningObjective": "Reconhecer que o Dia de Jeová está perto e é dia de indignação, trevas e juízo.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 1:15"
+    ],
+    "type": "choice",
+    "question": "Qual ideia melhor conecta Sofonias 1:14–15 ao anúncio do Dia?",
+    "prompt": "Qual ideia melhor conecta Sofonias 1:14–15 ao anúncio do Dia?",
+    "cue": "Qual ideia melhor conecta Sofonias 1:14–15 ao anúncio do Dia?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "id": "sofonias-cam-sofonias-sofonias-01-dia-de-juizo-03",
+    "feedbackCorrect": "Certo: o Dia chega rápido e nenhum valente fica em paz.",
+    "feedbackWrong": {
+      "a": "O texto une proximidade e terror; não é só calendário.",
+      "c": "O clamor amargo mostra o contrário da confiança humana.",
+      "d": "Trevas e indignação descrevem juízo, não colheita."
+    },
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa, a saber, a voz do Dia de Jeová; ali, o valente clama amargamente. Esse dia é dia de indignação, dia de tribulação e angústia, dia de alvoroço e de assolação, dia de trevas e de escuridão, dia de nuvens e negrume.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O profeta só marca uma data, sem peso moral."
+      },
+      {
+        "id": "b",
+        "text": "A pressa do Dia mostra que o juízo não espera."
+      },
+      {
+        "id": "c",
+        "text": "O valente clama porque confia na própria força."
+      },
+      {
+        "id": "d",
+        "text": "Trevas e negrume descrevem apenas uma tempestade."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Sofonias 1:14–15",
+    "learningObjective": "Reconhecer que o Dia de Jeová está perto e é dia de indignação, trevas e juízo.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 1:15"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Sofonias 1:14–15?",
+    "prompt": "Como se encadeiam os eventos de Sofonias 1:14–15?",
+    "cue": "Como se encadeiam os eventos de Sofonias 1:14–15?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "id": "sofonias-cam-sofonias-sofonias-01-dia-de-juizo-04",
+    "feedbackCorrect": "Certo: o Dia se aproxima, a voz se ouve, o caráter do Dia se revela.",
+    "feedbackWrong": {
+      "b": "A voz do Dia vem com a chegada, não depois das trevas.",
+      "c": "Releia: primeiro a proximidade, depois o clamor."
+    },
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa, a saber, a voz do Dia de Jeová; ali, o valente clama amargamente. Esse dia é dia de indignação, dia de tribulação e angústia, dia de alvoroço e de assolação, dia de trevas e de escuridão, dia de nuvens e negrume.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Dia de Jeová está perto e vem a toda a pressa"
+      },
+      {
+        "id": "b",
+        "text": "A voz do Dia se faz ouvir e o valente clama"
+      },
+      {
+        "id": "c",
+        "text": "O Dia se mostra de indignação, trevas e negrume"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Sofonias 1:14–15",
+    "learningObjective": "Reconhecer que o Dia de Jeová está perto e é dia de indignação, trevas e juízo.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 1:15"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"O grande Dia de Jeová está perto e vem chegando a toda a ___\"",
+    "prompt": "Complete a frase: \"O grande Dia de Jeová está perto e vem chegando a toda a ___\"",
+    "cue": "Complete a frase: \"O grande Dia de Jeová está perto e vem chegando a toda a ___\"",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "id": "sofonias-cam-sofonias-sofonias-01-dia-de-juizo-05",
+    "feedbackCorrect": "Certo: o Dia vem chegando a toda a pressa.",
+    "feedbackWrong": {
+      "a": "Perto já apareceu antes nesta frase.",
+      "c": "Indignação descreve o caráter do Dia, não a chegada."
+    },
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa, a saber, a voz do Dia de Jeová; ali, o valente clama amargamente. Esse dia é dia de indignação, dia de tribulação e angústia, dia de alvoroço e de assolação, dia de trevas e de escuridão, dia de nuvens e negrume.",
+    "template": "O grande Dia de Jeová está perto e vem chegando a toda a ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "perto"
+      },
+      {
+        "id": "b",
+        "text": "pressa"
+      },
+      {
+        "id": "c",
+        "text": "indignação"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Sofonias 1:14–15",
+    "learningObjective": "Reconhecer que o Dia de Jeová está perto e é dia de indignação, trevas e juízo.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 1:15"
+    ],
+    "type": "connect",
+    "question": "O que Sofonias 1:14–15 comunica que se liga a este contexto?",
+    "prompt": "O que Sofonias 1:14–15 comunica que se liga a este contexto?",
+    "cue": "O que Sofonias 1:14–15 comunica que se liga a este contexto?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "id": "sofonias-cam-sofonias-sofonias-01-dia-de-juizo-06",
+    "feedbackCorrect": "Certo: a urgência do Dia chama a buscar a Jeová agora.",
+    "feedbackWrong": {
+      "a": "O tom do trecho é de juízo, não de festa.",
+      "c": "A pressa do Dia impede adiar a busca."
+    },
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa, a saber, a voz do Dia de Jeová; ali, o valente clama amargamente. Esse dia é dia de indignação, dia de tribulação e angústia, dia de alvoroço e de assolação, dia de trevas e de escuridão, dia de nuvens e negrume.",
+    "passageA": {
+      "ref": "Sofonias 1:14–15",
+      "text": "O grande Dia de Jeová está perto e vem chegando a toda a pressa, a saber, a voz do Dia de Jeová; ali, o valente clama amargamente. Esse dia é dia de indignação, dia de tribulação e angústia, dia de alvoroço e de assolação, dia de trevas e de escuridão, dia de nuvens e negrume."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A intro da missão é: Buscai ao Senhor. O juízo próximo torna essa busca urgente."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Convite a uma festa no templo"
+      },
+      {
+        "id": "b",
+        "text": "Urgência de buscar a Jeová"
+      },
+      {
+        "id": "c",
+        "text": "Licença para adiar o arrependimento"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Sofonias 1:14–15",
+    "learningObjective": "Reconhecer que o Dia de Jeová está perto e é dia de indignação, trevas e juízo.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 1:15"
+    ],
+    "type": "true_false",
+    "question": "A descrição de trevas e indignação prepara o leitor para levar a sério o juízo de Deus.",
+    "prompt": "A descrição de trevas e indignação prepara o leitor para levar a sério o juízo de Deus.",
+    "cue": "A descrição de trevas e indignação prepara o leitor para levar a sério o juízo de Deus.",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "id": "sofonias-pro-sofonias-sofonias-01-dia-de-juizo-01",
+    "feedbackCorrect": "Certo: o texto não suaviza o Dia; ele o torna inescapável.",
+    "feedbackWrong": {
+      "false": "Trevas, angústia e clamor amargo visam despertar, não entreter."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa, a saber, a voz do Dia de Jeová; ali, o valente clama amargamente. Esse dia é dia de indignação, dia de tribulação e angústia, dia de alvoroço e de assolação, dia de trevas e de escuridão, dia de nuvens e negrume."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Sofonias 1:14–15",
+    "learningObjective": "Reconhecer que o Dia de Jeová está perto e é dia de indignação, trevas e juízo.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 1:15"
+    ],
+    "type": "tap",
+    "question": "Em Sofonias 1:14–15, toque a palavra que falta em \"Esse dia é dia de indignação, dia de tribulação e ___\"?",
+    "prompt": "Em Sofonias 1:14–15, toque a palavra que falta em \"Esse dia é dia de indignação, dia de tribulação e ___\"?",
+    "cue": "Em Sofonias 1:14–15, toque a palavra que falta em \"Esse dia é dia de indignação, dia de tribulação e ___\"?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "id": "sofonias-pro-sofonias-sofonias-01-dia-de-juizo-02",
+    "feedbackCorrect": "Exato: o texto acumula angústia junto com tribulação.",
+    "feedbackWrong": {
+      "a": "Trevas vem mais adiante na mesma lista.",
+      "c": "Negrume fecha a lista, não este par."
+    },
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa, a saber, a voz do Dia de Jeová; ali, o valente clama amargamente. Esse dia é dia de indignação, dia de tribulação e angústia, dia de alvoroço e de assolação, dia de trevas e de escuridão, dia de nuvens e negrume.",
+    "template": "Esse dia é dia de indignação, dia de tribulação e ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "trevas"
+      },
+      {
+        "id": "b",
+        "text": "angústia"
+      },
+      {
+        "id": "c",
+        "text": "negrume"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Sofonias 1:14–15",
+    "learningObjective": "Reconhecer que o Dia de Jeová está perto e é dia de indignação, trevas e juízo.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 1:15"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de Sofonias 1:14–15?",
+    "prompt": "Qual leitura interpreta melhor o sentido de Sofonias 1:14–15?",
+    "cue": "Qual leitura interpreta melhor o sentido de Sofonias 1:14–15?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "id": "sofonias-pro-sofonias-sofonias-01-dia-de-juizo-03",
+    "feedbackCorrect": "Certo: o juízo de Deus é sério e se aproxima de fato.",
+    "feedbackWrong": {
+      "a": "O texto fala de um Dia real de Jeová, não de humor do profeta.",
+      "b": "O valente clama: força humana não segura aquele Dia.",
+      "d": "A pressa do Dia impede tratar o juízo como lenda."
+    },
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa, a saber, a voz do Dia de Jeová; ali, o valente clama amargamente. Esse dia é dia de indignação, dia de tribulação e angústia, dia de alvoroço e de assolação, dia de trevas e de escuridão, dia de nuvens e negrume.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Dia de Jeová é só uma imagem do humor do profeta."
+      },
+      {
+        "id": "b",
+        "text": "O valente mostra que o herói humano controla o Dia."
+      },
+      {
+        "id": "c",
+        "text": "O juízo de Deus é iminente e nenhum valente o sustenta."
+      },
+      {
+        "id": "d",
+        "text": "O texto ensina que o juízo de Deus ficou no passado."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Sofonias 1:14–15",
+    "learningObjective": "Reconhecer que o Dia de Jeová está perto e é dia de indignação, trevas e juízo.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 1:15"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Sofonias 1:14–15?",
+    "prompt": "Qual sequência revela o sentido de Sofonias 1:14–15?",
+    "cue": "Qual sequência revela o sentido de Sofonias 1:14–15?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "id": "sofonias-pro-sofonias-sofonias-01-dia-de-juizo-04",
+    "feedbackCorrect": "Certo: proximidade, quebra do valente e caráter tenebroso do Dia.",
+    "feedbackWrong": {
+      "b": "O clamor do valente expõe a falha da força, não a celebra.",
+      "c": "As trevas interpretam o Dia, não o cancelam."
+    },
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa, a saber, a voz do Dia de Jeová; ali, o valente clama amargamente. Esse dia é dia de indignação, dia de tribulação e angústia, dia de alvoroço e de assolação, dia de trevas e de escuridão, dia de nuvens e negrume.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Dia de Jeová se aproxima com pressa"
+      },
+      {
+        "id": "b",
+        "text": "Até o valente clama, sem recurso próprio"
+      },
+      {
+        "id": "c",
+        "text": "O Dia se revela como indignação e trevas"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Sofonias 1:14–15",
+    "learningObjective": "Reconhecer que o Dia de Jeová está perto e é dia de indignação, trevas e juízo.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 1:15"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Esse dia é dia de trevas e de ___, dia de nuvens e negrume\"",
+    "prompt": "Complete a frase: \"Esse dia é dia de trevas e de ___, dia de nuvens e negrume\"",
+    "cue": "Complete a frase: \"Esse dia é dia de trevas e de ___, dia de nuvens e negrume\"",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "id": "sofonias-pro-sofonias-sofonias-01-dia-de-juizo-05",
+    "feedbackCorrect": "Certo: o texto fala de escuridão, não de clareza.",
+    "feedbackWrong": {
+      "a": "Alegria não pertence a esta lista de juízo.",
+      "c": "Júbilo aparece noutro trecho do livro, não aqui."
+    },
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa, a saber, a voz do Dia de Jeová; ali, o valente clama amargamente. Esse dia é dia de indignação, dia de tribulação e angústia, dia de alvoroço e de assolação, dia de trevas e de escuridão, dia de nuvens e negrume.",
+    "template": "Esse dia é dia de trevas e de ___, dia de nuvens e negrume",
+    "options": [
+      {
+        "id": "a",
+        "text": "alegria"
+      },
+      {
+        "id": "b",
+        "text": "escuridão"
+      },
+      {
+        "id": "c",
+        "text": "júbilo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Sofonias 1:14–15",
+    "learningObjective": "Reconhecer que o Dia de Jeová está perto e é dia de indignação, trevas e juízo.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 1:15"
+    ],
+    "type": "connect",
+    "question": "O que Sofonias 1:14–15 comunica que se liga a este contexto?",
+    "prompt": "O que Sofonias 1:14–15 comunica que se liga a este contexto?",
+    "cue": "O que Sofonias 1:14–15 comunica que se liga a este contexto?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-01-dia-de-juizo",
+    "id": "sofonias-pro-sofonias-sofonias-01-dia-de-juizo-06",
+    "feedbackCorrect": "Certo: o trecho chama a temer o Dia e buscar a Jeová.",
+    "feedbackWrong": {
+      "a": "O tom é de juízo, não de segurança automática.",
+      "c": "O clamor do valente nega a confiança na força."
+    },
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa, a saber, a voz do Dia de Jeová; ali, o valente clama amargamente. Esse dia é dia de indignação, dia de tribulação e angústia, dia de alvoroço e de assolação, dia de trevas e de escuridão, dia de nuvens e negrume.",
+    "passageA": {
+      "ref": "Sofonias 1:14–15",
+      "text": "O grande Dia de Jeová está perto e vem chegando a toda a pressa, a saber, a voz do Dia de Jeová; ali, o valente clama amargamente. Esse dia é dia de indignação, dia de tribulação e angústia, dia de alvoroço e de assolação, dia de trevas e de escuridão, dia de nuvens e negrume."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Dia de Jeová não é distante: está perto e traz juízo real sobre a terra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Segurança automática do povo"
+      },
+      {
+        "id": "b",
+        "text": "Chamado a temer o Dia"
+      },
+      {
+        "id": "c",
+        "text": "Confiança na força do valente"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Sofonias 3:17",
+    "learningObjective": "Compreender que Jeová está no meio do seu povo, salva e se alegra sobre ele.",
+    "evidence": [
+      "Sofonias 3:17"
+    ],
+    "type": "true_false",
+    "question": "Jeová teu Deus está no meio de ti; o poderoso que salvará.",
+    "prompt": "Jeová teu Deus está no meio de ti; o poderoso que salvará.",
+    "cue": "Jeová teu Deus está no meio de ti; o poderoso que salvará.",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "id": "sofonias-sem-sofonias-sofonias-02-o-senhor-se-alegra-p-01",
+    "feedbackCorrect": "Certo: é o começo literal de Sofonias 3:17.",
+    "feedbackWrong": {
+      "false": "Releia o versículo: Jeová está no meio e é o poderoso que salva."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Sofonias 3:17",
+    "learningObjective": "Compreender que Jeová está no meio do seu povo, salva e se alegra sobre ele.",
+    "evidence": [
+      "Sofonias 3:17"
+    ],
+    "type": "tap",
+    "question": "Em Sofonias 3:17, toque a palavra que falta em \"Jeová teu Deus está no ___ de ti; o poderoso que salvará\"?",
+    "prompt": "Em Sofonias 3:17, toque a palavra que falta em \"Jeová teu Deus está no ___ de ti; o poderoso que salvará\"?",
+    "cue": "Em Sofonias 3:17, toque a palavra que falta em \"Jeová teu Deus está no ___ de ti; o poderoso que salvará\"?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "id": "sofonias-sem-sofonias-sofonias-02-o-senhor-se-alegra-p-02",
+    "feedbackCorrect": "Exato: o texto diz que Jeová está no meio do povo.",
+    "feedbackWrong": {
+      "b": "Amor aparece depois, na ação de descansar.",
+      "c": "Júbilo fecha o versículo, não este lugar."
+    },
+    "passageText": "Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo.",
+    "template": "Jeová teu Deus está no ___ de ti; o poderoso que salvará",
+    "options": [
+      {
+        "id": "a",
+        "text": "meio"
+      },
+      {
+        "id": "b",
+        "text": "amor"
+      },
+      {
+        "id": "c",
+        "text": "júbilo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Sofonias 3:17",
+    "learningObjective": "Compreender que Jeová está no meio do seu povo, salva e se alegra sobre ele.",
+    "evidence": [
+      "Sofonias 3:17"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelo texto em Sofonias 3:17?",
+    "prompt": "Qual afirmação é feita diretamente pelo texto em Sofonias 3:17?",
+    "cue": "Qual afirmação é feita diretamente pelo texto em Sofonias 3:17?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "id": "sofonias-sem-sofonias-sofonias-02-o-senhor-se-alegra-p-03",
+    "feedbackCorrect": "Certo: Jeová se regozija no povo com alegria.",
+    "feedbackWrong": {
+      "a": "O texto o chama de poderoso que salvará, não de ausente.",
+      "c": "Não há silêncio triste: há júbilo sobre o povo.",
+      "d": "O versículo fala de alegria de Deus, não de abandono."
+    },
+    "passageText": "Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová permanece longe e não pode salvar."
+      },
+      {
+        "id": "b",
+        "text": "Jeová se regozijará em ti com alegria."
+      },
+      {
+        "id": "c",
+        "text": "Jeová se cala em tristeza sobre Jerusalém."
+      },
+      {
+        "id": "d",
+        "text": "Jeová abandona o povo no dia da angústia."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Sofonias 3:17",
+    "learningObjective": "Compreender que Jeová está no meio do seu povo, salva e se alegra sobre ele.",
+    "evidence": [
+      "Sofonias 3:17"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Sofonias 3:17?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Sofonias 3:17?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Sofonias 3:17?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "id": "sofonias-sem-sofonias-sofonias-02-o-senhor-se-alegra-p-04",
+    "feedbackCorrect": "Certo: presença, salvação, depois alegria e júbilo.",
+    "feedbackWrong": {
+      "b": "A salvação vem do poderoso que está no meio.",
+      "c": "O júbilo fecha o versículo, não o abre."
+    },
+    "passageText": "Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová teu Deus está no meio de ti"
+      },
+      {
+        "id": "b",
+        "text": "O poderoso que salvará"
+      },
+      {
+        "id": "c",
+        "text": "Se regozijará em ti e exultará com júbilo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Sofonias 3:17",
+    "learningObjective": "Compreender que Jeová está no meio do seu povo, salva e se alegra sobre ele.",
+    "evidence": [
+      "Sofonias 3:17"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"o poderoso que ___, se regozijará em ti com alegria\"",
+    "prompt": "Complete a frase: \"o poderoso que ___, se regozijará em ti com alegria\"",
+    "cue": "Complete a frase: \"o poderoso que ___, se regozijará em ti com alegria\"",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "id": "sofonias-sem-sofonias-sofonias-02-o-senhor-se-alegra-p-05",
+    "feedbackCorrect": "Certo: o texto o chama de poderoso que salvará.",
+    "feedbackWrong": {
+      "a": "Julgará não está neste versículo.",
+      "c": "Abandonará é o oposto do que o texto diz."
+    },
+    "passageText": "Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo.",
+    "template": "o poderoso que ___, se regozijará em ti com alegria",
+    "options": [
+      {
+        "id": "a",
+        "text": "julgará"
+      },
+      {
+        "id": "b",
+        "text": "salvará"
+      },
+      {
+        "id": "c",
+        "text": "abandonará"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Sofonias 3:17",
+    "learningObjective": "Compreender que Jeová está no meio do seu povo, salva e se alegra sobre ele.",
+    "evidence": [
+      "Sofonias 3:17"
+    ],
+    "type": "connect",
+    "question": "O que Sofonias 3:17 comunica que se liga a este contexto?",
+    "prompt": "O que Sofonias 3:17 comunica que se liga a este contexto?",
+    "cue": "O que Sofonias 3:17 comunica que se liga a este contexto?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "id": "sofonias-sem-sofonias-sofonias-02-o-senhor-se-alegra-p-06",
+    "feedbackCorrect": "Certo: Deus está no meio e se alegra sobre o seu povo.",
+    "feedbackWrong": {
+      "b": "O versículo é de presença e júbilo, não de distância.",
+      "c": "Há salvação e canto, não só sentença."
+    },
+    "passageText": "Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo.",
+    "passageA": {
+      "ref": "Sofonias 3:17",
+      "text": "Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus não só julga: no meio do remanescente, ele canta de alegria."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus canta sobre o remanescente"
+      },
+      {
+        "id": "b",
+        "text": "Deus permanece longe do povo"
+      },
+      {
+        "id": "c",
+        "text": "Deus só anuncia sentença sem salvação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Sofonias 3:17",
+    "learningObjective": "Compreender que Jeová está no meio do seu povo, salva e se alegra sobre ele.",
+    "evidence": [
+      "Sofonias 3:17"
+    ],
+    "type": "true_false",
+    "question": "O versículo descreve Jeová apenas como juiz distante, sem afeto pelo povo.",
+    "prompt": "O versículo descreve Jeová apenas como juiz distante, sem afeto pelo povo.",
+    "cue": "O versículo descreve Jeová apenas como juiz distante, sem afeto pelo povo.",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "id": "sofonias-cam-sofonias-sofonias-02-o-senhor-se-alegra-p-01",
+    "feedbackCorrect": "Certo: ele se alegra, descansa no amor e exulta com júbilo.",
+    "feedbackWrong": {
+      "true": "Alegria, amor e júbilo no texto desmentem um Deus só distante."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Sofonias 3:17",
+    "learningObjective": "Compreender que Jeová está no meio do seu povo, salva e se alegra sobre ele.",
+    "evidence": [
+      "Sofonias 3:17"
+    ],
+    "type": "tap",
+    "question": "Em Sofonias 3:17, toque a palavra que falta em \"descansará no seu ___, exultará sobre ti com júbilo\"?",
+    "prompt": "Em Sofonias 3:17, toque a palavra que falta em \"descansará no seu ___, exultará sobre ti com júbilo\"?",
+    "cue": "Em Sofonias 3:17, toque a palavra que falta em \"descansará no seu ___, exultará sobre ti com júbilo\"?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "id": "sofonias-cam-sofonias-sofonias-02-o-senhor-se-alegra-p-02",
+    "feedbackCorrect": "Exato: ele descansa no seu amor.",
+    "feedbackWrong": {
+      "a": "Júbilo é o modo de exultar, no fim da frase.",
+      "c": "Meio já apareceu no começo do versículo."
+    },
+    "passageText": "Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo.",
+    "template": "descansará no seu ___, exultará sobre ti com júbilo",
+    "options": [
+      {
+        "id": "a",
+        "text": "júbilo"
+      },
+      {
+        "id": "b",
+        "text": "amor"
+      },
+      {
+        "id": "c",
+        "text": "meio"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Sofonias 3:17",
+    "learningObjective": "Compreender que Jeová está no meio do seu povo, salva e se alegra sobre ele.",
+    "evidence": [
+      "Sofonias 3:17"
+    ],
+    "type": "choice",
+    "question": "Qual ideia melhor conecta Sofonias 3:17 à alegria de Deus pelo povo?",
+    "prompt": "Qual ideia melhor conecta Sofonias 3:17 à alegria de Deus pelo povo?",
+    "cue": "Qual ideia melhor conecta Sofonias 3:17 à alegria de Deus pelo povo?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "id": "sofonias-cam-sofonias-sofonias-02-o-senhor-se-alegra-p-03",
+    "feedbackCorrect": "Certo: presença, salvação e alegria andam juntas no versículo.",
+    "feedbackWrong": {
+      "a": "O poderoso que salvará está no mesmo versículo da alegria.",
+      "c": "Descansar no amor é o contrário de cansaço ou tédio.",
+      "d": "O júbilo é de Jeová sobre o povo, não um canto vazio."
+    },
+    "passageText": "Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A alegria de Deus substitui qualquer necessidade de salvar."
+      },
+      {
+        "id": "b",
+        "text": "Quem está no meio é o mesmo que salva e se alegra."
+      },
+      {
+        "id": "c",
+        "text": "Descansar no amor significa que Deus se afastou do povo."
+      },
+      {
+        "id": "d",
+        "text": "O júbilo de Jeová é só metáfora sem relação com o povo."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Sofonias 3:17",
+    "learningObjective": "Compreender que Jeová está no meio do seu povo, salva e se alegra sobre ele.",
+    "evidence": [
+      "Sofonias 3:17"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Sofonias 3:17?",
+    "prompt": "Como se encadeiam os eventos de Sofonias 3:17?",
+    "cue": "Como se encadeiam os eventos de Sofonias 3:17?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "id": "sofonias-cam-sofonias-sofonias-02-o-senhor-se-alegra-p-04",
+    "feedbackCorrect": "Certo: presença, salvação e então o canto de Deus.",
+    "feedbackWrong": {
+      "b": "A salvação pertence ao poderoso que está no meio.",
+      "c": "O júbilo vem depois do amor, não antes da presença."
+    },
+    "passageText": "Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová está no meio do povo"
+      },
+      {
+        "id": "b",
+        "text": "Ele é o poderoso que salvará"
+      },
+      {
+        "id": "c",
+        "text": "Descansa no amor e exulta com júbilo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Sofonias 3:17",
+    "learningObjective": "Compreender que Jeová está no meio do seu povo, salva e se alegra sobre ele.",
+    "evidence": [
+      "Sofonias 3:17"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"se regozijará em ti com alegria, descansará no seu amor, ___ sobre ti com júbilo\"",
+    "prompt": "Complete a frase: \"se regozijará em ti com alegria, descansará no seu amor, ___ sobre ti com júbilo\"",
+    "cue": "Complete a frase: \"se regozijará em ti com alegria, descansará no seu amor, ___ sobre ti com júbilo\"",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "id": "sofonias-cam-sofonias-sofonias-02-o-senhor-se-alegra-p-05",
+    "feedbackCorrect": "Certo: o texto diz que ele exultará sobre ti com júbilo.",
+    "feedbackWrong": {
+      "b": "Clama é o verbo do valente em 1:14, não daqui.",
+      "c": "Cala-te aparece noutro trecho do livro."
+    },
+    "passageText": "Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo.",
+    "template": "se regozijará em ti com alegria, descansará no seu amor, ___ sobre ti com júbilo",
+    "options": [
+      {
+        "id": "a",
+        "text": "exultará"
+      },
+      {
+        "id": "b",
+        "text": "clama"
+      },
+      {
+        "id": "c",
+        "text": "cala"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Sofonias 3:17",
+    "learningObjective": "Compreender que Jeová está no meio do seu povo, salva e se alegra sobre ele.",
+    "evidence": [
+      "Sofonias 3:17"
+    ],
+    "type": "connect",
+    "question": "O que Sofonias 3:17 comunica que se liga a este contexto?",
+    "prompt": "O que Sofonias 3:17 comunica que se liga a este contexto?",
+    "cue": "O que Sofonias 3:17 comunica que se liga a este contexto?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "id": "sofonias-cam-sofonias-sofonias-02-o-senhor-se-alegra-p-06",
+    "feedbackCorrect": "Certo: o Deus que julga também se alegra sobre o remanescente.",
+    "feedbackWrong": {
+      "a": "O versículo é de júbilo, não de silêncio final.",
+      "c": "Há salvação no meio, não só ameaça."
+    },
+    "passageText": "Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo.",
+    "passageA": {
+      "ref": "Sofonias 3:17",
+      "text": "Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus não só julga: no meio do remanescente, ele canta de alegria."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Silêncio definitivo de Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Alegria de Deus pelo povo"
+      },
+      {
+        "id": "c",
+        "text": "Ameaça sem qualquer salvação"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Sofonias 3:17",
+    "learningObjective": "Compreender que Jeová está no meio do seu povo, salva e se alegra sobre ele.",
+    "evidence": [
+      "Sofonias 3:17"
+    ],
+    "type": "true_false",
+    "question": "A passagem revela um Deus que habita com o seu povo e se compraz nele.",
+    "prompt": "A passagem revela um Deus que habita com o seu povo e se compraz nele.",
+    "cue": "A passagem revela um Deus que habita com o seu povo e se compraz nele.",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "id": "sofonias-pro-sofonias-sofonias-02-o-senhor-se-alegra-p-01",
+    "feedbackCorrect": "Certo: meio, amor e júbilo descrevem comunhão, não distância fria.",
+    "feedbackWrong": {
+      "false": "Estar no meio, salvar e exultar sustentam essa leitura."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Sofonias 3:17",
+    "learningObjective": "Compreender que Jeová está no meio do seu povo, salva e se alegra sobre ele.",
+    "evidence": [
+      "Sofonias 3:17"
+    ],
+    "type": "tap",
+    "question": "Em Sofonias 3:17, toque a palavra que falta em \"exultará sobre ti com ___\"?",
+    "prompt": "Em Sofonias 3:17, toque a palavra que falta em \"exultará sobre ti com ___\"?",
+    "cue": "Em Sofonias 3:17, toque a palavra que falta em \"exultará sobre ti com ___\"?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "id": "sofonias-pro-sofonias-sofonias-02-o-senhor-se-alegra-p-02",
+    "feedbackCorrect": "Exato: o texto fecha com júbilo.",
+    "feedbackWrong": {
+      "a": "Alegria aparece antes, ligada a regozijar-se.",
+      "b": "Amor é o lugar do descanso, não deste fecho."
+    },
+    "passageText": "Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo.",
+    "template": "exultará sobre ti com ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "alegria"
+      },
+      {
+        "id": "b",
+        "text": "amor"
+      },
+      {
+        "id": "c",
+        "text": "júbilo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Sofonias 3:17",
+    "learningObjective": "Compreender que Jeová está no meio do seu povo, salva e se alegra sobre ele.",
+    "evidence": [
+      "Sofonias 3:17"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de Sofonias 3:17?",
+    "prompt": "Qual leitura interpreta melhor o sentido de Sofonias 3:17?",
+    "cue": "Qual leitura interpreta melhor o sentido de Sofonias 3:17?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "id": "sofonias-pro-sofonias-sofonias-02-o-senhor-se-alegra-p-03",
+    "feedbackCorrect": "Certo: o juízo do livro não apaga o prazer de Deus no remanescente.",
+    "feedbackWrong": {
+      "a": "O poderoso que salvará está no texto; não é fraqueza.",
+      "b": "Alegria aqui é de Deus pelo povo, não orgulho humano.",
+      "d": "Presença no meio é o contrário de ausência."
+    },
+    "passageText": "Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus precisa ser salvo pelo povo, por isso se alegra."
+      },
+      {
+        "id": "b",
+        "text": "A alegria de Deus prova que o pecado já não importa."
+      },
+      {
+        "id": "c",
+        "text": "Depois do juízo, Deus habita e se compraz no seu povo."
+      },
+      {
+        "id": "d",
+        "text": "O versículo ensina que Deus se retirou de Jerusalém."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Sofonias 3:17",
+    "learningObjective": "Compreender que Jeová está no meio do seu povo, salva e se alegra sobre ele.",
+    "evidence": [
+      "Sofonias 3:17"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Sofonias 3:17?",
+    "prompt": "Qual sequência revela o sentido de Sofonias 3:17?",
+    "cue": "Qual sequência revela o sentido de Sofonias 3:17?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "id": "sofonias-pro-sofonias-sofonias-02-o-senhor-se-alegra-p-04",
+    "feedbackCorrect": "Certo: presença, salvação e prazer de Deus no povo.",
+    "feedbackWrong": {
+      "b": "Salvar pertence ao que está no meio.",
+      "c": "O júbilo interpreta o amor, não o substitui."
+    },
+    "passageText": "Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus está no meio, não longe"
+      },
+      {
+        "id": "b",
+        "text": "Ele é poderoso para salvar"
+      },
+      {
+        "id": "c",
+        "text": "O seu prazer se torna júbilo sobre o povo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Sofonias 3:17",
+    "learningObjective": "Compreender que Jeová está no meio do seu povo, salva e se alegra sobre ele.",
+    "evidence": [
+      "Sofonias 3:17"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Jeová teu Deus está no meio de ti; o ___ que salvará\"",
+    "prompt": "Complete a frase: \"Jeová teu Deus está no meio de ti; o ___ que salvará\"",
+    "cue": "Complete a frase: \"Jeová teu Deus está no meio de ti; o ___ que salvará\"",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "id": "sofonias-pro-sofonias-sofonias-02-o-senhor-se-alegra-p-05",
+    "feedbackCorrect": "Certo: o texto o chama de o poderoso que salvará.",
+    "feedbackWrong": {
+      "a": "Valente é quem clama em 1:14, não o título aqui.",
+      "c": "Profeta não aparece neste versículo."
+    },
+    "passageText": "Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo.",
+    "template": "Jeová teu Deus está no meio de ti; o ___ que salvará",
+    "options": [
+      {
+        "id": "a",
+        "text": "valente"
+      },
+      {
+        "id": "b",
+        "text": "poderoso"
+      },
+      {
+        "id": "c",
+        "text": "profeta"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Sofonias 3:17",
+    "learningObjective": "Compreender que Jeová está no meio do seu povo, salva e se alegra sobre ele.",
+    "evidence": [
+      "Sofonias 3:17"
+    ],
+    "type": "connect",
+    "question": "O que Sofonias 3:17 comunica que se liga a este contexto?",
+    "prompt": "O que Sofonias 3:17 comunica que se liga a este contexto?",
+    "cue": "O que Sofonias 3:17 comunica que se liga a este contexto?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-02-o-senhor-se-alegra-p",
+    "id": "sofonias-pro-sofonias-sofonias-02-o-senhor-se-alegra-p-06",
+    "feedbackCorrect": "Certo: o fim do livro é comunhão e canto, não só ruína.",
+    "feedbackWrong": {
+      "a": "Há salvação e júbilo, não abandono.",
+      "b": "O prazer de Deus no povo é o centro do versículo."
+    },
+    "passageText": "Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo.",
+    "passageA": {
+      "ref": "Sofonias 3:17",
+      "text": "Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus não só julga: no meio do remanescente, ele canta de alegria."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Abandono definitivo de Sião"
+      },
+      {
+        "id": "b",
+        "text": "Indiferença de Deus pelo remanescente"
+      },
+      {
+        "id": "c",
+        "text": "Comunhão e júbilo de Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Sofonias 1:14; 3:17",
+    "learningObjective": "Unir o Dia de juízo e a alegria de Jeová no meio do povo como o fio de Sofonias.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 3:17"
+    ],
+    "type": "true_false",
+    "question": "O grande Dia de Jeová está perto, e Jeová teu Deus está no meio de ti.",
+    "prompt": "O grande Dia de Jeová está perto, e Jeová teu Deus está no meio de ti.",
+    "cue": "O grande Dia de Jeová está perto, e Jeová teu Deus está no meio de ti.",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "id": "sofonias-sem-sofonias-sofonias-03-desafio-sofonias-01",
+    "feedbackCorrect": "Certo: as duas afirmações estão nos textos do desafio.",
+    "feedbackWrong": {
+      "false": "1:14 fala da proximidade do Dia; 3:17, da presença de Jeová."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa. Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Sofonias 1:14; 3:17",
+    "learningObjective": "Unir o Dia de juízo e a alegria de Jeová no meio do povo como o fio de Sofonias.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 3:17"
+    ],
+    "type": "tap",
+    "question": "Em Sofonias 1:14; 3:17, toque a palavra que falta em \"O grande Dia de Jeová está ___ e vem chegando a toda a pressa\"?",
+    "prompt": "Em Sofonias 1:14; 3:17, toque a palavra que falta em \"O grande Dia de Jeová está ___ e vem chegando a toda a pressa\"?",
+    "cue": "Em Sofonias 1:14; 3:17, toque a palavra que falta em \"O grande Dia de Jeová está ___ e vem chegando a toda a pressa\"?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "id": "sofonias-sem-sofonias-sofonias-03-desafio-sofonias-02",
+    "feedbackCorrect": "Exato: o Dia está perto também no desafio final.",
+    "feedbackWrong": {
+      "b": "Meio descreve onde Jeová está em 3:17.",
+      "c": "Júbilo é a alegria de Deus, não a proximidade do Dia."
+    },
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa. Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo.",
+    "template": "O grande Dia de Jeová está ___ e vem chegando a toda a pressa",
+    "options": [
+      {
+        "id": "a",
+        "text": "perto"
+      },
+      {
+        "id": "b",
+        "text": "meio"
+      },
+      {
+        "id": "c",
+        "text": "júbilo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Sofonias 1:14; 3:17",
+    "learningObjective": "Unir o Dia de juízo e a alegria de Jeová no meio do povo como o fio de Sofonias.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 3:17"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelos textos de Sofonias 1:14 e 3:17?",
+    "prompt": "Qual afirmação é feita diretamente pelos textos de Sofonias 1:14 e 3:17?",
+    "cue": "Qual afirmação é feita diretamente pelos textos de Sofonias 1:14 e 3:17?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "id": "sofonias-sem-sofonias-sofonias-03-desafio-sofonias-03",
+    "feedbackCorrect": "Certo: o poderoso que salvará está no meio, segundo 3:17.",
+    "feedbackWrong": {
+      "a": "O Dia está perto; o texto não diz que ele já passou.",
+      "c": "3:17 afirma presença, não ausência.",
+      "d": "Há júbilo de Deus, não um silêncio total."
+    },
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa. Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Dia de Jeová já passou sem deixar vestígio."
+      },
+      {
+        "id": "b",
+        "text": "Jeová no meio é o poderoso que salvará."
+      },
+      {
+        "id": "c",
+        "text": "Jeová recusou estar no meio do seu povo."
+      },
+      {
+        "id": "d",
+        "text": "O livro termina sem qualquer palavra de alegria."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Sofonias 1:14; 3:17",
+    "learningObjective": "Unir o Dia de juízo e a alegria de Jeová no meio do povo como o fio de Sofonias.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 3:17"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Sofonias 1:14; 3:17?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Sofonias 1:14; 3:17?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Sofonias 1:14; 3:17?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "id": "sofonias-sem-sofonias-sofonias-03-desafio-sofonias-04",
+    "feedbackCorrect": "Certo: primeiro o Dia próximo, depois a presença que salva e se alegra.",
+    "feedbackWrong": {
+      "b": "A presença salvadora vem no segundo trecho.",
+      "c": "O júbilo fecha 3:17."
+    },
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa. Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O grande Dia de Jeová está perto e vem a toda a pressa"
+      },
+      {
+        "id": "b",
+        "text": "Jeová teu Deus está no meio de ti, o poderoso que salvará"
+      },
+      {
+        "id": "c",
+        "text": "Ele se regozijará em ti e exultará com júbilo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Sofonias 1:14; 3:17",
+    "learningObjective": "Unir o Dia de juízo e a alegria de Jeová no meio do povo como o fio de Sofonias.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 3:17"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Jeová teu Deus está no meio de ti; o poderoso que ___\"",
+    "prompt": "Complete a frase: \"Jeová teu Deus está no meio de ti; o poderoso que ___\"",
+    "cue": "Complete a frase: \"Jeová teu Deus está no meio de ti; o poderoso que ___\"",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "id": "sofonias-sem-sofonias-sofonias-03-desafio-sofonias-05",
+    "feedbackCorrect": "Certo: nos dois polos do livro, ele é o que salvará.",
+    "feedbackWrong": {
+      "a": "Clama é do valente em 1:14.",
+      "c": "Perto descreve o Dia, não este verbo."
+    },
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa. Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo.",
+    "template": "Jeová teu Deus está no meio de ti; o poderoso que ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "clama"
+      },
+      {
+        "id": "b",
+        "text": "salvará"
+      },
+      {
+        "id": "c",
+        "text": "perto"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Sofonias 1:14; 3:17",
+    "learningObjective": "Unir o Dia de juízo e a alegria de Jeová no meio do povo como o fio de Sofonias.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 3:17"
+    ],
+    "type": "connect",
+    "question": "O que Sofonias 1:14; 3:17 comunica que se liga a este contexto?",
+    "prompt": "O que Sofonias 1:14; 3:17 comunica que se liga a este contexto?",
+    "cue": "O que Sofonias 1:14; 3:17 comunica que se liga a este contexto?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "id": "sofonias-sem-sofonias-sofonias-03-desafio-sofonias-06",
+    "feedbackCorrect": "Certo: o desafio une juízo próximo e alegria de Deus.",
+    "feedbackWrong": {
+      "a": "Há júbilo em 3:17, não só ruína.",
+      "c": "O Dia está perto; não foi cancelado."
+    },
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa. Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo.",
+    "passageA": {
+      "ref": "Sofonias 1:14; 3:17",
+      "text": "O grande Dia de Jeová está perto e vem chegando a toda a pressa. Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Sofonias segura os dois polos: o Dia está perto, e Jeová se alegra sobre quem é dele."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Só ruína, sem qualquer esperança"
+      },
+      {
+        "id": "b",
+        "text": "Juízo próximo e alegria divina"
+      },
+      {
+        "id": "c",
+        "text": "Cancelamento do Dia de Jeová"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Sofonias 1:14; 3:17",
+    "learningObjective": "Unir o Dia de juízo e a alegria de Jeová no meio do povo como o fio de Sofonias.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 3:17"
+    ],
+    "type": "true_false",
+    "question": "Os dois trechos se contradizem: se o Dia está perto, Jeová não pode estar no meio com alegria.",
+    "prompt": "Os dois trechos se contradizem: se o Dia está perto, Jeová não pode estar no meio com alegria.",
+    "cue": "Os dois trechos se contradizem: se o Dia está perto, Jeová não pode estar no meio com alegria.",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "id": "sofonias-cam-sofonias-sofonias-03-desafio-sofonias-01",
+    "feedbackCorrect": "Certo: Sofonias segura juízo e presença salvadora no mesmo livro.",
+    "feedbackWrong": {
+      "true": "1:14 e 3:17 não se anulam: o juízo abre, a alegria restaura."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa. Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Sofonias 1:14; 3:17",
+    "learningObjective": "Unir o Dia de juízo e a alegria de Jeová no meio do povo como o fio de Sofonias.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 3:17"
+    ],
+    "type": "tap",
+    "question": "Em Sofonias 1:14; 3:17, toque a palavra que falta em \"o poderoso que salvará, se ___ em ti com alegria\"?",
+    "prompt": "Em Sofonias 1:14; 3:17, toque a palavra que falta em \"o poderoso que salvará, se ___ em ti com alegria\"?",
+    "cue": "Em Sofonias 1:14; 3:17, toque a palavra que falta em \"o poderoso que salvará, se ___ em ti com alegria\"?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "id": "sofonias-cam-sofonias-sofonias-03-desafio-sofonias-02",
+    "feedbackCorrect": "Exato: ele se regozijará em ti com alegria.",
+    "feedbackWrong": {
+      "a": "Perto descreve o Dia em 1:14.",
+      "c": "Pressa também pertence à chegada do Dia."
+    },
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa. Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo.",
+    "template": "o poderoso que salvará, se ___ em ti com alegria",
+    "options": [
+      {
+        "id": "a",
+        "text": "perto"
+      },
+      {
+        "id": "b",
+        "text": "regozijará"
+      },
+      {
+        "id": "c",
+        "text": "pressa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Sofonias 1:14; 3:17",
+    "learningObjective": "Unir o Dia de juízo e a alegria de Jeová no meio do povo como o fio de Sofonias.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 3:17"
+    ],
+    "type": "choice",
+    "question": "Qual ideia melhor conecta Sofonias 1:14 e 3:17 ao fio do livro?",
+    "prompt": "Qual ideia melhor conecta Sofonias 1:14 e 3:17 ao fio do livro?",
+    "cue": "Qual ideia melhor conecta Sofonias 1:14 e 3:17 ao fio do livro?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "id": "sofonias-cam-sofonias-sofonias-03-desafio-sofonias-03",
+    "feedbackCorrect": "Certo: o mesmo Deus que traz o Dia também habita e se alegra.",
+    "feedbackWrong": {
+      "a": "3:17 impede reduzir o livro a terror sem salvação.",
+      "c": "A pressa do Dia não apaga o júbilo posterior.",
+      "d": "Os dois textos pertencem ao mesmo Jeová, não a deuses rivais."
+    },
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa. Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O livro ensina medo, mas nunca fala de salvação."
+      },
+      {
+        "id": "b",
+        "text": "O Deus do Dia próximo é o que salva e se alegra."
+      },
+      {
+        "id": "c",
+        "text": "A alegria de 3:17 cancela a seriedade de 1:14."
+      },
+      {
+        "id": "d",
+        "text": "Juízo e júbilo vêm de deuses diferentes no texto."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Sofonias 1:14; 3:17",
+    "learningObjective": "Unir o Dia de juízo e a alegria de Jeová no meio do povo como o fio de Sofonias.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 3:17"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Sofonias 1:14; 3:17?",
+    "prompt": "Como se encadeiam os eventos de Sofonias 1:14; 3:17?",
+    "cue": "Como se encadeiam os eventos de Sofonias 1:14; 3:17?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "id": "sofonias-cam-sofonias-sofonias-03-desafio-sofonias-04",
+    "feedbackCorrect": "Certo: o Dia se aproxima; depois Deus está no meio e canta.",
+    "feedbackWrong": {
+      "b": "A presença salvadora segue o anúncio do Dia.",
+      "c": "O júbilo é o desfecho, não o ponto de partida."
+    },
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa. Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Dia de Jeová se aproxima a toda a pressa"
+      },
+      {
+        "id": "b",
+        "text": "Jeová está no meio como o poderoso que salva"
+      },
+      {
+        "id": "c",
+        "text": "Ele se alegra e exulta sobre o seu povo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Sofonias 1:14; 3:17",
+    "learningObjective": "Unir o Dia de juízo e a alegria de Jeová no meio do povo como o fio de Sofonias.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 3:17"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"O grande Dia de Jeová está perto e vem chegando a toda a ___\"",
+    "prompt": "Complete a frase: \"O grande Dia de Jeová está perto e vem chegando a toda a ___\"",
+    "cue": "Complete a frase: \"O grande Dia de Jeová está perto e vem chegando a toda a ___\"",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "id": "sofonias-cam-sofonias-sofonias-03-desafio-sofonias-05",
+    "feedbackCorrect": "Certo: no desafio, a pressa do Dia continua de pé.",
+    "feedbackWrong": {
+      "a": "Júbilo pertence a 3:17.",
+      "c": "Meio descreve a presença de Jeová."
+    },
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa. Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo.",
+    "template": "O grande Dia de Jeová está perto e vem chegando a toda a ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "júbilo"
+      },
+      {
+        "id": "b",
+        "text": "pressa"
+      },
+      {
+        "id": "c",
+        "text": "meio"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Sofonias 1:14; 3:17",
+    "learningObjective": "Unir o Dia de juízo e a alegria de Jeová no meio do povo como o fio de Sofonias.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 3:17"
+    ],
+    "type": "connect",
+    "question": "O que Sofonias 1:14; 3:17 comunica que se liga a este contexto?",
+    "prompt": "O que Sofonias 1:14; 3:17 comunica que se liga a este contexto?",
+    "cue": "O que Sofonias 1:14; 3:17 comunica que se liga a este contexto?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "id": "sofonias-cam-sofonias-sofonias-03-desafio-sofonias-06",
+    "feedbackCorrect": "Certo: o livro pede temor do Dia e confiança no Deus que canta.",
+    "feedbackWrong": {
+      "a": "Há mais que terror: há presença que salva.",
+      "c": "Os dois polos permanecem; nenhum apaga o outro."
+    },
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa. Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo.",
+    "passageA": {
+      "ref": "Sofonias 1:14; 3:17",
+      "text": "O grande Dia de Jeová está perto e vem chegando a toda a pressa. Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Sofonias segura os dois polos: o Dia está perto, e Jeová se alegra sobre quem é dele."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Só terror, sem qualquer consolo"
+      },
+      {
+        "id": "b",
+        "text": "Temor do Dia e canto de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Escolha entre juízo ou presença"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Sofonias 1:14; 3:17",
+    "learningObjective": "Unir o Dia de juízo e a alegria de Jeová no meio do povo como o fio de Sofonias.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 3:17"
+    ],
+    "type": "true_false",
+    "question": "Sofonias prepara o leitor para o juízo sem negar a alegria salvadora de Deus no fim.",
+    "prompt": "Sofonias prepara o leitor para o juízo sem negar a alegria salvadora de Deus no fim.",
+    "cue": "Sofonias prepara o leitor para o juízo sem negar a alegria salvadora de Deus no fim.",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "id": "sofonias-pro-sofonias-sofonias-03-desafio-sofonias-01",
+    "feedbackCorrect": "Certo: 1:14 e 3:17 juntos formam o sentido do livro.",
+    "feedbackWrong": {
+      "false": "O desafio existe precisamente para unir os dois polos."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa. Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Sofonias 1:14; 3:17",
+    "learningObjective": "Unir o Dia de juízo e a alegria de Jeová no meio do povo como o fio de Sofonias.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 3:17"
+    ],
+    "type": "tap",
+    "question": "Em Sofonias 1:14; 3:17, toque a palavra que falta em \"exultará sobre ti com ___\"?",
+    "prompt": "Em Sofonias 1:14; 3:17, toque a palavra que falta em \"exultará sobre ti com ___\"?",
+    "cue": "Em Sofonias 1:14; 3:17, toque a palavra que falta em \"exultará sobre ti com ___\"?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "id": "sofonias-pro-sofonias-sofonias-03-desafio-sofonias-02",
+    "feedbackCorrect": "Exato: o desafio também termina em júbilo.",
+    "feedbackWrong": {
+      "a": "Pressa descreve o Dia em 1:14.",
+      "b": "Perto também pertence ao primeiro trecho."
+    },
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa. Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo.",
+    "template": "exultará sobre ti com ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "pressa"
+      },
+      {
+        "id": "b",
+        "text": "perto"
+      },
+      {
+        "id": "c",
+        "text": "júbilo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Sofonias 1:14; 3:17",
+    "learningObjective": "Unir o Dia de juízo e a alegria de Jeová no meio do povo como o fio de Sofonias.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 3:17"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de Sofonias 1:14; 3:17?",
+    "prompt": "Qual leitura interpreta melhor o sentido de Sofonias 1:14; 3:17?",
+    "cue": "Qual leitura interpreta melhor o sentido de Sofonias 1:14; 3:17?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "id": "sofonias-pro-sofonias-sofonias-03-desafio-sofonias-03",
+    "feedbackCorrect": "Certo: juízo e júbilo são do mesmo Jeová, em tempos do seu plano.",
+    "feedbackWrong": {
+      "a": "3:17 não apaga 1:14; os dois permanecem.",
+      "b": "A alegria é de Deus no povo, não autonomia humana.",
+      "d": "O poderoso que salvará impede reduzir tudo a ruína."
+    },
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa. Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O júbilo de 3:17 prova que o Dia de 1:14 era falso."
+      },
+      {
+        "id": "b",
+        "text": "Depois do juízo, o povo dispensa a Jeová e se basta."
+      },
+      {
+        "id": "c",
+        "text": "O mesmo Deus julga com pressa e se alegra no remanescente."
+      },
+      {
+        "id": "d",
+        "text": "Sofonias ensina que o juízo de Deus não tem restauração."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Sofonias 1:14; 3:17",
+    "learningObjective": "Unir o Dia de juízo e a alegria de Jeová no meio do povo como o fio de Sofonias.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 3:17"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Sofonias 1:14; 3:17?",
+    "prompt": "Qual sequência revela o sentido de Sofonias 1:14; 3:17?",
+    "cue": "Qual sequência revela o sentido de Sofonias 1:14; 3:17?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "id": "sofonias-pro-sofonias-sofonias-03-desafio-sofonias-04",
+    "feedbackCorrect": "Certo: o Dia expõe o juízo; a presença revela salvação e prazer de Deus.",
+    "feedbackWrong": {
+      "b": "A salvação responde ao Dia, não o ignora.",
+      "c": "O júbilo é o desfecho teológico, não o início."
+    },
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa. Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Dia de Jeová se aproxima como juízo"
+      },
+      {
+        "id": "b",
+        "text": "Deus permanece no meio como salvador"
+      },
+      {
+        "id": "c",
+        "text": "O seu amor se torna júbilo sobre o povo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Sofonias 1:14; 3:17",
+    "learningObjective": "Unir o Dia de juízo e a alegria de Jeová no meio do povo como o fio de Sofonias.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 3:17"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Jeová teu Deus está no ___ de ti; o poderoso que salvará\"",
+    "prompt": "Complete a frase: \"Jeová teu Deus está no ___ de ti; o poderoso que salvará\"",
+    "cue": "Complete a frase: \"Jeová teu Deus está no ___ de ti; o poderoso que salvará\"",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "id": "sofonias-pro-sofonias-sofonias-03-desafio-sofonias-05",
+    "feedbackCorrect": "Certo: a presença no meio é o outro polo do Dia próximo.",
+    "feedbackWrong": {
+      "a": "Dia nomeia o juízo, não o lugar da presença.",
+      "c": "Pressa descreve a chegada do Dia."
+    },
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa. Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo.",
+    "template": "Jeová teu Deus está no ___ de ti; o poderoso que salvará",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dia"
+      },
+      {
+        "id": "b",
+        "text": "meio"
+      },
+      {
+        "id": "c",
+        "text": "pressa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Sofonias 1:14; 3:17",
+    "learningObjective": "Unir o Dia de juízo e a alegria de Jeová no meio do povo como o fio de Sofonias.",
+    "evidence": [
+      "Sofonias 1:14",
+      "Sofonias 3:17"
+    ],
+    "type": "connect",
+    "question": "O que Sofonias 1:14; 3:17 comunica que se liga a este contexto?",
+    "prompt": "O que Sofonias 1:14; 3:17 comunica que se liga a este contexto?",
+    "cue": "O que Sofonias 1:14; 3:17 comunica que se liga a este contexto?",
+    "trail": "sofonias",
+    "section": "sofonias-sofonias-03-desafio-sofonias",
+    "id": "sofonias-pro-sofonias-sofonias-03-desafio-sofonias-06",
+    "feedbackCorrect": "Certo: o livro inteiro pede temor santo e esperança no Deus que canta.",
+    "feedbackWrong": {
+      "a": "Há salvação e júbilo; não é niilismo.",
+      "b": "Os dois polos convivem no mesmo Jeová."
+    },
+    "passageText": "O grande Dia de Jeová está perto e vem chegando a toda a pressa. Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo.",
+    "passageA": {
+      "ref": "Sofonias 1:14; 3:17",
+      "text": "O grande Dia de Jeová está perto e vem chegando a toda a pressa. Jeová teu Deus está no meio de ti; o poderoso que salvará, se regozijará em ti com alegria, descansará no seu amor, exultará sobre ti com júbilo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Sofonias segura os dois polos: o Dia está perto, e Jeová se alegra sobre quem é dele."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Desespero sem qualquer saída"
+      },
+      {
+        "id": "b",
+        "text": "Contradição que anula o livro"
+      },
+      {
+        "id": "c",
+        "text": "Juízo santo e esperança cantada"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  }
+]

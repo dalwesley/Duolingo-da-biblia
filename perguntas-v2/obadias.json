@@ -1,0 +1,2225 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Obadias 1:4",
+    "learningObjective": "Observar o que Obadias 1:4 afirma sobre a queda do orgulhoso.",
+    "evidence": [
+      "Obadias 1:3-4"
+    ],
+    "type": "true_false",
+    "question": "O texto afirma que Jeová derrubará dali quem puser o ninho entre as estrelas.",
+    "prompt": "O texto afirma que Jeová derrubará dali quem puser o ninho entre as estrelas.",
+    "cue": "O texto afirma que Jeová derrubará dali quem puser o ninho entre as estrelas.",
+    "feedbackCorrect": "Correto: é isso que Obadias 1:4 afirma sobre Jeová.",
+    "feedbackWrong": {
+      "false": "Releia Obadias 1:4: o texto afirma exatamente essa queda."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "trail": "obadias",
+    "section": "obadias-obadias-01-orgulho-abatido",
+    "id": "obadias-sem-obadias-obadias-01-orgulho-abatido-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Obadias 1:4",
+    "learningObjective": "Observar o que Obadias 1:4 afirma sobre a queda do orgulhoso.",
+    "evidence": [
+      "Obadias 1:3-4"
+    ],
+    "type": "tap",
+    "question": "Em Obadias 1:4, toque a palavra que falta em \"Embora subas ao alto como ___\"?",
+    "prompt": "Em Obadias 1:4, toque a palavra que falta em \"Embora subas ao alto como ___\"?",
+    "cue": "Em Obadias 1:4, toque a palavra que falta em \"Embora subas ao alto como ___\"?",
+    "feedbackCorrect": "Isso mesmo: é a ave usada como imagem do orgulho exaltado.",
+    "feedbackWrong": {
+      "b": "Estrelas aparece depois, mas não completa esta frase.",
+      "c": "Jeová está no texto, mas não nesta lacuna."
+    },
+    "passageText": "Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "template": "Embora subas ao alto como ___, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "águia"
+      },
+      {
+        "id": "b",
+        "text": "estrelas"
+      },
+      {
+        "id": "c",
+        "text": "Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-01-orgulho-abatido",
+    "id": "obadias-sem-obadias-obadias-01-orgulho-abatido-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Obadias 1:4",
+    "learningObjective": "Observar o que Obadias 1:4 afirma sobre a queda do orgulhoso.",
+    "evidence": [
+      "Obadias 1:3-4"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelo texto em Obadias 1:4?",
+    "prompt": "Qual afirmação é feita diretamente pelo texto em Obadias 1:4?",
+    "cue": "Qual afirmação é feita diretamente pelo texto em Obadias 1:4?",
+    "feedbackCorrect": "Certo: é exatamente essa a promessa registrada no texto.",
+    "feedbackWrong": {
+      "b": "O texto diz o oposto: Jeová alcança até quem se exalta.",
+      "c": "As estrelas aparecem só como imagem de altura, não de proteção.",
+      "d": "O verbo é derrubar, não escapar — leia com atenção."
+    },
+    "passageText": "Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová promete derrubar dali quem se exaltar como a águia."
+      },
+      {
+        "id": "b",
+        "text": "O texto ensina que ninguém pode alcançar quem sobe como águia."
+      },
+      {
+        "id": "c",
+        "text": "A passagem diz que as estrelas protegem o ninho do orgulhoso."
+      },
+      {
+        "id": "d",
+        "text": "O texto afirma que o orgulhoso escapará de Jeová para sempre."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-01-orgulho-abatido",
+    "id": "obadias-sem-obadias-obadias-01-orgulho-abatido-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Obadias 1:4",
+    "learningObjective": "Observar o que Obadias 1:4 afirma sobre a queda do orgulhoso.",
+    "evidence": [
+      "Obadias 1:3-4"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Obadias 1:4?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Obadias 1:4?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Obadias 1:4?",
+    "feedbackCorrect": "Correto: essa é a ordem exata do versículo.",
+    "feedbackWrong": {
+      "b": "Essa peça vem depois da imagem da águia, não antes.",
+      "c": "A sentença final vem por último, após o ninho entre as estrelas."
+    },
+    "passageText": "Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Embora subas ao alto como águia"
+      },
+      {
+        "id": "b",
+        "text": "e embora seja o teu ninho posto entre as estrelas"
+      },
+      {
+        "id": "c",
+        "text": "dali te derrubarei, diz Jeová"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-01-orgulho-abatido",
+    "id": "obadias-sem-obadias-obadias-01-orgulho-abatido-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Obadias 1:4",
+    "learningObjective": "Observar o que Obadias 1:4 afirma sobre a queda do orgulhoso.",
+    "evidence": [
+      "Obadias 1:3-4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"embora seja o teu ___ posto entre as estrelas\"",
+    "prompt": "Complete a frase: \"embora seja o teu ___ posto entre as estrelas\"",
+    "cue": "Complete a frase: \"embora seja o teu ___ posto entre as estrelas\"",
+    "feedbackCorrect": "Exato: é o ninho do orgulhoso, mesmo entre as estrelas.",
+    "feedbackWrong": {
+      "b": "Águia é a imagem do orgulho, não o que fica posto entre as estrelas.",
+      "c": "Jeová é quem julga, não o que se põe entre as estrelas."
+    },
+    "passageText": "Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "template": "Embora subas ao alto como águia, e embora seja o teu ___ posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ninho"
+      },
+      {
+        "id": "b",
+        "text": "águia"
+      },
+      {
+        "id": "c",
+        "text": "Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-01-orgulho-abatido",
+    "id": "obadias-sem-obadias-obadias-01-orgulho-abatido-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Obadias 1:4",
+    "learningObjective": "Observar o que Obadias 1:4 afirma sobre a queda do orgulhoso.",
+    "evidence": [
+      "Obadias 1:3-4"
+    ],
+    "type": "connect",
+    "question": "O que Obadias 1:4 comunica que se liga a este contexto?",
+    "prompt": "O que Obadias 1:4 comunica que se liga a este contexto?",
+    "cue": "O que Obadias 1:4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o texto liga a queda do orgulhoso ao juízo certo de Deus.",
+    "feedbackWrong": {
+      "b": "O texto diz o contrário: Jeová alcança e derruba o orgulhoso.",
+      "c": "A imagem da águia serve para mostrar que ninguém escapa do juízo."
+    },
+    "passageText": "Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "passageA": {
+      "ref": "Obadias 1:4",
+      "text": "Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O orgulho humano não impede o julgamento de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Nenhuma altura escapa do julgamento"
+      },
+      {
+        "id": "b",
+        "text": "O orgulho vence o juízo divino"
+      },
+      {
+        "id": "c",
+        "text": "A águia é apenas poesia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-01-orgulho-abatido",
+    "id": "obadias-sem-obadias-obadias-01-orgulho-abatido-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Obadias 1:4",
+    "learningObjective": "Compreender por que nenhuma altura livra o orgulhoso do juízo de Jeová.",
+    "evidence": [
+      "Obadias 1:3-4"
+    ],
+    "type": "true_false",
+    "question": "O texto ensina que quem se exalta como a águia consegue escapar do julgamento de Jeová.",
+    "prompt": "O texto ensina que quem se exalta como a águia consegue escapar do julgamento de Jeová.",
+    "cue": "O texto ensina que quem se exalta como a águia consegue escapar do julgamento de Jeová.",
+    "feedbackCorrect": "Correto: o texto nega que a altura livre alguém do juízo.",
+    "feedbackWrong": {
+      "true": "O texto diz o oposto: por mais alto que suba, será derrubado dali."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "trail": "obadias",
+    "section": "obadias-obadias-01-orgulho-abatido",
+    "id": "obadias-cam-obadias-obadias-01-orgulho-abatido-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Obadias 1:4",
+    "learningObjective": "Compreender por que nenhuma altura livra o orgulhoso do juízo de Jeová.",
+    "evidence": [
+      "Obadias 1:3-4"
+    ],
+    "type": "tap",
+    "question": "Em Obadias 1:4, toque a palavra que falta em \"dali te derrubarei, diz ___\"?",
+    "prompt": "Em Obadias 1:4, toque a palavra que falta em \"dali te derrubarei, diz ___\"?",
+    "cue": "Em Obadias 1:4, toque a palavra que falta em \"dali te derrubarei, diz ___\"?",
+    "feedbackCorrect": "Correto: é Jeová quem promete o juízo.",
+    "feedbackWrong": {
+      "b": "Águia é a imagem do orgulho, não quem fala no final.",
+      "c": "Estrelas aparece antes, não na assinatura da promessa."
+    },
+    "passageText": "Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "template": "Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "águia"
+      },
+      {
+        "id": "c",
+        "text": "estrelas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-01-orgulho-abatido",
+    "id": "obadias-cam-obadias-obadias-01-orgulho-abatido-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Obadias 1:4",
+    "learningObjective": "Compreender por que nenhuma altura livra o orgulhoso do juízo de Jeová.",
+    "evidence": [
+      "Obadias 1:3-4"
+    ],
+    "type": "choice",
+    "question": "Qual ideia melhor conecta Obadias 1:4 ao contexto da missão?",
+    "prompt": "Qual ideia melhor conecta Obadias 1:4 ao contexto da missão?",
+    "cue": "Qual ideia melhor conecta Obadias 1:4 ao contexto da missão?",
+    "feedbackCorrect": "Certo: essa é a ligação central entre a imagem e a missão.",
+    "feedbackWrong": {
+      "b": "O texto diz o oposto: Jeová derruba de qualquer altura.",
+      "c": "O verbo derrubarei mostra que Jeová age, não ignora.",
+      "d": "A imagem carrega o peso central do juízo, não é só estilo."
+    },
+    "passageText": "Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A imagem da águia mostra que nenhuma exaltação escapa do juízo de Deus."
+      },
+      {
+        "id": "b",
+        "text": "A passagem ensina que subir ao alto garante proteção divina."
+      },
+      {
+        "id": "c",
+        "text": "O texto sugere que Jeová ignora quem vive em lugares altos."
+      },
+      {
+        "id": "d",
+        "text": "A águia representa apenas um detalhe poético sem peso teológico."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-01-orgulho-abatido",
+    "id": "obadias-cam-obadias-obadias-01-orgulho-abatido-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Obadias 1:4",
+    "learningObjective": "Compreender por que nenhuma altura livra o orgulhoso do juízo de Jeová.",
+    "evidence": [
+      "Obadias 1:3-4"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Obadias 1:4?",
+    "prompt": "Como se encadeiam os eventos de Obadias 1:4?",
+    "cue": "Como se encadeiam os eventos de Obadias 1:4?",
+    "feedbackCorrect": "Certo: essa é a sequência que o texto mostra.",
+    "feedbackWrong": {
+      "b": "Essa peça vem depois da imagem da águia, não antes.",
+      "c": "A promessa final vem por último no encadeamento do texto."
+    },
+    "passageText": "Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Embora subas ao alto como águia"
+      },
+      {
+        "id": "b",
+        "text": "e embora seja o teu ninho posto entre as estrelas"
+      },
+      {
+        "id": "c",
+        "text": "dali te derrubarei, diz Jeová"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-01-orgulho-abatido",
+    "id": "obadias-cam-obadias-obadias-01-orgulho-abatido-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Obadias 1:4",
+    "learningObjective": "Compreender por que nenhuma altura livra o orgulhoso do juízo de Jeová.",
+    "evidence": [
+      "Obadias 1:3-4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"o teu ninho posto entre as ___\"",
+    "prompt": "Complete a frase: \"o teu ninho posto entre as ___\"",
+    "cue": "Complete a frase: \"o teu ninho posto entre as ___\"",
+    "feedbackCorrect": "Certo: mesmo entre as estrelas, o ninho não escapa do juízo.",
+    "feedbackWrong": {
+      "b": "Águia é a ave da imagem, não o lugar do ninho.",
+      "c": "Jeová é quem julga, não o lugar do ninho."
+    },
+    "passageText": "Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "template": "Embora subas ao alto como águia, e embora seja o teu ninho posto entre as ___, dali te derrubarei, diz Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "estrelas"
+      },
+      {
+        "id": "b",
+        "text": "águia"
+      },
+      {
+        "id": "c",
+        "text": "Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-01-orgulho-abatido",
+    "id": "obadias-cam-obadias-obadias-01-orgulho-abatido-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Obadias 1:4",
+    "learningObjective": "Compreender por que nenhuma altura livra o orgulhoso do juízo de Jeová.",
+    "evidence": [
+      "Obadias 1:3-4"
+    ],
+    "type": "connect",
+    "question": "O que Obadias 1:4 comunica que se liga a este contexto?",
+    "prompt": "O que Obadias 1:4 comunica que se liga a este contexto?",
+    "cue": "O que Obadias 1:4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a imagem da altura confirma que ninguém escapa do juízo de Deus.",
+    "feedbackWrong": {
+      "b": "O texto usa a altura como alvo do juízo, não como aprovação.",
+      "c": "O verbo derrubarei mostra que há juízo explícito no texto."
+    },
+    "passageText": "Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "passageA": {
+      "ref": "Obadias 1:4",
+      "text": "Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O orgulho humano não impede o julgamento de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus julga também quem parece inalcançável"
+      },
+      {
+        "id": "b",
+        "text": "A altura é sinal de aprovação divina"
+      },
+      {
+        "id": "c",
+        "text": "O texto não trata de juízo algum"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-01-orgulho-abatido",
+    "id": "obadias-cam-obadias-obadias-01-orgulho-abatido-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Obadias 1:4",
+    "learningObjective": "Interpretar o que a queda anunciada revela sobre a soberania de Jeová.",
+    "evidence": [
+      "Obadias 1:3-4"
+    ],
+    "type": "true_false",
+    "question": "A queda anunciada em Obadias 1:4 revela que a soberania de Jeová alcança até quem se julga inatingível.",
+    "prompt": "A queda anunciada em Obadias 1:4 revela que a soberania de Jeová alcança até quem se julga inatingível.",
+    "cue": "A queda anunciada em Obadias 1:4 revela que a soberania de Jeová alcança até quem se julga inatingível.",
+    "feedbackCorrect": "Correto: essa é a leitura teológica central do versículo.",
+    "feedbackWrong": {
+      "false": "O texto sustenta exatamente essa leitura: a soberania de Jeová é maior que qualquer altura."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "trail": "obadias",
+    "section": "obadias-obadias-01-orgulho-abatido",
+    "id": "obadias-pro-obadias-obadias-01-orgulho-abatido-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Obadias 1:4",
+    "learningObjective": "Interpretar o que a queda anunciada revela sobre a soberania de Jeová.",
+    "evidence": [
+      "Obadias 1:3-4"
+    ],
+    "type": "tap",
+    "question": "Em Obadias 1:4, toque a palavra que falta em \"e embora seja o teu ___ posto entre as estrelas\"?",
+    "prompt": "Em Obadias 1:4, toque a palavra que falta em \"e embora seja o teu ___ posto entre as estrelas\"?",
+    "cue": "Em Obadias 1:4, toque a palavra que falta em \"e embora seja o teu ___ posto entre as estrelas\"?",
+    "feedbackCorrect": "Correto: mesmo o ninho mais alto não escapa da soberania de Jeová.",
+    "feedbackWrong": {
+      "b": "Águia é a imagem da subida, não o que fica posto no alto.",
+      "c": "Jeová é quem julga, não o objeto desta lacuna."
+    },
+    "passageText": "Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "template": "Embora subas ao alto como águia, e embora seja o teu ___ posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ninho"
+      },
+      {
+        "id": "b",
+        "text": "águia"
+      },
+      {
+        "id": "c",
+        "text": "Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-01-orgulho-abatido",
+    "id": "obadias-pro-obadias-obadias-01-orgulho-abatido-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Obadias 1:4",
+    "learningObjective": "Interpretar o que a queda anunciada revela sobre a soberania de Jeová.",
+    "evidence": [
+      "Obadias 1:3-4"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de Obadias 1:4?",
+    "prompt": "Qual leitura interpreta melhor o sentido de Obadias 1:4?",
+    "cue": "Qual leitura interpreta melhor o sentido de Obadias 1:4?",
+    "feedbackCorrect": "Certo: o texto interpreta a queda como vitória da soberania de Jeová.",
+    "feedbackWrong": {
+      "a": "O texto vai além da moral: afirma juízo divino explícito.",
+      "c": "As estrelas são apenas imagem de altura, não agentes do juízo.",
+      "d": "O texto promete derrubar, não proteger, quem se exalta como a águia."
+    },
+    "passageText": "Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O texto reduz o orgulho a um problema apenas moral, sem juízo divino."
+      },
+      {
+        "id": "b",
+        "text": "A passagem ensina que a soberania de Jeová ultrapassa qualquer exaltação humana."
+      },
+      {
+        "id": "c",
+        "text": "O texto sugere que Jeová precisa da ajuda das estrelas para julgar."
+      },
+      {
+        "id": "d",
+        "text": "A águia simboliza a proteção que Jeová oferece ao orgulhoso."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "obadias",
+    "section": "obadias-obadias-01-orgulho-abatido",
+    "id": "obadias-pro-obadias-obadias-01-orgulho-abatido-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Obadias 1:4",
+    "learningObjective": "Interpretar o que a queda anunciada revela sobre a soberania de Jeová.",
+    "evidence": [
+      "Obadias 1:3-4"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Obadias 1:4?",
+    "prompt": "Qual sequência revela o sentido de Obadias 1:4?",
+    "cue": "Qual sequência revela o sentido de Obadias 1:4?",
+    "feedbackCorrect": "Certo: essa é a sequência que revela o sentido do julgamento.",
+    "feedbackWrong": {
+      "b": "Essa peça vem depois da imagem da águia, não antes.",
+      "c": "A sentença de juízo fecha a sequência, não a abre."
+    },
+    "passageText": "Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Embora subas ao alto como águia"
+      },
+      {
+        "id": "b",
+        "text": "e embora seja o teu ninho posto entre as estrelas"
+      },
+      {
+        "id": "c",
+        "text": "dali te derrubarei, diz Jeová"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-01-orgulho-abatido",
+    "id": "obadias-pro-obadias-obadias-01-orgulho-abatido-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Obadias 1:4",
+    "learningObjective": "Interpretar o que a queda anunciada revela sobre a soberania de Jeová.",
+    "evidence": [
+      "Obadias 1:3-4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Embora subas ao alto como ___\"",
+    "prompt": "Complete a frase: \"Embora subas ao alto como ___\"",
+    "cue": "Complete a frase: \"Embora subas ao alto como ___\"",
+    "feedbackCorrect": "Correto: a águia é a imagem da exaltação que Jeová derruba.",
+    "feedbackWrong": {
+      "b": "Ninho aparece depois, não nesta comparação com a altura.",
+      "c": "Jeová é quem fala, não a imagem da subida."
+    },
+    "passageText": "Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "template": "Embora subas ao alto como ___, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "águia"
+      },
+      {
+        "id": "b",
+        "text": "ninho"
+      },
+      {
+        "id": "c",
+        "text": "Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-01-orgulho-abatido",
+    "id": "obadias-pro-obadias-obadias-01-orgulho-abatido-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Obadias 1:4",
+    "learningObjective": "Interpretar o que a queda anunciada revela sobre a soberania de Jeová.",
+    "evidence": [
+      "Obadias 1:3-4"
+    ],
+    "type": "connect",
+    "question": "O que Obadias 1:4 comunica que se liga a este contexto?",
+    "prompt": "O que Obadias 1:4 comunica que se liga a este contexto?",
+    "cue": "O que Obadias 1:4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o texto interpreta a queda da águia como vitória da soberania de Jeová.",
+    "feedbackWrong": {
+      "b": "O verbo derrubarei mostra ação real, não apenas símbolo.",
+      "c": "O texto afirma o oposto: nada anula o juízo de Jeová."
+    },
+    "passageText": "Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová.",
+    "passageA": {
+      "ref": "Obadias 1:4",
+      "text": "Embora subas ao alto como águia, e embora seja o teu ninho posto entre as estrelas, dali te derrubarei, diz Jeová."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O orgulho humano não impede o julgamento de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová vence todo orgulho humano"
+      },
+      {
+        "id": "b",
+        "text": "O julgamento divino é apenas simbólico"
+      },
+      {
+        "id": "c",
+        "text": "A exaltação humana anula o juízo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-01-orgulho-abatido",
+    "id": "obadias-pro-obadias-obadias-01-orgulho-abatido-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Obadias 1:21",
+    "learningObjective": "Observar o que Obadias 1:21 afirma sobre o destino do reino.",
+    "evidence": [
+      "Obadias 1:21"
+    ],
+    "type": "true_false",
+    "question": "O texto afirma que o reino, ao final, será de Jeová.",
+    "prompt": "O texto afirma que o reino, ao final, será de Jeová.",
+    "cue": "O texto afirma que o reino, ao final, será de Jeová.",
+    "feedbackCorrect": "Correto: é exatamente essa a promessa final do livro.",
+    "feedbackWrong": {
+      "false": "Releia Obadias 1:21: o texto termina afirmando isso mesmo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Salvadores subirão ao monte de Sião para julgarem o monte de Esaú; e o reino será de Jeová.",
+    "trail": "obadias",
+    "section": "obadias-obadias-02-o-reino-sera-do-senh",
+    "id": "obadias-sem-obadias-obadias-02-o-reino-sera-do-senh-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Obadias 1:21",
+    "learningObjective": "Observar o que Obadias 1:21 afirma sobre o destino do reino.",
+    "evidence": [
+      "Obadias 1:21"
+    ],
+    "type": "tap",
+    "question": "Em Obadias 1:21, toque a palavra que falta em \"Salvadores subirão ao monte de ___\"?",
+    "prompt": "Em Obadias 1:21, toque a palavra que falta em \"Salvadores subirão ao monte de ___\"?",
+    "cue": "Em Obadias 1:21, toque a palavra que falta em \"Salvadores subirão ao monte de ___\"?",
+    "feedbackCorrect": "Isso mesmo: é para o monte de Sião que os salvadores sobem.",
+    "feedbackWrong": {
+      "b": "Esaú é o monte julgado, não o monte de onde partem os salvadores.",
+      "c": "Jeová aparece no fim do versículo, não nesta lacuna."
+    },
+    "passageText": "Salvadores subirão ao monte de Sião para julgarem o monte de Esaú; e o reino será de Jeová.",
+    "template": "Salvadores subirão ao monte de ___ para julgarem o monte de Esaú; e o reino será de Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sião"
+      },
+      {
+        "id": "b",
+        "text": "Esaú"
+      },
+      {
+        "id": "c",
+        "text": "Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-02-o-reino-sera-do-senh",
+    "id": "obadias-sem-obadias-obadias-02-o-reino-sera-do-senh-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Obadias 1:21",
+    "learningObjective": "Observar o que Obadias 1:21 afirma sobre o destino do reino.",
+    "evidence": [
+      "Obadias 1:21"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelo texto em Obadias 1:21?",
+    "prompt": "Qual afirmação é feita diretamente pelo texto em Obadias 1:21?",
+    "cue": "Qual afirmação é feita diretamente pelo texto em Obadias 1:21?",
+    "feedbackCorrect": "Certo: é a conclusão explícita do versículo.",
+    "feedbackWrong": {
+      "b": "É o contrário: os salvadores julgam o monte de Esaú.",
+      "c": "O texto termina dizendo que o reino é de Jeová, não dos salvadores.",
+      "d": "O texto fala em julgar o monte de Esaú, não em destruir Sião."
+    },
+    "passageText": "Salvadores subirão ao monte de Sião para julgarem o monte de Esaú; e o reino será de Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O texto afirma que o reino, por fim, será de Jeová."
+      },
+      {
+        "id": "b",
+        "text": "O texto diz que Esaú vai julgar o monte de Sião."
+      },
+      {
+        "id": "c",
+        "text": "A passagem afirma que os salvadores ficam com o reino para si."
+      },
+      {
+        "id": "d",
+        "text": "O texto ensina que o monte de Sião será destruído no julgamento."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-02-o-reino-sera-do-senh",
+    "id": "obadias-sem-obadias-obadias-02-o-reino-sera-do-senh-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Obadias 1:21",
+    "learningObjective": "Observar o que Obadias 1:21 afirma sobre o destino do reino.",
+    "evidence": [
+      "Obadias 1:21"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Obadias 1:21?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Obadias 1:21?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Obadias 1:21?",
+    "feedbackCorrect": "Correto: essa é a ordem exata do versículo.",
+    "feedbackWrong": {
+      "b": "Essa peça vem depois da subida ao monte de Sião, não antes.",
+      "c": "A conclusão sobre o reino fecha a sequência, não a abre."
+    },
+    "passageText": "Salvadores subirão ao monte de Sião para julgarem o monte de Esaú; e o reino será de Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Salvadores subirão ao monte de Sião"
+      },
+      {
+        "id": "b",
+        "text": "para julgarem o monte de Esaú"
+      },
+      {
+        "id": "c",
+        "text": "e o reino será de Jeová"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-02-o-reino-sera-do-senh",
+    "id": "obadias-sem-obadias-obadias-02-o-reino-sera-do-senh-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Obadias 1:21",
+    "learningObjective": "Observar o que Obadias 1:21 afirma sobre o destino do reino.",
+    "evidence": [
+      "Obadias 1:21"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"e o ___ será de Jeová\"",
+    "prompt": "Complete a frase: \"e o ___ será de Jeová\"",
+    "cue": "Complete a frase: \"e o ___ será de Jeová\"",
+    "feedbackCorrect": "Exato: é o reino que, ao final, pertence a Jeová.",
+    "feedbackWrong": {
+      "b": "Sião é o monte da subida, não o que será de Jeová.",
+      "c": "Esaú é o monte julgado, não o que será de Jeová."
+    },
+    "passageText": "Salvadores subirão ao monte de Sião para julgarem o monte de Esaú; e o reino será de Jeová.",
+    "template": "Salvadores subirão ao monte de Sião para julgarem o monte de Esaú; e o ___ será de Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "reino"
+      },
+      {
+        "id": "b",
+        "text": "Sião"
+      },
+      {
+        "id": "c",
+        "text": "Esaú"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-02-o-reino-sera-do-senh",
+    "id": "obadias-sem-obadias-obadias-02-o-reino-sera-do-senh-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Obadias 1:21",
+    "learningObjective": "Observar o que Obadias 1:21 afirma sobre o destino do reino.",
+    "evidence": [
+      "Obadias 1:21"
+    ],
+    "type": "connect",
+    "question": "O que Obadias 1:21 comunica que se liga a este contexto?",
+    "prompt": "O que Obadias 1:21 comunica que se liga a este contexto?",
+    "cue": "O que Obadias 1:21 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o texto fecha o livro afirmando essa conclusão.",
+    "feedbackWrong": {
+      "b": "O texto atribui o reino a Jeová, não aos salvadores.",
+      "c": "O texto aponta um vencedor claro: o reino será de Jeová."
+    },
+    "passageText": "Salvadores subirão ao monte de Sião para julgarem o monte de Esaú; e o reino será de Jeová.",
+    "passageA": {
+      "ref": "Obadias 1:21",
+      "text": "Salvadores subirão ao monte de Sião para julgarem o monte de Esaú; e o reino será de Jeová."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O reino, no fim, pertence somente a Jeová."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O reino final pertence a Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Os salvadores herdam o reino"
+      },
+      {
+        "id": "c",
+        "text": "O julgamento acaba sem vencedor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-02-o-reino-sera-do-senh",
+    "id": "obadias-sem-obadias-obadias-02-o-reino-sera-do-senh-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Obadias 1:21",
+    "learningObjective": "Compreender por que o reino final pertence a Jeová, e não aos salvadores.",
+    "evidence": [
+      "Obadias 1:21"
+    ],
+    "type": "true_false",
+    "question": "O texto ensina que os salvadores tomam o monte de Sião apenas para si mesmos, sem julgar Esaú.",
+    "prompt": "O texto ensina que os salvadores tomam o monte de Sião apenas para si mesmos, sem julgar Esaú.",
+    "cue": "O texto ensina que os salvadores tomam o monte de Sião apenas para si mesmos, sem julgar Esaú.",
+    "feedbackCorrect": "Correto: o texto diz que eles sobem justamente para julgar Esaú.",
+    "feedbackWrong": {
+      "true": "O texto diz o oposto: os salvadores sobem para julgar o monte de Esaú."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Salvadores subirão ao monte de Sião para julgarem o monte de Esaú; e o reino será de Jeová.",
+    "trail": "obadias",
+    "section": "obadias-obadias-02-o-reino-sera-do-senh",
+    "id": "obadias-cam-obadias-obadias-02-o-reino-sera-do-senh-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Obadias 1:21",
+    "learningObjective": "Compreender por que o reino final pertence a Jeová, e não aos salvadores.",
+    "evidence": [
+      "Obadias 1:21"
+    ],
+    "type": "tap",
+    "question": "Em Obadias 1:21, toque a palavra que falta em \"para julgarem o monte de ___\"?",
+    "prompt": "Em Obadias 1:21, toque a palavra que falta em \"para julgarem o monte de ___\"?",
+    "cue": "Em Obadias 1:21, toque a palavra que falta em \"para julgarem o monte de ___\"?",
+    "feedbackCorrect": "Correto: é o monte de Esaú que será julgado.",
+    "feedbackWrong": {
+      "b": "Sião é de onde partem os salvadores, não o monte julgado.",
+      "c": "Reino aparece só depois, na conclusão do versículo."
+    },
+    "passageText": "Salvadores subirão ao monte de Sião para julgarem o monte de Esaú; e o reino será de Jeová.",
+    "template": "Salvadores subirão ao monte de Sião para julgarem o monte de ___; e o reino será de Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Esaú"
+      },
+      {
+        "id": "b",
+        "text": "Sião"
+      },
+      {
+        "id": "c",
+        "text": "reino"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-02-o-reino-sera-do-senh",
+    "id": "obadias-cam-obadias-obadias-02-o-reino-sera-do-senh-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Obadias 1:21",
+    "learningObjective": "Compreender por que o reino final pertence a Jeová, e não aos salvadores.",
+    "evidence": [
+      "Obadias 1:21"
+    ],
+    "type": "choice",
+    "question": "Qual ideia melhor conecta Obadias 1:21 ao contexto da missão?",
+    "prompt": "Qual ideia melhor conecta Obadias 1:21 ao contexto da missão?",
+    "cue": "Qual ideia melhor conecta Obadias 1:21 ao contexto da missão?",
+    "feedbackCorrect": "Certo: essa é a ligação central com o sentido da missão.",
+    "feedbackWrong": {
+      "b": "O texto atribui o reino a Jeová, não ao poder humano.",
+      "c": "O texto fala de um reino unificado sob Jeová, não dividido.",
+      "d": "A menção ao reino mostra que o tema é autoridade, não só lugar."
+    },
+    "passageText": "Salvadores subirão ao monte de Sião para julgarem o monte de Esaú; e o reino será de Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A vitória final não fica com os salvadores, mas com Jeová."
+      },
+      {
+        "id": "b",
+        "text": "O texto ensina que o poder humano decide o destino do reino."
+      },
+      {
+        "id": "c",
+        "text": "A passagem sugere que o reino permanece dividido entre nações."
+      },
+      {
+        "id": "d",
+        "text": "O texto trata apenas de geografia, sem falar de autoridade."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-02-o-reino-sera-do-senh",
+    "id": "obadias-cam-obadias-obadias-02-o-reino-sera-do-senh-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Obadias 1:21",
+    "learningObjective": "Compreender por que o reino final pertence a Jeová, e não aos salvadores.",
+    "evidence": [
+      "Obadias 1:21"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Obadias 1:21?",
+    "prompt": "Como se encadeiam os eventos de Obadias 1:21?",
+    "cue": "Como se encadeiam os eventos de Obadias 1:21?",
+    "feedbackCorrect": "Certo: essa é a sequência que o texto mostra.",
+    "feedbackWrong": {
+      "b": "Essa peça vem depois da subida ao monte de Sião, não antes.",
+      "c": "A conclusão sobre o reino fecha o encadeamento, não o abre."
+    },
+    "passageText": "Salvadores subirão ao monte de Sião para julgarem o monte de Esaú; e o reino será de Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Salvadores subirão ao monte de Sião"
+      },
+      {
+        "id": "b",
+        "text": "para julgarem o monte de Esaú"
+      },
+      {
+        "id": "c",
+        "text": "e o reino será de Jeová"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-02-o-reino-sera-do-senh",
+    "id": "obadias-cam-obadias-obadias-02-o-reino-sera-do-senh-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Obadias 1:21",
+    "learningObjective": "Compreender por que o reino final pertence a Jeová, e não aos salvadores.",
+    "evidence": [
+      "Obadias 1:21"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"e o reino será de ___\"",
+    "prompt": "Complete a frase: \"e o reino será de ___\"",
+    "cue": "Complete a frase: \"e o reino será de ___\"",
+    "feedbackCorrect": "Certo: o reino, ao final, pertence a Jeová.",
+    "feedbackWrong": {
+      "b": "Esaú é quem é julgado, não quem recebe o reino.",
+      "c": "Sião é o monte da subida, não quem recebe o reino."
+    },
+    "passageText": "Salvadores subirão ao monte de Sião para julgarem o monte de Esaú; e o reino será de Jeová.",
+    "template": "Salvadores subirão ao monte de Sião para julgarem o monte de Esaú; e o reino será de ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Esaú"
+      },
+      {
+        "id": "c",
+        "text": "Sião"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-02-o-reino-sera-do-senh",
+    "id": "obadias-cam-obadias-obadias-02-o-reino-sera-do-senh-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Obadias 1:21",
+    "learningObjective": "Compreender por que o reino final pertence a Jeová, e não aos salvadores.",
+    "evidence": [
+      "Obadias 1:21"
+    ],
+    "type": "connect",
+    "question": "O que Obadias 1:21 comunica que se liga a este contexto?",
+    "prompt": "O que Obadias 1:21 comunica que se liga a este contexto?",
+    "cue": "O que Obadias 1:21 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: toda autoridade humana cede lugar ao reino de Jeová.",
+    "feedbackWrong": {
+      "b": "O texto termina com uma conclusão única: o reino será de Jeová.",
+      "c": "O texto define claramente quem governa ao final."
+    },
+    "passageText": "Salvadores subirão ao monte de Sião para julgarem o monte de Esaú; e o reino será de Jeová.",
+    "passageA": {
+      "ref": "Obadias 1:21",
+      "text": "Salvadores subirão ao monte de Sião para julgarem o monte de Esaú; e o reino será de Jeová."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O reino, no fim, pertence somente a Jeová."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A autoridade humana cede a Jeová"
+      },
+      {
+        "id": "b",
+        "text": "O reino continua dividido para sempre"
+      },
+      {
+        "id": "c",
+        "text": "O texto não define quem governa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-02-o-reino-sera-do-senh",
+    "id": "obadias-cam-obadias-obadias-02-o-reino-sera-do-senh-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Obadias 1:21",
+    "learningObjective": "Interpretar o que a vitória final revela sobre a soberania do reino de Jeová.",
+    "evidence": [
+      "Obadias 1:21"
+    ],
+    "type": "true_false",
+    "question": "A vitória anunciada em Obadias 1:21 aponta para um reino que não depende do poder humano, mas pertence a Jeová.",
+    "prompt": "A vitória anunciada em Obadias 1:21 aponta para um reino que não depende do poder humano, mas pertence a Jeová.",
+    "cue": "A vitória anunciada em Obadias 1:21 aponta para um reino que não depende do poder humano, mas pertence a Jeová.",
+    "feedbackCorrect": "Correto: essa é a leitura teológica central do livro.",
+    "feedbackWrong": {
+      "false": "O texto sustenta exatamente essa leitura na sua última frase."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Salvadores subirão ao monte de Sião para julgarem o monte de Esaú; e o reino será de Jeová.",
+    "trail": "obadias",
+    "section": "obadias-obadias-02-o-reino-sera-do-senh",
+    "id": "obadias-pro-obadias-obadias-02-o-reino-sera-do-senh-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Obadias 1:21",
+    "learningObjective": "Interpretar o que a vitória final revela sobre a soberania do reino de Jeová.",
+    "evidence": [
+      "Obadias 1:21"
+    ],
+    "type": "tap",
+    "question": "Em Obadias 1:21, toque a palavra que falta em \"___ subirão ao monte de Sião\"?",
+    "prompt": "Em Obadias 1:21, toque a palavra que falta em \"___ subirão ao monte de Sião\"?",
+    "cue": "Em Obadias 1:21, toque a palavra que falta em \"___ subirão ao monte de Sião\"?",
+    "feedbackCorrect": "Correto: são os salvadores que sobem para executar o julgamento.",
+    "feedbackWrong": {
+      "b": "Jeová aparece no fim do versículo, não como sujeito desta ação.",
+      "c": "Esaú é o monte julgado, não quem sobe a Sião."
+    },
+    "passageText": "Salvadores subirão ao monte de Sião para julgarem o monte de Esaú; e o reino será de Jeová.",
+    "template": "___ subirão ao monte de Sião para julgarem o monte de Esaú; e o reino será de Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Salvadores"
+      },
+      {
+        "id": "b",
+        "text": "Jeová"
+      },
+      {
+        "id": "c",
+        "text": "Esaú"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-02-o-reino-sera-do-senh",
+    "id": "obadias-pro-obadias-obadias-02-o-reino-sera-do-senh-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Obadias 1:21",
+    "learningObjective": "Interpretar o que a vitória final revela sobre a soberania do reino de Jeová.",
+    "evidence": [
+      "Obadias 1:21"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de Obadias 1:21?",
+    "prompt": "Qual leitura interpreta melhor o sentido de Obadias 1:21?",
+    "cue": "Qual leitura interpreta melhor o sentido de Obadias 1:21?",
+    "feedbackCorrect": "Certo: essa é a síntese teológica que fecha o livro de Obadias.",
+    "feedbackWrong": {
+      "a": "O texto não condiciona o reino à vitória humana; ele é de Jeová.",
+      "c": "Esaú é quem é julgado, não quem herda o reino.",
+      "d": "O clímax do livro é justamente teológico: o reino será de Jeová."
+    },
+    "passageText": "Salvadores subirão ao monte de Sião para julgarem o monte de Esaú; e o reino será de Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O texto ensina que o reino de Jeová depende da vitória militar dos salvadores."
+      },
+      {
+        "id": "b",
+        "text": "A passagem revela que toda autoridade humana é, no fim, absorvida pelo reino de Jeová."
+      },
+      {
+        "id": "c",
+        "text": "O texto sugere que Esaú herdará o reino depois do julgamento."
+      },
+      {
+        "id": "d",
+        "text": "A profecia trata apenas de uma disputa territorial sem sentido teológico."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "obadias",
+    "section": "obadias-obadias-02-o-reino-sera-do-senh",
+    "id": "obadias-pro-obadias-obadias-02-o-reino-sera-do-senh-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Obadias 1:21",
+    "learningObjective": "Interpretar o que a vitória final revela sobre a soberania do reino de Jeová.",
+    "evidence": [
+      "Obadias 1:21"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Obadias 1:21?",
+    "prompt": "Qual sequência revela o sentido de Obadias 1:21?",
+    "cue": "Qual sequência revela o sentido de Obadias 1:21?",
+    "feedbackCorrect": "Certo: essa é a sequência que revela o sentido final do livro.",
+    "feedbackWrong": {
+      "b": "Essa peça vem depois da subida ao monte de Sião, não antes.",
+      "c": "A conclusão teológica fecha a sequência, não a abre."
+    },
+    "passageText": "Salvadores subirão ao monte de Sião para julgarem o monte de Esaú; e o reino será de Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Salvadores subirão ao monte de Sião"
+      },
+      {
+        "id": "b",
+        "text": "para julgarem o monte de Esaú"
+      },
+      {
+        "id": "c",
+        "text": "e o reino será de Jeová"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-02-o-reino-sera-do-senh",
+    "id": "obadias-pro-obadias-obadias-02-o-reino-sera-do-senh-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Obadias 1:21",
+    "learningObjective": "Interpretar o que a vitória final revela sobre a soberania do reino de Jeová.",
+    "evidence": [
+      "Obadias 1:21"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Salvadores subirão ao monte de ___\"",
+    "prompt": "Complete a frase: \"Salvadores subirão ao monte de ___\"",
+    "cue": "Complete a frase: \"Salvadores subirão ao monte de ___\"",
+    "feedbackCorrect": "Correto: é ao monte de Sião que os salvadores sobem.",
+    "feedbackWrong": {
+      "b": "Esaú é o monte julgado, não o monte da subida.",
+      "c": "Jeová aparece só na conclusão do versículo."
+    },
+    "passageText": "Salvadores subirão ao monte de Sião para julgarem o monte de Esaú; e o reino será de Jeová.",
+    "template": "Salvadores subirão ao monte de ___ para julgarem o monte de Esaú; e o reino será de Jeová.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sião"
+      },
+      {
+        "id": "b",
+        "text": "Esaú"
+      },
+      {
+        "id": "c",
+        "text": "Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-02-o-reino-sera-do-senh",
+    "id": "obadias-pro-obadias-obadias-02-o-reino-sera-do-senh-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Obadias 1:21",
+    "learningObjective": "Interpretar o que a vitória final revela sobre a soberania do reino de Jeová.",
+    "evidence": [
+      "Obadias 1:21"
+    ],
+    "type": "connect",
+    "question": "O que Obadias 1:21 comunica que se liga a este contexto?",
+    "prompt": "O que Obadias 1:21 comunica que se liga a este contexto?",
+    "cue": "O que Obadias 1:21 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o texto interpreta a vitória como sinal de que o reino é de Jeová.",
+    "feedbackWrong": {
+      "b": "O texto não condiciona o reino à força; ele é dado por Jeová.",
+      "c": "Esaú é o julgado, não quem governa depois."
+    },
+    "passageText": "Salvadores subirão ao monte de Sião para julgarem o monte de Esaú; e o reino será de Jeová.",
+    "passageA": {
+      "ref": "Obadias 1:21",
+      "text": "Salvadores subirão ao monte de Sião para julgarem o monte de Esaú; e o reino será de Jeová."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O reino, no fim, pertence somente a Jeová."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Toda soberania humana serve a Jeová"
+      },
+      {
+        "id": "b",
+        "text": "O reino depende da força militar"
+      },
+      {
+        "id": "c",
+        "text": "Esaú governará depois do julgamento"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-02-o-reino-sera-do-senh",
+    "id": "obadias-pro-obadias-obadias-02-o-reino-sera-do-senh-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Obadias 1:15",
+    "learningObjective": "Observar o que Obadias 1:15 afirma sobre o juízo de Jeová.",
+    "evidence": [
+      "Obadias 1:3-4",
+      "Obadias 1:15",
+      "Obadias 1:21"
+    ],
+    "type": "true_false",
+    "question": "O texto afirma que o dia de Jeová está perto sobre todas as nações.",
+    "prompt": "O texto afirma que o dia de Jeová está perto sobre todas as nações.",
+    "cue": "O texto afirma que o dia de Jeová está perto sobre todas as nações.",
+    "feedbackCorrect": "Correto: é isso que Obadias 1:15 afirma.",
+    "feedbackWrong": {
+      "false": "Releia Obadias 1:15: o texto afirma exatamente isso."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Pois o dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "trail": "obadias",
+    "section": "obadias-obadias-03-desafio-obadias",
+    "id": "obadias-sem-obadias-obadias-03-desafio-obadias-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Obadias 1:15",
+    "learningObjective": "Observar o que Obadias 1:15 afirma sobre o juízo de Jeová.",
+    "evidence": [
+      "Obadias 1:3-4",
+      "Obadias 1:15",
+      "Obadias 1:21"
+    ],
+    "type": "tap",
+    "question": "Em Obadias 1:15, toque a palavra que falta em \"o dia de Jeová está perto sobre todas as ___\"?",
+    "prompt": "Em Obadias 1:15, toque a palavra que falta em \"o dia de Jeová está perto sobre todas as ___\"?",
+    "cue": "Em Obadias 1:15, toque a palavra que falta em \"o dia de Jeová está perto sobre todas as ___\"?",
+    "feedbackCorrect": "Isso mesmo: o juízo alcança todas as nações, não só Edom.",
+    "feedbackWrong": {
+      "b": "Cabeça aparece no fim do versículo, não nesta lacuna.",
+      "c": "Jeová já aparece antes, não nesta lacuna."
+    },
+    "passageText": "Pois o dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "template": "Pois o dia de Jeová está perto sobre todas as ___; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nações"
+      },
+      {
+        "id": "b",
+        "text": "cabeça"
+      },
+      {
+        "id": "c",
+        "text": "Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-03-desafio-obadias",
+    "id": "obadias-sem-obadias-obadias-03-desafio-obadias-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Obadias 1:15",
+    "learningObjective": "Observar o que Obadias 1:15 afirma sobre o juízo de Jeová.",
+    "evidence": [
+      "Obadias 1:3-4",
+      "Obadias 1:15",
+      "Obadias 1:21"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelo texto em Obadias 1:15?",
+    "prompt": "Qual afirmação é feita diretamente pelo texto em Obadias 1:15?",
+    "cue": "Qual afirmação é feita diretamente pelo texto em Obadias 1:15?",
+    "feedbackCorrect": "Certo: é o princípio explícito da segunda metade do versículo.",
+    "feedbackWrong": {
+      "b": "O texto diz o oposto: o dia de Jeová está perto.",
+      "c": "O princípio vale para todas as nações, não só para Edom.",
+      "d": "O texto afirma exatamente o contrário: o feito retorna sobre quem o fez."
+    },
+    "passageText": "Pois o dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O texto afirma que o feito de cada um voltará sobre sua própria cabeça."
+      },
+      {
+        "id": "b",
+        "text": "O texto diz que o dia de Jeová está distante das nações."
+      },
+      {
+        "id": "c",
+        "text": "A passagem afirma que apenas Edom sofrerá as consequências de seus atos."
+      },
+      {
+        "id": "d",
+        "text": "O texto ensina que o mal praticado não tem consequência alguma."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-03-desafio-obadias",
+    "id": "obadias-sem-obadias-obadias-03-desafio-obadias-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Obadias 1:15",
+    "learningObjective": "Observar o que Obadias 1:15 afirma sobre o juízo de Jeová.",
+    "evidence": [
+      "Obadias 1:3-4",
+      "Obadias 1:15",
+      "Obadias 1:21"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Obadias 1:15?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Obadias 1:15?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Obadias 1:15?",
+    "feedbackCorrect": "Correto: essa é a ordem exata do versículo.",
+    "feedbackWrong": {
+      "b": "Essa peça vem depois do anúncio do dia de Jeová, não antes.",
+      "c": "A conclusão sobre a cabeça fecha a sequência, não a abre."
+    },
+    "passageText": "Pois o dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pois o dia de Jeová está perto sobre todas as nações"
+      },
+      {
+        "id": "b",
+        "text": "como tens feito, assim se te fará a ti"
+      },
+      {
+        "id": "c",
+        "text": "o teu feito tornará sobre a tua cabeça"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-03-desafio-obadias",
+    "id": "obadias-sem-obadias-obadias-03-desafio-obadias-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Obadias 1:15",
+    "learningObjective": "Observar o que Obadias 1:15 afirma sobre o juízo de Jeová.",
+    "evidence": [
+      "Obadias 1:3-4",
+      "Obadias 1:15",
+      "Obadias 1:21"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"o teu feito tornará sobre a tua ___\"",
+    "prompt": "Complete a frase: \"o teu feito tornará sobre a tua ___\"",
+    "cue": "Complete a frase: \"o teu feito tornará sobre a tua ___\"",
+    "feedbackCorrect": "Exato: é sobre a própria cabeça que o feito retorna.",
+    "feedbackWrong": {
+      "b": "Nações aparece no início do versículo, não nesta lacuna.",
+      "c": "Jeová é quem anuncia o dia, não o alvo do retorno."
+    },
+    "passageText": "Pois o dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "template": "Pois o dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "cabeça"
+      },
+      {
+        "id": "b",
+        "text": "nações"
+      },
+      {
+        "id": "c",
+        "text": "Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-03-desafio-obadias",
+    "id": "obadias-sem-obadias-obadias-03-desafio-obadias-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Obadias 1:15",
+    "learningObjective": "Observar o que Obadias 1:15 afirma sobre o juízo de Jeová.",
+    "evidence": [
+      "Obadias 1:3-4",
+      "Obadias 1:15",
+      "Obadias 1:21"
+    ],
+    "type": "connect",
+    "question": "O que Obadias 1:15 comunica que se liga a este contexto?",
+    "prompt": "O que Obadias 1:15 comunica que se liga a este contexto?",
+    "cue": "O que Obadias 1:15 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o texto liga o juízo universal ao tema central do livro.",
+    "feedbackWrong": {
+      "b": "O texto fala em todas as nações, não somente em Edom.",
+      "c": "O verbo tornará mostra um juízo real, não uma ameaça vazia."
+    },
+    "passageText": "Pois o dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "passageA": {
+      "ref": "Obadias 1:15",
+      "text": "Pois o dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Orgulho é julgado; o reino pertence a Jeová."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O juízo de Jeová alcança todos"
+      },
+      {
+        "id": "b",
+        "text": "Só Edom responde pelo mal feito"
+      },
+      {
+        "id": "c",
+        "text": "O juízo é apenas uma ameaça vazia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-03-desafio-obadias",
+    "id": "obadias-sem-obadias-obadias-03-desafio-obadias-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Obadias 1:15",
+    "learningObjective": "Compreender como orgulho, juízo e reino se encadeiam no livro de Obadias.",
+    "evidence": [
+      "Obadias 1:3-4",
+      "Obadias 1:15",
+      "Obadias 1:21"
+    ],
+    "type": "true_false",
+    "question": "O texto ensina que o mal feito contra o próximo não retorna sobre quem o praticou.",
+    "prompt": "O texto ensina que o mal feito contra o próximo não retorna sobre quem o praticou.",
+    "cue": "O texto ensina que o mal feito contra o próximo não retorna sobre quem o praticou.",
+    "feedbackCorrect": "Correto: o texto ensina exatamente o contrário.",
+    "feedbackWrong": {
+      "true": "O texto diz o oposto: o feito retorna sobre a própria cabeça de quem o praticou."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Pois o dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "trail": "obadias",
+    "section": "obadias-obadias-03-desafio-obadias",
+    "id": "obadias-cam-obadias-obadias-03-desafio-obadias-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Obadias 1:15",
+    "learningObjective": "Compreender como orgulho, juízo e reino se encadeiam no livro de Obadias.",
+    "evidence": [
+      "Obadias 1:3-4",
+      "Obadias 1:15",
+      "Obadias 1:21"
+    ],
+    "type": "tap",
+    "question": "Em Obadias 1:15, toque a palavra que falta em \"o teu feito tornará sobre a tua ___\"?",
+    "prompt": "Em Obadias 1:15, toque a palavra que falta em \"o teu feito tornará sobre a tua ___\"?",
+    "cue": "Em Obadias 1:15, toque a palavra que falta em \"o teu feito tornará sobre a tua ___\"?",
+    "feedbackCorrect": "Correto: o retorno do feito cai sobre a própria cabeça.",
+    "feedbackWrong": {
+      "b": "Nações aparece no início do versículo, não nesta lacuna.",
+      "c": "Jeová é quem anuncia o dia, não o alvo do retorno."
+    },
+    "passageText": "Pois o dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "template": "Pois o dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "cabeça"
+      },
+      {
+        "id": "b",
+        "text": "nações"
+      },
+      {
+        "id": "c",
+        "text": "Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-03-desafio-obadias",
+    "id": "obadias-cam-obadias-obadias-03-desafio-obadias-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Obadias 1:15",
+    "learningObjective": "Compreender como orgulho, juízo e reino se encadeiam no livro de Obadias.",
+    "evidence": [
+      "Obadias 1:3-4",
+      "Obadias 1:15",
+      "Obadias 1:21"
+    ],
+    "type": "choice",
+    "question": "Qual ideia melhor conecta Obadias 1:15 ao contexto da missão?",
+    "prompt": "Qual ideia melhor conecta Obadias 1:15 ao contexto da missão?",
+    "cue": "Qual ideia melhor conecta Obadias 1:15 ao contexto da missão?",
+    "feedbackCorrect": "Certo: essa é a ligação que percorre todo o livro de Obadias.",
+    "feedbackWrong": {
+      "b": "Os três temas se encadeiam: orgulho leva a juízo, que abre o reino.",
+      "c": "É exatamente quem se exalta como águia que Jeová derruba.",
+      "d": "O reino só aparece depois do juízo anunciado em todo o livro."
+    },
+    "passageText": "Pois o dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O livro liga o orgulho de Edom ao juízo que abre caminho para o reino de Jeová."
+      },
+      {
+        "id": "b",
+        "text": "O livro trata o orgulho, o juízo e o reino como temas sem relação entre si."
+      },
+      {
+        "id": "c",
+        "text": "A profecia ensina que o juízo de Jeová poupa quem se exaltou como águia."
+      },
+      {
+        "id": "d",
+        "text": "O texto sugere que o reino de Jeová surge sem qualquer juízo anterior."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-03-desafio-obadias",
+    "id": "obadias-cam-obadias-obadias-03-desafio-obadias-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Obadias 1:15",
+    "learningObjective": "Compreender como orgulho, juízo e reino se encadeiam no livro de Obadias.",
+    "evidence": [
+      "Obadias 1:3-4",
+      "Obadias 1:15",
+      "Obadias 1:21"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Obadias 1:15?",
+    "prompt": "Como se encadeiam os eventos de Obadias 1:15?",
+    "cue": "Como se encadeiam os eventos de Obadias 1:15?",
+    "feedbackCorrect": "Certo: essa é a sequência que o texto mostra.",
+    "feedbackWrong": {
+      "b": "Essa peça vem depois do anúncio do dia de Jeová, não antes.",
+      "c": "A conclusão sobre a cabeça fecha o encadeamento, não o abre."
+    },
+    "passageText": "Pois o dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pois o dia de Jeová está perto sobre todas as nações"
+      },
+      {
+        "id": "b",
+        "text": "como tens feito, assim se te fará a ti"
+      },
+      {
+        "id": "c",
+        "text": "o teu feito tornará sobre a tua cabeça"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-03-desafio-obadias",
+    "id": "obadias-cam-obadias-obadias-03-desafio-obadias-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Obadias 1:15",
+    "learningObjective": "Compreender como orgulho, juízo e reino se encadeiam no livro de Obadias.",
+    "evidence": [
+      "Obadias 1:3-4",
+      "Obadias 1:15",
+      "Obadias 1:21"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Pois o dia de ___ está perto\"",
+    "prompt": "Complete a frase: \"Pois o dia de ___ está perto\"",
+    "cue": "Complete a frase: \"Pois o dia de ___ está perto\"",
+    "feedbackCorrect": "Certo: é o dia de Jeová que está perto.",
+    "feedbackWrong": {
+      "b": "Nações aparece depois, não nesta lacuna inicial.",
+      "c": "Cabeça aparece no fim do versículo, não aqui."
+    },
+    "passageText": "Pois o dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "template": "Pois o dia de ___ está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "nações"
+      },
+      {
+        "id": "c",
+        "text": "cabeça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-03-desafio-obadias",
+    "id": "obadias-cam-obadias-obadias-03-desafio-obadias-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Obadias 1:15",
+    "learningObjective": "Compreender como orgulho, juízo e reino se encadeiam no livro de Obadias.",
+    "evidence": [
+      "Obadias 1:3-4",
+      "Obadias 1:15",
+      "Obadias 1:21"
+    ],
+    "type": "connect",
+    "question": "O que Obadias 1:15 comunica que se liga a este contexto?",
+    "prompt": "O que Obadias 1:15 comunica que se liga a este contexto?",
+    "cue": "O que Obadias 1:15 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o juízo anunciado é o mesmo que prepara o reino de Jeová.",
+    "feedbackWrong": {
+      "b": "O livro mostra o reino chegando depois do juízo, não sem ele.",
+      "c": "É Jeová quem estabelece o juízo, não cada nação por si."
+    },
+    "passageText": "Pois o dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "passageA": {
+      "ref": "Obadias 1:15",
+      "text": "Pois o dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Orgulho é julgado; o reino pertence a Jeová."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O juízo abre caminho ao reino"
+      },
+      {
+        "id": "b",
+        "text": "O reino chega sem juízo algum"
+      },
+      {
+        "id": "c",
+        "text": "Cada nação define seu próprio juízo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-03-desafio-obadias",
+    "id": "obadias-cam-obadias-obadias-03-desafio-obadias-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Obadias 1:15",
+    "learningObjective": "Interpretar por que o juízo que abate o orgulho é o mesmo que estabelece o reino de Jeová.",
+    "evidence": [
+      "Obadias 1:3-4",
+      "Obadias 1:15",
+      "Obadias 1:21"
+    ],
+    "type": "true_false",
+    "question": "A lei do retorno anunciada em Obadias 1:15 revela que o juízo de Jeová alcança tanto o orgulho de Edom quanto a esperança do reino restaurado.",
+    "prompt": "A lei do retorno anunciada em Obadias 1:15 revela que o juízo de Jeová alcança tanto o orgulho de Edom quanto a esperança do reino restaurado.",
+    "cue": "A lei do retorno anunciada em Obadias 1:15 revela que o juízo de Jeová alcança tanto o orgulho de Edom quanto a esperança do reino restaurado.",
+    "feedbackCorrect": "Correto: essa síntese resume o sentido de todo o livro.",
+    "feedbackWrong": {
+      "false": "O texto sustenta exatamente essa leitura, do orgulho ao reino."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Pois o dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "trail": "obadias",
+    "section": "obadias-obadias-03-desafio-obadias",
+    "id": "obadias-pro-obadias-obadias-03-desafio-obadias-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Obadias 1:15",
+    "learningObjective": "Interpretar por que o juízo que abate o orgulho é o mesmo que estabelece o reino de Jeová.",
+    "evidence": [
+      "Obadias 1:3-4",
+      "Obadias 1:15",
+      "Obadias 1:21"
+    ],
+    "type": "tap",
+    "question": "Em Obadias 1:15, toque a palavra que falta em \"como tens ___, assim se te fará a ti\"?",
+    "prompt": "Em Obadias 1:15, toque a palavra que falta em \"como tens ___, assim se te fará a ti\"?",
+    "cue": "Em Obadias 1:15, toque a palavra que falta em \"como tens ___, assim se te fará a ti\"?",
+    "feedbackCorrect": "Correto: o princípio é que o próprio feito retorna sobre o autor.",
+    "feedbackWrong": {
+      "b": "Nações aparece antes, não nesta lacuna.",
+      "c": "Cabeça aparece no fim do versículo, não aqui."
+    },
+    "passageText": "Pois o dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "template": "Pois o dia de Jeová está perto sobre todas as nações; como tens ___, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "feito"
+      },
+      {
+        "id": "b",
+        "text": "nações"
+      },
+      {
+        "id": "c",
+        "text": "cabeça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-03-desafio-obadias",
+    "id": "obadias-pro-obadias-obadias-03-desafio-obadias-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Obadias 1:15",
+    "learningObjective": "Interpretar por que o juízo que abate o orgulho é o mesmo que estabelece o reino de Jeová.",
+    "evidence": [
+      "Obadias 1:3-4",
+      "Obadias 1:15",
+      "Obadias 1:21"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de Obadias 1:15?",
+    "prompt": "Qual leitura interpreta melhor o sentido de Obadias 1:15?",
+    "cue": "Qual leitura interpreta melhor o sentido de Obadias 1:15?",
+    "feedbackCorrect": "Certo: essa é a síntese teológica de todo o livro de Obadias.",
+    "feedbackWrong": {
+      "a": "O texto diz 'todas as nações', não apenas Edom.",
+      "c": "O reino é dado por Jeová, não conquistado pela conduta das nações.",
+      "d": "O juízo é concreto: o feito de cada um volta sobre sua cabeça."
+    },
+    "passageText": "Pois o dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O texto ensina que o juízo de Jeová se limita ao território de Edom."
+      },
+      {
+        "id": "b",
+        "text": "A profecia revela que o mesmo juízo que abate o orgulho prepara o reino que será de Jeová."
+      },
+      {
+        "id": "c",
+        "text": "A passagem sugere que o reino de Jeová depende da boa conduta das nações."
+      },
+      {
+        "id": "d",
+        "text": "O texto trata o dia de Jeová como um evento apenas simbólico, sem juízo real."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "obadias",
+    "section": "obadias-obadias-03-desafio-obadias",
+    "id": "obadias-pro-obadias-obadias-03-desafio-obadias-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Obadias 1:15",
+    "learningObjective": "Interpretar por que o juízo que abate o orgulho é o mesmo que estabelece o reino de Jeová.",
+    "evidence": [
+      "Obadias 1:3-4",
+      "Obadias 1:15",
+      "Obadias 1:21"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Obadias 1:15?",
+    "prompt": "Qual sequência revela o sentido de Obadias 1:15?",
+    "cue": "Qual sequência revela o sentido de Obadias 1:15?",
+    "feedbackCorrect": "Certo: essa é a sequência que revela o princípio do juízo.",
+    "feedbackWrong": {
+      "b": "Essa peça vem depois do anúncio do dia de Jeová, não antes.",
+      "c": "A conclusão sobre a cabeça fecha a sequência, não a abre."
+    },
+    "passageText": "Pois o dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pois o dia de Jeová está perto sobre todas as nações"
+      },
+      {
+        "id": "b",
+        "text": "como tens feito, assim se te fará a ti"
+      },
+      {
+        "id": "c",
+        "text": "o teu feito tornará sobre a tua cabeça"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-03-desafio-obadias",
+    "id": "obadias-pro-obadias-obadias-03-desafio-obadias-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Obadias 1:15",
+    "learningObjective": "Interpretar por que o juízo que abate o orgulho é o mesmo que estabelece o reino de Jeová.",
+    "evidence": [
+      "Obadias 1:3-4",
+      "Obadias 1:15",
+      "Obadias 1:21"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"perto sobre todas as ___\"",
+    "prompt": "Complete a frase: \"perto sobre todas as ___\"",
+    "cue": "Complete a frase: \"perto sobre todas as ___\"",
+    "feedbackCorrect": "Correto: o juízo é universal, sobre todas as nações.",
+    "feedbackWrong": {
+      "b": "Feito aparece depois, não nesta lacuna.",
+      "c": "Cabeça aparece no fim do versículo, não aqui."
+    },
+    "passageText": "Pois o dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "template": "Pois o dia de Jeová está perto sobre todas as ___; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nações"
+      },
+      {
+        "id": "b",
+        "text": "feito"
+      },
+      {
+        "id": "c",
+        "text": "cabeça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-03-desafio-obadias",
+    "id": "obadias-pro-obadias-obadias-03-desafio-obadias-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Obadias 1:15",
+    "learningObjective": "Interpretar por que o juízo que abate o orgulho é o mesmo que estabelece o reino de Jeová.",
+    "evidence": [
+      "Obadias 1:3-4",
+      "Obadias 1:15",
+      "Obadias 1:21"
+    ],
+    "type": "connect",
+    "question": "O que Obadias 1:15 comunica que se liga a este contexto?",
+    "prompt": "O que Obadias 1:15 comunica que se liga a este contexto?",
+    "cue": "O que Obadias 1:15 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o mesmo Jeová que julga o orgulho estabelece o reino.",
+    "feedbackWrong": {
+      "b": "O livro mostra o reino chegando como resultado do juízo, não à parte dele.",
+      "c": "O verbo tornará mostra um juízo concreto, não apenas simbólico."
+    },
+    "passageText": "Pois o dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça.",
+    "passageA": {
+      "ref": "Obadias 1:15",
+      "text": "Pois o dia de Jeová está perto sobre todas as nações; como tens feito, assim se te fará a ti; o teu feito tornará sobre a tua cabeça."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Orgulho é julgado; o reino pertence a Jeová."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Juízo e reino vêm da mesma soberania"
+      },
+      {
+        "id": "b",
+        "text": "O reino independe do juízo anunciado"
+      },
+      {
+        "id": "c",
+        "text": "O juízo de Jeová é só simbólico"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "obadias",
+    "section": "obadias-obadias-03-desafio-obadias",
+    "id": "obadias-pro-obadias-obadias-03-desafio-obadias-06"
+  }
+]

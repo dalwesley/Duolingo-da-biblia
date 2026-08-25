@@ -1,0 +1,2954 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 1:1",
+    "learningObjective": "Reconhecer que Deus é o Criador: no princípio ele cria céu e terra, e o mundo não se explica sozinho.",
+    "evidence": [
+      "Gênesis 1:1"
+    ],
+    "type": "true_false",
+    "question": "No princípio, criou Deus o céu e a terra.",
+    "prompt": "No princípio, criou Deus o céu e a terra.",
+    "cue": "No princípio, criou Deus o céu e a terra.",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "id": "doutrina-de-deus-sem-dd-01-criador-01",
+    "feedbackCorrect": "Certo: Gênesis 1:1 afirma exatamente isso.",
+    "feedbackWrong": {
+      "false": "Releia o versículo: Deus cria céu e terra no princípio."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "No princípio, criou Deus o céu e a terra."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 1:1",
+    "learningObjective": "Reconhecer que Deus é o Criador: no princípio ele cria céu e terra, e o mundo não se explica sozinho.",
+    "evidence": [
+      "Gênesis 1:1"
+    ],
+    "type": "tap",
+    "question": "Em Gênesis 1:1, toque a palavra que falta em \"No ___, criou Deus o céu e a terra.\"?",
+    "prompt": "Em Gênesis 1:1, toque a palavra que falta em \"No ___, criou Deus o céu e a terra.\"?",
+    "cue": "Em Gênesis 1:1, toque a palavra que falta em \"No ___, criou Deus o céu e a terra.\"?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "id": "doutrina-de-deus-sem-dd-01-criador-02",
+    "feedbackCorrect": "Exato: o texto começa com o princípio.",
+    "feedbackWrong": {
+      "b": "Céu é o que Deus cria, não o tempo da criação.",
+      "c": "Terra é criada, não a palavra desta lacuna."
+    },
+    "passageText": "No princípio, criou Deus o céu e a terra.",
+    "template": "No ___, criou Deus o céu e a terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "princípio"
+      },
+      {
+        "id": "b",
+        "text": "céu"
+      },
+      {
+        "id": "c",
+        "text": "terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 1:1",
+    "learningObjective": "Reconhecer que Deus é o Criador: no princípio ele cria céu e terra, e o mundo não se explica sozinho.",
+    "evidence": [
+      "Gênesis 1:1"
+    ],
+    "type": "choice",
+    "question": "Qual fato Gênesis 1:1 afirma diretamente?",
+    "prompt": "Qual fato Gênesis 1:1 afirma diretamente?",
+    "cue": "Qual fato Gênesis 1:1 afirma diretamente?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "id": "doutrina-de-deus-sem-dd-01-criador-03",
+    "feedbackCorrect": "Certo: o texto diz que Deus criou céu e terra.",
+    "feedbackWrong": {
+      "b": "O texto põe Deus como Criador, não a terra.",
+      "c": "O versículo afirma criação, não eternidade da matéria.",
+      "d": "Deus cria no princípio; não chega depois do mundo."
+    },
+    "passageText": "No princípio, criou Deus o céu e a terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus criou o céu e a terra no princípio"
+      },
+      {
+        "id": "b",
+        "text": "A terra criou o céu no princípio"
+      },
+      {
+        "id": "c",
+        "text": "O céu e a terra já existiam sem Criador"
+      },
+      {
+        "id": "d",
+        "text": "Deus apareceu depois que a terra já existia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 1:1",
+    "learningObjective": "Reconhecer que Deus é o Criador: no princípio ele cria céu e terra, e o mundo não se explica sozinho.",
+    "evidence": [
+      "Gênesis 1:1"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Gênesis 1:1?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Gênesis 1:1?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Gênesis 1:1?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "id": "doutrina-de-deus-sem-dd-01-criador-04",
+    "feedbackCorrect": "Certo: primeiro o princípio, depois o Criador e o criado.",
+    "feedbackWrong": {
+      "b": "O princípio vem antes da ação de criar.",
+      "c": "Céu e terra são o resultado, não o ponto de partida."
+    },
+    "passageText": "No princípio, criou Deus o céu e a terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "No princípio"
+      },
+      {
+        "id": "b",
+        "text": "criou Deus"
+      },
+      {
+        "id": "c",
+        "text": "o céu e a terra"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 1:1",
+    "learningObjective": "Reconhecer que Deus é o Criador: no princípio ele cria céu e terra, e o mundo não se explica sozinho.",
+    "evidence": [
+      "Gênesis 1:1"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"No princípio, criou Deus o ___ e a terra.\"",
+    "prompt": "Complete a frase: \"No princípio, criou Deus o ___ e a terra.\"",
+    "cue": "Complete a frase: \"No princípio, criou Deus o ___ e a terra.\"",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "id": "doutrina-de-deus-sem-dd-01-criador-05",
+    "feedbackCorrect": "Certo: o texto fala do céu e da terra.",
+    "feedbackWrong": {
+      "b": "Princípio já aparece no início da frase.",
+      "c": "Deus é o sujeito que cria, não o objeto desta lacuna."
+    },
+    "passageText": "No princípio, criou Deus o céu e a terra.",
+    "template": "No princípio, criou Deus o ___ e a terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "céu"
+      },
+      {
+        "id": "b",
+        "text": "princípio"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 1:1",
+    "learningObjective": "Reconhecer que Deus é o Criador: no princípio ele cria céu e terra, e o mundo não se explica sozinho.",
+    "evidence": [
+      "Gênesis 1:1"
+    ],
+    "type": "connect",
+    "question": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+    "prompt": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+    "cue": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "id": "doutrina-de-deus-sem-dd-01-criador-06",
+    "feedbackCorrect": "Certo: o versículo apresenta Deus como Criador.",
+    "feedbackWrong": {
+      "b": "O texto explica o mundo pela ação de Deus, não por si mesmo.",
+      "c": "Céu e terra são criados; não surgem sem origem."
+    },
+    "passageText": "No princípio, criou Deus o céu e a terra.",
+    "passageA": {
+      "ref": "Gênesis 1:1",
+      "text": "No princípio, criou Deus o céu e a terra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus é o Criador: no princípio, ele cria céu e terra — o mundo não se explica sozinho."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus é o Criador"
+      },
+      {
+        "id": "b",
+        "text": "O mundo se explica sozinho"
+      },
+      {
+        "id": "c",
+        "text": "A matéria não tem origem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 1:1",
+    "learningObjective": "Reconhecer que Deus é o Criador: no princípio ele cria céu e terra, e o mundo não se explica sozinho.",
+    "evidence": [
+      "Gênesis 1:1"
+    ],
+    "type": "true_false",
+    "question": "Gênesis 1:1 apresenta o mundo como algo que se explica sozinho, sem um Criador.",
+    "prompt": "Gênesis 1:1 apresenta o mundo como algo que se explica sozinho, sem um Criador.",
+    "cue": "Gênesis 1:1 apresenta o mundo como algo que se explica sozinho, sem um Criador.",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "id": "doutrina-de-deus-cam-dd-01-criador-01",
+    "feedbackCorrect": "Certo: o texto põe Deus como origem, não o mundo sozinho.",
+    "feedbackWrong": {
+      "true": "O versículo atribui céu e terra à ação de Deus, não ao acaso."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "No princípio, criou Deus o céu e a terra."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 1:1",
+    "learningObjective": "Reconhecer que Deus é o Criador: no princípio ele cria céu e terra, e o mundo não se explica sozinho.",
+    "evidence": [
+      "Gênesis 1:1"
+    ],
+    "type": "tap",
+    "question": "Em Gênesis 1:1, toque a palavra que falta em \"No princípio, ___ Deus o céu e a terra.\"?",
+    "prompt": "Em Gênesis 1:1, toque a palavra que falta em \"No princípio, ___ Deus o céu e a terra.\"?",
+    "cue": "Em Gênesis 1:1, toque a palavra que falta em \"No princípio, ___ Deus o céu e a terra.\"?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "id": "doutrina-de-deus-cam-dd-01-criador-02",
+    "feedbackCorrect": "Exato: o verbo do versículo é criou.",
+    "feedbackWrong": {
+      "b": "No abre a frase, mas não preenche esta lacuna.",
+      "c": "Terra é o objeto criado, não o verbo."
+    },
+    "passageText": "No princípio, criou Deus o céu e a terra.",
+    "template": "No princípio, ___ Deus o céu e a terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "criou"
+      },
+      {
+        "id": "b",
+        "text": "No"
+      },
+      {
+        "id": "c",
+        "text": "terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 1:1",
+    "learningObjective": "Reconhecer que Deus é o Criador: no princípio ele cria céu e terra, e o mundo não se explica sozinho.",
+    "evidence": [
+      "Gênesis 1:1"
+    ],
+    "type": "choice",
+    "question": "Como Gênesis 1:1 relaciona Deus e o mundo criado?",
+    "prompt": "Como Gênesis 1:1 relaciona Deus e o mundo criado?",
+    "cue": "Como Gênesis 1:1 relaciona Deus e o mundo criado?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "id": "doutrina-de-deus-cam-dd-01-criador-03",
+    "feedbackCorrect": "Certo: o sujeito da criação é Deus.",
+    "feedbackWrong": {
+      "b": "Não há mundo anterior que depois acha Deus.",
+      "c": "O versículo não ensina origem conjunta no acaso.",
+      "d": "Há agente claro: Deus criou."
+    },
+    "passageText": "No princípio, criou Deus o céu e a terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus é o agente: o mundo existe porque ele cria"
+      },
+      {
+        "id": "b",
+        "text": "O mundo gera a si mesmo e depois encontra Deus"
+      },
+      {
+        "id": "c",
+        "text": "Deus e o cosmos surgem juntos do mesmo acaso"
+      },
+      {
+        "id": "d",
+        "text": "O texto descreve só o tempo, sem qualquer agente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 1:1",
+    "learningObjective": "Reconhecer que Deus é o Criador: no princípio ele cria céu e terra, e o mundo não se explica sozinho.",
+    "evidence": [
+      "Gênesis 1:1"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Gênesis 1:1?",
+    "prompt": "Como se encadeiam os eventos de Gênesis 1:1?",
+    "cue": "Como se encadeiam os eventos de Gênesis 1:1?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "id": "doutrina-de-deus-cam-dd-01-criador-04",
+    "feedbackCorrect": "Certo: origem, ação criadora e o que é criado.",
+    "feedbackWrong": {
+      "b": "O princípio precede a ação de criar.",
+      "c": "A terra vem no fim da frase, com o céu."
+    },
+    "passageText": "No princípio, criou Deus o céu e a terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "No princípio"
+      },
+      {
+        "id": "b",
+        "text": "criou Deus o céu"
+      },
+      {
+        "id": "c",
+        "text": "e a terra"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 1:1",
+    "learningObjective": "Reconhecer que Deus é o Criador: no princípio ele cria céu e terra, e o mundo não se explica sozinho.",
+    "evidence": [
+      "Gênesis 1:1"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"No princípio, criou Deus o céu e a ___.\"",
+    "prompt": "Complete a frase: \"No princípio, criou Deus o céu e a ___.\"",
+    "cue": "Complete a frase: \"No princípio, criou Deus o céu e a ___.\"",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "id": "doutrina-de-deus-cam-dd-01-criador-05",
+    "feedbackCorrect": "Certo: o par criado é céu e terra.",
+    "feedbackWrong": {
+      "b": "Criou já está no verbo da frase.",
+      "c": "No abre o versículo, não fecha o objeto."
+    },
+    "passageText": "No princípio, criou Deus o céu e a terra.",
+    "template": "No princípio, criou Deus o céu e a ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "terra"
+      },
+      {
+        "id": "b",
+        "text": "criou"
+      },
+      {
+        "id": "c",
+        "text": "No"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 1:1",
+    "learningObjective": "Reconhecer que Deus é o Criador: no princípio ele cria céu e terra, e o mundo não se explica sozinho.",
+    "evidence": [
+      "Gênesis 1:1"
+    ],
+    "type": "connect",
+    "question": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+    "prompt": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+    "cue": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "id": "doutrina-de-deus-cam-dd-01-criador-06",
+    "feedbackCorrect": "Certo: há Criador; o mundo não é causa de si.",
+    "feedbackWrong": {
+      "b": "O texto mostra Deus criando, não dependendo do criado.",
+      "c": "O princípio é o tempo da ação de Deus, não o acaso."
+    },
+    "passageText": "No princípio, criou Deus o céu e a terra.",
+    "passageA": {
+      "ref": "Gênesis 1:1",
+      "text": "No princípio, criou Deus o céu e a terra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus é o Criador: no princípio, ele cria céu e terra — o mundo não se explica sozinho."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O mundo não se explica sozinho"
+      },
+      {
+        "id": "b",
+        "text": "Deus depende da criação"
+      },
+      {
+        "id": "c",
+        "text": "O princípio é só acaso"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 1:1",
+    "learningObjective": "Reconhecer que Deus é o Criador: no princípio ele cria céu e terra, e o mundo não se explica sozinho.",
+    "evidence": [
+      "Gênesis 1:1"
+    ],
+    "type": "true_false",
+    "question": "Gênesis 1:1 coloca Deus como origem de céu e terra, e não o mundo como causa de si mesmo.",
+    "prompt": "Gênesis 1:1 coloca Deus como origem de céu e terra, e não o mundo como causa de si mesmo.",
+    "cue": "Gênesis 1:1 coloca Deus como origem de céu e terra, e não o mundo como causa de si mesmo.",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "id": "doutrina-de-deus-pro-dd-01-criador-01",
+    "feedbackCorrect": "Certo: o versículo funda a criação em Deus, não no acaso.",
+    "feedbackWrong": {
+      "false": "Essa é a leitura que o texto sustenta: Deus cria no princípio."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "No princípio, criou Deus o céu e a terra."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 1:1",
+    "learningObjective": "Reconhecer que Deus é o Criador: no princípio ele cria céu e terra, e o mundo não se explica sozinho.",
+    "evidence": [
+      "Gênesis 1:1"
+    ],
+    "type": "tap",
+    "question": "Em Gênesis 1:1, toque a palavra que falta em \"No princípio, criou ___ o céu e a terra.\"?",
+    "prompt": "Em Gênesis 1:1, toque a palavra que falta em \"No princípio, criou ___ o céu e a terra.\"?",
+    "cue": "Em Gênesis 1:1, toque a palavra que falta em \"No princípio, criou ___ o céu e a terra.\"?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "id": "doutrina-de-deus-pro-dd-01-criador-02",
+    "feedbackCorrect": "Exato: o Criador nomeado é Deus.",
+    "feedbackWrong": {
+      "b": "O céu é criado, não quem cria.",
+      "c": "A terra é objeto da criação, não o sujeito."
+    },
+    "passageText": "No princípio, criou Deus o céu e a terra.",
+    "template": "No princípio, criou ___ o céu e a terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus"
+      },
+      {
+        "id": "b",
+        "text": "céu"
+      },
+      {
+        "id": "c",
+        "text": "terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 1:1",
+    "learningObjective": "Reconhecer que Deus é o Criador: no princípio ele cria céu e terra, e o mundo não se explica sozinho.",
+    "evidence": [
+      "Gênesis 1:1"
+    ],
+    "type": "choice",
+    "question": "Qual leitura teológica Gênesis 1:1 sustenta?",
+    "prompt": "Qual leitura teológica Gênesis 1:1 sustenta?",
+    "cue": "Qual leitura teológica Gênesis 1:1 sustenta?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "id": "doutrina-de-deus-pro-dd-01-criador-03",
+    "feedbackCorrect": "Certo: Deus cria; o mundo não é divino nem autossuficiente.",
+    "feedbackWrong": {
+      "b": "Deus cria o céu e a terra; não se confunde com eles.",
+      "c": "O versículo afirma começo criado, não matéria eterna.",
+      "d": "O texto afirma um ato de Deus, não um mito vazio."
+    },
+    "passageText": "No princípio, criou Deus o céu e a terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Há um Criador: o cosmos não é deus nem se explica sozinho"
+      },
+      {
+        "id": "b",
+        "text": "Deus é uma parte do universo, igual ao céu e à terra"
+      },
+      {
+        "id": "c",
+        "text": "O texto ensina que a matéria é eterna e sem origem"
+      },
+      {
+        "id": "d",
+        "text": "Criação é só mito sem qualquer implicação sobre Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 1:1",
+    "learningObjective": "Reconhecer que Deus é o Criador: no princípio ele cria céu e terra, e o mundo não se explica sozinho.",
+    "evidence": [
+      "Gênesis 1:1"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Gênesis 1:1?",
+    "prompt": "Qual sequência revela o sentido de Gênesis 1:1?",
+    "cue": "Qual sequência revela o sentido de Gênesis 1:1?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "id": "doutrina-de-deus-pro-dd-01-criador-04",
+    "feedbackCorrect": "Certo: origem no tempo, agente divino e tudo o que existe.",
+    "feedbackWrong": {
+      "b": "O sentido começa no princípio, não no objeto criado.",
+      "c": "Céu e terra são o criado, depois do Criador."
+    },
+    "passageText": "No princípio, criou Deus o céu e a terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "No princípio"
+      },
+      {
+        "id": "b",
+        "text": "criou Deus"
+      },
+      {
+        "id": "c",
+        "text": "o céu e a terra"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 1:1",
+    "learningObjective": "Reconhecer que Deus é o Criador: no princípio ele cria céu e terra, e o mundo não se explica sozinho.",
+    "evidence": [
+      "Gênesis 1:1"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"___ princípio, criou Deus o céu e a terra.\"",
+    "prompt": "Complete a frase: \"___ princípio, criou Deus o céu e a terra.\"",
+    "cue": "Complete a frase: \"___ princípio, criou Deus o céu e a terra.\"",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "id": "doutrina-de-deus-pro-dd-01-criador-05",
+    "feedbackCorrect": "Certo: a frase TB abre com No princípio.",
+    "feedbackWrong": {
+      "b": "Deus é o sujeito do verbo criou.",
+      "c": "Céu é o que é criado, mais adiante."
+    },
+    "passageText": "No princípio, criou Deus o céu e a terra.",
+    "template": "___ princípio, criou Deus o céu e a terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "No"
+      },
+      {
+        "id": "b",
+        "text": "Deus"
+      },
+      {
+        "id": "c",
+        "text": "céu"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 1:1",
+    "learningObjective": "Reconhecer que Deus é o Criador: no princípio ele cria céu e terra, e o mundo não se explica sozinho.",
+    "evidence": [
+      "Gênesis 1:1"
+    ],
+    "type": "connect",
+    "question": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+    "prompt": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+    "cue": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-01-criador",
+    "id": "doutrina-de-deus-pro-dd-01-criador-06",
+    "feedbackCorrect": "Certo: o palco da doutrina é a criação por Deus.",
+    "feedbackWrong": {
+      "b": "O texto faz de Deus o Criador, não criatura.",
+      "c": "Céu e terra são criados, não divindades."
+    },
+    "passageText": "No princípio, criou Deus o céu e a terra.",
+    "passageA": {
+      "ref": "Gênesis 1:1",
+      "text": "No princípio, criou Deus o céu e a terra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus é o Criador: no princípio, ele cria céu e terra — o mundo não se explica sozinho."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus cria céu e terra"
+      },
+      {
+        "id": "b",
+        "text": "Deus é criatura do mundo"
+      },
+      {
+        "id": "c",
+        "text": "Céu e terra são deuses"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Isaías 6:3",
+    "learningObjective": "Reconhecer que Deus é santo: o triságio enche a terra de glória, e santidade é o nome dele.",
+    "evidence": [
+      "Isaías 6:3"
+    ],
+    "type": "true_false",
+    "question": "Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória.",
+    "prompt": "Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória.",
+    "cue": "Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória.",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "id": "doutrina-de-deus-sem-dd-02-santo-01",
+    "feedbackCorrect": "Certo: é o que os serafins proclamam em Isaías 6:3.",
+    "feedbackWrong": {
+      "false": "O triságio e a glória na terra estão no próprio texto."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Isaías 6:3",
+    "learningObjective": "Reconhecer que Deus é santo: o triságio enche a terra de glória, e santidade é o nome dele.",
+    "evidence": [
+      "Isaías 6:3"
+    ],
+    "type": "tap",
+    "question": "Em Isaías 6:3, toque a palavra que falta em \"Um chamava ao outro e dizia: ___, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória.\"?",
+    "prompt": "Em Isaías 6:3, toque a palavra que falta em \"Um chamava ao outro e dizia: ___, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória.\"?",
+    "cue": "Em Isaías 6:3, toque a palavra que falta em \"Um chamava ao outro e dizia: ___, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória.\"?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "id": "doutrina-de-deus-sem-dd-02-santo-02",
+    "feedbackCorrect": "Exato: o cântico começa com Santo, santo, santo.",
+    "feedbackWrong": {
+      "b": "Terra aparece depois, na frase da glória.",
+      "c": "Glória fecha o versículo, não esta lacuna."
+    },
+    "passageText": "Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória.",
+    "template": "Um chamava ao outro e dizia: ___, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Santo"
+      },
+      {
+        "id": "b",
+        "text": "terra"
+      },
+      {
+        "id": "c",
+        "text": "glória"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Isaías 6:3",
+    "learningObjective": "Reconhecer que Deus é santo: o triságio enche a terra de glória, e santidade é o nome dele.",
+    "evidence": [
+      "Isaías 6:3"
+    ],
+    "type": "choice",
+    "question": "Qual fato Isaías 6:3 registra sobre o que era dito?",
+    "prompt": "Qual fato Isaías 6:3 registra sobre o que era dito?",
+    "cue": "Qual fato Isaías 6:3 registra sobre o que era dito?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "id": "doutrina-de-deus-sem-dd-02-santo-03",
+    "feedbackCorrect": "Certo: o triságio nomeia Jeová dos Exércitos.",
+    "feedbackWrong": {
+      "b": "O texto diz que a terra toda está cheia da glória.",
+      "c": "O nome proclamado é Santo, não criado.",
+      "d": "A glória enche a terra toda, não só o céu."
+    },
+    "passageText": "Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Proclamavam santo três vezes a Jeová dos Exércitos"
+      },
+      {
+        "id": "b",
+        "text": "Proclamavam que a terra estava vazia de glória"
+      },
+      {
+        "id": "c",
+        "text": "Chamavam Jeová de criado, não de santo"
+      },
+      {
+        "id": "d",
+        "text": "Diziam que só o céu, e não a terra, tem glória"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Isaías 6:3",
+    "learningObjective": "Reconhecer que Deus é santo: o triságio enche a terra de glória, e santidade é o nome dele.",
+    "evidence": [
+      "Isaías 6:3"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Isaías 6:3?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Isaías 6:3?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Isaías 6:3?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "id": "doutrina-de-deus-sem-dd-02-santo-04",
+    "feedbackCorrect": "Certo: o chamado, o triságio e a glória na terra.",
+    "feedbackWrong": {
+      "b": "O chamado ao outro vem antes do cântico.",
+      "c": "A glória na terra fecha o anúncio, não o abre."
+    },
+    "passageText": "Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um chamava ao outro e dizia"
+      },
+      {
+        "id": "b",
+        "text": "Santo, santo, santo é Jeová dos Exércitos"
+      },
+      {
+        "id": "c",
+        "text": "a terra toda está cheia da sua glória"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Isaías 6:3",
+    "learningObjective": "Reconhecer que Deus é santo: o triságio enche a terra de glória, e santidade é o nome dele.",
+    "evidence": [
+      "Isaías 6:3"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Santo, santo, santo é Jeová dos Exércitos; a ___ toda está cheia da sua glória.\"",
+    "prompt": "Complete a frase: \"Santo, santo, santo é Jeová dos Exércitos; a ___ toda está cheia da sua glória.\"",
+    "cue": "Complete a frase: \"Santo, santo, santo é Jeová dos Exércitos; a ___ toda está cheia da sua glória.\"",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "id": "doutrina-de-deus-sem-dd-02-santo-05",
+    "feedbackCorrect": "Certo: é a terra toda que está cheia da glória.",
+    "feedbackWrong": {
+      "b": "Santo já foi proclamado três vezes antes.",
+      "c": "Jeová é quem é santo, não o lugar da glória."
+    },
+    "passageText": "Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória.",
+    "template": "Santo, santo, santo é Jeová dos Exércitos; a ___ toda está cheia da sua glória.",
+    "options": [
+      {
+        "id": "a",
+        "text": "terra"
+      },
+      {
+        "id": "b",
+        "text": "Santo"
+      },
+      {
+        "id": "c",
+        "text": "Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Isaías 6:3",
+    "learningObjective": "Reconhecer que Deus é santo: o triságio enche a terra de glória, e santidade é o nome dele.",
+    "evidence": [
+      "Isaías 6:3"
+    ],
+    "type": "connect",
+    "question": "O que Isaías 6:3 comunica que se liga a este contexto?",
+    "prompt": "O que Isaías 6:3 comunica que se liga a este contexto?",
+    "cue": "O que Isaías 6:3 comunica que se liga a este contexto?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "id": "doutrina-de-deus-sem-dd-02-santo-06",
+    "feedbackCorrect": "Certo: o triságio coloca a santidade no centro.",
+    "feedbackWrong": {
+      "b": "Repetir santo três vezes não trata isso como detalhe.",
+      "c": "A terra toda está cheia da sua glória."
+    },
+    "passageText": "Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória.",
+    "passageA": {
+      "ref": "Isaías 6:3",
+      "text": "Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus é santo: o triságio enche a terra de glória — santidade não é detalhe, é o nome dele."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus é santo"
+      },
+      {
+        "id": "b",
+        "text": "Santidade é detalhe menor"
+      },
+      {
+        "id": "c",
+        "text": "A terra está vazia de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Isaías 6:3",
+    "learningObjective": "Reconhecer que Deus é santo: o triságio enche a terra de glória, e santidade é o nome dele.",
+    "evidence": [
+      "Isaías 6:3"
+    ],
+    "type": "true_false",
+    "question": "Em Isaías 6:3, a santidade de Jeová fica restrita ao céu e não toca a terra.",
+    "prompt": "Em Isaías 6:3, a santidade de Jeová fica restrita ao céu e não toca a terra.",
+    "cue": "Em Isaías 6:3, a santidade de Jeová fica restrita ao céu e não toca a terra.",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "id": "doutrina-de-deus-cam-dd-02-santo-01",
+    "feedbackCorrect": "Certo: a terra toda está cheia da sua glória.",
+    "feedbackWrong": {
+      "true": "O texto liga o santo ao enchimento da terra com glória."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Isaías 6:3",
+    "learningObjective": "Reconhecer que Deus é santo: o triságio enche a terra de glória, e santidade é o nome dele.",
+    "evidence": [
+      "Isaías 6:3"
+    ],
+    "type": "tap",
+    "question": "Em Isaías 6:3, toque a palavra que falta em \"Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua ___.\"?",
+    "prompt": "Em Isaías 6:3, toque a palavra que falta em \"Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua ___.\"?",
+    "cue": "Em Isaías 6:3, toque a palavra que falta em \"Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua ___.\"?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "id": "doutrina-de-deus-cam-dd-02-santo-02",
+    "feedbackCorrect": "Exato: a terra está cheia da glória de Jeová.",
+    "feedbackWrong": {
+      "b": "Santo é o nome proclamado no início.",
+      "c": "Exércitos qualifica Jeová, não esta lacuna."
+    },
+    "passageText": "Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória.",
+    "template": "Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "glória"
+      },
+      {
+        "id": "b",
+        "text": "Santo"
+      },
+      {
+        "id": "c",
+        "text": "Exércitos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Isaías 6:3",
+    "learningObjective": "Reconhecer que Deus é santo: o triságio enche a terra de glória, e santidade é o nome dele.",
+    "evidence": [
+      "Isaías 6:3"
+    ],
+    "type": "choice",
+    "question": "Como o triságio se relaciona com a terra em Isaías 6:3?",
+    "prompt": "Como o triságio se relaciona com a terra em Isaías 6:3?",
+    "cue": "Como o triságio se relaciona com a terra em Isaías 6:3?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "id": "doutrina-de-deus-cam-dd-02-santo-03",
+    "feedbackCorrect": "Certo: santo e glória na terra vêm juntos no texto.",
+    "feedbackWrong": {
+      "b": "O texto afirma enchimento, não ocultação.",
+      "c": "A glória não apaga o nome santo; o declara.",
+      "d": "A segunda metade fala da terra toda."
+    },
+    "passageText": "Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quem é santo enche a terra toda com a sua glória"
+      },
+      {
+        "id": "b",
+        "text": "A santidade de Jeová permanece escondida da terra"
+      },
+      {
+        "id": "c",
+        "text": "A glória na terra substitui o nome santo de Jeová"
+      },
+      {
+        "id": "d",
+        "text": "O cântico fala só dos Exércitos, sem a terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Isaías 6:3",
+    "learningObjective": "Reconhecer que Deus é santo: o triságio enche a terra de glória, e santidade é o nome dele.",
+    "evidence": [
+      "Isaías 6:3"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Isaías 6:3?",
+    "prompt": "Como se encadeiam os eventos de Isaías 6:3?",
+    "cue": "Como se encadeiam os eventos de Isaías 6:3?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "id": "doutrina-de-deus-cam-dd-02-santo-04",
+    "feedbackCorrect": "Certo: chamado, nome santo e glória que enche a terra.",
+    "feedbackWrong": {
+      "b": "Primeiro um chama ao outro; depois o cântico.",
+      "c": "A glória na terra é o desfecho do anúncio."
+    },
+    "passageText": "Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um chamava ao outro"
+      },
+      {
+        "id": "b",
+        "text": "Santo, santo, santo é Jeová dos Exércitos"
+      },
+      {
+        "id": "c",
+        "text": "a terra toda está cheia da sua glória"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Isaías 6:3",
+    "learningObjective": "Reconhecer que Deus é santo: o triságio enche a terra de glória, e santidade é o nome dele.",
+    "evidence": [
+      "Isaías 6:3"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Santo, santo, santo é Jeová dos Exércitos; a terra toda está ___ da sua glória.\"",
+    "prompt": "Complete a frase: \"Santo, santo, santo é Jeová dos Exércitos; a terra toda está ___ da sua glória.\"",
+    "cue": "Complete a frase: \"Santo, santo, santo é Jeová dos Exércitos; a terra toda está ___ da sua glória.\"",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "id": "doutrina-de-deus-cam-dd-02-santo-05",
+    "feedbackCorrect": "Certo: a terra está cheia da glória.",
+    "feedbackWrong": {
+      "b": "Chamava descreve os que falam, não a terra.",
+      "c": "Outro é quem é chamado, no início do verso."
+    },
+    "passageText": "Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória.",
+    "template": "Santo, santo, santo é Jeová dos Exércitos; a terra toda está ___ da sua glória.",
+    "options": [
+      {
+        "id": "a",
+        "text": "cheia"
+      },
+      {
+        "id": "b",
+        "text": "chamava"
+      },
+      {
+        "id": "c",
+        "text": "outro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Isaías 6:3",
+    "learningObjective": "Reconhecer que Deus é santo: o triságio enche a terra de glória, e santidade é o nome dele.",
+    "evidence": [
+      "Isaías 6:3"
+    ],
+    "type": "connect",
+    "question": "O que Isaías 6:3 comunica que se liga a este contexto?",
+    "prompt": "O que Isaías 6:3 comunica que se liga a este contexto?",
+    "cue": "O que Isaías 6:3 comunica que se liga a este contexto?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "id": "doutrina-de-deus-cam-dd-02-santo-06",
+    "feedbackCorrect": "Certo: a glória do Santo cobre a terra toda.",
+    "feedbackWrong": {
+      "b": "O texto não limita a glória às paredes do templo.",
+      "c": "O cântico revela o nome e a glória de Jeová."
+    },
+    "passageText": "Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória.",
+    "passageA": {
+      "ref": "Isaías 6:3",
+      "text": "Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus é santo: o triságio enche a terra de glória — santidade não é detalhe, é o nome dele."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A terra enche-se de glória"
+      },
+      {
+        "id": "b",
+        "text": "Santidade fica só no templo"
+      },
+      {
+        "id": "c",
+        "text": "Jeová não se dá a conhecer"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Isaías 6:3",
+    "learningObjective": "Reconhecer que Deus é santo: o triságio enche a terra de glória, e santidade é o nome dele.",
+    "evidence": [
+      "Isaías 6:3"
+    ],
+    "type": "true_false",
+    "question": "Em Isaías 6:3, santidade não é detalhe: é o nome triplo de Jeová, cuja glória enche a terra.",
+    "prompt": "Em Isaías 6:3, santidade não é detalhe: é o nome triplo de Jeová, cuja glória enche a terra.",
+    "cue": "Em Isaías 6:3, santidade não é detalhe: é o nome triplo de Jeová, cuja glória enche a terra.",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "id": "doutrina-de-deus-pro-dd-02-santo-01",
+    "feedbackCorrect": "Certo: o triságio é o nome, e a glória cobre a terra.",
+    "feedbackWrong": {
+      "false": "O texto sustenta santidade como proclamação central, não acessório."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Isaías 6:3",
+    "learningObjective": "Reconhecer que Deus é santo: o triságio enche a terra de glória, e santidade é o nome dele.",
+    "evidence": [
+      "Isaías 6:3"
+    ],
+    "type": "tap",
+    "question": "Em Isaías 6:3, toque a palavra que falta em \"Santo, santo, santo é Jeová dos ___; a terra toda está cheia da sua glória.\"?",
+    "prompt": "Em Isaías 6:3, toque a palavra que falta em \"Santo, santo, santo é Jeová dos ___; a terra toda está cheia da sua glória.\"?",
+    "cue": "Em Isaías 6:3, toque a palavra que falta em \"Santo, santo, santo é Jeová dos ___; a terra toda está cheia da sua glória.\"?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "id": "doutrina-de-deus-pro-dd-02-santo-02",
+    "feedbackCorrect": "Exato: o título é Jeová dos Exércitos.",
+    "feedbackWrong": {
+      "b": "Terra vem na frase seguinte, da glória.",
+      "c": "Glória é o que enche a terra, no fim."
+    },
+    "passageText": "Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória.",
+    "template": "Santo, santo, santo é Jeová dos ___; a terra toda está cheia da sua glória.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Exércitos"
+      },
+      {
+        "id": "b",
+        "text": "terra"
+      },
+      {
+        "id": "c",
+        "text": "glória"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Isaías 6:3",
+    "learningObjective": "Reconhecer que Deus é santo: o triságio enche a terra de glória, e santidade é o nome dele.",
+    "evidence": [
+      "Isaías 6:3"
+    ],
+    "type": "choice",
+    "question": "Qual leitura Isaías 6:3 impede sobre o Deus santo?",
+    "prompt": "Qual leitura Isaías 6:3 impede sobre o Deus santo?",
+    "cue": "Qual leitura Isaías 6:3 impede sobre o Deus santo?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "id": "doutrina-de-deus-pro-dd-02-santo-03",
+    "feedbackCorrect": "Certo: o texto não deixa a santidade como detalhe irrelevante.",
+    "feedbackWrong": {
+      "b": "Essa é a proclamação do próprio versículo.",
+      "c": "O texto faz exatamente essa união.",
+      "d": "O cântico revela quem Jeová é."
+    },
+    "passageText": "Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tratar santidade como detalhe, enquanto a terra ignora sua glória"
+      },
+      {
+        "id": "b",
+        "text": "Confessar Jeová três vezes santo, com glória na terra toda"
+      },
+      {
+        "id": "c",
+        "text": "Unir o nome santo de Jeová ao enchimento da terra"
+      },
+      {
+        "id": "d",
+        "text": "Ouvir o triságio como revelação do caráter de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Isaías 6:3",
+    "learningObjective": "Reconhecer que Deus é santo: o triságio enche a terra de glória, e santidade é o nome dele.",
+    "evidence": [
+      "Isaías 6:3"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Isaías 6:3?",
+    "prompt": "Qual sequência revela o sentido de Isaías 6:3?",
+    "cue": "Qual sequência revela o sentido de Isaías 6:3?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "id": "doutrina-de-deus-pro-dd-02-santo-04",
+    "feedbackCorrect": "Certo: o nome santo, o alcance e a glória.",
+    "feedbackWrong": {
+      "b": "O sentido começa no triságio, não no lugar.",
+      "c": "A glória é o conteúdo que enche, no fim."
+    },
+    "passageText": "Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Santo, santo, santo é Jeová dos Exércitos"
+      },
+      {
+        "id": "b",
+        "text": "a terra toda está cheia"
+      },
+      {
+        "id": "c",
+        "text": "da sua glória"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Isaías 6:3",
+    "learningObjective": "Reconhecer que Deus é santo: o triságio enche a terra de glória, e santidade é o nome dele.",
+    "evidence": [
+      "Isaías 6:3"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Santo, santo, santo é ___ dos Exércitos; a terra toda está cheia da sua glória.\"",
+    "prompt": "Complete a frase: \"Santo, santo, santo é ___ dos Exércitos; a terra toda está cheia da sua glória.\"",
+    "cue": "Complete a frase: \"Santo, santo, santo é ___ dos Exércitos; a terra toda está cheia da sua glória.\"",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "id": "doutrina-de-deus-pro-dd-02-santo-05",
+    "feedbackCorrect": "Certo: quem é santo é Jeová dos Exércitos.",
+    "feedbackWrong": {
+      "b": "Terra é o palco da glória, não o nome santo.",
+      "c": "Cheia descreve a terra, mais adiante."
+    },
+    "passageText": "Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória.",
+    "template": "Santo, santo, santo é ___ dos Exércitos; a terra toda está cheia da sua glória.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "terra"
+      },
+      {
+        "id": "c",
+        "text": "cheia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Isaías 6:3",
+    "learningObjective": "Reconhecer que Deus é santo: o triságio enche a terra de glória, e santidade é o nome dele.",
+    "evidence": [
+      "Isaías 6:3"
+    ],
+    "type": "connect",
+    "question": "O que Isaías 6:3 comunica que se liga a este contexto?",
+    "prompt": "O que Isaías 6:3 comunica que se liga a este contexto?",
+    "cue": "O que Isaías 6:3 comunica que se liga a este contexto?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-02-santo",
+    "id": "doutrina-de-deus-pro-dd-02-santo-06",
+    "feedbackCorrect": "Certo: santo, santo, santo nomeia quem Jeová é.",
+    "feedbackWrong": {
+      "b": "O texto proclama o ser de Deus, não só conduta humana.",
+      "c": "Glória e santidade caminham juntas no versículo."
+    },
+    "passageText": "Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória.",
+    "passageA": {
+      "ref": "Isaías 6:3",
+      "text": "Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus é santo: o triságio enche a terra de glória — santidade não é detalhe, é o nome dele."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Santidade é o nome dele"
+      },
+      {
+        "id": "b",
+        "text": "Santidade é só ética humana"
+      },
+      {
+        "id": "c",
+        "text": "Glória e santidade se opõem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 28:19",
+    "learningObjective": "Reconhecer um Deus em três pessoas: o batismo é em o nome do Pai, do Filho e do Espírito Santo.",
+    "evidence": [
+      "Mateus 28:19"
+    ],
+    "type": "true_false",
+    "question": "Jesus manda fazer discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo.",
+    "prompt": "Jesus manda fazer discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo.",
+    "cue": "Jesus manda fazer discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo.",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "id": "doutrina-de-deus-sem-dd-03-trino-01",
+    "feedbackCorrect": "Certo: é a ordem de Mateus 28:19 na TB.",
+    "feedbackWrong": {
+      "false": "O versículo traz discípulos, nações e o nome triúno."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 28:19",
+    "learningObjective": "Reconhecer um Deus em três pessoas: o batismo é em o nome do Pai, do Filho e do Espírito Santo.",
+    "evidence": [
+      "Mateus 28:19"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 28:19, toque a palavra que falta em \"Ide, pois, e fazei ___ de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;\"?",
+    "prompt": "Em Mateus 28:19, toque a palavra que falta em \"Ide, pois, e fazei ___ de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;\"?",
+    "cue": "Em Mateus 28:19, toque a palavra que falta em \"Ide, pois, e fazei ___ de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;\"?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "id": "doutrina-de-deus-sem-dd-03-trino-02",
+    "feedbackCorrect": "Exato: a ordem é fazer discípulos.",
+    "feedbackWrong": {
+      "b": "Pai entra no nome do batismo, depois.",
+      "c": "Filho também está no nome, não nesta lacuna."
+    },
+    "passageText": "Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "template": "Ide, pois, e fazei ___ de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "discípulos"
+      },
+      {
+        "id": "b",
+        "text": "Pai"
+      },
+      {
+        "id": "c",
+        "text": "Filho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 28:19",
+    "learningObjective": "Reconhecer um Deus em três pessoas: o batismo é em o nome do Pai, do Filho e do Espírito Santo.",
+    "evidence": [
+      "Mateus 28:19"
+    ],
+    "type": "choice",
+    "question": "Qual fato Mateus 28:19 afirma sobre o batismo?",
+    "prompt": "Qual fato Mateus 28:19 afirma sobre o batismo?",
+    "cue": "Qual fato Mateus 28:19 afirma sobre o batismo?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "id": "doutrina-de-deus-sem-dd-03-trino-03",
+    "feedbackCorrect": "Certo: a fórmula cita Pai, Filho e Espírito Santo.",
+    "feedbackWrong": {
+      "b": "O Filho está nomeado na fórmula.",
+      "c": "O Espírito Santo fecha a tríade do versículo.",
+      "d": "O texto diz o nome, no singular, não muitos nomes."
+    },
+    "passageText": "Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Batiza-se em o nome do Pai, e do Filho, e do Espírito Santo"
+      },
+      {
+        "id": "b",
+        "text": "Batiza-se só no nome do Pai, sem o Filho"
+      },
+      {
+        "id": "c",
+        "text": "O texto omite o Espírito Santo da fórmula"
+      },
+      {
+        "id": "d",
+        "text": "O batismo é em muitos nomes, um para cada pessoa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 28:19",
+    "learningObjective": "Reconhecer um Deus em três pessoas: o batismo é em o nome do Pai, do Filho e do Espírito Santo.",
+    "evidence": [
+      "Mateus 28:19"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Mateus 28:19?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Mateus 28:19?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Mateus 28:19?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "id": "doutrina-de-deus-sem-dd-03-trino-04",
+    "feedbackCorrect": "Certo: missão, batismo e o nome triúno.",
+    "feedbackWrong": {
+      "b": "Ir e fazer discípulos vem antes do batismo.",
+      "c": "Pai, Filho e Espírito Santo fecham a fórmula."
+    },
+    "passageText": "Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ide, pois, e fazei discípulos de todas as nações"
+      },
+      {
+        "id": "b",
+        "text": "batizando-as em o nome"
+      },
+      {
+        "id": "c",
+        "text": "do Pai, e do Filho, e do Espírito Santo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 28:19",
+    "learningObjective": "Reconhecer um Deus em três pessoas: o batismo é em o nome do Pai, do Filho e do Espírito Santo.",
+    "evidence": [
+      "Mateus 28:19"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Ide, pois, e fazei discípulos de todas as ___, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;\"",
+    "prompt": "Complete a frase: \"Ide, pois, e fazei discípulos de todas as ___, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;\"",
+    "cue": "Complete a frase: \"Ide, pois, e fazei discípulos de todas as ___, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;\"",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "id": "doutrina-de-deus-sem-dd-03-trino-05",
+    "feedbackCorrect": "Certo: os discípulos são de todas as nações.",
+    "feedbackWrong": {
+      "b": "Discípulos já é o objeto de fazei.",
+      "c": "Nome aparece na fórmula do batismo."
+    },
+    "passageText": "Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "template": "Ide, pois, e fazei discípulos de todas as ___, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "nações"
+      },
+      {
+        "id": "b",
+        "text": "discípulos"
+      },
+      {
+        "id": "c",
+        "text": "nome"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 28:19",
+    "learningObjective": "Reconhecer um Deus em três pessoas: o batismo é em o nome do Pai, do Filho e do Espírito Santo.",
+    "evidence": [
+      "Mateus 28:19"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 28:19 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 28:19 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 28:19 comunica que se liga a este contexto?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "id": "doutrina-de-deus-sem-dd-03-trino-06",
+    "feedbackCorrect": "Certo: o nome está no singular; as pessoas, em três.",
+    "feedbackWrong": {
+      "b": "O texto não fala de três nomes nem de três deuses.",
+      "c": "O Filho está explicitamente na fórmula."
+    },
+    "passageText": "Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "passageA": {
+      "ref": "Mateus 28:19",
+      "text": "Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Um Deus em três pessoas: o batismo é em o nome (singular) do Pai, do Filho e do Espírito Santo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Um nome, três pessoas"
+      },
+      {
+        "id": "b",
+        "text": "Três deuses distintos"
+      },
+      {
+        "id": "c",
+        "text": "Batismo sem o Filho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 28:19",
+    "learningObjective": "Reconhecer um Deus em três pessoas: o batismo é em o nome do Pai, do Filho e do Espírito Santo.",
+    "evidence": [
+      "Mateus 28:19"
+    ],
+    "type": "true_false",
+    "question": "Mateus 28:19 usa o plural os nomes para Pai, Filho e Espírito Santo, como se fossem três deuses.",
+    "prompt": "Mateus 28:19 usa o plural os nomes para Pai, Filho e Espírito Santo, como se fossem três deuses.",
+    "cue": "Mateus 28:19 usa o plural os nomes para Pai, Filho e Espírito Santo, como se fossem três deuses.",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "id": "doutrina-de-deus-cam-dd-03-trino-01",
+    "feedbackCorrect": "Certo: o texto diz em o nome, no singular.",
+    "feedbackWrong": {
+      "true": "A TB traz o nome, não os nomes: um Deus, três pessoas."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 28:19",
+    "learningObjective": "Reconhecer um Deus em três pessoas: o batismo é em o nome do Pai, do Filho e do Espírito Santo.",
+    "evidence": [
+      "Mateus 28:19"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 28:19, toque a palavra que falta em \"batizando-as em o ___ do Pai, e do Filho, e do Espírito Santo;\"?",
+    "prompt": "Em Mateus 28:19, toque a palavra que falta em \"batizando-as em o ___ do Pai, e do Filho, e do Espírito Santo;\"?",
+    "cue": "Em Mateus 28:19, toque a palavra que falta em \"batizando-as em o ___ do Pai, e do Filho, e do Espírito Santo;\"?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "id": "doutrina-de-deus-cam-dd-03-trino-02",
+    "feedbackCorrect": "Exato: o batismo é em o nome, singular.",
+    "feedbackWrong": {
+      "b": "Nações é o alcance da missão, antes.",
+      "c": "Discípulos é quem se faz, não a fórmula."
+    },
+    "passageText": "Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "template": "batizando-as em o ___ do Pai, e do Filho, e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "nome"
+      },
+      {
+        "id": "b",
+        "text": "nações"
+      },
+      {
+        "id": "c",
+        "text": "discípulos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 28:19",
+    "learningObjective": "Reconhecer um Deus em três pessoas: o batismo é em o nome do Pai, do Filho e do Espírito Santo.",
+    "evidence": [
+      "Mateus 28:19"
+    ],
+    "type": "choice",
+    "question": "Como o singular o nome se relaciona com Pai, Filho e Espírito Santo?",
+    "prompt": "Como o singular o nome se relaciona com Pai, Filho e Espírito Santo?",
+    "cue": "Como o singular o nome se relaciona com Pai, Filho e Espírito Santo?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "id": "doutrina-de-deus-cam-dd-03-trino-03",
+    "feedbackCorrect": "Certo: um nome, três pessoas na mesma fórmula.",
+    "feedbackWrong": {
+      "b": "O texto não multiplica nomes nem deuses.",
+      "c": "Filho e Espírito Santo entram no mesmo nome.",
+      "d": "Não há três origens; há um nome e uma missão."
+    },
+    "passageText": "Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Há um só nome, compartilhado pelas três pessoas"
+      },
+      {
+        "id": "b",
+        "text": "Cada pessoa tem um nome separado, como três deuses"
+      },
+      {
+        "id": "c",
+        "text": "O nome pertence só ao Pai; Filho e Espírito são títulos"
+      },
+      {
+        "id": "d",
+        "text": "O versículo ensina três nomes iguais a três origens"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 28:19",
+    "learningObjective": "Reconhecer um Deus em três pessoas: o batismo é em o nome do Pai, do Filho e do Espírito Santo.",
+    "evidence": [
+      "Mateus 28:19"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Mateus 28:19?",
+    "prompt": "Como se encadeiam os eventos de Mateus 28:19?",
+    "cue": "Como se encadeiam os eventos de Mateus 28:19?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "id": "doutrina-de-deus-cam-dd-03-trino-04",
+    "feedbackCorrect": "Certo: ir, alcance universal e batismo no nome triúno.",
+    "feedbackWrong": {
+      "b": "A ordem de ir e fazer discípulos vem primeiro.",
+      "c": "O batismo no nome fecha a cadeia do versículo."
+    },
+    "passageText": "Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ide, pois, e fazei discípulos"
+      },
+      {
+        "id": "b",
+        "text": "de todas as nações"
+      },
+      {
+        "id": "c",
+        "text": "batizando-as em o nome do Pai, e do Filho, e do Espírito Santo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 28:19",
+    "learningObjective": "Reconhecer um Deus em três pessoas: o batismo é em o nome do Pai, do Filho e do Espírito Santo.",
+    "evidence": [
+      "Mateus 28:19"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"batizando-as em o nome do Pai, e do ___, e do Espírito Santo;\"",
+    "prompt": "Complete a frase: \"batizando-as em o nome do Pai, e do ___, e do Espírito Santo;\"",
+    "cue": "Complete a frase: \"batizando-as em o nome do Pai, e do ___, e do Espírito Santo;\"",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "id": "doutrina-de-deus-cam-dd-03-trino-05",
+    "feedbackCorrect": "Certo: a tríade é Pai, Filho e Espírito Santo.",
+    "feedbackWrong": {
+      "b": "Nome já aparece antes desta lacuna.",
+      "c": "Nações é o alcance da missão, não a pessoa."
+    },
+    "passageText": "Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "template": "batizando-as em o nome do Pai, e do ___, e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Filho"
+      },
+      {
+        "id": "b",
+        "text": "nome"
+      },
+      {
+        "id": "c",
+        "text": "nações"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 28:19",
+    "learningObjective": "Reconhecer um Deus em três pessoas: o batismo é em o nome do Pai, do Filho e do Espírito Santo.",
+    "evidence": [
+      "Mateus 28:19"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 28:19 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 28:19 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 28:19 comunica que se liga a este contexto?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "id": "doutrina-de-deus-cam-dd-03-trino-06",
+    "feedbackCorrect": "Certo: a ponte é o nome único na tríade.",
+    "feedbackWrong": {
+      "b": "O versículo não fala de três nomes.",
+      "c": "O alcance é todas as nações."
+    },
+    "passageText": "Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "passageA": {
+      "ref": "Mateus 28:19",
+      "text": "Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Um Deus em três pessoas: o batismo é em o nome (singular) do Pai, do Filho e do Espírito Santo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Batismo no nome singular"
+      },
+      {
+        "id": "b",
+        "text": "Três nomes, três deuses"
+      },
+      {
+        "id": "c",
+        "text": "Missão só a uma nação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 28:19",
+    "learningObjective": "Reconhecer um Deus em três pessoas: o batismo é em o nome do Pai, do Filho e do Espírito Santo.",
+    "evidence": [
+      "Mateus 28:19"
+    ],
+    "type": "true_false",
+    "question": "O batismo em o nome do Pai, do Filho e do Espírito Santo aponta para um Deus em três pessoas.",
+    "prompt": "O batismo em o nome do Pai, do Filho e do Espírito Santo aponta para um Deus em três pessoas.",
+    "cue": "O batismo em o nome do Pai, do Filho e do Espírito Santo aponta para um Deus em três pessoas.",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "id": "doutrina-de-deus-pro-dd-03-trino-01",
+    "feedbackCorrect": "Certo: um nome, três pessoas — a Trindade no envio.",
+    "feedbackWrong": {
+      "false": "Essa leitura é sustentável pelo singular o nome e a tríade."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 28:19",
+    "learningObjective": "Reconhecer um Deus em três pessoas: o batismo é em o nome do Pai, do Filho e do Espírito Santo.",
+    "evidence": [
+      "Mateus 28:19"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 28:19, toque a palavra que falta em \"batizando-as em o nome do ___, e do Filho, e do Espírito Santo;\"?",
+    "prompt": "Em Mateus 28:19, toque a palavra que falta em \"batizando-as em o nome do ___, e do Filho, e do Espírito Santo;\"?",
+    "cue": "Em Mateus 28:19, toque a palavra que falta em \"batizando-as em o nome do ___, e do Filho, e do Espírito Santo;\"?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "id": "doutrina-de-deus-pro-dd-03-trino-02",
+    "feedbackCorrect": "Exato: a tríade começa com o Pai.",
+    "feedbackWrong": {
+      "b": "Discípulos é o objeto da missão.",
+      "c": "Nações descreve o alcance, não a primeira pessoa."
+    },
+    "passageText": "Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "template": "batizando-as em o nome do ___, e do Filho, e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pai"
+      },
+      {
+        "id": "b",
+        "text": "discípulos"
+      },
+      {
+        "id": "c",
+        "text": "nações"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 28:19",
+    "learningObjective": "Reconhecer um Deus em três pessoas: o batismo é em o nome do Pai, do Filho e do Espírito Santo.",
+    "evidence": [
+      "Mateus 28:19"
+    ],
+    "type": "choice",
+    "question": "Qual erro de leitura Mateus 28:19 corrige?",
+    "prompt": "Qual erro de leitura Mateus 28:19 corrige?",
+    "cue": "Qual erro de leitura Mateus 28:19 corrige?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "id": "doutrina-de-deus-pro-dd-03-trino-03",
+    "feedbackCorrect": "Certo: o texto não ensina triteísmo nem um Deus sem as pessoas.",
+    "feedbackWrong": {
+      "b": "Essa é a leitura que o versículo sustenta.",
+      "c": "Isso está no próprio envio de Jesus.",
+      "d": "Nome singular e três pessoas convivem no texto."
+    },
+    "passageText": "Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Três deuses, ou um Deus que não é Pai, Filho e Espírito"
+      },
+      {
+        "id": "b",
+        "text": "Um Deus em três pessoas, confessado no batismo"
+      },
+      {
+        "id": "c",
+        "text": "A missão às nações no nome triúno"
+      },
+      {
+        "id": "d",
+        "text": "A unidade do nome com a distinção das pessoas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 28:19",
+    "learningObjective": "Reconhecer um Deus em três pessoas: o batismo é em o nome do Pai, do Filho e do Espírito Santo.",
+    "evidence": [
+      "Mateus 28:19"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Mateus 28:19?",
+    "prompt": "Qual sequência revela o sentido de Mateus 28:19?",
+    "cue": "Qual sequência revela o sentido de Mateus 28:19?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "id": "doutrina-de-deus-pro-dd-03-trino-04",
+    "feedbackCorrect": "Certo: um nome, depois as três pessoas.",
+    "feedbackWrong": {
+      "b": "O sentido começa no nome singular.",
+      "c": "O Espírito Santo fecha a tríade, não a abre."
+    },
+    "passageText": "Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "em o nome"
+      },
+      {
+        "id": "b",
+        "text": "do Pai, e do Filho"
+      },
+      {
+        "id": "c",
+        "text": "e do Espírito Santo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 28:19",
+    "learningObjective": "Reconhecer um Deus em três pessoas: o batismo é em o nome do Pai, do Filho e do Espírito Santo.",
+    "evidence": [
+      "Mateus 28:19"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"batizando-as em o nome do Pai, e do Filho, e do ___ Santo;\"",
+    "prompt": "Complete a frase: \"batizando-as em o nome do Pai, e do Filho, e do ___ Santo;\"",
+    "cue": "Complete a frase: \"batizando-as em o nome do Pai, e do Filho, e do ___ Santo;\"",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "id": "doutrina-de-deus-pro-dd-03-trino-05",
+    "feedbackCorrect": "Certo: a terceira pessoa é o Espírito Santo.",
+    "feedbackWrong": {
+      "b": "Pai já foi nomeado no início da fórmula.",
+      "c": "Filho já aparece antes desta lacuna."
+    },
+    "passageText": "Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "template": "batizando-as em o nome do Pai, e do Filho, e do ___ Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito"
+      },
+      {
+        "id": "b",
+        "text": "Pai"
+      },
+      {
+        "id": "c",
+        "text": "Filho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 28:19",
+    "learningObjective": "Reconhecer um Deus em três pessoas: o batismo é em o nome do Pai, do Filho e do Espírito Santo.",
+    "evidence": [
+      "Mateus 28:19"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 28:19 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 28:19 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 28:19 comunica que se liga a este contexto?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-03-trino",
+    "id": "doutrina-de-deus-pro-dd-03-trino-06",
+    "feedbackCorrect": "Certo: a missão batismal confessa o Deus trino.",
+    "feedbackWrong": {
+      "b": "Três pessoas nomeadas não se reduzem a uma máscara.",
+      "c": "O Filho está no mesmo nome que o Pai."
+    },
+    "passageText": "Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "passageA": {
+      "ref": "Mateus 28:19",
+      "text": "Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Um Deus em três pessoas: o batismo é em o nome (singular) do Pai, do Filho e do Espírito Santo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Um Deus em três pessoas"
+      },
+      {
+        "id": "b",
+        "text": "Modalismo: só uma máscara"
+      },
+      {
+        "id": "c",
+        "text": "O Filho não é Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 1:1; Isaías 6:3; Mateus 28:19",
+    "learningObjective": "Reunir criação, santidade e Trindade: o Criador é santo, trino e origem de céu e terra.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Isaías 6:3",
+      "Mateus 28:19"
+    ],
+    "type": "true_false",
+    "question": "Os três textos afirmam, juntos, que Deus cria, é santo e batiza-se em o nome do Pai, do Filho e do Espírito Santo.",
+    "prompt": "Os três textos afirmam, juntos, que Deus cria, é santo e batiza-se em o nome do Pai, do Filho e do Espírito Santo.",
+    "cue": "Os três textos afirmam, juntos, que Deus cria, é santo e batiza-se em o nome do Pai, do Filho e do Espírito Santo.",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "id": "doutrina-de-deus-sem-dd-boss-01",
+    "feedbackCorrect": "Certo: criação, triságio e fórmula batismal estão nos textos.",
+    "feedbackWrong": {
+      "false": "Gênesis, Isaías e Mateus trazem exatamente esses três eixos."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "No princípio, criou Deus o céu e a terra. Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 1:1; Isaías 6:3; Mateus 28:19",
+    "learningObjective": "Reunir criação, santidade e Trindade: o Criador é santo, trino e origem de céu e terra.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Isaías 6:3",
+      "Mateus 28:19"
+    ],
+    "type": "tap",
+    "question": "Em Gênesis 1:1, toque a palavra que falta em \"No princípio, ___ Deus o céu e a terra.\"?",
+    "prompt": "Em Gênesis 1:1, toque a palavra que falta em \"No princípio, ___ Deus o céu e a terra.\"?",
+    "cue": "Em Gênesis 1:1, toque a palavra que falta em \"No princípio, ___ Deus o céu e a terra.\"?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "id": "doutrina-de-deus-sem-dd-boss-02",
+    "feedbackCorrect": "Exato: em Gênesis 1:1 o verbo é criou.",
+    "feedbackWrong": {
+      "b": "Santo está em Isaías 6:3, não nesta lacuna.",
+      "c": "Nome está em Mateus 28:19, não em Gênesis 1:1."
+    },
+    "passageText": "No princípio, criou Deus o céu e a terra. Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "template": "No princípio, ___ Deus o céu e a terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "criou"
+      },
+      {
+        "id": "b",
+        "text": "Santo"
+      },
+      {
+        "id": "c",
+        "text": "nome"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 1:1; Isaías 6:3; Mateus 28:19",
+    "learningObjective": "Reunir criação, santidade e Trindade: o Criador é santo, trino e origem de céu e terra.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Isaías 6:3",
+      "Mateus 28:19"
+    ],
+    "type": "choice",
+    "question": "Qual conjunto de fatos os três textos afirmam diretamente?",
+    "prompt": "Qual conjunto de fatos os três textos afirmam diretamente?",
+    "cue": "Qual conjunto de fatos os três textos afirmam diretamente?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "id": "doutrina-de-deus-sem-dd-boss-03",
+    "feedbackCorrect": "Certo: os três palcos somam criação, santidade e Trindade.",
+    "feedbackWrong": {
+      "b": "Nenhum dos textos ensina isso.",
+      "c": "Mateus 28:19 inclui Filho e Espírito Santo.",
+      "d": "Isaías afirma glória na terra; Gênesis afirma Criador."
+    },
+    "passageText": "No princípio, criou Deus o céu e a terra. Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus criou céu e terra; é santo; o batismo é em o nome triúno"
+      },
+      {
+        "id": "b",
+        "text": "A terra criou a Deus; ele não é santo; não há batismo"
+      },
+      {
+        "id": "c",
+        "text": "Só o Pai cria; o Filho e o Espírito não entram no nome"
+      },
+      {
+        "id": "d",
+        "text": "A glória de Jeová não toca a terra, e não há Criador"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 1:1; Isaías 6:3; Mateus 28:19",
+    "learningObjective": "Reunir criação, santidade e Trindade: o Criador é santo, trino e origem de céu e terra.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Isaías 6:3",
+      "Mateus 28:19"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Gênesis 1:1; Isaías 6:3; Mateus 28:19?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Gênesis 1:1; Isaías 6:3; Mateus 28:19?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Gênesis 1:1; Isaías 6:3; Mateus 28:19?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "id": "doutrina-de-deus-sem-dd-boss-04",
+    "feedbackCorrect": "Certo: Criador, Santo e nome triúno.",
+    "feedbackWrong": {
+      "b": "A criação em Gênesis vem no primeiro palco.",
+      "c": "A fórmula batismal é o terceiro eixo, em Mateus."
+    },
+    "passageText": "No princípio, criou Deus o céu e a terra. Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "No princípio, criou Deus o céu e a terra"
+      },
+      {
+        "id": "b",
+        "text": "Santo, santo, santo é Jeová dos Exércitos"
+      },
+      {
+        "id": "c",
+        "text": "batizando-as em o nome do Pai, e do Filho, e do Espírito Santo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 1:1; Isaías 6:3; Mateus 28:19",
+    "learningObjective": "Reunir criação, santidade e Trindade: o Criador é santo, trino e origem de céu e terra.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Isaías 6:3",
+      "Mateus 28:19"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"No princípio, criou Deus o céu e a ___.\"",
+    "prompt": "Complete a frase: \"No princípio, criou Deus o céu e a ___.\"",
+    "cue": "Complete a frase: \"No princípio, criou Deus o céu e a ___.\"",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "id": "doutrina-de-deus-sem-dd-boss-05",
+    "feedbackCorrect": "Certo: Gênesis 1:1 fecha com a terra.",
+    "feedbackWrong": {
+      "b": "Santo é de Isaías 6:3.",
+      "c": "Pai é da fórmula em Mateus 28:19."
+    },
+    "passageText": "No princípio, criou Deus o céu e a terra. Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "template": "No princípio, criou Deus o céu e a ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "terra"
+      },
+      {
+        "id": "b",
+        "text": "Santo"
+      },
+      {
+        "id": "c",
+        "text": "Pai"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gênesis 1:1; Isaías 6:3; Mateus 28:19",
+    "learningObjective": "Reunir criação, santidade e Trindade: o Criador é santo, trino e origem de céu e terra.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Isaías 6:3",
+      "Mateus 28:19"
+    ],
+    "type": "connect",
+    "question": "O que Gênesis 1:1; Isaías 6:3; Mateus 28:19 comunica que se liga a este contexto?",
+    "prompt": "O que Gênesis 1:1; Isaías 6:3; Mateus 28:19 comunica que se liga a este contexto?",
+    "cue": "O que Gênesis 1:1; Isaías 6:3; Mateus 28:19 comunica que se liga a este contexto?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "id": "doutrina-de-deus-sem-dd-boss-06",
+    "feedbackCorrect": "Certo: os três textos formam esse retrato.",
+    "feedbackWrong": {
+      "b": "Há Criador e glória que enche a terra.",
+      "c": "O batismo é em o nome, não em muitos deuses."
+    },
+    "passageText": "No princípio, criou Deus o céu e a terra. Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "passageA": {
+      "ref": "Gênesis 1:1",
+      "text": "No princípio, criou Deus o céu e a terra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Conheça o Criador: santo, trino, origem de céu e terra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Criador santo e trino"
+      },
+      {
+        "id": "b",
+        "text": "Mundo sem origem nem glória"
+      },
+      {
+        "id": "c",
+        "text": "Batismo em muitos deuses"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 1:1; Isaías 6:3; Mateus 28:19",
+    "learningObjective": "Reunir criação, santidade e Trindade: o Criador é santo, trino e origem de céu e terra.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Isaías 6:3",
+      "Mateus 28:19"
+    ],
+    "type": "true_false",
+    "question": "Criação, santidade e Trindade aparecem nos textos como temas soltos, sem um mesmo Deus no centro.",
+    "prompt": "Criação, santidade e Trindade aparecem nos textos como temas soltos, sem um mesmo Deus no centro.",
+    "cue": "Criação, santidade e Trindade aparecem nos textos como temas soltos, sem um mesmo Deus no centro.",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "id": "doutrina-de-deus-cam-dd-boss-01",
+    "feedbackCorrect": "Certo: é o mesmo Deus — Criador, santo e trino.",
+    "feedbackWrong": {
+      "true": "Os três eixos descrevem o mesmo Senhor, não deuses distintos."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "No princípio, criou Deus o céu e a terra. Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 1:1; Isaías 6:3; Mateus 28:19",
+    "learningObjective": "Reunir criação, santidade e Trindade: o Criador é santo, trino e origem de céu e terra.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Isaías 6:3",
+      "Mateus 28:19"
+    ],
+    "type": "tap",
+    "question": "Em Isaías 6:3, toque a palavra que falta em \"Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua ___.\"?",
+    "prompt": "Em Isaías 6:3, toque a palavra que falta em \"Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua ___.\"?",
+    "cue": "Em Isaías 6:3, toque a palavra que falta em \"Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua ___.\"?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "id": "doutrina-de-deus-cam-dd-boss-02",
+    "feedbackCorrect": "Exato: Isaías liga o Santo à glória na terra.",
+    "feedbackWrong": {
+      "b": "Criou é o verbo de Gênesis 1:1.",
+      "c": "Discípulos é a missão de Mateus 28:19."
+    },
+    "passageText": "No princípio, criou Deus o céu e a terra. Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "template": "Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "glória"
+      },
+      {
+        "id": "b",
+        "text": "criou"
+      },
+      {
+        "id": "c",
+        "text": "discípulos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 1:1; Isaías 6:3; Mateus 28:19",
+    "learningObjective": "Reunir criação, santidade e Trindade: o Criador é santo, trino e origem de céu e terra.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Isaías 6:3",
+      "Mateus 28:19"
+    ],
+    "type": "choice",
+    "question": "Como os três textos se encadeiam na doutrina de Deus?",
+    "prompt": "Como os três textos se encadeiam na doutrina de Deus?",
+    "cue": "Como os três textos se encadeiam na doutrina de Deus?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "id": "doutrina-de-deus-cam-dd-boss-03",
+    "feedbackCorrect": "Certo: um só Deus — origem, santidade e nome triúno.",
+    "feedbackWrong": {
+      "b": "Não há três deuses nos três livros.",
+      "c": "Os textos somam, não se cancelam.",
+      "d": "Isaías e Mateus não são opcionais neste desafio."
+    },
+    "passageText": "No princípio, criou Deus o céu e a terra. Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Criador é o Santo cuja glória enche a terra e cujo nome é triúno"
+      },
+      {
+        "id": "b",
+        "text": "Gênesis fala de um deus, Isaías de outro, Mateus de um terceiro"
+      },
+      {
+        "id": "c",
+        "text": "A santidade anula a criação, e a Trindade anula o nome único"
+      },
+      {
+        "id": "d",
+        "text": "Só a criação importa; santidade e batismo são acréscimos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 1:1; Isaías 6:3; Mateus 28:19",
+    "learningObjective": "Reunir criação, santidade e Trindade: o Criador é santo, trino e origem de céu e terra.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Isaías 6:3",
+      "Mateus 28:19"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Gênesis 1:1; Isaías 6:3; Mateus 28:19?",
+    "prompt": "Como se encadeiam os eventos de Gênesis 1:1; Isaías 6:3; Mateus 28:19?",
+    "cue": "Como se encadeiam os eventos de Gênesis 1:1; Isaías 6:3; Mateus 28:19?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "id": "doutrina-de-deus-cam-dd-boss-04",
+    "feedbackCorrect": "Certo: origem, glória do Santo e nome triúno.",
+    "feedbackWrong": {
+      "b": "A criação precede o anúncio da glória na terra.",
+      "c": "O nome batismal é o terceiro elo da cadeia."
+    },
+    "passageText": "No princípio, criou Deus o céu e a terra. Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "criou Deus o céu e a terra"
+      },
+      {
+        "id": "b",
+        "text": "a terra toda está cheia da sua glória"
+      },
+      {
+        "id": "c",
+        "text": "em o nome do Pai, e do Filho, e do Espírito Santo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 1:1; Isaías 6:3; Mateus 28:19",
+    "learningObjective": "Reunir criação, santidade e Trindade: o Criador é santo, trino e origem de céu e terra.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Isaías 6:3",
+      "Mateus 28:19"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua ___.\"",
+    "prompt": "Complete a frase: \"Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua ___.\"",
+    "cue": "Complete a frase: \"Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua ___.\"",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "id": "doutrina-de-deus-cam-dd-boss-05",
+    "feedbackCorrect": "Certo: a terra está cheia da glória.",
+    "feedbackWrong": {
+      "b": "Céu está em Gênesis 1:1, não nesta lacuna.",
+      "c": "Filho está na fórmula de Mateus 28:19."
+    },
+    "passageText": "No princípio, criou Deus o céu e a terra. Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "template": "Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "glória"
+      },
+      {
+        "id": "b",
+        "text": "céu"
+      },
+      {
+        "id": "c",
+        "text": "Filho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gênesis 1:1; Isaías 6:3; Mateus 28:19",
+    "learningObjective": "Reunir criação, santidade e Trindade: o Criador é santo, trino e origem de céu e terra.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Isaías 6:3",
+      "Mateus 28:19"
+    ],
+    "type": "connect",
+    "question": "O que Gênesis 1:1; Isaías 6:3; Mateus 28:19 comunica que se liga a este contexto?",
+    "prompt": "O que Gênesis 1:1; Isaías 6:3; Mateus 28:19 comunica que se liga a este contexto?",
+    "cue": "O que Gênesis 1:1; Isaías 6:3; Mateus 28:19 comunica que se liga a este contexto?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "id": "doutrina-de-deus-cam-dd-boss-06",
+    "feedbackCorrect": "Certo: Isaías une o Santo à glória na terra.",
+    "feedbackWrong": {
+      "b": "O mesmo Deus que cria é proclamado santo.",
+      "c": "O nome triúno não cancela a glória do Santo."
+    },
+    "passageText": "No princípio, criou Deus o céu e a terra. Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "passageA": {
+      "ref": "Isaías 6:3",
+      "text": "Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Conheça o Criador: santo, trino, origem de céu e terra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O Santo enche a terra"
+      },
+      {
+        "id": "b",
+        "text": "O Criador não é santo"
+      },
+      {
+        "id": "c",
+        "text": "A Trindade apaga a glória"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 1:1; Isaías 6:3; Mateus 28:19",
+    "learningObjective": "Reunir criação, santidade e Trindade: o Criador é santo, trino e origem de céu e terra.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Isaías 6:3",
+      "Mateus 28:19"
+    ],
+    "type": "true_false",
+    "question": "Conhecer o Criador, segundo estes textos, é confessá-lo santo, trino e origem de céu e terra.",
+    "prompt": "Conhecer o Criador, segundo estes textos, é confessá-lo santo, trino e origem de céu e terra.",
+    "cue": "Conhecer o Criador, segundo estes textos, é confessá-lo santo, trino e origem de céu e terra.",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "id": "doutrina-de-deus-pro-dd-boss-01",
+    "feedbackCorrect": "Certo: esse é o retrato que os três palcos sustentam.",
+    "feedbackWrong": {
+      "false": "Criação, triságio e nome batismal formam essa confissão."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "No princípio, criou Deus o céu e a terra. Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 1:1; Isaías 6:3; Mateus 28:19",
+    "learningObjective": "Reunir criação, santidade e Trindade: o Criador é santo, trino e origem de céu e terra.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Isaías 6:3",
+      "Mateus 28:19"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 28:19, toque a palavra que falta em \"batizando-as em o ___ do Pai, e do Filho, e do Espírito Santo;\"?",
+    "prompt": "Em Mateus 28:19, toque a palavra que falta em \"batizando-as em o ___ do Pai, e do Filho, e do Espírito Santo;\"?",
+    "cue": "Em Mateus 28:19, toque a palavra que falta em \"batizando-as em o ___ do Pai, e do Filho, e do Espírito Santo;\"?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "id": "doutrina-de-deus-pro-dd-boss-02",
+    "feedbackCorrect": "Exato: o batismo é em o nome, singular.",
+    "feedbackWrong": {
+      "b": "Princípio abre Gênesis 1:1, não esta fórmula.",
+      "c": "Exércitos é o título em Isaías 6:3."
+    },
+    "passageText": "No princípio, criou Deus o céu e a terra. Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "template": "batizando-as em o ___ do Pai, e do Filho, e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "nome"
+      },
+      {
+        "id": "b",
+        "text": "princípio"
+      },
+      {
+        "id": "c",
+        "text": "Exércitos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 1:1; Isaías 6:3; Mateus 28:19",
+    "learningObjective": "Reunir criação, santidade e Trindade: o Criador é santo, trino e origem de céu e terra.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Isaías 6:3",
+      "Mateus 28:19"
+    ],
+    "type": "choice",
+    "question": "Qual síntese teológica os três textos sustentam juntos?",
+    "prompt": "Qual síntese teológica os três textos sustentam juntos?",
+    "cue": "Qual síntese teológica os três textos sustentam juntos?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "id": "doutrina-de-deus-pro-dd-boss-03",
+    "feedbackCorrect": "Certo: origem, santidade e pessoas divinas no mesmo Deus.",
+    "feedbackWrong": {
+      "b": "Nada nos textos sugere que ele deixe de ser santo.",
+      "c": "Mateus 28:19 está na boca de Jesus, no envio.",
+      "d": "Nome, glória e criação apontam Pessoa, não força cega."
+    },
+    "passageText": "No princípio, criou Deus o céu e a terra. Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Criador santo se dá a conhecer como Pai, Filho e Espírito"
+      },
+      {
+        "id": "b",
+        "text": "Deus cria e depois deixa de ser santo ou pessoal"
+      },
+      {
+        "id": "c",
+        "text": "A Trindade é acréscimo humano sem base no envio de Jesus"
+      },
+      {
+        "id": "d",
+        "text": "Santidade e criação provam que Deus é só uma força impessoal"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 1:1; Isaías 6:3; Mateus 28:19",
+    "learningObjective": "Reunir criação, santidade e Trindade: o Criador é santo, trino e origem de céu e terra.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Isaías 6:3",
+      "Mateus 28:19"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Gênesis 1:1; Isaías 6:3; Mateus 28:19?",
+    "prompt": "Qual sequência revela o sentido de Gênesis 1:1; Isaías 6:3; Mateus 28:19?",
+    "cue": "Qual sequência revela o sentido de Gênesis 1:1; Isaías 6:3; Mateus 28:19?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "id": "doutrina-de-deus-pro-dd-boss-04",
+    "feedbackCorrect": "Certo: origem, santidade e Trindade — o sentido do desafio.",
+    "feedbackWrong": {
+      "b": "O sentido começa no Criador, no princípio.",
+      "c": "O nome triúno é o desfecho da revelação, não o início."
+    },
+    "passageText": "No princípio, criou Deus o céu e a terra. Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "No princípio, criou Deus"
+      },
+      {
+        "id": "b",
+        "text": "Santo, santo, santo é Jeová"
+      },
+      {
+        "id": "c",
+        "text": "em o nome do Pai, e do Filho, e do Espírito Santo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 1:1; Isaías 6:3; Mateus 28:19",
+    "learningObjective": "Reunir criação, santidade e Trindade: o Criador é santo, trino e origem de céu e terra.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Isaías 6:3",
+      "Mateus 28:19"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"batizando-as em o nome do ___, e do Filho, e do Espírito Santo;\"",
+    "prompt": "Complete a frase: \"batizando-as em o nome do ___, e do Filho, e do Espírito Santo;\"",
+    "cue": "Complete a frase: \"batizando-as em o nome do ___, e do Filho, e do Espírito Santo;\"",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "id": "doutrina-de-deus-pro-dd-boss-05",
+    "feedbackCorrect": "Certo: a tríade começa com o Pai.",
+    "feedbackWrong": {
+      "b": "Terra é de Gênesis e Isaías, não desta lacuna.",
+      "c": "Glória é de Isaías 6:3."
+    },
+    "passageText": "No princípio, criou Deus o céu e a terra. Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "template": "batizando-as em o nome do ___, e do Filho, e do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pai"
+      },
+      {
+        "id": "b",
+        "text": "terra"
+      },
+      {
+        "id": "c",
+        "text": "glória"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gênesis 1:1; Isaías 6:3; Mateus 28:19",
+    "learningObjective": "Reunir criação, santidade e Trindade: o Criador é santo, trino e origem de céu e terra.",
+    "evidence": [
+      "Gênesis 1:1",
+      "Isaías 6:3",
+      "Mateus 28:19"
+    ],
+    "type": "connect",
+    "question": "O que Gênesis 1:1; Isaías 6:3; Mateus 28:19 comunica que se liga a este contexto?",
+    "prompt": "O que Gênesis 1:1; Isaías 6:3; Mateus 28:19 comunica que se liga a este contexto?",
+    "cue": "O que Gênesis 1:1; Isaías 6:3; Mateus 28:19 comunica que se liga a este contexto?",
+    "trail": "doutrina-de-deus",
+    "section": "dd-boss",
+    "id": "doutrina-de-deus-pro-dd-boss-06",
+    "feedbackCorrect": "Certo: o desafio é conhecer o Criador santo e trino.",
+    "feedbackWrong": {
+      "b": "Nome, glória e criação não descrevem uma força cega.",
+      "c": "Isaías e Mateus impedem ignorar santidade e o nome."
+    },
+    "passageText": "No princípio, criou Deus o céu e a terra. Um chamava ao outro e dizia: Santo, santo, santo é Jeová dos Exércitos; a terra toda está cheia da sua glória. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;",
+    "passageA": {
+      "ref": "Mateus 28:19",
+      "text": "Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Conheça o Criador: santo, trino, origem de céu e terra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Conheça o Criador trino"
+      },
+      {
+        "id": "b",
+        "text": "Conheça um deus impessoal"
+      },
+      {
+        "id": "c",
+        "text": "Ignore santidade e nome"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  }
+]

@@ -1,0 +1,5123 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Reis 3:9",
+    "learningObjective": "Reconhecer que Salomão pede a Deus um coração dócil para julgar o povo.",
+    "evidence": [
+      "1 Reis 3:9"
+    ],
+    "type": "true_false",
+    "question": "Salomão pede a Deus um coração dócil para julgar o povo.",
+    "prompt": "Salomão pede a Deus um coração dócil para julgar o povo.",
+    "cue": "Salomão pede a Deus um coração dócil para julgar o povo.",
+    "feedbackCorrect": "Certo: o pedido é por um coração dócil para julgar.",
+    "feedbackWrong": {
+      "false": "O texto registra exatamente esse pedido."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Dá, pois, ao teu servo um coração dócil para poder julgar ao teu povo e para poder discernir entre o bem e o mal. Por que quem poderá julgar a este teu povo tão grande?",
+    "trail": "reis",
+    "section": "reis-salomao-01-sabedoria-e-o-templo",
+    "id": "reis-sem-reis-salomao-01-sabedoria-e-o-templo-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Reis 3:9",
+    "learningObjective": "Reconhecer que Salomão pede a Deus um coração dócil para julgar o povo.",
+    "evidence": [
+      "1 Reis 3:9"
+    ],
+    "type": "tap",
+    "question": "Em 1 Reis 3:9, toque a palavra que falta em \"um coração ___ para poder julgar\"?",
+    "prompt": "Em 1 Reis 3:9, toque a palavra que falta em \"um coração ___ para poder julgar\"?",
+    "cue": "Em 1 Reis 3:9, toque a palavra que falta em \"um coração ___ para poder julgar\"?",
+    "feedbackCorrect": "Exato: coração \"dócil\" para julgar.",
+    "feedbackWrong": {
+      "b": "Servo é quem pede; a lacuna pede dócil.",
+      "c": "Povo é quem será julgado; aqui falta dócil."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "dócil"
+      },
+      {
+        "id": "b",
+        "text": "servo"
+      },
+      {
+        "id": "c",
+        "text": "povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Dá, pois, ao teu servo um coração dócil para poder julgar ao teu povo e para poder discernir entre o bem e o mal. Por que quem poderá julgar a este teu povo tão grande?",
+    "trail": "reis",
+    "section": "reis-salomao-01-sabedoria-e-o-templo",
+    "id": "reis-sem-reis-salomao-01-sabedoria-e-o-templo-02",
+    "template": "um coração ___ para poder julgar"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Reis 3:9",
+    "learningObjective": "Reconhecer que Salomão pede a Deus um coração dócil para julgar o povo.",
+    "evidence": [
+      "1 Reis 3:9"
+    ],
+    "type": "choice",
+    "question": "O que Salomão pede explicitamente em 1 Reis 3:9?",
+    "prompt": "O que Salomão pede explicitamente em 1 Reis 3:9?",
+    "cue": "O que Salomão pede explicitamente em 1 Reis 3:9?",
+    "feedbackCorrect": "Certo: pede coração dócil para julgar e discernir.",
+    "feedbackWrong": {
+      "b": "O texto não registra pedido de riqueza.",
+      "c": "Não há pedido de longa vida neste versículo.",
+      "d": "Vitória militar não é o pedido aqui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Um coração dócil para julgar e discernir o bem e o mal"
+      },
+      {
+        "id": "b",
+        "text": "Riquezas e ouro para o reino"
+      },
+      {
+        "id": "c",
+        "text": "Longa vida para o rei"
+      },
+      {
+        "id": "d",
+        "text": "Vitória sobre os inimigos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Dá, pois, ao teu servo um coração dócil para poder julgar ao teu povo e para poder discernir entre o bem e o mal. Por que quem poderá julgar a este teu povo tão grande?",
+    "trail": "reis",
+    "section": "reis-salomao-01-sabedoria-e-o-templo",
+    "id": "reis-sem-reis-salomao-01-sabedoria-e-o-templo-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Reis 3:9",
+    "learningObjective": "Reconhecer que Salomão pede a Deus um coração dócil para julgar o povo.",
+    "evidence": [
+      "1 Reis 3:9"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em 1 Reis 3:9?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 1 Reis 3:9?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 1 Reis 3:9?",
+    "feedbackCorrect": "Certo: pedido, propósito de julgar, depois o discernimento.",
+    "feedbackWrong": {
+      "b": "O pedido do coração dócil abre o versículo.",
+      "c": "Releia a ordem do pedido de Salomão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Dá ao teu servo um coração dócil"
+      },
+      {
+        "id": "b",
+        "text": "para poder julgar ao teu povo"
+      },
+      {
+        "id": "c",
+        "text": "e para poder discernir entre o bem e o mal"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Dá, pois, ao teu servo um coração dócil para poder julgar ao teu povo e para poder discernir entre o bem e o mal. Por que quem poderá julgar a este teu povo tão grande?",
+    "trail": "reis",
+    "section": "reis-salomao-01-sabedoria-e-o-templo",
+    "id": "reis-sem-reis-salomao-01-sabedoria-e-o-templo-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Reis 3:9",
+    "learningObjective": "Reconhecer que Salomão pede a Deus um coração dócil para julgar o povo.",
+    "evidence": [
+      "1 Reis 3:9"
+    ],
+    "type": "complete",
+    "question": "Complete: \"para poder ___ entre o bem e o mal.\"",
+    "prompt": "Complete: \"para poder ___ entre o bem e o mal.\"",
+    "cue": "Complete: \"para poder ___ entre o bem e o mal.\"",
+    "feedbackCorrect": "Certo: \"discernir\" entre o bem e o mal.",
+    "feedbackWrong": {
+      "a": "Julgar é outro verbo do versículo; aqui é discernir.",
+      "c": "Dócil qualifica o coração, não completa esta frase."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "julgar"
+      },
+      {
+        "id": "b",
+        "text": "discernir"
+      },
+      {
+        "id": "c",
+        "text": "dócil"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Dá, pois, ao teu servo um coração dócil para poder julgar ao teu povo e para poder discernir entre o bem e o mal. Por que quem poderá julgar a este teu povo tão grande?",
+    "trail": "reis",
+    "section": "reis-salomao-01-sabedoria-e-o-templo",
+    "id": "reis-sem-reis-salomao-01-sabedoria-e-o-templo-05",
+    "template": "para poder ___ entre o bem e o mal."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Reis 3:9",
+    "learningObjective": "Reconhecer que Salomão pede a Deus um coração dócil para julgar o povo.",
+    "evidence": [
+      "1 Reis 3:9"
+    ],
+    "type": "connect",
+    "question": "O que 1 Reis 3:9 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Reis 3:9 comunica que se liga a este contexto?",
+    "cue": "O que 1 Reis 3:9 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Salomão pede coração dócil para julgar.",
+    "feedbackWrong": {
+      "a": "O texto não registra pedido de riquezas.",
+      "c": "Não há aqui pedido de exército ou poder."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pedido de riquezas"
+      },
+      {
+        "id": "b",
+        "text": "Coração dócil para julgar"
+      },
+      {
+        "id": "c",
+        "text": "Pedido de poder militar"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Dá, pois, ao teu servo um coração dócil para poder julgar ao teu povo e para poder discernir entre o bem e o mal. Por que quem poderá julgar a este teu povo tão grande?",
+    "trail": "reis",
+    "section": "reis-salomao-01-sabedoria-e-o-templo",
+    "id": "reis-sem-reis-salomao-01-sabedoria-e-o-templo-06",
+    "passageA": {
+      "ref": "1 Reis 3:9",
+      "text": "Dá, pois, ao teu servo um coração dócil para poder julgar ao teu povo e para poder discernir entre o bem e o mal. Por que quem poderá julgar a este teu povo tão grande?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Salomão pede coração dócil para julgar."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Reis 3:9",
+    "learningObjective": "Reconhecer que Salomão pede a Deus um coração dócil para julgar o povo.",
+    "evidence": [
+      "1 Reis 3:9"
+    ],
+    "type": "true_false",
+    "question": "O coração dócil que Salomão pede serve para julgar o povo e discernir o bem e o mal.",
+    "prompt": "O coração dócil que Salomão pede serve para julgar o povo e discernir o bem e o mal.",
+    "cue": "O coração dócil que Salomão pede serve para julgar o povo e discernir o bem e o mal.",
+    "feedbackCorrect": "Certo: o pedido une julgamento e discernimento.",
+    "feedbackWrong": {
+      "false": "O texto liga coração dócil a julgar e discernir."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Dá, pois, ao teu servo um coração dócil para poder julgar ao teu povo e para poder discernir entre o bem e o mal. Por que quem poderá julgar a este teu povo tão grande?",
+    "trail": "reis",
+    "section": "reis-salomao-01-sabedoria-e-o-templo",
+    "id": "reis-cam-reis-salomao-01-sabedoria-e-o-templo-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Reis 3:9",
+    "learningObjective": "Reconhecer que Salomão pede a Deus um coração dócil para julgar o povo.",
+    "evidence": [
+      "1 Reis 3:9"
+    ],
+    "type": "tap",
+    "question": "Em 1 Reis 3:9, toque a palavra que falta em \"para poder ___ ao teu povo\"?",
+    "prompt": "Em 1 Reis 3:9, toque a palavra que falta em \"para poder ___ ao teu povo\"?",
+    "cue": "Em 1 Reis 3:9, toque a palavra que falta em \"para poder ___ ao teu povo\"?",
+    "feedbackCorrect": "Exato: para poder \"julgar\" ao teu povo.",
+    "feedbackWrong": {
+      "a": "Discernir aparece depois; aqui o verbo é julgar.",
+      "c": "Dócil qualifica o coração, não este verbo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "discernir"
+      },
+      {
+        "id": "b",
+        "text": "julgar"
+      },
+      {
+        "id": "c",
+        "text": "dócil"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Dá, pois, ao teu servo um coração dócil para poder julgar ao teu povo e para poder discernir entre o bem e o mal. Por que quem poderá julgar a este teu povo tão grande?",
+    "trail": "reis",
+    "section": "reis-salomao-01-sabedoria-e-o-templo",
+    "id": "reis-cam-reis-salomao-01-sabedoria-e-o-templo-02",
+    "template": "para poder ___ ao teu povo"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Reis 3:9",
+    "learningObjective": "Reconhecer que Salomão pede a Deus um coração dócil para julgar o povo.",
+    "evidence": [
+      "1 Reis 3:9"
+    ],
+    "type": "choice",
+    "question": "Como o pedido de Salomão liga coração dócil e governo do povo?",
+    "prompt": "Como o pedido de Salomão liga coração dócil e governo do povo?",
+    "cue": "Como o pedido de Salomão liga coração dócil e governo do povo?",
+    "feedbackCorrect": "Certo: o coração dócil habilita a julgar com discernimento.",
+    "feedbackWrong": {
+      "a": "O texto não reduz o pedido a eloquência.",
+      "c": "Não há pedido de força física aqui.",
+      "d": "Riqueza não é o meio de julgamento no versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O coração dócil serve só para falar bem em público"
+      },
+      {
+        "id": "b",
+        "text": "O coração dócil habilita a julgar e discernir o bem e o mal"
+      },
+      {
+        "id": "c",
+        "text": "O coração dócil garante força militar ao rei"
+      },
+      {
+        "id": "d",
+        "text": "O coração dócil multiplica as riquezas do reino"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Dá, pois, ao teu servo um coração dócil para poder julgar ao teu povo e para poder discernir entre o bem e o mal. Por que quem poderá julgar a este teu povo tão grande?",
+    "trail": "reis",
+    "section": "reis-salomao-01-sabedoria-e-o-templo",
+    "id": "reis-cam-reis-salomao-01-sabedoria-e-o-templo-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Reis 3:9",
+    "learningObjective": "Reconhecer que Salomão pede a Deus um coração dócil para julgar o povo.",
+    "evidence": [
+      "1 Reis 3:9"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de 1 Reis 3:9?",
+    "prompt": "Como se encadeiam os eventos de 1 Reis 3:9?",
+    "cue": "Como se encadeiam os eventos de 1 Reis 3:9?",
+    "feedbackCorrect": "Certo: pedido, julgamento do povo, discernimento do bem e do mal.",
+    "feedbackWrong": {
+      "b": "O discernimento vem depois do julgamento no pedido.",
+      "c": "Releia o encadeamento do pedido."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Dá ao teu servo um coração dócil"
+      },
+      {
+        "id": "b",
+        "text": "para poder julgar ao teu povo"
+      },
+      {
+        "id": "c",
+        "text": "e para poder discernir entre o bem e o mal"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Dá, pois, ao teu servo um coração dócil para poder julgar ao teu povo e para poder discernir entre o bem e o mal. Por que quem poderá julgar a este teu povo tão grande?",
+    "trail": "reis",
+    "section": "reis-salomao-01-sabedoria-e-o-templo",
+    "id": "reis-cam-reis-salomao-01-sabedoria-e-o-templo-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Reis 3:9",
+    "learningObjective": "Reconhecer que Salomão pede a Deus um coração dócil para julgar o povo.",
+    "evidence": [
+      "1 Reis 3:9"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Dá, pois, ao teu ___ um coração dócil.\"",
+    "prompt": "Complete: \"Dá, pois, ao teu ___ um coração dócil.\"",
+    "cue": "Complete: \"Dá, pois, ao teu ___ um coração dócil.\"",
+    "feedbackCorrect": "Certo: \"servo\" — Salomão se apresenta assim.",
+    "feedbackWrong": {
+      "b": "Povo é quem será julgado; aqui é servo.",
+      "c": "Dócil qualifica o coração, não este lugar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "servo"
+      },
+      {
+        "id": "b",
+        "text": "povo"
+      },
+      {
+        "id": "c",
+        "text": "dócil"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Dá, pois, ao teu servo um coração dócil para poder julgar ao teu povo e para poder discernir entre o bem e o mal. Por que quem poderá julgar a este teu povo tão grande?",
+    "trail": "reis",
+    "section": "reis-salomao-01-sabedoria-e-o-templo",
+    "id": "reis-cam-reis-salomao-01-sabedoria-e-o-templo-05",
+    "template": "Dá, pois, ao teu ___ um coração dócil."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Reis 3:9",
+    "learningObjective": "Reconhecer que Salomão pede a Deus um coração dócil para julgar o povo.",
+    "evidence": [
+      "1 Reis 3:9"
+    ],
+    "type": "connect",
+    "question": "O que 1 Reis 3:9 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Reis 3:9 comunica que se liga a este contexto?",
+    "cue": "O que 1 Reis 3:9 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o pedido une docilidade e discernimento para julgar.",
+    "feedbackWrong": {
+      "a": "O texto não prioriza fama pessoal.",
+      "c": "Não há pedido de autonomia sem Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Busca de fama pessoal"
+      },
+      {
+        "id": "b",
+        "text": "Docilidade para julgar bem"
+      },
+      {
+        "id": "c",
+        "text": "Autonomia sem depender de Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Dá, pois, ao teu servo um coração dócil para poder julgar ao teu povo e para poder discernir entre o bem e o mal. Por que quem poderá julgar a este teu povo tão grande?",
+    "trail": "reis",
+    "section": "reis-salomao-01-sabedoria-e-o-templo",
+    "id": "reis-cam-reis-salomao-01-sabedoria-e-o-templo-06",
+    "passageA": {
+      "ref": "1 Reis 3:9",
+      "text": "Dá, pois, ao teu servo um coração dócil para poder julgar ao teu povo e para poder discernir entre o bem e o mal. Por que quem poderá julgar a este teu povo tão grande?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Salomão pede coração dócil para julgar."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Reis 3:9",
+    "learningObjective": "Reconhecer que Salomão pede a Deus um coração dócil para julgar o povo.",
+    "evidence": [
+      "1 Reis 3:9"
+    ],
+    "type": "true_false",
+    "question": "Salomão reconhece que só Deus pode capacitar alguém a julgar um povo tão grande.",
+    "prompt": "Salomão reconhece que só Deus pode capacitar alguém a julgar um povo tão grande.",
+    "cue": "Salomão reconhece que só Deus pode capacitar alguém a julgar um povo tão grande.",
+    "feedbackCorrect": "Certo: o pedido e a pergunta final mostram essa dependência.",
+    "feedbackWrong": {
+      "false": "A pergunta final revela a incapacidade humana de julgar sozinho."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Dá, pois, ao teu servo um coração dócil para poder julgar ao teu povo e para poder discernir entre o bem e o mal. Por que quem poderá julgar a este teu povo tão grande?",
+    "trail": "reis",
+    "section": "reis-salomao-01-sabedoria-e-o-templo",
+    "id": "reis-pro-reis-salomao-01-sabedoria-e-o-templo-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Reis 3:9",
+    "learningObjective": "Reconhecer que Salomão pede a Deus um coração dócil para julgar o povo.",
+    "evidence": [
+      "1 Reis 3:9"
+    ],
+    "type": "tap",
+    "question": "Em 1 Reis 3:9, toque a palavra que falta em \"discernir entre o ___ e o mal\"?",
+    "prompt": "Em 1 Reis 3:9, toque a palavra que falta em \"discernir entre o ___ e o mal\"?",
+    "cue": "Em 1 Reis 3:9, toque a palavra que falta em \"discernir entre o ___ e o mal\"?",
+    "feedbackCorrect": "Exato: entre o \"bem\" e o mal.",
+    "feedbackWrong": {
+      "b": "Povo é o objeto do julgamento; aqui falta bem.",
+      "c": "Dócil qualifica o coração, não esta oposição."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "bem"
+      },
+      {
+        "id": "b",
+        "text": "povo"
+      },
+      {
+        "id": "c",
+        "text": "dócil"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Dá, pois, ao teu servo um coração dócil para poder julgar ao teu povo e para poder discernir entre o bem e o mal. Por que quem poderá julgar a este teu povo tão grande?",
+    "trail": "reis",
+    "section": "reis-salomao-01-sabedoria-e-o-templo",
+    "id": "reis-pro-reis-salomao-01-sabedoria-e-o-templo-02",
+    "template": "discernir entre o ___ e o mal"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Reis 3:9",
+    "learningObjective": "Reconhecer que Salomão pede a Deus um coração dócil para julgar o povo.",
+    "evidence": [
+      "1 Reis 3:9"
+    ],
+    "type": "choice",
+    "question": "O que o pedido de Salomão revela sobre a natureza do governo segundo Deus?",
+    "prompt": "O que o pedido de Salomão revela sobre a natureza do governo segundo Deus?",
+    "cue": "O que o pedido de Salomão revela sobre a natureza do governo segundo Deus?",
+    "feedbackCorrect": "Certo: governar exige discernimento dado por Deus, não autossuficiência.",
+    "feedbackWrong": {
+      "a": "O texto não exalta a sabedoria natural do rei.",
+      "c": "Não há aqui redução do governo a força.",
+      "d": "O pedido não busca popularidade."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O rei já possui, por si, toda a sabedoria necessária"
+      },
+      {
+        "id": "b",
+        "text": "Julgar o povo exige coração dócil e discernimento de Deus"
+      },
+      {
+        "id": "c",
+        "text": "O poder militar basta para governar com justiça"
+      },
+      {
+        "id": "d",
+        "text": "O rei deve buscar primeiro a aprovação do povo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Dá, pois, ao teu servo um coração dócil para poder julgar ao teu povo e para poder discernir entre o bem e o mal. Por que quem poderá julgar a este teu povo tão grande?",
+    "trail": "reis",
+    "section": "reis-salomao-01-sabedoria-e-o-templo",
+    "id": "reis-pro-reis-salomao-01-sabedoria-e-o-templo-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Reis 3:9",
+    "learningObjective": "Reconhecer que Salomão pede a Deus um coração dócil para julgar o povo.",
+    "evidence": [
+      "1 Reis 3:9"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de 1 Reis 3:9?",
+    "prompt": "Qual sequência revela o sentido de 1 Reis 3:9?",
+    "cue": "Qual sequência revela o sentido de 1 Reis 3:9?",
+    "feedbackCorrect": "Certo: pedido humilde, serviço ao povo, discernimento moral.",
+    "feedbackWrong": {
+      "b": "O discernimento fecha o sentido do pedido.",
+      "c": "Releia a lógica teológica do pedido."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Dá ao teu servo um coração dócil"
+      },
+      {
+        "id": "b",
+        "text": "para poder julgar ao teu povo"
+      },
+      {
+        "id": "c",
+        "text": "e para poder discernir entre o bem e o mal"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Dá, pois, ao teu servo um coração dócil para poder julgar ao teu povo e para poder discernir entre o bem e o mal. Por que quem poderá julgar a este teu povo tão grande?",
+    "trail": "reis",
+    "section": "reis-salomao-01-sabedoria-e-o-templo",
+    "id": "reis-pro-reis-salomao-01-sabedoria-e-o-templo-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Reis 3:9",
+    "learningObjective": "Reconhecer que Salomão pede a Deus um coração dócil para julgar o povo.",
+    "evidence": [
+      "1 Reis 3:9"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Por que quem poderá ___ a este teu povo tão grande?\"",
+    "prompt": "Complete: \"Por que quem poderá ___ a este teu povo tão grande?\"",
+    "cue": "Complete: \"Por que quem poderá ___ a este teu povo tão grande?\"",
+    "feedbackCorrect": "Certo: \"julgar\" — a pergunta expõe a grandeza da tarefa.",
+    "feedbackWrong": {
+      "b": "Discernir aparece antes; aqui o verbo é julgar.",
+      "c": "Dócil não completa esta pergunta."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "julgar"
+      },
+      {
+        "id": "b",
+        "text": "discernir"
+      },
+      {
+        "id": "c",
+        "text": "dócil"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Dá, pois, ao teu servo um coração dócil para poder julgar ao teu povo e para poder discernir entre o bem e o mal. Por que quem poderá julgar a este teu povo tão grande?",
+    "trail": "reis",
+    "section": "reis-salomao-01-sabedoria-e-o-templo",
+    "id": "reis-pro-reis-salomao-01-sabedoria-e-o-templo-05",
+    "template": "Por que quem poderá ___ a este teu povo tão grande?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Reis 3:9",
+    "learningObjective": "Reconhecer que Salomão pede a Deus um coração dócil para julgar o povo.",
+    "evidence": [
+      "1 Reis 3:9"
+    ],
+    "type": "connect",
+    "question": "O que 1 Reis 3:9 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Reis 3:9 comunica que se liga a este contexto?",
+    "cue": "O que 1 Reis 3:9 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: governar exige coração dócil dado por Deus.",
+    "feedbackWrong": {
+      "a": "O texto não celebra autossuficiência real.",
+      "c": "Não há aqui prioridade de riqueza sobre discernimento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Autossuficiência do rei"
+      },
+      {
+        "id": "b",
+        "text": "Dependência de Deus para julgar"
+      },
+      {
+        "id": "c",
+        "text": "Riqueza acima do discernimento"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Dá, pois, ao teu servo um coração dócil para poder julgar ao teu povo e para poder discernir entre o bem e o mal. Por que quem poderá julgar a este teu povo tão grande?",
+    "trail": "reis",
+    "section": "reis-salomao-01-sabedoria-e-o-templo",
+    "id": "reis-pro-reis-salomao-01-sabedoria-e-o-templo-06",
+    "passageA": {
+      "ref": "1 Reis 3:9",
+      "text": "Dá, pois, ao teu servo um coração dócil para poder julgar ao teu povo e para poder discernir entre o bem e o mal. Por que quem poderá julgar a este teu povo tão grande?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Salomão pede coração dócil para julgar."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Reis 11:4",
+    "learningObjective": "Reconhecer que as mulheres de Salomão perverteram seu coração; ele não permaneceu perfeito com Jeová.",
+    "evidence": [
+      "1 Reis 11:4"
+    ],
+    "type": "true_false",
+    "question": "As mulheres de Salomão perverteram-lhe o coração para seguir outros deuses.",
+    "prompt": "As mulheres de Salomão perverteram-lhe o coração para seguir outros deuses.",
+    "cue": "As mulheres de Salomão perverteram-lhe o coração para seguir outros deuses.",
+    "feedbackCorrect": "Certo: o texto afirma essa perversão do coração.",
+    "feedbackWrong": {
+      "false": "1 Reis 11:4 registra exatamente isso."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Sendo já velho, suas mulheres perverteram-lhe o coração para seguir outros deuses; e o seu coração não foi perfeito para com Jeová, seu Deus, como o fora o coração de Davi, seu pai.",
+    "trail": "reis",
+    "section": "reis-salomao-02-o-coracao-dividido",
+    "id": "reis-sem-reis-salomao-02-o-coracao-dividido-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Reis 11:4",
+    "learningObjective": "Reconhecer que as mulheres de Salomão perverteram seu coração; ele não permaneceu perfeito com Jeová.",
+    "evidence": [
+      "1 Reis 11:4"
+    ],
+    "type": "tap",
+    "question": "Em 1 Reis 11:4, toque a palavra que falta em \"suas mulheres ___-lhe o coração\"?",
+    "prompt": "Em 1 Reis 11:4, toque a palavra que falta em \"suas mulheres ___-lhe o coração\"?",
+    "cue": "Em 1 Reis 11:4, toque a palavra que falta em \"suas mulheres ___-lhe o coração\"?",
+    "feedbackCorrect": "Exato: \"perverteram\"-lhe o coração.",
+    "feedbackWrong": {
+      "b": "Velho situa a idade; o verbo é perverteram.",
+      "c": "Deuses é o alvo; aqui falta o verbo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "perverteram"
+      },
+      {
+        "id": "b",
+        "text": "velho"
+      },
+      {
+        "id": "c",
+        "text": "deuses"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Sendo já velho, suas mulheres perverteram-lhe o coração para seguir outros deuses; e o seu coração não foi perfeito para com Jeová, seu Deus, como o fora o coração de Davi, seu pai.",
+    "trail": "reis",
+    "section": "reis-salomao-02-o-coracao-dividido",
+    "id": "reis-sem-reis-salomao-02-o-coracao-dividido-02",
+    "template": "suas mulheres ___-lhe o coração"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Reis 11:4",
+    "learningObjective": "Reconhecer que as mulheres de Salomão perverteram seu coração; ele não permaneceu perfeito com Jeová.",
+    "evidence": [
+      "1 Reis 11:4"
+    ],
+    "type": "choice",
+    "question": "O que 1 Reis 11:4 afirma sobre o coração de Salomão?",
+    "prompt": "O que 1 Reis 11:4 afirma sobre o coração de Salomão?",
+    "cue": "O que 1 Reis 11:4 afirma sobre o coração de Salomão?",
+    "feedbackCorrect": "Certo: não foi perfeito para com Jeová, ao contrário de Davi.",
+    "feedbackWrong": {
+      "b": "O texto não diz que o coração permaneceu íntegro.",
+      "c": "Não há afirmação de fidelidade exclusiva a Jeová.",
+      "d": "O texto não nega a comparação com Davi."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Não foi perfeito para com Jeová, como o de Davi"
+      },
+      {
+        "id": "b",
+        "text": "Permaneceu íntegro até o fim da vida"
+      },
+      {
+        "id": "c",
+        "text": "Seguiu somente a Jeová, sem outros deuses"
+      },
+      {
+        "id": "d",
+        "text": "Superou o coração de Davi, seu pai"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Sendo já velho, suas mulheres perverteram-lhe o coração para seguir outros deuses; e o seu coração não foi perfeito para com Jeová, seu Deus, como o fora o coração de Davi, seu pai.",
+    "trail": "reis",
+    "section": "reis-salomao-02-o-coracao-dividido",
+    "id": "reis-sem-reis-salomao-02-o-coracao-dividido-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Reis 11:4",
+    "learningObjective": "Reconhecer que as mulheres de Salomão perverteram seu coração; ele não permaneceu perfeito com Jeová.",
+    "evidence": [
+      "1 Reis 11:4"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em 1 Reis 11:4?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 1 Reis 11:4?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 1 Reis 11:4?",
+    "feedbackCorrect": "Certo: velhice, perversão pelas mulheres, contraste com Davi.",
+    "feedbackWrong": {
+      "b": "A velhice abre o relato antes da perversão.",
+      "c": "Releia a ordem do versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sendo já velho"
+      },
+      {
+        "id": "b",
+        "text": "suas mulheres perverteram-lhe o coração para seguir outros deuses"
+      },
+      {
+        "id": "c",
+        "text": "o seu coração não foi perfeito para com Jeová, como o de Davi"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Sendo já velho, suas mulheres perverteram-lhe o coração para seguir outros deuses; e o seu coração não foi perfeito para com Jeová, seu Deus, como o fora o coração de Davi, seu pai.",
+    "trail": "reis",
+    "section": "reis-salomao-02-o-coracao-dividido",
+    "id": "reis-sem-reis-salomao-02-o-coracao-dividido-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Reis 11:4",
+    "learningObjective": "Reconhecer que as mulheres de Salomão perverteram seu coração; ele não permaneceu perfeito com Jeová.",
+    "evidence": [
+      "1 Reis 11:4"
+    ],
+    "type": "complete",
+    "question": "Complete: \"o seu coração não foi ___ para com Jeová.\"",
+    "prompt": "Complete: \"o seu coração não foi ___ para com Jeová.\"",
+    "cue": "Complete: \"o seu coração não foi ___ para com Jeová.\"",
+    "feedbackCorrect": "Certo: não foi \"perfeito\" para com Jeová.",
+    "feedbackWrong": {
+      "a": "Velho situa a idade; aqui a palavra é perfeito.",
+      "c": "Deuses é o alvo da perversão, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "velho"
+      },
+      {
+        "id": "b",
+        "text": "perfeito"
+      },
+      {
+        "id": "c",
+        "text": "deuses"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Sendo já velho, suas mulheres perverteram-lhe o coração para seguir outros deuses; e o seu coração não foi perfeito para com Jeová, seu Deus, como o fora o coração de Davi, seu pai.",
+    "trail": "reis",
+    "section": "reis-salomao-02-o-coracao-dividido",
+    "id": "reis-sem-reis-salomao-02-o-coracao-dividido-05",
+    "template": "o seu coração não foi ___ para com Jeová."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Reis 11:4",
+    "learningObjective": "Reconhecer que as mulheres de Salomão perverteram seu coração; ele não permaneceu perfeito com Jeová.",
+    "evidence": [
+      "1 Reis 11:4"
+    ],
+    "type": "connect",
+    "question": "O que 1 Reis 11:4 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Reis 11:4 comunica que se liga a este contexto?",
+    "cue": "O que 1 Reis 11:4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: coração dividido — mulheres pervertem; não permanece perfeito.",
+    "feedbackWrong": {
+      "a": "O texto não celebra fidelidade plena de Salomão.",
+      "c": "Não há aqui reforma cultual bem-sucedida."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fidelidade plena a Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Coração dividido e imperfeito"
+      },
+      {
+        "id": "c",
+        "text": "Reforma cultual vitoriosa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Sendo já velho, suas mulheres perverteram-lhe o coração para seguir outros deuses; e o seu coração não foi perfeito para com Jeová, seu Deus, como o fora o coração de Davi, seu pai.",
+    "trail": "reis",
+    "section": "reis-salomao-02-o-coracao-dividido",
+    "id": "reis-sem-reis-salomao-02-o-coracao-dividido-06",
+    "passageA": {
+      "ref": "1 Reis 11:4",
+      "text": "Sendo já velho, suas mulheres perverteram-lhe o coração para seguir outros deuses; e o seu coração não foi perfeito para com Jeová, seu Deus, como o fora o coração de Davi, seu pai."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Coração dividido: mulheres pervertem; não permanece perfeito."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Reis 11:4",
+    "learningObjective": "Reconhecer que as mulheres de Salomão perverteram seu coração; ele não permaneceu perfeito com Jeová.",
+    "evidence": [
+      "1 Reis 11:4"
+    ],
+    "type": "true_false",
+    "question": "A perversão do coração de Salomão leva-o a seguir outros deuses, ao contrário de Davi.",
+    "prompt": "A perversão do coração de Salomão leva-o a seguir outros deuses, ao contrário de Davi.",
+    "cue": "A perversão do coração de Salomão leva-o a seguir outros deuses, ao contrário de Davi.",
+    "feedbackCorrect": "Certo: o texto liga perversão, idolatria e contraste com Davi.",
+    "feedbackWrong": {
+      "false": "1 Reis 11:4 une esses três elementos."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Sendo já velho, suas mulheres perverteram-lhe o coração para seguir outros deuses; e o seu coração não foi perfeito para com Jeová, seu Deus, como o fora o coração de Davi, seu pai.",
+    "trail": "reis",
+    "section": "reis-salomao-02-o-coracao-dividido",
+    "id": "reis-cam-reis-salomao-02-o-coracao-dividido-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Reis 11:4",
+    "learningObjective": "Reconhecer que as mulheres de Salomão perverteram seu coração; ele não permaneceu perfeito com Jeová.",
+    "evidence": [
+      "1 Reis 11:4"
+    ],
+    "type": "tap",
+    "question": "Em 1 Reis 11:4, toque a palavra que falta em \"para seguir outros ___\"?",
+    "prompt": "Em 1 Reis 11:4, toque a palavra que falta em \"para seguir outros ___\"?",
+    "cue": "Em 1 Reis 11:4, toque a palavra que falta em \"para seguir outros ___\"?",
+    "feedbackCorrect": "Exato: outros \"deuses\".",
+    "feedbackWrong": {
+      "a": "Mulheres são quem pervertem; a lacuna pede deuses.",
+      "c": "Coração é o que é pervertido; aqui falta deuses."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "mulheres"
+      },
+      {
+        "id": "b",
+        "text": "deuses"
+      },
+      {
+        "id": "c",
+        "text": "coração"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Sendo já velho, suas mulheres perverteram-lhe o coração para seguir outros deuses; e o seu coração não foi perfeito para com Jeová, seu Deus, como o fora o coração de Davi, seu pai.",
+    "trail": "reis",
+    "section": "reis-salomao-02-o-coracao-dividido",
+    "id": "reis-cam-reis-salomao-02-o-coracao-dividido-02",
+    "template": "para seguir outros ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Reis 11:4",
+    "learningObjective": "Reconhecer que as mulheres de Salomão perverteram seu coração; ele não permaneceu perfeito com Jeová.",
+    "evidence": [
+      "1 Reis 11:4"
+    ],
+    "type": "choice",
+    "question": "Como 1 Reis 11:4 relaciona as mulheres de Salomão e sua relação com Jeová?",
+    "prompt": "Como 1 Reis 11:4 relaciona as mulheres de Salomão e sua relação com Jeová?",
+    "cue": "Como 1 Reis 11:4 relaciona as mulheres de Salomão e sua relação com Jeová?",
+    "feedbackCorrect": "Certo: elas pervertem o coração; ele deixa de ser perfeito com Jeová.",
+    "feedbackWrong": {
+      "a": "O texto não diz que as mulheres o fortaleceram na fé.",
+      "c": "Não há afirmação de neutralidade religiosa.",
+      "d": "O contraste com Davi mostra perda, não ganho."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "As mulheres o confirmaram na fidelidade a Jeová"
+      },
+      {
+        "id": "b",
+        "text": "As mulheres perverteram o coração; ele não ficou perfeito com Jeová"
+      },
+      {
+        "id": "c",
+        "text": "As mulheres não influenciaram a religião do rei"
+      },
+      {
+        "id": "d",
+        "text": "As mulheres o fizeram superar o coração de Davi"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Sendo já velho, suas mulheres perverteram-lhe o coração para seguir outros deuses; e o seu coração não foi perfeito para com Jeová, seu Deus, como o fora o coração de Davi, seu pai.",
+    "trail": "reis",
+    "section": "reis-salomao-02-o-coracao-dividido",
+    "id": "reis-cam-reis-salomao-02-o-coracao-dividido-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Reis 11:4",
+    "learningObjective": "Reconhecer que as mulheres de Salomão perverteram seu coração; ele não permaneceu perfeito com Jeová.",
+    "evidence": [
+      "1 Reis 11:4"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de 1 Reis 11:4?",
+    "prompt": "Como se encadeiam os eventos de 1 Reis 11:4?",
+    "cue": "Como se encadeiam os eventos de 1 Reis 11:4?",
+    "feedbackCorrect": "Certo: velhice, perversão idolátrica, imperfeição perante Jeová.",
+    "feedbackWrong": {
+      "b": "A comparação com Davi fecha o contraste.",
+      "c": "Releia o encadeamento causal do versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sendo já velho"
+      },
+      {
+        "id": "b",
+        "text": "suas mulheres perverteram-lhe o coração para seguir outros deuses"
+      },
+      {
+        "id": "c",
+        "text": "o seu coração não foi perfeito para com Jeová, como o de Davi"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Sendo já velho, suas mulheres perverteram-lhe o coração para seguir outros deuses; e o seu coração não foi perfeito para com Jeová, seu Deus, como o fora o coração de Davi, seu pai.",
+    "trail": "reis",
+    "section": "reis-salomao-02-o-coracao-dividido",
+    "id": "reis-cam-reis-salomao-02-o-coracao-dividido-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Reis 11:4",
+    "learningObjective": "Reconhecer que as mulheres de Salomão perverteram seu coração; ele não permaneceu perfeito com Jeová.",
+    "evidence": [
+      "1 Reis 11:4"
+    ],
+    "type": "complete",
+    "question": "Complete: \"como o fora o coração de ___, seu pai.\"",
+    "prompt": "Complete: \"como o fora o coração de ___, seu pai.\"",
+    "cue": "Complete: \"como o fora o coração de ___, seu pai.\"",
+    "feedbackCorrect": "Certo: \"Davi\", seu pai.",
+    "feedbackWrong": {
+      "b": "Jeová é o Deus; aqui o nome é Davi.",
+      "c": "Salomão é o sujeito; a comparação é com Davi."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Davi"
+      },
+      {
+        "id": "b",
+        "text": "Jeová"
+      },
+      {
+        "id": "c",
+        "text": "Salomão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Sendo já velho, suas mulheres perverteram-lhe o coração para seguir outros deuses; e o seu coração não foi perfeito para com Jeová, seu Deus, como o fora o coração de Davi, seu pai.",
+    "trail": "reis",
+    "section": "reis-salomao-02-o-coracao-dividido",
+    "id": "reis-cam-reis-salomao-02-o-coracao-dividido-05",
+    "template": "como o fora o coração de ___, seu pai."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Reis 11:4",
+    "learningObjective": "Reconhecer que as mulheres de Salomão perverteram seu coração; ele não permaneceu perfeito com Jeová.",
+    "evidence": [
+      "1 Reis 11:4"
+    ],
+    "type": "connect",
+    "question": "O que 1 Reis 11:4 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Reis 11:4 comunica que se liga a este contexto?",
+    "cue": "O que 1 Reis 11:4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: influência idolátrica divide o coração do rei.",
+    "feedbackWrong": {
+      "a": "O texto não celebra lealdade exclusiva.",
+      "c": "Não há aqui maturidade espiritual crescente."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Lealdade exclusiva a Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Influência que divide o coração"
+      },
+      {
+        "id": "c",
+        "text": "Maturidade espiritual crescente"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Sendo já velho, suas mulheres perverteram-lhe o coração para seguir outros deuses; e o seu coração não foi perfeito para com Jeová, seu Deus, como o fora o coração de Davi, seu pai.",
+    "trail": "reis",
+    "section": "reis-salomao-02-o-coracao-dividido",
+    "id": "reis-cam-reis-salomao-02-o-coracao-dividido-06",
+    "passageA": {
+      "ref": "1 Reis 11:4",
+      "text": "Sendo já velho, suas mulheres perverteram-lhe o coração para seguir outros deuses; e o seu coração não foi perfeito para com Jeová, seu Deus, como o fora o coração de Davi, seu pai."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Coração dividido: mulheres pervertem; não permanece perfeito."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Reis 11:4",
+    "learningObjective": "Reconhecer que as mulheres de Salomão perverteram seu coração; ele não permaneceu perfeito com Jeová.",
+    "evidence": [
+      "1 Reis 11:4"
+    ],
+    "type": "true_false",
+    "question": "O contraste com Davi mostra que Salomão deixou de manter um coração íntegro perante Jeová.",
+    "prompt": "O contraste com Davi mostra que Salomão deixou de manter um coração íntegro perante Jeová.",
+    "cue": "O contraste com Davi mostra que Salomão deixou de manter um coração íntegro perante Jeová.",
+    "feedbackCorrect": "Certo: o texto mede Salomão pela fidelidade do pai.",
+    "feedbackWrong": {
+      "false": "A comparação com Davi expõe a falha do coração."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Sendo já velho, suas mulheres perverteram-lhe o coração para seguir outros deuses; e o seu coração não foi perfeito para com Jeová, seu Deus, como o fora o coração de Davi, seu pai.",
+    "trail": "reis",
+    "section": "reis-salomao-02-o-coracao-dividido",
+    "id": "reis-pro-reis-salomao-02-o-coracao-dividido-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Reis 11:4",
+    "learningObjective": "Reconhecer que as mulheres de Salomão perverteram seu coração; ele não permaneceu perfeito com Jeová.",
+    "evidence": [
+      "1 Reis 11:4"
+    ],
+    "type": "tap",
+    "question": "Em 1 Reis 11:4, toque a palavra que falta em \"não foi ___ para com Jeová\"?",
+    "prompt": "Em 1 Reis 11:4, toque a palavra que falta em \"não foi ___ para com Jeová\"?",
+    "cue": "Em 1 Reis 11:4, toque a palavra que falta em \"não foi ___ para com Jeová\"?",
+    "feedbackCorrect": "Exato: não foi \"perfeito\".",
+    "feedbackWrong": {
+      "b": "Velho situa a idade; aqui falta perfeito.",
+      "c": "Deuses é o alvo da perversão, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "perfeito"
+      },
+      {
+        "id": "b",
+        "text": "velho"
+      },
+      {
+        "id": "c",
+        "text": "deuses"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Sendo já velho, suas mulheres perverteram-lhe o coração para seguir outros deuses; e o seu coração não foi perfeito para com Jeová, seu Deus, como o fora o coração de Davi, seu pai.",
+    "trail": "reis",
+    "section": "reis-salomao-02-o-coracao-dividido",
+    "id": "reis-pro-reis-salomao-02-o-coracao-dividido-02",
+    "template": "não foi ___ para com Jeová"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Reis 11:4",
+    "learningObjective": "Reconhecer que as mulheres de Salomão perverteram seu coração; ele não permaneceu perfeito com Jeová.",
+    "evidence": [
+      "1 Reis 11:4"
+    ],
+    "type": "choice",
+    "question": "O que 1 Reis 11:4 ensina sobre o perigo de um coração dividido?",
+    "prompt": "O que 1 Reis 11:4 ensina sobre o perigo de um coração dividido?",
+    "cue": "O que 1 Reis 11:4 ensina sobre o perigo de um coração dividido?",
+    "feedbackCorrect": "Certo: vínculos que pervertem o coração afastam da fidelidade a Jeová.",
+    "feedbackWrong": {
+      "a": "O texto não trata a idolatria como detalhe menor.",
+      "c": "A velhice não justifica a divisão do coração.",
+      "d": "O contraste com Davi mostra perda, não progresso."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Seguir outros deuses é detalhe secundário na vida do rei"
+      },
+      {
+        "id": "b",
+        "text": "Influências que pervertem o coração quebram a fidelidade a Jeová"
+      },
+      {
+        "id": "c",
+        "text": "A velhice torna inevitável e inocente a divisão do coração"
+      },
+      {
+        "id": "d",
+        "text": "Dividir o coração com outros deuses aperfeiçoa a fé de Davi"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Sendo já velho, suas mulheres perverteram-lhe o coração para seguir outros deuses; e o seu coração não foi perfeito para com Jeová, seu Deus, como o fora o coração de Davi, seu pai.",
+    "trail": "reis",
+    "section": "reis-salomao-02-o-coracao-dividido",
+    "id": "reis-pro-reis-salomao-02-o-coracao-dividido-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Reis 11:4",
+    "learningObjective": "Reconhecer que as mulheres de Salomão perverteram seu coração; ele não permaneceu perfeito com Jeová.",
+    "evidence": [
+      "1 Reis 11:4"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de 1 Reis 11:4?",
+    "prompt": "Qual sequência revela o sentido de 1 Reis 11:4?",
+    "cue": "Qual sequência revela o sentido de 1 Reis 11:4?",
+    "feedbackCorrect": "Certo: vulnerabilidade, perversão idolátrica, falha perante Jeová.",
+    "feedbackWrong": {
+      "b": "A falha perante Jeová fecha o sentido do relato.",
+      "c": "Releia a lógica teológica do versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sendo já velho"
+      },
+      {
+        "id": "b",
+        "text": "suas mulheres perverteram-lhe o coração para seguir outros deuses"
+      },
+      {
+        "id": "c",
+        "text": "o seu coração não foi perfeito para com Jeová, como o de Davi"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Sendo já velho, suas mulheres perverteram-lhe o coração para seguir outros deuses; e o seu coração não foi perfeito para com Jeová, seu Deus, como o fora o coração de Davi, seu pai.",
+    "trail": "reis",
+    "section": "reis-salomao-02-o-coracao-dividido",
+    "id": "reis-pro-reis-salomao-02-o-coracao-dividido-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Reis 11:4",
+    "learningObjective": "Reconhecer que as mulheres de Salomão perverteram seu coração; ele não permaneceu perfeito com Jeová.",
+    "evidence": [
+      "1 Reis 11:4"
+    ],
+    "type": "complete",
+    "question": "Complete: \"suas mulheres perverteram-lhe o ___ para seguir outros deuses.\"",
+    "prompt": "Complete: \"suas mulheres perverteram-lhe o ___ para seguir outros deuses.\"",
+    "cue": "Complete: \"suas mulheres perverteram-lhe o ___ para seguir outros deuses.\"",
+    "feedbackCorrect": "Certo: o \"coração\" é o que é pervertido.",
+    "feedbackWrong": {
+      "b": "Pai é Davi; aqui a palavra é coração.",
+      "c": "Deus é Jeová; a lacuna pede coração."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "coração"
+      },
+      {
+        "id": "b",
+        "text": "pai"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Sendo já velho, suas mulheres perverteram-lhe o coração para seguir outros deuses; e o seu coração não foi perfeito para com Jeová, seu Deus, como o fora o coração de Davi, seu pai.",
+    "trail": "reis",
+    "section": "reis-salomao-02-o-coracao-dividido",
+    "id": "reis-pro-reis-salomao-02-o-coracao-dividido-05",
+    "template": "suas mulheres perverteram-lhe o ___ para seguir outros deuses."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Reis 11:4",
+    "learningObjective": "Reconhecer que as mulheres de Salomão perverteram seu coração; ele não permaneceu perfeito com Jeová.",
+    "evidence": [
+      "1 Reis 11:4"
+    ],
+    "type": "connect",
+    "question": "O que 1 Reis 11:4 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Reis 11:4 comunica que se liga a este contexto?",
+    "cue": "O que 1 Reis 11:4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: coração dividido não permanece perfeito com Jeová.",
+    "feedbackWrong": {
+      "a": "O texto não afirma perseverança íntegra.",
+      "c": "Não há aqui progresso espiritual sob idolatria."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Perseverança íntegra até o fim"
+      },
+      {
+        "id": "b",
+        "text": "Divisão que quebra a perfeição"
+      },
+      {
+        "id": "c",
+        "text": "Progresso espiritual sob idolatria"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Sendo já velho, suas mulheres perverteram-lhe o coração para seguir outros deuses; e o seu coração não foi perfeito para com Jeová, seu Deus, como o fora o coração de Davi, seu pai.",
+    "trail": "reis",
+    "section": "reis-salomao-02-o-coracao-dividido",
+    "id": "reis-pro-reis-salomao-02-o-coracao-dividido-06",
+    "passageA": {
+      "ref": "1 Reis 11:4",
+      "text": "Sendo já velho, suas mulheres perverteram-lhe o coração para seguir outros deuses; e o seu coração não foi perfeito para com Jeová, seu Deus, como o fora o coração de Davi, seu pai."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Coração dividido: mulheres pervertem; não permanece perfeito."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Reis 12:16",
+    "learningObjective": "Reconhecer que o reino se parte: Israel se vai para as suas tendas.",
+    "evidence": [
+      "1 Reis 12:16"
+    ],
+    "type": "true_false",
+    "question": "O povo responde que não tem parte em Davi e se vai para as suas tendas.",
+    "prompt": "O povo responde que não tem parte em Davi e se vai para as suas tendas.",
+    "cue": "O povo responde que não tem parte em Davi e se vai para as suas tendas.",
+    "feedbackCorrect": "Certo: o texto registra essa ruptura e a ida às tendas.",
+    "feedbackWrong": {
+      "false": "1 Reis 12:16 afirma exatamente isso."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Vendo o povo que o rei não lhe dava ouvidos, respondeu-lhe: Que parte temos nós em Davi? Nem temos herança no filho de Jessé. Às vossas tendas, ó Israel! Agora, cuida da tua casa, ó Davi! Assim, Israel se foi para as suas tendas.",
+    "trail": "reis",
+    "section": "reis-dividido-01-norte-e-sul",
+    "id": "reis-sem-reis-dividido-01-norte-e-sul-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Reis 12:16",
+    "learningObjective": "Reconhecer que o reino se parte: Israel se vai para as suas tendas.",
+    "evidence": [
+      "1 Reis 12:16"
+    ],
+    "type": "tap",
+    "question": "Em 1 Reis 12:16, toque a palavra que falta em \"Às vossas ___, ó Israel!\"?",
+    "prompt": "Em 1 Reis 12:16, toque a palavra que falta em \"Às vossas ___, ó Israel!\"?",
+    "cue": "Em 1 Reis 12:16, toque a palavra que falta em \"Às vossas ___, ó Israel!\"?",
+    "feedbackCorrect": "Exato: às vossas \"tendas\".",
+    "feedbackWrong": {
+      "b": "Davi é o nome rejeitado; a lacuna pede tendas.",
+      "c": "Herança é o que negam; aqui falta tendas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "tendas"
+      },
+      {
+        "id": "b",
+        "text": "Davi"
+      },
+      {
+        "id": "c",
+        "text": "herança"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Vendo o povo que o rei não lhe dava ouvidos, respondeu-lhe: Que parte temos nós em Davi? Nem temos herança no filho de Jessé. Às vossas tendas, ó Israel! Agora, cuida da tua casa, ó Davi! Assim, Israel se foi para as suas tendas.",
+    "trail": "reis",
+    "section": "reis-dividido-01-norte-e-sul",
+    "id": "reis-sem-reis-dividido-01-norte-e-sul-02",
+    "template": "Às vossas ___, ó Israel!"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Reis 12:16",
+    "learningObjective": "Reconhecer que o reino se parte: Israel se vai para as suas tendas.",
+    "evidence": [
+      "1 Reis 12:16"
+    ],
+    "type": "choice",
+    "question": "O que o povo declara explicitamente em 1 Reis 12:16?",
+    "prompt": "O que o povo declara explicitamente em 1 Reis 12:16?",
+    "cue": "O que o povo declara explicitamente em 1 Reis 12:16?",
+    "feedbackCorrect": "Certo: nega parte em Davi e herança no filho de Jessé.",
+    "feedbackWrong": {
+      "b": "O texto não registra renovação da lealdade.",
+      "c": "Não há pedido de união sob Roboão aqui.",
+      "d": "O povo se afasta, não permanece."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Não tem parte em Davi nem herança no filho de Jessé"
+      },
+      {
+        "id": "b",
+        "text": "Renova a lealdade à casa de Davi"
+      },
+      {
+        "id": "c",
+        "text": "Pede que o rei continue a unir todo Israel"
+      },
+      {
+        "id": "d",
+        "text": "Permanece junto do rei na capital"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Vendo o povo que o rei não lhe dava ouvidos, respondeu-lhe: Que parte temos nós em Davi? Nem temos herança no filho de Jessé. Às vossas tendas, ó Israel! Agora, cuida da tua casa, ó Davi! Assim, Israel se foi para as suas tendas.",
+    "trail": "reis",
+    "section": "reis-dividido-01-norte-e-sul",
+    "id": "reis-sem-reis-dividido-01-norte-e-sul-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Reis 12:16",
+    "learningObjective": "Reconhecer que o reino se parte: Israel se vai para as suas tendas.",
+    "evidence": [
+      "1 Reis 12:16"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em 1 Reis 12:16?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 1 Reis 12:16?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 1 Reis 12:16?",
+    "feedbackCorrect": "Certo: rejeição, convocação às tendas, Israel se vai.",
+    "feedbackWrong": {
+      "b": "A rejeição de Davi vem antes da ida às tendas.",
+      "c": "Releia a ordem do versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Que parte temos nós em Davi? Nem herança no filho de Jessé"
+      },
+      {
+        "id": "b",
+        "text": "Às vossas tendas, ó Israel! Agora, cuida da tua casa, ó Davi"
+      },
+      {
+        "id": "c",
+        "text": "Assim, Israel se foi para as suas tendas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Vendo o povo que o rei não lhe dava ouvidos, respondeu-lhe: Que parte temos nós em Davi? Nem temos herança no filho de Jessé. Às vossas tendas, ó Israel! Agora, cuida da tua casa, ó Davi! Assim, Israel se foi para as suas tendas.",
+    "trail": "reis",
+    "section": "reis-dividido-01-norte-e-sul",
+    "id": "reis-sem-reis-dividido-01-norte-e-sul-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Reis 12:16",
+    "learningObjective": "Reconhecer que o reino se parte: Israel se vai para as suas tendas.",
+    "evidence": [
+      "1 Reis 12:16"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Nem temos ___ no filho de Jessé.\"",
+    "prompt": "Complete: \"Nem temos ___ no filho de Jessé.\"",
+    "cue": "Complete: \"Nem temos ___ no filho de Jessé.\"",
+    "feedbackCorrect": "Certo: nem têm \"herança\" no filho de Jessé.",
+    "feedbackWrong": {
+      "a": "Tendas vem depois; aqui a palavra é herança.",
+      "c": "Davi é o nome rejeitado; a lacuna pede herança."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "tendas"
+      },
+      {
+        "id": "b",
+        "text": "herança"
+      },
+      {
+        "id": "c",
+        "text": "Davi"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Vendo o povo que o rei não lhe dava ouvidos, respondeu-lhe: Que parte temos nós em Davi? Nem temos herança no filho de Jessé. Às vossas tendas, ó Israel! Agora, cuida da tua casa, ó Davi! Assim, Israel se foi para as suas tendas.",
+    "trail": "reis",
+    "section": "reis-dividido-01-norte-e-sul",
+    "id": "reis-sem-reis-dividido-01-norte-e-sul-05",
+    "template": "Nem temos ___ no filho de Jessé."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Reis 12:16",
+    "learningObjective": "Reconhecer que o reino se parte: Israel se vai para as suas tendas.",
+    "evidence": [
+      "1 Reis 12:16"
+    ],
+    "type": "connect",
+    "question": "O que 1 Reis 12:16 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Reis 12:16 comunica que se liga a este contexto?",
+    "cue": "O que 1 Reis 12:16 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o reino se parte — Israel às tendas.",
+    "feedbackWrong": {
+      "a": "O texto não celebra união sob Davi.",
+      "c": "Não há aqui restauração da monarquia unida."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "União sob a casa de Davi"
+      },
+      {
+        "id": "b",
+        "text": "Ruptura: Israel às tendas"
+      },
+      {
+        "id": "c",
+        "text": "Restauração da monarquia unida"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Vendo o povo que o rei não lhe dava ouvidos, respondeu-lhe: Que parte temos nós em Davi? Nem temos herança no filho de Jessé. Às vossas tendas, ó Israel! Agora, cuida da tua casa, ó Davi! Assim, Israel se foi para as suas tendas.",
+    "trail": "reis",
+    "section": "reis-dividido-01-norte-e-sul",
+    "id": "reis-sem-reis-dividido-01-norte-e-sul-06",
+    "passageA": {
+      "ref": "1 Reis 12:16",
+      "text": "Vendo o povo que o rei não lhe dava ouvidos, respondeu-lhe: Que parte temos nós em Davi? Nem temos herança no filho de Jessé. Às vossas tendas, ó Israel! Agora, cuida da tua casa, ó Davi! Assim, Israel se foi para as suas tendas."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Reino se parte: Israel às tendas."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Reis 12:16",
+    "learningObjective": "Reconhecer que o reino se parte: Israel se vai para as suas tendas.",
+    "evidence": [
+      "1 Reis 12:16"
+    ],
+    "type": "true_false",
+    "question": "A recusa do rei em ouvir o povo resulta na ruptura: Israel se vai para as suas tendas.",
+    "prompt": "A recusa do rei em ouvir o povo resulta na ruptura: Israel se vai para as suas tendas.",
+    "cue": "A recusa do rei em ouvir o povo resulta na ruptura: Israel se vai para as suas tendas.",
+    "feedbackCorrect": "Certo: o texto liga a falta de ouvidos à cisão.",
+    "feedbackWrong": {
+      "false": "1 Reis 12:16 abre com o rei que não dava ouvidos."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Vendo o povo que o rei não lhe dava ouvidos, respondeu-lhe: Que parte temos nós em Davi? Nem temos herança no filho de Jessé. Às vossas tendas, ó Israel! Agora, cuida da tua casa, ó Davi! Assim, Israel se foi para as suas tendas.",
+    "trail": "reis",
+    "section": "reis-dividido-01-norte-e-sul",
+    "id": "reis-cam-reis-dividido-01-norte-e-sul-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Reis 12:16",
+    "learningObjective": "Reconhecer que o reino se parte: Israel se vai para as suas tendas.",
+    "evidence": [
+      "1 Reis 12:16"
+    ],
+    "type": "tap",
+    "question": "Em 1 Reis 12:16, toque a palavra que falta em \"Que ___ temos nós em Davi?\"?",
+    "prompt": "Em 1 Reis 12:16, toque a palavra que falta em \"Que ___ temos nós em Davi?\"?",
+    "cue": "Em 1 Reis 12:16, toque a palavra que falta em \"Que ___ temos nós em Davi?\"?",
+    "feedbackCorrect": "Exato: que \"parte\" temos nós em Davi.",
+    "feedbackWrong": {
+      "b": "Herança vem na frase seguinte; aqui é parte.",
+      "c": "Tendas é o destino; a lacuna pede parte."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "parte"
+      },
+      {
+        "id": "b",
+        "text": "herança"
+      },
+      {
+        "id": "c",
+        "text": "tendas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Vendo o povo que o rei não lhe dava ouvidos, respondeu-lhe: Que parte temos nós em Davi? Nem temos herança no filho de Jessé. Às vossas tendas, ó Israel! Agora, cuida da tua casa, ó Davi! Assim, Israel se foi para as suas tendas.",
+    "trail": "reis",
+    "section": "reis-dividido-01-norte-e-sul",
+    "id": "reis-cam-reis-dividido-01-norte-e-sul-02",
+    "template": "Que ___ temos nós em Davi?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Reis 12:16",
+    "learningObjective": "Reconhecer que o reino se parte: Israel se vai para as suas tendas.",
+    "evidence": [
+      "1 Reis 12:16"
+    ],
+    "type": "choice",
+    "question": "Como 1 Reis 12:16 liga a atitude do rei à resposta de Israel?",
+    "prompt": "Como 1 Reis 12:16 liga a atitude do rei à resposta de Israel?",
+    "cue": "Como 1 Reis 12:16 liga a atitude do rei à resposta de Israel?",
+    "feedbackCorrect": "Certo: sem ouvidos do rei, o povo rompe e se retira às tendas.",
+    "feedbackWrong": {
+      "a": "O povo não celebra a escuta do rei.",
+      "c": "Não há reforço da lealdade dinástica aqui.",
+      "d": "A resposta é ruptura, não petição diplomática prolongada."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O povo celebra que o rei finalmente o escutou"
+      },
+      {
+        "id": "b",
+        "text": "Sem ser ouvido, o povo rejeita Davi e se retira às tendas"
+      },
+      {
+        "id": "c",
+        "text": "Israel reforça a lealdade à casa de Jessé"
+      },
+      {
+        "id": "d",
+        "text": "O povo apenas pede mais tempo para negociar"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Vendo o povo que o rei não lhe dava ouvidos, respondeu-lhe: Que parte temos nós em Davi? Nem temos herança no filho de Jessé. Às vossas tendas, ó Israel! Agora, cuida da tua casa, ó Davi! Assim, Israel se foi para as suas tendas.",
+    "trail": "reis",
+    "section": "reis-dividido-01-norte-e-sul",
+    "id": "reis-cam-reis-dividido-01-norte-e-sul-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Reis 12:16",
+    "learningObjective": "Reconhecer que o reino se parte: Israel se vai para as suas tendas.",
+    "evidence": [
+      "1 Reis 12:16"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de 1 Reis 12:16?",
+    "prompt": "Como se encadeiam os eventos de 1 Reis 12:16?",
+    "cue": "Como se encadeiam os eventos de 1 Reis 12:16?",
+    "feedbackCorrect": "Certo: rejeição da dinastia, convocação às tendas, partida de Israel.",
+    "feedbackWrong": {
+      "b": "A partida fecha o movimento de ruptura.",
+      "c": "Releia o encadeamento do versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Que parte temos nós em Davi? Nem herança no filho de Jessé"
+      },
+      {
+        "id": "b",
+        "text": "Às vossas tendas, ó Israel! Agora, cuida da tua casa, ó Davi"
+      },
+      {
+        "id": "c",
+        "text": "Assim, Israel se foi para as suas tendas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Vendo o povo que o rei não lhe dava ouvidos, respondeu-lhe: Que parte temos nós em Davi? Nem temos herança no filho de Jessé. Às vossas tendas, ó Israel! Agora, cuida da tua casa, ó Davi! Assim, Israel se foi para as suas tendas.",
+    "trail": "reis",
+    "section": "reis-dividido-01-norte-e-sul",
+    "id": "reis-cam-reis-dividido-01-norte-e-sul-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Reis 12:16",
+    "learningObjective": "Reconhecer que o reino se parte: Israel se vai para as suas tendas.",
+    "evidence": [
+      "1 Reis 12:16"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Assim, Israel se foi para as suas ___.\"",
+    "prompt": "Complete: \"Assim, Israel se foi para as suas ___.\"",
+    "cue": "Complete: \"Assim, Israel se foi para as suas ___.\"",
+    "feedbackCorrect": "Certo: para as suas \"tendas\".",
+    "feedbackWrong": {
+      "b": "Casa é o que Davi deve cuidar; aqui é tendas.",
+      "c": "Herança é o que negam; a lacuna pede tendas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "tendas"
+      },
+      {
+        "id": "b",
+        "text": "casa"
+      },
+      {
+        "id": "c",
+        "text": "herança"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Vendo o povo que o rei não lhe dava ouvidos, respondeu-lhe: Que parte temos nós em Davi? Nem temos herança no filho de Jessé. Às vossas tendas, ó Israel! Agora, cuida da tua casa, ó Davi! Assim, Israel se foi para as suas tendas.",
+    "trail": "reis",
+    "section": "reis-dividido-01-norte-e-sul",
+    "id": "reis-cam-reis-dividido-01-norte-e-sul-05",
+    "template": "Assim, Israel se foi para as suas ___."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Reis 12:16",
+    "learningObjective": "Reconhecer que o reino se parte: Israel se vai para as suas tendas.",
+    "evidence": [
+      "1 Reis 12:16"
+    ],
+    "type": "connect",
+    "question": "O que 1 Reis 12:16 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Reis 12:16 comunica que se liga a este contexto?",
+    "cue": "O que 1 Reis 12:16 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a cisão política nasce da rejeição da casa de Davi.",
+    "feedbackWrong": {
+      "a": "O texto não celebra continuidade dinástica.",
+      "c": "Não há aqui reconciliação imediata."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Continuidade da dinastia unida"
+      },
+      {
+        "id": "b",
+        "text": "Cisão: Israel rejeita Davi"
+      },
+      {
+        "id": "c",
+        "text": "Reconciliação imediata do reino"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Vendo o povo que o rei não lhe dava ouvidos, respondeu-lhe: Que parte temos nós em Davi? Nem temos herança no filho de Jessé. Às vossas tendas, ó Israel! Agora, cuida da tua casa, ó Davi! Assim, Israel se foi para as suas tendas.",
+    "trail": "reis",
+    "section": "reis-dividido-01-norte-e-sul",
+    "id": "reis-cam-reis-dividido-01-norte-e-sul-06",
+    "passageA": {
+      "ref": "1 Reis 12:16",
+      "text": "Vendo o povo que o rei não lhe dava ouvidos, respondeu-lhe: Que parte temos nós em Davi? Nem temos herança no filho de Jessé. Às vossas tendas, ó Israel! Agora, cuida da tua casa, ó Davi! Assim, Israel se foi para as suas tendas."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Reino se parte: Israel às tendas."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Reis 12:16",
+    "learningObjective": "Reconhecer que o reino se parte: Israel se vai para as suas tendas.",
+    "evidence": [
+      "1 Reis 12:16"
+    ],
+    "type": "true_false",
+    "question": "A frase “cuida da tua casa, ó Davi” marca a separação entre Israel e a dinastia davidica.",
+    "prompt": "A frase “cuida da tua casa, ó Davi” marca a separação entre Israel e a dinastia davidica.",
+    "cue": "A frase “cuida da tua casa, ó Davi” marca a separação entre Israel e a dinastia davidica.",
+    "feedbackCorrect": "Certo: o povo deixa Davi com a própria casa e se retira.",
+    "feedbackWrong": {
+      "false": "Essa convocação expressa a ruptura do reino."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Vendo o povo que o rei não lhe dava ouvidos, respondeu-lhe: Que parte temos nós em Davi? Nem temos herança no filho de Jessé. Às vossas tendas, ó Israel! Agora, cuida da tua casa, ó Davi! Assim, Israel se foi para as suas tendas.",
+    "trail": "reis",
+    "section": "reis-dividido-01-norte-e-sul",
+    "id": "reis-pro-reis-dividido-01-norte-e-sul-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Reis 12:16",
+    "learningObjective": "Reconhecer que o reino se parte: Israel se vai para as suas tendas.",
+    "evidence": [
+      "1 Reis 12:16"
+    ],
+    "type": "tap",
+    "question": "Em 1 Reis 12:16, toque a palavra que falta em \"Nem temos herança no filho de ___\"?",
+    "prompt": "Em 1 Reis 12:16, toque a palavra que falta em \"Nem temos herança no filho de ___\"?",
+    "cue": "Em 1 Reis 12:16, toque a palavra que falta em \"Nem temos herança no filho de ___\"?",
+    "feedbackCorrect": "Exato: filho de \"Jessé\".",
+    "feedbackWrong": {
+      "b": "Davi é o nome próprio; aqui a linhagem é Jessé.",
+      "c": "Israel é quem se vai; a lacuna pede Jessé."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jessé"
+      },
+      {
+        "id": "b",
+        "text": "Davi"
+      },
+      {
+        "id": "c",
+        "text": "Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Vendo o povo que o rei não lhe dava ouvidos, respondeu-lhe: Que parte temos nós em Davi? Nem temos herança no filho de Jessé. Às vossas tendas, ó Israel! Agora, cuida da tua casa, ó Davi! Assim, Israel se foi para as suas tendas.",
+    "trail": "reis",
+    "section": "reis-dividido-01-norte-e-sul",
+    "id": "reis-pro-reis-dividido-01-norte-e-sul-02",
+    "template": "Nem temos herança no filho de ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Reis 12:16",
+    "learningObjective": "Reconhecer que o reino se parte: Israel se vai para as suas tendas.",
+    "evidence": [
+      "1 Reis 12:16"
+    ],
+    "type": "choice",
+    "question": "O que a ruptura de 1 Reis 12:16 revela sobre a unidade do reino?",
+    "prompt": "O que a ruptura de 1 Reis 12:16 revela sobre a unidade do reino?",
+    "cue": "O que a ruptura de 1 Reis 12:16 revela sobre a unidade do reino?",
+    "feedbackCorrect": "Certo: sem ouvidos do rei, a unidade sob Davi se desfaz.",
+    "feedbackWrong": {
+      "a": "O texto não afirma que a unidade se fortaleceu.",
+      "c": "Israel não permanece sob a casa de Davi.",
+      "d": "A ida às tendas é separação, não reforma cultual."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A unidade sob Davi se fortalece apesar do rei"
+      },
+      {
+        "id": "b",
+        "text": "Sem ser ouvido, o povo desfaz a unidade sob Davi"
+      },
+      {
+        "id": "c",
+        "text": "Israel permanece fiel à casa de Jessé"
+      },
+      {
+        "id": "d",
+        "text": "A ida às tendas é só uma reforma cultual pacífica"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Vendo o povo que o rei não lhe dava ouvidos, respondeu-lhe: Que parte temos nós em Davi? Nem temos herança no filho de Jessé. Às vossas tendas, ó Israel! Agora, cuida da tua casa, ó Davi! Assim, Israel se foi para as suas tendas.",
+    "trail": "reis",
+    "section": "reis-dividido-01-norte-e-sul",
+    "id": "reis-pro-reis-dividido-01-norte-e-sul-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Reis 12:16",
+    "learningObjective": "Reconhecer que o reino se parte: Israel se vai para as suas tendas.",
+    "evidence": [
+      "1 Reis 12:16"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de 1 Reis 12:16?",
+    "prompt": "Qual sequência revela o sentido de 1 Reis 12:16?",
+    "cue": "Qual sequência revela o sentido de 1 Reis 12:16?",
+    "feedbackCorrect": "Certo: rejeição dinástica, convocação à separação, partida efetiva.",
+    "feedbackWrong": {
+      "b": "A partida efetiva fecha o sentido da cisão.",
+      "c": "Releia a lógica da ruptura no versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Que parte temos nós em Davi? Nem herança no filho de Jessé"
+      },
+      {
+        "id": "b",
+        "text": "Às vossas tendas, ó Israel! Agora, cuida da tua casa, ó Davi"
+      },
+      {
+        "id": "c",
+        "text": "Assim, Israel se foi para as suas tendas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Vendo o povo que o rei não lhe dava ouvidos, respondeu-lhe: Que parte temos nós em Davi? Nem temos herança no filho de Jessé. Às vossas tendas, ó Israel! Agora, cuida da tua casa, ó Davi! Assim, Israel se foi para as suas tendas.",
+    "trail": "reis",
+    "section": "reis-dividido-01-norte-e-sul",
+    "id": "reis-pro-reis-dividido-01-norte-e-sul-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Reis 12:16",
+    "learningObjective": "Reconhecer que o reino se parte: Israel se vai para as suas tendas.",
+    "evidence": [
+      "1 Reis 12:16"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Agora, cuida da tua ___, ó Davi!\"",
+    "prompt": "Complete: \"Agora, cuida da tua ___, ó Davi!\"",
+    "cue": "Complete: \"Agora, cuida da tua ___, ó Davi!\"",
+    "feedbackCorrect": "Certo: cuida da tua \"casa\".",
+    "feedbackWrong": {
+      "b": "Tendas é o destino de Israel; aqui é casa.",
+      "c": "Parte é o que negam; a lacuna pede casa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "casa"
+      },
+      {
+        "id": "b",
+        "text": "tendas"
+      },
+      {
+        "id": "c",
+        "text": "parte"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Vendo o povo que o rei não lhe dava ouvidos, respondeu-lhe: Que parte temos nós em Davi? Nem temos herança no filho de Jessé. Às vossas tendas, ó Israel! Agora, cuida da tua casa, ó Davi! Assim, Israel se foi para as suas tendas.",
+    "trail": "reis",
+    "section": "reis-dividido-01-norte-e-sul",
+    "id": "reis-pro-reis-dividido-01-norte-e-sul-05",
+    "template": "Agora, cuida da tua ___, ó Davi!"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Reis 12:16",
+    "learningObjective": "Reconhecer que o reino se parte: Israel se vai para as suas tendas.",
+    "evidence": [
+      "1 Reis 12:16"
+    ],
+    "type": "connect",
+    "question": "O que 1 Reis 12:16 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Reis 12:16 comunica que se liga a este contexto?",
+    "cue": "O que 1 Reis 12:16 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o reino se parte quando Israel se vai às tendas.",
+    "feedbackWrong": {
+      "a": "O texto não celebra a permanência unida.",
+      "c": "Não há aqui restauração imediata sob Davi."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Permanência do reino unido"
+      },
+      {
+        "id": "b",
+        "text": "Partilha: Israel às tendas"
+      },
+      {
+        "id": "c",
+        "text": "Restauração imediata sob Davi"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Vendo o povo que o rei não lhe dava ouvidos, respondeu-lhe: Que parte temos nós em Davi? Nem temos herança no filho de Jessé. Às vossas tendas, ó Israel! Agora, cuida da tua casa, ó Davi! Assim, Israel se foi para as suas tendas.",
+    "trail": "reis",
+    "section": "reis-dividido-01-norte-e-sul",
+    "id": "reis-pro-reis-dividido-01-norte-e-sul-06",
+    "passageA": {
+      "ref": "1 Reis 12:16",
+      "text": "Vendo o povo que o rei não lhe dava ouvidos, respondeu-lhe: Que parte temos nós em Davi? Nem temos herança no filho de Jessé. Às vossas tendas, ó Israel! Agora, cuida da tua casa, ó Davi! Assim, Israel se foi para as suas tendas."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Reino se parte: Israel às tendas."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de Elias: se Jeová é Deus, segui-o.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "true_false",
+    "question": "Elias diz ao povo que, se Jeová é Deus, devem segui-lo.",
+    "prompt": "Elias diz ao povo que, se Jeová é Deus, devem segui-lo.",
+    "cue": "Elias diz ao povo que, se Jeová é Deus, devem segui-lo.",
+    "feedbackCorrect": "Certo: esse é o desafio explícito de Elias.",
+    "feedbackWrong": {
+      "false": "O texto registra exatamente esse desafio."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-02-elias-no-carmelo",
+    "id": "reis-sem-reis-dividido-02-elias-no-carmelo-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de Elias: se Jeová é Deus, segui-o.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "tap",
+    "question": "Em 1 Reis 18:21, toque a palavra que falta em \"Se Jeová é Deus, ___-o\"?",
+    "prompt": "Em 1 Reis 18:21, toque a palavra que falta em \"Se Jeová é Deus, ___-o\"?",
+    "cue": "Em 1 Reis 18:21, toque a palavra que falta em \"Se Jeová é Deus, ___-o\"?",
+    "feedbackCorrect": "Exato: \"segui\"-o.",
+    "feedbackWrong": {
+      "b": "Baal é a alternativa; o verbo é segui.",
+      "c": "Povo é quem ouve; a lacuna pede segui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "segui"
+      },
+      {
+        "id": "b",
+        "text": "Baal"
+      },
+      {
+        "id": "c",
+        "text": "povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-02-elias-no-carmelo",
+    "id": "reis-sem-reis-dividido-02-elias-no-carmelo-02",
+    "template": "Se Jeová é Deus, ___-o"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de Elias: se Jeová é Deus, segui-o.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "choice",
+    "question": "O que Elias propõe explicitamente ao povo em 1 Reis 18:21?",
+    "prompt": "O que Elias propõe explicitamente ao povo em 1 Reis 18:21?",
+    "cue": "O que Elias propõe explicitamente ao povo em 1 Reis 18:21?",
+    "feedbackCorrect": "Certo: seguir Jeová se ele é Deus, ou Baal se este o for.",
+    "feedbackWrong": {
+      "b": "O texto não recomenda claudicar entre dois lados.",
+      "c": "Não há ordem de silêncio como solução.",
+      "d": "Elias não celebra a idolatria de Baal."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Seguir Jeová se ele é Deus; ou Baal, se este o for"
+      },
+      {
+        "id": "b",
+        "text": "Continuar claudicando entre as duas partes"
+      },
+      {
+        "id": "c",
+        "text": "Ficar em silêncio e não escolher lado nenhum"
+      },
+      {
+        "id": "d",
+        "text": "Adorar Baal e abandonar Jeová de uma vez"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-02-elias-no-carmelo",
+    "id": "reis-sem-reis-dividido-02-elias-no-carmelo-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de Elias: se Jeová é Deus, segui-o.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em 1 Reis 18:21?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 1 Reis 18:21?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 1 Reis 18:21?",
+    "feedbackCorrect": "Certo: pergunta, desafio de seguir, silêncio do povo.",
+    "feedbackWrong": {
+      "b": "O silêncio do povo fecha o versículo.",
+      "c": "Releia a ordem do desafio de Elias."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Até quando claudicareis para duas partes?"
+      },
+      {
+        "id": "b",
+        "text": "Se Jeová é Deus, segui-o; se Baal o é, segui-o"
+      },
+      {
+        "id": "c",
+        "text": "O povo não lhe respondeu palavra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-02-elias-no-carmelo",
+    "id": "reis-sem-reis-dividido-02-elias-no-carmelo-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de Elias: se Jeová é Deus, segui-o.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Até quando ___ para duas partes?\"",
+    "prompt": "Complete: \"Até quando ___ para duas partes?\"",
+    "cue": "Complete: \"Até quando ___ para duas partes?\"",
+    "feedbackCorrect": "Certo: \"claudicareis\" para duas partes.",
+    "feedbackWrong": {
+      "b": "Segui é o verbo do desafio; aqui é claudicareis.",
+      "c": "Baal é a alternativa; a lacuna pede claudicareis."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "claudicareis"
+      },
+      {
+        "id": "b",
+        "text": "segui"
+      },
+      {
+        "id": "c",
+        "text": "Baal"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-02-elias-no-carmelo",
+    "id": "reis-sem-reis-dividido-02-elias-no-carmelo-05",
+    "template": "Até quando ___ para duas partes?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de Elias: se Jeová é Deus, segui-o.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "connect",
+    "question": "O que 1 Reis 18:21 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Reis 18:21 comunica que se liga a este contexto?",
+    "cue": "O que 1 Reis 18:21 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: se Jeová é Deus, segui-o.",
+    "feedbackWrong": {
+      "a": "O texto não recomenda permanência na indecisão.",
+      "c": "Não há aqui celebração de Baal."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Permanecer entre duas partes"
+      },
+      {
+        "id": "b",
+        "text": "Se Jeová é Deus, segui-o"
+      },
+      {
+        "id": "c",
+        "text": "Seguir Baal sem hesitar"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-02-elias-no-carmelo",
+    "id": "reis-sem-reis-dividido-02-elias-no-carmelo-06",
+    "passageA": {
+      "ref": "1 Reis 18:21",
+      "text": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Se Jeová é Deus, segui-o."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de Elias: se Jeová é Deus, segui-o.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "true_false",
+    "question": "Elias confronta o povo por claudicar entre duas partes em vez de seguir um só Deus.",
+    "prompt": "Elias confronta o povo por claudicar entre duas partes em vez de seguir um só Deus.",
+    "cue": "Elias confronta o povo por claudicar entre duas partes em vez de seguir um só Deus.",
+    "feedbackCorrect": "Certo: o desafio ataca a indecisão entre Jeová e Baal.",
+    "feedbackWrong": {
+      "false": "A pergunta sobre claudicar aponta a divisão."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-02-elias-no-carmelo",
+    "id": "reis-cam-reis-dividido-02-elias-no-carmelo-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de Elias: se Jeová é Deus, segui-o.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "tap",
+    "question": "Em 1 Reis 18:21, toque a palavra que falta em \"se, porém, ___ o é, segui-o\"?",
+    "prompt": "Em 1 Reis 18:21, toque a palavra que falta em \"se, porém, ___ o é, segui-o\"?",
+    "cue": "Em 1 Reis 18:21, toque a palavra que falta em \"se, porém, ___ o é, segui-o\"?",
+    "feedbackCorrect": "Exato: se \"Baal\" o é, segui-o.",
+    "feedbackWrong": {
+      "a": "Jeová é a primeira opção; aqui a alternativa é Baal.",
+      "c": "Povo é quem ouve; a lacuna pede Baal."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Baal"
+      },
+      {
+        "id": "c",
+        "text": "povo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-02-elias-no-carmelo",
+    "id": "reis-cam-reis-dividido-02-elias-no-carmelo-02",
+    "template": "se, porém, ___ o é, segui-o"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de Elias: se Jeová é Deus, segui-o.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "choice",
+    "question": "Como Elias liga a identidade de Deus à resposta do povo?",
+    "prompt": "Como Elias liga a identidade de Deus à resposta do povo?",
+    "cue": "Como Elias liga a identidade de Deus à resposta do povo?",
+    "feedbackCorrect": "Certo: quem for Deus deve ser seguido — sem claudicar.",
+    "feedbackWrong": {
+      "a": "Elias não tolera a indecisão permanente.",
+      "c": "O silêncio do povo não é apresentado como virtude.",
+      "d": "O desafio exige escolha, não sincretismo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O povo pode claudicar indefinidamente entre os dois"
+      },
+      {
+        "id": "b",
+        "text": "Se Jeová ou Baal for Deus, o povo deve segui-lo"
+      },
+      {
+        "id": "c",
+        "text": "O silêncio do povo basta como resposta fiel"
+      },
+      {
+        "id": "d",
+        "text": "Seguir ambos ao mesmo tempo é a solução correta"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-02-elias-no-carmelo",
+    "id": "reis-cam-reis-dividido-02-elias-no-carmelo-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de Elias: se Jeová é Deus, segui-o.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de 1 Reis 18:21?",
+    "prompt": "Como se encadeiam os eventos de 1 Reis 18:21?",
+    "cue": "Como se encadeiam os eventos de 1 Reis 18:21?",
+    "feedbackCorrect": "Certo: denúncia da indecisão, desafio de seguir, silêncio.",
+    "feedbackWrong": {
+      "b": "O silêncio do povo fecha o encadeamento.",
+      "c": "Releia a sequência do confronto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Até quando claudicareis para duas partes?"
+      },
+      {
+        "id": "b",
+        "text": "Se Jeová é Deus, segui-o; se Baal o é, segui-o"
+      },
+      {
+        "id": "c",
+        "text": "O povo não lhe respondeu palavra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-02-elias-no-carmelo",
+    "id": "reis-cam-reis-dividido-02-elias-no-carmelo-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de Elias: se Jeová é Deus, segui-o.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "complete",
+    "question": "Complete: \"O povo não lhe respondeu ___.\"",
+    "prompt": "Complete: \"O povo não lhe respondeu ___.\"",
+    "cue": "Complete: \"O povo não lhe respondeu ___.\"",
+    "feedbackCorrect": "Certo: não respondeu \"palavra\".",
+    "feedbackWrong": {
+      "b": "Partes é o objeto do claudicar; aqui é palavra.",
+      "c": "Deus é o sujeito do desafio; a lacuna pede palavra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "palavra"
+      },
+      {
+        "id": "b",
+        "text": "partes"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-02-elias-no-carmelo",
+    "id": "reis-cam-reis-dividido-02-elias-no-carmelo-05",
+    "template": "O povo não lhe respondeu ___."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de Elias: se Jeová é Deus, segui-o.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "connect",
+    "question": "O que 1 Reis 18:21 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Reis 18:21 comunica que se liga a este contexto?",
+    "cue": "O que 1 Reis 18:21 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a fé exige seguir Jeová, não claudicar.",
+    "feedbackWrong": {
+      "a": "O texto não recomenda neutralidade.",
+      "c": "Não há aqui defesa do culto a Baal."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Neutralidade entre Jeová e Baal"
+      },
+      {
+        "id": "b",
+        "text": "Seguir Jeová sem claudicar"
+      },
+      {
+        "id": "c",
+        "text": "Defesa do culto a Baal"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-02-elias-no-carmelo",
+    "id": "reis-cam-reis-dividido-02-elias-no-carmelo-06",
+    "passageA": {
+      "ref": "1 Reis 18:21",
+      "text": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Se Jeová é Deus, segui-o."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de Elias: se Jeová é Deus, segui-o.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "true_false",
+    "question": "O silêncio do povo diante de Elias expõe a falta de resposta clara à pergunta sobre quem é Deus.",
+    "prompt": "O silêncio do povo diante de Elias expõe a falta de resposta clara à pergunta sobre quem é Deus.",
+    "cue": "O silêncio do povo diante de Elias expõe a falta de resposta clara à pergunta sobre quem é Deus.",
+    "feedbackCorrect": "Certo: o povo não responde palavra ao desafio.",
+    "feedbackWrong": {
+      "false": "O versículo termina com o silêncio do povo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-02-elias-no-carmelo",
+    "id": "reis-pro-reis-dividido-02-elias-no-carmelo-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de Elias: se Jeová é Deus, segui-o.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "tap",
+    "question": "Em 1 Reis 18:21, toque a palavra que falta em \"claudicareis para duas ___\"?",
+    "prompt": "Em 1 Reis 18:21, toque a palavra que falta em \"claudicareis para duas ___\"?",
+    "cue": "Em 1 Reis 18:21, toque a palavra que falta em \"claudicareis para duas ___\"?",
+    "feedbackCorrect": "Exato: duas \"partes\".",
+    "feedbackWrong": {
+      "b": "Palavra é o que o povo não responde; aqui é partes.",
+      "c": "Segui é o verbo do desafio; a lacuna pede partes."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "partes"
+      },
+      {
+        "id": "b",
+        "text": "palavra"
+      },
+      {
+        "id": "c",
+        "text": "segui"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-02-elias-no-carmelo",
+    "id": "reis-pro-reis-dividido-02-elias-no-carmelo-02",
+    "template": "claudicareis para duas ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de Elias: se Jeová é Deus, segui-o.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "choice",
+    "question": "O que o desafio de Elias revela sobre a fidelidade a Deus?",
+    "prompt": "O que o desafio de Elias revela sobre a fidelidade a Deus?",
+    "cue": "O que o desafio de Elias revela sobre a fidelidade a Deus?",
+    "feedbackCorrect": "Certo: fidelidade exige escolha clara — Jeová ou Baal, não ambos.",
+    "feedbackWrong": {
+      "a": "O texto condena a indecisão, não a recomenda.",
+      "c": "Silêncio não equivale a fidelidade no relato.",
+      "d": "Elias não trata Baal e Jeová como iguais."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Claudicar entre dois deuses é uma forma aceitável de fé"
+      },
+      {
+        "id": "b",
+        "text": "Fidelidade exige escolha clara: seguir o verdadeiro Deus"
+      },
+      {
+        "id": "c",
+        "text": "O silêncio do povo prova que a escolha é desnecessária"
+      },
+      {
+        "id": "d",
+        "text": "Jeová e Baal podem ser seguidos com a mesma lealdade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-02-elias-no-carmelo",
+    "id": "reis-pro-reis-dividido-02-elias-no-carmelo-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de Elias: se Jeová é Deus, segui-o.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de 1 Reis 18:21?",
+    "prompt": "Qual sequência revela o sentido de 1 Reis 18:21?",
+    "cue": "Qual sequência revela o sentido de 1 Reis 18:21?",
+    "feedbackCorrect": "Certo: denúncia da divisão, exigência de seguir, exposição do silêncio.",
+    "feedbackWrong": {
+      "b": "O silêncio expõe a resposta do povo.",
+      "c": "Releia a lógica teológica do desafio."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Até quando claudicareis para duas partes?"
+      },
+      {
+        "id": "b",
+        "text": "Se Jeová é Deus, segui-o; se Baal o é, segui-o"
+      },
+      {
+        "id": "c",
+        "text": "O povo não lhe respondeu palavra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-02-elias-no-carmelo",
+    "id": "reis-pro-reis-dividido-02-elias-no-carmelo-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de Elias: se Jeová é Deus, segui-o.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Se ___ é Deus, segui-o.\"",
+    "prompt": "Complete: \"Se ___ é Deus, segui-o.\"",
+    "cue": "Complete: \"Se ___ é Deus, segui-o.\"",
+    "feedbackCorrect": "Certo: se \"Jeová\" é Deus, segui-o.",
+    "feedbackWrong": {
+      "b": "Baal é a alternativa; aqui o nome é Jeová.",
+      "c": "Elias é quem fala; a lacuna pede Jeová."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Baal"
+      },
+      {
+        "id": "c",
+        "text": "Elias"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-02-elias-no-carmelo",
+    "id": "reis-pro-reis-dividido-02-elias-no-carmelo-05",
+    "template": "Se ___ é Deus, segui-o."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de Elias: se Jeová é Deus, segui-o.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "connect",
+    "question": "O que 1 Reis 18:21 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Reis 18:21 comunica que se liga a este contexto?",
+    "cue": "O que 1 Reis 18:21 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a identidade de Deus exige seguimento exclusivo.",
+    "feedbackWrong": {
+      "a": "O texto não celebra a indecisão.",
+      "c": "Não há aqui sincretismo como ideal."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Indecisão como virtude religiosa"
+      },
+      {
+        "id": "b",
+        "text": "Seguimento exclusivo do verdadeiro Deus"
+      },
+      {
+        "id": "c",
+        "text": "Sincretismo entre Jeová e Baal"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-02-elias-no-carmelo",
+    "id": "reis-pro-reis-dividido-02-elias-no-carmelo-06",
+    "passageA": {
+      "ref": "1 Reis 18:21",
+      "text": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Se Jeová é Deus, segui-o."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de fidelidade: Jeová ou Baal — sem claudicar.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "true_false",
+    "question": "Elias pergunta até quando o povo claudicará para duas partes.",
+    "prompt": "Elias pergunta até quando o povo claudicará para duas partes.",
+    "cue": "Elias pergunta até quando o povo claudicará para duas partes.",
+    "feedbackCorrect": "Certo: essa é a pergunta inicial de Elias ao povo.",
+    "feedbackWrong": {
+      "false": "O texto abre com essa pergunta sobre claudicar."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-03-desafio-fidelidade",
+    "id": "reis-sem-reis-dividido-03-desafio-fidelidade-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de fidelidade: Jeová ou Baal — sem claudicar.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "tap",
+    "question": "Em 1 Reis 18:21, toque a palavra que falta em \"Até quando claudicareis para ___ partes\"?",
+    "prompt": "Em 1 Reis 18:21, toque a palavra que falta em \"Até quando claudicareis para ___ partes\"?",
+    "cue": "Em 1 Reis 18:21, toque a palavra que falta em \"Até quando claudicareis para ___ partes\"?",
+    "feedbackCorrect": "Exato: \"duas\" partes.",
+    "feedbackWrong": {
+      "b": "Palavra é o que falta na resposta; aqui é duas.",
+      "c": "Segui é o verbo do desafio; a lacuna pede duas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "duas"
+      },
+      {
+        "id": "b",
+        "text": "palavra"
+      },
+      {
+        "id": "c",
+        "text": "segui"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-03-desafio-fidelidade",
+    "id": "reis-sem-reis-dividido-03-desafio-fidelidade-02",
+    "template": "Até quando claudicareis para ___ partes"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de fidelidade: Jeová ou Baal — sem claudicar.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "choice",
+    "question": "Qual alternativa Elias coloca diante do povo?",
+    "prompt": "Qual alternativa Elias coloca diante do povo?",
+    "cue": "Qual alternativa Elias coloca diante do povo?",
+    "feedbackCorrect": "Certo: Jeová ou Baal — cada um, se for Deus, deve ser seguido.",
+    "feedbackWrong": {
+      "b": "O texto não recomenda adorar os dois juntos.",
+      "c": "Não há terceira opção de deuses estrangeiros aqui.",
+      "d": "Elias não pede adiamento da escolha."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová ou Baal: siga aquele que for Deus"
+      },
+      {
+        "id": "b",
+        "text": "Adorar Jeová e Baal ao mesmo tempo"
+      },
+      {
+        "id": "c",
+        "text": "Escolher qualquer deus das nações vizinhas"
+      },
+      {
+        "id": "d",
+        "text": "Adiar a decisão para outra geração"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-03-desafio-fidelidade",
+    "id": "reis-sem-reis-dividido-03-desafio-fidelidade-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de fidelidade: Jeová ou Baal — sem claudicar.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em 1 Reis 18:21?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 1 Reis 18:21?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 1 Reis 18:21?",
+    "feedbackCorrect": "Certo: chegada de Elias, desafio, silêncio do povo.",
+    "feedbackWrong": {
+      "b": "O silêncio vem depois do desafio.",
+      "c": "Releia a ordem do versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Elias, chegando-se a todo o povo, disse"
+      },
+      {
+        "id": "b",
+        "text": "Se Jeová é Deus, segui-o; se Baal o é, segui-o"
+      },
+      {
+        "id": "c",
+        "text": "O povo não lhe respondeu palavra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-03-desafio-fidelidade",
+    "id": "reis-sem-reis-dividido-03-desafio-fidelidade-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de fidelidade: Jeová ou Baal — sem claudicar.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "complete",
+    "question": "Complete: \"se, porém, Baal o é, ___-o.\"",
+    "prompt": "Complete: \"se, porém, Baal o é, ___-o.\"",
+    "cue": "Complete: \"se, porém, Baal o é, ___-o.\"",
+    "feedbackCorrect": "Certo: \"segui\"-o — a mesma exigência vale para ambos.",
+    "feedbackWrong": {
+      "b": "Claudicareis é o problema; aqui o verbo é segui.",
+      "c": "Partes descreve a divisão; a lacuna pede segui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "segui"
+      },
+      {
+        "id": "b",
+        "text": "claudicareis"
+      },
+      {
+        "id": "c",
+        "text": "partes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-03-desafio-fidelidade",
+    "id": "reis-sem-reis-dividido-03-desafio-fidelidade-05",
+    "template": "se, porém, Baal o é, ___-o."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de fidelidade: Jeová ou Baal — sem claudicar.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "connect",
+    "question": "O que 1 Reis 18:21 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Reis 18:21 comunica que se liga a este contexto?",
+    "cue": "O que 1 Reis 18:21 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: fidelidade — Jeová ou Baal.",
+    "feedbackWrong": {
+      "a": "O texto não recomenda coração dividido.",
+      "c": "Não há aqui celebração da indecisão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Coração dividido entre deuses"
+      },
+      {
+        "id": "b",
+        "text": "Fidelidade: Jeová ou Baal"
+      },
+      {
+        "id": "c",
+        "text": "Indecisão como caminho seguro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-03-desafio-fidelidade",
+    "id": "reis-sem-reis-dividido-03-desafio-fidelidade-06",
+    "passageA": {
+      "ref": "1 Reis 18:21",
+      "text": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Fidelidade: Jeová ou Baal."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de fidelidade: Jeová ou Baal — sem claudicar.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "true_false",
+    "question": "O desafio de Elias exige que o povo deixe de claudicar e siga um só lado.",
+    "prompt": "O desafio de Elias exige que o povo deixe de claudicar e siga um só lado.",
+    "cue": "O desafio de Elias exige que o povo deixe de claudicar e siga um só lado.",
+    "feedbackCorrect": "Certo: a alternativa Jeová/Baal exclui a indecisão.",
+    "feedbackWrong": {
+      "false": "O confronto ataca o claudicar entre duas partes."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-03-desafio-fidelidade",
+    "id": "reis-cam-reis-dividido-03-desafio-fidelidade-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de fidelidade: Jeová ou Baal — sem claudicar.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "tap",
+    "question": "Em 1 Reis 18:21, toque a palavra que falta em \"Se ___ é Deus, segui-o\"?",
+    "prompt": "Em 1 Reis 18:21, toque a palavra que falta em \"Se ___ é Deus, segui-o\"?",
+    "cue": "Em 1 Reis 18:21, toque a palavra que falta em \"Se ___ é Deus, segui-o\"?",
+    "feedbackCorrect": "Exato: se \"Jeová\" é Deus.",
+    "feedbackWrong": {
+      "b": "Baal é a segunda opção; aqui o nome é Jeová.",
+      "c": "Elias é o profeta; a lacuna pede Jeová."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Baal"
+      },
+      {
+        "id": "c",
+        "text": "Elias"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-03-desafio-fidelidade",
+    "id": "reis-cam-reis-dividido-03-desafio-fidelidade-02",
+    "template": "Se ___ é Deus, segui-o"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de fidelidade: Jeová ou Baal — sem claudicar.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "choice",
+    "question": "Como o desafio de Elias define a fidelidade do povo?",
+    "prompt": "Como o desafio de Elias define a fidelidade do povo?",
+    "cue": "Como o desafio de Elias define a fidelidade do povo?",
+    "feedbackCorrect": "Certo: fidelidade é seguir o verdadeiro Deus, sem duas partes.",
+    "feedbackWrong": {
+      "a": "Claudicar é o problema denunciado, não a solução.",
+      "c": "O silêncio não substitui a escolha.",
+      "d": "O texto não recomenda cultos paralelos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fidelidade permite claudicar entre Jeová e Baal"
+      },
+      {
+        "id": "b",
+        "text": "Fidelidade é seguir o verdadeiro Deus sem dividir-se"
+      },
+      {
+        "id": "c",
+        "text": "Fidelidade se prova pelo silêncio diante do profeta"
+      },
+      {
+        "id": "d",
+        "text": "Fidelidade aceita cultos paralelos a Jeová e Baal"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-03-desafio-fidelidade",
+    "id": "reis-cam-reis-dividido-03-desafio-fidelidade-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de fidelidade: Jeová ou Baal — sem claudicar.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de 1 Reis 18:21?",
+    "prompt": "Como se encadeiam os eventos de 1 Reis 18:21?",
+    "cue": "Como se encadeiam os eventos de 1 Reis 18:21?",
+    "feedbackCorrect": "Certo: denúncia do claudicar, exigência de seguir, silêncio.",
+    "feedbackWrong": {
+      "b": "O silêncio fecha a cena do desafio.",
+      "c": "Releia o encadeamento do confronto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Até quando claudicareis para duas partes?"
+      },
+      {
+        "id": "b",
+        "text": "Se Jeová é Deus, segui-o; se Baal o é, segui-o"
+      },
+      {
+        "id": "c",
+        "text": "O povo não lhe respondeu palavra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-03-desafio-fidelidade",
+    "id": "reis-cam-reis-dividido-03-desafio-fidelidade-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de fidelidade: Jeová ou Baal — sem claudicar.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Até quando claudicareis para duas ___?\"",
+    "prompt": "Complete: \"Até quando claudicareis para duas ___?\"",
+    "cue": "Complete: \"Até quando claudicareis para duas ___?\"",
+    "feedbackCorrect": "Certo: duas \"partes\".",
+    "feedbackWrong": {
+      "b": "Palavra é o silêncio do povo; aqui é partes.",
+      "c": "Deus é o sujeito do desafio; a lacuna pede partes."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "partes"
+      },
+      {
+        "id": "b",
+        "text": "palavra"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-03-desafio-fidelidade",
+    "id": "reis-cam-reis-dividido-03-desafio-fidelidade-05",
+    "template": "Até quando claudicareis para duas ___?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de fidelidade: Jeová ou Baal — sem claudicar.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "connect",
+    "question": "O que 1 Reis 18:21 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Reis 18:21 comunica que se liga a este contexto?",
+    "cue": "O que 1 Reis 18:21 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: coração dividido (11:4) e claudicar (18:21) se opõem à fidelidade.",
+    "feedbackWrong": {
+      "a": "O texto não celebra perfeição do coração dividido.",
+      "c": "Não há aqui defesa do culto a Baal."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Coração perfeito sob idolatria"
+      },
+      {
+        "id": "b",
+        "text": "Fidelidade contra coração dividido"
+      },
+      {
+        "id": "c",
+        "text": "Lealdade a Baal como solução"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-03-desafio-fidelidade",
+    "id": "reis-cam-reis-dividido-03-desafio-fidelidade-06",
+    "passageA": {
+      "ref": "1 Reis 18:21",
+      "text": "Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Fidelidade: Jeová ou Baal — sem o coração dividido de 1 Reis 11:4."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de fidelidade: Jeová ou Baal — sem claudicar.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "true_false",
+    "question": "Claudicar entre Jeová e Baal é incompatível com a fidelidade que Elias exige.",
+    "prompt": "Claudicar entre Jeová e Baal é incompatível com a fidelidade que Elias exige.",
+    "cue": "Claudicar entre Jeová e Baal é incompatível com a fidelidade que Elias exige.",
+    "feedbackCorrect": "Certo: o desafio exclui a divisão entre duas partes.",
+    "feedbackWrong": {
+      "false": "Elias exige seguir um, não claudicar entre dois."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-03-desafio-fidelidade",
+    "id": "reis-pro-reis-dividido-03-desafio-fidelidade-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de fidelidade: Jeová ou Baal — sem claudicar.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "tap",
+    "question": "Em 1 Reis 18:21, toque a palavra que falta em \"O povo não lhe respondeu ___\"?",
+    "prompt": "Em 1 Reis 18:21, toque a palavra que falta em \"O povo não lhe respondeu ___\"?",
+    "cue": "Em 1 Reis 18:21, toque a palavra que falta em \"O povo não lhe respondeu ___\"?",
+    "feedbackCorrect": "Exato: não respondeu \"palavra\".",
+    "feedbackWrong": {
+      "b": "Partes descreve a divisão; aqui é palavra.",
+      "c": "Segui é o verbo do desafio; a lacuna pede palavra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "palavra"
+      },
+      {
+        "id": "b",
+        "text": "partes"
+      },
+      {
+        "id": "c",
+        "text": "segui"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-03-desafio-fidelidade",
+    "id": "reis-pro-reis-dividido-03-desafio-fidelidade-02",
+    "template": "O povo não lhe respondeu ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de fidelidade: Jeová ou Baal — sem claudicar.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "choice",
+    "question": "O que o desafio de fidelidade em 1 Reis 18:21 exige do leitor?",
+    "prompt": "O que o desafio de fidelidade em 1 Reis 18:21 exige do leitor?",
+    "cue": "O que o desafio de fidelidade em 1 Reis 18:21 exige do leitor?",
+    "feedbackCorrect": "Certo: escolha exclusiva — Jeová ou Baal, sem coração dividido.",
+    "feedbackWrong": {
+      "a": "O texto condena a indecisão permanente.",
+      "c": "Sincretismo é o problema, não a solução.",
+      "d": "Silêncio não basta como fidelidade."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Manter a indecisão até ver qual deus vence"
+      },
+      {
+        "id": "b",
+        "text": "Escolher com exclusividade: seguir o verdadeiro Deus"
+      },
+      {
+        "id": "c",
+        "text": "Combinar Jeová e Baal num culto único"
+      },
+      {
+        "id": "d",
+        "text": "Responder com silêncio e evitar qualquer compromisso"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-03-desafio-fidelidade",
+    "id": "reis-pro-reis-dividido-03-desafio-fidelidade-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de fidelidade: Jeová ou Baal — sem claudicar.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de 1 Reis 18:21?",
+    "prompt": "Qual sequência revela o sentido de 1 Reis 18:21?",
+    "cue": "Qual sequência revela o sentido de 1 Reis 18:21?",
+    "feedbackCorrect": "Certo: denúncia da divisão, exigência de seguir, exposição do silêncio.",
+    "feedbackWrong": {
+      "b": "O silêncio fecha a revelação da resposta do povo.",
+      "c": "Releia a lógica do desafio de fidelidade."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Até quando claudicareis para duas partes?"
+      },
+      {
+        "id": "b",
+        "text": "Se Jeová é Deus, segui-o; se Baal o é, segui-o"
+      },
+      {
+        "id": "c",
+        "text": "O povo não lhe respondeu palavra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-03-desafio-fidelidade",
+    "id": "reis-pro-reis-dividido-03-desafio-fidelidade-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de fidelidade: Jeová ou Baal — sem claudicar.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Se Jeová é ___, segui-o.\"",
+    "prompt": "Complete: \"Se Jeová é ___, segui-o.\"",
+    "cue": "Complete: \"Se Jeová é ___, segui-o.\"",
+    "feedbackCorrect": "Certo: se Jeová é \"Deus\", segui-o.",
+    "feedbackWrong": {
+      "b": "Baal é a alternativa; aqui a palavra é Deus.",
+      "c": "Povo é quem ouve; a lacuna pede Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus"
+      },
+      {
+        "id": "b",
+        "text": "Baal"
+      },
+      {
+        "id": "c",
+        "text": "povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-03-desafio-fidelidade",
+    "id": "reis-pro-reis-dividido-03-desafio-fidelidade-05",
+    "template": "Se Jeová é ___, segui-o."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Reis 18:21",
+    "learningObjective": "Reconhecer o desafio de fidelidade: Jeová ou Baal — sem claudicar.",
+    "evidence": [
+      "1 Reis 18:21"
+    ],
+    "type": "connect",
+    "question": "O que 1 Reis 18:21 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Reis 18:21 comunica que se liga a este contexto?",
+    "cue": "O que 1 Reis 18:21 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: fidelidade a Jeová exclui o coração pervertido por outros deuses.",
+    "feedbackWrong": {
+      "a": "O texto não celebra a perversão do coração.",
+      "c": "Não há aqui defesa de seguir outros deuses."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Coração pervertido como virtude"
+      },
+      {
+        "id": "b",
+        "text": "Fidelidade contra outros deuses"
+      },
+      {
+        "id": "c",
+        "text": "Seguir outros deuses com Jeová"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra.",
+    "trail": "reis",
+    "section": "reis-dividido-03-desafio-fidelidade",
+    "id": "reis-pro-reis-dividido-03-desafio-fidelidade-06",
+    "passageA": {
+      "ref": "1 Reis 18:21 / 11:4",
+      "text": "Elias, chegando-se a todo o povo, disse: Até quando claudicareis para duas partes? Se Jeová é Deus, segui-o; se, porém, Baal o é, segui-o. O povo não lhe respondeu palavra. Sendo já velho, suas mulheres perverteram-lhe o coração para seguir outros deuses; e o seu coração não foi perfeito para com Jeová, seu Deus, como o fora o coração de Davi, seu pai."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Fidelidade: Jeová ou Baal."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Reis 17:7–8",
+    "learningObjective": "Reconhecer que Samaria cai porque Israel pecou e temeu outros deuses.",
+    "evidence": [
+      "2 Reis 17:7",
+      "2 Reis 17:8"
+    ],
+    "type": "true_false",
+    "question": "Os filhos de Israel tinham pecado contra Jeová e haviam temido a outros deuses.",
+    "prompt": "Os filhos de Israel tinham pecado contra Jeová e haviam temido a outros deuses.",
+    "cue": "Os filhos de Israel tinham pecado contra Jeová e haviam temido a outros deuses.",
+    "feedbackCorrect": "Certo: o texto afirma pecado e temor a outros deuses.",
+    "feedbackWrong": {
+      "false": "2 Reis 17:7–8 registra exatamente isso."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Assim sucedeu porque os filhos de Israel tinham pecado contra Jeová, seu Deus, que os tirou da terra do Egito, de debaixo da mão de Faraó, rei do Egito, e haviam temido a outros deuses e andado nos estatutos das nações que Jeová expulsou de diante dos filhos de Israel e nos que os reis de Israel estabeleceram.",
+    "trail": "reis",
+    "section": "reis-queda-reis-01-queda-de-samaria",
+    "id": "reis-sem-reis-queda-reis-01-queda-de-samaria-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Reis 17:7–8",
+    "learningObjective": "Reconhecer que Samaria cai porque Israel pecou e temeu outros deuses.",
+    "evidence": [
+      "2 Reis 17:7",
+      "2 Reis 17:8"
+    ],
+    "type": "tap",
+    "question": "Em 2 Reis 17:7–8, toque a palavra que falta em \"tinham ___ contra Jeová, seu Deus\"?",
+    "prompt": "Em 2 Reis 17:7–8, toque a palavra que falta em \"tinham ___ contra Jeová, seu Deus\"?",
+    "cue": "Em 2 Reis 17:7–8, toque a palavra que falta em \"tinham ___ contra Jeová, seu Deus\"?",
+    "feedbackCorrect": "Exato: tinham \"pecado\" contra Jeová.",
+    "feedbackWrong": {
+      "b": "Temido aparece depois; aqui o verbo é pecado.",
+      "c": "Egito é a terra da saída; a lacuna pede pecado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "pecado"
+      },
+      {
+        "id": "b",
+        "text": "temido"
+      },
+      {
+        "id": "c",
+        "text": "Egito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Assim sucedeu porque os filhos de Israel tinham pecado contra Jeová, seu Deus, que os tirou da terra do Egito, de debaixo da mão de Faraó, rei do Egito, e haviam temido a outros deuses e andado nos estatutos das nações que Jeová expulsou de diante dos filhos de Israel e nos que os reis de Israel estabeleceram.",
+    "trail": "reis",
+    "section": "reis-queda-reis-01-queda-de-samaria",
+    "id": "reis-sem-reis-queda-reis-01-queda-de-samaria-02",
+    "template": "tinham ___ contra Jeová, seu Deus"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Reis 17:7–8",
+    "learningObjective": "Reconhecer que Samaria cai porque Israel pecou e temeu outros deuses.",
+    "evidence": [
+      "2 Reis 17:7",
+      "2 Reis 17:8"
+    ],
+    "type": "choice",
+    "question": "O que 2 Reis 17:7–8 afirma como causa do que sucedeu?",
+    "prompt": "O que 2 Reis 17:7–8 afirma como causa do que sucedeu?",
+    "cue": "O que 2 Reis 17:7–8 afirma como causa do que sucedeu?",
+    "feedbackCorrect": "Certo: pecaram contra Jeová e temeram outros deuses.",
+    "feedbackWrong": {
+      "b": "O texto não atribui a queda a fidelidade.",
+      "c": "Não há aqui celebração dos estatutos de Jeová.",
+      "d": "A causa não é a saída do Egito em si."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pecaram contra Jeová e temeram outros deuses"
+      },
+      {
+        "id": "b",
+        "text": "Permaneceram fiéis a Jeová até o fim"
+      },
+      {
+        "id": "c",
+        "text": "Seguiram só os estatutos que Jeová deu"
+      },
+      {
+        "id": "d",
+        "text": "Foram punidos por terem saído do Egito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Assim sucedeu porque os filhos de Israel tinham pecado contra Jeová, seu Deus, que os tirou da terra do Egito, de debaixo da mão de Faraó, rei do Egito, e haviam temido a outros deuses e andado nos estatutos das nações que Jeová expulsou de diante dos filhos de Israel e nos que os reis de Israel estabeleceram.",
+    "trail": "reis",
+    "section": "reis-queda-reis-01-queda-de-samaria",
+    "id": "reis-sem-reis-queda-reis-01-queda-de-samaria-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Reis 17:7–8",
+    "learningObjective": "Reconhecer que Samaria cai porque Israel pecou e temeu outros deuses.",
+    "evidence": [
+      "2 Reis 17:7",
+      "2 Reis 17:8"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em 2 Reis 17:7–8?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 2 Reis 17:7–8?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 2 Reis 17:7–8?",
+    "feedbackCorrect": "Certo: pecado, temor a outros deuses, andar nos estatutos das nações.",
+    "feedbackWrong": {
+      "b": "O pecado abre a explicação causal.",
+      "c": "Releia a ordem do relato."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "os filhos de Israel tinham pecado contra Jeová, seu Deus"
+      },
+      {
+        "id": "b",
+        "text": "e haviam temido a outros deuses"
+      },
+      {
+        "id": "c",
+        "text": "e andado nos estatutos das nações"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Assim sucedeu porque os filhos de Israel tinham pecado contra Jeová, seu Deus, que os tirou da terra do Egito, de debaixo da mão de Faraó, rei do Egito, e haviam temido a outros deuses e andado nos estatutos das nações que Jeová expulsou de diante dos filhos de Israel e nos que os reis de Israel estabeleceram.",
+    "trail": "reis",
+    "section": "reis-queda-reis-01-queda-de-samaria",
+    "id": "reis-sem-reis-queda-reis-01-queda-de-samaria-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Reis 17:7–8",
+    "learningObjective": "Reconhecer que Samaria cai porque Israel pecou e temeu outros deuses.",
+    "evidence": [
+      "2 Reis 17:7",
+      "2 Reis 17:8"
+    ],
+    "type": "complete",
+    "question": "Complete: \"e haviam ___ a outros deuses.\"",
+    "prompt": "Complete: \"e haviam ___ a outros deuses.\"",
+    "cue": "Complete: \"e haviam ___ a outros deuses.\"",
+    "feedbackCorrect": "Certo: haviam \"temido\" a outros deuses.",
+    "feedbackWrong": {
+      "a": "Pecado abre o relato; aqui o verbo é temido.",
+      "c": "Egito é a terra da libertação; a lacuna pede temido."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "pecado"
+      },
+      {
+        "id": "b",
+        "text": "temido"
+      },
+      {
+        "id": "c",
+        "text": "Egito"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Assim sucedeu porque os filhos de Israel tinham pecado contra Jeová, seu Deus, que os tirou da terra do Egito, de debaixo da mão de Faraó, rei do Egito, e haviam temido a outros deuses e andado nos estatutos das nações que Jeová expulsou de diante dos filhos de Israel e nos que os reis de Israel estabeleceram.",
+    "trail": "reis",
+    "section": "reis-queda-reis-01-queda-de-samaria",
+    "id": "reis-sem-reis-queda-reis-01-queda-de-samaria-05",
+    "template": "e haviam ___ a outros deuses."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Reis 17:7–8",
+    "learningObjective": "Reconhecer que Samaria cai porque Israel pecou e temeu outros deuses.",
+    "evidence": [
+      "2 Reis 17:7",
+      "2 Reis 17:8"
+    ],
+    "type": "connect",
+    "question": "O que 2 Reis 17:7–8 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Reis 17:7–8 comunica que se liga a este contexto?",
+    "cue": "O que 2 Reis 17:7–8 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Samaria cai por pecar e temer outros deuses.",
+    "feedbackWrong": {
+      "a": "O texto não celebra fidelidade preservada.",
+      "c": "Não há aqui inocência de Israel."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fidelidade preservada em Samaria"
+      },
+      {
+        "id": "b",
+        "text": "Queda por pecar e temer outros deuses"
+      },
+      {
+        "id": "c",
+        "text": "Inocência de Israel perante Jeová"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Assim sucedeu porque os filhos de Israel tinham pecado contra Jeová, seu Deus, que os tirou da terra do Egito, de debaixo da mão de Faraó, rei do Egito, e haviam temido a outros deuses e andado nos estatutos das nações que Jeová expulsou de diante dos filhos de Israel e nos que os reis de Israel estabeleceram.",
+    "trail": "reis",
+    "section": "reis-queda-reis-01-queda-de-samaria",
+    "id": "reis-sem-reis-queda-reis-01-queda-de-samaria-06",
+    "passageA": {
+      "ref": "2 Reis 17:7–8",
+      "text": "Assim sucedeu porque os filhos de Israel tinham pecado contra Jeová, seu Deus, que os tirou da terra do Egito, de debaixo da mão de Faraó, rei do Egito, e haviam temido a outros deuses e andado nos estatutos das nações que Jeová expulsou de diante dos filhos de Israel e nos que os reis de Israel estabeleceram."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Samaria cai por pecar e temer outros deuses."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Reis 17:7–8",
+    "learningObjective": "Reconhecer que Samaria cai porque Israel pecou e temeu outros deuses.",
+    "evidence": [
+      "2 Reis 17:7",
+      "2 Reis 17:8"
+    ],
+    "type": "true_false",
+    "question": "Israel pecou contra o Deus que o tirou do Egito e andou nos estatutos das nações.",
+    "prompt": "Israel pecou contra o Deus que o tirou do Egito e andou nos estatutos das nações.",
+    "cue": "Israel pecou contra o Deus que o tirou do Egito e andou nos estatutos das nações.",
+    "feedbackCorrect": "Certo: o texto une libertação, pecado e imitação das nações.",
+    "feedbackWrong": {
+      "false": "2 Reis 17:7–8 liga esses elementos."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Assim sucedeu porque os filhos de Israel tinham pecado contra Jeová, seu Deus, que os tirou da terra do Egito, de debaixo da mão de Faraó, rei do Egito, e haviam temido a outros deuses e andado nos estatutos das nações que Jeová expulsou de diante dos filhos de Israel e nos que os reis de Israel estabeleceram.",
+    "trail": "reis",
+    "section": "reis-queda-reis-01-queda-de-samaria",
+    "id": "reis-cam-reis-queda-reis-01-queda-de-samaria-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Reis 17:7–8",
+    "learningObjective": "Reconhecer que Samaria cai porque Israel pecou e temeu outros deuses.",
+    "evidence": [
+      "2 Reis 17:7",
+      "2 Reis 17:8"
+    ],
+    "type": "tap",
+    "question": "Em 2 Reis 17:7–8, toque a palavra que falta em \"andado nos ___ das nações\"?",
+    "prompt": "Em 2 Reis 17:7–8, toque a palavra que falta em \"andado nos ___ das nações\"?",
+    "cue": "Em 2 Reis 17:7–8, toque a palavra que falta em \"andado nos ___ das nações\"?",
+    "feedbackCorrect": "Exato: nos \"estatutos\" das nações.",
+    "feedbackWrong": {
+      "b": "Deuses é o objeto do temor; aqui é estatutos.",
+      "c": "Egito é a terra da saída; a lacuna pede estatutos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "estatutos"
+      },
+      {
+        "id": "b",
+        "text": "deuses"
+      },
+      {
+        "id": "c",
+        "text": "Egito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Assim sucedeu porque os filhos de Israel tinham pecado contra Jeová, seu Deus, que os tirou da terra do Egito, de debaixo da mão de Faraó, rei do Egito, e haviam temido a outros deuses e andado nos estatutos das nações que Jeová expulsou de diante dos filhos de Israel e nos que os reis de Israel estabeleceram.",
+    "trail": "reis",
+    "section": "reis-queda-reis-01-queda-de-samaria",
+    "id": "reis-cam-reis-queda-reis-01-queda-de-samaria-02",
+    "template": "andado nos ___ das nações"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Reis 17:7–8",
+    "learningObjective": "Reconhecer que Samaria cai porque Israel pecou e temeu outros deuses.",
+    "evidence": [
+      "2 Reis 17:7",
+      "2 Reis 17:8"
+    ],
+    "type": "choice",
+    "question": "Como 2 Reis 17:7–8 liga a história da libertação ao pecado de Israel?",
+    "prompt": "Como 2 Reis 17:7–8 liga a história da libertação ao pecado de Israel?",
+    "cue": "Como 2 Reis 17:7–8 liga a história da libertação ao pecado de Israel?",
+    "feedbackCorrect": "Certo: pecaram contra o Deus que os tirou do Egito.",
+    "feedbackWrong": {
+      "a": "O texto não diz que esqueceram a saída do Egito por acidente neutro.",
+      "c": "Não há fidelidade aos estatutos de Jeová aqui.",
+      "d": "A causa não é a falta de reis."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Israel manteve gratidão plena ao Deus do êxodo"
+      },
+      {
+        "id": "b",
+        "text": "Pecaram contra o Deus que os tirou do Egito e temeram outros deuses"
+      },
+      {
+        "id": "c",
+        "text": "Seguiram fielmente os estatutos que Jeová estabeleceu"
+      },
+      {
+        "id": "d",
+        "text": "A queda veio porque Israel nunca teve reis"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Assim sucedeu porque os filhos de Israel tinham pecado contra Jeová, seu Deus, que os tirou da terra do Egito, de debaixo da mão de Faraó, rei do Egito, e haviam temido a outros deuses e andado nos estatutos das nações que Jeová expulsou de diante dos filhos de Israel e nos que os reis de Israel estabeleceram.",
+    "trail": "reis",
+    "section": "reis-queda-reis-01-queda-de-samaria",
+    "id": "reis-cam-reis-queda-reis-01-queda-de-samaria-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Reis 17:7–8",
+    "learningObjective": "Reconhecer que Samaria cai porque Israel pecou e temeu outros deuses.",
+    "evidence": [
+      "2 Reis 17:7",
+      "2 Reis 17:8"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de 2 Reis 17:7–8?",
+    "prompt": "Como se encadeiam os eventos de 2 Reis 17:7–8?",
+    "cue": "Como se encadeiam os eventos de 2 Reis 17:7–8?",
+    "feedbackCorrect": "Certo: pecado contra o Libertador, temor idolátrico, estatutos das nações.",
+    "feedbackWrong": {
+      "b": "Os estatutos das nações fecham a cadeia de infidelidade.",
+      "c": "Releia o encadeamento causal."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "os filhos de Israel tinham pecado contra Jeová, seu Deus"
+      },
+      {
+        "id": "b",
+        "text": "e haviam temido a outros deuses"
+      },
+      {
+        "id": "c",
+        "text": "e andado nos estatutos das nações"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Assim sucedeu porque os filhos de Israel tinham pecado contra Jeová, seu Deus, que os tirou da terra do Egito, de debaixo da mão de Faraó, rei do Egito, e haviam temido a outros deuses e andado nos estatutos das nações que Jeová expulsou de diante dos filhos de Israel e nos que os reis de Israel estabeleceram.",
+    "trail": "reis",
+    "section": "reis-queda-reis-01-queda-de-samaria",
+    "id": "reis-cam-reis-queda-reis-01-queda-de-samaria-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Reis 17:7–8",
+    "learningObjective": "Reconhecer que Samaria cai porque Israel pecou e temeu outros deuses.",
+    "evidence": [
+      "2 Reis 17:7",
+      "2 Reis 17:8"
+    ],
+    "type": "complete",
+    "question": "Complete: \"que os tirou da terra do ___.\"",
+    "prompt": "Complete: \"que os tirou da terra do ___.\"",
+    "cue": "Complete: \"que os tirou da terra do ___.\"",
+    "feedbackCorrect": "Certo: terra do \"Egito\".",
+    "feedbackWrong": {
+      "b": "Faraó é o rei; aqui o lugar é Egito.",
+      "c": "Nações são as expulsas; a lacuna pede Egito."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Egito"
+      },
+      {
+        "id": "b",
+        "text": "Faraó"
+      },
+      {
+        "id": "c",
+        "text": "nações"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Assim sucedeu porque os filhos de Israel tinham pecado contra Jeová, seu Deus, que os tirou da terra do Egito, de debaixo da mão de Faraó, rei do Egito, e haviam temido a outros deuses e andado nos estatutos das nações que Jeová expulsou de diante dos filhos de Israel e nos que os reis de Israel estabeleceram.",
+    "trail": "reis",
+    "section": "reis-queda-reis-01-queda-de-samaria",
+    "id": "reis-cam-reis-queda-reis-01-queda-de-samaria-05",
+    "template": "que os tirou da terra do ___."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Reis 17:7–8",
+    "learningObjective": "Reconhecer que Samaria cai porque Israel pecou e temeu outros deuses.",
+    "evidence": [
+      "2 Reis 17:7",
+      "2 Reis 17:8"
+    ],
+    "type": "connect",
+    "question": "O que 2 Reis 17:7–8 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Reis 17:7–8 comunica que se liga a este contexto?",
+    "cue": "O que 2 Reis 17:7–8 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a queda se explica pela infidelidade idolátrica.",
+    "feedbackWrong": {
+      "a": "O texto não celebra lealdade ao êxodo.",
+      "c": "Não há aqui inocência política de Israel."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Lealdade contínua ao Deus do êxodo"
+      },
+      {
+        "id": "b",
+        "text": "Infidelidade que explica a queda"
+      },
+      {
+        "id": "c",
+        "text": "Inocência política de Samaria"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Assim sucedeu porque os filhos de Israel tinham pecado contra Jeová, seu Deus, que os tirou da terra do Egito, de debaixo da mão de Faraó, rei do Egito, e haviam temido a outros deuses e andado nos estatutos das nações que Jeová expulsou de diante dos filhos de Israel e nos que os reis de Israel estabeleceram.",
+    "trail": "reis",
+    "section": "reis-queda-reis-01-queda-de-samaria",
+    "id": "reis-cam-reis-queda-reis-01-queda-de-samaria-06",
+    "passageA": {
+      "ref": "2 Reis 17:7–8",
+      "text": "Assim sucedeu porque os filhos de Israel tinham pecado contra Jeová, seu Deus, que os tirou da terra do Egito, de debaixo da mão de Faraó, rei do Egito, e haviam temido a outros deuses e andado nos estatutos das nações que Jeová expulsou de diante dos filhos de Israel e nos que os reis de Israel estabeleceram."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Samaria cai por pecar e temer outros deuses."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Reis 17:7–8",
+    "learningObjective": "Reconhecer que Samaria cai porque Israel pecou e temeu outros deuses.",
+    "evidence": [
+      "2 Reis 17:7",
+      "2 Reis 17:8"
+    ],
+    "type": "true_false",
+    "question": "A queda de Samaria é apresentada como consequência do pecado e do temor a outros deuses.",
+    "prompt": "A queda de Samaria é apresentada como consequência do pecado e do temor a outros deuses.",
+    "cue": "A queda de Samaria é apresentada como consequência do pecado e do temor a outros deuses.",
+    "feedbackCorrect": "Certo: o texto explica o que sucedeu por essa causa.",
+    "feedbackWrong": {
+      "false": "Assim sucedeu porque pecaram e temeram outros deuses."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Assim sucedeu porque os filhos de Israel tinham pecado contra Jeová, seu Deus, que os tirou da terra do Egito, de debaixo da mão de Faraó, rei do Egito, e haviam temido a outros deuses e andado nos estatutos das nações que Jeová expulsou de diante dos filhos de Israel e nos que os reis de Israel estabeleceram.",
+    "trail": "reis",
+    "section": "reis-queda-reis-01-queda-de-samaria",
+    "id": "reis-pro-reis-queda-reis-01-queda-de-samaria-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Reis 17:7–8",
+    "learningObjective": "Reconhecer que Samaria cai porque Israel pecou e temeu outros deuses.",
+    "evidence": [
+      "2 Reis 17:7",
+      "2 Reis 17:8"
+    ],
+    "type": "tap",
+    "question": "Em 2 Reis 17:7–8, toque a palavra que falta em \"temido a outros ___\"?",
+    "prompt": "Em 2 Reis 17:7–8, toque a palavra que falta em \"temido a outros ___\"?",
+    "cue": "Em 2 Reis 17:7–8, toque a palavra que falta em \"temido a outros ___\"?",
+    "feedbackCorrect": "Exato: outros \"deuses\".",
+    "feedbackWrong": {
+      "b": "Estatutos é o que seguem depois; aqui é deuses.",
+      "c": "Nações são as expulsas; a lacuna pede deuses."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "deuses"
+      },
+      {
+        "id": "b",
+        "text": "estatutos"
+      },
+      {
+        "id": "c",
+        "text": "nações"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Assim sucedeu porque os filhos de Israel tinham pecado contra Jeová, seu Deus, que os tirou da terra do Egito, de debaixo da mão de Faraó, rei do Egito, e haviam temido a outros deuses e andado nos estatutos das nações que Jeová expulsou de diante dos filhos de Israel e nos que os reis de Israel estabeleceram.",
+    "trail": "reis",
+    "section": "reis-queda-reis-01-queda-de-samaria",
+    "id": "reis-pro-reis-queda-reis-01-queda-de-samaria-02",
+    "template": "temido a outros ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Reis 17:7–8",
+    "learningObjective": "Reconhecer que Samaria cai porque Israel pecou e temeu outros deuses.",
+    "evidence": [
+      "2 Reis 17:7",
+      "2 Reis 17:8"
+    ],
+    "type": "choice",
+    "question": "O que 2 Reis 17:7–8 ensina sobre a responsabilidade de Israel na queda?",
+    "prompt": "O que 2 Reis 17:7–8 ensina sobre a responsabilidade de Israel na queda?",
+    "cue": "O que 2 Reis 17:7–8 ensina sobre a responsabilidade de Israel na queda?",
+    "feedbackCorrect": "Certo: a queda resulta do pecado e da imitação das nações.",
+    "feedbackWrong": {
+      "a": "O texto não isenta Israel de culpa.",
+      "c": "Os estatutos das nações são o caminho da queda, não da fidelidade.",
+      "d": "A libertação do Egito agrava, não cancela, a responsabilidade."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Israel caiu sem qualquer culpa própria"
+      },
+      {
+        "id": "b",
+        "text": "Pecado e temor a outros deuses explicam a queda"
+      },
+      {
+        "id": "c",
+        "text": "Seguir os estatutos das nações era fidelidade a Jeová"
+      },
+      {
+        "id": "d",
+        "text": "Ter sido tirado do Egito isenta Israel de julgamento"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Assim sucedeu porque os filhos de Israel tinham pecado contra Jeová, seu Deus, que os tirou da terra do Egito, de debaixo da mão de Faraó, rei do Egito, e haviam temido a outros deuses e andado nos estatutos das nações que Jeová expulsou de diante dos filhos de Israel e nos que os reis de Israel estabeleceram.",
+    "trail": "reis",
+    "section": "reis-queda-reis-01-queda-de-samaria",
+    "id": "reis-pro-reis-queda-reis-01-queda-de-samaria-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Reis 17:7–8",
+    "learningObjective": "Reconhecer que Samaria cai porque Israel pecou e temeu outros deuses.",
+    "evidence": [
+      "2 Reis 17:7",
+      "2 Reis 17:8"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de 2 Reis 17:7–8?",
+    "prompt": "Qual sequência revela o sentido de 2 Reis 17:7–8?",
+    "cue": "Qual sequência revela o sentido de 2 Reis 17:7–8?",
+    "feedbackCorrect": "Certo: pecado contra o Libertador, idolatria, imitação das nações.",
+    "feedbackWrong": {
+      "b": "A imitação das nações fecha o sentido da queda.",
+      "c": "Releia a lógica teológica do relato."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "os filhos de Israel tinham pecado contra Jeová, seu Deus"
+      },
+      {
+        "id": "b",
+        "text": "e haviam temido a outros deuses"
+      },
+      {
+        "id": "c",
+        "text": "e andado nos estatutos das nações"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Assim sucedeu porque os filhos de Israel tinham pecado contra Jeová, seu Deus, que os tirou da terra do Egito, de debaixo da mão de Faraó, rei do Egito, e haviam temido a outros deuses e andado nos estatutos das nações que Jeová expulsou de diante dos filhos de Israel e nos que os reis de Israel estabeleceram.",
+    "trail": "reis",
+    "section": "reis-queda-reis-01-queda-de-samaria",
+    "id": "reis-pro-reis-queda-reis-01-queda-de-samaria-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Reis 17:7–8",
+    "learningObjective": "Reconhecer que Samaria cai porque Israel pecou e temeu outros deuses.",
+    "evidence": [
+      "2 Reis 17:7",
+      "2 Reis 17:8"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Assim sucedeu porque os filhos de Israel tinham ___ contra Jeová.\"",
+    "prompt": "Complete: \"Assim sucedeu porque os filhos de Israel tinham ___ contra Jeová.\"",
+    "cue": "Complete: \"Assim sucedeu porque os filhos de Israel tinham ___ contra Jeová.\"",
+    "feedbackCorrect": "Certo: tinham \"pecado\" contra Jeová.",
+    "feedbackWrong": {
+      "b": "Temido aparece depois; aqui é pecado.",
+      "c": "Andado refere-se aos estatutos; a lacuna pede pecado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "pecado"
+      },
+      {
+        "id": "b",
+        "text": "temido"
+      },
+      {
+        "id": "c",
+        "text": "andado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Assim sucedeu porque os filhos de Israel tinham pecado contra Jeová, seu Deus, que os tirou da terra do Egito, de debaixo da mão de Faraó, rei do Egito, e haviam temido a outros deuses e andado nos estatutos das nações que Jeová expulsou de diante dos filhos de Israel e nos que os reis de Israel estabeleceram.",
+    "trail": "reis",
+    "section": "reis-queda-reis-01-queda-de-samaria",
+    "id": "reis-pro-reis-queda-reis-01-queda-de-samaria-05",
+    "template": "Assim sucedeu porque os filhos de Israel tinham ___ contra Jeová."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Reis 17:7–8",
+    "learningObjective": "Reconhecer que Samaria cai porque Israel pecou e temeu outros deuses.",
+    "evidence": [
+      "2 Reis 17:7",
+      "2 Reis 17:8"
+    ],
+    "type": "connect",
+    "question": "O que 2 Reis 17:7–8 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Reis 17:7–8 comunica que se liga a este contexto?",
+    "cue": "O que 2 Reis 17:7–8 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a queda de Samaria é julgamento por idolatria.",
+    "feedbackWrong": {
+      "a": "O texto não trata a queda como acaso.",
+      "c": "Não há aqui recompensa por fidelidade."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Queda como acaso histórico"
+      },
+      {
+        "id": "b",
+        "text": "Julgamento por pecar e temer outros deuses"
+      },
+      {
+        "id": "c",
+        "text": "Recompensa por fidelidade a Jeová"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Assim sucedeu porque os filhos de Israel tinham pecado contra Jeová, seu Deus, que os tirou da terra do Egito, de debaixo da mão de Faraó, rei do Egito, e haviam temido a outros deuses e andado nos estatutos das nações que Jeová expulsou de diante dos filhos de Israel e nos que os reis de Israel estabeleceram.",
+    "trail": "reis",
+    "section": "reis-queda-reis-01-queda-de-samaria",
+    "id": "reis-pro-reis-queda-reis-01-queda-de-samaria-06",
+    "passageA": {
+      "ref": "2 Reis 17:7–8",
+      "text": "Assim sucedeu porque os filhos de Israel tinham pecado contra Jeová, seu Deus, que os tirou da terra do Egito, de debaixo da mão de Faraó, rei do Egito, e haviam temido a outros deuses e andado nos estatutos das nações que Jeová expulsou de diante dos filhos de Israel e nos que os reis de Israel estabeleceram."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Samaria cai por pecar e temer outros deuses."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Reis 25:21",
+    "learningObjective": "Reconhecer que Judá foi levado cativo para fora da sua terra.",
+    "evidence": [
+      "2 Reis 25:21"
+    ],
+    "type": "true_false",
+    "question": "Judá foi levado cativo para fora da sua terra.",
+    "prompt": "Judá foi levado cativo para fora da sua terra.",
+    "cue": "Judá foi levado cativo para fora da sua terra.",
+    "feedbackCorrect": "Certo: o texto afirma o cativeiro de Judá.",
+    "feedbackWrong": {
+      "false": "2 Reis 25:21 registra exatamente isso."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "O rei da Babilônia os feriu e matou em Ribla, na terra de Hamate. Assim, Judá foi levado cativo para fora da sua terra.",
+    "trail": "reis",
+    "section": "reis-queda-reis-02-queda-de-jerusalem",
+    "id": "reis-sem-reis-queda-reis-02-queda-de-jerusalem-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Reis 25:21",
+    "learningObjective": "Reconhecer que Judá foi levado cativo para fora da sua terra.",
+    "evidence": [
+      "2 Reis 25:21"
+    ],
+    "type": "tap",
+    "question": "Em 2 Reis 25:21, toque a palavra que falta em \"Judá foi levado ___ para fora da sua terra\"?",
+    "prompt": "Em 2 Reis 25:21, toque a palavra que falta em \"Judá foi levado ___ para fora da sua terra\"?",
+    "cue": "Em 2 Reis 25:21, toque a palavra que falta em \"Judá foi levado ___ para fora da sua terra\"?",
+    "feedbackCorrect": "Exato: levado \"cativo\".",
+    "feedbackWrong": {
+      "b": "Ribla é o lugar da execução; aqui é cativo.",
+      "c": "Hamate situa a terra; a lacuna pede cativo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "cativo"
+      },
+      {
+        "id": "b",
+        "text": "Ribla"
+      },
+      {
+        "id": "c",
+        "text": "Hamate"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "O rei da Babilônia os feriu e matou em Ribla, na terra de Hamate. Assim, Judá foi levado cativo para fora da sua terra.",
+    "trail": "reis",
+    "section": "reis-queda-reis-02-queda-de-jerusalem",
+    "id": "reis-sem-reis-queda-reis-02-queda-de-jerusalem-02",
+    "template": "Judá foi levado ___ para fora da sua terra"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Reis 25:21",
+    "learningObjective": "Reconhecer que Judá foi levado cativo para fora da sua terra.",
+    "evidence": [
+      "2 Reis 25:21"
+    ],
+    "type": "choice",
+    "question": "O que 2 Reis 25:21 afirma sobre Judá?",
+    "prompt": "O que 2 Reis 25:21 afirma sobre Judá?",
+    "cue": "O que 2 Reis 25:21 afirma sobre Judá?",
+    "feedbackCorrect": "Certo: foi levado cativo para fora da sua terra.",
+    "feedbackWrong": {
+      "b": "O texto não diz que Judá permaneceu na terra.",
+      "c": "Não há vitória de Judá sobre a Babilônia.",
+      "d": "O cativeiro é para fora, não repatriação."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Foi levado cativo para fora da sua terra"
+      },
+      {
+        "id": "b",
+        "text": "Permaneceu livre em sua própria terra"
+      },
+      {
+        "id": "c",
+        "text": "Derrotou o rei da Babilônia em Ribla"
+      },
+      {
+        "id": "d",
+        "text": "Foi repatriado imediatamente a Jerusalém"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "O rei da Babilônia os feriu e matou em Ribla, na terra de Hamate. Assim, Judá foi levado cativo para fora da sua terra.",
+    "trail": "reis",
+    "section": "reis-queda-reis-02-queda-de-jerusalem",
+    "id": "reis-sem-reis-queda-reis-02-queda-de-jerusalem-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Reis 25:21",
+    "learningObjective": "Reconhecer que Judá foi levado cativo para fora da sua terra.",
+    "evidence": [
+      "2 Reis 25:21"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em 2 Reis 25:21?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 2 Reis 25:21?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 2 Reis 25:21?",
+    "feedbackCorrect": "Certo: execução em Ribla, depois o cativeiro de Judá.",
+    "feedbackWrong": {
+      "b": "A execução em Ribla precede o cativeiro.",
+      "c": "Releia a ordem do versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O rei da Babilônia os feriu e matou em Ribla"
+      },
+      {
+        "id": "b",
+        "text": "na terra de Hamate"
+      },
+      {
+        "id": "c",
+        "text": "Assim, Judá foi levado cativo para fora da sua terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "O rei da Babilônia os feriu e matou em Ribla, na terra de Hamate. Assim, Judá foi levado cativo para fora da sua terra.",
+    "trail": "reis",
+    "section": "reis-queda-reis-02-queda-de-jerusalem",
+    "id": "reis-sem-reis-queda-reis-02-queda-de-jerusalem-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Reis 25:21",
+    "learningObjective": "Reconhecer que Judá foi levado cativo para fora da sua terra.",
+    "evidence": [
+      "2 Reis 25:21"
+    ],
+    "type": "complete",
+    "question": "Complete: \"O rei da ___ os feriu e matou em Ribla.\"",
+    "prompt": "Complete: \"O rei da ___ os feriu e matou em Ribla.\"",
+    "cue": "Complete: \"O rei da ___ os feriu e matou em Ribla.\"",
+    "feedbackCorrect": "Certo: rei da \"Babilônia\".",
+    "feedbackWrong": {
+      "b": "Hamate é a terra; aqui o reino é Babilônia.",
+      "c": "Judá é o povo cativo; a lacuna pede Babilônia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Babilônia"
+      },
+      {
+        "id": "b",
+        "text": "Hamate"
+      },
+      {
+        "id": "c",
+        "text": "Judá"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "O rei da Babilônia os feriu e matou em Ribla, na terra de Hamate. Assim, Judá foi levado cativo para fora da sua terra.",
+    "trail": "reis",
+    "section": "reis-queda-reis-02-queda-de-jerusalem",
+    "id": "reis-sem-reis-queda-reis-02-queda-de-jerusalem-05",
+    "template": "O rei da ___ os feriu e matou em Ribla."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Reis 25:21",
+    "learningObjective": "Reconhecer que Judá foi levado cativo para fora da sua terra.",
+    "evidence": [
+      "2 Reis 25:21"
+    ],
+    "type": "connect",
+    "question": "O que 2 Reis 25:21 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Reis 25:21 comunica que se liga a este contexto?",
+    "cue": "O que 2 Reis 25:21 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Judá cativo fora da terra.",
+    "feedbackWrong": {
+      "a": "O texto não celebra permanência na terra.",
+      "c": "Não há aqui libertação imediata."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Permanência livre na terra"
+      },
+      {
+        "id": "b",
+        "text": "Judá cativo fora da terra"
+      },
+      {
+        "id": "c",
+        "text": "Libertação imediata de Judá"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "O rei da Babilônia os feriu e matou em Ribla, na terra de Hamate. Assim, Judá foi levado cativo para fora da sua terra.",
+    "trail": "reis",
+    "section": "reis-queda-reis-02-queda-de-jerusalem",
+    "id": "reis-sem-reis-queda-reis-02-queda-de-jerusalem-06",
+    "passageA": {
+      "ref": "2 Reis 25:21",
+      "text": "O rei da Babilônia os feriu e matou em Ribla, na terra de Hamate. Assim, Judá foi levado cativo para fora da sua terra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Judá cativo fora da terra."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Reis 25:21",
+    "learningObjective": "Reconhecer que Judá foi levado cativo para fora da sua terra.",
+    "evidence": [
+      "2 Reis 25:21"
+    ],
+    "type": "true_false",
+    "question": "O rei da Babilônia fere e mata em Ribla; em seguida Judá é levado cativo.",
+    "prompt": "O rei da Babilônia fere e mata em Ribla; em seguida Judá é levado cativo.",
+    "cue": "O rei da Babilônia fere e mata em Ribla; em seguida Judá é levado cativo.",
+    "feedbackCorrect": "Certo: o texto encadeia a execução e o cativeiro.",
+    "feedbackWrong": {
+      "false": "2 Reis 25:21 une esses dois movimentos."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "O rei da Babilônia os feriu e matou em Ribla, na terra de Hamate. Assim, Judá foi levado cativo para fora da sua terra.",
+    "trail": "reis",
+    "section": "reis-queda-reis-02-queda-de-jerusalem",
+    "id": "reis-cam-reis-queda-reis-02-queda-de-jerusalem-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Reis 25:21",
+    "learningObjective": "Reconhecer que Judá foi levado cativo para fora da sua terra.",
+    "evidence": [
+      "2 Reis 25:21"
+    ],
+    "type": "tap",
+    "question": "Em 2 Reis 25:21, toque a palavra que falta em \"os feriu e matou em ___\"?",
+    "prompt": "Em 2 Reis 25:21, toque a palavra que falta em \"os feriu e matou em ___\"?",
+    "cue": "Em 2 Reis 25:21, toque a palavra que falta em \"os feriu e matou em ___\"?",
+    "feedbackCorrect": "Exato: em \"Ribla\".",
+    "feedbackWrong": {
+      "b": "Hamate é a terra; o lugar da morte é Ribla.",
+      "c": "Judá é o povo; a lacuna pede Ribla."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ribla"
+      },
+      {
+        "id": "b",
+        "text": "Hamate"
+      },
+      {
+        "id": "c",
+        "text": "Judá"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "O rei da Babilônia os feriu e matou em Ribla, na terra de Hamate. Assim, Judá foi levado cativo para fora da sua terra.",
+    "trail": "reis",
+    "section": "reis-queda-reis-02-queda-de-jerusalem",
+    "id": "reis-cam-reis-queda-reis-02-queda-de-jerusalem-02",
+    "template": "os feriu e matou em ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Reis 25:21",
+    "learningObjective": "Reconhecer que Judá foi levado cativo para fora da sua terra.",
+    "evidence": [
+      "2 Reis 25:21"
+    ],
+    "type": "choice",
+    "question": "Como 2 Reis 25:21 liga a ação do rei da Babilônia ao destino de Judá?",
+    "prompt": "Como 2 Reis 25:21 liga a ação do rei da Babilônia ao destino de Judá?",
+    "cue": "Como 2 Reis 25:21 liga a ação do rei da Babilônia ao destino de Judá?",
+    "feedbackCorrect": "Certo: após ferir e matar em Ribla, Judá é levado cativo.",
+    "feedbackWrong": {
+      "a": "O texto não registra libertação.",
+      "c": "Judá não permanece na terra.",
+      "d": "Não há aliança de paz aqui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O rei da Babilônia liberta Judá e o envia para casa"
+      },
+      {
+        "id": "b",
+        "text": "Após ferir e matar em Ribla, Judá é levado cativo"
+      },
+      {
+        "id": "c",
+        "text": "Judá permanece seguro dentro da sua terra"
+      },
+      {
+        "id": "d",
+        "text": "O rei da Babilônia firma aliança de paz com Judá"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "O rei da Babilônia os feriu e matou em Ribla, na terra de Hamate. Assim, Judá foi levado cativo para fora da sua terra.",
+    "trail": "reis",
+    "section": "reis-queda-reis-02-queda-de-jerusalem",
+    "id": "reis-cam-reis-queda-reis-02-queda-de-jerusalem-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Reis 25:21",
+    "learningObjective": "Reconhecer que Judá foi levado cativo para fora da sua terra.",
+    "evidence": [
+      "2 Reis 25:21"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de 2 Reis 25:21?",
+    "prompt": "Como se encadeiam os eventos de 2 Reis 25:21?",
+    "cue": "Como se encadeiam os eventos de 2 Reis 25:21?",
+    "feedbackCorrect": "Certo: execução em Ribla, localização em Hamate, cativeiro de Judá.",
+    "feedbackWrong": {
+      "b": "O cativeiro fecha o encadeamento.",
+      "c": "Releia a sequência do versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O rei da Babilônia os feriu e matou em Ribla"
+      },
+      {
+        "id": "b",
+        "text": "na terra de Hamate"
+      },
+      {
+        "id": "c",
+        "text": "Assim, Judá foi levado cativo para fora da sua terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "O rei da Babilônia os feriu e matou em Ribla, na terra de Hamate. Assim, Judá foi levado cativo para fora da sua terra.",
+    "trail": "reis",
+    "section": "reis-queda-reis-02-queda-de-jerusalem",
+    "id": "reis-cam-reis-queda-reis-02-queda-de-jerusalem-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Reis 25:21",
+    "learningObjective": "Reconhecer que Judá foi levado cativo para fora da sua terra.",
+    "evidence": [
+      "2 Reis 25:21"
+    ],
+    "type": "complete",
+    "question": "Complete: \"na terra de ___.\"",
+    "prompt": "Complete: \"na terra de ___.\"",
+    "cue": "Complete: \"na terra de ___.\"",
+    "feedbackCorrect": "Certo: terra de \"Hamate\".",
+    "feedbackWrong": {
+      "b": "Ribla é a cidade; aqui a terra é Hamate.",
+      "c": "Babilônia é o reino; a lacuna pede Hamate."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Hamate"
+      },
+      {
+        "id": "b",
+        "text": "Ribla"
+      },
+      {
+        "id": "c",
+        "text": "Babilônia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "O rei da Babilônia os feriu e matou em Ribla, na terra de Hamate. Assim, Judá foi levado cativo para fora da sua terra.",
+    "trail": "reis",
+    "section": "reis-queda-reis-02-queda-de-jerusalem",
+    "id": "reis-cam-reis-queda-reis-02-queda-de-jerusalem-05",
+    "template": "na terra de ___."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Reis 25:21",
+    "learningObjective": "Reconhecer que Judá foi levado cativo para fora da sua terra.",
+    "evidence": [
+      "2 Reis 25:21"
+    ],
+    "type": "connect",
+    "question": "O que 2 Reis 25:21 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Reis 25:21 comunica que se liga a este contexto?",
+    "cue": "O que 2 Reis 25:21 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o desfecho é o cativeiro de Judá fora da terra.",
+    "feedbackWrong": {
+      "a": "O texto não celebra restauração imediata.",
+      "c": "Não há aqui vitória militar de Judá."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Restauração imediata na terra"
+      },
+      {
+        "id": "b",
+        "text": "Cativeiro de Judá fora da terra"
+      },
+      {
+        "id": "c",
+        "text": "Vitória militar de Judá"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "O rei da Babilônia os feriu e matou em Ribla, na terra de Hamate. Assim, Judá foi levado cativo para fora da sua terra.",
+    "trail": "reis",
+    "section": "reis-queda-reis-02-queda-de-jerusalem",
+    "id": "reis-cam-reis-queda-reis-02-queda-de-jerusalem-06",
+    "passageA": {
+      "ref": "2 Reis 25:21",
+      "text": "O rei da Babilônia os feriu e matou em Ribla, na terra de Hamate. Assim, Judá foi levado cativo para fora da sua terra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Judá cativo fora da terra."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Reis 25:21",
+    "learningObjective": "Reconhecer que Judá foi levado cativo para fora da sua terra.",
+    "evidence": [
+      "2 Reis 25:21"
+    ],
+    "type": "true_false",
+    "question": "O cativeiro de Judá para fora da terra marca o desfecho da queda de Jerusalém.",
+    "prompt": "O cativeiro de Judá para fora da terra marca o desfecho da queda de Jerusalém.",
+    "cue": "O cativeiro de Judá para fora da terra marca o desfecho da queda de Jerusalém.",
+    "feedbackCorrect": "Certo: o versículo fecha com Judá levado cativo.",
+    "feedbackWrong": {
+      "false": "Assim, Judá foi levado cativo para fora da sua terra."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "O rei da Babilônia os feriu e matou em Ribla, na terra de Hamate. Assim, Judá foi levado cativo para fora da sua terra.",
+    "trail": "reis",
+    "section": "reis-queda-reis-02-queda-de-jerusalem",
+    "id": "reis-pro-reis-queda-reis-02-queda-de-jerusalem-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Reis 25:21",
+    "learningObjective": "Reconhecer que Judá foi levado cativo para fora da sua terra.",
+    "evidence": [
+      "2 Reis 25:21"
+    ],
+    "type": "tap",
+    "question": "Em 2 Reis 25:21, toque a palavra que falta em \"para fora da sua ___\"?",
+    "prompt": "Em 2 Reis 25:21, toque a palavra que falta em \"para fora da sua ___\"?",
+    "cue": "Em 2 Reis 25:21, toque a palavra que falta em \"para fora da sua ___\"?",
+    "feedbackCorrect": "Exato: fora da sua \"terra\".",
+    "feedbackWrong": {
+      "b": "Cativo descreve o estado; aqui é terra.",
+      "c": "Ribla é o lugar da morte; a lacuna pede terra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "terra"
+      },
+      {
+        "id": "b",
+        "text": "cativo"
+      },
+      {
+        "id": "c",
+        "text": "Ribla"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "O rei da Babilônia os feriu e matou em Ribla, na terra de Hamate. Assim, Judá foi levado cativo para fora da sua terra.",
+    "trail": "reis",
+    "section": "reis-queda-reis-02-queda-de-jerusalem",
+    "id": "reis-pro-reis-queda-reis-02-queda-de-jerusalem-02",
+    "template": "para fora da sua ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Reis 25:21",
+    "learningObjective": "Reconhecer que Judá foi levado cativo para fora da sua terra.",
+    "evidence": [
+      "2 Reis 25:21"
+    ],
+    "type": "choice",
+    "question": "O que o desfecho de 2 Reis 25:21 revela sobre Judá?",
+    "prompt": "O que o desfecho de 2 Reis 25:21 revela sobre Judá?",
+    "cue": "O que o desfecho de 2 Reis 25:21 revela sobre Judá?",
+    "feedbackCorrect": "Certo: perde a terra — é levado cativo para fora.",
+    "feedbackWrong": {
+      "a": "O texto não afirma preservação da terra.",
+      "c": "Não há repatriação neste versículo.",
+      "d": "Ribla é lugar de morte, não de restauração."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Judá preserva a posse da terra apesar da Babilônia"
+      },
+      {
+        "id": "b",
+        "text": "Judá perde a terra: é levado cativo para fora"
+      },
+      {
+        "id": "c",
+        "text": "Judá é repatriado após a execução em Ribla"
+      },
+      {
+        "id": "d",
+        "text": "Judá transforma Ribla em nova capital segura"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "O rei da Babilônia os feriu e matou em Ribla, na terra de Hamate. Assim, Judá foi levado cativo para fora da sua terra.",
+    "trail": "reis",
+    "section": "reis-queda-reis-02-queda-de-jerusalem",
+    "id": "reis-pro-reis-queda-reis-02-queda-de-jerusalem-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Reis 25:21",
+    "learningObjective": "Reconhecer que Judá foi levado cativo para fora da sua terra.",
+    "evidence": [
+      "2 Reis 25:21"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de 2 Reis 25:21?",
+    "prompt": "Qual sequência revela o sentido de 2 Reis 25:21?",
+    "cue": "Qual sequência revela o sentido de 2 Reis 25:21?",
+    "feedbackCorrect": "Certo: violência em Ribla, localização, cativeiro fora da terra.",
+    "feedbackWrong": {
+      "b": "O cativeiro fecha o sentido da queda.",
+      "c": "Releia a lógica do desfecho."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O rei da Babilônia os feriu e matou em Ribla"
+      },
+      {
+        "id": "b",
+        "text": "na terra de Hamate"
+      },
+      {
+        "id": "c",
+        "text": "Assim, Judá foi levado cativo para fora da sua terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "O rei da Babilônia os feriu e matou em Ribla, na terra de Hamate. Assim, Judá foi levado cativo para fora da sua terra.",
+    "trail": "reis",
+    "section": "reis-queda-reis-02-queda-de-jerusalem",
+    "id": "reis-pro-reis-queda-reis-02-queda-de-jerusalem-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Reis 25:21",
+    "learningObjective": "Reconhecer que Judá foi levado cativo para fora da sua terra.",
+    "evidence": [
+      "2 Reis 25:21"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Assim, ___ foi levado cativo para fora da sua terra.\"",
+    "prompt": "Complete: \"Assim, ___ foi levado cativo para fora da sua terra.\"",
+    "cue": "Complete: \"Assim, ___ foi levado cativo para fora da sua terra.\"",
+    "feedbackCorrect": "Certo: \"Judá\" foi levado cativo.",
+    "feedbackWrong": {
+      "b": "Babilônia é o poder opressor; aqui é Judá.",
+      "c": "Ribla é o lugar; a lacuna pede Judá."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Judá"
+      },
+      {
+        "id": "b",
+        "text": "Babilônia"
+      },
+      {
+        "id": "c",
+        "text": "Ribla"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "O rei da Babilônia os feriu e matou em Ribla, na terra de Hamate. Assim, Judá foi levado cativo para fora da sua terra.",
+    "trail": "reis",
+    "section": "reis-queda-reis-02-queda-de-jerusalem",
+    "id": "reis-pro-reis-queda-reis-02-queda-de-jerusalem-05",
+    "template": "Assim, ___ foi levado cativo para fora da sua terra."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Reis 25:21",
+    "learningObjective": "Reconhecer que Judá foi levado cativo para fora da sua terra.",
+    "evidence": [
+      "2 Reis 25:21"
+    ],
+    "type": "connect",
+    "question": "O que 2 Reis 25:21 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Reis 25:21 comunica que se liga a este contexto?",
+    "cue": "O que 2 Reis 25:21 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o fim é o cativeiro — Judá fora da terra.",
+    "feedbackWrong": {
+      "a": "O texto não celebra permanência na terra.",
+      "c": "Não há aqui triunfo de Judá sobre a Babilônia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Permanência definitiva na terra"
+      },
+      {
+        "id": "b",
+        "text": "Cativeiro: Judá fora da terra"
+      },
+      {
+        "id": "c",
+        "text": "Triunfo de Judá sobre a Babilônia"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "O rei da Babilônia os feriu e matou em Ribla, na terra de Hamate. Assim, Judá foi levado cativo para fora da sua terra.",
+    "trail": "reis",
+    "section": "reis-queda-reis-02-queda-de-jerusalem",
+    "id": "reis-pro-reis-queda-reis-02-queda-de-jerusalem-06",
+    "passageA": {
+      "ref": "2 Reis 25:21",
+      "text": "O rei da Babilônia os feriu e matou em Ribla, na terra de Hamate. Assim, Judá foi levado cativo para fora da sua terra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Judá cativo fora da terra."
+    }
+  }
+]

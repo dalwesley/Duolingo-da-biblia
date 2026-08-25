@@ -1,0 +1,2990 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 1:3–4",
+    "learningObjective": "Reconhecer que as bênçãos espirituais estão em Cristo, desde a eleição antes da fundação do mundo.",
+    "evidence": [
+      "Efésios 1:3",
+      "Efésios 1:4"
+    ],
+    "type": "true_false",
+    "question": "Deus nos abençoou com toda a bênção espiritual nas regiões celestes em Cristo.",
+    "prompt": "Deus nos abençoou com toda a bênção espiritual nas regiões celestes em Cristo.",
+    "cue": "Deus nos abençoou com toda a bênção espiritual nas regiões celestes em Cristo.",
+    "trail": "efesios",
+    "section": "ef-01-bencaos",
+    "feedbackCorrect": "Certo: o Pai nos abençoou em Cristo, nas regiões celestes.",
+    "feedbackWrong": {
+      "false": "Releia Efésios 1:3 — a bênção espiritual está em Cristo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que nos abençoou com toda a bênção espiritual nas regiões celestes em Cristo, assim como nos escolheu, nele, antes da fundação, do mundo para sermos santos e sem defeito perante ele;",
+    "id": "efesios-sem-ef-01-bencaos-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 1:3–4",
+    "learningObjective": "Reconhecer que as bênçãos espirituais estão em Cristo, desde a eleição antes da fundação do mundo.",
+    "evidence": [
+      "Efésios 1:3",
+      "Efésios 1:4"
+    ],
+    "type": "tap",
+    "question": "Em Efésios 1:3–4, toque a palavra que falta em \"nas regiões ___ em Cristo\"?",
+    "prompt": "Em Efésios 1:3–4, toque a palavra que falta em \"nas regiões ___ em Cristo\"?",
+    "cue": "Em Efésios 1:3–4, toque a palavra que falta em \"nas regiões ___ em Cristo\"?",
+    "trail": "efesios",
+    "section": "ef-01-bencaos",
+    "feedbackCorrect": "Exato: as bênçãos estão nas regiões celestes em Cristo.",
+    "feedbackWrong": {
+      "b": "\"santos\" aparece no fim, não nesta lacuna.",
+      "c": "\"mundo\" liga-se à fundação, não às regiões."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que nos abençoou com toda a bênção espiritual nas regiões celestes em Cristo, assim como nos escolheu, nele, antes da fundação, do mundo para sermos santos e sem defeito perante ele;",
+    "template": "nas regiões ___ em Cristo",
+    "options": [
+      {
+        "id": "a",
+        "text": "celestes"
+      },
+      {
+        "id": "b",
+        "text": "santos"
+      },
+      {
+        "id": "c",
+        "text": "mundo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-sem-ef-01-bencaos-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 1:3–4",
+    "learningObjective": "Reconhecer que as bênçãos espirituais estão em Cristo, desde a eleição antes da fundação do mundo.",
+    "evidence": [
+      "Efésios 1:3",
+      "Efésios 1:4"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelo texto em Efésios 1:3–4?",
+    "prompt": "Qual afirmação é feita diretamente pelo texto em Efésios 1:3–4?",
+    "cue": "Qual afirmação é feita diretamente pelo texto em Efésios 1:3–4?",
+    "trail": "efesios",
+    "section": "ef-01-bencaos",
+    "feedbackCorrect": "Certo: a eleição em Cristo é anterior à fundação do mundo.",
+    "feedbackWrong": {
+      "b": "O texto fala de regiões celestes, não terrestres.",
+      "c": "A escolha precede o ser santo; não o segue.",
+      "d": "Toda a bênção está em Cristo."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que nos abençoou com toda a bênção espiritual nas regiões celestes em Cristo, assim como nos escolheu, nele, antes da fundação, do mundo para sermos santos e sem defeito perante ele;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus nos escolheu em Cristo antes da fundação do mundo."
+      },
+      {
+        "id": "b",
+        "text": "As bênçãos espirituais estão nas regiões terrestres."
+      },
+      {
+        "id": "c",
+        "text": "Fomos escolhidos depois de nos tornarmos santos."
+      },
+      {
+        "id": "d",
+        "text": "A bênção de Deus exclui a pessoa de Cristo."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-sem-ef-01-bencaos-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 1:3–4",
+    "learningObjective": "Reconhecer que as bênçãos espirituais estão em Cristo, desde a eleição antes da fundação do mundo.",
+    "evidence": [
+      "Efésios 1:3",
+      "Efésios 1:4"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Efésios 1:3–4?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Efésios 1:3–4?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Efésios 1:3–4?",
+    "trail": "efesios",
+    "section": "ef-01-bencaos",
+    "feedbackCorrect": "Certo: bênção em Cristo, depois eleição nele.",
+    "feedbackWrong": {
+      "b": "A ordem do versículo começa pela bênção do Pai.",
+      "c": "Releia a sequência de Efésios 1:3–4."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que nos abençoou com toda a bênção espiritual nas regiões celestes em Cristo, assim como nos escolheu, nele, antes da fundação, do mundo para sermos santos e sem defeito perante ele;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo"
+      },
+      {
+        "id": "b",
+        "text": "que nos abençoou com toda a bênção espiritual nas regiões celestes em Cristo"
+      },
+      {
+        "id": "c",
+        "text": "assim como nos escolheu, nele, antes da fundação, do mundo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-sem-ef-01-bencaos-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 1:3–4",
+    "learningObjective": "Reconhecer que as bênçãos espirituais estão em Cristo, desde a eleição antes da fundação do mundo.",
+    "evidence": [
+      "Efésios 1:3",
+      "Efésios 1:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"para sermos ___ e sem defeito perante ele;\"",
+    "prompt": "Complete a frase: \"para sermos ___ e sem defeito perante ele;\"",
+    "cue": "Complete a frase: \"para sermos ___ e sem defeito perante ele;\"",
+    "trail": "efesios",
+    "section": "ef-01-bencaos",
+    "feedbackCorrect": "Certo: o destino da eleição é sermos santos perante ele.",
+    "feedbackWrong": {
+      "b": "\"celestes\" descreve as regiões, não este predicado.",
+      "c": "\"Bendito\" abre o hino, não esta lacuna."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que nos abençoou com toda a bênção espiritual nas regiões celestes em Cristo, assim como nos escolheu, nele, antes da fundação, do mundo para sermos santos e sem defeito perante ele;",
+    "template": "para sermos ___ e sem defeito perante ele;",
+    "options": [
+      {
+        "id": "a",
+        "text": "santos"
+      },
+      {
+        "id": "b",
+        "text": "celestes"
+      },
+      {
+        "id": "c",
+        "text": "Bendito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-sem-ef-01-bencaos-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 1:3–4",
+    "learningObjective": "Reconhecer que as bênçãos espirituais estão em Cristo, desde a eleição antes da fundação do mundo.",
+    "evidence": [
+      "Efésios 1:3",
+      "Efésios 1:4"
+    ],
+    "type": "connect",
+    "question": "O que Efésios 1:3–4 comunica que se liga a este contexto?",
+    "prompt": "O que Efésios 1:3–4 comunica que se liga a este contexto?",
+    "cue": "O que Efésios 1:3–4 comunica que se liga a este contexto?",
+    "trail": "efesios",
+    "section": "ef-01-bencaos",
+    "feedbackCorrect": "Certo: as bênçãos e a eleição estão em Cristo.",
+    "feedbackWrong": {
+      "b": "O texto não parte do nosso mérito.",
+      "c": "Há escolha em Cristo, não acaso."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que nos abençoou com toda a bênção espiritual nas regiões celestes em Cristo, assim como nos escolheu, nele, antes da fundação, do mundo para sermos santos e sem defeito perante ele;",
+    "passageA": {
+      "ref": "Efésios 1:3–4",
+      "text": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que nos abençoou com toda a bênção espiritual nas regiões celestes em Cristo, assim como nos escolheu, nele, antes da fundação, do mundo para sermos santos e sem defeito perante ele;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "As bênçãos estão em Cristo, desde antes da fundação do mundo — santos e sem defeito nele."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Bênçãos em Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Mérito nosso primeiro"
+      },
+      {
+        "id": "c",
+        "text": "Sorte sem eleição"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-sem-ef-01-bencaos-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 1:3–4",
+    "learningObjective": "Reconhecer que as bênçãos espirituais estão em Cristo, desde a eleição antes da fundação do mundo.",
+    "evidence": [
+      "Efésios 1:3",
+      "Efésios 1:4"
+    ],
+    "type": "true_false",
+    "question": "A escolha em Cristo visa que sejamos santos e sem defeito perante ele.",
+    "prompt": "A escolha em Cristo visa que sejamos santos e sem defeito perante ele.",
+    "cue": "A escolha em Cristo visa que sejamos santos e sem defeito perante ele.",
+    "trail": "efesios",
+    "section": "ef-01-bencaos",
+    "feedbackCorrect": "Certo: a eleição tem esse propósito perante Deus.",
+    "feedbackWrong": {
+      "false": "O texto liga a escolha a sermos santos e sem defeito."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que nos abençoou com toda a bênção espiritual nas regiões celestes em Cristo, assim como nos escolheu, nele, antes da fundação, do mundo para sermos santos e sem defeito perante ele;",
+    "id": "efesios-cam-ef-01-bencaos-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 1:3–4",
+    "learningObjective": "Reconhecer que as bênçãos espirituais estão em Cristo, desde a eleição antes da fundação do mundo.",
+    "evidence": [
+      "Efésios 1:3",
+      "Efésios 1:4"
+    ],
+    "type": "tap",
+    "question": "Em Efésios 1:3–4, toque a palavra que falta em \"assim como nos ___, nele, antes da fundação\"?",
+    "prompt": "Em Efésios 1:3–4, toque a palavra que falta em \"assim como nos ___, nele, antes da fundação\"?",
+    "cue": "Em Efésios 1:3–4, toque a palavra que falta em \"assim como nos ___, nele, antes da fundação\"?",
+    "trail": "efesios",
+    "section": "ef-01-bencaos",
+    "feedbackCorrect": "Exato: Deus nos escolheu nele, antes da fundação.",
+    "feedbackWrong": {
+      "a": "\"abençoou\" está no v. 3, não nesta lacuna.",
+      "c": "\"defeito\" descreve o alvo, não o verbo."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que nos abençoou com toda a bênção espiritual nas regiões celestes em Cristo, assim como nos escolheu, nele, antes da fundação, do mundo para sermos santos e sem defeito perante ele;",
+    "template": "assim como nos ___, nele, antes da fundação",
+    "options": [
+      {
+        "id": "a",
+        "text": "abençoou"
+      },
+      {
+        "id": "b",
+        "text": "escolheu"
+      },
+      {
+        "id": "c",
+        "text": "defeito"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "id": "efesios-cam-ef-01-bencaos-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 1:3–4",
+    "learningObjective": "Reconhecer que as bênçãos espirituais estão em Cristo, desde a eleição antes da fundação do mundo.",
+    "evidence": [
+      "Efésios 1:3",
+      "Efésios 1:4"
+    ],
+    "type": "choice",
+    "question": "Como se relacionam bênção e eleição em Efésios 1:3–4?",
+    "prompt": "Como se relacionam bênção e eleição em Efésios 1:3–4?",
+    "cue": "Como se relacionam bênção e eleição em Efésios 1:3–4?",
+    "trail": "efesios",
+    "section": "ef-01-bencaos",
+    "feedbackCorrect": "Certo: bênção e escolha coincidem em Cristo.",
+    "feedbackWrong": {
+      "b": "A escolha é anterior à fundação do mundo.",
+      "c": "O texto localiza a bênção em Cristo.",
+      "d": "Fomos escolhidos para sermos santos."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que nos abençoou com toda a bênção espiritual nas regiões celestes em Cristo, assim como nos escolheu, nele, antes da fundação, do mundo para sermos santos e sem defeito perante ele;",
+    "options": [
+      {
+        "id": "a",
+        "text": "A bênção está em Cristo porque nele fomos escolhidos."
+      },
+      {
+        "id": "b",
+        "text": "Primeiro nos santificamos, depois Deus nos escolhe."
+      },
+      {
+        "id": "c",
+        "text": "As bênçãos celestes independem da pessoa de Cristo."
+      },
+      {
+        "id": "d",
+        "text": "A eleição substitui qualquer chamado à santidade."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-cam-ef-01-bencaos-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 1:3–4",
+    "learningObjective": "Reconhecer que as bênçãos espirituais estão em Cristo, desde a eleição antes da fundação do mundo.",
+    "evidence": [
+      "Efésios 1:3",
+      "Efésios 1:4"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Efésios 1:3–4?",
+    "prompt": "Como se encadeiam os eventos de Efésios 1:3–4?",
+    "cue": "Como se encadeiam os eventos de Efésios 1:3–4?",
+    "trail": "efesios",
+    "section": "ef-01-bencaos",
+    "feedbackCorrect": "Certo: bênção, eleição, então o alvo da santidade.",
+    "feedbackWrong": {
+      "b": "O encadeamento segue bênção, escolha e propósito.",
+      "c": "Releia como o \"assim como\" liga os fatos."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que nos abençoou com toda a bênção espiritual nas regiões celestes em Cristo, assim como nos escolheu, nele, antes da fundação, do mundo para sermos santos e sem defeito perante ele;",
+    "options": [
+      {
+        "id": "a",
+        "text": "que nos abençoou com toda a bênção espiritual nas regiões celestes em Cristo"
+      },
+      {
+        "id": "b",
+        "text": "assim como nos escolheu, nele, antes da fundação, do mundo"
+      },
+      {
+        "id": "c",
+        "text": "para sermos santos e sem defeito perante ele"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-cam-ef-01-bencaos-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 1:3–4",
+    "learningObjective": "Reconhecer que as bênçãos espirituais estão em Cristo, desde a eleição antes da fundação do mundo.",
+    "evidence": [
+      "Efésios 1:3",
+      "Efésios 1:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"antes da ___, do mundo para sermos santos e sem defeito perante ele;\"",
+    "prompt": "Complete a frase: \"antes da ___, do mundo para sermos santos e sem defeito perante ele;\"",
+    "cue": "Complete a frase: \"antes da ___, do mundo para sermos santos e sem defeito perante ele;\"",
+    "trail": "efesios",
+    "section": "ef-01-bencaos",
+    "feedbackCorrect": "Certo: a escolha é anterior à fundação do mundo.",
+    "feedbackWrong": {
+      "a": "\"bênção\" está no v. 3, não neste ponto.",
+      "c": "\"regiões\" descreve o lugar celeste."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que nos abençoou com toda a bênção espiritual nas regiões celestes em Cristo, assim como nos escolheu, nele, antes da fundação, do mundo para sermos santos e sem defeito perante ele;",
+    "template": "antes da ___, do mundo para sermos santos e sem defeito perante ele;",
+    "options": [
+      {
+        "id": "a",
+        "text": "bênção"
+      },
+      {
+        "id": "b",
+        "text": "fundação"
+      },
+      {
+        "id": "c",
+        "text": "regiões"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "id": "efesios-cam-ef-01-bencaos-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 1:3–4",
+    "learningObjective": "Reconhecer que as bênçãos espirituais estão em Cristo, desde a eleição antes da fundação do mundo.",
+    "evidence": [
+      "Efésios 1:3",
+      "Efésios 1:4"
+    ],
+    "type": "connect",
+    "question": "O que Efésios 1:3–4 comunica que se liga a este contexto?",
+    "prompt": "O que Efésios 1:3–4 comunica que se liga a este contexto?",
+    "cue": "O que Efésios 1:3–4 comunica que se liga a este contexto?",
+    "trail": "efesios",
+    "section": "ef-01-bencaos",
+    "feedbackCorrect": "Certo: a eleição em Cristo antecede o mundo.",
+    "feedbackWrong": {
+      "b": "Santos é o alvo da escolha, não a causa.",
+      "c": "A bênção já está em Cristo."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que nos abençoou com toda a bênção espiritual nas regiões celestes em Cristo, assim como nos escolheu, nele, antes da fundação, do mundo para sermos santos e sem defeito perante ele;",
+    "passageA": {
+      "ref": "Efésios 1:3–4",
+      "text": "assim como nos escolheu, nele, antes da fundação, do mundo"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "As bênçãos estão em Cristo, desde antes da fundação do mundo — santos e sem defeito nele."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Eleitos nele desde sempre"
+      },
+      {
+        "id": "b",
+        "text": "Santos por esforço próprio"
+      },
+      {
+        "id": "c",
+        "text": "Bênção só após o mérito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-cam-ef-01-bencaos-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 1:3–4",
+    "learningObjective": "Reconhecer que as bênçãos espirituais estão em Cristo, desde a eleição antes da fundação do mundo.",
+    "evidence": [
+      "Efésios 1:3",
+      "Efésios 1:4"
+    ],
+    "type": "true_false",
+    "question": "Santidade e ausência de defeito perante Deus são o destino da eleição em Cristo, não um mérito prévio.",
+    "prompt": "Santidade e ausência de defeito perante Deus são o destino da eleição em Cristo, não um mérito prévio.",
+    "cue": "Santidade e ausência de defeito perante Deus são o destino da eleição em Cristo, não um mérito prévio.",
+    "trail": "efesios",
+    "section": "ef-01-bencaos",
+    "feedbackCorrect": "Certo: fomos escolhidos para sermos santos, nele.",
+    "feedbackWrong": {
+      "false": "O texto põe a santidade como propósito, não como causa."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que nos abençoou com toda a bênção espiritual nas regiões celestes em Cristo, assim como nos escolheu, nele, antes da fundação, do mundo para sermos santos e sem defeito perante ele;",
+    "id": "efesios-pro-ef-01-bencaos-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 1:3–4",
+    "learningObjective": "Reconhecer que as bênçãos espirituais estão em Cristo, desde a eleição antes da fundação do mundo.",
+    "evidence": [
+      "Efésios 1:3",
+      "Efésios 1:4"
+    ],
+    "type": "tap",
+    "question": "Em Efésios 1:3–4, toque a palavra que falta em \"santos e sem ___ perante ele\"?",
+    "prompt": "Em Efésios 1:3–4, toque a palavra que falta em \"santos e sem ___ perante ele\"?",
+    "cue": "Em Efésios 1:3–4, toque a palavra que falta em \"santos e sem ___ perante ele\"?",
+    "trail": "efesios",
+    "section": "ef-01-bencaos",
+    "feedbackCorrect": "Exato: o alvo é sermos santos e sem defeito nele.",
+    "feedbackWrong": {
+      "a": "\"Cristo\" localiza a bênção, não esta lacuna.",
+      "b": "\"Pai\" nomeia quem abençoa, não o predicado."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que nos abençoou com toda a bênção espiritual nas regiões celestes em Cristo, assim como nos escolheu, nele, antes da fundação, do mundo para sermos santos e sem defeito perante ele;",
+    "template": "santos e sem ___ perante ele",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Pai"
+      },
+      {
+        "id": "c",
+        "text": "defeito"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "id": "efesios-pro-ef-01-bencaos-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 1:3–4",
+    "learningObjective": "Reconhecer que as bênçãos espirituais estão em Cristo, desde a eleição antes da fundação do mundo.",
+    "evidence": [
+      "Efésios 1:3",
+      "Efésios 1:4"
+    ],
+    "type": "choice",
+    "question": "O que Efésios 1:3–4 ensina sobre o lugar das bênçãos e da santidade?",
+    "prompt": "O que Efésios 1:3–4 ensina sobre o lugar das bênçãos e da santidade?",
+    "cue": "O que Efésios 1:3–4 ensina sobre o lugar das bênçãos e da santidade?",
+    "trail": "efesios",
+    "section": "ef-01-bencaos",
+    "feedbackCorrect": "Certo: em Cristo, eleitos para sermos santos perante ele.",
+    "feedbackWrong": {
+      "b": "A escolha é anterior à fundação do mundo.",
+      "c": "O propósito explícito é sermos santos.",
+      "d": "A bênção celeste está em Cristo."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que nos abençoou com toda a bênção espiritual nas regiões celestes em Cristo, assim como nos escolheu, nele, antes da fundação, do mundo para sermos santos e sem defeito perante ele;",
+    "options": [
+      {
+        "id": "a",
+        "text": "As bênçãos e a eleição estão em Cristo, rumo à santidade."
+      },
+      {
+        "id": "b",
+        "text": "Deus abençoa quem já se mostrou sem defeito."
+      },
+      {
+        "id": "c",
+        "text": "A eleição anula o chamado a viver santo perante ele."
+      },
+      {
+        "id": "d",
+        "text": "As regiões celestes tornam desnecessária a vida em Cristo."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-pro-ef-01-bencaos-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 1:3–4",
+    "learningObjective": "Reconhecer que as bênçãos espirituais estão em Cristo, desde a eleição antes da fundação do mundo.",
+    "evidence": [
+      "Efésios 1:3",
+      "Efésios 1:4"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Efésios 1:3–4?",
+    "prompt": "Qual sequência revela o sentido de Efésios 1:3–4?",
+    "cue": "Qual sequência revela o sentido de Efésios 1:3–4?",
+    "trail": "efesios",
+    "section": "ef-01-bencaos",
+    "feedbackCorrect": "Certo: bênção em Cristo, eleição antiga, santidade perante ele.",
+    "feedbackWrong": {
+      "b": "O sentido flui da bênção à eleição e ao alvo.",
+      "c": "Releia o movimento teológico do trecho."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que nos abençoou com toda a bênção espiritual nas regiões celestes em Cristo, assim como nos escolheu, nele, antes da fundação, do mundo para sermos santos e sem defeito perante ele;",
+    "options": [
+      {
+        "id": "a",
+        "text": "toda a bênção espiritual nas regiões celestes em Cristo"
+      },
+      {
+        "id": "b",
+        "text": "nos escolheu, nele, antes da fundação, do mundo"
+      },
+      {
+        "id": "c",
+        "text": "para sermos santos e sem defeito perante ele"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-pro-ef-01-bencaos-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 1:3–4",
+    "learningObjective": "Reconhecer que as bênçãos espirituais estão em Cristo, desde a eleição antes da fundação do mundo.",
+    "evidence": [
+      "Efésios 1:3",
+      "Efésios 1:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"que nos abençoou com toda a bênção ___ nas regiões celestes em Cristo\"",
+    "prompt": "Complete a frase: \"que nos abençoou com toda a bênção ___ nas regiões celestes em Cristo\"",
+    "cue": "Complete a frase: \"que nos abençoou com toda a bênção ___ nas regiões celestes em Cristo\"",
+    "trail": "efesios",
+    "section": "ef-01-bencaos",
+    "feedbackCorrect": "Certo: a bênção em Cristo é espiritual e celeste.",
+    "feedbackWrong": {
+      "b": "\"escolheu\" vem depois, no \"assim como\".",
+      "c": "\"defeito\" pertence ao alvo da eleição."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que nos abençoou com toda a bênção espiritual nas regiões celestes em Cristo, assim como nos escolheu, nele, antes da fundação, do mundo para sermos santos e sem defeito perante ele;",
+    "template": "que nos abençoou com toda a bênção ___ nas regiões celestes em Cristo",
+    "options": [
+      {
+        "id": "a",
+        "text": "espiritual"
+      },
+      {
+        "id": "b",
+        "text": "escolheu"
+      },
+      {
+        "id": "c",
+        "text": "defeito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-pro-ef-01-bencaos-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 1:3–4",
+    "learningObjective": "Reconhecer que as bênçãos espirituais estão em Cristo, desde a eleição antes da fundação do mundo.",
+    "evidence": [
+      "Efésios 1:3",
+      "Efésios 1:4"
+    ],
+    "type": "connect",
+    "question": "O que Efésios 1:3–4 comunica que se liga a este contexto?",
+    "prompt": "O que Efésios 1:3–4 comunica que se liga a este contexto?",
+    "cue": "O que Efésios 1:3–4 comunica que se liga a este contexto?",
+    "trail": "efesios",
+    "section": "ef-01-bencaos",
+    "feedbackCorrect": "Certo: eleitos nele para sermos santos perante Deus.",
+    "feedbackWrong": {
+      "b": "O Pai nos abençoou e nos escolheu em Cristo.",
+      "c": "Santos e sem defeito é destino nele."
+    },
+    "passageText": "Bendito o Deus e Pai de nosso Senhor Jesus Cristo, que nos abençoou com toda a bênção espiritual nas regiões celestes em Cristo, assim como nos escolheu, nele, antes da fundação, do mundo para sermos santos e sem defeito perante ele;",
+    "passageA": {
+      "ref": "Efésios 1:3–4",
+      "text": "para sermos santos e sem defeito perante ele;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "As bênçãos estão em Cristo, desde antes da fundação do mundo — santos e sem defeito nele."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Santos nele desde sempre"
+      },
+      {
+        "id": "b",
+        "text": "Deus distante do mundo"
+      },
+      {
+        "id": "c",
+        "text": "Santidade sem Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-pro-ef-01-bencaos-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é pela graça, mediante a fé, como dom de Deus, não de obras.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "true_false",
+    "question": "Pela graça é que sois salvos, mediante a fé.",
+    "prompt": "Pela graça é que sois salvos, mediante a fé.",
+    "cue": "Pela graça é que sois salvos, mediante a fé.",
+    "trail": "efesios",
+    "section": "ef-02-graca",
+    "feedbackCorrect": "Certo: salvação pela graça, mediante a fé.",
+    "feedbackWrong": {
+      "false": "Releia Efésios 2:8 — graça e fé estão no texto."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "id": "efesios-sem-ef-02-graca-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é pela graça, mediante a fé, como dom de Deus, não de obras.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "tap",
+    "question": "Em Efésios 2:8–9, toque a palavra que falta em \"é o ___ de Deus\"?",
+    "prompt": "Em Efésios 2:8–9, toque a palavra que falta em \"é o ___ de Deus\"?",
+    "cue": "Em Efésios 2:8–9, toque a palavra que falta em \"é o ___ de Deus\"?",
+    "trail": "efesios",
+    "section": "ef-02-graca",
+    "feedbackCorrect": "Exato: a salvação é o dom de Deus.",
+    "feedbackWrong": {
+      "b": "\"obras\" é o que o texto exclui.",
+      "c": "\"ninguém\" liga-se ao gloriar-se."
+    },
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "template": "é o ___ de Deus",
+    "options": [
+      {
+        "id": "a",
+        "text": "dom"
+      },
+      {
+        "id": "b",
+        "text": "obras"
+      },
+      {
+        "id": "c",
+        "text": "ninguém"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-sem-ef-02-graca-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é pela graça, mediante a fé, como dom de Deus, não de obras.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelo texto em Efésios 2:8–9?",
+    "prompt": "Qual afirmação é feita diretamente pelo texto em Efésios 2:8–9?",
+    "cue": "Qual afirmação é feita diretamente pelo texto em Efésios 2:8–9?",
+    "trail": "efesios",
+    "section": "ef-02-graca",
+    "feedbackCorrect": "Certo: isso não vem de vós; é o dom de Deus.",
+    "feedbackWrong": {
+      "b": "O texto diz: não de obras.",
+      "c": "A salvação é pela graça, mediante a fé.",
+      "d": "Ninguém se glorie — esse é o propósito."
+    },
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A salvação não vem de vós; é o dom de Deus."
+      },
+      {
+        "id": "b",
+        "text": "Sois salvos principalmente pelas vossas obras."
+      },
+      {
+        "id": "c",
+        "text": "A fé torna desnecessária a graça de Deus."
+      },
+      {
+        "id": "d",
+        "text": "O texto incentiva que cada um se glorie."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-sem-ef-02-graca-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é pela graça, mediante a fé, como dom de Deus, não de obras.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Efésios 2:8–9?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Efésios 2:8–9?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Efésios 2:8–9?",
+    "trail": "efesios",
+    "section": "ef-02-graca",
+    "feedbackCorrect": "Certo: graça e fé, depois o dom, depois a exclusão das obras.",
+    "feedbackWrong": {
+      "b": "A ordem começa pela graça e pela fé.",
+      "c": "Releia a sequência de Efésios 2:8–9."
+    },
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pois pela graça é que sois salvos, mediante a fé"
+      },
+      {
+        "id": "b",
+        "text": "e isso não vem de vós; é o dom de Deus"
+      },
+      {
+        "id": "c",
+        "text": "não de obras, para que ninguém se glorie"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-sem-ef-02-graca-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é pela graça, mediante a fé, como dom de Deus, não de obras.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"não de ___, para que ninguém se glorie.\"",
+    "prompt": "Complete a frase: \"não de ___, para que ninguém se glorie.\"",
+    "cue": "Complete a frase: \"não de ___, para que ninguém se glorie.\"",
+    "trail": "efesios",
+    "section": "ef-02-graca",
+    "feedbackCorrect": "Certo: não de obras, para que ninguém se glorie.",
+    "feedbackWrong": {
+      "a": "A graça é o meio da salvação, não o que se exclui.",
+      "b": "A fé é o meio, não o que o texto nega aqui."
+    },
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "template": "não de ___, para que ninguém se glorie.",
+    "options": [
+      {
+        "id": "a",
+        "text": "graça"
+      },
+      {
+        "id": "b",
+        "text": "fé"
+      },
+      {
+        "id": "c",
+        "text": "obras"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "id": "efesios-sem-ef-02-graca-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é pela graça, mediante a fé, como dom de Deus, não de obras.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "connect",
+    "question": "O que Efésios 2:8–9 comunica que se liga a este contexto?",
+    "prompt": "O que Efésios 2:8–9 comunica que se liga a este contexto?",
+    "cue": "O que Efésios 2:8–9 comunica que se liga a este contexto?",
+    "trail": "efesios",
+    "section": "ef-02-graca",
+    "feedbackCorrect": "Certo: salvos pela graça, não de obras.",
+    "feedbackWrong": {
+      "b": "Isso não vem de vós; é dom de Deus.",
+      "c": "O texto fecha a porta à jactância."
+    },
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "passageA": {
+      "ref": "Efésios 2:8–9",
+      "text": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Salvos pela graça, mediante a fé: dom de Deus, não obras, para que ninguém se glorie."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Graça, não obras"
+      },
+      {
+        "id": "b",
+        "text": "Mérito que justifica"
+      },
+      {
+        "id": "c",
+        "text": "Glória humana merecida"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-sem-ef-02-graca-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é pela graça, mediante a fé, como dom de Deus, não de obras.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "true_false",
+    "question": "A salvação vem de vós mesmos, como fruto das obras.",
+    "prompt": "A salvação vem de vós mesmos, como fruto das obras.",
+    "cue": "A salvação vem de vós mesmos, como fruto das obras.",
+    "trail": "efesios",
+    "section": "ef-02-graca",
+    "feedbackCorrect": "Certo: isso não vem de vós; é o dom de Deus.",
+    "feedbackWrong": {
+      "true": "O texto nega origem em vós e em obras."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "id": "efesios-cam-ef-02-graca-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é pela graça, mediante a fé, como dom de Deus, não de obras.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "tap",
+    "question": "Em Efésios 2:8–9, toque a palavra que falta em \"sois salvos, mediante a ___\"?",
+    "prompt": "Em Efésios 2:8–9, toque a palavra que falta em \"sois salvos, mediante a ___\"?",
+    "cue": "Em Efésios 2:8–9, toque a palavra que falta em \"sois salvos, mediante a ___\"?",
+    "trail": "efesios",
+    "section": "ef-02-graca",
+    "feedbackCorrect": "Exato: salvos pela graça, mediante a fé.",
+    "feedbackWrong": {
+      "a": "A graça é o \"pela\", não o \"mediante\".",
+      "c": "O texto diz: não de obras."
+    },
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "template": "sois salvos, mediante a ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "graça"
+      },
+      {
+        "id": "b",
+        "text": "fé"
+      },
+      {
+        "id": "c",
+        "text": "obras"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "id": "efesios-cam-ef-02-graca-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é pela graça, mediante a fé, como dom de Deus, não de obras.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "choice",
+    "question": "Por que Efésios 2:8–9 exclui as obras da origem da salvação?",
+    "prompt": "Por que Efésios 2:8–9 exclui as obras da origem da salvação?",
+    "cue": "Por que Efésios 2:8–9 exclui as obras da origem da salvação?",
+    "trail": "efesios",
+    "section": "ef-02-graca",
+    "feedbackCorrect": "Certo: o dom impede a jactância humana.",
+    "feedbackWrong": {
+      "b": "A fé é o meio; a graça permanece a origem.",
+      "c": "O texto diz: não de obras.",
+      "d": "Isso não vem de vós; é o dom de Deus."
+    },
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque a salvação é dom, para que ninguém se glorie."
+      },
+      {
+        "id": "b",
+        "text": "Porque a fé torna a graça de Deus desnecessária."
+      },
+      {
+        "id": "c",
+        "text": "Porque as obras substituem o dom de Deus."
+      },
+      {
+        "id": "d",
+        "text": "Porque a salvação vem de vós, não de Deus."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-cam-ef-02-graca-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é pela graça, mediante a fé, como dom de Deus, não de obras.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Efésios 2:8–9?",
+    "prompt": "Como se encadeiam os eventos de Efésios 2:8–9?",
+    "cue": "Como se encadeiam os eventos de Efésios 2:8–9?",
+    "trail": "efesios",
+    "section": "ef-02-graca",
+    "feedbackCorrect": "Certo: fé, origem no dom, exclusão das obras.",
+    "feedbackWrong": {
+      "b": "O encadeamento vai da fé ao dom e às obras.",
+      "c": "Releia como o \"isso\" aponta para o dom."
+    },
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sois salvos, mediante a fé"
+      },
+      {
+        "id": "b",
+        "text": "e isso não vem de vós; é o dom de Deus"
+      },
+      {
+        "id": "c",
+        "text": "não de obras, para que ninguém se glorie"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-cam-ef-02-graca-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é pela graça, mediante a fé, como dom de Deus, não de obras.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Pois pela ___ é que sois salvos, mediante a fé\"",
+    "prompt": "Complete a frase: \"Pois pela ___ é que sois salvos, mediante a fé\"",
+    "cue": "Complete a frase: \"Pois pela ___ é que sois salvos, mediante a fé\"",
+    "trail": "efesios",
+    "section": "ef-02-graca",
+    "feedbackCorrect": "Certo: pela graça é que sois salvos.",
+    "feedbackWrong": {
+      "b": "O texto opõe a graça às obras.",
+      "c": "\"ninguém\" pertence ao se gloriar."
+    },
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "template": "Pois pela ___ é que sois salvos, mediante a fé",
+    "options": [
+      {
+        "id": "a",
+        "text": "graça"
+      },
+      {
+        "id": "b",
+        "text": "obras"
+      },
+      {
+        "id": "c",
+        "text": "ninguém"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-cam-ef-02-graca-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é pela graça, mediante a fé, como dom de Deus, não de obras.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "connect",
+    "question": "O que Efésios 2:8–9 comunica que se liga a este contexto?",
+    "prompt": "O que Efésios 2:8–9 comunica que se liga a este contexto?",
+    "cue": "O que Efésios 2:8–9 comunica que se liga a este contexto?",
+    "trail": "efesios",
+    "section": "ef-02-graca",
+    "feedbackCorrect": "Certo: o dom fecha a boca de quem se gloria.",
+    "feedbackWrong": {
+      "b": "Não de obras: a graça não se compra.",
+      "c": "A fé é o meio, não a origem em vós."
+    },
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "passageA": {
+      "ref": "Efésios 2:8–9",
+      "text": "é o dom de Deus; não de obras, para que ninguém se glorie."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Salvos pela graça, mediante a fé: dom de Deus, não obras, para que ninguém se glorie."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Dom para não gloriar"
+      },
+      {
+        "id": "b",
+        "text": "Obras que compram graça"
+      },
+      {
+        "id": "c",
+        "text": "Fé como mérito humano"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-cam-ef-02-graca-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é pela graça, mediante a fé, como dom de Deus, não de obras.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "true_false",
+    "question": "Graça e fé excluem a jactância porque a salvação é dom de Deus, não origem em vós.",
+    "prompt": "Graça e fé excluem a jactância porque a salvação é dom de Deus, não origem em vós.",
+    "cue": "Graça e fé excluem a jactância porque a salvação é dom de Deus, não origem em vós.",
+    "trail": "efesios",
+    "section": "ef-02-graca",
+    "feedbackCorrect": "Certo: o dom de Deus impede que alguém se glorie.",
+    "feedbackWrong": {
+      "false": "O propósito explícito é que ninguém se glorie."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "id": "efesios-pro-ef-02-graca-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é pela graça, mediante a fé, como dom de Deus, não de obras.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "tap",
+    "question": "Em Efésios 2:8–9, toque a palavra que falta em \"para que ninguém se ___\"?",
+    "prompt": "Em Efésios 2:8–9, toque a palavra que falta em \"para que ninguém se ___\"?",
+    "cue": "Em Efésios 2:8–9, toque a palavra que falta em \"para que ninguém se ___\"?",
+    "trail": "efesios",
+    "section": "ef-02-graca",
+    "feedbackCorrect": "Exato: o alvo é que ninguém se glorie.",
+    "feedbackWrong": {
+      "a": "\"salvos\" descreve o estado, não este verbo.",
+      "c": "\"dom\" nomeia a origem, não a lacuna."
+    },
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "template": "para que ninguém se ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "salvos"
+      },
+      {
+        "id": "b",
+        "text": "glorie"
+      },
+      {
+        "id": "c",
+        "text": "dom"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "id": "efesios-pro-ef-02-graca-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é pela graça, mediante a fé, como dom de Deus, não de obras.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "choice",
+    "question": "O que Efésios 2:8–9 implica sobre glória humana e salvação?",
+    "prompt": "O que Efésios 2:8–9 implica sobre glória humana e salvação?",
+    "cue": "O que Efésios 2:8–9 implica sobre glória humana e salvação?",
+    "trail": "efesios",
+    "section": "ef-02-graca",
+    "feedbackCorrect": "Certo: o dom de Deus corta a jactância.",
+    "feedbackWrong": {
+      "b": "Isso não vem de vós; a fé não é mérito que gloria.",
+      "c": "Não de obras: a graça não coroa o mérito.",
+      "d": "O propósito é o contrário: ninguém se glorie."
+    },
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ninguém se gloria, porque a salvação é dom, não obras."
+      },
+      {
+        "id": "b",
+        "text": "A fé é uma obra que nos dá direito de nos gloriar."
+      },
+      {
+        "id": "c",
+        "text": "A graça confirma quem já se salvou pelas obras."
+      },
+      {
+        "id": "d",
+        "text": "Deus salva para que o crente se glorie de si."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-pro-ef-02-graca-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é pela graça, mediante a fé, como dom de Deus, não de obras.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Efésios 2:8–9?",
+    "prompt": "Qual sequência revela o sentido de Efésios 2:8–9?",
+    "cue": "Qual sequência revela o sentido de Efésios 2:8–9?",
+    "trail": "efesios",
+    "section": "ef-02-graca",
+    "feedbackCorrect": "Certo: graça e fé, origem no dom, silêncio da jactância.",
+    "feedbackWrong": {
+      "b": "O sentido vai da graça ao dom e ao não gloriar.",
+      "c": "Releia o propósito final do trecho."
+    },
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pela graça é que sois salvos, mediante a fé"
+      },
+      {
+        "id": "b",
+        "text": "isso não vem de vós; é o dom de Deus"
+      },
+      {
+        "id": "c",
+        "text": "não de obras, para que ninguém se glorie"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-pro-ef-02-graca-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é pela graça, mediante a fé, como dom de Deus, não de obras.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"e isso não vem de ___; é o dom de Deus\"",
+    "prompt": "Complete a frase: \"e isso não vem de ___; é o dom de Deus\"",
+    "cue": "Complete a frase: \"e isso não vem de ___; é o dom de Deus\"",
+    "trail": "efesios",
+    "section": "ef-02-graca",
+    "feedbackCorrect": "Certo: a salvação não vem de vós.",
+    "feedbackWrong": {
+      "b": "Deus é a origem do dom, não o \"de\" negado.",
+      "c": "A graça é o meio da salvação, não esta lacuna."
+    },
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "template": "e isso não vem de ___; é o dom de Deus",
+    "options": [
+      {
+        "id": "a",
+        "text": "vós"
+      },
+      {
+        "id": "b",
+        "text": "Deus"
+      },
+      {
+        "id": "c",
+        "text": "graça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-pro-ef-02-graca-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é pela graça, mediante a fé, como dom de Deus, não de obras.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "connect",
+    "question": "O que Efésios 2:8–9 comunica que se liga a este contexto?",
+    "prompt": "O que Efésios 2:8–9 comunica que se liga a este contexto?",
+    "cue": "O que Efésios 2:8–9 comunica que se liga a este contexto?",
+    "trail": "efesios",
+    "section": "ef-02-graca",
+    "feedbackCorrect": "Certo: a salvação é graça, recebida pela fé.",
+    "feedbackWrong": {
+      "b": "Não de obras, para que ninguém se glorie.",
+      "c": "A fé recebe o que é dom de Deus."
+    },
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "passageA": {
+      "ref": "Efésios 2:8–9",
+      "text": "Pois pela graça é que sois salvos, mediante a fé"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Salvos pela graça, mediante a fé: dom de Deus, não obras, para que ninguém se glorie."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Salvos só pela graça"
+      },
+      {
+        "id": "b",
+        "text": "Glória das próprias obras"
+      },
+      {
+        "id": "c",
+        "text": "Fé sem o dom de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-pro-ef-02-graca-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 6:11",
+    "learningObjective": "Perceber que a vida na igreja inclui combate: revestir-se da armadura de Deus contra as ciladas.",
+    "evidence": [
+      "Efésios 6:11"
+    ],
+    "type": "true_false",
+    "question": "Revesti-vos de toda a armadura de Deus para ficar firmes contra as ciladas do Diabo.",
+    "prompt": "Revesti-vos de toda a armadura de Deus para ficar firmes contra as ciladas do Diabo.",
+    "cue": "Revesti-vos de toda a armadura de Deus para ficar firmes contra as ciladas do Diabo.",
+    "trail": "efesios",
+    "section": "ef-03-igreja",
+    "feedbackCorrect": "Certo: o texto manda revestir-se de toda a armadura.",
+    "feedbackWrong": {
+      "false": "Releia Efésios 6:11 — a ordem é explícita."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Revesti-vos de toda a armadura de Deus, para poderdes ficar firmes contra as ciladas do Diabo;",
+    "id": "efesios-sem-ef-03-igreja-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 6:11",
+    "learningObjective": "Perceber que a vida na igreja inclui combate: revestir-se da armadura de Deus contra as ciladas.",
+    "evidence": [
+      "Efésios 6:11"
+    ],
+    "type": "tap",
+    "question": "Em Efésios 6:11, toque a palavra que falta em \"toda a ___ de Deus\"?",
+    "prompt": "Em Efésios 6:11, toque a palavra que falta em \"toda a ___ de Deus\"?",
+    "cue": "Em Efésios 6:11, toque a palavra que falta em \"toda a ___ de Deus\"?",
+    "trail": "efesios",
+    "section": "ef-03-igreja",
+    "feedbackCorrect": "Exato: revesti-vos de toda a armadura de Deus.",
+    "feedbackWrong": {
+      "b": "\"ciladas\" são o ataque, não o que se veste.",
+      "c": "\"firmes\" descreve o resultado, não a peça."
+    },
+    "passageText": "Revesti-vos de toda a armadura de Deus, para poderdes ficar firmes contra as ciladas do Diabo;",
+    "template": "toda a ___ de Deus",
+    "options": [
+      {
+        "id": "a",
+        "text": "armadura"
+      },
+      {
+        "id": "b",
+        "text": "ciladas"
+      },
+      {
+        "id": "c",
+        "text": "firmes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-sem-ef-03-igreja-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 6:11",
+    "learningObjective": "Perceber que a vida na igreja inclui combate: revestir-se da armadura de Deus contra as ciladas.",
+    "evidence": [
+      "Efésios 6:11"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelo texto em Efésios 6:11?",
+    "prompt": "Qual afirmação é feita diretamente pelo texto em Efésios 6:11?",
+    "cue": "Qual afirmação é feita diretamente pelo texto em Efésios 6:11?",
+    "trail": "efesios",
+    "section": "ef-03-igreja",
+    "feedbackCorrect": "Certo: firmeza contra as ciladas, com a armadura de Deus.",
+    "feedbackWrong": {
+      "b": "O texto pede toda a armadura.",
+      "c": "O alvo é ficar firmes contra as ciladas.",
+      "d": "É a armadura de Deus."
+    },
+    "passageText": "Revesti-vos de toda a armadura de Deus, para poderdes ficar firmes contra as ciladas do Diabo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "A armadura serve para ficar firmes contra as ciladas do Diabo."
+      },
+      {
+        "id": "b",
+        "text": "Basta uma peça da armadura para vencer o Diabo."
+      },
+      {
+        "id": "c",
+        "text": "As ciladas do Diabo não exigem firmeza alguma."
+      },
+      {
+        "id": "d",
+        "text": "A armadura mencionada não é de Deus."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-sem-ef-03-igreja-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 6:11",
+    "learningObjective": "Perceber que a vida na igreja inclui combate: revestir-se da armadura de Deus contra as ciladas.",
+    "evidence": [
+      "Efésios 6:11"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Efésios 6:11?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Efésios 6:11?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Efésios 6:11?",
+    "trail": "efesios",
+    "section": "ef-03-igreja",
+    "feedbackCorrect": "Certo: revestir-se, ficar firmes, contra as ciladas.",
+    "feedbackWrong": {
+      "b": "A ordem começa pelo revestir-se.",
+      "c": "Releia a sequência de Efésios 6:11."
+    },
+    "passageText": "Revesti-vos de toda a armadura de Deus, para poderdes ficar firmes contra as ciladas do Diabo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Revesti-vos de toda a armadura de Deus"
+      },
+      {
+        "id": "b",
+        "text": "para poderdes ficar firmes"
+      },
+      {
+        "id": "c",
+        "text": "contra as ciladas do Diabo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-sem-ef-03-igreja-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 6:11",
+    "learningObjective": "Perceber que a vida na igreja inclui combate: revestir-se da armadura de Deus contra as ciladas.",
+    "evidence": [
+      "Efésios 6:11"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"ficar firmes contra as ___ do Diabo;\"",
+    "prompt": "Complete a frase: \"ficar firmes contra as ___ do Diabo;\"",
+    "cue": "Complete a frase: \"ficar firmes contra as ___ do Diabo;\"",
+    "trail": "efesios",
+    "section": "ef-03-igreja",
+    "feedbackCorrect": "Certo: o combate é contra as ciladas do Diabo.",
+    "feedbackWrong": {
+      "a": "A armadura é o que se veste, não o alvo.",
+      "c": "Deus dá a armadura; o ataque é do Diabo."
+    },
+    "passageText": "Revesti-vos de toda a armadura de Deus, para poderdes ficar firmes contra as ciladas do Diabo;",
+    "template": "ficar firmes contra as ___ do Diabo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "armadura"
+      },
+      {
+        "id": "b",
+        "text": "ciladas"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "id": "efesios-sem-ef-03-igreja-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 6:11",
+    "learningObjective": "Perceber que a vida na igreja inclui combate: revestir-se da armadura de Deus contra as ciladas.",
+    "evidence": [
+      "Efésios 6:11"
+    ],
+    "type": "connect",
+    "question": "O que Efésios 6:11 comunica que se liga a este contexto?",
+    "prompt": "O que Efésios 6:11 comunica que se liga a este contexto?",
+    "cue": "O que Efésios 6:11 comunica que se liga a este contexto?",
+    "trail": "efesios",
+    "section": "ef-03-igreja",
+    "feedbackCorrect": "Certo: a igreja se reveste contra as ciladas.",
+    "feedbackWrong": {
+      "b": "Há ciladas do Diabo no horizonte.",
+      "c": "A firmeza vem de revestir-se da armadura."
+    },
+    "passageText": "Revesti-vos de toda a armadura de Deus, para poderdes ficar firmes contra as ciladas do Diabo;",
+    "passageA": {
+      "ref": "Efésios 6:11",
+      "text": "Revesti-vos de toda a armadura de Deus, para poderdes ficar firmes contra as ciladas do Diabo;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A nova vida na igreja é combate: revestir-se da armadura de Deus contra as ciladas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Armadura contra ciladas"
+      },
+      {
+        "id": "b",
+        "text": "Paz sem combate algum"
+      },
+      {
+        "id": "c",
+        "text": "Firmeza sem revestir-se"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-sem-ef-03-igreja-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 6:11",
+    "learningObjective": "Perceber que a vida na igreja inclui combate: revestir-se da armadura de Deus contra as ciladas.",
+    "evidence": [
+      "Efésios 6:11"
+    ],
+    "type": "true_false",
+    "question": "Basta uma parte da armadura para ficar firmes contra as ciladas do Diabo.",
+    "prompt": "Basta uma parte da armadura para ficar firmes contra as ciladas do Diabo.",
+    "cue": "Basta uma parte da armadura para ficar firmes contra as ciladas do Diabo.",
+    "trail": "efesios",
+    "section": "ef-03-igreja",
+    "feedbackCorrect": "Certo: o texto pede toda a armadura de Deus.",
+    "feedbackWrong": {
+      "true": "Efésios 6:11 fala de toda a armadura, não de uma parte."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Revesti-vos de toda a armadura de Deus, para poderdes ficar firmes contra as ciladas do Diabo;",
+    "id": "efesios-cam-ef-03-igreja-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 6:11",
+    "learningObjective": "Perceber que a vida na igreja inclui combate: revestir-se da armadura de Deus contra as ciladas.",
+    "evidence": [
+      "Efésios 6:11"
+    ],
+    "type": "tap",
+    "question": "Em Efésios 6:11, toque a palavra que falta em \"para poderdes ficar ___ contra as ciladas\"?",
+    "prompt": "Em Efésios 6:11, toque a palavra que falta em \"para poderdes ficar ___ contra as ciladas\"?",
+    "cue": "Em Efésios 6:11, toque a palavra que falta em \"para poderdes ficar ___ contra as ciladas\"?",
+    "trail": "efesios",
+    "section": "ef-03-igreja",
+    "feedbackCorrect": "Exato: o alvo do revestir-se é ficar firmes.",
+    "feedbackWrong": {
+      "a": "\"Revesti\" é o imperativo inicial.",
+      "c": "\"Diabo\" nomeia o adversário, não o predicado."
+    },
+    "passageText": "Revesti-vos de toda a armadura de Deus, para poderdes ficar firmes contra as ciladas do Diabo;",
+    "template": "para poderdes ficar ___ contra as ciladas",
+    "options": [
+      {
+        "id": "a",
+        "text": "Revesti"
+      },
+      {
+        "id": "b",
+        "text": "firmes"
+      },
+      {
+        "id": "c",
+        "text": "Diabo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "id": "efesios-cam-ef-03-igreja-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 6:11",
+    "learningObjective": "Perceber que a vida na igreja inclui combate: revestir-se da armadura de Deus contra as ciladas.",
+    "evidence": [
+      "Efésios 6:11"
+    ],
+    "type": "choice",
+    "question": "Qual a relação entre revestir-se e as ciladas em Efésios 6:11?",
+    "prompt": "Qual a relação entre revestir-se e as ciladas em Efésios 6:11?",
+    "cue": "Qual a relação entre revestir-se e as ciladas em Efésios 6:11?",
+    "trail": "efesios",
+    "section": "ef-03-igreja",
+    "feedbackCorrect": "Certo: revestir-se visa a firmeza contra as ciladas.",
+    "feedbackWrong": {
+      "b": "O texto assume ciladas e pede armadura.",
+      "c": "O imperativo é revestir-se de toda a armadura.",
+      "d": "A firmeza é contra as ciladas, pela armadura."
+    },
+    "passageText": "Revesti-vos de toda a armadura de Deus, para poderdes ficar firmes contra as ciladas do Diabo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "A armadura de Deus capacita a ficar firmes contra as ciladas."
+      },
+      {
+        "id": "b",
+        "text": "As ciladas cessam se a igreja ignorar o Diabo."
+      },
+      {
+        "id": "c",
+        "text": "Revestir-se é opcional quando já se está na igreja."
+      },
+      {
+        "id": "d",
+        "text": "A firmeza vem das ciladas, não da armadura de Deus."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-cam-ef-03-igreja-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 6:11",
+    "learningObjective": "Perceber que a vida na igreja inclui combate: revestir-se da armadura de Deus contra as ciladas.",
+    "evidence": [
+      "Efésios 6:11"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Efésios 6:11?",
+    "prompt": "Como se encadeiam os eventos de Efésios 6:11?",
+    "cue": "Como se encadeiam os eventos de Efésios 6:11?",
+    "trail": "efesios",
+    "section": "ef-03-igreja",
+    "feedbackCorrect": "Certo: armadura de Deus, firmeza, ciladas do Diabo.",
+    "feedbackWrong": {
+      "b": "O encadeamento parte do revestir-se.",
+      "c": "Releia o \"para poderdes\" do versículo."
+    },
+    "passageText": "Revesti-vos de toda a armadura de Deus, para poderdes ficar firmes contra as ciladas do Diabo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Revesti-vos de toda a armadura de Deus"
+      },
+      {
+        "id": "b",
+        "text": "para poderdes ficar firmes contra as ciladas"
+      },
+      {
+        "id": "c",
+        "text": "do Diabo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-cam-ef-03-igreja-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 6:11",
+    "learningObjective": "Perceber que a vida na igreja inclui combate: revestir-se da armadura de Deus contra as ciladas.",
+    "evidence": [
+      "Efésios 6:11"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Revesti-vos de ___ a armadura de Deus\"",
+    "prompt": "Complete a frase: \"Revesti-vos de ___ a armadura de Deus\"",
+    "cue": "Complete a frase: \"Revesti-vos de ___ a armadura de Deus\"",
+    "trail": "efesios",
+    "section": "ef-03-igreja",
+    "feedbackCorrect": "Certo: é toda a armadura, não uma fração.",
+    "feedbackWrong": {
+      "b": "\"firmes\" é o resultado, não o adjetivo.",
+      "c": "\"ciladas\" são o ataque do Diabo."
+    },
+    "passageText": "Revesti-vos de toda a armadura de Deus, para poderdes ficar firmes contra as ciladas do Diabo;",
+    "template": "Revesti-vos de ___ a armadura de Deus",
+    "options": [
+      {
+        "id": "a",
+        "text": "toda"
+      },
+      {
+        "id": "b",
+        "text": "firmes"
+      },
+      {
+        "id": "c",
+        "text": "ciladas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-cam-ef-03-igreja-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 6:11",
+    "learningObjective": "Perceber que a vida na igreja inclui combate: revestir-se da armadura de Deus contra as ciladas.",
+    "evidence": [
+      "Efésios 6:11"
+    ],
+    "type": "connect",
+    "question": "O que Efésios 6:11 comunica que se liga a este contexto?",
+    "prompt": "O que Efésios 6:11 comunica que se liga a este contexto?",
+    "cue": "O que Efésios 6:11 comunica que se liga a este contexto?",
+    "trail": "efesios",
+    "section": "ef-03-igreja",
+    "feedbackCorrect": "Certo: a nova vida inclui firmeza no combate.",
+    "feedbackWrong": {
+      "b": "Há ciladas reais do Diabo.",
+      "c": "A armadura é de Deus."
+    },
+    "passageText": "Revesti-vos de toda a armadura de Deus, para poderdes ficar firmes contra as ciladas do Diabo;",
+    "passageA": {
+      "ref": "Efésios 6:11",
+      "text": "para poderdes ficar firmes contra as ciladas do Diabo;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A nova vida na igreja é combate: revestir-se da armadura de Deus contra as ciladas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Firmeza no combate"
+      },
+      {
+        "id": "b",
+        "text": "Ciladas inofensivas"
+      },
+      {
+        "id": "c",
+        "text": "Armadura humana basta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-cam-ef-03-igreja-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 6:11",
+    "learningObjective": "Perceber que a vida na igreja inclui combate: revestir-se da armadura de Deus contra as ciladas.",
+    "evidence": [
+      "Efésios 6:11"
+    ],
+    "type": "true_false",
+    "question": "A vida cristã inclui combate espiritual: a firmeza vem de revestir-se da armadura de Deus.",
+    "prompt": "A vida cristã inclui combate espiritual: a firmeza vem de revestir-se da armadura de Deus.",
+    "cue": "A vida cristã inclui combate espiritual: a firmeza vem de revestir-se da armadura de Deus.",
+    "trail": "efesios",
+    "section": "ef-03-igreja",
+    "feedbackCorrect": "Certo: sem a armadura de Deus não se fica firme.",
+    "feedbackWrong": {
+      "false": "O versículo une revestir-se, firmeza e ciladas."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Revesti-vos de toda a armadura de Deus, para poderdes ficar firmes contra as ciladas do Diabo;",
+    "id": "efesios-pro-ef-03-igreja-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 6:11",
+    "learningObjective": "Perceber que a vida na igreja inclui combate: revestir-se da armadura de Deus contra as ciladas.",
+    "evidence": [
+      "Efésios 6:11"
+    ],
+    "type": "tap",
+    "question": "Em Efésios 6:11, toque a palavra que falta em \"ciladas do ___\"?",
+    "prompt": "Em Efésios 6:11, toque a palavra que falta em \"ciladas do ___\"?",
+    "cue": "Em Efésios 6:11, toque a palavra que falta em \"ciladas do ___\"?",
+    "trail": "efesios",
+    "section": "ef-03-igreja",
+    "feedbackCorrect": "Exato: as ciladas são do Diabo.",
+    "feedbackWrong": {
+      "a": "Deus dá a armadura; não arma as ciladas.",
+      "c": "A armadura é o que se veste."
+    },
+    "passageText": "Revesti-vos de toda a armadura de Deus, para poderdes ficar firmes contra as ciladas do Diabo;",
+    "template": "ciladas do ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus"
+      },
+      {
+        "id": "b",
+        "text": "Diabo"
+      },
+      {
+        "id": "c",
+        "text": "armadura"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "id": "efesios-pro-ef-03-igreja-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 6:11",
+    "learningObjective": "Perceber que a vida na igreja inclui combate: revestir-se da armadura de Deus contra as ciladas.",
+    "evidence": [
+      "Efésios 6:11"
+    ],
+    "type": "choice",
+    "question": "O que Efésios 6:11 ensina sobre a igreja em combate?",
+    "prompt": "O que Efésios 6:11 ensina sobre a igreja em combate?",
+    "cue": "O que Efésios 6:11 ensina sobre a igreja em combate?",
+    "trail": "efesios",
+    "section": "ef-03-igreja",
+    "feedbackCorrect": "Certo: combate real, com a armadura de Deus.",
+    "feedbackWrong": {
+      "b": "O texto pressupõe ciladas do Diabo.",
+      "c": "Sem a armadura não se fica firme.",
+      "d": "Há ciladas e ordem de revestir-se."
+    },
+    "passageText": "Revesti-vos de toda a armadura de Deus, para poderdes ficar firmes contra as ciladas do Diabo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "A igreja resiste às ciladas revestida da armadura de Deus."
+      },
+      {
+        "id": "b",
+        "text": "O Diabo não usa ciladas contra quem está na igreja."
+      },
+      {
+        "id": "c",
+        "text": "A firmeza cristã prescinde de qualquer armadura de Deus."
+      },
+      {
+        "id": "d",
+        "text": "Revestir-se é só metáfora sem oposição espiritual."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-pro-ef-03-igreja-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 6:11",
+    "learningObjective": "Perceber que a vida na igreja inclui combate: revestir-se da armadura de Deus contra as ciladas.",
+    "evidence": [
+      "Efésios 6:11"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Efésios 6:11?",
+    "prompt": "Qual sequência revela o sentido de Efésios 6:11?",
+    "cue": "Qual sequência revela o sentido de Efésios 6:11?",
+    "trail": "efesios",
+    "section": "ef-03-igreja",
+    "feedbackCorrect": "Certo: o recurso de Deus, a firmeza, o adversário.",
+    "feedbackWrong": {
+      "b": "O sentido une recurso, firmeza e oposição.",
+      "c": "Releia o propósito do revestir-se."
+    },
+    "passageText": "Revesti-vos de toda a armadura de Deus, para poderdes ficar firmes contra as ciladas do Diabo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "toda a armadura de Deus"
+      },
+      {
+        "id": "b",
+        "text": "ficar firmes"
+      },
+      {
+        "id": "c",
+        "text": "contra as ciladas do Diabo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-pro-ef-03-igreja-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 6:11",
+    "learningObjective": "Perceber que a vida na igreja inclui combate: revestir-se da armadura de Deus contra as ciladas.",
+    "evidence": [
+      "Efésios 6:11"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"___-vos de toda a armadura de Deus\"",
+    "prompt": "Complete a frase: \"___-vos de toda a armadura de Deus\"",
+    "cue": "Complete a frase: \"___-vos de toda a armadura de Deus\"",
+    "trail": "efesios",
+    "section": "ef-03-igreja",
+    "feedbackCorrect": "Certo: o chamado é revestir-se da armadura de Deus.",
+    "feedbackWrong": {
+      "b": "\"poderdes\" introduz o propósito.",
+      "c": "O Diabo é o adversário, não o verbo."
+    },
+    "passageText": "Revesti-vos de toda a armadura de Deus, para poderdes ficar firmes contra as ciladas do Diabo;",
+    "template": "___-vos de toda a armadura de Deus",
+    "options": [
+      {
+        "id": "a",
+        "text": "Revesti"
+      },
+      {
+        "id": "b",
+        "text": "poderdes"
+      },
+      {
+        "id": "c",
+        "text": "Diabo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-pro-ef-03-igreja-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 6:11",
+    "learningObjective": "Perceber que a vida na igreja inclui combate: revestir-se da armadura de Deus contra as ciladas.",
+    "evidence": [
+      "Efésios 6:11"
+    ],
+    "type": "connect",
+    "question": "O que Efésios 6:11 comunica que se liga a este contexto?",
+    "prompt": "O que Efésios 6:11 comunica que se liga a este contexto?",
+    "cue": "O que Efésios 6:11 comunica que se liga a este contexto?",
+    "trail": "efesios",
+    "section": "ef-03-igreja",
+    "feedbackCorrect": "Certo: a nova vida na igreja é combate.",
+    "feedbackWrong": {
+      "b": "Sem a armadura de Deus não se fica firme.",
+      "c": "As ciladas são do Diabo."
+    },
+    "passageText": "Revesti-vos de toda a armadura de Deus, para poderdes ficar firmes contra as ciladas do Diabo;",
+    "passageA": {
+      "ref": "Efésios 6:11",
+      "text": "Revesti-vos de toda a armadura de Deus"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A nova vida na igreja é combate: revestir-se da armadura de Deus contra as ciladas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Igreja em combate"
+      },
+      {
+        "id": "b",
+        "text": "Vitória sem armadura"
+      },
+      {
+        "id": "c",
+        "text": "Ciladas só humanas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-pro-ef-03-igreja-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 4:4–6",
+    "learningObjective": "Ver a unidade da igreja em um só corpo, um Espírito, um Senhor e um Pai sobre todos.",
+    "evidence": [
+      "Efésios 4:4",
+      "Efésios 4:5",
+      "Efésios 4:6"
+    ],
+    "type": "true_false",
+    "question": "Há um só corpo e um só Espírito.",
+    "prompt": "Há um só corpo e um só Espírito.",
+    "cue": "Há um só corpo e um só Espírito.",
+    "trail": "efesios",
+    "section": "ef-04-desafio",
+    "feedbackCorrect": "Certo: um só corpo há e um só Espírito.",
+    "feedbackWrong": {
+      "false": "Releia Efésios 4:4 — a unidade começa aí."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "um só corpo há e um só Espírito, como também fostes chamados em uma só esperança da vossa vocação; um só Senhor, uma só fé, um só batismo; um só Deus e Pai de todos, que é sobre todos, e por todos, e em todos.",
+    "id": "efesios-sem-ef-04-desafio-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 4:4–6",
+    "learningObjective": "Ver a unidade da igreja em um só corpo, um Espírito, um Senhor e um Pai sobre todos.",
+    "evidence": [
+      "Efésios 4:4",
+      "Efésios 4:5",
+      "Efésios 4:6"
+    ],
+    "type": "tap",
+    "question": "Em Efésios 4:4–6, toque a palavra que falta em \"um só ___ há e um só Espírito\"?",
+    "prompt": "Em Efésios 4:4–6, toque a palavra que falta em \"um só ___ há e um só Espírito\"?",
+    "cue": "Em Efésios 4:4–6, toque a palavra que falta em \"um só ___ há e um só Espírito\"?",
+    "trail": "efesios",
+    "section": "ef-04-desafio",
+    "feedbackCorrect": "Exato: um só corpo há e um só Espírito.",
+    "feedbackWrong": {
+      "b": "\"batismo\" aparece depois, com Senhor e fé.",
+      "c": "\"vocação\" liga-se à esperança."
+    },
+    "passageText": "um só corpo há e um só Espírito, como também fostes chamados em uma só esperança da vossa vocação; um só Senhor, uma só fé, um só batismo; um só Deus e Pai de todos, que é sobre todos, e por todos, e em todos.",
+    "template": "um só ___ há e um só Espírito",
+    "options": [
+      {
+        "id": "a",
+        "text": "corpo"
+      },
+      {
+        "id": "b",
+        "text": "batismo"
+      },
+      {
+        "id": "c",
+        "text": "vocação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-sem-ef-04-desafio-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 4:4–6",
+    "learningObjective": "Ver a unidade da igreja em um só corpo, um Espírito, um Senhor e um Pai sobre todos.",
+    "evidence": [
+      "Efésios 4:4",
+      "Efésios 4:5",
+      "Efésios 4:6"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelo texto em Efésios 4:4–6?",
+    "prompt": "Qual afirmação é feita diretamente pelo texto em Efésios 4:4–6?",
+    "cue": "Qual afirmação é feita diretamente pelo texto em Efésios 4:4–6?",
+    "trail": "efesios",
+    "section": "ef-04-desafio",
+    "feedbackCorrect": "Certo: um só Senhor, uma só fé, um só batismo.",
+    "feedbackWrong": {
+      "b": "O texto insiste em um só Senhor e uma só fé.",
+      "c": "O Pai é sobre todos, por todos e em todos.",
+      "d": "Há um só Espírito no v. 4."
+    },
+    "passageText": "um só corpo há e um só Espírito, como também fostes chamados em uma só esperança da vossa vocação; um só Senhor, uma só fé, um só batismo; um só Deus e Pai de todos, que é sobre todos, e por todos, e em todos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Há um só Senhor, uma só fé e um só batismo."
+      },
+      {
+        "id": "b",
+        "text": "Há muitos senhores e várias fés na igreja."
+      },
+      {
+        "id": "c",
+        "text": "O Pai não está sobre todos, nem em todos."
+      },
+      {
+        "id": "d",
+        "text": "O texto omite qualquer menção ao Espírito."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-sem-ef-04-desafio-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 4:4–6",
+    "learningObjective": "Ver a unidade da igreja em um só corpo, um Espírito, um Senhor e um Pai sobre todos.",
+    "evidence": [
+      "Efésios 4:4",
+      "Efésios 4:5",
+      "Efésios 4:6"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Efésios 4:4–6?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Efésios 4:4–6?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Efésios 4:4–6?",
+    "trail": "efesios",
+    "section": "ef-04-desafio",
+    "feedbackCorrect": "Certo: corpo e Espírito, depois Senhor, fé e batismo, então o Pai.",
+    "feedbackWrong": {
+      "b": "A ordem começa pelo corpo e pelo Espírito.",
+      "c": "Releia a sequência de Efésios 4:4–6."
+    },
+    "passageText": "um só corpo há e um só Espírito, como também fostes chamados em uma só esperança da vossa vocação; um só Senhor, uma só fé, um só batismo; um só Deus e Pai de todos, que é sobre todos, e por todos, e em todos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "um só corpo há e um só Espírito"
+      },
+      {
+        "id": "b",
+        "text": "um só Senhor, uma só fé, um só batismo"
+      },
+      {
+        "id": "c",
+        "text": "um só Deus e Pai de todos"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-sem-ef-04-desafio-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 4:4–6",
+    "learningObjective": "Ver a unidade da igreja em um só corpo, um Espírito, um Senhor e um Pai sobre todos.",
+    "evidence": [
+      "Efésios 4:4",
+      "Efésios 4:5",
+      "Efésios 4:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"um só Senhor, uma só ___, um só batismo\"",
+    "prompt": "Complete a frase: \"um só Senhor, uma só ___, um só batismo\"",
+    "cue": "Complete a frase: \"um só Senhor, uma só ___, um só batismo\"",
+    "trail": "efesios",
+    "section": "ef-04-desafio",
+    "feedbackCorrect": "Certo: uma só fé, entre o Senhor e o batismo.",
+    "feedbackWrong": {
+      "b": "\"corpo\" abre o v. 4, não esta tríade.",
+      "c": "\"todos\" descreve o alcance do Pai."
+    },
+    "passageText": "um só corpo há e um só Espírito, como também fostes chamados em uma só esperança da vossa vocação; um só Senhor, uma só fé, um só batismo; um só Deus e Pai de todos, que é sobre todos, e por todos, e em todos.",
+    "template": "um só Senhor, uma só ___, um só batismo",
+    "options": [
+      {
+        "id": "a",
+        "text": "fé"
+      },
+      {
+        "id": "b",
+        "text": "corpo"
+      },
+      {
+        "id": "c",
+        "text": "todos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-sem-ef-04-desafio-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 4:4–6",
+    "learningObjective": "Ver a unidade da igreja em um só corpo, um Espírito, um Senhor e um Pai sobre todos.",
+    "evidence": [
+      "Efésios 4:4",
+      "Efésios 4:5",
+      "Efésios 4:6"
+    ],
+    "type": "connect",
+    "question": "O que Efésios 4:4–6 comunica que se liga a este contexto?",
+    "prompt": "O que Efésios 4:4–6 comunica que se liga a este contexto?",
+    "cue": "O que Efésios 4:4–6 comunica que se liga a este contexto?",
+    "trail": "efesios",
+    "section": "ef-04-desafio",
+    "feedbackCorrect": "Certo: a unidade se nomeia em um só Senhor.",
+    "feedbackWrong": {
+      "b": "Há um só corpo e uma só fé.",
+      "c": "O Pai é sobre todos e em todos."
+    },
+    "passageText": "um só corpo há e um só Espírito, como também fostes chamados em uma só esperança da vossa vocação; um só Senhor, uma só fé, um só batismo; um só Deus e Pai de todos, que é sobre todos, e por todos, e em todos.",
+    "passageA": {
+      "ref": "Efésios 4:4–6",
+      "text": "um só corpo há e um só Espírito, como também fostes chamados em uma só esperança da vossa vocação; um só Senhor, uma só fé, um só batismo; um só Deus e Pai de todos, que é sobre todos, e por todos, e em todos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Unidos em Cristo: um corpo, um Espírito, um Senhor, uma fé — o Pai sobre todos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Um só Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Muitos corpos da fé"
+      },
+      {
+        "id": "c",
+        "text": "Pai alheio à igreja"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-sem-ef-04-desafio-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 4:4–6",
+    "learningObjective": "Ver a unidade da igreja em um só corpo, um Espírito, um Senhor e um Pai sobre todos.",
+    "evidence": [
+      "Efésios 4:4",
+      "Efésios 4:5",
+      "Efésios 4:6"
+    ],
+    "type": "true_false",
+    "question": "Fostes chamados em uma só esperança da vossa vocação.",
+    "prompt": "Fostes chamados em uma só esperança da vossa vocação.",
+    "cue": "Fostes chamados em uma só esperança da vossa vocação.",
+    "trail": "efesios",
+    "section": "ef-04-desafio",
+    "feedbackCorrect": "Certo: a vocação compartilha uma só esperança.",
+    "feedbackWrong": {
+      "false": "Efésios 4:4 liga chamado, esperança e vocação."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "um só corpo há e um só Espírito, como também fostes chamados em uma só esperança da vossa vocação; um só Senhor, uma só fé, um só batismo; um só Deus e Pai de todos, que é sobre todos, e por todos, e em todos.",
+    "id": "efesios-cam-ef-04-desafio-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 4:4–6",
+    "learningObjective": "Ver a unidade da igreja em um só corpo, um Espírito, um Senhor e um Pai sobre todos.",
+    "evidence": [
+      "Efésios 4:4",
+      "Efésios 4:5",
+      "Efésios 4:6"
+    ],
+    "type": "tap",
+    "question": "Em Efésios 4:4–6, toque a palavra que falta em \"uma só fé, um só ___\"?",
+    "prompt": "Em Efésios 4:4–6, toque a palavra que falta em \"uma só fé, um só ___\"?",
+    "cue": "Em Efésios 4:4–6, toque a palavra que falta em \"uma só fé, um só ___\"?",
+    "trail": "efesios",
+    "section": "ef-04-desafio",
+    "feedbackCorrect": "Exato: um só Senhor, uma só fé, um só batismo.",
+    "feedbackWrong": {
+      "a": "O Espírito aparece com o corpo, no v. 4.",
+      "c": "A esperança liga-se à vocação."
+    },
+    "passageText": "um só corpo há e um só Espírito, como também fostes chamados em uma só esperança da vossa vocação; um só Senhor, uma só fé, um só batismo; um só Deus e Pai de todos, que é sobre todos, e por todos, e em todos.",
+    "template": "uma só fé, um só ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito"
+      },
+      {
+        "id": "b",
+        "text": "batismo"
+      },
+      {
+        "id": "c",
+        "text": "esperança"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "id": "efesios-cam-ef-04-desafio-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 4:4–6",
+    "learningObjective": "Ver a unidade da igreja em um só corpo, um Espírito, um Senhor e um Pai sobre todos.",
+    "evidence": [
+      "Efésios 4:4",
+      "Efésios 4:5",
+      "Efésios 4:6"
+    ],
+    "type": "choice",
+    "question": "Como se articula a unidade da igreja em Efésios 4:4–6?",
+    "prompt": "Como se articula a unidade da igreja em Efésios 4:4–6?",
+    "cue": "Como se articula a unidade da igreja em Efésios 4:4–6?",
+    "trail": "efesios",
+    "section": "ef-04-desafio",
+    "feedbackCorrect": "Certo: a unidade sobe do corpo ao Pai de todos.",
+    "feedbackWrong": {
+      "b": "Há um só Senhor e uma só fé.",
+      "c": "Há um só Espírito e um só batismo.",
+      "d": "Fostes chamados em uma só esperança."
+    },
+    "passageText": "um só corpo há e um só Espírito, como também fostes chamados em uma só esperança da vossa vocação; um só Senhor, uma só fé, um só batismo; um só Deus e Pai de todos, que é sobre todos, e por todos, e em todos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um corpo e um Espírito unem-se a um Senhor, uma fé e um Pai."
+      },
+      {
+        "id": "b",
+        "text": "Cada crente tem o seu próprio senhor e a sua fé."
+      },
+      {
+        "id": "c",
+        "text": "O batismo divide o corpo em vários espíritos."
+      },
+      {
+        "id": "d",
+        "text": "A vocação cristã dispensa qualquer esperança comum."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-cam-ef-04-desafio-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 4:4–6",
+    "learningObjective": "Ver a unidade da igreja em um só corpo, um Espírito, um Senhor e um Pai sobre todos.",
+    "evidence": [
+      "Efésios 4:4",
+      "Efésios 4:5",
+      "Efésios 4:6"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Efésios 4:4–6?",
+    "prompt": "Como se encadeiam os eventos de Efésios 4:4–6?",
+    "cue": "Como se encadeiam os eventos de Efésios 4:4–6?",
+    "trail": "efesios",
+    "section": "ef-04-desafio",
+    "feedbackCorrect": "Certo: vocação, depois Senhor-fé-batismo, então o Pai.",
+    "feedbackWrong": {
+      "b": "O encadeamento segue o chamado até o Pai.",
+      "c": "Releia como as tríades se sucedem."
+    },
+    "passageText": "um só corpo há e um só Espírito, como também fostes chamados em uma só esperança da vossa vocação; um só Senhor, uma só fé, um só batismo; um só Deus e Pai de todos, que é sobre todos, e por todos, e em todos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fostes chamados em uma só esperança da vossa vocação"
+      },
+      {
+        "id": "b",
+        "text": "um só Senhor, uma só fé, um só batismo"
+      },
+      {
+        "id": "c",
+        "text": "um só Deus e Pai de todos, que é sobre todos"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-cam-ef-04-desafio-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 4:4–6",
+    "learningObjective": "Ver a unidade da igreja em um só corpo, um Espírito, um Senhor e um Pai sobre todos.",
+    "evidence": [
+      "Efésios 4:4",
+      "Efésios 4:5",
+      "Efésios 4:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"um só Deus e ___ de todos, que é sobre todos\"",
+    "prompt": "Complete a frase: \"um só Deus e ___ de todos, que é sobre todos\"",
+    "cue": "Complete a frase: \"um só Deus e ___ de todos, que é sobre todos\"",
+    "trail": "efesios",
+    "section": "ef-04-desafio",
+    "feedbackCorrect": "Certo: um só Deus e Pai de todos.",
+    "feedbackWrong": {
+      "b": "O Senhor está na tríade do v. 5.",
+      "c": "O corpo abre o v. 4."
+    },
+    "passageText": "um só corpo há e um só Espírito, como também fostes chamados em uma só esperança da vossa vocação; um só Senhor, uma só fé, um só batismo; um só Deus e Pai de todos, que é sobre todos, e por todos, e em todos.",
+    "template": "um só Deus e ___ de todos, que é sobre todos",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pai"
+      },
+      {
+        "id": "b",
+        "text": "Senhor"
+      },
+      {
+        "id": "c",
+        "text": "corpo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-cam-ef-04-desafio-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 4:4–6",
+    "learningObjective": "Ver a unidade da igreja em um só corpo, um Espírito, um Senhor e um Pai sobre todos.",
+    "evidence": [
+      "Efésios 4:4",
+      "Efésios 4:5",
+      "Efésios 4:6"
+    ],
+    "type": "connect",
+    "question": "O que Efésios 4:4–6 comunica que se liga a este contexto?",
+    "prompt": "O que Efésios 4:4–6 comunica que se liga a este contexto?",
+    "cue": "O que Efésios 4:4–6 comunica que se liga a este contexto?",
+    "trail": "efesios",
+    "section": "ef-04-desafio",
+    "feedbackCorrect": "Certo: um Senhor, uma fé, um batismo.",
+    "feedbackWrong": {
+      "b": "O texto diz uma só fé.",
+      "c": "Há um só batismo, não vários que dividem."
+    },
+    "passageText": "um só corpo há e um só Espírito, como também fostes chamados em uma só esperança da vossa vocação; um só Senhor, uma só fé, um só batismo; um só Deus e Pai de todos, que é sobre todos, e por todos, e em todos.",
+    "passageA": {
+      "ref": "Efésios 4:4–6",
+      "text": "um só Senhor, uma só fé, um só batismo"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Unidos em Cristo: um corpo, um Espírito, um Senhor, uma fé — o Pai sobre todos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Unidos num só Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Fés paralelas na igreja"
+      },
+      {
+        "id": "c",
+        "text": "Batismos que fragmentam"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-cam-ef-04-desafio-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 4:4–6",
+    "learningObjective": "Ver a unidade da igreja em um só corpo, um Espírito, um Senhor e um Pai sobre todos.",
+    "evidence": [
+      "Efésios 4:4",
+      "Efésios 4:5",
+      "Efésios 4:6"
+    ],
+    "type": "true_false",
+    "question": "O Pai sobre todos, por todos e em todos é o fundamento da unidade da igreja.",
+    "prompt": "O Pai sobre todos, por todos e em todos é o fundamento da unidade da igreja.",
+    "cue": "O Pai sobre todos, por todos e em todos é o fundamento da unidade da igreja.",
+    "trail": "efesios",
+    "section": "ef-04-desafio",
+    "feedbackCorrect": "Certo: a unidade desemboca no Pai de todos.",
+    "feedbackWrong": {
+      "false": "O v. 6 coroa a lista: o Pai é sobre todos e em todos."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "um só corpo há e um só Espírito, como também fostes chamados em uma só esperança da vossa vocação; um só Senhor, uma só fé, um só batismo; um só Deus e Pai de todos, que é sobre todos, e por todos, e em todos.",
+    "id": "efesios-pro-ef-04-desafio-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 4:4–6",
+    "learningObjective": "Ver a unidade da igreja em um só corpo, um Espírito, um Senhor e um Pai sobre todos.",
+    "evidence": [
+      "Efésios 4:4",
+      "Efésios 4:5",
+      "Efésios 4:6"
+    ],
+    "type": "tap",
+    "question": "Em Efésios 4:4–6, toque a palavra que falta em \"que é sobre ___, e por todos, e em todos\"?",
+    "prompt": "Em Efésios 4:4–6, toque a palavra que falta em \"que é sobre ___, e por todos, e em todos\"?",
+    "cue": "Em Efésios 4:4–6, toque a palavra que falta em \"que é sobre ___, e por todos, e em todos\"?",
+    "trail": "efesios",
+    "section": "ef-04-desafio",
+    "feedbackCorrect": "Exato: o Pai é sobre todos, por todos e em todos.",
+    "feedbackWrong": {
+      "b": "\"corpo\" está no início da lista.",
+      "c": "\"fé\" pertence à tríade do v. 5."
+    },
+    "passageText": "um só corpo há e um só Espírito, como também fostes chamados em uma só esperança da vossa vocação; um só Senhor, uma só fé, um só batismo; um só Deus e Pai de todos, que é sobre todos, e por todos, e em todos.",
+    "template": "que é sobre ___, e por todos, e em todos",
+    "options": [
+      {
+        "id": "a",
+        "text": "todos"
+      },
+      {
+        "id": "b",
+        "text": "corpo"
+      },
+      {
+        "id": "c",
+        "text": "fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-pro-ef-04-desafio-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 4:4–6",
+    "learningObjective": "Ver a unidade da igreja em um só corpo, um Espírito, um Senhor e um Pai sobre todos.",
+    "evidence": [
+      "Efésios 4:4",
+      "Efésios 4:5",
+      "Efésios 4:6"
+    ],
+    "type": "choice",
+    "question": "O que Efésios 4:4–6 revela sobre a unidade em Cristo?",
+    "prompt": "O que Efésios 4:4–6 revela sobre a unidade em Cristo?",
+    "cue": "O que Efésios 4:4–6 revela sobre a unidade em Cristo?",
+    "trail": "efesios",
+    "section": "ef-04-desafio",
+    "feedbackCorrect": "Certo: a unidade assenta no Pai de todos.",
+    "feedbackWrong": {
+      "b": "Há um só Senhor, não senhores inventados.",
+      "c": "Um só corpo há e um só Espírito.",
+      "d": "Fostes chamados em uma só esperança; o Pai é em todos."
+    },
+    "passageText": "um só corpo há e um só Espírito, como também fostes chamados em uma só esperança da vossa vocação; um só Senhor, uma só fé, um só batismo; um só Deus e Pai de todos, que é sobre todos, e por todos, e em todos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A igreja é uma porque o Pai é sobre todos e em todos."
+      },
+      {
+        "id": "b",
+        "text": "A unidade depende de cada um inventar o seu senhor."
+      },
+      {
+        "id": "c",
+        "text": "O Espírito é um, mas o corpo da igreja é muitos."
+      },
+      {
+        "id": "d",
+        "text": "O Pai permanece fora da vocação e da esperança."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-pro-ef-04-desafio-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 4:4–6",
+    "learningObjective": "Ver a unidade da igreja em um só corpo, um Espírito, um Senhor e um Pai sobre todos.",
+    "evidence": [
+      "Efésios 4:4",
+      "Efésios 4:5",
+      "Efésios 4:6"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Efésios 4:4–6?",
+    "prompt": "Qual sequência revela o sentido de Efésios 4:4–6?",
+    "cue": "Qual sequência revela o sentido de Efésios 4:4–6?",
+    "trail": "efesios",
+    "section": "ef-04-desafio",
+    "feedbackCorrect": "Certo: corpo e Espírito, vocação, então o Pai em todos.",
+    "feedbackWrong": {
+      "b": "O sentido sobe da igreja ao Pai de todos.",
+      "c": "Releia o movimento da lista unitária."
+    },
+    "passageText": "um só corpo há e um só Espírito, como também fostes chamados em uma só esperança da vossa vocação; um só Senhor, uma só fé, um só batismo; um só Deus e Pai de todos, que é sobre todos, e por todos, e em todos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "um só corpo há e um só Espírito"
+      },
+      {
+        "id": "b",
+        "text": "fostes chamados em uma só esperança da vossa vocação"
+      },
+      {
+        "id": "c",
+        "text": "um só Deus e Pai de todos, que é sobre todos, e por todos, e em todos"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-pro-ef-04-desafio-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 4:4–6",
+    "learningObjective": "Ver a unidade da igreja em um só corpo, um Espírito, um Senhor e um Pai sobre todos.",
+    "evidence": [
+      "Efésios 4:4",
+      "Efésios 4:5",
+      "Efésios 4:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"chamados em uma só ___ da vossa vocação\"",
+    "prompt": "Complete a frase: \"chamados em uma só ___ da vossa vocação\"",
+    "cue": "Complete a frase: \"chamados em uma só ___ da vossa vocação\"",
+    "trail": "efesios",
+    "section": "ef-04-desafio",
+    "feedbackCorrect": "Certo: uma só esperança da vocação.",
+    "feedbackWrong": {
+      "b": "\"armadura\" não está neste trecho.",
+      "c": "\"graça\" não preenche esta lacuna."
+    },
+    "passageText": "um só corpo há e um só Espírito, como também fostes chamados em uma só esperança da vossa vocação; um só Senhor, uma só fé, um só batismo; um só Deus e Pai de todos, que é sobre todos, e por todos, e em todos.",
+    "template": "chamados em uma só ___ da vossa vocação",
+    "options": [
+      {
+        "id": "a",
+        "text": "esperança"
+      },
+      {
+        "id": "b",
+        "text": "armadura"
+      },
+      {
+        "id": "c",
+        "text": "graça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-pro-ef-04-desafio-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 4:4–6",
+    "learningObjective": "Ver a unidade da igreja em um só corpo, um Espírito, um Senhor e um Pai sobre todos.",
+    "evidence": [
+      "Efésios 4:4",
+      "Efésios 4:5",
+      "Efésios 4:6"
+    ],
+    "type": "connect",
+    "question": "O que Efésios 4:4–6 comunica que se liga a este contexto?",
+    "prompt": "O que Efésios 4:4–6 comunica que se liga a este contexto?",
+    "cue": "O que Efésios 4:4–6 comunica que se liga a este contexto?",
+    "trail": "efesios",
+    "section": "ef-04-desafio",
+    "feedbackCorrect": "Certo: o Pai sobre todos sustenta a unidade.",
+    "feedbackWrong": {
+      "b": "Ele é Pai de todos, em todos.",
+      "c": "A lista desemboca no Pai."
+    },
+    "passageText": "um só corpo há e um só Espírito, como também fostes chamados em uma só esperança da vossa vocação; um só Senhor, uma só fé, um só batismo; um só Deus e Pai de todos, que é sobre todos, e por todos, e em todos.",
+    "passageA": {
+      "ref": "Efésios 4:4–6",
+      "text": "um só Deus e Pai de todos, que é sobre todos, e por todos, e em todos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Unidos em Cristo: um corpo, um Espírito, um Senhor, uma fé — o Pai sobre todos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pai sobre todos"
+      },
+      {
+        "id": "b",
+        "text": "Deus só de alguns"
+      },
+      {
+        "id": "c",
+        "text": "Unidade sem o Pai"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "id": "efesios-pro-ef-04-desafio-06"
+  }
+]

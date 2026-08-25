@@ -1,0 +1,2243 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 9:15–16",
+    "learningObjective": "Reconhecer que Paulo é vaso escolhido para levar o nome de Jesus, e que o chamado inclui padecer.",
+    "evidence": [
+      "Atos 9:15",
+      "Atos 9:16"
+    ],
+    "type": "true_false",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "id": "cartas-paulo-sem-cp-01-apostolo-01",
+    "question": "O Senhor afirma que este homem é para ele um vaso escolhido.",
+    "feedbackCorrect": "Certo: Atos 9:15 chama Paulo de vaso escolhido do Senhor.",
+    "feedbackWrong": {
+      "false": "Releia: o Senhor o chama de vaso escolhido."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Mas o Senhor disse-lhe: Vai, porque este é para mim um vaso escolhido para levar o meu nome perante os gentios e os reis, bem como perante os filhos de Israel; pois eu lhe mostrarei quanto lhe é necessário padecer pelo meu nome.",
+    "prompt": "O Senhor afirma que este homem é para ele um vaso escolhido.",
+    "cue": "O Senhor afirma que este homem é para ele um vaso escolhido."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 9:15–16",
+    "learningObjective": "Reconhecer que Paulo é vaso escolhido para levar o nome de Jesus, e que o chamado inclui padecer.",
+    "evidence": [
+      "Atos 9:15",
+      "Atos 9:16"
+    ],
+    "type": "tap",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "id": "cartas-paulo-sem-cp-01-apostolo-02",
+    "question": "Em Atos 9:15–16, toque a palavra que falta em \"este é para mim um ___ escolhido\"?",
+    "feedbackCorrect": "Exato: o Senhor o chama de vaso escolhido.",
+    "feedbackWrong": {
+      "b": "Gentios são o público da missão, não o título do chamado.",
+      "c": "Padecer vem depois; a lacuna é o título do vaso."
+    },
+    "passageText": "Mas o Senhor disse-lhe: Vai, porque este é para mim um vaso escolhido para levar o meu nome perante os gentios e os reis, bem como perante os filhos de Israel; pois eu lhe mostrarei quanto lhe é necessário padecer pelo meu nome.",
+    "template": "este é para mim um ___ escolhido",
+    "options": [
+      {
+        "id": "a",
+        "text": "vaso"
+      },
+      {
+        "id": "b",
+        "text": "gentios"
+      },
+      {
+        "id": "c",
+        "text": "padecer"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Em Atos 9:15–16, toque a palavra que falta em \"este é para mim um ___ escolhido\"?",
+    "cue": "Em Atos 9:15–16, toque a palavra que falta em \"este é para mim um ___ escolhido\"?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 9:15–16",
+    "learningObjective": "Reconhecer que Paulo é vaso escolhido para levar o nome de Jesus, e que o chamado inclui padecer.",
+    "evidence": [
+      "Atos 9:15",
+      "Atos 9:16"
+    ],
+    "type": "choice",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "id": "cartas-paulo-sem-cp-01-apostolo-03",
+    "question": "Perante quem Paulo deve levar o nome do Senhor, segundo Atos 9:15?",
+    "feedbackCorrect": "Certo: o texto cita gentios, reis e os filhos de Israel.",
+    "feedbackWrong": {
+      "a": "O texto não restringe o chamado só a Israel.",
+      "c": "Reis e Israel também aparecem, não só os gentios.",
+      "d": "Gentios e Israel também entram no chamado."
+    },
+    "passageText": "Mas o Senhor disse-lhe: Vai, porque este é para mim um vaso escolhido para levar o meu nome perante os gentios e os reis, bem como perante os filhos de Israel; pois eu lhe mostrarei quanto lhe é necessário padecer pelo meu nome.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Somente perante os filhos de Israel."
+      },
+      {
+        "id": "b",
+        "text": "Perante os gentios, os reis e os filhos de Israel."
+      },
+      {
+        "id": "c",
+        "text": "Somente perante os gentios."
+      },
+      {
+        "id": "d",
+        "text": "Somente perante os reis."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Perante quem Paulo deve levar o nome do Senhor, segundo Atos 9:15?",
+    "cue": "Perante quem Paulo deve levar o nome do Senhor, segundo Atos 9:15?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 9:15–16",
+    "learningObjective": "Reconhecer que Paulo é vaso escolhido para levar o nome de Jesus, e que o chamado inclui padecer.",
+    "evidence": [
+      "Atos 9:15",
+      "Atos 9:16"
+    ],
+    "type": "order",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "id": "cartas-paulo-sem-cp-01-apostolo-04",
+    "question": "Qual sequência mostra a ordem dos fatos em Atos 9:15–16?",
+    "feedbackCorrect": "Certo: primeiro o vaso, depois o nome público, então o padecer.",
+    "feedbackWrong": {
+      "b": "Levar o nome vem depois da escolha do vaso.",
+      "c": "O padecer é anunciado depois da missão pública."
+    },
+    "passageText": "Mas o Senhor disse-lhe: Vai, porque este é para mim um vaso escolhido para levar o meu nome perante os gentios e os reis, bem como perante os filhos de Israel; pois eu lhe mostrarei quanto lhe é necessário padecer pelo meu nome.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Este é para mim um vaso escolhido"
+      },
+      {
+        "id": "b",
+        "text": "Levar o meu nome perante os gentios e os reis"
+      },
+      {
+        "id": "c",
+        "text": "Eu lhe mostrarei quanto lhe é necessário padecer"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Atos 9:15–16?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Atos 9:15–16?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 9:15–16",
+    "learningObjective": "Reconhecer que Paulo é vaso escolhido para levar o nome de Jesus, e que o chamado inclui padecer.",
+    "evidence": [
+      "Atos 9:15",
+      "Atos 9:16"
+    ],
+    "type": "complete",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "id": "cartas-paulo-sem-cp-01-apostolo-05",
+    "question": "Complete a frase: \"quanto lhe é necessário ___ pelo meu nome\"",
+    "feedbackCorrect": "Certo: o Senhor mostrará quanto lhe é necessário padecer.",
+    "feedbackWrong": {
+      "a": "Escolhido descreve o vaso, não este verbo.",
+      "c": "Gentios são o público, não o que lhe é necessário."
+    },
+    "passageText": "Mas o Senhor disse-lhe: Vai, porque este é para mim um vaso escolhido para levar o meu nome perante os gentios e os reis, bem como perante os filhos de Israel; pois eu lhe mostrarei quanto lhe é necessário padecer pelo meu nome.",
+    "template": "quanto lhe é necessário ___ pelo meu nome",
+    "options": [
+      {
+        "id": "a",
+        "text": "escolhido"
+      },
+      {
+        "id": "b",
+        "text": "padecer"
+      },
+      {
+        "id": "c",
+        "text": "gentios"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Complete a frase: \"quanto lhe é necessário ___ pelo meu nome\"",
+    "cue": "Complete a frase: \"quanto lhe é necessário ___ pelo meu nome\""
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 9:15–16",
+    "learningObjective": "Reconhecer que Paulo é vaso escolhido para levar o nome de Jesus, e que o chamado inclui padecer.",
+    "evidence": [
+      "Atos 9:15",
+      "Atos 9:16"
+    ],
+    "type": "connect",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "id": "cartas-paulo-sem-cp-01-apostolo-06",
+    "question": "O que Atos 9:15–16 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o trecho une vaso escolhido e padecer pelo nome.",
+    "feedbackWrong": {
+      "b": "O texto não promete fama fácil sem custo.",
+      "c": "O chamado não se fecha em silêncio privado."
+    },
+    "passageText": "Mas o Senhor disse-lhe: Vai, porque este é para mim um vaso escolhido para levar o meu nome perante os gentios e os reis, bem como perante os filhos de Israel; pois eu lhe mostrarei quanto lhe é necessário padecer pelo meu nome.",
+    "passageA": {
+      "ref": "Atos 9:15–16",
+      "text": "Mas o Senhor disse-lhe: Vai, porque este é para mim um vaso escolhido para levar o meu nome perante os gentios e os reis, bem como perante os filhos de Israel; pois eu lhe mostrarei quanto lhe é necessário padecer pelo meu nome."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Paulo é vaso escolhido para levar o nome de Jesus — e o chamado inclui padecer pelo nome."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Vaso escolhido que padece"
+      },
+      {
+        "id": "b",
+        "text": "Fama fácil sem custo"
+      },
+      {
+        "id": "c",
+        "text": "Silêncio privado em Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "O que Atos 9:15–16 comunica que se liga a este contexto?",
+    "cue": "O que Atos 9:15–16 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 9:15–16",
+    "learningObjective": "Reconhecer que Paulo é vaso escolhido para levar o nome de Jesus, e que o chamado inclui padecer.",
+    "evidence": [
+      "Atos 9:15",
+      "Atos 9:16"
+    ],
+    "type": "true_false",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "id": "cartas-paulo-cam-cp-01-apostolo-01",
+    "question": "O chamado de Paulo se restringe a Israel, sem menção de gentios e reis.",
+    "feedbackCorrect": "Certo: o Senhor envia o nome também a gentios e reis.",
+    "feedbackWrong": {
+      "true": "O texto cita gentios, reis e filhos de Israel."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Mas o Senhor disse-lhe: Vai, porque este é para mim um vaso escolhido para levar o meu nome perante os gentios e os reis, bem como perante os filhos de Israel; pois eu lhe mostrarei quanto lhe é necessário padecer pelo meu nome.",
+    "prompt": "O chamado de Paulo se restringe a Israel, sem menção de gentios e reis.",
+    "cue": "O chamado de Paulo se restringe a Israel, sem menção de gentios e reis."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 9:15–16",
+    "learningObjective": "Reconhecer que Paulo é vaso escolhido para levar o nome de Jesus, e que o chamado inclui padecer.",
+    "evidence": [
+      "Atos 9:15",
+      "Atos 9:16"
+    ],
+    "type": "tap",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "id": "cartas-paulo-cam-cp-01-apostolo-02",
+    "question": "Em Atos 9:15–16, toque a palavra que falta em \"perante os ___ e os reis\"?",
+    "feedbackCorrect": "Exato: o nome será levado também perante os gentios.",
+    "feedbackWrong": {
+      "a": "Israel aparece depois, não nesta lacuna.",
+      "c": "Vaso é o título de Paulo, não o público aqui."
+    },
+    "passageText": "Mas o Senhor disse-lhe: Vai, porque este é para mim um vaso escolhido para levar o meu nome perante os gentios e os reis, bem como perante os filhos de Israel; pois eu lhe mostrarei quanto lhe é necessário padecer pelo meu nome.",
+    "template": "perante os ___ e os reis",
+    "options": [
+      {
+        "id": "a",
+        "text": "Israel"
+      },
+      {
+        "id": "b",
+        "text": "gentios"
+      },
+      {
+        "id": "c",
+        "text": "vaso"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Em Atos 9:15–16, toque a palavra que falta em \"perante os ___ e os reis\"?",
+    "cue": "Em Atos 9:15–16, toque a palavra que falta em \"perante os ___ e os reis\"?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 9:15–16",
+    "learningObjective": "Reconhecer que Paulo é vaso escolhido para levar o nome de Jesus, e que o chamado inclui padecer.",
+    "evidence": [
+      "Atos 9:15",
+      "Atos 9:16"
+    ],
+    "type": "choice",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "id": "cartas-paulo-cam-cp-01-apostolo-03",
+    "question": "Como o texto relaciona a escolha do vaso e o padecer pelo nome?",
+    "feedbackCorrect": "Certo: missão pública e padecer pertencem ao mesmo chamado.",
+    "feedbackWrong": {
+      "a": "O sofrimento não é acaso: o Senhor o mostrará.",
+      "b": "O nome também vai a gentios e a Israel, não só a reis.",
+      "d": "Ser vaso escolhido não dispensa o padecer."
+    },
+    "passageText": "Mas o Senhor disse-lhe: Vai, porque este é para mim um vaso escolhido para levar o meu nome perante os gentios e os reis, bem como perante os filhos de Israel; pois eu lhe mostrarei quanto lhe é necessário padecer pelo meu nome.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O sofrimento é acidente, fora do chamado do Senhor."
+      },
+      {
+        "id": "b",
+        "text": "Levar o nome vale só para reis, nunca para o povo."
+      },
+      {
+        "id": "c",
+        "text": "O Senhor une missão pública e padecer no mesmo chamado."
+      },
+      {
+        "id": "d",
+        "text": "Ser vaso escolhido dispensa qualquer sofrimento."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "prompt": "Como o texto relaciona a escolha do vaso e o padecer pelo nome?",
+    "cue": "Como o texto relaciona a escolha do vaso e o padecer pelo nome?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 9:15–16",
+    "learningObjective": "Reconhecer que Paulo é vaso escolhido para levar o nome de Jesus, e que o chamado inclui padecer.",
+    "evidence": [
+      "Atos 9:15",
+      "Atos 9:16"
+    ],
+    "type": "order",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "id": "cartas-paulo-cam-cp-01-apostolo-04",
+    "question": "Como se encadeiam os eventos de Atos 9:15–16?",
+    "feedbackCorrect": "Certo: o Senhor manda ir, o nome se espalha, o padecer vem.",
+    "feedbackWrong": {
+      "a": "O padecer é anunciado depois da missão, não primeiro.",
+      "c": "Levar o nome vem depois da ordem de ir."
+    },
+    "passageText": "Mas o Senhor disse-lhe: Vai, porque este é para mim um vaso escolhido para levar o meu nome perante os gentios e os reis, bem como perante os filhos de Israel; pois eu lhe mostrarei quanto lhe é necessário padecer pelo meu nome.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor mostrará o padecer pelo nome"
+      },
+      {
+        "id": "b",
+        "text": "O Senhor manda ir porque Paulo é vaso escolhido"
+      },
+      {
+        "id": "c",
+        "text": "O nome será levado perante gentios, reis e Israel"
+      }
+    ],
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Como se encadeiam os eventos de Atos 9:15–16?",
+    "cue": "Como se encadeiam os eventos de Atos 9:15–16?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 9:15–16",
+    "learningObjective": "Reconhecer que Paulo é vaso escolhido para levar o nome de Jesus, e que o chamado inclui padecer.",
+    "evidence": [
+      "Atos 9:15",
+      "Atos 9:16"
+    ],
+    "type": "complete",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "id": "cartas-paulo-cam-cp-01-apostolo-05",
+    "question": "Complete a frase: \"eu lhe mostrarei quanto lhe é ___ padecer\"",
+    "feedbackCorrect": "Certo: o Senhor mostrará quanto lhe é necessário padecer.",
+    "feedbackWrong": {
+      "b": "Escolhido descreve o vaso, não esta medida.",
+      "c": "Israel é o público, não o advérbio desta frase."
+    },
+    "passageText": "Mas o Senhor disse-lhe: Vai, porque este é para mim um vaso escolhido para levar o meu nome perante os gentios e os reis, bem como perante os filhos de Israel; pois eu lhe mostrarei quanto lhe é necessário padecer pelo meu nome.",
+    "template": "eu lhe mostrarei quanto lhe é ___ padecer",
+    "options": [
+      {
+        "id": "a",
+        "text": "necessário"
+      },
+      {
+        "id": "b",
+        "text": "escolhido"
+      },
+      {
+        "id": "c",
+        "text": "Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Complete a frase: \"eu lhe mostrarei quanto lhe é ___ padecer\"",
+    "cue": "Complete a frase: \"eu lhe mostrarei quanto lhe é ___ padecer\""
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 9:15–16",
+    "learningObjective": "Reconhecer que Paulo é vaso escolhido para levar o nome de Jesus, e que o chamado inclui padecer.",
+    "evidence": [
+      "Atos 9:15",
+      "Atos 9:16"
+    ],
+    "type": "connect",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "id": "cartas-paulo-cam-cp-01-apostolo-06",
+    "question": "O que Atos 9:15–16 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a ponte é missão e sofrimento no mesmo chamado.",
+    "feedbackWrong": {
+      "a": "O texto não reduz Paulo a um cargo palaciano.",
+      "b": "O chamado não é só conforto interior."
+    },
+    "passageText": "Mas o Senhor disse-lhe: Vai, porque este é para mim um vaso escolhido para levar o meu nome perante os gentios e os reis, bem como perante os filhos de Israel; pois eu lhe mostrarei quanto lhe é necessário padecer pelo meu nome.",
+    "passageA": {
+      "ref": "Atos 9:15–16",
+      "text": "Mas o Senhor disse-lhe: Vai, porque este é para mim um vaso escolhido para levar o meu nome perante os gentios e os reis, bem como perante os filhos de Israel; pois eu lhe mostrarei quanto lhe é necessário padecer pelo meu nome."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Paulo é vaso escolhido para levar o nome de Jesus — e o chamado inclui padecer pelo nome."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cargo palaciano sem povo"
+      },
+      {
+        "id": "b",
+        "text": "Conforto interior apenas"
+      },
+      {
+        "id": "c",
+        "text": "Missão e sofrimento juntos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "prompt": "O que Atos 9:15–16 comunica que se liga a este contexto?",
+    "cue": "O que Atos 9:15–16 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 9:15–16",
+    "learningObjective": "Reconhecer que Paulo é vaso escolhido para levar o nome de Jesus, e que o chamado inclui padecer.",
+    "evidence": [
+      "Atos 9:15",
+      "Atos 9:16"
+    ],
+    "type": "true_false",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "id": "cartas-paulo-pro-cp-01-apostolo-01",
+    "question": "Ser vaso escolhido inclui padecer pelo nome, não só anunciar.",
+    "feedbackCorrect": "Certo: o Senhor já une eleição e padecer no mesmo discurso.",
+    "feedbackWrong": {
+      "false": "O versículo 16 liga o vaso escolhido ao padecer pelo nome."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Mas o Senhor disse-lhe: Vai, porque este é para mim um vaso escolhido para levar o meu nome perante os gentios e os reis, bem como perante os filhos de Israel; pois eu lhe mostrarei quanto lhe é necessário padecer pelo meu nome.",
+    "prompt": "Ser vaso escolhido inclui padecer pelo nome, não só anunciar.",
+    "cue": "Ser vaso escolhido inclui padecer pelo nome, não só anunciar."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 9:15–16",
+    "learningObjective": "Reconhecer que Paulo é vaso escolhido para levar o nome de Jesus, e que o chamado inclui padecer.",
+    "evidence": [
+      "Atos 9:15",
+      "Atos 9:16"
+    ],
+    "type": "tap",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "id": "cartas-paulo-pro-cp-01-apostolo-02",
+    "question": "Em Atos 9:15–16, toque a palavra que falta em \"perante os filhos de ___\"?",
+    "feedbackCorrect": "Exato: o nome também será levado perante os filhos de Israel.",
+    "feedbackWrong": {
+      "a": "Gentios vêm antes, nesta outra lista.",
+      "c": "Senhor é quem fala, não o público desta frase."
+    },
+    "passageText": "Mas o Senhor disse-lhe: Vai, porque este é para mim um vaso escolhido para levar o meu nome perante os gentios e os reis, bem como perante os filhos de Israel; pois eu lhe mostrarei quanto lhe é necessário padecer pelo meu nome.",
+    "template": "perante os filhos de ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "gentios"
+      },
+      {
+        "id": "b",
+        "text": "Israel"
+      },
+      {
+        "id": "c",
+        "text": "Senhor"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Em Atos 9:15–16, toque a palavra que falta em \"perante os filhos de ___\"?",
+    "cue": "Em Atos 9:15–16, toque a palavra que falta em \"perante os filhos de ___\"?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 9:15–16",
+    "learningObjective": "Reconhecer que Paulo é vaso escolhido para levar o nome de Jesus, e que o chamado inclui padecer.",
+    "evidence": [
+      "Atos 9:15",
+      "Atos 9:16"
+    ],
+    "type": "choice",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "id": "cartas-paulo-pro-cp-01-apostolo-03",
+    "question": "Qual leitura teológica Atos 9:15–16 sustenta sobre o apostolado de Paulo?",
+    "feedbackCorrect": "Certo: a eleição para testemunhar já inclui o custo do nome.",
+    "feedbackWrong": {
+      "a": "O texto não promete privilégio sem custo.",
+      "b": "Padecer pelo nome não cancela a eleição do vaso.",
+      "c": "O nome vai a públicos reais; não substitui a missão."
+    },
+    "passageText": "Mas o Senhor disse-lhe: Vai, porque este é para mim um vaso escolhido para levar o meu nome perante os gentios e os reis, bem como perante os filhos de Israel; pois eu lhe mostrarei quanto lhe é necessário padecer pelo meu nome.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O chamado de Paulo é privilégio sem custo."
+      },
+      {
+        "id": "b",
+        "text": "Padecer pelo nome contradiz a eleição do vaso."
+      },
+      {
+        "id": "c",
+        "text": "O nome de Jesus substitui qualquer missão pública."
+      },
+      {
+        "id": "d",
+        "text": "A eleição para testemunhar já inclui o custo do nome."
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "prompt": "Qual leitura teológica Atos 9:15–16 sustenta sobre o apostolado de Paulo?",
+    "cue": "Qual leitura teológica Atos 9:15–16 sustenta sobre o apostolado de Paulo?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 9:15–16",
+    "learningObjective": "Reconhecer que Paulo é vaso escolhido para levar o nome de Jesus, e que o chamado inclui padecer.",
+    "evidence": [
+      "Atos 9:15",
+      "Atos 9:16"
+    ],
+    "type": "order",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "id": "cartas-paulo-pro-cp-01-apostolo-04",
+    "question": "Qual sequência revela o sentido de Atos 9:15–16?",
+    "feedbackCorrect": "Certo: escolha do vaso, missão do nome, então o custo.",
+    "feedbackWrong": {
+      "a": "O padecer interpreta o rumo, mas não abre a fala.",
+      "c": "Os públicos vêm depois da escolha do vaso."
+    },
+    "passageText": "Mas o Senhor disse-lhe: Vai, porque este é para mim um vaso escolhido para levar o meu nome perante os gentios e os reis, bem como perante os filhos de Israel; pois eu lhe mostrarei quanto lhe é necessário padecer pelo meu nome.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O padecer pelo nome faz parte do rumo do vaso"
+      },
+      {
+        "id": "b",
+        "text": "O Senhor escolhe o vaso para o seu nome"
+      },
+      {
+        "id": "c",
+        "text": "O nome vai a gentios, reis e Israel"
+      }
+    ],
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Qual sequência revela o sentido de Atos 9:15–16?",
+    "cue": "Qual sequência revela o sentido de Atos 9:15–16?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 9:15–16",
+    "learningObjective": "Reconhecer que Paulo é vaso escolhido para levar o nome de Jesus, e que o chamado inclui padecer.",
+    "evidence": [
+      "Atos 9:15",
+      "Atos 9:16"
+    ],
+    "type": "complete",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "id": "cartas-paulo-pro-cp-01-apostolo-05",
+    "question": "Complete a frase: \"um vaso ___ para levar o meu nome\"",
+    "feedbackCorrect": "Certo: o texto diz vaso escolhido para levar o nome.",
+    "feedbackWrong": {
+      "a": "Padecer vem depois; aqui o adjetivo é escolhido.",
+      "b": "Reis são o público, não o adjetivo do vaso."
+    },
+    "passageText": "Mas o Senhor disse-lhe: Vai, porque este é para mim um vaso escolhido para levar o meu nome perante os gentios e os reis, bem como perante os filhos de Israel; pois eu lhe mostrarei quanto lhe é necessário padecer pelo meu nome.",
+    "template": "um vaso ___ para levar o meu nome",
+    "options": [
+      {
+        "id": "a",
+        "text": "padecer"
+      },
+      {
+        "id": "b",
+        "text": "reis"
+      },
+      {
+        "id": "c",
+        "text": "escolhido"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "prompt": "Complete a frase: \"um vaso ___ para levar o meu nome\"",
+    "cue": "Complete a frase: \"um vaso ___ para levar o meu nome\""
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 9:15–16",
+    "learningObjective": "Reconhecer que Paulo é vaso escolhido para levar o nome de Jesus, e que o chamado inclui padecer.",
+    "evidence": [
+      "Atos 9:15",
+      "Atos 9:16"
+    ],
+    "type": "connect",
+    "trail": "cartas-paulo",
+    "section": "cp-01-apostolo",
+    "id": "cartas-paulo-pro-cp-01-apostolo-06",
+    "question": "O que Atos 9:15–16 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a eleição do vaso traz custo real pelo nome.",
+    "feedbackWrong": {
+      "a": "O texto não promete isenção de sofrimento.",
+      "c": "O chamado não é carreira de honras humanas."
+    },
+    "passageText": "Mas o Senhor disse-lhe: Vai, porque este é para mim um vaso escolhido para levar o meu nome perante os gentios e os reis, bem como perante os filhos de Israel; pois eu lhe mostrarei quanto lhe é necessário padecer pelo meu nome.",
+    "passageA": {
+      "ref": "Atos 9:15–16",
+      "text": "Mas o Senhor disse-lhe: Vai, porque este é para mim um vaso escolhido para levar o meu nome perante os gentios e os reis, bem como perante os filhos de Israel; pois eu lhe mostrarei quanto lhe é necessário padecer pelo meu nome."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Paulo é vaso escolhido para levar o nome de Jesus — e o chamado inclui padecer pelo nome."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Isenção de qualquer dor"
+      },
+      {
+        "id": "b",
+        "text": "Eleição com custo real"
+      },
+      {
+        "id": "c",
+        "text": "Carreira de honras humanas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "O que Atos 9:15–16 comunica que se liga a este contexto?",
+    "cue": "O que Atos 9:15–16 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Identificar o evangelho que Paulo entregou: morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "true_false",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "id": "cartas-paulo-sem-cp-02-evangelho-01",
+    "question": "Paulo entregou primeiramente o que também recebeu.",
+    "feedbackCorrect": "Certo: ele diz que entregou o que também recebeu.",
+    "feedbackWrong": {
+      "false": "Releia 1 Coríntios 15:3: entreguei o que também recebi."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "prompt": "Paulo entregou primeiramente o que também recebeu.",
+    "cue": "Paulo entregou primeiramente o que também recebeu."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Identificar o evangelho que Paulo entregou: morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "tap",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "id": "cartas-paulo-sem-cp-02-evangelho-02",
+    "question": "Em 1 Coríntios 15:3–4, toque a palavra que falta em \"que Cristo ___ por nossos pecados\"?",
+    "feedbackCorrect": "Exato: Cristo morreu por nossos pecados, segundo as Escrituras.",
+    "feedbackWrong": {
+      "a": "Sepultado vem depois da morte.",
+      "c": "Ressuscitado fecha o anúncio, não esta lacuna."
+    },
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "template": "que Cristo ___ por nossos pecados",
+    "options": [
+      {
+        "id": "a",
+        "text": "sepultado"
+      },
+      {
+        "id": "b",
+        "text": "morreu"
+      },
+      {
+        "id": "c",
+        "text": "ressuscitado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Em 1 Coríntios 15:3–4, toque a palavra que falta em \"que Cristo ___ por nossos pecados\"?",
+    "cue": "Em 1 Coríntios 15:3–4, toque a palavra que falta em \"que Cristo ___ por nossos pecados\"?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Identificar o evangelho que Paulo entregou: morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "choice",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "id": "cartas-paulo-sem-cp-02-evangelho-03",
+    "question": "O que Paulo diz ter entregue primeiramente em 1 Coríntios 15:3–4?",
+    "feedbackCorrect": "Certo: Cristo morreu por nossos pecados, segundo as Escrituras.",
+    "feedbackWrong": {
+      "b": "O texto não diz que os coríntios inventaram o evangelho.",
+      "c": "O texto afirma que Cristo foi sepultado.",
+      "d": "A ressurreição é ao terceiro dia, não ao quarto."
+    },
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que Cristo morreu por nossos pecados, segundo as Escrituras."
+      },
+      {
+        "id": "b",
+        "text": "Que os coríntios inventaram o conteúdo do evangelho."
+      },
+      {
+        "id": "c",
+        "text": "Que Cristo não foi sepultado de fato."
+      },
+      {
+        "id": "d",
+        "text": "Que a ressurreição ficou para um quarto dia."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "O que Paulo diz ter entregue primeiramente em 1 Coríntios 15:3–4?",
+    "cue": "O que Paulo diz ter entregue primeiramente em 1 Coríntios 15:3–4?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Identificar o evangelho que Paulo entregou: morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "order",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "id": "cartas-paulo-sem-cp-02-evangelho-04",
+    "question": "Qual sequência mostra a ordem dos fatos em 1 Coríntios 15:3–4?",
+    "feedbackCorrect": "Certo: morreu, foi sepultado e foi ressuscitado ao terceiro dia.",
+    "feedbackWrong": {
+      "b": "A sepultura vem depois da morte.",
+      "c": "A ressurreição fecha a tríade, não a abre."
+    },
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo morreu por nossos pecados, segundo as Escrituras"
+      },
+      {
+        "id": "b",
+        "text": "Foi sepultado"
+      },
+      {
+        "id": "c",
+        "text": "Foi ressuscitado ao terceiro dia, segundo as Escrituras"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 1 Coríntios 15:3–4?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 1 Coríntios 15:3–4?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Identificar o evangelho que Paulo entregou: morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "complete",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "id": "cartas-paulo-sem-cp-02-evangelho-05",
+    "question": "Complete a frase: \"foi ressuscitado ao ___ dia, segundo as Escrituras\"",
+    "feedbackCorrect": "Certo: a ressurreição é ao terceiro dia, segundo as Escrituras.",
+    "feedbackWrong": {
+      "a": "Pecados ligam-se à morte, não a este numeral.",
+      "b": "Primeiramente descreve a entrega, não o dia."
+    },
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "template": "foi ressuscitado ao ___ dia, segundo as Escrituras",
+    "options": [
+      {
+        "id": "a",
+        "text": "pecados"
+      },
+      {
+        "id": "b",
+        "text": "primeiramente"
+      },
+      {
+        "id": "c",
+        "text": "terceiro"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "prompt": "Complete a frase: \"foi ressuscitado ao ___ dia, segundo as Escrituras\"",
+    "cue": "Complete a frase: \"foi ressuscitado ao ___ dia, segundo as Escrituras\""
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Identificar o evangelho que Paulo entregou: morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "connect",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "id": "cartas-paulo-sem-cp-02-evangelho-06",
+    "question": "O que 1 Coríntios 15:3–4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o núcleo é morte, sepultura e ressurreição.",
+    "feedbackWrong": {
+      "a": "O texto não fala de uma ética inventada por Paulo.",
+      "c": "Não é só um relato de viagem apostólica."
+    },
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "passageA": {
+      "ref": "1 Coríntios 15:3–4",
+      "text": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O evangelho das cartas não é invenção paulina: é o que ele recebeu — morte, sepultura e ressurreição segundo as Escrituras."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ética inventada por Paulo"
+      },
+      {
+        "id": "b",
+        "text": "Morte, sepultura e ressurreição"
+      },
+      {
+        "id": "c",
+        "text": "Diário de viagens apostólicas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "O que 1 Coríntios 15:3–4 comunica que se liga a este contexto?",
+    "cue": "O que 1 Coríntios 15:3–4 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Identificar o evangelho que Paulo entregou: morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "true_false",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "id": "cartas-paulo-cam-cp-02-evangelho-01",
+    "question": "O evangelho que Paulo entrega começa numa invenção própria, sem receber de ninguém.",
+    "feedbackCorrect": "Certo: ele insiste que entregou o que também recebeu.",
+    "feedbackWrong": {
+      "true": "O texto diz: entreguei o que também recebi."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "prompt": "O evangelho que Paulo entrega começa numa invenção própria, sem receber de ninguém.",
+    "cue": "O evangelho que Paulo entrega começa numa invenção própria, sem receber de ninguém."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Identificar o evangelho que Paulo entregou: morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "tap",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "id": "cartas-paulo-cam-cp-02-evangelho-02",
+    "question": "Em 1 Coríntios 15:3–4, toque a palavra que falta em \"e que foi ___, e que foi ressuscitado\"?",
+    "feedbackCorrect": "Exato: entre a morte e a ressurreição, Cristo foi sepultado.",
+    "feedbackWrong": {
+      "b": "Pecados ligam-se à morte, não a este verbo.",
+      "c": "Escrituras sustentam o anúncio, não preenchem esta lacuna."
+    },
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "template": "e que foi ___, e que foi ressuscitado",
+    "options": [
+      {
+        "id": "a",
+        "text": "sepultado"
+      },
+      {
+        "id": "b",
+        "text": "pecados"
+      },
+      {
+        "id": "c",
+        "text": "Escrituras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Em 1 Coríntios 15:3–4, toque a palavra que falta em \"e que foi ___, e que foi ressuscitado\"?",
+    "cue": "Em 1 Coríntios 15:3–4, toque a palavra que falta em \"e que foi ___, e que foi ressuscitado\"?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Identificar o evangelho que Paulo entregou: morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "choice",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "id": "cartas-paulo-cam-cp-02-evangelho-03",
+    "question": "Qual leitura liga corretamente a entrega de Paulo às Escrituras?",
+    "feedbackCorrect": "Certo: ele transmite o recebido, ancorado nas Escrituras.",
+    "feedbackWrong": {
+      "a": "A sepultura faz parte do anúncio, não é detalhe opcional.",
+      "b": "A ressurreição não apaga a morte: os dois estão juntos.",
+      "c": "Segundo as Escrituras sustenta o conteúdo, não só ilustra."
+    },
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "options": [
+      {
+        "id": "a",
+        "text": "A sepultura é detalhe opcional, sem peso no evangelho."
+      },
+      {
+        "id": "b",
+        "text": "A ressurreição substitui a morte e torna-a desnecessária."
+      },
+      {
+        "id": "c",
+        "text": "As Escrituras só ilustram, sem sustentar o anúncio."
+      },
+      {
+        "id": "d",
+        "text": "Paulo transmite o que recebeu, ancorado nas Escrituras."
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "prompt": "Qual leitura liga corretamente a entrega de Paulo às Escrituras?",
+    "cue": "Qual leitura liga corretamente a entrega de Paulo às Escrituras?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Identificar o evangelho que Paulo entregou: morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "order",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "id": "cartas-paulo-cam-cp-02-evangelho-04",
+    "question": "Como se encadeiam os eventos de 1 Coríntios 15:3–4?",
+    "feedbackCorrect": "Certo: recebe e entrega; então morte e sepultura; então ressurreição.",
+    "feedbackWrong": {
+      "a": "A ressurreição fecha o anúncio, não o abre.",
+      "c": "Morte e sepultura vêm depois da entrega do recebido."
+    },
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "options": [
+      {
+        "id": "a",
+        "text": "Foi ressuscitado ao terceiro dia"
+      },
+      {
+        "id": "b",
+        "text": "Paulo entregou o que também recebeu"
+      },
+      {
+        "id": "c",
+        "text": "Cristo morreu e foi sepultado"
+      }
+    ],
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Como se encadeiam os eventos de 1 Coríntios 15:3–4?",
+    "cue": "Como se encadeiam os eventos de 1 Coríntios 15:3–4?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Identificar o evangelho que Paulo entregou: morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "complete",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "id": "cartas-paulo-cam-cp-02-evangelho-05",
+    "question": "Complete a frase: \"Cristo morreu por nossos pecados, segundo as ___\"",
+    "feedbackCorrect": "Certo: a morte de Cristo é segundo as Escrituras.",
+    "feedbackWrong": {
+      "a": "Pecados já aparecem antes da lacuna.",
+      "c": "Terceiro descreve o dia da ressurreição."
+    },
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "template": "Cristo morreu por nossos pecados, segundo as ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "pecados"
+      },
+      {
+        "id": "b",
+        "text": "Escrituras"
+      },
+      {
+        "id": "c",
+        "text": "terceiro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Complete a frase: \"Cristo morreu por nossos pecados, segundo as ___\"",
+    "cue": "Complete a frase: \"Cristo morreu por nossos pecados, segundo as ___\""
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Identificar o evangelho que Paulo entregou: morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "connect",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "id": "cartas-paulo-cam-cp-02-evangelho-06",
+    "question": "O que 1 Coríntios 15:3–4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Paulo recebeu o evangelho e então o entregou.",
+    "feedbackWrong": {
+      "b": "O texto não apresenta criação original de Paulo.",
+      "c": "Não é rumor solto: está segundo as Escrituras."
+    },
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "passageA": {
+      "ref": "1 Coríntios 15:3–4",
+      "text": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O evangelho das cartas não é invenção paulina: é o que ele recebeu — morte, sepultura e ressurreição segundo as Escrituras."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Recebeu e então entregou"
+      },
+      {
+        "id": "b",
+        "text": "Criação original de Paulo"
+      },
+      {
+        "id": "c",
+        "text": "Rumor sem Escrituras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "O que 1 Coríntios 15:3–4 comunica que se liga a este contexto?",
+    "cue": "O que 1 Coríntios 15:3–4 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Identificar o evangelho que Paulo entregou: morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "true_false",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "id": "cartas-paulo-pro-cp-02-evangelho-01",
+    "question": "O evangelho das cartas não é invenção paulina: está segundo as Escrituras.",
+    "feedbackCorrect": "Certo: morte e ressurreição são anunciadas segundo as Escrituras.",
+    "feedbackWrong": {
+      "false": "O texto repete segundo as Escrituras no núcleo do evangelho."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "prompt": "O evangelho das cartas não é invenção paulina: está segundo as Escrituras.",
+    "cue": "O evangelho das cartas não é invenção paulina: está segundo as Escrituras."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Identificar o evangelho que Paulo entregou: morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "tap",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "id": "cartas-paulo-pro-cp-02-evangelho-02",
+    "question": "Em 1 Coríntios 15:3–4, toque a palavra que falta em \"ao ___ dia, segundo as Escrituras\"?",
+    "feedbackCorrect": "Exato: a ressurreição é ao terceiro dia.",
+    "feedbackWrong": {
+      "a": "Pecados ligam-se à morte, não a este dia.",
+      "b": "Entreguei descreve o ato de Paulo, não o dia."
+    },
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "template": "ao ___ dia, segundo as Escrituras",
+    "options": [
+      {
+        "id": "a",
+        "text": "pecados"
+      },
+      {
+        "id": "b",
+        "text": "entreguei"
+      },
+      {
+        "id": "c",
+        "text": "terceiro"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "prompt": "Em 1 Coríntios 15:3–4, toque a palavra que falta em \"ao ___ dia, segundo as Escrituras\"?",
+    "cue": "Em 1 Coríntios 15:3–4, toque a palavra que falta em \"ao ___ dia, segundo as Escrituras\"?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Identificar o evangelho que Paulo entregou: morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "choice",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "id": "cartas-paulo-pro-cp-02-evangelho-03",
+    "question": "O que 1 Coríntios 15:3–4 implica sobre a autoridade do evangelho paulino?",
+    "feedbackCorrect": "Certo: o núcleo recebido é morte, sepultura e ressurreição.",
+    "feedbackWrong": {
+      "a": "A autoridade não está na criatividade de Paulo.",
+      "c": "Sepultura e ressurreição não são acréscimos descartáveis.",
+      "d": "Segundo as Escrituras não é fórmula vazia."
+    },
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "options": [
+      {
+        "id": "a",
+        "text": "A autoridade do evangelho está na criatividade de Paulo."
+      },
+      {
+        "id": "b",
+        "text": "Morte, sepultura e ressurreição formam o núcleo recebido."
+      },
+      {
+        "id": "c",
+        "text": "Só a morte importa; sepultura e ressurreição são acréscimos."
+      },
+      {
+        "id": "d",
+        "text": "Segundo as Escrituras é fórmula vazia, sem conteúdo."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "O que 1 Coríntios 15:3–4 implica sobre a autoridade do evangelho paulino?",
+    "cue": "O que 1 Coríntios 15:3–4 implica sobre a autoridade do evangelho paulino?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Identificar o evangelho que Paulo entregou: morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "order",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "id": "cartas-paulo-pro-cp-02-evangelho-04",
+    "question": "Qual sequência revela o sentido de 1 Coríntios 15:3–4?",
+    "feedbackCorrect": "Certo: recebe o dado, cumpre nas Escrituras, a ressurreição confirma.",
+    "feedbackWrong": {
+      "a": "A ressurreição confirma, mas não inicia a lógica.",
+      "c": "Morte e sepultura vêm depois da entrega do recebido."
+    },
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "options": [
+      {
+        "id": "a",
+        "text": "A ressurreição ao terceiro dia confirma o anúncio"
+      },
+      {
+        "id": "b",
+        "text": "Paulo entrega o que recebeu, não o que inventou"
+      },
+      {
+        "id": "c",
+        "text": "A morte pelos pecados e a sepultura cumprem as Escrituras"
+      }
+    ],
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Qual sequência revela o sentido de 1 Coríntios 15:3–4?",
+    "cue": "Qual sequência revela o sentido de 1 Coríntios 15:3–4?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Identificar o evangelho que Paulo entregou: morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "complete",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "id": "cartas-paulo-pro-cp-02-evangelho-05",
+    "question": "Complete a frase: \"Cristo morreu por nossos ___, segundo as Escrituras\"",
+    "feedbackCorrect": "Certo: Cristo morreu por nossos pecados.",
+    "feedbackWrong": {
+      "b": "Escrituras sustentam o fato, não preenchem esta lacuna.",
+      "c": "Dia pertence à ressurreição, não a esta frase."
+    },
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "template": "Cristo morreu por nossos ___, segundo as Escrituras",
+    "options": [
+      {
+        "id": "a",
+        "text": "pecados"
+      },
+      {
+        "id": "b",
+        "text": "Escrituras"
+      },
+      {
+        "id": "c",
+        "text": "dia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Complete a frase: \"Cristo morreu por nossos ___, segundo as Escrituras\"",
+    "cue": "Complete a frase: \"Cristo morreu por nossos ___, segundo as Escrituras\""
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Identificar o evangelho que Paulo entregou: morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "connect",
+    "trail": "cartas-paulo",
+    "section": "cp-02-evangelho",
+    "id": "cartas-paulo-pro-cp-02-evangelho-06",
+    "question": "O que 1 Coríntios 15:3–4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o evangelho está segundo as Escrituras, não na invenção.",
+    "feedbackWrong": {
+      "a": "O texto não apoia um mito sem história.",
+      "b": "Não é doutrina privada de Paulo."
+    },
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "passageA": {
+      "ref": "1 Coríntios 15:3–4",
+      "text": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O evangelho das cartas não é invenção paulina: é o que ele recebeu — morte, sepultura e ressurreição segundo as Escrituras."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Mito sem raiz histórica"
+      },
+      {
+        "id": "b",
+        "text": "Doutrina privada de Paulo"
+      },
+      {
+        "id": "c",
+        "text": "Evangelho segundo as Escrituras"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "prompt": "O que 1 Coríntios 15:3–4 comunica que se liga a este contexto?",
+    "cue": "O que 1 Coríntios 15:3–4 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 1:11–12",
+    "learningObjective": "Distinguir o evangelho revelado por Jesus Cristo de uma mensagem fabricada por homens.",
+    "evidence": [
+      "Gálatas 1:11",
+      "Gálatas 1:12"
+    ],
+    "type": "true_false",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "id": "cartas-paulo-sem-cp-03-desafio-01",
+    "question": "Paulo diz que o evangelho que pregou é segundo o homem.",
+    "feedbackCorrect": "Certo: ele declara que o evangelho não é segundo o homem.",
+    "feedbackWrong": {
+      "true": "O texto afirma o contrário: não é segundo o homem."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Declaro-vos, irmãos, que o evangelho que foi pregado por mim não é segundo o homem; pois eu nem o recebi, nem o aprendi de homem algum, mas, sim, mediante a revelação de Jesus Cristo.",
+    "prompt": "Paulo diz que o evangelho que pregou é segundo o homem.",
+    "cue": "Paulo diz que o evangelho que pregou é segundo o homem."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 1:11–12",
+    "learningObjective": "Distinguir o evangelho revelado por Jesus Cristo de uma mensagem fabricada por homens.",
+    "evidence": [
+      "Gálatas 1:11",
+      "Gálatas 1:12"
+    ],
+    "type": "tap",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "id": "cartas-paulo-sem-cp-03-desafio-02",
+    "question": "Em Gálatas 1:11–12, toque a palavra que falta em \"não é segundo o ___\"?",
+    "feedbackCorrect": "Exato: o evangelho pregado por Paulo não é segundo o homem.",
+    "feedbackWrong": {
+      "a": "Irmãos são os destinatários, não esta origem.",
+      "c": "Revelação aparece no fim, não nesta lacuna."
+    },
+    "passageText": "Declaro-vos, irmãos, que o evangelho que foi pregado por mim não é segundo o homem; pois eu nem o recebi, nem o aprendi de homem algum, mas, sim, mediante a revelação de Jesus Cristo.",
+    "template": "não é segundo o ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "irmãos"
+      },
+      {
+        "id": "b",
+        "text": "homem"
+      },
+      {
+        "id": "c",
+        "text": "revelação"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Em Gálatas 1:11–12, toque a palavra que falta em \"não é segundo o ___\"?",
+    "cue": "Em Gálatas 1:11–12, toque a palavra que falta em \"não é segundo o ___\"?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 1:11–12",
+    "learningObjective": "Distinguir o evangelho revelado por Jesus Cristo de uma mensagem fabricada por homens.",
+    "evidence": [
+      "Gálatas 1:11",
+      "Gálatas 1:12"
+    ],
+    "type": "choice",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "id": "cartas-paulo-sem-cp-03-desafio-03",
+    "question": "De onde Paulo diz que veio o evangelho que pregou?",
+    "feedbackCorrect": "Certo: ele não o recebeu nem o aprendeu de homem algum.",
+    "feedbackWrong": {
+      "a": "O texto não aponta um sínodo como origem.",
+      "b": "Ele recusa precisamente a origem segundo o homem.",
+      "d": "A origem nomeada é a revelação de Jesus Cristo."
+    },
+    "passageText": "Declaro-vos, irmãos, que o evangelho que foi pregado por mim não é segundo o homem; pois eu nem o recebi, nem o aprendi de homem algum, mas, sim, mediante a revelação de Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "De um sínodo de mestres em Jerusalém."
+      },
+      {
+        "id": "b",
+        "text": "De uma tradição que ele chama segundo o homem."
+      },
+      {
+        "id": "c",
+        "text": "Não o recebeu nem o aprendeu de homem algum."
+      },
+      {
+        "id": "d",
+        "text": "De uma origem em que Jesus Cristo não entra."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "prompt": "De onde Paulo diz que veio o evangelho que pregou?",
+    "cue": "De onde Paulo diz que veio o evangelho que pregou?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 1:11–12",
+    "learningObjective": "Distinguir o evangelho revelado por Jesus Cristo de uma mensagem fabricada por homens.",
+    "evidence": [
+      "Gálatas 1:11",
+      "Gálatas 1:12"
+    ],
+    "type": "order",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "id": "cartas-paulo-sem-cp-03-desafio-04",
+    "question": "Qual sequência mostra a ordem dos fatos em Gálatas 1:11–12?",
+    "feedbackCorrect": "Certo: não segundo o homem; não de homens; revelação de Cristo.",
+    "feedbackWrong": {
+      "b": "A recusa dos homens vem depois da tese inicial.",
+      "c": "A revelação fecha o argumento, não o abre."
+    },
+    "passageText": "Declaro-vos, irmãos, que o evangelho que foi pregado por mim não é segundo o homem; pois eu nem o recebi, nem o aprendi de homem algum, mas, sim, mediante a revelação de Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O evangelho pregado por mim não é segundo o homem"
+      },
+      {
+        "id": "b",
+        "text": "Nem o recebi, nem o aprendi de homem algum"
+      },
+      {
+        "id": "c",
+        "text": "Mediante a revelação de Jesus Cristo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Gálatas 1:11–12?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Gálatas 1:11–12?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 1:11–12",
+    "learningObjective": "Distinguir o evangelho revelado por Jesus Cristo de uma mensagem fabricada por homens.",
+    "evidence": [
+      "Gálatas 1:11",
+      "Gálatas 1:12"
+    ],
+    "type": "complete",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "id": "cartas-paulo-sem-cp-03-desafio-05",
+    "question": "Complete a frase: \"mas, sim, mediante a ___ de Jesus Cristo\"",
+    "feedbackCorrect": "Certo: o evangelho veio mediante a revelação de Jesus Cristo.",
+    "feedbackWrong": {
+      "b": "Irmãos são os ouvintes, não este meio.",
+      "c": "Homem é o que Paulo recusa como origem."
+    },
+    "passageText": "Declaro-vos, irmãos, que o evangelho que foi pregado por mim não é segundo o homem; pois eu nem o recebi, nem o aprendi de homem algum, mas, sim, mediante a revelação de Jesus Cristo.",
+    "template": "mas, sim, mediante a ___ de Jesus Cristo",
+    "options": [
+      {
+        "id": "a",
+        "text": "revelação"
+      },
+      {
+        "id": "b",
+        "text": "irmãos"
+      },
+      {
+        "id": "c",
+        "text": "homem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Complete a frase: \"mas, sim, mediante a ___ de Jesus Cristo\"",
+    "cue": "Complete a frase: \"mas, sim, mediante a ___ de Jesus Cristo\""
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 1:11–12",
+    "learningObjective": "Distinguir o evangelho revelado por Jesus Cristo de uma mensagem fabricada por homens.",
+    "evidence": [
+      "Gálatas 1:11",
+      "Gálatas 1:12"
+    ],
+    "type": "connect",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "id": "cartas-paulo-sem-cp-03-desafio-06",
+    "question": "O que Gálatas 1:11–12 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o evangelho não é segundo o homem.",
+    "feedbackWrong": {
+      "a": "O texto recusa origem humana, não a celebra.",
+      "b": "Não é um acordo de escola rabínica."
+    },
+    "passageText": "Declaro-vos, irmãos, que o evangelho que foi pregado por mim não é segundo o homem; pois eu nem o recebi, nem o aprendi de homem algum, mas, sim, mediante a revelação de Jesus Cristo.",
+    "passageA": {
+      "ref": "Gálatas 1:11–12",
+      "text": "Declaro-vos, irmãos, que o evangelho que foi pregado por mim não é segundo o homem; pois eu nem o recebi, nem o aprendi de homem algum, mas, sim, mediante a revelação de Jesus Cristo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O mensageiro fiel prega um evangelho revelado, não fabricado por homens."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Origem meramente humana"
+      },
+      {
+        "id": "b",
+        "text": "Acordo de escola rabínica"
+      },
+      {
+        "id": "c",
+        "text": "Evangelho não segundo o homem"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "prompt": "O que Gálatas 1:11–12 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 1:11–12 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 1:11–12",
+    "learningObjective": "Distinguir o evangelho revelado por Jesus Cristo de uma mensagem fabricada por homens.",
+    "evidence": [
+      "Gálatas 1:11",
+      "Gálatas 1:12"
+    ],
+    "type": "true_false",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "id": "cartas-paulo-cam-cp-03-desafio-01",
+    "question": "Paulo afirma que o evangelho lhe veio mediante a revelação de Jesus Cristo.",
+    "feedbackCorrect": "Certo: Gálatas 1:12 aponta a revelação de Jesus Cristo.",
+    "feedbackWrong": {
+      "false": "O texto fecha com mediante a revelação de Jesus Cristo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Declaro-vos, irmãos, que o evangelho que foi pregado por mim não é segundo o homem; pois eu nem o recebi, nem o aprendi de homem algum, mas, sim, mediante a revelação de Jesus Cristo.",
+    "prompt": "Paulo afirma que o evangelho lhe veio mediante a revelação de Jesus Cristo.",
+    "cue": "Paulo afirma que o evangelho lhe veio mediante a revelação de Jesus Cristo."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 1:11–12",
+    "learningObjective": "Distinguir o evangelho revelado por Jesus Cristo de uma mensagem fabricada por homens.",
+    "evidence": [
+      "Gálatas 1:11",
+      "Gálatas 1:12"
+    ],
+    "type": "tap",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "id": "cartas-paulo-cam-cp-03-desafio-02",
+    "question": "Em Gálatas 1:11–12, toque a palavra que falta em \"nem o ___ de homem algum\"?",
+    "feedbackCorrect": "Exato: ele nem o aprendeu de homem algum.",
+    "feedbackWrong": {
+      "a": "Pregado descreve o anúncio, não este verbo.",
+      "b": "Irmãos são os destinatários da declaração."
+    },
+    "passageText": "Declaro-vos, irmãos, que o evangelho que foi pregado por mim não é segundo o homem; pois eu nem o recebi, nem o aprendi de homem algum, mas, sim, mediante a revelação de Jesus Cristo.",
+    "template": "nem o ___ de homem algum",
+    "options": [
+      {
+        "id": "a",
+        "text": "pregado"
+      },
+      {
+        "id": "b",
+        "text": "irmãos"
+      },
+      {
+        "id": "c",
+        "text": "aprendi"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "prompt": "Em Gálatas 1:11–12, toque a palavra que falta em \"nem o ___ de homem algum\"?",
+    "cue": "Em Gálatas 1:11–12, toque a palavra que falta em \"nem o ___ de homem algum\"?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 1:11–12",
+    "learningObjective": "Distinguir o evangelho revelado por Jesus Cristo de uma mensagem fabricada por homens.",
+    "evidence": [
+      "Gálatas 1:11",
+      "Gálatas 1:12"
+    ],
+    "type": "choice",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "id": "cartas-paulo-cam-cp-03-desafio-03",
+    "question": "Qual leitura conecta a recusa de origem humana à fidelidade do mensageiro?",
+    "feedbackCorrect": "Certo: a origem é revelação de Cristo, não fabricação.",
+    "feedbackWrong": {
+      "b": "Paulo não depende de mestres humanos para autenticar o evangelho.",
+      "c": "Declarar aos irmãos não é pedir licença ao homem.",
+      "d": "Não segundo o homem recusa a origem, não só o público."
+    },
+    "passageText": "Declaro-vos, irmãos, que o evangelho que foi pregado por mim não é segundo o homem; pois eu nem o recebi, nem o aprendi de homem algum, mas, sim, mediante a revelação de Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A origem da mensagem é revelação de Cristo, não fabricação."
+      },
+      {
+        "id": "b",
+        "text": "Paulo precisa de mestres humanos para autenticar o evangelho."
+      },
+      {
+        "id": "c",
+        "text": "Declarar aos irmãos equivale a pedir licença ao homem."
+      },
+      {
+        "id": "d",
+        "text": "Não segundo o homem só recusa o público, não a origem."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Qual leitura conecta a recusa de origem humana à fidelidade do mensageiro?",
+    "cue": "Qual leitura conecta a recusa de origem humana à fidelidade do mensageiro?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 1:11–12",
+    "learningObjective": "Distinguir o evangelho revelado por Jesus Cristo de uma mensagem fabricada por homens.",
+    "evidence": [
+      "Gálatas 1:11",
+      "Gálatas 1:12"
+    ],
+    "type": "order",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "id": "cartas-paulo-cam-cp-03-desafio-04",
+    "question": "Como se encadeiam os eventos de Gálatas 1:11–12?",
+    "feedbackCorrect": "Certo: declara a tese, recusa homens, aponta a revelação.",
+    "feedbackWrong": {
+      "a": "A revelação fecha o argumento, não o inicia.",
+      "c": "A recusa dos homens vem depois da declaração inicial."
+    },
+    "passageText": "Declaro-vos, irmãos, que o evangelho que foi pregado por mim não é segundo o homem; pois eu nem o recebi, nem o aprendi de homem algum, mas, sim, mediante a revelação de Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mediante a revelação de Jesus Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Declaro que o evangelho não é segundo o homem"
+      },
+      {
+        "id": "c",
+        "text": "Não o recebi nem o aprendi de homem algum"
+      }
+    ],
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Como se encadeiam os eventos de Gálatas 1:11–12?",
+    "cue": "Como se encadeiam os eventos de Gálatas 1:11–12?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 1:11–12",
+    "learningObjective": "Distinguir o evangelho revelado por Jesus Cristo de uma mensagem fabricada por homens.",
+    "evidence": [
+      "Gálatas 1:11",
+      "Gálatas 1:12"
+    ],
+    "type": "complete",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "id": "cartas-paulo-cam-cp-03-desafio-05",
+    "question": "Complete a frase: \"o evangelho que foi ___ por mim não é segundo o homem\"",
+    "feedbackCorrect": "Certo: o evangelho que foi pregado por ele não é segundo o homem.",
+    "feedbackWrong": {
+      "a": "Algum pertence a homem algum, não a este verbo.",
+      "b": "Revelação aparece no fim do trecho."
+    },
+    "passageText": "Declaro-vos, irmãos, que o evangelho que foi pregado por mim não é segundo o homem; pois eu nem o recebi, nem o aprendi de homem algum, mas, sim, mediante a revelação de Jesus Cristo.",
+    "template": "o evangelho que foi ___ por mim não é segundo o homem",
+    "options": [
+      {
+        "id": "a",
+        "text": "algum"
+      },
+      {
+        "id": "b",
+        "text": "revelação"
+      },
+      {
+        "id": "c",
+        "text": "pregado"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "prompt": "Complete a frase: \"o evangelho que foi ___ por mim não é segundo o homem\"",
+    "cue": "Complete a frase: \"o evangelho que foi ___ por mim não é segundo o homem\""
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 1:11–12",
+    "learningObjective": "Distinguir o evangelho revelado por Jesus Cristo de uma mensagem fabricada por homens.",
+    "evidence": [
+      "Gálatas 1:11",
+      "Gálatas 1:12"
+    ],
+    "type": "connect",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "id": "cartas-paulo-cam-cp-03-desafio-06",
+    "question": "O que Gálatas 1:11–12 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o evangelho é revelado, não fabricado.",
+    "feedbackWrong": {
+      "a": "O texto não celebra um produto de comitê.",
+      "c": "Não é opinião particular de Paulo."
+    },
+    "passageText": "Declaro-vos, irmãos, que o evangelho que foi pregado por mim não é segundo o homem; pois eu nem o recebi, nem o aprendi de homem algum, mas, sim, mediante a revelação de Jesus Cristo.",
+    "passageA": {
+      "ref": "Gálatas 1:11–12",
+      "text": "Declaro-vos, irmãos, que o evangelho que foi pregado por mim não é segundo o homem; pois eu nem o recebi, nem o aprendi de homem algum, mas, sim, mediante a revelação de Jesus Cristo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O mensageiro fiel prega um evangelho revelado, não fabricado por homens."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Produto de um comitê"
+      },
+      {
+        "id": "b",
+        "text": "Revelado, não fabricado"
+      },
+      {
+        "id": "c",
+        "text": "Opinião particular de Paulo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "O que Gálatas 1:11–12 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 1:11–12 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 1:11–12",
+    "learningObjective": "Distinguir o evangelho revelado por Jesus Cristo de uma mensagem fabricada por homens.",
+    "evidence": [
+      "Gálatas 1:11",
+      "Gálatas 1:12"
+    ],
+    "type": "true_false",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "id": "cartas-paulo-pro-cp-03-desafio-01",
+    "question": "Um mensageiro fiel pode fabricar o evangelho, desde que o pregue com zelo.",
+    "feedbackCorrect": "Certo: fidelidade exige evangelho revelado, não fabricado.",
+    "feedbackWrong": {
+      "true": "Gálatas 1 recusa origem humana; zelo não autoriza fabricação."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Declaro-vos, irmãos, que o evangelho que foi pregado por mim não é segundo o homem; pois eu nem o recebi, nem o aprendi de homem algum, mas, sim, mediante a revelação de Jesus Cristo.",
+    "prompt": "Um mensageiro fiel pode fabricar o evangelho, desde que o pregue com zelo.",
+    "cue": "Um mensageiro fiel pode fabricar o evangelho, desde que o pregue com zelo."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 1:11–12",
+    "learningObjective": "Distinguir o evangelho revelado por Jesus Cristo de uma mensagem fabricada por homens.",
+    "evidence": [
+      "Gálatas 1:11",
+      "Gálatas 1:12"
+    ],
+    "type": "tap",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "id": "cartas-paulo-pro-cp-03-desafio-02",
+    "question": "Em Gálatas 1:11–12, toque a palavra que falta em \"mediante a revelação de ___ Cristo\"?",
+    "feedbackCorrect": "Exato: a revelação é de Jesus Cristo.",
+    "feedbackWrong": {
+      "b": "Irmãos são os ouvintes, não quem revela.",
+      "c": "Homem é a origem recusada."
+    },
+    "passageText": "Declaro-vos, irmãos, que o evangelho que foi pregado por mim não é segundo o homem; pois eu nem o recebi, nem o aprendi de homem algum, mas, sim, mediante a revelação de Jesus Cristo.",
+    "template": "mediante a revelação de ___ Cristo",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus"
+      },
+      {
+        "id": "b",
+        "text": "irmãos"
+      },
+      {
+        "id": "c",
+        "text": "homem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Em Gálatas 1:11–12, toque a palavra que falta em \"mediante a revelação de ___ Cristo\"?",
+    "cue": "Em Gálatas 1:11–12, toque a palavra que falta em \"mediante a revelação de ___ Cristo\"?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 1:11–12",
+    "learningObjective": "Distinguir o evangelho revelado por Jesus Cristo de uma mensagem fabricada por homens.",
+    "evidence": [
+      "Gálatas 1:11",
+      "Gálatas 1:12"
+    ],
+    "type": "choice",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "id": "cartas-paulo-pro-cp-03-desafio-03",
+    "question": "O que Gálatas 1:11–12 implica para quem prega as cartas de Paulo hoje?",
+    "feedbackCorrect": "Certo: zelo não valida um evangelho fabricado.",
+    "feedbackWrong": {
+      "a": "Zelo humano não autentica qualquer mensagem.",
+      "b": "Receber de Cristo não é o mesmo que receber de homens.",
+      "c": "Paulo não recusa a revelação para proteger autonomia."
+    },
+    "passageText": "Declaro-vos, irmãos, que o evangelho que foi pregado por mim não é segundo o homem; pois eu nem o recebi, nem o aprendi de homem algum, mas, sim, mediante a revelação de Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Zelo humano basta para validar qualquer evangelho."
+      },
+      {
+        "id": "b",
+        "text": "Receber de Cristo e receber de homens é a mesma coisa."
+      },
+      {
+        "id": "c",
+        "text": "Paulo recusa a revelação para proteger sua autonomia."
+      },
+      {
+        "id": "d",
+        "text": "Fidelidade se mede pela origem revelada da mensagem."
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "prompt": "O que Gálatas 1:11–12 implica para quem prega as cartas de Paulo hoje?",
+    "cue": "O que Gálatas 1:11–12 implica para quem prega as cartas de Paulo hoje?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 1:11–12",
+    "learningObjective": "Distinguir o evangelho revelado por Jesus Cristo de uma mensagem fabricada por homens.",
+    "evidence": [
+      "Gálatas 1:11",
+      "Gálatas 1:12"
+    ],
+    "type": "order",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "id": "cartas-paulo-pro-cp-03-desafio-04",
+    "question": "Qual sequência revela o sentido de Gálatas 1:11–12?",
+    "feedbackCorrect": "Certo: não segundo o homem; não de aprendizagem humana; revelação de Cristo.",
+    "feedbackWrong": {
+      "a": "A revelação é o desfecho, não o primeiro passo da tese.",
+      "c": "A recusa da aprendizagem humana vem depois da tese."
+    },
+    "passageText": "Declaro-vos, irmãos, que o evangelho que foi pregado por mim não é segundo o homem; pois eu nem o recebi, nem o aprendi de homem algum, mas, sim, mediante a revelação de Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A origem é a revelação de Jesus Cristo"
+      },
+      {
+        "id": "b",
+        "text": "O evangelho não é segundo o homem"
+      },
+      {
+        "id": "c",
+        "text": "Não veio de aprendizagem humana"
+      }
+    ],
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Qual sequência revela o sentido de Gálatas 1:11–12?",
+    "cue": "Qual sequência revela o sentido de Gálatas 1:11–12?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 1:11–12",
+    "learningObjective": "Distinguir o evangelho revelado por Jesus Cristo de uma mensagem fabricada por homens.",
+    "evidence": [
+      "Gálatas 1:11",
+      "Gálatas 1:12"
+    ],
+    "type": "complete",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "id": "cartas-paulo-pro-cp-03-desafio-05",
+    "question": "Complete a frase: \"Declaro-vos, ___, que o evangelho que foi pregado por mim\"",
+    "feedbackCorrect": "Certo: Paulo declara isso aos irmãos.",
+    "feedbackWrong": {
+      "a": "Jesus pertence à revelação no fim do trecho.",
+      "b": "Revelação não preenche o vocativo."
+    },
+    "passageText": "Declaro-vos, irmãos, que o evangelho que foi pregado por mim não é segundo o homem; pois eu nem o recebi, nem o aprendi de homem algum, mas, sim, mediante a revelação de Jesus Cristo.",
+    "template": "Declaro-vos, ___, que o evangelho que foi pregado por mim",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus"
+      },
+      {
+        "id": "b",
+        "text": "revelação"
+      },
+      {
+        "id": "c",
+        "text": "irmãos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "prompt": "Complete a frase: \"Declaro-vos, ___, que o evangelho que foi pregado por mim\"",
+    "cue": "Complete a frase: \"Declaro-vos, ___, que o evangelho que foi pregado por mim\""
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 1:11–12",
+    "learningObjective": "Distinguir o evangelho revelado por Jesus Cristo de uma mensagem fabricada por homens.",
+    "evidence": [
+      "Gálatas 1:11",
+      "Gálatas 1:12"
+    ],
+    "type": "connect",
+    "trail": "cartas-paulo",
+    "section": "cp-03-desafio",
+    "id": "cartas-paulo-pro-cp-03-desafio-06",
+    "question": "O que Gálatas 1:11–12 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o mensageiro fiel carrega evangelho revelado.",
+    "feedbackWrong": {
+      "b": "O texto não autoriza inovar o conteúdo.",
+      "c": "Autoridade humana não substitui a revelação."
+    },
+    "passageText": "Declaro-vos, irmãos, que o evangelho que foi pregado por mim não é segundo o homem; pois eu nem o recebi, nem o aprendi de homem algum, mas, sim, mediante a revelação de Jesus Cristo.",
+    "passageA": {
+      "ref": "Gálatas 1:11–12",
+      "text": "Declaro-vos, irmãos, que o evangelho que foi pregado por mim não é segundo o homem; pois eu nem o recebi, nem o aprendi de homem algum, mas, sim, mediante a revelação de Jesus Cristo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O mensageiro fiel prega um evangelho revelado, não fabricado por homens."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Mensageiro de evangelho revelado"
+      },
+      {
+        "id": "b",
+        "text": "Licença para inovar o conteúdo"
+      },
+      {
+        "id": "c",
+        "text": "Autoridade humana como fonte"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "O que Gálatas 1:11–12 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 1:11–12 comunica que se liga a este contexto?"
+  }
+]

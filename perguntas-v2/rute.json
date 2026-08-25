@@ -1,0 +1,2078 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Rute 1:16",
+    "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
+    "evidence": ["Rute 1:16"],
+    "type": "true_false",
+    "question": "Rute pede que não a instem a abandonar Noemi e a deixar de segui-la.",
+    "prompt": "Rute pede que não a instem a abandonar Noemi e a deixar de segui-la.",
+    "cue": "Rute pede que não a instem a abandonar Noemi e a deixar de segui-la.",
+    "feedbackCorrect": "Certo: ela recusa o abandono e promete seguir Noemi.",
+    "feedbackWrong": {
+      "false": "Rute 1:16 começa exatamente com esse pedido."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus.",
+    "trail": "rute",
+    "section": "rute-lealdade-01-rute-e-noemi",
+    "id": "rute-sem-rute-lealdade-01-rute-e-noemi-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Rute 1:16",
+    "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
+    "evidence": ["Rute 1:16"],
+    "type": "tap",
+    "question": "Em Rute 1:16, toque a palavra que falta em \"o teu ___ será o meu povo\"?",
+    "prompt": "Em Rute 1:16, toque a palavra que falta em \"o teu ___ será o meu povo\"?",
+    "cue": "Em Rute 1:16, toque a palavra que falta em \"o teu ___ será o meu povo\"?",
+    "feedbackCorrect": "Exato: o teu povo será o meu povo.",
+    "feedbackWrong": {
+      "b": "Deus fecha o versículo; aqui a palavra é povo.",
+      "c": "Rute fala, mas a lacuna pede povo."
+    },
+    "passageText": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus.",
+    "template": "o teu ___ será o meu povo",
+    "options": [
+      {"id": "a", "text": "povo"},
+      {"id": "b", "text": "Deus"},
+      {"id": "c", "text": "Rute"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "rute",
+    "section": "rute-lealdade-01-rute-e-noemi",
+    "id": "rute-sem-rute-lealdade-01-rute-e-noemi-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Rute 1:16",
+    "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
+    "evidence": ["Rute 1:16"],
+    "type": "choice",
+    "question": "O que Rute afirma de modo explícito em Rute 1:16?",
+    "prompt": "O que Rute afirma de modo explícito em Rute 1:16?",
+    "cue": "O que Rute afirma de modo explícito em Rute 1:16?",
+    "feedbackCorrect": "Certo: ela une pouso, povo e Deus ao de Noemi.",
+    "feedbackWrong": {
+      "a": "Ela promete ir, não voltar para Moabe.",
+      "b": "O texto não limita o compromisso à fronteira.",
+      "d": "Ela assume o Deus de Noemi, não outro culto."
+    },
+    "passageText": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus.",
+    "options": [
+      {"id": "a", "text": "Rute promete voltar sozinha para Moabe."},
+      {"id": "b", "text": "Rute segue Noemi só até a fronteira de Judá."},
+      {"id": "c", "text": "Onde Noemi pousar, Rute pousará; o povo e o Deus dela serão os de Rute."},
+      {"id": "d", "text": "Rute aceita o povo, mas recusa o Deus de Noemi."}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "rute",
+    "section": "rute-lealdade-01-rute-e-noemi",
+    "id": "rute-sem-rute-lealdade-01-rute-e-noemi-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Rute 1:16",
+    "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
+    "evidence": ["Rute 1:16"],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Rute 1:16?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Rute 1:16?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Rute 1:16?",
+    "feedbackCorrect": "Certo: recusa do abandono, depois caminho e pouso, então povo e Deus.",
+    "feedbackWrong": {
+      "b": "O caminho vem depois do pedido para não a abandonar.",
+      "c": "Povo e Deus fecham o voto, não o abrem."
+    },
+    "passageText": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus.",
+    "options": [
+      {"id": "a", "text": "Rute pede que não a instem a abandonar Noemi nem a deixar de segui-la"},
+      {"id": "b", "text": "Para onde Noemi for, Rute irá; onde pousar, Rute pousará"},
+      {"id": "c", "text": "O povo de Noemi será o povo de Rute, e o Deus dela o Deus de Rute"}
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "rute",
+    "section": "rute-lealdade-01-rute-e-noemi",
+    "id": "rute-sem-rute-lealdade-01-rute-e-noemi-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Rute 1:16",
+    "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
+    "evidence": ["Rute 1:16"],
+    "type": "complete",
+    "question": "Complete a frase: \"Não me instes que te ___ e deixe de te seguir\"",
+    "prompt": "Complete a frase: \"Não me instes que te ___ e deixe de te seguir\"",
+    "cue": "Complete a frase: \"Não me instes que te ___ e deixe de te seguir\"",
+    "feedbackCorrect": "Certo: o texto diz abandone, não só deixe de seguir.",
+    "feedbackWrong": {
+      "b": "Pousares vem depois, no voto de caminho.",
+      "c": "Fores também vem depois; aqui a palavra é abandone."
+    },
+    "passageText": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus.",
+    "template": "Não me instes que te ___ e deixe de te seguir",
+    "options": [
+      {"id": "a", "text": "abandone"},
+      {"id": "b", "text": "pousares"},
+      {"id": "c", "text": "fores"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "rute",
+    "section": "rute-lealdade-01-rute-e-noemi",
+    "id": "rute-sem-rute-lealdade-01-rute-e-noemi-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Rute 1:16",
+    "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
+    "evidence": ["Rute 1:16"],
+    "type": "connect",
+    "question": "O que Rute 1:16 comunica que se liga a este contexto?",
+    "prompt": "O que Rute 1:16 comunica que se liga a este contexto?",
+    "cue": "O que Rute 1:16 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o voto cola Rute a Noemi e ao Deus de Israel.",
+    "feedbackWrong": {
+      "a": "Ela não volta a Moabe; cola-se a Israel.",
+      "c": "O voto inclui o Deus de Noemi, não outro culto."
+    },
+    "passageText": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus.",
+    "passageA": {
+      "ref": "Rute 1:16",
+      "text": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Rute cola sua vida a Noemi e ao Deus de Israel — lealdade que atravessa fronteira e sangue."
+    },
+    "options": [
+      {"id": "a", "text": "Retorno definitivo a Moabe"},
+      {"id": "b", "text": "Lealdade além da fronteira"},
+      {"id": "c", "text": "Recusa do Deus de Noemi"}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "rute",
+    "section": "rute-lealdade-01-rute-e-noemi",
+    "id": "rute-sem-rute-lealdade-01-rute-e-noemi-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Rute 1:16",
+    "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
+    "evidence": ["Rute 1:16"],
+    "type": "true_false",
+    "question": "Rute promete ir com Noemi, mas reserva para si outro povo e outro Deus.",
+    "prompt": "Rute promete ir com Noemi, mas reserva para si outro povo e outro Deus.",
+    "cue": "Rute promete ir com Noemi, mas reserva para si outro povo e outro Deus.",
+    "feedbackCorrect": "Certo: ela assume o povo e o Deus de Noemi sem reserva.",
+    "feedbackWrong": {
+      "true": "O voto une povo e Deus; não há reserva moabita."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus.",
+    "trail": "rute",
+    "section": "rute-lealdade-01-rute-e-noemi",
+    "id": "rute-cam-rute-lealdade-01-rute-e-noemi-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Rute 1:16",
+    "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
+    "evidence": ["Rute 1:16"],
+    "type": "tap",
+    "question": "Em Rute 1:16, toque a palavra que falta em \"onde quer que tu pousares, ___ eu\"?",
+    "prompt": "Em Rute 1:16, toque a palavra que falta em \"onde quer que tu pousares, ___ eu\"?",
+    "cue": "Em Rute 1:16, toque a palavra que falta em \"onde quer que tu pousares, ___ eu\"?",
+    "feedbackCorrect": "Exato: Rute diz pousarei eu, ecoando o pouso de Noemi.",
+    "feedbackWrong": {
+      "a": "Irei corresponde a fores, não a pousares.",
+      "c": "Instes está no pedido inicial, não nesta frase."
+    },
+    "passageText": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus.",
+    "template": "onde quer que tu pousares, ___ eu",
+    "options": [
+      {"id": "a", "text": "irei"},
+      {"id": "b", "text": "pousarei"},
+      {"id": "c", "text": "instes"}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "rute",
+    "section": "rute-lealdade-01-rute-e-noemi",
+    "id": "rute-cam-rute-lealdade-01-rute-e-noemi-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Rute 1:16",
+    "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
+    "evidence": ["Rute 1:16"],
+    "type": "choice",
+    "question": "Como se encadeiam caminho, pouso, povo e Deus no voto de Rute?",
+    "prompt": "Como se encadeiam caminho, pouso, povo e Deus no voto de Rute?",
+    "cue": "Como se encadeiam caminho, pouso, povo e Deus no voto de Rute?",
+    "feedbackCorrect": "Certo: o compromisso cobre rumo, casa, povo e culto.",
+    "feedbackWrong": {
+      "a": "Não há pausa na fronteira; o voto é total.",
+      "b": "O Deus de Noemi entra no voto, não fica de fora.",
+      "c": "Não é só afeto: inclui povo e Deus."
+    },
+    "passageText": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus.",
+    "options": [
+      {"id": "a", "text": "O voto vale só até a fronteira; depois cada uma segue sozinha."},
+      {"id": "b", "text": "Ela acompanha o rumo, mas recusa o culto de Israel."},
+      {"id": "c", "text": "É só amizade íntima, sem adesão a povo ou a Deus."},
+      {"id": "d", "text": "O mesmo rumo leva ao mesmo pouso, ao mesmo povo e ao mesmo Deus."}
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "trail": "rute",
+    "section": "rute-lealdade-01-rute-e-noemi",
+    "id": "rute-cam-rute-lealdade-01-rute-e-noemi-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Rute 1:16",
+    "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
+    "evidence": ["Rute 1:16"],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Rute 1:16?",
+    "prompt": "Como se encadeiam os eventos de Rute 1:16?",
+    "cue": "Como se encadeiam os eventos de Rute 1:16?",
+    "feedbackCorrect": "Certo: primeiro a recusa, depois o rumo compartilhado, então a adesão.",
+    "feedbackWrong": {
+      "b": "A adesão ao povo vem depois do rumo e do pouso.",
+      "c": "A recusa de abandonar abre o voto, não o fecha."
+    },
+    "passageText": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus.",
+    "options": [
+      {"id": "a", "text": "Rute recusa abandonar Noemi e deixar de segui-la"},
+      {"id": "b", "text": "Ela promete ir e pousar onde Noemi for"},
+      {"id": "c", "text": "Ela assume o povo e o Deus de Noemi como seus"}
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "rute",
+    "section": "rute-lealdade-01-rute-e-noemi",
+    "id": "rute-cam-rute-lealdade-01-rute-e-noemi-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Rute 1:16",
+    "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
+    "evidence": ["Rute 1:16"],
+    "type": "complete",
+    "question": "Complete a frase: \"e o teu Deus o meu ___\"",
+    "prompt": "Complete a frase: \"e o teu Deus o meu ___\"",
+    "cue": "Complete a frase: \"e o teu Deus o meu ___\"",
+    "feedbackCorrect": "Certo: o voto fecha com o meu Deus.",
+    "feedbackWrong": {
+      "a": "Povo já apareceu na frase anterior.",
+      "b": "Rute é quem fala; a lacuna pede Deus."
+    },
+    "passageText": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus.",
+    "template": "e o teu Deus o meu ___",
+    "options": [
+      {"id": "a", "text": "povo"},
+      {"id": "b", "text": "Rute"},
+      {"id": "c", "text": "Deus"}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "rute",
+    "section": "rute-lealdade-01-rute-e-noemi",
+    "id": "rute-cam-rute-lealdade-01-rute-e-noemi-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Rute 1:16",
+    "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
+    "evidence": ["Rute 1:16"],
+    "type": "connect",
+    "question": "O que o voto de Rute 1:16 comunica que se liga a este contexto?",
+    "prompt": "O que o voto de Rute 1:16 comunica que se liga a este contexto?",
+    "cue": "O que o voto de Rute 1:16 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: lealdade que cruza sangue e fronteira rumo a Israel.",
+    "feedbackWrong": {
+      "b": "Não é contrato de viagem; é adesão de vida.",
+      "c": "Ela não pede herança em Moabe."
+    },
+    "passageText": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus.",
+    "passageA": {
+      "ref": "Rute 1:16",
+      "text": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Rute cola sua vida a Noemi e ao Deus de Israel — lealdade que atravessa fronteira e sangue."
+    },
+    "options": [
+      {"id": "a", "text": "Adesão que cruza fronteira"},
+      {"id": "b", "text": "Contrato só de viagem"},
+      {"id": "c", "text": "Pedido de herança em Moabe"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "rute",
+    "section": "rute-lealdade-01-rute-e-noemi",
+    "id": "rute-cam-rute-lealdade-01-rute-e-noemi-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Rute 1:16",
+    "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
+    "evidence": ["Rute 1:16"],
+    "type": "true_false",
+    "question": "A lealdade de Rute atravessa fronteira e sangue ao colar-se ao povo e ao Deus de Noemi.",
+    "prompt": "A lealdade de Rute atravessa fronteira e sangue ao colar-se ao povo e ao Deus de Noemi.",
+    "cue": "A lealdade de Rute atravessa fronteira e sangue ao colar-se ao povo e ao Deus de Noemi.",
+    "feedbackCorrect": "Certo: o voto une rumo, povo e Deus além da origem.",
+    "feedbackWrong": {
+      "false": "Povo e Deus no voto mostram adesão que cruza origem."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus.",
+    "trail": "rute",
+    "section": "rute-lealdade-01-rute-e-noemi",
+    "id": "rute-pro-rute-lealdade-01-rute-e-noemi-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Rute 1:16",
+    "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
+    "evidence": ["Rute 1:16"],
+    "type": "tap",
+    "question": "Em Rute 1:16, toque a palavra que falta em \"para onde quer que tu fores, ___ eu\"?",
+    "prompt": "Em Rute 1:16, toque a palavra que falta em \"para onde quer que tu fores, ___ eu\"?",
+    "cue": "Em Rute 1:16, toque a palavra que falta em \"para onde quer que tu fores, ___ eu\"?",
+    "feedbackCorrect": "Exato: irei eu responde a fores.",
+    "feedbackWrong": {
+      "b": "Pousarei responde a pousares, não a fores.",
+      "c": "Abandone pertence ao pedido inicial."
+    },
+    "passageText": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus.",
+    "template": "para onde quer que tu fores, ___ eu",
+    "options": [
+      {"id": "a", "text": "irei"},
+      {"id": "b", "text": "pousarei"},
+      {"id": "c", "text": "abandone"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "rute",
+    "section": "rute-lealdade-01-rute-e-noemi",
+    "id": "rute-pro-rute-lealdade-01-rute-e-noemi-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Rute 1:16",
+    "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
+    "evidence": ["Rute 1:16"],
+    "type": "choice",
+    "question": "Qual leitura melhor capta o sentido teológico de Rute 1:16?",
+    "prompt": "Qual leitura melhor capta o sentido teológico de Rute 1:16?",
+    "cue": "Qual leitura melhor capta o sentido teológico de Rute 1:16?",
+    "feedbackCorrect": "Certo: a estrangeira entra em Israel pelo Deus de Noemi.",
+    "feedbackWrong": {
+      "a": "Não é só afeto: o voto nomeia povo e Deus.",
+      "c": "Não é tratado diplomático; é adesão de culto e vida.",
+      "d": "Ela não permanece moabita no culto."
+    },
+    "passageText": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus.",
+    "options": [
+      {"id": "a", "text": "É só amizade privada, sem implicação de fé ou povo."},
+      {"id": "b", "text": "A estrangeira se incorpora a Israel pelo Deus de Noemi, não só por afeto."},
+      {"id": "c", "text": "É um tratado diplomático entre Moabe e Judá."},
+      {"id": "d", "text": "Rute permanece moabita no culto, mudando só de endereço."}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "rute",
+    "section": "rute-lealdade-01-rute-e-noemi",
+    "id": "rute-pro-rute-lealdade-01-rute-e-noemi-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Rute 1:16",
+    "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
+    "evidence": ["Rute 1:16"],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Rute 1:16?",
+    "prompt": "Qual sequência revela o sentido de Rute 1:16?",
+    "cue": "Qual sequência revela o sentido de Rute 1:16?",
+    "feedbackCorrect": "Certo: recusa da separação, partilha do caminho, adesão a Israel.",
+    "feedbackWrong": {
+      "b": "A adesão ao Deus de Israel fecha o sentido, não o abre.",
+      "c": "A recusa da separação é o primeiro gesto do voto."
+    },
+    "passageText": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus.",
+    "options": [
+      {"id": "a", "text": "Recusa da separação entre Rute e Noemi"},
+      {"id": "b", "text": "Partilha de caminho e de pouso"},
+      {"id": "c", "text": "Adesão ao povo e ao Deus de Israel"}
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "rute",
+    "section": "rute-lealdade-01-rute-e-noemi",
+    "id": "rute-pro-rute-lealdade-01-rute-e-noemi-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Rute 1:16",
+    "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
+    "evidence": ["Rute 1:16"],
+    "type": "complete",
+    "question": "Complete a frase: \"e deixe de te ___\"",
+    "prompt": "Complete a frase: \"e deixe de te ___\"",
+    "cue": "Complete a frase: \"e deixe de te ___\"",
+    "feedbackCorrect": "Certo: deixar de seguir é o que Rute recusa.",
+    "feedbackWrong": {
+      "a": "Povo vem no voto seguinte, não nesta lacuna.",
+      "c": "Deus fecha o versículo; aqui a palavra é seguir."
+    },
+    "passageText": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus.",
+    "template": "e deixe de te ___",
+    "options": [
+      {"id": "a", "text": "povo"},
+      {"id": "b", "text": "seguir"},
+      {"id": "c", "text": "Deus"}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "rute",
+    "section": "rute-lealdade-01-rute-e-noemi",
+    "id": "rute-pro-rute-lealdade-01-rute-e-noemi-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Rute 1:16",
+    "learningObjective": "Reconhecer que Rute cola sua vida a Noemi e ao Deus de Israel, recusando abandoná-la.",
+    "evidence": ["Rute 1:16"],
+    "type": "connect",
+    "question": "O que Rute 1:16 revela que se liga a este contexto?",
+    "prompt": "O que Rute 1:16 revela que se liga a este contexto?",
+    "cue": "O que Rute 1:16 revela que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o voto cola a estrangeira ao Deus de Israel.",
+    "feedbackWrong": {
+      "a": "Não é nostalgia de Moabe.",
+      "b": "Não é recusa de Noemi; é colar-se a ela."
+    },
+    "passageText": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus.",
+    "passageA": {
+      "ref": "Rute 1:16",
+      "text": "Respondeu Rute: Não me instes que te abandone e deixe de te seguir: pois para onde quer que tu fores, irei eu; e onde quer que tu pousares, pousarei eu: o teu povo será o meu povo, e o teu Deus o meu Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Rute cola sua vida a Noemi e ao Deus de Israel — lealdade que atravessa fronteira e sangue."
+    },
+    "options": [
+      {"id": "a", "text": "Saudade do culto de Moabe"},
+      {"id": "b", "text": "Pedido para Noemi ir embora"},
+      {"id": "c", "text": "Fé colada ao Deus de Israel"}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "rute",
+    "section": "rute-lealdade-01-rute-e-noemi",
+    "id": "rute-pro-rute-lealdade-01-rute-e-noemi-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Rute 2:8–9",
+    "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
+    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "type": "true_false",
+    "question": "Boaz manda Rute não ir a outro campo a rabiscar, mas ajuntar-se às suas moças.",
+    "prompt": "Boaz manda Rute não ir a outro campo a rabiscar, mas ajuntar-se às suas moças.",
+    "cue": "Boaz manda Rute não ir a outro campo a rabiscar, mas ajuntar-se às suas moças.",
+    "feedbackCorrect": "Certo: ele a retém no próprio campo, junto às moças.",
+    "feedbackWrong": {
+      "false": "Rute 2:8 diz exatamente isso."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado.",
+    "trail": "rute",
+    "section": "rute-lealdade-02-nos-campos-de-boaz",
+    "id": "rute-sem-rute-lealdade-02-nos-campos-de-boaz-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Rute 2:8–9",
+    "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
+    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "type": "tap",
+    "question": "Em Rute 2:8–9, toque a palavra que falta em \"não vás a outro ___ a rabiscar\"?",
+    "prompt": "Em Rute 2:8–9, toque a palavra que falta em \"não vás a outro ___ a rabiscar\"?",
+    "cue": "Em Rute 2:8–9, toque a palavra que falta em \"não vás a outro ___ a rabiscar\"?",
+    "feedbackCorrect": "Exato: Boaz fala de outro campo, não de vasos ou moços.",
+    "feedbackWrong": {
+      "a": "Vasos aparecem depois, para a sede.",
+      "c": "Moços recebem ordem; a lacuna pede campo."
+    },
+    "passageText": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado.",
+    "template": "não vás a outro ___ a rabiscar",
+    "options": [
+      {"id": "a", "text": "vasos"},
+      {"id": "b", "text": "campo"},
+      {"id": "c", "text": "moços"}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "rute",
+    "section": "rute-lealdade-02-nos-campos-de-boaz",
+    "id": "rute-sem-rute-lealdade-02-nos-campos-de-boaz-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Rute 2:8–9",
+    "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
+    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "type": "choice",
+    "question": "O que Boaz ordena de modo explícito em Rute 2:8–9?",
+    "prompt": "O que Boaz ordena de modo explícito em Rute 2:8–9?",
+    "cue": "O que Boaz ordena de modo explícito em Rute 2:8–9?",
+    "feedbackCorrect": "Certo: ela fica no campo dele, com água e sem moléstia.",
+    "feedbackWrong": {
+      "b": "Ele manda não ir a outro campo.",
+      "c": "Há ordem para os moços não a molestarem.",
+      "d": "Ela pode beber do que os moços tiverem tirado."
+    },
+    "passageText": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado.",
+    "options": [
+      {"id": "a", "text": "Rute deve ficar daqui, seguir as moças, não ser molestada e beber dos vasos."},
+      {"id": "b", "text": "Rute deve rabiscar em qualquer campo que escolher."},
+      {"id": "c", "text": "Os moços ficam livres para molestar Rute."},
+      {"id": "d", "text": "Rute não pode beber da água tirada pelos moços."}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "rute",
+    "section": "rute-lealdade-02-nos-campos-de-boaz",
+    "id": "rute-sem-rute-lealdade-02-nos-campos-de-boaz-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Rute 2:8–9",
+    "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
+    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Rute 2:8–9?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Rute 2:8–9?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Rute 2:8–9?",
+    "feedbackCorrect": "Certo: retenção no campo, então as moças, depois proteção e água.",
+    "feedbackWrong": {
+      "b": "A água vem depois da ordem aos moços.",
+      "c": "Não ir a outro campo abre a fala de Boaz."
+    },
+    "passageText": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado.",
+    "options": [
+      {"id": "a", "text": "Boaz manda Rute não ir a outro campo nem se afastar dali"},
+      {"id": "b", "text": "Ela deve ajuntar-se às moças e ir após as que segam"},
+      {"id": "c", "text": "Os moços não a molestarão, e ela pode beber dos vasos"}
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "rute",
+    "section": "rute-lealdade-02-nos-campos-de-boaz",
+    "id": "rute-sem-rute-lealdade-02-nos-campos-de-boaz-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Rute 2:8–9",
+    "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
+    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "type": "complete",
+    "question": "Complete a frase: \"mas ajunta-te às minhas ___\"",
+    "prompt": "Complete a frase: \"mas ajunta-te às minhas ___\"",
+    "cue": "Complete a frase: \"mas ajunta-te às minhas ___\"",
+    "feedbackCorrect": "Certo: Boaz a une às suas moças, não aos moços.",
+    "feedbackWrong": {
+      "a": "Moços recebem ordem de não molestar.",
+      "b": "Vasos são para a sede, depois."
+    },
+    "passageText": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado.",
+    "template": "mas ajunta-te às minhas ___",
+    "options": [
+      {"id": "a", "text": "moços"},
+      {"id": "b", "text": "vasos"},
+      {"id": "c", "text": "moças"}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "rute",
+    "section": "rute-lealdade-02-nos-campos-de-boaz",
+    "id": "rute-sem-rute-lealdade-02-nos-campos-de-boaz-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Rute 2:8–9",
+    "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
+    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "type": "connect",
+    "question": "O que Rute 2:8–9 comunica que se liga a este contexto?",
+    "prompt": "O que Rute 2:8–9 comunica que se liga a este contexto?",
+    "cue": "O que Rute 2:8–9 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: no chão da colheita há graça, não abandono.",
+    "feedbackWrong": {
+      "a": "Boaz protege; não explora a estrangeira.",
+      "b": "Ele oferece água, não a proíbe."
+    },
+    "passageText": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado.",
+    "passageA": {
+      "ref": "Rute 2:8–9",
+      "text": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "No campo de Boaz, a estrangeira encontra provisão e proteção — graça no chão da colheita."
+    },
+    "options": [
+      {"id": "a", "text": "Exploração da estrangeira"},
+      {"id": "b", "text": "Proibição de beber água"},
+      {"id": "c", "text": "Graça no chão da colheita"}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "rute",
+    "section": "rute-lealdade-02-nos-campos-de-boaz",
+    "id": "rute-sem-rute-lealdade-02-nos-campos-de-boaz-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Rute 2:8–9",
+    "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
+    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "type": "true_false",
+    "question": "Boaz deixa Rute desprotegida entre os moços e sem acesso à água do campo.",
+    "prompt": "Boaz deixa Rute desprotegida entre os moços e sem acesso à água do campo.",
+    "cue": "Boaz deixa Rute desprotegida entre os moços e sem acesso à água do campo.",
+    "feedbackCorrect": "Certo: ele ordena que não a molestem e abre os vasos.",
+    "feedbackWrong": {
+      "true": "Há ordem contra moléstia e convite a beber dos vasos."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado.",
+    "trail": "rute",
+    "section": "rute-lealdade-02-nos-campos-de-boaz",
+    "id": "rute-cam-rute-lealdade-02-nos-campos-de-boaz-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Rute 2:8–9",
+    "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
+    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "type": "tap",
+    "question": "Em Rute 2:8–9, toque a palavra que falta em \"quando tiveres ___, vai aos vasos\"?",
+    "prompt": "Em Rute 2:8–9, toque a palavra que falta em \"quando tiveres ___, vai aos vasos\"?",
+    "cue": "Em Rute 2:8–9, toque a palavra que falta em \"quando tiveres ___, vai aos vasos\"?",
+    "feedbackCorrect": "Exato: a sede abre o acesso aos vasos.",
+    "feedbackWrong": {
+      "b": "Ordem é o que Boaz deu aos moços.",
+      "c": "Campo é o lugar; a lacuna pede sede."
+    },
+    "passageText": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado.",
+    "template": "quando tiveres ___, vai aos vasos",
+    "options": [
+      {"id": "a", "text": "sede"},
+      {"id": "b", "text": "ordem"},
+      {"id": "c", "text": "campo"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "rute",
+    "section": "rute-lealdade-02-nos-campos-de-boaz",
+    "id": "rute-cam-rute-lealdade-02-nos-campos-de-boaz-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Rute 2:8–9",
+    "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
+    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "type": "choice",
+    "question": "O que a fala de Boaz articula juntas no campo da colheita?",
+    "prompt": "O que a fala de Boaz articula juntas no campo da colheita?",
+    "cue": "O que a fala de Boaz articula juntas no campo da colheita?",
+    "feedbackCorrect": "Certo: lugar seguro, companhia e água já tirada.",
+    "feedbackWrong": {
+      "a": "Ele restringe outros campos para protegê-la, não para explorá-la.",
+      "c": "A água dos moços lhe é aberta, não recusada.",
+      "d": "Há ordem explícita contra moléstia."
+    },
+    "passageText": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado.",
+    "options": [
+      {"id": "a", "text": "Controle rígido para extrair mais trabalho da viúva."},
+      {"id": "b", "text": "Permanência no campo, companhia das moças, proteção e água."},
+      {"id": "c", "text": "Hospitalidade só de palavras, sem acesso real à água."},
+      {"id": "d", "text": "Liberdade total, inclusive o risco de ser molestada."}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "rute",
+    "section": "rute-lealdade-02-nos-campos-de-boaz",
+    "id": "rute-cam-rute-lealdade-02-nos-campos-de-boaz-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Rute 2:8–9",
+    "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
+    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Rute 2:8–9?",
+    "prompt": "Como se encadeiam os eventos de Rute 2:8–9?",
+    "cue": "Como se encadeiam os eventos de Rute 2:8–9?",
+    "feedbackCorrect": "Certo: retenção, então cobertura humana, depois água.",
+    "feedbackWrong": {
+      "b": "A sede vem depois da cobertura dos moços.",
+      "c": "Reter Rute no campo é o primeiro elo."
+    },
+    "passageText": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado.",
+    "options": [
+      {"id": "a", "text": "Boaz retém Rute no seu campo, longe de outros rabiscos"},
+      {"id": "b", "text": "Ele a coloca com as moças e sob ordem de não ser molestada"},
+      {"id": "c", "text": "Ele abre-lhe os vasos quando ela tiver sede"}
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "rute",
+    "section": "rute-lealdade-02-nos-campos-de-boaz",
+    "id": "rute-cam-rute-lealdade-02-nos-campos-de-boaz-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Rute 2:8–9",
+    "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
+    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "type": "complete",
+    "question": "Complete a frase: \"bebe do que os ___ tiverem tirado\"",
+    "prompt": "Complete a frase: \"bebe do que os ___ tiverem tirado\"",
+    "cue": "Complete a frase: \"bebe do que os ___ tiverem tirado\"",
+    "feedbackCorrect": "Certo: a água é a que os moços já tiraram.",
+    "feedbackWrong": {
+      "a": "Moças acompanham a sega; quem tira a água são os moços.",
+      "c": "Vasos guardam a água; quem tira são os moços."
+    },
+    "passageText": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado.",
+    "template": "bebe do que os ___ tiverem tirado",
+    "options": [
+      {"id": "a", "text": "moças"},
+      {"id": "b", "text": "moços"},
+      {"id": "c", "text": "vasos"}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "rute",
+    "section": "rute-lealdade-02-nos-campos-de-boaz",
+    "id": "rute-cam-rute-lealdade-02-nos-campos-de-boaz-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Rute 2:8–9",
+    "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
+    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "type": "connect",
+    "question": "O que a ordem de Boaz em Rute 2:8–9 comunica que se liga a este contexto?",
+    "prompt": "O que a ordem de Boaz em Rute 2:8–9 comunica que se liga a este contexto?",
+    "cue": "O que a ordem de Boaz em Rute 2:8–9 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: provisão e proteção se encontram no mesmo campo.",
+    "feedbackWrong": {
+      "a": "Não é abandono da viúva no mercado.",
+      "c": "Não é só etiqueta; há água e cobertura."
+    },
+    "passageText": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado.",
+    "passageA": {
+      "ref": "Rute 2:8–9",
+      "text": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "No campo de Boaz, a estrangeira encontra provisão e proteção — graça no chão da colheita."
+    },
+    "options": [
+      {"id": "a", "text": "Abandono da viúva no mercado"},
+      {"id": "b", "text": "Provisão com proteção"},
+      {"id": "c", "text": "Cortesia sem cuidado concreto"}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "rute",
+    "section": "rute-lealdade-02-nos-campos-de-boaz",
+    "id": "rute-cam-rute-lealdade-02-nos-campos-de-boaz-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Rute 2:8–9",
+    "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
+    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "type": "true_false",
+    "question": "No campo de Boaz, a estrangeira encontra provisão e proteção, não só permissão de rabiscar.",
+    "prompt": "No campo de Boaz, a estrangeira encontra provisão e proteção, não só permissão de rabiscar.",
+    "cue": "No campo de Boaz, a estrangeira encontra provisão e proteção, não só permissão de rabiscar.",
+    "feedbackCorrect": "Certo: há cobertura, companhia e água, além do rabisco.",
+    "feedbackWrong": {
+      "false": "Ordem, moças e vasos mostram mais que permissão fria."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado.",
+    "trail": "rute",
+    "section": "rute-lealdade-02-nos-campos-de-boaz",
+    "id": "rute-pro-rute-lealdade-02-nos-campos-de-boaz-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Rute 2:8–9",
+    "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
+    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "type": "tap",
+    "question": "Em Rute 2:8–9, toque a palavra que falta em \"nem te afastes ___\"?",
+    "prompt": "Em Rute 2:8–9, toque a palavra que falta em \"nem te afastes ___\"?",
+    "cue": "Em Rute 2:8–9, toque a palavra que falta em \"nem te afastes ___\"?",
+    "feedbackCorrect": "Exato: daqui prende Rute ao campo da graça.",
+    "feedbackWrong": {
+      "a": "Outro descreve o campo a evitar.",
+      "b": "Após aponta as moças que segam."
+    },
+    "passageText": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado.",
+    "template": "nem te afastes ___",
+    "options": [
+      {"id": "a", "text": "outro"},
+      {"id": "b", "text": "após"},
+      {"id": "c", "text": "daqui"}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "rute",
+    "section": "rute-lealdade-02-nos-campos-de-boaz",
+    "id": "rute-pro-rute-lealdade-02-nos-campos-de-boaz-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Rute 2:8–9",
+    "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
+    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "type": "choice",
+    "question": "Qual leitura melhor capta o sentido de graça em Rute 2:8–9?",
+    "prompt": "Qual leitura melhor capta o sentido de graça em Rute 2:8–9?",
+    "cue": "Qual leitura melhor capta o sentido de graça em Rute 2:8–9?",
+    "feedbackCorrect": "Certo: a estrangeira é coberta no chão mesmo da colheita.",
+    "feedbackWrong": {
+      "a": "Não é salário negociado; é cobertura antecipada.",
+      "b": "Boaz não a expõe; ordena que não a molestem.",
+      "d": "A água já tirada é dom, não esmola humilhante."
+    },
+    "passageText": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado.",
+    "options": [
+      {"id": "a", "text": "É um contrato de trabalho com pagamento combinado."},
+      {"id": "b", "text": "É um teste para ver se a moabita aguenta o risco do campo."},
+      {"id": "c", "text": "A estrangeira é acolhida com lugar, cobertura e água no chão da sega."},
+      {"id": "d", "text": "É caridade distante, sem partilhar o que os moços já tiraram."}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "rute",
+    "section": "rute-lealdade-02-nos-campos-de-boaz",
+    "id": "rute-pro-rute-lealdade-02-nos-campos-de-boaz-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Rute 2:8–9",
+    "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
+    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Rute 2:8–9?",
+    "prompt": "Qual sequência revela o sentido de Rute 2:8–9?",
+    "cue": "Qual sequência revela o sentido de Rute 2:8–9?",
+    "feedbackCorrect": "Certo: retenção, cobertura e água revelam graça concreta.",
+    "feedbackWrong": {
+      "b": "A água já tirada fecha o gesto de graça.",
+      "c": "Chamar e reter a estrangeira abre o sentido."
+    },
+    "passageText": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado.",
+    "options": [
+      {"id": "a", "text": "A estrangeira é chamada e retida no campo de Boaz"},
+      {"id": "b", "text": "Proteção e companhia são ordenadas em torno dela"},
+      {"id": "c", "text": "A sede encontra vaso já tirado, graça concreta"}
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "rute",
+    "section": "rute-lealdade-02-nos-campos-de-boaz",
+    "id": "rute-pro-rute-lealdade-02-nos-campos-de-boaz-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Rute 2:8–9",
+    "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
+    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "type": "complete",
+    "question": "Complete a frase: \"não dei eu ___ aos moços que não te molestem\"",
+    "prompt": "Complete a frase: \"não dei eu ___ aos moços que não te molestem\"",
+    "cue": "Complete a frase: \"não dei eu ___ aos moços que não te molestem\"",
+    "feedbackCorrect": "Certo: a proteção começa numa ordem dada aos moços.",
+    "feedbackWrong": {
+      "b": "Sede abre o acesso à água, não esta frase.",
+      "c": "Olhos dirigem Rute ao campo que segam."
+    },
+    "passageText": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado.",
+    "template": "não dei eu ___ aos moços que não te molestem",
+    "options": [
+      {"id": "a", "text": "ordem"},
+      {"id": "b", "text": "sede"},
+      {"id": "c", "text": "olhos"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "rute",
+    "section": "rute-lealdade-02-nos-campos-de-boaz",
+    "id": "rute-pro-rute-lealdade-02-nos-campos-de-boaz-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Rute 2:8–9",
+    "learningObjective": "Ver que Boaz oferece à estrangeira provisão e proteção no campo da colheita.",
+    "evidence": ["Rute 2:8", "Rute 2:9"],
+    "type": "connect",
+    "question": "O que Rute 2:8–9 revela que se liga a este contexto?",
+    "prompt": "O que Rute 2:8–9 revela que se liga a este contexto?",
+    "cue": "O que Rute 2:8–9 revela que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a graça de Boaz se pisa no chão da colheita.",
+    "feedbackWrong": {
+      "b": "Não é favoritismo vazio; há água e cobertura.",
+      "c": "Não é juízo contra a moabita neste palco."
+    },
+    "passageText": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado.",
+    "passageA": {
+      "ref": "Rute 2:8–9",
+      "text": "Então disse Boaz a Rute: Ouve, minha filha? não vás a outro campo a rabiscar, nem te afastes daqui, mas ajunta-te às minhas moças. Dirige os teus olhos para o campo que segarem, e vai após elas; não dei eu ordem aos moços que não te molestem? quando tiveres sede, vai aos vasos e bebe do que os moços tiverem tirado."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "No campo de Boaz, a estrangeira encontra provisão e proteção — graça no chão da colheita."
+    },
+    "options": [
+      {"id": "a", "text": "Graça pisada na colheita"},
+      {"id": "b", "text": "Favoritismo sem cuidado"},
+      {"id": "c", "text": "Juízo contra a moabita"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "rute",
+    "section": "rute-lealdade-02-nos-campos-de-boaz",
+    "id": "rute-pro-rute-lealdade-02-nos-campos-de-boaz-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Rute 4:14",
+    "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
+    "evidence": ["Rute 4:14"],
+    "type": "true_false",
+    "question": "As mulheres dizem que Jeová deixou Noemi hoje sem um parente chegado.",
+    "prompt": "As mulheres dizem que Jeová deixou Noemi hoje sem um parente chegado.",
+    "cue": "As mulheres dizem que Jeová deixou Noemi hoje sem um parente chegado.",
+    "feedbackCorrect": "Certo: o texto diz que Jeová não a deixou sem parente.",
+    "feedbackWrong": {
+      "true": "A bênção afirma o contrário: não te deixou hoje sem parente."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel.",
+    "trail": "rute",
+    "section": "rute-redencao-01-o-resgatador",
+    "id": "rute-sem-rute-redencao-01-o-resgatador-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Rute 4:14",
+    "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
+    "evidence": ["Rute 4:14"],
+    "type": "tap",
+    "question": "Em Rute 4:14, toque a palavra que falta em \"Bendito seja ___\"?",
+    "prompt": "Em Rute 4:14, toque a palavra que falta em \"Bendito seja ___\"?",
+    "cue": "Em Rute 4:14, toque a palavra que falta em \"Bendito seja ___\"?",
+    "feedbackCorrect": "Exato: Jeová é quem as mulheres bendizem.",
+    "feedbackWrong": {
+      "b": "Noemi recebe a bênção; quem é bendito é Jeová.",
+      "c": "Israel é o palco do nome célebre, não o bendito aqui."
+    },
+    "passageText": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel.",
+    "template": "Bendito seja ___",
+    "options": [
+      {"id": "a", "text": "Jeová"},
+      {"id": "b", "text": "Noemi"},
+      {"id": "c", "text": "Israel"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "rute",
+    "section": "rute-redencao-01-o-resgatador",
+    "id": "rute-sem-rute-redencao-01-o-resgatador-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Rute 4:14",
+    "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
+    "evidence": ["Rute 4:14"],
+    "type": "choice",
+    "question": "O que as mulheres afirmam diretamente em Rute 4:14?",
+    "prompt": "O que as mulheres afirmam diretamente em Rute 4:14?",
+    "cue": "O que as mulheres afirmam diretamente em Rute 4:14?",
+    "feedbackCorrect": "Certo: Jeová não a deixou sem parente; o nome deve ser célebre.",
+    "feedbackWrong": {
+      "a": "Elas bendizem a Jeová, não a acusam.",
+      "b": "Há parente chegado hoje, não ausência.",
+      "c": "O nome deve tornar-se célebre em Israel."
+    },
+    "passageText": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel.",
+    "options": [
+      {"id": "a", "text": "As mulheres acusam Jeová de ter abandonado Noemi."},
+      {"id": "b", "text": "Noemi ficou hoje sem qualquer parente chegado."},
+      {"id": "c", "text": "O nome do parente deve permanecer oculto em Israel."},
+      {"id": "d", "text": "Jeová não deixou Noemi sem parente chegado; o nome dele seja célebre."}
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "trail": "rute",
+    "section": "rute-redencao-01-o-resgatador",
+    "id": "rute-sem-rute-redencao-01-o-resgatador-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Rute 4:14",
+    "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
+    "evidence": ["Rute 4:14"],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Rute 4:14?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Rute 4:14?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Rute 4:14?",
+    "feedbackCorrect": "Certo: as mulheres falam, bendizem, então pedem nome célebre.",
+    "feedbackWrong": {
+      "b": "O nome célebre vem depois da bênção a Jeová.",
+      "c": "Quem fala primeiro são as mulheres a Noemi."
+    },
+    "passageText": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel.",
+    "options": [
+      {"id": "a", "text": "As mulheres falam a Noemi"},
+      {"id": "b", "text": "Bendizem a Jeová por não a deixar sem parente chegado"},
+      {"id": "c", "text": "Pedem que o nome dele se torne célebre em Israel"}
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "rute",
+    "section": "rute-redencao-01-o-resgatador",
+    "id": "rute-sem-rute-redencao-01-o-resgatador-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Rute 4:14",
+    "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
+    "evidence": ["Rute 4:14"],
+    "type": "complete",
+    "question": "Complete a frase: \"não te deixou hoje sem um parente ___\"",
+    "prompt": "Complete a frase: \"não te deixou hoje sem um parente ___\"",
+    "cue": "Complete a frase: \"não te deixou hoje sem um parente ___\"",
+    "feedbackCorrect": "Certo: o texto diz parente chegado.",
+    "feedbackWrong": {
+      "a": "Célebre descreve o nome, não o parentesco.",
+      "c": "Nome vem na frase seguinte."
+    },
+    "passageText": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel.",
+    "template": "não te deixou hoje sem um parente ___",
+    "options": [
+      {"id": "a", "text": "célebre"},
+      {"id": "b", "text": "chegado"},
+      {"id": "c", "text": "nome"}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "rute",
+    "section": "rute-redencao-01-o-resgatador",
+    "id": "rute-sem-rute-redencao-01-o-resgatador-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Rute 4:14",
+    "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
+    "evidence": ["Rute 4:14"],
+    "type": "connect",
+    "question": "O que Rute 4:14 comunica que se liga a este contexto?",
+    "prompt": "O que Rute 4:14 comunica que se liga a este contexto?",
+    "cue": "O que Rute 4:14 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o resgatador preenche a ausência e levanta o nome.",
+    "feedbackWrong": {
+      "b": "O texto nega que ela tenha ficado sem parente.",
+      "c": "A bênção aponta a Jeová, não só às mulheres."
+    },
+    "passageText": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel.",
+    "passageA": {
+      "ref": "Rute 4:14",
+      "text": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jeová não deixa Noemi sem resgatador: o parente chegado restaura nome e futuro."
+    },
+    "options": [
+      {"id": "a", "text": "Resgatador restaura o nome"},
+      {"id": "b", "text": "Noemi fica sem parente"},
+      {"id": "c", "text": "Bênção só das vizinhas"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "rute",
+    "section": "rute-redencao-01-o-resgatador",
+    "id": "rute-sem-rute-redencao-01-o-resgatador-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Rute 4:14",
+    "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
+    "evidence": ["Rute 4:14"],
+    "type": "true_false",
+    "question": "O texto liga a bênção de Jeová à presença de um parente chegado que deve tornar o nome célebre.",
+    "prompt": "O texto liga a bênção de Jeová à presença de um parente chegado que deve tornar o nome célebre.",
+    "cue": "O texto liga a bênção de Jeová à presença de um parente chegado que deve tornar o nome célebre.",
+    "feedbackCorrect": "Certo: bênção, parente e nome célebre vêm na mesma fala.",
+    "feedbackWrong": {
+      "false": "As duas orações do versículo unem Jeová, parente e nome."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel.",
+    "trail": "rute",
+    "section": "rute-redencao-01-o-resgatador",
+    "id": "rute-cam-rute-redencao-01-o-resgatador-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Rute 4:14",
+    "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
+    "evidence": ["Rute 4:14"],
+    "type": "tap",
+    "question": "Em Rute 4:14, toque a palavra que falta em \"torne-se o seu nome ___ em Israel\"?",
+    "prompt": "Em Rute 4:14, toque a palavra que falta em \"torne-se o seu nome ___ em Israel\"?",
+    "cue": "Em Rute 4:14, toque a palavra que falta em \"torne-se o seu nome ___ em Israel\"?",
+    "feedbackCorrect": "Exato: o nome deve tornar-se célebre.",
+    "feedbackWrong": {
+      "a": "Bendito abre a fala, não esta lacuna.",
+      "b": "Hoje marca o tempo da provisão, não o nome."
+    },
+    "passageText": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel.",
+    "template": "torne-se o seu nome ___ em Israel",
+    "options": [
+      {"id": "a", "text": "Bendito"},
+      {"id": "b", "text": "hoje"},
+      {"id": "c", "text": "célebre"}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "rute",
+    "section": "rute-redencao-01-o-resgatador",
+    "id": "rute-cam-rute-redencao-01-o-resgatador-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Rute 4:14",
+    "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
+    "evidence": ["Rute 4:14"],
+    "type": "choice",
+    "question": "Como se relacionam Jeová, o parente chegado e o nome em Rute 4:14?",
+    "prompt": "Como se relacionam Jeová, o parente chegado e o nome em Rute 4:14?",
+    "cue": "Como se relacionam Jeová, o parente chegado e o nome em Rute 4:14?",
+    "feedbackCorrect": "Certo: Jeová age; o parente restaura; o nome ganha Israel.",
+    "feedbackWrong": {
+      "b": "O parente não substitui Jeová; Jeová o deu.",
+      "c": "O nome deve ser célebre, não privado.",
+      "d": "As mulheres reconhecem Jeová, não o acusam."
+    },
+    "passageText": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel.",
+    "options": [
+      {"id": "a", "text": "Jeová é bendito por dar o parente cujo nome deve ser célebre em Israel."},
+      {"id": "b", "text": "O parente substitui Jeová, que já não age na história."},
+      {"id": "c", "text": "O nome restaurado deve ficar só dentro da casa, sem Israel."},
+      {"id": "d", "text": "As mulheres separam a bênção de Jeová da figura do resgatador."}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "rute",
+    "section": "rute-redencao-01-o-resgatador",
+    "id": "rute-cam-rute-redencao-01-o-resgatador-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Rute 4:14",
+    "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
+    "evidence": ["Rute 4:14"],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Rute 4:14?",
+    "prompt": "Como se encadeiam os eventos de Rute 4:14?",
+    "cue": "Como se encadeiam os eventos de Rute 4:14?",
+    "feedbackCorrect": "Certo: bênção, então o parente, então o nome em Israel.",
+    "feedbackWrong": {
+      "b": "O nome célebre vem depois do parente dado.",
+      "c": "A bênção a Jeová abre o encadeamento."
+    },
+    "passageText": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel.",
+    "options": [
+      {"id": "a", "text": "Jeová é bendito pelas mulheres"},
+      {"id": "b", "text": "O parente chegado preenche a ausência de Noemi"},
+      {"id": "c", "text": "O nome dele deve tornar-se célebre em Israel"}
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "rute",
+    "section": "rute-redencao-01-o-resgatador",
+    "id": "rute-cam-rute-redencao-01-o-resgatador-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Rute 4:14",
+    "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
+    "evidence": ["Rute 4:14"],
+    "type": "complete",
+    "question": "Complete a frase: \"não te deixou hoje sem um ___ chegado\"",
+    "prompt": "Complete a frase: \"não te deixou hoje sem um ___ chegado\"",
+    "cue": "Complete a frase: \"não te deixou hoje sem um ___ chegado\"",
+    "feedbackCorrect": "Certo: a palavra é parente, o resgatador.",
+    "feedbackWrong": {
+      "b": "Mulheres são quem fala, não o que falta a Noemi.",
+      "c": "Nome vem na oração seguinte."
+    },
+    "passageText": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel.",
+    "template": "não te deixou hoje sem um ___ chegado",
+    "options": [
+      {"id": "a", "text": "parente"},
+      {"id": "b", "text": "mulheres"},
+      {"id": "c", "text": "nome"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "rute",
+    "section": "rute-redencao-01-o-resgatador",
+    "id": "rute-cam-rute-redencao-01-o-resgatador-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Rute 4:14",
+    "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
+    "evidence": ["Rute 4:14"],
+    "type": "connect",
+    "question": "O que a bênção de Rute 4:14 comunica que se liga a este contexto?",
+    "prompt": "O que a bênção de Rute 4:14 comunica que se liga a este contexto?",
+    "cue": "O que a bênção de Rute 4:14 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Jeová dá o resgatador que levanta nome e futuro.",
+    "feedbackWrong": {
+      "a": "Não é silêncio sobre o nome; pede-se celebridade em Israel.",
+      "b": "Não é abandono; é provisão hoje."
+    },
+    "passageText": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel.",
+    "passageA": {
+      "ref": "Rute 4:14",
+      "text": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jeová não deixa Noemi sem resgatador: o parente chegado restaura nome e futuro."
+    },
+    "options": [
+      {"id": "a", "text": "Nome que deve ficar oculto"},
+      {"id": "b", "text": "Abandono definitivo de Noemi"},
+      {"id": "c", "text": "Jeová dá o resgatador"}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "rute",
+    "section": "rute-redencao-01-o-resgatador",
+    "id": "rute-cam-rute-redencao-01-o-resgatador-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Rute 4:14",
+    "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
+    "evidence": ["Rute 4:14"],
+    "type": "true_false",
+    "question": "O resgatador é celebrado só como benefício privado, sem repercussão em Israel.",
+    "prompt": "O resgatador é celebrado só como benefício privado, sem repercussão em Israel.",
+    "cue": "O resgatador é celebrado só como benefício privado, sem repercussão em Israel.",
+    "feedbackCorrect": "Certo: o nome deve tornar-se célebre em Israel.",
+    "feedbackWrong": {
+      "true": "A fala pede celebridade em Israel, não só alívio doméstico."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel.",
+    "trail": "rute",
+    "section": "rute-redencao-01-o-resgatador",
+    "id": "rute-pro-rute-redencao-01-o-resgatador-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Rute 4:14",
+    "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
+    "evidence": ["Rute 4:14"],
+    "type": "tap",
+    "question": "Em Rute 4:14, toque a palavra que falta em \"Disseram as ___ a Noemi\"?",
+    "prompt": "Em Rute 4:14, toque a palavra que falta em \"Disseram as ___ a Noemi\"?",
+    "cue": "Em Rute 4:14, toque a palavra que falta em \"Disseram as ___ a Noemi\"?",
+    "feedbackCorrect": "Exato: são as mulheres quem bendizem diante de Noemi.",
+    "feedbackWrong": {
+      "a": "Jeová é o bendito, não quem diz a frase.",
+      "c": "Israel é o palco do nome, não quem fala."
+    },
+    "passageText": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel.",
+    "template": "Disseram as ___ a Noemi",
+    "options": [
+      {"id": "a", "text": "Jeová"},
+      {"id": "b", "text": "mulheres"},
+      {"id": "c", "text": "Israel"}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "rute",
+    "section": "rute-redencao-01-o-resgatador",
+    "id": "rute-pro-rute-redencao-01-o-resgatador-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Rute 4:14",
+    "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
+    "evidence": ["Rute 4:14"],
+    "type": "choice",
+    "question": "Qual leitura melhor capta o sentido teológico de Rute 4:14?",
+    "prompt": "Qual leitura melhor capta o sentido teológico de Rute 4:14?",
+    "cue": "Qual leitura melhor capta o sentido teológico de Rute 4:14?",
+    "feedbackCorrect": "Certo: Jeová restaura Noemi por um resgatador cujo nome é público.",
+    "feedbackWrong": {
+      "a": "O parente é instrumento de Jeová, não acaso.",
+      "b": "O nome célebre em Israel não é assunto só doméstico.",
+      "d": "As mulheres atribuem a Jeová, não ao mérito de Noemi."
+    },
+    "passageText": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel.",
+    "options": [
+      {"id": "a", "text": "A redenção é sorte humana, sem ação de Jeová."},
+      {"id": "b", "text": "O alívio vale só para Noemi, sem horizonte em Israel."},
+      {"id": "c", "text": "Jeová não deixa a viúva sem resgatador, e o nome dele deve ecoar em Israel."},
+      {"id": "d", "text": "Noemi conquistou o resgatador por astúcia, e Jeová apenas observa."}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "rute",
+    "section": "rute-redencao-01-o-resgatador",
+    "id": "rute-pro-rute-redencao-01-o-resgatador-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Rute 4:14",
+    "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
+    "evidence": ["Rute 4:14"],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Rute 4:14?",
+    "prompt": "Qual sequência revela o sentido de Rute 4:14?",
+    "cue": "Qual sequência revela o sentido de Rute 4:14?",
+    "feedbackCorrect": "Certo: bênção a Jeová, resgatador hoje, nome em Israel.",
+    "feedbackWrong": {
+      "b": "O nome em Israel fecha o sentido público da redenção.",
+      "c": "A bênção a Jeová abre a leitura teológica."
+    },
+    "passageText": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel.",
+    "options": [
+      {"id": "a", "text": "Bênção dirigida a Jeová"},
+      {"id": "b", "text": "Presença do resgatador hoje"},
+      {"id": "c", "text": "Nome restaurado em Israel"}
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "rute",
+    "section": "rute-redencao-01-o-resgatador",
+    "id": "rute-pro-rute-redencao-01-o-resgatador-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Rute 4:14",
+    "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
+    "evidence": ["Rute 4:14"],
+    "type": "complete",
+    "question": "Complete a frase: \"que não te ___ hoje sem um parente chegado\"",
+    "prompt": "Complete a frase: \"que não te ___ hoje sem um parente chegado\"",
+    "cue": "Complete a frase: \"que não te ___ hoje sem um parente chegado\"",
+    "feedbackCorrect": "Certo: Jeová não a deixou sem parente.",
+    "feedbackWrong": {
+      "a": "Disseram abre o versículo; a lacuna pede deixou.",
+      "b": "Torne-se refere-se ao nome, não a esta oração."
+    },
+    "passageText": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel.",
+    "template": "que não te ___ hoje sem um parente chegado",
+    "options": [
+      {"id": "a", "text": "Disseram"},
+      {"id": "b", "text": "torne-se"},
+      {"id": "c", "text": "deixou"}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "rute",
+    "section": "rute-redencao-01-o-resgatador",
+    "id": "rute-pro-rute-redencao-01-o-resgatador-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Rute 4:14",
+    "learningObjective": "Compreender que Jeová não deixa Noemi sem parente chegado que restaure nome e futuro.",
+    "evidence": ["Rute 4:14"],
+    "type": "connect",
+    "question": "O que Rute 4:14 revela que se liga a este contexto?",
+    "prompt": "O que Rute 4:14 revela que se liga a este contexto?",
+    "cue": "O que Rute 4:14 revela que se liga a este contexto?",
+    "feedbackCorrect": "Certo: redenção pública, nome e futuro sob Jeová.",
+    "feedbackWrong": {
+      "a": "Não é fim da linhagem; o nome deve ser célebre.",
+      "c": "Não é crédito humano; Jeová é o bendito."
+    },
+    "passageText": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel.",
+    "passageA": {
+      "ref": "Rute 4:14",
+      "text": "Disseram as mulheres a Noemi: Bendito seja Jeová, que não te deixou hoje sem um parente chegado; e torne-se o seu nome célebre em Israel."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jeová não deixa Noemi sem resgatador: o parente chegado restaura nome e futuro."
+    },
+    "options": [
+      {"id": "a", "text": "Encerramento da linhagem"},
+      {"id": "b", "text": "Redenção com nome público"},
+      {"id": "c", "text": "Mérito exclusivo de Noemi"}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "rute",
+    "section": "rute-redencao-01-o-resgatador",
+    "id": "rute-pro-rute-redencao-01-o-resgatador-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Rute 4:17",
+    "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
+    "evidence": ["Rute 4:17"],
+    "type": "true_false",
+    "question": "As vizinhas chamam o menino de Obede e dizem que nasceu um filho a Noemi.",
+    "prompt": "As vizinhas chamam o menino de Obede e dizem que nasceu um filho a Noemi.",
+    "cue": "As vizinhas chamam o menino de Obede e dizem que nasceu um filho a Noemi.",
+    "feedbackCorrect": "Certo: o texto une o nome Obede ao filho de Noemi.",
+    "feedbackWrong": {
+      "false": "Rute 4:17 afirma as duas coisas."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi.",
+    "trail": "rute",
+    "section": "rute-redencao-02-desafio-linhagem",
+    "id": "rute-sem-rute-redencao-02-desafio-linhagem-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Rute 4:17",
+    "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
+    "evidence": ["Rute 4:17"],
+    "type": "tap",
+    "question": "Em Rute 4:17, toque a palavra que falta em \"Chamaram ao menino ___\"?",
+    "prompt": "Em Rute 4:17, toque a palavra que falta em \"Chamaram ao menino ___\"?",
+    "cue": "Em Rute 4:17, toque a palavra que falta em \"Chamaram ao menino ___\"?",
+    "feedbackCorrect": "Exato: o menino se chama Obede.",
+    "feedbackWrong": {
+      "a": "Jessé é filho de Obede, não o menino nomeado.",
+      "b": "Davi fecha a linhagem; o nome dado é Obede."
+    },
+    "passageText": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi.",
+    "template": "Chamaram ao menino ___",
+    "options": [
+      {"id": "a", "text": "Jessé"},
+      {"id": "b", "text": "Davi"},
+      {"id": "c", "text": "Obede"}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "rute",
+    "section": "rute-redencao-02-desafio-linhagem",
+    "id": "rute-sem-rute-redencao-02-desafio-linhagem-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Rute 4:17",
+    "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
+    "evidence": ["Rute 4:17"],
+    "type": "choice",
+    "question": "O que o texto afirma de modo explícito em Rute 4:17?",
+    "prompt": "O que o texto afirma de modo explícito em Rute 4:17?",
+    "cue": "O que o texto afirma de modo explícito em Rute 4:17?",
+    "feedbackCorrect": "Certo: Obede é pai de Jessé, pai de Davi.",
+    "feedbackWrong": {
+      "a": "Quem dá o nome são as vizinhas, não Noemi sozinha.",
+      "c": "O menino se chama Obede, não Jessé.",
+      "d": "Há ligação explícita com Davi."
+    },
+    "passageText": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi.",
+    "options": [
+      {"id": "a", "text": "Só Noemi escolhe o nome, sem as vizinhas."},
+      {"id": "b", "text": "As vizinhas dizem que nasceu um filho a Noemi; chamam-no Obede, pai de Jessé, pai de Davi."},
+      {"id": "c", "text": "O menino recebe o nome Jessé neste versículo."},
+      {"id": "d", "text": "O texto não menciona Davi."}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "rute",
+    "section": "rute-redencao-02-desafio-linhagem",
+    "id": "rute-sem-rute-redencao-02-desafio-linhagem-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Rute 4:17",
+    "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
+    "evidence": ["Rute 4:17"],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Rute 4:17?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Rute 4:17?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Rute 4:17?",
+    "feedbackCorrect": "Certo: nome, então Obede como filho de Noemi, depois Jessé e Davi.",
+    "feedbackWrong": {
+      "b": "A linhagem até Davi fecha o versículo.",
+      "c": "As vizinhas dão o nome no início."
+    },
+    "passageText": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi.",
+    "options": [
+      {"id": "a", "text": "As vizinhas dão nome ao menino"},
+      {"id": "b", "text": "Dizem que nasceu um filho a Noemi e chamam-no Obede"},
+      {"id": "c", "text": "Obede é pai de Jessé, pai de Davi"}
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "rute",
+    "section": "rute-redencao-02-desafio-linhagem",
+    "id": "rute-sem-rute-redencao-02-desafio-linhagem-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Rute 4:17",
+    "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
+    "evidence": ["Rute 4:17"],
+    "type": "complete",
+    "question": "Complete a frase: \"Nasceu um ___ a Noemi\"",
+    "prompt": "Complete a frase: \"Nasceu um ___ a Noemi\"",
+    "cue": "Complete a frase: \"Nasceu um ___ a Noemi\"",
+    "feedbackCorrect": "Certo: nasceu um filho a Noemi.",
+    "feedbackWrong": {
+      "b": "Nome é o que as vizinhas dão, não o que nasce.",
+      "c": "Pai descreve Obede em relação a Jessé."
+    },
+    "passageText": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi.",
+    "template": "Nasceu um ___ a Noemi",
+    "options": [
+      {"id": "a", "text": "filho"},
+      {"id": "b", "text": "nome"},
+      {"id": "c", "text": "pai"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "rute",
+    "section": "rute-redencao-02-desafio-linhagem",
+    "id": "rute-sem-rute-redencao-02-desafio-linhagem-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Rute 4:17",
+    "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
+    "evidence": ["Rute 4:17"],
+    "type": "connect",
+    "question": "O que Rute 4:17 comunica que se liga a este contexto?",
+    "prompt": "O que Rute 4:17 comunica que se liga a este contexto?",
+    "cue": "O que Rute 4:17 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o nome Obede abre a linhagem até Davi.",
+    "feedbackWrong": {
+      "a": "O texto continua até Jessé e Davi.",
+      "c": "Obede tem descendência explícita."
+    },
+    "passageText": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi.",
+    "passageA": {
+      "ref": "Rute 4:17",
+      "text": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A lealdade de Rute entra na linhagem de Davi — redenção com nome e história."
+    },
+    "options": [
+      {"id": "a", "text": "Fim da história de Noemi"},
+      {"id": "b", "text": "Linhagem até Davi"},
+      {"id": "c", "text": "Obede sem descendência"}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "rute",
+    "section": "rute-redencao-02-desafio-linhagem",
+    "id": "rute-sem-rute-redencao-02-desafio-linhagem-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Rute 4:17",
+    "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
+    "evidence": ["Rute 4:17"],
+    "type": "true_false",
+    "question": "Obede é apresentado como fim da linhagem, sem ligação com Jessé ou Davi.",
+    "prompt": "Obede é apresentado como fim da linhagem, sem ligação com Jessé ou Davi.",
+    "cue": "Obede é apresentado como fim da linhagem, sem ligação com Jessé ou Davi.",
+    "feedbackCorrect": "Certo: ele é pai de Jessé, pai de Davi.",
+    "feedbackWrong": {
+      "true": "O versículo liga Obede a Jessé e a Davi."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi.",
+    "trail": "rute",
+    "section": "rute-redencao-02-desafio-linhagem",
+    "id": "rute-cam-rute-redencao-02-desafio-linhagem-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Rute 4:17",
+    "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
+    "evidence": ["Rute 4:17"],
+    "type": "tap",
+    "question": "Em Rute 4:17, toque a palavra que falta em \"Ele é o pai de ___, pai de Davi\"?",
+    "prompt": "Em Rute 4:17, toque a palavra que falta em \"Ele é o pai de ___, pai de Davi\"?",
+    "cue": "Em Rute 4:17, toque a palavra que falta em \"Ele é o pai de ___, pai de Davi\"?",
+    "feedbackCorrect": "Exato: Jessé liga Obede a Davi.",
+    "feedbackWrong": {
+      "b": "Obede é o menino; a lacuna pede Jessé.",
+      "c": "Noemi recebe o filho; não preenche esta lacuna."
+    },
+    "passageText": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi.",
+    "template": "Ele é o pai de ___, pai de Davi",
+    "options": [
+      {"id": "a", "text": "Jessé"},
+      {"id": "b", "text": "Obede"},
+      {"id": "c", "text": "Noemi"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "rute",
+    "section": "rute-redencao-02-desafio-linhagem",
+    "id": "rute-cam-rute-redencao-02-desafio-linhagem-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Rute 4:17",
+    "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
+    "evidence": ["Rute 4:17"],
+    "type": "choice",
+    "question": "O que o encadeamento de Rute 4:17 mostra sobre nome, casa e futuro?",
+    "prompt": "O que o encadeamento de Rute 4:17 mostra sobre nome, casa e futuro?",
+    "cue": "O que o encadeamento de Rute 4:17 mostra sobre nome, casa e futuro?",
+    "feedbackCorrect": "Certo: o filho de Noemi entra na linha que chega a Davi.",
+    "feedbackWrong": {
+      "a": "As vizinhas nomeiam; a casa não some.",
+      "b": "Atribuir o filho a Noemi restaura a casa, não a apaga.",
+      "c": "A linhagem segue; não pára em Obede."
+    },
+    "passageText": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi.",
+    "options": [
+      {"id": "a", "text": "O nome público das vizinhas substitui qualquer futuro da casa."},
+      {"id": "b", "text": "Chamar o menino filho de Noemi apaga Rute da história."},
+      {"id": "c", "text": "Obede encerra a narrativa sem abrir linhagem real."},
+      {"id": "d", "text": "O menino nomeado como filho de Noemi liga essa casa à linhagem de Davi."}
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "trail": "rute",
+    "section": "rute-redencao-02-desafio-linhagem",
+    "id": "rute-cam-rute-redencao-02-desafio-linhagem-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Rute 4:17",
+    "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
+    "evidence": ["Rute 4:17"],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Rute 4:17?",
+    "prompt": "Como se encadeiam os eventos de Rute 4:17?",
+    "cue": "Como se encadeiam os eventos de Rute 4:17?",
+    "feedbackCorrect": "Certo: nome comunitário, filho de Noemi, então Jessé e Davi.",
+    "feedbackWrong": {
+      "b": "Jessé e Davi fecham o encadeamento.",
+      "c": "As vizinhas nomeiam no começo."
+    },
+    "passageText": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi.",
+    "options": [
+      {"id": "a", "text": "As vizinhas nomeiam o menino"},
+      {"id": "b", "text": "Obede é reconhecido como filho de Noemi"},
+      {"id": "c", "text": "A linhagem segue até Jessé e Davi"}
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "rute",
+    "section": "rute-redencao-02-desafio-linhagem",
+    "id": "rute-cam-rute-redencao-02-desafio-linhagem-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Rute 4:17",
+    "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
+    "evidence": ["Rute 4:17"],
+    "type": "complete",
+    "question": "Complete a frase: \"As mulheres suas ___ deram-lhe nome\"",
+    "prompt": "Complete a frase: \"As mulheres suas ___ deram-lhe nome\"",
+    "cue": "Complete a frase: \"As mulheres suas ___ deram-lhe nome\"",
+    "feedbackCorrect": "Certo: são as vizinhas quem dão o nome.",
+    "feedbackWrong": {
+      "a": "Menino é quem recebe o nome.",
+      "b": "Filho é o que nasceu a Noemi."
+    },
+    "passageText": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi.",
+    "template": "As mulheres suas ___ deram-lhe nome",
+    "options": [
+      {"id": "a", "text": "menino"},
+      {"id": "b", "text": "filho"},
+      {"id": "c", "text": "vizinhas"}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "rute",
+    "section": "rute-redencao-02-desafio-linhagem",
+    "id": "rute-cam-rute-redencao-02-desafio-linhagem-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Rute 4:17",
+    "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
+    "evidence": ["Rute 4:17"],
+    "type": "connect",
+    "question": "O que o nome em Rute 4:17 comunica que se liga a este contexto?",
+    "prompt": "O que o nome em Rute 4:17 comunica que se liga a este contexto?",
+    "cue": "O que o nome em Rute 4:17 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: redenção ganha nome e história rumo a Davi.",
+    "feedbackWrong": {
+      "b": "Não é anonimato; há nome e genealogia.",
+      "c": "Não é ruptura; a casa de Noemi continua."
+    },
+    "passageText": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi.",
+    "passageA": {
+      "ref": "Rute 4:17",
+      "text": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A lealdade de Rute entra na linhagem de Davi — redenção com nome e história."
+    },
+    "options": [
+      {"id": "a", "text": "Nome que abre história"},
+      {"id": "b", "text": "Menino sem identidade"},
+      {"id": "c", "text": "Ruptura da casa de Noemi"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "rute",
+    "section": "rute-redencao-02-desafio-linhagem",
+    "id": "rute-cam-rute-redencao-02-desafio-linhagem-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Rute 4:17",
+    "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
+    "evidence": ["Rute 4:17"],
+    "type": "true_false",
+    "question": "A redenção ganha nome e história quando a lealdade de Rute entra na linhagem de Davi.",
+    "prompt": "A redenção ganha nome e história quando a lealdade de Rute entra na linhagem de Davi.",
+    "cue": "A redenção ganha nome e história quando a lealdade de Rute entra na linhagem de Davi.",
+    "feedbackCorrect": "Certo: Obede, Jessé e Davi dão história ao voto de Rute.",
+    "feedbackWrong": {
+      "false": "O versículo amarra o filho nomeado à casa de Davi."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi.",
+    "trail": "rute",
+    "section": "rute-redencao-02-desafio-linhagem",
+    "id": "rute-pro-rute-redencao-02-desafio-linhagem-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Rute 4:17",
+    "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
+    "evidence": ["Rute 4:17"],
+    "type": "tap",
+    "question": "Em Rute 4:17, toque a palavra que falta em \"___ um filho a Noemi\"?",
+    "prompt": "Em Rute 4:17, toque a palavra que falta em \"___ um filho a Noemi\"?",
+    "cue": "Em Rute 4:17, toque a palavra que falta em \"___ um filho a Noemi\"?",
+    "feedbackCorrect": "Exato: Nasceu um filho a Noemi.",
+    "feedbackWrong": {
+      "a": "Chamaram introduz o nome Obede.",
+      "c": "Deram-lhe refere-se ao ato de nomear."
+    },
+    "passageText": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi.",
+    "template": "___ um filho a Noemi",
+    "options": [
+      {"id": "a", "text": "Chamaram"},
+      {"id": "b", "text": "Nasceu"},
+      {"id": "c", "text": "deram-lhe"}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "rute",
+    "section": "rute-redencao-02-desafio-linhagem",
+    "id": "rute-pro-rute-redencao-02-desafio-linhagem-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Rute 4:17",
+    "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
+    "evidence": ["Rute 4:17"],
+    "type": "choice",
+    "question": "Qual leitura melhor capta o sentido teológico de Rute 4:17?",
+    "prompt": "Qual leitura melhor capta o sentido teológico de Rute 4:17?",
+    "cue": "Qual leitura melhor capta o sentido teológico de Rute 4:17?",
+    "feedbackCorrect": "Certo: a lealdade da moabita entra na história de Davi.",
+    "feedbackWrong": {
+      "b": "Atribuir o filho a Noemi restaura a casa, não apaga Rute.",
+      "c": "Davi não é acaso genealógico; o texto o nomeia.",
+      "d": "As vizinhas testemunham redenção, não fofoca vazia."
+    },
+    "passageText": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi.",
+    "options": [
+      {"id": "a", "text": "A lealdade da estrangeira entra, com nome, na linhagem que chega a Davi."},
+      {"id": "b", "text": "O filho de Noemi prova que Rute foi excluída da aliança."},
+      {"id": "c", "text": "Davi aparece por acaso, sem ligação com a redenção de Noemi."},
+      {"id": "d", "text": "O nome dado pelas vizinhas é só costume social, sem peso na história santa."}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "rute",
+    "section": "rute-redencao-02-desafio-linhagem",
+    "id": "rute-pro-rute-redencao-02-desafio-linhagem-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Rute 4:17",
+    "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
+    "evidence": ["Rute 4:17"],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Rute 4:17?",
+    "prompt": "Qual sequência revela o sentido de Rute 4:17?",
+    "cue": "Qual sequência revela o sentido de Rute 4:17?",
+    "feedbackCorrect": "Certo: a comunidade nomeia, a casa é restaurada, Davi aparece.",
+    "feedbackWrong": {
+      "b": "A linhagem de Davi fecha o sentido do livro.",
+      "c": "O nome comunitário abre a revelação."
+    },
+    "passageText": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi.",
+    "options": [
+      {"id": "a", "text": "A comunidade dá nome ao menino"},
+      {"id": "b", "text": "A redenção é atribuída à casa de Noemi"},
+      {"id": "c", "text": "A linhagem desemboca em Davi"}
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "rute",
+    "section": "rute-redencao-02-desafio-linhagem",
+    "id": "rute-pro-rute-redencao-02-desafio-linhagem-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Rute 4:17",
+    "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
+    "evidence": ["Rute 4:17"],
+    "type": "complete",
+    "question": "Complete a frase: \"Ele é o ___ de Jessé, pai de Davi\"",
+    "prompt": "Complete a frase: \"Ele é o ___ de Jessé, pai de Davi\"",
+    "cue": "Complete a frase: \"Ele é o ___ de Jessé, pai de Davi\"",
+    "feedbackCorrect": "Certo: Obede é o pai de Jessé.",
+    "feedbackWrong": {
+      "a": "Menino é como o chamam; a lacuna pede pai.",
+      "c": "Nome é o que as vizinhas dão."
+    },
+    "passageText": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi.",
+    "template": "Ele é o ___ de Jessé, pai de Davi",
+    "options": [
+      {"id": "a", "text": "menino"},
+      {"id": "b", "text": "pai"},
+      {"id": "c", "text": "nome"}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "rute",
+    "section": "rute-redencao-02-desafio-linhagem",
+    "id": "rute-pro-rute-redencao-02-desafio-linhagem-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Rute 4:17",
+    "learningObjective": "Perceber que a lealdade de Rute entra na linhagem de Davi por Obede, Jessé e o nome dado às vizinhas.",
+    "evidence": ["Rute 4:17"],
+    "type": "connect",
+    "question": "O que Rute 4:17 revela que se liga a este contexto?",
+    "prompt": "O que Rute 4:17 revela que se liga a este contexto?",
+    "cue": "O que Rute 4:17 revela que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a lealdade de Rute entra na história de Davi.",
+    "feedbackWrong": {
+      "a": "Não é episódio fechado; aponta a Davi.",
+      "b": "Não apaga a moabita; a linhagem a inclui."
+    },
+    "passageText": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi.",
+    "passageA": {
+      "ref": "Rute 4:17",
+      "text": "As mulheres suas vizinhas deram-lhe nome, dizendo: Nasceu um filho a Noemi. Chamaram ao menino Obede. Ele é o pai de Jessé, pai de Davi."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A lealdade de Rute entra na linhagem de Davi — redenção com nome e história."
+    },
+    "options": [
+      {"id": "a", "text": "Episódio sem futuro real"},
+      {"id": "b", "text": "Exclusão da moabita"},
+      {"id": "c", "text": "Lealdade na casa de Davi"}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "rute",
+    "section": "rute-redencao-02-desafio-linhagem",
+    "id": "rute-pro-rute-redencao-02-desafio-linhagem-06"
+  }
+]

@@ -1,0 +1,2960 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 1:4–5",
+    "learningObjective": "Ver que Neemias começa o muro de joelhos: choro, jejum e oração ao Deus que guarda a aliança.",
+    "evidence": [
+      "Neemias 1:4",
+      "Neemias 1:5"
+    ],
+    "type": "true_false",
+    "question": "Ao ouvir as palavras, Neemias sentou-se, chorou e pranteou alguns dias.",
+    "prompt": "Ao ouvir as palavras, Neemias sentou-se, chorou e pranteou alguns dias.",
+    "cue": "Ao ouvir as palavras, Neemias sentou-se, chorou e pranteou alguns dias.",
+    "feedbackCorrect": "Certo: o texto registra choro e pranto por alguns dias.",
+    "feedbackWrong": {
+      "false": "Releia Neemias 1:4: ele se sentou, chorou e pranteou alguns dias."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Ao ouvir essas palavras, sentei-me, e chorei, e pranteei alguns dias; jejuei, e orei diante do Deus do céu, e disse: Rogo-te, Jeová, Deus do céu, que és o Deus grande e terrível, que guardas a aliança e a misericórdia com aqueles que o amam e observam os seus mandamentos,",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "id": "neemias-sem-neemias-muros-01-oracao-de-neemias-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 1:4–5",
+    "learningObjective": "Ver que Neemias começa o muro de joelhos: choro, jejum e oração ao Deus que guarda a aliança.",
+    "evidence": [
+      "Neemias 1:4",
+      "Neemias 1:5"
+    ],
+    "type": "tap",
+    "question": "Em Neemias 1:4–5, toque a palavra que falta em \"Ao ouvir essas palavras, sentei-me, e ___, e pranteei alguns dias\"?",
+    "prompt": "Em Neemias 1:4–5, toque a palavra que falta em \"Ao ouvir essas palavras, sentei-me, e ___, e pranteei alguns dias\"?",
+    "cue": "Em Neemias 1:4–5, toque a palavra que falta em \"Ao ouvir essas palavras, sentei-me, e ___, e pranteei alguns dias\"?",
+    "feedbackCorrect": "Exato: depois de sentar-se, Neemias chorou.",
+    "feedbackWrong": {
+      "b": "O jejum vem depois do pranto, não nesta lacuna.",
+      "c": "A oração vem depois do jejum, não nesta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "chorei"
+      },
+      {
+        "id": "b",
+        "text": "jejuei"
+      },
+      {
+        "id": "c",
+        "text": "orei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ao ouvir essas palavras, sentei-me, e chorei, e pranteei alguns dias; jejuei, e orei diante do Deus do céu, e disse: Rogo-te, Jeová, Deus do céu, que és o Deus grande e terrível, que guardas a aliança e a misericórdia com aqueles que o amam e observam os seus mandamentos,",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "id": "neemias-sem-neemias-muros-01-oracao-de-neemias-02",
+    "template": "Ao ouvir essas palavras, sentei-me, e ___, e pranteei alguns dias"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 1:4–5",
+    "learningObjective": "Ver que Neemias começa o muro de joelhos: choro, jejum e oração ao Deus que guarda a aliança.",
+    "evidence": [
+      "Neemias 1:4",
+      "Neemias 1:5"
+    ],
+    "type": "choice",
+    "question": "O que Neemias 1:4–5 afirma de modo explícito?",
+    "prompt": "O que Neemias 1:4–5 afirma de modo explícito?",
+    "cue": "O que Neemias 1:4–5 afirma de modo explícito?",
+    "feedbackCorrect": "Certo: jejum e oração diante do Deus do céu estão no texto.",
+    "feedbackWrong": {
+      "b": "O texto não menciona partida imediata para Jerusalém.",
+      "c": "Não há silêncio: ele ora e invoca Jeová.",
+      "d": "O texto não fala de festa; fala de choro e jejum."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Neemias jejuou e orou diante do Deus do céu."
+      },
+      {
+        "id": "b",
+        "text": "Neemias partiu no mesmo dia para Jerusalém."
+      },
+      {
+        "id": "c",
+        "text": "Neemias calou-se e não falou com Deus."
+      },
+      {
+        "id": "d",
+        "text": "Neemias celebrou uma festa em Susa."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ao ouvir essas palavras, sentei-me, e chorei, e pranteei alguns dias; jejuei, e orei diante do Deus do céu, e disse: Rogo-te, Jeová, Deus do céu, que és o Deus grande e terrível, que guardas a aliança e a misericórdia com aqueles que o amam e observam os seus mandamentos,",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "id": "neemias-sem-neemias-muros-01-oracao-de-neemias-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 1:4–5",
+    "learningObjective": "Ver que Neemias começa o muro de joelhos: choro, jejum e oração ao Deus que guarda a aliança.",
+    "evidence": [
+      "Neemias 1:4",
+      "Neemias 1:5"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Neemias 1:4–5?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Neemias 1:4–5?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Neemias 1:4–5?",
+    "feedbackCorrect": "Certo: choro, depois jejum e oração, depois a invocação.",
+    "feedbackWrong": {
+      "b": "Esse trecho não é o primeiro no texto.",
+      "c": "Esse trecho fecha a invocação, não abre o relato."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ao ouvir essas palavras, sentei-me, e chorei, e pranteei alguns dias"
+      },
+      {
+        "id": "b",
+        "text": "jejuei, e orei diante do Deus do céu"
+      },
+      {
+        "id": "c",
+        "text": "Rogo-te, Jeová, Deus do céu, que és o Deus grande e terrível"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ao ouvir essas palavras, sentei-me, e chorei, e pranteei alguns dias; jejuei, e orei diante do Deus do céu, e disse: Rogo-te, Jeová, Deus do céu, que és o Deus grande e terrível, que guardas a aliança e a misericórdia com aqueles que o amam e observam os seus mandamentos,",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "id": "neemias-sem-neemias-muros-01-oracao-de-neemias-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 1:4–5",
+    "learningObjective": "Ver que Neemias começa o muro de joelhos: choro, jejum e oração ao Deus que guarda a aliança.",
+    "evidence": [
+      "Neemias 1:4",
+      "Neemias 1:5"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Ao ouvir essas palavras, sentei-me, e chorei, e pranteei alguns dias; ___, e orei diante do Deus do céu\"",
+    "prompt": "Complete a frase: \"Ao ouvir essas palavras, sentei-me, e chorei, e pranteei alguns dias; ___, e orei diante do Deus do céu\"",
+    "cue": "Complete a frase: \"Ao ouvir essas palavras, sentei-me, e chorei, e pranteei alguns dias; ___, e orei diante do Deus do céu\"",
+    "feedbackCorrect": "Certo: o jejum vem junto com a oração diante de Deus.",
+    "feedbackWrong": {
+      "b": "\"chorei\" já aparece antes desta lacuna.",
+      "c": "\"Rogo-te\" abre a oração, depois do jejum."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "jejuei"
+      },
+      {
+        "id": "b",
+        "text": "chorei"
+      },
+      {
+        "id": "c",
+        "text": "Rogo-te"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ao ouvir essas palavras, sentei-me, e chorei, e pranteei alguns dias; jejuei, e orei diante do Deus do céu, e disse: Rogo-te, Jeová, Deus do céu, que és o Deus grande e terrível, que guardas a aliança e a misericórdia com aqueles que o amam e observam os seus mandamentos,",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "id": "neemias-sem-neemias-muros-01-oracao-de-neemias-05",
+    "template": "Ao ouvir essas palavras, sentei-me, e chorei, e pranteei alguns dias; ___, e orei diante do Deus do céu"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 1:4–5",
+    "learningObjective": "Ver que Neemias começa o muro de joelhos: choro, jejum e oração ao Deus que guarda a aliança.",
+    "evidence": [
+      "Neemias 1:4",
+      "Neemias 1:5"
+    ],
+    "type": "connect",
+    "question": "O que Neemias 1:4–5 comunica que se liga a este contexto?",
+    "prompt": "O que Neemias 1:4–5 comunica que se liga a este contexto?",
+    "cue": "O que Neemias 1:4–5 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o muro começa de joelhos, não de ferramentas.",
+    "feedbackWrong": {
+      "b": "O texto descreve choro e oração, não partida imediata.",
+      "c": "Ele ora ao Deus do céu; não silencia diante da notícia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O muro começa de joelhos"
+      },
+      {
+        "id": "b",
+        "text": "Partida imediata sem orar"
+      },
+      {
+        "id": "c",
+        "text": "Silêncio diante da ruína"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ao ouvir essas palavras, sentei-me, e chorei, e pranteei alguns dias; jejuei, e orei diante do Deus do céu, e disse: Rogo-te, Jeová, Deus do céu, que és o Deus grande e terrível, que guardas a aliança e a misericórdia com aqueles que o amam e observam os seus mandamentos,",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "id": "neemias-sem-neemias-muros-01-oracao-de-neemias-06",
+    "passageA": {
+      "ref": "Neemias 1:4",
+      "text": "sentei-me, e chorei, e pranteei alguns dias; jejuei, e orei diante do Deus do céu"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Neemias começa o muro de joelhos: choro, jejum e oração ao Deus que guarda a aliança."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 1:4–5",
+    "learningObjective": "Ver que Neemias começa o muro de joelhos: choro, jejum e oração ao Deus que guarda a aliança.",
+    "evidence": [
+      "Neemias 1:4",
+      "Neemias 1:5"
+    ],
+    "type": "true_false",
+    "question": "Neemias ora a Jeová como o Deus que guarda a aliança e a misericórdia com os que o amam.",
+    "prompt": "Neemias ora a Jeová como o Deus que guarda a aliança e a misericórdia com os que o amam.",
+    "cue": "Neemias ora a Jeová como o Deus que guarda a aliança e a misericórdia com os que o amam.",
+    "feedbackCorrect": "Certo: a oração nomeia o Deus da aliança e da misericórdia.",
+    "feedbackWrong": {
+      "false": "Neemias 1:5 diz que Deus guarda a aliança e a misericórdia."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Ao ouvir essas palavras, sentei-me, e chorei, e pranteei alguns dias; jejuei, e orei diante do Deus do céu, e disse: Rogo-te, Jeová, Deus do céu, que és o Deus grande e terrível, que guardas a aliança e a misericórdia com aqueles que o amam e observam os seus mandamentos,",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "id": "neemias-cam-neemias-muros-01-oracao-de-neemias-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 1:4–5",
+    "learningObjective": "Ver que Neemias começa o muro de joelhos: choro, jejum e oração ao Deus que guarda a aliança.",
+    "evidence": [
+      "Neemias 1:4",
+      "Neemias 1:5"
+    ],
+    "type": "tap",
+    "question": "Em Neemias 1:4–5, toque a palavra que falta em \"que és o Deus grande e terrível, que guardas a ___ e a misericórdia\"?",
+    "prompt": "Em Neemias 1:4–5, toque a palavra que falta em \"que és o Deus grande e terrível, que guardas a ___ e a misericórdia\"?",
+    "cue": "Em Neemias 1:4–5, toque a palavra que falta em \"que és o Deus grande e terrível, que guardas a ___ e a misericórdia\"?",
+    "feedbackCorrect": "Exato: Deus guarda a aliança e a misericórdia.",
+    "feedbackWrong": {
+      "b": "O pranto é a reação de Neemias, não o que Deus guarda.",
+      "c": "Os mandamentos vêm no fim: observam os seus mandamentos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "aliança"
+      },
+      {
+        "id": "b",
+        "text": "pranteei"
+      },
+      {
+        "id": "c",
+        "text": "mandamentos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ao ouvir essas palavras, sentei-me, e chorei, e pranteei alguns dias; jejuei, e orei diante do Deus do céu, e disse: Rogo-te, Jeová, Deus do céu, que és o Deus grande e terrível, que guardas a aliança e a misericórdia com aqueles que o amam e observam os seus mandamentos,",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "id": "neemias-cam-neemias-muros-01-oracao-de-neemias-02",
+    "template": "que és o Deus grande e terrível, que guardas a ___ e a misericórdia"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 1:4–5",
+    "learningObjective": "Ver que Neemias começa o muro de joelhos: choro, jejum e oração ao Deus que guarda a aliança.",
+    "evidence": [
+      "Neemias 1:4",
+      "Neemias 1:5"
+    ],
+    "type": "choice",
+    "question": "Como se relacionam o choro de Neemias e a invocação a Jeová em 1:4–5?",
+    "prompt": "Como se relacionam o choro de Neemias e a invocação a Jeová em 1:4–5?",
+    "cue": "Como se relacionam o choro de Neemias e a invocação a Jeová em 1:4–5?",
+    "feedbackCorrect": "Certo: o luto se torna oração ao Deus da aliança.",
+    "feedbackWrong": {
+      "b": "O texto une choro, jejum e oração; não opõe um ao outro.",
+      "c": "Ele fala a Jeová; não recusa invocar o nome.",
+      "d": "O texto não menciona consulta a magos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O luto se converte em jejum e oração ao Deus da aliança."
+      },
+      {
+        "id": "b",
+        "text": "O choro substitui a oração e dispensa invocar a Deus."
+      },
+      {
+        "id": "c",
+        "text": "Neemias recusa falar o nome de Jeová no pranto."
+      },
+      {
+        "id": "d",
+        "text": "O pranto serve para consultar magos de Susa."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ao ouvir essas palavras, sentei-me, e chorei, e pranteei alguns dias; jejuei, e orei diante do Deus do céu, e disse: Rogo-te, Jeová, Deus do céu, que és o Deus grande e terrível, que guardas a aliança e a misericórdia com aqueles que o amam e observam os seus mandamentos,",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "id": "neemias-cam-neemias-muros-01-oracao-de-neemias-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 1:4–5",
+    "learningObjective": "Ver que Neemias começa o muro de joelhos: choro, jejum e oração ao Deus que guarda a aliança.",
+    "evidence": [
+      "Neemias 1:4",
+      "Neemias 1:5"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Neemias 1:4–5?",
+    "prompt": "Como se encadeiam os eventos de Neemias 1:4–5?",
+    "cue": "Como se encadeiam os eventos de Neemias 1:4–5?",
+    "feedbackCorrect": "Certo: ouvir, prantear, jejuar e orar ao Deus da aliança.",
+    "feedbackWrong": {
+      "b": "O pranto vem depois de ouvir, não no fim.",
+      "c": "A aliança fecha a invocação, não abre o relato."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ao ouvir essas palavras"
+      },
+      {
+        "id": "b",
+        "text": "pranteei alguns dias; jejuei, e orei diante do Deus do céu"
+      },
+      {
+        "id": "c",
+        "text": "que guardas a aliança e a misericórdia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ao ouvir essas palavras, sentei-me, e chorei, e pranteei alguns dias; jejuei, e orei diante do Deus do céu, e disse: Rogo-te, Jeová, Deus do céu, que és o Deus grande e terrível, que guardas a aliança e a misericórdia com aqueles que o amam e observam os seus mandamentos,",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "id": "neemias-cam-neemias-muros-01-oracao-de-neemias-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 1:4–5",
+    "learningObjective": "Ver que Neemias começa o muro de joelhos: choro, jejum e oração ao Deus que guarda a aliança.",
+    "evidence": [
+      "Neemias 1:4",
+      "Neemias 1:5"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"que és o Deus grande e terrível, que guardas a aliança e a ___ com aqueles que o amam\"",
+    "prompt": "Complete a frase: \"que és o Deus grande e terrível, que guardas a aliança e a ___ com aqueles que o amam\"",
+    "cue": "Complete a frase: \"que és o Deus grande e terrível, que guardas a aliança e a ___ com aqueles que o amam\"",
+    "feedbackCorrect": "Certo: aliança e misericórdia andam juntas na oração.",
+    "feedbackWrong": {
+      "b": "\"aliança\" já preenche o trecho anterior da frase.",
+      "c": "\"palavras\" abre o versículo 4, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "misericórdia"
+      },
+      {
+        "id": "b",
+        "text": "aliança"
+      },
+      {
+        "id": "c",
+        "text": "palavras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ao ouvir essas palavras, sentei-me, e chorei, e pranteei alguns dias; jejuei, e orei diante do Deus do céu, e disse: Rogo-te, Jeová, Deus do céu, que és o Deus grande e terrível, que guardas a aliança e a misericórdia com aqueles que o amam e observam os seus mandamentos,",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "id": "neemias-cam-neemias-muros-01-oracao-de-neemias-05",
+    "template": "que és o Deus grande e terrível, que guardas a aliança e a ___ com aqueles que o amam"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 1:4–5",
+    "learningObjective": "Ver que Neemias começa o muro de joelhos: choro, jejum e oração ao Deus que guarda a aliança.",
+    "evidence": [
+      "Neemias 1:4",
+      "Neemias 1:5"
+    ],
+    "type": "connect",
+    "question": "O que Neemias 1:5 comunica que se liga a este contexto?",
+    "prompt": "O que Neemias 1:5 comunica que se liga a este contexto?",
+    "cue": "O que Neemias 1:5 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: ele ora ao Deus que guarda a aliança.",
+    "feedbackWrong": {
+      "b": "O texto chama Deus de grande e terrível, não de distante.",
+      "c": "A aliança é com os que amam e observam os mandamentos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus guarda a aliança"
+      },
+      {
+        "id": "b",
+        "text": "Deus está longe do pranto"
+      },
+      {
+        "id": "c",
+        "text": "Aliança só com os poderosos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ao ouvir essas palavras, sentei-me, e chorei, e pranteei alguns dias; jejuei, e orei diante do Deus do céu, e disse: Rogo-te, Jeová, Deus do céu, que és o Deus grande e terrível, que guardas a aliança e a misericórdia com aqueles que o amam e observam os seus mandamentos,",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "id": "neemias-cam-neemias-muros-01-oracao-de-neemias-06",
+    "passageA": {
+      "ref": "Neemias 1:5",
+      "text": "Rogo-te, Jeová, Deus do céu, que és o Deus grande e terrível, que guardas a aliança e a misericórdia"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A reconstrução não começa na pedra, mas no Deus que guarda a aliança."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 1:4–5",
+    "learningObjective": "Ver que Neemias começa o muro de joelhos: choro, jejum e oração ao Deus que guarda a aliança.",
+    "evidence": [
+      "Neemias 1:4",
+      "Neemias 1:5"
+    ],
+    "type": "true_false",
+    "question": "A oração de Neemias apresenta Jeová como Deus grande e terrível que guarda a aliança.",
+    "prompt": "A oração de Neemias apresenta Jeová como Deus grande e terrível que guarda a aliança.",
+    "cue": "A oração de Neemias apresenta Jeová como Deus grande e terrível que guarda a aliança.",
+    "feedbackCorrect": "Certo: grandeza, temor e fidelidade à aliança estão juntos.",
+    "feedbackWrong": {
+      "false": "Neemias 1:5 une grandeza, temor e guarda da aliança."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Ao ouvir essas palavras, sentei-me, e chorei, e pranteei alguns dias; jejuei, e orei diante do Deus do céu, e disse: Rogo-te, Jeová, Deus do céu, que és o Deus grande e terrível, que guardas a aliança e a misericórdia com aqueles que o amam e observam os seus mandamentos,",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "id": "neemias-pro-neemias-muros-01-oracao-de-neemias-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 1:4–5",
+    "learningObjective": "Ver que Neemias começa o muro de joelhos: choro, jejum e oração ao Deus que guarda a aliança.",
+    "evidence": [
+      "Neemias 1:4",
+      "Neemias 1:5"
+    ],
+    "type": "tap",
+    "question": "Em Neemias 1:4–5, toque a palavra que falta em \"Rogo-te, Jeová, Deus do céu, que és o Deus grande e ___, que guardas a aliança\"?",
+    "prompt": "Em Neemias 1:4–5, toque a palavra que falta em \"Rogo-te, Jeová, Deus do céu, que és o Deus grande e ___, que guardas a aliança\"?",
+    "cue": "Em Neemias 1:4–5, toque a palavra que falta em \"Rogo-te, Jeová, Deus do céu, que és o Deus grande e ___, que guardas a aliança\"?",
+    "feedbackCorrect": "Exato: grande e terrível é o Deus da aliança.",
+    "feedbackWrong": {
+      "b": "O jejum é o gesto de Neemias, não o atributo de Deus.",
+      "c": "O choro é a reação humana, não o nome de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "terrível"
+      },
+      {
+        "id": "b",
+        "text": "jejuei"
+      },
+      {
+        "id": "c",
+        "text": "chorei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ao ouvir essas palavras, sentei-me, e chorei, e pranteei alguns dias; jejuei, e orei diante do Deus do céu, e disse: Rogo-te, Jeová, Deus do céu, que és o Deus grande e terrível, que guardas a aliança e a misericórdia com aqueles que o amam e observam os seus mandamentos,",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "id": "neemias-pro-neemias-muros-01-oracao-de-neemias-02",
+    "template": "Rogo-te, Jeová, Deus do céu, que és o Deus grande e ___, que guardas a aliança"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 1:4–5",
+    "learningObjective": "Ver que Neemias começa o muro de joelhos: choro, jejum e oração ao Deus que guarda a aliança.",
+    "evidence": [
+      "Neemias 1:4",
+      "Neemias 1:5"
+    ],
+    "type": "choice",
+    "question": "O que a oração de Neemias 1:4–5 prepara o leitor a entender?",
+    "prompt": "O que a oração de Neemias 1:4–5 prepara o leitor a entender?",
+    "cue": "O que a oração de Neemias 1:4–5 prepara o leitor a entender?",
+    "feedbackCorrect": "Certo: a obra nasce da aliança, não do heroísmo isolado.",
+    "feedbackWrong": {
+      "b": "O texto não trata o pranto como fraqueza a esconder.",
+      "c": "Ele nomeia Jeová; não recorre a deuses de Susa.",
+      "d": "A oração é o começo, não o fim da reconstrução."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A reconstrução nasce da aliança, não do heroísmo isolado."
+      },
+      {
+        "id": "b",
+        "text": "O pranto de um líder prova que a fé dele é fraca."
+      },
+      {
+        "id": "c",
+        "text": "Neemias mistura Jeová com os deuses da Pérsia."
+      },
+      {
+        "id": "d",
+        "text": "A oração dispensa qualquer obra posterior no muro."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ao ouvir essas palavras, sentei-me, e chorei, e pranteei alguns dias; jejuei, e orei diante do Deus do céu, e disse: Rogo-te, Jeová, Deus do céu, que és o Deus grande e terrível, que guardas a aliança e a misericórdia com aqueles que o amam e observam os seus mandamentos,",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "id": "neemias-pro-neemias-muros-01-oracao-de-neemias-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 1:4–5",
+    "learningObjective": "Ver que Neemias começa o muro de joelhos: choro, jejum e oração ao Deus que guarda a aliança.",
+    "evidence": [
+      "Neemias 1:4",
+      "Neemias 1:5"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Neemias 1:4–5?",
+    "prompt": "Qual sequência revela o sentido de Neemias 1:4–5?",
+    "cue": "Qual sequência revela o sentido de Neemias 1:4–5?",
+    "feedbackCorrect": "Certo: ouvir, luto diante de Deus, invocação da aliança.",
+    "feedbackWrong": {
+      "b": "O luto vem depois de ouvir, não no fim.",
+      "c": "A aliança fecha a oração, não abre o relato."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ao ouvir essas palavras, sentei-me"
+      },
+      {
+        "id": "b",
+        "text": "chorei, e pranteei alguns dias; jejuei, e orei diante do Deus do céu"
+      },
+      {
+        "id": "c",
+        "text": "que guardas a aliança e a misericórdia com aqueles que o amam"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ao ouvir essas palavras, sentei-me, e chorei, e pranteei alguns dias; jejuei, e orei diante do Deus do céu, e disse: Rogo-te, Jeová, Deus do céu, que és o Deus grande e terrível, que guardas a aliança e a misericórdia com aqueles que o amam e observam os seus mandamentos,",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "id": "neemias-pro-neemias-muros-01-oracao-de-neemias-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 1:4–5",
+    "learningObjective": "Ver que Neemias começa o muro de joelhos: choro, jejum e oração ao Deus que guarda a aliança.",
+    "evidence": [
+      "Neemias 1:4",
+      "Neemias 1:5"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"com aqueles que o amam e observam os seus ___\"",
+    "prompt": "Complete a frase: \"com aqueles que o amam e observam os seus ___\"",
+    "cue": "Complete a frase: \"com aqueles que o amam e observam os seus ___\"",
+    "feedbackCorrect": "Certo: a aliança se liga a amar e observar os mandamentos.",
+    "feedbackWrong": {
+      "b": "\"céu\" nomeia onde Deus habita, não o que se observa.",
+      "c": "\"dias\" mede o pranto, não a obediência da aliança."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "mandamentos"
+      },
+      {
+        "id": "b",
+        "text": "céu"
+      },
+      {
+        "id": "c",
+        "text": "dias"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ao ouvir essas palavras, sentei-me, e chorei, e pranteei alguns dias; jejuei, e orei diante do Deus do céu, e disse: Rogo-te, Jeová, Deus do céu, que és o Deus grande e terrível, que guardas a aliança e a misericórdia com aqueles que o amam e observam os seus mandamentos,",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "id": "neemias-pro-neemias-muros-01-oracao-de-neemias-05",
+    "template": "com aqueles que o amam e observam os seus ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 1:4–5",
+    "learningObjective": "Ver que Neemias começa o muro de joelhos: choro, jejum e oração ao Deus que guarda a aliança.",
+    "evidence": [
+      "Neemias 1:4",
+      "Neemias 1:5"
+    ],
+    "type": "connect",
+    "question": "O que Neemias 1:4–5 comunica que se liga a este contexto?",
+    "prompt": "O que Neemias 1:4–5 comunica que se liga a este contexto?",
+    "cue": "O que Neemias 1:4–5 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o muro começa no Deus da aliança, de joelhos.",
+    "feedbackWrong": {
+      "b": "O texto une luto e oração; não os trata como atraso.",
+      "c": "Ele invoca o Deus que guarda a aliança, não a sorte."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Aliança antes da pedra"
+      },
+      {
+        "id": "b",
+        "text": "Luto como perda de tempo"
+      },
+      {
+        "id": "c",
+        "text": "Sorte no lugar da oração"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ao ouvir essas palavras, sentei-me, e chorei, e pranteei alguns dias; jejuei, e orei diante do Deus do céu, e disse: Rogo-te, Jeová, Deus do céu, que és o Deus grande e terrível, que guardas a aliança e a misericórdia com aqueles que o amam e observam os seus mandamentos,",
+    "trail": "neemias",
+    "section": "neemias-muros-01-oracao-de-neemias",
+    "id": "neemias-pro-neemias-muros-01-oracao-de-neemias-06",
+    "passageA": {
+      "ref": "Neemias 1:5",
+      "text": "Jeová, Deus do céu, que és o Deus grande e terrível, que guardas a aliança e a misericórdia"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Neemias começa o muro de joelhos: choro, jejum e oração ao Deus que guarda a aliança."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 4:17–18",
+    "learningObjective": "Ver que o povo edificou sob oposição: uma mão na obra, a outra na arma.",
+    "evidence": [
+      "Neemias 4:17",
+      "Neemias 4:18"
+    ],
+    "type": "true_false",
+    "question": "Cada um trabalhava na obra com uma das mãos e com a outra segurava a sua arma.",
+    "prompt": "Cada um trabalhava na obra com uma das mãos e com a outra segurava a sua arma.",
+    "cue": "Cada um trabalhava na obra com uma das mãos e com a outra segurava a sua arma.",
+    "feedbackCorrect": "Certo: uma mão na obra e a outra na arma.",
+    "feedbackWrong": {
+      "false": "Neemias 4:17 descreve exatamente essa divisão das mãos."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Os que edificavam o muro e os carregadores que sobre si mesmos punham as cargas, cada um com uma das mãos trabalhava na obra e com a outra segurava a sua arma; e os que edificavam, cada um tinha a sua espada à cinta, e assim edificaram. Aquele que tocava a trombeta estava ao meu lado.",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "id": "neemias-sem-neemias-muros-02-edificar-sob-oposica-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 4:17–18",
+    "learningObjective": "Ver que o povo edificou sob oposição: uma mão na obra, a outra na arma.",
+    "evidence": [
+      "Neemias 4:17",
+      "Neemias 4:18"
+    ],
+    "type": "tap",
+    "question": "Em Neemias 4:17–18, toque a palavra que falta em \"cada um com uma das mãos trabalhava na obra e com a outra segurava a sua ___\"?",
+    "prompt": "Em Neemias 4:17–18, toque a palavra que falta em \"cada um com uma das mãos trabalhava na obra e com a outra segurava a sua ___\"?",
+    "cue": "Em Neemias 4:17–18, toque a palavra que falta em \"cada um com uma das mãos trabalhava na obra e com a outra segurava a sua ___\"?",
+    "feedbackCorrect": "Exato: a outra mão segurava a arma.",
+    "feedbackWrong": {
+      "b": "A trombeta está com o tocador ao lado de Neemias.",
+      "c": "A cinta segura a espada, não é o que a mão segura."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "arma"
+      },
+      {
+        "id": "b",
+        "text": "trombeta"
+      },
+      {
+        "id": "c",
+        "text": "cinta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Os que edificavam o muro e os carregadores que sobre si mesmos punham as cargas, cada um com uma das mãos trabalhava na obra e com a outra segurava a sua arma; e os que edificavam, cada um tinha a sua espada à cinta, e assim edificaram. Aquele que tocava a trombeta estava ao meu lado.",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "id": "neemias-sem-neemias-muros-02-edificar-sob-oposica-02",
+    "template": "cada um com uma das mãos trabalhava na obra e com a outra segurava a sua ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 4:17–18",
+    "learningObjective": "Ver que o povo edificou sob oposição: uma mão na obra, a outra na arma.",
+    "evidence": [
+      "Neemias 4:17",
+      "Neemias 4:18"
+    ],
+    "type": "choice",
+    "question": "Qual fato Neemias 4:17–18 registra de modo direto?",
+    "prompt": "Qual fato Neemias 4:17–18 registra de modo direto?",
+    "cue": "Qual fato Neemias 4:17–18 registra de modo direto?",
+    "feedbackCorrect": "Certo: os edificadores tinham a espada à cinta.",
+    "feedbackWrong": {
+      "b": "O texto diz que edificaram, não que pararam a obra.",
+      "c": "Carregadores e edificadores trabalham; não só vigias.",
+      "d": "A trombeta está ao lado de Neemias, não no acampamento inimigo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Os que edificavam tinham cada um a sua espada à cinta."
+      },
+      {
+        "id": "b",
+        "text": "A obra parou até a oposição desaparecer."
+      },
+      {
+        "id": "c",
+        "text": "Só os vigias trabalhavam; o povo descansava."
+      },
+      {
+        "id": "d",
+        "text": "A trombeta estava no acampamento dos inimigos."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Os que edificavam o muro e os carregadores que sobre si mesmos punham as cargas, cada um com uma das mãos trabalhava na obra e com a outra segurava a sua arma; e os que edificavam, cada um tinha a sua espada à cinta, e assim edificaram. Aquele que tocava a trombeta estava ao meu lado.",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "id": "neemias-sem-neemias-muros-02-edificar-sob-oposica-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 4:17–18",
+    "learningObjective": "Ver que o povo edificou sob oposição: uma mão na obra, a outra na arma.",
+    "evidence": [
+      "Neemias 4:17",
+      "Neemias 4:18"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Neemias 4:17–18?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Neemias 4:17–18?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Neemias 4:17–18?",
+    "feedbackCorrect": "Certo: obra e arma, depois espada à cinta, depois a trombeta.",
+    "feedbackWrong": {
+      "b": "A espada à cinta vem depois da obra com uma mão.",
+      "c": "A trombeta fecha o trecho, não o abre."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "cada um com uma das mãos trabalhava na obra e com a outra segurava a sua arma"
+      },
+      {
+        "id": "b",
+        "text": "os que edificavam, cada um tinha a sua espada à cinta, e assim edificaram"
+      },
+      {
+        "id": "c",
+        "text": "Aquele que tocava a trombeta estava ao meu lado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Os que edificavam o muro e os carregadores que sobre si mesmos punham as cargas, cada um com uma das mãos trabalhava na obra e com a outra segurava a sua arma; e os que edificavam, cada um tinha a sua espada à cinta, e assim edificaram. Aquele que tocava a trombeta estava ao meu lado.",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "id": "neemias-sem-neemias-muros-02-edificar-sob-oposica-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 4:17–18",
+    "learningObjective": "Ver que o povo edificou sob oposição: uma mão na obra, a outra na arma.",
+    "evidence": [
+      "Neemias 4:17",
+      "Neemias 4:18"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"e os que edificavam, cada um tinha a sua ___ à cinta, e assim edificaram\"",
+    "prompt": "Complete a frase: \"e os que edificavam, cada um tinha a sua ___ à cinta, e assim edificaram\"",
+    "cue": "Complete a frase: \"e os que edificavam, cada um tinha a sua ___ à cinta, e assim edificaram\"",
+    "feedbackCorrect": "Certo: a espada estava à cinta de cada edificador.",
+    "feedbackWrong": {
+      "b": "\"arma\" é o que a outra mão segura, não o que está à cinta.",
+      "c": "A trombeta está com o tocador, não à cinta de cada um."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "espada"
+      },
+      {
+        "id": "b",
+        "text": "arma"
+      },
+      {
+        "id": "c",
+        "text": "trombeta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Os que edificavam o muro e os carregadores que sobre si mesmos punham as cargas, cada um com uma das mãos trabalhava na obra e com a outra segurava a sua arma; e os que edificavam, cada um tinha a sua espada à cinta, e assim edificaram. Aquele que tocava a trombeta estava ao meu lado.",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "id": "neemias-sem-neemias-muros-02-edificar-sob-oposica-05",
+    "template": "e os que edificavam, cada um tinha a sua ___ à cinta, e assim edificaram"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 4:17–18",
+    "learningObjective": "Ver que o povo edificou sob oposição: uma mão na obra, a outra na arma.",
+    "evidence": [
+      "Neemias 4:17",
+      "Neemias 4:18"
+    ],
+    "type": "connect",
+    "question": "O que Neemias 4:17–18 comunica que se liga a este contexto?",
+    "prompt": "O que Neemias 4:17–18 comunica que se liga a este contexto?",
+    "cue": "O que Neemias 4:17–18 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o muro sobe sem negar o conflito.",
+    "feedbackWrong": {
+      "b": "Eles edificam com a arma na mão; não largam a obra.",
+      "c": "Há arma e trombeta; o conflito não é ignorado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Obra e arma ao mesmo tempo"
+      },
+      {
+        "id": "b",
+        "text": "Obra só depois da paz"
+      },
+      {
+        "id": "c",
+        "text": "Conflito fingido ou inexistente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Os que edificavam o muro e os carregadores que sobre si mesmos punham as cargas, cada um com uma das mãos trabalhava na obra e com a outra segurava a sua arma; e os que edificavam, cada um tinha a sua espada à cinta, e assim edificaram. Aquele que tocava a trombeta estava ao meu lado.",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "id": "neemias-sem-neemias-muros-02-edificar-sob-oposica-06",
+    "passageA": {
+      "ref": "Neemias 4:17",
+      "text": "cada um com uma das mãos trabalhava na obra e com a outra segurava a sua arma"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Edificar sob oposição: uma mão na obra, a outra na arma — o muro sobe sem negar o conflito."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 4:17–18",
+    "learningObjective": "Ver que o povo edificou sob oposição: uma mão na obra, a outra na arma.",
+    "evidence": [
+      "Neemias 4:17",
+      "Neemias 4:18"
+    ],
+    "type": "true_false",
+    "question": "Neemias 4:17–18 descreve edificadores que abandonaram as cargas para só empunhar armas.",
+    "prompt": "Neemias 4:17–18 descreve edificadores que abandonaram as cargas para só empunhar armas.",
+    "cue": "Neemias 4:17–18 descreve edificadores que abandonaram as cargas para só empunhar armas.",
+    "feedbackCorrect": "Certo: o texto une obra e arma, não o abandono da obra.",
+    "feedbackWrong": {
+      "true": "Eles trabalhavam na obra com uma mão; não largaram as cargas."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Os que edificavam o muro e os carregadores que sobre si mesmos punham as cargas, cada um com uma das mãos trabalhava na obra e com a outra segurava a sua arma; e os que edificavam, cada um tinha a sua espada à cinta, e assim edificaram. Aquele que tocava a trombeta estava ao meu lado.",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "id": "neemias-cam-neemias-muros-02-edificar-sob-oposica-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 4:17–18",
+    "learningObjective": "Ver que o povo edificou sob oposição: uma mão na obra, a outra na arma.",
+    "evidence": [
+      "Neemias 4:17",
+      "Neemias 4:18"
+    ],
+    "type": "tap",
+    "question": "Em Neemias 4:17–18, toque a palavra que falta em \"cada um com uma das mãos trabalhava na ___ e com a outra segurava a sua arma\"?",
+    "prompt": "Em Neemias 4:17–18, toque a palavra que falta em \"cada um com uma das mãos trabalhava na ___ e com a outra segurava a sua arma\"?",
+    "cue": "Em Neemias 4:17–18, toque a palavra que falta em \"cada um com uma das mãos trabalhava na ___ e com a outra segurava a sua arma\"?",
+    "feedbackCorrect": "Exato: uma mão trabalhava na obra.",
+    "feedbackWrong": {
+      "b": "A espada está à cinta, não preenche esta lacuna.",
+      "c": "A trombeta está com o tocador ao lado de Neemias."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "obra"
+      },
+      {
+        "id": "b",
+        "text": "espada"
+      },
+      {
+        "id": "c",
+        "text": "trombeta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Os que edificavam o muro e os carregadores que sobre si mesmos punham as cargas, cada um com uma das mãos trabalhava na obra e com a outra segurava a sua arma; e os que edificavam, cada um tinha a sua espada à cinta, e assim edificaram. Aquele que tocava a trombeta estava ao meu lado.",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "id": "neemias-cam-neemias-muros-02-edificar-sob-oposica-02",
+    "template": "cada um com uma das mãos trabalhava na ___ e com a outra segurava a sua arma"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 4:17–18",
+    "learningObjective": "Ver que o povo edificou sob oposição: uma mão na obra, a outra na arma.",
+    "evidence": [
+      "Neemias 4:17",
+      "Neemias 4:18"
+    ],
+    "type": "choice",
+    "question": "O que a cena de Neemias 4:17–18 mostra sobre edificar sob oposição?",
+    "prompt": "O que a cena de Neemias 4:17–18 mostra sobre edificar sob oposição?",
+    "cue": "O que a cena de Neemias 4:17–18 mostra sobre edificar sob oposição?",
+    "feedbackCorrect": "Certo: a obra continua sem fingir que não há ameaça.",
+    "feedbackWrong": {
+      "b": "Há arma e trombeta; a ameaça não é negada.",
+      "c": "Carregadores e edificadores seguem na obra.",
+      "d": "A trombeta está ao lado de Neemias, para o povo, não para recuar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A obra continua, mas a ameaça não é fingida nem ignorada."
+      },
+      {
+        "id": "b",
+        "text": "A oposição era só rumor; ninguém precisava de arma."
+      },
+      {
+        "id": "c",
+        "text": "Os carregadores recusaram a obra até haver paz."
+      },
+      {
+        "id": "d",
+        "text": "A trombeta servia para marcar o fim da reconstrução."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Os que edificavam o muro e os carregadores que sobre si mesmos punham as cargas, cada um com uma das mãos trabalhava na obra e com a outra segurava a sua arma; e os que edificavam, cada um tinha a sua espada à cinta, e assim edificaram. Aquele que tocava a trombeta estava ao meu lado.",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "id": "neemias-cam-neemias-muros-02-edificar-sob-oposica-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 4:17–18",
+    "learningObjective": "Ver que o povo edificou sob oposição: uma mão na obra, a outra na arma.",
+    "evidence": [
+      "Neemias 4:17",
+      "Neemias 4:18"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Neemias 4:17–18?",
+    "prompt": "Como se encadeiam os eventos de Neemias 4:17–18?",
+    "cue": "Como se encadeiam os eventos de Neemias 4:17–18?",
+    "feedbackCorrect": "Certo: cargas na obra, espada à cinta, trombeta ao lado.",
+    "feedbackWrong": {
+      "b": "A espada à cinta vem depois das cargas na obra.",
+      "c": "A trombeta fecha o trecho."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "os carregadores que sobre si mesmos punham as cargas"
+      },
+      {
+        "id": "b",
+        "text": "cada um tinha a sua espada à cinta, e assim edificaram"
+      },
+      {
+        "id": "c",
+        "text": "Aquele que tocava a trombeta estava ao meu lado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Os que edificavam o muro e os carregadores que sobre si mesmos punham as cargas, cada um com uma das mãos trabalhava na obra e com a outra segurava a sua arma; e os que edificavam, cada um tinha a sua espada à cinta, e assim edificaram. Aquele que tocava a trombeta estava ao meu lado.",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "id": "neemias-cam-neemias-muros-02-edificar-sob-oposica-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 4:17–18",
+    "learningObjective": "Ver que o povo edificou sob oposição: uma mão na obra, a outra na arma.",
+    "evidence": [
+      "Neemias 4:17",
+      "Neemias 4:18"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"e os que edificavam, cada um tinha a sua espada à ___, e assim edificaram\"",
+    "prompt": "Complete a frase: \"e os que edificavam, cada um tinha a sua espada à ___, e assim edificaram\"",
+    "cue": "Complete a frase: \"e os que edificavam, cada um tinha a sua espada à ___, e assim edificaram\"",
+    "feedbackCorrect": "Certo: a espada ficava à cinta enquanto edificavam.",
+    "feedbackWrong": {
+      "b": "A obra é o trabalho das mãos, não o lugar da espada.",
+      "c": "As cargas estão nos carregadores, não à cintura."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "cinta"
+      },
+      {
+        "id": "b",
+        "text": "obra"
+      },
+      {
+        "id": "c",
+        "text": "cargas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Os que edificavam o muro e os carregadores que sobre si mesmos punham as cargas, cada um com uma das mãos trabalhava na obra e com a outra segurava a sua arma; e os que edificavam, cada um tinha a sua espada à cinta, e assim edificaram. Aquele que tocava a trombeta estava ao meu lado.",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "id": "neemias-cam-neemias-muros-02-edificar-sob-oposica-05",
+    "template": "e os que edificavam, cada um tinha a sua espada à ___, e assim edificaram"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 4:17–18",
+    "learningObjective": "Ver que o povo edificou sob oposição: uma mão na obra, a outra na arma.",
+    "evidence": [
+      "Neemias 4:17",
+      "Neemias 4:18"
+    ],
+    "type": "connect",
+    "question": "O que Neemias 4:18 comunica que se liga a este contexto?",
+    "prompt": "O que Neemias 4:18 comunica que se liga a este contexto?",
+    "cue": "O que Neemias 4:18 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: edificaram com a espada à cinta.",
+    "feedbackWrong": {
+      "b": "O texto diz que assim edificaram, não que desistiram.",
+      "c": "A trombeta está ao lado de Neemias, não no campo inimigo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Edificaram armados, sem parar"
+      },
+      {
+        "id": "b",
+        "text": "Desistiram por medo da guerra"
+      },
+      {
+        "id": "c",
+        "text": "Trombeta só no campo inimigo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Os que edificavam o muro e os carregadores que sobre si mesmos punham as cargas, cada um com uma das mãos trabalhava na obra e com a outra segurava a sua arma; e os que edificavam, cada um tinha a sua espada à cinta, e assim edificaram. Aquele que tocava a trombeta estava ao meu lado.",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "id": "neemias-cam-neemias-muros-02-edificar-sob-oposica-06",
+    "passageA": {
+      "ref": "Neemias 4:18",
+      "text": "os que edificavam, cada um tinha a sua espada à cinta, e assim edificaram"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O muro sobe no conflito: a obra não espera a paz perfeita."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 4:17–18",
+    "learningObjective": "Ver que o povo edificou sob oposição: uma mão na obra, a outra na arma.",
+    "evidence": [
+      "Neemias 4:17",
+      "Neemias 4:18"
+    ],
+    "type": "true_false",
+    "question": "Neemias 4:17–18 ensina que a fidelidade à obra dispensa vigília porque Deus já removeu toda oposição.",
+    "prompt": "Neemias 4:17–18 ensina que a fidelidade à obra dispensa vigília porque Deus já removeu toda oposição.",
+    "cue": "Neemias 4:17–18 ensina que a fidelidade à obra dispensa vigília porque Deus já removeu toda oposição.",
+    "feedbackCorrect": "Certo: o texto une obra e arma; a oposição permanece.",
+    "feedbackWrong": {
+      "true": "Eles seguram a arma e a trombeta está ao lado; a oposição não sumiu."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Os que edificavam o muro e os carregadores que sobre si mesmos punham as cargas, cada um com uma das mãos trabalhava na obra e com a outra segurava a sua arma; e os que edificavam, cada um tinha a sua espada à cinta, e assim edificaram. Aquele que tocava a trombeta estava ao meu lado.",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "id": "neemias-pro-neemias-muros-02-edificar-sob-oposica-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 4:17–18",
+    "learningObjective": "Ver que o povo edificou sob oposição: uma mão na obra, a outra na arma.",
+    "evidence": [
+      "Neemias 4:17",
+      "Neemias 4:18"
+    ],
+    "type": "tap",
+    "question": "Em Neemias 4:17–18, toque a palavra que falta em \"Aquele que tocava a ___ estava ao meu lado\"?",
+    "prompt": "Em Neemias 4:17–18, toque a palavra que falta em \"Aquele que tocava a ___ estava ao meu lado\"?",
+    "cue": "Em Neemias 4:17–18, toque a palavra que falta em \"Aquele que tocava a ___ estava ao meu lado\"?",
+    "feedbackCorrect": "Exato: o tocador da trombeta estava ao lado de Neemias.",
+    "feedbackWrong": {
+      "b": "A espada está à cinta dos edificadores.",
+      "c": "A obra é o trabalho das mãos, não o que se toca."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "trombeta"
+      },
+      {
+        "id": "b",
+        "text": "espada"
+      },
+      {
+        "id": "c",
+        "text": "obra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Os que edificavam o muro e os carregadores que sobre si mesmos punham as cargas, cada um com uma das mãos trabalhava na obra e com a outra segurava a sua arma; e os que edificavam, cada um tinha a sua espada à cinta, e assim edificaram. Aquele que tocava a trombeta estava ao meu lado.",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "id": "neemias-pro-neemias-muros-02-edificar-sob-oposica-02",
+    "template": "Aquele que tocava a ___ estava ao meu lado"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 4:17–18",
+    "learningObjective": "Ver que o povo edificou sob oposição: uma mão na obra, a outra na arma.",
+    "evidence": [
+      "Neemias 4:17",
+      "Neemias 4:18"
+    ],
+    "type": "choice",
+    "question": "Qual leitura melhor captura o sentido teológico de Neemias 4:17–18?",
+    "prompt": "Qual leitura melhor captura o sentido teológico de Neemias 4:17–18?",
+    "cue": "Qual leitura melhor captura o sentido teológico de Neemias 4:17–18?",
+    "feedbackCorrect": "Certo: fé na obra não nega o conflito real.",
+    "feedbackWrong": {
+      "b": "A arma na mão mostra que a ameaça não é só interior.",
+      "c": "Edificam e carregam; não param para só orar.",
+      "d": "A trombeta ao lado de Neemias serve à obra, não à fuga."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fidelidade à obra convive com vigília real, sem negar o conflito."
+      },
+      {
+        "id": "b",
+        "text": "A oposição era só tentação interior, sem ameaça concreta."
+      },
+      {
+        "id": "c",
+        "text": "A verdadeira fé exigia parar a obra e só orar."
+      },
+      {
+        "id": "d",
+        "text": "A trombeta marcava a hora de abandonar Jerusalém."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Os que edificavam o muro e os carregadores que sobre si mesmos punham as cargas, cada um com uma das mãos trabalhava na obra e com a outra segurava a sua arma; e os que edificavam, cada um tinha a sua espada à cinta, e assim edificaram. Aquele que tocava a trombeta estava ao meu lado.",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "id": "neemias-pro-neemias-muros-02-edificar-sob-oposica-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 4:17–18",
+    "learningObjective": "Ver que o povo edificou sob oposição: uma mão na obra, a outra na arma.",
+    "evidence": [
+      "Neemias 4:17",
+      "Neemias 4:18"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Neemias 4:17–18?",
+    "prompt": "Qual sequência revela o sentido de Neemias 4:17–18?",
+    "cue": "Qual sequência revela o sentido de Neemias 4:17–18?",
+    "feedbackCorrect": "Certo: cargas e obra, arma e espada, alerta da trombeta.",
+    "feedbackWrong": {
+      "b": "A arma vem com a obra, não no fim isolada.",
+      "c": "A trombeta fecha o alerta, não abre a cena."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Os que edificavam o muro e os carregadores que sobre si mesmos punham as cargas"
+      },
+      {
+        "id": "b",
+        "text": "trabalhava na obra e com a outra segurava a sua arma"
+      },
+      {
+        "id": "c",
+        "text": "Aquele que tocava a trombeta estava ao meu lado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Os que edificavam o muro e os carregadores que sobre si mesmos punham as cargas, cada um com uma das mãos trabalhava na obra e com a outra segurava a sua arma; e os que edificavam, cada um tinha a sua espada à cinta, e assim edificaram. Aquele que tocava a trombeta estava ao meu lado.",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "id": "neemias-pro-neemias-muros-02-edificar-sob-oposica-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 4:17–18",
+    "learningObjective": "Ver que o povo edificou sob oposição: uma mão na obra, a outra na arma.",
+    "evidence": [
+      "Neemias 4:17",
+      "Neemias 4:18"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Os que edificavam o muro e os ___ que sobre si mesmos punham as cargas\"",
+    "prompt": "Complete a frase: \"Os que edificavam o muro e os ___ que sobre si mesmos punham as cargas\"",
+    "cue": "Complete a frase: \"Os que edificavam o muro e os ___ que sobre si mesmos punham as cargas\"",
+    "feedbackCorrect": "Certo: edificadores e carregadores sustentam a obra juntos.",
+    "feedbackWrong": {
+      "b": "A espada é a arma à cinta, não quem põe as cargas.",
+      "c": "A trombeta alerta; não nomeia quem carrega."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "carregadores"
+      },
+      {
+        "id": "b",
+        "text": "espada"
+      },
+      {
+        "id": "c",
+        "text": "trombeta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Os que edificavam o muro e os carregadores que sobre si mesmos punham as cargas, cada um com uma das mãos trabalhava na obra e com a outra segurava a sua arma; e os que edificavam, cada um tinha a sua espada à cinta, e assim edificaram. Aquele que tocava a trombeta estava ao meu lado.",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "id": "neemias-pro-neemias-muros-02-edificar-sob-oposica-05",
+    "template": "Os que edificavam o muro e os ___ que sobre si mesmos punham as cargas"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 4:17–18",
+    "learningObjective": "Ver que o povo edificou sob oposição: uma mão na obra, a outra na arma.",
+    "evidence": [
+      "Neemias 4:17",
+      "Neemias 4:18"
+    ],
+    "type": "connect",
+    "question": "O que Neemias 4:17–18 comunica que se liga a este contexto?",
+    "prompt": "O que Neemias 4:17–18 comunica que se liga a este contexto?",
+    "cue": "O que Neemias 4:17–18 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o muro sobe sem negar o conflito.",
+    "feedbackWrong": {
+      "b": "Há arma na mão; não é paz já consumada.",
+      "c": "A trombeta alerta a obra; não marca vitória fácil."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Muro sobe no conflito"
+      },
+      {
+        "id": "b",
+        "text": "Paz já sem nenhuma ameaça"
+      },
+      {
+        "id": "c",
+        "text": "Trombeta de vitória fácil"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Os que edificavam o muro e os carregadores que sobre si mesmos punham as cargas, cada um com uma das mãos trabalhava na obra e com a outra segurava a sua arma; e os que edificavam, cada um tinha a sua espada à cinta, e assim edificaram. Aquele que tocava a trombeta estava ao meu lado.",
+    "trail": "neemias",
+    "section": "neemias-muros-02-edificar-sob-oposica",
+    "id": "neemias-pro-neemias-muros-02-edificar-sob-oposica-06",
+    "passageA": {
+      "ref": "Neemias 4:17–18",
+      "text": "trabalhava na obra e com a outra segurava a sua arma"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Edificar sob oposição: uma mão na obra, a outra na arma — o muro sobe sem negar o conflito."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Ver que reconstruir o povo é fazer entender a Lei: ler distintamente e dar o sentido.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "true_false",
+    "question": "Leram no livro da lei de Deus distintamente e deram o sentido.",
+    "prompt": "Leram no livro da lei de Deus distintamente e deram o sentido.",
+    "cue": "Leram no livro da lei de Deus distintamente e deram o sentido.",
+    "feedbackCorrect": "Certo: leitura distinta e sentido dado estão no texto.",
+    "feedbackWrong": {
+      "false": "Neemias 8:8 afirma leitura distinta e sentido dado."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "id": "neemias-sem-neemias-renovacao-01-leitura-da-lei-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Ver que reconstruir o povo é fazer entender a Lei: ler distintamente e dar o sentido.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "tap",
+    "question": "Em Neemias 8:8, toque a palavra que falta em \"Leram no livro da lei de Deus ___; e deram o sentido\"?",
+    "prompt": "Em Neemias 8:8, toque a palavra que falta em \"Leram no livro da lei de Deus ___; e deram o sentido\"?",
+    "cue": "Em Neemias 8:8, toque a palavra que falta em \"Leram no livro da lei de Deus ___; e deram o sentido\"?",
+    "feedbackCorrect": "Exato: leram distintamente.",
+    "feedbackWrong": {
+      "b": "\"leitura\" fecha o versículo, não esta lacuna.",
+      "c": "\"livro\" já aparece no início da frase."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "distintamente"
+      },
+      {
+        "id": "b",
+        "text": "leitura"
+      },
+      {
+        "id": "c",
+        "text": "livro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "id": "neemias-sem-neemias-renovacao-01-leitura-da-lei-02",
+    "template": "Leram no livro da lei de Deus ___; e deram o sentido"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Ver que reconstruir o povo é fazer entender a Lei: ler distintamente e dar o sentido.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "choice",
+    "question": "O que Neemias 8:8 afirma de modo explícito?",
+    "prompt": "O que Neemias 8:8 afirma de modo explícito?",
+    "cue": "O que Neemias 8:8 afirma de modo explícito?",
+    "feedbackCorrect": "Certo: deram o sentido para que se entendesse a leitura.",
+    "feedbackWrong": {
+      "b": "O texto fala de dar o sentido, não de esconder a Lei.",
+      "c": "Não há menção de queimar o livro.",
+      "d": "O alvo é entender a leitura, não só ouvir o som."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deram o sentido, de modo que se entendesse a leitura."
+      },
+      {
+        "id": "b",
+        "text": "Guardaram a Lei em segredo, sem explicá-la."
+      },
+      {
+        "id": "c",
+        "text": "Queimaram o livro da lei diante do povo."
+      },
+      {
+        "id": "d",
+        "text": "Leram só para ouvir o som, sem entender."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "id": "neemias-sem-neemias-renovacao-01-leitura-da-lei-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Ver que reconstruir o povo é fazer entender a Lei: ler distintamente e dar o sentido.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Neemias 8:8?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Neemias 8:8?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Neemias 8:8?",
+    "feedbackCorrect": "Certo: ler, dar o sentido, entender a leitura.",
+    "feedbackWrong": {
+      "b": "Dar o sentido vem depois de ler.",
+      "c": "O entendimento fecha o versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Leram no livro da lei de Deus distintamente"
+      },
+      {
+        "id": "b",
+        "text": "e deram o sentido"
+      },
+      {
+        "id": "c",
+        "text": "de modo que se entendesse a leitura"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "id": "neemias-sem-neemias-renovacao-01-leitura-da-lei-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Ver que reconstruir o povo é fazer entender a Lei: ler distintamente e dar o sentido.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Leram no livro da lei de Deus distintamente; e deram o ___, de modo que se entendesse a leitura\"",
+    "prompt": "Complete a frase: \"Leram no livro da lei de Deus distintamente; e deram o ___, de modo que se entendesse a leitura\"",
+    "cue": "Complete a frase: \"Leram no livro da lei de Deus distintamente; e deram o ___, de modo que se entendesse a leitura\"",
+    "feedbackCorrect": "Certo: deram o sentido para que se entendesse.",
+    "feedbackWrong": {
+      "b": "\"distintamente\" descreve o modo de ler, não o que deram.",
+      "c": "\"Deus\" nomeia de quem é a lei, não o que foi dado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "sentido"
+      },
+      {
+        "id": "b",
+        "text": "distintamente"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "id": "neemias-sem-neemias-renovacao-01-leitura-da-lei-05",
+    "template": "Leram no livro da lei de Deus distintamente; e deram o ___, de modo que se entendesse a leitura"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Ver que reconstruir o povo é fazer entender a Lei: ler distintamente e dar o sentido.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "connect",
+    "question": "O que Neemias 8:8 comunica que se liga a este contexto?",
+    "prompt": "O que Neemias 8:8 comunica que se liga a este contexto?",
+    "cue": "O que Neemias 8:8 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: reconstruir o povo é fazer entender a Lei.",
+    "feedbackWrong": {
+      "b": "Deram o sentido; não leram sem explicar.",
+      "c": "O alvo é entender, não só ouvir o som."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fazer entender a Lei"
+      },
+      {
+        "id": "b",
+        "text": "Ler sem nenhuma explicação"
+      },
+      {
+        "id": "c",
+        "text": "Ouvir o som e ir embora"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "id": "neemias-sem-neemias-renovacao-01-leitura-da-lei-06",
+    "passageA": {
+      "ref": "Neemias 8:8",
+      "text": "Leram no livro da lei de Deus distintamente; e deram o sentido"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Reconstruir o povo é fazer entender a Lei: ler distintamente e dar o sentido."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Ver que reconstruir o povo é fazer entender a Lei: ler distintamente e dar o sentido.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "true_false",
+    "question": "Em Neemias 8:8, ler distintamente basta; dar o sentido é opcional para o povo.",
+    "prompt": "Em Neemias 8:8, ler distintamente basta; dar o sentido é opcional para o povo.",
+    "cue": "Em Neemias 8:8, ler distintamente basta; dar o sentido é opcional para o povo.",
+    "feedbackCorrect": "Certo: o texto une leitura distinta e sentido dado.",
+    "feedbackWrong": {
+      "true": "O versículo liga ler distintamente e dar o sentido para entender."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "id": "neemias-cam-neemias-renovacao-01-leitura-da-lei-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Ver que reconstruir o povo é fazer entender a Lei: ler distintamente e dar o sentido.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "tap",
+    "question": "Em Neemias 8:8, toque a palavra que falta em \"e deram o sentido, de modo que se ___ a leitura\"?",
+    "prompt": "Em Neemias 8:8, toque a palavra que falta em \"e deram o sentido, de modo que se ___ a leitura\"?",
+    "cue": "Em Neemias 8:8, toque a palavra que falta em \"e deram o sentido, de modo que se ___ a leitura\"?",
+    "feedbackCorrect": "Exato: o alvo é que se entendesse a leitura.",
+    "feedbackWrong": {
+      "b": "\"distintamente\" descreve o modo de ler, no início.",
+      "c": "\"Deus\" nomeia de quem é a lei, não o verbo desta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "entendesse"
+      },
+      {
+        "id": "b",
+        "text": "distintamente"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "id": "neemias-cam-neemias-renovacao-01-leitura-da-lei-02",
+    "template": "e deram o sentido, de modo que se ___ a leitura"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Ver que reconstruir o povo é fazer entender a Lei: ler distintamente e dar o sentido.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "choice",
+    "question": "Como se relacionam leitura e sentido em Neemias 8:8?",
+    "prompt": "Como se relacionam leitura e sentido em Neemias 8:8?",
+    "cue": "Como se relacionam leitura e sentido em Neemias 8:8?",
+    "feedbackCorrect": "Certo: a leitura só cumpre o alvo quando o sentido é dado.",
+    "feedbackWrong": {
+      "b": "O texto quer que se entendesse; não basta o rito.",
+      "c": "Dar o sentido é parte da cena, não um extra.",
+      "d": "O livro é da lei de Deus; não é recitado como magia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ler distintamente e dar o sentido servem para que o povo entenda."
+      },
+      {
+        "id": "b",
+        "text": "O rito da leitura vale mesmo se ninguém compreender."
+      },
+      {
+        "id": "c",
+        "text": "O sentido é um extra para escribas, não para o povo."
+      },
+      {
+        "id": "d",
+        "text": "A Lei funciona como fórmula mágica, sem compreensão."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "id": "neemias-cam-neemias-renovacao-01-leitura-da-lei-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Ver que reconstruir o povo é fazer entender a Lei: ler distintamente e dar o sentido.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Neemias 8:8?",
+    "prompt": "Como se encadeiam os eventos de Neemias 8:8?",
+    "cue": "Como se encadeiam os eventos de Neemias 8:8?",
+    "feedbackCorrect": "Certo: o livro é lido, o sentido é dado, a leitura é entendida.",
+    "feedbackWrong": {
+      "b": "O sentido vem depois da leitura no livro.",
+      "c": "O entendimento é o alvo final."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Leram no livro da lei de Deus"
+      },
+      {
+        "id": "b",
+        "text": "deram o sentido"
+      },
+      {
+        "id": "c",
+        "text": "se entendesse a leitura"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "id": "neemias-cam-neemias-renovacao-01-leitura-da-lei-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Ver que reconstruir o povo é fazer entender a Lei: ler distintamente e dar o sentido.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"deram o sentido, de modo que se entendesse a ___\"",
+    "prompt": "Complete a frase: \"deram o sentido, de modo que se entendesse a ___\"",
+    "cue": "Complete a frase: \"deram o sentido, de modo que se entendesse a ___\"",
+    "feedbackCorrect": "Certo: o alvo é entender a leitura.",
+    "feedbackWrong": {
+      "b": "\"sentido\" é o que deram, não o que se entende nesta lacuna.",
+      "c": "\"livro\" é o suporte da lei, no início do versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "leitura"
+      },
+      {
+        "id": "b",
+        "text": "sentido"
+      },
+      {
+        "id": "c",
+        "text": "livro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "id": "neemias-cam-neemias-renovacao-01-leitura-da-lei-05",
+    "template": "deram o sentido, de modo que se entendesse a ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Ver que reconstruir o povo é fazer entender a Lei: ler distintamente e dar o sentido.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "connect",
+    "question": "O que Neemias 8:8 comunica que se liga a este contexto?",
+    "prompt": "O que Neemias 8:8 comunica que se liga a este contexto?",
+    "cue": "O que Neemias 8:8 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a Palavra precisa ser entendida, não só ouvida.",
+    "feedbackWrong": {
+      "b": "Deram o sentido; a Lei não fica só com os letrados.",
+      "c": "O alvo é entender; não é só volume da voz."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Palavra lida e entendida"
+      },
+      {
+        "id": "b",
+        "text": "Lei só para os letrados"
+      },
+      {
+        "id": "c",
+        "text": "Volume no lugar do sentido"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "id": "neemias-cam-neemias-renovacao-01-leitura-da-lei-06",
+    "passageA": {
+      "ref": "Neemias 8:8",
+      "text": "deram o sentido, de modo que se entendesse a leitura"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Reconstruir o povo é fazer entender a Lei, não só erguer pedras."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Ver que reconstruir o povo é fazer entender a Lei: ler distintamente e dar o sentido.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "true_false",
+    "question": "Neemias 8:8 mostra que a reconstrução do povo inclui fazer entender a Lei, não só pronunciá-la.",
+    "prompt": "Neemias 8:8 mostra que a reconstrução do povo inclui fazer entender a Lei, não só pronunciá-la.",
+    "cue": "Neemias 8:8 mostra que a reconstrução do povo inclui fazer entender a Lei, não só pronunciá-la.",
+    "feedbackCorrect": "Certo: o sentido é dado para que a leitura se entenda.",
+    "feedbackWrong": {
+      "false": "O versículo une leitura distinta e sentido para o entendimento."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "id": "neemias-pro-neemias-renovacao-01-leitura-da-lei-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Ver que reconstruir o povo é fazer entender a Lei: ler distintamente e dar o sentido.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "tap",
+    "question": "Em Neemias 8:8, toque a palavra que falta em \"Leram no ___ da lei de Deus distintamente\"?",
+    "prompt": "Em Neemias 8:8, toque a palavra que falta em \"Leram no ___ da lei de Deus distintamente\"?",
+    "cue": "Em Neemias 8:8, toque a palavra que falta em \"Leram no ___ da lei de Deus distintamente\"?",
+    "feedbackCorrect": "Exato: leram no livro da lei de Deus.",
+    "feedbackWrong": {
+      "b": "O sentido é o que deram depois de ler.",
+      "c": "A leitura é o que se deve entender no fim."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "livro"
+      },
+      {
+        "id": "b",
+        "text": "sentido"
+      },
+      {
+        "id": "c",
+        "text": "leitura"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "id": "neemias-pro-neemias-renovacao-01-leitura-da-lei-02",
+    "template": "Leram no ___ da lei de Deus distintamente"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Ver que reconstruir o povo é fazer entender a Lei: ler distintamente e dar o sentido.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "choice",
+    "question": "O que Neemias 8:8 prepara o leitor a concluir sobre o povo reconstruído?",
+    "prompt": "O que Neemias 8:8 prepara o leitor a concluir sobre o povo reconstruído?",
+    "cue": "O que Neemias 8:8 prepara o leitor a concluir sobre o povo reconstruído?",
+    "feedbackCorrect": "Certo: o povo se refaz na Palavra entendida.",
+    "feedbackWrong": {
+      "b": "O texto insiste no entendimento, não no muro sozinho.",
+      "c": "Dar o sentido honra a Lei; não a substitui.",
+      "d": "A leitura é para o povo entender, não para um rito vazio."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O povo se reconstitui quando a Lei é lida e de fato entendida."
+      },
+      {
+        "id": "b",
+        "text": "Bastava o muro; a Lei era um adorno da festa."
+      },
+      {
+        "id": "c",
+        "text": "Explicar a Lei é traí-la, pois o texto se basta sem sentido."
+      },
+      {
+        "id": "d",
+        "text": "A leitura pública existe só para impressionar o império."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "id": "neemias-pro-neemias-renovacao-01-leitura-da-lei-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Ver que reconstruir o povo é fazer entender a Lei: ler distintamente e dar o sentido.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Neemias 8:8?",
+    "prompt": "Qual sequência revela o sentido de Neemias 8:8?",
+    "cue": "Qual sequência revela o sentido de Neemias 8:8?",
+    "feedbackCorrect": "Certo: livro da lei, sentido dado, entendimento do povo.",
+    "feedbackWrong": {
+      "b": "O sentido vem depois do livro lido.",
+      "c": "O entendimento é o alvo da cena."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Leram no livro da lei de Deus distintamente"
+      },
+      {
+        "id": "b",
+        "text": "e deram o sentido"
+      },
+      {
+        "id": "c",
+        "text": "de modo que se entendesse a leitura"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "id": "neemias-pro-neemias-renovacao-01-leitura-da-lei-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Ver que reconstruir o povo é fazer entender a Lei: ler distintamente e dar o sentido.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Leram no livro da ___ de Deus distintamente; e deram o sentido\"",
+    "prompt": "Complete a frase: \"Leram no livro da ___ de Deus distintamente; e deram o sentido\"",
+    "cue": "Complete a frase: \"Leram no livro da ___ de Deus distintamente; e deram o sentido\"",
+    "feedbackCorrect": "Certo: o livro é da lei de Deus.",
+    "feedbackWrong": {
+      "b": "O sentido é o que deram depois, não o nome do livro.",
+      "c": "A leitura é o que se entende no fim do versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "lei"
+      },
+      {
+        "id": "b",
+        "text": "sentido"
+      },
+      {
+        "id": "c",
+        "text": "leitura"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "id": "neemias-pro-neemias-renovacao-01-leitura-da-lei-05",
+    "template": "Leram no livro da ___ de Deus distintamente; e deram o sentido"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Ver que reconstruir o povo é fazer entender a Lei: ler distintamente e dar o sentido.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "connect",
+    "question": "O que Neemias 8:8 comunica que se liga a este contexto?",
+    "prompt": "O que Neemias 8:8 comunica que se liga a este contexto?",
+    "cue": "O que Neemias 8:8 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o povo se reconstrói na Lei entendida.",
+    "feedbackWrong": {
+      "b": "O texto mira o entendimento, não um espetáculo.",
+      "c": "A Lei é de Deus; não é conselho humano vazio."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Povo refeito pela Palavra"
+      },
+      {
+        "id": "b",
+        "text": "Leitura só como espetáculo"
+      },
+      {
+        "id": "c",
+        "text": "Conselho humano no lugar da Lei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-01-leitura-da-lei",
+    "id": "neemias-pro-neemias-renovacao-01-leitura-da-lei-06",
+    "passageA": {
+      "ref": "Neemias 8:8",
+      "text": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Reconstruir o povo é fazer entender a Lei: ler distintamente e dar o sentido."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 6:15",
+    "learningObjective": "Ver que o muro acaba em 52 dias, mas a reconstrução plena une muro e Palavra entendida.",
+    "evidence": [
+      "Neemias 6:15"
+    ],
+    "type": "true_false",
+    "question": "O muro acabou-se no dia vinte e cinco do mês de elal, em cinquenta e dois dias.",
+    "prompt": "O muro acabou-se no dia vinte e cinco do mês de elal, em cinquenta e dois dias.",
+    "cue": "O muro acabou-se no dia vinte e cinco do mês de elal, em cinquenta e dois dias.",
+    "feedbackCorrect": "Certo: data e prazo de 52 dias estão no texto.",
+    "feedbackWrong": {
+      "false": "Neemias 6:15 registra o dia 25 de elal e 52 dias."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Acabou-se o muro no dia vinte e cinco do mês de elal, em cinquenta e dois dias.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "id": "neemias-sem-neemias-renovacao-02-desafio-reconstruir-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 6:15",
+    "learningObjective": "Ver que o muro acaba em 52 dias, mas a reconstrução plena une muro e Palavra entendida.",
+    "evidence": [
+      "Neemias 6:15"
+    ],
+    "type": "tap",
+    "question": "Em Neemias 6:15, toque a palavra que falta em \"Acabou-se o muro no dia vinte e cinco do mês de ___, em cinquenta e dois dias\"?",
+    "prompt": "Em Neemias 6:15, toque a palavra que falta em \"Acabou-se o muro no dia vinte e cinco do mês de ___, em cinquenta e dois dias\"?",
+    "cue": "Em Neemias 6:15, toque a palavra que falta em \"Acabou-se o muro no dia vinte e cinco do mês de ___, em cinquenta e dois dias\"?",
+    "feedbackCorrect": "Exato: o mês nomeado é elal.",
+    "feedbackWrong": {
+      "b": "\"muro\" é o que se acabou, não o nome do mês.",
+      "c": "\"dias\" mede o prazo, no fim da frase."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "elal"
+      },
+      {
+        "id": "b",
+        "text": "muro"
+      },
+      {
+        "id": "c",
+        "text": "dias"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Acabou-se o muro no dia vinte e cinco do mês de elal, em cinquenta e dois dias.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "id": "neemias-sem-neemias-renovacao-02-desafio-reconstruir-02",
+    "template": "Acabou-se o muro no dia vinte e cinco do mês de ___, em cinquenta e dois dias"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 6:15",
+    "learningObjective": "Ver que o muro acaba em 52 dias, mas a reconstrução plena une muro e Palavra entendida.",
+    "evidence": [
+      "Neemias 6:15"
+    ],
+    "type": "choice",
+    "question": "Qual fato Neemias 6:15 registra de modo direto?",
+    "prompt": "Qual fato Neemias 6:15 registra de modo direto?",
+    "cue": "Qual fato Neemias 6:15 registra de modo direto?",
+    "feedbackCorrect": "Certo: o muro se acabou em cinquenta e dois dias.",
+    "feedbackWrong": {
+      "b": "O texto fala de 52 dias, não de anos.",
+      "c": "O muro se acabou; não ficou pela metade.",
+      "d": "O mês nomeado é elal, não nisã."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O muro acabou-se em cinquenta e dois dias."
+      },
+      {
+        "id": "b",
+        "text": "O muro levou cinquenta e dois anos para subir."
+      },
+      {
+        "id": "c",
+        "text": "O muro ficou inacabado até o ano seguinte."
+      },
+      {
+        "id": "d",
+        "text": "A obra terminou no mês de nisã, não de elal."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Acabou-se o muro no dia vinte e cinco do mês de elal, em cinquenta e dois dias.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "id": "neemias-sem-neemias-renovacao-02-desafio-reconstruir-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 6:15",
+    "learningObjective": "Ver que o muro acaba em 52 dias, mas a reconstrução plena une muro e Palavra entendida.",
+    "evidence": [
+      "Neemias 6:15"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Neemias 6:15?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Neemias 6:15?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Neemias 6:15?",
+    "feedbackCorrect": "Certo: o muro se acaba, no dia 25 de elal, em 52 dias.",
+    "feedbackWrong": {
+      "b": "A data vem depois de \"acabou-se o muro\".",
+      "c": "O prazo de 52 dias fecha o versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Acabou-se o muro"
+      },
+      {
+        "id": "b",
+        "text": "no dia vinte e cinco do mês de elal"
+      },
+      {
+        "id": "c",
+        "text": "em cinquenta e dois dias"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Acabou-se o muro no dia vinte e cinco do mês de elal, em cinquenta e dois dias.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "id": "neemias-sem-neemias-renovacao-02-desafio-reconstruir-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 6:15",
+    "learningObjective": "Ver que o muro acaba em 52 dias, mas a reconstrução plena une muro e Palavra entendida.",
+    "evidence": [
+      "Neemias 6:15"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Acabou-se o ___ no dia vinte e cinco do mês de elal, em cinquenta e dois dias\"",
+    "prompt": "Complete a frase: \"Acabou-se o ___ no dia vinte e cinco do mês de elal, em cinquenta e dois dias\"",
+    "cue": "Complete a frase: \"Acabou-se o ___ no dia vinte e cinco do mês de elal, em cinquenta e dois dias\"",
+    "feedbackCorrect": "Certo: o que se acabou foi o muro.",
+    "feedbackWrong": {
+      "b": "Elal é o mês, não o que se acabou.",
+      "c": "\"vinte\" faz parte da data, não do objeto da obra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "muro"
+      },
+      {
+        "id": "b",
+        "text": "elal"
+      },
+      {
+        "id": "c",
+        "text": "vinte"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Acabou-se o muro no dia vinte e cinco do mês de elal, em cinquenta e dois dias.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "id": "neemias-sem-neemias-renovacao-02-desafio-reconstruir-05",
+    "template": "Acabou-se o ___ no dia vinte e cinco do mês de elal, em cinquenta e dois dias"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 6:15",
+    "learningObjective": "Ver que o muro acaba em 52 dias, mas a reconstrução plena une muro e Palavra entendida.",
+    "evidence": [
+      "Neemias 6:15"
+    ],
+    "type": "connect",
+    "question": "O que Neemias 6:15 comunica que se liga a este contexto?",
+    "prompt": "O que Neemias 6:15 comunica que se liga a este contexto?",
+    "cue": "O que Neemias 6:15 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o muro se conclui em 52 dias.",
+    "feedbackWrong": {
+      "b": "O texto afirma que o muro se acabou.",
+      "c": "O prazo é de 52 dias, não de anos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Muro concluído em 52 dias"
+      },
+      {
+        "id": "b",
+        "text": "Obra deixada pela metade"
+      },
+      {
+        "id": "c",
+        "text": "Prazo de muitos anos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Acabou-se o muro no dia vinte e cinco do mês de elal, em cinquenta e dois dias.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "id": "neemias-sem-neemias-renovacao-02-desafio-reconstruir-06",
+    "passageA": {
+      "ref": "Neemias 6:15",
+      "text": "Acabou-se o muro no dia vinte e cinco do mês de elal, em cinquenta e dois dias."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O muro acaba em 52 dias — mas a reconstrução plena é muro e Palavra entendida."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 6:15",
+    "learningObjective": "Ver que o muro acaba em 52 dias, mas a reconstrução plena une muro e Palavra entendida.",
+    "evidence": [
+      "Neemias 6:15"
+    ],
+    "type": "true_false",
+    "question": "Neemias 6:15 afirma que o muro se acabou, e nomeia o dia, o mês e o número de dias.",
+    "prompt": "Neemias 6:15 afirma que o muro se acabou, e nomeia o dia, o mês e o número de dias.",
+    "cue": "Neemias 6:15 afirma que o muro se acabou, e nomeia o dia, o mês e o número de dias.",
+    "feedbackCorrect": "Certo: o versículo dá término, data e prazo.",
+    "feedbackWrong": {
+      "false": "O texto une término, 25 de elal e 52 dias."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Acabou-se o muro no dia vinte e cinco do mês de elal, em cinquenta e dois dias.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "id": "neemias-cam-neemias-renovacao-02-desafio-reconstruir-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 6:15",
+    "learningObjective": "Ver que o muro acaba em 52 dias, mas a reconstrução plena une muro e Palavra entendida.",
+    "evidence": [
+      "Neemias 6:15"
+    ],
+    "type": "tap",
+    "question": "Em Neemias 6:15, toque a palavra que falta em \"Acabou-se o muro no dia vinte e cinco do mês de elal, em ___ e dois dias\"?",
+    "prompt": "Em Neemias 6:15, toque a palavra que falta em \"Acabou-se o muro no dia vinte e cinco do mês de elal, em ___ e dois dias\"?",
+    "cue": "Em Neemias 6:15, toque a palavra que falta em \"Acabou-se o muro no dia vinte e cinco do mês de elal, em ___ e dois dias\"?",
+    "feedbackCorrect": "Exato: em cinquenta e dois dias.",
+    "feedbackWrong": {
+      "b": "Elal é o mês, não o número de dias.",
+      "c": "O muro é o que se acabou, não o prazo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "cinquenta"
+      },
+      {
+        "id": "b",
+        "text": "elal"
+      },
+      {
+        "id": "c",
+        "text": "muro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Acabou-se o muro no dia vinte e cinco do mês de elal, em cinquenta e dois dias.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "id": "neemias-cam-neemias-renovacao-02-desafio-reconstruir-02",
+    "template": "Acabou-se o muro no dia vinte e cinco do mês de elal, em ___ e dois dias"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 6:15",
+    "learningObjective": "Ver que o muro acaba em 52 dias, mas a reconstrução plena une muro e Palavra entendida.",
+    "evidence": [
+      "Neemias 6:15"
+    ],
+    "type": "choice",
+    "question": "O que o prazo de Neemias 6:15 permite entender sobre a obra?",
+    "prompt": "O que o prazo de Neemias 6:15 permite entender sobre a obra?",
+    "cue": "O que o prazo de Neemias 6:15 permite entender sobre a obra?",
+    "feedbackCorrect": "Certo: o término é datado e rápido, não vago.",
+    "feedbackWrong": {
+      "b": "Há dia, mês e número de dias; não é lenda sem data.",
+      "c": "O texto fala de término, não de abandono.",
+      "d": "O prazo é de dias, não de gerações."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A conclusão do muro é datada e contada em poucos dias."
+      },
+      {
+        "id": "b",
+        "text": "O prazo é lenda posterior, sem dia nem mês no texto."
+      },
+      {
+        "id": "c",
+        "text": "A obra foi abandonada antes de qualquer término."
+      },
+      {
+        "id": "d",
+        "text": "O muro só se acabaria depois de várias gerações."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Acabou-se o muro no dia vinte e cinco do mês de elal, em cinquenta e dois dias.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "id": "neemias-cam-neemias-renovacao-02-desafio-reconstruir-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 6:15",
+    "learningObjective": "Ver que o muro acaba em 52 dias, mas a reconstrução plena une muro e Palavra entendida.",
+    "evidence": [
+      "Neemias 6:15"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Neemias 6:15?",
+    "prompt": "Como se encadeiam os eventos de Neemias 6:15?",
+    "cue": "Como se encadeiam os eventos de Neemias 6:15?",
+    "feedbackCorrect": "Certo: término, data no mês, prazo em dias.",
+    "feedbackWrong": {
+      "b": "A data vem depois do término.",
+      "c": "O prazo fecha o versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Acabou-se o muro"
+      },
+      {
+        "id": "b",
+        "text": "no dia vinte e cinco"
+      },
+      {
+        "id": "c",
+        "text": "do mês de elal, em cinquenta e dois dias"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Acabou-se o muro no dia vinte e cinco do mês de elal, em cinquenta e dois dias.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "id": "neemias-cam-neemias-renovacao-02-desafio-reconstruir-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 6:15",
+    "learningObjective": "Ver que o muro acaba em 52 dias, mas a reconstrução plena une muro e Palavra entendida.",
+    "evidence": [
+      "Neemias 6:15"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"em cinquenta e ___ dias\"",
+    "prompt": "Complete a frase: \"em cinquenta e ___ dias\"",
+    "cue": "Complete a frase: \"em cinquenta e ___ dias\"",
+    "feedbackCorrect": "Certo: cinquenta e dois dias.",
+    "feedbackWrong": {
+      "b": "\"cinco\" pertence ao dia do mês, não a este prazo.",
+      "c": "Elal é o mês, não o número que completa o prazo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "dois"
+      },
+      {
+        "id": "b",
+        "text": "cinco"
+      },
+      {
+        "id": "c",
+        "text": "elal"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Acabou-se o muro no dia vinte e cinco do mês de elal, em cinquenta e dois dias.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "id": "neemias-cam-neemias-renovacao-02-desafio-reconstruir-05",
+    "template": "em cinquenta e ___ dias"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 6:15",
+    "learningObjective": "Ver que o muro acaba em 52 dias, mas a reconstrução plena une muro e Palavra entendida.",
+    "evidence": [
+      "Neemias 6:15"
+    ],
+    "type": "connect",
+    "question": "O que Neemias 6:15 comunica que se liga a este contexto?",
+    "prompt": "O que Neemias 6:15 comunica que se liga a este contexto?",
+    "cue": "O que Neemias 6:15 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o muro se conclui, mas a missão aponta além da pedra.",
+    "feedbackWrong": {
+      "b": "O texto celebra o término; não o trata como fracasso.",
+      "c": "Há prazo curto; não é obra infinita sem fim."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Término do muro, não o fim"
+      },
+      {
+        "id": "b",
+        "text": "Muro como sinal de fracasso"
+      },
+      {
+        "id": "c",
+        "text": "Obra sem nenhum prazo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Acabou-se o muro no dia vinte e cinco do mês de elal, em cinquenta e dois dias.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "id": "neemias-cam-neemias-renovacao-02-desafio-reconstruir-06",
+    "passageA": {
+      "ref": "Neemias 6:15",
+      "text": "Acabou-se o muro no dia vinte e cinco do mês de elal, em cinquenta e dois dias."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O muro acaba em 52 dias — mas a reconstrução plena é muro e Palavra entendida."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 6:15",
+    "learningObjective": "Ver que o muro acaba em 52 dias, mas a reconstrução plena une muro e Palavra entendida.",
+    "evidence": [
+      "Neemias 6:15",
+      "Neemias 8:8"
+    ],
+    "type": "true_false",
+    "question": "O término do muro em 52 dias esgota, sozinho, toda a reconstrução do povo segundo Neemias.",
+    "prompt": "O término do muro em 52 dias esgota, sozinho, toda a reconstrução do povo segundo Neemias.",
+    "cue": "O término do muro em 52 dias esgota, sozinho, toda a reconstrução do povo segundo Neemias.",
+    "feedbackCorrect": "Certo: o muro se acaba, mas a Lei ainda precisa ser entendida.",
+    "feedbackWrong": {
+      "true": "O muro se acaba em 6:15; em 8:8 a Lei ainda é lida e explicada."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Acabou-se o muro no dia vinte e cinco do mês de elal, em cinquenta e dois dias. Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "id": "neemias-pro-neemias-renovacao-02-desafio-reconstruir-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 6:15; 8:8",
+    "learningObjective": "Ver que o muro acaba em 52 dias, mas a reconstrução plena une muro e Palavra entendida.",
+    "evidence": [
+      "Neemias 6:15",
+      "Neemias 8:8"
+    ],
+    "type": "tap",
+    "question": "Em Neemias 6:15; 8:8, toque a palavra que falta em \"Leram no livro da lei de Deus ___; e deram o sentido\"?",
+    "prompt": "Em Neemias 6:15; 8:8, toque a palavra que falta em \"Leram no livro da lei de Deus ___; e deram o sentido\"?",
+    "cue": "Em Neemias 6:15; 8:8, toque a palavra que falta em \"Leram no livro da lei de Deus ___; e deram o sentido\"?",
+    "feedbackCorrect": "Exato: a Lei é lida distintamente depois do muro.",
+    "feedbackWrong": {
+      "b": "Elal data o término do muro, não o modo de ler.",
+      "c": "O muro se acabou; esta lacuna fala da leitura."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "distintamente"
+      },
+      {
+        "id": "b",
+        "text": "elal"
+      },
+      {
+        "id": "c",
+        "text": "muro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Acabou-se o muro no dia vinte e cinco do mês de elal, em cinquenta e dois dias. Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "id": "neemias-pro-neemias-renovacao-02-desafio-reconstruir-02",
+    "template": "Leram no livro da lei de Deus ___; e deram o sentido"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 6:15",
+    "learningObjective": "Ver que o muro acaba em 52 dias, mas a reconstrução plena une muro e Palavra entendida.",
+    "evidence": [
+      "Neemias 6:15",
+      "Neemias 8:8"
+    ],
+    "type": "choice",
+    "question": "O que o término de Neemias 6:15, lido com 8:8, impede o leitor de concluir?",
+    "prompt": "O que o término de Neemias 6:15, lido com 8:8, impede o leitor de concluir?",
+    "cue": "O que o término de Neemias 6:15, lido com 8:8, impede o leitor de concluir?",
+    "feedbackCorrect": "Certo: o muro não substitui a Palavra entendida.",
+    "feedbackWrong": {
+      "b": "6:15 afirma o término; não o nega.",
+      "c": "8:8 mostra a Lei lida ao povo, não só aos escribas.",
+      "d": "O prazo curto não torna a Palavra dispensável."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Que bastava o muro pronto, sem a Lei ser entendida."
+      },
+      {
+        "id": "b",
+        "text": "Que o muro nunca chegou a terminar de fato."
+      },
+      {
+        "id": "c",
+        "text": "Que a Lei ficou reservada só aos escribas."
+      },
+      {
+        "id": "d",
+        "text": "Que 52 dias provam que a Palavra era inútil."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Acabou-se o muro no dia vinte e cinco do mês de elal, em cinquenta e dois dias. Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "id": "neemias-pro-neemias-renovacao-02-desafio-reconstruir-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 6:15; 8:8",
+    "learningObjective": "Ver que o muro acaba em 52 dias, mas a reconstrução plena une muro e Palavra entendida.",
+    "evidence": [
+      "Neemias 6:15",
+      "Neemias 8:8"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Neemias 6:15 e 8:8?",
+    "prompt": "Qual sequência revela o sentido de Neemias 6:15 e 8:8?",
+    "cue": "Qual sequência revela o sentido de Neemias 6:15 e 8:8?",
+    "feedbackCorrect": "Certo: o muro se acaba; depois a Lei é lida com sentido.",
+    "feedbackWrong": {
+      "b": "A Lei lida vem depois do muro acabado.",
+      "c": "O sentido dado fecha a reconstrução do povo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Acabou-se o muro no dia vinte e cinco do mês de elal, em cinquenta e dois dias"
+      },
+      {
+        "id": "b",
+        "text": "Leram no livro da lei de Deus distintamente"
+      },
+      {
+        "id": "c",
+        "text": "e deram o sentido, de modo que se entendesse a leitura"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Acabou-se o muro no dia vinte e cinco do mês de elal, em cinquenta e dois dias. Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "id": "neemias-pro-neemias-renovacao-02-desafio-reconstruir-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 6:15; 8:8",
+    "learningObjective": "Ver que o muro acaba em 52 dias, mas a reconstrução plena une muro e Palavra entendida.",
+    "evidence": [
+      "Neemias 6:15",
+      "Neemias 8:8"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"e deram o sentido, de modo que se ___ a leitura\"",
+    "prompt": "Complete a frase: \"e deram o sentido, de modo que se ___ a leitura\"",
+    "cue": "Complete a frase: \"e deram o sentido, de modo que se ___ a leitura\"",
+    "feedbackCorrect": "Certo: o alvo da reconstrução plena é entender a leitura.",
+    "feedbackWrong": {
+      "b": "Elal data o muro, não o verbo desta lacuna.",
+      "c": "Cinquenta mede o prazo do muro, não o entendimento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "entendesse"
+      },
+      {
+        "id": "b",
+        "text": "elal"
+      },
+      {
+        "id": "c",
+        "text": "cinquenta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Acabou-se o muro no dia vinte e cinco do mês de elal, em cinquenta e dois dias. Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "id": "neemias-pro-neemias-renovacao-02-desafio-reconstruir-05",
+    "template": "e deram o sentido, de modo que se ___ a leitura"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 6:15; 8:8",
+    "learningObjective": "Ver que o muro acaba em 52 dias, mas a reconstrução plena une muro e Palavra entendida.",
+    "evidence": [
+      "Neemias 6:15",
+      "Neemias 8:8"
+    ],
+    "type": "connect",
+    "question": "O que Neemias 6:15 e 8:8 comunicam que se liga a este contexto?",
+    "prompt": "O que Neemias 6:15 e 8:8 comunicam que se liga a este contexto?",
+    "cue": "O que Neemias 6:15 e 8:8 comunicam que se liga a este contexto?",
+    "feedbackCorrect": "Certo: reconstrução plena é muro e Palavra entendida.",
+    "feedbackWrong": {
+      "b": "O muro se acaba; isso não anula a leitura da Lei.",
+      "c": "A Lei é lida para entender, não como adorno do muro."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Muro e Palavra entendida"
+      },
+      {
+        "id": "b",
+        "text": "Muro que dispensa a Lei"
+      },
+      {
+        "id": "c",
+        "text": "Lei só como adorno do muro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Acabou-se o muro no dia vinte e cinco do mês de elal, em cinquenta e dois dias. Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "neemias",
+    "section": "neemias-renovacao-02-desafio-reconstruir",
+    "id": "neemias-pro-neemias-renovacao-02-desafio-reconstruir-06",
+    "passageA": {
+      "ref": "Neemias 6:15; 8:8",
+      "text": "Acabou-se o muro no dia vinte e cinco do mês de elal, em cinquenta e dois dias. Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O muro acaba em 52 dias — mas a reconstrução plena é muro e Palavra entendida."
+    }
+  }
+]

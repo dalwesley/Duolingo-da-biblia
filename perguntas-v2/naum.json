@@ -1,0 +1,2189 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Naum 1:7",
+    "learningObjective": "Reconhecer que Jeová é bom e se torna fortaleza para quem nele confia no dia da tribulação.",
+    "evidence": [
+      "Naum 1:7"
+    ],
+    "type": "true_false",
+    "question": "Jeová é bom, uma fortaleza no dia da tribulação, e conhece os que nele confiam.",
+    "prompt": "Jeová é bom, uma fortaleza no dia da tribulação, e conhece os que nele confiam.",
+    "cue": "Jeová é bom, uma fortaleza no dia da tribulação, e conhece os que nele confiam.",
+    "feedbackCorrect": "Correto: é exatamente o que Naum 1:7 afirma sobre Jeová.",
+    "feedbackWrong": {
+      "false": "O verso afirma a bondade e o cuidado de Jeová; releia o texto."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Jeová é bom, uma fortaleza no dia da tribulação; ele conhece os que nele confiam",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "id": "naum-sem-naum-naum-01-o-senhor-e-bom-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Naum 1:7",
+    "learningObjective": "Reconhecer que Jeová é bom e se torna fortaleza para quem nele confia no dia da tribulação.",
+    "evidence": [
+      "Naum 1:7"
+    ],
+    "type": "tap",
+    "question": "Em Naum 1:7, toque a palavra que falta em \"___ é bom, uma fortaleza no dia da tribulação; ele conhece os que nele confiam\"?",
+    "prompt": "Em Naum 1:7, toque a palavra que falta em \"___ é bom, uma fortaleza no dia da tribulação; ele conhece os que nele confiam\"?",
+    "cue": "Em Naum 1:7, toque a palavra que falta em \"___ é bom, uma fortaleza no dia da tribulação; ele conhece os que nele confiam\"?",
+    "feedbackCorrect": "Isso mesmo: é Jeová quem é chamado de bom e fortaleza.",
+    "feedbackWrong": {
+      "b": "Fortaleza é o que Jeová é para o povo, não quem \"é bom\".",
+      "c": "Tribulação é o momento da provação, não o sujeito da frase."
+    },
+    "passageText": "Jeová é bom, uma fortaleza no dia da tribulação; ele conhece os que nele confiam",
+    "template": "___ é bom, uma fortaleza no dia da tribulação; ele conhece os que nele confiam",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "fortaleza"
+      },
+      {
+        "id": "c",
+        "text": "tribulação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "id": "naum-sem-naum-naum-01-o-senhor-e-bom-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Naum 1:7",
+    "learningObjective": "Reconhecer que Jeová é bom e se torna fortaleza para quem nele confia no dia da tribulação.",
+    "evidence": [
+      "Naum 1:7"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelo texto em Naum 1:7?",
+    "prompt": "Qual afirmação é feita diretamente pelo texto em Naum 1:7?",
+    "cue": "Qual afirmação é feita diretamente pelo texto em Naum 1:7?",
+    "feedbackCorrect": "Correto: é isto que Naum 1:7 declara sobre Jeová.",
+    "feedbackWrong": {
+      "a": "O texto não descreve Jeová como irado ou ameaçador nesta frase.",
+      "b": "O verso não inverte os papéis entre o povo e Jeová.",
+      "c": "O texto diz o oposto: Jeová conhece os que nele confiam."
+    },
+    "passageText": "Jeová é bom, uma fortaleza no dia da tribulação; ele conhece os que nele confiam",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová é irado, uma ameaça no dia da paz."
+      },
+      {
+        "id": "b",
+        "text": "O povo é bom, uma fortaleza para Jeová."
+      },
+      {
+        "id": "c",
+        "text": "Jeová é distante, alheio à tribulação alheia."
+      },
+      {
+        "id": "d",
+        "text": "Jeová é bom, uma fortaleza no dia da tribulação."
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "id": "naum-sem-naum-naum-01-o-senhor-e-bom-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Naum 1:7",
+    "learningObjective": "Reconhecer que Jeová é bom e se torna fortaleza para quem nele confia no dia da tribulação.",
+    "evidence": [
+      "Naum 1:7"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Naum 1:7?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Naum 1:7?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Naum 1:7?",
+    "feedbackCorrect": "Certo: essa é a ordem exata da frase em Naum 1:7.",
+    "feedbackWrong": {
+      "b": "A fortaleza é mencionada antes de Jeová \"conhecer\" os que confiam.",
+      "c": "\"Ele conhece os que nele confiam\" vem por último no versículo."
+    },
+    "passageText": "Jeová é bom, uma fortaleza no dia da tribulação; ele conhece os que nele confiam",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová é bom"
+      },
+      {
+        "id": "b",
+        "text": "uma fortaleza no dia da tribulação"
+      },
+      {
+        "id": "c",
+        "text": "ele conhece os que nele confiam"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "id": "naum-sem-naum-naum-01-o-senhor-e-bom-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Naum 1:7",
+    "learningObjective": "Reconhecer que Jeová é bom e se torna fortaleza para quem nele confia no dia da tribulação.",
+    "evidence": [
+      "Naum 1:7"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Jeová é bom, uma ___ no dia da tribulação; ele conhece os que nele confiam\"",
+    "prompt": "Complete a frase: \"Jeová é bom, uma ___ no dia da tribulação; ele conhece os que nele confiam\"",
+    "cue": "Complete a frase: \"Jeová é bom, uma ___ no dia da tribulação; ele conhece os que nele confiam\"",
+    "feedbackCorrect": "Certo: fortaleza é a imagem usada para a proteção de Jeová.",
+    "feedbackWrong": {
+      "a": "Jeová é o sujeito da frase, não a palavra que falta aqui.",
+      "b": "Tribulação é o momento da provação, não a imagem de proteção."
+    },
+    "passageText": "Jeová é bom, uma fortaleza no dia da tribulação; ele conhece os que nele confiam",
+    "template": "Jeová é bom, uma ___ no dia da tribulação; ele conhece os que nele confiam",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "tribulação"
+      },
+      {
+        "id": "c",
+        "text": "fortaleza"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "id": "naum-sem-naum-naum-01-o-senhor-e-bom-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Naum 1:7",
+    "learningObjective": "Reconhecer que Jeová é bom e se torna fortaleza para quem nele confia no dia da tribulação.",
+    "evidence": [
+      "Naum 1:7"
+    ],
+    "type": "connect",
+    "question": "O que Naum 1:7 comunica que se liga a este contexto?",
+    "prompt": "O que Naum 1:7 comunica que se liga a este contexto?",
+    "cue": "O que Naum 1:7 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Correto: o texto liga a bondade de Jeová ao refúgio para quem confia.",
+    "feedbackWrong": {
+      "b": "O texto afirma o oposto: Jeová é fortaleza, não ausência de proteção.",
+      "c": "O verso aponta para confiança em Jeová, não para esforço próprio."
+    },
+    "passageText": "Jeová é bom, uma fortaleza no dia da tribulação; ele conhece os que nele confiam",
+    "passageA": {
+      "ref": "Naum 1:7",
+      "text": "Jeová é bom, uma fortaleza no dia da tribulação; ele conhece os que nele confiam"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Naum anuncia juízo sobre Nínive, mas também consolo: Jeová é refúgio para quem confia nele."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Refúgio para quem confia"
+      },
+      {
+        "id": "b",
+        "text": "Fim da proteção divina"
+      },
+      {
+        "id": "c",
+        "text": "Escape pela força própria"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "id": "naum-sem-naum-naum-01-o-senhor-e-bom-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Naum 1:7",
+    "learningObjective": "Reconhecer que Jeová é bom e se torna fortaleza para quem nele confia no dia da tribulação.",
+    "evidence": [
+      "Naum 1:7"
+    ],
+    "type": "true_false",
+    "question": "O texto ensina que Jeová só protege quem nunca passa por tribulação.",
+    "prompt": "O texto ensina que Jeová só protege quem nunca passa por tribulação.",
+    "cue": "O texto ensina que Jeová só protege quem nunca passa por tribulação.",
+    "feedbackCorrect": "Correto: Jeová é fortaleza NO dia da tribulação, não isenção dela.",
+    "feedbackWrong": {
+      "true": "O verso descreve proteção em meio à tribulação, não a ausência dela."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Jeová é bom, uma fortaleza no dia da tribulação; ele conhece os que nele confiam",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "id": "naum-cam-naum-naum-01-o-senhor-e-bom-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Naum 1:7",
+    "learningObjective": "Reconhecer que Jeová é bom e se torna fortaleza para quem nele confia no dia da tribulação.",
+    "evidence": [
+      "Naum 1:7"
+    ],
+    "type": "tap",
+    "question": "Em Naum 1:7, toque a palavra que falta em \"Jeová é bom, uma fortaleza no dia da ___; ele conhece os que nele confiam\"?",
+    "prompt": "Em Naum 1:7, toque a palavra que falta em \"Jeová é bom, uma fortaleza no dia da ___; ele conhece os que nele confiam\"?",
+    "cue": "Em Naum 1:7, toque a palavra que falta em \"Jeová é bom, uma fortaleza no dia da ___; ele conhece os que nele confiam\"?",
+    "feedbackCorrect": "Exato: é no dia da tribulação que a fortaleza de Jeová se revela.",
+    "feedbackWrong": {
+      "b": "Fortaleza já aparece antes na frase; não é a lacuna aqui.",
+      "c": "Confiam encerra a frase, mas não é o momento citado nesta lacuna."
+    },
+    "passageText": "Jeová é bom, uma fortaleza no dia da tribulação; ele conhece os que nele confiam",
+    "template": "Jeová é bom, uma fortaleza no dia da ___; ele conhece os que nele confiam",
+    "options": [
+      {
+        "id": "a",
+        "text": "tribulação"
+      },
+      {
+        "id": "b",
+        "text": "fortaleza"
+      },
+      {
+        "id": "c",
+        "text": "confiam"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "id": "naum-cam-naum-naum-01-o-senhor-e-bom-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Naum 1:7",
+    "learningObjective": "Reconhecer que Jeová é bom e se torna fortaleza para quem nele confia no dia da tribulação.",
+    "evidence": [
+      "Naum 1:7"
+    ],
+    "type": "choice",
+    "question": "Qual ideia melhor conecta Naum 1:7 ao contexto da missão?",
+    "prompt": "Qual ideia melhor conecta Naum 1:7 ao contexto da missão?",
+    "cue": "Qual ideia melhor conecta Naum 1:7 ao contexto da missão?",
+    "feedbackCorrect": "Correto: a bondade de Jeová sustenta quem confia nele na tribulação.",
+    "feedbackWrong": {
+      "a": "\"Fortaleza\" é metáfora da proteção de Jeová, não uma construção literal.",
+      "b": "O texto aponta para confiança em Deus, não para indiferença a ele.",
+      "c": "O verso segue relevante: descreve como Jeová ainda age com quem confia nele."
+    },
+    "passageText": "Jeová é bom, uma fortaleza no dia da tribulação; ele conhece os que nele confiam",
+    "options": [
+      {
+        "id": "a",
+        "text": "A fortaleza citada refere-se a um forte construído por Judá."
+      },
+      {
+        "id": "b",
+        "text": "O texto ensina que a confiança dispensa todo temor a Deus."
+      },
+      {
+        "id": "c",
+        "text": "A passagem descreve apenas um evento histórico sem valor hoje."
+      },
+      {
+        "id": "d",
+        "text": "Jeová é bom, uma fortaleza no dia da tribulação."
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "id": "naum-cam-naum-naum-01-o-senhor-e-bom-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Naum 1:7",
+    "learningObjective": "Reconhecer que Jeová é bom e se torna fortaleza para quem nele confia no dia da tribulação.",
+    "evidence": [
+      "Naum 1:7"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Naum 1:7?",
+    "prompt": "Como se encadeiam os eventos de Naum 1:7?",
+    "cue": "Como se encadeiam os eventos de Naum 1:7?",
+    "feedbackCorrect": "Certo: essa é a ordem exata da frase em Naum 1:7.",
+    "feedbackWrong": {
+      "b": "A menção à fortaleza vem antes de Jeová \"conhecer\" os que confiam.",
+      "c": "\"Ele conhece os que nele confiam\" é a conclusão do verso, não o início."
+    },
+    "passageText": "Jeová é bom, uma fortaleza no dia da tribulação; ele conhece os que nele confiam",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová é bom"
+      },
+      {
+        "id": "b",
+        "text": "uma fortaleza no dia da tribulação"
+      },
+      {
+        "id": "c",
+        "text": "ele conhece os que nele confiam"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "id": "naum-cam-naum-naum-01-o-senhor-e-bom-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Naum 1:7",
+    "learningObjective": "Reconhecer que Jeová é bom e se torna fortaleza para quem nele confia no dia da tribulação.",
+    "evidence": [
+      "Naum 1:7"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Jeová é bom, uma fortaleza no dia da tribulação; ele ___ os que nele confiam\"",
+    "prompt": "Complete a frase: \"Jeová é bom, uma fortaleza no dia da tribulação; ele ___ os que nele confiam\"",
+    "cue": "Complete a frase: \"Jeová é bom, uma fortaleza no dia da tribulação; ele ___ os que nele confiam\"",
+    "feedbackCorrect": "Certo: \"conhece\" expressa o cuidado pessoal de Jeová por quem confia nele.",
+    "feedbackWrong": {
+      "a": "Confiam é o que o povo faz; a lacuna pede o verbo de Jeová.",
+      "b": "Fortaleza já foi citada antes; a lacuna está em outra parte da frase."
+    },
+    "passageText": "Jeová é bom, uma fortaleza no dia da tribulação; ele conhece os que nele confiam",
+    "template": "Jeová é bom, uma fortaleza no dia da tribulação; ele ___ os que nele confiam",
+    "options": [
+      {
+        "id": "a",
+        "text": "confiam"
+      },
+      {
+        "id": "b",
+        "text": "fortaleza"
+      },
+      {
+        "id": "c",
+        "text": "conhece"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "id": "naum-cam-naum-naum-01-o-senhor-e-bom-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Naum 1:7",
+    "learningObjective": "Reconhecer que Jeová é bom e se torna fortaleza para quem nele confia no dia da tribulação.",
+    "evidence": [
+      "Naum 1:7"
+    ],
+    "type": "connect",
+    "question": "O que Naum 1:7 comunica que se liga a este contexto?",
+    "prompt": "O que Naum 1:7 comunica que se liga a este contexto?",
+    "cue": "O que Naum 1:7 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Correto: a bondade de Jeová sustenta a confiança em meio à aflição.",
+    "feedbackWrong": {
+      "a": "\"Fortaleza\" é imagem de proteção divina, não uma construção humana.",
+      "c": "O foco do verso é o caráter de Jeová, não dados sobre Nínive."
+    },
+    "passageText": "Jeová é bom, uma fortaleza no dia da tribulação; ele conhece os que nele confiam",
+    "passageA": {
+      "ref": "Naum 1:7",
+      "text": "Jeová é bom, uma fortaleza no dia da tribulação; ele conhece os que nele confiam"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Naum anuncia juízo sobre Nínive, mas também consolo: Jeová é refúgio para quem confia nele."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fortaleza como obra humana"
+      },
+      {
+        "id": "b",
+        "text": "Bondade sustenta na aflição"
+      },
+      {
+        "id": "c",
+        "text": "Detalhe geográfico sobre Nínive"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "id": "naum-cam-naum-naum-01-o-senhor-e-bom-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Naum 1:7",
+    "learningObjective": "Reconhecer que Jeová é bom e se torna fortaleza para quem nele confia no dia da tribulação.",
+    "evidence": [
+      "Naum 1:7"
+    ],
+    "type": "true_false",
+    "question": "A bondade de Jeová descrita aqui não anula o juízo que Naum anuncia contra os cruéis.",
+    "prompt": "A bondade de Jeová descrita aqui não anula o juízo que Naum anuncia contra os cruéis.",
+    "cue": "A bondade de Jeová descrita aqui não anula o juízo que Naum anuncia contra os cruéis.",
+    "feedbackCorrect": "Correto: em Naum, bondade aos fiéis e juízo aos cruéis andam juntos.",
+    "feedbackWrong": {
+      "false": "O livro une consolo aos fiéis e juízo severo sobre Nínive; ambos são verdadeiros."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Jeová é bom, uma fortaleza no dia da tribulação; ele conhece os que nele confiam",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "id": "naum-pro-naum-naum-01-o-senhor-e-bom-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Naum 1:7",
+    "learningObjective": "Reconhecer que Jeová é bom e se torna fortaleza para quem nele confia no dia da tribulação.",
+    "evidence": [
+      "Naum 1:7"
+    ],
+    "type": "tap",
+    "question": "Em Naum 1:7, toque a palavra que falta em \"Jeová é bom, uma fortaleza no dia da tribulação; ele conhece os que nele ___\"?",
+    "prompt": "Em Naum 1:7, toque a palavra que falta em \"Jeová é bom, uma fortaleza no dia da tribulação; ele conhece os que nele ___\"?",
+    "cue": "Em Naum 1:7, toque a palavra que falta em \"Jeová é bom, uma fortaleza no dia da tribulação; ele conhece os que nele ___\"?",
+    "feedbackCorrect": "Exato: \"confiam\" fecha o verso, apontando para a resposta de fé esperada.",
+    "feedbackWrong": {
+      "b": "Conhece já apareceu antes na frase; a lacuna pede outra palavra.",
+      "c": "Tribulação está no meio do verso, não na palavra final."
+    },
+    "passageText": "Jeová é bom, uma fortaleza no dia da tribulação; ele conhece os que nele confiam",
+    "template": "Jeová é bom, uma fortaleza no dia da tribulação; ele conhece os que nele ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "confiam"
+      },
+      {
+        "id": "b",
+        "text": "conhece"
+      },
+      {
+        "id": "c",
+        "text": "tribulação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "id": "naum-pro-naum-naum-01-o-senhor-e-bom-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Naum 1:7",
+    "learningObjective": "Reconhecer que Jeová é bom e se torna fortaleza para quem nele confia no dia da tribulação.",
+    "evidence": [
+      "Naum 1:7"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de Naum 1:7?",
+    "prompt": "Qual leitura interpreta melhor o sentido de Naum 1:7?",
+    "cue": "Qual leitura interpreta melhor o sentido de Naum 1:7?",
+    "feedbackCorrect": "Correto: Naum une a bondade de Jeová ao juízo justo contra os cruéis.",
+    "feedbackWrong": {
+      "a": "A bondade de Jeová não suspende o juízo anunciado contra os cruéis no livro.",
+      "b": "Confiar em Jeová promete sua presença na provação, não isenção dela.",
+      "d": "A proteção de Jeová nasce da confiança nele, não de méritos humanos."
+    },
+    "passageText": "Jeová é bom, uma fortaleza no dia da tribulação; ele conhece os que nele confiam",
+    "options": [
+      {
+        "id": "a",
+        "text": "A bondade de Jeová anula a necessidade de julgar os cruéis."
+      },
+      {
+        "id": "b",
+        "text": "Confiar em Jeová garante ausência de todo sofrimento."
+      },
+      {
+        "id": "c",
+        "text": "Jeová é bom, uma fortaleza no dia da tribulação."
+      },
+      {
+        "id": "d",
+        "text": "A proteção de Jeová depende do mérito humano acumulado."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "id": "naum-pro-naum-naum-01-o-senhor-e-bom-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Naum 1:7",
+    "learningObjective": "Reconhecer que Jeová é bom e se torna fortaleza para quem nele confia no dia da tribulação.",
+    "evidence": [
+      "Naum 1:7"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Naum 1:7?",
+    "prompt": "Qual sequência revela o sentido de Naum 1:7?",
+    "cue": "Qual sequência revela o sentido de Naum 1:7?",
+    "feedbackCorrect": "Certo: essa é a ordem exata da frase em Naum 1:7.",
+    "feedbackWrong": {
+      "b": "A fortaleza é citada antes de Jeová \"conhecer\" os que confiam nele.",
+      "c": "O reconhecimento de quem confia é a última ideia do verso, não a primeira."
+    },
+    "passageText": "Jeová é bom, uma fortaleza no dia da tribulação; ele conhece os que nele confiam",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová é bom"
+      },
+      {
+        "id": "b",
+        "text": "uma fortaleza no dia da tribulação"
+      },
+      {
+        "id": "c",
+        "text": "ele conhece os que nele confiam"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "id": "naum-pro-naum-naum-01-o-senhor-e-bom-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Naum 1:7",
+    "learningObjective": "Reconhecer que Jeová é bom e se torna fortaleza para quem nele confia no dia da tribulação.",
+    "evidence": [
+      "Naum 1:7"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Jeová é ___, uma fortaleza no dia da tribulação; ele conhece os que nele confiam\"",
+    "prompt": "Complete a frase: \"Jeová é ___, uma fortaleza no dia da tribulação; ele conhece os que nele confiam\"",
+    "cue": "Complete a frase: \"Jeová é ___, uma fortaleza no dia da tribulação; ele conhece os que nele confiam\"",
+    "feedbackCorrect": "Certo: \"bom\" é o atributo central de Jeová destacado neste verso.",
+    "feedbackWrong": {
+      "a": "Tribulação descreve o contexto, não o atributo de Jeová.",
+      "c": "Confiam descreve a resposta do povo, não o atributo de Jeová."
+    },
+    "passageText": "Jeová é bom, uma fortaleza no dia da tribulação; ele conhece os que nele confiam",
+    "template": "Jeová é ___, uma fortaleza no dia da tribulação; ele conhece os que nele confiam",
+    "options": [
+      {
+        "id": "a",
+        "text": "tribulação"
+      },
+      {
+        "id": "b",
+        "text": "bom"
+      },
+      {
+        "id": "c",
+        "text": "confiam"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "id": "naum-pro-naum-naum-01-o-senhor-e-bom-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Naum 1:7",
+    "learningObjective": "Reconhecer que Jeová é bom e se torna fortaleza para quem nele confia no dia da tribulação.",
+    "evidence": [
+      "Naum 1:7"
+    ],
+    "type": "connect",
+    "question": "O que Naum 1:7 comunica que se liga a este contexto?",
+    "prompt": "O que Naum 1:7 comunica que se liga a este contexto?",
+    "cue": "O que Naum 1:7 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Correto: em Naum, bondade aos fiéis e juízo aos cruéis não se opõem.",
+    "feedbackWrong": {
+      "a": "O texto afirma o contrário: Jeová conhece e cuida de quem nele confia.",
+      "b": "Confiar em Jeová, em Naum, não dispensa uma vida voltada a ele."
+    },
+    "passageText": "Jeová é bom, uma fortaleza no dia da tribulação; ele conhece os que nele confiam",
+    "passageA": {
+      "ref": "Naum 1:7",
+      "text": "Jeová é bom, uma fortaleza no dia da tribulação; ele conhece os que nele confiam"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Naum anuncia juízo sobre Nínive, mas também consolo: Jeová é refúgio para quem confia nele."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus abandona os aflitos"
+      },
+      {
+        "id": "b",
+        "text": "Fé dispensa obediência"
+      },
+      {
+        "id": "c",
+        "text": "Bondade e juízo não se opõem"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "naum",
+    "section": "naum-naum-01-o-senhor-e-bom",
+    "id": "naum-pro-naum-naum-01-o-senhor-e-bom-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Naum 3:1",
+    "learningObjective": "Perceber que Jeová julga a cidade violenta e cheia de mentiras e rapina.",
+    "evidence": [
+      "Naum 3:1"
+    ],
+    "type": "true_false",
+    "question": "A cidade descrita em Naum 3:1 está cheia de mentiras e de rapina.",
+    "prompt": "A cidade descrita em Naum 3:1 está cheia de mentiras e de rapina.",
+    "cue": "A cidade descrita em Naum 3:1 está cheia de mentiras e de rapina.",
+    "feedbackCorrect": "Correto: é exatamente o que Naum 3:1 afirma sobre a cidade.",
+    "feedbackWrong": {
+      "false": "O texto descreve a cidade como cheia de mentiras e rapina; releia o verso."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Ai da cidade ensanguentada! Está toda cheia de mentiras e de rapina; não se aparta dela a presa.",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "id": "naum-sem-naum-naum-02-queda-da-cidade-crue-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Naum 3:1",
+    "learningObjective": "Perceber que Jeová julga a cidade violenta e cheia de mentiras e rapina.",
+    "evidence": [
+      "Naum 3:1"
+    ],
+    "type": "tap",
+    "question": "Em Naum 3:1, toque a palavra que falta em \"Ai da cidade ___! Está toda cheia de mentiras e de rapina; não se aparta dela a presa\"?",
+    "prompt": "Em Naum 3:1, toque a palavra que falta em \"Ai da cidade ___! Está toda cheia de mentiras e de rapina; não se aparta dela a presa\"?",
+    "cue": "Em Naum 3:1, toque a palavra que falta em \"Ai da cidade ___! Está toda cheia de mentiras e de rapina; não se aparta dela a presa\"?",
+    "feedbackCorrect": "Exato: a cidade é chamada de \"ensanguentada\" por sua violência.",
+    "feedbackWrong": {
+      "b": "\"Mentiras\" descreve o conteúdo da cidade, não seu nome nesta lacuna.",
+      "c": "\"Presa\" aparece no fim do verso, não nesta posição."
+    },
+    "passageText": "Ai da cidade ensanguentada! Está toda cheia de mentiras e de rapina; não se aparta dela a presa.",
+    "template": "Ai da cidade ___! Está toda cheia de mentiras e de rapina; não se aparta dela a presa",
+    "options": [
+      {
+        "id": "a",
+        "text": "ensanguentada"
+      },
+      {
+        "id": "b",
+        "text": "mentiras"
+      },
+      {
+        "id": "c",
+        "text": "presa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "id": "naum-sem-naum-naum-02-queda-da-cidade-crue-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Naum 3:1",
+    "learningObjective": "Perceber que Jeová julga a cidade violenta e cheia de mentiras e rapina.",
+    "evidence": [
+      "Naum 3:1"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelo texto em Naum 3:1?",
+    "prompt": "Qual afirmação é feita diretamente pelo texto em Naum 3:1?",
+    "cue": "Qual afirmação é feita diretamente pelo texto em Naum 3:1?",
+    "feedbackCorrect": "Correto: é isto que Naum 3:1 afirma sobre a cidade ensanguentada.",
+    "feedbackWrong": {
+      "a": "O texto pronuncia um \"ai\", lamento de juízo, não um elogio.",
+      "b": "O texto atribui a violência às escolhas da própria cidade, não ao acaso.",
+      "c": "O verso diz o oposto: a cidade está cheia de mentiras e rapina."
+    },
+    "passageText": "Ai da cidade ensanguentada! Está toda cheia de mentiras e de rapina; não se aparta dela a presa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A cidade é elogiada por sua justiça e paz."
+      },
+      {
+        "id": "b",
+        "text": "O texto atribui a violência da cidade ao acaso."
+      },
+      {
+        "id": "c",
+        "text": "A cidade está isenta de qualquer mentira ou roubo."
+      },
+      {
+        "id": "d",
+        "text": "A cidade é cheia de mentiras e de rapina."
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "id": "naum-sem-naum-naum-02-queda-da-cidade-crue-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Naum 3:1",
+    "learningObjective": "Perceber que Jeová julga a cidade violenta e cheia de mentiras e rapina.",
+    "evidence": [
+      "Naum 3:1"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Naum 3:1?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Naum 3:1?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Naum 3:1?",
+    "feedbackCorrect": "Certo: essa é a ordem exata do lamento em Naum 3:1.",
+    "feedbackWrong": {
+      "b": "A descrição dos males da cidade vem depois do lamento inicial \"Ai\".",
+      "c": "\"Não se aparta dela a presa\" fecha o verso, não o abre."
+    },
+    "passageText": "Ai da cidade ensanguentada! Está toda cheia de mentiras e de rapina; não se aparta dela a presa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ai da cidade ensanguentada"
+      },
+      {
+        "id": "b",
+        "text": "está toda cheia de mentiras e de rapina"
+      },
+      {
+        "id": "c",
+        "text": "não se aparta dela a presa"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "id": "naum-sem-naum-naum-02-queda-da-cidade-crue-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Naum 3:1",
+    "learningObjective": "Perceber que Jeová julga a cidade violenta e cheia de mentiras e rapina.",
+    "evidence": [
+      "Naum 3:1"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Ai da cidade ensanguentada! Está toda cheia de mentiras e de rapina; não se aparta dela a ___\"",
+    "prompt": "Complete a frase: \"Ai da cidade ensanguentada! Está toda cheia de mentiras e de rapina; não se aparta dela a ___\"",
+    "cue": "Complete a frase: \"Ai da cidade ensanguentada! Está toda cheia de mentiras e de rapina; não se aparta dela a ___\"",
+    "feedbackCorrect": "Certo: \"presa\" é o que a cidade violenta não larga.",
+    "feedbackWrong": {
+      "b": "\"Rapina\" já foi citada antes; a lacuna está no fim do verso.",
+      "c": "\"Mentiras\" já apareceu antes na frase."
+    },
+    "passageText": "Ai da cidade ensanguentada! Está toda cheia de mentiras e de rapina; não se aparta dela a presa.",
+    "template": "Ai da cidade ensanguentada! Está toda cheia de mentiras e de rapina; não se aparta dela a ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "presa"
+      },
+      {
+        "id": "b",
+        "text": "rapina"
+      },
+      {
+        "id": "c",
+        "text": "mentiras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "id": "naum-sem-naum-naum-02-queda-da-cidade-crue-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Naum 3:1",
+    "learningObjective": "Perceber que Jeová julga a cidade violenta e cheia de mentiras e rapina.",
+    "evidence": [
+      "Naum 3:1"
+    ],
+    "type": "connect",
+    "question": "O que Naum 3:1 comunica que se liga a este contexto?",
+    "prompt": "O que Naum 3:1 comunica que se liga a este contexto?",
+    "cue": "O que Naum 3:1 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Correto: Naum liga a condenação da cidade ao juízo de Jeová sobre a violência.",
+    "feedbackWrong": {
+      "b": "O lamento \"Ai\" mostra que Jeová não ignora a opressão da cidade.",
+      "c": "O juízo anunciado mostra que a crueldade não fica impune."
+    },
+    "passageText": "Ai da cidade ensanguentada! Está toda cheia de mentiras e de rapina; não se aparta dela a presa.",
+    "passageA": {
+      "ref": "Naum 3:1",
+      "text": "Ai da cidade ensanguentada! Está toda cheia de mentiras e de rapina; não se aparta dela a presa."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Naum anuncia que Jeová julga cidades violentas e opressoras, trazendo justiça às vítimas da crueldade."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová julga a violência"
+      },
+      {
+        "id": "b",
+        "text": "Jeová ignora a opressão"
+      },
+      {
+        "id": "c",
+        "text": "A crueldade permanece impune"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "id": "naum-sem-naum-naum-02-queda-da-cidade-crue-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Naum 3:1",
+    "learningObjective": "Perceber que Jeová julga a cidade violenta e cheia de mentiras e rapina.",
+    "evidence": [
+      "Naum 3:1"
+    ],
+    "type": "true_false",
+    "question": "O texto elogia a cidade por sua riqueza conquistada na guerra.",
+    "prompt": "O texto elogia a cidade por sua riqueza conquistada na guerra.",
+    "cue": "O texto elogia a cidade por sua riqueza conquistada na guerra.",
+    "feedbackCorrect": "Correto: o verso é um lamento de juízo, não um elogio à cidade.",
+    "feedbackWrong": {
+      "true": "\"Ai da cidade\" é lamento profético de condenação, não elogio."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Ai da cidade ensanguentada! Está toda cheia de mentiras e de rapina; não se aparta dela a presa.",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "id": "naum-cam-naum-naum-02-queda-da-cidade-crue-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Naum 3:1",
+    "learningObjective": "Perceber que Jeová julga a cidade violenta e cheia de mentiras e rapina.",
+    "evidence": [
+      "Naum 3:1"
+    ],
+    "type": "tap",
+    "question": "Em Naum 3:1, toque a palavra que falta em \"Ai da cidade ensanguentada! Está toda cheia de ___ e de rapina; não se aparta dela a presa\"?",
+    "prompt": "Em Naum 3:1, toque a palavra que falta em \"Ai da cidade ensanguentada! Está toda cheia de ___ e de rapina; não se aparta dela a presa\"?",
+    "cue": "Em Naum 3:1, toque a palavra que falta em \"Ai da cidade ensanguentada! Está toda cheia de ___ e de rapina; não se aparta dela a presa\"?",
+    "feedbackCorrect": "Exato: \"mentiras\" é um dos males que enchem a cidade.",
+    "feedbackWrong": {
+      "b": "\"Rapina\" já aparece depois na frase; não é a lacuna aqui.",
+      "c": "\"Presa\" está no fim do verso, não nesta parte."
+    },
+    "passageText": "Ai da cidade ensanguentada! Está toda cheia de mentiras e de rapina; não se aparta dela a presa.",
+    "template": "Ai da cidade ensanguentada! Está toda cheia de ___ e de rapina; não se aparta dela a presa",
+    "options": [
+      {
+        "id": "a",
+        "text": "mentiras"
+      },
+      {
+        "id": "b",
+        "text": "rapina"
+      },
+      {
+        "id": "c",
+        "text": "presa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "id": "naum-cam-naum-naum-02-queda-da-cidade-crue-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Naum 3:1",
+    "learningObjective": "Perceber que Jeová julga a cidade violenta e cheia de mentiras e rapina.",
+    "evidence": [
+      "Naum 3:1"
+    ],
+    "type": "choice",
+    "question": "Qual ideia melhor conecta Naum 3:1 ao contexto da missão?",
+    "prompt": "Qual ideia melhor conecta Naum 3:1 ao contexto da missão?",
+    "cue": "Qual ideia melhor conecta Naum 3:1 ao contexto da missão?",
+    "feedbackCorrect": "Correto: Naum condena a cidade inteira por sua violência e engano.",
+    "feedbackWrong": {
+      "a": "\"Ai\" é uma fórmula profética de lamento e juízo, não de surpresa.",
+      "b": "Nenhuma necessidade justifica a violência descrita; o texto a condena.",
+      "c": "O julgamento recai sobre a cidade como um todo, não só sobre líderes."
+    },
+    "passageText": "Ai da cidade ensanguentada! Está toda cheia de mentiras e de rapina; não se aparta dela a presa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O \"ai\" pronunciado é mera surpresa, sem qualquer juízo."
+      },
+      {
+        "id": "b",
+        "text": "A opressão da cidade é justificada por sua necessidade de sobreviver."
+      },
+      {
+        "id": "c",
+        "text": "O texto condena apenas os líderes, não a cidade como um todo."
+      },
+      {
+        "id": "d",
+        "text": "A cidade é cheia de mentiras e de rapina."
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "id": "naum-cam-naum-naum-02-queda-da-cidade-crue-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Naum 3:1",
+    "learningObjective": "Perceber que Jeová julga a cidade violenta e cheia de mentiras e rapina.",
+    "evidence": [
+      "Naum 3:1"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Naum 3:1?",
+    "prompt": "Como se encadeiam os eventos de Naum 3:1?",
+    "cue": "Como se encadeiam os eventos de Naum 3:1?",
+    "feedbackCorrect": "Certo: essa é a ordem exata do lamento em Naum 3:1.",
+    "feedbackWrong": {
+      "b": "A descrição dos males da cidade vem depois do lamento inicial \"Ai\".",
+      "c": "\"Não se aparta dela a presa\" fecha o verso, não o abre."
+    },
+    "passageText": "Ai da cidade ensanguentada! Está toda cheia de mentiras e de rapina; não se aparta dela a presa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ai da cidade ensanguentada"
+      },
+      {
+        "id": "b",
+        "text": "está toda cheia de mentiras e de rapina"
+      },
+      {
+        "id": "c",
+        "text": "não se aparta dela a presa"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "id": "naum-cam-naum-naum-02-queda-da-cidade-crue-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Naum 3:1",
+    "learningObjective": "Perceber que Jeová julga a cidade violenta e cheia de mentiras e rapina.",
+    "evidence": [
+      "Naum 3:1"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Ai da cidade ___! Está toda cheia de mentiras e de rapina; não se aparta dela a presa\"",
+    "prompt": "Complete a frase: \"Ai da cidade ___! Está toda cheia de mentiras e de rapina; não se aparta dela a presa\"",
+    "cue": "Complete a frase: \"Ai da cidade ___! Está toda cheia de mentiras e de rapina; não se aparta dela a presa\"",
+    "feedbackCorrect": "Certo: \"ensanguentada\" é como Naum descreve essa cidade violenta.",
+    "feedbackWrong": {
+      "b": "\"Presa\" aparece no fim do verso, não nesta posição.",
+      "c": "\"Mentiras\" vem depois na frase, não nesta lacuna."
+    },
+    "passageText": "Ai da cidade ensanguentada! Está toda cheia de mentiras e de rapina; não se aparta dela a presa.",
+    "template": "Ai da cidade ___! Está toda cheia de mentiras e de rapina; não se aparta dela a presa",
+    "options": [
+      {
+        "id": "a",
+        "text": "ensanguentada"
+      },
+      {
+        "id": "b",
+        "text": "presa"
+      },
+      {
+        "id": "c",
+        "text": "mentiras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "id": "naum-cam-naum-naum-02-queda-da-cidade-crue-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Naum 3:1",
+    "learningObjective": "Perceber que Jeová julga a cidade violenta e cheia de mentiras e rapina.",
+    "evidence": [
+      "Naum 3:1"
+    ],
+    "type": "connect",
+    "question": "O que Naum 3:1 comunica que se liga a este contexto?",
+    "prompt": "O que Naum 3:1 comunica que se liga a este contexto?",
+    "cue": "O que Naum 3:1 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Correto: o juízo de Jeová alcança quem oprime através da violência.",
+    "feedbackWrong": {
+      "a": "O texto condena, não elogia, a cidade cheia de mentiras e rapina.",
+      "c": "O lamento profético anuncia um juízo real, não apenas retórico."
+    },
+    "passageText": "Ai da cidade ensanguentada! Está toda cheia de mentiras e de rapina; não se aparta dela a presa.",
+    "passageA": {
+      "ref": "Naum 3:1",
+      "text": "Ai da cidade ensanguentada! Está toda cheia de mentiras e de rapina; não se aparta dela a presa."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Naum anuncia que Jeová julga cidades violentas e opressoras, trazendo justiça às vítimas da crueldade."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A cidade é modelo de virtude"
+      },
+      {
+        "id": "b",
+        "text": "Justiça alcança os opressores"
+      },
+      {
+        "id": "c",
+        "text": "O julgamento é apenas retórico"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "id": "naum-cam-naum-naum-02-queda-da-cidade-crue-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Naum 3:1",
+    "learningObjective": "Perceber que Jeová julga a cidade violenta e cheia de mentiras e rapina.",
+    "evidence": [
+      "Naum 3:1"
+    ],
+    "type": "true_false",
+    "question": "O clamor \"Ai\" contra a cidade revela que Jeová julga a violência, não só Nínive isoladamente.",
+    "prompt": "O clamor \"Ai\" contra a cidade revela que Jeová julga a violência, não só Nínive isoladamente.",
+    "cue": "O clamor \"Ai\" contra a cidade revela que Jeová julga a violência, não só Nínive isoladamente.",
+    "feedbackCorrect": "Correto: o juízo de Naum alcança toda cidade marcada pela violência e pelo engano.",
+    "feedbackWrong": {
+      "false": "O padrão de juízo contra a violência vai além de um caso isolado."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Ai da cidade ensanguentada! Está toda cheia de mentiras e de rapina; não se aparta dela a presa.",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "id": "naum-pro-naum-naum-02-queda-da-cidade-crue-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Naum 3:1",
+    "learningObjective": "Perceber que Jeová julga a cidade violenta e cheia de mentiras e rapina.",
+    "evidence": [
+      "Naum 3:1"
+    ],
+    "type": "tap",
+    "question": "Em Naum 3:1, toque a palavra que falta em \"Ai da cidade ensanguentada! Está toda cheia de mentiras e de ___; não se aparta dela a presa\"?",
+    "prompt": "Em Naum 3:1, toque a palavra que falta em \"Ai da cidade ensanguentada! Está toda cheia de mentiras e de ___; não se aparta dela a presa\"?",
+    "cue": "Em Naum 3:1, toque a palavra que falta em \"Ai da cidade ensanguentada! Está toda cheia de mentiras e de ___; não se aparta dela a presa\"?",
+    "feedbackCorrect": "Exato: \"rapina\" é o segundo mal citado ao lado das mentiras.",
+    "feedbackWrong": {
+      "b": "\"Mentiras\" já foi citada antes; a lacuna pede a outra palavra.",
+      "c": "\"Ensanguentada\" descreve a cidade no início do verso, não aqui."
+    },
+    "passageText": "Ai da cidade ensanguentada! Está toda cheia de mentiras e de rapina; não se aparta dela a presa.",
+    "template": "Ai da cidade ensanguentada! Está toda cheia de mentiras e de ___; não se aparta dela a presa",
+    "options": [
+      {
+        "id": "a",
+        "text": "rapina"
+      },
+      {
+        "id": "b",
+        "text": "mentiras"
+      },
+      {
+        "id": "c",
+        "text": "ensanguentada"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "id": "naum-pro-naum-naum-02-queda-da-cidade-crue-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Naum 3:1",
+    "learningObjective": "Perceber que Jeová julga a cidade violenta e cheia de mentiras e rapina.",
+    "evidence": [
+      "Naum 3:1"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de Naum 3:1?",
+    "prompt": "Qual leitura interpreta melhor o sentido de Naum 3:1?",
+    "cue": "Qual leitura interpreta melhor o sentido de Naum 3:1?",
+    "feedbackCorrect": "Correto: o juízo de Jeová responde à violência real e escolhida da cidade.",
+    "feedbackWrong": {
+      "a": "O juízo anunciado não fecha a porta à restauração de quem se volta a Jeová.",
+      "b": "O texto atribui a violência a escolhas da cidade, não a um destino cego.",
+      "d": "O juízo contra a crueldade revela a justiça do caráter de Jeová."
+    },
+    "passageText": "Ai da cidade ensanguentada! Está toda cheia de mentiras e de rapina; não se aparta dela a presa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O juízo contra a cidade anula qualquer esperança de restauração."
+      },
+      {
+        "id": "b",
+        "text": "A violência da cidade é resultado do destino, não de escolhas."
+      },
+      {
+        "id": "c",
+        "text": "A cidade é cheia de mentiras e de rapina."
+      },
+      {
+        "id": "d",
+        "text": "A condenação da cidade nada revela sobre o caráter de Jeová."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "id": "naum-pro-naum-naum-02-queda-da-cidade-crue-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Naum 3:1",
+    "learningObjective": "Perceber que Jeová julga a cidade violenta e cheia de mentiras e rapina.",
+    "evidence": [
+      "Naum 3:1"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Naum 3:1?",
+    "prompt": "Qual sequência revela o sentido de Naum 3:1?",
+    "cue": "Qual sequência revela o sentido de Naum 3:1?",
+    "feedbackCorrect": "Certo: essa é a ordem exata do lamento em Naum 3:1.",
+    "feedbackWrong": {
+      "b": "A descrição dos males da cidade vem depois do lamento inicial \"Ai\".",
+      "c": "\"Não se aparta dela a presa\" fecha o verso, não o abre."
+    },
+    "passageText": "Ai da cidade ensanguentada! Está toda cheia de mentiras e de rapina; não se aparta dela a presa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ai da cidade ensanguentada"
+      },
+      {
+        "id": "b",
+        "text": "está toda cheia de mentiras e de rapina"
+      },
+      {
+        "id": "c",
+        "text": "não se aparta dela a presa"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "id": "naum-pro-naum-naum-02-queda-da-cidade-crue-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Naum 3:1",
+    "learningObjective": "Perceber que Jeová julga a cidade violenta e cheia de mentiras e rapina.",
+    "evidence": [
+      "Naum 3:1"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Ai da ___ ensanguentada! Está toda cheia de mentiras e de rapina; não se aparta dela a presa\"",
+    "prompt": "Complete a frase: \"Ai da ___ ensanguentada! Está toda cheia de mentiras e de rapina; não se aparta dela a presa\"",
+    "cue": "Complete a frase: \"Ai da ___ ensanguentada! Está toda cheia de mentiras e de rapina; não se aparta dela a presa\"",
+    "feedbackCorrect": "Certo: é a \"cidade\" ensanguentada que recebe o lamento de Naum.",
+    "feedbackWrong": {
+      "b": "\"Presa\" está no fim do verso, não logo depois de \"Ai da\".",
+      "c": "\"Rapina\" descreve um dos males da cidade, não seu nome."
+    },
+    "passageText": "Ai da cidade ensanguentada! Está toda cheia de mentiras e de rapina; não se aparta dela a presa.",
+    "template": "Ai da ___ ensanguentada! Está toda cheia de mentiras e de rapina; não se aparta dela a presa",
+    "options": [
+      {
+        "id": "a",
+        "text": "cidade"
+      },
+      {
+        "id": "b",
+        "text": "presa"
+      },
+      {
+        "id": "c",
+        "text": "rapina"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "id": "naum-pro-naum-naum-02-queda-da-cidade-crue-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Naum 3:1",
+    "learningObjective": "Perceber que Jeová julga a cidade violenta e cheia de mentiras e rapina.",
+    "evidence": [
+      "Naum 3:1"
+    ],
+    "type": "connect",
+    "question": "O que Naum 3:1 comunica que se liga a este contexto?",
+    "prompt": "O que Naum 3:1 comunica que se liga a este contexto?",
+    "cue": "O que Naum 3:1 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Correto: o juízo divino em Naum restaura a justiça às vítimas da violência.",
+    "feedbackWrong": {
+      "a": "O lamento \"Ai\" mostra que Jeová se importa com a crueldade humana.",
+      "b": "O juízo responde à violência real e escolhida da cidade, não é arbitrário."
+    },
+    "passageText": "Ai da cidade ensanguentada! Está toda cheia de mentiras e de rapina; não se aparta dela a presa.",
+    "passageA": {
+      "ref": "Naum 3:1",
+      "text": "Ai da cidade ensanguentada! Está toda cheia de mentiras e de rapina; não se aparta dela a presa."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Naum anuncia que Jeová julga cidades violentas e opressoras, trazendo justiça às vítimas da crueldade."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus é indiferente à crueldade humana"
+      },
+      {
+        "id": "b",
+        "text": "O juízo contra Nínive é arbitrário"
+      },
+      {
+        "id": "c",
+        "text": "Juízo divino restaura a justiça"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "naum",
+    "section": "naum-naum-02-queda-da-cidade-crue",
+    "id": "naum-pro-naum-naum-02-queda-da-cidade-crue-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Naum 1:15",
+    "learningObjective": "Unir o anúncio de paz ao povo fiel com o fim definitivo do opressor em Naum.",
+    "evidence": [
+      "Naum 1:15"
+    ],
+    "type": "true_false",
+    "question": "Naum 1:15 anuncia boas-novas de paz e o fim do ímpio.",
+    "prompt": "Naum 1:15 anuncia boas-novas de paz e o fim do ímpio.",
+    "cue": "Naum 1:15 anuncia boas-novas de paz e o fim do ímpio.",
+    "feedbackCorrect": "Correto: é exatamente o que Naum 1:15 anuncia.",
+    "feedbackWrong": {
+      "false": "O verso anuncia paz e afirma que o ímpio \"é de todo exterminado\"."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado.",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "id": "naum-sem-naum-naum-03-desafio-naum-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Naum 1:15",
+    "learningObjective": "Unir o anúncio de paz ao povo fiel com o fim definitivo do opressor em Naum.",
+    "evidence": [
+      "Naum 1:15"
+    ],
+    "type": "tap",
+    "question": "Em Naum 1:15, toque a palavra que falta em \"Eis sobre os montes os pés do que traz boas-novas, que anuncia ___! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado\"?",
+    "prompt": "Em Naum 1:15, toque a palavra que falta em \"Eis sobre os montes os pés do que traz boas-novas, que anuncia ___! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado\"?",
+    "cue": "Em Naum 1:15, toque a palavra que falta em \"Eis sobre os montes os pés do que traz boas-novas, que anuncia ___! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado\"?",
+    "feedbackCorrect": "Exato: as boas-novas anunciam \"paz\" sobre os montes.",
+    "feedbackWrong": {
+      "b": "\"Votos\" aparece depois, ligado às festas de Judá.",
+      "c": "\"Exterminado\" descreve o fim do ímpio, no final do verso."
+    },
+    "passageText": "Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado.",
+    "template": "Eis sobre os montes os pés do que traz boas-novas, que anuncia ___! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado",
+    "options": [
+      {
+        "id": "a",
+        "text": "paz"
+      },
+      {
+        "id": "b",
+        "text": "votos"
+      },
+      {
+        "id": "c",
+        "text": "exterminado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "id": "naum-sem-naum-naum-03-desafio-naum-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Naum 1:15",
+    "learningObjective": "Unir o anúncio de paz ao povo fiel com o fim definitivo do opressor em Naum.",
+    "evidence": [
+      "Naum 1:15"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelo texto em Naum 1:15?",
+    "prompt": "Qual afirmação é feita diretamente pelo texto em Naum 1:15?",
+    "cue": "Qual afirmação é feita diretamente pelo texto em Naum 1:15?",
+    "feedbackCorrect": "Correto: é isto que Naum 1:15 anuncia sobre os montes.",
+    "feedbackWrong": {
+      "a": "O texto afirma que o ímpio \"não tornará mais a passar\" por Judá.",
+      "b": "O texto chama Judá a celebrar festas e cumprir votos, não abandoná-los.",
+      "c": "O verso é explícito: o ímpio \"é de todo exterminado\"."
+    },
+    "passageText": "Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O ímpio é convidado a permanecer entre o povo de Judá."
+      },
+      {
+        "id": "b",
+        "text": "Judá é instruído a abandonar suas festas e votos."
+      },
+      {
+        "id": "c",
+        "text": "O texto silencia sobre o destino do ímpio."
+      },
+      {
+        "id": "d",
+        "text": "As boas-novas de paz são anunciadas sobre os montes."
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "id": "naum-sem-naum-naum-03-desafio-naum-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Naum 1:15",
+    "learningObjective": "Unir o anúncio de paz ao povo fiel com o fim definitivo do opressor em Naum.",
+    "evidence": [
+      "Naum 1:15"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Naum 1:15?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Naum 1:15?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Naum 1:15?",
+    "feedbackCorrect": "Certo: essa é a ordem exata do anúncio em Naum 1:15.",
+    "feedbackWrong": {
+      "b": "O chamado às festas de Judá vem depois do anúncio de paz, não antes.",
+      "c": "O fim do ímpio é a razão final apresentada no verso, por último."
+    },
+    "passageText": "Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Eis sobre os montes os pés do que traz boas-novas, que anuncia paz"
+      },
+      {
+        "id": "b",
+        "text": "celebra as tuas festas, ó Judá, cumpre os teus votos"
+      },
+      {
+        "id": "c",
+        "text": "porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "id": "naum-sem-naum-naum-03-desafio-naum-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Naum 1:15",
+    "learningObjective": "Unir o anúncio de paz ao povo fiel com o fim definitivo do opressor em Naum.",
+    "evidence": [
+      "Naum 1:15"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas ___, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado\"",
+    "prompt": "Complete a frase: \"Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas ___, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado\"",
+    "cue": "Complete a frase: \"Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas ___, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado\"",
+    "feedbackCorrect": "Certo: Judá é chamada a celebrar suas \"festas\" diante do juízo.",
+    "feedbackWrong": {
+      "b": "\"Votos\" vem logo depois, mas não é a lacuna aqui.",
+      "c": "\"Paz\" já foi anunciada antes, no início do verso."
+    },
+    "passageText": "Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado.",
+    "template": "Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas ___, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado",
+    "options": [
+      {
+        "id": "a",
+        "text": "festas"
+      },
+      {
+        "id": "b",
+        "text": "votos"
+      },
+      {
+        "id": "c",
+        "text": "paz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "id": "naum-sem-naum-naum-03-desafio-naum-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Naum 1:15",
+    "learningObjective": "Unir o anúncio de paz ao povo fiel com o fim definitivo do opressor em Naum.",
+    "evidence": [
+      "Naum 1:15"
+    ],
+    "type": "connect",
+    "question": "O que Naum 1:15 comunica que se liga a este contexto?",
+    "prompt": "O que Naum 1:15 comunica que se liga a este contexto?",
+    "cue": "O que Naum 1:15 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Correto: o verso une o anúncio de paz ao fim definitivo do ímpio.",
+    "feedbackWrong": {
+      "b": "O texto afirma que o ímpio \"é de todo exterminado\", não permanece.",
+      "c": "As festas de Judá são resposta de fé ao juízo, não algo sem sentido."
+    },
+    "passageText": "Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado.",
+    "passageA": {
+      "ref": "Naum 1:15",
+      "text": "Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O livro de Naum termina unindo duas mensagens: consolo para o povo fiel e juízo definitivo contra o opressor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Boas-novas e juízo final"
+      },
+      {
+        "id": "b",
+        "text": "Paz sem fim do opressor"
+      },
+      {
+        "id": "c",
+        "text": "Festas sem sentido algum"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "id": "naum-sem-naum-naum-03-desafio-naum-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Naum 1:15",
+    "learningObjective": "Unir o anúncio de paz ao povo fiel com o fim definitivo do opressor em Naum.",
+    "evidence": [
+      "Naum 1:15"
+    ],
+    "type": "true_false",
+    "question": "O texto ensina que o ímpio continuará a oprimir Judá indefinidamente.",
+    "prompt": "O texto ensina que o ímpio continuará a oprimir Judá indefinidamente.",
+    "cue": "O texto ensina que o ímpio continuará a oprimir Judá indefinidamente.",
+    "feedbackCorrect": "Correto: o texto afirma o fim definitivo do ímpio, não sua permanência.",
+    "feedbackWrong": {
+      "true": "O verso diz o oposto: o ímpio \"não tornará mais a passar\" por Judá."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado.",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "id": "naum-cam-naum-naum-03-desafio-naum-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Naum 1:15",
+    "learningObjective": "Unir o anúncio de paz ao povo fiel com o fim definitivo do opressor em Naum.",
+    "evidence": [
+      "Naum 1:15"
+    ],
+    "type": "tap",
+    "question": "Em Naum 1:15, toque a palavra que falta em \"Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus ___, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado\"?",
+    "prompt": "Em Naum 1:15, toque a palavra que falta em \"Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus ___, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado\"?",
+    "cue": "Em Naum 1:15, toque a palavra que falta em \"Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus ___, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado\"?",
+    "feedbackCorrect": "Exato: Judá deve cumprir seus \"votos\" diante do juízo anunciado.",
+    "feedbackWrong": {
+      "b": "\"Festas\" já apareceu antes nesta mesma frase.",
+      "c": "\"Paz\" é anunciada no início do verso, não nesta lacuna."
+    },
+    "passageText": "Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado.",
+    "template": "Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus ___, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado",
+    "options": [
+      {
+        "id": "a",
+        "text": "votos"
+      },
+      {
+        "id": "b",
+        "text": "festas"
+      },
+      {
+        "id": "c",
+        "text": "paz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "id": "naum-cam-naum-naum-03-desafio-naum-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Naum 1:15",
+    "learningObjective": "Unir o anúncio de paz ao povo fiel com o fim definitivo do opressor em Naum.",
+    "evidence": [
+      "Naum 1:15"
+    ],
+    "type": "choice",
+    "question": "Qual ideia melhor conecta Naum 1:15 ao contexto da missão?",
+    "prompt": "Qual ideia melhor conecta Naum 1:15 ao contexto da missão?",
+    "cue": "Qual ideia melhor conecta Naum 1:15 ao contexto da missão?",
+    "feedbackCorrect": "Correto: a paz anunciada e o fim do ímpio vêm juntos no mesmo verso.",
+    "feedbackWrong": {
+      "a": "A festa de Judá é resposta direta ao juízo que remove o opressor.",
+      "b": "O texto liga a paz ao chamado para cumprir votos e festas, não à indiferença.",
+      "c": "O texto afirma com força: \"ele é de todo exterminado\"."
+    },
+    "passageText": "Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A celebração de Judá independe do julgamento do ímpio."
+      },
+      {
+        "id": "b",
+        "text": "O anúncio de paz cancela a necessidade de fidelidade a Deus."
+      },
+      {
+        "id": "c",
+        "text": "O fim do ímpio é uma ameaça vazia, sem cumprimento."
+      },
+      {
+        "id": "d",
+        "text": "As boas-novas de paz são anunciadas sobre os montes."
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "id": "naum-cam-naum-naum-03-desafio-naum-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Naum 1:15",
+    "learningObjective": "Unir o anúncio de paz ao povo fiel com o fim definitivo do opressor em Naum.",
+    "evidence": [
+      "Naum 1:15"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Naum 1:15?",
+    "prompt": "Como se encadeiam os eventos de Naum 1:15?",
+    "cue": "Como se encadeiam os eventos de Naum 1:15?",
+    "feedbackCorrect": "Certo: essa é a ordem exata do anúncio em Naum 1:15.",
+    "feedbackWrong": {
+      "b": "O chamado às festas de Judá vem depois do anúncio de paz, não antes.",
+      "c": "O fim do ímpio é a razão final apresentada no verso, por último."
+    },
+    "passageText": "Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Eis sobre os montes os pés do que traz boas-novas, que anuncia paz"
+      },
+      {
+        "id": "b",
+        "text": "celebra as tuas festas, ó Judá, cumpre os teus votos"
+      },
+      {
+        "id": "c",
+        "text": "porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "id": "naum-cam-naum-naum-03-desafio-naum-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Naum 1:15",
+    "learningObjective": "Unir o anúncio de paz ao povo fiel com o fim definitivo do opressor em Naum.",
+    "evidence": [
+      "Naum 1:15"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ___ não tornará mais a passar por ti; ele é de todo exterminado\"",
+    "prompt": "Complete a frase: \"Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ___ não tornará mais a passar por ti; ele é de todo exterminado\"",
+    "cue": "Complete a frase: \"Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ___ não tornará mais a passar por ti; ele é de todo exterminado\"",
+    "feedbackCorrect": "Certo: é o \"ímpio\" quem não tornará mais a passar por Judá.",
+    "feedbackWrong": {
+      "b": "\"Exterminado\" descreve o destino do ímpio, não o sujeito da frase.",
+      "c": "\"Festas\" já apareceu antes, ligada à celebração de Judá."
+    },
+    "passageText": "Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado.",
+    "template": "Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ___ não tornará mais a passar por ti; ele é de todo exterminado",
+    "options": [
+      {
+        "id": "a",
+        "text": "ímpio"
+      },
+      {
+        "id": "b",
+        "text": "exterminado"
+      },
+      {
+        "id": "c",
+        "text": "festas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "id": "naum-cam-naum-naum-03-desafio-naum-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Naum 1:15",
+    "learningObjective": "Unir o anúncio de paz ao povo fiel com o fim definitivo do opressor em Naum.",
+    "evidence": [
+      "Naum 1:15"
+    ],
+    "type": "connect",
+    "question": "O que Naum 1:15 comunica que se liga a este contexto?",
+    "prompt": "O que Naum 1:15 comunica que se liga a este contexto?",
+    "cue": "O que Naum 1:15 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Correto: consolo ao povo fiel e juízo ao opressor se completam no mesmo verso.",
+    "feedbackWrong": {
+      "a": "A paz anunciada vem justamente com o fim do juízo contra o ímpio.",
+      "c": "O texto afirma com força que o ímpio \"é de todo exterminado\"."
+    },
+    "passageText": "Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado.",
+    "passageA": {
+      "ref": "Naum 1:15",
+      "text": "Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O livro de Naum termina unindo duas mensagens: consolo para o povo fiel e juízo definitivo contra o opressor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A paz anula o juízo anunciado"
+      },
+      {
+        "id": "b",
+        "text": "Consolo e juízo se completam"
+      },
+      {
+        "id": "c",
+        "text": "O ímpio permanece impune"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "id": "naum-cam-naum-naum-03-desafio-naum-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Naum 1:15",
+    "learningObjective": "Unir o anúncio de paz ao povo fiel com o fim definitivo do opressor em Naum.",
+    "evidence": [
+      "Naum 1:15"
+    ],
+    "type": "true_false",
+    "question": "O livro de Naum une consolo ao povo aflito e juízo definitivo contra o opressor.",
+    "prompt": "O livro de Naum une consolo ao povo aflito e juízo definitivo contra o opressor.",
+    "cue": "O livro de Naum une consolo ao povo aflito e juízo definitivo contra o opressor.",
+    "feedbackCorrect": "Correto: Naum termina unindo boas-novas de paz ao fim do opressor.",
+    "feedbackWrong": {
+      "false": "Esse é o padrão do livro: consolo aos fiéis e juízo final ao ímpio."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado.",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "id": "naum-pro-naum-naum-03-desafio-naum-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Naum 1:15",
+    "learningObjective": "Unir o anúncio de paz ao povo fiel com o fim definitivo do opressor em Naum.",
+    "evidence": [
+      "Naum 1:15"
+    ],
+    "type": "tap",
+    "question": "Em Naum 1:15, toque a palavra que falta em \"Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo ___\"?",
+    "prompt": "Em Naum 1:15, toque a palavra que falta em \"Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo ___\"?",
+    "cue": "Em Naum 1:15, toque a palavra que falta em \"Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo ___\"?",
+    "feedbackCorrect": "Exato: o ímpio \"é de todo exterminado\", conclusão do verso.",
+    "feedbackWrong": {
+      "b": "\"Ímpio\" é o sujeito da frase, não a palavra que falta aqui.",
+      "c": "\"Votos\" está ligado às festas de Judá, não ao destino do ímpio."
+    },
+    "passageText": "Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado.",
+    "template": "Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "exterminado"
+      },
+      {
+        "id": "b",
+        "text": "ímpio"
+      },
+      {
+        "id": "c",
+        "text": "votos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "id": "naum-pro-naum-naum-03-desafio-naum-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Naum 1:15",
+    "learningObjective": "Unir o anúncio de paz ao povo fiel com o fim definitivo do opressor em Naum.",
+    "evidence": [
+      "Naum 1:15"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de Naum 1:15?",
+    "prompt": "Qual leitura interpreta melhor o sentido de Naum 1:15?",
+    "cue": "Qual leitura interpreta melhor o sentido de Naum 1:15?",
+    "feedbackCorrect": "Correto: em Naum, o consolo ao povo fiel e o juízo sobre o ímpio se completam.",
+    "feedbackWrong": {
+      "a": "A bondade de Jeová inclui livrar seu povo do opressor definitivamente.",
+      "b": "A paz anunciada convida à fidelidade — celebrar festas e cumprir votos.",
+      "c": "O juízo contra o ímpio é a base do consolo anunciado ao povo fiel."
+    },
+    "passageText": "Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A extinção do ímpio contradiz a bondade de Jeová revelada no livro."
+      },
+      {
+        "id": "b",
+        "text": "A paz anunciada elimina qualquer necessidade de vigilância espiritual."
+      },
+      {
+        "id": "c",
+        "text": "O juízo contra o ímpio é incompatível com o consolo ao povo fiel."
+      },
+      {
+        "id": "d",
+        "text": "As boas-novas de paz são anunciadas sobre os montes."
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "id": "naum-pro-naum-naum-03-desafio-naum-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Naum 1:15",
+    "learningObjective": "Unir o anúncio de paz ao povo fiel com o fim definitivo do opressor em Naum.",
+    "evidence": [
+      "Naum 1:15"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Naum 1:15?",
+    "prompt": "Qual sequência revela o sentido de Naum 1:15?",
+    "cue": "Qual sequência revela o sentido de Naum 1:15?",
+    "feedbackCorrect": "Certo: essa é a ordem exata do anúncio em Naum 1:15.",
+    "feedbackWrong": {
+      "b": "O chamado às festas de Judá vem depois do anúncio de paz, não antes.",
+      "c": "O fim do ímpio é a razão final apresentada no verso, por último."
+    },
+    "passageText": "Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Eis sobre os montes os pés do que traz boas-novas, que anuncia paz"
+      },
+      {
+        "id": "b",
+        "text": "celebra as tuas festas, ó Judá, cumpre os teus votos"
+      },
+      {
+        "id": "c",
+        "text": "porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "id": "naum-pro-naum-naum-03-desafio-naum-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Naum 1:15",
+    "learningObjective": "Unir o anúncio de paz ao povo fiel com o fim definitivo do opressor em Naum.",
+    "evidence": [
+      "Naum 1:15"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Eis sobre os montes os pés do que traz ___, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado\"",
+    "prompt": "Complete a frase: \"Eis sobre os montes os pés do que traz ___, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado\"",
+    "cue": "Complete a frase: \"Eis sobre os montes os pés do que traz ___, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado\"",
+    "feedbackCorrect": "Certo: são as \"boas-novas\" que sobem os montes anunciando paz.",
+    "feedbackWrong": {
+      "b": "\"Paz\" vem logo depois, mas não é a lacuna aqui.",
+      "c": "\"Votos\" está ligado à celebração de Judá, mais adiante no verso."
+    },
+    "passageText": "Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado.",
+    "template": "Eis sobre os montes os pés do que traz ___, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado",
+    "options": [
+      {
+        "id": "a",
+        "text": "boas-novas"
+      },
+      {
+        "id": "b",
+        "text": "paz"
+      },
+      {
+        "id": "c",
+        "text": "votos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "id": "naum-pro-naum-naum-03-desafio-naum-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Naum 1:15",
+    "learningObjective": "Unir o anúncio de paz ao povo fiel com o fim definitivo do opressor em Naum.",
+    "evidence": [
+      "Naum 1:15"
+    ],
+    "type": "connect",
+    "question": "O que Naum 1:15 comunica que se liga a este contexto?",
+    "prompt": "O que Naum 1:15 comunica que se liga a este contexto?",
+    "cue": "O que Naum 1:15 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Correto: Naum resume graça ao fiel e justiça contra o opressor no mesmo anúncio.",
+    "feedbackWrong": {
+      "a": "A extinção do ímpio é expressão da graça de Jeová para com seu povo.",
+      "b": "O consolo anunciado depende justamente do juízo contra o opressor."
+    },
+    "passageText": "Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado.",
+    "passageA": {
+      "ref": "Naum 1:15",
+      "text": "Eis sobre os montes os pés do que traz boas-novas, que anuncia paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é de todo exterminado."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O livro de Naum termina unindo duas mensagens: consolo para o povo fiel e juízo definitivo contra o opressor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A extinção do ímpio contradiz a graça"
+      },
+      {
+        "id": "b",
+        "text": "O consolo torna o juízo desnecessário"
+      },
+      {
+        "id": "c",
+        "text": "Naum resume graça e justiça"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "naum",
+    "section": "naum-naum-03-desafio-naum",
+    "id": "naum-pro-naum-naum-03-desafio-naum-06"
+  }
+]

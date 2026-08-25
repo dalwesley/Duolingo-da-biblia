@@ -1,0 +1,2954 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lucas 24:44",
+    "learningObjective": "Reconhecer que Lei, Profetas e Salmos falam de Cristo e devem cumprir-se nele.",
+    "evidence": [
+      "Lucas 24:44"
+    ],
+    "type": "true_false",
+    "question": "Importava que se cumprisse tudo o que de Cristo estava escrito na Lei de Moisés, nos Profetas e nos Salmos.",
+    "prompt": "Importava que se cumprisse tudo o que de Cristo estava escrito na Lei de Moisés, nos Profetas e nos Salmos.",
+    "cue": "Importava que se cumprisse tudo o que de Cristo estava escrito na Lei de Moisés, nos Profetas e nos Salmos.",
+    "feedbackCorrect": "Certo: Jesus diz que tudo o que de mim estava escrito deve cumprir-se.",
+    "feedbackWrong": {
+      "false": "Releia Lucas 24:44: importava se cumprisse tudo o que de mim estava escrito."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos.",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "id": "teologia-biblica-sem-tb-01-historia-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lucas 24:44",
+    "learningObjective": "Reconhecer que Lei, Profetas e Salmos falam de Cristo e devem cumprir-se nele.",
+    "evidence": [
+      "Lucas 24:44"
+    ],
+    "type": "tap",
+    "question": "Em Lucas 24:44, toque a palavra que falta em \"que importava se ___ tudo o que de mim estava escrito\"?",
+    "prompt": "Em Lucas 24:44, toque a palavra que falta em \"que importava se ___ tudo o que de mim estava escrito\"?",
+    "cue": "Em Lucas 24:44, toque a palavra que falta em \"que importava se ___ tudo o que de mim estava escrito\"?",
+    "feedbackCorrect": "Exato: importava se cumprisse tudo o que de mim estava escrito.",
+    "feedbackWrong": {
+      "b": "Convosco fala do tempo da presença, não desta lacuna.",
+      "c": "Depois abre o versículo, não esta frase."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "cumprisse"
+      },
+      {
+        "id": "b",
+        "text": "convosco"
+      },
+      {
+        "id": "c",
+        "text": "Depois"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos.",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "id": "teologia-biblica-sem-tb-01-historia-02",
+    "template": "que importava se ___ tudo o que de mim estava escrito"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lucas 24:44",
+    "learningObjective": "Reconhecer que Lei, Profetas e Salmos falam de Cristo e devem cumprir-se nele.",
+    "evidence": [
+      "Lucas 24:44"
+    ],
+    "type": "choice",
+    "question": "Onde, segundo Lucas 24:44, estava escrito o que importava cumprir-se acerca de Jesus?",
+    "prompt": "Onde, segundo Lucas 24:44, estava escrito o que importava cumprir-se acerca de Jesus?",
+    "cue": "Onde, segundo Lucas 24:44, estava escrito o que importava cumprir-se acerca de Jesus?",
+    "feedbackCorrect": "Certo: na Lei de Moisés, nos Profetas e nos Salmos.",
+    "feedbackWrong": {
+      "b": "O texto não limita o escrito só aos Salmos.",
+      "c": "Jesus não cita apenas uma lei isolada de Moisés.",
+      "d": "O versículo aponta às Escrituras, não a um ditado oral."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Na Lei de Moisés, nos Profetas e nos Salmos."
+      },
+      {
+        "id": "b",
+        "text": "Somente nos Salmos, sem Lei nem Profetas."
+      },
+      {
+        "id": "c",
+        "text": "Apenas na Lei de Moisés, sem os outros escritos."
+      },
+      {
+        "id": "d",
+        "text": "Numa tradição oral que nunca foi escrita."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos.",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "id": "teologia-biblica-sem-tb-01-historia-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lucas 24:44",
+    "learningObjective": "Reconhecer que Lei, Profetas e Salmos falam de Cristo e devem cumprir-se nele.",
+    "evidence": [
+      "Lucas 24:44"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Lucas 24:44?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Lucas 24:44?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Lucas 24:44?",
+    "feedbackCorrect": "Certo: palavras ditas, cumprimento necessário, três partes da Escritura.",
+    "feedbackWrong": {
+      "b": "O cumprimento vem depois das palavras ditas convosco.",
+      "c": "Lei, Profetas e Salmos fecham o versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Estas são as palavras que eu vos disse, quando ainda estava convosco"
+      },
+      {
+        "id": "b",
+        "text": "que importava se cumprisse tudo o que de mim estava escrito"
+      },
+      {
+        "id": "c",
+        "text": "na Lei de Moisés, nos Profetas e nos Salmos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos.",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "id": "teologia-biblica-sem-tb-01-historia-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lucas 24:44",
+    "learningObjective": "Reconhecer que Lei, Profetas e Salmos falam de Cristo e devem cumprir-se nele.",
+    "evidence": [
+      "Lucas 24:44"
+    ],
+    "type": "complete",
+    "question": "Complete: \"na Lei de Moisés, nos Profetas e nos ___.\"",
+    "prompt": "Complete: \"na Lei de Moisés, nos Profetas e nos ___.\"",
+    "cue": "Complete: \"na Lei de Moisés, nos Profetas e nos ___.\"",
+    "feedbackCorrect": "Certo: e nos Salmos.",
+    "feedbackWrong": {
+      "b": "Profetas já aparece antes desta lacuna.",
+      "c": "Moisés pertence à Lei, não a este final."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Salmos"
+      },
+      {
+        "id": "b",
+        "text": "Profetas"
+      },
+      {
+        "id": "c",
+        "text": "Moisés"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos.",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "id": "teologia-biblica-sem-tb-01-historia-05",
+    "template": "na Lei de Moisés, nos Profetas e nos ___."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lucas 24:44",
+    "learningObjective": "Reconhecer que Lei, Profetas e Salmos falam de Cristo e devem cumprir-se nele.",
+    "evidence": [
+      "Lucas 24:44"
+    ],
+    "type": "connect",
+    "question": "O que Lucas 24:44 comunica que se liga a este contexto?",
+    "prompt": "O que Lucas 24:44 comunica que se liga a este contexto?",
+    "cue": "O que Lucas 24:44 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: as Escrituras de Israel falam de Cristo e se cumprem nele.",
+    "feedbackWrong": {
+      "b": "O texto exige cumprimento, não descarte da Lei.",
+      "c": "Salmos entram com Lei e Profetas, não ficam de fora."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Escrituras cumpridas em Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Lei antiga agora inútil"
+      },
+      {
+        "id": "c",
+        "text": "Salmos fora da história"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos.",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "id": "teologia-biblica-sem-tb-01-historia-06",
+    "passageA": {
+      "ref": "Lucas 24:44",
+      "text": "importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A grande história: Lei, Profetas e Salmos falam de Cristo e devem cumprir-se nele."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lucas 24:44",
+    "learningObjective": "Reconhecer que Lei, Profetas e Salmos falam de Cristo e devem cumprir-se nele.",
+    "evidence": [
+      "Lucas 24:44"
+    ],
+    "type": "true_false",
+    "question": "Jesus trata Lei, Profetas e Salmos como testemunhos que não precisam cumprir-se nele.",
+    "prompt": "Jesus trata Lei, Profetas e Salmos como testemunhos que não precisam cumprir-se nele.",
+    "cue": "Jesus trata Lei, Profetas e Salmos como testemunhos que não precisam cumprir-se nele.",
+    "feedbackCorrect": "Correto: ele afirma que importava cumprir-se tudo o que de mim estava escrito.",
+    "feedbackWrong": {
+      "true": "O texto une as três partes da Escritura ao cumprimento em Cristo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos.",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "id": "teologia-biblica-cam-tb-01-historia-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lucas 24:44",
+    "learningObjective": "Reconhecer que Lei, Profetas e Salmos falam de Cristo e devem cumprir-se nele.",
+    "evidence": [
+      "Lucas 24:44"
+    ],
+    "type": "tap",
+    "question": "Em Lucas 24:44, toque a palavra que falta em \"escrito na Lei de ___, nos Profetas e nos Salmos\"?",
+    "prompt": "Em Lucas 24:44, toque a palavra que falta em \"escrito na Lei de ___, nos Profetas e nos Salmos\"?",
+    "cue": "Em Lucas 24:44, toque a palavra que falta em \"escrito na Lei de ___, nos Profetas e nos Salmos\"?",
+    "feedbackCorrect": "Exato: a Lei de Moisés.",
+    "feedbackWrong": {
+      "b": "Palavras abre o dito, não o nome da Lei.",
+      "c": "Convosco descreve o tempo da presença."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Moisés"
+      },
+      {
+        "id": "b",
+        "text": "palavras"
+      },
+      {
+        "id": "c",
+        "text": "convosco"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos.",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "id": "teologia-biblica-cam-tb-01-historia-02",
+    "template": "escrito na Lei de ___, nos Profetas e nos Salmos"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lucas 24:44",
+    "learningObjective": "Reconhecer que Lei, Profetas e Salmos falam de Cristo e devem cumprir-se nele.",
+    "evidence": [
+      "Lucas 24:44"
+    ],
+    "type": "choice",
+    "question": "Por que Jesus menciona juntos Lei, Profetas e Salmos em Lucas 24:44?",
+    "prompt": "Por que Jesus menciona juntos Lei, Profetas e Salmos em Lucas 24:44?",
+    "cue": "Por que Jesus menciona juntos Lei, Profetas e Salmos em Lucas 24:44?",
+    "feedbackCorrect": "Certo: as três partes testemunham dele e devem cumprir-se.",
+    "feedbackWrong": {
+      "b": "O texto não trata as partes como histórias sem ligação.",
+      "c": "Ele não reduz o cumprimento a um único salmo isolado.",
+      "d": "O versículo não descarta Profetas e Salmos em favor só da Lei."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Para mostrar que toda a Escritura de Israel aponta para ele."
+      },
+      {
+        "id": "b",
+        "text": "Para provar que cada livro conta uma história sem Cristo."
+      },
+      {
+        "id": "c",
+        "text": "Para limitar o cumprimento a um único salmo de Davi."
+      },
+      {
+        "id": "d",
+        "text": "Para dizer que só a Lei importa, e o resto é opcional."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos.",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "id": "teologia-biblica-cam-tb-01-historia-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lucas 24:44",
+    "learningObjective": "Reconhecer que Lei, Profetas e Salmos falam de Cristo e devem cumprir-se nele.",
+    "evidence": [
+      "Lucas 24:44"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Lucas 24:44?",
+    "prompt": "Como se encadeiam os eventos de Lucas 24:44?",
+    "cue": "Como se encadeiam os eventos de Lucas 24:44?",
+    "feedbackCorrect": "Certo: presença anterior, necessidade de cumprimento, Escrita tripartida.",
+    "feedbackWrong": {
+      "b": "O cumprimento vem depois das palavras ditas convosco.",
+      "c": "Lei, Profetas e Salmos nomeiam o lugar do escrito."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "quando ainda estava convosco"
+      },
+      {
+        "id": "b",
+        "text": "importava se cumprisse tudo o que de mim estava escrito"
+      },
+      {
+        "id": "c",
+        "text": "na Lei de Moisés, nos Profetas e nos Salmos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos.",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "id": "teologia-biblica-cam-tb-01-historia-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lucas 24:44",
+    "learningObjective": "Reconhecer que Lei, Profetas e Salmos falam de Cristo e devem cumprir-se nele.",
+    "evidence": [
+      "Lucas 24:44"
+    ],
+    "type": "complete",
+    "question": "Complete: \"na Lei de Moisés, nos ___ e nos Salmos.\"",
+    "prompt": "Complete: \"na Lei de Moisés, nos ___ e nos Salmos.\"",
+    "cue": "Complete: \"na Lei de Moisés, nos ___ e nos Salmos.\"",
+    "feedbackCorrect": "Certo: nos Profetas.",
+    "feedbackWrong": {
+      "a": "Salmos fecha a tríade, não esta lacuna.",
+      "c": "Moisés já nomeia a Lei."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Salmos"
+      },
+      {
+        "id": "b",
+        "text": "Profetas"
+      },
+      {
+        "id": "c",
+        "text": "Moisés"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos.",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "id": "teologia-biblica-cam-tb-01-historia-05",
+    "template": "na Lei de Moisés, nos ___ e nos Salmos."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lucas 24:44",
+    "learningObjective": "Reconhecer que Lei, Profetas e Salmos falam de Cristo e devem cumprir-se nele.",
+    "evidence": [
+      "Lucas 24:44"
+    ],
+    "type": "connect",
+    "question": "O que Lucas 24:44 comunica que se liga a este contexto?",
+    "prompt": "O que Lucas 24:44 comunica que se liga a este contexto?",
+    "cue": "O que Lucas 24:44 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: uma história bíblica que se cumpre em Cristo.",
+    "feedbackWrong": {
+      "b": "O cumprimento é em Cristo, não em um herói à parte.",
+      "c": "O texto não fragmenta a Bíblia em livros soltos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Uma história que aponta a Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Um herói extra-bíblico"
+      },
+      {
+        "id": "c",
+        "text": "Livros sem fio comum"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos.",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "id": "teologia-biblica-cam-tb-01-historia-06",
+    "passageA": {
+      "ref": "Lucas 24:44",
+      "text": "Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A grande história: Lei, Profetas e Salmos falam de Cristo e devem cumprir-se nele."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lucas 24:44",
+    "learningObjective": "Reconhecer que Lei, Profetas e Salmos falam de Cristo e devem cumprir-se nele.",
+    "evidence": [
+      "Lucas 24:44"
+    ],
+    "type": "true_false",
+    "question": "O cumprimento em Cristo une a Escritura de Israel numa só história, em vez de descartá-la.",
+    "prompt": "O cumprimento em Cristo une a Escritura de Israel numa só história, em vez de descartá-la.",
+    "cue": "O cumprimento em Cristo une a Escritura de Israel numa só história, em vez de descartá-la.",
+    "feedbackCorrect": "Certo: importava cumprir-se o que de mim estava escrito, não apagá-lo.",
+    "feedbackWrong": {
+      "false": "Jesus lê Lei, Profetas e Salmos como escritos que se cumprem nele."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos.",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "id": "teologia-biblica-pro-tb-01-historia-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lucas 24:44",
+    "learningObjective": "Reconhecer que Lei, Profetas e Salmos falam de Cristo e devem cumprir-se nele.",
+    "evidence": [
+      "Lucas 24:44"
+    ],
+    "type": "tap",
+    "question": "Em Lucas 24:44, toque a palavra que falta em \"tudo o que de mim estava ___ na Lei de Moisés\"?",
+    "prompt": "Em Lucas 24:44, toque a palavra que falta em \"tudo o que de mim estava ___ na Lei de Moisés\"?",
+    "cue": "Em Lucas 24:44, toque a palavra que falta em \"tudo o que de mim estava ___ na Lei de Moisés\"?",
+    "feedbackCorrect": "Exato: estava escrito.",
+    "feedbackWrong": {
+      "b": "Disse refere-se às palavras de Jesus, não a esta lacuna.",
+      "c": "Palavras abre o dito, não o suporte da Escritura."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "escrito"
+      },
+      {
+        "id": "b",
+        "text": "disse"
+      },
+      {
+        "id": "c",
+        "text": "palavras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos.",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "id": "teologia-biblica-pro-tb-01-historia-02",
+    "template": "tudo o que de mim estava ___ na Lei de Moisés"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lucas 24:44",
+    "learningObjective": "Reconhecer que Lei, Profetas e Salmos falam de Cristo e devem cumprir-se nele.",
+    "evidence": [
+      "Lucas 24:44"
+    ],
+    "type": "choice",
+    "question": "Qual leitura de Lucas 24:44 honra o sentido teológico do versículo?",
+    "prompt": "Qual leitura de Lucas 24:44 honra o sentido teológico do versículo?",
+    "cue": "Qual leitura de Lucas 24:44 honra o sentido teológico do versículo?",
+    "feedbackCorrect": "Certo: Cristo é o cumprimento, não o cancelamento da Escritura.",
+    "feedbackWrong": {
+      "b": "O texto exige cumprimento, não substituição da Escritura por um novo mito.",
+      "c": "Lei, Profetas e Salmos não são meras curiosidades históricas.",
+      "d": "O 'de mim' impede ler o cumprimento como só ética genérica."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo é o alvo em quem a Escritura de Israel se cumpre."
+      },
+      {
+        "id": "b",
+        "text": "Jesus substitui a Escritura por um mito novo, sem raiz."
+      },
+      {
+        "id": "c",
+        "text": "Lei, Profetas e Salmos só servem como curiosidade antiga."
+      },
+      {
+        "id": "d",
+        "text": "O cumprimento é só moral, sem referência a Cristo."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos.",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "id": "teologia-biblica-pro-tb-01-historia-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lucas 24:44",
+    "learningObjective": "Reconhecer que Lei, Profetas e Salmos falam de Cristo e devem cumprir-se nele.",
+    "evidence": [
+      "Lucas 24:44"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Lucas 24:44?",
+    "prompt": "Qual sequência revela o sentido de Lucas 24:44?",
+    "cue": "Qual sequência revela o sentido de Lucas 24:44?",
+    "feedbackCorrect": "Certo: palavras ditas, cumprimento do escrito, cânon tripartido.",
+    "feedbackWrong": {
+      "b": "O cumprimento interpreta as palavras ditas.",
+      "c": "A tríade Escritura nomeia o lugar do cumprimento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Estas são as palavras que eu vos disse"
+      },
+      {
+        "id": "b",
+        "text": "importava se cumprisse tudo o que de mim estava escrito"
+      },
+      {
+        "id": "c",
+        "text": "na Lei de Moisés, nos Profetas e nos Salmos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos.",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "id": "teologia-biblica-pro-tb-01-historia-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lucas 24:44",
+    "learningObjective": "Reconhecer que Lei, Profetas e Salmos falam de Cristo e devem cumprir-se nele.",
+    "evidence": [
+      "Lucas 24:44"
+    ],
+    "type": "complete",
+    "question": "Complete: \"tudo o que de ___ estava escrito na Lei de Moisés.\"",
+    "prompt": "Complete: \"tudo o que de ___ estava escrito na Lei de Moisés.\"",
+    "cue": "Complete: \"tudo o que de ___ estava escrito na Lei de Moisés.\"",
+    "feedbackCorrect": "Certo: o que de mim estava escrito.",
+    "feedbackWrong": {
+      "b": "Lei é o lugar do escrito, não o sujeito 'de mim'.",
+      "c": "Salmos fecha a tríade, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "mim"
+      },
+      {
+        "id": "b",
+        "text": "Lei"
+      },
+      {
+        "id": "c",
+        "text": "Salmos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos.",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "id": "teologia-biblica-pro-tb-01-historia-05",
+    "template": "tudo o que de ___ estava escrito na Lei de Moisés."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lucas 24:44",
+    "learningObjective": "Reconhecer que Lei, Profetas e Salmos falam de Cristo e devem cumprir-se nele.",
+    "evidence": [
+      "Lucas 24:44"
+    ],
+    "type": "connect",
+    "question": "O que Lucas 24:44 comunica que se liga a este contexto?",
+    "prompt": "O que Lucas 24:44 comunica que se liga a este contexto?",
+    "cue": "O que Lucas 24:44 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o cânon de Israel se cumpre cristologicamente.",
+    "feedbackWrong": {
+      "b": "O texto não trata a Escritura como código sem Messias.",
+      "c": "O cumprimento é nele, não numa era sem Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cumprimento cristológico da Escritura"
+      },
+      {
+        "id": "b",
+        "text": "Código sem Messias"
+      },
+      {
+        "id": "c",
+        "text": "Era sem Cristo anunciado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos.",
+    "trail": "teologia-biblica",
+    "section": "tb-01-historia",
+    "id": "teologia-biblica-pro-tb-01-historia-06",
+    "passageA": {
+      "ref": "Lucas 24:44",
+      "text": "importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A grande história: Lei, Profetas e Salmos falam de Cristo e devem cumprir-se nele."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 3:16",
+    "learningObjective": "Reconhecer que a semente de Abraão, no singular, é Cristo — um, não muitos.",
+    "evidence": [
+      "Gálatas 3:16"
+    ],
+    "type": "true_false",
+    "question": "As promessas foram feitas a Abraão e à sua semente, a qual é Cristo.",
+    "prompt": "As promessas foram feitas a Abraão e à sua semente, a qual é Cristo.",
+    "cue": "As promessas foram feitas a Abraão e à sua semente, a qual é Cristo.",
+    "feedbackCorrect": "Certo: Paulo identifica a semente com Cristo.",
+    "feedbackWrong": {
+      "false": "Releia Gálatas 3:16: a semente, a qual é Cristo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo.",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "id": "teologia-biblica-sem-tb-02-promessa-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 3:16",
+    "learningObjective": "Reconhecer que a semente de Abraão, no singular, é Cristo — um, não muitos.",
+    "evidence": [
+      "Gálatas 3:16"
+    ],
+    "type": "tap",
+    "question": "Em Gálatas 3:16, toque a palavra que falta em \"Ora, a Abraão foram feitas as promessas e à sua ___\"?",
+    "prompt": "Em Gálatas 3:16, toque a palavra que falta em \"Ora, a Abraão foram feitas as promessas e à sua ___\"?",
+    "cue": "Em Gálatas 3:16, toque a palavra que falta em \"Ora, a Abraão foram feitas as promessas e à sua ___\"?",
+    "feedbackCorrect": "Exato: e à sua semente.",
+    "feedbackWrong": {
+      "b": "Abraão é o destinatário primeiro, não esta lacuna.",
+      "c": "Muitos é o que o texto recusa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "semente"
+      },
+      {
+        "id": "b",
+        "text": "Abraão"
+      },
+      {
+        "id": "c",
+        "text": "muitos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo.",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "id": "teologia-biblica-sem-tb-02-promessa-02",
+    "template": "Ora, a Abraão foram feitas as promessas e à sua ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 3:16",
+    "learningObjective": "Reconhecer que a semente de Abraão, no singular, é Cristo — um, não muitos.",
+    "evidence": [
+      "Gálatas 3:16"
+    ],
+    "type": "choice",
+    "question": "O que Gálatas 3:16 afirma sobre a semente da promessa?",
+    "prompt": "O que Gálatas 3:16 afirma sobre a semente da promessa?",
+    "cue": "O que Gálatas 3:16 afirma sobre a semente da promessa?",
+    "feedbackCorrect": "Certo: fala de um — a semente, que é Cristo.",
+    "feedbackWrong": {
+      "b": "O texto recusa o plural 'sementes'.",
+      "c": "Paulo não apaga Cristo da promessa a Abraão.",
+      "d": "A identificação é com Cristo, não com muitos heróis."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fala de um: a semente, a qual é Cristo."
+      },
+      {
+        "id": "b",
+        "text": "Fala de muitos: e às sementes, no plural."
+      },
+      {
+        "id": "c",
+        "text": "Diz que Abraão não recebeu promessa alguma."
+      },
+      {
+        "id": "d",
+        "text": "Identifica a semente com muitos libertadores."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo.",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "id": "teologia-biblica-sem-tb-02-promessa-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 3:16",
+    "learningObjective": "Reconhecer que a semente de Abraão, no singular, é Cristo — um, não muitos.",
+    "evidence": [
+      "Gálatas 3:16"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Gálatas 3:16?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Gálatas 3:16?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Gálatas 3:16?",
+    "feedbackCorrect": "Certo: promessas a Abraão, recusa do plural, semente que é Cristo.",
+    "feedbackWrong": {
+      "b": "A recusa do plural vem depois das promessas.",
+      "c": "Cristo fecha a identificação da semente."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ora, a Abraão foram feitas as promessas e à sua semente"
+      },
+      {
+        "id": "b",
+        "text": "Não diz: E às sementes, como falando de muitos"
+      },
+      {
+        "id": "c",
+        "text": "E à tua semente, a qual é Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo.",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "id": "teologia-biblica-sem-tb-02-promessa-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 3:16",
+    "learningObjective": "Reconhecer que a semente de Abraão, no singular, é Cristo — um, não muitos.",
+    "evidence": [
+      "Gálatas 3:16"
+    ],
+    "type": "complete",
+    "question": "Complete: \"E à tua semente, a qual é ___.\"",
+    "prompt": "Complete: \"E à tua semente, a qual é ___.\"",
+    "cue": "Complete: \"E à tua semente, a qual é ___.\"",
+    "feedbackCorrect": "Certo: a qual é Cristo.",
+    "feedbackWrong": {
+      "b": "Abraão recebe a promessa, não preenche esta lacuna.",
+      "c": "Muitos é o que o texto nega."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Abraão"
+      },
+      {
+        "id": "c",
+        "text": "muitos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo.",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "id": "teologia-biblica-sem-tb-02-promessa-05",
+    "template": "E à tua semente, a qual é ___."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 3:16",
+    "learningObjective": "Reconhecer que a semente de Abraão, no singular, é Cristo — um, não muitos.",
+    "evidence": [
+      "Gálatas 3:16"
+    ],
+    "type": "connect",
+    "question": "O que Gálatas 3:16 comunica que se liga a este contexto?",
+    "prompt": "O que Gálatas 3:16 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 3:16 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a semente prometida é um — Cristo.",
+    "feedbackWrong": {
+      "b": "O texto recusa o plural como chave da promessa.",
+      "c": "Cristo não é apagado da linhagem de Abraão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A semente é um: Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Muitos herdeiros sem o Um"
+      },
+      {
+        "id": "c",
+        "text": "Promessa sem Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo.",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "id": "teologia-biblica-sem-tb-02-promessa-06",
+    "passageA": {
+      "ref": "Gálatas 3:16",
+      "text": "E à tua semente, a qual é Cristo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Promessa e cumprimento: a semente de Abraão é Cristo — um, não muitos."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 3:16",
+    "learningObjective": "Reconhecer que a semente de Abraão, no singular, é Cristo — um, não muitos.",
+    "evidence": [
+      "Gálatas 3:16"
+    ],
+    "type": "true_false",
+    "question": "Paulo lê 'sementes' no plural para incluir muitos herdeiros à parte de Cristo.",
+    "prompt": "Paulo lê 'sementes' no plural para incluir muitos herdeiros à parte de Cristo.",
+    "cue": "Paulo lê 'sementes' no plural para incluir muitos herdeiros à parte de Cristo.",
+    "feedbackCorrect": "Correto: ele insiste no singular e identifica a semente com Cristo.",
+    "feedbackWrong": {
+      "true": "Gálatas 3:16 recusa o plural e aponta para um: Cristo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo.",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "id": "teologia-biblica-cam-tb-02-promessa-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 3:16",
+    "learningObjective": "Reconhecer que a semente de Abraão, no singular, é Cristo — um, não muitos.",
+    "evidence": [
+      "Gálatas 3:16"
+    ],
+    "type": "tap",
+    "question": "Em Gálatas 3:16, toque a palavra que falta em \"Não diz: E às sementes, como falando de ___\"?",
+    "prompt": "Em Gálatas 3:16, toque a palavra que falta em \"Não diz: E às sementes, como falando de ___\"?",
+    "cue": "Em Gálatas 3:16, toque a palavra que falta em \"Não diz: E às sementes, como falando de ___\"?",
+    "feedbackCorrect": "Exato: como falando de muitos.",
+    "feedbackWrong": {
+      "b": "Ora abre o versículo.",
+      "c": "Feitas descreve as promessas, não esta recusa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "muitos"
+      },
+      {
+        "id": "b",
+        "text": "Ora"
+      },
+      {
+        "id": "c",
+        "text": "feitas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo.",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "id": "teologia-biblica-cam-tb-02-promessa-02",
+    "template": "Não diz: E às sementes, como falando de ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 3:16",
+    "learningObjective": "Reconhecer que a semente de Abraão, no singular, é Cristo — um, não muitos.",
+    "evidence": [
+      "Gálatas 3:16"
+    ],
+    "type": "choice",
+    "question": "Por que Paulo insiste no singular 'semente' em Gálatas 3:16?",
+    "prompt": "Por que Paulo insiste no singular 'semente' em Gálatas 3:16?",
+    "cue": "Por que Paulo insiste no singular 'semente' em Gálatas 3:16?",
+    "feedbackCorrect": "Certo: o herdeiro da promessa é um — Cristo.",
+    "feedbackWrong": {
+      "b": "O argumento não é gramatical vazio; aponta para Cristo.",
+      "c": "Ele não dilui a promessa em muitos cristos.",
+      "d": "A recusa do plural não cancela a promessa a Abraão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Para identificar o herdeiro da promessa com Cristo."
+      },
+      {
+        "id": "b",
+        "text": "Só para discutir gramática hebraica sem teologia."
+      },
+      {
+        "id": "c",
+        "text": "Para espalhar a promessa em muitos cristos iguais."
+      },
+      {
+        "id": "d",
+        "text": "Para anular de vez a promessa feita a Abraão."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo.",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "id": "teologia-biblica-cam-tb-02-promessa-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 3:16",
+    "learningObjective": "Reconhecer que a semente de Abraão, no singular, é Cristo — um, não muitos.",
+    "evidence": [
+      "Gálatas 3:16"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Gálatas 3:16?",
+    "prompt": "Como se encadeiam os eventos de Gálatas 3:16?",
+    "cue": "Como se encadeiam os eventos de Gálatas 3:16?",
+    "feedbackCorrect": "Certo: promessa, recusa do plural, identificação com Cristo.",
+    "feedbackWrong": {
+      "b": "A recusa do plural interpreta as promessas.",
+      "c": "Cristo é a chave final da semente."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "a Abraão foram feitas as promessas e à sua semente"
+      },
+      {
+        "id": "b",
+        "text": "Não diz: E às sementes, como falando de muitos"
+      },
+      {
+        "id": "c",
+        "text": "mas, como de um: E à tua semente, a qual é Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo.",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "id": "teologia-biblica-cam-tb-02-promessa-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 3:16",
+    "learningObjective": "Reconhecer que a semente de Abraão, no singular, é Cristo — um, não muitos.",
+    "evidence": [
+      "Gálatas 3:16"
+    ],
+    "type": "complete",
+    "question": "Complete: \"mas, como de ___: E à tua semente, a qual é Cristo.\"",
+    "prompt": "Complete: \"mas, como de ___: E à tua semente, a qual é Cristo.\"",
+    "cue": "Complete: \"mas, como de ___: E à tua semente, a qual é Cristo.\"",
+    "feedbackCorrect": "Certo: como de um.",
+    "feedbackWrong": {
+      "b": "Muitos é o contraste recusado.",
+      "c": "Sementes é o plural que o texto nega."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "um"
+      },
+      {
+        "id": "b",
+        "text": "muitos"
+      },
+      {
+        "id": "c",
+        "text": "sementes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo.",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "id": "teologia-biblica-cam-tb-02-promessa-05",
+    "template": "mas, como de ___: E à tua semente, a qual é Cristo."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 3:16",
+    "learningObjective": "Reconhecer que a semente de Abraão, no singular, é Cristo — um, não muitos.",
+    "evidence": [
+      "Gálatas 3:16"
+    ],
+    "type": "connect",
+    "question": "O que Gálatas 3:16 comunica que se liga a este contexto?",
+    "prompt": "O que Gálatas 3:16 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 3:16 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a promessa se cumpre no Um, que é Cristo.",
+    "feedbackWrong": {
+      "b": "O texto não deixa a promessa suspensa sem herdeiro.",
+      "c": "Não há muitos cristos paralelos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Promessa cumprida no Um"
+      },
+      {
+        "id": "b",
+        "text": "Promessa sem herdeiro"
+      },
+      {
+        "id": "c",
+        "text": "Muitos cristos paralelos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo.",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "id": "teologia-biblica-cam-tb-02-promessa-06",
+    "passageA": {
+      "ref": "Gálatas 3:16",
+      "text": "Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Promessa e cumprimento: a semente de Abraão é Cristo — um, não muitos."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 3:16",
+    "learningObjective": "Reconhecer que a semente de Abraão, no singular, é Cristo — um, não muitos.",
+    "evidence": [
+      "Gálatas 3:16"
+    ],
+    "type": "true_false",
+    "question": "Cristo é o herdeiro singular da promessa a Abraão, e os muitos não substituem o Um.",
+    "prompt": "Cristo é o herdeiro singular da promessa a Abraão, e os muitos não substituem o Um.",
+    "cue": "Cristo é o herdeiro singular da promessa a Abraão, e os muitos não substituem o Um.",
+    "feedbackCorrect": "Certo: o argumento de Paulo fixa o herdeiro em Cristo.",
+    "feedbackWrong": {
+      "false": "Gálatas 3:16 opõe o Um (Cristo) ao plural 'sementes'."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo.",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "id": "teologia-biblica-pro-tb-02-promessa-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 3:16",
+    "learningObjective": "Reconhecer que a semente de Abraão, no singular, é Cristo — um, não muitos.",
+    "evidence": [
+      "Gálatas 3:16"
+    ],
+    "type": "tap",
+    "question": "Em Gálatas 3:16, toque a palavra que falta em \"a Abraão foram feitas as ___ e à sua semente\"?",
+    "prompt": "Em Gálatas 3:16, toque a palavra que falta em \"a Abraão foram feitas as ___ e à sua semente\"?",
+    "cue": "Em Gálatas 3:16, toque a palavra que falta em \"a Abraão foram feitas as ___ e à sua semente\"?",
+    "feedbackCorrect": "Exato: as promessas.",
+    "feedbackWrong": {
+      "b": "Sementes é o plural recusado.",
+      "c": "Abraão já está no início da frase."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "promessas"
+      },
+      {
+        "id": "b",
+        "text": "sementes"
+      },
+      {
+        "id": "c",
+        "text": "Abraão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo.",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "id": "teologia-biblica-pro-tb-02-promessa-02",
+    "template": "a Abraão foram feitas as ___ e à sua semente"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 3:16",
+    "learningObjective": "Reconhecer que a semente de Abraão, no singular, é Cristo — um, não muitos.",
+    "evidence": [
+      "Gálatas 3:16"
+    ],
+    "type": "choice",
+    "question": "Qual erro de leitura Gálatas 3:16 corrige?",
+    "prompt": "Qual erro de leitura Gálatas 3:16 corrige?",
+    "cue": "Qual erro de leitura Gálatas 3:16 corrige?",
+    "feedbackCorrect": "Certo: a linhagem da promessa passa pelo Um, que é Cristo.",
+    "feedbackWrong": {
+      "b": "Paulo não cancela Abraão; lê a promessa em Cristo.",
+      "c": "O singular não é acaso gramatical sem teologia.",
+      "d": "Cristo não é um exemplo entre muitos herdeiros iguais."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Tratar a promessa como muitos herdeiros sem o Cristo."
+      },
+      {
+        "id": "b",
+        "text": "Afirmar que Cristo anula de todo a história de Abraão."
+      },
+      {
+        "id": "c",
+        "text": "Dizer que o singular não tem peso teológico algum."
+      },
+      {
+        "id": "d",
+        "text": "Fazer de Cristo só um exemplo entre muitos iguais."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo.",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "id": "teologia-biblica-pro-tb-02-promessa-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 3:16",
+    "learningObjective": "Reconhecer que a semente de Abraão, no singular, é Cristo — um, não muitos.",
+    "evidence": [
+      "Gálatas 3:16"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Gálatas 3:16?",
+    "prompt": "Qual sequência revela o sentido de Gálatas 3:16?",
+    "cue": "Qual sequência revela o sentido de Gálatas 3:16?",
+    "feedbackCorrect": "Certo: promessa, recusa do muitos, Cristo como o Um.",
+    "feedbackWrong": {
+      "b": "O contraste com muitos interpreta as promessas.",
+      "c": "Cristo é o sentido da semente."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "a Abraão foram feitas as promessas e à sua semente"
+      },
+      {
+        "id": "b",
+        "text": "Não diz: E às sementes, como falando de muitos"
+      },
+      {
+        "id": "c",
+        "text": "E à tua semente, a qual é Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo.",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "id": "teologia-biblica-pro-tb-02-promessa-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 3:16",
+    "learningObjective": "Reconhecer que a semente de Abraão, no singular, é Cristo — um, não muitos.",
+    "evidence": [
+      "Gálatas 3:16"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Não diz: E às ___, como falando de muitos.\"",
+    "prompt": "Complete: \"Não diz: E às ___, como falando de muitos.\"",
+    "cue": "Complete: \"Não diz: E às ___, como falando de muitos.\"",
+    "feedbackCorrect": "Certo: E às sementes.",
+    "feedbackWrong": {
+      "b": "Promessas abre o versículo, não esta recusa.",
+      "c": "Cristo é a identificação final, não o plural."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "sementes"
+      },
+      {
+        "id": "b",
+        "text": "promessas"
+      },
+      {
+        "id": "c",
+        "text": "Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo.",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "id": "teologia-biblica-pro-tb-02-promessa-05",
+    "template": "Não diz: E às ___, como falando de muitos."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 3:16",
+    "learningObjective": "Reconhecer que a semente de Abraão, no singular, é Cristo — um, não muitos.",
+    "evidence": [
+      "Gálatas 3:16"
+    ],
+    "type": "connect",
+    "question": "O que Gálatas 3:16 comunica que se liga a este contexto?",
+    "prompt": "O que Gálatas 3:16 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 3:16 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: um herdeiro da promessa, não muitos paralelos.",
+    "feedbackWrong": {
+      "b": "O texto não dilui Cristo em linhagens rivais.",
+      "c": "A gramática serve à identificação com Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Um herdeiro, não muitos"
+      },
+      {
+        "id": "b",
+        "text": "Linhagens rivais sem Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Gramática sem cumprimento"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo.",
+    "trail": "teologia-biblica",
+    "section": "tb-02-promessa",
+    "id": "teologia-biblica-pro-tb-02-promessa-06",
+    "passageA": {
+      "ref": "Gálatas 3:16",
+      "text": "mas, como de um: E à tua semente, a qual é Cristo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Promessa e cumprimento: a semente de Abraão é Cristo — um, não muitos."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Marcos 1:15",
+    "learningObjective": "Reconhecer que o reino de Deus chegou no tempo cumprido e pede arrependimento e fé no evangelho.",
+    "evidence": [
+      "Marcos 1:15"
+    ],
+    "type": "true_false",
+    "question": "O tempo está cumprido, e o reino de Deus está próximo.",
+    "prompt": "O tempo está cumprido, e o reino de Deus está próximo.",
+    "cue": "O tempo está cumprido, e o reino de Deus está próximo.",
+    "feedbackCorrect": "Certo: é o anúncio literal de Marcos 1:15.",
+    "feedbackWrong": {
+      "false": "Releia: O tempo está cumprido, e o reino de Deus está próximo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "id": "teologia-biblica-sem-tb-03-reino-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Marcos 1:15",
+    "learningObjective": "Reconhecer que o reino de Deus chegou no tempo cumprido e pede arrependimento e fé no evangelho.",
+    "evidence": [
+      "Marcos 1:15"
+    ],
+    "type": "tap",
+    "question": "Em Marcos 1:15, toque a palavra que falta em \"O tempo está ___, e o reino de Deus está próximo\"?",
+    "prompt": "Em Marcos 1:15, toque a palavra que falta em \"O tempo está ___, e o reino de Deus está próximo\"?",
+    "cue": "Em Marcos 1:15, toque a palavra que falta em \"O tempo está ___, e o reino de Deus está próximo\"?",
+    "feedbackCorrect": "Exato: o tempo está cumprido.",
+    "feedbackWrong": {
+      "b": "Próximo descreve o reino, não o tempo.",
+      "c": "Dizendo introduz a fala."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "cumprido"
+      },
+      {
+        "id": "b",
+        "text": "próximo"
+      },
+      {
+        "id": "c",
+        "text": "dizendo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "id": "teologia-biblica-sem-tb-03-reino-02",
+    "template": "O tempo está ___, e o reino de Deus está próximo"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Marcos 1:15",
+    "learningObjective": "Reconhecer que o reino de Deus chegou no tempo cumprido e pede arrependimento e fé no evangelho.",
+    "evidence": [
+      "Marcos 1:15"
+    ],
+    "type": "choice",
+    "question": "O que Marcos 1:15 manda fazer diante do reino próximo?",
+    "prompt": "O que Marcos 1:15 manda fazer diante do reino próximo?",
+    "cue": "O que Marcos 1:15 manda fazer diante do reino próximo?",
+    "feedbackCorrect": "Certo: arrependei-vos e crede no evangelho.",
+    "feedbackWrong": {
+      "b": "O texto une arrependimento e fé, não os recusa.",
+      "c": "Não há ordem de esperar sem crer.",
+      "d": "O anúncio não dispensa o evangelho."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Arrependei-vos e crede no evangelho."
+      },
+      {
+        "id": "b",
+        "text": "Recusai o arrependimento e a fé."
+      },
+      {
+        "id": "c",
+        "text": "Esperai em silêncio, sem crer em nada."
+      },
+      {
+        "id": "d",
+        "text": "Anunciai outro reino, sem evangelho."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "id": "teologia-biblica-sem-tb-03-reino-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Marcos 1:15",
+    "learningObjective": "Reconhecer que o reino de Deus chegou no tempo cumprido e pede arrependimento e fé no evangelho.",
+    "evidence": [
+      "Marcos 1:15"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Marcos 1:15?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Marcos 1:15?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Marcos 1:15?",
+    "feedbackCorrect": "Certo: tempo cumprido, reino próximo, resposta de fé.",
+    "feedbackWrong": {
+      "b": "O reino vem depois do tempo cumprido.",
+      "c": "Arrependei-vos e crede fecham o anúncio."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O tempo está cumprido"
+      },
+      {
+        "id": "b",
+        "text": "e o reino de Deus está próximo"
+      },
+      {
+        "id": "c",
+        "text": "arrependei-vos e crede no evangelho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "id": "teologia-biblica-sem-tb-03-reino-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Marcos 1:15",
+    "learningObjective": "Reconhecer que o reino de Deus chegou no tempo cumprido e pede arrependimento e fé no evangelho.",
+    "evidence": [
+      "Marcos 1:15"
+    ],
+    "type": "complete",
+    "question": "Complete: \"arrependei-vos e crede no ___.\"",
+    "prompt": "Complete: \"arrependei-vos e crede no ___.\"",
+    "cue": "Complete: \"arrependei-vos e crede no ___.\"",
+    "feedbackCorrect": "Certo: crede no evangelho.",
+    "feedbackWrong": {
+      "b": "Tempo abre o anúncio, não esta lacuna.",
+      "c": "Reino descreve o que está próximo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "evangelho"
+      },
+      {
+        "id": "b",
+        "text": "tempo"
+      },
+      {
+        "id": "c",
+        "text": "reino"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "id": "teologia-biblica-sem-tb-03-reino-05",
+    "template": "arrependei-vos e crede no ___."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Marcos 1:15",
+    "learningObjective": "Reconhecer que o reino de Deus chegou no tempo cumprido e pede arrependimento e fé no evangelho.",
+    "evidence": [
+      "Marcos 1:15"
+    ],
+    "type": "connect",
+    "question": "O que Marcos 1:15 comunica que se liga a este contexto?",
+    "prompt": "O que Marcos 1:15 comunica que se liga a este contexto?",
+    "cue": "O que Marcos 1:15 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o reino chegou e pede arrependimento e fé.",
+    "feedbackWrong": {
+      "b": "O texto não adia o reino para um futuro vazio.",
+      "c": "Há chamado a crer, não só a observar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Reino chegou: crede no evangelho"
+      },
+      {
+        "id": "b",
+        "text": "Reino só num futuro vazio"
+      },
+      {
+        "id": "c",
+        "text": "Anúncio sem chamado à fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "id": "teologia-biblica-sem-tb-03-reino-06",
+    "passageA": {
+      "ref": "Marcos 1:15",
+      "text": "O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O reino de Deus chegou no tempo cumprido: arrependei-vos e crede no evangelho."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Marcos 1:15",
+    "learningObjective": "Reconhecer que o reino de Deus chegou no tempo cumprido e pede arrependimento e fé no evangelho.",
+    "evidence": [
+      "Marcos 1:15"
+    ],
+    "type": "true_false",
+    "question": "O anúncio do reino dispensa arrependimento e fé, porque o tempo já se cumpriu.",
+    "prompt": "O anúncio do reino dispensa arrependimento e fé, porque o tempo já se cumpriu.",
+    "cue": "O anúncio do reino dispensa arrependimento e fé, porque o tempo já se cumpriu.",
+    "feedbackCorrect": "Correto: o tempo cumprido vem com arrependei-vos e crede.",
+    "feedbackWrong": {
+      "true": "Marcos 1:15 une cumprimento do tempo e chamado à fé."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "id": "teologia-biblica-cam-tb-03-reino-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Marcos 1:15",
+    "learningObjective": "Reconhecer que o reino de Deus chegou no tempo cumprido e pede arrependimento e fé no evangelho.",
+    "evidence": [
+      "Marcos 1:15"
+    ],
+    "type": "tap",
+    "question": "Em Marcos 1:15, toque a palavra que falta em \"o reino de Deus está ___\"?",
+    "prompt": "Em Marcos 1:15, toque a palavra que falta em \"o reino de Deus está ___\"?",
+    "cue": "Em Marcos 1:15, toque a palavra que falta em \"o reino de Deus está ___\"?",
+    "feedbackCorrect": "Exato: está próximo.",
+    "feedbackWrong": {
+      "b": "Cumprido descreve o tempo, não o reino nesta frase.",
+      "c": "Evangelho é o objeto da fé."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "próximo"
+      },
+      {
+        "id": "b",
+        "text": "cumprido"
+      },
+      {
+        "id": "c",
+        "text": "evangelho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "id": "teologia-biblica-cam-tb-03-reino-02",
+    "template": "o reino de Deus está ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Marcos 1:15",
+    "learningObjective": "Reconhecer que o reino de Deus chegou no tempo cumprido e pede arrependimento e fé no evangelho.",
+    "evidence": [
+      "Marcos 1:15"
+    ],
+    "type": "choice",
+    "question": "Como se relacionam tempo cumprido e reino em Marcos 1:15?",
+    "prompt": "Como se relacionam tempo cumprido e reino em Marcos 1:15?",
+    "cue": "Como se relacionam tempo cumprido e reino em Marcos 1:15?",
+    "feedbackCorrect": "Certo: o tempo cumprido significa que o reino está próximo.",
+    "feedbackWrong": {
+      "b": "O texto não separa o tempo cumprido de um reino distante.",
+      "c": "Não há anúncio de reino sem o tempo cumprido.",
+      "d": "O evangelho é a resposta, não o cancelamento do reino."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O tempo cumprido traz o reino próximo e pede fé."
+      },
+      {
+        "id": "b",
+        "text": "O tempo se cumpriu, mas o reino ficou distante."
+      },
+      {
+        "id": "c",
+        "text": "Há reino anunciado sem qualquer tempo cumprido."
+      },
+      {
+        "id": "d",
+        "text": "O evangelho substitui o reino e o anula."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "id": "teologia-biblica-cam-tb-03-reino-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Marcos 1:15",
+    "learningObjective": "Reconhecer que o reino de Deus chegou no tempo cumprido e pede arrependimento e fé no evangelho.",
+    "evidence": [
+      "Marcos 1:15"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Marcos 1:15?",
+    "prompt": "Como se encadeiam os eventos de Marcos 1:15?",
+    "cue": "Como se encadeiam os eventos de Marcos 1:15?",
+    "feedbackCorrect": "Certo: anúncio, tempo e reino, então a resposta.",
+    "feedbackWrong": {
+      "b": "O conteúdo do anúncio vem depois de dizendo.",
+      "c": "A resposta de fé fecha o versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "e dizendo"
+      },
+      {
+        "id": "b",
+        "text": "O tempo está cumprido, e o reino de Deus está próximo"
+      },
+      {
+        "id": "c",
+        "text": "arrependei-vos e crede no evangelho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "id": "teologia-biblica-cam-tb-03-reino-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Marcos 1:15",
+    "learningObjective": "Reconhecer que o reino de Deus chegou no tempo cumprido e pede arrependimento e fé no evangelho.",
+    "evidence": [
+      "Marcos 1:15"
+    ],
+    "type": "complete",
+    "question": "Complete: \"___, e crede no evangelho.\"",
+    "prompt": "Complete: \"___, e crede no evangelho.\"",
+    "cue": "Complete: \"___, e crede no evangelho.\"",
+    "feedbackCorrect": "Certo: arrependei-vos e crede.",
+    "feedbackWrong": {
+      "b": "Dizendo introduz a fala.",
+      "c": "Próximo descreve o reino."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "arrependei-vos"
+      },
+      {
+        "id": "b",
+        "text": "dizendo"
+      },
+      {
+        "id": "c",
+        "text": "próximo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "id": "teologia-biblica-cam-tb-03-reino-05",
+    "template": "___ e crede no evangelho."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Marcos 1:15",
+    "learningObjective": "Reconhecer que o reino de Deus chegou no tempo cumprido e pede arrependimento e fé no evangelho.",
+    "evidence": [
+      "Marcos 1:15"
+    ],
+    "type": "connect",
+    "question": "O que Marcos 1:15 comunica que se liga a este contexto?",
+    "prompt": "O que Marcos 1:15 comunica que se liga a este contexto?",
+    "cue": "O que Marcos 1:15 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o tempo cumprido exige resposta de arrependimento e fé.",
+    "feedbackWrong": {
+      "b": "O texto não permite um reino sem chamado.",
+      "c": "Não se crê em qualquer anúncio, senão no evangelho."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Tempo cumprido pede resposta"
+      },
+      {
+        "id": "b",
+        "text": "Reino sem nenhum chamado"
+      },
+      {
+        "id": "c",
+        "text": "Fé em qualquer anúncio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "id": "teologia-biblica-cam-tb-03-reino-06",
+    "passageA": {
+      "ref": "Marcos 1:15",
+      "text": "O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O reino de Deus chegou no tempo cumprido: arrependei-vos e crede no evangelho."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Marcos 1:15",
+    "learningObjective": "Reconhecer que o reino de Deus chegou no tempo cumprido e pede arrependimento e fé no evangelho.",
+    "evidence": [
+      "Marcos 1:15"
+    ],
+    "type": "true_false",
+    "question": "O reino que chegou no tempo cumprido chama à fé no evangelho, não a uma espera vazia.",
+    "prompt": "O reino que chegou no tempo cumprido chama à fé no evangelho, não a uma espera vazia.",
+    "cue": "O reino que chegou no tempo cumprido chama à fé no evangelho, não a uma espera vazia.",
+    "feedbackCorrect": "Certo: próximo se junta a arrependei-vos e crede.",
+    "feedbackWrong": {
+      "false": "Marcos 1:15 une presença do reino e chamado ao evangelho."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "id": "teologia-biblica-pro-tb-03-reino-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Marcos 1:15",
+    "learningObjective": "Reconhecer que o reino de Deus chegou no tempo cumprido e pede arrependimento e fé no evangelho.",
+    "evidence": [
+      "Marcos 1:15"
+    ],
+    "type": "tap",
+    "question": "Em Marcos 1:15, toque a palavra que falta em \"e o ___ de Deus está próximo\"?",
+    "prompt": "Em Marcos 1:15, toque a palavra que falta em \"e o ___ de Deus está próximo\"?",
+    "cue": "Em Marcos 1:15, toque a palavra que falta em \"e o ___ de Deus está próximo\"?",
+    "feedbackCorrect": "Exato: o reino de Deus.",
+    "feedbackWrong": {
+      "b": "Tempo abre a frase anterior.",
+      "c": "Evangelho é o objeto do crer."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "reino"
+      },
+      {
+        "id": "b",
+        "text": "tempo"
+      },
+      {
+        "id": "c",
+        "text": "evangelho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "id": "teologia-biblica-pro-tb-03-reino-02",
+    "template": "e o ___ de Deus está próximo"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Marcos 1:15",
+    "learningObjective": "Reconhecer que o reino de Deus chegou no tempo cumprido e pede arrependimento e fé no evangelho.",
+    "evidence": [
+      "Marcos 1:15"
+    ],
+    "type": "choice",
+    "question": "Qual leitura distorce o anúncio de Marcos 1:15?",
+    "prompt": "Qual leitura distorce o anúncio de Marcos 1:15?",
+    "cue": "Qual leitura distorce o anúncio de Marcos 1:15?",
+    "feedbackCorrect": "Certo: adiar o reino esvazia o chamado presente à fé.",
+    "feedbackWrong": {
+      "b": "Essa leitura está alinhada ao versículo, não é a distorção.",
+      "c": "O texto de fato une arrependimento e fé.",
+      "d": "O tempo cumprido é parte do anúncio, não um erro."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O reino é só futuro distante, sem arrependimento agora."
+      },
+      {
+        "id": "b",
+        "text": "O tempo cumprido traz o reino próximo e pede fé."
+      },
+      {
+        "id": "c",
+        "text": "Arrependei-vos e crede no evangelho."
+      },
+      {
+        "id": "d",
+        "text": "O tempo está cumprido, e o reino está próximo."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "id": "teologia-biblica-pro-tb-03-reino-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Marcos 1:15",
+    "learningObjective": "Reconhecer que o reino de Deus chegou no tempo cumprido e pede arrependimento e fé no evangelho.",
+    "evidence": [
+      "Marcos 1:15"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Marcos 1:15?",
+    "prompt": "Qual sequência revela o sentido de Marcos 1:15?",
+    "cue": "Qual sequência revela o sentido de Marcos 1:15?",
+    "feedbackCorrect": "Certo: tempo, reino próximo, resposta no evangelho.",
+    "feedbackWrong": {
+      "b": "O reino interpreta o tempo cumprido.",
+      "c": "A fé no evangelho é a resposta ao reino."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O tempo está cumprido"
+      },
+      {
+        "id": "b",
+        "text": "o reino de Deus está próximo"
+      },
+      {
+        "id": "c",
+        "text": "arrependei-vos e crede no evangelho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "id": "teologia-biblica-pro-tb-03-reino-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Marcos 1:15",
+    "learningObjective": "Reconhecer que o reino de Deus chegou no tempo cumprido e pede arrependimento e fé no evangelho.",
+    "evidence": [
+      "Marcos 1:15"
+    ],
+    "type": "complete",
+    "question": "Complete: \"O ___ está cumprido, e o reino de Deus está próximo.\"",
+    "prompt": "Complete: \"O ___ está cumprido, e o reino de Deus está próximo.\"",
+    "cue": "Complete: \"O ___ está cumprido, e o reino de Deus está próximo.\"",
+    "feedbackCorrect": "Certo: O tempo está cumprido.",
+    "feedbackWrong": {
+      "b": "Deus nomeia de quem é o reino.",
+      "c": "Evangelho fecha o chamado à fé."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "tempo"
+      },
+      {
+        "id": "b",
+        "text": "Deus"
+      },
+      {
+        "id": "c",
+        "text": "evangelho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "id": "teologia-biblica-pro-tb-03-reino-05",
+    "template": "O ___ está cumprido, e o reino de Deus está próximo."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Marcos 1:15",
+    "learningObjective": "Reconhecer que o reino de Deus chegou no tempo cumprido e pede arrependimento e fé no evangelho.",
+    "evidence": [
+      "Marcos 1:15"
+    ],
+    "type": "connect",
+    "question": "O que Marcos 1:15 comunica que se liga a este contexto?",
+    "prompt": "O que Marcos 1:15 comunica que se liga a este contexto?",
+    "cue": "O que Marcos 1:15 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o reino presente exige fé no evangelho.",
+    "feedbackWrong": {
+      "b": "O texto não descreve um reino só político sem evangelho.",
+      "c": "Não há cumprimento do tempo sem chamado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Reino presente que exige fé"
+      },
+      {
+        "id": "b",
+        "text": "Reino só político sem evangelho"
+      },
+      {
+        "id": "c",
+        "text": "Tempo cumprido sem chamado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-03-reino",
+    "id": "teologia-biblica-pro-tb-03-reino-06",
+    "passageA": {
+      "ref": "Marcos 1:15",
+      "text": "O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O reino de Deus chegou no tempo cumprido: arrependei-vos e crede no evangelho."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lucas 24:44; Gálatas 3:16; Marcos 1:15",
+    "learningObjective": "Unir Escrituras cumpridas, semente que é Cristo e reino que chegou num só Salvador.",
+    "evidence": [
+      "Lucas 24:44",
+      "Gálatas 3:16",
+      "Marcos 1:15"
+    ],
+    "type": "true_false",
+    "question": "Importava cumprir o escrito de Cristo; a semente de Abraão é Cristo; o reino de Deus está próximo.",
+    "prompt": "Importava cumprir o escrito de Cristo; a semente de Abraão é Cristo; o reino de Deus está próximo.",
+    "cue": "Importava cumprir o escrito de Cristo; a semente de Abraão é Cristo; o reino de Deus está próximo.",
+    "feedbackCorrect": "Certo: os três textos afirmam cumprimento, semente e reino.",
+    "feedbackWrong": {
+      "false": "Lucas 24:44, Gálatas 3:16 e Marcos 1:15 sustentam as três afirmações."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos. Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo. e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "id": "teologia-biblica-sem-tb-boss-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lucas 24:44; Gálatas 3:16; Marcos 1:15",
+    "learningObjective": "Unir Escrituras cumpridas, semente que é Cristo e reino que chegou num só Salvador.",
+    "evidence": [
+      "Lucas 24:44",
+      "Gálatas 3:16",
+      "Marcos 1:15"
+    ],
+    "type": "tap",
+    "question": "Em Lucas 24:44, toque a palavra que falta em \"nos Profetas e nos ___\"?",
+    "prompt": "Em Lucas 24:44, toque a palavra que falta em \"nos Profetas e nos ___\"?",
+    "cue": "Em Lucas 24:44, toque a palavra que falta em \"nos Profetas e nos ___\"?",
+    "feedbackCorrect": "Exato: e nos Salmos.",
+    "feedbackWrong": {
+      "b": "Semente pertence a Gálatas 3:16.",
+      "c": "Evangelho fecha Marcos 1:15."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Salmos"
+      },
+      {
+        "id": "b",
+        "text": "semente"
+      },
+      {
+        "id": "c",
+        "text": "evangelho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos. Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo. e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "id": "teologia-biblica-sem-tb-boss-02",
+    "template": "nos Profetas e nos ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lucas 24:44; Gálatas 3:16; Marcos 1:15",
+    "learningObjective": "Unir Escrituras cumpridas, semente que é Cristo e reino que chegou num só Salvador.",
+    "evidence": [
+      "Lucas 24:44",
+      "Gálatas 3:16",
+      "Marcos 1:15"
+    ],
+    "type": "choice",
+    "question": "O que Lucas 24:44, Gálatas 3:16 e Marcos 1:15 afirmam juntos?",
+    "prompt": "O que Lucas 24:44, Gálatas 3:16 e Marcos 1:15 afirmam juntos?",
+    "cue": "O que Lucas 24:44, Gálatas 3:16 e Marcos 1:15 afirmam juntos?",
+    "feedbackCorrect": "Certo: Escritura, semente e reino convergem em Cristo.",
+    "feedbackWrong": {
+      "b": "Os textos não descrevem histórias sem cumprimento.",
+      "c": "A semente é um, não muitos sem Cristo.",
+      "d": "O reino próximo pede fé, não recusa o evangelho."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Escrituras se cumprem, a semente é Cristo, o reino chegou."
+      },
+      {
+        "id": "b",
+        "text": "Três histórias paralelas, sem cumprimento em Cristo."
+      },
+      {
+        "id": "c",
+        "text": "Muitas sementes, e nenhum herdeiro singular."
+      },
+      {
+        "id": "d",
+        "text": "Reino distante, sem chamado a crer no evangelho."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos. Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo. e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "id": "teologia-biblica-sem-tb-boss-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lucas 24:44; Gálatas 3:16; Marcos 1:15",
+    "learningObjective": "Unir Escrituras cumpridas, semente que é Cristo e reino que chegou num só Salvador.",
+    "evidence": [
+      "Lucas 24:44",
+      "Gálatas 3:16",
+      "Marcos 1:15"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Lucas 24:44, Gálatas 3:16 e Marcos 1:15?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Lucas 24:44, Gálatas 3:16 e Marcos 1:15?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Lucas 24:44, Gálatas 3:16 e Marcos 1:15?",
+    "feedbackCorrect": "Certo: cumprimento das Escrituras, semente Cristo, reino próximo.",
+    "feedbackWrong": {
+      "b": "A semente vem no segundo texto.",
+      "c": "O reino próximo fecha o terceiro anúncio."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "importava se cumprisse tudo o que de mim estava escrito"
+      },
+      {
+        "id": "b",
+        "text": "E à tua semente, a qual é Cristo"
+      },
+      {
+        "id": "c",
+        "text": "o reino de Deus está próximo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos. Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo. e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "id": "teologia-biblica-sem-tb-boss-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lucas 24:44; Gálatas 3:16; Marcos 1:15",
+    "learningObjective": "Unir Escrituras cumpridas, semente que é Cristo e reino que chegou num só Salvador.",
+    "evidence": [
+      "Lucas 24:44",
+      "Gálatas 3:16",
+      "Marcos 1:15"
+    ],
+    "type": "complete",
+    "question": "Complete: \"E à tua ___, a qual é Cristo.\"",
+    "prompt": "Complete: \"E à tua ___, a qual é Cristo.\"",
+    "cue": "Complete: \"E à tua ___, a qual é Cristo.\"",
+    "feedbackCorrect": "Certo: à tua semente.",
+    "feedbackWrong": {
+      "b": "Salmos pertence a Lucas 24:44.",
+      "c": "Reino pertence a Marcos 1:15."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "semente"
+      },
+      {
+        "id": "b",
+        "text": "Salmos"
+      },
+      {
+        "id": "c",
+        "text": "reino"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos. Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo. e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "id": "teologia-biblica-sem-tb-boss-05",
+    "template": "E à tua ___, a qual é Cristo."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lucas 24:44; Gálatas 3:16; Marcos 1:15",
+    "learningObjective": "Unir Escrituras cumpridas, semente que é Cristo e reino que chegou num só Salvador.",
+    "evidence": [
+      "Lucas 24:44",
+      "Gálatas 3:16",
+      "Marcos 1:15"
+    ],
+    "type": "connect",
+    "question": "O que Lucas 24:44, Gálatas 3:16 e Marcos 1:15 comunicam que se liga a este contexto?",
+    "prompt": "O que Lucas 24:44, Gálatas 3:16 e Marcos 1:15 comunicam que se liga a este contexto?",
+    "cue": "O que Lucas 24:44, Gálatas 3:16 e Marcos 1:15 comunicam que se liga a este contexto?",
+    "feedbackCorrect": "Certo: uma história, um Salvador.",
+    "feedbackWrong": {
+      "b": "Os textos não descrevem três deuses rivais.",
+      "c": "Há um fio: cumprimento, semente e reino."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Uma história, um Salvador"
+      },
+      {
+        "id": "b",
+        "text": "Três deuses em disputa"
+      },
+      {
+        "id": "c",
+        "text": "Textos sem nenhum fio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos. Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo. e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "id": "teologia-biblica-sem-tb-boss-06",
+    "passageA": {
+      "ref": "Lucas 24:44",
+      "text": "importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Uma história, um Salvador: Escrituras cumpridas, semente que é Cristo, reino que chegou."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lucas 24:44; Gálatas 3:16; Marcos 1:15",
+    "learningObjective": "Unir Escrituras cumpridas, semente que é Cristo e reino que chegou num só Salvador.",
+    "evidence": [
+      "Lucas 24:44",
+      "Gálatas 3:16",
+      "Marcos 1:15"
+    ],
+    "type": "true_false",
+    "question": "Os três textos descrevem linhas paralelas que não se encontram em Cristo.",
+    "prompt": "Os três textos descrevem linhas paralelas que não se encontram em Cristo.",
+    "cue": "Os três textos descrevem linhas paralelas que não se encontram em Cristo.",
+    "feedbackCorrect": "Correto: Escritura, semente e reino convergem nele.",
+    "feedbackWrong": {
+      "true": "Os três anúncios se encontram em Cristo, não em linhas soltas."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos. Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo. e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "id": "teologia-biblica-cam-tb-boss-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lucas 24:44; Gálatas 3:16; Marcos 1:15",
+    "learningObjective": "Unir Escrituras cumpridas, semente que é Cristo e reino que chegou num só Salvador.",
+    "evidence": [
+      "Lucas 24:44",
+      "Gálatas 3:16",
+      "Marcos 1:15"
+    ],
+    "type": "tap",
+    "question": "Em Gálatas 3:16, toque a palavra que falta em \"a qual é ___\"?",
+    "prompt": "Em Gálatas 3:16, toque a palavra que falta em \"a qual é ___\"?",
+    "cue": "Em Gálatas 3:16, toque a palavra que falta em \"a qual é ___\"?",
+    "feedbackCorrect": "Exato: a qual é Cristo.",
+    "feedbackWrong": {
+      "b": "Tempo pertence a Marcos 1:15.",
+      "c": "Profetas pertence a Lucas 24:44."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo"
+      },
+      {
+        "id": "b",
+        "text": "tempo"
+      },
+      {
+        "id": "c",
+        "text": "Profetas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos. Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo. e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "id": "teologia-biblica-cam-tb-boss-02",
+    "template": "a qual é ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lucas 24:44; Gálatas 3:16; Marcos 1:15",
+    "learningObjective": "Unir Escrituras cumpridas, semente que é Cristo e reino que chegou num só Salvador.",
+    "evidence": [
+      "Lucas 24:44",
+      "Gálatas 3:16",
+      "Marcos 1:15"
+    ],
+    "type": "choice",
+    "question": "Como os três textos se encadeiam na história da salvação?",
+    "prompt": "Como os três textos se encadeiam na história da salvação?",
+    "cue": "Como os três textos se encadeiam na história da salvação?",
+    "feedbackCorrect": "Certo: a Escritura se cumpre na semente, e o reino é anunciado.",
+    "feedbackWrong": {
+      "b": "O reino não cancela a promessa a Abraão.",
+      "c": "A semente não apaga Lei, Profetas e Salmos.",
+      "d": "O evangelho não substitui o cumprimento das Escrituras."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A Escritura se cumpre na semente, e o reino chama à fé."
+      },
+      {
+        "id": "b",
+        "text": "O reino chegou para cancelar a promessa a Abraão."
+      },
+      {
+        "id": "c",
+        "text": "A semente substitui Lei, Profetas e Salmos."
+      },
+      {
+        "id": "d",
+        "text": "O evangelho torna inútil o cumprimento das Escrituras."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos. Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo. e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "id": "teologia-biblica-cam-tb-boss-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lucas 24:44; Gálatas 3:16; Marcos 1:15",
+    "learningObjective": "Unir Escrituras cumpridas, semente que é Cristo e reino que chegou num só Salvador.",
+    "evidence": [
+      "Lucas 24:44",
+      "Gálatas 3:16",
+      "Marcos 1:15"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Lucas 24:44, Gálatas 3:16 e Marcos 1:15?",
+    "prompt": "Como se encadeiam os eventos de Lucas 24:44, Gálatas 3:16 e Marcos 1:15?",
+    "cue": "Como se encadeiam os eventos de Lucas 24:44, Gálatas 3:16 e Marcos 1:15?",
+    "feedbackCorrect": "Certo: palavras de cumprimento, recusa do plural, chamado à fé.",
+    "feedbackWrong": {
+      "b": "Gálatas vem depois do dito de Lucas.",
+      "c": "O evangelho fecha o anúncio do reino."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Estas são as palavras que eu vos disse, quando ainda estava convosco"
+      },
+      {
+        "id": "b",
+        "text": "Não diz: E às sementes, como falando de muitos"
+      },
+      {
+        "id": "c",
+        "text": "arrependei-vos e crede no evangelho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos. Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo. e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "id": "teologia-biblica-cam-tb-boss-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lucas 24:44; Gálatas 3:16; Marcos 1:15",
+    "learningObjective": "Unir Escrituras cumpridas, semente que é Cristo e reino que chegou num só Salvador.",
+    "evidence": [
+      "Lucas 24:44",
+      "Gálatas 3:16",
+      "Marcos 1:15"
+    ],
+    "type": "complete",
+    "question": "Complete: \"o ___ de Deus está próximo.\"",
+    "prompt": "Complete: \"o ___ de Deus está próximo.\"",
+    "cue": "Complete: \"o ___ de Deus está próximo.\"",
+    "feedbackCorrect": "Certo: o reino de Deus está próximo.",
+    "feedbackWrong": {
+      "b": "Lei pertence a Lucas 24:44.",
+      "c": "Abraão pertence a Gálatas 3:16."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "reino"
+      },
+      {
+        "id": "b",
+        "text": "Lei"
+      },
+      {
+        "id": "c",
+        "text": "Abraão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos. Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo. e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "id": "teologia-biblica-cam-tb-boss-05",
+    "template": "o ___ de Deus está próximo."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lucas 24:44; Gálatas 3:16; Marcos 1:15",
+    "learningObjective": "Unir Escrituras cumpridas, semente que é Cristo e reino que chegou num só Salvador.",
+    "evidence": [
+      "Lucas 24:44",
+      "Gálatas 3:16",
+      "Marcos 1:15"
+    ],
+    "type": "connect",
+    "question": "O que estes três textos comunicam que se liga a este contexto?",
+    "prompt": "O que estes três textos comunicam que se liga a este contexto?",
+    "cue": "O que estes três textos comunicam que se liga a este contexto?",
+    "feedbackCorrect": "Certo: promessa, Escritura e reino se encontram em Cristo.",
+    "feedbackWrong": {
+      "b": "Não há três salvadores rivais.",
+      "c": "A história não fica sem cumprimento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Promessa, Escritura e reino"
+      },
+      {
+        "id": "b",
+        "text": "Três salvadores rivais"
+      },
+      {
+        "id": "c",
+        "text": "História sem cumprimento"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos. Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo. e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "id": "teologia-biblica-cam-tb-boss-06",
+    "passageA": {
+      "ref": "Gálatas 3:16",
+      "text": "E à tua semente, a qual é Cristo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Uma história, um Salvador: Escrituras cumpridas, semente que é Cristo, reino que chegou."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lucas 24:44; Gálatas 3:16; Marcos 1:15",
+    "learningObjective": "Unir Escrituras cumpridas, semente que é Cristo e reino que chegou num só Salvador.",
+    "evidence": [
+      "Lucas 24:44",
+      "Gálatas 3:16",
+      "Marcos 1:15"
+    ],
+    "type": "true_false",
+    "question": "A teologia bíblica une cumprimento das Escrituras, herdeiro da promessa e reino anunciado num só Salvador.",
+    "prompt": "A teologia bíblica une cumprimento das Escrituras, herdeiro da promessa e reino anunciado num só Salvador.",
+    "cue": "A teologia bíblica une cumprimento das Escrituras, herdeiro da promessa e reino anunciado num só Salvador.",
+    "feedbackCorrect": "Certo: os três fios se atam em Cristo.",
+    "feedbackWrong": {
+      "false": "Lucas, Gálatas e Marcos convergem num só Salvador."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos. Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo. e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "id": "teologia-biblica-pro-tb-boss-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lucas 24:44; Gálatas 3:16; Marcos 1:15",
+    "learningObjective": "Unir Escrituras cumpridas, semente que é Cristo e reino que chegou num só Salvador.",
+    "evidence": [
+      "Lucas 24:44",
+      "Gálatas 3:16",
+      "Marcos 1:15"
+    ],
+    "type": "tap",
+    "question": "Em Marcos 1:15, toque a palavra que falta em \"crede no ___\"?",
+    "prompt": "Em Marcos 1:15, toque a palavra que falta em \"crede no ___\"?",
+    "cue": "Em Marcos 1:15, toque a palavra que falta em \"crede no ___\"?",
+    "feedbackCorrect": "Exato: crede no evangelho.",
+    "feedbackWrong": {
+      "b": "Moisés pertence à Lei em Lucas 24:44.",
+      "c": "Muitos é o plural recusado em Gálatas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "evangelho"
+      },
+      {
+        "id": "b",
+        "text": "Moisés"
+      },
+      {
+        "id": "c",
+        "text": "muitos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos. Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo. e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "id": "teologia-biblica-pro-tb-boss-02",
+    "template": "crede no ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lucas 24:44; Gálatas 3:16; Marcos 1:15",
+    "learningObjective": "Unir Escrituras cumpridas, semente que é Cristo e reino que chegou num só Salvador.",
+    "evidence": [
+      "Lucas 24:44",
+      "Gálatas 3:16",
+      "Marcos 1:15"
+    ],
+    "type": "choice",
+    "question": "Qual erro teológico estes três textos, lidos juntos, impedem?",
+    "prompt": "Qual erro teológico estes três textos, lidos juntos, impedem?",
+    "cue": "Qual erro teológico estes três textos, lidos juntos, impedem?",
+    "feedbackCorrect": "Certo: a história da salvação não se parte em cristos ou reinos rivais.",
+    "feedbackWrong": {
+      "b": "Essa leitura está alinhada aos textos, não é o erro.",
+      "c": "O singular da semente é o que Paulo afirma.",
+      "d": "O chamado ao evangelho é o que Marcos ordena."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Partir a Bíblia em histórias sem um Salvador."
+      },
+      {
+        "id": "b",
+        "text": "Ler Lei, Profetas e Salmos como cumpridos em Cristo."
+      },
+      {
+        "id": "c",
+        "text": "Identificar a semente de Abraão com Cristo."
+      },
+      {
+        "id": "d",
+        "text": "Chamar ao arrependimento e à fé no evangelho."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos. Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo. e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "id": "teologia-biblica-pro-tb-boss-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lucas 24:44; Gálatas 3:16; Marcos 1:15",
+    "learningObjective": "Unir Escrituras cumpridas, semente que é Cristo e reino que chegou num só Salvador.",
+    "evidence": [
+      "Lucas 24:44",
+      "Gálatas 3:16",
+      "Marcos 1:15"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Lucas 24:44, Gálatas 3:16 e Marcos 1:15?",
+    "prompt": "Qual sequência revela o sentido de Lucas 24:44, Gálatas 3:16 e Marcos 1:15?",
+    "cue": "Qual sequência revela o sentido de Lucas 24:44, Gálatas 3:16 e Marcos 1:15?",
+    "feedbackCorrect": "Certo: Escritura cumprida, promessa na semente, reino no tempo.",
+    "feedbackWrong": {
+      "b": "A promessa a Abraão interpreta o cumprimento.",
+      "c": "O reino no tempo cumprido é o anúncio final."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos"
+      },
+      {
+        "id": "b",
+        "text": "Ora, a Abraão foram feitas as promessas e à sua semente"
+      },
+      {
+        "id": "c",
+        "text": "O tempo está cumprido, e o reino de Deus está próximo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos. Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo. e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "id": "teologia-biblica-pro-tb-boss-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lucas 24:44; Gálatas 3:16; Marcos 1:15",
+    "learningObjective": "Unir Escrituras cumpridas, semente que é Cristo e reino que chegou num só Salvador.",
+    "evidence": [
+      "Lucas 24:44",
+      "Gálatas 3:16",
+      "Marcos 1:15"
+    ],
+    "type": "complete",
+    "question": "Complete: \"como falando de ___.\"",
+    "prompt": "Complete: \"como falando de ___.\"",
+    "cue": "Complete: \"como falando de ___.\"",
+    "feedbackCorrect": "Certo: como falando de muitos — o que o texto recusa.",
+    "feedbackWrong": {
+      "b": "Salmos pertence a Lucas 24:44.",
+      "c": "Próximo descreve o reino."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "muitos"
+      },
+      {
+        "id": "b",
+        "text": "Salmos"
+      },
+      {
+        "id": "c",
+        "text": "próximo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos. Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo. e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "id": "teologia-biblica-pro-tb-boss-05",
+    "template": "como falando de ___."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lucas 24:44; Gálatas 3:16; Marcos 1:15",
+    "learningObjective": "Unir Escrituras cumpridas, semente que é Cristo e reino que chegou num só Salvador.",
+    "evidence": [
+      "Lucas 24:44",
+      "Gálatas 3:16",
+      "Marcos 1:15"
+    ],
+    "type": "connect",
+    "question": "O que estes três textos comunicam que se liga a este contexto?",
+    "prompt": "O que estes três textos comunicam que se liga a este contexto?",
+    "cue": "O que estes três textos comunicam que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Escrituras, semente e reino num só Cristo.",
+    "feedbackWrong": {
+      "b": "Não há cânon sem cumprimento em Cristo.",
+      "c": "O reino anunciado não é outro messias."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Escrituras, semente e reino"
+      },
+      {
+        "id": "b",
+        "text": "Cânon sem cumprimento"
+      },
+      {
+        "id": "c",
+        "text": "Outro messias do reino"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois, lhes disse: Estas são as palavras que eu vos disse, quando ainda estava convosco, que importava se cumprisse tudo o que de mim estava escrito na Lei de Moisés, nos Profetas e nos Salmos. Ora, a Abraão foram feitas as promessas e à sua semente. Não diz: E às sementes, como falando de muitos; mas, como de um: E à tua semente, a qual é Cristo. e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "teologia-biblica",
+    "section": "tb-boss",
+    "id": "teologia-biblica-pro-tb-boss-06",
+    "passageA": {
+      "ref": "Marcos 1:15",
+      "text": "O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Uma história, um Salvador: Escrituras cumpridas, semente que é Cristo, reino que chegou."
+    }
+  }
+]

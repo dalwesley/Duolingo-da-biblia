@@ -1,0 +1,2078 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Eclesiastes 1:2",
+    "learningObjective": "Reconhecer que o Pregador declara, debaixo do sol, que tudo é vaidade.",
+    "evidence": ["Eclesiastes 1:2"],
+    "type": "true_false",
+    "question": "O Pregador diz: vaidade de vaidade, tudo é vaidade.",
+    "prompt": "O Pregador diz: vaidade de vaidade, tudo é vaidade.",
+    "cue": "O Pregador diz: vaidade de vaidade, tudo é vaidade.",
+    "feedbackCorrect": "Certo: Eclesiastes 1:2 registra exatamente essa declaração.",
+    "feedbackWrong": {
+      "false": "Releia 1:2: o Pregador afirma que tudo é vaidade."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade.",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "id": "eclesiastes-sem-eclesiastes-sol-01-vaidade-de-vaidades-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Eclesiastes 1:2",
+    "learningObjective": "Reconhecer que o Pregador declara, debaixo do sol, que tudo é vaidade.",
+    "evidence": ["Eclesiastes 1:2"],
+    "type": "tap",
+    "question": "Em Eclesiastes 1:2, toque a palavra que falta em \"___ de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade.\"?",
+    "prompt": "Em Eclesiastes 1:2, toque a palavra que falta em \"___ de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade.\"?",
+    "cue": "Em Eclesiastes 1:2, toque a palavra que falta em \"___ de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade.\"?",
+    "feedbackCorrect": "Exato: o versículo abre com a palavra Vaidade.",
+    "feedbackWrong": {
+      "b": "Pregador é quem fala, não a primeira palavra da frase.",
+      "c": "tudo aparece no fim do versículo, não nesta lacuna."
+    },
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade.",
+    "template": "___ de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade.",
+    "options": [
+      {"id": "a", "text": "Vaidade"},
+      {"id": "b", "text": "Pregador"},
+      {"id": "c", "text": "tudo"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "id": "eclesiastes-sem-eclesiastes-sol-01-vaidade-de-vaidades-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Eclesiastes 1:2",
+    "learningObjective": "Reconhecer que o Pregador declara, debaixo do sol, que tudo é vaidade.",
+    "evidence": ["Eclesiastes 1:2"],
+    "type": "choice",
+    "question": "Qual afirmação o texto faz em Eclesiastes 1:2?",
+    "prompt": "Qual afirmação o texto faz em Eclesiastes 1:2?",
+    "cue": "Qual afirmação o texto faz em Eclesiastes 1:2?",
+    "feedbackCorrect": "Certo: o Pregador declara que tudo é vaidade.",
+    "feedbackWrong": {
+      "b": "O texto não limita a vaidade; diz que tudo é vaidade.",
+      "c": "O versículo não elogia a vida debaixo do sol.",
+      "d": "O Pregador não cala a vaidade; ele a nomeia."
+    },
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade.",
+    "options": [
+      {"id": "a", "text": "O Pregador declara que tudo é vaidade."},
+      {"id": "b", "text": "O Pregador reserva a vaidade só para o trabalho."},
+      {"id": "c", "text": "O Pregador afirma que a vida já está plena."},
+      {"id": "d", "text": "O Pregador recusa nomear a vaidade."}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "id": "eclesiastes-sem-eclesiastes-sol-01-vaidade-de-vaidades-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Eclesiastes 1:2",
+    "learningObjective": "Reconhecer que o Pregador declara, debaixo do sol, que tudo é vaidade.",
+    "evidence": ["Eclesiastes 1:2"],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Eclesiastes 1:2?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Eclesiastes 1:2?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Eclesiastes 1:2?",
+    "feedbackCorrect": "Certo: primeiro a fórmula, depois quem fala, depois o tudo.",
+    "feedbackWrong": {
+      "b": "O Pregador fala antes da conclusão \"tudo é vaidade\".",
+      "c": "Releia 1:2: a abertura vem antes do \"tudo\"."
+    },
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade.",
+    "options": [
+      {"id": "a", "text": "Vaidade de vaidade, diz o Pregador"},
+      {"id": "b", "text": "Vaidade de vaidade"},
+      {"id": "c", "text": "tudo é vaidade"}
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "id": "eclesiastes-sem-eclesiastes-sol-01-vaidade-de-vaidades-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Eclesiastes 1:2",
+    "learningObjective": "Reconhecer que o Pregador declara, debaixo do sol, que tudo é vaidade.",
+    "evidence": ["Eclesiastes 1:2"],
+    "type": "complete",
+    "question": "Complete a frase: \"Vaidade de vaidade, diz o ___. Vaidade de vaidade, tudo é vaidade.\"",
+    "prompt": "Complete a frase: \"Vaidade de vaidade, diz o ___. Vaidade de vaidade, tudo é vaidade.\"",
+    "cue": "Complete a frase: \"Vaidade de vaidade, diz o ___. Vaidade de vaidade, tudo é vaidade.\"",
+    "feedbackCorrect": "Certo: quem fala é o Pregador.",
+    "feedbackWrong": {
+      "b": "O versículo não põe \"homem\" nesta lacuna.",
+      "c": "\"rei\" não é a palavra que o texto usa aqui."
+    },
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade.",
+    "template": "Vaidade de vaidade, diz o ___. Vaidade de vaidade, tudo é vaidade.",
+    "options": [
+      {"id": "a", "text": "Pregador"},
+      {"id": "b", "text": "homem"},
+      {"id": "c", "text": "rei"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "id": "eclesiastes-sem-eclesiastes-sol-01-vaidade-de-vaidades-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Eclesiastes 1:2",
+    "learningObjective": "Reconhecer que o Pregador declara, debaixo do sol, que tudo é vaidade.",
+    "evidence": ["Eclesiastes 1:2"],
+    "type": "connect",
+    "question": "O que Eclesiastes 1:2 comunica que se liga a este contexto?",
+    "prompt": "O que Eclesiastes 1:2 comunica que se liga a este contexto?",
+    "cue": "O que Eclesiastes 1:2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o Pregador nomeia tudo como vaidade.",
+    "feedbackWrong": {
+      "b": "O texto não celebra plenitude; declara vaidade.",
+      "c": "A vaidade não é limitada ao trabalho no versículo."
+    },
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade.",
+    "passageA": {
+      "ref": "Eclesiastes 1:2",
+      "text": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Debaixo do sol, o Pregador nomeia a vida sem Deus: tudo é vaidade."
+    },
+    "options": [
+      {"id": "a", "text": "Tudo é vaidade"},
+      {"id": "b", "text": "Plenitude já alcançada"},
+      {"id": "c", "text": "Só o trabalho é vão"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "id": "eclesiastes-sem-eclesiastes-sol-01-vaidade-de-vaidades-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Eclesiastes 1:2",
+    "learningObjective": "Reconhecer que o Pregador declara, debaixo do sol, que tudo é vaidade.",
+    "evidence": ["Eclesiastes 1:2"],
+    "type": "true_false",
+    "question": "Em Eclesiastes 1:2, o Pregador restringe a vaidade a um único aspecto da vida, e não a \"tudo\".",
+    "prompt": "Em Eclesiastes 1:2, o Pregador restringe a vaidade a um único aspecto da vida, e não a \"tudo\".",
+    "cue": "Em Eclesiastes 1:2, o Pregador restringe a vaidade a um único aspecto da vida, e não a \"tudo\".",
+    "feedbackCorrect": "Certo: o texto não restringe; diz que tudo é vaidade.",
+    "feedbackWrong": {
+      "true": "O versículo conclui com \"tudo é vaidade\", sem restringir o alcance."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade.",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "id": "eclesiastes-cam-eclesiastes-sol-01-vaidade-de-vaidades-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Eclesiastes 1:2",
+    "learningObjective": "Reconhecer que o Pregador declara, debaixo do sol, que tudo é vaidade.",
+    "evidence": ["Eclesiastes 1:2"],
+    "type": "tap",
+    "question": "Em Eclesiastes 1:2, toque a palavra que falta em \"Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, ___ é vaidade.\"?",
+    "prompt": "Em Eclesiastes 1:2, toque a palavra que falta em \"Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, ___ é vaidade.\"?",
+    "cue": "Em Eclesiastes 1:2, toque a palavra que falta em \"Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, ___ é vaidade.\"?",
+    "feedbackCorrect": "Exato: o alcance da declaração é \"tudo\".",
+    "feedbackWrong": {
+      "b": "Pregador é quem fala, não o sujeito desta cláusula.",
+      "c": "\"diz\" aparece antes, ligado à fala do Pregador."
+    },
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade.",
+    "template": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, ___ é vaidade.",
+    "options": [
+      {"id": "a", "text": "tudo"},
+      {"id": "b", "text": "Pregador"},
+      {"id": "c", "text": "diz"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "id": "eclesiastes-cam-eclesiastes-sol-01-vaidade-de-vaidades-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Eclesiastes 1:2",
+    "learningObjective": "Reconhecer que o Pregador declara, debaixo do sol, que tudo é vaidade.",
+    "evidence": ["Eclesiastes 1:2"],
+    "type": "choice",
+    "question": "O que a repetição de \"vaidade de vaidade\" e o \"tudo\" encadeiam em Eclesiastes 1:2?",
+    "prompt": "O que a repetição de \"vaidade de vaidade\" e o \"tudo\" encadeiam em Eclesiastes 1:2?",
+    "cue": "O que a repetição de \"vaidade de vaidade\" e o \"tudo\" encadeiam em Eclesiastes 1:2?",
+    "feedbackCorrect": "Certo: a fórmula se amplia até abranger tudo.",
+    "feedbackWrong": {
+      "b": "O texto não trata a vaidade como elogio da autonomia.",
+      "c": "A repetição não esvazia o sentido; reforça o alcance.",
+      "d": "O versículo não promete que o esforço dissolve a vaidade."
+    },
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade.",
+    "options": [
+      {"id": "a", "text": "A fórmula se amplia até declarar que tudo é vaidade."},
+      {"id": "b", "text": "A autonomia humana é apresentada como plenitude."},
+      {"id": "c", "text": "A repetição cancela o peso da palavra vaidade."},
+      {"id": "d", "text": "Mais esforço basta para dissolver a vaidade."}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "id": "eclesiastes-cam-eclesiastes-sol-01-vaidade-de-vaidades-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Eclesiastes 1:2",
+    "learningObjective": "Reconhecer que o Pregador declara, debaixo do sol, que tudo é vaidade.",
+    "evidence": ["Eclesiastes 1:2"],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Eclesiastes 1:2?",
+    "prompt": "Como se encadeiam os eventos de Eclesiastes 1:2?",
+    "cue": "Como se encadeiam os eventos de Eclesiastes 1:2?",
+    "feedbackCorrect": "Certo: a fórmula, a voz do Pregador e o alcance total.",
+    "feedbackWrong": {
+      "b": "O \"tudo é vaidade\" conclui, não abre o versículo.",
+      "c": "Quem fala aparece no meio, não no fim."
+    },
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade.",
+    "options": [
+      {"id": "a", "text": "Vaidade de vaidade"},
+      {"id": "b", "text": "diz o Pregador"},
+      {"id": "c", "text": "tudo é vaidade"}
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "id": "eclesiastes-cam-eclesiastes-sol-01-vaidade-de-vaidades-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Eclesiastes 1:2",
+    "learningObjective": "Reconhecer que o Pregador declara, debaixo do sol, que tudo é vaidade.",
+    "evidence": ["Eclesiastes 1:2"],
+    "type": "complete",
+    "question": "Complete a frase: \"Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é ___.\"",
+    "prompt": "Complete a frase: \"Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é ___.\"",
+    "cue": "Complete a frase: \"Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é ___.\"",
+    "feedbackCorrect": "Certo: a cláusula fecha com \"vaidade\".",
+    "feedbackWrong": {
+      "b": "O texto não conclui com \"sabedoria\" nesta frase.",
+      "c": "\"trabalho\" não é a palavra que fecha 1:2."
+    },
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade.",
+    "template": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é ___.",
+    "options": [
+      {"id": "a", "text": "vaidade"},
+      {"id": "b", "text": "sabedoria"},
+      {"id": "c", "text": "trabalho"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "id": "eclesiastes-cam-eclesiastes-sol-01-vaidade-de-vaidades-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Eclesiastes 1:2",
+    "learningObjective": "Reconhecer que o Pregador declara, debaixo do sol, que tudo é vaidade.",
+    "evidence": ["Eclesiastes 1:2"],
+    "type": "connect",
+    "question": "O que a voz do Pregador em Eclesiastes 1:2 comunica que se liga a este contexto?",
+    "prompt": "O que a voz do Pregador em Eclesiastes 1:2 comunica que se liga a este contexto?",
+    "cue": "O que a voz do Pregador em Eclesiastes 1:2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a vida sem Deus é nomeada como vaidade.",
+    "feedbackWrong": {
+      "b": "O texto não trata o sol como garantia de sentido.",
+      "c": "A declaração não é um elogio do acaso."
+    },
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade.",
+    "passageA": {
+      "ref": "Eclesiastes 1:2",
+      "text": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Debaixo do sol, o Pregador nomeia a vida sem Deus: tudo é vaidade."
+    },
+    "options": [
+      {"id": "a", "text": "Vida sem Deus: vaidade"},
+      {"id": "b", "text": "O sol garante o sentido"},
+      {"id": "c", "text": "O acaso é suficiente"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "id": "eclesiastes-cam-eclesiastes-sol-01-vaidade-de-vaidades-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Eclesiastes 1:2",
+    "learningObjective": "Reconhecer que o Pregador declara, debaixo do sol, que tudo é vaidade.",
+    "evidence": ["Eclesiastes 1:2"],
+    "type": "true_false",
+    "question": "Ao chamar tudo de vaidade, o Pregador prepara o leitor a não buscar o sentido último só debaixo do sol.",
+    "prompt": "Ao chamar tudo de vaidade, o Pregador prepara o leitor a não buscar o sentido último só debaixo do sol.",
+    "cue": "Ao chamar tudo de vaidade, o Pregador prepara o leitor a não buscar o sentido último só debaixo do sol.",
+    "feedbackCorrect": "Certo: nomear a vaidade abre espaço para Deus.",
+    "feedbackWrong": {
+      "false": "A declaração não encerra a busca; denuncia a insuficiência."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade.",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "id": "eclesiastes-pro-eclesiastes-sol-01-vaidade-de-vaidades-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Eclesiastes 1:2",
+    "learningObjective": "Reconhecer que o Pregador declara, debaixo do sol, que tudo é vaidade.",
+    "evidence": ["Eclesiastes 1:2"],
+    "type": "tap",
+    "question": "Em Eclesiastes 1:2, toque a palavra que falta em \"Vaidade de vaidade, diz o ___. Vaidade de vaidade, tudo é vaidade.\"?",
+    "prompt": "Em Eclesiastes 1:2, toque a palavra que falta em \"Vaidade de vaidade, diz o ___. Vaidade de vaidade, tudo é vaidade.\"?",
+    "cue": "Em Eclesiastes 1:2, toque a palavra que falta em \"Vaidade de vaidade, diz o ___. Vaidade de vaidade, tudo é vaidade.\"?",
+    "feedbackCorrect": "Exato: a voz que nomeia a vaidade é a do Pregador.",
+    "feedbackWrong": {
+      "b": "\"tudo\" fecha a sentença, não preenche esta lacuna.",
+      "c": "Vaidade abre o versículo, mas não cabe neste \"diz o ___\"."
+    },
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade.",
+    "template": "Vaidade de vaidade, diz o ___. Vaidade de vaidade, tudo é vaidade.",
+    "options": [
+      {"id": "a", "text": "Pregador"},
+      {"id": "b", "text": "tudo"},
+      {"id": "c", "text": "Vaidade"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "id": "eclesiastes-pro-eclesiastes-sol-01-vaidade-de-vaidades-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Eclesiastes 1:2",
+    "learningObjective": "Reconhecer que o Pregador declara, debaixo do sol, que tudo é vaidade.",
+    "evidence": ["Eclesiastes 1:2"],
+    "type": "choice",
+    "question": "Qual leitura teológica Eclesiastes 1:2 sustenta, sem contradizer o texto?",
+    "prompt": "Qual leitura teológica Eclesiastes 1:2 sustenta, sem contradizer o texto?",
+    "cue": "Qual leitura teológica Eclesiastes 1:2 sustenta, sem contradizer o texto?",
+    "feedbackCorrect": "Certo: a vaidade denuncia a insuficiência sem Deus.",
+    "feedbackWrong": {
+      "b": "Nomear vaidade não nega o governo de Deus.",
+      "c": "O texto não faz do prazer o fim último.",
+      "d": "A vaidade não cancela o dever diante de Deus."
+    },
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade.",
+    "options": [
+      {"id": "a", "text": "A vaidade denuncia a insuficiência da vida sem Deus."},
+      {"id": "b", "text": "A vaidade prova que Deus não governa a criação."},
+      {"id": "c", "text": "A vaidade ensina que o prazer é o fim último."},
+      {"id": "d", "text": "A vaidade cancela qualquer dever diante de Deus."}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "id": "eclesiastes-pro-eclesiastes-sol-01-vaidade-de-vaidades-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Eclesiastes 1:2",
+    "learningObjective": "Reconhecer que o Pregador declara, debaixo do sol, que tudo é vaidade.",
+    "evidence": ["Eclesiastes 1:2"],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Eclesiastes 1:2?",
+    "prompt": "Qual sequência revela o sentido de Eclesiastes 1:2?",
+    "cue": "Qual sequência revela o sentido de Eclesiastes 1:2?",
+    "feedbackCorrect": "Certo: a voz, a repetição e o alcance total revelam o sentido.",
+    "feedbackWrong": {
+      "b": "O \"tudo\" não precede a voz do Pregador.",
+      "c": "A repetição vem depois de \"diz o Pregador\", não antes do início."
+    },
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade.",
+    "options": [
+      {"id": "a", "text": "diz o Pregador"},
+      {"id": "b", "text": "Vaidade de vaidade"},
+      {"id": "c", "text": "tudo é vaidade"}
+    ],
+    "correctOrder": ["b", "a", "c"],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "id": "eclesiastes-pro-eclesiastes-sol-01-vaidade-de-vaidades-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Eclesiastes 1:2",
+    "learningObjective": "Reconhecer que o Pregador declara, debaixo do sol, que tudo é vaidade.",
+    "evidence": ["Eclesiastes 1:2"],
+    "type": "complete",
+    "question": "Complete a frase: \"Vaidade de ___, diz o Pregador. Vaidade de vaidade, tudo é vaidade.\"",
+    "prompt": "Complete a frase: \"Vaidade de ___, diz o Pregador. Vaidade de vaidade, tudo é vaidade.\"",
+    "cue": "Complete a frase: \"Vaidade de ___, diz o Pregador. Vaidade de vaidade, tudo é vaidade.\"",
+    "feedbackCorrect": "Certo: a fórmula é \"Vaidade de vaidade\".",
+    "feedbackWrong": {
+      "b": "\"glória\" não é a palavra da fórmula em 1:2.",
+      "c": "\"obra\" não preenche esta lacuna no texto."
+    },
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade.",
+    "template": "Vaidade de ___, diz o Pregador. Vaidade de vaidade, tudo é vaidade.",
+    "options": [
+      {"id": "a", "text": "vaidade"},
+      {"id": "b", "text": "glória"},
+      {"id": "c", "text": "obra"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "id": "eclesiastes-pro-eclesiastes-sol-01-vaidade-de-vaidades-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Eclesiastes 1:2",
+    "learningObjective": "Reconhecer que o Pregador declara, debaixo do sol, que tudo é vaidade.",
+    "evidence": ["Eclesiastes 1:2"],
+    "type": "connect",
+    "question": "O que a declaração de vaidade em Eclesiastes 1:2 comunica que se liga a este contexto?",
+    "prompt": "O que a declaração de vaidade em Eclesiastes 1:2 comunica que se liga a este contexto?",
+    "cue": "O que a declaração de vaidade em Eclesiastes 1:2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: nomear a vaidade aponta para a vida sem Deus.",
+    "feedbackWrong": {
+      "b": "O texto não consagra o niilismo como meta.",
+      "c": "A vaidade não é apresentada como bênção suficiente."
+    },
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade.",
+    "passageA": {
+      "ref": "Eclesiastes 1:2",
+      "text": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Debaixo do sol, o Pregador nomeia a vida sem Deus: tudo é vaidade."
+    },
+    "options": [
+      {"id": "a", "text": "Nomeia vida sem Deus"},
+      {"id": "b", "text": "Consagra o niilismo"},
+      {"id": "c", "text": "Bênção já suficiente"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-01-vaidade-de-vaidades",
+    "id": "eclesiastes-pro-eclesiastes-sol-01-vaidade-de-vaidades-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Eclesiastes 3:1",
+    "learningObjective": "Perceber que há ocasião e tempo para todo propósito debaixo do céu.",
+    "evidence": ["Eclesiastes 3:1"],
+    "type": "true_false",
+    "question": "Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu tempo.",
+    "prompt": "Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu tempo.",
+    "cue": "Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu tempo.",
+    "feedbackCorrect": "Certo: é o texto literal de Eclesiastes 3:1.",
+    "feedbackWrong": {
+      "false": "Releia 3:1: ocasião própria e tempo para todo propósito."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu tempo.",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "id": "eclesiastes-sem-eclesiastes-sol-02-tempo-para-todo-prop-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Eclesiastes 3:1",
+    "learningObjective": "Perceber que há ocasião e tempo para todo propósito debaixo do céu.",
+    "evidence": ["Eclesiastes 3:1"],
+    "type": "tap",
+    "question": "Em Eclesiastes 3:1, toque a palavra que falta em \"Tudo tem a sua ___ própria, e todo propósito debaixo do céu tem o seu tempo.\"?",
+    "prompt": "Em Eclesiastes 3:1, toque a palavra que falta em \"Tudo tem a sua ___ própria, e todo propósito debaixo do céu tem o seu tempo.\"?",
+    "cue": "Em Eclesiastes 3:1, toque a palavra que falta em \"Tudo tem a sua ___ própria, e todo propósito debaixo do céu tem o seu tempo.\"?",
+    "feedbackCorrect": "Exato: o texto fala de ocasião própria.",
+    "feedbackWrong": {
+      "b": "\"tempo\" fecha o versículo, não esta lacuna.",
+      "c": "\"propósito\" vem depois, ligado a debaixo do céu."
+    },
+    "passageText": "Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu tempo.",
+    "template": "Tudo tem a sua ___ própria, e todo propósito debaixo do céu tem o seu tempo.",
+    "options": [
+      {"id": "a", "text": "ocasião"},
+      {"id": "b", "text": "tempo"},
+      {"id": "c", "text": "propósito"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "id": "eclesiastes-sem-eclesiastes-sol-02-tempo-para-todo-prop-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Eclesiastes 3:1",
+    "learningObjective": "Perceber que há ocasião e tempo para todo propósito debaixo do céu.",
+    "evidence": ["Eclesiastes 3:1"],
+    "type": "choice",
+    "question": "Qual fato Eclesiastes 3:1 afirma de modo explícito?",
+    "prompt": "Qual fato Eclesiastes 3:1 afirma de modo explícito?",
+    "cue": "Qual fato Eclesiastes 3:1 afirma de modo explícito?",
+    "feedbackCorrect": "Certo: todo propósito debaixo do céu tem o seu tempo.",
+    "feedbackWrong": {
+      "b": "O texto afirma tempo, não ausência de ocasião.",
+      "c": "O versículo não restringe o tempo só à noite.",
+      "d": "Não há menção de cancelar os propósitos."
+    },
+    "passageText": "Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu tempo.",
+    "options": [
+      {"id": "a", "text": "Todo propósito debaixo do céu tem o seu tempo."},
+      {"id": "b", "text": "Nada debaixo do céu tem ocasião própria."},
+      {"id": "c", "text": "Só a noite tem tempo debaixo do céu."},
+      {"id": "d", "text": "Os propósitos humanos foram todos cancelados."}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "id": "eclesiastes-sem-eclesiastes-sol-02-tempo-para-todo-prop-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Eclesiastes 3:1",
+    "learningObjective": "Perceber que há ocasião e tempo para todo propósito debaixo do céu.",
+    "evidence": ["Eclesiastes 3:1"],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Eclesiastes 3:1?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Eclesiastes 3:1?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Eclesiastes 3:1?",
+    "feedbackCorrect": "Certo: ocasião, propósito e tempo seguem essa ordem.",
+    "feedbackWrong": {
+      "b": "O tempo fecha o versículo, não o abre.",
+      "c": "A ocasião própria vem primeiro no texto."
+    },
+    "passageText": "Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu tempo.",
+    "options": [
+      {"id": "a", "text": "Tudo tem a sua ocasião própria"},
+      {"id": "b", "text": "e todo propósito debaixo do céu"},
+      {"id": "c", "text": "tem o seu tempo"}
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "id": "eclesiastes-sem-eclesiastes-sol-02-tempo-para-todo-prop-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Eclesiastes 3:1",
+    "learningObjective": "Perceber que há ocasião e tempo para todo propósito debaixo do céu.",
+    "evidence": ["Eclesiastes 3:1"],
+    "type": "complete",
+    "question": "Complete a frase: \"Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu ___.\"",
+    "prompt": "Complete a frase: \"Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu ___.\"",
+    "cue": "Complete a frase: \"Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu ___.\"",
+    "feedbackCorrect": "Certo: o versículo fecha com \"tempo\".",
+    "feedbackWrong": {
+      "b": "\"acaso\" não é a palavra que o texto usa.",
+      "c": "A lacuna não pede \"silêncio\"."
+    },
+    "passageText": "Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu tempo.",
+    "template": "Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu ___.",
+    "options": [
+      {"id": "a", "text": "tempo"},
+      {"id": "b", "text": "acaso"},
+      {"id": "c", "text": "silêncio"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "id": "eclesiastes-sem-eclesiastes-sol-02-tempo-para-todo-prop-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Eclesiastes 3:1",
+    "learningObjective": "Perceber que há ocasião e tempo para todo propósito debaixo do céu.",
+    "evidence": ["Eclesiastes 3:1"],
+    "type": "connect",
+    "question": "O que Eclesiastes 3:1 comunica que se liga a este contexto?",
+    "prompt": "O que Eclesiastes 3:1 comunica que se liga a este contexto?",
+    "cue": "O que Eclesiastes 3:1 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: há tempo para todo propósito.",
+    "feedbackWrong": {
+      "b": "O texto afirma ocasião, não caos sem medida.",
+      "c": "O versículo não anula os propósitos."
+    },
+    "passageText": "Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu tempo.",
+    "passageA": {
+      "ref": "Eclesiastes 3:1",
+      "text": "Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu tempo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Há tempo para todo propósito: a vida não é caos, mas ocasião nas mãos de Deus."
+    },
+    "options": [
+      {"id": "a", "text": "Tempo para todo propósito"},
+      {"id": "b", "text": "Vida sem nenhuma ocasião"},
+      {"id": "c", "text": "Propósitos já anulados"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "id": "eclesiastes-sem-eclesiastes-sol-02-tempo-para-todo-prop-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Eclesiastes 3:1",
+    "learningObjective": "Perceber que há ocasião e tempo para todo propósito debaixo do céu.",
+    "evidence": ["Eclesiastes 3:1"],
+    "type": "true_false",
+    "question": "Eclesiastes 3:1 trata a vida debaixo do céu como sequência de ocasiões, não como acaso sem medida.",
+    "prompt": "Eclesiastes 3:1 trata a vida debaixo do céu como sequência de ocasiões, não como acaso sem medida.",
+    "cue": "Eclesiastes 3:1 trata a vida debaixo do céu como sequência de ocasiões, não como acaso sem medida.",
+    "feedbackCorrect": "Certo: ocasião própria e tempo ordenam o propósito.",
+    "feedbackWrong": {
+      "false": "O versículo liga propósito a tempo, não a caos."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu tempo.",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "id": "eclesiastes-cam-eclesiastes-sol-02-tempo-para-todo-prop-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Eclesiastes 3:1",
+    "learningObjective": "Perceber que há ocasião e tempo para todo propósito debaixo do céu.",
+    "evidence": ["Eclesiastes 3:1"],
+    "type": "tap",
+    "question": "Em Eclesiastes 3:1, toque a palavra que falta em \"Tudo tem a sua ocasião própria, e todo ___ debaixo do céu tem o seu tempo.\"?",
+    "prompt": "Em Eclesiastes 3:1, toque a palavra que falta em \"Tudo tem a sua ocasião própria, e todo ___ debaixo do céu tem o seu tempo.\"?",
+    "cue": "Em Eclesiastes 3:1, toque a palavra que falta em \"Tudo tem a sua ocasião própria, e todo ___ debaixo do céu tem o seu tempo.\"?",
+    "feedbackCorrect": "Exato: o que tem tempo é todo propósito.",
+    "feedbackWrong": {
+      "b": "\"céu\" localiza o propósito, não preenche esta lacuna.",
+      "c": "\"Tudo\" abre o versículo, não esta cláusula."
+    },
+    "passageText": "Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu tempo.",
+    "template": "Tudo tem a sua ocasião própria, e todo ___ debaixo do céu tem o seu tempo.",
+    "options": [
+      {"id": "a", "text": "propósito"},
+      {"id": "b", "text": "céu"},
+      {"id": "c", "text": "Tudo"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "id": "eclesiastes-cam-eclesiastes-sol-02-tempo-para-todo-prop-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Eclesiastes 3:1",
+    "learningObjective": "Perceber que há ocasião e tempo para todo propósito debaixo do céu.",
+    "evidence": ["Eclesiastes 3:1"],
+    "type": "choice",
+    "question": "Como ocasião e tempo se relacionam com o propósito em Eclesiastes 3:1?",
+    "prompt": "Como ocasião e tempo se relacionam com o propósito em Eclesiastes 3:1?",
+    "cue": "Como ocasião e tempo se relacionam com o propósito em Eclesiastes 3:1?",
+    "feedbackCorrect": "Certo: o propósito não flutua à toa; tem tempo.",
+    "feedbackWrong": {
+      "b": "O texto não descreve a vida como caos sem medida.",
+      "c": "Debaixo do céu não significa ausência de ocasião.",
+      "d": "O versículo não entrega o calendário ao acaso."
+    },
+    "passageText": "Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu tempo.",
+    "options": [
+      {"id": "a", "text": "Todo propósito tem tempo; a vida não é caos sem ocasião."},
+      {"id": "b", "text": "Os eventos se sucedem sem nenhuma ocasião própria."},
+      {"id": "c", "text": "Debaixo do céu significa que nada tem tempo."},
+      {"id": "d", "text": "O propósito humano define sozinho o calendário."}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "id": "eclesiastes-cam-eclesiastes-sol-02-tempo-para-todo-prop-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Eclesiastes 3:1",
+    "learningObjective": "Perceber que há ocasião e tempo para todo propósito debaixo do céu.",
+    "evidence": ["Eclesiastes 3:1"],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Eclesiastes 3:1?",
+    "prompt": "Como se encadeiam os eventos de Eclesiastes 3:1?",
+    "cue": "Como se encadeiam os eventos de Eclesiastes 3:1?",
+    "feedbackCorrect": "Certo: do universal à ocasião, depois ao tempo do propósito.",
+    "feedbackWrong": {
+      "b": "O tempo do propósito não precede a ocasião própria.",
+      "c": "\"Tudo tem\" abre o encadeamento, não o fecha."
+    },
+    "passageText": "Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu tempo.",
+    "options": [
+      {"id": "a", "text": "Tudo tem a sua ocasião própria"},
+      {"id": "b", "text": "todo propósito debaixo do céu"},
+      {"id": "c", "text": "tem o seu tempo"}
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "id": "eclesiastes-cam-eclesiastes-sol-02-tempo-para-todo-prop-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Eclesiastes 3:1",
+    "learningObjective": "Perceber que há ocasião e tempo para todo propósito debaixo do céu.",
+    "evidence": ["Eclesiastes 3:1"],
+    "type": "complete",
+    "question": "Complete a frase: \"Tudo tem a sua ocasião própria, e todo propósito debaixo do ___ tem o seu tempo.\"",
+    "prompt": "Complete a frase: \"Tudo tem a sua ocasião própria, e todo propósito debaixo do ___ tem o seu tempo.\"",
+    "cue": "Complete a frase: \"Tudo tem a sua ocasião própria, e todo propósito debaixo do ___ tem o seu tempo.\"",
+    "feedbackCorrect": "Certo: o âmbito é debaixo do céu.",
+    "feedbackWrong": {
+      "b": "O texto diz céu, não abismo.",
+      "c": "\"trono\" não preenche esta lacuna."
+    },
+    "passageText": "Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu tempo.",
+    "template": "Tudo tem a sua ocasião própria, e todo propósito debaixo do ___ tem o seu tempo.",
+    "options": [
+      {"id": "a", "text": "céu"},
+      {"id": "b", "text": "abismo"},
+      {"id": "c", "text": "trono"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "id": "eclesiastes-cam-eclesiastes-sol-02-tempo-para-todo-prop-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Eclesiastes 3:1",
+    "learningObjective": "Perceber que há ocasião e tempo para todo propósito debaixo do céu.",
+    "evidence": ["Eclesiastes 3:1"],
+    "type": "connect",
+    "question": "O que a ocasião própria em Eclesiastes 3:1 comunica que se liga a este contexto?",
+    "prompt": "O que a ocasião própria em Eclesiastes 3:1 comunica que se liga a este contexto?",
+    "cue": "O que a ocasião própria em Eclesiastes 3:1 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a vida não é caos, mas ocasião.",
+    "feedbackWrong": {
+      "b": "O texto não entrega tudo ao acaso cego.",
+      "c": "Ocasião própria não significa calendário humano absoluto."
+    },
+    "passageText": "Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu tempo.",
+    "passageA": {
+      "ref": "Eclesiastes 3:1",
+      "text": "Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu tempo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Há tempo para todo propósito: a vida não é caos, mas ocasião nas mãos de Deus."
+    },
+    "options": [
+      {"id": "a", "text": "Vida não é caos"},
+      {"id": "b", "text": "Acaso cego governa"},
+      {"id": "c", "text": "Calendário só humano"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "id": "eclesiastes-cam-eclesiastes-sol-02-tempo-para-todo-prop-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Eclesiastes 3:1",
+    "learningObjective": "Perceber que há ocasião e tempo para todo propósito debaixo do céu.",
+    "evidence": ["Eclesiastes 3:1"],
+    "type": "true_false",
+    "question": "Afirmar ocasião e tempo para todo propósito prepara o leitor a receber a vida como dádiva nas mãos de Deus, não como caos.",
+    "prompt": "Afirmar ocasião e tempo para todo propósito prepara o leitor a receber a vida como dádiva nas mãos de Deus, não como caos.",
+    "cue": "Afirmar ocasião e tempo para todo propósito prepara o leitor a receber a vida como dádiva nas mãos de Deus, não como caos.",
+    "feedbackCorrect": "Certo: o tempo aponta para mãos maiores que o acaso.",
+    "feedbackWrong": {
+      "false": "Ocasião própria não é caos; implica ordem recebida."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu tempo.",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "id": "eclesiastes-pro-eclesiastes-sol-02-tempo-para-todo-prop-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Eclesiastes 3:1",
+    "learningObjective": "Perceber que há ocasião e tempo para todo propósito debaixo do céu.",
+    "evidence": ["Eclesiastes 3:1"],
+    "type": "tap",
+    "question": "Em Eclesiastes 3:1, toque a palavra que falta em \"Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu ___.\"?",
+    "prompt": "Em Eclesiastes 3:1, toque a palavra que falta em \"Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu ___.\"?",
+    "cue": "Em Eclesiastes 3:1, toque a palavra que falta em \"Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu ___.\"?",
+    "feedbackCorrect": "Exato: o propósito tem o seu tempo.",
+    "feedbackWrong": {
+      "b": "\"própria\" qualifica a ocasião, não esta lacuna.",
+      "c": "\"debaixo\" localiza, não fecha a frase."
+    },
+    "passageText": "Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu tempo.",
+    "template": "Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu ___.",
+    "options": [
+      {"id": "a", "text": "tempo"},
+      {"id": "b", "text": "própria"},
+      {"id": "c", "text": "debaixo"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "id": "eclesiastes-pro-eclesiastes-sol-02-tempo-para-todo-prop-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Eclesiastes 3:1",
+    "learningObjective": "Perceber que há ocasião e tempo para todo propósito debaixo do céu.",
+    "evidence": ["Eclesiastes 3:1"],
+    "type": "choice",
+    "question": "Qual implicação Eclesiastes 3:1 sustenta sobre o governo de Deus no tempo?",
+    "prompt": "Qual implicação Eclesiastes 3:1 sustenta sobre o governo de Deus no tempo?",
+    "cue": "Qual implicação Eclesiastes 3:1 sustenta sobre o governo de Deus no tempo?",
+    "feedbackCorrect": "Certo: o tempo do propósito está nas mãos de Deus.",
+    "feedbackWrong": {
+      "b": "Ocasião própria não prova um mundo sem Senhor.",
+      "c": "O texto não reduz o tempo a técnica humana.",
+      "d": "Debaixo do céu não significa fuga do propósito."
+    },
+    "passageText": "Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu tempo.",
+    "options": [
+      {"id": "a", "text": "O tempo do propósito não é caos: há ocasião nas mãos de Deus."},
+      {"id": "b", "text": "Se há ocasião, o mundo dispensa qualquer Senhor."},
+      {"id": "c", "text": "O tempo é só técnica humana de organizar tarefas."},
+      {"id": "d", "text": "Debaixo do céu o crente pode ignorar o propósito."}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "id": "eclesiastes-pro-eclesiastes-sol-02-tempo-para-todo-prop-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Eclesiastes 3:1",
+    "learningObjective": "Perceber que há ocasião e tempo para todo propósito debaixo do céu.",
+    "evidence": ["Eclesiastes 3:1"],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Eclesiastes 3:1?",
+    "prompt": "Qual sequência revela o sentido de Eclesiastes 3:1?",
+    "cue": "Qual sequência revela o sentido de Eclesiastes 3:1?",
+    "feedbackCorrect": "Certo: o universal, o propósito e o tempo revelam a ordem.",
+    "feedbackWrong": {
+      "b": "O tempo não precede a afirmação de que tudo tem ocasião.",
+      "c": "O propósito debaixo do céu vem no meio, não no início."
+    },
+    "passageText": "Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu tempo.",
+    "options": [
+      {"id": "a", "text": "Tudo tem a sua ocasião própria"},
+      {"id": "b", "text": "todo propósito debaixo do céu"},
+      {"id": "c", "text": "tem o seu tempo"}
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "id": "eclesiastes-pro-eclesiastes-sol-02-tempo-para-todo-prop-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Eclesiastes 3:1",
+    "learningObjective": "Perceber que há ocasião e tempo para todo propósito debaixo do céu.",
+    "evidence": ["Eclesiastes 3:1"],
+    "type": "complete",
+    "question": "Complete a frase: \"Tudo tem a sua ocasião ___, e todo propósito debaixo do céu tem o seu tempo.\"",
+    "prompt": "Complete a frase: \"Tudo tem a sua ocasião ___, e todo propósito debaixo do céu tem o seu tempo.\"",
+    "cue": "Complete a frase: \"Tudo tem a sua ocasião ___, e todo propósito debaixo do céu tem o seu tempo.\"",
+    "feedbackCorrect": "Certo: a ocasião é própria.",
+    "feedbackWrong": {
+      "b": "\"alheia\" contradiz o adjetivo do texto.",
+      "c": "\"vazia\" não é a palavra de 3:1."
+    },
+    "passageText": "Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu tempo.",
+    "template": "Tudo tem a sua ocasião ___, e todo propósito debaixo do céu tem o seu tempo.",
+    "options": [
+      {"id": "a", "text": "própria"},
+      {"id": "b", "text": "alheia"},
+      {"id": "c", "text": "vazia"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "id": "eclesiastes-pro-eclesiastes-sol-02-tempo-para-todo-prop-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Eclesiastes 3:1",
+    "learningObjective": "Perceber que há ocasião e tempo para todo propósito debaixo do céu.",
+    "evidence": ["Eclesiastes 3:1"],
+    "type": "connect",
+    "question": "O que o tempo de Eclesiastes 3:1 comunica que se liga a este contexto?",
+    "prompt": "O que o tempo de Eclesiastes 3:1 comunica que se liga a este contexto?",
+    "cue": "O que o tempo de Eclesiastes 3:1 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a ocasião está nas mãos de Deus.",
+    "feedbackWrong": {
+      "b": "O texto não faz do tempo um ídolo autônomo.",
+      "c": "Ocasião não equivale a fatalismo sem Senhor."
+    },
+    "passageText": "Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu tempo.",
+    "passageA": {
+      "ref": "Eclesiastes 3:1",
+      "text": "Tudo tem a sua ocasião própria, e todo propósito debaixo do céu tem o seu tempo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Há tempo para todo propósito: a vida não é caos, mas ocasião nas mãos de Deus."
+    },
+    "options": [
+      {"id": "a", "text": "Ocasião nas mãos de Deus"},
+      {"id": "b", "text": "Tempo como ídolo autônomo"},
+      {"id": "c", "text": "Fatalismo sem Senhor"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-sol-02-tempo-para-todo-prop",
+    "id": "eclesiastes-pro-eclesiastes-sol-02-tempo-para-todo-prop-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Eclesiastes 12:13",
+    "learningObjective": "Reconhecer que o fim do discurso é temer a Deus e observar os seus mandamentos.",
+    "evidence": ["Eclesiastes 12:13"],
+    "type": "true_false",
+    "question": "O fim do discurso é este: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "prompt": "O fim do discurso é este: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "cue": "O fim do discurso é este: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "feedbackCorrect": "Certo: Eclesiastes 12:13 fecha exatamente assim.",
+    "feedbackWrong": {
+      "false": "Releia 12:13: temer a Deus é o tudo do homem."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "id": "eclesiastes-sem-eclesiastes-conclusao-01-teme-a-deus-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Eclesiastes 12:13",
+    "learningObjective": "Reconhecer que o fim do discurso é temer a Deus e observar os seus mandamentos.",
+    "evidence": ["Eclesiastes 12:13"],
+    "type": "tap",
+    "question": "Em Eclesiastes 12:13, toque a palavra que falta em \"Este é o fim do discurso. Já tudo foi ouvido: ___ a Deus e observa os seus mandamentos, porque isso é o tudo do homem.\"?",
+    "prompt": "Em Eclesiastes 12:13, toque a palavra que falta em \"Este é o fim do discurso. Já tudo foi ouvido: ___ a Deus e observa os seus mandamentos, porque isso é o tudo do homem.\"?",
+    "cue": "Em Eclesiastes 12:13, toque a palavra que falta em \"Este é o fim do discurso. Já tudo foi ouvido: ___ a Deus e observa os seus mandamentos, porque isso é o tudo do homem.\"?",
+    "feedbackCorrect": "Exato: o verbo da conclusão é teme.",
+    "feedbackWrong": {
+      "b": "\"observa\" vem depois, ligado aos mandamentos.",
+      "c": "\"homem\" fecha a frase, não esta lacuna."
+    },
+    "passageText": "Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "template": "Este é o fim do discurso. Já tudo foi ouvido: ___ a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "options": [
+      {"id": "a", "text": "teme"},
+      {"id": "b", "text": "observa"},
+      {"id": "c", "text": "homem"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "id": "eclesiastes-sem-eclesiastes-conclusao-01-teme-a-deus-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Eclesiastes 12:13",
+    "learningObjective": "Reconhecer que o fim do discurso é temer a Deus e observar os seus mandamentos.",
+    "evidence": ["Eclesiastes 12:13"],
+    "type": "choice",
+    "question": "O que Eclesiastes 12:13 chama de \"o tudo do homem\"?",
+    "prompt": "O que Eclesiastes 12:13 chama de \"o tudo do homem\"?",
+    "cue": "O que Eclesiastes 12:13 chama de \"o tudo do homem\"?",
+    "feedbackCorrect": "Certo: temer a Deus e observar os mandamentos.",
+    "feedbackWrong": {
+      "b": "O texto não aponta o acúmulo como o tudo.",
+      "c": "O versículo não encerra no silêncio absoluto.",
+      "d": "Não é o discurso em si, e sim temer a Deus."
+    },
+    "passageText": "Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "options": [
+      {"id": "a", "text": "Temer a Deus e observar os seus mandamentos."},
+      {"id": "b", "text": "Acumular mais vaidade debaixo do sol."},
+      {"id": "c", "text": "Encerrar a vida em silêncio absoluto."},
+      {"id": "d", "text": "Repetir o discurso sem guardar mandamento."}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "id": "eclesiastes-sem-eclesiastes-conclusao-01-teme-a-deus-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Eclesiastes 12:13",
+    "learningObjective": "Reconhecer que o fim do discurso é temer a Deus e observar os seus mandamentos.",
+    "evidence": ["Eclesiastes 12:13"],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Eclesiastes 12:13?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Eclesiastes 12:13?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Eclesiastes 12:13?",
+    "feedbackCorrect": "Certo: fim, ouvido, depois temer e guardar.",
+    "feedbackWrong": {
+      "b": "O tudo do homem conclui, não abre o versículo.",
+      "c": "O fim do discurso vem primeiro no texto."
+    },
+    "passageText": "Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "options": [
+      {"id": "a", "text": "Este é o fim do discurso"},
+      {"id": "b", "text": "Já tudo foi ouvido"},
+      {"id": "c", "text": "teme a Deus e observa os seus mandamentos"}
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "id": "eclesiastes-sem-eclesiastes-conclusao-01-teme-a-deus-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Eclesiastes 12:13",
+    "learningObjective": "Reconhecer que o fim do discurso é temer a Deus e observar os seus mandamentos.",
+    "evidence": ["Eclesiastes 12:13"],
+    "type": "complete",
+    "question": "Complete a frase: \"Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus ___, porque isso é o tudo do homem.\"",
+    "prompt": "Complete a frase: \"Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus ___, porque isso é o tudo do homem.\"",
+    "cue": "Complete a frase: \"Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus ___, porque isso é o tudo do homem.\"",
+    "feedbackCorrect": "Certo: o que se observa são os mandamentos.",
+    "feedbackWrong": {
+      "b": "\"sonhos\" não é a palavra do versículo.",
+      "c": "A lacuna não pede \"tesouros\"."
+    },
+    "passageText": "Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "template": "Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus ___, porque isso é o tudo do homem.",
+    "options": [
+      {"id": "a", "text": "mandamentos"},
+      {"id": "b", "text": "sonhos"},
+      {"id": "c", "text": "tesouros"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "id": "eclesiastes-sem-eclesiastes-conclusao-01-teme-a-deus-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Eclesiastes 12:13",
+    "learningObjective": "Reconhecer que o fim do discurso é temer a Deus e observar os seus mandamentos.",
+    "evidence": ["Eclesiastes 12:13"],
+    "type": "connect",
+    "question": "O que Eclesiastes 12:13 comunica que se liga a este contexto?",
+    "prompt": "O que Eclesiastes 12:13 comunica que se liga a este contexto?",
+    "cue": "O que Eclesiastes 12:13 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o fim é temer a Deus e guardar.",
+    "feedbackWrong": {
+      "b": "O texto não aponta mais vaidade como fim.",
+      "c": "Ouvir sem observar não é o tudo do homem."
+    },
+    "passageText": "Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "passageA": {
+      "ref": "Eclesiastes 12:13",
+      "text": "Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Depois de nomear a vaidade, o fim é este: temer a Deus e guardar os mandamentos."
+    },
+    "options": [
+      {"id": "a", "text": "Temer e guardar"},
+      {"id": "b", "text": "Mais vaidade no fim"},
+      {"id": "c", "text": "Ouvir sem observar"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "id": "eclesiastes-sem-eclesiastes-conclusao-01-teme-a-deus-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Eclesiastes 12:13",
+    "learningObjective": "Reconhecer que o fim do discurso é temer a Deus e observar os seus mandamentos.",
+    "evidence": ["Eclesiastes 12:13"],
+    "type": "true_false",
+    "question": "Em Eclesiastes 12:13, ter ouvido tudo substitui a necessidade de temer a Deus e observar os mandamentos.",
+    "prompt": "Em Eclesiastes 12:13, ter ouvido tudo substitui a necessidade de temer a Deus e observar os mandamentos.",
+    "cue": "Em Eclesiastes 12:13, ter ouvido tudo substitui a necessidade de temer a Deus e observar os mandamentos.",
+    "feedbackCorrect": "Certo: ouvir conduz a temer e observar, não a dispensá-los.",
+    "feedbackWrong": {
+      "true": "\"Já tudo foi ouvido\" introduz o dever, não o cancela."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "id": "eclesiastes-cam-eclesiastes-conclusao-01-teme-a-deus-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Eclesiastes 12:13",
+    "learningObjective": "Reconhecer que o fim do discurso é temer a Deus e observar os seus mandamentos.",
+    "evidence": ["Eclesiastes 12:13"],
+    "type": "tap",
+    "question": "Em Eclesiastes 12:13, toque a palavra que falta em \"Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do ___.\"?",
+    "prompt": "Em Eclesiastes 12:13, toque a palavra que falta em \"Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do ___.\"?",
+    "cue": "Em Eclesiastes 12:13, toque a palavra que falta em \"Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do ___.\"?",
+    "feedbackCorrect": "Exato: isso é o tudo do homem.",
+    "feedbackWrong": {
+      "b": "\"discurso\" aparece no início, não nesta lacuna.",
+      "c": "\"Deus\" é a quem se teme, não o fechamento da frase."
+    },
+    "passageText": "Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "template": "Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do ___.",
+    "options": [
+      {"id": "a", "text": "homem"},
+      {"id": "b", "text": "discurso"},
+      {"id": "c", "text": "Deus"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "id": "eclesiastes-cam-eclesiastes-conclusao-01-teme-a-deus-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Eclesiastes 12:13",
+    "learningObjective": "Reconhecer que o fim do discurso é temer a Deus e observar os seus mandamentos.",
+    "evidence": ["Eclesiastes 12:13"],
+    "type": "choice",
+    "question": "Como o \"fim do discurso\" se encadeia com o \"tudo do homem\" em Eclesiastes 12:13?",
+    "prompt": "Como o \"fim do discurso\" se encadeia com o \"tudo do homem\" em Eclesiastes 12:13?",
+    "cue": "Como o \"fim do discurso\" se encadeia com o \"tudo do homem\" em Eclesiastes 12:13?",
+    "feedbackCorrect": "Certo: o fim não é mais fala, e sim temer e guardar.",
+    "feedbackWrong": {
+      "b": "Ouvir tudo não dispensa o temor.",
+      "c": "O tudo do homem não é acumular discurso.",
+      "d": "Observar mandamentos não é opcional no texto."
+    },
+    "passageText": "Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "options": [
+      {"id": "a", "text": "Depois de ouvir, o dever permanece: temer a Deus e guardar."},
+      {"id": "b", "text": "Ouvir tudo já basta; o temor se torna desnecessário."},
+      {"id": "c", "text": "O tudo do homem é continuar o discurso sem fim."},
+      {"id": "d", "text": "Os mandamentos ficam de fora da conclusão."}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "id": "eclesiastes-cam-eclesiastes-conclusao-01-teme-a-deus-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Eclesiastes 12:13",
+    "learningObjective": "Reconhecer que o fim do discurso é temer a Deus e observar os seus mandamentos.",
+    "evidence": ["Eclesiastes 12:13"],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Eclesiastes 12:13?",
+    "prompt": "Como se encadeiam os eventos de Eclesiastes 12:13?",
+    "cue": "Como se encadeiam os eventos de Eclesiastes 12:13?",
+    "feedbackCorrect": "Certo: fim, ouvido, temor e mandamentos.",
+    "feedbackWrong": {
+      "b": "Temer a Deus não precede o fim do discurso no texto.",
+      "c": "\"Já tudo foi ouvido\" vem depois do fim, não antes."
+    },
+    "passageText": "Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "options": [
+      {"id": "a", "text": "Este é o fim do discurso"},
+      {"id": "b", "text": "Já tudo foi ouvido"},
+      {"id": "c", "text": "teme a Deus e observa os seus mandamentos"}
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "id": "eclesiastes-cam-eclesiastes-conclusao-01-teme-a-deus-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Eclesiastes 12:13",
+    "learningObjective": "Reconhecer que o fim do discurso é temer a Deus e observar os seus mandamentos.",
+    "evidence": ["Eclesiastes 12:13"],
+    "type": "complete",
+    "question": "Complete a frase: \"Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e ___ os seus mandamentos, porque isso é o tudo do homem.\"",
+    "prompt": "Complete a frase: \"Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e ___ os seus mandamentos, porque isso é o tudo do homem.\"",
+    "cue": "Complete a frase: \"Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e ___ os seus mandamentos, porque isso é o tudo do homem.\"",
+    "feedbackCorrect": "Certo: o par do temor é observar.",
+    "feedbackWrong": {
+      "b": "\"ignora\" inverte o verbo do texto.",
+      "c": "\"debate\" não é a palavra de 12:13."
+    },
+    "passageText": "Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "template": "Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e ___ os seus mandamentos, porque isso é o tudo do homem.",
+    "options": [
+      {"id": "a", "text": "observa"},
+      {"id": "b", "text": "ignora"},
+      {"id": "c", "text": "debate"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "id": "eclesiastes-cam-eclesiastes-conclusao-01-teme-a-deus-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Eclesiastes 12:13",
+    "learningObjective": "Reconhecer que o fim do discurso é temer a Deus e observar os seus mandamentos.",
+    "evidence": ["Eclesiastes 12:13"],
+    "type": "connect",
+    "question": "O que o \"tudo do homem\" em Eclesiastes 12:13 comunica que se liga a este contexto?",
+    "prompt": "O que o \"tudo do homem\" em Eclesiastes 12:13 comunica que se liga a este contexto?",
+    "cue": "O que o \"tudo do homem\" em Eclesiastes 12:13 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o tudo é temer a Deus, não a vaidade.",
+    "feedbackWrong": {
+      "b": "O fim não devolve o leitor à vaidade.",
+      "c": "Saber sem guardar não é o tudo do homem."
+    },
+    "passageText": "Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "passageA": {
+      "ref": "Eclesiastes 12:13",
+      "text": "Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Depois de nomear a vaidade, o fim é este: temer a Deus e guardar os mandamentos."
+    },
+    "options": [
+      {"id": "a", "text": "Temor, não vaidade"},
+      {"id": "b", "text": "Volta à vaidade"},
+      {"id": "c", "text": "Saber sem guardar"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "id": "eclesiastes-cam-eclesiastes-conclusao-01-teme-a-deus-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Eclesiastes 12:13",
+    "learningObjective": "Reconhecer que o fim do discurso é temer a Deus e observar os seus mandamentos.",
+    "evidence": ["Eclesiastes 12:13"],
+    "type": "true_false",
+    "question": "Eclesiastes 12:13 apresenta o temor de Deus e a observância dos mandamentos como o sentido que resta ao homem depois do discurso.",
+    "prompt": "Eclesiastes 12:13 apresenta o temor de Deus e a observância dos mandamentos como o sentido que resta ao homem depois do discurso.",
+    "cue": "Eclesiastes 12:13 apresenta o temor de Deus e a observância dos mandamentos como o sentido que resta ao homem depois do discurso.",
+    "feedbackCorrect": "Certo: isso é chamado o tudo do homem.",
+    "feedbackWrong": {
+      "false": "O versículo nomeia exatamente isso como o tudo do homem."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "id": "eclesiastes-pro-eclesiastes-conclusao-01-teme-a-deus-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Eclesiastes 12:13",
+    "learningObjective": "Reconhecer que o fim do discurso é temer a Deus e observar os seus mandamentos.",
+    "evidence": ["Eclesiastes 12:13"],
+    "type": "tap",
+    "question": "Em Eclesiastes 12:13, toque a palavra que falta em \"Este é o fim do ___. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.\"?",
+    "prompt": "Em Eclesiastes 12:13, toque a palavra que falta em \"Este é o fim do ___. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.\"?",
+    "cue": "Em Eclesiastes 12:13, toque a palavra que falta em \"Este é o fim do ___. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.\"?",
+    "feedbackCorrect": "Exato: o que termina é o discurso.",
+    "feedbackWrong": {
+      "b": "\"ouvido\" vem na frase seguinte.",
+      "c": "\"mandamentos\" aparece depois do temor."
+    },
+    "passageText": "Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "template": "Este é o fim do ___. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "options": [
+      {"id": "a", "text": "discurso"},
+      {"id": "b", "text": "ouvido"},
+      {"id": "c", "text": "mandamentos"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "id": "eclesiastes-pro-eclesiastes-conclusao-01-teme-a-deus-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Eclesiastes 12:13",
+    "learningObjective": "Reconhecer que o fim do discurso é temer a Deus e observar os seus mandamentos.",
+    "evidence": ["Eclesiastes 12:13"],
+    "type": "choice",
+    "question": "Qual leitura teológica Eclesiastes 12:13 sustenta sobre o \"tudo do homem\"?",
+    "prompt": "Qual leitura teológica Eclesiastes 12:13 sustenta sobre o \"tudo do homem\"?",
+    "cue": "Qual leitura teológica Eclesiastes 12:13 sustenta sobre o \"tudo do homem\"?",
+    "feedbackCorrect": "Certo: o tudo é temor e obediência, não autonomia.",
+    "feedbackWrong": {
+      "b": "O texto não faz do eu o centro do tudo.",
+      "c": "Temor aqui não é pânico vazio; liga-se a mandamentos.",
+      "d": "Ouvir o discurso não substitui guardar."
+    },
+    "passageText": "Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "options": [
+      {"id": "a", "text": "O tudo do homem é temer a Deus e guardar os mandamentos."},
+      {"id": "b", "text": "O tudo do homem é afirmar-se como centro da vida."},
+      {"id": "c", "text": "O temor de Deus é só pânico, sem obediência."},
+      {"id": "d", "text": "Ter ouvido o discurso já cumpre todo o dever."}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "id": "eclesiastes-pro-eclesiastes-conclusao-01-teme-a-deus-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Eclesiastes 12:13",
+    "learningObjective": "Reconhecer que o fim do discurso é temer a Deus e observar os seus mandamentos.",
+    "evidence": ["Eclesiastes 12:13"],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Eclesiastes 12:13?",
+    "prompt": "Qual sequência revela o sentido de Eclesiastes 12:13?",
+    "cue": "Qual sequência revela o sentido de Eclesiastes 12:13?",
+    "feedbackCorrect": "Certo: o fim ouvido desemboca no temor que é o tudo.",
+    "feedbackWrong": {
+      "b": "O tudo do homem não precede o fim do discurso.",
+      "c": "Temer a Deus vem depois de \"já tudo foi ouvido\"."
+    },
+    "passageText": "Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "options": [
+      {"id": "a", "text": "Este é o fim do discurso. Já tudo foi ouvido"},
+      {"id": "b", "text": "teme a Deus e observa os seus mandamentos"},
+      {"id": "c", "text": "porque isso é o tudo do homem"}
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "id": "eclesiastes-pro-eclesiastes-conclusao-01-teme-a-deus-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Eclesiastes 12:13",
+    "learningObjective": "Reconhecer que o fim do discurso é temer a Deus e observar os seus mandamentos.",
+    "evidence": ["Eclesiastes 12:13"],
+    "type": "complete",
+    "question": "Complete a frase: \"Este é o fim do discurso. Já tudo foi ouvido: teme a ___ e observa os seus mandamentos, porque isso é o tudo do homem.\"",
+    "prompt": "Complete a frase: \"Este é o fim do discurso. Já tudo foi ouvido: teme a ___ e observa os seus mandamentos, porque isso é o tudo do homem.\"",
+    "cue": "Complete a frase: \"Este é o fim do discurso. Já tudo foi ouvido: teme a ___ e observa os seus mandamentos, porque isso é o tudo do homem.\"",
+    "feedbackCorrect": "Certo: o objeto do temor é Deus.",
+    "feedbackWrong": {
+      "b": "O texto não manda temer o acaso.",
+      "c": "\"rei\" não preenche esta lacuna."
+    },
+    "passageText": "Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "template": "Este é o fim do discurso. Já tudo foi ouvido: teme a ___ e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "options": [
+      {"id": "a", "text": "Deus"},
+      {"id": "b", "text": "acaso"},
+      {"id": "c", "text": "rei"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "id": "eclesiastes-pro-eclesiastes-conclusao-01-teme-a-deus-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Eclesiastes 12:13",
+    "learningObjective": "Reconhecer que o fim do discurso é temer a Deus e observar os seus mandamentos.",
+    "evidence": ["Eclesiastes 12:13"],
+    "type": "connect",
+    "question": "O que o fim do discurso em Eclesiastes 12:13 comunica que se liga a este contexto?",
+    "prompt": "O que o fim do discurso em Eclesiastes 12:13 comunica que se liga a este contexto?",
+    "cue": "O que o fim do discurso em Eclesiastes 12:13 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: depois da vaidade, o fim é temer a Deus.",
+    "feedbackWrong": {
+      "b": "A conclusão não canoniza o ceticismo.",
+      "c": "Mandamentos não são tratados como peso inútil."
+    },
+    "passageText": "Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "passageA": {
+      "ref": "Eclesiastes 12:13",
+      "text": "Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Depois de nomear a vaidade, o fim é este: temer a Deus e guardar os mandamentos."
+    },
+    "options": [
+      {"id": "a", "text": "Fim: temer a Deus"},
+      {"id": "b", "text": "Ceticismo como meta"},
+      {"id": "c", "text": "Mandamento inútil"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-01-teme-a-deus",
+    "id": "eclesiastes-pro-eclesiastes-conclusao-01-teme-a-deus-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Eclesiastes 1:2; 12:13",
+    "learningObjective": "Unir a vaidade de 1:2 ao tudo do homem em 12:13: o sentido é temer a Deus.",
+    "evidence": ["Eclesiastes 1:2", "Eclesiastes 12:13"],
+    "type": "true_false",
+    "question": "O Pregador declara que tudo é vaidade, e o fim do discurso é temer a Deus e observar os seus mandamentos.",
+    "prompt": "O Pregador declara que tudo é vaidade, e o fim do discurso é temer a Deus e observar os seus mandamentos.",
+    "cue": "O Pregador declara que tudo é vaidade, e o fim do discurso é temer a Deus e observar os seus mandamentos.",
+    "feedbackCorrect": "Certo: 1:2 e 12:13 dizem exatamente isso.",
+    "feedbackWrong": {
+      "false": "Os dois textos afirmam vaidade e, no fim, temor a Deus."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade. Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "id": "eclesiastes-sem-eclesiastes-conclusao-02-desafio-sentido-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Eclesiastes 1:2; 12:13",
+    "learningObjective": "Unir a vaidade de 1:2 ao tudo do homem em 12:13: o sentido é temer a Deus.",
+    "evidence": ["Eclesiastes 1:2", "Eclesiastes 12:13"],
+    "type": "tap",
+    "question": "Em Eclesiastes 1:2; 12:13, toque a palavra que falta em \"___ de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade.\"?",
+    "prompt": "Em Eclesiastes 1:2; 12:13, toque a palavra que falta em \"___ de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade.\"?",
+    "cue": "Em Eclesiastes 1:2; 12:13, toque a palavra que falta em \"___ de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade.\"?",
+    "feedbackCorrect": "Exato: 1:2 abre com Vaidade.",
+    "feedbackWrong": {
+      "b": "Deus aparece em 12:13, não nesta abertura.",
+      "c": "homem fecha 12:13, não esta lacuna."
+    },
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade. Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "template": "___ de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade.",
+    "options": [
+      {"id": "a", "text": "Vaidade"},
+      {"id": "b", "text": "Deus"},
+      {"id": "c", "text": "homem"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "id": "eclesiastes-sem-eclesiastes-conclusao-02-desafio-sentido-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Eclesiastes 1:2; 12:13",
+    "learningObjective": "Unir a vaidade de 1:2 ao tudo do homem em 12:13: o sentido é temer a Deus.",
+    "evidence": ["Eclesiastes 1:2", "Eclesiastes 12:13"],
+    "type": "choice",
+    "question": "Qual par de fatos os dois textos afirmam juntos?",
+    "prompt": "Qual par de fatos os dois textos afirmam juntos?",
+    "cue": "Qual par de fatos os dois textos afirmam juntos?",
+    "feedbackCorrect": "Certo: vaidade no começo e temor a Deus no fim.",
+    "feedbackWrong": {
+      "b": "12:13 não diz que a vaidade é o tudo do homem.",
+      "c": "1:2 não cancela 12:13; os dois permanecem.",
+      "d": "O fim não é acumular mais vaidade."
+    },
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade. Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "options": [
+      {"id": "a", "text": "Tudo é vaidade; o fim é temer a Deus e guardar."},
+      {"id": "b", "text": "A vaidade é chamada o tudo do homem."},
+      {"id": "c", "text": "O Pregador recua da declaração de vaidade."},
+      {"id": "d", "text": "O fim do discurso é buscar mais vaidade."}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "id": "eclesiastes-sem-eclesiastes-conclusao-02-desafio-sentido-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Eclesiastes 1:2; 12:13",
+    "learningObjective": "Unir a vaidade de 1:2 ao tudo do homem em 12:13: o sentido é temer a Deus.",
+    "evidence": ["Eclesiastes 1:2", "Eclesiastes 12:13"],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Eclesiastes 1:2; 12:13?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Eclesiastes 1:2; 12:13?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Eclesiastes 1:2; 12:13?",
+    "feedbackCorrect": "Certo: vaidade, fim do discurso, temor a Deus.",
+    "feedbackWrong": {
+      "b": "O temor a Deus não abre o livro neste par de textos.",
+      "c": "A vaidade é nomeada antes do fim do discurso."
+    },
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade. Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "options": [
+      {"id": "a", "text": "Vaidade de vaidade, tudo é vaidade"},
+      {"id": "b", "text": "Este é o fim do discurso. Já tudo foi ouvido"},
+      {"id": "c", "text": "teme a Deus e observa os seus mandamentos"}
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "id": "eclesiastes-sem-eclesiastes-conclusao-02-desafio-sentido-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Eclesiastes 1:2; 12:13",
+    "learningObjective": "Unir a vaidade de 1:2 ao tudo do homem em 12:13: o sentido é temer a Deus.",
+    "evidence": ["Eclesiastes 1:2", "Eclesiastes 12:13"],
+    "type": "complete",
+    "question": "Complete a frase: \"Já tudo foi ouvido: ___ a Deus e observa os seus mandamentos, porque isso é o tudo do homem.\"",
+    "prompt": "Complete a frase: \"Já tudo foi ouvido: ___ a Deus e observa os seus mandamentos, porque isso é o tudo do homem.\"",
+    "cue": "Complete a frase: \"Já tudo foi ouvido: ___ a Deus e observa os seus mandamentos, porque isso é o tudo do homem.\"",
+    "feedbackCorrect": "Certo: o verbo é teme.",
+    "feedbackWrong": {
+      "b": "\"foge\" inverte o chamado do texto.",
+      "c": "\"mede\" não é a palavra de 12:13."
+    },
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade. Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "template": "Já tudo foi ouvido: ___ a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "options": [
+      {"id": "a", "text": "teme"},
+      {"id": "b", "text": "foge"},
+      {"id": "c", "text": "mede"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "id": "eclesiastes-sem-eclesiastes-conclusao-02-desafio-sentido-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Eclesiastes 1:2; 12:13",
+    "learningObjective": "Unir a vaidade de 1:2 ao tudo do homem em 12:13: o sentido é temer a Deus.",
+    "evidence": ["Eclesiastes 1:2", "Eclesiastes 12:13"],
+    "type": "connect",
+    "question": "O que Eclesiastes 1:2; 12:13 comunica que se liga a este contexto?",
+    "prompt": "O que Eclesiastes 1:2; 12:13 comunica que se liga a este contexto?",
+    "cue": "O que Eclesiastes 1:2; 12:13 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o sentido está em temer a Deus.",
+    "feedbackWrong": {
+      "b": "O par de textos não aponta mais vaidade como meta.",
+      "c": "O tudo do homem não é o discurso vazio."
+    },
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade. Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "passageA": {
+      "ref": "Eclesiastes 1:2; 12:13",
+      "text": "Vaidade de vaidade, tudo é vaidade. teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O sentido não está em mais vaidade, mas em temer a Deus — isso é o tudo do homem."
+    },
+    "options": [
+      {"id": "a", "text": "Sentido: temer a Deus"},
+      {"id": "b", "text": "Mais vaidade no fim"},
+      {"id": "c", "text": "Discurso como o tudo"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "id": "eclesiastes-sem-eclesiastes-conclusao-02-desafio-sentido-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Eclesiastes 1:2; 12:13",
+    "learningObjective": "Unir a vaidade de 1:2 ao tudo do homem em 12:13: o sentido é temer a Deus.",
+    "evidence": ["Eclesiastes 1:2", "Eclesiastes 12:13"],
+    "type": "true_false",
+    "question": "Entre Eclesiastes 1:2 e 12:13, o \"tudo\" da vaidade e o \"tudo do homem\" apontam para a mesma resposta: acumular mais debaixo do sol.",
+    "prompt": "Entre Eclesiastes 1:2 e 12:13, o \"tudo\" da vaidade e o \"tudo do homem\" apontam para a mesma resposta: acumular mais debaixo do sol.",
+    "cue": "Entre Eclesiastes 1:2 e 12:13, o \"tudo\" da vaidade e o \"tudo do homem\" apontam para a mesma resposta: acumular mais debaixo do sol.",
+    "feedbackCorrect": "Certo: o tudo do homem é temer a Deus, não a vaidade.",
+    "feedbackWrong": {
+      "true": "1:2 nomeia vaidade; 12:13 desloca o tudo para o temor."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade. Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "id": "eclesiastes-cam-eclesiastes-conclusao-02-desafio-sentido-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Eclesiastes 1:2; 12:13",
+    "learningObjective": "Unir a vaidade de 1:2 ao tudo do homem em 12:13: o sentido é temer a Deus.",
+    "evidence": ["Eclesiastes 1:2", "Eclesiastes 12:13"],
+    "type": "tap",
+    "question": "Em Eclesiastes 1:2; 12:13, toque a palavra que falta em \"Já tudo foi ouvido: ___ a Deus e observa os seus mandamentos, porque isso é o tudo do homem.\"?",
+    "prompt": "Em Eclesiastes 1:2; 12:13, toque a palavra que falta em \"Já tudo foi ouvido: ___ a Deus e observa os seus mandamentos, porque isso é o tudo do homem.\"?",
+    "cue": "Em Eclesiastes 1:2; 12:13, toque a palavra que falta em \"Já tudo foi ouvido: ___ a Deus e observa os seus mandamentos, porque isso é o tudo do homem.\"?",
+    "feedbackCorrect": "Exato: o chamado é teme a Deus.",
+    "feedbackWrong": {
+      "b": "Pregador fala em 1:2, não nesta lacuna.",
+      "c": "\"discurso\" aparece antes do chamado."
+    },
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade. Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "template": "Já tudo foi ouvido: ___ a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "options": [
+      {"id": "a", "text": "teme"},
+      {"id": "b", "text": "Pregador"},
+      {"id": "c", "text": "discurso"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "id": "eclesiastes-cam-eclesiastes-conclusao-02-desafio-sentido-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Eclesiastes 1:2; 12:13",
+    "learningObjective": "Unir a vaidade de 1:2 ao tudo do homem em 12:13: o sentido é temer a Deus.",
+    "evidence": ["Eclesiastes 1:2", "Eclesiastes 12:13"],
+    "type": "choice",
+    "question": "Como 1:2 e 12:13 se encadeiam no desafio do sentido?",
+    "prompt": "Como 1:2 e 12:13 se encadeiam no desafio do sentido?",
+    "cue": "Como 1:2 e 12:13 se encadeiam no desafio do sentido?",
+    "feedbackCorrect": "Certo: a vaidade não é o destino; o temor é o tudo.",
+    "feedbackWrong": {
+      "b": "12:13 não confirma a vaidade como meta final.",
+      "c": "Os textos não se anulam; se encadeiam.",
+      "d": "O sentido não está em mais do mesmo debaixo do sol."
+    },
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade. Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "options": [
+      {"id": "a", "text": "A vaidade é nomeada para que o tudo seja temer a Deus."},
+      {"id": "b", "text": "O fim confirma que a vaidade é o destino do homem."},
+      {"id": "c", "text": "12:13 apaga 1:2 e trata a vaidade como erro de cópia."},
+      {"id": "d", "text": "O sentido está em repetir a vaidade com mais força."}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "id": "eclesiastes-cam-eclesiastes-conclusao-02-desafio-sentido-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Eclesiastes 1:2; 12:13",
+    "learningObjective": "Unir a vaidade de 1:2 ao tudo do homem em 12:13: o sentido é temer a Deus.",
+    "evidence": ["Eclesiastes 1:2", "Eclesiastes 12:13"],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Eclesiastes 1:2; 12:13?",
+    "prompt": "Como se encadeiam os eventos de Eclesiastes 1:2; 12:13?",
+    "cue": "Como se encadeiam os eventos de Eclesiastes 1:2; 12:13?",
+    "feedbackCorrect": "Certo: a voz, a vaidade e o temor se encadeiam assim.",
+    "feedbackWrong": {
+      "b": "Temer a Deus não precede a declaração de vaidade neste par.",
+      "c": "O Pregador fala em 1:2, antes do fim em 12:13."
+    },
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade. Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "options": [
+      {"id": "a", "text": "diz o Pregador"},
+      {"id": "b", "text": "tudo é vaidade"},
+      {"id": "c", "text": "teme a Deus e observa os seus mandamentos"}
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "id": "eclesiastes-cam-eclesiastes-conclusao-02-desafio-sentido-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Eclesiastes 1:2; 12:13",
+    "learningObjective": "Unir a vaidade de 1:2 ao tudo do homem em 12:13: o sentido é temer a Deus.",
+    "evidence": ["Eclesiastes 1:2", "Eclesiastes 12:13"],
+    "type": "complete",
+    "question": "Complete a frase: \"teme a Deus e observa os seus mandamentos, porque isso é o tudo do ___.\"",
+    "prompt": "Complete a frase: \"teme a Deus e observa os seus mandamentos, porque isso é o tudo do ___.\"",
+    "cue": "Complete a frase: \"teme a Deus e observa os seus mandamentos, porque isso é o tudo do ___.\"",
+    "feedbackCorrect": "Certo: isso é o tudo do homem.",
+    "feedbackWrong": {
+      "b": "A lacuna não pede \"Pregador\".",
+      "c": "\"sol\" não fecha 12:13."
+    },
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade. Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "template": "teme a Deus e observa os seus mandamentos, porque isso é o tudo do ___.",
+    "options": [
+      {"id": "a", "text": "homem"},
+      {"id": "b", "text": "Pregador"},
+      {"id": "c", "text": "sol"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "id": "eclesiastes-cam-eclesiastes-conclusao-02-desafio-sentido-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Eclesiastes 1:2; 12:13",
+    "learningObjective": "Unir a vaidade de 1:2 ao tudo do homem em 12:13: o sentido é temer a Deus.",
+    "evidence": ["Eclesiastes 1:2", "Eclesiastes 12:13"],
+    "type": "connect",
+    "question": "O que a ponte entre vaidade e temor comunica que se liga a este contexto?",
+    "prompt": "O que a ponte entre vaidade e temor comunica que se liga a este contexto?",
+    "cue": "O que a ponte entre vaidade e temor comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o sentido não está em mais vaidade.",
+    "feedbackWrong": {
+      "b": "Os textos não igualam vaidade e temor.",
+      "c": "Ouvir sem temer não resolve o desafio."
+    },
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade. Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "passageA": {
+      "ref": "Eclesiastes 1:2; 12:13",
+      "text": "tudo é vaidade. teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O sentido não está em mais vaidade, mas em temer a Deus — isso é o tudo do homem."
+    },
+    "options": [
+      {"id": "a", "text": "Não mais vaidade"},
+      {"id": "b", "text": "Vaidade igual a temor"},
+      {"id": "c", "text": "Ouvir já basta"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "id": "eclesiastes-cam-eclesiastes-conclusao-02-desafio-sentido-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Eclesiastes 1:2; 12:13",
+    "learningObjective": "Unir a vaidade de 1:2 ao tudo do homem em 12:13: o sentido é temer a Deus.",
+    "evidence": ["Eclesiastes 1:2", "Eclesiastes 12:13"],
+    "type": "true_false",
+    "question": "Lidos juntos, 1:2 e 12:13 preparam o leitor a não buscar o sentido em mais vaidade, mas em temer a Deus.",
+    "prompt": "Lidos juntos, 1:2 e 12:13 preparam o leitor a não buscar o sentido em mais vaidade, mas em temer a Deus.",
+    "cue": "Lidos juntos, 1:2 e 12:13 preparam o leitor a não buscar o sentido em mais vaidade, mas em temer a Deus.",
+    "feedbackCorrect": "Certo: o tudo do homem desloca o sentido para o temor.",
+    "feedbackWrong": {
+      "false": "A conclusão não devolve o leitor à vaidade de 1:2."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade. Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "id": "eclesiastes-pro-eclesiastes-conclusao-02-desafio-sentido-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Eclesiastes 1:2; 12:13",
+    "learningObjective": "Unir a vaidade de 1:2 ao tudo do homem em 12:13: o sentido é temer a Deus.",
+    "evidence": ["Eclesiastes 1:2", "Eclesiastes 12:13"],
+    "type": "tap",
+    "question": "Em Eclesiastes 1:2; 12:13, toque a palavra que falta em \"teme a Deus e ___ os seus mandamentos, porque isso é o tudo do homem.\"?",
+    "prompt": "Em Eclesiastes 1:2; 12:13, toque a palavra que falta em \"teme a Deus e ___ os seus mandamentos, porque isso é o tudo do homem.\"?",
+    "cue": "Em Eclesiastes 1:2; 12:13, toque a palavra que falta em \"teme a Deus e ___ os seus mandamentos, porque isso é o tudo do homem.\"?",
+    "feedbackCorrect": "Exato: o par do temor é observar.",
+    "feedbackWrong": {
+      "b": "\"mandamentos\" é o objeto, não o verbo da lacuna.",
+      "c": "\"tudo\" aparece em ambos os textos, mas não aqui."
+    },
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade. Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "template": "teme a Deus e ___ os seus mandamentos, porque isso é o tudo do homem.",
+    "options": [
+      {"id": "a", "text": "observa"},
+      {"id": "b", "text": "mandamentos"},
+      {"id": "c", "text": "tudo"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "id": "eclesiastes-pro-eclesiastes-conclusao-02-desafio-sentido-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Eclesiastes 1:2; 12:13",
+    "learningObjective": "Unir a vaidade de 1:2 ao tudo do homem em 12:13: o sentido é temer a Deus.",
+    "evidence": ["Eclesiastes 1:2", "Eclesiastes 12:13"],
+    "type": "choice",
+    "question": "Qual implicação teológica o par 1:2 e 12:13 sustenta sem trair os textos?",
+    "prompt": "Qual implicação teológica o par 1:2 e 12:13 sustenta sem trair os textos?",
+    "cue": "Qual implicação teológica o par 1:2 e 12:13 sustenta sem trair os textos?",
+    "feedbackCorrect": "Certo: o sentido é o temor, não a vaidade.",
+    "feedbackWrong": {
+      "b": "Nomear vaidade não autoriza viver sem Deus.",
+      "c": "12:13 não trata o temor como acessório.",
+      "d": "O tudo do homem não é autonomia debaixo do sol."
+    },
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade. Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "options": [
+      {"id": "a", "text": "O sentido não está em mais vaidade, mas em temer a Deus."},
+      {"id": "b", "text": "Se tudo é vaidade, o homem pode viver sem Deus."},
+      {"id": "c", "text": "Temer a Deus é anexo; o centro continua a vaidade."},
+      {"id": "d", "text": "O tudo do homem é afirmar-se debaixo do sol."}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "id": "eclesiastes-pro-eclesiastes-conclusao-02-desafio-sentido-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Eclesiastes 1:2; 12:13",
+    "learningObjective": "Unir a vaidade de 1:2 ao tudo do homem em 12:13: o sentido é temer a Deus.",
+    "evidence": ["Eclesiastes 1:2", "Eclesiastes 12:13"],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Eclesiastes 1:2; 12:13?",
+    "prompt": "Qual sequência revela o sentido de Eclesiastes 1:2; 12:13?",
+    "cue": "Qual sequência revela o sentido de Eclesiastes 1:2; 12:13?",
+    "feedbackCorrect": "Certo: vaidade, fim ouvido e o tudo do temor.",
+    "feedbackWrong": {
+      "b": "O tudo do homem não precede a vaidade neste arco.",
+      "c": "O fim do discurso vem depois de 1:2, não antes."
+    },
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade. Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "options": [
+      {"id": "a", "text": "Vaidade de vaidade, tudo é vaidade"},
+      {"id": "b", "text": "Este é o fim do discurso. Já tudo foi ouvido"},
+      {"id": "c", "text": "porque isso é o tudo do homem"}
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "id": "eclesiastes-pro-eclesiastes-conclusao-02-desafio-sentido-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Eclesiastes 1:2; 12:13",
+    "learningObjective": "Unir a vaidade de 1:2 ao tudo do homem em 12:13: o sentido é temer a Deus.",
+    "evidence": ["Eclesiastes 1:2", "Eclesiastes 12:13"],
+    "type": "complete",
+    "question": "Complete a frase: \"Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é ___.\"",
+    "prompt": "Complete a frase: \"Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é ___.\"",
+    "cue": "Complete a frase: \"Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é ___.\"",
+    "feedbackCorrect": "Certo: 1:2 fecha com vaidade.",
+    "feedbackWrong": {
+      "b": "Esta cláusula de 1:2 não fecha com \"Deus\".",
+      "c": "\"mandamentos\" pertence a 12:13, não a esta lacuna."
+    },
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade. Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "template": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é ___.",
+    "options": [
+      {"id": "a", "text": "vaidade"},
+      {"id": "b", "text": "Deus"},
+      {"id": "c", "text": "mandamentos"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "id": "eclesiastes-pro-eclesiastes-conclusao-02-desafio-sentido-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Eclesiastes 1:2; 12:13",
+    "learningObjective": "Unir a vaidade de 1:2 ao tudo do homem em 12:13: o sentido é temer a Deus.",
+    "evidence": ["Eclesiastes 1:2", "Eclesiastes 12:13"],
+    "type": "connect",
+    "question": "O que o arco de 1:2 a 12:13 comunica que se liga a este contexto?",
+    "prompt": "O que o arco de 1:2 a 12:13 comunica que se liga a este contexto?",
+    "cue": "O que o arco de 1:2 a 12:13 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o tudo do homem é temer a Deus.",
+    "feedbackWrong": {
+      "b": "O arco não canoniza o vazio como meta.",
+      "c": "Guardar mandamentos não é tratado como anexo inútil."
+    },
+    "passageText": "Vaidade de vaidade, diz o Pregador. Vaidade de vaidade, tudo é vaidade. Este é o fim do discurso. Já tudo foi ouvido: teme a Deus e observa os seus mandamentos, porque isso é o tudo do homem.",
+    "passageA": {
+      "ref": "Eclesiastes 1:2; 12:13",
+      "text": "tudo é vaidade. porque isso é o tudo do homem."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O sentido não está em mais vaidade, mas em temer a Deus — isso é o tudo do homem."
+    },
+    "options": [
+      {"id": "a", "text": "Tudo do homem: temer"},
+      {"id": "b", "text": "Vazio como meta"},
+      {"id": "c", "text": "Guardar é inútil"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "eclesiastes",
+    "section": "eclesiastes-conclusao-02-desafio-sentido",
+    "id": "eclesiastes-pro-eclesiastes-conclusao-02-desafio-sentido-06"
+  }
+]

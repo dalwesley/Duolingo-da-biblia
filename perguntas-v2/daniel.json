@@ -1,0 +1,3701 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Daniel 1:8",
+    "learningObjective": "Reconhecer que Daniel assentou no coração não contaminar-se com as iguarias reais nem com o vinho do rei, e pediu isso ao príncipe dos eunucos.",
+    "evidence": [
+      "Daniel 1:8"
+    ],
+    "type": "true_false",
+    "question": "Daniel assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia.",
+    "prompt": "Daniel assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia.",
+    "cue": "Daniel assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia.",
+    "feedbackCorrect": "Certo: esse é o propósito registrado em Daniel 1:8.",
+    "feedbackWrong": {
+      "false": "Releia: ele assentou no coração não contaminar-se com iguarias e vinho."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "id": "daniel-sem-daniel-palacio-01-proposito-no-coracao-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Daniel 1:8",
+    "learningObjective": "Reconhecer que Daniel assentou no coração não contaminar-se com as iguarias reais nem com o vinho do rei, e pediu isso ao príncipe dos eunucos.",
+    "evidence": [
+      "Daniel 1:8"
+    ],
+    "type": "tap",
+    "question": "Em Daniel 1:8, toque a palavra que falta em \"Daniel, porém, assentou no seu ___ não se contaminar\"?",
+    "prompt": "Em Daniel 1:8, toque a palavra que falta em \"Daniel, porém, assentou no seu ___ não se contaminar\"?",
+    "cue": "Em Daniel 1:8, toque a palavra que falta em \"Daniel, porém, assentou no seu ___ não se contaminar\"?",
+    "feedbackCorrect": "Exato: o propósito foi assentado no coração.",
+    "feedbackWrong": {
+      "b": "Vinho é o que o rei bebia, não onde Daniel assentou o propósito.",
+      "c": "Príncipe aparece no pedido, não nesta lacuna."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "id": "daniel-sem-daniel-palacio-01-proposito-no-coracao-02",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se.",
+    "template": "Daniel, porém, assentou no seu ___ não se contaminar",
+    "options": [
+      {
+        "id": "a",
+        "text": "coração"
+      },
+      {
+        "id": "b",
+        "text": "vinho"
+      },
+      {
+        "id": "c",
+        "text": "príncipe"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Daniel 1:8",
+    "learningObjective": "Reconhecer que Daniel assentou no coração não contaminar-se com as iguarias reais nem com o vinho do rei, e pediu isso ao príncipe dos eunucos.",
+    "evidence": [
+      "Daniel 1:8"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação o texto faz diretamente em Daniel 1:8?",
+    "prompt": "Qual afirmação o texto faz diretamente em Daniel 1:8?",
+    "cue": "Qual afirmação o texto faz diretamente em Daniel 1:8?",
+    "feedbackCorrect": "Certo: o pedido é para não contaminar-se.",
+    "feedbackWrong": {
+      "b": "O texto diz que ele não quis contaminar-se com as iguarias.",
+      "c": "Quem recusa o vinho é Daniel, não o rei.",
+      "d": "O texto registra o pedido, não a recusa do príncipe."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "id": "daniel-sem-daniel-palacio-01-proposito-no-coracao-03",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Daniel pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se."
+      },
+      {
+        "id": "b",
+        "text": "Daniel aceitou as iguarias reais sem recusa."
+      },
+      {
+        "id": "c",
+        "text": "O rei proibiu Daniel de beber o vinho da corte."
+      },
+      {
+        "id": "d",
+        "text": "O príncipe dos eunucos recusou ouvir qualquer pedido."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Daniel 1:8",
+    "learningObjective": "Reconhecer que Daniel assentou no coração não contaminar-se com as iguarias reais nem com o vinho do rei, e pediu isso ao príncipe dos eunucos.",
+    "evidence": [
+      "Daniel 1:8"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Daniel 1:8?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Daniel 1:8?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Daniel 1:8?",
+    "feedbackCorrect": "Certo: propósito, recusa da mesa, depois o pedido.",
+    "feedbackWrong": {
+      "b": "As iguarias e o vinho vêm depois do propósito no coração.",
+      "c": "O pedido ao príncipe fecha o versículo."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "id": "daniel-sem-daniel-palacio-01-proposito-no-coracao-04",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Daniel, porém, assentou no seu coração não se contaminar"
+      },
+      {
+        "id": "b",
+        "text": "com as iguarias reais nem com o vinho que o rei bebia"
+      },
+      {
+        "id": "c",
+        "text": "portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Daniel 1:8",
+    "learningObjective": "Reconhecer que Daniel assentou no coração não contaminar-se com as iguarias reais nem com o vinho do rei, e pediu isso ao príncipe dos eunucos.",
+    "evidence": [
+      "Daniel 1:8"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"não se ___ com as iguarias reais nem com o vinho que o rei bebia\"",
+    "prompt": "Complete a frase: \"não se ___ com as iguarias reais nem com o vinho que o rei bebia\"",
+    "cue": "Complete a frase: \"não se ___ com as iguarias reais nem com o vinho que o rei bebia\"",
+    "feedbackCorrect": "Certo: não se contaminar com iguarias nem vinho.",
+    "feedbackWrong": {
+      "b": "Assentou descreve o propósito, não esta lacuna.",
+      "c": "Eunucos qualifica o príncipe, não o verbo."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "id": "daniel-sem-daniel-palacio-01-proposito-no-coracao-05",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se.",
+    "template": "não se ___ com as iguarias reais nem com o vinho que o rei bebia",
+    "options": [
+      {
+        "id": "a",
+        "text": "contaminar"
+      },
+      {
+        "id": "b",
+        "text": "assentou"
+      },
+      {
+        "id": "c",
+        "text": "eunucos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Daniel 1:8",
+    "learningObjective": "Reconhecer que Daniel assentou no coração não contaminar-se com as iguarias reais nem com o vinho do rei, e pediu isso ao príncipe dos eunucos.",
+    "evidence": [
+      "Daniel 1:8"
+    ],
+    "type": "connect",
+    "question": "O que Daniel 1:8 comunica que se liga a este contexto?",
+    "prompt": "O que Daniel 1:8 comunica que se liga a este contexto?",
+    "cue": "O que Daniel 1:8 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: no palácio, a fidelidade começa na mesa.",
+    "feedbackWrong": {
+      "b": "Daniel recusa contaminar-se com as iguarias reais.",
+      "c": "O propósito vira pedido concreto de não contaminar-se."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "id": "daniel-sem-daniel-palacio-01-proposito-no-coracao-06",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se.",
+    "passageA": {
+      "ref": "Daniel 1:8",
+      "text": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Propósito no coração: no palácio, Daniel recusa contaminar-se — fidelidade começa na mesa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fidelidade começa na mesa"
+      },
+      {
+        "id": "b",
+        "text": "A mesa do rei é neutra"
+      },
+      {
+        "id": "c",
+        "text": "Propósito sem recusa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Daniel 1:8",
+    "learningObjective": "Reconhecer que Daniel assentou no coração não contaminar-se com as iguarias reais nem com o vinho do rei, e pediu isso ao príncipe dos eunucos.",
+    "evidence": [
+      "Daniel 1:8"
+    ],
+    "type": "true_false",
+    "question": "O propósito de Daniel ficou só no íntimo: ele não pediu nada ao príncipe dos eunucos.",
+    "prompt": "O propósito de Daniel ficou só no íntimo: ele não pediu nada ao príncipe dos eunucos.",
+    "cue": "O propósito de Daniel ficou só no íntimo: ele não pediu nada ao príncipe dos eunucos.",
+    "feedbackCorrect": "Certo: o texto liga o coração ao pedido concreto.",
+    "feedbackWrong": {
+      "true": "Releia: portanto, pediu ao príncipe dos eunucos."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "id": "daniel-cam-daniel-palacio-01-proposito-no-coracao-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Daniel 1:8",
+    "learningObjective": "Reconhecer que Daniel assentou no coração não contaminar-se com as iguarias reais nem com o vinho do rei, e pediu isso ao príncipe dos eunucos.",
+    "evidence": [
+      "Daniel 1:8"
+    ],
+    "type": "tap",
+    "question": "Em Daniel 1:8, toque a palavra que falta em \"nem com o ___ que o rei bebia\"?",
+    "prompt": "Em Daniel 1:8, toque a palavra que falta em \"nem com o ___ que o rei bebia\"?",
+    "cue": "Em Daniel 1:8, toque a palavra que falta em \"nem com o ___ que o rei bebia\"?",
+    "feedbackCorrect": "Exato: o vinho que o rei bebia.",
+    "feedbackWrong": {
+      "b": "Coração é o lugar do propósito, não o que o rei bebia.",
+      "c": "Príncipe recebe o pedido, não preenche esta lacuna."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "id": "daniel-cam-daniel-palacio-01-proposito-no-coracao-02",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se.",
+    "template": "nem com o ___ que o rei bebia",
+    "options": [
+      {
+        "id": "a",
+        "text": "vinho"
+      },
+      {
+        "id": "b",
+        "text": "coração"
+      },
+      {
+        "id": "c",
+        "text": "príncipe"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Daniel 1:8",
+    "learningObjective": "Reconhecer que Daniel assentou no coração não contaminar-se com as iguarias reais nem com o vinho do rei, e pediu isso ao príncipe dos eunucos.",
+    "evidence": [
+      "Daniel 1:8"
+    ],
+    "type": "choice",
+    "question": "Como Daniel 1:8 liga o propósito interior à mesa do palácio?",
+    "prompt": "Como Daniel 1:8 liga o propósito interior à mesa do palácio?",
+    "cue": "Como Daniel 1:8 liga o propósito interior à mesa do palácio?",
+    "feedbackCorrect": "Certo: coração, recusa da mesa e pedido se encadeiam.",
+    "feedbackWrong": {
+      "a": "O texto trata iguarias e vinho como risco de contaminar-se.",
+      "c": "O motivo citado é não contaminar-se, não insulto.",
+      "d": "Quem pede permissão é Daniel, não o príncipe."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "id": "daniel-cam-daniel-palacio-01-proposito-no-coracao-03",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O coração decide, mas a mesa do rei não tem peso de fidelidade."
+      },
+      {
+        "id": "b",
+        "text": "O propósito no coração recusa contaminar-se e vira pedido à autoridade da corte."
+      },
+      {
+        "id": "c",
+        "text": "Daniel recusa o vinho para insultar o rei, não por temor de contaminar-se."
+      },
+      {
+        "id": "d",
+        "text": "O príncipe dos eunucos impôs a dieta; Daniel apenas obedeceu."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Daniel 1:8",
+    "learningObjective": "Reconhecer que Daniel assentou no coração não contaminar-se com as iguarias reais nem com o vinho do rei, e pediu isso ao príncipe dos eunucos.",
+    "evidence": [
+      "Daniel 1:8"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Daniel 1:8?",
+    "prompt": "Como se encadeiam os eventos de Daniel 1:8?",
+    "cue": "Como se encadeiam os eventos de Daniel 1:8?",
+    "feedbackCorrect": "Certo: decisão, recusa da mesa, pedido de permissão.",
+    "feedbackWrong": {
+      "b": "A recusa da mesa segue o propósito no coração.",
+      "c": "O pedido ao príncipe é a consequência."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "id": "daniel-cam-daniel-palacio-01-proposito-no-coracao-04",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se.",
+    "options": [
+      {
+        "id": "a",
+        "text": "assentou no seu coração"
+      },
+      {
+        "id": "b",
+        "text": "não se contaminar com as iguarias reais nem com o vinho"
+      },
+      {
+        "id": "c",
+        "text": "pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Daniel 1:8",
+    "learningObjective": "Reconhecer que Daniel assentou no coração não contaminar-se com as iguarias reais nem com o vinho do rei, e pediu isso ao príncipe dos eunucos.",
+    "evidence": [
+      "Daniel 1:8"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"pediu ao príncipe dos ___ que lhe permitisse não contaminar-se\"",
+    "prompt": "Complete a frase: \"pediu ao príncipe dos ___ que lhe permitisse não contaminar-se\"",
+    "cue": "Complete a frase: \"pediu ao príncipe dos ___ que lhe permitisse não contaminar-se\"",
+    "feedbackCorrect": "Certo: o pedido vai ao príncipe dos eunucos.",
+    "feedbackWrong": {
+      "b": "Iguarias são o que ele recusa, não o cargo.",
+      "c": "Vinho é o que o rei bebia, não o destinatário."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "id": "daniel-cam-daniel-palacio-01-proposito-no-coracao-05",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se.",
+    "template": "pediu ao príncipe dos ___ que lhe permitisse não contaminar-se",
+    "options": [
+      {
+        "id": "a",
+        "text": "eunucos"
+      },
+      {
+        "id": "b",
+        "text": "iguarias"
+      },
+      {
+        "id": "c",
+        "text": "vinho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Daniel 1:8",
+    "learningObjective": "Reconhecer que Daniel assentou no coração não contaminar-se com as iguarias reais nem com o vinho do rei, e pediu isso ao príncipe dos eunucos.",
+    "evidence": [
+      "Daniel 1:8"
+    ],
+    "type": "connect",
+    "question": "O que Daniel 1:8 comunica que se liga a este contexto?",
+    "prompt": "O que Daniel 1:8 comunica que se liga a este contexto?",
+    "cue": "O que Daniel 1:8 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o propósito vira pedido para não contaminar-se.",
+    "feedbackWrong": {
+      "b": "Ele pede permissão para recusar, não para aceitar.",
+      "c": "O texto registra o pedido ao príncipe."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "id": "daniel-cam-daniel-palacio-01-proposito-no-coracao-06",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se.",
+    "passageA": {
+      "ref": "Daniel 1:8",
+      "text": "portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Propósito no coração: no palácio, Daniel recusa contaminar-se — fidelidade começa na mesa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pedido que guarda o coração"
+      },
+      {
+        "id": "b",
+        "text": "Aceitação das iguarias"
+      },
+      {
+        "id": "c",
+        "text": "Silêncio diante da corte"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Daniel 1:8",
+    "learningObjective": "Reconhecer que Daniel assentou no coração não contaminar-se com as iguarias reais nem com o vinho do rei, e pediu isso ao príncipe dos eunucos.",
+    "evidence": [
+      "Daniel 1:8"
+    ],
+    "type": "true_false",
+    "question": "No palácio, a fidelidade de Daniel começa no coração e se mede na recusa de contaminar-se à mesa do rei.",
+    "prompt": "No palácio, a fidelidade de Daniel começa no coração e se mede na recusa de contaminar-se à mesa do rei.",
+    "cue": "No palácio, a fidelidade de Daniel começa no coração e se mede na recusa de contaminar-se à mesa do rei.",
+    "feedbackCorrect": "Certo: propósito no coração e recusa da mesa andam juntos.",
+    "feedbackWrong": {
+      "false": "O texto une coração, iguarias, vinho e o pedido de não contaminar-se."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "id": "daniel-pro-daniel-palacio-01-proposito-no-coracao-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Daniel 1:8",
+    "learningObjective": "Reconhecer que Daniel assentou no coração não contaminar-se com as iguarias reais nem com o vinho do rei, e pediu isso ao príncipe dos eunucos.",
+    "evidence": [
+      "Daniel 1:8"
+    ],
+    "type": "tap",
+    "question": "Em Daniel 1:8, toque a palavra que falta em \"não se contaminar com as iguarias ___ nem com o vinho\"?",
+    "prompt": "Em Daniel 1:8, toque a palavra que falta em \"não se contaminar com as iguarias ___ nem com o vinho\"?",
+    "cue": "Em Daniel 1:8, toque a palavra que falta em \"não se contaminar com as iguarias ___ nem com o vinho\"?",
+    "feedbackCorrect": "Exato: as iguarias reais.",
+    "feedbackWrong": {
+      "b": "Eunucos qualifica o príncipe, não as iguarias.",
+      "c": "Permitisse fecha o pedido, não esta lacuna."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "id": "daniel-pro-daniel-palacio-01-proposito-no-coracao-02",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se.",
+    "template": "não se contaminar com as iguarias ___ nem com o vinho",
+    "options": [
+      {
+        "id": "a",
+        "text": "reais"
+      },
+      {
+        "id": "b",
+        "text": "eunucos"
+      },
+      {
+        "id": "c",
+        "text": "permitisse"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Daniel 1:8",
+    "learningObjective": "Reconhecer que Daniel assentou no coração não contaminar-se com as iguarias reais nem com o vinho do rei, e pediu isso ao príncipe dos eunucos.",
+    "evidence": [
+      "Daniel 1:8"
+    ],
+    "type": "choice",
+    "question": "Qual leitura teológica Daniel 1:8 sustenta sobre o exílio?",
+    "prompt": "Qual leitura teológica Daniel 1:8 sustenta sobre o exílio?",
+    "cue": "Qual leitura teológica Daniel 1:8 sustenta sobre o exílio?",
+    "feedbackCorrect": "Certo: coração e mesa revelam fidelidade no palácio.",
+    "feedbackWrong": {
+      "a": "O texto trata iguarias e vinho como risco de contaminar-se.",
+      "b": "O propósito vira pedido explícito de não contaminar-se.",
+      "d": "Daniel pede não contaminar-se diante da mesa real."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "id": "daniel-pro-daniel-palacio-01-proposito-no-coracao-03",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se.",
+    "options": [
+      {
+        "id": "a",
+        "text": "No palácio, o alimento do rei é irrelevante para a aliança."
+      },
+      {
+        "id": "b",
+        "text": "Basta um propósito secreto; não é preciso recusar a mesa."
+      },
+      {
+        "id": "c",
+        "text": "A fidelidade no exílio começa no coração e se recusa a contaminar-se à mesa do império."
+      },
+      {
+        "id": "d",
+        "text": "Contaminar-se é só risco político, sem peso diante de Deus."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Daniel 1:8",
+    "learningObjective": "Reconhecer que Daniel assentou no coração não contaminar-se com as iguarias reais nem com o vinho do rei, e pediu isso ao príncipe dos eunucos.",
+    "evidence": [
+      "Daniel 1:8"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Daniel 1:8?",
+    "prompt": "Qual sequência revela o sentido de Daniel 1:8?",
+    "cue": "Qual sequência revela o sentido de Daniel 1:8?",
+    "feedbackCorrect": "Certo: propósito, recusa da mesa, pedido que a guarda.",
+    "feedbackWrong": {
+      "b": "A mesa do rei revela o que o coração assentou.",
+      "c": "O pedido torna pública a recusa de contaminar-se."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "id": "daniel-pro-daniel-palacio-01-proposito-no-coracao-04",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se.",
+    "options": [
+      {
+        "id": "a",
+        "text": "assentou no seu coração"
+      },
+      {
+        "id": "b",
+        "text": "não se contaminar com as iguarias reais nem com o vinho que o rei bebia"
+      },
+      {
+        "id": "c",
+        "text": "pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Daniel 1:8",
+    "learningObjective": "Reconhecer que Daniel assentou no coração não contaminar-se com as iguarias reais nem com o vinho do rei, e pediu isso ao príncipe dos eunucos.",
+    "evidence": [
+      "Daniel 1:8"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"com o vinho que o rei ___\"",
+    "prompt": "Complete a frase: \"com o vinho que o rei ___\"",
+    "cue": "Complete a frase: \"com o vinho que o rei ___\"",
+    "feedbackCorrect": "Certo: o vinho que o rei bebia.",
+    "feedbackWrong": {
+      "b": "Assentou descreve Daniel, não o rei nesta frase.",
+      "c": "Príncipe recebe o pedido, não o verbo."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "id": "daniel-pro-daniel-palacio-01-proposito-no-coracao-05",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se.",
+    "template": "com o vinho que o rei ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "bebia"
+      },
+      {
+        "id": "b",
+        "text": "assentou"
+      },
+      {
+        "id": "c",
+        "text": "príncipe"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Daniel 1:8",
+    "learningObjective": "Reconhecer que Daniel assentou no coração não contaminar-se com as iguarias reais nem com o vinho do rei, e pediu isso ao príncipe dos eunucos.",
+    "evidence": [
+      "Daniel 1:8"
+    ],
+    "type": "connect",
+    "question": "O que Daniel 1:8 comunica que se liga a este contexto?",
+    "prompt": "O que Daniel 1:8 comunica que se liga a este contexto?",
+    "cue": "O que Daniel 1:8 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a fidelidade no palácio começa no coração.",
+    "feedbackWrong": {
+      "b": "A mesa do rei é o lugar da recusa de contaminar-se.",
+      "c": "O palácio, não só o templo, exige propósito."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-01-proposito-no-coracao",
+    "id": "daniel-pro-daniel-palacio-01-proposito-no-coracao-06",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se.",
+    "passageA": {
+      "ref": "Daniel 1:8",
+      "text": "Daniel, porém, assentou no seu coração não se contaminar"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Propósito no coração: no palácio, Daniel recusa contaminar-se — fidelidade começa na mesa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Coração que não se contamina"
+      },
+      {
+        "id": "b",
+        "text": "Mesa sem aliança"
+      },
+      {
+        "id": "c",
+        "text": "Fidelidade só no templo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Daniel 3:17–18",
+    "learningObjective": "Confessar que o Deus a quem servem pode livrar da fornalha, e que, mesmo se não, eles não servirão aos deuses do rei nem adorarão a imagem.",
+    "evidence": [
+      "Daniel 3:17",
+      "Daniel 3:18"
+    ],
+    "type": "true_false",
+    "question": "O nosso Deus, a quem nós servimos, pode livrar-nos da fornalha de fogo ardente.",
+    "prompt": "O nosso Deus, a quem nós servimos, pode livrar-nos da fornalha de fogo ardente.",
+    "cue": "O nosso Deus, a quem nós servimos, pode livrar-nos da fornalha de fogo ardente.",
+    "feedbackCorrect": "Certo: Daniel 3:17 afirma exatamente essa possibilidade.",
+    "feedbackWrong": {
+      "false": "Releia: Deus pode livrar-nos da fornalha de fogo ardente."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "id": "daniel-sem-daniel-palacio-02-a-fornalha-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Se assim for, o nosso Deus, a quem nós servimos, pode livrar-nos da fornalha de fogo ardente; e ele há de nos livrar das tuas mãos, ó rei. Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Daniel 3:17–18",
+    "learningObjective": "Confessar que o Deus a quem servem pode livrar da fornalha, e que, mesmo se não, eles não servirão aos deuses do rei nem adorarão a imagem.",
+    "evidence": [
+      "Daniel 3:17",
+      "Daniel 3:18"
+    ],
+    "type": "tap",
+    "question": "Em Daniel 3:17–18, toque a palavra que falta em \"pode livrar-nos da ___ de fogo ardente\"?",
+    "prompt": "Em Daniel 3:17–18, toque a palavra que falta em \"pode livrar-nos da ___ de fogo ardente\"?",
+    "cue": "Em Daniel 3:17–18, toque a palavra que falta em \"pode livrar-nos da ___ de fogo ardente\"?",
+    "feedbackCorrect": "Exato: a fornalha de fogo ardente.",
+    "feedbackWrong": {
+      "b": "Imagem aparece na recusa de adorar, não nesta lacuna.",
+      "c": "Deuses são os do rei, não o lugar do livramento."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "id": "daniel-sem-daniel-palacio-02-a-fornalha-02",
+    "passageText": "Se assim for, o nosso Deus, a quem nós servimos, pode livrar-nos da fornalha de fogo ardente; e ele há de nos livrar das tuas mãos, ó rei. Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste.",
+    "template": "pode livrar-nos da ___ de fogo ardente",
+    "options": [
+      {
+        "id": "a",
+        "text": "fornalha"
+      },
+      {
+        "id": "b",
+        "text": "imagem"
+      },
+      {
+        "id": "c",
+        "text": "deuses"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Daniel 3:17–18",
+    "learningObjective": "Confessar que o Deus a quem servem pode livrar da fornalha, e que, mesmo se não, eles não servirão aos deuses do rei nem adorarão a imagem.",
+    "evidence": [
+      "Daniel 3:17",
+      "Daniel 3:18"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação o texto faz diretamente em Daniel 3:17–18?",
+    "prompt": "Qual afirmação o texto faz diretamente em Daniel 3:17–18?",
+    "cue": "Qual afirmação o texto faz diretamente em Daniel 3:17–18?",
+    "feedbackCorrect": "Certo: a recusa de servir e adorar fecha o trecho.",
+    "feedbackWrong": {
+      "b": "O texto recusa servir aos deuses e adorar a imagem.",
+      "c": "O v. 17 diz que Deus pode livrar da fornalha.",
+      "d": "A imagem é a que o rei levantou, ainda de pé."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "id": "daniel-sem-daniel-palacio-02-a-fornalha-03",
+    "passageText": "Se assim for, o nosso Deus, a quem nós servimos, pode livrar-nos da fornalha de fogo ardente; e ele há de nos livrar das tuas mãos, ó rei. Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste."
+      },
+      {
+        "id": "b",
+        "text": "Eles prometem adorar a imagem se o fogo for intenso."
+      },
+      {
+        "id": "c",
+        "text": "Deus não pode livrar ninguém da fornalha."
+      },
+      {
+        "id": "d",
+        "text": "O rei já havia derrubado a imagem de ouro."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Daniel 3:17–18",
+    "learningObjective": "Confessar que o Deus a quem servem pode livrar da fornalha, e que, mesmo se não, eles não servirão aos deuses do rei nem adorarão a imagem.",
+    "evidence": [
+      "Daniel 3:17",
+      "Daniel 3:18"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Daniel 3:17–18?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Daniel 3:17–18?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Daniel 3:17–18?",
+    "feedbackCorrect": "Certo: pode livrar, há de livrar, e mesmo se não.",
+    "feedbackWrong": {
+      "b": "O livramento das mãos do rei segue a fornalha.",
+      "c": "O \"se não\" fecha com a recusa de adorar."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "id": "daniel-sem-daniel-palacio-02-a-fornalha-04",
+    "passageText": "Se assim for, o nosso Deus, a quem nós servimos, pode livrar-nos da fornalha de fogo ardente; e ele há de nos livrar das tuas mãos, ó rei. Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o nosso Deus, a quem nós servimos, pode livrar-nos da fornalha de fogo ardente"
+      },
+      {
+        "id": "b",
+        "text": "e ele há de nos livrar das tuas mãos, ó rei"
+      },
+      {
+        "id": "c",
+        "text": "Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Daniel 3:17–18",
+    "learningObjective": "Confessar que o Deus a quem servem pode livrar da fornalha, e que, mesmo se não, eles não servirão aos deuses do rei nem adorarão a imagem.",
+    "evidence": [
+      "Daniel 3:17",
+      "Daniel 3:18"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"nem adorar a ___ de ouro que levantaste\"",
+    "prompt": "Complete a frase: \"nem adorar a ___ de ouro que levantaste\"",
+    "cue": "Complete a frase: \"nem adorar a ___ de ouro que levantaste\"",
+    "feedbackCorrect": "Certo: a imagem de ouro que o rei levantou.",
+    "feedbackWrong": {
+      "b": "Fornalha é o fogo, não o objeto da adoração.",
+      "c": "Mãos são as do rei no livramento, não a imagem."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "id": "daniel-sem-daniel-palacio-02-a-fornalha-05",
+    "passageText": "Se assim for, o nosso Deus, a quem nós servimos, pode livrar-nos da fornalha de fogo ardente; e ele há de nos livrar das tuas mãos, ó rei. Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste.",
+    "template": "nem adorar a ___ de ouro que levantaste",
+    "options": [
+      {
+        "id": "a",
+        "text": "imagem"
+      },
+      {
+        "id": "b",
+        "text": "fornalha"
+      },
+      {
+        "id": "c",
+        "text": "mãos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Daniel 3:17–18",
+    "learningObjective": "Confessar que o Deus a quem servem pode livrar da fornalha, e que, mesmo se não, eles não servirão aos deuses do rei nem adorarão a imagem.",
+    "evidence": [
+      "Daniel 3:17",
+      "Daniel 3:18"
+    ],
+    "type": "connect",
+    "question": "O que Daniel 3:17–18 comunica que se liga a este contexto?",
+    "prompt": "O que Daniel 3:17–18 comunica que se liga a este contexto?",
+    "cue": "O que Daniel 3:17–18 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Deus pode livrar — e mesmo se não, sem imagem.",
+    "feedbackWrong": {
+      "b": "O texto recusa adorar a imagem mesmo se não houver livramento.",
+      "c": "Eles não hão de servir aos deuses do rei."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "id": "daniel-sem-daniel-palacio-02-a-fornalha-06",
+    "passageText": "Se assim for, o nosso Deus, a quem nós servimos, pode livrar-nos da fornalha de fogo ardente; e ele há de nos livrar das tuas mãos, ó rei. Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste.",
+    "passageA": {
+      "ref": "Daniel 3:17–18",
+      "text": "Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A fornalha: Deus pode livrar — e mesmo se não, eles não adoram a imagem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Livrar ou não, sem imagem"
+      },
+      {
+        "id": "b",
+        "text": "Adorar para escapar"
+      },
+      {
+        "id": "c",
+        "text": "Servir aos deuses do rei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Daniel 3:17–18",
+    "learningObjective": "Confessar que o Deus a quem servem pode livrar da fornalha, e que, mesmo se não, eles não servirão aos deuses do rei nem adorarão a imagem.",
+    "evidence": [
+      "Daniel 3:17",
+      "Daniel 3:18"
+    ],
+    "type": "true_false",
+    "question": "A recusa de servir aos deuses do rei depende de o livramento da fornalha já ter acontecido.",
+    "prompt": "A recusa de servir aos deuses do rei depende de o livramento da fornalha já ter acontecido.",
+    "cue": "A recusa de servir aos deuses do rei depende de o livramento da fornalha já ter acontecido.",
+    "feedbackCorrect": "Certo: o \"se não\" mantém a recusa mesmo sem livramento.",
+    "feedbackWrong": {
+      "true": "O v. 18 recusa servir e adorar mesmo se Deus não livrar."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "id": "daniel-cam-daniel-palacio-02-a-fornalha-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Se assim for, o nosso Deus, a quem nós servimos, pode livrar-nos da fornalha de fogo ardente; e ele há de nos livrar das tuas mãos, ó rei. Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Daniel 3:17–18",
+    "learningObjective": "Confessar que o Deus a quem servem pode livrar da fornalha, e que, mesmo se não, eles não servirão aos deuses do rei nem adorarão a imagem.",
+    "evidence": [
+      "Daniel 3:17",
+      "Daniel 3:18"
+    ],
+    "type": "tap",
+    "question": "Em Daniel 3:17–18, toque a palavra que falta em \"não havemos de ___ aos teus deuses\"?",
+    "prompt": "Em Daniel 3:17–18, toque a palavra que falta em \"não havemos de ___ aos teus deuses\"?",
+    "cue": "Em Daniel 3:17–18, toque a palavra que falta em \"não havemos de ___ aos teus deuses\"?",
+    "feedbackCorrect": "Exato: não hão de servir aos deuses do rei.",
+    "feedbackWrong": {
+      "b": "Livrar é o que Deus pode fazer, não o verbo da recusa.",
+      "c": "Levantaste descreve a imagem, não esta lacuna."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "id": "daniel-cam-daniel-palacio-02-a-fornalha-02",
+    "passageText": "Se assim for, o nosso Deus, a quem nós servimos, pode livrar-nos da fornalha de fogo ardente; e ele há de nos livrar das tuas mãos, ó rei. Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste.",
+    "template": "não havemos de ___ aos teus deuses",
+    "options": [
+      {
+        "id": "a",
+        "text": "servir"
+      },
+      {
+        "id": "b",
+        "text": "livrar"
+      },
+      {
+        "id": "c",
+        "text": "levantaste"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Daniel 3:17–18",
+    "learningObjective": "Confessar que o Deus a quem servem pode livrar da fornalha, e que, mesmo se não, eles não servirão aos deuses do rei nem adorarão a imagem.",
+    "evidence": [
+      "Daniel 3:17",
+      "Daniel 3:18"
+    ],
+    "type": "choice",
+    "question": "Como Daniel 3:17–18 relaciona o poder de Deus e a recusa da imagem?",
+    "prompt": "Como Daniel 3:17–18 relaciona o poder de Deus e a recusa da imagem?",
+    "cue": "Como Daniel 3:17–18 relaciona o poder de Deus e a recusa da imagem?",
+    "feedbackCorrect": "Certo: poder de livrar e recusa incondicional andam juntos.",
+    "feedbackWrong": {
+      "a": "O \"se não\" reforça a recusa, não a anula.",
+      "c": "Eles servem a Deus, não aos deuses do rei.",
+      "d": "O v. 17 afirma que Deus pode livrar da fornalha."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "id": "daniel-cam-daniel-palacio-02-a-fornalha-03",
+    "passageText": "Se assim for, o nosso Deus, a quem nós servimos, pode livrar-nos da fornalha de fogo ardente; e ele há de nos livrar das tuas mãos, ó rei. Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Se Deus não livrar, a adoração da imagem se torna lícita."
+      },
+      {
+        "id": "b",
+        "text": "Deus pode livrar; mesmo se não, eles não servem aos deuses nem adoram a imagem."
+      },
+      {
+        "id": "c",
+        "text": "O livramento das mãos do rei dispensa servir a Deus."
+      },
+      {
+        "id": "d",
+        "text": "A fornalha prova que o Deus a quem servem é impotente."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Daniel 3:17–18",
+    "learningObjective": "Confessar que o Deus a quem servem pode livrar da fornalha, e que, mesmo se não, eles não servirão aos deuses do rei nem adorarão a imagem.",
+    "evidence": [
+      "Daniel 3:17",
+      "Daniel 3:18"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Daniel 3:17–18?",
+    "prompt": "Como se encadeiam os eventos de Daniel 3:17–18?",
+    "cue": "Como se encadeiam os eventos de Daniel 3:17–18?",
+    "feedbackCorrect": "Certo: pode, há de livrar, e a recusa permanece.",
+    "feedbackWrong": {
+      "b": "O livramento das mãos segue a fornalha.",
+      "c": "A recusa da imagem fecha o encadeamento."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "id": "daniel-cam-daniel-palacio-02-a-fornalha-04",
+    "passageText": "Se assim for, o nosso Deus, a quem nós servimos, pode livrar-nos da fornalha de fogo ardente; e ele há de nos livrar das tuas mãos, ó rei. Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pode livrar-nos da fornalha de fogo ardente"
+      },
+      {
+        "id": "b",
+        "text": "ele há de nos livrar das tuas mãos, ó rei"
+      },
+      {
+        "id": "c",
+        "text": "não havemos de servir aos teus deuses, nem adorar a imagem de ouro"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Daniel 3:17–18",
+    "learningObjective": "Confessar que o Deus a quem servem pode livrar da fornalha, e que, mesmo se não, eles não servirão aos deuses do rei nem adorarão a imagem.",
+    "evidence": [
+      "Daniel 3:17",
+      "Daniel 3:18"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"fica tu sabendo, ó rei, que não havemos de servir aos teus ___\"",
+    "prompt": "Complete a frase: \"fica tu sabendo, ó rei, que não havemos de servir aos teus ___\"",
+    "cue": "Complete a frase: \"fica tu sabendo, ó rei, que não havemos de servir aos teus ___\"",
+    "feedbackCorrect": "Certo: não hão de servir aos deuses do rei.",
+    "feedbackWrong": {
+      "b": "Fornalha é o perigo, não o objeto do serviço.",
+      "c": "Fogo descreve a fornalha, não os deuses."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "id": "daniel-cam-daniel-palacio-02-a-fornalha-05",
+    "passageText": "Se assim for, o nosso Deus, a quem nós servimos, pode livrar-nos da fornalha de fogo ardente; e ele há de nos livrar das tuas mãos, ó rei. Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste.",
+    "template": "fica tu sabendo, ó rei, que não havemos de servir aos teus ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "deuses"
+      },
+      {
+        "id": "b",
+        "text": "fornalha"
+      },
+      {
+        "id": "c",
+        "text": "fogo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Daniel 3:17–18",
+    "learningObjective": "Confessar que o Deus a quem servem pode livrar da fornalha, e que, mesmo se não, eles não servirão aos deuses do rei nem adorarão a imagem.",
+    "evidence": [
+      "Daniel 3:17",
+      "Daniel 3:18"
+    ],
+    "type": "connect",
+    "question": "O que Daniel 3:17–18 comunica que se liga a este contexto?",
+    "prompt": "O que Daniel 3:17–18 comunica que se liga a este contexto?",
+    "cue": "O que Daniel 3:17–18 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: servem a Deus; o livramento não compra a imagem.",
+    "feedbackWrong": {
+      "b": "Mesmo se não livrar, eles não adoram a imagem.",
+      "c": "Eles recusam os deuses do rei."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "id": "daniel-cam-daniel-palacio-02-a-fornalha-06",
+    "passageText": "Se assim for, o nosso Deus, a quem nós servimos, pode livrar-nos da fornalha de fogo ardente; e ele há de nos livrar das tuas mãos, ó rei. Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste.",
+    "passageA": {
+      "ref": "Daniel 3:17–18",
+      "text": "o nosso Deus, a quem nós servimos, pode livrar-nos da fornalha de fogo ardente"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A fornalha: Deus pode livrar — e mesmo se não, eles não adoram a imagem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Serviço sem barganha"
+      },
+      {
+        "id": "b",
+        "text": "Fogo que obriga a imagem"
+      },
+      {
+        "id": "c",
+        "text": "Deuses do rei no centro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Daniel 3:17–18",
+    "learningObjective": "Confessar que o Deus a quem servem pode livrar da fornalha, e que, mesmo se não, eles não servirão aos deuses do rei nem adorarão a imagem.",
+    "evidence": [
+      "Daniel 3:17",
+      "Daniel 3:18"
+    ],
+    "type": "true_false",
+    "question": "A fé da fornalha confessa o poder de Deus e recusa a imagem mesmo sem garantia de livramento.",
+    "prompt": "A fé da fornalha confessa o poder de Deus e recusa a imagem mesmo sem garantia de livramento.",
+    "cue": "A fé da fornalha confessa o poder de Deus e recusa a imagem mesmo sem garantia de livramento.",
+    "feedbackCorrect": "Certo: \"pode\" e \"se não\" formam a mesma confissão.",
+    "feedbackWrong": {
+      "false": "O texto une o poder de livrar à recusa incondicional da imagem."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "id": "daniel-pro-daniel-palacio-02-a-fornalha-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Se assim for, o nosso Deus, a quem nós servimos, pode livrar-nos da fornalha de fogo ardente; e ele há de nos livrar das tuas mãos, ó rei. Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Daniel 3:17–18",
+    "learningObjective": "Confessar que o Deus a quem servem pode livrar da fornalha, e que, mesmo se não, eles não servirão aos deuses do rei nem adorarão a imagem.",
+    "evidence": [
+      "Daniel 3:17",
+      "Daniel 3:18"
+    ],
+    "type": "tap",
+    "question": "Em Daniel 3:17–18, toque a palavra que falta em \"nem adorar a imagem de ___ que levantaste\"?",
+    "prompt": "Em Daniel 3:17–18, toque a palavra que falta em \"nem adorar a imagem de ___ que levantaste\"?",
+    "cue": "Em Daniel 3:17–18, toque a palavra que falta em \"nem adorar a imagem de ___ que levantaste\"?",
+    "feedbackCorrect": "Exato: a imagem de ouro que o rei levantou.",
+    "feedbackWrong": {
+      "b": "Fogo descreve a fornalha, não a imagem.",
+      "c": "Mãos são as do rei no livramento."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "id": "daniel-pro-daniel-palacio-02-a-fornalha-02",
+    "passageText": "Se assim for, o nosso Deus, a quem nós servimos, pode livrar-nos da fornalha de fogo ardente; e ele há de nos livrar das tuas mãos, ó rei. Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste.",
+    "template": "nem adorar a imagem de ___ que levantaste",
+    "options": [
+      {
+        "id": "a",
+        "text": "ouro"
+      },
+      {
+        "id": "b",
+        "text": "fogo"
+      },
+      {
+        "id": "c",
+        "text": "mãos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Daniel 3:17–18",
+    "learningObjective": "Confessar que o Deus a quem servem pode livrar da fornalha, e que, mesmo se não, eles não servirão aos deuses do rei nem adorarão a imagem.",
+    "evidence": [
+      "Daniel 3:17",
+      "Daniel 3:18"
+    ],
+    "type": "choice",
+    "question": "Qual leitura de Daniel 3:17–18 descreve o sentido da fornalha?",
+    "prompt": "Qual leitura de Daniel 3:17–18 descreve o sentido da fornalha?",
+    "cue": "Qual leitura de Daniel 3:17–18 descreve o sentido da fornalha?",
+    "feedbackCorrect": "Certo: poder de livrar sem barganha com a imagem.",
+    "feedbackWrong": {
+      "a": "O \"se não\" recusa a imagem mesmo sem livramento.",
+      "b": "Eles não hão de servir aos deuses nem adorar a imagem.",
+      "d": "Eles continuam servindo ao Deus que pode livrar."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "id": "daniel-pro-daniel-palacio-02-a-fornalha-03",
+    "passageText": "Se assim for, o nosso Deus, a quem nós servimos, pode livrar-nos da fornalha de fogo ardente; e ele há de nos livrar das tuas mãos, ó rei. Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus só é Deus se livrar; sem milagre, a imagem merece adoração."
+      },
+      {
+        "id": "b",
+        "text": "Servir a Deus e adorar a imagem de ouro podem coexistir no palácio."
+      },
+      {
+        "id": "c",
+        "text": "Deus pode livrar — e a lealdade permanece mesmo se o livramento não vier."
+      },
+      {
+        "id": "d",
+        "text": "A fornalha anula o serviço a Deus e entrega os três ao rei."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Daniel 3:17–18",
+    "learningObjective": "Confessar que o Deus a quem servem pode livrar da fornalha, e que, mesmo se não, eles não servirão aos deuses do rei nem adorarão a imagem.",
+    "evidence": [
+      "Daniel 3:17",
+      "Daniel 3:18"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Daniel 3:17–18?",
+    "prompt": "Qual sequência revela o sentido de Daniel 3:17–18?",
+    "cue": "Qual sequência revela o sentido de Daniel 3:17–18?",
+    "feedbackCorrect": "Certo: serviço a Deus, poder de livrar, recusa da imagem.",
+    "feedbackWrong": {
+      "b": "O poder de livrar segue o Deus a quem servem.",
+      "c": "O \"se não\" revela lealdade sem barganha."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "id": "daniel-pro-daniel-palacio-02-a-fornalha-04",
+    "passageText": "Se assim for, o nosso Deus, a quem nós servimos, pode livrar-nos da fornalha de fogo ardente; e ele há de nos livrar das tuas mãos, ó rei. Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o nosso Deus, a quem nós servimos"
+      },
+      {
+        "id": "b",
+        "text": "pode livrar-nos da fornalha de fogo ardente"
+      },
+      {
+        "id": "c",
+        "text": "Mas, se não, não havemos de servir aos teus deuses, nem adorar a imagem de ouro"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Daniel 3:17–18",
+    "learningObjective": "Confessar que o Deus a quem servem pode livrar da fornalha, e que, mesmo se não, eles não servirão aos deuses do rei nem adorarão a imagem.",
+    "evidence": [
+      "Daniel 3:17",
+      "Daniel 3:18"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"ele há de nos livrar das tuas ___, ó rei\"",
+    "prompt": "Complete a frase: \"ele há de nos livrar das tuas ___, ó rei\"",
+    "cue": "Complete a frase: \"ele há de nos livrar das tuas ___, ó rei\"",
+    "feedbackCorrect": "Certo: livrar das mãos do rei.",
+    "feedbackWrong": {
+      "b": "Deuses são os que eles recusam servir.",
+      "c": "Imagem é o que não hão de adorar."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "id": "daniel-pro-daniel-palacio-02-a-fornalha-05",
+    "passageText": "Se assim for, o nosso Deus, a quem nós servimos, pode livrar-nos da fornalha de fogo ardente; e ele há de nos livrar das tuas mãos, ó rei. Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste.",
+    "template": "ele há de nos livrar das tuas ___, ó rei",
+    "options": [
+      {
+        "id": "a",
+        "text": "mãos"
+      },
+      {
+        "id": "b",
+        "text": "deuses"
+      },
+      {
+        "id": "c",
+        "text": "imagem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Daniel 3:17–18",
+    "learningObjective": "Confessar que o Deus a quem servem pode livrar da fornalha, e que, mesmo se não, eles não servirão aos deuses do rei nem adorarão a imagem.",
+    "evidence": [
+      "Daniel 3:17",
+      "Daniel 3:18"
+    ],
+    "type": "connect",
+    "question": "O que Daniel 3:17–18 comunica que se liga a este contexto?",
+    "prompt": "O que Daniel 3:17–18 comunica que se liga a este contexto?",
+    "cue": "O que Daniel 3:17–18 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o poder de livrar não compra a adoração.",
+    "feedbackWrong": {
+      "b": "Eles recusam a imagem de ouro.",
+      "c": "O \"se não\" mantém a recusa sem condição."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-02-a-fornalha",
+    "id": "daniel-pro-daniel-palacio-02-a-fornalha-06",
+    "passageText": "Se assim for, o nosso Deus, a quem nós servimos, pode livrar-nos da fornalha de fogo ardente; e ele há de nos livrar das tuas mãos, ó rei. Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste.",
+    "passageA": {
+      "ref": "Daniel 3:17–18",
+      "text": "pode livrar-nos da fornalha de fogo ardente; e ele há de nos livrar das tuas mãos, ó rei. Mas, se não"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A fornalha: Deus pode livrar — e mesmo se não, eles não adoram a imagem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus pode — mesmo se não"
+      },
+      {
+        "id": "b",
+        "text": "Imagem acima de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Livramento como condição"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Daniel 6:22",
+    "learningObjective": "Reconhecer que Deus enviou o Anjo e fechou as bocas dos leões porque foi achada inocência em Daniel diante dele, e que ele não cometeu delito diante do rei.",
+    "evidence": [
+      "Daniel 6:22"
+    ],
+    "type": "true_false",
+    "question": "O meu Deus enviou o seu Anjo e fechou as bocas aos leões.",
+    "prompt": "O meu Deus enviou o seu Anjo e fechou as bocas aos leões.",
+    "cue": "O meu Deus enviou o seu Anjo e fechou as bocas aos leões.",
+    "feedbackCorrect": "Certo: Daniel 6:22 atribui o livramento ao Anjo de Deus.",
+    "feedbackWrong": {
+      "false": "Releia: Deus enviou o Anjo e fechou as bocas aos leões."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "id": "daniel-sem-daniel-palacio-03-a-cova-dos-leoes-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "O meu Deus enviou o seu Anjo e fechou as bocas aos leões; eles não me fizeram mal algum, porque foi achada em mim inocência diante dele; também diante de ti, ó rei, não tenho cometido delito algum."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Daniel 6:22",
+    "learningObjective": "Reconhecer que Deus enviou o Anjo e fechou as bocas dos leões porque foi achada inocência em Daniel diante dele, e que ele não cometeu delito diante do rei.",
+    "evidence": [
+      "Daniel 6:22"
+    ],
+    "type": "tap",
+    "question": "Em Daniel 6:22, toque a palavra que falta em \"enviou o seu ___ e fechou as bocas aos leões\"?",
+    "prompt": "Em Daniel 6:22, toque a palavra que falta em \"enviou o seu ___ e fechou as bocas aos leões\"?",
+    "cue": "Em Daniel 6:22, toque a palavra que falta em \"enviou o seu ___ e fechou as bocas aos leões\"?",
+    "feedbackCorrect": "Exato: Deus enviou o seu Anjo.",
+    "feedbackWrong": {
+      "b": "Rei é a quem Daniel se dirige, não quem fecha as bocas.",
+      "c": "Delito aparece no fim, na recusa de culpa."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "id": "daniel-sem-daniel-palacio-03-a-cova-dos-leoes-02",
+    "passageText": "O meu Deus enviou o seu Anjo e fechou as bocas aos leões; eles não me fizeram mal algum, porque foi achada em mim inocência diante dele; também diante de ti, ó rei, não tenho cometido delito algum.",
+    "template": "enviou o seu ___ e fechou as bocas aos leões",
+    "options": [
+      {
+        "id": "a",
+        "text": "Anjo"
+      },
+      {
+        "id": "b",
+        "text": "rei"
+      },
+      {
+        "id": "c",
+        "text": "delito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Daniel 6:22",
+    "learningObjective": "Reconhecer que Deus enviou o Anjo e fechou as bocas dos leões porque foi achada inocência em Daniel diante dele, e que ele não cometeu delito diante do rei.",
+    "evidence": [
+      "Daniel 6:22"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação o texto faz diretamente em Daniel 6:22?",
+    "prompt": "Qual afirmação o texto faz diretamente em Daniel 6:22?",
+    "cue": "Qual afirmação o texto faz diretamente em Daniel 6:22?",
+    "feedbackCorrect": "Certo: sem mal, por inocência diante de Deus.",
+    "feedbackWrong": {
+      "b": "O texto diz que os leões não lhe fizeram mal algum.",
+      "c": "Ele afirma não ter cometido delito algum diante do rei.",
+      "d": "Deus enviou o seu Anjo e fechou as bocas."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "id": "daniel-sem-daniel-palacio-03-a-cova-dos-leoes-03",
+    "passageText": "O meu Deus enviou o seu Anjo e fechou as bocas aos leões; eles não me fizeram mal algum, porque foi achada em mim inocência diante dele; também diante de ti, ó rei, não tenho cometido delito algum.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Eles não me fizeram mal algum, porque foi achada em mim inocência diante dele."
+      },
+      {
+        "id": "b",
+        "text": "Os leões o feriram, mas o rei o libertou depois."
+      },
+      {
+        "id": "c",
+        "text": "Daniel confessou delito diante do rei."
+      },
+      {
+        "id": "d",
+        "text": "Nenhum Anjo interveio na cova."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Daniel 6:22",
+    "learningObjective": "Reconhecer que Deus enviou o Anjo e fechou as bocas dos leões porque foi achada inocência em Daniel diante dele, e que ele não cometeu delito diante do rei.",
+    "evidence": [
+      "Daniel 6:22"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Daniel 6:22?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Daniel 6:22?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Daniel 6:22?",
+    "feedbackCorrect": "Certo: Anjo, bocas fechadas, inocência e ausência de delito.",
+    "feedbackWrong": {
+      "b": "A inocência explica por que não houve mal.",
+      "c": "A declaração ao rei fecha o versículo."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "id": "daniel-sem-daniel-palacio-03-a-cova-dos-leoes-04",
+    "passageText": "O meu Deus enviou o seu Anjo e fechou as bocas aos leões; eles não me fizeram mal algum, porque foi achada em mim inocência diante dele; também diante de ti, ó rei, não tenho cometido delito algum.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O meu Deus enviou o seu Anjo e fechou as bocas aos leões"
+      },
+      {
+        "id": "b",
+        "text": "eles não me fizeram mal algum, porque foi achada em mim inocência diante dele"
+      },
+      {
+        "id": "c",
+        "text": "também diante de ti, ó rei, não tenho cometido delito algum"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Daniel 6:22",
+    "learningObjective": "Reconhecer que Deus enviou o Anjo e fechou as bocas dos leões porque foi achada inocência em Daniel diante dele, e que ele não cometeu delito diante do rei.",
+    "evidence": [
+      "Daniel 6:22"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"fechou as bocas aos ___\"",
+    "prompt": "Complete a frase: \"fechou as bocas aos ___\"",
+    "cue": "Complete a frase: \"fechou as bocas aos ___\"",
+    "feedbackCorrect": "Certo: fechou as bocas aos leões.",
+    "feedbackWrong": {
+      "b": "Anjo é quem Deus enviou, não quem tem as bocas.",
+      "c": "Rei ouve a declaração, não preenche esta lacuna."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "id": "daniel-sem-daniel-palacio-03-a-cova-dos-leoes-05",
+    "passageText": "O meu Deus enviou o seu Anjo e fechou as bocas aos leões; eles não me fizeram mal algum, porque foi achada em mim inocência diante dele; também diante de ti, ó rei, não tenho cometido delito algum.",
+    "template": "fechou as bocas aos ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "leões"
+      },
+      {
+        "id": "b",
+        "text": "Anjo"
+      },
+      {
+        "id": "c",
+        "text": "rei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Daniel 6:22",
+    "learningObjective": "Reconhecer que Deus enviou o Anjo e fechou as bocas dos leões porque foi achada inocência em Daniel diante dele, e que ele não cometeu delito diante do rei.",
+    "evidence": [
+      "Daniel 6:22"
+    ],
+    "type": "connect",
+    "question": "O que Daniel 6:22 comunica que se liga a este contexto?",
+    "prompt": "O que Daniel 6:22 comunica que se liga a este contexto?",
+    "cue": "O que Daniel 6:22 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o Anjo fecha as bocas — não é sorte.",
+    "feedbackWrong": {
+      "b": "O texto atribui o livramento a Deus e ao Anjo.",
+      "c": "As bocas foram fechadas; não houve mal."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "id": "daniel-sem-daniel-palacio-03-a-cova-dos-leoes-06",
+    "passageText": "O meu Deus enviou o seu Anjo e fechou as bocas aos leões; eles não me fizeram mal algum, porque foi achada em mim inocência diante dele; também diante de ti, ó rei, não tenho cometido delito algum.",
+    "passageA": {
+      "ref": "Daniel 6:22",
+      "text": "O meu Deus enviou o seu Anjo e fechou as bocas aos leões"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A cova: o Anjo fecha a boca dos leões — inocência diante de Deus, não sorte."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Anjo fecha as bocas"
+      },
+      {
+        "id": "b",
+        "text": "Sorte na cova"
+      },
+      {
+        "id": "c",
+        "text": "Leões sem intervenção"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Daniel 6:22",
+    "learningObjective": "Reconhecer que Deus enviou o Anjo e fechou as bocas dos leões porque foi achada inocência em Daniel diante dele, e que ele não cometeu delito diante do rei.",
+    "evidence": [
+      "Daniel 6:22"
+    ],
+    "type": "true_false",
+    "question": "Os leões não fizeram mal a Daniel porque foi achada nele inocência diante de Deus.",
+    "prompt": "Os leões não fizeram mal a Daniel porque foi achada nele inocência diante de Deus.",
+    "cue": "Os leões não fizeram mal a Daniel porque foi achada nele inocência diante de Deus.",
+    "feedbackCorrect": "Certo: o texto liga a ausência de mal à inocência.",
+    "feedbackWrong": {
+      "false": "Releia: não me fizeram mal algum, porque foi achada inocência."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "id": "daniel-cam-daniel-palacio-03-a-cova-dos-leoes-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "O meu Deus enviou o seu Anjo e fechou as bocas aos leões; eles não me fizeram mal algum, porque foi achada em mim inocência diante dele; também diante de ti, ó rei, não tenho cometido delito algum."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Daniel 6:22",
+    "learningObjective": "Reconhecer que Deus enviou o Anjo e fechou as bocas dos leões porque foi achada inocência em Daniel diante dele, e que ele não cometeu delito diante do rei.",
+    "evidence": [
+      "Daniel 6:22"
+    ],
+    "type": "tap",
+    "question": "Em Daniel 6:22, toque a palavra que falta em \"foi achada em mim ___ diante dele\"?",
+    "prompt": "Em Daniel 6:22, toque a palavra que falta em \"foi achada em mim ___ diante dele\"?",
+    "cue": "Em Daniel 6:22, toque a palavra que falta em \"foi achada em mim ___ diante dele\"?",
+    "feedbackCorrect": "Exato: inocência diante dele.",
+    "feedbackWrong": {
+      "b": "Bocas são as dos leões, fechadas pelo Anjo.",
+      "c": "Leões não preenchem a qualidade achada em Daniel."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "id": "daniel-cam-daniel-palacio-03-a-cova-dos-leoes-02",
+    "passageText": "O meu Deus enviou o seu Anjo e fechou as bocas aos leões; eles não me fizeram mal algum, porque foi achada em mim inocência diante dele; também diante de ti, ó rei, não tenho cometido delito algum.",
+    "template": "foi achada em mim ___ diante dele",
+    "options": [
+      {
+        "id": "a",
+        "text": "inocência"
+      },
+      {
+        "id": "b",
+        "text": "bocas"
+      },
+      {
+        "id": "c",
+        "text": "leões"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Daniel 6:22",
+    "learningObjective": "Reconhecer que Deus enviou o Anjo e fechou as bocas dos leões porque foi achada inocência em Daniel diante dele, e que ele não cometeu delito diante do rei.",
+    "evidence": [
+      "Daniel 6:22"
+    ],
+    "type": "choice",
+    "question": "Como Daniel 6:22 relaciona o livramento da cova e a inocência?",
+    "prompt": "Como Daniel 6:22 relaciona o livramento da cova e a inocência?",
+    "cue": "Como Daniel 6:22 relaciona o livramento da cova e a inocência?",
+    "feedbackCorrect": "Certo: inocência diante de Deus e ausência de delito diante do rei.",
+    "feedbackWrong": {
+      "a": "O texto explica o livramento pela inocência achada nele.",
+      "c": "Ele afirma não ter cometido delito algum diante do rei.",
+      "d": "Quem enviou o Anjo foi o Deus de Daniel."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "id": "daniel-cam-daniel-palacio-03-a-cova-dos-leoes-03",
+    "passageText": "O meu Deus enviou o seu Anjo e fechou as bocas aos leões; eles não me fizeram mal algum, porque foi achada em mim inocência diante dele; também diante de ti, ó rei, não tenho cometido delito algum.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Anjo fecha as bocas por acaso, sem relação com inocência."
+      },
+      {
+        "id": "b",
+        "text": "Não houve mal por inocência diante de Deus; tampouco delito diante do rei."
+      },
+      {
+        "id": "c",
+        "text": "Daniel admite delito diante do rei, mas Deus o poupa mesmo assim."
+      },
+      {
+        "id": "d",
+        "text": "Os leões o pouparam por ordem do próprio rei, sem Anjo."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Daniel 6:22",
+    "learningObjective": "Reconhecer que Deus enviou o Anjo e fechou as bocas dos leões porque foi achada inocência em Daniel diante dele, e que ele não cometeu delito diante do rei.",
+    "evidence": [
+      "Daniel 6:22"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Daniel 6:22?",
+    "prompt": "Como se encadeiam os eventos de Daniel 6:22?",
+    "cue": "Como se encadeiam os eventos de Daniel 6:22?",
+    "feedbackCorrect": "Certo: envio, bocas fechadas, inocência como razão.",
+    "feedbackWrong": {
+      "b": "As bocas fechadas seguem o envio do Anjo.",
+      "c": "A inocência explica por que não houve mal."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "id": "daniel-cam-daniel-palacio-03-a-cova-dos-leoes-04",
+    "passageText": "O meu Deus enviou o seu Anjo e fechou as bocas aos leões; eles não me fizeram mal algum, porque foi achada em mim inocência diante dele; também diante de ti, ó rei, não tenho cometido delito algum.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus enviou o seu Anjo"
+      },
+      {
+        "id": "b",
+        "text": "fechou as bocas aos leões; eles não me fizeram mal algum"
+      },
+      {
+        "id": "c",
+        "text": "foi achada em mim inocência diante dele"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Daniel 6:22",
+    "learningObjective": "Reconhecer que Deus enviou o Anjo e fechou as bocas dos leões porque foi achada inocência em Daniel diante dele, e que ele não cometeu delito diante do rei.",
+    "evidence": [
+      "Daniel 6:22"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"não tenho cometido ___ algum\"",
+    "prompt": "Complete a frase: \"não tenho cometido ___ algum\"",
+    "cue": "Complete a frase: \"não tenho cometido ___ algum\"",
+    "feedbackCorrect": "Certo: não cometido delito algum diante do rei.",
+    "feedbackWrong": {
+      "b": "Anjo é o enviado, não o que Daniel comete.",
+      "c": "Mal descreve o que os leões não fizeram."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "id": "daniel-cam-daniel-palacio-03-a-cova-dos-leoes-05",
+    "passageText": "O meu Deus enviou o seu Anjo e fechou as bocas aos leões; eles não me fizeram mal algum, porque foi achada em mim inocência diante dele; também diante de ti, ó rei, não tenho cometido delito algum.",
+    "template": "não tenho cometido ___ algum",
+    "options": [
+      {
+        "id": "a",
+        "text": "delito"
+      },
+      {
+        "id": "b",
+        "text": "Anjo"
+      },
+      {
+        "id": "c",
+        "text": "mal"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Daniel 6:22",
+    "learningObjective": "Reconhecer que Deus enviou o Anjo e fechou as bocas dos leões porque foi achada inocência em Daniel diante dele, e que ele não cometeu delito diante do rei.",
+    "evidence": [
+      "Daniel 6:22"
+    ],
+    "type": "connect",
+    "question": "O que Daniel 6:22 comunica que se liga a este contexto?",
+    "prompt": "O que Daniel 6:22 comunica que se liga a este contexto?",
+    "cue": "O que Daniel 6:22 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o livramento se liga à inocência achada nele.",
+    "feedbackWrong": {
+      "b": "Foi achada inocência, não culpa, diante de Deus.",
+      "c": "Ele nega delito diante do rei."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "id": "daniel-cam-daniel-palacio-03-a-cova-dos-leoes-06",
+    "passageText": "O meu Deus enviou o seu Anjo e fechou as bocas aos leões; eles não me fizeram mal algum, porque foi achada em mim inocência diante dele; também diante de ti, ó rei, não tenho cometido delito algum.",
+    "passageA": {
+      "ref": "Daniel 6:22",
+      "text": "eles não me fizeram mal algum, porque foi achada em mim inocência diante dele"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A cova: o Anjo fecha a boca dos leões — inocência diante de Deus, não sorte."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Inocência, não sorte"
+      },
+      {
+        "id": "b",
+        "text": "Culpa diante de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Delito confessado ao rei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Daniel 6:22",
+    "learningObjective": "Reconhecer que Deus enviou o Anjo e fechou as bocas dos leões porque foi achada inocência em Daniel diante dele, e que ele não cometeu delito diante do rei.",
+    "evidence": [
+      "Daniel 6:22"
+    ],
+    "type": "true_false",
+    "question": "A cova dos leões revela livramento por inocência diante de Deus, não um acaso da natureza dos animais.",
+    "prompt": "A cova dos leões revela livramento por inocência diante de Deus, não um acaso da natureza dos animais.",
+    "cue": "A cova dos leões revela livramento por inocência diante de Deus, não um acaso da natureza dos animais.",
+    "feedbackCorrect": "Certo: Anjo, bocas fechadas e inocência interpretam a cova.",
+    "feedbackWrong": {
+      "false": "O texto atribui o fato a Deus, ao Anjo e à inocência achada."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "id": "daniel-pro-daniel-palacio-03-a-cova-dos-leoes-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "O meu Deus enviou o seu Anjo e fechou as bocas aos leões; eles não me fizeram mal algum, porque foi achada em mim inocência diante dele; também diante de ti, ó rei, não tenho cometido delito algum."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Daniel 6:22",
+    "learningObjective": "Reconhecer que Deus enviou o Anjo e fechou as bocas dos leões porque foi achada inocência em Daniel diante dele, e que ele não cometeu delito diante do rei.",
+    "evidence": [
+      "Daniel 6:22"
+    ],
+    "type": "tap",
+    "question": "Em Daniel 6:22, toque a palavra que falta em \"eles não me fizeram ___ algum\"?",
+    "prompt": "Em Daniel 6:22, toque a palavra que falta em \"eles não me fizeram ___ algum\"?",
+    "cue": "Em Daniel 6:22, toque a palavra que falta em \"eles não me fizeram ___ algum\"?",
+    "feedbackCorrect": "Exato: não me fizeram mal algum.",
+    "feedbackWrong": {
+      "b": "Anjo é o enviado que fecha as bocas.",
+      "c": "Inocência é o que foi achado em Daniel."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "id": "daniel-pro-daniel-palacio-03-a-cova-dos-leoes-02",
+    "passageText": "O meu Deus enviou o seu Anjo e fechou as bocas aos leões; eles não me fizeram mal algum, porque foi achada em mim inocência diante dele; também diante de ti, ó rei, não tenho cometido delito algum.",
+    "template": "eles não me fizeram ___ algum",
+    "options": [
+      {
+        "id": "a",
+        "text": "mal"
+      },
+      {
+        "id": "b",
+        "text": "Anjo"
+      },
+      {
+        "id": "c",
+        "text": "inocência"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Daniel 6:22",
+    "learningObjective": "Reconhecer que Deus enviou o Anjo e fechou as bocas dos leões porque foi achada inocência em Daniel diante dele, e que ele não cometeu delito diante do rei.",
+    "evidence": [
+      "Daniel 6:22"
+    ],
+    "type": "choice",
+    "question": "Qual leitura de Daniel 6:22 descreve o sentido da cova?",
+    "prompt": "Qual leitura de Daniel 6:22 descreve o sentido da cova?",
+    "cue": "Qual leitura de Daniel 6:22 descreve o sentido da cova?",
+    "feedbackCorrect": "Certo: inocência diante de Deus, sem delito diante do rei.",
+    "feedbackWrong": {
+      "a": "O texto liga o fato à inocência achada nele.",
+      "c": "Foi achada inocência, não culpa, diante dele.",
+      "d": "O meu Deus enviou o Anjo; o rei ouve a declaração."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "id": "daniel-pro-daniel-palacio-03-a-cova-dos-leoes-03",
+    "passageText": "O meu Deus enviou o seu Anjo e fechou as bocas aos leões; eles não me fizeram mal algum, porque foi achada em mim inocência diante dele; também diante de ti, ó rei, não tenho cometido delito algum.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus fecha as bocas por sorte, sem juízo sobre a vida de Daniel."
+      },
+      {
+        "id": "b",
+        "text": "A inocência diante de Deus e a ausência de delito diante do rei interpretam o livramento."
+      },
+      {
+        "id": "c",
+        "text": "O Anjo prova que Daniel era culpado e precisava de perdão animal."
+      },
+      {
+        "id": "d",
+        "text": "O rei é o salvador da cova; Deus apenas observa."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Daniel 6:22",
+    "learningObjective": "Reconhecer que Deus enviou o Anjo e fechou as bocas dos leões porque foi achada inocência em Daniel diante dele, e que ele não cometeu delito diante do rei.",
+    "evidence": [
+      "Daniel 6:22"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Daniel 6:22?",
+    "prompt": "Qual sequência revela o sentido de Daniel 6:22?",
+    "cue": "Qual sequência revela o sentido de Daniel 6:22?",
+    "feedbackCorrect": "Certo: ação de Deus, inocência diante dele, retidão diante do rei.",
+    "feedbackWrong": {
+      "b": "A inocência interpreta por que não houve mal.",
+      "c": "A declaração ao rei mostra que não houve delito."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "id": "daniel-pro-daniel-palacio-03-a-cova-dos-leoes-04",
+    "passageText": "O meu Deus enviou o seu Anjo e fechou as bocas aos leões; eles não me fizeram mal algum, porque foi achada em mim inocência diante dele; também diante de ti, ó rei, não tenho cometido delito algum.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O meu Deus enviou o seu Anjo e fechou as bocas aos leões"
+      },
+      {
+        "id": "b",
+        "text": "foi achada em mim inocência diante dele"
+      },
+      {
+        "id": "c",
+        "text": "também diante de ti, ó rei, não tenho cometido delito algum"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Daniel 6:22",
+    "learningObjective": "Reconhecer que Deus enviou o Anjo e fechou as bocas dos leões porque foi achada inocência em Daniel diante dele, e que ele não cometeu delito diante do rei.",
+    "evidence": [
+      "Daniel 6:22"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"também diante de ti, ó ___, não tenho cometido delito algum\"",
+    "prompt": "Complete a frase: \"também diante de ti, ó ___, não tenho cometido delito algum\"",
+    "cue": "Complete a frase: \"também diante de ti, ó ___, não tenho cometido delito algum\"",
+    "feedbackCorrect": "Certo: diante de ti, ó rei.",
+    "feedbackWrong": {
+      "b": "Anjo é o enviado de Deus, não o vocativo.",
+      "c": "Leões têm as bocas fechadas, não ouvem a declaração."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "id": "daniel-pro-daniel-palacio-03-a-cova-dos-leoes-05",
+    "passageText": "O meu Deus enviou o seu Anjo e fechou as bocas aos leões; eles não me fizeram mal algum, porque foi achada em mim inocência diante dele; também diante de ti, ó rei, não tenho cometido delito algum.",
+    "template": "também diante de ti, ó ___, não tenho cometido delito algum",
+    "options": [
+      {
+        "id": "a",
+        "text": "rei"
+      },
+      {
+        "id": "b",
+        "text": "Anjo"
+      },
+      {
+        "id": "c",
+        "text": "leões"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Daniel 6:22",
+    "learningObjective": "Reconhecer que Deus enviou o Anjo e fechou as bocas dos leões porque foi achada inocência em Daniel diante dele, e que ele não cometeu delito diante do rei.",
+    "evidence": [
+      "Daniel 6:22"
+    ],
+    "type": "connect",
+    "question": "O que Daniel 6:22 comunica que se liga a este contexto?",
+    "prompt": "O que Daniel 6:22 comunica que se liga a este contexto?",
+    "cue": "O que Daniel 6:22 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a cova revela inocência, não acaso.",
+    "feedbackWrong": {
+      "b": "Deus enviou o Anjo e fechou as bocas.",
+      "c": "Daniel nega delito diante do rei."
+    },
+    "trail": "daniel",
+    "section": "daniel-palacio-03-a-cova-dos-leoes",
+    "id": "daniel-pro-daniel-palacio-03-a-cova-dos-leoes-06",
+    "passageText": "O meu Deus enviou o seu Anjo e fechou as bocas aos leões; eles não me fizeram mal algum, porque foi achada em mim inocência diante dele; também diante de ti, ó rei, não tenho cometido delito algum.",
+    "passageA": {
+      "ref": "Daniel 6:22",
+      "text": "foi achada em mim inocência diante dele; também diante de ti, ó rei, não tenho cometido delito algum"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A cova: o Anjo fecha a boca dos leões — inocência diante de Deus, não sorte."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Inocência diante de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Sorte dos leões"
+      },
+      {
+        "id": "c",
+        "text": "Delito diante do rei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Daniel 2:44",
+    "learningObjective": "Confessar que o Deus do céu suscita um reino que não será jamais destruído, não passa a outro povo, despedaça os reinos e subsiste para sempre.",
+    "evidence": [
+      "Daniel 2:44"
+    ],
+    "type": "true_false",
+    "question": "Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído.",
+    "prompt": "Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído.",
+    "cue": "Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído.",
+    "feedbackCorrect": "Certo: Daniel 2:44 afirma esse reino sem destruição.",
+    "feedbackWrong": {
+      "false": "Releia: um reino que não será jamais destruído."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "id": "daniel-sem-daniel-reinos-01-o-sonho-da-estatua-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre,"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Daniel 2:44",
+    "learningObjective": "Confessar que o Deus do céu suscita um reino que não será jamais destruído, não passa a outro povo, despedaça os reinos e subsiste para sempre.",
+    "evidence": [
+      "Daniel 2:44"
+    ],
+    "type": "tap",
+    "question": "Em Daniel 2:44, toque a palavra que falta em \"suscitará o Deus do céu um ___ que não será jamais destruído\"?",
+    "prompt": "Em Daniel 2:44, toque a palavra que falta em \"suscitará o Deus do céu um ___ que não será jamais destruído\"?",
+    "cue": "Em Daniel 2:44, toque a palavra que falta em \"suscitará o Deus do céu um ___ que não será jamais destruído\"?",
+    "feedbackCorrect": "Exato: um reino que não será jamais destruído.",
+    "feedbackWrong": {
+      "b": "Povo aparece na soberania que não passa a outro.",
+      "c": "Pedaços é o que o reino faz aos impérios."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "id": "daniel-sem-daniel-reinos-01-o-sonho-da-estatua-02",
+    "passageText": "Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre,",
+    "template": "suscitará o Deus do céu um ___ que não será jamais destruído",
+    "options": [
+      {
+        "id": "a",
+        "text": "reino"
+      },
+      {
+        "id": "b",
+        "text": "povo"
+      },
+      {
+        "id": "c",
+        "text": "pedaços"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Daniel 2:44",
+    "learningObjective": "Confessar que o Deus do céu suscita um reino que não será jamais destruído, não passa a outro povo, despedaça os reinos e subsiste para sempre.",
+    "evidence": [
+      "Daniel 2:44"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação o texto faz diretamente em Daniel 2:44?",
+    "prompt": "Qual afirmação o texto faz diretamente em Daniel 2:44?",
+    "cue": "Qual afirmação o texto faz diretamente em Daniel 2:44?",
+    "feedbackCorrect": "Certo: a soberania não passa a outro povo.",
+    "feedbackWrong": {
+      "b": "O texto diz que não será jamais destruído.",
+      "c": "A soberania não passará a outro povo.",
+      "d": "Quem suscita o reino é o Deus do céu."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "id": "daniel-sem-daniel-reinos-01-o-sonho-da-estatua-03",
+    "passageText": "Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre,",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nem passará a soberania deste a outro povo."
+      },
+      {
+        "id": "b",
+        "text": "Esse reino será destruído como os demais."
+      },
+      {
+        "id": "c",
+        "text": "A soberania passará em breve a outro povo."
+      },
+      {
+        "id": "d",
+        "text": "Os reis suscitarão o reino, não o Deus do céu."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Daniel 2:44",
+    "learningObjective": "Confessar que o Deus do céu suscita um reino que não será jamais destruído, não passa a outro povo, despedaça os reinos e subsiste para sempre.",
+    "evidence": [
+      "Daniel 2:44"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Daniel 2:44?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Daniel 2:44?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Daniel 2:44?",
+    "feedbackCorrect": "Certo: reino suscitado, soberania permanente, impérios despedaçados.",
+    "feedbackWrong": {
+      "b": "A soberania que não passa vem depois do reino suscitado.",
+      "c": "Despedaçar e subsistirá fecha o versículo."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "id": "daniel-sem-daniel-reinos-01-o-sonho-da-estatua-04",
+    "passageText": "Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre,",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído"
+      },
+      {
+        "id": "b",
+        "text": "nem passará a soberania deste a outro povo"
+      },
+      {
+        "id": "c",
+        "text": "mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Daniel 2:44",
+    "learningObjective": "Confessar que o Deus do céu suscita um reino que não será jamais destruído, não passa a outro povo, despedaça os reinos e subsiste para sempre.",
+    "evidence": [
+      "Daniel 2:44"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"nem passará a ___ deste a outro povo\"",
+    "prompt": "Complete a frase: \"nem passará a ___ deste a outro povo\"",
+    "cue": "Complete a frase: \"nem passará a ___ deste a outro povo\"",
+    "feedbackCorrect": "Certo: a soberania não passa a outro povo.",
+    "feedbackWrong": {
+      "b": "Céu qualifica a Deus, não o que passa.",
+      "c": "Reis marca os dias, não esta lacuna."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "id": "daniel-sem-daniel-reinos-01-o-sonho-da-estatua-05",
+    "passageText": "Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre,",
+    "template": "nem passará a ___ deste a outro povo",
+    "options": [
+      {
+        "id": "a",
+        "text": "soberania"
+      },
+      {
+        "id": "b",
+        "text": "céu"
+      },
+      {
+        "id": "c",
+        "text": "reis"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Daniel 2:44",
+    "learningObjective": "Confessar que o Deus do céu suscita um reino que não será jamais destruído, não passa a outro povo, despedaça os reinos e subsiste para sempre.",
+    "evidence": [
+      "Daniel 2:44"
+    ],
+    "type": "connect",
+    "question": "O que Daniel 2:44 comunica que se liga a este contexto?",
+    "prompt": "O que Daniel 2:44 comunica que se liga a este contexto?",
+    "cue": "O que Daniel 2:44 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o reino de Deus permanece para sempre.",
+    "feedbackWrong": {
+      "b": "A soberania não passará a outro povo.",
+      "c": "Não será jamais destruído."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "id": "daniel-sem-daniel-reinos-01-o-sonho-da-estatua-06",
+    "passageText": "Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre,",
+    "passageA": {
+      "ref": "Daniel 2:44",
+      "text": "suscitará o Deus do céu um reino que não será jamais destruído"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O sonho da estátua: o reino de Deus despedaça os impérios e permanece para sempre."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Reino que permanece"
+      },
+      {
+        "id": "b",
+        "text": "Império que se transfere"
+      },
+      {
+        "id": "c",
+        "text": "Reino logo destruído"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Daniel 2:44",
+    "learningObjective": "Confessar que o Deus do céu suscita um reino que não será jamais destruído, não passa a outro povo, despedaça os reinos e subsiste para sempre.",
+    "evidence": [
+      "Daniel 2:44"
+    ],
+    "type": "true_false",
+    "question": "O reino que o Deus do céu suscita passará a soberania a outro povo, como os demais impérios.",
+    "prompt": "O reino que o Deus do céu suscita passará a soberania a outro povo, como os demais impérios.",
+    "cue": "O reino que o Deus do céu suscita passará a soberania a outro povo, como os demais impérios.",
+    "feedbackCorrect": "Certo: a soberania deste não passa a outro povo.",
+    "feedbackWrong": {
+      "true": "Releia: nem passará a soberania deste a outro povo."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "id": "daniel-cam-daniel-reinos-01-o-sonho-da-estatua-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre,"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Daniel 2:44",
+    "learningObjective": "Confessar que o Deus do céu suscita um reino que não será jamais destruído, não passa a outro povo, despedaça os reinos e subsiste para sempre.",
+    "evidence": [
+      "Daniel 2:44"
+    ],
+    "type": "tap",
+    "question": "Em Daniel 2:44, toque a palavra que falta em \"fará em ___ e consumirá todos esses reinos\"?",
+    "prompt": "Em Daniel 2:44, toque a palavra que falta em \"fará em ___ e consumirá todos esses reinos\"?",
+    "cue": "Em Daniel 2:44, toque a palavra que falta em \"fará em ___ e consumirá todos esses reinos\"?",
+    "feedbackCorrect": "Exato: fará em pedaços e consumirá.",
+    "feedbackWrong": {
+      "b": "Céu qualifica a Deus, não o ato contra os reinos.",
+      "c": "Povo é a quem a soberania não passa."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "id": "daniel-cam-daniel-reinos-01-o-sonho-da-estatua-02",
+    "passageText": "Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre,",
+    "template": "fará em ___ e consumirá todos esses reinos",
+    "options": [
+      {
+        "id": "a",
+        "text": "pedaços"
+      },
+      {
+        "id": "b",
+        "text": "céu"
+      },
+      {
+        "id": "c",
+        "text": "povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Daniel 2:44",
+    "learningObjective": "Confessar que o Deus do céu suscita um reino que não será jamais destruído, não passa a outro povo, despedaça os reinos e subsiste para sempre.",
+    "evidence": [
+      "Daniel 2:44"
+    ],
+    "type": "choice",
+    "question": "Como Daniel 2:44 relaciona o reino de Deus e os reinos dos dias desses reis?",
+    "prompt": "Como Daniel 2:44 relaciona o reino de Deus e os reinos dos dias desses reis?",
+    "cue": "Como Daniel 2:44 relaciona o reino de Deus e os reinos dos dias desses reis?",
+    "feedbackCorrect": "Certo: reino permanente que consome os demais.",
+    "feedbackWrong": {
+      "a": "A soberania não passa a outro povo; os reinos são consumidos.",
+      "c": "Quem suscita é o Deus do céu, nos dias desses reis.",
+      "d": "Esse reino não será jamais destruído; ele subsiste."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "id": "daniel-cam-daniel-reinos-01-o-sonho-da-estatua-03",
+    "passageText": "Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre,",
+    "options": [
+      {
+        "id": "a",
+        "text": "O reino de Deus coexiste em igualdade e transfere a soberania aos impérios."
+      },
+      {
+        "id": "b",
+        "text": "Deus suscita um reino permanente que despedaça e consome esses reinos."
+      },
+      {
+        "id": "c",
+        "text": "Os reis suscitarão o reino de Deus depois de consolidar os seus."
+      },
+      {
+        "id": "d",
+        "text": "O reino de Deus será destruído quando esses reinos se unirem."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Daniel 2:44",
+    "learningObjective": "Confessar que o Deus do céu suscita um reino que não será jamais destruído, não passa a outro povo, despedaça os reinos e subsiste para sempre.",
+    "evidence": [
+      "Daniel 2:44"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Daniel 2:44?",
+    "prompt": "Como se encadeiam os eventos de Daniel 2:44?",
+    "cue": "Como se encadeiam os eventos de Daniel 2:44?",
+    "feedbackCorrect": "Certo: suscitar, permanência, depois o juízo dos impérios.",
+    "feedbackWrong": {
+      "b": "A permanência segue o suscitar do reino.",
+      "c": "Despedaçar os reinos é a ação seguinte."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "id": "daniel-cam-daniel-reinos-01-o-sonho-da-estatua-04",
+    "passageText": "Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre,",
+    "options": [
+      {
+        "id": "a",
+        "text": "suscitará o Deus do céu um reino"
+      },
+      {
+        "id": "b",
+        "text": "não será jamais destruído, nem passará a soberania deste a outro povo"
+      },
+      {
+        "id": "c",
+        "text": "fará em pedaços e consumirá todos esses reinos"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Daniel 2:44",
+    "learningObjective": "Confessar que o Deus do céu suscita um reino que não será jamais destruído, não passa a outro povo, despedaça os reinos e subsiste para sempre.",
+    "evidence": [
+      "Daniel 2:44"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"e ele mesmo ___ para sempre\"",
+    "prompt": "Complete a frase: \"e ele mesmo ___ para sempre\"",
+    "cue": "Complete a frase: \"e ele mesmo ___ para sempre\"",
+    "feedbackCorrect": "Certo: ele mesmo subsistirá para sempre.",
+    "feedbackWrong": {
+      "b": "Passará é o que a soberania não faz.",
+      "c": "Destruído é o que esse reino não será."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "id": "daniel-cam-daniel-reinos-01-o-sonho-da-estatua-05",
+    "passageText": "Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre,",
+    "template": "e ele mesmo ___ para sempre",
+    "options": [
+      {
+        "id": "a",
+        "text": "subsistirá"
+      },
+      {
+        "id": "b",
+        "text": "passará"
+      },
+      {
+        "id": "c",
+        "text": "destruído"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Daniel 2:44",
+    "learningObjective": "Confessar que o Deus do céu suscita um reino que não será jamais destruído, não passa a outro povo, despedaça os reinos e subsiste para sempre.",
+    "evidence": [
+      "Daniel 2:44"
+    ],
+    "type": "connect",
+    "question": "O que Daniel 2:44 comunica que se liga a este contexto?",
+    "prompt": "O que Daniel 2:44 comunica que se liga a este contexto?",
+    "cue": "O que Daniel 2:44 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o reino de Deus despedaça os impérios.",
+    "feedbackWrong": {
+      "b": "A soberania deste não passa a outro povo.",
+      "c": "É o reino de Deus que consome os reinos."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "id": "daniel-cam-daniel-reinos-01-o-sonho-da-estatua-06",
+    "passageText": "Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre,",
+    "passageA": {
+      "ref": "Daniel 2:44",
+      "text": "fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O sonho da estátua: o reino de Deus despedaça os impérios e permanece para sempre."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Impérios em pedaços"
+      },
+      {
+        "id": "b",
+        "text": "Soberania que migra"
+      },
+      {
+        "id": "c",
+        "text": "Reinos que consomem a Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Daniel 2:44",
+    "learningObjective": "Confessar que o Deus do céu suscita um reino que não será jamais destruído, não passa a outro povo, despedaça os reinos e subsiste para sempre.",
+    "evidence": [
+      "Daniel 2:44"
+    ],
+    "type": "true_false",
+    "question": "O sonho da estátua anuncia um reino de Deus que julga os impérios e não se dilui na sucessão dos povos.",
+    "prompt": "O sonho da estátua anuncia um reino de Deus que julga os impérios e não se dilui na sucessão dos povos.",
+    "cue": "O sonho da estátua anuncia um reino de Deus que julga os impérios e não se dilui na sucessão dos povos.",
+    "feedbackCorrect": "Certo: não destruído, não transferido, consome e subsiste.",
+    "feedbackWrong": {
+      "false": "O texto recusa destruição e transferência; o reino subsiste."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "id": "daniel-pro-daniel-reinos-01-o-sonho-da-estatua-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre,"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Daniel 2:44",
+    "learningObjective": "Confessar que o Deus do céu suscita um reino que não será jamais destruído, não passa a outro povo, despedaça os reinos e subsiste para sempre.",
+    "evidence": [
+      "Daniel 2:44"
+    ],
+    "type": "tap",
+    "question": "Em Daniel 2:44, toque a palavra que falta em \"que não será jamais ___\"?",
+    "prompt": "Em Daniel 2:44, toque a palavra que falta em \"que não será jamais ___\"?",
+    "cue": "Em Daniel 2:44, toque a palavra que falta em \"que não será jamais ___\"?",
+    "feedbackCorrect": "Exato: não será jamais destruído.",
+    "feedbackWrong": {
+      "b": "Suscitará é o verbo de Deus no início.",
+      "c": "Consumirá é o que o reino faz aos outros."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "id": "daniel-pro-daniel-reinos-01-o-sonho-da-estatua-02",
+    "passageText": "Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre,",
+    "template": "que não será jamais ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "destruído"
+      },
+      {
+        "id": "b",
+        "text": "suscitará"
+      },
+      {
+        "id": "c",
+        "text": "consumirá"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Daniel 2:44",
+    "learningObjective": "Confessar que o Deus do céu suscita um reino que não será jamais destruído, não passa a outro povo, despedaça os reinos e subsiste para sempre.",
+    "evidence": [
+      "Daniel 2:44"
+    ],
+    "type": "choice",
+    "question": "Qual leitura de Daniel 2:44 descreve o sentido do reino de Deus?",
+    "prompt": "Qual leitura de Daniel 2:44 descreve o sentido do reino de Deus?",
+    "cue": "Qual leitura de Daniel 2:44 descreve o sentido do reino de Deus?",
+    "feedbackCorrect": "Certo: reino eterno que julga e permanece.",
+    "feedbackWrong": {
+      "a": "Não será destruído nem passará a outro povo.",
+      "b": "Ele faz em pedaços e consome todos esses reinos.",
+      "d": "A soberania deste não passará a outro povo."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "id": "daniel-pro-daniel-reinos-01-o-sonho-da-estatua-03",
+    "passageText": "Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre,",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mais um império na fila: nasce, transfere a soberania e cai."
+      },
+      {
+        "id": "b",
+        "text": "Um reino espiritual que nunca toca os reinos da história."
+      },
+      {
+        "id": "c",
+        "text": "O Deus do céu suscita um reino eterno que despedaça os impérios e permanece."
+      },
+      {
+        "id": "d",
+        "text": "Os povos herdarão a soberania desse reino por turno."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Daniel 2:44",
+    "learningObjective": "Confessar que o Deus do céu suscita um reino que não será jamais destruído, não passa a outro povo, despedaça os reinos e subsiste para sempre.",
+    "evidence": [
+      "Daniel 2:44"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Daniel 2:44?",
+    "prompt": "Qual sequência revela o sentido de Daniel 2:44?",
+    "cue": "Qual sequência revela o sentido de Daniel 2:44?",
+    "feedbackCorrect": "Certo: reino suscitado, sem transferência, subsistência eterna.",
+    "feedbackWrong": {
+      "b": "A soberania que não passa interpreta a diferença dos impérios.",
+      "c": "Subsistir para sempre fecha o sentido."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "id": "daniel-pro-daniel-reinos-01-o-sonho-da-estatua-04",
+    "passageText": "Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre,",
+    "options": [
+      {
+        "id": "a",
+        "text": "suscitará o Deus do céu um reino que não será jamais destruído"
+      },
+      {
+        "id": "b",
+        "text": "nem passará a soberania deste a outro povo"
+      },
+      {
+        "id": "c",
+        "text": "ele mesmo subsistirá para sempre"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Daniel 2:44",
+    "learningObjective": "Confessar que o Deus do céu suscita um reino que não será jamais destruído, não passa a outro povo, despedaça os reinos e subsiste para sempre.",
+    "evidence": [
+      "Daniel 2:44"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"consumirá todos esses ___, e ele mesmo subsistirá para sempre\"",
+    "prompt": "Complete a frase: \"consumirá todos esses ___, e ele mesmo subsistirá para sempre\"",
+    "cue": "Complete a frase: \"consumirá todos esses ___, e ele mesmo subsistirá para sempre\"",
+    "feedbackCorrect": "Certo: consumirá todos esses reinos.",
+    "feedbackWrong": {
+      "b": "Céu qualifica a Deus, não o que é consumido.",
+      "c": "Dias marca o tempo dos reis, não esta lacuna."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "id": "daniel-pro-daniel-reinos-01-o-sonho-da-estatua-05",
+    "passageText": "Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre,",
+    "template": "consumirá todos esses ___, e ele mesmo subsistirá para sempre",
+    "options": [
+      {
+        "id": "a",
+        "text": "reinos"
+      },
+      {
+        "id": "b",
+        "text": "céu"
+      },
+      {
+        "id": "c",
+        "text": "dias"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Daniel 2:44",
+    "learningObjective": "Confessar que o Deus do céu suscita um reino que não será jamais destruído, não passa a outro povo, despedaça os reinos e subsiste para sempre.",
+    "evidence": [
+      "Daniel 2:44"
+    ],
+    "type": "connect",
+    "question": "O que Daniel 2:44 comunica que se liga a este contexto?",
+    "prompt": "O que Daniel 2:44 comunica que se liga a este contexto?",
+    "cue": "O que Daniel 2:44 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o reino de Deus subsiste para sempre.",
+    "feedbackWrong": {
+      "b": "Os reinos da estátua são feitos em pedaços.",
+      "c": "A soberania não passa a outro povo."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-01-o-sonho-da-estatua",
+    "id": "daniel-pro-daniel-reinos-01-o-sonho-da-estatua-06",
+    "passageText": "Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre,",
+    "passageA": {
+      "ref": "Daniel 2:44",
+      "text": "ele mesmo subsistirá para sempre"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O sonho da estátua: o reino de Deus despedaça os impérios e permanece para sempre."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Reino para sempre"
+      },
+      {
+        "id": "b",
+        "text": "Estátua que permanece"
+      },
+      {
+        "id": "c",
+        "text": "Povo que herda a soberania"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Daniel 1:8; 2:44; 3:18",
+    "learningObjective": "Articular Daniel no palácio e nos reinos: coração que não se contamina, recusa da imagem mesmo sem livramento, e reino de Deus que não passa.",
+    "evidence": [
+      "Daniel 1:8",
+      "Daniel 2:44",
+      "Daniel 3:18"
+    ],
+    "type": "true_false",
+    "question": "Daniel assentou no coração não contaminar-se; o Deus do céu suscita um reino indestrutível; eles não hão de servir aos deuses do rei nem adorar a imagem.",
+    "prompt": "Daniel assentou no coração não contaminar-se; o Deus do céu suscita um reino indestrutível; eles não hão de servir aos deuses do rei nem adorar a imagem.",
+    "cue": "Daniel assentou no coração não contaminar-se; o Deus do céu suscita um reino indestrutível; eles não hão de servir aos deuses do rei nem adorar a imagem.",
+    "feedbackCorrect": "Certo: os três trechos afirmam coração, reino e recusa.",
+    "feedbackWrong": {
+      "false": "Os três textos sustentam mesa, reino eterno e recusa da imagem."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "id": "daniel-sem-daniel-reinos-02-desafio-daniel-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se. Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre, Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Daniel 1:8; 2:44; 3:18",
+    "learningObjective": "Articular Daniel no palácio e nos reinos: coração que não se contamina, recusa da imagem mesmo sem livramento, e reino de Deus que não passa.",
+    "evidence": [
+      "Daniel 1:8",
+      "Daniel 2:44",
+      "Daniel 3:18"
+    ],
+    "type": "tap",
+    "question": "Em Daniel 1:8; 2:44; 3:18, toque a palavra que falta em \"assentou no seu ___ não se contaminar\"?",
+    "prompt": "Em Daniel 1:8; 2:44; 3:18, toque a palavra que falta em \"assentou no seu ___ não se contaminar\"?",
+    "cue": "Em Daniel 1:8; 2:44; 3:18, toque a palavra que falta em \"assentou no seu ___ não se contaminar\"?",
+    "feedbackCorrect": "Exato: propósito no coração em Daniel 1:8.",
+    "feedbackWrong": {
+      "b": "Soberania pertence a Daniel 2:44.",
+      "c": "Imagem pertence à recusa de 3:18."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "id": "daniel-sem-daniel-reinos-02-desafio-daniel-02",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se. Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre, Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste.",
+    "template": "assentou no seu ___ não se contaminar",
+    "options": [
+      {
+        "id": "a",
+        "text": "coração"
+      },
+      {
+        "id": "b",
+        "text": "soberania"
+      },
+      {
+        "id": "c",
+        "text": "imagem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Daniel 1:8; 2:44; 3:18",
+    "learningObjective": "Articular Daniel no palácio e nos reinos: coração que não se contamina, recusa da imagem mesmo sem livramento, e reino de Deus que não passa.",
+    "evidence": [
+      "Daniel 1:8",
+      "Daniel 2:44",
+      "Daniel 3:18"
+    ],
+    "type": "choice",
+    "question": "Qual conjunto os três textos afirmam diretamente?",
+    "prompt": "Qual conjunto os três textos afirmam diretamente?",
+    "cue": "Qual conjunto os três textos afirmam diretamente?",
+    "feedbackCorrect": "Certo: mesa, reino eterno e recusa da imagem.",
+    "feedbackWrong": {
+      "b": "Os textos recusam contaminar-se, transferência e a imagem.",
+      "c": "O reino não será destruído; eles não servem aos deuses do rei.",
+      "d": "1:8 e 3:18 estão no conjunto com 2:44."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "id": "daniel-sem-daniel-reinos-02-desafio-daniel-03",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se. Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre, Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Não contaminar-se à mesa, reino que não passa, recusa de adorar a imagem de ouro."
+      },
+      {
+        "id": "b",
+        "text": "Aceitar iguarias, transferir a soberania e adorar a imagem."
+      },
+      {
+        "id": "c",
+        "text": "Reino logo destruído, mesa livre e serviço aos deuses do rei."
+      },
+      {
+        "id": "d",
+        "text": "Só o sonho da estátua, sem coração e sem fornalha."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Daniel 1:8; 2:44; 3:18",
+    "learningObjective": "Articular Daniel no palácio e nos reinos: coração que não se contamina, recusa da imagem mesmo sem livramento, e reino de Deus que não passa.",
+    "evidence": [
+      "Daniel 1:8",
+      "Daniel 2:44",
+      "Daniel 3:18"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos nos três textos?",
+    "prompt": "Qual sequência mostra a ordem dos fatos nos três textos?",
+    "cue": "Qual sequência mostra a ordem dos fatos nos três textos?",
+    "feedbackCorrect": "Certo: coração, reino eterno, recusa da imagem.",
+    "feedbackWrong": {
+      "b": "O reino de 2:44 segue o propósito de 1:8.",
+      "c": "A recusa de 3:18 fecha o conjunto."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "id": "daniel-sem-daniel-reinos-02-desafio-daniel-04",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se. Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre, Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Daniel, porém, assentou no seu coração não se contaminar"
+      },
+      {
+        "id": "b",
+        "text": "suscitará o Deus do céu um reino que não será jamais destruído"
+      },
+      {
+        "id": "c",
+        "text": "não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Daniel 1:8; 2:44; 3:18",
+    "learningObjective": "Articular Daniel no palácio e nos reinos: coração que não se contamina, recusa da imagem mesmo sem livramento, e reino de Deus que não passa.",
+    "evidence": [
+      "Daniel 1:8",
+      "Daniel 2:44",
+      "Daniel 3:18"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"nem adorar a imagem de ouro que ___\"",
+    "prompt": "Complete a frase: \"nem adorar a imagem de ouro que ___\"",
+    "cue": "Complete a frase: \"nem adorar a imagem de ouro que ___\"",
+    "feedbackCorrect": "Certo: a imagem de ouro que o rei levantou.",
+    "feedbackWrong": {
+      "b": "Assentou descreve o coração de Daniel em 1:8.",
+      "c": "Subsistirá descreve o reino em 2:44."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "id": "daniel-sem-daniel-reinos-02-desafio-daniel-05",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se. Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre, Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste.",
+    "template": "nem adorar a imagem de ouro que ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "levantaste"
+      },
+      {
+        "id": "b",
+        "text": "assentou"
+      },
+      {
+        "id": "c",
+        "text": "subsistirá"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Daniel 1:8; 2:44; 3:18",
+    "learningObjective": "Articular Daniel no palácio e nos reinos: coração que não se contamina, recusa da imagem mesmo sem livramento, e reino de Deus que não passa.",
+    "evidence": [
+      "Daniel 1:8",
+      "Daniel 2:44",
+      "Daniel 3:18"
+    ],
+    "type": "connect",
+    "question": "O que Daniel 1:8; 2:44; 3:18 comunica que se liga a este contexto?",
+    "prompt": "O que Daniel 1:8; 2:44; 3:18 comunica que se liga a este contexto?",
+    "cue": "O que Daniel 1:8; 2:44; 3:18 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: coração puro, fornalha sem imagem, reino que não passa.",
+    "feedbackWrong": {
+      "b": "O reino de Deus, não o império, subsiste; a imagem é recusada.",
+      "c": "Daniel recusa contaminar-se e a soberania não passa."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "id": "daniel-sem-daniel-reinos-02-desafio-daniel-06",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se. Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre, Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste.",
+    "passageA": {
+      "ref": "Daniel 1:8; 2:44; 3:18",
+      "text": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se. Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre, Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Daniel: coração que não se contamina, fornalha sem imagem, e reino que não passa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Coração, imagem e reino"
+      },
+      {
+        "id": "b",
+        "text": "Mesa, imagem e império eterno"
+      },
+      {
+        "id": "c",
+        "text": "Contaminação e transferência"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Daniel 1:8; 2:44; 3:18",
+    "learningObjective": "Articular Daniel no palácio e nos reinos: coração que não se contamina, recusa da imagem mesmo sem livramento, e reino de Deus que não passa.",
+    "evidence": [
+      "Daniel 1:8",
+      "Daniel 2:44",
+      "Daniel 3:18"
+    ],
+    "type": "true_false",
+    "question": "Nos três textos, a fidelidade na mesa, a recusa da imagem e o reino que não passa se encadeiam no mesmo Daniel.",
+    "prompt": "Nos três textos, a fidelidade na mesa, a recusa da imagem e o reino que não passa se encadeiam no mesmo Daniel.",
+    "cue": "Nos três textos, a fidelidade na mesa, a recusa da imagem e o reino que não passa se encadeiam no mesmo Daniel.",
+    "feedbackCorrect": "Certo: palácio, fornalha e sonho formam um só perfil.",
+    "feedbackWrong": {
+      "false": "1:8, 3:18 e 2:44 se encadeiam no desafio de Daniel."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "id": "daniel-cam-daniel-reinos-02-desafio-daniel-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se. Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre, Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Daniel 1:8; 2:44; 3:18",
+    "learningObjective": "Articular Daniel no palácio e nos reinos: coração que não se contamina, recusa da imagem mesmo sem livramento, e reino de Deus que não passa.",
+    "evidence": [
+      "Daniel 1:8",
+      "Daniel 2:44",
+      "Daniel 3:18"
+    ],
+    "type": "tap",
+    "question": "Em Daniel 1:8; 2:44; 3:18, toque a palavra que falta em \"nem passará a ___ deste a outro povo\"?",
+    "prompt": "Em Daniel 1:8; 2:44; 3:18, toque a palavra que falta em \"nem passará a ___ deste a outro povo\"?",
+    "cue": "Em Daniel 1:8; 2:44; 3:18, toque a palavra que falta em \"nem passará a ___ deste a outro povo\"?",
+    "feedbackCorrect": "Exato: a soberania deste não passa a outro povo.",
+    "feedbackWrong": {
+      "b": "Iguarias pertencem a Daniel 1:8.",
+      "c": "Deuses pertencem à recusa de 3:18."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "id": "daniel-cam-daniel-reinos-02-desafio-daniel-02",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se. Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre, Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste.",
+    "template": "nem passará a ___ deste a outro povo",
+    "options": [
+      {
+        "id": "a",
+        "text": "soberania"
+      },
+      {
+        "id": "b",
+        "text": "iguarias"
+      },
+      {
+        "id": "c",
+        "text": "deuses"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Daniel 1:8; 2:44; 3:18",
+    "learningObjective": "Articular Daniel no palácio e nos reinos: coração que não se contamina, recusa da imagem mesmo sem livramento, e reino de Deus que não passa.",
+    "evidence": [
+      "Daniel 1:8",
+      "Daniel 2:44",
+      "Daniel 3:18"
+    ],
+    "type": "choice",
+    "question": "Como se encadeiam mesa, imagem e reino nestes textos?",
+    "prompt": "Como se encadeiam mesa, imagem e reino nestes textos?",
+    "cue": "Como se encadeiam mesa, imagem e reino nestes textos?",
+    "feedbackCorrect": "Certo: fidelidade na mesa, reino permanente, recusa da imagem.",
+    "feedbackWrong": {
+      "b": "O reino de Deus subsiste; a imagem é recusada.",
+      "c": "1:8 e 3:18 permanecem com 2:44.",
+      "d": "Eles não hão de adorar a imagem que o rei levantou."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "id": "daniel-cam-daniel-reinos-02-desafio-daniel-03",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se. Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre, Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O coração recusa a mesa; o reino de Deus permanece; a fornalha não compra a imagem."
+      },
+      {
+        "id": "b",
+        "text": "A recusa da mesa anula o reino de Deus e exige adorar a imagem."
+      },
+      {
+        "id": "c",
+        "text": "O reino eterno dispensa propósito no coração e recusa na fornalha."
+      },
+      {
+        "id": "d",
+        "text": "Adorar a imagem garante que a soberania não passe a outro povo."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Daniel 1:8; 2:44; 3:18",
+    "learningObjective": "Articular Daniel no palácio e nos reinos: coração que não se contamina, recusa da imagem mesmo sem livramento, e reino de Deus que não passa.",
+    "evidence": [
+      "Daniel 1:8",
+      "Daniel 2:44",
+      "Daniel 3:18"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Daniel 1:8; 2:44; 3:18?",
+    "prompt": "Como se encadeiam os eventos de Daniel 1:8; 2:44; 3:18?",
+    "cue": "Como se encadeiam os eventos de Daniel 1:8; 2:44; 3:18?",
+    "feedbackCorrect": "Certo: recusa da mesa, reino que consome, recusa dos deuses.",
+    "feedbackWrong": {
+      "b": "O juízo dos impérios segue a mesa do palácio.",
+      "c": "O \"se não\" da fornalha fecha o encadeamento."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "id": "daniel-cam-daniel-reinos-02-desafio-daniel-04",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se. Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre, Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste.",
+    "options": [
+      {
+        "id": "a",
+        "text": "não se contaminar com as iguarias reais nem com o vinho que o rei bebia"
+      },
+      {
+        "id": "b",
+        "text": "fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre"
+      },
+      {
+        "id": "c",
+        "text": "Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Daniel 1:8; 2:44; 3:18",
+    "learningObjective": "Articular Daniel no palácio e nos reinos: coração que não se contamina, recusa da imagem mesmo sem livramento, e reino de Deus que não passa.",
+    "evidence": [
+      "Daniel 1:8",
+      "Daniel 2:44",
+      "Daniel 3:18"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"não se ___ com as iguarias reais\"",
+    "prompt": "Complete a frase: \"não se ___ com as iguarias reais\"",
+    "cue": "Complete a frase: \"não se ___ com as iguarias reais\"",
+    "feedbackCorrect": "Certo: não se contaminar com as iguarias reais.",
+    "feedbackWrong": {
+      "b": "Destruído qualifica o que o reino de Deus não será.",
+      "c": "Adorar é o que eles recusam à imagem."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "id": "daniel-cam-daniel-reinos-02-desafio-daniel-05",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se. Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre, Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste.",
+    "template": "não se ___ com as iguarias reais",
+    "options": [
+      {
+        "id": "a",
+        "text": "contaminar"
+      },
+      {
+        "id": "b",
+        "text": "destruído"
+      },
+      {
+        "id": "c",
+        "text": "adorar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Daniel 1:8; 2:44; 3:18",
+    "learningObjective": "Articular Daniel no palácio e nos reinos: coração que não se contamina, recusa da imagem mesmo sem livramento, e reino de Deus que não passa.",
+    "evidence": [
+      "Daniel 1:8",
+      "Daniel 2:44",
+      "Daniel 3:18"
+    ],
+    "type": "connect",
+    "question": "O que Daniel 1:8; 2:44; 3:18 comunica que se liga a este contexto?",
+    "prompt": "O que Daniel 1:8; 2:44; 3:18 comunica que se liga a este contexto?",
+    "cue": "O que Daniel 1:8; 2:44; 3:18 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o coração recusa a mesa e se liga ao reino que não passa.",
+    "feedbackWrong": {
+      "b": "3:18 recusa a imagem; 1:8 recusa contaminar-se.",
+      "c": "O reino de Deus não se dilui nem se contamina."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "id": "daniel-cam-daniel-reinos-02-desafio-daniel-06",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se. Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre, Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste.",
+    "passageA": {
+      "ref": "Daniel 1:8; 2:44; 3:18",
+      "text": "pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Daniel: coração que não se contamina, fornalha sem imagem, e reino que não passa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Mesa que guarda o exílio"
+      },
+      {
+        "id": "b",
+        "text": "Imagem na mesa do rei"
+      },
+      {
+        "id": "c",
+        "text": "Reino que se contamina"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Daniel 1:8; 2:44; 3:18",
+    "learningObjective": "Articular Daniel no palácio e nos reinos: coração que não se contamina, recusa da imagem mesmo sem livramento, e reino de Deus que não passa.",
+    "evidence": [
+      "Daniel 1:8",
+      "Daniel 2:44",
+      "Daniel 3:18"
+    ],
+    "type": "true_false",
+    "question": "Daniel reduz a fé a sobreviver no palácio: a mesa pode contaminar-se, a imagem pode ser adorada e os impérios permanecem.",
+    "prompt": "Daniel reduz a fé a sobreviver no palácio: a mesa pode contaminar-se, a imagem pode ser adorada e os impérios permanecem.",
+    "cue": "Daniel reduz a fé a sobreviver no palácio: a mesa pode contaminar-se, a imagem pode ser adorada e os impérios permanecem.",
+    "feedbackCorrect": "Certo: os textos recusam contaminação, imagem e impérios eternos.",
+    "feedbackWrong": {
+      "true": "Coração, fornalha e reino eterno contradizem essa redução."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "id": "daniel-pro-daniel-reinos-02-desafio-daniel-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se. Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre, Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Daniel 1:8; 2:44; 3:18",
+    "learningObjective": "Articular Daniel no palácio e nos reinos: coração que não se contamina, recusa da imagem mesmo sem livramento, e reino de Deus que não passa.",
+    "evidence": [
+      "Daniel 1:8",
+      "Daniel 2:44",
+      "Daniel 3:18"
+    ],
+    "type": "tap",
+    "question": "Em Daniel 1:8; 2:44; 3:18, toque a palavra que falta em \"não havemos de servir aos teus ___, nem adorar a imagem\"?",
+    "prompt": "Em Daniel 1:8; 2:44; 3:18, toque a palavra que falta em \"não havemos de servir aos teus ___, nem adorar a imagem\"?",
+    "cue": "Em Daniel 1:8; 2:44; 3:18, toque a palavra que falta em \"não havemos de servir aos teus ___, nem adorar a imagem\"?",
+    "feedbackCorrect": "Exato: não hão de servir aos deuses do rei.",
+    "feedbackWrong": {
+      "b": "Eunucos pertence ao pedido de 1:8.",
+      "c": "Reinos são os que o Deus do céu consome."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "id": "daniel-pro-daniel-reinos-02-desafio-daniel-02",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se. Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre, Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste.",
+    "template": "não havemos de servir aos teus ___, nem adorar a imagem",
+    "options": [
+      {
+        "id": "a",
+        "text": "deuses"
+      },
+      {
+        "id": "b",
+        "text": "eunucos"
+      },
+      {
+        "id": "c",
+        "text": "reinos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Daniel 1:8; 2:44; 3:18",
+    "learningObjective": "Articular Daniel no palácio e nos reinos: coração que não se contamina, recusa da imagem mesmo sem livramento, e reino de Deus que não passa.",
+    "evidence": [
+      "Daniel 1:8",
+      "Daniel 2:44",
+      "Daniel 3:18"
+    ],
+    "type": "choice",
+    "question": "Qual leitura destes três textos descreve Daniel no exílio?",
+    "prompt": "Qual leitura destes três textos descreve Daniel no exílio?",
+    "cue": "Qual leitura destes três textos descreve Daniel no exílio?",
+    "feedbackCorrect": "Certo: coração, fornalha e reino eterno formam Daniel.",
+    "feedbackWrong": {
+      "a": "Os textos recusam contaminar-se, a imagem e a transferência.",
+      "b": "Há propósito no coração e o Deus do céu suscita o reino.",
+      "d": "1:8 e 3:18 permanecem com 2:44 no mesmo desafio."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "id": "daniel-pro-daniel-reinos-02-desafio-daniel-03",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se. Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre, Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Coração contaminável, fornalha com imagem e reino que passa a outro povo."
+      },
+      {
+        "id": "b",
+        "text": "Só recusa política, sem Deus do céu e sem propósito no coração."
+      },
+      {
+        "id": "c",
+        "text": "Fidelidade que não se contamina, lealdade sem imagem, e reino de Deus que permanece."
+      },
+      {
+        "id": "d",
+        "text": "O sonho da estátua cancela a mesa e a fornalha como irrelevantes."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Daniel 1:8; 2:44; 3:18",
+    "learningObjective": "Articular Daniel no palácio e nos reinos: coração que não se contamina, recusa da imagem mesmo sem livramento, e reino de Deus que não passa.",
+    "evidence": [
+      "Daniel 1:8",
+      "Daniel 2:44",
+      "Daniel 3:18"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Daniel 1:8; 2:44; 3:18?",
+    "prompt": "Qual sequência revela o sentido de Daniel 1:8; 2:44; 3:18?",
+    "cue": "Qual sequência revela o sentido de Daniel 1:8; 2:44; 3:18?",
+    "feedbackCorrect": "Certo: coração puro, reino que não passa, fornalha sem imagem.",
+    "feedbackWrong": {
+      "b": "O reino eterno interpreta a soberania acima do palácio.",
+      "c": "A recusa da imagem revela lealdade sem barganha."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "id": "daniel-pro-daniel-reinos-02-desafio-daniel-04",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se. Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre, Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste.",
+    "options": [
+      {
+        "id": "a",
+        "text": "assentou no seu coração não se contaminar"
+      },
+      {
+        "id": "b",
+        "text": "um reino que não será jamais destruído, nem passará a soberania deste a outro povo"
+      },
+      {
+        "id": "c",
+        "text": "nem adorar a imagem de ouro que levantaste"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Daniel 1:8; 2:44; 3:18",
+    "learningObjective": "Articular Daniel no palácio e nos reinos: coração que não se contamina, recusa da imagem mesmo sem livramento, e reino de Deus que não passa.",
+    "evidence": [
+      "Daniel 1:8",
+      "Daniel 2:44",
+      "Daniel 3:18"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"ele mesmo ___ para sempre\"",
+    "prompt": "Complete a frase: \"ele mesmo ___ para sempre\"",
+    "cue": "Complete a frase: \"ele mesmo ___ para sempre\"",
+    "feedbackCorrect": "Certo: o reino de Deus subsistirá para sempre.",
+    "feedbackWrong": {
+      "b": "Contaminar é o que Daniel recusa em 1:8.",
+      "c": "Levantaste descreve a imagem em 3:18."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "id": "daniel-pro-daniel-reinos-02-desafio-daniel-05",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se. Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre, Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste.",
+    "template": "ele mesmo ___ para sempre",
+    "options": [
+      {
+        "id": "a",
+        "text": "subsistirá"
+      },
+      {
+        "id": "b",
+        "text": "contaminar"
+      },
+      {
+        "id": "c",
+        "text": "levantaste"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Daniel 1:8; 2:44; 3:18",
+    "learningObjective": "Articular Daniel no palácio e nos reinos: coração que não se contamina, recusa da imagem mesmo sem livramento, e reino de Deus que não passa.",
+    "evidence": [
+      "Daniel 1:8",
+      "Daniel 2:44",
+      "Daniel 3:18"
+    ],
+    "type": "connect",
+    "question": "O que Daniel 1:8; 2:44; 3:18 comunica que se liga a este contexto?",
+    "prompt": "O que Daniel 1:8; 2:44; 3:18 comunica que se liga a este contexto?",
+    "cue": "O que Daniel 1:8; 2:44; 3:18 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o reino de Deus permanece; a mesa e a imagem são recusadas.",
+    "feedbackWrong": {
+      "b": "Daniel recusa contaminar-se; o reino de Deus consome os impérios.",
+      "c": "Eles não adoram a imagem que o rei levantou."
+    },
+    "trail": "daniel",
+    "section": "daniel-reinos-02-desafio-daniel",
+    "id": "daniel-pro-daniel-reinos-02-desafio-daniel-06",
+    "passageText": "Daniel, porém, assentou no seu coração não se contaminar com as iguarias reais nem com o vinho que o rei bebia; portanto, pediu ao príncipe dos eunucos que lhe permitisse não contaminar-se. Nos dias desses reis, suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo; mas fará em pedaços e consumirá todos esses reinos, e ele mesmo subsistirá para sempre, Mas, se não, fica tu sabendo, ó rei, que não havemos de servir aos teus deuses, nem adorar a imagem de ouro que levantaste.",
+    "passageA": {
+      "ref": "Daniel 1:8; 2:44; 3:18",
+      "text": "suscitará o Deus do céu um reino que não será jamais destruído, nem passará a soberania deste a outro povo"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Daniel: coração que não se contamina, fornalha sem imagem, e reino que não passa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Reino que não passa"
+      },
+      {
+        "id": "b",
+        "text": "Império que se contamina"
+      },
+      {
+        "id": "c",
+        "text": "Imagem que permanece"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  }
+]

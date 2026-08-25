@@ -1,0 +1,5105 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 3:10",
+    "learningObjective": "Reconhecer que Jeová chama Samuel e o servo responde ouvindo a sua voz.",
+    "evidence": [
+      "1 Samuel 3:10"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-01-o-chamado-de-samuel",
+    "id": "samuel-sem-samuel-samuel-01-o-chamado-de-samuel-01",
+    "passageText": "Então, veio Jeová, parou e chamou como das outras vezes: Samuel, Samuel! Respondeu ele: Fala, pois o teu servo ouve.",
+    "type": "true_false",
+    "question": "Jeová veio, parou e chamou: Samuel, Samuel!",
+    "prompt": "Jeová veio, parou e chamou: Samuel, Samuel!",
+    "cue": "Jeová veio, parou e chamou: Samuel, Samuel!",
+    "feedbackCorrect": "Certo: o texto registra a vinda e o chamado de Jeová.",
+    "feedbackWrong": {
+      "false": "Releia: Jeová veio, parou e chamou Samuel."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 3:10",
+    "learningObjective": "Reconhecer que Jeová chama Samuel e o servo responde ouvindo a sua voz.",
+    "evidence": [
+      "1 Samuel 3:10"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-01-o-chamado-de-samuel",
+    "id": "samuel-sem-samuel-samuel-01-o-chamado-de-samuel-02",
+    "passageText": "Então, veio Jeová, parou e chamou como das outras vezes: Samuel, Samuel! Respondeu ele: Fala, pois o teu servo ouve.",
+    "type": "tap",
+    "question": "Em 1 Samuel 3:10, toque a palavra que falta em \"Respondeu ele: Fala, pois o teu ___ ouve\"?",
+    "prompt": "Em 1 Samuel 3:10, toque a palavra que falta em \"Respondeu ele: Fala, pois o teu ___ ouve\"?",
+    "cue": "Em 1 Samuel 3:10, toque a palavra que falta em \"Respondeu ele: Fala, pois o teu ___ ouve\"?",
+    "template": "Respondeu ele: Fala, pois o teu ___ ouve",
+    "feedbackCorrect": "Exato: essa é a palavra do versículo.",
+    "feedbackWrong": {
+      "b": "Essa palavra não preenche esta lacuna no texto.",
+      "c": "Essa palavra não preenche esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "servo"
+      },
+      {
+        "id": "b",
+        "text": "Jeová"
+      },
+      {
+        "id": "c",
+        "text": "vezes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 3:10",
+    "learningObjective": "Reconhecer que Jeová chama Samuel e o servo responde ouvindo a sua voz.",
+    "evidence": [
+      "1 Samuel 3:10"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-01-o-chamado-de-samuel",
+    "id": "samuel-sem-samuel-samuel-01-o-chamado-de-samuel-03",
+    "passageText": "Então, veio Jeová, parou e chamou como das outras vezes: Samuel, Samuel! Respondeu ele: Fala, pois o teu servo ouve.",
+    "type": "choice",
+    "question": "Qual fato o texto afirma sobre a resposta de Samuel?",
+    "prompt": "Qual fato o texto afirma sobre a resposta de Samuel?",
+    "cue": "Qual fato o texto afirma sobre a resposta de Samuel?",
+    "feedbackCorrect": "Certo: o texto afirma isso diretamente.",
+    "feedbackWrong": {
+      "b": "Samuel responde; não foge.",
+      "c": "A resposta é de Samuel, não um pedido a Eli.",
+      "d": "Ele fala e se declara servo que ouve."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Samuel responde: Fala, pois o teu servo ouve"
+      },
+      {
+        "id": "b",
+        "text": "Samuel foge sem responder ao chamado"
+      },
+      {
+        "id": "c",
+        "text": "Samuel pede que Eli fale em seu lugar"
+      },
+      {
+        "id": "d",
+        "text": "Samuel silencia e não reconhece a voz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 3:10",
+    "learningObjective": "Reconhecer que Jeová chama Samuel e o servo responde ouvindo a sua voz.",
+    "evidence": [
+      "1 Samuel 3:10"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-01-o-chamado-de-samuel",
+    "id": "samuel-sem-samuel-samuel-01-o-chamado-de-samuel-04",
+    "passageText": "Então, veio Jeová, parou e chamou como das outras vezes: Samuel, Samuel! Respondeu ele: Fala, pois o teu servo ouve.",
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em 1 Samuel 3:10?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 1 Samuel 3:10?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 1 Samuel 3:10?",
+    "feedbackCorrect": "Certo: essa é a sequência dos fatos no texto.",
+    "feedbackWrong": {
+      "b": "Releia a ordem: o meio do relato não vem primeiro.",
+      "c": "Releia a ordem: o fim do relato não abre a sequência."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Então, veio Jeová, parou e chamou como das outras vezes"
+      },
+      {
+        "id": "b",
+        "text": "Samuel, Samuel!"
+      },
+      {
+        "id": "c",
+        "text": "Respondeu ele: Fala, pois o teu servo ouve"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 3:10",
+    "learningObjective": "Reconhecer que Jeová chama Samuel e o servo responde ouvindo a sua voz.",
+    "evidence": [
+      "1 Samuel 3:10"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-01-o-chamado-de-samuel",
+    "id": "samuel-sem-samuel-samuel-01-o-chamado-de-samuel-05",
+    "passageText": "Então, veio Jeová, parou e chamou como das outras vezes: Samuel, Samuel! Respondeu ele: Fala, pois o teu servo ouve.",
+    "type": "complete",
+    "question": "Complete a frase: \"Então, veio ___, parou e chamou como das outras vezes: Samuel, Samuel!\"",
+    "prompt": "Complete a frase: \"Então, veio ___, parou e chamou como das outras vezes: Samuel, Samuel!\"",
+    "cue": "Complete a frase: \"Então, veio ___, parou e chamou como das outras vezes: Samuel, Samuel!\"",
+    "template": "Então, veio ___, parou e chamou como das outras vezes: Samuel, Samuel!",
+    "feedbackCorrect": "Certo: essa é a palavra que completa o versículo.",
+    "feedbackWrong": {
+      "b": "Essa opção não completa esta lacuna no texto.",
+      "c": "Essa opção não completa esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "servo"
+      },
+      {
+        "id": "c",
+        "text": "Eli"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 3:10",
+    "learningObjective": "Reconhecer que Jeová chama Samuel e o servo responde ouvindo a sua voz.",
+    "evidence": [
+      "1 Samuel 3:10"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-01-o-chamado-de-samuel",
+    "id": "samuel-sem-samuel-samuel-01-o-chamado-de-samuel-06",
+    "passageText": "Então, veio Jeová, parou e chamou como das outras vezes: Samuel, Samuel! Respondeu ele: Fala, pois o teu servo ouve.",
+    "type": "connect",
+    "question": "O que 1 Samuel 3:10 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Samuel 3:10 comunica que se liga a este contexto?",
+    "cue": "O que 1 Samuel 3:10 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: essa é a ponte entre o texto e o insight da missão.",
+    "feedbackWrong": {
+      "b": "Essa leitura não liga o versículo ao contexto da missão.",
+      "c": "Essa leitura não liga o versículo ao contexto da missão."
+    },
+    "passageA": {
+      "ref": "1 Samuel 3:10",
+      "text": "Então, veio Jeová, parou e chamou como das outras vezes: Samuel, Samuel! Respondeu ele: Fala, pois o teu servo ouve."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jeová chama; o servo ouve."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová chama e o servo ouve"
+      },
+      {
+        "id": "b",
+        "text": "Samuel ignora o chamado e permanece em silêncio"
+      },
+      {
+        "id": "c",
+        "text": "Jeová chama Eli no lugar de Samuel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 3:10",
+    "learningObjective": "Reconhecer que Jeová chama Samuel e o servo responde ouvindo a sua voz.",
+    "evidence": [
+      "1 Samuel 3:10"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-01-o-chamado-de-samuel",
+    "id": "samuel-cam-samuel-samuel-01-o-chamado-de-samuel-01",
+    "passageText": "Então, veio Jeová, parou e chamou como das outras vezes: Samuel, Samuel! Respondeu ele: Fala, pois o teu servo ouve.",
+    "type": "true_false",
+    "question": "No trecho, Samuel responde ao chamado declarando-se servo que ouve.",
+    "prompt": "No trecho, Samuel responde ao chamado declarando-se servo que ouve.",
+    "cue": "No trecho, Samuel responde ao chamado declarando-se servo que ouve.",
+    "feedbackCorrect": "Certo: a resposta liga chamado e escuta do servo.",
+    "feedbackWrong": {
+      "false": "Samuel responde: Fala, pois o teu servo ouve."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 3:10",
+    "learningObjective": "Reconhecer que Jeová chama Samuel e o servo responde ouvindo a sua voz.",
+    "evidence": [
+      "1 Samuel 3:10"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-01-o-chamado-de-samuel",
+    "id": "samuel-cam-samuel-samuel-01-o-chamado-de-samuel-02",
+    "passageText": "Então, veio Jeová, parou e chamou como das outras vezes: Samuel, Samuel! Respondeu ele: Fala, pois o teu servo ouve.",
+    "type": "tap",
+    "question": "Em 1 Samuel 3:10, toque a palavra que falta em \"Então, veio Jeová, parou e ___ como das outras vezes: Samuel, Samuel!\"?",
+    "prompt": "Em 1 Samuel 3:10, toque a palavra que falta em \"Então, veio Jeová, parou e ___ como das outras vezes: Samuel, Samuel!\"?",
+    "cue": "Em 1 Samuel 3:10, toque a palavra que falta em \"Então, veio Jeová, parou e ___ como das outras vezes: Samuel, Samuel!\"?",
+    "template": "Então, veio Jeová, parou e ___ como das outras vezes: Samuel, Samuel!",
+    "feedbackCorrect": "Exato: essa é a palavra-chave nesta lacuna.",
+    "feedbackWrong": {
+      "b": "Essa palavra não preenche esta lacuna no texto.",
+      "c": "Essa palavra não preenche esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "chamou"
+      },
+      {
+        "id": "b",
+        "text": "servo"
+      },
+      {
+        "id": "c",
+        "text": "ouve"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 3:10",
+    "learningObjective": "Reconhecer que Jeová chama Samuel e o servo responde ouvindo a sua voz.",
+    "evidence": [
+      "1 Samuel 3:10"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-01-o-chamado-de-samuel",
+    "id": "samuel-cam-samuel-samuel-01-o-chamado-de-samuel-03",
+    "passageText": "Então, veio Jeová, parou e chamou como das outras vezes: Samuel, Samuel! Respondeu ele: Fala, pois o teu servo ouve.",
+    "type": "choice",
+    "question": "Como se relacionam o chamado de Jeová e a resposta de Samuel?",
+    "prompt": "Como se relacionam o chamado de Jeová e a resposta de Samuel?",
+    "cue": "Como se relacionam o chamado de Jeová e a resposta de Samuel?",
+    "feedbackCorrect": "Certo: essa leitura conecta bem o texto ao contexto.",
+    "feedbackWrong": {
+      "b": "Jeová chama primeiro; Samuel responde depois.",
+      "c": "O foco é o chamado a Samuel, não o status de Eli.",
+      "d": "A resposta confirma o chamado; não o anula."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová chama; Samuel se oferece a ouvir como servo"
+      },
+      {
+        "id": "b",
+        "text": "Samuel chama Jeová primeiro e depois Jeová responde"
+      },
+      {
+        "id": "c",
+        "text": "O chamado serve só para confirmar o status de Eli"
+      },
+      {
+        "id": "d",
+        "text": "A resposta de Samuel anula o chamado de Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 3:10",
+    "learningObjective": "Reconhecer que Jeová chama Samuel e o servo responde ouvindo a sua voz.",
+    "evidence": [
+      "1 Samuel 3:10"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-01-o-chamado-de-samuel",
+    "id": "samuel-cam-samuel-samuel-01-o-chamado-de-samuel-04",
+    "passageText": "Então, veio Jeová, parou e chamou como das outras vezes: Samuel, Samuel! Respondeu ele: Fala, pois o teu servo ouve.",
+    "type": "order",
+    "question": "Como se encadeiam os eventos de 1 Samuel 3:10?",
+    "prompt": "Como se encadeiam os eventos de 1 Samuel 3:10?",
+    "cue": "Como se encadeiam os eventos de 1 Samuel 3:10?",
+    "feedbackCorrect": "Certo: esse é o encadeamento do relato.",
+    "feedbackWrong": {
+      "b": "Releia a ordem: o meio do relato não vem primeiro.",
+      "c": "Releia a ordem: o fim do relato não abre a sequência."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Então, veio Jeová, parou e chamou como das outras vezes"
+      },
+      {
+        "id": "b",
+        "text": "Samuel, Samuel!"
+      },
+      {
+        "id": "c",
+        "text": "Respondeu ele: Fala, pois o teu servo ouve"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 3:10",
+    "learningObjective": "Reconhecer que Jeová chama Samuel e o servo responde ouvindo a sua voz.",
+    "evidence": [
+      "1 Samuel 3:10"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-01-o-chamado-de-samuel",
+    "id": "samuel-cam-samuel-samuel-01-o-chamado-de-samuel-05",
+    "passageText": "Então, veio Jeová, parou e chamou como das outras vezes: Samuel, Samuel! Respondeu ele: Fala, pois o teu servo ouve.",
+    "type": "complete",
+    "question": "Complete a frase: \"Respondeu ele: ___, pois o teu servo ouve\"",
+    "prompt": "Complete a frase: \"Respondeu ele: ___, pois o teu servo ouve\"",
+    "cue": "Complete a frase: \"Respondeu ele: ___, pois o teu servo ouve\"",
+    "template": "Respondeu ele: ___, pois o teu servo ouve",
+    "feedbackCorrect": "Certo: essa palavra completa o sentido do versículo.",
+    "feedbackWrong": {
+      "b": "Essa opção não completa esta lacuna no texto.",
+      "c": "Essa opção não completa esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fala"
+      },
+      {
+        "id": "b",
+        "text": "Jeová"
+      },
+      {
+        "id": "c",
+        "text": "parou"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 3:10",
+    "learningObjective": "Reconhecer que Jeová chama Samuel e o servo responde ouvindo a sua voz.",
+    "evidence": [
+      "1 Samuel 3:10"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-01-o-chamado-de-samuel",
+    "id": "samuel-cam-samuel-samuel-01-o-chamado-de-samuel-06",
+    "passageText": "Então, veio Jeová, parou e chamou como das outras vezes: Samuel, Samuel! Respondeu ele: Fala, pois o teu servo ouve.",
+    "type": "connect",
+    "question": "O que 1 Samuel 3:10 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Samuel 3:10 comunica que se liga a este contexto?",
+    "cue": "O que 1 Samuel 3:10 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: essa ponte mostra a relação pedida pelo texto.",
+    "feedbackWrong": {
+      "b": "Essa leitura não captura a ponte com o contexto.",
+      "c": "Essa leitura não captura a ponte com o contexto."
+    },
+    "passageA": {
+      "ref": "1 Samuel 3:10",
+      "text": "Então, veio Jeová, parou e chamou como das outras vezes: Samuel, Samuel! Respondeu ele: Fala, pois o teu servo ouve."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jeová chama; o servo ouve."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Chamado de Jeová e escuta do servo"
+      },
+      {
+        "id": "b",
+        "text": "O chamado depende só da iniciativa do menino"
+      },
+      {
+        "id": "c",
+        "text": "A resposta de Samuel anula a voz de Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 3:10",
+    "learningObjective": "Reconhecer que Jeová chama Samuel e o servo responde ouvindo a sua voz.",
+    "evidence": [
+      "1 Samuel 3:10"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-01-o-chamado-de-samuel",
+    "id": "samuel-pro-samuel-samuel-01-o-chamado-de-samuel-01",
+    "passageText": "Então, veio Jeová, parou e chamou como das outras vezes: Samuel, Samuel! Respondeu ele: Fala, pois o teu servo ouve.",
+    "type": "true_false",
+    "question": "O chamado de Jeová prepara o leitor para um ministério que começa na escuta.",
+    "prompt": "O chamado de Jeová prepara o leitor para um ministério que começa na escuta.",
+    "cue": "O chamado de Jeová prepara o leitor para um ministério que começa na escuta.",
+    "feedbackCorrect": "Certo: o servo ouve — a vocação começa na escuta.",
+    "feedbackWrong": {
+      "false": "O texto une chamado e disponibilidade para ouvir."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 3:10",
+    "learningObjective": "Reconhecer que Jeová chama Samuel e o servo responde ouvindo a sua voz.",
+    "evidence": [
+      "1 Samuel 3:10"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-01-o-chamado-de-samuel",
+    "id": "samuel-pro-samuel-samuel-01-o-chamado-de-samuel-02",
+    "passageText": "Então, veio Jeová, parou e chamou como das outras vezes: Samuel, Samuel! Respondeu ele: Fala, pois o teu servo ouve.",
+    "type": "tap",
+    "question": "Em 1 Samuel 3:10, toque a palavra que falta em \"Respondeu ele: Fala, pois o teu servo ___\"?",
+    "prompt": "Em 1 Samuel 3:10, toque a palavra que falta em \"Respondeu ele: Fala, pois o teu servo ___\"?",
+    "cue": "Em 1 Samuel 3:10, toque a palavra que falta em \"Respondeu ele: Fala, pois o teu servo ___\"?",
+    "template": "Respondeu ele: Fala, pois o teu servo ___",
+    "feedbackCorrect": "Exato: essa palavra sustenta o sentido do trecho.",
+    "feedbackWrong": {
+      "b": "Essa palavra não preenche esta lacuna no texto.",
+      "c": "Essa palavra não preenche esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "ouve"
+      },
+      {
+        "id": "b",
+        "text": "parou"
+      },
+      {
+        "id": "c",
+        "text": "vezes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 3:10",
+    "learningObjective": "Reconhecer que Jeová chama Samuel e o servo responde ouvindo a sua voz.",
+    "evidence": [
+      "1 Samuel 3:10"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-01-o-chamado-de-samuel",
+    "id": "samuel-pro-samuel-samuel-01-o-chamado-de-samuel-03",
+    "passageText": "Então, veio Jeová, parou e chamou como das outras vezes: Samuel, Samuel! Respondeu ele: Fala, pois o teu servo ouve.",
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de 1 Samuel 3:10?",
+    "prompt": "Qual leitura interpreta melhor o sentido de 1 Samuel 3:10?",
+    "cue": "Qual leitura interpreta melhor o sentido de 1 Samuel 3:10?",
+    "feedbackCorrect": "Certo: essa interpretação respeita o sentido do texto.",
+    "feedbackWrong": {
+      "b": "O chamado vem de Jeová; Samuel responde, não inventa.",
+      "c": "Há resposta pessoal: Fala, pois o teu servo ouve.",
+      "d": "A fórmula de servo mostra compromisso, não curiosidade."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová inicia o chamado; o servo verdadeiro se põe a ouvir"
+      },
+      {
+        "id": "b",
+        "text": "O texto ensina que o homem decide sozinho o próprio chamado"
+      },
+      {
+        "id": "c",
+        "text": "O chamado de Jeová depende de rituais sem resposta pessoal"
+      },
+      {
+        "id": "d",
+        "text": "Samuel ouve apenas por curiosidade, sem compromisso de servo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 3:10",
+    "learningObjective": "Reconhecer que Jeová chama Samuel e o servo responde ouvindo a sua voz.",
+    "evidence": [
+      "1 Samuel 3:10"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-01-o-chamado-de-samuel",
+    "id": "samuel-pro-samuel-samuel-01-o-chamado-de-samuel-04",
+    "passageText": "Então, veio Jeová, parou e chamou como das outras vezes: Samuel, Samuel! Respondeu ele: Fala, pois o teu servo ouve.",
+    "type": "order",
+    "question": "Qual sequência revela o sentido de 1 Samuel 3:10?",
+    "prompt": "Qual sequência revela o sentido de 1 Samuel 3:10?",
+    "cue": "Qual sequência revela o sentido de 1 Samuel 3:10?",
+    "feedbackCorrect": "Certo: essa sequência revela o sentido do trecho.",
+    "feedbackWrong": {
+      "b": "Releia a ordem: o meio do relato não vem primeiro.",
+      "c": "Releia a ordem: o fim do relato não abre a sequência."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Então, veio Jeová, parou e chamou como das outras vezes"
+      },
+      {
+        "id": "b",
+        "text": "Samuel, Samuel!"
+      },
+      {
+        "id": "c",
+        "text": "Respondeu ele: Fala, pois o teu servo ouve"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 3:10",
+    "learningObjective": "Reconhecer que Jeová chama Samuel e o servo responde ouvindo a sua voz.",
+    "evidence": [
+      "1 Samuel 3:10"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-01-o-chamado-de-samuel",
+    "id": "samuel-pro-samuel-samuel-01-o-chamado-de-samuel-05",
+    "passageText": "Então, veio Jeová, parou e chamou como das outras vezes: Samuel, Samuel! Respondeu ele: Fala, pois o teu servo ouve.",
+    "type": "complete",
+    "question": "Complete a frase: \"Então, veio Jeová, ___ e chamou como das outras vezes: Samuel, Samuel!\"",
+    "prompt": "Complete a frase: \"Então, veio Jeová, ___ e chamou como das outras vezes: Samuel, Samuel!\"",
+    "cue": "Complete a frase: \"Então, veio Jeová, ___ e chamou como das outras vezes: Samuel, Samuel!\"",
+    "template": "Então, veio Jeová, ___ e chamou como das outras vezes: Samuel, Samuel!",
+    "feedbackCorrect": "Certo: essa lacuna aponta o foco teológico do verso.",
+    "feedbackWrong": {
+      "b": "Essa opção não completa esta lacuna no texto.",
+      "c": "Essa opção não completa esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "parou"
+      },
+      {
+        "id": "b",
+        "text": "servo"
+      },
+      {
+        "id": "c",
+        "text": "Eli"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 3:10",
+    "learningObjective": "Reconhecer que Jeová chama Samuel e o servo responde ouvindo a sua voz.",
+    "evidence": [
+      "1 Samuel 3:10"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-01-o-chamado-de-samuel",
+    "id": "samuel-pro-samuel-samuel-01-o-chamado-de-samuel-06",
+    "passageText": "Então, veio Jeová, parou e chamou como das outras vezes: Samuel, Samuel! Respondeu ele: Fala, pois o teu servo ouve.",
+    "type": "connect",
+    "question": "O que 1 Samuel 3:10 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Samuel 3:10 comunica que se liga a este contexto?",
+    "cue": "O que 1 Samuel 3:10 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: essa ponte interpreta o sentido da missão.",
+    "feedbackWrong": {
+      "b": "Essa leitura não interpreta bem o vínculo com o contexto.",
+      "c": "Essa leitura não interpreta bem o vínculo com o contexto."
+    },
+    "passageA": {
+      "ref": "1 Samuel 3:10",
+      "text": "Então, veio Jeová, parou e chamou como das outras vezes: Samuel, Samuel! Respondeu ele: Fala, pois o teu servo ouve."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jeová chama; o servo ouve."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Vocação começa quando o servo ouve"
+      },
+      {
+        "id": "b",
+        "text": "Vocação nasce sem qualquer escuta da voz divina"
+      },
+      {
+        "id": "c",
+        "text": "O servo ouve apenas para obter poder político"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 8:7",
+    "learningObjective": "Compreender que o pedido de rei rejeita o reinado de Jeová, não só a Samuel.",
+    "evidence": [
+      "1 Samuel 8:7"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-02-israel-pede-um-rei",
+    "id": "samuel-sem-samuel-samuel-02-israel-pede-um-rei-01",
+    "passageText": "Disse Jeová a Samuel: Ouve a voz do povo em tudo o que eles te dizem, pois não é a ti que eles rejeitaram, mas a mim, para eu não reinar sobre eles.",
+    "type": "true_false",
+    "question": "Jeová diz a Samuel que o povo rejeitou a ele, Jeová, para que não reinasse sobre eles.",
+    "prompt": "Jeová diz a Samuel que o povo rejeitou a ele, Jeová, para que não reinasse sobre eles.",
+    "cue": "Jeová diz a Samuel que o povo rejeitou a ele, Jeová, para que não reinasse sobre eles.",
+    "feedbackCorrect": "Certo: a rejeição aponta para Jeová, não só para Samuel.",
+    "feedbackWrong": {
+      "false": "Releia: não é a ti que rejeitaram, mas a mim."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 8:7",
+    "learningObjective": "Compreender que o pedido de rei rejeita o reinado de Jeová, não só a Samuel.",
+    "evidence": [
+      "1 Samuel 8:7"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-02-israel-pede-um-rei",
+    "id": "samuel-sem-samuel-samuel-02-israel-pede-um-rei-02",
+    "passageText": "Disse Jeová a Samuel: Ouve a voz do povo em tudo o que eles te dizem, pois não é a ti que eles rejeitaram, mas a mim, para eu não reinar sobre eles.",
+    "type": "tap",
+    "question": "Em 1 Samuel 8:7, toque a palavra que falta em \"pois não é a ti que eles ___, mas a mim, para eu não reinar sobre eles\"?",
+    "prompt": "Em 1 Samuel 8:7, toque a palavra que falta em \"pois não é a ti que eles ___, mas a mim, para eu não reinar sobre eles\"?",
+    "cue": "Em 1 Samuel 8:7, toque a palavra que falta em \"pois não é a ti que eles ___, mas a mim, para eu não reinar sobre eles\"?",
+    "template": "pois não é a ti que eles ___, mas a mim, para eu não reinar sobre eles",
+    "feedbackCorrect": "Exato: essa é a palavra do versículo.",
+    "feedbackWrong": {
+      "b": "Essa palavra não preenche esta lacuna no texto.",
+      "c": "Essa palavra não preenche esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "rejeitaram"
+      },
+      {
+        "id": "b",
+        "text": "Samuel"
+      },
+      {
+        "id": "c",
+        "text": "povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 8:7",
+    "learningObjective": "Compreender que o pedido de rei rejeita o reinado de Jeová, não só a Samuel.",
+    "evidence": [
+      "1 Samuel 8:7"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-02-israel-pede-um-rei",
+    "id": "samuel-sem-samuel-samuel-02-israel-pede-um-rei-03",
+    "passageText": "Disse Jeová a Samuel: Ouve a voz do povo em tudo o que eles te dizem, pois não é a ti que eles rejeitaram, mas a mim, para eu não reinar sobre eles.",
+    "type": "choice",
+    "question": "O que Jeová afirma sobre a rejeição do povo?",
+    "prompt": "O que Jeová afirma sobre a rejeição do povo?",
+    "cue": "O que Jeová afirma sobre a rejeição do povo?",
+    "feedbackCorrect": "Certo: o texto afirma isso diretamente.",
+    "feedbackWrong": {
+      "b": "Jeová liga o pedido à rejeição do seu reinado.",
+      "c": "Jeová diz que a rejeição é a ele, não só a Samuel.",
+      "d": "O pedido é lido como rejeição, não como fidelidade."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Não é a Samuel que rejeitaram, mas a Jeová, para não reinar sobre eles"
+      },
+      {
+        "id": "b",
+        "text": "O povo rejeita apenas costumes locais, sem relação com Jeová"
+      },
+      {
+        "id": "c",
+        "text": "Jeová diz que Samuel é o único rejeitado pelo povo"
+      },
+      {
+        "id": "d",
+        "text": "O pedido de rei é aprovado como fidelidade plena a Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 8:7",
+    "learningObjective": "Compreender que o pedido de rei rejeita o reinado de Jeová, não só a Samuel.",
+    "evidence": [
+      "1 Samuel 8:7"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-02-israel-pede-um-rei",
+    "id": "samuel-sem-samuel-samuel-02-israel-pede-um-rei-04",
+    "passageText": "Disse Jeová a Samuel: Ouve a voz do povo em tudo o que eles te dizem, pois não é a ti que eles rejeitaram, mas a mim, para eu não reinar sobre eles.",
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em 1 Samuel 8:7?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 1 Samuel 8:7?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 1 Samuel 8:7?",
+    "feedbackCorrect": "Certo: essa é a sequência dos fatos no texto.",
+    "feedbackWrong": {
+      "b": "Releia a ordem: o meio do relato não vem primeiro.",
+      "c": "Releia a ordem: o fim do relato não abre a sequência."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Disse Jeová a Samuel: Ouve a voz do povo em tudo o que eles te dizem"
+      },
+      {
+        "id": "b",
+        "text": "pois não é a ti que eles rejeitaram, mas a mim"
+      },
+      {
+        "id": "c",
+        "text": "para eu não reinar sobre eles"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 8:7",
+    "learningObjective": "Compreender que o pedido de rei rejeita o reinado de Jeová, não só a Samuel.",
+    "evidence": [
+      "1 Samuel 8:7"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-02-israel-pede-um-rei",
+    "id": "samuel-sem-samuel-samuel-02-israel-pede-um-rei-05",
+    "passageText": "Disse Jeová a Samuel: Ouve a voz do povo em tudo o que eles te dizem, pois não é a ti que eles rejeitaram, mas a mim, para eu não reinar sobre eles.",
+    "type": "complete",
+    "question": "Complete a frase: \"Disse ___ a Samuel: Ouve a voz do povo em tudo o que eles te dizem\"",
+    "prompt": "Complete a frase: \"Disse ___ a Samuel: Ouve a voz do povo em tudo o que eles te dizem\"",
+    "cue": "Complete a frase: \"Disse ___ a Samuel: Ouve a voz do povo em tudo o que eles te dizem\"",
+    "template": "Disse ___ a Samuel: Ouve a voz do povo em tudo o que eles te dizem",
+    "feedbackCorrect": "Certo: essa é a palavra que completa o versículo.",
+    "feedbackWrong": {
+      "b": "Essa opção não completa esta lacuna no texto.",
+      "c": "Essa opção não completa esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "povo"
+      },
+      {
+        "id": "c",
+        "text": "rei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 8:7",
+    "learningObjective": "Compreender que o pedido de rei rejeita o reinado de Jeová, não só a Samuel.",
+    "evidence": [
+      "1 Samuel 8:7"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-02-israel-pede-um-rei",
+    "id": "samuel-sem-samuel-samuel-02-israel-pede-um-rei-06",
+    "passageText": "Disse Jeová a Samuel: Ouve a voz do povo em tudo o que eles te dizem, pois não é a ti que eles rejeitaram, mas a mim, para eu não reinar sobre eles.",
+    "type": "connect",
+    "question": "O que 1 Samuel 8:7 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Samuel 8:7 comunica que se liga a este contexto?",
+    "cue": "O que 1 Samuel 8:7 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: essa é a ponte entre o texto e o insight da missão.",
+    "feedbackWrong": {
+      "b": "Essa leitura não liga o versículo ao contexto da missão.",
+      "c": "Essa leitura não liga o versículo ao contexto da missão."
+    },
+    "passageA": {
+      "ref": "1 Samuel 8:7",
+      "text": "Disse Jeová a Samuel: Ouve a voz do povo em tudo o que eles te dizem, pois não é a ti que eles rejeitaram, mas a mim, para eu não reinar sobre eles."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Pedir rei rejeita o reinado de Jeová."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pedido de rei rejeita Jeová"
+      },
+      {
+        "id": "b",
+        "text": "O pedido reforça o reinado direto de Jeová"
+      },
+      {
+        "id": "c",
+        "text": "A rejeição atinge só Samuel, nunca a Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 8:7",
+    "learningObjective": "Compreender que o pedido de rei rejeita o reinado de Jeová, não só a Samuel.",
+    "evidence": [
+      "1 Samuel 8:7"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-02-israel-pede-um-rei",
+    "id": "samuel-cam-samuel-samuel-02-israel-pede-um-rei-01",
+    "passageText": "Disse Jeová a Samuel: Ouve a voz do povo em tudo o que eles te dizem, pois não é a ti que eles rejeitaram, mas a mim, para eu não reinar sobre eles.",
+    "type": "true_false",
+    "question": "Jeová ordena que Samuel ouça a voz do povo, explicando que a rejeição é ao reinado divino.",
+    "prompt": "Jeová ordena que Samuel ouça a voz do povo, explicando que a rejeição é ao reinado divino.",
+    "cue": "Jeová ordena que Samuel ouça a voz do povo, explicando que a rejeição é ao reinado divino.",
+    "feedbackCorrect": "Certo: ouvir o povo e revelar a rejeição a Jeová vão juntos.",
+    "feedbackWrong": {
+      "false": "Jeová une a ordem e a explicação da rejeição."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 8:7",
+    "learningObjective": "Compreender que o pedido de rei rejeita o reinado de Jeová, não só a Samuel.",
+    "evidence": [
+      "1 Samuel 8:7"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-02-israel-pede-um-rei",
+    "id": "samuel-cam-samuel-samuel-02-israel-pede-um-rei-02",
+    "passageText": "Disse Jeová a Samuel: Ouve a voz do povo em tudo o que eles te dizem, pois não é a ti que eles rejeitaram, mas a mim, para eu não reinar sobre eles.",
+    "type": "tap",
+    "question": "Em 1 Samuel 8:7, toque a palavra que falta em \"para eu não ___ sobre eles\"?",
+    "prompt": "Em 1 Samuel 8:7, toque a palavra que falta em \"para eu não ___ sobre eles\"?",
+    "cue": "Em 1 Samuel 8:7, toque a palavra que falta em \"para eu não ___ sobre eles\"?",
+    "template": "para eu não ___ sobre eles",
+    "feedbackCorrect": "Exato: essa é a palavra-chave nesta lacuna.",
+    "feedbackWrong": {
+      "b": "Essa palavra não preenche esta lacuna no texto.",
+      "c": "Essa palavra não preenche esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "reinar"
+      },
+      {
+        "id": "b",
+        "text": "Samuel"
+      },
+      {
+        "id": "c",
+        "text": "povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 8:7",
+    "learningObjective": "Compreender que o pedido de rei rejeita o reinado de Jeová, não só a Samuel.",
+    "evidence": [
+      "1 Samuel 8:7"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-02-israel-pede-um-rei",
+    "id": "samuel-cam-samuel-samuel-02-israel-pede-um-rei-03",
+    "passageText": "Disse Jeová a Samuel: Ouve a voz do povo em tudo o que eles te dizem, pois não é a ti que eles rejeitaram, mas a mim, para eu não reinar sobre eles.",
+    "type": "choice",
+    "question": "Qual relação o texto estabelece entre o pedido do povo e Jeová?",
+    "prompt": "Qual relação o texto estabelece entre o pedido do povo e Jeová?",
+    "cue": "Qual relação o texto estabelece entre o pedido do povo e Jeová?",
+    "feedbackCorrect": "Certo: essa leitura conecta bem o texto ao contexto.",
+    "feedbackWrong": {
+      "b": "O texto diz o contrário: rejeitam para Jeová não reinar.",
+      "c": "Jeová declara que a rejeição é a ele.",
+      "d": "Não há celebração; há diagnóstico de rejeição."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pedir rei é rejeitar que Jeová reine sobre o povo"
+      },
+      {
+        "id": "b",
+        "text": "Pedir rei fortalece o reinado direto de Jeová sem mediação"
+      },
+      {
+        "id": "c",
+        "text": "O conflito é só entre Samuel e o povo, sem tocante a Deus"
+      },
+      {
+        "id": "d",
+        "text": "Jeová celebra o pedido como sinal de maturidade política"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 8:7",
+    "learningObjective": "Compreender que o pedido de rei rejeita o reinado de Jeová, não só a Samuel.",
+    "evidence": [
+      "1 Samuel 8:7"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-02-israel-pede-um-rei",
+    "id": "samuel-cam-samuel-samuel-02-israel-pede-um-rei-04",
+    "passageText": "Disse Jeová a Samuel: Ouve a voz do povo em tudo o que eles te dizem, pois não é a ti que eles rejeitaram, mas a mim, para eu não reinar sobre eles.",
+    "type": "order",
+    "question": "Como se encadeiam os eventos de 1 Samuel 8:7?",
+    "prompt": "Como se encadeiam os eventos de 1 Samuel 8:7?",
+    "cue": "Como se encadeiam os eventos de 1 Samuel 8:7?",
+    "feedbackCorrect": "Certo: esse é o encadeamento do relato.",
+    "feedbackWrong": {
+      "b": "Releia a ordem: o meio do relato não vem primeiro.",
+      "c": "Releia a ordem: o fim do relato não abre a sequência."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Disse Jeová a Samuel: Ouve a voz do povo em tudo o que eles te dizem"
+      },
+      {
+        "id": "b",
+        "text": "pois não é a ti que eles rejeitaram, mas a mim"
+      },
+      {
+        "id": "c",
+        "text": "para eu não reinar sobre eles"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 8:7",
+    "learningObjective": "Compreender que o pedido de rei rejeita o reinado de Jeová, não só a Samuel.",
+    "evidence": [
+      "1 Samuel 8:7"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-02-israel-pede-um-rei",
+    "id": "samuel-cam-samuel-samuel-02-israel-pede-um-rei-05",
+    "passageText": "Disse Jeová a Samuel: Ouve a voz do povo em tudo o que eles te dizem, pois não é a ti que eles rejeitaram, mas a mim, para eu não reinar sobre eles.",
+    "type": "complete",
+    "question": "Complete a frase: \"pois não é a ti que eles rejeitaram, mas a ___, para eu não reinar sobre eles\"",
+    "prompt": "Complete a frase: \"pois não é a ti que eles rejeitaram, mas a ___, para eu não reinar sobre eles\"",
+    "cue": "Complete a frase: \"pois não é a ti que eles rejeitaram, mas a ___, para eu não reinar sobre eles\"",
+    "template": "pois não é a ti que eles rejeitaram, mas a ___, para eu não reinar sobre eles",
+    "feedbackCorrect": "Certo: essa palavra completa o sentido do versículo.",
+    "feedbackWrong": {
+      "b": "Essa opção não completa esta lacuna no texto.",
+      "c": "Essa opção não completa esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "mim"
+      },
+      {
+        "id": "b",
+        "text": "Samuel"
+      },
+      {
+        "id": "c",
+        "text": "povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 8:7",
+    "learningObjective": "Compreender que o pedido de rei rejeita o reinado de Jeová, não só a Samuel.",
+    "evidence": [
+      "1 Samuel 8:7"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-02-israel-pede-um-rei",
+    "id": "samuel-cam-samuel-samuel-02-israel-pede-um-rei-06",
+    "passageText": "Disse Jeová a Samuel: Ouve a voz do povo em tudo o que eles te dizem, pois não é a ti que eles rejeitaram, mas a mim, para eu não reinar sobre eles.",
+    "type": "connect",
+    "question": "O que 1 Samuel 8:7 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Samuel 8:7 comunica que se liga a este contexto?",
+    "cue": "O que 1 Samuel 8:7 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: essa ponte mostra a relação pedida pelo texto.",
+    "feedbackWrong": {
+      "b": "Essa leitura não captura a ponte com o contexto.",
+      "c": "Essa leitura não captura a ponte com o contexto."
+    },
+    "passageA": {
+      "ref": "1 Samuel 8:7",
+      "text": "Disse Jeová a Samuel: Ouve a voz do povo em tudo o que eles te dizem, pois não é a ti que eles rejeitaram, mas a mim, para eu não reinar sobre eles."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Pedir rei rejeita o reinado de Jeová."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Rejeição do reinado de Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Jeová celebra o pedido como fidelidade plena"
+      },
+      {
+        "id": "c",
+        "text": "O povo rejeita costumes locais, não o reinado divino"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 8:7",
+    "learningObjective": "Compreender que o pedido de rei rejeita o reinado de Jeová, não só a Samuel.",
+    "evidence": [
+      "1 Samuel 8:7"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-02-israel-pede-um-rei",
+    "id": "samuel-pro-samuel-samuel-02-israel-pede-um-rei-01",
+    "passageText": "Disse Jeová a Samuel: Ouve a voz do povo em tudo o que eles te dizem, pois não é a ti que eles rejeitaram, mas a mim, para eu não reinar sobre eles.",
+    "type": "true_false",
+    "question": "O pedido de rei revela que o povo prefere um rei humano ao reinado de Jeová.",
+    "prompt": "O pedido de rei revela que o povo prefere um rei humano ao reinado de Jeová.",
+    "cue": "O pedido de rei revela que o povo prefere um rei humano ao reinado de Jeová.",
+    "feedbackCorrect": "Certo: o sentido teológico é a troca do reinado divino.",
+    "feedbackWrong": {
+      "false": "Jeová interpreta o pedido como rejeição a si."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 8:7",
+    "learningObjective": "Compreender que o pedido de rei rejeita o reinado de Jeová, não só a Samuel.",
+    "evidence": [
+      "1 Samuel 8:7"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-02-israel-pede-um-rei",
+    "id": "samuel-pro-samuel-samuel-02-israel-pede-um-rei-02",
+    "passageText": "Disse Jeová a Samuel: Ouve a voz do povo em tudo o que eles te dizem, pois não é a ti que eles rejeitaram, mas a mim, para eu não reinar sobre eles.",
+    "type": "tap",
+    "question": "Em 1 Samuel 8:7, toque a palavra que falta em \"Ouve a ___ do povo em tudo o que eles te dizem\"?",
+    "prompt": "Em 1 Samuel 8:7, toque a palavra que falta em \"Ouve a ___ do povo em tudo o que eles te dizem\"?",
+    "cue": "Em 1 Samuel 8:7, toque a palavra que falta em \"Ouve a ___ do povo em tudo o que eles te dizem\"?",
+    "template": "Ouve a ___ do povo em tudo o que eles te dizem",
+    "feedbackCorrect": "Exato: essa palavra sustenta o sentido do trecho.",
+    "feedbackWrong": {
+      "b": "Essa palavra não preenche esta lacuna no texto.",
+      "c": "Essa palavra não preenche esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "voz"
+      },
+      {
+        "id": "b",
+        "text": "Jeová"
+      },
+      {
+        "id": "c",
+        "text": "rei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 8:7",
+    "learningObjective": "Compreender que o pedido de rei rejeita o reinado de Jeová, não só a Samuel.",
+    "evidence": [
+      "1 Samuel 8:7"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-02-israel-pede-um-rei",
+    "id": "samuel-pro-samuel-samuel-02-israel-pede-um-rei-03",
+    "passageText": "Disse Jeová a Samuel: Ouve a voz do povo em tudo o que eles te dizem, pois não é a ti que eles rejeitaram, mas a mim, para eu não reinar sobre eles.",
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de 1 Samuel 8:7?",
+    "prompt": "Qual leitura interpreta melhor o sentido de 1 Samuel 8:7?",
+    "cue": "Qual leitura interpreta melhor o sentido de 1 Samuel 8:7?",
+    "feedbackCorrect": "Certo: essa interpretação respeita o sentido do texto.",
+    "feedbackWrong": {
+      "b": "Jeová não perde autoridade; o povo é quem rejeita.",
+      "c": "Jeová isenta Samuel: a rejeição é a mim.",
+      "d": "O problema é rejeitar o reinado de Jeová, não governo em si."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O desejo de rei humano denuncia rejeição do reinado de Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Jeová perde autoridade e precisa de um rei para governar"
+      },
+      {
+        "id": "c",
+        "text": "Samuel é culpado sozinho pelo pedido político de Israel"
+      },
+      {
+        "id": "d",
+        "text": "O texto ensina que qualquer forma de governo anula a fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 8:7",
+    "learningObjective": "Compreender que o pedido de rei rejeita o reinado de Jeová, não só a Samuel.",
+    "evidence": [
+      "1 Samuel 8:7"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-02-israel-pede-um-rei",
+    "id": "samuel-pro-samuel-samuel-02-israel-pede-um-rei-04",
+    "passageText": "Disse Jeová a Samuel: Ouve a voz do povo em tudo o que eles te dizem, pois não é a ti que eles rejeitaram, mas a mim, para eu não reinar sobre eles.",
+    "type": "order",
+    "question": "Qual sequência revela o sentido de 1 Samuel 8:7?",
+    "prompt": "Qual sequência revela o sentido de 1 Samuel 8:7?",
+    "cue": "Qual sequência revela o sentido de 1 Samuel 8:7?",
+    "feedbackCorrect": "Certo: essa sequência revela o sentido do trecho.",
+    "feedbackWrong": {
+      "b": "Releia a ordem: o meio do relato não vem primeiro.",
+      "c": "Releia a ordem: o fim do relato não abre a sequência."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Disse Jeová a Samuel: Ouve a voz do povo em tudo o que eles te dizem"
+      },
+      {
+        "id": "b",
+        "text": "pois não é a ti que eles rejeitaram, mas a mim"
+      },
+      {
+        "id": "c",
+        "text": "para eu não reinar sobre eles"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 8:7",
+    "learningObjective": "Compreender que o pedido de rei rejeita o reinado de Jeová, não só a Samuel.",
+    "evidence": [
+      "1 Samuel 8:7"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-02-israel-pede-um-rei",
+    "id": "samuel-pro-samuel-samuel-02-israel-pede-um-rei-05",
+    "passageText": "Disse Jeová a Samuel: Ouve a voz do povo em tudo o que eles te dizem, pois não é a ti que eles rejeitaram, mas a mim, para eu não reinar sobre eles.",
+    "type": "complete",
+    "question": "Complete a frase: \"Ouve a voz do ___ em tudo o que eles te dizem\"",
+    "prompt": "Complete a frase: \"Ouve a voz do ___ em tudo o que eles te dizem\"",
+    "cue": "Complete a frase: \"Ouve a voz do ___ em tudo o que eles te dizem\"",
+    "template": "Ouve a voz do ___ em tudo o que eles te dizem",
+    "feedbackCorrect": "Certo: essa lacuna aponta o foco teológico do verso.",
+    "feedbackWrong": {
+      "b": "Essa opção não completa esta lacuna no texto.",
+      "c": "Essa opção não completa esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "povo"
+      },
+      {
+        "id": "b",
+        "text": "Jeová"
+      },
+      {
+        "id": "c",
+        "text": "rei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 8:7",
+    "learningObjective": "Compreender que o pedido de rei rejeita o reinado de Jeová, não só a Samuel.",
+    "evidence": [
+      "1 Samuel 8:7"
+    ],
+    "trail": "samuel",
+    "section": "samuel-samuel-02-israel-pede-um-rei",
+    "id": "samuel-pro-samuel-samuel-02-israel-pede-um-rei-06",
+    "passageText": "Disse Jeová a Samuel: Ouve a voz do povo em tudo o que eles te dizem, pois não é a ti que eles rejeitaram, mas a mim, para eu não reinar sobre eles.",
+    "type": "connect",
+    "question": "O que 1 Samuel 8:7 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Samuel 8:7 comunica que se liga a este contexto?",
+    "cue": "O que 1 Samuel 8:7 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: essa ponte interpreta o sentido da missão.",
+    "feedbackWrong": {
+      "b": "Essa leitura não interpreta bem o vínculo com o contexto.",
+      "c": "Essa leitura não interpreta bem o vínculo com o contexto."
+    },
+    "passageA": {
+      "ref": "1 Samuel 8:7",
+      "text": "Disse Jeová a Samuel: Ouve a voz do povo em tudo o que eles te dizem, pois não é a ti que eles rejeitaram, mas a mim, para eu não reinar sobre eles."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Pedir rei rejeita o reinado de Jeová."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Troca do reinado divino por rei"
+      },
+      {
+        "id": "b",
+        "text": "Jeová perde autoridade e precisa de rei humano"
+      },
+      {
+        "id": "c",
+        "text": "Qualquer governo anula automaticamente a fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 10:1",
+    "learningObjective": "Reconhecer que Jeová unge Saul como príncipe sobre a sua herança.",
+    "evidence": [
+      "1 Samuel 10:1"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-01-saul-ungido",
+    "id": "samuel-sem-samuel-saul-01-saul-ungido-01",
+    "passageText": "Tomou Samuel o vaso de óleo, e lho derramou sobre a cabeça, e o beijou, e disse: Não te ungiu Jeová para ser príncipe sobre a sua herança?",
+    "type": "true_false",
+    "question": "Samuel derramou óleo sobre a cabeça de Saul e o beijou.",
+    "prompt": "Samuel derramou óleo sobre a cabeça de Saul e o beijou.",
+    "cue": "Samuel derramou óleo sobre a cabeça de Saul e o beijou.",
+    "feedbackCorrect": "Certo: o texto registra o óleo, a cabeça e o beijo.",
+    "feedbackWrong": {
+      "false": "Releia: tomou o vaso, derramou e beijou."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 10:1",
+    "learningObjective": "Reconhecer que Jeová unge Saul como príncipe sobre a sua herança.",
+    "evidence": [
+      "1 Samuel 10:1"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-01-saul-ungido",
+    "id": "samuel-sem-samuel-saul-01-saul-ungido-02",
+    "passageText": "Tomou Samuel o vaso de óleo, e lho derramou sobre a cabeça, e o beijou, e disse: Não te ungiu Jeová para ser príncipe sobre a sua herança?",
+    "type": "tap",
+    "question": "Em 1 Samuel 10:1, toque a palavra que falta em \"Tomou Samuel o vaso de ___, e lho derramou sobre a cabeça\"?",
+    "prompt": "Em 1 Samuel 10:1, toque a palavra que falta em \"Tomou Samuel o vaso de ___, e lho derramou sobre a cabeça\"?",
+    "cue": "Em 1 Samuel 10:1, toque a palavra que falta em \"Tomou Samuel o vaso de ___, e lho derramou sobre a cabeça\"?",
+    "template": "Tomou Samuel o vaso de ___, e lho derramou sobre a cabeça",
+    "feedbackCorrect": "Exato: essa é a palavra do versículo.",
+    "feedbackWrong": {
+      "b": "Essa palavra não preenche esta lacuna no texto.",
+      "c": "Essa palavra não preenche esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "óleo"
+      },
+      {
+        "id": "b",
+        "text": "Jeová"
+      },
+      {
+        "id": "c",
+        "text": "herança"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 10:1",
+    "learningObjective": "Reconhecer que Jeová unge Saul como príncipe sobre a sua herança.",
+    "evidence": [
+      "1 Samuel 10:1"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-01-saul-ungido",
+    "id": "samuel-sem-samuel-saul-01-saul-ungido-03",
+    "passageText": "Tomou Samuel o vaso de óleo, e lho derramou sobre a cabeça, e o beijou, e disse: Não te ungiu Jeová para ser príncipe sobre a sua herança?",
+    "type": "choice",
+    "question": "Qual fato o texto afirma sobre a unção de Saul?",
+    "prompt": "Qual fato o texto afirma sobre a unção de Saul?",
+    "cue": "Qual fato o texto afirma sobre a unção de Saul?",
+    "feedbackCorrect": "Certo: o texto afirma isso diretamente.",
+    "feedbackWrong": {
+      "b": "Samuel realiza a unção; Saul não se unge sozinho.",
+      "c": "O texto fala de príncipe sobre a herança, não de sacerdote.",
+      "d": "Samuel afirma a unção de Jeová; não há recusa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Samuel ungiu Saul e declarou que Jeová o ungiu príncipe sobre a herança"
+      },
+      {
+        "id": "b",
+        "text": "Saul se unge a si mesmo sem participação de Samuel"
+      },
+      {
+        "id": "c",
+        "text": "A unção serve apenas para nomear um sacerdote do templo"
+      },
+      {
+        "id": "d",
+        "text": "Jeová recusa a unção e manda Samuel parar o rito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 10:1",
+    "learningObjective": "Reconhecer que Jeová unge Saul como príncipe sobre a sua herança.",
+    "evidence": [
+      "1 Samuel 10:1"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-01-saul-ungido",
+    "id": "samuel-sem-samuel-saul-01-saul-ungido-04",
+    "passageText": "Tomou Samuel o vaso de óleo, e lho derramou sobre a cabeça, e o beijou, e disse: Não te ungiu Jeová para ser príncipe sobre a sua herança?",
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em 1 Samuel 10:1?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 1 Samuel 10:1?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 1 Samuel 10:1?",
+    "feedbackCorrect": "Certo: essa é a sequência dos fatos no texto.",
+    "feedbackWrong": {
+      "b": "Releia a ordem: o meio do relato não vem primeiro.",
+      "c": "Releia a ordem: o fim do relato não abre a sequência."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Tomou Samuel o vaso de óleo, e lho derramou sobre a cabeça"
+      },
+      {
+        "id": "b",
+        "text": "e o beijou"
+      },
+      {
+        "id": "c",
+        "text": "e disse: Não te ungiu Jeová para ser príncipe sobre a sua herança?"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 10:1",
+    "learningObjective": "Reconhecer que Jeová unge Saul como príncipe sobre a sua herança.",
+    "evidence": [
+      "1 Samuel 10:1"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-01-saul-ungido",
+    "id": "samuel-sem-samuel-saul-01-saul-ungido-05",
+    "passageText": "Tomou Samuel o vaso de óleo, e lho derramou sobre a cabeça, e o beijou, e disse: Não te ungiu Jeová para ser príncipe sobre a sua herança?",
+    "type": "complete",
+    "question": "Complete a frase: \"e disse: Não te ungiu ___ para ser príncipe sobre a sua herança?\"",
+    "prompt": "Complete a frase: \"e disse: Não te ungiu ___ para ser príncipe sobre a sua herança?\"",
+    "cue": "Complete a frase: \"e disse: Não te ungiu ___ para ser príncipe sobre a sua herança?\"",
+    "template": "e disse: Não te ungiu ___ para ser príncipe sobre a sua herança?",
+    "feedbackCorrect": "Certo: essa é a palavra que completa o versículo.",
+    "feedbackWrong": {
+      "b": "Essa opção não completa esta lacuna no texto.",
+      "c": "Essa opção não completa esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Samuel"
+      },
+      {
+        "id": "c",
+        "text": "óleo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 10:1",
+    "learningObjective": "Reconhecer que Jeová unge Saul como príncipe sobre a sua herança.",
+    "evidence": [
+      "1 Samuel 10:1"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-01-saul-ungido",
+    "id": "samuel-sem-samuel-saul-01-saul-ungido-06",
+    "passageText": "Tomou Samuel o vaso de óleo, e lho derramou sobre a cabeça, e o beijou, e disse: Não te ungiu Jeová para ser príncipe sobre a sua herança?",
+    "type": "connect",
+    "question": "O que 1 Samuel 10:1 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Samuel 10:1 comunica que se liga a este contexto?",
+    "cue": "O que 1 Samuel 10:1 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: essa é a ponte entre o texto e o insight da missão.",
+    "feedbackWrong": {
+      "b": "Essa leitura não liga o versículo ao contexto da missão.",
+      "c": "Essa leitura não liga o versículo ao contexto da missão."
+    },
+    "passageA": {
+      "ref": "1 Samuel 10:1",
+      "text": "Tomou Samuel o vaso de óleo, e lho derramou sobre a cabeça, e o beijou, e disse: Não te ungiu Jeová para ser príncipe sobre a sua herança?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jeová unge Saul príncipe sobre a herança."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová unge Saul príncipe"
+      },
+      {
+        "id": "b",
+        "text": "Saul se unge sozinho sem Samuel"
+      },
+      {
+        "id": "c",
+        "text": "A unção nomeia apenas um sacerdote do templo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 10:1",
+    "learningObjective": "Reconhecer que Jeová unge Saul como príncipe sobre a sua herança.",
+    "evidence": [
+      "1 Samuel 10:1"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-01-saul-ungido",
+    "id": "samuel-cam-samuel-saul-01-saul-ungido-01",
+    "passageText": "Tomou Samuel o vaso de óleo, e lho derramou sobre a cabeça, e o beijou, e disse: Não te ungiu Jeová para ser príncipe sobre a sua herança?",
+    "type": "true_false",
+    "question": "Jeová ungiu Saul para ser príncipe sobre a sua herança.",
+    "prompt": "Jeová ungiu Saul para ser príncipe sobre a sua herança.",
+    "cue": "Jeová ungiu Saul para ser príncipe sobre a sua herança.",
+    "feedbackCorrect": "Certo: a pergunta retórica afirma a unção de Jeová.",
+    "feedbackWrong": {
+      "false": "O gesto e a palavra apontam: Jeová ungiu Saul príncipe."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 10:1",
+    "learningObjective": "Reconhecer que Jeová unge Saul como príncipe sobre a sua herança.",
+    "evidence": [
+      "1 Samuel 10:1"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-01-saul-ungido",
+    "id": "samuel-cam-samuel-saul-01-saul-ungido-02",
+    "passageText": "Tomou Samuel o vaso de óleo, e lho derramou sobre a cabeça, e o beijou, e disse: Não te ungiu Jeová para ser príncipe sobre a sua herança?",
+    "type": "tap",
+    "question": "Em 1 Samuel 10:1, toque a palavra que falta em \"Não te ungiu Jeová para ser ___ sobre a sua herança?\"?",
+    "prompt": "Em 1 Samuel 10:1, toque a palavra que falta em \"Não te ungiu Jeová para ser ___ sobre a sua herança?\"?",
+    "cue": "Em 1 Samuel 10:1, toque a palavra que falta em \"Não te ungiu Jeová para ser ___ sobre a sua herança?\"?",
+    "template": "Não te ungiu Jeová para ser ___ sobre a sua herança?",
+    "feedbackCorrect": "Exato: essa é a palavra-chave nesta lacuna.",
+    "feedbackWrong": {
+      "b": "Essa palavra não preenche esta lacuna no texto.",
+      "c": "Essa palavra não preenche esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "príncipe"
+      },
+      {
+        "id": "b",
+        "text": "óleo"
+      },
+      {
+        "id": "c",
+        "text": "Samuel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 10:1",
+    "learningObjective": "Reconhecer que Jeová unge Saul como príncipe sobre a sua herança.",
+    "evidence": [
+      "1 Samuel 10:1"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-01-saul-ungido",
+    "id": "samuel-cam-samuel-saul-01-saul-ungido-03",
+    "passageText": "Tomou Samuel o vaso de óleo, e lho derramou sobre a cabeça, e o beijou, e disse: Não te ungiu Jeová para ser príncipe sobre a sua herança?",
+    "type": "choice",
+    "question": "Como o rito de Samuel se liga à ação de Jeová?",
+    "prompt": "Como o rito de Samuel se liga à ação de Jeová?",
+    "cue": "Como o rito de Samuel se liga à ação de Jeová?",
+    "feedbackCorrect": "Certo: essa leitura conecta bem o texto ao contexto.",
+    "feedbackWrong": {
+      "b": "Samuel declara: Não te ungiu Jeová…",
+      "c": "O foco é o ofício de príncipe, não só amizade.",
+      "d": "O beijo acompanha a unção; não a anula."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O óleo e a palavra mostram que Jeová constitui Saul príncipe"
+      },
+      {
+        "id": "b",
+        "text": "Samuel unge por conta própria, sem referência a Jeová"
+      },
+      {
+        "id": "c",
+        "text": "A unção apenas celebra amizade entre Samuel e Saul"
+      },
+      {
+        "id": "d",
+        "text": "O beijo anula a autoridade do príncipe ungido"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 10:1",
+    "learningObjective": "Reconhecer que Jeová unge Saul como príncipe sobre a sua herança.",
+    "evidence": [
+      "1 Samuel 10:1"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-01-saul-ungido",
+    "id": "samuel-cam-samuel-saul-01-saul-ungido-04",
+    "passageText": "Tomou Samuel o vaso de óleo, e lho derramou sobre a cabeça, e o beijou, e disse: Não te ungiu Jeová para ser príncipe sobre a sua herança?",
+    "type": "order",
+    "question": "Como se encadeiam os eventos de 1 Samuel 10:1?",
+    "prompt": "Como se encadeiam os eventos de 1 Samuel 10:1?",
+    "cue": "Como se encadeiam os eventos de 1 Samuel 10:1?",
+    "feedbackCorrect": "Certo: esse é o encadeamento do relato.",
+    "feedbackWrong": {
+      "b": "Releia a ordem: o meio do relato não vem primeiro.",
+      "c": "Releia a ordem: o fim do relato não abre a sequência."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Tomou Samuel o vaso de óleo, e lho derramou sobre a cabeça"
+      },
+      {
+        "id": "b",
+        "text": "e o beijou"
+      },
+      {
+        "id": "c",
+        "text": "e disse: Não te ungiu Jeová para ser príncipe sobre a sua herança?"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 10:1",
+    "learningObjective": "Reconhecer que Jeová unge Saul como príncipe sobre a sua herança.",
+    "evidence": [
+      "1 Samuel 10:1"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-01-saul-ungido",
+    "id": "samuel-cam-samuel-saul-01-saul-ungido-05",
+    "passageText": "Tomou Samuel o vaso de óleo, e lho derramou sobre a cabeça, e o beijou, e disse: Não te ungiu Jeová para ser príncipe sobre a sua herança?",
+    "type": "complete",
+    "question": "Complete a frase: \"Tomou Samuel o vaso de óleo, e lho derramou sobre a ___, e o beijou\"",
+    "prompt": "Complete a frase: \"Tomou Samuel o vaso de óleo, e lho derramou sobre a ___, e o beijou\"",
+    "cue": "Complete a frase: \"Tomou Samuel o vaso de óleo, e lho derramou sobre a ___, e o beijou\"",
+    "template": "Tomou Samuel o vaso de óleo, e lho derramou sobre a ___, e o beijou",
+    "feedbackCorrect": "Certo: essa palavra completa o sentido do versículo.",
+    "feedbackWrong": {
+      "b": "Essa opção não completa esta lacuna no texto.",
+      "c": "Essa opção não completa esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "cabeça"
+      },
+      {
+        "id": "b",
+        "text": "herança"
+      },
+      {
+        "id": "c",
+        "text": "Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 10:1",
+    "learningObjective": "Reconhecer que Jeová unge Saul como príncipe sobre a sua herança.",
+    "evidence": [
+      "1 Samuel 10:1"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-01-saul-ungido",
+    "id": "samuel-cam-samuel-saul-01-saul-ungido-06",
+    "passageText": "Tomou Samuel o vaso de óleo, e lho derramou sobre a cabeça, e o beijou, e disse: Não te ungiu Jeová para ser príncipe sobre a sua herança?",
+    "type": "connect",
+    "question": "O que 1 Samuel 10:1 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Samuel 10:1 comunica que se liga a este contexto?",
+    "cue": "O que 1 Samuel 10:1 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: essa ponte mostra a relação pedida pelo texto.",
+    "feedbackWrong": {
+      "b": "Essa leitura não captura a ponte com o contexto.",
+      "c": "Essa leitura não captura a ponte com o contexto."
+    },
+    "passageA": {
+      "ref": "1 Samuel 10:1",
+      "text": "Tomou Samuel o vaso de óleo, e lho derramou sobre a cabeça, e o beijou, e disse: Não te ungiu Jeová para ser príncipe sobre a sua herança?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jeová unge Saul príncipe sobre a herança."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Unção divina do príncipe"
+      },
+      {
+        "id": "b",
+        "text": "Samuel unge sem citar a ação de Jeová"
+      },
+      {
+        "id": "c",
+        "text": "O beijo anula a autoridade do príncipe"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 10:1",
+    "learningObjective": "Reconhecer que Jeová unge Saul como príncipe sobre a sua herança.",
+    "evidence": [
+      "1 Samuel 10:1"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-01-saul-ungido",
+    "id": "samuel-pro-samuel-saul-01-saul-ungido-01",
+    "passageText": "Tomou Samuel o vaso de óleo, e lho derramou sobre a cabeça, e o beijou, e disse: Não te ungiu Jeová para ser príncipe sobre a sua herança?",
+    "type": "true_false",
+    "question": "A unção apresenta Saul como príncipe constituído por Jeová sobre a herança do povo.",
+    "prompt": "A unção apresenta Saul como príncipe constituído por Jeová sobre a herança do povo.",
+    "cue": "A unção apresenta Saul como príncipe constituído por Jeová sobre a herança do povo.",
+    "feedbackCorrect": "Certo: o sentido é autoridade dada por Jeová sobre a herança.",
+    "feedbackWrong": {
+      "false": "O texto une óleo, beijo e declaração do príncipe."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 10:1",
+    "learningObjective": "Reconhecer que Jeová unge Saul como príncipe sobre a sua herança.",
+    "evidence": [
+      "1 Samuel 10:1"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-01-saul-ungido",
+    "id": "samuel-pro-samuel-saul-01-saul-ungido-02",
+    "passageText": "Tomou Samuel o vaso de óleo, e lho derramou sobre a cabeça, e o beijou, e disse: Não te ungiu Jeová para ser príncipe sobre a sua herança?",
+    "type": "tap",
+    "question": "Em 1 Samuel 10:1, toque a palavra que falta em \"Não te ungiu Jeová para ser príncipe sobre a sua ___?\"?",
+    "prompt": "Em 1 Samuel 10:1, toque a palavra que falta em \"Não te ungiu Jeová para ser príncipe sobre a sua ___?\"?",
+    "cue": "Em 1 Samuel 10:1, toque a palavra que falta em \"Não te ungiu Jeová para ser príncipe sobre a sua ___?\"?",
+    "template": "Não te ungiu Jeová para ser príncipe sobre a sua ___?",
+    "feedbackCorrect": "Exato: essa palavra sustenta o sentido do trecho.",
+    "feedbackWrong": {
+      "b": "Essa palavra não preenche esta lacuna no texto.",
+      "c": "Essa palavra não preenche esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "herança"
+      },
+      {
+        "id": "b",
+        "text": "óleo"
+      },
+      {
+        "id": "c",
+        "text": "cabeça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 10:1",
+    "learningObjective": "Reconhecer que Jeová unge Saul como príncipe sobre a sua herança.",
+    "evidence": [
+      "1 Samuel 10:1"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-01-saul-ungido",
+    "id": "samuel-pro-samuel-saul-01-saul-ungido-03",
+    "passageText": "Tomou Samuel o vaso de óleo, e lho derramou sobre a cabeça, e o beijou, e disse: Não te ungiu Jeová para ser príncipe sobre a sua herança?",
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de 1 Samuel 10:1?",
+    "prompt": "Qual leitura interpreta melhor o sentido de 1 Samuel 10:1?",
+    "cue": "Qual leitura interpreta melhor o sentido de 1 Samuel 10:1?",
+    "feedbackCorrect": "Certo: essa interpretação respeita o sentido do texto.",
+    "feedbackWrong": {
+      "b": "A autoridade vem da unção de Jeová, não só da força.",
+      "c": "A pergunta afirma unção real para o ofício de príncipe.",
+      "d": "Samuel unge Saul; não se declara rei no lugar dele."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová, por meio de Samuel, constitui Saul príncipe sobre a herança"
+      },
+      {
+        "id": "b",
+        "text": "Saul conquista o trono só pela força militar própria"
+      },
+      {
+        "id": "c",
+        "text": "A unção é um gesto vazio sem compromisso com a herança de Jeová"
+      },
+      {
+        "id": "d",
+        "text": "Samuel se declara rei e usa Saul apenas como testemunha"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 10:1",
+    "learningObjective": "Reconhecer que Jeová unge Saul como príncipe sobre a sua herança.",
+    "evidence": [
+      "1 Samuel 10:1"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-01-saul-ungido",
+    "id": "samuel-pro-samuel-saul-01-saul-ungido-04",
+    "passageText": "Tomou Samuel o vaso de óleo, e lho derramou sobre a cabeça, e o beijou, e disse: Não te ungiu Jeová para ser príncipe sobre a sua herança?",
+    "type": "order",
+    "question": "Qual sequência revela o sentido de 1 Samuel 10:1?",
+    "prompt": "Qual sequência revela o sentido de 1 Samuel 10:1?",
+    "cue": "Qual sequência revela o sentido de 1 Samuel 10:1?",
+    "feedbackCorrect": "Certo: essa sequência revela o sentido do trecho.",
+    "feedbackWrong": {
+      "b": "Releia a ordem: o meio do relato não vem primeiro.",
+      "c": "Releia a ordem: o fim do relato não abre a sequência."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Tomou Samuel o vaso de óleo, e lho derramou sobre a cabeça"
+      },
+      {
+        "id": "b",
+        "text": "e o beijou"
+      },
+      {
+        "id": "c",
+        "text": "e disse: Não te ungiu Jeová para ser príncipe sobre a sua herança?"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 10:1",
+    "learningObjective": "Reconhecer que Jeová unge Saul como príncipe sobre a sua herança.",
+    "evidence": [
+      "1 Samuel 10:1"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-01-saul-ungido",
+    "id": "samuel-pro-samuel-saul-01-saul-ungido-05",
+    "passageText": "Tomou Samuel o vaso de óleo, e lho derramou sobre a cabeça, e o beijou, e disse: Não te ungiu Jeová para ser príncipe sobre a sua herança?",
+    "type": "complete",
+    "question": "Complete a frase: \"Tomou ___ o vaso de óleo, e lho derramou sobre a cabeça, e o beijou\"",
+    "prompt": "Complete a frase: \"Tomou ___ o vaso de óleo, e lho derramou sobre a cabeça, e o beijou\"",
+    "cue": "Complete a frase: \"Tomou ___ o vaso de óleo, e lho derramou sobre a cabeça, e o beijou\"",
+    "template": "Tomou ___ o vaso de óleo, e lho derramou sobre a cabeça, e o beijou",
+    "feedbackCorrect": "Certo: essa lacuna aponta o foco teológico do verso.",
+    "feedbackWrong": {
+      "b": "Essa opção não completa esta lacuna no texto.",
+      "c": "Essa opção não completa esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Samuel"
+      },
+      {
+        "id": "b",
+        "text": "Jeová"
+      },
+      {
+        "id": "c",
+        "text": "príncipe"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 10:1",
+    "learningObjective": "Reconhecer que Jeová unge Saul como príncipe sobre a sua herança.",
+    "evidence": [
+      "1 Samuel 10:1"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-01-saul-ungido",
+    "id": "samuel-pro-samuel-saul-01-saul-ungido-06",
+    "passageText": "Tomou Samuel o vaso de óleo, e lho derramou sobre a cabeça, e o beijou, e disse: Não te ungiu Jeová para ser príncipe sobre a sua herança?",
+    "type": "connect",
+    "question": "O que 1 Samuel 10:1 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Samuel 10:1 comunica que se liga a este contexto?",
+    "cue": "O que 1 Samuel 10:1 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: essa ponte interpreta o sentido da missão.",
+    "feedbackWrong": {
+      "b": "Essa leitura não interpreta bem o vínculo com o contexto.",
+      "c": "Essa leitura não interpreta bem o vínculo com o contexto."
+    },
+    "passageA": {
+      "ref": "1 Samuel 10:1",
+      "text": "Tomou Samuel o vaso de óleo, e lho derramou sobre a cabeça, e o beijou, e disse: Não te ungiu Jeová para ser príncipe sobre a sua herança?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jeová unge Saul príncipe sobre a herança."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Autoridade dada por Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Saul conquista o trono só pela força própria"
+      },
+      {
+        "id": "c",
+        "text": "Samuel se declara rei e usa Saul de testemunha"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 15:22",
+    "learningObjective": "Compreender que obedecer à voz de Jeová é melhor do que oferecer sacrifício.",
+    "evidence": [
+      "1 Samuel 15:22"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-02-desobediencia-de-sau",
+    "id": "samuel-sem-samuel-saul-02-desobediencia-de-sau-01",
+    "passageText": "Disse Samuel: Tem, porventura, Jeová tanto prazer em holocaustos e sacrifícios, quanto tem em que se obedeça à sua voz? Eis que o obedecer é melhor do que o sacrifício, e o atender, do que a gordura de carneiros.",
+    "type": "true_false",
+    "question": "Samuel afirma que o obedecer é melhor do que o sacrifício.",
+    "prompt": "Samuel afirma que o obedecer é melhor do que o sacrifício.",
+    "cue": "Samuel afirma que o obedecer é melhor do que o sacrifício.",
+    "feedbackCorrect": "Certo: o texto declara isso com clareza.",
+    "feedbackWrong": {
+      "false": "Releia: o obedecer é melhor do que o sacrifício."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 15:22",
+    "learningObjective": "Compreender que obedecer à voz de Jeová é melhor do que oferecer sacrifício.",
+    "evidence": [
+      "1 Samuel 15:22"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-02-desobediencia-de-sau",
+    "id": "samuel-sem-samuel-saul-02-desobediencia-de-sau-02",
+    "passageText": "Disse Samuel: Tem, porventura, Jeová tanto prazer em holocaustos e sacrifícios, quanto tem em que se obedeça à sua voz? Eis que o obedecer é melhor do que o sacrifício, e o atender, do que a gordura de carneiros.",
+    "type": "tap",
+    "question": "Em 1 Samuel 15:22, toque a palavra que falta em \"Eis que o ___ é melhor do que o sacrifício\"?",
+    "prompt": "Em 1 Samuel 15:22, toque a palavra que falta em \"Eis que o ___ é melhor do que o sacrifício\"?",
+    "cue": "Em 1 Samuel 15:22, toque a palavra que falta em \"Eis que o ___ é melhor do que o sacrifício\"?",
+    "template": "Eis que o ___ é melhor do que o sacrifício",
+    "feedbackCorrect": "Exato: essa é a palavra do versículo.",
+    "feedbackWrong": {
+      "b": "Essa palavra não preenche esta lacuna no texto.",
+      "c": "Essa palavra não preenche esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "obedecer"
+      },
+      {
+        "id": "b",
+        "text": "holocaustos"
+      },
+      {
+        "id": "c",
+        "text": "carneiros"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 15:22",
+    "learningObjective": "Compreender que obedecer à voz de Jeová é melhor do que oferecer sacrifício.",
+    "evidence": [
+      "1 Samuel 15:22"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-02-desobediencia-de-sau",
+    "id": "samuel-sem-samuel-saul-02-desobediencia-de-sau-03",
+    "passageText": "Disse Samuel: Tem, porventura, Jeová tanto prazer em holocaustos e sacrifícios, quanto tem em que se obedeça à sua voz? Eis que o obedecer é melhor do que o sacrifício, e o atender, do que a gordura de carneiros.",
+    "type": "choice",
+    "question": "O que Samuel declara sobre o prazer de Jeová?",
+    "prompt": "O que Samuel declara sobre o prazer de Jeová?",
+    "cue": "O que Samuel declara sobre o prazer de Jeová?",
+    "feedbackCorrect": "Certo: o texto afirma isso diretamente.",
+    "feedbackWrong": {
+      "b": "O texto prioriza a obediência, não o rito isolado.",
+      "c": "O atender à voz supera a gordura de carneiros.",
+      "d": "Sacrifício sem obediência não é o que Jeová mais preza."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Obedecer à voz de Jeová vale mais do que holocaustos e sacrifícios"
+      },
+      {
+        "id": "b",
+        "text": "Jeová prefere sacrifícios sem qualquer obediência"
+      },
+      {
+        "id": "c",
+        "text": "Samuel exige só a gordura de carneiros, sem ouvir a voz"
+      },
+      {
+        "id": "d",
+        "text": "Holocaustos substituem completamente a necessidade de obedecer"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 15:22",
+    "learningObjective": "Compreender que obedecer à voz de Jeová é melhor do que oferecer sacrifício.",
+    "evidence": [
+      "1 Samuel 15:22"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-02-desobediencia-de-sau",
+    "id": "samuel-sem-samuel-saul-02-desobediencia-de-sau-04",
+    "passageText": "Disse Samuel: Tem, porventura, Jeová tanto prazer em holocaustos e sacrifícios, quanto tem em que se obedeça à sua voz? Eis que o obedecer é melhor do que o sacrifício, e o atender, do que a gordura de carneiros.",
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em 1 Samuel 15:22?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 1 Samuel 15:22?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 1 Samuel 15:22?",
+    "feedbackCorrect": "Certo: essa é a sequência dos fatos no texto.",
+    "feedbackWrong": {
+      "b": "Releia a ordem: o meio do relato não vem primeiro.",
+      "c": "Releia a ordem: o fim do relato não abre a sequência."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Disse Samuel: Tem, porventura, Jeová tanto prazer em holocaustos e sacrifícios, quanto tem em que se obedeça à sua voz?"
+      },
+      {
+        "id": "b",
+        "text": "Eis que o obedecer é melhor do que o sacrifício"
+      },
+      {
+        "id": "c",
+        "text": "e o atender, do que a gordura de carneiros"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 15:22",
+    "learningObjective": "Compreender que obedecer à voz de Jeová é melhor do que oferecer sacrifício.",
+    "evidence": [
+      "1 Samuel 15:22"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-02-desobediencia-de-sau",
+    "id": "samuel-sem-samuel-saul-02-desobediencia-de-sau-05",
+    "passageText": "Disse Samuel: Tem, porventura, Jeová tanto prazer em holocaustos e sacrifícios, quanto tem em que se obedeça à sua voz? Eis que o obedecer é melhor do que o sacrifício, e o atender, do que a gordura de carneiros.",
+    "type": "complete",
+    "question": "Complete a frase: \"e o ___, do que a gordura de carneiros\"",
+    "prompt": "Complete a frase: \"e o ___, do que a gordura de carneiros\"",
+    "cue": "Complete a frase: \"e o ___, do que a gordura de carneiros\"",
+    "template": "e o ___, do que a gordura de carneiros",
+    "feedbackCorrect": "Certo: essa é a palavra que completa o versículo.",
+    "feedbackWrong": {
+      "b": "Essa opção não completa esta lacuna no texto.",
+      "c": "Essa opção não completa esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "atender"
+      },
+      {
+        "id": "b",
+        "text": "holocaustos"
+      },
+      {
+        "id": "c",
+        "text": "Samuel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 15:22",
+    "learningObjective": "Compreender que obedecer à voz de Jeová é melhor do que oferecer sacrifício.",
+    "evidence": [
+      "1 Samuel 15:22"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-02-desobediencia-de-sau",
+    "id": "samuel-sem-samuel-saul-02-desobediencia-de-sau-06",
+    "passageText": "Disse Samuel: Tem, porventura, Jeová tanto prazer em holocaustos e sacrifícios, quanto tem em que se obedeça à sua voz? Eis que o obedecer é melhor do que o sacrifício, e o atender, do que a gordura de carneiros.",
+    "type": "connect",
+    "question": "O que 1 Samuel 15:22 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Samuel 15:22 comunica que se liga a este contexto?",
+    "cue": "O que 1 Samuel 15:22 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: essa é a ponte entre o texto e o insight da missão.",
+    "feedbackWrong": {
+      "b": "Essa leitura não liga o versículo ao contexto da missão.",
+      "c": "Essa leitura não liga o versículo ao contexto da missão."
+    },
+    "passageA": {
+      "ref": "1 Samuel 15:22",
+      "text": "Disse Samuel: Tem, porventura, Jeová tanto prazer em holocaustos e sacrifícios, quanto tem em que se obedeça à sua voz? Eis que o obedecer é melhor do que o sacrifício, e o atender, do que a gordura de carneiros."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Obedecer é melhor do que o sacrifício."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Obediência supera o sacrifício"
+      },
+      {
+        "id": "b",
+        "text": "Jeová prefere ritos sem qualquer obediência"
+      },
+      {
+        "id": "c",
+        "text": "A gordura de carneiros supera o atender à voz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 15:22",
+    "learningObjective": "Compreender que obedecer à voz de Jeová é melhor do que oferecer sacrifício.",
+    "evidence": [
+      "1 Samuel 15:22"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-02-desobediencia-de-sau",
+    "id": "samuel-cam-samuel-saul-02-desobediencia-de-sau-01",
+    "passageText": "Disse Samuel: Tem, porventura, Jeová tanto prazer em holocaustos e sacrifícios, quanto tem em que se obedeça à sua voz? Eis que o obedecer é melhor do que o sacrifício, e o atender, do que a gordura de carneiros.",
+    "type": "true_false",
+    "question": "Jeová tem mais prazer em que se obedeça à sua voz do que só em holocaustos e sacrifícios.",
+    "prompt": "Jeová tem mais prazer em que se obedeça à sua voz do que só em holocaustos e sacrifícios.",
+    "cue": "Jeová tem mais prazer em que se obedeça à sua voz do que só em holocaustos e sacrifícios.",
+    "feedbackCorrect": "Certo: a pergunta retórica afirma prioridade da obediência.",
+    "feedbackWrong": {
+      "false": "Samuel contrapõe rito e obediência à voz."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 15:22",
+    "learningObjective": "Compreender que obedecer à voz de Jeová é melhor do que oferecer sacrifício.",
+    "evidence": [
+      "1 Samuel 15:22"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-02-desobediencia-de-sau",
+    "id": "samuel-cam-samuel-saul-02-desobediencia-de-sau-02",
+    "passageText": "Disse Samuel: Tem, porventura, Jeová tanto prazer em holocaustos e sacrifícios, quanto tem em que se obedeça à sua voz? Eis que o obedecer é melhor do que o sacrifício, e o atender, do que a gordura de carneiros.",
+    "type": "tap",
+    "question": "Em 1 Samuel 15:22, toque a palavra que falta em \"quanto tem em que se ___ à sua voz?\"?",
+    "prompt": "Em 1 Samuel 15:22, toque a palavra que falta em \"quanto tem em que se ___ à sua voz?\"?",
+    "cue": "Em 1 Samuel 15:22, toque a palavra que falta em \"quanto tem em que se ___ à sua voz?\"?",
+    "template": "quanto tem em que se ___ à sua voz?",
+    "feedbackCorrect": "Exato: essa é a palavra-chave nesta lacuna.",
+    "feedbackWrong": {
+      "b": "Essa palavra não preenche esta lacuna no texto.",
+      "c": "Essa palavra não preenche esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "obedeça"
+      },
+      {
+        "id": "b",
+        "text": "sacrifício"
+      },
+      {
+        "id": "c",
+        "text": "gordura"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 15:22",
+    "learningObjective": "Compreender que obedecer à voz de Jeová é melhor do que oferecer sacrifício.",
+    "evidence": [
+      "1 Samuel 15:22"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-02-desobediencia-de-sau",
+    "id": "samuel-cam-samuel-saul-02-desobediencia-de-sau-03",
+    "passageText": "Disse Samuel: Tem, porventura, Jeová tanto prazer em holocaustos e sacrifícios, quanto tem em que se obedeça à sua voz? Eis que o obedecer é melhor do que o sacrifício, e o atender, do que a gordura de carneiros.",
+    "type": "choice",
+    "question": "Como Samuel relaciona sacrifício e obediência?",
+    "prompt": "Como Samuel relaciona sacrifício e obediência?",
+    "cue": "Como Samuel relaciona sacrifício e obediência?",
+    "feedbackCorrect": "Certo: essa leitura conecta bem o texto ao contexto.",
+    "feedbackWrong": {
+      "b": "O texto coloca obediência acima do sacrifício.",
+      "c": "Há culto, mas subordinado à obediência.",
+      "d": "O atender supera a gordura de carneiros."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A obediência à voz de Jeová tem prioridade sobre o rito sacrificial"
+      },
+      {
+        "id": "b",
+        "text": "O sacrifício cancela qualquer necessidade de ouvir a voz"
+      },
+      {
+        "id": "c",
+        "text": "Jeová rejeita toda forma de culto e só aceita silêncio"
+      },
+      {
+        "id": "d",
+        "text": "Atender a Jeová é inferior à gordura oferecida nos altares"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 15:22",
+    "learningObjective": "Compreender que obedecer à voz de Jeová é melhor do que oferecer sacrifício.",
+    "evidence": [
+      "1 Samuel 15:22"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-02-desobediencia-de-sau",
+    "id": "samuel-cam-samuel-saul-02-desobediencia-de-sau-04",
+    "passageText": "Disse Samuel: Tem, porventura, Jeová tanto prazer em holocaustos e sacrifícios, quanto tem em que se obedeça à sua voz? Eis que o obedecer é melhor do que o sacrifício, e o atender, do que a gordura de carneiros.",
+    "type": "order",
+    "question": "Como se encadeiam os eventos de 1 Samuel 15:22?",
+    "prompt": "Como se encadeiam os eventos de 1 Samuel 15:22?",
+    "cue": "Como se encadeiam os eventos de 1 Samuel 15:22?",
+    "feedbackCorrect": "Certo: esse é o encadeamento do relato.",
+    "feedbackWrong": {
+      "b": "Releia a ordem: o meio do relato não vem primeiro.",
+      "c": "Releia a ordem: o fim do relato não abre a sequência."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Disse Samuel: Tem, porventura, Jeová tanto prazer em holocaustos e sacrifícios, quanto tem em que se obedeça à sua voz?"
+      },
+      {
+        "id": "b",
+        "text": "Eis que o obedecer é melhor do que o sacrifício"
+      },
+      {
+        "id": "c",
+        "text": "e o atender, do que a gordura de carneiros"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 15:22",
+    "learningObjective": "Compreender que obedecer à voz de Jeová é melhor do que oferecer sacrifício.",
+    "evidence": [
+      "1 Samuel 15:22"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-02-desobediencia-de-sau",
+    "id": "samuel-cam-samuel-saul-02-desobediencia-de-sau-05",
+    "passageText": "Disse Samuel: Tem, porventura, Jeová tanto prazer em holocaustos e sacrifícios, quanto tem em que se obedeça à sua voz? Eis que o obedecer é melhor do que o sacrifício, e o atender, do que a gordura de carneiros.",
+    "type": "complete",
+    "question": "Complete a frase: \"Eis que o obedecer é melhor do que o ___\"",
+    "prompt": "Complete a frase: \"Eis que o obedecer é melhor do que o ___\"",
+    "cue": "Complete a frase: \"Eis que o obedecer é melhor do que o ___\"",
+    "template": "Eis que o obedecer é melhor do que o ___",
+    "feedbackCorrect": "Certo: essa palavra completa o sentido do versículo.",
+    "feedbackWrong": {
+      "b": "Essa opção não completa esta lacuna no texto.",
+      "c": "Essa opção não completa esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "sacrifício"
+      },
+      {
+        "id": "b",
+        "text": "atender"
+      },
+      {
+        "id": "c",
+        "text": "Samuel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 15:22",
+    "learningObjective": "Compreender que obedecer à voz de Jeová é melhor do que oferecer sacrifício.",
+    "evidence": [
+      "1 Samuel 15:22"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-02-desobediencia-de-sau",
+    "id": "samuel-cam-samuel-saul-02-desobediencia-de-sau-06",
+    "passageText": "Disse Samuel: Tem, porventura, Jeová tanto prazer em holocaustos e sacrifícios, quanto tem em que se obedeça à sua voz? Eis que o obedecer é melhor do que o sacrifício, e o atender, do que a gordura de carneiros.",
+    "type": "connect",
+    "question": "O que 1 Samuel 15:22 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Samuel 15:22 comunica que se liga a este contexto?",
+    "cue": "O que 1 Samuel 15:22 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: essa ponte mostra a relação pedida pelo texto.",
+    "feedbackWrong": {
+      "b": "Essa leitura não captura a ponte com o contexto.",
+      "c": "Essa leitura não captura a ponte com o contexto."
+    },
+    "passageA": {
+      "ref": "1 Samuel 15:22",
+      "text": "Disse Samuel: Tem, porventura, Jeová tanto prazer em holocaustos e sacrifícios, quanto tem em que se obedeça à sua voz? Eis que o obedecer é melhor do que o sacrifício, e o atender, do que a gordura de carneiros."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Obedecer é melhor do que o sacrifício."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Prioridade da voz de Jeová"
+      },
+      {
+        "id": "b",
+        "text": "O sacrifício cancela a necessidade de ouvir"
+      },
+      {
+        "id": "c",
+        "text": "Jeová rejeita toda forma de culto e escuta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 15:22",
+    "learningObjective": "Compreender que obedecer à voz de Jeová é melhor do que oferecer sacrifício.",
+    "evidence": [
+      "1 Samuel 15:22"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-02-desobediencia-de-sau",
+    "id": "samuel-pro-samuel-saul-02-desobediencia-de-sau-01",
+    "passageText": "Disse Samuel: Tem, porventura, Jeová tanto prazer em holocaustos e sacrifícios, quanto tem em que se obedeça à sua voz? Eis que o obedecer é melhor do que o sacrifício, e o atender, do que a gordura de carneiros.",
+    "type": "true_false",
+    "question": "Ritos sem obediência não satisfazem o que Jeová mais preza: atender à sua voz.",
+    "prompt": "Ritos sem obediência não satisfazem o que Jeová mais preza: atender à sua voz.",
+    "cue": "Ritos sem obediência não satisfazem o que Jeová mais preza: atender à sua voz.",
+    "feedbackCorrect": "Certo: o sentido teológico privilegia a escuta obediente.",
+    "feedbackWrong": {
+      "false": "Sacrifício sem obediência fica aquém do prazer de Jeová."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 15:22",
+    "learningObjective": "Compreender que obedecer à voz de Jeová é melhor do que oferecer sacrifício.",
+    "evidence": [
+      "1 Samuel 15:22"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-02-desobediencia-de-sau",
+    "id": "samuel-pro-samuel-saul-02-desobediencia-de-sau-02",
+    "passageText": "Disse Samuel: Tem, porventura, Jeová tanto prazer em holocaustos e sacrifícios, quanto tem em que se obedeça à sua voz? Eis que o obedecer é melhor do que o sacrifício, e o atender, do que a gordura de carneiros.",
+    "type": "tap",
+    "question": "Em 1 Samuel 15:22, toque a palavra que falta em \"Tem, porventura, Jeová tanto prazer em ___ e sacrifícios\"?",
+    "prompt": "Em 1 Samuel 15:22, toque a palavra que falta em \"Tem, porventura, Jeová tanto prazer em ___ e sacrifícios\"?",
+    "cue": "Em 1 Samuel 15:22, toque a palavra que falta em \"Tem, porventura, Jeová tanto prazer em ___ e sacrifícios\"?",
+    "template": "Tem, porventura, Jeová tanto prazer em ___ e sacrifícios",
+    "feedbackCorrect": "Exato: essa palavra sustenta o sentido do trecho.",
+    "feedbackWrong": {
+      "b": "Essa palavra não preenche esta lacuna no texto.",
+      "c": "Essa palavra não preenche esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "holocaustos"
+      },
+      {
+        "id": "b",
+        "text": "obedecer"
+      },
+      {
+        "id": "c",
+        "text": "atender"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 15:22",
+    "learningObjective": "Compreender que obedecer à voz de Jeová é melhor do que oferecer sacrifício.",
+    "evidence": [
+      "1 Samuel 15:22"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-02-desobediencia-de-sau",
+    "id": "samuel-pro-samuel-saul-02-desobediencia-de-sau-03",
+    "passageText": "Disse Samuel: Tem, porventura, Jeová tanto prazer em holocaustos e sacrifícios, quanto tem em que se obedeça à sua voz? Eis que o obedecer é melhor do que o sacrifício, e o atender, do que a gordura de carneiros.",
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de 1 Samuel 15:22?",
+    "prompt": "Qual leitura interpreta melhor o sentido de 1 Samuel 15:22?",
+    "cue": "Qual leitura interpreta melhor o sentido de 1 Samuel 15:22?",
+    "feedbackCorrect": "Certo: essa interpretação respeita o sentido do texto.",
+    "feedbackWrong": {
+      "b": "O texto relativiza o prazer só no rito.",
+      "c": "Samuel fala do prazer de Jeová, não de regra inventada.",
+      "d": "A gordura é superada pelo atender."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová valoriza mais a obediência à sua voz do que o culto sem escuta"
+      },
+      {
+        "id": "b",
+        "text": "Jeová exige só quantidade de sacrifícios, sem importar a obediência"
+      },
+      {
+        "id": "c",
+        "text": "Samuel inventa uma regra nova sem base no prazer de Jeová"
+      },
+      {
+        "id": "d",
+        "text": "A gordura de carneiros é o centro absoluto da vontade divina"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 15:22",
+    "learningObjective": "Compreender que obedecer à voz de Jeová é melhor do que oferecer sacrifício.",
+    "evidence": [
+      "1 Samuel 15:22"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-02-desobediencia-de-sau",
+    "id": "samuel-pro-samuel-saul-02-desobediencia-de-sau-04",
+    "passageText": "Disse Samuel: Tem, porventura, Jeová tanto prazer em holocaustos e sacrifícios, quanto tem em que se obedeça à sua voz? Eis que o obedecer é melhor do que o sacrifício, e o atender, do que a gordura de carneiros.",
+    "type": "order",
+    "question": "Qual sequência revela o sentido de 1 Samuel 15:22?",
+    "prompt": "Qual sequência revela o sentido de 1 Samuel 15:22?",
+    "cue": "Qual sequência revela o sentido de 1 Samuel 15:22?",
+    "feedbackCorrect": "Certo: essa sequência revela o sentido do trecho.",
+    "feedbackWrong": {
+      "b": "Releia a ordem: o meio do relato não vem primeiro.",
+      "c": "Releia a ordem: o fim do relato não abre a sequência."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Disse Samuel: Tem, porventura, Jeová tanto prazer em holocaustos e sacrifícios, quanto tem em que se obedeça à sua voz?"
+      },
+      {
+        "id": "b",
+        "text": "Eis que o obedecer é melhor do que o sacrifício"
+      },
+      {
+        "id": "c",
+        "text": "e o atender, do que a gordura de carneiros"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 15:22",
+    "learningObjective": "Compreender que obedecer à voz de Jeová é melhor do que oferecer sacrifício.",
+    "evidence": [
+      "1 Samuel 15:22"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-02-desobediencia-de-sau",
+    "id": "samuel-pro-samuel-saul-02-desobediencia-de-sau-05",
+    "passageText": "Disse Samuel: Tem, porventura, Jeová tanto prazer em holocaustos e sacrifícios, quanto tem em que se obedeça à sua voz? Eis que o obedecer é melhor do que o sacrifício, e o atender, do que a gordura de carneiros.",
+    "type": "complete",
+    "question": "Complete a frase: \"Tem, porventura, Jeová tanto prazer em holocaustos e ___, quanto tem em que se obedeça à sua voz?\"",
+    "prompt": "Complete a frase: \"Tem, porventura, Jeová tanto prazer em holocaustos e ___, quanto tem em que se obedeça à sua voz?\"",
+    "cue": "Complete a frase: \"Tem, porventura, Jeová tanto prazer em holocaustos e ___, quanto tem em que se obedeça à sua voz?\"",
+    "template": "Tem, porventura, Jeová tanto prazer em holocaustos e ___, quanto tem em que se obedeça à sua voz?",
+    "feedbackCorrect": "Certo: essa lacuna aponta o foco teológico do verso.",
+    "feedbackWrong": {
+      "b": "Essa opção não completa esta lacuna no texto.",
+      "c": "Essa opção não completa esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "sacrifícios"
+      },
+      {
+        "id": "b",
+        "text": "obedecer"
+      },
+      {
+        "id": "c",
+        "text": "atender"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 15:22",
+    "learningObjective": "Compreender que obedecer à voz de Jeová é melhor do que oferecer sacrifício.",
+    "evidence": [
+      "1 Samuel 15:22"
+    ],
+    "trail": "samuel",
+    "section": "samuel-saul-02-desobediencia-de-sau",
+    "id": "samuel-pro-samuel-saul-02-desobediencia-de-sau-06",
+    "passageText": "Disse Samuel: Tem, porventura, Jeová tanto prazer em holocaustos e sacrifícios, quanto tem em que se obedeça à sua voz? Eis que o obedecer é melhor do que o sacrifício, e o atender, do que a gordura de carneiros.",
+    "type": "connect",
+    "question": "O que 1 Samuel 15:22 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Samuel 15:22 comunica que se liga a este contexto?",
+    "cue": "O que 1 Samuel 15:22 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: essa ponte interpreta o sentido da missão.",
+    "feedbackWrong": {
+      "b": "Essa leitura não interpreta bem o vínculo com o contexto.",
+      "c": "Essa leitura não interpreta bem o vínculo com o contexto."
+    },
+    "passageA": {
+      "ref": "1 Samuel 15:22",
+      "text": "Disse Samuel: Tem, porventura, Jeová tanto prazer em holocaustos e sacrifícios, quanto tem em que se obedeça à sua voz? Eis que o obedecer é melhor do que o sacrifício, e o atender, do que a gordura de carneiros."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Obedecer é melhor do que o sacrifício."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Culto sem escuta não basta"
+      },
+      {
+        "id": "b",
+        "text": "A quantidade de sacrifícios basta sem obediência"
+      },
+      {
+        "id": "c",
+        "text": "A gordura é o centro absoluto da vontade divina"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 16:13",
+    "learningObjective": "Reconhecer que, na unção, o Espírito de Jeová se apodera de Davi.",
+    "evidence": [
+      "1 Samuel 16:13"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-01-davi-ungido",
+    "id": "samuel-sem-samuel-davi-01-davi-ungido-01",
+    "passageText": "Tomou Samuel o chifre de óleo e o ungiu no meio de seus irmãos; e, daquele dia em diante, se apoderou de Davi o Espírito de Jeová. Então, levantando-se Samuel, foi para Ramá.",
+    "type": "true_false",
+    "question": "Samuel ungiu Davi com o chifre de óleo no meio de seus irmãos.",
+    "prompt": "Samuel ungiu Davi com o chifre de óleo no meio de seus irmãos.",
+    "cue": "Samuel ungiu Davi com o chifre de óleo no meio de seus irmãos.",
+    "feedbackCorrect": "Certo: o texto registra a unção no meio dos irmãos.",
+    "feedbackWrong": {
+      "false": "Releia: tomou o chifre de óleo e o ungiu."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 16:13",
+    "learningObjective": "Reconhecer que, na unção, o Espírito de Jeová se apodera de Davi.",
+    "evidence": [
+      "1 Samuel 16:13"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-01-davi-ungido",
+    "id": "samuel-sem-samuel-davi-01-davi-ungido-02",
+    "passageText": "Tomou Samuel o chifre de óleo e o ungiu no meio de seus irmãos; e, daquele dia em diante, se apoderou de Davi o Espírito de Jeová. Então, levantando-se Samuel, foi para Ramá.",
+    "type": "tap",
+    "question": "Em 1 Samuel 16:13, toque a palavra que falta em \"Tomou Samuel o chifre de ___ e o ungiu no meio de seus irmãos\"?",
+    "prompt": "Em 1 Samuel 16:13, toque a palavra que falta em \"Tomou Samuel o chifre de ___ e o ungiu no meio de seus irmãos\"?",
+    "cue": "Em 1 Samuel 16:13, toque a palavra que falta em \"Tomou Samuel o chifre de ___ e o ungiu no meio de seus irmãos\"?",
+    "template": "Tomou Samuel o chifre de ___ e o ungiu no meio de seus irmãos",
+    "feedbackCorrect": "Exato: essa é a palavra do versículo.",
+    "feedbackWrong": {
+      "b": "Essa palavra não preenche esta lacuna no texto.",
+      "c": "Essa palavra não preenche esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "óleo"
+      },
+      {
+        "id": "b",
+        "text": "Espírito"
+      },
+      {
+        "id": "c",
+        "text": "Ramá"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 16:13",
+    "learningObjective": "Reconhecer que, na unção, o Espírito de Jeová se apodera de Davi.",
+    "evidence": [
+      "1 Samuel 16:13"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-01-davi-ungido",
+    "id": "samuel-sem-samuel-davi-01-davi-ungido-03",
+    "passageText": "Tomou Samuel o chifre de óleo e o ungiu no meio de seus irmãos; e, daquele dia em diante, se apoderou de Davi o Espírito de Jeová. Então, levantando-se Samuel, foi para Ramá.",
+    "type": "choice",
+    "question": "O que acontece com Davi a partir da unção?",
+    "prompt": "O que acontece com Davi a partir da unção?",
+    "cue": "O que acontece com Davi a partir da unção?",
+    "feedbackCorrect": "Certo: o texto afirma isso diretamente.",
+    "feedbackWrong": {
+      "b": "O texto diz que o Espírito se apoderou de Davi.",
+      "c": "Samuel se levanta e vai para Ramá.",
+      "d": "A unção é de Davi, no meio dos irmãos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Daquele dia em diante, o Espírito de Jeová se apoderou de Davi"
+      },
+      {
+        "id": "b",
+        "text": "Davi perde imediatamente o Espírito de Jeová"
+      },
+      {
+        "id": "c",
+        "text": "Samuel permanece em Judá e não parte para Ramá"
+      },
+      {
+        "id": "d",
+        "text": "Os irmãos de Davi são ungidos no lugar dele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 16:13",
+    "learningObjective": "Reconhecer que, na unção, o Espírito de Jeová se apodera de Davi.",
+    "evidence": [
+      "1 Samuel 16:13"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-01-davi-ungido",
+    "id": "samuel-sem-samuel-davi-01-davi-ungido-04",
+    "passageText": "Tomou Samuel o chifre de óleo e o ungiu no meio de seus irmãos; e, daquele dia em diante, se apoderou de Davi o Espírito de Jeová. Então, levantando-se Samuel, foi para Ramá.",
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em 1 Samuel 16:13?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 1 Samuel 16:13?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 1 Samuel 16:13?",
+    "feedbackCorrect": "Certo: essa é a sequência dos fatos no texto.",
+    "feedbackWrong": {
+      "b": "Releia a ordem: o meio do relato não vem primeiro.",
+      "c": "Releia a ordem: o fim do relato não abre a sequência."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Tomou Samuel o chifre de óleo e o ungiu no meio de seus irmãos"
+      },
+      {
+        "id": "b",
+        "text": "e, daquele dia em diante, se apoderou de Davi o Espírito de Jeová"
+      },
+      {
+        "id": "c",
+        "text": "Então, levantando-se Samuel, foi para Ramá"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 16:13",
+    "learningObjective": "Reconhecer que, na unção, o Espírito de Jeová se apodera de Davi.",
+    "evidence": [
+      "1 Samuel 16:13"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-01-davi-ungido",
+    "id": "samuel-sem-samuel-davi-01-davi-ungido-05",
+    "passageText": "Tomou Samuel o chifre de óleo e o ungiu no meio de seus irmãos; e, daquele dia em diante, se apoderou de Davi o Espírito de Jeová. Então, levantando-se Samuel, foi para Ramá.",
+    "type": "complete",
+    "question": "Complete a frase: \"Então, levantando-se Samuel, foi para ___\"",
+    "prompt": "Complete a frase: \"Então, levantando-se Samuel, foi para ___\"",
+    "cue": "Complete a frase: \"Então, levantando-se Samuel, foi para ___\"",
+    "template": "Então, levantando-se Samuel, foi para ___",
+    "feedbackCorrect": "Certo: essa é a palavra que completa o versículo.",
+    "feedbackWrong": {
+      "b": "Essa opção não completa esta lacuna no texto.",
+      "c": "Essa opção não completa esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ramá"
+      },
+      {
+        "id": "b",
+        "text": "óleo"
+      },
+      {
+        "id": "c",
+        "text": "Davi"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 16:13",
+    "learningObjective": "Reconhecer que, na unção, o Espírito de Jeová se apodera de Davi.",
+    "evidence": [
+      "1 Samuel 16:13"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-01-davi-ungido",
+    "id": "samuel-sem-samuel-davi-01-davi-ungido-06",
+    "passageText": "Tomou Samuel o chifre de óleo e o ungiu no meio de seus irmãos; e, daquele dia em diante, se apoderou de Davi o Espírito de Jeová. Então, levantando-se Samuel, foi para Ramá.",
+    "type": "connect",
+    "question": "O que 1 Samuel 16:13 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Samuel 16:13 comunica que se liga a este contexto?",
+    "cue": "O que 1 Samuel 16:13 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: essa é a ponte entre o texto e o insight da missão.",
+    "feedbackWrong": {
+      "b": "Essa leitura não liga o versículo ao contexto da missão.",
+      "c": "Essa leitura não liga o versículo ao contexto da missão."
+    },
+    "passageA": {
+      "ref": "1 Samuel 16:13",
+      "text": "Tomou Samuel o chifre de óleo e o ungiu no meio de seus irmãos; e, daquele dia em diante, se apoderou de Davi o Espírito de Jeová. Então, levantando-se Samuel, foi para Ramá."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Espírito se apodera de Davi na unção."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito se apodera na unção"
+      },
+      {
+        "id": "b",
+        "text": "Davi perde o Espírito no momento da unção"
+      },
+      {
+        "id": "c",
+        "text": "Samuel unge os irmãos no lugar de Davi"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 16:13",
+    "learningObjective": "Reconhecer que, na unção, o Espírito de Jeová se apodera de Davi.",
+    "evidence": [
+      "1 Samuel 16:13"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-01-davi-ungido",
+    "id": "samuel-cam-samuel-davi-01-davi-ungido-01",
+    "passageText": "Tomou Samuel o chifre de óleo e o ungiu no meio de seus irmãos; e, daquele dia em diante, se apoderou de Davi o Espírito de Jeová. Então, levantando-se Samuel, foi para Ramá.",
+    "type": "true_false",
+    "question": "A unção de Davi e a vinda do Espírito de Jeová estão ligadas no mesmo relato.",
+    "prompt": "A unção de Davi e a vinda do Espírito de Jeová estão ligadas no mesmo relato.",
+    "cue": "A unção de Davi e a vinda do Espírito de Jeová estão ligadas no mesmo relato.",
+    "feedbackCorrect": "Certo: unção e Espírito se encadeiam no versículo.",
+    "feedbackWrong": {
+      "false": "Daquele dia em diante o Espírito se apodera de Davi."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 16:13",
+    "learningObjective": "Reconhecer que, na unção, o Espírito de Jeová se apodera de Davi.",
+    "evidence": [
+      "1 Samuel 16:13"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-01-davi-ungido",
+    "id": "samuel-cam-samuel-davi-01-davi-ungido-02",
+    "passageText": "Tomou Samuel o chifre de óleo e o ungiu no meio de seus irmãos; e, daquele dia em diante, se apoderou de Davi o Espírito de Jeová. Então, levantando-se Samuel, foi para Ramá.",
+    "type": "tap",
+    "question": "Em 1 Samuel 16:13, toque a palavra que falta em \"e, daquele dia em diante, se apoderou de Davi o ___ de Jeová\"?",
+    "prompt": "Em 1 Samuel 16:13, toque a palavra que falta em \"e, daquele dia em diante, se apoderou de Davi o ___ de Jeová\"?",
+    "cue": "Em 1 Samuel 16:13, toque a palavra que falta em \"e, daquele dia em diante, se apoderou de Davi o ___ de Jeová\"?",
+    "template": "e, daquele dia em diante, se apoderou de Davi o ___ de Jeová",
+    "feedbackCorrect": "Exato: essa é a palavra-chave nesta lacuna.",
+    "feedbackWrong": {
+      "b": "Essa palavra não preenche esta lacuna no texto.",
+      "c": "Essa palavra não preenche esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito"
+      },
+      {
+        "id": "b",
+        "text": "óleo"
+      },
+      {
+        "id": "c",
+        "text": "Ramá"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 16:13",
+    "learningObjective": "Reconhecer que, na unção, o Espírito de Jeová se apodera de Davi.",
+    "evidence": [
+      "1 Samuel 16:13"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-01-davi-ungido",
+    "id": "samuel-cam-samuel-davi-01-davi-ungido-03",
+    "passageText": "Tomou Samuel o chifre de óleo e o ungiu no meio de seus irmãos; e, daquele dia em diante, se apoderou de Davi o Espírito de Jeová. Então, levantando-se Samuel, foi para Ramá.",
+    "type": "choice",
+    "question": "Como se relacionam a unção e o Espírito no texto?",
+    "prompt": "Como se relacionam a unção e o Espírito no texto?",
+    "cue": "Como se relacionam a unção e o Espírito no texto?",
+    "feedbackCorrect": "Certo: essa leitura conecta bem o texto ao contexto.",
+    "feedbackWrong": {
+      "b": "Primeiro a unção; depois o Espírito se apodera.",
+      "c": "O texto liga unção e Espírito explicitamente.",
+      "d": "Samuel parte; o Espírito permanece sobre Davi."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Após a unção, o Espírito de Jeová se apodera de Davi"
+      },
+      {
+        "id": "b",
+        "text": "O Espírito chega primeiro e depois Samuel unge Davi"
+      },
+      {
+        "id": "c",
+        "text": "A unção serve só para separar Davi dos irmãos sem Espírito"
+      },
+      {
+        "id": "d",
+        "text": "Samuel leva o Espírito embora ao partir para Ramá"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 16:13",
+    "learningObjective": "Reconhecer que, na unção, o Espírito de Jeová se apodera de Davi.",
+    "evidence": [
+      "1 Samuel 16:13"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-01-davi-ungido",
+    "id": "samuel-cam-samuel-davi-01-davi-ungido-04",
+    "passageText": "Tomou Samuel o chifre de óleo e o ungiu no meio de seus irmãos; e, daquele dia em diante, se apoderou de Davi o Espírito de Jeová. Então, levantando-se Samuel, foi para Ramá.",
+    "type": "order",
+    "question": "Como se encadeiam os eventos de 1 Samuel 16:13?",
+    "prompt": "Como se encadeiam os eventos de 1 Samuel 16:13?",
+    "cue": "Como se encadeiam os eventos de 1 Samuel 16:13?",
+    "feedbackCorrect": "Certo: esse é o encadeamento do relato.",
+    "feedbackWrong": {
+      "b": "Releia a ordem: o meio do relato não vem primeiro.",
+      "c": "Releia a ordem: o fim do relato não abre a sequência."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Tomou Samuel o chifre de óleo e o ungiu no meio de seus irmãos"
+      },
+      {
+        "id": "b",
+        "text": "e, daquele dia em diante, se apoderou de Davi o Espírito de Jeová"
+      },
+      {
+        "id": "c",
+        "text": "Então, levantando-se Samuel, foi para Ramá"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 16:13",
+    "learningObjective": "Reconhecer que, na unção, o Espírito de Jeová se apodera de Davi.",
+    "evidence": [
+      "1 Samuel 16:13"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-01-davi-ungido",
+    "id": "samuel-cam-samuel-davi-01-davi-ungido-05",
+    "passageText": "Tomou Samuel o chifre de óleo e o ungiu no meio de seus irmãos; e, daquele dia em diante, se apoderou de Davi o Espírito de Jeová. Então, levantando-se Samuel, foi para Ramá.",
+    "type": "complete",
+    "question": "Complete a frase: \"Tomou Samuel o ___ de óleo e o ungiu no meio de seus irmãos\"",
+    "prompt": "Complete a frase: \"Tomou Samuel o ___ de óleo e o ungiu no meio de seus irmãos\"",
+    "cue": "Complete a frase: \"Tomou Samuel o ___ de óleo e o ungiu no meio de seus irmãos\"",
+    "template": "Tomou Samuel o ___ de óleo e o ungiu no meio de seus irmãos",
+    "feedbackCorrect": "Certo: essa palavra completa o sentido do versículo.",
+    "feedbackWrong": {
+      "b": "Essa opção não completa esta lacuna no texto.",
+      "c": "Essa opção não completa esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "chifre"
+      },
+      {
+        "id": "b",
+        "text": "Espírito"
+      },
+      {
+        "id": "c",
+        "text": "Ramá"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 16:13",
+    "learningObjective": "Reconhecer que, na unção, o Espírito de Jeová se apodera de Davi.",
+    "evidence": [
+      "1 Samuel 16:13"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-01-davi-ungido",
+    "id": "samuel-cam-samuel-davi-01-davi-ungido-06",
+    "passageText": "Tomou Samuel o chifre de óleo e o ungiu no meio de seus irmãos; e, daquele dia em diante, se apoderou de Davi o Espírito de Jeová. Então, levantando-se Samuel, foi para Ramá.",
+    "type": "connect",
+    "question": "O que 1 Samuel 16:13 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Samuel 16:13 comunica que se liga a este contexto?",
+    "cue": "O que 1 Samuel 16:13 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: essa ponte mostra a relação pedida pelo texto.",
+    "feedbackWrong": {
+      "b": "Essa leitura não captura a ponte com o contexto.",
+      "c": "Essa leitura não captura a ponte com o contexto."
+    },
+    "passageA": {
+      "ref": "1 Samuel 16:13",
+      "text": "Tomou Samuel o chifre de óleo e o ungiu no meio de seus irmãos; e, daquele dia em diante, se apoderou de Davi o Espírito de Jeová. Então, levantando-se Samuel, foi para Ramá."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Espírito se apodera de Davi na unção."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Unção e Espírito juntos"
+      },
+      {
+        "id": "b",
+        "text": "O Espírito chega antes e a unção vem depois"
+      },
+      {
+        "id": "c",
+        "text": "Samuel leva o Espírito embora ao ir a Ramá"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 16:13",
+    "learningObjective": "Reconhecer que, na unção, o Espírito de Jeová se apodera de Davi.",
+    "evidence": [
+      "1 Samuel 16:13"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-01-davi-ungido",
+    "id": "samuel-pro-samuel-davi-01-davi-ungido-01",
+    "passageText": "Tomou Samuel o chifre de óleo e o ungiu no meio de seus irmãos; e, daquele dia em diante, se apoderou de Davi o Espírito de Jeová. Então, levantando-se Samuel, foi para Ramá.",
+    "type": "true_false",
+    "question": "A unção marca o início de uma nova capacitação: o Espírito de Jeová sobre Davi.",
+    "prompt": "A unção marca o início de uma nova capacitação: o Espírito de Jeová sobre Davi.",
+    "cue": "A unção marca o início de uma nova capacitação: o Espírito de Jeová sobre Davi.",
+    "feedbackCorrect": "Certo: o sentido é capacitação divina a partir daquele dia.",
+    "feedbackWrong": {
+      "false": "O Espírito se apodera de Davi na unção."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 16:13",
+    "learningObjective": "Reconhecer que, na unção, o Espírito de Jeová se apodera de Davi.",
+    "evidence": [
+      "1 Samuel 16:13"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-01-davi-ungido",
+    "id": "samuel-pro-samuel-davi-01-davi-ungido-02",
+    "passageText": "Tomou Samuel o chifre de óleo e o ungiu no meio de seus irmãos; e, daquele dia em diante, se apoderou de Davi o Espírito de Jeová. Então, levantando-se Samuel, foi para Ramá.",
+    "type": "tap",
+    "question": "Em 1 Samuel 16:13, toque a palavra que falta em \"e o ungiu no meio de seus ___; e, daquele dia em diante, se apoderou de Davi o Espírito de Jeová\"?",
+    "prompt": "Em 1 Samuel 16:13, toque a palavra que falta em \"e o ungiu no meio de seus ___; e, daquele dia em diante, se apoderou de Davi o Espírito de Jeová\"?",
+    "cue": "Em 1 Samuel 16:13, toque a palavra que falta em \"e o ungiu no meio de seus ___; e, daquele dia em diante, se apoderou de Davi o Espírito de Jeová\"?",
+    "template": "e o ungiu no meio de seus ___; e, daquele dia em diante, se apoderou de Davi o Espírito de Jeová",
+    "feedbackCorrect": "Exato: essa palavra sustenta o sentido do trecho.",
+    "feedbackWrong": {
+      "b": "Essa palavra não preenche esta lacuna no texto.",
+      "c": "Essa palavra não preenche esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "irmãos"
+      },
+      {
+        "id": "b",
+        "text": "óleo"
+      },
+      {
+        "id": "c",
+        "text": "Ramá"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 16:13",
+    "learningObjective": "Reconhecer que, na unção, o Espírito de Jeová se apodera de Davi.",
+    "evidence": [
+      "1 Samuel 16:13"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-01-davi-ungido",
+    "id": "samuel-pro-samuel-davi-01-davi-ungido-03",
+    "passageText": "Tomou Samuel o chifre de óleo e o ungiu no meio de seus irmãos; e, daquele dia em diante, se apoderou de Davi o Espírito de Jeová. Então, levantando-se Samuel, foi para Ramá.",
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de 1 Samuel 16:13?",
+    "prompt": "Qual leitura interpreta melhor o sentido de 1 Samuel 16:13?",
+    "cue": "Qual leitura interpreta melhor o sentido de 1 Samuel 16:13?",
+    "feedbackCorrect": "Certo: essa interpretação respeita o sentido do texto.",
+    "feedbackWrong": {
+      "b": "O texto destaca o Espírito de Jeová sobre Davi.",
+      "c": "Samuel parte para Ramá; a unção permanece.",
+      "d": "Óleo e Espírito aparecem juntos; o óleo não substitui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová capacita Davi pelo Espírito a partir da unção"
+      },
+      {
+        "id": "b",
+        "text": "Davi governa só por talento familiar, sem ação do Espírito"
+      },
+      {
+        "id": "c",
+        "text": "A partida de Samuel cancela a unção de Davi"
+      },
+      {
+        "id": "d",
+        "text": "O óleo substitui o Espírito e torna o rito puramente humano"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 16:13",
+    "learningObjective": "Reconhecer que, na unção, o Espírito de Jeová se apodera de Davi.",
+    "evidence": [
+      "1 Samuel 16:13"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-01-davi-ungido",
+    "id": "samuel-pro-samuel-davi-01-davi-ungido-04",
+    "passageText": "Tomou Samuel o chifre de óleo e o ungiu no meio de seus irmãos; e, daquele dia em diante, se apoderou de Davi o Espírito de Jeová. Então, levantando-se Samuel, foi para Ramá.",
+    "type": "order",
+    "question": "Qual sequência revela o sentido de 1 Samuel 16:13?",
+    "prompt": "Qual sequência revela o sentido de 1 Samuel 16:13?",
+    "cue": "Qual sequência revela o sentido de 1 Samuel 16:13?",
+    "feedbackCorrect": "Certo: essa sequência revela o sentido do trecho.",
+    "feedbackWrong": {
+      "b": "Releia a ordem: o meio do relato não vem primeiro.",
+      "c": "Releia a ordem: o fim do relato não abre a sequência."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Tomou Samuel o chifre de óleo e o ungiu no meio de seus irmãos"
+      },
+      {
+        "id": "b",
+        "text": "e, daquele dia em diante, se apoderou de Davi o Espírito de Jeová"
+      },
+      {
+        "id": "c",
+        "text": "Então, levantando-se Samuel, foi para Ramá"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 16:13",
+    "learningObjective": "Reconhecer que, na unção, o Espírito de Jeová se apodera de Davi.",
+    "evidence": [
+      "1 Samuel 16:13"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-01-davi-ungido",
+    "id": "samuel-pro-samuel-davi-01-davi-ungido-05",
+    "passageText": "Tomou Samuel o chifre de óleo e o ungiu no meio de seus irmãos; e, daquele dia em diante, se apoderou de Davi o Espírito de Jeová. Então, levantando-se Samuel, foi para Ramá.",
+    "type": "complete",
+    "question": "Complete a frase: \"e, daquele dia em diante, se ___ de Davi o Espírito de Jeová\"",
+    "prompt": "Complete a frase: \"e, daquele dia em diante, se ___ de Davi o Espírito de Jeová\"",
+    "cue": "Complete a frase: \"e, daquele dia em diante, se ___ de Davi o Espírito de Jeová\"",
+    "template": "e, daquele dia em diante, se ___ de Davi o Espírito de Jeová",
+    "feedbackCorrect": "Certo: essa lacuna aponta o foco teológico do verso.",
+    "feedbackWrong": {
+      "b": "Essa opção não completa esta lacuna no texto.",
+      "c": "Essa opção não completa esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "apoderou"
+      },
+      {
+        "id": "b",
+        "text": "ungiu"
+      },
+      {
+        "id": "c",
+        "text": "levantando"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 16:13",
+    "learningObjective": "Reconhecer que, na unção, o Espírito de Jeová se apodera de Davi.",
+    "evidence": [
+      "1 Samuel 16:13"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-01-davi-ungido",
+    "id": "samuel-pro-samuel-davi-01-davi-ungido-06",
+    "passageText": "Tomou Samuel o chifre de óleo e o ungiu no meio de seus irmãos; e, daquele dia em diante, se apoderou de Davi o Espírito de Jeová. Então, levantando-se Samuel, foi para Ramá.",
+    "type": "connect",
+    "question": "O que 1 Samuel 16:13 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Samuel 16:13 comunica que se liga a este contexto?",
+    "cue": "O que 1 Samuel 16:13 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: essa ponte interpreta o sentido da missão.",
+    "feedbackWrong": {
+      "b": "Essa leitura não interpreta bem o vínculo com o contexto.",
+      "c": "Essa leitura não interpreta bem o vínculo com o contexto."
+    },
+    "passageA": {
+      "ref": "1 Samuel 16:13",
+      "text": "Tomou Samuel o chifre de óleo e o ungiu no meio de seus irmãos; e, daquele dia em diante, se apoderou de Davi o Espírito de Jeová. Então, levantando-se Samuel, foi para Ramá."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Espírito se apodera de Davi na unção."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Capacitação pelo Espírito"
+      },
+      {
+        "id": "b",
+        "text": "Davi governa só por talento familiar"
+      },
+      {
+        "id": "c",
+        "text": "O óleo substitui o Espírito no relato"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 17:45",
+    "learningObjective": "Reconhecer que Davi enfrenta Golias no nome de Jeová dos Exércitos.",
+    "evidence": [
+      "1 Samuel 17:45"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-02-davi-e-golias",
+    "id": "samuel-sem-samuel-davi-02-davi-e-golias-01",
+    "passageText": "Então, lhe respondeu Davi: Tu vens a mim com espada, e com lança, e com escudo; eu, porém, venho a ti em nome de Jeová dos Exércitos, do Deus das tropas de Israel, as quais tens desafiado.",
+    "type": "true_false",
+    "question": "Davi diz que o adversário vem com espada, lança e escudo.",
+    "prompt": "Davi diz que o adversário vem com espada, lança e escudo.",
+    "cue": "Davi diz que o adversário vem com espada, lança e escudo.",
+    "feedbackCorrect": "Certo: o texto lista espada, lança e escudo.",
+    "feedbackWrong": {
+      "false": "Releia a resposta de Davi sobre as armas do outro."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 17:45",
+    "learningObjective": "Reconhecer que Davi enfrenta Golias no nome de Jeová dos Exércitos.",
+    "evidence": [
+      "1 Samuel 17:45"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-02-davi-e-golias",
+    "id": "samuel-sem-samuel-davi-02-davi-e-golias-02",
+    "passageText": "Então, lhe respondeu Davi: Tu vens a mim com espada, e com lança, e com escudo; eu, porém, venho a ti em nome de Jeová dos Exércitos, do Deus das tropas de Israel, as quais tens desafiado.",
+    "type": "tap",
+    "question": "Em 1 Samuel 17:45, toque a palavra que falta em \"eu, porém, venho a ti em ___ de Jeová dos Exércitos\"?",
+    "prompt": "Em 1 Samuel 17:45, toque a palavra que falta em \"eu, porém, venho a ti em ___ de Jeová dos Exércitos\"?",
+    "cue": "Em 1 Samuel 17:45, toque a palavra que falta em \"eu, porém, venho a ti em ___ de Jeová dos Exércitos\"?",
+    "template": "eu, porém, venho a ti em ___ de Jeová dos Exércitos",
+    "feedbackCorrect": "Exato: essa é a palavra do versículo.",
+    "feedbackWrong": {
+      "b": "Essa palavra não preenche esta lacuna no texto.",
+      "c": "Essa palavra não preenche esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "nome"
+      },
+      {
+        "id": "b",
+        "text": "espada"
+      },
+      {
+        "id": "c",
+        "text": "lança"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 17:45",
+    "learningObjective": "Reconhecer que Davi enfrenta Golias no nome de Jeová dos Exércitos.",
+    "evidence": [
+      "1 Samuel 17:45"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-02-davi-e-golias",
+    "id": "samuel-sem-samuel-davi-02-davi-e-golias-03",
+    "passageText": "Então, lhe respondeu Davi: Tu vens a mim com espada, e com lança, e com escudo; eu, porém, venho a ti em nome de Jeová dos Exércitos, do Deus das tropas de Israel, as quais tens desafiado.",
+    "type": "choice",
+    "question": "Como Davi descreve a sua própria chegada ao combate?",
+    "prompt": "Como Davi descreve a sua própria chegada ao combate?",
+    "cue": "Como Davi descreve a sua própria chegada ao combate?",
+    "feedbackCorrect": "Certo: o texto afirma isso diretamente.",
+    "feedbackWrong": {
+      "b": "Davi contrapõe as armas ao nome de Jeová.",
+      "c": "Ele fala do Deus das tropas de Israel.",
+      "d": "Ele diz: as quais tens desafiado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Vem em nome de Jeová dos Exércitos, Deus das tropas de Israel"
+      },
+      {
+        "id": "b",
+        "text": "Vem apenas com espada, lança e escudo próprios"
+      },
+      {
+        "id": "c",
+        "text": "Declara que Israel não tem Deus nas tropas"
+      },
+      {
+        "id": "d",
+        "text": "Afirma que o adversário nunca desafiou as tropas de Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 17:45",
+    "learningObjective": "Reconhecer que Davi enfrenta Golias no nome de Jeová dos Exércitos.",
+    "evidence": [
+      "1 Samuel 17:45"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-02-davi-e-golias",
+    "id": "samuel-sem-samuel-davi-02-davi-e-golias-04",
+    "passageText": "Então, lhe respondeu Davi: Tu vens a mim com espada, e com lança, e com escudo; eu, porém, venho a ti em nome de Jeová dos Exércitos, do Deus das tropas de Israel, as quais tens desafiado.",
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em 1 Samuel 17:45?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 1 Samuel 17:45?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 1 Samuel 17:45?",
+    "feedbackCorrect": "Certo: essa é a sequência dos fatos no texto.",
+    "feedbackWrong": {
+      "b": "Releia a ordem: o meio do relato não vem primeiro.",
+      "c": "Releia a ordem: o fim do relato não abre a sequência."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Então, lhe respondeu Davi: Tu vens a mim com espada, e com lança, e com escudo"
+      },
+      {
+        "id": "b",
+        "text": "eu, porém, venho a ti em nome de Jeová dos Exércitos"
+      },
+      {
+        "id": "c",
+        "text": "do Deus das tropas de Israel, as quais tens desafiado"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 17:45",
+    "learningObjective": "Reconhecer que Davi enfrenta Golias no nome de Jeová dos Exércitos.",
+    "evidence": [
+      "1 Samuel 17:45"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-02-davi-e-golias",
+    "id": "samuel-sem-samuel-davi-02-davi-e-golias-05",
+    "passageText": "Então, lhe respondeu Davi: Tu vens a mim com espada, e com lança, e com escudo; eu, porém, venho a ti em nome de Jeová dos Exércitos, do Deus das tropas de Israel, as quais tens desafiado.",
+    "type": "complete",
+    "question": "Complete a frase: \"Tu vens a mim com ___, e com lança, e com escudo\"",
+    "prompt": "Complete a frase: \"Tu vens a mim com ___, e com lança, e com escudo\"",
+    "cue": "Complete a frase: \"Tu vens a mim com ___, e com lança, e com escudo\"",
+    "template": "Tu vens a mim com ___, e com lança, e com escudo",
+    "feedbackCorrect": "Certo: essa é a palavra que completa o versículo.",
+    "feedbackWrong": {
+      "b": "Essa opção não completa esta lacuna no texto.",
+      "c": "Essa opção não completa esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "espada"
+      },
+      {
+        "id": "b",
+        "text": "nome"
+      },
+      {
+        "id": "c",
+        "text": "Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Samuel 17:45",
+    "learningObjective": "Reconhecer que Davi enfrenta Golias no nome de Jeová dos Exércitos.",
+    "evidence": [
+      "1 Samuel 17:45"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-02-davi-e-golias",
+    "id": "samuel-sem-samuel-davi-02-davi-e-golias-06",
+    "passageText": "Então, lhe respondeu Davi: Tu vens a mim com espada, e com lança, e com escudo; eu, porém, venho a ti em nome de Jeová dos Exércitos, do Deus das tropas de Israel, as quais tens desafiado.",
+    "type": "connect",
+    "question": "O que 1 Samuel 17:45 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Samuel 17:45 comunica que se liga a este contexto?",
+    "cue": "O que 1 Samuel 17:45 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: essa é a ponte entre o texto e o insight da missão.",
+    "feedbackWrong": {
+      "b": "Essa leitura não liga o versículo ao contexto da missão.",
+      "c": "Essa leitura não liga o versículo ao contexto da missão."
+    },
+    "passageA": {
+      "ref": "1 Samuel 17:45",
+      "text": "Então, lhe respondeu Davi: Tu vens a mim com espada, e com lança, e com escudo; eu, porém, venho a ti em nome de Jeová dos Exércitos, do Deus das tropas de Israel, as quais tens desafiado."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Davi vem no nome de Jeová dos Exércitos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Davi vem no nome de Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Davi confia só em espada, lança e escudo"
+      },
+      {
+        "id": "c",
+        "text": "Israel não tem Deus nas tropas, segundo Davi"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 17:45",
+    "learningObjective": "Reconhecer que Davi enfrenta Golias no nome de Jeová dos Exércitos.",
+    "evidence": [
+      "1 Samuel 17:45"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-02-davi-e-golias",
+    "id": "samuel-cam-samuel-davi-02-davi-e-golias-01",
+    "passageText": "Então, lhe respondeu Davi: Tu vens a mim com espada, e com lança, e com escudo; eu, porém, venho a ti em nome de Jeová dos Exércitos, do Deus das tropas de Israel, as quais tens desafiado.",
+    "type": "true_false",
+    "question": "Davi contrapõe as armas do adversário ao nome de Jeová dos Exércitos.",
+    "prompt": "Davi contrapõe as armas do adversário ao nome de Jeová dos Exércitos.",
+    "cue": "Davi contrapõe as armas do adversário ao nome de Jeová dos Exércitos.",
+    "feedbackCorrect": "Certo: armas humanas versus nome de Jeová.",
+    "feedbackWrong": {
+      "false": "O porém marca o contraste no verso."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 17:45",
+    "learningObjective": "Reconhecer que Davi enfrenta Golias no nome de Jeová dos Exércitos.",
+    "evidence": [
+      "1 Samuel 17:45"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-02-davi-e-golias",
+    "id": "samuel-cam-samuel-davi-02-davi-e-golias-02",
+    "passageText": "Então, lhe respondeu Davi: Tu vens a mim com espada, e com lança, e com escudo; eu, porém, venho a ti em nome de Jeová dos Exércitos, do Deus das tropas de Israel, as quais tens desafiado.",
+    "type": "tap",
+    "question": "Em 1 Samuel 17:45, toque a palavra que falta em \"do Deus das ___ de Israel, as quais tens desafiado\"?",
+    "prompt": "Em 1 Samuel 17:45, toque a palavra que falta em \"do Deus das ___ de Israel, as quais tens desafiado\"?",
+    "cue": "Em 1 Samuel 17:45, toque a palavra que falta em \"do Deus das ___ de Israel, as quais tens desafiado\"?",
+    "template": "do Deus das ___ de Israel, as quais tens desafiado",
+    "feedbackCorrect": "Exato: essa é a palavra-chave nesta lacuna.",
+    "feedbackWrong": {
+      "b": "Essa palavra não preenche esta lacuna no texto.",
+      "c": "Essa palavra não preenche esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "tropas"
+      },
+      {
+        "id": "b",
+        "text": "espada"
+      },
+      {
+        "id": "c",
+        "text": "escudo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 17:45",
+    "learningObjective": "Reconhecer que Davi enfrenta Golias no nome de Jeová dos Exércitos.",
+    "evidence": [
+      "1 Samuel 17:45"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-02-davi-e-golias",
+    "id": "samuel-cam-samuel-davi-02-davi-e-golias-03",
+    "passageText": "Então, lhe respondeu Davi: Tu vens a mim com espada, e com lança, e com escudo; eu, porém, venho a ti em nome de Jeová dos Exércitos, do Deus das tropas de Israel, as quais tens desafiado.",
+    "type": "choice",
+    "question": "Qual contraste o texto estabelece no confronto?",
+    "prompt": "Qual contraste o texto estabelece no confronto?",
+    "cue": "Qual contraste o texto estabelece no confronto?",
+    "feedbackCorrect": "Certo: essa leitura conecta bem o texto ao contexto.",
+    "feedbackWrong": {
+      "b": "Davi não vem com as mesmas armas; vem no nome de Jeová.",
+      "c": "Ele cita o desafio às tropas de Israel.",
+      "d": "Jeová dos Exércitos é o centro da resposta de Davi."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Armas humanas de um lado; o nome de Jeová do outro"
+      },
+      {
+        "id": "b",
+        "text": "Davi confia só na lança, como o adversário"
+      },
+      {
+        "id": "c",
+        "text": "O desafio às tropas de Israel é irrelevante no discurso"
+      },
+      {
+        "id": "d",
+        "text": "Jeová dos Exércitos fica de fora do combate descrito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 17:45",
+    "learningObjective": "Reconhecer que Davi enfrenta Golias no nome de Jeová dos Exércitos.",
+    "evidence": [
+      "1 Samuel 17:45"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-02-davi-e-golias",
+    "id": "samuel-cam-samuel-davi-02-davi-e-golias-04",
+    "passageText": "Então, lhe respondeu Davi: Tu vens a mim com espada, e com lança, e com escudo; eu, porém, venho a ti em nome de Jeová dos Exércitos, do Deus das tropas de Israel, as quais tens desafiado.",
+    "type": "order",
+    "question": "Como se encadeiam os eventos de 1 Samuel 17:45?",
+    "prompt": "Como se encadeiam os eventos de 1 Samuel 17:45?",
+    "cue": "Como se encadeiam os eventos de 1 Samuel 17:45?",
+    "feedbackCorrect": "Certo: esse é o encadeamento do relato.",
+    "feedbackWrong": {
+      "b": "Releia a ordem: o meio do relato não vem primeiro.",
+      "c": "Releia a ordem: o fim do relato não abre a sequência."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Então, lhe respondeu Davi: Tu vens a mim com espada, e com lança, e com escudo"
+      },
+      {
+        "id": "b",
+        "text": "eu, porém, venho a ti em nome de Jeová dos Exércitos"
+      },
+      {
+        "id": "c",
+        "text": "do Deus das tropas de Israel, as quais tens desafiado"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 17:45",
+    "learningObjective": "Reconhecer que Davi enfrenta Golias no nome de Jeová dos Exércitos.",
+    "evidence": [
+      "1 Samuel 17:45"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-02-davi-e-golias",
+    "id": "samuel-cam-samuel-davi-02-davi-e-golias-05",
+    "passageText": "Então, lhe respondeu Davi: Tu vens a mim com espada, e com lança, e com escudo; eu, porém, venho a ti em nome de Jeová dos Exércitos, do Deus das tropas de Israel, as quais tens desafiado.",
+    "type": "complete",
+    "question": "Complete a frase: \"eu, porém, venho a ti em nome de ___ dos Exércitos\"",
+    "prompt": "Complete a frase: \"eu, porém, venho a ti em nome de ___ dos Exércitos\"",
+    "cue": "Complete a frase: \"eu, porém, venho a ti em nome de ___ dos Exércitos\"",
+    "template": "eu, porém, venho a ti em nome de ___ dos Exércitos",
+    "feedbackCorrect": "Certo: essa palavra completa o sentido do versículo.",
+    "feedbackWrong": {
+      "b": "Essa opção não completa esta lacuna no texto.",
+      "c": "Essa opção não completa esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "espada"
+      },
+      {
+        "id": "c",
+        "text": "escudo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Samuel 17:45",
+    "learningObjective": "Reconhecer que Davi enfrenta Golias no nome de Jeová dos Exércitos.",
+    "evidence": [
+      "1 Samuel 17:45"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-02-davi-e-golias",
+    "id": "samuel-cam-samuel-davi-02-davi-e-golias-06",
+    "passageText": "Então, lhe respondeu Davi: Tu vens a mim com espada, e com lança, e com escudo; eu, porém, venho a ti em nome de Jeová dos Exércitos, do Deus das tropas de Israel, as quais tens desafiado.",
+    "type": "connect",
+    "question": "O que 1 Samuel 17:45 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Samuel 17:45 comunica que se liga a este contexto?",
+    "cue": "O que 1 Samuel 17:45 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: essa ponte mostra a relação pedida pelo texto.",
+    "feedbackWrong": {
+      "b": "Essa leitura não captura a ponte com o contexto.",
+      "c": "Essa leitura não captura a ponte com o contexto."
+    },
+    "passageA": {
+      "ref": "1 Samuel 17:45",
+      "text": "Então, lhe respondeu Davi: Tu vens a mim com espada, e com lança, e com escudo; eu, porém, venho a ti em nome de Jeová dos Exércitos, do Deus das tropas de Israel, as quais tens desafiado."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Davi vem no nome de Jeová dos Exércitos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Armas versus nome de Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Davi iguala as armas do adversário às suas"
+      },
+      {
+        "id": "c",
+        "text": "Jeová dos Exércitos fica de fora do confronto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 17:45",
+    "learningObjective": "Reconhecer que Davi enfrenta Golias no nome de Jeová dos Exércitos.",
+    "evidence": [
+      "1 Samuel 17:45"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-02-davi-e-golias",
+    "id": "samuel-pro-samuel-davi-02-davi-e-golias-01",
+    "passageText": "Então, lhe respondeu Davi: Tu vens a mim com espada, e com lança, e com escudo; eu, porém, venho a ti em nome de Jeová dos Exércitos, do Deus das tropas de Israel, as quais tens desafiado.",
+    "type": "true_false",
+    "question": "O combate de Davi é interpretado como defesa da honra de Jeová, desafiada nas tropas de Israel.",
+    "prompt": "O combate de Davi é interpretado como defesa da honra de Jeová, desafiada nas tropas de Israel.",
+    "cue": "O combate de Davi é interpretado como defesa da honra de Jeová, desafiada nas tropas de Israel.",
+    "feedbackCorrect": "Certo: o desafio às tropas toca o Deus de Israel.",
+    "feedbackWrong": {
+      "false": "Davi luta no nome de Jeová dos Exércitos."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 17:45",
+    "learningObjective": "Reconhecer que Davi enfrenta Golias no nome de Jeová dos Exércitos.",
+    "evidence": [
+      "1 Samuel 17:45"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-02-davi-e-golias",
+    "id": "samuel-pro-samuel-davi-02-davi-e-golias-02",
+    "passageText": "Então, lhe respondeu Davi: Tu vens a mim com espada, e com lança, e com escudo; eu, porém, venho a ti em nome de Jeová dos Exércitos, do Deus das tropas de Israel, as quais tens desafiado.",
+    "type": "tap",
+    "question": "Em 1 Samuel 17:45, toque a palavra que falta em \"as quais tens ___.\"?",
+    "prompt": "Em 1 Samuel 17:45, toque a palavra que falta em \"as quais tens ___.\"?",
+    "cue": "Em 1 Samuel 17:45, toque a palavra que falta em \"as quais tens ___.\"?",
+    "template": "as quais tens ___.",
+    "feedbackCorrect": "Exato: essa palavra sustenta o sentido do trecho.",
+    "feedbackWrong": {
+      "b": "Essa palavra não preenche esta lacuna no texto.",
+      "c": "Essa palavra não preenche esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "desafiado"
+      },
+      {
+        "id": "b",
+        "text": "espada"
+      },
+      {
+        "id": "c",
+        "text": "nome"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 17:45",
+    "learningObjective": "Reconhecer que Davi enfrenta Golias no nome de Jeová dos Exércitos.",
+    "evidence": [
+      "1 Samuel 17:45"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-02-davi-e-golias",
+    "id": "samuel-pro-samuel-davi-02-davi-e-golias-03",
+    "passageText": "Então, lhe respondeu Davi: Tu vens a mim com espada, e com lança, e com escudo; eu, porém, venho a ti em nome de Jeová dos Exércitos, do Deus das tropas de Israel, as quais tens desafiado.",
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de 1 Samuel 17:45?",
+    "prompt": "Qual leitura interpreta melhor o sentido de 1 Samuel 17:45?",
+    "cue": "Qual leitura interpreta melhor o sentido de 1 Samuel 17:45?",
+    "feedbackCorrect": "Certo: essa interpretação respeita o sentido do texto.",
+    "feedbackWrong": {
+      "b": "Davi rejeita a lógica só das armas.",
+      "c": "O nome de Jeová é o eixo da resposta.",
+      "d": "Davi liga o desafio às tropas ao Deus de Israel."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A vitória esperada depende do nome de Jeová, não das armas do gigante"
+      },
+      {
+        "id": "b",
+        "text": "Davi iguala o combate a uma disputa só de força física"
+      },
+      {
+        "id": "c",
+        "text": "O nome de Jeová é detalhe ornamental sem peso no confronto"
+      },
+      {
+        "id": "d",
+        "text": "Desafiar as tropas de Israel não ofende o Deus delas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 17:45",
+    "learningObjective": "Reconhecer que Davi enfrenta Golias no nome de Jeová dos Exércitos.",
+    "evidence": [
+      "1 Samuel 17:45"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-02-davi-e-golias",
+    "id": "samuel-pro-samuel-davi-02-davi-e-golias-04",
+    "passageText": "Então, lhe respondeu Davi: Tu vens a mim com espada, e com lança, e com escudo; eu, porém, venho a ti em nome de Jeová dos Exércitos, do Deus das tropas de Israel, as quais tens desafiado.",
+    "type": "order",
+    "question": "Qual sequência revela o sentido de 1 Samuel 17:45?",
+    "prompt": "Qual sequência revela o sentido de 1 Samuel 17:45?",
+    "cue": "Qual sequência revela o sentido de 1 Samuel 17:45?",
+    "feedbackCorrect": "Certo: essa sequência revela o sentido do trecho.",
+    "feedbackWrong": {
+      "b": "Releia a ordem: o meio do relato não vem primeiro.",
+      "c": "Releia a ordem: o fim do relato não abre a sequência."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Então, lhe respondeu Davi: Tu vens a mim com espada, e com lança, e com escudo"
+      },
+      {
+        "id": "b",
+        "text": "eu, porém, venho a ti em nome de Jeová dos Exércitos"
+      },
+      {
+        "id": "c",
+        "text": "do Deus das tropas de Israel, as quais tens desafiado"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 17:45",
+    "learningObjective": "Reconhecer que Davi enfrenta Golias no nome de Jeová dos Exércitos.",
+    "evidence": [
+      "1 Samuel 17:45"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-02-davi-e-golias",
+    "id": "samuel-pro-samuel-davi-02-davi-e-golias-05",
+    "passageText": "Então, lhe respondeu Davi: Tu vens a mim com espada, e com lança, e com escudo; eu, porém, venho a ti em nome de Jeová dos Exércitos, do Deus das tropas de Israel, as quais tens desafiado.",
+    "type": "complete",
+    "question": "Complete a frase: \"Tu vens a mim com espada, e com ___, e com escudo\"",
+    "prompt": "Complete a frase: \"Tu vens a mim com espada, e com ___, e com escudo\"",
+    "cue": "Complete a frase: \"Tu vens a mim com espada, e com ___, e com escudo\"",
+    "template": "Tu vens a mim com espada, e com ___, e com escudo",
+    "feedbackCorrect": "Certo: essa lacuna aponta o foco teológico do verso.",
+    "feedbackWrong": {
+      "b": "Essa opção não completa esta lacuna no texto.",
+      "c": "Essa opção não completa esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "lança"
+      },
+      {
+        "id": "b",
+        "text": "nome"
+      },
+      {
+        "id": "c",
+        "text": "Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Samuel 17:45",
+    "learningObjective": "Reconhecer que Davi enfrenta Golias no nome de Jeová dos Exércitos.",
+    "evidence": [
+      "1 Samuel 17:45"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-02-davi-e-golias",
+    "id": "samuel-pro-samuel-davi-02-davi-e-golias-06",
+    "passageText": "Então, lhe respondeu Davi: Tu vens a mim com espada, e com lança, e com escudo; eu, porém, venho a ti em nome de Jeová dos Exércitos, do Deus das tropas de Israel, as quais tens desafiado.",
+    "type": "connect",
+    "question": "O que 1 Samuel 17:45 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Samuel 17:45 comunica que se liga a este contexto?",
+    "cue": "O que 1 Samuel 17:45 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: essa ponte interpreta o sentido da missão.",
+    "feedbackWrong": {
+      "b": "Essa leitura não interpreta bem o vínculo com o contexto.",
+      "c": "Essa leitura não interpreta bem o vínculo com o contexto."
+    },
+    "passageA": {
+      "ref": "1 Samuel 17:45",
+      "text": "Então, lhe respondeu Davi: Tu vens a mim com espada, e com lança, e com escudo; eu, porém, venho a ti em nome de Jeová dos Exércitos, do Deus das tropas de Israel, as quais tens desafiado."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Davi vem no nome de Jeová dos Exércitos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Honra de Jeová no combate"
+      },
+      {
+        "id": "b",
+        "text": "O combate é só disputa de força física"
+      },
+      {
+        "id": "c",
+        "text": "Desafiar as tropas não ofende o Deus de Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Samuel 7:16",
+    "learningObjective": "Reconhecer a promessa de casa e trono estáveis para sempre diante de Jeová.",
+    "evidence": [
+      "2 Samuel 7:16"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-03-desafio-o-rei",
+    "id": "samuel-sem-samuel-davi-03-desafio-o-rei-01",
+    "passageText": "Será estável para sempre diante de mim a tua casa e o teu reino; será estabelecido para sempre o teu trono.",
+    "type": "true_false",
+    "question": "A casa e o reino de Davi serão estáveis para sempre diante de Jeová.",
+    "prompt": "A casa e o reino de Davi serão estáveis para sempre diante de Jeová.",
+    "cue": "A casa e o reino de Davi serão estáveis para sempre diante de Jeová.",
+    "feedbackCorrect": "Certo: o texto promete estabilidade para sempre.",
+    "feedbackWrong": {
+      "false": "Releia: será estável para sempre a tua casa e o teu reino."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Samuel 7:16",
+    "learningObjective": "Reconhecer a promessa de casa e trono estáveis para sempre diante de Jeová.",
+    "evidence": [
+      "2 Samuel 7:16"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-03-desafio-o-rei",
+    "id": "samuel-sem-samuel-davi-03-desafio-o-rei-02",
+    "passageText": "Será estável para sempre diante de mim a tua casa e o teu reino; será estabelecido para sempre o teu trono.",
+    "type": "tap",
+    "question": "Em 2 Samuel 7:16, toque a palavra que falta em \"será estabelecido para sempre o teu ___\"?",
+    "prompt": "Em 2 Samuel 7:16, toque a palavra que falta em \"será estabelecido para sempre o teu ___\"?",
+    "cue": "Em 2 Samuel 7:16, toque a palavra que falta em \"será estabelecido para sempre o teu ___\"?",
+    "template": "será estabelecido para sempre o teu ___",
+    "feedbackCorrect": "Exato: essa é a palavra do versículo.",
+    "feedbackWrong": {
+      "b": "Essa palavra não preenche esta lacuna no texto.",
+      "c": "Essa palavra não preenche esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "trono"
+      },
+      {
+        "id": "b",
+        "text": "casa"
+      },
+      {
+        "id": "c",
+        "text": "reino"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Samuel 7:16",
+    "learningObjective": "Reconhecer a promessa de casa e trono estáveis para sempre diante de Jeová.",
+    "evidence": [
+      "2 Samuel 7:16"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-03-desafio-o-rei",
+    "id": "samuel-sem-samuel-davi-03-desafio-o-rei-03",
+    "passageText": "Será estável para sempre diante de mim a tua casa e o teu reino; será estabelecido para sempre o teu trono.",
+    "type": "choice",
+    "question": "O que o texto promete sobre a casa e o reino?",
+    "prompt": "O que o texto promete sobre a casa e o reino?",
+    "cue": "O que o texto promete sobre a casa e o reino?",
+    "feedbackCorrect": "Certo: o texto afirma isso diretamente.",
+    "feedbackWrong": {
+      "b": "O texto diz para sempre, não só uma geração.",
+      "c": "O trono será estabelecido para sempre.",
+      "d": "A promessa inclui casa, reino e trono."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Serão estáveis para sempre diante de Jeová, e o trono estabelecido"
+      },
+      {
+        "id": "b",
+        "text": "A casa e o reino duram só uma geração e depois caem"
+      },
+      {
+        "id": "c",
+        "text": "O trono nunca será estabelecido diante de Jeová"
+      },
+      {
+        "id": "d",
+        "text": "A promessa exclui a casa e fala só de um templo de pedra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Samuel 7:16",
+    "learningObjective": "Reconhecer a promessa de casa e trono estáveis para sempre diante de Jeová.",
+    "evidence": [
+      "2 Samuel 7:16"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-03-desafio-o-rei",
+    "id": "samuel-sem-samuel-davi-03-desafio-o-rei-04",
+    "passageText": "Será estável para sempre diante de mim a tua casa e o teu reino; será estabelecido para sempre o teu trono.",
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em 2 Samuel 7:16?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 2 Samuel 7:16?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 2 Samuel 7:16?",
+    "feedbackCorrect": "Certo: essa é a sequência dos fatos no texto.",
+    "feedbackWrong": {
+      "b": "Releia a ordem: o meio do relato não vem primeiro.",
+      "c": "Releia a ordem: o fim do relato não abre a sequência."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Será estável para sempre diante de mim a tua casa e o teu reino"
+      },
+      {
+        "id": "b",
+        "text": "será estabelecido para sempre"
+      },
+      {
+        "id": "c",
+        "text": "o teu trono"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Samuel 7:16",
+    "learningObjective": "Reconhecer a promessa de casa e trono estáveis para sempre diante de Jeová.",
+    "evidence": [
+      "2 Samuel 7:16"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-03-desafio-o-rei",
+    "id": "samuel-sem-samuel-davi-03-desafio-o-rei-05",
+    "passageText": "Será estável para sempre diante de mim a tua casa e o teu reino; será estabelecido para sempre o teu trono.",
+    "type": "complete",
+    "question": "Complete a frase: \"Será ___ para sempre diante de mim a tua casa e o teu reino\"",
+    "prompt": "Complete a frase: \"Será ___ para sempre diante de mim a tua casa e o teu reino\"",
+    "cue": "Complete a frase: \"Será ___ para sempre diante de mim a tua casa e o teu reino\"",
+    "template": "Será ___ para sempre diante de mim a tua casa e o teu reino",
+    "feedbackCorrect": "Certo: essa é a palavra que completa o versículo.",
+    "feedbackWrong": {
+      "b": "Essa opção não completa esta lacuna no texto.",
+      "c": "Essa opção não completa esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "estável"
+      },
+      {
+        "id": "b",
+        "text": "trono"
+      },
+      {
+        "id": "c",
+        "text": "estabelecido"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Samuel 7:16",
+    "learningObjective": "Reconhecer a promessa de casa e trono estáveis para sempre diante de Jeová.",
+    "evidence": [
+      "2 Samuel 7:16"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-03-desafio-o-rei",
+    "id": "samuel-sem-samuel-davi-03-desafio-o-rei-06",
+    "passageText": "Será estável para sempre diante de mim a tua casa e o teu reino; será estabelecido para sempre o teu trono.",
+    "type": "connect",
+    "question": "O que 2 Samuel 7:16 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Samuel 7:16 comunica que se liga a este contexto?",
+    "cue": "O que 2 Samuel 7:16 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: essa é a ponte entre o texto e o insight da missão.",
+    "feedbackWrong": {
+      "b": "Essa leitura não liga o versículo ao contexto da missão.",
+      "c": "Essa leitura não liga o versículo ao contexto da missão."
+    },
+    "passageA": {
+      "ref": "2 Samuel 7:16",
+      "text": "Será estável para sempre diante de mim a tua casa e o teu reino; será estabelecido para sempre o teu trono."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Casa e trono estáveis para sempre."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Casa e trono para sempre"
+      },
+      {
+        "id": "b",
+        "text": "A casa e o reino duram só uma geração"
+      },
+      {
+        "id": "c",
+        "text": "O trono nunca será estabelecido diante de Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Samuel 7:16",
+    "learningObjective": "Reconhecer a promessa de casa e trono estáveis para sempre diante de Jeová.",
+    "evidence": [
+      "2 Samuel 7:16"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-03-desafio-o-rei",
+    "id": "samuel-cam-samuel-davi-03-desafio-o-rei-01",
+    "passageText": "Será estável para sempre diante de mim a tua casa e o teu reino; será estabelecido para sempre o teu trono.",
+    "type": "true_false",
+    "question": "A estabilidade da casa e do reino está ligada ao estabelecimento perpétuo do trono.",
+    "prompt": "A estabilidade da casa e do reino está ligada ao estabelecimento perpétuo do trono.",
+    "cue": "A estabilidade da casa e do reino está ligada ao estabelecimento perpétuo do trono.",
+    "feedbackCorrect": "Certo: casa, reino e trono se encadeiam na promessa.",
+    "feedbackWrong": {
+      "false": "O texto une estabilidade e estabelecimento para sempre."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Samuel 7:16",
+    "learningObjective": "Reconhecer a promessa de casa e trono estáveis para sempre diante de Jeová.",
+    "evidence": [
+      "2 Samuel 7:16"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-03-desafio-o-rei",
+    "id": "samuel-cam-samuel-davi-03-desafio-o-rei-02",
+    "passageText": "Será estável para sempre diante de mim a tua casa e o teu reino; será estabelecido para sempre o teu trono.",
+    "type": "tap",
+    "question": "Em 2 Samuel 7:16, toque a palavra que falta em \"Será estável para sempre diante de mim a tua ___ e o teu reino\"?",
+    "prompt": "Em 2 Samuel 7:16, toque a palavra que falta em \"Será estável para sempre diante de mim a tua ___ e o teu reino\"?",
+    "cue": "Em 2 Samuel 7:16, toque a palavra que falta em \"Será estável para sempre diante de mim a tua ___ e o teu reino\"?",
+    "template": "Será estável para sempre diante de mim a tua ___ e o teu reino",
+    "feedbackCorrect": "Exato: essa é a palavra-chave nesta lacuna.",
+    "feedbackWrong": {
+      "b": "Essa palavra não preenche esta lacuna no texto.",
+      "c": "Essa palavra não preenche esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "casa"
+      },
+      {
+        "id": "b",
+        "text": "trono"
+      },
+      {
+        "id": "c",
+        "text": "estabelecido"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Samuel 7:16",
+    "learningObjective": "Reconhecer a promessa de casa e trono estáveis para sempre diante de Jeová.",
+    "evidence": [
+      "2 Samuel 7:16"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-03-desafio-o-rei",
+    "id": "samuel-cam-samuel-davi-03-desafio-o-rei-03",
+    "passageText": "Será estável para sempre diante de mim a tua casa e o teu reino; será estabelecido para sempre o teu trono.",
+    "type": "choice",
+    "question": "Como se relacionam casa, reino e trono na promessa?",
+    "prompt": "Como se relacionam casa, reino e trono na promessa?",
+    "cue": "Como se relacionam casa, reino e trono na promessa?",
+    "feedbackCorrect": "Certo: essa leitura conecta bem o texto ao contexto.",
+    "feedbackWrong": {
+      "b": "Casa, reino e trono estão na mesma promessa perpétua.",
+      "c": "O texto diz para sempre, além da vida de Davi.",
+      "d": "A estabilidade é afirmada, não negada."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Casa e reino estáveis e trono estabelecido para sempre diante de Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Só o trono dura; a casa e o reino são temporários"
+      },
+      {
+        "id": "c",
+        "text": "A promessa vale só enquanto Davi viver em pessoa"
+      },
+      {
+        "id": "d",
+        "text": "Estabilidade diante de Jeová é negada ao reino de Davi"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Samuel 7:16",
+    "learningObjective": "Reconhecer a promessa de casa e trono estáveis para sempre diante de Jeová.",
+    "evidence": [
+      "2 Samuel 7:16"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-03-desafio-o-rei",
+    "id": "samuel-cam-samuel-davi-03-desafio-o-rei-04",
+    "passageText": "Será estável para sempre diante de mim a tua casa e o teu reino; será estabelecido para sempre o teu trono.",
+    "type": "order",
+    "question": "Como se encadeiam os eventos de 2 Samuel 7:16?",
+    "prompt": "Como se encadeiam os eventos de 2 Samuel 7:16?",
+    "cue": "Como se encadeiam os eventos de 2 Samuel 7:16?",
+    "feedbackCorrect": "Certo: esse é o encadeamento do relato.",
+    "feedbackWrong": {
+      "b": "Releia a ordem: o meio do relato não vem primeiro.",
+      "c": "Releia a ordem: o fim do relato não abre a sequência."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Será estável para sempre diante de mim a tua casa e o teu reino"
+      },
+      {
+        "id": "b",
+        "text": "será estabelecido para sempre"
+      },
+      {
+        "id": "c",
+        "text": "o teu trono"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Samuel 7:16",
+    "learningObjective": "Reconhecer a promessa de casa e trono estáveis para sempre diante de Jeová.",
+    "evidence": [
+      "2 Samuel 7:16"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-03-desafio-o-rei",
+    "id": "samuel-cam-samuel-davi-03-desafio-o-rei-05",
+    "passageText": "Será estável para sempre diante de mim a tua casa e o teu reino; será estabelecido para sempre o teu trono.",
+    "type": "complete",
+    "question": "Complete a frase: \"será ___ para sempre o teu trono\"",
+    "prompt": "Complete a frase: \"será ___ para sempre o teu trono\"",
+    "cue": "Complete a frase: \"será ___ para sempre o teu trono\"",
+    "template": "será ___ para sempre o teu trono",
+    "feedbackCorrect": "Certo: essa palavra completa o sentido do versículo.",
+    "feedbackWrong": {
+      "b": "Essa opção não completa esta lacuna no texto.",
+      "c": "Essa opção não completa esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "estabelecido"
+      },
+      {
+        "id": "b",
+        "text": "casa"
+      },
+      {
+        "id": "c",
+        "text": "reino"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Samuel 7:16",
+    "learningObjective": "Reconhecer a promessa de casa e trono estáveis para sempre diante de Jeová.",
+    "evidence": [
+      "2 Samuel 7:16"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-03-desafio-o-rei",
+    "id": "samuel-cam-samuel-davi-03-desafio-o-rei-06",
+    "passageText": "Será estável para sempre diante de mim a tua casa e o teu reino; será estabelecido para sempre o teu trono.",
+    "type": "connect",
+    "question": "O que 2 Samuel 7:16 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Samuel 7:16 comunica que se liga a este contexto?",
+    "cue": "O que 2 Samuel 7:16 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: essa ponte mostra a relação pedida pelo texto.",
+    "feedbackWrong": {
+      "b": "Essa leitura não captura a ponte com o contexto.",
+      "c": "Essa leitura não captura a ponte com o contexto."
+    },
+    "passageA": {
+      "ref": "2 Samuel 7:16",
+      "text": "Será estável para sempre diante de mim a tua casa e o teu reino; será estabelecido para sempre o teu trono."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Casa e trono estáveis para sempre."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Promessa perpétua ao trono"
+      },
+      {
+        "id": "b",
+        "text": "Só o trono dura; casa e reino são temporários"
+      },
+      {
+        "id": "c",
+        "text": "A promessa vale só enquanto Davi viver"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Samuel 7:16",
+    "learningObjective": "Reconhecer a promessa de casa e trono estáveis para sempre diante de Jeová.",
+    "evidence": [
+      "2 Samuel 7:16"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-03-desafio-o-rei",
+    "id": "samuel-pro-samuel-davi-03-desafio-o-rei-01",
+    "passageText": "Será estável para sempre diante de mim a tua casa e o teu reino; será estabelecido para sempre o teu trono.",
+    "type": "true_false",
+    "question": "A promessa aponta para um reinado duradouro diante de Jeová, além de um sucesso passageiro.",
+    "prompt": "A promessa aponta para um reinado duradouro diante de Jeová, além de um sucesso passageiro.",
+    "cue": "A promessa aponta para um reinado duradouro diante de Jeová, além de um sucesso passageiro.",
+    "feedbackCorrect": "Certo: para sempre marca o horizonte da promessa.",
+    "feedbackWrong": {
+      "false": "Casa e trono estáveis revelam fidelidade duradoura de Jeová."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Samuel 7:16",
+    "learningObjective": "Reconhecer a promessa de casa e trono estáveis para sempre diante de Jeová.",
+    "evidence": [
+      "2 Samuel 7:16"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-03-desafio-o-rei",
+    "id": "samuel-pro-samuel-davi-03-desafio-o-rei-02",
+    "passageText": "Será estável para sempre diante de mim a tua casa e o teu reino; será estabelecido para sempre o teu trono.",
+    "type": "tap",
+    "question": "Em 2 Samuel 7:16, toque a palavra que falta em \"Será estável para sempre diante de ___ a tua casa e o teu reino\"?",
+    "prompt": "Em 2 Samuel 7:16, toque a palavra que falta em \"Será estável para sempre diante de ___ a tua casa e o teu reino\"?",
+    "cue": "Em 2 Samuel 7:16, toque a palavra que falta em \"Será estável para sempre diante de ___ a tua casa e o teu reino\"?",
+    "template": "Será estável para sempre diante de ___ a tua casa e o teu reino",
+    "feedbackCorrect": "Exato: essa palavra sustenta o sentido do trecho.",
+    "feedbackWrong": {
+      "b": "Essa palavra não preenche esta lacuna no texto.",
+      "c": "Essa palavra não preenche esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "mim"
+      },
+      {
+        "id": "b",
+        "text": "trono"
+      },
+      {
+        "id": "c",
+        "text": "casa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Samuel 7:16",
+    "learningObjective": "Reconhecer a promessa de casa e trono estáveis para sempre diante de Jeová.",
+    "evidence": [
+      "2 Samuel 7:16"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-03-desafio-o-rei",
+    "id": "samuel-pro-samuel-davi-03-desafio-o-rei-03",
+    "passageText": "Será estável para sempre diante de mim a tua casa e o teu reino; será estabelecido para sempre o teu trono.",
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de 2 Samuel 7:16?",
+    "prompt": "Qual leitura interpreta melhor o sentido de 2 Samuel 7:16?",
+    "cue": "Qual leitura interpreta melhor o sentido de 2 Samuel 7:16?",
+    "feedbackCorrect": "Certo: essa interpretação respeita o sentido do texto.",
+    "feedbackWrong": {
+      "b": "A estabilidade é diante de mim — ação de Jeová.",
+      "c": "O texto afirma estabelecimento para sempre.",
+      "d": "A estabilidade é diante de Jeová, não longe dele."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová garante estabilidade duradoura à casa e ao trono de Davi"
+      },
+      {
+        "id": "b",
+        "text": "A promessa é só política e exclui qualquer ação de Jeová"
+      },
+      {
+        "id": "c",
+        "text": "O trono de Davi é declarado instável e passageiro no texto"
+      },
+      {
+        "id": "d",
+        "text": "Casa e reino ficam estáveis apenas longe da presença de Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Samuel 7:16",
+    "learningObjective": "Reconhecer a promessa de casa e trono estáveis para sempre diante de Jeová.",
+    "evidence": [
+      "2 Samuel 7:16"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-03-desafio-o-rei",
+    "id": "samuel-pro-samuel-davi-03-desafio-o-rei-04",
+    "passageText": "Será estável para sempre diante de mim a tua casa e o teu reino; será estabelecido para sempre o teu trono.",
+    "type": "order",
+    "question": "Qual sequência revela o sentido de 2 Samuel 7:16?",
+    "prompt": "Qual sequência revela o sentido de 2 Samuel 7:16?",
+    "cue": "Qual sequência revela o sentido de 2 Samuel 7:16?",
+    "feedbackCorrect": "Certo: essa sequência revela o sentido do trecho.",
+    "feedbackWrong": {
+      "b": "Releia a ordem: o meio do relato não vem primeiro.",
+      "c": "Releia a ordem: o fim do relato não abre a sequência."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Será estável para sempre diante de mim a tua casa e o teu reino"
+      },
+      {
+        "id": "b",
+        "text": "será estabelecido para sempre"
+      },
+      {
+        "id": "c",
+        "text": "o teu trono"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Samuel 7:16",
+    "learningObjective": "Reconhecer a promessa de casa e trono estáveis para sempre diante de Jeová.",
+    "evidence": [
+      "2 Samuel 7:16"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-03-desafio-o-rei",
+    "id": "samuel-pro-samuel-davi-03-desafio-o-rei-05",
+    "passageText": "Será estável para sempre diante de mim a tua casa e o teu reino; será estabelecido para sempre o teu trono.",
+    "type": "complete",
+    "question": "Complete a frase: \"Será estável para sempre diante de mim a tua casa e o teu ___\"",
+    "prompt": "Complete a frase: \"Será estável para sempre diante de mim a tua casa e o teu ___\"",
+    "cue": "Complete a frase: \"Será estável para sempre diante de mim a tua casa e o teu ___\"",
+    "template": "Será estável para sempre diante de mim a tua casa e o teu ___",
+    "feedbackCorrect": "Certo: essa lacuna aponta o foco teológico do verso.",
+    "feedbackWrong": {
+      "b": "Essa opção não completa esta lacuna no texto.",
+      "c": "Essa opção não completa esta lacuna no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "reino"
+      },
+      {
+        "id": "b",
+        "text": "trono"
+      },
+      {
+        "id": "c",
+        "text": "estabelecido"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Samuel 7:16",
+    "learningObjective": "Reconhecer a promessa de casa e trono estáveis para sempre diante de Jeová.",
+    "evidence": [
+      "2 Samuel 7:16"
+    ],
+    "trail": "samuel",
+    "section": "samuel-davi-03-desafio-o-rei",
+    "id": "samuel-pro-samuel-davi-03-desafio-o-rei-06",
+    "passageText": "Será estável para sempre diante de mim a tua casa e o teu reino; será estabelecido para sempre o teu trono.",
+    "type": "connect",
+    "question": "O que 2 Samuel 7:16 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Samuel 7:16 comunica que se liga a este contexto?",
+    "cue": "O que 2 Samuel 7:16 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: essa ponte interpreta o sentido da missão.",
+    "feedbackWrong": {
+      "b": "Essa leitura não interpreta bem o vínculo com o contexto.",
+      "c": "Essa leitura não interpreta bem o vínculo com o contexto."
+    },
+    "passageA": {
+      "ref": "2 Samuel 7:16",
+      "text": "Será estável para sempre diante de mim a tua casa e o teu reino; será estabelecido para sempre o teu trono."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Casa e trono estáveis para sempre."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fidelidade duradoura de Jeová"
+      },
+      {
+        "id": "b",
+        "text": "A promessa exclui qualquer ação de Jeová"
+      },
+      {
+        "id": "c",
+        "text": "O trono de Davi é declarado instável no texto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  }
+]

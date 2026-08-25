@@ -1,0 +1,2225 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Miqueias 6:8",
+    "learningObjective": "Reconhecer que Deus, mais que sacrifícios, requer justiça, misericórdia e humildade diária.",
+    "evidence": [
+      "Miqueias 6:6-8"
+    ],
+    "type": "true_false",
+    "question": "Miqueias 6:8 ensina que Jeová requer justiça, misericórdia e uma caminhada humilde com Ele.",
+    "prompt": "Miqueias 6:8 ensina que Jeová requer justiça, misericórdia e uma caminhada humilde com Ele.",
+    "cue": "Miqueias 6:8 ensina que Jeová requer justiça, misericórdia e uma caminhada humilde com Ele.",
+    "feedbackCorrect": "Certo: os três pedidos aparecem juntos no versículo.",
+    "feedbackWrong": {
+      "false": "O versículo lista exatamente esses três pedidos como resposta de Deus."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia, e andes humildemente com o teu Deus?",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-01-o-senhor-requer-de-t",
+    "id": "miqueias-sem-miqueias-miqueias-01-o-senhor-requer-de-t-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Miqueias 6:8",
+    "learningObjective": "Reconhecer que Deus, mais que sacrifícios, requer justiça, misericórdia e humildade diária.",
+    "evidence": [
+      "Miqueias 6:6-8"
+    ],
+    "type": "tap",
+    "question": "Em Miqueias 6:8, toque a palavra que falta em \"Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com ___, e ames a misericórdia, e andes humildemente com o teu Deus?\"?",
+    "prompt": "Em Miqueias 6:8, toque a palavra que falta em \"Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com ___, e ames a misericórdia, e andes humildemente com o teu Deus?\"?",
+    "cue": "Em Miqueias 6:8, toque a palavra que falta em \"Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com ___, e ames a misericórdia, e andes humildemente com o teu Deus?\"?",
+    "feedbackCorrect": "Exato: 'justiça' é o primeiro dos três pedidos de Deus.",
+    "feedbackWrong": {
+      "b": "'Humildemente' completa outra parte do versículo, não esta lacuna.",
+      "c": "'Misericórdia' aparece depois desta lacuna, ligada a outro verbo."
+    },
+    "passageText": "Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia, e andes humildemente com o teu Deus?",
+    "template": "Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com ___, e ames a misericórdia, e andes humildemente com o teu Deus?",
+    "options": [
+      {
+        "id": "a",
+        "text": "justiça"
+      },
+      {
+        "id": "b",
+        "text": "humildemente"
+      },
+      {
+        "id": "c",
+        "text": "misericórdia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-01-o-senhor-requer-de-t",
+    "id": "miqueias-sem-miqueias-miqueias-01-o-senhor-requer-de-t-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Miqueias 6:8",
+    "learningObjective": "Reconhecer que Deus, mais que sacrifícios, requer justiça, misericórdia e humildade diária.",
+    "evidence": [
+      "Miqueias 6:6-8"
+    ],
+    "type": "choice",
+    "question": "Qual é o fato explícito de Miqueias 6:8?",
+    "prompt": "Qual é o fato explícito de Miqueias 6:8?",
+    "cue": "Qual é o fato explícito de Miqueias 6:8?",
+    "feedbackCorrect": "Certo: essa é exatamente a resposta dada no versículo.",
+    "feedbackWrong": {
+      "a": "Esse pedido de sacrifícios é mencionado antes, mas é rejeitado como resposta suficiente.",
+      "b": "Essa ideia aparece no contexto anterior, como pergunta retórica rejeitada.",
+      "c": "Essa cena de nações e guerra pertence a outra passagem de Miqueias, não a 6:8."
+    },
+    "passageText": "Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia, e andes humildemente com o teu Deus?",
+    "options": [
+      {
+        "id": "a",
+        "text": "O texto ordena a oferta de mil carneiros e rios de azeite a Jeová."
+      },
+      {
+        "id": "b",
+        "text": "O texto exige a entrega do primogênito como pagamento pelo pecado."
+      },
+      {
+        "id": "c",
+        "text": "O texto convida as nações a subirem ao monte de Jeová para aprender a guerra."
+      },
+      {
+        "id": "d",
+        "text": "O texto responde que Jeová requer justiça, misericórdia e humildade, não sacrifícios."
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-01-o-senhor-requer-de-t",
+    "id": "miqueias-sem-miqueias-miqueias-01-o-senhor-requer-de-t-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Miqueias 6:8",
+    "learningObjective": "Reconhecer que Deus, mais que sacrifícios, requer justiça, misericórdia e humildade diária.",
+    "evidence": [
+      "Miqueias 6:6-8"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Miqueias 6:8?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Miqueias 6:8?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Miqueias 6:8?",
+    "feedbackCorrect": "Certo: essa é a sequência do versículo.",
+    "feedbackWrong": {
+      "b": "Esta parte vem depois da declaração inicial, não antes.",
+      "c": "Este trecho fecha o versículo; não é o ponto de partida."
+    },
+    "passageText": "Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia, e andes humildemente com o teu Deus?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele te há mostrado, ó homem, o que é bom"
+      },
+      {
+        "id": "b",
+        "text": "e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia"
+      },
+      {
+        "id": "c",
+        "text": "e andes humildemente com o teu Deus"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-01-o-senhor-requer-de-t",
+    "id": "miqueias-sem-miqueias-miqueias-01-o-senhor-requer-de-t-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Miqueias 6:8",
+    "learningObjective": "Reconhecer que Deus, mais que sacrifícios, requer justiça, misericórdia e humildade diária.",
+    "evidence": [
+      "Miqueias 6:6-8"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a ___, e andes humildemente com o teu Deus?\"",
+    "prompt": "Complete a frase: \"Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a ___, e andes humildemente com o teu Deus?\"",
+    "cue": "Complete a frase: \"Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a ___, e andes humildemente com o teu Deus?\"",
+    "feedbackCorrect": "Certo: 'misericórdia' é o segundo pedido de Deus no versículo.",
+    "feedbackWrong": {
+      "b": "'Justiça' já aparece antes desta lacuna.",
+      "c": "'Humildemente' pertence à última parte do versículo."
+    },
+    "passageText": "Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia, e andes humildemente com o teu Deus?",
+    "template": "Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a ___, e andes humildemente com o teu Deus?",
+    "options": [
+      {
+        "id": "a",
+        "text": "misericórdia"
+      },
+      {
+        "id": "b",
+        "text": "justiça"
+      },
+      {
+        "id": "c",
+        "text": "humildemente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-01-o-senhor-requer-de-t",
+    "id": "miqueias-sem-miqueias-miqueias-01-o-senhor-requer-de-t-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Miqueias 6:8",
+    "learningObjective": "Reconhecer que Deus, mais que sacrifícios, requer justiça, misericórdia e humildade diária.",
+    "evidence": [
+      "Miqueias 6:6-8"
+    ],
+    "type": "connect",
+    "question": "O que Miqueias 6:8 comunica que se liga a este contexto?",
+    "prompt": "O que Miqueias 6:8 comunica que se liga a este contexto?",
+    "cue": "O que Miqueias 6:8 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o texto liga a fé genuína à prática da justiça e da misericórdia.",
+    "feedbackWrong": {
+      "b": "O versículo rejeita justamente o ritual isolado como resposta suficiente.",
+      "c": "O texto pede o contrário: ação concreta de justiça, não silêncio."
+    },
+    "passageText": "Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia, e andes humildemente com o teu Deus?",
+    "passageA": {
+      "ref": "Miqueias 6:8",
+      "text": "Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia, e andes humildemente com o teu Deus?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A missão convida a viver a fé como prática diária de justiça e misericórdia, não como ritual vazio."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fé que se prova em atos de justiça"
+      },
+      {
+        "id": "b",
+        "text": "Sacrifício ritual como caminho a Deus"
+      },
+      {
+        "id": "c",
+        "text": "Silêncio diante das injustiças sociais"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-01-o-senhor-requer-de-t",
+    "id": "miqueias-sem-miqueias-miqueias-01-o-senhor-requer-de-t-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Miqueias 6:8",
+    "learningObjective": "Reconhecer que Deus, mais que sacrifícios, requer justiça, misericórdia e humildade diária.",
+    "evidence": [
+      "Miqueias 6:6-8"
+    ],
+    "type": "true_false",
+    "question": "O texto ensina que ao Senhor bastam holocaustos e sacrifícios, sem exigir justiça.",
+    "prompt": "O texto ensina que ao Senhor bastam holocaustos e sacrifícios, sem exigir justiça.",
+    "cue": "O texto ensina que ao Senhor bastam holocaustos e sacrifícios, sem exigir justiça.",
+    "feedbackCorrect": "Certo: o versículo rejeita essa leitura.",
+    "feedbackWrong": {
+      "true": "O versículo rejeita justamente essa ideia: o que Deus pede não são sacrifícios, mas justiça, misericórdia e humildade."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia, e andes humildemente com o teu Deus?",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-01-o-senhor-requer-de-t",
+    "id": "miqueias-cam-miqueias-miqueias-01-o-senhor-requer-de-t-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Miqueias 6:8",
+    "learningObjective": "Reconhecer que Deus, mais que sacrifícios, requer justiça, misericórdia e humildade diária.",
+    "evidence": [
+      "Miqueias 6:6-8"
+    ],
+    "type": "tap",
+    "question": "Em Miqueias 6:8, toque a palavra que falta em \"Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia, e andes ___ com o teu Deus?\"?",
+    "prompt": "Em Miqueias 6:8, toque a palavra que falta em \"Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia, e andes ___ com o teu Deus?\"?",
+    "cue": "Em Miqueias 6:8, toque a palavra que falta em \"Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia, e andes ___ com o teu Deus?\"?",
+    "feedbackCorrect": "Exato: a caminhada com Deus se faz com humildade.",
+    "feedbackWrong": {
+      "b": "'Justiça' está ligada ao primeiro pedido, não a esta lacuna.",
+      "c": "'Misericórdia' está ligada ao segundo pedido, não a esta lacuna."
+    },
+    "passageText": "Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia, e andes humildemente com o teu Deus?",
+    "template": "Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia, e andes ___ com o teu Deus?",
+    "options": [
+      {
+        "id": "a",
+        "text": "humildemente"
+      },
+      {
+        "id": "b",
+        "text": "justiça"
+      },
+      {
+        "id": "c",
+        "text": "misericórdia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-01-o-senhor-requer-de-t",
+    "id": "miqueias-cam-miqueias-miqueias-01-o-senhor-requer-de-t-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Miqueias 6:8",
+    "learningObjective": "Reconhecer que Deus, mais que sacrifícios, requer justiça, misericórdia e humildade diária.",
+    "evidence": [
+      "Miqueias 6:6-8"
+    ],
+    "type": "choice",
+    "question": "Qual leitura melhor explica o motivo por trás do pedido de Miqueias 6:8?",
+    "prompt": "Qual leitura melhor explica o motivo por trás do pedido de Miqueias 6:8?",
+    "cue": "Qual leitura melhor explica o motivo por trás do pedido de Miqueias 6:8?",
+    "feedbackCorrect": "Certo: o texto substitui o ritual pela prática ética e pela relação com Deus.",
+    "feedbackWrong": {
+      "b": "O versículo é específico: exige justiça, misericórdia e humildade, não devoção genérica.",
+      "c": "O texto não elimina Deus; ele pede uma caminhada 'com o teu Deus'.",
+      "d": "A humildade aqui descreve toda a postura de vida, não um rito isolado."
+    },
+    "passageText": "Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia, e andes humildemente com o teu Deus?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus troca sacrifícios por conduta ética e por comunhão diária com Ele."
+      },
+      {
+        "id": "b",
+        "text": "Deus se satisfaz com qualquer devoção sincera, mesmo sem mudança de vida."
+      },
+      {
+        "id": "c",
+        "text": "O texto ensina que a justiça humana substitui a necessidade de Deus."
+      },
+      {
+        "id": "d",
+        "text": "A humildade mencionada se refere apenas a jejuns rituais."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-01-o-senhor-requer-de-t",
+    "id": "miqueias-cam-miqueias-miqueias-01-o-senhor-requer-de-t-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Miqueias 6:8",
+    "learningObjective": "Reconhecer que Deus, mais que sacrifícios, requer justiça, misericórdia e humildade diária.",
+    "evidence": [
+      "Miqueias 6:6-8"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os elementos de Miqueias 6:8?",
+    "prompt": "Como se encadeiam os elementos de Miqueias 6:8?",
+    "cue": "Como se encadeiam os elementos de Miqueias 6:8?",
+    "feedbackCorrect": "Certo: a revelação vem primeiro, depois os pedidos concretos.",
+    "feedbackWrong": {
+      "b": "Esta parte depende da declaração inicial que a precede.",
+      "c": "Este fechamento pressupõe os pedidos anteriores."
+    },
+    "passageText": "Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia, e andes humildemente com o teu Deus?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele te há mostrado, ó homem, o que é bom"
+      },
+      {
+        "id": "b",
+        "text": "e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia"
+      },
+      {
+        "id": "c",
+        "text": "e andes humildemente com o teu Deus"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-01-o-senhor-requer-de-t",
+    "id": "miqueias-cam-miqueias-miqueias-01-o-senhor-requer-de-t-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Miqueias 6:8",
+    "learningObjective": "Reconhecer que Deus, mais que sacrifícios, requer justiça, misericórdia e humildade diária.",
+    "evidence": [
+      "Miqueias 6:6-8"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com ___, e ames a misericórdia, e andes humildemente com o teu Deus?\"",
+    "prompt": "Complete a frase: \"Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com ___, e ames a misericórdia, e andes humildemente com o teu Deus?\"",
+    "cue": "Complete a frase: \"Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com ___, e ames a misericórdia, e andes humildemente com o teu Deus?\"",
+    "feedbackCorrect": "Certo: a justiça abre a lista de pedidos de Deus.",
+    "feedbackWrong": {
+      "b": "'Misericórdia' vem depois desta lacuna.",
+      "c": "'Humildemente' fecha o versículo, não abre."
+    },
+    "passageText": "Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia, e andes humildemente com o teu Deus?",
+    "template": "Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com ___, e ames a misericórdia, e andes humildemente com o teu Deus?",
+    "options": [
+      {
+        "id": "a",
+        "text": "justiça"
+      },
+      {
+        "id": "b",
+        "text": "misericórdia"
+      },
+      {
+        "id": "c",
+        "text": "humildemente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-01-o-senhor-requer-de-t",
+    "id": "miqueias-cam-miqueias-miqueias-01-o-senhor-requer-de-t-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Miqueias 6:8",
+    "learningObjective": "Reconhecer que Deus, mais que sacrifícios, requer justiça, misericórdia e humildade diária.",
+    "evidence": [
+      "Miqueias 6:6-8"
+    ],
+    "type": "connect",
+    "question": "O que Miqueias 6:8 comunica que se liga a este contexto?",
+    "prompt": "O que Miqueias 6:8 comunica que se liga a este contexto?",
+    "cue": "O que Miqueias 6:8 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a missão pede prática, não apenas rito.",
+    "feedbackWrong": {
+      "b": "O texto contesta exatamente essa ideia.",
+      "c": "O texto trata a justiça como exigência central, não opção."
+    },
+    "passageText": "Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia, e andes humildemente com o teu Deus?",
+    "passageA": {
+      "ref": "Miqueias 6:8",
+      "text": "Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia, e andes humildemente com o teu Deus?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O convite da missão é trocar sacrifícios externos por uma vida guiada por justiça, misericórdia e humildade."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Vida ética no lugar do ritual vazio"
+      },
+      {
+        "id": "b",
+        "text": "Sacrifícios ainda bastam para agradar a Deus"
+      },
+      {
+        "id": "c",
+        "text": "Justiça é opcional diante da fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-01-o-senhor-requer-de-t",
+    "id": "miqueias-cam-miqueias-miqueias-01-o-senhor-requer-de-t-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Miqueias 6:8",
+    "learningObjective": "Reconhecer que Deus, mais que sacrifícios, requer justiça, misericórdia e humildade diária.",
+    "evidence": [
+      "Miqueias 6:6-8"
+    ],
+    "type": "true_false",
+    "question": "Miqueias 6:8 revela que a verdadeira religião se mede pela prática da justiça e da misericórdia, não pelo volume dos sacrifícios.",
+    "prompt": "Miqueias 6:8 revela que a verdadeira religião se mede pela prática da justiça e da misericórdia, não pelo volume dos sacrifícios.",
+    "cue": "Miqueias 6:8 revela que a verdadeira religião se mede pela prática da justiça e da misericórdia, não pelo volume dos sacrifícios.",
+    "feedbackCorrect": "Certo: essa é a leitura sustentada pelo contraste do capítulo 6.",
+    "feedbackWrong": {
+      "false": "O contraste do capítulo (sacrifícios versus justiça) sustenta exatamente essa leitura."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia, e andes humildemente com o teu Deus?",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-01-o-senhor-requer-de-t",
+    "id": "miqueias-pro-miqueias-miqueias-01-o-senhor-requer-de-t-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Miqueias 6:8",
+    "learningObjective": "Reconhecer que Deus, mais que sacrifícios, requer justiça, misericórdia e humildade diária.",
+    "evidence": [
+      "Miqueias 6:6-8"
+    ],
+    "type": "tap",
+    "question": "Em Miqueias 6:8, toque a palavra que falta em \"Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a ___, e andes humildemente com o teu Deus?\"?",
+    "prompt": "Em Miqueias 6:8, toque a palavra que falta em \"Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a ___, e andes humildemente com o teu Deus?\"?",
+    "cue": "Em Miqueias 6:8, toque a palavra que falta em \"Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a ___, e andes humildemente com o teu Deus?\"?",
+    "feedbackCorrect": "Exato: a misericórdia é o segundo pedido, ao lado da justiça e da humildade.",
+    "feedbackWrong": {
+      "b": "'Justiça' precede esta lacuna no versículo.",
+      "c": "'Humildemente' pertence à parte final do versículo."
+    },
+    "passageText": "Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia, e andes humildemente com o teu Deus?",
+    "template": "Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a ___, e andes humildemente com o teu Deus?",
+    "options": [
+      {
+        "id": "a",
+        "text": "misericórdia"
+      },
+      {
+        "id": "b",
+        "text": "justiça"
+      },
+      {
+        "id": "c",
+        "text": "humildemente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-01-o-senhor-requer-de-t",
+    "id": "miqueias-pro-miqueias-miqueias-01-o-senhor-requer-de-t-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Miqueias 6:8",
+    "learningObjective": "Reconhecer que Deus, mais que sacrifícios, requer justiça, misericórdia e humildade diária.",
+    "evidence": [
+      "Miqueias 6:6-8"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido teológico de Miqueias 6:8?",
+    "prompt": "Qual leitura interpreta melhor o sentido teológico de Miqueias 6:8?",
+    "cue": "Qual leitura interpreta melhor o sentido teológico de Miqueias 6:8?",
+    "feedbackCorrect": "Certo: a aliança se mostra em vida, não em rito isolado.",
+    "feedbackWrong": {
+      "b": "O texto não fala de perfeição legal, mas de uma postura fiel e contínua.",
+      "c": "O versículo pede exatamente o contrário: ação concreta, não só sentimento.",
+      "d": "O pedido é dirigido a 'ó homem' — a toda pessoa da aliança, não só a sacerdotes."
+    },
+    "passageText": "Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia, e andes humildemente com o teu Deus?",
+    "options": [
+      {
+        "id": "a",
+        "text": "O texto ensina que a aliança com Deus se comprova em caráter e conduta, não em ritual."
+      },
+      {
+        "id": "b",
+        "text": "O texto ensina que a salvação depende do cumprimento perfeito da lei moral."
+      },
+      {
+        "id": "c",
+        "text": "O texto ensina que Deus valoriza mais o sentimento religioso do que a ação concreta."
+      },
+      {
+        "id": "d",
+        "text": "O texto ensina que justiça e misericórdia são metas restritas aos sacerdotes."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-01-o-senhor-requer-de-t",
+    "id": "miqueias-pro-miqueias-miqueias-01-o-senhor-requer-de-t-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Miqueias 6:8",
+    "learningObjective": "Reconhecer que Deus, mais que sacrifícios, requer justiça, misericórdia e humildade diária.",
+    "evidence": [
+      "Miqueias 6:6-8"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Miqueias 6:8?",
+    "prompt": "Qual sequência revela o sentido de Miqueias 6:8?",
+    "cue": "Qual sequência revela o sentido de Miqueias 6:8?",
+    "feedbackCorrect": "Certo: a revelação leva aos pedidos concretos e culmina na humildade diante de Deus.",
+    "feedbackWrong": {
+      "b": "Este pedido pressupõe a revelação inicial.",
+      "c": "Este fechamento é a culminância, não o início da sequência."
+    },
+    "passageText": "Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia, e andes humildemente com o teu Deus?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele te há mostrado, ó homem, o que é bom"
+      },
+      {
+        "id": "b",
+        "text": "e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia"
+      },
+      {
+        "id": "c",
+        "text": "e andes humildemente com o teu Deus"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-01-o-senhor-requer-de-t",
+    "id": "miqueias-pro-miqueias-miqueias-01-o-senhor-requer-de-t-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Miqueias 6:8",
+    "learningObjective": "Reconhecer que Deus, mais que sacrifícios, requer justiça, misericórdia e humildade diária.",
+    "evidence": [
+      "Miqueias 6:6-8"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia, e andes ___ com o teu Deus?\"",
+    "prompt": "Complete a frase: \"Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia, e andes ___ com o teu Deus?\"",
+    "cue": "Complete a frase: \"Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia, e andes ___ com o teu Deus?\"",
+    "feedbackCorrect": "Certo: a humildade é a postura que sustenta os outros dois pedidos.",
+    "feedbackWrong": {
+      "b": "'Justiça' já foi mencionada antes.",
+      "c": "'Misericórdia' já foi mencionada antes desta lacuna."
+    },
+    "passageText": "Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia, e andes humildemente com o teu Deus?",
+    "template": "Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia, e andes ___ com o teu Deus?",
+    "options": [
+      {
+        "id": "a",
+        "text": "humildemente"
+      },
+      {
+        "id": "b",
+        "text": "justiça"
+      },
+      {
+        "id": "c",
+        "text": "misericórdia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-01-o-senhor-requer-de-t",
+    "id": "miqueias-pro-miqueias-miqueias-01-o-senhor-requer-de-t-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Miqueias 6:8",
+    "learningObjective": "Reconhecer que Deus, mais que sacrifícios, requer justiça, misericórdia e humildade diária.",
+    "evidence": [
+      "Miqueias 6:6-8"
+    ],
+    "type": "connect",
+    "question": "O que Miqueias 6:8 comunica que se liga a este contexto?",
+    "prompt": "O que Miqueias 6:8 comunica que se liga a este contexto?",
+    "cue": "O que Miqueias 6:8 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o texto liga fidelidade e formação de caráter.",
+    "feedbackWrong": {
+      "b": "O versículo rejeita o ritual isolado como suficiente.",
+      "c": "O pedido é dirigido a todo 'homem', não só aos profetas."
+    },
+    "passageText": "Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia, e andes humildemente com o teu Deus?",
+    "passageA": {
+      "ref": "Miqueias 6:8",
+      "text": "Ele te há mostrado, ó homem, o que é bom; e que é o que Jeová requer de ti, senão que procedas com justiça, e ames a misericórdia, e andes humildemente com o teu Deus?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A aliança com Deus se mede pelo caráter formado no cotidiano, não por rituais isolados."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Caráter formado no convívio com Deus"
+      },
+      {
+        "id": "b",
+        "text": "Rituais bastam sem transformação interior"
+      },
+      {
+        "id": "c",
+        "text": "Justiça é tema exclusivo dos profetas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-01-o-senhor-requer-de-t",
+    "id": "miqueias-pro-miqueias-miqueias-01-o-senhor-requer-de-t-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Miqueias 5:2",
+    "learningObjective": "Reconhecer em Belém Efrata o cumprimento profético do lugar de origem do Dominador eterno.",
+    "evidence": [
+      "Miqueias 5:2",
+      "Mateus 2:6"
+    ],
+    "type": "true_false",
+    "question": "Miqueias 5:2 afirma que de Belém Efrata sairá aquele que será Dominador em Israel.",
+    "prompt": "Miqueias 5:2 afirma que de Belém Efrata sairá aquele que será Dominador em Israel.",
+    "cue": "Miqueias 5:2 afirma que de Belém Efrata sairá aquele que será Dominador em Israel.",
+    "feedbackCorrect": "Certo: o versículo nomeia Belém Efrata como o lugar de origem.",
+    "feedbackWrong": {
+      "false": "O texto afirma exatamente isso: de Belém Efrata sairá o Dominador."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-02-belem-efrata",
+    "id": "miqueias-sem-miqueias-miqueias-02-belem-efrata-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Miqueias 5:2",
+    "learningObjective": "Reconhecer em Belém Efrata o cumprimento profético do lugar de origem do Dominador eterno.",
+    "evidence": [
+      "Miqueias 5:2",
+      "Mateus 2:6"
+    ],
+    "type": "tap",
+    "question": "Em Miqueias 5:2, toque a palavra que falta em \"Mas tu, Belém Efrata, posto que ___ entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.\"?",
+    "prompt": "Em Miqueias 5:2, toque a palavra que falta em \"Mas tu, Belém Efrata, posto que ___ entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.\"?",
+    "cue": "Em Miqueias 5:2, toque a palavra que falta em \"Mas tu, Belém Efrata, posto que ___ entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.\"?",
+    "feedbackCorrect": "Exato: Belém é descrita como pequena entre os milhares de Judá.",
+    "feedbackWrong": {
+      "b": "'Antigos' descreve os tempos da origem do Dominador, não Belém.",
+      "c": "'Eternidade' se refere à origem do Dominador, não ao tamanho de Belém."
+    },
+    "passageText": "Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.",
+    "template": "Mas tu, Belém Efrata, posto que ___ entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pequena"
+      },
+      {
+        "id": "b",
+        "text": "antigos"
+      },
+      {
+        "id": "c",
+        "text": "eternidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-02-belem-efrata",
+    "id": "miqueias-sem-miqueias-miqueias-02-belem-efrata-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Miqueias 5:2",
+    "learningObjective": "Reconhecer em Belém Efrata o cumprimento profético do lugar de origem do Dominador eterno.",
+    "evidence": [
+      "Miqueias 5:2",
+      "Mateus 2:6"
+    ],
+    "type": "choice",
+    "question": "Qual é o fato explícito de Miqueias 5:2?",
+    "prompt": "Qual é o fato explícito de Miqueias 5:2?",
+    "cue": "Qual é o fato explícito de Miqueias 5:2?",
+    "feedbackCorrect": "Certo: o texto nomeia exatamente Belém Efrata, pequena entre as cidades de Judá.",
+    "feedbackWrong": {
+      "a": "O texto não menciona Jerusalém; nomeia Belém Efrata.",
+      "b": "O texto destaca a pequenez de Belém, não seu poder militar.",
+      "d": "O texto afirma o contrário: Belém é pequena entre milhares."
+    },
+    "passageText": "Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A profecia aponta Jerusalém, a capital de Judá, como origem do Dominador."
+      },
+      {
+        "id": "b",
+        "text": "O texto descreve Belém como uma fortaleza militar de grande porte."
+      },
+      {
+        "id": "c",
+        "text": "De Belém Efrata, pequena em Judá, sairá o que há de ser Dominador em Israel."
+      },
+      {
+        "id": "d",
+        "text": "A passagem afirma que o Dominador virá de uma das maiores cidades de Judá."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-02-belem-efrata",
+    "id": "miqueias-sem-miqueias-miqueias-02-belem-efrata-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Miqueias 5:2",
+    "learningObjective": "Reconhecer em Belém Efrata o cumprimento profético do lugar de origem do Dominador eterno.",
+    "evidence": [
+      "Miqueias 5:2",
+      "Mateus 2:6"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Miqueias 5:2?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Miqueias 5:2?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Miqueias 5:2?",
+    "feedbackCorrect": "Certo: da pequenez da cidade à origem eterna do Dominador.",
+    "feedbackWrong": {
+      "b": "Esta promessa depende da identificação da cidade, feita antes.",
+      "c": "Esta descrição da origem eterna encerra o versículo."
+    },
+    "passageText": "Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas tu, Belém Efrata, posto que pequena entre milhares de Judá"
+      },
+      {
+        "id": "b",
+        "text": "de ti me sairá o que há de ser Dominador em Israel"
+      },
+      {
+        "id": "c",
+        "text": "e as suas saídas são desde os tempos antigos, desde os dias da eternidade"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-02-belem-efrata",
+    "id": "miqueias-sem-miqueias-miqueias-02-belem-efrata-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Miqueias 5:2",
+    "learningObjective": "Reconhecer em Belém Efrata o cumprimento profético do lugar de origem do Dominador eterno.",
+    "evidence": [
+      "Miqueias 5:2",
+      "Mateus 2:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser ___ em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.\"",
+    "prompt": "Complete a frase: \"Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser ___ em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.\"",
+    "cue": "Complete a frase: \"Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser ___ em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.\"",
+    "feedbackCorrect": "Certo: 'Dominador' é o título dado a quem sairá de Belém.",
+    "feedbackWrong": {
+      "b": "'Pequena' descreve Belém, não o que sairá dela.",
+      "c": "'Eternidade' descreve a origem, não o título do que sairá."
+    },
+    "passageText": "Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.",
+    "template": "Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser ___ em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dominador"
+      },
+      {
+        "id": "b",
+        "text": "pequena"
+      },
+      {
+        "id": "c",
+        "text": "eternidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-02-belem-efrata",
+    "id": "miqueias-sem-miqueias-miqueias-02-belem-efrata-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Miqueias 5:2",
+    "learningObjective": "Reconhecer em Belém Efrata o cumprimento profético do lugar de origem do Dominador eterno.",
+    "evidence": [
+      "Miqueias 5:2",
+      "Mateus 2:6"
+    ],
+    "type": "connect",
+    "question": "O que Miqueias 5:2 comunica que se liga a este contexto?",
+    "prompt": "O que Miqueias 5:2 comunica que se liga a este contexto?",
+    "cue": "O que Miqueias 5:2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Deus escolhe o pequeno lugar para cumprir a grande promessa.",
+    "feedbackWrong": {
+      "b": "O texto valoriza justamente a cidade pequena, não o poder político.",
+      "c": "A origem geográfica é central: Belém é citada por nome na profecia."
+    },
+    "passageText": "Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.",
+    "passageA": {
+      "ref": "Miqueias 5:2",
+      "text": "Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A pequenez de Belém contrasta com a grandeza eterna daquele que dali viria, prometido desde a antiguidade."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Grandeza de Deus na pequenez humana"
+      },
+      {
+        "id": "b",
+        "text": "Poder político como sinal de eleição"
+      },
+      {
+        "id": "c",
+        "text": "Origem geográfica sem nenhum significado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-02-belem-efrata",
+    "id": "miqueias-sem-miqueias-miqueias-02-belem-efrata-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Miqueias 5:2",
+    "learningObjective": "Reconhecer em Belém Efrata o cumprimento profético do lugar de origem do Dominador eterno.",
+    "evidence": [
+      "Miqueias 5:2",
+      "Mateus 2:6"
+    ],
+    "type": "true_false",
+    "question": "O texto ensina que o Dominador prometido viria de Jerusalém, a capital de Judá.",
+    "prompt": "O texto ensina que o Dominador prometido viria de Jerusalém, a capital de Judá.",
+    "cue": "O texto ensina que o Dominador prometido viria de Jerusalém, a capital de Judá.",
+    "feedbackCorrect": "Certo: o texto aponta Belém, não Jerusalém.",
+    "feedbackWrong": {
+      "true": "A profecia aponta exatamente o contrário: o Dominador viria da pequena Belém, não da capital."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-02-belem-efrata",
+    "id": "miqueias-cam-miqueias-miqueias-02-belem-efrata-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Miqueias 5:2",
+    "learningObjective": "Reconhecer em Belém Efrata o cumprimento profético do lugar de origem do Dominador eterno.",
+    "evidence": [
+      "Miqueias 5:2",
+      "Mateus 2:6"
+    ],
+    "type": "tap",
+    "question": "Em Miqueias 5:2, toque a palavra que falta em \"Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da ___.\"?",
+    "prompt": "Em Miqueias 5:2, toque a palavra que falta em \"Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da ___.\"?",
+    "cue": "Em Miqueias 5:2, toque a palavra que falta em \"Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da ___.\"?",
+    "feedbackCorrect": "Exato: a origem do Dominador remonta à eternidade.",
+    "feedbackWrong": {
+      "b": "'Pequena' descreve Belém, não os 'dias da'.",
+      "c": "'Antigos' já apareceu antes desta lacuna, ligado a 'tempos'."
+    },
+    "passageText": "Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.",
+    "template": "Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "eternidade"
+      },
+      {
+        "id": "b",
+        "text": "pequena"
+      },
+      {
+        "id": "c",
+        "text": "antigos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-02-belem-efrata",
+    "id": "miqueias-cam-miqueias-miqueias-02-belem-efrata-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Miqueias 5:2",
+    "learningObjective": "Reconhecer em Belém Efrata o cumprimento profético do lugar de origem do Dominador eterno.",
+    "evidence": [
+      "Miqueias 5:2",
+      "Mateus 2:6"
+    ],
+    "type": "choice",
+    "question": "Qual ideia melhor conecta Miqueias 5:2 ao contexto da missão?",
+    "prompt": "Qual ideia melhor conecta Miqueias 5:2 ao contexto da missão?",
+    "cue": "Qual ideia melhor conecta Miqueias 5:2 ao contexto da missão?",
+    "feedbackCorrect": "Certo: Deus age através do que parece pequeno aos olhos humanos.",
+    "feedbackWrong": {
+      "b": "O texto faz o oposto: escolhe a pequena Belém, não um grande centro.",
+      "c": "O nascimento em Belém é discreto, não grandioso aos olhos humanos.",
+      "d": "O texto diz 'Dominador em Israel', abrangendo todo o povo, não apenas Judá."
+    },
+    "passageText": "Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A pequenez do lugar mostra que Deus escolhe o insignificante para grandes fins."
+      },
+      {
+        "id": "b",
+        "text": "A profecia valoriza apenas grandes centros políticos como sinais de Deus."
+      },
+      {
+        "id": "c",
+        "text": "O texto sugere que Deus manifesta poder somente por meios grandiosos."
+      },
+      {
+        "id": "d",
+        "text": "A menção a Judá indica que a promessa exclui as demais tribos de Israel."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-02-belem-efrata",
+    "id": "miqueias-cam-miqueias-miqueias-02-belem-efrata-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Miqueias 5:2",
+    "learningObjective": "Reconhecer em Belém Efrata o cumprimento profético do lugar de origem do Dominador eterno.",
+    "evidence": [
+      "Miqueias 5:2",
+      "Mateus 2:6"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os elementos de Miqueias 5:2?",
+    "prompt": "Como se encadeiam os elementos de Miqueias 5:2?",
+    "cue": "Como se encadeiam os elementos de Miqueias 5:2?",
+    "feedbackCorrect": "Certo: a identificação da cidade antecede a promessa e a origem eterna.",
+    "feedbackWrong": {
+      "b": "Esta promessa só faz sentido após a cidade ser nomeada.",
+      "c": "Esta descrição da eternidade fecha e explica a promessa anterior."
+    },
+    "passageText": "Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas tu, Belém Efrata, posto que pequena entre milhares de Judá"
+      },
+      {
+        "id": "b",
+        "text": "de ti me sairá o que há de ser Dominador em Israel"
+      },
+      {
+        "id": "c",
+        "text": "e as suas saídas são desde os tempos antigos, desde os dias da eternidade"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-02-belem-efrata",
+    "id": "miqueias-cam-miqueias-miqueias-02-belem-efrata-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Miqueias 5:2",
+    "learningObjective": "Reconhecer em Belém Efrata o cumprimento profético do lugar de origem do Dominador eterno.",
+    "evidence": [
+      "Miqueias 5:2",
+      "Mateus 2:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Mas tu, Belém Efrata, posto que ___ entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.\"",
+    "prompt": "Complete a frase: \"Mas tu, Belém Efrata, posto que ___ entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.\"",
+    "cue": "Complete a frase: \"Mas tu, Belém Efrata, posto que ___ entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.\"",
+    "feedbackCorrect": "Certo: 'pequena' é a característica de Belém destacada no texto.",
+    "feedbackWrong": {
+      "b": "'Dominador' é o título de quem sairá de Belém, não sua descrição.",
+      "c": "'Antigos' aparece mais adiante, ligado à origem eterna."
+    },
+    "passageText": "Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.",
+    "template": "Mas tu, Belém Efrata, posto que ___ entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pequena"
+      },
+      {
+        "id": "b",
+        "text": "Dominador"
+      },
+      {
+        "id": "c",
+        "text": "antigos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-02-belem-efrata",
+    "id": "miqueias-cam-miqueias-miqueias-02-belem-efrata-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Miqueias 5:2",
+    "learningObjective": "Reconhecer em Belém Efrata o cumprimento profético do lugar de origem do Dominador eterno.",
+    "evidence": [
+      "Miqueias 5:2",
+      "Mateus 2:6"
+    ],
+    "type": "connect",
+    "question": "O que Miqueias 5:2 comunica que se liga a este contexto?",
+    "prompt": "O que Miqueias 5:2 comunica que se liga a este contexto?",
+    "cue": "O que Miqueias 5:2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a pequenez de Belém não impede o cumprimento da promessa eterna.",
+    "feedbackWrong": {
+      "b": "O texto não associa grandeza humana à bênção; associa pequenez e escolha divina.",
+      "c": "O texto nomeia justamente uma cidade pequena, não uma capital."
+    },
+    "passageText": "Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.",
+    "passageA": {
+      "ref": "Miqueias 5:2",
+      "text": "Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A missão destaca que Deus opera por meio dos pequenos e humildes lugares para cumprir promessas eternas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus usa o pequeno para cumprir o eterno"
+      },
+      {
+        "id": "b",
+        "text": "Grandeza humana garante a bênção divina"
+      },
+      {
+        "id": "c",
+        "text": "A profecia se cumpre apenas em capitais"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-02-belem-efrata",
+    "id": "miqueias-cam-miqueias-miqueias-02-belem-efrata-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Miqueias 5:2",
+    "learningObjective": "Reconhecer em Belém Efrata o cumprimento profético do lugar de origem do Dominador eterno.",
+    "evidence": [
+      "Miqueias 5:2",
+      "Mateus 2:6"
+    ],
+    "type": "true_false",
+    "question": "Miqueias 5:2 revela que as 'saídas antigas' do Dominador apontam para uma origem que ultrapassa o tempo humano.",
+    "prompt": "Miqueias 5:2 revela que as 'saídas antigas' do Dominador apontam para uma origem que ultrapassa o tempo humano.",
+    "cue": "Miqueias 5:2 revela que as 'saídas antigas' do Dominador apontam para uma origem que ultrapassa o tempo humano.",
+    "feedbackCorrect": "Certo: a expressão 'desde os dias da eternidade' sustenta essa leitura.",
+    "feedbackWrong": {
+      "false": "A expressão 'desde os dias da eternidade' sustenta exatamente essa leitura."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-02-belem-efrata",
+    "id": "miqueias-pro-miqueias-miqueias-02-belem-efrata-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Miqueias 5:2",
+    "learningObjective": "Reconhecer em Belém Efrata o cumprimento profético do lugar de origem do Dominador eterno.",
+    "evidence": [
+      "Miqueias 5:2",
+      "Mateus 2:6"
+    ],
+    "type": "tap",
+    "question": "Em Miqueias 5:2, toque a palavra que falta em \"Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos ___, desde os dias da eternidade.\"?",
+    "prompt": "Em Miqueias 5:2, toque a palavra que falta em \"Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos ___, desde os dias da eternidade.\"?",
+    "cue": "Em Miqueias 5:2, toque a palavra que falta em \"Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos ___, desde os dias da eternidade.\"?",
+    "feedbackCorrect": "Exato: 'antigos' qualifica os tempos da origem do Dominador.",
+    "feedbackWrong": {
+      "b": "'Pequena' descreve Belém, não os tempos da origem.",
+      "c": "'Eternidade' vem depois desta lacuna, ligada a 'dias'."
+    },
+    "passageText": "Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.",
+    "template": "Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos ___, desde os dias da eternidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "antigos"
+      },
+      {
+        "id": "b",
+        "text": "pequena"
+      },
+      {
+        "id": "c",
+        "text": "eternidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-02-belem-efrata",
+    "id": "miqueias-pro-miqueias-miqueias-02-belem-efrata-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Miqueias 5:2",
+    "learningObjective": "Reconhecer em Belém Efrata o cumprimento profético do lugar de origem do Dominador eterno.",
+    "evidence": [
+      "Miqueias 5:2",
+      "Mateus 2:6"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido teológico de Miqueias 5:2?",
+    "prompt": "Qual leitura interpreta melhor o sentido teológico de Miqueias 5:2?",
+    "cue": "Qual leitura interpreta melhor o sentido teológico de Miqueias 5:2?",
+    "feedbackCorrect": "Certo: a linguagem aponta para uma origem que ultrapassa a genealogia humana.",
+    "feedbackWrong": {
+      "b": "A expressão vai além de uma linhagem antiga; fala de 'dias da eternidade'.",
+      "c": "O texto não fala de critério dinástico, mas de uma origem singular e eterna.",
+      "d": "A promessa está no coração da esperança de Israel, ligada à sua fé e restauração."
+    },
+    "passageText": "Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "\"Desde os dias da eternidade\" aponta a origem divina e eterna do Dominador."
+      },
+      {
+        "id": "b",
+        "text": "A expressão indica apenas que a linhagem de Davi era muito antiga."
+      },
+      {
+        "id": "c",
+        "text": "O texto ensina que Deus escolhe somente descendentes de reis para governar."
+      },
+      {
+        "id": "d",
+        "text": "A profecia se refere a um governante político sem relação com a fé de Israel."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-02-belem-efrata",
+    "id": "miqueias-pro-miqueias-miqueias-02-belem-efrata-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Miqueias 5:2",
+    "learningObjective": "Reconhecer em Belém Efrata o cumprimento profético do lugar de origem do Dominador eterno.",
+    "evidence": [
+      "Miqueias 5:2",
+      "Mateus 2:6"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Miqueias 5:2?",
+    "prompt": "Qual sequência revela o sentido de Miqueias 5:2?",
+    "cue": "Qual sequência revela o sentido de Miqueias 5:2?",
+    "feedbackCorrect": "Certo: da pequenez visível à origem eterna revelada.",
+    "feedbackWrong": {
+      "b": "Esta promessa depende da cidade já ter sido identificada.",
+      "c": "Esta origem eterna é a revelação final, não o ponto de partida."
+    },
+    "passageText": "Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas tu, Belém Efrata, posto que pequena entre milhares de Judá"
+      },
+      {
+        "id": "b",
+        "text": "de ti me sairá o que há de ser Dominador em Israel"
+      },
+      {
+        "id": "c",
+        "text": "e as suas saídas são desde os tempos antigos, desde os dias da eternidade"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-02-belem-efrata",
+    "id": "miqueias-pro-miqueias-miqueias-02-belem-efrata-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Miqueias 5:2",
+    "learningObjective": "Reconhecer em Belém Efrata o cumprimento profético do lugar de origem do Dominador eterno.",
+    "evidence": [
+      "Miqueias 5:2",
+      "Mateus 2:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser ___ em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.\"",
+    "prompt": "Complete a frase: \"Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser ___ em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.\"",
+    "cue": "Complete a frase: \"Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser ___ em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.\"",
+    "feedbackCorrect": "Certo: 'Dominador' é o título messiânico central do versículo.",
+    "feedbackWrong": {
+      "b": "'Pequena' descreve a cidade, não o título do Dominador.",
+      "c": "'Antigos' descreve os tempos, não o título de quem sairá de Belém."
+    },
+    "passageText": "Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.",
+    "template": "Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser ___ em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dominador"
+      },
+      {
+        "id": "b",
+        "text": "pequena"
+      },
+      {
+        "id": "c",
+        "text": "antigos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-02-belem-efrata",
+    "id": "miqueias-pro-miqueias-miqueias-02-belem-efrata-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Miqueias 5:2",
+    "learningObjective": "Reconhecer em Belém Efrata o cumprimento profético do lugar de origem do Dominador eterno.",
+    "evidence": [
+      "Miqueias 5:2",
+      "Mateus 2:6"
+    ],
+    "type": "connect",
+    "question": "O que Miqueias 5:2 comunica que se liga a este contexto?",
+    "prompt": "O que Miqueias 5:2 comunica que se liga a este contexto?",
+    "cue": "O que Miqueias 5:2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a promessa antiga se cumpre no tempo que Deus determina.",
+    "feedbackWrong": {
+      "b": "O texto descreve um propósito antigo e deliberado, não uma coincidência.",
+      "c": "O texto fala de 'tempos antigos', indicando longa preparação."
+    },
+    "passageText": "Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade.",
+    "passageA": {
+      "ref": "Miqueias 5:2",
+      "text": "Mas tu, Belém Efrata, posto que pequena entre milhares de Judá, de ti me sairá o que há de ser Dominador em Israel; e as suas saídas são desde os tempos antigos, desde os dias da eternidade."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A vinda do Dominador eterno a partir de Belém revela que o plano de Deus atravessa gerações antes de se cumprir."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Plano eterno cumprido em tempo certo"
+      },
+      {
+        "id": "b",
+        "text": "Coincidência histórica sem propósito maior"
+      },
+      {
+        "id": "c",
+        "text": "Cumprimento imediato sem preparação anterior"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-02-belem-efrata",
+    "id": "miqueias-pro-miqueias-miqueias-02-belem-efrata-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Miqueias 4:2-3",
+    "learningObjective": "Relacionar a ética exigida por Deus com a esperança messiânica de paz entre as nações.",
+    "evidence": [
+      "Miqueias 4:2-3",
+      "Isaías 2:2-4"
+    ],
+    "type": "true_false",
+    "question": "Miqueias 4:2-3 anuncia um tempo em que as nações converterão suas armas de guerra em instrumentos de trabalho.",
+    "prompt": "Miqueias 4:2-3 anuncia um tempo em que as nações converterão suas armas de guerra em instrumentos de trabalho.",
+    "cue": "Miqueias 4:2-3 anuncia um tempo em que as nações converterão suas armas de guerra em instrumentos de trabalho.",
+    "feedbackCorrect": "Certo: o texto descreve espadas viradas em relhas de arado.",
+    "feedbackWrong": {
+      "false": "O texto descreve exatamente isso: espadas em relhas de arado e lanças em podadeiras."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-03-desafio-miqueias",
+    "id": "miqueias-sem-miqueias-miqueias-03-desafio-miqueias-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Miqueias 4:3",
+    "learningObjective": "Relacionar a ética exigida por Deus com a esperança messiânica de paz entre as nações.",
+    "evidence": [
+      "Miqueias 4:2-3",
+      "Isaías 2:2-4"
+    ],
+    "type": "tap",
+    "question": "Em Miqueias 4:3, toque a palavra que falta em \"E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas ___ em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.\"?",
+    "prompt": "Em Miqueias 4:3, toque a palavra que falta em \"E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas ___ em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.\"?",
+    "cue": "Em Miqueias 4:3, toque a palavra que falta em \"E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas ___ em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.\"?",
+    "feedbackCorrect": "Exato: são as espadas que se transformam em relhas de arado.",
+    "feedbackWrong": {
+      "b": "'Podadeiras' é o que as lanças se tornam, não esta lacuna.",
+      "c": "'Caminhos' pertence a outra parte do texto, sobre o ensino de Deus."
+    },
+    "passageText": "E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.",
+    "template": "E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas ___ em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "espadas"
+      },
+      {
+        "id": "b",
+        "text": "podadeiras"
+      },
+      {
+        "id": "c",
+        "text": "caminhos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-03-desafio-miqueias",
+    "id": "miqueias-sem-miqueias-miqueias-03-desafio-miqueias-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Miqueias 4:2-3",
+    "learningObjective": "Relacionar a ética exigida por Deus com a esperança messiânica de paz entre as nações.",
+    "evidence": [
+      "Miqueias 4:2-3",
+      "Isaías 2:2-4"
+    ],
+    "type": "choice",
+    "question": "Qual é o fato explícito de Miqueias 4:2-3?",
+    "prompt": "Qual é o fato explícito de Miqueias 4:2-3?",
+    "cue": "Qual é o fato explícito de Miqueias 4:2-3?",
+    "feedbackCorrect": "Certo: essa é a promessa central do texto.",
+    "feedbackWrong": {
+      "a": "O texto diz o oposto: as nações não aprenderão mais a guerra.",
+      "b": "O texto fala de 'muitas nações', não apenas de Judá.",
+      "d": "O texto fala de julgamento e correção, não de destruição das nações."
+    },
+    "passageText": "E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O texto convida as nações a subirem ao monte para aprender a arte da guerra."
+      },
+      {
+        "id": "b",
+        "text": "A profecia afirma que somente Judá converterá suas armas; as demais nações não."
+      },
+      {
+        "id": "c",
+        "text": "Uma nação não levantará espada contra outra, nem aprenderão mais a guerra."
+      },
+      {
+        "id": "d",
+        "text": "A passagem descreve um julgamento que destrói todas as nações sem exceção."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-03-desafio-miqueias",
+    "id": "miqueias-sem-miqueias-miqueias-03-desafio-miqueias-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Miqueias 4:2-3",
+    "learningObjective": "Relacionar a ética exigida por Deus com a esperança messiânica de paz entre as nações.",
+    "evidence": [
+      "Miqueias 4:2-3",
+      "Isaías 2:2-4"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Miqueias 4:2-3?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Miqueias 4:2-3?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Miqueias 4:2-3?",
+    "feedbackCorrect": "Certo: as nações sobem ao monte, recebem a lei de Sião e depois convertem suas armas.",
+    "feedbackWrong": {
+      "b": "Esta parte depende da vinda das nações ao monte, descrita antes.",
+      "c": "Esta conversão das armas é a consequência final da lei que sai de Sião."
+    },
+    "passageText": "E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas"
+      },
+      {
+        "id": "b",
+        "text": "Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe"
+      },
+      {
+        "id": "c",
+        "text": "E converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-03-desafio-miqueias",
+    "id": "miqueias-sem-miqueias-miqueias-03-desafio-miqueias-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Miqueias 4:3",
+    "learningObjective": "Relacionar a ética exigida por Deus com a esperança messiânica de paz entre as nações.",
+    "evidence": [
+      "Miqueias 4:2-3",
+      "Isaías 2:2-4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a ___.\"",
+    "prompt": "Complete a frase: \"E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a ___.\"",
+    "cue": "Complete a frase: \"E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a ___.\"",
+    "feedbackCorrect": "Certo: a promessa é que as nações não aprenderão mais a guerra.",
+    "feedbackWrong": {
+      "b": "'Arado' é o que a espada se torna, não o que se deixa de aprender.",
+      "c": "'Caminhos' se refere ao ensino de Deus, em outra parte do texto."
+    },
+    "passageText": "E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.",
+    "template": "E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "guerra"
+      },
+      {
+        "id": "b",
+        "text": "arado"
+      },
+      {
+        "id": "c",
+        "text": "caminhos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-03-desafio-miqueias",
+    "id": "miqueias-sem-miqueias-miqueias-03-desafio-miqueias-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Miqueias 4:2-3",
+    "learningObjective": "Relacionar a ética exigida por Deus com a esperança messiânica de paz entre as nações.",
+    "evidence": [
+      "Miqueias 4:2-3",
+      "Isaías 2:2-4"
+    ],
+    "type": "connect",
+    "question": "O que Miqueias 4:2-3 comunica que se liga a este contexto?",
+    "prompt": "O que Miqueias 4:2-3 comunica que se liga a este contexto?",
+    "cue": "O que Miqueias 4:2-3 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o texto une ensino, justiça e paz sob o reinado de Deus.",
+    "feedbackWrong": {
+      "b": "O texto promete o fim da guerra, não sua continuidade.",
+      "c": "O texto não fala de sacrifícios; fala de aprender os caminhos de Deus."
+    },
+    "passageText": "E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.",
+    "passageA": {
+      "ref": "Miqueias 4:2-3",
+      "text": "E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O desafio final da trilha une ética (viver a justiça de Deus) e esperança messiânica (a paz que Deus estabelece entre as nações)."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Justiça e paz cumpridas pelo reinado de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Guerra perpétua entre as nações"
+      },
+      {
+        "id": "c",
+        "text": "Sacrifícios religiosos bastam para a paz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-03-desafio-miqueias",
+    "id": "miqueias-sem-miqueias-miqueias-03-desafio-miqueias-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Miqueias 4:2-3",
+    "learningObjective": "Relacionar a ética exigida por Deus com a esperança messiânica de paz entre as nações.",
+    "evidence": [
+      "Miqueias 4:2-3",
+      "Isaías 2:2-4"
+    ],
+    "type": "true_false",
+    "question": "O texto ensina que as nações continuarão aprendendo a guerra para se defenderem umas das outras.",
+    "prompt": "O texto ensina que as nações continuarão aprendendo a guerra para se defenderem umas das outras.",
+    "cue": "O texto ensina que as nações continuarão aprendendo a guerra para se defenderem umas das outras.",
+    "feedbackCorrect": "Certo: o texto afirma o contrário disso.",
+    "feedbackWrong": {
+      "true": "O texto afirma o oposto: as nações não aprenderão mais a guerra, pois converterão suas armas em instrumentos de trabalho."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-03-desafio-miqueias",
+    "id": "miqueias-cam-miqueias-miqueias-03-desafio-miqueias-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Miqueias 4:3",
+    "learningObjective": "Relacionar a ética exigida por Deus com a esperança messiânica de paz entre as nações.",
+    "evidence": [
+      "Miqueias 4:2-3",
+      "Isaías 2:2-4"
+    ],
+    "type": "tap",
+    "question": "Em Miqueias 4:3, toque a palavra que falta em \"E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de ___, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.\"?",
+    "prompt": "Em Miqueias 4:3, toque a palavra que falta em \"E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de ___, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.\"?",
+    "cue": "Em Miqueias 4:3, toque a palavra que falta em \"E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de ___, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.\"?",
+    "feedbackCorrect": "Exato: as espadas viram relhas de arado, instrumento de trabalho.",
+    "feedbackWrong": {
+      "b": "'Guerra' é o que deixa de ser aprendido, não o instrumento formado.",
+      "c": "'Caminhos' pertence à parte sobre o ensino de Deus às nações."
+    },
+    "passageText": "E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.",
+    "template": "E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de ___, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "arado"
+      },
+      {
+        "id": "b",
+        "text": "guerra"
+      },
+      {
+        "id": "c",
+        "text": "caminhos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-03-desafio-miqueias",
+    "id": "miqueias-cam-miqueias-miqueias-03-desafio-miqueias-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Miqueias 4:2-3",
+    "learningObjective": "Relacionar a ética exigida por Deus com a esperança messiânica de paz entre as nações.",
+    "evidence": [
+      "Miqueias 4:2-3",
+      "Isaías 2:2-4"
+    ],
+    "type": "choice",
+    "question": "Qual ideia melhor conecta Miqueias 4:2-3 ao contexto da missão?",
+    "prompt": "Qual ideia melhor conecta Miqueias 4:2-3 ao contexto da missão?",
+    "cue": "Qual ideia melhor conecta Miqueias 4:2-3 ao contexto da missão?",
+    "feedbackCorrect": "Certo: a justiça de Deus é a fonte da paz descrita no texto.",
+    "feedbackWrong": {
+      "b": "O texto atribui a paz ao julgamento e ao ensino de Jeová, não a acordos humanos.",
+      "c": "O texto fala de 'muitas nações' e de 'uma nação' contra 'outra nação', sem exceção.",
+      "d": "O texto liga diretamente o ensino de Deus ('seus caminhos') à paz entre os povos."
+    },
+    "passageText": "E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A justiça de Deus estabelece uma paz que transforma até os instrumentos de guerra."
+      },
+      {
+        "id": "b",
+        "text": "A paz das nações depende exclusivamente de tratados políticos humanos."
+      },
+      {
+        "id": "c",
+        "text": "O texto ensina que apenas Israel deixará de fazer guerra; as demais nações, não."
+      },
+      {
+        "id": "d",
+        "text": "A instrução de Deus é irrelevante para a convivência entre os povos."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-03-desafio-miqueias",
+    "id": "miqueias-cam-miqueias-miqueias-03-desafio-miqueias-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Miqueias 4:2-3",
+    "learningObjective": "Relacionar a ética exigida por Deus com a esperança messiânica de paz entre as nações.",
+    "evidence": [
+      "Miqueias 4:2-3",
+      "Isaías 2:2-4"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os elementos de Miqueias 4:2-3?",
+    "prompt": "Como se encadeiam os elementos de Miqueias 4:2-3?",
+    "cue": "Como se encadeiam os elementos de Miqueias 4:2-3?",
+    "feedbackCorrect": "Certo: primeiro as nações buscam a Deus, depois recebem a lei, depois vem a paz.",
+    "feedbackWrong": {
+      "b": "Esta etapa pressupõe que as nações já subiram ao monte.",
+      "c": "Esta paz é fruto do julgamento e da lei mencionados antes."
+    },
+    "passageText": "E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas"
+      },
+      {
+        "id": "b",
+        "text": "Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe"
+      },
+      {
+        "id": "c",
+        "text": "E converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-03-desafio-miqueias",
+    "id": "miqueias-cam-miqueias-miqueias-03-desafio-miqueias-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Miqueias 4:2",
+    "learningObjective": "Relacionar a ética exigida por Deus com a esperança messiânica de paz entre as nações.",
+    "evidence": [
+      "Miqueias 4:2-3",
+      "Isaías 2:2-4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus ___, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.\"",
+    "prompt": "Complete a frase: \"E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus ___, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.\"",
+    "cue": "Complete a frase: \"E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus ___, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.\"",
+    "feedbackCorrect": "Certo: Deus ensina 'os seus caminhos' às nações que sobem ao monte.",
+    "feedbackWrong": {
+      "b": "'Guerra' é o que as nações deixarão de aprender, não o que Deus ensina.",
+      "c": "'Arado' pertence à cena da conversão das armas, adiante no texto."
+    },
+    "passageText": "E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.",
+    "template": "E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus ___, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "caminhos"
+      },
+      {
+        "id": "b",
+        "text": "guerra"
+      },
+      {
+        "id": "c",
+        "text": "arado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-03-desafio-miqueias",
+    "id": "miqueias-cam-miqueias-miqueias-03-desafio-miqueias-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Miqueias 4:2-3",
+    "learningObjective": "Relacionar a ética exigida por Deus com a esperança messiânica de paz entre as nações.",
+    "evidence": [
+      "Miqueias 4:2-3",
+      "Isaías 2:2-4"
+    ],
+    "type": "connect",
+    "question": "O que Miqueias 4:2-3 comunica que se liga a este contexto?",
+    "prompt": "O que Miqueias 4:2-3 comunica que se liga a este contexto?",
+    "cue": "O que Miqueias 4:2-3 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o ensino de Deus é a causa direta da paz descrita.",
+    "feedbackWrong": {
+      "b": "O texto atribui o ensino a Jeová, não ao conhecimento humano.",
+      "c": "O texto descreve uma transformação concreta de atitudes e instrumentos."
+    },
+    "passageText": "E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.",
+    "passageA": {
+      "ref": "Miqueias 4:2-3",
+      "text": "E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A esperança messiânica de Miqueias transforma a ética das nações: aprender com Deus leva à paz concreta."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Aprender de Deus gera paz concreta"
+      },
+      {
+        "id": "b",
+        "text": "Conhecimento humano garante a paz"
+      },
+      {
+        "id": "c",
+        "text": "A paz é tema exclusivo do futuro distante"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-03-desafio-miqueias",
+    "id": "miqueias-cam-miqueias-miqueias-03-desafio-miqueias-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Miqueias 4:2-3",
+    "learningObjective": "Relacionar a ética exigida por Deus com a esperança messiânica de paz entre as nações.",
+    "evidence": [
+      "Miqueias 4:2-3",
+      "Isaías 2:2-4"
+    ],
+    "type": "true_false",
+    "question": "Miqueias 4:2-3 revela que a justiça de Deus e a esperança messiânica caminham juntas: o mesmo Senhor que ensina os caminhos também estabelece a paz entre as nações.",
+    "prompt": "Miqueias 4:2-3 revela que a justiça de Deus e a esperança messiânica caminham juntas: o mesmo Senhor que ensina os caminhos também estabelece a paz entre as nações.",
+    "cue": "Miqueias 4:2-3 revela que a justiça de Deus e a esperança messiânica caminham juntas: o mesmo Senhor que ensina os caminhos também estabelece a paz entre as nações.",
+    "feedbackCorrect": "Certo: o julgamento e o ensino de Jeová produzem juntos a paz descrita.",
+    "feedbackWrong": {
+      "false": "O julgamento e o ensino de Jeová produzem juntos a paz descrita no texto."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-03-desafio-miqueias",
+    "id": "miqueias-pro-miqueias-miqueias-03-desafio-miqueias-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Miqueias 4:2",
+    "learningObjective": "Relacionar a ética exigida por Deus com a esperança messiânica de paz entre as nações.",
+    "evidence": [
+      "Miqueias 4:2-3",
+      "Isaías 2:2-4"
+    ],
+    "type": "tap",
+    "question": "Em Miqueias 4:2, toque a palavra que falta em \"E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de ___ sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.\"?",
+    "prompt": "Em Miqueias 4:2, toque a palavra que falta em \"E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de ___ sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.\"?",
+    "cue": "Em Miqueias 4:2, toque a palavra que falta em \"E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de ___ sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.\"?",
+    "feedbackCorrect": "Exato: é de Sião que sai a lei, segundo o texto.",
+    "feedbackWrong": {
+      "b": "'Jerusalém' é de onde sai a palavra de Jeová, na frase seguinte.",
+      "c": "'Jeová' aparece ligado à 'palavra', não a esta lacuna."
+    },
+    "passageText": "E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.",
+    "template": "E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de ___ sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sião"
+      },
+      {
+        "id": "b",
+        "text": "Jerusalém"
+      },
+      {
+        "id": "c",
+        "text": "Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-03-desafio-miqueias",
+    "id": "miqueias-pro-miqueias-miqueias-03-desafio-miqueias-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Miqueias 4:2-3",
+    "learningObjective": "Relacionar a ética exigida por Deus com a esperança messiânica de paz entre as nações.",
+    "evidence": [
+      "Miqueias 4:2-3",
+      "Isaías 2:2-4"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido teológico de Miqueias 4:2-3?",
+    "prompt": "Qual leitura interpreta melhor o sentido teológico de Miqueias 4:2-3?",
+    "cue": "Qual leitura interpreta melhor o sentido teológico de Miqueias 4:2-3?",
+    "feedbackCorrect": "Certo: a fonte da paz é a presença e o ensino de Deus, revelados a partir de Sião.",
+    "feedbackWrong": {
+      "b": "O texto não menciona progresso técnico; atribui a paz ao ensino de Jeová.",
+      "c": "Sião e Jerusalém, ligadas a Israel, permanecem centrais na promessa.",
+      "d": "O texto descreve o fim da guerra entre as nações, não uma vitória militar."
+    },
+    "passageText": "E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A lei de Sião e a paz entre nações nascem da presença de Deus, não de acordos."
+      },
+      {
+        "id": "b",
+        "text": "O texto ensina que a paz mundial virá apenas do progresso tecnológico das nações."
+      },
+      {
+        "id": "c",
+        "text": "A passagem sugere que Deus abandonará Israel em favor de outras nações."
+      },
+      {
+        "id": "d",
+        "text": "O texto trata apenas de uma vitória militar de Judá sobre seus inimigos."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-03-desafio-miqueias",
+    "id": "miqueias-pro-miqueias-miqueias-03-desafio-miqueias-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Miqueias 4:2-3",
+    "learningObjective": "Relacionar a ética exigida por Deus com a esperança messiânica de paz entre as nações.",
+    "evidence": [
+      "Miqueias 4:2-3",
+      "Isaías 2:2-4"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Miqueias 4:2-3?",
+    "prompt": "Qual sequência revela o sentido de Miqueias 4:2-3?",
+    "cue": "Qual sequência revela o sentido de Miqueias 4:2-3?",
+    "feedbackCorrect": "Certo: a busca por Deus, o ensino que dele procede e a paz que resulta.",
+    "feedbackWrong": {
+      "b": "Esta etapa só se explica depois de as nações buscarem o monte de Jeová.",
+      "c": "Esta paz é o resultado teológico da lei e do julgamento mencionados antes."
+    },
+    "passageText": "E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas"
+      },
+      {
+        "id": "b",
+        "text": "Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe"
+      },
+      {
+        "id": "c",
+        "text": "E converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-03-desafio-miqueias",
+    "id": "miqueias-pro-miqueias-miqueias-03-desafio-miqueias-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Miqueias 4:3",
+    "learningObjective": "Relacionar a ética exigida por Deus com a esperança messiânica de paz entre as nações.",
+    "evidence": [
+      "Miqueias 4:2-3",
+      "Isaías 2:2-4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em ___; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.\"",
+    "prompt": "Complete a frase: \"E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em ___; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.\"",
+    "cue": "Complete a frase: \"E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em ___; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.\"",
+    "feedbackCorrect": "Certo: as lanças se convertem em podadeiras, instrumento de cultivo.",
+    "feedbackWrong": {
+      "b": "'Arado' é o destino das espadas, mencionado antes desta lacuna.",
+      "c": "'Sião' pertence à parte sobre a origem da lei, não das lanças."
+    },
+    "passageText": "E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.",
+    "template": "E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em ___; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "podadeiras"
+      },
+      {
+        "id": "b",
+        "text": "arado"
+      },
+      {
+        "id": "c",
+        "text": "Sião"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-03-desafio-miqueias",
+    "id": "miqueias-pro-miqueias-miqueias-03-desafio-miqueias-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Miqueias 4:2-3",
+    "learningObjective": "Relacionar a ética exigida por Deus com a esperança messiânica de paz entre as nações.",
+    "evidence": [
+      "Miqueias 4:2-3",
+      "Isaías 2:2-4"
+    ],
+    "type": "connect",
+    "question": "O que Miqueias 4:2-3 comunica que se liga a este contexto?",
+    "prompt": "O que Miqueias 4:2-3 comunica que se liga a este contexto?",
+    "cue": "O que Miqueias 4:2-3 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o texto descreve um reino que rompe o ciclo da guerra pela justiça.",
+    "feedbackWrong": {
+      "b": "O texto descreve o fim das armas, não o uso da força para manter ordem.",
+      "c": "O texto atribui a paz e a justiça ao julgamento e ensino de Jeová."
+    },
+    "passageText": "E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.",
+    "passageA": {
+      "ref": "Miqueias 4:2-3",
+      "text": "E irão muitas nações, e dirão: Vinde, e subamos ao monte de Jeová, e à casa do Deus de Jacó; e ele nos ensinará os seus caminhos, e andaremos nas suas veredas. Porque de Sião sairá a lei, e de Jerusalém a palavra de Jeová; e julgará entre muitos povos, e castigará nações poderosas até bem longe; e converterão as suas espadas em relhas de arado, e as suas lanças em podadeiras; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A visão de Miqueias funde ética e messianismo: o Reino de Deus se reconhece por justiça vivida e por paz que rompe o ciclo da violência."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Reino de Deus: justiça que rompe a violência"
+      },
+      {
+        "id": "b",
+        "text": "Reino de Deus mantém a ordem pela força"
+      },
+      {
+        "id": "c",
+        "text": "Justiça e paz são metas apenas humanas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "miqueias",
+    "section": "miqueias-miqueias-03-desafio-miqueias",
+    "id": "miqueias-pro-miqueias-miqueias-03-desafio-miqueias-06"
+  }
+]

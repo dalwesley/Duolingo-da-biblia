@@ -1,0 +1,3044 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 2:42-47",
+    "learningObjective": "Reconhecer que a igreja perseverava na doutrina, na comunhão, no pão e nas orações, unida e partilhando.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 2:43",
+      "Atos 2:44",
+      "Atos 2:45"
+    ],
+    "type": "true_false",
+    "question": "Os que criam perseveravam na doutrina dos apóstolos, na comunhão, no partir do pão e nas orações.",
+    "prompt": "Os que criam perseveravam na doutrina dos apóstolos, na comunhão, no partir do pão e nas orações.",
+    "cue": "Os que criam perseveravam na doutrina dos apóstolos, na comunhão, no partir do pão e nas orações.",
+    "feedbackCorrect": "Certo: Atos 2:42 registra exatamente essa perseverança.",
+    "feedbackWrong": {
+      "false": "Releia Atos 2:42: essas quatro práticas vêm juntas."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Em cada alma havia temor, e muitos prodígios e milagres eram feitos pelos apóstolos. Todos os que criam estavam unidos, e tinham tudo em comum, e vendiam as suas propriedades e bens, e os repartiam por todos, conforme a necessidade de cada um.",
+    "trail": "igreja-primitiva",
+    "section": "ip-01-vida-comum",
+    "id": "igreja-primitiva-sem-ip-01-vida-comum-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 2:42-47",
+    "learningObjective": "Reconhecer que a igreja perseverava na doutrina, na comunhão, no pão e nas orações, unida e partilhando.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 2:43",
+      "Atos 2:44",
+      "Atos 2:45"
+    ],
+    "type": "tap",
+    "question": "Em Atos 2:42, toque a palavra que falta em \"e ___ na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações\"?",
+    "prompt": "Em Atos 2:42, toque a palavra que falta em \"e ___ na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações\"?",
+    "cue": "Em Atos 2:42, toque a palavra que falta em \"e ___ na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações\"?",
+    "feedbackCorrect": "Exato: eles perseveravam nessas quatro práticas.",
+    "feedbackWrong": {
+      "b": "Temor aparece depois, em cada alma, não nesta lacuna.",
+      "c": "Propriedades entram na partilha, não neste verbo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "perseveravam"
+      },
+      {
+        "id": "b",
+        "text": "temor"
+      },
+      {
+        "id": "c",
+        "text": "propriedades"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Em cada alma havia temor, e muitos prodígios e milagres eram feitos pelos apóstolos. Todos os que criam estavam unidos, e tinham tudo em comum, e vendiam as suas propriedades e bens, e os repartiam por todos, conforme a necessidade de cada um.",
+    "trail": "igreja-primitiva",
+    "section": "ip-01-vida-comum",
+    "id": "igreja-primitiva-sem-ip-01-vida-comum-02",
+    "template": "e ___ na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 2:42-47",
+    "learningObjective": "Reconhecer que a igreja perseverava na doutrina, na comunhão, no pão e nas orações, unida e partilhando.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 2:43",
+      "Atos 2:44",
+      "Atos 2:45"
+    ],
+    "type": "choice",
+    "question": "Qual fato Atos 2:42-47 afirma sobre os que criam?",
+    "prompt": "Qual fato Atos 2:42-47 afirma sobre os que criam?",
+    "cue": "Qual fato Atos 2:42-47 afirma sobre os que criam?",
+    "feedbackCorrect": "Certo: perseveravam juntos e tinham tudo em comum.",
+    "feedbackWrong": {
+      "b": "O texto os mostra unidos, não cultuando cada um à parte.",
+      "c": "Os apóstolos ensinam e também fazem milagres; não abandonam a doutrina.",
+      "d": "Eles vendiam e repartiam os bens conforme a necessidade."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Perseveravam na doutrina, na comunhão, no pão e nas orações."
+      },
+      {
+        "id": "b",
+        "text": "Cada um cultuava sozinho, sem qualquer vida comum."
+      },
+      {
+        "id": "c",
+        "text": "Os apóstolos largaram o ensino para só fazer milagres."
+      },
+      {
+        "id": "d",
+        "text": "Os bens ficavam guardados, sem repartir com ninguém."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Em cada alma havia temor, e muitos prodígios e milagres eram feitos pelos apóstolos. Todos os que criam estavam unidos, e tinham tudo em comum, e vendiam as suas propriedades e bens, e os repartiam por todos, conforme a necessidade de cada um.",
+    "trail": "igreja-primitiva",
+    "section": "ip-01-vida-comum",
+    "id": "igreja-primitiva-sem-ip-01-vida-comum-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 2:42-47",
+    "learningObjective": "Reconhecer que a igreja perseverava na doutrina, na comunhão, no pão e nas orações, unida e partilhando.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 2:43",
+      "Atos 2:44",
+      "Atos 2:45"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Atos 2:42-47?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Atos 2:42-47?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Atos 2:42-47?",
+    "feedbackCorrect": "Certo: perseverança, temor e milagres, depois união e partilha.",
+    "feedbackWrong": {
+      "b": "A união dos que criam vem depois do temor e dos milagres.",
+      "c": "Releia: a doutrina e a comunhão abrem o retrato."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações"
+      },
+      {
+        "id": "b",
+        "text": "Em cada alma havia temor, e muitos prodígios e milagres eram feitos pelos apóstolos"
+      },
+      {
+        "id": "c",
+        "text": "Todos os que criam estavam unidos, e tinham tudo em comum"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Em cada alma havia temor, e muitos prodígios e milagres eram feitos pelos apóstolos. Todos os que criam estavam unidos, e tinham tudo em comum, e vendiam as suas propriedades e bens, e os repartiam por todos, conforme a necessidade de cada um.",
+    "trail": "igreja-primitiva",
+    "section": "ip-01-vida-comum",
+    "id": "igreja-primitiva-sem-ip-01-vida-comum-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 2:42-47",
+    "learningObjective": "Reconhecer que a igreja perseverava na doutrina, na comunhão, no pão e nas orações, unida e partilhando.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 2:43",
+      "Atos 2:44",
+      "Atos 2:45"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Todos os que criam estavam ___, e tinham tudo em comum\"",
+    "prompt": "Complete a frase: \"Todos os que criam estavam ___, e tinham tudo em comum\"",
+    "cue": "Complete a frase: \"Todos os que criam estavam ___, e tinham tudo em comum\"",
+    "feedbackCorrect": "Certo: os que criam estavam unidos.",
+    "feedbackWrong": {
+      "b": "Temor descreve cada alma, não este adjetivo.",
+      "c": "Orações fecham o v. 42, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "unidos"
+      },
+      {
+        "id": "b",
+        "text": "temor"
+      },
+      {
+        "id": "c",
+        "text": "orações"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Em cada alma havia temor, e muitos prodígios e milagres eram feitos pelos apóstolos. Todos os que criam estavam unidos, e tinham tudo em comum, e vendiam as suas propriedades e bens, e os repartiam por todos, conforme a necessidade de cada um.",
+    "trail": "igreja-primitiva",
+    "section": "ip-01-vida-comum",
+    "id": "igreja-primitiva-sem-ip-01-vida-comum-05",
+    "template": "Todos os que criam estavam ___, e tinham tudo em comum"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 2:42-47",
+    "learningObjective": "Reconhecer que a igreja perseverava na doutrina, na comunhão, no pão e nas orações, unida e partilhando.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 2:43",
+      "Atos 2:44",
+      "Atos 2:45"
+    ],
+    "type": "connect",
+    "question": "O que Atos 2:42-47 comunica que se liga a este contexto?",
+    "prompt": "O que Atos 2:42-47 comunica que se liga a este contexto?",
+    "cue": "O que Atos 2:42-47 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: doutrina, comunhão, pão e orações formam um povo unido.",
+    "feedbackWrong": {
+      "b": "O texto descreve vida compartilhada, não culto isolado.",
+      "c": "A partilha acompanha a doutrina; não a substitui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Povo unido na Palavra"
+      },
+      {
+        "id": "b",
+        "text": "Culto isolado sem comunhão"
+      },
+      {
+        "id": "c",
+        "text": "Partilha no lugar da doutrina"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Em cada alma havia temor, e muitos prodígios e milagres eram feitos pelos apóstolos. Todos os que criam estavam unidos, e tinham tudo em comum, e vendiam as suas propriedades e bens, e os repartiam por todos, conforme a necessidade de cada um.",
+    "trail": "igreja-primitiva",
+    "section": "ip-01-vida-comum",
+    "id": "igreja-primitiva-sem-ip-01-vida-comum-06",
+    "passageA": {
+      "ref": "Atos 2:42",
+      "text": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Vida comum em Atos: doutrina, comunhão, pão e orações — povo unido, não culto isolado."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 2:42-47",
+    "learningObjective": "Entender que Atos 2 descreve vida comum — ensino, mesa e oração juntos, não culto isolado.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 2:43",
+      "Atos 2:44",
+      "Atos 2:45"
+    ],
+    "type": "true_false",
+    "question": "Em Atos 2, doutrina, comunhão, partir do pão e orações formam um só modo de vida, não práticas soltas.",
+    "prompt": "Em Atos 2, doutrina, comunhão, partir do pão e orações formam um só modo de vida, não práticas soltas.",
+    "cue": "Em Atos 2, doutrina, comunhão, partir do pão e orações formam um só modo de vida, não práticas soltas.",
+    "feedbackCorrect": "Certo: o texto as lista juntas, como perseverança comum.",
+    "feedbackWrong": {
+      "false": "Atos 2:42 une as quatro; não as trata como ritos separados."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Em cada alma havia temor, e muitos prodígios e milagres eram feitos pelos apóstolos. Todos os que criam estavam unidos, e tinham tudo em comum, e vendiam as suas propriedades e bens, e os repartiam por todos, conforme a necessidade de cada um.",
+    "trail": "igreja-primitiva",
+    "section": "ip-01-vida-comum",
+    "id": "igreja-primitiva-cam-ip-01-vida-comum-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 2:42-47",
+    "learningObjective": "Entender que Atos 2 descreve vida comum — ensino, mesa e oração juntos, não culto isolado.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 2:43",
+      "Atos 2:44",
+      "Atos 2:45"
+    ],
+    "type": "tap",
+    "question": "Em Atos 2:42, toque a palavra que falta em \"no partir do ___ e nas orações\"?",
+    "prompt": "Em Atos 2:42, toque a palavra que falta em \"no partir do ___ e nas orações\"?",
+    "cue": "Em Atos 2:42, toque a palavra que falta em \"no partir do ___ e nas orações\"?",
+    "feedbackCorrect": "Exato: o partir do pão está no centro da vida comum.",
+    "feedbackWrong": {
+      "b": "Doutrina abre a lista, não esta lacuna.",
+      "c": "Temor vem no versículo seguinte."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "pão"
+      },
+      {
+        "id": "b",
+        "text": "doutrina"
+      },
+      {
+        "id": "c",
+        "text": "temor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Em cada alma havia temor, e muitos prodígios e milagres eram feitos pelos apóstolos. Todos os que criam estavam unidos, e tinham tudo em comum, e vendiam as suas propriedades e bens, e os repartiam por todos, conforme a necessidade de cada um.",
+    "trail": "igreja-primitiva",
+    "section": "ip-01-vida-comum",
+    "id": "igreja-primitiva-cam-ip-01-vida-comum-02",
+    "template": "no partir do ___ e nas orações"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 2:42-47",
+    "learningObjective": "Entender que Atos 2 descreve vida comum — ensino, mesa e oração juntos, não culto isolado.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 2:43",
+      "Atos 2:44",
+      "Atos 2:45"
+    ],
+    "type": "choice",
+    "question": "O que a lista de Atos 2:42 mostra sobre a vida da igreja?",
+    "prompt": "O que a lista de Atos 2:42 mostra sobre a vida da igreja?",
+    "cue": "O que a lista de Atos 2:42 mostra sobre a vida da igreja?",
+    "feedbackCorrect": "Certo: ensino, partilha, mesa e oração caminham juntos.",
+    "feedbackWrong": {
+      "b": "O texto as encadeia numa só perseverança, não em ritos soltos.",
+      "c": "O partir do pão não anula doutrina, comunhão e orações.",
+      "d": "A doutrina vem com a comunhão, não no lugar dela."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Uma vida comum: ensino, partilha, mesa e oração juntos."
+      },
+      {
+        "id": "b",
+        "text": "Quatro ritos soltos, sem relação entre si."
+      },
+      {
+        "id": "c",
+        "text": "Só o partir do pão importa; o resto é acessório."
+      },
+      {
+        "id": "d",
+        "text": "A doutrina substitui a comunhão e as orações."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Em cada alma havia temor, e muitos prodígios e milagres eram feitos pelos apóstolos. Todos os que criam estavam unidos, e tinham tudo em comum, e vendiam as suas propriedades e bens, e os repartiam por todos, conforme a necessidade de cada um.",
+    "trail": "igreja-primitiva",
+    "section": "ip-01-vida-comum",
+    "id": "igreja-primitiva-cam-ip-01-vida-comum-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 2:42-47",
+    "learningObjective": "Entender que Atos 2 descreve vida comum — ensino, mesa e oração juntos, não culto isolado.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 2:43",
+      "Atos 2:44",
+      "Atos 2:45"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Atos 2:42-47?",
+    "prompt": "Como se encadeiam os eventos de Atos 2:42-47?",
+    "cue": "Como se encadeiam os eventos de Atos 2:42-47?",
+    "feedbackCorrect": "Certo: perseveram, estão unidos e então repartem conforme a necessidade.",
+    "feedbackWrong": {
+      "b": "Repartir bens vem depois de estarem unidos e terem tudo em comum.",
+      "c": "A perseverança na doutrina abre o encadeamento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "perseveravam na doutrina dos apóstolos e na comunhão"
+      },
+      {
+        "id": "b",
+        "text": "Todos os que criam estavam unidos, e tinham tudo em comum"
+      },
+      {
+        "id": "c",
+        "text": "vendiam as suas propriedades e bens, e os repartiam por todos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Em cada alma havia temor, e muitos prodígios e milagres eram feitos pelos apóstolos. Todos os que criam estavam unidos, e tinham tudo em comum, e vendiam as suas propriedades e bens, e os repartiam por todos, conforme a necessidade de cada um.",
+    "trail": "igreja-primitiva",
+    "section": "ip-01-vida-comum",
+    "id": "igreja-primitiva-cam-ip-01-vida-comum-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 2:42-47",
+    "learningObjective": "Entender que Atos 2 descreve vida comum — ensino, mesa e oração juntos, não culto isolado.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 2:43",
+      "Atos 2:44",
+      "Atos 2:45"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"e vendiam as suas propriedades e bens, e os ___ por todos, conforme a necessidade de cada um\"",
+    "prompt": "Complete a frase: \"e vendiam as suas propriedades e bens, e os ___ por todos, conforme a necessidade de cada um\"",
+    "cue": "Complete a frase: \"e vendiam as suas propriedades e bens, e os ___ por todos, conforme a necessidade de cada um\"",
+    "feedbackCorrect": "Certo: os bens eram repartidos por todos.",
+    "feedbackWrong": {
+      "b": "Perseveravam descreve a doutrina, não esta ação.",
+      "c": "Milagres são feitos pelos apóstolos, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "repartiam"
+      },
+      {
+        "id": "b",
+        "text": "perseveravam"
+      },
+      {
+        "id": "c",
+        "text": "milagres"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Em cada alma havia temor, e muitos prodígios e milagres eram feitos pelos apóstolos. Todos os que criam estavam unidos, e tinham tudo em comum, e vendiam as suas propriedades e bens, e os repartiam por todos, conforme a necessidade de cada um.",
+    "trail": "igreja-primitiva",
+    "section": "ip-01-vida-comum",
+    "id": "igreja-primitiva-cam-ip-01-vida-comum-05",
+    "template": "e vendiam as suas propriedades e bens, e os ___ por todos, conforme a necessidade de cada um"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 2:42-47",
+    "learningObjective": "Entender que Atos 2 descreve vida comum — ensino, mesa e oração juntos, não culto isolado.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 2:43",
+      "Atos 2:44",
+      "Atos 2:45"
+    ],
+    "type": "connect",
+    "question": "O que Atos 2:42 comunica que se liga a este contexto?",
+    "prompt": "O que Atos 2:42 comunica que se liga a este contexto?",
+    "cue": "O que Atos 2:42 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a mesa e a doutrina pertencem à mesma vida comum.",
+    "feedbackWrong": {
+      "b": "O partir do pão está junto da doutrina, não contra ela.",
+      "c": "A comunhão não é opcional ao ensino dos apóstolos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Doutrina e mesa juntas"
+      },
+      {
+        "id": "b",
+        "text": "Mesa contra a doutrina"
+      },
+      {
+        "id": "c",
+        "text": "Comunhão opcional ao ensino"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Em cada alma havia temor, e muitos prodígios e milagres eram feitos pelos apóstolos. Todos os que criam estavam unidos, e tinham tudo em comum, e vendiam as suas propriedades e bens, e os repartiam por todos, conforme a necessidade de cada um.",
+    "trail": "igreja-primitiva",
+    "section": "ip-01-vida-comum",
+    "id": "igreja-primitiva-cam-ip-01-vida-comum-06",
+    "passageA": {
+      "ref": "Atos 2:42",
+      "text": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Vida comum em Atos: doutrina, comunhão, pão e orações — povo unido, não culto isolado."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 2:42-47",
+    "learningObjective": "Interpretar que o povo de Atos é formado pela Palavra e pela partilha, não por fé individualista.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 2:43",
+      "Atos 2:44",
+      "Atos 2:45"
+    ],
+    "type": "true_false",
+    "question": "O retrato de Atos 2 mostra um povo unido pela doutrina e pela partilha, não uma fé isolada de cada um.",
+    "prompt": "O retrato de Atos 2 mostra um povo unido pela doutrina e pela partilha, não uma fé isolada de cada um.",
+    "cue": "O retrato de Atos 2 mostra um povo unido pela doutrina e pela partilha, não uma fé isolada de cada um.",
+    "feedbackCorrect": "Certo: unidos, tudo em comum, perseverando juntos.",
+    "feedbackWrong": {
+      "false": "O texto fala de todos os que criam unidos, não de crentes isolados."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Em cada alma havia temor, e muitos prodígios e milagres eram feitos pelos apóstolos. Todos os que criam estavam unidos, e tinham tudo em comum, e vendiam as suas propriedades e bens, e os repartiam por todos, conforme a necessidade de cada um.",
+    "trail": "igreja-primitiva",
+    "section": "ip-01-vida-comum",
+    "id": "igreja-primitiva-pro-ip-01-vida-comum-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 2:42-47",
+    "learningObjective": "Interpretar que o povo de Atos é formado pela Palavra e pela partilha, não por fé individualista.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 2:43",
+      "Atos 2:44",
+      "Atos 2:45"
+    ],
+    "type": "tap",
+    "question": "Em Atos 2:44, toque a palavra que falta em \"e tinham tudo em ___\"?",
+    "prompt": "Em Atos 2:44, toque a palavra que falta em \"e tinham tudo em ___\"?",
+    "cue": "Em Atos 2:44, toque a palavra que falta em \"e tinham tudo em ___\"?",
+    "feedbackCorrect": "Exato: tinham tudo em comum.",
+    "feedbackWrong": {
+      "b": "Temor descreve cada alma, não este complemento.",
+      "c": "Orações fecham o v. 42, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "comum"
+      },
+      {
+        "id": "b",
+        "text": "temor"
+      },
+      {
+        "id": "c",
+        "text": "orações"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Em cada alma havia temor, e muitos prodígios e milagres eram feitos pelos apóstolos. Todos os que criam estavam unidos, e tinham tudo em comum, e vendiam as suas propriedades e bens, e os repartiam por todos, conforme a necessidade de cada um.",
+    "trail": "igreja-primitiva",
+    "section": "ip-01-vida-comum",
+    "id": "igreja-primitiva-pro-ip-01-vida-comum-02",
+    "template": "e tinham tudo em ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 2:42-47",
+    "learningObjective": "Interpretar que o povo de Atos é formado pela Palavra e pela partilha, não por fé individualista.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 2:43",
+      "Atos 2:44",
+      "Atos 2:45"
+    ],
+    "type": "choice",
+    "question": "Qual leitura Atos 2:42-47 autoriza sobre o sentido da igreja?",
+    "prompt": "Qual leitura Atos 2:42-47 autoriza sobre o sentido da igreja?",
+    "cue": "Qual leitura Atos 2:42-47 autoriza sobre o sentido da igreja?",
+    "feedbackCorrect": "Certo: a Palavra forma um povo que partilha a vida.",
+    "feedbackWrong": {
+      "b": "O texto descreve comunhão e pão, não só um culto semanal isolado.",
+      "c": "Os milagres não dispensam perseverar na doutrina.",
+      "d": "Repartir bens acompanha a doutrina; não a torna opcional."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A Palavra forma um povo que partilha a vida."
+      },
+      {
+        "id": "b",
+        "text": "A igreja primitiva era só um culto semanal sem comunhão."
+      },
+      {
+        "id": "c",
+        "text": "Os milagres tornam desnecessário perseverar na doutrina."
+      },
+      {
+        "id": "d",
+        "text": "Repartir bens prova que a doutrina dos apóstolos era opcional."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Em cada alma havia temor, e muitos prodígios e milagres eram feitos pelos apóstolos. Todos os que criam estavam unidos, e tinham tudo em comum, e vendiam as suas propriedades e bens, e os repartiam por todos, conforme a necessidade de cada um.",
+    "trail": "igreja-primitiva",
+    "section": "ip-01-vida-comum",
+    "id": "igreja-primitiva-pro-ip-01-vida-comum-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 2:42-47",
+    "learningObjective": "Interpretar que o povo de Atos é formado pela Palavra e pela partilha, não por fé individualista.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 2:43",
+      "Atos 2:44",
+      "Atos 2:45"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Atos 2:42-47?",
+    "prompt": "Qual sequência revela o sentido de Atos 2:42-47?",
+    "cue": "Qual sequência revela o sentido de Atos 2:42-47?",
+    "feedbackCorrect": "Certo: doutrina comum, união e então partilha conforme a necessidade.",
+    "feedbackWrong": {
+      "b": "A partilha é fruto da união, não o primeiro passo.",
+      "c": "O sentido começa na perseverança na doutrina."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "perseveravam na doutrina dos apóstolos e na comunhão"
+      },
+      {
+        "id": "b",
+        "text": "Todos os que criam estavam unidos, e tinham tudo em comum"
+      },
+      {
+        "id": "c",
+        "text": "os repartiam por todos, conforme a necessidade de cada um"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Em cada alma havia temor, e muitos prodígios e milagres eram feitos pelos apóstolos. Todos os que criam estavam unidos, e tinham tudo em comum, e vendiam as suas propriedades e bens, e os repartiam por todos, conforme a necessidade de cada um.",
+    "trail": "igreja-primitiva",
+    "section": "ip-01-vida-comum",
+    "id": "igreja-primitiva-pro-ip-01-vida-comum-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 2:42-47",
+    "learningObjective": "Interpretar que o povo de Atos é formado pela Palavra e pela partilha, não por fé individualista.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 2:43",
+      "Atos 2:44",
+      "Atos 2:45"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"e os repartiam por todos, conforme a ___ de cada um\"",
+    "prompt": "Complete a frase: \"e os repartiam por todos, conforme a ___ de cada um\"",
+    "cue": "Complete a frase: \"e os repartiam por todos, conforme a ___ de cada um\"",
+    "feedbackCorrect": "Certo: a medida da partilha é a necessidade de cada um.",
+    "feedbackWrong": {
+      "b": "Comunhão é o vínculo do v. 42, não esta medida.",
+      "c": "Temor descreve cada alma, não a regra da partilha."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "necessidade"
+      },
+      {
+        "id": "b",
+        "text": "comunhão"
+      },
+      {
+        "id": "c",
+        "text": "temor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Em cada alma havia temor, e muitos prodígios e milagres eram feitos pelos apóstolos. Todos os que criam estavam unidos, e tinham tudo em comum, e vendiam as suas propriedades e bens, e os repartiam por todos, conforme a necessidade de cada um.",
+    "trail": "igreja-primitiva",
+    "section": "ip-01-vida-comum",
+    "id": "igreja-primitiva-pro-ip-01-vida-comum-05",
+    "template": "e os repartiam por todos, conforme a ___ de cada um"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 2:42-47",
+    "learningObjective": "Interpretar que o povo de Atos é formado pela Palavra e pela partilha, não por fé individualista.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 2:43",
+      "Atos 2:44",
+      "Atos 2:45"
+    ],
+    "type": "connect",
+    "question": "O que Atos 2:42-47 comunica que se liga a este contexto?",
+    "prompt": "O que Atos 2:42-47 comunica que se liga a este contexto?",
+    "cue": "O que Atos 2:42-47 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a igreja aqui é povo unido, não culto isolado.",
+    "feedbackWrong": {
+      "b": "O texto não reduz a fé a um rito privado.",
+      "c": "Milagres acompanham o povo; não substituem a comunhão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Igreja é povo unido"
+      },
+      {
+        "id": "b",
+        "text": "Fé só como rito privado"
+      },
+      {
+        "id": "c",
+        "text": "Milagres no lugar da comunhão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Em cada alma havia temor, e muitos prodígios e milagres eram feitos pelos apóstolos. Todos os que criam estavam unidos, e tinham tudo em comum, e vendiam as suas propriedades e bens, e os repartiam por todos, conforme a necessidade de cada um.",
+    "trail": "igreja-primitiva",
+    "section": "ip-01-vida-comum",
+    "id": "igreja-primitiva-pro-ip-01-vida-comum-06",
+    "passageA": {
+      "ref": "Atos 2:44-45",
+      "text": "Todos os que criam estavam unidos, e tinham tudo em comum, e vendiam as suas propriedades e bens, e os repartiam por todos, conforme a necessidade de cada um."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Vida comum em Atos: doutrina, comunhão, pão e orações — povo unido, não culto isolado."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 4:29-31",
+    "learningObjective": "Ver que, sob ameaça, a igreja pede liberdade para falar a palavra.",
+    "evidence": [
+      "Atos 4:29",
+      "Atos 4:30",
+      "Atos 4:31"
+    ],
+    "type": "true_false",
+    "question": "A igreja pede que Deus conceda aos servos falar a palavra com toda a liberdade.",
+    "prompt": "A igreja pede que Deus conceda aos servos falar a palavra com toda a liberdade.",
+    "cue": "A igreja pede que Deus conceda aos servos falar a palavra com toda a liberdade.",
+    "feedbackCorrect": "Certo: esse é o pedido de Atos 4:29.",
+    "feedbackWrong": {
+      "false": "Releia: pedem liberdade para falar, não silêncio."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Agora, Senhor, olha para as suas ameaças e concede aos teus servos que, com toda a liberdade, falem a tua palavra, enquanto tu estendes a mão para curar e para que se façam milagres e prodígios pelo nome de teu Santo Servo Jesus. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus.",
+    "trail": "igreja-primitiva",
+    "section": "ip-02-perseguicao",
+    "id": "igreja-primitiva-sem-ip-02-perseguicao-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 4:29-31",
+    "learningObjective": "Ver que, sob ameaça, a igreja pede liberdade para falar a palavra.",
+    "evidence": [
+      "Atos 4:29",
+      "Atos 4:30",
+      "Atos 4:31"
+    ],
+    "type": "tap",
+    "question": "Em Atos 4:29, toque a palavra que falta em \"concede aos teus servos que, com toda a ___, falem a tua palavra\"?",
+    "prompt": "Em Atos 4:29, toque a palavra que falta em \"concede aos teus servos que, com toda a ___, falem a tua palavra\"?",
+    "cue": "Em Atos 4:29, toque a palavra que falta em \"concede aos teus servos que, com toda a ___, falem a tua palavra\"?",
+    "feedbackCorrect": "Exato: pedem liberdade para falar.",
+    "feedbackWrong": {
+      "b": "Ameaças são o que o Senhor deve olhar, não esta lacuna.",
+      "c": "Milagres vêm no pedido seguinte, pela mão de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "liberdade"
+      },
+      {
+        "id": "b",
+        "text": "ameaças"
+      },
+      {
+        "id": "c",
+        "text": "milagres"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Agora, Senhor, olha para as suas ameaças e concede aos teus servos que, com toda a liberdade, falem a tua palavra, enquanto tu estendes a mão para curar e para que se façam milagres e prodígios pelo nome de teu Santo Servo Jesus. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus.",
+    "trail": "igreja-primitiva",
+    "section": "ip-02-perseguicao",
+    "id": "igreja-primitiva-sem-ip-02-perseguicao-02",
+    "template": "concede aos teus servos que, com toda a ___, falem a tua palavra"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 4:29-31",
+    "learningObjective": "Ver que, sob ameaça, a igreja pede liberdade para falar a palavra.",
+    "evidence": [
+      "Atos 4:29",
+      "Atos 4:30",
+      "Atos 4:31"
+    ],
+    "type": "choice",
+    "question": "Qual pedido Atos 4:29 registra diante das ameaças?",
+    "prompt": "Qual pedido Atos 4:29 registra diante das ameaças?",
+    "cue": "Qual pedido Atos 4:29 registra diante das ameaças?",
+    "feedbackCorrect": "Certo: pedem liberdade para falar a palavra.",
+    "feedbackWrong": {
+      "b": "Não pedem que as ameaças cessem antes de anunciar.",
+      "c": "O texto pede fala, não silêncio até haver paz.",
+      "d": "Pedem que o Senhor olhe as ameaças e aja, não que as ignore."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Liberdade para falar a palavra."
+      },
+      {
+        "id": "b",
+        "text": "Que as ameaças cessem antes de qualquer anúncio."
+      },
+      {
+        "id": "c",
+        "text": "Que os servos fiquem calados até haver paz."
+      },
+      {
+        "id": "d",
+        "text": "Que Deus ignore as ameaças e não aja."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Agora, Senhor, olha para as suas ameaças e concede aos teus servos que, com toda a liberdade, falem a tua palavra, enquanto tu estendes a mão para curar e para que se façam milagres e prodígios pelo nome de teu Santo Servo Jesus. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus.",
+    "trail": "igreja-primitiva",
+    "section": "ip-02-perseguicao",
+    "id": "igreja-primitiva-sem-ip-02-perseguicao-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 4:29-31",
+    "learningObjective": "Ver que, sob ameaça, a igreja pede liberdade para falar a palavra.",
+    "evidence": [
+      "Atos 4:29",
+      "Atos 4:30",
+      "Atos 4:31"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Atos 4:29-31?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Atos 4:29-31?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Atos 4:29-31?",
+    "feedbackCorrect": "Certo: olham as ameaças, pedem liberdade e então oram até o lugar tremer.",
+    "feedbackWrong": {
+      "b": "O tremor do lugar vem depois da oração, no v. 31.",
+      "c": "O pedido de liberdade vem depois de olhar as ameaças."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Agora, Senhor, olha para as suas ameaças"
+      },
+      {
+        "id": "b",
+        "text": "concede aos teus servos que, com toda a liberdade, falem a tua palavra"
+      },
+      {
+        "id": "c",
+        "text": "Tendo eles orado, tremeu o lugar onde estavam reunidos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Agora, Senhor, olha para as suas ameaças e concede aos teus servos que, com toda a liberdade, falem a tua palavra, enquanto tu estendes a mão para curar e para que se façam milagres e prodígios pelo nome de teu Santo Servo Jesus. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus.",
+    "trail": "igreja-primitiva",
+    "section": "ip-02-perseguicao",
+    "id": "igreja-primitiva-sem-ip-02-perseguicao-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 4:29-31",
+    "learningObjective": "Ver que, sob ameaça, a igreja pede liberdade para falar a palavra.",
+    "evidence": [
+      "Atos 4:29",
+      "Atos 4:30",
+      "Atos 4:31"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"enquanto tu estendes a mão para ___ e para que se façam milagres e prodígios\"",
+    "prompt": "Complete a frase: \"enquanto tu estendes a mão para ___ e para que se façam milagres e prodígios\"",
+    "cue": "Complete a frase: \"enquanto tu estendes a mão para ___ e para que se façam milagres e prodígios\"",
+    "feedbackCorrect": "Certo: Deus estende a mão para curar.",
+    "feedbackWrong": {
+      "b": "Orado descreve o que eles fizeram, não esta lacuna.",
+      "c": "Reunidos descreve o lugar, não a ação da mão de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "curar"
+      },
+      {
+        "id": "b",
+        "text": "orado"
+      },
+      {
+        "id": "c",
+        "text": "reunidos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Agora, Senhor, olha para as suas ameaças e concede aos teus servos que, com toda a liberdade, falem a tua palavra, enquanto tu estendes a mão para curar e para que se façam milagres e prodígios pelo nome de teu Santo Servo Jesus. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus.",
+    "trail": "igreja-primitiva",
+    "section": "ip-02-perseguicao",
+    "id": "igreja-primitiva-sem-ip-02-perseguicao-05",
+    "template": "enquanto tu estendes a mão para ___ e para que se façam milagres e prodígios"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 4:29-31",
+    "learningObjective": "Ver que, sob ameaça, a igreja pede liberdade para falar a palavra.",
+    "evidence": [
+      "Atos 4:29",
+      "Atos 4:30",
+      "Atos 4:31"
+    ],
+    "type": "connect",
+    "question": "O que Atos 4:29 comunica que se liga a este contexto?",
+    "prompt": "O que Atos 4:29 comunica que se liga a este contexto?",
+    "cue": "O que Atos 4:29 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: sob ameaça, pedem ousadia para falar.",
+    "feedbackWrong": {
+      "b": "O pedido não é primeiro a própria segurança.",
+      "c": "Olham as ameaças e mesmo assim pedem fala, não fuga."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ousadia sob ameaça"
+      },
+      {
+        "id": "b",
+        "text": "Segurança antes de falar"
+      },
+      {
+        "id": "c",
+        "text": "Fuga diante das ameaças"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Agora, Senhor, olha para as suas ameaças e concede aos teus servos que, com toda a liberdade, falem a tua palavra, enquanto tu estendes a mão para curar e para que se façam milagres e prodígios pelo nome de teu Santo Servo Jesus. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus.",
+    "trail": "igreja-primitiva",
+    "section": "ip-02-perseguicao",
+    "id": "igreja-primitiva-sem-ip-02-perseguicao-06",
+    "passageA": {
+      "ref": "Atos 4:29",
+      "text": "Agora, Senhor, olha para as suas ameaças e concede aos teus servos que, com toda a liberdade, falem a tua palavra"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Sob ameaça, a igreja pede liberdade para falar — não segurança primeiro; o Espírito enche e a palavra sai."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 4:29-31",
+    "learningObjective": "Entender que o pedido é ousadia para anunciar, enquanto Deus estende a mão — não segurança primeiro.",
+    "evidence": [
+      "Atos 4:29",
+      "Atos 4:30",
+      "Atos 4:31"
+    ],
+    "type": "true_false",
+    "question": "Sob ameaça, o pedido da igreja é falar a palavra — não pedir primeiro a própria segurança.",
+    "prompt": "Sob ameaça, o pedido da igreja é falar a palavra — não pedir primeiro a própria segurança.",
+    "cue": "Sob ameaça, o pedido da igreja é falar a palavra — não pedir primeiro a própria segurança.",
+    "feedbackCorrect": "Certo: pedem liberdade para falar, enquanto Deus age.",
+    "feedbackWrong": {
+      "false": "Atos 4:29 pede fala com liberdade, não abrigo primeiro."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Agora, Senhor, olha para as suas ameaças e concede aos teus servos que, com toda a liberdade, falem a tua palavra, enquanto tu estendes a mão para curar e para que se façam milagres e prodígios pelo nome de teu Santo Servo Jesus. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus.",
+    "trail": "igreja-primitiva",
+    "section": "ip-02-perseguicao",
+    "id": "igreja-primitiva-cam-ip-02-perseguicao-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 4:29-31",
+    "learningObjective": "Entender que o pedido é ousadia para anunciar, enquanto Deus estende a mão — não segurança primeiro.",
+    "evidence": [
+      "Atos 4:29",
+      "Atos 4:30",
+      "Atos 4:31"
+    ],
+    "type": "tap",
+    "question": "Em Atos 4:31, toque a palavra que falta em \"Tendo eles ___, tremeu o lugar onde estavam reunidos\"?",
+    "prompt": "Em Atos 4:31, toque a palavra que falta em \"Tendo eles ___, tremeu o lugar onde estavam reunidos\"?",
+    "cue": "Em Atos 4:31, toque a palavra que falta em \"Tendo eles ___, tremeu o lugar onde estavam reunidos\"?",
+    "feedbackCorrect": "Exato: o lugar tremeu depois que oraram.",
+    "feedbackWrong": {
+      "b": "Ameaças são o pano de fundo do pedido, não este verbo.",
+      "c": "Milagres pedem a mão de Deus, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "orado"
+      },
+      {
+        "id": "b",
+        "text": "ameaças"
+      },
+      {
+        "id": "c",
+        "text": "milagres"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Agora, Senhor, olha para as suas ameaças e concede aos teus servos que, com toda a liberdade, falem a tua palavra, enquanto tu estendes a mão para curar e para que se façam milagres e prodígios pelo nome de teu Santo Servo Jesus. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus.",
+    "trail": "igreja-primitiva",
+    "section": "ip-02-perseguicao",
+    "id": "igreja-primitiva-cam-ip-02-perseguicao-02",
+    "template": "Tendo eles ___, tremeu o lugar onde estavam reunidos"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 4:29-31",
+    "learningObjective": "Entender que o pedido é ousadia para anunciar, enquanto Deus estende a mão — não segurança primeiro.",
+    "evidence": [
+      "Atos 4:29",
+      "Atos 4:30",
+      "Atos 4:31"
+    ],
+    "type": "choice",
+    "question": "O que o pedido e a resposta de Atos 4:29-31 revelam?",
+    "prompt": "O que o pedido e a resposta de Atos 4:29-31 revelam?",
+    "cue": "O que o pedido e a resposta de Atos 4:29-31 revelam?",
+    "feedbackCorrect": "Certo: pedem liberdade para falar enquanto Deus estende a mão.",
+    "feedbackWrong": {
+      "b": "Não pedem proteção para deixar de anunciar.",
+      "c": "A oração abre a boca; não substitui a palavra.",
+      "d": "Os milagres vêm pelo nome de Jesus, não sem ele."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pedem liberdade para falar enquanto Deus estende a mão."
+      },
+      {
+        "id": "b",
+        "text": "Pedem proteção para não precisarem mais anunciar."
+      },
+      {
+        "id": "c",
+        "text": "A oração substitui qualquer necessidade de falar a palavra."
+      },
+      {
+        "id": "d",
+        "text": "Os milagres dispensam o nome de Jesus."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Agora, Senhor, olha para as suas ameaças e concede aos teus servos que, com toda a liberdade, falem a tua palavra, enquanto tu estendes a mão para curar e para que se façam milagres e prodígios pelo nome de teu Santo Servo Jesus. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus.",
+    "trail": "igreja-primitiva",
+    "section": "ip-02-perseguicao",
+    "id": "igreja-primitiva-cam-ip-02-perseguicao-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 4:29-31",
+    "learningObjective": "Entender que o pedido é ousadia para anunciar, enquanto Deus estende a mão — não segurança primeiro.",
+    "evidence": [
+      "Atos 4:29",
+      "Atos 4:30",
+      "Atos 4:31"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Atos 4:29-31?",
+    "prompt": "Como se encadeiam os eventos de Atos 4:29-31?",
+    "cue": "Como se encadeiam os eventos de Atos 4:29-31?",
+    "feedbackCorrect": "Certo: pedido de liberdade, mão de Deus, então Espírito e palavra.",
+    "feedbackWrong": {
+      "b": "O enchimento do Espírito vem depois da oração, no v. 31.",
+      "c": "Estender a mão para curar está no meio do pedido."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "concede aos teus servos que, com toda a liberdade, falem a tua palavra"
+      },
+      {
+        "id": "b",
+        "text": "enquanto tu estendes a mão para curar"
+      },
+      {
+        "id": "c",
+        "text": "todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Agora, Senhor, olha para as suas ameaças e concede aos teus servos que, com toda a liberdade, falem a tua palavra, enquanto tu estendes a mão para curar e para que se façam milagres e prodígios pelo nome de teu Santo Servo Jesus. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus.",
+    "trail": "igreja-primitiva",
+    "section": "ip-02-perseguicao",
+    "id": "igreja-primitiva-cam-ip-02-perseguicao-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 4:29-31",
+    "learningObjective": "Entender que o pedido é ousadia para anunciar, enquanto Deus estende a mão — não segurança primeiro.",
+    "evidence": [
+      "Atos 4:29",
+      "Atos 4:30",
+      "Atos 4:31"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"todos ficaram cheios do ___ Santo e falavam com liberdade a palavra de Deus\"",
+    "prompt": "Complete a frase: \"todos ficaram cheios do ___ Santo e falavam com liberdade a palavra de Deus\"",
+    "cue": "Complete a frase: \"todos ficaram cheios do ___ Santo e falavam com liberdade a palavra de Deus\"",
+    "feedbackCorrect": "Certo: ficaram cheios do Espírito Santo.",
+    "feedbackWrong": {
+      "b": "Senhor é quem olha as ameaças, não esta lacuna.",
+      "c": "Jesus é o Santo Servo, não o complemento aqui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito"
+      },
+      {
+        "id": "b",
+        "text": "Senhor"
+      },
+      {
+        "id": "c",
+        "text": "Jesus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Agora, Senhor, olha para as suas ameaças e concede aos teus servos que, com toda a liberdade, falem a tua palavra, enquanto tu estendes a mão para curar e para que se façam milagres e prodígios pelo nome de teu Santo Servo Jesus. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus.",
+    "trail": "igreja-primitiva",
+    "section": "ip-02-perseguicao",
+    "id": "igreja-primitiva-cam-ip-02-perseguicao-05",
+    "template": "todos ficaram cheios do ___ Santo e falavam com liberdade a palavra de Deus"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 4:29-31",
+    "learningObjective": "Entender que o pedido é ousadia para anunciar, enquanto Deus estende a mão — não segurança primeiro.",
+    "evidence": [
+      "Atos 4:29",
+      "Atos 4:30",
+      "Atos 4:31"
+    ],
+    "type": "connect",
+    "question": "O que Atos 4:29-31 comunica que se liga a este contexto?",
+    "prompt": "O que Atos 4:29-31 comunica que se liga a este contexto?",
+    "cue": "O que Atos 4:29-31 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: pedem falar, não fugir da ameaça.",
+    "feedbackWrong": {
+      "b": "O tremor confirma a oração; não cancela o anúncio.",
+      "c": "A liberdade pedida é para a palavra, não para calar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pedido de falar, não fugir"
+      },
+      {
+        "id": "b",
+        "text": "Tremor que cancela o anúncio"
+      },
+      {
+        "id": "c",
+        "text": "Liberdade para calar a palavra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Agora, Senhor, olha para as suas ameaças e concede aos teus servos que, com toda a liberdade, falem a tua palavra, enquanto tu estendes a mão para curar e para que se façam milagres e prodígios pelo nome de teu Santo Servo Jesus. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus.",
+    "trail": "igreja-primitiva",
+    "section": "ip-02-perseguicao",
+    "id": "igreja-primitiva-cam-ip-02-perseguicao-06",
+    "passageA": {
+      "ref": "Atos 4:31",
+      "text": "Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Sob ameaça, a igreja pede liberdade para falar — não segurança primeiro; o Espírito enche e a palavra sai."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 4:29-31",
+    "learningObjective": "Interpretar que o Espírito enche a igreja orante e a palavra sai com liberdade.",
+    "evidence": [
+      "Atos 4:29",
+      "Atos 4:30",
+      "Atos 4:31"
+    ],
+    "type": "true_false",
+    "question": "O Espírito enche a igreja que orou, e a palavra de Deus sai com liberdade.",
+    "prompt": "O Espírito enche a igreja que orou, e a palavra de Deus sai com liberdade.",
+    "cue": "O Espírito enche a igreja que orou, e a palavra de Deus sai com liberdade.",
+    "feedbackCorrect": "Certo: Atos 4:31 une enchimento e fala livre.",
+    "feedbackWrong": {
+      "false": "Depois de orar, ficam cheios e falam a palavra com liberdade."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Agora, Senhor, olha para as suas ameaças e concede aos teus servos que, com toda a liberdade, falem a tua palavra, enquanto tu estendes a mão para curar e para que se façam milagres e prodígios pelo nome de teu Santo Servo Jesus. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus.",
+    "trail": "igreja-primitiva",
+    "section": "ip-02-perseguicao",
+    "id": "igreja-primitiva-pro-ip-02-perseguicao-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 4:29-31",
+    "learningObjective": "Interpretar que o Espírito enche a igreja orante e a palavra sai com liberdade.",
+    "evidence": [
+      "Atos 4:29",
+      "Atos 4:30",
+      "Atos 4:31"
+    ],
+    "type": "tap",
+    "question": "Em Atos 4:31, toque a palavra que falta em \"falavam com liberdade a ___ de Deus\"?",
+    "prompt": "Em Atos 4:31, toque a palavra que falta em \"falavam com liberdade a ___ de Deus\"?",
+    "cue": "Em Atos 4:31, toque a palavra que falta em \"falavam com liberdade a ___ de Deus\"?",
+    "feedbackCorrect": "Exato: a palavra de Deus sai com liberdade.",
+    "feedbackWrong": {
+      "b": "Ameaças são o que o Senhor olha, não esta lacuna.",
+      "c": "Milagres pedem a mão de Deus no v. 30."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "palavra"
+      },
+      {
+        "id": "b",
+        "text": "ameaças"
+      },
+      {
+        "id": "c",
+        "text": "milagres"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Agora, Senhor, olha para as suas ameaças e concede aos teus servos que, com toda a liberdade, falem a tua palavra, enquanto tu estendes a mão para curar e para que se façam milagres e prodígios pelo nome de teu Santo Servo Jesus. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus.",
+    "trail": "igreja-primitiva",
+    "section": "ip-02-perseguicao",
+    "id": "igreja-primitiva-pro-ip-02-perseguicao-02",
+    "template": "falavam com liberdade a ___ de Deus"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 4:29-31",
+    "learningObjective": "Interpretar que o Espírito enche a igreja orante e a palavra sai com liberdade.",
+    "evidence": [
+      "Atos 4:29",
+      "Atos 4:30",
+      "Atos 4:31"
+    ],
+    "type": "choice",
+    "question": "Qual sentido Atos 4:29-31 autoriza sobre ousadia e ameaça?",
+    "prompt": "Qual sentido Atos 4:29-31 autoriza sobre ousadia e ameaça?",
+    "cue": "Qual sentido Atos 4:29-31 autoriza sobre ousadia e ameaça?",
+    "feedbackCorrect": "Certo: a ousadia vem do Espírito, não da ausência de perigo.",
+    "feedbackWrong": {
+      "b": "Eles falam depois de orar, ainda sob o horizonte das ameaças.",
+      "c": "O tremor não substitui o anúncio da palavra.",
+      "d": "Liberdade aqui é para falar, não para calar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A ousadia para falar vem do Espírito, não da ausência de ameaça."
+      },
+      {
+        "id": "b",
+        "text": "A igreja só fala quando o perigo já passou."
+      },
+      {
+        "id": "c",
+        "text": "O tremor do lugar substitui a necessidade de anunciar."
+      },
+      {
+        "id": "d",
+        "text": "Liberdade aqui significa licença para calar a palavra."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Agora, Senhor, olha para as suas ameaças e concede aos teus servos que, com toda a liberdade, falem a tua palavra, enquanto tu estendes a mão para curar e para que se façam milagres e prodígios pelo nome de teu Santo Servo Jesus. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus.",
+    "trail": "igreja-primitiva",
+    "section": "ip-02-perseguicao",
+    "id": "igreja-primitiva-pro-ip-02-perseguicao-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 4:29-31",
+    "learningObjective": "Interpretar que o Espírito enche a igreja orante e a palavra sai com liberdade.",
+    "evidence": [
+      "Atos 4:29",
+      "Atos 4:30",
+      "Atos 4:31"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Atos 4:29-31?",
+    "prompt": "Qual sequência revela o sentido de Atos 4:29-31?",
+    "cue": "Qual sequência revela o sentido de Atos 4:29-31?",
+    "feedbackCorrect": "Certo: ameaça reconhecida, pedido de fala, então Espírito e palavra.",
+    "feedbackWrong": {
+      "b": "O Espírito e a fala livre são a resposta, não o primeiro passo.",
+      "c": "O sentido começa olhando as ameaças, não ignorando-as."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Agora, Senhor, olha para as suas ameaças"
+      },
+      {
+        "id": "b",
+        "text": "concede aos teus servos que, com toda a liberdade, falem a tua palavra"
+      },
+      {
+        "id": "c",
+        "text": "todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Agora, Senhor, olha para as suas ameaças e concede aos teus servos que, com toda a liberdade, falem a tua palavra, enquanto tu estendes a mão para curar e para que se façam milagres e prodígios pelo nome de teu Santo Servo Jesus. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus.",
+    "trail": "igreja-primitiva",
+    "section": "ip-02-perseguicao",
+    "id": "igreja-primitiva-pro-ip-02-perseguicao-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 4:29-31",
+    "learningObjective": "Interpretar que o Espírito enche a igreja orante e a palavra sai com liberdade.",
+    "evidence": [
+      "Atos 4:29",
+      "Atos 4:30",
+      "Atos 4:31"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"pelo nome de teu Santo ___ Jesus\"",
+    "prompt": "Complete a frase: \"pelo nome de teu Santo ___ Jesus\"",
+    "cue": "Complete a frase: \"pelo nome de teu Santo ___ Jesus\"",
+    "feedbackCorrect": "Certo: milagres e prodígios pelo nome do Santo Servo Jesus.",
+    "feedbackWrong": {
+      "b": "Senhor é quem olha as ameaças, não este título.",
+      "c": "Espírito enche a igreja no v. 31, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Servo"
+      },
+      {
+        "id": "b",
+        "text": "Senhor"
+      },
+      {
+        "id": "c",
+        "text": "Espírito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Agora, Senhor, olha para as suas ameaças e concede aos teus servos que, com toda a liberdade, falem a tua palavra, enquanto tu estendes a mão para curar e para que se façam milagres e prodígios pelo nome de teu Santo Servo Jesus. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus.",
+    "trail": "igreja-primitiva",
+    "section": "ip-02-perseguicao",
+    "id": "igreja-primitiva-pro-ip-02-perseguicao-05",
+    "template": "pelo nome de teu Santo ___ Jesus"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 4:29-31",
+    "learningObjective": "Interpretar que o Espírito enche a igreja orante e a palavra sai com liberdade.",
+    "evidence": [
+      "Atos 4:29",
+      "Atos 4:30",
+      "Atos 4:31"
+    ],
+    "type": "connect",
+    "question": "O que Atos 4:31 comunica que se liga a este contexto?",
+    "prompt": "O que Atos 4:31 comunica que se liga a este contexto?",
+    "cue": "O que Atos 4:31 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o Espírito enche e a palavra sai.",
+    "feedbackWrong": {
+      "b": "O enchimento não é para silêncio da igreja.",
+      "c": "A oração prepara a fala; não a substitui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito enche, palavra sai"
+      },
+      {
+        "id": "b",
+        "text": "Enchimento para ficar calados"
+      },
+      {
+        "id": "c",
+        "text": "Oração no lugar do anúncio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Agora, Senhor, olha para as suas ameaças e concede aos teus servos que, com toda a liberdade, falem a tua palavra, enquanto tu estendes a mão para curar e para que se façam milagres e prodígios pelo nome de teu Santo Servo Jesus. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus.",
+    "trail": "igreja-primitiva",
+    "section": "ip-02-perseguicao",
+    "id": "igreja-primitiva-pro-ip-02-perseguicao-06",
+    "passageA": {
+      "ref": "Atos 4:31",
+      "text": "todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Sob ameaça, a igreja pede liberdade para falar — não segurança primeiro; o Espírito enche e a palavra sai."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 8:4",
+    "learningObjective": "Reconhecer que os dispersos iam por toda parte pregando a palavra.",
+    "evidence": [
+      "Atos 8:4"
+    ],
+    "type": "true_false",
+    "question": "Os que haviam sido dispersos iam por toda parte pregando a palavra.",
+    "prompt": "Os que haviam sido dispersos iam por toda parte pregando a palavra.",
+    "cue": "Os que haviam sido dispersos iam por toda parte pregando a palavra.",
+    "feedbackCorrect": "Certo: é o que Atos 8:4 afirma.",
+    "feedbackWrong": {
+      "false": "Releia Atos 8:4: os dispersos pregam por toda parte."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-03-expansao",
+    "id": "igreja-primitiva-sem-ip-03-expansao-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 8:4",
+    "learningObjective": "Reconhecer que os dispersos iam por toda parte pregando a palavra.",
+    "evidence": [
+      "Atos 8:4"
+    ],
+    "type": "tap",
+    "question": "Em Atos 8:4, toque a palavra que falta em \"Os que, porém, haviam sido ___ iam por toda parte pregando a palavra\"?",
+    "prompt": "Em Atos 8:4, toque a palavra que falta em \"Os que, porém, haviam sido ___ iam por toda parte pregando a palavra\"?",
+    "cue": "Em Atos 8:4, toque a palavra que falta em \"Os que, porém, haviam sido ___ iam por toda parte pregando a palavra\"?",
+    "feedbackCorrect": "Exato: os dispersos é quem prega.",
+    "feedbackWrong": {
+      "b": "Palavra é o que pregam, não quem foi espalhado.",
+      "c": "Parte descreve o alcance, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "dispersos"
+      },
+      {
+        "id": "b",
+        "text": "palavra"
+      },
+      {
+        "id": "c",
+        "text": "parte"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-03-expansao",
+    "id": "igreja-primitiva-sem-ip-03-expansao-02",
+    "template": "Os que, porém, haviam sido ___ iam por toda parte pregando a palavra"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 8:4",
+    "learningObjective": "Reconhecer que os dispersos iam por toda parte pregando a palavra.",
+    "evidence": [
+      "Atos 8:4"
+    ],
+    "type": "choice",
+    "question": "Qual fato Atos 8:4 afirma sobre os que foram dispersos?",
+    "prompt": "Qual fato Atos 8:4 afirma sobre os que foram dispersos?",
+    "cue": "Qual fato Atos 8:4 afirma sobre os que foram dispersos?",
+    "feedbackCorrect": "Certo: iam por toda parte pregando a palavra.",
+    "feedbackWrong": {
+      "b": "O texto não os mostra calados até voltar.",
+      "c": "A dispersão não apaga a pregação.",
+      "d": "O versículo atribui a pregação aos dispersos, não só aos apóstolos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Iam por toda parte pregando a palavra."
+      },
+      {
+        "id": "b",
+        "text": "Ficaram calados até voltar a Jerusalém."
+      },
+      {
+        "id": "c",
+        "text": "A dispersão apagou a pregação."
+      },
+      {
+        "id": "d",
+        "text": "Só os apóstolos pregavam, nunca os dispersos."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-03-expansao",
+    "id": "igreja-primitiva-sem-ip-03-expansao-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 8:4",
+    "learningObjective": "Reconhecer que os dispersos iam por toda parte pregando a palavra.",
+    "evidence": [
+      "Atos 8:4"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Atos 8:4?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Atos 8:4?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Atos 8:4?",
+    "feedbackCorrect": "Certo: dispersos, por toda parte, pregando a palavra.",
+    "feedbackWrong": {
+      "b": "Pregar a palavra fecha o versículo, não o abre.",
+      "c": "O deslocamento vem depois de terem sido dispersos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Os que, porém, haviam sido dispersos"
+      },
+      {
+        "id": "b",
+        "text": "iam por toda parte"
+      },
+      {
+        "id": "c",
+        "text": "pregando a palavra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-03-expansao",
+    "id": "igreja-primitiva-sem-ip-03-expansao-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 8:4",
+    "learningObjective": "Reconhecer que os dispersos iam por toda parte pregando a palavra.",
+    "evidence": [
+      "Atos 8:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"iam por toda parte ___ a palavra\"",
+    "prompt": "Complete a frase: \"iam por toda parte ___ a palavra\"",
+    "cue": "Complete a frase: \"iam por toda parte ___ a palavra\"",
+    "feedbackCorrect": "Certo: iam pregando a palavra.",
+    "feedbackWrong": {
+      "b": "Dispersos descreve quem eles eram, não este verbo.",
+      "c": "Haviam é o auxiliar anterior, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "pregando"
+      },
+      {
+        "id": "b",
+        "text": "dispersos"
+      },
+      {
+        "id": "c",
+        "text": "haviam"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-03-expansao",
+    "id": "igreja-primitiva-sem-ip-03-expansao-05",
+    "template": "iam por toda parte ___ a palavra"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 8:4",
+    "learningObjective": "Reconhecer que os dispersos iam por toda parte pregando a palavra.",
+    "evidence": [
+      "Atos 8:4"
+    ],
+    "type": "connect",
+    "question": "O que Atos 8:4 comunica que se liga a este contexto?",
+    "prompt": "O que Atos 8:4 comunica que se liga a este contexto?",
+    "cue": "O que Atos 8:4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a dispersão vira pregação.",
+    "feedbackWrong": {
+      "b": "O texto não trata a dispersão como fim da palavra.",
+      "c": "Eles pregam por toda parte, não só no mesmo lugar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Dispersão vira pregação"
+      },
+      {
+        "id": "b",
+        "text": "Dispersão apaga a palavra"
+      },
+      {
+        "id": "c",
+        "text": "Pregação só no mesmo lugar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-03-expansao",
+    "id": "igreja-primitiva-sem-ip-03-expansao-06",
+    "passageA": {
+      "ref": "Atos 8:4",
+      "text": "Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O evangelho se espalha na dispersão: a perseguição espalha pregadores, não apaga a palavra."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 8:4",
+    "learningObjective": "Entender que a perseguição espalha pregadores; a dispersão não apaga o anúncio.",
+    "evidence": [
+      "Atos 8:4"
+    ],
+    "type": "true_false",
+    "question": "A dispersão não apaga a palavra: os espalhados pregam por toda parte.",
+    "prompt": "A dispersão não apaga a palavra: os espalhados pregam por toda parte.",
+    "cue": "A dispersão não apaga a palavra: os espalhados pregam por toda parte.",
+    "feedbackCorrect": "Certo: Atos 8:4 une dispersão e pregação.",
+    "feedbackWrong": {
+      "false": "O versículo diz que os dispersos iam pregando, não calados."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-03-expansao",
+    "id": "igreja-primitiva-cam-ip-03-expansao-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 8:4",
+    "learningObjective": "Entender que a perseguição espalha pregadores; a dispersão não apaga o anúncio.",
+    "evidence": [
+      "Atos 8:4"
+    ],
+    "type": "tap",
+    "question": "Em Atos 8:4, toque a palavra que falta em \"iam por toda ___ pregando a palavra\"?",
+    "prompt": "Em Atos 8:4, toque a palavra que falta em \"iam por toda ___ pregando a palavra\"?",
+    "cue": "Em Atos 8:4, toque a palavra que falta em \"iam por toda ___ pregando a palavra\"?",
+    "feedbackCorrect": "Exato: iam por toda parte.",
+    "feedbackWrong": {
+      "b": "\"Os\" abre o versículo, não esta lacuna.",
+      "c": "Haviam é o auxiliar de \"sido dispersos\"."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "parte"
+      },
+      {
+        "id": "b",
+        "text": "Os"
+      },
+      {
+        "id": "c",
+        "text": "haviam"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-03-expansao",
+    "id": "igreja-primitiva-cam-ip-03-expansao-02",
+    "template": "iam por toda ___ pregando a palavra"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 8:4",
+    "learningObjective": "Entender que a perseguição espalha pregadores; a dispersão não apaga o anúncio.",
+    "evidence": [
+      "Atos 8:4"
+    ],
+    "type": "choice",
+    "question": "O que a dispersão produz neste versículo?",
+    "prompt": "O que a dispersão produz neste versículo?",
+    "cue": "O que a dispersão produz neste versículo?",
+    "feedbackCorrect": "Certo: espalha pregadores, não silêncio.",
+    "feedbackWrong": {
+      "b": "A palavra não espera a paz para avançar.",
+      "c": "Não há recuo sem anúncio: eles pregam.",
+      "d": "O alcance é por toda parte, não só o templo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pregadores espalhados, não silêncio."
+      },
+      {
+        "id": "b",
+        "text": "O fim da palavra até a paz voltar."
+      },
+      {
+        "id": "c",
+        "text": "Um recuo estratégico sem nenhum anúncio."
+      },
+      {
+        "id": "d",
+        "text": "Pregação só no templo, nunca fora."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-03-expansao",
+    "id": "igreja-primitiva-cam-ip-03-expansao-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 8:4",
+    "learningObjective": "Entender que a perseguição espalha pregadores; a dispersão não apaga o anúncio.",
+    "evidence": [
+      "Atos 8:4"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Atos 8:4?",
+    "prompt": "Como se encadeiam os eventos de Atos 8:4?",
+    "cue": "Como se encadeiam os eventos de Atos 8:4?",
+    "feedbackCorrect": "Certo: primeiro a dispersão, depois o deslocamento, então a pregação.",
+    "feedbackWrong": {
+      "b": "Pregar fecha o movimento, não o inicia.",
+      "c": "Ir por toda parte vem depois de terem sido dispersos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "haviam sido dispersos"
+      },
+      {
+        "id": "b",
+        "text": "iam por toda parte"
+      },
+      {
+        "id": "c",
+        "text": "pregando a palavra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-03-expansao",
+    "id": "igreja-primitiva-cam-ip-03-expansao-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 8:4",
+    "learningObjective": "Entender que a perseguição espalha pregadores; a dispersão não apaga o anúncio.",
+    "evidence": [
+      "Atos 8:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Os que, porém, haviam sido dispersos iam por ___ parte pregando a palavra\"",
+    "prompt": "Complete a frase: \"Os que, porém, haviam sido dispersos iam por ___ parte pregando a palavra\"",
+    "cue": "Complete a frase: \"Os que, porém, haviam sido dispersos iam por ___ parte pregando a palavra\"",
+    "feedbackCorrect": "Certo: iam por toda parte.",
+    "feedbackWrong": {
+      "b": "Palavra é o objeto da pregação, não este adjetivo.",
+      "c": "Sido acompanha \"dispersos\", não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "toda"
+      },
+      {
+        "id": "b",
+        "text": "palavra"
+      },
+      {
+        "id": "c",
+        "text": "sido"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-03-expansao",
+    "id": "igreja-primitiva-cam-ip-03-expansao-05",
+    "template": "Os que, porém, haviam sido dispersos iam por ___ parte pregando a palavra"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 8:4",
+    "learningObjective": "Entender que a perseguição espalha pregadores; a dispersão não apaga o anúncio.",
+    "evidence": [
+      "Atos 8:4"
+    ],
+    "type": "connect",
+    "question": "O que Atos 8:4 comunica que se liga a este contexto?",
+    "prompt": "O que Atos 8:4 comunica que se liga a este contexto?",
+    "cue": "O que Atos 8:4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a perseguição espalha pregadores.",
+    "feedbackWrong": {
+      "b": "O versículo não descreve um recuo sem testemunho.",
+      "c": "A palavra não fica presa ao lugar de origem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Perseguição espalha pregadores"
+      },
+      {
+        "id": "b",
+        "text": "Perseguição manda calar"
+      },
+      {
+        "id": "c",
+        "text": "Palavra presa ao lugar de origem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-03-expansao",
+    "id": "igreja-primitiva-cam-ip-03-expansao-06",
+    "passageA": {
+      "ref": "Atos 8:4",
+      "text": "Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O evangelho se espalha na dispersão: a perseguição espalha pregadores, não apaga a palavra."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 8:4",
+    "learningObjective": "Interpretar que o evangelho avança na dispersão: o espalhamento vira missão.",
+    "evidence": [
+      "Atos 8:4"
+    ],
+    "type": "true_false",
+    "question": "A perseguição espalha pregadores; o evangelho avança na dispersão, não se apaga.",
+    "prompt": "A perseguição espalha pregadores; o evangelho avança na dispersão, não se apaga.",
+    "cue": "A perseguição espalha pregadores; o evangelho avança na dispersão, não se apaga.",
+    "feedbackCorrect": "Certo: os dispersos pregam por toda parte.",
+    "feedbackWrong": {
+      "false": "Atos 8:4 mostra avanço da palavra na dispersão, não extinção."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-03-expansao",
+    "id": "igreja-primitiva-pro-ip-03-expansao-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 8:4",
+    "learningObjective": "Interpretar que o evangelho avança na dispersão: o espalhamento vira missão.",
+    "evidence": [
+      "Atos 8:4"
+    ],
+    "type": "tap",
+    "question": "Em Atos 8:4, toque a palavra que falta em \"Os que, porém, haviam sido dispersos iam por toda parte ___ a palavra\"?",
+    "prompt": "Em Atos 8:4, toque a palavra que falta em \"Os que, porém, haviam sido dispersos iam por toda parte ___ a palavra\"?",
+    "cue": "Em Atos 8:4, toque a palavra que falta em \"Os que, porém, haviam sido dispersos iam por toda parte ___ a palavra\"?",
+    "feedbackCorrect": "Exato: iam pregando a palavra.",
+    "feedbackWrong": {
+      "b": "Dispersos descreve a condição, não o verbo desta lacuna.",
+      "c": "Porém é a adversativa inicial, não o que falta aqui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "pregando"
+      },
+      {
+        "id": "b",
+        "text": "dispersos"
+      },
+      {
+        "id": "c",
+        "text": "porém"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-03-expansao",
+    "id": "igreja-primitiva-pro-ip-03-expansao-02",
+    "template": "Os que, porém, haviam sido dispersos iam por toda parte ___ a palavra"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 8:4",
+    "learningObjective": "Interpretar que o evangelho avança na dispersão: o espalhamento vira missão.",
+    "evidence": [
+      "Atos 8:4"
+    ],
+    "type": "choice",
+    "question": "Qual leitura Atos 8:4 autoriza sobre o avanço do evangelho?",
+    "prompt": "Qual leitura Atos 8:4 autoriza sobre o avanço do evangelho?",
+    "cue": "Qual leitura Atos 8:4 autoriza sobre o avanço do evangelho?",
+    "feedbackCorrect": "Certo: o evangelho se espalha quando o povo é disperso.",
+    "feedbackWrong": {
+      "b": "A dispersão não prova falha da palavra; ela é pregada.",
+      "c": "O texto não restringe a igreja a lugares sem perseguição.",
+      "d": "Pregar não depende de todos ficarem no mesmo lugar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O evangelho se espalha quando o povo é disperso."
+      },
+      {
+        "id": "b",
+        "text": "A dispersão prova que a palavra falhou."
+      },
+      {
+        "id": "c",
+        "text": "Só há igreja onde ninguém é perseguido."
+      },
+      {
+        "id": "d",
+        "text": "Pregar a palavra depende de ficar todos no mesmo lugar."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-03-expansao",
+    "id": "igreja-primitiva-pro-ip-03-expansao-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 8:4",
+    "learningObjective": "Interpretar que o evangelho avança na dispersão: o espalhamento vira missão.",
+    "evidence": [
+      "Atos 8:4"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Atos 8:4?",
+    "prompt": "Qual sequência revela o sentido de Atos 8:4?",
+    "cue": "Qual sequência revela o sentido de Atos 8:4?",
+    "feedbackCorrect": "Certo: dispersão, alcance e pregação revelam o avanço da palavra.",
+    "feedbackWrong": {
+      "b": "O sentido não começa pela pregação sem a dispersão.",
+      "c": "Por toda parte é o meio, não o desfecho."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Os que, porém, haviam sido dispersos"
+      },
+      {
+        "id": "b",
+        "text": "iam por toda parte"
+      },
+      {
+        "id": "c",
+        "text": "pregando a palavra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-03-expansao",
+    "id": "igreja-primitiva-pro-ip-03-expansao-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 8:4",
+    "learningObjective": "Interpretar que o evangelho avança na dispersão: o espalhamento vira missão.",
+    "evidence": [
+      "Atos 8:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"iam por toda parte pregando a ___\"",
+    "prompt": "Complete a frase: \"iam por toda parte pregando a ___\"",
+    "cue": "Complete a frase: \"iam por toda parte pregando a ___\"",
+    "feedbackCorrect": "Certo: pregavam a palavra.",
+    "feedbackWrong": {
+      "b": "Parte descreve o alcance, não o objeto da pregação.",
+      "c": "Dispersos descreve quem prega, não o que pregam."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "palavra"
+      },
+      {
+        "id": "b",
+        "text": "parte"
+      },
+      {
+        "id": "c",
+        "text": "dispersos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-03-expansao",
+    "id": "igreja-primitiva-pro-ip-03-expansao-05",
+    "template": "iam por toda parte pregando a ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 8:4",
+    "learningObjective": "Interpretar que o evangelho avança na dispersão: o espalhamento vira missão.",
+    "evidence": [
+      "Atos 8:4"
+    ],
+    "type": "connect",
+    "question": "O que Atos 8:4 comunica que se liga a este contexto?",
+    "prompt": "O que Atos 8:4 comunica que se liga a este contexto?",
+    "cue": "O que Atos 8:4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o evangelho corre na dispersão.",
+    "feedbackWrong": {
+      "b": "O versículo não trata a perseguição como vitória do silêncio.",
+      "c": "A palavra não fica apagada quando o povo se espalha."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Evangelho na dispersão"
+      },
+      {
+        "id": "b",
+        "text": "Perseguição como vitória do silêncio"
+      },
+      {
+        "id": "c",
+        "text": "Palavra apagada ao se espalhar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-03-expansao",
+    "id": "igreja-primitiva-pro-ip-03-expansao-06",
+    "passageA": {
+      "ref": "Atos 8:4",
+      "text": "Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O evangelho se espalha na dispersão: a perseguição espalha pregadores, não apaga a palavra."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 2:42; 4:31; 8:4",
+    "learningObjective": "Reunir vida comum na Palavra, liberdade para falar e pregação na dispersão.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 4:31",
+      "Atos 8:4"
+    ],
+    "type": "true_false",
+    "question": "A igreja persevera na doutrina e na comunhão, fala com liberdade depois de orar, e os dispersos pregam a palavra.",
+    "prompt": "A igreja persevera na doutrina e na comunhão, fala com liberdade depois de orar, e os dispersos pregam a palavra.",
+    "cue": "A igreja persevera na doutrina e na comunhão, fala com liberdade depois de orar, e os dispersos pregam a palavra.",
+    "feedbackCorrect": "Certo: os três trechos afirmam esses fatos juntos.",
+    "feedbackWrong": {
+      "false": "Atos 2:42, 4:31 e 8:4 sustentam exatamente isso."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus. Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-04-desafio",
+    "id": "igreja-primitiva-sem-ip-04-desafio-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 2:42; 4:31; 8:4",
+    "learningObjective": "Reunir vida comum na Palavra, liberdade para falar e pregação na dispersão.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 4:31",
+      "Atos 8:4"
+    ],
+    "type": "tap",
+    "question": "Em Atos 2:42, toque a palavra que falta em \"e perseveravam na ___ dos apóstolos e na comunhão\"?",
+    "prompt": "Em Atos 2:42, toque a palavra que falta em \"e perseveravam na ___ dos apóstolos e na comunhão\"?",
+    "cue": "Em Atos 2:42, toque a palavra que falta em \"e perseveravam na ___ dos apóstolos e na comunhão\"?",
+    "feedbackCorrect": "Exato: perseveravam na doutrina dos apóstolos.",
+    "feedbackWrong": {
+      "b": "Liberdade descreve a fala de Atos 4:31, não esta lacuna.",
+      "c": "Dispersos vem de Atos 8:4."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "doutrina"
+      },
+      {
+        "id": "b",
+        "text": "liberdade"
+      },
+      {
+        "id": "c",
+        "text": "dispersos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus. Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-04-desafio",
+    "id": "igreja-primitiva-sem-ip-04-desafio-02",
+    "template": "e perseveravam na ___ dos apóstolos e na comunhão"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 2:42; 4:31; 8:4",
+    "learningObjective": "Reunir vida comum na Palavra, liberdade para falar e pregação na dispersão.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 4:31",
+      "Atos 8:4"
+    ],
+    "type": "choice",
+    "question": "Qual fato os três trechos afirmam juntos sobre a igreja?",
+    "prompt": "Qual fato os três trechos afirmam juntos sobre a igreja?",
+    "cue": "Qual fato os três trechos afirmam juntos sobre a igreja?",
+    "feedbackCorrect": "Certo: vida comum, liberdade para falar e pregação na dispersão.",
+    "feedbackWrong": {
+      "b": "Atos 4:31 e 8:4 mostram fala e pregação, não só reunião.",
+      "c": "A oração em 4:31 desemboca em falar a palavra.",
+      "d": "Os dispersos de 8:4 iam pregando, não deixavam de pregar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Vida comum na Palavra, liberdade para falar e pregação na dispersão."
+      },
+      {
+        "id": "b",
+        "text": "A igreja só se reúne e nunca fala em público."
+      },
+      {
+        "id": "c",
+        "text": "A oração substitui qualquer pregação da palavra."
+      },
+      {
+        "id": "d",
+        "text": "Os dispersos deixam de pregar quando saem de Jerusalém."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus. Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-04-desafio",
+    "id": "igreja-primitiva-sem-ip-04-desafio-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 2:42; 4:31; 8:4",
+    "learningObjective": "Reunir vida comum na Palavra, liberdade para falar e pregação na dispersão.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 4:31",
+      "Atos 8:4"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Atos 2:42; 4:31; 8:4?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Atos 2:42; 4:31; 8:4?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Atos 2:42; 4:31; 8:4?",
+    "feedbackCorrect": "Certo: comunhão na doutrina, fala livre, depois pregação na dispersão.",
+    "feedbackWrong": {
+      "b": "A pregação dos dispersos é o terceiro eixo, não o primeiro.",
+      "c": "A liberdade da palavra em 4:31 vem depois da vida comum de 2:42."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "perseveravam na doutrina dos apóstolos e na comunhão"
+      },
+      {
+        "id": "b",
+        "text": "todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus. Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-04-desafio",
+    "id": "igreja-primitiva-sem-ip-04-desafio-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 2:42; 4:31; 8:4",
+    "learningObjective": "Reunir vida comum na Palavra, liberdade para falar e pregação na dispersão.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 4:31",
+      "Atos 8:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"falavam com liberdade a palavra de ___\"",
+    "prompt": "Complete a frase: \"falavam com liberdade a palavra de ___\"",
+    "cue": "Complete a frase: \"falavam com liberdade a palavra de ___\"",
+    "feedbackCorrect": "Certo: falavam a palavra de Deus.",
+    "feedbackWrong": {
+      "b": "Apóstolos pertence à doutrina de 2:42, não a esta lacuna.",
+      "c": "Dispersos descreve quem prega em 8:4."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus"
+      },
+      {
+        "id": "b",
+        "text": "apóstolos"
+      },
+      {
+        "id": "c",
+        "text": "dispersos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus. Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-04-desafio",
+    "id": "igreja-primitiva-sem-ip-04-desafio-05",
+    "template": "falavam com liberdade a palavra de ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 2:42; 4:31; 8:4",
+    "learningObjective": "Reunir vida comum na Palavra, liberdade para falar e pregação na dispersão.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 4:31",
+      "Atos 8:4"
+    ],
+    "type": "connect",
+    "question": "O que Atos 2:42; 4:31; 8:4 comunicam que se liga a este contexto?",
+    "prompt": "O que Atos 2:42; 4:31; 8:4 comunicam que se liga a este contexto?",
+    "cue": "O que Atos 2:42; 4:31; 8:4 comunicam que se liga a este contexto?",
+    "feedbackCorrect": "Certo: comum, ousada e espalhada.",
+    "feedbackWrong": {
+      "b": "Os textos não descrevem uma igreja parada só no templo.",
+      "c": "A dispersão não cancela a vida comum da Palavra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Comum, ousada e espalhada"
+      },
+      {
+        "id": "b",
+        "text": "Igreja parada só no templo"
+      },
+      {
+        "id": "c",
+        "text": "Dispersão que cancela a comunhão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus. Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-04-desafio",
+    "id": "igreja-primitiva-sem-ip-04-desafio-06",
+    "passageA": {
+      "ref": "Atos 2:42; 4:31; 8:4",
+      "text": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus. Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Igreja em movimento: comum na Palavra, ousada na perseguição, espalhada na pregação."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 2:42; 4:31; 8:4",
+    "learningObjective": "Entender o movimento da igreja: formada junta, ousada sob ameaça, espalhada pregando.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 4:31",
+      "Atos 8:4"
+    ],
+    "type": "true_false",
+    "question": "Os três textos mostram igreja em movimento: comum na Palavra, ousada sob ameaça, espalhada na pregação.",
+    "prompt": "Os três textos mostram igreja em movimento: comum na Palavra, ousada sob ameaça, espalhada na pregação.",
+    "cue": "Os três textos mostram igreja em movimento: comum na Palavra, ousada sob ameaça, espalhada na pregação.",
+    "feedbackCorrect": "Certo: 2:42, 4:31 e 8:4 encadeiam esses três eixos.",
+    "feedbackWrong": {
+      "false": "Os três trechos juntos descrevem exatamente esse movimento."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus. Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-04-desafio",
+    "id": "igreja-primitiva-cam-ip-04-desafio-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 2:42; 4:31; 8:4",
+    "learningObjective": "Entender o movimento da igreja: formada junta, ousada sob ameaça, espalhada pregando.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 4:31",
+      "Atos 8:4"
+    ],
+    "type": "tap",
+    "question": "Em Atos 4:31, toque a palavra que falta em \"todos ficaram cheios do ___ Santo\"?",
+    "prompt": "Em Atos 4:31, toque a palavra que falta em \"todos ficaram cheios do ___ Santo\"?",
+    "cue": "Em Atos 4:31, toque a palavra que falta em \"todos ficaram cheios do ___ Santo\"?",
+    "feedbackCorrect": "Exato: ficaram cheios do Espírito Santo.",
+    "feedbackWrong": {
+      "b": "Doutrina pertence a Atos 2:42, não a esta lacuna.",
+      "c": "Pão é do partir do pão em 2:42."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito"
+      },
+      {
+        "id": "b",
+        "text": "doutrina"
+      },
+      {
+        "id": "c",
+        "text": "pão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus. Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-04-desafio",
+    "id": "igreja-primitiva-cam-ip-04-desafio-02",
+    "template": "todos ficaram cheios do ___ Santo"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 2:42; 4:31; 8:4",
+    "learningObjective": "Entender o movimento da igreja: formada junta, ousada sob ameaça, espalhada pregando.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 4:31",
+      "Atos 8:4"
+    ],
+    "type": "choice",
+    "question": "Como os três trechos se encadeiam na vida da igreja?",
+    "prompt": "Como os três trechos se encadeiam na vida da igreja?",
+    "cue": "Como os três trechos se encadeiam na vida da igreja?",
+    "feedbackCorrect": "Certo: formados juntos, ousados para falar, espalhados pregando.",
+    "feedbackWrong": {
+      "b": "A ordem dos textos é comunhão, ousadia e então dispersão.",
+      "c": "A liberdade para falar não dispensa perseverar na doutrina.",
+      "d": "Pregar na dispersão não anula o partir do pão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Formados juntos, ousados para falar, espalhados pregando."
+      },
+      {
+        "id": "b",
+        "text": "Primeiro a dispersão, depois a doutrina, nunca a oração."
+      },
+      {
+        "id": "c",
+        "text": "A liberdade para falar dispensa perseverar na doutrina."
+      },
+      {
+        "id": "d",
+        "text": "Pregar na dispersão anula a comunhão do partir do pão."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus. Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-04-desafio",
+    "id": "igreja-primitiva-cam-ip-04-desafio-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 2:42; 4:31; 8:4",
+    "learningObjective": "Entender o movimento da igreja: formada junta, ousada sob ameaça, espalhada pregando.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 4:31",
+      "Atos 8:4"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Atos 2:42; 4:31; 8:4?",
+    "prompt": "Como se encadeiam os eventos de Atos 2:42; 4:31; 8:4?",
+    "cue": "Como se encadeiam os eventos de Atos 2:42; 4:31; 8:4?",
+    "feedbackCorrect": "Certo: doutrina e comunhão, Espírito e liberdade, depois dispersos pregando.",
+    "feedbackWrong": {
+      "b": "Os dispersos vêm no terceiro eixo, Atos 8:4.",
+      "c": "O Espírito e a liberdade estão em 4:31, no meio."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações"
+      },
+      {
+        "id": "b",
+        "text": "Tendo eles orado, tremeu o lugar onde estavam reunidos"
+      },
+      {
+        "id": "c",
+        "text": "iam por toda parte pregando a palavra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus. Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-04-desafio",
+    "id": "igreja-primitiva-cam-ip-04-desafio-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 2:42; 4:31; 8:4",
+    "learningObjective": "Entender o movimento da igreja: formada junta, ousada sob ameaça, espalhada pregando.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 4:31",
+      "Atos 8:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Os que, porém, haviam sido ___ iam por toda parte pregando a palavra\"",
+    "prompt": "Complete a frase: \"Os que, porém, haviam sido ___ iam por toda parte pregando a palavra\"",
+    "cue": "Complete a frase: \"Os que, porém, haviam sido ___ iam por toda parte pregando a palavra\"",
+    "feedbackCorrect": "Certo: os dispersos pregam por toda parte.",
+    "feedbackWrong": {
+      "b": "Orações fecham Atos 2:42, não esta lacuna.",
+      "c": "Reunidos descreve o lugar de 4:31."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "dispersos"
+      },
+      {
+        "id": "b",
+        "text": "orações"
+      },
+      {
+        "id": "c",
+        "text": "reunidos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus. Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-04-desafio",
+    "id": "igreja-primitiva-cam-ip-04-desafio-05",
+    "template": "Os que, porém, haviam sido ___ iam por toda parte pregando a palavra"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 2:42; 4:31; 8:4",
+    "learningObjective": "Entender o movimento da igreja: formada junta, ousada sob ameaça, espalhada pregando.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 4:31",
+      "Atos 8:4"
+    ],
+    "type": "connect",
+    "question": "O que Atos 2:42; 4:31; 8:4 comunicam que se liga a este contexto?",
+    "prompt": "O que Atos 2:42; 4:31; 8:4 comunicam que se liga a este contexto?",
+    "cue": "O que Atos 2:42; 4:31; 8:4 comunicam que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a Palavra une, a ousadia fala, a dispersão prega.",
+    "feedbackWrong": {
+      "b": "A ousadia não cancela a vida comum.",
+      "c": "A dispersão não substitui a doutrina; a leva adiante."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Une, fala e se espalha"
+      },
+      {
+        "id": "b",
+        "text": "Ousadia que cancela a comunhão"
+      },
+      {
+        "id": "c",
+        "text": "Dispersão no lugar da doutrina"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus. Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-04-desafio",
+    "id": "igreja-primitiva-cam-ip-04-desafio-06",
+    "passageA": {
+      "ref": "Atos 2:42; 4:31; 8:4",
+      "text": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus. Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Igreja em movimento: comum na Palavra, ousada na perseguição, espalhada na pregação."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 2:42; 4:31; 8:4",
+    "learningObjective": "Interpretar que a igreja de Atos não se fecha em culto isolado: persevera, fala e se espalha.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 4:31",
+      "Atos 8:4"
+    ],
+    "type": "true_false",
+    "question": "A igreja de Atos não se fecha em culto isolado: persevera junta, pede liberdade para falar e prega na dispersão.",
+    "prompt": "A igreja de Atos não se fecha em culto isolado: persevera junta, pede liberdade para falar e prega na dispersão.",
+    "cue": "A igreja de Atos não se fecha em culto isolado: persevera junta, pede liberdade para falar e prega na dispersão.",
+    "feedbackCorrect": "Certo: os três textos impedem reduzir a igreja a um culto isolado.",
+    "feedbackWrong": {
+      "false": "2:42, 4:31 e 8:4 mostram povo, ousadia e missão juntos."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus. Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-04-desafio",
+    "id": "igreja-primitiva-pro-ip-04-desafio-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 2:42; 4:31; 8:4",
+    "learningObjective": "Interpretar que a igreja de Atos não se fecha em culto isolado: persevera, fala e se espalha.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 4:31",
+      "Atos 8:4"
+    ],
+    "type": "tap",
+    "question": "Em Atos 8:4, toque a palavra que falta em \"iam por toda parte ___ a palavra\"?",
+    "prompt": "Em Atos 8:4, toque a palavra que falta em \"iam por toda parte ___ a palavra\"?",
+    "cue": "Em Atos 8:4, toque a palavra que falta em \"iam por toda parte ___ a palavra\"?",
+    "feedbackCorrect": "Exato: iam pregando a palavra.",
+    "feedbackWrong": {
+      "b": "Comunhão pertence a Atos 2:42, não a esta lacuna.",
+      "c": "Orado descreve Atos 4:31."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "pregando"
+      },
+      {
+        "id": "b",
+        "text": "comunhão"
+      },
+      {
+        "id": "c",
+        "text": "orado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus. Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-04-desafio",
+    "id": "igreja-primitiva-pro-ip-04-desafio-02",
+    "template": "iam por toda parte ___ a palavra"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 2:42; 4:31; 8:4",
+    "learningObjective": "Interpretar que a igreja de Atos não se fecha em culto isolado: persevera, fala e se espalha.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 4:31",
+      "Atos 8:4"
+    ],
+    "type": "choice",
+    "question": "Qual sentido os três textos revelam juntos sobre a igreja?",
+    "prompt": "Qual sentido os três textos revelam juntos sobre a igreja?",
+    "cue": "Qual sentido os três textos revelam juntos sobre a igreja?",
+    "feedbackCorrect": "Certo: igreja em movimento — comum, ousada e missionária.",
+    "feedbackWrong": {
+      "b": "4:31 e 8:4 mostram fala sob risco, não evitá-la.",
+      "c": "O Espírito enche para que falem, não para calar.",
+      "d": "Dispersão e comunhão convivem no mesmo povo de Atos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Igreja em movimento: comum, ousada e missionária."
+      },
+      {
+        "id": "b",
+        "text": "A verdadeira igreja evita a palavra quando há risco."
+      },
+      {
+        "id": "c",
+        "text": "O Espírito enche para que a igreja fique calada."
+      },
+      {
+        "id": "d",
+        "text": "Dispersão e comunhão são opostos que se excluem."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus. Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-04-desafio",
+    "id": "igreja-primitiva-pro-ip-04-desafio-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 2:42; 4:31; 8:4",
+    "learningObjective": "Interpretar que a igreja de Atos não se fecha em culto isolado: persevera, fala e se espalha.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 4:31",
+      "Atos 8:4"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Atos 2:42; 4:31; 8:4?",
+    "prompt": "Qual sequência revela o sentido de Atos 2:42; 4:31; 8:4?",
+    "cue": "Qual sequência revela o sentido de Atos 2:42; 4:31; 8:4?",
+    "feedbackCorrect": "Certo: vida comum, liberdade da palavra e pregação por toda parte.",
+    "feedbackWrong": {
+      "b": "A pregação por toda parte é o desfecho missionário, não o início.",
+      "c": "A liberdade da palavra em 4:31 fica entre a comunhão e a dispersão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações"
+      },
+      {
+        "id": "b",
+        "text": "todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus. Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-04-desafio",
+    "id": "igreja-primitiva-pro-ip-04-desafio-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 2:42; 4:31; 8:4",
+    "learningObjective": "Interpretar que a igreja de Atos não se fecha em culto isolado: persevera, fala e se espalha.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 4:31",
+      "Atos 8:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"no partir do pão e nas ___\"",
+    "prompt": "Complete a frase: \"no partir do pão e nas ___\"",
+    "cue": "Complete a frase: \"no partir do pão e nas ___\"",
+    "feedbackCorrect": "Certo: no partir do pão e nas orações.",
+    "feedbackWrong": {
+      "b": "Liberdade descreve a fala de 4:31, não esta lacuna.",
+      "c": "Dispersos vem de 8:4."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "orações"
+      },
+      {
+        "id": "b",
+        "text": "liberdade"
+      },
+      {
+        "id": "c",
+        "text": "dispersos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus. Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-04-desafio",
+    "id": "igreja-primitiva-pro-ip-04-desafio-05",
+    "template": "no partir do pão e nas ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 2:42; 4:31; 8:4",
+    "learningObjective": "Interpretar que a igreja de Atos não se fecha em culto isolado: persevera, fala e se espalha.",
+    "evidence": [
+      "Atos 2:42",
+      "Atos 4:31",
+      "Atos 8:4"
+    ],
+    "type": "connect",
+    "question": "O que Atos 2:42; 4:31; 8:4 comunicam que se liga a este contexto?",
+    "prompt": "O que Atos 2:42; 4:31; 8:4 comunicam que se liga a este contexto?",
+    "cue": "O que Atos 2:42; 4:31; 8:4 comunicam que se liga a este contexto?",
+    "feedbackCorrect": "Certo: igreja em movimento.",
+    "feedbackWrong": {
+      "b": "Os textos não descrevem um culto isolado sem Palavra pública.",
+      "c": "A ousadia e a dispersão não apagam a vida comum."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Igreja em movimento"
+      },
+      {
+        "id": "b",
+        "text": "Culto isolado sem Palavra pública"
+      },
+      {
+        "id": "c",
+        "text": "Ousadia que apaga a vida comum"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. Tendo eles orado, tremeu o lugar onde estavam reunidos; todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus. Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra.",
+    "trail": "igreja-primitiva",
+    "section": "ip-04-desafio",
+    "id": "igreja-primitiva-pro-ip-04-desafio-06",
+    "passageA": {
+      "ref": "Atos 2:42; 4:31; 8:4",
+      "text": "e perseveravam na doutrina dos apóstolos e na comunhão, no partir do pão e nas orações. todos ficaram cheios do Espírito Santo e falavam com liberdade a palavra de Deus. Os que, porém, haviam sido dispersos iam por toda parte pregando a palavra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Igreja em movimento: comum na Palavra, ousada na perseguição, espalhada na pregação."
+    }
+  }
+]

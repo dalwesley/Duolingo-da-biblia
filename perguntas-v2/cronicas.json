@@ -1,0 +1,3665 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Crônicas 16:29",
+    "learningObjective": "Reconhecer que a arca convoca adoração: glória ao nome, oferta, presença e Jeová na beleza da santidade.",
+    "evidence": [
+      "1 Crônicas 16:29"
+    ],
+    "type": "true_false",
+    "question": "O texto manda tributar a Jeová a glória devida ao seu nome.",
+    "prompt": "O texto manda tributar a Jeová a glória devida ao seu nome.",
+    "cue": "O texto manda tributar a Jeová a glória devida ao seu nome.",
+    "feedbackCorrect": "Certo: 1 Crônicas 16:29 abre com essa ordem de glória ao nome.",
+    "feedbackWrong": {
+      "false": "Releia: Tributai a Jeová a glória devida ao seu nome."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Tributai a Jeová a glória devida ao seu nome. Trazei uma oferta e vinde à sua presença; adorai a Jeová na beleza da santidade.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "id": "cronicas-sem-cronicas-culto-01-a-arca-e-a-adoracao-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Crônicas 16:29",
+    "learningObjective": "Reconhecer que a arca convoca adoração: glória ao nome, oferta, presença e Jeová na beleza da santidade.",
+    "evidence": [
+      "1 Crônicas 16:29"
+    ],
+    "type": "tap",
+    "question": "Em 1 Crônicas 16:29, toque a palavra que falta em \"Tributai a Jeová a ___ devida ao seu nome\"?",
+    "prompt": "Em 1 Crônicas 16:29, toque a palavra que falta em \"Tributai a Jeová a ___ devida ao seu nome\"?",
+    "cue": "Em 1 Crônicas 16:29, toque a palavra que falta em \"Tributai a Jeová a ___ devida ao seu nome\"?",
+    "feedbackCorrect": "Exato: tributa-se a \"glória\" devida ao nome de Jeová.",
+    "feedbackWrong": {
+      "b": "Oferta vem no convite seguinte, não nesta lacuna.",
+      "c": "Presença é o destino da vinda, não o que se tributa aqui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "glória"
+      },
+      {
+        "id": "b",
+        "text": "oferta"
+      },
+      {
+        "id": "c",
+        "text": "presença"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Tributai a Jeová a glória devida ao seu nome. Trazei uma oferta e vinde à sua presença; adorai a Jeová na beleza da santidade.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "id": "cronicas-sem-cronicas-culto-01-a-arca-e-a-adoracao-02",
+    "template": "Tributai a Jeová a ___ devida ao seu nome."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Crônicas 16:29",
+    "learningObjective": "Reconhecer que a arca convoca adoração: glória ao nome, oferta, presença e Jeová na beleza da santidade.",
+    "evidence": [
+      "1 Crônicas 16:29"
+    ],
+    "type": "choice",
+    "question": "O que 1 Crônicas 16:29 manda trazer e fazer diante de Jeová?",
+    "prompt": "O que 1 Crônicas 16:29 manda trazer e fazer diante de Jeová?",
+    "cue": "O que 1 Crônicas 16:29 manda trazer e fazer diante de Jeová?",
+    "feedbackCorrect": "Certo: trazer oferta, vir à presença e adorar na beleza da santidade.",
+    "feedbackWrong": {
+      "a": "O texto não fala de silêncio sem oferta.",
+      "c": "Não manda ficar longe da presença de Jeová.",
+      "d": "Não há ordem de esconder a glória do nome."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ficar em silêncio, sem oferta nem vinda."
+      },
+      {
+        "id": "b",
+        "text": "Trazer oferta, vir à presença e adorar na santidade."
+      },
+      {
+        "id": "c",
+        "text": "Afastar-se da presença e guardar a oferta."
+      },
+      {
+        "id": "d",
+        "text": "Esconder a glória devida ao nome de Jeová."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Tributai a Jeová a glória devida ao seu nome. Trazei uma oferta e vinde à sua presença; adorai a Jeová na beleza da santidade.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "id": "cronicas-sem-cronicas-culto-01-a-arca-e-a-adoracao-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Crônicas 16:29",
+    "learningObjective": "Reconhecer que a arca convoca adoração: glória ao nome, oferta, presença e Jeová na beleza da santidade.",
+    "evidence": [
+      "1 Crônicas 16:29"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em 1 Crônicas 16:29?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 1 Crônicas 16:29?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 1 Crônicas 16:29?",
+    "feedbackCorrect": "Certo: glória ao nome, depois oferta e presença, então a adoração.",
+    "feedbackWrong": {
+      "b": "A oferta não abre o versículo.",
+      "c": "A adoração fecha o texto, não o inicia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Tributai a Jeová a glória devida ao seu nome"
+      },
+      {
+        "id": "b",
+        "text": "Trazei uma oferta e vinde à sua presença"
+      },
+      {
+        "id": "c",
+        "text": "adorai a Jeová na beleza da santidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Tributai a Jeová a glória devida ao seu nome. Trazei uma oferta e vinde à sua presença; adorai a Jeová na beleza da santidade.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "id": "cronicas-sem-cronicas-culto-01-a-arca-e-a-adoracao-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Crônicas 16:29",
+    "learningObjective": "Reconhecer que a arca convoca adoração: glória ao nome, oferta, presença e Jeová na beleza da santidade.",
+    "evidence": [
+      "1 Crônicas 16:29"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Trazei uma ___ e vinde à sua presença.\"",
+    "prompt": "Complete a frase: \"Trazei uma ___ e vinde à sua presença.\"",
+    "cue": "Complete a frase: \"Trazei uma ___ e vinde à sua presença.\"",
+    "feedbackCorrect": "Certo: o texto manda trazer uma \"oferta\" e vir à presença.",
+    "feedbackWrong": {
+      "a": "Glória é o que se tributa ao nome, não o que se traz aqui.",
+      "c": "Santidade qualifica a beleza da adoração, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "glória"
+      },
+      {
+        "id": "b",
+        "text": "oferta"
+      },
+      {
+        "id": "c",
+        "text": "santidade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Tributai a Jeová a glória devida ao seu nome. Trazei uma oferta e vinde à sua presença; adorai a Jeová na beleza da santidade.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "id": "cronicas-sem-cronicas-culto-01-a-arca-e-a-adoracao-05",
+    "template": "Trazei uma ___ e vinde à sua presença."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Crônicas 16:29",
+    "learningObjective": "Reconhecer que a arca convoca adoração: glória ao nome, oferta, presença e Jeová na beleza da santidade.",
+    "evidence": [
+      "1 Crônicas 16:29"
+    ],
+    "type": "connect",
+    "question": "O que 1 Crônicas 16:29 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Crônicas 16:29 comunica que se liga a este contexto?",
+    "cue": "O que 1 Crônicas 16:29 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a arca chama a glória, oferta e presença.",
+    "feedbackWrong": {
+      "a": "O texto não reduz o culto a um canto solto.",
+      "b": "Não descreve um templo vazio sem convite."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Canto solto sem convite"
+      },
+      {
+        "id": "b",
+        "text": "Templo vazio sem oferta"
+      },
+      {
+        "id": "c",
+        "text": "Glória, oferta e presença"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Tributai a Jeová a glória devida ao seu nome. Trazei uma oferta e vinde à sua presença; adorai a Jeová na beleza da santidade.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "id": "cronicas-sem-cronicas-culto-01-a-arca-e-a-adoracao-06",
+    "passageA": {
+      "ref": "1 Crônicas 16:29",
+      "text": "Tributai a Jeová a glória devida ao seu nome."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A arca chama a adoração: glória ao nome, oferta e presença — Jeová na beleza da santidade."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Crônicas 16:29",
+    "learningObjective": "Reconhecer que a arca convoca adoração: glória ao nome, oferta, presença e Jeová na beleza da santidade.",
+    "evidence": [
+      "1 Crônicas 16:29"
+    ],
+    "type": "true_false",
+    "question": "O versículo reduz a adoração a um sentimento interno, sem oferta nem vinda à presença.",
+    "prompt": "O versículo reduz a adoração a um sentimento interno, sem oferta nem vinda à presença.",
+    "cue": "O versículo reduz a adoração a um sentimento interno, sem oferta nem vinda à presença.",
+    "feedbackCorrect": "Certo: o texto une glória, oferta, presença e adoração visível.",
+    "feedbackWrong": {
+      "true": "1 Crônicas 16:29 manda trazer oferta e vir à presença."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Tributai a Jeová a glória devida ao seu nome. Trazei uma oferta e vinde à sua presença; adorai a Jeová na beleza da santidade.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "id": "cronicas-cam-cronicas-culto-01-a-arca-e-a-adoracao-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Crônicas 16:29",
+    "learningObjective": "Reconhecer que a arca convoca adoração: glória ao nome, oferta, presença e Jeová na beleza da santidade.",
+    "evidence": [
+      "1 Crônicas 16:29"
+    ],
+    "type": "tap",
+    "question": "Em 1 Crônicas 16:29, toque a palavra que falta em \"Trazei uma oferta e vinde à sua ___\"?",
+    "prompt": "Em 1 Crônicas 16:29, toque a palavra que falta em \"Trazei uma oferta e vinde à sua ___\"?",
+    "cue": "Em 1 Crônicas 16:29, toque a palavra que falta em \"Trazei uma oferta e vinde à sua ___\"?",
+    "feedbackCorrect": "Exato: o convite é vir à \"presença\" de Jeová.",
+    "feedbackWrong": {
+      "a": "Glória é o que se tributa ao nome, não o destino desta vinda.",
+      "b": "Oferta é o que se traz, não o lugar a que se vem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "glória"
+      },
+      {
+        "id": "b",
+        "text": "oferta"
+      },
+      {
+        "id": "c",
+        "text": "presença"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Tributai a Jeová a glória devida ao seu nome. Trazei uma oferta e vinde à sua presença; adorai a Jeová na beleza da santidade.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "id": "cronicas-cam-cronicas-culto-01-a-arca-e-a-adoracao-02",
+    "template": "Trazei uma oferta e vinde à sua ___."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Crônicas 16:29",
+    "learningObjective": "Reconhecer que a arca convoca adoração: glória ao nome, oferta, presença e Jeová na beleza da santidade.",
+    "evidence": [
+      "1 Crônicas 16:29"
+    ],
+    "type": "choice",
+    "question": "Como se relacionam glória, oferta e presença em 1 Crônicas 16:29?",
+    "prompt": "Como se relacionam glória, oferta e presença em 1 Crônicas 16:29?",
+    "cue": "Como se relacionam glória, oferta e presença em 1 Crônicas 16:29?",
+    "feedbackCorrect": "Certo: a glória ao nome se desdobra em oferta e vinda à presença.",
+    "feedbackWrong": {
+      "a": "O texto não opõe oferta à glória do nome.",
+      "c": "Não apresenta a presença como prêmio por fama humana.",
+      "d": "A beleza da santidade não substitui a oferta; acompanha a adoração."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A oferta substitui a glória devida ao nome."
+      },
+      {
+        "id": "b",
+        "text": "A glória ao nome pede oferta e vinda à presença."
+      },
+      {
+        "id": "c",
+        "text": "A presença é prêmio pela fama do adorador."
+      },
+      {
+        "id": "d",
+        "text": "A beleza da santidade dispensa trazer oferta."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Tributai a Jeová a glória devida ao seu nome. Trazei uma oferta e vinde à sua presença; adorai a Jeová na beleza da santidade.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "id": "cronicas-cam-cronicas-culto-01-a-arca-e-a-adoracao-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Crônicas 16:29",
+    "learningObjective": "Reconhecer que a arca convoca adoração: glória ao nome, oferta, presença e Jeová na beleza da santidade.",
+    "evidence": [
+      "1 Crônicas 16:29"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de 1 Crônicas 16:29?",
+    "prompt": "Como se encadeiam os eventos de 1 Crônicas 16:29?",
+    "cue": "Como se encadeiam os eventos de 1 Crônicas 16:29?",
+    "feedbackCorrect": "Certo: primeiro a glória ao nome, depois oferta e presença, então adorar.",
+    "feedbackWrong": {
+      "a": "Adorar não abre o encadeamento do versículo.",
+      "c": "A oferta não vem antes da glória devida ao nome."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "adorai a Jeová na beleza da santidade"
+      },
+      {
+        "id": "b",
+        "text": "Tributai a Jeová a glória devida ao seu nome"
+      },
+      {
+        "id": "c",
+        "text": "Trazei uma oferta e vinde à sua presença"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Tributai a Jeová a glória devida ao seu nome. Trazei uma oferta e vinde à sua presença; adorai a Jeová na beleza da santidade.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "id": "cronicas-cam-cronicas-culto-01-a-arca-e-a-adoracao-04",
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Crônicas 16:29",
+    "learningObjective": "Reconhecer que a arca convoca adoração: glória ao nome, oferta, presença e Jeová na beleza da santidade.",
+    "evidence": [
+      "1 Crônicas 16:29"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"adorai a Jeová na ___ da santidade.\"",
+    "prompt": "Complete a frase: \"adorai a Jeová na ___ da santidade.\"",
+    "cue": "Complete a frase: \"adorai a Jeová na ___ da santidade.\"",
+    "feedbackCorrect": "Certo: adora-se Jeová na \"beleza\" da santidade.",
+    "feedbackWrong": {
+      "a": "Oferta é o que se traz, não o que qualifica a santidade aqui.",
+      "c": "Presença é o destino da vinda, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "oferta"
+      },
+      {
+        "id": "b",
+        "text": "beleza"
+      },
+      {
+        "id": "c",
+        "text": "presença"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Tributai a Jeová a glória devida ao seu nome. Trazei uma oferta e vinde à sua presença; adorai a Jeová na beleza da santidade.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "id": "cronicas-cam-cronicas-culto-01-a-arca-e-a-adoracao-05",
+    "template": "adorai a Jeová na ___ da santidade."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Crônicas 16:29",
+    "learningObjective": "Reconhecer que a arca convoca adoração: glória ao nome, oferta, presença e Jeová na beleza da santidade.",
+    "evidence": [
+      "1 Crônicas 16:29"
+    ],
+    "type": "connect",
+    "question": "O que 1 Crônicas 16:29 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Crônicas 16:29 comunica que se liga a este contexto?",
+    "cue": "O que 1 Crônicas 16:29 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o culto une nome glorificado e corpo que se aproxima.",
+    "feedbackWrong": {
+      "b": "O texto não ensina culto só interior, sem oferta.",
+      "c": "Não trata a arca como relíquia sem convite."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Nome glorificado e aproximação"
+      },
+      {
+        "id": "b",
+        "text": "Culto só interior sem oferta"
+      },
+      {
+        "id": "c",
+        "text": "Arca como relíquia sem convite"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Tributai a Jeová a glória devida ao seu nome. Trazei uma oferta e vinde à sua presença; adorai a Jeová na beleza da santidade.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "id": "cronicas-cam-cronicas-culto-01-a-arca-e-a-adoracao-06",
+    "passageA": {
+      "ref": "1 Crônicas 16:29",
+      "text": "Trazei uma oferta e vinde à sua presença"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A arca não é peça de museu: chama o povo a glória, oferta e presença."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Crônicas 16:29",
+    "learningObjective": "Reconhecer que a arca convoca adoração: glória ao nome, oferta, presença e Jeová na beleza da santidade.",
+    "evidence": [
+      "1 Crônicas 16:29"
+    ],
+    "type": "true_false",
+    "question": "Adorar Jeová na beleza da santidade é acréscimo opcional depois de tributar glória ao nome.",
+    "prompt": "Adorar Jeová na beleza da santidade é acréscimo opcional depois de tributar glória ao nome.",
+    "cue": "Adorar Jeová na beleza da santidade é acréscimo opcional depois de tributar glória ao nome.",
+    "feedbackCorrect": "Certo: o versículo une glória, oferta e adoração santa, sem torná-las opcionais.",
+    "feedbackWrong": {
+      "true": "O texto ordena adorar na beleza da santidade, não sugere um extra."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Tributai a Jeová a glória devida ao seu nome. Trazei uma oferta e vinde à sua presença; adorai a Jeová na beleza da santidade.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "id": "cronicas-pro-cronicas-culto-01-a-arca-e-a-adoracao-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Crônicas 16:29",
+    "learningObjective": "Reconhecer que a arca convoca adoração: glória ao nome, oferta, presença e Jeová na beleza da santidade.",
+    "evidence": [
+      "1 Crônicas 16:29"
+    ],
+    "type": "tap",
+    "question": "Em 1 Crônicas 16:29, toque a palavra que falta em \"adorai a Jeová na beleza da ___\"?",
+    "prompt": "Em 1 Crônicas 16:29, toque a palavra que falta em \"adorai a Jeová na beleza da ___\"?",
+    "cue": "Em 1 Crônicas 16:29, toque a palavra que falta em \"adorai a Jeová na beleza da ___\"?",
+    "feedbackCorrect": "Exato: a adoração se dá na beleza da \"santidade\".",
+    "feedbackWrong": {
+      "a": "Glória é o que se tributa ao nome, não esta lacuna.",
+      "c": "Oferta se traz à presença, não qualifica aqui a beleza."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "glória"
+      },
+      {
+        "id": "b",
+        "text": "santidade"
+      },
+      {
+        "id": "c",
+        "text": "oferta"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Tributai a Jeová a glória devida ao seu nome. Trazei uma oferta e vinde à sua presença; adorai a Jeová na beleza da santidade.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "id": "cronicas-pro-cronicas-culto-01-a-arca-e-a-adoracao-02",
+    "template": "adorai a Jeová na beleza da ___."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Crônicas 16:29",
+    "learningObjective": "Reconhecer que a arca convoca adoração: glória ao nome, oferta, presença e Jeová na beleza da santidade.",
+    "evidence": [
+      "1 Crônicas 16:29"
+    ],
+    "type": "choice",
+    "question": "O que 1 Crônicas 16:29 ensina sobre o sentido da adoração diante da arca?",
+    "prompt": "O que 1 Crônicas 16:29 ensina sobre o sentido da adoração diante da arca?",
+    "cue": "O que 1 Crônicas 16:29 ensina sobre o sentido da adoração diante da arca?",
+    "feedbackCorrect": "Certo: Jeová é adorado na santidade, não como espetáculo humano.",
+    "feedbackWrong": {
+      "a": "O texto não reduz o culto a desempenho artístico.",
+      "b": "Não trata a oferta como suborno da presença.",
+      "c": "A glória é devida ao nome de Jeová, não à fama do povo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A arca pede espetáculo, não santidade."
+      },
+      {
+        "id": "b",
+        "text": "A oferta compra o direito de ignorar o nome."
+      },
+      {
+        "id": "c",
+        "text": "A glória é devida à fama de Israel, não a Jeová."
+      },
+      {
+        "id": "d",
+        "text": "A presença de Jeová pede glória, oferta e santidade."
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "passageText": "Tributai a Jeová a glória devida ao seu nome. Trazei uma oferta e vinde à sua presença; adorai a Jeová na beleza da santidade.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "id": "cronicas-pro-cronicas-culto-01-a-arca-e-a-adoracao-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Crônicas 16:29",
+    "learningObjective": "Reconhecer que a arca convoca adoração: glória ao nome, oferta, presença e Jeová na beleza da santidade.",
+    "evidence": [
+      "1 Crônicas 16:29"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de 1 Crônicas 16:29?",
+    "prompt": "Qual sequência revela o sentido de 1 Crônicas 16:29?",
+    "cue": "Qual sequência revela o sentido de 1 Crônicas 16:29?",
+    "feedbackCorrect": "Certo: o sentido vai da glória ao nome, à oferta na presença, à santidade.",
+    "feedbackWrong": {
+      "a": "Começar pela santidade esconde o tributo primeiro ao nome.",
+      "b": "A oferta não é o primeiro movimento do versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "adorai a Jeová na beleza da santidade"
+      },
+      {
+        "id": "b",
+        "text": "Trazei uma oferta e vinde à sua presença"
+      },
+      {
+        "id": "c",
+        "text": "Tributai a Jeová a glória devida ao seu nome"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Tributai a Jeová a glória devida ao seu nome. Trazei uma oferta e vinde à sua presença; adorai a Jeová na beleza da santidade.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "id": "cronicas-pro-cronicas-culto-01-a-arca-e-a-adoracao-04",
+    "correctOrder": [
+      "c",
+      "b",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Crônicas 16:29",
+    "learningObjective": "Reconhecer que a arca convoca adoração: glória ao nome, oferta, presença e Jeová na beleza da santidade.",
+    "evidence": [
+      "1 Crônicas 16:29"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Tributai a Jeová a glória devida ao seu ___.\"",
+    "prompt": "Complete a frase: \"Tributai a Jeová a glória devida ao seu ___.\"",
+    "cue": "Complete a frase: \"Tributai a Jeová a glória devida ao seu ___.\"",
+    "feedbackCorrect": "Certo: a glória é devida ao \"nome\" de Jeová.",
+    "feedbackWrong": {
+      "a": "Fogo não aparece neste versículo.",
+      "b": "Oferta vem no convite seguinte, não nesta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "fogo"
+      },
+      {
+        "id": "b",
+        "text": "oferta"
+      },
+      {
+        "id": "c",
+        "text": "nome"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Tributai a Jeová a glória devida ao seu nome. Trazei uma oferta e vinde à sua presença; adorai a Jeová na beleza da santidade.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "id": "cronicas-pro-cronicas-culto-01-a-arca-e-a-adoracao-05",
+    "template": "Tributai a Jeová a glória devida ao seu ___."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Crônicas 16:29",
+    "learningObjective": "Reconhecer que a arca convoca adoração: glória ao nome, oferta, presença e Jeová na beleza da santidade.",
+    "evidence": [
+      "1 Crônicas 16:29"
+    ],
+    "type": "connect",
+    "question": "O que 1 Crônicas 16:29 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Crônicas 16:29 comunica que se liga a este contexto?",
+    "cue": "O que 1 Crônicas 16:29 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Jeová se recebe na beleza da santidade, não no improviso.",
+    "feedbackWrong": {
+      "a": "O texto não ensina culto casual sem glória ao nome.",
+      "c": "Não apresenta a arca como fim em si, sem adoração."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Culto casual sem o nome"
+      },
+      {
+        "id": "b",
+        "text": "Santidade que recebe Jeová"
+      },
+      {
+        "id": "c",
+        "text": "Arca como fim em si"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Tributai a Jeová a glória devida ao seu nome. Trazei uma oferta e vinde à sua presença; adorai a Jeová na beleza da santidade.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-01-a-arca-e-a-adoracao",
+    "id": "cronicas-pro-cronicas-culto-01-a-arca-e-a-adoracao-06",
+    "passageA": {
+      "ref": "1 Crônicas 16:29",
+      "text": "adorai a Jeová na beleza da santidade"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A arca chama a adoração: glória ao nome, oferta e presença — Jeová na beleza da santidade."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Crônicas 22:5",
+    "learningObjective": "Perceber que Davi prepara a casa de Jeová para Salomão ainda moço: magnificência e glória, não improvisação.",
+    "evidence": [
+      "1 Crônicas 22:5"
+    ],
+    "type": "true_false",
+    "question": "Davi disse consigo que Salomão já era velho e experiente para edificar a casa.",
+    "prompt": "Davi disse consigo que Salomão já era velho e experiente para edificar a casa.",
+    "cue": "Davi disse consigo que Salomão já era velho e experiente para edificar a casa.",
+    "feedbackCorrect": "Certo: o texto chama Salomão de ainda moço e tenro.",
+    "feedbackWrong": {
+      "true": "1 Crônicas 22:5: Salomão é ainda moço e tenro."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Disse Davi consigo: Meu filho Salomão é ainda moço e tenro, e a casa que se há de edificar para Jeová deve ser magnificentíssima, digna de fama e de glória em todos os países. Começar-lhe-ei os preparos. Assim, Davi, antes da sua morte, fez grandes preparos.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "id": "cronicas-sem-cronicas-culto-02-preparacao-do-templo-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Crônicas 22:5",
+    "learningObjective": "Perceber que Davi prepara a casa de Jeová para Salomão ainda moço: magnificência e glória, não improvisação.",
+    "evidence": [
+      "1 Crônicas 22:5"
+    ],
+    "type": "tap",
+    "question": "Em 1 Crônicas 22:5, toque a palavra que falta em \"Meu filho Salomão é ainda ___ e tenro\"?",
+    "prompt": "Em 1 Crônicas 22:5, toque a palavra que falta em \"Meu filho Salomão é ainda ___ e tenro\"?",
+    "cue": "Em 1 Crônicas 22:5, toque a palavra que falta em \"Meu filho Salomão é ainda ___ e tenro\"?",
+    "feedbackCorrect": "Exato: Salomão é ainda \"moço\" e tenro.",
+    "feedbackWrong": {
+      "b": "Tenro acompanha moço, mas não preenche esta lacuna.",
+      "c": "Preparos é o que Davi fará, não a idade de Salomão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "moço"
+      },
+      {
+        "id": "b",
+        "text": "tenro"
+      },
+      {
+        "id": "c",
+        "text": "preparos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Disse Davi consigo: Meu filho Salomão é ainda moço e tenro, e a casa que se há de edificar para Jeová deve ser magnificentíssima, digna de fama e de glória em todos os países. Começar-lhe-ei os preparos. Assim, Davi, antes da sua morte, fez grandes preparos.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "id": "cronicas-sem-cronicas-culto-02-preparacao-do-templo-02",
+    "template": "Meu filho Salomão é ainda ___ e tenro"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Crônicas 22:5",
+    "learningObjective": "Perceber que Davi prepara a casa de Jeová para Salomão ainda moço: magnificência e glória, não improvisação.",
+    "evidence": [
+      "1 Crônicas 22:5"
+    ],
+    "type": "choice",
+    "question": "O que Davi afirma sobre a casa que se há de edificar para Jeová?",
+    "prompt": "O que Davi afirma sobre a casa que se há de edificar para Jeová?",
+    "cue": "O que Davi afirma sobre a casa que se há de edificar para Jeová?",
+    "feedbackCorrect": "Certo: deve ser magnificentíssima, digna de fama e glória.",
+    "feedbackWrong": {
+      "b": "O texto pede magnificência, não uma cabana improvisada.",
+      "c": "Davi começa os preparos; não recusa a obra.",
+      "d": "Não diz que a casa deve ficar oculta aos países."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deve ser magnificentíssima, digna de fama e de glória."
+      },
+      {
+        "id": "b",
+        "text": "Deve ser uma cabana improvisada e passageira."
+      },
+      {
+        "id": "c",
+        "text": "Davi recusa qualquer preparo antes de morrer."
+      },
+      {
+        "id": "d",
+        "text": "A casa deve ficar oculta a todos os países."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Disse Davi consigo: Meu filho Salomão é ainda moço e tenro, e a casa que se há de edificar para Jeová deve ser magnificentíssima, digna de fama e de glória em todos os países. Começar-lhe-ei os preparos. Assim, Davi, antes da sua morte, fez grandes preparos.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "id": "cronicas-sem-cronicas-culto-02-preparacao-do-templo-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Crônicas 22:5",
+    "learningObjective": "Perceber que Davi prepara a casa de Jeová para Salomão ainda moço: magnificência e glória, não improvisação.",
+    "evidence": [
+      "1 Crônicas 22:5"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em 1 Crônicas 22:5?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 1 Crônicas 22:5?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 1 Crônicas 22:5?",
+    "feedbackCorrect": "Certo: Salomão moço, a casa magnificentíssima, depois os grandes preparos.",
+    "feedbackWrong": {
+      "b": "Os preparos fecham o versículo, não o abrem.",
+      "c": "A magnificência vem depois da observação sobre Salomão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Meu filho Salomão é ainda moço e tenro"
+      },
+      {
+        "id": "b",
+        "text": "a casa que se há de edificar para Jeová deve ser magnificentíssima"
+      },
+      {
+        "id": "c",
+        "text": "Davi, antes da sua morte, fez grandes preparos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Disse Davi consigo: Meu filho Salomão é ainda moço e tenro, e a casa que se há de edificar para Jeová deve ser magnificentíssima, digna de fama e de glória em todos os países. Começar-lhe-ei os preparos. Assim, Davi, antes da sua morte, fez grandes preparos.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "id": "cronicas-sem-cronicas-culto-02-preparacao-do-templo-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Crônicas 22:5",
+    "learningObjective": "Perceber que Davi prepara a casa de Jeová para Salomão ainda moço: magnificência e glória, não improvisação.",
+    "evidence": [
+      "1 Crônicas 22:5"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Assim, Davi, antes da sua morte, fez grandes ___.\"",
+    "prompt": "Complete a frase: \"Assim, Davi, antes da sua morte, fez grandes ___.\"",
+    "cue": "Complete a frase: \"Assim, Davi, antes da sua morte, fez grandes ___.\"",
+    "feedbackCorrect": "Certo: Davi fez grandes \"preparos\" antes de morrer.",
+    "feedbackWrong": {
+      "a": "Moço descreve Salomão, não o que Davi fez.",
+      "c": "Fama qualifica a casa, não o ato de Davi nesta frase."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "moço"
+      },
+      {
+        "id": "b",
+        "text": "preparos"
+      },
+      {
+        "id": "c",
+        "text": "fama"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Disse Davi consigo: Meu filho Salomão é ainda moço e tenro, e a casa que se há de edificar para Jeová deve ser magnificentíssima, digna de fama e de glória em todos os países. Começar-lhe-ei os preparos. Assim, Davi, antes da sua morte, fez grandes preparos.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "id": "cronicas-sem-cronicas-culto-02-preparacao-do-templo-05",
+    "template": "Assim, Davi, antes da sua morte, fez grandes ___."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Crônicas 22:5",
+    "learningObjective": "Perceber que Davi prepara a casa de Jeová para Salomão ainda moço: magnificência e glória, não improvisação.",
+    "evidence": [
+      "1 Crônicas 22:5"
+    ],
+    "type": "connect",
+    "question": "O que 1 Crônicas 22:5 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Crônicas 22:5 comunica que se liga a este contexto?",
+    "cue": "O que 1 Crônicas 22:5 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Davi prepara a casa que outro edificará.",
+    "feedbackWrong": {
+      "a": "O texto não narra Davi concluindo o templo sozinho.",
+      "c": "Não apresenta a casa de Jeová como obra menor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Davi conclui o templo sozinho"
+      },
+      {
+        "id": "b",
+        "text": "Preparos para a casa de Jeová"
+      },
+      {
+        "id": "c",
+        "text": "Casa de Jeová como obra menor"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Disse Davi consigo: Meu filho Salomão é ainda moço e tenro, e a casa que se há de edificar para Jeová deve ser magnificentíssima, digna de fama e de glória em todos os países. Começar-lhe-ei os preparos. Assim, Davi, antes da sua morte, fez grandes preparos.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "id": "cronicas-sem-cronicas-culto-02-preparacao-do-templo-06",
+    "passageA": {
+      "ref": "1 Crônicas 22:5",
+      "text": "Começar-lhe-ei os preparos. Assim, Davi, antes da sua morte, fez grandes preparos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Davi prepara o templo que não edificará: a casa de Jeová pede glória, não improvisação."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Crônicas 22:5",
+    "learningObjective": "Perceber que Davi prepara a casa de Jeová para Salomão ainda moço: magnificência e glória, não improvisação.",
+    "evidence": [
+      "1 Crônicas 22:5"
+    ],
+    "type": "true_false",
+    "question": "Davi começa os preparos porque a casa de Jeová deve ser magnificentíssima entre os países.",
+    "prompt": "Davi começa os preparos porque a casa de Jeová deve ser magnificentíssima entre os países.",
+    "cue": "Davi começa os preparos porque a casa de Jeová deve ser magnificentíssima entre os países.",
+    "feedbackCorrect": "Certo: a magnificência da casa motiva os preparos de Davi.",
+    "feedbackWrong": {
+      "false": "Releia: a casa deve ser magnificentíssima; por isso os preparos."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Disse Davi consigo: Meu filho Salomão é ainda moço e tenro, e a casa que se há de edificar para Jeová deve ser magnificentíssima, digna de fama e de glória em todos os países. Começar-lhe-ei os preparos. Assim, Davi, antes da sua morte, fez grandes preparos.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "id": "cronicas-cam-cronicas-culto-02-preparacao-do-templo-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Crônicas 22:5",
+    "learningObjective": "Perceber que Davi prepara a casa de Jeová para Salomão ainda moço: magnificência e glória, não improvisação.",
+    "evidence": [
+      "1 Crônicas 22:5"
+    ],
+    "type": "tap",
+    "question": "Em 1 Crônicas 22:5, toque a palavra que falta em \"Meu filho Salomão é ainda moço e ___\"?",
+    "prompt": "Em 1 Crônicas 22:5, toque a palavra que falta em \"Meu filho Salomão é ainda moço e ___\"?",
+    "cue": "Em 1 Crônicas 22:5, toque a palavra que falta em \"Meu filho Salomão é ainda moço e ___\"?",
+    "feedbackCorrect": "Exato: além de moço, Salomão é \"tenro\".",
+    "feedbackWrong": {
+      "a": "Moço já está na frase; a lacuna pede o segundo adjetivo.",
+      "c": "Morte marca o tempo de Davi, não a condição de Salomão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "moço"
+      },
+      {
+        "id": "b",
+        "text": "tenro"
+      },
+      {
+        "id": "c",
+        "text": "morte"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Disse Davi consigo: Meu filho Salomão é ainda moço e tenro, e a casa que se há de edificar para Jeová deve ser magnificentíssima, digna de fama e de glória em todos os países. Começar-lhe-ei os preparos. Assim, Davi, antes da sua morte, fez grandes preparos.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "id": "cronicas-cam-cronicas-culto-02-preparacao-do-templo-02",
+    "template": "Meu filho Salomão é ainda moço e ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Crônicas 22:5",
+    "learningObjective": "Perceber que Davi prepara a casa de Jeová para Salomão ainda moço: magnificência e glória, não improvisação.",
+    "evidence": [
+      "1 Crônicas 22:5"
+    ],
+    "type": "choice",
+    "question": "Por que Davi antecipa preparos em 1 Crônicas 22:5, se não edificará a casa?",
+    "prompt": "Por que Davi antecipa preparos em 1 Crônicas 22:5, se não edificará a casa?",
+    "cue": "Por que Davi antecipa preparos em 1 Crônicas 22:5, se não edificará a casa?",
+    "feedbackCorrect": "Certo: Salomão é moço e a casa pede glória; Davi não improvisa.",
+    "feedbackWrong": {
+      "a": "O texto não diz que Davi desistiu da casa de Jeová.",
+      "c": "Não reduz a obra a um palácio para Salomão.",
+      "d": "Os países não exigem um templo pobre; o texto pede glória."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque Davi desistiu da casa de Jeová."
+      },
+      {
+        "id": "b",
+        "text": "Porque Salomão é moço e a casa pede glória, não improviso."
+      },
+      {
+        "id": "c",
+        "text": "Porque a obra seria só um palácio para Salomão."
+      },
+      {
+        "id": "d",
+        "text": "Porque os países exigiam um templo pobre e rápido."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Disse Davi consigo: Meu filho Salomão é ainda moço e tenro, e a casa que se há de edificar para Jeová deve ser magnificentíssima, digna de fama e de glória em todos os países. Começar-lhe-ei os preparos. Assim, Davi, antes da sua morte, fez grandes preparos.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "id": "cronicas-cam-cronicas-culto-02-preparacao-do-templo-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Crônicas 22:5",
+    "learningObjective": "Perceber que Davi prepara a casa de Jeová para Salomão ainda moço: magnificência e glória, não improvisação.",
+    "evidence": [
+      "1 Crônicas 22:5"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de 1 Crônicas 22:5?",
+    "prompt": "Como se encadeiam os eventos de 1 Crônicas 22:5?",
+    "cue": "Como se encadeiam os eventos de 1 Crônicas 22:5?",
+    "feedbackCorrect": "Certo: a fragilidade de Salomão, o padrão da casa, então os preparos.",
+    "feedbackWrong": {
+      "a": "Os preparos não antecedem o juízo sobre a casa.",
+      "c": "A magnificência não é o primeiro elo do encadeamento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Davi, antes da sua morte, fez grandes preparos"
+      },
+      {
+        "id": "b",
+        "text": "Meu filho Salomão é ainda moço e tenro"
+      },
+      {
+        "id": "c",
+        "text": "a casa que se há de edificar para Jeová deve ser magnificentíssima"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Disse Davi consigo: Meu filho Salomão é ainda moço e tenro, e a casa que se há de edificar para Jeová deve ser magnificentíssima, digna de fama e de glória em todos os países. Começar-lhe-ei os preparos. Assim, Davi, antes da sua morte, fez grandes preparos.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "id": "cronicas-cam-cronicas-culto-02-preparacao-do-templo-04",
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Crônicas 22:5",
+    "learningObjective": "Perceber que Davi prepara a casa de Jeová para Salomão ainda moço: magnificência e glória, não improvisação.",
+    "evidence": [
+      "1 Crônicas 22:5"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"a casa que se há de edificar para Jeová deve ser ___.\"",
+    "prompt": "Complete a frase: \"a casa que se há de edificar para Jeová deve ser ___.\"",
+    "cue": "Complete a frase: \"a casa que se há de edificar para Jeová deve ser ___.\"",
+    "feedbackCorrect": "Certo: a casa deve ser \"magnificentíssima\".",
+    "feedbackWrong": {
+      "a": "Tenro descreve Salomão, não a casa.",
+      "c": "Preparos é o que Davi faz, não o adjetivo da casa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "tenro"
+      },
+      {
+        "id": "b",
+        "text": "magnificentíssima"
+      },
+      {
+        "id": "c",
+        "text": "preparos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Disse Davi consigo: Meu filho Salomão é ainda moço e tenro, e a casa que se há de edificar para Jeová deve ser magnificentíssima, digna de fama e de glória em todos os países. Começar-lhe-ei os preparos. Assim, Davi, antes da sua morte, fez grandes preparos.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "id": "cronicas-cam-cronicas-culto-02-preparacao-do-templo-05",
+    "template": "a casa que se há de edificar para Jeová deve ser ___."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Crônicas 22:5",
+    "learningObjective": "Perceber que Davi prepara a casa de Jeová para Salomão ainda moço: magnificência e glória, não improvisação.",
+    "evidence": [
+      "1 Crônicas 22:5"
+    ],
+    "type": "connect",
+    "question": "O que 1 Crônicas 22:5 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Crônicas 22:5 comunica que se liga a este contexto?",
+    "cue": "O que 1 Crônicas 22:5 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a casa de Jeová pede glória antecipada, não pressa barata.",
+    "feedbackWrong": {
+      "a": "O texto não elogia improvisar a casa de Jeová.",
+      "c": "Não trata a juventude de Salomão como desculpa para omissão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Improviso como virtude do culto"
+      },
+      {
+        "id": "b",
+        "text": "Glória que pede preparo prévio"
+      },
+      {
+        "id": "c",
+        "text": "Juventude como desculpa para omitir"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Disse Davi consigo: Meu filho Salomão é ainda moço e tenro, e a casa que se há de edificar para Jeová deve ser magnificentíssima, digna de fama e de glória em todos os países. Começar-lhe-ei os preparos. Assim, Davi, antes da sua morte, fez grandes preparos.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "id": "cronicas-cam-cronicas-culto-02-preparacao-do-templo-06",
+    "passageA": {
+      "ref": "1 Crônicas 22:5",
+      "text": "a casa que se há de edificar para Jeová deve ser magnificentíssima"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Davi prepara o templo que não edificará: a casa de Jeová pede glória, não improvisação."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Crônicas 22:5",
+    "learningObjective": "Perceber que Davi prepara a casa de Jeová para Salomão ainda moço: magnificência e glória, não improvisação.",
+    "evidence": [
+      "1 Crônicas 22:5"
+    ],
+    "type": "true_false",
+    "question": "O texto ensina que a casa de Jeová pode ser improvisada, pois Salomão ainda é moço.",
+    "prompt": "O texto ensina que a casa de Jeová pode ser improvisada, pois Salomão ainda é moço.",
+    "cue": "O texto ensina que a casa de Jeová pode ser improvisada, pois Salomão ainda é moço.",
+    "feedbackCorrect": "Certo: a juventude de Salomão motiva preparos, não improvisação.",
+    "feedbackWrong": {
+      "true": "Davi faz grandes preparos precisamente porque a casa pede glória."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Disse Davi consigo: Meu filho Salomão é ainda moço e tenro, e a casa que se há de edificar para Jeová deve ser magnificentíssima, digna de fama e de glória em todos os países. Começar-lhe-ei os preparos. Assim, Davi, antes da sua morte, fez grandes preparos.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "id": "cronicas-pro-cronicas-culto-02-preparacao-do-templo-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Crônicas 22:5",
+    "learningObjective": "Perceber que Davi prepara a casa de Jeová para Salomão ainda moço: magnificência e glória, não improvisação.",
+    "evidence": [
+      "1 Crônicas 22:5"
+    ],
+    "type": "tap",
+    "question": "Em 1 Crônicas 22:5, toque a palavra que falta em \"digna de ___ e de glória em todos os países\"?",
+    "prompt": "Em 1 Crônicas 22:5, toque a palavra que falta em \"digna de ___ e de glória em todos os países\"?",
+    "cue": "Em 1 Crônicas 22:5, toque a palavra que falta em \"digna de ___ e de glória em todos os países\"?",
+    "feedbackCorrect": "Exato: a casa deve ser digna de \"fama\" e de glória.",
+    "feedbackWrong": {
+      "a": "Moço descreve Salomão, não a dignidade da casa.",
+      "c": "Morte marca o tempo de Davi, não esta dignidade."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "moço"
+      },
+      {
+        "id": "b",
+        "text": "fama"
+      },
+      {
+        "id": "c",
+        "text": "morte"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Disse Davi consigo: Meu filho Salomão é ainda moço e tenro, e a casa que se há de edificar para Jeová deve ser magnificentíssima, digna de fama e de glória em todos os países. Começar-lhe-ei os preparos. Assim, Davi, antes da sua morte, fez grandes preparos.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "id": "cronicas-pro-cronicas-culto-02-preparacao-do-templo-02",
+    "template": "digna de ___ e de glória em todos os países"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Crônicas 22:5",
+    "learningObjective": "Perceber que Davi prepara a casa de Jeová para Salomão ainda moço: magnificência e glória, não improvisação.",
+    "evidence": [
+      "1 Crônicas 22:5"
+    ],
+    "type": "choice",
+    "question": "O que a decisão de Davi revela sobre a casa de Jeová em 1 Crônicas 22:5?",
+    "prompt": "O que a decisão de Davi revela sobre a casa de Jeová em 1 Crônicas 22:5?",
+    "cue": "O que a decisão de Davi revela sobre a casa de Jeová em 1 Crônicas 22:5?",
+    "feedbackCorrect": "Certo: a glória de Jeová não espera o herdeiro amadurecer sozinho.",
+    "feedbackWrong": {
+      "a": "O texto não trata o templo como monumento à fama de Davi.",
+      "b": "Não apresenta a morte como fim do cuidado com a casa.",
+      "d": "Não reduz os preparos a tesouro particular de Salomão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O templo existe para eternizar a fama pessoal de Davi."
+      },
+      {
+        "id": "b",
+        "text": "A morte de Davi encerra qualquer cuidado com a casa."
+      },
+      {
+        "id": "c",
+        "text": "A glória de Jeová pede preparo mesmo quem não edificará."
+      },
+      {
+        "id": "d",
+        "text": "Os preparos são tesouro particular para Salomão governar."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Disse Davi consigo: Meu filho Salomão é ainda moço e tenro, e a casa que se há de edificar para Jeová deve ser magnificentíssima, digna de fama e de glória em todos os países. Começar-lhe-ei os preparos. Assim, Davi, antes da sua morte, fez grandes preparos.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "id": "cronicas-pro-cronicas-culto-02-preparacao-do-templo-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Crônicas 22:5",
+    "learningObjective": "Perceber que Davi prepara a casa de Jeová para Salomão ainda moço: magnificência e glória, não improvisação.",
+    "evidence": [
+      "1 Crônicas 22:5"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de 1 Crônicas 22:5?",
+    "prompt": "Qual sequência revela o sentido de 1 Crônicas 22:5?",
+    "cue": "Qual sequência revela o sentido de 1 Crônicas 22:5?",
+    "feedbackCorrect": "Certo: o sentido vai da fragilidade do filho à glória da casa e ao preparo.",
+    "feedbackWrong": {
+      "b": "Começar pelos preparos esconde o motivo da magnificência.",
+      "c": "A fama da casa não é o primeiro movimento do texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Meu filho Salomão é ainda moço e tenro"
+      },
+      {
+        "id": "b",
+        "text": "Davi, antes da sua morte, fez grandes preparos"
+      },
+      {
+        "id": "c",
+        "text": "a casa deve ser magnificentíssima, digna de fama e de glória"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Disse Davi consigo: Meu filho Salomão é ainda moço e tenro, e a casa que se há de edificar para Jeová deve ser magnificentíssima, digna de fama e de glória em todos os países. Começar-lhe-ei os preparos. Assim, Davi, antes da sua morte, fez grandes preparos.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "id": "cronicas-pro-cronicas-culto-02-preparacao-do-templo-04",
+    "correctOrder": [
+      "a",
+      "c",
+      "b"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Crônicas 22:5",
+    "learningObjective": "Perceber que Davi prepara a casa de Jeová para Salomão ainda moço: magnificência e glória, não improvisação.",
+    "evidence": [
+      "1 Crônicas 22:5"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Assim, Davi, antes da sua ___, fez grandes preparos.\"",
+    "prompt": "Complete a frase: \"Assim, Davi, antes da sua ___, fez grandes preparos.\"",
+    "cue": "Complete a frase: \"Assim, Davi, antes da sua ___, fez grandes preparos.\"",
+    "feedbackCorrect": "Certo: os preparos acontecem antes da \"morte\" de Davi.",
+    "feedbackWrong": {
+      "a": "Fama descreve a casa, não o limite do tempo de Davi.",
+      "c": "Glória é o padrão da casa, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "fama"
+      },
+      {
+        "id": "b",
+        "text": "morte"
+      },
+      {
+        "id": "c",
+        "text": "glória"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Disse Davi consigo: Meu filho Salomão é ainda moço e tenro, e a casa que se há de edificar para Jeová deve ser magnificentíssima, digna de fama e de glória em todos os países. Começar-lhe-ei os preparos. Assim, Davi, antes da sua morte, fez grandes preparos.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "id": "cronicas-pro-cronicas-culto-02-preparacao-do-templo-05",
+    "template": "Assim, Davi, antes da sua ___, fez grandes preparos."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Crônicas 22:5",
+    "learningObjective": "Perceber que Davi prepara a casa de Jeová para Salomão ainda moço: magnificência e glória, não improvisação.",
+    "evidence": [
+      "1 Crônicas 22:5"
+    ],
+    "type": "connect",
+    "question": "O que 1 Crônicas 22:5 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Crônicas 22:5 comunica que se liga a este contexto?",
+    "cue": "O que 1 Crônicas 22:5 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: quem não edifica ainda pode preparar glória para Jeová.",
+    "feedbackWrong": {
+      "b": "O texto não ensina esperar a morte para começar.",
+      "c": "Não trata a casa de Jeová como luxo dispensável."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Preparar o que outro edificará"
+      },
+      {
+        "id": "b",
+        "text": "Esperar a morte para começar"
+      },
+      {
+        "id": "c",
+        "text": "Casa de Jeová como luxo extra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Disse Davi consigo: Meu filho Salomão é ainda moço e tenro, e a casa que se há de edificar para Jeová deve ser magnificentíssima, digna de fama e de glória em todos os países. Começar-lhe-ei os preparos. Assim, Davi, antes da sua morte, fez grandes preparos.",
+    "trail": "cronicas",
+    "section": "cronicas-culto-02-preparacao-do-templo",
+    "id": "cronicas-pro-cronicas-culto-02-preparacao-do-templo-06",
+    "passageA": {
+      "ref": "1 Crônicas 22:5",
+      "text": "Começar-lhe-ei os preparos"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Davi prepara o templo que não edificará: a casa de Jeová pede glória, não improvisação."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Crônicas 7:1–2",
+    "learningObjective": "Ver que a dedicação termina em fogo do céu e glória que enche a casa, de modo que os sacerdotes não podem entrar.",
+    "evidence": [
+      "2 Crônicas 7:1",
+      "2 Crônicas 7:2"
+    ],
+    "type": "true_false",
+    "question": "Tendo Salomão acabado de orar, desceu do céu o fogo e consumiu o holocausto e os sacrifícios.",
+    "prompt": "Tendo Salomão acabado de orar, desceu do céu o fogo e consumiu o holocausto e os sacrifícios.",
+    "cue": "Tendo Salomão acabado de orar, desceu do céu o fogo e consumiu o holocausto e os sacrifícios.",
+    "feedbackCorrect": "Certo: o fogo desce do céu depois da oração de Salomão.",
+    "feedbackWrong": {
+      "false": "Releia 2 Crônicas 7:1: o fogo desce e consome os sacrifícios."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Tendo Salomão acabado de orar, desceu do céu o fogo e consumiu o holocausto e os sacrifícios; e a glória de Jeová encheu a casa. Os sacerdotes não podiam entrar na Casa de Jeová, porque a glória de Jeová encheu a sua casa.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "id": "cronicas-sem-cronicas-templo-01-salomao-dedica-o-tem-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Crônicas 7:1–2",
+    "learningObjective": "Ver que a dedicação termina em fogo do céu e glória que enche a casa, de modo que os sacerdotes não podem entrar.",
+    "evidence": [
+      "2 Crônicas 7:1",
+      "2 Crônicas 7:2"
+    ],
+    "type": "tap",
+    "question": "Em 2 Crônicas 7:1–2, toque a palavra que falta em \"desceu do céu o ___ e consumiu o holocausto\"?",
+    "prompt": "Em 2 Crônicas 7:1–2, toque a palavra que falta em \"desceu do céu o ___ e consumiu o holocausto\"?",
+    "cue": "Em 2 Crônicas 7:1–2, toque a palavra que falta em \"desceu do céu o ___ e consumiu o holocausto\"?",
+    "feedbackCorrect": "Exato: desceu do céu o \"fogo\" e consumiu o holocausto.",
+    "feedbackWrong": {
+      "a": "Céu é a origem, não o que desce e consome.",
+      "c": "Glória enche a casa depois; não é o que consome o holocausto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "céu"
+      },
+      {
+        "id": "b",
+        "text": "fogo"
+      },
+      {
+        "id": "c",
+        "text": "glória"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Tendo Salomão acabado de orar, desceu do céu o fogo e consumiu o holocausto e os sacrifícios; e a glória de Jeová encheu a casa. Os sacerdotes não podiam entrar na Casa de Jeová, porque a glória de Jeová encheu a sua casa.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "id": "cronicas-sem-cronicas-templo-01-salomao-dedica-o-tem-02",
+    "template": "desceu do céu o ___ e consumiu o holocausto"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Crônicas 7:1–2",
+    "learningObjective": "Ver que a dedicação termina em fogo do céu e glória que enche a casa, de modo que os sacerdotes não podem entrar.",
+    "evidence": [
+      "2 Crônicas 7:1",
+      "2 Crônicas 7:2"
+    ],
+    "type": "choice",
+    "question": "O que acontece com a casa depois que o fogo consome os sacrifícios?",
+    "prompt": "O que acontece com a casa depois que o fogo consome os sacrifícios?",
+    "cue": "O que acontece com a casa depois que o fogo consome os sacrifícios?",
+    "feedbackCorrect": "Certo: a glória de Jeová enche a casa.",
+    "feedbackWrong": {
+      "a": "Os sacerdotes não entram; a casa não fica vazia.",
+      "b": "O texto não diz que o fogo apaga a glória.",
+      "d": "Não narra o desmonte da casa neste momento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Os sacerdotes encontram a casa vazia e silenciosa."
+      },
+      {
+        "id": "b",
+        "text": "O fogo apaga a glória de Jeová na casa."
+      },
+      {
+        "id": "c",
+        "text": "A glória de Jeová encheu a casa."
+      },
+      {
+        "id": "d",
+        "text": "Salomão manda desmontar a Casa de Jeová."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Tendo Salomão acabado de orar, desceu do céu o fogo e consumiu o holocausto e os sacrifícios; e a glória de Jeová encheu a casa. Os sacerdotes não podiam entrar na Casa de Jeová, porque a glória de Jeová encheu a sua casa.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "id": "cronicas-sem-cronicas-templo-01-salomao-dedica-o-tem-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Crônicas 7:1–2",
+    "learningObjective": "Ver que a dedicação termina em fogo do céu e glória que enche a casa, de modo que os sacerdotes não podem entrar.",
+    "evidence": [
+      "2 Crônicas 7:1",
+      "2 Crônicas 7:2"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em 2 Crônicas 7:1–2?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 2 Crônicas 7:1–2?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 2 Crônicas 7:1–2?",
+    "feedbackCorrect": "Certo: oração, fogo que consome, glória que impede a entrada.",
+    "feedbackWrong": {
+      "b": "A glória que impede a entrada não é o primeiro fato.",
+      "c": "O fogo segue a oração, não a precede."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Tendo Salomão acabado de orar"
+      },
+      {
+        "id": "b",
+        "text": "desceu do céu o fogo e consumiu o holocausto e os sacrifícios"
+      },
+      {
+        "id": "c",
+        "text": "Os sacerdotes não podiam entrar na Casa de Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Tendo Salomão acabado de orar, desceu do céu o fogo e consumiu o holocausto e os sacrifícios; e a glória de Jeová encheu a casa. Os sacerdotes não podiam entrar na Casa de Jeová, porque a glória de Jeová encheu a sua casa.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "id": "cronicas-sem-cronicas-templo-01-salomao-dedica-o-tem-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Crônicas 7:1–2",
+    "learningObjective": "Ver que a dedicação termina em fogo do céu e glória que enche a casa, de modo que os sacerdotes não podem entrar.",
+    "evidence": [
+      "2 Crônicas 7:1",
+      "2 Crônicas 7:2"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"e a glória de Jeová ___ a casa.\"",
+    "prompt": "Complete a frase: \"e a glória de Jeová ___ a casa.\"",
+    "cue": "Complete a frase: \"e a glória de Jeová ___ a casa.\"",
+    "feedbackCorrect": "Certo: a glória de Jeová \"encheu\" a casa.",
+    "feedbackWrong": {
+      "a": "Consumiu refere-se ao holocausto, não à glória nesta frase.",
+      "c": "Orar é o que Salomão acabou de fazer, não o verbo da glória."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "consumiu"
+      },
+      {
+        "id": "b",
+        "text": "encheu"
+      },
+      {
+        "id": "c",
+        "text": "orar"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Tendo Salomão acabado de orar, desceu do céu o fogo e consumiu o holocausto e os sacrifícios; e a glória de Jeová encheu a casa. Os sacerdotes não podiam entrar na Casa de Jeová, porque a glória de Jeová encheu a sua casa.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "id": "cronicas-sem-cronicas-templo-01-salomao-dedica-o-tem-05",
+    "template": "e a glória de Jeová ___ a casa."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Crônicas 7:1–2",
+    "learningObjective": "Ver que a dedicação termina em fogo do céu e glória que enche a casa, de modo que os sacerdotes não podem entrar.",
+    "evidence": [
+      "2 Crônicas 7:1",
+      "2 Crônicas 7:2"
+    ],
+    "type": "connect",
+    "question": "O que 2 Crônicas 7:1–2 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Crônicas 7:1–2 comunica que se liga a este contexto?",
+    "cue": "O que 2 Crônicas 7:1–2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: fogo do céu e glória que enche marcam a dedicação.",
+    "feedbackWrong": {
+      "a": "O texto não descreve um monumento sem presença.",
+      "b": "Não narra os sacerdotes mandando na glória."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Monumento sem presença"
+      },
+      {
+        "id": "b",
+        "text": "Sacerdotes que mandam na glória"
+      },
+      {
+        "id": "c",
+        "text": "Fogo e glória que enchem"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Tendo Salomão acabado de orar, desceu do céu o fogo e consumiu o holocausto e os sacrifícios; e a glória de Jeová encheu a casa. Os sacerdotes não podiam entrar na Casa de Jeová, porque a glória de Jeová encheu a sua casa.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "id": "cronicas-sem-cronicas-templo-01-salomao-dedica-o-tem-06",
+    "passageA": {
+      "ref": "2 Crônicas 7:1",
+      "text": "desceu do céu o fogo e consumiu o holocausto e os sacrifícios"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Salomão dedica: fogo do céu e glória que enche — o templo é habitação, não monumento."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Crônicas 7:1–2",
+    "learningObjective": "Ver que a dedicação termina em fogo do céu e glória que enche a casa, de modo que os sacerdotes não podem entrar.",
+    "evidence": [
+      "2 Crônicas 7:1",
+      "2 Crônicas 7:2"
+    ],
+    "type": "true_false",
+    "question": "Os sacerdotes puderam entrar normalmente na Casa de Jeová logo após a oração.",
+    "prompt": "Os sacerdotes puderam entrar normalmente na Casa de Jeová logo após a oração.",
+    "cue": "Os sacerdotes puderam entrar normalmente na Casa de Jeová logo após a oração.",
+    "feedbackCorrect": "Certo: não podiam entrar, porque a glória encheu a casa.",
+    "feedbackWrong": {
+      "true": "2 Crônicas 7:2: os sacerdotes não podiam entrar."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Tendo Salomão acabado de orar, desceu do céu o fogo e consumiu o holocausto e os sacrifícios; e a glória de Jeová encheu a casa. Os sacerdotes não podiam entrar na Casa de Jeová, porque a glória de Jeová encheu a sua casa.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "id": "cronicas-cam-cronicas-templo-01-salomao-dedica-o-tem-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Crônicas 7:1–2",
+    "learningObjective": "Ver que a dedicação termina em fogo do céu e glória que enche a casa, de modo que os sacerdotes não podem entrar.",
+    "evidence": [
+      "2 Crônicas 7:1",
+      "2 Crônicas 7:2"
+    ],
+    "type": "tap",
+    "question": "Em 2 Crônicas 7:1–2, toque a palavra que falta em \"consumiu o ___ e os sacrifícios\"?",
+    "prompt": "Em 2 Crônicas 7:1–2, toque a palavra que falta em \"consumiu o ___ e os sacrifícios\"?",
+    "cue": "Em 2 Crônicas 7:1–2, toque a palavra que falta em \"consumiu o ___ e os sacrifícios\"?",
+    "feedbackCorrect": "Exato: o fogo consumiu o \"holocausto\" e os sacrifícios.",
+    "feedbackWrong": {
+      "b": "Sacerdotes não entram na casa; não são o que o fogo consome.",
+      "c": "Casa é o que a glória enche, não o que o fogo consome aqui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "holocausto"
+      },
+      {
+        "id": "b",
+        "text": "sacerdotes"
+      },
+      {
+        "id": "c",
+        "text": "casa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Tendo Salomão acabado de orar, desceu do céu o fogo e consumiu o holocausto e os sacrifícios; e a glória de Jeová encheu a casa. Os sacerdotes não podiam entrar na Casa de Jeová, porque a glória de Jeová encheu a sua casa.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "id": "cronicas-cam-cronicas-templo-01-salomao-dedica-o-tem-02",
+    "template": "consumiu o ___ e os sacrifícios"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Crônicas 7:1–2",
+    "learningObjective": "Ver que a dedicação termina em fogo do céu e glória que enche a casa, de modo que os sacerdotes não podem entrar.",
+    "evidence": [
+      "2 Crônicas 7:1",
+      "2 Crônicas 7:2"
+    ],
+    "type": "choice",
+    "question": "O que o encadeamento de 2 Crônicas 7:1–2 mostra sobre oração e glória?",
+    "prompt": "O que o encadeamento de 2 Crônicas 7:1–2 mostra sobre oração e glória?",
+    "cue": "O que o encadeamento de 2 Crônicas 7:1–2 mostra sobre oração e glória?",
+    "feedbackCorrect": "Certo: a oração de Salomão precede o fogo e a glória que enche.",
+    "feedbackWrong": {
+      "b": "O fogo não substitui a oração; vem depois que ela acaba.",
+      "c": "Os sacerdotes não controlam a glória; ela os impede.",
+      "d": "A casa não fica vazia; a glória a enche."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A oração acabada precede o fogo e a glória que enche."
+      },
+      {
+        "id": "b",
+        "text": "O fogo substitui a oração, tornando-a desnecessária."
+      },
+      {
+        "id": "c",
+        "text": "Os sacerdotes controlam quando a glória pode encher."
+      },
+      {
+        "id": "d",
+        "text": "A casa permanece vazia para provar a fé de Salomão."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Tendo Salomão acabado de orar, desceu do céu o fogo e consumiu o holocausto e os sacrifícios; e a glória de Jeová encheu a casa. Os sacerdotes não podiam entrar na Casa de Jeová, porque a glória de Jeová encheu a sua casa.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "id": "cronicas-cam-cronicas-templo-01-salomao-dedica-o-tem-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Crônicas 7:1–2",
+    "learningObjective": "Ver que a dedicação termina em fogo do céu e glória que enche a casa, de modo que os sacerdotes não podem entrar.",
+    "evidence": [
+      "2 Crônicas 7:1",
+      "2 Crônicas 7:2"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de 2 Crônicas 7:1–2?",
+    "prompt": "Como se encadeiam os eventos de 2 Crônicas 7:1–2?",
+    "cue": "Como se encadeiam os eventos de 2 Crônicas 7:1–2?",
+    "feedbackCorrect": "Certo: oração, fogo que consome, depois glória que impede a entrada.",
+    "feedbackWrong": {
+      "a": "A impossibilidade de entrar não abre o encadeamento.",
+      "c": "O fogo não vem depois da recusa dos sacerdotes."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Os sacerdotes não podiam entrar na Casa de Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Tendo Salomão acabado de orar"
+      },
+      {
+        "id": "c",
+        "text": "desceu do céu o fogo e consumiu o holocausto e os sacrifícios"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Tendo Salomão acabado de orar, desceu do céu o fogo e consumiu o holocausto e os sacrifícios; e a glória de Jeová encheu a casa. Os sacerdotes não podiam entrar na Casa de Jeová, porque a glória de Jeová encheu a sua casa.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "id": "cronicas-cam-cronicas-templo-01-salomao-dedica-o-tem-04",
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Crônicas 7:1–2",
+    "learningObjective": "Ver que a dedicação termina em fogo do céu e glória que enche a casa, de modo que os sacerdotes não podem entrar.",
+    "evidence": [
+      "2 Crônicas 7:1",
+      "2 Crônicas 7:2"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Os ___ não podiam entrar na Casa de Jeová.\"",
+    "prompt": "Complete a frase: \"Os ___ não podiam entrar na Casa de Jeová.\"",
+    "cue": "Complete a frase: \"Os ___ não podiam entrar na Casa de Jeová.\"",
+    "feedbackCorrect": "Certo: os \"sacerdotes\" não podiam entrar.",
+    "feedbackWrong": {
+      "a": "Holocausto é o que o fogo consome, não quem tenta entrar.",
+      "c": "Fogo desce do céu; não é o sujeito desta frase."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "holocausto"
+      },
+      {
+        "id": "b",
+        "text": "sacerdotes"
+      },
+      {
+        "id": "c",
+        "text": "fogo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Tendo Salomão acabado de orar, desceu do céu o fogo e consumiu o holocausto e os sacrifícios; e a glória de Jeová encheu a casa. Os sacerdotes não podiam entrar na Casa de Jeová, porque a glória de Jeová encheu a sua casa.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "id": "cronicas-cam-cronicas-templo-01-salomao-dedica-o-tem-05",
+    "template": "Os ___ não podiam entrar na Casa de Jeová."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Crônicas 7:1–2",
+    "learningObjective": "Ver que a dedicação termina em fogo do céu e glória que enche a casa, de modo que os sacerdotes não podem entrar.",
+    "evidence": [
+      "2 Crônicas 7:1",
+      "2 Crônicas 7:2"
+    ],
+    "type": "connect",
+    "question": "O que 2 Crônicas 7:1–2 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Crônicas 7:1–2 comunica que se liga a este contexto?",
+    "cue": "O que 2 Crônicas 7:1–2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a glória ocupa a casa e limita até o ministério sacerdotal.",
+    "feedbackWrong": {
+      "a": "O texto não trata o templo como palco vazio.",
+      "c": "Não apresenta o fogo como acidente da cerimônia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Templo como palco vazio"
+      },
+      {
+        "id": "b",
+        "text": "Glória que limita o ministério"
+      },
+      {
+        "id": "c",
+        "text": "Fogo como acidente ritual"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Tendo Salomão acabado de orar, desceu do céu o fogo e consumiu o holocausto e os sacrifícios; e a glória de Jeová encheu a casa. Os sacerdotes não podiam entrar na Casa de Jeová, porque a glória de Jeová encheu a sua casa.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "id": "cronicas-cam-cronicas-templo-01-salomao-dedica-o-tem-06",
+    "passageA": {
+      "ref": "2 Crônicas 7:2",
+      "text": "Os sacerdotes não podiam entrar na Casa de Jeová, porque a glória de Jeová encheu a sua casa."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O templo é habitação: a glória enche a ponto de os sacerdotes não entrarem."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Crônicas 7:1–2",
+    "learningObjective": "Ver que a dedicação termina em fogo do céu e glória que enche a casa, de modo que os sacerdotes não podem entrar.",
+    "evidence": [
+      "2 Crônicas 7:1",
+      "2 Crônicas 7:2"
+    ],
+    "type": "true_false",
+    "question": "A glória que enche a casa mostra o templo como habitação de Jeová, não só como monumento de Salomão.",
+    "prompt": "A glória que enche a casa mostra o templo como habitação de Jeová, não só como monumento de Salomão.",
+    "cue": "A glória que enche a casa mostra o templo como habitação de Jeová, não só como monumento de Salomão.",
+    "feedbackCorrect": "Certo: o fogo e a glória afirmam presença, não pedra vazia.",
+    "feedbackWrong": {
+      "false": "O texto une fogo do céu e glória que impede até os sacerdotes."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Tendo Salomão acabado de orar, desceu do céu o fogo e consumiu o holocausto e os sacrifícios; e a glória de Jeová encheu a casa. Os sacerdotes não podiam entrar na Casa de Jeová, porque a glória de Jeová encheu a sua casa.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "id": "cronicas-pro-cronicas-templo-01-salomao-dedica-o-tem-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Crônicas 7:1–2",
+    "learningObjective": "Ver que a dedicação termina em fogo do céu e glória que enche a casa, de modo que os sacerdotes não podem entrar.",
+    "evidence": [
+      "2 Crônicas 7:1",
+      "2 Crônicas 7:2"
+    ],
+    "type": "tap",
+    "question": "Em 2 Crônicas 7:1–2, toque a palavra que falta em \"Tendo Salomão acabado de ___, desceu do céu o fogo\"?",
+    "prompt": "Em 2 Crônicas 7:1–2, toque a palavra que falta em \"Tendo Salomão acabado de ___, desceu do céu o fogo\"?",
+    "cue": "Em 2 Crônicas 7:1–2, toque a palavra que falta em \"Tendo Salomão acabado de ___, desceu do céu o fogo\"?",
+    "feedbackCorrect": "Exato: o fogo desce depois que Salomão acaba de \"orar\".",
+    "feedbackWrong": {
+      "b": "Entrar é o que os sacerdotes não podem; não é o ato de Salomão.",
+      "c": "Casa é o lugar enchido, não o verbo desta cláusula."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "orar"
+      },
+      {
+        "id": "b",
+        "text": "entrar"
+      },
+      {
+        "id": "c",
+        "text": "casa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Tendo Salomão acabado de orar, desceu do céu o fogo e consumiu o holocausto e os sacrifícios; e a glória de Jeová encheu a casa. Os sacerdotes não podiam entrar na Casa de Jeová, porque a glória de Jeová encheu a sua casa.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "id": "cronicas-pro-cronicas-templo-01-salomao-dedica-o-tem-02",
+    "template": "Tendo Salomão acabado de ___, desceu do céu o fogo"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Crônicas 7:1–2",
+    "learningObjective": "Ver que a dedicação termina em fogo do céu e glória que enche a casa, de modo que os sacerdotes não podem entrar.",
+    "evidence": [
+      "2 Crônicas 7:1",
+      "2 Crônicas 7:2"
+    ],
+    "type": "choice",
+    "question": "O que 2 Crônicas 7:1–2 impede de concluir sobre o templo dedicado?",
+    "prompt": "O que 2 Crônicas 7:1–2 impede de concluir sobre o templo dedicado?",
+    "cue": "O que 2 Crônicas 7:1–2 impede de concluir sobre o templo dedicado?",
+    "feedbackCorrect": "Certo: o templo não é monumento humano; Jeová o habita com glória.",
+    "feedbackWrong": {
+      "a": "O texto não reduz a glória a efeito psicológico.",
+      "b": "Não ensina que o fogo torna a oração inútil.",
+      "c": "Não afirma que os sacerdotes superam a glória."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A glória é só emoção coletiva da festa."
+      },
+      {
+        "id": "b",
+        "text": "O fogo prova que orar era desnecessário."
+      },
+      {
+        "id": "c",
+        "text": "Os sacerdotes superam a glória e entram à força."
+      },
+      {
+        "id": "d",
+        "text": "Jeová habita a casa; ela não é só monumento de Salomão."
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "passageText": "Tendo Salomão acabado de orar, desceu do céu o fogo e consumiu o holocausto e os sacrifícios; e a glória de Jeová encheu a casa. Os sacerdotes não podiam entrar na Casa de Jeová, porque a glória de Jeová encheu a sua casa.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "id": "cronicas-pro-cronicas-templo-01-salomao-dedica-o-tem-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Crônicas 7:1–2",
+    "learningObjective": "Ver que a dedicação termina em fogo do céu e glória que enche a casa, de modo que os sacerdotes não podem entrar.",
+    "evidence": [
+      "2 Crônicas 7:1",
+      "2 Crônicas 7:2"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de 2 Crônicas 7:1–2?",
+    "prompt": "Qual sequência revela o sentido de 2 Crônicas 7:1–2?",
+    "cue": "Qual sequência revela o sentido de 2 Crônicas 7:1–2?",
+    "feedbackCorrect": "Certo: o sentido vai da oração ao fogo e à glória que ocupa a casa.",
+    "feedbackWrong": {
+      "a": "Começar pela recusa dos sacerdotes esconde a oração.",
+      "b": "A glória que enche não é o primeiro movimento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Os sacerdotes não podiam entrar na Casa de Jeová"
+      },
+      {
+        "id": "b",
+        "text": "a glória de Jeová encheu a casa"
+      },
+      {
+        "id": "c",
+        "text": "Tendo Salomão acabado de orar, desceu do céu o fogo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Tendo Salomão acabado de orar, desceu do céu o fogo e consumiu o holocausto e os sacrifícios; e a glória de Jeová encheu a casa. Os sacerdotes não podiam entrar na Casa de Jeová, porque a glória de Jeová encheu a sua casa.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "id": "cronicas-pro-cronicas-templo-01-salomao-dedica-o-tem-04",
+    "correctOrder": [
+      "c",
+      "b",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Crônicas 7:1–2",
+    "learningObjective": "Ver que a dedicação termina em fogo do céu e glória que enche a casa, de modo que os sacerdotes não podem entrar.",
+    "evidence": [
+      "2 Crônicas 7:1",
+      "2 Crônicas 7:2"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"desceu do ___ o fogo e consumiu o holocausto.\"",
+    "prompt": "Complete a frase: \"desceu do ___ o fogo e consumiu o holocausto.\"",
+    "cue": "Complete a frase: \"desceu do ___ o fogo e consumiu o holocausto.\"",
+    "feedbackCorrect": "Certo: o fogo desceu do \"céu\".",
+    "feedbackWrong": {
+      "b": "Casa é o que a glória enche, não a origem do fogo.",
+      "c": "Holocausto é o que se consome, não de onde o fogo desce."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "céu"
+      },
+      {
+        "id": "b",
+        "text": "casa"
+      },
+      {
+        "id": "c",
+        "text": "holocausto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Tendo Salomão acabado de orar, desceu do céu o fogo e consumiu o holocausto e os sacrifícios; e a glória de Jeová encheu a casa. Os sacerdotes não podiam entrar na Casa de Jeová, porque a glória de Jeová encheu a sua casa.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "id": "cronicas-pro-cronicas-templo-01-salomao-dedica-o-tem-05",
+    "template": "desceu do ___ o fogo e consumiu o holocausto."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Crônicas 7:1–2",
+    "learningObjective": "Ver que a dedicação termina em fogo do céu e glória que enche a casa, de modo que os sacerdotes não podem entrar.",
+    "evidence": [
+      "2 Crônicas 7:1",
+      "2 Crônicas 7:2"
+    ],
+    "type": "connect",
+    "question": "O que 2 Crônicas 7:1–2 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Crônicas 7:1–2 comunica que se liga a este contexto?",
+    "cue": "O que 2 Crônicas 7:1–2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o templo vive de habitação, não de pedra monumental.",
+    "feedbackWrong": {
+      "a": "O texto não ensina templo como obra de arte vazia.",
+      "c": "Não apresenta a glória como decoração da festa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Templo como arte vazia"
+      },
+      {
+        "id": "b",
+        "text": "Habitação, não monumento"
+      },
+      {
+        "id": "c",
+        "text": "Glória como decoração da festa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Tendo Salomão acabado de orar, desceu do céu o fogo e consumiu o holocausto e os sacrifícios; e a glória de Jeová encheu a casa. Os sacerdotes não podiam entrar na Casa de Jeová, porque a glória de Jeová encheu a sua casa.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-01-salomao-dedica-o-tem",
+    "id": "cronicas-pro-cronicas-templo-01-salomao-dedica-o-tem-06",
+    "passageA": {
+      "ref": "2 Crônicas 7:1",
+      "text": "a glória de Jeová encheu a casa"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Salomão dedica: fogo do céu e glória que enche — o templo é habitação, não monumento."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Crônicas 34:31",
+    "learningObjective": "Compreender que a reforma de Josias é aliança perante Jeová para guardar o livro de todo o coração e de toda a alma.",
+    "evidence": [
+      "2 Crônicas 34:31"
+    ],
+    "type": "true_false",
+    "question": "O rei fez a aliança sentado em silêncio, sem se pôr em pé no seu lugar.",
+    "prompt": "O rei fez a aliança sentado em silêncio, sem se pôr em pé no seu lugar.",
+    "cue": "O rei fez a aliança sentado em silêncio, sem se pôr em pé no seu lugar.",
+    "feedbackCorrect": "Certo: o texto diz que o rei estava posto em pé no seu lugar.",
+    "feedbackWrong": {
+      "true": "2 Crônicas 34:31: o rei, posto em pé no seu lugar, fez a aliança."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "O rei, posto em pé no seu lugar, fez perante Jeová esta aliança, de andar após Jeová e guardar os seus mandamentos, os seus testemunhos e os seus estatutos de todo o seu coração e de toda a sua alma, a fim de cumprir as palavras da aliança que estavam escritas naquele livro.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "id": "cronicas-sem-cronicas-templo-02-reformas-e-quedas-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Crônicas 34:31",
+    "learningObjective": "Compreender que a reforma de Josias é aliança perante Jeová para guardar o livro de todo o coração e de toda a alma.",
+    "evidence": [
+      "2 Crônicas 34:31"
+    ],
+    "type": "tap",
+    "question": "Em 2 Crônicas 34:31, toque a palavra que falta em \"fez perante Jeová esta ___\"?",
+    "prompt": "Em 2 Crônicas 34:31, toque a palavra que falta em \"fez perante Jeová esta ___\"?",
+    "cue": "Em 2 Crônicas 34:31, toque a palavra que falta em \"fez perante Jeová esta ___\"?",
+    "feedbackCorrect": "Exato: o rei fez perante Jeová esta \"aliança\".",
+    "feedbackWrong": {
+      "b": "Livro é onde as palavras estavam escritas, não o que ele fez aqui.",
+      "c": "Alma descreve a medida da guarda, não o ato inicial."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "aliança"
+      },
+      {
+        "id": "b",
+        "text": "livro"
+      },
+      {
+        "id": "c",
+        "text": "alma"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "O rei, posto em pé no seu lugar, fez perante Jeová esta aliança, de andar após Jeová e guardar os seus mandamentos, os seus testemunhos e os seus estatutos de todo o seu coração e de toda a sua alma, a fim de cumprir as palavras da aliança que estavam escritas naquele livro.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "id": "cronicas-sem-cronicas-templo-02-reformas-e-quedas-02",
+    "template": "fez perante Jeová esta ___,"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Crônicas 34:31",
+    "learningObjective": "Compreender que a reforma de Josias é aliança perante Jeová para guardar o livro de todo o coração e de toda a alma.",
+    "evidence": [
+      "2 Crônicas 34:31"
+    ],
+    "type": "choice",
+    "question": "O que o rei promete guardar na aliança de 2 Crônicas 34:31?",
+    "prompt": "O que o rei promete guardar na aliança de 2 Crônicas 34:31?",
+    "cue": "O que o rei promete guardar na aliança de 2 Crônicas 34:31?",
+    "feedbackCorrect": "Certo: mandamentos, testemunhos e estatutos de coração e alma.",
+    "feedbackWrong": {
+      "a": "O texto não limita a aliança a impostos do templo.",
+      "c": "Não promete só consertar pedras, sem o livro.",
+      "d": "Não recusa guardar os estatutos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Somente os impostos do templo, sem o livro."
+      },
+      {
+        "id": "b",
+        "text": "Mandamentos, testemunhos e estatutos de coração e alma."
+      },
+      {
+        "id": "c",
+        "text": "Apenas o conserto das pedras do edifício."
+      },
+      {
+        "id": "d",
+        "text": "Nada: o rei recusa guardar os estatutos."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "O rei, posto em pé no seu lugar, fez perante Jeová esta aliança, de andar após Jeová e guardar os seus mandamentos, os seus testemunhos e os seus estatutos de todo o seu coração e de toda a sua alma, a fim de cumprir as palavras da aliança que estavam escritas naquele livro.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "id": "cronicas-sem-cronicas-templo-02-reformas-e-quedas-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Crônicas 34:31",
+    "learningObjective": "Compreender que a reforma de Josias é aliança perante Jeová para guardar o livro de todo o coração e de toda a alma.",
+    "evidence": [
+      "2 Crônicas 34:31"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em 2 Crônicas 34:31?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 2 Crônicas 34:31?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 2 Crônicas 34:31?",
+    "feedbackCorrect": "Certo: o rei em pé, a aliança de andar e guardar, depois cumprir o livro.",
+    "feedbackWrong": {
+      "b": "Cumprir o livro fecha o versículo, não o abre.",
+      "c": "Guardar mandamentos vem depois de se pôr em pé."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O rei, posto em pé no seu lugar, fez perante Jeová esta aliança"
+      },
+      {
+        "id": "b",
+        "text": "andar após Jeová e guardar os seus mandamentos, testemunhos e estatutos"
+      },
+      {
+        "id": "c",
+        "text": "cumprir as palavras da aliança que estavam escritas naquele livro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "O rei, posto em pé no seu lugar, fez perante Jeová esta aliança, de andar após Jeová e guardar os seus mandamentos, os seus testemunhos e os seus estatutos de todo o seu coração e de toda a sua alma, a fim de cumprir as palavras da aliança que estavam escritas naquele livro.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "id": "cronicas-sem-cronicas-templo-02-reformas-e-quedas-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Crônicas 34:31",
+    "learningObjective": "Compreender que a reforma de Josias é aliança perante Jeová para guardar o livro de todo o coração e de toda a alma.",
+    "evidence": [
+      "2 Crônicas 34:31"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"cumprir as palavras da aliança que estavam escritas naquele ___.\"",
+    "prompt": "Complete a frase: \"cumprir as palavras da aliança que estavam escritas naquele ___.\"",
+    "cue": "Complete a frase: \"cumprir as palavras da aliança que estavam escritas naquele ___.\"",
+    "feedbackCorrect": "Certo: as palavras estavam escritas naquele \"livro\".",
+    "feedbackWrong": {
+      "a": "Aliança é o pacto feito, não o suporte escrito nesta lacuna.",
+      "c": "Coração é a medida da guarda, não o objeto escrito."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "aliança"
+      },
+      {
+        "id": "b",
+        "text": "livro"
+      },
+      {
+        "id": "c",
+        "text": "coração"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "O rei, posto em pé no seu lugar, fez perante Jeová esta aliança, de andar após Jeová e guardar os seus mandamentos, os seus testemunhos e os seus estatutos de todo o seu coração e de toda a sua alma, a fim de cumprir as palavras da aliança que estavam escritas naquele livro.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "id": "cronicas-sem-cronicas-templo-02-reformas-e-quedas-05",
+    "template": "cumprir as palavras da aliança que estavam escritas naquele ___."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Crônicas 34:31",
+    "learningObjective": "Compreender que a reforma de Josias é aliança perante Jeová para guardar o livro de todo o coração e de toda a alma.",
+    "evidence": [
+      "2 Crônicas 34:31"
+    ],
+    "type": "connect",
+    "question": "O que 2 Crônicas 34:31 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Crônicas 34:31 comunica que se liga a este contexto?",
+    "cue": "O que 2 Crônicas 34:31 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a reforma é aliança com o livro, não só obra em pedra.",
+    "feedbackWrong": {
+      "a": "O texto não reduz a reforma a pedras sem aliança.",
+      "c": "Não apresenta o rei recusando o livro."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Reforma só de pedras"
+      },
+      {
+        "id": "b",
+        "text": "Aliança com o livro"
+      },
+      {
+        "id": "c",
+        "text": "Rei que recusa o livro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "O rei, posto em pé no seu lugar, fez perante Jeová esta aliança, de andar após Jeová e guardar os seus mandamentos, os seus testemunhos e os seus estatutos de todo o seu coração e de toda a sua alma, a fim de cumprir as palavras da aliança que estavam escritas naquele livro.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "id": "cronicas-sem-cronicas-templo-02-reformas-e-quedas-06",
+    "passageA": {
+      "ref": "2 Crônicas 34:31",
+      "text": "fez perante Jeová esta aliança, de andar após Jeová"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Reforma é aliança de coração inteiro com o livro — não só conserto de pedras."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Crônicas 34:31",
+    "learningObjective": "Compreender que a reforma de Josias é aliança perante Jeová para guardar o livro de todo o coração e de toda a alma.",
+    "evidence": [
+      "2 Crônicas 34:31"
+    ],
+    "type": "true_false",
+    "question": "A aliança inclui guardar mandamentos, testemunhos e estatutos de todo o coração e de toda a alma.",
+    "prompt": "A aliança inclui guardar mandamentos, testemunhos e estatutos de todo o coração e de toda a alma.",
+    "cue": "A aliança inclui guardar mandamentos, testemunhos e estatutos de todo o coração e de toda a alma.",
+    "feedbackCorrect": "Certo: o texto une guarda completa e coração inteiro.",
+    "feedbackWrong": {
+      "false": "Releia 2 Crônicas 34:31: coração e alma na guarda do livro."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "O rei, posto em pé no seu lugar, fez perante Jeová esta aliança, de andar após Jeová e guardar os seus mandamentos, os seus testemunhos e os seus estatutos de todo o seu coração e de toda a sua alma, a fim de cumprir as palavras da aliança que estavam escritas naquele livro.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "id": "cronicas-cam-cronicas-templo-02-reformas-e-quedas-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Crônicas 34:31",
+    "learningObjective": "Compreender que a reforma de Josias é aliança perante Jeová para guardar o livro de todo o coração e de toda a alma.",
+    "evidence": [
+      "2 Crônicas 34:31"
+    ],
+    "type": "tap",
+    "question": "Em 2 Crônicas 34:31, toque a palavra que falta em \"de todo o seu ___ e de toda a sua alma\"?",
+    "prompt": "Em 2 Crônicas 34:31, toque a palavra que falta em \"de todo o seu ___ e de toda a sua alma\"?",
+    "cue": "Em 2 Crônicas 34:31, toque a palavra que falta em \"de todo o seu ___ e de toda a sua alma\"?",
+    "feedbackCorrect": "Exato: a guarda é de todo o \"coração\" e de toda a alma.",
+    "feedbackWrong": {
+      "a": "Livro é o suporte das palavras, não esta medida interior.",
+      "c": "Lugar é onde o rei está em pé, não o que se dá por inteiro aqui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "livro"
+      },
+      {
+        "id": "b",
+        "text": "coração"
+      },
+      {
+        "id": "c",
+        "text": "lugar"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "O rei, posto em pé no seu lugar, fez perante Jeová esta aliança, de andar após Jeová e guardar os seus mandamentos, os seus testemunhos e os seus estatutos de todo o seu coração e de toda a sua alma, a fim de cumprir as palavras da aliança que estavam escritas naquele livro.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "id": "cronicas-cam-cronicas-templo-02-reformas-e-quedas-02",
+    "template": "de todo o seu ___ e de toda a sua alma"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Crônicas 34:31",
+    "learningObjective": "Compreender que a reforma de Josias é aliança perante Jeová para guardar o livro de todo o coração e de toda a alma.",
+    "evidence": [
+      "2 Crônicas 34:31"
+    ],
+    "type": "choice",
+    "question": "Como se relacionam aliança, coração e livro em 2 Crônicas 34:31?",
+    "prompt": "Como se relacionam aliança, coração e livro em 2 Crônicas 34:31?",
+    "cue": "Como se relacionam aliança, coração e livro em 2 Crônicas 34:31?",
+    "feedbackCorrect": "Certo: a aliança visa cumprir o escrito, com o rei inteiro.",
+    "feedbackWrong": {
+      "a": "O texto não separa o livro da aliança viva.",
+      "c": "Não reduz o pacto a pose pública sem guarda.",
+      "d": "Testemunhos e estatutos não são opcionais no texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O livro substitui a aliança, tornando-a inútil."
+      },
+      {
+        "id": "b",
+        "text": "A aliança une o rei inteiro às palavras escritas."
+      },
+      {
+        "id": "c",
+        "text": "Basta a pose em pé, sem guardar mandamentos."
+      },
+      {
+        "id": "d",
+        "text": "Testemunhos e estatutos ficam de fora da aliança."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "O rei, posto em pé no seu lugar, fez perante Jeová esta aliança, de andar após Jeová e guardar os seus mandamentos, os seus testemunhos e os seus estatutos de todo o seu coração e de toda a sua alma, a fim de cumprir as palavras da aliança que estavam escritas naquele livro.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "id": "cronicas-cam-cronicas-templo-02-reformas-e-quedas-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Crônicas 34:31",
+    "learningObjective": "Compreender que a reforma de Josias é aliança perante Jeová para guardar o livro de todo o coração e de toda a alma.",
+    "evidence": [
+      "2 Crônicas 34:31"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de 2 Crônicas 34:31?",
+    "prompt": "Como se encadeiam os eventos de 2 Crônicas 34:31?",
+    "cue": "Como se encadeiam os eventos de 2 Crônicas 34:31?",
+    "feedbackCorrect": "Certo: o rei em pé, a guarda de coração, então cumprir o livro.",
+    "feedbackWrong": {
+      "a": "Cumprir o escrito não abre o encadeamento.",
+      "c": "A guarda não antecede o ato de se pôr em pé."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "cumprir as palavras da aliança que estavam escritas naquele livro"
+      },
+      {
+        "id": "b",
+        "text": "O rei, posto em pé no seu lugar, fez perante Jeová esta aliança"
+      },
+      {
+        "id": "c",
+        "text": "guardar os seus mandamentos de todo o seu coração e de toda a sua alma"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "O rei, posto em pé no seu lugar, fez perante Jeová esta aliança, de andar após Jeová e guardar os seus mandamentos, os seus testemunhos e os seus estatutos de todo o seu coração e de toda a sua alma, a fim de cumprir as palavras da aliança que estavam escritas naquele livro.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "id": "cronicas-cam-cronicas-templo-02-reformas-e-quedas-04",
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Crônicas 34:31",
+    "learningObjective": "Compreender que a reforma de Josias é aliança perante Jeová para guardar o livro de todo o coração e de toda a alma.",
+    "evidence": [
+      "2 Crônicas 34:31"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"de todo o seu coração e de toda a sua ___.\"",
+    "prompt": "Complete a frase: \"de todo o seu coração e de toda a sua ___.\"",
+    "cue": "Complete a frase: \"de todo o seu coração e de toda a sua ___.\"",
+    "feedbackCorrect": "Certo: a guarda é também de toda a \"alma\".",
+    "feedbackWrong": {
+      "a": "Aliança é o pacto, não o segundo termo desta dupla.",
+      "c": "Livro é o suporte escrito, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "aliança"
+      },
+      {
+        "id": "b",
+        "text": "alma"
+      },
+      {
+        "id": "c",
+        "text": "livro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "O rei, posto em pé no seu lugar, fez perante Jeová esta aliança, de andar após Jeová e guardar os seus mandamentos, os seus testemunhos e os seus estatutos de todo o seu coração e de toda a sua alma, a fim de cumprir as palavras da aliança que estavam escritas naquele livro.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "id": "cronicas-cam-cronicas-templo-02-reformas-e-quedas-05",
+    "template": "de todo o seu coração e de toda a sua ___."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Crônicas 34:31",
+    "learningObjective": "Compreender que a reforma de Josias é aliança perante Jeová para guardar o livro de todo o coração e de toda a alma.",
+    "evidence": [
+      "2 Crônicas 34:31"
+    ],
+    "type": "connect",
+    "question": "O que 2 Crônicas 34:31 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Crônicas 34:31 comunica que se liga a este contexto?",
+    "cue": "O que 2 Crônicas 34:31 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: reforma sem o livro e sem o coração não é a aliança do texto.",
+    "feedbackWrong": {
+      "b": "O texto não ensina reforma só estética do templo.",
+      "c": "Não trata o livro como relíquia sem cumprimento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Coração inteiro com o escrito"
+      },
+      {
+        "id": "b",
+        "text": "Reforma só estética do templo"
+      },
+      {
+        "id": "c",
+        "text": "Livro como relíquia sem cumprimento"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "O rei, posto em pé no seu lugar, fez perante Jeová esta aliança, de andar após Jeová e guardar os seus mandamentos, os seus testemunhos e os seus estatutos de todo o seu coração e de toda a sua alma, a fim de cumprir as palavras da aliança que estavam escritas naquele livro.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "id": "cronicas-cam-cronicas-templo-02-reformas-e-quedas-06",
+    "passageA": {
+      "ref": "2 Crônicas 34:31",
+      "text": "de todo o seu coração e de toda a sua alma"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Reforma é aliança de coração inteiro com o livro — não só conserto de pedras."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Crônicas 34:31",
+    "learningObjective": "Compreender que a reforma de Josias é aliança perante Jeová para guardar o livro de todo o coração e de toda a alma.",
+    "evidence": [
+      "2 Crônicas 34:31"
+    ],
+    "type": "true_false",
+    "question": "Cumprir as palavras escritas no livro é acessório; a reforma basta como conserto de pedras.",
+    "prompt": "Cumprir as palavras escritas no livro é acessório; a reforma basta como conserto de pedras.",
+    "cue": "Cumprir as palavras escritas no livro é acessório; a reforma basta como conserto de pedras.",
+    "feedbackCorrect": "Certo: o fim da aliança é cumprir o escrito, não só consertar pedras.",
+    "feedbackWrong": {
+      "true": "O versículo visa cumprir as palavras da aliança escritas no livro."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "O rei, posto em pé no seu lugar, fez perante Jeová esta aliança, de andar após Jeová e guardar os seus mandamentos, os seus testemunhos e os seus estatutos de todo o seu coração e de toda a sua alma, a fim de cumprir as palavras da aliança que estavam escritas naquele livro.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "id": "cronicas-pro-cronicas-templo-02-reformas-e-quedas-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Crônicas 34:31",
+    "learningObjective": "Compreender que a reforma de Josias é aliança perante Jeová para guardar o livro de todo o coração e de toda a alma.",
+    "evidence": [
+      "2 Crônicas 34:31"
+    ],
+    "type": "tap",
+    "question": "Em 2 Crônicas 34:31, toque a palavra que falta em \"guardar os seus ___, os seus testemunhos e os seus estatutos\"?",
+    "prompt": "Em 2 Crônicas 34:31, toque a palavra que falta em \"guardar os seus ___, os seus testemunhos e os seus estatutos\"?",
+    "cue": "Em 2 Crônicas 34:31, toque a palavra que falta em \"guardar os seus ___, os seus testemunhos e os seus estatutos\"?",
+    "feedbackCorrect": "Exato: guardar os \"mandamentos\", testemunhos e estatutos.",
+    "feedbackWrong": {
+      "a": "Livro é o suporte; a lacuna pede o primeiro objeto da guarda.",
+      "c": "Pé descreve a postura do rei, não o que se guarda."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "livro"
+      },
+      {
+        "id": "b",
+        "text": "mandamentos"
+      },
+      {
+        "id": "c",
+        "text": "pé"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "O rei, posto em pé no seu lugar, fez perante Jeová esta aliança, de andar após Jeová e guardar os seus mandamentos, os seus testemunhos e os seus estatutos de todo o seu coração e de toda a sua alma, a fim de cumprir as palavras da aliança que estavam escritas naquele livro.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "id": "cronicas-pro-cronicas-templo-02-reformas-e-quedas-02",
+    "template": "guardar os seus ___, os seus testemunhos e os seus estatutos"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Crônicas 34:31",
+    "learningObjective": "Compreender que a reforma de Josias é aliança perante Jeová para guardar o livro de todo o coração e de toda a alma.",
+    "evidence": [
+      "2 Crônicas 34:31"
+    ],
+    "type": "choice",
+    "question": "O que 2 Crônicas 34:31 ensina sobre o sentido da reforma?",
+    "prompt": "O que 2 Crônicas 34:31 ensina sobre o sentido da reforma?",
+    "cue": "O que 2 Crônicas 34:31 ensina sobre o sentido da reforma?",
+    "feedbackCorrect": "Certo: reforma é pacto vivo com a Palavra, de pessoa inteira.",
+    "feedbackWrong": {
+      "a": "O texto não reduz a aliança a cerimônia vazia.",
+      "c": "Não ensina que o livro substitui andar após Jeová.",
+      "d": "Não apresenta o coração como opcional diante dos estatutos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A aliança é só cerimônia, sem guarda posterior."
+      },
+      {
+        "id": "b",
+        "text": "Reforma é pacto com a Palavra, de pessoa inteira."
+      },
+      {
+        "id": "c",
+        "text": "O livro dispensa andar após Jeová."
+      },
+      {
+        "id": "d",
+        "text": "O coração é opcional diante dos estatutos."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "O rei, posto em pé no seu lugar, fez perante Jeová esta aliança, de andar após Jeová e guardar os seus mandamentos, os seus testemunhos e os seus estatutos de todo o seu coração e de toda a sua alma, a fim de cumprir as palavras da aliança que estavam escritas naquele livro.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "id": "cronicas-pro-cronicas-templo-02-reformas-e-quedas-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Crônicas 34:31",
+    "learningObjective": "Compreender que a reforma de Josias é aliança perante Jeová para guardar o livro de todo o coração e de toda a alma.",
+    "evidence": [
+      "2 Crônicas 34:31"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de 2 Crônicas 34:31?",
+    "prompt": "Qual sequência revela o sentido de 2 Crônicas 34:31?",
+    "cue": "Qual sequência revela o sentido de 2 Crônicas 34:31?",
+    "feedbackCorrect": "Certo: o sentido vai da postura pública à guarda interior e ao livro.",
+    "feedbackWrong": {
+      "a": "Começar pelo livro esconde o rei em pé fazendo aliança.",
+      "c": "A guarda interior não é o primeiro movimento visível."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "cumprir as palavras da aliança que estavam escritas naquele livro"
+      },
+      {
+        "id": "b",
+        "text": "O rei, posto em pé no seu lugar, fez perante Jeová esta aliança"
+      },
+      {
+        "id": "c",
+        "text": "guardar de todo o seu coração e de toda a sua alma"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "O rei, posto em pé no seu lugar, fez perante Jeová esta aliança, de andar após Jeová e guardar os seus mandamentos, os seus testemunhos e os seus estatutos de todo o seu coração e de toda a sua alma, a fim de cumprir as palavras da aliança que estavam escritas naquele livro.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "id": "cronicas-pro-cronicas-templo-02-reformas-e-quedas-04",
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Crônicas 34:31",
+    "learningObjective": "Compreender que a reforma de Josias é aliança perante Jeová para guardar o livro de todo o coração e de toda a alma.",
+    "evidence": [
+      "2 Crônicas 34:31"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"as palavras da aliança que estavam ___ naquele livro.\"",
+    "prompt": "Complete a frase: \"as palavras da aliança que estavam ___ naquele livro.\"",
+    "cue": "Complete a frase: \"as palavras da aliança que estavam ___ naquele livro.\"",
+    "feedbackCorrect": "Certo: as palavras estavam \"escritas\" naquele livro.",
+    "feedbackWrong": {
+      "a": "Posto descreve o rei em pé, não as palavras.",
+      "c": "Andar é o compromisso, não o estado das palavras no livro."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "posto"
+      },
+      {
+        "id": "b",
+        "text": "escritas"
+      },
+      {
+        "id": "c",
+        "text": "andar"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "O rei, posto em pé no seu lugar, fez perante Jeová esta aliança, de andar após Jeová e guardar os seus mandamentos, os seus testemunhos e os seus estatutos de todo o seu coração e de toda a sua alma, a fim de cumprir as palavras da aliança que estavam escritas naquele livro.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "id": "cronicas-pro-cronicas-templo-02-reformas-e-quedas-05",
+    "template": "as palavras da aliança que estavam ___ naquele livro."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Crônicas 34:31",
+    "learningObjective": "Compreender que a reforma de Josias é aliança perante Jeová para guardar o livro de todo o coração e de toda a alma.",
+    "evidence": [
+      "2 Crônicas 34:31"
+    ],
+    "type": "connect",
+    "question": "O que 2 Crônicas 34:31 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Crônicas 34:31 comunica que se liga a este contexto?",
+    "cue": "O que 2 Crônicas 34:31 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o livro cobra o rei inteiro, não só o pedreiro do templo.",
+    "feedbackWrong": {
+      "a": "O texto não ensina reforma sem Palavra.",
+      "b": "Não trata a aliança como pose sem cumprimento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Reforma sem Palavra"
+      },
+      {
+        "id": "b",
+        "text": "Aliança como pose vazia"
+      },
+      {
+        "id": "c",
+        "text": "Livro que cobra o rei inteiro"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "O rei, posto em pé no seu lugar, fez perante Jeová esta aliança, de andar após Jeová e guardar os seus mandamentos, os seus testemunhos e os seus estatutos de todo o seu coração e de toda a sua alma, a fim de cumprir as palavras da aliança que estavam escritas naquele livro.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-02-reformas-e-quedas",
+    "id": "cronicas-pro-cronicas-templo-02-reformas-e-quedas-06",
+    "passageA": {
+      "ref": "2 Crônicas 34:31",
+      "text": "a fim de cumprir as palavras da aliança que estavam escritas naquele livro"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Reforma é aliança de coração inteiro com o livro — não só conserto de pedras."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Crônicas 7:14",
+    "learningObjective": "Aprender que Jeová ouve, perdoa e sara se o povo do seu nome se humilhar, orar, buscar a face e se desviar dos maus caminhos.",
+    "evidence": [
+      "2 Crônicas 7:14"
+    ],
+    "type": "true_false",
+    "question": "Jeová fala de um povo sobre quem foi invocado o seu nome.",
+    "prompt": "Jeová fala de um povo sobre quem foi invocado o seu nome.",
+    "cue": "Jeová fala de um povo sobre quem foi invocado o seu nome.",
+    "feedbackCorrect": "Certo: o versículo identifica o povo pelo nome invocado.",
+    "feedbackWrong": {
+      "false": "Releia: se o meu povo, sobre quem foi invocado o meu nome."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "se o meu povo, sobre quem foi invocado o meu nome, se humilhar, e orar, e buscar a minha face, e se desviar dos seus maus caminhos, eu ouvirei do céu, e perdoarei os seus pecados, e curarei a sua terra.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "id": "cronicas-sem-cronicas-templo-03-desafio-o-templo-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Crônicas 7:14",
+    "learningObjective": "Aprender que Jeová ouve, perdoa e sara se o povo do seu nome se humilhar, orar, buscar a face e se desviar dos maus caminhos.",
+    "evidence": [
+      "2 Crônicas 7:14"
+    ],
+    "type": "tap",
+    "question": "Em 2 Crônicas 7:14, toque a palavra que falta em \"se o meu povo, sobre quem foi invocado o meu nome, se ___\"?",
+    "prompt": "Em 2 Crônicas 7:14, toque a palavra que falta em \"se o meu povo, sobre quem foi invocado o meu nome, se ___\"?",
+    "cue": "Em 2 Crônicas 7:14, toque a palavra que falta em \"se o meu povo, sobre quem foi invocado o meu nome, se ___\"?",
+    "feedbackCorrect": "Exato: o povo deve se \"humilhar\".",
+    "feedbackWrong": {
+      "b": "Orar vem em seguida, mas não preenche esta primeira lacuna.",
+      "c": "Terra é o que Jeová curará, não o verbo do povo aqui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "humilhar"
+      },
+      {
+        "id": "b",
+        "text": "orar"
+      },
+      {
+        "id": "c",
+        "text": "terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "se o meu povo, sobre quem foi invocado o meu nome, se humilhar, e orar, e buscar a minha face, e se desviar dos seus maus caminhos, eu ouvirei do céu, e perdoarei os seus pecados, e curarei a sua terra.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "id": "cronicas-sem-cronicas-templo-03-desafio-o-templo-02",
+    "template": "se o meu povo, sobre quem foi invocado o meu nome, se ___,"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Crônicas 7:14",
+    "learningObjective": "Aprender que Jeová ouve, perdoa e sara se o povo do seu nome se humilhar, orar, buscar a face e se desviar dos maus caminhos.",
+    "evidence": [
+      "2 Crônicas 7:14"
+    ],
+    "type": "choice",
+    "question": "O que Jeová promete fazer se o povo se humilhar, orar, buscar a face e se desviar?",
+    "prompt": "O que Jeová promete fazer se o povo se humilhar, orar, buscar a face e se desviar?",
+    "cue": "O que Jeová promete fazer se o povo se humilhar, orar, buscar a face e se desviar?",
+    "feedbackCorrect": "Certo: ouvirá do céu, perdoará os pecados e curará a terra.",
+    "feedbackWrong": {
+      "a": "O texto não promete ignorar o povo.",
+      "c": "Não ameaça destruir a terra neste versículo.",
+      "d": "Não recusa ouvir do céu."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ignorar o povo e calar o céu."
+      },
+      {
+        "id": "b",
+        "text": "Ouvir do céu, perdoar os pecados e curar a terra."
+      },
+      {
+        "id": "c",
+        "text": "Destruir a terra sem perdoar."
+      },
+      {
+        "id": "d",
+        "text": "Recusar ouvir, mesmo com humilhação."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "se o meu povo, sobre quem foi invocado o meu nome, se humilhar, e orar, e buscar a minha face, e se desviar dos seus maus caminhos, eu ouvirei do céu, e perdoarei os seus pecados, e curarei a sua terra.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "id": "cronicas-sem-cronicas-templo-03-desafio-o-templo-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Crônicas 7:14",
+    "learningObjective": "Aprender que Jeová ouve, perdoa e sara se o povo do seu nome se humilhar, orar, buscar a face e se desviar dos maus caminhos.",
+    "evidence": [
+      "2 Crônicas 7:14"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em 2 Crônicas 7:14?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 2 Crônicas 7:14?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 2 Crônicas 7:14?",
+    "feedbackCorrect": "Certo: humilhar e orar, desviar-se, então ouvir, perdoar e curar.",
+    "feedbackWrong": {
+      "b": "A cura da terra fecha a promessa, não a abre.",
+      "c": "Desviar-se vem depois de humilhar e orar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "se humilhar, e orar, e buscar a minha face"
+      },
+      {
+        "id": "b",
+        "text": "se desviar dos seus maus caminhos"
+      },
+      {
+        "id": "c",
+        "text": "eu ouvirei do céu, e perdoarei os seus pecados, e curarei a sua terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "se o meu povo, sobre quem foi invocado o meu nome, se humilhar, e orar, e buscar a minha face, e se desviar dos seus maus caminhos, eu ouvirei do céu, e perdoarei os seus pecados, e curarei a sua terra.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "id": "cronicas-sem-cronicas-templo-03-desafio-o-templo-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Crônicas 7:14",
+    "learningObjective": "Aprender que Jeová ouve, perdoa e sara se o povo do seu nome se humilhar, orar, buscar a face e se desviar dos maus caminhos.",
+    "evidence": [
+      "2 Crônicas 7:14"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"e buscar a minha ___.\"",
+    "prompt": "Complete a frase: \"e buscar a minha ___.\"",
+    "cue": "Complete a frase: \"e buscar a minha ___.\"",
+    "feedbackCorrect": "Certo: o povo deve buscar a \"face\" de Jeová.",
+    "feedbackWrong": {
+      "a": "Terra é o que será curada, não o que se busca aqui.",
+      "c": "Céu é de onde Jeová ouve, não o objeto da busca."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "terra"
+      },
+      {
+        "id": "b",
+        "text": "face"
+      },
+      {
+        "id": "c",
+        "text": "céu"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "se o meu povo, sobre quem foi invocado o meu nome, se humilhar, e orar, e buscar a minha face, e se desviar dos seus maus caminhos, eu ouvirei do céu, e perdoarei os seus pecados, e curarei a sua terra.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "id": "cronicas-sem-cronicas-templo-03-desafio-o-templo-05",
+    "template": "e buscar a minha ___,"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Crônicas 7:14",
+    "learningObjective": "Aprender que Jeová ouve, perdoa e sara se o povo do seu nome se humilhar, orar, buscar a face e se desviar dos maus caminhos.",
+    "evidence": [
+      "2 Crônicas 7:14"
+    ],
+    "type": "connect",
+    "question": "O que 2 Crônicas 7:14 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Crônicas 7:14 comunica que se liga a este contexto?",
+    "cue": "O que 2 Crônicas 7:14 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o templo vive da humilhação do povo, não só do edifício.",
+    "feedbackWrong": {
+      "a": "O texto não ensina templo automático sem o povo.",
+      "c": "Não apresenta Jeová surdo à humilhação."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Templo automático sem o povo"
+      },
+      {
+        "id": "b",
+        "text": "Humilhação que abre o céu"
+      },
+      {
+        "id": "c",
+        "text": "Jeová surdo à humilhação"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "se o meu povo, sobre quem foi invocado o meu nome, se humilhar, e orar, e buscar a minha face, e se desviar dos seus maus caminhos, eu ouvirei do céu, e perdoarei os seus pecados, e curarei a sua terra.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "id": "cronicas-sem-cronicas-templo-03-desafio-o-templo-06",
+    "passageA": {
+      "ref": "2 Crônicas 7:14",
+      "text": "se humilhar, e orar, e buscar a minha face"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O templo vive da humilhação do povo: orar, buscar a face, desviar-se — Jeová ouve e sara."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Crônicas 7:14",
+    "learningObjective": "Aprender que Jeová ouve, perdoa e sara se o povo do seu nome se humilhar, orar, buscar a face e se desviar dos maus caminhos.",
+    "evidence": [
+      "2 Crônicas 7:14"
+    ],
+    "type": "true_false",
+    "question": "Jeová promete curar a terra mesmo se o povo persistir nos maus caminhos, sem se desviar.",
+    "prompt": "Jeová promete curar a terra mesmo se o povo persistir nos maus caminhos, sem se desviar.",
+    "cue": "Jeová promete curar a terra mesmo se o povo persistir nos maus caminhos, sem se desviar.",
+    "feedbackCorrect": "Certo: desviar-se dos maus caminhos faz parte da condição.",
+    "feedbackWrong": {
+      "true": "O texto exige também desviar-se dos maus caminhos."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "se o meu povo, sobre quem foi invocado o meu nome, se humilhar, e orar, e buscar a minha face, e se desviar dos seus maus caminhos, eu ouvirei do céu, e perdoarei os seus pecados, e curarei a sua terra.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "id": "cronicas-cam-cronicas-templo-03-desafio-o-templo-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Crônicas 7:14",
+    "learningObjective": "Aprender que Jeová ouve, perdoa e sara se o povo do seu nome se humilhar, orar, buscar a face e se desviar dos maus caminhos.",
+    "evidence": [
+      "2 Crônicas 7:14"
+    ],
+    "type": "tap",
+    "question": "Em 2 Crônicas 7:14, toque a palavra que falta em \"e se ___ dos seus maus caminhos\"?",
+    "prompt": "Em 2 Crônicas 7:14, toque a palavra que falta em \"e se ___ dos seus maus caminhos\"?",
+    "cue": "Em 2 Crônicas 7:14, toque a palavra que falta em \"e se ___ dos seus maus caminhos\"?",
+    "feedbackCorrect": "Exato: o povo deve se \"desviar\" dos maus caminhos.",
+    "feedbackWrong": {
+      "a": "Humilhar abre a série; esta lacuna pede o desvio dos caminhos.",
+      "c": "Pecados são o que Jeová perdoa, não o verbo desta cláusula."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "humilhar"
+      },
+      {
+        "id": "b",
+        "text": "desviar"
+      },
+      {
+        "id": "c",
+        "text": "pecados"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "se o meu povo, sobre quem foi invocado o meu nome, se humilhar, e orar, e buscar a minha face, e se desviar dos seus maus caminhos, eu ouvirei do céu, e perdoarei os seus pecados, e curarei a sua terra.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "id": "cronicas-cam-cronicas-templo-03-desafio-o-templo-02",
+    "template": "e se ___ dos seus maus caminhos"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Crônicas 7:14",
+    "learningObjective": "Aprender que Jeová ouve, perdoa e sara se o povo do seu nome se humilhar, orar, buscar a face e se desviar dos maus caminhos.",
+    "evidence": [
+      "2 Crônicas 7:14"
+    ],
+    "type": "choice",
+    "question": "Como se relacionam as ações do povo e as promessas de Jeová em 2 Crônicas 7:14?",
+    "prompt": "Como se relacionam as ações do povo e as promessas de Jeová em 2 Crônicas 7:14?",
+    "cue": "Como se relacionam as ações do povo e as promessas de Jeová em 2 Crônicas 7:14?",
+    "feedbackCorrect": "Certo: humilhar, orar, buscar e desviar-se antecedem ouvir, perdoar e curar.",
+    "feedbackWrong": {
+      "a": "O texto não inverte a ordem: a cura não vem antes da humilhação.",
+      "c": "Não reduz tudo a orar sem desvio dos caminhos.",
+      "d": "O nome invocado não anula a necessidade de se humilhar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A cura da terra vem primeiro, depois a humilhação."
+      },
+      {
+        "id": "b",
+        "text": "As ações do povo antecedem ouvir, perdoar e curar."
+      },
+      {
+        "id": "c",
+        "text": "Basta orar; desviar-se dos caminhos é opcional."
+      },
+      {
+        "id": "d",
+        "text": "O nome invocado dispensa qualquer humilhação."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "se o meu povo, sobre quem foi invocado o meu nome, se humilhar, e orar, e buscar a minha face, e se desviar dos seus maus caminhos, eu ouvirei do céu, e perdoarei os seus pecados, e curarei a sua terra.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "id": "cronicas-cam-cronicas-templo-03-desafio-o-templo-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Crônicas 7:14",
+    "learningObjective": "Aprender que Jeová ouve, perdoa e sara se o povo do seu nome se humilhar, orar, buscar a face e se desviar dos maus caminhos.",
+    "evidence": [
+      "2 Crônicas 7:14"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de 2 Crônicas 7:14?",
+    "prompt": "Como se encadeiam os eventos de 2 Crônicas 7:14?",
+    "cue": "Como se encadeiam os eventos de 2 Crônicas 7:14?",
+    "feedbackCorrect": "Certo: o povo se humilha e se desvia; então Jeová ouve e sara.",
+    "feedbackWrong": {
+      "a": "A cura não abre o encadeamento do versículo.",
+      "c": "Desviar-se não vem depois da promessa de ouvir."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "eu ouvirei do céu, e perdoarei os seus pecados, e curarei a sua terra"
+      },
+      {
+        "id": "b",
+        "text": "se humilhar, e orar, e buscar a minha face"
+      },
+      {
+        "id": "c",
+        "text": "se desviar dos seus maus caminhos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "se o meu povo, sobre quem foi invocado o meu nome, se humilhar, e orar, e buscar a minha face, e se desviar dos seus maus caminhos, eu ouvirei do céu, e perdoarei os seus pecados, e curarei a sua terra.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "id": "cronicas-cam-cronicas-templo-03-desafio-o-templo-04",
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Crônicas 7:14",
+    "learningObjective": "Aprender que Jeová ouve, perdoa e sara se o povo do seu nome se humilhar, orar, buscar a face e se desviar dos maus caminhos.",
+    "evidence": [
+      "2 Crônicas 7:14"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"e perdoarei os seus ___.\"",
+    "prompt": "Complete a frase: \"e perdoarei os seus ___.\"",
+    "cue": "Complete a frase: \"e perdoarei os seus ___.\"",
+    "feedbackCorrect": "Certo: Jeová perdoará os \"pecados\".",
+    "feedbackWrong": {
+      "a": "Caminhos são de onde o povo se desvia, não o objeto do perdão aqui.",
+      "c": "Nome identifica o povo, não o que se perdoa nesta frase."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "caminhos"
+      },
+      {
+        "id": "b",
+        "text": "pecados"
+      },
+      {
+        "id": "c",
+        "text": "nome"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "se o meu povo, sobre quem foi invocado o meu nome, se humilhar, e orar, e buscar a minha face, e se desviar dos seus maus caminhos, eu ouvirei do céu, e perdoarei os seus pecados, e curarei a sua terra.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "id": "cronicas-cam-cronicas-templo-03-desafio-o-templo-05",
+    "template": "e perdoarei os seus ___,"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Crônicas 7:14",
+    "learningObjective": "Aprender que Jeová ouve, perdoa e sara se o povo do seu nome se humilhar, orar, buscar a face e se desviar dos maus caminhos.",
+    "evidence": [
+      "2 Crônicas 7:14"
+    ],
+    "type": "connect",
+    "question": "O que 2 Crônicas 7:14 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Crônicas 7:14 comunica que se liga a este contexto?",
+    "cue": "O que 2 Crônicas 7:14 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o templo pede povo que se desvia, não só ritual no recinto.",
+    "feedbackWrong": {
+      "b": "O texto não ensina perdão sem desvio dos caminhos.",
+      "c": "Não trata a face de Jeová como irrelevante."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Povo que se desvia e é ouvido"
+      },
+      {
+        "id": "b",
+        "text": "Perdão sem desvio dos caminhos"
+      },
+      {
+        "id": "c",
+        "text": "Face de Jeová como irrelevante"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "se o meu povo, sobre quem foi invocado o meu nome, se humilhar, e orar, e buscar a minha face, e se desviar dos seus maus caminhos, eu ouvirei do céu, e perdoarei os seus pecados, e curarei a sua terra.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "id": "cronicas-cam-cronicas-templo-03-desafio-o-templo-06",
+    "passageA": {
+      "ref": "2 Crônicas 7:14",
+      "text": "se desviar dos seus maus caminhos"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O templo vive da humilhação do povo: orar, buscar a face, desviar-se — Jeová ouve e sara."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Crônicas 7:14",
+    "learningObjective": "Aprender que Jeová ouve, perdoa e sara se o povo do seu nome se humilhar, orar, buscar a face e se desviar dos maus caminhos.",
+    "evidence": [
+      "2 Crônicas 7:14"
+    ],
+    "type": "true_false",
+    "question": "O templo permanece vivo mesmo que o povo recuse humilhar-se, orar e buscar a face de Jeová.",
+    "prompt": "O templo permanece vivo mesmo que o povo recuse humilhar-se, orar e buscar a face de Jeová.",
+    "cue": "O templo permanece vivo mesmo que o povo recuse humilhar-se, orar e buscar a face de Jeová.",
+    "feedbackCorrect": "Certo: a promessa condiciona a vida da terra à humilhação do povo.",
+    "feedbackWrong": {
+      "true": "2 Crônicas 7:14 liga ouvir, perdoar e curar às ações do povo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "se o meu povo, sobre quem foi invocado o meu nome, se humilhar, e orar, e buscar a minha face, e se desviar dos seus maus caminhos, eu ouvirei do céu, e perdoarei os seus pecados, e curarei a sua terra.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "id": "cronicas-pro-cronicas-templo-03-desafio-o-templo-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Crônicas 7:14",
+    "learningObjective": "Aprender que Jeová ouve, perdoa e sara se o povo do seu nome se humilhar, orar, buscar a face e se desviar dos maus caminhos.",
+    "evidence": [
+      "2 Crônicas 7:14"
+    ],
+    "type": "tap",
+    "question": "Em 2 Crônicas 7:14, toque a palavra que falta em \"e ___ a sua terra\"?",
+    "prompt": "Em 2 Crônicas 7:14, toque a palavra que falta em \"e ___ a sua terra\"?",
+    "cue": "Em 2 Crônicas 7:14, toque a palavra que falta em \"e ___ a sua terra\"?",
+    "feedbackCorrect": "Exato: Jeová \"curarei\" a terra do povo.",
+    "feedbackWrong": {
+      "a": "Ouvirei é a primeira ação de Jeová, não esta lacuna final.",
+      "c": "Buscar é ação do povo, não o verbo desta promessa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "ouvirei"
+      },
+      {
+        "id": "b",
+        "text": "curarei"
+      },
+      {
+        "id": "c",
+        "text": "buscar"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "se o meu povo, sobre quem foi invocado o meu nome, se humilhar, e orar, e buscar a minha face, e se desviar dos seus maus caminhos, eu ouvirei do céu, e perdoarei os seus pecados, e curarei a sua terra.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "id": "cronicas-pro-cronicas-templo-03-desafio-o-templo-02",
+    "template": "e ___ a sua terra."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Crônicas 7:14",
+    "learningObjective": "Aprender que Jeová ouve, perdoa e sara se o povo do seu nome se humilhar, orar, buscar a face e se desviar dos maus caminhos.",
+    "evidence": [
+      "2 Crônicas 7:14"
+    ],
+    "type": "choice",
+    "question": "O que 2 Crônicas 7:14 ensina sobre o sentido do templo para o povo do nome?",
+    "prompt": "O que 2 Crônicas 7:14 ensina sobre o sentido do templo para o povo do nome?",
+    "cue": "O que 2 Crônicas 7:14 ensina sobre o sentido do templo para o povo do nome?",
+    "feedbackCorrect": "Certo: o nome invocado convoca humilhação; Jeová ouve e sara.",
+    "feedbackWrong": {
+      "a": "O texto não trata o templo como amuleto automático.",
+      "c": "Não ensina que o céu está fechado à humilhação.",
+      "d": "Não reduz a cura da terra a obra humana sem Jeová."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O templo garante bênção automática, sem humilhação."
+      },
+      {
+        "id": "b",
+        "text": "O nome invocado convoca humilhar-se; Jeová ouve e sara."
+      },
+      {
+        "id": "c",
+        "text": "O céu permanece fechado mesmo à face buscada."
+      },
+      {
+        "id": "d",
+        "text": "A terra sara só por esforço, sem Jeová ouvir."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "se o meu povo, sobre quem foi invocado o meu nome, se humilhar, e orar, e buscar a minha face, e se desviar dos seus maus caminhos, eu ouvirei do céu, e perdoarei os seus pecados, e curarei a sua terra.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "id": "cronicas-pro-cronicas-templo-03-desafio-o-templo-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Crônicas 7:14",
+    "learningObjective": "Aprender que Jeová ouve, perdoa e sara se o povo do seu nome se humilhar, orar, buscar a face e se desviar dos maus caminhos.",
+    "evidence": [
+      "2 Crônicas 7:14"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de 2 Crônicas 7:14?",
+    "prompt": "Qual sequência revela o sentido de 2 Crônicas 7:14?",
+    "cue": "Qual sequência revela o sentido de 2 Crônicas 7:14?",
+    "feedbackCorrect": "Certo: o sentido vai do povo do nome à conversão e à resposta do céu.",
+    "feedbackWrong": {
+      "a": "Começar pela cura esconde a condição do povo.",
+      "c": "O desvio dos caminhos não é o primeiro movimento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "eu ouvirei do céu, e perdoarei os seus pecados, e curarei a sua terra"
+      },
+      {
+        "id": "b",
+        "text": "se o meu povo, sobre quem foi invocado o meu nome, se humilhar e orar"
+      },
+      {
+        "id": "c",
+        "text": "buscar a minha face e se desviar dos seus maus caminhos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "se o meu povo, sobre quem foi invocado o meu nome, se humilhar, e orar, e buscar a minha face, e se desviar dos seus maus caminhos, eu ouvirei do céu, e perdoarei os seus pecados, e curarei a sua terra.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "id": "cronicas-pro-cronicas-templo-03-desafio-o-templo-04",
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Crônicas 7:14",
+    "learningObjective": "Aprender que Jeová ouve, perdoa e sara se o povo do seu nome se humilhar, orar, buscar a face e se desviar dos maus caminhos.",
+    "evidence": [
+      "2 Crônicas 7:14"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"se o meu povo, sobre quem foi invocado o meu ___.\"",
+    "prompt": "Complete a frase: \"se o meu povo, sobre quem foi invocado o meu ___.\"",
+    "cue": "Complete a frase: \"se o meu povo, sobre quem foi invocado o meu ___.\"",
+    "feedbackCorrect": "Certo: o povo é aquele sobre quem foi invocado o \"nome\".",
+    "feedbackWrong": {
+      "a": "Céu é de onde Jeová ouve, não o que foi invocado sobre o povo.",
+      "c": "Face é o que se busca, não esta identificação inicial."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "céu"
+      },
+      {
+        "id": "b",
+        "text": "nome"
+      },
+      {
+        "id": "c",
+        "text": "face"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "se o meu povo, sobre quem foi invocado o meu nome, se humilhar, e orar, e buscar a minha face, e se desviar dos seus maus caminhos, eu ouvirei do céu, e perdoarei os seus pecados, e curarei a sua terra.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "id": "cronicas-pro-cronicas-templo-03-desafio-o-templo-05",
+    "template": "se o meu povo, sobre quem foi invocado o meu ___,"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Crônicas 7:14",
+    "learningObjective": "Aprender que Jeová ouve, perdoa e sara se o povo do seu nome se humilhar, orar, buscar a face e se desviar dos maus caminhos.",
+    "evidence": [
+      "2 Crônicas 7:14"
+    ],
+    "type": "connect",
+    "question": "O que 2 Crônicas 7:14 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Crônicas 7:14 comunica que se liga a este contexto?",
+    "cue": "O que 2 Crônicas 7:14 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Jeová sara a terra quando o povo do nome se volta.",
+    "feedbackWrong": {
+      "a": "O texto não ensina templo que vive sem conversão.",
+      "b": "Não apresenta a cura como prêmio ao orgulho."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Templo vivo sem conversão"
+      },
+      {
+        "id": "b",
+        "text": "Cura como prêmio ao orgulho"
+      },
+      {
+        "id": "c",
+        "text": "Jeová que ouve e sara"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "se o meu povo, sobre quem foi invocado o meu nome, se humilhar, e orar, e buscar a minha face, e se desviar dos seus maus caminhos, eu ouvirei do céu, e perdoarei os seus pecados, e curarei a sua terra.",
+    "trail": "cronicas",
+    "section": "cronicas-templo-03-desafio-o-templo",
+    "id": "cronicas-pro-cronicas-templo-03-desafio-o-templo-06",
+    "passageA": {
+      "ref": "2 Crônicas 7:14",
+      "text": "eu ouvirei do céu, e perdoarei os seus pecados, e curarei a sua terra"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O templo vive da humilhação do povo: orar, buscar a face, desviar-se — Jeová ouve e sara."
+    }
+  }
+]

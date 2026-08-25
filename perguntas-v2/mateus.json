@@ -1,0 +1,3809 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 1:21–23",
+    "learningObjective": "Reconhecer que o filho se chama Jesus porque salva do pecado, e Emanuel — Deus conosco.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 1:22",
+      "Mateus 1:23"
+    ],
+    "type": "true_false",
+    "question": "O filho se chamará JESUS, porque ele salvará o seu povo dos pecados deles.",
+    "prompt": "O filho se chamará JESUS, porque ele salvará o seu povo dos pecados deles.",
+    "cue": "O filho se chamará JESUS, porque ele salvará o seu povo dos pecados deles.",
+    "feedbackCorrect": "Certo: o nome Jesus está ligado a salvar do pecado.",
+    "feedbackWrong": {
+      "false": "Releia Mateus 1:21: o nome explica a salvação."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Ora, tudo isto aconteceu, para que se cumprisse o que dissera o Senhor pelo profeta: Eis que a virgem conceberá e dará à luz um filho, e ele será chamado Emanuel, que quer dizer Deus conosco.",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "id": "mateus-sem-mt-01-rei-prometido-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 1:21–23",
+    "learningObjective": "Reconhecer que o filho se chama Jesus porque salva do pecado, e Emanuel — Deus conosco.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 1:22",
+      "Mateus 1:23"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 1:21–23, toque a palavra que falta em \"a quem chamarás ___, porque ele salvará o seu povo dos pecados deles\"?",
+    "prompt": "Em Mateus 1:21–23, toque a palavra que falta em \"a quem chamarás ___, porque ele salvará o seu povo dos pecados deles\"?",
+    "cue": "Em Mateus 1:21–23, toque a palavra que falta em \"a quem chamarás ___, porque ele salvará o seu povo dos pecados deles\"?",
+    "feedbackCorrect": "Exato: o nome anunciado é JESUS.",
+    "feedbackWrong": {
+      "b": "Emanuel aparece depois, na citação do profeta.",
+      "c": "Virgem pertence à profecia, não a esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "JESUS"
+      },
+      {
+        "id": "b",
+        "text": "Emanuel"
+      },
+      {
+        "id": "c",
+        "text": "virgem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Ora, tudo isto aconteceu, para que se cumprisse o que dissera o Senhor pelo profeta: Eis que a virgem conceberá e dará à luz um filho, e ele será chamado Emanuel, que quer dizer Deus conosco.",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "id": "mateus-sem-mt-01-rei-prometido-02",
+    "template": "a quem chamarás ___, porque ele salvará o seu povo dos pecados deles"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 1:21–23",
+    "learningObjective": "Reconhecer que o filho se chama Jesus porque salva do pecado, e Emanuel — Deus conosco.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 1:22",
+      "Mateus 1:23"
+    ],
+    "type": "choice",
+    "question": "O que o texto afirma diretamente sobre o nome JESUS?",
+    "prompt": "O que o texto afirma diretamente sobre o nome JESUS?",
+    "cue": "O que o texto afirma diretamente sobre o nome JESUS?",
+    "feedbackCorrect": "Certo: o nome explica que ele salvará dos pecados.",
+    "feedbackWrong": {
+      "b": "O texto liga o nome à salvação dos pecados, não à fama.",
+      "c": "Emanuel é o outro nome, na citação profética.",
+      "d": "O texto não diz que o povo escolherá o nome."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Chamar-se-á assim porque salvará o povo dos pecados."
+      },
+      {
+        "id": "b",
+        "text": "O nome serve só para tornar o menino famoso."
+      },
+      {
+        "id": "c",
+        "text": "JESUS, no texto, quer dizer Deus conosco."
+      },
+      {
+        "id": "d",
+        "text": "O povo é quem escolherá o nome depois do nascimento."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Ora, tudo isto aconteceu, para que se cumprisse o que dissera o Senhor pelo profeta: Eis que a virgem conceberá e dará à luz um filho, e ele será chamado Emanuel, que quer dizer Deus conosco.",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "id": "mateus-sem-mt-01-rei-prometido-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 1:21–23",
+    "learningObjective": "Reconhecer que o filho se chama Jesus porque salva do pecado, e Emanuel — Deus conosco.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 1:22",
+      "Mateus 1:23"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Mateus 1:21–23?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Mateus 1:21–23?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Mateus 1:21–23?",
+    "feedbackCorrect": "Certo: nascimento, nome Jesus e Emanuel nessa ordem.",
+    "feedbackWrong": {
+      "b": "O nome Jesus vem junto do anúncio do filho.",
+      "c": "Emanuel fecha a citação do profeta."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ela dará à luz um filho, a quem chamarás JESUS"
+      },
+      {
+        "id": "b",
+        "text": "porque ele salvará o seu povo dos pecados deles"
+      },
+      {
+        "id": "c",
+        "text": "ele será chamado Emanuel, que quer dizer Deus conosco"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Ora, tudo isto aconteceu, para que se cumprisse o que dissera o Senhor pelo profeta: Eis que a virgem conceberá e dará à luz um filho, e ele será chamado Emanuel, que quer dizer Deus conosco.",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "id": "mateus-sem-mt-01-rei-prometido-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 1:21–23",
+    "learningObjective": "Reconhecer que o filho se chama Jesus porque salva do pecado, e Emanuel — Deus conosco.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 1:22",
+      "Mateus 1:23"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"ele será chamado ___, que quer dizer Deus conosco\"",
+    "prompt": "Complete a frase: \"ele será chamado ___, que quer dizer Deus conosco\"",
+    "cue": "Complete a frase: \"ele será chamado ___, que quer dizer Deus conosco\"",
+    "feedbackCorrect": "Certo: o nome da profecia é Emanuel.",
+    "feedbackWrong": {
+      "b": "JESUS é o nome do versículo 21, não desta lacuna.",
+      "c": "Virgem descreve quem concebe, não o nome do filho."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Emanuel"
+      },
+      {
+        "id": "b",
+        "text": "JESUS"
+      },
+      {
+        "id": "c",
+        "text": "virgem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Ora, tudo isto aconteceu, para que se cumprisse o que dissera o Senhor pelo profeta: Eis que a virgem conceberá e dará à luz um filho, e ele será chamado Emanuel, que quer dizer Deus conosco.",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "id": "mateus-sem-mt-01-rei-prometido-05",
+    "template": "ele será chamado ___, que quer dizer Deus conosco"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 1:21–23",
+    "learningObjective": "Reconhecer que o filho se chama Jesus porque salva do pecado, e Emanuel — Deus conosco.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 1:22",
+      "Mateus 1:23"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 1:21–23 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 1:21–23 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 1:21–23 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Jesus salva do pecado e é Deus conosco.",
+    "feedbackWrong": {
+      "b": "O texto une salvação e presença, não só o nome isolado.",
+      "c": "Emanuel quer dizer Deus conosco, não ausência divina."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus salva e é Emanuel"
+      },
+      {
+        "id": "b",
+        "text": "O nome não explica a missão"
+      },
+      {
+        "id": "c",
+        "text": "Deus permanece longe do povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Ora, tudo isto aconteceu, para que se cumprisse o que dissera o Senhor pelo profeta: Eis que a virgem conceberá e dará à luz um filho, e ele será chamado Emanuel, que quer dizer Deus conosco.",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "id": "mateus-sem-mt-01-rei-prometido-06",
+    "passageA": {
+      "ref": "Mateus 1:21–23",
+      "text": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Ora, tudo isto aconteceu, para que se cumprisse o que dissera o Senhor pelo profeta: Eis que a virgem conceberá e dará à luz um filho, e ele será chamado Emanuel, que quer dizer Deus conosco."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Rei prometido é Jesus que salva do pecado e Emanuel — Deus conosco."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 1:21–23",
+    "learningObjective": "Reconhecer que o filho se chama Jesus porque salva do pecado, e Emanuel — Deus conosco.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 1:22",
+      "Mateus 1:23"
+    ],
+    "type": "true_false",
+    "question": "O nome Emanuel, segundo o texto, quer dizer o povo sem pecados.",
+    "prompt": "O nome Emanuel, segundo o texto, quer dizer o povo sem pecados.",
+    "cue": "O nome Emanuel, segundo o texto, quer dizer o povo sem pecados.",
+    "feedbackCorrect": "Certo: Emanuel quer dizer Deus conosco, não isso.",
+    "feedbackWrong": {
+      "true": "Mateus 1:23 traduz Emanuel: Deus conosco."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Ora, tudo isto aconteceu, para que se cumprisse o que dissera o Senhor pelo profeta: Eis que a virgem conceberá e dará à luz um filho, e ele será chamado Emanuel, que quer dizer Deus conosco.",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "id": "mateus-cam-mt-01-rei-prometido-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 1:21–23",
+    "learningObjective": "Reconhecer que o filho se chama Jesus porque salva do pecado, e Emanuel — Deus conosco.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 1:22",
+      "Mateus 1:23"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 1:21–23, toque a palavra que falta em \"tudo isto aconteceu, para que se ___ o que dissera o Senhor pelo profeta\"?",
+    "prompt": "Em Mateus 1:21–23, toque a palavra que falta em \"tudo isto aconteceu, para que se ___ o que dissera o Senhor pelo profeta\"?",
+    "cue": "Em Mateus 1:21–23, toque a palavra que falta em \"tudo isto aconteceu, para que se ___ o que dissera o Senhor pelo profeta\"?",
+    "feedbackCorrect": "Exato: tudo aconteceu para que se cumprisse.",
+    "feedbackWrong": {
+      "b": "Conceberá pertence à citação, não a esta lacuna.",
+      "c": "Salvará explica o nome Jesus, não este verbo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "cumprisse"
+      },
+      {
+        "id": "b",
+        "text": "conceberá"
+      },
+      {
+        "id": "c",
+        "text": "salvará"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Ora, tudo isto aconteceu, para que se cumprisse o que dissera o Senhor pelo profeta: Eis que a virgem conceberá e dará à luz um filho, e ele será chamado Emanuel, que quer dizer Deus conosco.",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "id": "mateus-cam-mt-01-rei-prometido-02",
+    "template": "tudo isto aconteceu, para que se ___ o que dissera o Senhor pelo profeta"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 1:21–23",
+    "learningObjective": "Reconhecer que o filho se chama Jesus porque salva do pecado, e Emanuel — Deus conosco.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 1:22",
+      "Mateus 1:23"
+    ],
+    "type": "choice",
+    "question": "Como Mateus 1:21–23 relaciona o nome Jesus e a citação do profeta?",
+    "prompt": "Como Mateus 1:21–23 relaciona o nome Jesus e a citação do profeta?",
+    "cue": "Como Mateus 1:21–23 relaciona o nome Jesus e a citação do profeta?",
+    "feedbackCorrect": "Certo: o nascimento cumpre a palavra e revela Emanuel.",
+    "feedbackWrong": {
+      "a": "O texto diz que tudo aconteceu para cumprir o que o Senhor dissera.",
+      "c": "Emanuel explica presença, não substitui a salvação dos pecados.",
+      "d": "Há dois nomes com sentidos distintos e unidos no mesmo menino."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O nascimento é acaso, sem ligação com o profeta."
+      },
+      {
+        "id": "b",
+        "text": "O menino cumpre a palavra: salva do pecado e é Deus conosco."
+      },
+      {
+        "id": "c",
+        "text": "A citação anula o sentido do nome Jesus."
+      },
+      {
+        "id": "d",
+        "text": "Jesus e Emanuel são dois meninos diferentes no texto."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Ora, tudo isto aconteceu, para que se cumprisse o que dissera o Senhor pelo profeta: Eis que a virgem conceberá e dará à luz um filho, e ele será chamado Emanuel, que quer dizer Deus conosco.",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "id": "mateus-cam-mt-01-rei-prometido-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 1:21–23",
+    "learningObjective": "Reconhecer que o filho se chama Jesus porque salva do pecado, e Emanuel — Deus conosco.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 1:22",
+      "Mateus 1:23"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Mateus 1:21–23?",
+    "prompt": "Como se encadeiam os eventos de Mateus 1:21–23?",
+    "cue": "Como se encadeiam os eventos de Mateus 1:21–23?",
+    "feedbackCorrect": "Certo: anúncio, cumprimento e nome Emanuel.",
+    "feedbackWrong": {
+      "b": "O cumprimento explica por que tudo aconteceu.",
+      "c": "A citação do profeta vem depois do anúncio do nome."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "o anúncio do filho chamado JESUS que salvará dos pecados"
+      },
+      {
+        "id": "b",
+        "text": "tudo isto aconteceu para que se cumprisse o dito do Senhor"
+      },
+      {
+        "id": "c",
+        "text": "a virgem conceberá e o filho será chamado Emanuel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Ora, tudo isto aconteceu, para que se cumprisse o que dissera o Senhor pelo profeta: Eis que a virgem conceberá e dará à luz um filho, e ele será chamado Emanuel, que quer dizer Deus conosco.",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "id": "mateus-cam-mt-01-rei-prometido-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 1:21–23",
+    "learningObjective": "Reconhecer que o filho se chama Jesus porque salva do pecado, e Emanuel — Deus conosco.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 1:22",
+      "Mateus 1:23"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Eis que a ___ conceberá e dará à luz um filho\"",
+    "prompt": "Complete a frase: \"Eis que a ___ conceberá e dará à luz um filho\"",
+    "cue": "Complete a frase: \"Eis que a ___ conceberá e dará à luz um filho\"",
+    "feedbackCorrect": "Certo: a citação fala da virgem.",
+    "feedbackWrong": {
+      "b": "Profeta é quem falou, não quem concebe.",
+      "c": "Povo é quem será salvo, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "virgem"
+      },
+      {
+        "id": "b",
+        "text": "profeta"
+      },
+      {
+        "id": "c",
+        "text": "povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Ora, tudo isto aconteceu, para que se cumprisse o que dissera o Senhor pelo profeta: Eis que a virgem conceberá e dará à luz um filho, e ele será chamado Emanuel, que quer dizer Deus conosco.",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "id": "mateus-cam-mt-01-rei-prometido-05",
+    "template": "Eis que a ___ conceberá e dará à luz um filho"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 1:21–23",
+    "learningObjective": "Reconhecer que o filho se chama Jesus porque salva do pecado, e Emanuel — Deus conosco.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 1:22",
+      "Mateus 1:23"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 1:21–23 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 1:21–23 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 1:21–23 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: salvação do pecado e presença de Deus se unem.",
+    "feedbackWrong": {
+      "b": "O cumprimento não é detalhe extra: explica o acontecido.",
+      "c": "O texto não reduz Jesus a um título vazio."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Salvação e Deus conosco"
+      },
+      {
+        "id": "b",
+        "text": "Cumprimento sem propósito"
+      },
+      {
+        "id": "c",
+        "text": "Nome sem missão anunciada"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Ora, tudo isto aconteceu, para que se cumprisse o que dissera o Senhor pelo profeta: Eis que a virgem conceberá e dará à luz um filho, e ele será chamado Emanuel, que quer dizer Deus conosco.",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "id": "mateus-cam-mt-01-rei-prometido-06",
+    "passageA": {
+      "ref": "Mateus 1:21–23",
+      "text": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Ora, tudo isto aconteceu, para que se cumprisse o que dissera o Senhor pelo profeta: Eis que a virgem conceberá e dará à luz um filho, e ele será chamado Emanuel, que quer dizer Deus conosco."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Rei prometido é Jesus que salva do pecado e Emanuel — Deus conosco."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 1:21–23",
+    "learningObjective": "Reconhecer que o filho se chama Jesus porque salva do pecado, e Emanuel — Deus conosco.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 1:22",
+      "Mateus 1:23"
+    ],
+    "type": "true_false",
+    "question": "O cumprimento da profecia apresenta o menino como Emanuel, isto é, Deus conosco.",
+    "prompt": "O cumprimento da profecia apresenta o menino como Emanuel, isto é, Deus conosco.",
+    "cue": "O cumprimento da profecia apresenta o menino como Emanuel, isto é, Deus conosco.",
+    "feedbackCorrect": "Certo: Emanuel interpreta a presença de Deus no filho.",
+    "feedbackWrong": {
+      "false": "Mateus 1:23 traduz Emanuel como Deus conosco."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Ora, tudo isto aconteceu, para que se cumprisse o que dissera o Senhor pelo profeta: Eis que a virgem conceberá e dará à luz um filho, e ele será chamado Emanuel, que quer dizer Deus conosco.",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "id": "mateus-pro-mt-01-rei-prometido-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 1:21–23",
+    "learningObjective": "Reconhecer que o filho se chama Jesus porque salva do pecado, e Emanuel — Deus conosco.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 1:22",
+      "Mateus 1:23"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 1:21–23, toque a palavra que falta em \"ele salvará o seu povo dos ___ deles\"?",
+    "prompt": "Em Mateus 1:21–23, toque a palavra que falta em \"ele salvará o seu povo dos ___ deles\"?",
+    "cue": "Em Mateus 1:21–23, toque a palavra que falta em \"ele salvará o seu povo dos ___ deles\"?",
+    "feedbackCorrect": "Exato: a salvação é dos pecados.",
+    "feedbackWrong": {
+      "b": "Povo é quem é salvo, não o que se tira.",
+      "c": "Filho nomeia quem nasce, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "pecados"
+      },
+      {
+        "id": "b",
+        "text": "povo"
+      },
+      {
+        "id": "c",
+        "text": "filho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Ora, tudo isto aconteceu, para que se cumprisse o que dissera o Senhor pelo profeta: Eis que a virgem conceberá e dará à luz um filho, e ele será chamado Emanuel, que quer dizer Deus conosco.",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "id": "mateus-pro-mt-01-rei-prometido-02",
+    "template": "ele salvará o seu povo dos ___ deles"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 1:21–23",
+    "learningObjective": "Reconhecer que o filho se chama Jesus porque salva do pecado, e Emanuel — Deus conosco.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 1:22",
+      "Mateus 1:23"
+    ],
+    "type": "choice",
+    "question": "O que o leitor deve entender sobre o Rei prometido em Mateus 1:21–23?",
+    "prompt": "O que o leitor deve entender sobre o Rei prometido em Mateus 1:21–23?",
+    "cue": "O que o leitor deve entender sobre o Rei prometido em Mateus 1:21–23?",
+    "feedbackCorrect": "Certo: ele salva do pecado e é a presença de Deus.",
+    "feedbackWrong": {
+      "a": "O texto une salvação e Emanuel, não um nome sem conteúdo.",
+      "c": "Emanuel afirma Deus conosco, não distância sagrada.",
+      "d": "A salvação anunciada é dos pecados, não só de inimigos políticos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O nome é só etiqueta, sem ligação com pecados ou presença."
+      },
+      {
+        "id": "b",
+        "text": "O Rei salva do pecado e habita como Deus conosco."
+      },
+      {
+        "id": "c",
+        "text": "Emanuel significa que Deus permanece longe do povo."
+      },
+      {
+        "id": "d",
+        "text": "Jesus salva apenas de ameaças políticas, não dos pecados."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Ora, tudo isto aconteceu, para que se cumprisse o que dissera o Senhor pelo profeta: Eis que a virgem conceberá e dará à luz um filho, e ele será chamado Emanuel, que quer dizer Deus conosco.",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "id": "mateus-pro-mt-01-rei-prometido-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 1:21–23",
+    "learningObjective": "Reconhecer que o filho se chama Jesus porque salva do pecado, e Emanuel — Deus conosco.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 1:22",
+      "Mateus 1:23"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Mateus 1:21–23?",
+    "prompt": "Qual sequência revela o sentido de Mateus 1:21–23?",
+    "cue": "Qual sequência revela o sentido de Mateus 1:21–23?",
+    "feedbackCorrect": "Certo: salvar, cumprir e Deus conosco.",
+    "feedbackWrong": {
+      "b": "O cumprimento liga o nascimento à palavra do Senhor.",
+      "c": "Emanuel interpreta quem é o menino para o leitor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "o nome Jesus aponta para salvar o povo dos pecados"
+      },
+      {
+        "id": "b",
+        "text": "o nascimento cumpre o que o Senhor dissera pelo profeta"
+      },
+      {
+        "id": "c",
+        "text": "Emanuel declara que esse filho é Deus conosco"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Ora, tudo isto aconteceu, para que se cumprisse o que dissera o Senhor pelo profeta: Eis que a virgem conceberá e dará à luz um filho, e ele será chamado Emanuel, que quer dizer Deus conosco.",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "id": "mateus-pro-mt-01-rei-prometido-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 1:21–23",
+    "learningObjective": "Reconhecer que o filho se chama Jesus porque salva do pecado, e Emanuel — Deus conosco.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 1:22",
+      "Mateus 1:23"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Emanuel, que quer dizer Deus ___\"",
+    "prompt": "Complete a frase: \"Emanuel, que quer dizer Deus ___\"",
+    "cue": "Complete a frase: \"Emanuel, que quer dizer Deus ___\"",
+    "feedbackCorrect": "Certo: Emanuel quer dizer Deus conosco.",
+    "feedbackWrong": {
+      "b": "Pecados pertence ao sentido do nome Jesus.",
+      "c": "Senhor é quem falou pelo profeta, não esta tradução."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "conosco"
+      },
+      {
+        "id": "b",
+        "text": "pecados"
+      },
+      {
+        "id": "c",
+        "text": "Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Ora, tudo isto aconteceu, para que se cumprisse o que dissera o Senhor pelo profeta: Eis que a virgem conceberá e dará à luz um filho, e ele será chamado Emanuel, que quer dizer Deus conosco.",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "id": "mateus-pro-mt-01-rei-prometido-05",
+    "template": "Emanuel, que quer dizer Deus ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 1:21–23",
+    "learningObjective": "Reconhecer que o filho se chama Jesus porque salva do pecado, e Emanuel — Deus conosco.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 1:22",
+      "Mateus 1:23"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 1:21–23 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 1:21–23 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 1:21–23 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o Rei prometido salva e está conosco.",
+    "feedbackWrong": {
+      "b": "O texto não trata o menino como rei distante do pecado.",
+      "c": "Emanuel afirma presença, não ausência."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Rei que salva e habita"
+      },
+      {
+        "id": "b",
+        "text": "Rei alheio aos pecados"
+      },
+      {
+        "id": "c",
+        "text": "Deus ausente da história"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Ora, tudo isto aconteceu, para que se cumprisse o que dissera o Senhor pelo profeta: Eis que a virgem conceberá e dará à luz um filho, e ele será chamado Emanuel, que quer dizer Deus conosco.",
+    "trail": "mateus",
+    "section": "mt-01-rei-prometido",
+    "id": "mateus-pro-mt-01-rei-prometido-06",
+    "passageA": {
+      "ref": "Mateus 1:21–23",
+      "text": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Ora, tudo isto aconteceu, para que se cumprisse o que dissera o Senhor pelo profeta: Eis que a virgem conceberá e dará à luz um filho, e ele será chamado Emanuel, que quer dizer Deus conosco."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Rei prometido é Jesus que salva do pecado e Emanuel — Deus conosco."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 5:3–6",
+    "learningObjective": "Perceber que o Reino declara bem-aventurados os humildes, os que choram, os mansos e os que têm fome de justiça.",
+    "evidence": [
+      "Mateus 5:3",
+      "Mateus 5:4",
+      "Mateus 5:5",
+      "Mateus 5:6"
+    ],
+    "type": "true_false",
+    "question": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus.",
+    "prompt": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus.",
+    "cue": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus.",
+    "feedbackCorrect": "Certo: essa é a primeira bem-aventurança do trecho.",
+    "feedbackWrong": {
+      "false": "Releia Mateus 5:3: o reino é dos humildes de espírito."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque eles serão consolados. Bem-aventurados os mansos, porque eles herdarão a terra. Bem-aventurados os que têm fome e sede de justiça, porque eles serão fartos.",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "id": "mateus-sem-mt-02-reino-ensino-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 5:3–6",
+    "learningObjective": "Perceber que o Reino declara bem-aventurados os humildes, os que choram, os mansos e os que têm fome de justiça.",
+    "evidence": [
+      "Mateus 5:3",
+      "Mateus 5:4",
+      "Mateus 5:5",
+      "Mateus 5:6"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 5:3–6, toque a palavra que falta em \"Bem-aventurados os ___ de espírito, porque deles é o reino dos céus\"?",
+    "prompt": "Em Mateus 5:3–6, toque a palavra que falta em \"Bem-aventurados os ___ de espírito, porque deles é o reino dos céus\"?",
+    "cue": "Em Mateus 5:3–6, toque a palavra que falta em \"Bem-aventurados os ___ de espírito, porque deles é o reino dos céus\"?",
+    "feedbackCorrect": "Exato: os humildes de espírito.",
+    "feedbackWrong": {
+      "b": "Mansos herdam a terra, não esta frase.",
+      "c": "Consolados é a promessa aos que choram."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "humildes"
+      },
+      {
+        "id": "b",
+        "text": "mansos"
+      },
+      {
+        "id": "c",
+        "text": "consolados"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque eles serão consolados. Bem-aventurados os mansos, porque eles herdarão a terra. Bem-aventurados os que têm fome e sede de justiça, porque eles serão fartos.",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "id": "mateus-sem-mt-02-reino-ensino-02",
+    "template": "Bem-aventurados os ___ de espírito, porque deles é o reino dos céus"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 5:3–6",
+    "learningObjective": "Perceber que o Reino declara bem-aventurados os humildes, os que choram, os mansos e os que têm fome de justiça.",
+    "evidence": [
+      "Mateus 5:3",
+      "Mateus 5:4",
+      "Mateus 5:5",
+      "Mateus 5:6"
+    ],
+    "type": "choice",
+    "question": "Segundo o texto, de quem é o reino dos céus?",
+    "prompt": "Segundo o texto, de quem é o reino dos céus?",
+    "cue": "Segundo o texto, de quem é o reino dos céus?",
+    "feedbackCorrect": "Certo: o reino é dos humildes de espírito.",
+    "feedbackWrong": {
+      "b": "Os mansos herdam a terra, não esta frase.",
+      "c": "Os que choram serão consolados.",
+      "d": "Fartos é a promessa aos que têm fome de justiça."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Dos humildes de espírito."
+      },
+      {
+        "id": "b",
+        "text": "Somente dos mansos, neste versículo."
+      },
+      {
+        "id": "c",
+        "text": "Dos que choram, neste versículo."
+      },
+      {
+        "id": "d",
+        "text": "Dos que já foram fartos de justiça."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque eles serão consolados. Bem-aventurados os mansos, porque eles herdarão a terra. Bem-aventurados os que têm fome e sede de justiça, porque eles serão fartos.",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "id": "mateus-sem-mt-02-reino-ensino-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 5:3–6",
+    "learningObjective": "Perceber que o Reino declara bem-aventurados os humildes, os que choram, os mansos e os que têm fome de justiça.",
+    "evidence": [
+      "Mateus 5:3",
+      "Mateus 5:4",
+      "Mateus 5:5",
+      "Mateus 5:6"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Mateus 5:3–6?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Mateus 5:3–6?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Mateus 5:3–6?",
+    "feedbackCorrect": "Certo: humildes, os que choram e os mansos.",
+    "feedbackWrong": {
+      "b": "Os que choram vêm depois dos humildes de espírito.",
+      "c": "Os mansos vêm depois dos que choram."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Bem-aventurados os humildes de espírito"
+      },
+      {
+        "id": "b",
+        "text": "Bem-aventurados os que choram"
+      },
+      {
+        "id": "c",
+        "text": "Bem-aventurados os mansos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque eles serão consolados. Bem-aventurados os mansos, porque eles herdarão a terra. Bem-aventurados os que têm fome e sede de justiça, porque eles serão fartos.",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "id": "mateus-sem-mt-02-reino-ensino-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 5:3–6",
+    "learningObjective": "Perceber que o Reino declara bem-aventurados os humildes, os que choram, os mansos e os que têm fome de justiça.",
+    "evidence": [
+      "Mateus 5:3",
+      "Mateus 5:4",
+      "Mateus 5:5",
+      "Mateus 5:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Bem-aventurados os mansos, porque eles herdarão a ___\"",
+    "prompt": "Complete a frase: \"Bem-aventurados os mansos, porque eles herdarão a ___\"",
+    "cue": "Complete a frase: \"Bem-aventurados os mansos, porque eles herdarão a ___\"",
+    "feedbackCorrect": "Certo: os mansos herdarão a terra.",
+    "feedbackWrong": {
+      "b": "Céus fecha a frase dos humildes de espírito.",
+      "c": "Justiça pertence à fome e sede, não a esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "terra"
+      },
+      {
+        "id": "b",
+        "text": "céus"
+      },
+      {
+        "id": "c",
+        "text": "justiça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque eles serão consolados. Bem-aventurados os mansos, porque eles herdarão a terra. Bem-aventurados os que têm fome e sede de justiça, porque eles serão fartos.",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "id": "mateus-sem-mt-02-reino-ensino-05",
+    "template": "Bem-aventurados os mansos, porque eles herdarão a ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 5:3–6",
+    "learningObjective": "Perceber que o Reino declara bem-aventurados os humildes, os que choram, os mansos e os que têm fome de justiça.",
+    "evidence": [
+      "Mateus 5:3",
+      "Mateus 5:4",
+      "Mateus 5:5",
+      "Mateus 5:6"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 5:3–6 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 5:3–6 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 5:3–6 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o Reino inverte o critério de felicidade.",
+    "feedbackWrong": {
+      "b": "O texto abençoa humildes e mansos, não os arrogantes.",
+      "c": "Há promessa de consolo e fartura, não desprezo da justiça."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O Reino inverte valores"
+      },
+      {
+        "id": "b",
+        "text": "Só os arrogantes são felizes"
+      },
+      {
+        "id": "c",
+        "text": "Justiça não tem lugar no Reino"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque eles serão consolados. Bem-aventurados os mansos, porque eles herdarão a terra. Bem-aventurados os que têm fome e sede de justiça, porque eles serão fartos.",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "id": "mateus-sem-mt-02-reino-ensino-06",
+    "passageA": {
+      "ref": "Mateus 5:3–6",
+      "text": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque eles serão consolados. Bem-aventurados os mansos, porque eles herdarão a terra. Bem-aventurados os que têm fome e sede de justiça, porque eles serão fartos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O ensino do Reino inverte valores: humildes, os que choram, mansos e os que têm fome de justiça."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 5:3–6",
+    "learningObjective": "Perceber que o Reino declara bem-aventurados os humildes, os que choram, os mansos e os que têm fome de justiça.",
+    "evidence": [
+      "Mateus 5:3",
+      "Mateus 5:4",
+      "Mateus 5:5",
+      "Mateus 5:6"
+    ],
+    "type": "true_false",
+    "question": "Os que choram são chamados bem-aventurados porque já foram fartos de justiça.",
+    "prompt": "Os que choram são chamados bem-aventurados porque já foram fartos de justiça.",
+    "cue": "Os que choram são chamados bem-aventurados porque já foram fartos de justiça.",
+    "feedbackCorrect": "Certo: aos que choram o texto promete consolo, não essa frase.",
+    "feedbackWrong": {
+      "true": "Mateus 5:4 promete consolo; a fartura é de 5:6."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque eles serão consolados. Bem-aventurados os mansos, porque eles herdarão a terra. Bem-aventurados os que têm fome e sede de justiça, porque eles serão fartos.",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "id": "mateus-cam-mt-02-reino-ensino-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 5:3–6",
+    "learningObjective": "Perceber que o Reino declara bem-aventurados os humildes, os que choram, os mansos e os que têm fome de justiça.",
+    "evidence": [
+      "Mateus 5:3",
+      "Mateus 5:4",
+      "Mateus 5:5",
+      "Mateus 5:6"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 5:3–6, toque a palavra que falta em \"os que têm fome e sede de ___, porque eles serão fartos\"?",
+    "prompt": "Em Mateus 5:3–6, toque a palavra que falta em \"os que têm fome e sede de ___, porque eles serão fartos\"?",
+    "cue": "Em Mateus 5:3–6, toque a palavra que falta em \"os que têm fome e sede de ___, porque eles serão fartos\"?",
+    "feedbackCorrect": "Exato: a fome e a sede são de justiça.",
+    "feedbackWrong": {
+      "b": "Espírito qualifica os humildes, não esta lacuna.",
+      "c": "Terra é a herança dos mansos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "justiça"
+      },
+      {
+        "id": "b",
+        "text": "espírito"
+      },
+      {
+        "id": "c",
+        "text": "terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque eles serão consolados. Bem-aventurados os mansos, porque eles herdarão a terra. Bem-aventurados os que têm fome e sede de justiça, porque eles serão fartos.",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "id": "mateus-cam-mt-02-reino-ensino-02",
+    "template": "os que têm fome e sede de ___, porque eles serão fartos"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 5:3–6",
+    "learningObjective": "Perceber que o Reino declara bem-aventurados os humildes, os que choram, os mansos e os que têm fome de justiça.",
+    "evidence": [
+      "Mateus 5:3",
+      "Mateus 5:4",
+      "Mateus 5:5",
+      "Mateus 5:6"
+    ],
+    "type": "choice",
+    "question": "Como as bem-aventuranças de Mateus 5:3–6 se encadeiam no ensino do Reino?",
+    "prompt": "Como as bem-aventuranças de Mateus 5:3–6 se encadeiam no ensino do Reino?",
+    "cue": "Como as bem-aventuranças de Mateus 5:3–6 se encadeiam no ensino do Reino?",
+    "feedbackCorrect": "Certo: o Reino honra os que o mundo costuma ignorar.",
+    "feedbackWrong": {
+      "a": "O texto não reserva o Reino só aos já poderosos.",
+      "c": "Consolo e fartura são promessas, não negações.",
+      "d": "Mansidão herda a terra; não é tratada como fraqueza inútil."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Só quem já domina recebe o reino dos céus."
+      },
+      {
+        "id": "b",
+        "text": "Humildes, os que choram e os mansos são chamados felizes."
+      },
+      {
+        "id": "c",
+        "text": "Os que choram ficam sem promessa de consolo."
+      },
+      {
+        "id": "d",
+        "text": "Os mansos são excluídos de qualquer herança."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque eles serão consolados. Bem-aventurados os mansos, porque eles herdarão a terra. Bem-aventurados os que têm fome e sede de justiça, porque eles serão fartos.",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "id": "mateus-cam-mt-02-reino-ensino-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 5:3–6",
+    "learningObjective": "Perceber que o Reino declara bem-aventurados os humildes, os que choram, os mansos e os que têm fome de justiça.",
+    "evidence": [
+      "Mateus 5:3",
+      "Mateus 5:4",
+      "Mateus 5:5",
+      "Mateus 5:6"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Mateus 5:3–6?",
+    "prompt": "Como se encadeiam os eventos de Mateus 5:3–6?",
+    "cue": "Como se encadeiam os eventos de Mateus 5:3–6?",
+    "feedbackCorrect": "Certo: reino, consolo e herança da terra.",
+    "feedbackWrong": {
+      "b": "O consolo vem na segunda bem-aventurança.",
+      "c": "A herança da terra segue a bem-aventurança dos mansos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "deles é o reino dos céus"
+      },
+      {
+        "id": "b",
+        "text": "eles serão consolados"
+      },
+      {
+        "id": "c",
+        "text": "eles herdarão a terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque eles serão consolados. Bem-aventurados os mansos, porque eles herdarão a terra. Bem-aventurados os que têm fome e sede de justiça, porque eles serão fartos.",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "id": "mateus-cam-mt-02-reino-ensino-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 5:3–6",
+    "learningObjective": "Perceber que o Reino declara bem-aventurados os humildes, os que choram, os mansos e os que têm fome de justiça.",
+    "evidence": [
+      "Mateus 5:3",
+      "Mateus 5:4",
+      "Mateus 5:5",
+      "Mateus 5:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Bem-aventurados os que choram, porque eles serão ___\"",
+    "prompt": "Complete a frase: \"Bem-aventurados os que choram, porque eles serão ___\"",
+    "cue": "Complete a frase: \"Bem-aventurados os que choram, porque eles serão ___\"",
+    "feedbackCorrect": "Certo: os que choram serão consolados.",
+    "feedbackWrong": {
+      "b": "Fartos é a promessa de quem tem fome de justiça.",
+      "c": "Humildes descreve outro grupo, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "consolados"
+      },
+      {
+        "id": "b",
+        "text": "fartos"
+      },
+      {
+        "id": "c",
+        "text": "humildes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque eles serão consolados. Bem-aventurados os mansos, porque eles herdarão a terra. Bem-aventurados os que têm fome e sede de justiça, porque eles serão fartos.",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "id": "mateus-cam-mt-02-reino-ensino-05",
+    "template": "Bem-aventurados os que choram, porque eles serão ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 5:3–6",
+    "learningObjective": "Perceber que o Reino declara bem-aventurados os humildes, os que choram, os mansos e os que têm fome de justiça.",
+    "evidence": [
+      "Mateus 5:3",
+      "Mateus 5:4",
+      "Mateus 5:5",
+      "Mateus 5:6"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 5:3–6 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 5:3–6 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 5:3–6 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o ensino abençoa os que o mundo desvaloriza.",
+    "feedbackWrong": {
+      "b": "O texto não exige riqueza para a bem-aventurança.",
+      "c": "Há fome de justiça, não desprezo dela."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Felizes os que o mundo esquece"
+      },
+      {
+        "id": "b",
+        "text": "Felizes só os já ricos"
+      },
+      {
+        "id": "c",
+        "text": "Justiça fica fora do Reino"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque eles serão consolados. Bem-aventurados os mansos, porque eles herdarão a terra. Bem-aventurados os que têm fome e sede de justiça, porque eles serão fartos.",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "id": "mateus-cam-mt-02-reino-ensino-06",
+    "passageA": {
+      "ref": "Mateus 5:3–6",
+      "text": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque eles serão consolados. Bem-aventurados os mansos, porque eles herdarão a terra. Bem-aventurados os que têm fome e sede de justiça, porque eles serão fartos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O ensino do Reino inverte valores: humildes, os que choram, mansos e os que têm fome de justiça."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 5:3–6",
+    "learningObjective": "Perceber que o Reino declara bem-aventurados os humildes, os que choram, os mansos e os que têm fome de justiça.",
+    "evidence": [
+      "Mateus 5:3",
+      "Mateus 5:4",
+      "Mateus 5:5",
+      "Mateus 5:6"
+    ],
+    "type": "true_false",
+    "question": "A bem-aventurança dos que têm fome e sede de justiça promete que eles serão fartos.",
+    "prompt": "A bem-aventurança dos que têm fome e sede de justiça promete que eles serão fartos.",
+    "cue": "A bem-aventurança dos que têm fome e sede de justiça promete que eles serão fartos.",
+    "feedbackCorrect": "Certo: a fome de justiça não fica sem resposta.",
+    "feedbackWrong": {
+      "false": "Mateus 5:6 promete que eles serão fartos."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque eles serão consolados. Bem-aventurados os mansos, porque eles herdarão a terra. Bem-aventurados os que têm fome e sede de justiça, porque eles serão fartos.",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "id": "mateus-pro-mt-02-reino-ensino-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 5:3–6",
+    "learningObjective": "Perceber que o Reino declara bem-aventurados os humildes, os que choram, os mansos e os que têm fome de justiça.",
+    "evidence": [
+      "Mateus 5:3",
+      "Mateus 5:4",
+      "Mateus 5:5",
+      "Mateus 5:6"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 5:3–6, toque a palavra que falta em \"Bem-aventurados os ___, porque eles herdarão a terra\"?",
+    "prompt": "Em Mateus 5:3–6, toque a palavra que falta em \"Bem-aventurados os ___, porque eles herdarão a terra\"?",
+    "cue": "Em Mateus 5:3–6, toque a palavra que falta em \"Bem-aventurados os ___, porque eles herdarão a terra\"?",
+    "feedbackCorrect": "Exato: os mansos herdarão a terra.",
+    "feedbackWrong": {
+      "b": "Humildes recebem o reino dos céus nesta lista.",
+      "c": "Choram é o verbo da segunda bem-aventurança."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "mansos"
+      },
+      {
+        "id": "b",
+        "text": "humildes"
+      },
+      {
+        "id": "c",
+        "text": "choram"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque eles serão consolados. Bem-aventurados os mansos, porque eles herdarão a terra. Bem-aventurados os que têm fome e sede de justiça, porque eles serão fartos.",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "id": "mateus-pro-mt-02-reino-ensino-02",
+    "template": "Bem-aventurados os ___, porque eles herdarão a terra"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 5:3–6",
+    "learningObjective": "Perceber que o Reino declara bem-aventurados os humildes, os que choram, os mansos e os que têm fome de justiça.",
+    "evidence": [
+      "Mateus 5:3",
+      "Mateus 5:4",
+      "Mateus 5:5",
+      "Mateus 5:6"
+    ],
+    "type": "choice",
+    "question": "O que o ensino do Reino revela sobre justiça e felicidade em Mateus 5:3–6?",
+    "prompt": "O que o ensino do Reino revela sobre justiça e felicidade em Mateus 5:3–6?",
+    "cue": "O que o ensino do Reino revela sobre justiça e felicidade em Mateus 5:3–6?",
+    "feedbackCorrect": "Certo: fome de justiça é bem-aventurança, não fraqueza.",
+    "feedbackWrong": {
+      "a": "O texto chama de bem-aventurados os que têm fome de justiça.",
+      "c": "O choro recebe consolo, não desprezo do Reino.",
+      "d": "Humildade de espírito recebe o reino, não o exclui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fome de justiça é defeito que o Reino rejeita."
+      },
+      {
+        "id": "b",
+        "text": "Desejar justiça é bem-aventurança que será saciada."
+      },
+      {
+        "id": "c",
+        "text": "Quem chora fica fora de qualquer promessa."
+      },
+      {
+        "id": "d",
+        "text": "Humildes de espírito não têm parte no reino dos céus."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque eles serão consolados. Bem-aventurados os mansos, porque eles herdarão a terra. Bem-aventurados os que têm fome e sede de justiça, porque eles serão fartos.",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "id": "mateus-pro-mt-02-reino-ensino-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 5:3–6",
+    "learningObjective": "Perceber que o Reino declara bem-aventurados os humildes, os que choram, os mansos e os que têm fome de justiça.",
+    "evidence": [
+      "Mateus 5:3",
+      "Mateus 5:4",
+      "Mateus 5:5",
+      "Mateus 5:6"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Mateus 5:3–6?",
+    "prompt": "Qual sequência revela o sentido de Mateus 5:3–6?",
+    "cue": "Qual sequência revela o sentido de Mateus 5:3–6?",
+    "feedbackCorrect": "Certo: reino, consolo e fartura de justiça.",
+    "feedbackWrong": {
+      "b": "O consolo interpreta o choro, não o anula.",
+      "c": "A fartura responde à fome e sede de justiça."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "os humildes de espírito recebem o reino dos céus"
+      },
+      {
+        "id": "b",
+        "text": "os que choram serão consolados"
+      },
+      {
+        "id": "c",
+        "text": "os que têm fome de justiça serão fartos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque eles serão consolados. Bem-aventurados os mansos, porque eles herdarão a terra. Bem-aventurados os que têm fome e sede de justiça, porque eles serão fartos.",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "id": "mateus-pro-mt-02-reino-ensino-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 5:3–6",
+    "learningObjective": "Perceber que o Reino declara bem-aventurados os humildes, os que choram, os mansos e os que têm fome de justiça.",
+    "evidence": [
+      "Mateus 5:3",
+      "Mateus 5:4",
+      "Mateus 5:5",
+      "Mateus 5:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"os que têm fome e sede de justiça, porque eles serão ___\"",
+    "prompt": "Complete a frase: \"os que têm fome e sede de justiça, porque eles serão ___\"",
+    "cue": "Complete a frase: \"os que têm fome e sede de justiça, porque eles serão ___\"",
+    "feedbackCorrect": "Certo: eles serão fartos.",
+    "feedbackWrong": {
+      "b": "Consolados é a promessa aos que choram.",
+      "c": "Mansos nomeia outro grupo, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "fartos"
+      },
+      {
+        "id": "b",
+        "text": "consolados"
+      },
+      {
+        "id": "c",
+        "text": "mansos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque eles serão consolados. Bem-aventurados os mansos, porque eles herdarão a terra. Bem-aventurados os que têm fome e sede de justiça, porque eles serão fartos.",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "id": "mateus-pro-mt-02-reino-ensino-05",
+    "template": "os que têm fome e sede de justiça, porque eles serão ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 5:3–6",
+    "learningObjective": "Perceber que o Reino declara bem-aventurados os humildes, os que choram, os mansos e os que têm fome de justiça.",
+    "evidence": [
+      "Mateus 5:3",
+      "Mateus 5:4",
+      "Mateus 5:5",
+      "Mateus 5:6"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 5:3–6 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 5:3–6 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 5:3–6 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o Rei ensina outro critério de felicidade.",
+    "feedbackWrong": {
+      "b": "O texto não copia a lógica da força bruta.",
+      "c": "Há herança e fartura prometidas, não vazio."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Outro critério de felicidade"
+      },
+      {
+        "id": "b",
+        "text": "Felizes só os violentos"
+      },
+      {
+        "id": "c",
+        "text": "O Reino não promete nada"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque eles serão consolados. Bem-aventurados os mansos, porque eles herdarão a terra. Bem-aventurados os que têm fome e sede de justiça, porque eles serão fartos.",
+    "trail": "mateus",
+    "section": "mt-02-reino-ensino",
+    "id": "mateus-pro-mt-02-reino-ensino-06",
+    "passageA": {
+      "ref": "Mateus 5:3–6",
+      "text": "Bem-aventurados os humildes de espírito, porque deles é o reino dos céus. Bem-aventurados os que choram, porque eles serão consolados. Bem-aventurados os mansos, porque eles herdarão a terra. Bem-aventurados os que têm fome e sede de justiça, porque eles serão fartos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O ensino do Reino inverte valores: humildes, os que choram, mansos e os que têm fome de justiça."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 8:26–27",
+    "learningObjective": "Ver que Jesus liga o temor à pouca fé e acalma ventos e mar, que lhe obedecem.",
+    "evidence": [
+      "Mateus 8:26",
+      "Mateus 8:27"
+    ],
+    "type": "true_false",
+    "question": "Erguendo-se, Jesus repreendeu os ventos e o mar, e fez-se grande bonança.",
+    "prompt": "Erguendo-se, Jesus repreendeu os ventos e o mar, e fez-se grande bonança.",
+    "cue": "Erguendo-se, Jesus repreendeu os ventos e o mar, e fez-se grande bonança.",
+    "feedbackCorrect": "Certo: o texto relata a repreensão e a bonança.",
+    "feedbackWrong": {
+      "false": "Mateus 8:26 registra exatamente essa ação."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Ele lhes disse: Por que temeis, homens de pouca fé? Então, erguendo-se, repreendeu os ventos e o mar; e fez-se grande bonança. Todos se maravilharam, dizendo: Que homem é este que até os ventos e o mar lhe obedecem?",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "id": "mateus-sem-mt-03-autoridade-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 8:26–27",
+    "learningObjective": "Ver que Jesus liga o temor à pouca fé e acalma ventos e mar, que lhe obedecem.",
+    "evidence": [
+      "Mateus 8:26",
+      "Mateus 8:27"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 8:26–27, toque a palavra que falta em \"repreendeu os ventos e o ___; e fez-se grande bonança\"?",
+    "prompt": "Em Mateus 8:26–27, toque a palavra que falta em \"repreendeu os ventos e o ___; e fez-se grande bonança\"?",
+    "cue": "Em Mateus 8:26–27, toque a palavra que falta em \"repreendeu os ventos e o ___; e fez-se grande bonança\"?",
+    "feedbackCorrect": "Exato: ele repreendeu os ventos e o mar.",
+    "feedbackWrong": {
+      "b": "Ventos já está na frase, antes da lacuna.",
+      "c": "Fé aparece no vocativo, não nesta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "mar"
+      },
+      {
+        "id": "b",
+        "text": "ventos"
+      },
+      {
+        "id": "c",
+        "text": "fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ele lhes disse: Por que temeis, homens de pouca fé? Então, erguendo-se, repreendeu os ventos e o mar; e fez-se grande bonança. Todos se maravilharam, dizendo: Que homem é este que até os ventos e o mar lhe obedecem?",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "id": "mateus-sem-mt-03-autoridade-02",
+    "template": "repreendeu os ventos e o ___; e fez-se grande bonança"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 8:26–27",
+    "learningObjective": "Ver que Jesus liga o temor à pouca fé e acalma ventos e mar, que lhe obedecem.",
+    "evidence": [
+      "Mateus 8:26",
+      "Mateus 8:27"
+    ],
+    "type": "choice",
+    "question": "O que o texto afirma que aconteceu depois de Jesus se erguer?",
+    "prompt": "O que o texto afirma que aconteceu depois de Jesus se erguer?",
+    "cue": "O que o texto afirma que aconteceu depois de Jesus se erguer?",
+    "feedbackCorrect": "Certo: houve repreensão e grande bonança.",
+    "feedbackWrong": {
+      "b": "O texto diz que se fez grande bonança, não tempestade maior.",
+      "c": "Ele repreendeu ventos e mar, não ficou em silêncio.",
+      "d": "A bonança vem depois da repreensão, não antes."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Repreendeu os ventos e o mar, e fez-se grande bonança."
+      },
+      {
+        "id": "b",
+        "text": "A tempestade aumentou depois que ele se ergueu."
+      },
+      {
+        "id": "c",
+        "text": "Permaneceu sentado, sem falar aos ventos."
+      },
+      {
+        "id": "d",
+        "text": "A bonança já existia antes de qualquer repreensão."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ele lhes disse: Por que temeis, homens de pouca fé? Então, erguendo-se, repreendeu os ventos e o mar; e fez-se grande bonança. Todos se maravilharam, dizendo: Que homem é este que até os ventos e o mar lhe obedecem?",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "id": "mateus-sem-mt-03-autoridade-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 8:26–27",
+    "learningObjective": "Ver que Jesus liga o temor à pouca fé e acalma ventos e mar, que lhe obedecem.",
+    "evidence": [
+      "Mateus 8:26",
+      "Mateus 8:27"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Mateus 8:26–27?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Mateus 8:26–27?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Mateus 8:26–27?",
+    "feedbackCorrect": "Certo: pouca fé, repreensão e bonança.",
+    "feedbackWrong": {
+      "b": "A repreensão vem depois da fala sobre a fé.",
+      "c": "A bonança segue a repreensão aos ventos e ao mar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele lhes disse: homens de pouca fé"
+      },
+      {
+        "id": "b",
+        "text": "erguendo-se, repreendeu os ventos e o mar"
+      },
+      {
+        "id": "c",
+        "text": "fez-se grande bonança"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ele lhes disse: Por que temeis, homens de pouca fé? Então, erguendo-se, repreendeu os ventos e o mar; e fez-se grande bonança. Todos se maravilharam, dizendo: Que homem é este que até os ventos e o mar lhe obedecem?",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "id": "mateus-sem-mt-03-autoridade-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 8:26–27",
+    "learningObjective": "Ver que Jesus liga o temor à pouca fé e acalma ventos e mar, que lhe obedecem.",
+    "evidence": [
+      "Mateus 8:26",
+      "Mateus 8:27"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"e fez-se grande ___\"",
+    "prompt": "Complete a frase: \"e fez-se grande ___\"",
+    "cue": "Complete a frase: \"e fez-se grande ___\"",
+    "feedbackCorrect": "Certo: fez-se grande bonança.",
+    "feedbackWrong": {
+      "b": "Fé aparece no vocativo anterior, não nesta lacuna.",
+      "c": "Ventos é o que ele repreende, não o resultado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "bonança"
+      },
+      {
+        "id": "b",
+        "text": "fé"
+      },
+      {
+        "id": "c",
+        "text": "ventos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ele lhes disse: Por que temeis, homens de pouca fé? Então, erguendo-se, repreendeu os ventos e o mar; e fez-se grande bonança. Todos se maravilharam, dizendo: Que homem é este que até os ventos e o mar lhe obedecem?",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "id": "mateus-sem-mt-03-autoridade-05",
+    "template": "e fez-se grande ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 8:26–27",
+    "learningObjective": "Ver que Jesus liga o temor à pouca fé e acalma ventos e mar, que lhe obedecem.",
+    "evidence": [
+      "Mateus 8:26",
+      "Mateus 8:27"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 8:26–27 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 8:26–27 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 8:26–27 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: ventos e mar obedecem ao Rei.",
+    "feedbackWrong": {
+      "b": "O texto mostra obediência da criação, não recusa.",
+      "c": "Há bonança depois da repreensão, não caos permanente."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ventos e mar lhe obedecem"
+      },
+      {
+        "id": "b",
+        "text": "A criação ignora o Rei"
+      },
+      {
+        "id": "c",
+        "text": "Não houve nenhuma bonança"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ele lhes disse: Por que temeis, homens de pouca fé? Então, erguendo-se, repreendeu os ventos e o mar; e fez-se grande bonança. Todos se maravilharam, dizendo: Que homem é este que até os ventos e o mar lhe obedecem?",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "id": "mateus-sem-mt-03-autoridade-06",
+    "passageA": {
+      "ref": "Mateus 8:26–27",
+      "text": "Ele lhes disse: Por que temeis, homens de pouca fé? Então, erguendo-se, repreendeu os ventos e o mar; e fez-se grande bonança. Todos se maravilharam, dizendo: Que homem é este que até os ventos e o mar lhe obedecem?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Autoridade do Rei: ventos e mar obedecem — fé pequena encontra Senhor grande."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 8:26–27",
+    "learningObjective": "Ver que Jesus liga o temor à pouca fé e acalma ventos e mar, que lhe obedecem.",
+    "evidence": [
+      "Mateus 8:26",
+      "Mateus 8:27"
+    ],
+    "type": "true_false",
+    "question": "Depois da repreensão, os discípulos afirmaram que o mar não obedece a Jesus.",
+    "prompt": "Depois da repreensão, os discípulos afirmaram que o mar não obedece a Jesus.",
+    "cue": "Depois da repreensão, os discípulos afirmaram que o mar não obedece a Jesus.",
+    "feedbackCorrect": "Certo: eles se maravilham porque ventos e mar obedecem.",
+    "feedbackWrong": {
+      "true": "Mateus 8:27 diz que até ventos e mar lhe obedecem."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Ele lhes disse: Por que temeis, homens de pouca fé? Então, erguendo-se, repreendeu os ventos e o mar; e fez-se grande bonança. Todos se maravilharam, dizendo: Que homem é este que até os ventos e o mar lhe obedecem?",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "id": "mateus-cam-mt-03-autoridade-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 8:26–27",
+    "learningObjective": "Ver que Jesus liga o temor à pouca fé e acalma ventos e mar, que lhe obedecem.",
+    "evidence": [
+      "Mateus 8:26",
+      "Mateus 8:27"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 8:26–27, toque a palavra que falta em \"homens de pouca ___\"?",
+    "prompt": "Em Mateus 8:26–27, toque a palavra que falta em \"homens de pouca ___\"?",
+    "cue": "Em Mateus 8:26–27, toque a palavra que falta em \"homens de pouca ___\"?",
+    "feedbackCorrect": "Exato: ele os chama homens de pouca fé.",
+    "feedbackWrong": {
+      "b": "Bonança é o resultado, não esta lacuna.",
+      "c": "Mar é o que ele repreende."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "fé"
+      },
+      {
+        "id": "b",
+        "text": "bonança"
+      },
+      {
+        "id": "c",
+        "text": "mar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ele lhes disse: Por que temeis, homens de pouca fé? Então, erguendo-se, repreendeu os ventos e o mar; e fez-se grande bonança. Todos se maravilharam, dizendo: Que homem é este que até os ventos e o mar lhe obedecem?",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "id": "mateus-cam-mt-03-autoridade-02",
+    "template": "homens de pouca ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 8:26–27",
+    "learningObjective": "Ver que Jesus liga o temor à pouca fé e acalma ventos e mar, que lhe obedecem.",
+    "evidence": [
+      "Mateus 8:26",
+      "Mateus 8:27"
+    ],
+    "type": "choice",
+    "question": "Como o relato une o temor dos discípulos e a ação de Jesus?",
+    "prompt": "Como o relato une o temor dos discípulos e a ação de Jesus?",
+    "cue": "Como o relato une o temor dos discípulos e a ação de Jesus?",
+    "feedbackCorrect": "Certo: o temor é tratado como pouca fé, depois vem a bonança.",
+    "feedbackWrong": {
+      "a": "Jesus fala da pouca fé antes de repreender ventos e mar.",
+      "c": "A maravilha reconhece obediência, não acaso.",
+      "d": "Há repreensão e bonança, não recusa de agir."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O temor não tem relação com a fé no texto."
+      },
+      {
+        "id": "b",
+        "text": "O temor é nomeado como pouca fé, e então o mar se acalma."
+      },
+      {
+        "id": "c",
+        "text": "A bonança é coincidência, sem ligação com Jesus."
+      },
+      {
+        "id": "d",
+        "text": "Jesus recusa agir diante do medo dos discípulos."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Ele lhes disse: Por que temeis, homens de pouca fé? Então, erguendo-se, repreendeu os ventos e o mar; e fez-se grande bonança. Todos se maravilharam, dizendo: Que homem é este que até os ventos e o mar lhe obedecem?",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "id": "mateus-cam-mt-03-autoridade-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 8:26–27",
+    "learningObjective": "Ver que Jesus liga o temor à pouca fé e acalma ventos e mar, que lhe obedecem.",
+    "evidence": [
+      "Mateus 8:26",
+      "Mateus 8:27"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Mateus 8:26–27?",
+    "prompt": "Como se encadeiam os eventos de Mateus 8:26–27?",
+    "cue": "Como se encadeiam os eventos de Mateus 8:26–27?",
+    "feedbackCorrect": "Certo: fé pequena, repreensão e maravilha.",
+    "feedbackWrong": {
+      "b": "A repreensão segue a fala sobre o temor.",
+      "c": "A maravilha vem depois da bonança."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus trata os discípulos como homens de pouca fé"
+      },
+      {
+        "id": "b",
+        "text": "repreendeu os ventos e o mar"
+      },
+      {
+        "id": "c",
+        "text": "todos se maravilharam diante da obediência da criação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ele lhes disse: Por que temeis, homens de pouca fé? Então, erguendo-se, repreendeu os ventos e o mar; e fez-se grande bonança. Todos se maravilharam, dizendo: Que homem é este que até os ventos e o mar lhe obedecem?",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "id": "mateus-cam-mt-03-autoridade-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 8:26–27",
+    "learningObjective": "Ver que Jesus liga o temor à pouca fé e acalma ventos e mar, que lhe obedecem.",
+    "evidence": [
+      "Mateus 8:26",
+      "Mateus 8:27"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Todos se ___, dizendo\"",
+    "prompt": "Complete a frase: \"Todos se ___, dizendo\"",
+    "cue": "Complete a frase: \"Todos se ___, dizendo\"",
+    "feedbackCorrect": "Certo: todos se maravilharam.",
+    "feedbackWrong": {
+      "b": "Repreendeu é a ação de Jesus, não dos discípulos aqui.",
+      "c": "Temeis pertence à fala anterior de Jesus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "maravilharam"
+      },
+      {
+        "id": "b",
+        "text": "repreendeu"
+      },
+      {
+        "id": "c",
+        "text": "temeis"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ele lhes disse: Por que temeis, homens de pouca fé? Então, erguendo-se, repreendeu os ventos e o mar; e fez-se grande bonança. Todos se maravilharam, dizendo: Que homem é este que até os ventos e o mar lhe obedecem?",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "id": "mateus-cam-mt-03-autoridade-05",
+    "template": "Todos se ___, dizendo"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 8:26–27",
+    "learningObjective": "Ver que Jesus liga o temor à pouca fé e acalma ventos e mar, que lhe obedecem.",
+    "evidence": [
+      "Mateus 8:26",
+      "Mateus 8:27"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 8:26–27 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 8:26–27 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 8:26–27 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: fé pequena encontra um Senhor grande.",
+    "feedbackWrong": {
+      "b": "O texto não elogia o medo como fé madura.",
+      "c": "A criação obedece; não ignora o Rei."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fé pequena, Senhor grande"
+      },
+      {
+        "id": "b",
+        "text": "Medo igual a fé madura"
+      },
+      {
+        "id": "c",
+        "text": "O mar não reconhece o Rei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ele lhes disse: Por que temeis, homens de pouca fé? Então, erguendo-se, repreendeu os ventos e o mar; e fez-se grande bonança. Todos se maravilharam, dizendo: Que homem é este que até os ventos e o mar lhe obedecem?",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "id": "mateus-cam-mt-03-autoridade-06",
+    "passageA": {
+      "ref": "Mateus 8:26–27",
+      "text": "Ele lhes disse: Por que temeis, homens de pouca fé? Então, erguendo-se, repreendeu os ventos e o mar; e fez-se grande bonança. Todos se maravilharam, dizendo: Que homem é este que até os ventos e o mar lhe obedecem?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Autoridade do Rei: ventos e mar obedecem — fé pequena encontra Senhor grande."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 8:26–27",
+    "learningObjective": "Ver que Jesus liga o temor à pouca fé e acalma ventos e mar, que lhe obedecem.",
+    "evidence": [
+      "Mateus 8:26",
+      "Mateus 8:27"
+    ],
+    "type": "true_false",
+    "question": "A maravilha dos discípulos reconhece que até os ventos e o mar obedecem a Jesus.",
+    "prompt": "A maravilha dos discípulos reconhece que até os ventos e o mar obedecem a Jesus.",
+    "cue": "A maravilha dos discípulos reconhece que até os ventos e o mar obedecem a Jesus.",
+    "feedbackCorrect": "Certo: a pergunta deles confessa essa obediência.",
+    "feedbackWrong": {
+      "false": "Mateus 8:27 afirma que ventos e mar lhe obedecem."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Ele lhes disse: Por que temeis, homens de pouca fé? Então, erguendo-se, repreendeu os ventos e o mar; e fez-se grande bonança. Todos se maravilharam, dizendo: Que homem é este que até os ventos e o mar lhe obedecem?",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "id": "mateus-pro-mt-03-autoridade-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 8:26–27",
+    "learningObjective": "Ver que Jesus liga o temor à pouca fé e acalma ventos e mar, que lhe obedecem.",
+    "evidence": [
+      "Mateus 8:26",
+      "Mateus 8:27"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 8:26–27, toque a palavra que falta em \"Que homem é este que até os ventos e o mar lhe ___?\"?",
+    "prompt": "Em Mateus 8:26–27, toque a palavra que falta em \"Que homem é este que até os ventos e o mar lhe ___?\"?",
+    "cue": "Em Mateus 8:26–27, toque a palavra que falta em \"Que homem é este que até os ventos e o mar lhe ___?\"?",
+    "feedbackCorrect": "Exato: ventos e mar lhe obedecem.",
+    "feedbackWrong": {
+      "b": "Repreendeu descreve a ação de Jesus, não esta lacuna.",
+      "c": "Erguendo-se descreve o gesto, não o verbo dos discípulos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "obedecem"
+      },
+      {
+        "id": "b",
+        "text": "repreendeu"
+      },
+      {
+        "id": "c",
+        "text": "Erguendo-se"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ele lhes disse: Por que temeis, homens de pouca fé? Então, erguendo-se, repreendeu os ventos e o mar; e fez-se grande bonança. Todos se maravilharam, dizendo: Que homem é este que até os ventos e o mar lhe obedecem?",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "id": "mateus-pro-mt-03-autoridade-02",
+    "template": "Que homem é este que até os ventos e o mar lhe ___?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 8:26–27",
+    "learningObjective": "Ver que Jesus liga o temor à pouca fé e acalma ventos e mar, que lhe obedecem.",
+    "evidence": [
+      "Mateus 8:26",
+      "Mateus 8:27"
+    ],
+    "type": "choice",
+    "question": "O que a cena revela sobre a autoridade do Rei em Mateus 8:26–27?",
+    "prompt": "O que a cena revela sobre a autoridade do Rei em Mateus 8:26–27?",
+    "cue": "O que a cena revela sobre a autoridade do Rei em Mateus 8:26–27?",
+    "feedbackCorrect": "Certo: a criação obedece; a fé pequena encontra Senhor grande.",
+    "feedbackWrong": {
+      "a": "A bonança segue a palavra de Jesus, não o acaso.",
+      "c": "Ele repreende a criação; não pede licença ao mar.",
+      "d": "O texto liga temor e pouca fé, não trata o medo como fé plena."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A bonança prova que o mar se acalma sozinho, sem o Rei."
+      },
+      {
+        "id": "b",
+        "text": "Ventos e mar obedecem; o temor dos discípulos é pouca fé."
+      },
+      {
+        "id": "c",
+        "text": "Jesus depende do mar para obter permissão de agir."
+      },
+      {
+        "id": "d",
+        "text": "O medo dos discípulos é apresentado como fé completa."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Ele lhes disse: Por que temeis, homens de pouca fé? Então, erguendo-se, repreendeu os ventos e o mar; e fez-se grande bonança. Todos se maravilharam, dizendo: Que homem é este que até os ventos e o mar lhe obedecem?",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "id": "mateus-pro-mt-03-autoridade-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 8:26–27",
+    "learningObjective": "Ver que Jesus liga o temor à pouca fé e acalma ventos e mar, que lhe obedecem.",
+    "evidence": [
+      "Mateus 8:26",
+      "Mateus 8:27"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Mateus 8:26–27?",
+    "prompt": "Qual sequência revela o sentido de Mateus 8:26–27?",
+    "cue": "Qual sequência revela o sentido de Mateus 8:26–27?",
+    "feedbackCorrect": "Certo: pouca fé, autoridade e confissão da criação.",
+    "feedbackWrong": {
+      "b": "A autoridade se mostra na repreensão que traz bonança.",
+      "c": "A pergunta final confessa quem é esse homem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "o temor dos discípulos é tratado como pouca fé"
+      },
+      {
+        "id": "b",
+        "text": "o Rei repreende ventos e mar e faz-se bonança"
+      },
+      {
+        "id": "c",
+        "text": "os discípulos reconhecem que a criação lhe obedece"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ele lhes disse: Por que temeis, homens de pouca fé? Então, erguendo-se, repreendeu os ventos e o mar; e fez-se grande bonança. Todos se maravilharam, dizendo: Que homem é este que até os ventos e o mar lhe obedecem?",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "id": "mateus-pro-mt-03-autoridade-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 8:26–27",
+    "learningObjective": "Ver que Jesus liga o temor à pouca fé e acalma ventos e mar, que lhe obedecem.",
+    "evidence": [
+      "Mateus 8:26",
+      "Mateus 8:27"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"erguendo-se, ___ os ventos e o mar\"",
+    "prompt": "Complete a frase: \"erguendo-se, ___ os ventos e o mar\"",
+    "cue": "Complete a frase: \"erguendo-se, ___ os ventos e o mar\"",
+    "feedbackCorrect": "Certo: ele repreendeu os ventos e o mar.",
+    "feedbackWrong": {
+      "b": "Maravilharam é a reação dos discípulos.",
+      "c": "Obedecem é o verbo da criação, não desta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "repreendeu"
+      },
+      {
+        "id": "b",
+        "text": "maravilharam"
+      },
+      {
+        "id": "c",
+        "text": "obedecem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ele lhes disse: Por que temeis, homens de pouca fé? Então, erguendo-se, repreendeu os ventos e o mar; e fez-se grande bonança. Todos se maravilharam, dizendo: Que homem é este que até os ventos e o mar lhe obedecem?",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "id": "mateus-pro-mt-03-autoridade-05",
+    "template": "erguendo-se, ___ os ventos e o mar"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 8:26–27",
+    "learningObjective": "Ver que Jesus liga o temor à pouca fé e acalma ventos e mar, que lhe obedecem.",
+    "evidence": [
+      "Mateus 8:26",
+      "Mateus 8:27"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 8:26–27 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 8:26–27 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 8:26–27 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a autoridade do Rei alcança a criação.",
+    "feedbackWrong": {
+      "b": "O texto não limita Jesus a conselhos sem poder.",
+      "c": "Há Senhor grande, não abandono no medo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Autoridade sobre a criação"
+      },
+      {
+        "id": "b",
+        "text": "Mestre sem poder algum"
+      },
+      {
+        "id": "c",
+        "text": "Discípulos abandonados ao medo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ele lhes disse: Por que temeis, homens de pouca fé? Então, erguendo-se, repreendeu os ventos e o mar; e fez-se grande bonança. Todos se maravilharam, dizendo: Que homem é este que até os ventos e o mar lhe obedecem?",
+    "trail": "mateus",
+    "section": "mt-03-autoridade",
+    "id": "mateus-pro-mt-03-autoridade-06",
+    "passageA": {
+      "ref": "Mateus 8:26–27",
+      "text": "Ele lhes disse: Por que temeis, homens de pouca fé? Então, erguendo-se, repreendeu os ventos e o mar; e fez-se grande bonança. Todos se maravilharam, dizendo: Que homem é este que até os ventos e o mar lhe obedecem?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Autoridade do Rei: ventos e mar obedecem — fé pequena encontra Senhor grande."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 28:18–20",
+    "learningObjective": "Compreender que ao ressuscitado foi dado todo o poder, e ele envia discípulos permanecendo com eles.",
+    "evidence": [
+      "Mateus 28:18",
+      "Mateus 28:19",
+      "Mateus 28:20"
+    ],
+    "type": "true_false",
+    "question": "Foi dado a Jesus todo o poder no céu e na terra.",
+    "prompt": "Foi dado a Jesus todo o poder no céu e na terra.",
+    "cue": "Foi dado a Jesus todo o poder no céu e na terra.",
+    "feedbackCorrect": "Certo: ele declara que lhe foi dado todo o poder.",
+    "feedbackWrong": {
+      "false": "Mateus 28:18 afirma: foi-me dado todo o poder."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo; instruindo-as a observar todas as coisas que vos tenho mandado. Eis que eu estou convosco todos os dias até o fim do mundo.",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "id": "mateus-sem-mt-04-cruz-vitoria-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 28:18–20",
+    "learningObjective": "Compreender que ao ressuscitado foi dado todo o poder, e ele envia discípulos permanecendo com eles.",
+    "evidence": [
+      "Mateus 28:18",
+      "Mateus 28:19",
+      "Mateus 28:20"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 28:18–20, toque a palavra que falta em \"Foi-me dado todo o ___ no céu e na terra\"?",
+    "prompt": "Em Mateus 28:18–20, toque a palavra que falta em \"Foi-me dado todo o ___ no céu e na terra\"?",
+    "cue": "Em Mateus 28:18–20, toque a palavra que falta em \"Foi-me dado todo o ___ no céu e na terra\"?",
+    "feedbackCorrect": "Exato: foi-lhe dado todo o poder.",
+    "feedbackWrong": {
+      "b": "Céu é o lugar do poder, não o substantivo desta lacuna.",
+      "c": "Mundo fecha a promessa final, não esta frase."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "poder"
+      },
+      {
+        "id": "b",
+        "text": "céu"
+      },
+      {
+        "id": "c",
+        "text": "mundo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo; instruindo-as a observar todas as coisas que vos tenho mandado. Eis que eu estou convosco todos os dias até o fim do mundo.",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "id": "mateus-sem-mt-04-cruz-vitoria-02",
+    "template": "Foi-me dado todo o ___ no céu e na terra"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 28:18–20",
+    "learningObjective": "Compreender que ao ressuscitado foi dado todo o poder, e ele envia discípulos permanecendo com eles.",
+    "evidence": [
+      "Mateus 28:18",
+      "Mateus 28:19",
+      "Mateus 28:20"
+    ],
+    "type": "choice",
+    "question": "O que Jesus manda os discípulos fazerem em Mateus 28:18–20?",
+    "prompt": "O que Jesus manda os discípulos fazerem em Mateus 28:18–20?",
+    "cue": "O que Jesus manda os discípulos fazerem em Mateus 28:18–20?",
+    "feedbackCorrect": "Certo: fazer discípulos de todas as nações.",
+    "feedbackWrong": {
+      "b": "O envio é a todas as nações, não a uma só.",
+      "c": "Há batismo e ensino, não só espera passiva.",
+      "d": "O poder já lhe foi dado; o texto não diz o contrário."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fazer discípulos de todas as nações, batizando e instruindo."
+      },
+      {
+        "id": "b",
+        "text": "Ficar numa só nação, sem batizar ninguém."
+      },
+      {
+        "id": "c",
+        "text": "Esperar em silêncio, sem ensinar o que ele mandou."
+      },
+      {
+        "id": "d",
+        "text": "Negar que algum poder lhe tenha sido dado."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo; instruindo-as a observar todas as coisas que vos tenho mandado. Eis que eu estou convosco todos os dias até o fim do mundo.",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "id": "mateus-sem-mt-04-cruz-vitoria-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 28:18–20",
+    "learningObjective": "Compreender que ao ressuscitado foi dado todo o poder, e ele envia discípulos permanecendo com eles.",
+    "evidence": [
+      "Mateus 28:18",
+      "Mateus 28:19",
+      "Mateus 28:20"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Mateus 28:18–20?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Mateus 28:18–20?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Mateus 28:18–20?",
+    "feedbackCorrect": "Certo: poder, envio e presença até o fim.",
+    "feedbackWrong": {
+      "b": "O envio vem depois da declaração do poder.",
+      "c": "A presença prometida fecha o mandato."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Foi-me dado todo o poder no céu e na terra"
+      },
+      {
+        "id": "b",
+        "text": "Ide, pois, e fazei discípulos de todas as nações"
+      },
+      {
+        "id": "c",
+        "text": "eu estou convosco todos os dias até o fim do mundo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo; instruindo-as a observar todas as coisas que vos tenho mandado. Eis que eu estou convosco todos os dias até o fim do mundo.",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "id": "mateus-sem-mt-04-cruz-vitoria-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 28:18–20",
+    "learningObjective": "Compreender que ao ressuscitado foi dado todo o poder, e ele envia discípulos permanecendo com eles.",
+    "evidence": [
+      "Mateus 28:18",
+      "Mateus 28:19",
+      "Mateus 28:20"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"eu estou convosco todos os dias até o fim do ___\"",
+    "prompt": "Complete a frase: \"eu estou convosco todos os dias até o fim do ___\"",
+    "cue": "Complete a frase: \"eu estou convosco todos os dias até o fim do ___\"",
+    "feedbackCorrect": "Certo: até o fim do mundo.",
+    "feedbackWrong": {
+      "b": "Céu pertence à declaração do poder.",
+      "c": "Pai aparece na fórmula batismal."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "mundo"
+      },
+      {
+        "id": "b",
+        "text": "céu"
+      },
+      {
+        "id": "c",
+        "text": "Pai"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo; instruindo-as a observar todas as coisas que vos tenho mandado. Eis que eu estou convosco todos os dias até o fim do mundo.",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "id": "mateus-sem-mt-04-cruz-vitoria-05",
+    "template": "eu estou convosco todos os dias até o fim do ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 28:18–20",
+    "learningObjective": "Compreender que ao ressuscitado foi dado todo o poder, e ele envia discípulos permanecendo com eles.",
+    "evidence": [
+      "Mateus 28:18",
+      "Mateus 28:19",
+      "Mateus 28:20"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 28:18–20 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 28:18–20 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 28:18–20 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o ressuscitado envia e permanece.",
+    "feedbackWrong": {
+      "b": "Há envio explícito, não retiro da missão.",
+      "c": "Ele promete estar convosco, não ausência."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Envia e permanece convosco"
+      },
+      {
+        "id": "b",
+        "text": "Recusa qualquer envio"
+      },
+      {
+        "id": "c",
+        "text": "Promete ausentar-se para sempre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo; instruindo-as a observar todas as coisas que vos tenho mandado. Eis que eu estou convosco todos os dias até o fim do mundo.",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "id": "mateus-sem-mt-04-cruz-vitoria-06",
+    "passageA": {
+      "ref": "Mateus 28:18–20",
+      "text": "Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo; instruindo-as a observar todas as coisas que vos tenho mandado. Eis que eu estou convosco todos os dias até o fim do mundo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Cruz e vitória: todo poder foi dado ao ressuscitado, que envia discípulos e permanece."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 28:18–20",
+    "learningObjective": "Compreender que ao ressuscitado foi dado todo o poder, e ele envia discípulos permanecendo com eles.",
+    "evidence": [
+      "Mateus 28:18",
+      "Mateus 28:19",
+      "Mateus 28:20"
+    ],
+    "type": "true_false",
+    "question": "O envio limita os discípulos a uma só nação, sem batismo nem ensino.",
+    "prompt": "O envio limita os discípulos a uma só nação, sem batismo nem ensino.",
+    "cue": "O envio limita os discípulos a uma só nação, sem batismo nem ensino.",
+    "feedbackCorrect": "Certo: o mandato é a todas as nações, batizando e instruindo.",
+    "feedbackWrong": {
+      "true": "Mateus 28:19–20 fala de todas as nações e de ensinar."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo; instruindo-as a observar todas as coisas que vos tenho mandado. Eis que eu estou convosco todos os dias até o fim do mundo.",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "id": "mateus-cam-mt-04-cruz-vitoria-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 28:18–20",
+    "learningObjective": "Compreender que ao ressuscitado foi dado todo o poder, e ele envia discípulos permanecendo com eles.",
+    "evidence": [
+      "Mateus 28:18",
+      "Mateus 28:19",
+      "Mateus 28:20"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 28:18–20, toque a palavra que falta em \"fazei ___ de todas as nações\"?",
+    "prompt": "Em Mateus 28:18–20, toque a palavra que falta em \"fazei ___ de todas as nações\"?",
+    "cue": "Em Mateus 28:18–20, toque a palavra que falta em \"fazei ___ de todas as nações\"?",
+    "feedbackCorrect": "Exato: o mandato é fazer discípulos.",
+    "feedbackWrong": {
+      "b": "Nações é o alcance, não o objeto desta lacuna.",
+      "c": "Poder já foi declarado no versículo 18."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "discípulos"
+      },
+      {
+        "id": "b",
+        "text": "nações"
+      },
+      {
+        "id": "c",
+        "text": "poder"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo; instruindo-as a observar todas as coisas que vos tenho mandado. Eis que eu estou convosco todos os dias até o fim do mundo.",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "id": "mateus-cam-mt-04-cruz-vitoria-02",
+    "template": "fazei ___ de todas as nações"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 28:18–20",
+    "learningObjective": "Compreender que ao ressuscitado foi dado todo o poder, e ele envia discípulos permanecendo com eles.",
+    "evidence": [
+      "Mateus 28:18",
+      "Mateus 28:19",
+      "Mateus 28:20"
+    ],
+    "type": "choice",
+    "question": "Como o poder declarado em Mateus 28:18 se liga ao envio?",
+    "prompt": "Como o poder declarado em Mateus 28:18 se liga ao envio?",
+    "cue": "Como o poder declarado em Mateus 28:18 se liga ao envio?",
+    "feedbackCorrect": "Certo: o poder dado fundamenta o ide.",
+    "feedbackWrong": {
+      "a": "O texto une 'foi-me dado' e 'ide, pois'.",
+      "c": "Há batismo no nome triúno, não recusa de batizar.",
+      "d": "Instruir a observar o mandado faz parte da missão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O poder declarado não tem relação com o ide."
+      },
+      {
+        "id": "b",
+        "text": "Porque lhe foi dado todo o poder, os discípulos são enviados."
+      },
+      {
+        "id": "c",
+        "text": "O batismo é proibido no mandato final."
+      },
+      {
+        "id": "d",
+        "text": "Ensinar o que ele mandou fica fora da missão."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo; instruindo-as a observar todas as coisas que vos tenho mandado. Eis que eu estou convosco todos os dias até o fim do mundo.",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "id": "mateus-cam-mt-04-cruz-vitoria-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 28:18–20",
+    "learningObjective": "Compreender que ao ressuscitado foi dado todo o poder, e ele envia discípulos permanecendo com eles.",
+    "evidence": [
+      "Mateus 28:18",
+      "Mateus 28:19",
+      "Mateus 28:20"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Mateus 28:18–20?",
+    "prompt": "Como se encadeiam os eventos de Mateus 28:18–20?",
+    "cue": "Como se encadeiam os eventos de Mateus 28:18–20?",
+    "feedbackCorrect": "Certo: poder, batismo e ensino do mandado.",
+    "feedbackWrong": {
+      "b": "O batismo segue o fazer discípulos.",
+      "c": "A instrução acompanha o batismo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "todo o poder no céu e na terra lhe foi dado"
+      },
+      {
+        "id": "b",
+        "text": "batizando-as em o nome do Pai, e do Filho, e do Espírito Santo"
+      },
+      {
+        "id": "c",
+        "text": "instruindo-as a observar todas as coisas que vos tenho mandado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo; instruindo-as a observar todas as coisas que vos tenho mandado. Eis que eu estou convosco todos os dias até o fim do mundo.",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "id": "mateus-cam-mt-04-cruz-vitoria-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 28:18–20",
+    "learningObjective": "Compreender que ao ressuscitado foi dado todo o poder, e ele envia discípulos permanecendo com eles.",
+    "evidence": [
+      "Mateus 28:18",
+      "Mateus 28:19",
+      "Mateus 28:20"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"batizando-as em o nome do Pai, e do Filho, e do ___ Santo\"",
+    "prompt": "Complete a frase: \"batizando-as em o nome do Pai, e do Filho, e do ___ Santo\"",
+    "cue": "Complete a frase: \"batizando-as em o nome do Pai, e do Filho, e do ___ Santo\"",
+    "feedbackCorrect": "Certo: o nome inclui o Espírito Santo.",
+    "feedbackWrong": {
+      "b": "Mundo fecha a promessa de presença, não esta fórmula.",
+      "c": "Terra pertence à declaração do poder."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito"
+      },
+      {
+        "id": "b",
+        "text": "mundo"
+      },
+      {
+        "id": "c",
+        "text": "terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo; instruindo-as a observar todas as coisas que vos tenho mandado. Eis que eu estou convosco todos os dias até o fim do mundo.",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "id": "mateus-cam-mt-04-cruz-vitoria-05",
+    "template": "batizando-as em o nome do Pai, e do Filho, e do ___ Santo"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 28:18–20",
+    "learningObjective": "Compreender que ao ressuscitado foi dado todo o poder, e ele envia discípulos permanecendo com eles.",
+    "evidence": [
+      "Mateus 28:18",
+      "Mateus 28:19",
+      "Mateus 28:20"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 28:18–20 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 28:18–20 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 28:18–20 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: poder, envio e presença caminham juntos.",
+    "feedbackWrong": {
+      "b": "O mandato não é poder sem missão.",
+      "c": "Ele permanece; não some após enviar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Poder, envio e presença"
+      },
+      {
+        "id": "b",
+        "text": "Poder sem nenhum envio"
+      },
+      {
+        "id": "c",
+        "text": "Envio sem a presença dele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo; instruindo-as a observar todas as coisas que vos tenho mandado. Eis que eu estou convosco todos os dias até o fim do mundo.",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "id": "mateus-cam-mt-04-cruz-vitoria-06",
+    "passageA": {
+      "ref": "Mateus 28:18–20",
+      "text": "Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo; instruindo-as a observar todas as coisas que vos tenho mandado. Eis que eu estou convosco todos os dias até o fim do mundo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Cruz e vitória: todo poder foi dado ao ressuscitado, que envia discípulos e permanece."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 28:18–20",
+    "learningObjective": "Compreender que ao ressuscitado foi dado todo o poder, e ele envia discípulos permanecendo com eles.",
+    "evidence": [
+      "Mateus 28:18",
+      "Mateus 28:19",
+      "Mateus 28:20"
+    ],
+    "type": "true_false",
+    "question": "A presença prometida por Jesus dura todos os dias até o fim do mundo.",
+    "prompt": "A presença prometida por Jesus dura todos os dias até o fim do mundo.",
+    "cue": "A presença prometida por Jesus dura todos os dias até o fim do mundo.",
+    "feedbackCorrect": "Certo: ele promete estar convosco até o fim.",
+    "feedbackWrong": {
+      "false": "Mateus 28:20 diz: todos os dias até o fim do mundo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo; instruindo-as a observar todas as coisas que vos tenho mandado. Eis que eu estou convosco todos os dias até o fim do mundo.",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "id": "mateus-pro-mt-04-cruz-vitoria-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 28:18–20",
+    "learningObjective": "Compreender que ao ressuscitado foi dado todo o poder, e ele envia discípulos permanecendo com eles.",
+    "evidence": [
+      "Mateus 28:18",
+      "Mateus 28:19",
+      "Mateus 28:20"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 28:18–20, toque a palavra que falta em \"instruindo-as a ___ todas as coisas que vos tenho mandado\"?",
+    "prompt": "Em Mateus 28:18–20, toque a palavra que falta em \"instruindo-as a ___ todas as coisas que vos tenho mandado\"?",
+    "cue": "Em Mateus 28:18–20, toque a palavra que falta em \"instruindo-as a ___ todas as coisas que vos tenho mandado\"?",
+    "feedbackCorrect": "Exato: instruir a observar o que ele mandou.",
+    "feedbackWrong": {
+      "b": "Mandado já fecha a frase, não esta lacuna.",
+      "c": "Batizando descreve o rito anterior."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "observar"
+      },
+      {
+        "id": "b",
+        "text": "mandado"
+      },
+      {
+        "id": "c",
+        "text": "batizando-as"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo; instruindo-as a observar todas as coisas que vos tenho mandado. Eis que eu estou convosco todos os dias até o fim do mundo.",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "id": "mateus-pro-mt-04-cruz-vitoria-02",
+    "template": "instruindo-as a ___ todas as coisas que vos tenho mandado"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 28:18–20",
+    "learningObjective": "Compreender que ao ressuscitado foi dado todo o poder, e ele envia discípulos permanecendo com eles.",
+    "evidence": [
+      "Mateus 28:18",
+      "Mateus 28:19",
+      "Mateus 28:20"
+    ],
+    "type": "choice",
+    "question": "O que a vitória do ressuscitado implica para a missão em Mateus 28:18–20?",
+    "prompt": "O que a vitória do ressuscitado implica para a missão em Mateus 28:18–20?",
+    "cue": "O que a vitória do ressuscitado implica para a missão em Mateus 28:18–20?",
+    "feedbackCorrect": "Certo: autoridade universal, envio e permanência.",
+    "feedbackWrong": {
+      "a": "O texto afirma que lhe foi dado todo o poder.",
+      "c": "Ele promete estar convosco, não substituir-se por ausência.",
+      "d": "O alcance é todas as nações, não um recuo da missão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O ressuscitado declara não ter poder no céu nem na terra."
+      },
+      {
+        "id": "b",
+        "text": "Todo o poder funda o envio, e ele permanece com os discípulos."
+      },
+      {
+        "id": "c",
+        "text": "Os discípulos substituem Jesus, que deixa de estar com eles."
+      },
+      {
+        "id": "d",
+        "text": "A vitória cancela o envio às nações."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo; instruindo-as a observar todas as coisas que vos tenho mandado. Eis que eu estou convosco todos os dias até o fim do mundo.",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "id": "mateus-pro-mt-04-cruz-vitoria-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 28:18–20",
+    "learningObjective": "Compreender que ao ressuscitado foi dado todo o poder, e ele envia discípulos permanecendo com eles.",
+    "evidence": [
+      "Mateus 28:18",
+      "Mateus 28:19",
+      "Mateus 28:20"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Mateus 28:18–20?",
+    "prompt": "Qual sequência revela o sentido de Mateus 28:18–20?",
+    "cue": "Qual sequência revela o sentido de Mateus 28:18–20?",
+    "feedbackCorrect": "Certo: autoridade, missão e permanência.",
+    "feedbackWrong": {
+      "b": "A missão às nações flui do poder dado.",
+      "c": "A presença até o fim sustenta quem é enviado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "ao ressuscitado foi dado todo o poder no céu e na terra"
+      },
+      {
+        "id": "b",
+        "text": "os discípulos são enviados a fazer discípulos das nações"
+      },
+      {
+        "id": "c",
+        "text": "Jesus permanece convosco até o fim do mundo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo; instruindo-as a observar todas as coisas que vos tenho mandado. Eis que eu estou convosco todos os dias até o fim do mundo.",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "id": "mateus-pro-mt-04-cruz-vitoria-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 28:18–20",
+    "learningObjective": "Compreender que ao ressuscitado foi dado todo o poder, e ele envia discípulos permanecendo com eles.",
+    "evidence": [
+      "Mateus 28:18",
+      "Mateus 28:19",
+      "Mateus 28:20"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Eis que eu estou ___ todos os dias até o fim do mundo\"",
+    "prompt": "Complete a frase: \"Eis que eu estou ___ todos os dias até o fim do mundo\"",
+    "cue": "Complete a frase: \"Eis que eu estou ___ todos os dias até o fim do mundo\"",
+    "feedbackCorrect": "Certo: eu estou convosco.",
+    "feedbackWrong": {
+      "b": "Nações é o alcance da missão, não esta lacuna.",
+      "c": "Poder já foi declarado no início."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "convosco"
+      },
+      {
+        "id": "b",
+        "text": "nações"
+      },
+      {
+        "id": "c",
+        "text": "poder"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo; instruindo-as a observar todas as coisas que vos tenho mandado. Eis que eu estou convosco todos os dias até o fim do mundo.",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "id": "mateus-pro-mt-04-cruz-vitoria-05",
+    "template": "Eis que eu estou ___ todos os dias até o fim do mundo"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 28:18–20",
+    "learningObjective": "Compreender que ao ressuscitado foi dado todo o poder, e ele envia discípulos permanecendo com eles.",
+    "evidence": [
+      "Mateus 28:18",
+      "Mateus 28:19",
+      "Mateus 28:20"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 28:18–20 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 28:18–20 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 28:18–20 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: poder dado e presença até o fim.",
+    "feedbackWrong": {
+      "b": "A cruz desemboca em envio, não em silêncio.",
+      "c": "Há permanência prometida, não abandono."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Poder dado e presença"
+      },
+      {
+        "id": "b",
+        "text": "Vitória sem nenhum envio"
+      },
+      {
+        "id": "c",
+        "text": "Ressuscitado que se ausenta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo; instruindo-as a observar todas as coisas que vos tenho mandado. Eis que eu estou convosco todos os dias até o fim do mundo.",
+    "trail": "mateus",
+    "section": "mt-04-cruz-vitoria",
+    "id": "mateus-pro-mt-04-cruz-vitoria-06",
+    "passageA": {
+      "ref": "Mateus 28:18–20",
+      "text": "Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra. Ide, pois, e fazei discípulos de todas as nações, batizando-as em o nome do Pai, e do Filho, e do Espírito Santo; instruindo-as a observar todas as coisas que vos tenho mandado. Eis que eu estou convosco todos os dias até o fim do mundo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Cruz e vitória: todo poder foi dado ao ressuscitado, que envia discípulos e permanece."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 1:21; 28:18",
+    "learningObjective": "Unir o nome Jesus que salva do pecado com o poder dado ao ressuscitado.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 28:18"
+    ],
+    "type": "true_false",
+    "question": "Jesus salvará o seu povo dos pecados deles, e lhe foi dado todo o poder no céu e na terra.",
+    "prompt": "Jesus salvará o seu povo dos pecados deles, e lhe foi dado todo o poder no céu e na terra.",
+    "cue": "Jesus salvará o seu povo dos pecados deles, e lhe foi dado todo o poder no céu e na terra.",
+    "feedbackCorrect": "Certo: os dois textos unem salvação e poder.",
+    "feedbackWrong": {
+      "false": "Mateus 1:21 e 28:18 afirmam salvação e poder."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra.",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "id": "mateus-sem-mt-boss-revisao-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 1:21; 28:18",
+    "learningObjective": "Unir o nome Jesus que salva do pecado com o poder dado ao ressuscitado.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 28:18"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 1:21; 28:18, toque a palavra que falta em \"a quem chamarás ___, porque ele salvará o seu povo dos pecados deles\"?",
+    "prompt": "Em Mateus 1:21; 28:18, toque a palavra que falta em \"a quem chamarás ___, porque ele salvará o seu povo dos pecados deles\"?",
+    "cue": "Em Mateus 1:21; 28:18, toque a palavra que falta em \"a quem chamarás ___, porque ele salvará o seu povo dos pecados deles\"?",
+    "feedbackCorrect": "Exato: o nome é JESUS.",
+    "feedbackWrong": {
+      "b": "Poder pertence a Mateus 28:18, não a esta lacuna.",
+      "c": "Povo é quem será salvo, não o nome."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "JESUS"
+      },
+      {
+        "id": "b",
+        "text": "poder"
+      },
+      {
+        "id": "c",
+        "text": "povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra.",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "id": "mateus-sem-mt-boss-revisao-02",
+    "template": "a quem chamarás ___, porque ele salvará o seu povo dos pecados deles"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 1:21; 28:18",
+    "learningObjective": "Unir o nome Jesus que salva do pecado com o poder dado ao ressuscitado.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 28:18"
+    ],
+    "type": "choice",
+    "question": "O que os dois trechos afirmam juntos sobre Jesus?",
+    "prompt": "O que os dois trechos afirmam juntos sobre Jesus?",
+    "cue": "O que os dois trechos afirmam juntos sobre Jesus?",
+    "feedbackCorrect": "Certo: ele salva dos pecados e recebeu todo o poder.",
+    "feedbackWrong": {
+      "b": "Mateus 1:21 liga o nome à salvação dos pecados.",
+      "c": "Mateus 28:18 afirma que o poder lhe foi dado.",
+      "d": "Os textos não dizem que o poder ficou com outro."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Salva o povo dos pecados e recebeu todo o poder."
+      },
+      {
+        "id": "b",
+        "text": "O nome Jesus não se liga a pecados."
+      },
+      {
+        "id": "c",
+        "text": "Nenhum poder lhe foi dado no céu nem na terra."
+      },
+      {
+        "id": "d",
+        "text": "O poder no céu ficou com os discípulos, não com ele."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra.",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "id": "mateus-sem-mt-boss-revisao-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 1:21; 28:18",
+    "learningObjective": "Unir o nome Jesus que salva do pecado com o poder dado ao ressuscitado.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 28:18"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Mateus 1:21; 28:18?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Mateus 1:21; 28:18?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Mateus 1:21; 28:18?",
+    "feedbackCorrect": "Certo: nome, salvação e poder dado.",
+    "feedbackWrong": {
+      "b": "A salvação explica o nome Jesus.",
+      "c": "O poder dado fecha o arco do ressuscitado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ela dará à luz um filho, a quem chamarás JESUS"
+      },
+      {
+        "id": "b",
+        "text": "ele salvará o seu povo dos pecados deles"
+      },
+      {
+        "id": "c",
+        "text": "Foi-me dado todo o poder no céu e na terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra.",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "id": "mateus-sem-mt-boss-revisao-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 1:21; 28:18",
+    "learningObjective": "Unir o nome Jesus que salva do pecado com o poder dado ao ressuscitado.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 28:18"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Foi-me dado todo o ___ no céu e na terra\"",
+    "prompt": "Complete a frase: \"Foi-me dado todo o ___ no céu e na terra\"",
+    "cue": "Complete a frase: \"Foi-me dado todo o ___ no céu e na terra\"",
+    "feedbackCorrect": "Certo: todo o poder lhe foi dado.",
+    "feedbackWrong": {
+      "b": "JESUS é o nome de 1:21, não esta lacuna.",
+      "c": "Pecados explica a salvação, não o substantivo do poder."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "poder"
+      },
+      {
+        "id": "b",
+        "text": "JESUS"
+      },
+      {
+        "id": "c",
+        "text": "pecados"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra.",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "id": "mateus-sem-mt-boss-revisao-05",
+    "template": "Foi-me dado todo o ___ no céu e na terra"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 1:21; 28:18",
+    "learningObjective": "Unir o nome Jesus que salva do pecado com o poder dado ao ressuscitado.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 28:18"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 1:21; 28:18 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 1:21; 28:18 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 1:21; 28:18 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Jesus salva do pecado e tem todo o poder.",
+    "feedbackWrong": {
+      "b": "O arco une salvação e autoridade, não as separa.",
+      "c": "Há poder declarado, não esvaziamento do Rei."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Salva e tem todo o poder"
+      },
+      {
+        "id": "b",
+        "text": "Salva, mas sem autoridade"
+      },
+      {
+        "id": "c",
+        "text": "Poder sem salvação do pecado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra.",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "id": "mateus-sem-mt-boss-revisao-06",
+    "passageA": {
+      "ref": "Mateus 1:21; 28:18",
+      "text": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Rei e seu Reino: Jesus salva do pecado e envia com todo o poder."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 1:21; 28:18",
+    "learningObjective": "Unir o nome Jesus que salva do pecado com o poder dado ao ressuscitado.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 28:18"
+    ],
+    "type": "true_false",
+    "question": "Mateus 28:18 afirma que nenhum poder foi dado a Jesus no céu.",
+    "prompt": "Mateus 28:18 afirma que nenhum poder foi dado a Jesus no céu.",
+    "cue": "Mateus 28:18 afirma que nenhum poder foi dado a Jesus no céu.",
+    "feedbackCorrect": "Certo: o texto diz que lhe foi dado todo o poder.",
+    "feedbackWrong": {
+      "true": "Mateus 28:18: foi-me dado todo o poder no céu e na terra."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra.",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "id": "mateus-cam-mt-boss-revisao-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 1:21; 28:18",
+    "learningObjective": "Unir o nome Jesus que salva do pecado com o poder dado ao ressuscitado.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 28:18"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 1:21; 28:18, toque a palavra que falta em \"ele salvará o seu povo dos ___ deles\"?",
+    "prompt": "Em Mateus 1:21; 28:18, toque a palavra que falta em \"ele salvará o seu povo dos ___ deles\"?",
+    "cue": "Em Mateus 1:21; 28:18, toque a palavra que falta em \"ele salvará o seu povo dos ___ deles\"?",
+    "feedbackCorrect": "Exato: a salvação é dos pecados.",
+    "feedbackWrong": {
+      "b": "Céu pertence à declaração do poder.",
+      "c": "Terra fecha o par céu e terra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "pecados"
+      },
+      {
+        "id": "b",
+        "text": "céu"
+      },
+      {
+        "id": "c",
+        "text": "terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra.",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "id": "mateus-cam-mt-boss-revisao-02",
+    "template": "ele salvará o seu povo dos ___ deles"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 1:21; 28:18",
+    "learningObjective": "Unir o nome Jesus que salva do pecado com o poder dado ao ressuscitado.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 28:18"
+    ],
+    "type": "choice",
+    "question": "Como o nascimento anunciado e a palavra do ressuscitado se relacionam?",
+    "prompt": "Como o nascimento anunciado e a palavra do ressuscitado se relacionam?",
+    "cue": "Como o nascimento anunciado e a palavra do ressuscitado se relacionam?",
+    "feedbackCorrect": "Certo: quem salva do pecado é quem recebeu todo o poder.",
+    "feedbackWrong": {
+      "a": "Os dois textos falam do mesmo Jesus, não de rivais.",
+      "c": "O poder no céu e na terra lhe foi dado, não recusado.",
+      "d": "O nome Jesus explica salvação dos pecados, não a anula."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "São dois cristos distintos, sem relação entre si."
+      },
+      {
+        "id": "b",
+        "text": "O que salva dos pecados é o mesmo a quem foi dado todo o poder."
+      },
+      {
+        "id": "c",
+        "text": "O ressuscitado recusa qualquer poder no céu."
+      },
+      {
+        "id": "d",
+        "text": "Salvar dos pecados contradiz o nome Jesus."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra.",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "id": "mateus-cam-mt-boss-revisao-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 1:21; 28:18",
+    "learningObjective": "Unir o nome Jesus que salva do pecado com o poder dado ao ressuscitado.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 28:18"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Mateus 1:21; 28:18?",
+    "prompt": "Como se encadeiam os eventos de Mateus 1:21; 28:18?",
+    "cue": "Como se encadeiam os eventos de Mateus 1:21; 28:18?",
+    "feedbackCorrect": "Certo: salvação anunciada, aproximação e poder dado.",
+    "feedbackWrong": {
+      "b": "A aproximação introduz a declaração do ressuscitado.",
+      "c": "O poder no céu e na terra fecha a declaração."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "o filho chamado JESUS salvará o povo dos pecados"
+      },
+      {
+        "id": "b",
+        "text": "Jesus, aproximando-se, disse-lhes"
+      },
+      {
+        "id": "c",
+        "text": "foi-me dado todo o poder no céu e na terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra.",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "id": "mateus-cam-mt-boss-revisao-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 1:21; 28:18",
+    "learningObjective": "Unir o nome Jesus que salva do pecado com o poder dado ao ressuscitado.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 28:18"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"todo o poder no céu e na ___\"",
+    "prompt": "Complete a frase: \"todo o poder no céu e na ___\"",
+    "cue": "Complete a frase: \"todo o poder no céu e na ___\"",
+    "feedbackCorrect": "Certo: no céu e na terra.",
+    "feedbackWrong": {
+      "b": "Pecados pertence a Mateus 1:21.",
+      "c": "Povo é quem será salvo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "terra"
+      },
+      {
+        "id": "b",
+        "text": "pecados"
+      },
+      {
+        "id": "c",
+        "text": "povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra.",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "id": "mateus-cam-mt-boss-revisao-05",
+    "template": "todo o poder no céu e na ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 1:21; 28:18",
+    "learningObjective": "Unir o nome Jesus que salva do pecado com o poder dado ao ressuscitado.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 28:18"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 1:21; 28:18 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 1:21; 28:18 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 1:21; 28:18 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o Rei que salva também governa.",
+    "feedbackWrong": {
+      "b": "Há poder no céu e na terra, não só no berço.",
+      "c": "A salvação dos pecados não some no envio."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O Rei que salva governa"
+      },
+      {
+        "id": "b",
+        "text": "Rei só no nascimento"
+      },
+      {
+        "id": "c",
+        "text": "Poder sem povo salvo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra.",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "id": "mateus-cam-mt-boss-revisao-06",
+    "passageA": {
+      "ref": "Mateus 1:21; 28:18",
+      "text": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Rei e seu Reino: Jesus salva do pecado e envia com todo o poder."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 1:21; 28:18",
+    "learningObjective": "Unir o nome Jesus que salva do pecado com o poder dado ao ressuscitado.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 28:18"
+    ],
+    "type": "true_false",
+    "question": "O mesmo Jesus que salva do pecado declara ter recebido todo o poder no céu e na terra.",
+    "prompt": "O mesmo Jesus que salva do pecado declara ter recebido todo o poder no céu e na terra.",
+    "cue": "O mesmo Jesus que salva do pecado declara ter recebido todo o poder no céu e na terra.",
+    "feedbackCorrect": "Certo: salvação e autoridade pertencem ao mesmo Rei.",
+    "feedbackWrong": {
+      "false": "Os dois versos falam do mesmo Jesus."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra.",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "id": "mateus-pro-mt-boss-revisao-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 1:21; 28:18",
+    "learningObjective": "Unir o nome Jesus que salva do pecado com o poder dado ao ressuscitado.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 28:18"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 1:21; 28:18, toque a palavra que falta em \"Foi-me dado todo o poder no ___ e na terra\"?",
+    "prompt": "Em Mateus 1:21; 28:18, toque a palavra que falta em \"Foi-me dado todo o poder no ___ e na terra\"?",
+    "cue": "Em Mateus 1:21; 28:18, toque a palavra que falta em \"Foi-me dado todo o poder no ___ e na terra\"?",
+    "feedbackCorrect": "Exato: o poder é no céu e na terra.",
+    "feedbackWrong": {
+      "b": "Filho é quem nasce em 1:21, não esta lacuna.",
+      "c": "Pecados explica a salvação, não o par céu e terra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "céu"
+      },
+      {
+        "id": "b",
+        "text": "filho"
+      },
+      {
+        "id": "c",
+        "text": "pecados"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra.",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "id": "mateus-pro-mt-boss-revisao-02",
+    "template": "Foi-me dado todo o poder no ___ e na terra"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 1:21; 28:18",
+    "learningObjective": "Unir o nome Jesus que salva do pecado com o poder dado ao ressuscitado.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 28:18"
+    ],
+    "type": "choice",
+    "question": "O que o arco de Mateus 1:21 e 28:18 ensina sobre o Reino?",
+    "prompt": "O que o arco de Mateus 1:21 e 28:18 ensina sobre o Reino?",
+    "cue": "O que o arco de Mateus 1:21 e 28:18 ensina sobre o Reino?",
+    "feedbackCorrect": "Certo: graça que salva e autoridade que envia se unem.",
+    "feedbackWrong": {
+      "a": "O poder dado não cancela a salvação dos pecados.",
+      "c": "O nome Jesus explica salvação, não a substitui por fama.",
+      "d": "O texto afirma poder no céu e na terra, não recuo do Rei."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O poder do ressuscitado torna inútil salvar dos pecados."
+      },
+      {
+        "id": "b",
+        "text": "O Rei salva do pecado e governa com todo o poder."
+      },
+      {
+        "id": "c",
+        "text": "Jesus é só um nome, sem salvação nem autoridade."
+      },
+      {
+        "id": "d",
+        "text": "O Reino fica só na terra, sem poder no céu."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra.",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "id": "mateus-pro-mt-boss-revisao-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 1:21; 28:18",
+    "learningObjective": "Unir o nome Jesus que salva do pecado com o poder dado ao ressuscitado.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 28:18"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Mateus 1:21; 28:18?",
+    "prompt": "Qual sequência revela o sentido de Mateus 1:21; 28:18?",
+    "cue": "Qual sequência revela o sentido de Mateus 1:21; 28:18?",
+    "feedbackCorrect": "Certo: salvar, receber poder e unir graça e autoridade.",
+    "feedbackWrong": {
+      "b": "O poder dado interpreta a vitória do mesmo Jesus.",
+      "c": "O Reino une as duas afirmações."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "o nome Jesus anuncia salvação dos pecados"
+      },
+      {
+        "id": "b",
+        "text": "ao ressuscitado foi dado todo o poder no céu e na terra"
+      },
+      {
+        "id": "c",
+        "text": "o Reino une graça que salva e autoridade que envia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra.",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "id": "mateus-pro-mt-boss-revisao-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 1:21; 28:18",
+    "learningObjective": "Unir o nome Jesus que salva do pecado com o poder dado ao ressuscitado.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 28:18"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"ele salvará o seu ___ dos pecados deles\"",
+    "prompt": "Complete a frase: \"ele salvará o seu ___ dos pecados deles\"",
+    "cue": "Complete a frase: \"ele salvará o seu ___ dos pecados deles\"",
+    "feedbackCorrect": "Certo: ele salvará o seu povo.",
+    "feedbackWrong": {
+      "b": "Poder pertence a 28:18.",
+      "c": "Céu pertence ao par céu e terra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "povo"
+      },
+      {
+        "id": "b",
+        "text": "poder"
+      },
+      {
+        "id": "c",
+        "text": "céu"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra.",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "id": "mateus-pro-mt-boss-revisao-05",
+    "template": "ele salvará o seu ___ dos pecados deles"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 1:21; 28:18",
+    "learningObjective": "Unir o nome Jesus que salva do pecado com o poder dado ao ressuscitado.",
+    "evidence": [
+      "Mateus 1:21",
+      "Mateus 28:18"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 1:21; 28:18 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 1:21; 28:18 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 1:21; 28:18 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Jesus salva e envia com todo o poder.",
+    "feedbackWrong": {
+      "b": "Há salvação anunciada, não só mando sem graça.",
+      "c": "Há poder para enviar, não Rei impotente."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Salva e envia com poder"
+      },
+      {
+        "id": "b",
+        "text": "Envia sem salvar do pecado"
+      },
+      {
+        "id": "c",
+        "text": "Salva, mas sem poder algum"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra.",
+    "trail": "mateus",
+    "section": "mt-boss-revisao",
+    "id": "mateus-pro-mt-boss-revisao-06",
+    "passageA": {
+      "ref": "Mateus 1:21; 28:18",
+      "text": "Ela dará à luz um filho, a quem chamarás JESUS, porque ele salvará o seu povo dos pecados deles. Jesus, aproximando-se, disse-lhes: Foi-me dado todo o poder no céu e na terra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Rei e seu Reino: Jesus salva do pecado e envia com todo o poder."
+    }
+  }
+]

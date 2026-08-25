@@ -1,0 +1,2078 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 1:6–8",
+    "learningObjective": "Reconhecer que o evangelho da graça de Cristo não admite versão alternativa: quem o perverte, ainda que anjo, cai sob anátema.",
+    "evidence": ["Gálatas 1:6", "Gálatas 1:7", "Gálatas 1:8"],
+    "type": "true_false",
+    "question": "Paulo admira-se de que os gálatas estejam passando tão depressa daquele que os chamou pela graça de Cristo para um evangelho diferente.",
+    "prompt": "Paulo admira-se de que os gálatas estejam passando tão depressa daquele que os chamou pela graça de Cristo para um evangelho diferente.",
+    "cue": "Paulo admira-se de que os gálatas estejam passando tão depressa daquele que os chamou pela graça de Cristo para um evangelho diferente.",
+    "feedbackCorrect": "Certo: essa é a admiração de Paulo em Gálatas 1:6.",
+    "feedbackWrong": {
+      "false": "Releia 1:6: a passagem rápida para um evangelho diferente é o ponto."
+    },
+    "options": [
+      { "id": "true", "text": "Verdadeiro" },
+      { "id": "false", "text": "Falso" }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Admiro-me de que tão depressa estais passando daquele que vos chamou pela graça de Cristo para um evangelho diferente, o qual não é outro senão que há alguns que vos perturbam e querem perverter o evangelho de Cristo. Mas, ainda que nós ou um anjo do céu vos pregasse um evangelho além do que vos pregamos, seja anátema.",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "id": "galatas-sem-gl-01-outro-evangelho-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 1:6–8",
+    "learningObjective": "Reconhecer que o evangelho da graça de Cristo não admite versão alternativa: quem o perverte, ainda que anjo, cai sob anátema.",
+    "evidence": ["Gálatas 1:6", "Gálatas 1:7", "Gálatas 1:8"],
+    "type": "tap",
+    "question": "Em Gálatas 1:6–8, toque a palavra que falta em \"para um evangelho ___\"?",
+    "prompt": "Em Gálatas 1:6–8, toque a palavra que falta em \"para um evangelho ___\"?",
+    "cue": "Em Gálatas 1:6–8, toque a palavra que falta em \"para um evangelho ___\"?",
+    "feedbackCorrect": "Exato: o texto diz \"um evangelho diferente\".",
+    "feedbackWrong": {
+      "b": "Anátema é a sentença do v. 8, não esta lacuna.",
+      "c": "Anjo aparece depois, na hipótese do v. 8."
+    },
+    "passageText": "Admiro-me de que tão depressa estais passando daquele que vos chamou pela graça de Cristo para um evangelho diferente, o qual não é outro senão que há alguns que vos perturbam e querem perverter o evangelho de Cristo. Mas, ainda que nós ou um anjo do céu vos pregasse um evangelho além do que vos pregamos, seja anátema.",
+    "template": "para um evangelho ___",
+    "options": [
+      { "id": "a", "text": "diferente" },
+      { "id": "b", "text": "anátema" },
+      { "id": "c", "text": "anjo" }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "id": "galatas-sem-gl-01-outro-evangelho-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 1:6–8",
+    "learningObjective": "Reconhecer que o evangelho da graça de Cristo não admite versão alternativa: quem o perverte, ainda que anjo, cai sob anátema.",
+    "evidence": ["Gálatas 1:6", "Gálatas 1:7", "Gálatas 1:8"],
+    "type": "choice",
+    "question": "O que o texto afirma sobre o evangelho diferente?",
+    "prompt": "O que o texto afirma sobre o evangelho diferente?",
+    "cue": "O que o texto afirma sobre o evangelho diferente?",
+    "feedbackCorrect": "Certo: não é outro; há quem perturbe e queira perverter o evangelho.",
+    "feedbackWrong": {
+      "b": "Paulo não aprova o evangelho diferente; chama-o de perversão.",
+      "c": "O trecho não menciona concílio; fala de perturbadores.",
+      "d": "O chamado foi pela graça; o diferente é desvio, não substituição oficial."
+    },
+    "passageText": "Admiro-me de que tão depressa estais passando daquele que vos chamou pela graça de Cristo para um evangelho diferente, o qual não é outro senão que há alguns que vos perturbam e querem perverter o evangelho de Cristo. Mas, ainda que nós ou um anjo do céu vos pregasse um evangelho além do que vos pregamos, seja anátema.",
+    "options": [
+      { "id": "a", "text": "Não é outro: há quem perturbe e queira perverter o evangelho de Cristo." },
+      { "id": "b", "text": "É um complemento que Paulo aprova para as igrejas da Galácia." },
+      { "id": "c", "text": "Veio de um concílio em Jerusalém e deve ser recebido." },
+      { "id": "d", "text": "Substitui o chamado pela graça por uma nova vocação oficial." }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "id": "galatas-sem-gl-01-outro-evangelho-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 1:6–8",
+    "learningObjective": "Reconhecer que o evangelho da graça de Cristo não admite versão alternativa: quem o perverte, ainda que anjo, cai sob anátema.",
+    "evidence": ["Gálatas 1:6", "Gálatas 1:7", "Gálatas 1:8"],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Gálatas 1:6–8?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Gálatas 1:6–8?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Gálatas 1:6–8?",
+    "feedbackCorrect": "Certo: primeiro a passagem, depois a perversão, então o anátema.",
+    "feedbackWrong": {
+      "b": "A perversão explica o \"diferente\"; não abre o trecho.",
+      "c": "O anátema fecha o aviso; não é o primeiro movimento."
+    },
+    "passageText": "Admiro-me de que tão depressa estais passando daquele que vos chamou pela graça de Cristo para um evangelho diferente, o qual não é outro senão que há alguns que vos perturbam e querem perverter o evangelho de Cristo. Mas, ainda que nós ou um anjo do céu vos pregasse um evangelho além do que vos pregamos, seja anátema.",
+    "options": [
+      { "id": "a", "text": "estais passando daquele que vos chamou pela graça de Cristo para um evangelho diferente" },
+      { "id": "b", "text": "há alguns que vos perturbam e querem perverter o evangelho de Cristo" },
+      { "id": "c", "text": "ainda que nós ou um anjo do céu vos pregasse um evangelho além do que vos pregamos, seja anátema" }
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "id": "galatas-sem-gl-01-outro-evangelho-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 1:6–8",
+    "learningObjective": "Reconhecer que o evangelho da graça de Cristo não admite versão alternativa: quem o perverte, ainda que anjo, cai sob anátema.",
+    "evidence": ["Gálatas 1:6", "Gálatas 1:7", "Gálatas 1:8"],
+    "type": "complete",
+    "question": "Complete: \"Mas, ainda que nós ou um ___ do céu vos pregasse um evangelho além do que vos pregamos, seja anátema.\"",
+    "prompt": "Complete: \"Mas, ainda que nós ou um ___ do céu vos pregasse um evangelho além do que vos pregamos, seja anátema.\"",
+    "cue": "Complete: \"Mas, ainda que nós ou um ___ do céu vos pregasse um evangelho além do que vos pregamos, seja anátema.\"",
+    "feedbackCorrect": "Certo: até um anjo do céu cairia sob anátema.",
+    "feedbackWrong": {
+      "b": "Evangelho é o conteúdo; a lacuna é quem prega.",
+      "c": "Cristo é quem chamou pela graça, não esta lacuna."
+    },
+    "passageText": "Admiro-me de que tão depressa estais passando daquele que vos chamou pela graça de Cristo para um evangelho diferente, o qual não é outro senão que há alguns que vos perturbam e querem perverter o evangelho de Cristo. Mas, ainda que nós ou um anjo do céu vos pregasse um evangelho além do que vos pregamos, seja anátema.",
+    "template": "Mas, ainda que nós ou um ___ do céu vos pregasse um evangelho além do que vos pregamos, seja anátema.",
+    "options": [
+      { "id": "a", "text": "anjo" },
+      { "id": "b", "text": "evangelho" },
+      { "id": "c", "text": "Cristo" }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "id": "galatas-sem-gl-01-outro-evangelho-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 1:6–8",
+    "learningObjective": "Reconhecer que o evangelho da graça de Cristo não admite versão alternativa: quem o perverte, ainda que anjo, cai sob anátema.",
+    "evidence": ["Gálatas 1:6", "Gálatas 1:7", "Gálatas 1:8"],
+    "type": "connect",
+    "question": "O que Gálatas 1:6–8 comunica que se liga a este contexto?",
+    "prompt": "O que Gálatas 1:6–8 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 1:6–8 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: não há outro evangelho; perverter cai sob anátema.",
+    "feedbackWrong": {
+      "b": "O texto recusa um segundo evangelho, não o autoriza.",
+      "c": "O anjo não atualiza o evangelho; também cairia sob anátema."
+    },
+    "passageText": "Admiro-me de que tão depressa estais passando daquele que vos chamou pela graça de Cristo para um evangelho diferente, o qual não é outro senão que há alguns que vos perturbam e querem perverter o evangelho de Cristo. Mas, ainda que nós ou um anjo do céu vos pregasse um evangelho além do que vos pregamos, seja anátema.",
+    "passageA": {
+      "ref": "Gálatas 1:6–8",
+      "text": "o qual não é outro senão que há alguns que vos perturbam e querem perverter o evangelho de Cristo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Não há outro evangelho: até um anjo que o perverta cai sob anátema."
+    },
+    "options": [
+      { "id": "a", "text": "Nenhum outro evangelho" },
+      { "id": "b", "text": "Segundo evangelho válido" },
+      { "id": "c", "text": "Atualização por um anjo" }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "id": "galatas-sem-gl-01-outro-evangelho-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 1:6–8",
+    "learningObjective": "Reconhecer que o evangelho da graça de Cristo não admite versão alternativa: quem o perverte, ainda que anjo, cai sob anátema.",
+    "evidence": ["Gálatas 1:6", "Gálatas 1:7", "Gálatas 1:8"],
+    "type": "true_false",
+    "question": "O evangelho diferente é, segundo Paulo, simplesmente outro evangelho autêntico ao lado do que ele pregou.",
+    "prompt": "O evangelho diferente é, segundo Paulo, simplesmente outro evangelho autêntico ao lado do que ele pregou.",
+    "cue": "O evangelho diferente é, segundo Paulo, simplesmente outro evangelho autêntico ao lado do que ele pregou.",
+    "feedbackCorrect": "Certo: ele diz que esse \"diferente\" não é outro evangelho.",
+    "feedbackWrong": {
+      "true": "O texto: não é outro, senão perturbação e perversão."
+    },
+    "options": [
+      { "id": "true", "text": "Verdadeiro" },
+      { "id": "false", "text": "Falso" }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Admiro-me de que tão depressa estais passando daquele que vos chamou pela graça de Cristo para um evangelho diferente, o qual não é outro senão que há alguns que vos perturbam e querem perverter o evangelho de Cristo. Mas, ainda que nós ou um anjo do céu vos pregasse um evangelho além do que vos pregamos, seja anátema.",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "id": "galatas-cam-gl-01-outro-evangelho-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 1:6–8",
+    "learningObjective": "Reconhecer que o evangelho da graça de Cristo não admite versão alternativa: quem o perverte, ainda que anjo, cai sob anátema.",
+    "evidence": ["Gálatas 1:6", "Gálatas 1:7", "Gálatas 1:8"],
+    "type": "tap",
+    "question": "Em Gálatas 1:6–8, toque a palavra que falta em \"querem ___ o evangelho de Cristo\"?",
+    "prompt": "Em Gálatas 1:6–8, toque a palavra que falta em \"querem ___ o evangelho de Cristo\"?",
+    "cue": "Em Gálatas 1:6–8, toque a palavra que falta em \"querem ___ o evangelho de Cristo\"?",
+    "feedbackCorrect": "Exato: o intento dos perturbadores é perverter o evangelho.",
+    "feedbackWrong": {
+      "b": "Chamou refere-se a Deus, não ao intento deles.",
+      "c": "Pregasse aparece na hipótese do anjo, não nesta lacuna."
+    },
+    "passageText": "Admiro-me de que tão depressa estais passando daquele que vos chamou pela graça de Cristo para um evangelho diferente, o qual não é outro senão que há alguns que vos perturbam e querem perverter o evangelho de Cristo. Mas, ainda que nós ou um anjo do céu vos pregasse um evangelho além do que vos pregamos, seja anátema.",
+    "template": "querem ___ o evangelho de Cristo",
+    "options": [
+      { "id": "a", "text": "perverter" },
+      { "id": "b", "text": "chamou" },
+      { "id": "c", "text": "pregasse" }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "id": "galatas-cam-gl-01-outro-evangelho-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 1:6–8",
+    "learningObjective": "Reconhecer que o evangelho da graça de Cristo não admite versão alternativa: quem o perverte, ainda que anjo, cai sob anátema.",
+    "evidence": ["Gálatas 1:6", "Gálatas 1:7", "Gálatas 1:8"],
+    "type": "choice",
+    "question": "O que significa dizer que o evangelho diferente \"não é outro\"?",
+    "prompt": "O que significa dizer que o evangelho diferente \"não é outro\"?",
+    "cue": "O que significa dizer que o evangelho diferente \"não é outro\"?",
+    "feedbackCorrect": "Certo: não há segundo evangelho; só perturbação e perversão.",
+    "feedbackWrong": {
+      "b": "Paulo não admite duas versões apostólicas lado a lado.",
+      "c": "O anjo do céu não autoriza variação; cairia sob anátema.",
+      "d": "A graça de Cristo é o chamado; acréscimos legais são perversão."
+    },
+    "passageText": "Admiro-me de que tão depressa estais passando daquele que vos chamou pela graça de Cristo para um evangelho diferente, o qual não é outro senão que há alguns que vos perturbam e querem perverter o evangelho de Cristo. Mas, ainda que nós ou um anjo do céu vos pregasse um evangelho além do que vos pregamos, seja anátema.",
+    "options": [
+      { "id": "a", "text": "Não há segundo evangelho: o \"diferente\" é perturbação e perversão." },
+      { "id": "b", "text": "Há duas versões igualmente apostólicas do mesmo anúncio." },
+      { "id": "c", "text": "Um anjo do céu pode autorizar a variação do conteúdo." },
+      { "id": "d", "text": "A graça de Cristo admite acréscimos legais sem perverter." }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "id": "galatas-cam-gl-01-outro-evangelho-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 1:6–8",
+    "learningObjective": "Reconhecer que o evangelho da graça de Cristo não admite versão alternativa: quem o perverte, ainda que anjo, cai sob anátema.",
+    "evidence": ["Gálatas 1:6", "Gálatas 1:7", "Gálatas 1:8"],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Gálatas 1:6–8?",
+    "prompt": "Como se encadeiam os eventos de Gálatas 1:6–8?",
+    "cue": "Como se encadeiam os eventos de Gálatas 1:6–8?",
+    "feedbackCorrect": "Certo: o chamado pela graça precede o desvio e o anátema.",
+    "feedbackWrong": {
+      "b": "O chamado pela graça vem antes da passagem, não depois.",
+      "c": "O anátema responde ao evangelho além; não inicia a cadeia."
+    },
+    "passageText": "Admiro-me de que tão depressa estais passando daquele que vos chamou pela graça de Cristo para um evangelho diferente, o qual não é outro senão que há alguns que vos perturbam e querem perverter o evangelho de Cristo. Mas, ainda que nós ou um anjo do céu vos pregasse um evangelho além do que vos pregamos, seja anátema.",
+    "options": [
+      { "id": "a", "text": "daquele que vos chamou pela graça de Cristo" },
+      { "id": "b", "text": "tão depressa estais passando para um evangelho diferente" },
+      { "id": "c", "text": "um evangelho além do que vos pregamos, seja anátema" }
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "id": "galatas-cam-gl-01-outro-evangelho-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 1:6–8",
+    "learningObjective": "Reconhecer que o evangelho da graça de Cristo não admite versão alternativa: quem o perverte, ainda que anjo, cai sob anátema.",
+    "evidence": ["Gálatas 1:6", "Gálatas 1:7", "Gálatas 1:8"],
+    "type": "complete",
+    "question": "Complete: \"daquele que vos chamou pela ___ de Cristo\"",
+    "prompt": "Complete: \"daquele que vos chamou pela ___ de Cristo\"",
+    "cue": "Complete: \"daquele que vos chamou pela ___ de Cristo\"",
+    "feedbackCorrect": "Certo: o chamado é pela graça de Cristo.",
+    "feedbackWrong": {
+      "b": "O trecho fala de graça, não de Lei.",
+      "c": "Perturbam descreve os opositores, não o chamado."
+    },
+    "passageText": "Admiro-me de que tão depressa estais passando daquele que vos chamou pela graça de Cristo para um evangelho diferente, o qual não é outro senão que há alguns que vos perturbam e querem perverter o evangelho de Cristo. Mas, ainda que nós ou um anjo do céu vos pregasse um evangelho além do que vos pregamos, seja anátema.",
+    "template": "daquele que vos chamou pela ___ de Cristo",
+    "options": [
+      { "id": "a", "text": "graça" },
+      { "id": "b", "text": "Lei" },
+      { "id": "c", "text": "perturbam" }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "id": "galatas-cam-gl-01-outro-evangelho-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 1:6–8",
+    "learningObjective": "Reconhecer que o evangelho da graça de Cristo não admite versão alternativa: quem o perverte, ainda que anjo, cai sob anátema.",
+    "evidence": ["Gálatas 1:6", "Gálatas 1:7", "Gálatas 1:8"],
+    "type": "connect",
+    "question": "O que Gálatas 1:6–8 comunica que se liga a este contexto?",
+    "prompt": "O que Gálatas 1:6–8 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 1:6–8 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o chamado pela graça não convive com perversão.",
+    "feedbackWrong": {
+      "b": "A rapidez do desvio é problema, não virtude.",
+      "c": "Paulo não pede tolerância ao evangelho além."
+    },
+    "passageText": "Admiro-me de que tão depressa estais passando daquele que vos chamou pela graça de Cristo para um evangelho diferente, o qual não é outro senão que há alguns que vos perturbam e querem perverter o evangelho de Cristo. Mas, ainda que nós ou um anjo do céu vos pregasse um evangelho além do que vos pregamos, seja anátema.",
+    "passageA": {
+      "ref": "Gálatas 1:6–8",
+      "text": "Admiro-me de que tão depressa estais passando daquele que vos chamou pela graça de Cristo para um evangelho diferente"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Não há outro evangelho: até um anjo que o perverta cai sob anátema."
+    },
+    "options": [
+      { "id": "a", "text": "Graça versus perversão" },
+      { "id": "b", "text": "Rapidez como virtude" },
+      { "id": "c", "text": "Tolerância ao evangelho além" }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "id": "galatas-cam-gl-01-outro-evangelho-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 1:6–8",
+    "learningObjective": "Reconhecer que o evangelho da graça de Cristo não admite versão alternativa: quem o perverte, ainda que anjo, cai sob anátema.",
+    "evidence": ["Gálatas 1:6", "Gálatas 1:7", "Gálatas 1:8"],
+    "type": "true_false",
+    "question": "Até um anjo do céu que pregasse um evangelho além do já anunciado cairia sob anátema.",
+    "prompt": "Até um anjo do céu que pregasse um evangelho além do já anunciado cairia sob anátema.",
+    "cue": "Até um anjo do céu que pregasse um evangelho além do já anunciado cairia sob anátema.",
+    "feedbackCorrect": "Certo: o critério é o evangelho pregado, não o prestígio do mensageiro.",
+    "feedbackWrong": {
+      "false": "O v. 8 inclui explicitamente \"nós ou um anjo do céu\"."
+    },
+    "options": [
+      { "id": "true", "text": "Verdadeiro" },
+      { "id": "false", "text": "Falso" }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Admiro-me de que tão depressa estais passando daquele que vos chamou pela graça de Cristo para um evangelho diferente, o qual não é outro senão que há alguns que vos perturbam e querem perverter o evangelho de Cristo. Mas, ainda que nós ou um anjo do céu vos pregasse um evangelho além do que vos pregamos, seja anátema.",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "id": "galatas-pro-gl-01-outro-evangelho-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 1:6–8",
+    "learningObjective": "Reconhecer que o evangelho da graça de Cristo não admite versão alternativa: quem o perverte, ainda que anjo, cai sob anátema.",
+    "evidence": ["Gálatas 1:6", "Gálatas 1:7", "Gálatas 1:8"],
+    "type": "tap",
+    "question": "Em Gálatas 1:6–8, toque a palavra que falta em \"seja ___\"?",
+    "prompt": "Em Gálatas 1:6–8, toque a palavra que falta em \"seja ___\"?",
+    "cue": "Em Gálatas 1:6–8, toque a palavra que falta em \"seja ___\"?",
+    "feedbackCorrect": "Exato: a sentença é anátema.",
+    "feedbackWrong": {
+      "b": "Diferente descreve o evangelho falso, não a sentença.",
+      "c": "Graça é o chamado, não o veredito deste trecho."
+    },
+    "passageText": "Admiro-me de que tão depressa estais passando daquele que vos chamou pela graça de Cristo para um evangelho diferente, o qual não é outro senão que há alguns que vos perturbam e querem perverter o evangelho de Cristo. Mas, ainda que nós ou um anjo do céu vos pregasse um evangelho além do que vos pregamos, seja anátema.",
+    "template": "seja ___",
+    "options": [
+      { "id": "a", "text": "anátema" },
+      { "id": "b", "text": "diferente" },
+      { "id": "c", "text": "graça" }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "id": "galatas-pro-gl-01-outro-evangelho-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 1:6–8",
+    "learningObjective": "Reconhecer que o evangelho da graça de Cristo não admite versão alternativa: quem o perverte, ainda que anjo, cai sob anátema.",
+    "evidence": ["Gálatas 1:6", "Gálatas 1:7", "Gálatas 1:8"],
+    "type": "choice",
+    "question": "Por que até um anjo do céu cairia sob anátema ao pregar outro evangelho?",
+    "prompt": "Por que até um anjo do céu cairia sob anátema ao pregar outro evangelho?",
+    "cue": "Por que até um anjo do céu cairia sob anátema ao pregar outro evangelho?",
+    "feedbackCorrect": "Certo: o critério é o evangelho já pregado, não a origem do mensageiro.",
+    "feedbackWrong": {
+      "b": "Origem celestial não autoriza mudar o evangelho.",
+      "c": "Paulo inclui a si e ao anjo na mesma sentença.",
+      "d": "A graça não fica flexível segundo o prestígio de quem prega."
+    },
+    "passageText": "Admiro-me de que tão depressa estais passando daquele que vos chamou pela graça de Cristo para um evangelho diferente, o qual não é outro senão que há alguns que vos perturbam e querem perverter o evangelho de Cristo. Mas, ainda que nós ou um anjo do céu vos pregasse um evangelho além do que vos pregamos, seja anátema.",
+    "options": [
+      { "id": "a", "text": "O critério é o evangelho já pregado, não o prestígio do mensageiro." },
+      { "id": "b", "text": "Anjos têm autoridade para atualizar o conteúdo do evangelho." },
+      { "id": "c", "text": "Paulo só condena pregadores humanos, nunca celestes." },
+      { "id": "d", "text": "A graça de Cristo muda conforme quem anuncia a mensagem." }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "id": "galatas-pro-gl-01-outro-evangelho-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 1:6–8",
+    "learningObjective": "Reconhecer que o evangelho da graça de Cristo não admite versão alternativa: quem o perverte, ainda que anjo, cai sob anátema.",
+    "evidence": ["Gálatas 1:6", "Gálatas 1:7", "Gálatas 1:8"],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Gálatas 1:6–8?",
+    "prompt": "Qual sequência revela o sentido de Gálatas 1:6–8?",
+    "cue": "Qual sequência revela o sentido de Gálatas 1:6–8?",
+    "feedbackCorrect": "Certo: graça, perversão e anátema revelam que não há outro evangelho.",
+    "feedbackWrong": {
+      "b": "O chamado pela graça é o ponto de partida, não o fim.",
+      "c": "O anátema conclui o sentido; não abre a sequência."
+    },
+    "passageText": "Admiro-me de que tão depressa estais passando daquele que vos chamou pela graça de Cristo para um evangelho diferente, o qual não é outro senão que há alguns que vos perturbam e querem perverter o evangelho de Cristo. Mas, ainda que nós ou um anjo do céu vos pregasse um evangelho além do que vos pregamos, seja anátema.",
+    "options": [
+      { "id": "a", "text": "vos chamou pela graça de Cristo" },
+      { "id": "b", "text": "querem perverter o evangelho de Cristo" },
+      { "id": "c", "text": "seja anátema" }
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "id": "galatas-pro-gl-01-outro-evangelho-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 1:6–8",
+    "learningObjective": "Reconhecer que o evangelho da graça de Cristo não admite versão alternativa: quem o perverte, ainda que anjo, cai sob anátema.",
+    "evidence": ["Gálatas 1:6", "Gálatas 1:7", "Gálatas 1:8"],
+    "type": "complete",
+    "question": "Complete: \"um evangelho ___ do que vos pregamos, seja anátema\"",
+    "prompt": "Complete: \"um evangelho ___ do que vos pregamos, seja anátema\"",
+    "cue": "Complete: \"um evangelho ___ do que vos pregamos, seja anátema\"",
+    "feedbackCorrect": "Certo: o anátema cai sobre o evangelho além do anunciado.",
+    "feedbackWrong": {
+      "b": "Depressa descreve a passagem dos gálatas, não esta lacuna.",
+      "c": "Perturbam descreve os opositores, não o acréscimo proibido."
+    },
+    "passageText": "Admiro-me de que tão depressa estais passando daquele que vos chamou pela graça de Cristo para um evangelho diferente, o qual não é outro senão que há alguns que vos perturbam e querem perverter o evangelho de Cristo. Mas, ainda que nós ou um anjo do céu vos pregasse um evangelho além do que vos pregamos, seja anátema.",
+    "template": "um evangelho ___ do que vos pregamos, seja anátema",
+    "options": [
+      { "id": "a", "text": "além" },
+      { "id": "b", "text": "depressa" },
+      { "id": "c", "text": "perturbam" }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "id": "galatas-pro-gl-01-outro-evangelho-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 1:6–8",
+    "learningObjective": "Reconhecer que o evangelho da graça de Cristo não admite versão alternativa: quem o perverte, ainda que anjo, cai sob anátema.",
+    "evidence": ["Gálatas 1:6", "Gálatas 1:7", "Gálatas 1:8"],
+    "type": "connect",
+    "question": "O que Gálatas 1:6–8 comunica que se liga a este contexto?",
+    "prompt": "O que Gálatas 1:6–8 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 1:6–8 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: até um anjo que perverta o evangelho cai sob anátema.",
+    "feedbackWrong": {
+      "a": "Prestígio celestial não protege quem altera o evangelho.",
+      "c": "O texto não abre exceção para o próprio apóstolo."
+    },
+    "passageText": "Admiro-me de que tão depressa estais passando daquele que vos chamou pela graça de Cristo para um evangelho diferente, o qual não é outro senão que há alguns que vos perturbam e querem perverter o evangelho de Cristo. Mas, ainda que nós ou um anjo do céu vos pregasse um evangelho além do que vos pregamos, seja anátema.",
+    "passageA": {
+      "ref": "Gálatas 1:8",
+      "text": "Mas, ainda que nós ou um anjo do céu vos pregasse um evangelho além do que vos pregamos, seja anátema."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Não há outro evangelho: até um anjo que o perverta cai sob anátema."
+    },
+    "options": [
+      { "id": "a", "text": "Anjo acima do evangelho" },
+      { "id": "b", "text": "Anátema ao pervertedor" },
+      { "id": "c", "text": "Exceção para o apóstolo" }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "galatas",
+    "section": "gl-01-outro-evangelho",
+    "id": "galatas-pro-gl-01-outro-evangelho-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 3:11",
+    "learningObjective": "Ver que ninguém é justificado diante de Deus pela Lei, porque o justo viverá da fé.",
+    "evidence": ["Gálatas 3:11"],
+    "type": "true_false",
+    "question": "Pela Lei ninguém é justificado diante de Deus, porque o justo viverá da fé.",
+    "prompt": "Pela Lei ninguém é justificado diante de Deus, porque o justo viverá da fé.",
+    "cue": "Pela Lei ninguém é justificado diante de Deus, porque o justo viverá da fé.",
+    "feedbackCorrect": "Certo: é exatamente o que Gálatas 3:11 declara.",
+    "feedbackWrong": {
+      "false": "Releia: pela Lei ninguém é justificado diante de Deus."
+    },
+    "options": [
+      { "id": "true", "text": "Verdadeiro" },
+      { "id": "false", "text": "Falso" }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "É claro que, pela Lei, ninguém é justificado diante de Deus, porque: O justo viverá da fé.",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "id": "galatas-sem-gl-02-fe-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 3:11",
+    "learningObjective": "Ver que ninguém é justificado diante de Deus pela Lei, porque o justo viverá da fé.",
+    "evidence": ["Gálatas 3:11"],
+    "type": "tap",
+    "question": "Em Gálatas 3:11, toque a palavra que falta em \"pela ___, ninguém é justificado diante de Deus\"?",
+    "prompt": "Em Gálatas 3:11, toque a palavra que falta em \"pela ___, ninguém é justificado diante de Deus\"?",
+    "cue": "Em Gálatas 3:11, toque a palavra que falta em \"pela ___, ninguém é justificado diante de Deus\"?",
+    "feedbackCorrect": "Exato: pela Lei ninguém é justificado diante de Deus.",
+    "feedbackWrong": {
+      "b": "Fé é o modo de viver do justo, não esta lacuna.",
+      "c": "Justo é o sujeito da citação, não o meio recusado."
+    },
+    "passageText": "É claro que, pela Lei, ninguém é justificado diante de Deus, porque: O justo viverá da fé.",
+    "template": "pela ___, ninguém é justificado diante de Deus",
+    "options": [
+      { "id": "a", "text": "Lei" },
+      { "id": "b", "text": "fé" },
+      { "id": "c", "text": "justo" }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "id": "galatas-sem-gl-02-fe-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 3:11",
+    "learningObjective": "Ver que ninguém é justificado diante de Deus pela Lei, porque o justo viverá da fé.",
+    "evidence": ["Gálatas 3:11"],
+    "type": "choice",
+    "question": "O que Gálatas 3:11 afirma de modo explícito?",
+    "prompt": "O que Gálatas 3:11 afirma de modo explícito?",
+    "cue": "O que Gálatas 3:11 afirma de modo explícito?",
+    "feedbackCorrect": "Certo: pela Lei ninguém é justificado diante de Deus.",
+    "feedbackWrong": {
+      "a": "O texto nega justificação pela Lei, não a afirma.",
+      "c": "Não diz que só alguns se justificam pela Lei.",
+      "d": "A citação é sobre viver da fé, não sobre a Lei justificar."
+    },
+    "passageText": "É claro que, pela Lei, ninguém é justificado diante de Deus, porque: O justo viverá da fé.",
+    "options": [
+      { "id": "a", "text": "Pela Lei todos são justificados diante de Deus." },
+      { "id": "b", "text": "Pela Lei ninguém é justificado diante de Deus." },
+      { "id": "c", "text": "Pela Lei só os justos são declarados justos diante de Deus." },
+      { "id": "d", "text": "A Lei é o meio pelo qual o justo viverá diante de Deus." }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "id": "galatas-sem-gl-02-fe-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 3:11",
+    "learningObjective": "Ver que ninguém é justificado diante de Deus pela Lei, porque o justo viverá da fé.",
+    "evidence": ["Gálatas 3:11"],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Gálatas 3:11?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Gálatas 3:11?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Gálatas 3:11?",
+    "feedbackCorrect": "Certo: clareza, recusa da Lei, então a fé do justo.",
+    "feedbackWrong": {
+      "b": "A citação do justo vem depois da recusa da Lei.",
+      "c": "A clareza abre o versículo; não o fecha."
+    },
+    "passageText": "É claro que, pela Lei, ninguém é justificado diante de Deus, porque: O justo viverá da fé.",
+    "options": [
+      { "id": "a", "text": "É claro que, pela Lei" },
+      { "id": "b", "text": "ninguém é justificado diante de Deus" },
+      { "id": "c", "text": "O justo viverá da fé" }
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "id": "galatas-sem-gl-02-fe-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 3:11",
+    "learningObjective": "Ver que ninguém é justificado diante de Deus pela Lei, porque o justo viverá da fé.",
+    "evidence": ["Gálatas 3:11"],
+    "type": "complete",
+    "question": "Complete: \"O justo viverá da ___\"",
+    "prompt": "Complete: \"O justo viverá da ___\"",
+    "cue": "Complete: \"O justo viverá da ___\"",
+    "feedbackCorrect": "Certo: o justo viverá da fé.",
+    "feedbackWrong": {
+      "a": "Lei é o meio recusado, não o da vida do justo.",
+      "c": "Deus é diante de quem se justifica, não esta lacuna."
+    },
+    "passageText": "É claro que, pela Lei, ninguém é justificado diante de Deus, porque: O justo viverá da fé.",
+    "template": "O justo viverá da ___",
+    "options": [
+      { "id": "a", "text": "Lei" },
+      { "id": "b", "text": "fé" },
+      { "id": "c", "text": "Deus" }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "id": "galatas-sem-gl-02-fe-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 3:11",
+    "learningObjective": "Ver que ninguém é justificado diante de Deus pela Lei, porque o justo viverá da fé.",
+    "evidence": ["Gálatas 3:11"],
+    "type": "connect",
+    "question": "O que Gálatas 3:11 comunica que se liga a este contexto?",
+    "prompt": "O que Gálatas 3:11 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 3:11 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a Lei não declara justo; o justo vive da fé.",
+    "feedbackWrong": {
+      "b": "O texto recusa justificação pela Lei diante de Deus.",
+      "c": "A vida do justo é da fé, não da Lei."
+    },
+    "passageText": "É claro que, pela Lei, ninguém é justificado diante de Deus, porque: O justo viverá da fé.",
+    "passageA": {
+      "ref": "Gálatas 3:11",
+      "text": "É claro que, pela Lei, ninguém é justificado diante de Deus, porque: O justo viverá da fé."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A promessa justifica pela fé: a Lei não declara justo diante de Deus."
+    },
+    "options": [
+      { "id": "a", "text": "Justiça pela fé" },
+      { "id": "b", "text": "Justiça pela Lei" },
+      { "id": "c", "text": "Vida pela Lei" }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "id": "galatas-sem-gl-02-fe-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 3:11",
+    "learningObjective": "Ver que ninguém é justificado diante de Deus pela Lei, porque o justo viverá da fé.",
+    "evidence": ["Gálatas 3:11"],
+    "type": "true_false",
+    "question": "A Lei é o meio pelo qual alguém é declarado justo diante de Deus.",
+    "prompt": "A Lei é o meio pelo qual alguém é declarado justo diante de Deus.",
+    "cue": "A Lei é o meio pelo qual alguém é declarado justo diante de Deus.",
+    "feedbackCorrect": "Certo: o texto diz o contrário — ninguém é justificado pela Lei.",
+    "feedbackWrong": {
+      "true": "Pela Lei ninguém é justificado diante de Deus."
+    },
+    "options": [
+      { "id": "true", "text": "Verdadeiro" },
+      { "id": "false", "text": "Falso" }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "É claro que, pela Lei, ninguém é justificado diante de Deus, porque: O justo viverá da fé.",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "id": "galatas-cam-gl-02-fe-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 3:11",
+    "learningObjective": "Ver que ninguém é justificado diante de Deus pela Lei, porque o justo viverá da fé.",
+    "evidence": ["Gálatas 3:11"],
+    "type": "tap",
+    "question": "Em Gálatas 3:11, toque a palavra que falta em \"ninguém é ___ diante de Deus\"?",
+    "prompt": "Em Gálatas 3:11, toque a palavra que falta em \"ninguém é ___ diante de Deus\"?",
+    "cue": "Em Gálatas 3:11, toque a palavra que falta em \"ninguém é ___ diante de Deus\"?",
+    "feedbackCorrect": "Exato: ninguém é justificado diante de Deus pela Lei.",
+    "feedbackWrong": {
+      "b": "Claro abre o versículo; não preenche esta lacuna.",
+      "c": "Viverá pertence à citação do justo, não a esta frase."
+    },
+    "passageText": "É claro que, pela Lei, ninguém é justificado diante de Deus, porque: O justo viverá da fé.",
+    "template": "ninguém é ___ diante de Deus",
+    "options": [
+      { "id": "a", "text": "justificado" },
+      { "id": "b", "text": "claro" },
+      { "id": "c", "text": "viverá" }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "id": "galatas-cam-gl-02-fe-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 3:11",
+    "learningObjective": "Ver que ninguém é justificado diante de Deus pela Lei, porque o justo viverá da fé.",
+    "evidence": ["Gálatas 3:11"],
+    "type": "choice",
+    "question": "Por que Paulo cita \"O justo viverá da fé\" logo após recusar a Lei?",
+    "prompt": "Por que Paulo cita \"O justo viverá da fé\" logo após recusar a Lei?",
+    "cue": "Por que Paulo cita \"O justo viverá da fé\" logo após recusar a Lei?",
+    "feedbackCorrect": "Certo: a citação explica por que a Lei não justifica diante de Deus.",
+    "feedbackWrong": {
+      "a": "A citação não restaura a Lei como caminho de justificação.",
+      "c": "O ponto é justificação diante de Deus, não ranking de virtudes.",
+      "d": "A fé não é apêndice da Lei neste versículo; é o contraste."
+    },
+    "passageText": "É claro que, pela Lei, ninguém é justificado diante de Deus, porque: O justo viverá da fé.",
+    "options": [
+      { "id": "a", "text": "Para mostrar que a Lei ainda justifica, agora com ajuda da fé." },
+      { "id": "b", "text": "Para explicar por que a Lei não justifica: o justo vive da fé." },
+      { "id": "c", "text": "Para comparar quem é mais virtuoso na observância da Lei." },
+      { "id": "d", "text": "Para ensinar que a fé só vale depois de cumprir toda a Lei." }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "id": "galatas-cam-gl-02-fe-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 3:11",
+    "learningObjective": "Ver que ninguém é justificado diante de Deus pela Lei, porque o justo viverá da fé.",
+    "evidence": ["Gálatas 3:11"],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Gálatas 3:11?",
+    "prompt": "Como se encadeiam os eventos de Gálatas 3:11?",
+    "cue": "Como se encadeiam os eventos de Gálatas 3:11?",
+    "feedbackCorrect": "Certo: a recusa pela Lei se encadeia com a vida da fé.",
+    "feedbackWrong": {
+      "b": "\"Diante de Deus\" completa a recusa; não inicia o versículo.",
+      "c": "A citação do justo fecha o encadeamento, não o abre."
+    },
+    "passageText": "É claro que, pela Lei, ninguém é justificado diante de Deus, porque: O justo viverá da fé.",
+    "options": [
+      { "id": "a", "text": "pela Lei, ninguém é justificado" },
+      { "id": "b", "text": "diante de Deus" },
+      { "id": "c", "text": "O justo viverá da fé" }
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "id": "galatas-cam-gl-02-fe-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 3:11",
+    "learningObjective": "Ver que ninguém é justificado diante de Deus pela Lei, porque o justo viverá da fé.",
+    "evidence": ["Gálatas 3:11"],
+    "type": "complete",
+    "question": "Complete: \"pela Lei, ___ é justificado diante de Deus\"",
+    "prompt": "Complete: \"pela Lei, ___ é justificado diante de Deus\"",
+    "cue": "Complete: \"pela Lei, ___ é justificado diante de Deus\"",
+    "feedbackCorrect": "Certo: ninguém é justificado pela Lei diante de Deus.",
+    "feedbackWrong": {
+      "a": "O texto diz ninguém, não o justo nesta lacuna.",
+      "c": "Claro qualifica a afirmação, não o sujeito."
+    },
+    "passageText": "É claro que, pela Lei, ninguém é justificado diante de Deus, porque: O justo viverá da fé.",
+    "template": "pela Lei, ___ é justificado diante de Deus",
+    "options": [
+      { "id": "a", "text": "justo" },
+      { "id": "b", "text": "ninguém" },
+      { "id": "c", "text": "claro" }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "id": "galatas-cam-gl-02-fe-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 3:11",
+    "learningObjective": "Ver que ninguém é justificado diante de Deus pela Lei, porque o justo viverá da fé.",
+    "evidence": ["Gálatas 3:11"],
+    "type": "connect",
+    "question": "O que Gálatas 3:11 comunica que se liga a este contexto?",
+    "prompt": "O que Gálatas 3:11 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 3:11 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a Lei não declara justo; a promessa opera pela fé.",
+    "feedbackWrong": {
+      "a": "O versículo não combina Lei e fé como dois meios iguais.",
+      "c": "Não há exceção para quem cumpre a Lei neste texto."
+    },
+    "passageText": "É claro que, pela Lei, ninguém é justificado diante de Deus, porque: O justo viverá da fé.",
+    "passageA": {
+      "ref": "Gálatas 3:11",
+      "text": "pela Lei, ninguém é justificado diante de Deus, porque: O justo viverá da fé."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A promessa justifica pela fé: a Lei não declara justo diante de Deus."
+    },
+    "options": [
+      { "id": "a", "text": "Lei e fé combinadas" },
+      { "id": "b", "text": "Lei não justifica" },
+      { "id": "c", "text": "Exceção aos cumpridores" }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "id": "galatas-cam-gl-02-fe-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 3:11",
+    "learningObjective": "Ver que ninguém é justificado diante de Deus pela Lei, porque o justo viverá da fé.",
+    "evidence": ["Gálatas 3:11"],
+    "type": "true_false",
+    "question": "O justo viverá da fé: por isso a Lei não declara ninguém justo diante de Deus.",
+    "prompt": "O justo viverá da fé: por isso a Lei não declara ninguém justo diante de Deus.",
+    "cue": "O justo viverá da fé: por isso a Lei não declara ninguém justo diante de Deus.",
+    "feedbackCorrect": "Certo: o \"porque\" une a recusa da Lei à vida da fé.",
+    "feedbackWrong": {
+      "false": "O texto liga as duas frases com \"porque\"."
+    },
+    "options": [
+      { "id": "true", "text": "Verdadeiro" },
+      { "id": "false", "text": "Falso" }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "É claro que, pela Lei, ninguém é justificado diante de Deus, porque: O justo viverá da fé.",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "id": "galatas-pro-gl-02-fe-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 3:11",
+    "learningObjective": "Ver que ninguém é justificado diante de Deus pela Lei, porque o justo viverá da fé.",
+    "evidence": ["Gálatas 3:11"],
+    "type": "tap",
+    "question": "Em Gálatas 3:11, toque a palavra que falta em \"O ___ viverá da fé\"?",
+    "prompt": "Em Gálatas 3:11, toque a palavra que falta em \"O ___ viverá da fé\"?",
+    "cue": "Em Gálatas 3:11, toque a palavra que falta em \"O ___ viverá da fé\"?",
+    "feedbackCorrect": "Exato: o justo viverá da fé.",
+    "feedbackWrong": {
+      "b": "Ninguém é o sujeito da recusa pela Lei, não desta citação.",
+      "c": "Deus é diante de quem se justifica, não o sujeito aqui."
+    },
+    "passageText": "É claro que, pela Lei, ninguém é justificado diante de Deus, porque: O justo viverá da fé.",
+    "template": "O ___ viverá da fé",
+    "options": [
+      { "id": "a", "text": "justo" },
+      { "id": "b", "text": "ninguém" },
+      { "id": "c", "text": "Deus" }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "id": "galatas-pro-gl-02-fe-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 3:11",
+    "learningObjective": "Ver que ninguém é justificado diante de Deus pela Lei, porque o justo viverá da fé.",
+    "evidence": ["Gálatas 3:11"],
+    "type": "choice",
+    "question": "Que leitura teológica o versículo sustenta sobre justificação diante de Deus?",
+    "prompt": "Que leitura teológica o versículo sustenta sobre justificação diante de Deus?",
+    "cue": "Que leitura teológica o versículo sustenta sobre justificação diante de Deus?",
+    "feedbackCorrect": "Certo: diante de Deus o justo vive da fé, não da Lei.",
+    "feedbackWrong": {
+      "a": "O texto não faz da Lei o tribunal que declara justo.",
+      "c": "Não há mix de méritos da Lei com fé neste versículo.",
+      "d": "A clareza de Paulo recusa a Lei como via de justificação."
+    },
+    "passageText": "É claro que, pela Lei, ninguém é justificado diante de Deus, porque: O justo viverá da fé.",
+    "options": [
+      { "id": "a", "text": "A Lei permanece o tribunal que declara o pecador justo." },
+      { "id": "b", "text": "Diante de Deus o justo vive da fé, e a Lei não o justifica." },
+      { "id": "c", "text": "A fé apenas confirma os méritos já obtidos pela Lei." },
+      { "id": "d", "text": "Paulo deixa em aberto se a Lei justifica ou não." }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "id": "galatas-pro-gl-02-fe-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 3:11",
+    "learningObjective": "Ver que ninguém é justificado diante de Deus pela Lei, porque o justo viverá da fé.",
+    "evidence": ["Gálatas 3:11"],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Gálatas 3:11?",
+    "prompt": "Qual sequência revela o sentido de Gálatas 3:11?",
+    "cue": "Qual sequência revela o sentido de Gálatas 3:11?",
+    "feedbackCorrect": "Certo: recusa da Lei, arena diante de Deus, vida da fé.",
+    "feedbackWrong": {
+      "b": "A fé conclui o sentido; não inicia a recusa.",
+      "c": "\"Diante de Deus\" situa o tribunal; não fecha sozinho."
+    },
+    "passageText": "É claro que, pela Lei, ninguém é justificado diante de Deus, porque: O justo viverá da fé.",
+    "options": [
+      { "id": "a", "text": "pela Lei, ninguém é justificado" },
+      { "id": "b", "text": "diante de Deus" },
+      { "id": "c", "text": "O justo viverá da fé" }
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "id": "galatas-pro-gl-02-fe-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 3:11",
+    "learningObjective": "Ver que ninguém é justificado diante de Deus pela Lei, porque o justo viverá da fé.",
+    "evidence": ["Gálatas 3:11"],
+    "type": "complete",
+    "question": "Complete: \"ninguém é justificado diante de ___\"",
+    "prompt": "Complete: \"ninguém é justificado diante de ___\"",
+    "cue": "Complete: \"ninguém é justificado diante de ___\"",
+    "feedbackCorrect": "Certo: o tribunal é diante de Deus, não da Lei.",
+    "feedbackWrong": {
+      "a": "A Lei é o meio recusado, não o \"diante de\".",
+      "c": "Fé é o modo de viver do justo, não esta lacuna."
+    },
+    "passageText": "É claro que, pela Lei, ninguém é justificado diante de Deus, porque: O justo viverá da fé.",
+    "template": "ninguém é justificado diante de ___",
+    "options": [
+      { "id": "a", "text": "Lei" },
+      { "id": "b", "text": "Deus" },
+      { "id": "c", "text": "fé" }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "id": "galatas-pro-gl-02-fe-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 3:11",
+    "learningObjective": "Ver que ninguém é justificado diante de Deus pela Lei, porque o justo viverá da fé.",
+    "evidence": ["Gálatas 3:11"],
+    "type": "connect",
+    "question": "O que Gálatas 3:11 comunica que se liga a este contexto?",
+    "prompt": "O que Gálatas 3:11 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 3:11 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a promessa justifica pela fé, não a Lei.",
+    "feedbackWrong": {
+      "a": "O versículo não ensina justificação mista.",
+      "c": "A Lei não é o último tribunal da justiça de Deus aqui."
+    },
+    "passageText": "É claro que, pela Lei, ninguém é justificado diante de Deus, porque: O justo viverá da fé.",
+    "passageA": {
+      "ref": "Gálatas 3:11",
+      "text": "O justo viverá da fé."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A promessa justifica pela fé: a Lei não declara justo diante de Deus."
+    },
+    "options": [
+      { "id": "a", "text": "Promessa mista com Lei" },
+      { "id": "b", "text": "Promessa justifica pela fé" },
+      { "id": "c", "text": "Lei como último tribunal" }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "galatas",
+    "section": "gl-02-fe",
+    "id": "galatas-pro-gl-02-fe-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Identificar o fruto do Espírito e perceber que contra tais coisas não há lei.",
+    "evidence": ["Gálatas 5:22", "Gálatas 5:23"],
+    "type": "true_false",
+    "question": "O fruto do Espírito inclui a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão e a temperança.",
+    "prompt": "O fruto do Espírito inclui a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão e a temperança.",
+    "cue": "O fruto do Espírito inclui a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão e a temperança.",
+    "feedbackCorrect": "Certo: essa é a lista de Gálatas 5:22–23.",
+    "feedbackWrong": {
+      "false": "Releia 5:22–23: esses nove termos formam o fruto."
+    },
+    "options": [
+      { "id": "true", "text": "Verdadeiro" },
+      { "id": "false", "text": "Falso" }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "id": "galatas-sem-gl-03-espirito-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Identificar o fruto do Espírito e perceber que contra tais coisas não há lei.",
+    "evidence": ["Gálatas 5:22", "Gálatas 5:23"],
+    "type": "tap",
+    "question": "Em Gálatas 5:22–23, toque a palavra que falta em \"Mas o fruto do Espírito é a ___\"?",
+    "prompt": "Em Gálatas 5:22–23, toque a palavra que falta em \"Mas o fruto do Espírito é a ___\"?",
+    "cue": "Em Gálatas 5:22–23, toque a palavra que falta em \"Mas o fruto do Espírito é a ___\"?",
+    "feedbackCorrect": "Exato: o primeiro nome do fruto é a caridade.",
+    "feedbackWrong": {
+      "b": "Temperança fecha a lista, não a abre.",
+      "c": "Lei aparece na frase final, não nesta lacuna."
+    },
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "template": "Mas o fruto do Espírito é a ___",
+    "options": [
+      { "id": "a", "text": "caridade" },
+      { "id": "b", "text": "temperança" },
+      { "id": "c", "text": "lei" }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "id": "galatas-sem-gl-03-espirito-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Identificar o fruto do Espírito e perceber que contra tais coisas não há lei.",
+    "evidence": ["Gálatas 5:22", "Gálatas 5:23"],
+    "type": "choice",
+    "question": "O que o texto afirma contra o fruto do Espírito?",
+    "prompt": "O que o texto afirma contra o fruto do Espírito?",
+    "cue": "O que o texto afirma contra o fruto do Espírito?",
+    "feedbackCorrect": "Certo: contra tais coisas não há lei.",
+    "feedbackWrong": {
+      "a": "O texto diz o contrário: não há lei contra o fruto.",
+      "c": "Não afirma que a Lei produz o fruto.",
+      "d": "O fruto é do Espírito, não um substituto da Lei escrita."
+    },
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "options": [
+      { "id": "a", "text": "Há uma lei que condena a caridade, o gozo e a paz." },
+      { "id": "b", "text": "Contra tais coisas não há lei." },
+      { "id": "c", "text": "A Lei mosaica é que produz esse fruto no crente." },
+      { "id": "d", "text": "O fruto substitui a Lei escrita como novo código penal." }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "id": "galatas-sem-gl-03-espirito-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Identificar o fruto do Espírito e perceber que contra tais coisas não há lei.",
+    "evidence": ["Gálatas 5:22", "Gálatas 5:23"],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Gálatas 5:22–23?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Gálatas 5:22–23?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Gálatas 5:22–23?",
+    "feedbackCorrect": "Certo: o fruto se lista e depois vem a cláusula da lei.",
+    "feedbackWrong": {
+      "b": "A cláusula \"não há lei\" fecha o trecho, não o abre.",
+      "c": "Caridade, gozo e paz abrem a lista do fruto."
+    },
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "options": [
+      { "id": "a", "text": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade" },
+      { "id": "b", "text": "a benignidade, a bondade, a fidelidade, a mansidão, a temperança" },
+      { "id": "c", "text": "Contra tais coisas não há lei" }
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "id": "galatas-sem-gl-03-espirito-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Identificar o fruto do Espírito e perceber que contra tais coisas não há lei.",
+    "evidence": ["Gálatas 5:22", "Gálatas 5:23"],
+    "type": "complete",
+    "question": "Complete: \"Contra tais coisas não há ___\"",
+    "prompt": "Complete: \"Contra tais coisas não há ___\"",
+    "cue": "Complete: \"Contra tais coisas não há ___\"",
+    "feedbackCorrect": "Certo: contra o fruto não há lei.",
+    "feedbackWrong": {
+      "a": "Paz é um item do fruto, não esta lacuna.",
+      "c": "Espírito é a origem do fruto, não o que \"não há\"."
+    },
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "template": "Contra tais coisas não há ___",
+    "options": [
+      { "id": "a", "text": "paz" },
+      { "id": "b", "text": "lei" },
+      { "id": "c", "text": "Espírito" }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "id": "galatas-sem-gl-03-espirito-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Identificar o fruto do Espírito e perceber que contra tais coisas não há lei.",
+    "evidence": ["Gálatas 5:22", "Gálatas 5:23"],
+    "type": "connect",
+    "question": "O que Gálatas 5:22–23 comunica que se liga a este contexto?",
+    "prompt": "O que Gálatas 5:22–23 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 5:22–23 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o Espírito produz fruto; contra ele não há lei.",
+    "feedbackWrong": {
+      "b": "O texto descreve fruto, não libertinagem sem medida.",
+      "c": "Não afirma que a Lei gera esses nove nomes."
+    },
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "passageA": {
+      "ref": "Gálatas 5:22–23",
+      "text": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Liberdade no Espírito produz fruto — não libertinagem; contra o fruto não há lei."
+    },
+    "options": [
+      { "id": "a", "text": "Fruto do Espírito" },
+      { "id": "b", "text": "Liberdade sem fruto" },
+      { "id": "c", "text": "Lei gerando o fruto" }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "id": "galatas-sem-gl-03-espirito-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Identificar o fruto do Espírito e perceber que contra tais coisas não há lei.",
+    "evidence": ["Gálatas 5:22", "Gálatas 5:23"],
+    "type": "true_false",
+    "question": "Contra o fruto do Espírito há uma lei que o condena.",
+    "prompt": "Contra o fruto do Espírito há uma lei que o condena.",
+    "cue": "Contra o fruto do Espírito há uma lei que o condena.",
+    "feedbackCorrect": "Certo: o texto diz que contra tais coisas não há lei.",
+    "feedbackWrong": {
+      "true": "A cláusula final recusa lei contra o fruto."
+    },
+    "options": [
+      { "id": "true", "text": "Verdadeiro" },
+      { "id": "false", "text": "Falso" }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "id": "galatas-cam-gl-03-espirito-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Identificar o fruto do Espírito e perceber que contra tais coisas não há lei.",
+    "evidence": ["Gálatas 5:22", "Gálatas 5:23"],
+    "type": "tap",
+    "question": "Em Gálatas 5:22–23, toque a palavra que falta em \"Mas o fruto do ___ é a caridade\"?",
+    "prompt": "Em Gálatas 5:22–23, toque a palavra que falta em \"Mas o fruto do ___ é a caridade\"?",
+    "cue": "Em Gálatas 5:22–23, toque a palavra que falta em \"Mas o fruto do ___ é a caridade\"?",
+    "feedbackCorrect": "Exato: o fruto é do Espírito.",
+    "feedbackWrong": {
+      "b": "Gozo é um item do fruto, não a origem.",
+      "c": "Bondade é outro nome da lista, não o sujeito."
+    },
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "template": "Mas o fruto do ___ é a caridade",
+    "options": [
+      { "id": "a", "text": "Espírito" },
+      { "id": "b", "text": "gozo" },
+      { "id": "c", "text": "bondade" }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "id": "galatas-cam-gl-03-espirito-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Identificar o fruto do Espírito e perceber que contra tais coisas não há lei.",
+    "evidence": ["Gálatas 5:22", "Gálatas 5:23"],
+    "type": "choice",
+    "question": "Como a cláusula \"contra tais coisas não há lei\" se relaciona com o fruto?",
+    "prompt": "Como a cláusula \"contra tais coisas não há lei\" se relaciona com o fruto?",
+    "cue": "Como a cláusula \"contra tais coisas não há lei\" se relaciona com o fruto?",
+    "feedbackCorrect": "Certo: o fruto não é alvo de lei; a liberdade não é libertinagem.",
+    "feedbackWrong": {
+      "a": "A cláusula não apaga a Lei para autorizar o pecado.",
+      "c": "Não transforma o fruto em novo código mosaico.",
+      "d": "O fruto não é opcional para quem a Lei já salvou."
+    },
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "options": [
+      { "id": "a", "text": "A Lei deixa de existir, e qualquer conduta fica permitida." },
+      { "id": "b", "text": "O fruto não é condenado pela lei; não é licença para o vício." },
+      { "id": "c", "text": "O fruto vira um novo decálogo que substitui Moisés item a item." },
+      { "id": "d", "text": "Quem já cumpriu a Lei pode dispensar caridade, paz e temperança." }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "id": "galatas-cam-gl-03-espirito-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Identificar o fruto do Espírito e perceber que contra tais coisas não há lei.",
+    "evidence": ["Gálatas 5:22", "Gálatas 5:23"],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Gálatas 5:22–23?",
+    "prompt": "Como se encadeiam os eventos de Gálatas 5:22–23?",
+    "cue": "Como se encadeiam os eventos de Gálatas 5:22–23?",
+    "feedbackCorrect": "Certo: origem no Espírito, nomes do fruto, então a cláusula da lei.",
+    "feedbackWrong": {
+      "b": "A cláusula da lei não abre o encadeamento.",
+      "c": "O fruto do Espírito é o ponto de partida do trecho."
+    },
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "options": [
+      { "id": "a", "text": "Mas o fruto do Espírito" },
+      { "id": "b", "text": "é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança" },
+      { "id": "c", "text": "Contra tais coisas não há lei" }
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "id": "galatas-cam-gl-03-espirito-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Identificar o fruto do Espírito e perceber que contra tais coisas não há lei.",
+    "evidence": ["Gálatas 5:22", "Gálatas 5:23"],
+    "type": "complete",
+    "question": "Complete: \"a mansidão, a ___\"",
+    "prompt": "Complete: \"a mansidão, a ___\"",
+    "cue": "Complete: \"a mansidão, a ___\"",
+    "feedbackCorrect": "Certo: a lista fecha com a temperança.",
+    "feedbackWrong": {
+      "a": "Caridade abre a lista, não a fecha.",
+      "c": "Paz está no início, não após a mansidão."
+    },
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "template": "a mansidão, a ___",
+    "options": [
+      { "id": "a", "text": "caridade" },
+      { "id": "b", "text": "temperança" },
+      { "id": "c", "text": "paz" }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "id": "galatas-cam-gl-03-espirito-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Identificar o fruto do Espírito e perceber que contra tais coisas não há lei.",
+    "evidence": ["Gálatas 5:22", "Gálatas 5:23"],
+    "type": "connect",
+    "question": "O que Gálatas 5:22–23 comunica que se liga a este contexto?",
+    "prompt": "O que Gálatas 5:22–23 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 5:22–23 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: liberdade no Espírito se vê no fruto, não no vício.",
+    "feedbackWrong": {
+      "b": "Ausência de lei contra o fruto não é carta branca ao pecado.",
+      "c": "O fruto não restabelece justificação por obras da lei."
+    },
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "passageA": {
+      "ref": "Gálatas 5:22–23",
+      "text": "Contra tais coisas não há lei."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Liberdade no Espírito produz fruto — não libertinagem; contra o fruto não há lei."
+    },
+    "options": [
+      { "id": "a", "text": "Fruto, não libertinagem" },
+      { "id": "b", "text": "Licença para o pecado" },
+      { "id": "c", "text": "Volta às obras da lei" }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "id": "galatas-cam-gl-03-espirito-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Identificar o fruto do Espírito e perceber que contra tais coisas não há lei.",
+    "evidence": ["Gálatas 5:22", "Gálatas 5:23"],
+    "type": "true_false",
+    "question": "A liberdade no Espírito se reconhece pelo fruto, não por uma vida sem medida contra a qual a lei ainda precisaria falar.",
+    "prompt": "A liberdade no Espírito se reconhece pelo fruto, não por uma vida sem medida contra a qual a lei ainda precisaria falar.",
+    "cue": "A liberdade no Espírito se reconhece pelo fruto, não por uma vida sem medida contra a qual a lei ainda precisaria falar.",
+    "feedbackCorrect": "Certo: contra o fruto não há lei; o vício não é esse fruto.",
+    "feedbackWrong": {
+      "false": "O trecho une fruto do Espírito e ausência de lei contra ele."
+    },
+    "options": [
+      { "id": "true", "text": "Verdadeiro" },
+      { "id": "false", "text": "Falso" }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "id": "galatas-pro-gl-03-espirito-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Identificar o fruto do Espírito e perceber que contra tais coisas não há lei.",
+    "evidence": ["Gálatas 5:22", "Gálatas 5:23"],
+    "type": "tap",
+    "question": "Em Gálatas 5:22–23, toque a palavra que falta em \"Mas o ___ do Espírito é a caridade\"?",
+    "prompt": "Em Gálatas 5:22–23, toque a palavra que falta em \"Mas o ___ do Espírito é a caridade\"?",
+    "cue": "Em Gálatas 5:22–23, toque a palavra que falta em \"Mas o ___ do Espírito é a caridade\"?",
+    "feedbackCorrect": "Exato: Paulo fala de fruto, no singular.",
+    "feedbackWrong": {
+      "b": "Lei está na cláusula final, não nesta lacuna.",
+      "c": "Coisas refere-se ao conjunto, não substitui \"fruto\"."
+    },
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "template": "Mas o ___ do Espírito é a caridade",
+    "options": [
+      { "id": "a", "text": "fruto" },
+      { "id": "b", "text": "lei" },
+      { "id": "c", "text": "coisas" }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "id": "galatas-pro-gl-03-espirito-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Identificar o fruto do Espírito e perceber que contra tais coisas não há lei.",
+    "evidence": ["Gálatas 5:22", "Gálatas 5:23"],
+    "type": "choice",
+    "question": "Que erro de leitura o texto impede sobre liberdade cristã?",
+    "prompt": "Que erro de leitura o texto impede sobre liberdade cristã?",
+    "cue": "Que erro de leitura o texto impede sobre liberdade cristã?",
+    "feedbackCorrect": "Certo: liberdade no Espírito produz fruto, não libertinagem.",
+    "feedbackWrong": {
+      "a": "O texto não restaura a Lei como fonte do fruto.",
+      "b": "Não reduz o Espírito a um sentimento sem caráter.",
+      "d": "Não ensina que o fruto seja mérito que justifica."
+    },
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "options": [
+      { "id": "a", "text": "A liberdade cristã consiste em voltar à Lei para gerar o fruto." },
+      { "id": "b", "text": "O Espírito só produz êxtase, nunca caráter visível." },
+      { "id": "c", "text": "Liberdade no Espírito produz fruto; não é vida sem temperança." },
+      { "id": "d", "text": "O fruto é mérito humano que justifica diante de Deus." }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "id": "galatas-pro-gl-03-espirito-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Identificar o fruto do Espírito e perceber que contra tais coisas não há lei.",
+    "evidence": ["Gálatas 5:22", "Gálatas 5:23"],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Gálatas 5:22–23?",
+    "prompt": "Qual sequência revela o sentido de Gálatas 5:22–23?",
+    "cue": "Qual sequência revela o sentido de Gálatas 5:22–23?",
+    "feedbackCorrect": "Certo: origem, caráter do fruto e ausência de lei contra ele.",
+    "feedbackWrong": {
+      "b": "A lei não é a origem do fruto neste trecho.",
+      "c": "O Espírito vem antes da cláusula final."
+    },
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "options": [
+      { "id": "a", "text": "o fruto do Espírito" },
+      { "id": "b", "text": "a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança" },
+      { "id": "c", "text": "Contra tais coisas não há lei" }
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "id": "galatas-pro-gl-03-espirito-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Identificar o fruto do Espírito e perceber que contra tais coisas não há lei.",
+    "evidence": ["Gálatas 5:22", "Gálatas 5:23"],
+    "type": "complete",
+    "question": "Complete: \"a paz, a ___\"",
+    "prompt": "Complete: \"a paz, a ___\"",
+    "cue": "Complete: \"a paz, a ___\"",
+    "feedbackCorrect": "Certo: depois da paz vem a longanimidade.",
+    "feedbackWrong": {
+      "a": "Caridade abre a lista, antes da paz.",
+      "c": "Fidelidade vem depois, não logo após a paz."
+    },
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "template": "a paz, a ___",
+    "options": [
+      { "id": "a", "text": "caridade" },
+      { "id": "b", "text": "longanimidade" },
+      { "id": "c", "text": "fidelidade" }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "id": "galatas-pro-gl-03-espirito-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Identificar o fruto do Espírito e perceber que contra tais coisas não há lei.",
+    "evidence": ["Gálatas 5:22", "Gálatas 5:23"],
+    "type": "connect",
+    "question": "O que Gálatas 5:22–23 comunica que se liga a este contexto?",
+    "prompt": "O que Gálatas 5:22–23 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 5:22–23 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: contra o fruto não há lei; a liberdade gera caráter.",
+    "feedbackWrong": {
+      "a": "O trecho não ensina anarquia moral.",
+      "c": "O fruto não é um segundo evangelho de obras."
+    },
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "passageA": {
+      "ref": "Gálatas 5:22–23",
+      "text": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Liberdade no Espírito produz fruto — não libertinagem; contra o fruto não há lei."
+    },
+    "options": [
+      { "id": "a", "text": "Anarquia sem caráter" },
+      { "id": "b", "text": "Fruto sem lei contra" },
+      { "id": "c", "text": "Segundo evangelho de obras" }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "galatas",
+    "section": "gl-03-espirito",
+    "id": "galatas-pro-gl-03-espirito-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 2:16",
+    "learningObjective": "Confessar que o homem não é justificado por obras da lei, mas pela fé em Cristo, e que nenhuma carne se justifica por essas obras.",
+    "evidence": ["Gálatas 2:16"],
+    "type": "true_false",
+    "question": "O homem não é justificado por obras da lei, mas, sim, mediante a fé em Cristo Jesus.",
+    "prompt": "O homem não é justificado por obras da lei, mas, sim, mediante a fé em Cristo Jesus.",
+    "cue": "O homem não é justificado por obras da lei, mas, sim, mediante a fé em Cristo Jesus.",
+    "feedbackCorrect": "Certo: essa é a tese de Gálatas 2:16.",
+    "feedbackWrong": {
+      "false": "Releia: não por obras da lei, senão mediante a fé em Cristo."
+    },
+    "options": [
+      { "id": "true", "text": "Verdadeiro" },
+      { "id": "false", "text": "Falso" }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "sabendo, contudo, que o homem não é justificado por obras da lei, mas, sim, mediante a fé em Cristo Jesus, também nós cremos em Cristo Jesus, para sermos justificados pela fé em Cristo e não por obras da lei; pois, por obras da lei, nenhuma carne será justificada.",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "id": "galatas-sem-gl-04-desafio-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 2:16",
+    "learningObjective": "Confessar que o homem não é justificado por obras da lei, mas pela fé em Cristo, e que nenhuma carne se justifica por essas obras.",
+    "evidence": ["Gálatas 2:16"],
+    "type": "tap",
+    "question": "Em Gálatas 2:16, toque a palavra que falta em \"que o ___ não é justificado por obras da lei\"?",
+    "prompt": "Em Gálatas 2:16, toque a palavra que falta em \"que o ___ não é justificado por obras da lei\"?",
+    "cue": "Em Gálatas 2:16, toque a palavra que falta em \"que o ___ não é justificado por obras da lei\"?",
+    "feedbackCorrect": "Exato: o homem não é justificado por obras da lei.",
+    "feedbackWrong": {
+      "b": "Carne aparece no fechamento, não nesta lacuna.",
+      "c": "Cristo é o objeto da fé, não o sujeito desta frase."
+    },
+    "passageText": "sabendo, contudo, que o homem não é justificado por obras da lei, mas, sim, mediante a fé em Cristo Jesus, também nós cremos em Cristo Jesus, para sermos justificados pela fé em Cristo e não por obras da lei; pois, por obras da lei, nenhuma carne será justificada.",
+    "template": "que o ___ não é justificado por obras da lei",
+    "options": [
+      { "id": "a", "text": "homem" },
+      { "id": "b", "text": "carne" },
+      { "id": "c", "text": "Cristo" }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "id": "galatas-sem-gl-04-desafio-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 2:16",
+    "learningObjective": "Confessar que o homem não é justificado por obras da lei, mas pela fé em Cristo, e que nenhuma carne se justifica por essas obras.",
+    "evidence": ["Gálatas 2:16"],
+    "type": "choice",
+    "question": "O que o texto afirma sobre obras da lei e justificação?",
+    "prompt": "O que o texto afirma sobre obras da lei e justificação?",
+    "cue": "O que o texto afirma sobre obras da lei e justificação?",
+    "feedbackCorrect": "Certo: por obras da lei nenhuma carne será justificada.",
+    "feedbackWrong": {
+      "a": "O texto recusa, não afirma, justificação por obras da lei.",
+      "c": "Não reserva uma exceção para parte da carne.",
+      "d": "A fé em Cristo é o meio; as obras da lei não justificam."
+    },
+    "passageText": "sabendo, contudo, que o homem não é justificado por obras da lei, mas, sim, mediante a fé em Cristo Jesus, também nós cremos em Cristo Jesus, para sermos justificados pela fé em Cristo e não por obras da lei; pois, por obras da lei, nenhuma carne será justificada.",
+    "options": [
+      { "id": "a", "text": "Por obras da lei toda carne será justificada." },
+      { "id": "b", "text": "Por obras da lei nenhuma carne será justificada." },
+      { "id": "c", "text": "Por obras da lei só a carne judaica será justificada." },
+      { "id": "d", "text": "As obras da lei justificam depois que se crê em Cristo." }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "id": "galatas-sem-gl-04-desafio-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 2:16",
+    "learningObjective": "Confessar que o homem não é justificado por obras da lei, mas pela fé em Cristo, e que nenhuma carne se justifica por essas obras.",
+    "evidence": ["Gálatas 2:16"],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Gálatas 2:16?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Gálatas 2:16?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Gálatas 2:16?",
+    "feedbackCorrect": "Certo: recusa, fé confessada, então nenhuma carne justificada.",
+    "feedbackWrong": {
+      "b": "A cláusula da carne fecha o versículo, não o abre.",
+      "c": "O saber sobre o homem precede o \"também nós cremos\"."
+    },
+    "passageText": "sabendo, contudo, que o homem não é justificado por obras da lei, mas, sim, mediante a fé em Cristo Jesus, também nós cremos em Cristo Jesus, para sermos justificados pela fé em Cristo e não por obras da lei; pois, por obras da lei, nenhuma carne será justificada.",
+    "options": [
+      { "id": "a", "text": "o homem não é justificado por obras da lei, mas, sim, mediante a fé em Cristo Jesus" },
+      { "id": "b", "text": "também nós cremos em Cristo Jesus, para sermos justificados pela fé em Cristo e não por obras da lei" },
+      { "id": "c", "text": "pois, por obras da lei, nenhuma carne será justificada" }
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "id": "galatas-sem-gl-04-desafio-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 2:16",
+    "learningObjective": "Confessar que o homem não é justificado por obras da lei, mas pela fé em Cristo, e que nenhuma carne se justifica por essas obras.",
+    "evidence": ["Gálatas 2:16"],
+    "type": "complete",
+    "question": "Complete: \"por obras da lei, nenhuma ___ será justificada\"",
+    "prompt": "Complete: \"por obras da lei, nenhuma ___ será justificada\"",
+    "cue": "Complete: \"por obras da lei, nenhuma ___ será justificada\"",
+    "feedbackCorrect": "Certo: nenhuma carne será justificada por obras da lei.",
+    "feedbackWrong": {
+      "a": "Homem aparece no início; aqui o termo é carne.",
+      "c": "Fé é o meio da justificação, não o sujeito desta frase."
+    },
+    "passageText": "sabendo, contudo, que o homem não é justificado por obras da lei, mas, sim, mediante a fé em Cristo Jesus, também nós cremos em Cristo Jesus, para sermos justificados pela fé em Cristo e não por obras da lei; pois, por obras da lei, nenhuma carne será justificada.",
+    "template": "por obras da lei, nenhuma ___ será justificada",
+    "options": [
+      { "id": "a", "text": "homem" },
+      { "id": "b", "text": "carne" },
+      { "id": "c", "text": "fé" }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "id": "galatas-sem-gl-04-desafio-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 2:16",
+    "learningObjective": "Confessar que o homem não é justificado por obras da lei, mas pela fé em Cristo, e que nenhuma carne se justifica por essas obras.",
+    "evidence": ["Gálatas 2:16"],
+    "type": "connect",
+    "question": "O que Gálatas 2:16 comunica que se liga a este contexto?",
+    "prompt": "O que Gálatas 2:16 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 2:16 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: justificados pela fé em Cristo, não por obras da lei.",
+    "feedbackWrong": {
+      "b": "O texto recusa justificação por obras da lei.",
+      "c": "Nenhuma carne se justifica por essas obras."
+    },
+    "passageText": "sabendo, contudo, que o homem não é justificado por obras da lei, mas, sim, mediante a fé em Cristo Jesus, também nós cremos em Cristo Jesus, para sermos justificados pela fé em Cristo e não por obras da lei; pois, por obras da lei, nenhuma carne será justificada.",
+    "passageA": {
+      "ref": "Gálatas 2:16",
+      "text": "o homem não é justificado por obras da lei, mas, sim, mediante a fé em Cristo Jesus"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Livres para servir: justificados pela fé em Cristo, nenhuma carne se justifica por obras da lei."
+    },
+    "options": [
+      { "id": "a", "text": "Justificados pela fé" },
+      { "id": "b", "text": "Justificados pelas obras" },
+      { "id": "c", "text": "Carne justificada pela lei" }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "id": "galatas-sem-gl-04-desafio-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 2:16",
+    "learningObjective": "Confessar que o homem não é justificado por obras da lei, mas pela fé em Cristo, e que nenhuma carne se justifica por essas obras.",
+    "evidence": ["Gálatas 2:16"],
+    "type": "true_false",
+    "question": "Alguma carne ainda será justificada por obras da lei.",
+    "prompt": "Alguma carne ainda será justificada por obras da lei.",
+    "cue": "Alguma carne ainda será justificada por obras da lei.",
+    "feedbackCorrect": "Certo: o texto diz nenhuma carne, não alguma.",
+    "feedbackWrong": {
+      "true": "Por obras da lei nenhuma carne será justificada."
+    },
+    "options": [
+      { "id": "true", "text": "Verdadeiro" },
+      { "id": "false", "text": "Falso" }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "sabendo, contudo, que o homem não é justificado por obras da lei, mas, sim, mediante a fé em Cristo Jesus, também nós cremos em Cristo Jesus, para sermos justificados pela fé em Cristo e não por obras da lei; pois, por obras da lei, nenhuma carne será justificada.",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "id": "galatas-cam-gl-04-desafio-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 2:16",
+    "learningObjective": "Confessar que o homem não é justificado por obras da lei, mas pela fé em Cristo, e que nenhuma carne se justifica por essas obras.",
+    "evidence": ["Gálatas 2:16"],
+    "type": "tap",
+    "question": "Em Gálatas 2:16, toque a palavra que falta em \"mas, sim, ___ a fé em Cristo Jesus\"?",
+    "prompt": "Em Gálatas 2:16, toque a palavra que falta em \"mas, sim, ___ a fé em Cristo Jesus\"?",
+    "cue": "Em Gálatas 2:16, toque a palavra que falta em \"mas, sim, ___ a fé em Cristo Jesus\"?",
+    "feedbackCorrect": "Exato: a justificação é mediante a fé em Cristo Jesus.",
+    "feedbackWrong": {
+      "b": "Sabendo abre o versículo; não preenche esta lacuna.",
+      "c": "Contudo é a adversativa inicial, não o meio da fé."
+    },
+    "passageText": "sabendo, contudo, que o homem não é justificado por obras da lei, mas, sim, mediante a fé em Cristo Jesus, também nós cremos em Cristo Jesus, para sermos justificados pela fé em Cristo e não por obras da lei; pois, por obras da lei, nenhuma carne será justificada.",
+    "template": "mas, sim, ___ a fé em Cristo Jesus",
+    "options": [
+      { "id": "a", "text": "mediante" },
+      { "id": "b", "text": "sabendo" },
+      { "id": "c", "text": "contudo" }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "id": "galatas-cam-gl-04-desafio-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 2:16",
+    "learningObjective": "Confessar que o homem não é justificado por obras da lei, mas pela fé em Cristo, e que nenhuma carne se justifica por essas obras.",
+    "evidence": ["Gálatas 2:16"],
+    "type": "choice",
+    "question": "Por que Paulo diz \"também nós cremos\" depois de recusar as obras da lei?",
+    "prompt": "Por que Paulo diz \"também nós cremos\" depois de recusar as obras da lei?",
+    "cue": "Por que Paulo diz \"também nós cremos\" depois de recusar as obras da lei?",
+    "feedbackCorrect": "Certo: eles mesmos creram para serem justificados pela fé, não pela lei.",
+    "feedbackWrong": {
+      "a": "O \"também nós\" não restaura as obras como meio.",
+      "c": "Não é um voto de cumprir a lei depois da fé.",
+      "d": "A fé não é um acréscimo às obras; substitui-as como meio."
+    },
+    "passageText": "sabendo, contudo, que o homem não é justificado por obras da lei, mas, sim, mediante a fé em Cristo Jesus, também nós cremos em Cristo Jesus, para sermos justificados pela fé em Cristo e não por obras da lei; pois, por obras da lei, nenhuma carne será justificada.",
+    "options": [
+      { "id": "a", "text": "Para mostrar que judeus ainda se justificam por obras, e gentios pela fé." },
+      { "id": "b", "text": "Para aplicar a tese a si: creram a fim de serem justificados pela fé." },
+      { "id": "c", "text": "Para prometer que, depois de crer, cumprirão a lei e então serão justos." },
+      { "id": "d", "text": "Para somar fé e obras da lei como dois meios paralelos." }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "id": "galatas-cam-gl-04-desafio-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 2:16",
+    "learningObjective": "Confessar que o homem não é justificado por obras da lei, mas pela fé em Cristo, e que nenhuma carne se justifica por essas obras.",
+    "evidence": ["Gálatas 2:16"],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Gálatas 2:16?",
+    "prompt": "Como se encadeiam os eventos de Gálatas 2:16?",
+    "cue": "Como se encadeiam os eventos de Gálatas 2:16?",
+    "feedbackCorrect": "Certo: o saber leva à fé confessada e ao \"nenhuma carne\".",
+    "feedbackWrong": {
+      "b": "O \"nenhuma carne\" conclui, não inicia.",
+      "c": "O saber sobre o homem vem antes do \"cremos\"."
+    },
+    "passageText": "sabendo, contudo, que o homem não é justificado por obras da lei, mas, sim, mediante a fé em Cristo Jesus, também nós cremos em Cristo Jesus, para sermos justificados pela fé em Cristo e não por obras da lei; pois, por obras da lei, nenhuma carne será justificada.",
+    "options": [
+      { "id": "a", "text": "sabendo, contudo, que o homem não é justificado por obras da lei" },
+      { "id": "b", "text": "também nós cremos em Cristo Jesus" },
+      { "id": "c", "text": "nenhuma carne será justificada" }
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "id": "galatas-cam-gl-04-desafio-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 2:16",
+    "learningObjective": "Confessar que o homem não é justificado por obras da lei, mas pela fé em Cristo, e que nenhuma carne se justifica por essas obras.",
+    "evidence": ["Gálatas 2:16"],
+    "type": "complete",
+    "question": "Complete: \"também nós ___ em Cristo Jesus\"",
+    "prompt": "Complete: \"também nós ___ em Cristo Jesus\"",
+    "cue": "Complete: \"também nós ___ em Cristo Jesus\"",
+    "feedbackCorrect": "Certo: também nós cremos em Cristo Jesus.",
+    "feedbackWrong": {
+      "a": "Justificado descreve o resultado, não este verbo.",
+      "c": "Sabendo é o particípio inicial, não o \"nós\"."
+    },
+    "passageText": "sabendo, contudo, que o homem não é justificado por obras da lei, mas, sim, mediante a fé em Cristo Jesus, também nós cremos em Cristo Jesus, para sermos justificados pela fé em Cristo e não por obras da lei; pois, por obras da lei, nenhuma carne será justificada.",
+    "template": "também nós ___ em Cristo Jesus",
+    "options": [
+      { "id": "a", "text": "justificado" },
+      { "id": "b", "text": "cremos" },
+      { "id": "c", "text": "sabendo" }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "id": "galatas-cam-gl-04-desafio-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 2:16",
+    "learningObjective": "Confessar que o homem não é justificado por obras da lei, mas pela fé em Cristo, e que nenhuma carne se justifica por essas obras.",
+    "evidence": ["Gálatas 2:16"],
+    "type": "connect",
+    "question": "O que Gálatas 2:16 comunica que se liga a este contexto?",
+    "prompt": "O que Gálatas 2:16 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 2:16 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: livres para servir porque a fé, não a lei, justifica.",
+    "feedbackWrong": {
+      "b": "A liberdade não restaura as obras como meio de justiça.",
+      "c": "Servir não é o mesmo que justificar a carne pela lei."
+    },
+    "passageText": "sabendo, contudo, que o homem não é justificado por obras da lei, mas, sim, mediante a fé em Cristo Jesus, também nós cremos em Cristo Jesus, para sermos justificados pela fé em Cristo e não por obras da lei; pois, por obras da lei, nenhuma carne será justificada.",
+    "passageA": {
+      "ref": "Gálatas 2:16",
+      "text": "também nós cremos em Cristo Jesus, para sermos justificados pela fé em Cristo e não por obras da lei"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Livres para servir: justificados pela fé em Cristo, nenhuma carne se justifica por obras da lei."
+    },
+    "options": [
+      { "id": "a", "text": "Fé que liberta para servir" },
+      { "id": "b", "text": "Obras que ainda justificam" },
+      { "id": "c", "text": "Serviço que justifica a carne" }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "id": "galatas-cam-gl-04-desafio-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 2:16",
+    "learningObjective": "Confessar que o homem não é justificado por obras da lei, mas pela fé em Cristo, e que nenhuma carne se justifica por essas obras.",
+    "evidence": ["Gálatas 2:16"],
+    "type": "true_false",
+    "question": "Justificados pela fé em Cristo, estamos livres da pretensão de que obras da lei justifiquem qualquer carne.",
+    "prompt": "Justificados pela fé em Cristo, estamos livres da pretensão de que obras da lei justifiquem qualquer carne.",
+    "cue": "Justificados pela fé em Cristo, estamos livres da pretensão de que obras da lei justifiquem qualquer carne.",
+    "feedbackCorrect": "Certo: nenhuma carne se justifica por obras da lei.",
+    "feedbackWrong": {
+      "false": "O versículo une fé em Cristo e recusa universal das obras."
+    },
+    "options": [
+      { "id": "true", "text": "Verdadeiro" },
+      { "id": "false", "text": "Falso" }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "sabendo, contudo, que o homem não é justificado por obras da lei, mas, sim, mediante a fé em Cristo Jesus, também nós cremos em Cristo Jesus, para sermos justificados pela fé em Cristo e não por obras da lei; pois, por obras da lei, nenhuma carne será justificada.",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "id": "galatas-pro-gl-04-desafio-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 2:16",
+    "learningObjective": "Confessar que o homem não é justificado por obras da lei, mas pela fé em Cristo, e que nenhuma carne se justifica por essas obras.",
+    "evidence": ["Gálatas 2:16"],
+    "type": "tap",
+    "question": "Em Gálatas 2:16, toque a palavra que falta em \"pois, por obras da lei, ___ carne será justificada\"?",
+    "prompt": "Em Gálatas 2:16, toque a palavra que falta em \"pois, por obras da lei, ___ carne será justificada\"?",
+    "cue": "Em Gálatas 2:16, toque a palavra que falta em \"pois, por obras da lei, ___ carne será justificada\"?",
+    "feedbackCorrect": "Exato: nenhuma carne será justificada por obras da lei.",
+    "feedbackWrong": {
+      "b": "Homem é o sujeito do início, não este quantificador.",
+      "c": "Contudo é a adversativa, não esta lacuna."
+    },
+    "passageText": "sabendo, contudo, que o homem não é justificado por obras da lei, mas, sim, mediante a fé em Cristo Jesus, também nós cremos em Cristo Jesus, para sermos justificados pela fé em Cristo e não por obras da lei; pois, por obras da lei, nenhuma carne será justificada.",
+    "template": "pois, por obras da lei, ___ carne será justificada",
+    "options": [
+      { "id": "a", "text": "nenhuma" },
+      { "id": "b", "text": "homem" },
+      { "id": "c", "text": "contudo" }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "id": "galatas-pro-gl-04-desafio-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 2:16",
+    "learningObjective": "Confessar que o homem não é justificado por obras da lei, mas pela fé em Cristo, e que nenhuma carne se justifica por essas obras.",
+    "evidence": ["Gálatas 2:16"],
+    "type": "choice",
+    "question": "Que pretensão teológica o versículo derruba ao falar de \"nenhuma carne\"?",
+    "prompt": "Que pretensão teológica o versículo derruba ao falar de \"nenhuma carne\"?",
+    "cue": "Que pretensão teológica o versículo derruba ao falar de \"nenhuma carne\"?",
+    "feedbackCorrect": "Certo: nenhuma carne — judaica ou gentia — se justifica por obras da lei.",
+    "feedbackWrong": {
+      "a": "O texto não reserva as obras da lei como via judaica de justiça.",
+      "c": "Não ensina justificação mista (fé mais obras da lei).",
+      "d": "A fé não é mérito da carne que a lei depois confirma."
+    },
+    "passageText": "sabendo, contudo, que o homem não é justificado por obras da lei, mas, sim, mediante a fé em Cristo Jesus, também nós cremos em Cristo Jesus, para sermos justificados pela fé em Cristo e não por obras da lei; pois, por obras da lei, nenhuma carne será justificada.",
+    "options": [
+      { "id": "a", "text": "Gentios pela fé; judeus ainda pela lei como caminho de justiça." },
+      { "id": "b", "text": "Nenhuma carne, de nenhum povo, se justifica por obras da lei." },
+      { "id": "c", "text": "A fé inicia, e as obras da lei completam a justificação." },
+      { "id": "d", "text": "A carne gera a fé, e a lei confirma o mérito humano." }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "id": "galatas-pro-gl-04-desafio-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 2:16",
+    "learningObjective": "Confessar que o homem não é justificado por obras da lei, mas pela fé em Cristo, e que nenhuma carne se justifica por essas obras.",
+    "evidence": ["Gálatas 2:16"],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Gálatas 2:16?",
+    "prompt": "Qual sequência revela o sentido de Gálatas 2:16?",
+    "cue": "Qual sequência revela o sentido de Gálatas 2:16?",
+    "feedbackCorrect": "Certo: recusa das obras, fé em Cristo, nenhuma carne justificada.",
+    "feedbackWrong": {
+      "b": "A recusa das obras abre o sentido, não o fecha.",
+      "c": "A fé em Cristo media entre a recusa e o \"nenhuma carne\"."
+    },
+    "passageText": "sabendo, contudo, que o homem não é justificado por obras da lei, mas, sim, mediante a fé em Cristo Jesus, também nós cremos em Cristo Jesus, para sermos justificados pela fé em Cristo e não por obras da lei; pois, por obras da lei, nenhuma carne será justificada.",
+    "options": [
+      { "id": "a", "text": "não é justificado por obras da lei" },
+      { "id": "b", "text": "mediante a fé em Cristo Jesus" },
+      { "id": "c", "text": "nenhuma carne será justificada" }
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "id": "galatas-pro-gl-04-desafio-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 2:16",
+    "learningObjective": "Confessar que o homem não é justificado por obras da lei, mas pela fé em Cristo, e que nenhuma carne se justifica por essas obras.",
+    "evidence": ["Gálatas 2:16"],
+    "type": "complete",
+    "question": "Complete: \"o homem não é justificado por ___ da lei\"",
+    "prompt": "Complete: \"o homem não é justificado por ___ da lei\"",
+    "cue": "Complete: \"o homem não é justificado por ___ da lei\"",
+    "feedbackCorrect": "Certo: não por obras da lei.",
+    "feedbackWrong": {
+      "b": "Fé é o meio afirmado, não o que se recusa aqui.",
+      "c": "Carne é o sujeito do fechamento, não esta lacuna."
+    },
+    "passageText": "sabendo, contudo, que o homem não é justificado por obras da lei, mas, sim, mediante a fé em Cristo Jesus, também nós cremos em Cristo Jesus, para sermos justificados pela fé em Cristo e não por obras da lei; pois, por obras da lei, nenhuma carne será justificada.",
+    "template": "o homem não é justificado por ___ da lei",
+    "options": [
+      { "id": "a", "text": "obras" },
+      { "id": "b", "text": "fé" },
+      { "id": "c", "text": "carne" }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "id": "galatas-pro-gl-04-desafio-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 2:16",
+    "learningObjective": "Confessar que o homem não é justificado por obras da lei, mas pela fé em Cristo, e que nenhuma carne se justifica por essas obras.",
+    "evidence": ["Gálatas 2:16"],
+    "type": "connect",
+    "question": "O que Gálatas 2:16 comunica que se liga a este contexto?",
+    "prompt": "O que Gálatas 2:16 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 2:16 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: livres para servir, justificados pela fé, não pela lei.",
+    "feedbackWrong": {
+      "a": "A liberdade não devolve à carne o papel de se justificar.",
+      "c": "O versículo não ensina justificação cooperativa."
+    },
+    "passageText": "sabendo, contudo, que o homem não é justificado por obras da lei, mas, sim, mediante a fé em Cristo Jesus, também nós cremos em Cristo Jesus, para sermos justificados pela fé em Cristo e não por obras da lei; pois, por obras da lei, nenhuma carne será justificada.",
+    "passageA": {
+      "ref": "Gálatas 2:16",
+      "text": "pois, por obras da lei, nenhuma carne será justificada."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Livres para servir: justificados pela fé em Cristo, nenhuma carne se justifica por obras da lei."
+    },
+    "options": [
+      { "id": "a", "text": "Carne que ainda se justifica" },
+      { "id": "b", "text": "Livres, justificados pela fé" },
+      { "id": "c", "text": "Fé mais obras cooperando" }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "galatas",
+    "section": "gl-04-desafio",
+    "id": "galatas-pro-gl-04-desafio-06"
+  }
+]

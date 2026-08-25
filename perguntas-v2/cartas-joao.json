@@ -1,0 +1,2972 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 João 1:5–7",
+    "learningObjective": "Reconhecer que Deus é luz; andar nas trevas desmente a comunhão, e o sangue de Jesus purifica.",
+    "evidence": [
+      "1 João 1:5",
+      "1 João 1:6",
+      "1 João 1:7"
+    ],
+    "type": "true_false",
+    "question": "A mensagem anunciada é esta: Deus é luz, e não há nele nenhumas trevas.",
+    "prompt": "A mensagem anunciada é esta: Deus é luz, e não há nele nenhumas trevas.",
+    "cue": "A mensagem anunciada é esta: Deus é luz, e não há nele nenhumas trevas.",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "id": "cartas-joao-sem-cj-01-01",
+    "passageText": "A mensagem que dele temos ouvido e vos anunciamos é esta, que Deus é luz, e não há nele nenhumas trevas. Se dissermos que temos comunhão com ele e andarmos nas trevas, mentimos e não praticamos a verdade. Se, porém, andarmos na luz, como ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus, seu Filho, nos purifica de todo pecado.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "feedbackCorrect": "Certo: 1 João 1:5 diz exatamente isso.",
+    "feedbackWrong": {
+      "false": "Releia: Deus é luz, e não há nele nenhumas trevas."
+    },
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 João 1:5–7",
+    "learningObjective": "Reconhecer que Deus é luz; andar nas trevas desmente a comunhão, e o sangue de Jesus purifica.",
+    "evidence": [
+      "1 João 1:5",
+      "1 João 1:6",
+      "1 João 1:7"
+    ],
+    "type": "tap",
+    "question": "Em 1 João 1:5–7, toque a palavra que falta em \"que Deus é ___, e não há nele nenhumas trevas.\"?",
+    "prompt": "Em 1 João 1:5–7, toque a palavra que falta em \"que Deus é ___, e não há nele nenhumas trevas.\"?",
+    "cue": "Em 1 João 1:5–7, toque a palavra que falta em \"que Deus é ___, e não há nele nenhumas trevas.\"?",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "id": "cartas-joao-sem-cj-01-02",
+    "passageText": "A mensagem que dele temos ouvido e vos anunciamos é esta, que Deus é luz, e não há nele nenhumas trevas. Se dissermos que temos comunhão com ele e andarmos nas trevas, mentimos e não praticamos a verdade. Se, porém, andarmos na luz, como ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus, seu Filho, nos purifica de todo pecado.",
+    "template": "que Deus é ___, e não há nele nenhumas trevas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "luz"
+      },
+      {
+        "id": "b",
+        "text": "trevas"
+      },
+      {
+        "id": "c",
+        "text": "comunhão"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Exato: Deus é luz.",
+    "feedbackWrong": {
+      "b": "Trevas é o que não há nele.",
+      "c": "Comunhão vem depois; a lacuna é luz."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 João 1:5–7",
+    "learningObjective": "Reconhecer que Deus é luz; andar nas trevas desmente a comunhão, e o sangue de Jesus purifica.",
+    "evidence": [
+      "1 João 1:5",
+      "1 João 1:6",
+      "1 João 1:7"
+    ],
+    "type": "choice",
+    "question": "O que 1 João 1:5 afirma de modo explícito sobre Deus?",
+    "prompt": "O que 1 João 1:5 afirma de modo explícito sobre Deus?",
+    "cue": "O que 1 João 1:5 afirma de modo explícito sobre Deus?",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "id": "cartas-joao-sem-cj-01-03",
+    "passageText": "A mensagem que dele temos ouvido e vos anunciamos é esta, que Deus é luz, e não há nele nenhumas trevas. Se dissermos que temos comunhão com ele e andarmos nas trevas, mentimos e não praticamos a verdade. Se, porém, andarmos na luz, como ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus, seu Filho, nos purifica de todo pecado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus é luz, e não há nele nenhumas trevas."
+      },
+      {
+        "id": "b",
+        "text": "Deus é trevas, e a luz fica só no anúncio."
+      },
+      {
+        "id": "c",
+        "text": "Deus mistura luz e trevas segundo o humor."
+      },
+      {
+        "id": "d",
+        "text": "Deus é silêncio, e a mensagem não se anuncia."
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: a mensagem é que Deus é luz, sem trevas.",
+    "feedbackWrong": {
+      "b": "O texto afirma o contrário: Deus é luz.",
+      "c": "Não há nele nenhumas trevas: não há mistura.",
+      "d": "A mensagem foi ouvida e anunciada."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 João 1:5–7",
+    "learningObjective": "Reconhecer que Deus é luz; andar nas trevas desmente a comunhão, e o sangue de Jesus purifica.",
+    "evidence": [
+      "1 João 1:5",
+      "1 João 1:6",
+      "1 João 1:7"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em 1 João 1:5–7?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 1 João 1:5–7?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 1 João 1:5–7?",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "id": "cartas-joao-sem-cj-01-04",
+    "passageText": "A mensagem que dele temos ouvido e vos anunciamos é esta, que Deus é luz, e não há nele nenhumas trevas. Se dissermos que temos comunhão com ele e andarmos nas trevas, mentimos e não praticamos a verdade. Se, porém, andarmos na luz, como ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus, seu Filho, nos purifica de todo pecado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus é luz, e não há nele nenhumas trevas"
+      },
+      {
+        "id": "b",
+        "text": "Se dissermos que temos comunhão com ele e andarmos nas trevas, mentimos"
+      },
+      {
+        "id": "c",
+        "text": "Se, porém, andarmos na luz, temos comunhão uns com os outros"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: natureza de Deus, a mentira nas trevas, depois a luz.",
+    "feedbackWrong": {
+      "b": "A natureza de Deus abre o trecho.",
+      "c": "O andar na luz fecha, não inicia."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 João 1:5–7",
+    "learningObjective": "Reconhecer que Deus é luz; andar nas trevas desmente a comunhão, e o sangue de Jesus purifica.",
+    "evidence": [
+      "1 João 1:5",
+      "1 João 1:6",
+      "1 João 1:7"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"e não há nele nenhumas ___.\"",
+    "prompt": "Complete a frase: \"e não há nele nenhumas ___.\"",
+    "cue": "Complete a frase: \"e não há nele nenhumas ___.\"",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "id": "cartas-joao-sem-cj-01-05",
+    "passageText": "A mensagem que dele temos ouvido e vos anunciamos é esta, que Deus é luz, e não há nele nenhumas trevas. Se dissermos que temos comunhão com ele e andarmos nas trevas, mentimos e não praticamos a verdade. Se, porém, andarmos na luz, como ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus, seu Filho, nos purifica de todo pecado.",
+    "template": "e não há nele nenhumas ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "luz"
+      },
+      {
+        "id": "b",
+        "text": "trevas"
+      },
+      {
+        "id": "c",
+        "text": "comunhão"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Certo: não há nele nenhumas trevas.",
+    "feedbackWrong": {
+      "a": "Deus é luz; a lacuna é o que não há nele.",
+      "c": "Comunhão não preenche este verso."
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 João 1:5–7",
+    "learningObjective": "Reconhecer que Deus é luz; andar nas trevas desmente a comunhão, e o sangue de Jesus purifica.",
+    "evidence": [
+      "1 João 1:5",
+      "1 João 1:6",
+      "1 João 1:7"
+    ],
+    "type": "connect",
+    "question": "O que 1 João 1:5–7 comunica que se liga a este contexto?",
+    "prompt": "O que 1 João 1:5–7 comunica que se liga a este contexto?",
+    "cue": "O que 1 João 1:5–7 comunica que se liga a este contexto?",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "id": "cartas-joao-sem-cj-01-06",
+    "passageText": "A mensagem que dele temos ouvido e vos anunciamos é esta, que Deus é luz, e não há nele nenhumas trevas. Se dissermos que temos comunhão com ele e andarmos nas trevas, mentimos e não praticamos a verdade. Se, porém, andarmos na luz, como ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus, seu Filho, nos purifica de todo pecado.",
+    "passageA": {
+      "ref": "1 João 1:5–7",
+      "text": "Deus é luz, e não há nele nenhumas trevas."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Luz e comunhão: Deus é luz; andamos na luz ou mentimos sobre comunhão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus é luz sem trevas"
+      },
+      {
+        "id": "b",
+        "text": "Deus convive com as trevas"
+      },
+      {
+        "id": "c",
+        "text": "Comunhão independe do andar"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: a ponte é Deus como luz, sem trevas.",
+    "feedbackWrong": {
+      "b": "Não há nele nenhumas trevas.",
+      "c": "Andar nas trevas desmente a comunhão."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 João 1:5–7",
+    "learningObjective": "Reconhecer que Deus é luz; andar nas trevas desmente a comunhão, e o sangue de Jesus purifica.",
+    "evidence": [
+      "1 João 1:5",
+      "1 João 1:6",
+      "1 João 1:7"
+    ],
+    "type": "true_false",
+    "question": "Dizer que temos comunhão com Deus e andar nas trevas é praticar a verdade.",
+    "prompt": "Dizer que temos comunhão com Deus e andar nas trevas é praticar a verdade.",
+    "cue": "Dizer que temos comunhão com Deus e andar nas trevas é praticar a verdade.",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "id": "cartas-joao-cam-cj-01-01",
+    "passageText": "A mensagem que dele temos ouvido e vos anunciamos é esta, que Deus é luz, e não há nele nenhumas trevas. Se dissermos que temos comunhão com ele e andarmos nas trevas, mentimos e não praticamos a verdade. Se, porém, andarmos na luz, como ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus, seu Filho, nos purifica de todo pecado.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "feedbackCorrect": "Certo: isso é mentir e não praticar a verdade.",
+    "feedbackWrong": {
+      "true": "O texto: mentimos e não praticamos a verdade."
+    },
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 João 1:5–7",
+    "learningObjective": "Reconhecer que Deus é luz; andar nas trevas desmente a comunhão, e o sangue de Jesus purifica.",
+    "evidence": [
+      "1 João 1:5",
+      "1 João 1:6",
+      "1 João 1:7"
+    ],
+    "type": "tap",
+    "question": "Em 1 João 1:5–7, toque a palavra que falta em \"mentimos e não praticamos a ___.\"?",
+    "prompt": "Em 1 João 1:5–7, toque a palavra que falta em \"mentimos e não praticamos a ___.\"?",
+    "cue": "Em 1 João 1:5–7, toque a palavra que falta em \"mentimos e não praticamos a ___.\"?",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "id": "cartas-joao-cam-cj-01-02",
+    "passageText": "A mensagem que dele temos ouvido e vos anunciamos é esta, que Deus é luz, e não há nele nenhumas trevas. Se dissermos que temos comunhão com ele e andarmos nas trevas, mentimos e não praticamos a verdade. Se, porém, andarmos na luz, como ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus, seu Filho, nos purifica de todo pecado.",
+    "template": "mentimos e não praticamos a ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "luz"
+      },
+      {
+        "id": "b",
+        "text": "verdade"
+      },
+      {
+        "id": "c",
+        "text": "comunhão"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Exato: não praticamos a verdade.",
+    "feedbackWrong": {
+      "a": "Luz descreve a Deus e o andar, não esta lacuna.",
+      "c": "Comunhão é o que se alega; a lacuna é verdade."
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 João 1:5–7",
+    "learningObjective": "Reconhecer que Deus é luz; andar nas trevas desmente a comunhão, e o sangue de Jesus purifica.",
+    "evidence": [
+      "1 João 1:5",
+      "1 João 1:6",
+      "1 João 1:7"
+    ],
+    "type": "choice",
+    "question": "O que 1 João 1:6 revela sobre a relação entre fala e andar?",
+    "prompt": "O que 1 João 1:6 revela sobre a relação entre fala e andar?",
+    "cue": "O que 1 João 1:6 revela sobre a relação entre fala e andar?",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "id": "cartas-joao-cam-cj-01-03",
+    "passageText": "A mensagem que dele temos ouvido e vos anunciamos é esta, que Deus é luz, e não há nele nenhumas trevas. Se dissermos que temos comunhão com ele e andarmos nas trevas, mentimos e não praticamos a verdade. Se, porém, andarmos na luz, como ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus, seu Filho, nos purifica de todo pecado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Alegar comunhão e andar nas trevas é mentira."
+      },
+      {
+        "id": "b",
+        "text": "A fala de comunhão basta, mesmo nas trevas."
+      },
+      {
+        "id": "c",
+        "text": "O andar nas trevas confirma a comunhão anunciada."
+      },
+      {
+        "id": "d",
+        "text": "A verdade se pratica só no anúncio, nunca no andar."
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: comunhão alegada e trevas no andar não combinam.",
+    "feedbackWrong": {
+      "b": "A fala sem o andar é mentira.",
+      "c": "Trevas desmentem a comunhão, não a confirmam.",
+      "d": "Não praticar a verdade é o diagnóstico da treva."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 João 1:5–7",
+    "learningObjective": "Reconhecer que Deus é luz; andar nas trevas desmente a comunhão, e o sangue de Jesus purifica.",
+    "evidence": [
+      "1 João 1:5",
+      "1 João 1:6",
+      "1 João 1:7"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de 1 João 1:5–7?",
+    "prompt": "Como se encadeiam os eventos de 1 João 1:5–7?",
+    "cue": "Como se encadeiam os eventos de 1 João 1:5–7?",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "id": "cartas-joao-cam-cj-01-04",
+    "passageText": "A mensagem que dele temos ouvido e vos anunciamos é esta, que Deus é luz, e não há nele nenhumas trevas. Se dissermos que temos comunhão com ele e andarmos nas trevas, mentimos e não praticamos a verdade. Se, porém, andarmos na luz, como ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus, seu Filho, nos purifica de todo pecado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Se dissermos que temos comunhão com ele e andarmos nas trevas"
+      },
+      {
+        "id": "b",
+        "text": "mentimos e não praticamos a verdade"
+      },
+      {
+        "id": "c",
+        "text": "Se, porém, andarmos na luz, temos comunhão uns com os outros"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: a pretensão nas trevas mente; o andar na luz comunhão.",
+    "feedbackWrong": {
+      "b": "A cláusula condicional das trevas vem primeiro.",
+      "c": "A luz é o porém, não o início deste encadeamento."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 João 1:5–7",
+    "learningObjective": "Reconhecer que Deus é luz; andar nas trevas desmente a comunhão, e o sangue de Jesus purifica.",
+    "evidence": [
+      "1 João 1:5",
+      "1 João 1:6",
+      "1 João 1:7"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"o sangue de Jesus, seu Filho, nos ___ de todo pecado.\"",
+    "prompt": "Complete a frase: \"o sangue de Jesus, seu Filho, nos ___ de todo pecado.\"",
+    "cue": "Complete a frase: \"o sangue de Jesus, seu Filho, nos ___ de todo pecado.\"",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "id": "cartas-joao-cam-cj-01-05",
+    "passageText": "A mensagem que dele temos ouvido e vos anunciamos é esta, que Deus é luz, e não há nele nenhumas trevas. Se dissermos que temos comunhão com ele e andarmos nas trevas, mentimos e não praticamos a verdade. Se, porém, andarmos na luz, como ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus, seu Filho, nos purifica de todo pecado.",
+    "template": "o sangue de Jesus, seu Filho, nos ___ de todo pecado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "purifica"
+      },
+      {
+        "id": "b",
+        "text": "anunciamos"
+      },
+      {
+        "id": "c",
+        "text": "mentimos"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: o sangue nos purifica de todo pecado.",
+    "feedbackWrong": {
+      "b": "Anunciamos é a mensagem, não este verbo.",
+      "c": "Mentimos descreve o andar nas trevas."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 João 1:5–7",
+    "learningObjective": "Reconhecer que Deus é luz; andar nas trevas desmente a comunhão, e o sangue de Jesus purifica.",
+    "evidence": [
+      "1 João 1:5",
+      "1 João 1:6",
+      "1 João 1:7"
+    ],
+    "type": "connect",
+    "question": "O que 1 João 1:6–7 comunica que se liga a este contexto?",
+    "prompt": "O que 1 João 1:6–7 comunica que se liga a este contexto?",
+    "cue": "O que 1 João 1:6–7 comunica que se liga a este contexto?",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "id": "cartas-joao-cam-cj-01-06",
+    "passageText": "A mensagem que dele temos ouvido e vos anunciamos é esta, que Deus é luz, e não há nele nenhumas trevas. Se dissermos que temos comunhão com ele e andarmos nas trevas, mentimos e não praticamos a verdade. Se, porém, andarmos na luz, como ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus, seu Filho, nos purifica de todo pecado.",
+    "passageA": {
+      "ref": "1 João 1:6–7",
+      "text": "Se dissermos que temos comunhão com ele e andarmos nas trevas, mentimos e não praticamos a verdade."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Comunhão verdadeira não é só discurso: ou se anda na luz, ou se mente."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Andar nas trevas mente"
+      },
+      {
+        "id": "b",
+        "text": "Discurso basta para comunhão"
+      },
+      {
+        "id": "c",
+        "text": "Trevas fortalecem a verdade"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: pretender comunhão e andar nas trevas é mentir.",
+    "feedbackWrong": {
+      "b": "O texto exige o andar, não só o dizer.",
+      "c": "Trevas se opõem à prática da verdade."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 João 1:5–7",
+    "learningObjective": "Reconhecer que Deus é luz; andar nas trevas desmente a comunhão, e o sangue de Jesus purifica.",
+    "evidence": [
+      "1 João 1:5",
+      "1 João 1:6",
+      "1 João 1:7"
+    ],
+    "type": "true_false",
+    "question": "Andar na luz como ele está na luz inclui comunhão uns com os outros e purificação pelo sangue de Jesus.",
+    "prompt": "Andar na luz como ele está na luz inclui comunhão uns com os outros e purificação pelo sangue de Jesus.",
+    "cue": "Andar na luz como ele está na luz inclui comunhão uns com os outros e purificação pelo sangue de Jesus.",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "id": "cartas-joao-pro-cj-01-01",
+    "passageText": "A mensagem que dele temos ouvido e vos anunciamos é esta, que Deus é luz, e não há nele nenhumas trevas. Se dissermos que temos comunhão com ele e andarmos nas trevas, mentimos e não praticamos a verdade. Se, porém, andarmos na luz, como ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus, seu Filho, nos purifica de todo pecado.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "feedbackCorrect": "Certo: luz, comunhão e sangue se encadeiam no v. 7.",
+    "feedbackWrong": {
+      "false": "O v. 7 une andar na luz, comunhão e purificação."
+    },
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 João 1:5–7",
+    "learningObjective": "Reconhecer que Deus é luz; andar nas trevas desmente a comunhão, e o sangue de Jesus purifica.",
+    "evidence": [
+      "1 João 1:5",
+      "1 João 1:6",
+      "1 João 1:7"
+    ],
+    "type": "tap",
+    "question": "Em 1 João 1:5–7, toque a palavra que falta em \"o ___ de Jesus, seu Filho, nos purifica de todo pecado.\"?",
+    "prompt": "Em 1 João 1:5–7, toque a palavra que falta em \"o ___ de Jesus, seu Filho, nos purifica de todo pecado.\"?",
+    "cue": "Em 1 João 1:5–7, toque a palavra que falta em \"o ___ de Jesus, seu Filho, nos purifica de todo pecado.\"?",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "id": "cartas-joao-pro-cj-01-02",
+    "passageText": "A mensagem que dele temos ouvido e vos anunciamos é esta, que Deus é luz, e não há nele nenhumas trevas. Se dissermos que temos comunhão com ele e andarmos nas trevas, mentimos e não praticamos a verdade. Se, porém, andarmos na luz, como ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus, seu Filho, nos purifica de todo pecado.",
+    "template": "o ___ de Jesus, seu Filho, nos purifica de todo pecado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sangue"
+      },
+      {
+        "id": "b",
+        "text": "mensagem"
+      },
+      {
+        "id": "c",
+        "text": "luz"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Exato: o sangue de Jesus nos purifica.",
+    "feedbackWrong": {
+      "b": "A mensagem anuncia; quem purifica é o sangue.",
+      "c": "Luz é o modo do andar, não este sujeito."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 João 1:5–7",
+    "learningObjective": "Reconhecer que Deus é luz; andar nas trevas desmente a comunhão, e o sangue de Jesus purifica.",
+    "evidence": [
+      "1 João 1:5",
+      "1 João 1:6",
+      "1 João 1:7"
+    ],
+    "type": "choice",
+    "question": "Que sentido teológico 1 João 1:5–7 dá à comunhão com Deus?",
+    "prompt": "Que sentido teológico 1 João 1:5–7 dá à comunhão com Deus?",
+    "cue": "Que sentido teológico 1 João 1:5–7 dá à comunhão com Deus?",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "id": "cartas-joao-pro-cj-01-03",
+    "passageText": "A mensagem que dele temos ouvido e vos anunciamos é esta, que Deus é luz, e não há nele nenhumas trevas. Se dissermos que temos comunhão com ele e andarmos nas trevas, mentimos e não praticamos a verdade. Se, porém, andarmos na luz, como ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus, seu Filho, nos purifica de todo pecado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Comunhão real participa da luz de Deus e recebe purificação."
+      },
+      {
+        "id": "b",
+        "text": "Comunhão é só sentimento, sem relação com o andar."
+      },
+      {
+        "id": "c",
+        "text": "Trevas no andar não afetam a comunhão anunciada."
+      },
+      {
+        "id": "d",
+        "text": "A purificação dispensa o andar na luz."
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: luz, comunhão mútua e sangue formam um só caminho.",
+    "feedbackWrong": {
+      "b": "O texto liga comunhão ao andar, não ao sentimento solto.",
+      "c": "Andar nas trevas é mentir sobre a comunhão.",
+      "d": "O sangue purifica os que andam na luz."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 João 1:5–7",
+    "learningObjective": "Reconhecer que Deus é luz; andar nas trevas desmente a comunhão, e o sangue de Jesus purifica.",
+    "evidence": [
+      "1 João 1:5",
+      "1 João 1:6",
+      "1 João 1:7"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de 1 João 1:5–7?",
+    "prompt": "Qual sequência revela o sentido de 1 João 1:5–7?",
+    "cue": "Qual sequência revela o sentido de 1 João 1:5–7?",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "id": "cartas-joao-pro-cj-01-04",
+    "passageText": "A mensagem que dele temos ouvido e vos anunciamos é esta, que Deus é luz, e não há nele nenhumas trevas. Se dissermos que temos comunhão com ele e andarmos nas trevas, mentimos e não praticamos a verdade. Se, porém, andarmos na luz, como ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus, seu Filho, nos purifica de todo pecado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus é luz, e não há nele nenhumas trevas"
+      },
+      {
+        "id": "b",
+        "text": "mentimos e não praticamos a verdade"
+      },
+      {
+        "id": "c",
+        "text": "o sangue de Jesus, seu Filho, nos purifica de todo pecado"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: caráter de Deus, mentira nas trevas, purificação.",
+    "feedbackWrong": {
+      "b": "O sentido começa em quem Deus é.",
+      "c": "A purificação fecha o trecho, não o abre."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 João 1:5–7",
+    "learningObjective": "Reconhecer que Deus é luz; andar nas trevas desmente a comunhão, e o sangue de Jesus purifica.",
+    "evidence": [
+      "1 João 1:5",
+      "1 João 1:6",
+      "1 João 1:7"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"temos ___ uns com os outros, e o sangue de Jesus, seu Filho, nos purifica.\"",
+    "prompt": "Complete a frase: \"temos ___ uns com os outros, e o sangue de Jesus, seu Filho, nos purifica.\"",
+    "cue": "Complete a frase: \"temos ___ uns com os outros, e o sangue de Jesus, seu Filho, nos purifica.\"",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "id": "cartas-joao-pro-cj-01-05",
+    "passageText": "A mensagem que dele temos ouvido e vos anunciamos é esta, que Deus é luz, e não há nele nenhumas trevas. Se dissermos que temos comunhão com ele e andarmos nas trevas, mentimos e não praticamos a verdade. Se, porém, andarmos na luz, como ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus, seu Filho, nos purifica de todo pecado.",
+    "template": "temos ___ uns com os outros, e o sangue de Jesus, seu Filho, nos purifica.",
+    "options": [
+      {
+        "id": "a",
+        "text": "trevas"
+      },
+      {
+        "id": "b",
+        "text": "comunhão"
+      },
+      {
+        "id": "c",
+        "text": "mensagem"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Certo: temos comunhão uns com os outros.",
+    "feedbackWrong": {
+      "a": "Trevas opõem-se a este fruto.",
+      "c": "A mensagem anuncia; o fruto é comunhão."
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 João 1:5–7",
+    "learningObjective": "Reconhecer que Deus é luz; andar nas trevas desmente a comunhão, e o sangue de Jesus purifica.",
+    "evidence": [
+      "1 João 1:5",
+      "1 João 1:6",
+      "1 João 1:7"
+    ],
+    "type": "connect",
+    "question": "O que 1 João 1:5–7 comunica que se liga a este contexto?",
+    "prompt": "O que 1 João 1:5–7 comunica que se liga a este contexto?",
+    "cue": "O que 1 João 1:5–7 comunica que se liga a este contexto?",
+    "trail": "cartas-joao",
+    "section": "cj-01",
+    "id": "cartas-joao-pro-cj-01-06",
+    "passageText": "A mensagem que dele temos ouvido e vos anunciamos é esta, que Deus é luz, e não há nele nenhumas trevas. Se dissermos que temos comunhão com ele e andarmos nas trevas, mentimos e não praticamos a verdade. Se, porém, andarmos na luz, como ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus, seu Filho, nos purifica de todo pecado.",
+    "passageA": {
+      "ref": "1 João 1:7",
+      "text": "Se, porém, andarmos na luz, como ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus, seu Filho, nos purifica de todo pecado."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A luz de Deus não é metáfora solta: ela julga o andar e abre comunhão e purificação."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Luz, comunhão e sangue"
+      },
+      {
+        "id": "b",
+        "text": "Luz apenas como metáfora vaga"
+      },
+      {
+        "id": "c",
+        "text": "Purificação sem andar nenhum"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: luz, comunhão e sangue se ligam no mesmo andar.",
+    "feedbackWrong": {
+      "b": "A luz define o andar, não é vaga.",
+      "c": "A purificação acompanha o andar na luz."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 João 4:7–8",
+    "learningObjective": "Reconhecer que o amor é de Deus; quem ama o conhece, e quem não ama não o conhece, porque Deus é amor.",
+    "evidence": [
+      "1 João 4:7",
+      "1 João 4:8"
+    ],
+    "type": "true_false",
+    "question": "Todo aquele que ama é de Deus e conhece a Deus.",
+    "prompt": "Todo aquele que ama é de Deus e conhece a Deus.",
+    "cue": "Todo aquele que ama é de Deus e conhece a Deus.",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "id": "cartas-joao-sem-cj-02-01",
+    "passageText": "Amados, amemo-nos uns aos outros, porque o amor é de Deus; todo aquele que ama é de Deus e conhece a Deus. Quem não ama não conhece a Deus, porque Deus é amor.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "feedbackCorrect": "Certo: 1 João 4:7 afirma isso literalmente.",
+    "feedbackWrong": {
+      "false": "Releia: quem ama é de Deus e conhece a Deus."
+    },
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 João 4:7–8",
+    "learningObjective": "Reconhecer que o amor é de Deus; quem ama o conhece, e quem não ama não o conhece, porque Deus é amor.",
+    "evidence": [
+      "1 João 4:7",
+      "1 João 4:8"
+    ],
+    "type": "tap",
+    "question": "Em 1 João 4:7–8, toque a palavra que falta em \"porque o ___ é de Deus.\"?",
+    "prompt": "Em 1 João 4:7–8, toque a palavra que falta em \"porque o ___ é de Deus.\"?",
+    "cue": "Em 1 João 4:7–8, toque a palavra que falta em \"porque o ___ é de Deus.\"?",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "id": "cartas-joao-sem-cj-02-02",
+    "passageText": "Amados, amemo-nos uns aos outros, porque o amor é de Deus; todo aquele que ama é de Deus e conhece a Deus. Quem não ama não conhece a Deus, porque Deus é amor.",
+    "template": "porque o ___ é de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "amor"
+      },
+      {
+        "id": "b",
+        "text": "Amados"
+      },
+      {
+        "id": "c",
+        "text": "conhece"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Exato: o amor é de Deus.",
+    "feedbackWrong": {
+      "b": "Amados é o vocativo, não esta lacuna.",
+      "c": "Conhece vem na cláusula seguinte."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 João 4:7–8",
+    "learningObjective": "Reconhecer que o amor é de Deus; quem ama o conhece, e quem não ama não o conhece, porque Deus é amor.",
+    "evidence": [
+      "1 João 4:7",
+      "1 João 4:8"
+    ],
+    "type": "choice",
+    "question": "O que 1 João 4:8 afirma de modo explícito?",
+    "prompt": "O que 1 João 4:8 afirma de modo explícito?",
+    "cue": "O que 1 João 4:8 afirma de modo explícito?",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "id": "cartas-joao-sem-cj-02-03",
+    "passageText": "Amados, amemo-nos uns aos outros, porque o amor é de Deus; todo aquele que ama é de Deus e conhece a Deus. Quem não ama não conhece a Deus, porque Deus é amor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quem não ama não conhece a Deus, porque Deus é amor."
+      },
+      {
+        "id": "b",
+        "text": "Quem não ama ainda assim conhece a Deus."
+      },
+      {
+        "id": "c",
+        "text": "Deus é poder, e o amor fica opcional."
+      },
+      {
+        "id": "d",
+        "text": "Conhecer a Deus dispensa amar os outros."
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: não amar é não conhecer, porque Deus é amor.",
+    "feedbackWrong": {
+      "b": "O texto diz o contrário: quem não ama não conhece.",
+      "c": "A afirmação é: Deus é amor.",
+      "d": "O amor é o critério do conhecimento."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 João 4:7–8",
+    "learningObjective": "Reconhecer que o amor é de Deus; quem ama o conhece, e quem não ama não o conhece, porque Deus é amor.",
+    "evidence": [
+      "1 João 4:7",
+      "1 João 4:8"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em 1 João 4:7–8?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 1 João 4:7–8?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 1 João 4:7–8?",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "id": "cartas-joao-sem-cj-02-04",
+    "passageText": "Amados, amemo-nos uns aos outros, porque o amor é de Deus; todo aquele que ama é de Deus e conhece a Deus. Quem não ama não conhece a Deus, porque Deus é amor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "amemo-nos uns aos outros, porque o amor é de Deus"
+      },
+      {
+        "id": "b",
+        "text": "todo aquele que ama é de Deus e conhece a Deus"
+      },
+      {
+        "id": "c",
+        "text": "Quem não ama não conhece a Deus, porque Deus é amor"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: convite, quem ama conhece, quem não ama não conhece.",
+    "feedbackWrong": {
+      "b": "O trecho começa pelo convite a amar.",
+      "c": "A negação fecha o versículo 8."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 João 4:7–8",
+    "learningObjective": "Reconhecer que o amor é de Deus; quem ama o conhece, e quem não ama não o conhece, porque Deus é amor.",
+    "evidence": [
+      "1 João 4:7",
+      "1 João 4:8"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Quem não ama não ___ a Deus, porque Deus é amor.\"",
+    "prompt": "Complete a frase: \"Quem não ama não ___ a Deus, porque Deus é amor.\"",
+    "cue": "Complete a frase: \"Quem não ama não ___ a Deus, porque Deus é amor.\"",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "id": "cartas-joao-sem-cj-02-05",
+    "passageText": "Amados, amemo-nos uns aos outros, porque o amor é de Deus; todo aquele que ama é de Deus e conhece a Deus. Quem não ama não conhece a Deus, porque Deus é amor.",
+    "template": "Quem não ama não ___ a Deus, porque Deus é amor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ama"
+      },
+      {
+        "id": "b",
+        "text": "conhece"
+      },
+      {
+        "id": "c",
+        "text": "Amados"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Certo: quem não ama não conhece a Deus.",
+    "feedbackWrong": {
+      "a": "Ama já está na primeira cláusula.",
+      "c": "Amados é o vocativo inicial."
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 João 4:7–8",
+    "learningObjective": "Reconhecer que o amor é de Deus; quem ama o conhece, e quem não ama não o conhece, porque Deus é amor.",
+    "evidence": [
+      "1 João 4:7",
+      "1 João 4:8"
+    ],
+    "type": "connect",
+    "question": "O que 1 João 4:7–8 comunica que se liga a este contexto?",
+    "prompt": "O que 1 João 4:7–8 comunica que se liga a este contexto?",
+    "cue": "O que 1 João 4:7–8 comunica que se liga a este contexto?",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "id": "cartas-joao-sem-cj-02-06",
+    "passageText": "Amados, amemo-nos uns aos outros, porque o amor é de Deus; todo aquele que ama é de Deus e conhece a Deus. Quem não ama não conhece a Deus, porque Deus é amor.",
+    "passageA": {
+      "ref": "1 João 4:8",
+      "text": "Quem não ama não conhece a Deus, porque Deus é amor."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Amor e verdade: conhecer a Deus é amar; quem não ama não o conhece, porque Deus é amor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Não amar é não conhecer"
+      },
+      {
+        "id": "b",
+        "text": "Conhecer dispensa o amar"
+      },
+      {
+        "id": "c",
+        "text": "Deus é amor só às vezes"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: o não amar denuncia o não conhecer.",
+    "feedbackWrong": {
+      "b": "João une conhecer e amar.",
+      "c": "A afirmação é absoluta: Deus é amor."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 João 4:7–8",
+    "learningObjective": "Reconhecer que o amor é de Deus; quem ama o conhece, e quem não ama não o conhece, porque Deus é amor.",
+    "evidence": [
+      "1 João 4:7",
+      "1 João 4:8"
+    ],
+    "type": "true_false",
+    "question": "Não amar ainda assim é conhecer a Deus, segundo 1 João 4:8.",
+    "prompt": "Não amar ainda assim é conhecer a Deus, segundo 1 João 4:8.",
+    "cue": "Não amar ainda assim é conhecer a Deus, segundo 1 João 4:8.",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "id": "cartas-joao-cam-cj-02-01",
+    "passageText": "Amados, amemo-nos uns aos outros, porque o amor é de Deus; todo aquele que ama é de Deus e conhece a Deus. Quem não ama não conhece a Deus, porque Deus é amor.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "feedbackCorrect": "Certo: quem não ama não conhece a Deus.",
+    "feedbackWrong": {
+      "true": "O versículo nega esse conhecimento."
+    },
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 João 4:7–8",
+    "learningObjective": "Reconhecer que o amor é de Deus; quem ama o conhece, e quem não ama não o conhece, porque Deus é amor.",
+    "evidence": [
+      "1 João 4:7",
+      "1 João 4:8"
+    ],
+    "type": "tap",
+    "question": "Em 1 João 4:7–8, toque a palavra que falta em \"todo aquele que ama é de Deus e ___ a Deus.\"?",
+    "prompt": "Em 1 João 4:7–8, toque a palavra que falta em \"todo aquele que ama é de Deus e ___ a Deus.\"?",
+    "cue": "Em 1 João 4:7–8, toque a palavra que falta em \"todo aquele que ama é de Deus e ___ a Deus.\"?",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "id": "cartas-joao-cam-cj-02-02",
+    "passageText": "Amados, amemo-nos uns aos outros, porque o amor é de Deus; todo aquele que ama é de Deus e conhece a Deus. Quem não ama não conhece a Deus, porque Deus é amor.",
+    "template": "todo aquele que ama é de Deus e ___ a Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ama"
+      },
+      {
+        "id": "b",
+        "text": "conhece"
+      },
+      {
+        "id": "c",
+        "text": "Amados"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Exato: quem ama conhece a Deus.",
+    "feedbackWrong": {
+      "a": "Ama já está antes da lacuna.",
+      "c": "Amados abre o versículo, não esta cláusula."
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 João 4:7–8",
+    "learningObjective": "Reconhecer que o amor é de Deus; quem ama o conhece, e quem não ama não o conhece, porque Deus é amor.",
+    "evidence": [
+      "1 João 4:7",
+      "1 João 4:8"
+    ],
+    "type": "choice",
+    "question": "O que 1 João 4:7 estabelece entre origem do amor e conhecimento de Deus?",
+    "prompt": "O que 1 João 4:7 estabelece entre origem do amor e conhecimento de Deus?",
+    "cue": "O que 1 João 4:7 estabelece entre origem do amor e conhecimento de Deus?",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "id": "cartas-joao-cam-cj-02-03",
+    "passageText": "Amados, amemo-nos uns aos outros, porque o amor é de Deus; todo aquele que ama é de Deus e conhece a Deus. Quem não ama não conhece a Deus, porque Deus é amor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Amar mostra origem em Deus e conhecimento dele."
+      },
+      {
+        "id": "b",
+        "text": "O amor nasce só da vontade humana isolada."
+      },
+      {
+        "id": "c",
+        "text": "Conhecer a Deus é teoria, sem amar ninguém."
+      },
+      {
+        "id": "d",
+        "text": "Só alguns amados precisam amar os outros."
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: o amor é de Deus e identifica quem o conhece.",
+    "feedbackWrong": {
+      "b": "O texto diz: o amor é de Deus.",
+      "c": "Conhecer e amar caminham juntos.",
+      "d": "O convite é amemo-nos uns aos outros."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 João 4:7–8",
+    "learningObjective": "Reconhecer que o amor é de Deus; quem ama o conhece, e quem não ama não o conhece, porque Deus é amor.",
+    "evidence": [
+      "1 João 4:7",
+      "1 João 4:8"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de 1 João 4:7–8?",
+    "prompt": "Como se encadeiam os eventos de 1 João 4:7–8?",
+    "cue": "Como se encadeiam os eventos de 1 João 4:7–8?",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "id": "cartas-joao-cam-cj-02-04",
+    "passageText": "Amados, amemo-nos uns aos outros, porque o amor é de Deus; todo aquele que ama é de Deus e conhece a Deus. Quem não ama não conhece a Deus, porque Deus é amor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o amor é de Deus"
+      },
+      {
+        "id": "b",
+        "text": "todo aquele que ama é de Deus e conhece a Deus"
+      },
+      {
+        "id": "c",
+        "text": "Quem não ama não conhece a Deus"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: origem do amor, quem ama conhece, quem não ama não.",
+    "feedbackWrong": {
+      "b": "Primeiro o amor é de Deus.",
+      "c": "A negação é a conclusão, não o começo."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 João 4:7–8",
+    "learningObjective": "Reconhecer que o amor é de Deus; quem ama o conhece, e quem não ama não o conhece, porque Deus é amor.",
+    "evidence": [
+      "1 João 4:7",
+      "1 João 4:8"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Quem não ama não conhece a Deus, porque Deus é ___.\"",
+    "prompt": "Complete a frase: \"Quem não ama não conhece a Deus, porque Deus é ___.\"",
+    "cue": "Complete a frase: \"Quem não ama não conhece a Deus, porque Deus é ___.\"",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "id": "cartas-joao-cam-cj-02-05",
+    "passageText": "Amados, amemo-nos uns aos outros, porque o amor é de Deus; todo aquele que ama é de Deus e conhece a Deus. Quem não ama não conhece a Deus, porque Deus é amor.",
+    "template": "Quem não ama não conhece a Deus, porque Deus é ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "amor"
+      },
+      {
+        "id": "b",
+        "text": "Amados"
+      },
+      {
+        "id": "c",
+        "text": "outros"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: porque Deus é amor.",
+    "feedbackWrong": {
+      "b": "Amados é o vocativo.",
+      "c": "Outros é o objeto do amar-nos."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 João 4:7–8",
+    "learningObjective": "Reconhecer que o amor é de Deus; quem ama o conhece, e quem não ama não o conhece, porque Deus é amor.",
+    "evidence": [
+      "1 João 4:7",
+      "1 João 4:8"
+    ],
+    "type": "connect",
+    "question": "O que 1 João 4:7 comunica que se liga a este contexto?",
+    "prompt": "O que 1 João 4:7 comunica que se liga a este contexto?",
+    "cue": "O que 1 João 4:7 comunica que se liga a este contexto?",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "id": "cartas-joao-cam-cj-02-06",
+    "passageText": "Amados, amemo-nos uns aos outros, porque o amor é de Deus; todo aquele que ama é de Deus e conhece a Deus. Quem não ama não conhece a Deus, porque Deus é amor.",
+    "passageA": {
+      "ref": "1 João 4:7",
+      "text": "Amados, amemo-nos uns aos outros, porque o amor é de Deus; todo aquele que ama é de Deus e conhece a Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O conhecimento de Deus não fica no discurso: ele se verifica no amor mútuo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Amar é conhecer a Deus"
+      },
+      {
+        "id": "b",
+        "text": "Conhecer substitui o amar"
+      },
+      {
+        "id": "c",
+        "text": "O amor não vem de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: quem ama é de Deus e o conhece.",
+    "feedbackWrong": {
+      "b": "João não separa conhecer e amar.",
+      "c": "O amor é de Deus."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 João 4:7–8",
+    "learningObjective": "Reconhecer que o amor é de Deus; quem ama o conhece, e quem não ama não o conhece, porque Deus é amor.",
+    "evidence": [
+      "1 João 4:7",
+      "1 João 4:8"
+    ],
+    "type": "true_false",
+    "question": "João identifica o próprio Deus com o amor, de modo que não amar é não conhecer a Deus.",
+    "prompt": "João identifica o próprio Deus com o amor, de modo que não amar é não conhecer a Deus.",
+    "cue": "João identifica o próprio Deus com o amor, de modo que não amar é não conhecer a Deus.",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "id": "cartas-joao-pro-cj-02-01",
+    "passageText": "Amados, amemo-nos uns aos outros, porque o amor é de Deus; todo aquele que ama é de Deus e conhece a Deus. Quem não ama não conhece a Deus, porque Deus é amor.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "feedbackCorrect": "Certo: Deus é amor; o não amar desmente o conhecer.",
+    "feedbackWrong": {
+      "false": "O v. 8 une Deus é amor e o não conhecer."
+    },
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 João 4:7–8",
+    "learningObjective": "Reconhecer que o amor é de Deus; quem ama o conhece, e quem não ama não o conhece, porque Deus é amor.",
+    "evidence": [
+      "1 João 4:7",
+      "1 João 4:8"
+    ],
+    "type": "tap",
+    "question": "Em 1 João 4:7–8, toque a palavra que falta em \"amemo-nos uns aos ___.\"?",
+    "prompt": "Em 1 João 4:7–8, toque a palavra que falta em \"amemo-nos uns aos ___.\"?",
+    "cue": "Em 1 João 4:7–8, toque a palavra que falta em \"amemo-nos uns aos ___.\"?",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "id": "cartas-joao-pro-cj-02-02",
+    "passageText": "Amados, amemo-nos uns aos outros, porque o amor é de Deus; todo aquele que ama é de Deus e conhece a Deus. Quem não ama não conhece a Deus, porque Deus é amor.",
+    "template": "amemo-nos uns aos ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "outros"
+      },
+      {
+        "id": "b",
+        "text": "amor"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Exato: amemo-nos uns aos outros.",
+    "feedbackWrong": {
+      "b": "Amor é a origem e a identidade de Deus.",
+      "c": "Deus é o fundamento, não esta lacuna."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 João 4:7–8",
+    "learningObjective": "Reconhecer que o amor é de Deus; quem ama o conhece, e quem não ama não o conhece, porque Deus é amor.",
+    "evidence": [
+      "1 João 4:7",
+      "1 João 4:8"
+    ],
+    "type": "choice",
+    "question": "Que leitura de 1 João 4:8 distorce o sentido de “Deus é amor”?",
+    "prompt": "Que leitura de 1 João 4:8 distorce o sentido de “Deus é amor”?",
+    "cue": "Que leitura de 1 João 4:8 distorce o sentido de “Deus é amor”?",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "id": "cartas-joao-pro-cj-02-03",
+    "passageText": "Amados, amemo-nos uns aos outros, porque o amor é de Deus; todo aquele que ama é de Deus e conhece a Deus. Quem não ama não conhece a Deus, porque Deus é amor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tratar o amor como sentimento solto, sem conhecer a Deus."
+      },
+      {
+        "id": "b",
+        "text": "Ver o não amar como sinal de não conhecer a Deus."
+      },
+      {
+        "id": "c",
+        "text": "Ligar o conhecimento de Deus ao amor mútuo."
+      },
+      {
+        "id": "d",
+        "text": "Confessar que o amor procede de Deus."
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: Deus é amor não solta o amar da verdade de quem Ele é.",
+    "feedbackWrong": {
+      "b": "Isso é o que o versículo afirma.",
+      "c": "Essa ligação é o encadeamento do texto.",
+      "d": "O amor é de Deus: isso é fiel."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 João 4:7–8",
+    "learningObjective": "Reconhecer que o amor é de Deus; quem ama o conhece, e quem não ama não o conhece, porque Deus é amor.",
+    "evidence": [
+      "1 João 4:7",
+      "1 João 4:8"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de 1 João 4:7–8?",
+    "prompt": "Qual sequência revela o sentido de 1 João 4:7–8?",
+    "cue": "Qual sequência revela o sentido de 1 João 4:7–8?",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "id": "cartas-joao-pro-cj-02-04",
+    "passageText": "Amados, amemo-nos uns aos outros, porque o amor é de Deus; todo aquele que ama é de Deus e conhece a Deus. Quem não ama não conhece a Deus, porque Deus é amor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "porque o amor é de Deus"
+      },
+      {
+        "id": "b",
+        "text": "todo aquele que ama é de Deus e conhece a Deus"
+      },
+      {
+        "id": "c",
+        "text": "porque Deus é amor"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: origem, reconhecimento, identidade de Deus.",
+    "feedbackWrong": {
+      "b": "O sentido começa na origem do amor.",
+      "c": "Deus é amor fecha o argumento."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 João 4:7–8",
+    "learningObjective": "Reconhecer que o amor é de Deus; quem ama o conhece, e quem não ama não o conhece, porque Deus é amor.",
+    "evidence": [
+      "1 João 4:7",
+      "1 João 4:8"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Amados, ___ uns aos outros, porque o amor é de Deus.\"",
+    "prompt": "Complete a frase: \"Amados, ___ uns aos outros, porque o amor é de Deus.\"",
+    "cue": "Complete a frase: \"Amados, ___ uns aos outros, porque o amor é de Deus.\"",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "id": "cartas-joao-pro-cj-02-05",
+    "passageText": "Amados, amemo-nos uns aos outros, porque o amor é de Deus; todo aquele que ama é de Deus e conhece a Deus. Quem não ama não conhece a Deus, porque Deus é amor.",
+    "template": "Amados, ___ uns aos outros, porque o amor é de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "conhece"
+      },
+      {
+        "id": "b",
+        "text": "amemo-nos"
+      },
+      {
+        "id": "c",
+        "text": "amor"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Certo: o convite é amemo-nos uns aos outros.",
+    "feedbackWrong": {
+      "a": "Conhece descreve o fruto, não o convite.",
+      "c": "Amor é o substantivo, não este verbo."
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 João 4:7–8",
+    "learningObjective": "Reconhecer que o amor é de Deus; quem ama o conhece, e quem não ama não o conhece, porque Deus é amor.",
+    "evidence": [
+      "1 João 4:7",
+      "1 João 4:8"
+    ],
+    "type": "connect",
+    "question": "O que 1 João 4:7–8 comunica que se liga a este contexto?",
+    "prompt": "O que 1 João 4:7–8 comunica que se liga a este contexto?",
+    "cue": "O que 1 João 4:7–8 comunica que se liga a este contexto?",
+    "trail": "cartas-joao",
+    "section": "cj-02",
+    "id": "cartas-joao-pro-cj-02-06",
+    "passageText": "Amados, amemo-nos uns aos outros, porque o amor é de Deus; todo aquele que ama é de Deus e conhece a Deus. Quem não ama não conhece a Deus, porque Deus é amor.",
+    "passageA": {
+      "ref": "1 João 4:7–8",
+      "text": "todo aquele que ama é de Deus e conhece a Deus. Quem não ama não conhece a Deus, porque Deus é amor."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A verdade sobre Deus não se prova só na doutrina: quem Ele é (amor) se verifica em quem ama."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Identidade de Deus no amar"
+      },
+      {
+        "id": "b",
+        "text": "Doutrina sem o amor mútuo"
+      },
+      {
+        "id": "c",
+        "text": "Amor como sentimento solto"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: Deus é amor; o amar revela o conhecer.",
+    "feedbackWrong": {
+      "b": "Sem amar não há conhecimento de Deus.",
+      "c": "O amor aqui é de Deus, não um sentimento solto."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 João 1:6",
+    "learningObjective": "Reconhecer que o amor consiste em andar segundo os mandamentos, o mandamento ouvido desde o princípio.",
+    "evidence": [
+      "2 João 1:6"
+    ],
+    "type": "true_false",
+    "question": "Esse amor consiste em andarmos segundo os seus mandamentos.",
+    "prompt": "Esse amor consiste em andarmos segundo os seus mandamentos.",
+    "cue": "Esse amor consiste em andarmos segundo os seus mandamentos.",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "id": "cartas-joao-sem-cj-03-01",
+    "passageText": "Esse amor consiste em andarmos segundo os seus mandamentos; e esse mandamento consiste, conforme ouvistes desde o princípio, em andardes neste amor.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "feedbackCorrect": "Certo: 2 João 1:6 começa exatamente assim.",
+    "feedbackWrong": {
+      "false": "Releia: o amor consiste em andar segundo os mandamentos."
+    },
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 João 1:6",
+    "learningObjective": "Reconhecer que o amor consiste em andar segundo os mandamentos, o mandamento ouvido desde o princípio.",
+    "evidence": [
+      "2 João 1:6"
+    ],
+    "type": "tap",
+    "question": "Em 2 João 1:6, toque a palavra que falta em \"Esse amor consiste em andarmos segundo os seus ___.\"?",
+    "prompt": "Em 2 João 1:6, toque a palavra que falta em \"Esse amor consiste em andarmos segundo os seus ___.\"?",
+    "cue": "Em 2 João 1:6, toque a palavra que falta em \"Esse amor consiste em andarmos segundo os seus ___.\"?",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "id": "cartas-joao-sem-cj-03-02",
+    "passageText": "Esse amor consiste em andarmos segundo os seus mandamentos; e esse mandamento consiste, conforme ouvistes desde o princípio, em andardes neste amor.",
+    "template": "Esse amor consiste em andarmos segundo os seus ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mandamentos"
+      },
+      {
+        "id": "b",
+        "text": "princípio"
+      },
+      {
+        "id": "c",
+        "text": "amor"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Exato: segundo os seus mandamentos.",
+    "feedbackWrong": {
+      "b": "Princípio marca desde quando se ouviu.",
+      "c": "Amor é o sujeito; a lacuna é mandamentos."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 João 1:6",
+    "learningObjective": "Reconhecer que o amor consiste em andar segundo os mandamentos, o mandamento ouvido desde o princípio.",
+    "evidence": [
+      "2 João 1:6"
+    ],
+    "type": "choice",
+    "question": "O que 2 João 1:6 afirma de modo explícito sobre o mandamento?",
+    "prompt": "O que 2 João 1:6 afirma de modo explícito sobre o mandamento?",
+    "cue": "O que 2 João 1:6 afirma de modo explícito sobre o mandamento?",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "id": "cartas-joao-sem-cj-03-03",
+    "passageText": "Esse amor consiste em andarmos segundo os seus mandamentos; e esse mandamento consiste, conforme ouvistes desde o princípio, em andardes neste amor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Consiste, conforme ouvistes desde o princípio, em andardes neste amor."
+      },
+      {
+        "id": "b",
+        "text": "Consiste em um sentimento novo, nunca ouvido."
+      },
+      {
+        "id": "c",
+        "text": "Dispensa andar; basta lembrar o princípio."
+      },
+      {
+        "id": "d",
+        "text": "Substitui o amor por uma lista sem andar."
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: o mandamento é andardes neste amor, desde o princípio.",
+    "feedbackWrong": {
+      "b": "Ouvistes desde o princípio: não é novidade solta.",
+      "c": "O verbo é andardes.",
+      "d": "O mandamento consiste em andar neste amor."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 João 1:6",
+    "learningObjective": "Reconhecer que o amor consiste em andar segundo os mandamentos, o mandamento ouvido desde o princípio.",
+    "evidence": [
+      "2 João 1:6"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em 2 João 1:6?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 2 João 1:6?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 2 João 1:6?",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "id": "cartas-joao-sem-cj-03-04",
+    "passageText": "Esse amor consiste em andarmos segundo os seus mandamentos; e esse mandamento consiste, conforme ouvistes desde o princípio, em andardes neste amor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Esse amor consiste em andarmos segundo os seus mandamentos"
+      },
+      {
+        "id": "b",
+        "text": "e esse mandamento consiste, conforme ouvistes desde o princípio"
+      },
+      {
+        "id": "c",
+        "text": "em andardes neste amor"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: amor como andar, mandamento ouvido, andar neste amor.",
+    "feedbackWrong": {
+      "b": "O versículo abre pelo amor que consiste em andar.",
+      "c": "Andardes neste amor fecha a frase."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 João 1:6",
+    "learningObjective": "Reconhecer que o amor consiste em andar segundo os mandamentos, o mandamento ouvido desde o princípio.",
+    "evidence": [
+      "2 João 1:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"conforme ouvistes desde o ___, em andardes neste amor.\"",
+    "prompt": "Complete a frase: \"conforme ouvistes desde o ___, em andardes neste amor.\"",
+    "cue": "Complete a frase: \"conforme ouvistes desde o ___, em andardes neste amor.\"",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "id": "cartas-joao-sem-cj-03-05",
+    "passageText": "Esse amor consiste em andarmos segundo os seus mandamentos; e esse mandamento consiste, conforme ouvistes desde o princípio, em andardes neste amor.",
+    "template": "conforme ouvistes desde o ___, em andardes neste amor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "amor"
+      },
+      {
+        "id": "b",
+        "text": "princípio"
+      },
+      {
+        "id": "c",
+        "text": "mandamentos"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Certo: ouvistes desde o princípio.",
+    "feedbackWrong": {
+      "a": "Amor é o conteúdo do andar, não esta lacuna.",
+      "c": "Mandamentos aparecem na primeira cláusula."
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 João 1:6",
+    "learningObjective": "Reconhecer que o amor consiste em andar segundo os mandamentos, o mandamento ouvido desde o princípio.",
+    "evidence": [
+      "2 João 1:6"
+    ],
+    "type": "connect",
+    "question": "O que 2 João 1:6 comunica que se liga a este contexto?",
+    "prompt": "O que 2 João 1:6 comunica que se liga a este contexto?",
+    "cue": "O que 2 João 1:6 comunica que se liga a este contexto?",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "id": "cartas-joao-sem-cj-03-06",
+    "passageText": "Esse amor consiste em andarmos segundo os seus mandamentos; e esse mandamento consiste, conforme ouvistes desde o princípio, em andardes neste amor.",
+    "passageA": {
+      "ref": "2 João 1:6",
+      "text": "Esse amor consiste em andarmos segundo os seus mandamentos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Verdade que recebe e envia anda no mandamento: amor não é sentimento solto, é andar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Amor consiste em andar"
+      },
+      {
+        "id": "b",
+        "text": "Amor é só sentimento solto"
+      },
+      {
+        "id": "c",
+        "text": "Mandamento dispensa o amor"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: o amor se descreve como andar segundo os mandamentos.",
+    "feedbackWrong": {
+      "b": "O texto define amor como andar.",
+      "c": "Amor e mandamento se interpretam mutuamente."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 João 1:6",
+    "learningObjective": "Reconhecer que o amor consiste em andar segundo os mandamentos, o mandamento ouvido desde o princípio.",
+    "evidence": [
+      "2 João 1:6"
+    ],
+    "type": "true_false",
+    "question": "O amor joanino deste versículo se esgota em um sentimento interior, sem andar.",
+    "prompt": "O amor joanino deste versículo se esgota em um sentimento interior, sem andar.",
+    "cue": "O amor joanino deste versículo se esgota em um sentimento interior, sem andar.",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "id": "cartas-joao-cam-cj-03-01",
+    "passageText": "Esse amor consiste em andarmos segundo os seus mandamentos; e esse mandamento consiste, conforme ouvistes desde o princípio, em andardes neste amor.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "feedbackCorrect": "Certo: o amor consiste em andarmos segundo os mandamentos.",
+    "feedbackWrong": {
+      "true": "João define o amor como andar, não como sentimento solto."
+    },
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 João 1:6",
+    "learningObjective": "Reconhecer que o amor consiste em andar segundo os mandamentos, o mandamento ouvido desde o princípio.",
+    "evidence": [
+      "2 João 1:6"
+    ],
+    "type": "tap",
+    "question": "Em 2 João 1:6, toque a palavra que falta em \"Esse amor consiste em ___ segundo os seus mandamentos.\"?",
+    "prompt": "Em 2 João 1:6, toque a palavra que falta em \"Esse amor consiste em ___ segundo os seus mandamentos.\"?",
+    "cue": "Em 2 João 1:6, toque a palavra que falta em \"Esse amor consiste em ___ segundo os seus mandamentos.\"?",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "id": "cartas-joao-cam-cj-03-02",
+    "passageText": "Esse amor consiste em andarmos segundo os seus mandamentos; e esse mandamento consiste, conforme ouvistes desde o princípio, em andardes neste amor.",
+    "template": "Esse amor consiste em ___ segundo os seus mandamentos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "andarmos"
+      },
+      {
+        "id": "b",
+        "text": "ouvistes"
+      },
+      {
+        "id": "c",
+        "text": "consiste"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Exato: andarmos segundo os seus mandamentos.",
+    "feedbackWrong": {
+      "b": "Ouvistes marca a memória do mandamento.",
+      "c": "Consiste já está antes da lacuna."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 João 1:6",
+    "learningObjective": "Reconhecer que o amor consiste em andar segundo os mandamentos, o mandamento ouvido desde o princípio.",
+    "evidence": [
+      "2 João 1:6"
+    ],
+    "type": "choice",
+    "question": "Como 2 João 1:6 relaciona amor e mandamento?",
+    "prompt": "Como 2 João 1:6 relaciona amor e mandamento?",
+    "cue": "Como 2 João 1:6 relaciona amor e mandamento?",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "id": "cartas-joao-cam-cj-03-03",
+    "passageText": "Esse amor consiste em andarmos segundo os seus mandamentos; e esse mandamento consiste, conforme ouvistes desde o princípio, em andardes neste amor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um explica o outro: amar é andar no mandamento."
+      },
+      {
+        "id": "b",
+        "text": "O mandamento cancela o amor antigo."
+      },
+      {
+        "id": "c",
+        "text": "O amor substitui qualquer mandamento."
+      },
+      {
+        "id": "d",
+        "text": "Ouvir desde o princípio dispensa andar agora."
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: amor = andar segundo os mandamentos; mandamento = andar neste amor.",
+    "feedbackWrong": {
+      "b": "O mandamento é o mesmo desde o princípio.",
+      "c": "O amor consiste nos mandamentos.",
+      "d": "O ouvido pede andardes neste amor."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 João 1:6",
+    "learningObjective": "Reconhecer que o amor consiste em andar segundo os mandamentos, o mandamento ouvido desde o princípio.",
+    "evidence": [
+      "2 João 1:6"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de 2 João 1:6?",
+    "prompt": "Como se encadeiam os eventos de 2 João 1:6?",
+    "cue": "Como se encadeiam os eventos de 2 João 1:6?",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "id": "cartas-joao-cam-cj-03-04",
+    "passageText": "Esse amor consiste em andarmos segundo os seus mandamentos; e esse mandamento consiste, conforme ouvistes desde o princípio, em andardes neste amor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "andarmos segundo os seus mandamentos"
+      },
+      {
+        "id": "b",
+        "text": "conforme ouvistes desde o princípio"
+      },
+      {
+        "id": "c",
+        "text": "em andardes neste amor"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: andar nos mandamentos, memória do princípio, andar no amor.",
+    "feedbackWrong": {
+      "b": "Primeiro o amor como andar nos mandamentos.",
+      "c": "Andardes neste amor é o desfecho."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 João 1:6",
+    "learningObjective": "Reconhecer que o amor consiste em andar segundo os mandamentos, o mandamento ouvido desde o princípio.",
+    "evidence": [
+      "2 João 1:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"em ___ neste amor.\"",
+    "prompt": "Complete a frase: \"em ___ neste amor.\"",
+    "cue": "Complete a frase: \"em ___ neste amor.\"",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "id": "cartas-joao-cam-cj-03-05",
+    "passageText": "Esse amor consiste em andarmos segundo os seus mandamentos; e esse mandamento consiste, conforme ouvistes desde o princípio, em andardes neste amor.",
+    "template": "em ___ neste amor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "andarmos"
+      },
+      {
+        "id": "b",
+        "text": "andardes"
+      },
+      {
+        "id": "c",
+        "text": "ouvistes"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Certo: em andardes neste amor.",
+    "feedbackWrong": {
+      "a": "Andarmos está na primeira cláusula.",
+      "c": "Ouvistes descreve o passado do mandamento."
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 João 1:6",
+    "learningObjective": "Reconhecer que o amor consiste em andar segundo os mandamentos, o mandamento ouvido desde o princípio.",
+    "evidence": [
+      "2 João 1:6"
+    ],
+    "type": "connect",
+    "question": "O que 2 João 1:6 comunica que se liga a este contexto?",
+    "prompt": "O que 2 João 1:6 comunica que se liga a este contexto?",
+    "cue": "O que 2 João 1:6 comunica que se liga a este contexto?",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "id": "cartas-joao-cam-cj-03-06",
+    "passageText": "Esse amor consiste em andarmos segundo os seus mandamentos; e esse mandamento consiste, conforme ouvistes desde o princípio, em andardes neste amor.",
+    "passageA": {
+      "ref": "2 João 1:6",
+      "text": "e esse mandamento consiste, conforme ouvistes desde o princípio, em andardes neste amor."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A verdade recebida não fica no ouvido: o mesmo mandamento antigo pede andar neste amor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Mandamento antigo, andar agora"
+      },
+      {
+        "id": "b",
+        "text": "Ouvir dispensa qualquer andar"
+      },
+      {
+        "id": "c",
+        "text": "Amor novo sem mandamento"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: o ouvido desde o princípio se cumpre no andar.",
+    "feedbackWrong": {
+      "b": "Ouvistes aponta para andardes.",
+      "c": "O mandamento consiste neste amor."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 João 1:6",
+    "learningObjective": "Reconhecer que o amor consiste em andar segundo os mandamentos, o mandamento ouvido desde o princípio.",
+    "evidence": [
+      "2 João 1:6"
+    ],
+    "type": "true_false",
+    "question": "João une amor e mandamento: o mesmo amor se descreve como andar segundo os mandamentos e como andar neste amor.",
+    "prompt": "João une amor e mandamento: o mesmo amor se descreve como andar segundo os mandamentos e como andar neste amor.",
+    "cue": "João une amor e mandamento: o mesmo amor se descreve como andar segundo os mandamentos e como andar neste amor.",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "id": "cartas-joao-pro-cj-03-01",
+    "passageText": "Esse amor consiste em andarmos segundo os seus mandamentos; e esse mandamento consiste, conforme ouvistes desde o princípio, em andardes neste amor.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "feedbackCorrect": "Certo: as duas cláusulas se interpretam mutuamente.",
+    "feedbackWrong": {
+      "false": "Amor = andar nos mandamentos; mandamento = andar neste amor."
+    },
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 João 1:6",
+    "learningObjective": "Reconhecer que o amor consiste em andar segundo os mandamentos, o mandamento ouvido desde o princípio.",
+    "evidence": [
+      "2 João 1:6"
+    ],
+    "type": "tap",
+    "question": "Em 2 João 1:6, toque a palavra que falta em \"e esse ___ consiste, conforme ouvistes desde o princípio.\"?",
+    "prompt": "Em 2 João 1:6, toque a palavra que falta em \"e esse ___ consiste, conforme ouvistes desde o princípio.\"?",
+    "cue": "Em 2 João 1:6, toque a palavra que falta em \"e esse ___ consiste, conforme ouvistes desde o princípio.\"?",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "id": "cartas-joao-pro-cj-03-02",
+    "passageText": "Esse amor consiste em andarmos segundo os seus mandamentos; e esse mandamento consiste, conforme ouvistes desde o princípio, em andardes neste amor.",
+    "template": "e esse ___ consiste, conforme ouvistes desde o princípio.",
+    "options": [
+      {
+        "id": "a",
+        "text": "amor"
+      },
+      {
+        "id": "b",
+        "text": "mandamento"
+      },
+      {
+        "id": "c",
+        "text": "princípio"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Exato: esse mandamento consiste…",
+    "feedbackWrong": {
+      "a": "Amor abre o versículo; aqui é mandamento.",
+      "c": "Princípio já está depois de ouvistes."
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 João 1:6",
+    "learningObjective": "Reconhecer que o amor consiste em andar segundo os mandamentos, o mandamento ouvido desde o princípio.",
+    "evidence": [
+      "2 João 1:6"
+    ],
+    "type": "choice",
+    "question": "Que erro de leitura 2 João 1:6 corrige sobre o amor cristão?",
+    "prompt": "Que erro de leitura 2 João 1:6 corrige sobre o amor cristão?",
+    "cue": "Que erro de leitura 2 João 1:6 corrige sobre o amor cristão?",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "id": "cartas-joao-pro-cj-03-03",
+    "passageText": "Esse amor consiste em andarmos segundo os seus mandamentos; e esse mandamento consiste, conforme ouvistes desde o princípio, em andardes neste amor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tratar o amor como sentimento solto, sem andar no mandamento."
+      },
+      {
+        "id": "b",
+        "text": "Unir o amor ao andar segundo os mandamentos."
+      },
+      {
+        "id": "c",
+        "text": "Lembrar que o mandamento se ouve desde o princípio."
+      },
+      {
+        "id": "d",
+        "text": "Ver o mandamento como andardes neste amor."
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: amor aqui tem forma de andar, não de sentimento solto.",
+    "feedbackWrong": {
+      "b": "Essa união é o que o texto ensina.",
+      "c": "Ouvistes desde o princípio é fiel ao verso.",
+      "d": "Essa é a definição do próprio mandamento."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 João 1:6",
+    "learningObjective": "Reconhecer que o amor consiste em andar segundo os mandamentos, o mandamento ouvido desde o princípio.",
+    "evidence": [
+      "2 João 1:6"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de 2 João 1:6?",
+    "prompt": "Qual sequência revela o sentido de 2 João 1:6?",
+    "cue": "Qual sequência revela o sentido de 2 João 1:6?",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "id": "cartas-joao-pro-cj-03-04",
+    "passageText": "Esse amor consiste em andarmos segundo os seus mandamentos; e esse mandamento consiste, conforme ouvistes desde o princípio, em andardes neste amor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Esse amor consiste em andarmos segundo os seus mandamentos"
+      },
+      {
+        "id": "b",
+        "text": "esse mandamento consiste, conforme ouvistes desde o princípio"
+      },
+      {
+        "id": "c",
+        "text": "em andardes neste amor"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: amor como obediência, mandamento antigo, andar no amor.",
+    "feedbackWrong": {
+      "b": "O sentido abre pelo amor que consiste em andar.",
+      "c": "Andardes neste amor é a revelação final."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 João 1:6",
+    "learningObjective": "Reconhecer que o amor consiste em andar segundo os mandamentos, o mandamento ouvido desde o princípio.",
+    "evidence": [
+      "2 João 1:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Esse ___ consiste em andarmos segundo os seus mandamentos.\"",
+    "prompt": "Complete a frase: \"Esse ___ consiste em andarmos segundo os seus mandamentos.\"",
+    "cue": "Complete a frase: \"Esse ___ consiste em andarmos segundo os seus mandamentos.\"",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "id": "cartas-joao-pro-cj-03-05",
+    "passageText": "Esse amor consiste em andarmos segundo os seus mandamentos; e esse mandamento consiste, conforme ouvistes desde o princípio, em andardes neste amor.",
+    "template": "Esse ___ consiste em andarmos segundo os seus mandamentos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mandamento"
+      },
+      {
+        "id": "b",
+        "text": "amor"
+      },
+      {
+        "id": "c",
+        "text": "princípio"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Certo: Esse amor consiste em andarmos.",
+    "feedbackWrong": {
+      "a": "Mandamento é o sujeito da segunda cláusula.",
+      "c": "Princípio marca o tempo do ouvir."
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 João 1:6",
+    "learningObjective": "Reconhecer que o amor consiste em andar segundo os mandamentos, o mandamento ouvido desde o princípio.",
+    "evidence": [
+      "2 João 1:6"
+    ],
+    "type": "connect",
+    "question": "O que 2 João 1:6 comunica que se liga a este contexto?",
+    "prompt": "O que 2 João 1:6 comunica que se liga a este contexto?",
+    "cue": "O que 2 João 1:6 comunica que se liga a este contexto?",
+    "trail": "cartas-joao",
+    "section": "cj-03",
+    "id": "cartas-joao-pro-cj-03-06",
+    "passageText": "Esse amor consiste em andarmos segundo os seus mandamentos; e esse mandamento consiste, conforme ouvistes desde o princípio, em andardes neste amor.",
+    "passageA": {
+      "ref": "2 João 1:6",
+      "text": "Esse amor consiste em andarmos segundo os seus mandamentos; e esse mandamento consiste, conforme ouvistes desde o princípio, em andardes neste amor."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Quem recebe e envia a verdade não improvisam o amor: andam no mandamento já ouvido."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Verdade anda no mandamento"
+      },
+      {
+        "id": "b",
+        "text": "Verdade vive de sentimento solto"
+      },
+      {
+        "id": "c",
+        "text": "Mandamento é só memória antiga"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: a verdade se verifica no andar do mandamento-amor.",
+    "feedbackWrong": {
+      "b": "Amor aqui é andar, não sentimento solto.",
+      "c": "O ouvido antigo pede andar presente."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 João 5:13",
+    "learningObjective": "Reconhecer que João escreve aos que creem no nome do Filho para que saibam que têm a vida eterna.",
+    "evidence": [
+      "1 João 5:13"
+    ],
+    "type": "true_false",
+    "question": "João escreve essas coisas para que saibais que tendes a vida eterna.",
+    "prompt": "João escreve essas coisas para que saibais que tendes a vida eterna.",
+    "cue": "João escreve essas coisas para que saibais que tendes a vida eterna.",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "id": "cartas-joao-sem-cj-boss-01",
+    "passageText": "Essas coisas vos escrevo, para que saibais que tendes a vida eterna, escrevo a vós que credes no nome do Filho de Deus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "feedbackCorrect": "Certo: esse é o propósito declarado em 1 João 5:13.",
+    "feedbackWrong": {
+      "false": "Releia: para que saibais que tendes a vida eterna."
+    },
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 João 5:13",
+    "learningObjective": "Reconhecer que João escreve aos que creem no nome do Filho para que saibam que têm a vida eterna.",
+    "evidence": [
+      "1 João 5:13"
+    ],
+    "type": "tap",
+    "question": "Em 1 João 5:13, toque a palavra que falta em \"para que saibais que tendes a ___ eterna.\"?",
+    "prompt": "Em 1 João 5:13, toque a palavra que falta em \"para que saibais que tendes a ___ eterna.\"?",
+    "cue": "Em 1 João 5:13, toque a palavra que falta em \"para que saibais que tendes a ___ eterna.\"?",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "id": "cartas-joao-sem-cj-boss-02",
+    "passageText": "Essas coisas vos escrevo, para que saibais que tendes a vida eterna, escrevo a vós que credes no nome do Filho de Deus.",
+    "template": "para que saibais que tendes a ___ eterna.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vida"
+      },
+      {
+        "id": "b",
+        "text": "nome"
+      },
+      {
+        "id": "c",
+        "text": "Filho"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Exato: tendes a vida eterna.",
+    "feedbackWrong": {
+      "b": "Nome aparece na fé no Filho.",
+      "c": "Filho é em quem se crê, não esta lacuna."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 João 5:13",
+    "learningObjective": "Reconhecer que João escreve aos que creem no nome do Filho para que saibam que têm a vida eterna.",
+    "evidence": [
+      "1 João 5:13"
+    ],
+    "type": "choice",
+    "question": "A quem 1 João 5:13 diz que João escreve?",
+    "prompt": "A quem 1 João 5:13 diz que João escreve?",
+    "cue": "A quem 1 João 5:13 diz que João escreve?",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "id": "cartas-joao-sem-cj-boss-03",
+    "passageText": "Essas coisas vos escrevo, para que saibais que tendes a vida eterna, escrevo a vós que credes no nome do Filho de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A vós que credes no nome do Filho de Deus."
+      },
+      {
+        "id": "b",
+        "text": "Só a quem ainda não crê em nenhum nome."
+      },
+      {
+        "id": "c",
+        "text": "A quem duvida que Deus tenha um Filho."
+      },
+      {
+        "id": "d",
+        "text": "A quem busca vida eterna fora do Filho."
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: escrevo a vós que credes no nome do Filho.",
+    "feedbackWrong": {
+      "b": "O texto se dirige aos que já creem.",
+      "c": "Os destinatários creem no Filho de Deus.",
+      "d": "A vida eterna está ligada ao nome do Filho."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 João 5:13",
+    "learningObjective": "Reconhecer que João escreve aos que creem no nome do Filho para que saibam que têm a vida eterna.",
+    "evidence": [
+      "1 João 5:13"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em 1 João 5:13?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 1 João 5:13?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 1 João 5:13?",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "id": "cartas-joao-sem-cj-boss-04",
+    "passageText": "Essas coisas vos escrevo, para que saibais que tendes a vida eterna, escrevo a vós que credes no nome do Filho de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Essas coisas vos escrevo"
+      },
+      {
+        "id": "b",
+        "text": "para que saibais que tendes a vida eterna"
+      },
+      {
+        "id": "c",
+        "text": "escrevo a vós que credes no nome do Filho de Deus"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: o escrito, o propósito de saber, os que creem.",
+    "feedbackWrong": {
+      "b": "O versículo começa por Essas coisas vos escrevo.",
+      "c": "Os que creem fecham a frase."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 João 5:13",
+    "learningObjective": "Reconhecer que João escreve aos que creem no nome do Filho para que saibam que têm a vida eterna.",
+    "evidence": [
+      "1 João 5:13"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"escrevo a vós que credes no ___ do Filho de Deus.\"",
+    "prompt": "Complete a frase: \"escrevo a vós que credes no ___ do Filho de Deus.\"",
+    "cue": "Complete a frase: \"escrevo a vós que credes no ___ do Filho de Deus.\"",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "id": "cartas-joao-sem-cj-boss-05",
+    "passageText": "Essas coisas vos escrevo, para que saibais que tendes a vida eterna, escrevo a vós que credes no nome do Filho de Deus.",
+    "template": "escrevo a vós que credes no ___ do Filho de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vida"
+      },
+      {
+        "id": "b",
+        "text": "nome"
+      },
+      {
+        "id": "c",
+        "text": "coisas"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Certo: credes no nome do Filho de Deus.",
+    "feedbackWrong": {
+      "a": "Vida é o que se tem, não esta lacuna.",
+      "c": "Coisas é o objeto do escrever."
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 João 5:13",
+    "learningObjective": "Reconhecer que João escreve aos que creem no nome do Filho para que saibam que têm a vida eterna.",
+    "evidence": [
+      "1 João 5:13"
+    ],
+    "type": "connect",
+    "question": "O que 1 João 5:13 comunica que se liga a este contexto?",
+    "prompt": "O que 1 João 5:13 comunica que se liga a este contexto?",
+    "cue": "O que 1 João 5:13 comunica que se liga a este contexto?",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "id": "cartas-joao-sem-cj-boss-06",
+    "passageText": "Essas coisas vos escrevo, para que saibais que tendes a vida eterna, escrevo a vós que credes no nome do Filho de Deus.",
+    "passageA": {
+      "ref": "1 João 5:13",
+      "text": "Essas coisas vos escrevo, para que saibais que tendes a vida eterna, escrevo a vós que credes no nome do Filho de Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Revisão: luz, amor e mandamento para que saibais que tendes a vida eterna em o nome do Filho."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Saber que tendes vida eterna"
+      },
+      {
+        "id": "b",
+        "text": "Duvidar para sempre da vida"
+      },
+      {
+        "id": "c",
+        "text": "Crer em qualquer nome"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: o escrito visa o saber da vida eterna.",
+    "feedbackWrong": {
+      "b": "O propósito é saibais, não a dúvida permanente.",
+      "c": "O nome é o do Filho de Deus."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 João 5:13",
+    "learningObjective": "Reconhecer que João escreve aos que creem no nome do Filho para que saibam que têm a vida eterna.",
+    "evidence": [
+      "1 João 5:13"
+    ],
+    "type": "true_false",
+    "question": "João escreve 1 João 5:13 somente a quem ainda não crê, para que passem a crer.",
+    "prompt": "João escreve 1 João 5:13 somente a quem ainda não crê, para que passem a crer.",
+    "cue": "João escreve 1 João 5:13 somente a quem ainda não crê, para que passem a crer.",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "id": "cartas-joao-cam-cj-boss-01",
+    "passageText": "Essas coisas vos escrevo, para que saibais que tendes a vida eterna, escrevo a vós que credes no nome do Filho de Deus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "feedbackCorrect": "Certo: ele escreve a vós que já credes.",
+    "feedbackWrong": {
+      "true": "O destinatário é quem já crê no nome do Filho."
+    },
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 João 5:13",
+    "learningObjective": "Reconhecer que João escreve aos que creem no nome do Filho para que saibam que têm a vida eterna.",
+    "evidence": [
+      "1 João 5:13"
+    ],
+    "type": "tap",
+    "question": "Em 1 João 5:13, toque a palavra que falta em \"escrevo a vós que ___ no nome do Filho de Deus.\"?",
+    "prompt": "Em 1 João 5:13, toque a palavra que falta em \"escrevo a vós que ___ no nome do Filho de Deus.\"?",
+    "cue": "Em 1 João 5:13, toque a palavra que falta em \"escrevo a vós que ___ no nome do Filho de Deus.\"?",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "id": "cartas-joao-cam-cj-boss-02",
+    "passageText": "Essas coisas vos escrevo, para que saibais que tendes a vida eterna, escrevo a vós que credes no nome do Filho de Deus.",
+    "template": "escrevo a vós que ___ no nome do Filho de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "saibais"
+      },
+      {
+        "id": "b",
+        "text": "credes"
+      },
+      {
+        "id": "c",
+        "text": "tendes"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Exato: a vós que credes.",
+    "feedbackWrong": {
+      "a": "Saibais é o propósito do escrito.",
+      "c": "Tendes descreve a vida eterna."
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 João 5:13",
+    "learningObjective": "Reconhecer que João escreve aos que creem no nome do Filho para que saibam que têm a vida eterna.",
+    "evidence": [
+      "1 João 5:13"
+    ],
+    "type": "choice",
+    "question": "Qual é o propósito do escrito segundo 1 João 5:13?",
+    "prompt": "Qual é o propósito do escrito segundo 1 João 5:13?",
+    "cue": "Qual é o propósito do escrito segundo 1 João 5:13?",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "id": "cartas-joao-cam-cj-boss-03",
+    "passageText": "Essas coisas vos escrevo, para que saibais que tendes a vida eterna, escrevo a vós que credes no nome do Filho de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que os que creem saibam que têm a vida eterna."
+      },
+      {
+        "id": "b",
+        "text": "Que ninguém tenha certeza da vida eterna."
+      },
+      {
+        "id": "c",
+        "text": "Que se creia em um nome qualquer."
+      },
+      {
+        "id": "d",
+        "text": "Que se escreva só para entreter os leitores."
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: o escrito produz saber da vida eterna nos que creem.",
+    "feedbackWrong": {
+      "b": "O propósito é saibais, não a incerteza.",
+      "c": "O nome é o do Filho de Deus.",
+      "d": "Há um fim explícito: a certeza da vida."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 João 5:13",
+    "learningObjective": "Reconhecer que João escreve aos que creem no nome do Filho para que saibam que têm a vida eterna.",
+    "evidence": [
+      "1 João 5:13"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de 1 João 5:13?",
+    "prompt": "Como se encadeiam os eventos de 1 João 5:13?",
+    "cue": "Como se encadeiam os eventos de 1 João 5:13?",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "id": "cartas-joao-cam-cj-boss-04",
+    "passageText": "Essas coisas vos escrevo, para que saibais que tendes a vida eterna, escrevo a vós que credes no nome do Filho de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Essas coisas vos escrevo"
+      },
+      {
+        "id": "b",
+        "text": "para que saibais que tendes a vida eterna"
+      },
+      {
+        "id": "c",
+        "text": "a vós que credes no nome do Filho de Deus"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: o escrito visa o saber da vida nos que creem.",
+    "feedbackWrong": {
+      "b": "Primeiro o ato de escrever.",
+      "c": "Os que creem identificam os destinatários no fim."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 João 5:13",
+    "learningObjective": "Reconhecer que João escreve aos que creem no nome do Filho para que saibam que têm a vida eterna.",
+    "evidence": [
+      "1 João 5:13"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"para que ___ que tendes a vida eterna.\"",
+    "prompt": "Complete a frase: \"para que ___ que tendes a vida eterna.\"",
+    "cue": "Complete a frase: \"para que ___ que tendes a vida eterna.\"",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "id": "cartas-joao-cam-cj-boss-05",
+    "passageText": "Essas coisas vos escrevo, para que saibais que tendes a vida eterna, escrevo a vós que credes no nome do Filho de Deus.",
+    "template": "para que ___ que tendes a vida eterna.",
+    "options": [
+      {
+        "id": "a",
+        "text": "escrevo"
+      },
+      {
+        "id": "b",
+        "text": "saibais"
+      },
+      {
+        "id": "c",
+        "text": "credes"
+      }
+    ],
+    "correctOptionId": "b",
+    "feedbackCorrect": "Certo: para que saibais.",
+    "feedbackWrong": {
+      "a": "Escrevo é o verbo principal, não esta lacuna.",
+      "c": "Credes descreve os destinatários."
+    },
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 João 5:13",
+    "learningObjective": "Reconhecer que João escreve aos que creem no nome do Filho para que saibam que têm a vida eterna.",
+    "evidence": [
+      "1 João 5:13"
+    ],
+    "type": "connect",
+    "question": "O que 1 João 5:13 comunica que se liga a este contexto?",
+    "prompt": "O que 1 João 5:13 comunica que se liga a este contexto?",
+    "cue": "O que 1 João 5:13 comunica que se liga a este contexto?",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "id": "cartas-joao-cam-cj-boss-06",
+    "passageText": "Essas coisas vos escrevo, para que saibais que tendes a vida eterna, escrevo a vós que credes no nome do Filho de Deus.",
+    "passageA": {
+      "ref": "1 João 5:13",
+      "text": "Essas coisas vos escrevo, para que saibais que tendes a vida eterna."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Luz, amor e mandamento não ficam soltos: o escrito quer certeza da vida eterna em quem crê."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Escrito para certeza da vida"
+      },
+      {
+        "id": "b",
+        "text": "Escrito para cultivar a dúvida"
+      },
+      {
+        "id": "c",
+        "text": "Vida eterna sem o Filho"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: o fim do escrito é saibais que tendes a vida.",
+    "feedbackWrong": {
+      "b": "Saibais aponta para certeza, não para dúvida.",
+      "c": "A vida se liga ao nome do Filho."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 João 5:13",
+    "learningObjective": "Reconhecer que João escreve aos que creem no nome do Filho para que saibam que têm a vida eterna.",
+    "evidence": [
+      "1 João 5:13"
+    ],
+    "type": "true_false",
+    "question": "A certeza da vida eterna se dirige aos que creem no nome do Filho de Deus, não a uma dúvida permanente.",
+    "prompt": "A certeza da vida eterna se dirige aos que creem no nome do Filho de Deus, não a uma dúvida permanente.",
+    "cue": "A certeza da vida eterna se dirige aos que creem no nome do Filho de Deus, não a uma dúvida permanente.",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "id": "cartas-joao-pro-cj-boss-01",
+    "passageText": "Essas coisas vos escrevo, para que saibais que tendes a vida eterna, escrevo a vós que credes no nome do Filho de Deus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "feedbackCorrect": "Certo: o escrito quer saber, nos que já creem.",
+    "feedbackWrong": {
+      "false": "Para que saibais: certeza aos que creem no Filho."
+    },
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 João 5:13",
+    "learningObjective": "Reconhecer que João escreve aos que creem no nome do Filho para que saibam que têm a vida eterna.",
+    "evidence": [
+      "1 João 5:13"
+    ],
+    "type": "tap",
+    "question": "Em 1 João 5:13, toque a palavra que falta em \"Essas ___ vos escrevo, para que saibais.\"?",
+    "prompt": "Em 1 João 5:13, toque a palavra que falta em \"Essas ___ vos escrevo, para que saibais.\"?",
+    "cue": "Em 1 João 5:13, toque a palavra que falta em \"Essas ___ vos escrevo, para que saibais.\"?",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "id": "cartas-joao-pro-cj-boss-02",
+    "passageText": "Essas coisas vos escrevo, para que saibais que tendes a vida eterna, escrevo a vós que credes no nome do Filho de Deus.",
+    "template": "Essas ___ vos escrevo, para que saibais.",
+    "options": [
+      {
+        "id": "a",
+        "text": "coisas"
+      },
+      {
+        "id": "b",
+        "text": "vida"
+      },
+      {
+        "id": "c",
+        "text": "eterna"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Exato: Essas coisas vos escrevo.",
+    "feedbackWrong": {
+      "b": "Vida é o que se tem.",
+      "c": "Eterna qualifica a vida."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 João 5:13",
+    "learningObjective": "Reconhecer que João escreve aos que creem no nome do Filho para que saibam que têm a vida eterna.",
+    "evidence": [
+      "1 João 5:13"
+    ],
+    "type": "choice",
+    "question": "Que sentido 1 João 5:13 dá à fé no nome do Filho?",
+    "prompt": "Que sentido 1 João 5:13 dá à fé no nome do Filho?",
+    "cue": "Que sentido 1 João 5:13 dá à fé no nome do Filho?",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "id": "cartas-joao-pro-cj-boss-03",
+    "passageText": "Essas coisas vos escrevo, para que saibais que tendes a vida eterna, escrevo a vós que credes no nome do Filho de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quem crê nesse nome pode saber que tem a vida eterna."
+      },
+      {
+        "id": "b",
+        "text": "Crer no Filho impede qualquer certeza da vida."
+      },
+      {
+        "id": "c",
+        "text": "A vida eterna se tem sem crer no Filho."
+      },
+      {
+        "id": "d",
+        "text": "O escrito serve só para quem recusa o nome do Filho."
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: fé no nome e saber da vida caminham juntos.",
+    "feedbackWrong": {
+      "b": "O propósito é saibais, não a incerteza.",
+      "c": "Os destinatários creem no nome do Filho.",
+      "d": "Ele escreve aos que já creem."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 João 5:13",
+    "learningObjective": "Reconhecer que João escreve aos que creem no nome do Filho para que saibam que têm a vida eterna.",
+    "evidence": [
+      "1 João 5:13"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de 1 João 5:13?",
+    "prompt": "Qual sequência revela o sentido de 1 João 5:13?",
+    "cue": "Qual sequência revela o sentido de 1 João 5:13?",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "id": "cartas-joao-pro-cj-boss-04",
+    "passageText": "Essas coisas vos escrevo, para que saibais que tendes a vida eterna, escrevo a vós que credes no nome do Filho de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Essas coisas vos escrevo"
+      },
+      {
+        "id": "b",
+        "text": "para que saibais que tendes a vida eterna"
+      },
+      {
+        "id": "c",
+        "text": "escrevo a vós que credes no nome do Filho de Deus"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: o escrito, a certeza da vida, os que creem no Filho.",
+    "feedbackWrong": {
+      "b": "O sentido começa no ato de escrever essas coisas.",
+      "c": "Os que creem identificam a quem a certeza se dirige."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 João 5:13",
+    "learningObjective": "Reconhecer que João escreve aos que creem no nome do Filho para que saibam que têm a vida eterna.",
+    "evidence": [
+      "1 João 5:13"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"para que saibais que tendes a vida ___.\"",
+    "prompt": "Complete a frase: \"para que saibais que tendes a vida ___.\"",
+    "cue": "Complete a frase: \"para que saibais que tendes a vida ___.\"",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "id": "cartas-joao-pro-cj-boss-05",
+    "passageText": "Essas coisas vos escrevo, para que saibais que tendes a vida eterna, escrevo a vós que credes no nome do Filho de Deus.",
+    "template": "para que saibais que tendes a vida ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "eterna"
+      },
+      {
+        "id": "b",
+        "text": "escrevo"
+      },
+      {
+        "id": "c",
+        "text": "nome"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: a vida eterna.",
+    "feedbackWrong": {
+      "b": "Escrevo é o verbo do autor.",
+      "c": "Nome pertence à fé no Filho."
+    },
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 João 5:13",
+    "learningObjective": "Reconhecer que João escreve aos que creem no nome do Filho para que saibam que têm a vida eterna.",
+    "evidence": [
+      "1 João 5:13"
+    ],
+    "type": "connect",
+    "question": "O que 1 João 5:13 comunica que se liga a este contexto?",
+    "prompt": "O que 1 João 5:13 comunica que se liga a este contexto?",
+    "cue": "O que 1 João 5:13 comunica que se liga a este contexto?",
+    "trail": "cartas-joao",
+    "section": "cj-boss",
+    "id": "cartas-joao-pro-cj-boss-06",
+    "passageText": "Essas coisas vos escrevo, para que saibais que tendes a vida eterna, escrevo a vós que credes no nome do Filho de Deus.",
+    "passageA": {
+      "ref": "1 João 5:13",
+      "text": "escrevo a vós que credes no nome do Filho de Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A revisão da trilha (luz, amor, mandamento) desemboca em certeza: vida eterna no nome do Filho."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Certeza no nome do Filho"
+      },
+      {
+        "id": "b",
+        "text": "Certeza fora do Filho"
+      },
+      {
+        "id": "c",
+        "text": "Escrito sem destinatário crente"
+      }
+    ],
+    "correctOptionId": "a",
+    "feedbackCorrect": "Certo: a vida eterna se sabe no nome do Filho.",
+    "feedbackWrong": {
+      "b": "O nome é o do Filho de Deus.",
+      "c": "Ele escreve a vós que credes."
+    },
+    "correctAnswer": "a"
+  }
+]

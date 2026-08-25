@@ -1,0 +1,3737 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmos 1:1-2",
+    "learningObjective": "Sair sabendo que o feliz recusa o conselho iníquo e tem prazer na lei de Jeová, dia e noite.",
+    "evidence": [
+      "Salmos 1:1",
+      "Salmos 1:2"
+    ],
+    "type": "true_false",
+    "trail": "salmos",
+    "section": "salmos-louvor-01-bem-aventurado-o-hom",
+    "id": "salmos-sem-salmos-louvor-01-bem-aventurado-o-hom-01",
+    "passageText": "Feliz é o homem que não anda segundo o conselho dos iníquos, nem no caminho dos pecadores se detém, nem na roda dos escarnecedores se assenta. Mas o seu prazer está na lei de Jeová, e na sua lei medita de dia e de noite.",
+    "question": "Feliz é o homem que não anda segundo o conselho dos iníquos.",
+    "feedbackCorrect": "Certo: o salmo abre exatamente com essa afirmação.",
+    "feedbackWrong": {
+      "false": "Releia Salmos 1:1: feliz é quem não anda nesse conselho."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "prompt": "Feliz é o homem que não anda segundo o conselho dos iníquos.",
+    "cue": "Feliz é o homem que não anda segundo o conselho dos iníquos."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmos 1:1-2",
+    "learningObjective": "Sair sabendo que o feliz recusa o conselho iníquo e tem prazer na lei de Jeová, dia e noite.",
+    "evidence": [
+      "Salmos 1:1",
+      "Salmos 1:2"
+    ],
+    "type": "tap",
+    "trail": "salmos",
+    "section": "salmos-louvor-01-bem-aventurado-o-hom",
+    "id": "salmos-sem-salmos-louvor-01-bem-aventurado-o-hom-02",
+    "passageText": "Feliz é o homem que não anda segundo o conselho dos iníquos, nem no caminho dos pecadores se detém, nem na roda dos escarnecedores se assenta. Mas o seu prazer está na lei de Jeová, e na sua lei medita de dia e de noite.",
+    "question": "Em Salmos 1:1-2, toque a palavra que falta em \"nem na roda dos ___ se assenta\"?",
+    "feedbackCorrect": "Exato: o feliz não se assenta na roda dos escarnecedores.",
+    "feedbackWrong": {
+      "a": "Iníquos aparece no conselho, não nesta lacuna da roda.",
+      "b": "Pecadores aparece no caminho, não nesta lacuna."
+    },
+    "template": "nem na roda dos ___ se assenta",
+    "options": [
+      {
+        "id": "a",
+        "text": "iníquos"
+      },
+      {
+        "id": "b",
+        "text": "pecadores"
+      },
+      {
+        "id": "c",
+        "text": "escarnecedores"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "prompt": "Em Salmos 1:1-2, toque a palavra que falta em \"nem na roda dos ___ se assenta\"?",
+    "cue": "Em Salmos 1:1-2, toque a palavra que falta em \"nem na roda dos ___ se assenta\"?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmos 1:1-2",
+    "learningObjective": "Sair sabendo que o feliz recusa o conselho iníquo e tem prazer na lei de Jeová, dia e noite.",
+    "evidence": [
+      "Salmos 1:1",
+      "Salmos 1:2"
+    ],
+    "type": "choice",
+    "trail": "salmos",
+    "section": "salmos-louvor-01-bem-aventurado-o-hom",
+    "id": "salmos-sem-salmos-louvor-01-bem-aventurado-o-hom-03",
+    "passageText": "Feliz é o homem que não anda segundo o conselho dos iníquos, nem no caminho dos pecadores se detém, nem na roda dos escarnecedores se assenta. Mas o seu prazer está na lei de Jeová, e na sua lei medita de dia e de noite.",
+    "question": "O que Salmos 1:1-2 afirma diretamente sobre o homem feliz?",
+    "feedbackCorrect": "Certo: ele não anda, não se detém e não se assenta com os ímpios.",
+    "feedbackWrong": {
+      "b": "O texto diz que ele não se detém no caminho dos pecadores.",
+      "c": "O texto recusa a roda dos escarnecedores, não a recomenda.",
+      "d": "O prazer está na lei de Jeová, de dia e de noite."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Não anda no conselho dos iníquos nem se assenta com escarnecedores."
+      },
+      {
+        "id": "b",
+        "text": "Detém-se no caminho dos pecadores para aprender com eles."
+      },
+      {
+        "id": "c",
+        "text": "Assenta-se na roda dos escarnecedores com prazer."
+      },
+      {
+        "id": "d",
+        "text": "Deixa a lei de Jeová de lado durante a noite."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "O que Salmos 1:1-2 afirma diretamente sobre o homem feliz?",
+    "cue": "O que Salmos 1:1-2 afirma diretamente sobre o homem feliz?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmos 1:1-2",
+    "learningObjective": "Sair sabendo que o feliz recusa o conselho iníquo e tem prazer na lei de Jeová, dia e noite.",
+    "evidence": [
+      "Salmos 1:1",
+      "Salmos 1:2"
+    ],
+    "type": "order",
+    "trail": "salmos",
+    "section": "salmos-louvor-01-bem-aventurado-o-hom",
+    "id": "salmos-sem-salmos-louvor-01-bem-aventurado-o-hom-04",
+    "passageText": "Feliz é o homem que não anda segundo o conselho dos iníquos, nem no caminho dos pecadores se detém, nem na roda dos escarnecedores se assenta. Mas o seu prazer está na lei de Jeová, e na sua lei medita de dia e de noite.",
+    "question": "Qual sequência mostra a ordem dos fatos em Salmos 1:1-2?",
+    "feedbackCorrect": "Certo: conselho, caminho e roda nesta ordem.",
+    "feedbackWrong": {
+      "b": "O caminho dos pecadores vem depois do conselho, não antes.",
+      "c": "A roda dos escarnecedores fecha a recusa, não a abre."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "não anda segundo o conselho dos iníquos"
+      },
+      {
+        "id": "b",
+        "text": "nem no caminho dos pecadores se detém"
+      },
+      {
+        "id": "c",
+        "text": "nem na roda dos escarnecedores se assenta"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Salmos 1:1-2?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Salmos 1:1-2?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmos 1:1-2",
+    "learningObjective": "Sair sabendo que o feliz recusa o conselho iníquo e tem prazer na lei de Jeová, dia e noite.",
+    "evidence": [
+      "Salmos 1:1",
+      "Salmos 1:2"
+    ],
+    "type": "complete",
+    "trail": "salmos",
+    "section": "salmos-louvor-01-bem-aventurado-o-hom",
+    "id": "salmos-sem-salmos-louvor-01-bem-aventurado-o-hom-05",
+    "passageText": "Feliz é o homem que não anda segundo o conselho dos iníquos, nem no caminho dos pecadores se detém, nem na roda dos escarnecedores se assenta. Mas o seu prazer está na lei de Jeová, e na sua lei medita de dia e de noite.",
+    "question": "Complete a frase: \"Mas o seu prazer está na lei de ___, e na sua lei medita de dia e de noite.\"",
+    "feedbackCorrect": "Certo: o prazer está na lei de Jeová.",
+    "feedbackWrong": {
+      "b": "Prazer é o que ele tem, não o nome de quem dá a lei.",
+      "c": "Noite é quando ele medita, não o dono da lei."
+    },
+    "template": "Mas o seu prazer está na lei de ___, e na sua lei medita de dia e de noite.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "prazer"
+      },
+      {
+        "id": "c",
+        "text": "noite"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Complete a frase: \"Mas o seu prazer está na lei de ___, e na sua lei medita de dia e de noite.\"",
+    "cue": "Complete a frase: \"Mas o seu prazer está na lei de ___, e na sua lei medita de dia e de noite.\""
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmos 1:1-2",
+    "learningObjective": "Sair sabendo que o feliz recusa o conselho iníquo e tem prazer na lei de Jeová, dia e noite.",
+    "evidence": [
+      "Salmos 1:1",
+      "Salmos 1:2"
+    ],
+    "type": "connect",
+    "trail": "salmos",
+    "section": "salmos-louvor-01-bem-aventurado-o-hom",
+    "id": "salmos-sem-salmos-louvor-01-bem-aventurado-o-hom-06",
+    "passageText": "Feliz é o homem que não anda segundo o conselho dos iníquos, nem no caminho dos pecadores se detém, nem na roda dos escarnecedores se assenta. Mas o seu prazer está na lei de Jeová, e na sua lei medita de dia e de noite.",
+    "question": "O que Salmos 1:1-2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o feliz não se assenta com escarnecedores.",
+    "feedbackWrong": {
+      "b": "O texto recusa a roda dos escarnecedores, não a recomenda.",
+      "c": "O prazer está na lei, não no conselho dos iníquos."
+    },
+    "passageA": {
+      "ref": "Salmos 1:1-2",
+      "text": "Feliz é o homem que não anda segundo o conselho dos iníquos, nem no caminho dos pecadores se detém, nem na roda dos escarnecedores se assenta. Mas o seu prazer está na lei de Jeová, e na sua lei medita de dia e de noite."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O feliz não se assenta com escarnecedores: o prazer está na lei de Jeová, dia e noite."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Prazer na lei de Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Assentar-se com escarnecedores"
+      },
+      {
+        "id": "c",
+        "text": "Andar no conselho iníquo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "O que Salmos 1:1-2 comunica que se liga a este contexto?",
+    "cue": "O que Salmos 1:1-2 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmos 1:1-2",
+    "learningObjective": "Sair sabendo que o feliz recusa o conselho iníquo e tem prazer na lei de Jeová, dia e noite.",
+    "evidence": [
+      "Salmos 1:1",
+      "Salmos 1:2"
+    ],
+    "type": "true_false",
+    "trail": "salmos",
+    "section": "salmos-louvor-01-bem-aventurado-o-hom",
+    "id": "salmos-cam-salmos-louvor-01-bem-aventurado-o-hom-01",
+    "passageText": "Feliz é o homem que não anda segundo o conselho dos iníquos, nem no caminho dos pecadores se detém, nem na roda dos escarnecedores se assenta. Mas o seu prazer está na lei de Jeová, e na sua lei medita de dia e de noite.",
+    "question": "O prazer do homem feliz está na roda dos escarnecedores, não na lei de Jeová.",
+    "feedbackCorrect": "Certo: o prazer está na lei, e ele não se assenta naquela roda.",
+    "feedbackWrong": {
+      "true": "O texto opõe o prazer na lei à roda dos escarnecedores."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "prompt": "O prazer do homem feliz está na roda dos escarnecedores, não na lei de Jeová.",
+    "cue": "O prazer do homem feliz está na roda dos escarnecedores, não na lei de Jeová."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmos 1:1-2",
+    "learningObjective": "Sair sabendo que o feliz recusa o conselho iníquo e tem prazer na lei de Jeová, dia e noite.",
+    "evidence": [
+      "Salmos 1:1",
+      "Salmos 1:2"
+    ],
+    "type": "tap",
+    "trail": "salmos",
+    "section": "salmos-louvor-01-bem-aventurado-o-hom",
+    "id": "salmos-cam-salmos-louvor-01-bem-aventurado-o-hom-02",
+    "passageText": "Feliz é o homem que não anda segundo o conselho dos iníquos, nem no caminho dos pecadores se detém, nem na roda dos escarnecedores se assenta. Mas o seu prazer está na lei de Jeová, e na sua lei medita de dia e de noite.",
+    "question": "Em Salmos 1:1-2, toque a palavra que falta em \"Mas o seu ___ está na lei de Jeová\"?",
+    "feedbackCorrect": "Exato: o que está na lei é o prazer dele.",
+    "feedbackWrong": {
+      "a": "Lei é o lugar do prazer, não o que falta nesta lacuna.",
+      "c": "Noite é o tempo da meditação, não esta palavra."
+    },
+    "template": "Mas o seu ___ está na lei de Jeová",
+    "options": [
+      {
+        "id": "a",
+        "text": "lei"
+      },
+      {
+        "id": "b",
+        "text": "prazer"
+      },
+      {
+        "id": "c",
+        "text": "noite"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Em Salmos 1:1-2, toque a palavra que falta em \"Mas o seu ___ está na lei de Jeová\"?",
+    "cue": "Em Salmos 1:1-2, toque a palavra que falta em \"Mas o seu ___ está na lei de Jeová\"?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmos 1:1-2",
+    "learningObjective": "Sair sabendo que o feliz recusa o conselho iníquo e tem prazer na lei de Jeová, dia e noite.",
+    "evidence": [
+      "Salmos 1:1",
+      "Salmos 1:2"
+    ],
+    "type": "choice",
+    "trail": "salmos",
+    "section": "salmos-louvor-01-bem-aventurado-o-hom",
+    "id": "salmos-cam-salmos-louvor-01-bem-aventurado-o-hom-03",
+    "passageText": "Feliz é o homem que não anda segundo o conselho dos iníquos, nem no caminho dos pecadores se detém, nem na roda dos escarnecedores se assenta. Mas o seu prazer está na lei de Jeová, e na sua lei medita de dia e de noite.",
+    "question": "Como Salmos 1:1-2 relaciona recusa dos ímpios e meditação na lei?",
+    "feedbackCorrect": "Certo: recusar o conselho iníquo abre espaço ao prazer na lei.",
+    "feedbackWrong": {
+      "b": "O texto não manda juntar-se aos pecadores para depois meditar.",
+      "c": "A felicidade não é status social; está ligada à lei de Jeová.",
+      "d": "Ele medita de dia e de noite, não só de dia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Recusar o conselho iníquo acompanha o prazer constante na lei."
+      },
+      {
+        "id": "b",
+        "text": "Juntar-se aos pecadores é o caminho para depois meditar."
+      },
+      {
+        "id": "c",
+        "text": "A felicidade vem do prestígio na roda, não da lei."
+      },
+      {
+        "id": "d",
+        "text": "Meditar na lei basta de dia; a noite fica livre."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Como Salmos 1:1-2 relaciona recusa dos ímpios e meditação na lei?",
+    "cue": "Como Salmos 1:1-2 relaciona recusa dos ímpios e meditação na lei?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmos 1:1-2",
+    "learningObjective": "Sair sabendo que o feliz recusa o conselho iníquo e tem prazer na lei de Jeová, dia e noite.",
+    "evidence": [
+      "Salmos 1:1",
+      "Salmos 1:2"
+    ],
+    "type": "order",
+    "trail": "salmos",
+    "section": "salmos-louvor-01-bem-aventurado-o-hom",
+    "id": "salmos-cam-salmos-louvor-01-bem-aventurado-o-hom-04",
+    "passageText": "Feliz é o homem que não anda segundo o conselho dos iníquos, nem no caminho dos pecadores se detém, nem na roda dos escarnecedores se assenta. Mas o seu prazer está na lei de Jeová, e na sua lei medita de dia e de noite.",
+    "question": "Como se encadeiam os eventos de Salmos 1:1-2?",
+    "feedbackCorrect": "Certo: recusa, depois prazer, depois meditação contínua.",
+    "feedbackWrong": {
+      "b": "O prazer na lei vem depois da recusa, não antes.",
+      "c": "Meditar de dia e de noite fecha o trecho."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Feliz é o homem que não anda segundo o conselho dos iníquos"
+      },
+      {
+        "id": "b",
+        "text": "Mas o seu prazer está na lei de Jeová"
+      },
+      {
+        "id": "c",
+        "text": "e na sua lei medita de dia e de noite"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Como se encadeiam os eventos de Salmos 1:1-2?",
+    "cue": "Como se encadeiam os eventos de Salmos 1:1-2?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmos 1:1-2",
+    "learningObjective": "Sair sabendo que o feliz recusa o conselho iníquo e tem prazer na lei de Jeová, dia e noite.",
+    "evidence": [
+      "Salmos 1:1",
+      "Salmos 1:2"
+    ],
+    "type": "complete",
+    "trail": "salmos",
+    "section": "salmos-louvor-01-bem-aventurado-o-hom",
+    "id": "salmos-cam-salmos-louvor-01-bem-aventurado-o-hom-05",
+    "passageText": "Feliz é o homem que não anda segundo o conselho dos iníquos, nem no caminho dos pecadores se detém, nem na roda dos escarnecedores se assenta. Mas o seu prazer está na lei de Jeová, e na sua lei medita de dia e de noite.",
+    "question": "Complete a frase: \"e na sua lei medita de dia e de ___\"",
+    "feedbackCorrect": "Certo: a meditação cobre dia e noite.",
+    "feedbackWrong": {
+      "a": "Dia já está na frase; a lacuna pede o outro tempo.",
+      "b": "Prazer descreve o gosto pela lei, não este tempo."
+    },
+    "template": "e na sua lei medita de dia e de ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "dia"
+      },
+      {
+        "id": "b",
+        "text": "prazer"
+      },
+      {
+        "id": "c",
+        "text": "noite"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "prompt": "Complete a frase: \"e na sua lei medita de dia e de ___\"",
+    "cue": "Complete a frase: \"e na sua lei medita de dia e de ___\""
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmos 1:1-2",
+    "learningObjective": "Sair sabendo que o feliz recusa o conselho iníquo e tem prazer na lei de Jeová, dia e noite.",
+    "evidence": [
+      "Salmos 1:1",
+      "Salmos 1:2"
+    ],
+    "type": "connect",
+    "trail": "salmos",
+    "section": "salmos-louvor-01-bem-aventurado-o-hom",
+    "id": "salmos-cam-salmos-louvor-01-bem-aventurado-o-hom-06",
+    "passageText": "Feliz é o homem que não anda segundo o conselho dos iníquos, nem no caminho dos pecadores se detém, nem na roda dos escarnecedores se assenta. Mas o seu prazer está na lei de Jeová, e na sua lei medita de dia e de noite.",
+    "question": "O que Salmos 1:1-2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: prazer na lei, dia e noite, não na roda.",
+    "feedbackWrong": {
+      "a": "O conselho dos iníquos é recusado, não celebrado.",
+      "c": "A roda dos escarnecedores não é o descanso do feliz."
+    },
+    "passageA": {
+      "ref": "Salmos 1:2",
+      "text": "Mas o seu prazer está na lei de Jeová, e na sua lei medita de dia e de noite."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O feliz não se assenta com escarnecedores: o prazer está na lei de Jeová, dia e noite."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Conselho iníquo como prazer"
+      },
+      {
+        "id": "b",
+        "text": "Lei de dia e de noite"
+      },
+      {
+        "id": "c",
+        "text": "Roda como lugar de descanso"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "O que Salmos 1:1-2 comunica que se liga a este contexto?",
+    "cue": "O que Salmos 1:1-2 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmos 1:1-2",
+    "learningObjective": "Sair sabendo que o feliz recusa o conselho iníquo e tem prazer na lei de Jeová, dia e noite.",
+    "evidence": [
+      "Salmos 1:1",
+      "Salmos 1:2"
+    ],
+    "type": "true_false",
+    "trail": "salmos",
+    "section": "salmos-louvor-01-bem-aventurado-o-hom",
+    "id": "salmos-pro-salmos-louvor-01-bem-aventurado-o-hom-01",
+    "passageText": "Feliz é o homem que não anda segundo o conselho dos iníquos, nem no caminho dos pecadores se detém, nem na roda dos escarnecedores se assenta. Mas o seu prazer está na lei de Jeová, e na sua lei medita de dia e de noite.",
+    "question": "A felicidade de Salmos 1 se mede pela recusa do conselho iníquo e pelo prazer constante na lei de Jeová.",
+    "feedbackCorrect": "Certo: o salmo liga felicidade a recusa e a meditação na lei.",
+    "feedbackWrong": {
+      "false": "O texto une recusa dos ímpios e prazer na lei de Jeová."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "prompt": "A felicidade de Salmos 1 se mede pela recusa do conselho iníquo e pelo prazer constante na lei de Jeová.",
+    "cue": "A felicidade de Salmos 1 se mede pela recusa do conselho iníquo e pelo prazer constante na lei de Jeová."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmos 1:1-2",
+    "learningObjective": "Sair sabendo que o feliz recusa o conselho iníquo e tem prazer na lei de Jeová, dia e noite.",
+    "evidence": [
+      "Salmos 1:1",
+      "Salmos 1:2"
+    ],
+    "type": "tap",
+    "trail": "salmos",
+    "section": "salmos-louvor-01-bem-aventurado-o-hom",
+    "id": "salmos-pro-salmos-louvor-01-bem-aventurado-o-hom-02",
+    "passageText": "Feliz é o homem que não anda segundo o conselho dos iníquos, nem no caminho dos pecadores se detém, nem na roda dos escarnecedores se assenta. Mas o seu prazer está na lei de Jeová, e na sua lei medita de dia e de noite.",
+    "question": "Em Salmos 1:1-2, toque a palavra que falta em \"Feliz é o ___ que não anda segundo o conselho dos iníquos\"?",
+    "feedbackCorrect": "Exato: o sujeito da felicidade é o homem descrito.",
+    "feedbackWrong": {
+      "b": "Conselho é o que ele recusa, não quem é chamado feliz.",
+      "c": "Lei é o objeto do prazer, não o sujeito da frase."
+    },
+    "template": "Feliz é o ___ que não anda segundo o conselho dos iníquos",
+    "options": [
+      {
+        "id": "a",
+        "text": "homem"
+      },
+      {
+        "id": "b",
+        "text": "conselho"
+      },
+      {
+        "id": "c",
+        "text": "lei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Em Salmos 1:1-2, toque a palavra que falta em \"Feliz é o ___ que não anda segundo o conselho dos iníquos\"?",
+    "cue": "Em Salmos 1:1-2, toque a palavra que falta em \"Feliz é o ___ que não anda segundo o conselho dos iníquos\"?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmos 1:1-2",
+    "learningObjective": "Sair sabendo que o feliz recusa o conselho iníquo e tem prazer na lei de Jeová, dia e noite.",
+    "evidence": [
+      "Salmos 1:1",
+      "Salmos 1:2"
+    ],
+    "type": "choice",
+    "trail": "salmos",
+    "section": "salmos-louvor-01-bem-aventurado-o-hom",
+    "id": "salmos-pro-salmos-louvor-01-bem-aventurado-o-hom-03",
+    "passageText": "Feliz é o homem que não anda segundo o conselho dos iníquos, nem no caminho dos pecadores se detém, nem na roda dos escarnecedores se assenta. Mas o seu prazer está na lei de Jeová, e na sua lei medita de dia e de noite.",
+    "question": "Que leitura de Salmos 1:1-2 o texto sustenta teologicamente?",
+    "feedbackCorrect": "Certo: felicidade não é a roda; é meditar na lei.",
+    "feedbackWrong": {
+      "b": "A roda dos escarnecedores é recusada, não o critério da felicidade.",
+      "c": "A lei não é opcional para o homem chamado feliz.",
+      "d": "Andar com iníquos é o que o salmo recusa, não o que fortalece."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Felicidade não é sentar-se com escarnecedores; é meditar na lei."
+      },
+      {
+        "id": "b",
+        "text": "Felicidade se mede pela popularidade na roda."
+      },
+      {
+        "id": "c",
+        "text": "A lei é opcional se o homem já se sente feliz."
+      },
+      {
+        "id": "d",
+        "text": "Andar com iníquos aprofunda a meditação na lei."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Que leitura de Salmos 1:1-2 o texto sustenta teologicamente?",
+    "cue": "Que leitura de Salmos 1:1-2 o texto sustenta teologicamente?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmos 1:1-2",
+    "learningObjective": "Sair sabendo que o feliz recusa o conselho iníquo e tem prazer na lei de Jeová, dia e noite.",
+    "evidence": [
+      "Salmos 1:1",
+      "Salmos 1:2"
+    ],
+    "type": "order",
+    "trail": "salmos",
+    "section": "salmos-louvor-01-bem-aventurado-o-hom",
+    "id": "salmos-pro-salmos-louvor-01-bem-aventurado-o-hom-04",
+    "passageText": "Feliz é o homem que não anda segundo o conselho dos iníquos, nem no caminho dos pecadores se detém, nem na roda dos escarnecedores se assenta. Mas o seu prazer está na lei de Jeová, e na sua lei medita de dia e de noite.",
+    "question": "Qual sequência revela o sentido de Salmos 1:1-2?",
+    "feedbackCorrect": "Certo: o feliz, a recusa e o prazer na lei nesta ordem.",
+    "feedbackWrong": {
+      "b": "A identidade do feliz abre o salmo, não o prazer.",
+      "c": "O prazer na lei vem depois da recusa do conselho."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Feliz é o homem"
+      },
+      {
+        "id": "b",
+        "text": "que não anda segundo o conselho dos iníquos"
+      },
+      {
+        "id": "c",
+        "text": "Mas o seu prazer está na lei de Jeová"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Qual sequência revela o sentido de Salmos 1:1-2?",
+    "cue": "Qual sequência revela o sentido de Salmos 1:1-2?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmos 1:1-2",
+    "learningObjective": "Sair sabendo que o feliz recusa o conselho iníquo e tem prazer na lei de Jeová, dia e noite.",
+    "evidence": [
+      "Salmos 1:1",
+      "Salmos 1:2"
+    ],
+    "type": "complete",
+    "trail": "salmos",
+    "section": "salmos-louvor-01-bem-aventurado-o-hom",
+    "id": "salmos-pro-salmos-louvor-01-bem-aventurado-o-hom-05",
+    "passageText": "Feliz é o homem que não anda segundo o conselho dos iníquos, nem no caminho dos pecadores se detém, nem na roda dos escarnecedores se assenta. Mas o seu prazer está na lei de Jeová, e na sua lei medita de dia e de noite.",
+    "question": "Complete a frase: \"nem no caminho dos pecadores se ___\"",
+    "feedbackCorrect": "Certo: ele não se detém nesse caminho.",
+    "feedbackWrong": {
+      "b": "Anda descreve o conselho dos iníquos, não esta lacuna.",
+      "c": "Assenta descreve a roda, não o caminho."
+    },
+    "template": "nem no caminho dos pecadores se ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "detém"
+      },
+      {
+        "id": "b",
+        "text": "anda"
+      },
+      {
+        "id": "c",
+        "text": "assenta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Complete a frase: \"nem no caminho dos pecadores se ___\"",
+    "cue": "Complete a frase: \"nem no caminho dos pecadores se ___\""
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmos 1:1-2",
+    "learningObjective": "Sair sabendo que o feliz recusa o conselho iníquo e tem prazer na lei de Jeová, dia e noite.",
+    "evidence": [
+      "Salmos 1:1",
+      "Salmos 1:2"
+    ],
+    "type": "connect",
+    "trail": "salmos",
+    "section": "salmos-louvor-01-bem-aventurado-o-hom",
+    "id": "salmos-pro-salmos-louvor-01-bem-aventurado-o-hom-06",
+    "passageText": "Feliz é o homem que não anda segundo o conselho dos iníquos, nem no caminho dos pecadores se detém, nem na roda dos escarnecedores se assenta. Mas o seu prazer está na lei de Jeová, e na sua lei medita de dia e de noite.",
+    "question": "O que Salmos 1:1-2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o feliz medita na lei de dia e de noite.",
+    "feedbackWrong": {
+      "a": "A felicidade do salmo inclui recusar o conselho iníquo.",
+      "c": "A meditação não é só quando convém; é dia e noite."
+    },
+    "passageA": {
+      "ref": "Salmos 1:1-2",
+      "text": "Feliz é o homem que não anda segundo o conselho dos iníquos, nem no caminho dos pecadores se detém, nem na roda dos escarnecedores se assenta. Mas o seu prazer está na lei de Jeová, e na sua lei medita de dia e de noite."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O feliz não se assenta com escarnecedores: o prazer está na lei de Jeová, dia e noite."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Felicidade sem recusar o conselho"
+      },
+      {
+        "id": "b",
+        "text": "Prazer na lei dia e noite"
+      },
+      {
+        "id": "c",
+        "text": "Meditação só quando convém"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "O que Salmos 1:1-2 comunica que se liga a este contexto?",
+    "cue": "O que Salmos 1:1-2 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmos 23:1-2",
+    "learningObjective": "Sair sabendo que Jeová pastoreia: nada falta a quem ele faz repousar e conduz a águas de descanso.",
+    "evidence": [
+      "Salmos 23:1",
+      "Salmos 23:2"
+    ],
+    "type": "true_false",
+    "trail": "salmos",
+    "section": "salmos-louvor-02-o-senhor-e-o-meu-pas",
+    "id": "salmos-sem-salmos-louvor-02-o-senhor-e-o-meu-pas-01",
+    "passageText": "Jeová é o meu pastor; nada me faltará. Faz-me repousar em pastos verdejantes; conduz-me às águas de descanso.",
+    "question": "Jeová é o meu pastor; nada me faltará.",
+    "feedbackCorrect": "Certo: o salmo afirma o pastor e a ausência de falta.",
+    "feedbackWrong": {
+      "false": "Releia Salmos 23:1: Jeová é o pastor e nada faltará."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "prompt": "Jeová é o meu pastor; nada me faltará.",
+    "cue": "Jeová é o meu pastor; nada me faltará."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmos 23:1-2",
+    "learningObjective": "Sair sabendo que Jeová pastoreia: nada falta a quem ele faz repousar e conduz a águas de descanso.",
+    "evidence": [
+      "Salmos 23:1",
+      "Salmos 23:2"
+    ],
+    "type": "tap",
+    "trail": "salmos",
+    "section": "salmos-louvor-02-o-senhor-e-o-meu-pas",
+    "id": "salmos-sem-salmos-louvor-02-o-senhor-e-o-meu-pas-02",
+    "passageText": "Jeová é o meu pastor; nada me faltará. Faz-me repousar em pastos verdejantes; conduz-me às águas de descanso.",
+    "question": "Em Salmos 23:1-2, toque a palavra que falta em \"___ é o meu pastor; nada me faltará\"?",
+    "feedbackCorrect": "Exato: o pastor nomeado é Jeová.",
+    "feedbackWrong": {
+      "b": "Pastor é o ofício, não o nome que abre o versículo.",
+      "c": "Nada pertence à falta, não a esta lacuna inicial."
+    },
+    "template": "___ é o meu pastor; nada me faltará",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "pastor"
+      },
+      {
+        "id": "c",
+        "text": "nada"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Em Salmos 23:1-2, toque a palavra que falta em \"___ é o meu pastor; nada me faltará\"?",
+    "cue": "Em Salmos 23:1-2, toque a palavra que falta em \"___ é o meu pastor; nada me faltará\"?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmos 23:1-2",
+    "learningObjective": "Sair sabendo que Jeová pastoreia: nada falta a quem ele faz repousar e conduz a águas de descanso.",
+    "evidence": [
+      "Salmos 23:1",
+      "Salmos 23:2"
+    ],
+    "type": "choice",
+    "trail": "salmos",
+    "section": "salmos-louvor-02-o-senhor-e-o-meu-pas",
+    "id": "salmos-sem-salmos-louvor-02-o-senhor-e-o-meu-pas-03",
+    "passageText": "Jeová é o meu pastor; nada me faltará. Faz-me repousar em pastos verdejantes; conduz-me às águas de descanso.",
+    "question": "O que Salmos 23:1-2 afirma diretamente?",
+    "feedbackCorrect": "Certo: Jeová pastoreia, faz repousar e conduz a águas.",
+    "feedbackWrong": {
+      "a": "O texto diz que nada faltará, não que tudo faltará.",
+      "c": "Ele conduz às águas de descanso, não as recusa.",
+      "d": "Os pastos são verdejantes; o texto não fala de deserto seco."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O pastor deixa faltar o necessário ao que pastoreia."
+      },
+      {
+        "id": "b",
+        "text": "Jeová faz repousar em pastos verdejantes e conduz a águas de descanso."
+      },
+      {
+        "id": "c",
+        "text": "O salmista recusa ser conduzido às águas de descanso."
+      },
+      {
+        "id": "d",
+        "text": "Os pastos descritos são secos e sem verdor."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "O que Salmos 23:1-2 afirma diretamente?",
+    "cue": "O que Salmos 23:1-2 afirma diretamente?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmos 23:1-2",
+    "learningObjective": "Sair sabendo que Jeová pastoreia: nada falta a quem ele faz repousar e conduz a águas de descanso.",
+    "evidence": [
+      "Salmos 23:1",
+      "Salmos 23:2"
+    ],
+    "type": "order",
+    "trail": "salmos",
+    "section": "salmos-louvor-02-o-senhor-e-o-meu-pas",
+    "id": "salmos-sem-salmos-louvor-02-o-senhor-e-o-meu-pas-04",
+    "passageText": "Jeová é o meu pastor; nada me faltará. Faz-me repousar em pastos verdejantes; conduz-me às águas de descanso.",
+    "question": "Qual sequência mostra a ordem dos fatos em Salmos 23:1-2?",
+    "feedbackCorrect": "Certo: pastor, ausência de falta e repouso nos pastos.",
+    "feedbackWrong": {
+      "b": "A declaração do pastor abre o salmo, não o repouso.",
+      "c": "Nada me faltará vem logo após o pastor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová é o meu pastor"
+      },
+      {
+        "id": "b",
+        "text": "nada me faltará"
+      },
+      {
+        "id": "c",
+        "text": "Faz-me repousar em pastos verdejantes"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Salmos 23:1-2?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Salmos 23:1-2?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmos 23:1-2",
+    "learningObjective": "Sair sabendo que Jeová pastoreia: nada falta a quem ele faz repousar e conduz a águas de descanso.",
+    "evidence": [
+      "Salmos 23:1",
+      "Salmos 23:2"
+    ],
+    "type": "complete",
+    "trail": "salmos",
+    "section": "salmos-louvor-02-o-senhor-e-o-meu-pas",
+    "id": "salmos-sem-salmos-louvor-02-o-senhor-e-o-meu-pas-05",
+    "passageText": "Jeová é o meu pastor; nada me faltará. Faz-me repousar em pastos verdejantes; conduz-me às águas de descanso.",
+    "question": "Complete a frase: \"conduz-me às águas de ___\"",
+    "feedbackCorrect": "Certo: as águas a que ele conduz são de descanso.",
+    "feedbackWrong": {
+      "b": "Pastos descreve o lugar do repouso, não estas águas.",
+      "c": "Pastor nomeia a Jeová, não o tipo de águas."
+    },
+    "template": "conduz-me às águas de ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "descanso"
+      },
+      {
+        "id": "b",
+        "text": "pastos"
+      },
+      {
+        "id": "c",
+        "text": "pastor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Complete a frase: \"conduz-me às águas de ___\"",
+    "cue": "Complete a frase: \"conduz-me às águas de ___\""
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmos 23:1-2",
+    "learningObjective": "Sair sabendo que Jeová pastoreia: nada falta a quem ele faz repousar e conduz a águas de descanso.",
+    "evidence": [
+      "Salmos 23:1",
+      "Salmos 23:2"
+    ],
+    "type": "connect",
+    "trail": "salmos",
+    "section": "salmos-louvor-02-o-senhor-e-o-meu-pas",
+    "id": "salmos-sem-salmos-louvor-02-o-senhor-e-o-meu-pas-06",
+    "passageText": "Jeová é o meu pastor; nada me faltará. Faz-me repousar em pastos verdejantes; conduz-me às águas de descanso.",
+    "question": "O que Salmos 23:1-2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o pastor faz repousar e nada falta.",
+    "feedbackWrong": {
+      "b": "O texto afirma que nada faltará, não o contrário.",
+      "c": "Os pastos vêm da ação de Jeová, não sem ele."
+    },
+    "passageA": {
+      "ref": "Salmos 23:1-2",
+      "text": "Jeová é o meu pastor; nada me faltará. Faz-me repousar em pastos verdejantes; conduz-me às águas de descanso."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jeová pastoreia: nada falta a quem ele faz repousar e conduz a águas de descanso."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pastor que faz repousar"
+      },
+      {
+        "id": "b",
+        "text": "Falta sem o pastor"
+      },
+      {
+        "id": "c",
+        "text": "Pastos sem Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "O que Salmos 23:1-2 comunica que se liga a este contexto?",
+    "cue": "O que Salmos 23:1-2 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmos 23:1-2",
+    "learningObjective": "Sair sabendo que Jeová pastoreia: nada falta a quem ele faz repousar e conduz a águas de descanso.",
+    "evidence": [
+      "Salmos 23:1",
+      "Salmos 23:2"
+    ],
+    "type": "true_false",
+    "trail": "salmos",
+    "section": "salmos-louvor-02-o-senhor-e-o-meu-pas",
+    "id": "salmos-cam-salmos-louvor-02-o-senhor-e-o-meu-pas-01",
+    "passageText": "Jeová é o meu pastor; nada me faltará. Faz-me repousar em pastos verdejantes; conduz-me às águas de descanso.",
+    "question": "O salmo diz que o pastor deixa faltar o necessário a quem ele conduz.",
+    "feedbackCorrect": "Certo: o texto diz que nada faltará.",
+    "feedbackWrong": {
+      "true": "Salmos 23:1 afirma o contrário: nada me faltará."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "prompt": "O salmo diz que o pastor deixa faltar o necessário a quem ele conduz.",
+    "cue": "O salmo diz que o pastor deixa faltar o necessário a quem ele conduz."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmos 23:1-2",
+    "learningObjective": "Sair sabendo que Jeová pastoreia: nada falta a quem ele faz repousar e conduz a águas de descanso.",
+    "evidence": [
+      "Salmos 23:1",
+      "Salmos 23:2"
+    ],
+    "type": "tap",
+    "trail": "salmos",
+    "section": "salmos-louvor-02-o-senhor-e-o-meu-pas",
+    "id": "salmos-cam-salmos-louvor-02-o-senhor-e-o-meu-pas-02",
+    "passageText": "Jeová é o meu pastor; nada me faltará. Faz-me repousar em pastos verdejantes; conduz-me às águas de descanso.",
+    "question": "Em Salmos 23:1-2, toque a palavra que falta em \"Faz-me ___ em pastos verdejantes\"?",
+    "feedbackCorrect": "Exato: a ação nos pastos é fazer repousar.",
+    "feedbackWrong": {
+      "a": "Conduz-me refere-se às águas, não a esta lacuna.",
+      "c": "Faltará pertence à declaração anterior, não aos pastos."
+    },
+    "template": "Faz-me ___ em pastos verdejantes",
+    "options": [
+      {
+        "id": "a",
+        "text": "conduz-me"
+      },
+      {
+        "id": "b",
+        "text": "repousar"
+      },
+      {
+        "id": "c",
+        "text": "faltará"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Em Salmos 23:1-2, toque a palavra que falta em \"Faz-me ___ em pastos verdejantes\"?",
+    "cue": "Em Salmos 23:1-2, toque a palavra que falta em \"Faz-me ___ em pastos verdejantes\"?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmos 23:1-2",
+    "learningObjective": "Sair sabendo que Jeová pastoreia: nada falta a quem ele faz repousar e conduz a águas de descanso.",
+    "evidence": [
+      "Salmos 23:1",
+      "Salmos 23:2"
+    ],
+    "type": "choice",
+    "trail": "salmos",
+    "section": "salmos-louvor-02-o-senhor-e-o-meu-pas",
+    "id": "salmos-cam-salmos-louvor-02-o-senhor-e-o-meu-pas-03",
+    "passageText": "Jeová é o meu pastor; nada me faltará. Faz-me repousar em pastos verdejantes; conduz-me às águas de descanso.",
+    "question": "Como Salmos 23:1-2 liga o pastor, a falta e o descanso?",
+    "feedbackCorrect": "Certo: quem pastoreia também faz repousar e conduz.",
+    "feedbackWrong": {
+      "b": "O descanso não é independência do pastor; ele conduz.",
+      "c": "A ausência de falta não dispensa o pastoreio de Jeová.",
+      "d": "Pastos e águas são dons da condução, não achados ao acaso."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Quem Jeová pastoreia é feito repousar e conduzido a águas."
+      },
+      {
+        "id": "b",
+        "text": "O descanso acontece quando o pastor se afasta."
+      },
+      {
+        "id": "c",
+        "text": "Nada faltar torna o pastor desnecessário."
+      },
+      {
+        "id": "d",
+        "text": "Pastos e águas aparecem por acaso, sem condução."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Como Salmos 23:1-2 liga o pastor, a falta e o descanso?",
+    "cue": "Como Salmos 23:1-2 liga o pastor, a falta e o descanso?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmos 23:1-2",
+    "learningObjective": "Sair sabendo que Jeová pastoreia: nada falta a quem ele faz repousar e conduz a águas de descanso.",
+    "evidence": [
+      "Salmos 23:1",
+      "Salmos 23:2"
+    ],
+    "type": "order",
+    "trail": "salmos",
+    "section": "salmos-louvor-02-o-senhor-e-o-meu-pas",
+    "id": "salmos-cam-salmos-louvor-02-o-senhor-e-o-meu-pas-04",
+    "passageText": "Jeová é o meu pastor; nada me faltará. Faz-me repousar em pastos verdejantes; conduz-me às águas de descanso.",
+    "question": "Como se encadeiam os eventos de Salmos 23:1-2?",
+    "feedbackCorrect": "Certo: pastor, pastos e águas nesta ordem.",
+    "feedbackWrong": {
+      "b": "A identidade do pastor vem antes dos pastos.",
+      "c": "As águas de descanso fecham o trecho, não o abrem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová é o meu pastor"
+      },
+      {
+        "id": "b",
+        "text": "Faz-me repousar em pastos verdejantes"
+      },
+      {
+        "id": "c",
+        "text": "conduz-me às águas de descanso"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Como se encadeiam os eventos de Salmos 23:1-2?",
+    "cue": "Como se encadeiam os eventos de Salmos 23:1-2?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmos 23:1-2",
+    "learningObjective": "Sair sabendo que Jeová pastoreia: nada falta a quem ele faz repousar e conduz a águas de descanso.",
+    "evidence": [
+      "Salmos 23:1",
+      "Salmos 23:2"
+    ],
+    "type": "complete",
+    "trail": "salmos",
+    "section": "salmos-louvor-02-o-senhor-e-o-meu-pas",
+    "id": "salmos-cam-salmos-louvor-02-o-senhor-e-o-meu-pas-05",
+    "passageText": "Jeová é o meu pastor; nada me faltará. Faz-me repousar em pastos verdejantes; conduz-me às águas de descanso.",
+    "question": "Complete a frase: \"nada me ___\"",
+    "feedbackCorrect": "Certo: sob este pastor, nada faltará.",
+    "feedbackWrong": {
+      "a": "Repousar descreve a ação nos pastos, não esta lacuna.",
+      "b": "Descanso qualifica as águas, não o verbo da falta."
+    },
+    "template": "nada me ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "repousar"
+      },
+      {
+        "id": "b",
+        "text": "descanso"
+      },
+      {
+        "id": "c",
+        "text": "faltará"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "prompt": "Complete a frase: \"nada me ___\"",
+    "cue": "Complete a frase: \"nada me ___\""
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmos 23:1-2",
+    "learningObjective": "Sair sabendo que Jeová pastoreia: nada falta a quem ele faz repousar e conduz a águas de descanso.",
+    "evidence": [
+      "Salmos 23:1",
+      "Salmos 23:2"
+    ],
+    "type": "connect",
+    "trail": "salmos",
+    "section": "salmos-louvor-02-o-senhor-e-o-meu-pas",
+    "id": "salmos-cam-salmos-louvor-02-o-senhor-e-o-meu-pas-06",
+    "passageText": "Jeová é o meu pastor; nada me faltará. Faz-me repousar em pastos verdejantes; conduz-me às águas de descanso.",
+    "question": "O que Salmos 23:1-2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: nada falta a quem o pastor faz repousar.",
+    "feedbackWrong": {
+      "a": "O pastor não promete abandono; ele conduz.",
+      "c": "Águas de descanso vêm da condução, não sem ela."
+    },
+    "passageA": {
+      "ref": "Salmos 23:1-2",
+      "text": "Jeová é o meu pastor; nada me faltará. Faz-me repousar em pastos verdejantes; conduz-me às águas de descanso."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jeová pastoreia: nada falta a quem ele faz repousar e conduz a águas de descanso."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pastor que promete abandono"
+      },
+      {
+        "id": "b",
+        "text": "Nada falta sob o pastor"
+      },
+      {
+        "id": "c",
+        "text": "Águas sem nenhuma condução"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "O que Salmos 23:1-2 comunica que se liga a este contexto?",
+    "cue": "O que Salmos 23:1-2 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmos 23:1-2",
+    "learningObjective": "Sair sabendo que Jeová pastoreia: nada falta a quem ele faz repousar e conduz a águas de descanso.",
+    "evidence": [
+      "Salmos 23:1",
+      "Salmos 23:2"
+    ],
+    "type": "true_false",
+    "trail": "salmos",
+    "section": "salmos-louvor-02-o-senhor-e-o-meu-pas",
+    "id": "salmos-pro-salmos-louvor-02-o-senhor-e-o-meu-pas-01",
+    "passageText": "Jeová é o meu pastor; nada me faltará. Faz-me repousar em pastos verdejantes; conduz-me às águas de descanso.",
+    "question": "Confiar em Jeová como pastor é reconhecer que descanso e provisão vêm da condução dele.",
+    "feedbackCorrect": "Certo: o salmo une pastor, ausência de falta e condução.",
+    "feedbackWrong": {
+      "false": "Repouso e águas no texto são ações do pastor, não acaso."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "prompt": "Confiar em Jeová como pastor é reconhecer que descanso e provisão vêm da condução dele.",
+    "cue": "Confiar em Jeová como pastor é reconhecer que descanso e provisão vêm da condução dele."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmos 23:1-2",
+    "learningObjective": "Sair sabendo que Jeová pastoreia: nada falta a quem ele faz repousar e conduz a águas de descanso.",
+    "evidence": [
+      "Salmos 23:1",
+      "Salmos 23:2"
+    ],
+    "type": "tap",
+    "trail": "salmos",
+    "section": "salmos-louvor-02-o-senhor-e-o-meu-pas",
+    "id": "salmos-pro-salmos-louvor-02-o-senhor-e-o-meu-pas-02",
+    "passageText": "Jeová é o meu pastor; nada me faltará. Faz-me repousar em pastos verdejantes; conduz-me às águas de descanso.",
+    "question": "Em Salmos 23:1-2, toque a palavra que falta em \"conduz-me às ___ de descanso\"?",
+    "feedbackCorrect": "Exato: ele conduz às águas de descanso.",
+    "feedbackWrong": {
+      "a": "Pastos é o lugar do repouso, não desta lacuna.",
+      "c": "Pastor nomeia a Jeová, não o destino da condução."
+    },
+    "template": "conduz-me às ___ de descanso",
+    "options": [
+      {
+        "id": "a",
+        "text": "pastos"
+      },
+      {
+        "id": "b",
+        "text": "águas"
+      },
+      {
+        "id": "c",
+        "text": "pastor"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Em Salmos 23:1-2, toque a palavra que falta em \"conduz-me às ___ de descanso\"?",
+    "cue": "Em Salmos 23:1-2, toque a palavra que falta em \"conduz-me às ___ de descanso\"?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmos 23:1-2",
+    "learningObjective": "Sair sabendo que Jeová pastoreia: nada falta a quem ele faz repousar e conduz a águas de descanso.",
+    "evidence": [
+      "Salmos 23:1",
+      "Salmos 23:2"
+    ],
+    "type": "choice",
+    "trail": "salmos",
+    "section": "salmos-louvor-02-o-senhor-e-o-meu-pas",
+    "id": "salmos-pro-salmos-louvor-02-o-senhor-e-o-meu-pas-03",
+    "passageText": "Jeová é o meu pastor; nada me faltará. Faz-me repousar em pastos verdejantes; conduz-me às águas de descanso.",
+    "question": "Que sentido teológico Salmos 23:1-2 prepara o leitor a receber?",
+    "feedbackCorrect": "Certo: provisão e descanso são dons do pastor, não autonomia.",
+    "feedbackWrong": {
+      "b": "O salmo não ensina autosuficiência; o pastor conduz.",
+      "c": "Nada faltar não é mérito próprio; é pastoreio de Jeová.",
+      "d": "As águas de descanso não são fuga de Deus; ele conduz até elas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Provisão e descanso são dons de quem pastoreia, não autonomia."
+      },
+      {
+        "id": "b",
+        "text": "O crente descansa melhor quando dispensa o pastor."
+      },
+      {
+        "id": "c",
+        "text": "Nada faltar prova mérito próprio, não pastoreio."
+      },
+      {
+        "id": "d",
+        "text": "Águas de descanso servem para fugir de Jeová."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Que sentido teológico Salmos 23:1-2 prepara o leitor a receber?",
+    "cue": "Que sentido teológico Salmos 23:1-2 prepara o leitor a receber?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmos 23:1-2",
+    "learningObjective": "Sair sabendo que Jeová pastoreia: nada falta a quem ele faz repousar e conduz a águas de descanso.",
+    "evidence": [
+      "Salmos 23:1",
+      "Salmos 23:2"
+    ],
+    "type": "order",
+    "trail": "salmos",
+    "section": "salmos-louvor-02-o-senhor-e-o-meu-pas",
+    "id": "salmos-pro-salmos-louvor-02-o-senhor-e-o-meu-pas-04",
+    "passageText": "Jeová é o meu pastor; nada me faltará. Faz-me repousar em pastos verdejantes; conduz-me às águas de descanso.",
+    "question": "Qual sequência revela o sentido de Salmos 23:1-2?",
+    "feedbackCorrect": "Certo: pastor, ausência de falta e águas de descanso.",
+    "feedbackWrong": {
+      "b": "A declaração do pastor precede a ausência de falta.",
+      "c": "As águas vêm da condução, no fim do trecho."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová é o meu pastor"
+      },
+      {
+        "id": "b",
+        "text": "nada me faltará"
+      },
+      {
+        "id": "c",
+        "text": "conduz-me às águas de descanso"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Qual sequência revela o sentido de Salmos 23:1-2?",
+    "cue": "Qual sequência revela o sentido de Salmos 23:1-2?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmos 23:1-2",
+    "learningObjective": "Sair sabendo que Jeová pastoreia: nada falta a quem ele faz repousar e conduz a águas de descanso.",
+    "evidence": [
+      "Salmos 23:1",
+      "Salmos 23:2"
+    ],
+    "type": "complete",
+    "trail": "salmos",
+    "section": "salmos-louvor-02-o-senhor-e-o-meu-pas",
+    "id": "salmos-pro-salmos-louvor-02-o-senhor-e-o-meu-pas-05",
+    "passageText": "Jeová é o meu pastor; nada me faltará. Faz-me repousar em pastos verdejantes; conduz-me às águas de descanso.",
+    "question": "Complete a frase: \"Faz-me repousar em pastos ___\"",
+    "feedbackCorrect": "Certo: os pastos do repouso são verdejantes.",
+    "feedbackWrong": {
+      "b": "Descanso qualifica as águas, não estes pastos.",
+      "c": "Pastor nomeia a Jeová, não a cor dos pastos."
+    },
+    "template": "Faz-me repousar em pastos ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "verdejantes"
+      },
+      {
+        "id": "b",
+        "text": "descanso"
+      },
+      {
+        "id": "c",
+        "text": "pastor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Complete a frase: \"Faz-me repousar em pastos ___\"",
+    "cue": "Complete a frase: \"Faz-me repousar em pastos ___\""
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmos 23:1-2",
+    "learningObjective": "Sair sabendo que Jeová pastoreia: nada falta a quem ele faz repousar e conduz a águas de descanso.",
+    "evidence": [
+      "Salmos 23:1",
+      "Salmos 23:2"
+    ],
+    "type": "connect",
+    "trail": "salmos",
+    "section": "salmos-louvor-02-o-senhor-e-o-meu-pas",
+    "id": "salmos-pro-salmos-louvor-02-o-senhor-e-o-meu-pas-06",
+    "passageText": "Jeová é o meu pastor; nada me faltará. Faz-me repousar em pastos verdejantes; conduz-me às águas de descanso.",
+    "question": "O que Salmos 23:1-2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Jeová pastoreia até as águas de descanso.",
+    "feedbackWrong": {
+      "a": "O texto não descreve um rebanho sem pastor.",
+      "c": "Faltar o necessário contradiz o versículo 1."
+    },
+    "passageA": {
+      "ref": "Salmos 23:1-2",
+      "text": "Jeová é o meu pastor; nada me faltará. Faz-me repousar em pastos verdejantes; conduz-me às águas de descanso."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jeová pastoreia: nada falta a quem ele faz repousar e conduz a águas de descanso."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Rebanho sem nenhum pastor"
+      },
+      {
+        "id": "b",
+        "text": "Jeová pastoreia até o descanso"
+      },
+      {
+        "id": "c",
+        "text": "Falta como marca do pastoreio"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "O que Salmos 23:1-2 comunica que se liga a este contexto?",
+    "cue": "O que Salmos 23:1-2 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmos 13:1-2",
+    "learningObjective": "Sair sabendo que o lamento pergunta até quando a Jeová e não esconde a demora de Deus.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 13:2"
+    ],
+    "type": "true_false",
+    "trail": "salmos",
+    "section": "salmos-lamento-01-ate-quando-senhor",
+    "id": "salmos-sem-salmos-lamento-01-ate-quando-senhor-01",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Até quando encherei a minha alma de cuidados, tendo diariamente tristeza no meu coração? Até quando sobre mim se exaltará o meu inimigo?",
+    "question": "O salmista pergunta a Jeová até quando ocultará o rosto.",
+    "feedbackCorrect": "Certo: o texto registra essa pergunta a Jeová.",
+    "feedbackWrong": {
+      "false": "Salmos 13:1 pergunta até quando ocultarás o teu rosto."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "prompt": "O salmista pergunta a Jeová até quando ocultará o rosto.",
+    "cue": "O salmista pergunta a Jeová até quando ocultará o rosto."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmos 13:1-2",
+    "learningObjective": "Sair sabendo que o lamento pergunta até quando a Jeová e não esconde a demora de Deus.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 13:2"
+    ],
+    "type": "tap",
+    "trail": "salmos",
+    "section": "salmos-lamento-01-ate-quando-senhor",
+    "id": "salmos-sem-salmos-lamento-01-ate-quando-senhor-02",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Até quando encherei a minha alma de cuidados, tendo diariamente tristeza no meu coração? Até quando sobre mim se exaltará o meu inimigo?",
+    "question": "Em Salmos 13:1-2, toque a palavra que falta em \"Até quando me ocultarás o teu ___\"?",
+    "feedbackCorrect": "Exato: o que se oculta, no lamento, é o rosto.",
+    "feedbackWrong": {
+      "b": "Alma é o que se enche de cuidados, não esta lacuna.",
+      "c": "Inimigo aparece no fim, exaltando-se, não aqui."
+    },
+    "template": "Até quando me ocultarás o teu ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "rosto"
+      },
+      {
+        "id": "b",
+        "text": "alma"
+      },
+      {
+        "id": "c",
+        "text": "inimigo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Em Salmos 13:1-2, toque a palavra que falta em \"Até quando me ocultarás o teu ___\"?",
+    "cue": "Em Salmos 13:1-2, toque a palavra que falta em \"Até quando me ocultarás o teu ___\"?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmos 13:1-2",
+    "learningObjective": "Sair sabendo que o lamento pergunta até quando a Jeová e não esconde a demora de Deus.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 13:2"
+    ],
+    "type": "choice",
+    "trail": "salmos",
+    "section": "salmos-lamento-01-ate-quando-senhor",
+    "id": "salmos-sem-salmos-lamento-01-ate-quando-senhor-03",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Até quando encherei a minha alma de cuidados, tendo diariamente tristeza no meu coração? Até quando sobre mim se exaltará o meu inimigo?",
+    "question": "O que Salmos 13:1-2 registra de forma explícita?",
+    "feedbackCorrect": "Certo: o lamento pergunta até quando a Jeová.",
+    "feedbackWrong": {
+      "b": "O texto não afirma que o inimigo já foi silenciado.",
+      "c": "Há tristeza diária no coração, não alegria contínua.",
+      "d": "O salmista não cala a demora; ele pergunta até quando."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O salmista pergunta até quando Jeová se esquecerá dele."
+      },
+      {
+        "id": "b",
+        "text": "O inimigo já foi silenciado e não se exalta mais."
+      },
+      {
+        "id": "c",
+        "text": "O coração está cheio de alegria diária, sem tristeza."
+      },
+      {
+        "id": "d",
+        "text": "O salmista recusa falar a Jeová sobre a demora."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "O que Salmos 13:1-2 registra de forma explícita?",
+    "cue": "O que Salmos 13:1-2 registra de forma explícita?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmos 13:1-2",
+    "learningObjective": "Sair sabendo que o lamento pergunta até quando a Jeová e não esconde a demora de Deus.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 13:2"
+    ],
+    "type": "order",
+    "trail": "salmos",
+    "section": "salmos-lamento-01-ate-quando-senhor",
+    "id": "salmos-sem-salmos-lamento-01-ate-quando-senhor-04",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Até quando encherei a minha alma de cuidados, tendo diariamente tristeza no meu coração? Até quando sobre mim se exaltará o meu inimigo?",
+    "question": "Qual sequência mostra a ordem dos fatos em Salmos 13:1-2?",
+    "feedbackCorrect": "Certo: esquecimento, rosto oculto e inimigo exaltado.",
+    "feedbackWrong": {
+      "b": "O esquecimento abre o lamento, não o inimigo.",
+      "c": "O rosto oculto vem antes da exaltação do inimigo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Esquecer-te-ás de mim para sempre"
+      },
+      {
+        "id": "b",
+        "text": "Até quando me ocultarás o teu rosto"
+      },
+      {
+        "id": "c",
+        "text": "Até quando sobre mim se exaltará o meu inimigo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Salmos 13:1-2?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Salmos 13:1-2?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmos 13:1-2",
+    "learningObjective": "Sair sabendo que o lamento pergunta até quando a Jeová e não esconde a demora de Deus.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 13:2"
+    ],
+    "type": "complete",
+    "trail": "salmos",
+    "section": "salmos-lamento-01-ate-quando-senhor",
+    "id": "salmos-sem-salmos-lamento-01-ate-quando-senhor-05",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Até quando encherei a minha alma de cuidados, tendo diariamente tristeza no meu coração? Até quando sobre mim se exaltará o meu inimigo?",
+    "question": "Complete a frase: \"tendo diariamente ___ no meu coração\"",
+    "feedbackCorrect": "Certo: a tristeza é diária no coração.",
+    "feedbackWrong": {
+      "b": "Cuidados enche a alma, não esta lacuna do coração.",
+      "c": "Inimigo se exalta sobre ele, não preenche esta lacuna."
+    },
+    "template": "tendo diariamente ___ no meu coração",
+    "options": [
+      {
+        "id": "a",
+        "text": "tristeza"
+      },
+      {
+        "id": "b",
+        "text": "cuidados"
+      },
+      {
+        "id": "c",
+        "text": "inimigo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Complete a frase: \"tendo diariamente ___ no meu coração\"",
+    "cue": "Complete a frase: \"tendo diariamente ___ no meu coração\""
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmos 13:1-2",
+    "learningObjective": "Sair sabendo que o lamento pergunta até quando a Jeová e não esconde a demora de Deus.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 13:2"
+    ],
+    "type": "connect",
+    "trail": "salmos",
+    "section": "salmos-lamento-01-ate-quando-senhor",
+    "id": "salmos-sem-salmos-lamento-01-ate-quando-senhor-06",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Até quando encherei a minha alma de cuidados, tendo diariamente tristeza no meu coração? Até quando sobre mim se exaltará o meu inimigo?",
+    "question": "O que Salmos 13:1-2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o lamento grita até quando a Jeová.",
+    "feedbackWrong": {
+      "b": "O salmo não escolhe silêncio educado; pergunta.",
+      "c": "O esquecimento não é aceito em paz; é questionado."
+    },
+    "passageA": {
+      "ref": "Salmos 13:1-2",
+      "text": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Até quando encherei a minha alma de cuidados, tendo diariamente tristeza no meu coração? Até quando sobre mim se exaltará o meu inimigo?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O lamento é fé que grita: até quando, Jeová — o salmo não esconde a demora de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Lamento que grita até quando"
+      },
+      {
+        "id": "b",
+        "text": "Silêncio educado sem pergunta"
+      },
+      {
+        "id": "c",
+        "text": "Esquecimento já aceito em paz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "O que Salmos 13:1-2 comunica que se liga a este contexto?",
+    "cue": "O que Salmos 13:1-2 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmos 13:1-2",
+    "learningObjective": "Sair sabendo que o lamento pergunta até quando a Jeová e não esconde a demora de Deus.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 13:2"
+    ],
+    "type": "true_false",
+    "trail": "salmos",
+    "section": "salmos-lamento-01-ate-quando-senhor",
+    "id": "salmos-cam-salmos-lamento-01-ate-quando-senhor-01",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Até quando encherei a minha alma de cuidados, tendo diariamente tristeza no meu coração? Até quando sobre mim se exaltará o meu inimigo?",
+    "question": "O salmo esconde a demora de Deus e evita perguntar até quando.",
+    "feedbackCorrect": "Certo: o texto repete até quando e não esconde a demora.",
+    "feedbackWrong": {
+      "true": "Salmos 13 pergunta até quando quatro vezes; não esconde."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "prompt": "O salmo esconde a demora de Deus e evita perguntar até quando.",
+    "cue": "O salmo esconde a demora de Deus e evita perguntar até quando."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmos 13:1-2",
+    "learningObjective": "Sair sabendo que o lamento pergunta até quando a Jeová e não esconde a demora de Deus.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 13:2"
+    ],
+    "type": "tap",
+    "trail": "salmos",
+    "section": "salmos-lamento-01-ate-quando-senhor",
+    "id": "salmos-cam-salmos-lamento-01-ate-quando-senhor-02",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Até quando encherei a minha alma de cuidados, tendo diariamente tristeza no meu coração? Até quando sobre mim se exaltará o meu inimigo?",
+    "question": "Em Salmos 13:1-2, toque a palavra que falta em \"Até quando encherei a minha ___ de cuidados\"?",
+    "feedbackCorrect": "Exato: quem se enche de cuidados é a alma.",
+    "feedbackWrong": {
+      "a": "Rosto é o que se oculta, não o que se enche.",
+      "c": "Coração tem tristeza diária, não esta lacuna."
+    },
+    "template": "Até quando encherei a minha ___ de cuidados",
+    "options": [
+      {
+        "id": "a",
+        "text": "rosto"
+      },
+      {
+        "id": "b",
+        "text": "alma"
+      },
+      {
+        "id": "c",
+        "text": "coração"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Em Salmos 13:1-2, toque a palavra que falta em \"Até quando encherei a minha ___ de cuidados\"?",
+    "cue": "Em Salmos 13:1-2, toque a palavra que falta em \"Até quando encherei a minha ___ de cuidados\"?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmos 13:1-2",
+    "learningObjective": "Sair sabendo que o lamento pergunta até quando a Jeová e não esconde a demora de Deus.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 13:2"
+    ],
+    "type": "choice",
+    "trail": "salmos",
+    "section": "salmos-lamento-01-ate-quando-senhor",
+    "id": "salmos-cam-salmos-lamento-01-ate-quando-senhor-03",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Até quando encherei a minha alma de cuidados, tendo diariamente tristeza no meu coração? Até quando sobre mim se exaltará o meu inimigo?",
+    "question": "Como Salmos 13:1-2 encadeia o lamento diante de Jeová?",
+    "feedbackCorrect": "Certo: demora, rosto oculto, cuidados e inimigo se somam.",
+    "feedbackWrong": {
+      "b": "O texto não trata a demora como assunto fechado.",
+      "c": "Tristeza e inimigo fazem parte do mesmo grito, não o excluem.",
+      "d": "O lamento é dirigido a Jeová, não a um silêncio vazio."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Esquecimento, rosto oculto, cuidados e inimigo entram no mesmo grito."
+      },
+      {
+        "id": "b",
+        "text": "A demora de Deus fica de fora porque já foi resolvida."
+      },
+      {
+        "id": "c",
+        "text": "Tristeza no coração impede falar do inimigo."
+      },
+      {
+        "id": "d",
+        "text": "O lamento se dirige a ninguém, só descreve o humor."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Como Salmos 13:1-2 encadeia o lamento diante de Jeová?",
+    "cue": "Como Salmos 13:1-2 encadeia o lamento diante de Jeová?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmos 13:1-2",
+    "learningObjective": "Sair sabendo que o lamento pergunta até quando a Jeová e não esconde a demora de Deus.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 13:2"
+    ],
+    "type": "order",
+    "trail": "salmos",
+    "section": "salmos-lamento-01-ate-quando-senhor",
+    "id": "salmos-cam-salmos-lamento-01-ate-quando-senhor-04",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Até quando encherei a minha alma de cuidados, tendo diariamente tristeza no meu coração? Até quando sobre mim se exaltará o meu inimigo?",
+    "question": "Como se encadeiam os eventos de Salmos 13:1-2?",
+    "feedbackCorrect": "Certo: esquecimento, cuidados na alma e inimigo.",
+    "feedbackWrong": {
+      "b": "O esquecimento vem primeiro, não os cuidados.",
+      "c": "O inimigo fecha o trecho, depois da alma cheia de cuidados."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Esquecer-te-ás de mim para sempre"
+      },
+      {
+        "id": "b",
+        "text": "encherei a minha alma de cuidados"
+      },
+      {
+        "id": "c",
+        "text": "sobre mim se exaltará o meu inimigo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Como se encadeiam os eventos de Salmos 13:1-2?",
+    "cue": "Como se encadeiam os eventos de Salmos 13:1-2?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmos 13:1-2",
+    "learningObjective": "Sair sabendo que o lamento pergunta até quando a Jeová e não esconde a demora de Deus.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 13:2"
+    ],
+    "type": "complete",
+    "trail": "salmos",
+    "section": "salmos-lamento-01-ate-quando-senhor",
+    "id": "salmos-cam-salmos-lamento-01-ate-quando-senhor-05",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Até quando encherei a minha alma de cuidados, tendo diariamente tristeza no meu coração? Até quando sobre mim se exaltará o meu inimigo?",
+    "question": "Complete a frase: \"Até quando sobre mim se exaltará o meu ___\"",
+    "feedbackCorrect": "Certo: quem se exalta sobre ele é o inimigo.",
+    "feedbackWrong": {
+      "a": "Rosto é o que Jeová oculta, não quem se exalta.",
+      "b": "Alma é quem se enche de cuidados, não esta lacuna."
+    },
+    "template": "Até quando sobre mim se exaltará o meu ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "rosto"
+      },
+      {
+        "id": "b",
+        "text": "alma"
+      },
+      {
+        "id": "c",
+        "text": "inimigo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "prompt": "Complete a frase: \"Até quando sobre mim se exaltará o meu ___\"",
+    "cue": "Complete a frase: \"Até quando sobre mim se exaltará o meu ___\""
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmos 13:1-2",
+    "learningObjective": "Sair sabendo que o lamento pergunta até quando a Jeová e não esconde a demora de Deus.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 13:2"
+    ],
+    "type": "connect",
+    "trail": "salmos",
+    "section": "salmos-lamento-01-ate-quando-senhor",
+    "id": "salmos-cam-salmos-lamento-01-ate-quando-senhor-06",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Até quando encherei a minha alma de cuidados, tendo diariamente tristeza no meu coração? Até quando sobre mim se exaltará o meu inimigo?",
+    "question": "O que Salmos 13:1-2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o salmo não esconde a demora de Deus.",
+    "feedbackWrong": {
+      "a": "O texto não descreve uma espera muda.",
+      "c": "O inimigo exaltado faz parte do lamento, não o apaga."
+    },
+    "passageA": {
+      "ref": "Salmos 13:1-2",
+      "text": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Até quando encherei a minha alma de cuidados, tendo diariamente tristeza no meu coração? Até quando sobre mim se exaltará o meu inimigo?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O lamento é fé que grita: até quando, Jeová — o salmo não esconde a demora de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Espera muda sem até quando"
+      },
+      {
+        "id": "b",
+        "text": "Demora de Deus sem esconder"
+      },
+      {
+        "id": "c",
+        "text": "Inimigo que cancela o lamento"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "O que Salmos 13:1-2 comunica que se liga a este contexto?",
+    "cue": "O que Salmos 13:1-2 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmos 13:1-2",
+    "learningObjective": "Sair sabendo que o lamento pergunta até quando a Jeová e não esconde a demora de Deus.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 13:2"
+    ],
+    "type": "true_false",
+    "trail": "salmos",
+    "section": "salmos-lamento-01-ate-quando-senhor",
+    "id": "salmos-pro-salmos-lamento-01-ate-quando-senhor-01",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Até quando encherei a minha alma de cuidados, tendo diariamente tristeza no meu coração? Até quando sobre mim se exaltará o meu inimigo?",
+    "question": "Perguntar até quando a Jeová é fé que recusa esconder a demora de Deus.",
+    "feedbackCorrect": "Certo: o lamento é grito de fé, não ausência dela.",
+    "feedbackWrong": {
+      "false": "O salmo dirige o até quando a Jeová; isso é fé que clama."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "prompt": "Perguntar até quando a Jeová é fé que recusa esconder a demora de Deus.",
+    "cue": "Perguntar até quando a Jeová é fé que recusa esconder a demora de Deus."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmos 13:1-2",
+    "learningObjective": "Sair sabendo que o lamento pergunta até quando a Jeová e não esconde a demora de Deus.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 13:2"
+    ],
+    "type": "tap",
+    "trail": "salmos",
+    "section": "salmos-lamento-01-ate-quando-senhor",
+    "id": "salmos-pro-salmos-lamento-01-ate-quando-senhor-02",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Até quando encherei a minha alma de cuidados, tendo diariamente tristeza no meu coração? Até quando sobre mim se exaltará o meu inimigo?",
+    "question": "Em Salmos 13:1-2, toque a palavra que falta em \"Esquecer-te-ás de mim para ___\"?",
+    "feedbackCorrect": "Exato: o medo nomeado é o esquecimento para sempre.",
+    "feedbackWrong": {
+      "a": "Rosto pertence à pergunta seguinte, não a esta lacuna.",
+      "c": "Inimigo fecha o salmo, não completa para sempre."
+    },
+    "template": "Esquecer-te-ás de mim para ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "rosto"
+      },
+      {
+        "id": "b",
+        "text": "sempre"
+      },
+      {
+        "id": "c",
+        "text": "inimigo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Em Salmos 13:1-2, toque a palavra que falta em \"Esquecer-te-ás de mim para ___\"?",
+    "cue": "Em Salmos 13:1-2, toque a palavra que falta em \"Esquecer-te-ás de mim para ___\"?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmos 13:1-2",
+    "learningObjective": "Sair sabendo que o lamento pergunta até quando a Jeová e não esconde a demora de Deus.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 13:2"
+    ],
+    "type": "choice",
+    "trail": "salmos",
+    "section": "salmos-lamento-01-ate-quando-senhor",
+    "id": "salmos-pro-salmos-lamento-01-ate-quando-senhor-03",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Até quando encherei a minha alma de cuidados, tendo diariamente tristeza no meu coração? Até quando sobre mim se exaltará o meu inimigo?",
+    "question": "Que leitura de Salmos 13:1-2 o texto sustenta sobre orar a demora?",
+    "feedbackCorrect": "Certo: trazer a demora a Jeová é fé, não incredulidade educada.",
+    "feedbackWrong": {
+      "b": "Calar a demora não é o modelo deste salmo.",
+      "c": "O inimigo exaltado não prova que Jeová deixou de ser o interlocutor.",
+      "d": "O lamento não é teatro; é pergunta dirigida a Jeová."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Trazer a demora a Jeová é fé que grita, não falta de fé."
+      },
+      {
+        "id": "b",
+        "text": "Fé madura cala a demora e nunca pergunta até quando."
+      },
+      {
+        "id": "c",
+        "text": "O inimigo exaltado prova que Jeová não ouve lamento."
+      },
+      {
+        "id": "d",
+        "text": "O até quando é só retórica, sem endereço em Deus."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Que leitura de Salmos 13:1-2 o texto sustenta sobre orar a demora?",
+    "cue": "Que leitura de Salmos 13:1-2 o texto sustenta sobre orar a demora?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmos 13:1-2",
+    "learningObjective": "Sair sabendo que o lamento pergunta até quando a Jeová e não esconde a demora de Deus.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 13:2"
+    ],
+    "type": "order",
+    "trail": "salmos",
+    "section": "salmos-lamento-01-ate-quando-senhor",
+    "id": "salmos-pro-salmos-lamento-01-ate-quando-senhor-04",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Até quando encherei a minha alma de cuidados, tendo diariamente tristeza no meu coração? Até quando sobre mim se exaltará o meu inimigo?",
+    "question": "Qual sequência revela o sentido de Salmos 13:1-2?",
+    "feedbackCorrect": "Certo: o nome de Jeová, o rosto oculto e a tristeza diária.",
+    "feedbackWrong": {
+      "b": "O vocativo a Jeová abre o lamento.",
+      "c": "A tristeza diária vem depois da pergunta pelo rosto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Até quando, Jeová"
+      },
+      {
+        "id": "b",
+        "text": "ocultarás o teu rosto"
+      },
+      {
+        "id": "c",
+        "text": "tendo diariamente tristeza no meu coração"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Qual sequência revela o sentido de Salmos 13:1-2?",
+    "cue": "Qual sequência revela o sentido de Salmos 13:1-2?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmos 13:1-2",
+    "learningObjective": "Sair sabendo que o lamento pergunta até quando a Jeová e não esconde a demora de Deus.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 13:2"
+    ],
+    "type": "complete",
+    "trail": "salmos",
+    "section": "salmos-lamento-01-ate-quando-senhor",
+    "id": "salmos-pro-salmos-lamento-01-ate-quando-senhor-05",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Até quando encherei a minha alma de cuidados, tendo diariamente tristeza no meu coração? Até quando sobre mim se exaltará o meu inimigo?",
+    "question": "Complete a frase: \"Até quando, ___! Esquecer-te-ás de mim para sempre?\"",
+    "feedbackCorrect": "Certo: o lamento se dirige a Jeová.",
+    "feedbackWrong": {
+      "b": "Rosto é o que se oculta, não o vocativo.",
+      "c": "Inimigo é quem se exalta, não a quem se clama."
+    },
+    "template": "Até quando, ___! Esquecer-te-ás de mim para sempre?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "rosto"
+      },
+      {
+        "id": "c",
+        "text": "inimigo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Complete a frase: \"Até quando, ___! Esquecer-te-ás de mim para sempre?\"",
+    "cue": "Complete a frase: \"Até quando, ___! Esquecer-te-ás de mim para sempre?\""
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmos 13:1-2",
+    "learningObjective": "Sair sabendo que o lamento pergunta até quando a Jeová e não esconde a demora de Deus.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 13:2"
+    ],
+    "type": "connect",
+    "trail": "salmos",
+    "section": "salmos-lamento-01-ate-quando-senhor",
+    "id": "salmos-pro-salmos-lamento-01-ate-quando-senhor-06",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Até quando encherei a minha alma de cuidados, tendo diariamente tristeza no meu coração? Até quando sobre mim se exaltará o meu inimigo?",
+    "question": "O que Salmos 13:1-2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: fé que grita até quando, sem esconder a demora.",
+    "feedbackWrong": {
+      "a": "Este salmo não ensina fé muda.",
+      "c": "Aceitar o inimigo exaltado não é o convite do texto."
+    },
+    "passageA": {
+      "ref": "Salmos 13:1-2",
+      "text": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Até quando encherei a minha alma de cuidados, tendo diariamente tristeza no meu coração? Até quando sobre mim se exaltará o meu inimigo?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O lamento é fé que grita: até quando, Jeová — o salmo não esconde a demora de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fé que nunca pergunta"
+      },
+      {
+        "id": "b",
+        "text": "Fé que grita até quando"
+      },
+      {
+        "id": "c",
+        "text": "Aceitar o inimigo exaltado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "O que Salmos 13:1-2 comunica que se liga a este contexto?",
+    "cue": "O que Salmos 13:1-2 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmos 51:10",
+    "learningObjective": "Sair sabendo que o pedido é criação: coração limpo e espírito estável, não conserto superficial.",
+    "evidence": [
+      "Salmos 51:10"
+    ],
+    "type": "true_false",
+    "trail": "salmos",
+    "section": "salmos-lamento-02-criai-em-mim-um-cora",
+    "id": "salmos-sem-salmos-lamento-02-criai-em-mim-um-cora-01",
+    "passageText": "Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável.",
+    "question": "O salmista pede a Deus: cria em mim um coração limpo.",
+    "feedbackCorrect": "Certo: o versículo abre com esse pedido de criação.",
+    "feedbackWrong": {
+      "false": "Releia Salmos 51:10: Cria em mim, ó Deus, um coração limpo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "prompt": "O salmista pede a Deus: cria em mim um coração limpo.",
+    "cue": "O salmista pede a Deus: cria em mim um coração limpo."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmos 51:10",
+    "learningObjective": "Sair sabendo que o pedido é criação: coração limpo e espírito estável, não conserto superficial.",
+    "evidence": [
+      "Salmos 51:10"
+    ],
+    "type": "tap",
+    "trail": "salmos",
+    "section": "salmos-lamento-02-criai-em-mim-um-cora",
+    "id": "salmos-sem-salmos-lamento-02-criai-em-mim-um-cora-02",
+    "passageText": "Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável.",
+    "question": "Em Salmos 51:10, toque a palavra que falta em \"___ em mim, ó Deus, um coração limpo\"?",
+    "feedbackCorrect": "Exato: o verbo do pedido é Cria, não um conserto vago.",
+    "feedbackWrong": {
+      "b": "Renova aparece na segunda metade, não nesta abertura.",
+      "c": "Espírito é o que se pede estável, não o verbo inicial."
+    },
+    "template": "___ em mim, ó Deus, um coração limpo",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cria"
+      },
+      {
+        "id": "b",
+        "text": "renova"
+      },
+      {
+        "id": "c",
+        "text": "espírito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Em Salmos 51:10, toque a palavra que falta em \"___ em mim, ó Deus, um coração limpo\"?",
+    "cue": "Em Salmos 51:10, toque a palavra que falta em \"___ em mim, ó Deus, um coração limpo\"?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmos 51:10",
+    "learningObjective": "Sair sabendo que o pedido é criação: coração limpo e espírito estável, não conserto superficial.",
+    "evidence": [
+      "Salmos 51:10"
+    ],
+    "type": "choice",
+    "trail": "salmos",
+    "section": "salmos-lamento-02-criai-em-mim-um-cora",
+    "id": "salmos-sem-salmos-lamento-02-criai-em-mim-um-cora-03",
+    "passageText": "Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável.",
+    "question": "O que Salmos 51:10 pede de forma explícita?",
+    "feedbackCorrect": "Certo: coração limpo e espírito estável.",
+    "feedbackWrong": {
+      "b": "O texto pede espírito estável, não instável.",
+      "c": "O pedido é criação, não só memória de pecados alheios.",
+      "d": "Há renovação interior, não recusa de um espírito novo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Um coração limpo e, dentro dele, um espírito estável."
+      },
+      {
+        "id": "b",
+        "text": "Um espírito instável para acompanhar o coração."
+      },
+      {
+        "id": "c",
+        "text": "Apenas lembrar pecados antigos, sem pedido interior."
+      },
+      {
+        "id": "d",
+        "text": "Que Deus recuse renovar qualquer espírito no orante."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "O que Salmos 51:10 pede de forma explícita?",
+    "cue": "O que Salmos 51:10 pede de forma explícita?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmos 51:10",
+    "learningObjective": "Sair sabendo que o pedido é criação: coração limpo e espírito estável, não conserto superficial.",
+    "evidence": [
+      "Salmos 51:10"
+    ],
+    "type": "order",
+    "trail": "salmos",
+    "section": "salmos-lamento-02-criai-em-mim-um-cora",
+    "id": "salmos-sem-salmos-lamento-02-criai-em-mim-um-cora-04",
+    "passageText": "Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável.",
+    "question": "Qual sequência mostra a ordem dos fatos em Salmos 51:10?",
+    "feedbackCorrect": "Certo: cria, coração limpo e espírito estável.",
+    "feedbackWrong": {
+      "b": "O verbo Cria abre o versículo, não o espírito.",
+      "c": "O coração limpo vem antes da renovação do espírito."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cria em mim, ó Deus"
+      },
+      {
+        "id": "b",
+        "text": "um coração limpo"
+      },
+      {
+        "id": "c",
+        "text": "e renova, dentro de mim, um espírito estável"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Salmos 51:10?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Salmos 51:10?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmos 51:10",
+    "learningObjective": "Sair sabendo que o pedido é criação: coração limpo e espírito estável, não conserto superficial.",
+    "evidence": [
+      "Salmos 51:10"
+    ],
+    "type": "complete",
+    "trail": "salmos",
+    "section": "salmos-lamento-02-criai-em-mim-um-cora",
+    "id": "salmos-sem-salmos-lamento-02-criai-em-mim-um-cora-05",
+    "passageText": "Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável.",
+    "question": "Complete a frase: \"Cria em mim, ó Deus, um coração ___\"",
+    "feedbackCorrect": "Certo: o coração pedido é limpo.",
+    "feedbackWrong": {
+      "b": "Estável qualifica o espírito, não esta lacuna.",
+      "c": "Espírito vem na segunda metade do versículo."
+    },
+    "template": "Cria em mim, ó Deus, um coração ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "limpo"
+      },
+      {
+        "id": "b",
+        "text": "estável"
+      },
+      {
+        "id": "c",
+        "text": "espírito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Complete a frase: \"Cria em mim, ó Deus, um coração ___\"",
+    "cue": "Complete a frase: \"Cria em mim, ó Deus, um coração ___\""
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmos 51:10",
+    "learningObjective": "Sair sabendo que o pedido é criação: coração limpo e espírito estável, não conserto superficial.",
+    "evidence": [
+      "Salmos 51:10"
+    ],
+    "type": "connect",
+    "trail": "salmos",
+    "section": "salmos-lamento-02-criai-em-mim-um-cora",
+    "id": "salmos-sem-salmos-lamento-02-criai-em-mim-um-cora-06",
+    "passageText": "Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável.",
+    "question": "O que Salmos 51:10 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o pedido é criação de coração limpo.",
+    "feedbackWrong": {
+      "b": "O texto não descreve um conserto superficial.",
+      "c": "O espírito pedido é estável, não instável."
+    },
+    "passageA": {
+      "ref": "Salmos 51:10",
+      "text": "Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O pedido é criação, não conserto superficial: coração limpo e espírito estável."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Criação de coração limpo"
+      },
+      {
+        "id": "b",
+        "text": "Conserto só superficial"
+      },
+      {
+        "id": "c",
+        "text": "Espírito instável como meta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "O que Salmos 51:10 comunica que se liga a este contexto?",
+    "cue": "O que Salmos 51:10 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmos 51:10",
+    "learningObjective": "Sair sabendo que o pedido é criação: coração limpo e espírito estável, não conserto superficial.",
+    "evidence": [
+      "Salmos 51:10"
+    ],
+    "type": "true_false",
+    "trail": "salmos",
+    "section": "salmos-lamento-02-criai-em-mim-um-cora",
+    "id": "salmos-cam-salmos-lamento-02-criai-em-mim-um-cora-01",
+    "passageText": "Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável.",
+    "question": "O pedido de Salmos 51:10 é só polir o coração antigo, sem criação nem espírito estável.",
+    "feedbackCorrect": "Certo: o verbo é cria, e pede-se espírito estável.",
+    "feedbackWrong": {
+      "true": "O texto pede criação e renovação, não só polimento."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "prompt": "O pedido de Salmos 51:10 é só polir o coração antigo, sem criação nem espírito estável.",
+    "cue": "O pedido de Salmos 51:10 é só polir o coração antigo, sem criação nem espírito estável."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmos 51:10",
+    "learningObjective": "Sair sabendo que o pedido é criação: coração limpo e espírito estável, não conserto superficial.",
+    "evidence": [
+      "Salmos 51:10"
+    ],
+    "type": "tap",
+    "trail": "salmos",
+    "section": "salmos-lamento-02-criai-em-mim-um-cora",
+    "id": "salmos-cam-salmos-lamento-02-criai-em-mim-um-cora-02",
+    "passageText": "Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável.",
+    "question": "Em Salmos 51:10, toque a palavra que falta em \"e ___, dentro de mim, um espírito estável\"?",
+    "feedbackCorrect": "Exato: a segunda ação é renovar o espírito.",
+    "feedbackWrong": {
+      "a": "Cria abre o versículo, não esta segunda lacuna.",
+      "c": "Limpo qualifica o coração, não este verbo."
+    },
+    "template": "e ___, dentro de mim, um espírito estável",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cria"
+      },
+      {
+        "id": "b",
+        "text": "renova"
+      },
+      {
+        "id": "c",
+        "text": "limpo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Em Salmos 51:10, toque a palavra que falta em \"e ___, dentro de mim, um espírito estável\"?",
+    "cue": "Em Salmos 51:10, toque a palavra que falta em \"e ___, dentro de mim, um espírito estável\"?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmos 51:10",
+    "learningObjective": "Sair sabendo que o pedido é criação: coração limpo e espírito estável, não conserto superficial.",
+    "evidence": [
+      "Salmos 51:10"
+    ],
+    "type": "choice",
+    "trail": "salmos",
+    "section": "salmos-lamento-02-criai-em-mim-um-cora",
+    "id": "salmos-cam-salmos-lamento-02-criai-em-mim-um-cora-03",
+    "passageText": "Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável.",
+    "question": "Como Salmos 51:10 relaciona criação e renovação interior?",
+    "feedbackCorrect": "Certo: coração limpo e espírito estável vêm juntos.",
+    "feedbackWrong": {
+      "b": "O espírito estável não é opcional no pedido.",
+      "c": "Cria não descreve um retoque cosmética do mesmo coração.",
+      "d": "A renovação é dentro de mim, não só no discurso público."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Criar coração limpo e renovar espírito estável formam um só pedido."
+      },
+      {
+        "id": "b",
+        "text": "Basta o coração limpo; o espírito estável é extra."
+      },
+      {
+        "id": "c",
+        "text": "Cria significa só um retoque externo do mesmo coração."
+      },
+      {
+        "id": "d",
+        "text": "A renovação fica fora da pessoa, só na fama pública."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Como Salmos 51:10 relaciona criação e renovação interior?",
+    "cue": "Como Salmos 51:10 relaciona criação e renovação interior?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmos 51:10",
+    "learningObjective": "Sair sabendo que o pedido é criação: coração limpo e espírito estável, não conserto superficial.",
+    "evidence": [
+      "Salmos 51:10"
+    ],
+    "type": "order",
+    "trail": "salmos",
+    "section": "salmos-lamento-02-criai-em-mim-um-cora",
+    "id": "salmos-cam-salmos-lamento-02-criai-em-mim-um-cora-04",
+    "passageText": "Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável.",
+    "question": "Como se encadeiam os eventos de Salmos 51:10?",
+    "feedbackCorrect": "Certo: criação, renovação interior e espírito estável.",
+    "feedbackWrong": {
+      "b": "Cria em mim vem primeiro, não o espírito.",
+      "c": "Renovar dentro de mim precede o espírito estável nomeado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cria em mim, ó Deus, um coração limpo"
+      },
+      {
+        "id": "b",
+        "text": "e renova, dentro de mim"
+      },
+      {
+        "id": "c",
+        "text": "um espírito estável"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Como se encadeiam os eventos de Salmos 51:10?",
+    "cue": "Como se encadeiam os eventos de Salmos 51:10?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmos 51:10",
+    "learningObjective": "Sair sabendo que o pedido é criação: coração limpo e espírito estável, não conserto superficial.",
+    "evidence": [
+      "Salmos 51:10"
+    ],
+    "type": "complete",
+    "trail": "salmos",
+    "section": "salmos-lamento-02-criai-em-mim-um-cora",
+    "id": "salmos-cam-salmos-lamento-02-criai-em-mim-um-cora-05",
+    "passageText": "Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável.",
+    "question": "Complete a frase: \"e renova, dentro de mim, um espírito ___\"",
+    "feedbackCorrect": "Certo: o espírito pedido é estável.",
+    "feedbackWrong": {
+      "a": "Limpo qualifica o coração, não o espírito nesta lacuna.",
+      "b": "Deus é a quem se pede, não o adjetivo do espírito."
+    },
+    "template": "e renova, dentro de mim, um espírito ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "limpo"
+      },
+      {
+        "id": "b",
+        "text": "Deus"
+      },
+      {
+        "id": "c",
+        "text": "estável"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "prompt": "Complete a frase: \"e renova, dentro de mim, um espírito ___\"",
+    "cue": "Complete a frase: \"e renova, dentro de mim, um espírito ___\""
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmos 51:10",
+    "learningObjective": "Sair sabendo que o pedido é criação: coração limpo e espírito estável, não conserto superficial.",
+    "evidence": [
+      "Salmos 51:10"
+    ],
+    "type": "connect",
+    "trail": "salmos",
+    "section": "salmos-lamento-02-criai-em-mim-um-cora",
+    "id": "salmos-cam-salmos-lamento-02-criai-em-mim-um-cora-06",
+    "passageText": "Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável.",
+    "question": "O que Salmos 51:10 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: criação e espírito estável, não retoque.",
+    "feedbackWrong": {
+      "a": "O texto não reduz o pedido a um verniz moral.",
+      "c": "Não se pede coração sujo; pede-se limpo."
+    },
+    "passageA": {
+      "ref": "Salmos 51:10",
+      "text": "Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O pedido é criação, não conserto superficial: coração limpo e espírito estável."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Verniz moral sem criação"
+      },
+      {
+        "id": "b",
+        "text": "Criação e espírito estável"
+      },
+      {
+        "id": "c",
+        "text": "Coração sujo como pedido"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "O que Salmos 51:10 comunica que se liga a este contexto?",
+    "cue": "O que Salmos 51:10 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmos 51:10",
+    "learningObjective": "Sair sabendo que o pedido é criação: coração limpo e espírito estável, não conserto superficial.",
+    "evidence": [
+      "Salmos 51:10"
+    ],
+    "type": "true_false",
+    "trail": "salmos",
+    "section": "salmos-lamento-02-criai-em-mim-um-cora",
+    "id": "salmos-pro-salmos-lamento-02-criai-em-mim-um-cora-01",
+    "passageText": "Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável.",
+    "question": "O verbo criar no pedido mostra que o coração limpo não nasce de conserto superficial.",
+    "feedbackCorrect": "Certo: cria e renova apontam para obra de Deus no interior.",
+    "feedbackWrong": {
+      "false": "Cria em mim não descreve um conserto leve; é criação."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "prompt": "O verbo criar no pedido mostra que o coração limpo não nasce de conserto superficial.",
+    "cue": "O verbo criar no pedido mostra que o coração limpo não nasce de conserto superficial."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmos 51:10",
+    "learningObjective": "Sair sabendo que o pedido é criação: coração limpo e espírito estável, não conserto superficial.",
+    "evidence": [
+      "Salmos 51:10"
+    ],
+    "type": "tap",
+    "trail": "salmos",
+    "section": "salmos-lamento-02-criai-em-mim-um-cora",
+    "id": "salmos-pro-salmos-lamento-02-criai-em-mim-um-cora-02",
+    "passageText": "Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável.",
+    "question": "Em Salmos 51:10, toque a palavra que falta em \"um ___ limpo\"?",
+    "feedbackCorrect": "Exato: o que se pede limpo é o coração.",
+    "feedbackWrong": {
+      "b": "Espírito é o que se pede estável, não limpo nesta frase.",
+      "c": "Deus é a quem se pede, não o objeto limpo."
+    },
+    "template": "um ___ limpo",
+    "options": [
+      {
+        "id": "a",
+        "text": "coração"
+      },
+      {
+        "id": "b",
+        "text": "espírito"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Em Salmos 51:10, toque a palavra que falta em \"um ___ limpo\"?",
+    "cue": "Em Salmos 51:10, toque a palavra que falta em \"um ___ limpo\"?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmos 51:10",
+    "learningObjective": "Sair sabendo que o pedido é criação: coração limpo e espírito estável, não conserto superficial.",
+    "evidence": [
+      "Salmos 51:10"
+    ],
+    "type": "choice",
+    "trail": "salmos",
+    "section": "salmos-lamento-02-criai-em-mim-um-cora",
+    "id": "salmos-pro-salmos-lamento-02-criai-em-mim-um-cora-03",
+    "passageText": "Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável.",
+    "question": "Que sentido teológico Salmos 51:10 prepara o orante a confessar?",
+    "feedbackCorrect": "Certo: só Deus cria coração limpo e espírito estável.",
+    "feedbackWrong": {
+      "b": "O versículo não ensina autossuficiência moral.",
+      "c": "Espírito estável não é acessório; faz parte do pedido.",
+      "d": "O lugar da obra é dentro de mim, não só o culto visível."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Só Deus cria coração limpo e renova espírito estável no interior."
+      },
+      {
+        "id": "b",
+        "text": "O orante limpa o próprio coração sem pedir criação."
+      },
+      {
+        "id": "c",
+        "text": "Espírito estável é luxo; o essencial é parecer limpo."
+      },
+      {
+        "id": "d",
+        "text": "A obra de Deus fica no culto visível, nunca dentro."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Que sentido teológico Salmos 51:10 prepara o orante a confessar?",
+    "cue": "Que sentido teológico Salmos 51:10 prepara o orante a confessar?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmos 51:10",
+    "learningObjective": "Sair sabendo que o pedido é criação: coração limpo e espírito estável, não conserto superficial.",
+    "evidence": [
+      "Salmos 51:10"
+    ],
+    "type": "order",
+    "trail": "salmos",
+    "section": "salmos-lamento-02-criai-em-mim-um-cora",
+    "id": "salmos-pro-salmos-lamento-02-criai-em-mim-um-cora-04",
+    "passageText": "Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável.",
+    "question": "Qual sequência revela o sentido de Salmos 51:10?",
+    "feedbackCorrect": "Certo: criação do coração e renovação do espírito.",
+    "feedbackWrong": {
+      "b": "Cria em mim abre o sentido, não o espírito isolado.",
+      "c": "A renovação interior liga o coração limpo ao espírito estável."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cria em mim, ó Deus, um coração limpo"
+      },
+      {
+        "id": "b",
+        "text": "e renova, dentro de mim"
+      },
+      {
+        "id": "c",
+        "text": "um espírito estável"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Qual sequência revela o sentido de Salmos 51:10?",
+    "cue": "Qual sequência revela o sentido de Salmos 51:10?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmos 51:10",
+    "learningObjective": "Sair sabendo que o pedido é criação: coração limpo e espírito estável, não conserto superficial.",
+    "evidence": [
+      "Salmos 51:10"
+    ],
+    "type": "complete",
+    "trail": "salmos",
+    "section": "salmos-lamento-02-criai-em-mim-um-cora",
+    "id": "salmos-pro-salmos-lamento-02-criai-em-mim-um-cora-05",
+    "passageText": "Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável.",
+    "question": "Complete a frase: \"Cria em mim, ó ___, um coração limpo\"",
+    "feedbackCorrect": "Certo: o pedido se dirige a Deus.",
+    "feedbackWrong": {
+      "b": "Mim é o lugar da criação, não o vocativo.",
+      "c": "Espírito aparece depois, na renovação."
+    },
+    "template": "Cria em mim, ó ___, um coração limpo",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus"
+      },
+      {
+        "id": "b",
+        "text": "mim"
+      },
+      {
+        "id": "c",
+        "text": "espírito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Complete a frase: \"Cria em mim, ó ___, um coração limpo\"",
+    "cue": "Complete a frase: \"Cria em mim, ó ___, um coração limpo\""
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmos 51:10",
+    "learningObjective": "Sair sabendo que o pedido é criação: coração limpo e espírito estável, não conserto superficial.",
+    "evidence": [
+      "Salmos 51:10"
+    ],
+    "type": "connect",
+    "trail": "salmos",
+    "section": "salmos-lamento-02-criai-em-mim-um-cora",
+    "id": "salmos-pro-salmos-lamento-02-criai-em-mim-um-cora-06",
+    "passageText": "Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável.",
+    "question": "O que Salmos 51:10 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: criação, não conserto superficial.",
+    "feedbackWrong": {
+      "a": "O verbo cria recusa a ideia de mero polimento.",
+      "c": "O espírito pedido é estável, obra de Deus."
+    },
+    "passageA": {
+      "ref": "Salmos 51:10",
+      "text": "Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O pedido é criação, não conserto superficial: coração limpo e espírito estável."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Polir o coração antigo"
+      },
+      {
+        "id": "b",
+        "text": "Criação, não conserto raso"
+      },
+      {
+        "id": "c",
+        "text": "Espírito estável sem Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "O que Salmos 51:10 comunica que se liga a este contexto?",
+    "cue": "O que Salmos 51:10 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmos 13:1; 51:10; 23:1",
+    "learningObjective": "Sair sabendo que orar os Salmos une lamento, pedido de coração novo e confiança no Pastor.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 51:10",
+      "Salmos 23:1"
+    ],
+    "type": "true_false",
+    "trail": "salmos",
+    "section": "salmos-lamento-03-desafio-orar-os-salm",
+    "id": "salmos-sem-salmos-lamento-03-desafio-orar-os-salm-01",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável. Jeová é o meu pastor; nada me faltará.",
+    "question": "O desafio junta o grito até quando, o pedido de coração limpo e a confiança de que Jeová é o pastor.",
+    "feedbackCorrect": "Certo: os três trechos entram neste palco.",
+    "feedbackWrong": {
+      "false": "O palco cita Salmos 13, 51 e 23 juntos."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "prompt": "O desafio junta o grito até quando, o pedido de coração limpo e a confiança de que Jeová é o pastor.",
+    "cue": "O desafio junta o grito até quando, o pedido de coração limpo e a confiança de que Jeová é o pastor."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmos 13:1; 51:10; 23:1",
+    "learningObjective": "Sair sabendo que orar os Salmos une lamento, pedido de coração novo e confiança no Pastor.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 51:10",
+      "Salmos 23:1"
+    ],
+    "type": "tap",
+    "trail": "salmos",
+    "section": "salmos-lamento-03-desafio-orar-os-salm",
+    "id": "salmos-sem-salmos-lamento-03-desafio-orar-os-salm-02",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável. Jeová é o meu pastor; nada me faltará.",
+    "question": "Em Salmos 13:1; 51:10; 23:1, toque a palavra que falta em \"Cria em mim, ó Deus, um coração ___\"?",
+    "feedbackCorrect": "Exato: o coração pedido é limpo.",
+    "feedbackWrong": {
+      "b": "Pastor pertence a Salmos 23, não a esta lacuna.",
+      "c": "Rosto pertence ao lamento de Salmos 13."
+    },
+    "template": "Cria em mim, ó Deus, um coração ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "limpo"
+      },
+      {
+        "id": "b",
+        "text": "pastor"
+      },
+      {
+        "id": "c",
+        "text": "rosto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Em Salmos 13:1; 51:10; 23:1, toque a palavra que falta em \"Cria em mim, ó Deus, um coração ___\"?",
+    "cue": "Em Salmos 13:1; 51:10; 23:1, toque a palavra que falta em \"Cria em mim, ó Deus, um coração ___\"?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmos 13:1; 51:10; 23:1",
+    "learningObjective": "Sair sabendo que orar os Salmos une lamento, pedido de coração novo e confiança no Pastor.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 51:10",
+      "Salmos 23:1"
+    ],
+    "type": "choice",
+    "trail": "salmos",
+    "section": "salmos-lamento-03-desafio-orar-os-salm",
+    "id": "salmos-sem-salmos-lamento-03-desafio-orar-os-salm-03",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável. Jeová é o meu pastor; nada me faltará.",
+    "question": "Quais três movimentos o palco desta missão coloca juntos?",
+    "feedbackCorrect": "Certo: lamento, criação interior e pastor.",
+    "feedbackWrong": {
+      "b": "O palco inclui o lamento de Salmos 13, não o omite.",
+      "c": "Há pedido de coração limpo, não só o pastor.",
+      "d": "Jeová é o pastor; o texto não nega isso."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Lamento até quando, pedido de coração limpo e Jeová pastor."
+      },
+      {
+        "id": "b",
+        "text": "Só louvor, sem lamento e sem pedido interior."
+      },
+      {
+        "id": "c",
+        "text": "Apenas o pastor, sem Salmos 13 nem 51."
+      },
+      {
+        "id": "d",
+        "text": "A afirmação de que Jeová não é pastor."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Quais três movimentos o palco desta missão coloca juntos?",
+    "cue": "Quais três movimentos o palco desta missão coloca juntos?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmos 13:1; 51:10; 23:1",
+    "learningObjective": "Sair sabendo que orar os Salmos une lamento, pedido de coração novo e confiança no Pastor.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 51:10",
+      "Salmos 23:1"
+    ],
+    "type": "order",
+    "trail": "salmos",
+    "section": "salmos-lamento-03-desafio-orar-os-salm",
+    "id": "salmos-sem-salmos-lamento-03-desafio-orar-os-salm-04",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável. Jeová é o meu pastor; nada me faltará.",
+    "question": "Qual sequência mostra a ordem dos fatos em Salmos 13:1; 51:10; 23:1?",
+    "feedbackCorrect": "Certo: lamento, criação do coração e pastor.",
+    "feedbackWrong": {
+      "b": "O até quando de Salmos 13 abre o palco.",
+      "c": "O pastor de Salmos 23 fecha a sequência dada."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Até quando, Jeová! Esquecer-te-ás de mim para sempre"
+      },
+      {
+        "id": "b",
+        "text": "Cria em mim, ó Deus, um coração limpo"
+      },
+      {
+        "id": "c",
+        "text": "Jeová é o meu pastor; nada me faltará"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Salmos 13:1; 51:10; 23:1?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Salmos 13:1; 51:10; 23:1?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmos 13:1; 51:10; 23:1",
+    "learningObjective": "Sair sabendo que orar os Salmos une lamento, pedido de coração novo e confiança no Pastor.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 51:10",
+      "Salmos 23:1"
+    ],
+    "type": "complete",
+    "trail": "salmos",
+    "section": "salmos-lamento-03-desafio-orar-os-salm",
+    "id": "salmos-sem-salmos-lamento-03-desafio-orar-os-salm-05",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável. Jeová é o meu pastor; nada me faltará.",
+    "question": "Complete a frase: \"Jeová é o meu ___; nada me faltará\"",
+    "feedbackCorrect": "Certo: Jeová é o pastor.",
+    "feedbackWrong": {
+      "b": "Rosto pertence ao lamento, não a esta lacuna.",
+      "c": "Coração pertence ao pedido de Salmos 51."
+    },
+    "template": "Jeová é o meu ___; nada me faltará",
+    "options": [
+      {
+        "id": "a",
+        "text": "pastor"
+      },
+      {
+        "id": "b",
+        "text": "rosto"
+      },
+      {
+        "id": "c",
+        "text": "coração"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Complete a frase: \"Jeová é o meu ___; nada me faltará\"",
+    "cue": "Complete a frase: \"Jeová é o meu ___; nada me faltará\""
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Salmos 13:1; 51:10; 23:1",
+    "learningObjective": "Sair sabendo que orar os Salmos une lamento, pedido de coração novo e confiança no Pastor.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 51:10",
+      "Salmos 23:1"
+    ],
+    "type": "connect",
+    "trail": "salmos",
+    "section": "salmos-lamento-03-desafio-orar-os-salm",
+    "id": "salmos-sem-salmos-lamento-03-desafio-orar-os-salm-06",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável. Jeová é o meu pastor; nada me faltará.",
+    "question": "O que Salmos 13:1; 51:10; 23:1 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: lamento, coração novo e confiança no Pastor.",
+    "feedbackWrong": {
+      "b": "O desafio não reduz a oração a só lamento.",
+      "c": "O Pastor não aparece sozinho, sem os outros gestos."
+    },
+    "passageA": {
+      "ref": "Salmos 13:1; 51:10; 23:1",
+      "text": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável. Jeová é o meu pastor; nada me faltará."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Orar os Salmos é lamento, pedido de coração novo e confiança no Pastor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Lamento, coração novo e Pastor"
+      },
+      {
+        "id": "b",
+        "text": "Só lamento, sem pedido"
+      },
+      {
+        "id": "c",
+        "text": "Pastor sem lamento nem criação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "O que Salmos 13:1; 51:10; 23:1 comunica que se liga a este contexto?",
+    "cue": "O que Salmos 13:1; 51:10; 23:1 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmos 13:1; 51:10; 23:1",
+    "learningObjective": "Sair sabendo que orar os Salmos une lamento, pedido de coração novo e confiança no Pastor.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 51:10",
+      "Salmos 23:1"
+    ],
+    "type": "true_false",
+    "trail": "salmos",
+    "section": "salmos-lamento-03-desafio-orar-os-salm",
+    "id": "salmos-cam-salmos-lamento-03-desafio-orar-os-salm-01",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável. Jeová é o meu pastor; nada me faltará.",
+    "question": "Orar os Salmos nesta missão é só louvor, sem lamento nem pedido de coração novo.",
+    "feedbackCorrect": "Certo: o palco une lamento, pedido e pastor.",
+    "feedbackWrong": {
+      "true": "Há Salmos 13 e 51 no palco, não só louvor."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "prompt": "Orar os Salmos nesta missão é só louvor, sem lamento nem pedido de coração novo.",
+    "cue": "Orar os Salmos nesta missão é só louvor, sem lamento nem pedido de coração novo."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmos 13:1; 51:10; 23:1",
+    "learningObjective": "Sair sabendo que orar os Salmos une lamento, pedido de coração novo e confiança no Pastor.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 51:10",
+      "Salmos 23:1"
+    ],
+    "type": "tap",
+    "trail": "salmos",
+    "section": "salmos-lamento-03-desafio-orar-os-salm",
+    "id": "salmos-cam-salmos-lamento-03-desafio-orar-os-salm-02",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável. Jeová é o meu pastor; nada me faltará.",
+    "question": "Em Salmos 13:1; 51:10; 23:1, toque a palavra que falta em \"Até quando me ocultarás o teu ___\"?",
+    "feedbackCorrect": "Exato: o lamento pergunta pelo rosto oculto.",
+    "feedbackWrong": {
+      "b": "Pastor pertence a Salmos 23, não a esta pergunta.",
+      "c": "Espírito pertence ao pedido de Salmos 51."
+    },
+    "template": "Até quando me ocultarás o teu ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "rosto"
+      },
+      {
+        "id": "b",
+        "text": "pastor"
+      },
+      {
+        "id": "c",
+        "text": "espírito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Em Salmos 13:1; 51:10; 23:1, toque a palavra que falta em \"Até quando me ocultarás o teu ___\"?",
+    "cue": "Em Salmos 13:1; 51:10; 23:1, toque a palavra que falta em \"Até quando me ocultarás o teu ___\"?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmos 13:1; 51:10; 23:1",
+    "learningObjective": "Sair sabendo que orar os Salmos une lamento, pedido de coração novo e confiança no Pastor.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 51:10",
+      "Salmos 23:1"
+    ],
+    "type": "choice",
+    "trail": "salmos",
+    "section": "salmos-lamento-03-desafio-orar-os-salm",
+    "id": "salmos-cam-salmos-lamento-03-desafio-orar-os-salm-03",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável. Jeová é o meu pastor; nada me faltará.",
+    "question": "Como os três trechos se encadeiam na oração desta missão?",
+    "feedbackCorrect": "Certo: clamar a demora, pedir criação e confiar no pastor.",
+    "feedbackWrong": {
+      "b": "O pastor não cancela o lamento; os três convivem.",
+      "c": "O coração novo não substitui trazer a demora a Deus.",
+      "d": "Nada faltará não apaga o até quando de Salmos 13."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Clamar a demora, pedir coração novo e confiar no pastor."
+      },
+      {
+        "id": "b",
+        "text": "O pastor dispensa lamento e pedido interior."
+      },
+      {
+        "id": "c",
+        "text": "Pedir coração limpo substitui falar da demora."
+      },
+      {
+        "id": "d",
+        "text": "Nada faltará torna o até quando desnecessário."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Como os três trechos se encadeiam na oração desta missão?",
+    "cue": "Como os três trechos se encadeiam na oração desta missão?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmos 13:1; 51:10; 23:1",
+    "learningObjective": "Sair sabendo que orar os Salmos une lamento, pedido de coração novo e confiança no Pastor.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 51:10",
+      "Salmos 23:1"
+    ],
+    "type": "order",
+    "trail": "salmos",
+    "section": "salmos-lamento-03-desafio-orar-os-salm",
+    "id": "salmos-cam-salmos-lamento-03-desafio-orar-os-salm-04",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável. Jeová é o meu pastor; nada me faltará.",
+    "question": "Como se encadeiam os eventos de Salmos 13:1; 51:10; 23:1?",
+    "feedbackCorrect": "Certo: rosto oculto, espírito estável e nada faltará.",
+    "feedbackWrong": {
+      "b": "O rosto oculto pertence ao lamento inicial.",
+      "c": "Nada faltará fecha o palco com o pastor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "ocultarás o teu rosto"
+      },
+      {
+        "id": "b",
+        "text": "um espírito estável"
+      },
+      {
+        "id": "c",
+        "text": "nada me faltará"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Como se encadeiam os eventos de Salmos 13:1; 51:10; 23:1?",
+    "cue": "Como se encadeiam os eventos de Salmos 13:1; 51:10; 23:1?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmos 13:1; 51:10; 23:1",
+    "learningObjective": "Sair sabendo que orar os Salmos une lamento, pedido de coração novo e confiança no Pastor.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 51:10",
+      "Salmos 23:1"
+    ],
+    "type": "complete",
+    "trail": "salmos",
+    "section": "salmos-lamento-03-desafio-orar-os-salm",
+    "id": "salmos-cam-salmos-lamento-03-desafio-orar-os-salm-05",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável. Jeová é o meu pastor; nada me faltará.",
+    "question": "Complete a frase: \"renova, dentro de mim, um espírito ___\"",
+    "feedbackCorrect": "Certo: o espírito pedido é estável.",
+    "feedbackWrong": {
+      "a": "Sempre pertence ao lamento de Salmos 13.",
+      "b": "Pastor pertence a Salmos 23, não a esta lacuna."
+    },
+    "template": "renova, dentro de mim, um espírito ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "sempre"
+      },
+      {
+        "id": "b",
+        "text": "pastor"
+      },
+      {
+        "id": "c",
+        "text": "estável"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "prompt": "Complete a frase: \"renova, dentro de mim, um espírito ___\"",
+    "cue": "Complete a frase: \"renova, dentro de mim, um espírito ___\""
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Salmos 13:1; 51:10; 23:1",
+    "learningObjective": "Sair sabendo que orar os Salmos une lamento, pedido de coração novo e confiança no Pastor.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 51:10",
+      "Salmos 23:1"
+    ],
+    "type": "connect",
+    "trail": "salmos",
+    "section": "salmos-lamento-03-desafio-orar-os-salm",
+    "id": "salmos-cam-salmos-lamento-03-desafio-orar-os-salm-06",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável. Jeová é o meu pastor; nada me faltará.",
+    "question": "O que Salmos 13:1; 51:10; 23:1 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: orar os Salmos une os três gestos.",
+    "feedbackWrong": {
+      "a": "Louvor isolado não descreve este palco.",
+      "c": "O pedido interior não vem sozinho, sem lamento nem pastor."
+    },
+    "passageA": {
+      "ref": "Salmos 13:1; 51:10; 23:1",
+      "text": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável. Jeová é o meu pastor; nada me faltará."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Orar os Salmos é lamento, pedido de coração novo e confiança no Pastor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Louvor isolado sem lamento"
+      },
+      {
+        "id": "b",
+        "text": "Lamento, pedido e confiança"
+      },
+      {
+        "id": "c",
+        "text": "Pedido interior sem Pastor"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "O que Salmos 13:1; 51:10; 23:1 comunica que se liga a este contexto?",
+    "cue": "O que Salmos 13:1; 51:10; 23:1 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmos 13:1; 51:10; 23:1",
+    "learningObjective": "Sair sabendo que orar os Salmos une lamento, pedido de coração novo e confiança no Pastor.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 51:10",
+      "Salmos 23:1"
+    ],
+    "type": "true_false",
+    "trail": "salmos",
+    "section": "salmos-lamento-03-desafio-orar-os-salm",
+    "id": "salmos-pro-salmos-lamento-03-desafio-orar-os-salm-01",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável. Jeová é o meu pastor; nada me faltará.",
+    "question": "Orar os Salmos ensina a trazer a demora, pedir criação interior e descansar no Pastor.",
+    "feedbackCorrect": "Certo: os três textos formam essa escola de oração.",
+    "feedbackWrong": {
+      "false": "13, 51 e 23 juntos ensinam lamento, criação e pastor."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "prompt": "Orar os Salmos ensina a trazer a demora, pedir criação interior e descansar no Pastor.",
+    "cue": "Orar os Salmos ensina a trazer a demora, pedir criação interior e descansar no Pastor."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmos 13:1; 51:10; 23:1",
+    "learningObjective": "Sair sabendo que orar os Salmos une lamento, pedido de coração novo e confiança no Pastor.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 51:10",
+      "Salmos 23:1"
+    ],
+    "type": "tap",
+    "trail": "salmos",
+    "section": "salmos-lamento-03-desafio-orar-os-salm",
+    "id": "salmos-pro-salmos-lamento-03-desafio-orar-os-salm-02",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável. Jeová é o meu pastor; nada me faltará.",
+    "question": "Em Salmos 13:1; 51:10; 23:1, toque a palavra que falta em \"Esquecer-te-ás de mim para ___\"?",
+    "feedbackCorrect": "Exato: o lamento teme o esquecimento para sempre.",
+    "feedbackWrong": {
+      "a": "Limpo qualifica o coração de Salmos 51.",
+      "c": "Pastor pertence a Salmos 23."
+    },
+    "template": "Esquecer-te-ás de mim para ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "limpo"
+      },
+      {
+        "id": "b",
+        "text": "sempre"
+      },
+      {
+        "id": "c",
+        "text": "pastor"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Em Salmos 13:1; 51:10; 23:1, toque a palavra que falta em \"Esquecer-te-ás de mim para ___\"?",
+    "cue": "Em Salmos 13:1; 51:10; 23:1, toque a palavra que falta em \"Esquecer-te-ás de mim para ___\"?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmos 13:1; 51:10; 23:1",
+    "learningObjective": "Sair sabendo que orar os Salmos une lamento, pedido de coração novo e confiança no Pastor.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 51:10",
+      "Salmos 23:1"
+    ],
+    "type": "choice",
+    "trail": "salmos",
+    "section": "salmos-lamento-03-desafio-orar-os-salm",
+    "id": "salmos-pro-salmos-lamento-03-desafio-orar-os-salm-03",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável. Jeová é o meu pastor; nada me faltará.",
+    "question": "Que leitura teológica este palco sustenta sobre orar os Salmos?",
+    "feedbackCorrect": "Certo: lamento, criação e pastor cabem na mesma oração.",
+    "feedbackWrong": {
+      "b": "Fé neste palco não cala o até quando.",
+      "c": "O Pastor não torna inútil pedir coração limpo.",
+      "d": "Os três textos não se anulam; se somam na oração."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Lamento, coração novo e confiança no Pastor cabem juntos."
+      },
+      {
+        "id": "b",
+        "text": "Fé madura abandona o até quando e só louva."
+      },
+      {
+        "id": "c",
+        "text": "Quem tem Pastor não precisa pedir coração limpo."
+      },
+      {
+        "id": "d",
+        "text": "Os três textos se anulam e não se oram juntos."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Que leitura teológica este palco sustenta sobre orar os Salmos?",
+    "cue": "Que leitura teológica este palco sustenta sobre orar os Salmos?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmos 13:1; 51:10; 23:1",
+    "learningObjective": "Sair sabendo que orar os Salmos une lamento, pedido de coração novo e confiança no Pastor.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 51:10",
+      "Salmos 23:1"
+    ],
+    "type": "order",
+    "trail": "salmos",
+    "section": "salmos-lamento-03-desafio-orar-os-salm",
+    "id": "salmos-pro-salmos-lamento-03-desafio-orar-os-salm-04",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável. Jeová é o meu pastor; nada me faltará.",
+    "question": "Qual sequência revela o sentido de Salmos 13:1; 51:10; 23:1?",
+    "feedbackCorrect": "Certo: até quando, cria em mim e Jeová é pastor.",
+    "feedbackWrong": {
+      "b": "O lamento a Jeová abre o sentido do palco.",
+      "c": "O pastor fecha a tríade, depois da criação interior."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Até quando, Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Cria em mim, ó Deus, um coração limpo"
+      },
+      {
+        "id": "c",
+        "text": "Jeová é o meu pastor"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Qual sequência revela o sentido de Salmos 13:1; 51:10; 23:1?",
+    "cue": "Qual sequência revela o sentido de Salmos 13:1; 51:10; 23:1?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmos 13:1; 51:10; 23:1",
+    "learningObjective": "Sair sabendo que orar os Salmos une lamento, pedido de coração novo e confiança no Pastor.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 51:10",
+      "Salmos 23:1"
+    ],
+    "type": "complete",
+    "trail": "salmos",
+    "section": "salmos-lamento-03-desafio-orar-os-salm",
+    "id": "salmos-pro-salmos-lamento-03-desafio-orar-os-salm-05",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável. Jeová é o meu pastor; nada me faltará.",
+    "question": "Complete a frase: \"Jeová é o meu pastor; nada me ___\"",
+    "feedbackCorrect": "Certo: nada faltará a quem ele pastoreia.",
+    "feedbackWrong": {
+      "a": "Limpo descreve o coração, não esta lacuna.",
+      "b": "Rosto pertence ao lamento de Salmos 13."
+    },
+    "template": "Jeová é o meu pastor; nada me ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "limpo"
+      },
+      {
+        "id": "b",
+        "text": "rosto"
+      },
+      {
+        "id": "c",
+        "text": "faltará"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "prompt": "Complete a frase: \"Jeová é o meu pastor; nada me ___\"",
+    "cue": "Complete a frase: \"Jeová é o meu pastor; nada me ___\""
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Salmos 13:1; 51:10; 23:1",
+    "learningObjective": "Sair sabendo que orar os Salmos une lamento, pedido de coração novo e confiança no Pastor.",
+    "evidence": [
+      "Salmos 13:1",
+      "Salmos 51:10",
+      "Salmos 23:1"
+    ],
+    "type": "connect",
+    "trail": "salmos",
+    "section": "salmos-lamento-03-desafio-orar-os-salm",
+    "id": "salmos-pro-salmos-lamento-03-desafio-orar-os-salm-06",
+    "passageText": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável. Jeová é o meu pastor; nada me faltará.",
+    "question": "O que Salmos 13:1; 51:10; 23:1 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: orar os Salmos é essa tríade.",
+    "feedbackWrong": {
+      "a": "Trocar o Pastor por silêncio não é o convite.",
+      "c": "Pedir coração novo sem Jeová corta o palco."
+    },
+    "passageA": {
+      "ref": "Salmos 13:1; 51:10; 23:1",
+      "text": "Até quando, Jeová! Esquecer-te-ás de mim para sempre? Até quando me ocultarás o teu rosto? Cria em mim, ó Deus, um coração limpo e renova, dentro de mim, um espírito estável. Jeová é o meu pastor; nada me faltará."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Orar os Salmos é lamento, pedido de coração novo e confiança no Pastor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Trocar o Pastor por silêncio"
+      },
+      {
+        "id": "b",
+        "text": "Lamento, pedido e confiança"
+      },
+      {
+        "id": "c",
+        "text": "Coração novo sem Jeová"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "O que Salmos 13:1; 51:10; 23:1 comunica que se liga a este contexto?",
+    "cue": "O que Salmos 13:1; 51:10; 23:1 comunica que se liga a este contexto?"
+  }
+]

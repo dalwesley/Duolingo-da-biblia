@@ -1,0 +1,4376 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 21:25",
+    "learningObjective": "Reconhecer que, sem rei, cada um era a própria lei — o refrão do caos moral em Juízes.",
+    "evidence": [
+      "Juízes 21:25"
+    ],
+    "type": "true_false",
+    "question": "Naqueles dias, não havia rei em Israel.",
+    "prompt": "Naqueles dias, não havia rei em Israel.",
+    "cue": "Naqueles dias, não havia rei em Israel.",
+    "feedbackCorrect": "Certo: o versículo afirma a ausência de rei.",
+    "feedbackWrong": {
+      "false": "Juízes 21:25 abre dizendo que não havia rei."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Naqueles dias, não havia rei em Israel: cada um fazia o que bem lhe parecia.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "id": "juizes-sem-juizes-ciclo-01-cada-um-fazia-o-que--01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 21:25",
+    "learningObjective": "Reconhecer que, sem rei, cada um era a própria lei — o refrão do caos moral em Juízes.",
+    "evidence": [
+      "Juízes 21:25"
+    ],
+    "type": "tap",
+    "question": "Em Juízes 21:25, toque a palavra que falta em \"não havia ___ em Israel\"?",
+    "prompt": "Em Juízes 21:25, toque a palavra que falta em \"não havia ___ em Israel\"?",
+    "cue": "Em Juízes 21:25, toque a palavra que falta em \"não havia ___ em Israel\"?",
+    "feedbackCorrect": "Exato: não havia \"rei\" em Israel.",
+    "feedbackWrong": {
+      "b": "Dias situa o tempo; a lacuna pede rei.",
+      "c": "Israel é o povo; aqui falta a palavra rei."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "rei"
+      },
+      {
+        "id": "b",
+        "text": "dias"
+      },
+      {
+        "id": "c",
+        "text": "Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Naqueles dias, não havia rei em Israel: cada um fazia o que bem lhe parecia.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "id": "juizes-sem-juizes-ciclo-01-cada-um-fazia-o-que--02",
+    "template": "não havia ___ em Israel"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 21:25",
+    "learningObjective": "Reconhecer que, sem rei, cada um era a própria lei — o refrão do caos moral em Juízes.",
+    "evidence": [
+      "Juízes 21:25"
+    ],
+    "type": "choice",
+    "question": "O que Juízes 21:25 afirma de modo explícito?",
+    "prompt": "O que Juízes 21:25 afirma de modo explícito?",
+    "cue": "O que Juízes 21:25 afirma de modo explícito?",
+    "feedbackCorrect": "Certo: cada um fazia o que bem lhe parecia.",
+    "feedbackWrong": {
+      "a": "O texto não menciona um rei justo reinando.",
+      "b": "Não há lei escrita citada aqui.",
+      "c": "O versículo não fala de templo reconstruído."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Havia um rei justo que guiava todo o povo."
+      },
+      {
+        "id": "b",
+        "text": "Cada tribo seguia a lei escrita de Moisés."
+      },
+      {
+        "id": "c",
+        "text": "O templo em Jerusalém estava restaurado."
+      },
+      {
+        "id": "d",
+        "text": "Cada um fazia o que bem lhe parecia."
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "passageText": "Naqueles dias, não havia rei em Israel: cada um fazia o que bem lhe parecia.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "id": "juizes-sem-juizes-ciclo-01-cada-um-fazia-o-que--03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 21:25",
+    "learningObjective": "Reconhecer que, sem rei, cada um era a própria lei — o refrão do caos moral em Juízes.",
+    "evidence": [
+      "Juízes 21:25"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Juízes 21:25?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Juízes 21:25?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Juízes 21:25?",
+    "feedbackCorrect": "Certo: dias sem rei, depois cada um fazendo o que lhe parecia.",
+    "feedbackWrong": {
+      "b": "A ausência de rei vem antes da conduta individual.",
+      "c": "Releia a ordem do versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Naqueles dias"
+      },
+      {
+        "id": "b",
+        "text": "não havia rei em Israel"
+      },
+      {
+        "id": "c",
+        "text": "cada um fazia o que bem lhe parecia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Naqueles dias, não havia rei em Israel: cada um fazia o que bem lhe parecia.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "id": "juizes-sem-juizes-ciclo-01-cada-um-fazia-o-que--04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 21:25",
+    "learningObjective": "Reconhecer que, sem rei, cada um era a própria lei — o refrão do caos moral em Juízes.",
+    "evidence": [
+      "Juízes 21:25"
+    ],
+    "type": "complete",
+    "question": "Complete: \"cada um fazia o que bem lhe ___.\"",
+    "prompt": "Complete: \"cada um fazia o que bem lhe ___.\"",
+    "cue": "Complete: \"cada um fazia o que bem lhe ___.\"",
+    "feedbackCorrect": "Certo: cada um fazia o que bem lhe \"parecia\".",
+    "feedbackWrong": {
+      "a": "Rei é o que faltava; aqui a palavra é parecia.",
+      "c": "Dias situa o tempo, não completa esta frase."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "rei"
+      },
+      {
+        "id": "b",
+        "text": "parecia"
+      },
+      {
+        "id": "c",
+        "text": "dias"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Naqueles dias, não havia rei em Israel: cada um fazia o que bem lhe parecia.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "id": "juizes-sem-juizes-ciclo-01-cada-um-fazia-o-que--05",
+    "template": "cada um fazia o que bem lhe ___."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 21:25",
+    "learningObjective": "Reconhecer que, sem rei, cada um era a própria lei — o refrão do caos moral em Juízes.",
+    "evidence": [
+      "Juízes 21:25"
+    ],
+    "type": "connect",
+    "question": "O que Juízes 21:25 comunica que se liga a este contexto?",
+    "prompt": "O que Juízes 21:25 comunica que se liga a este contexto?",
+    "cue": "O que Juízes 21:25 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: sem rei, cada um vira lei — caos moral como refrão.",
+    "feedbackWrong": {
+      "a": "O texto não celebra ordem sob um rei presente.",
+      "c": "Não há aqui reforma cultual coletiva."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ordem sob um rei justo"
+      },
+      {
+        "id": "b",
+        "text": "Caos moral sem rei"
+      },
+      {
+        "id": "c",
+        "text": "Reforma cultual coletiva"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Naqueles dias, não havia rei em Israel: cada um fazia o que bem lhe parecia.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "id": "juizes-sem-juizes-ciclo-01-cada-um-fazia-o-que--06",
+    "passageA": {
+      "ref": "Juízes 21:25",
+      "text": "Naqueles dias, não havia rei em Israel: cada um fazia o que bem lhe parecia."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Sem rei, cada um era lei: o caos moral é o refrão do livro."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 21:25",
+    "learningObjective": "Reconhecer que, sem rei, cada um era a própria lei — o refrão do caos moral em Juízes.",
+    "evidence": [
+      "Juízes 21:25"
+    ],
+    "type": "true_false",
+    "question": "A ausência de rei em Israel resulta em cada um seguir o próprio critério.",
+    "prompt": "A ausência de rei em Israel resulta em cada um seguir o próprio critério.",
+    "cue": "A ausência de rei em Israel resulta em cada um seguir o próprio critério.",
+    "feedbackCorrect": "Certo: sem rei, cada um fazia o que bem lhe parecia.",
+    "feedbackWrong": {
+      "false": "O versículo liga a falta de rei à conduta individual."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Naqueles dias, não havia rei em Israel: cada um fazia o que bem lhe parecia.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "id": "juizes-cam-juizes-ciclo-01-cada-um-fazia-o-que--01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 21:25",
+    "learningObjective": "Reconhecer que, sem rei, cada um era a própria lei — o refrão do caos moral em Juízes.",
+    "evidence": [
+      "Juízes 21:25"
+    ],
+    "type": "tap",
+    "question": "Em Juízes 21:25, toque a palavra que falta em \"cada um ___ o que bem lhe parecia\"?",
+    "prompt": "Em Juízes 21:25, toque a palavra que falta em \"cada um ___ o que bem lhe parecia\"?",
+    "cue": "Em Juízes 21:25, toque a palavra que falta em \"cada um ___ o que bem lhe parecia\"?",
+    "feedbackCorrect": "Exato: cada um \"fazia\" o que bem lhe parecia.",
+    "feedbackWrong": {
+      "a": "Rei é o que faltava; aqui o verbo é fazia.",
+      "c": "Parecia fecha a frase; a lacuna pede fazia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "rei"
+      },
+      {
+        "id": "b",
+        "text": "fazia"
+      },
+      {
+        "id": "c",
+        "text": "parecia"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Naqueles dias, não havia rei em Israel: cada um fazia o que bem lhe parecia.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "id": "juizes-cam-juizes-ciclo-01-cada-um-fazia-o-que--02",
+    "template": "cada um ___ o que bem lhe parecia"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 21:25",
+    "learningObjective": "Reconhecer que, sem rei, cada um era a própria lei — o refrão do caos moral em Juízes.",
+    "evidence": [
+      "Juízes 21:25"
+    ],
+    "type": "choice",
+    "question": "Como Juízes 21:25 liga a falta de rei à conduta do povo?",
+    "prompt": "Como Juízes 21:25 liga a falta de rei à conduta do povo?",
+    "cue": "Como Juízes 21:25 liga a falta de rei à conduta do povo?",
+    "feedbackCorrect": "Certo: sem autoridade comum, cada um vira medida de si mesmo.",
+    "feedbackWrong": {
+      "a": "O texto não descreve obediência unânime.",
+      "b": "Não há conselho de anciãos governando aqui.",
+      "d": "O versículo não fala de aliança renovada."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sem rei, o povo obedece unânime à lei."
+      },
+      {
+        "id": "b",
+        "text": "Um conselho de anciãos governa no lugar do rei."
+      },
+      {
+        "id": "c",
+        "text": "Sem rei, cada um toma a si mesmo por medida."
+      },
+      {
+        "id": "d",
+        "text": "A falta de rei gera aliança renovada imediata."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Naqueles dias, não havia rei em Israel: cada um fazia o que bem lhe parecia.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "id": "juizes-cam-juizes-ciclo-01-cada-um-fazia-o-que--03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 21:25",
+    "learningObjective": "Reconhecer que, sem rei, cada um era a própria lei — o refrão do caos moral em Juízes.",
+    "evidence": [
+      "Juízes 21:25"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Juízes 21:25?",
+    "prompt": "Como se encadeiam os eventos de Juízes 21:25?",
+    "cue": "Como se encadeiam os eventos de Juízes 21:25?",
+    "feedbackCorrect": "Certo: o tempo, a ausência de rei e então a conduta individual.",
+    "feedbackWrong": {
+      "a": "A conduta individual não abre o versículo.",
+      "c": "Releia o encadeamento do texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "cada um fazia o que bem lhe parecia"
+      },
+      {
+        "id": "b",
+        "text": "Naqueles dias"
+      },
+      {
+        "id": "c",
+        "text": "não havia rei em Israel"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Naqueles dias, não havia rei em Israel: cada um fazia o que bem lhe parecia.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "id": "juizes-cam-juizes-ciclo-01-cada-um-fazia-o-que--04",
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 21:25",
+    "learningObjective": "Reconhecer que, sem rei, cada um era a própria lei — o refrão do caos moral em Juízes.",
+    "evidence": [
+      "Juízes 21:25"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Naqueles dias, não havia ___ em Israel.\"",
+    "prompt": "Complete: \"Naqueles dias, não havia ___ em Israel.\"",
+    "cue": "Complete: \"Naqueles dias, não havia ___ em Israel.\"",
+    "feedbackCorrect": "Certo: não havia \"rei\" em Israel.",
+    "feedbackWrong": {
+      "b": "Parecia fecha a conduta; aqui falta rei.",
+      "c": "Fazia é o verbo da conduta, não o sujeito ausente."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "rei"
+      },
+      {
+        "id": "b",
+        "text": "parecia"
+      },
+      {
+        "id": "c",
+        "text": "fazia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Naqueles dias, não havia rei em Israel: cada um fazia o que bem lhe parecia.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "id": "juizes-cam-juizes-ciclo-01-cada-um-fazia-o-que--05",
+    "template": "Naqueles dias, não havia ___ em Israel."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 21:25",
+    "learningObjective": "Reconhecer que, sem rei, cada um era a própria lei — o refrão do caos moral em Juízes.",
+    "evidence": [
+      "Juízes 21:25"
+    ],
+    "type": "connect",
+    "question": "O que Juízes 21:25 comunica que se liga a este contexto?",
+    "prompt": "O que Juízes 21:25 comunica que se liga a este contexto?",
+    "cue": "O que Juízes 21:25 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: autonomia moral sem rei produz o refrão do caos.",
+    "feedbackWrong": {
+      "a": "O texto não aponta unidade sob a Torah.",
+      "b": "Não há aqui monarquia davídica estabelecida."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Unidade sob a Torah escrita"
+      },
+      {
+        "id": "b",
+        "text": "Monarquia davídica estabelecida"
+      },
+      {
+        "id": "c",
+        "text": "Autonomia moral sem rei"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Naqueles dias, não havia rei em Israel: cada um fazia o que bem lhe parecia.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "id": "juizes-cam-juizes-ciclo-01-cada-um-fazia-o-que--06",
+    "passageA": {
+      "ref": "Juízes 21:25",
+      "text": "Naqueles dias, não havia rei em Israel: cada um fazia o que bem lhe parecia."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Sem rei, cada um era lei: o caos moral é o refrão do livro."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 21:25",
+    "learningObjective": "Reconhecer que, sem rei, cada um era a própria lei — o refrão do caos moral em Juízes.",
+    "evidence": [
+      "Juízes 21:25"
+    ],
+    "type": "true_false",
+    "question": "Juízes 21:25 apresenta o critério individual como sinal de fidelidade à aliança.",
+    "prompt": "Juízes 21:25 apresenta o critério individual como sinal de fidelidade à aliança.",
+    "cue": "Juízes 21:25 apresenta o critério individual como sinal de fidelidade à aliança.",
+    "feedbackCorrect": "Certo: o verso marca caos moral, não fidelidade.",
+    "feedbackWrong": {
+      "true": "Fazer o que bem lhe parecia é diagnóstico de desordem, não de fidelidade."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Naqueles dias, não havia rei em Israel: cada um fazia o que bem lhe parecia.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "id": "juizes-pro-juizes-ciclo-01-cada-um-fazia-o-que--01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 21:25",
+    "learningObjective": "Reconhecer que, sem rei, cada um era a própria lei — o refrão do caos moral em Juízes.",
+    "evidence": [
+      "Juízes 21:25"
+    ],
+    "type": "tap",
+    "question": "Em Juízes 21:25, toque a palavra que falta em \"o que bem lhe ___\"?",
+    "prompt": "Em Juízes 21:25, toque a palavra que falta em \"o que bem lhe ___\"?",
+    "cue": "Em Juízes 21:25, toque a palavra que falta em \"o que bem lhe ___\"?",
+    "feedbackCorrect": "Exato: o que bem lhe \"parecia\" — o critério é subjetivo.",
+    "feedbackWrong": {
+      "a": "Rei é o que faltava; aqui a palavra é parecia.",
+      "b": "Fazia é o verbo anterior; a lacuna pede parecia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "rei"
+      },
+      {
+        "id": "b",
+        "text": "fazia"
+      },
+      {
+        "id": "c",
+        "text": "parecia"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Naqueles dias, não havia rei em Israel: cada um fazia o que bem lhe parecia.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "id": "juizes-pro-juizes-ciclo-01-cada-um-fazia-o-que--02",
+    "template": "o que bem lhe ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 21:25",
+    "learningObjective": "Reconhecer que, sem rei, cada um era a própria lei — o refrão do caos moral em Juízes.",
+    "evidence": [
+      "Juízes 21:25"
+    ],
+    "type": "choice",
+    "question": "Qual leitura teológica Juízes 21:25 sustenta sobre Israel sem rei?",
+    "prompt": "Qual leitura teológica Juízes 21:25 sustenta sobre Israel sem rei?",
+    "cue": "Qual leitura teológica Juízes 21:25 sustenta sobre Israel sem rei?",
+    "feedbackCorrect": "Certo: sem autoridade comum, o povo vira lei de si mesmo.",
+    "feedbackWrong": {
+      "a": "O texto não celebra liberdade como bênção.",
+      "c": "Não há aqui maturidade espiritual elogiada.",
+      "d": "O versículo não descreve culto puro restaurado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A liberdade individual é a bênção máxima da aliança."
+      },
+      {
+        "id": "b",
+        "text": "Sem rei, cada um vira lei — e isso revela caos moral."
+      },
+      {
+        "id": "c",
+        "text": "Israel prova maturidade espiritual sem liderança."
+      },
+      {
+        "id": "d",
+        "text": "A falta de rei garante culto puro e unido."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Naqueles dias, não havia rei em Israel: cada um fazia o que bem lhe parecia.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "id": "juizes-pro-juizes-ciclo-01-cada-um-fazia-o-que--03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 21:25",
+    "learningObjective": "Reconhecer que, sem rei, cada um era a própria lei — o refrão do caos moral em Juízes.",
+    "evidence": [
+      "Juízes 21:25"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Juízes 21:25?",
+    "prompt": "Qual sequência revela o sentido de Juízes 21:25?",
+    "cue": "Qual sequência revela o sentido de Juízes 21:25?",
+    "feedbackCorrect": "Certo: tempo sem rei, ausência de rei, critério individual.",
+    "feedbackWrong": {
+      "b": "Essa peça não fecha o sentido do versículo.",
+      "c": "Releia a progressão do texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Naqueles dias"
+      },
+      {
+        "id": "b",
+        "text": "não havia rei em Israel"
+      },
+      {
+        "id": "c",
+        "text": "cada um fazia o que bem lhe parecia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Naqueles dias, não havia rei em Israel: cada um fazia o que bem lhe parecia.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "id": "juizes-pro-juizes-ciclo-01-cada-um-fazia-o-que--04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 21:25",
+    "learningObjective": "Reconhecer que, sem rei, cada um era a própria lei — o refrão do caos moral em Juízes.",
+    "evidence": [
+      "Juízes 21:25"
+    ],
+    "type": "complete",
+    "question": "Complete: \"___ um fazia o que bem lhe parecia.\"",
+    "prompt": "Complete: \"___ um fazia o que bem lhe parecia.\"",
+    "cue": "Complete: \"___ um fazia o que bem lhe parecia.\"",
+    "feedbackCorrect": "Certo: \"cada\" um fazia o que bem lhe parecia.",
+    "feedbackWrong": {
+      "b": "Rei é o ausente; aqui a palavra é cada.",
+      "c": "Israel é o cenário; a lacuna pede cada."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "cada"
+      },
+      {
+        "id": "b",
+        "text": "rei"
+      },
+      {
+        "id": "c",
+        "text": "Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Naqueles dias, não havia rei em Israel: cada um fazia o que bem lhe parecia.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "id": "juizes-pro-juizes-ciclo-01-cada-um-fazia-o-que--05",
+    "template": "___ um fazia o que bem lhe parecia."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 21:25",
+    "learningObjective": "Reconhecer que, sem rei, cada um era a própria lei — o refrão do caos moral em Juízes.",
+    "evidence": [
+      "Juízes 21:25"
+    ],
+    "type": "connect",
+    "question": "O que Juízes 21:25 comunica que se liga a este contexto?",
+    "prompt": "O que Juízes 21:25 comunica que se liga a este contexto?",
+    "cue": "O que Juízes 21:25 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o refrão do livro é o caos quando cada um é lei.",
+    "feedbackWrong": {
+      "a": "O texto não aponta rei messiânico já entronizado.",
+      "b": "Não há aqui obediência coletiva à Torah."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Rei messiânico já entronizado"
+      },
+      {
+        "id": "b",
+        "text": "Obediência coletiva à Torah"
+      },
+      {
+        "id": "c",
+        "text": "Refrão do caos moral"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Naqueles dias, não havia rei em Israel: cada um fazia o que bem lhe parecia.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-01-cada-um-fazia-o-que-",
+    "id": "juizes-pro-juizes-ciclo-01-cada-um-fazia-o-que--06",
+    "passageA": {
+      "ref": "Juízes 21:25",
+      "text": "Naqueles dias, não havia rei em Israel: cada um fazia o que bem lhe parecia."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Sem rei, cada um era lei: o caos moral é o refrão do livro."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 2:16",
+    "learningObjective": "Ver que Jeová suscita juízes que livram — graça no meio da apostasia.",
+    "evidence": [
+      "Juízes 2:16"
+    ],
+    "type": "true_false",
+    "question": "Jeová suscitou juízes que livraram Israel da mão dos despojadores.",
+    "prompt": "Jeová suscitou juízes que livraram Israel da mão dos despojadores.",
+    "cue": "Jeová suscitou juízes que livraram Israel da mão dos despojadores.",
+    "feedbackCorrect": "Certo: o versículo afirma exatamente isso.",
+    "feedbackWrong": {
+      "false": "Juízes 2:16 diz que Jeová suscitou juízes que livraram."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Jeová suscitou juízes, que os livraram da mão dos que os despojavam.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "id": "juizes-sem-juizes-ciclo-02-deus-levanta-juizes-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 2:16",
+    "learningObjective": "Ver que Jeová suscita juízes que livram — graça no meio da apostasia.",
+    "evidence": [
+      "Juízes 2:16"
+    ],
+    "type": "tap",
+    "question": "Em Juízes 2:16, toque a palavra que falta em \"Jeová ___ juízes\"?",
+    "prompt": "Em Juízes 2:16, toque a palavra que falta em \"Jeová ___ juízes\"?",
+    "cue": "Em Juízes 2:16, toque a palavra que falta em \"Jeová ___ juízes\"?",
+    "feedbackCorrect": "Exato: Jeová \"suscitou\" juízes.",
+    "feedbackWrong": {
+      "b": "Juízes é o objeto; a lacuna pede o verbo suscitou.",
+      "c": "Livraram vem depois; aqui falta suscitou."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "suscitou"
+      },
+      {
+        "id": "b",
+        "text": "juízes"
+      },
+      {
+        "id": "c",
+        "text": "livraram"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jeová suscitou juízes, que os livraram da mão dos que os despojavam.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "id": "juizes-sem-juizes-ciclo-02-deus-levanta-juizes-02",
+    "template": "Jeová ___ juízes"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 2:16",
+    "learningObjective": "Ver que Jeová suscita juízes que livram — graça no meio da apostasia.",
+    "evidence": [
+      "Juízes 2:16"
+    ],
+    "type": "choice",
+    "question": "O que Juízes 2:16 afirma diretamente sobre os juízes?",
+    "prompt": "O que Juízes 2:16 afirma diretamente sobre os juízes?",
+    "cue": "O que Juízes 2:16 afirma diretamente sobre os juízes?",
+    "feedbackCorrect": "Certo: eles livraram Israel da mão dos que os despojavam.",
+    "feedbackWrong": {
+      "b": "O texto não diz que o povo escolheu os juízes.",
+      "c": "Não há coroação de rei neste versículo.",
+      "d": "O texto não atribui o livramento a alianças estrangeiras."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Os juízes livraram Israel dos que os despojavam."
+      },
+      {
+        "id": "b",
+        "text": "O povo elegeu juízes por voto das tribos."
+      },
+      {
+        "id": "c",
+        "text": "Jeová coroou um rei permanente em Israel."
+      },
+      {
+        "id": "d",
+        "text": "Os juízes firmaram pacto com os despojadores."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jeová suscitou juízes, que os livraram da mão dos que os despojavam.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "id": "juizes-sem-juizes-ciclo-02-deus-levanta-juizes-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 2:16",
+    "learningObjective": "Ver que Jeová suscita juízes que livram — graça no meio da apostasia.",
+    "evidence": [
+      "Juízes 2:16"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Juízes 2:16?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Juízes 2:16?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Juízes 2:16?",
+    "feedbackCorrect": "Certo: Jeová suscita, depois os juízes livram dos despojadores.",
+    "feedbackWrong": {
+      "b": "O livramento vem depois da suscitação.",
+      "c": "Releia a ordem do versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová suscitou juízes"
+      },
+      {
+        "id": "b",
+        "text": "que os livraram"
+      },
+      {
+        "id": "c",
+        "text": "da mão dos que os despojavam"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jeová suscitou juízes, que os livraram da mão dos que os despojavam.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "id": "juizes-sem-juizes-ciclo-02-deus-levanta-juizes-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 2:16",
+    "learningObjective": "Ver que Jeová suscita juízes que livram — graça no meio da apostasia.",
+    "evidence": [
+      "Juízes 2:16"
+    ],
+    "type": "complete",
+    "question": "Complete: \"que os ___ da mão dos que os despojavam.\"",
+    "prompt": "Complete: \"que os ___ da mão dos que os despojavam.\"",
+    "cue": "Complete: \"que os ___ da mão dos que os despojavam.\"",
+    "feedbackCorrect": "Certo: os juízes \"livraram\" Israel.",
+    "feedbackWrong": {
+      "a": "Suscitou é a ação de Jeová; aqui o verbo é livraram.",
+      "c": "Juízes é o objeto suscitado, não este verbo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "suscitou"
+      },
+      {
+        "id": "b",
+        "text": "livraram"
+      },
+      {
+        "id": "c",
+        "text": "juízes"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Jeová suscitou juízes, que os livraram da mão dos que os despojavam.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "id": "juizes-sem-juizes-ciclo-02-deus-levanta-juizes-05",
+    "template": "que os ___ da mão dos que os despojavam."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 2:16",
+    "learningObjective": "Ver que Jeová suscita juízes que livram — graça no meio da apostasia.",
+    "evidence": [
+      "Juízes 2:16"
+    ],
+    "type": "connect",
+    "question": "O que Juízes 2:16 comunica que se liga a este contexto?",
+    "prompt": "O que Juízes 2:16 comunica que se liga a este contexto?",
+    "cue": "O que Juízes 2:16 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Jeová suscita livradores — graça no meio da crise.",
+    "feedbackWrong": {
+      "a": "O texto não fala de mérito do povo.",
+      "c": "Não há abandono definitivo de Israel aqui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Mérito do povo que se salva"
+      },
+      {
+        "id": "b",
+        "text": "Graça que suscita juízes"
+      },
+      {
+        "id": "c",
+        "text": "Abandono definitivo de Israel"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Jeová suscitou juízes, que os livraram da mão dos que os despojavam.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "id": "juizes-sem-juizes-ciclo-02-deus-levanta-juizes-06",
+    "passageA": {
+      "ref": "Juízes 2:16",
+      "text": "Jeová suscitou juízes, que os livraram da mão dos que os despojavam."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jeová suscita juízes que livram — graça no meio da apostasia."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 2:16",
+    "learningObjective": "Ver que Jeová suscita juízes que livram — graça no meio da apostasia.",
+    "evidence": [
+      "Juízes 2:16"
+    ],
+    "type": "true_false",
+    "question": "Os juízes surgem por iniciativa própria, sem ação de Jeová.",
+    "prompt": "Os juízes surgem por iniciativa própria, sem ação de Jeová.",
+    "cue": "Os juízes surgem por iniciativa própria, sem ação de Jeová.",
+    "feedbackCorrect": "Certo: o texto diz que Jeová os suscitou.",
+    "feedbackWrong": {
+      "true": "Juízes 2:16 atribui a suscitação a Jeová, não ao povo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Jeová suscitou juízes, que os livraram da mão dos que os despojavam.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "id": "juizes-cam-juizes-ciclo-02-deus-levanta-juizes-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 2:16",
+    "learningObjective": "Ver que Jeová suscita juízes que livram — graça no meio da apostasia.",
+    "evidence": [
+      "Juízes 2:16"
+    ],
+    "type": "tap",
+    "question": "Em Juízes 2:16, toque a palavra que falta em \"da mão dos que os ___\"?",
+    "prompt": "Em Juízes 2:16, toque a palavra que falta em \"da mão dos que os ___\"?",
+    "cue": "Em Juízes 2:16, toque a palavra que falta em \"da mão dos que os ___\"?",
+    "feedbackCorrect": "Exato: dos que os \"despojavam\".",
+    "feedbackWrong": {
+      "a": "Suscitou é a ação de Jeová; aqui falta despojavam.",
+      "b": "Livraram é o ato dos juízes, não o dos opressores."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "suscitou"
+      },
+      {
+        "id": "b",
+        "text": "livraram"
+      },
+      {
+        "id": "c",
+        "text": "despojavam"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Jeová suscitou juízes, que os livraram da mão dos que os despojavam.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "id": "juizes-cam-juizes-ciclo-02-deus-levanta-juizes-02",
+    "template": "da mão dos que os ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 2:16",
+    "learningObjective": "Ver que Jeová suscita juízes que livram — graça no meio da apostasia.",
+    "evidence": [
+      "Juízes 2:16"
+    ],
+    "type": "choice",
+    "question": "Como se relacionam a ação de Jeová e o livramento em Juízes 2:16?",
+    "prompt": "Como se relacionam a ação de Jeová e o livramento em Juízes 2:16?",
+    "cue": "Como se relacionam a ação de Jeová e o livramento em Juízes 2:16?",
+    "feedbackCorrect": "Certo: Jeová suscita; o livramento segue dessa iniciativa.",
+    "feedbackWrong": {
+      "a": "O texto não coloca o povo como primeiro agente.",
+      "b": "Não há pacto com os despojadores.",
+      "d": "O versículo não fala de rei permanente."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O povo primeiro se arrepende; só então Jeová age."
+      },
+      {
+        "id": "b",
+        "text": "Os juízes negociam paz com os despojadores."
+      },
+      {
+        "id": "c",
+        "text": "Jeová suscita juízes, e estes livram Israel."
+      },
+      {
+        "id": "d",
+        "text": "Um rei permanente substitui os juízes no ato."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Jeová suscitou juízes, que os livraram da mão dos que os despojavam.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "id": "juizes-cam-juizes-ciclo-02-deus-levanta-juizes-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 2:16",
+    "learningObjective": "Ver que Jeová suscita juízes que livram — graça no meio da apostasia.",
+    "evidence": [
+      "Juízes 2:16"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Juízes 2:16?",
+    "prompt": "Como se encadeiam os eventos de Juízes 2:16?",
+    "cue": "Como se encadeiam os eventos de Juízes 2:16?",
+    "feedbackCorrect": "Certo: suscitação, livramento e então a mão dos despojadores.",
+    "feedbackWrong": {
+      "a": "Os despojadores não abrem o versículo.",
+      "c": "Releia o encadeamento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "da mão dos que os despojavam"
+      },
+      {
+        "id": "b",
+        "text": "Jeová suscitou juízes"
+      },
+      {
+        "id": "c",
+        "text": "que os livraram"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Jeová suscitou juízes, que os livraram da mão dos que os despojavam.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "id": "juizes-cam-juizes-ciclo-02-deus-levanta-juizes-04",
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 2:16",
+    "learningObjective": "Ver que Jeová suscita juízes que livram — graça no meio da apostasia.",
+    "evidence": [
+      "Juízes 2:16"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Jeová suscitou ___, que os livraram.\"",
+    "prompt": "Complete: \"Jeová suscitou ___, que os livraram.\"",
+    "cue": "Complete: \"Jeová suscitou ___, que os livraram.\"",
+    "feedbackCorrect": "Certo: Jeová suscitou \"juízes\".",
+    "feedbackWrong": {
+      "a": "Despojavam descreve os opressores, não os suscitados.",
+      "c": "Mão é o instrumento da opressão, não o objeto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "despojavam"
+      },
+      {
+        "id": "b",
+        "text": "juízes"
+      },
+      {
+        "id": "c",
+        "text": "mão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Jeová suscitou juízes, que os livraram da mão dos que os despojavam.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "id": "juizes-cam-juizes-ciclo-02-deus-levanta-juizes-05",
+    "template": "Jeová suscitou ___, que os livraram."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 2:16",
+    "learningObjective": "Ver que Jeová suscita juízes que livram — graça no meio da apostasia.",
+    "evidence": [
+      "Juízes 2:16"
+    ],
+    "type": "connect",
+    "question": "O que Juízes 2:16 comunica que se liga a este contexto?",
+    "prompt": "O que Juízes 2:16 comunica que se liga a este contexto?",
+    "cue": "O que Juízes 2:16 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o livramento vem de Jeová que suscita, não do mérito.",
+    "feedbackWrong": {
+      "a": "O texto não atribui o livramento à força militar própria.",
+      "b": "Não há abandono de Israel neste verso."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Força militar própria de Israel"
+      },
+      {
+        "id": "b",
+        "text": "Abandono definitivo do povo"
+      },
+      {
+        "id": "c",
+        "text": "Livramento por graça suscitada"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Jeová suscitou juízes, que os livraram da mão dos que os despojavam.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "id": "juizes-cam-juizes-ciclo-02-deus-levanta-juizes-06",
+    "passageA": {
+      "ref": "Juízes 2:16",
+      "text": "Jeová suscitou juízes, que os livraram da mão dos que os despojavam."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jeová suscita juízes que livram — graça no meio da apostasia."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 2:16",
+    "learningObjective": "Ver que Jeová suscita juízes que livram — graça no meio da apostasia.",
+    "evidence": [
+      "Juízes 2:16"
+    ],
+    "type": "true_false",
+    "question": "Em Juízes 2:16, o livramento revela graça de Jeová no meio da apostasia.",
+    "prompt": "Em Juízes 2:16, o livramento revela graça de Jeová no meio da apostasia.",
+    "cue": "Em Juízes 2:16, o livramento revela graça de Jeová no meio da apostasia.",
+    "feedbackCorrect": "Certo: Jeová suscita juízes que livram — graça ativa.",
+    "feedbackWrong": {
+      "false": "O verso mostra Jeová agindo para livrar, não só julgar."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Jeová suscitou juízes, que os livraram da mão dos que os despojavam.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "id": "juizes-pro-juizes-ciclo-02-deus-levanta-juizes-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 2:16",
+    "learningObjective": "Ver que Jeová suscita juízes que livram — graça no meio da apostasia.",
+    "evidence": [
+      "Juízes 2:16"
+    ],
+    "type": "tap",
+    "question": "Em Juízes 2:16, toque a palavra que falta em \"___ suscitou juízes\"?",
+    "prompt": "Em Juízes 2:16, toque a palavra que falta em \"___ suscitou juízes\"?",
+    "cue": "Em Juízes 2:16, toque a palavra que falta em \"___ suscitou juízes\"?",
+    "feedbackCorrect": "Exato: \"Jeová\" é quem suscita os juízes.",
+    "feedbackWrong": {
+      "b": "Juízes é o objeto; o sujeito é Jeová.",
+      "c": "Livraram é a ação dos juízes, não o sujeito."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "juízes"
+      },
+      {
+        "id": "c",
+        "text": "livraram"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jeová suscitou juízes, que os livraram da mão dos que os despojavam.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "id": "juizes-pro-juizes-ciclo-02-deus-levanta-juizes-02",
+    "template": "___ suscitou juízes"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 2:16",
+    "learningObjective": "Ver que Jeová suscita juízes que livram — graça no meio da apostasia.",
+    "evidence": [
+      "Juízes 2:16"
+    ],
+    "type": "choice",
+    "question": "Qual sentido teológico Juízes 2:16 prepara o leitor a ver?",
+    "prompt": "Qual sentido teológico Juízes 2:16 prepara o leitor a ver?",
+    "cue": "Qual sentido teológico Juízes 2:16 prepara o leitor a ver?",
+    "feedbackCorrect": "Certo: mesmo na apostasia, Jeová age por graça ao suscitar livradores.",
+    "feedbackWrong": {
+      "a": "O texto não diz que Israel se salvou sozinho.",
+      "c": "Não há aqui recusa de livrar o povo.",
+      "d": "O versículo não aponta rei eterno já reinando."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Israel se salva por mérito próprio sem graça."
+      },
+      {
+        "id": "b",
+        "text": "Jeová ainda suscita livramento no meio da crise."
+      },
+      {
+        "id": "c",
+        "text": "Jeová se recusa a livrar quem caiu em apostasia."
+      },
+      {
+        "id": "d",
+        "text": "O livramento prova que o rei eterno já reinava."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Jeová suscitou juízes, que os livraram da mão dos que os despojavam.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "id": "juizes-pro-juizes-ciclo-02-deus-levanta-juizes-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 2:16",
+    "learningObjective": "Ver que Jeová suscita juízes que livram — graça no meio da apostasia.",
+    "evidence": [
+      "Juízes 2:16"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Juízes 2:16?",
+    "prompt": "Qual sequência revela o sentido de Juízes 2:16?",
+    "cue": "Qual sequência revela o sentido de Juízes 2:16?",
+    "feedbackCorrect": "Certo: Jeová age, juízes livram, opressores são a ameaça.",
+    "feedbackWrong": {
+      "b": "Essa peça não abre o sentido do verso.",
+      "c": "Releia a progressão teológica."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová suscitou juízes"
+      },
+      {
+        "id": "b",
+        "text": "que os livraram"
+      },
+      {
+        "id": "c",
+        "text": "da mão dos que os despojavam"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jeová suscitou juízes, que os livraram da mão dos que os despojavam.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "id": "juizes-pro-juizes-ciclo-02-deus-levanta-juizes-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 2:16",
+    "learningObjective": "Ver que Jeová suscita juízes que livram — graça no meio da apostasia.",
+    "evidence": [
+      "Juízes 2:16"
+    ],
+    "type": "complete",
+    "question": "Complete: \"da ___ dos que os despojavam.\"",
+    "prompt": "Complete: \"da ___ dos que os despojavam.\"",
+    "cue": "Complete: \"da ___ dos que os despojavam.\"",
+    "feedbackCorrect": "Certo: da \"mão\" dos que os despojavam.",
+    "feedbackWrong": {
+      "b": "Juízes são os livradores, não esta palavra.",
+      "c": "Suscitou é o verbo de Jeová, não o instrumento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "mão"
+      },
+      {
+        "id": "b",
+        "text": "juízes"
+      },
+      {
+        "id": "c",
+        "text": "suscitou"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jeová suscitou juízes, que os livraram da mão dos que os despojavam.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "id": "juizes-pro-juizes-ciclo-02-deus-levanta-juizes-05",
+    "template": "da ___ dos que os despojavam."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 2:16",
+    "learningObjective": "Ver que Jeová suscita juízes que livram — graça no meio da apostasia.",
+    "evidence": [
+      "Juízes 2:16"
+    ],
+    "type": "connect",
+    "question": "O que Juízes 2:16 comunica que se liga a este contexto?",
+    "prompt": "O que Juízes 2:16 comunica que se liga a este contexto?",
+    "cue": "O que Juízes 2:16 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: graça que suscita juízes no meio da apostasia.",
+    "feedbackWrong": {
+      "a": "O texto não celebra autonomia do povo.",
+      "b": "Não há abandono total de Israel neste verso."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Autonomia do povo sem Deus"
+      },
+      {
+        "id": "b",
+        "text": "Abandono total de Israel"
+      },
+      {
+        "id": "c",
+        "text": "Graça no meio da apostasia"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Jeová suscitou juízes, que os livraram da mão dos que os despojavam.",
+    "trail": "juizes",
+    "section": "juizes-ciclo-02-deus-levanta-juizes",
+    "id": "juizes-pro-juizes-ciclo-02-deus-levanta-juizes-06",
+    "passageA": {
+      "ref": "Juízes 2:16",
+      "text": "Jeová suscitou juízes, que os livraram da mão dos que os despojavam."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jeová suscita juízes que livram — graça no meio da apostasia."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 4:8–9",
+    "learningObjective": "Ver que Débora vai e Sísera cai na mão de uma mulher — Jeová salva como quer.",
+    "evidence": [
+      "Juízes 4:8–9"
+    ],
+    "type": "true_false",
+    "question": "Baraque diz a Débora que só irá se ela for com ele.",
+    "prompt": "Baraque diz a Débora que só irá se ela for com ele.",
+    "cue": "Baraque diz a Débora que só irá se ela for com ele.",
+    "feedbackCorrect": "Certo: Se vieres comigo, irei; se não, não irei.",
+    "feedbackWrong": {
+      "false": "Juízes 4:8 registra exatamente essa condição de Baraque."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Disse-lhe Baraque: Se vieres comigo, irei; mas, se não vieres comigo, não irei. Respondeu ela: Certamente irei contigo. Contudo, não será tua a glória na expedição em que vais; porque Jeová entregará a Sísera nas mãos duma mulher. Levantou-se Débora e foi com Baraque a Quedes.",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "id": "juizes-sem-juizes-juizes-01-debora-e-baraque-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 4:8–9",
+    "learningObjective": "Ver que Débora vai e Sísera cai na mão de uma mulher — Jeová salva como quer.",
+    "evidence": [
+      "Juízes 4:8–9"
+    ],
+    "type": "tap",
+    "question": "Em Juízes 4:8–9, toque a palavra que falta em \"Se ___ comigo, irei\"?",
+    "prompt": "Em Juízes 4:8–9, toque a palavra que falta em \"Se ___ comigo, irei\"?",
+    "cue": "Em Juízes 4:8–9, toque a palavra que falta em \"Se ___ comigo, irei\"?",
+    "feedbackCorrect": "Exato: \"Se vieres comigo, irei\".",
+    "feedbackWrong": {
+      "b": "Irei é a resposta condicionada; a lacuna pede vieres.",
+      "c": "Glória vem depois; aqui falta vieres."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "vieres"
+      },
+      {
+        "id": "b",
+        "text": "irei"
+      },
+      {
+        "id": "c",
+        "text": "glória"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Disse-lhe Baraque: Se vieres comigo, irei; mas, se não vieres comigo, não irei. Respondeu ela: Certamente irei contigo. Contudo, não será tua a glória na expedição em que vais; porque Jeová entregará a Sísera nas mãos duma mulher. Levantou-se Débora e foi com Baraque a Quedes.",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "id": "juizes-sem-juizes-juizes-01-debora-e-baraque-02",
+    "template": "Se ___ comigo, irei"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 4:8–9",
+    "learningObjective": "Ver que Débora vai e Sísera cai na mão de uma mulher — Jeová salva como quer.",
+    "evidence": [
+      "Juízes 4:8–9"
+    ],
+    "type": "choice",
+    "question": "O que Débora afirma sobre a glória da expedição?",
+    "prompt": "O que Débora afirma sobre a glória da expedição?",
+    "cue": "O que Débora afirma sobre a glória da expedição?",
+    "feedbackCorrect": "Certo: a glória não será de Baraque; Sísera cairá por uma mulher.",
+    "feedbackWrong": {
+      "a": "Ela não recusa ir; diz que certamente irá.",
+      "b": "O texto não atribui a glória a Baraque.",
+      "d": "Não há recusa de acompanhar Baraque."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ela recusa ir e manda Baraque sozinho."
+      },
+      {
+        "id": "b",
+        "text": "A glória da vitória será toda de Baraque."
+      },
+      {
+        "id": "c",
+        "text": "A glória não será dele; Sísera cairá por uma mulher."
+      },
+      {
+        "id": "d",
+        "text": "Ela manda Baraque esperar Sísera em casa."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Disse-lhe Baraque: Se vieres comigo, irei; mas, se não vieres comigo, não irei. Respondeu ela: Certamente irei contigo. Contudo, não será tua a glória na expedição em que vais; porque Jeová entregará a Sísera nas mãos duma mulher. Levantou-se Débora e foi com Baraque a Quedes.",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "id": "juizes-sem-juizes-juizes-01-debora-e-baraque-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 4:8–9",
+    "learningObjective": "Ver que Débora vai e Sísera cai na mão de uma mulher — Jeová salva como quer.",
+    "evidence": [
+      "Juízes 4:8–9"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Juízes 4:8–9?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Juízes 4:8–9?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Juízes 4:8–9?",
+    "feedbackCorrect": "Certo: condição de Baraque, resposta de Débora, partida a Quedes.",
+    "feedbackWrong": {
+      "b": "A partida a Quedes fecha o trecho, não o abre.",
+      "c": "Releia a ordem do diálogo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Baraque condiciona a ida à presença de Débora"
+      },
+      {
+        "id": "b",
+        "text": "Débora promete ir e anuncia que a glória não será dele"
+      },
+      {
+        "id": "c",
+        "text": "Débora se levanta e vai com Baraque a Quedes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Disse-lhe Baraque: Se vieres comigo, irei; mas, se não vieres comigo, não irei. Respondeu ela: Certamente irei contigo. Contudo, não será tua a glória na expedição em que vais; porque Jeová entregará a Sísera nas mãos duma mulher. Levantou-se Débora e foi com Baraque a Quedes.",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "id": "juizes-sem-juizes-juizes-01-debora-e-baraque-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 4:8–9",
+    "learningObjective": "Ver que Débora vai e Sísera cai na mão de uma mulher — Jeová salva como quer.",
+    "evidence": [
+      "Juízes 4:8–9"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Jeová entregará a Sísera nas mãos duma ___.\"",
+    "prompt": "Complete: \"Jeová entregará a Sísera nas mãos duma ___.\"",
+    "cue": "Complete: \"Jeová entregará a Sísera nas mãos duma ___.\"",
+    "feedbackCorrect": "Certo: nas mãos duma \"mulher\".",
+    "feedbackWrong": {
+      "a": "Glória é o que Baraque perderá; aqui a palavra é mulher.",
+      "c": "Quedes é o destino; a lacuna pede mulher."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "glória"
+      },
+      {
+        "id": "b",
+        "text": "mulher"
+      },
+      {
+        "id": "c",
+        "text": "Quedes"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Disse-lhe Baraque: Se vieres comigo, irei; mas, se não vieres comigo, não irei. Respondeu ela: Certamente irei contigo. Contudo, não será tua a glória na expedição em que vais; porque Jeová entregará a Sísera nas mãos duma mulher. Levantou-se Débora e foi com Baraque a Quedes.",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "id": "juizes-sem-juizes-juizes-01-debora-e-baraque-05",
+    "template": "Jeová entregará a Sísera nas mãos duma ___."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 4:8–9",
+    "learningObjective": "Ver que Débora vai e Sísera cai na mão de uma mulher — Jeová salva como quer.",
+    "evidence": [
+      "Juízes 4:8–9"
+    ],
+    "type": "connect",
+    "question": "O que Juízes 4:8–9 comunica que se liga a este contexto?",
+    "prompt": "O que Juízes 4:8–9 comunica que se liga a este contexto?",
+    "cue": "O que Juízes 4:8–9 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Débora vai e a vitória não segue o molde esperado.",
+    "feedbackWrong": {
+      "a": "O texto não garante glória a Baraque.",
+      "c": "Não há recusa de Débora em ir."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Glória garantida a Baraque"
+      },
+      {
+        "id": "b",
+        "text": "Jeová salva como quer"
+      },
+      {
+        "id": "c",
+        "text": "Recusa de Débora em ir"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Disse-lhe Baraque: Se vieres comigo, irei; mas, se não vieres comigo, não irei. Respondeu ela: Certamente irei contigo. Contudo, não será tua a glória na expedição em que vais; porque Jeová entregará a Sísera nas mãos duma mulher. Levantou-se Débora e foi com Baraque a Quedes.",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "id": "juizes-sem-juizes-juizes-01-debora-e-baraque-06",
+    "passageA": {
+      "ref": "Juízes 4:8–9",
+      "text": "Jeová entregará a Sísera nas mãos duma mulher."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Débora vai; Sísera cai na mão de uma mulher — Jeová salva como quer."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 4:8–9",
+    "learningObjective": "Ver que Débora vai e Sísera cai na mão de uma mulher — Jeová salva como quer.",
+    "evidence": [
+      "Juízes 4:8–9"
+    ],
+    "type": "true_false",
+    "question": "Débora aceita ir, mas anuncia que a glória da expedição não será de Baraque.",
+    "prompt": "Débora aceita ir, mas anuncia que a glória da expedição não será de Baraque.",
+    "cue": "Débora aceita ir, mas anuncia que a glória da expedição não será de Baraque.",
+    "feedbackCorrect": "Certo: ela vai e avisa que Sísera cairá por uma mulher.",
+    "feedbackWrong": {
+      "false": "Juízes 4:9 une a ida de Débora ao anúncio sobre a glória."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Disse-lhe Baraque: Se vieres comigo, irei; mas, se não vieres comigo, não irei. Respondeu ela: Certamente irei contigo. Contudo, não será tua a glória na expedição em que vais; porque Jeová entregará a Sísera nas mãos duma mulher. Levantou-se Débora e foi com Baraque a Quedes.",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "id": "juizes-cam-juizes-juizes-01-debora-e-baraque-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 4:8–9",
+    "learningObjective": "Ver que Débora vai e Sísera cai na mão de uma mulher — Jeová salva como quer.",
+    "evidence": [
+      "Juízes 4:8–9"
+    ],
+    "type": "tap",
+    "question": "Em Juízes 4:8–9, toque a palavra que falta em \"não será tua a ___ na expedição\"?",
+    "prompt": "Em Juízes 4:8–9, toque a palavra que falta em \"não será tua a ___ na expedição\"?",
+    "cue": "Em Juízes 4:8–9, toque a palavra que falta em \"não será tua a ___ na expedição\"?",
+    "feedbackCorrect": "Exato: não será tua a \"glória\".",
+    "feedbackWrong": {
+      "a": "Mulher é quem recebe Sísera; aqui falta glória.",
+      "c": "Quedes é o destino; a lacuna pede glória."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "mulher"
+      },
+      {
+        "id": "b",
+        "text": "glória"
+      },
+      {
+        "id": "c",
+        "text": "Quedes"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Disse-lhe Baraque: Se vieres comigo, irei; mas, se não vieres comigo, não irei. Respondeu ela: Certamente irei contigo. Contudo, não será tua a glória na expedição em que vais; porque Jeová entregará a Sísera nas mãos duma mulher. Levantou-se Débora e foi com Baraque a Quedes.",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "id": "juizes-cam-juizes-juizes-01-debora-e-baraque-02",
+    "template": "não será tua a ___ na expedição"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 4:8–9",
+    "learningObjective": "Ver que Débora vai e Sísera cai na mão de uma mulher — Jeová salva como quer.",
+    "evidence": [
+      "Juízes 4:8–9"
+    ],
+    "type": "choice",
+    "question": "Como o diálogo liga a condição de Baraque ao anúncio de Débora?",
+    "prompt": "Como o diálogo liga a condição de Baraque ao anúncio de Débora?",
+    "cue": "Como o diálogo liga a condição de Baraque ao anúncio de Débora?",
+    "feedbackCorrect": "Certo: ele condiciona a ida; ela vai e desloca a glória.",
+    "feedbackWrong": {
+      "a": "Ela não recusa; diz que certamente irá.",
+      "b": "O texto não promete glória plena a Baraque.",
+      "d": "Não há substituição de Baraque por outro general."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Débora recusa ir e deixa Baraque sozinho."
+      },
+      {
+        "id": "b",
+        "text": "Ela promete a Baraque toda a glória da vitória."
+      },
+      {
+        "id": "c",
+        "text": "Ela vai, mas a glória não será dele — Sísera cai por mulher."
+      },
+      {
+        "id": "d",
+        "text": "Baraque é substituído por outro general em Quedes."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Disse-lhe Baraque: Se vieres comigo, irei; mas, se não vieres comigo, não irei. Respondeu ela: Certamente irei contigo. Contudo, não será tua a glória na expedição em que vais; porque Jeová entregará a Sísera nas mãos duma mulher. Levantou-se Débora e foi com Baraque a Quedes.",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "id": "juizes-cam-juizes-juizes-01-debora-e-baraque-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 4:8–9",
+    "learningObjective": "Ver que Débora vai e Sísera cai na mão de uma mulher — Jeová salva como quer.",
+    "evidence": [
+      "Juízes 4:8–9"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Juízes 4:8–9?",
+    "prompt": "Como se encadeiam os eventos de Juízes 4:8–9?",
+    "cue": "Como se encadeiam os eventos de Juízes 4:8–9?",
+    "feedbackCorrect": "Certo: condição, resposta com aviso, partida a Quedes.",
+    "feedbackWrong": {
+      "a": "A partida não abre o diálogo.",
+      "c": "Releia o encadeamento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Débora se levanta e vai com Baraque a Quedes"
+      },
+      {
+        "id": "b",
+        "text": "Baraque condiciona a ida à presença de Débora"
+      },
+      {
+        "id": "c",
+        "text": "Débora promete ir e anuncia que a glória não será dele"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Disse-lhe Baraque: Se vieres comigo, irei; mas, se não vieres comigo, não irei. Respondeu ela: Certamente irei contigo. Contudo, não será tua a glória na expedição em que vais; porque Jeová entregará a Sísera nas mãos duma mulher. Levantou-se Débora e foi com Baraque a Quedes.",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "id": "juizes-cam-juizes-juizes-01-debora-e-baraque-04",
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 4:8–9",
+    "learningObjective": "Ver que Débora vai e Sísera cai na mão de uma mulher — Jeová salva como quer.",
+    "evidence": [
+      "Juízes 4:8–9"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Levantou-se Débora e foi com Baraque a ___.\"",
+    "prompt": "Complete: \"Levantou-se Débora e foi com Baraque a ___.\"",
+    "cue": "Complete: \"Levantou-se Débora e foi com Baraque a ___.\"",
+    "feedbackCorrect": "Certo: foram a \"Quedes\".",
+    "feedbackWrong": {
+      "a": "Sísera é o inimigo; o destino é Quedes.",
+      "c": "Glória é o tema do aviso, não o lugar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sísera"
+      },
+      {
+        "id": "b",
+        "text": "Quedes"
+      },
+      {
+        "id": "c",
+        "text": "glória"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Disse-lhe Baraque: Se vieres comigo, irei; mas, se não vieres comigo, não irei. Respondeu ela: Certamente irei contigo. Contudo, não será tua a glória na expedição em que vais; porque Jeová entregará a Sísera nas mãos duma mulher. Levantou-se Débora e foi com Baraque a Quedes.",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "id": "juizes-cam-juizes-juizes-01-debora-e-baraque-05",
+    "template": "Levantou-se Débora e foi com Baraque a ___."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 4:8–9",
+    "learningObjective": "Ver que Débora vai e Sísera cai na mão de uma mulher — Jeová salva como quer.",
+    "evidence": [
+      "Juízes 4:8–9"
+    ],
+    "type": "connect",
+    "question": "O que Juízes 4:8–9 comunica que se liga a este contexto?",
+    "prompt": "O que Juízes 4:8–9 comunica que se liga a este contexto?",
+    "cue": "O que Juízes 4:8–9 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a vitória não segue o molde da glória de Baraque.",
+    "feedbackWrong": {
+      "a": "O texto não centra a glória em Baraque.",
+      "b": "Não há recusa de Débora."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Glória centrada em Baraque"
+      },
+      {
+        "id": "b",
+        "text": "Recusa de Débora em partir"
+      },
+      {
+        "id": "c",
+        "text": "Vitória fora do molde esperado"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Disse-lhe Baraque: Se vieres comigo, irei; mas, se não vieres comigo, não irei. Respondeu ela: Certamente irei contigo. Contudo, não será tua a glória na expedição em que vais; porque Jeová entregará a Sísera nas mãos duma mulher. Levantou-se Débora e foi com Baraque a Quedes.",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "id": "juizes-cam-juizes-juizes-01-debora-e-baraque-06",
+    "passageA": {
+      "ref": "Juízes 4:8–9",
+      "text": "não será tua a glória na expedição em que vais"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Débora vai; Sísera cai na mão de uma mulher — Jeová salva como quer."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 4:8–9",
+    "learningObjective": "Ver que Débora vai e Sísera cai na mão de uma mulher — Jeová salva como quer.",
+    "evidence": [
+      "Juízes 4:8–9"
+    ],
+    "type": "true_false",
+    "question": "O anúncio de Débora mostra que Jeová pode entregar a vitória por caminhos que retiram a glória humana esperada.",
+    "prompt": "O anúncio de Débora mostra que Jeová pode entregar a vitória por caminhos que retiram a glória humana esperada.",
+    "cue": "O anúncio de Débora mostra que Jeová pode entregar a vitória por caminhos que retiram a glória humana esperada.",
+    "feedbackCorrect": "Certo: Sísera cairá nas mãos de uma mulher — Jeová salva como quer.",
+    "feedbackWrong": {
+      "false": "O texto desloca a glória de Baraque para o modo de Jeová."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Disse-lhe Baraque: Se vieres comigo, irei; mas, se não vieres comigo, não irei. Respondeu ela: Certamente irei contigo. Contudo, não será tua a glória na expedição em que vais; porque Jeová entregará a Sísera nas mãos duma mulher. Levantou-se Débora e foi com Baraque a Quedes.",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "id": "juizes-pro-juizes-juizes-01-debora-e-baraque-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 4:8–9",
+    "learningObjective": "Ver que Débora vai e Sísera cai na mão de uma mulher — Jeová salva como quer.",
+    "evidence": [
+      "Juízes 4:8–9"
+    ],
+    "type": "tap",
+    "question": "Em Juízes 4:8–9, toque a palavra que falta em \"Jeová entregará a ___ nas mãos duma mulher\"?",
+    "prompt": "Em Juízes 4:8–9, toque a palavra que falta em \"Jeová entregará a ___ nas mãos duma mulher\"?",
+    "cue": "Em Juízes 4:8–9, toque a palavra que falta em \"Jeová entregará a ___ nas mãos duma mulher\"?",
+    "feedbackCorrect": "Exato: Jeová entregará a \"Sísera\".",
+    "feedbackWrong": {
+      "b": "Débora vai com Baraque; o entregue é Sísera.",
+      "c": "Baraque perde a glória; a lacuna pede Sísera."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sísera"
+      },
+      {
+        "id": "b",
+        "text": "Débora"
+      },
+      {
+        "id": "c",
+        "text": "Baraque"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Disse-lhe Baraque: Se vieres comigo, irei; mas, se não vieres comigo, não irei. Respondeu ela: Certamente irei contigo. Contudo, não será tua a glória na expedição em que vais; porque Jeová entregará a Sísera nas mãos duma mulher. Levantou-se Débora e foi com Baraque a Quedes.",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "id": "juizes-pro-juizes-juizes-01-debora-e-baraque-02",
+    "template": "Jeová entregará a ___ nas mãos duma mulher"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 4:8–9",
+    "learningObjective": "Ver que Débora vai e Sísera cai na mão de uma mulher — Jeová salva como quer.",
+    "evidence": [
+      "Juízes 4:8–9"
+    ],
+    "type": "choice",
+    "question": "Qual implicação teológica o anúncio de Débora sustenta?",
+    "prompt": "Qual implicação teológica o anúncio de Débora sustenta?",
+    "cue": "Qual implicação teológica o anúncio de Débora sustenta?",
+    "feedbackCorrect": "Certo: Jeová define o modo da vitória — e pode retirar a glória humana.",
+    "feedbackWrong": {
+      "a": "O texto não garante glória a Baraque pelo valor militar.",
+      "c": "Débora não se recusa; ela vai.",
+      "d": "Não há neutralidade de Jeová neste anúncio."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A glória militar de Baraque está garantida por valor."
+      },
+      {
+        "id": "b",
+        "text": "Jeová salva como quer e pode deslocar a glória humana."
+      },
+      {
+        "id": "c",
+        "text": "Débora se recusa para proteger a honra de Baraque."
+      },
+      {
+        "id": "d",
+        "text": "Jeová permanece neutro na disputa com Sísera."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Disse-lhe Baraque: Se vieres comigo, irei; mas, se não vieres comigo, não irei. Respondeu ela: Certamente irei contigo. Contudo, não será tua a glória na expedição em que vais; porque Jeová entregará a Sísera nas mãos duma mulher. Levantou-se Débora e foi com Baraque a Quedes.",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "id": "juizes-pro-juizes-juizes-01-debora-e-baraque-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 4:8–9",
+    "learningObjective": "Ver que Débora vai e Sísera cai na mão de uma mulher — Jeová salva como quer.",
+    "evidence": [
+      "Juízes 4:8–9"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Juízes 4:8–9?",
+    "prompt": "Qual sequência revela o sentido de Juízes 4:8–9?",
+    "cue": "Qual sequência revela o sentido de Juízes 4:8–9?",
+    "feedbackCorrect": "Certo: condição humana, aviso de Jeová, obediência no caminho.",
+    "feedbackWrong": {
+      "b": "Essa peça não fecha o sentido do trecho.",
+      "c": "Releia a progressão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Baraque condiciona a ida à presença de Débora"
+      },
+      {
+        "id": "b",
+        "text": "Débora anuncia que a glória não será dele"
+      },
+      {
+        "id": "c",
+        "text": "Débora se levanta e vai com Baraque a Quedes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Disse-lhe Baraque: Se vieres comigo, irei; mas, se não vieres comigo, não irei. Respondeu ela: Certamente irei contigo. Contudo, não será tua a glória na expedição em que vais; porque Jeová entregará a Sísera nas mãos duma mulher. Levantou-se Débora e foi com Baraque a Quedes.",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "id": "juizes-pro-juizes-juizes-01-debora-e-baraque-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 4:8–9",
+    "learningObjective": "Ver que Débora vai e Sísera cai na mão de uma mulher — Jeová salva como quer.",
+    "evidence": [
+      "Juízes 4:8–9"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Certamente ___ contigo.\"",
+    "prompt": "Complete: \"Certamente ___ contigo.\"",
+    "cue": "Complete: \"Certamente ___ contigo.\"",
+    "feedbackCorrect": "Certo: \"Certamente irei contigo.\"",
+    "feedbackWrong": {
+      "b": "Vieres é a condição de Baraque; aqui Débora diz irei.",
+      "c": "Glória é o tema do aviso, não este verbo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "irei"
+      },
+      {
+        "id": "b",
+        "text": "vieres"
+      },
+      {
+        "id": "c",
+        "text": "glória"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Disse-lhe Baraque: Se vieres comigo, irei; mas, se não vieres comigo, não irei. Respondeu ela: Certamente irei contigo. Contudo, não será tua a glória na expedição em que vais; porque Jeová entregará a Sísera nas mãos duma mulher. Levantou-se Débora e foi com Baraque a Quedes.",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "id": "juizes-pro-juizes-juizes-01-debora-e-baraque-05",
+    "template": "Certamente ___ contigo."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 4:8–9",
+    "learningObjective": "Ver que Débora vai e Sísera cai na mão de uma mulher — Jeová salva como quer.",
+    "evidence": [
+      "Juízes 4:8–9"
+    ],
+    "type": "connect",
+    "question": "O que Juízes 4:8–9 comunica que se liga a este contexto?",
+    "prompt": "O que Juízes 4:8–9 comunica que se liga a este contexto?",
+    "cue": "O que Juízes 4:8–9 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Jeová salva como quer — Sísera cai na mão de uma mulher.",
+    "feedbackWrong": {
+      "a": "O texto não centra a glória em Baraque.",
+      "b": "Não há abandono da expedição."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Glória humana de Baraque"
+      },
+      {
+        "id": "b",
+        "text": "Abandono da expedição"
+      },
+      {
+        "id": "c",
+        "text": "Salvação no modo de Jeová"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Disse-lhe Baraque: Se vieres comigo, irei; mas, se não vieres comigo, não irei. Respondeu ela: Certamente irei contigo. Contudo, não será tua a glória na expedição em que vais; porque Jeová entregará a Sísera nas mãos duma mulher. Levantou-se Débora e foi com Baraque a Quedes.",
+    "trail": "juizes",
+    "section": "juizes-juizes-01-debora-e-baraque",
+    "id": "juizes-pro-juizes-juizes-01-debora-e-baraque-06",
+    "passageA": {
+      "ref": "Juízes 4:8–9",
+      "text": "Jeová entregará a Sísera nas mãos duma mulher."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Débora vai; Sísera cai na mão de uma mulher — Jeová salva como quer."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 7:2",
+    "learningObjective": "Entender que gente demais impede a glória de Jeová — a salvação não é da mão de Israel.",
+    "evidence": [
+      "Juízes 7:2"
+    ],
+    "type": "true_false",
+    "question": "Jeová diz a Gideão que há gente demais para entregar os midianitas.",
+    "prompt": "Jeová diz a Gideão que há gente demais para entregar os midianitas.",
+    "cue": "Jeová diz a Gideão que há gente demais para entregar os midianitas.",
+    "feedbackCorrect": "Certo: Tens contigo gente demais.",
+    "feedbackWrong": {
+      "false": "Juízes 7:2 abre com essa declaração de Jeová."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Disse Jeová a Gideão: Tens contigo gente demais para eu entregar os midianitas nas suas mãos, sem que Israel se glorie contra mim, dizendo: Foi a minha própria mão que me salvou.",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "id": "juizes-sem-juizes-juizes-02-gideao-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 7:2",
+    "learningObjective": "Entender que gente demais impede a glória de Jeová — a salvação não é da mão de Israel.",
+    "evidence": [
+      "Juízes 7:2"
+    ],
+    "type": "tap",
+    "question": "Em Juízes 7:2, toque a palavra que falta em \"Tens contigo gente ___ \"?",
+    "prompt": "Em Juízes 7:2, toque a palavra que falta em \"Tens contigo gente ___ \"?",
+    "cue": "Em Juízes 7:2, toque a palavra que falta em \"Tens contigo gente ___ \"?",
+    "feedbackCorrect": "Exato: gente \"demais\".",
+    "feedbackWrong": {
+      "b": "Mão aparece no fim; aqui falta demais.",
+      "c": "Gideão é o destinatário; a lacuna pede demais."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "demais"
+      },
+      {
+        "id": "b",
+        "text": "mão"
+      },
+      {
+        "id": "c",
+        "text": "Gideão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Disse Jeová a Gideão: Tens contigo gente demais para eu entregar os midianitas nas suas mãos, sem que Israel se glorie contra mim, dizendo: Foi a minha própria mão que me salvou.",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "id": "juizes-sem-juizes-juizes-02-gideao-02",
+    "template": "Tens contigo gente ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 7:2",
+    "learningObjective": "Entender que gente demais impede a glória de Jeová — a salvação não é da mão de Israel.",
+    "evidence": [
+      "Juízes 7:2"
+    ],
+    "type": "choice",
+    "question": "O que Jeová quer evitar que Israel diga após a vitória?",
+    "prompt": "O que Jeová quer evitar que Israel diga após a vitória?",
+    "cue": "O que Jeová quer evitar que Israel diga após a vitória?",
+    "feedbackCorrect": "Certo: \"Foi a minha própria mão que me salvou.\"",
+    "feedbackWrong": {
+      "a": "O texto não elogia o número de soldados.",
+      "b": "Não há pedido para aumentar o exército.",
+      "d": "Jeová não atribui a vitória aos midianitas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Que o exército era pequeno demais para vencer."
+      },
+      {
+        "id": "b",
+        "text": "Que Gideão deveria recrutar mais soldados."
+      },
+      {
+        "id": "c",
+        "text": "Que a própria mão de Israel o salvou."
+      },
+      {
+        "id": "d",
+        "text": "Que os midianitas entregaram a vitória de graça."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Disse Jeová a Gideão: Tens contigo gente demais para eu entregar os midianitas nas suas mãos, sem que Israel se glorie contra mim, dizendo: Foi a minha própria mão que me salvou.",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "id": "juizes-sem-juizes-juizes-02-gideao-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 7:2",
+    "learningObjective": "Entender que gente demais impede a glória de Jeová — a salvação não é da mão de Israel.",
+    "evidence": [
+      "Juízes 7:2"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Juízes 7:2?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Juízes 7:2?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Juízes 7:2?",
+    "feedbackCorrect": "Certo: gente demais, entrega dos midianitas, risco de glória humana.",
+    "feedbackWrong": {
+      "b": "A jactância humana fecha o verso, não o abre.",
+      "c": "Releia a ordem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Tens contigo gente demais"
+      },
+      {
+        "id": "b",
+        "text": "para eu entregar os midianitas nas suas mãos"
+      },
+      {
+        "id": "c",
+        "text": "sem que Israel se glorie contra mim"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Disse Jeová a Gideão: Tens contigo gente demais para eu entregar os midianitas nas suas mãos, sem que Israel se glorie contra mim, dizendo: Foi a minha própria mão que me salvou.",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "id": "juizes-sem-juizes-juizes-02-gideao-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 7:2",
+    "learningObjective": "Entender que gente demais impede a glória de Jeová — a salvação não é da mão de Israel.",
+    "evidence": [
+      "Juízes 7:2"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Foi a minha própria ___ que me salvou.\"",
+    "prompt": "Complete: \"Foi a minha própria ___ que me salvou.\"",
+    "cue": "Complete: \"Foi a minha própria ___ que me salvou.\"",
+    "feedbackCorrect": "Certo: a própria \"mão\" que me salvou.",
+    "feedbackWrong": {
+      "a": "Demais descreve a gente; aqui a palavra é mão.",
+      "c": "Gideão é o nome; a lacuna pede mão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "demais"
+      },
+      {
+        "id": "b",
+        "text": "mão"
+      },
+      {
+        "id": "c",
+        "text": "Gideão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Disse Jeová a Gideão: Tens contigo gente demais para eu entregar os midianitas nas suas mãos, sem que Israel se glorie contra mim, dizendo: Foi a minha própria mão que me salvou.",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "id": "juizes-sem-juizes-juizes-02-gideao-05",
+    "template": "Foi a minha própria ___ que me salvou."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 7:2",
+    "learningObjective": "Entender que gente demais impede a glória de Jeová — a salvação não é da mão de Israel.",
+    "evidence": [
+      "Juízes 7:2"
+    ],
+    "type": "connect",
+    "question": "O que Juízes 7:2 comunica que se liga a este contexto?",
+    "prompt": "O que Juízes 7:2 comunica que se liga a este contexto?",
+    "cue": "O que Juízes 7:2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: gente demais impede a glória de Jeová.",
+    "feedbackWrong": {
+      "a": "O texto não elogia o número como garantia.",
+      "c": "Não há aqui salvação pela mão de Israel."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Número como garantia de vitória"
+      },
+      {
+        "id": "b",
+        "text": "Glória de Jeová sem jactância"
+      },
+      {
+        "id": "c",
+        "text": "Salvação pela mão de Israel"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Disse Jeová a Gideão: Tens contigo gente demais para eu entregar os midianitas nas suas mãos, sem que Israel se glorie contra mim, dizendo: Foi a minha própria mão que me salvou.",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "id": "juizes-sem-juizes-juizes-02-gideao-06",
+    "passageA": {
+      "ref": "Juízes 7:2",
+      "text": "Tens contigo gente demais para eu entregar os midianitas"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Gente demais impede a glória de Jeová — a salvação não é da mão de Israel."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 7:2",
+    "learningObjective": "Entender que gente demais impede a glória de Jeová — a salvação não é da mão de Israel.",
+    "evidence": [
+      "Juízes 7:2"
+    ],
+    "type": "true_false",
+    "question": "Jeová reduz o exército para que Israel não se glorie contra ele.",
+    "prompt": "Jeová reduz o exército para que Israel não se glorie contra ele.",
+    "cue": "Jeová reduz o exército para que Israel não se glorie contra ele.",
+    "feedbackCorrect": "Certo: gente demais abriria espaço para a jactância humana.",
+    "feedbackWrong": {
+      "false": "O verso liga o excesso de gente ao risco de glória contra Jeová."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Disse Jeová a Gideão: Tens contigo gente demais para eu entregar os midianitas nas suas mãos, sem que Israel se glorie contra mim, dizendo: Foi a minha própria mão que me salvou.",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "id": "juizes-cam-juizes-juizes-02-gideao-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 7:2",
+    "learningObjective": "Entender que gente demais impede a glória de Jeová — a salvação não é da mão de Israel.",
+    "evidence": [
+      "Juízes 7:2"
+    ],
+    "type": "tap",
+    "question": "Em Juízes 7:2, toque a palavra que falta em \"sem que Israel se ___ contra mim\"?",
+    "prompt": "Em Juízes 7:2, toque a palavra que falta em \"sem que Israel se ___ contra mim\"?",
+    "cue": "Em Juízes 7:2, toque a palavra que falta em \"sem que Israel se ___ contra mim\"?",
+    "feedbackCorrect": "Exato: sem que Israel se \"glorie\" contra mim.",
+    "feedbackWrong": {
+      "a": "Demais descreve a gente; aqui falta glorie.",
+      "c": "Salvou fecha a jactância citada; a lacuna pede glorie."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "demais"
+      },
+      {
+        "id": "b",
+        "text": "glorie"
+      },
+      {
+        "id": "c",
+        "text": "salvou"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Disse Jeová a Gideão: Tens contigo gente demais para eu entregar os midianitas nas suas mãos, sem que Israel se glorie contra mim, dizendo: Foi a minha própria mão que me salvou.",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "id": "juizes-cam-juizes-juizes-02-gideao-02",
+    "template": "sem que Israel se ___ contra mim"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 7:2",
+    "learningObjective": "Entender que gente demais impede a glória de Jeová — a salvação não é da mão de Israel.",
+    "evidence": [
+      "Juízes 7:2"
+    ],
+    "type": "choice",
+    "question": "Por que gente demais impede o propósito de Jeová em Juízes 7:2?",
+    "prompt": "Por que gente demais impede o propósito de Jeová em Juízes 7:2?",
+    "cue": "Por que gente demais impede o propósito de Jeová em Juízes 7:2?",
+    "feedbackCorrect": "Certo: o excesso abriria espaço para Israel se gloriar da própria mão.",
+    "feedbackWrong": {
+      "a": "O texto não fala de falta de comida.",
+      "b": "Não há medo de Gideão como motivo declarado.",
+      "d": "Jeová não elogia o número como sinal de fé."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque faltaria comida para tantos soldados."
+      },
+      {
+        "id": "b",
+        "text": "Porque Gideão temeria comandar um exército grande."
+      },
+      {
+        "id": "c",
+        "text": "Porque Israel poderia gloriar-se da própria mão."
+      },
+      {
+        "id": "d",
+        "text": "Porque o número grande prova a fé do povo."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Disse Jeová a Gideão: Tens contigo gente demais para eu entregar os midianitas nas suas mãos, sem que Israel se glorie contra mim, dizendo: Foi a minha própria mão que me salvou.",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "id": "juizes-cam-juizes-juizes-02-gideao-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 7:2",
+    "learningObjective": "Entender que gente demais impede a glória de Jeová — a salvação não é da mão de Israel.",
+    "evidence": [
+      "Juízes 7:2"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Juízes 7:2?",
+    "prompt": "Como se encadeiam os eventos de Juízes 7:2?",
+    "cue": "Como se encadeiam os eventos de Juízes 7:2?",
+    "feedbackCorrect": "Certo: excesso de gente, entrega possível, risco de jactância.",
+    "feedbackWrong": {
+      "a": "A jactância citada não abre o verso.",
+      "c": "Releia o encadeamento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Foi a minha própria mão que me salvou"
+      },
+      {
+        "id": "b",
+        "text": "Tens contigo gente demais"
+      },
+      {
+        "id": "c",
+        "text": "para eu entregar os midianitas nas suas mãos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Disse Jeová a Gideão: Tens contigo gente demais para eu entregar os midianitas nas suas mãos, sem que Israel se glorie contra mim, dizendo: Foi a minha própria mão que me salvou.",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "id": "juizes-cam-juizes-juizes-02-gideao-04",
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 7:2",
+    "learningObjective": "Entender que gente demais impede a glória de Jeová — a salvação não é da mão de Israel.",
+    "evidence": [
+      "Juízes 7:2"
+    ],
+    "type": "complete",
+    "question": "Complete: \"para eu entregar os ___ nas suas mãos\"",
+    "prompt": "Complete: \"para eu entregar os ___ nas suas mãos\"",
+    "cue": "Complete: \"para eu entregar os ___ nas suas mãos\"",
+    "feedbackCorrect": "Certo: entregar os \"midianitas\".",
+    "feedbackWrong": {
+      "a": "Gideão é o destinatário; o inimigo é midianitas.",
+      "c": "Israel é o povo; a lacuna pede midianitas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Gideão"
+      },
+      {
+        "id": "b",
+        "text": "midianitas"
+      },
+      {
+        "id": "c",
+        "text": "Israel"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Disse Jeová a Gideão: Tens contigo gente demais para eu entregar os midianitas nas suas mãos, sem que Israel se glorie contra mim, dizendo: Foi a minha própria mão que me salvou.",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "id": "juizes-cam-juizes-juizes-02-gideao-05",
+    "template": "para eu entregar os ___ nas suas mãos"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 7:2",
+    "learningObjective": "Entender que gente demais impede a glória de Jeová — a salvação não é da mão de Israel.",
+    "evidence": [
+      "Juízes 7:2"
+    ],
+    "type": "connect",
+    "question": "O que Juízes 7:2 comunica que se liga a este contexto?",
+    "prompt": "O que Juízes 7:2 comunica que se liga a este contexto?",
+    "cue": "O que Juízes 7:2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a salvação não pode ser atribuída à mão de Israel.",
+    "feedbackWrong": {
+      "a": "O texto não elogia o número como mérito.",
+      "b": "Não há aqui vitória pela força própria."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Mérito do número de soldados"
+      },
+      {
+        "id": "b",
+        "text": "Vitória pela força própria"
+      },
+      {
+        "id": "c",
+        "text": "Salvação sem glória humana"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Disse Jeová a Gideão: Tens contigo gente demais para eu entregar os midianitas nas suas mãos, sem que Israel se glorie contra mim, dizendo: Foi a minha própria mão que me salvou.",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "id": "juizes-cam-juizes-juizes-02-gideao-06",
+    "passageA": {
+      "ref": "Juízes 7:2",
+      "text": "Foi a minha própria mão que me salvou."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Gente demais impede a glória de Jeová — a salvação não é da mão de Israel."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 7:2",
+    "learningObjective": "Entender que gente demais impede a glória de Jeová — a salvação não é da mão de Israel.",
+    "evidence": [
+      "Juízes 7:2"
+    ],
+    "type": "true_false",
+    "question": "Juízes 7:2 ensina que a salvação deve ser reconhecida como obra de Jeová, não da mão de Israel.",
+    "prompt": "Juízes 7:2 ensina que a salvação deve ser reconhecida como obra de Jeová, não da mão de Israel.",
+    "cue": "Juízes 7:2 ensina que a salvação deve ser reconhecida como obra de Jeová, não da mão de Israel.",
+    "feedbackCorrect": "Certo: o risco nomeado é a jactância da própria mão.",
+    "feedbackWrong": {
+      "false": "O verso existe para proteger a glória de Jeová."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Disse Jeová a Gideão: Tens contigo gente demais para eu entregar os midianitas nas suas mãos, sem que Israel se glorie contra mim, dizendo: Foi a minha própria mão que me salvou.",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "id": "juizes-pro-juizes-juizes-02-gideao-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 7:2",
+    "learningObjective": "Entender que gente demais impede a glória de Jeová — a salvação não é da mão de Israel.",
+    "evidence": [
+      "Juízes 7:2"
+    ],
+    "type": "tap",
+    "question": "Em Juízes 7:2, toque a palavra que falta em \"Foi a minha própria mão que me ___\"?",
+    "prompt": "Em Juízes 7:2, toque a palavra que falta em \"Foi a minha própria mão que me ___\"?",
+    "cue": "Em Juízes 7:2, toque a palavra que falta em \"Foi a minha própria mão que me ___\"?",
+    "feedbackCorrect": "Exato: \"que me salvou\".",
+    "feedbackWrong": {
+      "a": "Demais descreve a gente; aqui falta salvou.",
+      "b": "Glorie é o verbo do risco; a lacuna pede salvou."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "demais"
+      },
+      {
+        "id": "b",
+        "text": "glorie"
+      },
+      {
+        "id": "c",
+        "text": "salvou"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Disse Jeová a Gideão: Tens contigo gente demais para eu entregar os midianitas nas suas mãos, sem que Israel se glorie contra mim, dizendo: Foi a minha própria mão que me salvou.",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "id": "juizes-pro-juizes-juizes-02-gideao-02",
+    "template": "Foi a minha própria mão que me ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 7:2",
+    "learningObjective": "Entender que gente demais impede a glória de Jeová — a salvação não é da mão de Israel.",
+    "evidence": [
+      "Juízes 7:2"
+    ],
+    "type": "choice",
+    "question": "Qual sentido teológico Juízes 7:2 prepara sobre a vitória?",
+    "prompt": "Qual sentido teológico Juízes 7:2 prepara sobre a vitória?",
+    "cue": "Qual sentido teológico Juízes 7:2 prepara sobre a vitória?",
+    "feedbackCorrect": "Certo: Jeová molda os meios para que a glória não caiba a Israel.",
+    "feedbackWrong": {
+      "a": "O texto não celebra o número como sinal de bênção.",
+      "c": "Não há salvação atribuída à mão humana.",
+      "d": "Jeová não elogia a jactância de Israel."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Quanto maior o exército, maior a bênção de Jeová."
+      },
+      {
+        "id": "b",
+        "text": "Jeová reduz os meios para guardar a própria glória."
+      },
+      {
+        "id": "c",
+        "text": "A mão de Israel é o verdadeiro agente da salvação."
+      },
+      {
+        "id": "d",
+        "text": "Israel deve gloriar-se da própria força após vencer."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Disse Jeová a Gideão: Tens contigo gente demais para eu entregar os midianitas nas suas mãos, sem que Israel se glorie contra mim, dizendo: Foi a minha própria mão que me salvou.",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "id": "juizes-pro-juizes-juizes-02-gideao-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 7:2",
+    "learningObjective": "Entender que gente demais impede a glória de Jeová — a salvação não é da mão de Israel.",
+    "evidence": [
+      "Juízes 7:2"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Juízes 7:2?",
+    "prompt": "Qual sequência revela o sentido de Juízes 7:2?",
+    "cue": "Qual sequência revela o sentido de Juízes 7:2?",
+    "feedbackCorrect": "Certo: excesso, entrega possível, risco da glória humana.",
+    "feedbackWrong": {
+      "b": "Essa peça não fecha o sentido.",
+      "c": "Releia a progressão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Tens contigo gente demais"
+      },
+      {
+        "id": "b",
+        "text": "para eu entregar os midianitas nas suas mãos"
+      },
+      {
+        "id": "c",
+        "text": "sem que Israel se glorie contra mim"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Disse Jeová a Gideão: Tens contigo gente demais para eu entregar os midianitas nas suas mãos, sem que Israel se glorie contra mim, dizendo: Foi a minha própria mão que me salvou.",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "id": "juizes-pro-juizes-juizes-02-gideao-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 7:2",
+    "learningObjective": "Entender que gente demais impede a glória de Jeová — a salvação não é da mão de Israel.",
+    "evidence": [
+      "Juízes 7:2"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Disse Jeová a ___: Tens contigo gente demais\"",
+    "prompt": "Complete: \"Disse Jeová a ___: Tens contigo gente demais\"",
+    "cue": "Complete: \"Disse Jeová a ___: Tens contigo gente demais\"",
+    "feedbackCorrect": "Certo: Disse Jeová a \"Gideão\".",
+    "feedbackWrong": {
+      "b": "Israel é o povo; o destinatário é Gideão.",
+      "c": "Midianitas são o inimigo; a lacuna pede Gideão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Gideão"
+      },
+      {
+        "id": "b",
+        "text": "Israel"
+      },
+      {
+        "id": "c",
+        "text": "midianitas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Disse Jeová a Gideão: Tens contigo gente demais para eu entregar os midianitas nas suas mãos, sem que Israel se glorie contra mim, dizendo: Foi a minha própria mão que me salvou.",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "id": "juizes-pro-juizes-juizes-02-gideao-05",
+    "template": "Disse Jeová a ___: Tens contigo gente demais"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 7:2",
+    "learningObjective": "Entender que gente demais impede a glória de Jeová — a salvação não é da mão de Israel.",
+    "evidence": [
+      "Juízes 7:2"
+    ],
+    "type": "connect",
+    "question": "O que Juízes 7:2 comunica que se liga a este contexto?",
+    "prompt": "O que Juízes 7:2 comunica que se liga a este contexto?",
+    "cue": "O que Juízes 7:2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a salvação não é da mão de Israel — glória de Jeová.",
+    "feedbackWrong": {
+      "a": "O texto não atribui a vitória ao número.",
+      "b": "Não há jactância aprovada."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Vitória pelo número de soldados"
+      },
+      {
+        "id": "b",
+        "text": "Jactância aprovada de Israel"
+      },
+      {
+        "id": "c",
+        "text": "Salvação sem mão humana"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Disse Jeová a Gideão: Tens contigo gente demais para eu entregar os midianitas nas suas mãos, sem que Israel se glorie contra mim, dizendo: Foi a minha própria mão que me salvou.",
+    "trail": "juizes",
+    "section": "juizes-juizes-02-gideao",
+    "id": "juizes-pro-juizes-juizes-02-gideao-06",
+    "passageA": {
+      "ref": "Juízes 7:2",
+      "text": "Foi a minha própria mão que me salvou."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Gente demais impede a glória de Jeová — a salvação não é da mão de Israel."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 16:28",
+    "learningObjective": "Ver Sansão clamar ainda esta vez — força que volta como súplica a Jeová.",
+    "evidence": [
+      "Juízes 16:28"
+    ],
+    "type": "true_false",
+    "question": "Sansão clamou a Jeová pedindo que se lembrasse dele e o fortalecesse.",
+    "prompt": "Sansão clamou a Jeová pedindo que se lembrasse dele e o fortalecesse.",
+    "cue": "Sansão clamou a Jeová pedindo que se lembrasse dele e o fortalecesse.",
+    "feedbackCorrect": "Certo: o versículo abre com esse clamor.",
+    "feedbackWrong": {
+      "false": "Juízes 16:28 registra o clamor de Sansão a Jeová."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Sansão clamou a Jeová e disse: Senhor Jeová, lembra-te de mim, e fortalece-me ainda esta vez, ó Deus, para que me vingue nos filisteus ao menos dum dos meus dois olhos.",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "id": "juizes-sem-juizes-juizes-03-sansao-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 16:28",
+    "learningObjective": "Ver Sansão clamar ainda esta vez — força que volta como súplica a Jeová.",
+    "evidence": [
+      "Juízes 16:28"
+    ],
+    "type": "tap",
+    "question": "Em Juízes 16:28, toque a palavra que falta em \"Sansão ___ a Jeová\"?",
+    "prompt": "Em Juízes 16:28, toque a palavra que falta em \"Sansão ___ a Jeová\"?",
+    "cue": "Em Juízes 16:28, toque a palavra que falta em \"Sansão ___ a Jeová\"?",
+    "feedbackCorrect": "Exato: Sansão \"clamou\" a Jeová.",
+    "feedbackWrong": {
+      "b": "Fortalece-me é o pedido; a lacuna pede clamou.",
+      "c": "Filisteus são o alvo; aqui falta clamou."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "clamou"
+      },
+      {
+        "id": "b",
+        "text": "fortalece-me"
+      },
+      {
+        "id": "c",
+        "text": "filisteus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Sansão clamou a Jeová e disse: Senhor Jeová, lembra-te de mim, e fortalece-me ainda esta vez, ó Deus, para que me vingue nos filisteus ao menos dum dos meus dois olhos.",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "id": "juizes-sem-juizes-juizes-03-sansao-02",
+    "template": "Sansão ___ a Jeová"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 16:28",
+    "learningObjective": "Ver Sansão clamar ainda esta vez — força que volta como súplica a Jeová.",
+    "evidence": [
+      "Juízes 16:28"
+    ],
+    "type": "choice",
+    "question": "O que Sansão pede explicitamente em Juízes 16:28?",
+    "prompt": "O que Sansão pede explicitamente em Juízes 16:28?",
+    "cue": "O que Sansão pede explicitamente em Juízes 16:28?",
+    "feedbackCorrect": "Certo: que Jeová se lembre e o fortaleça ainda esta vez.",
+    "feedbackWrong": {
+      "a": "O texto não pede fuga silenciosa.",
+      "c": "Não há pedido de novo nazireado ritual.",
+      "d": "Ele não negocia trégua com os filisteus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Que o deixem fugir em silêncio do templo."
+      },
+      {
+        "id": "b",
+        "text": "Que Jeová se lembre e o fortaleça ainda esta vez."
+      },
+      {
+        "id": "c",
+        "text": "Que lhe devolvam o nazireado por um rito."
+      },
+      {
+        "id": "d",
+        "text": "Que os filisteus firmem trégua com Israel."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Sansão clamou a Jeová e disse: Senhor Jeová, lembra-te de mim, e fortalece-me ainda esta vez, ó Deus, para que me vingue nos filisteus ao menos dum dos meus dois olhos.",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "id": "juizes-sem-juizes-juizes-03-sansao-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 16:28",
+    "learningObjective": "Ver Sansão clamar ainda esta vez — força que volta como súplica a Jeová.",
+    "evidence": [
+      "Juízes 16:28"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Juízes 16:28?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Juízes 16:28?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Juízes 16:28?",
+    "feedbackCorrect": "Certo: clamor, pedido de força, propósito da vingança.",
+    "feedbackWrong": {
+      "b": "A vingança fecha o pedido, não o abre.",
+      "c": "Releia a ordem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sansão clamou a Jeová"
+      },
+      {
+        "id": "b",
+        "text": "lembra-te de mim, e fortalece-me ainda esta vez"
+      },
+      {
+        "id": "c",
+        "text": "para que me vingue nos filisteus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Sansão clamou a Jeová e disse: Senhor Jeová, lembra-te de mim, e fortalece-me ainda esta vez, ó Deus, para que me vingue nos filisteus ao menos dum dos meus dois olhos.",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "id": "juizes-sem-juizes-juizes-03-sansao-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 16:28",
+    "learningObjective": "Ver Sansão clamar ainda esta vez — força que volta como súplica a Jeová.",
+    "evidence": [
+      "Juízes 16:28"
+    ],
+    "type": "complete",
+    "question": "Complete: \"fortalece-me ainda esta ___, ó Deus\"",
+    "prompt": "Complete: \"fortalece-me ainda esta ___, ó Deus\"",
+    "cue": "Complete: \"fortalece-me ainda esta ___, ó Deus\"",
+    "feedbackCorrect": "Certo: ainda esta \"vez\".",
+    "feedbackWrong": {
+      "a": "Clamou é o verbo inicial; aqui a palavra é vez.",
+      "c": "Olhos fecha o pedido; a lacuna pede vez."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "clamou"
+      },
+      {
+        "id": "b",
+        "text": "vez"
+      },
+      {
+        "id": "c",
+        "text": "olhos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Sansão clamou a Jeová e disse: Senhor Jeová, lembra-te de mim, e fortalece-me ainda esta vez, ó Deus, para que me vingue nos filisteus ao menos dum dos meus dois olhos.",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "id": "juizes-sem-juizes-juizes-03-sansao-05",
+    "template": "fortalece-me ainda esta ___, ó Deus"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 16:28",
+    "learningObjective": "Ver Sansão clamar ainda esta vez — força que volta como súplica a Jeová.",
+    "evidence": [
+      "Juízes 16:28"
+    ],
+    "type": "connect",
+    "question": "O que Juízes 16:28 comunica que se liga a este contexto?",
+    "prompt": "O que Juízes 16:28 comunica que se liga a este contexto?",
+    "cue": "O que Juízes 16:28 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a força volta como súplica — ainda esta vez.",
+    "feedbackWrong": {
+      "a": "O texto não descreve força autônoma.",
+      "c": "Não há silêncio de Sansão neste verso."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Força autônoma sem oração"
+      },
+      {
+        "id": "b",
+        "text": "Força que volta como súplica"
+      },
+      {
+        "id": "c",
+        "text": "Silêncio final de Sansão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Sansão clamou a Jeová e disse: Senhor Jeová, lembra-te de mim, e fortalece-me ainda esta vez, ó Deus, para que me vingue nos filisteus ao menos dum dos meus dois olhos.",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "id": "juizes-sem-juizes-juizes-03-sansao-06",
+    "passageA": {
+      "ref": "Juízes 16:28",
+      "text": "fortalece-me ainda esta vez, ó Deus"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Sansão clama: ainda esta vez — força que volta como súplica."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 16:28",
+    "learningObjective": "Ver Sansão clamar ainda esta vez — força que volta como súplica a Jeová.",
+    "evidence": [
+      "Juízes 16:28"
+    ],
+    "type": "true_false",
+    "question": "Sansão pede força própria, sem dirigir o pedido a Jeová.",
+    "prompt": "Sansão pede força própria, sem dirigir o pedido a Jeová.",
+    "cue": "Sansão pede força própria, sem dirigir o pedido a Jeová.",
+    "feedbackCorrect": "Certo: ele clama a Jeová — Senhor Jeová, lembra-te de mim.",
+    "feedbackWrong": {
+      "true": "O versículo é um clamor dirigido a Jeová, não força autônoma."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Sansão clamou a Jeová e disse: Senhor Jeová, lembra-te de mim, e fortalece-me ainda esta vez, ó Deus, para que me vingue nos filisteus ao menos dum dos meus dois olhos.",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "id": "juizes-cam-juizes-juizes-03-sansao-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 16:28",
+    "learningObjective": "Ver Sansão clamar ainda esta vez — força que volta como súplica a Jeová.",
+    "evidence": [
+      "Juízes 16:28"
+    ],
+    "type": "tap",
+    "question": "Em Juízes 16:28, toque a palavra que falta em \"lembra-te de mim, e ___ ainda esta vez\"?",
+    "prompt": "Em Juízes 16:28, toque a palavra que falta em \"lembra-te de mim, e ___ ainda esta vez\"?",
+    "cue": "Em Juízes 16:28, toque a palavra que falta em \"lembra-te de mim, e ___ ainda esta vez\"?",
+    "feedbackCorrect": "Exato: \"fortalece-me\" ainda esta vez.",
+    "feedbackWrong": {
+      "a": "Clamou é o verbo inicial; aqui falta fortalece-me.",
+      "c": "Vingue vem depois; a lacuna pede fortalece-me."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "clamou"
+      },
+      {
+        "id": "b",
+        "text": "fortalece-me"
+      },
+      {
+        "id": "c",
+        "text": "vingue"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Sansão clamou a Jeová e disse: Senhor Jeová, lembra-te de mim, e fortalece-me ainda esta vez, ó Deus, para que me vingue nos filisteus ao menos dum dos meus dois olhos.",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "id": "juizes-cam-juizes-juizes-03-sansao-02",
+    "template": "lembra-te de mim, e ___ ainda esta vez"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 16:28",
+    "learningObjective": "Ver Sansão clamar ainda esta vez — força que volta como súplica a Jeová.",
+    "evidence": [
+      "Juízes 16:28"
+    ],
+    "type": "choice",
+    "question": "Como o pedido de Sansão liga súplica e propósito em Juízes 16:28?",
+    "prompt": "Como o pedido de Sansão liga súplica e propósito em Juízes 16:28?",
+    "cue": "Como o pedido de Sansão liga súplica e propósito em Juízes 16:28?",
+    "feedbackCorrect": "Certo: pede memória e força para vingar-se nos filisteus.",
+    "feedbackWrong": {
+      "a": "Ele não pede fuga silenciosa.",
+      "b": "Não há pedido de perdão ritual separado.",
+      "d": "O alvo não é Israel, mas os filisteus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pede fuga silenciosa sem enfrentar os filisteus."
+      },
+      {
+        "id": "b",
+        "text": "Pede perdão ritual sem pedir força."
+      },
+      {
+        "id": "c",
+        "text": "Pede que Jeová o lembre e fortaleça para a vingança."
+      },
+      {
+        "id": "d",
+        "text": "Pede força para vingar-se de Israel, não dos filisteus."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Sansão clamou a Jeová e disse: Senhor Jeová, lembra-te de mim, e fortalece-me ainda esta vez, ó Deus, para que me vingue nos filisteus ao menos dum dos meus dois olhos.",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "id": "juizes-cam-juizes-juizes-03-sansao-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 16:28",
+    "learningObjective": "Ver Sansão clamar ainda esta vez — força que volta como súplica a Jeová.",
+    "evidence": [
+      "Juízes 16:28"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Juízes 16:28?",
+    "prompt": "Como se encadeiam os eventos de Juízes 16:28?",
+    "cue": "Como se encadeiam os eventos de Juízes 16:28?",
+    "feedbackCorrect": "Certo: clamor, pedido de força, propósito contra os filisteus.",
+    "feedbackWrong": {
+      "a": "A vingança não abre o verso.",
+      "c": "Releia o encadeamento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "para que me vingue nos filisteus"
+      },
+      {
+        "id": "b",
+        "text": "Sansão clamou a Jeová"
+      },
+      {
+        "id": "c",
+        "text": "fortalece-me ainda esta vez"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Sansão clamou a Jeová e disse: Senhor Jeová, lembra-te de mim, e fortalece-me ainda esta vez, ó Deus, para que me vingue nos filisteus ao menos dum dos meus dois olhos.",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "id": "juizes-cam-juizes-juizes-03-sansao-04",
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 16:28",
+    "learningObjective": "Ver Sansão clamar ainda esta vez — força que volta como súplica a Jeová.",
+    "evidence": [
+      "Juízes 16:28"
+    ],
+    "type": "complete",
+    "question": "Complete: \"para que me ___ nos filisteus\"",
+    "prompt": "Complete: \"para que me ___ nos filisteus\"",
+    "cue": "Complete: \"para que me ___ nos filisteus\"",
+    "feedbackCorrect": "Certo: para que me \"vingue\" nos filisteus.",
+    "feedbackWrong": {
+      "a": "Clamou é o verbo inicial; aqui falta vingue.",
+      "c": "Lembra-te é o outro pedido; a lacuna pede vingue."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "clamou"
+      },
+      {
+        "id": "b",
+        "text": "vingue"
+      },
+      {
+        "id": "c",
+        "text": "lembra-te"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Sansão clamou a Jeová e disse: Senhor Jeová, lembra-te de mim, e fortalece-me ainda esta vez, ó Deus, para que me vingue nos filisteus ao menos dum dos meus dois olhos.",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "id": "juizes-cam-juizes-juizes-03-sansao-05",
+    "template": "para que me ___ nos filisteus"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 16:28",
+    "learningObjective": "Ver Sansão clamar ainda esta vez — força que volta como súplica a Jeová.",
+    "evidence": [
+      "Juízes 16:28"
+    ],
+    "type": "connect",
+    "question": "O que Juízes 16:28 comunica que se liga a este contexto?",
+    "prompt": "O que Juízes 16:28 comunica que se liga a este contexto?",
+    "cue": "O que Juízes 16:28 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o último ato passa pelo clamor — ainda esta vez.",
+    "feedbackWrong": {
+      "a": "O texto não mostra força sem oração.",
+      "b": "Não há abandono do pedido a Jeová."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Força sem oração final"
+      },
+      {
+        "id": "b",
+        "text": "Abandono do clamor a Jeová"
+      },
+      {
+        "id": "c",
+        "text": "Último ato como súplica"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Sansão clamou a Jeová e disse: Senhor Jeová, lembra-te de mim, e fortalece-me ainda esta vez, ó Deus, para que me vingue nos filisteus ao menos dum dos meus dois olhos.",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "id": "juizes-cam-juizes-juizes-03-sansao-06",
+    "passageA": {
+      "ref": "Juízes 16:28",
+      "text": "Senhor Jeová, lembra-te de mim, e fortalece-me ainda esta vez"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Sansão clama: ainda esta vez — força que volta como súplica."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 16:28",
+    "learningObjective": "Ver Sansão clamar ainda esta vez — força que volta como súplica a Jeová.",
+    "evidence": [
+      "Juízes 16:28"
+    ],
+    "type": "true_false",
+    "question": "O clamor de Sansão mostra que a força final volta como súplica a Jeová, não como autonomia.",
+    "prompt": "O clamor de Sansão mostra que a força final volta como súplica a Jeová, não como autonomia.",
+    "cue": "O clamor de Sansão mostra que a força final volta como súplica a Jeová, não como autonomia.",
+    "feedbackCorrect": "Certo: ainda esta vez — força pedida a Deus.",
+    "feedbackWrong": {
+      "false": "O verso é súplica: Senhor Jeová, fortalece-me."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Sansão clamou a Jeová e disse: Senhor Jeová, lembra-te de mim, e fortalece-me ainda esta vez, ó Deus, para que me vingue nos filisteus ao menos dum dos meus dois olhos.",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "id": "juizes-pro-juizes-juizes-03-sansao-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 16:28",
+    "learningObjective": "Ver Sansão clamar ainda esta vez — força que volta como súplica a Jeová.",
+    "evidence": [
+      "Juízes 16:28"
+    ],
+    "type": "tap",
+    "question": "Em Juízes 16:28, toque a palavra que falta em \"ao menos dum dos meus dois ___\"?",
+    "prompt": "Em Juízes 16:28, toque a palavra que falta em \"ao menos dum dos meus dois ___\"?",
+    "cue": "Em Juízes 16:28, toque a palavra que falta em \"ao menos dum dos meus dois ___\"?",
+    "feedbackCorrect": "Exato: \"olhos\".",
+    "feedbackWrong": {
+      "a": "Filisteus são o alvo; aqui falta olhos.",
+      "b": "Vez é o tempo do pedido; a lacuna pede olhos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "filisteus"
+      },
+      {
+        "id": "b",
+        "text": "vez"
+      },
+      {
+        "id": "c",
+        "text": "olhos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Sansão clamou a Jeová e disse: Senhor Jeová, lembra-te de mim, e fortalece-me ainda esta vez, ó Deus, para que me vingue nos filisteus ao menos dum dos meus dois olhos.",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "id": "juizes-pro-juizes-juizes-03-sansao-02",
+    "template": "ao menos dum dos meus dois ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 16:28",
+    "learningObjective": "Ver Sansão clamar ainda esta vez — força que volta como súplica a Jeová.",
+    "evidence": [
+      "Juízes 16:28"
+    ],
+    "type": "choice",
+    "question": "Qual leitura teológica Juízes 16:28 sustenta sobre a força de Sansão?",
+    "prompt": "Qual leitura teológica Juízes 16:28 sustenta sobre a força de Sansão?",
+    "cue": "Qual leitura teológica Juízes 16:28 sustenta sobre a força de Sansão?",
+    "feedbackCorrect": "Certo: no fim, a força é pedida a Jeová — súplica, não autonomia.",
+    "feedbackWrong": {
+      "a": "O texto não celebra autonomia final.",
+      "c": "Não há recusa de Jeová narrada neste verso.",
+      "d": "O clamor não é dirigido aos filisteus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A força final prova autonomia total de Sansão."
+      },
+      {
+        "id": "b",
+        "text": "A força volta como súplica: ainda esta vez, ó Deus."
+      },
+      {
+        "id": "c",
+        "text": "Jeová se recusa a ouvir o clamor de Sansão."
+      },
+      {
+        "id": "d",
+        "text": "Sansão clama aos filisteus, não a Jeová."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Sansão clamou a Jeová e disse: Senhor Jeová, lembra-te de mim, e fortalece-me ainda esta vez, ó Deus, para que me vingue nos filisteus ao menos dum dos meus dois olhos.",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "id": "juizes-pro-juizes-juizes-03-sansao-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 16:28",
+    "learningObjective": "Ver Sansão clamar ainda esta vez — força que volta como súplica a Jeová.",
+    "evidence": [
+      "Juízes 16:28"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Juízes 16:28?",
+    "prompt": "Qual sequência revela o sentido de Juízes 16:28?",
+    "cue": "Qual sequência revela o sentido de Juízes 16:28?",
+    "feedbackCorrect": "Certo: clamor a Jeová, pedido de força, propósito da vingança.",
+    "feedbackWrong": {
+      "b": "Essa peça não fecha o sentido.",
+      "c": "Releia a progressão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sansão clamou a Jeová"
+      },
+      {
+        "id": "b",
+        "text": "fortalece-me ainda esta vez"
+      },
+      {
+        "id": "c",
+        "text": "para que me vingue nos filisteus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Sansão clamou a Jeová e disse: Senhor Jeová, lembra-te de mim, e fortalece-me ainda esta vez, ó Deus, para que me vingue nos filisteus ao menos dum dos meus dois olhos.",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "id": "juizes-pro-juizes-juizes-03-sansao-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 16:28",
+    "learningObjective": "Ver Sansão clamar ainda esta vez — força que volta como súplica a Jeová.",
+    "evidence": [
+      "Juízes 16:28"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Senhor Jeová, ___ de mim\"",
+    "prompt": "Complete: \"Senhor Jeová, ___ de mim\"",
+    "cue": "Complete: \"Senhor Jeová, ___ de mim\"",
+    "feedbackCorrect": "Certo: \"lembra-te\" de mim.",
+    "feedbackWrong": {
+      "b": "Vingue vem depois; aqui falta lembra-te.",
+      "c": "Clamou é o verbo narrativo; a lacuna pede lembra-te."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "lembra-te"
+      },
+      {
+        "id": "b",
+        "text": "vingue"
+      },
+      {
+        "id": "c",
+        "text": "clamou"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Sansão clamou a Jeová e disse: Senhor Jeová, lembra-te de mim, e fortalece-me ainda esta vez, ó Deus, para que me vingue nos filisteus ao menos dum dos meus dois olhos.",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "id": "juizes-pro-juizes-juizes-03-sansao-05",
+    "template": "Senhor Jeová, ___ de mim"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 16:28",
+    "learningObjective": "Ver Sansão clamar ainda esta vez — força que volta como súplica a Jeová.",
+    "evidence": [
+      "Juízes 16:28"
+    ],
+    "type": "connect",
+    "question": "O que Juízes 16:28 comunica que se liga a este contexto?",
+    "prompt": "O que Juízes 16:28 comunica que se liga a este contexto?",
+    "cue": "O que Juízes 16:28 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: força que volta como súplica — ainda esta vez.",
+    "feedbackWrong": {
+      "a": "O texto não mostra autonomia final.",
+      "b": "Não há silêncio sem clamor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Autonomia final sem Deus"
+      },
+      {
+        "id": "b",
+        "text": "Silêncio sem clamor"
+      },
+      {
+        "id": "c",
+        "text": "Súplica: ainda esta vez"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Sansão clamou a Jeová e disse: Senhor Jeová, lembra-te de mim, e fortalece-me ainda esta vez, ó Deus, para que me vingue nos filisteus ao menos dum dos meus dois olhos.",
+    "trail": "juizes",
+    "section": "juizes-juizes-03-sansao",
+    "id": "juizes-pro-juizes-juizes-03-sansao-06",
+    "passageA": {
+      "ref": "Juízes 16:28",
+      "text": "fortalece-me ainda esta vez, ó Deus"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Sansão clama: ainda esta vez — força que volta como súplica."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 2:18–19",
+    "learningObjective": "Reconhecer o ciclo: Jeová se compadece do gemido e livra com o juiz.",
+    "evidence": [
+      "Juízes 2:18–19"
+    ],
+    "type": "true_false",
+    "question": "Jeová era com o juiz e livrava o povo nos dias em que lhes suscitava juízes.",
+    "prompt": "Jeová era com o juiz e livrava o povo nos dias em que lhes suscitava juízes.",
+    "cue": "Jeová era com o juiz e livrava o povo nos dias em que lhes suscitava juízes.",
+    "feedbackCorrect": "Certo: ele era com o juiz e os livrava.",
+    "feedbackWrong": {
+      "false": "Juízes 2:18 afirma a presença de Jeová com o juiz."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Quando Jeová lhes suscitava juízes, ele era com o juiz, e os livrava da mão dos seus inimigos todos os dias do juiz; pois Jeová se arrependia em atenção ao gemer que lhes provocavam os que os oprimiam e apertavam.",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "id": "juizes-sem-juizes-juizes-04-desafio-o-ciclo-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 2:18–19",
+    "learningObjective": "Reconhecer o ciclo: Jeová se compadece do gemido e livra com o juiz.",
+    "evidence": [
+      "Juízes 2:18–19"
+    ],
+    "type": "tap",
+    "question": "Em Juízes 2:18–19, toque a palavra que falta em \"ele era com o ___\"?",
+    "prompt": "Em Juízes 2:18–19, toque a palavra que falta em \"ele era com o ___\"?",
+    "cue": "Em Juízes 2:18–19, toque a palavra que falta em \"ele era com o ___\"?",
+    "feedbackCorrect": "Exato: ele era com o \"juiz\".",
+    "feedbackWrong": {
+      "b": "Gemer motiva o arrependimento; aqui falta juiz.",
+      "c": "Inimigos são a ameaça; a lacuna pede juiz."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "juiz"
+      },
+      {
+        "id": "b",
+        "text": "gemer"
+      },
+      {
+        "id": "c",
+        "text": "inimigos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando Jeová lhes suscitava juízes, ele era com o juiz, e os livrava da mão dos seus inimigos todos os dias do juiz; pois Jeová se arrependia em atenção ao gemer que lhes provocavam os que os oprimiam e apertavam.",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "id": "juizes-sem-juizes-juizes-04-desafio-o-ciclo-02",
+    "template": "ele era com o ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 2:18–19",
+    "learningObjective": "Reconhecer o ciclo: Jeová se compadece do gemido e livra com o juiz.",
+    "evidence": [
+      "Juízes 2:18–19"
+    ],
+    "type": "choice",
+    "question": "O que Juízes 2:18 afirma sobre o livramento enquanto havia juiz?",
+    "prompt": "O que Juízes 2:18 afirma sobre o livramento enquanto havia juiz?",
+    "cue": "O que Juízes 2:18 afirma sobre o livramento enquanto havia juiz?",
+    "feedbackCorrect": "Certo: livrava-os todos os dias do juiz.",
+    "feedbackWrong": {
+      "a": "O texto não limita o livramento a um único dia.",
+      "b": "Não há abandono do juiz neste trecho.",
+      "d": "Jeová não se recusa a livrar enquanto há juiz."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O livramento durava só um dia de festa."
+      },
+      {
+        "id": "b",
+        "text": "Jeová abandonava o juiz no primeiro combate."
+      },
+      {
+        "id": "c",
+        "text": "Os livrava da mão dos inimigos todos os dias do juiz."
+      },
+      {
+        "id": "d",
+        "text": "Jeová se recusava a ouvir o gemer do povo."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Quando Jeová lhes suscitava juízes, ele era com o juiz, e os livrava da mão dos seus inimigos todos os dias do juiz; pois Jeová se arrependia em atenção ao gemer que lhes provocavam os que os oprimiam e apertavam.",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "id": "juizes-sem-juizes-juizes-04-desafio-o-ciclo-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 2:18–19",
+    "learningObjective": "Reconhecer o ciclo: Jeová se compadece do gemido e livra com o juiz.",
+    "evidence": [
+      "Juízes 2:18–19"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Juízes 2:18–19?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Juízes 2:18–19?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Juízes 2:18–19?",
+    "feedbackCorrect": "Certo: suscitação, presença e livramento, depois o gemer.",
+    "feedbackWrong": {
+      "b": "O gemer motiva o arrependimento no fim do trecho.",
+      "c": "Releia a ordem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová lhes suscitava juízes"
+      },
+      {
+        "id": "b",
+        "text": "ele era com o juiz e os livrava"
+      },
+      {
+        "id": "c",
+        "text": "Jeová se arrependia em atenção ao gemer"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando Jeová lhes suscitava juízes, ele era com o juiz, e os livrava da mão dos seus inimigos todos os dias do juiz; pois Jeová se arrependia em atenção ao gemer que lhes provocavam os que os oprimiam e apertavam.",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "id": "juizes-sem-juizes-juizes-04-desafio-o-ciclo-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 2:18–19",
+    "learningObjective": "Reconhecer o ciclo: Jeová se compadece do gemido e livra com o juiz.",
+    "evidence": [
+      "Juízes 2:18–19"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Jeová se arrependia em atenção ao ___ \"",
+    "prompt": "Complete: \"Jeová se arrependia em atenção ao ___ \"",
+    "cue": "Complete: \"Jeová se arrependia em atenção ao ___ \"",
+    "feedbackCorrect": "Certo: em atenção ao \"gemer\".",
+    "feedbackWrong": {
+      "a": "Juiz é com quem Jeová estava; aqui falta gemer.",
+      "c": "Inimigos provocam o gemer; a lacuna pede gemer."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "juiz"
+      },
+      {
+        "id": "b",
+        "text": "gemer"
+      },
+      {
+        "id": "c",
+        "text": "inimigos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Quando Jeová lhes suscitava juízes, ele era com o juiz, e os livrava da mão dos seus inimigos todos os dias do juiz; pois Jeová se arrependia em atenção ao gemer que lhes provocavam os que os oprimiam e apertavam.",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "id": "juizes-sem-juizes-juizes-04-desafio-o-ciclo-05",
+    "template": "Jeová se arrependia em atenção ao ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Juízes 2:18–19",
+    "learningObjective": "Reconhecer o ciclo: Jeová se compadece do gemido e livra com o juiz.",
+    "evidence": [
+      "Juízes 2:18–19"
+    ],
+    "type": "connect",
+    "question": "O que Juízes 2:18–19 comunica que se liga a este contexto?",
+    "prompt": "O que Juízes 2:18–19 comunica que se liga a este contexto?",
+    "cue": "O que Juízes 2:18–19 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Jeová se compadece do gemido e livra com o juiz.",
+    "feedbackWrong": {
+      "a": "O texto não descreve abandono total.",
+      "c": "Não há indiferença ao gemer."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Abandono total do povo"
+      },
+      {
+        "id": "b",
+        "text": "Compadecimento que livra"
+      },
+      {
+        "id": "c",
+        "text": "Indiferença ao gemer"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Quando Jeová lhes suscitava juízes, ele era com o juiz, e os livrava da mão dos seus inimigos todos os dias do juiz; pois Jeová se arrependia em atenção ao gemer que lhes provocavam os que os oprimiam e apertavam.",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "id": "juizes-sem-juizes-juizes-04-desafio-o-ciclo-06",
+    "passageA": {
+      "ref": "Juízes 2:18–19",
+      "text": "Jeová se arrependia em atenção ao gemer"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O ciclo: Jeová se compadece do gemido e livra com o juiz."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 2:18–19",
+    "learningObjective": "Reconhecer o ciclo: Jeová se compadece do gemido e livra com o juiz.",
+    "evidence": [
+      "Juízes 2:18–19"
+    ],
+    "type": "true_false",
+    "question": "O livramento nos dias do juiz responde ao gemer causado pelos opressores.",
+    "prompt": "O livramento nos dias do juiz responde ao gemer causado pelos opressores.",
+    "cue": "O livramento nos dias do juiz responde ao gemer causado pelos opressores.",
+    "feedbackCorrect": "Certo: Jeová se arrependia em atenção ao gemer.",
+    "feedbackWrong": {
+      "false": "O texto liga gemer, arrependimento de Jeová e livramento."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Quando Jeová lhes suscitava juízes, ele era com o juiz, e os livrava da mão dos seus inimigos todos os dias do juiz; pois Jeová se arrependia em atenção ao gemer que lhes provocavam os que os oprimiam e apertavam.",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "id": "juizes-cam-juizes-juizes-04-desafio-o-ciclo-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 2:18–19",
+    "learningObjective": "Reconhecer o ciclo: Jeová se compadece do gemido e livra com o juiz.",
+    "evidence": [
+      "Juízes 2:18–19"
+    ],
+    "type": "tap",
+    "question": "Em Juízes 2:18–19, toque a palavra que falta em \"os livrava da mão dos seus ___\"?",
+    "prompt": "Em Juízes 2:18–19, toque a palavra que falta em \"os livrava da mão dos seus ___\"?",
+    "cue": "Em Juízes 2:18–19, toque a palavra que falta em \"os livrava da mão dos seus ___\"?",
+    "feedbackCorrect": "Exato: dos seus \"inimigos\".",
+    "feedbackWrong": {
+      "a": "Juiz é o instrumento; aqui falta inimigos.",
+      "c": "Gemer motiva Jeová; a lacuna pede inimigos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "juiz"
+      },
+      {
+        "id": "b",
+        "text": "inimigos"
+      },
+      {
+        "id": "c",
+        "text": "gemer"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Quando Jeová lhes suscitava juízes, ele era com o juiz, e os livrava da mão dos seus inimigos todos os dias do juiz; pois Jeová se arrependia em atenção ao gemer que lhes provocavam os que os oprimiam e apertavam.",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "id": "juizes-cam-juizes-juizes-04-desafio-o-ciclo-02",
+    "template": "os livrava da mão dos seus ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 2:18–19",
+    "learningObjective": "Reconhecer o ciclo: Jeová se compadece do gemido e livra com o juiz.",
+    "evidence": [
+      "Juízes 2:18–19"
+    ],
+    "type": "choice",
+    "question": "Como se relacionam juiz, livramento e gemer em Juízes 2:18?",
+    "prompt": "Como se relacionam juiz, livramento e gemer em Juízes 2:18?",
+    "cue": "Como se relacionam juiz, livramento e gemer em Juízes 2:18?",
+    "feedbackCorrect": "Certo: Jeová está com o juiz, livra, e se compadece do gemer.",
+    "feedbackWrong": {
+      "a": "O texto não ignora o gemer.",
+      "b": "Não há abandono do juiz no combate.",
+      "d": "O livramento não é só um dia isolado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová ignora o gemer e só julga o povo."
+      },
+      {
+        "id": "b",
+        "text": "O juiz luta sozinho, sem a presença de Jeová."
+      },
+      {
+        "id": "c",
+        "text": "Jeová está com o juiz, livra e se compadece do gemer."
+      },
+      {
+        "id": "d",
+        "text": "O livramento dura só o primeiro dia do juiz."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Quando Jeová lhes suscitava juízes, ele era com o juiz, e os livrava da mão dos seus inimigos todos os dias do juiz; pois Jeová se arrependia em atenção ao gemer que lhes provocavam os que os oprimiam e apertavam.",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "id": "juizes-cam-juizes-juizes-04-desafio-o-ciclo-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 2:18–19",
+    "learningObjective": "Reconhecer o ciclo: Jeová se compadece do gemido e livra com o juiz.",
+    "evidence": [
+      "Juízes 2:18–19"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Juízes 2:18–19?",
+    "prompt": "Como se encadeiam os eventos de Juízes 2:18–19?",
+    "cue": "Como se encadeiam os eventos de Juízes 2:18–19?",
+    "feedbackCorrect": "Certo: suscitação, presença e livramento, atenção ao gemer.",
+    "feedbackWrong": {
+      "a": "O gemer não abre o trecho narrativo.",
+      "c": "Releia o encadeamento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová se arrependia em atenção ao gemer"
+      },
+      {
+        "id": "b",
+        "text": "Jeová lhes suscitava juízes"
+      },
+      {
+        "id": "c",
+        "text": "ele era com o juiz e os livrava"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Quando Jeová lhes suscitava juízes, ele era com o juiz, e os livrava da mão dos seus inimigos todos os dias do juiz; pois Jeová se arrependia em atenção ao gemer que lhes provocavam os que os oprimiam e apertavam.",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "id": "juizes-cam-juizes-juizes-04-desafio-o-ciclo-04",
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 2:18–19",
+    "learningObjective": "Reconhecer o ciclo: Jeová se compadece do gemido e livra com o juiz.",
+    "evidence": [
+      "Juízes 2:18–19"
+    ],
+    "type": "complete",
+    "question": "Complete: \"todos os ___ do juiz\"",
+    "prompt": "Complete: \"todos os ___ do juiz\"",
+    "cue": "Complete: \"todos os ___ do juiz\"",
+    "feedbackCorrect": "Certo: todos os \"dias\" do juiz.",
+    "feedbackWrong": {
+      "b": "Gemer motiva Jeová; aqui falta dias.",
+      "c": "Inimigos são a ameaça; a lacuna pede dias."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "dias"
+      },
+      {
+        "id": "b",
+        "text": "gemer"
+      },
+      {
+        "id": "c",
+        "text": "inimigos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando Jeová lhes suscitava juízes, ele era com o juiz, e os livrava da mão dos seus inimigos todos os dias do juiz; pois Jeová se arrependia em atenção ao gemer que lhes provocavam os que os oprimiam e apertavam.",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "id": "juizes-cam-juizes-juizes-04-desafio-o-ciclo-05",
+    "template": "todos os ___ do juiz"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Juízes 2:18–19",
+    "learningObjective": "Reconhecer o ciclo: Jeová se compadece do gemido e livra com o juiz.",
+    "evidence": [
+      "Juízes 2:18–19"
+    ],
+    "type": "connect",
+    "question": "O que Juízes 2:18–19 comunica que se liga a este contexto?",
+    "prompt": "O que Juízes 2:18–19 comunica que se liga a este contexto?",
+    "cue": "O que Juízes 2:18–19 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o ciclo passa pelo gemido e pelo juiz que livra.",
+    "feedbackWrong": {
+      "a": "O texto não aponta indiferença divina.",
+      "b": "Não há abandono permanente neste trecho."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Indiferença divina ao gemer"
+      },
+      {
+        "id": "b",
+        "text": "Abandono permanente de Israel"
+      },
+      {
+        "id": "c",
+        "text": "Ciclo de gemido e livramento"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Quando Jeová lhes suscitava juízes, ele era com o juiz, e os livrava da mão dos seus inimigos todos os dias do juiz; pois Jeová se arrependia em atenção ao gemer que lhes provocavam os que os oprimiam e apertavam.",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "id": "juizes-cam-juizes-juizes-04-desafio-o-ciclo-06",
+    "passageA": {
+      "ref": "Juízes 2:18–19",
+      "text": "ele era com o juiz, e os livrava da mão dos seus inimigos"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O ciclo: Jeová se compadece do gemido e livra com o juiz."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 2:18–19",
+    "learningObjective": "Reconhecer o ciclo: Jeová se compadece do gemido e livra com o juiz.",
+    "evidence": [
+      "Juízes 2:18–19"
+    ],
+    "type": "true_false",
+    "question": "Juízes 2:18 apresenta Jeová como indiferente ao sofrimento causado pelos opressores.",
+    "prompt": "Juízes 2:18 apresenta Jeová como indiferente ao sofrimento causado pelos opressores.",
+    "cue": "Juízes 2:18 apresenta Jeová como indiferente ao sofrimento causado pelos opressores.",
+    "feedbackCorrect": "Certo: ele se arrepende em atenção ao gemer — não é indiferença.",
+    "feedbackWrong": {
+      "true": "O texto afirma compadecimento diante do gemer, não indiferença."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Quando Jeová lhes suscitava juízes, ele era com o juiz, e os livrava da mão dos seus inimigos todos os dias do juiz; pois Jeová se arrependia em atenção ao gemer que lhes provocavam os que os oprimiam e apertavam.",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "id": "juizes-pro-juizes-juizes-04-desafio-o-ciclo-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 2:18–19",
+    "learningObjective": "Reconhecer o ciclo: Jeová se compadece do gemido e livra com o juiz.",
+    "evidence": [
+      "Juízes 2:18–19"
+    ],
+    "type": "tap",
+    "question": "Em Juízes 2:18–19, toque a palavra que falta em \"Jeová se ___ em atenção ao gemer\"?",
+    "prompt": "Em Juízes 2:18–19, toque a palavra que falta em \"Jeová se ___ em atenção ao gemer\"?",
+    "cue": "Em Juízes 2:18–19, toque a palavra que falta em \"Jeová se ___ em atenção ao gemer\"?",
+    "feedbackCorrect": "Exato: Jeová se \"arrependia\".",
+    "feedbackWrong": {
+      "b": "Suscitava abre o trecho; aqui falta arrependia.",
+      "c": "Livrava é a ação com o juiz; a lacuna pede arrependia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "arrependia"
+      },
+      {
+        "id": "b",
+        "text": "suscitava"
+      },
+      {
+        "id": "c",
+        "text": "livrava"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando Jeová lhes suscitava juízes, ele era com o juiz, e os livrava da mão dos seus inimigos todos os dias do juiz; pois Jeová se arrependia em atenção ao gemer que lhes provocavam os que os oprimiam e apertavam.",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "id": "juizes-pro-juizes-juizes-04-desafio-o-ciclo-02",
+    "template": "Jeová se ___ em atenção ao gemer"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 2:18–19",
+    "learningObjective": "Reconhecer o ciclo: Jeová se compadece do gemido e livra com o juiz.",
+    "evidence": [
+      "Juízes 2:18–19"
+    ],
+    "type": "choice",
+    "question": "Qual sentido teológico o ciclo de Juízes 2:18 revela?",
+    "prompt": "Qual sentido teológico o ciclo de Juízes 2:18 revela?",
+    "cue": "Qual sentido teológico o ciclo de Juízes 2:18 revela?",
+    "feedbackCorrect": "Certo: Jeová se compadece do gemido e livra por meio do juiz.",
+    "feedbackWrong": {
+      "a": "O texto não mostra indiferença.",
+      "c": "Não há abandono total enquanto há juiz.",
+      "d": "O livramento não é mérito do povo sozinho."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová permanece indiferente ao gemer do povo."
+      },
+      {
+        "id": "b",
+        "text": "Jeová se compadece do gemido e livra com o juiz."
+      },
+      {
+        "id": "c",
+        "text": "Jeová abandona Israel enquanto o juiz vive."
+      },
+      {
+        "id": "d",
+        "text": "O povo se livra sozinho, sem a presença de Jeová."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Quando Jeová lhes suscitava juízes, ele era com o juiz, e os livrava da mão dos seus inimigos todos os dias do juiz; pois Jeová se arrependia em atenção ao gemer que lhes provocavam os que os oprimiam e apertavam.",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "id": "juizes-pro-juizes-juizes-04-desafio-o-ciclo-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 2:18–19",
+    "learningObjective": "Reconhecer o ciclo: Jeová se compadece do gemido e livra com o juiz.",
+    "evidence": [
+      "Juízes 2:18–19"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Juízes 2:18–19?",
+    "prompt": "Qual sequência revela o sentido de Juízes 2:18–19?",
+    "cue": "Qual sequência revela o sentido de Juízes 2:18–19?",
+    "feedbackCorrect": "Certo: Jeová suscita, está com o juiz, e se compadece do gemer.",
+    "feedbackWrong": {
+      "b": "Essa peça não fecha o sentido.",
+      "c": "Releia a progressão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová lhes suscitava juízes"
+      },
+      {
+        "id": "b",
+        "text": "ele era com o juiz e os livrava"
+      },
+      {
+        "id": "c",
+        "text": "Jeová se arrependia em atenção ao gemer"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando Jeová lhes suscitava juízes, ele era com o juiz, e os livrava da mão dos seus inimigos todos os dias do juiz; pois Jeová se arrependia em atenção ao gemer que lhes provocavam os que os oprimiam e apertavam.",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "id": "juizes-pro-juizes-juizes-04-desafio-o-ciclo-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 2:18–19",
+    "learningObjective": "Reconhecer o ciclo: Jeová se compadece do gemido e livra com o juiz.",
+    "evidence": [
+      "Juízes 2:18–19"
+    ],
+    "type": "complete",
+    "question": "Complete: \"os que os oprimiam e ___\"",
+    "prompt": "Complete: \"os que os oprimiam e ___\"",
+    "cue": "Complete: \"os que os oprimiam e ___\"",
+    "feedbackCorrect": "Certo: oprimiam e \"apertavam\".",
+    "feedbackWrong": {
+      "b": "Gemer é o resultado; aqui falta apertavam.",
+      "c": "Juiz é o instrumento; a lacuna pede apertavam."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "apertavam"
+      },
+      {
+        "id": "b",
+        "text": "gemer"
+      },
+      {
+        "id": "c",
+        "text": "juiz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando Jeová lhes suscitava juízes, ele era com o juiz, e os livrava da mão dos seus inimigos todos os dias do juiz; pois Jeová se arrependia em atenção ao gemer que lhes provocavam os que os oprimiam e apertavam.",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "id": "juizes-pro-juizes-juizes-04-desafio-o-ciclo-05",
+    "template": "os que os oprimiam e ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Juízes 2:18–19",
+    "learningObjective": "Reconhecer o ciclo: Jeová se compadece do gemido e livra com o juiz.",
+    "evidence": [
+      "Juízes 2:18–19"
+    ],
+    "type": "connect",
+    "question": "O que Juízes 2:18–19 comunica que se liga a este contexto?",
+    "prompt": "O que Juízes 2:18–19 comunica que se liga a este contexto?",
+    "cue": "O que Juízes 2:18–19 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o ciclo é compadecimento e livramento com o juiz.",
+    "feedbackWrong": {
+      "a": "O texto não aponta indiferença.",
+      "b": "Não há abandono enquanto o juiz vive."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Indiferença ao sofrimento"
+      },
+      {
+        "id": "b",
+        "text": "Abandono nos dias do juiz"
+      },
+      {
+        "id": "c",
+        "text": "Compadecimento que livra"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Quando Jeová lhes suscitava juízes, ele era com o juiz, e os livrava da mão dos seus inimigos todos os dias do juiz; pois Jeová se arrependia em atenção ao gemer que lhes provocavam os que os oprimiam e apertavam.",
+    "trail": "juizes",
+    "section": "juizes-juizes-04-desafio-o-ciclo",
+    "id": "juizes-pro-juizes-juizes-04-desafio-o-ciclo-06",
+    "passageA": {
+      "ref": "Juízes 2:18–19",
+      "text": "Jeová se arrependia em atenção ao gemer"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O ciclo: Jeová se compadece do gemido e livra com o juiz."
+    }
+  }
+]

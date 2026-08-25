@@ -1,0 +1,1559 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Zacarias 1:3",
+    "learningObjective": "Perceber que Jeová dos Exércitos chama o povo a voltar e promete voltar para eles.",
+    "evidence": ["Zacarias 1:3"],
+    "type": "true_false",
+    "question": "Jeová dos Exércitos diz: Tornai para mim, e tornarei para vós.",
+    "prompt": "Jeová dos Exércitos diz: Tornai para mim, e tornarei para vós.",
+    "cue": "Jeová dos Exércitos diz: Tornai para mim, e tornarei para vós.",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-01-voltai-para-mim",
+    "id": "zacarias-sem-zacarias-zacarias-01-voltai-para-mim-01",
+    "feedbackCorrect": "Certo: é o que Jeová dos Exércitos declara em Zacarias 1:3.",
+    "feedbackWrong": {
+      "false": "Releia: Tornai para mim, e tornarei para vós."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Portanto, dize-lhes: Assim diz Jeová dos Exércitos: Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Zacarias 1:3",
+    "learningObjective": "Perceber que Jeová dos Exércitos chama o povo a voltar e promete voltar para eles.",
+    "evidence": ["Zacarias 1:3"],
+    "type": "tap",
+    "question": "Em Zacarias 1:3, toque a palavra que falta em \"___ para mim, diz Jeová dos Exércitos\"?",
+    "prompt": "Em Zacarias 1:3, toque a palavra que falta em \"___ para mim, diz Jeová dos Exércitos\"?",
+    "cue": "Em Zacarias 1:3, toque a palavra que falta em \"___ para mim, diz Jeová dos Exércitos\"?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-01-voltai-para-mim",
+    "id": "zacarias-sem-zacarias-zacarias-01-voltai-para-mim-02",
+    "feedbackCorrect": "Exato: o primeiro verbo do chamado é Tornai.",
+    "feedbackWrong": {
+      "b": "Portanto abre a frase, não o chamado a voltar.",
+      "c": "Assim introduz a fórmula, não o verbo Tornai."
+    },
+    "passageText": "Portanto, dize-lhes: Assim diz Jeová dos Exércitos: Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos.",
+    "template": "___ para mim, diz Jeová dos Exércitos",
+    "options": [
+      {"id": "a", "text": "Tornai"},
+      {"id": "b", "text": "Portanto"},
+      {"id": "c", "text": "Assim"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Zacarias 1:3",
+    "learningObjective": "Perceber que Jeová dos Exércitos chama o povo a voltar e promete voltar para eles.",
+    "evidence": ["Zacarias 1:3"],
+    "type": "choice",
+    "question": "Qual afirmação está no texto de Zacarias 1:3?",
+    "prompt": "Qual afirmação está no texto de Zacarias 1:3?",
+    "cue": "Qual afirmação está no texto de Zacarias 1:3?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-01-voltai-para-mim",
+    "id": "zacarias-sem-zacarias-zacarias-01-voltai-para-mim-03",
+    "feedbackCorrect": "Certo: Jeová liga o tornar do povo ao seu próprio tornar.",
+    "feedbackWrong": {
+      "a": "O texto não fala de ouro nem de reconstrução aqui.",
+      "c": "Quem fala é Jeová dos Exércitos, não o rei da Pérsia.",
+      "d": "Jeová não se cala: ele chama e promete tornar."
+    },
+    "passageText": "Portanto, dize-lhes: Assim diz Jeová dos Exércitos: Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos.",
+    "options": [
+      {"id": "a", "text": "Jeová promete ouro ao povo se reconstruírem o templo."},
+      {"id": "b", "text": "Jeová diz: Tornai para mim, e tornarei para vós."},
+      {"id": "c", "text": "O profeta fala apenas em nome do rei da Pérsia."},
+      {"id": "d", "text": "O povo já voltou, e Jeová permanece em silêncio."}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Zacarias 1:3",
+    "learningObjective": "Perceber que Jeová dos Exércitos chama o povo a voltar e promete voltar para eles.",
+    "evidence": ["Zacarias 1:3"],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Zacarias 1:3?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Zacarias 1:3?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Zacarias 1:3?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-01-voltai-para-mim",
+    "id": "zacarias-sem-zacarias-zacarias-01-voltai-para-mim-04",
+    "feedbackCorrect": "Certo: a fórmula, o chamado e a promessa vêm nessa ordem.",
+    "feedbackWrong": {
+      "b": "Tornai vem depois de Assim diz Jeová dos Exércitos.",
+      "c": "A promessa tornarei vem depois do chamado Tornai."
+    },
+    "passageText": "Portanto, dize-lhes: Assim diz Jeová dos Exércitos: Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos.",
+    "options": [
+      {"id": "a", "text": "Assim diz Jeová dos Exércitos"},
+      {"id": "b", "text": "Tornai para mim"},
+      {"id": "c", "text": "e tornarei para vós"}
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Zacarias 1:3",
+    "learningObjective": "Perceber que Jeová dos Exércitos chama o povo a voltar e promete voltar para eles.",
+    "evidence": ["Zacarias 1:3"],
+    "type": "complete",
+    "question": "Complete a frase: \"Tornai para mim, diz Jeová dos Exércitos, e ___ para vós\"",
+    "prompt": "Complete a frase: \"Tornai para mim, diz Jeová dos Exércitos, e ___ para vós\"",
+    "cue": "Complete a frase: \"Tornai para mim, diz Jeová dos Exércitos, e ___ para vós\"",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-01-voltai-para-mim",
+    "id": "zacarias-sem-zacarias-zacarias-01-voltai-para-mim-05",
+    "feedbackCorrect": "Certo: Jeová responde com tornarei para vós.",
+    "feedbackWrong": {
+      "a": "dize-lhes é a ordem ao profeta, não a promessa.",
+      "c": "Portanto abre o versículo, não preenche esta lacuna."
+    },
+    "passageText": "Portanto, dize-lhes: Assim diz Jeová dos Exércitos: Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos.",
+    "template": "Tornai para mim, diz Jeová dos Exércitos, e ___ para vós",
+    "options": [
+      {"id": "a", "text": "dize-lhes"},
+      {"id": "b", "text": "tornarei"},
+      {"id": "c", "text": "Portanto"}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Zacarias 1:3",
+    "learningObjective": "Perceber que Jeová dos Exércitos chama o povo a voltar e promete voltar para eles.",
+    "evidence": ["Zacarias 1:3"],
+    "type": "connect",
+    "question": "O que Zacarias 1:3 comunica que se liga a este contexto?",
+    "prompt": "O que Zacarias 1:3 comunica que se liga a este contexto?",
+    "cue": "O que Zacarias 1:3 comunica que se liga a este contexto?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-01-voltai-para-mim",
+    "id": "zacarias-sem-zacarias-zacarias-01-voltai-para-mim-06",
+    "feedbackCorrect": "Certo: o trecho anuncia volta recíproca de Jeová.",
+    "feedbackWrong": {
+      "b": "Jeová fala e promete; não há silêncio aqui.",
+      "c": "O texto não menciona pacto com reis da Pérsia."
+    },
+    "passageText": "Portanto, dize-lhes: Assim diz Jeová dos Exércitos: Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos.",
+    "passageA": {
+      "ref": "Zacarias 1:3",
+      "text": "Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jeová chama o povo de volta: se voltarem para ele, ele volta para eles."
+    },
+    "options": [
+      {"id": "a", "text": "Volta recíproca de Jeová"},
+      {"id": "b", "text": "Silêncio de Jeová no exílio"},
+      {"id": "c", "text": "Pacto com reis da Pérsia"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Zacarias 1:3",
+    "learningObjective": "Perceber que Jeová dos Exércitos chama o povo a voltar e promete voltar para eles.",
+    "evidence": ["Zacarias 1:3"],
+    "type": "true_false",
+    "question": "O chamado de Zacarias 1:3 é só do povo; Jeová não promete tornar para eles.",
+    "prompt": "O chamado de Zacarias 1:3 é só do povo; Jeová não promete tornar para eles.",
+    "cue": "O chamado de Zacarias 1:3 é só do povo; Jeová não promete tornar para eles.",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-01-voltai-para-mim",
+    "id": "zacarias-cam-zacarias-zacarias-01-voltai-para-mim-01",
+    "feedbackCorrect": "Certo: Jeová também diz tornarei para vós.",
+    "feedbackWrong": {
+      "true": "Há dois movimentos: Tornai e tornarei."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Portanto, dize-lhes: Assim diz Jeová dos Exércitos: Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Zacarias 1:3",
+    "learningObjective": "Perceber que Jeová dos Exércitos chama o povo a voltar e promete voltar para eles.",
+    "evidence": ["Zacarias 1:3"],
+    "type": "tap",
+    "question": "Em Zacarias 1:3, toque a palavra que falta em \"Tornai para ___, diz Jeová dos Exércitos\"?",
+    "prompt": "Em Zacarias 1:3, toque a palavra que falta em \"Tornai para ___, diz Jeová dos Exércitos\"?",
+    "cue": "Em Zacarias 1:3, toque a palavra que falta em \"Tornai para ___, diz Jeová dos Exércitos\"?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-01-voltai-para-mim",
+    "id": "zacarias-cam-zacarias-zacarias-01-voltai-para-mim-02",
+    "feedbackCorrect": "Exato: o povo deve tornar para mim, isto é, para Jeová.",
+    "feedbackWrong": {
+      "a": "vós é o destino da volta de Jeová, não deste chamado.",
+      "c": "Portanto não é o objeto de Tornai para."
+    },
+    "passageText": "Portanto, dize-lhes: Assim diz Jeová dos Exércitos: Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos.",
+    "template": "Tornai para ___, diz Jeová dos Exércitos",
+    "options": [
+      {"id": "a", "text": "vós"},
+      {"id": "b", "text": "mim"},
+      {"id": "c", "text": "Portanto"}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Zacarias 1:3",
+    "learningObjective": "Perceber que Jeová dos Exércitos chama o povo a voltar e promete voltar para eles.",
+    "evidence": ["Zacarias 1:3"],
+    "type": "choice",
+    "question": "O que o encadeamento de Zacarias 1:3 mostra sobre a relação com Jeová?",
+    "prompt": "O que o encadeamento de Zacarias 1:3 mostra sobre a relação com Jeová?",
+    "cue": "O que o encadeamento de Zacarias 1:3 mostra sobre a relação com Jeová?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-01-voltai-para-mim",
+    "id": "zacarias-cam-zacarias-zacarias-01-voltai-para-mim-03",
+    "feedbackCorrect": "Certo: o retorno do povo e o de Jeová estão ligados.",
+    "feedbackWrong": {
+      "a": "O texto começa pelo chamado ao povo, não por uma volta unilateral.",
+      "b": "Jeová promete tornar; ele não fica distante.",
+      "d": "A repetição de Jeová dos Exércitos marca compromisso, não fórmula vazia."
+    },
+    "passageText": "Portanto, dize-lhes: Assim diz Jeová dos Exércitos: Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos.",
+    "options": [
+      {"id": "a", "text": "Jeová volta primeiro e o povo pode ficar onde está."},
+      {"id": "b", "text": "Só o povo se move; Jeová permanece distante."},
+      {"id": "c", "text": "O retorno do povo e o de Jeová estão ligados."},
+      {"id": "d", "text": "A frase é só fórmula litúrgica, sem compromisso."}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Zacarias 1:3",
+    "learningObjective": "Perceber que Jeová dos Exércitos chama o povo a voltar e promete voltar para eles.",
+    "evidence": ["Zacarias 1:3"],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Zacarias 1:3?",
+    "prompt": "Como se encadeiam os eventos de Zacarias 1:3?",
+    "cue": "Como se encadeiam os eventos de Zacarias 1:3?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-01-voltai-para-mim",
+    "id": "zacarias-cam-zacarias-zacarias-01-voltai-para-mim-04",
+    "feedbackCorrect": "Certo: primeiro o envio da palavra, depois o chamado e a promessa.",
+    "feedbackWrong": {
+      "a": "e tornarei para vós fecha o encadeamento, não o abre.",
+      "c": "O chamado Tornai vem depois de dize-lhes."
+    },
+    "passageText": "Portanto, dize-lhes: Assim diz Jeová dos Exércitos: Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos.",
+    "options": [
+      {"id": "a", "text": "e tornarei para vós, diz Jeová dos Exércitos"},
+      {"id": "b", "text": "Portanto, dize-lhes"},
+      {"id": "c", "text": "Tornai para mim, diz Jeová dos Exércitos"}
+    ],
+    "correctOrder": ["b", "c", "a"],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Zacarias 1:3",
+    "learningObjective": "Perceber que Jeová dos Exércitos chama o povo a voltar e promete voltar para eles.",
+    "evidence": ["Zacarias 1:3"],
+    "type": "complete",
+    "question": "Complete a frase: \"e tornarei para ___, diz Jeová dos Exércitos\"",
+    "prompt": "Complete a frase: \"e tornarei para ___, diz Jeová dos Exércitos\"",
+    "cue": "Complete a frase: \"e tornarei para ___, diz Jeová dos Exércitos\"",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-01-voltai-para-mim",
+    "id": "zacarias-cam-zacarias-zacarias-01-voltai-para-mim-05",
+    "feedbackCorrect": "Certo: Jeová torna para vós, o povo chamado.",
+    "feedbackWrong": {
+      "a": "mim é o destino do povo, não desta promessa.",
+      "b": "Exércitos nomeia a Jeová, não a quem ele torna."
+    },
+    "passageText": "Portanto, dize-lhes: Assim diz Jeová dos Exércitos: Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos.",
+    "template": "e tornarei para ___, diz Jeová dos Exércitos",
+    "options": [
+      {"id": "a", "text": "mim"},
+      {"id": "b", "text": "Exércitos"},
+      {"id": "c", "text": "vós"}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Zacarias 1:3",
+    "learningObjective": "Perceber que Jeová dos Exércitos chama o povo a voltar e promete voltar para eles.",
+    "evidence": ["Zacarias 1:3"],
+    "type": "connect",
+    "question": "O que Zacarias 1:3 comunica que se liga a este contexto?",
+    "prompt": "O que Zacarias 1:3 comunica que se liga a este contexto?",
+    "cue": "O que Zacarias 1:3 comunica que se liga a este contexto?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-01-voltai-para-mim",
+    "id": "zacarias-cam-zacarias-zacarias-01-voltai-para-mim-06",
+    "feedbackCorrect": "Certo: se voltarem, ele volta — é o laço do versículo.",
+    "feedbackWrong": {
+      "a": "Não há pacto com nações neste versículo.",
+      "c": "O chamado não termina; Jeová ainda fala."
+    },
+    "passageText": "Portanto, dize-lhes: Assim diz Jeová dos Exércitos: Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos.",
+    "passageA": {
+      "ref": "Zacarias 1:3",
+      "text": "Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jeová chama o povo de volta: se voltarem para ele, ele volta para eles."
+    },
+    "options": [
+      {"id": "a", "text": "Pacto com nações vizinhas"},
+      {"id": "b", "text": "Se voltarem, ele volta"},
+      {"id": "c", "text": "Fim de todo chamado"}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Zacarias 1:3",
+    "learningObjective": "Perceber que Jeová dos Exércitos chama o povo a voltar e promete voltar para eles.",
+    "evidence": ["Zacarias 1:3"],
+    "type": "true_false",
+    "question": "A restauração anunciada é recíproca: Jeová torna para o povo quando o povo torna para ele.",
+    "prompt": "A restauração anunciada é recíproca: Jeová torna para o povo quando o povo torna para ele.",
+    "cue": "A restauração anunciada é recíproca: Jeová torna para o povo quando o povo torna para ele.",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-01-voltai-para-mim",
+    "id": "zacarias-pro-zacarias-zacarias-01-voltai-para-mim-01",
+    "feedbackCorrect": "Certo: Tornai e tornarei descrevem essa reciprocidade.",
+    "feedbackWrong": {
+      "false": "Os dois verbos no mesmo versículo sustentam a leitura."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Portanto, dize-lhes: Assim diz Jeová dos Exércitos: Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Zacarias 1:3",
+    "learningObjective": "Perceber que Jeová dos Exércitos chama o povo a voltar e promete voltar para eles.",
+    "evidence": ["Zacarias 1:3"],
+    "type": "tap",
+    "question": "Em Zacarias 1:3, toque a palavra que falta em \"Assim diz Jeová dos ___\"?",
+    "prompt": "Em Zacarias 1:3, toque a palavra que falta em \"Assim diz Jeová dos ___\"?",
+    "cue": "Em Zacarias 1:3, toque a palavra que falta em \"Assim diz Jeová dos ___\"?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-01-voltai-para-mim",
+    "id": "zacarias-pro-zacarias-zacarias-01-voltai-para-mim-02",
+    "feedbackCorrect": "Exato: quem chama é Jeová dos Exércitos.",
+    "feedbackWrong": {
+      "a": "mim é o destino do povo, não o título de Jeová.",
+      "b": "vós nomeia o povo, não o nome divino."
+    },
+    "passageText": "Portanto, dize-lhes: Assim diz Jeová dos Exércitos: Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos.",
+    "template": "Assim diz Jeová dos ___",
+    "options": [
+      {"id": "a", "text": "mim"},
+      {"id": "b", "text": "vós"},
+      {"id": "c", "text": "Exércitos"}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Zacarias 1:3",
+    "learningObjective": "Perceber que Jeová dos Exércitos chama o povo a voltar e promete voltar para eles.",
+    "evidence": ["Zacarias 1:3"],
+    "type": "choice",
+    "question": "Qual leitura teológica Zacarias 1:3 sustenta?",
+    "prompt": "Qual leitura teológica Zacarias 1:3 sustenta?",
+    "cue": "Qual leitura teológica Zacarias 1:3 sustenta?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-01-voltai-para-mim",
+    "id": "zacarias-pro-zacarias-zacarias-01-voltai-para-mim-03",
+    "feedbackCorrect": "Certo: o chamado à conversão vem com a promessa da volta de Jeová.",
+    "feedbackWrong": {
+      "a": "Jeová chama ao retorno; a graça não anula o Tornai.",
+      "b": "O povo não se restaura sozinho: Jeová promete tornar.",
+      "c": "Jeová dos Exércitos fala com autoridade, não como igual."
+    },
+    "passageText": "Portanto, dize-lhes: Assim diz Jeová dos Exércitos: Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos.",
+    "options": [
+      {"id": "a", "text": "A graça de Jeová dispensa qualquer volta do povo."},
+      {"id": "b", "text": "O povo restaura a si mesmo sem Jeová."},
+      {"id": "c", "text": "Jeová e o povo negociam em igualdade de poder."},
+      {"id": "d", "text": "Jeová chama à conversão e promete sua própria volta."}
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Zacarias 1:3",
+    "learningObjective": "Perceber que Jeová dos Exércitos chama o povo a voltar e promete voltar para eles.",
+    "evidence": ["Zacarias 1:3"],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Zacarias 1:3?",
+    "prompt": "Qual sequência revela o sentido de Zacarias 1:3?",
+    "cue": "Qual sequência revela o sentido de Zacarias 1:3?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-01-voltai-para-mim",
+    "id": "zacarias-pro-zacarias-zacarias-01-voltai-para-mim-04",
+    "feedbackCorrect": "Certo: a voz de Jeová, o chamado e a promessa revelam o sentido.",
+    "feedbackWrong": {
+      "a": "tornarei para vós é a resposta, não o início do sentido.",
+      "b": "Tornai para mim vem depois da declaração Assim diz Jeová."
+    },
+    "passageText": "Portanto, dize-lhes: Assim diz Jeová dos Exércitos: Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos.",
+    "options": [
+      {"id": "a", "text": "tornarei para vós"},
+      {"id": "b", "text": "Tornai para mim"},
+      {"id": "c", "text": "Assim diz Jeová dos Exércitos"}
+    ],
+    "correctOrder": ["c", "b", "a"],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Zacarias 1:3",
+    "learningObjective": "Perceber que Jeová dos Exércitos chama o povo a voltar e promete voltar para eles.",
+    "evidence": ["Zacarias 1:3"],
+    "type": "complete",
+    "question": "Complete a frase: \"Assim diz ___ dos Exércitos\"",
+    "prompt": "Complete a frase: \"Assim diz ___ dos Exércitos\"",
+    "cue": "Complete a frase: \"Assim diz ___ dos Exércitos\"",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-01-voltai-para-mim",
+    "id": "zacarias-pro-zacarias-zacarias-01-voltai-para-mim-05",
+    "feedbackCorrect": "Certo: quem fala e promete é Jeová.",
+    "feedbackWrong": {
+      "b": "Portanto introduz o oráculo, não o nome de quem fala.",
+      "c": "Tornai é o chamado ao povo, não o sujeito de diz."
+    },
+    "passageText": "Portanto, dize-lhes: Assim diz Jeová dos Exércitos: Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos.",
+    "template": "Assim diz ___ dos Exércitos",
+    "options": [
+      {"id": "a", "text": "Jeová"},
+      {"id": "b", "text": "Portanto"},
+      {"id": "c", "text": "Tornai"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Zacarias 1:3",
+    "learningObjective": "Perceber que Jeová dos Exércitos chama o povo a voltar e promete voltar para eles.",
+    "evidence": ["Zacarias 1:3"],
+    "type": "connect",
+    "question": "O que Zacarias 1:3 comunica que se liga a este contexto?",
+    "prompt": "O que Zacarias 1:3 comunica que se liga a este contexto?",
+    "cue": "O que Zacarias 1:3 comunica que se liga a este contexto?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-01-voltai-para-mim",
+    "id": "zacarias-pro-zacarias-zacarias-01-voltai-para-mim-06",
+    "feedbackCorrect": "Certo: o sentido é o chamado e o retorno de Jeová.",
+    "feedbackWrong": {
+      "a": "O povo é chamado; não recebe autonomia sem Jeová.",
+      "b": "Jeová promete tornar; não permanece distante."
+    },
+    "passageText": "Portanto, dize-lhes: Assim diz Jeová dos Exércitos: Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos.",
+    "passageA": {
+      "ref": "Zacarias 1:3",
+      "text": "Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jeová chama o povo de volta: se voltarem para ele, ele volta para eles."
+    },
+    "options": [
+      {"id": "a", "text": "Autonomia total do povo"},
+      {"id": "b", "text": "Jeová distante para sempre"},
+      {"id": "c", "text": "Chamado e retorno de Jeová"}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Zacarias 9:9",
+    "learningObjective": "Reconhecer que o Rei de Sião chega justo, salvador e pobre, montado num jumento.",
+    "evidence": ["Zacarias 9:9"],
+    "type": "true_false",
+    "question": "O Rei de Sião chega montado em um cavalo de guerra.",
+    "prompt": "O Rei de Sião chega montado em um cavalo de guerra.",
+    "cue": "O Rei de Sião chega montado em um cavalo de guerra.",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-02-rei-no-jumentinho",
+    "id": "zacarias-sem-zacarias-zacarias-02-rei-no-jumentinho-01",
+    "feedbackCorrect": "Certo: o texto diz jumento e potrinho, não cavalo.",
+    "feedbackWrong": {
+      "true": "Releia: vem montado sobre um jumento."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Regozija-te muito, filha de Sião; exulta, filha de Jerusalém; eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Zacarias 9:9",
+    "learningObjective": "Reconhecer que o Rei de Sião chega justo, salvador e pobre, montado num jumento.",
+    "evidence": ["Zacarias 9:9"],
+    "type": "tap",
+    "question": "Em Zacarias 9:9, toque a palavra que falta em \"eis que vem a ti o teu ___\"?",
+    "prompt": "Em Zacarias 9:9, toque a palavra que falta em \"eis que vem a ti o teu ___\"?",
+    "cue": "Em Zacarias 9:9, toque a palavra que falta em \"eis que vem a ti o teu ___\"?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-02-rei-no-jumentinho",
+    "id": "zacarias-sem-zacarias-zacarias-02-rei-no-jumentinho-02",
+    "feedbackCorrect": "Exato: quem vem a Sião é o teu Rei.",
+    "feedbackWrong": {
+      "a": "Sião é quem recebe, não quem vem neste trecho.",
+      "c": "jumento descreve a montaria, não o que vem a ti."
+    },
+    "passageText": "Regozija-te muito, filha de Sião; exulta, filha de Jerusalém; eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta.",
+    "template": "eis que vem a ti o teu ___",
+    "options": [
+      {"id": "a", "text": "Sião"},
+      {"id": "b", "text": "Rei"},
+      {"id": "c", "text": "jumento"}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Zacarias 9:9",
+    "learningObjective": "Reconhecer que o Rei de Sião chega justo, salvador e pobre, montado num jumento.",
+    "evidence": ["Zacarias 9:9"],
+    "type": "choice",
+    "question": "Segundo Zacarias 9:9, como o Rei chega a Sião?",
+    "prompt": "Segundo Zacarias 9:9, como o Rei chega a Sião?",
+    "cue": "Segundo Zacarias 9:9, como o Rei chega a Sião?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-02-rei-no-jumentinho",
+    "id": "zacarias-sem-zacarias-zacarias-02-rei-no-jumentinho-03",
+    "feedbackCorrect": "Certo: o texto o descreve pobre, sobre um jumento e um potrinho.",
+    "feedbackWrong": {
+      "b": "Não há carros de guerra neste versículo.",
+      "c": "O Rei vem visível, montado, não só anunciado por anjos.",
+      "d": "Ele é pobre, não rico sobre cavalo branco."
+    },
+    "passageText": "Regozija-te muito, filha de Sião; exulta, filha de Jerusalém; eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta.",
+    "options": [
+      {"id": "a", "text": "Pobre, montado sobre um jumento, sobre um potrinho."},
+      {"id": "b", "text": "Em carros de guerra, à frente de um exército."},
+      {"id": "c", "text": "Invisível, anunciado apenas por anjos."},
+      {"id": "d", "text": "Rico, montado sobre um cavalo branco."}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Zacarias 9:9",
+    "learningObjective": "Reconhecer que o Rei de Sião chega justo, salvador e pobre, montado num jumento.",
+    "evidence": ["Zacarias 9:9"],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Zacarias 9:9?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Zacarias 9:9?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Zacarias 9:9?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-02-rei-no-jumentinho",
+    "id": "zacarias-sem-zacarias-zacarias-02-rei-no-jumentinho-04",
+    "feedbackCorrect": "Certo: o júbilo, a vinda do Rei e a montaria pobre.",
+    "feedbackWrong": {
+      "b": "O Rei é anunciado depois do regozijo de Sião.",
+      "c": "A montaria no jumento vem depois da vinda do Rei."
+    },
+    "passageText": "Regozija-te muito, filha de Sião; exulta, filha de Jerusalém; eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta.",
+    "options": [
+      {"id": "a", "text": "Regozija-te muito, filha de Sião"},
+      {"id": "b", "text": "eis que vem a ti o teu Rei"},
+      {"id": "c", "text": "ele é pobre e vem montado sobre um jumento"}
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Zacarias 9:9",
+    "learningObjective": "Reconhecer que o Rei de Sião chega justo, salvador e pobre, montado num jumento.",
+    "evidence": ["Zacarias 9:9"],
+    "type": "complete",
+    "question": "Complete a frase: \"ele é pobre e vem montado sobre um ___, sobre um potrinho\"",
+    "prompt": "Complete a frase: \"ele é pobre e vem montado sobre um ___, sobre um potrinho\"",
+    "cue": "Complete a frase: \"ele é pobre e vem montado sobre um ___, sobre um potrinho\"",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-02-rei-no-jumentinho",
+    "id": "zacarias-sem-zacarias-zacarias-02-rei-no-jumentinho-05",
+    "feedbackCorrect": "Certo: a montaria nomeada primeiro é um jumento.",
+    "feedbackWrong": {
+      "a": "Rei é quem vem, não a montaria desta lacuna.",
+      "b": "potrinho vem depois, na segunda montaria."
+    },
+    "passageText": "Regozija-te muito, filha de Sião; exulta, filha de Jerusalém; eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta.",
+    "template": "ele é pobre e vem montado sobre um ___, sobre um potrinho",
+    "options": [
+      {"id": "a", "text": "Rei"},
+      {"id": "b", "text": "potrinho"},
+      {"id": "c", "text": "jumento"}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Zacarias 9:9",
+    "learningObjective": "Reconhecer que o Rei de Sião chega justo, salvador e pobre, montado num jumento.",
+    "evidence": ["Zacarias 9:9"],
+    "type": "connect",
+    "question": "O que Zacarias 9:9 comunica que se liga a este contexto?",
+    "prompt": "O que Zacarias 9:9 comunica que se liga a este contexto?",
+    "cue": "O que Zacarias 9:9 comunica que se liga a este contexto?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-02-rei-no-jumentinho",
+    "id": "zacarias-sem-zacarias-zacarias-02-rei-no-jumentinho-06",
+    "feedbackCorrect": "Certo: o trecho apresenta o Rei pobre que salva.",
+    "feedbackWrong": {
+      "a": "Não há cortejo de imperador; ele vem pobre, no jumento.",
+      "c": "O chamado é regozijo, não luto obrigatório."
+    },
+    "passageText": "Regozija-te muito, filha de Sião; exulta, filha de Jerusalém; eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta.",
+    "passageA": {
+      "ref": "Zacarias 9:9",
+      "text": "eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Rei que traz salvação chega pobre, montado num jumento — não como os reis das nações."
+    },
+    "options": [
+      {"id": "a", "text": "Cortejo de um imperador"},
+      {"id": "b", "text": "Rei pobre que salva"},
+      {"id": "c", "text": "Luto obrigatório em Sião"}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Zacarias 9:9",
+    "learningObjective": "Reconhecer que o Rei de Sião chega justo, salvador e pobre, montado num jumento.",
+    "evidence": ["Zacarias 9:9"],
+    "type": "true_false",
+    "question": "O Rei que vem a Sião é justo, trás a salvação e é pobre.",
+    "prompt": "O Rei que vem a Sião é justo, trás a salvação e é pobre.",
+    "cue": "O Rei que vem a Sião é justo, trás a salvação e é pobre.",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-02-rei-no-jumentinho",
+    "id": "zacarias-cam-zacarias-zacarias-02-rei-no-jumentinho-01",
+    "feedbackCorrect": "Certo: o versículo une justiça, salvação e pobreza.",
+    "feedbackWrong": {
+      "false": "Esses três traços estão no mesmo anúncio."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Regozija-te muito, filha de Sião; exulta, filha de Jerusalém; eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Zacarias 9:9",
+    "learningObjective": "Reconhecer que o Rei de Sião chega justo, salvador e pobre, montado num jumento.",
+    "evidence": ["Zacarias 9:9"],
+    "type": "tap",
+    "question": "Em Zacarias 9:9, toque a palavra que falta em \"ele é ___ e vem montado sobre um jumento\"?",
+    "prompt": "Em Zacarias 9:9, toque a palavra que falta em \"ele é ___ e vem montado sobre um jumento\"?",
+    "cue": "Em Zacarias 9:9, toque a palavra que falta em \"ele é ___ e vem montado sobre um jumento\"?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-02-rei-no-jumentinho",
+    "id": "zacarias-cam-zacarias-zacarias-02-rei-no-jumentinho-02",
+    "feedbackCorrect": "Exato: o Rei é descrito como pobre.",
+    "feedbackWrong": {
+      "b": "filha é quem é chamada a exultar, não o predicado do Rei.",
+      "c": "muito intensifica o regozijo, não descreve o Rei."
+    },
+    "passageText": "Regozija-te muito, filha de Sião; exulta, filha de Jerusalém; eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta.",
+    "template": "ele é ___ e vem montado sobre um jumento",
+    "options": [
+      {"id": "a", "text": "pobre"},
+      {"id": "b", "text": "filha"},
+      {"id": "c", "text": "muito"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Zacarias 9:9",
+    "learningObjective": "Reconhecer que o Rei de Sião chega justo, salvador e pobre, montado num jumento.",
+    "evidence": ["Zacarias 9:9"],
+    "type": "choice",
+    "question": "O que a figura do Rei em Zacarias 9:9 comunica, em conjunto?",
+    "prompt": "O que a figura do Rei em Zacarias 9:9 comunica, em conjunto?",
+    "cue": "O que a figura do Rei em Zacarias 9:9 comunica, em conjunto?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-02-rei-no-jumentinho",
+    "id": "zacarias-cam-zacarias-zacarias-02-rei-no-jumentinho-03",
+    "feedbackCorrect": "Certo: justiça e salvação chegam sem o aparato dos reis das nações.",
+    "feedbackWrong": {
+      "a": "Sião é chamada a regozijar-se, não a temer um conquistador.",
+      "b": "Alegria e pobreza do Rei convivem no mesmo anúncio.",
+      "c": "A salvação é trazida pelo Rei, não pela força de Jerusalém."
+    },
+    "passageText": "Regozija-te muito, filha de Sião; exulta, filha de Jerusalém; eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta.",
+    "options": [
+      {"id": "a", "text": "Sião deve temer um conquistador estrangeiro."},
+      {"id": "b", "text": "Alegria e pobreza do Rei se contradizem no texto."},
+      {"id": "c", "text": "A salvação depende da força militar de Jerusalém."},
+      {"id": "d", "text": "O Rei justo traz salvação sem o aparato dos reis das nações."}
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Zacarias 9:9",
+    "learningObjective": "Reconhecer que o Rei de Sião chega justo, salvador e pobre, montado num jumento.",
+    "evidence": ["Zacarias 9:9"],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Zacarias 9:9?",
+    "prompt": "Como se encadeiam os eventos de Zacarias 9:9?",
+    "cue": "Como se encadeiam os eventos de Zacarias 9:9?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-02-rei-no-jumentinho",
+    "id": "zacarias-cam-zacarias-zacarias-02-rei-no-jumentinho-04",
+    "feedbackCorrect": "Certo: o júbilo de Jerusalém, a vinda do Rei e a pobreza no jumento.",
+    "feedbackWrong": {
+      "a": "A pobreza no jumento fecha o retrato, não o abre.",
+      "b": "exulta vem depois de Regozija-te, e o Rei vem depois disso."
+    },
+    "passageText": "Regozija-te muito, filha de Sião; exulta, filha de Jerusalém; eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta.",
+    "options": [
+      {"id": "a", "text": "ele é pobre e vem montado sobre um jumento"},
+      {"id": "b", "text": "exulta, filha de Jerusalém"},
+      {"id": "c", "text": "eis que vem a ti o teu Rei"}
+    ],
+    "correctOrder": ["b", "c", "a"],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Zacarias 9:9",
+    "learningObjective": "Reconhecer que o Rei de Sião chega justo, salvador e pobre, montado num jumento.",
+    "evidence": ["Zacarias 9:9"],
+    "type": "complete",
+    "question": "Complete a frase: \"Ele é justo, e trás a ___\"",
+    "prompt": "Complete a frase: \"Ele é justo, e trás a ___\"",
+    "cue": "Complete a frase: \"Ele é justo, e trás a ___\"",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-02-rei-no-jumentinho",
+    "id": "zacarias-cam-zacarias-zacarias-02-rei-no-jumentinho-05",
+    "feedbackCorrect": "Certo: o Rei trás a salvação.",
+    "feedbackWrong": {
+      "a": "Jerusalém é quem recebe o Rei, não o que ele trás aqui.",
+      "c": "jumenta descreve a origem do potrinho, não o que ele trás."
+    },
+    "passageText": "Regozija-te muito, filha de Sião; exulta, filha de Jerusalém; eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta.",
+    "template": "Ele é justo, e trás a ___",
+    "options": [
+      {"id": "a", "text": "Jerusalém"},
+      {"id": "b", "text": "salvação"},
+      {"id": "c", "text": "jumenta"}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Zacarias 9:9",
+    "learningObjective": "Reconhecer que o Rei de Sião chega justo, salvador e pobre, montado num jumento.",
+    "evidence": ["Zacarias 9:9"],
+    "type": "connect",
+    "question": "O que Zacarias 9:9 comunica que se liga a este contexto?",
+    "prompt": "O que Zacarias 9:9 comunica que se liga a este contexto?",
+    "cue": "O que Zacarias 9:9 comunica que se liga a este contexto?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-02-rei-no-jumentinho",
+    "id": "zacarias-cam-zacarias-zacarias-02-rei-no-jumentinho-06",
+    "feedbackCorrect": "Certo: Sião se alegra com o Rei humilde.",
+    "feedbackWrong": {
+      "b": "O tom é regozijo, não medo de um tirano.",
+      "c": "Há Rei; a festa não é sem ele."
+    },
+    "passageText": "Regozija-te muito, filha de Sião; exulta, filha de Jerusalém; eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta.",
+    "passageA": {
+      "ref": "Zacarias 9:9",
+      "text": "Regozija-te muito, filha de Sião; exulta, filha de Jerusalém; eis que vem a ti o teu Rei."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Rei que traz salvação chega pobre, montado num jumento — não como os reis das nações."
+    },
+    "options": [
+      {"id": "a", "text": "Alegria pelo Rei humilde"},
+      {"id": "b", "text": "Medo de um tirano"},
+      {"id": "c", "text": "Festa sem rei"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Zacarias 9:9",
+    "learningObjective": "Reconhecer que o Rei de Sião chega justo, salvador e pobre, montado num jumento.",
+    "evidence": ["Zacarias 9:9"],
+    "type": "true_false",
+    "question": "Zacarias 9:9 descreve um rei que conquista Jerusalém pela força militar das nações.",
+    "prompt": "Zacarias 9:9 descreve um rei que conquista Jerusalém pela força militar das nações.",
+    "cue": "Zacarias 9:9 descreve um rei que conquista Jerusalém pela força militar das nações.",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-02-rei-no-jumentinho",
+    "id": "zacarias-pro-zacarias-zacarias-02-rei-no-jumentinho-01",
+    "feedbackCorrect": "Certo: o Rei é pobre e vem no jumento, não pela força das nações.",
+    "feedbackWrong": {
+      "true": "Justiça, salvação e pobreza não descrevem conquista militar."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Regozija-te muito, filha de Sião; exulta, filha de Jerusalém; eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Zacarias 9:9",
+    "learningObjective": "Reconhecer que o Rei de Sião chega justo, salvador e pobre, montado num jumento.",
+    "evidence": ["Zacarias 9:9"],
+    "type": "tap",
+    "question": "Em Zacarias 9:9, toque a palavra que falta em \"Ele é ___, e trás a salvação\"?",
+    "prompt": "Em Zacarias 9:9, toque a palavra que falta em \"Ele é ___, e trás a salvação\"?",
+    "cue": "Em Zacarias 9:9, toque a palavra que falta em \"Ele é ___, e trás a salvação\"?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-02-rei-no-jumentinho",
+    "id": "zacarias-pro-zacarias-zacarias-02-rei-no-jumentinho-02",
+    "feedbackCorrect": "Exato: o primeiro traço do Rei aqui é justo.",
+    "feedbackWrong": {
+      "a": "Sião é a cidade que se alegra, não este predicado.",
+      "b": "jumento é a montaria, não o que ele é neste trecho."
+    },
+    "passageText": "Regozija-te muito, filha de Sião; exulta, filha de Jerusalém; eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta.",
+    "template": "Ele é ___, e trás a salvação",
+    "options": [
+      {"id": "a", "text": "Sião"},
+      {"id": "b", "text": "jumento"},
+      {"id": "c", "text": "justo"}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Zacarias 9:9",
+    "learningObjective": "Reconhecer que o Rei de Sião chega justo, salvador e pobre, montado num jumento.",
+    "evidence": ["Zacarias 9:9"],
+    "type": "choice",
+    "question": "Qual sentido Zacarias 9:9 prepara no ouvinte?",
+    "prompt": "Qual sentido Zacarias 9:9 prepara no ouvinte?",
+    "cue": "Qual sentido Zacarias 9:9 prepara no ouvinte?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-02-rei-no-jumentinho",
+    "id": "zacarias-pro-zacarias-zacarias-02-rei-no-jumentinho-03",
+    "feedbackCorrect": "Certo: o ouvinte é chamado a alegrar-se com o Rei justo e humilde.",
+    "feedbackWrong": {
+      "a": "O jumento e a pobreza não sustentam um messias só pela espada.",
+      "c": "O Rei vem a Sião e a Jerusalém, não a outra cidade.",
+      "d": "É o teu Rei, não a troca de Jeová por qualquer rei."
+    },
+    "passageText": "Regozija-te muito, filha de Sião; exulta, filha de Jerusalém; eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta.",
+    "options": [
+      {"id": "a", "text": "Esperar um messias que imponha paz só pela espada."},
+      {"id": "b", "text": "Alegrar-se com um Rei justo, salvador e humilde."},
+      {"id": "c", "text": "Desprezar Sião, pois o Rei vem para outra cidade."},
+      {"id": "d", "text": "Trocar Jeová por um rei humano qualquer."}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Zacarias 9:9",
+    "learningObjective": "Reconhecer que o Rei de Sião chega justo, salvador e pobre, montado num jumento.",
+    "evidence": ["Zacarias 9:9"],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Zacarias 9:9?",
+    "prompt": "Qual sequência revela o sentido de Zacarias 9:9?",
+    "cue": "Qual sequência revela o sentido de Zacarias 9:9?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-02-rei-no-jumentinho",
+    "id": "zacarias-pro-zacarias-zacarias-02-rei-no-jumentinho-04",
+    "feedbackCorrect": "Certo: o Rei vem, trás salvação e se mostra pobre no jumento.",
+    "feedbackWrong": {
+      "a": "A pobreza no jumento revela o modo, depois da vinda e da salvação.",
+      "c": "A salvação descreve o Rei depois que ele é anunciado como vindo."
+    },
+    "passageText": "Regozija-te muito, filha de Sião; exulta, filha de Jerusalém; eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta.",
+    "options": [
+      {"id": "a", "text": "ele é pobre e vem montado sobre um jumento"},
+      {"id": "b", "text": "eis que vem a ti o teu Rei"},
+      {"id": "c", "text": "Ele é justo, e trás a salvação"}
+    ],
+    "correctOrder": ["b", "c", "a"],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Zacarias 9:9",
+    "learningObjective": "Reconhecer que o Rei de Sião chega justo, salvador e pobre, montado num jumento.",
+    "evidence": ["Zacarias 9:9"],
+    "type": "complete",
+    "question": "Complete a frase: \"sobre um jumento, sobre um ___, filho de uma jumenta\"",
+    "prompt": "Complete a frase: \"sobre um jumento, sobre um ___, filho de uma jumenta\"",
+    "cue": "Complete a frase: \"sobre um jumento, sobre um ___, filho de uma jumenta\"",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-02-rei-no-jumentinho",
+    "id": "zacarias-pro-zacarias-zacarias-02-rei-no-jumentinho-05",
+    "feedbackCorrect": "Certo: o segundo animal nomeado é um potrinho.",
+    "feedbackWrong": {
+      "b": "Rei é quem monta, não o animal desta lacuna.",
+      "c": "Sião é a filha que se alegra, não o potrinho."
+    },
+    "passageText": "Regozija-te muito, filha de Sião; exulta, filha de Jerusalém; eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta.",
+    "template": "sobre um jumento, sobre um ___, filho de uma jumenta",
+    "options": [
+      {"id": "a", "text": "potrinho"},
+      {"id": "b", "text": "Rei"},
+      {"id": "c", "text": "Sião"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Zacarias 9:9",
+    "learningObjective": "Reconhecer que o Rei de Sião chega justo, salvador e pobre, montado num jumento.",
+    "evidence": ["Zacarias 9:9"],
+    "type": "connect",
+    "question": "O que Zacarias 9:9 comunica que se liga a este contexto?",
+    "prompt": "O que Zacarias 9:9 comunica que se liga a este contexto?",
+    "cue": "O que Zacarias 9:9 comunica que se liga a este contexto?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-02-rei-no-jumentinho",
+    "id": "zacarias-pro-zacarias-zacarias-02-rei-no-jumentinho-06",
+    "feedbackCorrect": "Certo: a salvação está no Rei pobre, não na cavalaria.",
+    "feedbackWrong": {
+      "a": "O jumento contraria a imagem de cavalaria messiânica.",
+      "b": "Sião é chamada a exultar, não a desesperar."
+    },
+    "passageText": "Regozija-te muito, filha de Sião; exulta, filha de Jerusalém; eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta.",
+    "passageA": {
+      "ref": "Zacarias 9:9",
+      "text": "Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Rei que traz salvação chega pobre, montado num jumento — não como os reis das nações."
+    },
+    "options": [
+      {"id": "a", "text": "Cavalaria messiânica"},
+      {"id": "b", "text": "Sião sem esperança"},
+      {"id": "c", "text": "Salvação no Rei pobre"}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Zacarias 1:3; 9:9",
+    "learningObjective": "Relacionar o chamado a voltar para Jeová com a vinda do Rei humilde que traz salvação.",
+    "evidence": ["Zacarias 1:3", "Zacarias 9:9"],
+    "type": "true_false",
+    "question": "Em Zacarias 1:3, Jeová dos Exércitos promete tornar para o povo se o povo tornar para ele.",
+    "prompt": "Em Zacarias 1:3, Jeová dos Exércitos promete tornar para o povo se o povo tornar para ele.",
+    "cue": "Em Zacarias 1:3, Jeová dos Exércitos promete tornar para o povo se o povo tornar para ele.",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-03-desafio-zacarias",
+    "id": "zacarias-sem-zacarias-zacarias-03-desafio-zacarias-01",
+    "feedbackCorrect": "Certo: Tornai para mim, e tornarei para vós.",
+    "feedbackWrong": {
+      "false": "A promessa tornarei está ligada ao chamado Tornai."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Portanto, dize-lhes: Assim diz Jeová dos Exércitos: Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Zacarias 1:3; 9:9",
+    "learningObjective": "Relacionar o chamado a voltar para Jeová com a vinda do Rei humilde que traz salvação.",
+    "evidence": ["Zacarias 1:3", "Zacarias 9:9"],
+    "type": "tap",
+    "question": "Em Zacarias 1:3; 9:9, toque a palavra que falta em \"Assim diz Jeová dos ___\"?",
+    "prompt": "Em Zacarias 1:3; 9:9, toque a palavra que falta em \"Assim diz Jeová dos ___\"?",
+    "cue": "Em Zacarias 1:3; 9:9, toque a palavra que falta em \"Assim diz Jeová dos ___\"?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-03-desafio-zacarias",
+    "id": "zacarias-sem-zacarias-zacarias-03-desafio-zacarias-02",
+    "feedbackCorrect": "Exato: o título repetido é Jeová dos Exércitos.",
+    "feedbackWrong": {
+      "b": "mim é o destino do povo, não o título divino.",
+      "c": "vós é o povo, não o complemento de Jeová dos."
+    },
+    "passageText": "Portanto, dize-lhes: Assim diz Jeová dos Exércitos: Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos.",
+    "template": "Assim diz Jeová dos ___",
+    "options": [
+      {"id": "a", "text": "Exércitos"},
+      {"id": "b", "text": "mim"},
+      {"id": "c", "text": "vós"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Zacarias 1:3; 9:9",
+    "learningObjective": "Relacionar o chamado a voltar para Jeová com a vinda do Rei humilde que traz salvação.",
+    "evidence": ["Zacarias 1:3", "Zacarias 9:9"],
+    "type": "choice",
+    "question": "Em Zacarias 1:3, o que Jeová dos Exércitos ordena e promete?",
+    "prompt": "Em Zacarias 1:3, o que Jeová dos Exércitos ordena e promete?",
+    "cue": "Em Zacarias 1:3, o que Jeová dos Exércitos ordena e promete?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-03-desafio-zacarias",
+    "id": "zacarias-sem-zacarias-zacarias-03-desafio-zacarias-03",
+    "feedbackCorrect": "Certo: ordena Tornai para mim e promete tornarei para vós.",
+    "feedbackWrong": {
+      "a": "O texto chama a voltar, não a fugir nem ao esquecimento.",
+      "b": "Aqui não há ordem de muralhas nem promessa de riquezas.",
+      "d": "Jeová manda dize-lhes; não manda calar."
+    },
+    "passageText": "Portanto, dize-lhes: Assim diz Jeová dos Exércitos: Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos.",
+    "options": [
+      {"id": "a", "text": "Que o povo fuja de Jerusalém, e ele os esquecerá."},
+      {"id": "b", "text": "Que construam muralhas, e ele lhes dará riquezas."},
+      {"id": "c", "text": "Tornai para mim, e tornarei para vós."},
+      {"id": "d", "text": "Calai-vos, pois o tempo da fala já passou."}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Zacarias 1:3; 9:9",
+    "learningObjective": "Relacionar o chamado a voltar para Jeová com a vinda do Rei humilde que traz salvação.",
+    "evidence": ["Zacarias 1:3", "Zacarias 9:9"],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Zacarias 1:3?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Zacarias 1:3?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Zacarias 1:3?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-03-desafio-zacarias",
+    "id": "zacarias-sem-zacarias-zacarias-03-desafio-zacarias-04",
+    "feedbackCorrect": "Certo: o envio da palavra, o chamado e a promessa.",
+    "feedbackWrong": {
+      "b": "O chamado Tornai vem depois de dize-lhes.",
+      "c": "A promessa tornarei fecha o versículo."
+    },
+    "passageText": "Portanto, dize-lhes: Assim diz Jeová dos Exércitos: Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos.",
+    "options": [
+      {"id": "a", "text": "Portanto, dize-lhes"},
+      {"id": "b", "text": "Tornai para mim, diz Jeová dos Exércitos"},
+      {"id": "c", "text": "e tornarei para vós, diz Jeová dos Exércitos"}
+    ],
+    "correctOrder": ["a", "b", "c"],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Zacarias 1:3; 9:9",
+    "learningObjective": "Relacionar o chamado a voltar para Jeová com a vinda do Rei humilde que traz salvação.",
+    "evidence": ["Zacarias 1:3", "Zacarias 9:9"],
+    "type": "complete",
+    "question": "Complete a frase: \"Tornai para ___, diz Jeová dos Exércitos\"",
+    "prompt": "Complete a frase: \"Tornai para ___, diz Jeová dos Exércitos\"",
+    "cue": "Complete a frase: \"Tornai para ___, diz Jeová dos Exércitos\"",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-03-desafio-zacarias",
+    "id": "zacarias-sem-zacarias-zacarias-03-desafio-zacarias-05",
+    "feedbackCorrect": "Certo: o povo deve tornar para mim.",
+    "feedbackWrong": {
+      "a": "vós é para quem Jeová torna, não o objeto de Tornai.",
+      "c": "Portanto abre o oráculo, não esta lacuna."
+    },
+    "passageText": "Portanto, dize-lhes: Assim diz Jeová dos Exércitos: Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos.",
+    "template": "Tornai para ___, diz Jeová dos Exércitos",
+    "options": [
+      {"id": "a", "text": "vós"},
+      {"id": "b", "text": "mim"},
+      {"id": "c", "text": "Portanto"}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Zacarias 1:3; 9:9",
+    "learningObjective": "Relacionar o chamado a voltar para Jeová com a vinda do Rei humilde que traz salvação.",
+    "evidence": ["Zacarias 1:3", "Zacarias 9:9"],
+    "type": "connect",
+    "question": "O que Zacarias 1:3 comunica que se liga a este contexto?",
+    "prompt": "O que Zacarias 1:3 comunica que se liga a este contexto?",
+    "cue": "O que Zacarias 1:3 comunica que se liga a este contexto?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-03-desafio-zacarias",
+    "id": "zacarias-sem-zacarias-zacarias-03-desafio-zacarias-06",
+    "feedbackCorrect": "Certo: o palco começa pela volta a Jeová.",
+    "feedbackWrong": {
+      "b": "Jeová chama; o exílio não é a última palavra aqui.",
+      "c": "1:3 fala de Jeová, não do rei das nações."
+    },
+    "passageText": "Portanto, dize-lhes: Assim diz Jeová dos Exércitos: Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos.",
+    "passageA": {
+      "ref": "Zacarias 1:3",
+      "text": "Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Voltar para Jeová é encontrar o Rei humilde que traz salvação."
+    },
+    "options": [
+      {"id": "a", "text": "Volta a Jeová"},
+      {"id": "b", "text": "Exílio permanente"},
+      {"id": "c", "text": "Rei das nações"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Zacarias 1:3; 9:9",
+    "learningObjective": "Relacionar o chamado a voltar para Jeová com a vinda do Rei humilde que traz salvação.",
+    "evidence": ["Zacarias 1:3", "Zacarias 9:9"],
+    "type": "true_false",
+    "question": "Em Zacarias 9:9, o Rei que trás a salvação é apresentado como rico e montado num cavalo.",
+    "prompt": "Em Zacarias 9:9, o Rei que trás a salvação é apresentado como rico e montado num cavalo.",
+    "cue": "Em Zacarias 9:9, o Rei que trás a salvação é apresentado como rico e montado num cavalo.",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-03-desafio-zacarias",
+    "id": "zacarias-cam-zacarias-zacarias-03-desafio-zacarias-01",
+    "feedbackCorrect": "Certo: o Rei é pobre e vem montado sobre um jumento.",
+    "feedbackWrong": {
+      "true": "O texto diz pobre e jumento, não rico e cavalo."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Regozija-te muito, filha de Sião; exulta, filha de Jerusalém; eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Zacarias 1:3; 9:9",
+    "learningObjective": "Relacionar o chamado a voltar para Jeová com a vinda do Rei humilde que traz salvação.",
+    "evidence": ["Zacarias 1:3", "Zacarias 9:9"],
+    "type": "tap",
+    "question": "Em Zacarias 1:3; 9:9, toque a palavra que falta em \"vem montado sobre um ___, sobre um potrinho\"?",
+    "prompt": "Em Zacarias 1:3; 9:9, toque a palavra que falta em \"vem montado sobre um ___, sobre um potrinho\"?",
+    "cue": "Em Zacarias 1:3; 9:9, toque a palavra que falta em \"vem montado sobre um ___, sobre um potrinho\"?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-03-desafio-zacarias",
+    "id": "zacarias-cam-zacarias-zacarias-03-desafio-zacarias-02",
+    "feedbackCorrect": "Exato: a montaria é um jumento.",
+    "feedbackWrong": {
+      "a": "Rei é quem monta, não o animal desta lacuna.",
+      "b": "Sião é quem se alegra, não a montaria."
+    },
+    "passageText": "Regozija-te muito, filha de Sião; exulta, filha de Jerusalém; eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta.",
+    "template": "vem montado sobre um ___, sobre um potrinho",
+    "options": [
+      {"id": "a", "text": "Rei"},
+      {"id": "b", "text": "Sião"},
+      {"id": "c", "text": "jumento"}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Zacarias 1:3; 9:9",
+    "learningObjective": "Relacionar o chamado a voltar para Jeová com a vinda do Rei humilde que traz salvação.",
+    "evidence": ["Zacarias 1:3", "Zacarias 9:9"],
+    "type": "choice",
+    "question": "Como Zacarias 9:9 apresenta o Rei que vem a Sião?",
+    "prompt": "Como Zacarias 9:9 apresenta o Rei que vem a Sião?",
+    "cue": "Como Zacarias 9:9 apresenta o Rei que vem a Sião?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-03-desafio-zacarias",
+    "id": "zacarias-cam-zacarias-zacarias-03-desafio-zacarias-03",
+    "feedbackCorrect": "Certo: justiça, salvação, pobreza e jumento formam o retrato.",
+    "feedbackWrong": {
+      "b": "Ele trás a salvação; não a recusa.",
+      "c": "A montaria é jumento, não cavalo de batalha.",
+      "d": "Ele vem a Jerusalém e a Sião, não permanece distante."
+    },
+    "passageText": "Regozija-te muito, filha de Sião; exulta, filha de Jerusalém; eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta.",
+    "options": [
+      {"id": "a", "text": "Justo e salvador, porém pobre e montado num jumento."},
+      {"id": "b", "text": "Justo, mas recusa trazer salvação ao povo."},
+      {"id": "c", "text": "Pobre, porém montado num cavalo de batalha."},
+      {"id": "d", "text": "Alegre, mas distante de Jerusalém e de Sião."}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Zacarias 1:3; 9:9",
+    "learningObjective": "Relacionar o chamado a voltar para Jeová com a vinda do Rei humilde que traz salvação.",
+    "evidence": ["Zacarias 1:3", "Zacarias 9:9"],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Zacarias 9:9?",
+    "prompt": "Como se encadeiam os eventos de Zacarias 9:9?",
+    "cue": "Como se encadeiam os eventos de Zacarias 9:9?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-03-desafio-zacarias",
+    "id": "zacarias-cam-zacarias-zacarias-03-desafio-zacarias-04",
+    "feedbackCorrect": "Certo: o júbilo, a vinda do Rei e a salvação que ele trás.",
+    "feedbackWrong": {
+      "a": "A salvação descreve o Rei depois que ele é anunciado.",
+      "c": "eis que vem a ti o teu Rei vem depois do regozijo."
+    },
+    "passageText": "Regozija-te muito, filha de Sião; exulta, filha de Jerusalém; eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta.",
+    "options": [
+      {"id": "a", "text": "Ele é justo, e trás a salvação"},
+      {"id": "b", "text": "Regozija-te muito, filha de Sião"},
+      {"id": "c", "text": "eis que vem a ti o teu Rei"}
+    ],
+    "correctOrder": ["b", "c", "a"],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Zacarias 1:3; 9:9",
+    "learningObjective": "Relacionar o chamado a voltar para Jeová com a vinda do Rei humilde que traz salvação.",
+    "evidence": ["Zacarias 1:3", "Zacarias 9:9"],
+    "type": "complete",
+    "question": "Complete a frase: \"ele é ___ e vem montado sobre um jumento\"",
+    "prompt": "Complete a frase: \"ele é ___ e vem montado sobre um jumento\"",
+    "cue": "Complete a frase: \"ele é ___ e vem montado sobre um jumento\"",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-03-desafio-zacarias",
+    "id": "zacarias-cam-zacarias-zacarias-03-desafio-zacarias-05",
+    "feedbackCorrect": "Certo: o Rei é pobre neste retrato.",
+    "feedbackWrong": {
+      "b": "justo aparece na frase anterior, não nesta lacuna.",
+      "c": "muito intensifica o regozijo, não este predicado."
+    },
+    "passageText": "Regozija-te muito, filha de Sião; exulta, filha de Jerusalém; eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta.",
+    "template": "ele é ___ e vem montado sobre um jumento",
+    "options": [
+      {"id": "a", "text": "pobre"},
+      {"id": "b", "text": "justo"},
+      {"id": "c", "text": "muito"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Zacarias 1:3; 9:9",
+    "learningObjective": "Relacionar o chamado a voltar para Jeová com a vinda do Rei humilde que traz salvação.",
+    "evidence": ["Zacarias 1:3", "Zacarias 9:9"],
+    "type": "connect",
+    "question": "O que Zacarias 9:9 comunica que se liga a este contexto?",
+    "prompt": "O que Zacarias 9:9 comunica que se liga a este contexto?",
+    "cue": "O que Zacarias 9:9 comunica que se liga a este contexto?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-03-desafio-zacarias",
+    "id": "zacarias-cam-zacarias-zacarias-03-desafio-zacarias-06",
+    "feedbackCorrect": "Certo: o Rei justo e pobre é o encontro anunciado.",
+    "feedbackWrong": {
+      "a": "O jumento não anuncia guerra santa imediata.",
+      "c": "Sião é chamada a exultar, não a calar."
+    },
+    "passageText": "Regozija-te muito, filha de Sião; exulta, filha de Jerusalém; eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta.",
+    "passageA": {
+      "ref": "Zacarias 9:9",
+      "text": "Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Voltar para Jeová é encontrar o Rei humilde que traz salvação."
+    },
+    "options": [
+      {"id": "a", "text": "Guerra santa imediata"},
+      {"id": "b", "text": "Rei justo e pobre"},
+      {"id": "c", "text": "Silêncio de Sião"}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Zacarias 1:3; 9:9",
+    "learningObjective": "Relacionar o chamado a voltar para Jeová com a vinda do Rei humilde que traz salvação.",
+    "evidence": ["Zacarias 1:3", "Zacarias 9:9"],
+    "type": "true_false",
+    "question": "Voltar para Jeová e receber o Rei humilde pertencem ao mesmo chamado de restauração.",
+    "prompt": "Voltar para Jeová e receber o Rei humilde pertencem ao mesmo chamado de restauração.",
+    "cue": "Voltar para Jeová e receber o Rei humilde pertencem ao mesmo chamado de restauração.",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-03-desafio-zacarias",
+    "id": "zacarias-pro-zacarias-zacarias-03-desafio-zacarias-01",
+    "feedbackCorrect": "Certo: o chamado a tornar encontra o Rei que trás salvação.",
+    "feedbackWrong": {
+      "false": "1:3 e 9:9 se leem juntos neste desafio."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Portanto, dize-lhes: Assim diz Jeová dos Exércitos: Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos. Regozija-te muito, filha de Sião; exulta, filha de Jerusalém; eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Zacarias 1:3; 9:9",
+    "learningObjective": "Relacionar o chamado a voltar para Jeová com a vinda do Rei humilde que traz salvação.",
+    "evidence": ["Zacarias 1:3", "Zacarias 9:9"],
+    "type": "tap",
+    "question": "Em Zacarias 1:3; 9:9, toque a palavra que falta em \"Ele é justo, e trás a ___\"?",
+    "prompt": "Em Zacarias 1:3; 9:9, toque a palavra que falta em \"Ele é justo, e trás a ___\"?",
+    "cue": "Em Zacarias 1:3; 9:9, toque a palavra que falta em \"Ele é justo, e trás a ___\"?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-03-desafio-zacarias",
+    "id": "zacarias-pro-zacarias-zacarias-03-desafio-zacarias-02",
+    "feedbackCorrect": "Exato: o Rei trás a salvação.",
+    "feedbackWrong": {
+      "a": "jumento é a montaria, não o que ele trás.",
+      "c": "Tornai é o chamado de 1:3, não esta lacuna de 9:9."
+    },
+    "passageText": "Portanto, dize-lhes: Assim diz Jeová dos Exércitos: Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos. Regozija-te muito, filha de Sião; exulta, filha de Jerusalém; eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta.",
+    "template": "Ele é justo, e trás a ___",
+    "options": [
+      {"id": "a", "text": "jumento"},
+      {"id": "b", "text": "salvação"},
+      {"id": "c", "text": "Tornai"}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Zacarias 1:3; 9:9",
+    "learningObjective": "Relacionar o chamado a voltar para Jeová com a vinda do Rei humilde que traz salvação.",
+    "evidence": ["Zacarias 1:3", "Zacarias 9:9"],
+    "type": "choice",
+    "question": "Como Zacarias 1:3 e 9:9 se iluminam mutuamente?",
+    "prompt": "Como Zacarias 1:3 e 9:9 se iluminam mutuamente?",
+    "cue": "Como Zacarias 1:3 e 9:9 se iluminam mutuamente?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-03-desafio-zacarias",
+    "id": "zacarias-pro-zacarias-zacarias-03-desafio-zacarias-03",
+    "feedbackCorrect": "Certo: voltar para Jeová é encontrar o Rei humilde que salva.",
+    "feedbackWrong": {
+      "a": "O Rei pobre não é o oposto do chamado; é o seu cumprimento.",
+      "b": "O jumento descreve o Rei; não substitui o Tornai.",
+      "c": "1:3 não é descartável: a volta a Jeová abre o livro."
+    },
+    "passageText": "Portanto, dize-lhes: Assim diz Jeová dos Exércitos: Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos. Regozija-te muito, filha de Sião; exulta, filha de Jerusalém; eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta.",
+    "options": [
+      {"id": "a", "text": "Voltar a Jeová e esperar um rei guerreiro são caminhos opostos."},
+      {"id": "b", "text": "O jumento substitui o chamado à conversão."},
+      {"id": "c", "text": "Só 9:9 importa; 1:3 é um preâmbulo descartável."},
+      {"id": "d", "text": "Quem volta para Jeová encontra o Rei humilde que traz salvação."}
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Zacarias 1:3; 9:9",
+    "learningObjective": "Relacionar o chamado a voltar para Jeová com a vinda do Rei humilde que traz salvação.",
+    "evidence": ["Zacarias 1:3", "Zacarias 9:9"],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Zacarias 1:3; 9:9?",
+    "prompt": "Qual sequência revela o sentido de Zacarias 1:3; 9:9?",
+    "cue": "Qual sequência revela o sentido de Zacarias 1:3; 9:9?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-03-desafio-zacarias",
+    "id": "zacarias-pro-zacarias-zacarias-03-desafio-zacarias-04",
+    "feedbackCorrect": "Certo: o povo torna, Jeová torna, e o Rei humilde vem.",
+    "feedbackWrong": {
+      "a": "A vinda do Rei conclui o sentido, depois da volta recíproca.",
+      "c": "tornarei para vós responde a Tornai, antes do anúncio do Rei."
+    },
+    "passageText": "Portanto, dize-lhes: Assim diz Jeová dos Exércitos: Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos. Regozija-te muito, filha de Sião; exulta, filha de Jerusalém; eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta.",
+    "options": [
+      {"id": "a", "text": "eis que vem a ti o teu Rei"},
+      {"id": "b", "text": "Tornai para mim, diz Jeová dos Exércitos"},
+      {"id": "c", "text": "e tornarei para vós, diz Jeová dos Exércitos"}
+    ],
+    "correctOrder": ["b", "c", "a"],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Zacarias 1:3; 9:9",
+    "learningObjective": "Relacionar o chamado a voltar para Jeová com a vinda do Rei humilde que traz salvação.",
+    "evidence": ["Zacarias 1:3", "Zacarias 9:9"],
+    "type": "complete",
+    "question": "Complete a frase: \"Tornai para ___, diz Jeová dos Exércitos\"",
+    "prompt": "Complete a frase: \"Tornai para ___, diz Jeová dos Exércitos\"",
+    "cue": "Complete a frase: \"Tornai para ___, diz Jeová dos Exércitos\"",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-03-desafio-zacarias",
+    "id": "zacarias-pro-zacarias-zacarias-03-desafio-zacarias-05",
+    "feedbackCorrect": "Certo: o retorno é para mim, para Jeová.",
+    "feedbackWrong": {
+      "a": "Sião recebe o Rei em 9:9, não preenche Tornai para.",
+      "b": "Rei é quem vem em 9:9, não o objeto de Tornai."
+    },
+    "passageText": "Portanto, dize-lhes: Assim diz Jeová dos Exércitos: Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos. Regozija-te muito, filha de Sião; exulta, filha de Jerusalém; eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta.",
+    "template": "Tornai para ___, diz Jeová dos Exércitos",
+    "options": [
+      {"id": "a", "text": "Sião"},
+      {"id": "b", "text": "Rei"},
+      {"id": "c", "text": "mim"}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Zacarias 1:3; 9:9",
+    "learningObjective": "Relacionar o chamado a voltar para Jeová com a vinda do Rei humilde que traz salvação.",
+    "evidence": ["Zacarias 1:3", "Zacarias 9:9"],
+    "type": "connect",
+    "question": "O que Zacarias 1:3; 9:9 comunica que se liga a este contexto?",
+    "prompt": "O que Zacarias 1:3; 9:9 comunica que se liga a este contexto?",
+    "cue": "O que Zacarias 1:3; 9:9 comunica que se liga a este contexto?",
+    "trail": "zacarias",
+    "section": "zacarias-zacarias-03-desafio-zacarias",
+    "id": "zacarias-pro-zacarias-zacarias-03-desafio-zacarias-06",
+    "feedbackCorrect": "Certo: a ponte é a volta e o Rei humilde.",
+    "feedbackWrong": {
+      "a": "Os dois textos se completam, não se cancelam.",
+      "b": "Há Rei e salvação, não só lei sem rei."
+    },
+    "passageText": "Portanto, dize-lhes: Assim diz Jeová dos Exércitos: Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos. Regozija-te muito, filha de Sião; exulta, filha de Jerusalém; eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento, sobre um potrinho, filho de uma jumenta.",
+    "passageA": {
+      "ref": "Zacarias 1:3; 9:9",
+      "text": "Tornai para mim, diz Jeová dos Exércitos, e tornarei para vós, diz Jeová dos Exércitos. eis que vem a ti o teu Rei. Ele é justo, e trás a salvação; ele é pobre e vem montado sobre um jumento"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Voltar para Jeová é encontrar o Rei humilde que traz salvação."
+    },
+    "options": [
+      {"id": "a", "text": "Textos que se cancelam"},
+      {"id": "b", "text": "Só lei, sem rei"},
+      {"id": "c", "text": "Volta e Rei humilde"}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  }
+]

@@ -263,6 +263,13 @@ function downloadBlob(blob, filename) {
   URL.revokeObjectURL(url);
 }
 
+function downloadJson(data, filename) {
+  downloadBlob(
+    new Blob([`${JSON.stringify(data, null, 2)}\n`], { type: 'application/json' }),
+    filename,
+  );
+}
+
 function downloadWord(title, bodyHtml, filename) {
   const html = `<!DOCTYPE html><html><head><meta charset="utf-8"><title>${escapeHtml(title)}</title></head><body>${bodyHtml}</body></html>`;
   downloadBlob(new Blob(['\ufeff', html], { type: 'application/msword' }), filename);
@@ -700,10 +707,7 @@ async function exportCurriculum(format) {
 
   if (format === 'json') {
     const tree = buildCurriculumTree(trails, bank, difficultyLevels);
-    downloadBlob(
-      new Blob([`${JSON.stringify(tree, null, 2)}\n`], { type: 'application/json' }),
-      `curriculo-${stamp}.json`,
-    );
+    downloadJson(tree, `curriculo-${stamp}.json`);
     return bank.length;
   }
 
@@ -824,6 +828,26 @@ async function exportCollection(key, format) {
   const docs = await listCollection(COL[key]);
   const label = labels[key];
   const base = filenames[key];
+  const stamp = dateStamp();
+
+  if (format === 'json') {
+    if (key === 'trails') {
+      downloadJson(docs, `${base}-${stamp}.json`);
+      return docs.length;
+    }
+    if (key === 'bank') {
+      const difficulties = await listCollection(COL.difficulties);
+      downloadJson({ difficulties, questions: docs }, `${base}-${stamp}.json`);
+      return docs.length;
+    }
+    const studies = {};
+    for (const s of docs) {
+      const slug = s.slug || s.id;
+      studies[slug] = { ...s, slug };
+    }
+    downloadJson({ studies }, `${base}-${stamp}.json`);
+    return docs.length;
+  }
 
   if (format === 'word') {
     const html =
@@ -839,11 +863,27 @@ async function exportCollection(key, format) {
 }
 
 async function exportAll(format) {
-  const [trails, bank, studies] = await Promise.all([
+  const [trails, bank, studies, difficulties] = await Promise.all([
     listCollection(COL.trails),
     listCollection(COL.bank),
     listCollection(COL.studies, 'slug'),
+    listCollection(COL.difficulties),
   ]);
+  const stamp = dateStamp();
+
+  if (format === 'json') {
+    downloadJson(
+      {
+        exportedAt: new Date().toISOString(),
+        trails,
+        difficulties,
+        bank,
+        studies,
+      },
+      `stway-conteudo-${stamp}.json`,
+    );
+    return trails.length + bank.length + studies.length;
+  }
 
   if (format === 'word') {
     const JSZip = await loadJsZip();
@@ -918,7 +958,7 @@ export async function renderImportPage(root) {
       <p class="page-sub">Baixe o conteúdo publicado em Word, PDF ou JSON. Use <strong>Currículo</strong> para trilha → passo → pergunta → opções.</p>
 
       <div class="ie-export-grid">
-        ${exportCard('curriculum', 'Currículo', 'Trilhas com perguntas aninhadas', ['word', 'pdf', 'json'])}
+        ${exportCard('curriculum', 'Currículo', 'Trilhas com perguntas aninhadas')}
         ${exportCard('trails', 'Trilhas', 'Mapas e passos do app')}
         ${exportCard('bank', 'Perguntas', 'Banco de ações do treino')}
         ${exportCard('studies', 'Estudos', 'Textos de preparo')}
@@ -1068,7 +1108,7 @@ export async function renderImportPage(root) {
   });
 }
 
-function exportCard(key, title, desc, formats = ['word', 'pdf']) {
+function exportCard(key, title, desc, formats = ['word', 'pdf', 'json']) {
   const labels = { word: 'Word', pdf: 'PDF', json: 'JSON' };
   const buttons = formats
     .map(

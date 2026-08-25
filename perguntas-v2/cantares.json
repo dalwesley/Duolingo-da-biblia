@@ -1,0 +1,2189 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Reconhecer que a amada pede ao amado, em Cantares 8:6, ser guardada como selo de compromisso exclusivo.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "true_false",
+    "question": "Em Cantares 8:6, a amada pede para ser posta como selo sobre o coração e o braço do amado.",
+    "prompt": "Em Cantares 8:6, a amada pede para ser posta como selo sobre o coração e o braço do amado.",
+    "cue": "Em Cantares 8:6, a amada pede para ser posta como selo sobre o coração e o braço do amado.",
+    "feedbackCorrect": "Certo: é exatamente esse o pedido que abre o versículo.",
+    "feedbackWrong": {
+      "false": "Releia a abertura do versículo: é exatamente isso que a amada pede."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço, pois o amor é forte como a morte, e o ciúme é cruel como a sepultura.",
+    "trail": "cantares",
+    "section": "cantares-amor-01-cantico-dos-canticos",
+    "id": "cantares-sem-cantares-amor-01-cantico-dos-canticos-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Reconhecer que a amada pede ao amado, em Cantares 8:6, ser guardada como selo de compromisso exclusivo.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "tap",
+    "question": "Em Cantares 8:6, toque a palavra que falta em \"Põe-me como ___ sobre o teu coração, como selo sobre o teu braço\"?",
+    "prompt": "Em Cantares 8:6, toque a palavra que falta em \"Põe-me como ___ sobre o teu coração, como selo sobre o teu braço\"?",
+    "cue": "Em Cantares 8:6, toque a palavra que falta em \"Põe-me como ___ sobre o teu coração, como selo sobre o teu braço\"?",
+    "feedbackCorrect": "Exato: \"selo\" é a palavra que a amada repete duas vezes no pedido.",
+    "feedbackWrong": {
+      "b": "Essa palavra aparece no texto, mas não preenche esta lacuna.",
+      "c": "Releia o pedido da amada e escolha a palavra repetida no versículo."
+    },
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço, pois o amor é forte como a morte, e o ciúme é cruel como a sepultura.",
+    "template": "Põe-me como ___ sobre o teu coração, como selo sobre o teu braço",
+    "options": [
+      {
+        "id": "a",
+        "text": "selo"
+      },
+      {
+        "id": "b",
+        "text": "coração"
+      },
+      {
+        "id": "c",
+        "text": "braço"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-01-cantico-dos-canticos",
+    "id": "cantares-sem-cantares-amor-01-cantico-dos-canticos-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Reconhecer que a amada pede ao amado, em Cantares 8:6, ser guardada como selo de compromisso exclusivo.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "choice",
+    "question": "Qual é o pedido que a amada faz ao amado em Cantares 8:6?",
+    "prompt": "Qual é o pedido que a amada faz ao amado em Cantares 8:6?",
+    "cue": "Qual é o pedido que a amada faz ao amado em Cantares 8:6?",
+    "feedbackCorrect": "Certo: é exatamente esse o pedido da amada no versículo.",
+    "feedbackWrong": {
+      "b": "O texto não fala em joias nem em riqueza.",
+      "c": "O texto não menciona uma partida ou mudança de lugar.",
+      "d": "O pedido é o oposto: que o amado guarde, não esqueça."
+    },
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço, pois o amor é forte como a morte, e o ciúme é cruel como a sepultura.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que ele a guarde como um selo junto ao coração e ao braço."
+      },
+      {
+        "id": "b",
+        "text": "Que ele lhe dê joias como prova pública de riqueza."
+      },
+      {
+        "id": "c",
+        "text": "Que ele a leve para longe da própria família."
+      },
+      {
+        "id": "d",
+        "text": "Que ele esqueça as promessas feitas no passado."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-01-cantico-dos-canticos",
+    "id": "cantares-sem-cantares-amor-01-cantico-dos-canticos-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Reconhecer que a amada pede ao amado, em Cantares 8:6, ser guardada como selo de compromisso exclusivo.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Cantares 8:6?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Cantares 8:6?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Cantares 8:6?",
+    "feedbackCorrect": "Certo: essa é a sequência exata do versículo.",
+    "feedbackWrong": {
+      "b": "A ordem está trocada: o pedido pelo braço vem depois do pedido pelo coração.",
+      "c": "Releia o versículo: a razão do pedido (o amor forte) vem por último."
+    },
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço, pois o amor é forte como a morte, e o ciúme é cruel como a sepultura.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Põe-me como selo sobre o teu coração"
+      },
+      {
+        "id": "b",
+        "text": "Como selo sobre o teu braço"
+      },
+      {
+        "id": "c",
+        "text": "Pois o amor é forte como a morte, e o ciúme é cruel como a sepultura"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-01-cantico-dos-canticos",
+    "id": "cantares-sem-cantares-amor-01-cantico-dos-canticos-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Reconhecer que a amada pede ao amado, em Cantares 8:6, ser guardada como selo de compromisso exclusivo.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Pois o amor é forte como ___, e o ciúme é cruel como a sepultura\"",
+    "prompt": "Complete a frase: \"Pois o amor é forte como ___, e o ciúme é cruel como a sepultura\"",
+    "cue": "Complete a frase: \"Pois o amor é forte como ___, e o ciúme é cruel como a sepultura\"",
+    "feedbackCorrect": "Certo: o amor é comparado à força da morte.",
+    "feedbackWrong": {
+      "b": "Essa palavra já aparece em outra parte da frase.",
+      "c": "Releia a frase: falta o termo ao qual o amor é comparado."
+    },
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço, pois o amor é forte como a morte, e o ciúme é cruel como a sepultura.",
+    "template": "Pois o amor é forte como ___, e o ciúme é cruel como a sepultura",
+    "options": [
+      {
+        "id": "a",
+        "text": "morte"
+      },
+      {
+        "id": "b",
+        "text": "ciúme"
+      },
+      {
+        "id": "c",
+        "text": "sepultura"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-01-cantico-dos-canticos",
+    "id": "cantares-sem-cantares-amor-01-cantico-dos-canticos-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Reconhecer que a amada pede ao amado, em Cantares 8:6, ser guardada como selo de compromisso exclusivo.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "connect",
+    "question": "O que Cantares 8:6 comunica que se liga a este contexto?",
+    "prompt": "O que Cantares 8:6 comunica que se liga a este contexto?",
+    "cue": "O que Cantares 8:6 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o selo marca um vínculo exclusivo, não uma transação.",
+    "feedbackWrong": {
+      "b": "O pedido da amada não é sobre bens ou comércio.",
+      "c": "O selo simboliza permanência, não separação."
+    },
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço",
+    "passageA": {
+      "ref": "Cantares 8:6",
+      "text": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Cântico dos Cânticos celebra a beleza do amor conjugal como algo sagrado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Selo de pertencimento exclusivo"
+      },
+      {
+        "id": "b",
+        "text": "Registro comercial de propriedades"
+      },
+      {
+        "id": "c",
+        "text": "Sinal de despedida definitiva"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-01-cantico-dos-canticos",
+    "id": "cantares-sem-cantares-amor-01-cantico-dos-canticos-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Reconhecer que a amada pede ao amado, em Cantares 8:6, ser guardada como selo de compromisso exclusivo.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "true_false",
+    "question": "Em Cantares 8:6, a amada pede para ser esquecida assim que o amado viajar.",
+    "prompt": "Em Cantares 8:6, a amada pede para ser esquecida assim que o amado viajar.",
+    "cue": "Em Cantares 8:6, a amada pede para ser esquecida assim que o amado viajar.",
+    "feedbackCorrect": "Certo: o texto pede o oposto — ser lembrada como um selo permanente.",
+    "feedbackWrong": {
+      "true": "O texto pede justamente o contrário: ser guardada, não esquecida."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço, pois o amor é forte como a morte, e o ciúme é cruel como a sepultura.",
+    "trail": "cantares",
+    "section": "cantares-amor-01-cantico-dos-canticos",
+    "id": "cantares-cam-cantares-amor-01-cantico-dos-canticos-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Reconhecer que a amada pede ao amado, em Cantares 8:6, ser guardada como selo de compromisso exclusivo.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "tap",
+    "question": "Em Cantares 8:6, toque a palavra que falta em \"Põe-me como selo sobre o teu coração, como selo sobre o teu ___\"?",
+    "prompt": "Em Cantares 8:6, toque a palavra que falta em \"Põe-me como selo sobre o teu coração, como selo sobre o teu ___\"?",
+    "cue": "Em Cantares 8:6, toque a palavra que falta em \"Põe-me como selo sobre o teu coração, como selo sobre o teu ___\"?",
+    "feedbackCorrect": "Exato: o pedido se repete para o braço, reforçando o compromisso.",
+    "feedbackWrong": {
+      "b": "Essa palavra já preenche a primeira parte da frase.",
+      "c": "Releia a segunda parte do pedido da amada."
+    },
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço, pois o amor é forte como a morte, e o ciúme é cruel como a sepultura.",
+    "template": "Põe-me como selo sobre o teu coração, como selo sobre o teu ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "braço"
+      },
+      {
+        "id": "b",
+        "text": "coração"
+      },
+      {
+        "id": "c",
+        "text": "selo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-01-cantico-dos-canticos",
+    "id": "cantares-cam-cantares-amor-01-cantico-dos-canticos-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Reconhecer que a amada pede ao amado, em Cantares 8:6, ser guardada como selo de compromisso exclusivo.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "choice",
+    "question": "Por que a amada pede para ser posta como selo sobre o coração e o braço do amado?",
+    "prompt": "Por que a amada pede para ser posta como selo sobre o coração e o braço do amado?",
+    "cue": "Por que a amada pede para ser posta como selo sobre o coração e o braço do amado?",
+    "feedbackCorrect": "Certo: o selo é imagem de vínculo exclusivo e duradouro.",
+    "feedbackWrong": {
+      "b": "O uso comercial de selos não é o sentido do poema.",
+      "c": "O texto não trata de confusão de papéis sociais.",
+      "d": "O selo, na imagem do texto, é permanente, não temporário."
+    },
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço, pois o amor é forte como a morte, e o ciúme é cruel como a sepultura.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque um selo marca posse exclusiva e não se troca por outro."
+      },
+      {
+        "id": "b",
+        "text": "Porque selos eram usados apenas para autenticar cartas comerciais."
+      },
+      {
+        "id": "c",
+        "text": "Porque ela teme ser confundida com uma serva da casa."
+      },
+      {
+        "id": "d",
+        "text": "Porque o selo indica apenas uma promessa temporária de visita."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-01-cantico-dos-canticos",
+    "id": "cantares-cam-cantares-amor-01-cantico-dos-canticos-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Reconhecer que a amada pede ao amado, em Cantares 8:6, ser guardada como selo de compromisso exclusivo.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Cantares 8:6?",
+    "prompt": "Como se encadeiam os eventos de Cantares 8:6?",
+    "cue": "Como se encadeiam os eventos de Cantares 8:6?",
+    "feedbackCorrect": "Certo: o pedido vem primeiro, e a razão do pedido vem em seguida.",
+    "feedbackWrong": {
+      "b": "A razão do pedido (o amor forte) não vem antes do próprio pedido.",
+      "c": "Releia o encadeamento: primeiro o pedido, depois a justificativa."
+    },
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço, pois o amor é forte como a morte, e o ciúme é cruel como a sepultura.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Põe-me como selo sobre o teu coração"
+      },
+      {
+        "id": "b",
+        "text": "Como selo sobre o teu braço"
+      },
+      {
+        "id": "c",
+        "text": "Pois o amor é forte como a morte, e o ciúme é cruel como a sepultura"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-01-cantico-dos-canticos",
+    "id": "cantares-cam-cantares-amor-01-cantico-dos-canticos-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Reconhecer que a amada pede ao amado, em Cantares 8:6, ser guardada como selo de compromisso exclusivo.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"E o ciúme é cruel como a ___\"",
+    "prompt": "Complete a frase: \"E o ciúme é cruel como a ___\"",
+    "cue": "Complete a frase: \"E o ciúme é cruel como a ___\"",
+    "feedbackCorrect": "Certo: o ciúme é comparado à sepultura, que nada devolve.",
+    "feedbackWrong": {
+      "b": "Essa palavra já aparece na comparação com o amor, não com o ciúme.",
+      "c": "Essa palavra descreve o ciúme, mas não completa a comparação pedida."
+    },
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço, pois o amor é forte como a morte, e o ciúme é cruel como a sepultura.",
+    "template": "E o ciúme é cruel como a ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "sepultura"
+      },
+      {
+        "id": "b",
+        "text": "morte"
+      },
+      {
+        "id": "c",
+        "text": "cruel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-01-cantico-dos-canticos",
+    "id": "cantares-cam-cantares-amor-01-cantico-dos-canticos-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Reconhecer que a amada pede ao amado, em Cantares 8:6, ser guardada como selo de compromisso exclusivo.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "connect",
+    "question": "O que Cantares 8:6 comunica que se liga a este contexto?",
+    "prompt": "O que Cantares 8:6 comunica que se liga a este contexto?",
+    "cue": "O que Cantares 8:6 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a comparação afirma a força e a permanência do amor.",
+    "feedbackWrong": {
+      "b": "O texto afirma força, não fragilidade.",
+      "c": "O trecho não fala de disputa por bens."
+    },
+    "passageText": "Pois o amor é forte como a morte",
+    "passageA": {
+      "ref": "Cantares 8:6",
+      "text": "Pois o amor é forte como a morte"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O amor descrito resiste a forças poderosas, sem se apagar com o tempo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Amor que resiste até a morte"
+      },
+      {
+        "id": "b",
+        "text": "Fragilidade emocional passageira"
+      },
+      {
+        "id": "c",
+        "text": "Disputa por posses materiais"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-01-cantico-dos-canticos",
+    "id": "cantares-cam-cantares-amor-01-cantico-dos-canticos-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Reconhecer que a amada pede ao amado, em Cantares 8:6, ser guardada como selo de compromisso exclusivo.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "true_false",
+    "question": "A imagem do selo em Cantares 8:6 comunica um desejo de vínculo exclusivo e duradouro entre os amantes.",
+    "prompt": "A imagem do selo em Cantares 8:6 comunica um desejo de vínculo exclusivo e duradouro entre os amantes.",
+    "cue": "A imagem do selo em Cantares 8:6 comunica um desejo de vínculo exclusivo e duradouro entre os amantes.",
+    "feedbackCorrect": "Certo: o selo é símbolo bíblico de posse e permanência.",
+    "feedbackWrong": {
+      "false": "O selo, no uso bíblico, comunica justamente exclusividade e permanência."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço, pois o amor é forte como a morte, e o ciúme é cruel como a sepultura.",
+    "trail": "cantares",
+    "section": "cantares-amor-01-cantico-dos-canticos",
+    "id": "cantares-pro-cantares-amor-01-cantico-dos-canticos-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Reconhecer que a amada pede ao amado, em Cantares 8:6, ser guardada como selo de compromisso exclusivo.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "tap",
+    "question": "Em Cantares 8:6, toque a palavra que falta em \"E o ciúme é ___ como a sepultura\"?",
+    "prompt": "Em Cantares 8:6, toque a palavra que falta em \"E o ciúme é ___ como a sepultura\"?",
+    "cue": "Em Cantares 8:6, toque a palavra que falta em \"E o ciúme é ___ como a sepultura\"?",
+    "feedbackCorrect": "Exato: o texto usa \"cruel\" para descrever a intensidade do ciúme amoroso.",
+    "feedbackWrong": {
+      "b": "Essa palavra descreve o amor, não o ciúme, nesta frase.",
+      "c": "Essa palavra é o termo de comparação, não o adjetivo do ciúme."
+    },
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço, pois o amor é forte como a morte, e o ciúme é cruel como a sepultura.",
+    "template": "E o ciúme é ___ como a sepultura",
+    "options": [
+      {
+        "id": "a",
+        "text": "cruel"
+      },
+      {
+        "id": "b",
+        "text": "forte"
+      },
+      {
+        "id": "c",
+        "text": "morte"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-01-cantico-dos-canticos",
+    "id": "cantares-pro-cantares-amor-01-cantico-dos-canticos-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Reconhecer que a amada pede ao amado, em Cantares 8:6, ser guardada como selo de compromisso exclusivo.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "choice",
+    "question": "O que o pedido do selo, em Cantares 8:6, revela sobre a natureza do compromisso amoroso?",
+    "prompt": "O que o pedido do selo, em Cantares 8:6, revela sobre a natureza do compromisso amoroso?",
+    "cue": "O que o pedido do selo, em Cantares 8:6, revela sobre a natureza do compromisso amoroso?",
+    "feedbackCorrect": "Certo: o selo aponta para uma aliança pessoal e duradoura.",
+    "feedbackWrong": {
+      "b": "O texto não descreve um amor condicional, mas firme.",
+      "c": "O selo carrega peso simbólico forte no contexto bíblico.",
+      "d": "O pedido não fala de troca de bens, mas de vínculo pessoal."
+    },
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço, pois o amor é forte como a morte, e o ciúme é cruel como a sepultura.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O amor genuíno busca marca permanente, como a aliança de Deus com o seu povo."
+      },
+      {
+        "id": "b",
+        "text": "Que o amor humano é sempre condicional e pode ser revogado por qualquer motivo."
+      },
+      {
+        "id": "c",
+        "text": "Que o selo é apenas um costume cultural sem qualquer peso simbólico."
+      },
+      {
+        "id": "d",
+        "text": "Que o compromisso amoroso depende exclusivamente de bens materiais trocados entre os dois."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-01-cantico-dos-canticos",
+    "id": "cantares-pro-cantares-amor-01-cantico-dos-canticos-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Reconhecer que a amada pede ao amado, em Cantares 8:6, ser guardada como selo de compromisso exclusivo.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Cantares 8:6?",
+    "prompt": "Qual sequência revela o sentido de Cantares 8:6?",
+    "cue": "Qual sequência revela o sentido de Cantares 8:6?",
+    "feedbackCorrect": "Certo: o pedido de posse vem antes da explicação sobre a força do amor.",
+    "feedbackWrong": {
+      "b": "A ordem inverte a lógica: a justificativa vem depois do pedido.",
+      "c": "Releia a sequência: primeiro coração, depois braço, por fim a razão."
+    },
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço, pois o amor é forte como a morte, e o ciúme é cruel como a sepultura.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Põe-me como selo sobre o teu coração"
+      },
+      {
+        "id": "b",
+        "text": "Como selo sobre o teu braço"
+      },
+      {
+        "id": "c",
+        "text": "Pois o amor é forte como a morte, e o ciúme é cruel como a sepultura"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-01-cantico-dos-canticos",
+    "id": "cantares-pro-cantares-amor-01-cantico-dos-canticos-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Reconhecer que a amada pede ao amado, em Cantares 8:6, ser guardada como selo de compromisso exclusivo.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Põe-me como selo sobre o teu ___, como selo sobre o teu braço\"",
+    "prompt": "Complete a frase: \"Põe-me como selo sobre o teu ___, como selo sobre o teu braço\"",
+    "cue": "Complete a frase: \"Põe-me como selo sobre o teu ___, como selo sobre o teu braço\"",
+    "feedbackCorrect": "Certo: o pedido começa pelo coração, sede do afeto.",
+    "feedbackWrong": {
+      "b": "Essa palavra completa a segunda parte do pedido, não a primeira.",
+      "c": "Essa palavra é o símbolo do pedido, não o lugar onde ele é posto."
+    },
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço, pois o amor é forte como a morte, e o ciúme é cruel como a sepultura.",
+    "template": "Põe-me como selo sobre o teu ___, como selo sobre o teu braço",
+    "options": [
+      {
+        "id": "a",
+        "text": "coração"
+      },
+      {
+        "id": "b",
+        "text": "braço"
+      },
+      {
+        "id": "c",
+        "text": "selo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-01-cantico-dos-canticos",
+    "id": "cantares-pro-cantares-amor-01-cantico-dos-canticos-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Reconhecer que a amada pede ao amado, em Cantares 8:6, ser guardada como selo de compromisso exclusivo.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "connect",
+    "question": "O que Cantares 8:6 comunica que se liga a este contexto?",
+    "prompt": "O que Cantares 8:6 comunica que se liga a este contexto?",
+    "cue": "O que Cantares 8:6 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o ciúme aqui reflete o zelo exclusivo de Deus por seu povo.",
+    "feedbackWrong": {
+      "b": "O texto não descreve uma inveja trivial e passageira.",
+      "c": "A passagem não trata de conflito entre povos."
+    },
+    "passageText": "E o ciúme é cruel como a sepultura",
+    "passageA": {
+      "ref": "Cantares 8:6",
+      "text": "E o ciúme é cruel como a sepultura"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Esse zelo intenso ecoa o ciúme santo de Deus por seu povo na aliança."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Zelo de Deus por seu povo"
+      },
+      {
+        "id": "b",
+        "text": "Inveja humana comum e passageira"
+      },
+      {
+        "id": "c",
+        "text": "Rivalidade entre duas nações"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-01-cantico-dos-canticos",
+    "id": "cantares-pro-cantares-amor-01-cantico-dos-canticos-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Compreender por que Cantares 8:6 compara a força do amor à morte e o ciúme à sepultura.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "true_false",
+    "question": "Em Cantares 8:6, o amor é comparado a algo tão forte quanto a morte.",
+    "prompt": "Em Cantares 8:6, o amor é comparado a algo tão forte quanto a morte.",
+    "cue": "Em Cantares 8:6, o amor é comparado a algo tão forte quanto a morte.",
+    "feedbackCorrect": "Certo: o texto compara diretamente o amor à força da morte.",
+    "feedbackWrong": {
+      "false": "Releia o versículo: essa comparação está explícita no texto."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço, pois o amor é forte como a morte, e o ciúme é cruel como a sepultura.",
+    "trail": "cantares",
+    "section": "cantares-amor-02-selado-no-coracao",
+    "id": "cantares-sem-cantares-amor-02-selado-no-coracao-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Compreender por que Cantares 8:6 compara a força do amor à morte e o ciúme à sepultura.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "tap",
+    "question": "Em Cantares 8:6, toque a palavra que falta em \"Põe-me como selo sobre o teu ___, como selo sobre o teu braço\"?",
+    "prompt": "Em Cantares 8:6, toque a palavra que falta em \"Põe-me como selo sobre o teu ___, como selo sobre o teu braço\"?",
+    "cue": "Em Cantares 8:6, toque a palavra que falta em \"Põe-me como selo sobre o teu ___, como selo sobre o teu braço\"?",
+    "feedbackCorrect": "Exato: o coração é o primeiro lugar onde o selo é pedido.",
+    "feedbackWrong": {
+      "b": "Essa palavra completa a segunda metade da frase.",
+      "c": "Essa palavra é o símbolo pedido, não o lugar onde ele é posto."
+    },
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço, pois o amor é forte como a morte, e o ciúme é cruel como a sepultura.",
+    "template": "Põe-me como selo sobre o teu ___, como selo sobre o teu braço",
+    "options": [
+      {
+        "id": "a",
+        "text": "coração"
+      },
+      {
+        "id": "b",
+        "text": "braço"
+      },
+      {
+        "id": "c",
+        "text": "selo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-02-selado-no-coracao",
+    "id": "cantares-sem-cantares-amor-02-selado-no-coracao-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Compreender por que Cantares 8:6 compara a força do amor à morte e o ciúme à sepultura.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "choice",
+    "question": "O que o texto afirma sobre a força do amor em Cantares 8:6?",
+    "prompt": "O que o texto afirma sobre a força do amor em Cantares 8:6?",
+    "cue": "O que o texto afirma sobre a força do amor em Cantares 8:6?",
+    "feedbackCorrect": "Certo: essa comparação está escrita no próprio versículo.",
+    "feedbackWrong": {
+      "b": "O texto afirma o contrário: o amor não enfraquece.",
+      "c": "O texto não menciona riqueza nesta comparação.",
+      "d": "A comparação usada é com a morte, não com leveza."
+    },
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço, pois o amor é forte como a morte, e o ciúme é cruel como a sepultura.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que o amor é tão forte quanto a morte."
+      },
+      {
+        "id": "b",
+        "text": "Que o amor enfraquece com o tempo e a distância."
+      },
+      {
+        "id": "c",
+        "text": "Que o amor depende de riquezas para se manter forte."
+      },
+      {
+        "id": "d",
+        "text": "Que o amor é comparado à leveza de uma pluma."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-02-selado-no-coracao",
+    "id": "cantares-sem-cantares-amor-02-selado-no-coracao-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Compreender por que Cantares 8:6 compara a força do amor à morte e o ciúme à sepultura.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Cantares 8:6?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Cantares 8:6?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Cantares 8:6?",
+    "feedbackCorrect": "Certo: o pedido do selo vem antes das duas comparações finais.",
+    "feedbackWrong": {
+      "b": "A comparação com a morte vem antes da comparação com a sepultura.",
+      "c": "Releia a sequência: o pedido do selo abre o versículo."
+    },
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço, pois o amor é forte como a morte, e o ciúme é cruel como a sepultura.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço"
+      },
+      {
+        "id": "b",
+        "text": "Pois o amor é forte como a morte"
+      },
+      {
+        "id": "c",
+        "text": "E o ciúme é cruel como a sepultura"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-02-selado-no-coracao",
+    "id": "cantares-sem-cantares-amor-02-selado-no-coracao-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Compreender por que Cantares 8:6 compara a força do amor à morte e o ciúme à sepultura.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Põe-me como selo sobre o teu coração, como selo sobre o teu ___\"",
+    "prompt": "Complete a frase: \"Põe-me como selo sobre o teu coração, como selo sobre o teu ___\"",
+    "cue": "Complete a frase: \"Põe-me como selo sobre o teu coração, como selo sobre o teu ___\"",
+    "feedbackCorrect": "Certo: o pedido se repete também para o braço.",
+    "feedbackWrong": {
+      "b": "Essa palavra já completa a primeira metade da frase.",
+      "c": "Essa palavra é o símbolo do pedido, não o segundo lugar citado."
+    },
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço, pois o amor é forte como a morte, e o ciúme é cruel como a sepultura.",
+    "template": "Põe-me como selo sobre o teu coração, como selo sobre o teu ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "braço"
+      },
+      {
+        "id": "b",
+        "text": "coração"
+      },
+      {
+        "id": "c",
+        "text": "selo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-02-selado-no-coracao",
+    "id": "cantares-sem-cantares-amor-02-selado-no-coracao-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Compreender por que Cantares 8:6 compara a força do amor à morte e o ciúme à sepultura.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "connect",
+    "question": "O que Cantares 8:6 comunica que se liga a este contexto?",
+    "prompt": "O que Cantares 8:6 comunica que se liga a este contexto?",
+    "cue": "O que Cantares 8:6 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o texto afirma que o amor resiste à força da morte.",
+    "feedbackWrong": {
+      "b": "O texto não descreve um amor que se apaga.",
+      "c": "O texto não limita o amor a uma fase da vida."
+    },
+    "passageText": "Pois o amor é forte como a morte",
+    "passageA": {
+      "ref": "Cantares 8:6",
+      "text": "Pois o amor é forte como a morte"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A missão mostra que o amor verdadeiro enfrenta até a força da morte sem ceder."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Amor mais forte que a morte"
+      },
+      {
+        "id": "b",
+        "text": "Sentimento que se apaga com o tempo"
+      },
+      {
+        "id": "c",
+        "text": "Promessa válida apenas na juventude"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-02-selado-no-coracao",
+    "id": "cantares-sem-cantares-amor-02-selado-no-coracao-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Compreender por que Cantares 8:6 compara a força do amor à morte e o ciúme à sepultura.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "true_false",
+    "question": "Em Cantares 8:6, o ciúme é descrito como algo fraco e passageiro.",
+    "prompt": "Em Cantares 8:6, o ciúme é descrito como algo fraco e passageiro.",
+    "cue": "Em Cantares 8:6, o ciúme é descrito como algo fraco e passageiro.",
+    "feedbackCorrect": "Certo: o texto descreve o ciúme como cruel, como a sepultura, não como algo fraco.",
+    "feedbackWrong": {
+      "true": "O texto descreve o ciúme como cruel, comparado à sepultura — o oposto de fraco."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço, pois o amor é forte como a morte, e o ciúme é cruel como a sepultura.",
+    "trail": "cantares",
+    "section": "cantares-amor-02-selado-no-coracao",
+    "id": "cantares-cam-cantares-amor-02-selado-no-coracao-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Compreender por que Cantares 8:6 compara a força do amor à morte e o ciúme à sepultura.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "tap",
+    "question": "Em Cantares 8:6, toque a palavra que falta em \"Pois o amor é forte como a ___\"?",
+    "prompt": "Em Cantares 8:6, toque a palavra que falta em \"Pois o amor é forte como a ___\"?",
+    "cue": "Em Cantares 8:6, toque a palavra que falta em \"Pois o amor é forte como a ___\"?",
+    "feedbackCorrect": "Exato: o amor é comparado à força da morte.",
+    "feedbackWrong": {
+      "b": "Essa palavra é usada na comparação com o ciúme, não com o amor.",
+      "c": "Essa palavra nomeia o sentimento comparado, não o termo de comparação."
+    },
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço, pois o amor é forte como a morte, e o ciúme é cruel como a sepultura.",
+    "template": "Pois o amor é forte como a ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "morte"
+      },
+      {
+        "id": "b",
+        "text": "sepultura"
+      },
+      {
+        "id": "c",
+        "text": "ciúme"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-02-selado-no-coracao",
+    "id": "cantares-cam-cantares-amor-02-selado-no-coracao-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Compreender por que Cantares 8:6 compara a força do amor à morte e o ciúme à sepultura.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "choice",
+    "question": "Por que Cantares 8:6 compara o ciúme amoroso à sepultura?",
+    "prompt": "Por que Cantares 8:6 compara o ciúme amoroso à sepultura?",
+    "cue": "Por que Cantares 8:6 compara o ciúme amoroso à sepultura?",
+    "feedbackCorrect": "Certo: a comparação mostra a intensidade irrevogável do ciúme amoroso.",
+    "feedbackWrong": {
+      "b": "O sentido da imagem vai além do simples descanso físico.",
+      "c": "O texto descreve o ciúme como cruel, não como algo passageiro.",
+      "d": "O propósito da imagem é teológico, não histórico-funerário."
+    },
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço, pois o amor é forte como a morte, e o ciúme é cruel como a sepultura.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque, como a sepultura não devolve o que recebe, o ciúme do amor não aceita divisão."
+      },
+      {
+        "id": "b",
+        "text": "Porque a sepultura representa apenas um lugar de descanso físico."
+      },
+      {
+        "id": "c",
+        "text": "Porque o ciúme ali descrito é passageiro, como uma sombra de verão."
+      },
+      {
+        "id": "d",
+        "text": "Porque o texto quer ensinar sobre costumes funerários da época."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-02-selado-no-coracao",
+    "id": "cantares-cam-cantares-amor-02-selado-no-coracao-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Compreender por que Cantares 8:6 compara a força do amor à morte e o ciúme à sepultura.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Cantares 8:6?",
+    "prompt": "Como se encadeiam os eventos de Cantares 8:6?",
+    "cue": "Como se encadeiam os eventos de Cantares 8:6?",
+    "feedbackCorrect": "Certo: primeiro o pedido, depois as duas comparações que o justificam.",
+    "feedbackWrong": {
+      "b": "A comparação com a morte precede a comparação com a sepultura, não o contrário.",
+      "c": "Releia o encadeamento: o pedido do selo abre o raciocínio."
+    },
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço, pois o amor é forte como a morte, e o ciúme é cruel como a sepultura.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço"
+      },
+      {
+        "id": "b",
+        "text": "Pois o amor é forte como a morte"
+      },
+      {
+        "id": "c",
+        "text": "E o ciúme é cruel como a sepultura"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-02-selado-no-coracao",
+    "id": "cantares-cam-cantares-amor-02-selado-no-coracao-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Compreender por que Cantares 8:6 compara a força do amor à morte e o ciúme à sepultura.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"E o ___ é cruel como a sepultura\"",
+    "prompt": "Complete a frase: \"E o ___ é cruel como a sepultura\"",
+    "cue": "Complete a frase: \"E o ___ é cruel como a sepultura\"",
+    "feedbackCorrect": "Certo: é o ciúme que é comparado à sepultura.",
+    "feedbackWrong": {
+      "b": "Essa palavra é o termo de comparação, não o sujeito da frase.",
+      "c": "Essa palavra descreve o ciúme, mas não é o sujeito que falta."
+    },
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço, pois o amor é forte como a morte, e o ciúme é cruel como a sepultura.",
+    "template": "E o ___ é cruel como a sepultura",
+    "options": [
+      {
+        "id": "a",
+        "text": "ciúme"
+      },
+      {
+        "id": "b",
+        "text": "morte"
+      },
+      {
+        "id": "c",
+        "text": "cruel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-02-selado-no-coracao",
+    "id": "cantares-cam-cantares-amor-02-selado-no-coracao-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Compreender por que Cantares 8:6 compara a força do amor à morte e o ciúme à sepultura.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "connect",
+    "question": "O que Cantares 8:6 comunica que se liga a este contexto?",
+    "prompt": "O que Cantares 8:6 comunica que se liga a este contexto?",
+    "cue": "O que Cantares 8:6 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o ciúme aqui expressa exigência de exclusividade no amor.",
+    "feedbackWrong": {
+      "b": "O texto não trata de inveja social comum.",
+      "c": "O trecho não descreve uma disputa entre amigos."
+    },
+    "passageText": "E o ciúme é cruel como a sepultura",
+    "passageA": {
+      "ref": "Cantares 8:6",
+      "text": "E o ciúme é cruel como a sepultura"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O zelo exclusivo do amor não aceita divisão nem meio-termo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ciúme que exige exclusividade"
+      },
+      {
+        "id": "b",
+        "text": "Inveja social sem consequência"
+      },
+      {
+        "id": "c",
+        "text": "Disputa passageira entre amigos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-02-selado-no-coracao",
+    "id": "cantares-cam-cantares-amor-02-selado-no-coracao-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Compreender por que Cantares 8:6 compara a força do amor à morte e o ciúme à sepultura.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "true_false",
+    "question": "A comparação entre o amor e a morte, em Cantares 8:6, sugere que o amor verdadeiro não recua diante do fim da vida.",
+    "prompt": "A comparação entre o amor e a morte, em Cantares 8:6, sugere que o amor verdadeiro não recua diante do fim da vida.",
+    "cue": "A comparação entre o amor e a morte, em Cantares 8:6, sugere que o amor verdadeiro não recua diante do fim da vida.",
+    "feedbackCorrect": "Certo: o texto afirma a força do amor diante da própria morte.",
+    "feedbackWrong": {
+      "false": "O texto afirma justamente o contrário: o amor não recua diante da morte."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço, pois o amor é forte como a morte, e o ciúme é cruel como a sepultura.",
+    "trail": "cantares",
+    "section": "cantares-amor-02-selado-no-coracao",
+    "id": "cantares-pro-cantares-amor-02-selado-no-coracao-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Compreender por que Cantares 8:6 compara a força do amor à morte e o ciúme à sepultura.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "tap",
+    "question": "Em Cantares 8:6, toque a palavra que falta em \"E o ciúme é cruel como a ___\"?",
+    "prompt": "Em Cantares 8:6, toque a palavra que falta em \"E o ciúme é cruel como a ___\"?",
+    "cue": "Em Cantares 8:6, toque a palavra que falta em \"E o ciúme é cruel como a ___\"?",
+    "feedbackCorrect": "Exato: a sepultura é o termo usado para comparar o ciúme.",
+    "feedbackWrong": {
+      "b": "Essa palavra compara o amor, não o ciúme, nesta frase.",
+      "c": "Essa palavra descreve o ciúme, mas não é o termo de comparação."
+    },
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço, pois o amor é forte como a morte, e o ciúme é cruel como a sepultura.",
+    "template": "E o ciúme é cruel como a ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "sepultura"
+      },
+      {
+        "id": "b",
+        "text": "morte"
+      },
+      {
+        "id": "c",
+        "text": "cruel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-02-selado-no-coracao",
+    "id": "cantares-pro-cantares-amor-02-selado-no-coracao-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Compreender por que Cantares 8:6 compara a força do amor à morte e o ciúme à sepultura.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "choice",
+    "question": "O que a força do amor \"como a morte\", em Cantares 8:6, ensina sobre o compromisso conjugal?",
+    "prompt": "O que a força do amor \"como a morte\", em Cantares 8:6, ensina sobre o compromisso conjugal?",
+    "cue": "O que a força do amor \"como a morte\", em Cantares 8:6, ensina sobre o compromisso conjugal?",
+    "feedbackCorrect": "Certo: a comparação aponta para um compromisso definitivo.",
+    "feedbackWrong": {
+      "b": "O texto afirma força, não fragilidade, no compromisso.",
+      "c": "A imagem carrega peso teológico real, não é apenas ornamento.",
+      "d": "A comparação com a morte indica o contrário de um compromisso reversível."
+    },
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço, pois o amor é forte como a morte, e o ciúme é cruel como a sepultura.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O compromisso do amor verdadeiro é tão definitivo quanto a própria morte."
+      },
+      {
+        "id": "b",
+        "text": "Que o amor humano é frágil demais para durar além das circunstâncias."
+      },
+      {
+        "id": "c",
+        "text": "Que a comparação serve apenas de recurso poético sem peso real."
+      },
+      {
+        "id": "d",
+        "text": "Que o compromisso amoroso pode ser desfeito sempre que for conveniente."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-02-selado-no-coracao",
+    "id": "cantares-pro-cantares-amor-02-selado-no-coracao-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Compreender por que Cantares 8:6 compara a força do amor à morte e o ciúme à sepultura.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Cantares 8:6?",
+    "prompt": "Qual sequência revela o sentido de Cantares 8:6?",
+    "cue": "Qual sequência revela o sentido de Cantares 8:6?",
+    "feedbackCorrect": "Certo: o pedido de aliança é seguido pelas razões que o sustentam.",
+    "feedbackWrong": {
+      "b": "A razão sobre a morte precede a razão sobre a sepultura, não o inverso.",
+      "c": "Releia a sequência: o pedido do selo é a base do raciocínio."
+    },
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço, pois o amor é forte como a morte, e o ciúme é cruel como a sepultura.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço"
+      },
+      {
+        "id": "b",
+        "text": "Pois o amor é forte como a morte"
+      },
+      {
+        "id": "c",
+        "text": "E o ciúme é cruel como a sepultura"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-02-selado-no-coracao",
+    "id": "cantares-pro-cantares-amor-02-selado-no-coracao-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Compreender por que Cantares 8:6 compara a força do amor à morte e o ciúme à sepultura.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Pois o amor é ___ como a morte\"",
+    "prompt": "Complete a frase: \"Pois o amor é ___ como a morte\"",
+    "cue": "Complete a frase: \"Pois o amor é ___ como a morte\"",
+    "feedbackCorrect": "Certo: \"forte\" descreve a intensidade do amor nesta comparação.",
+    "feedbackWrong": {
+      "b": "Essa palavra descreve o ciúme, não o amor, no versículo.",
+      "c": "Essa palavra é o termo de comparação, não o adjetivo do amor."
+    },
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço, pois o amor é forte como a morte, e o ciúme é cruel como a sepultura.",
+    "template": "Pois o amor é ___ como a morte",
+    "options": [
+      {
+        "id": "a",
+        "text": "forte"
+      },
+      {
+        "id": "b",
+        "text": "cruel"
+      },
+      {
+        "id": "c",
+        "text": "morte"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-02-selado-no-coracao",
+    "id": "cantares-pro-cantares-amor-02-selado-no-coracao-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Cantares 8:6",
+    "learningObjective": "Compreender por que Cantares 8:6 compara a força do amor à morte e o ciúme à sepultura.",
+    "evidence": [
+      "Cantares 8:6"
+    ],
+    "type": "connect",
+    "question": "O que Cantares 8:6 comunica que se liga a este contexto?",
+    "prompt": "O que Cantares 8:6 comunica que se liga a este contexto?",
+    "cue": "O que Cantares 8:6 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o selo evoca a aliança de Deus com seu povo.",
+    "feedbackWrong": {
+      "b": "O selo, no texto, não é um mero adorno.",
+      "c": "O sentido do selo é de aliança pessoal, não de comércio."
+    },
+    "passageText": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço",
+    "passageA": {
+      "ref": "Cantares 8:6",
+      "text": "Põe-me como selo sobre o teu coração, como selo sobre o teu braço"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus sela seu povo como propriedade amada e protegida por aliança."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Selo como marca da aliança de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Adorno decorativo sem função"
+      },
+      {
+        "id": "c",
+        "text": "Símbolo de posse comercial"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-02-selado-no-coracao",
+    "id": "cantares-pro-cantares-amor-02-selado-no-coracao-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Cantares 8:7",
+    "learningObjective": "Perceber, a partir de Cantares 8:7, que o amor verdadeiro não pode ser comprado nem apagado por nenhuma força.",
+    "evidence": [
+      "Cantares 8:7"
+    ],
+    "type": "true_false",
+    "question": "Em Cantares 8:7, nem as muitas águas nem os rios conseguem apagar o amor.",
+    "prompt": "Em Cantares 8:7, nem as muitas águas nem os rios conseguem apagar o amor.",
+    "cue": "Em Cantares 8:7, nem as muitas águas nem os rios conseguem apagar o amor.",
+    "feedbackCorrect": "Certo: o versículo afirma exatamente essa resistência do amor.",
+    "feedbackWrong": {
+      "false": "Releia o versículo: essa afirmação está explícita no texto."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Muitas águas não podem apagar o amor, nem os rios afogá-lo; se alguém desse todos os bens de sua casa pelo amor, seria de todo desprezado.",
+    "trail": "cantares",
+    "section": "cantares-amor-03-desafio-alianca-de-a",
+    "id": "cantares-sem-cantares-amor-03-desafio-alianca-de-a-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Cantares 8:7",
+    "learningObjective": "Perceber, a partir de Cantares 8:7, que o amor verdadeiro não pode ser comprado nem apagado por nenhuma força.",
+    "evidence": [
+      "Cantares 8:7"
+    ],
+    "type": "tap",
+    "question": "Em Cantares 8:7, toque a palavra que falta em \"Muitas ___ não podem apagar o amor\"?",
+    "prompt": "Em Cantares 8:7, toque a palavra que falta em \"Muitas ___ não podem apagar o amor\"?",
+    "cue": "Em Cantares 8:7, toque a palavra que falta em \"Muitas ___ não podem apagar o amor\"?",
+    "feedbackCorrect": "Exato: são as águas que, segundo o texto, não apagam o amor.",
+    "feedbackWrong": {
+      "b": "Essa palavra é o que as águas não conseguem apagar, não o sujeito da frase.",
+      "c": "Essa palavra aparece depois, referindo-se a outro elemento da natureza."
+    },
+    "passageText": "Muitas águas não podem apagar o amor, nem os rios afogá-lo; se alguém desse todos os bens de sua casa pelo amor, seria de todo desprezado.",
+    "template": "Muitas ___ não podem apagar o amor",
+    "options": [
+      {
+        "id": "a",
+        "text": "águas"
+      },
+      {
+        "id": "b",
+        "text": "amor"
+      },
+      {
+        "id": "c",
+        "text": "rios"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-03-desafio-alianca-de-a",
+    "id": "cantares-sem-cantares-amor-03-desafio-alianca-de-a-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Cantares 8:7",
+    "learningObjective": "Perceber, a partir de Cantares 8:7, que o amor verdadeiro não pode ser comprado nem apagado por nenhuma força.",
+    "evidence": [
+      "Cantares 8:7"
+    ],
+    "type": "choice",
+    "question": "O que Cantares 8:7 afirma sobre a força do amor diante das águas e dos rios?",
+    "prompt": "O que Cantares 8:7 afirma sobre a força do amor diante das águas e dos rios?",
+    "cue": "O que Cantares 8:7 afirma sobre a força do amor diante das águas e dos rios?",
+    "feedbackCorrect": "Certo: essa é a afirmação literal do versículo.",
+    "feedbackWrong": {
+      "b": "O texto afirma o contrário: o amor resiste ao obstáculo.",
+      "c": "As águas e os rios são usados como imagem, não como cenário.",
+      "d": "O texto não relaciona o amor às estações do ano."
+    },
+    "passageText": "Muitas águas não podem apagar o amor, nem os rios afogá-lo; se alguém desse todos os bens de sua casa pelo amor, seria de todo desprezado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que nem muitas águas nem rios conseguem apagar o amor."
+      },
+      {
+        "id": "b",
+        "text": "Que o amor se dissolve facilmente diante de qualquer obstáculo."
+      },
+      {
+        "id": "c",
+        "text": "Que rios e águas representam apenas cenários geográficos do poema."
+      },
+      {
+        "id": "d",
+        "text": "Que o amor depende da estação das chuvas para se manter vivo."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-03-desafio-alianca-de-a",
+    "id": "cantares-sem-cantares-amor-03-desafio-alianca-de-a-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Cantares 8:7",
+    "learningObjective": "Perceber, a partir de Cantares 8:7, que o amor verdadeiro não pode ser comprado nem apagado por nenhuma força.",
+    "evidence": [
+      "Cantares 8:7"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Cantares 8:7?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Cantares 8:7?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Cantares 8:7?",
+    "feedbackCorrect": "Certo: essa é a sequência exata do versículo.",
+    "feedbackWrong": {
+      "b": "A imagem dos rios vem logo depois da das águas, não antes.",
+      "c": "Releia o versículo: a frase sobre os bens vem por último."
+    },
+    "passageText": "Muitas águas não podem apagar o amor, nem os rios afogá-lo; se alguém desse todos os bens de sua casa pelo amor, seria de todo desprezado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Muitas águas não podem apagar o amor"
+      },
+      {
+        "id": "b",
+        "text": "Nem os rios afogá-lo"
+      },
+      {
+        "id": "c",
+        "text": "Se alguém desse todos os bens de sua casa pelo amor, seria de todo desprezado"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-03-desafio-alianca-de-a",
+    "id": "cantares-sem-cantares-amor-03-desafio-alianca-de-a-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Cantares 8:7",
+    "learningObjective": "Perceber, a partir de Cantares 8:7, que o amor verdadeiro não pode ser comprado nem apagado por nenhuma força.",
+    "evidence": [
+      "Cantares 8:7"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Nem os ___ afogá-lo\"",
+    "prompt": "Complete a frase: \"Nem os ___ afogá-lo\"",
+    "cue": "Complete a frase: \"Nem os ___ afogá-lo\"",
+    "feedbackCorrect": "Certo: os rios completam a segunda imagem do versículo.",
+    "feedbackWrong": {
+      "b": "Essa palavra já aparece na primeira imagem do versículo.",
+      "c": "Essa palavra pertence à segunda parte do versículo, não a esta lacuna."
+    },
+    "passageText": "Muitas águas não podem apagar o amor, nem os rios afogá-lo; se alguém desse todos os bens de sua casa pelo amor, seria de todo desprezado.",
+    "template": "Nem os ___ afogá-lo",
+    "options": [
+      {
+        "id": "a",
+        "text": "rios"
+      },
+      {
+        "id": "b",
+        "text": "águas"
+      },
+      {
+        "id": "c",
+        "text": "casa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-03-desafio-alianca-de-a",
+    "id": "cantares-sem-cantares-amor-03-desafio-alianca-de-a-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Cantares 8:7",
+    "learningObjective": "Perceber, a partir de Cantares 8:7, que o amor verdadeiro não pode ser comprado nem apagado por nenhuma força.",
+    "evidence": [
+      "Cantares 8:7"
+    ],
+    "type": "connect",
+    "question": "O que Cantares 8:7 comunica que se liga a este contexto?",
+    "prompt": "O que Cantares 8:7 comunica que se liga a este contexto?",
+    "cue": "O que Cantares 8:7 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o texto afirma que nada apaga esse amor.",
+    "feedbackWrong": {
+      "b": "O texto não descreve um amor que seca com o tempo.",
+      "c": "O clima não é fator de que o amor dependa, segundo o texto."
+    },
+    "passageText": "Muitas águas não podem apagar o amor, nem os rios afogá-lo",
+    "passageA": {
+      "ref": "Cantares 8:7",
+      "text": "Muitas águas não podem apagar o amor, nem os rios afogá-lo"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A aliança de amor celebrada em Cantares resiste a qualquer força contrária."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Amor que nenhuma força apaga"
+      },
+      {
+        "id": "b",
+        "text": "Sentimento que seca com o tempo"
+      },
+      {
+        "id": "c",
+        "text": "Paixão que depende do clima"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-03-desafio-alianca-de-a",
+    "id": "cantares-sem-cantares-amor-03-desafio-alianca-de-a-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Cantares 8:7",
+    "learningObjective": "Perceber, a partir de Cantares 8:7, que o amor verdadeiro não pode ser comprado nem apagado por nenhuma força.",
+    "evidence": [
+      "Cantares 8:7"
+    ],
+    "type": "true_false",
+    "question": "Em Cantares 8:7, o texto ensina que riquezas podem comprar o amor verdadeiro.",
+    "prompt": "Em Cantares 8:7, o texto ensina que riquezas podem comprar o amor verdadeiro.",
+    "cue": "Em Cantares 8:7, o texto ensina que riquezas podem comprar o amor verdadeiro.",
+    "feedbackCorrect": "Certo: o texto diz o contrário — quem tenta comprar o amor seria desprezado.",
+    "feedbackWrong": {
+      "true": "O texto afirma o oposto: oferecer bens pelo amor seria \"de todo desprezado\"."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Muitas águas não podem apagar o amor, nem os rios afogá-lo; se alguém desse todos os bens de sua casa pelo amor, seria de todo desprezado.",
+    "trail": "cantares",
+    "section": "cantares-amor-03-desafio-alianca-de-a",
+    "id": "cantares-cam-cantares-amor-03-desafio-alianca-de-a-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Cantares 8:7",
+    "learningObjective": "Perceber, a partir de Cantares 8:7, que o amor verdadeiro não pode ser comprado nem apagado por nenhuma força.",
+    "evidence": [
+      "Cantares 8:7"
+    ],
+    "type": "tap",
+    "question": "Em Cantares 8:7, toque a palavra que falta em \"Muitas águas não podem apagar o ___\"?",
+    "prompt": "Em Cantares 8:7, toque a palavra que falta em \"Muitas águas não podem apagar o ___\"?",
+    "cue": "Em Cantares 8:7, toque a palavra que falta em \"Muitas águas não podem apagar o ___\"?",
+    "feedbackCorrect": "Exato: é o amor que resiste à força das águas.",
+    "feedbackWrong": {
+      "b": "Essa palavra é o sujeito da frase, não o que resta apagado.",
+      "c": "Essa palavra aparece na segunda imagem, não nesta lacuna."
+    },
+    "passageText": "Muitas águas não podem apagar o amor, nem os rios afogá-lo; se alguém desse todos os bens de sua casa pelo amor, seria de todo desprezado.",
+    "template": "Muitas águas não podem apagar o ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "amor"
+      },
+      {
+        "id": "b",
+        "text": "águas"
+      },
+      {
+        "id": "c",
+        "text": "rios"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-03-desafio-alianca-de-a",
+    "id": "cantares-cam-cantares-amor-03-desafio-alianca-de-a-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Cantares 8:7",
+    "learningObjective": "Perceber, a partir de Cantares 8:7, que o amor verdadeiro não pode ser comprado nem apagado por nenhuma força.",
+    "evidence": [
+      "Cantares 8:7"
+    ],
+    "type": "choice",
+    "question": "Por que o texto diz que oferecer todos os bens pelo amor seria \"de todo desprezado\"?",
+    "prompt": "Por que o texto diz que oferecer todos os bens pelo amor seria \"de todo desprezado\"?",
+    "cue": "Por que o texto diz que oferecer todos os bens pelo amor seria \"de todo desprezado\"?",
+    "feedbackCorrect": "Certo: o texto mostra que o amor não tem preço a ser pago.",
+    "feedbackWrong": {
+      "b": "O foco do texto não é a situação financeira da pessoa.",
+      "c": "O texto não condena a generosidade, mas a tentativa de comprar o amor.",
+      "d": "O texto não trata de proibições culturais sobre bens."
+    },
+    "passageText": "Muitas águas não podem apagar o amor, nem os rios afogá-lo; se alguém desse todos os bens de sua casa pelo amor, seria de todo desprezado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque tentar comprar o amor com riqueza desonra o seu valor verdadeiro."
+      },
+      {
+        "id": "b",
+        "text": "Porque a pessoa ficaria pobre demais para sustentar a própria casa."
+      },
+      {
+        "id": "c",
+        "text": "Porque o texto condena qualquer forma de generosidade material."
+      },
+      {
+        "id": "d",
+        "text": "Porque bens materiais eram proibidos na cultura da época."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-03-desafio-alianca-de-a",
+    "id": "cantares-cam-cantares-amor-03-desafio-alianca-de-a-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Cantares 8:7",
+    "learningObjective": "Perceber, a partir de Cantares 8:7, que o amor verdadeiro não pode ser comprado nem apagado por nenhuma força.",
+    "evidence": [
+      "Cantares 8:7"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Cantares 8:7?",
+    "prompt": "Como se encadeiam os eventos de Cantares 8:7?",
+    "cue": "Como se encadeiam os eventos de Cantares 8:7?",
+    "feedbackCorrect": "Certo: as duas imagens da natureza precedem a conclusão sobre os bens.",
+    "feedbackWrong": {
+      "b": "A conclusão sobre os bens vem depois das imagens da natureza, não antes.",
+      "c": "Releia o encadeamento: águas, depois rios, por fim a conclusão."
+    },
+    "passageText": "Muitas águas não podem apagar o amor, nem os rios afogá-lo; se alguém desse todos os bens de sua casa pelo amor, seria de todo desprezado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Muitas águas não podem apagar o amor"
+      },
+      {
+        "id": "b",
+        "text": "Nem os rios afogá-lo"
+      },
+      {
+        "id": "c",
+        "text": "Se alguém desse todos os bens de sua casa pelo amor, seria de todo desprezado"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-03-desafio-alianca-de-a",
+    "id": "cantares-cam-cantares-amor-03-desafio-alianca-de-a-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Cantares 8:7",
+    "learningObjective": "Perceber, a partir de Cantares 8:7, que o amor verdadeiro não pode ser comprado nem apagado por nenhuma força.",
+    "evidence": [
+      "Cantares 8:7"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Se alguém desse todos os ___ de sua casa pelo amor, seria de todo desprezado\"",
+    "prompt": "Complete a frase: \"Se alguém desse todos os ___ de sua casa pelo amor, seria de todo desprezado\"",
+    "cue": "Complete a frase: \"Se alguém desse todos os ___ de sua casa pelo amor, seria de todo desprezado\"",
+    "feedbackCorrect": "Certo: são os bens que, se oferecidos, tornariam a pessoa desprezada.",
+    "feedbackWrong": {
+      "b": "Essa palavra indica o lugar dos bens, não os bens em si.",
+      "c": "Essa palavra é o que se tenta comprar, não o que se oferece."
+    },
+    "passageText": "Muitas águas não podem apagar o amor, nem os rios afogá-lo; se alguém desse todos os bens de sua casa pelo amor, seria de todo desprezado.",
+    "template": "Se alguém desse todos os ___ de sua casa pelo amor, seria de todo desprezado",
+    "options": [
+      {
+        "id": "a",
+        "text": "bens"
+      },
+      {
+        "id": "b",
+        "text": "casa"
+      },
+      {
+        "id": "c",
+        "text": "amor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-03-desafio-alianca-de-a",
+    "id": "cantares-cam-cantares-amor-03-desafio-alianca-de-a-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Cantares 8:7",
+    "learningObjective": "Perceber, a partir de Cantares 8:7, que o amor verdadeiro não pode ser comprado nem apagado por nenhuma força.",
+    "evidence": [
+      "Cantares 8:7"
+    ],
+    "type": "connect",
+    "question": "O que Cantares 8:7 comunica que se liga a este contexto?",
+    "prompt": "O que Cantares 8:7 comunica que se liga a este contexto?",
+    "cue": "O que Cantares 8:7 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o texto rejeita a ideia de comprar o amor com bens.",
+    "feedbackWrong": {
+      "b": "O texto não descreve o amor como um negócio.",
+      "c": "O amor não é apresentado como prêmio por oferta maior."
+    },
+    "passageText": "Se alguém desse todos os bens de sua casa pelo amor, seria de todo desprezado",
+    "passageA": {
+      "ref": "Cantares 8:7",
+      "text": "Se alguém desse todos os bens de sua casa pelo amor, seria de todo desprezado"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Nenhuma riqueza compra o valor de uma aliança de amor fiel."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Amor que dinheiro não compra"
+      },
+      {
+        "id": "b",
+        "text": "Negócio vantajoso para o comprador"
+      },
+      {
+        "id": "c",
+        "text": "Prêmio dado a quem oferece mais"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-03-desafio-alianca-de-a",
+    "id": "cantares-cam-cantares-amor-03-desafio-alianca-de-a-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Cantares 8:7",
+    "learningObjective": "Perceber, a partir de Cantares 8:7, que o amor verdadeiro não pode ser comprado nem apagado por nenhuma força.",
+    "evidence": [
+      "Cantares 8:7"
+    ],
+    "type": "true_false",
+    "question": "Cantares 8:7 ensina que o amor verdadeiro tem valor incomparável a qualquer bem material.",
+    "prompt": "Cantares 8:7 ensina que o amor verdadeiro tem valor incomparável a qualquer bem material.",
+    "cue": "Cantares 8:7 ensina que o amor verdadeiro tem valor incomparável a qualquer bem material.",
+    "feedbackCorrect": "Certo: o texto afirma que nenhum bem se iguala ao valor do amor.",
+    "feedbackWrong": {
+      "false": "O texto afirma exatamente isso: nenhum bem material se compara ao valor do amor."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Muitas águas não podem apagar o amor, nem os rios afogá-lo; se alguém desse todos os bens de sua casa pelo amor, seria de todo desprezado.",
+    "trail": "cantares",
+    "section": "cantares-amor-03-desafio-alianca-de-a",
+    "id": "cantares-pro-cantares-amor-03-desafio-alianca-de-a-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Cantares 8:7",
+    "learningObjective": "Perceber, a partir de Cantares 8:7, que o amor verdadeiro não pode ser comprado nem apagado por nenhuma força.",
+    "evidence": [
+      "Cantares 8:7"
+    ],
+    "type": "tap",
+    "question": "Em Cantares 8:7, toque a palavra que falta em \"Se alguém desse todos os bens de sua ___ pelo amor, seria de todo desprezado\"?",
+    "prompt": "Em Cantares 8:7, toque a palavra que falta em \"Se alguém desse todos os bens de sua ___ pelo amor, seria de todo desprezado\"?",
+    "cue": "Em Cantares 8:7, toque a palavra que falta em \"Se alguém desse todos os bens de sua ___ pelo amor, seria de todo desprezado\"?",
+    "feedbackCorrect": "Exato: \"casa\" indica a origem dos bens oferecidos.",
+    "feedbackWrong": {
+      "b": "Essa palavra é o que se oferece, não o lugar de onde vem.",
+      "c": "Essa palavra é o que se tenta comprar, não o que falta na frase."
+    },
+    "passageText": "Muitas águas não podem apagar o amor, nem os rios afogá-lo; se alguém desse todos os bens de sua casa pelo amor, seria de todo desprezado.",
+    "template": "Se alguém desse todos os bens de sua ___ pelo amor, seria de todo desprezado",
+    "options": [
+      {
+        "id": "a",
+        "text": "casa"
+      },
+      {
+        "id": "b",
+        "text": "bens"
+      },
+      {
+        "id": "c",
+        "text": "amor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-03-desafio-alianca-de-a",
+    "id": "cantares-pro-cantares-amor-03-desafio-alianca-de-a-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Cantares 8:7",
+    "learningObjective": "Perceber, a partir de Cantares 8:7, que o amor verdadeiro não pode ser comprado nem apagado por nenhuma força.",
+    "evidence": [
+      "Cantares 8:7"
+    ],
+    "type": "choice",
+    "question": "O que a recusa do amor em Cantares 8:7 diante de qualquer oferta de bens revela sobre sua natureza?",
+    "prompt": "O que a recusa do amor em Cantares 8:7 diante de qualquer oferta de bens revela sobre sua natureza?",
+    "cue": "O que a recusa do amor em Cantares 8:7 diante de qualquer oferta de bens revela sobre sua natureza?",
+    "feedbackCorrect": "Certo: o texto ensina que o amor se recebe, não se compra.",
+    "feedbackWrong": {
+      "b": "O texto rejeita justamente essa ideia de negociação.",
+      "c": "O texto nega que a riqueza aumente o valor do amor.",
+      "d": "O ensino do texto permanece válido, não é só descrição histórica."
+    },
+    "passageText": "Muitas águas não podem apagar o amor, nem os rios afogá-lo; se alguém desse todos os bens de sua casa pelo amor, seria de todo desprezado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que o amor verdadeiro não tem preço e não pode ser adquirido, apenas recebido em aliança."
+      },
+      {
+        "id": "b",
+        "text": "Que o amor é uma mercadoria como qualquer outra, sujeita a negociação."
+      },
+      {
+        "id": "c",
+        "text": "Que o valor do amor cresce conforme aumenta a riqueza oferecida."
+      },
+      {
+        "id": "d",
+        "text": "Que o texto apenas descreve costumes comerciais antigos sem lição atual."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-03-desafio-alianca-de-a",
+    "id": "cantares-pro-cantares-amor-03-desafio-alianca-de-a-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Cantares 8:7",
+    "learningObjective": "Perceber, a partir de Cantares 8:7, que o amor verdadeiro não pode ser comprado nem apagado por nenhuma força.",
+    "evidence": [
+      "Cantares 8:7"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Cantares 8:7?",
+    "prompt": "Qual sequência revela o sentido de Cantares 8:7?",
+    "cue": "Qual sequência revela o sentido de Cantares 8:7?",
+    "feedbackCorrect": "Certo: primeiro a resistência do amor à natureza, depois sua recusa ao preço.",
+    "feedbackWrong": {
+      "b": "A recusa ao preço em bens é a conclusão, não o início do raciocínio.",
+      "c": "Releia a sequência: as imagens da natureza abrem o versículo."
+    },
+    "passageText": "Muitas águas não podem apagar o amor, nem os rios afogá-lo; se alguém desse todos os bens de sua casa pelo amor, seria de todo desprezado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Muitas águas não podem apagar o amor"
+      },
+      {
+        "id": "b",
+        "text": "Nem os rios afogá-lo"
+      },
+      {
+        "id": "c",
+        "text": "Se alguém desse todos os bens de sua casa pelo amor, seria de todo desprezado"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-03-desafio-alianca-de-a",
+    "id": "cantares-pro-cantares-amor-03-desafio-alianca-de-a-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Cantares 8:7",
+    "learningObjective": "Perceber, a partir de Cantares 8:7, que o amor verdadeiro não pode ser comprado nem apagado por nenhuma força.",
+    "evidence": [
+      "Cantares 8:7"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Se alguém desse todos os bens de sua casa pelo amor, seria de todo ___\"",
+    "prompt": "Complete a frase: \"Se alguém desse todos os bens de sua casa pelo amor, seria de todo ___\"",
+    "cue": "Complete a frase: \"Se alguém desse todos os bens de sua casa pelo amor, seria de todo ___\"",
+    "feedbackCorrect": "Certo: \"desprezado\" é o destino de quem tenta comprar o amor.",
+    "feedbackWrong": {
+      "b": "Essa palavra é o que se oferece, não o resultado da oferta.",
+      "c": "Essa palavra indica a origem dos bens, não o resultado da tentativa."
+    },
+    "passageText": "Muitas águas não podem apagar o amor, nem os rios afogá-lo; se alguém desse todos os bens de sua casa pelo amor, seria de todo desprezado.",
+    "template": "Se alguém desse todos os bens de sua casa pelo amor, seria de todo ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "desprezado"
+      },
+      {
+        "id": "b",
+        "text": "bens"
+      },
+      {
+        "id": "c",
+        "text": "casa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-03-desafio-alianca-de-a",
+    "id": "cantares-pro-cantares-amor-03-desafio-alianca-de-a-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Cantares 8:7",
+    "learningObjective": "Perceber, a partir de Cantares 8:7, que o amor verdadeiro não pode ser comprado nem apagado por nenhuma força.",
+    "evidence": [
+      "Cantares 8:7"
+    ],
+    "type": "connect",
+    "question": "O que Cantares 8:7 comunica que se liga a este contexto?",
+    "prompt": "O que Cantares 8:7 comunica que se liga a este contexto?",
+    "cue": "O que Cantares 8:7 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a fidelidade descrita resiste a qualquer força contrária.",
+    "feedbackWrong": {
+      "b": "O texto não descreve uma vitória apenas temporária.",
+      "c": "A imagem carrega peso de aliança, não é só ornamento poético."
+    },
+    "passageText": "Muitas águas não podem apagar o amor",
+    "passageA": {
+      "ref": "Cantares 8:7",
+      "text": "Muitas águas não podem apagar o amor"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Como as águas do dilúvio não venceram a promessa de Deus, nada apaga uma aliança fiel."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fidelidade que resiste a tudo"
+      },
+      {
+        "id": "b",
+        "text": "Vitória temporária das circunstâncias"
+      },
+      {
+        "id": "c",
+        "text": "Simples imagem poética sem aliança"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cantares",
+    "section": "cantares-amor-03-desafio-alianca-de-a",
+    "id": "cantares-pro-cantares-amor-03-desafio-alianca-de-a-06"
+  }
+]

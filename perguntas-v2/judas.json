@@ -1,0 +1,2225 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Reconhecer que a fé foi confiada de uma vez aos santos e que a igreja peleja por ela, sem inventar outra.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "type": "true_false",
+    "question": "Judas se viu obrigado a escrever, exortando os amados a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "feedbackCorrect": "Sim: o versículo registra essa obrigação e essa exortação.",
+    "feedbackWrong": {
+      "false": "Releia Judas 1:3: a carta exorta a pelejar pela fé já confiada."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "jd-01",
+    "id": "judas-sem-jd-01-01",
+    "prompt": "Judas se viu obrigado a escrever, exortando os amados a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "cue": "Judas se viu obrigado a escrever, exortando os amados a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "correctAnswer": "true",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Reconhecer que a fé foi confiada de uma vez aos santos e que a igreja peleja por ela, sem inventar outra.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "type": "tap",
+    "question": "Em Judas 1:3, toque a palavra que falta em \"Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a ___ pela fé uma vez para sempre confiada aos santos.\"?",
+    "feedbackCorrect": "Exato: o verbo do versículo é \"pelejar\" pela fé.",
+    "feedbackWrong": {
+      "a": "\"diligência\" está no início, não nesta lacuna.",
+      "c": "\"salvação\" nomeia o tema inicial, não o verbo da exortação."
+    },
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "template": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a ___ pela fé uma vez para sempre confiada aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "diligência"
+      },
+      {
+        "id": "b",
+        "text": "pelejar"
+      },
+      {
+        "id": "c",
+        "text": "salvação"
+      }
+    ],
+    "correctOptionId": "b",
+    "section": "jd-01",
+    "id": "judas-sem-jd-01-02",
+    "prompt": "Em Judas 1:3, toque a palavra que falta em \"Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a ___ pela fé uma vez para sempre confiada aos santos.\"?",
+    "cue": "Em Judas 1:3, toque a palavra que falta em \"Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a ___ pela fé uma vez para sempre confiada aos santos.\"?",
+    "correctAnswer": "b",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Reconhecer que a fé foi confiada de uma vez aos santos e que a igreja peleja por ela, sem inventar outra.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelo texto em Judas 1:3?",
+    "feedbackCorrect": "Certo: a carta exorta a pelejar pela fé já confiada aos santos.",
+    "feedbackWrong": {
+      "a": "O texto fala de fé confiada, não de um hino novo a compor.",
+      "b": "Judas não adia a carta: viu-se obrigado a dirigi-la.",
+      "d": "A fé já foi confiada aos santos; o texto não manda inventá-la."
+    },
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Judas pede que os amados componham um hino inédito."
+      },
+      {
+        "id": "b",
+        "text": "Judas adiou a carta até achar tema mais leve."
+      },
+      {
+        "id": "c",
+        "text": "Ele exorta a pelejar pela fé uma vez confiada aos santos."
+      },
+      {
+        "id": "d",
+        "text": "Os santos ainda não tinham recebido fé alguma."
+      }
+    ],
+    "correctOptionId": "c",
+    "section": "jd-01",
+    "id": "judas-sem-jd-01-03",
+    "prompt": "Qual afirmação é feita diretamente pelo texto em Judas 1:3?",
+    "cue": "Qual afirmação é feita diretamente pelo texto em Judas 1:3?",
+    "correctAnswer": "c",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Reconhecer que a fé foi confiada de uma vez aos santos e que a igreja peleja por ela, sem inventar outra.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Judas 1:3?",
+    "feedbackCorrect": "Certo: diligência para escrever, obrigação da carta, exortação a pelejar.",
+    "feedbackWrong": {
+      "b": "Essa peça não ocupa esse lugar na ordem do versículo.",
+      "c": "Releia Judas 1:3 do começo ao fim."
+    },
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação"
+      },
+      {
+        "id": "b",
+        "text": "vi-me obrigado a dirigir-vos esta carta"
+      },
+      {
+        "id": "c",
+        "text": "exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "section": "jd-01",
+    "id": "judas-sem-jd-01-04",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Judas 1:3?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Judas 1:3?",
+    "correctAnswer": "a",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Reconhecer que a fé foi confiada de uma vez aos santos e que a igreja peleja por ela, sem inventar outra.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre ___ aos santos.\"",
+    "feedbackCorrect": "Certo: a fé foi \"confiada\" de uma vez aos santos.",
+    "feedbackWrong": {
+      "b": "\"obrigado\" descreve Judas, não o que se fez com a fé.",
+      "c": "\"comum\" qualifica a salvação, não esta lacuna."
+    },
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "template": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre ___ aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "confiada"
+      },
+      {
+        "id": "b",
+        "text": "obrigado"
+      },
+      {
+        "id": "c",
+        "text": "comum"
+      }
+    ],
+    "correctOptionId": "a",
+    "section": "jd-01",
+    "id": "judas-sem-jd-01-05",
+    "prompt": "Complete a frase: \"Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre ___ aos santos.\"",
+    "cue": "Complete a frase: \"Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre ___ aos santos.\"",
+    "correctAnswer": "a",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Reconhecer que a fé foi confiada de uma vez aos santos e que a igreja peleja por ela, sem inventar outra.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "type": "connect",
+    "question": "O que Judas 1:3 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a fé já recebida é o depósito pelo qual se peleja.",
+    "feedbackWrong": {
+      "a": "O texto não autoriza inventar outra fé.",
+      "c": "A carta não é só saudação: há exortação a pelejar."
+    },
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "passageA": {
+      "ref": "Judas 1:3",
+      "text": "exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A fé já foi confiada de uma vez: a igreja não inventa outra, peleja pela que recebeu."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Nova fé a inventar"
+      },
+      {
+        "id": "b",
+        "text": "Fé já recebida"
+      },
+      {
+        "id": "c",
+        "text": "Carta só de saudação"
+      }
+    ],
+    "correctOptionId": "b",
+    "section": "jd-01",
+    "id": "judas-sem-jd-01-06",
+    "prompt": "O que Judas 1:3 comunica que se liga a este contexto?",
+    "cue": "O que Judas 1:3 comunica que se liga a este contexto?",
+    "correctAnswer": "b",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Reconhecer que a fé foi confiada de uma vez aos santos e que a igreja peleja por ela, sem inventar outra.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "type": "true_false",
+    "question": "Judas escreveu porque queria apresentar uma fé nova, ainda não confiada aos santos.",
+    "feedbackCorrect": "Certo: o texto fala da fé já confiada, não de uma fé nova.",
+    "feedbackWrong": {
+      "true": "A fé já foi confiada aos santos; Judas não a inventa."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "jd-01",
+    "id": "judas-cam-jd-01-01",
+    "prompt": "Judas escreveu porque queria apresentar uma fé nova, ainda não confiada aos santos.",
+    "cue": "Judas escreveu porque queria apresentar uma fé nova, ainda não confiada aos santos.",
+    "correctAnswer": "false",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Reconhecer que a fé foi confiada de uma vez aos santos e que a igreja peleja por ela, sem inventar outra.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "type": "tap",
+    "question": "Em Judas 1:3, toque a palavra que falta em \"Amados, enquanto eu empregava toda a ___ para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.\"?",
+    "feedbackCorrect": "Exato: ele empregava toda a diligência para escrever.",
+    "feedbackWrong": {
+      "a": "\"carta\" vem depois, na obrigação de escrevê-la.",
+      "b": "\"fé\" é o depósito da exortação, não esta lacuna."
+    },
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "template": "Amados, enquanto eu empregava toda a ___ para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "carta"
+      },
+      {
+        "id": "b",
+        "text": "fé"
+      },
+      {
+        "id": "c",
+        "text": "diligência"
+      }
+    ],
+    "correctOptionId": "c",
+    "section": "jd-01",
+    "id": "judas-cam-jd-01-02",
+    "prompt": "Em Judas 1:3, toque a palavra que falta em \"Amados, enquanto eu empregava toda a ___ para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.\"?",
+    "cue": "Em Judas 1:3, toque a palavra que falta em \"Amados, enquanto eu empregava toda a ___ para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.\"?",
+    "correctAnswer": "c",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Reconhecer que a fé foi confiada de uma vez aos santos e que a igreja peleja por ela, sem inventar outra.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "type": "choice",
+    "question": "Por que Judas se viu obrigado a mudar o rumo da carta, segundo Judas 1:3?",
+    "feedbackCorrect": "Certo: a obrigação é exortar a pelejar pela fé já entregue.",
+    "feedbackWrong": {
+      "a": "A salvação comum não é tratada como erro; é o tema inicial.",
+      "b": "Os santos já tinham a fé confiada; o problema não é a ausência dela.",
+      "c": "Ele não substitui a fé antiga por outra; peleja pela recebida."
+    },
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque a salvação comum tinha se mostrado falsa."
+      },
+      {
+        "id": "b",
+        "text": "Porque os santos ainda não haviam recebido fé."
+      },
+      {
+        "id": "c",
+        "text": "Para substituir a fé antiga por uma doutrina nova."
+      },
+      {
+        "id": "d",
+        "text": "Para exortar a pelejar pela fé já confiada aos santos."
+      }
+    ],
+    "correctOptionId": "d",
+    "section": "jd-01",
+    "id": "judas-cam-jd-01-03",
+    "prompt": "Por que Judas se viu obrigado a mudar o rumo da carta, segundo Judas 1:3?",
+    "cue": "Por que Judas se viu obrigado a mudar o rumo da carta, segundo Judas 1:3?",
+    "correctAnswer": "d",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Reconhecer que a fé foi confiada de uma vez aos santos e que a igreja peleja por ela, sem inventar outra.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Judas 1:3?",
+    "feedbackCorrect": "Certo: o tema da salvação comum cede lugar à exortação urgente.",
+    "feedbackWrong": {
+      "a": "Essa peça não ocupa esse lugar no encadeamento.",
+      "c": "Releia como a obrigação se liga à exortação."
+    },
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vi-me obrigado a dirigir-vos esta carta"
+      },
+      {
+        "id": "b",
+        "text": "enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação"
+      },
+      {
+        "id": "c",
+        "text": "exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos"
+      }
+    ],
+    "correctOrder": [
+      "b",
+      "a",
+      "c"
+    ],
+    "correctOptionId": "b",
+    "section": "jd-01",
+    "id": "judas-cam-jd-01-04",
+    "prompt": "Como se encadeiam os eventos de Judas 1:3?",
+    "cue": "Como se encadeiam os eventos de Judas 1:3?",
+    "correctAnswer": "b",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Reconhecer que a fé foi confiada de uma vez aos santos e que a igreja peleja por ela, sem inventar outra.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa ___ salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.\"",
+    "feedbackCorrect": "Certo: a salvação é chamada de \"comum\" no versículo.",
+    "feedbackWrong": {
+      "a": "O texto não diz \"particular\" nesta frase.",
+      "c": "\"eterna\" não é a palavra desta lacuna em Judas 1:3."
+    },
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "template": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa ___ salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "particular"
+      },
+      {
+        "id": "b",
+        "text": "comum"
+      },
+      {
+        "id": "c",
+        "text": "eterna"
+      }
+    ],
+    "correctOptionId": "b",
+    "section": "jd-01",
+    "id": "judas-cam-jd-01-05",
+    "prompt": "Complete a frase: \"Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa ___ salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.\"",
+    "cue": "Complete a frase: \"Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa ___ salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.\"",
+    "correctAnswer": "b",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Reconhecer que a fé foi confiada de uma vez aos santos e que a igreja peleja por ela, sem inventar outra.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "type": "connect",
+    "question": "O que Judas 1:3 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a ponte é pelejar pela fé já recebida, não inventar outra.",
+    "feedbackWrong": {
+      "b": "O texto não manda abandonar a fé recebida.",
+      "c": "A carta não autoriza criar doutrina nova."
+    },
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "passageA": {
+      "ref": "Judas 1:3",
+      "text": "a fé uma vez para sempre confiada aos santos"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A fé já foi confiada de uma vez: a igreja não inventa outra, peleja pela que recebeu."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Peleja pela recebida"
+      },
+      {
+        "id": "b",
+        "text": "Abandona o depósito"
+      },
+      {
+        "id": "c",
+        "text": "Cria doutrina nova"
+      }
+    ],
+    "correctOptionId": "a",
+    "section": "jd-01",
+    "id": "judas-cam-jd-01-06",
+    "prompt": "O que Judas 1:3 comunica que se liga a este contexto?",
+    "cue": "O que Judas 1:3 comunica que se liga a este contexto?",
+    "correctAnswer": "a",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Reconhecer que a fé foi confiada de uma vez aos santos e que a igreja peleja por ela, sem inventar outra.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "type": "true_false",
+    "question": "Segundo Judas 1:3, cada geração deve inventar a fé que lhe convém.",
+    "feedbackCorrect": "Certo: a fé já foi confiada de uma vez; não se inventa outra.",
+    "feedbackWrong": {
+      "true": "\"Uma vez para sempre confiada\" impede tratar a fé como invenção periódica."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "jd-01",
+    "id": "judas-pro-jd-01-01",
+    "prompt": "Segundo Judas 1:3, cada geração deve inventar a fé que lhe convém.",
+    "cue": "Segundo Judas 1:3, cada geração deve inventar a fé que lhe convém.",
+    "correctAnswer": "false",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Reconhecer que a fé foi confiada de uma vez aos santos e que a igreja peleja por ela, sem inventar outra.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "type": "tap",
+    "question": "Em Judas 1:3, toque a palavra que falta em \"Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos ___.\"?",
+    "feedbackCorrect": "Exato: a fé foi confiada aos santos.",
+    "feedbackWrong": {
+      "b": "\"Amados\" é o vocativo, não o destinatário do depósito da fé.",
+      "c": "\"diligência\" descreve o esforço de Judas, não esta lacuna."
+    },
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "template": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "santos"
+      },
+      {
+        "id": "b",
+        "text": "Amados"
+      },
+      {
+        "id": "c",
+        "text": "diligência"
+      }
+    ],
+    "correctOptionId": "a",
+    "section": "jd-01",
+    "id": "judas-pro-jd-01-02",
+    "prompt": "Em Judas 1:3, toque a palavra que falta em \"Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos ___.\"?",
+    "cue": "Em Judas 1:3, toque a palavra que falta em \"Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos ___.\"?",
+    "correctAnswer": "a",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Reconhecer que a fé foi confiada de uma vez aos santos e que a igreja peleja por ela, sem inventar outra.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "type": "choice",
+    "question": "O que \"uma vez para sempre confiada\" implica para a igreja em Judas 1:3?",
+    "feedbackCorrect": "Certo: a fé é depósito dado, não novidade que a igreja inventa.",
+    "feedbackWrong": {
+      "b": "O texto não autoriza atualizar o depósito à vontade.",
+      "c": "A fé aqui não se reduz a sentimento privado.",
+      "d": "O depósito foi confiado aos santos, não só a Judas."
+    },
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A fé é um depósito já dado, não uma novidade da igreja."
+      },
+      {
+        "id": "b",
+        "text": "A igreja pode reescrever o credo sempre que quiser."
+      },
+      {
+        "id": "c",
+        "text": "A fé é só um sentimento íntimo, sem conteúdo."
+      },
+      {
+        "id": "d",
+        "text": "Somente Judas recebeu essa fé, e ninguém mais."
+      }
+    ],
+    "correctOptionId": "a",
+    "section": "jd-01",
+    "id": "judas-pro-jd-01-03",
+    "prompt": "O que \"uma vez para sempre confiada\" implica para a igreja em Judas 1:3?",
+    "cue": "O que \"uma vez para sempre confiada\" implica para a igreja em Judas 1:3?",
+    "correctAnswer": "a",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Reconhecer que a fé foi confiada de uma vez aos santos e que a igreja peleja por ela, sem inventar outra.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Judas 1:3?",
+    "feedbackCorrect": "Certo: da salvação comum à obrigação e ao combate pela fé recebida.",
+    "feedbackWrong": {
+      "a": "Essa peça não abre o sentido nesta ordem.",
+      "b": "Releia o movimento do versículo."
+    },
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos"
+      },
+      {
+        "id": "b",
+        "text": "vi-me obrigado a dirigir-vos esta carta"
+      },
+      {
+        "id": "c",
+        "text": "escrever sobre a nossa comum salvação"
+      }
+    ],
+    "correctOrder": [
+      "c",
+      "b",
+      "a"
+    ],
+    "correctOptionId": "c",
+    "section": "jd-01",
+    "id": "judas-pro-jd-01-04",
+    "prompt": "Qual sequência revela o sentido de Judas 1:3?",
+    "cue": "Qual sequência revela o sentido de Judas 1:3?",
+    "correctAnswer": "c",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Reconhecer que a fé foi confiada de uma vez aos santos e que a igreja peleja por ela, sem inventar outra.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me ___ a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.\"",
+    "feedbackCorrect": "Certo: ele se viu \"obrigado\" a escrever esta carta.",
+    "feedbackWrong": {
+      "a": "\"Amados\" é o vocativo, não o verbo desta frase.",
+      "b": "\"salvação\" é o tema inicial, não esta lacuna."
+    },
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "template": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me ___ a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Amados"
+      },
+      {
+        "id": "b",
+        "text": "salvação"
+      },
+      {
+        "id": "c",
+        "text": "obrigado"
+      }
+    ],
+    "correctOptionId": "c",
+    "section": "jd-01",
+    "id": "judas-pro-jd-01-05",
+    "prompt": "Complete a frase: \"Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me ___ a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.\"",
+    "cue": "Complete a frase: \"Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me ___ a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.\"",
+    "correctAnswer": "c",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Reconhecer que a fé foi confiada de uma vez aos santos e que a igreja peleja por ela, sem inventar outra.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "type": "connect",
+    "question": "O que Judas 1:3 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a igreja não inventa outra fé; combate pela recebida.",
+    "feedbackWrong": {
+      "a": "O texto não trata a fé como moda a trocar.",
+      "b": "Judas não relativiza o depósito já confiado."
+    },
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "passageA": {
+      "ref": "Judas 1:3",
+      "text": "pelejar pela fé uma vez para sempre confiada aos santos"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A fé já foi confiada de uma vez: a igreja não inventa outra, peleja pela que recebeu."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fé como moda passageira"
+      },
+      {
+        "id": "b",
+        "text": "Depósito negociável"
+      },
+      {
+        "id": "c",
+        "text": "Não inventa outra fé"
+      }
+    ],
+    "correctOptionId": "c",
+    "section": "jd-01",
+    "id": "judas-pro-jd-01-06",
+    "prompt": "O que Judas 1:3 comunica que se liga a este contexto?",
+    "cue": "O que Judas 1:3 comunica que se liga a este contexto?",
+    "correctAnswer": "c",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Judas 1:20–21",
+    "learningObjective": "Ver que pelejar pela fé inclui edificar-se, orar no Espírito e guardar-se no amor de Deus.",
+    "evidence": [
+      "Judas 1:20",
+      "Judas 1:21"
+    ],
+    "type": "true_false",
+    "question": "Os amados devem guardar-se no amor de Deus, edificando-se sobre a santíssima fé e orando no Espírito Santo.",
+    "feedbackCorrect": "Sim: Judas 1:20–21 une edificar, orar e guardar-se no amor.",
+    "feedbackWrong": {
+      "false": "Releia o versículo: essas três ações estão no texto."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "passageText": "Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "section": "jd-02",
+    "id": "judas-sem-jd-02-01",
+    "prompt": "Os amados devem guardar-se no amor de Deus, edificando-se sobre a santíssima fé e orando no Espírito Santo.",
+    "cue": "Os amados devem guardar-se no amor de Deus, edificando-se sobre a santíssima fé e orando no Espírito Santo.",
+    "correctAnswer": "true",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Judas 1:20–21",
+    "learningObjective": "Ver que pelejar pela fé inclui edificar-se, orar no Espírito e guardar-se no amor de Deus.",
+    "evidence": [
+      "Judas 1:20",
+      "Judas 1:21"
+    ],
+    "type": "tap",
+    "question": "Em Judas 1:20–21, toque a palavra que falta em \"Mas vós, amados, ___ sobre a vossa santíssima fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.\"?",
+    "feedbackCorrect": "Exato: o texto começa com \"edificando-vos\" sobre a fé.",
+    "feedbackWrong": {
+      "a": "\"esperando\" vem no fim, ligado à misericórdia.",
+      "c": "\"misericórdia\" é o que se espera, não esta lacuna."
+    },
+    "passageText": "Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "template": "Mas vós, amados, ___ sobre a vossa santíssima fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "options": [
+      {
+        "id": "a",
+        "text": "esperando"
+      },
+      {
+        "id": "b",
+        "text": "edificando-vos"
+      },
+      {
+        "id": "c",
+        "text": "misericórdia"
+      }
+    ],
+    "correctOptionId": "b",
+    "section": "jd-02",
+    "id": "judas-sem-jd-02-02",
+    "prompt": "Em Judas 1:20–21, toque a palavra que falta em \"Mas vós, amados, ___ sobre a vossa santíssima fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.\"?",
+    "cue": "Em Judas 1:20–21, toque a palavra que falta em \"Mas vós, amados, ___ sobre a vossa santíssima fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.\"?",
+    "correctAnswer": "b",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Judas 1:20–21",
+    "learningObjective": "Ver que pelejar pela fé inclui edificar-se, orar no Espírito e guardar-se no amor de Deus.",
+    "evidence": [
+      "Judas 1:20",
+      "Judas 1:21"
+    ],
+    "type": "choice",
+    "question": "O que Judas 1:20–21 manda os amados fazer enquanto esperam a misericórdia de Cristo?",
+    "feedbackCorrect": "Certo: guardar-se no amor de Deus, com fé e oração.",
+    "feedbackWrong": {
+      "a": "O texto não manda abandonar a oração no Espírito.",
+      "b": "Não se trata de edificar sobre outra base que não a fé.",
+      "d": "A espera é da misericórdia de Cristo, não de um novo depósito da fé."
+    },
+    "passageText": "Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deixar de orar no Espírito Santo."
+      },
+      {
+        "id": "b",
+        "text": "Edificar-se sobre outra base, não sobre a fé."
+      },
+      {
+        "id": "c",
+        "text": "Guardar-se no amor de Deus, orando no Espírito."
+      },
+      {
+        "id": "d",
+        "text": "Esperar que alguém lhes confie uma fé nova."
+      }
+    ],
+    "correctOptionId": "c",
+    "section": "jd-02",
+    "id": "judas-sem-jd-02-03",
+    "prompt": "O que Judas 1:20–21 manda os amados fazer enquanto esperam a misericórdia de Cristo?",
+    "cue": "O que Judas 1:20–21 manda os amados fazer enquanto esperam a misericórdia de Cristo?",
+    "correctAnswer": "c",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Judas 1:20–21",
+    "learningObjective": "Ver que pelejar pela fé inclui edificar-se, orar no Espírito e guardar-se no amor de Deus.",
+    "evidence": [
+      "Judas 1:20",
+      "Judas 1:21"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Judas 1:20–21?",
+    "feedbackCorrect": "Certo: edificar e orar, guardar-se no amor, esperar a misericórdia.",
+    "feedbackWrong": {
+      "b": "Essa peça não ocupa esse lugar no versículo.",
+      "c": "Releia Judas 1:20–21 na ordem do texto."
+    },
+    "passageText": "Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "options": [
+      {
+        "id": "a",
+        "text": "edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo"
+      },
+      {
+        "id": "b",
+        "text": "guardai-vos no amor de Deus"
+      },
+      {
+        "id": "c",
+        "text": "esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "section": "jd-02",
+    "id": "judas-sem-jd-02-04",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Judas 1:20–21?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Judas 1:20–21?",
+    "correctAnswer": "a",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Judas 1:20–21",
+    "learningObjective": "Ver que pelejar pela fé inclui edificar-se, orar no Espírito e guardar-se no amor de Deus.",
+    "evidence": [
+      "Judas 1:20",
+      "Judas 1:21"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no ___ Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.\"",
+    "feedbackCorrect": "Certo: a oração é no Espírito Santo.",
+    "feedbackWrong": {
+      "a": "\"Senhor\" aparece com Jesus Cristo, não nesta lacuna.",
+      "b": "\"amor\" liga-se a guardar-vos, não a orando no ___ Santo."
+    },
+    "passageText": "Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "template": "Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no ___ Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Senhor"
+      },
+      {
+        "id": "b",
+        "text": "amor"
+      },
+      {
+        "id": "c",
+        "text": "Espírito"
+      }
+    ],
+    "correctOptionId": "c",
+    "section": "jd-02",
+    "id": "judas-sem-jd-02-05",
+    "prompt": "Complete a frase: \"Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no ___ Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.\"",
+    "cue": "Complete a frase: \"Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no ___ Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.\"",
+    "correctAnswer": "c",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Judas 1:20–21",
+    "learningObjective": "Ver que pelejar pela fé inclui edificar-se, orar no Espírito e guardar-se no amor de Deus.",
+    "evidence": [
+      "Judas 1:20",
+      "Judas 1:21"
+    ],
+    "type": "connect",
+    "question": "O que Judas 1:20–21 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: edificar, orar e guardar-se no amor formam a ponte.",
+    "feedbackWrong": {
+      "a": "O texto não reduz a fé a combate isolado.",
+      "c": "Há oração no Espírito, não silêncio mandado."
+    },
+    "passageText": "Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "passageA": {
+      "ref": "Judas 1:20–21",
+      "text": "edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo, guardai-vos no amor de Deus"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Pelejar pela fé não é só combate: é edificar-se, orar no Espírito e guardar-se no amor de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Só combate sem edificar"
+      },
+      {
+        "id": "b",
+        "text": "Edificar, orar e guardar"
+      },
+      {
+        "id": "c",
+        "text": "Calar o Espírito Santo"
+      }
+    ],
+    "correctOptionId": "b",
+    "section": "jd-02",
+    "id": "judas-sem-jd-02-06",
+    "prompt": "O que Judas 1:20–21 comunica que se liga a este contexto?",
+    "cue": "O que Judas 1:20–21 comunica que se liga a este contexto?",
+    "correctAnswer": "b",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Judas 1:20–21",
+    "learningObjective": "Ver que pelejar pela fé inclui edificar-se, orar no Espírito e guardar-se no amor de Deus.",
+    "evidence": [
+      "Judas 1:20",
+      "Judas 1:21"
+    ],
+    "type": "true_false",
+    "question": "Pelejar pela fé, em Judas 1:20–21, reduz-se a combater adversários, sem edificar-se nem orar.",
+    "feedbackCorrect": "Certo: o texto inclui edificar, orar e guardar-se no amor.",
+    "feedbackWrong": {
+      "true": "Judas descreve edificação, oração e guarda, não só combate."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "passageText": "Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "section": "jd-02",
+    "id": "judas-cam-jd-02-01",
+    "prompt": "Pelejar pela fé, em Judas 1:20–21, reduz-se a combater adversários, sem edificar-se nem orar.",
+    "cue": "Pelejar pela fé, em Judas 1:20–21, reduz-se a combater adversários, sem edificar-se nem orar.",
+    "correctAnswer": "false",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Judas 1:20–21",
+    "learningObjective": "Ver que pelejar pela fé inclui edificar-se, orar no Espírito e guardar-se no amor de Deus.",
+    "evidence": [
+      "Judas 1:20",
+      "Judas 1:21"
+    ],
+    "type": "tap",
+    "question": "Em Judas 1:20–21, toque a palavra que falta em \"Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo, ___ no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.\"?",
+    "feedbackCorrect": "Exato: o imperativo é \"guardai-vos\" no amor de Deus.",
+    "feedbackWrong": {
+      "a": "\"edificando-vos\" abre o versículo, não esta lacuna.",
+      "b": "\"esperando\" liga-se à misericórdia, depois desta frase."
+    },
+    "passageText": "Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "template": "Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo, ___ no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "options": [
+      {
+        "id": "a",
+        "text": "edificando-vos"
+      },
+      {
+        "id": "b",
+        "text": "esperando"
+      },
+      {
+        "id": "c",
+        "text": "guardai-vos"
+      }
+    ],
+    "correctOptionId": "c",
+    "section": "jd-02",
+    "id": "judas-cam-jd-02-02",
+    "prompt": "Em Judas 1:20–21, toque a palavra que falta em \"Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo, ___ no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.\"?",
+    "cue": "Em Judas 1:20–21, toque a palavra que falta em \"Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo, ___ no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.\"?",
+    "correctAnswer": "c",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Judas 1:20–21",
+    "learningObjective": "Ver que pelejar pela fé inclui edificar-se, orar no Espírito e guardar-se no amor de Deus.",
+    "evidence": [
+      "Judas 1:20",
+      "Judas 1:21"
+    ],
+    "type": "choice",
+    "question": "Como Judas 1:20–21 encadeia a vida dos amados em relação à fé?",
+    "feedbackCorrect": "Certo: edificação e oração sustentam a guarda no amor, na espera.",
+    "feedbackWrong": {
+      "a": "O texto não opõe oração e edificação à guarda no amor.",
+      "c": "Não se espera um novo depósito da fé, e sim a misericórdia de Cristo.",
+      "d": "A fé santíssima é a base, não algo a ser abandonado."
+    },
+    "passageText": "Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Orar no Espírito substitui guardar-se no amor de Deus."
+      },
+      {
+        "id": "b",
+        "text": "Edificam-se na fé, oram no Espírito e guardam-se no amor."
+      },
+      {
+        "id": "c",
+        "text": "Esperam um novo depósito da fé, não a misericórdia de Cristo."
+      },
+      {
+        "id": "d",
+        "text": "Abandonam a santíssima fé para viver só de sentimento."
+      }
+    ],
+    "correctOptionId": "b",
+    "section": "jd-02",
+    "id": "judas-cam-jd-02-03",
+    "prompt": "Como Judas 1:20–21 encadeia a vida dos amados em relação à fé?",
+    "cue": "Como Judas 1:20–21 encadeia a vida dos amados em relação à fé?",
+    "correctAnswer": "b",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Judas 1:20–21",
+    "learningObjective": "Ver que pelejar pela fé inclui edificar-se, orar no Espírito e guardar-se no amor de Deus.",
+    "evidence": [
+      "Judas 1:20",
+      "Judas 1:21"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Judas 1:20–21?",
+    "feedbackCorrect": "Certo: da fé edificada e da oração à guarda e à espera.",
+    "feedbackWrong": {
+      "a": "Essa peça não ocupa esse lugar no encadeamento.",
+      "c": "Releia a ordem: fé e oração antecedem a espera."
+    },
+    "passageText": "Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "options": [
+      {
+        "id": "a",
+        "text": "guardai-vos no amor de Deus"
+      },
+      {
+        "id": "b",
+        "text": "edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo"
+      },
+      {
+        "id": "c",
+        "text": "esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna"
+      }
+    ],
+    "correctOrder": [
+      "b",
+      "a",
+      "c"
+    ],
+    "correctOptionId": "b",
+    "section": "jd-02",
+    "id": "judas-cam-jd-02-04",
+    "prompt": "Como se encadeiam os eventos de Judas 1:20–21?",
+    "cue": "Como se encadeiam os eventos de Judas 1:20–21?",
+    "correctAnswer": "b",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Judas 1:20–21",
+    "learningObjective": "Ver que pelejar pela fé inclui edificar-se, orar no Espírito e guardar-se no amor de Deus.",
+    "evidence": [
+      "Judas 1:20",
+      "Judas 1:21"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a ___ de nosso Senhor Jesus Cristo, para a vida eterna.\"",
+    "feedbackCorrect": "Certo: espera-se a misericórdia de nosso Senhor Jesus Cristo.",
+    "feedbackWrong": {
+      "b": "\"santíssima\" qualifica a fé, não esta lacuna.",
+      "c": "\"eterna\" qualifica a vida, no fim do versículo."
+    },
+    "passageText": "Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "template": "Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a ___ de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "options": [
+      {
+        "id": "a",
+        "text": "misericórdia"
+      },
+      {
+        "id": "b",
+        "text": "santíssima"
+      },
+      {
+        "id": "c",
+        "text": "eterna"
+      }
+    ],
+    "correctOptionId": "a",
+    "section": "jd-02",
+    "id": "judas-cam-jd-02-05",
+    "prompt": "Complete a frase: \"Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a ___ de nosso Senhor Jesus Cristo, para a vida eterna.\"",
+    "cue": "Complete a frase: \"Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a ___ de nosso Senhor Jesus Cristo, para a vida eterna.\"",
+    "correctAnswer": "a",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Judas 1:20–21",
+    "learningObjective": "Ver que pelejar pela fé inclui edificar-se, orar no Espírito e guardar-se no amor de Deus.",
+    "evidence": [
+      "Judas 1:20",
+      "Judas 1:21"
+    ],
+    "type": "connect",
+    "question": "O que Judas 1:20–21 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o combate pela fé inclui edificação e oração.",
+    "feedbackWrong": {
+      "a": "O texto não descreve combate vazio de edificação.",
+      "b": "Há oração no Espírito, não recusa dela."
+    },
+    "passageText": "Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "passageA": {
+      "ref": "Judas 1:20",
+      "text": "edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Pelejar pela fé não é só combate: é edificar-se, orar no Espírito e guardar-se no amor de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Combate sem edificação"
+      },
+      {
+        "id": "b",
+        "text": "Recusa de orar"
+      },
+      {
+        "id": "c",
+        "text": "Combate inclui edificar"
+      }
+    ],
+    "correctOptionId": "c",
+    "section": "jd-02",
+    "id": "judas-cam-jd-02-06",
+    "prompt": "O que Judas 1:20–21 comunica que se liga a este contexto?",
+    "cue": "O que Judas 1:20–21 comunica que se liga a este contexto?",
+    "correctAnswer": "c",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Judas 1:20–21",
+    "learningObjective": "Ver que pelejar pela fé inclui edificar-se, orar no Espírito e guardar-se no amor de Deus.",
+    "evidence": [
+      "Judas 1:20",
+      "Judas 1:21"
+    ],
+    "type": "true_false",
+    "question": "Guardar-se no amor de Deus, em Judas 1:20–21, anda junto com edificar-se na fé e esperar a misericórdia de Cristo.",
+    "feedbackCorrect": "Sim: guarda, edificação e espera da misericórdia estão unidas.",
+    "feedbackWrong": {
+      "false": "O texto não separa o amor de Deus da fé e da espera em Cristo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "passageText": "Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "section": "jd-02",
+    "id": "judas-pro-jd-02-01",
+    "prompt": "Guardar-se no amor de Deus, em Judas 1:20–21, anda junto com edificar-se na fé e esperar a misericórdia de Cristo.",
+    "cue": "Guardar-se no amor de Deus, em Judas 1:20–21, anda junto com edificar-se na fé e esperar a misericórdia de Cristo.",
+    "correctAnswer": "true",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Judas 1:20–21",
+    "learningObjective": "Ver que pelejar pela fé inclui edificar-se, orar no Espírito e guardar-se no amor de Deus.",
+    "evidence": [
+      "Judas 1:20",
+      "Judas 1:21"
+    ],
+    "type": "tap",
+    "question": "Em Judas 1:20–21, toque a palavra que falta em \"Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida ___.\"?",
+    "feedbackCorrect": "Exato: a espera da misericórdia visa a vida eterna.",
+    "feedbackWrong": {
+      "b": "\"santíssima\" qualifica a fé, não a vida nesta lacuna.",
+      "c": "\"amados\" é o vocativo, não o adjetivo da vida."
+    },
+    "passageText": "Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "template": "Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "eterna"
+      },
+      {
+        "id": "b",
+        "text": "santíssima"
+      },
+      {
+        "id": "c",
+        "text": "amados"
+      }
+    ],
+    "correctOptionId": "a",
+    "section": "jd-02",
+    "id": "judas-pro-jd-02-02",
+    "prompt": "Em Judas 1:20–21, toque a palavra que falta em \"Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida ___.\"?",
+    "cue": "Em Judas 1:20–21, toque a palavra que falta em \"Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida ___.\"?",
+    "correctAnswer": "a",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Judas 1:20–21",
+    "learningObjective": "Ver que pelejar pela fé inclui edificar-se, orar no Espírito e guardar-se no amor de Deus.",
+    "evidence": [
+      "Judas 1:20",
+      "Judas 1:21"
+    ],
+    "type": "choice",
+    "question": "Qual leitura de Judas 1:20–21 o texto sustenta?",
+    "feedbackCorrect": "Certo: a guarda no amor espera a misericórdia de Cristo.",
+    "feedbackWrong": {
+      "a": "A vida eterna não se ganha só com disciplina, sem misericórdia.",
+      "b": "Edificar-se na fé não torna inútil esperar Cristo.",
+      "c": "Orar no Espírito pertence à mesma guarda no amor de Deus."
+    },
+    "passageText": "Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A vida eterna se ganha só com disciplina, sem misericórdia."
+      },
+      {
+        "id": "b",
+        "text": "Edificar-se na fé torna inútil esperar Cristo."
+      },
+      {
+        "id": "c",
+        "text": "Orar no Espírito é alheio à guarda no amor de Deus."
+      },
+      {
+        "id": "d",
+        "text": "A guarda no amor espera a misericórdia de Cristo."
+      }
+    ],
+    "correctOptionId": "d",
+    "section": "jd-02",
+    "id": "judas-pro-jd-02-03",
+    "prompt": "Qual leitura de Judas 1:20–21 o texto sustenta?",
+    "cue": "Qual leitura de Judas 1:20–21 o texto sustenta?",
+    "correctAnswer": "d",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Judas 1:20–21",
+    "learningObjective": "Ver que pelejar pela fé inclui edificar-se, orar no Espírito e guardar-se no amor de Deus.",
+    "evidence": [
+      "Judas 1:20",
+      "Judas 1:21"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Judas 1:20–21?",
+    "feedbackCorrect": "Certo: fé e oração sustentam a guarda que espera a misericórdia.",
+    "feedbackWrong": {
+      "a": "Essa peça não abre o sentido nesta ordem.",
+      "b": "Releia o movimento de 20–21."
+    },
+    "passageText": "Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "options": [
+      {
+        "id": "a",
+        "text": "esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna"
+      },
+      {
+        "id": "b",
+        "text": "guardai-vos no amor de Deus"
+      },
+      {
+        "id": "c",
+        "text": "edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo"
+      }
+    ],
+    "correctOrder": [
+      "c",
+      "b",
+      "a"
+    ],
+    "correctOptionId": "c",
+    "section": "jd-02",
+    "id": "judas-pro-jd-02-04",
+    "prompt": "Qual sequência revela o sentido de Judas 1:20–21?",
+    "cue": "Qual sequência revela o sentido de Judas 1:20–21?",
+    "correctAnswer": "c",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Judas 1:20–21",
+    "learningObjective": "Ver que pelejar pela fé inclui edificar-se, orar no Espírito e guardar-se no amor de Deus.",
+    "evidence": [
+      "Judas 1:20",
+      "Judas 1:21"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Mas vós, amados, edificando-vos sobre a vossa ___ fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.\"",
+    "feedbackCorrect": "Certo: a fé sobre a qual se edificam é chamada \"santíssima\".",
+    "feedbackWrong": {
+      "a": "\"eterna\" qualifica a vida, não a fé nesta lacuna.",
+      "c": "\"amados\" é o vocativo, não o adjetivo da fé."
+    },
+    "passageText": "Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "template": "Mas vós, amados, edificando-vos sobre a vossa ___ fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "options": [
+      {
+        "id": "a",
+        "text": "eterna"
+      },
+      {
+        "id": "b",
+        "text": "santíssima"
+      },
+      {
+        "id": "c",
+        "text": "amados"
+      }
+    ],
+    "correctOptionId": "b",
+    "section": "jd-02",
+    "id": "judas-pro-jd-02-05",
+    "prompt": "Complete a frase: \"Mas vós, amados, edificando-vos sobre a vossa ___ fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.\"",
+    "cue": "Complete a frase: \"Mas vós, amados, edificando-vos sobre a vossa ___ fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.\"",
+    "correctAnswer": "b",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Judas 1:20–21",
+    "learningObjective": "Ver que pelejar pela fé inclui edificar-se, orar no Espírito e guardar-se no amor de Deus.",
+    "evidence": [
+      "Judas 1:20",
+      "Judas 1:21"
+    ],
+    "type": "connect",
+    "question": "O que Judas 1:20–21 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: guardar-se no amor de Deus é parte do pelejar.",
+    "feedbackWrong": {
+      "b": "O texto não opõe amor de Deus ao combate pela fé.",
+      "c": "A espera é da misericórdia de Cristo, não de outra fé."
+    },
+    "passageText": "Mas vós, amados, edificando-vos sobre a vossa santíssima fé e orando no Espírito Santo, guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo, para a vida eterna.",
+    "passageA": {
+      "ref": "Judas 1:21",
+      "text": "guardai-vos no amor de Deus, esperando a misericórdia de nosso Senhor Jesus Cristo"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Pelejar pela fé não é só combate: é edificar-se, orar no Espírito e guardar-se no amor de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Guardar-se no amor"
+      },
+      {
+        "id": "b",
+        "text": "Amor contra a fé"
+      },
+      {
+        "id": "c",
+        "text": "Espera de outra fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "section": "jd-02",
+    "id": "judas-pro-jd-02-06",
+    "prompt": "O que Judas 1:20–21 comunica que se liga a este contexto?",
+    "cue": "O que Judas 1:20–21 comunica que se liga a este contexto?",
+    "correctAnswer": "a",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Judas 1:24–25",
+    "learningObjective": "Confiar que Deus pode guardar de tropeçar e apresentar o povo sem defeito, em grande gozo.",
+    "evidence": [
+      "Judas 1:24",
+      "Judas 1:25"
+    ],
+    "type": "true_false",
+    "question": "Aquele a quem se dirige o louvor pode guardar de tropeçar e apresentar sem defeito, em grande gozo.",
+    "feedbackCorrect": "Sim: Judas 1:24 atribui a Ele guardar e apresentar com júbilo.",
+    "feedbackWrong": {
+      "false": "Releia 1:24: Ele pode guardar de tropeçardes e apresentar sem defeito."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "passageText": "Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.",
+    "section": "jd-boss",
+    "id": "judas-sem-jd-boss-01",
+    "prompt": "Aquele a quem se dirige o louvor pode guardar de tropeçar e apresentar sem defeito, em grande gozo.",
+    "cue": "Aquele a quem se dirige o louvor pode guardar de tropeçar e apresentar sem defeito, em grande gozo.",
+    "correctAnswer": "true",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Judas 1:24–25",
+    "learningObjective": "Confiar que Deus pode guardar de tropeçar e apresentar o povo sem defeito, em grande gozo.",
+    "evidence": [
+      "Judas 1:24",
+      "Judas 1:25"
+    ],
+    "type": "tap",
+    "question": "Em Judas 1:24–25, toque a palavra que falta em \"Àquele que vos pode guardar de ___ e vos apresentar diante da sua glória sem defeito, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.\"?",
+    "feedbackCorrect": "Exato: Ele pode guardar de tropeçardes.",
+    "feedbackWrong": {
+      "b": "\"glória\" aparece na apresentação, não nesta lacuna.",
+      "c": "\"Amém\" fecha a doxologia, não esta lacuna."
+    },
+    "passageText": "Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.",
+    "template": "Àquele que vos pode guardar de ___ e vos apresentar diante da sua glória sem defeito, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "tropeçardes"
+      },
+      {
+        "id": "b",
+        "text": "glória"
+      },
+      {
+        "id": "c",
+        "text": "Amém"
+      }
+    ],
+    "correctOptionId": "a",
+    "section": "jd-boss",
+    "id": "judas-sem-jd-boss-02",
+    "prompt": "Em Judas 1:24–25, toque a palavra que falta em \"Àquele que vos pode guardar de ___ e vos apresentar diante da sua glória sem defeito, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.\"?",
+    "cue": "Em Judas 1:24–25, toque a palavra que falta em \"Àquele que vos pode guardar de ___ e vos apresentar diante da sua glória sem defeito, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.\"?",
+    "correctAnswer": "a",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Judas 1:24–25",
+    "learningObjective": "Confiar que Deus pode guardar de tropeçar e apresentar o povo sem defeito, em grande gozo.",
+    "evidence": [
+      "Judas 1:24",
+      "Judas 1:25"
+    ],
+    "type": "choice",
+    "question": "O que Judas 1:24–25 afirma que Aquele pode fazer pelo povo?",
+    "feedbackCorrect": "Certo: guardar de tropeçar e apresentar sem defeito, em grande gozo.",
+    "feedbackWrong": {
+      "a": "O texto não diz que o povo se apresenta sozinho.",
+      "c": "O louvor é a Deus, Salvador, por Jesus Cristo — não o inverso.",
+      "d": "A doxologia não descreve abandono do povo."
+    },
+    "passageText": "Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deixar que o povo se apresente sozinho, sem guarda."
+      },
+      {
+        "id": "b",
+        "text": "Guardar de tropeçar e apresentar sem defeito, com gozo."
+      },
+      {
+        "id": "c",
+        "text": "Transferir o louvor do Salvador para o próprio povo."
+      },
+      {
+        "id": "d",
+        "text": "Abandonar os santos antes da eternidade."
+      }
+    ],
+    "correctOptionId": "b",
+    "section": "jd-boss",
+    "id": "judas-sem-jd-boss-03",
+    "prompt": "O que Judas 1:24–25 afirma que Aquele pode fazer pelo povo?",
+    "cue": "O que Judas 1:24–25 afirma que Aquele pode fazer pelo povo?",
+    "correctAnswer": "b",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Judas 1:24–25",
+    "learningObjective": "Confiar que Deus pode guardar de tropeçar e apresentar o povo sem defeito, em grande gozo.",
+    "evidence": [
+      "Judas 1:24",
+      "Judas 1:25"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Judas 1:24–25?",
+    "feedbackCorrect": "Certo: guardar, apresentar com gozo, e então o louvor a Deus.",
+    "feedbackWrong": {
+      "b": "Essa peça não ocupa esse lugar no versículo.",
+      "c": "Releia a doxologia do começo ao louvor."
+    },
+    "passageText": "Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Àquele que vos pode guardar de tropeçardes"
+      },
+      {
+        "id": "b",
+        "text": "e vos apresentar diante da sua glória sem defeito, em grande gozo"
+      },
+      {
+        "id": "c",
+        "text": "ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "section": "jd-boss",
+    "id": "judas-sem-jd-boss-04",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Judas 1:24–25?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Judas 1:24–25?",
+    "correctAnswer": "a",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Judas 1:24–25",
+    "learningObjective": "Confiar que Deus pode guardar de tropeçar e apresentar o povo sem defeito, em grande gozo.",
+    "evidence": [
+      "Judas 1:24",
+      "Judas 1:25"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem ___, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.\"",
+    "feedbackCorrect": "Certo: apresentar diante da glória \"sem defeito\".",
+    "feedbackWrong": {
+      "a": "\"gozo\" descreve o júbilo da apresentação, não esta lacuna.",
+      "b": "\"poder\" pertence ao louvor final, não a esta frase."
+    },
+    "passageText": "Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.",
+    "template": "Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem ___, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "gozo"
+      },
+      {
+        "id": "b",
+        "text": "poder"
+      },
+      {
+        "id": "c",
+        "text": "defeito"
+      }
+    ],
+    "correctOptionId": "c",
+    "section": "jd-boss",
+    "id": "judas-sem-jd-boss-05",
+    "prompt": "Complete a frase: \"Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem ___, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.\"",
+    "cue": "Complete a frase: \"Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem ___, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.\"",
+    "correctAnswer": "c",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Judas 1:24–25",
+    "learningObjective": "Confiar que Deus pode guardar de tropeçar e apresentar o povo sem defeito, em grande gozo.",
+    "evidence": [
+      "Judas 1:24",
+      "Judas 1:25"
+    ],
+    "type": "connect",
+    "question": "O que Judas 1:24–25 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Deus guarda e pode apresentar o povo sem defeito.",
+    "feedbackWrong": {
+      "a": "O texto não ensina autoguarda solitária até o fim.",
+      "b": "Há júbilo na apresentação, não ausência de gozo."
+    },
+    "passageText": "Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.",
+    "passageA": {
+      "ref": "Judas 1:24",
+      "text": "Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande gozo"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Quem peleja é também guardado: Deus pode apresentar o povo sem defeito, com júbilo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Povo se guarda sozinho"
+      },
+      {
+        "id": "b",
+        "text": "Apresentação sem júbilo"
+      },
+      {
+        "id": "c",
+        "text": "Deus guarda e apresenta"
+      }
+    ],
+    "correctOptionId": "c",
+    "section": "jd-boss",
+    "id": "judas-sem-jd-boss-06",
+    "prompt": "O que Judas 1:24–25 comunica que se liga a este contexto?",
+    "cue": "O que Judas 1:24–25 comunica que se liga a este contexto?",
+    "correctAnswer": "c",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Judas 1:24–25",
+    "learningObjective": "Confiar que Deus pode guardar de tropeçar e apresentar o povo sem defeito, em grande gozo.",
+    "evidence": [
+      "Judas 1:24",
+      "Judas 1:25"
+    ],
+    "type": "true_false",
+    "question": "O povo se apresenta sozinho, sem defeito, diante da glória, sem precisar que Deus o guarde.",
+    "feedbackCorrect": "Certo: quem apresenta sem defeito é Aquele que pode guardar.",
+    "feedbackWrong": {
+      "true": "Judas 1:24 atribui a guarda e a apresentação a Deus, não ao povo sozinho."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "passageText": "Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.",
+    "section": "jd-boss",
+    "id": "judas-cam-jd-boss-01",
+    "prompt": "O povo se apresenta sozinho, sem defeito, diante da glória, sem precisar que Deus o guarde.",
+    "cue": "O povo se apresenta sozinho, sem defeito, diante da glória, sem precisar que Deus o guarde.",
+    "correctAnswer": "false",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Judas 1:24–25",
+    "learningObjective": "Confiar que Deus pode guardar de tropeçar e apresentar o povo sem defeito, em grande gozo.",
+    "evidence": [
+      "Judas 1:24",
+      "Judas 1:25"
+    ],
+    "type": "tap",
+    "question": "Em Judas 1:24–25, toque a palavra que falta em \"Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande ___, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.\"?",
+    "feedbackCorrect": "Exato: a apresentação é em grande gozo.",
+    "feedbackWrong": {
+      "a": "\"poder\" pertence ao louvor, não a esta lacuna.",
+      "c": "\"Amém\" fecha a doxologia."
+    },
+    "passageText": "Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.",
+    "template": "Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande ___, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "poder"
+      },
+      {
+        "id": "b",
+        "text": "gozo"
+      },
+      {
+        "id": "c",
+        "text": "Amém"
+      }
+    ],
+    "correctOptionId": "b",
+    "section": "jd-boss",
+    "id": "judas-cam-jd-boss-02",
+    "prompt": "Em Judas 1:24–25, toque a palavra que falta em \"Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande ___, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.\"?",
+    "cue": "Em Judas 1:24–25, toque a palavra que falta em \"Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande ___, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.\"?",
+    "correctAnswer": "b",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Judas 1:24–25",
+    "learningObjective": "Confiar que Deus pode guardar de tropeçar e apresentar o povo sem defeito, em grande gozo.",
+    "evidence": [
+      "Judas 1:24",
+      "Judas 1:25"
+    ],
+    "type": "choice",
+    "question": "Como Judas 1:24–25 liga a guarda do povo ao louvor?",
+    "feedbackCorrect": "Certo: Aquele que guarda recebe glória por Jesus Cristo.",
+    "feedbackWrong": {
+      "b": "O louvor não é ao povo, e sim ao único Deus, Salvador.",
+      "c": "Jesus Cristo não é omitido: o louvor é por Ele.",
+      "d": "A doxologia não trata a guarda como inútil."
+    },
+    "passageText": "Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aquele que guarda recebe glória, por Jesus Cristo."
+      },
+      {
+        "id": "b",
+        "text": "O povo recebe a glória, e Deus fica em silêncio."
+      },
+      {
+        "id": "c",
+        "text": "O louvor omite Jesus Cristo, nosso Senhor."
+      },
+      {
+        "id": "d",
+        "text": "A guarda torna desnecessário qualquer louvor a Deus."
+      }
+    ],
+    "correctOptionId": "a",
+    "section": "jd-boss",
+    "id": "judas-cam-jd-boss-03",
+    "prompt": "Como Judas 1:24–25 liga a guarda do povo ao louvor?",
+    "cue": "Como Judas 1:24–25 liga a guarda do povo ao louvor?",
+    "correctAnswer": "a",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Judas 1:24–25",
+    "learningObjective": "Confiar que Deus pode guardar de tropeçar e apresentar o povo sem defeito, em grande gozo.",
+    "evidence": [
+      "Judas 1:24",
+      "Judas 1:25"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Judas 1:24–25?",
+    "feedbackCorrect": "Certo: da capacidade de guardar à apresentação e ao louvor eterno.",
+    "feedbackWrong": {
+      "a": "Essa peça não ocupa esse lugar no encadeamento.",
+      "b": "Releia como o louvor segue a apresentação."
+    },
+    "passageText": "Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder"
+      },
+      {
+        "id": "b",
+        "text": "e vos apresentar diante da sua glória sem defeito, em grande gozo"
+      },
+      {
+        "id": "c",
+        "text": "Àquele que vos pode guardar de tropeçardes"
+      }
+    ],
+    "correctOrder": [
+      "c",
+      "b",
+      "a"
+    ],
+    "correctOptionId": "c",
+    "section": "jd-boss",
+    "id": "judas-cam-jd-boss-04",
+    "prompt": "Como se encadeiam os eventos de Judas 1:24–25?",
+    "cue": "Como se encadeiam os eventos de Judas 1:24–25?",
+    "correctAnswer": "c",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Judas 1:24–25",
+    "learningObjective": "Confiar que Deus pode guardar de tropeçar e apresentar o povo sem defeito, em grande gozo.",
+    "evidence": [
+      "Judas 1:24",
+      "Judas 1:25"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande gozo, ao ___ Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.\"",
+    "feedbackCorrect": "Certo: o louvor é ao \"único\" Deus, nosso Salvador.",
+    "feedbackWrong": {
+      "b": "\"eterno\" não é a palavra desta lacuna no texto TB.",
+      "c": "\"grande\" qualifica o gozo, não Deus nesta frase."
+    },
+    "passageText": "Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.",
+    "template": "Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande gozo, ao ___ Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "único"
+      },
+      {
+        "id": "b",
+        "text": "eterno"
+      },
+      {
+        "id": "c",
+        "text": "grande"
+      }
+    ],
+    "correctOptionId": "a",
+    "section": "jd-boss",
+    "id": "judas-cam-jd-boss-05",
+    "prompt": "Complete a frase: \"Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande gozo, ao ___ Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.\"",
+    "cue": "Complete a frase: \"Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande gozo, ao ___ Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.\"",
+    "correctAnswer": "a",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Judas 1:24–25",
+    "learningObjective": "Confiar que Deus pode guardar de tropeçar e apresentar o povo sem defeito, em grande gozo.",
+    "evidence": [
+      "Judas 1:24",
+      "Judas 1:25"
+    ],
+    "type": "connect",
+    "question": "O que Judas 1:24–25 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a apresentação é com júbilo, não com vergonha solitária.",
+    "feedbackWrong": {
+      "a": "O texto fala de grande gozo, não de vergonha.",
+      "c": "Deus não é incapaz: Ele pode guardar."
+    },
+    "passageText": "Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.",
+    "passageA": {
+      "ref": "Judas 1:24",
+      "text": "vos apresentar diante da sua glória sem defeito, em grande gozo"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Quem peleja é também guardado: Deus pode apresentar o povo sem defeito, com júbilo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Apresentação com vergonha"
+      },
+      {
+        "id": "b",
+        "text": "Júbilo na apresentação"
+      },
+      {
+        "id": "c",
+        "text": "Deus incapaz de guardar"
+      }
+    ],
+    "correctOptionId": "b",
+    "section": "jd-boss",
+    "id": "judas-cam-jd-boss-06",
+    "prompt": "O que Judas 1:24–25 comunica que se liga a este contexto?",
+    "cue": "O que Judas 1:24–25 comunica que se liga a este contexto?",
+    "correctAnswer": "b",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Judas 1:24–25",
+    "learningObjective": "Confiar que Deus pode guardar de tropeçar e apresentar o povo sem defeito, em grande gozo.",
+    "evidence": [
+      "Judas 1:24",
+      "Judas 1:25"
+    ],
+    "type": "true_false",
+    "question": "O pelejar pela fé, segundo Judas 1:24–25, é também guarda: Deus pode apresentar o povo sem defeito, com júbilo.",
+    "feedbackCorrect": "Sim: a doxologia une guarda divina e apresentação sem defeito.",
+    "feedbackWrong": {
+      "false": "O texto atribui a Deus o poder de guardar e apresentar com gozo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "passageText": "Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.",
+    "section": "jd-boss",
+    "id": "judas-pro-jd-boss-01",
+    "prompt": "O pelejar pela fé, segundo Judas 1:24–25, é também guarda: Deus pode apresentar o povo sem defeito, com júbilo.",
+    "cue": "O pelejar pela fé, segundo Judas 1:24–25, é também guarda: Deus pode apresentar o povo sem defeito, com júbilo.",
+    "correctAnswer": "true",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Judas 1:24–25",
+    "learningObjective": "Confiar que Deus pode guardar de tropeçar e apresentar o povo sem defeito, em grande gozo.",
+    "evidence": [
+      "Judas 1:24",
+      "Judas 1:25"
+    ],
+    "type": "tap",
+    "question": "Em Judas 1:24–25, toque a palavra que falta em \"Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, ___, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.\"?",
+    "feedbackCorrect": "Exato: o louvor inclui glória, majestade, domínio e poder.",
+    "feedbackWrong": {
+      "a": "\"Salvador\" nomeia a Deus, não esta peça da lista.",
+      "c": "\"eternidade\" marca o tempo do louvor, não esta lacuna."
+    },
+    "passageText": "Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.",
+    "template": "Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, ___, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Salvador"
+      },
+      {
+        "id": "b",
+        "text": "majestade"
+      },
+      {
+        "id": "c",
+        "text": "eternidade"
+      }
+    ],
+    "correctOptionId": "b",
+    "section": "jd-boss",
+    "id": "judas-pro-jd-boss-02",
+    "prompt": "Em Judas 1:24–25, toque a palavra que falta em \"Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, ___, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.\"?",
+    "cue": "Em Judas 1:24–25, toque a palavra que falta em \"Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, ___, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.\"?",
+    "correctAnswer": "b",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Judas 1:24–25",
+    "learningObjective": "Confiar que Deus pode guardar de tropeçar e apresentar o povo sem defeito, em grande gozo.",
+    "evidence": [
+      "Judas 1:24",
+      "Judas 1:25"
+    ],
+    "type": "choice",
+    "question": "O que \"vos pode guardar de tropeçardes\" ensina na doxologia de Judas 1:24?",
+    "feedbackCorrect": "Certo: a capacidade de guardar é de Deus, não autoperfeição do povo.",
+    "feedbackWrong": {
+      "b": "O texto não ensina que o povo se aperfeiçoa sozinho.",
+      "c": "A apresentação sem defeito é obra dEle, não recusa de guarda.",
+      "d": "O gozo acompanha a apresentação; não a contradiz."
+    },
+    "passageText": "Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A capacidade de guardar é de Deus, não autoperfeição humana."
+      },
+      {
+        "id": "b",
+        "text": "O povo se torna sem defeito só pelo próprio esforço."
+      },
+      {
+        "id": "c",
+        "text": "Deus recusa guardar, e por isso há grande gozo."
+      },
+      {
+        "id": "d",
+        "text": "O júbilo prova que a guarda divina é desnecessária."
+      }
+    ],
+    "correctOptionId": "a",
+    "section": "jd-boss",
+    "id": "judas-pro-jd-boss-03",
+    "prompt": "O que \"vos pode guardar de tropeçardes\" ensina na doxologia de Judas 1:24?",
+    "cue": "O que \"vos pode guardar de tropeçardes\" ensina na doxologia de Judas 1:24?",
+    "correctAnswer": "a",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Judas 1:24–25",
+    "learningObjective": "Confiar que Deus pode guardar de tropeçar e apresentar o povo sem defeito, em grande gozo.",
+    "evidence": [
+      "Judas 1:24",
+      "Judas 1:25"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Judas 1:24–25?",
+    "feedbackCorrect": "Certo: guarda, apresentação sem defeito e louvor eterno ao Salvador.",
+    "feedbackWrong": {
+      "b": "Essa peça não abre o sentido nesta ordem.",
+      "c": "Releia o movimento da doxologia."
+    },
+    "passageText": "Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Àquele que vos pode guardar de tropeçardes"
+      },
+      {
+        "id": "b",
+        "text": "antes de toda a eternidade, e agora, e por todos os séculos. Amém."
+      },
+      {
+        "id": "c",
+        "text": "vos apresentar diante da sua glória sem defeito, em grande gozo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "c",
+      "b"
+    ],
+    "correctOptionId": "a",
+    "section": "jd-boss",
+    "id": "judas-pro-jd-boss-04",
+    "prompt": "Qual sequência revela o sentido de Judas 1:24–25?",
+    "cue": "Qual sequência revela o sentido de Judas 1:24–25?",
+    "correctAnswer": "a",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Judas 1:24–25",
+    "learningObjective": "Confiar que Deus pode guardar de tropeçar e apresentar o povo sem defeito, em grande gozo.",
+    "evidence": [
+      "Judas 1:24",
+      "Judas 1:25"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e ___, antes de toda a eternidade, e agora, e por todos os séculos. Amém.\"",
+    "feedbackCorrect": "Certo: a lista do louvor fecha com \"poder\".",
+    "feedbackWrong": {
+      "a": "\"majestade\" vem antes de domínio, não nesta lacuna.",
+      "c": "\"gozo\" descreve a apresentação, não esta peça do louvor."
+    },
+    "passageText": "Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.",
+    "template": "Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e ___, antes de toda a eternidade, e agora, e por todos os séculos. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "majestade"
+      },
+      {
+        "id": "b",
+        "text": "poder"
+      },
+      {
+        "id": "c",
+        "text": "gozo"
+      }
+    ],
+    "correctOptionId": "b",
+    "section": "jd-boss",
+    "id": "judas-pro-jd-boss-05",
+    "prompt": "Complete a frase: \"Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e ___, antes de toda a eternidade, e agora, e por todos os séculos. Amém.\"",
+    "cue": "Complete a frase: \"Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e ___, antes de toda a eternidade, e agora, e por todos os séculos. Amém.\"",
+    "correctAnswer": "b",
+    "trail": "judas"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Judas 1:24–25",
+    "learningObjective": "Confiar que Deus pode guardar de tropeçar e apresentar o povo sem defeito, em grande gozo.",
+    "evidence": [
+      "Judas 1:24",
+      "Judas 1:25"
+    ],
+    "type": "connect",
+    "question": "O que Judas 1:24–25 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Deus pode apresentar o povo sem defeito.",
+    "feedbackWrong": {
+      "a": "O texto não ensina apresentação com defeito.",
+      "c": "Há júbilo, não exclusão do gozo."
+    },
+    "passageText": "Àquele que vos pode guardar de tropeçardes e vos apresentar diante da sua glória sem defeito, em grande gozo, ao único Deus, nosso Salvador, por Jesus Cristo, nosso Senhor, seja glória, majestade, domínio e poder, antes de toda a eternidade, e agora, e por todos os séculos. Amém.",
+    "passageA": {
+      "ref": "Judas 1:24–25",
+      "text": "vos apresentar diante da sua glória sem defeito, em grande gozo"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Quem peleja é também guardado: Deus pode apresentar o povo sem defeito, com júbilo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Apresentação com defeito"
+      },
+      {
+        "id": "b",
+        "text": "Deus apresenta sem defeito"
+      },
+      {
+        "id": "c",
+        "text": "Gozo excluído da glória"
+      }
+    ],
+    "correctOptionId": "b",
+    "section": "jd-boss",
+    "id": "judas-pro-jd-boss-06",
+    "prompt": "O que Judas 1:24–25 comunica que se liga a este contexto?",
+    "cue": "O que Judas 1:24–25 comunica que se liga a este contexto?",
+    "correctAnswer": "b",
+    "trail": "judas"
+  }
+]

@@ -1,0 +1,2189 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Habacuque 1:2",
+    "learningObjective": "Reconhecer que Habacuque leva a Deus sua queixa diante da violência e da injustiça não julgadas.",
+    "evidence": [
+      "Habacuque 1:2"
+    ],
+    "type": "true_false",
+    "question": "Habacuque pergunta a Jeová até quando clamará sem ser ouvido.",
+    "prompt": "Habacuque pergunta a Jeová até quando clamará sem ser ouvido.",
+    "cue": "Habacuque pergunta a Jeová até quando clamará sem ser ouvido.",
+    "feedbackCorrect": "Certo: é exatamente a queixa que abre o livro de Habacuque.",
+    "feedbackWrong": {
+      "false": "Releia o versículo: essa é a pergunta que o profeta faz a Jeová."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Até quando, Jeová, clamarei eu, e tu não ouvirás? Grito a ti: Violência, e não salvarás.",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "id": "habacuque-sem-habacuque-habacuque-01-a-queixa-do-profeta-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Habacuque 1:2",
+    "learningObjective": "Reconhecer que Habacuque leva a Deus sua queixa diante da violência e da injustiça não julgadas.",
+    "evidence": [
+      "Habacuque 1:2"
+    ],
+    "type": "tap",
+    "question": "Em Habacuque 1:2, toque a palavra que falta em \"Até quando, ___, clamarei eu, e tu não ouvirás? Grito a ti: Violência, e não salvarás.\"?",
+    "prompt": "Em Habacuque 1:2, toque a palavra que falta em \"Até quando, ___, clamarei eu, e tu não ouvirás? Grito a ti: Violência, e não salvarás.\"?",
+    "cue": "Em Habacuque 1:2, toque a palavra que falta em \"Até quando, ___, clamarei eu, e tu não ouvirás? Grito a ti: Violência, e não salvarás.\"?",
+    "feedbackCorrect": "Exato: é a Jeová que o profeta dirige sua queixa.",
+    "feedbackWrong": {
+      "a": "\"Clamarei\" descreve a ação do profeta, não a quem ele clama.",
+      "b": "\"Violência\" é o que Habacuque denuncia, não a quem ele clama."
+    },
+    "passageText": "Até quando, Jeová, clamarei eu, e tu não ouvirás? Grito a ti: Violência, e não salvarás.",
+    "template": "Até quando, ___, clamarei eu, e tu não ouvirás? Grito a ti: Violência, e não salvarás.",
+    "options": [
+      {
+        "id": "a",
+        "text": "clamarei"
+      },
+      {
+        "id": "b",
+        "text": "Violência"
+      },
+      {
+        "id": "c",
+        "text": "Jeová"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "id": "habacuque-sem-habacuque-habacuque-01-a-queixa-do-profeta-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Habacuque 1:2",
+    "learningObjective": "Reconhecer que Habacuque leva a Deus sua queixa diante da violência e da injustiça não julgadas.",
+    "evidence": [
+      "Habacuque 1:2"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelo texto em Habacuque 1:2?",
+    "prompt": "Qual afirmação é feita diretamente pelo texto em Habacuque 1:2?",
+    "cue": "Qual afirmação é feita diretamente pelo texto em Habacuque 1:2?",
+    "feedbackCorrect": "Certo: o profeta grita a Jeová por causa da violência que vê.",
+    "feedbackWrong": {
+      "a": "O texto diz o oposto: o profeta ainda espera ser ouvido.",
+      "c": "Não há agradecimento aqui — há queixa contra a violência.",
+      "d": "Essa visão de restauração aparece só mais adiante no livro."
+    },
+    "passageText": "Até quando, Jeová, clamarei eu, e tu não ouvirás? Grito a ti: Violência, e não salvarás.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Habacuque anuncia que Jeová já respondeu ao seu clamor."
+      },
+      {
+        "id": "b",
+        "text": "Habacuque clama a Jeová por causa da violência ao seu redor."
+      },
+      {
+        "id": "c",
+        "text": "Habacuque agradece a Jeová pela paz que reina na terra."
+      },
+      {
+        "id": "d",
+        "text": "Habacuque descreve uma visão de restauração já completa."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "id": "habacuque-sem-habacuque-habacuque-01-a-queixa-do-profeta-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Habacuque 1:2",
+    "learningObjective": "Reconhecer que Habacuque leva a Deus sua queixa diante da violência e da injustiça não julgadas.",
+    "evidence": [
+      "Habacuque 1:2"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Habacuque 1:2?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Habacuque 1:2?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Habacuque 1:2?",
+    "feedbackCorrect": "Certo: essa é a sequência do clamor do profeta.",
+    "feedbackWrong": {
+      "b": "Essa frase é a segunda parte da pergunta, não a primeira.",
+      "c": "Esse grito específico ('Violência') vem depois da pergunta inicial."
+    },
+    "passageText": "Até quando, Jeová, clamarei eu, e tu não ouvirás? Grito a ti: Violência, e não salvarás.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Até quando, Jeová, clamarei eu"
+      },
+      {
+        "id": "b",
+        "text": "e tu não ouvirás?"
+      },
+      {
+        "id": "c",
+        "text": "Grito a ti: Violência, e não salvarás."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "id": "habacuque-sem-habacuque-habacuque-01-a-queixa-do-profeta-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Habacuque 1:2",
+    "learningObjective": "Reconhecer que Habacuque leva a Deus sua queixa diante da violência e da injustiça não julgadas.",
+    "evidence": [
+      "Habacuque 1:2"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Até quando, Jeová, ___ eu, e tu não ouvirás? Grito a ti: Violência, e não salvarás.\"",
+    "prompt": "Complete a frase: \"Até quando, Jeová, ___ eu, e tu não ouvirás? Grito a ti: Violência, e não salvarás.\"",
+    "cue": "Complete a frase: \"Até quando, Jeová, ___ eu, e tu não ouvirás? Grito a ti: Violência, e não salvarás.\"",
+    "feedbackCorrect": "Certo: é isso que o profeta faz — clama a Jeová.",
+    "feedbackWrong": {
+      "a": "\"Ouvirás\" é o que o profeta espera de Jeová, não o que ele mesmo faz.",
+      "b": "\"Salvarás\" também é um pedido ao Senhor, não a ação do profeta."
+    },
+    "passageText": "Até quando, Jeová, clamarei eu, e tu não ouvirás? Grito a ti: Violência, e não salvarás.",
+    "template": "Até quando, Jeová, ___ eu, e tu não ouvirás? Grito a ti: Violência, e não salvarás.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ouvirás"
+      },
+      {
+        "id": "b",
+        "text": "salvarás"
+      },
+      {
+        "id": "c",
+        "text": "clamarei"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "id": "habacuque-sem-habacuque-habacuque-01-a-queixa-do-profeta-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Habacuque 1:2",
+    "learningObjective": "Reconhecer que Habacuque leva a Deus sua queixa diante da violência e da injustiça não julgadas.",
+    "evidence": [
+      "Habacuque 1:2"
+    ],
+    "type": "connect",
+    "question": "O que Habacuque 1:2 comunica que se liga a este contexto?",
+    "prompt": "O que Habacuque 1:2 comunica que se liga a este contexto?",
+    "cue": "O que Habacuque 1:2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o clamor do profeta é uma forma honesta de oração.",
+    "feedbackWrong": {
+      "a": "O texto não descarta a oração — ele é, todo, uma oração.",
+      "b": "É o oposto: Habacuque se incomoda profundamente com a violência."
+    },
+    "passageText": "Até quando, Jeová, clamarei eu, e tu não ouvirás? Grito a ti: Violência, e não salvarás.",
+    "passageA": {
+      "ref": "Habacuque 1:2",
+      "text": "Até quando, Jeová, clamarei eu, e tu não ouvirás? Grito a ti: Violência, e não salvarás."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus recebe a queixa honesta de quem sofre injustiça e clama por resposta."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Orgulho que dispensa oração"
+      },
+      {
+        "id": "b",
+        "text": "Indiferença diante da violência"
+      },
+      {
+        "id": "c",
+        "text": "Queixa honesta diante de Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "id": "habacuque-sem-habacuque-habacuque-01-a-queixa-do-profeta-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Habacuque 1:2",
+    "learningObjective": "Reconhecer que Habacuque leva a Deus sua queixa diante da violência e da injustiça não julgadas.",
+    "evidence": [
+      "Habacuque 1:2"
+    ],
+    "type": "true_false",
+    "question": "Em Habacuque 1:2, o profeta afirma que Jeová já interveio contra a violência.",
+    "prompt": "Em Habacuque 1:2, o profeta afirma que Jeová já interveio contra a violência.",
+    "cue": "Em Habacuque 1:2, o profeta afirma que Jeová já interveio contra a violência.",
+    "feedbackCorrect": "Certo: o texto mostra o profeta ainda à espera, não uma resposta já dada.",
+    "feedbackWrong": {
+      "true": "O texto mostra o oposto: o profeta ainda espera ser ouvido e salvo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Até quando, Jeová, clamarei eu, e tu não ouvirás? Grito a ti: Violência, e não salvarás.",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "id": "habacuque-cam-habacuque-habacuque-01-a-queixa-do-profeta-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Habacuque 1:2",
+    "learningObjective": "Reconhecer que Habacuque leva a Deus sua queixa diante da violência e da injustiça não julgadas.",
+    "evidence": [
+      "Habacuque 1:2"
+    ],
+    "type": "tap",
+    "question": "Em Habacuque 1:2, toque a palavra que falta em \"Até quando, Jeová, clamarei eu, e tu não ___? Grito a ti: Violência, e não salvarás.\"?",
+    "prompt": "Em Habacuque 1:2, toque a palavra que falta em \"Até quando, Jeová, clamarei eu, e tu não ___? Grito a ti: Violência, e não salvarás.\"?",
+    "cue": "Em Habacuque 1:2, toque a palavra que falta em \"Até quando, Jeová, clamarei eu, e tu não ___? Grito a ti: Violência, e não salvarás.\"?",
+    "feedbackCorrect": "Exato: é isso que o profeta ainda não recebeu de Jeová.",
+    "feedbackWrong": {
+      "a": "\"Clamarei\" é a ação do profeta, não o que falta de Jeová.",
+      "b": "\"Grito\" abre a frase seguinte, não completa esta pergunta."
+    },
+    "passageText": "Até quando, Jeová, clamarei eu, e tu não ouvirás? Grito a ti: Violência, e não salvarás.",
+    "template": "Até quando, Jeová, clamarei eu, e tu não ___? Grito a ti: Violência, e não salvarás.",
+    "options": [
+      {
+        "id": "a",
+        "text": "clamarei"
+      },
+      {
+        "id": "b",
+        "text": "Grito"
+      },
+      {
+        "id": "c",
+        "text": "ouvirás"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "id": "habacuque-cam-habacuque-habacuque-01-a-queixa-do-profeta-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Habacuque 1:2",
+    "learningObjective": "Reconhecer que Habacuque leva a Deus sua queixa diante da violência e da injustiça não julgadas.",
+    "evidence": [
+      "Habacuque 1:2"
+    ],
+    "type": "choice",
+    "question": "Qual ideia melhor conecta Habacuque 1:2 ao contexto da missão?",
+    "prompt": "Qual ideia melhor conecta Habacuque 1:2 ao contexto da missão?",
+    "cue": "Qual ideia melhor conecta Habacuque 1:2 ao contexto da missão?",
+    "feedbackCorrect": "Certo: Habacuque continua falando com Deus mesmo na angústia.",
+    "feedbackWrong": {
+      "a": "Ele segue clamando — desistir seria justamente parar de falar com Deus.",
+      "b": "O livro inteiro mostra o contrário: a queixa aqui nasce da fé, não a nega.",
+      "c": "É o cuidado com a justiça que move o profeta a clamar."
+    },
+    "passageText": "Até quando, Jeová, clamarei eu, e tu não ouvirás? Grito a ti: Violência, e não salvarás.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O clamor do profeta revela que ele desistiu de esperar em Jeová."
+      },
+      {
+        "id": "b",
+        "text": "O texto ensina que reclamar a Deus é sinal de falta de fé."
+      },
+      {
+        "id": "c",
+        "text": "A queixa de Habacuque nasce da indiferença pela justiça."
+      },
+      {
+        "id": "d",
+        "text": "O clamor do profeta mostra que a queixa sincera também é oração."
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "id": "habacuque-cam-habacuque-habacuque-01-a-queixa-do-profeta-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Habacuque 1:2",
+    "learningObjective": "Reconhecer que Habacuque leva a Deus sua queixa diante da violência e da injustiça não julgadas.",
+    "evidence": [
+      "Habacuque 1:2"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Habacuque 1:2?",
+    "prompt": "Como se encadeiam os eventos de Habacuque 1:2?",
+    "cue": "Como se encadeiam os eventos de Habacuque 1:2?",
+    "feedbackCorrect": "Certo: a pergunta antecede o grito específico contra a violência.",
+    "feedbackWrong": {
+      "b": "Essa é a continuação da pergunta, não o ponto de partida.",
+      "c": "O grito nomeado ('Violência') fecha a sequência, não a abre."
+    },
+    "passageText": "Até quando, Jeová, clamarei eu, e tu não ouvirás? Grito a ti: Violência, e não salvarás.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Até quando, Jeová, clamarei eu"
+      },
+      {
+        "id": "b",
+        "text": "e tu não ouvirás?"
+      },
+      {
+        "id": "c",
+        "text": "Grito a ti: Violência, e não salvarás."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "id": "habacuque-cam-habacuque-habacuque-01-a-queixa-do-profeta-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Habacuque 1:2",
+    "learningObjective": "Reconhecer que Habacuque leva a Deus sua queixa diante da violência e da injustiça não julgadas.",
+    "evidence": [
+      "Habacuque 1:2"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Até quando, Jeová, clamarei eu, e tu não ouvirás? Grito a ti: Violência, e não ___.\"",
+    "prompt": "Complete a frase: \"Até quando, Jeová, clamarei eu, e tu não ouvirás? Grito a ti: Violência, e não ___.\"",
+    "cue": "Complete a frase: \"Até quando, Jeová, clamarei eu, e tu não ouvirás? Grito a ti: Violência, e não ___.\"",
+    "feedbackCorrect": "Certo: esse é o segundo pedido do profeta, ligado à violência que denuncia.",
+    "feedbackWrong": {
+      "a": "\"Clamarei\" já apareceu antes, na primeira parte do versículo.",
+      "b": "\"Ouvirás\" é o verbo da primeira pergunta, não desta segunda."
+    },
+    "passageText": "Até quando, Jeová, clamarei eu, e tu não ouvirás? Grito a ti: Violência, e não salvarás.",
+    "template": "Até quando, Jeová, clamarei eu, e tu não ouvirás? Grito a ti: Violência, e não ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "clamarei"
+      },
+      {
+        "id": "b",
+        "text": "ouvirás"
+      },
+      {
+        "id": "c",
+        "text": "salvarás"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "id": "habacuque-cam-habacuque-habacuque-01-a-queixa-do-profeta-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Habacuque 1:2",
+    "learningObjective": "Reconhecer que Habacuque leva a Deus sua queixa diante da violência e da injustiça não julgadas.",
+    "evidence": [
+      "Habacuque 1:2"
+    ],
+    "type": "connect",
+    "question": "O que Habacuque 1:2 comunica que se liga a este contexto?",
+    "prompt": "O que Habacuque 1:2 comunica que se liga a este contexto?",
+    "cue": "O que Habacuque 1:2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: levar a queixa a Deus é uma forma legítima de oração.",
+    "feedbackWrong": {
+      "a": "O profeta não se resigna — ele insiste em clamar por resposta.",
+      "c": "A fé de Habacuque inclui, e não dispensa, a pergunta honesta."
+    },
+    "passageText": "Até quando, Jeová, clamarei eu, e tu não ouvirás? Grito a ti: Violência, e não salvarás.",
+    "passageA": {
+      "ref": "Habacuque 1:2",
+      "text": "Até quando, Jeová, clamarei eu, e tu não ouvirás? Grito a ti: Violência, e não salvarás."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Viver pela fé é diferente de guardar silêncio diante da injustiça."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Resignação sem esperança real"
+      },
+      {
+        "id": "b",
+        "text": "A queixa é oração legítima"
+      },
+      {
+        "id": "c",
+        "text": "Fé que dispensa qualquer pergunta"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "id": "habacuque-cam-habacuque-habacuque-01-a-queixa-do-profeta-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Habacuque 1:2",
+    "learningObjective": "Reconhecer que Habacuque leva a Deus sua queixa diante da violência e da injustiça não julgadas.",
+    "evidence": [
+      "Habacuque 1:2"
+    ],
+    "type": "true_false",
+    "question": "A passagem sustenta que a queixa de Habacuque nasce da fé em um Deus que julga com justiça.",
+    "prompt": "A passagem sustenta que a queixa de Habacuque nasce da fé em um Deus que julga com justiça.",
+    "cue": "A passagem sustenta que a queixa de Habacuque nasce da fé em um Deus que julga com justiça.",
+    "feedbackCorrect": "Certo: só quem crê que Deus julga com justiça se incomoda com sua demora.",
+    "feedbackWrong": {
+      "false": "A queixa só faz sentido para quem crê que Deus julga com justiça."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Até quando, Jeová, clamarei eu, e tu não ouvirás? Grito a ti: Violência, e não salvarás.",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "id": "habacuque-pro-habacuque-habacuque-01-a-queixa-do-profeta-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Habacuque 1:2",
+    "learningObjective": "Reconhecer que Habacuque leva a Deus sua queixa diante da violência e da injustiça não julgadas.",
+    "evidence": [
+      "Habacuque 1:2"
+    ],
+    "type": "tap",
+    "question": "Em Habacuque 1:2, toque a palavra que falta em \"Até quando, Jeová, clamarei eu, e tu não ouvirás? ___ a ti: Violência, e não salvarás.\"?",
+    "prompt": "Em Habacuque 1:2, toque a palavra que falta em \"Até quando, Jeová, clamarei eu, e tu não ouvirás? ___ a ti: Violência, e não salvarás.\"?",
+    "cue": "Em Habacuque 1:2, toque a palavra que falta em \"Até quando, Jeová, clamarei eu, e tu não ouvirás? ___ a ti: Violência, e não salvarás.\"?",
+    "feedbackCorrect": "Exato: é assim que o profeta nomeia a violência diante de Jeová.",
+    "feedbackWrong": {
+      "a": "\"Clamarei\" pertence à primeira frase do versículo, não a esta.",
+      "b": "\"Salvarás\" é o pedido final, não o verbo que abre esta frase."
+    },
+    "passageText": "Até quando, Jeová, clamarei eu, e tu não ouvirás? Grito a ti: Violência, e não salvarás.",
+    "template": "Até quando, Jeová, clamarei eu, e tu não ouvirás? ___ a ti: Violência, e não salvarás.",
+    "options": [
+      {
+        "id": "a",
+        "text": "clamarei"
+      },
+      {
+        "id": "b",
+        "text": "salvarás"
+      },
+      {
+        "id": "c",
+        "text": "Grito"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "id": "habacuque-pro-habacuque-habacuque-01-a-queixa-do-profeta-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Habacuque 1:2",
+    "learningObjective": "Reconhecer que Habacuque leva a Deus sua queixa diante da violência e da injustiça não julgadas.",
+    "evidence": [
+      "Habacuque 1:2"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de Habacuque 1:2?",
+    "prompt": "Qual leitura interpreta melhor o sentido de Habacuque 1:2?",
+    "cue": "Qual leitura interpreta melhor o sentido de Habacuque 1:2?",
+    "feedbackCorrect": "Certo: confrontar Deus em oração pressupõe confiança, não o contrário.",
+    "feedbackWrong": {
+      "a": "O clamor do profeta só existe porque ele crê que Deus se importa.",
+      "c": "Lamentar diante de Deus é ato de fé na aliança, não sua negação.",
+      "d": "O texto atribui a violência aos ímpios, não a Jeová."
+    },
+    "passageText": "Até quando, Jeová, clamarei eu, e tu não ouvirás? Grito a ti: Violência, e não salvarás.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O texto ensina que Deus é indiferente ao sofrimento humano."
+      },
+      {
+        "id": "b",
+        "text": "O profeta ousa confrontar Deus com a demora da justiça, sem deixar de confiar nele."
+      },
+      {
+        "id": "c",
+        "text": "A queixa de Habacuque revela descrença na aliança de Deus com Israel."
+      },
+      {
+        "id": "d",
+        "text": "O versículo apresenta a violência como algo que o próprio Deus provoca."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "id": "habacuque-pro-habacuque-habacuque-01-a-queixa-do-profeta-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Habacuque 1:2",
+    "learningObjective": "Reconhecer que Habacuque leva a Deus sua queixa diante da violência e da injustiça não julgadas.",
+    "evidence": [
+      "Habacuque 1:2"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Habacuque 1:2?",
+    "prompt": "Qual sequência revela o sentido de Habacuque 1:2?",
+    "cue": "Qual sequência revela o sentido de Habacuque 1:2?",
+    "feedbackCorrect": "Certo: a pergunta sobre o tempo abre o caminho para o clamor nomeado.",
+    "feedbackWrong": {
+      "b": "Essa oração depende da pergunta anterior para fazer sentido.",
+      "c": "Nomear a violência é o passo final da queixa, não o inicial."
+    },
+    "passageText": "Até quando, Jeová, clamarei eu, e tu não ouvirás? Grito a ti: Violência, e não salvarás.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Até quando, Jeová, clamarei eu"
+      },
+      {
+        "id": "b",
+        "text": "e tu não ouvirás?"
+      },
+      {
+        "id": "c",
+        "text": "Grito a ti: Violência, e não salvarás."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "id": "habacuque-pro-habacuque-habacuque-01-a-queixa-do-profeta-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Habacuque 1:2",
+    "learningObjective": "Reconhecer que Habacuque leva a Deus sua queixa diante da violência e da injustiça não julgadas.",
+    "evidence": [
+      "Habacuque 1:2"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Até quando, Jeová, clamarei eu, e tu não ouvirás? Grito a ti: ___, e não salvarás.\"",
+    "prompt": "Complete a frase: \"Até quando, Jeová, clamarei eu, e tu não ouvirás? Grito a ti: ___, e não salvarás.\"",
+    "cue": "Complete a frase: \"Até quando, Jeová, clamarei eu, e tu não ouvirás? Grito a ti: ___, e não salvarás.\"",
+    "feedbackCorrect": "Certo: é isso que o profeta nomeia diante de Jeová.",
+    "feedbackWrong": {
+      "a": "\"Clamarei\" descreve a ação do profeta, não o mal que ele denuncia.",
+      "b": "\"Ouvirás\" pertence à pergunta anterior, não a este grito."
+    },
+    "passageText": "Até quando, Jeová, clamarei eu, e tu não ouvirás? Grito a ti: Violência, e não salvarás.",
+    "template": "Até quando, Jeová, clamarei eu, e tu não ouvirás? Grito a ti: ___, e não salvarás.",
+    "options": [
+      {
+        "id": "a",
+        "text": "clamarei"
+      },
+      {
+        "id": "b",
+        "text": "ouvirás"
+      },
+      {
+        "id": "c",
+        "text": "Violência"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "id": "habacuque-pro-habacuque-habacuque-01-a-queixa-do-profeta-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Habacuque 1:2",
+    "learningObjective": "Reconhecer que Habacuque leva a Deus sua queixa diante da violência e da injustiça não julgadas.",
+    "evidence": [
+      "Habacuque 1:2"
+    ],
+    "type": "connect",
+    "question": "O que Habacuque 1:2 comunica que se liga a este contexto?",
+    "prompt": "O que Habacuque 1:2 comunica que se liga a este contexto?",
+    "cue": "O que Habacuque 1:2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: lamentar a Deus é já um ato de confiança nele.",
+    "feedbackWrong": {
+      "a": "Há esperança real por trás do clamor — por isso ele insiste em falar com Deus.",
+      "b": "O texto não nega a justiça de Deus; questiona sua demora em agir."
+    },
+    "passageText": "Até quando, Jeová, clamarei eu, e tu não ouvirás? Grito a ti: Violência, e não salvarás.",
+    "passageA": {
+      "ref": "Habacuque 1:2",
+      "text": "Até quando, Jeová, clamarei eu, e tu não ouvirás? Grito a ti: Violência, e não salvarás."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O livro termina em adoração, mas começa exatamente nesta pergunta honesta."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Reclamação sem esperança real"
+      },
+      {
+        "id": "b",
+        "text": "Deus ausente da justiça humana"
+      },
+      {
+        "id": "c",
+        "text": "Lamento como confiança em Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-01-a-queixa-do-profeta",
+    "id": "habacuque-pro-habacuque-habacuque-01-a-queixa-do-profeta-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Habacuque 2:4",
+    "learningObjective": "Compreender que Habacuque 2:4 contrasta a alma soberba com o justo que vive pela fé.",
+    "evidence": [
+      "Habacuque 2:4"
+    ],
+    "type": "true_false",
+    "question": "Em Habacuque 2:4, o justo viverá pela sua fé.",
+    "prompt": "Em Habacuque 2:4, o justo viverá pela sua fé.",
+    "cue": "Em Habacuque 2:4, o justo viverá pela sua fé.",
+    "feedbackCorrect": "Certo: é exatamente o que o versículo declara sobre o justo.",
+    "feedbackWrong": {
+      "false": "Releia o versículo: é isso mesmo que ele declara sobre o justo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Eis que a sua alma está orgulhosa, não é reta nele; mas o justo viverá pela sua fé.",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "id": "habacuque-sem-habacuque-habacuque-02-o-justo-pela-sua-fe-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Habacuque 2:4",
+    "learningObjective": "Compreender que Habacuque 2:4 contrasta a alma soberba com o justo que vive pela fé.",
+    "evidence": [
+      "Habacuque 2:4"
+    ],
+    "type": "tap",
+    "question": "Em Habacuque 2:4, toque a palavra que falta em \"Eis que a sua ___ está orgulhosa, não é reta nele; mas o justo viverá pela sua fé.\"?",
+    "prompt": "Em Habacuque 2:4, toque a palavra que falta em \"Eis que a sua ___ está orgulhosa, não é reta nele; mas o justo viverá pela sua fé.\"?",
+    "cue": "Em Habacuque 2:4, toque a palavra que falta em \"Eis que a sua ___ está orgulhosa, não é reta nele; mas o justo viverá pela sua fé.\"?",
+    "feedbackCorrect": "Exato: é a alma orgulhosa que o texto descreve.",
+    "feedbackWrong": {
+      "a": "\"Está\" é o verbo, não o que se orgulha.",
+      "b": "\"Reta\" descreve o que essa alma não é."
+    },
+    "passageText": "Eis que a sua alma está orgulhosa, não é reta nele; mas o justo viverá pela sua fé.",
+    "template": "Eis que a sua ___ está orgulhosa, não é reta nele; mas o justo viverá pela sua fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "está"
+      },
+      {
+        "id": "b",
+        "text": "reta"
+      },
+      {
+        "id": "c",
+        "text": "alma"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "id": "habacuque-sem-habacuque-habacuque-02-o-justo-pela-sua-fe-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Habacuque 2:4",
+    "learningObjective": "Compreender que Habacuque 2:4 contrasta a alma soberba com o justo que vive pela fé.",
+    "evidence": [
+      "Habacuque 2:4"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelo texto em Habacuque 2:4?",
+    "prompt": "Qual afirmação é feita diretamente pelo texto em Habacuque 2:4?",
+    "cue": "Qual afirmação é feita diretamente pelo texto em Habacuque 2:4?",
+    "feedbackCorrect": "Certo: o texto afirma isso diretamente sobre o justo.",
+    "feedbackWrong": {
+      "a": "O texto diz o oposto: a alma orgulhosa \"não é reta\".",
+      "c": "É exatamente a fé que sustenta a vida do justo, segundo o texto.",
+      "d": "O versículo não trata de condenar a espera, e sim de como viver nela."
+    },
+    "passageText": "Eis que a sua alma está orgulhosa, não é reta nele; mas o justo viverá pela sua fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A alma orgulhosa é aprovada por Deus neste versículo."
+      },
+      {
+        "id": "b",
+        "text": "mas o justo viverá pela sua fé"
+      },
+      {
+        "id": "c",
+        "text": "A fé é dispensável para quem já é considerado justo."
+      },
+      {
+        "id": "d",
+        "text": "O texto condena a espera pela promessa de Deus."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "id": "habacuque-sem-habacuque-habacuque-02-o-justo-pela-sua-fe-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Habacuque 2:4",
+    "learningObjective": "Compreender que Habacuque 2:4 contrasta a alma soberba com o justo que vive pela fé.",
+    "evidence": [
+      "Habacuque 2:4"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Habacuque 2:4?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Habacuque 2:4?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Habacuque 2:4?",
+    "feedbackCorrect": "Certo: o texto descreve primeiro a alma soberba para depois contrastá-la com o justo.",
+    "feedbackWrong": {
+      "b": "Esse julgamento sobre a alma vem logo depois de ela ser descrita.",
+      "c": "O contraste com o justo fecha o versículo, não o abre."
+    },
+    "passageText": "Eis que a sua alma está orgulhosa, não é reta nele; mas o justo viverá pela sua fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Eis que a sua alma está orgulhosa"
+      },
+      {
+        "id": "b",
+        "text": "não é reta nele"
+      },
+      {
+        "id": "c",
+        "text": "mas o justo viverá pela sua fé"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "id": "habacuque-sem-habacuque-habacuque-02-o-justo-pela-sua-fe-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Habacuque 2:4",
+    "learningObjective": "Compreender que Habacuque 2:4 contrasta a alma soberba com o justo que vive pela fé.",
+    "evidence": [
+      "Habacuque 2:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Eis que a sua alma está ___, não é reta nele; mas o justo viverá pela sua fé.\"",
+    "prompt": "Complete a frase: \"Eis que a sua alma está ___, não é reta nele; mas o justo viverá pela sua fé.\"",
+    "cue": "Complete a frase: \"Eis que a sua alma está ___, não é reta nele; mas o justo viverá pela sua fé.\"",
+    "feedbackCorrect": "Certo: é esse o estado da alma descrita no início do versículo.",
+    "feedbackWrong": {
+      "a": "\"Reta\" é justamente o que essa alma não é.",
+      "b": "\"Justo\" descreve quem vive pela fé, não a alma soberba."
+    },
+    "passageText": "Eis que a sua alma está orgulhosa, não é reta nele; mas o justo viverá pela sua fé.",
+    "template": "Eis que a sua alma está ___, não é reta nele; mas o justo viverá pela sua fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "reta"
+      },
+      {
+        "id": "b",
+        "text": "justo"
+      },
+      {
+        "id": "c",
+        "text": "orgulhosa"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "id": "habacuque-sem-habacuque-habacuque-02-o-justo-pela-sua-fe-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Habacuque 2:4",
+    "learningObjective": "Compreender que Habacuque 2:4 contrasta a alma soberba com o justo que vive pela fé.",
+    "evidence": [
+      "Habacuque 2:4"
+    ],
+    "type": "connect",
+    "question": "O que Habacuque 2:4 comunica que se liga a este contexto?",
+    "prompt": "O que Habacuque 2:4 comunica que se liga a este contexto?",
+    "cue": "O que Habacuque 2:4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: é a fé, não o mérito, que sustenta o justo.",
+    "feedbackWrong": {
+      "a": "O texto diz o oposto: a alma orgulhosa \"não é reta\".",
+      "b": "O versículo atribui a vida do justo à fé, não ao mérito próprio."
+    },
+    "passageText": "Eis que a sua alma está orgulhosa, não é reta nele; mas o justo viverá pela sua fé.",
+    "passageA": {
+      "ref": "Habacuque 2:4",
+      "text": "Eis que a sua alma está orgulhosa, não é reta nele; mas o justo viverá pela sua fé."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A fé sustenta o justo enquanto ele espera a promessa de Deus se cumprir."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Orgulho que salva a alma"
+      },
+      {
+        "id": "b",
+        "text": "Justiça conquistada por mérito próprio"
+      },
+      {
+        "id": "c",
+        "text": "Fé que sustenta o justo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "id": "habacuque-sem-habacuque-habacuque-02-o-justo-pela-sua-fe-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Habacuque 2:4",
+    "learningObjective": "Compreender que Habacuque 2:4 contrasta a alma soberba com o justo que vive pela fé.",
+    "evidence": [
+      "Habacuque 2:4"
+    ],
+    "type": "true_false",
+    "question": "Segundo Habacuque 2:4, a alma orgulhosa é chamada de justa por Deus.",
+    "prompt": "Segundo Habacuque 2:4, a alma orgulhosa é chamada de justa por Deus.",
+    "cue": "Segundo Habacuque 2:4, a alma orgulhosa é chamada de justa por Deus.",
+    "feedbackCorrect": "Certo: o texto separa claramente a alma soberba do justo que vive pela fé.",
+    "feedbackWrong": {
+      "true": "O texto contrasta as duas: a alma orgulhosa \"não é reta\", diferente do justo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Eis que a sua alma está orgulhosa, não é reta nele; mas o justo viverá pela sua fé.",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "id": "habacuque-cam-habacuque-habacuque-02-o-justo-pela-sua-fe-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Habacuque 2:4",
+    "learningObjective": "Compreender que Habacuque 2:4 contrasta a alma soberba com o justo que vive pela fé.",
+    "evidence": [
+      "Habacuque 2:4"
+    ],
+    "type": "tap",
+    "question": "Em Habacuque 2:4, toque a palavra que falta em \"Eis que a sua alma está orgulhosa, não é ___ nele; mas o justo viverá pela sua fé.\"?",
+    "prompt": "Em Habacuque 2:4, toque a palavra que falta em \"Eis que a sua alma está orgulhosa, não é ___ nele; mas o justo viverá pela sua fé.\"?",
+    "cue": "Em Habacuque 2:4, toque a palavra que falta em \"Eis que a sua alma está orgulhosa, não é ___ nele; mas o justo viverá pela sua fé.\"?",
+    "feedbackCorrect": "Exato: é isso que falta à alma orgulhosa, segundo o texto.",
+    "feedbackWrong": {
+      "a": "\"Alma\" já apareceu antes, no início do versículo.",
+      "b": "\"Justo\" é quem vive pela fé, e não o julgamento sobre a alma soberba."
+    },
+    "passageText": "Eis que a sua alma está orgulhosa, não é reta nele; mas o justo viverá pela sua fé.",
+    "template": "Eis que a sua alma está orgulhosa, não é ___ nele; mas o justo viverá pela sua fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "alma"
+      },
+      {
+        "id": "b",
+        "text": "justo"
+      },
+      {
+        "id": "c",
+        "text": "reta"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "id": "habacuque-cam-habacuque-habacuque-02-o-justo-pela-sua-fe-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Habacuque 2:4",
+    "learningObjective": "Compreender que Habacuque 2:4 contrasta a alma soberba com o justo que vive pela fé.",
+    "evidence": [
+      "Habacuque 2:4"
+    ],
+    "type": "choice",
+    "question": "Qual ideia melhor conecta Habacuque 2:4 ao contexto da missão?",
+    "prompt": "Qual ideia melhor conecta Habacuque 2:4 ao contexto da missão?",
+    "cue": "Qual ideia melhor conecta Habacuque 2:4 ao contexto da missão?",
+    "feedbackCorrect": "Certo: viver pela fé é o oposto de confiar na própria suficiência.",
+    "feedbackWrong": {
+      "a": "O texto atribui a vida do justo à fé, não ao esforço que a substitui.",
+      "b": "É justamente a alma soberba que o texto reprova, não aprova.",
+      "c": "Viver pela fé, no livro, se mostra em obediência concreta — as duas andam juntas."
+    },
+    "passageText": "Eis que a sua alma está orgulhosa, não é reta nele; mas o justo viverá pela sua fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A mensagem central é que o esforço humano substitui a fé."
+      },
+      {
+        "id": "b",
+        "text": "O texto ensina que a soberba também agrada a Deus."
+      },
+      {
+        "id": "c",
+        "text": "A passagem separa fé e obediência como coisas sem relação."
+      },
+      {
+        "id": "d",
+        "text": "A vida do justo depende de confiança contínua em Deus, não de autossuficiência."
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "id": "habacuque-cam-habacuque-habacuque-02-o-justo-pela-sua-fe-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Habacuque 2:4",
+    "learningObjective": "Compreender que Habacuque 2:4 contrasta a alma soberba com o justo que vive pela fé.",
+    "evidence": [
+      "Habacuque 2:4"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Habacuque 2:4?",
+    "prompt": "Como se encadeiam os eventos de Habacuque 2:4?",
+    "cue": "Como se encadeiam os eventos de Habacuque 2:4?",
+    "feedbackCorrect": "Certo: a descrição da alma soberba precede o veredito sobre ela.",
+    "feedbackWrong": {
+      "b": "Esse veredito depende da alma já ter sido apresentada antes.",
+      "c": "O contraste com o justo é a conclusão, não o começo do versículo."
+    },
+    "passageText": "Eis que a sua alma está orgulhosa, não é reta nele; mas o justo viverá pela sua fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Eis que a sua alma está orgulhosa"
+      },
+      {
+        "id": "b",
+        "text": "não é reta nele"
+      },
+      {
+        "id": "c",
+        "text": "mas o justo viverá pela sua fé"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "id": "habacuque-cam-habacuque-habacuque-02-o-justo-pela-sua-fe-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Habacuque 2:4",
+    "learningObjective": "Compreender que Habacuque 2:4 contrasta a alma soberba com o justo que vive pela fé.",
+    "evidence": [
+      "Habacuque 2:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Eis que a sua alma está orgulhosa, não é reta nele; mas o justo ___ pela sua fé.\"",
+    "prompt": "Complete a frase: \"Eis que a sua alma está orgulhosa, não é reta nele; mas o justo ___ pela sua fé.\"",
+    "cue": "Complete a frase: \"Eis que a sua alma está orgulhosa, não é reta nele; mas o justo ___ pela sua fé.\"",
+    "feedbackCorrect": "Certo: é isso que a fé garante ao justo, segundo o texto.",
+    "feedbackWrong": {
+      "a": "\"Justo\" já está escrito antes da lacuna nesta frase.",
+      "b": "\"Fé\" fecha a frase; o verbo que falta vem antes dela."
+    },
+    "passageText": "Eis que a sua alma está orgulhosa, não é reta nele; mas o justo viverá pela sua fé.",
+    "template": "Eis que a sua alma está orgulhosa, não é reta nele; mas o justo ___ pela sua fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "justo"
+      },
+      {
+        "id": "b",
+        "text": "fé"
+      },
+      {
+        "id": "c",
+        "text": "viverá"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "id": "habacuque-cam-habacuque-habacuque-02-o-justo-pela-sua-fe-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Habacuque 2:4",
+    "learningObjective": "Compreender que Habacuque 2:4 contrasta a alma soberba com o justo que vive pela fé.",
+    "evidence": [
+      "Habacuque 2:4"
+    ],
+    "type": "connect",
+    "question": "O que Habacuque 2:4 comunica que se liga a este contexto?",
+    "prompt": "O que Habacuque 2:4 comunica que se liga a este contexto?",
+    "cue": "O que Habacuque 2:4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o versículo opõe a alma soberba ao justo que vive pela fé.",
+    "feedbackWrong": {
+      "a": "A fé descrita aqui sustenta uma vida inteira, não um sentimento passageiro.",
+      "b": "É justamente pela fé que o justo vive, segundo o próprio texto."
+    },
+    "passageText": "Eis que a sua alma está orgulhosa, não é reta nele; mas o justo viverá pela sua fé.",
+    "passageA": {
+      "ref": "Habacuque 2:4",
+      "text": "Eis que a sua alma está orgulhosa, não é reta nele; mas o justo viverá pela sua fé."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Viver pela fé é diferente de confiar na própria força ou orgulho."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fé como sentimento passageiro"
+      },
+      {
+        "id": "b",
+        "text": "Justo que dispensa a fé"
+      },
+      {
+        "id": "c",
+        "text": "Contraste entre orgulho e fé"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "id": "habacuque-cam-habacuque-habacuque-02-o-justo-pela-sua-fe-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Habacuque 2:4",
+    "learningObjective": "Compreender que Habacuque 2:4 contrasta a alma soberba com o justo que vive pela fé.",
+    "evidence": [
+      "Habacuque 2:4"
+    ],
+    "type": "true_false",
+    "question": "A passagem sustenta que a fé perseverante, e não a autossuficiência, é o que garante vida ao justo.",
+    "prompt": "A passagem sustenta que a fé perseverante, e não a autossuficiência, é o que garante vida ao justo.",
+    "cue": "A passagem sustenta que a fé perseverante, e não a autossuficiência, é o que garante vida ao justo.",
+    "feedbackCorrect": "Certo: é a fé perseverante, não a autossuficiência, que garante vida ao justo.",
+    "feedbackWrong": {
+      "false": "O próprio contraste do versículo sustenta essa leitura: fé, não autossuficiência."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Eis que a sua alma está orgulhosa, não é reta nele; mas o justo viverá pela sua fé.",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "id": "habacuque-pro-habacuque-habacuque-02-o-justo-pela-sua-fe-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Habacuque 2:4",
+    "learningObjective": "Compreender que Habacuque 2:4 contrasta a alma soberba com o justo que vive pela fé.",
+    "evidence": [
+      "Habacuque 2:4"
+    ],
+    "type": "tap",
+    "question": "Em Habacuque 2:4, toque a palavra que falta em \"Eis que a sua alma está orgulhosa, não é reta nele; mas o ___ viverá pela sua fé.\"?",
+    "prompt": "Em Habacuque 2:4, toque a palavra que falta em \"Eis que a sua alma está orgulhosa, não é reta nele; mas o ___ viverá pela sua fé.\"?",
+    "cue": "Em Habacuque 2:4, toque a palavra que falta em \"Eis que a sua alma está orgulhosa, não é reta nele; mas o ___ viverá pela sua fé.\"?",
+    "feedbackCorrect": "Exato: é o justo, em contraste com a alma soberba, quem vive pela fé.",
+    "feedbackWrong": {
+      "a": "\"Reta\" descreve a alma soberba, não quem vive pela fé.",
+      "b": "\"Alma\" já apareceu antes, referindo-se a quem é orgulhoso."
+    },
+    "passageText": "Eis que a sua alma está orgulhosa, não é reta nele; mas o justo viverá pela sua fé.",
+    "template": "Eis que a sua alma está orgulhosa, não é reta nele; mas o ___ viverá pela sua fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "reta"
+      },
+      {
+        "id": "b",
+        "text": "alma"
+      },
+      {
+        "id": "c",
+        "text": "justo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "id": "habacuque-pro-habacuque-habacuque-02-o-justo-pela-sua-fe-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Habacuque 2:4",
+    "learningObjective": "Compreender que Habacuque 2:4 contrasta a alma soberba com o justo que vive pela fé.",
+    "evidence": [
+      "Habacuque 2:4"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de Habacuque 2:4?",
+    "prompt": "Qual leitura interpreta melhor o sentido de Habacuque 2:4?",
+    "cue": "Qual leitura interpreta melhor o sentido de Habacuque 2:4?",
+    "feedbackCorrect": "Certo: é a fé que sustenta o justo enquanto a visão ainda não se cumpre.",
+    "feedbackWrong": {
+      "a": "O texto atribui a vida do justo à fé, não a uma retidão que ele produz sozinho.",
+      "b": "A fé aqui sustenta uma vida inteira — tem, portanto, efeito prático central.",
+      "c": "O versículo os contrasta; um é reprovado, o outro vive pela fé."
+    },
+    "passageText": "Eis que a sua alma está orgulhosa, não é reta nele; mas o justo viverá pela sua fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A passagem ensina que a justificação vem da retidão moral autônoma."
+      },
+      {
+        "id": "b",
+        "text": "O sentido do texto é que a fé é só um sentimento sem efeito prático."
+      },
+      {
+        "id": "c",
+        "text": "A alma soberba e o justo aqui descrito seguem o mesmo caminho."
+      },
+      {
+        "id": "d",
+        "text": "A fé perseverante é o que distingue o justo diante da demora do juízo."
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "id": "habacuque-pro-habacuque-habacuque-02-o-justo-pela-sua-fe-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Habacuque 2:4",
+    "learningObjective": "Compreender que Habacuque 2:4 contrasta a alma soberba com o justo que vive pela fé.",
+    "evidence": [
+      "Habacuque 2:4"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Habacuque 2:4?",
+    "prompt": "Qual sequência revela o sentido de Habacuque 2:4?",
+    "cue": "Qual sequência revela o sentido de Habacuque 2:4?",
+    "feedbackCorrect": "Certo: a apresentação da alma soberba precede o contraste final com o justo.",
+    "feedbackWrong": {
+      "b": "Esse veredito só faz sentido depois de a alma ser apresentada.",
+      "c": "O contraste com o justo é o clímax do versículo, não sua abertura."
+    },
+    "passageText": "Eis que a sua alma está orgulhosa, não é reta nele; mas o justo viverá pela sua fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Eis que a sua alma está orgulhosa"
+      },
+      {
+        "id": "b",
+        "text": "não é reta nele"
+      },
+      {
+        "id": "c",
+        "text": "mas o justo viverá pela sua fé"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "id": "habacuque-pro-habacuque-habacuque-02-o-justo-pela-sua-fe-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Habacuque 2:4",
+    "learningObjective": "Compreender que Habacuque 2:4 contrasta a alma soberba com o justo que vive pela fé.",
+    "evidence": [
+      "Habacuque 2:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Eis que a sua alma está orgulhosa, não é reta nele; mas o justo viverá pela sua ___.\"",
+    "prompt": "Complete a frase: \"Eis que a sua alma está orgulhosa, não é reta nele; mas o justo viverá pela sua ___.\"",
+    "cue": "Complete a frase: \"Eis que a sua alma está orgulhosa, não é reta nele; mas o justo viverá pela sua ___.\"",
+    "feedbackCorrect": "Certo: é pela fé que o justo vive, segundo o texto.",
+    "feedbackWrong": {
+      "a": "\"Orgulhosa\" descreve a alma soberba, não o que sustenta o justo.",
+      "b": "\"Justo\" já aparece antes da lacuna nesta frase."
+    },
+    "passageText": "Eis que a sua alma está orgulhosa, não é reta nele; mas o justo viverá pela sua fé.",
+    "template": "Eis que a sua alma está orgulhosa, não é reta nele; mas o justo viverá pela sua ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "orgulhosa"
+      },
+      {
+        "id": "b",
+        "text": "justo"
+      },
+      {
+        "id": "c",
+        "text": "fé"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "id": "habacuque-pro-habacuque-habacuque-02-o-justo-pela-sua-fe-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Habacuque 2:4",
+    "learningObjective": "Compreender que Habacuque 2:4 contrasta a alma soberba com o justo que vive pela fé.",
+    "evidence": [
+      "Habacuque 2:4"
+    ],
+    "type": "connect",
+    "question": "O que Habacuque 2:4 comunica que se liga a este contexto?",
+    "prompt": "O que Habacuque 2:4 comunica que se liga a este contexto?",
+    "cue": "O que Habacuque 2:4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: é a fé perseverante que caracteriza o justo neste versículo.",
+    "feedbackWrong": {
+      "a": "No livro, a fé do justo se mostra em conduta concreta, não à parte dela.",
+      "b": "É exatamente na espera que a fé do justo se revela."
+    },
+    "passageText": "Eis que a sua alma está orgulhosa, não é reta nele; mas o justo viverá pela sua fé.",
+    "passageA": {
+      "ref": "Habacuque 2:4",
+      "text": "Eis que a sua alma está orgulhosa, não é reta nele; mas o justo viverá pela sua fé."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A fé que salva se mede pela perseverança, não por sentimentos passageiros."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fé sem relação com a ética"
+      },
+      {
+        "id": "b",
+        "text": "Justiça que ignora a espera"
+      },
+      {
+        "id": "c",
+        "text": "Perseverança da fé salvadora"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-02-o-justo-pela-sua-fe",
+    "id": "habacuque-pro-habacuque-habacuque-02-o-justo-pela-sua-fe-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Habacuque 3:17-18",
+    "learningObjective": "Aplicar a resposta de fé de Habacuque, que se alegra em Deus mesmo diante da escassez.",
+    "evidence": [
+      "Habacuque 3:17-18"
+    ],
+    "type": "true_false",
+    "question": "O texto afirma que, mesmo sem fruto nas vides, o profeta se alegrará em Jeová.",
+    "prompt": "O texto afirma que, mesmo sem fruto nas vides, o profeta se alegrará em Jeová.",
+    "cue": "O texto afirma que, mesmo sem fruto nas vides, o profeta se alegrará em Jeová.",
+    "feedbackCorrect": "Certo: é essa a decisão do profeta mesmo sem fruto nas vides.",
+    "feedbackWrong": {
+      "false": "Releia o texto: é isso mesmo que o profeta declara, apesar da escassez."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Pois, embora não floresça a figueira, nem haja fruto nas vides; embora falhe o produto da oliveira, e os campos não produzam mantimento; embora o rebanho seja exterminado do curral, e não haja gado nos presépios, contudo, eu me regozijarei em Jeová, exultarei no Deus da minha salvação.",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "id": "habacuque-sem-habacuque-habacuque-03-desafio-habacuque-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Habacuque 3:17-18",
+    "learningObjective": "Aplicar a resposta de fé de Habacuque, que se alegra em Deus mesmo diante da escassez.",
+    "evidence": [
+      "Habacuque 3:17-18"
+    ],
+    "type": "tap",
+    "question": "Em Habacuque 3:17-18, toque a palavra que falta em \"Pois, embora não floresça a ___, nem haja fruto nas vides.\"?",
+    "prompt": "Em Habacuque 3:17-18, toque a palavra que falta em \"Pois, embora não floresça a ___, nem haja fruto nas vides.\"?",
+    "cue": "Em Habacuque 3:17-18, toque a palavra que falta em \"Pois, embora não floresça a ___, nem haja fruto nas vides.\"?",
+    "feedbackCorrect": "Exato: é a figueira sem flor que abre a lista de perdas do profeta.",
+    "feedbackWrong": {
+      "a": "\"Vides\" aparece depois, referindo-se à falta de fruto nelas.",
+      "b": "\"Fruto\" é o que falta nas vides, não a árvore citada primeiro."
+    },
+    "passageText": "Pois, embora não floresça a figueira, nem haja fruto nas vides; embora falhe o produto da oliveira, e os campos não produzam mantimento; embora o rebanho seja exterminado do curral, e não haja gado nos presépios, contudo, eu me regozijarei em Jeová, exultarei no Deus da minha salvação.",
+    "template": "Pois, embora não floresça a ___, nem haja fruto nas vides.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vides"
+      },
+      {
+        "id": "b",
+        "text": "fruto"
+      },
+      {
+        "id": "c",
+        "text": "figueira"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "id": "habacuque-sem-habacuque-habacuque-03-desafio-habacuque-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Habacuque 3:17-18",
+    "learningObjective": "Aplicar a resposta de fé de Habacuque, que se alegra em Deus mesmo diante da escassez.",
+    "evidence": [
+      "Habacuque 3:17-18"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelo texto em Habacuque 3:17-18?",
+    "prompt": "Qual afirmação é feita diretamente pelo texto em Habacuque 3:17-18?",
+    "cue": "Qual afirmação é feita diretamente pelo texto em Habacuque 3:17-18?",
+    "feedbackCorrect": "Certo: é exatamente essa a declaração do profeta, apesar da falta de tudo.",
+    "feedbackWrong": {
+      "a": "O texto não promete fartura — descreve justamente a falta dela.",
+      "c": "É o oposto: o profeta se alegra em Deus mesmo na escassez.",
+      "d": "A alegria descrita não depende de nenhuma colheita específica."
+    },
+    "passageText": "Pois, embora não floresça a figueira, nem haja fruto nas vides; embora falhe o produto da oliveira, e os campos não produzam mantimento; embora o rebanho seja exterminado do curral, e não haja gado nos presépios, contudo, eu me regozijarei em Jeová, exultarei no Deus da minha salvação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O texto promete fartura imediata para quem tem fé."
+      },
+      {
+        "id": "b",
+        "text": "Mesmo sem fruto nas vides e sem gado no curral, o profeta se alegrará em Jeová."
+      },
+      {
+        "id": "c",
+        "text": "A passagem afirma que a escassez prova a ausência de Deus."
+      },
+      {
+        "id": "d",
+        "text": "O profeta condiciona sua alegria à colheita da oliveira."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "id": "habacuque-sem-habacuque-habacuque-03-desafio-habacuque-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Habacuque 3:17-18",
+    "learningObjective": "Aplicar a resposta de fé de Habacuque, que se alegra em Deus mesmo diante da escassez.",
+    "evidence": [
+      "Habacuque 3:17-18"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Habacuque 3:17-18?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Habacuque 3:17-18?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Habacuque 3:17-18?",
+    "feedbackCorrect": "Certo: as perdas são listadas antes da declaração final de alegria.",
+    "feedbackWrong": {
+      "b": "Essa perda vem depois da figueira e das vides, não antes.",
+      "c": "A alegria em Jeová é a resposta final, depois de listadas as perdas."
+    },
+    "passageText": "Pois, embora não floresça a figueira, nem haja fruto nas vides; embora falhe o produto da oliveira, e os campos não produzam mantimento; embora o rebanho seja exterminado do curral, e não haja gado nos presépios, contudo, eu me regozijarei em Jeová, exultarei no Deus da minha salvação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Embora não floresça a figueira, nem haja fruto nas vides"
+      },
+      {
+        "id": "b",
+        "text": "embora o rebanho seja exterminado do curral, e não haja gado nos presépios"
+      },
+      {
+        "id": "c",
+        "text": "contudo, eu me regozijarei em Jeová, exultarei no Deus da minha salvação"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "id": "habacuque-sem-habacuque-habacuque-03-desafio-habacuque-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Habacuque 3:17-18",
+    "learningObjective": "Aplicar a resposta de fé de Habacuque, que se alegra em Deus mesmo diante da escassez.",
+    "evidence": [
+      "Habacuque 3:17-18"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Contudo, eu me ___ em Jeová, exultarei no Deus da minha salvação.\"",
+    "prompt": "Complete a frase: \"Contudo, eu me ___ em Jeová, exultarei no Deus da minha salvação.\"",
+    "cue": "Complete a frase: \"Contudo, eu me ___ em Jeová, exultarei no Deus da minha salvação.\"",
+    "feedbackCorrect": "Certo: é essa a decisão do profeta apesar da escassez.",
+    "feedbackWrong": {
+      "a": "\"Salvação\" é o motivo da alegria, não o verbo que abre a frase.",
+      "b": "\"Exultarei\" vem na segunda parte da frase, não na lacuna inicial."
+    },
+    "passageText": "Pois, embora não floresça a figueira, nem haja fruto nas vides; embora falhe o produto da oliveira, e os campos não produzam mantimento; embora o rebanho seja exterminado do curral, e não haja gado nos presépios, contudo, eu me regozijarei em Jeová, exultarei no Deus da minha salvação.",
+    "template": "Contudo, eu me ___ em Jeová, exultarei no Deus da minha salvação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "salvação"
+      },
+      {
+        "id": "b",
+        "text": "exultarei"
+      },
+      {
+        "id": "c",
+        "text": "regozijarei"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "id": "habacuque-sem-habacuque-habacuque-03-desafio-habacuque-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Habacuque 3:17-18",
+    "learningObjective": "Aplicar a resposta de fé de Habacuque, que se alegra em Deus mesmo diante da escassez.",
+    "evidence": [
+      "Habacuque 3:17-18"
+    ],
+    "type": "connect",
+    "question": "O que Habacuque 3:17-18 comunica que se liga a este contexto?",
+    "prompt": "O que Habacuque 3:17-18 comunica que se liga a este contexto?",
+    "cue": "O que Habacuque 3:17-18 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a alegria do profeta não depende da fartura material.",
+    "feedbackWrong": {
+      "a": "O texto não liga fé à prosperidade material — mostra justamente o contrário.",
+      "b": "A alegria descrita continua mesmo sem nenhuma colheita."
+    },
+    "passageText": "Pois, embora não floresça a figueira, nem haja fruto nas vides; embora falhe o produto da oliveira, e os campos não produzam mantimento; embora o rebanho seja exterminado do curral, e não haja gado nos presépios, contudo, eu me regozijarei em Jeová, exultarei no Deus da minha salvação.",
+    "passageA": {
+      "ref": "Habacuque 3:17-18",
+      "text": "Pois, embora não floresça a figueira, nem haja fruto nas vides; embora falhe o produto da oliveira, e os campos não produzam mantimento; embora o rebanho seja exterminado do curral, e não haja gado nos presépios, contudo, eu me regozijarei em Jeová, exultarei no Deus da minha salvação."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Mesmo sem colheita ou rebanho, o profeta escolhe se alegrar em Jeová."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Prosperidade como prova de fé"
+      },
+      {
+        "id": "b",
+        "text": "Alegria condicionada à colheita"
+      },
+      {
+        "id": "c",
+        "text": "Alegria em Deus apesar da escassez"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "id": "habacuque-sem-habacuque-habacuque-03-desafio-habacuque-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Habacuque 3:17-18",
+    "learningObjective": "Aplicar a resposta de fé de Habacuque, que se alegra em Deus mesmo diante da escassez.",
+    "evidence": [
+      "Habacuque 3:17-18"
+    ],
+    "type": "true_false",
+    "question": "Segundo o texto, a alegria do profeta depende da fartura dos celeiros e do gado.",
+    "prompt": "Segundo o texto, a alegria do profeta depende da fartura dos celeiros e do gado.",
+    "cue": "Segundo o texto, a alegria do profeta depende da fartura dos celeiros e do gado.",
+    "feedbackCorrect": "Certo: o texto afirma o contrário — a alegria persiste mesmo sem fartura.",
+    "feedbackWrong": {
+      "true": "O texto diz o oposto: o profeta se alegra mesmo sem celeiros cheios ou gado."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Pois, embora não floresça a figueira, nem haja fruto nas vides; embora falhe o produto da oliveira, e os campos não produzam mantimento; embora o rebanho seja exterminado do curral, e não haja gado nos presépios, contudo, eu me regozijarei em Jeová, exultarei no Deus da minha salvação.",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "id": "habacuque-cam-habacuque-habacuque-03-desafio-habacuque-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Habacuque 3:17-18",
+    "learningObjective": "Aplicar a resposta de fé de Habacuque, que se alegra em Deus mesmo diante da escassez.",
+    "evidence": [
+      "Habacuque 3:17-18"
+    ],
+    "type": "tap",
+    "question": "Em Habacuque 3:17-18, toque a palavra que falta em \"Embora falhe o produto da ___, e os campos não produzam mantimento.\"?",
+    "prompt": "Em Habacuque 3:17-18, toque a palavra que falta em \"Embora falhe o produto da ___, e os campos não produzam mantimento.\"?",
+    "cue": "Em Habacuque 3:17-18, toque a palavra que falta em \"Embora falhe o produto da ___, e os campos não produzam mantimento.\"?",
+    "feedbackCorrect": "Exato: é a falta do produto da oliveira que o texto cita aqui.",
+    "feedbackWrong": {
+      "a": "\"Campos\" aparece depois, ligado à falta de mantimento.",
+      "b": "\"Mantimento\" é o que falta nos campos, não a árvore citada."
+    },
+    "passageText": "Pois, embora não floresça a figueira, nem haja fruto nas vides; embora falhe o produto da oliveira, e os campos não produzam mantimento; embora o rebanho seja exterminado do curral, e não haja gado nos presépios, contudo, eu me regozijarei em Jeová, exultarei no Deus da minha salvação.",
+    "template": "Embora falhe o produto da ___, e os campos não produzam mantimento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "campos"
+      },
+      {
+        "id": "b",
+        "text": "mantimento"
+      },
+      {
+        "id": "c",
+        "text": "oliveira"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "id": "habacuque-cam-habacuque-habacuque-03-desafio-habacuque-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Habacuque 3:17-18",
+    "learningObjective": "Aplicar a resposta de fé de Habacuque, que se alegra em Deus mesmo diante da escassez.",
+    "evidence": [
+      "Habacuque 3:17-18"
+    ],
+    "type": "choice",
+    "question": "Qual ideia melhor conecta Habacuque 3:17-18 ao contexto da missão?",
+    "prompt": "Qual ideia melhor conecta Habacuque 3:17-18 ao contexto da missão?",
+    "cue": "Qual ideia melhor conecta Habacuque 3:17-18 ao contexto da missão?",
+    "feedbackCorrect": "Certo: a alegria do profeta convive com a incerteza sobre o amanhã.",
+    "feedbackWrong": {
+      "a": "O texto descreve justamente a falta de prosperidade material.",
+      "b": "O livro começa com a dúvida honesta de Habacuque — ela não desaparece, é respondida pela fé.",
+      "c": "A fé aqui responde exatamente à realidade concreta da escassez."
+    },
+    "passageText": "Pois, embora não floresça a figueira, nem haja fruto nas vides; embora falhe o produto da oliveira, e os campos não produzam mantimento; embora o rebanho seja exterminado do curral, e não haja gado nos presépios, contudo, eu me regozijarei em Jeová, exultarei no Deus da minha salvação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A mensagem central é que a fé garante prosperidade material imediata."
+      },
+      {
+        "id": "b",
+        "text": "O texto ensina que a alegria genuína exige a ausência de qualquer dúvida."
+      },
+      {
+        "id": "c",
+        "text": "A passagem separa a fé da vida prática e das circunstâncias reais."
+      },
+      {
+        "id": "d",
+        "text": "A fé viva se alegra em Deus mesmo quando a dúvida honesta permanece sobre o futuro."
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "id": "habacuque-cam-habacuque-habacuque-03-desafio-habacuque-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Habacuque 3:17-18",
+    "learningObjective": "Aplicar a resposta de fé de Habacuque, que se alegra em Deus mesmo diante da escassez.",
+    "evidence": [
+      "Habacuque 3:17-18"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Habacuque 3:17-18?",
+    "prompt": "Como se encadeiam os eventos de Habacuque 3:17-18?",
+    "cue": "Como se encadeiam os eventos de Habacuque 3:17-18?",
+    "feedbackCorrect": "Certo: a lista de perdas conduz à declaração final de alegria em Deus.",
+    "feedbackWrong": {
+      "b": "A perda do rebanho é citada depois da figueira e das vides.",
+      "c": "A alegria só é declarada depois de todas as perdas serem listadas."
+    },
+    "passageText": "Pois, embora não floresça a figueira, nem haja fruto nas vides; embora falhe o produto da oliveira, e os campos não produzam mantimento; embora o rebanho seja exterminado do curral, e não haja gado nos presépios, contudo, eu me regozijarei em Jeová, exultarei no Deus da minha salvação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Embora não floresça a figueira, nem haja fruto nas vides"
+      },
+      {
+        "id": "b",
+        "text": "embora o rebanho seja exterminado do curral, e não haja gado nos presépios"
+      },
+      {
+        "id": "c",
+        "text": "contudo, eu me regozijarei em Jeová, exultarei no Deus da minha salvação"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "id": "habacuque-cam-habacuque-habacuque-03-desafio-habacuque-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Habacuque 3:17-18",
+    "learningObjective": "Aplicar a resposta de fé de Habacuque, que se alegra em Deus mesmo diante da escassez.",
+    "evidence": [
+      "Habacuque 3:17-18"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Embora o ___ seja exterminado do curral, e não haja gado nos presépios.\"",
+    "prompt": "Complete a frase: \"Embora o ___ seja exterminado do curral, e não haja gado nos presépios.\"",
+    "cue": "Complete a frase: \"Embora o ___ seja exterminado do curral, e não haja gado nos presépios.\"",
+    "feedbackCorrect": "Certo: é o rebanho exterminado do curral que o texto descreve.",
+    "feedbackWrong": {
+      "a": "\"Curral\" é o lugar de onde o rebanho é exterminado, não o sujeito da frase.",
+      "b": "\"Gado\" aparece na segunda parte da frase, referindo-se aos presépios."
+    },
+    "passageText": "Pois, embora não floresça a figueira, nem haja fruto nas vides; embora falhe o produto da oliveira, e os campos não produzam mantimento; embora o rebanho seja exterminado do curral, e não haja gado nos presépios, contudo, eu me regozijarei em Jeová, exultarei no Deus da minha salvação.",
+    "template": "Embora o ___ seja exterminado do curral, e não haja gado nos presépios.",
+    "options": [
+      {
+        "id": "a",
+        "text": "curral"
+      },
+      {
+        "id": "b",
+        "text": "gado"
+      },
+      {
+        "id": "c",
+        "text": "rebanho"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "id": "habacuque-cam-habacuque-habacuque-03-desafio-habacuque-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Habacuque 3:17-18",
+    "learningObjective": "Aplicar a resposta de fé de Habacuque, que se alegra em Deus mesmo diante da escassez.",
+    "evidence": [
+      "Habacuque 3:17-18"
+    ],
+    "type": "connect",
+    "question": "O que Habacuque 3:17-18 comunica que se liga a este contexto?",
+    "prompt": "O que Habacuque 3:17-18 comunica que se liga a este contexto?",
+    "cue": "O que Habacuque 3:17-18 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a fé do profeta se sustenta mesmo sem provisão visível.",
+    "feedbackWrong": {
+      "a": "O profeta se alegra sem ter recebido nenhuma explicação para a escassez.",
+      "b": "É justamente a independência das circunstâncias que marca essa alegria."
+    },
+    "passageText": "Pois, embora não floresça a figueira, nem haja fruto nas vides; embora falhe o produto da oliveira, e os campos não produzam mantimento; embora o rebanho seja exterminado do curral, e não haja gado nos presépios, contudo, eu me regozijarei em Jeová, exultarei no Deus da minha salvação.",
+    "passageA": {
+      "ref": "Habacuque 3:17-18",
+      "text": "Pois, embora não floresça a figueira, nem haja fruto nas vides; embora falhe o produto da oliveira, e os campos não produzam mantimento; embora o rebanho seja exterminado do curral, e não haja gado nos presépios, contudo, eu me regozijarei em Jeová, exultarei no Deus da minha salvação."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A fé genuína não depende de ver primeiro os resultados favoráveis."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fé que exige explicações completas"
+      },
+      {
+        "id": "b",
+        "text": "Alegria dependente de circunstâncias"
+      },
+      {
+        "id": "c",
+        "text": "Fé que resiste à ausência de provisão"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "id": "habacuque-cam-habacuque-habacuque-03-desafio-habacuque-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Habacuque 3:17-18",
+    "learningObjective": "Aplicar a resposta de fé de Habacuque, que se alegra em Deus mesmo diante da escassez.",
+    "evidence": [
+      "Habacuque 3:17-18"
+    ],
+    "type": "true_false",
+    "question": "A passagem sustenta que a alegria em Deus não depende das circunstâncias materiais, mas da relação de fé com ele.",
+    "prompt": "A passagem sustenta que a alegria em Deus não depende das circunstâncias materiais, mas da relação de fé com ele.",
+    "cue": "A passagem sustenta que a alegria em Deus não depende das circunstâncias materiais, mas da relação de fé com ele.",
+    "feedbackCorrect": "Certo: a alegria descrita nasce da relação com Deus, não das circunstâncias.",
+    "feedbackWrong": {
+      "false": "O texto liga a alegria a Jeová mesmo quando as circunstâncias são adversas."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Pois, embora não floresça a figueira, nem haja fruto nas vides; embora falhe o produto da oliveira, e os campos não produzam mantimento; embora o rebanho seja exterminado do curral, e não haja gado nos presépios, contudo, eu me regozijarei em Jeová, exultarei no Deus da minha salvação.",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "id": "habacuque-pro-habacuque-habacuque-03-desafio-habacuque-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Habacuque 3:17-18",
+    "learningObjective": "Aplicar a resposta de fé de Habacuque, que se alegra em Deus mesmo diante da escassez.",
+    "evidence": [
+      "Habacuque 3:17-18"
+    ],
+    "type": "tap",
+    "question": "Em Habacuque 3:17-18, toque a palavra que falta em \"Contudo, eu me regozijarei em Jeová, exultarei no Deus da minha ___.\"?",
+    "prompt": "Em Habacuque 3:17-18, toque a palavra que falta em \"Contudo, eu me regozijarei em Jeová, exultarei no Deus da minha ___.\"?",
+    "cue": "Em Habacuque 3:17-18, toque a palavra que falta em \"Contudo, eu me regozijarei em Jeová, exultarei no Deus da minha ___.\"?",
+    "feedbackCorrect": "Exato: é em Deus como salvação que o profeta encontra motivo de alegria.",
+    "feedbackWrong": {
+      "a": "\"Regozijarei\" já aparece antes da lacuna nesta frase.",
+      "b": "\"Exultarei\" também já aparece antes do trecho que falta completar."
+    },
+    "passageText": "Pois, embora não floresça a figueira, nem haja fruto nas vides; embora falhe o produto da oliveira, e os campos não produzam mantimento; embora o rebanho seja exterminado do curral, e não haja gado nos presépios, contudo, eu me regozijarei em Jeová, exultarei no Deus da minha salvação.",
+    "template": "Contudo, eu me regozijarei em Jeová, exultarei no Deus da minha ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "regozijarei"
+      },
+      {
+        "id": "b",
+        "text": "exultarei"
+      },
+      {
+        "id": "c",
+        "text": "salvação"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "id": "habacuque-pro-habacuque-habacuque-03-desafio-habacuque-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Habacuque 3:17-18",
+    "learningObjective": "Aplicar a resposta de fé de Habacuque, que se alegra em Deus mesmo diante da escassez.",
+    "evidence": [
+      "Habacuque 3:17-18"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de Habacuque 3:17-18?",
+    "prompt": "Qual leitura interpreta melhor o sentido de Habacuque 3:17-18?",
+    "cue": "Qual leitura interpreta melhor o sentido de Habacuque 3:17-18?",
+    "feedbackCorrect": "Certo: a mesma voz que se queixou agora louva, sem que a realidade mude.",
+    "feedbackWrong": {
+      "a": "O profeta nomeia cada perda em detalhe — ele não a nega, responde a ela com fé.",
+      "b": "É exatamente a ausência de bênçãos visíveis que torna essa alegria notável.",
+      "c": "A conclusão completa a queixa inicial; a mesma fé sustenta as duas."
+    },
+    "passageText": "Pois, embora não floresça a figueira, nem haja fruto nas vides; embora falhe o produto da oliveira, e os campos não produzam mantimento; embora o rebanho seja exterminado do curral, e não haja gado nos presépios, contudo, eu me regozijarei em Jeová, exultarei no Deus da minha salvação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A passagem ensina que negar o sofrimento é o caminho da fé madura."
+      },
+      {
+        "id": "b",
+        "text": "O sentido do texto é que a alegria descrita depende de bênçãos visíveis."
+      },
+      {
+        "id": "c",
+        "text": "A conclusão do livro contradiz a queixa apresentada em Habacuque 1."
+      },
+      {
+        "id": "d",
+        "text": "O profeta transforma a dúvida em confissão, alegrando-se em Deus, não nas circunstâncias."
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "id": "habacuque-pro-habacuque-habacuque-03-desafio-habacuque-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Habacuque 3:17-18",
+    "learningObjective": "Aplicar a resposta de fé de Habacuque, que se alegra em Deus mesmo diante da escassez.",
+    "evidence": [
+      "Habacuque 3:17-18"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Habacuque 3:17-18?",
+    "prompt": "Qual sequência revela o sentido de Habacuque 3:17-18?",
+    "cue": "Qual sequência revela o sentido de Habacuque 3:17-18?",
+    "feedbackCorrect": "Certo: o texto só chega à alegria depois de nomear cada perda, uma a uma.",
+    "feedbackWrong": {
+      "b": "Essa perda é a segunda da lista, depois da figueira e das vides.",
+      "c": "A confissão de alegria é a resposta final às perdas já listadas."
+    },
+    "passageText": "Pois, embora não floresça a figueira, nem haja fruto nas vides; embora falhe o produto da oliveira, e os campos não produzam mantimento; embora o rebanho seja exterminado do curral, e não haja gado nos presépios, contudo, eu me regozijarei em Jeová, exultarei no Deus da minha salvação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Embora não floresça a figueira, nem haja fruto nas vides"
+      },
+      {
+        "id": "b",
+        "text": "embora o rebanho seja exterminado do curral, e não haja gado nos presépios"
+      },
+      {
+        "id": "c",
+        "text": "contudo, eu me regozijarei em Jeová, exultarei no Deus da minha salvação"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "id": "habacuque-pro-habacuque-habacuque-03-desafio-habacuque-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Habacuque 3:17-18",
+    "learningObjective": "Aplicar a resposta de fé de Habacuque, que se alegra em Deus mesmo diante da escassez.",
+    "evidence": [
+      "Habacuque 3:17-18"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Contudo, eu me regozijarei em Jeová, ___ no Deus da minha salvação.\"",
+    "prompt": "Complete a frase: \"Contudo, eu me regozijarei em Jeová, ___ no Deus da minha salvação.\"",
+    "cue": "Complete a frase: \"Contudo, eu me regozijarei em Jeová, ___ no Deus da minha salvação.\"",
+    "feedbackCorrect": "Certo: é esse o segundo verbo de alegria, ligado a Deus como salvação.",
+    "feedbackWrong": {
+      "a": "\"Salvação\" fecha a frase; o verbo que falta vem antes dela.",
+      "b": "\"Regozijarei\" já aparece antes, no início desta mesma frase."
+    },
+    "passageText": "Pois, embora não floresça a figueira, nem haja fruto nas vides; embora falhe o produto da oliveira, e os campos não produzam mantimento; embora o rebanho seja exterminado do curral, e não haja gado nos presépios, contudo, eu me regozijarei em Jeová, exultarei no Deus da minha salvação.",
+    "template": "Contudo, eu me regozijarei em Jeová, ___ no Deus da minha salvação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "salvação"
+      },
+      {
+        "id": "b",
+        "text": "regozijarei"
+      },
+      {
+        "id": "c",
+        "text": "exultarei"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "id": "habacuque-pro-habacuque-habacuque-03-desafio-habacuque-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Habacuque 3:17-18",
+    "learningObjective": "Aplicar a resposta de fé de Habacuque, que se alegra em Deus mesmo diante da escassez.",
+    "evidence": [
+      "Habacuque 3:17-18"
+    ],
+    "type": "connect",
+    "question": "O que Habacuque 3:17-18 comunica que se liga a este contexto?",
+    "prompt": "O que Habacuque 3:17-18 comunica que se liga a este contexto?",
+    "cue": "O que Habacuque 3:17-18 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a mesma dúvida do início do livro chega aqui à confiança madura.",
+    "feedbackWrong": {
+      "a": "O profeta detalha cada perda concreta — ele não ignora o sofrimento real.",
+      "b": "É a pergunta honesta do capítulo 1 que amadurece nesta confissão de fé."
+    },
+    "passageText": "Pois, embora não floresça a figueira, nem haja fruto nas vides; embora falhe o produto da oliveira, e os campos não produzam mantimento; embora o rebanho seja exterminado do curral, e não haja gado nos presépios, contudo, eu me regozijarei em Jeová, exultarei no Deus da minha salvação.",
+    "passageA": {
+      "ref": "Habacuque 3:17-18",
+      "text": "Pois, embora não floresça a figueira, nem haja fruto nas vides; embora falhe o produto da oliveira, e os campos não produzam mantimento; embora o rebanho seja exterminado do curral, e não haja gado nos presépios, contudo, eu me regozijarei em Jeová, exultarei no Deus da minha salvação."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O livro termina onde começou a dúvida, agora transformada em adoração."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Confiança que ignora o sofrimento real"
+      },
+      {
+        "id": "b",
+        "text": "Fé que despreza a pergunta honesta"
+      },
+      {
+        "id": "c",
+        "text": "Dúvida honesta resolvida em confiança"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "habacuque",
+    "section": "habacuque-habacuque-03-desafio-habacuque",
+    "id": "habacuque-pro-habacuque-habacuque-03-desafio-habacuque-06"
+  }
+]

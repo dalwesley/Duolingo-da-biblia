@@ -1,0 +1,2954 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Reconhecer que ler a Lei inclui clareza e sentido, para que o povo entenda, não só ouça o som.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "true_false",
+    "question": "Leram no livro da lei de Deus distintamente.",
+    "prompt": "Leram no livro da lei de Deus distintamente.",
+    "cue": "Leram no livro da lei de Deus distintamente.",
+    "feedbackCorrect": "Certo: Neemias 8:8 registra a leitura distinta da Lei.",
+    "feedbackWrong": {
+      "false": "O texto começa exatamente com essa leitura distinta."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "hermeneutica",
+    "section": "hm-01-leitura",
+    "id": "hermeneutica-sem-hm-01-leitura-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Reconhecer que ler a Lei inclui clareza e sentido, para que o povo entenda, não só ouça o som.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "tap",
+    "question": "Em Neemias 8:8, toque a palavra que falta em \"Leram no livro da lei de Deus ___; e deram o sentido\"?",
+    "prompt": "Em Neemias 8:8, toque a palavra que falta em \"Leram no livro da lei de Deus ___; e deram o sentido\"?",
+    "cue": "Em Neemias 8:8, toque a palavra que falta em \"Leram no livro da lei de Deus ___; e deram o sentido\"?",
+    "feedbackCorrect": "Exato: leram distintamente, com clareza.",
+    "feedbackWrong": {
+      "b": "Sentido vem depois: deram o sentido.",
+      "c": "Leitura fecha o versículo, não esta lacuna."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "hermeneutica",
+    "section": "hm-01-leitura",
+    "id": "hermeneutica-sem-hm-01-leitura-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "distintamente"
+      },
+      {
+        "id": "b",
+        "text": "sentido"
+      },
+      {
+        "id": "c",
+        "text": "leitura"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Leram no livro da lei de Deus ___; e deram o sentido"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Reconhecer que ler a Lei inclui clareza e sentido, para que o povo entenda, não só ouça o som.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "choice",
+    "question": "O que Neemias 8:8 afirma que aconteceu depois da leitura distinta?",
+    "prompt": "O que Neemias 8:8 afirma que aconteceu depois da leitura distinta?",
+    "cue": "O que Neemias 8:8 afirma que aconteceu depois da leitura distinta?",
+    "feedbackCorrect": "Certo: deram o sentido para que se entendesse a leitura.",
+    "feedbackWrong": {
+      "a": "O texto não fala de fechar o livro sem explicar.",
+      "c": "Não há menção a traduzir para outra língua aqui.",
+      "d": "O versículo não descreve um debate entre partidos."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "hermeneutica",
+    "section": "hm-01-leitura",
+    "id": "hermeneutica-sem-hm-01-leitura-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Guardaram o livro sem explicar o que foi lido."
+      },
+      {
+        "id": "b",
+        "text": "Deram o sentido, de modo que se entendesse a leitura."
+      },
+      {
+        "id": "c",
+        "text": "Traduziram a Lei para uma língua estrangeira nova."
+      },
+      {
+        "id": "d",
+        "text": "Dividiram o povo em grupos a favor e contra a Lei."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Reconhecer que ler a Lei inclui clareza e sentido, para que o povo entenda, não só ouça o som.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Neemias 8:8?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Neemias 8:8?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Neemias 8:8?",
+    "feedbackCorrect": "Certo: ler, dar o sentido, e o povo entender.",
+    "feedbackWrong": {
+      "b": "Essa peça não vem primeiro no versículo.",
+      "c": "Releia: o entendimento é o resultado, não o início."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "hermeneutica",
+    "section": "hm-01-leitura",
+    "id": "hermeneutica-sem-hm-01-leitura-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leram no livro da lei de Deus distintamente"
+      },
+      {
+        "id": "b",
+        "text": "e deram o sentido"
+      },
+      {
+        "id": "c",
+        "text": "de modo que se entendesse a leitura"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Reconhecer que ler a Lei inclui clareza e sentido, para que o povo entenda, não só ouça o som.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "complete",
+    "question": "Complete: \"e deram o ___, de modo que se entendesse a leitura.\"",
+    "prompt": "Complete: \"e deram o ___, de modo que se entendesse a leitura.\"",
+    "cue": "Complete: \"e deram o ___, de modo que se entendesse a leitura.\"",
+    "feedbackCorrect": "Certo: deram o sentido da leitura.",
+    "feedbackWrong": {
+      "b": "Livro é o suporte da Lei, não o que eles deram.",
+      "c": "Deus é o autor da Lei, não esta lacuna."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "hermeneutica",
+    "section": "hm-01-leitura",
+    "id": "hermeneutica-sem-hm-01-leitura-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "sentido"
+      },
+      {
+        "id": "b",
+        "text": "livro"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "e deram o ___, de modo que se entendesse a leitura."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Reconhecer que ler a Lei inclui clareza e sentido, para que o povo entenda, não só ouça o som.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "connect",
+    "question": "O que Neemias 8:8 comunica que se liga a este contexto?",
+    "prompt": "O que Neemias 8:8 comunica que se liga a este contexto?",
+    "cue": "O que Neemias 8:8 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: ler com atenção é clareza e sentido.",
+    "feedbackWrong": {
+      "b": "O texto não reduz a Lei a um rito sem entendimento.",
+      "c": "Não se trata de volume da voz, mas de sentido dado."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "hermeneutica",
+    "section": "hm-01-leitura",
+    "id": "hermeneutica-sem-hm-01-leitura-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Clareza e sentido juntos"
+      },
+      {
+        "id": "b",
+        "text": "Rito sem entendimento"
+      },
+      {
+        "id": "c",
+        "text": "Som alto sem explicação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Neemias 8:8",
+      "text": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Ler com atenção é ler distintamente e dar o sentido — a Palavra pede entendimento, não só som."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Reconhecer que ler a Lei inclui clareza e sentido, para que o povo entenda, não só ouça o som.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "true_false",
+    "question": "Em Neemias 8:8, a leitura distinta da Lei dispensa dar o sentido ao povo.",
+    "prompt": "Em Neemias 8:8, a leitura distinta da Lei dispensa dar o sentido ao povo.",
+    "cue": "Em Neemias 8:8, a leitura distinta da Lei dispensa dar o sentido ao povo.",
+    "feedbackCorrect": "Certo: o texto une leitura distinta e sentido dado.",
+    "feedbackWrong": {
+      "true": "O versículo liga as duas ações: leram e deram o sentido."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "hermeneutica",
+    "section": "hm-01-leitura",
+    "id": "hermeneutica-cam-hm-01-leitura-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Reconhecer que ler a Lei inclui clareza e sentido, para que o povo entenda, não só ouça o som.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "tap",
+    "question": "Em Neemias 8:8, toque a palavra que falta em \"de modo que se ___ a leitura\"?",
+    "prompt": "Em Neemias 8:8, toque a palavra que falta em \"de modo que se ___ a leitura\"?",
+    "cue": "Em Neemias 8:8, toque a palavra que falta em \"de modo que se ___ a leitura\"?",
+    "feedbackCorrect": "Exato: o alvo é que se entendesse a leitura.",
+    "feedbackWrong": {
+      "a": "Distintamente descreve como leram, não esta lacuna.",
+      "c": "Deram é o verbo anterior, não o que se pede aqui."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "hermeneutica",
+    "section": "hm-01-leitura",
+    "id": "hermeneutica-cam-hm-01-leitura-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "distintamente"
+      },
+      {
+        "id": "b",
+        "text": "entendesse"
+      },
+      {
+        "id": "c",
+        "text": "deram"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "template": "de modo que se ___ a leitura"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Reconhecer que ler a Lei inclui clareza e sentido, para que o povo entenda, não só ouça o som.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "choice",
+    "question": "Como se relacionam leitura distinta e sentido em Neemias 8:8?",
+    "prompt": "Como se relacionam leitura distinta e sentido em Neemias 8:8?",
+    "cue": "Como se relacionam leitura distinta e sentido em Neemias 8:8?",
+    "feedbackCorrect": "Certo: o sentido serve para que a leitura seja entendida.",
+    "feedbackWrong": {
+      "a": "O texto não opõe clareza e sentido; junta os dois.",
+      "c": "Não há indício de que o sentido seja opcional.",
+      "d": "O versículo não descreve um debate privado de escribas."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "hermeneutica",
+    "section": "hm-01-leitura",
+    "id": "hermeneutica-cam-hm-01-leitura-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "A clareza da voz substitui qualquer explicação do texto."
+      },
+      {
+        "id": "b",
+        "text": "O sentido é dado para que a leitura distinta seja entendida."
+      },
+      {
+        "id": "c",
+        "text": "O sentido só vale se o povo já conhecer a Lei de cor."
+      },
+      {
+        "id": "d",
+        "text": "O sentido fica restrito aos escribas, sem o povo."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Reconhecer que ler a Lei inclui clareza e sentido, para que o povo entenda, não só ouça o som.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Neemias 8:8?",
+    "prompt": "Como se encadeiam os eventos de Neemias 8:8?",
+    "cue": "Como se encadeiam os eventos de Neemias 8:8?",
+    "feedbackCorrect": "Certo: do livro lido ao sentido, até o entendimento.",
+    "feedbackWrong": {
+      "b": "Essa peça não ocupa esse lugar na cadeia.",
+      "c": "Releia o encadeamento: entendimento vem no fim."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "hermeneutica",
+    "section": "hm-01-leitura",
+    "id": "hermeneutica-cam-hm-01-leitura-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "a leitura distinta no livro da lei de Deus"
+      },
+      {
+        "id": "b",
+        "text": "o sentido dado ao que foi lido"
+      },
+      {
+        "id": "c",
+        "text": "o entendimento alcançado pelo ouvinte"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Reconhecer que ler a Lei inclui clareza e sentido, para que o povo entenda, não só ouça o som.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Leram no livro da ___ de Deus distintamente.\"",
+    "prompt": "Complete: \"Leram no livro da ___ de Deus distintamente.\"",
+    "cue": "Complete: \"Leram no livro da ___ de Deus distintamente.\"",
+    "feedbackCorrect": "Certo: leram no livro da lei de Deus.",
+    "feedbackWrong": {
+      "b": "Leitura é o ato, não o conteúdo do livro.",
+      "c": "Sentido é o que deram depois, não o livro."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "hermeneutica",
+    "section": "hm-01-leitura",
+    "id": "hermeneutica-cam-hm-01-leitura-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "lei"
+      },
+      {
+        "id": "b",
+        "text": "leitura"
+      },
+      {
+        "id": "c",
+        "text": "sentido"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Leram no livro da ___ de Deus distintamente."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Reconhecer que ler a Lei inclui clareza e sentido, para que o povo entenda, não só ouça o som.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "connect",
+    "question": "O que Neemias 8:8 comunica que se liga a este contexto?",
+    "prompt": "O que Neemias 8:8 comunica que se liga a este contexto?",
+    "cue": "O que Neemias 8:8 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a Palavra pede entendimento, não só som.",
+    "feedbackWrong": {
+      "a": "O texto não celebra o som isolado da voz.",
+      "c": "Não há aqui uma leitura só para especialistas."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "hermeneutica",
+    "section": "hm-01-leitura",
+    "id": "hermeneutica-cam-hm-01-leitura-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Som sem entendimento"
+      },
+      {
+        "id": "b",
+        "text": "Palavra que pede entendimento"
+      },
+      {
+        "id": "c",
+        "text": "Leitura só para especialistas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageA": {
+      "ref": "Neemias 8:8",
+      "text": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A hermenêutica começa quando o texto é lido com clareza e o sentido é dado ao povo."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Reconhecer que ler a Lei inclui clareza e sentido, para que o povo entenda, não só ouça o som.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "true_false",
+    "question": "Neemias 8:8 mostra que a Palavra pede entendimento, não apenas o som da leitura.",
+    "prompt": "Neemias 8:8 mostra que a Palavra pede entendimento, não apenas o som da leitura.",
+    "cue": "Neemias 8:8 mostra que a Palavra pede entendimento, não apenas o som da leitura.",
+    "feedbackCorrect": "Certo: dar o sentido visa que se entenda a leitura.",
+    "feedbackWrong": {
+      "false": "O versículo liga leitura distinta ao entendimento do povo."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "hermeneutica",
+    "section": "hm-01-leitura",
+    "id": "hermeneutica-pro-hm-01-leitura-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Reconhecer que ler a Lei inclui clareza e sentido, para que o povo entenda, não só ouça o som.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "tap",
+    "question": "Em Neemias 8:8, toque a palavra que falta em \"Leram no ___ da lei de Deus distintamente\"?",
+    "prompt": "Em Neemias 8:8, toque a palavra que falta em \"Leram no ___ da lei de Deus distintamente\"?",
+    "cue": "Em Neemias 8:8, toque a palavra que falta em \"Leram no ___ da lei de Deus distintamente\"?",
+    "feedbackCorrect": "Exato: leram no livro da lei.",
+    "feedbackWrong": {
+      "b": "Sentido é o que deram, não o suporte da leitura.",
+      "c": "Leitura é o ato; a lacuna pede o livro."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "hermeneutica",
+    "section": "hm-01-leitura",
+    "id": "hermeneutica-pro-hm-01-leitura-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "livro"
+      },
+      {
+        "id": "b",
+        "text": "sentido"
+      },
+      {
+        "id": "c",
+        "text": "leitura"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Leram no ___ da lei de Deus distintamente"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Reconhecer que ler a Lei inclui clareza e sentido, para que o povo entenda, não só ouça o som.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "choice",
+    "question": "Que implicação hermenêutica Neemias 8:8 sustenta?",
+    "prompt": "Que implicação hermenêutica Neemias 8:8 sustenta?",
+    "cue": "Que implicação hermenêutica Neemias 8:8 sustenta?",
+    "feedbackCorrect": "Certo: fidelidade inclui clareza e sentido ao ouvinte.",
+    "feedbackWrong": {
+      "a": "O texto não trata a Lei como código secreto.",
+      "c": "Não se reduz a Palavra a um espetáculo vocal.",
+      "d": "O versículo não autoriza ignorar o sentido do texto."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "hermeneutica",
+    "section": "hm-01-leitura",
+    "id": "hermeneutica-pro-hm-01-leitura-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "A Lei deve ficar reservada a um círculo iniciado."
+      },
+      {
+        "id": "b",
+        "text": "Ler fielmente inclui clareza e sentido ao ouvinte."
+      },
+      {
+        "id": "c",
+        "text": "O que importa é a beleza da recitação, não o sentido."
+      },
+      {
+        "id": "d",
+        "text": "Cada um inventa o sentido depois de ouvir o som."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Reconhecer que ler a Lei inclui clareza e sentido, para que o povo entenda, não só ouça o som.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Neemias 8:8?",
+    "prompt": "Qual sequência revela o sentido de Neemias 8:8?",
+    "cue": "Qual sequência revela o sentido de Neemias 8:8?",
+    "feedbackCorrect": "Certo: do texto lido ao sentido, até o entendimento.",
+    "feedbackWrong": {
+      "b": "Essa etapa não ocupa esse lugar no sentido do texto.",
+      "c": "O entendimento é o fim da sequência, não o começo."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "hermeneutica",
+    "section": "hm-01-leitura",
+    "id": "hermeneutica-pro-hm-01-leitura-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "o texto da Lei lido com clareza"
+      },
+      {
+        "id": "b",
+        "text": "o sentido comunicado ao povo"
+      },
+      {
+        "id": "c",
+        "text": "o entendimento como meta da leitura"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Reconhecer que ler a Lei inclui clareza e sentido, para que o povo entenda, não só ouça o som.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "complete",
+    "question": "Complete: \"e ___ o sentido, de modo que se entendesse a leitura.\"",
+    "prompt": "Complete: \"e ___ o sentido, de modo que se entendesse a leitura.\"",
+    "cue": "Complete: \"e ___ o sentido, de modo que se entendesse a leitura.\"",
+    "feedbackCorrect": "Certo: deram o sentido.",
+    "feedbackWrong": {
+      "b": "Leram descreve a primeira ação, não esta lacuna.",
+      "c": "Entendesse é o resultado, não o verbo desta frase."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "hermeneutica",
+    "section": "hm-01-leitura",
+    "id": "hermeneutica-pro-hm-01-leitura-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "deram"
+      },
+      {
+        "id": "b",
+        "text": "Leram"
+      },
+      {
+        "id": "c",
+        "text": "entendesse"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "e ___ o sentido, de modo que se entendesse a leitura."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 8:8",
+    "learningObjective": "Reconhecer que ler a Lei inclui clareza e sentido, para que o povo entenda, não só ouça o som.",
+    "evidence": [
+      "Neemias 8:8"
+    ],
+    "type": "connect",
+    "question": "O que Neemias 8:8 comunica que se liga a este contexto?",
+    "prompt": "O que Neemias 8:8 comunica que se liga a este contexto?",
+    "cue": "O que Neemias 8:8 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: hermenêutica serve o entendimento do povo.",
+    "feedbackWrong": {
+      "a": "O texto não privilegia o prestígio do leitor.",
+      "c": "Não se trata de esconder o sentido da Lei."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura.",
+    "trail": "hermeneutica",
+    "section": "hm-01-leitura",
+    "id": "hermeneutica-pro-hm-01-leitura-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Prestígio do leitor"
+      },
+      {
+        "id": "b",
+        "text": "Entendimento do povo"
+      },
+      {
+        "id": "c",
+        "text": "Segredo da Lei"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageA": {
+      "ref": "Neemias 8:8",
+      "text": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A Palavra não pede só recitação: pede sentido dado, para que a leitura seja entendida."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Pedro 1:20–21",
+    "learningObjective": "Perceber que nenhuma profecia da Escritura é de particular interpretação: homens falaram da parte de Deus, movidos pelo Espírito.",
+    "evidence": [
+      "2 Pedro 1:20",
+      "2 Pedro 1:21"
+    ],
+    "type": "true_false",
+    "question": "Nenhuma profecia da Escritura é de particular interpretação.",
+    "prompt": "Nenhuma profecia da Escritura é de particular interpretação.",
+    "cue": "Nenhuma profecia da Escritura é de particular interpretação.",
+    "feedbackCorrect": "Certo: 2 Pedro 1:20 afirma exatamente isso.",
+    "feedbackWrong": {
+      "false": "O texto diz que nenhuma profecia é de particular interpretação."
+    },
+    "passageText": "conhecendo primeiro isto, que nenhuma profecia da Escritura é de particular interpretação, porque a profecia jamais foi dada pela vontade dos homens, mas os homens da parte de Deus falavam, movidos pelo Espírito Santo.",
+    "trail": "hermeneutica",
+    "section": "hm-02-contexto",
+    "id": "hermeneutica-sem-hm-02-contexto-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Pedro 1:20–21",
+    "learningObjective": "Perceber que nenhuma profecia da Escritura é de particular interpretação: homens falaram da parte de Deus, movidos pelo Espírito.",
+    "evidence": [
+      "2 Pedro 1:20",
+      "2 Pedro 1:21"
+    ],
+    "type": "tap",
+    "question": "Em 2 Pedro 1:20–21, toque a palavra que falta em \"nenhuma profecia da Escritura é de particular ___\"?",
+    "prompt": "Em 2 Pedro 1:20–21, toque a palavra que falta em \"nenhuma profecia da Escritura é de particular ___\"?",
+    "cue": "Em 2 Pedro 1:20–21, toque a palavra que falta em \"nenhuma profecia da Escritura é de particular ___\"?",
+    "feedbackCorrect": "Exato: não é de particular interpretação.",
+    "feedbackWrong": {
+      "b": "Vontade aparece depois, ligada aos homens.",
+      "c": "Profecia é o sujeito, não esta lacuna."
+    },
+    "passageText": "conhecendo primeiro isto, que nenhuma profecia da Escritura é de particular interpretação, porque a profecia jamais foi dada pela vontade dos homens, mas os homens da parte de Deus falavam, movidos pelo Espírito Santo.",
+    "trail": "hermeneutica",
+    "section": "hm-02-contexto",
+    "id": "hermeneutica-sem-hm-02-contexto-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "interpretação"
+      },
+      {
+        "id": "b",
+        "text": "vontade"
+      },
+      {
+        "id": "c",
+        "text": "profecia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "nenhuma profecia da Escritura é de particular ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Pedro 1:20–21",
+    "learningObjective": "Perceber que nenhuma profecia da Escritura é de particular interpretação: homens falaram da parte de Deus, movidos pelo Espírito.",
+    "evidence": [
+      "2 Pedro 1:20",
+      "2 Pedro 1:21"
+    ],
+    "type": "choice",
+    "question": "Segundo 2 Pedro 1:20–21, de onde a profecia jamais veio?",
+    "prompt": "Segundo 2 Pedro 1:20–21, de onde a profecia jamais veio?",
+    "cue": "Segundo 2 Pedro 1:20–21, de onde a profecia jamais veio?",
+    "feedbackCorrect": "Certo: jamais foi dada pela vontade dos homens.",
+    "feedbackWrong": {
+      "a": "O texto não atribui a profecia a um concílio.",
+      "c": "Não há menção a sonhos particulares aqui.",
+      "d": "O versículo não fala de tradição oral isolada."
+    },
+    "passageText": "conhecendo primeiro isto, que nenhuma profecia da Escritura é de particular interpretação, porque a profecia jamais foi dada pela vontade dos homens, mas os homens da parte de Deus falavam, movidos pelo Espírito Santo.",
+    "trail": "hermeneutica",
+    "section": "hm-02-contexto",
+    "id": "hermeneutica-sem-hm-02-contexto-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "De um concílio de anciãos em Jerusalém."
+      },
+      {
+        "id": "b",
+        "text": "Da vontade dos homens."
+      },
+      {
+        "id": "c",
+        "text": "De sonhos particulares sem Escritura."
+      },
+      {
+        "id": "d",
+        "text": "De uma tradição oral sem profetas."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Pedro 1:20–21",
+    "learningObjective": "Perceber que nenhuma profecia da Escritura é de particular interpretação: homens falaram da parte de Deus, movidos pelo Espírito.",
+    "evidence": [
+      "2 Pedro 1:20",
+      "2 Pedro 1:21"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em 2 Pedro 1:20–21?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 2 Pedro 1:20–21?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 2 Pedro 1:20–21?",
+    "feedbackCorrect": "Certo: não é particular; não vem da vontade humana; o Espírito move.",
+    "feedbackWrong": {
+      "b": "Essa peça não vem nesse lugar no texto.",
+      "c": "Releia: o Espírito Santo fecha o versículo."
+    },
+    "passageText": "conhecendo primeiro isto, que nenhuma profecia da Escritura é de particular interpretação, porque a profecia jamais foi dada pela vontade dos homens, mas os homens da parte de Deus falavam, movidos pelo Espírito Santo.",
+    "trail": "hermeneutica",
+    "section": "hm-02-contexto",
+    "id": "hermeneutica-sem-hm-02-contexto-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "nenhuma profecia da Escritura é de particular interpretação"
+      },
+      {
+        "id": "b",
+        "text": "a profecia jamais foi dada pela vontade dos homens"
+      },
+      {
+        "id": "c",
+        "text": "os homens da parte de Deus falavam, movidos pelo Espírito Santo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Pedro 1:20–21",
+    "learningObjective": "Perceber que nenhuma profecia da Escritura é de particular interpretação: homens falaram da parte de Deus, movidos pelo Espírito.",
+    "evidence": [
+      "2 Pedro 1:20",
+      "2 Pedro 1:21"
+    ],
+    "type": "complete",
+    "question": "Complete: \"os homens da parte de Deus falavam, movidos pelo ___ Santo.\"",
+    "prompt": "Complete: \"os homens da parte de Deus falavam, movidos pelo ___ Santo.\"",
+    "cue": "Complete: \"os homens da parte de Deus falavam, movidos pelo ___ Santo.\"",
+    "feedbackCorrect": "Certo: movidos pelo Espírito Santo.",
+    "feedbackWrong": {
+      "b": "Homens falam, mas o agente aqui é o Espírito.",
+      "c": "Escritura é o objeto da profecia, não esta lacuna."
+    },
+    "passageText": "conhecendo primeiro isto, que nenhuma profecia da Escritura é de particular interpretação, porque a profecia jamais foi dada pela vontade dos homens, mas os homens da parte de Deus falavam, movidos pelo Espírito Santo.",
+    "trail": "hermeneutica",
+    "section": "hm-02-contexto",
+    "id": "hermeneutica-sem-hm-02-contexto-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito"
+      },
+      {
+        "id": "b",
+        "text": "homens"
+      },
+      {
+        "id": "c",
+        "text": "Escritura"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "os homens da parte de Deus falavam, movidos pelo ___ Santo."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Pedro 1:20–21",
+    "learningObjective": "Perceber que nenhuma profecia da Escritura é de particular interpretação: homens falaram da parte de Deus, movidos pelo Espírito.",
+    "evidence": [
+      "2 Pedro 1:20",
+      "2 Pedro 1:21"
+    ],
+    "type": "connect",
+    "question": "O que 2 Pedro 1:20–21 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Pedro 1:20–21 comunica que se liga a este contexto?",
+    "cue": "O que 2 Pedro 1:20–21 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a Escritura não é interpretação particular.",
+    "feedbackWrong": {
+      "b": "O texto nega a origem na vontade humana solitária.",
+      "c": "Não se trata de opinião privada sobre o texto."
+    },
+    "passageText": "conhecendo primeiro isto, que nenhuma profecia da Escritura é de particular interpretação, porque a profecia jamais foi dada pela vontade dos homens, mas os homens da parte de Deus falavam, movidos pelo Espírito Santo.",
+    "trail": "hermeneutica",
+    "section": "hm-02-contexto",
+    "id": "hermeneutica-sem-hm-02-contexto-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Não é interpretação particular"
+      },
+      {
+        "id": "b",
+        "text": "Origem na vontade humana"
+      },
+      {
+        "id": "c",
+        "text": "Opinião privada do leitor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "2 Pedro 1:20–21",
+      "text": "conhecendo primeiro isto, que nenhuma profecia da Escritura é de particular interpretação, porque a profecia jamais foi dada pela vontade dos homens, mas os homens da parte de Deus falavam, movidos pelo Espírito Santo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Texto e contexto: a Escritura não é interpretação particular; homens falaram movidos pelo Espírito."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Pedro 1:20–21",
+    "learningObjective": "Perceber que nenhuma profecia da Escritura é de particular interpretação: homens falaram da parte de Deus, movidos pelo Espírito.",
+    "evidence": [
+      "2 Pedro 1:20",
+      "2 Pedro 1:21"
+    ],
+    "type": "true_false",
+    "question": "Em 2 Pedro 1:20–21, a profecia da Escritura nasce da vontade isolada dos homens.",
+    "prompt": "Em 2 Pedro 1:20–21, a profecia da Escritura nasce da vontade isolada dos homens.",
+    "cue": "Em 2 Pedro 1:20–21, a profecia da Escritura nasce da vontade isolada dos homens.",
+    "feedbackCorrect": "Certo: jamais foi dada pela vontade dos homens.",
+    "feedbackWrong": {
+      "true": "O texto opõe vontade humana ao falar movido pelo Espírito."
+    },
+    "passageText": "conhecendo primeiro isto, que nenhuma profecia da Escritura é de particular interpretação, porque a profecia jamais foi dada pela vontade dos homens, mas os homens da parte de Deus falavam, movidos pelo Espírito Santo.",
+    "trail": "hermeneutica",
+    "section": "hm-02-contexto",
+    "id": "hermeneutica-cam-hm-02-contexto-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Pedro 1:20–21",
+    "learningObjective": "Perceber que nenhuma profecia da Escritura é de particular interpretação: homens falaram da parte de Deus, movidos pelo Espírito.",
+    "evidence": [
+      "2 Pedro 1:20",
+      "2 Pedro 1:21"
+    ],
+    "type": "tap",
+    "question": "Em 2 Pedro 1:20–21, toque a palavra que falta em \"a profecia jamais foi dada pela ___ dos homens\"?",
+    "prompt": "Em 2 Pedro 1:20–21, toque a palavra que falta em \"a profecia jamais foi dada pela ___ dos homens\"?",
+    "cue": "Em 2 Pedro 1:20–21, toque a palavra que falta em \"a profecia jamais foi dada pela ___ dos homens\"?",
+    "feedbackCorrect": "Exato: não foi dada pela vontade dos homens.",
+    "feedbackWrong": {
+      "a": "Interpretação aparece no v. 20, não nesta lacuna.",
+      "c": "Escritura nomeia o escrito, não esta lacuna."
+    },
+    "passageText": "conhecendo primeiro isto, que nenhuma profecia da Escritura é de particular interpretação, porque a profecia jamais foi dada pela vontade dos homens, mas os homens da parte de Deus falavam, movidos pelo Espírito Santo.",
+    "trail": "hermeneutica",
+    "section": "hm-02-contexto",
+    "id": "hermeneutica-cam-hm-02-contexto-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "interpretação"
+      },
+      {
+        "id": "b",
+        "text": "vontade"
+      },
+      {
+        "id": "c",
+        "text": "Escritura"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "template": "a profecia jamais foi dada pela ___ dos homens"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Pedro 1:20–21",
+    "learningObjective": "Perceber que nenhuma profecia da Escritura é de particular interpretação: homens falaram da parte de Deus, movidos pelo Espírito.",
+    "evidence": [
+      "2 Pedro 1:20",
+      "2 Pedro 1:21"
+    ],
+    "type": "choice",
+    "question": "Como 2 Pedro 1:20–21 liga origem da profecia e modo de lê-la?",
+    "prompt": "Como 2 Pedro 1:20–21 liga origem da profecia e modo de lê-la?",
+    "cue": "Como 2 Pedro 1:20–21 liga origem da profecia e modo de lê-la?",
+    "feedbackCorrect": "Certo: origem no Espírito impede leitura particularista.",
+    "feedbackWrong": {
+      "a": "O texto não autoriza cada um a inventar o sentido.",
+      "c": "Não reduz a profecia a um relatório humano comum.",
+      "d": "O versículo não pede ignorar o texto em favor do sentimento."
+    },
+    "passageText": "conhecendo primeiro isto, que nenhuma profecia da Escritura é de particular interpretação, porque a profecia jamais foi dada pela vontade dos homens, mas os homens da parte de Deus falavam, movidos pelo Espírito Santo.",
+    "trail": "hermeneutica",
+    "section": "hm-02-contexto",
+    "id": "hermeneutica-cam-hm-02-contexto-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cada leitor pode isolar um versículo e dar-lhe sentido próprio."
+      },
+      {
+        "id": "b",
+        "text": "Como veio do Espírito, não se lê como opinião particular."
+      },
+      {
+        "id": "c",
+        "text": "A profecia vale só como memória histórica dos autores."
+      },
+      {
+        "id": "d",
+        "text": "O sentimento do leitor substitui o que os homens falaram."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Pedro 1:20–21",
+    "learningObjective": "Perceber que nenhuma profecia da Escritura é de particular interpretação: homens falaram da parte de Deus, movidos pelo Espírito.",
+    "evidence": [
+      "2 Pedro 1:20",
+      "2 Pedro 1:21"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de 2 Pedro 1:20–21?",
+    "prompt": "Como se encadeiam os eventos de 2 Pedro 1:20–21?",
+    "cue": "Como se encadeiam os eventos de 2 Pedro 1:20–21?",
+    "feedbackCorrect": "Certo: da recusa do particular à origem no Espírito.",
+    "feedbackWrong": {
+      "b": "Essa etapa não ocupa esse lugar no encadeamento.",
+      "c": "O falar movido pelo Espírito é o desfecho, não o início."
+    },
+    "passageText": "conhecendo primeiro isto, que nenhuma profecia da Escritura é de particular interpretação, porque a profecia jamais foi dada pela vontade dos homens, mas os homens da parte de Deus falavam, movidos pelo Espírito Santo.",
+    "trail": "hermeneutica",
+    "section": "hm-02-contexto",
+    "id": "hermeneutica-cam-hm-02-contexto-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "conhecer primeiro que a profecia não é particular"
+      },
+      {
+        "id": "b",
+        "text": "recusar a origem na vontade dos homens"
+      },
+      {
+        "id": "c",
+        "text": "afirmar o falar movido pelo Espírito Santo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Pedro 1:20–21",
+    "learningObjective": "Perceber que nenhuma profecia da Escritura é de particular interpretação: homens falaram da parte de Deus, movidos pelo Espírito.",
+    "evidence": [
+      "2 Pedro 1:20",
+      "2 Pedro 1:21"
+    ],
+    "type": "complete",
+    "question": "Complete: \"nenhuma ___ da Escritura é de particular interpretação.\"",
+    "prompt": "Complete: \"nenhuma ___ da Escritura é de particular interpretação.\"",
+    "cue": "Complete: \"nenhuma ___ da Escritura é de particular interpretação.\"",
+    "feedbackCorrect": "Certo: nenhuma profecia da Escritura.",
+    "feedbackWrong": {
+      "b": "Vontade aparece no v. 21, não nesta lacuna.",
+      "c": "Homens falam, mas o sujeito aqui é a profecia."
+    },
+    "passageText": "conhecendo primeiro isto, que nenhuma profecia da Escritura é de particular interpretação, porque a profecia jamais foi dada pela vontade dos homens, mas os homens da parte de Deus falavam, movidos pelo Espírito Santo.",
+    "trail": "hermeneutica",
+    "section": "hm-02-contexto",
+    "id": "hermeneutica-cam-hm-02-contexto-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "profecia"
+      },
+      {
+        "id": "b",
+        "text": "vontade"
+      },
+      {
+        "id": "c",
+        "text": "homens"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "nenhuma ___ da Escritura é de particular interpretação."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Pedro 1:20–21",
+    "learningObjective": "Perceber que nenhuma profecia da Escritura é de particular interpretação: homens falaram da parte de Deus, movidos pelo Espírito.",
+    "evidence": [
+      "2 Pedro 1:20",
+      "2 Pedro 1:21"
+    ],
+    "type": "connect",
+    "question": "O que 2 Pedro 1:20–21 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Pedro 1:20–21 comunica que se liga a este contexto?",
+    "cue": "O que 2 Pedro 1:20–21 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: contexto guarda o texto da leitura particular.",
+    "feedbackWrong": {
+      "a": "O texto não celebra o versículo isolado.",
+      "c": "Não autoriza o leitor a ser dono do sentido."
+    },
+    "passageText": "conhecendo primeiro isto, que nenhuma profecia da Escritura é de particular interpretação, porque a profecia jamais foi dada pela vontade dos homens, mas os homens da parte de Deus falavam, movidos pelo Espírito Santo.",
+    "trail": "hermeneutica",
+    "section": "hm-02-contexto",
+    "id": "hermeneutica-cam-hm-02-contexto-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Versículo solto basta"
+      },
+      {
+        "id": "b",
+        "text": "Contexto contra leitura particular"
+      },
+      {
+        "id": "c",
+        "text": "Leitor dono do sentido"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageA": {
+      "ref": "2 Pedro 1:20–21",
+      "text": "conhecendo primeiro isto, que nenhuma profecia da Escritura é de particular interpretação, porque a profecia jamais foi dada pela vontade dos homens, mas os homens da parte de Deus falavam, movidos pelo Espírito Santo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Um versículo ganha sentido no conjunto da Escritura, não como interpretação particular."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Pedro 1:20–21",
+    "learningObjective": "Perceber que nenhuma profecia da Escritura é de particular interpretação: homens falaram da parte de Deus, movidos pelo Espírito.",
+    "evidence": [
+      "2 Pedro 1:20",
+      "2 Pedro 1:21"
+    ],
+    "type": "true_false",
+    "question": "2 Pedro 1:20–21 ensina que o sentido da Escritura não pertence ao capricho particular do leitor.",
+    "prompt": "2 Pedro 1:20–21 ensina que o sentido da Escritura não pertence ao capricho particular do leitor.",
+    "cue": "2 Pedro 1:20–21 ensina que o sentido da Escritura não pertence ao capricho particular do leitor.",
+    "feedbackCorrect": "Certo: a profecia não é de particular interpretação.",
+    "feedbackWrong": {
+      "false": "O texto recusa a interpretação particular da profecia."
+    },
+    "passageText": "conhecendo primeiro isto, que nenhuma profecia da Escritura é de particular interpretação, porque a profecia jamais foi dada pela vontade dos homens, mas os homens da parte de Deus falavam, movidos pelo Espírito Santo.",
+    "trail": "hermeneutica",
+    "section": "hm-02-contexto",
+    "id": "hermeneutica-pro-hm-02-contexto-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Pedro 1:20–21",
+    "learningObjective": "Perceber que nenhuma profecia da Escritura é de particular interpretação: homens falaram da parte de Deus, movidos pelo Espírito.",
+    "evidence": [
+      "2 Pedro 1:20",
+      "2 Pedro 1:21"
+    ],
+    "type": "tap",
+    "question": "Em 2 Pedro 1:20–21, toque a palavra que falta em \"os homens da parte de Deus falavam, ___ pelo Espírito Santo\"?",
+    "prompt": "Em 2 Pedro 1:20–21, toque a palavra que falta em \"os homens da parte de Deus falavam, ___ pelo Espírito Santo\"?",
+    "cue": "Em 2 Pedro 1:20–21, toque a palavra que falta em \"os homens da parte de Deus falavam, ___ pelo Espírito Santo\"?",
+    "feedbackCorrect": "Exato: falavam movidos pelo Espírito Santo.",
+    "feedbackWrong": {
+      "a": "Conhecendo abre o trecho, não esta lacuna.",
+      "c": "Jamais nega a origem humana, não completa este verbo."
+    },
+    "passageText": "conhecendo primeiro isto, que nenhuma profecia da Escritura é de particular interpretação, porque a profecia jamais foi dada pela vontade dos homens, mas os homens da parte de Deus falavam, movidos pelo Espírito Santo.",
+    "trail": "hermeneutica",
+    "section": "hm-02-contexto",
+    "id": "hermeneutica-pro-hm-02-contexto-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "conhecendo"
+      },
+      {
+        "id": "b",
+        "text": "movidos"
+      },
+      {
+        "id": "c",
+        "text": "jamais"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "template": "os homens da parte de Deus falavam, ___ pelo Espírito Santo"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Pedro 1:20–21",
+    "learningObjective": "Perceber que nenhuma profecia da Escritura é de particular interpretação: homens falaram da parte de Deus, movidos pelo Espírito.",
+    "evidence": [
+      "2 Pedro 1:20",
+      "2 Pedro 1:21"
+    ],
+    "type": "choice",
+    "question": "Que erro de leitura 2 Pedro 1:20–21 corrige?",
+    "prompt": "Que erro de leitura 2 Pedro 1:20–21 corrige?",
+    "cue": "Que erro de leitura 2 Pedro 1:20–21 corrige?",
+    "feedbackCorrect": "Certo: recusa tratar a profecia como opinião particular.",
+    "feedbackWrong": {
+      "a": "O texto não apaga os homens; eles falaram movidos.",
+      "c": "Não reduz a Escritura a um código cifrado sem sentido.",
+      "d": "Não transfere a autoridade da Escritura ao humor do grupo."
+    },
+    "passageText": "conhecendo primeiro isto, que nenhuma profecia da Escritura é de particular interpretação, porque a profecia jamais foi dada pela vontade dos homens, mas os homens da parte de Deus falavam, movidos pelo Espírito Santo.",
+    "trail": "hermeneutica",
+    "section": "hm-02-contexto",
+    "id": "hermeneutica-pro-hm-02-contexto-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Negar que homens reais tenham falado da parte de Deus."
+      },
+      {
+        "id": "b",
+        "text": "Tratar a profecia como opinião particular do intérprete."
+      },
+      {
+        "id": "c",
+        "text": "Afirmar que a Escritura não tem sentido comunicável."
+      },
+      {
+        "id": "d",
+        "text": "Substituir o texto pelo consenso do grupo no momento."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Pedro 1:20–21",
+    "learningObjective": "Perceber que nenhuma profecia da Escritura é de particular interpretação: homens falaram da parte de Deus, movidos pelo Espírito.",
+    "evidence": [
+      "2 Pedro 1:20",
+      "2 Pedro 1:21"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de 2 Pedro 1:20–21?",
+    "prompt": "Qual sequência revela o sentido de 2 Pedro 1:20–21?",
+    "cue": "Qual sequência revela o sentido de 2 Pedro 1:20–21?",
+    "feedbackCorrect": "Certo: origem divina, recusa do particular, fala no Espírito.",
+    "feedbackWrong": {
+      "b": "Essa etapa não revela o sentido nesta ordem.",
+      "c": "O falar no Espírito é o desfecho da sequência."
+    },
+    "passageText": "conhecendo primeiro isto, que nenhuma profecia da Escritura é de particular interpretação, porque a profecia jamais foi dada pela vontade dos homens, mas os homens da parte de Deus falavam, movidos pelo Espírito Santo.",
+    "trail": "hermeneutica",
+    "section": "hm-02-contexto",
+    "id": "hermeneutica-pro-hm-02-contexto-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "a profecia não nasce da vontade humana"
+      },
+      {
+        "id": "b",
+        "text": "por isso não se lê como interpretação particular"
+      },
+      {
+        "id": "c",
+        "text": "homens falaram da parte de Deus no Espírito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Pedro 1:20–21",
+    "learningObjective": "Perceber que nenhuma profecia da Escritura é de particular interpretação: homens falaram da parte de Deus, movidos pelo Espírito.",
+    "evidence": [
+      "2 Pedro 1:20",
+      "2 Pedro 1:21"
+    ],
+    "type": "complete",
+    "question": "Complete: \"nenhuma profecia da Escritura é de ___ interpretação.\"",
+    "prompt": "Complete: \"nenhuma profecia da Escritura é de ___ interpretação.\"",
+    "cue": "Complete: \"nenhuma profecia da Escritura é de ___ interpretação.\"",
+    "feedbackCorrect": "Certo: não é de particular interpretação.",
+    "feedbackWrong": {
+      "b": "Primeiro introduz o aviso, não esta lacuna.",
+      "c": "Santo qualifica o Espírito, não a interpretação."
+    },
+    "passageText": "conhecendo primeiro isto, que nenhuma profecia da Escritura é de particular interpretação, porque a profecia jamais foi dada pela vontade dos homens, mas os homens da parte de Deus falavam, movidos pelo Espírito Santo.",
+    "trail": "hermeneutica",
+    "section": "hm-02-contexto",
+    "id": "hermeneutica-pro-hm-02-contexto-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "particular"
+      },
+      {
+        "id": "b",
+        "text": "primeiro"
+      },
+      {
+        "id": "c",
+        "text": "Santo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "nenhuma profecia da Escritura é de ___ interpretação."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Pedro 1:20–21",
+    "learningObjective": "Perceber que nenhuma profecia da Escritura é de particular interpretação: homens falaram da parte de Deus, movidos pelo Espírito.",
+    "evidence": [
+      "2 Pedro 1:20",
+      "2 Pedro 1:21"
+    ],
+    "type": "connect",
+    "question": "O que 2 Pedro 1:20–21 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Pedro 1:20–21 comunica que se liga a este contexto?",
+    "cue": "O que 2 Pedro 1:20–21 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o Espírito guarda a Palavra da leitura particular.",
+    "feedbackWrong": {
+      "a": "O texto não faz do leitor o dono da profecia.",
+      "c": "Não reduz a Escritura a um ditado mecânico sem homens."
+    },
+    "passageText": "conhecendo primeiro isto, que nenhuma profecia da Escritura é de particular interpretação, porque a profecia jamais foi dada pela vontade dos homens, mas os homens da parte de Deus falavam, movidos pelo Espírito Santo.",
+    "trail": "hermeneutica",
+    "section": "hm-02-contexto",
+    "id": "hermeneutica-pro-hm-02-contexto-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leitor dono da profecia"
+      },
+      {
+        "id": "b",
+        "text": "Espírito e texto juntos"
+      },
+      {
+        "id": "c",
+        "text": "Homens mudos, só ditado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageA": {
+      "ref": "2 Pedro 1:20–21",
+      "text": "conhecendo primeiro isto, que nenhuma profecia da Escritura é de particular interpretação, porque a profecia jamais foi dada pela vontade dos homens, mas os homens da parte de Deus falavam, movidos pelo Espírito Santo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Hermenêutica fiel ouve homens que falaram da parte de Deus, não o capricho particular."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lucas 24:27",
+    "learningObjective": "Ver que Jesus, começando por Moisés e pelos profetas, explica o que dele se achava dito em todas as Escrituras.",
+    "evidence": [
+      "Lucas 24:27"
+    ],
+    "type": "true_false",
+    "question": "Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "prompt": "Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "cue": "Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "feedbackCorrect": "Certo: Lucas 24:27 registra exatamente essa explicação.",
+    "feedbackWrong": {
+      "false": "O versículo começa por Moisés e os profetas e aponta para ele."
+    },
+    "passageText": "Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-03-cristo",
+    "id": "hermeneutica-sem-hm-03-cristo-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lucas 24:27",
+    "learningObjective": "Ver que Jesus, começando por Moisés e pelos profetas, explica o que dele se achava dito em todas as Escrituras.",
+    "evidence": [
+      "Lucas 24:27"
+    ],
+    "type": "tap",
+    "question": "Em Lucas 24:27, toque a palavra que falta em \"Começando por ___ e por todos os profetas\"?",
+    "prompt": "Em Lucas 24:27, toque a palavra que falta em \"Começando por ___ e por todos os profetas\"?",
+    "cue": "Em Lucas 24:27, toque a palavra que falta em \"Começando por ___ e por todos os profetas\"?",
+    "feedbackCorrect": "Exato: começando por Moisés.",
+    "feedbackWrong": {
+      "b": "Profetas vêm depois de Moisés neste trecho.",
+      "c": "Escrituras fecha o versículo, não esta lacuna."
+    },
+    "passageText": "Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-03-cristo",
+    "id": "hermeneutica-sem-hm-03-cristo-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "Moisés"
+      },
+      {
+        "id": "b",
+        "text": "profetas"
+      },
+      {
+        "id": "c",
+        "text": "Escrituras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Começando por ___ e por todos os profetas"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lucas 24:27",
+    "learningObjective": "Ver que Jesus, começando por Moisés e pelos profetas, explica o que dele se achava dito em todas as Escrituras.",
+    "evidence": [
+      "Lucas 24:27"
+    ],
+    "type": "choice",
+    "question": "O que Jesus explicou a partir de Moisés e dos profetas, segundo Lucas 24:27?",
+    "prompt": "O que Jesus explicou a partir de Moisés e dos profetas, segundo Lucas 24:27?",
+    "cue": "O que Jesus explicou a partir de Moisés e dos profetas, segundo Lucas 24:27?",
+    "feedbackCorrect": "Certo: o que dele se achava dito em todas as Escrituras.",
+    "feedbackWrong": {
+      "a": "O texto não fala de calendário de festas.",
+      "c": "Não há aqui uma lista de reis de Israel.",
+      "d": "O versículo não descreve regras de jejum."
+    },
+    "passageText": "Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-03-cristo",
+    "id": "hermeneutica-sem-hm-03-cristo-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "O calendário das festas de Israel no deserto."
+      },
+      {
+        "id": "b",
+        "text": "O que dele se achava dito em todas as Escrituras."
+      },
+      {
+        "id": "c",
+        "text": "A lista dos reis de Israel até Davi."
+      },
+      {
+        "id": "d",
+        "text": "As regras de jejum dos fariseus."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lucas 24:27",
+    "learningObjective": "Ver que Jesus, começando por Moisés e pelos profetas, explica o que dele se achava dito em todas as Escrituras.",
+    "evidence": [
+      "Lucas 24:27"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Lucas 24:27?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Lucas 24:27?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Lucas 24:27?",
+    "feedbackCorrect": "Certo: começa por Moisés e os profetas, explica o que é dele.",
+    "feedbackWrong": {
+      "b": "Essa peça não vem primeiro no versículo.",
+      "c": "Releia: as Escrituras fecham a frase."
+    },
+    "passageText": "Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-03-cristo",
+    "id": "hermeneutica-sem-hm-03-cristo-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Começando por Moisés e por todos os profetas"
+      },
+      {
+        "id": "b",
+        "text": "explicou-lhes o que dele se achava dito"
+      },
+      {
+        "id": "c",
+        "text": "em todas as Escrituras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lucas 24:27",
+    "learningObjective": "Ver que Jesus, começando por Moisés e pelos profetas, explica o que dele se achava dito em todas as Escrituras.",
+    "evidence": [
+      "Lucas 24:27"
+    ],
+    "type": "complete",
+    "question": "Complete: \"explicou-lhes o que dele se achava dito em todas as ___.\"",
+    "prompt": "Complete: \"explicou-lhes o que dele se achava dito em todas as ___.\"",
+    "cue": "Complete: \"explicou-lhes o que dele se achava dito em todas as ___.\"",
+    "feedbackCorrect": "Certo: em todas as Escrituras.",
+    "feedbackWrong": {
+      "b": "Moisés é o ponto de partida, não esta lacuna.",
+      "c": "Profetas acompanham Moisés, não fecham a frase."
+    },
+    "passageText": "Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-03-cristo",
+    "id": "hermeneutica-sem-hm-03-cristo-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "Escrituras"
+      },
+      {
+        "id": "b",
+        "text": "Moisés"
+      },
+      {
+        "id": "c",
+        "text": "profetas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "explicou-lhes o que dele se achava dito em todas as ___."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lucas 24:27",
+    "learningObjective": "Ver que Jesus, começando por Moisés e pelos profetas, explica o que dele se achava dito em todas as Escrituras.",
+    "evidence": [
+      "Lucas 24:27"
+    ],
+    "type": "connect",
+    "question": "O que Lucas 24:27 comunica que se liga a este contexto?",
+    "prompt": "O que Lucas 24:27 comunica que se liga a este contexto?",
+    "cue": "O que Lucas 24:27 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Moisés e os profetas falam dele.",
+    "feedbackWrong": {
+      "b": "O texto não trata Cristo como tema opcional.",
+      "c": "Não se limita a um único livro isolado."
+    },
+    "passageText": "Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-03-cristo",
+    "id": "hermeneutica-sem-hm-03-cristo-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Moisés e profetas falam dele"
+      },
+      {
+        "id": "b",
+        "text": "Cristo como tema opcional"
+      },
+      {
+        "id": "c",
+        "text": "Um livro isolado basta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Lucas 24:27",
+      "text": "Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Cristo no centro: Moisés e os profetas falam dele — hermenêutica que encontra Jesus nas Escrituras."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lucas 24:27",
+    "learningObjective": "Ver que Jesus, começando por Moisés e pelos profetas, explica o que dele se achava dito em todas as Escrituras.",
+    "evidence": [
+      "Lucas 24:27"
+    ],
+    "type": "true_false",
+    "question": "Em Lucas 24:27, Jesus começa a explicação pelos salmos e deixa Moisés de lado.",
+    "prompt": "Em Lucas 24:27, Jesus começa a explicação pelos salmos e deixa Moisés de lado.",
+    "cue": "Em Lucas 24:27, Jesus começa a explicação pelos salmos e deixa Moisés de lado.",
+    "feedbackCorrect": "Certo: o texto diz que começou por Moisés e por todos os profetas.",
+    "feedbackWrong": {
+      "true": "Lucas 24:27 começa explicitamente por Moisés e os profetas."
+    },
+    "passageText": "Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-03-cristo",
+    "id": "hermeneutica-cam-hm-03-cristo-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lucas 24:27",
+    "learningObjective": "Ver que Jesus, começando por Moisés e pelos profetas, explica o que dele se achava dito em todas as Escrituras.",
+    "evidence": [
+      "Lucas 24:27"
+    ],
+    "type": "tap",
+    "question": "Em Lucas 24:27, toque a palavra que falta em \"explicou-lhes o que ___ se achava dito\"?",
+    "prompt": "Em Lucas 24:27, toque a palavra que falta em \"explicou-lhes o que ___ se achava dito\"?",
+    "cue": "Em Lucas 24:27, toque a palavra que falta em \"explicou-lhes o que ___ se achava dito\"?",
+    "feedbackCorrect": "Exato: o que dele se achava dito.",
+    "feedbackWrong": {
+      "a": "Começando abre o versículo, não esta lacuna.",
+      "c": "Todos qualifica os profetas, não esta lacuna."
+    },
+    "passageText": "Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-03-cristo",
+    "id": "hermeneutica-cam-hm-03-cristo-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "Começando"
+      },
+      {
+        "id": "b",
+        "text": "dele"
+      },
+      {
+        "id": "c",
+        "text": "todos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "template": "explicou-lhes o que ___ se achava dito"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lucas 24:27",
+    "learningObjective": "Ver que Jesus, começando por Moisés e pelos profetas, explica o que dele se achava dito em todas as Escrituras.",
+    "evidence": [
+      "Lucas 24:27"
+    ],
+    "type": "choice",
+    "question": "Como Lucas 24:27 relaciona Lei, profetas e Jesus?",
+    "prompt": "Como Lucas 24:27 relaciona Lei, profetas e Jesus?",
+    "cue": "Como Lucas 24:27 relaciona Lei, profetas e Jesus?",
+    "feedbackCorrect": "Certo: Lei e profetas são o palco onde se acha o que é dele.",
+    "feedbackWrong": {
+      "a": "O texto não trata Moisés como contrário a Jesus.",
+      "c": "Não reduz a explicação a um único versículo isolado.",
+      "d": "Não apresenta os profetas como testemunhas contra ele."
+    },
+    "passageText": "Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-03-cristo",
+    "id": "hermeneutica-cam-hm-03-cristo-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Moisés corrige Jesus, e os profetas ficam de fora."
+      },
+      {
+        "id": "b",
+        "text": "Lei e profetas mostram o que se achava dito a respeito dele."
+      },
+      {
+        "id": "c",
+        "text": "Só um versículo messiânico isolado recebe explicação."
+      },
+      {
+        "id": "d",
+        "text": "Os profetas falam contra ele, e Moisés permanece neutro."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lucas 24:27",
+    "learningObjective": "Ver que Jesus, começando por Moisés e pelos profetas, explica o que dele se achava dito em todas as Escrituras.",
+    "evidence": [
+      "Lucas 24:27"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Lucas 24:27?",
+    "prompt": "Como se encadeiam os eventos de Lucas 24:27?",
+    "cue": "Como se encadeiam os eventos de Lucas 24:27?",
+    "feedbackCorrect": "Certo: da Lei e dos profetas à explicação do que é dele.",
+    "feedbackWrong": {
+      "b": "Essa etapa não ocupa esse lugar no encadeamento.",
+      "c": "O alcance em todas as Escrituras é o desfecho."
+    },
+    "passageText": "Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-03-cristo",
+    "id": "hermeneutica-cam-hm-03-cristo-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "partir de Moisés e de todos os profetas"
+      },
+      {
+        "id": "b",
+        "text": "explicar o que se achava dito a respeito dele"
+      },
+      {
+        "id": "c",
+        "text": "abranger todas as Escrituras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lucas 24:27",
+    "learningObjective": "Ver que Jesus, começando por Moisés e pelos profetas, explica o que dele se achava dito em todas as Escrituras.",
+    "evidence": [
+      "Lucas 24:27"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Começando por Moisés e por todos os ___, explicou-lhes.\"",
+    "prompt": "Complete: \"Começando por Moisés e por todos os ___, explicou-lhes.\"",
+    "cue": "Complete: \"Começando por Moisés e por todos os ___, explicou-lhes.\"",
+    "feedbackCorrect": "Certo: por todos os profetas.",
+    "feedbackWrong": {
+      "b": "Escrituras fecha o versículo, não esta lacuna.",
+      "c": "Dele aponta para Jesus, não para este grupo."
+    },
+    "passageText": "Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-03-cristo",
+    "id": "hermeneutica-cam-hm-03-cristo-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "profetas"
+      },
+      {
+        "id": "b",
+        "text": "Escrituras"
+      },
+      {
+        "id": "c",
+        "text": "dele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Começando por Moisés e por todos os ___, explicou-lhes."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lucas 24:27",
+    "learningObjective": "Ver que Jesus, começando por Moisés e pelos profetas, explica o que dele se achava dito em todas as Escrituras.",
+    "evidence": [
+      "Lucas 24:27"
+    ],
+    "type": "connect",
+    "question": "O que Lucas 24:27 comunica que se liga a este contexto?",
+    "prompt": "O que Lucas 24:27 comunica que se liga a este contexto?",
+    "cue": "O que Lucas 24:27 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a Escritura inteira participa da história que aponta para ele.",
+    "feedbackWrong": {
+      "a": "O texto não restringe Cristo a um único livro.",
+      "c": "Não trata a Lei como palco vazio de Cristo."
+    },
+    "passageText": "Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-03-cristo",
+    "id": "hermeneutica-cam-hm-03-cristo-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo só num livro"
+      },
+      {
+        "id": "b",
+        "text": "Escrituras inteiras falam dele"
+      },
+      {
+        "id": "c",
+        "text": "Lei vazia de Cristo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageA": {
+      "ref": "Lucas 24:27",
+      "text": "Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Toda a Bíblia participa da grande história que encontra seu centro em Cristo."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lucas 24:27",
+    "learningObjective": "Ver que Jesus, começando por Moisés e pelos profetas, explica o que dele se achava dito em todas as Escrituras.",
+    "evidence": [
+      "Lucas 24:27"
+    ],
+    "type": "true_false",
+    "question": "Lucas 24:27 apresenta uma hermenêutica que encontra Jesus no conjunto das Escrituras, a partir de Moisés e dos profetas.",
+    "prompt": "Lucas 24:27 apresenta uma hermenêutica que encontra Jesus no conjunto das Escrituras, a partir de Moisés e dos profetas.",
+    "cue": "Lucas 24:27 apresenta uma hermenêutica que encontra Jesus no conjunto das Escrituras, a partir de Moisés e dos profetas.",
+    "feedbackCorrect": "Certo: ele explica o que dele se achava dito em todas as Escrituras.",
+    "feedbackWrong": {
+      "false": "O versículo une Moisés, profetas e todas as Escrituras a ele."
+    },
+    "passageText": "Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-03-cristo",
+    "id": "hermeneutica-pro-hm-03-cristo-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lucas 24:27",
+    "learningObjective": "Ver que Jesus, começando por Moisés e pelos profetas, explica o que dele se achava dito em todas as Escrituras.",
+    "evidence": [
+      "Lucas 24:27"
+    ],
+    "type": "tap",
+    "question": "Em Lucas 24:27, toque a palavra que falta em \"o que dele se ___ dito em todas as Escrituras\"?",
+    "prompt": "Em Lucas 24:27, toque a palavra que falta em \"o que dele se ___ dito em todas as Escrituras\"?",
+    "cue": "Em Lucas 24:27, toque a palavra que falta em \"o que dele se ___ dito em todas as Escrituras\"?",
+    "feedbackCorrect": "Exato: o que dele se achava dito.",
+    "feedbackWrong": {
+      "a": "Começando descreve o método, não esta lacuna.",
+      "c": "Profetas nomeia as testemunhas, não o verbo aqui."
+    },
+    "passageText": "Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-03-cristo",
+    "id": "hermeneutica-pro-hm-03-cristo-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "Começando"
+      },
+      {
+        "id": "b",
+        "text": "achava"
+      },
+      {
+        "id": "c",
+        "text": "profetas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "template": "o que dele se ___ dito em todas as Escrituras"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lucas 24:27",
+    "learningObjective": "Ver que Jesus, começando por Moisés e pelos profetas, explica o que dele se achava dito em todas as Escrituras.",
+    "evidence": [
+      "Lucas 24:27"
+    ],
+    "type": "choice",
+    "question": "Que erro Lucas 24:27 impede na leitura da Bíblia?",
+    "prompt": "Que erro Lucas 24:27 impede na leitura da Bíblia?",
+    "cue": "Que erro Lucas 24:27 impede na leitura da Bíblia?",
+    "feedbackCorrect": "Certo: impede tratar Cristo como alheio a Moisés e aos profetas.",
+    "feedbackWrong": {
+      "a": "O texto não apaga Moisés; começa por ele.",
+      "c": "Não reduz Jesus a um comentário moral avulso.",
+      "d": "Não autoriza ignorar o Antigo Testamento."
+    },
+    "passageText": "Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-03-cristo",
+    "id": "hermeneutica-pro-hm-03-cristo-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Apagar Moisés para ficar só com os evangelhos."
+      },
+      {
+        "id": "b",
+        "text": "Ler Moisés e os profetas como se não falassem dele."
+      },
+      {
+        "id": "c",
+        "text": "Tratar Jesus como mestre moral sem as Escrituras."
+      },
+      {
+        "id": "d",
+        "text": "Substituir a Bíblia por visões particulares."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lucas 24:27",
+    "learningObjective": "Ver que Jesus, começando por Moisés e pelos profetas, explica o que dele se achava dito em todas as Escrituras.",
+    "evidence": [
+      "Lucas 24:27"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Lucas 24:27?",
+    "prompt": "Qual sequência revela o sentido de Lucas 24:27?",
+    "cue": "Qual sequência revela o sentido de Lucas 24:27?",
+    "feedbackCorrect": "Certo: da Lei e dos profetas ao Cristo em toda a Escritura.",
+    "feedbackWrong": {
+      "b": "Essa etapa não revela o sentido nesta ordem.",
+      "c": "O alcance em todas as Escrituras é o desfecho."
+    },
+    "passageText": "Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-03-cristo",
+    "id": "hermeneutica-pro-hm-03-cristo-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "partir da Lei e dos profetas"
+      },
+      {
+        "id": "b",
+        "text": "mostrar o que se achava dito a respeito dele"
+      },
+      {
+        "id": "c",
+        "text": "ler o conjunto das Escrituras com esse centro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lucas 24:27",
+    "learningObjective": "Ver que Jesus, começando por Moisés e pelos profetas, explica o que dele se achava dito em todas as Escrituras.",
+    "evidence": [
+      "Lucas 24:27"
+    ],
+    "type": "complete",
+    "question": "Complete: \"___, explicou-lhes o que dele se achava dito em todas as Escrituras.\"",
+    "prompt": "Complete: \"___, explicou-lhes o que dele se achava dito em todas as Escrituras.\"",
+    "cue": "Complete: \"___, explicou-lhes o que dele se achava dito em todas as Escrituras.\"",
+    "feedbackCorrect": "Certo: Começando por Moisés e por todos os profetas.",
+    "feedbackWrong": {
+      "b": "Escrituras é o alcance, não o gerúndio inicial.",
+      "c": "Dele aponta para Jesus, não abre a frase."
+    },
+    "passageText": "Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-03-cristo",
+    "id": "hermeneutica-pro-hm-03-cristo-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "Começando"
+      },
+      {
+        "id": "b",
+        "text": "Escrituras"
+      },
+      {
+        "id": "c",
+        "text": "dele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "___ por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lucas 24:27",
+    "learningObjective": "Ver que Jesus, começando por Moisés e pelos profetas, explica o que dele se achava dito em todas as Escrituras.",
+    "evidence": [
+      "Lucas 24:27"
+    ],
+    "type": "connect",
+    "question": "O que Lucas 24:27 comunica que se liga a este contexto?",
+    "prompt": "O que Lucas 24:27 comunica que se liga a este contexto?",
+    "cue": "O que Lucas 24:27 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: hermenêutica cristã encontra Jesus nas Escrituras.",
+    "feedbackWrong": {
+      "a": "O texto não coloca Cristo fora das Escrituras.",
+      "c": "Não opõe a Lei ao Evangelho; começa por Moisés."
+    },
+    "passageText": "Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-03-cristo",
+    "id": "hermeneutica-pro-hm-03-cristo-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo fora da Escritura"
+      },
+      {
+        "id": "b",
+        "text": "Jesus no centro da leitura"
+      },
+      {
+        "id": "c",
+        "text": "Lei contra o Evangelho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageA": {
+      "ref": "Lucas 24:27",
+      "text": "Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Hermenêutica que encontra Jesus nas Escrituras: Moisés e os profetas falam dele."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 8:8; Lucas 24:27",
+    "learningObjective": "Unir o sentido dado na leitura (Neemias 8:8) e Cristo em todas as Escrituras (Lucas 24:27) numa hermenêutica sábia.",
+    "evidence": [
+      "Neemias 8:8",
+      "Lucas 24:27"
+    ],
+    "type": "true_false",
+    "question": "Leram no livro da lei de Deus distintamente; e, começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "prompt": "Leram no livro da lei de Deus distintamente; e, começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "cue": "Leram no livro da lei de Deus distintamente; e, começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "feedbackCorrect": "Certo: os dois trechos afirmam leitura com sentido e Cristo nas Escrituras.",
+    "feedbackWrong": {
+      "false": "Neemias 8:8 e Lucas 24:27 sustentam essa leitura combinada."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura. Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-boss",
+    "id": "hermeneutica-sem-hm-boss-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 8:8; Lucas 24:27",
+    "learningObjective": "Unir o sentido dado na leitura (Neemias 8:8) e Cristo em todas as Escrituras (Lucas 24:27) numa hermenêutica sábia.",
+    "evidence": [
+      "Neemias 8:8",
+      "Lucas 24:27"
+    ],
+    "type": "tap",
+    "question": "Em Neemias 8:8; Lucas 24:27, toque a palavra que falta em \"e deram o ___, de modo que se entendesse a leitura\"?",
+    "prompt": "Em Neemias 8:8; Lucas 24:27, toque a palavra que falta em \"e deram o ___, de modo que se entendesse a leitura\"?",
+    "cue": "Em Neemias 8:8; Lucas 24:27, toque a palavra que falta em \"e deram o ___, de modo que se entendesse a leitura\"?",
+    "feedbackCorrect": "Exato: deram o sentido.",
+    "feedbackWrong": {
+      "b": "Moisés abre Lucas 24:27, não esta lacuna de Neemias.",
+      "c": "Escrituras fecha Lucas 24:27, não esta lacuna."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura. Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-boss",
+    "id": "hermeneutica-sem-hm-boss-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "sentido"
+      },
+      {
+        "id": "b",
+        "text": "Moisés"
+      },
+      {
+        "id": "c",
+        "text": "Escrituras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "e deram o ___, de modo que se entendesse a leitura"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 8:8; Lucas 24:27",
+    "learningObjective": "Unir o sentido dado na leitura (Neemias 8:8) e Cristo em todas as Escrituras (Lucas 24:27) numa hermenêutica sábia.",
+    "evidence": [
+      "Neemias 8:8",
+      "Lucas 24:27"
+    ],
+    "type": "choice",
+    "question": "O que os dois trechos afirmam juntos sobre a leitura da Escritura?",
+    "prompt": "O que os dois trechos afirmam juntos sobre a leitura da Escritura?",
+    "cue": "O que os dois trechos afirmam juntos sobre a leitura da Escritura?",
+    "feedbackCorrect": "Certo: dão o sentido e mostram o que se achava dito dele.",
+    "feedbackWrong": {
+      "a": "Os textos não descrevem uma leitura muda.",
+      "c": "Não há aqui uma leitura só de genealogias.",
+      "d": "O palco não é um debate sobre calendário."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura. Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-boss",
+    "id": "hermeneutica-sem-hm-boss-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leram em silêncio e guardaram o livro fechado."
+      },
+      {
+        "id": "b",
+        "text": "Deram o sentido e explicaram o que dele se achava dito."
+      },
+      {
+        "id": "c",
+        "text": "Leram apenas as genealogias, sem explicar nada."
+      },
+      {
+        "id": "d",
+        "text": "Discutiram o calendário das festas, sem a Lei."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 8:8; Lucas 24:27",
+    "learningObjective": "Unir o sentido dado na leitura (Neemias 8:8) e Cristo em todas as Escrituras (Lucas 24:27) numa hermenêutica sábia.",
+    "evidence": [
+      "Neemias 8:8",
+      "Lucas 24:27"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Neemias 8:8; Lucas 24:27?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Neemias 8:8; Lucas 24:27?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Neemias 8:8; Lucas 24:27?",
+    "feedbackCorrect": "Certo: ler com sentido e, então, ver Cristo nas Escrituras.",
+    "feedbackWrong": {
+      "b": "Essa peça não vem nesse lugar na combinação dos textos.",
+      "c": "Lucas 24:27 fecha o palco, não o abre."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura. Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-boss",
+    "id": "hermeneutica-sem-hm-boss-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leram no livro da lei de Deus distintamente"
+      },
+      {
+        "id": "b",
+        "text": "e deram o sentido, de modo que se entendesse a leitura"
+      },
+      {
+        "id": "c",
+        "text": "Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 8:8; Lucas 24:27",
+    "learningObjective": "Unir o sentido dado na leitura (Neemias 8:8) e Cristo em todas as Escrituras (Lucas 24:27) numa hermenêutica sábia.",
+    "evidence": [
+      "Neemias 8:8",
+      "Lucas 24:27"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Começando por Moisés e por todos os profetas, ___ o que dele se achava dito.\"",
+    "prompt": "Complete: \"Começando por Moisés e por todos os profetas, ___ o que dele se achava dito.\"",
+    "cue": "Complete: \"Começando por Moisés e por todos os profetas, ___ o que dele se achava dito.\"",
+    "feedbackCorrect": "Certo: explicou-lhes o que dele se achava dito.",
+    "feedbackWrong": {
+      "b": "Leram é o verbo de Neemias 8:8, não esta lacuna.",
+      "c": "Deram o sentido está em Neemias, não neste verbo."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura. Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-boss",
+    "id": "hermeneutica-sem-hm-boss-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "explicou-lhes"
+      },
+      {
+        "id": "b",
+        "text": "Leram"
+      },
+      {
+        "id": "c",
+        "text": "deram"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Começando por Moisés e por todos os profetas, ___ o que dele se achava dito."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Neemias 8:8; Lucas 24:27",
+    "learningObjective": "Unir o sentido dado na leitura (Neemias 8:8) e Cristo em todas as Escrituras (Lucas 24:27) numa hermenêutica sábia.",
+    "evidence": [
+      "Neemias 8:8",
+      "Lucas 24:27"
+    ],
+    "type": "connect",
+    "question": "O que Neemias 8:8; Lucas 24:27 comunica que se liga a este contexto?",
+    "prompt": "O que Neemias 8:8; Lucas 24:27 comunica que se liga a este contexto?",
+    "cue": "O que Neemias 8:8; Lucas 24:27 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: sentido da leitura e Cristo nas Escrituras.",
+    "feedbackWrong": {
+      "b": "Os textos não celebram o som sem entendimento.",
+      "c": "Não se trata de Cristo fora da Escritura."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura. Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-boss",
+    "id": "hermeneutica-sem-hm-boss-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sentido e Cristo juntos"
+      },
+      {
+        "id": "b",
+        "text": "Som sem entendimento"
+      },
+      {
+        "id": "c",
+        "text": "Cristo fora da Escritura"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Neemias 8:8; Lucas 24:27",
+      "text": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura. Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Leia com sabedoria: entender o sentido e ver Cristo em toda a Escritura."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 8:8; Lucas 24:27",
+    "learningObjective": "Unir o sentido dado na leitura (Neemias 8:8) e Cristo em todas as Escrituras (Lucas 24:27) numa hermenêutica sábia.",
+    "evidence": [
+      "Neemias 8:8",
+      "Lucas 24:27"
+    ],
+    "type": "true_false",
+    "question": "Os dois trechos ensinam que basta ouvir o som da Lei, sem sentido e sem Cristo nas Escrituras.",
+    "prompt": "Os dois trechos ensinam que basta ouvir o som da Lei, sem sentido e sem Cristo nas Escrituras.",
+    "cue": "Os dois trechos ensinam que basta ouvir o som da Lei, sem sentido e sem Cristo nas Escrituras.",
+    "feedbackCorrect": "Certo: Neemias pede sentido e Lucas mostra Cristo nas Escrituras.",
+    "feedbackWrong": {
+      "true": "Os textos unem entendimento do sentido e leitura cristológica."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura. Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-boss",
+    "id": "hermeneutica-cam-hm-boss-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 8:8; Lucas 24:27",
+    "learningObjective": "Unir o sentido dado na leitura (Neemias 8:8) e Cristo em todas as Escrituras (Lucas 24:27) numa hermenêutica sábia.",
+    "evidence": [
+      "Neemias 8:8",
+      "Lucas 24:27"
+    ],
+    "type": "tap",
+    "question": "Em Neemias 8:8; Lucas 24:27, toque a palavra que falta em \"de modo que se ___ a leitura\"?",
+    "prompt": "Em Neemias 8:8; Lucas 24:27, toque a palavra que falta em \"de modo que se ___ a leitura\"?",
+    "cue": "Em Neemias 8:8; Lucas 24:27, toque a palavra que falta em \"de modo que se ___ a leitura\"?",
+    "feedbackCorrect": "Exato: para que se entendesse a leitura.",
+    "feedbackWrong": {
+      "a": "Distintamente descreve como leram, não esta lacuna.",
+      "c": "Começando abre Lucas 24:27, não esta lacuna."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura. Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-boss",
+    "id": "hermeneutica-cam-hm-boss-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "distintamente"
+      },
+      {
+        "id": "b",
+        "text": "entendesse"
+      },
+      {
+        "id": "c",
+        "text": "Começando"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "template": "de modo que se ___ a leitura"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 8:8; Lucas 24:27",
+    "learningObjective": "Unir o sentido dado na leitura (Neemias 8:8) e Cristo em todas as Escrituras (Lucas 24:27) numa hermenêutica sábia.",
+    "evidence": [
+      "Neemias 8:8",
+      "Lucas 24:27"
+    ],
+    "type": "choice",
+    "question": "Como Neemias 8:8 e Lucas 24:27 se encadeiam na leitura sábia?",
+    "prompt": "Como Neemias 8:8 e Lucas 24:27 se encadeiam na leitura sábia?",
+    "cue": "Como Neemias 8:8 e Lucas 24:27 se encadeiam na leitura sábia?",
+    "feedbackCorrect": "Certo: entender o sentido e ver o que as Escrituras dizem dele.",
+    "feedbackWrong": {
+      "a": "Lucas não anula Neemias; os dois se somam.",
+      "c": "Não se trata de escolher um e descartar o outro.",
+      "d": "O sentido dado não dispensa encontrar Cristo no texto."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura. Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-boss",
+    "id": "hermeneutica-cam-hm-boss-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lucas substitui Neemias: o sentido da Lei já não importa."
+      },
+      {
+        "id": "b",
+        "text": "Entender o sentido e ver o que dele se achava dito nas Escrituras."
+      },
+      {
+        "id": "c",
+        "text": "Neemias basta, e Moisés não precisa ser lido em Cristo."
+      },
+      {
+        "id": "d",
+        "text": "Dar o sentido dispensa explicar o que as Escrituras dizem dele."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 8:8; Lucas 24:27",
+    "learningObjective": "Unir o sentido dado na leitura (Neemias 8:8) e Cristo em todas as Escrituras (Lucas 24:27) numa hermenêutica sábia.",
+    "evidence": [
+      "Neemias 8:8",
+      "Lucas 24:27"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Neemias 8:8; Lucas 24:27?",
+    "prompt": "Como se encadeiam os eventos de Neemias 8:8; Lucas 24:27?",
+    "cue": "Como se encadeiam os eventos de Neemias 8:8; Lucas 24:27?",
+    "feedbackCorrect": "Certo: clareza, sentido e Cristo no conjunto das Escrituras.",
+    "feedbackWrong": {
+      "b": "Essa etapa não ocupa esse lugar no encadeamento.",
+      "c": "A explicação cristológica é o desfecho, não o início."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura. Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-boss",
+    "id": "hermeneutica-cam-hm-boss-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "ler a Lei distintamente"
+      },
+      {
+        "id": "b",
+        "text": "dar o sentido para que se entenda"
+      },
+      {
+        "id": "c",
+        "text": "explicar o que dele se achava dito em todas as Escrituras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 8:8; Lucas 24:27",
+    "learningObjective": "Unir o sentido dado na leitura (Neemias 8:8) e Cristo em todas as Escrituras (Lucas 24:27) numa hermenêutica sábia.",
+    "evidence": [
+      "Neemias 8:8",
+      "Lucas 24:27"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Leram no livro da lei de Deus ___.\"",
+    "prompt": "Complete: \"Leram no livro da lei de Deus ___.\"",
+    "cue": "Complete: \"Leram no livro da lei de Deus ___.\"",
+    "feedbackCorrect": "Certo: leram distintamente.",
+    "feedbackWrong": {
+      "b": "Explicou-lhes é o verbo de Lucas 24:27.",
+      "c": "Profetas pertence a Lucas 24:27, não a esta lacuna."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura. Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-boss",
+    "id": "hermeneutica-cam-hm-boss-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "distintamente"
+      },
+      {
+        "id": "b",
+        "text": "explicou-lhes"
+      },
+      {
+        "id": "c",
+        "text": "profetas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Leram no livro da lei de Deus ___."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Neemias 8:8; Lucas 24:27",
+    "learningObjective": "Unir o sentido dado na leitura (Neemias 8:8) e Cristo em todas as Escrituras (Lucas 24:27) numa hermenêutica sábia.",
+    "evidence": [
+      "Neemias 8:8",
+      "Lucas 24:27"
+    ],
+    "type": "connect",
+    "question": "O que Neemias 8:8; Lucas 24:27 comunica que se liga a este contexto?",
+    "prompt": "O que Neemias 8:8; Lucas 24:27 comunica que se liga a este contexto?",
+    "cue": "O que Neemias 8:8; Lucas 24:27 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: sabedoria une entendimento e Cristo no texto.",
+    "feedbackWrong": {
+      "a": "Os textos não separam clareza e Cristo.",
+      "c": "Não autorizam leitura particular sem o texto."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura. Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-boss",
+    "id": "hermeneutica-cam-hm-boss-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Clareza ou Cristo, nunca ambos"
+      },
+      {
+        "id": "b",
+        "text": "Entender e ver Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Leitura particular sem texto"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageA": {
+      "ref": "Neemias 8:8; Lucas 24:27",
+      "text": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura. Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Leitura sábia: o sentido é dado ao povo e Cristo é visto em toda a Escritura."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 8:8; Lucas 24:27",
+    "learningObjective": "Unir o sentido dado na leitura (Neemias 8:8) e Cristo em todas as Escrituras (Lucas 24:27) numa hermenêutica sábia.",
+    "evidence": [
+      "Neemias 8:8",
+      "Lucas 24:27"
+    ],
+    "type": "true_false",
+    "question": "Ler com sabedoria, segundo Neemias 8:8 e Lucas 24:27, é entender o sentido e ver Cristo em toda a Escritura.",
+    "prompt": "Ler com sabedoria, segundo Neemias 8:8 e Lucas 24:27, é entender o sentido e ver Cristo em toda a Escritura.",
+    "cue": "Ler com sabedoria, segundo Neemias 8:8 e Lucas 24:27, é entender o sentido e ver Cristo em toda a Escritura.",
+    "feedbackCorrect": "Certo: os dois textos formam essa hermenêutica.",
+    "feedbackWrong": {
+      "false": "Neemias pede entendimento; Lucas mostra Cristo nas Escrituras."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura. Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-boss",
+    "id": "hermeneutica-pro-hm-boss-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 8:8; Lucas 24:27",
+    "learningObjective": "Unir o sentido dado na leitura (Neemias 8:8) e Cristo em todas as Escrituras (Lucas 24:27) numa hermenêutica sábia.",
+    "evidence": [
+      "Neemias 8:8",
+      "Lucas 24:27"
+    ],
+    "type": "tap",
+    "question": "Em Neemias 8:8; Lucas 24:27, toque a palavra que falta em \"explicou-lhes o que ___ se achava dito em todas as Escrituras\"?",
+    "prompt": "Em Neemias 8:8; Lucas 24:27, toque a palavra que falta em \"explicou-lhes o que ___ se achava dito em todas as Escrituras\"?",
+    "cue": "Em Neemias 8:8; Lucas 24:27, toque a palavra que falta em \"explicou-lhes o que ___ se achava dito em todas as Escrituras\"?",
+    "feedbackCorrect": "Exato: o que dele se achava dito.",
+    "feedbackWrong": {
+      "a": "Sentido pertence a Neemias 8:8, não a esta lacuna.",
+      "c": "Leitura fecha Neemias 8:8, não esta lacuna."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura. Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-boss",
+    "id": "hermeneutica-pro-hm-boss-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "sentido"
+      },
+      {
+        "id": "b",
+        "text": "dele"
+      },
+      {
+        "id": "c",
+        "text": "leitura"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "template": "explicou-lhes o que ___ se achava dito em todas as Escrituras"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 8:8; Lucas 24:27",
+    "learningObjective": "Unir o sentido dado na leitura (Neemias 8:8) e Cristo em todas as Escrituras (Lucas 24:27) numa hermenêutica sábia.",
+    "evidence": [
+      "Neemias 8:8",
+      "Lucas 24:27"
+    ],
+    "type": "choice",
+    "question": "Que hermenêutica os dois textos sustentam juntos?",
+    "prompt": "Que hermenêutica os dois textos sustentam juntos?",
+    "cue": "Que hermenêutica os dois textos sustentam juntos?",
+    "feedbackCorrect": "Certo: entendimento do sentido e Cristo no conjunto da Escritura.",
+    "feedbackWrong": {
+      "a": "Lucas não autoriza ignorar o sentido da Lei.",
+      "c": "Neemias não reduz a Bíblia a um rito sem Cristo.",
+      "d": "Os textos não entregam o sentido ao capricho do leitor."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura. Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-boss",
+    "id": "hermeneutica-pro-hm-boss-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo no centro dispensa entender o sentido da Lei."
+      },
+      {
+        "id": "b",
+        "text": "Entender o sentido e ler toda a Escritura em Cristo."
+      },
+      {
+        "id": "c",
+        "text": "A Lei basta como rito, sem busca de Cristo no texto."
+      },
+      {
+        "id": "d",
+        "text": "Cada um inventa o sentido e depois procura Jesus nele."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 8:8; Lucas 24:27",
+    "learningObjective": "Unir o sentido dado na leitura (Neemias 8:8) e Cristo em todas as Escrituras (Lucas 24:27) numa hermenêutica sábia.",
+    "evidence": [
+      "Neemias 8:8",
+      "Lucas 24:27"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Neemias 8:8; Lucas 24:27?",
+    "prompt": "Qual sequência revela o sentido de Neemias 8:8; Lucas 24:27?",
+    "cue": "Qual sequência revela o sentido de Neemias 8:8; Lucas 24:27?",
+    "feedbackCorrect": "Certo: do texto entendido ao Cristo em toda a Escritura.",
+    "feedbackWrong": {
+      "b": "Essa etapa não revela o sentido nesta ordem.",
+      "c": "Ver Cristo no conjunto é o desfecho da sequência."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura. Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-boss",
+    "id": "hermeneutica-pro-hm-boss-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "receber a Lei lida com clareza"
+      },
+      {
+        "id": "b",
+        "text": "receber o sentido para entender a leitura"
+      },
+      {
+        "id": "c",
+        "text": "ver o que dele se achava dito em todas as Escrituras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 8:8; Lucas 24:27",
+    "learningObjective": "Unir o sentido dado na leitura (Neemias 8:8) e Cristo em todas as Escrituras (Lucas 24:27) numa hermenêutica sábia.",
+    "evidence": [
+      "Neemias 8:8",
+      "Lucas 24:27"
+    ],
+    "type": "complete",
+    "question": "Complete: \"explicou-lhes o que dele se achava dito em todas as ___.\"",
+    "prompt": "Complete: \"explicou-lhes o que dele se achava dito em todas as ___.\"",
+    "cue": "Complete: \"explicou-lhes o que dele se achava dito em todas as ___.\"",
+    "feedbackCorrect": "Certo: em todas as Escrituras.",
+    "feedbackWrong": {
+      "b": "Lei nomeia o livro em Neemias, não esta lacuna.",
+      "c": "Sentido é o que deram em Neemias 8:8."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura. Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-boss",
+    "id": "hermeneutica-pro-hm-boss-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "Escrituras"
+      },
+      {
+        "id": "b",
+        "text": "lei"
+      },
+      {
+        "id": "c",
+        "text": "sentido"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "explicou-lhes o que dele se achava dito em todas as ___."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Neemias 8:8; Lucas 24:27",
+    "learningObjective": "Unir o sentido dado na leitura (Neemias 8:8) e Cristo em todas as Escrituras (Lucas 24:27) numa hermenêutica sábia.",
+    "evidence": [
+      "Neemias 8:8",
+      "Lucas 24:27"
+    ],
+    "type": "connect",
+    "question": "O que Neemias 8:8; Lucas 24:27 comunica que se liga a este contexto?",
+    "prompt": "O que Neemias 8:8; Lucas 24:27 comunica que se liga a este contexto?",
+    "cue": "O que Neemias 8:8; Lucas 24:27 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: sabedoria lê com sentido e com Cristo no centro.",
+    "feedbackWrong": {
+      "a": "Os textos não separam entendimento e Cristo.",
+      "c": "Não celebram o prestígio do intérprete."
+    },
+    "passageText": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura. Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras.",
+    "trail": "hermeneutica",
+    "section": "hm-boss",
+    "id": "hermeneutica-pro-hm-boss-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sentido sem Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Sabedoria: sentido e Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Prestígio do intérprete"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageA": {
+      "ref": "Neemias 8:8; Lucas 24:27",
+      "text": "Leram no livro da lei de Deus distintamente; e deram o sentido, de modo que se entendesse a leitura. Começando por Moisés e por todos os profetas, explicou-lhes o que dele se achava dito em todas as Escrituras."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Leia com sabedoria: entender o sentido e ver Cristo em toda a Escritura."
+    }
+  }
+]

@@ -1,0 +1,2195 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Reconhecer que o Shema chama Israel a ouvir: Jeová é o único Deus.",
+    "evidence": [
+      "Deuteronômio 6:4"
+    ],
+    "type": "true_false",
+    "question": "Jeová, nosso Deus, é o único Deus.",
+    "feedbackCorrect": "Certo: o Shema confessa Jeová como o único Deus.",
+    "feedbackWrong": {
+      "false": "Releia Deuteronômio 6:4: Jeová é o único Deus."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "trail": "hebraico",
+    "section": "hb-01-antigo",
+    "id": "hebraico-sem-hb-01-antigo-01",
+    "prompt": "Jeová, nosso Deus, é o único Deus.",
+    "cue": "Jeová, nosso Deus, é o único Deus.",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Reconhecer que o Shema chama Israel a ouvir: Jeová é o único Deus.",
+    "evidence": [
+      "Deuteronômio 6:4"
+    ],
+    "type": "tap",
+    "question": "Em Deuteronômio 6:4, toque a palavra que falta em \"___, ó Israel; Jeová, nosso Deus, é o único Deus.\"?",
+    "feedbackCorrect": "Exato: o Shema começa com o chamado \"Ouve\".",
+    "feedbackWrong": {
+      "b": "Israel é quem deve ouvir, não o verbo inicial.",
+      "c": "\"único\" vem no fim da confissão, não nesta lacuna."
+    },
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "template": "___, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ouve"
+      },
+      {
+        "id": "b",
+        "text": "Israel"
+      },
+      {
+        "id": "c",
+        "text": "único"
+      }
+    ],
+    "correctOptionId": "a",
+    "trail": "hebraico",
+    "section": "hb-01-antigo",
+    "id": "hebraico-sem-hb-01-antigo-02",
+    "prompt": "Em Deuteronômio 6:4, toque a palavra que falta em \"___, ó Israel; Jeová, nosso Deus, é o único Deus.\"?",
+    "cue": "Em Deuteronômio 6:4, toque a palavra que falta em \"___, ó Israel; Jeová, nosso Deus, é o único Deus.\"?",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Reconhecer que o Shema chama Israel a ouvir: Jeová é o único Deus.",
+    "evidence": [
+      "Deuteronômio 6:4"
+    ],
+    "type": "choice",
+    "question": "Segundo Deuteronômio 6:4, quem é confessado como o único Deus?",
+    "feedbackCorrect": "Certo: o texto nomeia Jeová, nosso Deus, como o único.",
+    "feedbackWrong": {
+      "a": "O Shema não iguala Jeová aos ídolos das nações.",
+      "c": "Nada no versículo aponta para o rei de Israel.",
+      "d": "O texto diz \"o único Deus\", não um entre muitos."
+    },
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os ídolos das nações vizinhas."
+      },
+      {
+        "id": "b",
+        "text": "Jeová, o Deus de Israel."
+      },
+      {
+        "id": "c",
+        "text": "O rei sentado no trono de Israel."
+      },
+      {
+        "id": "d",
+        "text": "Um deus a mais no panteão de Israel."
+      }
+    ],
+    "correctOptionId": "b",
+    "trail": "hebraico",
+    "section": "hb-01-antigo",
+    "id": "hebraico-sem-hb-01-antigo-03",
+    "prompt": "Segundo Deuteronômio 6:4, quem é confessado como o único Deus?",
+    "cue": "Segundo Deuteronômio 6:4, quem é confessado como o único Deus?",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Reconhecer que o Shema chama Israel a ouvir: Jeová é o único Deus.",
+    "evidence": [
+      "Deuteronômio 6:4"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Deuteronômio 6:4?",
+    "feedbackCorrect": "Certo: ouvir, confessar Jeová, afirmar a unicidade.",
+    "feedbackWrong": {
+      "b": "Essa peça vem depois do chamado a Israel.",
+      "c": "Essa é a confissão final, não o começo."
+    },
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ouve, ó Israel"
+      },
+      {
+        "id": "b",
+        "text": "Jeová, nosso Deus"
+      },
+      {
+        "id": "c",
+        "text": "é o único Deus"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "trail": "hebraico",
+    "section": "hb-01-antigo",
+    "id": "hebraico-sem-hb-01-antigo-04",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Deuteronômio 6:4?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Deuteronômio 6:4?",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Reconhecer que o Shema chama Israel a ouvir: Jeová é o único Deus.",
+    "evidence": [
+      "Deuteronômio 6:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Ouve, ó Israel; Jeová, nosso Deus, é o ___ Deus.\"",
+    "feedbackCorrect": "Certo: o Shema afirma que Jeová é o único Deus.",
+    "feedbackWrong": {
+      "a": "Israel é o povo chamado, não o adjetivo desta lacuna.",
+      "c": "\"Ouve\" abre o versículo, não completa esta frase."
+    },
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "template": "Ouve, ó Israel; Jeová, nosso Deus, é o ___ Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Israel"
+      },
+      {
+        "id": "b",
+        "text": "único"
+      },
+      {
+        "id": "c",
+        "text": "Ouve"
+      }
+    ],
+    "correctOptionId": "b",
+    "trail": "hebraico",
+    "section": "hb-01-antigo",
+    "id": "hebraico-sem-hb-01-antigo-05",
+    "prompt": "Complete a frase: \"Ouve, ó Israel; Jeová, nosso Deus, é o ___ Deus.\"",
+    "cue": "Complete a frase: \"Ouve, ó Israel; Jeová, nosso Deus, é o ___ Deus.\"",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Reconhecer que o Shema chama Israel a ouvir: Jeová é o único Deus.",
+    "evidence": [
+      "Deuteronômio 6:4"
+    ],
+    "type": "connect",
+    "question": "O que Deuteronômio 6:4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o hebraico do AT chama Israel a ouvir o único.",
+    "feedbackWrong": {
+      "a": "O texto não iguala Jeová a muitos senhores.",
+      "c": "Israel é chamado a ouvir, não a calar."
+    },
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "passageA": {
+      "ref": "Deuteronômio 6:4",
+      "text": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A língua do AT chama Israel a ouvir: Jeová é o único Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Muitos senhores iguais"
+      },
+      {
+        "id": "b",
+        "text": "Chamado a ouvir"
+      },
+      {
+        "id": "c",
+        "text": "Silêncio de Israel"
+      }
+    ],
+    "correctOptionId": "b",
+    "trail": "hebraico",
+    "section": "hb-01-antigo",
+    "id": "hebraico-sem-hb-01-antigo-06",
+    "prompt": "O que Deuteronômio 6:4 comunica que se liga a este contexto?",
+    "cue": "O que Deuteronômio 6:4 comunica que se liga a este contexto?",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Reconhecer que o Shema chama Israel a ouvir: Jeová é o único Deus.",
+    "evidence": [
+      "Deuteronômio 6:4"
+    ],
+    "type": "true_false",
+    "question": "O Shema apresenta Jeová como um deus entre vários deuses de Israel.",
+    "feedbackCorrect": "Certo: o texto diz o contrário — Jeová é o único Deus.",
+    "feedbackWrong": {
+      "true": "Deuteronômio 6:4 confessa unicidade, não um panteão."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "trail": "hebraico",
+    "section": "hb-01-antigo",
+    "id": "hebraico-cam-hb-01-antigo-01",
+    "prompt": "O Shema apresenta Jeová como um deus entre vários deuses de Israel.",
+    "cue": "O Shema apresenta Jeová como um deus entre vários deuses de Israel.",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Reconhecer que o Shema chama Israel a ouvir: Jeová é o único Deus.",
+    "evidence": [
+      "Deuteronômio 6:4"
+    ],
+    "type": "tap",
+    "question": "Em Deuteronômio 6:4, toque a palavra que falta em \"Ouve, ó ___; Jeová, nosso Deus, é o único Deus.\"?",
+    "feedbackCorrect": "Exato: quem deve ouvir é Israel.",
+    "feedbackWrong": {
+      "a": "Jeová é o Deus confessado, não o vocativo desta lacuna.",
+      "b": "\"Deus\" fecha a confissão, não o chamado."
+    },
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "template": "Ouve, ó ___; Jeová, nosso Deus, é o único Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Deus"
+      },
+      {
+        "id": "c",
+        "text": "Israel"
+      }
+    ],
+    "correctOptionId": "c",
+    "trail": "hebraico",
+    "section": "hb-01-antigo",
+    "id": "hebraico-cam-hb-01-antigo-02",
+    "prompt": "Em Deuteronômio 6:4, toque a palavra que falta em \"Ouve, ó ___; Jeová, nosso Deus, é o único Deus.\"?",
+    "cue": "Em Deuteronômio 6:4, toque a palavra que falta em \"Ouve, ó ___; Jeová, nosso Deus, é o único Deus.\"?",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Reconhecer que o Shema chama Israel a ouvir: Jeová é o único Deus.",
+    "evidence": [
+      "Deuteronômio 6:4"
+    ],
+    "type": "choice",
+    "question": "Por que Deuteronômio 6:4 começa com \"Ouve\" antes de confessar o Deus único?",
+    "feedbackCorrect": "Certo: ouvir abre a confissão de que Jeová é o único.",
+    "feedbackWrong": {
+      "b": "O hebraico aqui é fé confessada, não só ritual de templo.",
+      "c": "Jeová não é reduzido a um título político vazio.",
+      "d": "O texto afirma o Deus de Israel, não o nega."
+    },
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque Israel precisa ouvir para confessar o único."
+      },
+      {
+        "id": "b",
+        "text": "Porque o hebraico só serviria a ritos do templo."
+      },
+      {
+        "id": "c",
+        "text": "Porque Jeová seria um título político sem conteúdo."
+      },
+      {
+        "id": "d",
+        "text": "Porque o texto nega que Israel tenha um Deus."
+      }
+    ],
+    "correctOptionId": "a",
+    "trail": "hebraico",
+    "section": "hb-01-antigo",
+    "id": "hebraico-cam-hb-01-antigo-03",
+    "prompt": "Por que Deuteronômio 6:4 começa com \"Ouve\" antes de confessar o Deus único?",
+    "cue": "Por que Deuteronômio 6:4 começa com \"Ouve\" antes de confessar o Deus único?",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Reconhecer que o Shema chama Israel a ouvir: Jeová é o único Deus.",
+    "evidence": [
+      "Deuteronômio 6:4"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Deuteronômio 6:4?",
+    "feedbackCorrect": "Certo: o chamado, o nome e a unicidade se encadeiam.",
+    "feedbackWrong": {
+      "b": "Essa peça não vem antes do chamado a ouvir.",
+      "c": "A unicidade fecha o versículo, não o abre."
+    },
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ouve, ó Israel"
+      },
+      {
+        "id": "b",
+        "text": "Jeová, nosso Deus"
+      },
+      {
+        "id": "c",
+        "text": "é o único Deus"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "trail": "hebraico",
+    "section": "hb-01-antigo",
+    "id": "hebraico-cam-hb-01-antigo-04",
+    "prompt": "Como se encadeiam os eventos de Deuteronômio 6:4?",
+    "cue": "Como se encadeiam os eventos de Deuteronômio 6:4?",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Reconhecer que o Shema chama Israel a ouvir: Jeová é o único Deus.",
+    "evidence": [
+      "Deuteronômio 6:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Ouve, ó Israel; ___, nosso Deus, é o único Deus.\"",
+    "feedbackCorrect": "Certo: o nome confessado é Jeová.",
+    "feedbackWrong": {
+      "a": "\"único\" qualifica Deus no fim, não preenche este nome.",
+      "c": "\"Ouve\" já está no início do versículo."
+    },
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "template": "Ouve, ó Israel; ___, nosso Deus, é o único Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "único"
+      },
+      {
+        "id": "b",
+        "text": "Jeová"
+      },
+      {
+        "id": "c",
+        "text": "Ouve"
+      }
+    ],
+    "correctOptionId": "b",
+    "trail": "hebraico",
+    "section": "hb-01-antigo",
+    "id": "hebraico-cam-hb-01-antigo-05",
+    "prompt": "Complete a frase: \"Ouve, ó Israel; ___, nosso Deus, é o único Deus.\"",
+    "cue": "Complete a frase: \"Ouve, ó Israel; ___, nosso Deus, é o único Deus.\"",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Reconhecer que o Shema chama Israel a ouvir: Jeová é o único Deus.",
+    "evidence": [
+      "Deuteronômio 6:4"
+    ],
+    "type": "connect",
+    "question": "O que Deuteronômio 6:4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a língua do AT liga o ouvir à unicidade de Jeová.",
+    "feedbackWrong": {
+      "a": "O Shema não descreve um panteão sem centro.",
+      "c": "Ouvir não é opcional no versículo."
+    },
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "passageA": {
+      "ref": "Deuteronômio 6:4",
+      "text": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A língua do AT chama Israel a ouvir: Jeová é o único Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Panteão sem centro"
+      },
+      {
+        "id": "b",
+        "text": "Jeová é único"
+      },
+      {
+        "id": "c",
+        "text": "Ouvir é opcional"
+      }
+    ],
+    "correctOptionId": "b",
+    "trail": "hebraico",
+    "section": "hb-01-antigo",
+    "id": "hebraico-cam-hb-01-antigo-06",
+    "prompt": "O que Deuteronômio 6:4 comunica que se liga a este contexto?",
+    "cue": "O que Deuteronômio 6:4 comunica que se liga a este contexto?",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Reconhecer que o Shema chama Israel a ouvir: Jeová é o único Deus.",
+    "evidence": [
+      "Deuteronômio 6:4"
+    ],
+    "type": "true_false",
+    "question": "Ao chamar Israel a ouvir, o texto prepara o povo para confessar Jeová como o único Deus.",
+    "feedbackCorrect": "Certo: o \"Ouve\" prepara a confissão do Deus único.",
+    "feedbackWrong": {
+      "false": "O chamado a ouvir abre caminho para a unicidade de Jeová."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "trail": "hebraico",
+    "section": "hb-01-antigo",
+    "id": "hebraico-pro-hb-01-antigo-01",
+    "prompt": "Ao chamar Israel a ouvir, o texto prepara o povo para confessar Jeová como o único Deus.",
+    "cue": "Ao chamar Israel a ouvir, o texto prepara o povo para confessar Jeová como o único Deus.",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Reconhecer que o Shema chama Israel a ouvir: Jeová é o único Deus.",
+    "evidence": [
+      "Deuteronômio 6:4"
+    ],
+    "type": "tap",
+    "question": "Em Deuteronômio 6:4, toque a palavra que falta em \"Ouve, ó Israel; Jeová, nosso Deus, é o ___ Deus.\"?",
+    "feedbackCorrect": "Exato: a palavra que marca a exclusividade é \"único\".",
+    "feedbackWrong": {
+      "a": "\"Ouve\" abre o Shema, não esta lacuna.",
+      "c": "Israel é o vocativo, não o adjetivo de Deus."
+    },
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "template": "Ouve, ó Israel; Jeová, nosso Deus, é o ___ Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ouve"
+      },
+      {
+        "id": "b",
+        "text": "único"
+      },
+      {
+        "id": "c",
+        "text": "Israel"
+      }
+    ],
+    "correctOptionId": "b",
+    "trail": "hebraico",
+    "section": "hb-01-antigo",
+    "id": "hebraico-pro-hb-01-antigo-02",
+    "prompt": "Em Deuteronômio 6:4, toque a palavra que falta em \"Ouve, ó Israel; Jeová, nosso Deus, é o ___ Deus.\"?",
+    "cue": "Em Deuteronômio 6:4, toque a palavra que falta em \"Ouve, ó Israel; Jeová, nosso Deus, é o ___ Deus.\"?",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Reconhecer que o Shema chama Israel a ouvir: Jeová é o único Deus.",
+    "evidence": [
+      "Deuteronômio 6:4"
+    ],
+    "type": "choice",
+    "question": "Qual erro de leitura o Shema desfaz?",
+    "feedbackCorrect": "Certo: o Shema impede tratar Jeová como um deus a mais.",
+    "feedbackWrong": {
+      "a": "Ouvir Jeová é o que o texto pede, não um erro.",
+      "b": "Confessar um só Deus é o centro do versículo.",
+      "d": "A língua hebraica aqui serve à fé de Israel, não a anula."
+    },
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tratar o ouvir a Jeová como desnecessário."
+      },
+      {
+        "id": "b",
+        "text": "Confessar que há um só Deus."
+      },
+      {
+        "id": "c",
+        "text": "Tratar Jeová como um deus a mais no panteão."
+      },
+      {
+        "id": "d",
+        "text": "Ligar o hebraico à fé confessada de Israel."
+      }
+    ],
+    "correctOptionId": "c",
+    "trail": "hebraico",
+    "section": "hb-01-antigo",
+    "id": "hebraico-pro-hb-01-antigo-03",
+    "prompt": "Qual erro de leitura o Shema desfaz?",
+    "cue": "Qual erro de leitura o Shema desfaz?",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Reconhecer que o Shema chama Israel a ouvir: Jeová é o único Deus.",
+    "evidence": [
+      "Deuteronômio 6:4"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Deuteronômio 6:4?",
+    "feedbackCorrect": "Certo: chamado, identificação e exclusividade revelam o sentido.",
+    "feedbackWrong": {
+      "b": "A identificação de Jeová vem depois do chamado.",
+      "c": "A exclusividade fecha o sentido, não o inicia."
+    },
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ouve, ó Israel"
+      },
+      {
+        "id": "b",
+        "text": "Jeová, nosso Deus"
+      },
+      {
+        "id": "c",
+        "text": "é o único Deus"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "trail": "hebraico",
+    "section": "hb-01-antigo",
+    "id": "hebraico-pro-hb-01-antigo-04",
+    "prompt": "Qual sequência revela o sentido de Deuteronômio 6:4?",
+    "cue": "Qual sequência revela o sentido de Deuteronômio 6:4?",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Reconhecer que o Shema chama Israel a ouvir: Jeová é o único Deus.",
+    "evidence": [
+      "Deuteronômio 6:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Ouve, ó Israel; Jeová, nosso ___, é o único Deus.\"",
+    "feedbackCorrect": "Certo: Jeová é confessado como nosso Deus.",
+    "feedbackWrong": {
+      "a": "Israel é o povo, não o termo desta lacuna.",
+      "b": "\"único\" vem depois, ligado ao segundo \"Deus\"."
+    },
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "template": "Ouve, ó Israel; Jeová, nosso ___, é o único Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Israel"
+      },
+      {
+        "id": "b",
+        "text": "único"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "trail": "hebraico",
+    "section": "hb-01-antigo",
+    "id": "hebraico-pro-hb-01-antigo-05",
+    "prompt": "Complete a frase: \"Ouve, ó Israel; Jeová, nosso ___, é o único Deus.\"",
+    "cue": "Complete a frase: \"Ouve, ó Israel; Jeová, nosso ___, é o único Deus.\"",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Reconhecer que o Shema chama Israel a ouvir: Jeová é o único Deus.",
+    "evidence": [
+      "Deuteronômio 6:4"
+    ],
+    "type": "connect",
+    "question": "O que Deuteronômio 6:4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: ouvir o Deus único é a ponte da missão.",
+    "feedbackWrong": {
+      "a": "A língua do AT não é chamada sem conteúdo.",
+      "c": "O Shema não iguala deuses."
+    },
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "passageA": {
+      "ref": "Deuteronômio 6:4",
+      "text": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A língua do AT chama Israel a ouvir: Jeová é o único Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Língua sem chamado"
+      },
+      {
+        "id": "b",
+        "text": "Ouvir o Deus único"
+      },
+      {
+        "id": "c",
+        "text": "Deuses em igualdade"
+      }
+    ],
+    "correctOptionId": "b",
+    "trail": "hebraico",
+    "section": "hb-01-antigo",
+    "id": "hebraico-pro-hb-01-antigo-06",
+    "prompt": "O que Deuteronômio 6:4 comunica que se liga a este contexto?",
+    "cue": "O que Deuteronômio 6:4 comunica que se liga a este contexto?",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Êxodo 3:14",
+    "learningObjective": "Perceber que o nome revelado a Moisés não é etiqueta: EU SOU envia o profeta.",
+    "evidence": [
+      "Êxodo 3:14"
+    ],
+    "type": "true_false",
+    "question": "Deus disse a Moisés: EU SOU O QUE SOU.",
+    "feedbackCorrect": "Certo: essa é a revelação registrada em Êxodo 3:14.",
+    "feedbackWrong": {
+      "false": "Releia Êxodo 3:14: Deus diz exatamente isso a Moisés."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "passageText": "Disse Deus a Moisés: EU SOU O QUE SOU; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.",
+    "trail": "hebraico",
+    "section": "hb-02-nomes",
+    "id": "hebraico-sem-hb-02-nomes-01",
+    "prompt": "Deus disse a Moisés: EU SOU O QUE SOU.",
+    "cue": "Deus disse a Moisés: EU SOU O QUE SOU.",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Êxodo 3:14",
+    "learningObjective": "Perceber que o nome revelado a Moisés não é etiqueta: EU SOU envia o profeta.",
+    "evidence": [
+      "Êxodo 3:14"
+    ],
+    "type": "tap",
+    "question": "Em Êxodo 3:14, toque a palavra que falta em \"Disse Deus a ___: EU SOU O QUE SOU; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.\"?",
+    "feedbackCorrect": "Exato: a revelação é dita a Moisés.",
+    "feedbackWrong": {
+      "b": "Israel recebe a mensagem depois, via Moisés.",
+      "c": "Deus é quem fala, não o destinatário desta lacuna."
+    },
+    "passageText": "Disse Deus a Moisés: EU SOU O QUE SOU; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.",
+    "template": "Disse Deus a ___: EU SOU O QUE SOU; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Moisés"
+      },
+      {
+        "id": "b",
+        "text": "Israel"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "trail": "hebraico",
+    "section": "hb-02-nomes",
+    "id": "hebraico-sem-hb-02-nomes-02",
+    "prompt": "Em Êxodo 3:14, toque a palavra que falta em \"Disse Deus a ___: EU SOU O QUE SOU; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.\"?",
+    "cue": "Em Êxodo 3:14, toque a palavra que falta em \"Disse Deus a ___: EU SOU O QUE SOU; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.\"?",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Êxodo 3:14",
+    "learningObjective": "Perceber que o nome revelado a Moisés não é etiqueta: EU SOU envia o profeta.",
+    "evidence": [
+      "Êxodo 3:14"
+    ],
+    "type": "choice",
+    "question": "O que Deus manda Moisés dizer aos filhos de Israel?",
+    "feedbackCorrect": "Certo: Moisés deve dizer que EU SOU o enviou.",
+    "feedbackWrong": {
+      "b": "O texto não atribui o envio ao faraó.",
+      "c": "Não é um anjo quem envia Moisés neste versículo.",
+      "d": "Israel recebe o enviado; não o envia ao Egito aqui."
+    },
+    "passageText": "Disse Deus a Moisés: EU SOU O QUE SOU; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "EU SOU enviou-me a vós."
+      },
+      {
+        "id": "b",
+        "text": "O faraó enviou-me a vós."
+      },
+      {
+        "id": "c",
+        "text": "Um anjo enviou-me a vós."
+      },
+      {
+        "id": "d",
+        "text": "Israel enviou-me ao Egito."
+      }
+    ],
+    "correctOptionId": "a",
+    "trail": "hebraico",
+    "section": "hb-02-nomes",
+    "id": "hebraico-sem-hb-02-nomes-03",
+    "prompt": "O que Deus manda Moisés dizer aos filhos de Israel?",
+    "cue": "O que Deus manda Moisés dizer aos filhos de Israel?",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Êxodo 3:14",
+    "learningObjective": "Perceber que o nome revelado a Moisés não é etiqueta: EU SOU envia o profeta.",
+    "evidence": [
+      "Êxodo 3:14"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Êxodo 3:14?",
+    "feedbackCorrect": "Certo: Deus fala, revela o nome e manda o envio.",
+    "feedbackWrong": {
+      "b": "Essa ordem de falar aos filhos vem depois da revelação.",
+      "c": "O envio fecha o versículo, não o abre."
+    },
+    "passageText": "Disse Deus a Moisés: EU SOU O QUE SOU; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Disse Deus a Moisés: EU SOU O QUE SOU"
+      },
+      {
+        "id": "b",
+        "text": "e acrescentou: Assim dirás aos filhos de Israel"
+      },
+      {
+        "id": "c",
+        "text": "EU SOU enviou-me a vós"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "trail": "hebraico",
+    "section": "hb-02-nomes",
+    "id": "hebraico-sem-hb-02-nomes-04",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Êxodo 3:14?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Êxodo 3:14?",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Êxodo 3:14",
+    "learningObjective": "Perceber que o nome revelado a Moisés não é etiqueta: EU SOU envia o profeta.",
+    "evidence": [
+      "Êxodo 3:14"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Assim dirás aos filhos de ___: EU SOU enviou-me a vós.\"",
+    "feedbackCorrect": "Certo: a mensagem é para os filhos de Israel.",
+    "feedbackWrong": {
+      "a": "Moisés é o enviado, não o povo desta lacuna.",
+      "c": "Deus é quem envia, não o destinatário coletivo."
+    },
+    "passageText": "Disse Deus a Moisés: EU SOU O QUE SOU; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.",
+    "template": "Assim dirás aos filhos de ___: EU SOU enviou-me a vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Moisés"
+      },
+      {
+        "id": "b",
+        "text": "Israel"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "trail": "hebraico",
+    "section": "hb-02-nomes",
+    "id": "hebraico-sem-hb-02-nomes-05",
+    "prompt": "Complete a frase: \"Assim dirás aos filhos de ___: EU SOU enviou-me a vós.\"",
+    "cue": "Complete a frase: \"Assim dirás aos filhos de ___: EU SOU enviou-me a vós.\"",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Êxodo 3:14",
+    "learningObjective": "Perceber que o nome revelado a Moisés não é etiqueta: EU SOU envia o profeta.",
+    "evidence": [
+      "Êxodo 3:14"
+    ],
+    "type": "connect",
+    "question": "O que Êxodo 3:14 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o nome revelado envia o profeta.",
+    "feedbackWrong": {
+      "a": "O nome não é vazio no texto.",
+      "c": "Moisés não se nomeia a si mesmo."
+    },
+    "passageText": "Disse Deus a Moisés: EU SOU O QUE SOU; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.",
+    "passageA": {
+      "ref": "Êxodo 3:14",
+      "text": "Disse Deus a Moisés: EU SOU O QUE SOU; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O nome revelado a Moisés não é etiqueta: EU SOU envia o profeta."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Nome vazio"
+      },
+      {
+        "id": "b",
+        "text": "EU SOU envia"
+      },
+      {
+        "id": "c",
+        "text": "Moisés se nomeia"
+      }
+    ],
+    "correctOptionId": "b",
+    "trail": "hebraico",
+    "section": "hb-02-nomes",
+    "id": "hebraico-sem-hb-02-nomes-06",
+    "prompt": "O que Êxodo 3:14 comunica que se liga a este contexto?",
+    "cue": "O que Êxodo 3:14 comunica que se liga a este contexto?",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Êxodo 3:14",
+    "learningObjective": "Perceber que o nome revelado a Moisés não é etiqueta: EU SOU envia o profeta.",
+    "evidence": [
+      "Êxodo 3:14"
+    ],
+    "type": "true_false",
+    "question": "O nome revelado serve só de etiqueta, sem enviar Moisés aos filhos de Israel.",
+    "feedbackCorrect": "Certo: o texto liga o nome ao envio do profeta.",
+    "feedbackWrong": {
+      "true": "Êxodo 3:14 une revelação e envio: EU SOU enviou-me."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "passageText": "Disse Deus a Moisés: EU SOU O QUE SOU; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.",
+    "trail": "hebraico",
+    "section": "hb-02-nomes",
+    "id": "hebraico-cam-hb-02-nomes-01",
+    "prompt": "O nome revelado serve só de etiqueta, sem enviar Moisés aos filhos de Israel.",
+    "cue": "O nome revelado serve só de etiqueta, sem enviar Moisés aos filhos de Israel.",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Êxodo 3:14",
+    "learningObjective": "Perceber que o nome revelado a Moisés não é etiqueta: EU SOU envia o profeta.",
+    "evidence": [
+      "Êxodo 3:14"
+    ],
+    "type": "tap",
+    "question": "Em Êxodo 3:14, toque a palavra que falta em \"Assim dirás aos filhos de Israel: ___ enviou-me a vós.\"?",
+    "feedbackCorrect": "Exato: quem envia Moisés é EU SOU.",
+    "feedbackWrong": {
+      "a": "Moisés é o enviado, não o sujeito desta lacuna.",
+      "c": "\"acrescentou\" descreve a fala de Deus, não o envio."
+    },
+    "passageText": "Disse Deus a Moisés: EU SOU O QUE SOU; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.",
+    "template": "Assim dirás aos filhos de Israel: ___ enviou-me a vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Moisés"
+      },
+      {
+        "id": "b",
+        "text": "EU SOU"
+      },
+      {
+        "id": "c",
+        "text": "acrescentou"
+      }
+    ],
+    "correctOptionId": "b",
+    "trail": "hebraico",
+    "section": "hb-02-nomes",
+    "id": "hebraico-cam-hb-02-nomes-02",
+    "prompt": "Em Êxodo 3:14, toque a palavra que falta em \"Assim dirás aos filhos de Israel: ___ enviou-me a vós.\"?",
+    "cue": "Em Êxodo 3:14, toque a palavra que falta em \"Assim dirás aos filhos de Israel: ___ enviou-me a vós.\"?",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Êxodo 3:14",
+    "learningObjective": "Perceber que o nome revelado a Moisés não é etiqueta: EU SOU envia o profeta.",
+    "evidence": [
+      "Êxodo 3:14"
+    ],
+    "type": "choice",
+    "question": "Por que o nome revelado não funciona como mera etiqueta?",
+    "feedbackCorrect": "Certo: EU SOU se revela e envia Moisés a Israel.",
+    "feedbackWrong": {
+      "a": "Moisés não inventa o nome para o faraó neste versículo.",
+      "b": "O texto manda o envio, não o recusa.",
+      "d": "A revelação é dada agora a Moisés, não pressuposta como rótulo velho."
+    },
+    "passageText": "Disse Deus a Moisés: EU SOU O QUE SOU; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque Moisés inventa o nome para o faraó."
+      },
+      {
+        "id": "b",
+        "text": "Porque o texto recusa qualquer envio do profeta."
+      },
+      {
+        "id": "c",
+        "text": "Porque EU SOU também envia Moisés a Israel."
+      },
+      {
+        "id": "d",
+        "text": "Porque Israel já possuía o nome sem revelação."
+      }
+    ],
+    "correctOptionId": "c",
+    "trail": "hebraico",
+    "section": "hb-02-nomes",
+    "id": "hebraico-cam-hb-02-nomes-03",
+    "prompt": "Por que o nome revelado não funciona como mera etiqueta?",
+    "cue": "Por que o nome revelado não funciona como mera etiqueta?",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Êxodo 3:14",
+    "learningObjective": "Perceber que o nome revelado a Moisés não é etiqueta: EU SOU envia o profeta.",
+    "evidence": [
+      "Êxodo 3:14"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Êxodo 3:14?",
+    "feedbackCorrect": "Certo: fala, revelação do nome e envio se encadeiam.",
+    "feedbackWrong": {
+      "b": "O nome revelado vem depois de Deus falar a Moisés.",
+      "c": "O envio aos filhos fecha a sequência."
+    },
+    "passageText": "Disse Deus a Moisés: EU SOU O QUE SOU; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Disse Deus a Moisés"
+      },
+      {
+        "id": "b",
+        "text": "EU SOU O QUE SOU"
+      },
+      {
+        "id": "c",
+        "text": "EU SOU enviou-me a vós"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "trail": "hebraico",
+    "section": "hb-02-nomes",
+    "id": "hebraico-cam-hb-02-nomes-04",
+    "prompt": "Como se encadeiam os eventos de Êxodo 3:14?",
+    "cue": "Como se encadeiam os eventos de Êxodo 3:14?",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Êxodo 3:14",
+    "learningObjective": "Perceber que o nome revelado a Moisés não é etiqueta: EU SOU envia o profeta.",
+    "evidence": [
+      "Êxodo 3:14"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Disse ___ a Moisés: EU SOU O QUE SOU.\"",
+    "feedbackCorrect": "Certo: quem fala e se revela é Deus.",
+    "feedbackWrong": {
+      "a": "Israel é o povo destinatário, não quem fala aqui.",
+      "b": "Moisés ouve; não preenche esta lacuna."
+    },
+    "passageText": "Disse Deus a Moisés: EU SOU O QUE SOU; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.",
+    "template": "Disse ___ a Moisés: EU SOU O QUE SOU.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Israel"
+      },
+      {
+        "id": "b",
+        "text": "Moisés"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "trail": "hebraico",
+    "section": "hb-02-nomes",
+    "id": "hebraico-cam-hb-02-nomes-05",
+    "prompt": "Complete a frase: \"Disse ___ a Moisés: EU SOU O QUE SOU.\"",
+    "cue": "Complete a frase: \"Disse ___ a Moisés: EU SOU O QUE SOU.\"",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Êxodo 3:14",
+    "learningObjective": "Perceber que o nome revelado a Moisés não é etiqueta: EU SOU envia o profeta.",
+    "evidence": [
+      "Êxodo 3:14"
+    ],
+    "type": "connect",
+    "question": "O que Êxodo 3:14 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o nome hebraico revelado é nome que envia.",
+    "feedbackWrong": {
+      "a": "Não há etiqueta sem envio neste versículo.",
+      "c": "O profeta não vai sem Aquele que se revela."
+    },
+    "passageText": "Disse Deus a Moisés: EU SOU O QUE SOU; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.",
+    "passageA": {
+      "ref": "Êxodo 3:14",
+      "text": "Disse Deus a Moisés: EU SOU O QUE SOU; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O nome revelado a Moisés não é etiqueta: EU SOU envia o profeta."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Etiqueta sem envio"
+      },
+      {
+        "id": "b",
+        "text": "Nome que envia"
+      },
+      {
+        "id": "c",
+        "text": "Profeta sem Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "trail": "hebraico",
+    "section": "hb-02-nomes",
+    "id": "hebraico-cam-hb-02-nomes-06",
+    "prompt": "O que Êxodo 3:14 comunica que se liga a este contexto?",
+    "cue": "O que Êxodo 3:14 comunica que se liga a este contexto?",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Êxodo 3:14",
+    "learningObjective": "Perceber que o nome revelado a Moisés não é etiqueta: EU SOU envia o profeta.",
+    "evidence": [
+      "Êxodo 3:14"
+    ],
+    "type": "true_false",
+    "question": "O EU SOU que se revela a Moisés é o mesmo que o envia aos filhos de Israel.",
+    "feedbackCorrect": "Certo: revelação e envio pertencem ao mesmo EU SOU.",
+    "feedbackWrong": {
+      "false": "O mesmo nome se revela e envia no mesmo versículo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "passageText": "Disse Deus a Moisés: EU SOU O QUE SOU; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.",
+    "trail": "hebraico",
+    "section": "hb-02-nomes",
+    "id": "hebraico-pro-hb-02-nomes-01",
+    "prompt": "O EU SOU que se revela a Moisés é o mesmo que o envia aos filhos de Israel.",
+    "cue": "O EU SOU que se revela a Moisés é o mesmo que o envia aos filhos de Israel.",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Êxodo 3:14",
+    "learningObjective": "Perceber que o nome revelado a Moisés não é etiqueta: EU SOU envia o profeta.",
+    "evidence": [
+      "Êxodo 3:14"
+    ],
+    "type": "tap",
+    "question": "Em Êxodo 3:14, toque a palavra que falta em \"EU SOU ___ a vós.\"?",
+    "feedbackCorrect": "Exato: EU SOU enviou-me — o nome age enviando.",
+    "feedbackWrong": {
+      "a": "Moisés é quem é enviado, não o verbo desta lacuna.",
+      "b": "Israel recebe a mensagem, não preenche \"enviou-me\"."
+    },
+    "passageText": "Disse Deus a Moisés: EU SOU O QUE SOU; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.",
+    "template": "EU SOU ___ a vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Moisés"
+      },
+      {
+        "id": "b",
+        "text": "Israel"
+      },
+      {
+        "id": "c",
+        "text": "enviou-me"
+      }
+    ],
+    "correctOptionId": "c",
+    "trail": "hebraico",
+    "section": "hb-02-nomes",
+    "id": "hebraico-pro-hb-02-nomes-02",
+    "prompt": "Em Êxodo 3:14, toque a palavra que falta em \"EU SOU ___ a vós.\"?",
+    "cue": "Em Êxodo 3:14, toque a palavra que falta em \"EU SOU ___ a vós.\"?",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Êxodo 3:14",
+    "learningObjective": "Perceber que o nome revelado a Moisés não é etiqueta: EU SOU envia o profeta.",
+    "evidence": [
+      "Êxodo 3:14"
+    ],
+    "type": "choice",
+    "question": "Qual implicação o nome EU SOU traz para o leitor?",
+    "feedbackCorrect": "Certo: Deus se dá a conhecer e envia, não fica só no título.",
+    "feedbackWrong": {
+      "a": "O hebraico ilumina, mas não substitui ouvir o texto.",
+      "c": "Moisés não se torna origem do ser de Deus.",
+      "d": "Israel precisa do enviado, não só de um rótulo."
+    },
+    "passageText": "Disse Deus a Moisés: EU SOU O QUE SOU; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O nome hebraico dispensa ouvir o texto."
+      },
+      {
+        "id": "b",
+        "text": "Deus se dá a conhecer e envia, não só se rotula."
+      },
+      {
+        "id": "c",
+        "text": "Moisés se torna a fonte do ser de Deus."
+      },
+      {
+        "id": "d",
+        "text": "Israel não precisa do enviado, só de um rótulo."
+      }
+    ],
+    "correctOptionId": "b",
+    "trail": "hebraico",
+    "section": "hb-02-nomes",
+    "id": "hebraico-pro-hb-02-nomes-03",
+    "prompt": "Qual implicação o nome EU SOU traz para o leitor?",
+    "cue": "Qual implicação o nome EU SOU traz para o leitor?",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Êxodo 3:14",
+    "learningObjective": "Perceber que o nome revelado a Moisés não é etiqueta: EU SOU envia o profeta.",
+    "evidence": [
+      "Êxodo 3:14"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Êxodo 3:14?",
+    "feedbackCorrect": "Certo: Deus fala, revela o nome e envia o profeta.",
+    "feedbackWrong": {
+      "b": "O nome vem depois de Deus falar a Moisés.",
+      "c": "O envio é o desfecho do sentido, não o início."
+    },
+    "passageText": "Disse Deus a Moisés: EU SOU O QUE SOU; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Disse Deus a Moisés"
+      },
+      {
+        "id": "b",
+        "text": "EU SOU O QUE SOU"
+      },
+      {
+        "id": "c",
+        "text": "EU SOU enviou-me a vós"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "trail": "hebraico",
+    "section": "hb-02-nomes",
+    "id": "hebraico-pro-hb-02-nomes-04",
+    "prompt": "Qual sequência revela o sentido de Êxodo 3:14?",
+    "cue": "Qual sequência revela o sentido de Êxodo 3:14?",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Êxodo 3:14",
+    "learningObjective": "Perceber que o nome revelado a Moisés não é etiqueta: EU SOU envia o profeta.",
+    "evidence": [
+      "Êxodo 3:14"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Assim dirás aos ___ de Israel: EU SOU enviou-me a vós.\"",
+    "feedbackCorrect": "Certo: a palavra é dirigida aos filhos de Israel.",
+    "feedbackWrong": {
+      "a": "Moisés fala; não preenche \"filhos\".",
+      "c": "\"vós\" é o destinatário no fim, não esta lacuna."
+    },
+    "passageText": "Disse Deus a Moisés: EU SOU O QUE SOU; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.",
+    "template": "Assim dirás aos ___ de Israel: EU SOU enviou-me a vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Moisés"
+      },
+      {
+        "id": "b",
+        "text": "filhos"
+      },
+      {
+        "id": "c",
+        "text": "vós"
+      }
+    ],
+    "correctOptionId": "b",
+    "trail": "hebraico",
+    "section": "hb-02-nomes",
+    "id": "hebraico-pro-hb-02-nomes-05",
+    "prompt": "Complete a frase: \"Assim dirás aos ___ de Israel: EU SOU enviou-me a vós.\"",
+    "cue": "Complete a frase: \"Assim dirás aos ___ de Israel: EU SOU enviou-me a vós.\"",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Êxodo 3:14",
+    "learningObjective": "Perceber que o nome revelado a Moisés não é etiqueta: EU SOU envia o profeta.",
+    "evidence": [
+      "Êxodo 3:14"
+    ],
+    "type": "connect",
+    "question": "O que Êxodo 3:14 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: revelar e enviar são a mesma ação do nome.",
+    "feedbackWrong": {
+      "a": "Não é só etiqueta.",
+      "c": "O faraó não é a origem do nome."
+    },
+    "passageText": "Disse Deus a Moisés: EU SOU O QUE SOU; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.",
+    "passageA": {
+      "ref": "Êxodo 3:14",
+      "text": "Disse Deus a Moisés: EU SOU O QUE SOU; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O nome revelado a Moisés não é etiqueta: EU SOU envia o profeta."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Só etiqueta"
+      },
+      {
+        "id": "b",
+        "text": "Revelar e enviar"
+      },
+      {
+        "id": "c",
+        "text": "Faraó como origem"
+      }
+    ],
+    "correctOptionId": "b",
+    "trail": "hebraico",
+    "section": "hb-02-nomes",
+    "id": "hebraico-pro-hb-02-nomes-06",
+    "prompt": "O que Êxodo 3:14 comunica que se liga a este contexto?",
+    "cue": "O que Êxodo 3:14 comunica que se liga a este contexto?",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Unir o Shema ao nome revelado: o Deus único é o EU SOU que se revela e envia.",
+    "evidence": [
+      "Deuteronômio 6:4"
+    ],
+    "type": "true_false",
+    "question": "Deuteronômio 6:4 chama Israel a calar, porque Jeová seria um deus entre muitos.",
+    "feedbackCorrect": "Certo: o Shema chama a ouvir o Deus único, não a calar.",
+    "feedbackWrong": {
+      "true": "O texto diz \"Ouve\" e confessa Jeová como o único Deus."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "trail": "hebraico",
+    "section": "hb-boss",
+    "id": "hebraico-sem-hb-boss-01",
+    "prompt": "Deuteronômio 6:4 chama Israel a calar, porque Jeová seria um deus entre muitos.",
+    "cue": "Deuteronômio 6:4 chama Israel a calar, porque Jeová seria um deus entre muitos.",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Unir o Shema ao nome revelado: o Deus único é o EU SOU que se revela e envia.",
+    "evidence": [
+      "Deuteronômio 6:4"
+    ],
+    "type": "tap",
+    "question": "Em Deuteronômio 6:4, toque a palavra que falta em \"Ouve, ó Israel; ___, nosso Deus, é o único Deus.\"?",
+    "feedbackCorrect": "Exato: o nome confessado no Shema é Jeová.",
+    "feedbackWrong": {
+      "a": "\"Ouve\" já está no início do versículo.",
+      "c": "\"único\" qualifica Deus no fim, não esta lacuna."
+    },
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "template": "Ouve, ó Israel; ___, nosso Deus, é o único Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ouve"
+      },
+      {
+        "id": "b",
+        "text": "Jeová"
+      },
+      {
+        "id": "c",
+        "text": "único"
+      }
+    ],
+    "correctOptionId": "b",
+    "trail": "hebraico",
+    "section": "hb-boss",
+    "id": "hebraico-sem-hb-boss-02",
+    "prompt": "Em Deuteronômio 6:4, toque a palavra que falta em \"Ouve, ó Israel; ___, nosso Deus, é o único Deus.\"?",
+    "cue": "Em Deuteronômio 6:4, toque a palavra que falta em \"Ouve, ó Israel; ___, nosso Deus, é o único Deus.\"?",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Unir o Shema ao nome revelado: o Deus único é o EU SOU que se revela e envia.",
+    "evidence": [
+      "Deuteronômio 6:4"
+    ],
+    "type": "choice",
+    "question": "O que o Shema afirma de forma explícita?",
+    "feedbackCorrect": "Certo: Jeová, nosso Deus, é o único Deus.",
+    "feedbackWrong": {
+      "b": "O versículo começa com \"Ouve\", não com recusa de ouvir.",
+      "c": "O texto afirma unicidade, não igualdade de deuses.",
+      "d": "O Shema nomeia Jeová; não o deixa oculto."
+    },
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová, nosso Deus, é o único Deus."
+      },
+      {
+        "id": "b",
+        "text": "Israel não precisa ouvir a Deus."
+      },
+      {
+        "id": "c",
+        "text": "Há muitos deuses iguais a Jeová."
+      },
+      {
+        "id": "d",
+        "text": "O nome de Deus permanece oculto no Shema."
+      }
+    ],
+    "correctOptionId": "a",
+    "trail": "hebraico",
+    "section": "hb-boss",
+    "id": "hebraico-sem-hb-boss-03",
+    "prompt": "O que o Shema afirma de forma explícita?",
+    "cue": "O que o Shema afirma de forma explícita?",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Unir o Shema ao nome revelado: o Deus único é o EU SOU que se revela e envia.",
+    "evidence": [
+      "Deuteronômio 6:4"
+    ],
+    "type": "order",
+    "question": "Qual é a ordem das peças do Shema em Deuteronômio 6:4?",
+    "feedbackCorrect": "Certo: chamado, nome e unicidade nesta ordem.",
+    "feedbackWrong": {
+      "b": "Jeová vem depois do chamado a Israel.",
+      "c": "A unicidade é a última peça."
+    },
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ouve, ó Israel"
+      },
+      {
+        "id": "b",
+        "text": "Jeová, nosso Deus"
+      },
+      {
+        "id": "c",
+        "text": "é o único Deus"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "trail": "hebraico",
+    "section": "hb-boss",
+    "id": "hebraico-sem-hb-boss-04",
+    "prompt": "Qual é a ordem das peças do Shema em Deuteronômio 6:4?",
+    "cue": "Qual é a ordem das peças do Shema em Deuteronômio 6:4?",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Unir o Shema ao nome revelado: o Deus único é o EU SOU que se revela e envia.",
+    "evidence": [
+      "Deuteronômio 6:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"___, ó Israel; Jeová, nosso Deus, é o único Deus.\"",
+    "feedbackCorrect": "Certo: o Shema abre com \"Ouve\".",
+    "feedbackWrong": {
+      "a": "\"Deus\" aparece depois, na confissão.",
+      "b": "Israel é o vocativo, não o verbo inicial."
+    },
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "template": "___, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus"
+      },
+      {
+        "id": "b",
+        "text": "Israel"
+      },
+      {
+        "id": "c",
+        "text": "Ouve"
+      }
+    ],
+    "correctOptionId": "c",
+    "trail": "hebraico",
+    "section": "hb-boss",
+    "id": "hebraico-sem-hb-boss-05",
+    "prompt": "Complete a frase: \"___, ó Israel; Jeová, nosso Deus, é o único Deus.\"",
+    "cue": "Complete a frase: \"___, ó Israel; Jeová, nosso Deus, é o único Deus.\"",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Unir o Shema ao nome revelado: o Deus único é o EU SOU que se revela e envia.",
+    "evidence": [
+      "Deuteronômio 6:4"
+    ],
+    "type": "connect",
+    "question": "O que Deuteronômio 6:4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o desafio é ouvir o Deus único.",
+    "feedbackWrong": {
+      "a": "O Shema não manda fechar os ouvidos.",
+      "c": "Não há muitos deuses no versículo."
+    },
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "passageA": {
+      "ref": "Deuteronômio 6:4",
+      "text": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Ouça, Israel: o Deus único é o EU SOU que se revela e envia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Feche os ouvidos"
+      },
+      {
+        "id": "b",
+        "text": "Ouça o único"
+      },
+      {
+        "id": "c",
+        "text": "Muitos deuses"
+      }
+    ],
+    "correctOptionId": "b",
+    "trail": "hebraico",
+    "section": "hb-boss",
+    "id": "hebraico-sem-hb-boss-06",
+    "prompt": "O que Deuteronômio 6:4 comunica que se liga a este contexto?",
+    "cue": "O que Deuteronômio 6:4 comunica que se liga a este contexto?",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Unir o Shema ao nome revelado: o Deus único é o EU SOU que se revela e envia.",
+    "evidence": [
+      "Deuteronômio 6:4"
+    ],
+    "type": "true_false",
+    "question": "O Shema une o chamado a ouvir com a confissão de que Jeová é o único Deus.",
+    "feedbackCorrect": "Certo: ouvir e unicidade estão no mesmo versículo.",
+    "feedbackWrong": {
+      "false": "Deuteronômio 6:4 faz exatamente essa união."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "trail": "hebraico",
+    "section": "hb-boss",
+    "id": "hebraico-cam-hb-boss-01",
+    "prompt": "O Shema une o chamado a ouvir com a confissão de que Jeová é o único Deus.",
+    "cue": "O Shema une o chamado a ouvir com a confissão de que Jeová é o único Deus.",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Unir o Shema ao nome revelado: o Deus único é o EU SOU que se revela e envia.",
+    "evidence": [
+      "Deuteronômio 6:4"
+    ],
+    "type": "tap",
+    "question": "Em Deuteronômio 6:4, toque a palavra que falta em \"Ouve, ó Israel; Jeová, nosso ___, é o único Deus.\"?",
+    "feedbackCorrect": "Exato: Jeová é confessado como nosso Deus.",
+    "feedbackWrong": {
+      "a": "Israel é o povo chamado, não esta lacuna.",
+      "b": "\"único\" vem na cláusula seguinte."
+    },
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "template": "Ouve, ó Israel; Jeová, nosso ___, é o único Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Israel"
+      },
+      {
+        "id": "b",
+        "text": "único"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "trail": "hebraico",
+    "section": "hb-boss",
+    "id": "hebraico-cam-hb-boss-02",
+    "prompt": "Em Deuteronômio 6:4, toque a palavra que falta em \"Ouve, ó Israel; Jeová, nosso ___, é o único Deus.\"?",
+    "cue": "Em Deuteronômio 6:4, toque a palavra que falta em \"Ouve, ó Israel; Jeová, nosso ___, é o único Deus.\"?",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Unir o Shema ao nome revelado: o Deus único é o EU SOU que se revela e envia.",
+    "evidence": [
+      "Deuteronômio 6:4"
+    ],
+    "type": "choice",
+    "question": "Como o chamado \"Ouve, ó Israel\" se relaciona com a unicidade de Jeová?",
+    "feedbackCorrect": "Certo: ouvir é a porta para confessar o Deus único.",
+    "feedbackWrong": {
+      "a": "Ouvir não dispensa a confissão; a introduz.",
+      "b": "A unicidade não torna o ouvir desnecessário.",
+      "c": "O versículo não reduz o ouvir a exercício linguístico vazio."
+    },
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ouvir dispensa qualquer confissão sobre Deus."
+      },
+      {
+        "id": "b",
+        "text": "A unicidade de Jeová torna o ouvir inútil."
+      },
+      {
+        "id": "c",
+        "text": "O ouvir seria só um exercício linguístico."
+      },
+      {
+        "id": "d",
+        "text": "Ouvir é a porta para confessar o Deus único."
+      }
+    ],
+    "correctOptionId": "d",
+    "trail": "hebraico",
+    "section": "hb-boss",
+    "id": "hebraico-cam-hb-boss-03",
+    "prompt": "Como o chamado \"Ouve, ó Israel\" se relaciona com a unicidade de Jeová?",
+    "cue": "Como o chamado \"Ouve, ó Israel\" se relaciona com a unicidade de Jeová?",
+    "correctAnswer": "d"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Unir o Shema ao nome revelado: o Deus único é o EU SOU que se revela e envia.",
+    "evidence": [
+      "Deuteronômio 6:4"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Deuteronômio 6:4?",
+    "feedbackCorrect": "Certo: Israel ouve, Jeová é nomeado, a unicidade é confessada.",
+    "feedbackWrong": {
+      "b": "Essa peça não precede o chamado.",
+      "c": "A unicidade encerra o encadeamento."
+    },
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ouve, ó Israel"
+      },
+      {
+        "id": "b",
+        "text": "Jeová, nosso Deus"
+      },
+      {
+        "id": "c",
+        "text": "é o único Deus"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "trail": "hebraico",
+    "section": "hb-boss",
+    "id": "hebraico-cam-hb-boss-04",
+    "prompt": "Como se encadeiam os eventos de Deuteronômio 6:4?",
+    "cue": "Como se encadeiam os eventos de Deuteronômio 6:4?",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Unir o Shema ao nome revelado: o Deus único é o EU SOU que se revela e envia.",
+    "evidence": [
+      "Deuteronômio 6:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Ouve, ó ___; Jeová, nosso Deus, é o único Deus.\"",
+    "feedbackCorrect": "Certo: o vocativo do Shema é Israel.",
+    "feedbackWrong": {
+      "a": "Jeová é o Deus confessado, não o vocativo.",
+      "c": "\"único\" pertence à cláusula final."
+    },
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "template": "Ouve, ó ___; Jeová, nosso Deus, é o único Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Israel"
+      },
+      {
+        "id": "c",
+        "text": "único"
+      }
+    ],
+    "correctOptionId": "b",
+    "trail": "hebraico",
+    "section": "hb-boss",
+    "id": "hebraico-cam-hb-boss-05",
+    "prompt": "Complete a frase: \"Ouve, ó ___; Jeová, nosso Deus, é o único Deus.\"",
+    "cue": "Complete a frase: \"Ouve, ó ___; Jeová, nosso Deus, é o único Deus.\"",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Unir o Shema ao nome revelado: o Deus único é o EU SOU que se revela e envia.",
+    "evidence": [
+      "Deuteronômio 6:4"
+    ],
+    "type": "connect",
+    "question": "O que Deuteronômio 6:4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Shema e unicidade se ligam ao desafio da trilha.",
+    "feedbackWrong": {
+      "a": "Não há panteão israelita no versículo.",
+      "c": "Não se ouve sem o Deus confessado."
+    },
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus.",
+    "passageA": {
+      "ref": "Deuteronômio 6:4",
+      "text": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Ouça, Israel: o Deus único é o EU SOU que se revela e envia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Panteão israelita"
+      },
+      {
+        "id": "b",
+        "text": "Shema e unicidade"
+      },
+      {
+        "id": "c",
+        "text": "Ouvir sem Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "trail": "hebraico",
+    "section": "hb-boss",
+    "id": "hebraico-cam-hb-boss-06",
+    "prompt": "O que Deuteronômio 6:4 comunica que se liga a este contexto?",
+    "cue": "O que Deuteronômio 6:4 comunica que se liga a este contexto?",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Unir o Shema ao nome revelado: o Deus único é o EU SOU que se revela e envia.",
+    "evidence": [
+      "Deuteronômio 6:4",
+      "Êxodo 3:14"
+    ],
+    "type": "true_false",
+    "question": "O Deus único do Shema permanece um título fechado, sem se revelar nem enviar.",
+    "feedbackCorrect": "Certo: o único se revela como EU SOU e envia.",
+    "feedbackWrong": {
+      "true": "O Shema e Êxodo 3:14 mostram revelação e envio, não um título fechado."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus. Disse Deus a Moisés: EU SOU O QUE SOU; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.",
+    "trail": "hebraico",
+    "section": "hb-boss",
+    "id": "hebraico-pro-hb-boss-01",
+    "prompt": "O Deus único do Shema permanece um título fechado, sem se revelar nem enviar.",
+    "cue": "O Deus único do Shema permanece um título fechado, sem se revelar nem enviar.",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Êxodo 3:14",
+    "learningObjective": "Unir o Shema ao nome revelado: o Deus único é o EU SOU que se revela e envia.",
+    "evidence": [
+      "Deuteronômio 6:4",
+      "Êxodo 3:14"
+    ],
+    "type": "tap",
+    "question": "Em Êxodo 3:14, toque a palavra que falta em \"Disse Deus a Moisés: EU SOU ___; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.\"?",
+    "feedbackCorrect": "Exato: EU SOU O QUE SOU é o nome revelado.",
+    "feedbackWrong": {
+      "b": "Israel recebe a mensagem depois, não nesta lacuna.",
+      "c": "\"vós\" está no fim do envio."
+    },
+    "passageText": "Disse Deus a Moisés: EU SOU O QUE SOU; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.",
+    "template": "Disse Deus a Moisés: EU SOU ___; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O QUE SOU"
+      },
+      {
+        "id": "b",
+        "text": "Israel"
+      },
+      {
+        "id": "c",
+        "text": "vós"
+      }
+    ],
+    "correctOptionId": "a",
+    "trail": "hebraico",
+    "section": "hb-boss",
+    "id": "hebraico-pro-hb-boss-02",
+    "prompt": "Em Êxodo 3:14, toque a palavra que falta em \"Disse Deus a Moisés: EU SOU ___; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.\"?",
+    "cue": "Em Êxodo 3:14, toque a palavra que falta em \"Disse Deus a Moisés: EU SOU ___; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.\"?",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Unir o Shema ao nome revelado: o Deus único é o EU SOU que se revela e envia.",
+    "evidence": [
+      "Deuteronômio 6:4",
+      "Êxodo 3:14"
+    ],
+    "type": "choice",
+    "question": "Como o Shema e Êxodo 3:14 se iluminam?",
+    "feedbackCorrect": "Certo: o único que Israel ouve é o EU SOU que envia.",
+    "feedbackWrong": {
+      "a": "O Shema não anula a revelação do nome a Moisés.",
+      "b": "EU SOU não é um deus distinto de Jeová.",
+      "d": "Ouvir não substitui a missão do enviado."
+    },
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus. Disse Deus a Moisés: EU SOU O QUE SOU; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Shema anula a revelação do nome a Moisés."
+      },
+      {
+        "id": "b",
+        "text": "EU SOU seria um deus distinto de Jeová."
+      },
+      {
+        "id": "c",
+        "text": "O único que Israel ouve é o EU SOU que envia."
+      },
+      {
+        "id": "d",
+        "text": "Ouvir Israel substitui a missão do enviado."
+      }
+    ],
+    "correctOptionId": "c",
+    "trail": "hebraico",
+    "section": "hb-boss",
+    "id": "hebraico-pro-hb-boss-03",
+    "prompt": "Como o Shema e Êxodo 3:14 se iluminam?",
+    "cue": "Como o Shema e Êxodo 3:14 se iluminam?",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Unir o Shema ao nome revelado: o Deus único é o EU SOU que se revela e envia.",
+    "evidence": [
+      "Deuteronômio 6:4",
+      "Êxodo 3:14"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Deuteronômio 6:4?",
+    "feedbackCorrect": "Certo: ouvir o único prepara o EU SOU que envia.",
+    "feedbackWrong": {
+      "b": "A unicidade segue o chamado a ouvir.",
+      "c": "O envio do EU SOU é o desfecho da ponte, não o início."
+    },
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus. Disse Deus a Moisés: EU SOU O QUE SOU; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ouve, ó Israel"
+      },
+      {
+        "id": "b",
+        "text": "Jeová, nosso Deus, é o único Deus"
+      },
+      {
+        "id": "c",
+        "text": "EU SOU enviou-me a vós"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "trail": "hebraico",
+    "section": "hb-boss",
+    "id": "hebraico-pro-hb-boss-04",
+    "prompt": "Qual sequência revela o sentido de Deuteronômio 6:4?",
+    "cue": "Qual sequência revela o sentido de Deuteronômio 6:4?",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Êxodo 3:14",
+    "learningObjective": "Unir o Shema ao nome revelado: o Deus único é o EU SOU que se revela e envia.",
+    "evidence": [
+      "Deuteronômio 6:4",
+      "Êxodo 3:14"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Disse Deus a Moisés: ___ O QUE SOU.\"",
+    "feedbackCorrect": "Certo: o nome começa com EU SOU.",
+    "feedbackWrong": {
+      "a": "Israel é o povo, não esta primeira peça do nome.",
+      "c": "\"vós\" pertence à fórmula de envio."
+    },
+    "passageText": "Disse Deus a Moisés: EU SOU O QUE SOU; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.",
+    "template": "Disse Deus a Moisés: ___ O QUE SOU.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Israel"
+      },
+      {
+        "id": "b",
+        "text": "EU SOU"
+      },
+      {
+        "id": "c",
+        "text": "vós"
+      }
+    ],
+    "correctOptionId": "b",
+    "trail": "hebraico",
+    "section": "hb-boss",
+    "id": "hebraico-pro-hb-boss-05",
+    "prompt": "Complete a frase: \"Disse Deus a Moisés: ___ O QUE SOU.\"",
+    "cue": "Complete a frase: \"Disse Deus a Moisés: ___ O QUE SOU.\"",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Deuteronômio 6:4",
+    "learningObjective": "Unir o Shema ao nome revelado: o Deus único é o EU SOU que se revela e envia.",
+    "evidence": [
+      "Deuteronômio 6:4",
+      "Êxodo 3:14"
+    ],
+    "type": "connect",
+    "question": "O que Deuteronômio 6:4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o único do Shema é o que envia.",
+    "feedbackWrong": {
+      "a": "Os nomes não ficam sem missão.",
+      "c": "Israel não se envia a si mesmo."
+    },
+    "passageText": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus. Disse Deus a Moisés: EU SOU O QUE SOU; e acrescentou: Assim dirás aos filhos de Israel: EU SOU enviou-me a vós.",
+    "passageA": {
+      "ref": "Deuteronômio 6:4",
+      "text": "Ouve, ó Israel; Jeová, nosso Deus, é o único Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Ouça, Israel: o Deus único é o EU SOU que se revela e envia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Nomes sem missão"
+      },
+      {
+        "id": "b",
+        "text": "Único que envia"
+      },
+      {
+        "id": "c",
+        "text": "Israel se envia"
+      }
+    ],
+    "correctOptionId": "b",
+    "trail": "hebraico",
+    "section": "hb-boss",
+    "id": "hebraico-pro-hb-boss-06",
+    "prompt": "O que Deuteronômio 6:4 comunica que se liga a este contexto?",
+    "cue": "O que Deuteronômio 6:4 comunica que se liga a este contexto?",
+    "correctAnswer": "b"
+  }
+]

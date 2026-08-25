@@ -1,0 +1,2261 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tito 1:5–6",
+    "learningObjective": "Reconhecer que Tito deve regular o que faltava e estabelecer presbíteros íntegros em cada cidade.",
+    "evidence": [
+      "Tito 1:5",
+      "Tito 1:6"
+    ],
+    "type": "true_false",
+    "question": "Paulo deixou Tito em Creta a fim de que regulasse o que ainda faltava e estabelecesse presbíteros em cada cidade.",
+    "prompt": "Paulo deixou Tito em Creta a fim de que regulasse o que ainda faltava e estabelecesse presbíteros em cada cidade.",
+    "cue": "Paulo deixou Tito em Creta a fim de que regulasse o que ainda faltava e estabelecesse presbíteros em cada cidade.",
+    "feedbackCorrect": "Sim: Tito 1:5 diz exatamente isso.",
+    "feedbackWrong": {
+      "false": "Releia Tito 1:5: ele foi deixado em Creta para regular e estabelecer presbíteros."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "id": "tito-sem-tt-01-lideres-01",
+    "passageText": "Por essa causa, te deixei em Creta, a fim de que regulasses o que ainda faltava e que estabelecesses presbíteros em cada cidade, assim como eu te ordenei: se alguém é inculpável, marido de uma só mulher, tendo filhos crentes que não são acusados de dissolução, nem são insubordinados."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tito 1:5–6",
+    "learningObjective": "Reconhecer que Tito deve regular o que faltava e estabelecer presbíteros íntegros em cada cidade.",
+    "evidence": [
+      "Tito 1:5",
+      "Tito 1:6"
+    ],
+    "type": "tap",
+    "question": "Em Tito 1:5–6, toque a palavra que falta em \"e que estabelecesses ___ em cada cidade, assim como eu te ordenei\"?",
+    "prompt": "Em Tito 1:5–6, toque a palavra que falta em \"e que estabelecesses ___ em cada cidade, assim como eu te ordenei\"?",
+    "cue": "Em Tito 1:5–6, toque a palavra que falta em \"e que estabelecesses ___ em cada cidade, assim como eu te ordenei\"?",
+    "feedbackCorrect": "Exato: Tito deveria estabelecer presbíteros em cada cidade.",
+    "feedbackWrong": {
+      "b": "Creta é o lugar da missão, não o que ele deveria estabelecer.",
+      "c": "Dissolução aparece no critério dos filhos, não nesta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "presbíteros"
+      },
+      {
+        "id": "b",
+        "text": "Creta"
+      },
+      {
+        "id": "c",
+        "text": "dissolução"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "id": "tito-sem-tt-01-lideres-02",
+    "passageText": "Por essa causa, te deixei em Creta, a fim de que regulasses o que ainda faltava e que estabelecesses presbíteros em cada cidade, assim como eu te ordenei: se alguém é inculpável, marido de uma só mulher, tendo filhos crentes que não são acusados de dissolução, nem são insubordinados.",
+    "template": "Por essa causa, te deixei em Creta, a fim de que regulasses o que ainda faltava e que estabelecesses ___ em cada cidade, assim como eu te ordenei"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tito 1:5–6",
+    "learningObjective": "Reconhecer que Tito deve regular o que faltava e estabelecer presbíteros íntegros em cada cidade.",
+    "evidence": [
+      "Tito 1:5",
+      "Tito 1:6"
+    ],
+    "type": "choice",
+    "question": "O que Tito 1:5 afirma que Tito deveria fazer em Creta?",
+    "prompt": "O que Tito 1:5 afirma que Tito deveria fazer em Creta?",
+    "cue": "O que Tito 1:5 afirma que Tito deveria fazer em Creta?",
+    "feedbackCorrect": "Certo: regular o que faltava e estabelecer presbíteros em cada cidade.",
+    "feedbackWrong": {
+      "a": "O texto diz que ele foi deixado em Creta, não chamado de volta.",
+      "c": "O texto fala de presbíteros em cada cidade, não de um só para a ilha.",
+      "d": "Não há adiamento: a ordem já foi dada."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Abandonar Creta e voltar logo a Paulo."
+      },
+      {
+        "id": "b",
+        "text": "Regular o que faltava e estabelecer presbíteros em cada cidade."
+      },
+      {
+        "id": "c",
+        "text": "Nomear um único presbítero para toda a ilha."
+      },
+      {
+        "id": "d",
+        "text": "Adiar a escolha de líderes até outra visita."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "id": "tito-sem-tt-01-lideres-03",
+    "passageText": "Por essa causa, te deixei em Creta, a fim de que regulasses o que ainda faltava e que estabelecesses presbíteros em cada cidade, assim como eu te ordenei: se alguém é inculpável, marido de uma só mulher, tendo filhos crentes que não são acusados de dissolução, nem são insubordinados."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tito 1:5–6",
+    "learningObjective": "Reconhecer que Tito deve regular o que faltava e estabelecer presbíteros íntegros em cada cidade.",
+    "evidence": [
+      "Tito 1:5",
+      "Tito 1:6"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Tito 1:5–6?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Tito 1:5–6?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Tito 1:5–6?",
+    "feedbackCorrect": "Certo: primeiro a permanência em Creta, depois regular e estabelecer.",
+    "feedbackWrong": {
+      "a": "Estabelecer presbíteros vem depois de ser deixado em Creta.",
+      "c": "Regular o que faltava vem após ter sido deixado em Creta."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "estabelecesses presbíteros em cada cidade"
+      },
+      {
+        "id": "b",
+        "text": "te deixei em Creta"
+      },
+      {
+        "id": "c",
+        "text": "regulasses o que ainda faltava"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "id": "tito-sem-tt-01-lideres-04",
+    "passageText": "Por essa causa, te deixei em Creta, a fim de que regulasses o que ainda faltava e que estabelecesses presbíteros em cada cidade, assim como eu te ordenei: se alguém é inculpável, marido de uma só mulher, tendo filhos crentes que não são acusados de dissolução, nem são insubordinados.",
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tito 1:5–6",
+    "learningObjective": "Reconhecer que Tito deve regular o que faltava e estabelecer presbíteros íntegros em cada cidade.",
+    "evidence": [
+      "Tito 1:5",
+      "Tito 1:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"se alguém é ___, marido de uma só mulher, tendo filhos crentes\"",
+    "prompt": "Complete a frase: \"se alguém é ___, marido de uma só mulher, tendo filhos crentes\"",
+    "cue": "Complete a frase: \"se alguém é ___, marido de uma só mulher, tendo filhos crentes\"",
+    "feedbackCorrect": "Sim: o critério começa com ser inculpável.",
+    "feedbackWrong": {
+      "a": "Creta é o lugar, não o qualificativo do presbítero.",
+      "b": "Presbíteros é o ofício a estabelecer, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Creta"
+      },
+      {
+        "id": "b",
+        "text": "presbíteros"
+      },
+      {
+        "id": "c",
+        "text": "inculpável"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "id": "tito-sem-tt-01-lideres-05",
+    "passageText": "Por essa causa, te deixei em Creta, a fim de que regulasses o que ainda faltava e que estabelecesses presbíteros em cada cidade, assim como eu te ordenei: se alguém é inculpável, marido de uma só mulher, tendo filhos crentes que não são acusados de dissolução, nem são insubordinados.",
+    "template": "se alguém é ___, marido de uma só mulher, tendo filhos crentes"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tito 1:5–6",
+    "learningObjective": "Reconhecer que Tito deve regular o que faltava e estabelecer presbíteros íntegros em cada cidade.",
+    "evidence": [
+      "Tito 1:5",
+      "Tito 1:6"
+    ],
+    "type": "connect",
+    "question": "O que Tito 1:5–6 comunica que se liga a este contexto?",
+    "prompt": "O que Tito 1:5–6 comunica que se liga a este contexto?",
+    "cue": "O que Tito 1:5–6 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a sã doutrina passa por líderes estabelecidos cidade por cidade.",
+    "feedbackWrong": {
+      "a": "O texto exige inculpabilidade, não cargo sem critério.",
+      "c": "Paulo une doutrina e presbíteros locais, não os separa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Liderança sem critério"
+      },
+      {
+        "id": "b",
+        "text": "Presbíteros íntegros por cidade"
+      },
+      {
+        "id": "c",
+        "text": "Doutrina sem pastores"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "id": "tito-sem-tt-01-lideres-06",
+    "passageText": "Por essa causa, te deixei em Creta, a fim de que regulasses o que ainda faltava e que estabelecesses presbíteros em cada cidade, assim como eu te ordenei: se alguém é inculpável, marido de uma só mulher, tendo filhos crentes que não são acusados de dissolução, nem são insubordinados.",
+    "passageA": {
+      "ref": "Tito 1:5",
+      "text": "estabelecesses presbíteros em cada cidade, assim como eu te ordenei"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A sã doutrina na igreja passa por líderes íntegros, estabelecidos cidade por cidade."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tito 1:5–6",
+    "learningObjective": "Reconhecer que Tito deve regular o que faltava e estabelecer presbíteros íntegros em cada cidade.",
+    "evidence": [
+      "Tito 1:5",
+      "Tito 1:6"
+    ],
+    "type": "true_false",
+    "question": "Tito 1:5 manda estabelecer presbíteros somente em uma cidade de Creta, não em cada cidade.",
+    "prompt": "Tito 1:5 manda estabelecer presbíteros somente em uma cidade de Creta, não em cada cidade.",
+    "cue": "Tito 1:5 manda estabelecer presbíteros somente em uma cidade de Creta, não em cada cidade.",
+    "feedbackCorrect": "Correto: o texto diz \"em cada cidade\", não em uma só.",
+    "feedbackWrong": {
+      "true": "Tito 1:5 fala de presbíteros em cada cidade, não em uma apenas."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "id": "tito-cam-tt-01-lideres-01",
+    "passageText": "Por essa causa, te deixei em Creta, a fim de que regulasses o que ainda faltava e que estabelecesses presbíteros em cada cidade, assim como eu te ordenei: se alguém é inculpável, marido de uma só mulher, tendo filhos crentes que não são acusados de dissolução, nem são insubordinados."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tito 1:5–6",
+    "learningObjective": "Reconhecer que Tito deve regular o que faltava e estabelecer presbíteros íntegros em cada cidade.",
+    "evidence": [
+      "Tito 1:5",
+      "Tito 1:6"
+    ],
+    "type": "tap",
+    "question": "Em Tito 1:5–6, toque a palavra que falta em \"Por essa causa, te deixei em ___, a fim de que regulasses o que ainda faltava\"?",
+    "prompt": "Em Tito 1:5–6, toque a palavra que falta em \"Por essa causa, te deixei em ___, a fim de que regulasses o que ainda faltava\"?",
+    "cue": "Em Tito 1:5–6, toque a palavra que falta em \"Por essa causa, te deixei em ___, a fim de que regulasses o que ainda faltava\"?",
+    "feedbackCorrect": "Exato: Tito foi deixado em Creta.",
+    "feedbackWrong": {
+      "a": "Cidade aparece depois, ligada aos presbíteros, não a este lugar.",
+      "c": "Mulher pertence ao critério do presbítero, não a esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "cidade"
+      },
+      {
+        "id": "b",
+        "text": "Creta"
+      },
+      {
+        "id": "c",
+        "text": "mulher"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "id": "tito-cam-tt-01-lideres-02",
+    "passageText": "Por essa causa, te deixei em Creta, a fim de que regulasses o que ainda faltava e que estabelecesses presbíteros em cada cidade, assim como eu te ordenei: se alguém é inculpável, marido de uma só mulher, tendo filhos crentes que não são acusados de dissolução, nem são insubordinados.",
+    "template": "Por essa causa, te deixei em ___, a fim de que regulasses o que ainda faltava"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tito 1:5–6",
+    "learningObjective": "Reconhecer que Tito deve regular o que faltava e estabelecer presbíteros íntegros em cada cidade.",
+    "evidence": [
+      "Tito 1:5",
+      "Tito 1:6"
+    ],
+    "type": "choice",
+    "question": "Como Tito 1:5 liga regular o que faltava e estabelecer presbíteros?",
+    "prompt": "Como Tito 1:5 liga regular o que faltava e estabelecer presbíteros?",
+    "cue": "Como Tito 1:5 liga regular o que faltava e estabelecer presbíteros?",
+    "feedbackCorrect": "Certo: o que faltava inclui estabelecer presbíteros cidade por cidade.",
+    "feedbackWrong": {
+      "b": "Regular inclui estabelecer líderes, não dispensá-los.",
+      "c": "Os presbíteros não são adorno: são o meio da ordem.",
+      "d": "O versículo seguinte une o ofício ao caráter."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O que faltava se completa com presbíteros íntegros em cada cidade."
+      },
+      {
+        "id": "b",
+        "text": "Regular o que faltava torna desnecessária qualquer liderança."
+      },
+      {
+        "id": "c",
+        "text": "Presbíteros são enfeite depois que a doutrina já está pronta."
+      },
+      {
+        "id": "d",
+        "text": "Paulo separa a ordem da igreja do caráter dos líderes."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "id": "tito-cam-tt-01-lideres-03",
+    "passageText": "Por essa causa, te deixei em Creta, a fim de que regulasses o que ainda faltava e que estabelecesses presbíteros em cada cidade, assim como eu te ordenei: se alguém é inculpável, marido de uma só mulher, tendo filhos crentes que não são acusados de dissolução, nem são insubordinados."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tito 1:5–6",
+    "learningObjective": "Reconhecer que Tito deve regular o que faltava e estabelecer presbíteros íntegros em cada cidade.",
+    "evidence": [
+      "Tito 1:5",
+      "Tito 1:6"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Tito 1:5–6?",
+    "prompt": "Como se encadeiam os eventos de Tito 1:5–6?",
+    "cue": "Como se encadeiam os eventos de Tito 1:5–6?",
+    "feedbackCorrect": "Certo: missão em Creta, presbíteros por cidade, depois o critério.",
+    "feedbackWrong": {
+      "a": "O critério de caráter vem depois da ordem de estabelecer.",
+      "c": "Estabelecer presbíteros vem após ser deixado para regular."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "se alguém é inculpável, marido de uma só mulher"
+      },
+      {
+        "id": "b",
+        "text": "te deixei em Creta, a fim de que regulasses o que ainda faltava"
+      },
+      {
+        "id": "c",
+        "text": "estabelecesses presbíteros em cada cidade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "id": "tito-cam-tt-01-lideres-04",
+    "passageText": "Por essa causa, te deixei em Creta, a fim de que regulasses o que ainda faltava e que estabelecesses presbíteros em cada cidade, assim como eu te ordenei: se alguém é inculpável, marido de uma só mulher, tendo filhos crentes que não são acusados de dissolução, nem são insubordinados.",
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tito 1:5–6",
+    "learningObjective": "Reconhecer que Tito deve regular o que faltava e estabelecer presbíteros íntegros em cada cidade.",
+    "evidence": [
+      "Tito 1:5",
+      "Tito 1:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"tendo ___ crentes que não são acusados de dissolução, nem são insubordinados.\"",
+    "prompt": "Complete a frase: \"tendo ___ crentes que não são acusados de dissolução, nem são insubordinados.\"",
+    "cue": "Complete a frase: \"tendo ___ crentes que não são acusados de dissolução, nem são insubordinados.\"",
+    "feedbackCorrect": "Sim: o texto fala de filhos crentes, não insubordinados.",
+    "feedbackWrong": {
+      "b": "Creta não preenche esta lacuna sobre a casa do líder.",
+      "c": "Cidade é o alcance do ofício, não esta palavra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "filhos"
+      },
+      {
+        "id": "b",
+        "text": "Creta"
+      },
+      {
+        "id": "c",
+        "text": "cidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "id": "tito-cam-tt-01-lideres-05",
+    "passageText": "Por essa causa, te deixei em Creta, a fim de que regulasses o que ainda faltava e que estabelecesses presbíteros em cada cidade, assim como eu te ordenei: se alguém é inculpável, marido de uma só mulher, tendo filhos crentes que não são acusados de dissolução, nem são insubordinados.",
+    "template": "tendo ___ crentes que não são acusados de dissolução, nem são insubordinados."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tito 1:5–6",
+    "learningObjective": "Reconhecer que Tito deve regular o que faltava e estabelecer presbíteros íntegros em cada cidade.",
+    "evidence": [
+      "Tito 1:5",
+      "Tito 1:6"
+    ],
+    "type": "connect",
+    "question": "O que Tito 1:5–6 comunica que se liga a este contexto?",
+    "prompt": "O que Tito 1:5–6 comunica que se liga a este contexto?",
+    "cue": "O que Tito 1:5–6 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o ofício exige caráter comprovado também em casa.",
+    "feedbackWrong": {
+      "b": "O lar entra no critério; o cargo não é cego.",
+      "c": "A sã doutrina passa pelo líder íntegro, não só pelo discurso."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Caráter visível do presbítero"
+      },
+      {
+        "id": "b",
+        "text": "Cargo sem exame do lar"
+      },
+      {
+        "id": "c",
+        "text": "Doutrina só no púlpito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "id": "tito-cam-tt-01-lideres-06",
+    "passageText": "Por essa causa, te deixei em Creta, a fim de que regulasses o que ainda faltava e que estabelecesses presbíteros em cada cidade, assim como eu te ordenei: se alguém é inculpável, marido de uma só mulher, tendo filhos crentes que não são acusados de dissolução, nem são insubordinados.",
+    "passageA": {
+      "ref": "Tito 1:6",
+      "text": "se alguém é inculpável, marido de uma só mulher, tendo filhos crentes"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A sã doutrina na igreja passa por líderes íntegros, estabelecidos cidade por cidade."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tito 1:5–6",
+    "learningObjective": "Reconhecer que Tito deve regular o que faltava e estabelecer presbíteros íntegros em cada cidade.",
+    "evidence": [
+      "Tito 1:5",
+      "Tito 1:6"
+    ],
+    "type": "true_false",
+    "question": "Segundo Tito 1:6, o presbítero pode ser insubordinado em casa, desde que pregue bem em público.",
+    "prompt": "Segundo Tito 1:6, o presbítero pode ser insubordinado em casa, desde que pregue bem em público.",
+    "cue": "Segundo Tito 1:6, o presbítero pode ser insubordinado em casa, desde que pregue bem em público.",
+    "feedbackCorrect": "Correto: o texto exige filhos crentes, não acusados nem insubordinados.",
+    "feedbackWrong": {
+      "true": "Tito 1:6 não separa púlpito e casa: o critério inclui o lar."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "id": "tito-pro-tt-01-lideres-01",
+    "passageText": "Por essa causa, te deixei em Creta, a fim de que regulasses o que ainda faltava e que estabelecesses presbíteros em cada cidade, assim como eu te ordenei: se alguém é inculpável, marido de uma só mulher, tendo filhos crentes que não são acusados de dissolução, nem são insubordinados."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tito 1:5–6",
+    "learningObjective": "Reconhecer que Tito deve regular o que faltava e estabelecer presbíteros íntegros em cada cidade.",
+    "evidence": [
+      "Tito 1:5",
+      "Tito 1:6"
+    ],
+    "type": "tap",
+    "question": "Em Tito 1:5–6, toque a palavra que falta em \"tendo filhos crentes que não são acusados de ___, nem são insubordinados\"?",
+    "prompt": "Em Tito 1:5–6, toque a palavra que falta em \"tendo filhos crentes que não são acusados de ___, nem são insubordinados\"?",
+    "cue": "Em Tito 1:5–6, toque a palavra que falta em \"tendo filhos crentes que não são acusados de ___, nem são insubordinados\"?",
+    "feedbackCorrect": "Exato: os filhos não devem ser acusados de dissolução.",
+    "feedbackWrong": {
+      "a": "Faltava refere-se ao que Tito deveria regular, não aos filhos.",
+      "b": "Presbíteros é o ofício, não a acusação vedada."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "faltava"
+      },
+      {
+        "id": "b",
+        "text": "presbíteros"
+      },
+      {
+        "id": "c",
+        "text": "dissolução"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "id": "tito-pro-tt-01-lideres-02",
+    "passageText": "Por essa causa, te deixei em Creta, a fim de que regulasses o que ainda faltava e que estabelecesses presbíteros em cada cidade, assim como eu te ordenei: se alguém é inculpável, marido de uma só mulher, tendo filhos crentes que não são acusados de dissolução, nem são insubordinados.",
+    "template": "tendo filhos crentes que não são acusados de ___, nem são insubordinados"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tito 1:5–6",
+    "learningObjective": "Reconhecer que Tito deve regular o que faltava e estabelecer presbíteros íntegros em cada cidade.",
+    "evidence": [
+      "Tito 1:5",
+      "Tito 1:6"
+    ],
+    "type": "choice",
+    "question": "Qual leitura Tito 1:5–6 sustenta sobre doutrina e liderança?",
+    "prompt": "Qual leitura Tito 1:5–6 sustenta sobre doutrina e liderança?",
+    "cue": "Qual leitura Tito 1:5–6 sustenta sobre doutrina e liderança?",
+    "feedbackCorrect": "Certo: doutrina saudável passa por presbíteros íntegros em cada cidade.",
+    "feedbackWrong": {
+      "b": "O versículo 6 examina casamento e filhos; a casa conta.",
+      "c": "O critério doméstico é condição, não adorno cultural.",
+      "d": "O texto fala de inculpabilidade, não de status."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A sã doutrina se guarda por líderes aprovados no caráter, cidade por cidade."
+      },
+      {
+        "id": "b",
+        "text": "O cargo de presbítero dispensa o testemunho da casa."
+      },
+      {
+        "id": "c",
+        "text": "Integridade familiar é detalhe cultural sem peso eclesial."
+      },
+      {
+        "id": "d",
+        "text": "Paulo busca prestígio social, não pastoreio fiel."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "id": "tito-pro-tt-01-lideres-03",
+    "passageText": "Por essa causa, te deixei em Creta, a fim de que regulasses o que ainda faltava e que estabelecesses presbíteros em cada cidade, assim como eu te ordenei: se alguém é inculpável, marido de uma só mulher, tendo filhos crentes que não são acusados de dissolução, nem são insubordinados."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tito 1:5–6",
+    "learningObjective": "Reconhecer que Tito deve regular o que faltava e estabelecer presbíteros íntegros em cada cidade.",
+    "evidence": [
+      "Tito 1:5",
+      "Tito 1:6"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Tito 1:5–6?",
+    "prompt": "Qual sequência revela o sentido de Tito 1:5–6?",
+    "cue": "Qual sequência revela o sentido de Tito 1:5–6?",
+    "feedbackCorrect": "Certo: a ordem, o estabelecimento e o critério de caráter revelam o sentido.",
+    "feedbackWrong": {
+      "a": "O critério familiar coroa a ordem; não é o primeiro passo.",
+      "c": "Estabelecer presbíteros vem depois de regular o que faltava."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "tendo filhos crentes que não são acusados de dissolução, nem são insubordinados"
+      },
+      {
+        "id": "b",
+        "text": "regulasses o que ainda faltava"
+      },
+      {
+        "id": "c",
+        "text": "estabelecesses presbíteros em cada cidade, assim como eu te ordenei"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "id": "tito-pro-tt-01-lideres-04",
+    "passageText": "Por essa causa, te deixei em Creta, a fim de que regulasses o que ainda faltava e que estabelecesses presbíteros em cada cidade, assim como eu te ordenei: se alguém é inculpável, marido de uma só mulher, tendo filhos crentes que não são acusados de dissolução, nem são insubordinados.",
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tito 1:5–6",
+    "learningObjective": "Reconhecer que Tito deve regular o que faltava e estabelecer presbíteros íntegros em cada cidade.",
+    "evidence": [
+      "Tito 1:5",
+      "Tito 1:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"que não são acusados de dissolução, nem são ___.\"",
+    "prompt": "Complete a frase: \"que não são acusados de dissolução, nem são ___.\"",
+    "cue": "Complete a frase: \"que não são acusados de dissolução, nem são ___.\"",
+    "feedbackCorrect": "Sim: além de não dissolutos, os filhos não devem ser insubordinados.",
+    "feedbackWrong": {
+      "a": "Inculpável descreve o próprio candidato, não esta lacuna.",
+      "c": "Creta não completa o critério dos filhos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "inculpável"
+      },
+      {
+        "id": "b",
+        "text": "insubordinados"
+      },
+      {
+        "id": "c",
+        "text": "Creta"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "id": "tito-pro-tt-01-lideres-05",
+    "passageText": "Por essa causa, te deixei em Creta, a fim de que regulasses o que ainda faltava e que estabelecesses presbíteros em cada cidade, assim como eu te ordenei: se alguém é inculpável, marido de uma só mulher, tendo filhos crentes que não são acusados de dissolução, nem são insubordinados.",
+    "template": "que não são acusados de dissolução, nem são ___."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tito 1:5–6",
+    "learningObjective": "Reconhecer que Tito deve regular o que faltava e estabelecer presbíteros íntegros em cada cidade.",
+    "evidence": [
+      "Tito 1:5",
+      "Tito 1:6"
+    ],
+    "type": "connect",
+    "question": "O que Tito 1:5–6 comunica que se liga a este contexto?",
+    "prompt": "O que Tito 1:5–6 comunica que se liga a este contexto?",
+    "cue": "O que Tito 1:5–6 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: líderes íntegros são o meio da sã doutrina na igreja.",
+    "feedbackWrong": {
+      "a": "O texto mede caráter, não brilho carismático.",
+      "b": "A ordem é estabelecer presbíteros em cada cidade."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Carisma acima do caráter"
+      },
+      {
+        "id": "b",
+        "text": "Cidade sem necessidade de pastores"
+      },
+      {
+        "id": "c",
+        "text": "Integridade guarda a doutrina"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "tito",
+    "section": "tt-01-lideres",
+    "id": "tito-pro-tt-01-lideres-06",
+    "passageText": "Por essa causa, te deixei em Creta, a fim de que regulasses o que ainda faltava e que estabelecesses presbíteros em cada cidade, assim como eu te ordenei: se alguém é inculpável, marido de uma só mulher, tendo filhos crentes que não são acusados de dissolução, nem são insubordinados.",
+    "passageA": {
+      "ref": "Tito 1:6",
+      "text": "se alguém é inculpável, marido de uma só mulher, tendo filhos crentes que não são acusados de dissolução, nem são insubordinados."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A sã doutrina na igreja passa por líderes íntegros, estabelecidos cidade por cidade."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tito 2:11–12",
+    "learningObjective": "Ver que a graça que salva também ensina a viver sóbria, reta e piamente.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:12"
+    ],
+    "type": "true_false",
+    "question": "Em Tito 2:11, a graça de Deus se manifestou sem trazer salvação a ninguém.",
+    "prompt": "Em Tito 2:11, a graça de Deus se manifestou sem trazer salvação a ninguém.",
+    "cue": "Em Tito 2:11, a graça de Deus se manifestou sem trazer salvação a ninguém.",
+    "feedbackCorrect": "Correto: a graça se manifestou trazendo a salvação a todos os homens.",
+    "feedbackWrong": {
+      "true": "Tito 2:11 diz que a graça trouxe a salvação a todos os homens."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "id": "tito-sem-tt-02-graca-01",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tito 2:11–12",
+    "learningObjective": "Ver que a graça que salva também ensina a viver sóbria, reta e piamente.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:12"
+    ],
+    "type": "tap",
+    "question": "Em Tito 2:11–12, toque a palavra que falta em \"Pois a ___ de Deus se manifestou, trazendo a salvação a todos os homens\"?",
+    "prompt": "Em Tito 2:11–12, toque a palavra que falta em \"Pois a ___ de Deus se manifestou, trazendo a salvação a todos os homens\"?",
+    "cue": "Em Tito 2:11–12, toque a palavra que falta em \"Pois a ___ de Deus se manifestou, trazendo a salvação a todos os homens\"?",
+    "feedbackCorrect": "Exato: é a graça de Deus que se manifestou.",
+    "feedbackWrong": {
+      "b": "Impiedade é o que se deve renunciar, não o que se manifestou.",
+      "c": "Mundo aparece depois, no modo de viver, não nesta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "graça"
+      },
+      {
+        "id": "b",
+        "text": "impiedade"
+      },
+      {
+        "id": "c",
+        "text": "mundo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "id": "tito-sem-tt-02-graca-02",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente.",
+    "template": "Pois a ___ de Deus se manifestou, trazendo a salvação a todos os homens"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tito 2:11–12",
+    "learningObjective": "Ver que a graça que salva também ensina a viver sóbria, reta e piamente.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:12"
+    ],
+    "type": "choice",
+    "question": "Segundo Tito 2:11, o que a graça de Deus trouxe ao se manifestar?",
+    "prompt": "Segundo Tito 2:11, o que a graça de Deus trouxe ao se manifestar?",
+    "cue": "Segundo Tito 2:11, o que a graça de Deus trouxe ao se manifestar?",
+    "feedbackCorrect": "Certo: a graça se manifestou trazendo a salvação a todos os homens.",
+    "feedbackWrong": {
+      "a": "O texto fala de salvação, não de filosofia.",
+      "c": "O que se manifesta é graça que salva, não lei sem salvação.",
+      "d": "O texto diz \"a todos os homens\", não a um grupo só."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Apenas conhecimento filosófico do mundo."
+      },
+      {
+        "id": "b",
+        "text": "A salvação a todos os homens."
+      },
+      {
+        "id": "c",
+        "text": "Uma lei nova sem qualquer salvação."
+      },
+      {
+        "id": "d",
+        "text": "Um privilégio restrito a um povo só."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "id": "tito-sem-tt-02-graca-03",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tito 2:11–12",
+    "learningObjective": "Ver que a graça que salva também ensina a viver sóbria, reta e piamente.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:12"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Tito 2:11–12?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Tito 2:11–12?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Tito 2:11–12?",
+    "feedbackCorrect": "Certo: a graça se manifesta, traz salvação e então ensina.",
+    "feedbackWrong": {
+      "a": "O ensino vem depois da manifestação e da salvação.",
+      "c": "Trazer salvação segue a manifestação da graça."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "ensinando-nos"
+      },
+      {
+        "id": "b",
+        "text": "a graça de Deus se manifestou"
+      },
+      {
+        "id": "c",
+        "text": "trazendo a salvação a todos os homens"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "id": "tito-sem-tt-02-graca-04",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente.",
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tito 2:11–12",
+    "learningObjective": "Ver que a graça que salva também ensina a viver sóbria, reta e piamente.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:12"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Pois a graça de Deus se manifestou, trazendo a ___ a todos os homens\"",
+    "prompt": "Complete a frase: \"Pois a graça de Deus se manifestou, trazendo a ___ a todos os homens\"",
+    "cue": "Complete a frase: \"Pois a graça de Deus se manifestou, trazendo a ___ a todos os homens\"",
+    "feedbackCorrect": "Sim: a graça se manifestou trazendo a salvação.",
+    "feedbackWrong": {
+      "a": "Graça já está no início da frase; a lacuna é outra.",
+      "c": "Mundo não é o que a graça traz neste versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "graça"
+      },
+      {
+        "id": "b",
+        "text": "salvação"
+      },
+      {
+        "id": "c",
+        "text": "mundo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "id": "tito-sem-tt-02-graca-05",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente.",
+    "template": "Pois a graça de Deus se manifestou, trazendo a ___ a todos os homens"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tito 2:11–12",
+    "learningObjective": "Ver que a graça que salva também ensina a viver sóbria, reta e piamente.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:12"
+    ],
+    "type": "connect",
+    "question": "O que Tito 2:11–12 comunica que se liga a este contexto?",
+    "prompt": "O que Tito 2:11–12 comunica que se liga a este contexto?",
+    "cue": "O que Tito 2:11–12 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a graça manifesta salva e, no versículo 12, também ensina.",
+    "feedbackWrong": {
+      "a": "A graça não é só informação: ela traz salvação.",
+      "c": "O texto já aponta para o ensino da graça, não ética zero."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Graça que só informa"
+      },
+      {
+        "id": "b",
+        "text": "Graça que salva e ensina"
+      },
+      {
+        "id": "c",
+        "text": "Salvação sem qualquer ética"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "id": "tito-sem-tt-02-graca-06",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente.",
+    "passageA": {
+      "ref": "Tito 2:11",
+      "text": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A graça não só salva: ela ensina a renunciar à impiedade e a viver sóbria, reta e piamente."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tito 2:11–12",
+    "learningObjective": "Ver que a graça que salva também ensina a viver sóbria, reta e piamente.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:12"
+    ],
+    "type": "true_false",
+    "question": "Em Tito 2:11–12, a graça que se manifestou também ensina um modo de viver no presente mundo.",
+    "prompt": "Em Tito 2:11–12, a graça que se manifestou também ensina um modo de viver no presente mundo.",
+    "cue": "Em Tito 2:11–12, a graça que se manifestou também ensina um modo de viver no presente mundo.",
+    "feedbackCorrect": "Sim: a graça ensina a renunciar e a viver sóbria, reta e piamente.",
+    "feedbackWrong": {
+      "false": "Tito 2:12 diz que a graça ensina, não só que ela salva."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "id": "tito-cam-tt-02-graca-01",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tito 2:11–12",
+    "learningObjective": "Ver que a graça que salva também ensina a viver sóbria, reta e piamente.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:12"
+    ],
+    "type": "tap",
+    "question": "Em Tito 2:11–12, toque a palavra que falta em \"ensinando-nos, a fim de que, renunciando a ___ e as paixões mundanas\"?",
+    "prompt": "Em Tito 2:11–12, toque a palavra que falta em \"ensinando-nos, a fim de que, renunciando a ___ e as paixões mundanas\"?",
+    "cue": "Em Tito 2:11–12, toque a palavra que falta em \"ensinando-nos, a fim de que, renunciando a ___ e as paixões mundanas\"?",
+    "feedbackCorrect": "Exato: a graça ensina a renunciar à impiedade.",
+    "feedbackWrong": {
+      "a": "Graça é quem ensina, não o que se renuncia.",
+      "b": "Salvação é o que a graça traz, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "graça"
+      },
+      {
+        "id": "b",
+        "text": "salvação"
+      },
+      {
+        "id": "c",
+        "text": "impiedade"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "id": "tito-cam-tt-02-graca-02",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente.",
+    "template": "ensinando-nos, a fim de que, renunciando a ___ e as paixões mundanas"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tito 2:11–12",
+    "learningObjective": "Ver que a graça que salva também ensina a viver sóbria, reta e piamente.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:12"
+    ],
+    "type": "choice",
+    "question": "Qual o encadeamento de Tito 2:11–12 entre salvação e vida?",
+    "prompt": "Qual o encadeamento de Tito 2:11–12 entre salvação e vida?",
+    "cue": "Qual o encadeamento de Tito 2:11–12 entre salvação e vida?",
+    "feedbackCorrect": "Certo: a mesma graça salva e educa para uma vida nova.",
+    "feedbackWrong": {
+      "b": "A graça se manifesta primeiro; não é prêmio do esforço.",
+      "c": "O texto une salvação e renúncia, não as opõe.",
+      "d": "O ensino da graça aponta para esse modo de viver agora."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A graça que salva também ensina a renunciar à impiedade e a viver de outro modo."
+      },
+      {
+        "id": "b",
+        "text": "Primeiro o esforço humano, depois a graça aparece como prêmio."
+      },
+      {
+        "id": "c",
+        "text": "A salvação dispensa qualquer renúncia às paixões mundanas."
+      },
+      {
+        "id": "d",
+        "text": "Viver sóbria, reta e piamente é opcional para quem já foi salvo."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "id": "tito-cam-tt-02-graca-03",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tito 2:11–12",
+    "learningObjective": "Ver que a graça que salva também ensina a viver sóbria, reta e piamente.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:12"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Tito 2:11–12?",
+    "prompt": "Como se encadeiam os eventos de Tito 2:11–12?",
+    "cue": "Como se encadeiam os eventos de Tito 2:11–12?",
+    "feedbackCorrect": "Certo: graça que salva, ensino que faz renunciar, vida sóbria agora.",
+    "feedbackWrong": {
+      "a": "O modo de viver é o fruto, não o ponto de partida.",
+      "c": "O ensino segue a manifestação da graça que salva."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "vivamos no presente mundo sóbria, reta e piamente"
+      },
+      {
+        "id": "b",
+        "text": "a graça de Deus se manifestou, trazendo a salvação"
+      },
+      {
+        "id": "c",
+        "text": "ensinando-nos, a fim de que, renunciando a impiedade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "id": "tito-cam-tt-02-graca-04",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente.",
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tito 2:11–12",
+    "learningObjective": "Ver que a graça que salva também ensina a viver sóbria, reta e piamente.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:12"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"vivamos no presente mundo ___, reta e piamente.\"",
+    "prompt": "Complete a frase: \"vivamos no presente mundo ___, reta e piamente.\"",
+    "cue": "Complete a frase: \"vivamos no presente mundo ___, reta e piamente.\"",
+    "feedbackCorrect": "Sim: a tríade é sóbria, reta e piamente.",
+    "feedbackWrong": {
+      "b": "Impiedade é o que se renuncia, não o modo de viver.",
+      "c": "Graça é quem ensina; a lacuna é o advérbio da vida."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "sóbria"
+      },
+      {
+        "id": "b",
+        "text": "impiedade"
+      },
+      {
+        "id": "c",
+        "text": "graça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "id": "tito-cam-tt-02-graca-05",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente.",
+    "template": "vivamos no presente mundo ___, reta e piamente."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tito 2:11–12",
+    "learningObjective": "Ver que a graça que salva também ensina a viver sóbria, reta e piamente.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:12"
+    ],
+    "type": "connect",
+    "question": "O que Tito 2:11–12 comunica que se liga a este contexto?",
+    "prompt": "O que Tito 2:11–12 comunica que se liga a este contexto?",
+    "cue": "O que Tito 2:11–12 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a graça educa para a renúncia e para a vida piedosa.",
+    "feedbackWrong": {
+      "a": "Quem ensina é a graça, não uma lei sem graça.",
+      "c": "O ensino visa mudança de vida no presente mundo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Lei sem graça"
+      },
+      {
+        "id": "b",
+        "text": "Educação da graça"
+      },
+      {
+        "id": "c",
+        "text": "Salvação sem mudança"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "id": "tito-cam-tt-02-graca-06",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente.",
+    "passageA": {
+      "ref": "Tito 2:12",
+      "text": "ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A graça não só salva: ela ensina a renunciar à impiedade e a viver sóbria, reta e piamente."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tito 2:11–12",
+    "learningObjective": "Ver que a graça que salva também ensina a viver sóbria, reta e piamente.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:12"
+    ],
+    "type": "true_false",
+    "question": "Em Tito 2:12, a graça ensina, mas não pede renúncia à impiedade nem às paixões mundanas.",
+    "prompt": "Em Tito 2:12, a graça ensina, mas não pede renúncia à impiedade nem às paixões mundanas.",
+    "cue": "Em Tito 2:12, a graça ensina, mas não pede renúncia à impiedade nem às paixões mundanas.",
+    "feedbackCorrect": "Correto: o ensino da graça inclui exatamente essa renúncia.",
+    "feedbackWrong": {
+      "true": "Tito 2:12 une o ensino da graça à renúncia à impiedade."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "id": "tito-pro-tt-02-graca-01",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tito 2:11–12",
+    "learningObjective": "Ver que a graça que salva também ensina a viver sóbria, reta e piamente.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:12"
+    ],
+    "type": "tap",
+    "question": "Em Tito 2:11–12, toque a palavra que falta em \"vivamos no presente mundo sóbria, reta e ___\"?",
+    "prompt": "Em Tito 2:11–12, toque a palavra que falta em \"vivamos no presente mundo sóbria, reta e ___\"?",
+    "cue": "Em Tito 2:11–12, toque a palavra que falta em \"vivamos no presente mundo sóbria, reta e ___\"?",
+    "feedbackCorrect": "Exato: a tríade termina com \"piamente\".",
+    "feedbackWrong": {
+      "a": "Homens aparece em \"todos os homens\", não nesta lacuna.",
+      "c": "Salvação é o que a graça traz, não o advérbio da vida."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "homens"
+      },
+      {
+        "id": "b",
+        "text": "piamente"
+      },
+      {
+        "id": "c",
+        "text": "salvação"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "id": "tito-pro-tt-02-graca-02",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente.",
+    "template": "vivamos no presente mundo sóbria, reta e ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tito 2:11–12",
+    "learningObjective": "Ver que a graça que salva também ensina a viver sóbria, reta e piamente.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:12"
+    ],
+    "type": "choice",
+    "question": "Qual implicação teológica de Tito 2:11–12?",
+    "prompt": "Qual implicação teológica de Tito 2:11–12?",
+    "cue": "Qual implicação teológica de Tito 2:11–12?",
+    "feedbackCorrect": "Certo: a graça salva e forma o salvo no presente mundo.",
+    "feedbackWrong": {
+      "b": "O texto manda viver sóbria, reta e piamente agora.",
+      "c": "A graça se manifesta primeiro; a renúncia é fruto, não preço.",
+      "d": "O \"presente mundo\" é o palco da vida ensinada pela graça."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Quem foi salvo pela graça é treinado por ela para uma vida santa agora."
+      },
+      {
+        "id": "b",
+        "text": "A piedade fica para o mundo vindouro; agora vale o que o mundo ensina."
+      },
+      {
+        "id": "c",
+        "text": "Renunciar à impiedade é mérito que compra a graça."
+      },
+      {
+        "id": "d",
+        "text": "A graça manifesta-se só no culto, não no cotidiano."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "id": "tito-pro-tt-02-graca-03",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tito 2:11–12",
+    "learningObjective": "Ver que a graça que salva também ensina a viver sóbria, reta e piamente.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:12"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Tito 2:11–12?",
+    "prompt": "Qual sequência revela o sentido de Tito 2:11–12?",
+    "cue": "Qual sequência revela o sentido de Tito 2:11–12?",
+    "feedbackCorrect": "Certo: graça manifesta, ensino que faz renunciar, vida piedosa agora.",
+    "feedbackWrong": {
+      "a": "A vida nova é o alvo do ensino, não o início da graça.",
+      "c": "O ensino segue a manifestação da graça, não a precede."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "vivamos no presente mundo sóbria, reta e piamente"
+      },
+      {
+        "id": "b",
+        "text": "a graça de Deus se manifestou"
+      },
+      {
+        "id": "c",
+        "text": "ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "id": "tito-pro-tt-02-graca-04",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente.",
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tito 2:11–12",
+    "learningObjective": "Ver que a graça que salva também ensina a viver sóbria, reta e piamente.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:12"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"renunciando a impiedade e as paixões ___\"",
+    "prompt": "Complete a frase: \"renunciando a impiedade e as paixões ___\"",
+    "cue": "Complete a frase: \"renunciando a impiedade e as paixões ___\"",
+    "feedbackCorrect": "Sim: o texto fala de paixões mundanas.",
+    "feedbackWrong": {
+      "a": "Piamente descreve o viver, não as paixões.",
+      "b": "Graça não completa \"paixões ___\"."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "piamente"
+      },
+      {
+        "id": "b",
+        "text": "graça"
+      },
+      {
+        "id": "c",
+        "text": "mundanas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "id": "tito-pro-tt-02-graca-05",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente.",
+    "template": "renunciando a impiedade e as paixões ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tito 2:11–12",
+    "learningObjective": "Ver que a graça que salva também ensina a viver sóbria, reta e piamente.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:12"
+    ],
+    "type": "connect",
+    "question": "O que Tito 2:11–12 comunica que se liga a este contexto?",
+    "prompt": "O que Tito 2:11–12 comunica que se liga a este contexto?",
+    "cue": "O que Tito 2:11–12 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a graça forma o modo de viver, não o abandona.",
+    "feedbackWrong": {
+      "a": "A graça ensina a renunciar, não a ignorar a lei de Deus.",
+      "b": "Quem forma a vida é a graça manifestada, não o esforço sozinho."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Graça antinomiana"
+      },
+      {
+        "id": "b",
+        "text": "Esforço sem graça"
+      },
+      {
+        "id": "c",
+        "text": "Graça formadora de vida"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "tito",
+    "section": "tt-02-graca",
+    "id": "tito-pro-tt-02-graca-06",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente.",
+    "passageA": {
+      "ref": "Tito 2:12",
+      "text": "vivamos no presente mundo sóbria, reta e piamente"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A graça não só salva: ela ensina a renunciar à impiedade e a viver sóbria, reta e piamente."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tito 2:11–14",
+    "learningObjective": "Compreender que Cristo se deu para purificar um povo seu, zeloso de boas obras.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:13",
+      "Tito 2:14"
+    ],
+    "type": "true_false",
+    "question": "Cristo Jesus se deu a si mesmo por nós a fim de nos remir de toda iniquidade e purificar para si um povo zeloso de boas obras.",
+    "prompt": "Cristo Jesus se deu a si mesmo por nós a fim de nos remir de toda iniquidade e purificar para si um povo zeloso de boas obras.",
+    "cue": "Cristo Jesus se deu a si mesmo por nós a fim de nos remir de toda iniquidade e purificar para si um povo zeloso de boas obras.",
+    "feedbackCorrect": "Sim: é o que Tito 2:14 afirma.",
+    "feedbackWrong": {
+      "false": "Releia Tito 2:14: ele se deu para remir e purificar um povo zeloso."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "id": "tito-sem-tt-03-desafio-01",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente, aguardando a bem-aventurada esperança e a manifestação da glória do grande Deus e nosso Salvador Cristo Jesus, que se deu a si mesmo por nós, a fim de nos remir de toda iniquidade e purificar para si um povo todo seu, zeloso de boas obras."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tito 2:11–14",
+    "learningObjective": "Compreender que Cristo se deu para purificar um povo seu, zeloso de boas obras.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:13",
+      "Tito 2:14"
+    ],
+    "type": "tap",
+    "question": "Em Tito 2:11–14, toque a palavra que falta em \"purificar para si um povo todo seu, ___ de boas obras\"?",
+    "prompt": "Em Tito 2:11–14, toque a palavra que falta em \"purificar para si um povo todo seu, ___ de boas obras\"?",
+    "cue": "Em Tito 2:11–14, toque a palavra que falta em \"purificar para si um povo todo seu, ___ de boas obras\"?",
+    "feedbackCorrect": "Exato: o povo purificado é zeloso de boas obras.",
+    "feedbackWrong": {
+      "b": "Remir descreve o resgate, não o zelo do povo.",
+      "c": "Iniquidade é aquilo de que somos remidos, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "zeloso"
+      },
+      {
+        "id": "b",
+        "text": "remir"
+      },
+      {
+        "id": "c",
+        "text": "iniquidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "id": "tito-sem-tt-03-desafio-02",
+    "passageText": "que se deu a si mesmo por nós, a fim de nos remir de toda iniquidade e purificar para si um povo todo seu, zeloso de boas obras.",
+    "template": "purificar para si um povo todo seu, ___ de boas obras"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tito 2:11–14",
+    "learningObjective": "Compreender que Cristo se deu para purificar um povo seu, zeloso de boas obras.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:13",
+      "Tito 2:14"
+    ],
+    "type": "choice",
+    "question": "Segundo Tito 2:14, para que Cristo se deu a si mesmo?",
+    "prompt": "Segundo Tito 2:14, para que Cristo se deu a si mesmo?",
+    "cue": "Segundo Tito 2:14, para que Cristo se deu a si mesmo?",
+    "feedbackCorrect": "Certo: remir de toda iniquidade e purificar um povo zeloso de boas obras.",
+    "feedbackWrong": {
+      "a": "O texto fala de remir da iniquidade, não de nela deixar.",
+      "b": "O povo é zeloso de boas obras, não indiferente.",
+      "d": "Purificar e zelo de obras tocam a conduta, não só ideias."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Para nos deixar na iniquidade até o fim do mundo."
+      },
+      {
+        "id": "b",
+        "text": "Para formar um povo indiferente às obras."
+      },
+      {
+        "id": "c",
+        "text": "Para nos remir de toda iniquidade e purificar um povo zeloso."
+      },
+      {
+        "id": "d",
+        "text": "Para remir só ideias, sem tocar a conduta."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "id": "tito-sem-tt-03-desafio-03",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente, aguardando a bem-aventurada esperança e a manifestação da glória do grande Deus e nosso Salvador Cristo Jesus, que se deu a si mesmo por nós, a fim de nos remir de toda iniquidade e purificar para si um povo todo seu, zeloso de boas obras."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tito 2:11–14",
+    "learningObjective": "Compreender que Cristo se deu para purificar um povo seu, zeloso de boas obras.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:13",
+      "Tito 2:14"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Tito 2:14?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Tito 2:14?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Tito 2:14?",
+    "feedbackCorrect": "Certo: ele se deu, para remir e então purificar um povo zeloso.",
+    "feedbackWrong": {
+      "a": "A purificação do povo vem depois do dom de si mesmo.",
+      "c": "Remir segue o \"se deu\", não o antecede."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "purificar para si um povo todo seu, zeloso de boas obras"
+      },
+      {
+        "id": "b",
+        "text": "que se deu a si mesmo por nós"
+      },
+      {
+        "id": "c",
+        "text": "a fim de nos remir de toda iniquidade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "id": "tito-sem-tt-03-desafio-04",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente, aguardando a bem-aventurada esperança e a manifestação da glória do grande Deus e nosso Salvador Cristo Jesus, que se deu a si mesmo por nós, a fim de nos remir de toda iniquidade e purificar para si um povo todo seu, zeloso de boas obras.",
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tito 2:11–14",
+    "learningObjective": "Compreender que Cristo se deu para purificar um povo seu, zeloso de boas obras.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:13",
+      "Tito 2:14"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"a fim de nos ___ de toda iniquidade e purificar para si um povo todo seu\"",
+    "prompt": "Complete a frase: \"a fim de nos ___ de toda iniquidade e purificar para si um povo todo seu\"",
+    "cue": "Complete a frase: \"a fim de nos ___ de toda iniquidade e purificar para si um povo todo seu\"",
+    "feedbackCorrect": "Sim: ele se deu a fim de nos remir de toda iniquidade.",
+    "feedbackWrong": {
+      "a": "Zeloso descreve o povo, não o verbo desta lacuna.",
+      "c": "Povo é o resultado da purificação, não este verbo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "zeloso"
+      },
+      {
+        "id": "b",
+        "text": "remir"
+      },
+      {
+        "id": "c",
+        "text": "povo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "id": "tito-sem-tt-03-desafio-05",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente, aguardando a bem-aventurada esperança e a manifestação da glória do grande Deus e nosso Salvador Cristo Jesus, que se deu a si mesmo por nós, a fim de nos remir de toda iniquidade e purificar para si um povo todo seu, zeloso de boas obras.",
+    "template": "a fim de nos ___ de toda iniquidade e purificar para si um povo todo seu"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tito 2:11–14",
+    "learningObjective": "Compreender que Cristo se deu para purificar um povo seu, zeloso de boas obras.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:13",
+      "Tito 2:14"
+    ],
+    "type": "connect",
+    "question": "O que Tito 2:11–14 comunica que se liga a este contexto?",
+    "prompt": "O que Tito 2:11–14 comunica que se liga a este contexto?",
+    "cue": "O que Tito 2:11–14 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Cristo purifica um povo seu, zeloso de boas obras.",
+    "feedbackWrong": {
+      "b": "O texto diz \"um povo todo seu\", não sem dono.",
+      "c": "As obras seguem a redenção; não a substituem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Povo zeloso de boas obras"
+      },
+      {
+        "id": "b",
+        "text": "Povo sem pertencimento"
+      },
+      {
+        "id": "c",
+        "text": "Obras sem redenção"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "id": "tito-sem-tt-03-desafio-06",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente, aguardando a bem-aventurada esperança e a manifestação da glória do grande Deus e nosso Salvador Cristo Jesus, que se deu a si mesmo por nós, a fim de nos remir de toda iniquidade e purificar para si um povo todo seu, zeloso de boas obras.",
+    "passageA": {
+      "ref": "Tito 2:14",
+      "text": "purificar para si um povo todo seu, zeloso de boas obras"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Cristo se deu para purificar um povo que lhe pertence, zeloso de boas obras."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tito 2:11–14",
+    "learningObjective": "Compreender que Cristo se deu para purificar um povo seu, zeloso de boas obras.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:13",
+      "Tito 2:14"
+    ],
+    "type": "true_false",
+    "question": "Tito 2:13–14 descreve um povo que pertence a Cristo, porém sem zelo por boas obras.",
+    "prompt": "Tito 2:13–14 descreve um povo que pertence a Cristo, porém sem zelo por boas obras.",
+    "cue": "Tito 2:13–14 descreve um povo que pertence a Cristo, porém sem zelo por boas obras.",
+    "feedbackCorrect": "Correto: o povo é zeloso de boas obras, não apático.",
+    "feedbackWrong": {
+      "true": "Tito 2:14 chama o povo de zeloso de boas obras."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "id": "tito-cam-tt-03-desafio-01",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente, aguardando a bem-aventurada esperança e a manifestação da glória do grande Deus e nosso Salvador Cristo Jesus, que se deu a si mesmo por nós, a fim de nos remir de toda iniquidade e purificar para si um povo todo seu, zeloso de boas obras."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tito 2:11–14",
+    "learningObjective": "Compreender que Cristo se deu para purificar um povo seu, zeloso de boas obras.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:13",
+      "Tito 2:14"
+    ],
+    "type": "tap",
+    "question": "Em Tito 2:11–14, toque a palavra que falta em \"aguardando a bem-aventurada ___ e a manifestação da glória\"?",
+    "prompt": "Em Tito 2:11–14, toque a palavra que falta em \"aguardando a bem-aventurada ___ e a manifestação da glória\"?",
+    "cue": "Em Tito 2:11–14, toque a palavra que falta em \"aguardando a bem-aventurada ___ e a manifestação da glória\"?",
+    "feedbackCorrect": "Exato: aguardamos a bem-aventurada esperança.",
+    "feedbackWrong": {
+      "a": "Glória vem na manifestação, não nesta primeira lacuna.",
+      "b": "Salvador nomeia Cristo Jesus, não esta palavra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "glória"
+      },
+      {
+        "id": "b",
+        "text": "Salvador"
+      },
+      {
+        "id": "c",
+        "text": "esperança"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "id": "tito-cam-tt-03-desafio-02",
+    "passageText": "aguardando a bem-aventurada esperança e a manifestação da glória do grande Deus e nosso Salvador Cristo Jesus",
+    "template": "aguardando a bem-aventurada ___ e a manifestação da glória"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tito 2:11–14",
+    "learningObjective": "Compreender que Cristo se deu para purificar um povo seu, zeloso de boas obras.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:13",
+      "Tito 2:14"
+    ],
+    "type": "choice",
+    "question": "Como se ligam a esperança e o dom de Cristo em Tito 2:13–14?",
+    "prompt": "Como se ligam a esperança e o dom de Cristo em Tito 2:13–14?",
+    "cue": "Como se ligam a esperança e o dom de Cristo em Tito 2:13–14?",
+    "feedbackCorrect": "Certo: esperamos a glória de quem já se deu para possuir um povo.",
+    "feedbackWrong": {
+      "b": "O povo purificado é zeloso de obras; a esperança não as apaga.",
+      "c": "O povo é \"todo seu\", não autonomo.",
+      "d": "A glória futura não cancela a graça já manifestada."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Aguardamos a glória daquele que já se deu para remir e purificar o seu povo."
+      },
+      {
+        "id": "b",
+        "text": "A esperança substitui qualquer necessidade de boas obras."
+      },
+      {
+        "id": "c",
+        "text": "Cristo se deu, mas o povo permanece dono de si mesmo."
+      },
+      {
+        "id": "d",
+        "text": "A manifestação da glória anula a salvação já trazida pela graça."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "id": "tito-cam-tt-03-desafio-03",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente, aguardando a bem-aventurada esperança e a manifestação da glória do grande Deus e nosso Salvador Cristo Jesus, que se deu a si mesmo por nós, a fim de nos remir de toda iniquidade e purificar para si um povo todo seu, zeloso de boas obras."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tito 2:11–14",
+    "learningObjective": "Compreender que Cristo se deu para purificar um povo seu, zeloso de boas obras.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:13",
+      "Tito 2:14"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Tito 2:11–14?",
+    "prompt": "Como se encadeiam os eventos de Tito 2:11–14?",
+    "cue": "Como se encadeiam os eventos de Tito 2:11–14?",
+    "feedbackCorrect": "Certo: graça que salva, espera da glória, e o dom de Cristo que remiu.",
+    "feedbackWrong": {
+      "a": "O \"se deu\" explica o Salvador esperado; não abre o trecho.",
+      "c": "A espera vem depois da graça manifestada."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "que se deu a si mesmo por nós"
+      },
+      {
+        "id": "b",
+        "text": "a graça de Deus se manifestou, trazendo a salvação"
+      },
+      {
+        "id": "c",
+        "text": "aguardando a bem-aventurada esperança"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "id": "tito-cam-tt-03-desafio-04",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente, aguardando a bem-aventurada esperança e a manifestação da glória do grande Deus e nosso Salvador Cristo Jesus, que se deu a si mesmo por nós, a fim de nos remir de toda iniquidade e purificar para si um povo todo seu, zeloso de boas obras.",
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tito 2:11–14",
+    "learningObjective": "Compreender que Cristo se deu para purificar um povo seu, zeloso de boas obras.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:13",
+      "Tito 2:14"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"do grande Deus e nosso ___ Cristo Jesus\"",
+    "prompt": "Complete a frase: \"do grande Deus e nosso ___ Cristo Jesus\"",
+    "cue": "Complete a frase: \"do grande Deus e nosso ___ Cristo Jesus\"",
+    "feedbackCorrect": "Sim: Cristo Jesus é nosso Salvador.",
+    "feedbackWrong": {
+      "b": "Esperança é o que se aguarda, não o título de Cristo aqui.",
+      "c": "Glória é o que se manifesta, não esta palavra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Salvador"
+      },
+      {
+        "id": "b",
+        "text": "esperança"
+      },
+      {
+        "id": "c",
+        "text": "glória"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "id": "tito-cam-tt-03-desafio-05",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente, aguardando a bem-aventurada esperança e a manifestação da glória do grande Deus e nosso Salvador Cristo Jesus, que se deu a si mesmo por nós, a fim de nos remir de toda iniquidade e purificar para si um povo todo seu, zeloso de boas obras.",
+    "template": "do grande Deus e nosso ___ Cristo Jesus"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tito 2:11–14",
+    "learningObjective": "Compreender que Cristo se deu para purificar um povo seu, zeloso de boas obras.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:13",
+      "Tito 2:14"
+    ],
+    "type": "connect",
+    "question": "O que Tito 2:11–14 comunica que se liga a este contexto?",
+    "prompt": "O que Tito 2:11–14 comunica que se liga a este contexto?",
+    "cue": "O que Tito 2:11–14 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a esperança aponta ao Salvador que já purifica o seu povo.",
+    "feedbackWrong": {
+      "a": "O povo é zeloso de obras enquanto aguarda.",
+      "c": "A glória é do grande Deus e nosso Salvador."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Espera passiva sem obras"
+      },
+      {
+        "id": "b",
+        "text": "Esperança e povo purificado"
+      },
+      {
+        "id": "c",
+        "text": "Glória sem Salvador"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "id": "tito-cam-tt-03-desafio-06",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente, aguardando a bem-aventurada esperança e a manifestação da glória do grande Deus e nosso Salvador Cristo Jesus, que se deu a si mesmo por nós, a fim de nos remir de toda iniquidade e purificar para si um povo todo seu, zeloso de boas obras.",
+    "passageA": {
+      "ref": "Tito 2:13–14",
+      "text": "aguardando a bem-aventurada esperança e a manifestação da glória do grande Deus e nosso Salvador Cristo Jesus"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Cristo se deu para purificar um povo que lhe pertence, zeloso de boas obras."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tito 2:11–14",
+    "learningObjective": "Compreender que Cristo se deu para purificar um povo seu, zeloso de boas obras.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:13",
+      "Tito 2:14"
+    ],
+    "type": "true_false",
+    "question": "Tito 2:14 afirma que Cristo se deu para possuir um povo purificado, zeloso de boas obras, não um grupo indiferente.",
+    "prompt": "Tito 2:14 afirma que Cristo se deu para possuir um povo purificado, zeloso de boas obras, não um grupo indiferente.",
+    "cue": "Tito 2:14 afirma que Cristo se deu para possuir um povo purificado, zeloso de boas obras, não um grupo indiferente.",
+    "feedbackCorrect": "Sim: o alvo do dom é um povo seu, zeloso de boas obras.",
+    "feedbackWrong": {
+      "false": "Tito 2:14 une redenção, purificação e zelo de obras."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "id": "tito-pro-tt-03-desafio-01",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente, aguardando a bem-aventurada esperança e a manifestação da glória do grande Deus e nosso Salvador Cristo Jesus, que se deu a si mesmo por nós, a fim de nos remir de toda iniquidade e purificar para si um povo todo seu, zeloso de boas obras."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tito 2:11–14",
+    "learningObjective": "Compreender que Cristo se deu para purificar um povo seu, zeloso de boas obras.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:13",
+      "Tito 2:14"
+    ],
+    "type": "tap",
+    "question": "Em Tito 2:11–14, toque a palavra que falta em \"___ para si um povo todo seu, zeloso de boas obras\"?",
+    "prompt": "Em Tito 2:11–14, toque a palavra que falta em \"___ para si um povo todo seu, zeloso de boas obras\"?",
+    "cue": "Em Tito 2:11–14, toque a palavra que falta em \"___ para si um povo todo seu, zeloso de boas obras\"?",
+    "feedbackCorrect": "Exato: Cristo se deu para purificar um povo para si.",
+    "feedbackWrong": {
+      "a": "Obras fecha a frase; não é o verbo desta lacuna.",
+      "c": "Zeloso descreve o povo, não o verbo inicial."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "obras"
+      },
+      {
+        "id": "b",
+        "text": "purificar"
+      },
+      {
+        "id": "c",
+        "text": "zeloso"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "id": "tito-pro-tt-03-desafio-02",
+    "passageText": "purificar para si um povo todo seu, zeloso de boas obras.",
+    "template": "___ para si um povo todo seu, zeloso de boas obras"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tito 2:11–14",
+    "learningObjective": "Compreender que Cristo se deu para purificar um povo seu, zeloso de boas obras.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:13",
+      "Tito 2:14"
+    ],
+    "type": "choice",
+    "question": "Qual sentido teológico de Tito 2:14?",
+    "prompt": "Qual sentido teológico de Tito 2:14?",
+    "cue": "Qual sentido teológico de Tito 2:14?",
+    "feedbackCorrect": "Certo: ele se deu para remir, purificar e possuir um povo zeloso.",
+    "feedbackWrong": {
+      "a": "O mesmo versículo junta remir e purificar.",
+      "b": "Ele já se deu; as obras são zelo do povo remido, não preço.",
+      "c": "O texto exige purificação e zelo, não um título vazio."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo se deu para remir da iniquidade, mas não para nos purificar."
+      },
+      {
+        "id": "b",
+        "text": "As boas obras compram a redenção que Cristo ainda não deu."
+      },
+      {
+        "id": "c",
+        "text": "Ser povo de Cristo é título, sem zelo nem purificação."
+      },
+      {
+        "id": "d",
+        "text": "A redenção cria um povo que pertence a Cristo e se empenha em boas obras."
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "id": "tito-pro-tt-03-desafio-03",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente, aguardando a bem-aventurada esperança e a manifestação da glória do grande Deus e nosso Salvador Cristo Jesus, que se deu a si mesmo por nós, a fim de nos remir de toda iniquidade e purificar para si um povo todo seu, zeloso de boas obras."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tito 2:11–14",
+    "learningObjective": "Compreender que Cristo se deu para purificar um povo seu, zeloso de boas obras.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:13",
+      "Tito 2:14"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Tito 2:11–14?",
+    "prompt": "Qual sequência revela o sentido de Tito 2:11–14?",
+    "cue": "Qual sequência revela o sentido de Tito 2:11–14?",
+    "feedbackCorrect": "Certo: graça que salva, Cristo que se deu, povo purificado e zeloso.",
+    "feedbackWrong": {
+      "a": "O povo zeloso é o fruto, não o primeiro movimento.",
+      "c": "O dom de Cristo explica a graça já manifestada; vem depois no fluxo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "purificar para si um povo todo seu, zeloso de boas obras"
+      },
+      {
+        "id": "b",
+        "text": "a graça de Deus se manifestou, trazendo a salvação a todos os homens"
+      },
+      {
+        "id": "c",
+        "text": "que se deu a si mesmo por nós, a fim de nos remir de toda iniquidade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "id": "tito-pro-tt-03-desafio-04",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente, aguardando a bem-aventurada esperança e a manifestação da glória do grande Deus e nosso Salvador Cristo Jesus, que se deu a si mesmo por nós, a fim de nos remir de toda iniquidade e purificar para si um povo todo seu, zeloso de boas obras.",
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tito 2:11–14",
+    "learningObjective": "Compreender que Cristo se deu para purificar um povo seu, zeloso de boas obras.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:13",
+      "Tito 2:14"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"um povo todo seu, zeloso de boas ___\"",
+    "prompt": "Complete a frase: \"um povo todo seu, zeloso de boas ___\"",
+    "cue": "Complete a frase: \"um povo todo seu, zeloso de boas ___\"",
+    "feedbackCorrect": "Sim: zeloso de boas obras.",
+    "feedbackWrong": {
+      "a": "Purificar é o verbo da ação de Cristo, não esta lacuna.",
+      "b": "Povo já está na frase; a lacuna é obras."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "purificar"
+      },
+      {
+        "id": "b",
+        "text": "povo"
+      },
+      {
+        "id": "c",
+        "text": "obras"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "id": "tito-pro-tt-03-desafio-05",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente, aguardando a bem-aventurada esperança e a manifestação da glória do grande Deus e nosso Salvador Cristo Jesus, que se deu a si mesmo por nós, a fim de nos remir de toda iniquidade e purificar para si um povo todo seu, zeloso de boas obras.",
+    "template": "um povo todo seu, zeloso de boas ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tito 2:11–14",
+    "learningObjective": "Compreender que Cristo se deu para purificar um povo seu, zeloso de boas obras.",
+    "evidence": [
+      "Tito 2:11",
+      "Tito 2:13",
+      "Tito 2:14"
+    ],
+    "type": "connect",
+    "question": "O que Tito 2:11–14 comunica que se liga a este contexto?",
+    "prompt": "O que Tito 2:11–14 comunica que se liga a este contexto?",
+    "cue": "O que Tito 2:11–14 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o dom de Cristo cria um povo seu, zeloso de boas obras.",
+    "feedbackWrong": {
+      "b": "Ele purifica para si um povo; a redenção tem povo.",
+      "c": "As obras fluem de quem se deu; não o substituem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Povo próprio e zeloso"
+      },
+      {
+        "id": "b",
+        "text": "Redenção sem povo"
+      },
+      {
+        "id": "c",
+        "text": "Obras que substituem Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "tito",
+    "section": "tt-03-desafio",
+    "id": "tito-pro-tt-03-desafio-06",
+    "passageText": "Pois a graça de Deus se manifestou, trazendo a salvação a todos os homens, ensinando-nos, a fim de que, renunciando a impiedade e as paixões mundanas, vivamos no presente mundo sóbria, reta e piamente, aguardando a bem-aventurada esperança e a manifestação da glória do grande Deus e nosso Salvador Cristo Jesus, que se deu a si mesmo por nós, a fim de nos remir de toda iniquidade e purificar para si um povo todo seu, zeloso de boas obras.",
+    "passageA": {
+      "ref": "Tito 2:14",
+      "text": "que se deu a si mesmo por nós, a fim de nos remir de toda iniquidade e purificar para si um povo todo seu, zeloso de boas obras."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Cristo se deu para purificar um povo que lhe pertence, zeloso de boas obras."
+    }
+  }
+]

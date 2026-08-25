@@ -1,0 +1,3008 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 4:1-4",
+    "learningObjective": "Perceber que Jesus jejua no deserto e responde à tentação com a Palavra: o homem não vive só de pão.",
+    "evidence": [
+      "Mateus 4:1",
+      "Mateus 4:4"
+    ],
+    "type": "true_false",
+    "question": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo.",
+    "prompt": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo.",
+    "cue": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo.",
+    "feedbackCorrect": "Certo: Mateus 4:1 registra exatamente esse envio ao deserto.",
+    "feedbackWrong": {
+      "false": "Releia Mateus 4:1: o Espírito leva Jesus ao deserto."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus.",
+    "trail": "jejum",
+    "section": "jj-01-desejo",
+    "id": "jejum-sem-jj-01-desejo-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 4:1-4",
+    "learningObjective": "Perceber que Jesus jejua no deserto e responde à tentação com a Palavra: o homem não vive só de pão.",
+    "evidence": [
+      "Mateus 4:1",
+      "Mateus 4:4"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 4:1-4, toque a palavra que falta em \"Depois de jejuar ___ dias e quarenta noites, teve fome\"?",
+    "prompt": "Em Mateus 4:1-4, toque a palavra que falta em \"Depois de jejuar ___ dias e quarenta noites, teve fome\"?",
+    "cue": "Em Mateus 4:1-4, toque a palavra que falta em \"Depois de jejuar ___ dias e quarenta noites, teve fome\"?",
+    "feedbackCorrect": "Exato: jejuou quarenta dias e quarenta noites.",
+    "feedbackWrong": {
+      "b": "Pães é o pedido do tentador, não a duração do jejum.",
+      "c": "Palavra aparece na resposta de Jesus, não nesta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "quarenta"
+      },
+      {
+        "id": "b",
+        "text": "pães"
+      },
+      {
+        "id": "c",
+        "text": "palavra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus.",
+    "trail": "jejum",
+    "section": "jj-01-desejo",
+    "id": "jejum-sem-jj-01-desejo-02",
+    "template": "Depois de jejuar ___ dias e quarenta noites, teve fome"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 4:1-4",
+    "learningObjective": "Perceber que Jesus jejua no deserto e responde à tentação com a Palavra: o homem não vive só de pão.",
+    "evidence": [
+      "Mateus 4:1",
+      "Mateus 4:4"
+    ],
+    "type": "choice",
+    "question": "Qual fato Mateus 4:1-4 afirma de modo explícito?",
+    "prompt": "Qual fato Mateus 4:1-4 afirma de modo explícito?",
+    "cue": "Qual fato Mateus 4:1-4 afirma de modo explícito?",
+    "feedbackCorrect": "Certo: depois do jejum, Jesus teve fome e o tentador falou de pães.",
+    "feedbackWrong": {
+      "b": "O texto diz que Jesus teve fome, não que recusou jejuar.",
+      "c": "Quem leva Jesus ao deserto é o Espírito, não o tentador.",
+      "d": "A resposta de Jesus cita a Palavra, não um milagre de pães."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Depois de jejuar, Jesus teve fome e o tentador falou de pedras e pães."
+      },
+      {
+        "id": "b",
+        "text": "Jesus recusou jejuar e pediu pão imediatamente."
+      },
+      {
+        "id": "c",
+        "text": "O tentador levou Jesus ao deserto para coroá-lo."
+      },
+      {
+        "id": "d",
+        "text": "Jesus mandou que as pedras se tornassem em pães."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus.",
+    "trail": "jejum",
+    "section": "jj-01-desejo",
+    "id": "jejum-sem-jj-01-desejo-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 4:1-4",
+    "learningObjective": "Perceber que Jesus jejua no deserto e responde à tentação com a Palavra: o homem não vive só de pão.",
+    "evidence": [
+      "Mateus 4:1",
+      "Mateus 4:4"
+    ],
+    "type": "order",
+    "question": "Qual é a ordem dos fatos em Mateus 4:1-4?",
+    "prompt": "Qual é a ordem dos fatos em Mateus 4:1-4?",
+    "cue": "Qual é a ordem dos fatos em Mateus 4:1-4?",
+    "feedbackCorrect": "Certo: deserto, jejum e fome, depois a tentação das pedras.",
+    "feedbackWrong": {
+      "b": "O jejum e a fome vêm depois de ser levado ao deserto.",
+      "c": "O pedido das pedras vem depois da fome, não antes."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "foi levado Jesus pelo Espírito ao deserto"
+      },
+      {
+        "id": "b",
+        "text": "Depois de jejuar quarenta dias e quarenta noites, teve fome"
+      },
+      {
+        "id": "c",
+        "text": "manda que estas pedras se tornem em pães"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus.",
+    "trail": "jejum",
+    "section": "jj-01-desejo",
+    "id": "jejum-sem-jj-01-desejo-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 4:1-4",
+    "learningObjective": "Perceber que Jesus jejua no deserto e responde à tentação com a Palavra: o homem não vive só de pão.",
+    "evidence": [
+      "Mateus 4:1",
+      "Mateus 4:4"
+    ],
+    "type": "complete",
+    "question": "Complete o versículo: \"Não só de ___ viverá o homem, mas de toda palavra que sai da boca de Deus.\"",
+    "prompt": "Complete o versículo: \"Não só de ___ viverá o homem, mas de toda palavra que sai da boca de Deus.\"",
+    "cue": "Complete o versículo: \"Não só de ___ viverá o homem, mas de toda palavra que sai da boca de Deus.\"",
+    "feedbackCorrect": "Certo: o homem não vive só de pão.",
+    "feedbackWrong": {
+      "b": "Deserto é o lugar da tentação, não esta lacuna.",
+      "c": "Diabo nomeia o tentador, não o alimento citado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "pão"
+      },
+      {
+        "id": "b",
+        "text": "deserto"
+      },
+      {
+        "id": "c",
+        "text": "Diabo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus.",
+    "trail": "jejum",
+    "section": "jj-01-desejo",
+    "id": "jejum-sem-jj-01-desejo-05",
+    "template": "Não só de ___ viverá o homem, mas de toda palavra que sai da boca de Deus."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 4:1-4",
+    "learningObjective": "Perceber que Jesus jejua no deserto e responde à tentação com a Palavra: o homem não vive só de pão.",
+    "evidence": [
+      "Mateus 4:1",
+      "Mateus 4:4"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 4:4 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 4:4 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 4:4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a Palavra sustenta a vida, não só o pão.",
+    "feedbackWrong": {
+      "b": "O texto não ensina viver só de milagre de pedras.",
+      "c": "A fome não anula a Palavra que sai da boca de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Vida pela Palavra"
+      },
+      {
+        "id": "b",
+        "text": "Vida só de milagre"
+      },
+      {
+        "id": "c",
+        "text": "Fome acima da Escritura"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus.",
+    "trail": "jejum",
+    "section": "jj-01-desejo",
+    "id": "jejum-sem-jj-01-desejo-06",
+    "passageA": {
+      "ref": "Mateus 4:4",
+      "text": "Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Disciplinar o desejo: Jesus jejua e responde com a Palavra — o homem não vive só de pão."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 4:1-4",
+    "learningObjective": "Perceber que Jesus jejua no deserto e responde à tentação com a Palavra: o homem não vive só de pão.",
+    "evidence": [
+      "Mateus 4:1",
+      "Mateus 4:4"
+    ],
+    "type": "true_false",
+    "question": "Jesus recusa o atalho das pedras e responde com o que está escrito.",
+    "prompt": "Jesus recusa o atalho das pedras e responde com o que está escrito.",
+    "cue": "Jesus recusa o atalho das pedras e responde com o que está escrito.",
+    "feedbackCorrect": "Certo: a resposta é a Escritura, não o milagre pedido.",
+    "feedbackWrong": {
+      "false": "Mateus 4:4 mostra Jesus citando: Está escrito."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus.",
+    "trail": "jejum",
+    "section": "jj-01-desejo",
+    "id": "jejum-cam-jj-01-desejo-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 4:1-4",
+    "learningObjective": "Perceber que Jesus jejua no deserto e responde à tentação com a Palavra: o homem não vive só de pão.",
+    "evidence": [
+      "Mateus 4:1",
+      "Mateus 4:4"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 4:1-4, toque a palavra que falta em \"Não só de pão viverá o ___, mas de toda palavra\"?",
+    "prompt": "Em Mateus 4:1-4, toque a palavra que falta em \"Não só de pão viverá o ___, mas de toda palavra\"?",
+    "cue": "Em Mateus 4:1-4, toque a palavra que falta em \"Não só de pão viverá o ___, mas de toda palavra\"?",
+    "feedbackCorrect": "Exato: o sujeito da frase é o homem.",
+    "feedbackWrong": {
+      "b": "Diabo nomeia o tentador, não quem vive da Palavra.",
+      "c": "Deserto é o cenário, não o sujeito desta frase."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "homem"
+      },
+      {
+        "id": "b",
+        "text": "Diabo"
+      },
+      {
+        "id": "c",
+        "text": "deserto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus.",
+    "trail": "jejum",
+    "section": "jj-01-desejo",
+    "id": "jejum-cam-jj-01-desejo-02",
+    "template": "Não só de pão viverá o ___, mas de toda palavra"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 4:1-4",
+    "learningObjective": "Perceber que Jesus jejua no deserto e responde à tentação com a Palavra: o homem não vive só de pão.",
+    "evidence": [
+      "Mateus 4:1",
+      "Mateus 4:4"
+    ],
+    "type": "choice",
+    "question": "O que o encadeamento de Mateus 4:1-4 mostra sobre o jejum de Jesus?",
+    "prompt": "O que o encadeamento de Mateus 4:1-4 mostra sobre o jejum de Jesus?",
+    "cue": "O que o encadeamento de Mateus 4:1-4 mostra sobre o jejum de Jesus?",
+    "feedbackCorrect": "Certo: o jejum expõe a fome, e Jesus ancora a vida na Palavra.",
+    "feedbackWrong": {
+      "b": "A fome não autoriza o atalho pedido pelo tentador.",
+      "c": "Jesus não trata o jejum como recusa da criação.",
+      "d": "A identidade de Filho é confessada na obediência à Palavra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A fome real não dispensa a dependência da Palavra."
+      },
+      {
+        "id": "b",
+        "text": "A fome autoriza qualquer atalho para obter pão."
+      },
+      {
+        "id": "c",
+        "text": "Jejuar significa desprezar o pão como dom de Deus."
+      },
+      {
+        "id": "d",
+        "text": "Ser Filho de Deus isenta Jesus de obedecer à Escritura."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus.",
+    "trail": "jejum",
+    "section": "jj-01-desejo",
+    "id": "jejum-cam-jj-01-desejo-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 4:1-4",
+    "learningObjective": "Perceber que Jesus jejua no deserto e responde à tentação com a Palavra: o homem não vive só de pão.",
+    "evidence": [
+      "Mateus 4:1",
+      "Mateus 4:4"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Mateus 4:1-4?",
+    "prompt": "Como se encadeiam os eventos de Mateus 4:1-4?",
+    "cue": "Como se encadeiam os eventos de Mateus 4:1-4?",
+    "feedbackCorrect": "Certo: envio, provação da fome, resposta pela Escritura.",
+    "feedbackWrong": {
+      "b": "A fome vem depois do jejum, não antes do envio.",
+      "c": "A citação da Palavra fecha a cena, não a abre."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "o Espírito o leva ao deserto para ser tentado"
+      },
+      {
+        "id": "b",
+        "text": "o jejum gera fome e o tentador oferece pães"
+      },
+      {
+        "id": "c",
+        "text": "Jesus responde com o que está escrito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus.",
+    "trail": "jejum",
+    "section": "jj-01-desejo",
+    "id": "jejum-cam-jj-01-desejo-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 4:1-4",
+    "learningObjective": "Perceber que Jesus jejua no deserto e responde à tentação com a Palavra: o homem não vive só de pão.",
+    "evidence": [
+      "Mateus 4:1",
+      "Mateus 4:4"
+    ],
+    "type": "complete",
+    "question": "Complete: \"mas de toda ___ que sai da boca de Deus.\"",
+    "prompt": "Complete: \"mas de toda ___ que sai da boca de Deus.\"",
+    "cue": "Complete: \"mas de toda ___ que sai da boca de Deus.\"",
+    "feedbackCorrect": "Certo: toda palavra que sai da boca de Deus.",
+    "feedbackWrong": {
+      "b": "Pães é o pedido do tentador, não esta lacuna.",
+      "c": "Pedras são o meio da tentação, não o que sai da boca de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "palavra"
+      },
+      {
+        "id": "b",
+        "text": "pães"
+      },
+      {
+        "id": "c",
+        "text": "pedras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus.",
+    "trail": "jejum",
+    "section": "jj-01-desejo",
+    "id": "jejum-cam-jj-01-desejo-05",
+    "template": "mas de toda ___ que sai da boca de Deus."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 4:1-4",
+    "learningObjective": "Perceber que Jesus jejua no deserto e responde à tentação com a Palavra: o homem não vive só de pão.",
+    "evidence": [
+      "Mateus 4:1",
+      "Mateus 4:4"
+    ],
+    "type": "connect",
+    "question": "O que a recusa das pedras em Mateus 4:3-4 comunica que se liga a este contexto?",
+    "prompt": "O que a recusa das pedras em Mateus 4:3-4 comunica que se liga a este contexto?",
+    "cue": "O que a recusa das pedras em Mateus 4:3-4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: disciplinar o desejo é obedecer à Palavra sob fome.",
+    "feedbackWrong": {
+      "b": "O Filho não prova o Pai fabricando pão à força.",
+      "c": "O jejum não é palco para o tentador ditar a agenda."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Desejo sob a Palavra"
+      },
+      {
+        "id": "b",
+        "text": "Provar o Pai à força"
+      },
+      {
+        "id": "c",
+        "text": "Jejum como palco do tentador"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus.",
+    "trail": "jejum",
+    "section": "jj-01-desejo",
+    "id": "jejum-cam-jj-01-desejo-06",
+    "passageA": {
+      "ref": "Mateus 4:3-4",
+      "text": "Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Disciplinar o desejo: Jesus jejua e responde com a Palavra — o homem não vive só de pão."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 4:1-4",
+    "learningObjective": "Perceber que Jesus jejua no deserto e responde à tentação com a Palavra: o homem não vive só de pão.",
+    "evidence": [
+      "Mateus 4:1",
+      "Mateus 4:4"
+    ],
+    "type": "true_false",
+    "question": "A vida do homem, segundo a resposta de Jesus, depende da Palavra que sai da boca de Deus, e não só do pão.",
+    "prompt": "A vida do homem, segundo a resposta de Jesus, depende da Palavra que sai da boca de Deus, e não só do pão.",
+    "cue": "A vida do homem, segundo a resposta de Jesus, depende da Palavra que sai da boca de Deus, e não só do pão.",
+    "feedbackCorrect": "Certo: Mateus 4:4 sustenta essa leitura teológica.",
+    "feedbackWrong": {
+      "false": "A citação de Jesus opõe pão sozinho à Palavra de Deus."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus.",
+    "trail": "jejum",
+    "section": "jj-01-desejo",
+    "id": "jejum-pro-jj-01-desejo-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 4:1-4",
+    "learningObjective": "Perceber que Jesus jejua no deserto e responde à tentação com a Palavra: o homem não vive só de pão.",
+    "evidence": [
+      "Mateus 4:1",
+      "Mateus 4:4"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 4:1-4, toque a palavra que falta em \"mas de toda palavra que sai da ___ de Deus\"?",
+    "prompt": "Em Mateus 4:1-4, toque a palavra que falta em \"mas de toda palavra que sai da ___ de Deus\"?",
+    "cue": "Em Mateus 4:1-4, toque a palavra que falta em \"mas de toda palavra que sai da ___ de Deus\"?",
+    "feedbackCorrect": "Exato: a Palavra sai da boca de Deus.",
+    "feedbackWrong": {
+      "b": "Fome descreve Jesus, não a origem da Palavra.",
+      "c": "Pedras são o objeto da tentação, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "boca"
+      },
+      {
+        "id": "b",
+        "text": "fome"
+      },
+      {
+        "id": "c",
+        "text": "pedras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus.",
+    "trail": "jejum",
+    "section": "jj-01-desejo",
+    "id": "jejum-pro-jj-01-desejo-02",
+    "template": "mas de toda palavra que sai da ___ de Deus"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 4:1-4",
+    "learningObjective": "Perceber que Jesus jejua no deserto e responde à tentação com a Palavra: o homem não vive só de pão.",
+    "evidence": [
+      "Mateus 4:1",
+      "Mateus 4:4"
+    ],
+    "type": "choice",
+    "question": "Qual leitura de Mateus 4:1-4 melhor prepara o discípulo que jejua?",
+    "prompt": "Qual leitura de Mateus 4:1-4 melhor prepara o discípulo que jejua?",
+    "cue": "Qual leitura de Mateus 4:1-4 melhor prepara o discípulo que jejua?",
+    "feedbackCorrect": "Certo: jejum treina o desejo a viver da Palavra, não do atalho.",
+    "feedbackWrong": {
+      "b": "O texto não reduz o jejum a recusar comida sem Deus.",
+      "c": "A tentação não é vencida por espetáculo de poder.",
+      "d": "Filho de Deus não significa autonomia diante da Escritura."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O jejum expõe o desejo para que a Palavra governe a fome."
+      },
+      {
+        "id": "b",
+        "text": "O jejum prova que o corpo é irrelevante para a fé."
+      },
+      {
+        "id": "c",
+        "text": "Vencer a tentação é exibir poder transformando pedras."
+      },
+      {
+        "id": "d",
+        "text": "Ser Filho dispensa Jesus de viver pela boca de Deus."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus.",
+    "trail": "jejum",
+    "section": "jj-01-desejo",
+    "id": "jejum-pro-jj-01-desejo-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 4:1-4",
+    "learningObjective": "Perceber que Jesus jejua no deserto e responde à tentação com a Palavra: o homem não vive só de pão.",
+    "evidence": [
+      "Mateus 4:1",
+      "Mateus 4:4"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Mateus 4:1-4?",
+    "prompt": "Qual sequência revela o sentido de Mateus 4:1-4?",
+    "cue": "Qual sequência revela o sentido de Mateus 4:1-4?",
+    "feedbackCorrect": "Certo: envio, fome exposta, vida definida pela Palavra.",
+    "feedbackWrong": {
+      "b": "A fome é o campo da prova, não o primeiro movimento.",
+      "c": "A Palavra interpreta a fome; não vem antes do envio."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "o Espírito envia Jesus ao lugar da prova"
+      },
+      {
+        "id": "b",
+        "text": "o jejum deixa a fome visível diante do tentador"
+      },
+      {
+        "id": "c",
+        "text": "a vida é definida pela Palavra, não só pelo pão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus.",
+    "trail": "jejum",
+    "section": "jj-01-desejo",
+    "id": "jejum-pro-jj-01-desejo-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 4:1-4",
+    "learningObjective": "Perceber que Jesus jejua no deserto e responde à tentação com a Palavra: o homem não vive só de pão.",
+    "evidence": [
+      "Mateus 4:1",
+      "Mateus 4:4"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Se és ___ de Deus, manda que estas pedras se tornem em pães.\"",
+    "prompt": "Complete: \"Se és ___ de Deus, manda que estas pedras se tornem em pães.\"",
+    "cue": "Complete: \"Se és ___ de Deus, manda que estas pedras se tornem em pães.\"",
+    "feedbackCorrect": "Certo: a tentação ataca a identidade de Filho.",
+    "feedbackWrong": {
+      "b": "Homem é o sujeito da citação, não o título desta pergunta.",
+      "c": "Espírito envia Jesus; não é o título usado pelo tentador."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Filho"
+      },
+      {
+        "id": "b",
+        "text": "homem"
+      },
+      {
+        "id": "c",
+        "text": "Espírito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus.",
+    "trail": "jejum",
+    "section": "jj-01-desejo",
+    "id": "jejum-pro-jj-01-desejo-05",
+    "template": "Se és ___ de Deus, manda que estas pedras se tornem em pães."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 4:1-4",
+    "learningObjective": "Perceber que Jesus jejua no deserto e responde à tentação com a Palavra: o homem não vive só de pão.",
+    "evidence": [
+      "Mateus 4:1",
+      "Mateus 4:4"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 4:1-4 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 4:1-4 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 4:1-4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: jejuar é disciplinar o desejo sob a Palavra.",
+    "feedbackWrong": {
+      "b": "O deserto não é recusa da Palavra, e sim o lugar dela.",
+      "c": "A fome não autoriza autonomizar-se diante de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Desejo disciplinado pela Palavra"
+      },
+      {
+        "id": "b",
+        "text": "Deserto como recusa da Escritura"
+      },
+      {
+        "id": "c",
+        "text": "Fome como autonomia diante de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus.",
+    "trail": "jejum",
+    "section": "jj-01-desejo",
+    "id": "jejum-pro-jj-01-desejo-06",
+    "passageA": {
+      "ref": "Mateus 4:4",
+      "text": "Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Disciplinar o desejo: Jesus jejua e responde com a Palavra — o homem não vive só de pão."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 6:16-18",
+    "learningObjective": "Reconhecer que o jejum é diante do Pai em secreto, não espetáculo para homens.",
+    "evidence": [
+      "Mateus 6:16",
+      "Mateus 6:18"
+    ],
+    "type": "true_false",
+    "question": "Jesus manda que, ao jejuar, não se tome um ar triste, como os hipócritas.",
+    "prompt": "Jesus manda que, ao jejuar, não se tome um ar triste, como os hipócritas.",
+    "cue": "Jesus manda que, ao jejuar, não se tome um ar triste, como os hipócritas.",
+    "feedbackCorrect": "Certo: Mateus 6:16 proíbe o ar triste dos hipócritas.",
+    "feedbackWrong": {
+      "false": "O texto manda não tomar ar triste, como os hipócritas."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá.",
+    "trail": "jejum",
+    "section": "jj-02-secreto",
+    "id": "jejum-sem-jj-02-secreto-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 6:16-18",
+    "learningObjective": "Reconhecer que o jejum é diante do Pai em secreto, não espetáculo para homens.",
+    "evidence": [
+      "Mateus 6:16",
+      "Mateus 6:18"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 6:16-18, toque a palavra que falta em \"não tomeis um ar ___, como os hipócritas\"?",
+    "prompt": "Em Mateus 6:16-18, toque a palavra que falta em \"não tomeis um ar ___, como os hipócritas\"?",
+    "cue": "Em Mateus 6:16-18, toque a palavra que falta em \"não tomeis um ar ___, como os hipócritas\"?",
+    "feedbackCorrect": "Exato: o ar triste é o teatro dos hipócritas.",
+    "feedbackWrong": {
+      "b": "Secreto descreve o Pai, não o ar do jejuador.",
+      "c": "Recompensa é o que os hipócritas já receberam."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "triste"
+      },
+      {
+        "id": "b",
+        "text": "secreto"
+      },
+      {
+        "id": "c",
+        "text": "recompensa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá.",
+    "trail": "jejum",
+    "section": "jj-02-secreto",
+    "id": "jejum-sem-jj-02-secreto-02",
+    "template": "não tomeis um ar ___, como os hipócritas"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 6:16-18",
+    "learningObjective": "Reconhecer que o jejum é diante do Pai em secreto, não espetáculo para homens.",
+    "evidence": [
+      "Mateus 6:16",
+      "Mateus 6:18"
+    ],
+    "type": "choice",
+    "question": "O que Mateus 6:16 afirma que os hipócritas fazem ao jejuar?",
+    "prompt": "O que Mateus 6:16 afirma que os hipócritas fazem ao jejuar?",
+    "cue": "O que Mateus 6:16 afirma que os hipócritas fazem ao jejuar?",
+    "feedbackCorrect": "Certo: desfiguram o rosto para serem vistos pelos homens.",
+    "feedbackWrong": {
+      "b": "O texto manda ungir a cabeça, não exibir tristeza.",
+      "c": "Eles já receberam a recompensa, não a recusaram.",
+      "d": "O jejum secreto é a ordem a ti, não a prática deles."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Desfiguram os rostos para fazer ver aos homens que jejuam."
+      },
+      {
+        "id": "b",
+        "text": "Ungem a cabeça para esconder o jejum dos vizinhos."
+      },
+      {
+        "id": "c",
+        "text": "Recusam qualquer recompensa, humana ou divina."
+      },
+      {
+        "id": "d",
+        "text": "Jejuam somente diante do Pai, em secreto."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá.",
+    "trail": "jejum",
+    "section": "jj-02-secreto",
+    "id": "jejum-sem-jj-02-secreto-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 6:16-18",
+    "learningObjective": "Reconhecer que o jejum é diante do Pai em secreto, não espetáculo para homens.",
+    "evidence": [
+      "Mateus 6:16",
+      "Mateus 6:18"
+    ],
+    "type": "order",
+    "question": "Qual é a ordem das instruções em Mateus 6:16-18?",
+    "prompt": "Qual é a ordem das instruções em Mateus 6:16-18?",
+    "cue": "Qual é a ordem das instruções em Mateus 6:16-18?",
+    "feedbackCorrect": "Certo: não teatro, gesto oculto, retribuição do Pai.",
+    "feedbackWrong": {
+      "b": "Ungir e lavar vem depois do aviso contra o ar triste.",
+      "c": "A retribuição do Pai fecha o ensino, não o abre."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "não tomeis um ar triste, como os hipócritas"
+      },
+      {
+        "id": "b",
+        "text": "unge a cabeça e lava o rosto"
+      },
+      {
+        "id": "c",
+        "text": "teu Pai, que vê em secreto, te retribuirá"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá.",
+    "trail": "jejum",
+    "section": "jj-02-secreto",
+    "id": "jejum-sem-jj-02-secreto-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 6:16-18",
+    "learningObjective": "Reconhecer que o jejum é diante do Pai em secreto, não espetáculo para homens.",
+    "evidence": [
+      "Mateus 6:16",
+      "Mateus 6:18"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Tu, porém, quando jejuas, unge a cabeça e lava o ___.\"",
+    "prompt": "Complete: \"Tu, porém, quando jejuas, unge a cabeça e lava o ___.\"",
+    "cue": "Complete: \"Tu, porém, quando jejuas, unge a cabeça e lava o ___.\"",
+    "feedbackCorrect": "Certo: lava o rosto, contraste com o rosto desfigurado.",
+    "feedbackWrong": {
+      "b": "Triste descreve o ar dos hipócritas, não esta lacuna.",
+      "c": "Homens são a plateia a evitar, não o que se lava."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "rosto"
+      },
+      {
+        "id": "b",
+        "text": "triste"
+      },
+      {
+        "id": "c",
+        "text": "homens"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá.",
+    "trail": "jejum",
+    "section": "jj-02-secreto",
+    "id": "jejum-sem-jj-02-secreto-05",
+    "template": "Tu, porém, quando jejuas, unge a cabeça e lava o ___."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 6:16-18",
+    "learningObjective": "Reconhecer que o jejum é diante do Pai em secreto, não espetáculo para homens.",
+    "evidence": [
+      "Mateus 6:16",
+      "Mateus 6:18"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 6:18 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 6:18 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 6:18 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o jejum é diante do Pai que vê em secreto.",
+    "feedbackWrong": {
+      "b": "O texto proíbe o teatro, não recomenda a vitrine.",
+      "c": "A retribuição vem do Pai, não da plateia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jejum diante do Pai"
+      },
+      {
+        "id": "b",
+        "text": "Jejum como vitrine humana"
+      },
+      {
+        "id": "c",
+        "text": "Recompensa da plateia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá.",
+    "trail": "jejum",
+    "section": "jj-02-secreto",
+    "id": "jejum-sem-jj-02-secreto-06",
+    "passageA": {
+      "ref": "Mateus 6:18",
+      "text": "para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jejuar diante do Pai: não teatro para homens; o Pai que vê em secreto retribui."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 6:16-18",
+    "learningObjective": "Reconhecer que o jejum é diante do Pai em secreto, não espetáculo para homens.",
+    "evidence": [
+      "Mateus 6:16",
+      "Mateus 6:18"
+    ],
+    "type": "true_false",
+    "question": "Os hipócritas já receberam a sua recompensa porque fizeram ver aos homens que estão jejuando.",
+    "prompt": "Os hipócritas já receberam a sua recompensa porque fizeram ver aos homens que estão jejuando.",
+    "cue": "Os hipócritas já receberam a sua recompensa porque fizeram ver aos homens que estão jejuando.",
+    "feedbackCorrect": "Certo: a recompensa humana esgota o teatro do jejum.",
+    "feedbackWrong": {
+      "false": "Mateus 6:16 liga o ver dos homens à recompensa já dada."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá.",
+    "trail": "jejum",
+    "section": "jj-02-secreto",
+    "id": "jejum-cam-jj-02-secreto-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 6:16-18",
+    "learningObjective": "Reconhecer que o jejum é diante do Pai em secreto, não espetáculo para homens.",
+    "evidence": [
+      "Mateus 6:16",
+      "Mateus 6:18"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 6:16-18, toque a palavra que falta em \"para não mostrar aos homens que jejuas, mas somente a teu ___\"?",
+    "prompt": "Em Mateus 6:16-18, toque a palavra que falta em \"para não mostrar aos homens que jejuas, mas somente a teu ___\"?",
+    "cue": "Em Mateus 6:16-18, toque a palavra que falta em \"para não mostrar aos homens que jejuas, mas somente a teu ___\"?",
+    "feedbackCorrect": "Exato: o jejum se dirige ao Pai.",
+    "feedbackWrong": {
+      "b": "Hipócritas são o contraste, não o destinatário.",
+      "c": "Recompensa é o que o Pai dá, não o vocativo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pai"
+      },
+      {
+        "id": "b",
+        "text": "hipócritas"
+      },
+      {
+        "id": "c",
+        "text": "recompensa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá.",
+    "trail": "jejum",
+    "section": "jj-02-secreto",
+    "id": "jejum-cam-jj-02-secreto-02",
+    "template": "para não mostrar aos homens que jejuas, mas somente a teu ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 6:16-18",
+    "learningObjective": "Reconhecer que o jejum é diante do Pai em secreto, não espetáculo para homens.",
+    "evidence": [
+      "Mateus 6:16",
+      "Mateus 6:18"
+    ],
+    "type": "choice",
+    "question": "O que o contraste de Mateus 6:16-18 ensina sobre o jejum?",
+    "prompt": "O que o contraste de Mateus 6:16-18 ensina sobre o jejum?",
+    "cue": "O que o contraste de Mateus 6:16-18 ensina sobre o jejum?",
+    "feedbackCorrect": "Certo: o público do jejum é o Pai, não os homens.",
+    "feedbackWrong": {
+      "b": "Ungir e lavar escondem o jejum, não o anunciam.",
+      "c": "Tristeza fingida é hipocrisia, não prova de fé.",
+      "d": "A retribuição do Pai não depende de plateia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O jejum verdadeiro busca o Pai, não a aprovação humana."
+      },
+      {
+        "id": "b",
+        "text": "Ungir a cabeça serve para anunciar o jejum na rua."
+      },
+      {
+        "id": "c",
+        "text": "O ar triste é o sinal mais confiável de piedade."
+      },
+      {
+        "id": "d",
+        "text": "Sem plateia, o jejum perde qualquer recompensa."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá.",
+    "trail": "jejum",
+    "section": "jj-02-secreto",
+    "id": "jejum-cam-jj-02-secreto-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 6:16-18",
+    "learningObjective": "Reconhecer que o jejum é diante do Pai em secreto, não espetáculo para homens.",
+    "evidence": [
+      "Mateus 6:16",
+      "Mateus 6:18"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Mateus 6:16-18?",
+    "prompt": "Como se encadeiam os eventos de Mateus 6:16-18?",
+    "cue": "Como se encadeiam os eventos de Mateus 6:16-18?",
+    "feedbackCorrect": "Certo: teatro denunciado, gesto oculto, olhar do Pai.",
+    "feedbackWrong": {
+      "b": "O gesto oculto responde ao teatro, não o precede.",
+      "c": "O Pai que vê fecha o encadeamento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "os hipócritas desfiguram o rosto para serem vistos"
+      },
+      {
+        "id": "b",
+        "text": "o discípulo unge a cabeça e lava o rosto"
+      },
+      {
+        "id": "c",
+        "text": "o Pai que está em secreto vê e retribui"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá.",
+    "trail": "jejum",
+    "section": "jj-02-secreto",
+    "id": "jejum-cam-jj-02-secreto-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 6:16-18",
+    "learningObjective": "Reconhecer que o jejum é diante do Pai em secreto, não espetáculo para homens.",
+    "evidence": [
+      "Mateus 6:16",
+      "Mateus 6:18"
+    ],
+    "type": "complete",
+    "question": "Complete: \"e teu Pai, que vê em secreto, te ___.\"",
+    "prompt": "Complete: \"e teu Pai, que vê em secreto, te ___.\"",
+    "cue": "Complete: \"e teu Pai, que vê em secreto, te ___.\"",
+    "feedbackCorrect": "Certo: o Pai que vê em secreto retribui.",
+    "feedbackWrong": {
+      "b": "Rosto se lava; não é o verbo desta frase.",
+      "c": "Triste descreve o ar hipócrita, não a ação do Pai."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "retribuirá"
+      },
+      {
+        "id": "b",
+        "text": "rosto"
+      },
+      {
+        "id": "c",
+        "text": "triste"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá.",
+    "trail": "jejum",
+    "section": "jj-02-secreto",
+    "id": "jejum-cam-jj-02-secreto-05",
+    "template": "e teu Pai, que vê em secreto, te ___."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 6:16-18",
+    "learningObjective": "Reconhecer que o jejum é diante do Pai em secreto, não espetáculo para homens.",
+    "evidence": [
+      "Mateus 6:16",
+      "Mateus 6:18"
+    ],
+    "type": "connect",
+    "question": "O que o gesto de ungir e lavar em Mateus 6:17-18 comunica que se liga a este contexto?",
+    "prompt": "O que o gesto de ungir e lavar em Mateus 6:17-18 comunica que se liga a este contexto?",
+    "cue": "O que o gesto de ungir e lavar em Mateus 6:17-18 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o jejum deixa de ser teatro e volta ao Pai.",
+    "feedbackWrong": {
+      "b": "O gesto não visa impressionar vizinhos.",
+      "c": "Ocultar o jejum não é negar o Pai; é buscá-lo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ocultar o teatro do jejum"
+      },
+      {
+        "id": "b",
+        "text": "Impressionar os vizinhos"
+      },
+      {
+        "id": "c",
+        "text": "Negar o Pai em público"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá.",
+    "trail": "jejum",
+    "section": "jj-02-secreto",
+    "id": "jejum-cam-jj-02-secreto-06",
+    "passageA": {
+      "ref": "Mateus 6:17-18",
+      "text": "Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jejuar diante do Pai: não teatro para homens; o Pai que vê em secreto retribui."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 6:16-18",
+    "learningObjective": "Reconhecer que o jejum é diante do Pai em secreto, não espetáculo para homens.",
+    "evidence": [
+      "Mateus 6:16",
+      "Mateus 6:18"
+    ],
+    "type": "true_false",
+    "question": "O jejum que Jesus ensina é dirigido ao Pai que vê em secreto, não à plateia humana.",
+    "prompt": "O jejum que Jesus ensina é dirigido ao Pai que vê em secreto, não à plateia humana.",
+    "cue": "O jejum que Jesus ensina é dirigido ao Pai que vê em secreto, não à plateia humana.",
+    "feedbackCorrect": "Certo: o ensino opõe secreto e teatro.",
+    "feedbackWrong": {
+      "false": "Mateus 6:18 afirma o Pai em secreto, não os homens."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá.",
+    "trail": "jejum",
+    "section": "jj-02-secreto",
+    "id": "jejum-pro-jj-02-secreto-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 6:16-18",
+    "learningObjective": "Reconhecer que o jejum é diante do Pai em secreto, não espetáculo para homens.",
+    "evidence": [
+      "Mateus 6:16",
+      "Mateus 6:18"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 6:16-18, toque a palavra que falta em \"eles ___ os seus rostos, para fazer ver aos homens\"?",
+    "prompt": "Em Mateus 6:16-18, toque a palavra que falta em \"eles ___ os seus rostos, para fazer ver aos homens\"?",
+    "cue": "Em Mateus 6:16-18, toque a palavra que falta em \"eles ___ os seus rostos, para fazer ver aos homens\"?",
+    "feedbackCorrect": "Exato: desfiguram os rostos para serem vistos.",
+    "feedbackWrong": {
+      "b": "Unge é a ordem ao discípulo, não a prática hipócrita.",
+      "c": "Lava também pertence ao discípulo, não a esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "desfiguram"
+      },
+      {
+        "id": "b",
+        "text": "unge"
+      },
+      {
+        "id": "c",
+        "text": "lava"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá.",
+    "trail": "jejum",
+    "section": "jj-02-secreto",
+    "id": "jejum-pro-jj-02-secreto-02",
+    "template": "eles ___ os seus rostos, para fazer ver aos homens"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 6:16-18",
+    "learningObjective": "Reconhecer que o jejum é diante do Pai em secreto, não espetáculo para homens.",
+    "evidence": [
+      "Mateus 6:16",
+      "Mateus 6:18"
+    ],
+    "type": "choice",
+    "question": "Qual implicação teológica Mateus 6:16-18 sustenta sobre o jejum?",
+    "prompt": "Qual implicação teológica Mateus 6:16-18 sustenta sobre o jejum?",
+    "cue": "Qual implicação teológica Mateus 6:16-18 sustenta sobre o jejum?",
+    "feedbackCorrect": "Certo: Deus vê o secreto; a fé não precisa de palco.",
+    "feedbackWrong": {
+      "b": "Secreto não significa jejum sem Deus, e sim sem vitrine.",
+      "c": "A retribuição do Pai não se compra com teatro.",
+      "d": "O rosto lavado não esvazia o jejum; protege-o da hipocrisia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A piedade visível pode já ter recebido sua única paga."
+      },
+      {
+        "id": "b",
+        "text": "Jejuar em secreto é esconder-se de Deus."
+      },
+      {
+        "id": "c",
+        "text": "O Pai só retribui o jejum que os homens aplaudem."
+      },
+      {
+        "id": "d",
+        "text": "Lavar o rosto prova que o jejum perdeu valor espiritual."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá.",
+    "trail": "jejum",
+    "section": "jj-02-secreto",
+    "id": "jejum-pro-jj-02-secreto-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 6:16-18",
+    "learningObjective": "Reconhecer que o jejum é diante do Pai em secreto, não espetáculo para homens.",
+    "evidence": [
+      "Mateus 6:16",
+      "Mateus 6:18"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Mateus 6:16-18?",
+    "prompt": "Qual sequência revela o sentido de Mateus 6:16-18?",
+    "cue": "Qual sequência revela o sentido de Mateus 6:16-18?",
+    "feedbackCorrect": "Certo: denúncia do teatro, prática oculta, olhar do Pai.",
+    "feedbackWrong": {
+      "b": "A prática oculta vem depois da denúncia, não antes.",
+      "c": "O Pai que vê interpreta todo o gesto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "o jejum vira espetáculo quando busca olhos humanos"
+      },
+      {
+        "id": "b",
+        "text": "o discípulo esconde o jejum no gesto ordinário"
+      },
+      {
+        "id": "c",
+        "text": "o Pai que vê em secreto é quem retribui"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá.",
+    "trail": "jejum",
+    "section": "jj-02-secreto",
+    "id": "jejum-pro-jj-02-secreto-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 6:16-18",
+    "learningObjective": "Reconhecer que o jejum é diante do Pai em secreto, não espetáculo para homens.",
+    "evidence": [
+      "Mateus 6:16",
+      "Mateus 6:18"
+    ],
+    "type": "complete",
+    "question": "Complete: \"mas somente a teu Pai, que está em ___.\"",
+    "prompt": "Complete: \"mas somente a teu Pai, que está em ___.\"",
+    "cue": "Complete: \"mas somente a teu Pai, que está em ___.\"",
+    "feedbackCorrect": "Certo: o Pai está em secreto.",
+    "feedbackWrong": {
+      "b": "Desfiguram é o verbo dos hipócritas, não o lugar do Pai.",
+      "c": "Cabeça se unge; não nomeia o lugar desta frase."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "secreto"
+      },
+      {
+        "id": "b",
+        "text": "desfiguram"
+      },
+      {
+        "id": "c",
+        "text": "cabeça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá.",
+    "trail": "jejum",
+    "section": "jj-02-secreto",
+    "id": "jejum-pro-jj-02-secreto-05",
+    "template": "mas somente a teu Pai, que está em ___."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 6:16-18",
+    "learningObjective": "Reconhecer que o jejum é diante do Pai em secreto, não espetáculo para homens.",
+    "evidence": [
+      "Mateus 6:16",
+      "Mateus 6:18"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 6:16-18 comunica que se liga a este contexto?",
+    "prompt": "O que Mateus 6:16-18 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 6:16-18 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: jejum sem teatro, porque o Pai vê e retribui.",
+    "feedbackWrong": {
+      "b": "O texto não pede jejum para ser visto.",
+      "c": "A retribuição não vem dos homens."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pai que vê retribui"
+      },
+      {
+        "id": "b",
+        "text": "Jejum para ser visto"
+      },
+      {
+        "id": "c",
+        "text": "Paga dos homens"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá.",
+    "trail": "jejum",
+    "section": "jj-02-secreto",
+    "id": "jejum-pro-jj-02-secreto-06",
+    "passageA": {
+      "ref": "Mateus 6:18",
+      "text": "e teu Pai, que vê em secreto, te retribuirá."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jejuar diante do Pai: não teatro para homens; o Pai que vê em secreto retribui."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 13:2-3",
+    "learningObjective": "Ver que a igreja jejua e ora enquanto o Espírito Santo separa para a obra.",
+    "evidence": [
+      "Atos 13:2",
+      "Atos 13:3"
+    ],
+    "type": "true_false",
+    "question": "Enquanto eles ministravam perante o Senhor e jejuavam, o Espírito Santo falou.",
+    "prompt": "Enquanto eles ministravam perante o Senhor e jejuavam, o Espírito Santo falou.",
+    "cue": "Enquanto eles ministravam perante o Senhor e jejuavam, o Espírito Santo falou.",
+    "feedbackCorrect": "Certo: Atos 13:2 liga ministério, jejum e a voz do Espírito.",
+    "feedbackWrong": {
+      "false": "O texto une jejuavam e a fala do Espírito Santo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-03-oracao",
+    "id": "jejum-sem-jj-03-oracao-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 13:2-3",
+    "learningObjective": "Ver que a igreja jejua e ora enquanto o Espírito Santo separa para a obra.",
+    "evidence": [
+      "Atos 13:2",
+      "Atos 13:3"
+    ],
+    "type": "tap",
+    "question": "Em Atos 13:2-3, toque a palavra que falta em \"Separai-me a Barnabé e a ___ para a obra\"?",
+    "prompt": "Em Atos 13:2-3, toque a palavra que falta em \"Separai-me a Barnabé e a ___ para a obra\"?",
+    "cue": "Em Atos 13:2-3, toque a palavra que falta em \"Separai-me a Barnabé e a ___ para a obra\"?",
+    "feedbackCorrect": "Exato: Barnabé e Saulo são separados para a obra.",
+    "feedbackWrong": {
+      "b": "Mãos vêm na imposição posterior, não neste nome.",
+      "c": "Senhor é a quem ministram, não o segundo nome."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Saulo"
+      },
+      {
+        "id": "b",
+        "text": "mãos"
+      },
+      {
+        "id": "c",
+        "text": "Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-03-oracao",
+    "id": "jejum-sem-jj-03-oracao-02",
+    "template": "Separai-me a Barnabé e a ___ para a obra"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 13:2-3",
+    "learningObjective": "Ver que a igreja jejua e ora enquanto o Espírito Santo separa para a obra.",
+    "evidence": [
+      "Atos 13:2",
+      "Atos 13:3"
+    ],
+    "type": "choice",
+    "question": "O que Atos 13:2-3 registra depois da fala do Espírito?",
+    "prompt": "O que Atos 13:2-3 registra depois da fala do Espírito?",
+    "cue": "O que Atos 13:2-3 registra depois da fala do Espírito?",
+    "feedbackCorrect": "Certo: jejuaram, oraram, impuseram as mãos e os despediram.",
+    "feedbackWrong": {
+      "b": "O texto não diz que recusaram o chamado.",
+      "c": "A ordem inclui jejum e oração, não só despedida.",
+      "d": "Barnabé e Saulo são separados, não ignorados."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jejuaram, oraram, impuseram as mãos e os despediram."
+      },
+      {
+        "id": "b",
+        "text": "Recusaram o chamado e continuaram só em Antioquia."
+      },
+      {
+        "id": "c",
+        "text": "Despediram-nos sem orar nem jejuar."
+      },
+      {
+        "id": "d",
+        "text": "O Espírito pediu que deixassem Barnabé e Saulo de lado."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-03-oracao",
+    "id": "jejum-sem-jj-03-oracao-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 13:2-3",
+    "learningObjective": "Ver que a igreja jejua e ora enquanto o Espírito Santo separa para a obra.",
+    "evidence": [
+      "Atos 13:2",
+      "Atos 13:3"
+    ],
+    "type": "order",
+    "question": "Qual é a ordem dos fatos em Atos 13:2-3?",
+    "prompt": "Qual é a ordem dos fatos em Atos 13:2-3?",
+    "cue": "Qual é a ordem dos fatos em Atos 13:2-3?",
+    "feedbackCorrect": "Certo: ministério e jejum, chamado, então oração e envio.",
+    "feedbackWrong": {
+      "b": "O chamado do Espírito vem no meio do jejum.",
+      "c": "Impor as mãos e despedir fecha a cena."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "ministravam perante o Senhor e jejuavam"
+      },
+      {
+        "id": "b",
+        "text": "Separai-me a Barnabé e a Saulo para a obra"
+      },
+      {
+        "id": "c",
+        "text": "jejuaram, oraram, e lhes impuseram as mãos, os despediram"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-03-oracao",
+    "id": "jejum-sem-jj-03-oracao-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 13:2-3",
+    "learningObjective": "Ver que a igreja jejua e ora enquanto o Espírito Santo separa para a obra.",
+    "evidence": [
+      "Atos 13:2",
+      "Atos 13:3"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Então, depois que jejuaram, ___, e lhes impuseram as mãos, os despediram.\"",
+    "prompt": "Complete: \"Então, depois que jejuaram, ___, e lhes impuseram as mãos, os despediram.\"",
+    "cue": "Complete: \"Então, depois que jejuaram, ___, e lhes impuseram as mãos, os despediram.\"",
+    "feedbackCorrect": "Certo: oraram no mesmo movimento do jejum e do envio.",
+    "feedbackWrong": {
+      "b": "Obra é o destino do chamado, não este verbo.",
+      "c": "Barnabé é um dos enviados, não o verbo da lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "oraram"
+      },
+      {
+        "id": "b",
+        "text": "obra"
+      },
+      {
+        "id": "c",
+        "text": "Barnabé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-03-oracao",
+    "id": "jejum-sem-jj-03-oracao-05",
+    "template": "Então, depois que jejuaram, ___, e lhes impuseram as mãos, os despediram."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 13:2-3",
+    "learningObjective": "Ver que a igreja jejua e ora enquanto o Espírito Santo separa para a obra.",
+    "evidence": [
+      "Atos 13:2",
+      "Atos 13:3"
+    ],
+    "type": "connect",
+    "question": "O que Atos 13:2 comunica que se liga a este contexto?",
+    "prompt": "O que Atos 13:2 comunica que se liga a este contexto?",
+    "cue": "O que Atos 13:2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o Espírito separa para a obra no jejum da igreja.",
+    "feedbackWrong": {
+      "b": "O jejum aqui não é espetáculo individual.",
+      "c": "A obra não nasce à parte da oração da igreja."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito separa na oração"
+      },
+      {
+        "id": "b",
+        "text": "Jejum como palco pessoal"
+      },
+      {
+        "id": "c",
+        "text": "Obra sem a igreja"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-03-oracao",
+    "id": "jejum-sem-jj-03-oracao-06",
+    "passageA": {
+      "ref": "Atos 13:2",
+      "text": "Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jejum com oração envia: o Espírito separa para a obra enquanto a igreja jejua e ora."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 13:2-3",
+    "learningObjective": "Ver que a igreja jejua e ora enquanto o Espírito Santo separa para a obra.",
+    "evidence": [
+      "Atos 13:2",
+      "Atos 13:3"
+    ],
+    "type": "true_false",
+    "question": "A separação de Barnabé e Saulo para a obra acontece enquanto a igreja ministra e jejua.",
+    "prompt": "A separação de Barnabé e Saulo para a obra acontece enquanto a igreja ministra e jejua.",
+    "cue": "A separação de Barnabé e Saulo para a obra acontece enquanto a igreja ministra e jejua.",
+    "feedbackCorrect": "Certo: o chamado ocorre no meio do jejum comunitário.",
+    "feedbackWrong": {
+      "false": "Atos 13:2 situa a fala do Espírito nesse contexto."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-03-oracao",
+    "id": "jejum-cam-jj-03-oracao-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 13:2-3",
+    "learningObjective": "Ver que a igreja jejua e ora enquanto o Espírito Santo separa para a obra.",
+    "evidence": [
+      "Atos 13:2",
+      "Atos 13:3"
+    ],
+    "type": "tap",
+    "question": "Em Atos 13:2-3, toque a palavra que falta em \"lhes impuseram as ___, os despediram\"?",
+    "prompt": "Em Atos 13:2-3, toque a palavra que falta em \"lhes impuseram as ___, os despediram\"?",
+    "cue": "Em Atos 13:2-3, toque a palavra que falta em \"lhes impuseram as ___, os despediram\"?",
+    "feedbackCorrect": "Exato: impuseram as mãos e os despediram.",
+    "feedbackWrong": {
+      "b": "Obra é o chamado, não o gesto desta frase.",
+      "c": "Espírito fala o chamado; não preenche esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "mãos"
+      },
+      {
+        "id": "b",
+        "text": "obra"
+      },
+      {
+        "id": "c",
+        "text": "Espírito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-03-oracao",
+    "id": "jejum-cam-jj-03-oracao-02",
+    "template": "lhes impuseram as ___, os despediram"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 13:2-3",
+    "learningObjective": "Ver que a igreja jejua e ora enquanto o Espírito Santo separa para a obra.",
+    "evidence": [
+      "Atos 13:2",
+      "Atos 13:3"
+    ],
+    "type": "choice",
+    "question": "O que o encadeamento de Atos 13:2-3 mostra sobre jejum e missão?",
+    "prompt": "O que o encadeamento de Atos 13:2-3 mostra sobre jejum e missão?",
+    "cue": "O que o encadeamento de Atos 13:2-3 mostra sobre jejum e missão?",
+    "feedbackCorrect": "Certo: jejum e oração são o clima do envio, não um adorno.",
+    "feedbackWrong": {
+      "b": "O Espírito fala no jejum da igreja, não à parte dela.",
+      "c": "O envio inclui oração e mãos, não só decisão humana.",
+      "d": "O jejum aqui serve à obra, não à vitrine."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A igreja jejua e ora, e o Espírito separa para a obra."
+      },
+      {
+        "id": "b",
+        "text": "O Espírito só fala quando a igreja deixa de jejuar."
+      },
+      {
+        "id": "c",
+        "text": "O envio prescinde de oração; basta a decisão do grupo."
+      },
+      {
+        "id": "d",
+        "text": "Jejuar aqui visa impressionar Barnabé e Saulo."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-03-oracao",
+    "id": "jejum-cam-jj-03-oracao-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 13:2-3",
+    "learningObjective": "Ver que a igreja jejua e ora enquanto o Espírito Santo separa para a obra.",
+    "evidence": [
+      "Atos 13:2",
+      "Atos 13:3"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Atos 13:2-3?",
+    "prompt": "Como se encadeiam os eventos de Atos 13:2-3?",
+    "cue": "Como se encadeiam os eventos de Atos 13:2-3?",
+    "feedbackCorrect": "Certo: culto com jejum, chamado, então oração e despedida.",
+    "feedbackWrong": {
+      "b": "O chamado interrompe o jejum; não vem depois do envio.",
+      "c": "A despedida conclui, não inicia, o movimento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "a igreja ministra e jejua perante o Senhor"
+      },
+      {
+        "id": "b",
+        "text": "o Espírito Santo pede a separação para a obra"
+      },
+      {
+        "id": "c",
+        "text": "jejum, oração e imposição das mãos enviam os dois"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-03-oracao",
+    "id": "jejum-cam-jj-03-oracao-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 13:2-3",
+    "learningObjective": "Ver que a igreja jejua e ora enquanto o Espírito Santo separa para a obra.",
+    "evidence": [
+      "Atos 13:2",
+      "Atos 13:3"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Separai-me a Barnabé e a Saulo para a ___ a que os tenho chamado.\"",
+    "prompt": "Complete: \"Separai-me a Barnabé e a Saulo para a ___ a que os tenho chamado.\"",
+    "cue": "Complete: \"Separai-me a Barnabé e a Saulo para a ___ a que os tenho chamado.\"",
+    "feedbackCorrect": "Certo: a obra é o destino do chamado.",
+    "feedbackWrong": {
+      "b": "Mãos são o gesto posterior, não esta lacuna.",
+      "c": "Senhor é a quem ministram, não o nome da missão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "obra"
+      },
+      {
+        "id": "b",
+        "text": "mãos"
+      },
+      {
+        "id": "c",
+        "text": "Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-03-oracao",
+    "id": "jejum-cam-jj-03-oracao-05",
+    "template": "Separai-me a Barnabé e a Saulo para a ___ a que os tenho chamado."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 13:2-3",
+    "learningObjective": "Ver que a igreja jejua e ora enquanto o Espírito Santo separa para a obra.",
+    "evidence": [
+      "Atos 13:2",
+      "Atos 13:3"
+    ],
+    "type": "connect",
+    "question": "O que o jejum seguido de oração em Atos 13:3 comunica que se liga a este contexto?",
+    "prompt": "O que o jejum seguido de oração em Atos 13:3 comunica que se liga a este contexto?",
+    "cue": "O que o jejum seguido de oração em Atos 13:3 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o envio nasce de jejum e oração, não de pressa.",
+    "feedbackWrong": {
+      "b": "As mãos confirmam o chamado; não o substituem.",
+      "c": "Despedir não é abandono; é obediência ao Espírito."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Envio nascido da oração"
+      },
+      {
+        "id": "b",
+        "text": "Mãos no lugar do chamado"
+      },
+      {
+        "id": "c",
+        "text": "Despedida como abandono"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-03-oracao",
+    "id": "jejum-cam-jj-03-oracao-06",
+    "passageA": {
+      "ref": "Atos 13:3",
+      "text": "Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jejum com oração envia: o Espírito separa para a obra enquanto a igreja jejua e ora."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 13:2-3",
+    "learningObjective": "Ver que a igreja jejua e ora enquanto o Espírito Santo separa para a obra.",
+    "evidence": [
+      "Atos 13:2",
+      "Atos 13:3"
+    ],
+    "type": "true_false",
+    "question": "O Espírito Santo chama para a obra no meio do jejum e da oração da igreja, não à margem dela.",
+    "prompt": "O Espírito Santo chama para a obra no meio do jejum e da oração da igreja, não à margem dela.",
+    "cue": "O Espírito Santo chama para a obra no meio do jejum e da oração da igreja, não à margem dela.",
+    "feedbackCorrect": "Certo: o chamado habita a liturgia de jejum e oração.",
+    "feedbackWrong": {
+      "false": "Atos 13:2-3 situa o chamado dentro desse culto."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-03-oracao",
+    "id": "jejum-pro-jj-03-oracao-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 13:2-3",
+    "learningObjective": "Ver que a igreja jejua e ora enquanto o Espírito Santo separa para a obra.",
+    "evidence": [
+      "Atos 13:2",
+      "Atos 13:3"
+    ],
+    "type": "tap",
+    "question": "Em Atos 13:2-3, toque a palavra que falta em \"Enquanto eles ___ perante o Senhor e jejuavam\"?",
+    "prompt": "Em Atos 13:2-3, toque a palavra que falta em \"Enquanto eles ___ perante o Senhor e jejuavam\"?",
+    "cue": "Em Atos 13:2-3, toque a palavra que falta em \"Enquanto eles ___ perante o Senhor e jejuavam\"?",
+    "feedbackCorrect": "Exato: ministravam perante o Senhor e jejuavam.",
+    "feedbackWrong": {
+      "b": "Despediram fecha a cena, não abre o ministério.",
+      "c": "Chamado é o verbo do Espírito, não desta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "ministravam"
+      },
+      {
+        "id": "b",
+        "text": "despediram"
+      },
+      {
+        "id": "c",
+        "text": "chamado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-03-oracao",
+    "id": "jejum-pro-jj-03-oracao-02",
+    "template": "Enquanto eles ___ perante o Senhor e jejuavam"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 13:2-3",
+    "learningObjective": "Ver que a igreja jejua e ora enquanto o Espírito Santo separa para a obra.",
+    "evidence": [
+      "Atos 13:2",
+      "Atos 13:3"
+    ],
+    "type": "choice",
+    "question": "Qual leitura de Atos 13:2-3 melhor forma a igreja que jejua?",
+    "prompt": "Qual leitura de Atos 13:2-3 melhor forma a igreja que jejua?",
+    "cue": "Qual leitura de Atos 13:2-3 melhor forma a igreja que jejua?",
+    "feedbackCorrect": "Certo: jejum comunitário é lugar de escuta e envio.",
+    "feedbackWrong": {
+      "b": "O Espírito não é acessório do jejum; ele fala nele.",
+      "c": "A missão não compete com a oração; nasce dela.",
+      "d": "Jejuar aqui não é recusar a obra; é prepará-la."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jejum e oração preparam a igreja a ouvir e enviar."
+      },
+      {
+        "id": "b",
+        "text": "O jejum substitui a voz do Espírito Santo."
+      },
+      {
+        "id": "c",
+        "text": "A obra missionária compete com o tempo de orar."
+      },
+      {
+        "id": "d",
+        "text": "Jejuar é recusar qualquer envio para fora."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-03-oracao",
+    "id": "jejum-pro-jj-03-oracao-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 13:2-3",
+    "learningObjective": "Ver que a igreja jejua e ora enquanto o Espírito Santo separa para a obra.",
+    "evidence": [
+      "Atos 13:2",
+      "Atos 13:3"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Atos 13:2-3?",
+    "prompt": "Qual sequência revela o sentido de Atos 13:2-3?",
+    "cue": "Qual sequência revela o sentido de Atos 13:2-3?",
+    "feedbackCorrect": "Certo: culto com jejum, voz do Espírito, envio orante.",
+    "feedbackWrong": {
+      "b": "A voz do Espírito vem no jejum, não depois do envio.",
+      "c": "O envio interpreta o jejum; não o ignora."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "a igreja se põe perante o Senhor em jejum"
+      },
+      {
+        "id": "b",
+        "text": "o Espírito Santo nomeia a obra e os obreiros"
+      },
+      {
+        "id": "c",
+        "text": "oração e mãos confirmam o envio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-03-oracao",
+    "id": "jejum-pro-jj-03-oracao-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 13:2-3",
+    "learningObjective": "Ver que a igreja jejua e ora enquanto o Espírito Santo separa para a obra.",
+    "evidence": [
+      "Atos 13:2",
+      "Atos 13:3"
+    ],
+    "type": "complete",
+    "question": "Complete: \"disse-lhes o Espírito ___: Separai-me a Barnabé e a Saulo.\"",
+    "prompt": "Complete: \"disse-lhes o Espírito ___: Separai-me a Barnabé e a Saulo.\"",
+    "cue": "Complete: \"disse-lhes o Espírito ___: Separai-me a Barnabé e a Saulo.\"",
+    "feedbackCorrect": "Certo: é o Espírito Santo quem fala.",
+    "feedbackWrong": {
+      "b": "Ministravam descreve a igreja, não o título do Espírito.",
+      "c": "Jejuavam é o contexto, não o nome nesta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Santo"
+      },
+      {
+        "id": "b",
+        "text": "ministravam"
+      },
+      {
+        "id": "c",
+        "text": "jejuavam"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-03-oracao",
+    "id": "jejum-pro-jj-03-oracao-05",
+    "template": "disse-lhes o Espírito ___: Separai-me a Barnabé e a Saulo."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 13:2-3",
+    "learningObjective": "Ver que a igreja jejua e ora enquanto o Espírito Santo separa para a obra.",
+    "evidence": [
+      "Atos 13:2",
+      "Atos 13:3"
+    ],
+    "type": "connect",
+    "question": "O que Atos 13:2-3 comunica que se liga a este contexto?",
+    "prompt": "O que Atos 13:2-3 comunica que se liga a este contexto?",
+    "cue": "O que Atos 13:2-3 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: jejum com oração é o chão do envio pelo Espírito.",
+    "feedbackWrong": {
+      "b": "O Espírito não fala contra a igreja que jejua.",
+      "c": "A obra não dispensa o jejum e a oração."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jejum que envia à obra"
+      },
+      {
+        "id": "b",
+        "text": "Espírito contra a igreja"
+      },
+      {
+        "id": "c",
+        "text": "Obra sem jejum nem oração"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-03-oracao",
+    "id": "jejum-pro-jj-03-oracao-06",
+    "passageA": {
+      "ref": "Atos 13:2-3",
+      "text": "Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jejum com oração envia: o Espírito separa para a obra enquanto a igreja jejua e ora."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 4:4; 6:18; Atos 13:2",
+    "learningObjective": "Reunir Palavra no deserto, jejum secreto e envio em oração como desejo rendido.",
+    "evidence": [
+      "Mateus 4:4",
+      "Mateus 6:18",
+      "Atos 13:2"
+    ],
+    "type": "true_false",
+    "question": "Jesus diz que o homem não vive só de pão; o Pai vê o jejum em secreto; o Espírito fala enquanto a igreja jejua.",
+    "prompt": "Jesus diz que o homem não vive só de pão; o Pai vê o jejum em secreto; o Espírito fala enquanto a igreja jejua.",
+    "cue": "Jesus diz que o homem não vive só de pão; o Pai vê o jejum em secreto; o Espírito fala enquanto a igreja jejua.",
+    "feedbackCorrect": "Certo: os três trechos afirmam Palavra, secreto e envio.",
+    "feedbackWrong": {
+      "false": "Os três textos sustentam pão/Palavra, Pai secreto e Espírito."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus. Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá. Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-04-desafio",
+    "id": "jejum-sem-jj-04-desafio-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 4:4; 6:18; Atos 13:2",
+    "learningObjective": "Reunir Palavra no deserto, jejum secreto e envio em oração como desejo rendido.",
+    "evidence": [
+      "Mateus 4:4",
+      "Mateus 6:18",
+      "Atos 13:2"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 4:4, toque a palavra que falta em \"Não só de ___ viverá o homem\"?",
+    "prompt": "Em Mateus 4:4, toque a palavra que falta em \"Não só de ___ viverá o homem\"?",
+    "cue": "Em Mateus 4:4, toque a palavra que falta em \"Não só de ___ viverá o homem\"?",
+    "feedbackCorrect": "Exato: não só de pão viverá o homem.",
+    "feedbackWrong": {
+      "b": "Secreto descreve o Pai em Mateus 6, não esta lacuna.",
+      "c": "Obra é o chamado de Atos 13, não o alimento citado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "pão"
+      },
+      {
+        "id": "b",
+        "text": "secreto"
+      },
+      {
+        "id": "c",
+        "text": "obra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus. Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá. Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-04-desafio",
+    "id": "jejum-sem-jj-04-desafio-02",
+    "template": "Não só de ___ viverá o homem"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 4:4; 6:18; Atos 13:2",
+    "learningObjective": "Reunir Palavra no deserto, jejum secreto e envio em oração como desejo rendido.",
+    "evidence": [
+      "Mateus 4:4",
+      "Mateus 6:18",
+      "Atos 13:2"
+    ],
+    "type": "choice",
+    "question": "Qual fato os três trechos afirmam juntos?",
+    "prompt": "Qual fato os três trechos afirmam juntos?",
+    "cue": "Qual fato os três trechos afirmam juntos?",
+    "feedbackCorrect": "Certo: Palavra, Pai em secreto e Espírito que separa.",
+    "feedbackWrong": {
+      "b": "Mateus 4 recusa viver só de pão.",
+      "c": "Mateus 6 dirige o jejum ao Pai, não à plateia.",
+      "d": "Atos 13 mostra o Espírito falando no jejum."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Palavra no deserto, jejum secreto e Espírito que envia."
+      },
+      {
+        "id": "b",
+        "text": "O homem vive só de pão, sem a Palavra."
+      },
+      {
+        "id": "c",
+        "text": "O jejum deve ser mostrado aos homens para valer."
+      },
+      {
+        "id": "d",
+        "text": "O Espírito só fala quando a igreja deixa de jejuar."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus. Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá. Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-04-desafio",
+    "id": "jejum-sem-jj-04-desafio-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 4:4; 6:18; Atos 13:2",
+    "learningObjective": "Reunir Palavra no deserto, jejum secreto e envio em oração como desejo rendido.",
+    "evidence": [
+      "Mateus 4:4",
+      "Mateus 6:18",
+      "Atos 13:2"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos nos três trechos?",
+    "prompt": "Qual sequência mostra a ordem dos fatos nos três trechos?",
+    "cue": "Qual sequência mostra a ordem dos fatos nos três trechos?",
+    "feedbackCorrect": "Certo: Palavra, Pai secreto, então o Espírito que separa.",
+    "feedbackWrong": {
+      "b": "O Pai em secreto vem de Mateus 6, depois de 4:4.",
+      "c": "O Espírito em Atos 13 fecha o conjunto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Não só de pão viverá o homem, mas de toda palavra"
+      },
+      {
+        "id": "b",
+        "text": "teu Pai, que vê em secreto, te retribuirá"
+      },
+      {
+        "id": "c",
+        "text": "Separai-me a Barnabé e a Saulo para a obra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus. Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá. Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-04-desafio",
+    "id": "jejum-sem-jj-04-desafio-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 4:4; 6:18; Atos 13:2",
+    "learningObjective": "Reunir Palavra no deserto, jejum secreto e envio em oração como desejo rendido.",
+    "evidence": [
+      "Mateus 4:4",
+      "Mateus 6:18",
+      "Atos 13:2"
+    ],
+    "type": "complete",
+    "question": "Complete: \"teu Pai, que vê em secreto, te ___.\"",
+    "prompt": "Complete: \"teu Pai, que vê em secreto, te ___.\"",
+    "cue": "Complete: \"teu Pai, que vê em secreto, te ___.\"",
+    "feedbackCorrect": "Certo: o Pai que vê em secreto retribui.",
+    "feedbackWrong": {
+      "b": "Pão é de Mateus 4:4, não este verbo.",
+      "c": "Saulo é o enviado de Atos 13, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "retribuirá"
+      },
+      {
+        "id": "b",
+        "text": "pão"
+      },
+      {
+        "id": "c",
+        "text": "Saulo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus. Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá. Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-04-desafio",
+    "id": "jejum-sem-jj-04-desafio-05",
+    "template": "teu Pai, que vê em secreto, te ___."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Mateus 4:4; 6:18; Atos 13:2",
+    "learningObjective": "Reunir Palavra no deserto, jejum secreto e envio em oração como desejo rendido.",
+    "evidence": [
+      "Mateus 4:4",
+      "Mateus 6:18",
+      "Atos 13:2"
+    ],
+    "type": "connect",
+    "question": "O que estes três trechos comunicam que se liga a este contexto?",
+    "prompt": "O que estes três trechos comunicam que se liga a este contexto?",
+    "cue": "O que estes três trechos comunicam que se liga a este contexto?",
+    "feedbackCorrect": "Certo: desejo rendido une Palavra, secreto e envio.",
+    "feedbackWrong": {
+      "b": "O conjunto não reduz o jejum a dieta.",
+      "c": "O conjunto não faz do jejum um palco."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Desejo rendido a Deus"
+      },
+      {
+        "id": "b",
+        "text": "Jejum reduzido a dieta"
+      },
+      {
+        "id": "c",
+        "text": "Jejum como palco humano"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus. Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá. Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-04-desafio",
+    "id": "jejum-sem-jj-04-desafio-06",
+    "passageA": {
+      "ref": "Mateus 4:4",
+      "text": "Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Desejo rendido: Palavra no deserto, jejum secreto e envio em oração."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 4:4; 6:18; Atos 13:2",
+    "learningObjective": "Reunir Palavra no deserto, jejum secreto e envio em oração como desejo rendido.",
+    "evidence": [
+      "Mateus 4:4",
+      "Mateus 6:18",
+      "Atos 13:2"
+    ],
+    "type": "true_false",
+    "question": "Palavra no deserto, jejum diante do Pai e envio em oração aparecem juntos nestes trechos.",
+    "prompt": "Palavra no deserto, jejum diante do Pai e envio em oração aparecem juntos nestes trechos.",
+    "cue": "Palavra no deserto, jejum diante do Pai e envio em oração aparecem juntos nestes trechos.",
+    "feedbackCorrect": "Certo: os três eixos da trilha estão nos textos.",
+    "feedbackWrong": {
+      "false": "Mateus 4:4, 6:18 e Atos 13:2 sustentam esse conjunto."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus. Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá. Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-04-desafio",
+    "id": "jejum-cam-jj-04-desafio-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 4:4; 6:18; Atos 13:2",
+    "learningObjective": "Reunir Palavra no deserto, jejum secreto e envio em oração como desejo rendido.",
+    "evidence": [
+      "Mateus 4:4",
+      "Mateus 6:18",
+      "Atos 13:2"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 6:18, toque a palavra que falta em \"mas somente a teu ___, que está em secreto\"?",
+    "prompt": "Em Mateus 6:18, toque a palavra que falta em \"mas somente a teu ___, que está em secreto\"?",
+    "cue": "Em Mateus 6:18, toque a palavra que falta em \"mas somente a teu ___, que está em secreto\"?",
+    "feedbackCorrect": "Exato: o jejum se dirige ao Pai.",
+    "feedbackWrong": {
+      "b": "Pão é de Mateus 4:4, não o vocativo aqui.",
+      "c": "Barnabé é de Atos 13, não o destinatário do jejum."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pai"
+      },
+      {
+        "id": "b",
+        "text": "pão"
+      },
+      {
+        "id": "c",
+        "text": "Barnabé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus. Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá. Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-04-desafio",
+    "id": "jejum-cam-jj-04-desafio-02",
+    "template": "mas somente a teu ___, que está em secreto"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 4:4; 6:18; Atos 13:2",
+    "learningObjective": "Reunir Palavra no deserto, jejum secreto e envio em oração como desejo rendido.",
+    "evidence": [
+      "Mateus 4:4",
+      "Mateus 6:18",
+      "Atos 13:2"
+    ],
+    "type": "choice",
+    "question": "Como os três trechos se encadeiam na prática do jejum?",
+    "prompt": "Como os três trechos se encadeiam na prática do jejum?",
+    "cue": "Como os três trechos se encadeiam na prática do jejum?",
+    "feedbackCorrect": "Certo: a Palavra governa o desejo; o Pai vê; o Espírito envia.",
+    "feedbackWrong": {
+      "b": "Mateus 4 não autoriza o atalho do pão contra a Palavra.",
+      "c": "Mateus 6 não troca o Pai pela plateia.",
+      "d": "Atos 13 não separa o Espírito do jejum da igreja."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A Palavra disciplina o desejo; o secreto guarda; o Espírito envia."
+      },
+      {
+        "id": "b",
+        "text": "A fome autoriza ignorar a Palavra no deserto."
+      },
+      {
+        "id": "c",
+        "text": "O jejum só vale se os homens o virem."
+      },
+      {
+        "id": "d",
+        "text": "O Espírito envia à parte de qualquer oração da igreja."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus. Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá. Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-04-desafio",
+    "id": "jejum-cam-jj-04-desafio-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 4:4; 6:18; Atos 13:2",
+    "learningObjective": "Reunir Palavra no deserto, jejum secreto e envio em oração como desejo rendido.",
+    "evidence": [
+      "Mateus 4:4",
+      "Mateus 6:18",
+      "Atos 13:2"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Mateus 4:4, 6:18 e Atos 13:2?",
+    "prompt": "Como se encadeiam os eventos de Mateus 4:4, 6:18 e Atos 13:2?",
+    "cue": "Como se encadeiam os eventos de Mateus 4:4, 6:18 e Atos 13:2?",
+    "feedbackCorrect": "Certo: Palavra sustenta, Pai vê, Espírito separa.",
+    "feedbackWrong": {
+      "b": "O Pai secreto vem depois da Palavra no deserto.",
+      "c": "O envio do Espírito conclui o movimento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "a Palavra define a vida além do pão"
+      },
+      {
+        "id": "b",
+        "text": "o jejum se esconde no Pai que vê"
+      },
+      {
+        "id": "c",
+        "text": "o Espírito Santo separa para a obra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus. Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá. Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-04-desafio",
+    "id": "jejum-cam-jj-04-desafio-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 4:4; 6:18; Atos 13:2",
+    "learningObjective": "Reunir Palavra no deserto, jejum secreto e envio em oração como desejo rendido.",
+    "evidence": [
+      "Mateus 4:4",
+      "Mateus 6:18",
+      "Atos 13:2"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Separai-me a Barnabé e a Saulo para a ___.\"",
+    "prompt": "Complete: \"Separai-me a Barnabé e a Saulo para a ___.\"",
+    "cue": "Complete: \"Separai-me a Barnabé e a Saulo para a ___.\"",
+    "feedbackCorrect": "Certo: a obra é o destino do chamado.",
+    "feedbackWrong": {
+      "b": "Pai é o vocativo de Mateus 6, não esta lacuna.",
+      "c": "Homem é o sujeito de Mateus 4:4, não o chamado aqui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "obra"
+      },
+      {
+        "id": "b",
+        "text": "Pai"
+      },
+      {
+        "id": "c",
+        "text": "homem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus. Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá. Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-04-desafio",
+    "id": "jejum-cam-jj-04-desafio-05",
+    "template": "Separai-me a Barnabé e a Saulo para a ___."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Mateus 4:4; 6:18; Atos 13:2",
+    "learningObjective": "Reunir Palavra no deserto, jejum secreto e envio em oração como desejo rendido.",
+    "evidence": [
+      "Mateus 4:4",
+      "Mateus 6:18",
+      "Atos 13:2"
+    ],
+    "type": "connect",
+    "question": "O que a junção de Mateus 4:4, 6:18 e Atos 13:2 comunica que se liga a este contexto?",
+    "prompt": "O que a junção de Mateus 4:4, 6:18 e Atos 13:2 comunica que se liga a este contexto?",
+    "cue": "O que a junção de Mateus 4:4, 6:18 e Atos 13:2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o desejo se rende na Palavra, no secreto e no envio.",
+    "feedbackWrong": {
+      "b": "O secreto não cancela a missão; prepara-a.",
+      "c": "A Palavra não compete com o Espírito; os une."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Desejo rendido que envia"
+      },
+      {
+        "id": "b",
+        "text": "Secreto contra a missão"
+      },
+      {
+        "id": "c",
+        "text": "Palavra contra o Espírito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus. Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá. Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-04-desafio",
+    "id": "jejum-cam-jj-04-desafio-06",
+    "passageA": {
+      "ref": "Atos 13:2",
+      "text": "Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Desejo rendido: Palavra no deserto, jejum secreto e envio em oração."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 4:4; 6:18; Atos 13:2",
+    "learningObjective": "Reunir Palavra no deserto, jejum secreto e envio em oração como desejo rendido.",
+    "evidence": [
+      "Mateus 4:4",
+      "Mateus 6:18",
+      "Atos 13:2"
+    ],
+    "type": "true_false",
+    "question": "Desejo rendido une Palavra no deserto, jejum secreto e envio em oração.",
+    "prompt": "Desejo rendido une Palavra no deserto, jejum secreto e envio em oração.",
+    "cue": "Desejo rendido une Palavra no deserto, jejum secreto e envio em oração.",
+    "feedbackCorrect": "Certo: essa é a síntese teológica dos três textos.",
+    "feedbackWrong": {
+      "false": "Os três trechos sustentam Palavra, secreto e envio."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus. Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá. Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-04-desafio",
+    "id": "jejum-pro-jj-04-desafio-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 4:4; 6:18; Atos 13:2",
+    "learningObjective": "Reunir Palavra no deserto, jejum secreto e envio em oração como desejo rendido.",
+    "evidence": [
+      "Mateus 4:4",
+      "Mateus 6:18",
+      "Atos 13:2"
+    ],
+    "type": "tap",
+    "question": "Em Mateus 4:4, toque a palavra que falta em \"de toda ___ que sai da boca de Deus\"?",
+    "prompt": "Em Mateus 4:4, toque a palavra que falta em \"de toda ___ que sai da boca de Deus\"?",
+    "cue": "Em Mateus 4:4, toque a palavra que falta em \"de toda ___ que sai da boca de Deus\"?",
+    "feedbackCorrect": "Exato: toda palavra que sai da boca de Deus.",
+    "feedbackWrong": {
+      "b": "Retribuirá é o verbo de Mateus 6:18.",
+      "c": "Jejuavam descreve a igreja em Atos 13:2."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "palavra"
+      },
+      {
+        "id": "b",
+        "text": "retribuirá"
+      },
+      {
+        "id": "c",
+        "text": "jejuavam"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus. Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá. Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-04-desafio",
+    "id": "jejum-pro-jj-04-desafio-02",
+    "template": "de toda ___ que sai da boca de Deus"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 4:4; 6:18; Atos 13:2",
+    "learningObjective": "Reunir Palavra no deserto, jejum secreto e envio em oração como desejo rendido.",
+    "evidence": [
+      "Mateus 4:4",
+      "Mateus 6:18",
+      "Atos 13:2"
+    ],
+    "type": "choice",
+    "question": "Qual síntese teológica estes três textos sustentam sobre o jejum?",
+    "prompt": "Qual síntese teológica estes três textos sustentam sobre o jejum?",
+    "cue": "Qual síntese teológica estes três textos sustentam sobre o jejum?",
+    "feedbackCorrect": "Certo: jejum rende o desejo a Deus, em secreto, para a obra.",
+    "feedbackWrong": {
+      "b": "O deserto não é autonomia; é dependência da Palavra.",
+      "c": "O secreto não anula o envio público da igreja.",
+      "d": "O Espírito não dispensa o jejum; fala no meio dele."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jejuar é render o desejo a Deus e ficar disponível à obra."
+      },
+      {
+        "id": "b",
+        "text": "Jejuar no deserto é independência diante da Palavra."
+      },
+      {
+        "id": "c",
+        "text": "O jejum secreto cancela qualquer envio da igreja."
+      },
+      {
+        "id": "d",
+        "text": "O Espírito Santo substitui jejum e oração da comunidade."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus. Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá. Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-04-desafio",
+    "id": "jejum-pro-jj-04-desafio-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 4:4; 6:18; Atos 13:2",
+    "learningObjective": "Reunir Palavra no deserto, jejum secreto e envio em oração como desejo rendido.",
+    "evidence": [
+      "Mateus 4:4",
+      "Mateus 6:18",
+      "Atos 13:2"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Mateus 4:4, 6:18 e Atos 13:2?",
+    "prompt": "Qual sequência revela o sentido de Mateus 4:4, 6:18 e Atos 13:2?",
+    "cue": "Qual sequência revela o sentido de Mateus 4:4, 6:18 e Atos 13:2?",
+    "feedbackCorrect": "Certo: Palavra governa, secreto guarda, Espírito envia.",
+    "feedbackWrong": {
+      "b": "O secreto protege o jejum depois da Palavra.",
+      "c": "O envio é o fruto, não o primeiro passo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "a Palavra governa a fome no deserto"
+      },
+      {
+        "id": "b",
+        "text": "o jejum se esconde no Pai, não na plateia"
+      },
+      {
+        "id": "c",
+        "text": "a igreja que jejua ouve o Espírito e envia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus. Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá. Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-04-desafio",
+    "id": "jejum-pro-jj-04-desafio-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 4:4; 6:18; Atos 13:2",
+    "learningObjective": "Reunir Palavra no deserto, jejum secreto e envio em oração como desejo rendido.",
+    "evidence": [
+      "Mateus 4:4",
+      "Mateus 6:18",
+      "Atos 13:2"
+    ],
+    "type": "complete",
+    "question": "Complete: \"Enquanto eles ministravam perante o Senhor e ___.\"",
+    "prompt": "Complete: \"Enquanto eles ministravam perante o Senhor e ___.\"",
+    "cue": "Complete: \"Enquanto eles ministravam perante o Senhor e ___.\"",
+    "feedbackCorrect": "Certo: ministravam e jejuavam quando o Espírito falou.",
+    "feedbackWrong": {
+      "b": "Palavra é de Mateus 4:4, não este verbo.",
+      "c": "Rosto se lava em Mateus 6, não nesta frase."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "jejuavam"
+      },
+      {
+        "id": "b",
+        "text": "palavra"
+      },
+      {
+        "id": "c",
+        "text": "rosto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus. Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá. Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-04-desafio",
+    "id": "jejum-pro-jj-04-desafio-05",
+    "template": "Enquanto eles ministravam perante o Senhor e ___."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Mateus 4:4; 6:18; Atos 13:2",
+    "learningObjective": "Reunir Palavra no deserto, jejum secreto e envio em oração como desejo rendido.",
+    "evidence": [
+      "Mateus 4:4",
+      "Mateus 6:18",
+      "Atos 13:2"
+    ],
+    "type": "connect",
+    "question": "O que Mateus 4:4, 6:18 e Atos 13:2 comunicam que se liga a este contexto?",
+    "prompt": "O que Mateus 4:4, 6:18 e Atos 13:2 comunicam que se liga a este contexto?",
+    "cue": "O que Mateus 4:4, 6:18 e Atos 13:2 comunicam que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Palavra, secreto e envio formam o desejo rendido.",
+    "feedbackWrong": {
+      "b": "O pão não é o senhor do jejum.",
+      "c": "A plateia não é o senhor do jejum."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Palavra, secreto e envio"
+      },
+      {
+        "id": "b",
+        "text": "Pão como senhor do jejum"
+      },
+      {
+        "id": "c",
+        "text": "Plateia como senhor do jejum"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Então foi levado Jesus pelo Espírito ao deserto, para ser tentado pelo Diabo. Depois de jejuar quarenta dias e quarenta noites, teve fome. Chegando o tentador, disse-lhe: Se és Filho de Deus, manda que estas pedras se tornem em pães. Mas Jesus respondeu: Está escrito: Não só de pão viverá o homem, mas de toda palavra que sai da boca de Deus. Quando jejuardes, não tomeis um ar triste, como os hipócritas; porque eles desfiguram os seus rostos, para fazer ver aos homens que estão jejuando; em verdade vos digo que já receberam a sua recompensa. Tu, porém, quando jejuas, unge a cabeça e lava o rosto, para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá. Enquanto eles ministravam perante o Senhor e jejuavam, disse-lhes o Espírito Santo: Separai-me a Barnabé e a Saulo para a obra a que os tenho chamado. Então, depois que jejuaram, oraram, e lhes impuseram as mãos, os despediram.",
+    "trail": "jejum",
+    "section": "jj-04-desafio",
+    "id": "jejum-pro-jj-04-desafio-06",
+    "passageA": {
+      "ref": "Mateus 6:18",
+      "text": "para não mostrar aos homens que jejuas, mas somente a teu Pai, que está em secreto; e teu Pai, que vê em secreto, te retribuirá."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Desejo rendido: Palavra no deserto, jejum secreto e envio em oração."
+    }
+  }
+]

@@ -1,0 +1,2207 @@
+[
+  {
+    "verseRef": "Mateus 16:18",
+    "learningObjective": "Reconhecer que Jesus promete edificar a sua igreja, e que as portas do Hades não prevalecerão contra ela.",
+    "evidence": [
+      "Mateus 16:18"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela.",
+    "section": "hi-01-eras",
+    "difficulty": "semente",
+    "skill": "observe",
+    "type": "true_false",
+    "id": "historia-igreja-sem-hi-01-eras-01",
+    "question": "Jesus promete: sobre esta pedra edificarei a minha igreja.",
+    "feedbackCorrect": "Certo: Jesus mesmo promete edificar a sua igreja.",
+    "feedbackWrong": {
+      "false": "Releia Mateus 16:18: o sujeito de edificarei é Jesus."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "prompt": "Jesus promete: sobre esta pedra edificarei a minha igreja.",
+    "cue": "Jesus promete: sobre esta pedra edificarei a minha igreja.",
+    "correctAnswer": "true",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18",
+    "learningObjective": "Reconhecer que Jesus promete edificar a sua igreja, e que as portas do Hades não prevalecerão contra ela.",
+    "evidence": [
+      "Mateus 16:18"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela.",
+    "section": "hi-01-eras",
+    "difficulty": "semente",
+    "skill": "observe",
+    "type": "tap",
+    "id": "historia-igreja-sem-hi-01-eras-02",
+    "question": "Em Mateus 16:18, toque a palavra que falta em \"e sobre esta ___ edificarei a minha igreja\"?",
+    "feedbackCorrect": "Exato: a igreja é edificada sobre esta pedra.",
+    "feedbackWrong": {
+      "a": "Pedro está no versículo, mas não nesta lacuna.",
+      "c": "Hades aparece depois, nas portas que não prevalecem."
+    },
+    "template": "Também eu te digo que tu és Pedro, e sobre esta ___ edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pedro"
+      },
+      {
+        "id": "b",
+        "text": "pedra"
+      },
+      {
+        "id": "c",
+        "text": "Hades"
+      }
+    ],
+    "correctOptionId": "b",
+    "prompt": "Em Mateus 16:18, toque a palavra que falta em \"e sobre esta ___ edificarei a minha igreja\"?",
+    "cue": "Em Mateus 16:18, toque a palavra que falta em \"e sobre esta ___ edificarei a minha igreja\"?",
+    "correctAnswer": "b",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18",
+    "learningObjective": "Reconhecer que Jesus promete edificar a sua igreja, e que as portas do Hades não prevalecerão contra ela.",
+    "evidence": [
+      "Mateus 16:18"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela.",
+    "section": "hi-01-eras",
+    "difficulty": "semente",
+    "skill": "observe",
+    "type": "choice",
+    "id": "historia-igreja-sem-hi-01-eras-03",
+    "question": "Segundo Mateus 16:18, quem edificará a igreja?",
+    "feedbackCorrect": "Certo: o verbo é edificarei — Jesus é quem constrói.",
+    "feedbackWrong": {
+      "a": "Pedro é nomeado, mas não é o sujeito de edificarei.",
+      "b": "O Hades é o adversário, não o construtor.",
+      "d": "O texto não transfere a edificação às portas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pedro, por iniciativa própria."
+      },
+      {
+        "id": "b",
+        "text": "O Hades, ao abrir suas portas."
+      },
+      {
+        "id": "c",
+        "text": "Jesus, que diz: edificarei a minha igreja."
+      },
+      {
+        "id": "d",
+        "text": "As portas, que prevalecem contra ela."
+      }
+    ],
+    "correctOptionId": "c",
+    "prompt": "Segundo Mateus 16:18, quem edificará a igreja?",
+    "cue": "Segundo Mateus 16:18, quem edificará a igreja?",
+    "correctAnswer": "c",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18",
+    "learningObjective": "Reconhecer que Jesus promete edificar a sua igreja, e que as portas do Hades não prevalecerão contra ela.",
+    "evidence": [
+      "Mateus 16:18"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela.",
+    "section": "hi-01-eras",
+    "difficulty": "semente",
+    "skill": "observe",
+    "type": "order",
+    "id": "historia-igreja-sem-hi-01-eras-04",
+    "question": "Qual sequência mostra a ordem dos fatos em Mateus 16:18?",
+    "feedbackCorrect": "Certo: Pedro, a pedra e a igreja, depois o Hades que não vence.",
+    "feedbackWrong": {
+      "b": "Esse trecho não é o primeiro no versículo.",
+      "c": "As portas do Hades vêm no fim da frase."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Também eu te digo que tu és Pedro"
+      },
+      {
+        "id": "b",
+        "text": "e sobre esta pedra edificarei a minha igreja"
+      },
+      {
+        "id": "c",
+        "text": "e as portas do Hades não prevalecerão contra ela"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Mateus 16:18?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Mateus 16:18?",
+    "correctAnswer": "a",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18",
+    "learningObjective": "Reconhecer que Jesus promete edificar a sua igreja, e que as portas do Hades não prevalecerão contra ela.",
+    "evidence": [
+      "Mateus 16:18"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela.",
+    "section": "hi-01-eras",
+    "difficulty": "semente",
+    "skill": "observe",
+    "type": "complete",
+    "id": "historia-igreja-sem-hi-01-eras-05",
+    "question": "Complete Mateus 16:18: e as portas do ___ não prevalecerão contra ela.",
+    "feedbackCorrect": "Certo: as portas do Hades não prevalecerão.",
+    "feedbackWrong": {
+      "a": "A igreja é o que Jesus edifica, não o que está nesta lacuna.",
+      "b": "Pedra é o fundamento citado antes, não aqui."
+    },
+    "template": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do ___ não prevalecerão contra ela.",
+    "options": [
+      {
+        "id": "a",
+        "text": "igreja"
+      },
+      {
+        "id": "b",
+        "text": "pedra"
+      },
+      {
+        "id": "c",
+        "text": "Hades"
+      }
+    ],
+    "correctOptionId": "c",
+    "prompt": "Complete Mateus 16:18: e as portas do ___ não prevalecerão contra ela.",
+    "cue": "Complete Mateus 16:18: e as portas do ___ não prevalecerão contra ela.",
+    "correctAnswer": "c",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18",
+    "learningObjective": "Reconhecer que Jesus promete edificar a sua igreja, e que as portas do Hades não prevalecerão contra ela.",
+    "evidence": [
+      "Mateus 16:18"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela.",
+    "section": "hi-01-eras",
+    "difficulty": "semente",
+    "skill": "observe",
+    "type": "connect",
+    "id": "historia-igreja-sem-hi-01-eras-06",
+    "question": "O que Mateus 16:18 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a história da igreja começa na promessa de Jesus.",
+    "feedbackWrong": {
+      "a": "O texto não diz que o Hades já venceu.",
+      "c": "Pedro não substitui Jesus como construtor."
+    },
+    "passageA": {
+      "ref": "Mateus 16:18",
+      "text": "sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A história da igreja começa na promessa de Jesus: ele edifica, e o Hades não vence."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Hades já derrotou a igreja"
+      },
+      {
+        "id": "b",
+        "text": "Jesus edifica a igreja"
+      },
+      {
+        "id": "c",
+        "text": "Pedro constrói sozinho"
+      }
+    ],
+    "correctOptionId": "b",
+    "prompt": "O que Mateus 16:18 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 16:18 comunica que se liga a este contexto?",
+    "correctAnswer": "b",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18",
+    "learningObjective": "Reconhecer que Jesus promete edificar a sua igreja, e que as portas do Hades não prevalecerão contra ela.",
+    "evidence": [
+      "Mateus 16:18"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela.",
+    "section": "hi-01-eras",
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "type": "true_false",
+    "id": "historia-igreja-cam-hi-01-eras-01",
+    "question": "Mateus 16:18 afirma que as portas do Hades prevalecerão contra a igreja.",
+    "feedbackCorrect": "Certo: o texto diz que as portas do Hades NÃO prevalecerão.",
+    "feedbackWrong": {
+      "true": "O texto diz que as portas do Hades NÃO prevalecerão."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "prompt": "Mateus 16:18 afirma que as portas do Hades prevalecerão contra a igreja.",
+    "cue": "Mateus 16:18 afirma que as portas do Hades prevalecerão contra a igreja.",
+    "correctAnswer": "false",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18",
+    "learningObjective": "Reconhecer que Jesus promete edificar a sua igreja, e que as portas do Hades não prevalecerão contra ela.",
+    "evidence": [
+      "Mateus 16:18"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela.",
+    "section": "hi-01-eras",
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "type": "tap",
+    "id": "historia-igreja-cam-hi-01-eras-02",
+    "question": "Em Mateus 16:18, toque a palavra que falta em \"edificarei a minha ___; e as portas do Hades não prevalecerão contra ela\"?",
+    "feedbackCorrect": "Exato: o que Jesus edifica é a sua igreja.",
+    "feedbackWrong": {
+      "a": "Pedro é nomeado antes, não nesta lacuna.",
+      "b": "Portas vem depois, ligadas ao Hades."
+    },
+    "template": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha ___; e as portas do Hades não prevalecerão contra ela.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pedro"
+      },
+      {
+        "id": "b",
+        "text": "portas"
+      },
+      {
+        "id": "c",
+        "text": "igreja"
+      }
+    ],
+    "correctOptionId": "c",
+    "prompt": "Em Mateus 16:18, toque a palavra que falta em \"edificarei a minha ___; e as portas do Hades não prevalecerão contra ela\"?",
+    "cue": "Em Mateus 16:18, toque a palavra que falta em \"edificarei a minha ___; e as portas do Hades não prevalecerão contra ela\"?",
+    "correctAnswer": "c",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18",
+    "learningObjective": "Reconhecer que Jesus promete edificar a sua igreja, e que as portas do Hades não prevalecerão contra ela.",
+    "evidence": [
+      "Mateus 16:18"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela.",
+    "section": "hi-01-eras",
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "type": "choice",
+    "id": "historia-igreja-cam-hi-01-eras-03",
+    "question": "O que o futuro edificarei indica na relação entre Jesus e a igreja?",
+    "feedbackCorrect": "Certo: a igreja existe como obra contínua de Cristo.",
+    "feedbackWrong": {
+      "b": "O texto não entrega a Pedro a edificação autônoma.",
+      "c": "Hades é o que não vence, não o que constrói.",
+      "d": "A promessa aponta para obra de Jesus, não para fim da igreja."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A igreja é obra de Jesus, não invenção humana."
+      },
+      {
+        "id": "b",
+        "text": "Pedro substitui Jesus como construtor independente."
+      },
+      {
+        "id": "c",
+        "text": "O Hades passa a ser o arquiteto da igreja."
+      },
+      {
+        "id": "d",
+        "text": "A igreja já acabou e não precisa de Cristo."
+      }
+    ],
+    "correctOptionId": "a",
+    "prompt": "O que o futuro edificarei indica na relação entre Jesus e a igreja?",
+    "cue": "O que o futuro edificarei indica na relação entre Jesus e a igreja?",
+    "correctAnswer": "a",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18",
+    "learningObjective": "Reconhecer que Jesus promete edificar a sua igreja, e que as portas do Hades não prevalecerão contra ela.",
+    "evidence": [
+      "Mateus 16:18"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela.",
+    "section": "hi-01-eras",
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "type": "order",
+    "id": "historia-igreja-cam-hi-01-eras-04",
+    "question": "Como se encadeiam os eventos de Mateus 16:18?",
+    "feedbackCorrect": "Certo: a palavra a Pedro, a edificação, depois a recusa do Hades.",
+    "feedbackWrong": {
+      "a": "Esse trecho não abre o versículo.",
+      "c": "A recusa do Hades fecha a frase, não a inicia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "e as portas do Hades não prevalecerão contra ela"
+      },
+      {
+        "id": "b",
+        "text": "Também eu te digo que tu és Pedro"
+      },
+      {
+        "id": "c",
+        "text": "e sobre esta pedra edificarei a minha igreja"
+      }
+    ],
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ],
+    "correctOptionId": "b",
+    "prompt": "Como se encadeiam os eventos de Mateus 16:18?",
+    "cue": "Como se encadeiam os eventos de Mateus 16:18?",
+    "correctAnswer": "b",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18",
+    "learningObjective": "Reconhecer que Jesus promete edificar a sua igreja, e que as portas do Hades não prevalecerão contra ela.",
+    "evidence": [
+      "Mateus 16:18"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela.",
+    "section": "hi-01-eras",
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "type": "complete",
+    "id": "historia-igreja-cam-hi-01-eras-05",
+    "question": "Complete Mateus 16:18: e as portas do Hades não ___ contra ela.",
+    "feedbackCorrect": "Certo: não prevalecerão — o Hades não vence.",
+    "feedbackWrong": {
+      "a": "Edificarei é o verbo de Jesus, não desta lacuna.",
+      "c": "Digo pertence ao início do versículo."
+    },
+    "template": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não ___ contra ela.",
+    "options": [
+      {
+        "id": "a",
+        "text": "edificarei"
+      },
+      {
+        "id": "b",
+        "text": "prevalecerão"
+      },
+      {
+        "id": "c",
+        "text": "digo"
+      }
+    ],
+    "correctOptionId": "b",
+    "prompt": "Complete Mateus 16:18: e as portas do Hades não ___ contra ela.",
+    "cue": "Complete Mateus 16:18: e as portas do Hades não ___ contra ela.",
+    "correctAnswer": "b",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18",
+    "learningObjective": "Reconhecer que Jesus promete edificar a sua igreja, e que as portas do Hades não prevalecerão contra ela.",
+    "evidence": [
+      "Mateus 16:18"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela.",
+    "section": "hi-01-eras",
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "type": "connect",
+    "id": "historia-igreja-cam-hi-01-eras-06",
+    "question": "O que Mateus 16:18 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o Hades não anula a obra de Cristo.",
+    "feedbackWrong": {
+      "b": "A igreja não depende de vencer o Hades por si.",
+      "c": "O texto não descreve derrota final da igreja."
+    },
+    "passageA": {
+      "ref": "Mateus 16:18",
+      "text": "e as portas do Hades não prevalecerão contra ela."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Ele edifica, e o Hades não vence."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Hades não vence a igreja"
+      },
+      {
+        "id": "b",
+        "text": "Igreja vence só por força"
+      },
+      {
+        "id": "c",
+        "text": "Promessa já foi cancelada"
+      }
+    ],
+    "correctOptionId": "a",
+    "prompt": "O que Mateus 16:18 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 16:18 comunica que se liga a este contexto?",
+    "correctAnswer": "a",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18",
+    "learningObjective": "Reconhecer que Jesus promete edificar a sua igreja, e que as portas do Hades não prevalecerão contra ela.",
+    "evidence": [
+      "Mateus 16:18"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela.",
+    "section": "hi-01-eras",
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "type": "true_false",
+    "id": "historia-igreja-pro-hi-01-eras-01",
+    "question": "A sobrevivência da igreja, em Mateus 16:18, depende de Jesus edificá-la, não da vitória do Hades.",
+    "feedbackCorrect": "Certo: quem edifica é Jesus; o Hades não prevalece.",
+    "feedbackWrong": {
+      "false": "O texto contrapõe a obra de Cristo à impotência do Hades."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "prompt": "A sobrevivência da igreja, em Mateus 16:18, depende de Jesus edificá-la, não da vitória do Hades.",
+    "cue": "A sobrevivência da igreja, em Mateus 16:18, depende de Jesus edificá-la, não da vitória do Hades.",
+    "correctAnswer": "true",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18",
+    "learningObjective": "Reconhecer que Jesus promete edificar a sua igreja, e que as portas do Hades não prevalecerão contra ela.",
+    "evidence": [
+      "Mateus 16:18"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela.",
+    "section": "hi-01-eras",
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "type": "tap",
+    "id": "historia-igreja-pro-hi-01-eras-02",
+    "question": "Em Mateus 16:18, toque a palavra que falta em \"sobre esta pedra ___ a minha igreja\"?",
+    "feedbackCorrect": "Exato: edificarei — a obra é de Jesus.",
+    "feedbackWrong": {
+      "b": "Prevalecerão refere-se às portas do Hades.",
+      "c": "Digo abre o anúncio, não esta lacuna."
+    },
+    "template": "Também eu te digo que tu és Pedro, e sobre esta pedra ___ a minha igreja; e as portas do Hades não prevalecerão contra ela.",
+    "options": [
+      {
+        "id": "a",
+        "text": "edificarei"
+      },
+      {
+        "id": "b",
+        "text": "prevalecerão"
+      },
+      {
+        "id": "c",
+        "text": "digo"
+      }
+    ],
+    "correctOptionId": "a",
+    "prompt": "Em Mateus 16:18, toque a palavra que falta em \"sobre esta pedra ___ a minha igreja\"?",
+    "cue": "Em Mateus 16:18, toque a palavra que falta em \"sobre esta pedra ___ a minha igreja\"?",
+    "correctAnswer": "a",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18",
+    "learningObjective": "Reconhecer que Jesus promete edificar a sua igreja, e que as portas do Hades não prevalecerão contra ela.",
+    "evidence": [
+      "Mateus 16:18"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela.",
+    "section": "hi-01-eras",
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "type": "choice",
+    "id": "historia-igreja-pro-hi-01-eras-03",
+    "question": "Que leitura teológica Mateus 16:18 sustenta sobre a história da igreja?",
+    "feedbackCorrect": "Certo: a igreja atravessa eras porque Cristo a edifica.",
+    "feedbackWrong": {
+      "a": "O texto não apoia a igreja na política.",
+      "b": "As portas do Hades não prevalecem; não já venceram.",
+      "d": "A promessa não reduz a igreja a um clube humano."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A igreja dura porque conquista poder político."
+      },
+      {
+        "id": "b",
+        "text": "O Hades já venceu, e a igreja só sobrevive em memória."
+      },
+      {
+        "id": "c",
+        "text": "Cristo edifica; a igreja não cai sob o Hades."
+      },
+      {
+        "id": "d",
+        "text": "A igreja é só uma associação sem promessa divina."
+      }
+    ],
+    "correctOptionId": "c",
+    "prompt": "Que leitura teológica Mateus 16:18 sustenta sobre a história da igreja?",
+    "cue": "Que leitura teológica Mateus 16:18 sustenta sobre a história da igreja?",
+    "correctAnswer": "c",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18",
+    "learningObjective": "Reconhecer que Jesus promete edificar a sua igreja, e que as portas do Hades não prevalecerão contra ela.",
+    "evidence": [
+      "Mateus 16:18"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela.",
+    "section": "hi-01-eras",
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "type": "order",
+    "id": "historia-igreja-pro-hi-01-eras-04",
+    "question": "Qual sequência revela o sentido de Mateus 16:18?",
+    "feedbackCorrect": "Certo: anúncio, edificação por Jesus, Hades que não vence.",
+    "feedbackWrong": {
+      "a": "A recusa do Hades não é o primeiro passo do sentido.",
+      "b": "A edificação vem depois da palavra a Pedro."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "e as portas do Hades não prevalecerão contra ela"
+      },
+      {
+        "id": "b",
+        "text": "e sobre esta pedra edificarei a minha igreja"
+      },
+      {
+        "id": "c",
+        "text": "Também eu te digo que tu és Pedro"
+      }
+    ],
+    "correctOrder": [
+      "c",
+      "b",
+      "a"
+    ],
+    "correctOptionId": "c",
+    "prompt": "Qual sequência revela o sentido de Mateus 16:18?",
+    "cue": "Qual sequência revela o sentido de Mateus 16:18?",
+    "correctAnswer": "c",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18",
+    "learningObjective": "Reconhecer que Jesus promete edificar a sua igreja, e que as portas do Hades não prevalecerão contra ela.",
+    "evidence": [
+      "Mateus 16:18"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela.",
+    "section": "hi-01-eras",
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "type": "complete",
+    "id": "historia-igreja-pro-hi-01-eras-05",
+    "question": "Complete Mateus 16:18: edificarei a ___ igreja.",
+    "feedbackCorrect": "Certo: a igreja é minha — pertence a Jesus.",
+    "feedbackWrong": {
+      "a": "Esta não é a palavra da lacuna.",
+      "c": "Pedro é nome, não o possessivo da igreja."
+    },
+    "template": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a ___ igreja; e as portas do Hades não prevalecerão contra ela.",
+    "options": [
+      {
+        "id": "a",
+        "text": "esta"
+      },
+      {
+        "id": "b",
+        "text": "minha"
+      },
+      {
+        "id": "c",
+        "text": "Pedro"
+      }
+    ],
+    "correctOptionId": "b",
+    "prompt": "Complete Mateus 16:18: edificarei a ___ igreja.",
+    "cue": "Complete Mateus 16:18: edificarei a ___ igreja.",
+    "correctAnswer": "b",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18",
+    "learningObjective": "Reconhecer que Jesus promete edificar a sua igreja, e que as portas do Hades não prevalecerão contra ela.",
+    "evidence": [
+      "Mateus 16:18"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela.",
+    "section": "hi-01-eras",
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "type": "connect",
+    "id": "historia-igreja-pro-hi-01-eras-06",
+    "question": "O que Mateus 16:18 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a história da igreja nasce da promessa de Cristo.",
+    "feedbackWrong": {
+      "a": "O Hades não é o ponto de partida da igreja.",
+      "b": "Pedro não inaugura a igreja sem a promessa de Jesus."
+    },
+    "passageA": {
+      "ref": "Mateus 16:18",
+      "text": "sobre esta pedra edificarei a minha igreja"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A história da igreja começa na promessa de Jesus: ele edifica, e o Hades não vence."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Hades funda a igreja"
+      },
+      {
+        "id": "b",
+        "text": "Pedro inicia sem Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Promessa de Cristo edifica"
+      }
+    ],
+    "correctOptionId": "c",
+    "prompt": "O que Mateus 16:18 comunica que se liga a este contexto?",
+    "cue": "O que Mateus 16:18 comunica que se liga a este contexto?",
+    "correctAnswer": "c",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Perceber que a fé já foi confiada de uma vez aos santos, e que a igreja é chamada a pelejar por ela.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-02-credos",
+    "difficulty": "semente",
+    "skill": "observe",
+    "type": "true_false",
+    "id": "historia-igreja-sem-hi-02-credos-01",
+    "question": "Judas exorta a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "feedbackCorrect": "Certo: essa é a exortação explícita de Judas 1:3.",
+    "feedbackWrong": {
+      "false": "Releia Judas 1:3: a fé foi confiada de uma vez aos santos."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "prompt": "Judas exorta a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "cue": "Judas exorta a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "correctAnswer": "true",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Perceber que a fé já foi confiada de uma vez aos santos, e que a igreja é chamada a pelejar por ela.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-02-credos",
+    "difficulty": "semente",
+    "skill": "observe",
+    "type": "tap",
+    "id": "historia-igreja-sem-hi-02-credos-02",
+    "question": "Em Judas 1:3, toque a palavra que falta em \"exortando-vos a ___ pela fé uma vez para sempre confiada aos santos\"?",
+    "feedbackCorrect": "Exato: a carta chama a pelejar pela fé.",
+    "feedbackWrong": {
+      "a": "Escrever é o plano inicial, não esta lacuna.",
+      "c": "Confiada descreve a fé, não o verbo da exortação."
+    },
+    "template": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a ___ pela fé uma vez para sempre confiada aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "escrever"
+      },
+      {
+        "id": "b",
+        "text": "pelejar"
+      },
+      {
+        "id": "c",
+        "text": "confiada"
+      }
+    ],
+    "correctOptionId": "b",
+    "prompt": "Em Judas 1:3, toque a palavra que falta em \"exortando-vos a ___ pela fé uma vez para sempre confiada aos santos\"?",
+    "cue": "Em Judas 1:3, toque a palavra que falta em \"exortando-vos a ___ pela fé uma vez para sempre confiada aos santos\"?",
+    "correctAnswer": "b",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Perceber que a fé já foi confiada de uma vez aos santos, e que a igreja é chamada a pelejar por ela.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-02-credos",
+    "difficulty": "semente",
+    "skill": "observe",
+    "type": "choice",
+    "id": "historia-igreja-sem-hi-02-credos-03",
+    "question": "O que Judas 1:3 diz sobre a fé?",
+    "feedbackCorrect": "Certo: a fé já foi confiada de uma vez aos santos.",
+    "feedbackWrong": {
+      "a": "O texto não fala de fé ainda por inventar.",
+      "c": "A salvação comum não substitui a fé confiada.",
+      "d": "A carta exorta a pelejar, não a abandonar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ainda seria inventada pelos concílios futuros."
+      },
+      {
+        "id": "b",
+        "text": "Foi uma vez para sempre confiada aos santos."
+      },
+      {
+        "id": "c",
+        "text": "Pertence só à diligência do autor, não aos santos."
+      },
+      {
+        "id": "d",
+        "text": "Deve ser deixada de lado em favor da carta."
+      }
+    ],
+    "correctOptionId": "b",
+    "prompt": "O que Judas 1:3 diz sobre a fé?",
+    "cue": "O que Judas 1:3 diz sobre a fé?",
+    "correctAnswer": "b",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Perceber que a fé já foi confiada de uma vez aos santos, e que a igreja é chamada a pelejar por ela.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-02-credos",
+    "difficulty": "semente",
+    "skill": "observe",
+    "type": "order",
+    "id": "historia-igreja-sem-hi-02-credos-04",
+    "question": "Qual sequência mostra a ordem dos fatos em Judas 1:3?",
+    "feedbackCorrect": "Certo: diligência, obrigação da carta, depois pelejar pela fé.",
+    "feedbackWrong": {
+      "b": "A exortação a pelejar fecha o versículo.",
+      "c": "A obrigação da carta vem no meio, não no fim."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação"
+      },
+      {
+        "id": "b",
+        "text": "exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos"
+      },
+      {
+        "id": "c",
+        "text": "vi-me obrigado a dirigir-vos esta carta"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "c",
+      "b"
+    ],
+    "correctOptionId": "a",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Judas 1:3?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Judas 1:3?",
+    "correctAnswer": "a",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Perceber que a fé já foi confiada de uma vez aos santos, e que a igreja é chamada a pelejar por ela.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-02-credos",
+    "difficulty": "semente",
+    "skill": "observe",
+    "type": "complete",
+    "id": "historia-igreja-sem-hi-02-credos-05",
+    "question": "Complete Judas 1:3: fé uma vez para sempre confiada aos ___.",
+    "feedbackCorrect": "Certo: a fé foi confiada aos santos.",
+    "feedbackWrong": {
+      "a": "Amados é o vocativo, não o fim da frase.",
+      "c": "Carta é o meio, não quem recebe a fé."
+    },
+    "template": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Amados"
+      },
+      {
+        "id": "b",
+        "text": "santos"
+      },
+      {
+        "id": "c",
+        "text": "carta"
+      }
+    ],
+    "correctOptionId": "b",
+    "prompt": "Complete Judas 1:3: fé uma vez para sempre confiada aos ___.",
+    "cue": "Complete Judas 1:3: fé uma vez para sempre confiada aos ___.",
+    "correctAnswer": "b",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Perceber que a fé já foi confiada de uma vez aos santos, e que a igreja é chamada a pelejar por ela.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-02-credos",
+    "difficulty": "semente",
+    "skill": "observe",
+    "type": "connect",
+    "id": "historia-igreja-sem-hi-02-credos-06",
+    "question": "O que Judas 1:3 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a fé já foi dada; agora se peleja por ela.",
+    "feedbackWrong": {
+      "b": "O texto não pede fé nova.",
+      "c": "A salvação comum não anula a luta pela fé."
+    },
+    "passageA": {
+      "ref": "Judas 1:3",
+      "text": "exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Concílios e credos não inventam fé nova: pelejam pela fé já confiada de uma vez aos santos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fé já confiada aos santos"
+      },
+      {
+        "id": "b",
+        "text": "Fé nova a inventar"
+      },
+      {
+        "id": "c",
+        "text": "Salvação sem nenhuma fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "prompt": "O que Judas 1:3 comunica que se liga a este contexto?",
+    "cue": "O que Judas 1:3 comunica que se liga a este contexto?",
+    "correctAnswer": "a",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Perceber que a fé já foi confiada de uma vez aos santos, e que a igreja é chamada a pelejar por ela.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-02-credos",
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "type": "true_false",
+    "id": "historia-igreja-cam-hi-02-credos-01",
+    "question": "Judas escreve para entregar uma fé ainda inédita, que os santos ainda não haviam recebido.",
+    "feedbackCorrect": "Certo: a fé já foi confiada de uma vez; não é inédita.",
+    "feedbackWrong": {
+      "true": "O texto diz fé uma vez para sempre confiada, não fé por inventar."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "prompt": "Judas escreve para entregar uma fé ainda inédita, que os santos ainda não haviam recebido.",
+    "cue": "Judas escreve para entregar uma fé ainda inédita, que os santos ainda não haviam recebido.",
+    "correctAnswer": "false",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Perceber que a fé já foi confiada de uma vez aos santos, e que a igreja é chamada a pelejar por ela.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-02-credos",
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "type": "tap",
+    "id": "historia-igreja-cam-hi-02-credos-02",
+    "question": "Em Judas 1:3, toque a palavra que falta em \"pela fé uma vez para sempre ___ aos santos\"?",
+    "feedbackCorrect": "Exato: a fé foi confiada — já entregue.",
+    "feedbackWrong": {
+      "a": "Pelejar é o verbo da luta, não desta lacuna.",
+      "b": "Escrever descreve o plano da carta."
+    },
+    "template": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre ___ aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pelejar"
+      },
+      {
+        "id": "b",
+        "text": "escrever"
+      },
+      {
+        "id": "c",
+        "text": "confiada"
+      }
+    ],
+    "correctOptionId": "c",
+    "prompt": "Em Judas 1:3, toque a palavra que falta em \"pela fé uma vez para sempre ___ aos santos\"?",
+    "cue": "Em Judas 1:3, toque a palavra que falta em \"pela fé uma vez para sempre ___ aos santos\"?",
+    "correctAnswer": "c",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Perceber que a fé já foi confiada de uma vez aos santos, e que a igreja é chamada a pelejar por ela.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-02-credos",
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "type": "choice",
+    "id": "historia-igreja-cam-hi-02-credos-03",
+    "question": "Como se relacionam a carta de Judas e a fé já recebida?",
+    "feedbackCorrect": "Certo: a carta luta pela fé já dada, não a substitui.",
+    "feedbackWrong": {
+      "a": "O texto não autoriza inventar outro evangelho.",
+      "c": "A diligência serve à carta, não anula a fé.",
+      "d": "A salvação comum não dispensa pelejar pela fé."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A carta cria um credo inédito no lugar da fé."
+      },
+      {
+        "id": "b",
+        "text": "A carta exorta a defender a fé já confiada."
+      },
+      {
+        "id": "c",
+        "text": "A diligência do autor basta sem a fé dos santos."
+      },
+      {
+        "id": "d",
+        "text": "A salvação comum torna inútil qualquer luta."
+      }
+    ],
+    "correctOptionId": "b",
+    "prompt": "Como se relacionam a carta de Judas e a fé já recebida?",
+    "cue": "Como se relacionam a carta de Judas e a fé já recebida?",
+    "correctAnswer": "b",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Perceber que a fé já foi confiada de uma vez aos santos, e que a igreja é chamada a pelejar por ela.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-02-credos",
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "type": "order",
+    "id": "historia-igreja-cam-hi-02-credos-04",
+    "question": "Como se encadeiam os eventos de Judas 1:3?",
+    "feedbackCorrect": "Certo: vocativo e diligência, depois a carta, depois a luta pela fé.",
+    "feedbackWrong": {
+      "a": "A luta pela fé não é o primeiro movimento.",
+      "c": "A diligência precede a obrigação da carta."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos"
+      },
+      {
+        "id": "b",
+        "text": "Amados, enquanto eu empregava toda a diligência para vos escrever"
+      },
+      {
+        "id": "c",
+        "text": "vi-me obrigado a dirigir-vos esta carta"
+      }
+    ],
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ],
+    "correctOptionId": "b",
+    "prompt": "Como se encadeiam os eventos de Judas 1:3?",
+    "cue": "Como se encadeiam os eventos de Judas 1:3?",
+    "correctAnswer": "b",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Perceber que a fé já foi confiada de uma vez aos santos, e que a igreja é chamada a pelejar por ela.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-02-credos",
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "type": "complete",
+    "id": "historia-igreja-cam-hi-02-credos-05",
+    "question": "Complete Judas 1:3: escrever sobre a nossa ___ salvação.",
+    "feedbackCorrect": "Certo: a salvação é comum — compartilhada.",
+    "feedbackWrong": {
+      "b": "Toda descreve a diligência, não a salvação.",
+      "c": "Esta aponta para a carta, não para a salvação."
+    },
+    "template": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa ___ salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "comum"
+      },
+      {
+        "id": "b",
+        "text": "toda"
+      },
+      {
+        "id": "c",
+        "text": "esta"
+      }
+    ],
+    "correctOptionId": "a",
+    "prompt": "Complete Judas 1:3: escrever sobre a nossa ___ salvação.",
+    "cue": "Complete Judas 1:3: escrever sobre a nossa ___ salvação.",
+    "correctAnswer": "a",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Perceber que a fé já foi confiada de uma vez aos santos, e que a igreja é chamada a pelejar por ela.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-02-credos",
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "type": "connect",
+    "id": "historia-igreja-cam-hi-02-credos-06",
+    "question": "O que Judas 1:3 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: credos pelejam pela fé recebida, não a inventam.",
+    "feedbackWrong": {
+      "a": "O texto não autoriza dogma solto da fé.",
+      "c": "A carta não descarta a fé dos santos."
+    },
+    "passageA": {
+      "ref": "Judas 1:3",
+      "text": "pelejar pela fé uma vez para sempre confiada aos santos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Concílios e credos não inventam fé nova: pelejam pela fé já confiada."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Credo cria outra religião"
+      },
+      {
+        "id": "b",
+        "text": "Credo defende a fé dada"
+      },
+      {
+        "id": "c",
+        "text": "Carta substitui os santos"
+      }
+    ],
+    "correctOptionId": "b",
+    "prompt": "O que Judas 1:3 comunica que se liga a este contexto?",
+    "cue": "O que Judas 1:3 comunica que se liga a este contexto?",
+    "correctAnswer": "b",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Perceber que a fé já foi confiada de uma vez aos santos, e que a igreja é chamada a pelejar por ela.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-02-credos",
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "type": "true_false",
+    "id": "historia-igreja-pro-hi-02-credos-01",
+    "question": "Concílios e credos, à luz de Judas 1:3, inventam uma fé nova em vez de guardar a fé já confiada.",
+    "feedbackCorrect": "Certo: o texto pede pelejar pela fé já confiada, não inventá-la.",
+    "feedbackWrong": {
+      "true": "Judas fala de fé uma vez confiada, não de fé a criar."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "prompt": "Concílios e credos, à luz de Judas 1:3, inventam uma fé nova em vez de guardar a fé já confiada.",
+    "cue": "Concílios e credos, à luz de Judas 1:3, inventam uma fé nova em vez de guardar a fé já confiada.",
+    "correctAnswer": "false",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Perceber que a fé já foi confiada de uma vez aos santos, e que a igreja é chamada a pelejar por ela.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-02-credos",
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "type": "tap",
+    "id": "historia-igreja-pro-hi-02-credos-02",
+    "question": "Em Judas 1:3, toque a palavra que falta em \"pelejar pela ___ uma vez para sempre confiada aos santos\"?",
+    "feedbackCorrect": "Exato: o objeto da luta é a fé.",
+    "feedbackWrong": {
+      "a": "Carta é o meio, não o que se defende aqui.",
+      "c": "Salvação aparece antes, na diligência de escrever."
+    },
+    "template": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela ___ uma vez para sempre confiada aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "carta"
+      },
+      {
+        "id": "b",
+        "text": "fé"
+      },
+      {
+        "id": "c",
+        "text": "salvação"
+      }
+    ],
+    "correctOptionId": "b",
+    "prompt": "Em Judas 1:3, toque a palavra que falta em \"pelejar pela ___ uma vez para sempre confiada aos santos\"?",
+    "cue": "Em Judas 1:3, toque a palavra que falta em \"pelejar pela ___ uma vez para sempre confiada aos santos\"?",
+    "correctAnswer": "b",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Perceber que a fé já foi confiada de uma vez aos santos, e que a igreja é chamada a pelejar por ela.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-02-credos",
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "type": "choice",
+    "id": "historia-igreja-pro-hi-02-credos-03",
+    "question": "Qual leitura teológica Judas 1:3 sustenta sobre concílios e credos?",
+    "feedbackCorrect": "Certo: credos confessam a fé recebida, não a substituem.",
+    "feedbackWrong": {
+      "a": "O texto não trata o credo como revelação nova.",
+      "b": "A fé foi confiada; não é peça descartável.",
+      "d": "Pelejar não é silêncio diante do erro."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Credos revelam um evangelho inédito."
+      },
+      {
+        "id": "b",
+        "text": "A fé dos santos pode ser ignorada."
+      },
+      {
+        "id": "c",
+        "text": "Credos pelejam pela fé já confiada."
+      },
+      {
+        "id": "d",
+        "text": "Não há luta: a fé se defende sozinha."
+      }
+    ],
+    "correctOptionId": "c",
+    "prompt": "Qual leitura teológica Judas 1:3 sustenta sobre concílios e credos?",
+    "cue": "Qual leitura teológica Judas 1:3 sustenta sobre concílios e credos?",
+    "correctAnswer": "c",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Perceber que a fé já foi confiada de uma vez aos santos, e que a igreja é chamada a pelejar por ela.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-02-credos",
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "type": "order",
+    "id": "historia-igreja-pro-hi-02-credos-04",
+    "question": "Qual sequência revela o sentido de Judas 1:3?",
+    "feedbackCorrect": "Certo: salvação comum, carta necessária, fé a defender.",
+    "feedbackWrong": {
+      "a": "A luta pela fé é o desfecho, não o primeiro passo.",
+      "b": "A carta vem depois da diligência inicial."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos"
+      },
+      {
+        "id": "b",
+        "text": "vi-me obrigado a dirigir-vos esta carta"
+      },
+      {
+        "id": "c",
+        "text": "escrever sobre a nossa comum salvação"
+      }
+    ],
+    "correctOrder": [
+      "c",
+      "b",
+      "a"
+    ],
+    "correctOptionId": "c",
+    "prompt": "Qual sequência revela o sentido de Judas 1:3?",
+    "cue": "Qual sequência revela o sentido de Judas 1:3?",
+    "correctAnswer": "c",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Perceber que a fé já foi confiada de uma vez aos santos, e que a igreja é chamada a pelejar por ela.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-02-credos",
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "type": "complete",
+    "id": "historia-igreja-pro-hi-02-credos-05",
+    "question": "Complete Judas 1:3: vi-me ___ a dirigir-vos esta carta.",
+    "feedbackCorrect": "Certo: Judas viu-se obrigado — a carta é necessária.",
+    "feedbackWrong": {
+      "a": "Empregava descreve a diligência anterior.",
+      "b": "Exortando vem depois, na finalidade da carta."
+    },
+    "template": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me ___ a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "empregava"
+      },
+      {
+        "id": "b",
+        "text": "exortando-vos"
+      },
+      {
+        "id": "c",
+        "text": "obrigado"
+      }
+    ],
+    "correctOptionId": "c",
+    "prompt": "Complete Judas 1:3: vi-me ___ a dirigir-vos esta carta.",
+    "cue": "Complete Judas 1:3: vi-me ___ a dirigir-vos esta carta.",
+    "correctAnswer": "c",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Judas 1:3",
+    "learningObjective": "Perceber que a fé já foi confiada de uma vez aos santos, e que a igreja é chamada a pelejar por ela.",
+    "evidence": [
+      "Judas 1:3"
+    ],
+    "passageText": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-02-credos",
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "type": "connect",
+    "id": "historia-igreja-pro-hi-02-credos-06",
+    "question": "O que Judas 1:3 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a memória da igreja é luta pela fé recebida.",
+    "feedbackWrong": {
+      "b": "O texto não pede inovação doutrinária.",
+      "c": "A carta não dispensa os santos da fé."
+    },
+    "passageA": {
+      "ref": "Judas 1:3",
+      "text": "a fé uma vez para sempre confiada aos santos"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Concílios e credos não inventam fé nova: pelejam pela fé já confiada de uma vez aos santos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pelejar pela fé recebida"
+      },
+      {
+        "id": "b",
+        "text": "Inventar dogma de época"
+      },
+      {
+        "id": "c",
+        "text": "Dispensar os santos"
+      }
+    ],
+    "correctOptionId": "a",
+    "prompt": "O que Judas 1:3 comunica que se liga a este contexto?",
+    "cue": "O que Judas 1:3 comunica que se liga a este contexto?",
+    "correctAnswer": "a",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18; Judas 1:3",
+    "learningObjective": "Unir a promessa de Cristo que edifica a igreja com a exortação a guardar a fé uma vez confiada.",
+    "evidence": [
+      "Mateus 16:18",
+      "Judas 1:3"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela. Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-03-desafio",
+    "difficulty": "semente",
+    "skill": "observe",
+    "type": "true_false",
+    "id": "historia-igreja-sem-hi-03-desafio-01",
+    "question": "Mateus 16:18 registra que Jesus edificará a sua igreja, e Judas 1:3 chama a pelejar pela fé confiada aos santos.",
+    "feedbackCorrect": "Certo: os dois textos dizem exatamente isso.",
+    "feedbackWrong": {
+      "false": "Releia os dois: edificarei a igreja e pelejar pela fé."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "prompt": "Mateus 16:18 registra que Jesus edificará a sua igreja, e Judas 1:3 chama a pelejar pela fé confiada aos santos.",
+    "cue": "Mateus 16:18 registra que Jesus edificará a sua igreja, e Judas 1:3 chama a pelejar pela fé confiada aos santos.",
+    "correctAnswer": "true",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18; Judas 1:3",
+    "learningObjective": "Unir a promessa de Cristo que edifica a igreja com a exortação a guardar a fé uma vez confiada.",
+    "evidence": [
+      "Mateus 16:18",
+      "Judas 1:3"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela. Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-03-desafio",
+    "difficulty": "semente",
+    "skill": "observe",
+    "type": "tap",
+    "id": "historia-igreja-sem-hi-03-desafio-02",
+    "question": "Em Mateus 16:18, toque a palavra que falta em \"as portas do Hades não ___ contra ela\"?",
+    "feedbackCorrect": "Exato: não prevalecerão — o Hades não vence.",
+    "feedbackWrong": {
+      "a": "Edificarei é o verbo de Jesus, não desta lacuna.",
+      "c": "Pelejar pertence a Judas 1:3."
+    },
+    "template": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não ___ contra ela.",
+    "options": [
+      {
+        "id": "a",
+        "text": "edificarei"
+      },
+      {
+        "id": "b",
+        "text": "prevalecerão"
+      },
+      {
+        "id": "c",
+        "text": "pelejar"
+      }
+    ],
+    "correctOptionId": "b",
+    "prompt": "Em Mateus 16:18, toque a palavra que falta em \"as portas do Hades não ___ contra ela\"?",
+    "cue": "Em Mateus 16:18, toque a palavra que falta em \"as portas do Hades não ___ contra ela\"?",
+    "correctAnswer": "b",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18; Judas 1:3",
+    "learningObjective": "Unir a promessa de Cristo que edifica a igreja com a exortação a guardar a fé uma vez confiada.",
+    "evidence": [
+      "Mateus 16:18",
+      "Judas 1:3"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela. Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-03-desafio",
+    "difficulty": "semente",
+    "skill": "observe",
+    "type": "choice",
+    "id": "historia-igreja-sem-hi-03-desafio-03",
+    "question": "O que os dois textos afirmam de modo explícito?",
+    "feedbackCorrect": "Certo: Jesus edifica; a fé já foi confiada.",
+    "feedbackWrong": {
+      "a": "O Hades não prevalece, segundo Mateus 16:18.",
+      "c": "Judas não pede fé inédita.",
+      "d": "A igreja é de Jesus (minha igreja)."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "As portas do Hades já venceram a igreja."
+      },
+      {
+        "id": "b",
+        "text": "Jesus edifica a igreja e a fé foi confiada aos santos."
+      },
+      {
+        "id": "c",
+        "text": "Judas inventa uma fé que os santos ainda não tinham."
+      },
+      {
+        "id": "d",
+        "text": "A igreja pertence a Pedro, não a Jesus."
+      }
+    ],
+    "correctOptionId": "b",
+    "prompt": "O que os dois textos afirmam de modo explícito?",
+    "cue": "O que os dois textos afirmam de modo explícito?",
+    "correctAnswer": "b",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18; Judas 1:3",
+    "learningObjective": "Unir a promessa de Cristo que edifica a igreja com a exortação a guardar a fé uma vez confiada.",
+    "evidence": [
+      "Mateus 16:18",
+      "Judas 1:3"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela. Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-03-desafio",
+    "difficulty": "semente",
+    "skill": "observe",
+    "type": "order",
+    "id": "historia-igreja-sem-hi-03-desafio-04",
+    "question": "Qual sequência mostra a ordem dos fatos em Mateus 16:18 e Judas 1:3?",
+    "feedbackCorrect": "Certo: primeiro a promessa de edificar, depois a fé a defender.",
+    "feedbackWrong": {
+      "a": "A luta pela fé está em Judas, depois da promessa.",
+      "c": "A recusa do Hades fecha Mateus 16:18, não Judas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos"
+      },
+      {
+        "id": "b",
+        "text": "sobre esta pedra edificarei a minha igreja"
+      },
+      {
+        "id": "c",
+        "text": "as portas do Hades não prevalecerão contra ela"
+      }
+    ],
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ],
+    "correctOptionId": "b",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Mateus 16:18 e Judas 1:3?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Mateus 16:18 e Judas 1:3?",
+    "correctAnswer": "b",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18; Judas 1:3",
+    "learningObjective": "Unir a promessa de Cristo que edifica a igreja com a exortação a guardar a fé uma vez confiada.",
+    "evidence": [
+      "Mateus 16:18",
+      "Judas 1:3"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela. Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-03-desafio",
+    "difficulty": "semente",
+    "skill": "observe",
+    "type": "complete",
+    "id": "historia-igreja-sem-hi-03-desafio-05",
+    "question": "Complete Judas 1:3: exortando-vos a pelejar pela ___.",
+    "feedbackCorrect": "Certo: a luta é pela fé, não por uma novidade.",
+    "feedbackWrong": {
+      "b": "Igreja é o que Jesus edifica em Mateus 16:18.",
+      "c": "Carta é o meio de Judas, não o objeto da luta."
+    },
+    "template": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela ___ uma vez para sempre confiada aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fé"
+      },
+      {
+        "id": "b",
+        "text": "igreja"
+      },
+      {
+        "id": "c",
+        "text": "carta"
+      }
+    ],
+    "correctOptionId": "a",
+    "prompt": "Complete Judas 1:3: exortando-vos a pelejar pela ___.",
+    "cue": "Complete Judas 1:3: exortando-vos a pelejar pela ___.",
+    "correctAnswer": "a",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18; Judas 1:3",
+    "learningObjective": "Unir a promessa de Cristo que edifica a igreja com a exortação a guardar a fé uma vez confiada.",
+    "evidence": [
+      "Mateus 16:18",
+      "Judas 1:3"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela. Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-03-desafio",
+    "difficulty": "semente",
+    "skill": "observe",
+    "type": "connect",
+    "id": "historia-igreja-sem-hi-03-desafio-06",
+    "question": "O que Mateus 16:18 e Judas 1:3 comunicam que se liga a este contexto?",
+    "feedbackCorrect": "Certo: memória fiel une edificação e fé guardada.",
+    "feedbackWrong": {
+      "b": "O Hades não cancela a igreja nem a fé.",
+      "c": "A fé já foi confiada; não está por nascer."
+    },
+    "passageA": {
+      "ref": "Mateus 16:18",
+      "text": "edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Memória fiel: a igreja que Jesus edifica guarda a fé uma vez confiada."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Igreja edificada, fé guardada"
+      },
+      {
+        "id": "b",
+        "text": "Hades apaga a memória"
+      },
+      {
+        "id": "c",
+        "text": "Fé ainda por nascer"
+      }
+    ],
+    "correctOptionId": "a",
+    "prompt": "O que Mateus 16:18 e Judas 1:3 comunicam que se liga a este contexto?",
+    "cue": "O que Mateus 16:18 e Judas 1:3 comunicam que se liga a este contexto?",
+    "correctAnswer": "a",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18; Judas 1:3",
+    "learningObjective": "Unir a promessa de Cristo que edifica a igreja com a exortação a guardar a fé uma vez confiada.",
+    "evidence": [
+      "Mateus 16:18",
+      "Judas 1:3"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela. Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-03-desafio",
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "type": "true_false",
+    "id": "historia-igreja-cam-hi-03-desafio-01",
+    "question": "Os dois textos ensinam que a igreja se sustenta sem Cristo e sem a fé já confiada.",
+    "feedbackCorrect": "Certo: Jesus edifica, e a fé já foi dada aos santos.",
+    "feedbackWrong": {
+      "true": "Mateus 16:18 e Judas 1:3 ligam igreja a Cristo e à fé recebida."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "prompt": "Os dois textos ensinam que a igreja se sustenta sem Cristo e sem a fé já confiada.",
+    "cue": "Os dois textos ensinam que a igreja se sustenta sem Cristo e sem a fé já confiada.",
+    "correctAnswer": "false",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18; Judas 1:3",
+    "learningObjective": "Unir a promessa de Cristo que edifica a igreja com a exortação a guardar a fé uma vez confiada.",
+    "evidence": [
+      "Mateus 16:18",
+      "Judas 1:3"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela. Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-03-desafio",
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "type": "tap",
+    "id": "historia-igreja-cam-hi-03-desafio-02",
+    "question": "Em Judas 1:3, toque a palavra que falta em \"vi-me obrigado a dirigir-vos esta ___\"?",
+    "feedbackCorrect": "Exato: Judas dirige uma carta, não um credo inédito.",
+    "feedbackWrong": {
+      "a": "Igreja é o objeto da promessa em Mateus 16:18.",
+      "c": "Pedra pertence a Mateus 16:18."
+    },
+    "template": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta ___, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "igreja"
+      },
+      {
+        "id": "b",
+        "text": "carta"
+      },
+      {
+        "id": "c",
+        "text": "pedra"
+      }
+    ],
+    "correctOptionId": "b",
+    "prompt": "Em Judas 1:3, toque a palavra que falta em \"vi-me obrigado a dirigir-vos esta ___\"?",
+    "cue": "Em Judas 1:3, toque a palavra que falta em \"vi-me obrigado a dirigir-vos esta ___\"?",
+    "correctAnswer": "b",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18; Judas 1:3",
+    "learningObjective": "Unir a promessa de Cristo que edifica a igreja com a exortação a guardar a fé uma vez confiada.",
+    "evidence": [
+      "Mateus 16:18",
+      "Judas 1:3"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela. Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-03-desafio",
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "type": "choice",
+    "id": "historia-igreja-cam-hi-03-desafio-03",
+    "question": "Como a promessa de Mateus 16:18 se articula com a exortação de Judas 1:3?",
+    "feedbackCorrect": "Certo: a igreja de Cristo guarda a fé recebida.",
+    "feedbackWrong": {
+      "a": "O Hades não define a memória da igreja.",
+      "c": "Credos não substituem a fé confiada.",
+      "d": "Pedro não dispensa a luta pela fé."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O Hades cancela a fé e a igreja ao mesmo tempo."
+      },
+      {
+        "id": "b",
+        "text": "Cristo edifica a igreja que peleja pela fé dada."
+      },
+      {
+        "id": "c",
+        "text": "Credos novos substituem a fé dos santos."
+      },
+      {
+        "id": "d",
+        "text": "Pedro constrói sozinho, sem guardar nenhuma fé."
+      }
+    ],
+    "correctOptionId": "b",
+    "prompt": "Como a promessa de Mateus 16:18 se articula com a exortação de Judas 1:3?",
+    "cue": "Como a promessa de Mateus 16:18 se articula com a exortação de Judas 1:3?",
+    "correctAnswer": "b",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18; Judas 1:3",
+    "learningObjective": "Unir a promessa de Cristo que edifica a igreja com a exortação a guardar a fé uma vez confiada.",
+    "evidence": [
+      "Mateus 16:18",
+      "Judas 1:3"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela. Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-03-desafio",
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "type": "order",
+    "id": "historia-igreja-cam-hi-03-desafio-04",
+    "question": "Como se encadeiam os eventos de Mateus 16:18 e Judas 1:3?",
+    "feedbackCorrect": "Certo: promessa de edificar, Hades que não vence, fé a defender.",
+    "feedbackWrong": {
+      "b": "A fé de Judas não precede a promessa de Jesus.",
+      "c": "O Hades vem depois da edificação, não no início."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "sobre esta pedra edificarei a minha igreja"
+      },
+      {
+        "id": "b",
+        "text": "pelejar pela fé uma vez para sempre confiada aos santos"
+      },
+      {
+        "id": "c",
+        "text": "as portas do Hades não prevalecerão contra ela"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "c",
+      "b"
+    ],
+    "correctOptionId": "a",
+    "prompt": "Como se encadeiam os eventos de Mateus 16:18 e Judas 1:3?",
+    "cue": "Como se encadeiam os eventos de Mateus 16:18 e Judas 1:3?",
+    "correctAnswer": "a",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18; Judas 1:3",
+    "learningObjective": "Unir a promessa de Cristo que edifica a igreja com a exortação a guardar a fé uma vez confiada.",
+    "evidence": [
+      "Mateus 16:18",
+      "Judas 1:3"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela. Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-03-desafio",
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "type": "complete",
+    "id": "historia-igreja-cam-hi-03-desafio-05",
+    "question": "Complete Mateus 16:18: sobre esta ___ edificarei a minha igreja.",
+    "feedbackCorrect": "Certo: sobre esta pedra — Jesus edifica.",
+    "feedbackWrong": {
+      "a": "Fé é o objeto de Judas 1:3, não desta lacuna.",
+      "c": "Santos recebem a fé, não preenchem esta lacuna."
+    },
+    "template": "Também eu te digo que tu és Pedro, e sobre esta ___ edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fé"
+      },
+      {
+        "id": "b",
+        "text": "pedra"
+      },
+      {
+        "id": "c",
+        "text": "santos"
+      }
+    ],
+    "correctOptionId": "b",
+    "prompt": "Complete Mateus 16:18: sobre esta ___ edificarei a minha igreja.",
+    "cue": "Complete Mateus 16:18: sobre esta ___ edificarei a minha igreja.",
+    "correctAnswer": "b",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18; Judas 1:3",
+    "learningObjective": "Unir a promessa de Cristo que edifica a igreja com a exortação a guardar a fé uma vez confiada.",
+    "evidence": [
+      "Mateus 16:18",
+      "Judas 1:3"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela. Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-03-desafio",
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "type": "connect",
+    "id": "historia-igreja-cam-hi-03-desafio-06",
+    "question": "O que Mateus 16:18 e Judas 1:3 comunicam que se liga a este contexto?",
+    "feedbackCorrect": "Certo: memória fiel é igreja edificada que guarda a fé.",
+    "feedbackWrong": {
+      "a": "A história não começa no Hades.",
+      "c": "A fé não espera invenção futura."
+    },
+    "passageA": {
+      "ref": "Judas 1:3",
+      "text": "pelejar pela fé uma vez para sempre confiada aos santos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Memória fiel: a igreja que Jesus edifica guarda a fé uma vez confiada."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Memória começa no Hades"
+      },
+      {
+        "id": "b",
+        "text": "Igreja guarda a fé dada"
+      },
+      {
+        "id": "c",
+        "text": "Fé espera invenção futura"
+      }
+    ],
+    "correctOptionId": "b",
+    "prompt": "O que Mateus 16:18 e Judas 1:3 comunicam que se liga a este contexto?",
+    "cue": "O que Mateus 16:18 e Judas 1:3 comunicam que se liga a este contexto?",
+    "correctAnswer": "b",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18; Judas 1:3",
+    "learningObjective": "Unir a promessa de Cristo que edifica a igreja com a exortação a guardar a fé uma vez confiada.",
+    "evidence": [
+      "Mateus 16:18",
+      "Judas 1:3"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela. Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-03-desafio",
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "type": "true_false",
+    "id": "historia-igreja-pro-hi-03-desafio-01",
+    "question": "A memória fiel da igreja une a promessa de Cristo que edifica com a guarda da fé uma vez confiada.",
+    "feedbackCorrect": "Certo: os dois textos se encontram nessa memória.",
+    "feedbackWrong": {
+      "false": "Mateus 16:18 e Judas 1:3 juntos sustentam essa leitura."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "prompt": "A memória fiel da igreja une a promessa de Cristo que edifica com a guarda da fé uma vez confiada.",
+    "cue": "A memória fiel da igreja une a promessa de Cristo que edifica com a guarda da fé uma vez confiada.",
+    "correctAnswer": "true",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18; Judas 1:3",
+    "learningObjective": "Unir a promessa de Cristo que edifica a igreja com a exortação a guardar a fé uma vez confiada.",
+    "evidence": [
+      "Mateus 16:18",
+      "Judas 1:3"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela. Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-03-desafio",
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "type": "tap",
+    "id": "historia-igreja-pro-hi-03-desafio-02",
+    "question": "Em Mateus 16:18, toque a palavra que falta em \"edificarei a ___ igreja\"?",
+    "feedbackCorrect": "Exato: a igreja é minha — de Jesus, não do Hades.",
+    "feedbackWrong": {
+      "a": "Comum descreve a salvação em Judas 1:3.",
+      "c": "Toda descreve a diligência, não a igreja."
+    },
+    "template": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a ___ igreja; e as portas do Hades não prevalecerão contra ela.",
+    "options": [
+      {
+        "id": "a",
+        "text": "comum"
+      },
+      {
+        "id": "b",
+        "text": "minha"
+      },
+      {
+        "id": "c",
+        "text": "toda"
+      }
+    ],
+    "correctOptionId": "b",
+    "prompt": "Em Mateus 16:18, toque a palavra que falta em \"edificarei a ___ igreja\"?",
+    "cue": "Em Mateus 16:18, toque a palavra que falta em \"edificarei a ___ igreja\"?",
+    "correctAnswer": "b",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18; Judas 1:3",
+    "learningObjective": "Unir a promessa de Cristo que edifica a igreja com a exortação a guardar a fé uma vez confiada.",
+    "evidence": [
+      "Mateus 16:18",
+      "Judas 1:3"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela. Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-03-desafio",
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "type": "choice",
+    "id": "historia-igreja-pro-hi-03-desafio-03",
+    "question": "Que implicação os dois textos sustentam para a história da igreja?",
+    "feedbackCorrect": "Certo: Cristo edifica e a igreja conserva a fé recebida.",
+    "feedbackWrong": {
+      "a": "O Hades não é o autor da memória cristã.",
+      "b": "Credos não substituem a fé uma vez confiada.",
+      "d": "A igreja não se reduz a um arquivo sem Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A igreja existe porque o Hades a preserva."
+      },
+      {
+        "id": "b",
+        "text": "Cada século deve inventar outra fé."
+      },
+      {
+        "id": "c",
+        "text": "Cristo edifica; a igreja guarda a fé dada."
+      },
+      {
+        "id": "d",
+        "text": "Basta o arquivo histórico, sem prometedor."
+      }
+    ],
+    "correctOptionId": "c",
+    "prompt": "Que implicação os dois textos sustentam para a história da igreja?",
+    "cue": "Que implicação os dois textos sustentam para a história da igreja?",
+    "correctAnswer": "c",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18; Judas 1:3",
+    "learningObjective": "Unir a promessa de Cristo que edifica a igreja com a exortação a guardar a fé uma vez confiada.",
+    "evidence": [
+      "Mateus 16:18",
+      "Judas 1:3"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela. Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-03-desafio",
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "type": "order",
+    "id": "historia-igreja-pro-hi-03-desafio-04",
+    "question": "Qual sequência revela o sentido de Mateus 16:18 e Judas 1:3?",
+    "feedbackCorrect": "Certo: Cristo edifica, o Hades não vence, a fé é guardada.",
+    "feedbackWrong": {
+      "a": "A luta pela fé é o fruto, não o primeiro fundamento.",
+      "c": "O Hades não abre o sentido; a edificação de Cristo abre."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "pelejar pela fé uma vez para sempre confiada aos santos"
+      },
+      {
+        "id": "b",
+        "text": "edificarei a minha igreja"
+      },
+      {
+        "id": "c",
+        "text": "as portas do Hades não prevalecerão contra ela"
+      }
+    ],
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ],
+    "correctOptionId": "b",
+    "prompt": "Qual sequência revela o sentido de Mateus 16:18 e Judas 1:3?",
+    "cue": "Qual sequência revela o sentido de Mateus 16:18 e Judas 1:3?",
+    "correctAnswer": "b",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18; Judas 1:3",
+    "learningObjective": "Unir a promessa de Cristo que edifica a igreja com a exortação a guardar a fé uma vez confiada.",
+    "evidence": [
+      "Mateus 16:18",
+      "Judas 1:3"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela. Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-03-desafio",
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "type": "complete",
+    "id": "historia-igreja-pro-hi-03-desafio-05",
+    "question": "Complete Judas 1:3: fé uma vez para sempre ___ aos santos.",
+    "feedbackCorrect": "Certo: confiada — a fé já foi entregue.",
+    "feedbackWrong": {
+      "a": "Edificarei é o verbo de Jesus em Mateus 16:18.",
+      "b": "Prevalecerão refere-se às portas do Hades."
+    },
+    "template": "Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre ___ aos santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "edificarei"
+      },
+      {
+        "id": "b",
+        "text": "prevalecerão"
+      },
+      {
+        "id": "c",
+        "text": "confiada"
+      }
+    ],
+    "correctOptionId": "c",
+    "prompt": "Complete Judas 1:3: fé uma vez para sempre ___ aos santos.",
+    "cue": "Complete Judas 1:3: fé uma vez para sempre ___ aos santos.",
+    "correctAnswer": "c",
+    "trail": "historia-igreja"
+  },
+  {
+    "verseRef": "Mateus 16:18; Judas 1:3",
+    "learningObjective": "Unir a promessa de Cristo que edifica a igreja com a exortação a guardar a fé uma vez confiada.",
+    "evidence": [
+      "Mateus 16:18",
+      "Judas 1:3"
+    ],
+    "passageText": "Também eu te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja; e as portas do Hades não prevalecerão contra ela. Amados, enquanto eu empregava toda a diligência para vos escrever sobre a nossa comum salvação, vi-me obrigado a dirigir-vos esta carta, exortando-vos a pelejar pela fé uma vez para sempre confiada aos santos.",
+    "section": "hi-03-desafio",
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "type": "connect",
+    "id": "historia-igreja-pro-hi-03-desafio-06",
+    "question": "O que Mateus 16:18 e Judas 1:3 comunicam que se liga a este contexto?",
+    "feedbackCorrect": "Certo: memória fiel é igreja de Cristo e fé guardada.",
+    "feedbackWrong": {
+      "a": "O Hades não escreve a memória da igreja.",
+      "b": "A fé não espera um inventor posterior."
+    },
+    "passageA": {
+      "ref": "Mateus 16:18; Judas 1:3",
+      "text": "edificarei a minha igreja… pelejar pela fé uma vez para sempre confiada aos santos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Memória fiel: a igreja que Jesus edifica guarda a fé uma vez confiada."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Hades dita a memória"
+      },
+      {
+        "id": "b",
+        "text": "Fé espera inventor novo"
+      },
+      {
+        "id": "c",
+        "text": "Cristo edifica, fé guardada"
+      }
+    ],
+    "correctOptionId": "c",
+    "prompt": "O que Mateus 16:18 e Judas 1:3 comunicam que se liga a este contexto?",
+    "cue": "O que Mateus 16:18 e Judas 1:3 comunicam que se liga a este contexto?",
+    "correctAnswer": "c",
+    "trail": "historia-igreja"
+  }
+]

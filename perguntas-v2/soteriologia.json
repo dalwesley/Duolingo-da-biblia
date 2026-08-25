@@ -1,0 +1,2990 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é graça de Deus, mediante a fé: dom, não obras, para que ninguém se glorie.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "true_false",
+    "question": "Pela graça é que sois salvos, mediante a fé; isso não vem de vós; é o dom de Deus.",
+    "prompt": "Pela graça é que sois salvos, mediante a fé; isso não vem de vós; é o dom de Deus.",
+    "cue": "Pela graça é que sois salvos, mediante a fé; isso não vem de vós; é o dom de Deus.",
+    "feedbackCorrect": "Certo: Efésios 2:8 afirma graça, fé e o dom de Deus.",
+    "feedbackWrong": {
+      "false": "Releia: a salvação é pela graça, mediante a fé, e é dom."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "id": "soteriologia-sem-so-01-graca-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é graça de Deus, mediante a fé: dom, não obras, para que ninguém se glorie.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "tap",
+    "question": "Em Efésios 2:8–9, toque a palavra que falta em \"Pois pela ___ é que sois salvos, mediante a fé\"?",
+    "prompt": "Em Efésios 2:8–9, toque a palavra que falta em \"Pois pela ___ é que sois salvos, mediante a fé\"?",
+    "cue": "Em Efésios 2:8–9, toque a palavra que falta em \"Pois pela ___ é que sois salvos, mediante a fé\"?",
+    "feedbackCorrect": "Exato: sois salvos pela graça, mediante a fé.",
+    "feedbackWrong": {
+      "b": "Fé é o meio; a lacuna pede a origem: graça.",
+      "c": "Obras entram depois; aqui o texto fala de graça."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "graça"
+      },
+      {
+        "id": "b",
+        "text": "fé"
+      },
+      {
+        "id": "c",
+        "text": "obras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "template": "Pois pela ___ é que sois salvos, mediante a fé",
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "id": "soteriologia-sem-so-01-graca-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é graça de Deus, mediante a fé: dom, não obras, para que ninguém se glorie.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "choice",
+    "question": "Qual fato Efésios 2:8–9 afirma sobre a salvação?",
+    "prompt": "Qual fato Efésios 2:8–9 afirma sobre a salvação?",
+    "cue": "Qual fato Efésios 2:8–9 afirma sobre a salvação?",
+    "feedbackCorrect": "Certo: o texto liga graça, fé, dom e a exclusão das obras.",
+    "feedbackWrong": {
+      "b": "O texto diz que isso não vem de vós.",
+      "c": "O texto nega que a salvação seja de obras.",
+      "d": "O orgulho é excluído porque a salvação é dom."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sois salvos pela graça, mediante a fé; é dom, não obras"
+      },
+      {
+        "id": "b",
+        "text": "A salvação vem de vós, se o esforço for suficiente"
+      },
+      {
+        "id": "c",
+        "text": "As obras são a causa da salvação, segundo o texto"
+      },
+      {
+        "id": "d",
+        "text": "Ninguém se gloria porque as obras já bastam"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "id": "soteriologia-sem-so-01-graca-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é graça de Deus, mediante a fé: dom, não obras, para que ninguém se glorie.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Efésios 2:8–9?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Efésios 2:8–9?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Efésios 2:8–9?",
+    "feedbackCorrect": "Certo: graça e fé, depois o dom, depois a exclusão das obras.",
+    "feedbackWrong": {
+      "b": "O dom vem depois de ‘não vem de vós’, não no fim.",
+      "c": "As obras e a glória fecham o trecho, não o abrem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pois pela graça é que sois salvos, mediante a fé"
+      },
+      {
+        "id": "b",
+        "text": "e isso não vem de vós; é o dom de Deus"
+      },
+      {
+        "id": "c",
+        "text": "não de obras, para que ninguém se glorie"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "id": "soteriologia-sem-so-01-graca-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é graça de Deus, mediante a fé: dom, não obras, para que ninguém se glorie.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"não de ___, para que ninguém se glorie\"",
+    "prompt": "Complete a frase: \"não de ___, para que ninguém se glorie\"",
+    "cue": "Complete a frase: \"não de ___, para que ninguém se glorie\"",
+    "feedbackCorrect": "Certo: não de obras, para que ninguém se glorie.",
+    "feedbackWrong": {
+      "b": "Fé é o meio no v. 8, não esta lacuna.",
+      "c": "Graça abre o versículo, não fecha esta frase."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "obras"
+      },
+      {
+        "id": "b",
+        "text": "fé"
+      },
+      {
+        "id": "c",
+        "text": "graça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "template": "não de ___, para que ninguém se glorie",
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "id": "soteriologia-sem-so-01-graca-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é graça de Deus, mediante a fé: dom, não obras, para que ninguém se glorie.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "connect",
+    "question": "O que Efésios 2:8–9 comunica que se liga a este contexto?",
+    "prompt": "O que Efésios 2:8–9 comunica que se liga a este contexto?",
+    "cue": "O que Efésios 2:8–9 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o trecho liga salvação a um dom, não a obras.",
+    "feedbackWrong": {
+      "b": "O texto exclui as obras como causa da salvação.",
+      "c": "O orgulho é cortado precisamente porque é dom."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Dom de Deus, não obras"
+      },
+      {
+        "id": "b",
+        "text": "Mérito humano pelas obras"
+      },
+      {
+        "id": "c",
+        "text": "Glória do salvo em si mesmo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "passageA": {
+      "ref": "Efésios 2:8–9",
+      "text": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Salvos pela graça, mediante a fé: dom de Deus, não obras, para que ninguém se glorie."
+    },
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "id": "soteriologia-sem-so-01-graca-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é graça de Deus, mediante a fé: dom, não obras, para que ninguém se glorie.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "true_false",
+    "question": "O texto ensina que a salvação começa em vós e Deus apenas confirma o esforço.",
+    "prompt": "O texto ensina que a salvação começa em vós e Deus apenas confirma o esforço.",
+    "cue": "O texto ensina que a salvação começa em vós e Deus apenas confirma o esforço.",
+    "feedbackCorrect": "Certo: isso não vem de vós; é o dom de Deus.",
+    "feedbackWrong": {
+      "true": "O texto recusa a origem humana: não vem de vós."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "id": "soteriologia-cam-so-01-graca-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é graça de Deus, mediante a fé: dom, não obras, para que ninguém se glorie.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "tap",
+    "question": "Em Efésios 2:8–9, toque a palavra que falta em \"Pois pela graça é que sois salvos, mediante a ___\"?",
+    "prompt": "Em Efésios 2:8–9, toque a palavra que falta em \"Pois pela graça é que sois salvos, mediante a ___\"?",
+    "cue": "Em Efésios 2:8–9, toque a palavra que falta em \"Pois pela graça é que sois salvos, mediante a ___\"?",
+    "feedbackCorrect": "Exato: a fé é o meio; a graça é a origem.",
+    "feedbackWrong": {
+      "b": "Graça já está antes; a lacuna pede o meio: fé.",
+      "c": "Obras são excluídas, não preenchem esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "fé"
+      },
+      {
+        "id": "b",
+        "text": "graça"
+      },
+      {
+        "id": "c",
+        "text": "obras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "template": "Pois pela graça é que sois salvos, mediante a ___",
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "id": "soteriologia-cam-so-01-graca-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é graça de Deus, mediante a fé: dom, não obras, para que ninguém se glorie.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "choice",
+    "question": "Como Efésios 2:8–9 relaciona graça, fé e obras?",
+    "prompt": "Como Efésios 2:8–9 relaciona graça, fé e obras?",
+    "cue": "Como Efésios 2:8–9 relaciona graça, fé e obras?",
+    "feedbackCorrect": "Certo: a graça origina, a fé medeia, as obras não causam.",
+    "feedbackWrong": {
+      "a": "Fé não anula o dom; é o meio pelo qual o dom chega.",
+      "c": "O texto recusa obras como causa da salvação.",
+      "d": "O assunto é salvação, não só ética social."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Graça e fé se opõem, de modo que crer anula o dom"
+      },
+      {
+        "id": "b",
+        "text": "A fé é o meio; a graça é a origem; obras não salvam"
+      },
+      {
+        "id": "c",
+        "text": "Obras salvam, e a fé só ilustra o caráter"
+      },
+      {
+        "id": "d",
+        "text": "O texto trata só de ética, sem falar de salvação"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "id": "soteriologia-cam-so-01-graca-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é graça de Deus, mediante a fé: dom, não obras, para que ninguém se glorie.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Efésios 2:8–9?",
+    "prompt": "Como se encadeiam os eventos de Efésios 2:8–9?",
+    "cue": "Como se encadeiam os eventos de Efésios 2:8–9?",
+    "feedbackCorrect": "Certo: salvação pela graça, origem no dom, exclusão das obras.",
+    "feedbackWrong": {
+      "b": "Primeiro vem a graça mediante a fé, não as obras.",
+      "c": "A glória humana é o alvo recusado no fim, não o início."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pois pela graça é que sois salvos, mediante a fé"
+      },
+      {
+        "id": "b",
+        "text": "e isso não vem de vós; é o dom de Deus"
+      },
+      {
+        "id": "c",
+        "text": "não de obras, para que ninguém se glorie"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "id": "soteriologia-cam-so-01-graca-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é graça de Deus, mediante a fé: dom, não obras, para que ninguém se glorie.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"e isso não vem de ___; é o dom de Deus\"",
+    "prompt": "Complete a frase: \"e isso não vem de ___; é o dom de Deus\"",
+    "cue": "Complete a frase: \"e isso não vem de ___; é o dom de Deus\"",
+    "feedbackCorrect": "Certo: não vem de vós; é o dom de Deus.",
+    "feedbackWrong": {
+      "b": "Deus é quem dá o dom, não a origem recusada.",
+      "c": "Ninguém aparece na cláusula da glória."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "vós"
+      },
+      {
+        "id": "b",
+        "text": "Deus"
+      },
+      {
+        "id": "c",
+        "text": "ninguém"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "template": "e isso não vem de ___; é o dom de Deus",
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "id": "soteriologia-cam-so-01-graca-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é graça de Deus, mediante a fé: dom, não obras, para que ninguém se glorie.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "connect",
+    "question": "O que Efésios 2:8–9 comunica que se liga a este contexto?",
+    "prompt": "O que Efésios 2:8–9 comunica que se liga a este contexto?",
+    "cue": "O que Efésios 2:8–9 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a salvação chega como presente, não como salário.",
+    "feedbackWrong": {
+      "b": "O texto não descreve um contrato de mérito.",
+      "c": "A fé não substitui a graça como origem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Salvação como presente"
+      },
+      {
+        "id": "b",
+        "text": "Salário por desempenho"
+      },
+      {
+        "id": "c",
+        "text": "Fé como mérito próprio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "passageA": {
+      "ref": "Efésios 2:8–9",
+      "text": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Salvos pela graça, mediante a fé: dom de Deus, não obras, para que ninguém se glorie."
+    },
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "id": "soteriologia-cam-so-01-graca-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é graça de Deus, mediante a fé: dom, não obras, para que ninguém se glorie.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "true_false",
+    "question": "O texto corta o orgulho humano: ninguém se gloria porque a salvação é dom, não conquista.",
+    "prompt": "O texto corta o orgulho humano: ninguém se gloria porque a salvação é dom, não conquista.",
+    "cue": "O texto corta o orgulho humano: ninguém se gloria porque a salvação é dom, não conquista.",
+    "feedbackCorrect": "Certo: ‘não de obras, para que ninguém se glorie’.",
+    "feedbackWrong": {
+      "false": "A finalidade do trecho é exatamente impedir a jactância."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "id": "soteriologia-pro-so-01-graca-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é graça de Deus, mediante a fé: dom, não obras, para que ninguém se glorie.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "tap",
+    "question": "Em Efésios 2:8–9, toque a palavra que falta em \"não de obras, para que ___ se glorie\"?",
+    "prompt": "Em Efésios 2:8–9, toque a palavra que falta em \"não de obras, para que ___ se glorie\"?",
+    "cue": "Em Efésios 2:8–9, toque a palavra que falta em \"não de obras, para que ___ se glorie\"?",
+    "feedbackCorrect": "Exato: para que ninguém se glorie.",
+    "feedbackWrong": {
+      "b": "Vós é a origem recusada, não o sujeito de ‘se glorie’.",
+      "c": "Deus dá o dom; a lacuna pede ‘ninguém’."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "ninguém"
+      },
+      {
+        "id": "b",
+        "text": "vós"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "template": "não de obras, para que ___ se glorie",
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "id": "soteriologia-pro-so-01-graca-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é graça de Deus, mediante a fé: dom, não obras, para que ninguém se glorie.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido teológico de Efésios 2:8–9?",
+    "prompt": "Qual leitura interpreta melhor o sentido teológico de Efésios 2:8–9?",
+    "cue": "Qual leitura interpreta melhor o sentido teológico de Efésios 2:8–9?",
+    "feedbackCorrect": "Certo: o dom deixa a glória em Deus, não no homem.",
+    "feedbackWrong": {
+      "a": "O texto impede a glória humana, inclusive da fé como mérito.",
+      "b": "Obras não merecem a graça; o texto as exclui como causa.",
+      "d": "Autojustificação contradiz ‘não de obras’."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus salva para que o salvo se glorie da própria fé"
+      },
+      {
+        "id": "b",
+        "text": "Obras merecem a graça, e a fé descreve o mérito"
+      },
+      {
+        "id": "c",
+        "text": "A salvação é dom, de modo que a glória não fica no homem"
+      },
+      {
+        "id": "d",
+        "text": "O texto ensina autojustificação pela disciplina religiosa"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "id": "soteriologia-pro-so-01-graca-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é graça de Deus, mediante a fé: dom, não obras, para que ninguém se glorie.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Efésios 2:8–9?",
+    "prompt": "Qual sequência revela o sentido de Efésios 2:8–9?",
+    "cue": "Qual sequência revela o sentido de Efésios 2:8–9?",
+    "feedbackCorrect": "Certo: graça recebida, origem divina, fim do orgulho.",
+    "feedbackWrong": {
+      "b": "O sentido começa na graça, não na exclusão das obras.",
+      "c": "A jactância é o que o texto impede no fim."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pois pela graça é que sois salvos, mediante a fé"
+      },
+      {
+        "id": "b",
+        "text": "e isso não vem de vós; é o dom de Deus"
+      },
+      {
+        "id": "c",
+        "text": "não de obras, para que ninguém se glorie"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "id": "soteriologia-pro-so-01-graca-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é graça de Deus, mediante a fé: dom, não obras, para que ninguém se glorie.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"é o ___ de Deus; não de obras\"",
+    "prompt": "Complete a frase: \"é o ___ de Deus; não de obras\"",
+    "cue": "Complete a frase: \"é o ___ de Deus; não de obras\"",
+    "feedbackCorrect": "Certo: é o dom de Deus, não de obras.",
+    "feedbackWrong": {
+      "b": "Fé é o meio no início, não esta palavra.",
+      "c": "Ninguém pertence à cláusula da glória."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "dom"
+      },
+      {
+        "id": "b",
+        "text": "fé"
+      },
+      {
+        "id": "c",
+        "text": "ninguém"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "template": "é o ___ de Deus; não de obras",
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "id": "soteriologia-pro-so-01-graca-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 2:8–9",
+    "learningObjective": "Reconhecer que a salvação é graça de Deus, mediante a fé: dom, não obras, para que ninguém se glorie.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9"
+    ],
+    "type": "connect",
+    "question": "O que Efésios 2:8–9 comunica que se liga a este contexto?",
+    "prompt": "O que Efésios 2:8–9 comunica que se liga a este contexto?",
+    "cue": "O que Efésios 2:8–9 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a graça impede que alguém se glorie de si.",
+    "feedbackWrong": {
+      "b": "O trecho não funda salvação no desempenho.",
+      "c": "A glória do eu é o que o texto recusa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Graça que impede a jactância"
+      },
+      {
+        "id": "b",
+        "text": "Mérito que compra o favor"
+      },
+      {
+        "id": "c",
+        "text": "Orgulho santo do salvo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie.",
+    "passageA": {
+      "ref": "Efésios 2:8–9",
+      "text": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Salvos pela graça, mediante a fé: dom de Deus, não obras, para que ninguém se glorie."
+    },
+    "trail": "soteriologia",
+    "section": "so-01-graca",
+    "id": "soteriologia-pro-so-01-graca-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Romanos 5:8",
+    "learningObjective": "Reconhecer que Deus prova o seu amor na cruz: Cristo morreu por nós ainda pecadores.",
+    "evidence": [
+      "Romanos 5:8"
+    ],
+    "type": "true_false",
+    "question": "Éramos ainda pecadores, e morreu Cristo por nós.",
+    "prompt": "Éramos ainda pecadores, e morreu Cristo por nós.",
+    "cue": "Éramos ainda pecadores, e morreu Cristo por nós.",
+    "feedbackCorrect": "Certo: Romanos 5:8 registra exatamente isso.",
+    "feedbackWrong": {
+      "false": "Releia: Cristo morreu por nós ainda pecadores."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós.",
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "id": "soteriologia-sem-so-02-cruz-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Romanos 5:8",
+    "learningObjective": "Reconhecer que Deus prova o seu amor na cruz: Cristo morreu por nós ainda pecadores.",
+    "evidence": [
+      "Romanos 5:8"
+    ],
+    "type": "tap",
+    "question": "Em Romanos 5:8, toque a palavra que falta em \"quando éramos ainda ___, morreu Cristo por nós\"?",
+    "prompt": "Em Romanos 5:8, toque a palavra que falta em \"quando éramos ainda ___, morreu Cristo por nós\"?",
+    "cue": "Em Romanos 5:8, toque a palavra que falta em \"quando éramos ainda ___, morreu Cristo por nós\"?",
+    "feedbackCorrect": "Exato: ainda pecadores, morreu Cristo por nós.",
+    "feedbackWrong": {
+      "b": "Amor é o que Deus prova, não esta lacuna.",
+      "c": "Cristo é quem morre, não o estado descrito."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "pecadores"
+      },
+      {
+        "id": "b",
+        "text": "amor"
+      },
+      {
+        "id": "c",
+        "text": "Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós.",
+    "template": "quando éramos ainda ___, morreu Cristo por nós",
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "id": "soteriologia-sem-so-02-cruz-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Romanos 5:8",
+    "learningObjective": "Reconhecer que Deus prova o seu amor na cruz: Cristo morreu por nós ainda pecadores.",
+    "evidence": [
+      "Romanos 5:8"
+    ],
+    "type": "choice",
+    "question": "Qual fato Romanos 5:8 afirma sobre o amor de Deus?",
+    "prompt": "Qual fato Romanos 5:8 afirma sobre o amor de Deus?",
+    "cue": "Qual fato Romanos 5:8 afirma sobre o amor de Deus?",
+    "feedbackCorrect": "Certo: o amor se prova na morte de Cristo por pecadores.",
+    "feedbackWrong": {
+      "b": "O texto situa a morte ‘quando éramos ainda pecadores’.",
+      "c": "Quem morre é Cristo, e o amor é de Deus.",
+      "d": "O texto fala de morte por nós, não de melhoria prévia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus prova o seu amor: Cristo morreu por nós pecadores"
+      },
+      {
+        "id": "b",
+        "text": "Cristo morreu depois que já deixáramos de pecar"
+      },
+      {
+        "id": "c",
+        "text": "O texto diz que nós morremos para provar o amor a Deus"
+      },
+      {
+        "id": "d",
+        "text": "O amor de Deus se prova na nossa reforma moral"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós.",
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "id": "soteriologia-sem-so-02-cruz-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Romanos 5:8",
+    "learningObjective": "Reconhecer que Deus prova o seu amor na cruz: Cristo morreu por nós ainda pecadores.",
+    "evidence": [
+      "Romanos 5:8"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Romanos 5:8?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Romanos 5:8?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Romanos 5:8?",
+    "feedbackCorrect": "Certo: Deus prova o amor, ainda pecadores, Cristo morre.",
+    "feedbackWrong": {
+      "b": "O estado de pecadores vem antes da morte de Cristo.",
+      "c": "A prova do amor abre o versículo, não o fecha."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus prova o seu amor para conosco"
+      },
+      {
+        "id": "b",
+        "text": "quando éramos ainda pecadores"
+      },
+      {
+        "id": "c",
+        "text": "morreu Cristo por nós"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "id": "soteriologia-sem-so-02-cruz-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Romanos 5:8",
+    "learningObjective": "Reconhecer que Deus prova o seu amor na cruz: Cristo morreu por nós ainda pecadores.",
+    "evidence": [
+      "Romanos 5:8"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Deus prova o seu ___ para conosco\"",
+    "prompt": "Complete a frase: \"Deus prova o seu ___ para conosco\"",
+    "cue": "Complete a frase: \"Deus prova o seu ___ para conosco\"",
+    "feedbackCorrect": "Certo: Deus prova o seu amor para conosco.",
+    "feedbackWrong": {
+      "b": "Cristo é quem morre, não o que é provado aqui.",
+      "c": "Nós recebemos o amor, não preenchemos a lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "amor"
+      },
+      {
+        "id": "b",
+        "text": "Cristo"
+      },
+      {
+        "id": "c",
+        "text": "nós"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós.",
+    "template": "Deus prova o seu ___ para conosco",
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "id": "soteriologia-sem-so-02-cruz-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Romanos 5:8",
+    "learningObjective": "Reconhecer que Deus prova o seu amor na cruz: Cristo morreu por nós ainda pecadores.",
+    "evidence": [
+      "Romanos 5:8"
+    ],
+    "type": "connect",
+    "question": "O que Romanos 5:8 comunica que se liga a este contexto?",
+    "prompt": "O que Romanos 5:8 comunica que se liga a este contexto?",
+    "cue": "O que Romanos 5:8 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o amor de Deus se mostra na cruz por pecadores.",
+    "feedbackWrong": {
+      "b": "O texto não espera melhoria para então amar.",
+      "c": "A prova não é o nosso sentimento, e sim a cruz."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Amor provado na cruz"
+      },
+      {
+        "id": "b",
+        "text": "Amor após nossa melhoria"
+      },
+      {
+        "id": "c",
+        "text": "Amor como sentimento nosso"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós.",
+    "passageA": {
+      "ref": "Romanos 5:8",
+      "text": "mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Cristo morreu por nós ainda pecadores: o amor de Deus se prova na cruz, não na nossa melhoria prévia."
+    },
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "id": "soteriologia-sem-so-02-cruz-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Romanos 5:8",
+    "learningObjective": "Reconhecer que Deus prova o seu amor na cruz: Cristo morreu por nós ainda pecadores.",
+    "evidence": [
+      "Romanos 5:8"
+    ],
+    "type": "true_false",
+    "question": "O texto diz que Cristo morreu depois que já tínhamos deixado de ser pecadores.",
+    "prompt": "O texto diz que Cristo morreu depois que já tínhamos deixado de ser pecadores.",
+    "cue": "O texto diz que Cristo morreu depois que já tínhamos deixado de ser pecadores.",
+    "feedbackCorrect": "Certo: a morte ocorre quando ainda éramos pecadores.",
+    "feedbackWrong": {
+      "true": "O ‘ainda pecadores’ recusa a ideia de melhoria prévia."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós.",
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "id": "soteriologia-cam-so-02-cruz-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Romanos 5:8",
+    "learningObjective": "Reconhecer que Deus prova o seu amor na cruz: Cristo morreu por nós ainda pecadores.",
+    "evidence": [
+      "Romanos 5:8"
+    ],
+    "type": "tap",
+    "question": "Em Romanos 5:8, toque a palavra que falta em \"quando éramos ainda pecadores, morreu ___ por nós\"?",
+    "prompt": "Em Romanos 5:8, toque a palavra que falta em \"quando éramos ainda pecadores, morreu ___ por nós\"?",
+    "cue": "Em Romanos 5:8, toque a palavra que falta em \"quando éramos ainda pecadores, morreu ___ por nós\"?",
+    "feedbackCorrect": "Exato: morreu Cristo por nós.",
+    "feedbackWrong": {
+      "b": "Deus prova o amor; quem morre é Cristo.",
+      "c": "Pecadores descreve o nosso estado, não o sujeito."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Deus"
+      },
+      {
+        "id": "c",
+        "text": "pecadores"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós.",
+    "template": "quando éramos ainda pecadores, morreu ___ por nós",
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "id": "soteriologia-cam-so-02-cruz-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Romanos 5:8",
+    "learningObjective": "Reconhecer que Deus prova o seu amor na cruz: Cristo morreu por nós ainda pecadores.",
+    "evidence": [
+      "Romanos 5:8"
+    ],
+    "type": "choice",
+    "question": "Como Romanos 5:8 liga o amor de Deus ao tempo da cruz?",
+    "prompt": "Como Romanos 5:8 liga o amor de Deus ao tempo da cruz?",
+    "cue": "Como Romanos 5:8 liga o amor de Deus ao tempo da cruz?",
+    "feedbackCorrect": "Certo: a prova do amor é a morte por quem ainda pecava.",
+    "feedbackWrong": {
+      "a": "O texto não espera reforma para então enviar Cristo.",
+      "c": "A iniciativa é de Deus, não de um pedido nosso.",
+      "d": "A cruz não é ilustração vazia: é a prova do amor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo morre só depois que o pecador já se reformou"
+      },
+      {
+        "id": "b",
+        "text": "A prova do amor é a morte por quem ainda pecava"
+      },
+      {
+        "id": "c",
+        "text": "O amor de Deus espera primeiro o nosso pedido"
+      },
+      {
+        "id": "d",
+        "text": "A cruz apenas ilustra um sentimento, sem ato real"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós.",
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "id": "soteriologia-cam-so-02-cruz-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Romanos 5:8",
+    "learningObjective": "Reconhecer que Deus prova o seu amor na cruz: Cristo morreu por nós ainda pecadores.",
+    "evidence": [
+      "Romanos 5:8"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Romanos 5:8?",
+    "prompt": "Como se encadeiam os eventos de Romanos 5:8?",
+    "cue": "Como se encadeiam os eventos de Romanos 5:8?",
+    "feedbackCorrect": "Certo: prova do amor, estado de pecadores, morte de Cristo.",
+    "feedbackWrong": {
+      "b": "A morte não precede o ‘ainda pecadores’ no texto.",
+      "c": "A prova do amor vem primeiro, não por último."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus prova o seu amor para conosco"
+      },
+      {
+        "id": "b",
+        "text": "quando éramos ainda pecadores"
+      },
+      {
+        "id": "c",
+        "text": "morreu Cristo por nós"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "id": "soteriologia-cam-so-02-cruz-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Romanos 5:8",
+    "learningObjective": "Reconhecer que Deus prova o seu amor na cruz: Cristo morreu por nós ainda pecadores.",
+    "evidence": [
+      "Romanos 5:8"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"quando éramos ___ pecadores, morreu Cristo por nós\"",
+    "prompt": "Complete a frase: \"quando éramos ___ pecadores, morreu Cristo por nós\"",
+    "cue": "Complete a frase: \"quando éramos ___ pecadores, morreu Cristo por nós\"",
+    "feedbackCorrect": "Certo: éramos ainda pecadores.",
+    "feedbackWrong": {
+      "b": "Deus abre o versículo, não esta lacuna.",
+      "c": "Nós somos os pecadores, não o advérbio."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "ainda"
+      },
+      {
+        "id": "b",
+        "text": "Deus"
+      },
+      {
+        "id": "c",
+        "text": "nós"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós.",
+    "template": "quando éramos ___ pecadores, morreu Cristo por nós",
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "id": "soteriologia-cam-so-02-cruz-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Romanos 5:8",
+    "learningObjective": "Reconhecer que Deus prova o seu amor na cruz: Cristo morreu por nós ainda pecadores.",
+    "evidence": [
+      "Romanos 5:8"
+    ],
+    "type": "connect",
+    "question": "O que Romanos 5:8 comunica que se liga a este contexto?",
+    "prompt": "O que Romanos 5:8 comunica que se liga a este contexto?",
+    "cue": "O que Romanos 5:8 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a cruz vem antes de qualquer melhoria nossa.",
+    "feedbackWrong": {
+      "b": "O texto não faz da cruz um prêmio ao justo.",
+      "c": "A reconciliação parte de Deus, não do pecador."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cruz antes da melhoria"
+      },
+      {
+        "id": "b",
+        "text": "Prêmio aos já justos"
+      },
+      {
+        "id": "c",
+        "text": "Iniciativa do pecador"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós.",
+    "passageA": {
+      "ref": "Romanos 5:8",
+      "text": "mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Cristo morreu por nós ainda pecadores: o amor de Deus se prova na cruz, não na nossa melhoria prévia."
+    },
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "id": "soteriologia-cam-so-02-cruz-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Romanos 5:8",
+    "learningObjective": "Reconhecer que Deus prova o seu amor na cruz: Cristo morreu por nós ainda pecadores.",
+    "evidence": [
+      "Romanos 5:8"
+    ],
+    "type": "true_false",
+    "question": "O amor de Deus se prova na cruz, não na nossa melhoria prévia.",
+    "prompt": "O amor de Deus se prova na cruz, não na nossa melhoria prévia.",
+    "cue": "O amor de Deus se prova na cruz, não na nossa melhoria prévia.",
+    "feedbackCorrect": "Certo: a prova é a morte de Cristo por pecadores.",
+    "feedbackWrong": {
+      "false": "Romanos 5:8 situa o amor na cruz, não no nosso progresso."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós.",
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "id": "soteriologia-pro-so-02-cruz-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Romanos 5:8",
+    "learningObjective": "Reconhecer que Deus prova o seu amor na cruz: Cristo morreu por nós ainda pecadores.",
+    "evidence": [
+      "Romanos 5:8"
+    ],
+    "type": "tap",
+    "question": "Em Romanos 5:8, toque a palavra que falta em \"quando éramos ainda pecadores, ___ Cristo por nós\"?",
+    "prompt": "Em Romanos 5:8, toque a palavra que falta em \"quando éramos ainda pecadores, ___ Cristo por nós\"?",
+    "cue": "Em Romanos 5:8, toque a palavra que falta em \"quando éramos ainda pecadores, ___ Cristo por nós\"?",
+    "feedbackCorrect": "Exato: morreu Cristo por nós.",
+    "feedbackWrong": {
+      "b": "Prova descreve o ato de Deus, não esta lacuna.",
+      "c": "Amor é o que é provado, não o verbo da morte."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "morreu"
+      },
+      {
+        "id": "b",
+        "text": "prova"
+      },
+      {
+        "id": "c",
+        "text": "amor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós.",
+    "template": "quando éramos ainda pecadores, ___ Cristo por nós",
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "id": "soteriologia-pro-so-02-cruz-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Romanos 5:8",
+    "learningObjective": "Reconhecer que Deus prova o seu amor na cruz: Cristo morreu por nós ainda pecadores.",
+    "evidence": [
+      "Romanos 5:8"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido teológico de Romanos 5:8?",
+    "prompt": "Qual leitura interpreta melhor o sentido teológico de Romanos 5:8?",
+    "cue": "Qual leitura interpreta melhor o sentido teológico de Romanos 5:8?",
+    "feedbackCorrect": "Certo: o amor se demonstra na morte por quem não merecia.",
+    "feedbackWrong": {
+      "a": "O texto não exige mérito para a cruz acontecer.",
+      "b": "A cruz não é só exemplo: é prova do amor de Deus.",
+      "d": "O pecador não conquista o amor; o recebe na cruz."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus ama depois que o pecador se torna digno"
+      },
+      {
+        "id": "b",
+        "text": "A cruz só inspira ética, sem provar o amor de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Deus ama o pecador na morte de Cristo, sem mérito prévio"
+      },
+      {
+        "id": "d",
+        "text": "O pecador precisa primeiro amar a Deus para ser amado"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós.",
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "id": "soteriologia-pro-so-02-cruz-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Romanos 5:8",
+    "learningObjective": "Reconhecer que Deus prova o seu amor na cruz: Cristo morreu por nós ainda pecadores.",
+    "evidence": [
+      "Romanos 5:8"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Romanos 5:8?",
+    "prompt": "Qual sequência revela o sentido de Romanos 5:8?",
+    "cue": "Qual sequência revela o sentido de Romanos 5:8?",
+    "feedbackCorrect": "Certo: amor provado, pecadores, Cristo por nós.",
+    "feedbackWrong": {
+      "b": "O sentido começa na prova do amor, não na morte isolada.",
+      "c": "A morte de Cristo conclui a prova, não a abre."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus prova o seu amor para conosco"
+      },
+      {
+        "id": "b",
+        "text": "quando éramos ainda pecadores"
+      },
+      {
+        "id": "c",
+        "text": "morreu Cristo por nós"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "id": "soteriologia-pro-so-02-cruz-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Romanos 5:8",
+    "learningObjective": "Reconhecer que Deus prova o seu amor na cruz: Cristo morreu por nós ainda pecadores.",
+    "evidence": [
+      "Romanos 5:8"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Deus prova o seu amor para ___ em que\"",
+    "prompt": "Complete a frase: \"Deus prova o seu amor para ___ em que\"",
+    "cue": "Complete a frase: \"Deus prova o seu amor para ___ em que\"",
+    "feedbackCorrect": "Certo: o amor é para conosco.",
+    "feedbackWrong": {
+      "b": "Pecadores descreve o estado, não o ‘para’.",
+      "c": "Cristo é quem morre, não o complemento aqui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "conosco"
+      },
+      {
+        "id": "b",
+        "text": "pecadores"
+      },
+      {
+        "id": "c",
+        "text": "Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós.",
+    "template": "Deus prova o seu amor para ___ em que",
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "id": "soteriologia-pro-so-02-cruz-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Romanos 5:8",
+    "learningObjective": "Reconhecer que Deus prova o seu amor na cruz: Cristo morreu por nós ainda pecadores.",
+    "evidence": [
+      "Romanos 5:8"
+    ],
+    "type": "connect",
+    "question": "O que Romanos 5:8 comunica que se liga a este contexto?",
+    "prompt": "O que Romanos 5:8 comunica que se liga a este contexto?",
+    "cue": "O que Romanos 5:8 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o amor de Deus alcança quem ainda era pecador.",
+    "feedbackWrong": {
+      "b": "O texto não condiciona o amor à nossa reforma.",
+      "c": "A cruz não é prêmio; é prova a favor de pecadores."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Amor por pecadores"
+      },
+      {
+        "id": "b",
+        "text": "Amor só aos reformados"
+      },
+      {
+        "id": "c",
+        "text": "Cruz como prêmio moral"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós.",
+    "passageA": {
+      "ref": "Romanos 5:8",
+      "text": "mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Cristo morreu por nós ainda pecadores: o amor de Deus se prova na cruz, não na nossa melhoria prévia."
+    },
+    "trail": "soteriologia",
+    "section": "so-02-cruz",
+    "id": "soteriologia-pro-so-02-cruz-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 3:3",
+    "learningObjective": "Reconhecer que, sem nascer de novo, ninguém vê o reino: salvação é vida, não só reforma.",
+    "evidence": [
+      "João 3:3"
+    ],
+    "type": "true_false",
+    "question": "Se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "prompt": "Se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "cue": "Se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "feedbackCorrect": "Certo: é a afirmação literal de João 3:3.",
+    "feedbackWrong": {
+      "false": "Releia: sem nascer de novo, ninguém vê o reino."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "id": "soteriologia-sem-so-03-nascimento-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 3:3",
+    "learningObjective": "Reconhecer que, sem nascer de novo, ninguém vê o reino: salvação é vida, não só reforma.",
+    "evidence": [
+      "João 3:3"
+    ],
+    "type": "tap",
+    "question": "Em João 3:3, toque a palavra que falta em \"se alguém não nascer de ___, não pode ver o reino de Deus\"?",
+    "prompt": "Em João 3:3, toque a palavra que falta em \"se alguém não nascer de ___, não pode ver o reino de Deus\"?",
+    "cue": "Em João 3:3, toque a palavra que falta em \"se alguém não nascer de ___, não pode ver o reino de Deus\"?",
+    "feedbackCorrect": "Exato: é preciso nascer de novo.",
+    "feedbackWrong": {
+      "b": "Reino é o que se vê, não o modo do nascimento.",
+      "c": "Jesus fala; a lacuna pede ‘novo’."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "novo"
+      },
+      {
+        "id": "b",
+        "text": "reino"
+      },
+      {
+        "id": "c",
+        "text": "Jesus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "template": "se alguém não nascer de ___, não pode ver o reino de Deus",
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "id": "soteriologia-sem-so-03-nascimento-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 3:3",
+    "learningObjective": "Reconhecer que, sem nascer de novo, ninguém vê o reino: salvação é vida, não só reforma.",
+    "evidence": [
+      "João 3:3"
+    ],
+    "type": "choice",
+    "question": "Qual fato João 3:3 afirma sobre o reino de Deus?",
+    "prompt": "Qual fato João 3:3 afirma sobre o reino de Deus?",
+    "cue": "Qual fato João 3:3 afirma sobre o reino de Deus?",
+    "feedbackCorrect": "Certo: sem nascer de novo, ninguém pode ver o reino.",
+    "feedbackWrong": {
+      "b": "O texto não oferece a reforma como substituto.",
+      "c": "Jesus afirma a necessidade, não a recusa.",
+      "d": "O requisito é nascer de novo, não só estudar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Quem não nascer de novo não pode ver o reino de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Basta reformar costumes para ver o reino"
+      },
+      {
+        "id": "c",
+        "text": "Jesus diz que nascer de novo é opcional"
+      },
+      {
+        "id": "d",
+        "text": "O reino se vê só com estudo, sem novo nascimento"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "id": "soteriologia-sem-so-03-nascimento-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 3:3",
+    "learningObjective": "Reconhecer que, sem nascer de novo, ninguém vê o reino: salvação é vida, não só reforma.",
+    "evidence": [
+      "João 3:3"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em João 3:3?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em João 3:3?",
+    "cue": "Qual sequência mostra a ordem dos fatos em João 3:3?",
+    "feedbackCorrect": "Certo: Jesus fala, exige nascer de novo, e então ver o reino.",
+    "feedbackWrong": {
+      "b": "A condição do nascimento vem antes de ver o reino.",
+      "c": "A resposta de Jesus abre o versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus respondeu-lhe: Em verdade, em verdade te digo"
+      },
+      {
+        "id": "b",
+        "text": "se alguém não nascer de novo"
+      },
+      {
+        "id": "c",
+        "text": "não pode ver o reino de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "id": "soteriologia-sem-so-03-nascimento-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 3:3",
+    "learningObjective": "Reconhecer que, sem nascer de novo, ninguém vê o reino: salvação é vida, não só reforma.",
+    "evidence": [
+      "João 3:3"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"não pode ver o ___ de Deus\"",
+    "prompt": "Complete a frase: \"não pode ver o ___ de Deus\"",
+    "cue": "Complete a frase: \"não pode ver o ___ de Deus\"",
+    "feedbackCorrect": "Certo: não pode ver o reino de Deus.",
+    "feedbackWrong": {
+      "b": "Novo descreve o nascimento, não o que se vê.",
+      "c": "Jesus é quem responde, não esta palavra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "reino"
+      },
+      {
+        "id": "b",
+        "text": "novo"
+      },
+      {
+        "id": "c",
+        "text": "Jesus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "template": "não pode ver o ___ de Deus",
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "id": "soteriologia-sem-so-03-nascimento-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 3:3",
+    "learningObjective": "Reconhecer que, sem nascer de novo, ninguém vê o reino: salvação é vida, não só reforma.",
+    "evidence": [
+      "João 3:3"
+    ],
+    "type": "connect",
+    "question": "O que João 3:3 comunica que se liga a este contexto?",
+    "prompt": "O que João 3:3 comunica que se liga a este contexto?",
+    "cue": "O que João 3:3 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a salvação é vida nova, não só ajuste de hábitos.",
+    "feedbackWrong": {
+      "b": "O texto exige nascimento, não só reforma.",
+      "c": "Ver o reino não é só informação religiosa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Salvação é vida nova"
+      },
+      {
+        "id": "b",
+        "text": "Basta reforma de hábitos"
+      },
+      {
+        "id": "c",
+        "text": "Reino como só informação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "passageA": {
+      "ref": "João 3:3",
+      "text": "Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Nascidos de novo: sem novo nascimento ninguém vê o reino — salvação é vida, não só reforma."
+    },
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "id": "soteriologia-sem-so-03-nascimento-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 3:3",
+    "learningObjective": "Reconhecer que, sem nascer de novo, ninguém vê o reino: salvação é vida, não só reforma.",
+    "evidence": [
+      "João 3:3"
+    ],
+    "type": "true_false",
+    "question": "O texto ensina que reforma moral basta para ver o reino, sem nascer de novo.",
+    "prompt": "O texto ensina que reforma moral basta para ver o reino, sem nascer de novo.",
+    "cue": "O texto ensina que reforma moral basta para ver o reino, sem nascer de novo.",
+    "feedbackCorrect": "Certo: sem nascer de novo, ninguém pode ver o reino.",
+    "feedbackWrong": {
+      "true": "Jesus recusa o acesso ao reino sem novo nascimento."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "id": "soteriologia-cam-so-03-nascimento-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 3:3",
+    "learningObjective": "Reconhecer que, sem nascer de novo, ninguém vê o reino: salvação é vida, não só reforma.",
+    "evidence": [
+      "João 3:3"
+    ],
+    "type": "tap",
+    "question": "Em João 3:3, toque a palavra que falta em \"se alguém não ___ de novo, não pode ver o reino de Deus\"?",
+    "prompt": "Em João 3:3, toque a palavra que falta em \"se alguém não ___ de novo, não pode ver o reino de Deus\"?",
+    "cue": "Em João 3:3, toque a palavra que falta em \"se alguém não ___ de novo, não pode ver o reino de Deus\"?",
+    "feedbackCorrect": "Exato: é preciso nascer de novo.",
+    "feedbackWrong": {
+      "b": "Ver é o resultado; a lacuna pede o verbo ‘nascer’.",
+      "c": "Digo pertence à fórmula de Jesus, não aqui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "nascer"
+      },
+      {
+        "id": "b",
+        "text": "ver"
+      },
+      {
+        "id": "c",
+        "text": "digo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "template": "se alguém não ___ de novo, não pode ver o reino de Deus",
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "id": "soteriologia-cam-so-03-nascimento-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 3:3",
+    "learningObjective": "Reconhecer que, sem nascer de novo, ninguém vê o reino: salvação é vida, não só reforma.",
+    "evidence": [
+      "João 3:3"
+    ],
+    "type": "choice",
+    "question": "Como João 3:3 relaciona novo nascimento e o reino?",
+    "prompt": "Como João 3:3 relaciona novo nascimento e o reino?",
+    "cue": "Como João 3:3 relaciona novo nascimento e o reino?",
+    "feedbackCorrect": "Certo: ver o reino depende de nascer de novo.",
+    "feedbackWrong": {
+      "a": "O texto não trata o nascimento como metáfora vazia.",
+      "c": "Não há exceção para os ‘quase bons’.",
+      "d": "A condição é vida nova, não só ética melhor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Nascer de novo é só imagem, sem exigência real"
+      },
+      {
+        "id": "b",
+        "text": "Sem novo nascimento, ninguém pode ver o reino"
+      },
+      {
+        "id": "c",
+        "text": "Quem já é religioso dispensa nascer de novo"
+      },
+      {
+        "id": "d",
+        "text": "O reino se alcança só com esforço moral crescente"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "id": "soteriologia-cam-so-03-nascimento-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 3:3",
+    "learningObjective": "Reconhecer que, sem nascer de novo, ninguém vê o reino: salvação é vida, não só reforma.",
+    "evidence": [
+      "João 3:3"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de João 3:3?",
+    "prompt": "Como se encadeiam os eventos de João 3:3?",
+    "cue": "Como se encadeiam os eventos de João 3:3?",
+    "feedbackCorrect": "Certo: palavra de Jesus, condição do nascimento, ver o reino.",
+    "feedbackWrong": {
+      "b": "Ver o reino não precede a condição de nascer de novo.",
+      "c": "A resposta de Jesus vem primeiro."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus respondeu-lhe: Em verdade, em verdade te digo"
+      },
+      {
+        "id": "b",
+        "text": "se alguém não nascer de novo"
+      },
+      {
+        "id": "c",
+        "text": "não pode ver o reino de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "id": "soteriologia-cam-so-03-nascimento-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 3:3",
+    "learningObjective": "Reconhecer que, sem nascer de novo, ninguém vê o reino: salvação é vida, não só reforma.",
+    "evidence": [
+      "João 3:3"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"se ___ não nascer de novo, não pode ver o reino de Deus\"",
+    "prompt": "Complete a frase: \"se ___ não nascer de novo, não pode ver o reino de Deus\"",
+    "cue": "Complete a frase: \"se ___ não nascer de novo, não pode ver o reino de Deus\"",
+    "feedbackCorrect": "Certo: se alguém não nascer de novo.",
+    "feedbackWrong": {
+      "b": "Verdade abre o dito de Jesus, não esta lacuna.",
+      "c": "Reino é o que se vê, não o sujeito da frase."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "alguém"
+      },
+      {
+        "id": "b",
+        "text": "verdade"
+      },
+      {
+        "id": "c",
+        "text": "reino"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "template": "se ___ não nascer de novo, não pode ver o reino de Deus",
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "id": "soteriologia-cam-so-03-nascimento-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 3:3",
+    "learningObjective": "Reconhecer que, sem nascer de novo, ninguém vê o reino: salvação é vida, não só reforma.",
+    "evidence": [
+      "João 3:3"
+    ],
+    "type": "connect",
+    "question": "O que João 3:3 comunica que se liga a este contexto?",
+    "prompt": "O que João 3:3 comunica que se liga a este contexto?",
+    "cue": "O que João 3:3 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: ver o reino exige nascimento, não só reforma.",
+    "feedbackWrong": {
+      "b": "Reforma não substitui o nascer de novo.",
+      "c": "O acesso não é automático por religião prévia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ver o reino exige nascimento"
+      },
+      {
+        "id": "b",
+        "text": "Reforma substitui o nascimento"
+      },
+      {
+        "id": "c",
+        "text": "Acesso automático ao reino"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "passageA": {
+      "ref": "João 3:3",
+      "text": "Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Nascidos de novo: sem novo nascimento ninguém vê o reino — salvação é vida, não só reforma."
+    },
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "id": "soteriologia-cam-so-03-nascimento-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 3:3",
+    "learningObjective": "Reconhecer que, sem nascer de novo, ninguém vê o reino: salvação é vida, não só reforma.",
+    "evidence": [
+      "João 3:3"
+    ],
+    "type": "true_false",
+    "question": "Sem novo nascimento ninguém vê o reino: salvação é vida, não só reforma.",
+    "prompt": "Sem novo nascimento ninguém vê o reino: salvação é vida, não só reforma.",
+    "cue": "Sem novo nascimento ninguém vê o reino: salvação é vida, não só reforma.",
+    "feedbackCorrect": "Certo: João 3:3 exige nascer de novo para ver o reino.",
+    "feedbackWrong": {
+      "false": "O texto trata de vida nova, não de mero conserto moral."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "id": "soteriologia-pro-so-03-nascimento-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 3:3",
+    "learningObjective": "Reconhecer que, sem nascer de novo, ninguém vê o reino: salvação é vida, não só reforma.",
+    "evidence": [
+      "João 3:3"
+    ],
+    "type": "tap",
+    "question": "Em João 3:3, toque a palavra que falta em \"Em ___, em verdade te digo que, se alguém não nascer de novo\"?",
+    "prompt": "Em João 3:3, toque a palavra que falta em \"Em ___, em verdade te digo que, se alguém não nascer de novo\"?",
+    "cue": "Em João 3:3, toque a palavra que falta em \"Em ___, em verdade te digo que, se alguém não nascer de novo\"?",
+    "feedbackCorrect": "Exato: Em verdade, em verdade te digo.",
+    "feedbackWrong": {
+      "b": "Novo descreve o nascimento, não esta fórmula.",
+      "c": "Reino aparece no fim, não nesta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "verdade"
+      },
+      {
+        "id": "b",
+        "text": "novo"
+      },
+      {
+        "id": "c",
+        "text": "reino"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "template": "Em ___, em verdade te digo que, se alguém não nascer de novo",
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "id": "soteriologia-pro-so-03-nascimento-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 3:3",
+    "learningObjective": "Reconhecer que, sem nascer de novo, ninguém vê o reino: salvação é vida, não só reforma.",
+    "evidence": [
+      "João 3:3"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido teológico de João 3:3?",
+    "prompt": "Qual leitura interpreta melhor o sentido teológico de João 3:3?",
+    "cue": "Qual leitura interpreta melhor o sentido teológico de João 3:3?",
+    "feedbackCorrect": "Certo: o reino se vê por vida nova, não por conserto superficial.",
+    "feedbackWrong": {
+      "a": "Jesus não reduz o reino a progresso ético.",
+      "b": "A condição é real: sem nascer de novo, não se vê.",
+      "d": "Nicodemos ouve exigência de vida, não de técnica."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O reino se vê por progresso ético, sem vida nova"
+      },
+      {
+        "id": "b",
+        "text": "Nascer de novo é opcional para quem já é piedoso"
+      },
+      {
+        "id": "c",
+        "text": "Salvação é vida nova: sem nascer de novo, não se vê o reino"
+      },
+      {
+        "id": "d",
+        "text": "Jesus ensina só um método de autoaperfeiçoamento"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "id": "soteriologia-pro-so-03-nascimento-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 3:3",
+    "learningObjective": "Reconhecer que, sem nascer de novo, ninguém vê o reino: salvação é vida, não só reforma.",
+    "evidence": [
+      "João 3:3"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de João 3:3?",
+    "prompt": "Qual sequência revela o sentido de João 3:3?",
+    "cue": "Qual sequência revela o sentido de João 3:3?",
+    "feedbackCorrect": "Certo: a palavra de Jesus, o nascimento, o ver o reino.",
+    "feedbackWrong": {
+      "b": "O sentido começa na palavra de Jesus, não no reino isolado.",
+      "c": "Ver o reino é o desfecho, não o início."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus respondeu-lhe: Em verdade, em verdade te digo"
+      },
+      {
+        "id": "b",
+        "text": "se alguém não nascer de novo"
+      },
+      {
+        "id": "c",
+        "text": "não pode ver o reino de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "id": "soteriologia-pro-so-03-nascimento-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 3:3",
+    "learningObjective": "Reconhecer que, sem nascer de novo, ninguém vê o reino: salvação é vida, não só reforma.",
+    "evidence": [
+      "João 3:3"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"não pode ver o reino de ___\"",
+    "prompt": "Complete a frase: \"não pode ver o reino de ___\"",
+    "cue": "Complete a frase: \"não pode ver o reino de ___\"",
+    "feedbackCorrect": "Certo: o reino de Deus.",
+    "feedbackWrong": {
+      "b": "Alguém é o sujeito da condição, não o dono do reino.",
+      "c": "Novo descreve o nascimento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus"
+      },
+      {
+        "id": "b",
+        "text": "alguém"
+      },
+      {
+        "id": "c",
+        "text": "novo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "template": "não pode ver o reino de ___",
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "id": "soteriologia-pro-so-03-nascimento-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 3:3",
+    "learningObjective": "Reconhecer que, sem nascer de novo, ninguém vê o reino: salvação é vida, não só reforma.",
+    "evidence": [
+      "João 3:3"
+    ],
+    "type": "connect",
+    "question": "O que João 3:3 comunica que se liga a este contexto?",
+    "prompt": "O que João 3:3 comunica que se liga a este contexto?",
+    "cue": "O que João 3:3 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o reino se encontra por nascimento, não por conserto.",
+    "feedbackWrong": {
+      "b": "O texto não reduz a salvação a ética melhor.",
+      "c": "Entrar no reino não é só mudar de grupo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Reino por nascimento novo"
+      },
+      {
+        "id": "b",
+        "text": "Reino por ética melhor"
+      },
+      {
+        "id": "c",
+        "text": "Reino por mudança de grupo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "passageA": {
+      "ref": "João 3:3",
+      "text": "Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Nascidos de novo: sem novo nascimento ninguém vê o reino — salvação é vida, não só reforma."
+    },
+    "trail": "soteriologia",
+    "section": "so-03-nascimento",
+    "id": "soteriologia-pro-so-03-nascimento-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 2:8; Romanos 5:8; João 3:3",
+    "learningObjective": "Integrar graça como dom, cruz por pecadores e nascimento de novo na salvação.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9",
+      "Romanos 5:8",
+      "João 3:3"
+    ],
+    "type": "true_false",
+    "question": "Pela graça é que sois salvos, mediante a fé; Cristo morreu por pecadores; é preciso nascer de novo.",
+    "prompt": "Pela graça é que sois salvos, mediante a fé; Cristo morreu por pecadores; é preciso nascer de novo.",
+    "cue": "Pela graça é que sois salvos, mediante a fé; Cristo morreu por pecadores; é preciso nascer de novo.",
+    "feedbackCorrect": "Certo: os três textos afirmam graça, cruz e novo nascimento.",
+    "feedbackWrong": {
+      "false": "Os trechos combinados dizem exatamente isso."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie. mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós. Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "id": "soteriologia-sem-so-boss-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 2:8; Romanos 5:8; João 3:3",
+    "learningObjective": "Integrar graça como dom, cruz por pecadores e nascimento de novo na salvação.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9",
+      "Romanos 5:8",
+      "João 3:3"
+    ],
+    "type": "tap",
+    "question": "Em Efésios 2:8; Romanos 5:8; João 3:3, toque a palavra que falta em \"Pois pela ___ é que sois salvos, mediante a fé\"?",
+    "prompt": "Em Efésios 2:8; Romanos 5:8; João 3:3, toque a palavra que falta em \"Pois pela ___ é que sois salvos, mediante a fé\"?",
+    "cue": "Em Efésios 2:8; Romanos 5:8; João 3:3, toque a palavra que falta em \"Pois pela ___ é que sois salvos, mediante a fé\"?",
+    "feedbackCorrect": "Exato: a salvação é pela graça.",
+    "feedbackWrong": {
+      "b": "Pecadores está em Romanos 5:8, não nesta lacuna.",
+      "c": "Reino está em João 3:3, não aqui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "graça"
+      },
+      {
+        "id": "b",
+        "text": "pecadores"
+      },
+      {
+        "id": "c",
+        "text": "reino"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie. mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós. Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "template": "Pois pela ___ é que sois salvos, mediante a fé",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "id": "soteriologia-sem-so-boss-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 2:8; Romanos 5:8; João 3:3",
+    "learningObjective": "Integrar graça como dom, cruz por pecadores e nascimento de novo na salvação.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9",
+      "Romanos 5:8",
+      "João 3:3"
+    ],
+    "type": "choice",
+    "question": "O que os três textos afirmam juntos sobre a salvação?",
+    "prompt": "O que os três textos afirmam juntos sobre a salvação?",
+    "cue": "O que os três textos afirmam juntos sobre a salvação?",
+    "feedbackCorrect": "Certo: graça como dom, cruz por pecadores e nascer de novo.",
+    "feedbackWrong": {
+      "b": "Efésios 2 recusa obras como causa.",
+      "c": "Romanos 5 situa a cruz ainda em pecadores.",
+      "d": "João 3 exige nascer de novo, não só reforma."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Dom da graça, cruz por pecadores e nascimento de novo"
+      },
+      {
+        "id": "b",
+        "text": "Salvação por obras, cruz só para justos e reforma"
+      },
+      {
+        "id": "c",
+        "text": "Cristo morre depois da nossa melhoria moral"
+      },
+      {
+        "id": "d",
+        "text": "O reino se vê sem nascer de novo, só com esforço"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie. mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós. Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "id": "soteriologia-sem-so-boss-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 2:8; Romanos 5:8; João 3:3",
+    "learningObjective": "Integrar graça como dom, cruz por pecadores e nascimento de novo na salvação.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9",
+      "Romanos 5:8",
+      "João 3:3"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Efésios 2:8; Romanos 5:8; João 3:3?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Efésios 2:8; Romanos 5:8; João 3:3?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Efésios 2:8; Romanos 5:8; João 3:3?",
+    "feedbackCorrect": "Certo: graça e fé, cruz por pecadores, nascer de novo.",
+    "feedbackWrong": {
+      "b": "A graça de Efésios 2 abre o conjunto, não o fecha.",
+      "c": "O novo nascimento de João 3 vem por último."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pois pela graça é que sois salvos, mediante a fé"
+      },
+      {
+        "id": "b",
+        "text": "quando éramos ainda pecadores, morreu Cristo por nós"
+      },
+      {
+        "id": "c",
+        "text": "se alguém não nascer de novo, não pode ver o reino de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie. mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós. Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "id": "soteriologia-sem-so-boss-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 2:8; Romanos 5:8; João 3:3",
+    "learningObjective": "Integrar graça como dom, cruz por pecadores e nascimento de novo na salvação.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9",
+      "Romanos 5:8",
+      "João 3:3"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"não de ___, para que ninguém se glorie\"",
+    "prompt": "Complete a frase: \"não de ___, para que ninguém se glorie\"",
+    "cue": "Complete a frase: \"não de ___, para que ninguém se glorie\"",
+    "feedbackCorrect": "Certo: não de obras, para que ninguém se glorie.",
+    "feedbackWrong": {
+      "b": "Fé é o meio em Efésios 2:8, não esta lacuna.",
+      "c": "Amor é o tema de Romanos 5:8."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "obras"
+      },
+      {
+        "id": "b",
+        "text": "fé"
+      },
+      {
+        "id": "c",
+        "text": "amor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie. mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós. Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "template": "não de ___, para que ninguém se glorie",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "id": "soteriologia-sem-so-boss-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 2:8; Romanos 5:8; João 3:3",
+    "learningObjective": "Integrar graça como dom, cruz por pecadores e nascimento de novo na salvação.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9",
+      "Romanos 5:8",
+      "João 3:3"
+    ],
+    "type": "connect",
+    "question": "O que Efésios 2:8; Romanos 5:8; João 3:3 comunica que se liga a este contexto?",
+    "prompt": "O que Efésios 2:8; Romanos 5:8; João 3:3 comunica que se liga a este contexto?",
+    "cue": "O que Efésios 2:8; Romanos 5:8; João 3:3 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: os três eixos da graça salvadora aparecem juntos.",
+    "feedbackWrong": {
+      "b": "O conjunto não descreve autojustificação.",
+      "c": "A cruz e o nascimento não são prêmios ao mérito."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Dom, cruz e nascimento"
+      },
+      {
+        "id": "b",
+        "text": "Mérito, reforma e orgulho"
+      },
+      {
+        "id": "c",
+        "text": "Salário pela santidade prévia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie. mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós. Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "passageA": {
+      "ref": "Efésios 2:8; Romanos 5:8; João 3:3",
+      "text": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie. mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós. Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Graça salvadora: dom, cruz por pecadores e nascimento de novo."
+    },
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "id": "soteriologia-sem-so-boss-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 2:8; Romanos 5:8; João 3:3",
+    "learningObjective": "Integrar graça como dom, cruz por pecadores e nascimento de novo na salvação.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9",
+      "Romanos 5:8",
+      "João 3:3"
+    ],
+    "type": "true_false",
+    "question": "Os três textos ensinam que a salvação é conquista por obras, depois da nossa melhoria e sem nascer de novo.",
+    "prompt": "Os três textos ensinam que a salvação é conquista por obras, depois da nossa melhoria e sem nascer de novo.",
+    "cue": "Os três textos ensinam que a salvação é conquista por obras, depois da nossa melhoria e sem nascer de novo.",
+    "feedbackCorrect": "Certo: é dom, cruz por pecadores e nascimento de novo.",
+    "feedbackWrong": {
+      "true": "O conjunto recusa obras, melhoria prévia e só reforma."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie. mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós. Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "id": "soteriologia-cam-so-boss-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 2:8; Romanos 5:8; João 3:3",
+    "learningObjective": "Integrar graça como dom, cruz por pecadores e nascimento de novo na salvação.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9",
+      "Romanos 5:8",
+      "João 3:3"
+    ],
+    "type": "tap",
+    "question": "Em Efésios 2:8; Romanos 5:8; João 3:3, toque a palavra que falta em \"quando éramos ainda ___, morreu Cristo por nós\"?",
+    "prompt": "Em Efésios 2:8; Romanos 5:8; João 3:3, toque a palavra que falta em \"quando éramos ainda ___, morreu Cristo por nós\"?",
+    "cue": "Em Efésios 2:8; Romanos 5:8; João 3:3, toque a palavra que falta em \"quando éramos ainda ___, morreu Cristo por nós\"?",
+    "feedbackCorrect": "Exato: ainda pecadores, morreu Cristo por nós.",
+    "feedbackWrong": {
+      "b": "Graça está em Efésios 2, não nesta lacuna.",
+      "c": "Novo descreve o nascimento em João 3."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "pecadores"
+      },
+      {
+        "id": "b",
+        "text": "graça"
+      },
+      {
+        "id": "c",
+        "text": "novo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie. mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós. Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "template": "quando éramos ainda ___, morreu Cristo por nós",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "id": "soteriologia-cam-so-boss-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 2:8; Romanos 5:8; João 3:3",
+    "learningObjective": "Integrar graça como dom, cruz por pecadores e nascimento de novo na salvação.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9",
+      "Romanos 5:8",
+      "João 3:3"
+    ],
+    "type": "choice",
+    "question": "Como se encadeiam graça, cruz e novo nascimento nestes textos?",
+    "prompt": "Como se encadeiam graça, cruz e novo nascimento nestes textos?",
+    "cue": "Como se encadeiam graça, cruz e novo nascimento nestes textos?",
+    "feedbackCorrect": "Certo: o dom chega na cruz por pecadores e gera vida nova.",
+    "feedbackWrong": {
+      "a": "A cruz não espera o mérito; Romanos 5 o recusa.",
+      "c": "João 3 não trata o nascimento como adorno opcional.",
+      "d": "Efésios 2 não faz das obras a causa da salvação."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Primeiro o mérito, depois a cruz, enfim a graça"
+      },
+      {
+        "id": "b",
+        "text": "O dom se prova na cruz por pecadores e pede vida nova"
+      },
+      {
+        "id": "c",
+        "text": "Nascer de novo é extra, se a graça já bastou"
+      },
+      {
+        "id": "d",
+        "text": "Obras unem os três textos como causa da salvação"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie. mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós. Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "id": "soteriologia-cam-so-boss-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 2:8; Romanos 5:8; João 3:3",
+    "learningObjective": "Integrar graça como dom, cruz por pecadores e nascimento de novo na salvação.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9",
+      "Romanos 5:8",
+      "João 3:3"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Efésios 2:8; Romanos 5:8; João 3:3?",
+    "prompt": "Como se encadeiam os eventos de Efésios 2:8; Romanos 5:8; João 3:3?",
+    "cue": "Como se encadeiam os eventos de Efésios 2:8; Romanos 5:8; João 3:3?",
+    "feedbackCorrect": "Certo: graça recebida, cruz por pecadores, ver o reino nascendo de novo.",
+    "feedbackWrong": {
+      "b": "A ordem pedagógica vai de Efésios a Romanos a João.",
+      "c": "O nascimento de novo não abre o conjunto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pois pela graça é que sois salvos, mediante a fé"
+      },
+      {
+        "id": "b",
+        "text": "quando éramos ainda pecadores, morreu Cristo por nós"
+      },
+      {
+        "id": "c",
+        "text": "se alguém não nascer de novo, não pode ver o reino de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie. mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós. Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "id": "soteriologia-cam-so-boss-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 2:8; Romanos 5:8; João 3:3",
+    "learningObjective": "Integrar graça como dom, cruz por pecadores e nascimento de novo na salvação.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9",
+      "Romanos 5:8",
+      "João 3:3"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Pois pela graça é que sois salvos, mediante a ___\"",
+    "prompt": "Complete a frase: \"Pois pela graça é que sois salvos, mediante a ___\"",
+    "cue": "Complete a frase: \"Pois pela graça é que sois salvos, mediante a ___\"",
+    "feedbackCorrect": "Certo: mediante a fé.",
+    "feedbackWrong": {
+      "b": "Obras são excluídas no v. 9.",
+      "c": "Reino pertence a João 3:3."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "fé"
+      },
+      {
+        "id": "b",
+        "text": "obras"
+      },
+      {
+        "id": "c",
+        "text": "reino"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie. mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós. Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "template": "Pois pela graça é que sois salvos, mediante a ___",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "id": "soteriologia-cam-so-boss-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 2:8; Romanos 5:8; João 3:3",
+    "learningObjective": "Integrar graça como dom, cruz por pecadores e nascimento de novo na salvação.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9",
+      "Romanos 5:8",
+      "João 3:3"
+    ],
+    "type": "connect",
+    "question": "O que Efésios 2:8; Romanos 5:8; João 3:3 comunica que se liga a este contexto?",
+    "prompt": "O que Efésios 2:8; Romanos 5:8; João 3:3 comunica que se liga a este contexto?",
+    "cue": "O que Efésios 2:8; Romanos 5:8; João 3:3 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a graça salvadora une presente, cruz e vida nova.",
+    "feedbackWrong": {
+      "b": "Não há cadeia de mérito humano nestes textos.",
+      "c": "Reforma sozinha não esgota a salvação bíblica."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Graça, cruz e vida nova"
+      },
+      {
+        "id": "b",
+        "text": "Cadeia de mérito humano"
+      },
+      {
+        "id": "c",
+        "text": "Só reforma sem a cruz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie. mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós. Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "passageA": {
+      "ref": "Efésios 2:8; Romanos 5:8; João 3:3",
+      "text": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie. mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós. Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Graça salvadora: dom, cruz por pecadores e nascimento de novo."
+    },
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "id": "soteriologia-cam-so-boss-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 2:8; Romanos 5:8; João 3:3",
+    "learningObjective": "Integrar graça como dom, cruz por pecadores e nascimento de novo na salvação.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9",
+      "Romanos 5:8",
+      "João 3:3"
+    ],
+    "type": "true_false",
+    "question": "Graça salvadora: dom, cruz por pecadores e nascimento de novo.",
+    "prompt": "Graça salvadora: dom, cruz por pecadores e nascimento de novo.",
+    "cue": "Graça salvadora: dom, cruz por pecadores e nascimento de novo.",
+    "feedbackCorrect": "Certo: os três textos formam esse eixo da salvação.",
+    "feedbackWrong": {
+      "false": "Essa é a leitura teológica que o conjunto sustenta."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie. mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós. Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "id": "soteriologia-pro-so-boss-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 2:8; Romanos 5:8; João 3:3",
+    "learningObjective": "Integrar graça como dom, cruz por pecadores e nascimento de novo na salvação.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9",
+      "Romanos 5:8",
+      "João 3:3"
+    ],
+    "type": "tap",
+    "question": "Em Efésios 2:8; Romanos 5:8; João 3:3, toque a palavra que falta em \"se alguém não ___ de novo, não pode ver o reino de Deus\"?",
+    "prompt": "Em Efésios 2:8; Romanos 5:8; João 3:3, toque a palavra que falta em \"se alguém não ___ de novo, não pode ver o reino de Deus\"?",
+    "cue": "Em Efésios 2:8; Romanos 5:8; João 3:3, toque a palavra que falta em \"se alguém não ___ de novo, não pode ver o reino de Deus\"?",
+    "feedbackCorrect": "Exato: é preciso nascer de novo.",
+    "feedbackWrong": {
+      "b": "Morreu descreve a cruz, não esta lacuna.",
+      "c": "Dom está em Efésios 2, não aqui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "nascer"
+      },
+      {
+        "id": "b",
+        "text": "morreu"
+      },
+      {
+        "id": "c",
+        "text": "dom"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie. mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós. Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "template": "se alguém não ___ de novo, não pode ver o reino de Deus",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "id": "soteriologia-pro-so-boss-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 2:8; Romanos 5:8; João 3:3",
+    "learningObjective": "Integrar graça como dom, cruz por pecadores e nascimento de novo na salvação.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9",
+      "Romanos 5:8",
+      "João 3:3"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o conjunto de Efésios 2, Romanos 5 e João 3?",
+    "prompt": "Qual leitura interpreta melhor o conjunto de Efésios 2, Romanos 5 e João 3?",
+    "cue": "Qual leitura interpreta melhor o conjunto de Efésios 2, Romanos 5 e João 3?",
+    "feedbackCorrect": "Certo: salvação é dom, amor na cruz e vida nova.",
+    "feedbackWrong": {
+      "a": "Os textos recusam o mérito como causa.",
+      "b": "A cruz não espera reforma prévia.",
+      "d": "João 3 não reduz o reino a ética melhor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A salvação é salário de quem já se melhorou"
+      },
+      {
+        "id": "b",
+        "text": "Cristo morre só pelos que já nasceram de novo"
+      },
+      {
+        "id": "c",
+        "text": "Deus salva por graça, ama na cruz e gera vida nova"
+      },
+      {
+        "id": "d",
+        "text": "Basta reforma moral, sem dom, cruz nem nascimento"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie. mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós. Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "id": "soteriologia-pro-so-boss-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 2:8; Romanos 5:8; João 3:3",
+    "learningObjective": "Integrar graça como dom, cruz por pecadores e nascimento de novo na salvação.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9",
+      "Romanos 5:8",
+      "João 3:3"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Efésios 2:8; Romanos 5:8; João 3:3?",
+    "prompt": "Qual sequência revela o sentido de Efésios 2:8; Romanos 5:8; João 3:3?",
+    "cue": "Qual sequência revela o sentido de Efésios 2:8; Romanos 5:8; João 3:3?",
+    "feedbackCorrect": "Certo: o dom, a cruz por pecadores e o nascer de novo.",
+    "feedbackWrong": {
+      "b": "O sentido começa na graça, não no reino isolado.",
+      "c": "O novo nascimento conclui o eixo, não o inicia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pois pela graça é que sois salvos, mediante a fé"
+      },
+      {
+        "id": "b",
+        "text": "quando éramos ainda pecadores, morreu Cristo por nós"
+      },
+      {
+        "id": "c",
+        "text": "se alguém não nascer de novo, não pode ver o reino de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie. mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós. Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "id": "soteriologia-pro-so-boss-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 2:8; Romanos 5:8; João 3:3",
+    "learningObjective": "Integrar graça como dom, cruz por pecadores e nascimento de novo na salvação.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9",
+      "Romanos 5:8",
+      "João 3:3"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"quando éramos ainda pecadores, morreu ___ por nós\"",
+    "prompt": "Complete a frase: \"quando éramos ainda pecadores, morreu ___ por nós\"",
+    "cue": "Complete a frase: \"quando éramos ainda pecadores, morreu ___ por nós\"",
+    "feedbackCorrect": "Certo: morreu Cristo por nós.",
+    "feedbackWrong": {
+      "b": "Deus prova o amor; quem morre é Cristo.",
+      "c": "Alguém pertence a João 3:3."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Deus"
+      },
+      {
+        "id": "c",
+        "text": "alguém"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie. mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós. Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "template": "quando éramos ainda pecadores, morreu ___ por nós",
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "id": "soteriologia-pro-so-boss-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 2:8; Romanos 5:8; João 3:3",
+    "learningObjective": "Integrar graça como dom, cruz por pecadores e nascimento de novo na salvação.",
+    "evidence": [
+      "Efésios 2:8",
+      "Efésios 2:9",
+      "Romanos 5:8",
+      "João 3:3"
+    ],
+    "type": "connect",
+    "question": "O que Efésios 2:8; Romanos 5:8; João 3:3 comunica que se liga a este contexto?",
+    "prompt": "O que Efésios 2:8; Romanos 5:8; João 3:3 comunica que se liga a este contexto?",
+    "cue": "O que Efésios 2:8; Romanos 5:8; João 3:3 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a graça salvadora une dom, cruz e nascimento.",
+    "feedbackWrong": {
+      "b": "O conjunto não descreve auto-salvação.",
+      "c": "O orgulho religioso é o que esses textos cortam."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Graça salvadora completa"
+      },
+      {
+        "id": "b",
+        "text": "Auto-salvação por esforço"
+      },
+      {
+        "id": "c",
+        "text": "Orgulho da religião prévia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie. mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós. Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus.",
+    "passageA": {
+      "ref": "Efésios 2:8; Romanos 5:8; João 3:3",
+      "text": "Pois pela graça é que sois salvos, mediante a fé; e isso não vem de vós; é o dom de Deus; não de obras, para que ninguém se glorie. mas Deus prova o seu amor para conosco em que, quando éramos ainda pecadores, morreu Cristo por nós. Jesus respondeu-lhe: Em verdade, em verdade te digo que, se alguém não nascer de novo, não pode ver o reino de Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Graça salvadora: dom, cruz por pecadores e nascimento de novo."
+    },
+    "trail": "soteriologia",
+    "section": "so-boss",
+    "id": "soteriologia-pro-so-boss-06"
+  }
+]

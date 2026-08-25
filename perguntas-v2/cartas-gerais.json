@@ -1,0 +1,2207 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Pedro 2:9",
+    "learningObjective": "Reconhecer que os crentes são geração eleita, sacerdócio real, nação santa e povo de Deus, chamados das trevas para a luz.",
+    "evidence": [
+      "1 Pedro 2:9"
+    ],
+    "type": "true_false",
+    "question": "Os destinatários de 1 Pedro 2:9 são a geração eleita, o sacerdócio real e a nação santa.",
+    "feedbackCorrect": "Certo: o versículo nomeia o povo exatamente assim.",
+    "feedbackWrong": {
+      "false": "Releia 1 Pedro 2:9: geração eleita, sacerdócio real e nação santa."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz;",
+    "trail": "cartas-gerais",
+    "section": "cg-01",
+    "id": "cartas-gerais-sem-cg-01-01",
+    "prompt": "Os destinatários de 1 Pedro 2:9 são a geração eleita, o sacerdócio real e a nação santa.",
+    "cue": "Os destinatários de 1 Pedro 2:9 são a geração eleita, o sacerdócio real e a nação santa."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Pedro 2:9",
+    "learningObjective": "Reconhecer que os crentes são geração eleita, sacerdócio real, nação santa e povo de Deus, chamados das trevas para a luz.",
+    "evidence": [
+      "1 Pedro 2:9"
+    ],
+    "type": "tap",
+    "question": "Em 1 Pedro 2:9, toque a palavra que falta em \"Mas vós sois a geração ___, o sacerdócio real\"?",
+    "feedbackCorrect": "Exato: o texto diz geração eleita.",
+    "feedbackWrong": {
+      "a": "Trevas aparece no chamado, não nesta lacuna.",
+      "c": "Luz fecha o versículo, não descreve a geração."
+    },
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz;",
+    "template": "Mas vós sois a geração ___, o sacerdócio real",
+    "options": [
+      {
+        "id": "a",
+        "text": "trevas"
+      },
+      {
+        "id": "b",
+        "text": "eleita"
+      },
+      {
+        "id": "c",
+        "text": "luz"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cartas-gerais",
+    "section": "cg-01",
+    "id": "cartas-gerais-sem-cg-01-02",
+    "prompt": "Em 1 Pedro 2:9, toque a palavra que falta em \"Mas vós sois a geração ___, o sacerdócio real\"?",
+    "cue": "Em 1 Pedro 2:9, toque a palavra que falta em \"Mas vós sois a geração ___, o sacerdócio real\"?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Pedro 2:9",
+    "learningObjective": "Reconhecer que os crentes são geração eleita, sacerdócio real, nação santa e povo de Deus, chamados das trevas para a luz.",
+    "evidence": [
+      "1 Pedro 2:9"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelo texto em 1 Pedro 2:9?",
+    "feedbackCorrect": "Certo: o versículo declara essa identidade do povo.",
+    "feedbackWrong": {
+      "a": "O texto diz que foram chamados das trevas, não que permanecem nelas.",
+      "b": "O texto fala de nação santa e sacerdócio, não de identidade só política.",
+      "d": "O chamado é para a maravilhosa luz, não para o silêncio."
+    },
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz;",
+    "options": [
+      {
+        "id": "a",
+        "text": "O povo permanece nas trevas, sem nenhum chamado."
+      },
+      {
+        "id": "b",
+        "text": "A identidade do povo é apenas política, sem fé."
+      },
+      {
+        "id": "c",
+        "text": "Vós sois a geração eleita, o sacerdócio real e a nação santa."
+      },
+      {
+        "id": "d",
+        "text": "O chamado é das trevas para o silêncio, sem anúncio."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "cartas-gerais",
+    "section": "cg-01",
+    "id": "cartas-gerais-sem-cg-01-03",
+    "prompt": "Qual afirmação é feita diretamente pelo texto em 1 Pedro 2:9?",
+    "cue": "Qual afirmação é feita diretamente pelo texto em 1 Pedro 2:9?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Pedro 2:9",
+    "learningObjective": "Reconhecer que os crentes são geração eleita, sacerdócio real, nação santa e povo de Deus, chamados das trevas para a luz.",
+    "evidence": [
+      "1 Pedro 2:9"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em 1 Pedro 2:9?",
+    "feedbackCorrect": "Certo: identidade, povo seu e propósito de proclamar.",
+    "feedbackWrong": {
+      "b": "Essa peça vem depois da geração eleita no versículo.",
+      "c": "O propósito de proclamar fecha o trecho, não o abre."
+    },
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas vós sois a geração eleita, o sacerdócio real"
+      },
+      {
+        "id": "b",
+        "text": "a nação santa, o povo todo seu"
+      },
+      {
+        "id": "c",
+        "text": "para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cartas-gerais",
+    "section": "cg-01",
+    "id": "cartas-gerais-sem-cg-01-04",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 1 Pedro 2:9?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 1 Pedro 2:9?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Pedro 2:9",
+    "learningObjective": "Reconhecer que os crentes são geração eleita, sacerdócio real, nação santa e povo de Deus, chamados das trevas para a luz.",
+    "evidence": [
+      "1 Pedro 2:9"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"para que proclameis as grandezas daquele que vos chamou das ___ para a sua maravilhosa luz\"",
+    "feedbackCorrect": "Certo: o chamado é das trevas para a luz.",
+    "feedbackWrong": {
+      "b": "Eleita descreve a geração, não esta lacuna.",
+      "c": "Geração abre o versículo, não o chamado das trevas."
+    },
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz;",
+    "template": "para que proclameis as grandezas daquele que vos chamou das ___ para a sua maravilhosa luz",
+    "options": [
+      {
+        "id": "a",
+        "text": "trevas"
+      },
+      {
+        "id": "b",
+        "text": "eleita"
+      },
+      {
+        "id": "c",
+        "text": "geração"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cartas-gerais",
+    "section": "cg-01",
+    "id": "cartas-gerais-sem-cg-01-05",
+    "prompt": "Complete a frase: \"para que proclameis as grandezas daquele que vos chamou das ___ para a sua maravilhosa luz\"",
+    "cue": "Complete a frase: \"para que proclameis as grandezas daquele que vos chamou das ___ para a sua maravilhosa luz\""
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Pedro 2:9",
+    "learningObjective": "Reconhecer que os crentes são geração eleita, sacerdócio real, nação santa e povo de Deus, chamados das trevas para a luz.",
+    "evidence": [
+      "1 Pedro 2:9"
+    ],
+    "type": "connect",
+    "question": "O que 1 Pedro 2:9 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o povo eleito existe para proclamar as grandezas de Deus.",
+    "feedbackWrong": {
+      "b": "O texto manda proclamar, não calar.",
+      "c": "O chamado é para a luz, não de volta às trevas."
+    },
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz;",
+    "passageA": {
+      "ref": "1 Pedro 2:9",
+      "text": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A fé que se espalha é povo eleito que proclama as grandezas de quem o tirou das trevas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Povo eleito que proclama"
+      },
+      {
+        "id": "b",
+        "text": "Silêncio sem anúncio"
+      },
+      {
+        "id": "c",
+        "text": "Volta às trevas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cartas-gerais",
+    "section": "cg-01",
+    "id": "cartas-gerais-sem-cg-01-06",
+    "prompt": "O que 1 Pedro 2:9 comunica que se liga a este contexto?",
+    "cue": "O que 1 Pedro 2:9 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Pedro 2:9",
+    "learningObjective": "Compreender que essa identidade tem finalidade: proclamar as grandezas de quem os chamou.",
+    "evidence": [
+      "1 Pedro 2:9"
+    ],
+    "type": "true_false",
+    "question": "A eleição de 1 Pedro 2:9 serve só para honra privada, sem proclamar as grandezas de Deus.",
+    "feedbackCorrect": "Certo: o texto liga a identidade ao anúncio, não à honra muda.",
+    "feedbackWrong": {
+      "true": "O versículo diz para que proclameis as grandezas, não para guardar silêncio."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz;",
+    "trail": "cartas-gerais",
+    "section": "cg-01",
+    "id": "cartas-gerais-cam-cg-01-01",
+    "prompt": "A eleição de 1 Pedro 2:9 serve só para honra privada, sem proclamar as grandezas de Deus.",
+    "cue": "A eleição de 1 Pedro 2:9 serve só para honra privada, sem proclamar as grandezas de Deus."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Pedro 2:9",
+    "learningObjective": "Compreender que essa identidade tem finalidade: proclamar as grandezas de quem os chamou.",
+    "evidence": [
+      "1 Pedro 2:9"
+    ],
+    "type": "tap",
+    "question": "Em 1 Pedro 2:9, toque a palavra que falta em \"para que ___ as grandezas daquele que vos chamou\"?",
+    "feedbackCorrect": "Exato: a finalidade é proclamar as grandezas.",
+    "feedbackWrong": {
+      "b": "Trevas é de onde foram chamados, não o verbo da finalidade.",
+      "c": "Luz é o destino do chamado, não o verbo."
+    },
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz;",
+    "template": "para que ___ as grandezas daquele que vos chamou",
+    "options": [
+      {
+        "id": "a",
+        "text": "proclameis"
+      },
+      {
+        "id": "b",
+        "text": "trevas"
+      },
+      {
+        "id": "c",
+        "text": "luz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cartas-gerais",
+    "section": "cg-01",
+    "id": "cartas-gerais-cam-cg-01-02",
+    "prompt": "Em 1 Pedro 2:9, toque a palavra que falta em \"para que ___ as grandezas daquele que vos chamou\"?",
+    "cue": "Em 1 Pedro 2:9, toque a palavra que falta em \"para que ___ as grandezas daquele que vos chamou\"?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Pedro 2:9",
+    "learningObjective": "Compreender que essa identidade tem finalidade: proclamar as grandezas de quem os chamou.",
+    "evidence": [
+      "1 Pedro 2:9"
+    ],
+    "type": "choice",
+    "question": "O que a identidade de 1 Pedro 2:9 prepara o povo para fazer?",
+    "feedbackCorrect": "Certo: a identidade existe para proclamar quem os chamou à luz.",
+    "feedbackWrong": {
+      "a": "O texto dá finalidade pública: proclamar, não guardar segredo.",
+      "b": "O chamado é das trevas para a luz, não de volta às trevas.",
+      "c": "O sujeito do chamado é Deus, não o mérito humano."
+    },
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Guardar a eleição em segredo, sem anúncio."
+      },
+      {
+        "id": "b",
+        "text": "Voltar às trevas de onde o povo veio."
+      },
+      {
+        "id": "c",
+        "text": "Trocar o chamado de Deus por mérito próprio."
+      },
+      {
+        "id": "d",
+        "text": "Proclamar as grandezas de quem os chamou para a luz."
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "trail": "cartas-gerais",
+    "section": "cg-01",
+    "id": "cartas-gerais-cam-cg-01-03",
+    "prompt": "O que a identidade de 1 Pedro 2:9 prepara o povo para fazer?",
+    "cue": "O que a identidade de 1 Pedro 2:9 prepara o povo para fazer?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Pedro 2:9",
+    "learningObjective": "Compreender que essa identidade tem finalidade: proclamar as grandezas de quem os chamou.",
+    "evidence": [
+      "1 Pedro 2:9"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de 1 Pedro 2:9?",
+    "feedbackCorrect": "Certo: identidade de povo, depois a finalidade de proclamar o chamado.",
+    "feedbackWrong": {
+      "a": "A geração eleita abre o versículo, não o fecha.",
+      "c": "Proclamar as grandezas é a finalidade, não o primeiro passo."
+    },
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sois a geração eleita e o sacerdócio real"
+      },
+      {
+        "id": "b",
+        "text": "Sois a nação santa, o povo todo seu"
+      },
+      {
+        "id": "c",
+        "text": "Proclamais as grandezas de quem vos chamou das trevas para a luz"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cartas-gerais",
+    "section": "cg-01",
+    "id": "cartas-gerais-cam-cg-01-04",
+    "prompt": "Como se encadeiam os eventos de 1 Pedro 2:9?",
+    "cue": "Como se encadeiam os eventos de 1 Pedro 2:9?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Pedro 2:9",
+    "learningObjective": "Compreender que essa identidade tem finalidade: proclamar as grandezas de quem os chamou.",
+    "evidence": [
+      "1 Pedro 2:9"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Mas vós sois a geração eleita, o ___ real, a nação santa\"",
+    "feedbackCorrect": "Certo: o texto fala do sacerdócio real.",
+    "feedbackWrong": {
+      "a": "Luz fecha o chamado, não esta lacuna.",
+      "b": "Trevas é de onde foram chamados, não o sacerdócio."
+    },
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz;",
+    "template": "Mas vós sois a geração eleita, o ___ real, a nação santa",
+    "options": [
+      {
+        "id": "a",
+        "text": "luz"
+      },
+      {
+        "id": "b",
+        "text": "trevas"
+      },
+      {
+        "id": "c",
+        "text": "sacerdócio"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "cartas-gerais",
+    "section": "cg-01",
+    "id": "cartas-gerais-cam-cg-01-05",
+    "prompt": "Complete a frase: \"Mas vós sois a geração eleita, o ___ real, a nação santa\"",
+    "cue": "Complete a frase: \"Mas vós sois a geração eleita, o ___ real, a nação santa\""
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Pedro 2:9",
+    "learningObjective": "Compreender que essa identidade tem finalidade: proclamar as grandezas de quem os chamou.",
+    "evidence": [
+      "1 Pedro 2:9"
+    ],
+    "type": "connect",
+    "question": "O que 1 Pedro 2:9 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: eleitos existem para anunciar quem os tirou das trevas.",
+    "feedbackWrong": {
+      "a": "A eleição no texto tem missão, não é sem finalidade.",
+      "c": "A luz é dado do chamado, não conquista solitária."
+    },
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz;",
+    "passageA": {
+      "ref": "1 Pedro 2:9",
+      "text": "para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A fé que se espalha é povo eleito que proclama as grandezas de quem o tirou das trevas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Eleição sem missão"
+      },
+      {
+        "id": "b",
+        "text": "Eleitos para anunciar"
+      },
+      {
+        "id": "c",
+        "text": "Luz conquistada sozinha"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cartas-gerais",
+    "section": "cg-01",
+    "id": "cartas-gerais-cam-cg-01-06",
+    "prompt": "O que 1 Pedro 2:9 comunica que se liga a este contexto?",
+    "cue": "O que 1 Pedro 2:9 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Pedro 2:9",
+    "learningObjective": "Interpretar que a eleição forma um povo que anuncia, não um privilégio mudo.",
+    "evidence": [
+      "1 Pedro 2:9"
+    ],
+    "type": "true_false",
+    "question": "Ser povo todo seu, em 1 Pedro 2:9, inclui a missão de proclamar as grandezas de quem chamou das trevas.",
+    "feedbackCorrect": "Certo: pertencer a Deus e anunciar suas grandezas andam juntos.",
+    "feedbackWrong": {
+      "false": "O versículo liga povo todo seu ao propósito de proclamar."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz;",
+    "trail": "cartas-gerais",
+    "section": "cg-01",
+    "id": "cartas-gerais-pro-cg-01-01",
+    "prompt": "Ser povo todo seu, em 1 Pedro 2:9, inclui a missão de proclamar as grandezas de quem chamou das trevas.",
+    "cue": "Ser povo todo seu, em 1 Pedro 2:9, inclui a missão de proclamar as grandezas de quem chamou das trevas."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Pedro 2:9",
+    "learningObjective": "Interpretar que a eleição forma um povo que anuncia, não um privilégio mudo.",
+    "evidence": [
+      "1 Pedro 2:9"
+    ],
+    "type": "tap",
+    "question": "Em 1 Pedro 2:9, toque a palavra que falta em \"para a sua ___ luz\"?",
+    "feedbackCorrect": "Exato: a luz para a qual foram chamados é maravilhosa.",
+    "feedbackWrong": {
+      "a": "Geração descreve o povo, não a luz.",
+      "b": "Nação descreve o povo santo, não a luz."
+    },
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz;",
+    "template": "para a sua ___ luz",
+    "options": [
+      {
+        "id": "a",
+        "text": "geração"
+      },
+      {
+        "id": "b",
+        "text": "nação"
+      },
+      {
+        "id": "c",
+        "text": "maravilhosa"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "cartas-gerais",
+    "section": "cg-01",
+    "id": "cartas-gerais-pro-cg-01-02",
+    "prompt": "Em 1 Pedro 2:9, toque a palavra que falta em \"para a sua ___ luz\"?",
+    "cue": "Em 1 Pedro 2:9, toque a palavra que falta em \"para a sua ___ luz\"?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Pedro 2:9",
+    "learningObjective": "Interpretar que a eleição forma um povo que anuncia, não um privilégio mudo.",
+    "evidence": [
+      "1 Pedro 2:9"
+    ],
+    "type": "choice",
+    "question": "Qual leitura de 1 Pedro 2:9 o texto sustenta sobre a eleição?",
+    "feedbackCorrect": "Certo: Deus forma um povo seu para anunciar quem o tirou das trevas.",
+    "feedbackWrong": {
+      "a": "A finalidade explícita é proclamar, não dispensar o anúncio.",
+      "c": "A luz é destino do chamado de Deus, não conquista humana.",
+      "d": "Sacerdócio real no texto é identidade santa, não programa político."
+    },
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz;",
+    "options": [
+      {
+        "id": "a",
+        "text": "A eleição dispensa o anúncio público das grandezas de Deus."
+      },
+      {
+        "id": "b",
+        "text": "Deus forma um povo seu para anunciar quem o tirou das trevas."
+      },
+      {
+        "id": "c",
+        "text": "A luz maravilhosa é conquista humana, não chamado divino."
+      },
+      {
+        "id": "d",
+        "text": "Sacerdócio real significa domínio político sobre as nações."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cartas-gerais",
+    "section": "cg-01",
+    "id": "cartas-gerais-pro-cg-01-03",
+    "prompt": "Qual leitura de 1 Pedro 2:9 o texto sustenta sobre a eleição?",
+    "cue": "Qual leitura de 1 Pedro 2:9 o texto sustenta sobre a eleição?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Pedro 2:9",
+    "learningObjective": "Interpretar que a eleição forma um povo que anuncia, não um privilégio mudo.",
+    "evidence": [
+      "1 Pedro 2:9"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de 1 Pedro 2:9?",
+    "feedbackCorrect": "Certo: o chamado à luz gera povo seu, que proclama as grandezas.",
+    "feedbackWrong": {
+      "a": "O chamado das trevas explica a identidade, não some dela.",
+      "b": "A identidade de povo vem antes da proclamação no sentido do texto."
+    },
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus chama das trevas para a sua maravilhosa luz"
+      },
+      {
+        "id": "b",
+        "text": "Constitui geração eleita, sacerdócio real e nação santa"
+      },
+      {
+        "id": "c",
+        "text": "O povo proclama as grandezas daquele que o chamou"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cartas-gerais",
+    "section": "cg-01",
+    "id": "cartas-gerais-pro-cg-01-04",
+    "prompt": "Qual sequência revela o sentido de 1 Pedro 2:9?",
+    "cue": "Qual sequência revela o sentido de 1 Pedro 2:9?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Pedro 2:9",
+    "learningObjective": "Interpretar que a eleição forma um povo que anuncia, não um privilégio mudo.",
+    "evidence": [
+      "1 Pedro 2:9"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"a nação ___, o povo todo seu, para que proclameis as grandezas\"",
+    "feedbackCorrect": "Certo: o texto chama o povo de nação santa.",
+    "feedbackWrong": {
+      "a": "Eleita descreve a geração, não a nação nesta lacuna.",
+      "c": "Maravilhosa descreve a luz, não a nação."
+    },
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz;",
+    "template": "a nação ___, o povo todo seu, para que proclameis as grandezas",
+    "options": [
+      {
+        "id": "a",
+        "text": "eleita"
+      },
+      {
+        "id": "b",
+        "text": "santa"
+      },
+      {
+        "id": "c",
+        "text": "maravilhosa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cartas-gerais",
+    "section": "cg-01",
+    "id": "cartas-gerais-pro-cg-01-05",
+    "prompt": "Complete a frase: \"a nação ___, o povo todo seu, para que proclameis as grandezas\"",
+    "cue": "Complete a frase: \"a nação ___, o povo todo seu, para que proclameis as grandezas\""
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Pedro 2:9",
+    "learningObjective": "Interpretar que a eleição forma um povo que anuncia, não um privilégio mudo.",
+    "evidence": [
+      "1 Pedro 2:9"
+    ],
+    "type": "connect",
+    "question": "O que 1 Pedro 2:9 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a eleição gera um povo que anuncia, não um privilégio mudo.",
+    "feedbackWrong": {
+      "a": "O texto une pertencer a Deus e proclamar, não os separa.",
+      "b": "A identidade no versículo tem finalidade de anúncio."
+    },
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz;",
+    "passageA": {
+      "ref": "1 Pedro 2:9",
+      "text": "o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A fé que se espalha é povo eleito que proclama as grandezas de quem o tirou das trevas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Privilégio sem voz"
+      },
+      {
+        "id": "b",
+        "text": "Identidade muda"
+      },
+      {
+        "id": "c",
+        "text": "Eleição gera anúncio"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "cartas-gerais",
+    "section": "cg-01",
+    "id": "cartas-gerais-pro-cg-01-06",
+    "prompt": "O que 1 Pedro 2:9 comunica que se liga a este contexto?",
+    "cue": "O que 1 Pedro 2:9 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Perceber que Tiago exige ser cumpridor da palavra, e não apenas ouvidor.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "true_false",
+    "question": "Tiago 1:22 afirma que basta ser ouvidor da palavra, sem cumpri-la.",
+    "feedbackCorrect": "Certo: o texto manda ser cumpridor, não ouvidor tão somente.",
+    "feedbackWrong": {
+      "true": "Releia Tiago 1:22: tornai-vos cumpridores, não só ouvidores."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "trail": "cartas-gerais",
+    "section": "cg-02",
+    "id": "cartas-gerais-sem-cg-02-01",
+    "prompt": "Tiago 1:22 afirma que basta ser ouvidor da palavra, sem cumpri-la.",
+    "cue": "Tiago 1:22 afirma que basta ser ouvidor da palavra, sem cumpri-la."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Perceber que Tiago exige ser cumpridor da palavra, e não apenas ouvidor.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "tap",
+    "question": "Em Tiago 1:22, toque a palavra que falta em \"Tornai-vos ___ da palavra\"?",
+    "feedbackCorrect": "Exato: o texto pede cumpridores da palavra.",
+    "feedbackWrong": {
+      "a": "Palavra é o objeto, não o que se deve tornar.",
+      "b": "Ouvidores é o que o texto recusa como suficiente."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "template": "Tornai-vos ___ da palavra",
+    "options": [
+      {
+        "id": "a",
+        "text": "palavra"
+      },
+      {
+        "id": "b",
+        "text": "ouvidores"
+      },
+      {
+        "id": "c",
+        "text": "cumpridores"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "cartas-gerais",
+    "section": "cg-02",
+    "id": "cartas-gerais-sem-cg-02-02",
+    "prompt": "Em Tiago 1:22, toque a palavra que falta em \"Tornai-vos ___ da palavra\"?",
+    "cue": "Em Tiago 1:22, toque a palavra que falta em \"Tornai-vos ___ da palavra\"?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Perceber que Tiago exige ser cumpridor da palavra, e não apenas ouvidor.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelo texto em Tiago 1:22?",
+    "feedbackCorrect": "Certo: o versículo manda ser cumpridor, não só ouvidor.",
+    "feedbackWrong": {
+      "b": "O texto liga o só ouvir ao autoengano, não à suficiência.",
+      "c": "O autoengano vem de ouvir sem cumprir, não de cumprir demais.",
+      "d": "O mandamento é cumprir a palavra, não só contemplá-la."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tornai-vos cumpridores da palavra e não ouvidores tão somente."
+      },
+      {
+        "id": "b",
+        "text": "Basta ouvir a palavra para não se enganar."
+      },
+      {
+        "id": "c",
+        "text": "O autoengano vem de cumprir demais a palavra."
+      },
+      {
+        "id": "d",
+        "text": "A palavra não deve ser cumprida, só contemplada."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cartas-gerais",
+    "section": "cg-02",
+    "id": "cartas-gerais-sem-cg-02-03",
+    "prompt": "Qual afirmação é feita diretamente pelo texto em Tiago 1:22?",
+    "cue": "Qual afirmação é feita diretamente pelo texto em Tiago 1:22?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Perceber que Tiago exige ser cumpridor da palavra, e não apenas ouvidor.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Tiago 1:22?",
+    "feedbackCorrect": "Certo: cumprir, não só ouvir, para não se enganar.",
+    "feedbackWrong": {
+      "b": "A recusa do só ouvir vem depois do mandamento de cumprir.",
+      "c": "O autoengano fecha o versículo, não o abre."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tornai-vos cumpridores da palavra"
+      },
+      {
+        "id": "b",
+        "text": "e não ouvidores tão somente"
+      },
+      {
+        "id": "c",
+        "text": "enganando-vos a vós mesmos"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cartas-gerais",
+    "section": "cg-02",
+    "id": "cartas-gerais-sem-cg-02-04",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Tiago 1:22?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Tiago 1:22?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Perceber que Tiago exige ser cumpridor da palavra, e não apenas ouvidor.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Tornai-vos cumpridores da palavra e não ___ tão somente\"",
+    "feedbackCorrect": "Certo: o contraste é com ouvidores tão somente.",
+    "feedbackWrong": {
+      "a": "Somente qualifica os ouvidores, não preenche esta lacuna.",
+      "c": "Palavra já apareceu antes nesta frase."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "template": "Tornai-vos cumpridores da palavra e não ___ tão somente",
+    "options": [
+      {
+        "id": "a",
+        "text": "somente"
+      },
+      {
+        "id": "b",
+        "text": "ouvidores"
+      },
+      {
+        "id": "c",
+        "text": "palavra"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cartas-gerais",
+    "section": "cg-02",
+    "id": "cartas-gerais-sem-cg-02-05",
+    "prompt": "Complete a frase: \"Tornai-vos cumpridores da palavra e não ___ tão somente\"",
+    "cue": "Complete a frase: \"Tornai-vos cumpridores da palavra e não ___ tão somente\""
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Perceber que Tiago exige ser cumpridor da palavra, e não apenas ouvidor.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "connect",
+    "question": "O que Tiago 1:22 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: ouvir a palavra exige cumpri-la, senão há engano.",
+    "feedbackWrong": {
+      "a": "O texto não trata a audição como suficiente.",
+      "c": "O versículo recusa a prática opcional."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "passageA": {
+      "ref": "Tiago 1:22",
+      "text": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A fé aparece na vida: ouvir sem cumprir é enganar-se."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ouvir já basta"
+      },
+      {
+        "id": "b",
+        "text": "Ouvir exige cumprir"
+      },
+      {
+        "id": "c",
+        "text": "Prática opcional"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cartas-gerais",
+    "section": "cg-02",
+    "id": "cartas-gerais-sem-cg-02-06",
+    "prompt": "O que Tiago 1:22 comunica que se liga a este contexto?",
+    "cue": "O que Tiago 1:22 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Compreender que ouvir a palavra sem cumpri-la é enganar a si mesmo.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "true_false",
+    "question": "Ouvir a palavra sem cumpri-la, segundo Tiago 1:22, é enganar a si mesmo.",
+    "feedbackCorrect": "Certo: o autoengano é o ouvidor que não cumpre.",
+    "feedbackWrong": {
+      "false": "O versículo liga ouvidores tão somente a enganando-vos a vós mesmos."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "trail": "cartas-gerais",
+    "section": "cg-02",
+    "id": "cartas-gerais-cam-cg-02-01",
+    "prompt": "Ouvir a palavra sem cumpri-la, segundo Tiago 1:22, é enganar a si mesmo.",
+    "cue": "Ouvir a palavra sem cumpri-la, segundo Tiago 1:22, é enganar a si mesmo."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Compreender que ouvir a palavra sem cumpri-la é enganar a si mesmo.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "tap",
+    "question": "Em Tiago 1:22, toque a palavra que falta em \"enganando-vos a ___ mesmos\"?",
+    "feedbackCorrect": "Exato: o texto diz enganando-vos a vós mesmos.",
+    "feedbackWrong": {
+      "a": "Cumpridores é o que se deve tornar, não esta lacuna.",
+      "c": "Palavra é o que se cumpre, não o pronome aqui."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "template": "enganando-vos a ___ mesmos",
+    "options": [
+      {
+        "id": "a",
+        "text": "cumpridores"
+      },
+      {
+        "id": "b",
+        "text": "vós"
+      },
+      {
+        "id": "c",
+        "text": "palavra"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cartas-gerais",
+    "section": "cg-02",
+    "id": "cartas-gerais-cam-cg-02-02",
+    "prompt": "Em Tiago 1:22, toque a palavra que falta em \"enganando-vos a ___ mesmos\"?",
+    "cue": "Em Tiago 1:22, toque a palavra que falta em \"enganando-vos a ___ mesmos\"?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Compreender que ouvir a palavra sem cumpri-la é enganar a si mesmo.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "choice",
+    "question": "Por que Tiago opõe cumpridores e ouvidores tão somente?",
+    "feedbackCorrect": "Certo: ouvir sem prática produz autoengano.",
+    "feedbackWrong": {
+      "a": "O texto recusa a ideia de que ouvir já basta.",
+      "b": "Cumprir não é tratado como opcional para os sábios.",
+      "d": "A palavra pede resposta na vida, não só audição."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque ouvir já basta para a fé verdadeira."
+      },
+      {
+        "id": "b",
+        "text": "Porque cumprir a palavra é opcional para os sábios."
+      },
+      {
+        "id": "c",
+        "text": "Porque ouvir sem prática produz autoengano."
+      },
+      {
+        "id": "d",
+        "text": "Porque a palavra não pede nenhuma resposta na vida."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "cartas-gerais",
+    "section": "cg-02",
+    "id": "cartas-gerais-cam-cg-02-03",
+    "prompt": "Por que Tiago opõe cumpridores e ouvidores tão somente?",
+    "cue": "Por que Tiago opõe cumpridores e ouvidores tão somente?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Compreender que ouvir a palavra sem cumpri-la é enganar a si mesmo.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Tiago 1:22?",
+    "feedbackCorrect": "Certo: cumprir a palavra, não ficar só na audição, evita o engano.",
+    "feedbackWrong": {
+      "b": "O mandamento de cumprir vem antes da recusa do só ouvir.",
+      "c": "O autoengano é o resultado de só ouvir, não o primeiro passo."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tornai-vos cumpridores da palavra"
+      },
+      {
+        "id": "b",
+        "text": "Não fiqueis como ouvidores tão somente"
+      },
+      {
+        "id": "c",
+        "text": "Isso é enganar-vos a vós mesmos"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cartas-gerais",
+    "section": "cg-02",
+    "id": "cartas-gerais-cam-cg-02-04",
+    "prompt": "Como se encadeiam os eventos de Tiago 1:22?",
+    "cue": "Como se encadeiam os eventos de Tiago 1:22?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Compreender que ouvir a palavra sem cumpri-la é enganar a si mesmo.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Tornai-vos cumpridores da ___\"",
+    "feedbackCorrect": "Certo: o objeto a cumprir é a palavra.",
+    "feedbackWrong": {
+      "b": "Vós aparece no autoengano, não nesta lacuna.",
+      "c": "Somente qualifica os ouvidores, não o objeto."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "template": "Tornai-vos cumpridores da ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "palavra"
+      },
+      {
+        "id": "b",
+        "text": "vós"
+      },
+      {
+        "id": "c",
+        "text": "somente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cartas-gerais",
+    "section": "cg-02",
+    "id": "cartas-gerais-cam-cg-02-05",
+    "prompt": "Complete a frase: \"Tornai-vos cumpridores da ___\"",
+    "cue": "Complete a frase: \"Tornai-vos cumpridores da ___\""
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Compreender que ouvir a palavra sem cumpri-la é enganar a si mesmo.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "connect",
+    "question": "O que Tiago 1:22 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a fé que o texto pede aparece na prática.",
+    "feedbackWrong": {
+      "a": "O versículo não reduz a fé a uma teoria.",
+      "b": "Ouvir sem viver é o engano, não a ponte certa."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "passageA": {
+      "ref": "Tiago 1:22",
+      "text": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A fé aparece na vida: ouvir sem cumprir é enganar-se."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fé só na teoria"
+      },
+      {
+        "id": "b",
+        "text": "Ouvir sem viver"
+      },
+      {
+        "id": "c",
+        "text": "Fé visível na prática"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "cartas-gerais",
+    "section": "cg-02",
+    "id": "cartas-gerais-cam-cg-02-06",
+    "prompt": "O que Tiago 1:22 comunica que se liga a este contexto?",
+    "cue": "O que Tiago 1:22 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Interpretar que a fé verdadeira se verifica na prática da palavra recebida.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "true_false",
+    "question": "Em Tiago 1:22, o autoengano é fruto de cumprir a palavra com excesso de zelo.",
+    "feedbackCorrect": "Certo: o engano é ouvir sem cumprir, não o zelo em cumprir.",
+    "feedbackWrong": {
+      "true": "O texto liga o engano aos ouvidores tão somente, não aos cumpridores."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "trail": "cartas-gerais",
+    "section": "cg-02",
+    "id": "cartas-gerais-pro-cg-02-01",
+    "prompt": "Em Tiago 1:22, o autoengano é fruto de cumprir a palavra com excesso de zelo.",
+    "cue": "Em Tiago 1:22, o autoengano é fruto de cumprir a palavra com excesso de zelo."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Interpretar que a fé verdadeira se verifica na prática da palavra recebida.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "tap",
+    "question": "Em Tiago 1:22, toque a palavra que falta em \"e não ouvidores tão ___\"?",
+    "feedbackCorrect": "Exato: não ouvidores tão somente.",
+    "feedbackWrong": {
+      "b": "Cumpridores é o que se deve tornar, não esta lacuna.",
+      "c": "Enganando-vos descreve o resultado, não o tão somente."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "template": "e não ouvidores tão ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "somente"
+      },
+      {
+        "id": "b",
+        "text": "cumpridores"
+      },
+      {
+        "id": "c",
+        "text": "enganando-vos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cartas-gerais",
+    "section": "cg-02",
+    "id": "cartas-gerais-pro-cg-02-02",
+    "prompt": "Em Tiago 1:22, toque a palavra que falta em \"e não ouvidores tão ___\"?",
+    "cue": "Em Tiago 1:22, toque a palavra que falta em \"e não ouvidores tão ___\"?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Interpretar que a fé verdadeira se verifica na prática da palavra recebida.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "choice",
+    "question": "O que Tiago 1:22 implica sobre quem diz ter recebido a palavra?",
+    "feedbackCorrect": "Certo: a palavra recebida pede vida cumprida, senão há autoengano.",
+    "feedbackWrong": {
+      "a": "O texto recusa fé que fica só na audição.",
+      "b": "Cumprir a palavra aqui não é tratado como legalismo contra a graça.",
+      "c": "Ouvir sem viver não é sinal de maturidade no versículo."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A fé verdadeira pode ficar só na audição."
+      },
+      {
+        "id": "b",
+        "text": "O cumprimento da palavra é legalismo contrário à graça."
+      },
+      {
+        "id": "c",
+        "text": "Ouvir sem viver a palavra é prova de maturidade."
+      },
+      {
+        "id": "d",
+        "text": "A palavra recebida pede vida cumprida, senão há autoengano."
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "trail": "cartas-gerais",
+    "section": "cg-02",
+    "id": "cartas-gerais-pro-cg-02-03",
+    "prompt": "O que Tiago 1:22 implica sobre quem diz ter recebido a palavra?",
+    "cue": "O que Tiago 1:22 implica sobre quem diz ter recebido a palavra?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Interpretar que a fé verdadeira se verifica na prática da palavra recebida.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Tiago 1:22?",
+    "feedbackCorrect": "Certo: a palavra ouvida deve ser cumprida; só ouvir é engano.",
+    "feedbackWrong": {
+      "a": "A audição não é o fim; o texto pede cumprimento.",
+      "b": "O cumprimento vem como resposta à palavra ouvida."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A palavra é ouvida"
+      },
+      {
+        "id": "b",
+        "text": "A palavra deve ser cumprida"
+      },
+      {
+        "id": "c",
+        "text": "Ouvir sem cumprir é enganar-se"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cartas-gerais",
+    "section": "cg-02",
+    "id": "cartas-gerais-pro-cg-02-04",
+    "prompt": "Qual sequência revela o sentido de Tiago 1:22?",
+    "cue": "Qual sequência revela o sentido de Tiago 1:22?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Interpretar que a fé verdadeira se verifica na prática da palavra recebida.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"enganando-vos a vós ___\"",
+    "feedbackCorrect": "Certo: o autoengano é a vós mesmos.",
+    "feedbackWrong": {
+      "a": "Somente qualifica os ouvidores, não esta lacuna.",
+      "b": "Palavra é o que se cumpre, não o objeto do engano."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "template": "enganando-vos a vós ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "somente"
+      },
+      {
+        "id": "b",
+        "text": "palavra"
+      },
+      {
+        "id": "c",
+        "text": "mesmos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "cartas-gerais",
+    "section": "cg-02",
+    "id": "cartas-gerais-pro-cg-02-05",
+    "prompt": "Complete a frase: \"enganando-vos a vós ___\"",
+    "cue": "Complete a frase: \"enganando-vos a vós ___\""
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Interpretar que a fé verdadeira se verifica na prática da palavra recebida.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "connect",
+    "question": "O que Tiago 1:22 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a prática da palavra desmascara o autoengano.",
+    "feedbackWrong": {
+      "b": "O texto não elogia o ouvinte ocioso.",
+      "c": "A fé aqui não fica escondida da vida."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "passageA": {
+      "ref": "Tiago 1:22",
+      "text": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A fé aparece na vida: ouvir sem cumprir é enganar-se."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Prática desmascara o engano"
+      },
+      {
+        "id": "b",
+        "text": "Ouvidor ocioso"
+      },
+      {
+        "id": "c",
+        "text": "Fé escondida"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cartas-gerais",
+    "section": "cg-02",
+    "id": "cartas-gerais-pro-cg-02-06",
+    "prompt": "O que Tiago 1:22 comunica que se liga a este contexto?",
+    "cue": "O que Tiago 1:22 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Pedro 2:9; Tiago 1:22",
+    "learningObjective": "Observar juntos a identidade de 1 Pedro 2:9 e o cumprimento da palavra em Tiago 1:22.",
+    "evidence": [
+      "1 Pedro 2:9",
+      "Tiago 1:22"
+    ],
+    "type": "true_false",
+    "question": "1 Pedro 2:9 chama o povo de geração eleita, e Tiago 1:22 manda tornar-se cumpridor da palavra.",
+    "feedbackCorrect": "Certo: os dois textos dizem exatamente isso, lado a lado.",
+    "feedbackWrong": {
+      "false": "Releia os dois versículos: identidade eleita e ordem de cumprir."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz; Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "trail": "cartas-gerais",
+    "section": "cg-boss",
+    "id": "cartas-gerais-sem-cg-boss-01",
+    "prompt": "1 Pedro 2:9 chama o povo de geração eleita, e Tiago 1:22 manda tornar-se cumpridor da palavra.",
+    "cue": "1 Pedro 2:9 chama o povo de geração eleita, e Tiago 1:22 manda tornar-se cumpridor da palavra."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Pedro 2:9; Tiago 1:22",
+    "learningObjective": "Observar juntos a identidade de 1 Pedro 2:9 e o cumprimento da palavra em Tiago 1:22.",
+    "evidence": [
+      "1 Pedro 2:9",
+      "Tiago 1:22"
+    ],
+    "type": "tap",
+    "question": "Em 1 Pedro 2:9; Tiago 1:22, toque a palavra que falta em \"o povo todo ___\"?",
+    "feedbackCorrect": "Exato: o povo todo seu, em 1 Pedro 2:9.",
+    "feedbackWrong": {
+      "b": "Somente qualifica os ouvidores em Tiago, não esta lacuna.",
+      "c": "Ouvidores está em Tiago 1:22, não em povo todo seu."
+    },
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz; Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "template": "o povo todo ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "seu"
+      },
+      {
+        "id": "b",
+        "text": "somente"
+      },
+      {
+        "id": "c",
+        "text": "ouvidores"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cartas-gerais",
+    "section": "cg-boss",
+    "id": "cartas-gerais-sem-cg-boss-02",
+    "prompt": "Em 1 Pedro 2:9; Tiago 1:22, toque a palavra que falta em \"o povo todo ___\"?",
+    "cue": "Em 1 Pedro 2:9; Tiago 1:22, toque a palavra que falta em \"o povo todo ___\"?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Pedro 2:9; Tiago 1:22",
+    "learningObjective": "Observar juntos a identidade de 1 Pedro 2:9 e o cumprimento da palavra em Tiago 1:22.",
+    "evidence": [
+      "1 Pedro 2:9",
+      "Tiago 1:22"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação o conjunto de 1 Pedro 2:9 e Tiago 1:22 sustenta?",
+    "feedbackCorrect": "Certo: o povo eleito proclama e também cumpre a palavra.",
+    "feedbackWrong": {
+      "a": "Tiago 1:22 não deixa a identidade eleita sem cumprimento.",
+      "c": "Ouvir não substitui proclamar as grandezas nem cumprir a palavra.",
+      "d": "O chamado é para a luz, não para as trevas como destino."
+    },
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz; Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Basta a identidade eleita, sem cumprir a palavra."
+      },
+      {
+        "id": "b",
+        "text": "O povo eleito é chamado a proclamar e também a cumprir a palavra."
+      },
+      {
+        "id": "c",
+        "text": "Ouvir a palavra substitui a proclamação das grandezas."
+      },
+      {
+        "id": "d",
+        "text": "As trevas são o destino final do povo santo."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cartas-gerais",
+    "section": "cg-boss",
+    "id": "cartas-gerais-sem-cg-boss-03",
+    "prompt": "Qual afirmação o conjunto de 1 Pedro 2:9 e Tiago 1:22 sustenta?",
+    "cue": "Qual afirmação o conjunto de 1 Pedro 2:9 e Tiago 1:22 sustenta?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Pedro 2:9; Tiago 1:22",
+    "learningObjective": "Observar juntos a identidade de 1 Pedro 2:9 e o cumprimento da palavra em Tiago 1:22.",
+    "evidence": [
+      "1 Pedro 2:9",
+      "Tiago 1:22"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em 1 Pedro 2:9; Tiago 1:22?",
+    "feedbackCorrect": "Certo: identidade e proclamação em Pedro, cumprimento em Tiago.",
+    "feedbackWrong": {
+      "b": "Proclamar as grandezas vem depois da identidade no texto de Pedro.",
+      "c": "Tiago 1:22 fecha o conjunto, depois de 1 Pedro 2:9."
+    },
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz; Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa"
+      },
+      {
+        "id": "b",
+        "text": "para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz"
+      },
+      {
+        "id": "c",
+        "text": "Tornai-vos cumpridores da palavra e não ouvidores tão somente"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cartas-gerais",
+    "section": "cg-boss",
+    "id": "cartas-gerais-sem-cg-boss-04",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 1 Pedro 2:9; Tiago 1:22?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 1 Pedro 2:9; Tiago 1:22?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Pedro 2:9; Tiago 1:22",
+    "learningObjective": "Observar juntos a identidade de 1 Pedro 2:9 e o cumprimento da palavra em Tiago 1:22.",
+    "evidence": [
+      "1 Pedro 2:9",
+      "Tiago 1:22"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Tornai-vos cumpridores da ___ e não ouvidores tão somente\"",
+    "feedbackCorrect": "Certo: Tiago manda cumprir a palavra.",
+    "feedbackWrong": {
+      "a": "Trevas pertence ao chamado em Pedro, não a esta lacuna.",
+      "b": "Eleita descreve a geração, não o objeto a cumprir."
+    },
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz; Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "template": "Tornai-vos cumpridores da ___ e não ouvidores tão somente",
+    "options": [
+      {
+        "id": "a",
+        "text": "trevas"
+      },
+      {
+        "id": "b",
+        "text": "eleita"
+      },
+      {
+        "id": "c",
+        "text": "palavra"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "cartas-gerais",
+    "section": "cg-boss",
+    "id": "cartas-gerais-sem-cg-boss-05",
+    "prompt": "Complete a frase: \"Tornai-vos cumpridores da ___ e não ouvidores tão somente\"",
+    "cue": "Complete a frase: \"Tornai-vos cumpridores da ___ e não ouvidores tão somente\""
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Pedro 2:9; Tiago 1:22",
+    "learningObjective": "Observar juntos a identidade de 1 Pedro 2:9 e o cumprimento da palavra em Tiago 1:22.",
+    "evidence": [
+      "1 Pedro 2:9",
+      "Tiago 1:22"
+    ],
+    "type": "connect",
+    "question": "O que 1 Pedro 2:9; Tiago 1:22 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: identidade eleita e prática da palavra andam juntas.",
+    "feedbackWrong": {
+      "a": "Pedro e Tiago não separam eleição e obediência.",
+      "b": "Tiago recusa a ideia de que ouvir basta."
+    },
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz; Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "passageA": {
+      "ref": "1 Pedro 2:9; Tiago 1:22",
+      "text": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz; Tornai-vos cumpridores da palavra e não ouvidores tão somente."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Povo eleito que proclama também cumpre a palavra — identidade e prática juntas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Eleição sem obediência"
+      },
+      {
+        "id": "b",
+        "text": "Ouvir basta sempre"
+      },
+      {
+        "id": "c",
+        "text": "Identidade e prática juntas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "cartas-gerais",
+    "section": "cg-boss",
+    "id": "cartas-gerais-sem-cg-boss-06",
+    "prompt": "O que 1 Pedro 2:9; Tiago 1:22 comunica que se liga a este contexto?",
+    "cue": "O que 1 Pedro 2:9; Tiago 1:22 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Pedro 2:9; Tiago 1:22",
+    "learningObjective": "Relacionar o povo eleito que proclama com a prática de cumprir a palavra, não só ouvi-la.",
+    "evidence": [
+      "1 Pedro 2:9",
+      "Tiago 1:22"
+    ],
+    "type": "true_false",
+    "question": "Os dois textos separam identidade eleita e cumprimento da palavra como caminhos opostos.",
+    "feedbackCorrect": "Certo: os textos se somam, não se opõem.",
+    "feedbackWrong": {
+      "true": "Pedro dá identidade e anúncio; Tiago pede cumprimento: juntos, não opostos."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz; Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "trail": "cartas-gerais",
+    "section": "cg-boss",
+    "id": "cartas-gerais-cam-cg-boss-01",
+    "prompt": "Os dois textos separam identidade eleita e cumprimento da palavra como caminhos opostos.",
+    "cue": "Os dois textos separam identidade eleita e cumprimento da palavra como caminhos opostos."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Pedro 2:9; Tiago 1:22",
+    "learningObjective": "Relacionar o povo eleito que proclama com a prática de cumprir a palavra, não só ouvi-la.",
+    "evidence": [
+      "1 Pedro 2:9",
+      "Tiago 1:22"
+    ],
+    "type": "tap",
+    "question": "Em 1 Pedro 2:9; Tiago 1:22, toque a palavra que falta em \"e não ___ tão somente\"?",
+    "feedbackCorrect": "Exato: não ouvidores tão somente, em Tiago 1:22.",
+    "feedbackWrong": {
+      "a": "Geração está em Pedro, não nesta lacuna de Tiago.",
+      "b": "Trevas pertence ao chamado de Pedro, não a esta frase."
+    },
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz; Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "template": "e não ___ tão somente",
+    "options": [
+      {
+        "id": "a",
+        "text": "geração"
+      },
+      {
+        "id": "b",
+        "text": "trevas"
+      },
+      {
+        "id": "c",
+        "text": "ouvidores"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "cartas-gerais",
+    "section": "cg-boss",
+    "id": "cartas-gerais-cam-cg-boss-02",
+    "prompt": "Em 1 Pedro 2:9; Tiago 1:22, toque a palavra que falta em \"e não ___ tão somente\"?",
+    "cue": "Em 1 Pedro 2:9; Tiago 1:22, toque a palavra que falta em \"e não ___ tão somente\"?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Pedro 2:9; Tiago 1:22",
+    "learningObjective": "Relacionar o povo eleito que proclama com a prática de cumprir a palavra, não só ouvi-la.",
+    "evidence": [
+      "1 Pedro 2:9",
+      "Tiago 1:22"
+    ],
+    "type": "choice",
+    "question": "Como 1 Pedro 2:9 e Tiago 1:22 se encadeiam na vida do povo?",
+    "feedbackCorrect": "Certo: quem foi chamado à luz também cumpre a palavra.",
+    "feedbackWrong": {
+      "b": "Proclamar não dispensa o cumprimento prático em Tiago.",
+      "c": "Cumprir a palavra não apaga a identidade eleita de Pedro.",
+      "d": "Trevas e autoengano são o que o povo deixa, não marcas do sacerdócio."
+    },
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz; Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O povo chamado à luz também se torna cumpridor da palavra."
+      },
+      {
+        "id": "b",
+        "text": "A proclamação dispensa qualquer cumprimento prático."
+      },
+      {
+        "id": "c",
+        "text": "Cumprir a palavra apaga a identidade de povo eleito."
+      },
+      {
+        "id": "d",
+        "text": "As trevas e o autoengano são marcas do sacerdócio real."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cartas-gerais",
+    "section": "cg-boss",
+    "id": "cartas-gerais-cam-cg-boss-03",
+    "prompt": "Como 1 Pedro 2:9 e Tiago 1:22 se encadeiam na vida do povo?",
+    "cue": "Como 1 Pedro 2:9 e Tiago 1:22 se encadeiam na vida do povo?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Pedro 2:9; Tiago 1:22",
+    "learningObjective": "Relacionar o povo eleito que proclama com a prática de cumprir a palavra, não só ouvi-la.",
+    "evidence": [
+      "1 Pedro 2:9",
+      "Tiago 1:22"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de 1 Pedro 2:9; Tiago 1:22?",
+    "feedbackCorrect": "Certo: povo eleito, anúncio das grandezas, cumprimento da palavra.",
+    "feedbackWrong": {
+      "b": "A proclamação segue a identidade, não a antecede neste encadeamento.",
+      "c": "Cumprir a palavra é a prática que fecha o conjunto."
+    },
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz; Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sois geração eleita e povo todo seu"
+      },
+      {
+        "id": "b",
+        "text": "Proclamais as grandezas de quem vos chamou à luz"
+      },
+      {
+        "id": "c",
+        "text": "Tornai-vos cumpridores da palavra, não ouvidores tão somente"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cartas-gerais",
+    "section": "cg-boss",
+    "id": "cartas-gerais-cam-cg-boss-04",
+    "prompt": "Como se encadeiam os eventos de 1 Pedro 2:9; Tiago 1:22?",
+    "cue": "Como se encadeiam os eventos de 1 Pedro 2:9; Tiago 1:22?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Pedro 2:9; Tiago 1:22",
+    "learningObjective": "Relacionar o povo eleito que proclama com a prática de cumprir a palavra, não só ouvi-la.",
+    "evidence": [
+      "1 Pedro 2:9",
+      "Tiago 1:22"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"que vos chamou das ___ para a sua maravilhosa luz\"",
+    "feedbackCorrect": "Certo: o chamado em Pedro é das trevas para a luz.",
+    "feedbackWrong": {
+      "a": "Luz é o destino, não a origem do chamado.",
+      "c": "Palavra é o objeto em Tiago, não esta lacuna de Pedro."
+    },
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz; Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "template": "que vos chamou das ___ para a sua maravilhosa luz",
+    "options": [
+      {
+        "id": "a",
+        "text": "luz"
+      },
+      {
+        "id": "b",
+        "text": "trevas"
+      },
+      {
+        "id": "c",
+        "text": "palavra"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cartas-gerais",
+    "section": "cg-boss",
+    "id": "cartas-gerais-cam-cg-boss-05",
+    "prompt": "Complete a frase: \"que vos chamou das ___ para a sua maravilhosa luz\"",
+    "cue": "Complete a frase: \"que vos chamou das ___ para a sua maravilhosa luz\""
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Pedro 2:9; Tiago 1:22",
+    "learningObjective": "Relacionar o povo eleito que proclama com a prática de cumprir a palavra, não só ouvi-la.",
+    "evidence": [
+      "1 Pedro 2:9",
+      "Tiago 1:22"
+    ],
+    "type": "connect",
+    "question": "O que 1 Pedro 2:9; Tiago 1:22 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: proclamar as grandezas e cumprir a palavra se somam.",
+    "feedbackWrong": {
+      "b": "Os textos não opõem anúncio e obediência.",
+      "c": "Identidade sem prática é o que Tiago recusa."
+    },
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz; Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "passageA": {
+      "ref": "1 Pedro 2:9; Tiago 1:22",
+      "text": "para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz. Tornai-vos cumpridores da palavra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Povo eleito que proclama também cumpre a palavra — identidade e prática juntas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Proclamar e cumprir"
+      },
+      {
+        "id": "b",
+        "text": "Anúncio contra obediência"
+      },
+      {
+        "id": "c",
+        "text": "Identidade sem prática"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cartas-gerais",
+    "section": "cg-boss",
+    "id": "cartas-gerais-cam-cg-boss-06",
+    "prompt": "O que 1 Pedro 2:9; Tiago 1:22 comunica que se liga a este contexto?",
+    "cue": "O que 1 Pedro 2:9; Tiago 1:22 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Pedro 2:9; Tiago 1:22",
+    "learningObjective": "Interpretar que identidade eleita e cumprimento da palavra pertencem à mesma fé.",
+    "evidence": [
+      "1 Pedro 2:9",
+      "Tiago 1:22"
+    ],
+    "type": "true_false",
+    "question": "A identidade de povo eleito que proclama e a prática de cumprir a palavra pertencem à mesma fé.",
+    "feedbackCorrect": "Certo: os dois textos descrevem uma só fé, identidade e prática.",
+    "feedbackWrong": {
+      "false": "Pedro e Tiago não dividem a fé em anúncio mudo e prática sem povo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz; Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "trail": "cartas-gerais",
+    "section": "cg-boss",
+    "id": "cartas-gerais-pro-cg-boss-01",
+    "prompt": "A identidade de povo eleito que proclama e a prática de cumprir a palavra pertencem à mesma fé.",
+    "cue": "A identidade de povo eleito que proclama e a prática de cumprir a palavra pertencem à mesma fé."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Pedro 2:9; Tiago 1:22",
+    "learningObjective": "Interpretar que identidade eleita e cumprimento da palavra pertencem à mesma fé.",
+    "evidence": [
+      "1 Pedro 2:9",
+      "Tiago 1:22"
+    ],
+    "type": "tap",
+    "question": "Em 1 Pedro 2:9; Tiago 1:22, toque a palavra que falta em \"Tornai-vos ___ da palavra\"?",
+    "feedbackCorrect": "Exato: cumpridores da palavra, em Tiago 1:22.",
+    "feedbackWrong": {
+      "a": "Maravilhosa descreve a luz em Pedro, não esta lacuna.",
+      "c": "Eleita descreve a geração em Pedro, não o que se deve tornar."
+    },
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz; Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "template": "Tornai-vos ___ da palavra",
+    "options": [
+      {
+        "id": "a",
+        "text": "maravilhosa"
+      },
+      {
+        "id": "b",
+        "text": "cumpridores"
+      },
+      {
+        "id": "c",
+        "text": "eleita"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cartas-gerais",
+    "section": "cg-boss",
+    "id": "cartas-gerais-pro-cg-boss-02",
+    "prompt": "Em 1 Pedro 2:9; Tiago 1:22, toque a palavra que falta em \"Tornai-vos ___ da palavra\"?",
+    "cue": "Em 1 Pedro 2:9; Tiago 1:22, toque a palavra que falta em \"Tornai-vos ___ da palavra\"?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Pedro 2:9; Tiago 1:22",
+    "learningObjective": "Interpretar que identidade eleita e cumprimento da palavra pertencem à mesma fé.",
+    "evidence": [
+      "1 Pedro 2:9",
+      "Tiago 1:22"
+    ],
+    "type": "choice",
+    "question": "Qual leitura une 1 Pedro 2:9 e Tiago 1:22 sem distorcer os textos?",
+    "feedbackCorrect": "Certo: povo eleito que proclama também cumpre a palavra que ouviu.",
+    "feedbackWrong": {
+      "a": "A eleição em Pedro não cancela o cumprimento em Tiago.",
+      "b": "Cumprir a palavra responde ao chamado, não o substitui por esforço solto.",
+      "d": "A luz não anula o aviso de Tiago contra o autoengano."
+    },
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz; Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A eleição substitui a necessidade de cumprir a palavra."
+      },
+      {
+        "id": "b",
+        "text": "Cumprir a palavra é esforço humano sem chamado de Deus."
+      },
+      {
+        "id": "c",
+        "text": "Povo eleito que proclama também cumpre a palavra que ouviu."
+      },
+      {
+        "id": "d",
+        "text": "A maravilhosa luz anula qualquer risco de autoengano."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "cartas-gerais",
+    "section": "cg-boss",
+    "id": "cartas-gerais-pro-cg-boss-03",
+    "prompt": "Qual leitura une 1 Pedro 2:9 e Tiago 1:22 sem distorcer os textos?",
+    "cue": "Qual leitura une 1 Pedro 2:9 e Tiago 1:22 sem distorcer os textos?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Pedro 2:9; Tiago 1:22",
+    "learningObjective": "Interpretar que identidade eleita e cumprimento da palavra pertencem à mesma fé.",
+    "evidence": [
+      "1 Pedro 2:9",
+      "Tiago 1:22"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de 1 Pedro 2:9; Tiago 1:22?",
+    "feedbackCorrect": "Certo: chamado à luz, anúncio das grandezas, cumprimento da palavra.",
+    "feedbackWrong": {
+      "a": "O chamado das trevas funda a identidade, não some dela.",
+      "b": "A proclamação prepara a prática; não a substitui."
+    },
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz; Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus chama das trevas para a luz"
+      },
+      {
+        "id": "b",
+        "text": "O povo eleito proclama as grandezas desse chamado"
+      },
+      {
+        "id": "c",
+        "text": "Esse mesmo povo cumpre a palavra, sem só ouvi-la"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cartas-gerais",
+    "section": "cg-boss",
+    "id": "cartas-gerais-pro-cg-boss-04",
+    "prompt": "Qual sequência revela o sentido de 1 Pedro 2:9; Tiago 1:22?",
+    "cue": "Qual sequência revela o sentido de 1 Pedro 2:9; Tiago 1:22?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Pedro 2:9; Tiago 1:22",
+    "learningObjective": "Interpretar que identidade eleita e cumprimento da palavra pertencem à mesma fé.",
+    "evidence": [
+      "1 Pedro 2:9",
+      "Tiago 1:22"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"enganando-vos a vós ___\"",
+    "feedbackCorrect": "Certo: Tiago fala de enganar-vos a vós mesmos.",
+    "feedbackWrong": {
+      "b": "Eleita pertence a Pedro, não a esta lacuna de Tiago.",
+      "c": "Luz pertence ao chamado de Pedro, não ao autoengano."
+    },
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz; Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "template": "enganando-vos a vós ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "mesmos"
+      },
+      {
+        "id": "b",
+        "text": "eleita"
+      },
+      {
+        "id": "c",
+        "text": "luz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "cartas-gerais",
+    "section": "cg-boss",
+    "id": "cartas-gerais-pro-cg-boss-05",
+    "prompt": "Complete a frase: \"enganando-vos a vós ___\"",
+    "cue": "Complete a frase: \"enganando-vos a vós ___\""
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Pedro 2:9; Tiago 1:22",
+    "learningObjective": "Interpretar que identidade eleita e cumprimento da palavra pertencem à mesma fé.",
+    "evidence": [
+      "1 Pedro 2:9",
+      "Tiago 1:22"
+    ],
+    "type": "connect",
+    "question": "O que 1 Pedro 2:9; Tiago 1:22 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: eleitos que obedecem — identidade e prática da mesma fé.",
+    "feedbackWrong": {
+      "a": "Os textos não descrevem fé só de título.",
+      "c": "Anúncio sem vida é o que o conjunto recusa."
+    },
+    "passageText": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa, o povo todo seu, para que proclameis as grandezas daquele que vos chamou das trevas para a sua maravilhosa luz; Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "passageA": {
+      "ref": "1 Pedro 2:9; Tiago 1:22",
+      "text": "Mas vós sois a geração eleita, o sacerdócio real, a nação santa. Tornai-vos cumpridores da palavra e não ouvidores tão somente."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Povo eleito que proclama também cumpre a palavra — identidade e prática juntas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fé só de título"
+      },
+      {
+        "id": "b",
+        "text": "Eleitos que obedecem"
+      },
+      {
+        "id": "c",
+        "text": "Anúncio sem vida"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "cartas-gerais",
+    "section": "cg-boss",
+    "id": "cartas-gerais-pro-cg-boss-06",
+    "prompt": "O que 1 Pedro 2:9; Tiago 1:22 comunica que se liga a este contexto?",
+    "cue": "O que 1 Pedro 2:9; Tiago 1:22 comunica que se liga a este contexto?"
+  }
+]

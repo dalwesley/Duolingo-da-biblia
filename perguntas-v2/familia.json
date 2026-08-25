@@ -1,0 +1,3008 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 5:25",
+    "learningObjective": "Reconhecer que o marido ama a mulher como Cristo amou a igreja: entrega, não domínio vazio.",
+    "evidence": [
+      "Efésios 5:25"
+    ],
+    "type": "true_false",
+    "question": "Maridos devem amar as suas mulheres, como também Cristo amou a igreja.",
+    "prompt": "Maridos devem amar as suas mulheres, como também Cristo amou a igreja.",
+    "cue": "Maridos devem amar as suas mulheres, como também Cristo amou a igreja.",
+    "feedbackCorrect": "Certo: o texto manda amar como Cristo amou a igreja.",
+    "feedbackWrong": {
+      "false": "Releia: o modelo é o amor de Cristo pela igreja."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo,",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "trail": "familia",
+    "section": "fm-01-alianca",
+    "id": "familia-sem-fm-01-alianca-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 5:25",
+    "learningObjective": "Reconhecer que o marido ama a mulher como Cristo amou a igreja: entrega, não domínio vazio.",
+    "evidence": [
+      "Efésios 5:25"
+    ],
+    "type": "tap",
+    "question": "Em Efésios 5:25, toque a palavra que falta em \"Maridos, ___ a vossas mulheres\"?",
+    "prompt": "Em Efésios 5:25, toque a palavra que falta em \"Maridos, ___ a vossas mulheres\"?",
+    "cue": "Em Efésios 5:25, toque a palavra que falta em \"Maridos, ___ a vossas mulheres\"?",
+    "feedbackCorrect": "Exato: o verbo do versículo é amai.",
+    "feedbackWrong": {
+      "b": "Cristo é o modelo do amor, não o verbo desta lacuna.",
+      "c": "Igreja é a amada de Cristo, não o verbo pedido."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo,",
+    "template": "Maridos, ___ a vossas mulheres",
+    "options": [
+      {
+        "id": "a",
+        "text": "amai"
+      },
+      {
+        "id": "b",
+        "text": "Cristo"
+      },
+      {
+        "id": "c",
+        "text": "igreja"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-01-alianca",
+    "id": "familia-sem-fm-01-alianca-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 5:25",
+    "learningObjective": "Reconhecer que o marido ama a mulher como Cristo amou a igreja: entrega, não domínio vazio.",
+    "evidence": [
+      "Efésios 5:25"
+    ],
+    "type": "choice",
+    "question": "Qual fato Efésios 5:25 afirma sobre o amor de Cristo?",
+    "prompt": "Qual fato Efésios 5:25 afirma sobre o amor de Cristo?",
+    "cue": "Qual fato Efésios 5:25 afirma sobre o amor de Cristo?",
+    "feedbackCorrect": "Certo: Cristo amou a igreja e por ela se entregou a si mesmo.",
+    "feedbackWrong": {
+      "a": "O texto não descreve Cristo como juiz da esposa neste versículo.",
+      "b": "O texto fala de entrega, não de domínio sobre a igreja.",
+      "d": "O texto liga o amor à entrega, não a um conselho genérico."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo,",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo julga a igreja quando ela falha no dever"
+      },
+      {
+        "id": "b",
+        "text": "Cristo governa a igreja por domínio, sem se entregar"
+      },
+      {
+        "id": "c",
+        "text": "Cristo amou a igreja e por ela se entregou a si mesmo"
+      },
+      {
+        "id": "d",
+        "text": "Cristo apenas aconselha os maridos a serem gentis"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "familia",
+    "section": "fm-01-alianca",
+    "id": "familia-sem-fm-01-alianca-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 5:25",
+    "learningObjective": "Reconhecer que o marido ama a mulher como Cristo amou a igreja: entrega, não domínio vazio.",
+    "evidence": [
+      "Efésios 5:25"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Efésios 5:25?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Efésios 5:25?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Efésios 5:25?",
+    "feedbackCorrect": "Certo: primeiro o mandamento, depois o modelo, então a entrega.",
+    "feedbackWrong": {
+      "b": "A entrega fecha o versículo, não o abre.",
+      "c": "O mandamento aos maridos vem antes do modelo de Cristo."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo,",
+    "options": [
+      {
+        "id": "a",
+        "text": "Maridos, amai a vossas mulheres"
+      },
+      {
+        "id": "b",
+        "text": "como também Cristo amou a igreja"
+      },
+      {
+        "id": "c",
+        "text": "e por ela se entregou a si mesmo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-01-alianca",
+    "id": "familia-sem-fm-01-alianca-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 5:25",
+    "learningObjective": "Reconhecer que o marido ama a mulher como Cristo amou a igreja: entrega, não domínio vazio.",
+    "evidence": [
+      "Efésios 5:25"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"como também Cristo amou a ___ e por ela se entregou a si mesmo\"",
+    "prompt": "Complete a frase: \"como também Cristo amou a ___ e por ela se entregou a si mesmo\"",
+    "cue": "Complete a frase: \"como também Cristo amou a ___ e por ela se entregou a si mesmo\"",
+    "feedbackCorrect": "Certo: Cristo amou a igreja e por ela se entregou.",
+    "feedbackWrong": {
+      "b": "Mulheres é o objeto do mandamento aos maridos, não desta lacuna.",
+      "c": "Maridos abre o versículo, não preenche aqui."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo,",
+    "template": "como também Cristo amou a ___ e por ela se entregou a si mesmo",
+    "options": [
+      {
+        "id": "a",
+        "text": "igreja"
+      },
+      {
+        "id": "b",
+        "text": "mulheres"
+      },
+      {
+        "id": "c",
+        "text": "Maridos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-01-alianca",
+    "id": "familia-sem-fm-01-alianca-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 5:25",
+    "learningObjective": "Reconhecer que o marido ama a mulher como Cristo amou a igreja: entrega, não domínio vazio.",
+    "evidence": [
+      "Efésios 5:25"
+    ],
+    "type": "connect",
+    "question": "O que Efésios 5:25 comunica que se liga a este contexto?",
+    "prompt": "O que Efésios 5:25 comunica que se liga a este contexto?",
+    "cue": "O que Efésios 5:25 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o marido ama como Cristo — entrega, não domínio vazio.",
+    "feedbackWrong": {
+      "b": "O texto não reduz o casamento a um contrato de direitos.",
+      "c": "O modelo é a entrega de Cristo, não o poder do marido."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo,",
+    "passageA": {
+      "ref": "Efésios 5:25",
+      "text": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo,"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Casamento e aliança: o marido ama como Cristo amou a igreja — entrega, não domínio vazio."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Amor que se entrega"
+      },
+      {
+        "id": "b",
+        "text": "Contrato de direitos"
+      },
+      {
+        "id": "c",
+        "text": "Domínio do marido"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-01-alianca",
+    "id": "familia-sem-fm-01-alianca-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 5:25",
+    "learningObjective": "Reconhecer que o marido ama a mulher como Cristo amou a igreja: entrega, não domínio vazio.",
+    "evidence": [
+      "Efésios 5:25"
+    ],
+    "type": "true_false",
+    "question": "O texto manda o marido amar pela força da autoridade, sem mencionar a entrega de Cristo.",
+    "prompt": "O texto manda o marido amar pela força da autoridade, sem mencionar a entrega de Cristo.",
+    "cue": "O texto manda o marido amar pela força da autoridade, sem mencionar a entrega de Cristo.",
+    "feedbackCorrect": "Certo: o modelo é a entrega de Cristo, não a autoridade vazia.",
+    "feedbackWrong": {
+      "true": "O versículo cita Cristo que amou e se entregou, não o domínio vazio."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo,",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "trail": "familia",
+    "section": "fm-01-alianca",
+    "id": "familia-cam-fm-01-alianca-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 5:25",
+    "learningObjective": "Reconhecer que o marido ama a mulher como Cristo amou a igreja: entrega, não domínio vazio.",
+    "evidence": [
+      "Efésios 5:25"
+    ],
+    "type": "tap",
+    "question": "Em Efésios 5:25, toque a palavra que falta em \"e por ela se ___ a si mesmo\"?",
+    "prompt": "Em Efésios 5:25, toque a palavra que falta em \"e por ela se ___ a si mesmo\"?",
+    "cue": "Em Efésios 5:25, toque a palavra que falta em \"e por ela se ___ a si mesmo\"?",
+    "feedbackCorrect": "Exato: Cristo se entregou a si mesmo pela igreja.",
+    "feedbackWrong": {
+      "a": "Amai é o mandamento aos maridos, não este verbo.",
+      "c": "Amou descreve o amor, não a entrega desta lacuna."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo,",
+    "template": "e por ela se ___ a si mesmo",
+    "options": [
+      {
+        "id": "a",
+        "text": "amai"
+      },
+      {
+        "id": "b",
+        "text": "entregou"
+      },
+      {
+        "id": "c",
+        "text": "amou"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "familia",
+    "section": "fm-01-alianca",
+    "id": "familia-cam-fm-01-alianca-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 5:25",
+    "learningObjective": "Reconhecer que o marido ama a mulher como Cristo amou a igreja: entrega, não domínio vazio.",
+    "evidence": [
+      "Efésios 5:25"
+    ],
+    "type": "choice",
+    "question": "O que o \"como também\" liga no versículo?",
+    "prompt": "O que o \"como também\" liga no versículo?",
+    "cue": "O que o \"como também\" liga no versículo?",
+    "feedbackCorrect": "Certo: liga o amor do marido ao amor entregue de Cristo pela igreja.",
+    "feedbackWrong": {
+      "a": "O texto não compara o marido a um senhor da casa.",
+      "c": "O \"como\" aponta para Cristo, não para um costume local.",
+      "d": "O texto não reduz o amor a sentimento sem entrega."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo,",
+    "options": [
+      {
+        "id": "a",
+        "text": "O marido à figura de um senhor que manda na casa"
+      },
+      {
+        "id": "b",
+        "text": "O amor do marido ao amor com que Cristo se entregou"
+      },
+      {
+        "id": "c",
+        "text": "O casamento a um costume da cidade de Éfeso"
+      },
+      {
+        "id": "d",
+        "text": "O afeto conjugal a um sentimento sem custo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "familia",
+    "section": "fm-01-alianca",
+    "id": "familia-cam-fm-01-alianca-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 5:25",
+    "learningObjective": "Reconhecer que o marido ama a mulher como Cristo amou a igreja: entrega, não domínio vazio.",
+    "evidence": [
+      "Efésios 5:25"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Efésios 5:25?",
+    "prompt": "Como se encadeiam os eventos de Efésios 5:25?",
+    "cue": "Como se encadeiam os eventos de Efésios 5:25?",
+    "feedbackCorrect": "Certo: o mandamento se mede pelo amor e pela entrega de Cristo.",
+    "feedbackWrong": {
+      "b": "A entrega de Cristo conclui o modelo, não inicia o versículo.",
+      "c": "O mandamento aos maridos abre o encadeamento."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo,",
+    "options": [
+      {
+        "id": "a",
+        "text": "o mandamento: amai a vossas mulheres"
+      },
+      {
+        "id": "b",
+        "text": "o modelo: Cristo amou a igreja"
+      },
+      {
+        "id": "c",
+        "text": "o custo: por ela se entregou a si mesmo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-01-alianca",
+    "id": "familia-cam-fm-01-alianca-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 5:25",
+    "learningObjective": "Reconhecer que o marido ama a mulher como Cristo amou a igreja: entrega, não domínio vazio.",
+    "evidence": [
+      "Efésios 5:25"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"e por ela se entregou a si ___\"",
+    "prompt": "Complete a frase: \"e por ela se entregou a si ___\"",
+    "cue": "Complete a frase: \"e por ela se entregou a si ___\"",
+    "feedbackCorrect": "Certo: Cristo se entregou a si mesmo pela igreja.",
+    "feedbackWrong": {
+      "a": "Igreja já aparece antes, como objeto do amor de Cristo.",
+      "b": "Mulheres é o objeto do mandamento, não desta lacuna."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo,",
+    "template": "e por ela se entregou a si ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "igreja"
+      },
+      {
+        "id": "b",
+        "text": "mulheres"
+      },
+      {
+        "id": "c",
+        "text": "mesmo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "familia",
+    "section": "fm-01-alianca",
+    "id": "familia-cam-fm-01-alianca-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 5:25",
+    "learningObjective": "Reconhecer que o marido ama a mulher como Cristo amou a igreja: entrega, não domínio vazio.",
+    "evidence": [
+      "Efésios 5:25"
+    ],
+    "type": "connect",
+    "question": "O que Efésios 5:25 comunica que se liga a este contexto?",
+    "prompt": "O que Efésios 5:25 comunica que se liga a este contexto?",
+    "cue": "O que Efésios 5:25 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a aliança conjugal se mede pela entrega, não pelo domínio.",
+    "feedbackWrong": {
+      "b": "O texto não autoriza o marido a mandar sem se dar.",
+      "c": "O versículo não trata o casamento como troca de favores."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo,",
+    "passageA": {
+      "ref": "Efésios 5:25",
+      "text": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo,"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Casamento e aliança: o marido ama como Cristo amou a igreja — entrega, não domínio vazio."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Entrega, não domínio"
+      },
+      {
+        "id": "b",
+        "text": "Mandar sem se dar"
+      },
+      {
+        "id": "c",
+        "text": "Troca de favores"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-01-alianca",
+    "id": "familia-cam-fm-01-alianca-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 5:25",
+    "learningObjective": "Reconhecer que o marido ama a mulher como Cristo amou a igreja: entrega, não domínio vazio.",
+    "evidence": [
+      "Efésios 5:25"
+    ],
+    "type": "true_false",
+    "question": "O amor do marido, segundo o texto, imita a entrega de Cristo pela igreja, e não um poder vazio.",
+    "prompt": "O amor do marido, segundo o texto, imita a entrega de Cristo pela igreja, e não um poder vazio.",
+    "cue": "O amor do marido, segundo o texto, imita a entrega de Cristo pela igreja, e não um poder vazio.",
+    "feedbackCorrect": "Certo: o sentido do versículo é entrega à imagem de Cristo.",
+    "feedbackWrong": {
+      "false": "O texto mede o amor do marido pela entrega de Cristo."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo,",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "trail": "familia",
+    "section": "fm-01-alianca",
+    "id": "familia-pro-fm-01-alianca-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 5:25",
+    "learningObjective": "Reconhecer que o marido ama a mulher como Cristo amou a igreja: entrega, não domínio vazio.",
+    "evidence": [
+      "Efésios 5:25"
+    ],
+    "type": "tap",
+    "question": "Em Efésios 5:25, toque a palavra que falta em \"como também ___ amou a igreja\"?",
+    "prompt": "Em Efésios 5:25, toque a palavra que falta em \"como também ___ amou a igreja\"?",
+    "cue": "Em Efésios 5:25, toque a palavra que falta em \"como também ___ amou a igreja\"?",
+    "feedbackCorrect": "Exato: o modelo do amor conjugal é Cristo.",
+    "feedbackWrong": {
+      "b": "Igreja é quem Cristo amou, não o sujeito desta lacuna.",
+      "c": "Maridos recebe o mandamento, não preenche este \"como também\"."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo,",
+    "template": "como também ___ amou a igreja",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo"
+      },
+      {
+        "id": "b",
+        "text": "igreja"
+      },
+      {
+        "id": "c",
+        "text": "Maridos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-01-alianca",
+    "id": "familia-pro-fm-01-alianca-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 5:25",
+    "learningObjective": "Reconhecer que o marido ama a mulher como Cristo amou a igreja: entrega, não domínio vazio.",
+    "evidence": [
+      "Efésios 5:25"
+    ],
+    "type": "choice",
+    "question": "Que leitura teológica o versículo sustenta sobre o casamento?",
+    "prompt": "Que leitura teológica o versículo sustenta sobre o casamento?",
+    "cue": "Que leitura teológica o versículo sustenta sobre o casamento?",
+    "feedbackCorrect": "Certo: a aliança se parece com Cristo que se entrega pela igreja.",
+    "feedbackWrong": {
+      "a": "O texto não autoriza o marido a exigir sem se entregar.",
+      "c": "O versículo não reduz o casamento a um rito sem custo.",
+      "d": "O modelo é Cristo, não a hierarquia pelo poder."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo,",
+    "options": [
+      {
+        "id": "a",
+        "text": "O marido pode exigir da esposa o que Cristo não deu de si"
+      },
+      {
+        "id": "b",
+        "text": "A aliança conjugal se parece com Cristo que se entrega"
+      },
+      {
+        "id": "c",
+        "text": "O casamento é só um rito social sem custo pessoal"
+      },
+      {
+        "id": "d",
+        "text": "A cabeça do lar se prova pelo poder, não pela cruz"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "familia",
+    "section": "fm-01-alianca",
+    "id": "familia-pro-fm-01-alianca-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 5:25",
+    "learningObjective": "Reconhecer que o marido ama a mulher como Cristo amou a igreja: entrega, não domínio vazio.",
+    "evidence": [
+      "Efésios 5:25"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Efésios 5:25?",
+    "prompt": "Qual sequência revela o sentido de Efésios 5:25?",
+    "cue": "Qual sequência revela o sentido de Efésios 5:25?",
+    "feedbackCorrect": "Certo: o sentido vai do chamado a amar ao custo da cruz de Cristo.",
+    "feedbackWrong": {
+      "b": "O custo da entrega revela o sentido, não o ignora.",
+      "c": "O chamado aos maridos abre o sentido do versículo."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo,",
+    "options": [
+      {
+        "id": "a",
+        "text": "chamado a amar as mulheres"
+      },
+      {
+        "id": "b",
+        "text": "medida: o amor de Cristo pela igreja"
+      },
+      {
+        "id": "c",
+        "text": "revelação do sentido: ele se entregou por ela"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-01-alianca",
+    "id": "familia-pro-fm-01-alianca-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 5:25",
+    "learningObjective": "Reconhecer que o marido ama a mulher como Cristo amou a igreja: entrega, não domínio vazio.",
+    "evidence": [
+      "Efésios 5:25"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Maridos, amai a vossas ___\"",
+    "prompt": "Complete a frase: \"Maridos, amai a vossas ___\"",
+    "cue": "Complete a frase: \"Maridos, amai a vossas ___\"",
+    "feedbackCorrect": "Certo: o objeto do amor mandado é as mulheres.",
+    "feedbackWrong": {
+      "a": "Igreja é o objeto do amor de Cristo, não desta lacuna.",
+      "c": "Cristo é o modelo, não o objeto do \"amai\"."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo,",
+    "template": "Maridos, amai a vossas ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "igreja"
+      },
+      {
+        "id": "b",
+        "text": "mulheres"
+      },
+      {
+        "id": "c",
+        "text": "Cristo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "familia",
+    "section": "fm-01-alianca",
+    "id": "familia-pro-fm-01-alianca-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 5:25",
+    "learningObjective": "Reconhecer que o marido ama a mulher como Cristo amou a igreja: entrega, não domínio vazio.",
+    "evidence": [
+      "Efésios 5:25"
+    ],
+    "type": "connect",
+    "question": "O que Efésios 5:25 comunica que se liga a este contexto?",
+    "prompt": "O que Efésios 5:25 comunica que se liga a este contexto?",
+    "cue": "O que Efésios 5:25 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o casamento é aliança à imagem da entrega de Cristo.",
+    "feedbackWrong": {
+      "b": "O texto não trata o lar como palco de prestígio.",
+      "c": "O versículo não descreve um contrato sem cruz."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo,",
+    "passageA": {
+      "ref": "Efésios 5:25",
+      "text": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo,"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Casamento e aliança: o marido ama como Cristo amou a igreja — entrega, não domínio vazio."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Aliança como Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Palco de prestígio"
+      },
+      {
+        "id": "c",
+        "text": "Contrato sem cruz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-01-alianca",
+    "id": "familia-pro-fm-01-alianca-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 6:1–4",
+    "learningObjective": "Reconhecer honra com promessa aos pais e pais que não provocam, mas criam na disciplina do Senhor.",
+    "evidence": [
+      "Efésios 6:1",
+      "Efésios 6:2",
+      "Efésios 6:3",
+      "Efésios 6:4"
+    ],
+    "type": "true_false",
+    "question": "Filhos devem obedecer a seus pais no Senhor, pois isso é justo.",
+    "prompt": "Filhos devem obedecer a seus pais no Senhor, pois isso é justo.",
+    "cue": "Filhos devem obedecer a seus pais no Senhor, pois isso é justo.",
+    "feedbackCorrect": "Certo: o texto abre exatamente com essa ordem.",
+    "feedbackWrong": {
+      "false": "Releia Efésios 6:1: obedecei no Senhor, pois isso é justo."
+    },
+    "passageText": "Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Honra a teu pai e a tua mãe (que é o primeiro mandamento com promessa), para que te vá bem, e sejas de longa vida sobre a terra. Vós, pais, não provoqueis à ira a vossos filhos, mas criai-os na disciplina e na admoestação do Senhor.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "trail": "familia",
+    "section": "fm-02-pais-filhos",
+    "id": "familia-sem-fm-02-pais-filhos-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 6:1–4",
+    "learningObjective": "Reconhecer honra com promessa aos pais e pais que não provocam, mas criam na disciplina do Senhor.",
+    "evidence": [
+      "Efésios 6:1",
+      "Efésios 6:2",
+      "Efésios 6:3",
+      "Efésios 6:4"
+    ],
+    "type": "tap",
+    "question": "Em Efésios 6:1–4, toque a palavra que falta em \"Filhos, ___ a vossos pais no Senhor\"?",
+    "prompt": "Em Efésios 6:1–4, toque a palavra que falta em \"Filhos, ___ a vossos pais no Senhor\"?",
+    "cue": "Em Efésios 6:1–4, toque a palavra que falta em \"Filhos, ___ a vossos pais no Senhor\"?",
+    "feedbackCorrect": "Exato: o verbo dirigido aos filhos é obedecei.",
+    "feedbackWrong": {
+      "b": "Honra vem no versículo seguinte, não nesta lacuna.",
+      "c": "Disciplina é tarefa dos pais, não o verbo dos filhos aqui."
+    },
+    "passageText": "Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Honra a teu pai e a tua mãe (que é o primeiro mandamento com promessa), para que te vá bem, e sejas de longa vida sobre a terra. Vós, pais, não provoqueis à ira a vossos filhos, mas criai-os na disciplina e na admoestação do Senhor.",
+    "template": "Filhos, ___ a vossos pais no Senhor",
+    "options": [
+      {
+        "id": "a",
+        "text": "obedecei"
+      },
+      {
+        "id": "b",
+        "text": "Honra"
+      },
+      {
+        "id": "c",
+        "text": "disciplina"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-02-pais-filhos",
+    "id": "familia-sem-fm-02-pais-filhos-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 6:1–4",
+    "learningObjective": "Reconhecer honra com promessa aos pais e pais que não provocam, mas criam na disciplina do Senhor.",
+    "evidence": [
+      "Efésios 6:1",
+      "Efésios 6:2",
+      "Efésios 6:3",
+      "Efésios 6:4"
+    ],
+    "type": "choice",
+    "question": "Qual fato o texto afirma sobre honrar pai e mãe?",
+    "prompt": "Qual fato o texto afirma sobre honrar pai e mãe?",
+    "cue": "Qual fato o texto afirma sobre honrar pai e mãe?",
+    "feedbackCorrect": "Certo: honrar pai e mãe é o primeiro mandamento com promessa.",
+    "feedbackWrong": {
+      "a": "O texto chama esse mandamento de primeiro com promessa.",
+      "c": "A promessa inclui ir bem e longa vida sobre a terra.",
+      "d": "O texto não restringe a honra só à infância."
+    },
+    "passageText": "Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Honra a teu pai e a tua mãe (que é o primeiro mandamento com promessa), para que te vá bem, e sejas de longa vida sobre a terra. Vós, pais, não provoqueis à ira a vossos filhos, mas criai-os na disciplina e na admoestação do Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Honrar pai e mãe é o último mandamento da lei"
+      },
+      {
+        "id": "b",
+        "text": "Honrar pai e mãe é o primeiro mandamento com promessa"
+      },
+      {
+        "id": "c",
+        "text": "A honra não traz qualquer promessa de bem ou vida"
+      },
+      {
+        "id": "d",
+        "text": "Só os filhos pequenos devem honrar os pais"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "familia",
+    "section": "fm-02-pais-filhos",
+    "id": "familia-sem-fm-02-pais-filhos-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 6:1–4",
+    "learningObjective": "Reconhecer honra com promessa aos pais e pais que não provocam, mas criam na disciplina do Senhor.",
+    "evidence": [
+      "Efésios 6:1",
+      "Efésios 6:2",
+      "Efésios 6:3",
+      "Efésios 6:4"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Efésios 6:1–4?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Efésios 6:1–4?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Efésios 6:1–4?",
+    "feedbackCorrect": "Certo: filhos, depois a honra com promessa, então a tarefa dos pais.",
+    "feedbackWrong": {
+      "b": "Os pais não abrem o trecho; os filhos vêm primeiro.",
+      "c": "A honra com promessa fica entre a obediência e a criação."
+    },
+    "passageText": "Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Honra a teu pai e a tua mãe (que é o primeiro mandamento com promessa), para que te vá bem, e sejas de longa vida sobre a terra. Vós, pais, não provoqueis à ira a vossos filhos, mas criai-os na disciplina e na admoestação do Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Filhos, obedecei a vossos pais no Senhor, pois isso é justo"
+      },
+      {
+        "id": "b",
+        "text": "Honra a teu pai e a tua mãe, o primeiro mandamento com promessa"
+      },
+      {
+        "id": "c",
+        "text": "Vós, pais, não provoqueis à ira a vossos filhos, mas criai-os no Senhor"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-02-pais-filhos",
+    "id": "familia-sem-fm-02-pais-filhos-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 6:1–4",
+    "learningObjective": "Reconhecer honra com promessa aos pais e pais que não provocam, mas criam na disciplina do Senhor.",
+    "evidence": [
+      "Efésios 6:1",
+      "Efésios 6:2",
+      "Efésios 6:3",
+      "Efésios 6:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Honra a teu pai e a tua mãe (que é o primeiro mandamento com ___)\"",
+    "prompt": "Complete a frase: \"Honra a teu pai e a tua mãe (que é o primeiro mandamento com ___)\"",
+    "cue": "Complete a frase: \"Honra a teu pai e a tua mãe (que é o primeiro mandamento com ___)\"",
+    "feedbackCorrect": "Certo: é o primeiro mandamento com promessa.",
+    "feedbackWrong": {
+      "b": "Disciplina aparece na ordem aos pais, não nesta lacuna.",
+      "c": "Ira é o que os pais não devem provocar."
+    },
+    "passageText": "Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Honra a teu pai e a tua mãe (que é o primeiro mandamento com promessa), para que te vá bem, e sejas de longa vida sobre a terra. Vós, pais, não provoqueis à ira a vossos filhos, mas criai-os na disciplina e na admoestação do Senhor.",
+    "template": "Honra a teu pai e a tua mãe (que é o primeiro mandamento com ___)",
+    "options": [
+      {
+        "id": "a",
+        "text": "promessa"
+      },
+      {
+        "id": "b",
+        "text": "disciplina"
+      },
+      {
+        "id": "c",
+        "text": "ira"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-02-pais-filhos",
+    "id": "familia-sem-fm-02-pais-filhos-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 6:1–4",
+    "learningObjective": "Reconhecer honra com promessa aos pais e pais que não provocam, mas criam na disciplina do Senhor.",
+    "evidence": [
+      "Efésios 6:1",
+      "Efésios 6:2",
+      "Efésios 6:3",
+      "Efésios 6:4"
+    ],
+    "type": "connect",
+    "question": "O que Efésios 6:1–4 comunica que se liga a este contexto?",
+    "prompt": "O que Efésios 6:1–4 comunica que se liga a este contexto?",
+    "cue": "O que Efésios 6:1–4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a honra aos pais vem com promessa no Senhor.",
+    "feedbackWrong": {
+      "b": "O texto não descreve um lar de medo sem palavra de Deus.",
+      "c": "O trecho une honra e criação, não abandono dos filhos."
+    },
+    "passageText": "Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Honra a teu pai e a tua mãe (que é o primeiro mandamento com promessa), para que te vá bem, e sejas de longa vida sobre a terra. Vós, pais, não provoqueis à ira a vossos filhos, mas criai-os na disciplina e na admoestação do Senhor.",
+    "passageA": {
+      "ref": "Efésios 6:1–4",
+      "text": "Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Honra a teu pai e a tua mãe (que é o primeiro mandamento com promessa), para que te vá bem, e sejas de longa vida sobre a terra. Vós, pais, não provoqueis à ira a vossos filhos, mas criai-os na disciplina e na admoestação do Senhor."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Pais e filhos no Senhor: honra com promessa, e pais que não provocam, mas criam na disciplina do Senhor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Honra com promessa"
+      },
+      {
+        "id": "b",
+        "text": "Lar de medo"
+      },
+      {
+        "id": "c",
+        "text": "Filhos abandonados"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-02-pais-filhos",
+    "id": "familia-sem-fm-02-pais-filhos-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 6:1–4",
+    "learningObjective": "Reconhecer honra com promessa aos pais e pais que não provocam, mas criam na disciplina do Senhor.",
+    "evidence": [
+      "Efésios 6:1",
+      "Efésios 6:2",
+      "Efésios 6:3",
+      "Efésios 6:4"
+    ],
+    "type": "true_false",
+    "question": "Os pais devem provocar os filhos à ira para que aprendam disciplina.",
+    "prompt": "Os pais devem provocar os filhos à ira para que aprendam disciplina.",
+    "cue": "Os pais devem provocar os filhos à ira para que aprendam disciplina.",
+    "feedbackCorrect": "Certo: o texto proíbe provocar e manda criar no Senhor.",
+    "feedbackWrong": {
+      "true": "O texto diz: não provoqueis, mas criai-os na disciplina do Senhor."
+    },
+    "passageText": "Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Honra a teu pai e a tua mãe (que é o primeiro mandamento com promessa), para que te vá bem, e sejas de longa vida sobre a terra. Vós, pais, não provoqueis à ira a vossos filhos, mas criai-os na disciplina e na admoestação do Senhor.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "trail": "familia",
+    "section": "fm-02-pais-filhos",
+    "id": "familia-cam-fm-02-pais-filhos-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 6:1–4",
+    "learningObjective": "Reconhecer honra com promessa aos pais e pais que não provocam, mas criam na disciplina do Senhor.",
+    "evidence": [
+      "Efésios 6:1",
+      "Efésios 6:2",
+      "Efésios 6:3",
+      "Efésios 6:4"
+    ],
+    "type": "tap",
+    "question": "Em Efésios 6:1–4, toque a palavra que falta em \"não provoqueis à ira a vossos ___\"?",
+    "prompt": "Em Efésios 6:1–4, toque a palavra que falta em \"não provoqueis à ira a vossos ___\"?",
+    "cue": "Em Efésios 6:1–4, toque a palavra que falta em \"não provoqueis à ira a vossos ___\"?",
+    "feedbackCorrect": "Exato: os pais não devem provocar os filhos à ira.",
+    "feedbackWrong": {
+      "a": "Pais são quem recebe a ordem, não o objeto desta lacuna.",
+      "c": "Mãe aparece na honra, não neste aviso aos pais."
+    },
+    "passageText": "Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Honra a teu pai e a tua mãe (que é o primeiro mandamento com promessa), para que te vá bem, e sejas de longa vida sobre a terra. Vós, pais, não provoqueis à ira a vossos filhos, mas criai-os na disciplina e na admoestação do Senhor.",
+    "template": "não provoqueis à ira a vossos ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "pais"
+      },
+      {
+        "id": "b",
+        "text": "filhos"
+      },
+      {
+        "id": "c",
+        "text": "mãe"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "familia",
+    "section": "fm-02-pais-filhos",
+    "id": "familia-cam-fm-02-pais-filhos-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 6:1–4",
+    "learningObjective": "Reconhecer honra com promessa aos pais e pais que não provocam, mas criam na disciplina do Senhor.",
+    "evidence": [
+      "Efésios 6:1",
+      "Efésios 6:2",
+      "Efésios 6:3",
+      "Efésios 6:4"
+    ],
+    "type": "choice",
+    "question": "Como o texto relaciona a tarefa dos filhos e a dos pais?",
+    "prompt": "Como o texto relaciona a tarefa dos filhos e a dos pais?",
+    "cue": "Como o texto relaciona a tarefa dos filhos e a dos pais?",
+    "feedbackCorrect": "Certo: filhos honram no Senhor; pais criam sem provocar.",
+    "feedbackWrong": {
+      "a": "O texto não dá aos pais licença para irritar os filhos.",
+      "c": "A disciplina é do Senhor, não um direito de humilhar.",
+      "d": "A honra dos filhos não cancela o dever dos pais."
+    },
+    "passageText": "Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Honra a teu pai e a tua mãe (que é o primeiro mandamento com promessa), para que te vá bem, e sejas de longa vida sobre a terra. Vós, pais, não provoqueis à ira a vossos filhos, mas criai-os na disciplina e na admoestação do Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os pais podem irritar os filhos, contanto que obedeçam"
+      },
+      {
+        "id": "b",
+        "text": "Filhos honram no Senhor, e pais criam sem provocar à ira"
+      },
+      {
+        "id": "c",
+        "text": "A disciplina substitui a palavra e serve para humilhar"
+      },
+      {
+        "id": "d",
+        "text": "Só os filhos têm dever; os pais ficam livres de medida"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "familia",
+    "section": "fm-02-pais-filhos",
+    "id": "familia-cam-fm-02-pais-filhos-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 6:1–4",
+    "learningObjective": "Reconhecer honra com promessa aos pais e pais que não provocam, mas criam na disciplina do Senhor.",
+    "evidence": [
+      "Efésios 6:1",
+      "Efésios 6:2",
+      "Efésios 6:3",
+      "Efésios 6:4"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Efésios 6:1–4?",
+    "prompt": "Como se encadeiam os eventos de Efésios 6:1–4?",
+    "cue": "Como se encadeiam os eventos de Efésios 6:1–4?",
+    "feedbackCorrect": "Certo: justiça da obediência, honra com promessa, criação sem ira.",
+    "feedbackWrong": {
+      "b": "A criação dos pais fecha o trecho, não o abre.",
+      "c": "A obediência no Senhor inicia o encadeamento."
+    },
+    "passageText": "Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Honra a teu pai e a tua mãe (que é o primeiro mandamento com promessa), para que te vá bem, e sejas de longa vida sobre a terra. Vós, pais, não provoqueis à ira a vossos filhos, mas criai-os na disciplina e na admoestação do Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "obediência dos filhos no Senhor, porque é justo"
+      },
+      {
+        "id": "b",
+        "text": "honra a pai e mãe, com promessa de bem e vida"
+      },
+      {
+        "id": "c",
+        "text": "pais que não provocam, mas criam na disciplina do Senhor"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-02-pais-filhos",
+    "id": "familia-cam-fm-02-pais-filhos-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 6:1–4",
+    "learningObjective": "Reconhecer honra com promessa aos pais e pais que não provocam, mas criam na disciplina do Senhor.",
+    "evidence": [
+      "Efésios 6:1",
+      "Efésios 6:2",
+      "Efésios 6:3",
+      "Efésios 6:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"mas criai-os na ___ e na admoestação do Senhor\"",
+    "prompt": "Complete a frase: \"mas criai-os na ___ e na admoestação do Senhor\"",
+    "cue": "Complete a frase: \"mas criai-os na ___ e na admoestação do Senhor\"",
+    "feedbackCorrect": "Certo: a criação une disciplina e admoestação do Senhor.",
+    "feedbackWrong": {
+      "b": "Ira é o que os pais não devem provocar.",
+      "c": "Promessa pertence ao mandamento de honrar."
+    },
+    "passageText": "Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Honra a teu pai e a tua mãe (que é o primeiro mandamento com promessa), para que te vá bem, e sejas de longa vida sobre a terra. Vós, pais, não provoqueis à ira a vossos filhos, mas criai-os na disciplina e na admoestação do Senhor.",
+    "template": "mas criai-os na ___ e na admoestação do Senhor",
+    "options": [
+      {
+        "id": "a",
+        "text": "disciplina"
+      },
+      {
+        "id": "b",
+        "text": "ira"
+      },
+      {
+        "id": "c",
+        "text": "promessa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-02-pais-filhos",
+    "id": "familia-cam-fm-02-pais-filhos-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 6:1–4",
+    "learningObjective": "Reconhecer honra com promessa aos pais e pais que não provocam, mas criam na disciplina do Senhor.",
+    "evidence": [
+      "Efésios 6:1",
+      "Efésios 6:2",
+      "Efésios 6:3",
+      "Efésios 6:4"
+    ],
+    "type": "connect",
+    "question": "O que Efésios 6:1–4 comunica que se liga a este contexto?",
+    "prompt": "O que Efésios 6:1–4 comunica que se liga a este contexto?",
+    "cue": "O que Efésios 6:1–4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: pais no Senhor não provocam; criam com disciplina.",
+    "feedbackWrong": {
+      "b": "O texto não autoriza gritar até o filho ceder.",
+      "c": "A honra não apaga o dever de criar sem ira."
+    },
+    "passageText": "Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Honra a teu pai e a tua mãe (que é o primeiro mandamento com promessa), para que te vá bem, e sejas de longa vida sobre a terra. Vós, pais, não provoqueis à ira a vossos filhos, mas criai-os na disciplina e na admoestação do Senhor.",
+    "passageA": {
+      "ref": "Efésios 6:1–4",
+      "text": "Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Honra a teu pai e a tua mãe (que é o primeiro mandamento com promessa), para que te vá bem, e sejas de longa vida sobre a terra. Vós, pais, não provoqueis à ira a vossos filhos, mas criai-os na disciplina e na admoestação do Senhor."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Pais e filhos no Senhor: honra com promessa, e pais que não provocam, mas criam na disciplina do Senhor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pais que não provocam"
+      },
+      {
+        "id": "b",
+        "text": "Grito até ceder"
+      },
+      {
+        "id": "c",
+        "text": "Honra sem criação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-02-pais-filhos",
+    "id": "familia-cam-fm-02-pais-filhos-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 6:1–4",
+    "learningObjective": "Reconhecer honra com promessa aos pais e pais que não provocam, mas criam na disciplina do Senhor.",
+    "evidence": [
+      "Efésios 6:1",
+      "Efésios 6:2",
+      "Efésios 6:3",
+      "Efésios 6:4"
+    ],
+    "type": "true_false",
+    "question": "A formação dos filhos no Senhor inclui disciplina e admoestação, e exclui provocar à ira.",
+    "prompt": "A formação dos filhos no Senhor inclui disciplina e admoestação, e exclui provocar à ira.",
+    "cue": "A formação dos filhos no Senhor inclui disciplina e admoestação, e exclui provocar à ira.",
+    "feedbackCorrect": "Certo: criar no Senhor é o oposto de provocar à ira.",
+    "feedbackWrong": {
+      "false": "O texto une disciplina e admoestação e proíbe provocar."
+    },
+    "passageText": "Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Honra a teu pai e a tua mãe (que é o primeiro mandamento com promessa), para que te vá bem, e sejas de longa vida sobre a terra. Vós, pais, não provoqueis à ira a vossos filhos, mas criai-os na disciplina e na admoestação do Senhor.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "trail": "familia",
+    "section": "fm-02-pais-filhos",
+    "id": "familia-pro-fm-02-pais-filhos-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 6:1–4",
+    "learningObjective": "Reconhecer honra com promessa aos pais e pais que não provocam, mas criam na disciplina do Senhor.",
+    "evidence": [
+      "Efésios 6:1",
+      "Efésios 6:2",
+      "Efésios 6:3",
+      "Efésios 6:4"
+    ],
+    "type": "tap",
+    "question": "Em Efésios 6:1–4, toque a palavra que falta em \"na disciplina e na ___ do Senhor\"?",
+    "prompt": "Em Efésios 6:1–4, toque a palavra que falta em \"na disciplina e na ___ do Senhor\"?",
+    "cue": "Em Efésios 6:1–4, toque a palavra que falta em \"na disciplina e na ___ do Senhor\"?",
+    "feedbackCorrect": "Exato: a criação inclui a admoestação do Senhor.",
+    "feedbackWrong": {
+      "b": "Disciplina já aparece antes nesta frase.",
+      "c": "Promessa pertence ao mandamento de honrar."
+    },
+    "passageText": "Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Honra a teu pai e a tua mãe (que é o primeiro mandamento com promessa), para que te vá bem, e sejas de longa vida sobre a terra. Vós, pais, não provoqueis à ira a vossos filhos, mas criai-os na disciplina e na admoestação do Senhor.",
+    "template": "na disciplina e na ___ do Senhor",
+    "options": [
+      {
+        "id": "a",
+        "text": "admoestação"
+      },
+      {
+        "id": "b",
+        "text": "disciplina"
+      },
+      {
+        "id": "c",
+        "text": "promessa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-02-pais-filhos",
+    "id": "familia-pro-fm-02-pais-filhos-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 6:1–4",
+    "learningObjective": "Reconhecer honra com promessa aos pais e pais que não provocam, mas criam na disciplina do Senhor.",
+    "evidence": [
+      "Efésios 6:1",
+      "Efésios 6:2",
+      "Efésios 6:3",
+      "Efésios 6:4"
+    ],
+    "type": "choice",
+    "question": "Que sentido o trecho dá à casa sob o Senhor?",
+    "prompt": "Que sentido o trecho dá à casa sob o Senhor?",
+    "cue": "Que sentido o trecho dá à casa sob o Senhor?",
+    "feedbackCorrect": "Certo: a casa fica sob o Senhor, com honra e criação sem ira.",
+    "feedbackWrong": {
+      "a": "O Senhor mede pais e filhos; não é só ordem militar.",
+      "c": "A promessa não compra a honra como mérito vazio.",
+      "d": "A admoestação é do Senhor, não um capricho dos pais."
+    },
+    "passageText": "Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Honra a teu pai e a tua mãe (que é o primeiro mandamento com promessa), para que te vá bem, e sejas de longa vida sobre a terra. Vós, pais, não provoqueis à ira a vossos filhos, mas criai-os na disciplina e na admoestação do Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A casa é só um quartel em que o pai manda sem ser medido"
+      },
+      {
+        "id": "b",
+        "text": "A casa fica sob o Senhor: honra com promessa e criação sem ira"
+      },
+      {
+        "id": "c",
+        "text": "A promessa de longa vida dispensa a honra real aos pais"
+      },
+      {
+        "id": "d",
+        "text": "A admoestação é capricho dos pais, não palavra do Senhor"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "familia",
+    "section": "fm-02-pais-filhos",
+    "id": "familia-pro-fm-02-pais-filhos-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 6:1–4",
+    "learningObjective": "Reconhecer honra com promessa aos pais e pais que não provocam, mas criam na disciplina do Senhor.",
+    "evidence": [
+      "Efésios 6:1",
+      "Efésios 6:2",
+      "Efésios 6:3",
+      "Efésios 6:4"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Efésios 6:1–4?",
+    "prompt": "Qual sequência revela o sentido de Efésios 6:1–4?",
+    "cue": "Qual sequência revela o sentido de Efésios 6:1–4?",
+    "feedbackCorrect": "Certo: o sentido vai da justiça da honra à criação no Senhor.",
+    "feedbackWrong": {
+      "b": "A criação no Senhor revela o sentido, não o inicia.",
+      "c": "A justiça da obediência abre o trecho."
+    },
+    "passageText": "Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Honra a teu pai e a tua mãe (que é o primeiro mandamento com promessa), para que te vá bem, e sejas de longa vida sobre a terra. Vós, pais, não provoqueis à ira a vossos filhos, mas criai-os na disciplina e na admoestação do Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "é justo obedecer no Senhor"
+      },
+      {
+        "id": "b",
+        "text": "honrar pai e mãe traz promessa"
+      },
+      {
+        "id": "c",
+        "text": "pais criam na disciplina e na admoestação do Senhor"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-02-pais-filhos",
+    "id": "familia-pro-fm-02-pais-filhos-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 6:1–4",
+    "learningObjective": "Reconhecer honra com promessa aos pais e pais que não provocam, mas criam na disciplina do Senhor.",
+    "evidence": [
+      "Efésios 6:1",
+      "Efésios 6:2",
+      "Efésios 6:3",
+      "Efésios 6:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Filhos, obedecei a vossos pais no ___, pois isso é justo\"",
+    "prompt": "Complete a frase: \"Filhos, obedecei a vossos pais no ___, pois isso é justo\"",
+    "cue": "Complete a frase: \"Filhos, obedecei a vossos pais no ___, pois isso é justo\"",
+    "feedbackCorrect": "Certo: a obediência dos filhos é no Senhor.",
+    "feedbackWrong": {
+      "b": "Terra aparece na promessa de longa vida, não aqui.",
+      "c": "Ira pertence ao aviso aos pais."
+    },
+    "passageText": "Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Honra a teu pai e a tua mãe (que é o primeiro mandamento com promessa), para que te vá bem, e sejas de longa vida sobre a terra. Vós, pais, não provoqueis à ira a vossos filhos, mas criai-os na disciplina e na admoestação do Senhor.",
+    "template": "Filhos, obedecei a vossos pais no ___, pois isso é justo",
+    "options": [
+      {
+        "id": "a",
+        "text": "Senhor"
+      },
+      {
+        "id": "b",
+        "text": "terra"
+      },
+      {
+        "id": "c",
+        "text": "ira"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-02-pais-filhos",
+    "id": "familia-pro-fm-02-pais-filhos-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 6:1–4",
+    "learningObjective": "Reconhecer honra com promessa aos pais e pais que não provocam, mas criam na disciplina do Senhor.",
+    "evidence": [
+      "Efésios 6:1",
+      "Efésios 6:2",
+      "Efésios 6:3",
+      "Efésios 6:4"
+    ],
+    "type": "connect",
+    "question": "O que Efésios 6:1–4 comunica que se liga a este contexto?",
+    "prompt": "O que Efésios 6:1–4 comunica que se liga a este contexto?",
+    "cue": "O que Efésios 6:1–4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a casa é formação no Senhor, não provocação.",
+    "feedbackWrong": {
+      "b": "O texto não descreve um lar sem palavra de Deus.",
+      "c": "A honra não é um troféu vazio sem criação."
+    },
+    "passageText": "Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Honra a teu pai e a tua mãe (que é o primeiro mandamento com promessa), para que te vá bem, e sejas de longa vida sobre a terra. Vós, pais, não provoqueis à ira a vossos filhos, mas criai-os na disciplina e na admoestação do Senhor.",
+    "passageA": {
+      "ref": "Efésios 6:1–4",
+      "text": "Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Honra a teu pai e a tua mãe (que é o primeiro mandamento com promessa), para que te vá bem, e sejas de longa vida sobre a terra. Vós, pais, não provoqueis à ira a vossos filhos, mas criai-os na disciplina e na admoestação do Senhor."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Pais e filhos no Senhor: honra com promessa, e pais que não provocam, mas criam na disciplina do Senhor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Criação no Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Casa sem palavra"
+      },
+      {
+        "id": "c",
+        "text": "Honra como troféu"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-02-pais-filhos",
+    "id": "familia-pro-fm-02-pais-filhos-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 6:2",
+    "learningObjective": "Reconhecer que família em Cristo é comunidade que leva cargas e assim cumpre a lei de Cristo.",
+    "evidence": [
+      "Gálatas 6:2"
+    ],
+    "type": "true_false",
+    "question": "Levar as cargas uns dos outros é cumprir a lei de Cristo.",
+    "prompt": "Levar as cargas uns dos outros é cumprir a lei de Cristo.",
+    "cue": "Levar as cargas uns dos outros é cumprir a lei de Cristo.",
+    "feedbackCorrect": "Certo: o texto liga as cargas à lei de Cristo.",
+    "feedbackWrong": {
+      "false": "Releia: assim cumprireis a lei de Cristo."
+    },
+    "passageText": "Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "trail": "familia",
+    "section": "fm-03-comunidade",
+    "id": "familia-sem-fm-03-comunidade-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 6:2",
+    "learningObjective": "Reconhecer que família em Cristo é comunidade que leva cargas e assim cumpre a lei de Cristo.",
+    "evidence": [
+      "Gálatas 6:2"
+    ],
+    "type": "tap",
+    "question": "Em Gálatas 6:2, toque a palavra que falta em \"Levai as ___ uns dos outros\"?",
+    "prompt": "Em Gálatas 6:2, toque a palavra que falta em \"Levai as ___ uns dos outros\"?",
+    "cue": "Em Gálatas 6:2, toque a palavra que falta em \"Levai as ___ uns dos outros\"?",
+    "feedbackCorrect": "Exato: o que se leva são as cargas uns dos outros.",
+    "feedbackWrong": {
+      "b": "Lei aparece no cumprimento, não nesta lacuna.",
+      "c": "Cristo nomeia a lei, não o que se carrega aqui."
+    },
+    "passageText": "Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "template": "Levai as ___ uns dos outros",
+    "options": [
+      {
+        "id": "a",
+        "text": "cargas"
+      },
+      {
+        "id": "b",
+        "text": "lei"
+      },
+      {
+        "id": "c",
+        "text": "Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-03-comunidade",
+    "id": "familia-sem-fm-03-comunidade-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 6:2",
+    "learningObjective": "Reconhecer que família em Cristo é comunidade que leva cargas e assim cumpre a lei de Cristo.",
+    "evidence": [
+      "Gálatas 6:2"
+    ],
+    "type": "choice",
+    "question": "Qual fato Gálatas 6:2 afirma?",
+    "prompt": "Qual fato Gálatas 6:2 afirma?",
+    "cue": "Qual fato Gálatas 6:2 afirma?",
+    "feedbackCorrect": "Certo: levar as cargas uns dos outros cumpre a lei de Cristo.",
+    "feedbackWrong": {
+      "a": "O texto manda levar as cargas, não ignorá-las.",
+      "c": "O cumprimento é da lei de Cristo, não de um código próprio.",
+      "d": "O \"uns dos outros\" é comunitário, não solitário."
+    },
+    "passageText": "Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cada um deve ignorar a carga do irmão"
+      },
+      {
+        "id": "b",
+        "text": "Levai as cargas uns dos outros e cumprireis a lei de Cristo"
+      },
+      {
+        "id": "c",
+        "text": "A lei de Cristo se cumpre só em ritos, sem cargas"
+      },
+      {
+        "id": "d",
+        "text": "Só o mais forte carrega a si mesmo, nunca o outro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "familia",
+    "section": "fm-03-comunidade",
+    "id": "familia-sem-fm-03-comunidade-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 6:2",
+    "learningObjective": "Reconhecer que família em Cristo é comunidade que leva cargas e assim cumpre a lei de Cristo.",
+    "evidence": [
+      "Gálatas 6:2"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Gálatas 6:2?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Gálatas 6:2?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Gálatas 6:2?",
+    "feedbackCorrect": "Certo: primeiro levar as cargas, depois o cumprimento da lei.",
+    "feedbackWrong": {
+      "b": "A lei de Cristo fecha o versículo, não o abre.",
+      "c": "O levar cargas uns dos outros vem antes do \"assim\"."
+    },
+    "passageText": "Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Levai as cargas"
+      },
+      {
+        "id": "b",
+        "text": "uns dos outros"
+      },
+      {
+        "id": "c",
+        "text": "e, assim, cumprireis a lei de Cristo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-03-comunidade",
+    "id": "familia-sem-fm-03-comunidade-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 6:2",
+    "learningObjective": "Reconhecer que família em Cristo é comunidade que leva cargas e assim cumpre a lei de Cristo.",
+    "evidence": [
+      "Gálatas 6:2"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"e, assim, cumprireis a ___ de Cristo\"",
+    "prompt": "Complete a frase: \"e, assim, cumprireis a ___ de Cristo\"",
+    "cue": "Complete a frase: \"e, assim, cumprireis a ___ de Cristo\"",
+    "feedbackCorrect": "Certo: o cumprimento é da lei de Cristo.",
+    "feedbackWrong": {
+      "b": "Cargas é o que se leva, não o que se cumpre aqui.",
+      "c": "Outros é com quem se leva, não esta lacuna."
+    },
+    "passageText": "Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "template": "e, assim, cumprireis a ___ de Cristo",
+    "options": [
+      {
+        "id": "a",
+        "text": "lei"
+      },
+      {
+        "id": "b",
+        "text": "cargas"
+      },
+      {
+        "id": "c",
+        "text": "outros"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-03-comunidade",
+    "id": "familia-sem-fm-03-comunidade-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 6:2",
+    "learningObjective": "Reconhecer que família em Cristo é comunidade que leva cargas e assim cumpre a lei de Cristo.",
+    "evidence": [
+      "Gálatas 6:2"
+    ],
+    "type": "connect",
+    "question": "O que Gálatas 6:2 comunica que se liga a este contexto?",
+    "prompt": "O que Gálatas 6:2 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 6:2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: levar cargas é a lei de Cristo na família.",
+    "feedbackWrong": {
+      "b": "O versículo não elogia o isolamento.",
+      "c": "A lei de Cristo não é um código sem irmãos."
+    },
+    "passageText": "Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "passageA": {
+      "ref": "Gálatas 6:2",
+      "text": "Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Família em Cristo é comunidade que leva cargas — essa é a lei de Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Lei de Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Isolamento piedoso"
+      },
+      {
+        "id": "c",
+        "text": "Código sem irmãos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-03-comunidade",
+    "id": "familia-sem-fm-03-comunidade-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 6:2",
+    "learningObjective": "Reconhecer que família em Cristo é comunidade que leva cargas e assim cumpre a lei de Cristo.",
+    "evidence": [
+      "Gálatas 6:2"
+    ],
+    "type": "true_false",
+    "question": "Cada um deve carregar só a própria carga, e isso cumpre a lei de Cristo.",
+    "prompt": "Cada um deve carregar só a própria carga, e isso cumpre a lei de Cristo.",
+    "cue": "Cada um deve carregar só a própria carga, e isso cumpre a lei de Cristo.",
+    "feedbackCorrect": "Certo: o texto manda levar as cargas uns dos outros.",
+    "feedbackWrong": {
+      "true": "O versículo fala de cargas uns dos outros, não só da própria."
+    },
+    "passageText": "Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "trail": "familia",
+    "section": "fm-03-comunidade",
+    "id": "familia-cam-fm-03-comunidade-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 6:2",
+    "learningObjective": "Reconhecer que família em Cristo é comunidade que leva cargas e assim cumpre a lei de Cristo.",
+    "evidence": [
+      "Gálatas 6:2"
+    ],
+    "type": "tap",
+    "question": "Em Gálatas 6:2, toque a palavra que falta em \"cumprireis a lei de ___\"?",
+    "prompt": "Em Gálatas 6:2, toque a palavra que falta em \"cumprireis a lei de ___\"?",
+    "cue": "Em Gálatas 6:2, toque a palavra que falta em \"cumprireis a lei de ___\"?",
+    "feedbackCorrect": "Exato: a lei cumprida é a de Cristo.",
+    "feedbackWrong": {
+      "a": "Cargas é o que se leva, não o nome desta lei.",
+      "c": "Outros indica a comunidade, não o dono da lei."
+    },
+    "passageText": "Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "template": "cumprireis a lei de ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "cargas"
+      },
+      {
+        "id": "b",
+        "text": "Cristo"
+      },
+      {
+        "id": "c",
+        "text": "outros"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "familia",
+    "section": "fm-03-comunidade",
+    "id": "familia-cam-fm-03-comunidade-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 6:2",
+    "learningObjective": "Reconhecer que família em Cristo é comunidade que leva cargas e assim cumpre a lei de Cristo.",
+    "evidence": [
+      "Gálatas 6:2"
+    ],
+    "type": "choice",
+    "question": "O que o versículo ensina sobre a comunidade em Cristo?",
+    "prompt": "O que o versículo ensina sobre a comunidade em Cristo?",
+    "cue": "O que o versículo ensina sobre a comunidade em Cristo?",
+    "feedbackCorrect": "Certo: a lei de Cristo se cumpre no levar mútuo das cargas.",
+    "feedbackWrong": {
+      "a": "O texto não trata a carga do irmão como problema só dele.",
+      "c": "Não há hierarquia de quem merece ajuda neste versículo.",
+      "d": "O cumprimento não é só interno; envolve o outro."
+    },
+    "passageText": "Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A carga do irmão é problema só dele, não da comunidade"
+      },
+      {
+        "id": "b",
+        "text": "A lei de Cristo se cumpre no levar mútuo das cargas"
+      },
+      {
+        "id": "c",
+        "text": "Só os mais fracos pedem ajuda; os fortes ficam de fora"
+      },
+      {
+        "id": "d",
+        "text": "Cumprir a lei é assunto privado, sem o outro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "familia",
+    "section": "fm-03-comunidade",
+    "id": "familia-cam-fm-03-comunidade-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 6:2",
+    "learningObjective": "Reconhecer que família em Cristo é comunidade que leva cargas e assim cumpre a lei de Cristo.",
+    "evidence": [
+      "Gálatas 6:2"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Gálatas 6:2?",
+    "prompt": "Como se encadeiam os eventos de Gálatas 6:2?",
+    "cue": "Como se encadeiam os eventos de Gálatas 6:2?",
+    "feedbackCorrect": "Certo: o levar mútuo é o caminho do cumprimento da lei.",
+    "feedbackWrong": {
+      "b": "O cumprimento da lei é o resultado, não o primeiro passo.",
+      "c": "O convite a levar cargas abre o encadeamento."
+    },
+    "passageText": "Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o convite: levai as cargas"
+      },
+      {
+        "id": "b",
+        "text": "o modo: uns dos outros"
+      },
+      {
+        "id": "c",
+        "text": "o resultado: cumprireis a lei de Cristo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-03-comunidade",
+    "id": "familia-cam-fm-03-comunidade-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 6:2",
+    "learningObjective": "Reconhecer que família em Cristo é comunidade que leva cargas e assim cumpre a lei de Cristo.",
+    "evidence": [
+      "Gálatas 6:2"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Levai as cargas uns dos ___\"",
+    "prompt": "Complete a frase: \"Levai as cargas uns dos ___\"",
+    "cue": "Complete a frase: \"Levai as cargas uns dos ___\"",
+    "feedbackCorrect": "Certo: as cargas são uns dos outros.",
+    "feedbackWrong": {
+      "a": "Cristo nomeia a lei no fim, não esta lacuna.",
+      "c": "Lei é o que se cumpre, não com quem se leva."
+    },
+    "passageText": "Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "template": "Levai as cargas uns dos ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo"
+      },
+      {
+        "id": "b",
+        "text": "outros"
+      },
+      {
+        "id": "c",
+        "text": "lei"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "familia",
+    "section": "fm-03-comunidade",
+    "id": "familia-cam-fm-03-comunidade-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 6:2",
+    "learningObjective": "Reconhecer que família em Cristo é comunidade que leva cargas e assim cumpre a lei de Cristo.",
+    "evidence": [
+      "Gálatas 6:2"
+    ],
+    "type": "connect",
+    "question": "O que Gálatas 6:2 comunica que se liga a este contexto?",
+    "prompt": "O que Gálatas 6:2 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 6:2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a família em Cristo leva cargas juntas.",
+    "feedbackWrong": {
+      "b": "O texto não descreve um clube de gente forte.",
+      "c": "A lei de Cristo não se cumpre no isolamento."
+    },
+    "passageText": "Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "passageA": {
+      "ref": "Gálatas 6:2",
+      "text": "Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Família em Cristo é comunidade que leva cargas — essa é a lei de Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cargas uns dos outros"
+      },
+      {
+        "id": "b",
+        "text": "Clube dos fortes"
+      },
+      {
+        "id": "c",
+        "text": "Fé sem irmão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-03-comunidade",
+    "id": "familia-cam-fm-03-comunidade-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 6:2",
+    "learningObjective": "Reconhecer que família em Cristo é comunidade que leva cargas e assim cumpre a lei de Cristo.",
+    "evidence": [
+      "Gálatas 6:2"
+    ],
+    "type": "true_false",
+    "question": "Família em Cristo é comunidade que leva cargas, e isso não é extra à lei de Cristo, mas o seu cumprimento.",
+    "prompt": "Família em Cristo é comunidade que leva cargas, e isso não é extra à lei de Cristo, mas o seu cumprimento.",
+    "cue": "Família em Cristo é comunidade que leva cargas, e isso não é extra à lei de Cristo, mas o seu cumprimento.",
+    "feedbackCorrect": "Certo: levar cargas é o cumprimento da lei de Cristo.",
+    "feedbackWrong": {
+      "false": "O texto identifica o levar cargas com cumprir a lei de Cristo."
+    },
+    "passageText": "Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "trail": "familia",
+    "section": "fm-03-comunidade",
+    "id": "familia-pro-fm-03-comunidade-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 6:2",
+    "learningObjective": "Reconhecer que família em Cristo é comunidade que leva cargas e assim cumpre a lei de Cristo.",
+    "evidence": [
+      "Gálatas 6:2"
+    ],
+    "type": "tap",
+    "question": "Em Gálatas 6:2, toque a palavra que falta em \"___ as cargas uns dos outros\"?",
+    "prompt": "Em Gálatas 6:2, toque a palavra que falta em \"___ as cargas uns dos outros\"?",
+    "cue": "Em Gálatas 6:2, toque a palavra que falta em \"___ as cargas uns dos outros\"?",
+    "feedbackCorrect": "Exato: o imperativo do versículo é Levai.",
+    "feedbackWrong": {
+      "b": "Cumprireis é o resultado, não o verbo desta lacuna.",
+      "c": "Assim introduz o resultado, não o imperativo."
+    },
+    "passageText": "Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "template": "___ as cargas uns dos outros",
+    "options": [
+      {
+        "id": "a",
+        "text": "Levai"
+      },
+      {
+        "id": "b",
+        "text": "cumprireis"
+      },
+      {
+        "id": "c",
+        "text": "assim"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-03-comunidade",
+    "id": "familia-pro-fm-03-comunidade-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 6:2",
+    "learningObjective": "Reconhecer que família em Cristo é comunidade que leva cargas e assim cumpre a lei de Cristo.",
+    "evidence": [
+      "Gálatas 6:2"
+    ],
+    "type": "choice",
+    "question": "Que leitura teológica Gálatas 6:2 sustenta?",
+    "prompt": "Que leitura teológica Gálatas 6:2 sustenta?",
+    "cue": "Que leitura teológica Gálatas 6:2 sustenta?",
+    "feedbackCorrect": "Certo: a lei de Cristo se vê no ombro que carrega o irmão.",
+    "feedbackWrong": {
+      "a": "O texto não trata a lei de Cristo como lista sem pessoas.",
+      "c": "Levar cargas não é favor opcional; é cumprimento.",
+      "d": "A família em Cristo não imita o mundo da autossuficiência."
+    },
+    "passageText": "Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A lei de Cristo é uma lista de ritos sem pessoas"
+      },
+      {
+        "id": "b",
+        "text": "A lei de Cristo se vê no ombro que carrega o irmão"
+      },
+      {
+        "id": "c",
+        "text": "Levar cargas é favor opcional, fora da lei"
+      },
+      {
+        "id": "d",
+        "text": "A fé madura prova-se na autossuficiência"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "familia",
+    "section": "fm-03-comunidade",
+    "id": "familia-pro-fm-03-comunidade-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 6:2",
+    "learningObjective": "Reconhecer que família em Cristo é comunidade que leva cargas e assim cumpre a lei de Cristo.",
+    "evidence": [
+      "Gálatas 6:2"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Gálatas 6:2?",
+    "prompt": "Qual sequência revela o sentido de Gálatas 6:2?",
+    "cue": "Qual sequência revela o sentido de Gálatas 6:2?",
+    "feedbackCorrect": "Certo: o sentido vai do gesto de levar ao nome da lei de Cristo.",
+    "feedbackWrong": {
+      "b": "A lei de Cristo nomeia o sentido no fim, não no começo.",
+      "c": "O gesto de levar abre a revelação do sentido."
+    },
+    "passageText": "Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o gesto: levar as cargas"
+      },
+      {
+        "id": "b",
+        "text": "a direção: uns dos outros"
+      },
+      {
+        "id": "c",
+        "text": "o nome do sentido: a lei de Cristo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-03-comunidade",
+    "id": "familia-pro-fm-03-comunidade-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 6:2",
+    "learningObjective": "Reconhecer que família em Cristo é comunidade que leva cargas e assim cumpre a lei de Cristo.",
+    "evidence": [
+      "Gálatas 6:2"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"e, ___, cumprireis a lei de Cristo\"",
+    "prompt": "Complete a frase: \"e, ___, cumprireis a lei de Cristo\"",
+    "cue": "Complete a frase: \"e, ___, cumprireis a lei de Cristo\"",
+    "feedbackCorrect": "Certo: assim se cumpre a lei de Cristo.",
+    "feedbackWrong": {
+      "b": "Levai é o imperativo inicial, não esta lacuna.",
+      "c": "Cargas é o objeto do levar, não o advérbio aqui."
+    },
+    "passageText": "Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "template": "e, ___, cumprireis a lei de Cristo",
+    "options": [
+      {
+        "id": "a",
+        "text": "assim"
+      },
+      {
+        "id": "b",
+        "text": "Levai"
+      },
+      {
+        "id": "c",
+        "text": "cargas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-03-comunidade",
+    "id": "familia-pro-fm-03-comunidade-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 6:2",
+    "learningObjective": "Reconhecer que família em Cristo é comunidade que leva cargas e assim cumpre a lei de Cristo.",
+    "evidence": [
+      "Gálatas 6:2"
+    ],
+    "type": "connect",
+    "question": "O que Gálatas 6:2 comunica que se liga a este contexto?",
+    "prompt": "O que Gálatas 6:2 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 6:2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a comunidade em Cristo é a que carrega.",
+    "feedbackWrong": {
+      "b": "O versículo não descreve uma fé privada sem ombro.",
+      "c": "A lei de Cristo não é um fardo só para os outros."
+    },
+    "passageText": "Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "passageA": {
+      "ref": "Gálatas 6:2",
+      "text": "Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Família em Cristo é comunidade que leva cargas — essa é a lei de Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Comunidade que carrega"
+      },
+      {
+        "id": "b",
+        "text": "Fé privada sem ombro"
+      },
+      {
+        "id": "c",
+        "text": "Lei só para os outros"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-03-comunidade",
+    "id": "familia-pro-fm-03-comunidade-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 5:25; 6:1; Gálatas 6:2",
+    "learningObjective": "Reconhecer o lar que serve: aliança de entrega, honra em casa e cargas levadas juntos.",
+    "evidence": [
+      "Efésios 5:25",
+      "Efésios 6:1",
+      "Gálatas 6:2"
+    ],
+    "type": "true_false",
+    "question": "Os textos mandam amar como Cristo se entregou, obedecer aos pais no Senhor e levar as cargas uns dos outros.",
+    "prompt": "Os textos mandam amar como Cristo se entregou, obedecer aos pais no Senhor e levar as cargas uns dos outros.",
+    "cue": "Os textos mandam amar como Cristo se entregou, obedecer aos pais no Senhor e levar as cargas uns dos outros.",
+    "feedbackCorrect": "Certo: os três gestos estão nesses versículos.",
+    "feedbackWrong": {
+      "false": "Releia: entrega conjugal, obediência no Senhor e cargas mútuas."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo, Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "trail": "familia",
+    "section": "fm-04-desafio",
+    "id": "familia-sem-fm-04-desafio-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 5:25; 6:1; Gálatas 6:2",
+    "learningObjective": "Reconhecer o lar que serve: aliança de entrega, honra em casa e cargas levadas juntos.",
+    "evidence": [
+      "Efésios 5:25",
+      "Efésios 6:1",
+      "Gálatas 6:2"
+    ],
+    "type": "tap",
+    "question": "Em Efésios 5:25, toque a palavra que falta em \"Cristo amou a ___ e por ela se entregou\"?",
+    "prompt": "Em Efésios 5:25, toque a palavra que falta em \"Cristo amou a ___ e por ela se entregou\"?",
+    "cue": "Em Efésios 5:25, toque a palavra que falta em \"Cristo amou a ___ e por ela se entregou\"?",
+    "feedbackCorrect": "Exato: Cristo amou a igreja e por ela se entregou.",
+    "feedbackWrong": {
+      "b": "Mulheres é o objeto do mandamento aos maridos, não desta lacuna.",
+      "c": "Cristo é quem ama, não o objeto desta lacuna."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo,",
+    "template": "Cristo amou a ___ e por ela se entregou",
+    "options": [
+      {
+        "id": "a",
+        "text": "igreja"
+      },
+      {
+        "id": "b",
+        "text": "mulheres"
+      },
+      {
+        "id": "c",
+        "text": "Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-04-desafio",
+    "id": "familia-sem-fm-04-desafio-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 5:25; 6:1; Gálatas 6:2",
+    "learningObjective": "Reconhecer o lar que serve: aliança de entrega, honra em casa e cargas levadas juntos.",
+    "evidence": [
+      "Efésios 5:25",
+      "Efésios 6:1",
+      "Gálatas 6:2"
+    ],
+    "type": "choice",
+    "question": "Qual conjunto de fatos os três textos afirmam juntos?",
+    "prompt": "Qual conjunto de fatos os três textos afirmam juntos?",
+    "cue": "Qual conjunto de fatos os três textos afirmam juntos?",
+    "feedbackCorrect": "Certo: amor que se entrega, honra no Senhor e cargas mútuas.",
+    "feedbackWrong": {
+      "a": "O conjunto não é só autoridade, sem entrega.",
+      "c": "Filhos obedecem no Senhor; o texto não os dispensa.",
+      "d": "Gálatas 6:2 manda levar cargas, não ignorá-las."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo, Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Só o marido manda; não há entrega nem cargas"
+      },
+      {
+        "id": "b",
+        "text": "Amar como Cristo, obedecer no Senhor e levar cargas"
+      },
+      {
+        "id": "c",
+        "text": "Filhos ficam livres de honrar pai e mãe"
+      },
+      {
+        "id": "d",
+        "text": "Cada um ignora a carga do outro em casa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "familia",
+    "section": "fm-04-desafio",
+    "id": "familia-sem-fm-04-desafio-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 5:25; 6:1; Gálatas 6:2",
+    "learningObjective": "Reconhecer o lar que serve: aliança de entrega, honra em casa e cargas levadas juntos.",
+    "evidence": [
+      "Efésios 5:25",
+      "Efésios 6:1",
+      "Gálatas 6:2"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Efésios 5:25; 6:1; Gálatas 6:2?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Efésios 5:25; 6:1; Gálatas 6:2?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Efésios 5:25; 6:1; Gálatas 6:2?",
+    "feedbackCorrect": "Certo: aliança, honra em casa, então cargas na comunidade.",
+    "feedbackWrong": {
+      "b": "As cargas de Gálatas fecham o conjunto, não o abrem.",
+      "c": "O amor do marido em 5:25 vem antes da obediência em 6:1."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo, Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja"
+      },
+      {
+        "id": "b",
+        "text": "Filhos, obedecei a vossos pais no Senhor, pois isso é justo"
+      },
+      {
+        "id": "c",
+        "text": "Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-04-desafio",
+    "id": "familia-sem-fm-04-desafio-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 5:25; 6:1; Gálatas 6:2",
+    "learningObjective": "Reconhecer o lar que serve: aliança de entrega, honra em casa e cargas levadas juntos.",
+    "evidence": [
+      "Efésios 5:25",
+      "Efésios 6:1",
+      "Gálatas 6:2"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Maridos, ___ a vossas mulheres, como também Cristo amou a igreja\"",
+    "prompt": "Complete a frase: \"Maridos, ___ a vossas mulheres, como também Cristo amou a igreja\"",
+    "cue": "Complete a frase: \"Maridos, ___ a vossas mulheres, como também Cristo amou a igreja\"",
+    "feedbackCorrect": "Certo: o gesto da aliança é amai.",
+    "feedbackWrong": {
+      "b": "Obedecei é o verbo dos filhos em 6:1.",
+      "c": "Levai é o verbo de Gálatas 6:2."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo, Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "template": "Maridos, ___ a vossas mulheres, como também Cristo amou a igreja",
+    "options": [
+      {
+        "id": "a",
+        "text": "amai"
+      },
+      {
+        "id": "b",
+        "text": "obedecei"
+      },
+      {
+        "id": "c",
+        "text": "Levai"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-04-desafio",
+    "id": "familia-sem-fm-04-desafio-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Efésios 5:25; 6:1; Gálatas 6:2",
+    "learningObjective": "Reconhecer o lar que serve: aliança de entrega, honra em casa e cargas levadas juntos.",
+    "evidence": [
+      "Efésios 5:25",
+      "Efésios 6:1",
+      "Gálatas 6:2"
+    ],
+    "type": "connect",
+    "question": "O que Efésios 5:25; 6:1; Gálatas 6:2 comunica que se liga a este contexto?",
+    "prompt": "O que Efésios 5:25; 6:1; Gálatas 6:2 comunica que se liga a este contexto?",
+    "cue": "O que Efésios 5:25; 6:1; Gálatas 6:2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o lar que serve une entrega, honra e cargas.",
+    "feedbackWrong": {
+      "b": "Os textos não descrevem um lar de mando vazio.",
+      "c": "O conjunto não é uma fé sem casa nem irmãos."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo, Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "passageA": {
+      "ref": "Efésios 5:25; 6:1; Gálatas 6:2",
+      "text": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo, Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Lar que serve: aliança de entrega, honra em casa, cargas levadas juntos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Lar que serve"
+      },
+      {
+        "id": "b",
+        "text": "Mando sem entrega"
+      },
+      {
+        "id": "c",
+        "text": "Fé sem casa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-04-desafio",
+    "id": "familia-sem-fm-04-desafio-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 5:25; 6:1; Gálatas 6:2",
+    "learningObjective": "Reconhecer o lar que serve: aliança de entrega, honra em casa e cargas levadas juntos.",
+    "evidence": [
+      "Efésios 5:25",
+      "Efésios 6:1",
+      "Gálatas 6:2"
+    ],
+    "type": "true_false",
+    "question": "Os três textos tratam só de autoridade doméstica, sem entrega, honra ou cargas compartilhadas.",
+    "prompt": "Os três textos tratam só de autoridade doméstica, sem entrega, honra ou cargas compartilhadas.",
+    "cue": "Os três textos tratam só de autoridade doméstica, sem entrega, honra ou cargas compartilhadas.",
+    "feedbackCorrect": "Certo: o conjunto é entrega, honra e cargas, não mando vazio.",
+    "feedbackWrong": {
+      "true": "Os textos unem entrega de Cristo, honra no Senhor e cargas mútuas."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo, Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "trail": "familia",
+    "section": "fm-04-desafio",
+    "id": "familia-cam-fm-04-desafio-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 5:25; 6:1; Gálatas 6:2",
+    "learningObjective": "Reconhecer o lar que serve: aliança de entrega, honra em casa e cargas levadas juntos.",
+    "evidence": [
+      "Efésios 5:25",
+      "Efésios 6:1",
+      "Gálatas 6:2"
+    ],
+    "type": "tap",
+    "question": "Em Efésios 6:1, toque a palavra que falta em \"Filhos, ___ a vossos pais no Senhor\"?",
+    "prompt": "Em Efésios 6:1, toque a palavra que falta em \"Filhos, ___ a vossos pais no Senhor\"?",
+    "cue": "Em Efésios 6:1, toque a palavra que falta em \"Filhos, ___ a vossos pais no Senhor\"?",
+    "feedbackCorrect": "Exato: o gesto em casa é obedecei no Senhor.",
+    "feedbackWrong": {
+      "a": "Pais é a quem se obedece, não o verbo desta lacuna.",
+      "c": "Justo explica o motivo, não o verbo pedido."
+    },
+    "passageText": "Filhos, obedecei a vossos pais no Senhor, pois isso é justo.",
+    "template": "Filhos, ___ a vossos pais no Senhor",
+    "options": [
+      {
+        "id": "a",
+        "text": "pais"
+      },
+      {
+        "id": "b",
+        "text": "obedecei"
+      },
+      {
+        "id": "c",
+        "text": "justo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "familia",
+    "section": "fm-04-desafio",
+    "id": "familia-cam-fm-04-desafio-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 5:25; 6:1; Gálatas 6:2",
+    "learningObjective": "Reconhecer o lar que serve: aliança de entrega, honra em casa e cargas levadas juntos.",
+    "evidence": [
+      "Efésios 5:25",
+      "Efésios 6:1",
+      "Gálatas 6:2"
+    ],
+    "type": "choice",
+    "question": "Como os três textos se encadeiam no lar?",
+    "prompt": "Como os três textos se encadeiam no lar?",
+    "cue": "Como os três textos se encadeiam no lar?",
+    "feedbackCorrect": "Certo: entrega na aliança, honra em casa, cargas na comunidade.",
+    "feedbackWrong": {
+      "a": "O conjunto não começa pelo mando e termina no isolamento.",
+      "c": "Honra em casa não substitui levar cargas.",
+      "d": "A entrega de Cristo não dispensa a honra nem as cargas."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo, Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Primeiro o mando, depois o silêncio, por fim o isolamento"
+      },
+      {
+        "id": "b",
+        "text": "Entrega na aliança, honra em casa e cargas na comunidade"
+      },
+      {
+        "id": "c",
+        "text": "Só honrar os pais, sem amar nem carregar ninguém"
+      },
+      {
+        "id": "d",
+        "text": "A entrega de Cristo torna desnecessária a vida em casa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "familia",
+    "section": "fm-04-desafio",
+    "id": "familia-cam-fm-04-desafio-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 5:25; 6:1; Gálatas 6:2",
+    "learningObjective": "Reconhecer o lar que serve: aliança de entrega, honra em casa e cargas levadas juntos.",
+    "evidence": [
+      "Efésios 5:25",
+      "Efésios 6:1",
+      "Gálatas 6:2"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Efésios 5:25; 6:1; Gálatas 6:2?",
+    "prompt": "Como se encadeiam os eventos de Efésios 5:25; 6:1; Gálatas 6:2?",
+    "cue": "Como se encadeiam os eventos de Efésios 5:25; 6:1; Gálatas 6:2?",
+    "feedbackCorrect": "Certo: o lar serve na aliança, na honra e nas cargas.",
+    "feedbackWrong": {
+      "b": "As cargas concluem o encadeamento, não o abrem.",
+      "c": "A entrega do marido abre o conjunto."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo, Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo amou a igreja e por ela se entregou a si mesmo"
+      },
+      {
+        "id": "b",
+        "text": "Filhos, obedecei a vossos pais no Senhor"
+      },
+      {
+        "id": "c",
+        "text": "Levai as cargas uns dos outros"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-04-desafio",
+    "id": "familia-cam-fm-04-desafio-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 5:25; 6:1; Gálatas 6:2",
+    "learningObjective": "Reconhecer o lar que serve: aliança de entrega, honra em casa e cargas levadas juntos.",
+    "evidence": [
+      "Efésios 5:25",
+      "Efésios 6:1",
+      "Gálatas 6:2"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Filhos, obedecei a vossos pais no ___, pois isso é justo\"",
+    "prompt": "Complete a frase: \"Filhos, obedecei a vossos pais no ___, pois isso é justo\"",
+    "cue": "Complete a frase: \"Filhos, obedecei a vossos pais no ___, pois isso é justo\"",
+    "feedbackCorrect": "Certo: a honra em casa é no Senhor.",
+    "feedbackWrong": {
+      "b": "Igreja pertence a Efésios 5:25.",
+      "c": "Cargas pertence a Gálatas 6:2."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo, Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "template": "Filhos, obedecei a vossos pais no ___, pois isso é justo",
+    "options": [
+      {
+        "id": "a",
+        "text": "Senhor"
+      },
+      {
+        "id": "b",
+        "text": "igreja"
+      },
+      {
+        "id": "c",
+        "text": "cargas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-04-desafio",
+    "id": "familia-cam-fm-04-desafio-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Efésios 5:25; 6:1; Gálatas 6:2",
+    "learningObjective": "Reconhecer o lar que serve: aliança de entrega, honra em casa e cargas levadas juntos.",
+    "evidence": [
+      "Efésios 5:25",
+      "Efésios 6:1",
+      "Gálatas 6:2"
+    ],
+    "type": "connect",
+    "question": "O que Efésios 5:25; 6:1; Gálatas 6:2 comunica que se liga a este contexto?",
+    "prompt": "O que Efésios 5:25; 6:1; Gálatas 6:2 comunica que se liga a este contexto?",
+    "cue": "O que Efésios 5:25; 6:1; Gálatas 6:2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: entrega, honra e cargas formam o lar que serve.",
+    "feedbackWrong": {
+      "b": "O conjunto não descreve um lar de aparência.",
+      "c": "Os textos não pedem isolamento piedoso."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo, Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "passageA": {
+      "ref": "Efésios 5:25; 6:1; Gálatas 6:2",
+      "text": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo, Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Lar que serve: aliança de entrega, honra em casa, cargas levadas juntos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Entrega, honra, cargas"
+      },
+      {
+        "id": "b",
+        "text": "Lar de aparência"
+      },
+      {
+        "id": "c",
+        "text": "Isolamento piedoso"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-04-desafio",
+    "id": "familia-cam-fm-04-desafio-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 5:25; 6:1; Gálatas 6:2",
+    "learningObjective": "Reconhecer o lar que serve: aliança de entrega, honra em casa e cargas levadas juntos.",
+    "evidence": [
+      "Efésios 5:25",
+      "Efésios 6:1",
+      "Gálatas 6:2"
+    ],
+    "type": "true_false",
+    "question": "Servir no lar, segundo esses textos, é entrega como Cristo, honra em casa e cargas levadas juntos.",
+    "prompt": "Servir no lar, segundo esses textos, é entrega como Cristo, honra em casa e cargas levadas juntos.",
+    "cue": "Servir no lar, segundo esses textos, é entrega como Cristo, honra em casa e cargas levadas juntos.",
+    "feedbackCorrect": "Certo: esse é o sentido conjunto dos três versículos.",
+    "feedbackWrong": {
+      "false": "Os três textos descrevem entrega, honra e cargas compartilhadas."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo, Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "trail": "familia",
+    "section": "fm-04-desafio",
+    "id": "familia-pro-fm-04-desafio-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 5:25; 6:1; Gálatas 6:2",
+    "learningObjective": "Reconhecer o lar que serve: aliança de entrega, honra em casa e cargas levadas juntos.",
+    "evidence": [
+      "Efésios 5:25",
+      "Efésios 6:1",
+      "Gálatas 6:2"
+    ],
+    "type": "tap",
+    "question": "Em Gálatas 6:2, toque a palavra que falta em \"Levai as ___ uns dos outros\"?",
+    "prompt": "Em Gálatas 6:2, toque a palavra que falta em \"Levai as ___ uns dos outros\"?",
+    "cue": "Em Gálatas 6:2, toque a palavra que falta em \"Levai as ___ uns dos outros\"?",
+    "feedbackCorrect": "Exato: o terceiro gesto do lar que serve é levar cargas.",
+    "feedbackWrong": {
+      "b": "Lei é o que se cumpre, não o objeto desta lacuna.",
+      "c": "Cristo nomeia a lei, não o que se carrega aqui."
+    },
+    "passageText": "Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "template": "Levai as ___ uns dos outros",
+    "options": [
+      {
+        "id": "a",
+        "text": "cargas"
+      },
+      {
+        "id": "b",
+        "text": "lei"
+      },
+      {
+        "id": "c",
+        "text": "Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-04-desafio",
+    "id": "familia-pro-fm-04-desafio-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 5:25; 6:1; Gálatas 6:2",
+    "learningObjective": "Reconhecer o lar que serve: aliança de entrega, honra em casa e cargas levadas juntos.",
+    "evidence": [
+      "Efésios 5:25",
+      "Efésios 6:1",
+      "Gálatas 6:2"
+    ],
+    "type": "choice",
+    "question": "Que leitura teológica une os três textos?",
+    "prompt": "Que leitura teológica une os três textos?",
+    "cue": "Que leitura teológica une os três textos?",
+    "feedbackCorrect": "Certo: o lar cristão serve à imagem de Cristo, não pelo domínio vazio.",
+    "feedbackWrong": {
+      "a": "Os textos não autorizam o lar como trono de mando.",
+      "c": "Honra e cargas não são extras opcionais à fé.",
+      "d": "A cruz de Cristo forma o lar; não o dispensa."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo, Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O lar cristão é um trono de mando sem cruz"
+      },
+      {
+        "id": "b",
+        "text": "O lar cristão serve à imagem de Cristo, não por domínio vazio"
+      },
+      {
+        "id": "c",
+        "text": "Honra e cargas são extras opcionais à fé pessoal"
+      },
+      {
+        "id": "d",
+        "text": "Quem ama como Cristo já não precisa da casa nem dos irmãos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "familia",
+    "section": "fm-04-desafio",
+    "id": "familia-pro-fm-04-desafio-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 5:25; 6:1; Gálatas 6:2",
+    "learningObjective": "Reconhecer o lar que serve: aliança de entrega, honra em casa e cargas levadas juntos.",
+    "evidence": [
+      "Efésios 5:25",
+      "Efésios 6:1",
+      "Gálatas 6:2"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Efésios 5:25; 6:1; Gálatas 6:2?",
+    "prompt": "Qual sequência revela o sentido de Efésios 5:25; 6:1; Gálatas 6:2?",
+    "cue": "Qual sequência revela o sentido de Efésios 5:25; 6:1; Gálatas 6:2?",
+    "feedbackCorrect": "Certo: o sentido é aliança de entrega, honra e cargas juntas.",
+    "feedbackWrong": {
+      "b": "A lei de Cristo nas cargas revela o sentido final.",
+      "c": "A entrega de Cristo pela igreja abre o sentido."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo, Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "aliança: Cristo se entregou pela igreja"
+      },
+      {
+        "id": "b",
+        "text": "casa: filhos obedecem no Senhor, pois isso é justo"
+      },
+      {
+        "id": "c",
+        "text": "comunidade: assim se cumpre a lei de Cristo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-04-desafio",
+    "id": "familia-pro-fm-04-desafio-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 5:25; 6:1; Gálatas 6:2",
+    "learningObjective": "Reconhecer o lar que serve: aliança de entrega, honra em casa e cargas levadas juntos.",
+    "evidence": [
+      "Efésios 5:25",
+      "Efésios 6:1",
+      "Gálatas 6:2"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Levai as cargas uns dos outros e, assim, cumprireis a lei de ___\"",
+    "prompt": "Complete a frase: \"Levai as cargas uns dos outros e, assim, cumprireis a lei de ___\"",
+    "cue": "Complete a frase: \"Levai as cargas uns dos outros e, assim, cumprireis a lei de ___\"",
+    "feedbackCorrect": "Certo: o lar que serve cumpre a lei de Cristo.",
+    "feedbackWrong": {
+      "b": "Igreja pertence a Efésios 5:25.",
+      "c": "Senhor pertence a Efésios 6:1."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo, Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "template": "Levai as cargas uns dos outros e, assim, cumprireis a lei de ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo"
+      },
+      {
+        "id": "b",
+        "text": "igreja"
+      },
+      {
+        "id": "c",
+        "text": "Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-04-desafio",
+    "id": "familia-pro-fm-04-desafio-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Efésios 5:25; 6:1; Gálatas 6:2",
+    "learningObjective": "Reconhecer o lar que serve: aliança de entrega, honra em casa e cargas levadas juntos.",
+    "evidence": [
+      "Efésios 5:25",
+      "Efésios 6:1",
+      "Gálatas 6:2"
+    ],
+    "type": "connect",
+    "question": "O que Efésios 5:25; 6:1; Gálatas 6:2 comunica que se liga a este contexto?",
+    "prompt": "O que Efésios 5:25; 6:1; Gálatas 6:2 comunica que se liga a este contexto?",
+    "cue": "O que Efésios 5:25; 6:1; Gálatas 6:2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: três gestos de serviço formam o lar em Cristo.",
+    "feedbackWrong": {
+      "b": "O conjunto não descreve um lar de consumo.",
+      "c": "Os textos não pedem fé sem ombro nem casa."
+    },
+    "passageText": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo, Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo.",
+    "passageA": {
+      "ref": "Efésios 5:25; 6:1; Gálatas 6:2",
+      "text": "Maridos, amai a vossas mulheres, como também Cristo amou a igreja e por ela se entregou a si mesmo, Filhos, obedecei a vossos pais no Senhor, pois isso é justo. Levai as cargas uns dos outros e, assim, cumprireis a lei de Cristo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Lar que serve: aliança de entrega, honra em casa, cargas levadas juntos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Três gestos de serviço"
+      },
+      {
+        "id": "b",
+        "text": "Lar de consumo"
+      },
+      {
+        "id": "c",
+        "text": "Fé sem ombro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "familia",
+    "section": "fm-04-desafio",
+    "id": "familia-pro-fm-04-desafio-06"
+  }
+]

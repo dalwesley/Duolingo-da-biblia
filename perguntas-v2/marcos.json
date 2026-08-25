@@ -1,0 +1,2954 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Marcos 1:14–15",
+    "learningObjective": "Reconhecer que Jesus anuncia o reino de Deus com autoridade: o tempo se cumpriu; é preciso arrepender-se e crer.",
+    "evidence": [
+      "Marcos 1:14",
+      "Marcos 1:15"
+    ],
+    "type": "true_false",
+    "question": "Depois de João ser preso, Jesus foi para a Galileia pregando o evangelho de Deus.",
+    "prompt": "Depois de João ser preso, Jesus foi para a Galileia pregando o evangelho de Deus.",
+    "cue": "Depois de João ser preso, Jesus foi para a Galileia pregando o evangelho de Deus.",
+    "feedbackCorrect": "Certo: o texto liga a ida à Galileia à prisão de João.",
+    "feedbackWrong": {
+      "false": "Releia Marcos 1:14: Jesus vai à Galileia depois de João ser preso."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Depois de João ser preso, foi Jesus para a Galileia, pregando o evangelho de Deus e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "id": "marcos-sem-mc-01-servo-autoridade-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Marcos 1:14–15",
+    "learningObjective": "Reconhecer que Jesus anuncia o reino de Deus com autoridade: o tempo se cumpriu; é preciso arrepender-se e crer.",
+    "evidence": [
+      "Marcos 1:14",
+      "Marcos 1:15"
+    ],
+    "type": "tap",
+    "question": "Em Marcos 1:14–15, toque a palavra que falta em \"foi Jesus para a ___, pregando o evangelho de Deus\"?",
+    "prompt": "Em Marcos 1:14–15, toque a palavra que falta em \"foi Jesus para a ___, pregando o evangelho de Deus\"?",
+    "cue": "Em Marcos 1:14–15, toque a palavra que falta em \"foi Jesus para a ___, pregando o evangelho de Deus\"?",
+    "feedbackCorrect": "Exato: Jesus vai para a Galileia.",
+    "feedbackWrong": {
+      "b": "João é quem foi preso, não o destino da pregação.",
+      "c": "Evangelho é o que ele prega, não o lugar para onde vai."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Galileia"
+      },
+      {
+        "id": "b",
+        "text": "João"
+      },
+      {
+        "id": "c",
+        "text": "evangelho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois de João ser preso, foi Jesus para a Galileia, pregando o evangelho de Deus e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "id": "marcos-sem-mc-01-servo-autoridade-02",
+    "template": "foi Jesus para a ___, pregando o evangelho de Deus"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Marcos 1:14–15",
+    "learningObjective": "Reconhecer que Jesus anuncia o reino de Deus com autoridade: o tempo se cumpriu; é preciso arrepender-se e crer.",
+    "evidence": [
+      "Marcos 1:14",
+      "Marcos 1:15"
+    ],
+    "type": "choice",
+    "question": "Qual fato o texto afirma sobre o anúncio de Jesus na Galileia?",
+    "prompt": "Qual fato o texto afirma sobre o anúncio de Jesus na Galileia?",
+    "cue": "Qual fato o texto afirma sobre o anúncio de Jesus na Galileia?",
+    "feedbackCorrect": "Certo: o texto registra exatamente esse anúncio.",
+    "feedbackWrong": {
+      "b": "O texto não diz que João pregava com Jesus na Galileia.",
+      "c": "O texto anuncia o reino próximo, não um recuo de Jesus.",
+      "d": "O texto pede arrependimento e fé, não só memória de João."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele diz que o tempo está cumprido e o reino de Deus está próximo."
+      },
+      {
+        "id": "b",
+        "text": "Ele prega na Galileia junto com João, ainda em liberdade."
+      },
+      {
+        "id": "c",
+        "text": "Ele interrompe a pregação porque o reino ainda está distante."
+      },
+      {
+        "id": "d",
+        "text": "Ele pede apenas que o povo recorde o batismo de João."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois de João ser preso, foi Jesus para a Galileia, pregando o evangelho de Deus e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "id": "marcos-sem-mc-01-servo-autoridade-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Marcos 1:14–15",
+    "learningObjective": "Reconhecer que Jesus anuncia o reino de Deus com autoridade: o tempo se cumpriu; é preciso arrepender-se e crer.",
+    "evidence": [
+      "Marcos 1:14",
+      "Marcos 1:15"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Marcos 1:14–15?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Marcos 1:14–15?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Marcos 1:14–15?",
+    "feedbackCorrect": "Certo: prisão, Galileia e anúncio do reino nessa ordem.",
+    "feedbackWrong": {
+      "b": "A prisão de João vem antes da ida à Galileia.",
+      "c": "O anúncio do tempo cumprido vem depois da ida à Galileia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Depois de João ser preso"
+      },
+      {
+        "id": "b",
+        "text": "foi Jesus para a Galileia, pregando o evangelho de Deus"
+      },
+      {
+        "id": "c",
+        "text": "O tempo está cumprido, e o reino de Deus está próximo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois de João ser preso, foi Jesus para a Galileia, pregando o evangelho de Deus e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "id": "marcos-sem-mc-01-servo-autoridade-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Marcos 1:14–15",
+    "learningObjective": "Reconhecer que Jesus anuncia o reino de Deus com autoridade: o tempo se cumpriu; é preciso arrepender-se e crer.",
+    "evidence": [
+      "Marcos 1:14",
+      "Marcos 1:15"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"O tempo está ___, e o reino de Deus está próximo\"",
+    "prompt": "Complete a frase: \"O tempo está ___, e o reino de Deus está próximo\"",
+    "cue": "Complete a frase: \"O tempo está ___, e o reino de Deus está próximo\"",
+    "feedbackCorrect": "Certo: o tempo está cumprido.",
+    "feedbackWrong": {
+      "b": "Próximo descreve o reino, não o tempo nesta lacuna.",
+      "c": "Galileia é o lugar da pregação, não o que o tempo está."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "cumprido"
+      },
+      {
+        "id": "b",
+        "text": "próximo"
+      },
+      {
+        "id": "c",
+        "text": "Galileia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois de João ser preso, foi Jesus para a Galileia, pregando o evangelho de Deus e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "id": "marcos-sem-mc-01-servo-autoridade-05",
+    "template": "O tempo está ___, e o reino de Deus está próximo"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Marcos 1:14–15",
+    "learningObjective": "Reconhecer que Jesus anuncia o reino de Deus com autoridade: o tempo se cumpriu; é preciso arrepender-se e crer.",
+    "evidence": [
+      "Marcos 1:14",
+      "Marcos 1:15"
+    ],
+    "type": "connect",
+    "question": "O que Marcos 1:14–15 comunica que se liga a este contexto?",
+    "prompt": "O que Marcos 1:14–15 comunica que se liga a este contexto?",
+    "cue": "O que Marcos 1:14–15 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o Servo entra anunciando o tempo cumprido e o reino próximo.",
+    "feedbackWrong": {
+      "b": "O texto une anúncio do reino e chamado à fé, não só geografia.",
+      "c": "O evangelho inclui arrependimento e fé, não só informação."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O Servo anuncia o reino com autoridade"
+      },
+      {
+        "id": "b",
+        "text": "Jesus apenas muda de região sem mensagem"
+      },
+      {
+        "id": "c",
+        "text": "O evangelho dispensa arrependimento e fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois de João ser preso, foi Jesus para a Galileia, pregando o evangelho de Deus e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "id": "marcos-sem-mc-01-servo-autoridade-06",
+    "passageA": {
+      "ref": "Marcos 1:14–15",
+      "text": "Depois de João ser preso, foi Jesus para a Galileia, pregando o evangelho de Deus e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Servo entra em cena com autoridade: o tempo se cumpriu, o reino chegou, arrependei-vos e crede."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Marcos 1:14–15",
+    "learningObjective": "Reconhecer que Jesus anuncia o reino de Deus com autoridade: o tempo se cumpriu; é preciso arrepender-se e crer.",
+    "evidence": [
+      "Marcos 1:14",
+      "Marcos 1:15"
+    ],
+    "type": "true_false",
+    "question": "O anúncio de Jesus na Galileia acontece enquanto João ainda prega em liberdade.",
+    "prompt": "O anúncio de Jesus na Galileia acontece enquanto João ainda prega em liberdade.",
+    "cue": "O anúncio de Jesus na Galileia acontece enquanto João ainda prega em liberdade.",
+    "feedbackCorrect": "Certo: o texto situa a pregação depois da prisão de João.",
+    "feedbackWrong": {
+      "true": "Marcos 1:14 coloca a pregação depois de João ser preso."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Depois de João ser preso, foi Jesus para a Galileia, pregando o evangelho de Deus e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "id": "marcos-cam-mc-01-servo-autoridade-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Marcos 1:14–15",
+    "learningObjective": "Reconhecer que Jesus anuncia o reino de Deus com autoridade: o tempo se cumpriu; é preciso arrepender-se e crer.",
+    "evidence": [
+      "Marcos 1:14",
+      "Marcos 1:15"
+    ],
+    "type": "tap",
+    "question": "Em Marcos 1:14–15, toque a palavra que falta em \"o reino de Deus está ___; arrependei-vos e crede no evangelho\"?",
+    "prompt": "Em Marcos 1:14–15, toque a palavra que falta em \"o reino de Deus está ___; arrependei-vos e crede no evangelho\"?",
+    "cue": "Em Marcos 1:14–15, toque a palavra que falta em \"o reino de Deus está ___; arrependei-vos e crede no evangelho\"?",
+    "feedbackCorrect": "Exato: o reino está próximo.",
+    "feedbackWrong": {
+      "b": "Cumprido descreve o tempo, não o reino nesta frase.",
+      "c": "Preso refere-se a João, não ao reino."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "próximo"
+      },
+      {
+        "id": "b",
+        "text": "cumprido"
+      },
+      {
+        "id": "c",
+        "text": "preso"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois de João ser preso, foi Jesus para a Galileia, pregando o evangelho de Deus e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "id": "marcos-cam-mc-01-servo-autoridade-02",
+    "template": "o reino de Deus está ___; arrependei-vos e crede no evangelho"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Marcos 1:14–15",
+    "learningObjective": "Reconhecer que Jesus anuncia o reino de Deus com autoridade: o tempo se cumpriu; é preciso arrepender-se e crer.",
+    "evidence": [
+      "Marcos 1:14",
+      "Marcos 1:15"
+    ],
+    "type": "choice",
+    "question": "Como o anúncio de Jesus une tempo cumprido e resposta humana?",
+    "prompt": "Como o anúncio de Jesus une tempo cumprido e resposta humana?",
+    "cue": "Como o anúncio de Jesus une tempo cumprido e resposta humana?",
+    "feedbackCorrect": "Certo: o reino próximo pede arrependimento e fé.",
+    "feedbackWrong": {
+      "a": "O texto não trata o anúncio como informação sem resposta.",
+      "c": "O chamado é crer no evangelho, não esperar outro prazo.",
+      "d": "O texto pede arrependimento e fé, não só mudança de cidade."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O reino próximo é só dado histórico, sem pedido de resposta."
+      },
+      {
+        "id": "b",
+        "text": "O tempo cumprido exige arrepender-se e crer no evangelho."
+      },
+      {
+        "id": "c",
+        "text": "O povo deve esperar um novo prazo antes de crer."
+      },
+      {
+        "id": "d",
+        "text": "A única resposta pedida é mudar-se para a Galileia."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Depois de João ser preso, foi Jesus para a Galileia, pregando o evangelho de Deus e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "id": "marcos-cam-mc-01-servo-autoridade-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Marcos 1:14–15",
+    "learningObjective": "Reconhecer que Jesus anuncia o reino de Deus com autoridade: o tempo se cumpriu; é preciso arrepender-se e crer.",
+    "evidence": [
+      "Marcos 1:14",
+      "Marcos 1:15"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Marcos 1:14–15?",
+    "prompt": "Como se encadeiam os eventos de Marcos 1:14–15?",
+    "cue": "Como se encadeiam os eventos de Marcos 1:14–15?",
+    "feedbackCorrect": "Certo: prisão, pregação e chamado à fé nessa ordem.",
+    "feedbackWrong": {
+      "b": "O chamado vem depois do anúncio do tempo cumprido.",
+      "c": "A pregação na Galileia vem depois da prisão de João."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "João é preso e Jesus vai para a Galileia"
+      },
+      {
+        "id": "b",
+        "text": "Jesus prega o evangelho de Deus: o tempo está cumprido"
+      },
+      {
+        "id": "c",
+        "text": "arrependei-vos e crede no evangelho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois de João ser preso, foi Jesus para a Galileia, pregando o evangelho de Deus e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "id": "marcos-cam-mc-01-servo-autoridade-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Marcos 1:14–15",
+    "learningObjective": "Reconhecer que Jesus anuncia o reino de Deus com autoridade: o tempo se cumpriu; é preciso arrepender-se e crer.",
+    "evidence": [
+      "Marcos 1:14",
+      "Marcos 1:15"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"arrependei-vos e ___ no evangelho\"",
+    "prompt": "Complete a frase: \"arrependei-vos e ___ no evangelho\"",
+    "cue": "Complete a frase: \"arrependei-vos e ___ no evangelho\"",
+    "feedbackCorrect": "Certo: o chamado é crer no evangelho.",
+    "feedbackWrong": {
+      "b": "Arrependei-vos já está no início da frase.",
+      "c": "Pregando descreve a ação de Jesus, não a lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "crede"
+      },
+      {
+        "id": "b",
+        "text": "arrependei-vos"
+      },
+      {
+        "id": "c",
+        "text": "pregando"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois de João ser preso, foi Jesus para a Galileia, pregando o evangelho de Deus e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "id": "marcos-cam-mc-01-servo-autoridade-05",
+    "template": "arrependei-vos e ___ no evangelho"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Marcos 1:14–15",
+    "learningObjective": "Reconhecer que Jesus anuncia o reino de Deus com autoridade: o tempo se cumpriu; é preciso arrepender-se e crer.",
+    "evidence": [
+      "Marcos 1:14",
+      "Marcos 1:15"
+    ],
+    "type": "connect",
+    "question": "O que Marcos 1:14–15 comunica que se liga a este contexto?",
+    "prompt": "O que Marcos 1:14–15 comunica que se liga a este contexto?",
+    "cue": "O que Marcos 1:14–15 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o reino chegou; a resposta é arrepender-se e crer.",
+    "feedbackWrong": {
+      "b": "O texto une cumprimento do tempo e chamado, não só calendário.",
+      "c": "O evangelho de Deus inclui o chamado a crer."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Reino próximo pede fé e arrependimento"
+      },
+      {
+        "id": "b",
+        "text": "O tempo cumprido dispensa qualquer resposta"
+      },
+      {
+        "id": "c",
+        "text": "A mensagem é só de João, não de Jesus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois de João ser preso, foi Jesus para a Galileia, pregando o evangelho de Deus e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "id": "marcos-cam-mc-01-servo-autoridade-06",
+    "passageA": {
+      "ref": "Marcos 1:14–15",
+      "text": "Depois de João ser preso, foi Jesus para a Galileia, pregando o evangelho de Deus e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Servo entra em cena com autoridade: o tempo se cumpriu, o reino chegou, arrependei-vos e crede."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Marcos 1:14–15",
+    "learningObjective": "Reconhecer que Jesus anuncia o reino de Deus com autoridade: o tempo se cumpriu; é preciso arrepender-se e crer.",
+    "evidence": [
+      "Marcos 1:14",
+      "Marcos 1:15"
+    ],
+    "type": "true_false",
+    "question": "O evangelho anunciado por Jesus pede resposta: arrependei-vos e crede, porque o reino está próximo.",
+    "prompt": "O evangelho anunciado por Jesus pede resposta: arrependei-vos e crede, porque o reino está próximo.",
+    "cue": "O evangelho anunciado por Jesus pede resposta: arrependei-vos e crede, porque o reino está próximo.",
+    "feedbackCorrect": "Certo: o anúncio do reino vem com chamado à fé.",
+    "feedbackWrong": {
+      "false": "O texto une reino próximo e o duplo chamado: arrependei-vos e crede."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Depois de João ser preso, foi Jesus para a Galileia, pregando o evangelho de Deus e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "id": "marcos-pro-mc-01-servo-autoridade-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Marcos 1:14–15",
+    "learningObjective": "Reconhecer que Jesus anuncia o reino de Deus com autoridade: o tempo se cumpriu; é preciso arrepender-se e crer.",
+    "evidence": [
+      "Marcos 1:14",
+      "Marcos 1:15"
+    ],
+    "type": "tap",
+    "question": "Em Marcos 1:14–15, toque a palavra que falta em \"pregando o ___ de Deus e dizendo\"?",
+    "prompt": "Em Marcos 1:14–15, toque a palavra que falta em \"pregando o ___ de Deus e dizendo\"?",
+    "cue": "Em Marcos 1:14–15, toque a palavra que falta em \"pregando o ___ de Deus e dizendo\"?",
+    "feedbackCorrect": "Exato: ele prega o evangelho de Deus.",
+    "feedbackWrong": {
+      "b": "Tempo aparece no anúncio, não nesta lacuna.",
+      "c": "Reino aparece depois, na fala de Jesus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "evangelho"
+      },
+      {
+        "id": "b",
+        "text": "tempo"
+      },
+      {
+        "id": "c",
+        "text": "reino"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois de João ser preso, foi Jesus para a Galileia, pregando o evangelho de Deus e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "id": "marcos-pro-mc-01-servo-autoridade-02",
+    "template": "pregando o ___ de Deus e dizendo"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Marcos 1:14–15",
+    "learningObjective": "Reconhecer que Jesus anuncia o reino de Deus com autoridade: o tempo se cumpriu; é preciso arrepender-se e crer.",
+    "evidence": [
+      "Marcos 1:14",
+      "Marcos 1:15"
+    ],
+    "type": "choice",
+    "question": "Qual leitura teológica o texto sustenta sobre a autoridade do Servo?",
+    "prompt": "Qual leitura teológica o texto sustenta sobre a autoridade do Servo?",
+    "cue": "Qual leitura teológica o texto sustenta sobre a autoridade do Servo?",
+    "feedbackCorrect": "Certo: ele inaugura o tempo do reino e chama à fé.",
+    "feedbackWrong": {
+      "a": "O texto não reduz o evangelho a um conselho ético sem reino.",
+      "c": "O tempo cumprido é anúncio de Jesus, não recuo até João voltar.",
+      "d": "O chamado é crer no evangelho, não negociar o prazo do reino."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus só oferece conselho moral, sem anúncio de reino."
+      },
+      {
+        "id": "b",
+        "text": "O Servo declara o tempo cumprido e chama a crer no evangelho."
+      },
+      {
+        "id": "c",
+        "text": "O reino só começa quando João for solto da prisão."
+      },
+      {
+        "id": "d",
+        "text": "O povo pode adiar a fé até o reino deixar de estar próximo."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Depois de João ser preso, foi Jesus para a Galileia, pregando o evangelho de Deus e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "id": "marcos-pro-mc-01-servo-autoridade-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Marcos 1:14–15",
+    "learningObjective": "Reconhecer que Jesus anuncia o reino de Deus com autoridade: o tempo se cumpriu; é preciso arrepender-se e crer.",
+    "evidence": [
+      "Marcos 1:14",
+      "Marcos 1:15"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Marcos 1:14–15?",
+    "prompt": "Qual sequência revela o sentido de Marcos 1:14–15?",
+    "cue": "Qual sequência revela o sentido de Marcos 1:14–15?",
+    "feedbackCorrect": "Certo: tempo cumprido, reino próximo, então o chamado à fé.",
+    "feedbackWrong": {
+      "b": "O chamado vem depois da declaração do reino próximo.",
+      "c": "O tempo cumprido abre o anúncio, não o fecha."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O tempo está cumprido"
+      },
+      {
+        "id": "b",
+        "text": "o reino de Deus está próximo"
+      },
+      {
+        "id": "c",
+        "text": "arrependei-vos e crede no evangelho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois de João ser preso, foi Jesus para a Galileia, pregando o evangelho de Deus e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "id": "marcos-pro-mc-01-servo-autoridade-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Marcos 1:14–15",
+    "learningObjective": "Reconhecer que Jesus anuncia o reino de Deus com autoridade: o tempo se cumpriu; é preciso arrepender-se e crer.",
+    "evidence": [
+      "Marcos 1:14",
+      "Marcos 1:15"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"o ___ de Deus está próximo; arrependei-vos e crede no evangelho\"",
+    "prompt": "Complete a frase: \"o ___ de Deus está próximo; arrependei-vos e crede no evangelho\"",
+    "cue": "Complete a frase: \"o ___ de Deus está próximo; arrependei-vos e crede no evangelho\"",
+    "feedbackCorrect": "Certo: é o reino de Deus que está próximo.",
+    "feedbackWrong": {
+      "b": "Evangelho aparece no fim da frase, não nesta lacuna.",
+      "c": "Tempo está cumprido na frase anterior."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "reino"
+      },
+      {
+        "id": "b",
+        "text": "evangelho"
+      },
+      {
+        "id": "c",
+        "text": "tempo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois de João ser preso, foi Jesus para a Galileia, pregando o evangelho de Deus e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "id": "marcos-pro-mc-01-servo-autoridade-05",
+    "template": "o ___ de Deus está próximo; arrependei-vos e crede no evangelho"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Marcos 1:14–15",
+    "learningObjective": "Reconhecer que Jesus anuncia o reino de Deus com autoridade: o tempo se cumpriu; é preciso arrepender-se e crer.",
+    "evidence": [
+      "Marcos 1:14",
+      "Marcos 1:15"
+    ],
+    "type": "connect",
+    "question": "O que Marcos 1:14–15 comunica que se liga a este contexto?",
+    "prompt": "O que Marcos 1:14–15 comunica que se liga a este contexto?",
+    "cue": "O que Marcos 1:14–15 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a autoridade do Servo é o reino que chegou e o chamado à fé.",
+    "feedbackWrong": {
+      "b": "O texto não descreve um rei que espera ser coroado depois.",
+      "c": "Arrependimento e fé são a resposta ao reino, não um extra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Autoridade do Servo: reino e chamado"
+      },
+      {
+        "id": "b",
+        "text": "Jesus entra só para ser aclamado sem mensagem"
+      },
+      {
+        "id": "c",
+        "text": "O reino próximo dispensa arrependimento"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Depois de João ser preso, foi Jesus para a Galileia, pregando o evangelho de Deus e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho.",
+    "trail": "marcos",
+    "section": "mc-01-servo-autoridade",
+    "id": "marcos-pro-mc-01-servo-autoridade-06",
+    "passageA": {
+      "ref": "Marcos 1:14–15",
+      "text": "Depois de João ser preso, foi Jesus para a Galileia, pregando o evangelho de Deus e dizendo: O tempo está cumprido, e o reino de Deus está próximo; arrependei-vos e crede no evangelho."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Servo entra em cena com autoridade: o tempo se cumpriu, o reino chegou, arrependei-vos e crede."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Marcos 8:34–35",
+    "learningObjective": "Perceber que seguir Jesus exige negar-se, tomar a cruz e perder a vida por ele e pelo evangelho.",
+    "evidence": [
+      "Marcos 8:34",
+      "Marcos 8:35"
+    ],
+    "type": "true_false",
+    "question": "Jesus chama a multidão com seus discípulos e ensina quem quer vir após ele.",
+    "prompt": "Jesus chama a multidão com seus discípulos e ensina quem quer vir após ele.",
+    "cue": "Jesus chama a multidão com seus discípulos e ensina quem quer vir após ele.",
+    "feedbackCorrect": "Certo: o chamado é à multidão com os discípulos.",
+    "feedbackWrong": {
+      "false": "Marcos 8:34 começa exatamente com esse chamado."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Chamando a si a multidão com seus discípulos, disse-lhes: Se alguém quer vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me. Pois quem quiser salvar a sua vida perdê-la-á; e quem perder a sua vida por amor de mim e do evangelho salvá-la-á.",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "id": "marcos-sem-mc-02-caminho-cruz-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Marcos 8:34–35",
+    "learningObjective": "Perceber que seguir Jesus exige negar-se, tomar a cruz e perder a vida por ele e pelo evangelho.",
+    "evidence": [
+      "Marcos 8:34",
+      "Marcos 8:35"
+    ],
+    "type": "tap",
+    "question": "Em Marcos 8:34–35, toque a palavra que falta em \"tome a sua ___ e siga-me\"?",
+    "prompt": "Em Marcos 8:34–35, toque a palavra que falta em \"tome a sua ___ e siga-me\"?",
+    "cue": "Em Marcos 8:34–35, toque a palavra que falta em \"tome a sua ___ e siga-me\"?",
+    "feedbackCorrect": "Exato: é preciso tomar a cruz.",
+    "feedbackWrong": {
+      "b": "Vida aparece no paradoxo seguinte, não nesta lacuna.",
+      "c": "Multidão é quem ele chama, não o que se toma."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "cruz"
+      },
+      {
+        "id": "b",
+        "text": "vida"
+      },
+      {
+        "id": "c",
+        "text": "multidão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Chamando a si a multidão com seus discípulos, disse-lhes: Se alguém quer vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me. Pois quem quiser salvar a sua vida perdê-la-á; e quem perder a sua vida por amor de mim e do evangelho salvá-la-á.",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "id": "marcos-sem-mc-02-caminho-cruz-02",
+    "template": "tome a sua ___ e siga-me"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Marcos 8:34–35",
+    "learningObjective": "Perceber que seguir Jesus exige negar-se, tomar a cruz e perder a vida por ele e pelo evangelho.",
+    "evidence": [
+      "Marcos 8:34",
+      "Marcos 8:35"
+    ],
+    "type": "choice",
+    "question": "Qual condição o texto afirma para quem quer ir após Jesus?",
+    "prompt": "Qual condição o texto afirma para quem quer ir após Jesus?",
+    "cue": "Qual condição o texto afirma para quem quer ir após Jesus?",
+    "feedbackCorrect": "Certo: negar-se, tomar a cruz e seguir.",
+    "feedbackWrong": {
+      "b": "O texto não restringe o chamado só aos Doze.",
+      "c": "O texto pede tomar a cruz, não evitá-la.",
+      "d": "Seguir inclui negar-se, não conservar a si mesmo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Negue-se a si mesmo, tome a sua cruz e siga-me."
+      },
+      {
+        "id": "b",
+        "text": "Basta acompanhar os discípulos, sem tomar cruz."
+      },
+      {
+        "id": "c",
+        "text": "Quem quiser vir após ele deve evitar qualquer cruz."
+      },
+      {
+        "id": "d",
+        "text": "O chamado é conservar a si mesmo e depois seguir."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Chamando a si a multidão com seus discípulos, disse-lhes: Se alguém quer vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me. Pois quem quiser salvar a sua vida perdê-la-á; e quem perder a sua vida por amor de mim e do evangelho salvá-la-á.",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "id": "marcos-sem-mc-02-caminho-cruz-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Marcos 8:34–35",
+    "learningObjective": "Perceber que seguir Jesus exige negar-se, tomar a cruz e perder a vida por ele e pelo evangelho.",
+    "evidence": [
+      "Marcos 8:34",
+      "Marcos 8:35"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Marcos 8:34–35?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Marcos 8:34–35?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Marcos 8:34–35?",
+    "feedbackCorrect": "Certo: chamado, condições do seguir e paradoxo da vida.",
+    "feedbackWrong": {
+      "b": "O paradoxo da vida vem depois das condições do seguir.",
+      "c": "O chamado à multidão abre o trecho."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Chamando a si a multidão com seus discípulos"
+      },
+      {
+        "id": "b",
+        "text": "negue-se a si mesmo, tome a sua cruz e siga-me"
+      },
+      {
+        "id": "c",
+        "text": "quem perder a sua vida por amor de mim e do evangelho salvá-la-á"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Chamando a si a multidão com seus discípulos, disse-lhes: Se alguém quer vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me. Pois quem quiser salvar a sua vida perdê-la-á; e quem perder a sua vida por amor de mim e do evangelho salvá-la-á.",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "id": "marcos-sem-mc-02-caminho-cruz-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Marcos 8:34–35",
+    "learningObjective": "Perceber que seguir Jesus exige negar-se, tomar a cruz e perder a vida por ele e pelo evangelho.",
+    "evidence": [
+      "Marcos 8:34",
+      "Marcos 8:35"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Se alguém quer vir após mim, negue-se a si ___, tome a sua cruz e siga-me\"",
+    "prompt": "Complete a frase: \"Se alguém quer vir após mim, negue-se a si ___, tome a sua cruz e siga-me\"",
+    "cue": "Complete a frase: \"Se alguém quer vir após mim, negue-se a si ___, tome a sua cruz e siga-me\"",
+    "feedbackCorrect": "Certo: negue-se a si mesmo.",
+    "feedbackWrong": {
+      "b": "Cruz aparece depois, no tomar a cruz.",
+      "c": "Vida aparece no paradoxo seguinte."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "mesmo"
+      },
+      {
+        "id": "b",
+        "text": "cruz"
+      },
+      {
+        "id": "c",
+        "text": "vida"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Chamando a si a multidão com seus discípulos, disse-lhes: Se alguém quer vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me. Pois quem quiser salvar a sua vida perdê-la-á; e quem perder a sua vida por amor de mim e do evangelho salvá-la-á.",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "id": "marcos-sem-mc-02-caminho-cruz-05",
+    "template": "Se alguém quer vir após mim, negue-se a si ___, tome a sua cruz e siga-me"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Marcos 8:34–35",
+    "learningObjective": "Perceber que seguir Jesus exige negar-se, tomar a cruz e perder a vida por ele e pelo evangelho.",
+    "evidence": [
+      "Marcos 8:34",
+      "Marcos 8:35"
+    ],
+    "type": "connect",
+    "question": "O que Marcos 8:34–35 comunica que se liga a este contexto?",
+    "prompt": "O que Marcos 8:34–35 comunica que se liga a este contexto?",
+    "cue": "O que Marcos 8:34–35 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: seguir o Servo é negar-se e tomar a cruz.",
+    "feedbackWrong": {
+      "b": "O texto une cruz e seguir, não os separa.",
+      "c": "A vida se perde por ele e pelo evangelho, não por egoísmo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Seguir é negar-se e tomar a cruz"
+      },
+      {
+        "id": "b",
+        "text": "A cruz é opcional para quem já é discípulo"
+      },
+      {
+        "id": "c",
+        "text": "Salvar a vida é o primeiro passo do seguir"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Chamando a si a multidão com seus discípulos, disse-lhes: Se alguém quer vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me. Pois quem quiser salvar a sua vida perdê-la-á; e quem perder a sua vida por amor de mim e do evangelho salvá-la-á.",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "id": "marcos-sem-mc-02-caminho-cruz-06",
+    "passageA": {
+      "ref": "Marcos 8:34–35",
+      "text": "Chamando a si a multidão com seus discípulos, disse-lhes: Se alguém quer vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me. Pois quem quiser salvar a sua vida perdê-la-á; e quem perder a sua vida por amor de mim e do evangelho salvá-la-á."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Seguir o Servo é negar-se, tomar a cruz e perder a vida por ele e pelo evangelho."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Marcos 8:34–35",
+    "learningObjective": "Perceber que seguir Jesus exige negar-se, tomar a cruz e perder a vida por ele e pelo evangelho.",
+    "evidence": [
+      "Marcos 8:34",
+      "Marcos 8:35"
+    ],
+    "type": "true_false",
+    "question": "Segundo o texto, quem quiser salvar a sua vida a conservará, e a cruz fica de fora do seguir.",
+    "prompt": "Segundo o texto, quem quiser salvar a sua vida a conservará, e a cruz fica de fora do seguir.",
+    "cue": "Segundo o texto, quem quiser salvar a sua vida a conservará, e a cruz fica de fora do seguir.",
+    "feedbackCorrect": "Certo: quem quer salvar a vida perdê-la-á; a cruz faz parte do seguir.",
+    "feedbackWrong": {
+      "true": "O texto inverte essa lógica: salvar a vida é perdê-la."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Chamando a si a multidão com seus discípulos, disse-lhes: Se alguém quer vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me. Pois quem quiser salvar a sua vida perdê-la-á; e quem perder a sua vida por amor de mim e do evangelho salvá-la-á.",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "id": "marcos-cam-mc-02-caminho-cruz-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Marcos 8:34–35",
+    "learningObjective": "Perceber que seguir Jesus exige negar-se, tomar a cruz e perder a vida por ele e pelo evangelho.",
+    "evidence": [
+      "Marcos 8:34",
+      "Marcos 8:35"
+    ],
+    "type": "tap",
+    "question": "Em Marcos 8:34–35, toque a palavra que falta em \"quem perder a sua vida por amor de mim e do ___ salvá-la-á\"?",
+    "prompt": "Em Marcos 8:34–35, toque a palavra que falta em \"quem perder a sua vida por amor de mim e do ___ salvá-la-á\"?",
+    "cue": "Em Marcos 8:34–35, toque a palavra que falta em \"quem perder a sua vida por amor de mim e do ___ salvá-la-á\"?",
+    "feedbackCorrect": "Exato: perder a vida por ele e pelo evangelho.",
+    "feedbackWrong": {
+      "b": "Cruz aparece no chamado anterior, não nesta lacuna.",
+      "c": "Discípulos são os ouvintes, não o objeto do amor aqui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "evangelho"
+      },
+      {
+        "id": "b",
+        "text": "cruz"
+      },
+      {
+        "id": "c",
+        "text": "discípulos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Chamando a si a multidão com seus discípulos, disse-lhes: Se alguém quer vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me. Pois quem quiser salvar a sua vida perdê-la-á; e quem perder a sua vida por amor de mim e do evangelho salvá-la-á.",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "id": "marcos-cam-mc-02-caminho-cruz-02",
+    "template": "quem perder a sua vida por amor de mim e do ___ salvá-la-á"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Marcos 8:34–35",
+    "learningObjective": "Perceber que seguir Jesus exige negar-se, tomar a cruz e perder a vida por ele e pelo evangelho.",
+    "evidence": [
+      "Marcos 8:34",
+      "Marcos 8:35"
+    ],
+    "type": "choice",
+    "question": "Como o texto relaciona salvar a vida e perder a vida?",
+    "prompt": "Como o texto relaciona salvar a vida e perder a vida?",
+    "cue": "Como o texto relaciona salvar a vida e perder a vida?",
+    "feedbackCorrect": "Certo: quem perde a vida por ele e pelo evangelho a salva.",
+    "feedbackWrong": {
+      "a": "O texto não ensina que preservar-se a si mesmo salva a vida.",
+      "c": "A perda é por amor de Jesus e do evangelho, não por acaso.",
+      "d": "Tomar a cruz pertence ao seguir, não o contradiz."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Quem se preserva a si mesmo já cumpriu o chamado de Jesus."
+      },
+      {
+        "id": "b",
+        "text": "Quem perde a vida por amor de Jesus e do evangelho a salva."
+      },
+      {
+        "id": "c",
+        "text": "Perder a vida só vale se for sem qualquer referência a Jesus."
+      },
+      {
+        "id": "d",
+        "text": "Tomar a cruz cancela o convite para vir após ele."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Chamando a si a multidão com seus discípulos, disse-lhes: Se alguém quer vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me. Pois quem quiser salvar a sua vida perdê-la-á; e quem perder a sua vida por amor de mim e do evangelho salvá-la-á.",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "id": "marcos-cam-mc-02-caminho-cruz-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Marcos 8:34–35",
+    "learningObjective": "Perceber que seguir Jesus exige negar-se, tomar a cruz e perder a vida por ele e pelo evangelho.",
+    "evidence": [
+      "Marcos 8:34",
+      "Marcos 8:35"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Marcos 8:34–35?",
+    "prompt": "Como se encadeiam os eventos de Marcos 8:34–35?",
+    "cue": "Como se encadeiam os eventos de Marcos 8:34–35?",
+    "feedbackCorrect": "Certo: desejo de seguir, cruz, depois o paradoxo da vida.",
+    "feedbackWrong": {
+      "b": "O paradoxo explica o chamado, não o precede.",
+      "c": "Negar-se e tomar a cruz vêm antes de perder ou salvar a vida."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Se alguém quer vir após mim"
+      },
+      {
+        "id": "b",
+        "text": "negue-se a si mesmo, tome a sua cruz e siga-me"
+      },
+      {
+        "id": "c",
+        "text": "quem quiser salvar a sua vida perdê-la-á"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Chamando a si a multidão com seus discípulos, disse-lhes: Se alguém quer vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me. Pois quem quiser salvar a sua vida perdê-la-á; e quem perder a sua vida por amor de mim e do evangelho salvá-la-á.",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "id": "marcos-cam-mc-02-caminho-cruz-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Marcos 8:34–35",
+    "learningObjective": "Perceber que seguir Jesus exige negar-se, tomar a cruz e perder a vida por ele e pelo evangelho.",
+    "evidence": [
+      "Marcos 8:34",
+      "Marcos 8:35"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Pois quem quiser ___ a sua vida perdê-la-á\"",
+    "prompt": "Complete a frase: \"Pois quem quiser ___ a sua vida perdê-la-á\"",
+    "cue": "Complete a frase: \"Pois quem quiser ___ a sua vida perdê-la-á\"",
+    "feedbackCorrect": "Certo: quem quiser salvar a vida perdê-la-á.",
+    "feedbackWrong": {
+      "b": "Perder aparece na segunda parte do paradoxo.",
+      "c": "Seguir é o convite anterior, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "salvar"
+      },
+      {
+        "id": "b",
+        "text": "perder"
+      },
+      {
+        "id": "c",
+        "text": "seguir"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Chamando a si a multidão com seus discípulos, disse-lhes: Se alguém quer vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me. Pois quem quiser salvar a sua vida perdê-la-á; e quem perder a sua vida por amor de mim e do evangelho salvá-la-á.",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "id": "marcos-cam-mc-02-caminho-cruz-05",
+    "template": "Pois quem quiser ___ a sua vida perdê-la-á"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Marcos 8:34–35",
+    "learningObjective": "Perceber que seguir Jesus exige negar-se, tomar a cruz e perder a vida por ele e pelo evangelho.",
+    "evidence": [
+      "Marcos 8:34",
+      "Marcos 8:35"
+    ],
+    "type": "connect",
+    "question": "O que Marcos 8:34–35 comunica que se liga a este contexto?",
+    "prompt": "O que Marcos 8:34–35 comunica que se liga a este contexto?",
+    "cue": "O que Marcos 8:34–35 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a vida se salva perdendo-a por ele e pelo evangelho.",
+    "feedbackWrong": {
+      "b": "O texto não ensina autoproteção como caminho do discípulo.",
+      "c": "A cruz pertence ao seguir, não é um extra opcional."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Perder a vida por ele é salvá-la"
+      },
+      {
+        "id": "b",
+        "text": "Seguir Jesus é proteger a própria vida"
+      },
+      {
+        "id": "c",
+        "text": "A cruz vale só para a multidão, não para discípulos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Chamando a si a multidão com seus discípulos, disse-lhes: Se alguém quer vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me. Pois quem quiser salvar a sua vida perdê-la-á; e quem perder a sua vida por amor de mim e do evangelho salvá-la-á.",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "id": "marcos-cam-mc-02-caminho-cruz-06",
+    "passageA": {
+      "ref": "Marcos 8:34–35",
+      "text": "Chamando a si a multidão com seus discípulos, disse-lhes: Se alguém quer vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me. Pois quem quiser salvar a sua vida perdê-la-á; e quem perder a sua vida por amor de mim e do evangelho salvá-la-á."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Seguir o Servo é negar-se, tomar a cruz e perder a vida por ele e pelo evangelho."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Marcos 8:34–35",
+    "learningObjective": "Perceber que seguir Jesus exige negar-se, tomar a cruz e perder a vida por ele e pelo evangelho.",
+    "evidence": [
+      "Marcos 8:34",
+      "Marcos 8:35"
+    ],
+    "type": "true_false",
+    "question": "No discipulado de Marcos, a cruz não é acidente à parte: quem segue nega-se e toma a cruz.",
+    "prompt": "No discipulado de Marcos, a cruz não é acidente à parte: quem segue nega-se e toma a cruz.",
+    "cue": "No discipulado de Marcos, a cruz não é acidente à parte: quem segue nega-se e toma a cruz.",
+    "feedbackCorrect": "Certo: negar-se, cruz e seguir formam um só chamado.",
+    "feedbackWrong": {
+      "false": "O texto une negar-se, tomar a cruz e seguir no mesmo convite."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Chamando a si a multidão com seus discípulos, disse-lhes: Se alguém quer vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me. Pois quem quiser salvar a sua vida perdê-la-á; e quem perder a sua vida por amor de mim e do evangelho salvá-la-á.",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "id": "marcos-pro-mc-02-caminho-cruz-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Marcos 8:34–35",
+    "learningObjective": "Perceber que seguir Jesus exige negar-se, tomar a cruz e perder a vida por ele e pelo evangelho.",
+    "evidence": [
+      "Marcos 8:34",
+      "Marcos 8:35"
+    ],
+    "type": "tap",
+    "question": "Em Marcos 8:34–35, toque a palavra que falta em \"Chamando a si a ___ com seus discípulos\"?",
+    "prompt": "Em Marcos 8:34–35, toque a palavra que falta em \"Chamando a si a ___ com seus discípulos\"?",
+    "cue": "Em Marcos 8:34–35, toque a palavra que falta em \"Chamando a si a ___ com seus discípulos\"?",
+    "feedbackCorrect": "Exato: ele chama a multidão com os discípulos.",
+    "feedbackWrong": {
+      "b": "Cruz aparece no ensino, não neste chamado inicial.",
+      "c": "Vida aparece no paradoxo, não aqui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "multidão"
+      },
+      {
+        "id": "b",
+        "text": "cruz"
+      },
+      {
+        "id": "c",
+        "text": "vida"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Chamando a si a multidão com seus discípulos, disse-lhes: Se alguém quer vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me. Pois quem quiser salvar a sua vida perdê-la-á; e quem perder a sua vida por amor de mim e do evangelho salvá-la-á.",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "id": "marcos-pro-mc-02-caminho-cruz-02",
+    "template": "Chamando a si a ___ com seus discípulos"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Marcos 8:34–35",
+    "learningObjective": "Perceber que seguir Jesus exige negar-se, tomar a cruz e perder a vida por ele e pelo evangelho.",
+    "evidence": [
+      "Marcos 8:34",
+      "Marcos 8:35"
+    ],
+    "type": "choice",
+    "question": "Qual sentido o texto dá ao paradoxo de perder e salvar a vida?",
+    "prompt": "Qual sentido o texto dá ao paradoxo de perder e salvar a vida?",
+    "cue": "Qual sentido o texto dá ao paradoxo de perder e salvar a vida?",
+    "feedbackCorrect": "Certo: a vida se salva quando se perde por ele e pelo evangelho.",
+    "feedbackWrong": {
+      "a": "O texto não ensina que a cruz contradiz o evangelho.",
+      "c": "O chamado inclui a multidão e os discípulos, não os exclui.",
+      "d": "Salvar a vida apegando-se a si mesmo é o caminho da perda."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A cruz é um obstáculo que o evangelho depois remove."
+      },
+      {
+        "id": "b",
+        "text": "Perder a vida por Jesus e pelo evangelho é o modo de salvá-la."
+      },
+      {
+        "id": "c",
+        "text": "Só os discípulos ouvem; a multidão fica fora do chamado."
+      },
+      {
+        "id": "d",
+        "text": "Quem se apega a si mesmo cumpre o sentido de seguir Jesus."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Chamando a si a multidão com seus discípulos, disse-lhes: Se alguém quer vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me. Pois quem quiser salvar a sua vida perdê-la-á; e quem perder a sua vida por amor de mim e do evangelho salvá-la-á.",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "id": "marcos-pro-mc-02-caminho-cruz-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Marcos 8:34–35",
+    "learningObjective": "Perceber que seguir Jesus exige negar-se, tomar a cruz e perder a vida por ele e pelo evangelho.",
+    "evidence": [
+      "Marcos 8:34",
+      "Marcos 8:35"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Marcos 8:34–35?",
+    "prompt": "Qual sequência revela o sentido de Marcos 8:34–35?",
+    "cue": "Qual sequência revela o sentido de Marcos 8:34–35?",
+    "feedbackCorrect": "Certo: negar-se, cruz, perder a vida por ele e pelo evangelho.",
+    "feedbackWrong": {
+      "b": "Tomar a cruz vem depois de negar-se, não antes.",
+      "c": "O paradoxo da vida fecha o sentido do chamado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "negue-se a si mesmo"
+      },
+      {
+        "id": "b",
+        "text": "tome a sua cruz e siga-me"
+      },
+      {
+        "id": "c",
+        "text": "quem perder a sua vida por amor de mim e do evangelho salvá-la-á"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Chamando a si a multidão com seus discípulos, disse-lhes: Se alguém quer vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me. Pois quem quiser salvar a sua vida perdê-la-á; e quem perder a sua vida por amor de mim e do evangelho salvá-la-á.",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "id": "marcos-pro-mc-02-caminho-cruz-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Marcos 8:34–35",
+    "learningObjective": "Perceber que seguir Jesus exige negar-se, tomar a cruz e perder a vida por ele e pelo evangelho.",
+    "evidence": [
+      "Marcos 8:34",
+      "Marcos 8:35"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"quem ___ a sua vida por amor de mim e do evangelho salvá-la-á\"",
+    "prompt": "Complete a frase: \"quem ___ a sua vida por amor de mim e do evangelho salvá-la-á\"",
+    "cue": "Complete a frase: \"quem ___ a sua vida por amor de mim e do evangelho salvá-la-á\"",
+    "feedbackCorrect": "Certo: quem perder a vida por ele e pelo evangelho a salva.",
+    "feedbackWrong": {
+      "b": "Salvar é o resultado, não o verbo desta lacuna.",
+      "c": "Negue-se aparece no chamado anterior."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "perder"
+      },
+      {
+        "id": "b",
+        "text": "salvar"
+      },
+      {
+        "id": "c",
+        "text": "negar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Chamando a si a multidão com seus discípulos, disse-lhes: Se alguém quer vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me. Pois quem quiser salvar a sua vida perdê-la-á; e quem perder a sua vida por amor de mim e do evangelho salvá-la-á.",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "id": "marcos-pro-mc-02-caminho-cruz-05",
+    "template": "quem ___ a sua vida por amor de mim e do evangelho salvá-la-á"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Marcos 8:34–35",
+    "learningObjective": "Perceber que seguir Jesus exige negar-se, tomar a cruz e perder a vida por ele e pelo evangelho.",
+    "evidence": [
+      "Marcos 8:34",
+      "Marcos 8:35"
+    ],
+    "type": "connect",
+    "question": "O que Marcos 8:34–35 comunica que se liga a este contexto?",
+    "prompt": "O que Marcos 8:34–35 comunica que se liga a este contexto?",
+    "cue": "O que Marcos 8:34–35 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o caminho do Servo é cruz e vida perdida por ele.",
+    "feedbackWrong": {
+      "b": "O texto não descreve um seguir sem custo.",
+      "c": "A vida perdida por ele e pelo evangelho é salva, não desperdiçada."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Discipulado: cruz e vida perdida por ele"
+      },
+      {
+        "id": "b",
+        "text": "Seguir Jesus é caminho sem negação de si"
+      },
+      {
+        "id": "c",
+        "text": "Perder a vida por ele é fracasso do evangelho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Chamando a si a multidão com seus discípulos, disse-lhes: Se alguém quer vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me. Pois quem quiser salvar a sua vida perdê-la-á; e quem perder a sua vida por amor de mim e do evangelho salvá-la-á.",
+    "trail": "marcos",
+    "section": "mc-02-caminho-cruz",
+    "id": "marcos-pro-mc-02-caminho-cruz-06",
+    "passageA": {
+      "ref": "Marcos 8:34–35",
+      "text": "Chamando a si a multidão com seus discípulos, disse-lhes: Se alguém quer vir após mim, negue-se a si mesmo, tome a sua cruz e siga-me. Pois quem quiser salvar a sua vida perdê-la-á; e quem perder a sua vida por amor de mim e do evangelho salvá-la-á."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Seguir o Servo é negar-se, tomar a cruz e perder a vida por ele e pelo evangelho."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Marcos 16:6",
+    "learningObjective": "Afirmar que o crucificado, Jesus o Nazareno, ressurgiu e o túmulo está vazio.",
+    "evidence": [
+      "Marcos 16:6"
+    ],
+    "type": "true_false",
+    "question": "O mensageiro diz que buscam a Jesus, o Nazareno, que foi crucificado.",
+    "prompt": "O mensageiro diz que buscam a Jesus, o Nazareno, que foi crucificado.",
+    "cue": "O mensageiro diz que buscam a Jesus, o Nazareno, que foi crucificado.",
+    "feedbackCorrect": "Certo: o texto identifica o buscado como o Nazareno crucificado.",
+    "feedbackWrong": {
+      "false": "Marcos 16:6 diz exatamente isso."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Ele lhes disse: Não vos atemorizeis; buscais a Jesus, o Nazareno, que foi crucificado; ele ressurgiu, não está aqui; vede o lugar onde o puseram.",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "id": "marcos-sem-mc-03-cruz-ressurreicao-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Marcos 16:6",
+    "learningObjective": "Afirmar que o crucificado, Jesus o Nazareno, ressurgiu e o túmulo está vazio.",
+    "evidence": [
+      "Marcos 16:6"
+    ],
+    "type": "tap",
+    "question": "Em Marcos 16:6, toque a palavra que falta em \"ele ___, não está aqui\"?",
+    "prompt": "Em Marcos 16:6, toque a palavra que falta em \"ele ___, não está aqui\"?",
+    "cue": "Em Marcos 16:6, toque a palavra que falta em \"ele ___, não está aqui\"?",
+    "feedbackCorrect": "Exato: ele ressurgiu.",
+    "feedbackWrong": {
+      "b": "Crucificado descreve o que ele foi, não esta lacuna.",
+      "c": "Nazareno é o título de Jesus, não o verbo aqui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "ressurgiu"
+      },
+      {
+        "id": "b",
+        "text": "crucificado"
+      },
+      {
+        "id": "c",
+        "text": "Nazareno"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ele lhes disse: Não vos atemorizeis; buscais a Jesus, o Nazareno, que foi crucificado; ele ressurgiu, não está aqui; vede o lugar onde o puseram.",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "id": "marcos-sem-mc-03-cruz-ressurreicao-02",
+    "template": "ele ___, não está aqui"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Marcos 16:6",
+    "learningObjective": "Afirmar que o crucificado, Jesus o Nazareno, ressurgiu e o túmulo está vazio.",
+    "evidence": [
+      "Marcos 16:6"
+    ],
+    "type": "choice",
+    "question": "Qual fato o texto afirma sobre Jesus, o Nazareno?",
+    "prompt": "Qual fato o texto afirma sobre Jesus, o Nazareno?",
+    "cue": "Qual fato o texto afirma sobre Jesus, o Nazareno?",
+    "feedbackCorrect": "Certo: o crucificado ressurgiu e não está no lugar.",
+    "feedbackWrong": {
+      "b": "O texto diz que ele ressurgiu, não que permanece morto.",
+      "c": "O texto manda ver o lugar vazio, não nega o túmulo.",
+      "d": "O texto começa com \"Não vos atemorizeis\", não com terror."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele ressurgiu, não está aqui; vede o lugar onde o puseram."
+      },
+      {
+        "id": "b",
+        "text": "Ele permanece no túmulo, ainda crucificado."
+      },
+      {
+        "id": "c",
+        "text": "O lugar onde o puseram não deve ser visto."
+      },
+      {
+        "id": "d",
+        "text": "O mensageiro manda que se atemorizeis diante do túmulo."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ele lhes disse: Não vos atemorizeis; buscais a Jesus, o Nazareno, que foi crucificado; ele ressurgiu, não está aqui; vede o lugar onde o puseram.",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "id": "marcos-sem-mc-03-cruz-ressurreicao-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Marcos 16:6",
+    "learningObjective": "Afirmar que o crucificado, Jesus o Nazareno, ressurgiu e o túmulo está vazio.",
+    "evidence": [
+      "Marcos 16:6"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Marcos 16:6?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Marcos 16:6?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Marcos 16:6?",
+    "feedbackCorrect": "Certo: não temais, o crucificado, depois a ressurreição e o lugar vazio.",
+    "feedbackWrong": {
+      "b": "A identificação do crucificado vem antes de \"ele ressurgiu\".",
+      "c": "O convite a ver o lugar fecha o anúncio."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Não vos atemorizeis"
+      },
+      {
+        "id": "b",
+        "text": "buscais a Jesus, o Nazareno, que foi crucificado"
+      },
+      {
+        "id": "c",
+        "text": "ele ressurgiu, não está aqui; vede o lugar onde o puseram"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ele lhes disse: Não vos atemorizeis; buscais a Jesus, o Nazareno, que foi crucificado; ele ressurgiu, não está aqui; vede o lugar onde o puseram.",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "id": "marcos-sem-mc-03-cruz-ressurreicao-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Marcos 16:6",
+    "learningObjective": "Afirmar que o crucificado, Jesus o Nazareno, ressurgiu e o túmulo está vazio.",
+    "evidence": [
+      "Marcos 16:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Não vos ___; buscais a Jesus, o Nazareno\"",
+    "prompt": "Complete a frase: \"Não vos ___; buscais a Jesus, o Nazareno\"",
+    "cue": "Complete a frase: \"Não vos ___; buscais a Jesus, o Nazareno\"",
+    "feedbackCorrect": "Certo: não vos atemorizeis.",
+    "feedbackWrong": {
+      "b": "Buscais aparece depois, não nesta lacuna.",
+      "c": "Ressurgiu vem mais adiante no anúncio."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "atemorizeis"
+      },
+      {
+        "id": "b",
+        "text": "buscais"
+      },
+      {
+        "id": "c",
+        "text": "ressurgiu"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ele lhes disse: Não vos atemorizeis; buscais a Jesus, o Nazareno, que foi crucificado; ele ressurgiu, não está aqui; vede o lugar onde o puseram.",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "id": "marcos-sem-mc-03-cruz-ressurreicao-05",
+    "template": "Não vos ___; buscais a Jesus, o Nazareno"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Marcos 16:6",
+    "learningObjective": "Afirmar que o crucificado, Jesus o Nazareno, ressurgiu e o túmulo está vazio.",
+    "evidence": [
+      "Marcos 16:6"
+    ],
+    "type": "connect",
+    "question": "O que Marcos 16:6 comunica que se liga a este contexto?",
+    "prompt": "O que Marcos 16:6 comunica que se liga a este contexto?",
+    "cue": "O que Marcos 16:6 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o crucificado ressurgiu; o lugar está vazio.",
+    "feedbackWrong": {
+      "b": "O texto afirma a ressurreição, não a nega.",
+      "c": "O Nazareno crucificado é o mesmo que ressurgiu."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O crucificado ressurgiu; o túmulo está vazio"
+      },
+      {
+        "id": "b",
+        "text": "O corpo permanece no lugar onde o puseram"
+      },
+      {
+        "id": "c",
+        "text": "Buscam outro Jesus, não o Nazareno crucificado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ele lhes disse: Não vos atemorizeis; buscais a Jesus, o Nazareno, que foi crucificado; ele ressurgiu, não está aqui; vede o lugar onde o puseram.",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "id": "marcos-sem-mc-03-cruz-ressurreicao-06",
+    "passageA": {
+      "ref": "Marcos 16:6",
+      "text": "Ele lhes disse: Não vos atemorizeis; buscais a Jesus, o Nazareno, que foi crucificado; ele ressurgiu, não está aqui; vede o lugar onde o puseram."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Servo vence: o crucificado ressurgiu; o túmulo está vazio."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Marcos 16:6",
+    "learningObjective": "Afirmar que o crucificado, Jesus o Nazareno, ressurgiu e o túmulo está vazio.",
+    "evidence": [
+      "Marcos 16:6"
+    ],
+    "type": "true_false",
+    "question": "O anúncio trata o crucificado e o ressurreto como duas pessoas diferentes.",
+    "prompt": "O anúncio trata o crucificado e o ressurreto como duas pessoas diferentes.",
+    "cue": "O anúncio trata o crucificado e o ressurreto como duas pessoas diferentes.",
+    "feedbackCorrect": "Certo: o mesmo Jesus, o Nazareno crucificado, é quem ressurgiu.",
+    "feedbackWrong": {
+      "true": "O texto fala de um só: Jesus, o Nazareno, que foi crucificado e ressurgiu."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Ele lhes disse: Não vos atemorizeis; buscais a Jesus, o Nazareno, que foi crucificado; ele ressurgiu, não está aqui; vede o lugar onde o puseram.",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "id": "marcos-cam-mc-03-cruz-ressurreicao-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Marcos 16:6",
+    "learningObjective": "Afirmar que o crucificado, Jesus o Nazareno, ressurgiu e o túmulo está vazio.",
+    "evidence": [
+      "Marcos 16:6"
+    ],
+    "type": "tap",
+    "question": "Em Marcos 16:6, toque a palavra que falta em \"vede o ___ onde o puseram\"?",
+    "prompt": "Em Marcos 16:6, toque a palavra que falta em \"vede o ___ onde o puseram\"?",
+    "cue": "Em Marcos 16:6, toque a palavra que falta em \"vede o ___ onde o puseram\"?",
+    "feedbackCorrect": "Exato: vede o lugar onde o puseram.",
+    "feedbackWrong": {
+      "b": "Jesus é quem buscam, não o que se vê nesta lacuna.",
+      "c": "Aqui descreve onde ele não está, não o substantivo desta frase."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "lugar"
+      },
+      {
+        "id": "b",
+        "text": "Jesus"
+      },
+      {
+        "id": "c",
+        "text": "aqui"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ele lhes disse: Não vos atemorizeis; buscais a Jesus, o Nazareno, que foi crucificado; ele ressurgiu, não está aqui; vede o lugar onde o puseram.",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "id": "marcos-cam-mc-03-cruz-ressurreicao-02",
+    "template": "vede o ___ onde o puseram"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Marcos 16:6",
+    "learningObjective": "Afirmar que o crucificado, Jesus o Nazareno, ressurgiu e o túmulo está vazio.",
+    "evidence": [
+      "Marcos 16:6"
+    ],
+    "type": "choice",
+    "question": "Como o texto liga o que as mulheres buscam e o que encontram?",
+    "prompt": "Como o texto liga o que as mulheres buscam e o que encontram?",
+    "cue": "Como o texto liga o que as mulheres buscam e o que encontram?",
+    "feedbackCorrect": "Certo: buscam o crucificado e ouvem que ele ressurgiu.",
+    "feedbackWrong": {
+      "a": "O texto não diz que o Nazareno permaneceu no túmulo.",
+      "c": "O medo é afastado pelo anúncio, não confirmado.",
+      "d": "O lugar é mostrado vazio, não como prova de que nada aconteceu."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Elas encontram o Nazareno ainda no mesmo lugar."
+      },
+      {
+        "id": "b",
+        "text": "Buscam o crucificado e ouvem que ele ressurgiu e não está ali."
+      },
+      {
+        "id": "c",
+        "text": "O mensageiro confirma o terror e manda que fujam sem ouvir."
+      },
+      {
+        "id": "d",
+        "text": "O lugar vazio prova que o corpo nunca esteve ali."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Ele lhes disse: Não vos atemorizeis; buscais a Jesus, o Nazareno, que foi crucificado; ele ressurgiu, não está aqui; vede o lugar onde o puseram.",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "id": "marcos-cam-mc-03-cruz-ressurreicao-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Marcos 16:6",
+    "learningObjective": "Afirmar que o crucificado, Jesus o Nazareno, ressurgiu e o túmulo está vazio.",
+    "evidence": [
+      "Marcos 16:6"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Marcos 16:6?",
+    "prompt": "Como se encadeiam os eventos de Marcos 16:6?",
+    "cue": "Como se encadeiam os eventos de Marcos 16:6?",
+    "feedbackCorrect": "Certo: busca do crucificado, ressurreição, lugar vazio.",
+    "feedbackWrong": {
+      "b": "\"Não está aqui\" vem depois de \"ele ressurgiu\".",
+      "c": "A busca do Nazareno crucificado abre o reconhecimento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "buscais a Jesus, o Nazareno, que foi crucificado"
+      },
+      {
+        "id": "b",
+        "text": "ele ressurgiu"
+      },
+      {
+        "id": "c",
+        "text": "não está aqui; vede o lugar onde o puseram"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ele lhes disse: Não vos atemorizeis; buscais a Jesus, o Nazareno, que foi crucificado; ele ressurgiu, não está aqui; vede o lugar onde o puseram.",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "id": "marcos-cam-mc-03-cruz-ressurreicao-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Marcos 16:6",
+    "learningObjective": "Afirmar que o crucificado, Jesus o Nazareno, ressurgiu e o túmulo está vazio.",
+    "evidence": [
+      "Marcos 16:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"buscais a Jesus, o ___, que foi crucificado\"",
+    "prompt": "Complete a frase: \"buscais a Jesus, o ___, que foi crucificado\"",
+    "cue": "Complete a frase: \"buscais a Jesus, o ___, que foi crucificado\"",
+    "feedbackCorrect": "Certo: Jesus, o Nazareno.",
+    "feedbackWrong": {
+      "b": "Crucificado vem depois, na oração seguinte.",
+      "c": "Lugar aparece no fim do versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Nazareno"
+      },
+      {
+        "id": "b",
+        "text": "crucificado"
+      },
+      {
+        "id": "c",
+        "text": "lugar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ele lhes disse: Não vos atemorizeis; buscais a Jesus, o Nazareno, que foi crucificado; ele ressurgiu, não está aqui; vede o lugar onde o puseram.",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "id": "marcos-cam-mc-03-cruz-ressurreicao-05",
+    "template": "buscais a Jesus, o ___, que foi crucificado"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Marcos 16:6",
+    "learningObjective": "Afirmar que o crucificado, Jesus o Nazareno, ressurgiu e o túmulo está vazio.",
+    "evidence": [
+      "Marcos 16:6"
+    ],
+    "type": "connect",
+    "question": "O que Marcos 16:6 comunica que se liga a este contexto?",
+    "prompt": "O que Marcos 16:6 comunica que se liga a este contexto?",
+    "cue": "O que Marcos 16:6 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o mesmo crucificado é o que ressurgiu.",
+    "feedbackWrong": {
+      "b": "O texto não troca o Nazareno por outro messias.",
+      "c": "O lugar vazio confirma a ausência do ressurreto, não a dúvida."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O mesmo crucificado é quem ressurgiu"
+      },
+      {
+        "id": "b",
+        "text": "O Nazareno foi trocado por outro no túmulo"
+      },
+      {
+        "id": "c",
+        "text": "O lugar vazio desmente o anúncio da ressurreição"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ele lhes disse: Não vos atemorizeis; buscais a Jesus, o Nazareno, que foi crucificado; ele ressurgiu, não está aqui; vede o lugar onde o puseram.",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "id": "marcos-cam-mc-03-cruz-ressurreicao-06",
+    "passageA": {
+      "ref": "Marcos 16:6",
+      "text": "Ele lhes disse: Não vos atemorizeis; buscais a Jesus, o Nazareno, que foi crucificado; ele ressurgiu, não está aqui; vede o lugar onde o puseram."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Servo vence: o crucificado ressurgiu; o túmulo está vazio."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Marcos 16:6",
+    "learningObjective": "Afirmar que o crucificado, Jesus o Nazareno, ressurgiu e o túmulo está vazio.",
+    "evidence": [
+      "Marcos 16:6"
+    ],
+    "type": "true_false",
+    "question": "O túmulo vazio confirma a vitória do Servo: o crucificado ressurgiu e não está ali.",
+    "prompt": "O túmulo vazio confirma a vitória do Servo: o crucificado ressurgiu e não está ali.",
+    "cue": "O túmulo vazio confirma a vitória do Servo: o crucificado ressurgiu e não está ali.",
+    "feedbackCorrect": "Certo: ressurreição e lugar vazio anunciam a vitória do Servo.",
+    "feedbackWrong": {
+      "false": "O texto une \"ele ressurgiu\" e \"não está aqui\"."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Ele lhes disse: Não vos atemorizeis; buscais a Jesus, o Nazareno, que foi crucificado; ele ressurgiu, não está aqui; vede o lugar onde o puseram.",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "id": "marcos-pro-mc-03-cruz-ressurreicao-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Marcos 16:6",
+    "learningObjective": "Afirmar que o crucificado, Jesus o Nazareno, ressurgiu e o túmulo está vazio.",
+    "evidence": [
+      "Marcos 16:6"
+    ],
+    "type": "tap",
+    "question": "Em Marcos 16:6, toque a palavra que falta em \"Jesus, o Nazareno, que foi ___\"?",
+    "prompt": "Em Marcos 16:6, toque a palavra que falta em \"Jesus, o Nazareno, que foi ___\"?",
+    "cue": "Em Marcos 16:6, toque a palavra que falta em \"Jesus, o Nazareno, que foi ___\"?",
+    "feedbackCorrect": "Exato: o Nazareno que foi crucificado.",
+    "feedbackWrong": {
+      "b": "Ressurgiu é o anúncio seguinte, não esta lacuna.",
+      "c": "Puseram refere-se ao lugar, não a este verbo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "crucificado"
+      },
+      {
+        "id": "b",
+        "text": "ressurgiu"
+      },
+      {
+        "id": "c",
+        "text": "puseram"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ele lhes disse: Não vos atemorizeis; buscais a Jesus, o Nazareno, que foi crucificado; ele ressurgiu, não está aqui; vede o lugar onde o puseram.",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "id": "marcos-pro-mc-03-cruz-ressurreicao-02",
+    "template": "Jesus, o Nazareno, que foi ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Marcos 16:6",
+    "learningObjective": "Afirmar que o crucificado, Jesus o Nazareno, ressurgiu e o túmulo está vazio.",
+    "evidence": [
+      "Marcos 16:6"
+    ],
+    "type": "choice",
+    "question": "Qual leitura teológica o texto sustenta sobre a vitória do Servo?",
+    "prompt": "Qual leitura teológica o texto sustenta sobre a vitória do Servo?",
+    "cue": "Qual leitura teológica o texto sustenta sobre a vitória do Servo?",
+    "feedbackCorrect": "Certo: o crucificado ressurgiu; a cruz não é o fim.",
+    "feedbackWrong": {
+      "a": "O texto não apaga a cruz: ele foi crucificado e ressurgiu.",
+      "c": "O lugar vazio é sinal da ressurreição, não prova de roubo.",
+      "d": "O anúncio começa afastando o terror, não aprofundando-o."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A ressurreição apaga o fato de que ele foi crucificado."
+      },
+      {
+        "id": "b",
+        "text": "O Servo vence: o mesmo crucificado ressurgiu e o túmulo está vazio."
+      },
+      {
+        "id": "c",
+        "text": "O lugar vazio só prova que o corpo foi levado por alguém."
+      },
+      {
+        "id": "d",
+        "text": "A fé nasce do terror, não do anúncio \"não vos atemorizeis\"."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Ele lhes disse: Não vos atemorizeis; buscais a Jesus, o Nazareno, que foi crucificado; ele ressurgiu, não está aqui; vede o lugar onde o puseram.",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "id": "marcos-pro-mc-03-cruz-ressurreicao-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Marcos 16:6",
+    "learningObjective": "Afirmar que o crucificado, Jesus o Nazareno, ressurgiu e o túmulo está vazio.",
+    "evidence": [
+      "Marcos 16:6"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Marcos 16:6?",
+    "prompt": "Qual sequência revela o sentido de Marcos 16:6?",
+    "cue": "Qual sequência revela o sentido de Marcos 16:6?",
+    "feedbackCorrect": "Certo: cruz, ressurreição e túmulo vazio nessa ordem de sentido.",
+    "feedbackWrong": {
+      "b": "A ressurreição segue a cruz, não a substitui no relato.",
+      "c": "O lugar vazio confirma o \"não está aqui\"."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "que foi crucificado"
+      },
+      {
+        "id": "b",
+        "text": "ele ressurgiu"
+      },
+      {
+        "id": "c",
+        "text": "não está aqui; vede o lugar onde o puseram"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ele lhes disse: Não vos atemorizeis; buscais a Jesus, o Nazareno, que foi crucificado; ele ressurgiu, não está aqui; vede o lugar onde o puseram.",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "id": "marcos-pro-mc-03-cruz-ressurreicao-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Marcos 16:6",
+    "learningObjective": "Afirmar que o crucificado, Jesus o Nazareno, ressurgiu e o túmulo está vazio.",
+    "evidence": [
+      "Marcos 16:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"ele ressurgiu, não está ___; vede o lugar onde o puseram\"",
+    "prompt": "Complete a frase: \"ele ressurgiu, não está ___; vede o lugar onde o puseram\"",
+    "cue": "Complete a frase: \"ele ressurgiu, não está ___; vede o lugar onde o puseram\"",
+    "feedbackCorrect": "Certo: não está aqui.",
+    "feedbackWrong": {
+      "b": "Lugar é o que se deve ver, não esta lacuna.",
+      "c": "Nazareno identifica Jesus no início."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "aqui"
+      },
+      {
+        "id": "b",
+        "text": "lugar"
+      },
+      {
+        "id": "c",
+        "text": "Nazareno"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ele lhes disse: Não vos atemorizeis; buscais a Jesus, o Nazareno, que foi crucificado; ele ressurgiu, não está aqui; vede o lugar onde o puseram.",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "id": "marcos-pro-mc-03-cruz-ressurreicao-05",
+    "template": "ele ressurgiu, não está ___; vede o lugar onde o puseram"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Marcos 16:6",
+    "learningObjective": "Afirmar que o crucificado, Jesus o Nazareno, ressurgiu e o túmulo está vazio.",
+    "evidence": [
+      "Marcos 16:6"
+    ],
+    "type": "connect",
+    "question": "O que Marcos 16:6 comunica que se liga a este contexto?",
+    "prompt": "O que Marcos 16:6 comunica que se liga a este contexto?",
+    "cue": "O que Marcos 16:6 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a vitória do Servo é a ressurreição do crucificado.",
+    "feedbackWrong": {
+      "b": "O texto não deixa o Nazareno no túmulo.",
+      "c": "O anúncio afasta o terror porque ele ressurgiu."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Vitória: o crucificado ressurgiu"
+      },
+      {
+        "id": "b",
+        "text": "O Servo permanece derrotado no túmulo"
+      },
+      {
+        "id": "c",
+        "text": "O terror é a última palavra do evangelho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ele lhes disse: Não vos atemorizeis; buscais a Jesus, o Nazareno, que foi crucificado; ele ressurgiu, não está aqui; vede o lugar onde o puseram.",
+    "trail": "marcos",
+    "section": "mc-03-cruz-ressurreicao",
+    "id": "marcos-pro-mc-03-cruz-ressurreicao-06",
+    "passageA": {
+      "ref": "Marcos 16:6",
+      "text": "Ele lhes disse: Não vos atemorizeis; buscais a Jesus, o Nazareno, que foi crucificado; ele ressurgiu, não está aqui; vede o lugar onde o puseram."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Servo vence: o crucificado ressurgiu; o túmulo está vazio."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Marcos 10:45",
+    "learningObjective": "Compreender que a autoridade do Filho do Homem é servir e dar a vida em resgate de muitos.",
+    "evidence": [
+      "Marcos 10:45"
+    ],
+    "type": "true_false",
+    "question": "O Filho do Homem não veio para ser servido, mas para servir.",
+    "prompt": "O Filho do Homem não veio para ser servido, mas para servir.",
+    "cue": "O Filho do Homem não veio para ser servido, mas para servir.",
+    "feedbackCorrect": "Certo: o texto nega \"ser servido\" e afirma \"servir\".",
+    "feedbackWrong": {
+      "false": "Marcos 10:45 diz exatamente isso."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Pois o Filho do Homem também não veio para ser servido, mas para servir e dar a sua vida em resgate de muitos.",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "id": "marcos-sem-mc-boss-revisao-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Marcos 10:45",
+    "learningObjective": "Compreender que a autoridade do Filho do Homem é servir e dar a vida em resgate de muitos.",
+    "evidence": [
+      "Marcos 10:45"
+    ],
+    "type": "tap",
+    "question": "Em Marcos 10:45, toque a palavra que falta em \"dar a sua vida em ___ de muitos\"?",
+    "prompt": "Em Marcos 10:45, toque a palavra que falta em \"dar a sua vida em ___ de muitos\"?",
+    "cue": "Em Marcos 10:45, toque a palavra que falta em \"dar a sua vida em ___ de muitos\"?",
+    "feedbackCorrect": "Exato: a vida é dada em resgate de muitos.",
+    "feedbackWrong": {
+      "b": "Homem faz parte do título, não desta lacuna.",
+      "c": "Vida é o que se dá, não o substantivo \"em ___ de muitos\"."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "resgate"
+      },
+      {
+        "id": "b",
+        "text": "Homem"
+      },
+      {
+        "id": "c",
+        "text": "vida"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois o Filho do Homem também não veio para ser servido, mas para servir e dar a sua vida em resgate de muitos.",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "id": "marcos-sem-mc-boss-revisao-02",
+    "template": "dar a sua vida em ___ de muitos"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Marcos 10:45",
+    "learningObjective": "Compreender que a autoridade do Filho do Homem é servir e dar a vida em resgate de muitos.",
+    "evidence": [
+      "Marcos 10:45"
+    ],
+    "type": "choice",
+    "question": "Qual fato o texto afirma sobre a vinda do Filho do Homem?",
+    "prompt": "Qual fato o texto afirma sobre a vinda do Filho do Homem?",
+    "cue": "Qual fato o texto afirma sobre a vinda do Filho do Homem?",
+    "feedbackCorrect": "Certo: ele veio para servir e dar a vida em resgate.",
+    "feedbackWrong": {
+      "b": "O texto nega que ele veio para ser servido.",
+      "c": "O resgate é de muitos, não de si mesmo apenas.",
+      "d": "O texto fala em dar a vida, não em recusar dá-la."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Veio para servir e dar a sua vida em resgate de muitos."
+      },
+      {
+        "id": "b",
+        "text": "Veio principalmente para ser servido pelos discípulos."
+      },
+      {
+        "id": "c",
+        "text": "Veio para receber resgate, não para dá-lo."
+      },
+      {
+        "id": "d",
+        "text": "Veio para conservar a sua vida, sem dá-la por ninguém."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois o Filho do Homem também não veio para ser servido, mas para servir e dar a sua vida em resgate de muitos.",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "id": "marcos-sem-mc-boss-revisao-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Marcos 10:45",
+    "learningObjective": "Compreender que a autoridade do Filho do Homem é servir e dar a vida em resgate de muitos.",
+    "evidence": [
+      "Marcos 10:45"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Marcos 10:45?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Marcos 10:45?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Marcos 10:45?",
+    "feedbackCorrect": "Certo: não ser servido, servir, dar a vida em resgate.",
+    "feedbackWrong": {
+      "b": "Servir vem depois de recusar ser servido.",
+      "c": "O resgate fecha o propósito da vinda."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "o Filho do Homem também não veio para ser servido"
+      },
+      {
+        "id": "b",
+        "text": "mas para servir"
+      },
+      {
+        "id": "c",
+        "text": "e dar a sua vida em resgate de muitos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois o Filho do Homem também não veio para ser servido, mas para servir e dar a sua vida em resgate de muitos.",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "id": "marcos-sem-mc-boss-revisao-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Marcos 10:45",
+    "learningObjective": "Compreender que a autoridade do Filho do Homem é servir e dar a vida em resgate de muitos.",
+    "evidence": [
+      "Marcos 10:45"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"e dar a sua ___ em resgate de muitos\"",
+    "prompt": "Complete a frase: \"e dar a sua ___ em resgate de muitos\"",
+    "cue": "Complete a frase: \"e dar a sua ___ em resgate de muitos\"",
+    "feedbackCorrect": "Certo: ele dá a sua vida.",
+    "feedbackWrong": {
+      "b": "Resgate é o termo seguinte, não esta lacuna.",
+      "c": "Muitos fecha a frase, não substitui vida."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "vida"
+      },
+      {
+        "id": "b",
+        "text": "resgate"
+      },
+      {
+        "id": "c",
+        "text": "muitos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois o Filho do Homem também não veio para ser servido, mas para servir e dar a sua vida em resgate de muitos.",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "id": "marcos-sem-mc-boss-revisao-05",
+    "template": "e dar a sua ___ em resgate de muitos"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Marcos 10:45",
+    "learningObjective": "Compreender que a autoridade do Filho do Homem é servir e dar a vida em resgate de muitos.",
+    "evidence": [
+      "Marcos 10:45"
+    ],
+    "type": "connect",
+    "question": "O que Marcos 10:45 comunica que se liga a este contexto?",
+    "prompt": "O que Marcos 10:45 comunica que se liga a este contexto?",
+    "cue": "O que Marcos 10:45 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a autoridade do Servo é dar a vida, não ser servido.",
+    "feedbackWrong": {
+      "b": "O texto inverte a lógica de ser servido.",
+      "c": "Servir e resgate andam juntos no propósito da vinda."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Autoridade do Servo: dar a vida"
+      },
+      {
+        "id": "b",
+        "text": "O Filho do Homem veio para ser servido"
+      },
+      {
+        "id": "c",
+        "text": "Servir dispensa o dar a vida em resgate"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois o Filho do Homem também não veio para ser servido, mas para servir e dar a sua vida em resgate de muitos.",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "id": "marcos-sem-mc-boss-revisao-06",
+    "passageA": {
+      "ref": "Marcos 10:45",
+      "text": "Pois o Filho do Homem também não veio para ser servido, mas para servir e dar a sua vida em resgate de muitos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O desafio de Marcos: autoridade do Servo é dar a vida em resgate — não ser servido."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Marcos 10:45",
+    "learningObjective": "Compreender que a autoridade do Filho do Homem é servir e dar a vida em resgate de muitos.",
+    "evidence": [
+      "Marcos 10:45"
+    ],
+    "type": "true_false",
+    "question": "O texto apresenta o Filho do Homem como alguém que veio sobretudo para receber honra de servos.",
+    "prompt": "O texto apresenta o Filho do Homem como alguém que veio sobretudo para receber honra de servos.",
+    "cue": "O texto apresenta o Filho do Homem como alguém que veio sobretudo para receber honra de servos.",
+    "feedbackCorrect": "Certo: ele não veio para ser servido, mas para servir.",
+    "feedbackWrong": {
+      "true": "Marcos 10:45 recusa \"ser servido\" como propósito da vinda."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Pois o Filho do Homem também não veio para ser servido, mas para servir e dar a sua vida em resgate de muitos.",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "id": "marcos-cam-mc-boss-revisao-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Marcos 10:45",
+    "learningObjective": "Compreender que a autoridade do Filho do Homem é servir e dar a vida em resgate de muitos.",
+    "evidence": [
+      "Marcos 10:45"
+    ],
+    "type": "tap",
+    "question": "Em Marcos 10:45, toque a palavra que falta em \"não veio para ser ___\"?",
+    "prompt": "Em Marcos 10:45, toque a palavra que falta em \"não veio para ser ___\"?",
+    "cue": "Em Marcos 10:45, toque a palavra que falta em \"não veio para ser ___\"?",
+    "feedbackCorrect": "Exato: não veio para ser servido.",
+    "feedbackWrong": {
+      "b": "Servir é o propósito positivo, não esta lacuna.",
+      "c": "Muitos fecha o versículo, não este verbo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "servido"
+      },
+      {
+        "id": "b",
+        "text": "servir"
+      },
+      {
+        "id": "c",
+        "text": "muitos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois o Filho do Homem também não veio para ser servido, mas para servir e dar a sua vida em resgate de muitos.",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "id": "marcos-cam-mc-boss-revisao-02",
+    "template": "não veio para ser ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Marcos 10:45",
+    "learningObjective": "Compreender que a autoridade do Filho do Homem é servir e dar a vida em resgate de muitos.",
+    "evidence": [
+      "Marcos 10:45"
+    ],
+    "type": "choice",
+    "question": "Como o texto define o propósito da vinda do Filho do Homem?",
+    "prompt": "Como o texto define o propósito da vinda do Filho do Homem?",
+    "cue": "Como o texto define o propósito da vinda do Filho do Homem?",
+    "feedbackCorrect": "Certo: servir e dar a vida em resgate, não ser servido.",
+    "feedbackWrong": {
+      "a": "O texto não coloca a honra recebida como o alvo da vinda.",
+      "c": "O resgate é dado a muitos, não cobrado deles primeiro.",
+      "d": "Dar a vida pertence ao propósito, não o contradiz."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele veio para ocupar o lugar de quem é servido."
+      },
+      {
+        "id": "b",
+        "text": "Ele veio para servir e dar a vida em resgate de muitos."
+      },
+      {
+        "id": "c",
+        "text": "Ele veio para exigir resgate de muitos, sem se dar."
+      },
+      {
+        "id": "d",
+        "text": "Servir exclui a entrega da vida; o resgate fica de fora."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Pois o Filho do Homem também não veio para ser servido, mas para servir e dar a sua vida em resgate de muitos.",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "id": "marcos-cam-mc-boss-revisao-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Marcos 10:45",
+    "learningObjective": "Compreender que a autoridade do Filho do Homem é servir e dar a vida em resgate de muitos.",
+    "evidence": [
+      "Marcos 10:45"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Marcos 10:45?",
+    "prompt": "Como se encadeiam os eventos de Marcos 10:45?",
+    "cue": "Como se encadeiam os eventos de Marcos 10:45?",
+    "feedbackCorrect": "Certo: identidade, recusa de ser servido, servir e resgate.",
+    "feedbackWrong": {
+      "b": "A recusa de ser servido vem antes do \"mas para servir\".",
+      "c": "O resgate completa o propósito, não o inicia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "o Filho do Homem também não veio"
+      },
+      {
+        "id": "b",
+        "text": "para ser servido, mas para servir"
+      },
+      {
+        "id": "c",
+        "text": "e dar a sua vida em resgate de muitos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois o Filho do Homem também não veio para ser servido, mas para servir e dar a sua vida em resgate de muitos.",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "id": "marcos-cam-mc-boss-revisao-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Marcos 10:45",
+    "learningObjective": "Compreender que a autoridade do Filho do Homem é servir e dar a vida em resgate de muitos.",
+    "evidence": [
+      "Marcos 10:45"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"em resgate de ___\"",
+    "prompt": "Complete a frase: \"em resgate de ___\"",
+    "cue": "Complete a frase: \"em resgate de ___\"",
+    "feedbackCorrect": "Certo: o resgate é de muitos.",
+    "feedbackWrong": {
+      "b": "Vida é o que se dá, não o complemento de \"resgate de\".",
+      "c": "Homem faz parte do título inicial."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "muitos"
+      },
+      {
+        "id": "b",
+        "text": "vida"
+      },
+      {
+        "id": "c",
+        "text": "Homem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois o Filho do Homem também não veio para ser servido, mas para servir e dar a sua vida em resgate de muitos.",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "id": "marcos-cam-mc-boss-revisao-05",
+    "template": "em resgate de ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Marcos 10:45",
+    "learningObjective": "Compreender que a autoridade do Filho do Homem é servir e dar a vida em resgate de muitos.",
+    "evidence": [
+      "Marcos 10:45"
+    ],
+    "type": "connect",
+    "question": "O que Marcos 10:45 comunica que se liga a este contexto?",
+    "prompt": "O que Marcos 10:45 comunica que se liga a este contexto?",
+    "cue": "O que Marcos 10:45 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o Messias serve e se dá em resgate, não cobra ser servido.",
+    "feedbackWrong": {
+      "b": "O texto não descreve um rei que só recebe serviço.",
+      "c": "O resgate é a entrega da vida, não a recusa de servir."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O Messias serve e se dá em resgate"
+      },
+      {
+        "id": "b",
+        "text": "O Filho do Homem veio para ser honrado sem custo"
+      },
+      {
+        "id": "c",
+        "text": "Resgate significa recusar servir a muitos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois o Filho do Homem também não veio para ser servido, mas para servir e dar a sua vida em resgate de muitos.",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "id": "marcos-cam-mc-boss-revisao-06",
+    "passageA": {
+      "ref": "Marcos 10:45",
+      "text": "Pois o Filho do Homem também não veio para ser servido, mas para servir e dar a sua vida em resgate de muitos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O desafio de Marcos: autoridade do Servo é dar a vida em resgate — não ser servido."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Marcos 10:45",
+    "learningObjective": "Compreender que a autoridade do Filho do Homem é servir e dar a vida em resgate de muitos.",
+    "evidence": [
+      "Marcos 10:45"
+    ],
+    "type": "true_false",
+    "question": "Em Marcos, a autoridade do Filho do Homem se revela em dar a vida em resgate, não em ser servido.",
+    "prompt": "Em Marcos, a autoridade do Filho do Homem se revela em dar a vida em resgate, não em ser servido.",
+    "cue": "Em Marcos, a autoridade do Filho do Homem se revela em dar a vida em resgate, não em ser servido.",
+    "feedbackCorrect": "Certo: servir e o resgate revelam a autoridade do Servo.",
+    "feedbackWrong": {
+      "false": "O versículo define a vinda como servir e dar a vida em resgate."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Pois o Filho do Homem também não veio para ser servido, mas para servir e dar a sua vida em resgate de muitos.",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "id": "marcos-pro-mc-boss-revisao-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Marcos 10:45",
+    "learningObjective": "Compreender que a autoridade do Filho do Homem é servir e dar a vida em resgate de muitos.",
+    "evidence": [
+      "Marcos 10:45"
+    ],
+    "type": "tap",
+    "question": "Em Marcos 10:45, toque a palavra que falta em \"Pois o ___ do Homem também não veio\"?",
+    "prompt": "Em Marcos 10:45, toque a palavra que falta em \"Pois o ___ do Homem também não veio\"?",
+    "cue": "Em Marcos 10:45, toque a palavra que falta em \"Pois o ___ do Homem também não veio\"?",
+    "feedbackCorrect": "Exato: o Filho do Homem.",
+    "feedbackWrong": {
+      "b": "Resgate aparece no fim, não neste título.",
+      "c": "Servido descreve o que ele recusa, não o título."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Filho"
+      },
+      {
+        "id": "b",
+        "text": "resgate"
+      },
+      {
+        "id": "c",
+        "text": "servido"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois o Filho do Homem também não veio para ser servido, mas para servir e dar a sua vida em resgate de muitos.",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "id": "marcos-pro-mc-boss-revisao-02",
+    "template": "Pois o ___ do Homem também não veio"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Marcos 10:45",
+    "learningObjective": "Compreender que a autoridade do Filho do Homem é servir e dar a vida em resgate de muitos.",
+    "evidence": [
+      "Marcos 10:45"
+    ],
+    "type": "choice",
+    "question": "Qual leitura teológica o desafio de Marcos sustenta?",
+    "prompt": "Qual leitura teológica o desafio de Marcos sustenta?",
+    "cue": "Qual leitura teológica o desafio de Marcos sustenta?",
+    "feedbackCorrect": "Certo: autoridade do Servo é o resgate, não ser servido.",
+    "feedbackWrong": {
+      "a": "O texto não faz da glória recebida o centro da vinda.",
+      "c": "O resgate inclui a entrega da vida, não a substitui por palavras.",
+      "d": "\"Muitos\" é o alcance do resgate, não um grupo excluído."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A glória do Filho do Homem é ser servido pelos muitos."
+      },
+      {
+        "id": "b",
+        "text": "A autoridade do Servo é servir e dar a vida em resgate de muitos."
+      },
+      {
+        "id": "c",
+        "text": "O resgate dispensa a cruz: basta o título Filho do Homem."
+      },
+      {
+        "id": "d",
+        "text": "Ele veio só por alguns líderes, nunca em resgate de muitos."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Pois o Filho do Homem também não veio para ser servido, mas para servir e dar a sua vida em resgate de muitos.",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "id": "marcos-pro-mc-boss-revisao-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Marcos 10:45",
+    "learningObjective": "Compreender que a autoridade do Filho do Homem é servir e dar a vida em resgate de muitos.",
+    "evidence": [
+      "Marcos 10:45"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Marcos 10:45?",
+    "prompt": "Qual sequência revela o sentido de Marcos 10:45?",
+    "cue": "Qual sequência revela o sentido de Marcos 10:45?",
+    "feedbackCorrect": "Certo: não ser servido, servir, dar a vida em resgate.",
+    "feedbackWrong": {
+      "b": "Servir vem depois da recusa de ser servido.",
+      "c": "O resgate é o desfecho do servir, não o contrário."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "não veio para ser servido"
+      },
+      {
+        "id": "b",
+        "text": "mas para servir"
+      },
+      {
+        "id": "c",
+        "text": "dar a sua vida em resgate de muitos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois o Filho do Homem também não veio para ser servido, mas para servir e dar a sua vida em resgate de muitos.",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "id": "marcos-pro-mc-boss-revisao-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Marcos 10:45",
+    "learningObjective": "Compreender que a autoridade do Filho do Homem é servir e dar a vida em resgate de muitos.",
+    "evidence": [
+      "Marcos 10:45"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"mas para ___ e dar a sua vida em resgate de muitos\"",
+    "prompt": "Complete a frase: \"mas para ___ e dar a sua vida em resgate de muitos\"",
+    "cue": "Complete a frase: \"mas para ___ e dar a sua vida em resgate de muitos\"",
+    "feedbackCorrect": "Certo: veio para servir.",
+    "feedbackWrong": {
+      "b": "Servido é o que ele recusa, não esta lacuna.",
+      "c": "Veio já aparece no início do versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "servir"
+      },
+      {
+        "id": "b",
+        "text": "servido"
+      },
+      {
+        "id": "c",
+        "text": "veio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois o Filho do Homem também não veio para ser servido, mas para servir e dar a sua vida em resgate de muitos.",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "id": "marcos-pro-mc-boss-revisao-05",
+    "template": "mas para ___ e dar a sua vida em resgate de muitos"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Marcos 10:45",
+    "learningObjective": "Compreender que a autoridade do Filho do Homem é servir e dar a vida em resgate de muitos.",
+    "evidence": [
+      "Marcos 10:45"
+    ],
+    "type": "connect",
+    "question": "O que Marcos 10:45 comunica que se liga a este contexto?",
+    "prompt": "O que Marcos 10:45 comunica que se liga a este contexto?",
+    "cue": "O que Marcos 10:45 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o desafio de Marcos é o Servo que dá a vida em resgate.",
+    "feedbackWrong": {
+      "b": "O texto não coloca \"ser servido\" como a marca da autoridade.",
+      "c": "O resgate de muitos é o centro, não um detalhe opcional."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Desafio: autoridade é o resgate"
+      },
+      {
+        "id": "b",
+        "text": "Autoridade em Marcos é ser servido"
+      },
+      {
+        "id": "c",
+        "text": "O resgate de muitos fica fora do evangelho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois o Filho do Homem também não veio para ser servido, mas para servir e dar a sua vida em resgate de muitos.",
+    "trail": "marcos",
+    "section": "mc-boss-revisao",
+    "id": "marcos-pro-mc-boss-revisao-06",
+    "passageA": {
+      "ref": "Marcos 10:45",
+      "text": "Pois o Filho do Homem também não veio para ser servido, mas para servir e dar a sua vida em resgate de muitos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O desafio de Marcos: autoridade do Servo é dar a vida em resgate — não ser servido."
+    }
+  }
+]

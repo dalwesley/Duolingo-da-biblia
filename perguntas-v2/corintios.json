@@ -1,0 +1,3719 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 1:18",
+    "learningObjective": "Sair sabendo que a palavra da cruz é estultícia para os que perecem e poder de Deus para os salvos.",
+    "evidence": [
+      "1 Coríntios 1:18"
+    ],
+    "type": "true_false",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "id": "corintios-sem-co-01-cruz-01",
+    "passageText": "Pois a palavra da cruz é uma estultícia para os que perecem, mas para nós, que somos salvos, é o poder de Deus.",
+    "question": "A palavra da cruz é uma estultícia para os que perecem, mas para os salvos é o poder de Deus.",
+    "feedbackCorrect": "Certo: o versículo opõe estultícia e poder segundo o ouvinte.",
+    "feedbackWrong": {
+      "false": "Releia: estultícia para os que perecem; poder para os salvos."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "prompt": "A palavra da cruz é uma estultícia para os que perecem, mas para os salvos é o poder de Deus.",
+    "cue": "A palavra da cruz é uma estultícia para os que perecem, mas para os salvos é o poder de Deus."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 1:18",
+    "learningObjective": "Sair sabendo que a palavra da cruz é estultícia para os que perecem e poder de Deus para os salvos.",
+    "evidence": [
+      "1 Coríntios 1:18"
+    ],
+    "type": "tap",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "id": "corintios-sem-co-01-cruz-02",
+    "passageText": "Pois a palavra da cruz é uma estultícia para os que perecem, mas para nós, que somos salvos, é o poder de Deus.",
+    "question": "Em 1 Coríntios 1:18, toque a palavra que falta em \"Pois a palavra da cruz é uma ___ para os que perecem\"?",
+    "feedbackCorrect": "Exato: para os que perecem, a cruz é estultícia.",
+    "feedbackWrong": {
+      "b": "Salvos descreve o outro grupo, não esta lacuna.",
+      "c": "Poder é o que a cruz é para os salvos."
+    },
+    "template": "Pois a palavra da cruz é uma ___ para os que perecem",
+    "options": [
+      {
+        "id": "a",
+        "text": "estultícia"
+      },
+      {
+        "id": "b",
+        "text": "salvos"
+      },
+      {
+        "id": "c",
+        "text": "poder"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Em 1 Coríntios 1:18, toque a palavra que falta em \"Pois a palavra da cruz é uma ___ para os que perecem\"?",
+    "cue": "Em 1 Coríntios 1:18, toque a palavra que falta em \"Pois a palavra da cruz é uma ___ para os que perecem\"?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 1:18",
+    "learningObjective": "Sair sabendo que a palavra da cruz é estultícia para os que perecem e poder de Deus para os salvos.",
+    "evidence": [
+      "1 Coríntios 1:18"
+    ],
+    "type": "choice",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "id": "corintios-sem-co-01-cruz-03",
+    "passageText": "Pois a palavra da cruz é uma estultícia para os que perecem, mas para nós, que somos salvos, é o poder de Deus.",
+    "question": "O que o texto afirma que a palavra da cruz é para os que perecem?",
+    "feedbackCorrect": "Certo: para os que perecem, a palavra da cruz é estultícia.",
+    "feedbackWrong": {
+      "b": "Poder de Deus é o que ela é para os salvos, não para os que perecem.",
+      "c": "O texto não chama a cruz de silêncio para esse grupo.",
+      "d": "Não é descrita como acordo humano neste versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Uma estultícia"
+      },
+      {
+        "id": "b",
+        "text": "O poder de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Um silêncio de Deus"
+      },
+      {
+        "id": "d",
+        "text": "Um acordo entre sábios"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "O que o texto afirma que a palavra da cruz é para os que perecem?",
+    "cue": "O que o texto afirma que a palavra da cruz é para os que perecem?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 1:18",
+    "learningObjective": "Sair sabendo que a palavra da cruz é estultícia para os que perecem e poder de Deus para os salvos.",
+    "evidence": [
+      "1 Coríntios 1:18"
+    ],
+    "type": "order",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "id": "corintios-sem-co-01-cruz-04",
+    "passageText": "Pois a palavra da cruz é uma estultícia para os que perecem, mas para nós, que somos salvos, é o poder de Deus.",
+    "question": "Qual sequência mostra a ordem dos fatos em 1 Coríntios 1:18?",
+    "feedbackCorrect": "Certo: cruz, juízo dos que perecem, então o poder para os salvos.",
+    "feedbackWrong": {
+      "b": "A estultícia dos que perecem vem antes do poder aos salvos.",
+      "c": "A palavra da cruz abre o versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pois a palavra da cruz é uma estultícia"
+      },
+      {
+        "id": "b",
+        "text": "para os que perecem"
+      },
+      {
+        "id": "c",
+        "text": "mas para nós, que somos salvos, é o poder de Deus"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 1 Coríntios 1:18?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 1 Coríntios 1:18?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 1:18",
+    "learningObjective": "Sair sabendo que a palavra da cruz é estultícia para os que perecem e poder de Deus para os salvos.",
+    "evidence": [
+      "1 Coríntios 1:18"
+    ],
+    "type": "complete",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "id": "corintios-sem-co-01-cruz-05",
+    "passageText": "Pois a palavra da cruz é uma estultícia para os que perecem, mas para nós, que somos salvos, é o poder de Deus.",
+    "question": "Complete: \"Pois a palavra da ___ é uma estultícia para os que perecem\"",
+    "feedbackCorrect": "Certo: o tema do versículo é a palavra da cruz.",
+    "feedbackWrong": {
+      "b": "Salvos vem depois, no segundo membro.",
+      "c": "Deus fecha o versículo, não esta lacuna."
+    },
+    "template": "Pois a palavra da ___ é uma estultícia para os que perecem",
+    "options": [
+      {
+        "id": "a",
+        "text": "cruz"
+      },
+      {
+        "id": "b",
+        "text": "salvos"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Complete: \"Pois a palavra da ___ é uma estultícia para os que perecem\"",
+    "cue": "Complete: \"Pois a palavra da ___ é uma estultícia para os que perecem\""
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 1:18",
+    "learningObjective": "Sair sabendo que a palavra da cruz é estultícia para os que perecem e poder de Deus para os salvos.",
+    "evidence": [
+      "1 Coríntios 1:18"
+    ],
+    "type": "connect",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "id": "corintios-sem-co-01-cruz-06",
+    "passageText": "Pois a palavra da cruz é uma estultícia para os que perecem, mas para nós, que somos salvos, é o poder de Deus.",
+    "question": "O que 1 Coríntios 1:18 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a cruz une os salvos no poder de Deus, não na fama.",
+    "feedbackWrong": {
+      "b": "O texto não trata a cruz como enfeite de partido.",
+      "c": "Há dois vereditos, não um só aplauso universal."
+    },
+    "passageA": {
+      "ref": "1 Coríntios 1:18",
+      "text": "Pois a palavra da cruz é uma estultícia para os que perecem, mas para nós, que somos salvos, é o poder de Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Unidade na cruz: o que o mundo chama estultícia é poder de Deus para os salvos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cruz como poder de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Cruz como marca de clã"
+      },
+      {
+        "id": "c",
+        "text": "Cruz aplaudida por todos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "O que 1 Coríntios 1:18 comunica que se liga a este contexto?",
+    "cue": "O que 1 Coríntios 1:18 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 1:18",
+    "learningObjective": "Sair sabendo que a palavra da cruz é estultícia para os que perecem e poder de Deus para os salvos.",
+    "evidence": [
+      "1 Coríntios 1:18"
+    ],
+    "type": "true_false",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "id": "corintios-cam-co-01-cruz-01",
+    "passageText": "Pois a palavra da cruz é uma estultícia para os que perecem, mas para nós, que somos salvos, é o poder de Deus.",
+    "question": "Para os que perecem e para os salvos, a palavra da cruz tem o mesmo sentido.",
+    "feedbackCorrect": "Certo: o texto divide os ouvintes em dois vereditos opostos.",
+    "feedbackWrong": {
+      "true": "Há contraste: estultícia para uns, poder de Deus para outros."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "prompt": "Para os que perecem e para os salvos, a palavra da cruz tem o mesmo sentido.",
+    "cue": "Para os que perecem e para os salvos, a palavra da cruz tem o mesmo sentido."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 1:18",
+    "learningObjective": "Sair sabendo que a palavra da cruz é estultícia para os que perecem e poder de Deus para os salvos.",
+    "evidence": [
+      "1 Coríntios 1:18"
+    ],
+    "type": "tap",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "id": "corintios-cam-co-01-cruz-02",
+    "passageText": "Pois a palavra da cruz é uma estultícia para os que perecem, mas para nós, que somos salvos, é o poder de Deus.",
+    "question": "Em 1 Coríntios 1:18, toque a palavra que falta em \"mas para nós, que somos salvos, é o ___ de Deus\"?",
+    "feedbackCorrect": "Exato: para os salvos, a cruz é o poder de Deus.",
+    "feedbackWrong": {
+      "a": "Estultícia é o juízo dos que perecem.",
+      "c": "Palavra abre o versículo, não esta lacuna."
+    },
+    "template": "mas para nós, que somos salvos, é o ___ de Deus",
+    "options": [
+      {
+        "id": "a",
+        "text": "estultícia"
+      },
+      {
+        "id": "b",
+        "text": "poder"
+      },
+      {
+        "id": "c",
+        "text": "palavra"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Em 1 Coríntios 1:18, toque a palavra que falta em \"mas para nós, que somos salvos, é o ___ de Deus\"?",
+    "cue": "Em 1 Coríntios 1:18, toque a palavra que falta em \"mas para nós, que somos salvos, é o ___ de Deus\"?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 1:18",
+    "learningObjective": "Sair sabendo que a palavra da cruz é estultícia para os que perecem e poder de Deus para os salvos.",
+    "evidence": [
+      "1 Coríntios 1:18"
+    ],
+    "type": "choice",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "id": "corintios-cam-co-01-cruz-03",
+    "passageText": "Pois a palavra da cruz é uma estultícia para os que perecem, mas para nós, que somos salvos, é o poder de Deus.",
+    "question": "Como o versículo relaciona os dois grupos diante da cruz?",
+    "feedbackCorrect": "Certo: o mesmo anúncio divide perecimento e salvação.",
+    "feedbackWrong": {
+      "b": "O texto não iguala os dois grupos no mesmo juízo.",
+      "c": "A cruz não é tratada como tema neutro de debate.",
+      "d": "Salvação aqui se liga ao poder de Deus, não à fama do pregador."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O mesmo anúncio é estultícia para uns e poder para os salvos"
+      },
+      {
+        "id": "b",
+        "text": "Os dois grupos ouvem a cruz com o mesmo veredito"
+      },
+      {
+        "id": "c",
+        "text": "A cruz é um tema neutro, sem efeito sobre ninguém"
+      },
+      {
+        "id": "d",
+        "text": "A salvação depende do prestígio de quem prega"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Como o versículo relaciona os dois grupos diante da cruz?",
+    "cue": "Como o versículo relaciona os dois grupos diante da cruz?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 1:18",
+    "learningObjective": "Sair sabendo que a palavra da cruz é estultícia para os que perecem e poder de Deus para os salvos.",
+    "evidence": [
+      "1 Coríntios 1:18"
+    ],
+    "type": "order",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "id": "corintios-cam-co-01-cruz-04",
+    "passageText": "Pois a palavra da cruz é uma estultícia para os que perecem, mas para nós, que somos salvos, é o poder de Deus.",
+    "question": "Como se encadeiam os eventos de 1 Coríntios 1:18?",
+    "feedbackCorrect": "Certo: anúncio da cruz, juízo dos que perecem, poder aos salvos.",
+    "feedbackWrong": {
+      "b": "O poder aos salvos fecha o contraste, não o abre.",
+      "c": "A palavra da cruz vem primeiro."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "a palavra da cruz"
+      },
+      {
+        "id": "b",
+        "text": "é uma estultícia para os que perecem"
+      },
+      {
+        "id": "c",
+        "text": "para nós, que somos salvos, é o poder de Deus"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Como se encadeiam os eventos de 1 Coríntios 1:18?",
+    "cue": "Como se encadeiam os eventos de 1 Coríntios 1:18?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 1:18",
+    "learningObjective": "Sair sabendo que a palavra da cruz é estultícia para os que perecem e poder de Deus para os salvos.",
+    "evidence": [
+      "1 Coríntios 1:18"
+    ],
+    "type": "complete",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "id": "corintios-cam-co-01-cruz-05",
+    "passageText": "Pois a palavra da cruz é uma estultícia para os que perecem, mas para nós, que somos salvos, é o poder de Deus.",
+    "question": "Complete: \"é uma estultícia para os que ___, mas para nós, que somos salvos\"",
+    "feedbackCorrect": "Certo: o primeiro grupo é o dos que perecem.",
+    "feedbackWrong": {
+      "a": "Salvos é o segundo grupo, não esta lacuna.",
+      "c": "Cruz nomeia o anúncio, não o grupo."
+    },
+    "template": "é uma estultícia para os que ___, mas para nós, que somos salvos",
+    "options": [
+      {
+        "id": "a",
+        "text": "salvos"
+      },
+      {
+        "id": "b",
+        "text": "perecem"
+      },
+      {
+        "id": "c",
+        "text": "cruz"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Complete: \"é uma estultícia para os que ___, mas para nós, que somos salvos\"",
+    "cue": "Complete: \"é uma estultícia para os que ___, mas para nós, que somos salvos\""
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 1:18",
+    "learningObjective": "Sair sabendo que a palavra da cruz é estultícia para os que perecem e poder de Deus para os salvos.",
+    "evidence": [
+      "1 Coríntios 1:18"
+    ],
+    "type": "connect",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "id": "corintios-cam-co-01-cruz-06",
+    "passageText": "Pois a palavra da cruz é uma estultícia para os que perecem, mas para nós, que somos salvos, é o poder de Deus.",
+    "question": "O que 1 Coríntios 1:18 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a unidade da igreja se firma na cruz, não na sabedoria do mundo.",
+    "feedbackWrong": {
+      "a": "O texto não pede união em torno da estultícia humana.",
+      "c": "O poder é de Deus, não de um líder carismático."
+    },
+    "passageA": {
+      "ref": "1 Coríntios 1:18",
+      "text": "Pois a palavra da cruz é uma estultícia para os que perecem, mas para nós, que somos salvos, é o poder de Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Unidade na cruz: o que o mundo chama estultícia é poder de Deus para os salvos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "União na sabedoria humana"
+      },
+      {
+        "id": "b",
+        "text": "Unidade no poder da cruz"
+      },
+      {
+        "id": "c",
+        "text": "Unidade em torno de um líder"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "O que 1 Coríntios 1:18 comunica que se liga a este contexto?",
+    "cue": "O que 1 Coríntios 1:18 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 1:18",
+    "learningObjective": "Sair sabendo que a palavra da cruz é estultícia para os que perecem e poder de Deus para os salvos.",
+    "evidence": [
+      "1 Coríntios 1:18"
+    ],
+    "type": "true_false",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "id": "corintios-pro-co-01-cruz-01",
+    "passageText": "Pois a palavra da cruz é uma estultícia para os que perecem, mas para nós, que somos salvos, é o poder de Deus.",
+    "question": "Aquilo que o mundo chama estultícia é, para os salvos, o próprio poder de Deus.",
+    "feedbackCorrect": "Certo: o versículo inverte o juízo do mundo sobre a cruz.",
+    "feedbackWrong": {
+      "false": "Para os salvos, a palavra da cruz é o poder de Deus."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "prompt": "Aquilo que o mundo chama estultícia é, para os salvos, o próprio poder de Deus.",
+    "cue": "Aquilo que o mundo chama estultícia é, para os salvos, o próprio poder de Deus."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 1:18",
+    "learningObjective": "Sair sabendo que a palavra da cruz é estultícia para os que perecem e poder de Deus para os salvos.",
+    "evidence": [
+      "1 Coríntios 1:18"
+    ],
+    "type": "tap",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "id": "corintios-pro-co-01-cruz-02",
+    "passageText": "Pois a palavra da cruz é uma estultícia para os que perecem, mas para nós, que somos salvos, é o poder de Deus.",
+    "question": "Em 1 Coríntios 1:18, toque a palavra que falta em \"mas para nós, que somos ___, é o poder de Deus\"?",
+    "feedbackCorrect": "Exato: o poder de Deus se dirige aos que são salvos.",
+    "feedbackWrong": {
+      "a": "Perecem é o outro grupo do contraste.",
+      "c": "Estultícia é o juízo deles, não o nosso nome."
+    },
+    "template": "mas para nós, que somos ___, é o poder de Deus",
+    "options": [
+      {
+        "id": "a",
+        "text": "perecem"
+      },
+      {
+        "id": "b",
+        "text": "salvos"
+      },
+      {
+        "id": "c",
+        "text": "estultícia"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Em 1 Coríntios 1:18, toque a palavra que falta em \"mas para nós, que somos ___, é o poder de Deus\"?",
+    "cue": "Em 1 Coríntios 1:18, toque a palavra que falta em \"mas para nós, que somos ___, é o poder de Deus\"?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 1:18",
+    "learningObjective": "Sair sabendo que a palavra da cruz é estultícia para os que perecem e poder de Deus para os salvos.",
+    "evidence": [
+      "1 Coríntios 1:18"
+    ],
+    "type": "choice",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "id": "corintios-pro-co-01-cruz-03",
+    "passageText": "Pois a palavra da cruz é uma estultícia para os que perecem, mas para nós, que somos salvos, é o poder de Deus.",
+    "question": "Qual leitura interpreta melhor o sentido de 1 Coríntios 1:18?",
+    "feedbackCorrect": "Certo: a cruz julga a sabedoria do mundo e salva pelo poder de Deus.",
+    "feedbackWrong": {
+      "a": "O texto não trata a cruz como falha a ser escondida.",
+      "c": "Não é um enigma reservado a elites intelectuais.",
+      "d": "Perecer e ser salvo não são o mesmo destino neste versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A cruz é um mal-entendido que a igreja deve suavizar"
+      },
+      {
+        "id": "b",
+        "text": "A cruz divide: loucura para o mundo, poder de Deus para os salvos"
+      },
+      {
+        "id": "c",
+        "text": "Só os sábios do mundo entendem o verdadeiro sentido da cruz"
+      },
+      {
+        "id": "d",
+        "text": "Perecer e ser salvo são apenas dois nomes para o mesmo grupo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Qual leitura interpreta melhor o sentido de 1 Coríntios 1:18?",
+    "cue": "Qual leitura interpreta melhor o sentido de 1 Coríntios 1:18?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 1:18",
+    "learningObjective": "Sair sabendo que a palavra da cruz é estultícia para os que perecem e poder de Deus para os salvos.",
+    "evidence": [
+      "1 Coríntios 1:18"
+    ],
+    "type": "order",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "id": "corintios-pro-co-01-cruz-04",
+    "passageText": "Pois a palavra da cruz é uma estultícia para os que perecem, mas para nós, que somos salvos, é o poder de Deus.",
+    "question": "Qual sequência revela o sentido de 1 Coríntios 1:18?",
+    "feedbackCorrect": "Certo: o anúncio, o juízo do mundo e o poder aos salvos.",
+    "feedbackWrong": {
+      "b": "O poder aos salvos não precede o juízo dos que perecem.",
+      "c": "A palavra da cruz inaugura o contraste."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "a palavra da cruz é uma estultícia"
+      },
+      {
+        "id": "b",
+        "text": "para os que perecem"
+      },
+      {
+        "id": "c",
+        "text": "para nós, que somos salvos, é o poder de Deus"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Qual sequência revela o sentido de 1 Coríntios 1:18?",
+    "cue": "Qual sequência revela o sentido de 1 Coríntios 1:18?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 1:18",
+    "learningObjective": "Sair sabendo que a palavra da cruz é estultícia para os que perecem e poder de Deus para os salvos.",
+    "evidence": [
+      "1 Coríntios 1:18"
+    ],
+    "type": "complete",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "id": "corintios-pro-co-01-cruz-05",
+    "passageText": "Pois a palavra da cruz é uma estultícia para os que perecem, mas para nós, que somos salvos, é o poder de Deus.",
+    "question": "Complete: \"mas para nós, que somos salvos, é o poder de ___\"",
+    "feedbackCorrect": "Certo: o poder anunciado é o poder de Deus.",
+    "feedbackWrong": {
+      "a": "Cruz nomeia o anúncio, não o dono do poder aqui.",
+      "b": "Estultícia é o juízo contrário."
+    },
+    "template": "mas para nós, que somos salvos, é o poder de ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "cruz"
+      },
+      {
+        "id": "b",
+        "text": "estultícia"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "prompt": "Complete: \"mas para nós, que somos salvos, é o poder de ___\"",
+    "cue": "Complete: \"mas para nós, que somos salvos, é o poder de ___\""
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 1:18",
+    "learningObjective": "Sair sabendo que a palavra da cruz é estultícia para os que perecem e poder de Deus para os salvos.",
+    "evidence": [
+      "1 Coríntios 1:18"
+    ],
+    "type": "connect",
+    "trail": "corintios",
+    "section": "co-01-cruz",
+    "id": "corintios-pro-co-01-cruz-06",
+    "passageText": "Pois a palavra da cruz é uma estultícia para os que perecem, mas para nós, que somos salvos, é o poder de Deus.",
+    "question": "O que 1 Coríntios 1:18 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o que o mundo despreza é o poder que salva e une.",
+    "feedbackWrong": {
+      "b": "O texto não recomenda esconder a cruz para agradar.",
+      "c": "A unidade não nasce de apagar o escândalo da cruz."
+    },
+    "passageA": {
+      "ref": "1 Coríntios 1:18",
+      "text": "Pois a palavra da cruz é uma estultícia para os que perecem, mas para nós, que somos salvos, é o poder de Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Unidade na cruz: o que o mundo chama estultícia é poder de Deus para os salvos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Estultícia que salva"
+      },
+      {
+        "id": "b",
+        "text": "Cruz escondida da cidade"
+      },
+      {
+        "id": "c",
+        "text": "Unidade sem a cruz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "O que 1 Coríntios 1:18 comunica que se liga a este contexto?",
+    "cue": "O que 1 Coríntios 1:18 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 13:4–7",
+    "learningObjective": "Sair sabendo que a caridade é longânima e benigna e não busca os próprios interesses.",
+    "evidence": [
+      "1 Coríntios 13:4",
+      "1 Coríntios 13:5",
+      "1 Coríntios 13:6",
+      "1 Coríntios 13:7"
+    ],
+    "type": "true_false",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "id": "corintios-sem-co-02-amor-01",
+    "passageText": "A caridade é longânima, é benigna; a caridade não é invejosa, não se jacta, não se ensoberbece, não se porta inconvenientemente, não busca os seus próprios interesses, não se irrita, não suspeita mal, não se regozija com a injustiça, mas regozija-se com a verdade; tudo suporta, tudo crê, tudo espera, tudo sofre.",
+    "question": "A caridade é longânima e benigna, e não busca os seus próprios interesses.",
+    "feedbackCorrect": "Certo: o texto abre com longanimidade e nega o egoísmo.",
+    "feedbackWrong": {
+      "false": "Releia: é longânima, é benigna; não busca os próprios interesses."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "prompt": "A caridade é longânima e benigna, e não busca os seus próprios interesses.",
+    "cue": "A caridade é longânima e benigna, e não busca os seus próprios interesses."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 13:4–7",
+    "learningObjective": "Sair sabendo que a caridade é longânima e benigna e não busca os próprios interesses.",
+    "evidence": [
+      "1 Coríntios 13:4",
+      "1 Coríntios 13:5",
+      "1 Coríntios 13:6",
+      "1 Coríntios 13:7"
+    ],
+    "type": "tap",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "id": "corintios-sem-co-02-amor-02",
+    "passageText": "A caridade é longânima, é benigna; a caridade não é invejosa, não se jacta, não se ensoberbece, não se porta inconvenientemente, não busca os seus próprios interesses, não se irrita, não suspeita mal, não se regozija com a injustiça, mas regozija-se com a verdade; tudo suporta, tudo crê, tudo espera, tudo sofre.",
+    "question": "Em 1 Coríntios 13:4–7, toque a palavra que falta em \"A caridade é ___, é benigna\"?",
+    "feedbackCorrect": "Exato: a caridade é longânima e benigna.",
+    "feedbackWrong": {
+      "b": "Benigna vem em seguida, não nesta lacuna.",
+      "c": "Invejosa é o que a caridade não é."
+    },
+    "template": "A caridade é ___, é benigna",
+    "options": [
+      {
+        "id": "a",
+        "text": "longânima"
+      },
+      {
+        "id": "b",
+        "text": "benigna"
+      },
+      {
+        "id": "c",
+        "text": "invejosa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Em 1 Coríntios 13:4–7, toque a palavra que falta em \"A caridade é ___, é benigna\"?",
+    "cue": "Em 1 Coríntios 13:4–7, toque a palavra que falta em \"A caridade é ___, é benigna\"?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 13:4–7",
+    "learningObjective": "Sair sabendo que a caridade é longânima e benigna e não busca os próprios interesses.",
+    "evidence": [
+      "1 Coríntios 13:4",
+      "1 Coríntios 13:5",
+      "1 Coríntios 13:6",
+      "1 Coríntios 13:7"
+    ],
+    "type": "choice",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "id": "corintios-sem-co-02-amor-03",
+    "passageText": "A caridade é longânima, é benigna; a caridade não é invejosa, não se jacta, não se ensoberbece, não se porta inconvenientemente, não busca os seus próprios interesses, não se irrita, não suspeita mal, não se regozija com a injustiça, mas regozija-se com a verdade; tudo suporta, tudo crê, tudo espera, tudo sofre.",
+    "question": "O que o texto afirma que a caridade não busca?",
+    "feedbackCorrect": "Certo: ela não busca os seus próprios interesses.",
+    "feedbackWrong": {
+      "a": "O texto diz que ela se regozija com a verdade, não que a evita.",
+      "c": "Ela não se regozija com a injustiça; isso não é o que ela busca positivamente aqui.",
+      "d": "Longanimidade é o que ela é, não o que recusa buscar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A verdade"
+      },
+      {
+        "id": "b",
+        "text": "Os seus próprios interesses"
+      },
+      {
+        "id": "c",
+        "text": "A injustiça alheia como meta"
+      },
+      {
+        "id": "d",
+        "text": "Ser longânima"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "O que o texto afirma que a caridade não busca?",
+    "cue": "O que o texto afirma que a caridade não busca?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 13:4–7",
+    "learningObjective": "Sair sabendo que a caridade é longânima e benigna e não busca os próprios interesses.",
+    "evidence": [
+      "1 Coríntios 13:4",
+      "1 Coríntios 13:5",
+      "1 Coríntios 13:6",
+      "1 Coríntios 13:7"
+    ],
+    "type": "order",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "id": "corintios-sem-co-02-amor-04",
+    "passageText": "A caridade é longânima, é benigna; a caridade não é invejosa, não se jacta, não se ensoberbece, não se porta inconvenientemente, não busca os seus próprios interesses, não se irrita, não suspeita mal, não se regozija com a injustiça, mas regozija-se com a verdade; tudo suporta, tudo crê, tudo espera, tudo sofre.",
+    "question": "Qual sequência mostra a ordem dos fatos em 1 Coríntios 13:4–7?",
+    "feedbackCorrect": "Certo: caráter, recusa do egoísmo, então o \"tudo\" final.",
+    "feedbackWrong": {
+      "b": "Os próprios interesses vêm no meio do retrato, não no fim.",
+      "c": "Longânima e benigna abrem o retrato."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A caridade é longânima, é benigna"
+      },
+      {
+        "id": "b",
+        "text": "não busca os seus próprios interesses"
+      },
+      {
+        "id": "c",
+        "text": "tudo suporta, tudo crê, tudo espera, tudo sofre"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 1 Coríntios 13:4–7?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 1 Coríntios 13:4–7?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 13:4–7",
+    "learningObjective": "Sair sabendo que a caridade é longânima e benigna e não busca os próprios interesses.",
+    "evidence": [
+      "1 Coríntios 13:4",
+      "1 Coríntios 13:5",
+      "1 Coríntios 13:6",
+      "1 Coríntios 13:7"
+    ],
+    "type": "complete",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "id": "corintios-sem-co-02-amor-05",
+    "passageText": "A caridade é longânima, é benigna; a caridade não é invejosa, não se jacta, não se ensoberbece, não se porta inconvenientemente, não busca os seus próprios interesses, não se irrita, não suspeita mal, não se regozija com a injustiça, mas regozija-se com a verdade; tudo suporta, tudo crê, tudo espera, tudo sofre.",
+    "question": "Complete: \"A ___ é longânima, é benigna\"",
+    "feedbackCorrect": "Certo: o sujeito do retrato é a caridade.",
+    "feedbackWrong": {
+      "b": "Verdade fecha o contraste com a injustiça.",
+      "c": "Injustiça é o com que ela não se regozija."
+    },
+    "template": "A ___ é longânima, é benigna",
+    "options": [
+      {
+        "id": "a",
+        "text": "caridade"
+      },
+      {
+        "id": "b",
+        "text": "verdade"
+      },
+      {
+        "id": "c",
+        "text": "injustiça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Complete: \"A ___ é longânima, é benigna\"",
+    "cue": "Complete: \"A ___ é longânima, é benigna\""
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 13:4–7",
+    "learningObjective": "Sair sabendo que a caridade é longânima e benigna e não busca os próprios interesses.",
+    "evidence": [
+      "1 Coríntios 13:4",
+      "1 Coríntios 13:5",
+      "1 Coríntios 13:6",
+      "1 Coríntios 13:7"
+    ],
+    "type": "connect",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "id": "corintios-sem-co-02-amor-06",
+    "passageText": "A caridade é longânima, é benigna; a caridade não é invejosa, não se jacta, não se ensoberbece, não se porta inconvenientemente, não busca os seus próprios interesses, não se irrita, não suspeita mal, não se regozija com a injustiça, mas regozija-se com a verdade; tudo suporta, tudo crê, tudo espera, tudo sofre.",
+    "question": "O que 1 Coríntios 13:4–7 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o amor longânimo recusa inflar o eu.",
+    "feedbackWrong": {
+      "b": "O texto descreve o contrário do amor que se exibe.",
+      "c": "Caridade não se define por buscar vantagem."
+    },
+    "passageA": {
+      "ref": "1 Coríntios 13:4–7",
+      "text": "A caridade é longânima, é benigna; a caridade não é invejosa, não se jacta, não se ensoberbece, não se porta inconvenientemente, não busca os seus próprios interesses, não se irrita, não suspeita mal, não se regozija com a injustiça, mas regozija-se com a verdade; tudo suporta, tudo crê, tudo espera, tudo sofre."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Dons sem caridade incham: o amor é longânimo e não busca os próprios interesses."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Amor longânimo, não egoísta"
+      },
+      {
+        "id": "b",
+        "text": "Amor que se jacta"
+      },
+      {
+        "id": "c",
+        "text": "Amor que busca vantagem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "O que 1 Coríntios 13:4–7 comunica que se liga a este contexto?",
+    "cue": "O que 1 Coríntios 13:4–7 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 13:4–7",
+    "learningObjective": "Sair sabendo que a caridade é longânima e benigna e não busca os próprios interesses.",
+    "evidence": [
+      "1 Coríntios 13:4",
+      "1 Coríntios 13:5",
+      "1 Coríntios 13:6",
+      "1 Coríntios 13:7"
+    ],
+    "type": "true_false",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "id": "corintios-cam-co-02-amor-01",
+    "passageText": "A caridade é longânima, é benigna; a caridade não é invejosa, não se jacta, não se ensoberbece, não se porta inconvenientemente, não busca os seus próprios interesses, não se irrita, não suspeita mal, não se regozija com a injustiça, mas regozija-se com a verdade; tudo suporta, tudo crê, tudo espera, tudo sofre.",
+    "question": "A caridade se regozija com a injustiça e recusa a verdade.",
+    "feedbackCorrect": "Certo: ela não se regozija com a injustiça, mas com a verdade.",
+    "feedbackWrong": {
+      "true": "O texto inverte isso: regozija-se com a verdade."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "prompt": "A caridade se regozija com a injustiça e recusa a verdade.",
+    "cue": "A caridade se regozija com a injustiça e recusa a verdade."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 13:4–7",
+    "learningObjective": "Sair sabendo que a caridade é longânima e benigna e não busca os próprios interesses.",
+    "evidence": [
+      "1 Coríntios 13:4",
+      "1 Coríntios 13:5",
+      "1 Coríntios 13:6",
+      "1 Coríntios 13:7"
+    ],
+    "type": "tap",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "id": "corintios-cam-co-02-amor-02",
+    "passageText": "A caridade é longânima, é benigna; a caridade não é invejosa, não se jacta, não se ensoberbece, não se porta inconvenientemente, não busca os seus próprios interesses, não se irrita, não suspeita mal, não se regozija com a injustiça, mas regozija-se com a verdade; tudo suporta, tudo crê, tudo espera, tudo sofre.",
+    "question": "Em 1 Coríntios 13:4–7, toque a palavra que falta em \"não busca os seus próprios ___\"?",
+    "feedbackCorrect": "Exato: a caridade não busca os próprios interesses.",
+    "feedbackWrong": {
+      "a": "Injustiça entra no contraste do regozijo, não nesta lacuna.",
+      "c": "Verdade é com o que ela se alegra."
+    },
+    "template": "não busca os seus próprios ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "injustiça"
+      },
+      {
+        "id": "b",
+        "text": "interesses"
+      },
+      {
+        "id": "c",
+        "text": "verdade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Em 1 Coríntios 13:4–7, toque a palavra que falta em \"não busca os seus próprios ___\"?",
+    "cue": "Em 1 Coríntios 13:4–7, toque a palavra que falta em \"não busca os seus próprios ___\"?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 13:4–7",
+    "learningObjective": "Sair sabendo que a caridade é longânima e benigna e não busca os próprios interesses.",
+    "evidence": [
+      "1 Coríntios 13:4",
+      "1 Coríntios 13:5",
+      "1 Coríntios 13:6",
+      "1 Coríntios 13:7"
+    ],
+    "type": "choice",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "id": "corintios-cam-co-02-amor-03",
+    "passageText": "A caridade é longânima, é benigna; a caridade não é invejosa, não se jacta, não se ensoberbece, não se porta inconvenientemente, não busca os seus próprios interesses, não se irrita, não suspeita mal, não se regozija com a injustiça, mas regozija-se com a verdade; tudo suporta, tudo crê, tudo espera, tudo sofre.",
+    "question": "Como o retrato da caridade encadeia o que ela é e o que ela recusa?",
+    "feedbackCorrect": "Certo: longanimidade e recusa do eu caminham juntas.",
+    "feedbackWrong": {
+      "b": "O texto não autoriza jactância como forma de amor.",
+      "c": "Buscar os próprios interesses é o que ela não faz.",
+      "d": "Irritar-se e suspeitar mal estão na lista do que ela não faz."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "É longânima e recusa inveja, jactância e busca de si"
+      },
+      {
+        "id": "b",
+        "text": "Pode jactar-se, desde que continue longânima"
+      },
+      {
+        "id": "c",
+        "text": "Primeiro busca os próprios interesses, depois é benigna"
+      },
+      {
+        "id": "d",
+        "text": "Irrita-se com razão e suspeita mal para proteger o grupo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Como o retrato da caridade encadeia o que ela é e o que ela recusa?",
+    "cue": "Como o retrato da caridade encadeia o que ela é e o que ela recusa?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 13:4–7",
+    "learningObjective": "Sair sabendo que a caridade é longânima e benigna e não busca os próprios interesses.",
+    "evidence": [
+      "1 Coríntios 13:4",
+      "1 Coríntios 13:5",
+      "1 Coríntios 13:6",
+      "1 Coríntios 13:7"
+    ],
+    "type": "order",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "id": "corintios-cam-co-02-amor-04",
+    "passageText": "A caridade é longânima, é benigna; a caridade não é invejosa, não se jacta, não se ensoberbece, não se porta inconvenientemente, não busca os seus próprios interesses, não se irrita, não suspeita mal, não se regozija com a injustiça, mas regozija-se com a verdade; tudo suporta, tudo crê, tudo espera, tudo sofre.",
+    "question": "Como se encadeiam os eventos de 1 Coríntios 13:4–7?",
+    "feedbackCorrect": "Certo: recusas do eu, recusa da injustiça, gozo na verdade.",
+    "feedbackWrong": {
+      "b": "A verdade fecha o contraste com a injustiça.",
+      "c": "Inveja e jactância vêm antes do regozijo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "a caridade não é invejosa, não se jacta, não se ensoberbece"
+      },
+      {
+        "id": "b",
+        "text": "não se porta inconvenientemente, não busca os seus próprios interesses"
+      },
+      {
+        "id": "c",
+        "text": "não se regozija com a injustiça, mas regozija-se com a verdade"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Como se encadeiam os eventos de 1 Coríntios 13:4–7?",
+    "cue": "Como se encadeiam os eventos de 1 Coríntios 13:4–7?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 13:4–7",
+    "learningObjective": "Sair sabendo que a caridade é longânima e benigna e não busca os próprios interesses.",
+    "evidence": [
+      "1 Coríntios 13:4",
+      "1 Coríntios 13:5",
+      "1 Coríntios 13:6",
+      "1 Coríntios 13:7"
+    ],
+    "type": "complete",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "id": "corintios-cam-co-02-amor-05",
+    "passageText": "A caridade é longânima, é benigna; a caridade não é invejosa, não se jacta, não se ensoberbece, não se porta inconvenientemente, não busca os seus próprios interesses, não se irrita, não suspeita mal, não se regozija com a injustiça, mas regozija-se com a verdade; tudo suporta, tudo crê, tudo espera, tudo sofre.",
+    "question": "Complete: \"não se ___, não suspeita mal\"",
+    "feedbackCorrect": "Certo: a caridade não se irrita nem suspeita mal.",
+    "feedbackWrong": {
+      "a": "Jacta aparece mais acima na lista.",
+      "c": "Ensoberbece também vem antes."
+    },
+    "template": "não se ___, não suspeita mal",
+    "options": [
+      {
+        "id": "a",
+        "text": "jacta"
+      },
+      {
+        "id": "b",
+        "text": "irrita"
+      },
+      {
+        "id": "c",
+        "text": "ensoberbece"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Complete: \"não se ___, não suspeita mal\"",
+    "cue": "Complete: \"não se ___, não suspeita mal\""
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 13:4–7",
+    "learningObjective": "Sair sabendo que a caridade é longânima e benigna e não busca os próprios interesses.",
+    "evidence": [
+      "1 Coríntios 13:4",
+      "1 Coríntios 13:5",
+      "1 Coríntios 13:6",
+      "1 Coríntios 13:7"
+    ],
+    "type": "connect",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "id": "corintios-cam-co-02-amor-06",
+    "passageText": "A caridade é longânima, é benigna; a caridade não é invejosa, não se jacta, não se ensoberbece, não se porta inconvenientemente, não busca os seus próprios interesses, não se irrita, não suspeita mal, não se regozija com a injustiça, mas regozija-se com a verdade; tudo suporta, tudo crê, tudo espera, tudo sofre.",
+    "question": "O que 1 Coríntios 13:4–7 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: dons sem essa caridade incham o eu.",
+    "feedbackWrong": {
+      "a": "O retrato não define amor como busca de vantagem.",
+      "c": "Caridade não se mede por palco ou jactância."
+    },
+    "passageA": {
+      "ref": "1 Coríntios 13:4–7",
+      "text": "A caridade é longânima, é benigna; a caridade não é invejosa, não se jacta, não se ensoberbece, não se porta inconvenientemente, não busca os seus próprios interesses, não se irrita, não suspeita mal, não se regozija com a injustiça, mas regozija-se com a verdade; tudo suporta, tudo crê, tudo espera, tudo sofre."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Dons sem caridade incham: o amor é longânimo e não busca os próprios interesses."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Dons que buscam o eu"
+      },
+      {
+        "id": "b",
+        "text": "Dons sem caridade incham"
+      },
+      {
+        "id": "c",
+        "text": "Amor medido pelo palco"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "O que 1 Coríntios 13:4–7 comunica que se liga a este contexto?",
+    "cue": "O que 1 Coríntios 13:4–7 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 13:4–7",
+    "learningObjective": "Sair sabendo que a caridade é longânima e benigna e não busca os próprios interesses.",
+    "evidence": [
+      "1 Coríntios 13:4",
+      "1 Coríntios 13:5",
+      "1 Coríntios 13:6",
+      "1 Coríntios 13:7"
+    ],
+    "type": "true_false",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "id": "corintios-pro-co-02-amor-01",
+    "passageText": "A caridade é longânima, é benigna; a caridade não é invejosa, não se jacta, não se ensoberbece, não se porta inconvenientemente, não busca os seus próprios interesses, não se irrita, não suspeita mal, não se regozija com a injustiça, mas regozija-se com a verdade; tudo suporta, tudo crê, tudo espera, tudo sofre.",
+    "question": "A caridade, no retrato paulino, é paciente no tempo e recusa fazer do eu o centro.",
+    "feedbackCorrect": "Certo: longânima e sem busca dos próprios interesses.",
+    "feedbackWrong": {
+      "false": "Longanimidade e recusa do eu estão no centro do retrato."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "prompt": "A caridade, no retrato paulino, é paciente no tempo e recusa fazer do eu o centro.",
+    "cue": "A caridade, no retrato paulino, é paciente no tempo e recusa fazer do eu o centro."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 13:4–7",
+    "learningObjective": "Sair sabendo que a caridade é longânima e benigna e não busca os próprios interesses.",
+    "evidence": [
+      "1 Coríntios 13:4",
+      "1 Coríntios 13:5",
+      "1 Coríntios 13:6",
+      "1 Coríntios 13:7"
+    ],
+    "type": "tap",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "id": "corintios-pro-co-02-amor-02",
+    "passageText": "A caridade é longânima, é benigna; a caridade não é invejosa, não se jacta, não se ensoberbece, não se porta inconvenientemente, não busca os seus próprios interesses, não se irrita, não suspeita mal, não se regozija com a injustiça, mas regozija-se com a verdade; tudo suporta, tudo crê, tudo espera, tudo sofre.",
+    "question": "Em 1 Coríntios 13:4–7, toque a palavra que falta em \"tudo suporta, tudo crê, tudo espera, tudo ___\"?",
+    "feedbackCorrect": "Exato: o retrato fecha com \"tudo sofre\".",
+    "feedbackWrong": {
+      "a": "Suporta abre a série dos \"tudo\", não a fecha.",
+      "b": "Espera vem antes de sofre."
+    },
+    "template": "tudo suporta, tudo crê, tudo espera, tudo ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "suporta"
+      },
+      {
+        "id": "b",
+        "text": "espera"
+      },
+      {
+        "id": "c",
+        "text": "sofre"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "prompt": "Em 1 Coríntios 13:4–7, toque a palavra que falta em \"tudo suporta, tudo crê, tudo espera, tudo ___\"?",
+    "cue": "Em 1 Coríntios 13:4–7, toque a palavra que falta em \"tudo suporta, tudo crê, tudo espera, tudo ___\"?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 13:4–7",
+    "learningObjective": "Sair sabendo que a caridade é longânima e benigna e não busca os próprios interesses.",
+    "evidence": [
+      "1 Coríntios 13:4",
+      "1 Coríntios 13:5",
+      "1 Coríntios 13:6",
+      "1 Coríntios 13:7"
+    ],
+    "type": "choice",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "id": "corintios-pro-co-02-amor-03",
+    "passageText": "A caridade é longânima, é benigna; a caridade não é invejosa, não se jacta, não se ensoberbece, não se porta inconvenientemente, não busca os seus próprios interesses, não se irrita, não suspeita mal, não se regozija com a injustiça, mas regozija-se com a verdade; tudo suporta, tudo crê, tudo espera, tudo sofre.",
+    "question": "Qual leitura interpreta melhor o sentido de 1 Coríntios 13:4–7?",
+    "feedbackCorrect": "Certo: o amor é o critério que desinfla dons e partidos.",
+    "feedbackWrong": {
+      "b": "O texto não reduz a caridade a sentimento sem recusas.",
+      "c": "Regozijar-se com a injustiça é o contrário do retrato.",
+      "d": "Não é um manual para vencer debates na assembleia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sem essa caridade, dons e discurso incham o eu na igreja"
+      },
+      {
+        "id": "b",
+        "text": "Caridade é só emoção, sem recusar inveja ou jactância"
+      },
+      {
+        "id": "c",
+        "text": "O amor cristão se alegra quando a injustiça vence"
+      },
+      {
+        "id": "d",
+        "text": "O retrato ensina a ganhar discussões com paciência tática"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Qual leitura interpreta melhor o sentido de 1 Coríntios 13:4–7?",
+    "cue": "Qual leitura interpreta melhor o sentido de 1 Coríntios 13:4–7?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 13:4–7",
+    "learningObjective": "Sair sabendo que a caridade é longânima e benigna e não busca os próprios interesses.",
+    "evidence": [
+      "1 Coríntios 13:4",
+      "1 Coríntios 13:5",
+      "1 Coríntios 13:6",
+      "1 Coríntios 13:7"
+    ],
+    "type": "order",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "id": "corintios-pro-co-02-amor-04",
+    "passageText": "A caridade é longânima, é benigna; a caridade não é invejosa, não se jacta, não se ensoberbece, não se porta inconvenientemente, não busca os seus próprios interesses, não se irrita, não suspeita mal, não se regozija com a injustiça, mas regozija-se com a verdade; tudo suporta, tudo crê, tudo espera, tudo sofre.",
+    "question": "Qual sequência revela o sentido de 1 Coríntios 13:4–7?",
+    "feedbackCorrect": "Certo: recusa da suspeita, gozo na verdade, então o sofrer que sustenta.",
+    "feedbackWrong": {
+      "b": "O \"tudo sofre\" fecha o retrato, não o abre.",
+      "c": "A verdade vem antes da série dos \"tudo\"."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "não se irrita, não suspeita mal"
+      },
+      {
+        "id": "b",
+        "text": "não se regozija com a injustiça, mas regozija-se com a verdade"
+      },
+      {
+        "id": "c",
+        "text": "tudo suporta, tudo crê, tudo espera, tudo sofre"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Qual sequência revela o sentido de 1 Coríntios 13:4–7?",
+    "cue": "Qual sequência revela o sentido de 1 Coríntios 13:4–7?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 13:4–7",
+    "learningObjective": "Sair sabendo que a caridade é longânima e benigna e não busca os próprios interesses.",
+    "evidence": [
+      "1 Coríntios 13:4",
+      "1 Coríntios 13:5",
+      "1 Coríntios 13:6",
+      "1 Coríntios 13:7"
+    ],
+    "type": "complete",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "id": "corintios-pro-co-02-amor-05",
+    "passageText": "A caridade é longânima, é benigna; a caridade não é invejosa, não se jacta, não se ensoberbece, não se porta inconvenientemente, não busca os seus próprios interesses, não se irrita, não suspeita mal, não se regozija com a injustiça, mas regozija-se com a verdade; tudo suporta, tudo crê, tudo espera, tudo sofre.",
+    "question": "Complete: \"não se regozija com a injustiça, mas regozija-se com a ___\"",
+    "feedbackCorrect": "Certo: o gozo da caridade está na verdade.",
+    "feedbackWrong": {
+      "a": "Injustiça é o com que ela não se alegra.",
+      "c": "Mal qualifica a suspeita, não esta lacuna."
+    },
+    "template": "não se regozija com a injustiça, mas regozija-se com a ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "injustiça"
+      },
+      {
+        "id": "b",
+        "text": "verdade"
+      },
+      {
+        "id": "c",
+        "text": "mal"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Complete: \"não se regozija com a injustiça, mas regozija-se com a ___\"",
+    "cue": "Complete: \"não se regozija com a injustiça, mas regozija-se com a ___\""
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 13:4–7",
+    "learningObjective": "Sair sabendo que a caridade é longânima e benigna e não busca os próprios interesses.",
+    "evidence": [
+      "1 Coríntios 13:4",
+      "1 Coríntios 13:5",
+      "1 Coríntios 13:6",
+      "1 Coríntios 13:7"
+    ],
+    "type": "connect",
+    "trail": "corintios",
+    "section": "co-02-amor",
+    "id": "corintios-pro-co-02-amor-06",
+    "passageText": "A caridade é longânima, é benigna; a caridade não é invejosa, não se jacta, não se ensoberbece, não se porta inconvenientemente, não busca os seus próprios interesses, não se irrita, não suspeita mal, não se regozija com a injustiça, mas regozija-se com a verdade; tudo suporta, tudo crê, tudo espera, tudo sofre.",
+    "question": "O que 1 Coríntios 13:4–7 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o amor sofre e espera sem fazer do eu a medida.",
+    "feedbackWrong": {
+      "a": "O retrato não exalta o eu espiritualizado.",
+      "c": "Caridade não se define por vantagem ministerial."
+    },
+    "passageA": {
+      "ref": "1 Coríntios 13:4–7",
+      "text": "A caridade é longânima, é benigna; a caridade não é invejosa, não se jacta, não se ensoberbece, não se porta inconvenientemente, não busca os seus próprios interesses, não se irrita, não suspeita mal, não se regozija com a injustiça, mas regozija-se com a verdade; tudo suporta, tudo crê, tudo espera, tudo sofre."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Dons sem caridade incham: o amor é longânimo e não busca os próprios interesses."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Eu espiritual no centro"
+      },
+      {
+        "id": "b",
+        "text": "Amor que não busca si"
+      },
+      {
+        "id": "c",
+        "text": "Dons como moeda de status"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "O que 1 Coríntios 13:4–7 comunica que se liga a este contexto?",
+    "cue": "O que 1 Coríntios 13:4–7 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Sair sabendo que o evangelho recebido é morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "true_false",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "id": "corintios-sem-co-03-ressurreicao-01",
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "question": "Paulo entregou o que também recebeu: Cristo morreu por nossos pecados, foi sepultado e ressuscitado.",
+    "feedbackCorrect": "Certo: entrega, recepção e os três fatos do evangelho.",
+    "feedbackWrong": {
+      "false": "Releia: entreguei o que recebi: morreu, sepultado, ressuscitado."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "prompt": "Paulo entregou o que também recebeu: Cristo morreu por nossos pecados, foi sepultado e ressuscitado.",
+    "cue": "Paulo entregou o que também recebeu: Cristo morreu por nossos pecados, foi sepultado e ressuscitado."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Sair sabendo que o evangelho recebido é morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "tap",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "id": "corintios-sem-co-03-ressurreicao-02",
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "question": "Em 1 Coríntios 15:3–4, toque a palavra que falta em \"que Cristo morreu por nossos ___, segundo as Escrituras\"?",
+    "feedbackCorrect": "Exato: a morte de Cristo é por nossos pecados.",
+    "feedbackWrong": {
+      "b": "Escrituras fundamentam o fato, não preenchem esta lacuna.",
+      "c": "Sepultado vem no versículo seguinte."
+    },
+    "template": "que Cristo morreu por nossos ___, segundo as Escrituras",
+    "options": [
+      {
+        "id": "a",
+        "text": "pecados"
+      },
+      {
+        "id": "b",
+        "text": "Escrituras"
+      },
+      {
+        "id": "c",
+        "text": "sepultado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Em 1 Coríntios 15:3–4, toque a palavra que falta em \"que Cristo morreu por nossos ___, segundo as Escrituras\"?",
+    "cue": "Em 1 Coríntios 15:3–4, toque a palavra que falta em \"que Cristo morreu por nossos ___, segundo as Escrituras\"?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Sair sabendo que o evangelho recebido é morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "choice",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "id": "corintios-sem-co-03-ressurreicao-03",
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "question": "O que o texto afirma que Paulo entregou primeiramente?",
+    "feedbackCorrect": "Certo: o que ele também recebeu — o evangelho dos fatos.",
+    "feedbackWrong": {
+      "b": "Ele não diz ter inventado o conteúdo.",
+      "c": "O texto não aponta uma lista de líderes de Corinto.",
+      "d": "Não é um recado particular sem os fatos de Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O que também recebeu acerca de Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Uma doutrina que ele mesmo inventou"
+      },
+      {
+        "id": "c",
+        "text": "Uma lista de partidos da igreja em Corinto"
+      },
+      {
+        "id": "d",
+        "text": "Um recado particular sem morte nem ressurreição"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "O que o texto afirma que Paulo entregou primeiramente?",
+    "cue": "O que o texto afirma que Paulo entregou primeiramente?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Sair sabendo que o evangelho recebido é morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "order",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "id": "corintios-sem-co-03-ressurreicao-04",
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "question": "Qual sequência mostra a ordem dos fatos em 1 Coríntios 15:3–4?",
+    "feedbackCorrect": "Certo: morte, sepultura e ressurreição ao terceiro dia.",
+    "feedbackWrong": {
+      "b": "A sepultura vem entre a morte e a ressurreição.",
+      "c": "Cristo morreu primeiro, segundo o texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "que Cristo morreu por nossos pecados, segundo as Escrituras"
+      },
+      {
+        "id": "b",
+        "text": "e que foi sepultado"
+      },
+      {
+        "id": "c",
+        "text": "e que foi ressuscitado ao terceiro dia, segundo as Escrituras"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 1 Coríntios 15:3–4?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 1 Coríntios 15:3–4?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Sair sabendo que o evangelho recebido é morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "complete",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "id": "corintios-sem-co-03-ressurreicao-05",
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "question": "Complete: \"que ___ morreu por nossos pecados, segundo as Escrituras\"",
+    "feedbackCorrect": "Certo: o sujeito da morte é Cristo.",
+    "feedbackWrong": {
+      "b": "Pecados é o motivo da morte, não o sujeito.",
+      "c": "Escrituras fundamentam, não ocupam esta lacuna."
+    },
+    "template": "que ___ morreu por nossos pecados, segundo as Escrituras",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo"
+      },
+      {
+        "id": "b",
+        "text": "pecados"
+      },
+      {
+        "id": "c",
+        "text": "Escrituras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Complete: \"que ___ morreu por nossos pecados, segundo as Escrituras\"",
+    "cue": "Complete: \"que ___ morreu por nossos pecados, segundo as Escrituras\""
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Sair sabendo que o evangelho recebido é morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "connect",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "id": "corintios-sem-co-03-ressurreicao-06",
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "question": "O que 1 Coríntios 15:3–4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o evangelho é recebido e entregue nesses fatos.",
+    "feedbackWrong": {
+      "b": "O texto não trata o evangelho como invenção paulina.",
+      "c": "Há morte, sepultura e ressurreição, não só um slogan."
+    },
+    "passageA": {
+      "ref": "1 Coríntios 15:3–4",
+      "text": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O evangelho recebido: morte, sepultura e ressurreição segundo as Escrituras."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Evangelho recebido e entregue"
+      },
+      {
+        "id": "b",
+        "text": "Doutrina inventada por Paulo"
+      },
+      {
+        "id": "c",
+        "text": "Slogan sem morte nem tumba"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "O que 1 Coríntios 15:3–4 comunica que se liga a este contexto?",
+    "cue": "O que 1 Coríntios 15:3–4 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Sair sabendo que o evangelho recebido é morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "true_false",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "id": "corintios-cam-co-03-ressurreicao-01",
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "question": "A morte e a ressurreição de Cristo são apresentadas sem qualquer apelo às Escrituras.",
+    "feedbackCorrect": "Certo: o texto repete \"segundo as Escrituras\" nos dois polos.",
+    "feedbackWrong": {
+      "true": "Tanto a morte quanto a ressurreição vêm segundo as Escrituras."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "prompt": "A morte e a ressurreição de Cristo são apresentadas sem qualquer apelo às Escrituras.",
+    "cue": "A morte e a ressurreição de Cristo são apresentadas sem qualquer apelo às Escrituras."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Sair sabendo que o evangelho recebido é morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "tap",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "id": "corintios-cam-co-03-ressurreicao-02",
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "question": "Em 1 Coríntios 15:3–4, toque a palavra que falta em \"e que foi ___, e que foi ressuscitado ao terceiro dia\"?",
+    "feedbackCorrect": "Exato: entre a morte e a ressurreição está o sepultamento.",
+    "feedbackWrong": {
+      "a": "Morreu vem antes, no v. 3.",
+      "c": "Ressuscitado fecha a tríade, não esta lacuna."
+    },
+    "template": "e que foi ___, e que foi ressuscitado ao terceiro dia",
+    "options": [
+      {
+        "id": "a",
+        "text": "morreu"
+      },
+      {
+        "id": "b",
+        "text": "sepultado"
+      },
+      {
+        "id": "c",
+        "text": "ressuscitado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Em 1 Coríntios 15:3–4, toque a palavra que falta em \"e que foi ___, e que foi ressuscitado ao terceiro dia\"?",
+    "cue": "Em 1 Coríntios 15:3–4, toque a palavra que falta em \"e que foi ___, e que foi ressuscitado ao terceiro dia\"?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Sair sabendo que o evangelho recebido é morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "choice",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "id": "corintios-cam-co-03-ressurreicao-03",
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "question": "Como o texto encadeia recepção, morte e ressurreição?",
+    "feedbackCorrect": "Certo: o recebido inclui morte, tumba e ressurreição escriturísticas.",
+    "feedbackWrong": {
+      "b": "A sepultura não é omitida: \"foi sepultado\".",
+      "c": "Paulo entrega o que recebeu, não uma criação livre.",
+      "d": "A ressurreição também é segundo as Escrituras."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O recebido inclui morte, sepultura e ressurreição segundo as Escrituras"
+      },
+      {
+        "id": "b",
+        "text": "Basta a morte; a sepultura não faz parte do anúncio"
+      },
+      {
+        "id": "c",
+        "text": "Paulo cria o conteúdo e depois o entrega à igreja"
+      },
+      {
+        "id": "d",
+        "text": "A ressurreição fica fora do critério das Escrituras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Como o texto encadeia recepção, morte e ressurreição?",
+    "cue": "Como o texto encadeia recepção, morte e ressurreição?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Sair sabendo que o evangelho recebido é morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "order",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "id": "corintios-cam-co-03-ressurreicao-04",
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "question": "Como se encadeiam os eventos de 1 Coríntios 15:3–4?",
+    "feedbackCorrect": "Certo: entrega do recebido, morte e ressurreição segundo as Escrituras.",
+    "feedbackWrong": {
+      "b": "A entrega do recebido abre o trecho.",
+      "c": "A morte segundo as Escrituras precede a ressurreição."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "eu vos entreguei primeiramente o que também recebi"
+      },
+      {
+        "id": "b",
+        "text": "que Cristo morreu por nossos pecados, segundo as Escrituras"
+      },
+      {
+        "id": "c",
+        "text": "e que foi ressuscitado ao terceiro dia, segundo as Escrituras"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Como se encadeiam os eventos de 1 Coríntios 15:3–4?",
+    "cue": "Como se encadeiam os eventos de 1 Coríntios 15:3–4?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Sair sabendo que o evangelho recebido é morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "complete",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "id": "corintios-cam-co-03-ressurreicao-05",
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "question": "Complete: \"que Cristo morreu por nossos pecados, segundo as ___\"",
+    "feedbackCorrect": "Certo: a morte é segundo as Escrituras.",
+    "feedbackWrong": {
+      "a": "Pecados explica o porquê, não o critério citado aqui.",
+      "c": "Cristo é o sujeito, não esta lacuna."
+    },
+    "template": "que Cristo morreu por nossos pecados, segundo as ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "pecados"
+      },
+      {
+        "id": "b",
+        "text": "Escrituras"
+      },
+      {
+        "id": "c",
+        "text": "Cristo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Complete: \"que Cristo morreu por nossos pecados, segundo as ___\"",
+    "cue": "Complete: \"que Cristo morreu por nossos pecados, segundo as ___\""
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Sair sabendo que o evangelho recebido é morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "connect",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "id": "corintios-cam-co-03-ressurreicao-06",
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "question": "O que 1 Coríntios 15:3–4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o evangelho tem conteúdo histórico e escriturístico.",
+    "feedbackWrong": {
+      "a": "Não é um mito sem tumba nem terceiro dia.",
+      "c": "A tríade não se reduz a sentimento de fé."
+    },
+    "passageA": {
+      "ref": "1 Coríntios 15:3–4",
+      "text": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O evangelho recebido: morte, sepultura e ressurreição segundo as Escrituras."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Mito sem tumba nem dia"
+      },
+      {
+        "id": "b",
+        "text": "Fatos segundo as Escrituras"
+      },
+      {
+        "id": "c",
+        "text": "Fé sem conteúdo histórico"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "O que 1 Coríntios 15:3–4 comunica que se liga a este contexto?",
+    "cue": "O que 1 Coríntios 15:3–4 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Sair sabendo que o evangelho recebido é morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "true_false",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "id": "corintios-pro-co-03-ressurreicao-01",
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "question": "O evangelho que a igreja recebe não começa em Corinto: vem de Cristo morto, sepultado e ressuscitado segundo as Escrituras.",
+    "feedbackCorrect": "Certo: recebido e entregue, ancorado nas Escrituras.",
+    "feedbackWrong": {
+      "false": "Paulo insiste no que recebeu, não no que a cidade inventou."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "prompt": "O evangelho que a igreja recebe não começa em Corinto: vem de Cristo morto, sepultado e ressuscitado segundo as Escrituras.",
+    "cue": "O evangelho que a igreja recebe não começa em Corinto: vem de Cristo morto, sepultado e ressuscitado segundo as Escrituras."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Sair sabendo que o evangelho recebido é morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "tap",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "id": "corintios-pro-co-03-ressurreicao-02",
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "question": "Em 1 Coríntios 15:3–4, toque a palavra que falta em \"e que foi ___ ao terceiro dia, segundo as Escrituras\"?",
+    "feedbackCorrect": "Exato: foi ressuscitado ao terceiro dia.",
+    "feedbackWrong": {
+      "a": "Sepultado vem antes da ressurreição.",
+      "c": "Pecados pertence à cláusula da morte."
+    },
+    "template": "e que foi ___ ao terceiro dia, segundo as Escrituras",
+    "options": [
+      {
+        "id": "a",
+        "text": "sepultado"
+      },
+      {
+        "id": "b",
+        "text": "ressuscitado"
+      },
+      {
+        "id": "c",
+        "text": "pecados"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Em 1 Coríntios 15:3–4, toque a palavra que falta em \"e que foi ___ ao terceiro dia, segundo as Escrituras\"?",
+    "cue": "Em 1 Coríntios 15:3–4, toque a palavra que falta em \"e que foi ___ ao terceiro dia, segundo as Escrituras\"?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Sair sabendo que o evangelho recebido é morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "choice",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "id": "corintios-pro-co-03-ressurreicao-03",
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "question": "Qual leitura interpreta melhor o sentido de 1 Coríntios 15:3–4?",
+    "feedbackCorrect": "Certo: o evangelho é tradição recebida, não invenção local.",
+    "feedbackWrong": {
+      "b": "A sepultura impede reduzir tudo a metáfora sem corpo.",
+      "c": "\"Segundo as Escrituras\" não é enfeite opcional.",
+      "d": "Paulo não se apresenta como origem do conteúdo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A igreja vive de um evangelho recebido, não inventado na assembleia"
+      },
+      {
+        "id": "b",
+        "text": "A sepultura é detalhe poético, sem peso no anúncio"
+      },
+      {
+        "id": "c",
+        "text": "As Escrituras são só pano de fundo, sem governar os fatos"
+      },
+      {
+        "id": "d",
+        "text": "Paulo é a fonte original do evangelho, não um transmissor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Qual leitura interpreta melhor o sentido de 1 Coríntios 15:3–4?",
+    "cue": "Qual leitura interpreta melhor o sentido de 1 Coríntios 15:3–4?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Sair sabendo que o evangelho recebido é morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "order",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "id": "corintios-pro-co-03-ressurreicao-04",
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "question": "Qual sequência revela o sentido de 1 Coríntios 15:3–4?",
+    "feedbackCorrect": "Certo: recebido, morte escriturística, ressurreição no terceiro dia.",
+    "feedbackWrong": {
+      "b": "O recebido abre a cadeia.",
+      "c": "A morte segundo as Escrituras precede o terceiro dia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "o que também recebi"
+      },
+      {
+        "id": "b",
+        "text": "Cristo morreu por nossos pecados, segundo as Escrituras"
+      },
+      {
+        "id": "c",
+        "text": "foi ressuscitado ao terceiro dia, segundo as Escrituras"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Qual sequência revela o sentido de 1 Coríntios 15:3–4?",
+    "cue": "Qual sequência revela o sentido de 1 Coríntios 15:3–4?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Sair sabendo que o evangelho recebido é morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "complete",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "id": "corintios-pro-co-03-ressurreicao-05",
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "question": "Complete: \"e que foi ressuscitado ao ___ dia, segundo as Escrituras\"",
+    "feedbackCorrect": "Certo: a ressurreição é ao terceiro dia.",
+    "feedbackWrong": {
+      "a": "Sepultado nomeia o fato anterior.",
+      "c": "Primeiramente qualifica a entrega, não o dia."
+    },
+    "template": "e que foi ressuscitado ao ___ dia, segundo as Escrituras",
+    "options": [
+      {
+        "id": "a",
+        "text": "sepultado"
+      },
+      {
+        "id": "b",
+        "text": "terceiro"
+      },
+      {
+        "id": "c",
+        "text": "primeiramente"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Complete: \"e que foi ressuscitado ao ___ dia, segundo as Escrituras\"",
+    "cue": "Complete: \"e que foi ressuscitado ao ___ dia, segundo as Escrituras\""
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 15:3–4",
+    "learningObjective": "Sair sabendo que o evangelho recebido é morte, sepultura e ressurreição segundo as Escrituras.",
+    "evidence": [
+      "1 Coríntios 15:3",
+      "1 Coríntios 15:4"
+    ],
+    "type": "connect",
+    "trail": "corintios",
+    "section": "co-03-ressurreicao",
+    "id": "corintios-pro-co-03-ressurreicao-06",
+    "passageText": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,",
+    "question": "O que 1 Coríntios 15:3–4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a igreja se sustenta nesse evangelho tríplice.",
+    "feedbackWrong": {
+      "b": "O centro não é o prestígio do apóstolo.",
+      "c": "Não é um anexo opcional à fé coríntia."
+    },
+    "passageA": {
+      "ref": "1 Coríntios 15:3–4",
+      "text": "Pois eu vos entreguei primeiramente o que também recebi: que Cristo morreu por nossos pecados, segundo as Escrituras, e que foi sepultado, e que foi ressuscitado ao terceiro dia, segundo as Escrituras,"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O evangelho recebido: morte, sepultura e ressurreição segundo as Escrituras."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Tríade do evangelho recebido"
+      },
+      {
+        "id": "b",
+        "text": "Prestígio do apóstolo"
+      },
+      {
+        "id": "c",
+        "text": "Anexo opcional à fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "O que 1 Coríntios 15:3–4 comunica que se liga a este contexto?",
+    "cue": "O que 1 Coríntios 15:3–4 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Coríntios 12:9",
+    "learningObjective": "Sair sabendo que a graça basta e a força de Cristo se aperfeiçoa na fraqueza.",
+    "evidence": [
+      "2 Coríntios 12:9"
+    ],
+    "type": "true_false",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "id": "corintios-sem-co-04-consolacao-01",
+    "passageText": "E disse-me: Basta-te a minha graça, pois a minha força se aperfeiçoa na fraqueza. Portanto, de boa vontade antes me gloriarei nas minhas fraquezas, para que a força de Cristo repouse sobre mim.",
+    "question": "O Senhor diz a Paulo que lhe basta a graça, pois a força se aperfeiçoa na fraqueza.",
+    "feedbackCorrect": "Certo: graça suficiente e força aperfeiçoada na fraqueza.",
+    "feedbackWrong": {
+      "false": "Releia: Basta-te a minha graça; a força se aperfeiçoa na fraqueza."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "prompt": "O Senhor diz a Paulo que lhe basta a graça, pois a força se aperfeiçoa na fraqueza.",
+    "cue": "O Senhor diz a Paulo que lhe basta a graça, pois a força se aperfeiçoa na fraqueza."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Coríntios 12:9",
+    "learningObjective": "Sair sabendo que a graça basta e a força de Cristo se aperfeiçoa na fraqueza.",
+    "evidence": [
+      "2 Coríntios 12:9"
+    ],
+    "type": "tap",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "id": "corintios-sem-co-04-consolacao-02",
+    "passageText": "E disse-me: Basta-te a minha graça, pois a minha força se aperfeiçoa na fraqueza. Portanto, de boa vontade antes me gloriarei nas minhas fraquezas, para que a força de Cristo repouse sobre mim.",
+    "question": "Em 2 Coríntios 12:9, toque a palavra que falta em \"Basta-te a minha ___, pois a minha força se aperfeiçoa na fraqueza\"?",
+    "feedbackCorrect": "Exato: o que basta é a graça do Senhor.",
+    "feedbackWrong": {
+      "b": "Força é o que se aperfeiçoa, não o que \"basta\" nesta frase.",
+      "c": "Fraqueza é o lugar, não o que basta."
+    },
+    "template": "Basta-te a minha ___, pois a minha força se aperfeiçoa na fraqueza",
+    "options": [
+      {
+        "id": "a",
+        "text": "graça"
+      },
+      {
+        "id": "b",
+        "text": "força"
+      },
+      {
+        "id": "c",
+        "text": "fraqueza"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Em 2 Coríntios 12:9, toque a palavra que falta em \"Basta-te a minha ___, pois a minha força se aperfeiçoa na fraqueza\"?",
+    "cue": "Em 2 Coríntios 12:9, toque a palavra que falta em \"Basta-te a minha ___, pois a minha força se aperfeiçoa na fraqueza\"?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Coríntios 12:9",
+    "learningObjective": "Sair sabendo que a graça basta e a força de Cristo se aperfeiçoa na fraqueza.",
+    "evidence": [
+      "2 Coríntios 12:9"
+    ],
+    "type": "choice",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "id": "corintios-sem-co-04-consolacao-03",
+    "passageText": "E disse-me: Basta-te a minha graça, pois a minha força se aperfeiçoa na fraqueza. Portanto, de boa vontade antes me gloriarei nas minhas fraquezas, para que a força de Cristo repouse sobre mim.",
+    "question": "Onde o texto afirma que a força do Senhor se aperfeiçoa?",
+    "feedbackCorrect": "Certo: a força se aperfeiçoa na fraqueza.",
+    "feedbackWrong": {
+      "a": "Não é na fama que o versículo localiza o aperfeiçoamento.",
+      "c": "O texto não aponta a ausência de graça como o lugar.",
+      "d": "Não é na força humana autossuficiente."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Na fama do apóstolo"
+      },
+      {
+        "id": "b",
+        "text": "Na fraqueza"
+      },
+      {
+        "id": "c",
+        "text": "Na ausência de graça"
+      },
+      {
+        "id": "d",
+        "text": "Na força humana sem Cristo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Onde o texto afirma que a força do Senhor se aperfeiçoa?",
+    "cue": "Onde o texto afirma que a força do Senhor se aperfeiçoa?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Coríntios 12:9",
+    "learningObjective": "Sair sabendo que a graça basta e a força de Cristo se aperfeiçoa na fraqueza.",
+    "evidence": [
+      "2 Coríntios 12:9"
+    ],
+    "type": "order",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "id": "corintios-sem-co-04-consolacao-04",
+    "passageText": "E disse-me: Basta-te a minha graça, pois a minha força se aperfeiçoa na fraqueza. Portanto, de boa vontade antes me gloriarei nas minhas fraquezas, para que a força de Cristo repouse sobre mim.",
+    "question": "Qual sequência mostra a ordem dos fatos em 2 Coríntios 12:9?",
+    "feedbackCorrect": "Certo: a palavra da graça, o aperfeiçoar na fraqueza, então o gloriar-se.",
+    "feedbackWrong": {
+      "b": "O gloriar-se vem depois da sentença sobre a graça.",
+      "c": "Basta-te a minha graça abre a fala."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Basta-te a minha graça"
+      },
+      {
+        "id": "b",
+        "text": "pois a minha força se aperfeiçoa na fraqueza"
+      },
+      {
+        "id": "c",
+        "text": "de boa vontade antes me gloriarei nas minhas fraquezas"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 2 Coríntios 12:9?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 2 Coríntios 12:9?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Coríntios 12:9",
+    "learningObjective": "Sair sabendo que a graça basta e a força de Cristo se aperfeiçoa na fraqueza.",
+    "evidence": [
+      "2 Coríntios 12:9"
+    ],
+    "type": "complete",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "id": "corintios-sem-co-04-consolacao-05",
+    "passageText": "E disse-me: Basta-te a minha graça, pois a minha força se aperfeiçoa na fraqueza. Portanto, de boa vontade antes me gloriarei nas minhas fraquezas, para que a força de Cristo repouse sobre mim.",
+    "question": "Complete: \"pois a minha força se ___ na fraqueza\"",
+    "feedbackCorrect": "Certo: a força se aperfeiçoa na fraqueza.",
+    "feedbackWrong": {
+      "b": "Gloriarei vem na resposta de Paulo.",
+      "c": "Repouse descreve a força de Cristo no fim."
+    },
+    "template": "pois a minha força se ___ na fraqueza",
+    "options": [
+      {
+        "id": "a",
+        "text": "aperfeiçoa"
+      },
+      {
+        "id": "b",
+        "text": "gloriarei"
+      },
+      {
+        "id": "c",
+        "text": "repouse"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Complete: \"pois a minha força se ___ na fraqueza\"",
+    "cue": "Complete: \"pois a minha força se ___ na fraqueza\""
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Coríntios 12:9",
+    "learningObjective": "Sair sabendo que a graça basta e a força de Cristo se aperfeiçoa na fraqueza.",
+    "evidence": [
+      "2 Coríntios 12:9"
+    ],
+    "type": "connect",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "id": "corintios-sem-co-04-consolacao-06",
+    "passageText": "E disse-me: Basta-te a minha graça, pois a minha força se aperfeiçoa na fraqueza. Portanto, de boa vontade antes me gloriarei nas minhas fraquezas, para que a força de Cristo repouse sobre mim.",
+    "question": "O que 2 Coríntios 12:9 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a graça basta onde a força humana falha.",
+    "feedbackWrong": {
+      "b": "O texto não promete a remoção da fraqueza como condição.",
+      "c": "Não é autonomia sem Cristo."
+    },
+    "passageA": {
+      "ref": "2 Coríntios 12:9",
+      "text": "E disse-me: Basta-te a minha graça, pois a minha força se aperfeiçoa na fraqueza. Portanto, de boa vontade antes me gloriarei nas minhas fraquezas, para que a força de Cristo repouse sobre mim."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Consolação na fraqueza: a graça basta; a força de Cristo se aperfeiçoa ali."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Graça que basta na fraqueza"
+      },
+      {
+        "id": "b",
+        "text": "Fraqueza banida pela fama"
+      },
+      {
+        "id": "c",
+        "text": "Força sem precisar de Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "O que 2 Coríntios 12:9 comunica que se liga a este contexto?",
+    "cue": "O que 2 Coríntios 12:9 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Coríntios 12:9",
+    "learningObjective": "Sair sabendo que a graça basta e a força de Cristo se aperfeiçoa na fraqueza.",
+    "evidence": [
+      "2 Coríntios 12:9"
+    ],
+    "type": "true_false",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "id": "corintios-cam-co-04-consolacao-01",
+    "passageText": "E disse-me: Basta-te a minha graça, pois a minha força se aperfeiçoa na fraqueza. Portanto, de boa vontade antes me gloriarei nas minhas fraquezas, para que a força de Cristo repouse sobre mim.",
+    "question": "Paulo se recusa a gloriar-se nas fraquezas, para que a força de Cristo não o alcance.",
+    "feedbackCorrect": "Certo: ele se gloria nas fraquezas para que a força de Cristo repouse.",
+    "feedbackWrong": {
+      "true": "O texto diz o contrário: gloriar-se para que Cristo repouse."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "prompt": "Paulo se recusa a gloriar-se nas fraquezas, para que a força de Cristo não o alcance.",
+    "cue": "Paulo se recusa a gloriar-se nas fraquezas, para que a força de Cristo não o alcance."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Coríntios 12:9",
+    "learningObjective": "Sair sabendo que a graça basta e a força de Cristo se aperfeiçoa na fraqueza.",
+    "evidence": [
+      "2 Coríntios 12:9"
+    ],
+    "type": "tap",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "id": "corintios-cam-co-04-consolacao-02",
+    "passageText": "E disse-me: Basta-te a minha graça, pois a minha força se aperfeiçoa na fraqueza. Portanto, de boa vontade antes me gloriarei nas minhas fraquezas, para que a força de Cristo repouse sobre mim.",
+    "question": "Em 2 Coríntios 12:9, toque a palavra que falta em \"a minha força se aperfeiçoa na ___\"?",
+    "feedbackCorrect": "Exato: o lugar do aperfeiçoamento é a fraqueza.",
+    "feedbackWrong": {
+      "a": "Graça é o que basta, não o lugar citado aqui.",
+      "c": "Cristo nomeia de quem é a força que repousa."
+    },
+    "template": "a minha força se aperfeiçoa na ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "graça"
+      },
+      {
+        "id": "b",
+        "text": "fraqueza"
+      },
+      {
+        "id": "c",
+        "text": "Cristo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Em 2 Coríntios 12:9, toque a palavra que falta em \"a minha força se aperfeiçoa na ___\"?",
+    "cue": "Em 2 Coríntios 12:9, toque a palavra que falta em \"a minha força se aperfeiçoa na ___\"?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Coríntios 12:9",
+    "learningObjective": "Sair sabendo que a graça basta e a força de Cristo se aperfeiçoa na fraqueza.",
+    "evidence": [
+      "2 Coríntios 12:9"
+    ],
+    "type": "choice",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "id": "corintios-cam-co-04-consolacao-03",
+    "passageText": "E disse-me: Basta-te a minha graça, pois a minha força se aperfeiçoa na fraqueza. Portanto, de boa vontade antes me gloriarei nas minhas fraquezas, para que a força de Cristo repouse sobre mim.",
+    "question": "Como se relacionam graça, fraqueza e o gloriar-se de Paulo?",
+    "feedbackCorrect": "Certo: a graça basta, e ele se gloria para que Cristo repouse.",
+    "feedbackWrong": {
+      "b": "A fraqueza não é tratada como prova de abandono.",
+      "c": "O gloriar-se não é nas próprias forças.",
+      "d": "A graça não é chamada de insuficiente."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A graça basta; ele se gloria nas fraquezas para que Cristo repouse"
+      },
+      {
+        "id": "b",
+        "text": "A fraqueza prova que a graça falhou"
+      },
+      {
+        "id": "c",
+        "text": "Ele se gloria nas próprias forças para dispensar a Cristo"
+      },
+      {
+        "id": "d",
+        "text": "A graça só basta quando a fraqueza já acabou"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Como se relacionam graça, fraqueza e o gloriar-se de Paulo?",
+    "cue": "Como se relacionam graça, fraqueza e o gloriar-se de Paulo?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Coríntios 12:9",
+    "learningObjective": "Sair sabendo que a graça basta e a força de Cristo se aperfeiçoa na fraqueza.",
+    "evidence": [
+      "2 Coríntios 12:9"
+    ],
+    "type": "order",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "id": "corintios-cam-co-04-consolacao-04",
+    "passageText": "E disse-me: Basta-te a minha graça, pois a minha força se aperfeiçoa na fraqueza. Portanto, de boa vontade antes me gloriarei nas minhas fraquezas, para que a força de Cristo repouse sobre mim.",
+    "question": "Como se encadeiam os eventos de 2 Coríntios 12:9?",
+    "feedbackCorrect": "Certo: a fala do Senhor, o aperfeiçoar, então Cristo que repousa.",
+    "feedbackWrong": {
+      "b": "Cristo que repousa fecha o versículo.",
+      "c": "A sentença sobre a graça vem primeiro."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "E disse-me: Basta-te a minha graça"
+      },
+      {
+        "id": "b",
+        "text": "pois a minha força se aperfeiçoa na fraqueza"
+      },
+      {
+        "id": "c",
+        "text": "para que a força de Cristo repouse sobre mim"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Como se encadeiam os eventos de 2 Coríntios 12:9?",
+    "cue": "Como se encadeiam os eventos de 2 Coríntios 12:9?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Coríntios 12:9",
+    "learningObjective": "Sair sabendo que a graça basta e a força de Cristo se aperfeiçoa na fraqueza.",
+    "evidence": [
+      "2 Coríntios 12:9"
+    ],
+    "type": "complete",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "id": "corintios-cam-co-04-consolacao-05",
+    "passageText": "E disse-me: Basta-te a minha graça, pois a minha força se aperfeiçoa na fraqueza. Portanto, de boa vontade antes me gloriarei nas minhas fraquezas, para que a força de Cristo repouse sobre mim.",
+    "question": "Complete: \"de boa vontade antes me ___ nas minhas fraquezas\"",
+    "feedbackCorrect": "Certo: Paulo se gloria nas fraquezas.",
+    "feedbackWrong": {
+      "a": "Aperfeiçoa descreve a força do Senhor.",
+      "c": "Repouse descreve a força de Cristo no fim."
+    },
+    "template": "de boa vontade antes me ___ nas minhas fraquezas",
+    "options": [
+      {
+        "id": "a",
+        "text": "aperfeiçoa"
+      },
+      {
+        "id": "b",
+        "text": "gloriarei"
+      },
+      {
+        "id": "c",
+        "text": "repouse"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Complete: \"de boa vontade antes me ___ nas minhas fraquezas\"",
+    "cue": "Complete: \"de boa vontade antes me ___ nas minhas fraquezas\""
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Coríntios 12:9",
+    "learningObjective": "Sair sabendo que a graça basta e a força de Cristo se aperfeiçoa na fraqueza.",
+    "evidence": [
+      "2 Coríntios 12:9"
+    ],
+    "type": "connect",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "id": "corintios-cam-co-04-consolacao-06",
+    "passageText": "E disse-me: Basta-te a minha graça, pois a minha força se aperfeiçoa na fraqueza. Portanto, de boa vontade antes me gloriarei nas minhas fraquezas, para que a força de Cristo repouse sobre mim.",
+    "question": "O que 2 Coríntios 12:9 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: consolo não é a saída da fraqueza, e sim Cristo nela.",
+    "feedbackWrong": {
+      "a": "O texto não define consolo como fim da fraqueza.",
+      "c": "Não é trocar graça por prestígio."
+    },
+    "passageA": {
+      "ref": "2 Coríntios 12:9",
+      "text": "E disse-me: Basta-te a minha graça, pois a minha força se aperfeiçoa na fraqueza. Portanto, de boa vontade antes me gloriarei nas minhas fraquezas, para que a força de Cristo repouse sobre mim."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Consolação na fraqueza: a graça basta; a força de Cristo se aperfeiçoa ali."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Consolo como fim da fraqueza"
+      },
+      {
+        "id": "b",
+        "text": "Cristo forte na fraqueza"
+      },
+      {
+        "id": "c",
+        "text": "Graça trocada por prestígio"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "O que 2 Coríntios 12:9 comunica que se liga a este contexto?",
+    "cue": "O que 2 Coríntios 12:9 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Coríntios 12:9",
+    "learningObjective": "Sair sabendo que a graça basta e a força de Cristo se aperfeiçoa na fraqueza.",
+    "evidence": [
+      "2 Coríntios 12:9"
+    ],
+    "type": "true_false",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "id": "corintios-pro-co-04-consolacao-01",
+    "passageText": "E disse-me: Basta-te a minha graça, pois a minha força se aperfeiçoa na fraqueza. Portanto, de boa vontade antes me gloriarei nas minhas fraquezas, para que a força de Cristo repouse sobre mim.",
+    "question": "A fraqueza, neste versículo, torna-se o lugar onde a força de Cristo pode repousar.",
+    "feedbackCorrect": "Certo: o gloriar-se nas fraquezas visa esse repouso.",
+    "feedbackWrong": {
+      "false": "Paulo se gloria para que a força de Cristo repouse sobre ele."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "prompt": "A fraqueza, neste versículo, torna-se o lugar onde a força de Cristo pode repousar.",
+    "cue": "A fraqueza, neste versículo, torna-se o lugar onde a força de Cristo pode repousar."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Coríntios 12:9",
+    "learningObjective": "Sair sabendo que a graça basta e a força de Cristo se aperfeiçoa na fraqueza.",
+    "evidence": [
+      "2 Coríntios 12:9"
+    ],
+    "type": "tap",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "id": "corintios-pro-co-04-consolacao-02",
+    "passageText": "E disse-me: Basta-te a minha graça, pois a minha força se aperfeiçoa na fraqueza. Portanto, de boa vontade antes me gloriarei nas minhas fraquezas, para que a força de Cristo repouse sobre mim.",
+    "question": "Em 2 Coríntios 12:9, toque a palavra que falta em \"para que a força de ___ repouse sobre mim\"?",
+    "feedbackCorrect": "Exato: é a força de Cristo que repousa.",
+    "feedbackWrong": {
+      "a": "Graça é o que basta no início da fala.",
+      "c": "Vontade qualifica o gloriar-se de Paulo."
+    },
+    "template": "para que a força de ___ repouse sobre mim",
+    "options": [
+      {
+        "id": "a",
+        "text": "graça"
+      },
+      {
+        "id": "b",
+        "text": "Cristo"
+      },
+      {
+        "id": "c",
+        "text": "vontade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Em 2 Coríntios 12:9, toque a palavra que falta em \"para que a força de ___ repouse sobre mim\"?",
+    "cue": "Em 2 Coríntios 12:9, toque a palavra que falta em \"para que a força de ___ repouse sobre mim\"?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Coríntios 12:9",
+    "learningObjective": "Sair sabendo que a graça basta e a força de Cristo se aperfeiçoa na fraqueza.",
+    "evidence": [
+      "2 Coríntios 12:9"
+    ],
+    "type": "choice",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "id": "corintios-pro-co-04-consolacao-03",
+    "passageText": "E disse-me: Basta-te a minha graça, pois a minha força se aperfeiçoa na fraqueza. Portanto, de boa vontade antes me gloriarei nas minhas fraquezas, para que a força de Cristo repouse sobre mim.",
+    "question": "Qual leitura interpreta melhor o sentido de 2 Coríntios 12:9?",
+    "feedbackCorrect": "Certo: a graça não elimina a fraqueza; nela Cristo se mostra forte.",
+    "feedbackWrong": {
+      "b": "O versículo não trata a fraqueza como prova de abandono.",
+      "c": "Paulo não busca glória apostólica contra a graça.",
+      "d": "A força de Cristo não é um adorno opcional."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A graça basta: Cristo se aperfeiçoa onde o eu é fraco"
+      },
+      {
+        "id": "b",
+        "text": "A fraqueza prova que o Senhor se afastou de Paulo"
+      },
+      {
+        "id": "c",
+        "text": "O apóstolo deve esconder a fraqueza para guardar o ministério"
+      },
+      {
+        "id": "d",
+        "text": "A força de Cristo é extra, se a graça já bastou no começo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Qual leitura interpreta melhor o sentido de 2 Coríntios 12:9?",
+    "cue": "Qual leitura interpreta melhor o sentido de 2 Coríntios 12:9?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Coríntios 12:9",
+    "learningObjective": "Sair sabendo que a graça basta e a força de Cristo se aperfeiçoa na fraqueza.",
+    "evidence": [
+      "2 Coríntios 12:9"
+    ],
+    "type": "order",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "id": "corintios-pro-co-04-consolacao-04",
+    "passageText": "E disse-me: Basta-te a minha graça, pois a minha força se aperfeiçoa na fraqueza. Portanto, de boa vontade antes me gloriarei nas minhas fraquezas, para que a força de Cristo repouse sobre mim.",
+    "question": "Qual sequência revela o sentido de 2 Coríntios 12:9?",
+    "feedbackCorrect": "Certo: graça que basta, gloriar-se na fraqueza, Cristo que repousa.",
+    "feedbackWrong": {
+      "b": "Cristo que repousa é o fim visado.",
+      "c": "A graça suficiente inaugura a lógica."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Basta-te a minha graça"
+      },
+      {
+        "id": "b",
+        "text": "de boa vontade antes me gloriarei nas minhas fraquezas"
+      },
+      {
+        "id": "c",
+        "text": "para que a força de Cristo repouse sobre mim"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Qual sequência revela o sentido de 2 Coríntios 12:9?",
+    "cue": "Qual sequência revela o sentido de 2 Coríntios 12:9?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Coríntios 12:9",
+    "learningObjective": "Sair sabendo que a graça basta e a força de Cristo se aperfeiçoa na fraqueza.",
+    "evidence": [
+      "2 Coríntios 12:9"
+    ],
+    "type": "complete",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "id": "corintios-pro-co-04-consolacao-05",
+    "passageText": "E disse-me: Basta-te a minha graça, pois a minha força se aperfeiçoa na fraqueza. Portanto, de boa vontade antes me gloriarei nas minhas fraquezas, para que a força de Cristo repouse sobre mim.",
+    "question": "Complete: \"para que a força de Cristo ___ sobre mim\"",
+    "feedbackCorrect": "Certo: a força de Cristo deve repousar sobre ele.",
+    "feedbackWrong": {
+      "a": "Aperfeiçoa descreve a força na fraqueza, no início.",
+      "b": "Gloriarei é o verbo de Paulo, não de Cristo aqui."
+    },
+    "template": "para que a força de Cristo ___ sobre mim",
+    "options": [
+      {
+        "id": "a",
+        "text": "aperfeiçoa"
+      },
+      {
+        "id": "b",
+        "text": "gloriarei"
+      },
+      {
+        "id": "c",
+        "text": "repouse"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "prompt": "Complete: \"para que a força de Cristo ___ sobre mim\"",
+    "cue": "Complete: \"para que a força de Cristo ___ sobre mim\""
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Coríntios 12:9",
+    "learningObjective": "Sair sabendo que a graça basta e a força de Cristo se aperfeiçoa na fraqueza.",
+    "evidence": [
+      "2 Coríntios 12:9"
+    ],
+    "type": "connect",
+    "trail": "corintios",
+    "section": "co-04-consolacao",
+    "id": "corintios-pro-co-04-consolacao-06",
+    "passageText": "E disse-me: Basta-te a minha graça, pois a minha força se aperfeiçoa na fraqueza. Portanto, de boa vontade antes me gloriarei nas minhas fraquezas, para que a força de Cristo repouse sobre mim.",
+    "question": "O que 2 Coríntios 12:9 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: consolo cristão é graça suficiente na fraqueza.",
+    "feedbackWrong": {
+      "b": "O texto não ensina a negar a fraqueza.",
+      "c": "Não é trocar Cristo por autonomia."
+    },
+    "passageA": {
+      "ref": "2 Coríntios 12:9",
+      "text": "E disse-me: Basta-te a minha graça, pois a minha força se aperfeiçoa na fraqueza. Portanto, de boa vontade antes me gloriarei nas minhas fraquezas, para que a força de Cristo repouse sobre mim."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Consolação na fraqueza: a graça basta; a força de Cristo se aperfeiçoa ali."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Graça suficiente na fraqueza"
+      },
+      {
+        "id": "b",
+        "text": "Negar a fraqueza como fé"
+      },
+      {
+        "id": "c",
+        "text": "Autonomia sem o Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "O que 2 Coríntios 12:9 comunica que se liga a este contexto?",
+    "cue": "O que 2 Coríntios 12:9 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 3:11",
+    "learningObjective": "Sair sabendo que ninguém põe outro fundamento senão o já posto: Jesus Cristo.",
+    "evidence": [
+      "1 Coríntios 3:11"
+    ],
+    "type": "true_false",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "id": "corintios-sem-co-05-desafio-01",
+    "passageText": "Pois ninguém pode pôr outro fundamento, senão o que foi posto, que é Jesus Cristo.",
+    "question": "Ninguém pode pôr outro fundamento senão o que foi posto, que é Jesus Cristo.",
+    "feedbackCorrect": "Certo: o fundamento único já foi posto: Jesus Cristo.",
+    "feedbackWrong": {
+      "false": "Releia: ninguém pode pôr outro; o posto é Jesus Cristo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "prompt": "Ninguém pode pôr outro fundamento senão o que foi posto, que é Jesus Cristo.",
+    "cue": "Ninguém pode pôr outro fundamento senão o que foi posto, que é Jesus Cristo."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 3:11",
+    "learningObjective": "Sair sabendo que ninguém põe outro fundamento senão o já posto: Jesus Cristo.",
+    "evidence": [
+      "1 Coríntios 3:11"
+    ],
+    "type": "tap",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "id": "corintios-sem-co-05-desafio-02",
+    "passageText": "Pois ninguém pode pôr outro fundamento, senão o que foi posto, que é Jesus Cristo.",
+    "question": "Em 1 Coríntios 3:11, toque a palavra que falta em \"Pois ninguém pode pôr outro ___, senão o que foi posto\"?",
+    "feedbackCorrect": "Exato: o que não se substitui é o fundamento.",
+    "feedbackWrong": {
+      "b": "Ninguém é o sujeito da proibição, não esta lacuna.",
+      "c": "Jesus nomeia quem é o fundamento, no fim."
+    },
+    "template": "Pois ninguém pode pôr outro ___, senão o que foi posto",
+    "options": [
+      {
+        "id": "a",
+        "text": "fundamento"
+      },
+      {
+        "id": "b",
+        "text": "ninguém"
+      },
+      {
+        "id": "c",
+        "text": "Jesus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Em 1 Coríntios 3:11, toque a palavra que falta em \"Pois ninguém pode pôr outro ___, senão o que foi posto\"?",
+    "cue": "Em 1 Coríntios 3:11, toque a palavra que falta em \"Pois ninguém pode pôr outro ___, senão o que foi posto\"?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 3:11",
+    "learningObjective": "Sair sabendo que ninguém põe outro fundamento senão o já posto: Jesus Cristo.",
+    "evidence": [
+      "1 Coríntios 3:11"
+    ],
+    "type": "choice",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "id": "corintios-sem-co-05-desafio-03",
+    "passageText": "Pois ninguém pode pôr outro fundamento, senão o que foi posto, que é Jesus Cristo.",
+    "question": "Quem o texto identifica como o fundamento que foi posto?",
+    "feedbackCorrect": "Certo: o fundamento posto é Jesus Cristo.",
+    "feedbackWrong": {
+      "b": "O texto não nomeia Paulo como fundamento.",
+      "c": "Não é um fundamento ainda indefinido.",
+      "d": "Não aponta a assembleia de Corinto como base."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus Cristo"
+      },
+      {
+        "id": "b",
+        "text": "O apóstolo Paulo"
+      },
+      {
+        "id": "c",
+        "text": "Um fundamento ainda sem nome"
+      },
+      {
+        "id": "d",
+        "text": "A assembleia de Corinto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Quem o texto identifica como o fundamento que foi posto?",
+    "cue": "Quem o texto identifica como o fundamento que foi posto?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 3:11",
+    "learningObjective": "Sair sabendo que ninguém põe outro fundamento senão o já posto: Jesus Cristo.",
+    "evidence": [
+      "1 Coríntios 3:11"
+    ],
+    "type": "order",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "id": "corintios-sem-co-05-desafio-04",
+    "passageText": "Pois ninguém pode pôr outro fundamento, senão o que foi posto, que é Jesus Cristo.",
+    "question": "Qual sequência mostra a ordem dos fatos em 1 Coríntios 3:11?",
+    "feedbackCorrect": "Certo: proibição, fundamento já posto, nome de Jesus Cristo.",
+    "feedbackWrong": {
+      "b": "Jesus Cristo fecha a identificação.",
+      "c": "A proibição de outro fundamento abre o versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pois ninguém pode pôr outro fundamento"
+      },
+      {
+        "id": "b",
+        "text": "senão o que foi posto"
+      },
+      {
+        "id": "c",
+        "text": "que é Jesus Cristo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 1 Coríntios 3:11?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 1 Coríntios 3:11?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 3:11",
+    "learningObjective": "Sair sabendo que ninguém põe outro fundamento senão o já posto: Jesus Cristo.",
+    "evidence": [
+      "1 Coríntios 3:11"
+    ],
+    "type": "complete",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "id": "corintios-sem-co-05-desafio-05",
+    "passageText": "Pois ninguém pode pôr outro fundamento, senão o que foi posto, que é Jesus Cristo.",
+    "question": "Complete: \"senão o que foi ___, que é Jesus Cristo\"",
+    "feedbackCorrect": "Certo: o fundamento já foi posto.",
+    "feedbackWrong": {
+      "b": "Outro qualifica o fundamento indevido.",
+      "c": "Ninguém é o sujeito da frase inicial."
+    },
+    "template": "senão o que foi ___, que é Jesus Cristo",
+    "options": [
+      {
+        "id": "a",
+        "text": "posto"
+      },
+      {
+        "id": "b",
+        "text": "outro"
+      },
+      {
+        "id": "c",
+        "text": "ninguém"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Complete: \"senão o que foi ___, que é Jesus Cristo\"",
+    "cue": "Complete: \"senão o que foi ___, que é Jesus Cristo\""
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 3:11",
+    "learningObjective": "Sair sabendo que ninguém põe outro fundamento senão o já posto: Jesus Cristo.",
+    "evidence": [
+      "1 Coríntios 3:11"
+    ],
+    "type": "connect",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "id": "corintios-sem-co-05-desafio-06",
+    "passageText": "Pois ninguém pode pôr outro fundamento, senão o que foi posto, que é Jesus Cristo.",
+    "question": "O que 1 Coríntios 3:11 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a igreja se edifica sobre Cristo, não sobre nomes.",
+    "feedbackWrong": {
+      "b": "O texto não autoriza fundamento em personalidades.",
+      "c": "Não há vários fundamentos cristãos paralelos aqui."
+    },
+    "passageA": {
+      "ref": "1 Coríntios 3:11",
+      "text": "Pois ninguém pode pôr outro fundamento, senão o que foi posto, que é Jesus Cristo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Igreja edificada: um só fundamento — Jesus Cristo, não personalidades."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Um só fundamento: Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Fundamento em personalidades"
+      },
+      {
+        "id": "c",
+        "text": "Vários fundamentos da fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "O que 1 Coríntios 3:11 comunica que se liga a este contexto?",
+    "cue": "O que 1 Coríntios 3:11 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 3:11",
+    "learningObjective": "Sair sabendo que ninguém põe outro fundamento senão o já posto: Jesus Cristo.",
+    "evidence": [
+      "1 Coríntios 3:11"
+    ],
+    "type": "true_false",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "id": "corintios-cam-co-05-desafio-01",
+    "passageText": "Pois ninguém pode pôr outro fundamento, senão o que foi posto, que é Jesus Cristo.",
+    "question": "É lícito pôr, ao lado de Cristo, outro fundamento escolhido pela igreja.",
+    "feedbackCorrect": "Certo: ninguém pode pôr outro fundamento senão o já posto.",
+    "feedbackWrong": {
+      "true": "O versículo fecha essa porta: senão o que foi posto."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "prompt": "É lícito pôr, ao lado de Cristo, outro fundamento escolhido pela igreja.",
+    "cue": "É lícito pôr, ao lado de Cristo, outro fundamento escolhido pela igreja."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 3:11",
+    "learningObjective": "Sair sabendo que ninguém põe outro fundamento senão o já posto: Jesus Cristo.",
+    "evidence": [
+      "1 Coríntios 3:11"
+    ],
+    "type": "tap",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "id": "corintios-cam-co-05-desafio-02",
+    "passageText": "Pois ninguém pode pôr outro fundamento, senão o que foi posto, que é Jesus Cristo.",
+    "question": "Em 1 Coríntios 3:11, toque a palavra que falta em \"Pois ___ pode pôr outro fundamento\"?",
+    "feedbackCorrect": "Exato: ninguém pode pôr outro fundamento.",
+    "feedbackWrong": {
+      "b": "Posto descreve o fundamento já lançado.",
+      "c": "Cristo identifica quem ele é, no fim."
+    },
+    "template": "Pois ___ pode pôr outro fundamento",
+    "options": [
+      {
+        "id": "a",
+        "text": "ninguém"
+      },
+      {
+        "id": "b",
+        "text": "posto"
+      },
+      {
+        "id": "c",
+        "text": "Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Em 1 Coríntios 3:11, toque a palavra que falta em \"Pois ___ pode pôr outro fundamento\"?",
+    "cue": "Em 1 Coríntios 3:11, toque a palavra que falta em \"Pois ___ pode pôr outro fundamento\"?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 3:11",
+    "learningObjective": "Sair sabendo que ninguém põe outro fundamento senão o já posto: Jesus Cristo.",
+    "evidence": [
+      "1 Coríntios 3:11"
+    ],
+    "type": "choice",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "id": "corintios-cam-co-05-desafio-03",
+    "passageText": "Pois ninguém pode pôr outro fundamento, senão o que foi posto, que é Jesus Cristo.",
+    "question": "Como o versículo relaciona o fundamento já posto e qualquer outro?",
+    "feedbackCorrect": "Certo: o posto exclui substitutos; o nome é Jesus Cristo.",
+    "feedbackWrong": {
+      "b": "Não se trata de completar Cristo com outro alicerce.",
+      "c": "O fundamento não fica em aberto para a assembleia decidir.",
+      "d": "Personalidades não substituem o que foi posto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O que foi posto exclui qualquer outro; esse posto é Jesus Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Cristo é a base, mas a igreja pode acrescentar outro alicerce"
+      },
+      {
+        "id": "c",
+        "text": "O fundamento ainda será escolhido por voto da assembleia"
+      },
+      {
+        "id": "d",
+        "text": "Um líder amado pode ocupar o lugar de fundamento"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Como o versículo relaciona o fundamento já posto e qualquer outro?",
+    "cue": "Como o versículo relaciona o fundamento já posto e qualquer outro?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 3:11",
+    "learningObjective": "Sair sabendo que ninguém põe outro fundamento senão o já posto: Jesus Cristo.",
+    "evidence": [
+      "1 Coríntios 3:11"
+    ],
+    "type": "order",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "id": "corintios-cam-co-05-desafio-04",
+    "passageText": "Pois ninguém pode pôr outro fundamento, senão o que foi posto, que é Jesus Cristo.",
+    "question": "Como se encadeiam os eventos de 1 Coríntios 3:11?",
+    "feedbackCorrect": "Certo: ninguém põe outro, o posto já está, e esse é Cristo.",
+    "feedbackWrong": {
+      "b": "A identificação com Jesus Cristo fecha o versículo.",
+      "c": "A impossibilidade de outro fundamento vem primeiro."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "ninguém pode pôr outro fundamento"
+      },
+      {
+        "id": "b",
+        "text": "senão o que foi posto"
+      },
+      {
+        "id": "c",
+        "text": "que é Jesus Cristo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Como se encadeiam os eventos de 1 Coríntios 3:11?",
+    "cue": "Como se encadeiam os eventos de 1 Coríntios 3:11?"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 3:11",
+    "learningObjective": "Sair sabendo que ninguém põe outro fundamento senão o já posto: Jesus Cristo.",
+    "evidence": [
+      "1 Coríntios 3:11"
+    ],
+    "type": "complete",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "id": "corintios-cam-co-05-desafio-05",
+    "passageText": "Pois ninguém pode pôr outro fundamento, senão o que foi posto, que é Jesus Cristo.",
+    "question": "Complete: \"Pois ninguém pode pôr ___ fundamento, senão o que foi posto\"",
+    "feedbackCorrect": "Certo: não se põe outro fundamento.",
+    "feedbackWrong": {
+      "a": "Posto descreve o que já existe.",
+      "c": "Jesus identifica o fundamento no fim."
+    },
+    "template": "Pois ninguém pode pôr ___ fundamento, senão o que foi posto",
+    "options": [
+      {
+        "id": "a",
+        "text": "posto"
+      },
+      {
+        "id": "b",
+        "text": "outro"
+      },
+      {
+        "id": "c",
+        "text": "Jesus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "Complete: \"Pois ninguém pode pôr ___ fundamento, senão o que foi posto\"",
+    "cue": "Complete: \"Pois ninguém pode pôr ___ fundamento, senão o que foi posto\""
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 3:11",
+    "learningObjective": "Sair sabendo que ninguém põe outro fundamento senão o já posto: Jesus Cristo.",
+    "evidence": [
+      "1 Coríntios 3:11"
+    ],
+    "type": "connect",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "id": "corintios-cam-co-05-desafio-06",
+    "passageText": "Pois ninguém pode pôr outro fundamento, senão o que foi posto, que é Jesus Cristo.",
+    "question": "O que 1 Coríntios 3:11 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: edificar a igreja não é trocar o alicerce por nomes.",
+    "feedbackWrong": {
+      "a": "O texto não autoriza partido como fundamento.",
+      "c": "Não se trata de alicerce em disputa de líderes."
+    },
+    "passageA": {
+      "ref": "1 Coríntios 3:11",
+      "text": "Pois ninguém pode pôr outro fundamento, senão o que foi posto, que é Jesus Cristo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Igreja edificada: um só fundamento — Jesus Cristo, não personalidades."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Partido como alicerce"
+      },
+      {
+        "id": "b",
+        "text": "Igreja sobre Cristo só"
+      },
+      {
+        "id": "c",
+        "text": "Líderes como fundamento"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "prompt": "O que 1 Coríntios 3:11 comunica que se liga a este contexto?",
+    "cue": "O que 1 Coríntios 3:11 comunica que se liga a este contexto?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 3:11",
+    "learningObjective": "Sair sabendo que ninguém põe outro fundamento senão o já posto: Jesus Cristo.",
+    "evidence": [
+      "1 Coríntios 3:11"
+    ],
+    "type": "true_false",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "id": "corintios-pro-co-05-desafio-01",
+    "passageText": "Pois ninguém pode pôr outro fundamento, senão o que foi posto, que é Jesus Cristo.",
+    "question": "Edificar a igreja sobre personalidades é pôr outro fundamento além do que já foi posto em Jesus Cristo.",
+    "feedbackCorrect": "Certo: o versículo fecha a porta a qualquer outro alicerce.",
+    "feedbackWrong": {
+      "false": "Qualquer outro fundamento compete com o que é Jesus Cristo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "prompt": "Edificar a igreja sobre personalidades é pôr outro fundamento além do que já foi posto em Jesus Cristo.",
+    "cue": "Edificar a igreja sobre personalidades é pôr outro fundamento além do que já foi posto em Jesus Cristo."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 3:11",
+    "learningObjective": "Sair sabendo que ninguém põe outro fundamento senão o já posto: Jesus Cristo.",
+    "evidence": [
+      "1 Coríntios 3:11"
+    ],
+    "type": "tap",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "id": "corintios-pro-co-05-desafio-02",
+    "passageText": "Pois ninguém pode pôr outro fundamento, senão o que foi posto, que é Jesus Cristo.",
+    "question": "Em 1 Coríntios 3:11, toque a palavra que falta em \"que é ___ Cristo\"?",
+    "feedbackCorrect": "Exato: o fundamento posto é Jesus Cristo.",
+    "feedbackWrong": {
+      "b": "Fundamento é o que foi posto, não o nome próprio aqui.",
+      "c": "Outro qualifica o fundamento indevido."
+    },
+    "template": "que é ___ Cristo",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus"
+      },
+      {
+        "id": "b",
+        "text": "fundamento"
+      },
+      {
+        "id": "c",
+        "text": "outro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Em 1 Coríntios 3:11, toque a palavra que falta em \"que é ___ Cristo\"?",
+    "cue": "Em 1 Coríntios 3:11, toque a palavra que falta em \"que é ___ Cristo\"?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 3:11",
+    "learningObjective": "Sair sabendo que ninguém põe outro fundamento senão o já posto: Jesus Cristo.",
+    "evidence": [
+      "1 Coríntios 3:11"
+    ],
+    "type": "choice",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "id": "corintios-pro-co-05-desafio-03",
+    "passageText": "Pois ninguém pode pôr outro fundamento, senão o que foi posto, que é Jesus Cristo.",
+    "question": "Qual leitura interpreta melhor o sentido de 1 Coríntios 3:11?",
+    "feedbackCorrect": "Certo: Cristo já é o alicerce; partidos não o substituem.",
+    "feedbackWrong": {
+      "b": "O versículo não trata o fundamento como obra futura da igreja.",
+      "c": "Paulo, Apolo ou Cefas não ocupam esse lugar neste texto.",
+      "d": "Não é um chamado a vários cristos concorrentes."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A igreja não se funda em nomes: o alicerce já é Jesus Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Cada geração deve lançar de novo o fundamento da fé"
+      },
+      {
+        "id": "c",
+        "text": "O fundamento verdadeiro é o pregador mais eloquente"
+      },
+      {
+        "id": "d",
+        "text": "Pode haver vários fundamentos, desde que todos sejam cristãos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Qual leitura interpreta melhor o sentido de 1 Coríntios 3:11?",
+    "cue": "Qual leitura interpreta melhor o sentido de 1 Coríntios 3:11?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 3:11",
+    "learningObjective": "Sair sabendo que ninguém põe outro fundamento senão o já posto: Jesus Cristo.",
+    "evidence": [
+      "1 Coríntios 3:11"
+    ],
+    "type": "order",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "id": "corintios-pro-co-05-desafio-04",
+    "passageText": "Pois ninguém pode pôr outro fundamento, senão o que foi posto, que é Jesus Cristo.",
+    "question": "Qual sequência revela o sentido de 1 Coríntios 3:11?",
+    "feedbackCorrect": "Certo: impossível outro, o já posto, o nome de Jesus Cristo.",
+    "feedbackWrong": {
+      "b": "Jesus Cristo é a identificação final.",
+      "c": "A exclusão de outro fundamento vem primeiro."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "ninguém pode pôr outro fundamento"
+      },
+      {
+        "id": "b",
+        "text": "o que foi posto"
+      },
+      {
+        "id": "c",
+        "text": "que é Jesus Cristo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "Qual sequência revela o sentido de 1 Coríntios 3:11?",
+    "cue": "Qual sequência revela o sentido de 1 Coríntios 3:11?"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 3:11",
+    "learningObjective": "Sair sabendo que ninguém põe outro fundamento senão o já posto: Jesus Cristo.",
+    "evidence": [
+      "1 Coríntios 3:11"
+    ],
+    "type": "complete",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "id": "corintios-pro-co-05-desafio-05",
+    "passageText": "Pois ninguém pode pôr outro fundamento, senão o que foi posto, que é Jesus Cristo.",
+    "question": "Complete: \"senão o que foi posto, que é Jesus ___\"",
+    "feedbackCorrect": "Certo: o fundamento é Jesus Cristo.",
+    "feedbackWrong": {
+      "a": "Fundamento já foi dito no início.",
+      "b": "Posto descreve o ato, não o nome."
+    },
+    "template": "senão o que foi posto, que é Jesus ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "fundamento"
+      },
+      {
+        "id": "b",
+        "text": "posto"
+      },
+      {
+        "id": "c",
+        "text": "Cristo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "prompt": "Complete: \"senão o que foi posto, que é Jesus ___\"",
+    "cue": "Complete: \"senão o que foi posto, que é Jesus ___\""
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 3:11",
+    "learningObjective": "Sair sabendo que ninguém põe outro fundamento senão o já posto: Jesus Cristo.",
+    "evidence": [
+      "1 Coríntios 3:11"
+    ],
+    "type": "connect",
+    "trail": "corintios",
+    "section": "co-05-desafio",
+    "id": "corintios-pro-co-05-desafio-06",
+    "passageText": "Pois ninguém pode pôr outro fundamento, senão o que foi posto, que é Jesus Cristo.",
+    "question": "O que 1 Coríntios 3:11 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: edificação cristã recusa alicerce em personalidades.",
+    "feedbackWrong": {
+      "b": "O texto não faz do carisma o fundamento.",
+      "c": "Não há segundo alicerce legítimo ao lado de Cristo."
+    },
+    "passageA": {
+      "ref": "1 Coríntios 3:11",
+      "text": "Pois ninguém pode pôr outro fundamento, senão o que foi posto, que é Jesus Cristo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Igreja edificada: um só fundamento — Jesus Cristo, não personalidades."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Edificar só sobre Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Edificar sobre o carisma"
+      },
+      {
+        "id": "c",
+        "text": "Segundo alicerce legítimo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "prompt": "O que 1 Coríntios 3:11 comunica que se liga a este contexto?",
+    "cue": "O que 1 Coríntios 3:11 comunica que se liga a este contexto?"
+  }
+]

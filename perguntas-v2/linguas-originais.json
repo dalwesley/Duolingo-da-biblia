@@ -1,0 +1,1559 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 19:19–20",
+    "learningObjective": "Ver que o título da cruz foi escrito em hebraico, latim e grego.",
+    "evidence": ["João 19:19", "João 19:20"],
+    "type": "true_false",
+    "question": "Pilatos escreveu também um título e o mandou colocar no alto da cruz.",
+    "prompt": "Pilatos escreveu também um título e o mandou colocar no alto da cruz.",
+    "cue": "Pilatos escreveu também um título e o mandou colocar no alto da cruz.",
+    "feedbackCorrect": "Certo: João 19:19 atribui a Pilatos o título no alto da cruz.",
+    "feedbackWrong": {
+      "false": "O texto diz que Pilatos escreveu o título e o mandou colocar no alto da cruz."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego.",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "id": "linguas-originais-sem-lo-01-biblia-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 19:19–20",
+    "learningObjective": "Ver que o título da cruz foi escrito em hebraico, latim e grego.",
+    "evidence": ["João 19:19", "João 19:20"],
+    "type": "tap",
+    "question": "Em João 19:19–20, toque a palavra que falta em \"e estava escrito em ___, latim e grego\"?",
+    "prompt": "Em João 19:19–20, toque a palavra que falta em \"e estava escrito em ___, latim e grego\"?",
+    "cue": "Em João 19:19–20, toque a palavra que falta em \"e estava escrito em ___, latim e grego\"?",
+    "feedbackCorrect": "Exato: a primeira língua nomeada é o hebraico.",
+    "feedbackWrong": {
+      "b": "\"latim\" vem depois; a lacuna pede a primeira língua da lista.",
+      "c": "\"grego\" é a terceira língua; a lacuna está no início da lista."
+    },
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego.",
+    "template": "e estava escrito em ___, latim e grego",
+    "options": [
+      {"id": "a", "text": "hebraico"},
+      {"id": "b", "text": "latim"},
+      {"id": "c", "text": "grego"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "id": "linguas-originais-sem-lo-01-biblia-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 19:19–20",
+    "learningObjective": "Ver que o título da cruz foi escrito em hebraico, latim e grego.",
+    "evidence": ["João 19:19", "João 19:20"],
+    "type": "choice",
+    "question": "Segundo João 19:19–20, em quais línguas estava escrito o título da cruz?",
+    "prompt": "Segundo João 19:19–20, em quais línguas estava escrito o título da cruz?",
+    "cue": "Segundo João 19:19–20, em quais línguas estava escrito o título da cruz?",
+    "feedbackCorrect": "Certo: o texto lista hebraico, latim e grego.",
+    "feedbackWrong": {
+      "a": "O texto não restringe o título ao hebraico; há três línguas.",
+      "c": "João não menciona aramaico neste versículo; lista hebraico, latim e grego.",
+      "d": "O latim aparece, mas junto com hebraico e grego, não sozinho."
+    },
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego.",
+    "options": [
+      {"id": "a", "text": "Somente em hebraico, a língua dos judeus."},
+      {"id": "b", "text": "Em hebraico, latim e grego."},
+      {"id": "c", "text": "Somente em grego e aramaico."},
+      {"id": "d", "text": "Somente em latim, a língua de Roma."}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "id": "linguas-originais-sem-lo-01-biblia-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 19:19–20",
+    "learningObjective": "Ver que o título da cruz foi escrito em hebraico, latim e grego.",
+    "evidence": ["João 19:19", "João 19:20"],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em João 19:19–20?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em João 19:19–20?",
+    "cue": "Qual sequência mostra a ordem dos fatos em João 19:19–20?",
+    "feedbackCorrect": "Certo: título, conteúdo e línguas seguem essa ordem no texto.",
+    "feedbackWrong": {
+      "b": "Esse trecho não é o primeiro: vem depois da ordem de Pilatos.",
+      "c": "As línguas fecham o relato; não abrem a sequência."
+    },
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego.",
+    "options": [
+      {"id": "a", "text": "Pilatos escreveu também um título e o mandou colocar no alto da cruz"},
+      {"id": "b", "text": "nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS"},
+      {"id": "c", "text": "e estava escrito em hebraico, latim e grego"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": ["a", "b", "c"],
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "id": "linguas-originais-sem-lo-01-biblia-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 19:19–20",
+    "learningObjective": "Ver que o título da cruz foi escrito em hebraico, latim e grego.",
+    "evidence": ["João 19:19", "João 19:20"],
+    "type": "complete",
+    "question": "Complete João 19:19: \"Pilatos escreveu também um ___ e o mandou colocar no alto da cruz\".",
+    "prompt": "Complete João 19:19: \"Pilatos escreveu também um ___ e o mandou colocar no alto da cruz\".",
+    "cue": "Complete João 19:19: \"Pilatos escreveu também um ___ e o mandou colocar no alto da cruz\".",
+    "feedbackCorrect": "Exato: o que Pilatos escreve e coloca é um título.",
+    "feedbackWrong": {
+      "a": "\"cruz\" é o lugar do título, não o que Pilatos escreveu.",
+      "c": "\"latim\" é uma das línguas do título, não o objeto escrito."
+    },
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego.",
+    "template": "Pilatos escreveu também um ___ e o mandou colocar no alto da cruz",
+    "options": [
+      {"id": "a", "text": "cruz"},
+      {"id": "b", "text": "título"},
+      {"id": "c", "text": "latim"}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "id": "linguas-originais-sem-lo-01-biblia-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 19:19–20",
+    "learningObjective": "Ver que o título da cruz foi escrito em hebraico, latim e grego.",
+    "evidence": ["João 19:19", "João 19:20"],
+    "type": "connect",
+    "question": "O que João 19:19–20 comunica que se liga a este contexto?",
+    "prompt": "O que João 19:19–20 comunica que se liga a este contexto?",
+    "cue": "O que João 19:19–20 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o título anuncia o Rei em hebraico, latim e grego.",
+    "feedbackWrong": {
+      "b": "O texto lista três línguas; não reduz o anúncio ao hebraico.",
+      "c": "Pilatos escreve um título público, não uma nota escondida."
+    },
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego.",
+    "passageA": {
+      "ref": "João 19:19–20",
+      "text": "e estava escrito em hebraico, latim e grego."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O título na cruz já anuncia o Rei em hebraico, latim e grego: as línguas da Escritura e do mundo."
+    },
+    "options": [
+      {"id": "a", "text": "Rei anunciado em três línguas"},
+      {"id": "b", "text": "Anúncio só em hebraico sagrado"},
+      {"id": "c", "text": "Mensagem oculta aos peregrinos"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "id": "linguas-originais-sem-lo-01-biblia-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 19:19–20",
+    "learningObjective": "Ver que o título da cruz foi escrito em hebraico, latim e grego.",
+    "evidence": ["João 19:19", "João 19:20"],
+    "type": "true_false",
+    "question": "O título da cruz estava escrito somente em hebraico, para que só os judeus o lessem.",
+    "prompt": "O título da cruz estava escrito somente em hebraico, para que só os judeus o lessem.",
+    "cue": "O título da cruz estava escrito somente em hebraico, para que só os judeus o lessem.",
+    "feedbackCorrect": "Certo: o título também estava em latim e grego, não só em hebraico.",
+    "feedbackWrong": {
+      "true": "João 19:20 diz hebraico, latim e grego; não restringe ao hebraico."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego.",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "id": "linguas-originais-cam-lo-01-biblia-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 19:19–20",
+    "learningObjective": "Ver que o título da cruz foi escrito em hebraico, latim e grego.",
+    "evidence": ["João 19:19", "João 19:20"],
+    "type": "tap",
+    "question": "Em João 19:19–20, toque a palavra que falta em \"estava escrito em hebraico, ___ e grego\"?",
+    "prompt": "Em João 19:19–20, toque a palavra que falta em \"estava escrito em hebraico, ___ e grego\"?",
+    "cue": "Em João 19:19–20, toque a palavra que falta em \"estava escrito em hebraico, ___ e grego\"?",
+    "feedbackCorrect": "Exato: o latim é a língua do meio na lista de João.",
+    "feedbackWrong": {
+      "a": "\"hebraico\" já está antes da lacuna; falta o latim.",
+      "c": "\"cruz\" é o lugar do título, não uma das três línguas."
+    },
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego.",
+    "template": "estava escrito em hebraico, ___ e grego",
+    "options": [
+      {"id": "a", "text": "hebraico"},
+      {"id": "b", "text": "latim"},
+      {"id": "c", "text": "cruz"}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "id": "linguas-originais-cam-lo-01-biblia-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 19:19–20",
+    "learningObjective": "Ver que o título da cruz foi escrito em hebraico, latim e grego.",
+    "evidence": ["João 19:19", "João 19:20"],
+    "type": "choice",
+    "question": "Por que muitos judeus puderam ler o título, segundo o encadeamento de João 19:20?",
+    "prompt": "Por que muitos judeus puderam ler o título, segundo o encadeamento de João 19:20?",
+    "cue": "Por que muitos judeus puderam ler o título, segundo o encadeamento de João 19:20?",
+    "feedbackCorrect": "Certo: o lugar da cruz era perto da cidade, e o título era legível.",
+    "feedbackWrong": {
+      "b": "O texto não fala de uma leitura só dos discípulos no cenáculo.",
+      "c": "Pilatos manda colocar o título no alto da cruz, não escondê-lo.",
+      "d": "A inscrição é escrita para ser lida, não sussurrada em particular."
+    },
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego.",
+    "options": [
+      {"id": "a", "text": "Porque o lugar da cruz ficava perto da cidade."},
+      {"id": "b", "text": "Porque só os discípulos tinham cópia do título."},
+      {"id": "c", "text": "Porque Pilatos escondeu o título no templo."},
+      {"id": "d", "text": "Porque a inscrição foi dita só em voz baixa."}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "id": "linguas-originais-cam-lo-01-biblia-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 19:19–20",
+    "learningObjective": "Ver que o título da cruz foi escrito em hebraico, latim e grego.",
+    "evidence": ["João 19:19", "João 19:20"],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de João 19:19–20?",
+    "prompt": "Como se encadeiam os eventos de João 19:19–20?",
+    "cue": "Como se encadeiam os eventos de João 19:19–20?",
+    "feedbackCorrect": "Certo: leitura, proximidade da cidade e línguas se encadeiam assim.",
+    "feedbackWrong": {
+      "b": "A proximidade da cidade explica a leitura; não vem por último.",
+      "c": "As três línguas fecham o encadeamento, não o abrem."
+    },
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego.",
+    "options": [
+      {"id": "a", "text": "Muitos judeus leram esse título"},
+      {"id": "b", "text": "porque o lugar em que Jesus fora crucificado era perto da cidade"},
+      {"id": "c", "text": "e estava escrito em hebraico, latim e grego"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": ["a", "b", "c"],
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "id": "linguas-originais-cam-lo-01-biblia-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 19:19–20",
+    "learningObjective": "Ver que o título da cruz foi escrito em hebraico, latim e grego.",
+    "evidence": ["João 19:19", "João 19:20"],
+    "type": "complete",
+    "question": "Complete João 19:19: \"Pilatos escreveu também um título e o mandou colocar no ___ da cruz\".",
+    "prompt": "Complete João 19:19: \"Pilatos escreveu também um título e o mandou colocar no ___ da cruz\".",
+    "cue": "Complete João 19:19: \"Pilatos escreveu também um título e o mandou colocar no ___ da cruz\".",
+    "feedbackCorrect": "Exato: o título vai para o alto da cruz, visível.",
+    "feedbackWrong": {
+      "b": "\"título\" é o que foi escrito, não o lugar na cruz.",
+      "c": "\"latim\" é língua da inscrição, não a posição do título."
+    },
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego.",
+    "template": "Pilatos escreveu também um título e o mandou colocar no ___ da cruz",
+    "options": [
+      {"id": "a", "text": "alto"},
+      {"id": "b", "text": "título"},
+      {"id": "c", "text": "latim"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "id": "linguas-originais-cam-lo-01-biblia-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 19:19–20",
+    "learningObjective": "Ver que o título da cruz foi escrito em hebraico, latim e grego.",
+    "evidence": ["João 19:19", "João 19:20"],
+    "type": "connect",
+    "question": "O que João 19:20 comunica que se liga a este contexto?",
+    "prompt": "O que João 19:20 comunica que se liga a este contexto?",
+    "cue": "O que João 19:20 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a inscrição pública liga o Rei às línguas do mundo.",
+    "feedbackWrong": {
+      "a": "O texto não restringe o anúncio a um círculo privado.",
+      "c": "As línguas servem à leitura, não a um código de guarda."
+    },
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego.",
+    "passageA": {
+      "ref": "João 19:20",
+      "text": "Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O título na cruz já anuncia o Rei em hebraico, latim e grego: as línguas da Escritura e do mundo."
+    },
+    "options": [
+      {"id": "a", "text": "Leitura só no círculo íntimo"},
+      {"id": "b", "text": "Anúncio público em várias línguas"},
+      {"id": "c", "text": "Senha militar contra peregrinos"}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "id": "linguas-originais-cam-lo-01-biblia-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 19:19–20",
+    "learningObjective": "Ver que o título da cruz foi escrito em hebraico, latim e grego.",
+    "evidence": ["João 19:19", "João 19:20"],
+    "type": "true_false",
+    "question": "O título na cruz anuncia o Rei em hebraico, latim e grego, línguas da Escritura e do mundo.",
+    "prompt": "O título na cruz anuncia o Rei em hebraico, latim e grego, línguas da Escritura e do mundo.",
+    "cue": "O título na cruz anuncia o Rei em hebraico, latim e grego, línguas da Escritura e do mundo.",
+    "feedbackCorrect": "Certo: o texto sustenta um anúncio trilingue do Rei.",
+    "feedbackWrong": {
+      "false": "João 19:20 nomeia as três línguas; o título é anúncio público do Rei."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego.",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "id": "linguas-originais-pro-lo-01-biblia-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 19:19–20",
+    "learningObjective": "Ver que o título da cruz foi escrito em hebraico, latim e grego.",
+    "evidence": ["João 19:19", "João 19:20"],
+    "type": "tap",
+    "question": "Em João 19:19–20, toque a palavra que falta em \"estava escrito em hebraico, latim e ___\"?",
+    "prompt": "Em João 19:19–20, toque a palavra que falta em \"estava escrito em hebraico, latim e ___\"?",
+    "cue": "Em João 19:19–20, toque a palavra que falta em \"estava escrito em hebraico, latim e ___\"?",
+    "feedbackCorrect": "Exato: o grego fecha a tríade das línguas do título.",
+    "feedbackWrong": {
+      "a": "\"hebraico\" abre a lista; a lacuna pede a última língua.",
+      "b": "\"Pilatos\" escreveu o título; não é a terceira língua."
+    },
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego.",
+    "template": "estava escrito em hebraico, latim e ___",
+    "options": [
+      {"id": "a", "text": "hebraico"},
+      {"id": "b", "text": "Pilatos"},
+      {"id": "c", "text": "grego"}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "id": "linguas-originais-pro-lo-01-biblia-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 19:19–20",
+    "learningObjective": "Ver que o título da cruz foi escrito em hebraico, latim e grego.",
+    "evidence": ["João 19:19", "João 19:20"],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o título trilingue em João 19:19–20?",
+    "prompt": "Qual leitura interpreta melhor o título trilingue em João 19:19–20?",
+    "cue": "Qual leitura interpreta melhor o título trilingue em João 19:19–20?",
+    "feedbackCorrect": "Certo: o Rei é anunciado nas línguas da Escritura e do mundo.",
+    "feedbackWrong": {
+      "a": "Hebraico, latim e grego contradizem um anúncio só à elite.",
+      "b": "O título está no alto da cruz, perto da cidade: é público, não código.",
+      "d": "As línguas servem à leitura de muitos, não a um enfeite vazio."
+    },
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego.",
+    "options": [
+      {"id": "a", "text": "O Rei foi anunciado só à elite que lia hebraico."},
+      {"id": "b", "text": "A inscrição era um código secreto para os apóstolos."},
+      {"id": "c", "text": "O Rei é anunciado nas línguas da Escritura e do mundo."},
+      {"id": "d", "text": "As três línguas servem só como enfeite político de Roma."}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "id": "linguas-originais-pro-lo-01-biblia-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 19:19–20",
+    "learningObjective": "Ver que o título da cruz foi escrito em hebraico, latim e grego.",
+    "evidence": ["João 19:19", "João 19:20"],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de João 19:19–20?",
+    "prompt": "Qual sequência revela o sentido de João 19:19–20?",
+    "cue": "Qual sequência revela o sentido de João 19:19–20?",
+    "feedbackCorrect": "Certo: conteúdo régio, leitura pública e tríade de línguas.",
+    "feedbackWrong": {
+      "b": "A leitura dos judeus vem depois do conteúdo do título.",
+      "c": "As línguas explicam a leitura ampla; não abrem o sentido."
+    },
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego.",
+    "options": [
+      {"id": "a", "text": "nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS"},
+      {"id": "b", "text": "Muitos judeus leram esse título"},
+      {"id": "c", "text": "e estava escrito em hebraico, latim e grego"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": ["a", "b", "c"],
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "id": "linguas-originais-pro-lo-01-biblia-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 19:19–20",
+    "learningObjective": "Ver que o título da cruz foi escrito em hebraico, latim e grego.",
+    "evidence": ["João 19:19", "João 19:20"],
+    "type": "complete",
+    "question": "Complete João 19:20: \"porque o lugar em que Jesus fora crucificado era perto da ___\"?",
+    "prompt": "Complete João 19:20: \"porque o lugar em que Jesus fora crucificado era perto da ___\"?",
+    "cue": "Complete João 19:20: \"porque o lugar em que Jesus fora crucificado era perto da ___\"?",
+    "feedbackCorrect": "Exato: a proximidade da cidade torna o título público.",
+    "feedbackWrong": {
+      "a": "\"cruz\" já está na frase como lugar da crucificação, não desta lacuna.",
+      "b": "\"título\" é o que se lê; a lacuna pede \"cidade\"."
+    },
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego.",
+    "template": "porque o lugar em que Jesus fora crucificado era perto da ___",
+    "options": [
+      {"id": "a", "text": "cruz"},
+      {"id": "b", "text": "título"},
+      {"id": "c", "text": "cidade"}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "id": "linguas-originais-pro-lo-01-biblia-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 19:19–20",
+    "learningObjective": "Ver que o título da cruz foi escrito em hebraico, latim e grego.",
+    "evidence": ["João 19:19", "João 19:20"],
+    "type": "connect",
+    "question": "O que João 19:19–20 comunica que se liga a este contexto?",
+    "prompt": "O que João 19:19–20 comunica que se liga a este contexto?",
+    "cue": "O que João 19:19–20 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o título trilingue anuncia o Rei ao mundo leitor.",
+    "feedbackWrong": {
+      "a": "O texto não trata a tríade como enfeite vazio de Roma.",
+      "b": "Hebraico, latim e grego impedem reduzir o anúncio a um só povo."
+    },
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego.",
+    "passageA": {
+      "ref": "João 19:19–20",
+      "text": "nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. [...] e estava escrito em hebraico, latim e grego."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O título na cruz já anuncia o Rei em hebraico, latim e grego: as línguas da Escritura e do mundo."
+    },
+    "options": [
+      {"id": "a", "text": "Ornato vazio do império"},
+      {"id": "b", "text": "Rei só para um povo"},
+      {"id": "c", "text": "Rei nas línguas do mundo"}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "linguas-originais",
+    "section": "lo-01-biblia",
+    "id": "linguas-originais-pro-lo-01-biblia-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 14:9",
+    "learningObjective": "Perceber que palavra ininteligível é falar ao ar; traduzir com cuidado é amor.",
+    "evidence": ["1 Coríntios 14:9"],
+    "type": "true_false",
+    "question": "Se a língua não profere discurso fácil de se entender, estareis falando ao ar.",
+    "prompt": "Se a língua não profere discurso fácil de se entender, estareis falando ao ar.",
+    "cue": "Se a língua não profere discurso fácil de se entender, estareis falando ao ar.",
+    "feedbackCorrect": "Certo: é a conclusão de Paulo em 1 Coríntios 14:9.",
+    "feedbackWrong": {
+      "false": "Paulo afirma isso: sem discurso fácil de entender, fala-se ao ar."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "id": "linguas-originais-sem-lo-02-traducao-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 14:9",
+    "learningObjective": "Perceber que palavra ininteligível é falar ao ar; traduzir com cuidado é amor.",
+    "evidence": ["1 Coríntios 14:9"],
+    "type": "tap",
+    "question": "Em 1 Coríntios 14:9, toque a palavra que falta em \"se pela língua não proferirdes discurso fácil de se ___\"?",
+    "prompt": "Em 1 Coríntios 14:9, toque a palavra que falta em \"se pela língua não proferirdes discurso fácil de se ___\"?",
+    "cue": "Em 1 Coríntios 14:9, toque a palavra que falta em \"se pela língua não proferirdes discurso fácil de se ___\"?",
+    "feedbackCorrect": "Exato: o discurso precisa ser fácil de se entender.",
+    "feedbackWrong": {
+      "a": "\"língua\" já está na frase; a lacuna pede \"entender\".",
+      "c": "\"fácil\" qualifica o discurso; a lacuna é o verbo \"entender\"."
+    },
+    "passageText": "Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "template": "se pela língua não proferirdes discurso fácil de se ___",
+    "options": [
+      {"id": "a", "text": "língua"},
+      {"id": "b", "text": "entender"},
+      {"id": "c", "text": "fácil"}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "id": "linguas-originais-sem-lo-02-traducao-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 14:9",
+    "learningObjective": "Perceber que palavra ininteligível é falar ao ar; traduzir com cuidado é amor.",
+    "evidence": ["1 Coríntios 14:9"],
+    "type": "choice",
+    "question": "O que Paulo afirma se a língua não profere discurso fácil de se entender?",
+    "prompt": "O que Paulo afirma se a língua não profere discurso fácil de se entender?",
+    "cue": "O que Paulo afirma se a língua não profere discurso fácil de se entender?",
+    "feedbackCorrect": "Certo: sem clareza, estareis falando ao ar.",
+    "feedbackWrong": {
+      "a": "Paulo não substitui clareza por zelo; exige discurso inteligível.",
+      "b": "Falar ao ar é o problema, não uma forma superior de edificar.",
+      "d": "O versículo não restringe a compreensão ao hebraico."
+    },
+    "passageText": "Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "options": [
+      {"id": "a", "text": "O zelo substitui qualquer necessidade de clareza."},
+      {"id": "b", "text": "Falar ao ar edifica mais do que explicar."},
+      {"id": "c", "text": "Estareis falando ao ar."},
+      {"id": "d", "text": "Só o hebraico pode ser compreendido."}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "id": "linguas-originais-sem-lo-02-traducao-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 14:9",
+    "learningObjective": "Perceber que palavra ininteligível é falar ao ar; traduzir com cuidado é amor.",
+    "evidence": ["1 Coríntios 14:9"],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em 1 Coríntios 14:9?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 1 Coríntios 14:9?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 1 Coríntios 14:9?",
+    "feedbackCorrect": "Certo: condição, pergunta e conclusão seguem essa ordem.",
+    "feedbackWrong": {
+      "b": "A pergunta sobre conhecer o que se fala vem depois da condição.",
+      "c": "\"Falando ao ar\" é a conclusão, não o início do versículo."
+    },
+    "passageText": "Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "options": [
+      {"id": "a", "text": "se pela língua não proferirdes discurso fácil de se entender"},
+      {"id": "b", "text": "como se conhecerá o que se fala"},
+      {"id": "c", "text": "Pois estareis falando ao ar"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": ["a", "b", "c"],
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "id": "linguas-originais-sem-lo-02-traducao-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 14:9",
+    "learningObjective": "Perceber que palavra ininteligível é falar ao ar; traduzir com cuidado é amor.",
+    "evidence": ["1 Coríntios 14:9"],
+    "type": "complete",
+    "question": "Complete 1 Coríntios 14:9: \"Pois estareis falando ao ___\"?",
+    "prompt": "Complete 1 Coríntios 14:9: \"Pois estareis falando ao ___\"?",
+    "cue": "Complete 1 Coríntios 14:9: \"Pois estareis falando ao ___\"?",
+    "feedbackCorrect": "Exato: sem entendimento, a fala vai ao ar.",
+    "feedbackWrong": {
+      "b": "\"vós\" é o vocativo inicial, não o destino da fala inútil.",
+      "c": "\"língua\" é o instrumento; a conclusão é \"ao ar\"."
+    },
+    "passageText": "Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "template": "Pois estareis falando ao ___",
+    "options": [
+      {"id": "a", "text": "ar"},
+      {"id": "b", "text": "vós"},
+      {"id": "c", "text": "língua"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "id": "linguas-originais-sem-lo-02-traducao-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "1 Coríntios 14:9",
+    "learningObjective": "Perceber que palavra ininteligível é falar ao ar; traduzir com cuidado é amor.",
+    "evidence": ["1 Coríntios 14:9"],
+    "type": "connect",
+    "question": "O que 1 Coríntios 14:9 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Coríntios 14:9 comunica que se liga a este contexto?",
+    "cue": "O que 1 Coríntios 14:9 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: palavra que não se entende é falar ao ar.",
+    "feedbackWrong": {
+      "a": "Paulo não elogia o discurso opaco; exige que se conheça o que se fala.",
+      "b": "O versículo liga clareza à compreensão, não ao volume da voz."
+    },
+    "passageText": "Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "passageA": {
+      "ref": "1 Coríntios 14:9",
+      "text": "se pela língua não proferirdes discurso fácil de se entender [...] Pois estareis falando ao ar."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Traduzir com cuidado é amor ao próximo: palavra que não se entende é falar ao ar."
+    },
+    "options": [
+      {"id": "a", "text": "Opacidade como marca espiritual"},
+      {"id": "b", "text": "Volume alto substitui sentido"},
+      {"id": "c", "text": "Palavra opaca é falar ao ar"}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "id": "linguas-originais-sem-lo-02-traducao-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 14:9",
+    "learningObjective": "Perceber que palavra ininteligível é falar ao ar; traduzir com cuidado é amor.",
+    "evidence": ["1 Coríntios 14:9"],
+    "type": "true_false",
+    "question": "Paulo ensina que falar sem ser entendido ainda edifica, porque o zelo substitui a clareza.",
+    "prompt": "Paulo ensina que falar sem ser entendido ainda edifica, porque o zelo substitui a clareza.",
+    "cue": "Paulo ensina que falar sem ser entendido ainda edifica, porque o zelo substitui a clareza.",
+    "feedbackCorrect": "Certo: sem discurso fácil de entender, fala-se ao ar, não se edifica.",
+    "feedbackWrong": {
+      "true": "1 Coríntios 14:9 liga falta de clareza a falar ao ar, não a edificação."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "id": "linguas-originais-cam-lo-02-traducao-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 14:9",
+    "learningObjective": "Perceber que palavra ininteligível é falar ao ar; traduzir com cuidado é amor.",
+    "evidence": ["1 Coríntios 14:9"],
+    "type": "tap",
+    "question": "Em 1 Coríntios 14:9, toque a palavra que falta em \"se pela língua não proferirdes discurso ___ de se entender\"?",
+    "prompt": "Em 1 Coríntios 14:9, toque a palavra que falta em \"se pela língua não proferirdes discurso ___ de se entender\"?",
+    "cue": "Em 1 Coríntios 14:9, toque a palavra que falta em \"se pela língua não proferirdes discurso ___ de se entender\"?",
+    "feedbackCorrect": "Exato: o discurso precisa ser fácil, não obscuro.",
+    "feedbackWrong": {
+      "b": "\"vós\" é o vocativo; a lacuna pede \"fácil\".",
+      "c": "\"Pois\" introduz a conclusão; não preenche esta lacuna."
+    },
+    "passageText": "Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "template": "se pela língua não proferirdes discurso ___ de se entender",
+    "options": [
+      {"id": "a", "text": "fácil"},
+      {"id": "b", "text": "vós"},
+      {"id": "c", "text": "Pois"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "id": "linguas-originais-cam-lo-02-traducao-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 14:9",
+    "learningObjective": "Perceber que palavra ininteligível é falar ao ar; traduzir com cuidado é amor.",
+    "evidence": ["1 Coríntios 14:9"],
+    "type": "choice",
+    "question": "Por que o discurso ininteligível falha, segundo a lógica de 1 Coríntios 14:9?",
+    "prompt": "Por que o discurso ininteligível falha, segundo a lógica de 1 Coríntios 14:9?",
+    "cue": "Por que o discurso ininteligível falha, segundo a lógica de 1 Coríntios 14:9?",
+    "feedbackCorrect": "Certo: sem clareza, não se conhece o que se fala.",
+    "feedbackWrong": {
+      "a": "Paulo não diz que o ar transmite sentido espiritual oculto.",
+      "b": "Ele não proíbe língua; exige que o discurso se entenda.",
+      "c": "O fervor não dispensa a tradução; sem clareza, fala-se ao ar."
+    },
+    "passageText": "Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "options": [
+      {"id": "a", "text": "Porque o ar transmite melhor o sentido espiritual."},
+      {"id": "b", "text": "Porque Paulo proíbe o uso de qualquer língua."},
+      {"id": "c", "text": "Porque traduzir é desnecessário se há fervor."},
+      {"id": "d", "text": "Porque ninguém conhece o que se fala sem clareza."}
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "id": "linguas-originais-cam-lo-02-traducao-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 14:9",
+    "learningObjective": "Perceber que palavra ininteligível é falar ao ar; traduzir com cuidado é amor.",
+    "evidence": ["1 Coríntios 14:9"],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de 1 Coríntios 14:9?",
+    "prompt": "Como se encadeiam os eventos de 1 Coríntios 14:9?",
+    "cue": "Como se encadeiam os eventos de 1 Coríntios 14:9?",
+    "feedbackCorrect": "Certo: vocativo, condição da língua e falar ao ar se encadeiam.",
+    "feedbackWrong": {
+      "b": "A condição sobre a língua vem depois de \"Assim também vós\".",
+      "c": "Falar ao ar é o resultado, não o ponto de partida."
+    },
+    "passageText": "Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "options": [
+      {"id": "a", "text": "Assim também vós"},
+      {"id": "b", "text": "se pela língua não proferirdes discurso fácil de se entender"},
+      {"id": "c", "text": "Pois estareis falando ao ar"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": ["a", "b", "c"],
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "id": "linguas-originais-cam-lo-02-traducao-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 14:9",
+    "learningObjective": "Perceber que palavra ininteligível é falar ao ar; traduzir com cuidado é amor.",
+    "evidence": ["1 Coríntios 14:9"],
+    "type": "complete",
+    "question": "Complete 1 Coríntios 14:9: \"Assim também vós, se pela ___ não proferirdes discurso fácil de se entender\".",
+    "prompt": "Complete 1 Coríntios 14:9: \"Assim também vós, se pela ___ não proferirdes discurso fácil de se entender\".",
+    "cue": "Complete 1 Coríntios 14:9: \"Assim também vós, se pela ___ não proferirdes discurso fácil de se entender\".",
+    "feedbackCorrect": "Exato: o instrumento em vista é a língua.",
+    "feedbackWrong": {
+      "a": "\"ar\" é o destino da fala inútil, não o instrumento desta cláusula.",
+      "b": "\"discurso\" é o que se profere; a lacuna pede \"língua\"."
+    },
+    "passageText": "Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "template": "Assim também vós, se pela ___ não proferirdes discurso fácil de se entender",
+    "options": [
+      {"id": "a", "text": "ar"},
+      {"id": "b", "text": "discurso"},
+      {"id": "c", "text": "língua"}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "id": "linguas-originais-cam-lo-02-traducao-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "1 Coríntios 14:9",
+    "learningObjective": "Perceber que palavra ininteligível é falar ao ar; traduzir com cuidado é amor.",
+    "evidence": ["1 Coríntios 14:9"],
+    "type": "connect",
+    "question": "O que 1 Coríntios 14:9 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Coríntios 14:9 comunica que se liga a este contexto?",
+    "cue": "O que 1 Coríntios 14:9 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: traduzir com cuidado é amor ao que precisa entender.",
+    "feedbackWrong": {
+      "b": "Paulo não trata a clareza como vaidade; é condição de ser conhecido.",
+      "c": "O original importa, mas o versículo exige discurso inteligível."
+    },
+    "passageText": "Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "passageA": {
+      "ref": "1 Coríntios 14:9",
+      "text": "como se conhecerá o que se fala? Pois estareis falando ao ar."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Traduzir com cuidado é amor ao próximo: palavra que não se entende é falar ao ar."
+    },
+    "options": [
+      {"id": "a", "text": "Clareza como amor ao próximo"},
+      {"id": "b", "text": "Clareza como vaidade literária"},
+      {"id": "c", "text": "Original que dispensa tradução"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "id": "linguas-originais-cam-lo-02-traducao-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 14:9",
+    "learningObjective": "Perceber que palavra ininteligível é falar ao ar; traduzir com cuidado é amor.",
+    "evidence": ["1 Coríntios 14:9"],
+    "type": "true_false",
+    "question": "Traduzir com cuidado é amor ao próximo, porque palavra que não se entende é falar ao ar.",
+    "prompt": "Traduzir com cuidado é amor ao próximo, porque palavra que não se entende é falar ao ar.",
+    "cue": "Traduzir com cuidado é amor ao próximo, porque palavra que não se entende é falar ao ar.",
+    "feedbackCorrect": "Certo: a exigência de clareza sustenta o cuidado de traduzir.",
+    "feedbackWrong": {
+      "false": "1 Coríntios 14:9 faz da inteligibilidade o critério; traduzir com cuidado serve a isso."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "id": "linguas-originais-pro-lo-02-traducao-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 14:9",
+    "learningObjective": "Perceber que palavra ininteligível é falar ao ar; traduzir com cuidado é amor.",
+    "evidence": ["1 Coríntios 14:9"],
+    "type": "tap",
+    "question": "Em 1 Coríntios 14:9, toque a palavra que falta em \"como se ___ o que se fala\"?",
+    "prompt": "Em 1 Coríntios 14:9, toque a palavra que falta em \"como se ___ o que se fala\"?",
+    "cue": "Em 1 Coríntios 14:9, toque a palavra que falta em \"como se ___ o que se fala\"?",
+    "feedbackCorrect": "Exato: o critério é se se conhecerá o que se fala.",
+    "feedbackWrong": {
+      "a": "\"proferirdes\" está na condição anterior, não nesta lacuna.",
+      "b": "\"fácil\" descreve o discurso; aqui falta \"conhecerá\"."
+    },
+    "passageText": "Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "template": "como se ___ o que se fala",
+    "options": [
+      {"id": "a", "text": "proferirdes"},
+      {"id": "b", "text": "fácil"},
+      {"id": "c", "text": "conhecerá"}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "id": "linguas-originais-pro-lo-02-traducao-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 14:9",
+    "learningObjective": "Perceber que palavra ininteligível é falar ao ar; traduzir com cuidado é amor.",
+    "evidence": ["1 Coríntios 14:9"],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor 1 Coríntios 14:9 para o trabalho de traduzir a Bíblia?",
+    "prompt": "Qual leitura interpreta melhor 1 Coríntios 14:9 para o trabalho de traduzir a Bíblia?",
+    "cue": "Qual leitura interpreta melhor 1 Coríntios 14:9 para o trabalho de traduzir a Bíblia?",
+    "feedbackCorrect": "Certo: o original não dispensa uma Palavra que se entenda.",
+    "feedbackWrong": {
+      "a": "Paulo não proíbe traduzir; exige que se conheça o que se fala.",
+      "c": "O êxtase não torna o entender secundário neste versículo.",
+      "d": "Falar ao ar é falha, não prova de autenticidade."
+    },
+    "passageText": "Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "options": [
+      {"id": "a", "text": "O original sagrado não deve jamais ser traduzido."},
+      {"id": "b", "text": "Cuidar da clareza honra o próximo que precisa entender."},
+      {"id": "c", "text": "Só o êxtase importa; entender é secundário."},
+      {"id": "d", "text": "Falar ao ar prova autenticidade espiritual."}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "id": "linguas-originais-pro-lo-02-traducao-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 14:9",
+    "learningObjective": "Perceber que palavra ininteligível é falar ao ar; traduzir com cuidado é amor.",
+    "evidence": ["1 Coríntios 14:9"],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de 1 Coríntios 14:9?",
+    "prompt": "Qual sequência revela o sentido de 1 Coríntios 14:9?",
+    "cue": "Qual sequência revela o sentido de 1 Coríntios 14:9?",
+    "feedbackCorrect": "Certo: inteligibilidade, conhecimento do dito e risco de falar ao ar.",
+    "feedbackWrong": {
+      "b": "Conhecer o que se fala depende do discurso fácil, que vem antes.",
+      "c": "Falar ao ar é o sentido da falha, não o primeiro passo."
+    },
+    "passageText": "Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "options": [
+      {"id": "a", "text": "discurso fácil de se entender"},
+      {"id": "b", "text": "como se conhecerá o que se fala"},
+      {"id": "c", "text": "Pois estareis falando ao ar"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": ["a", "b", "c"],
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "id": "linguas-originais-pro-lo-02-traducao-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 14:9",
+    "learningObjective": "Perceber que palavra ininteligível é falar ao ar; traduzir com cuidado é amor.",
+    "evidence": ["1 Coríntios 14:9"],
+    "type": "complete",
+    "question": "Complete 1 Coríntios 14:9: \"Pois estareis ___ ao ar\".",
+    "prompt": "Complete 1 Coríntios 14:9: \"Pois estareis ___ ao ar\".",
+    "cue": "Complete 1 Coríntios 14:9: \"Pois estareis ___ ao ar\".",
+    "feedbackCorrect": "Exato: sem clareza, estareis falando ao ar.",
+    "feedbackWrong": {
+      "a": "\"entender\" pertence à condição anterior, não a esta lacuna.",
+      "c": "\"proferirdes\" está na cláusula condicional; aqui falta \"falando\"."
+    },
+    "passageText": "Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "template": "Pois estareis ___ ao ar",
+    "options": [
+      {"id": "a", "text": "entender"},
+      {"id": "b", "text": "falando"},
+      {"id": "c", "text": "proferirdes"}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "id": "linguas-originais-pro-lo-02-traducao-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "1 Coríntios 14:9",
+    "learningObjective": "Perceber que palavra ininteligível é falar ao ar; traduzir com cuidado é amor.",
+    "evidence": ["1 Coríntios 14:9"],
+    "type": "connect",
+    "question": "O que 1 Coríntios 14:9 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Coríntios 14:9 comunica que se liga a este contexto?",
+    "cue": "O que 1 Coríntios 14:9 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a Palavra deve atravessar a língua até ser compreendida.",
+    "feedbackWrong": {
+      "a": "Paulo não sacraliza a opacidade como sinal de profundidade.",
+      "c": "O critério não é impressionar, e sim ser conhecido o que se fala."
+    },
+    "passageText": "Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "passageA": {
+      "ref": "1 Coríntios 14:9",
+      "text": "se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Traduzir com cuidado é amor ao próximo: palavra que não se entende é falar ao ar."
+    },
+    "options": [
+      {"id": "a", "text": "Opacidade como sinal de profundidade"},
+      {"id": "b", "text": "Palavra feita para ser compreendida"},
+      {"id": "c", "text": "Tradução como espetáculo de erudição"}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "linguas-originais",
+    "section": "lo-02-traducao",
+    "id": "linguas-originais-pro-lo-02-traducao-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 19:20; 1 Coríntios 14:9",
+    "learningObjective": "Relacionar o título trilingue da cruz com o chamado a um discurso inteligível.",
+    "evidence": ["João 19:20", "1 Coríntios 14:9"],
+    "type": "true_false",
+    "question": "O título da cruz estava escrito somente em latim, e Paulo elogia quem fala ao ar.",
+    "prompt": "O título da cruz estava escrito somente em latim, e Paulo elogia quem fala ao ar.",
+    "cue": "O título da cruz estava escrito somente em latim, e Paulo elogia quem fala ao ar.",
+    "feedbackCorrect": "Certo: o título tem três línguas, e falar ao ar é falha, não elogio.",
+    "feedbackWrong": {
+      "true": "João lista hebraico, latim e grego; Paulo condena falar ao ar."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego. Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "id": "linguas-originais-sem-lo-boss-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 19:20; 1 Coríntios 14:9",
+    "learningObjective": "Relacionar o título trilingue da cruz com o chamado a um discurso inteligível.",
+    "evidence": ["João 19:20", "1 Coríntios 14:9"],
+    "type": "tap",
+    "question": "Em João 19:20, toque a palavra que falta em \"___ judeus leram esse título\"?",
+    "prompt": "Em João 19:20, toque a palavra que falta em \"___ judeus leram esse título\"?",
+    "cue": "Em João 19:20, toque a palavra que falta em \"___ judeus leram esse título\"?",
+    "feedbackCorrect": "Exato: muitos judeus leram o título público.",
+    "feedbackWrong": {
+      "b": "\"latim\" é uma língua da inscrição, não o quantificador desta frase.",
+      "c": "\"grego\" fecha a lista de línguas; aqui falta \"Muitos\"."
+    },
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego. Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "template": "___ judeus leram esse título",
+    "options": [
+      {"id": "a", "text": "Muitos"},
+      {"id": "b", "text": "latim"},
+      {"id": "c", "text": "grego"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "id": "linguas-originais-sem-lo-boss-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 19:20; 1 Coríntios 14:9",
+    "learningObjective": "Relacionar o título trilingue da cruz com o chamado a um discurso inteligível.",
+    "evidence": ["João 19:20", "1 Coríntios 14:9"],
+    "type": "choice",
+    "question": "O que os dois trechos afirmam de modo explícito, lado a lado?",
+    "prompt": "O que os dois trechos afirmam de modo explícito, lado a lado?",
+    "cue": "O que os dois trechos afirmam de modo explícito, lado a lado?",
+    "feedbackCorrect": "Certo: título em três línguas e risco de falar ao ar.",
+    "feedbackWrong": {
+      "b": "João não diz que o título ficou só em hebraico.",
+      "c": "Paulo não elogia falar ao ar; isso é a falha.",
+      "d": "Nenhum dos textos reduz a Palavra a um código secreto."
+    },
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego. Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "options": [
+      {"id": "a", "text": "O título saiu em três línguas; sem clareza, fala-se ao ar."},
+      {"id": "b", "text": "O título ficou só em hebraico, e Paulo elogia o mistério."},
+      {"id": "c", "text": "Pilatos proibiu o grego, e Paulo exige falar ao ar."},
+      {"id": "d", "text": "Os dois textos tratam a Palavra como código secreto."}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "id": "linguas-originais-sem-lo-boss-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 19:20; 1 Coríntios 14:9",
+    "learningObjective": "Relacionar o título trilingue da cruz com o chamado a um discurso inteligível.",
+    "evidence": ["João 19:20", "1 Coríntios 14:9"],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em João 19:19–20?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em João 19:19–20?",
+    "cue": "Qual sequência mostra a ordem dos fatos em João 19:19–20?",
+    "feedbackCorrect": "Certo: escrita do título, leitura e tríade de línguas.",
+    "feedbackWrong": {
+      "b": "A leitura dos judeus vem depois de Pilatos escrever o título.",
+      "c": "As três línguas fecham o versículo 20, não abrem o relato."
+    },
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego. Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "options": [
+      {"id": "a", "text": "Pilatos escreveu também um título"},
+      {"id": "b", "text": "Muitos judeus leram esse título"},
+      {"id": "c", "text": "estava escrito em hebraico, latim e grego"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": ["a", "b", "c"],
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "id": "linguas-originais-sem-lo-boss-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 19:20; 1 Coríntios 14:9",
+    "learningObjective": "Relacionar o título trilingue da cruz com o chamado a um discurso inteligível.",
+    "evidence": ["João 19:20", "1 Coríntios 14:9"],
+    "type": "complete",
+    "question": "Complete 1 Coríntios 14:9: \"Pois estareis falando ao ___\"?",
+    "prompt": "Complete 1 Coríntios 14:9: \"Pois estareis falando ao ___\"?",
+    "cue": "Complete 1 Coríntios 14:9: \"Pois estareis falando ao ___\"?",
+    "feedbackCorrect": "Exato: a conclusão de Paulo é falar ao ar.",
+    "feedbackWrong": {
+      "a": "\"grego\" pertence ao título da cruz, não a esta conclusão.",
+      "b": "\"título\" é de João 19; aqui Paulo fala do ar."
+    },
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego. Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "template": "Pois estareis falando ao ___",
+    "options": [
+      {"id": "a", "text": "grego"},
+      {"id": "b", "text": "título"},
+      {"id": "c", "text": "ar"}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "id": "linguas-originais-sem-lo-boss-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "João 19:20; 1 Coríntios 14:9",
+    "learningObjective": "Relacionar o título trilingue da cruz com o chamado a um discurso inteligível.",
+    "evidence": ["João 19:20", "1 Coríntios 14:9"],
+    "type": "connect",
+    "question": "O que João 19:20 e 1 Coríntios 14:9 comunicam que se liga a este contexto?",
+    "prompt": "O que João 19:20 e 1 Coríntios 14:9 comunicam que se liga a este contexto?",
+    "cue": "O que João 19:20 e 1 Coríntios 14:9 comunicam que se liga a este contexto?",
+    "feedbackCorrect": "Certo: inscrição pública e discurso inteligível andam juntos.",
+    "feedbackWrong": {
+      "a": "Os textos não celebram língua que ninguém entende.",
+      "c": "Não há aqui um chamado a esconder a Palavra."
+    },
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego. Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "passageA": {
+      "ref": "João 19:20; 1 Coríntios 14:9",
+      "text": "estava escrito em hebraico, latim e grego. [...] Pois estareis falando ao ar."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A Palavra atravessa línguas para ser compreendida — inscrição pública e discurso inteligível."
+    },
+    "options": [
+      {"id": "a", "text": "Língua opaca como virtude"},
+      {"id": "b", "text": "Palavra feita para ser lida"},
+      {"id": "c", "text": "Segredo que ninguém deve ouvir"}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "id": "linguas-originais-sem-lo-boss-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 19:20; 1 Coríntios 14:9",
+    "learningObjective": "Relacionar o título trilingue da cruz com o chamado a um discurso inteligível.",
+    "evidence": ["João 19:20", "1 Coríntios 14:9"],
+    "type": "true_false",
+    "question": "A inscrição em três línguas e o discurso fácil de entender convergem para a Palavra ser compreendida.",
+    "prompt": "A inscrição em três línguas e o discurso fácil de entender convergem para a Palavra ser compreendida.",
+    "cue": "A inscrição em três línguas e o discurso fácil de entender convergem para a Palavra ser compreendida.",
+    "feedbackCorrect": "Certo: os dois textos miram compreensão, não opacidade.",
+    "feedbackWrong": {
+      "false": "João mostra leitura pública; Paulo exige que se conheça o que se fala."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego. Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "id": "linguas-originais-cam-lo-boss-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 19:20; 1 Coríntios 14:9",
+    "learningObjective": "Relacionar o título trilingue da cruz com o chamado a um discurso inteligível.",
+    "evidence": ["João 19:20", "1 Coríntios 14:9"],
+    "type": "tap",
+    "question": "Em 1 Coríntios 14:9, toque a palavra que falta em \"se pela ___ não proferirdes discurso fácil de se entender\"?",
+    "prompt": "Em 1 Coríntios 14:9, toque a palavra que falta em \"se pela ___ não proferirdes discurso fácil de se entender\"?",
+    "cue": "Em 1 Coríntios 14:9, toque a palavra que falta em \"se pela ___ não proferirdes discurso fácil de se entender\"?",
+    "feedbackCorrect": "Exato: o problema está na língua que não se faz entender.",
+    "feedbackWrong": {
+      "a": "\"cruz\" pertence a João 19; a lacuna de Paulo pede \"língua\".",
+      "b": "\"cidade\" explica a leitura do título; não preenche 1 Coríntios 14:9."
+    },
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego. Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "template": "se pela ___ não proferirdes discurso fácil de se entender",
+    "options": [
+      {"id": "a", "text": "cruz"},
+      {"id": "b", "text": "cidade"},
+      {"id": "c", "text": "língua"}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "id": "linguas-originais-cam-lo-boss-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 19:20; 1 Coríntios 14:9",
+    "learningObjective": "Relacionar o título trilingue da cruz com o chamado a um discurso inteligível.",
+    "evidence": ["João 19:20", "1 Coríntios 14:9"],
+    "type": "choice",
+    "question": "Como os dois textos se encadeiam no tema da compreensão?",
+    "prompt": "Como os dois textos se encadeiam no tema da compreensão?",
+    "cue": "Como os dois textos se encadeiam no tema da compreensão?",
+    "feedbackCorrect": "Certo: o título se lê em várias línguas; a fala deve ser inteligível.",
+    "feedbackWrong": {
+      "a": "João não esconde o título; muitos o leram perto da cidade.",
+      "b": "Paulo não trata o mistério opaco como meta da igreja.",
+      "d": "Os textos não opõem hebraico e grego como inimigos da fé."
+    },
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego. Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "options": [
+      {"id": "a", "text": "O título se esconde; a igreja deve imitar o silêncio."},
+      {"id": "b", "text": "O mistério opaco é a meta da fé cristã."},
+      {"id": "c", "text": "Línguas públicas na cruz e fala clara na igreja servem a entender."},
+      {"id": "d", "text": "Hebraico e grego se cancelam e não devem ser lidos."}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "id": "linguas-originais-cam-lo-boss-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 19:20; 1 Coríntios 14:9",
+    "learningObjective": "Relacionar o título trilingue da cruz com o chamado a um discurso inteligível.",
+    "evidence": ["João 19:20", "1 Coríntios 14:9"],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de 1 Coríntios 14:9?",
+    "prompt": "Como se encadeiam os eventos de 1 Coríntios 14:9?",
+    "cue": "Como se encadeiam os eventos de 1 Coríntios 14:9?",
+    "feedbackCorrect": "Certo: condição da língua, conhecer o dito e falar ao ar.",
+    "feedbackWrong": {
+      "b": "Conhecer o que se fala vem da condição de clareza, não no início.",
+      "c": "Falar ao ar é a consequência, não o primeiro elo."
+    },
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego. Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "options": [
+      {"id": "a", "text": "se pela língua não proferirdes discurso fácil de se entender"},
+      {"id": "b", "text": "como se conhecerá o que se fala"},
+      {"id": "c", "text": "Pois estareis falando ao ar"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": ["a", "b", "c"],
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "id": "linguas-originais-cam-lo-boss-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 19:20; 1 Coríntios 14:9",
+    "learningObjective": "Relacionar o título trilingue da cruz com o chamado a um discurso inteligível.",
+    "evidence": ["João 19:20", "1 Coríntios 14:9"],
+    "type": "complete",
+    "question": "Complete João 19:20: \"e estava escrito em hebraico, latim e ___\"?",
+    "prompt": "Complete João 19:20: \"e estava escrito em hebraico, latim e ___\"?",
+    "cue": "Complete João 19:20: \"e estava escrito em hebraico, latim e ___\"?",
+    "feedbackCorrect": "Exato: o grego completa a tríade do título.",
+    "feedbackWrong": {
+      "a": "\"ar\" é de 1 Coríntios 14:9, não a terceira língua da cruz.",
+      "c": "\"entender\" é o critério de Paulo; a lacuna de João pede \"grego\"."
+    },
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego. Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "template": "e estava escrito em hebraico, latim e ___",
+    "options": [
+      {"id": "a", "text": "ar"},
+      {"id": "b", "text": "grego"},
+      {"id": "c", "text": "entender"}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "id": "linguas-originais-cam-lo-boss-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "João 19:20; 1 Coríntios 14:9",
+    "learningObjective": "Relacionar o título trilingue da cruz com o chamado a um discurso inteligível.",
+    "evidence": ["João 19:20", "1 Coríntios 14:9"],
+    "type": "connect",
+    "question": "O que estes textos comunicam que se liga a este contexto?",
+    "prompt": "O que estes textos comunicam que se liga a este contexto?",
+    "cue": "O que estes textos comunicam que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a Palavra atravessa línguas para ser compreendida.",
+    "feedbackWrong": {
+      "a": "Três línguas na cruz e clareza em Paulo não pedem monolinguismo.",
+      "b": "Paulo não trata a tradução como perda; exige que se conheça o dito."
+    },
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego. Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "passageA": {
+      "ref": "João 19:20; 1 Coríntios 14:9",
+      "text": "estava escrito em hebraico, latim e grego. [...] se pela língua não proferirdes discurso fácil de se entender"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A Palavra atravessa línguas para ser compreendida — inscrição pública e discurso inteligível."
+    },
+    "options": [
+      {"id": "a", "text": "Uma só língua para todos"},
+      {"id": "b", "text": "Traduzir como perda do original"},
+      {"id": "c", "text": "Palavra que atravessa línguas"}
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "id": "linguas-originais-cam-lo-boss-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 19:20; 1 Coríntios 14:9",
+    "learningObjective": "Relacionar o título trilingue da cruz com o chamado a um discurso inteligível.",
+    "evidence": ["João 19:20", "1 Coríntios 14:9"],
+    "type": "true_false",
+    "question": "A Palavra deve permanecer numa só língua, para que o mundo não a compreenda.",
+    "prompt": "A Palavra deve permanecer numa só língua, para que o mundo não a compreenda.",
+    "cue": "A Palavra deve permanecer numa só língua, para que o mundo não a compreenda.",
+    "feedbackCorrect": "Certo: o título trilingue e a fala clara apontam para ser compreendida.",
+    "feedbackWrong": {
+      "true": "João mostra três línguas públicas; Paulo exige discurso inteligível."
+    },
+    "options": [
+      {"id": "true", "text": "Verdadeiro"},
+      {"id": "false", "text": "Falso"}
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego. Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "id": "linguas-originais-pro-lo-boss-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 19:20; 1 Coríntios 14:9",
+    "learningObjective": "Relacionar o título trilingue da cruz com o chamado a um discurso inteligível.",
+    "evidence": ["João 19:20", "1 Coríntios 14:9"],
+    "type": "tap",
+    "question": "Em João 19:19, toque a palavra que falta em \"nele estava escrito: JESUS, O ___, REI DOS JUDEUS\"?",
+    "prompt": "Em João 19:19, toque a palavra que falta em \"nele estava escrito: JESUS, O ___, REI DOS JUDEUS\"?",
+    "cue": "Em João 19:19, toque a palavra que falta em \"nele estava escrito: JESUS, O ___, REI DOS JUDEUS\"?",
+    "feedbackCorrect": "Exato: o título nomeia Jesus, o nazareno, Rei dos judeus.",
+    "feedbackWrong": {
+      "a": "\"hebraico\" é língua da inscrição, não o nome no título.",
+      "c": "\"entender\" é de Paulo; a lacuna de João pede \"NAZARENO\"."
+    },
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego. Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "template": "nele estava escrito: JESUS, O ___, REI DOS JUDEUS",
+    "options": [
+      {"id": "a", "text": "hebraico"},
+      {"id": "b", "text": "NAZARENO"},
+      {"id": "c", "text": "entender"}
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "id": "linguas-originais-pro-lo-boss-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 19:20; 1 Coríntios 14:9",
+    "learningObjective": "Relacionar o título trilingue da cruz com o chamado a um discurso inteligível.",
+    "evidence": ["João 19:20", "1 Coríntios 14:9"],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o par João 19:20 e 1 Coríntios 14:9?",
+    "prompt": "Qual leitura interpreta melhor o par João 19:20 e 1 Coríntios 14:9?",
+    "cue": "Qual leitura interpreta melhor o par João 19:20 e 1 Coríntios 14:9?",
+    "feedbackCorrect": "Certo: a Palavra atravessa línguas para ser compreendida.",
+    "feedbackWrong": {
+      "a": "Três línguas na cruz contradizem um anúncio só à elite hebraica.",
+      "b": "Paulo trata falar ao ar como falha, não como prova de unção.",
+      "c": "Cuidar do original não autoriza desprezar quem precisa entender."
+    },
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego. Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "options": [
+      {"id": "a", "text": "O evangelho deve ficar só na elite que lê hebraico."},
+      {"id": "b", "text": "Falar ao ar é a prova máxima de unção na igreja."},
+      {"id": "c", "text": "O original importa tanto que traduzir é pecado."},
+      {"id": "d", "text": "A Palavra atravessa línguas para ser compreendida."}
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "id": "linguas-originais-pro-lo-boss-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 19:20; 1 Coríntios 14:9",
+    "learningObjective": "Relacionar o título trilingue da cruz com o chamado a um discurso inteligível.",
+    "evidence": ["João 19:20", "1 Coríntios 14:9"],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de João 19:20 e 1 Coríntios 14:9?",
+    "prompt": "Qual sequência revela o sentido de João 19:20 e 1 Coríntios 14:9?",
+    "cue": "Qual sequência revela o sentido de João 19:20 e 1 Coríntios 14:9?",
+    "feedbackCorrect": "Certo: línguas públicas, discurso inteligível e o risco de falar ao ar.",
+    "feedbackWrong": {
+      "b": "A exigência de clareza vem depois do dado das três línguas.",
+      "c": "Falar ao ar é o alerta final, não o primeiro sentido."
+    },
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego. Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "options": [
+      {"id": "a", "text": "estava escrito em hebraico, latim e grego"},
+      {"id": "b", "text": "se pela língua não proferirdes discurso fácil de se entender"},
+      {"id": "c", "text": "Pois estareis falando ao ar"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": ["a", "b", "c"],
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "id": "linguas-originais-pro-lo-boss-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 19:20; 1 Coríntios 14:9",
+    "learningObjective": "Relacionar o título trilingue da cruz com o chamado a um discurso inteligível.",
+    "evidence": ["João 19:20", "1 Coríntios 14:9"],
+    "type": "complete",
+    "question": "Complete 1 Coríntios 14:9: \"como se conhecerá o que se ___\"?",
+    "prompt": "Complete 1 Coríntios 14:9: \"como se conhecerá o que se ___\"?",
+    "cue": "Complete 1 Coríntios 14:9: \"como se conhecerá o que se ___\"?",
+    "feedbackCorrect": "Exato: o critério é conhecer o que se fala.",
+    "feedbackWrong": {
+      "b": "\"latim\" é língua do título, não o verbo desta cláusula.",
+      "c": "\"NAZARENO\" pertence à inscrição; aqui falta \"fala\"."
+    },
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego. Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "template": "como se conhecerá o que se ___",
+    "options": [
+      {"id": "a", "text": "fala"},
+      {"id": "b", "text": "latim"},
+      {"id": "c", "text": "NAZARENO"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "id": "linguas-originais-pro-lo-boss-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "João 19:20; 1 Coríntios 14:9",
+    "learningObjective": "Relacionar o título trilingue da cruz com o chamado a um discurso inteligível.",
+    "evidence": ["João 19:20", "1 Coríntios 14:9"],
+    "type": "connect",
+    "question": "O que João 19:20 e 1 Coríntios 14:9 comunicam que se liga a este contexto?",
+    "prompt": "O que João 19:20 e 1 Coríntios 14:9 comunicam que se liga a este contexto?",
+    "cue": "O que João 19:20 e 1 Coríntios 14:9 comunicam que se liga a este contexto?",
+    "feedbackCorrect": "Certo: inscrição pública e discurso inteligível revelam a mesma ponte.",
+    "feedbackWrong": {
+      "b": "Os textos não tratam a Palavra como enigma reservado a poucos.",
+      "c": "Falar ao ar é o contrário do anúncio que se lê e se entende."
+    },
+    "passageText": "Pilatos escreveu também um título e o mandou colocar no alto da cruz; nele estava escrito: JESUS, O NAZARENO, REI DOS JUDEUS. Muitos judeus leram esse título, porque o lugar em que Jesus fora crucificado era perto da cidade; e estava escrito em hebraico, latim e grego. Assim também vós, se pela língua não proferirdes discurso fácil de se entender, como se conhecerá o que se fala? Pois estareis falando ao ar.",
+    "passageA": {
+      "ref": "João 19:20; 1 Coríntios 14:9",
+      "text": "Muitos judeus leram esse título [...] Pois estareis falando ao ar."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A Palavra atravessa línguas para ser compreendida — inscrição pública e discurso inteligível."
+    },
+    "options": [
+      {"id": "a", "text": "Inscrição pública e fala clara"},
+      {"id": "b", "text": "Enigma reservado a poucos"},
+      {"id": "c", "text": "Falar ao ar como meta da fé"}
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "linguas-originais",
+    "section": "lo-boss",
+    "id": "linguas-originais-pro-lo-boss-06"
+  }
+]

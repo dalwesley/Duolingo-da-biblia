@@ -1,0 +1,2189 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Amós 1:2",
+    "learningObjective": "Reconhecer que o rugido de Deus contra a injustiça alcança também o seu próprio povo, não apenas as nações vizinhas.",
+    "evidence": [
+      "Amós 1:2"
+    ],
+    "type": "true_false",
+    "question": "Em Amós 1:2, o rugido de Jeová faz o cume do Carmelo secar.",
+    "prompt": "Em Amós 1:2, o rugido de Jeová faz o cume do Carmelo secar.",
+    "cue": "Em Amós 1:2, o rugido de Jeová faz o cume do Carmelo secar.",
+    "feedbackCorrect": "Certo: o texto liga o rugido de Jeová ao secar do Carmelo.",
+    "feedbackWrong": {
+      "false": "Releia Amós 1:2: o texto afirma exatamente essa consequência para o Carmelo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará.",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "id": "amos-sem-amos-amos-01-rugido-de-siao-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Amós 1:2",
+    "learningObjective": "Reconhecer que o rugido de Deus contra a injustiça alcança também o seu próprio povo, não apenas as nações vizinhas.",
+    "evidence": [
+      "Amós 1:2"
+    ],
+    "type": "tap",
+    "question": "Em Amós 1:2, toque a palavra que falta em \"Jeová ___ de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará\"?",
+    "prompt": "Em Amós 1:2, toque a palavra que falta em \"Jeová ___ de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará\"?",
+    "cue": "Em Amós 1:2, toque a palavra que falta em \"Jeová ___ de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará\"?",
+    "feedbackCorrect": "Exato: é o rugido de Jeová que abre a cena em Amós 1:2.",
+    "feedbackWrong": {
+      "b": "Essa palavra descreve as pastagens, não a ação de Jeová no início do verso.",
+      "c": "Essa palavra descreve o Carmelo, não a ação de Jeová no início do verso."
+    },
+    "passageText": "Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará.",
+    "template": "Jeová ___ de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará",
+    "options": [
+      {
+        "id": "a",
+        "text": "rugirá"
+      },
+      {
+        "id": "b",
+        "text": "prantearão"
+      },
+      {
+        "id": "c",
+        "text": "secará"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "id": "amos-sem-amos-amos-01-rugido-de-siao-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Amós 1:2",
+    "learningObjective": "Reconhecer que o rugido de Deus contra a injustiça alcança também o seu próprio povo, não apenas as nações vizinhas.",
+    "evidence": [
+      "Amós 1:2"
+    ],
+    "type": "choice",
+    "question": "Qual destas afirmações é feita diretamente pelo texto de Amós 1:2?",
+    "prompt": "Qual destas afirmações é feita diretamente pelo texto de Amós 1:2?",
+    "cue": "Qual destas afirmações é feita diretamente pelo texto de Amós 1:2?",
+    "feedbackCorrect": "Certo: o texto liga o rugido de Sião ao secar do Carmelo.",
+    "feedbackWrong": {
+      "b": "O texto une Sião e Jerusalém na mesma voz, sem separar uma da outra.",
+      "c": "O texto fala de pastagens que pranteiam, não de festa ou colheita.",
+      "d": "O texto diz o contrário: o cume do Carmelo seca, não floresce."
+    },
+    "passageText": "Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová ruge de Sião, e o cume do Carmelo seca."
+      },
+      {
+        "id": "b",
+        "text": "Amós anuncia que Jerusalém, e não Sião, será poupada do juízo."
+      },
+      {
+        "id": "c",
+        "text": "O texto afirma que os pastores de Tecoa festejam a colheita."
+      },
+      {
+        "id": "d",
+        "text": "A passagem diz que o Carmelo florescerá com a chuva de Jeová."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "id": "amos-sem-amos-amos-01-rugido-de-siao-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Amós 1:2",
+    "learningObjective": "Reconhecer que o rugido de Deus contra a injustiça alcança também o seu próprio povo, não apenas as nações vizinhas.",
+    "evidence": [
+      "Amós 1:2"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Amós 1:2?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Amós 1:2?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Amós 1:2?",
+    "feedbackCorrect": "Certo: essa é a sequência que o texto mostra.",
+    "feedbackWrong": {
+      "b": "A ordem está deslocada: o pranto das pastagens vem depois do rugido, não antes.",
+      "c": "A ordem está deslocada: o Carmelo seca por último, depois do rugido e do pranto."
+    },
+    "passageText": "Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz"
+      },
+      {
+        "id": "b",
+        "text": "as pastagens dos pastores prantearão"
+      },
+      {
+        "id": "c",
+        "text": "o cume do Carmelo secará"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "id": "amos-sem-amos-amos-01-rugido-de-siao-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Amós 1:2",
+    "learningObjective": "Reconhecer que o rugido de Deus contra a injustiça alcança também o seu próprio povo, não apenas as nações vizinhas.",
+    "evidence": [
+      "Amós 1:2"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo ___\"",
+    "prompt": "Complete a frase: \"Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo ___\"",
+    "cue": "Complete a frase: \"Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo ___\"",
+    "feedbackCorrect": "Certo: é o Carmelo que seca ao final do verso.",
+    "feedbackWrong": {
+      "b": "Essa palavra já abre o verso; o final descreve o Carmelo, não o rugido.",
+      "c": "Essa palavra descreve as pastagens, não o Carmelo no final do verso."
+    },
+    "passageText": "Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará.",
+    "template": "Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "secará"
+      },
+      {
+        "id": "b",
+        "text": "rugirá"
+      },
+      {
+        "id": "c",
+        "text": "prantearão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "id": "amos-sem-amos-amos-01-rugido-de-siao-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Amós 1:2",
+    "learningObjective": "Reconhecer que o rugido de Deus contra a injustiça alcança também o seu próprio povo, não apenas as nações vizinhas.",
+    "evidence": [
+      "Amós 1:2"
+    ],
+    "type": "connect",
+    "question": "O que Amós 1:2 comunica que se liga a este contexto?",
+    "prompt": "O que Amós 1:2 comunica que se liga a este contexto?",
+    "cue": "O que Amós 1:2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o texto liga o rugido ao juízo que atinge também Israel.",
+    "feedbackWrong": {
+      "b": "O Carmelo, em território de Israel, também seca sob o juízo.",
+      "c": "O rugido abre um livro inteiro de juízo real, não é apenas estilo."
+    },
+    "passageText": "Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará.",
+    "passageA": {
+      "ref": "Amós 1:2",
+      "text": "Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Este passo ensina que o juízo anunciado por Jeová não poupa nem o seu próprio povo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O juízo divino alcança também o povo de Israel"
+      },
+      {
+        "id": "b",
+        "text": "Israel está isento do juízo divino"
+      },
+      {
+        "id": "c",
+        "text": "O rugido é só um recurso poético sem juízo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "id": "amos-sem-amos-amos-01-rugido-de-siao-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Amós 1:2",
+    "learningObjective": "Reconhecer que o rugido de Deus contra a injustiça alcança também o seu próprio povo, não apenas as nações vizinhas.",
+    "evidence": [
+      "Amós 1:2"
+    ],
+    "type": "true_false",
+    "question": "O rugido de Jeová em Amós 1:2 atinge somente as nações vizinhas, poupando o território de Israel.",
+    "prompt": "O rugido de Jeová em Amós 1:2 atinge somente as nações vizinhas, poupando o território de Israel.",
+    "cue": "O rugido de Jeová em Amós 1:2 atinge somente as nações vizinhas, poupando o território de Israel.",
+    "feedbackCorrect": "Certo: o Carmelo, em Israel, também seca sob o juízo anunciado.",
+    "feedbackWrong": {
+      "true": "O texto liga o juízo também ao Carmelo, que fica em território de Israel."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará.",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "id": "amos-cam-amos-amos-01-rugido-de-siao-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Amós 1:2",
+    "learningObjective": "Reconhecer que o rugido de Deus contra a injustiça alcança também o seu próprio povo, não apenas as nações vizinhas.",
+    "evidence": [
+      "Amós 1:2"
+    ],
+    "type": "tap",
+    "question": "Em Amós 1:2, toque a palavra que falta em \"Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores ___, e o cume do Carmelo secará\"?",
+    "prompt": "Em Amós 1:2, toque a palavra que falta em \"Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores ___, e o cume do Carmelo secará\"?",
+    "cue": "Em Amós 1:2, toque a palavra que falta em \"Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores ___, e o cume do Carmelo secará\"?",
+    "feedbackCorrect": "Exato: são as pastagens que pranteiam diante do juízo anunciado.",
+    "feedbackWrong": {
+      "b": "Essa palavra descreve a ação de Jeová no início do verso, não as pastagens.",
+      "c": "Essa palavra descreve o Carmelo, não as pastagens dos pastores."
+    },
+    "passageText": "Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará.",
+    "template": "Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores ___, e o cume do Carmelo secará",
+    "options": [
+      {
+        "id": "a",
+        "text": "prantearão"
+      },
+      {
+        "id": "b",
+        "text": "rugirá"
+      },
+      {
+        "id": "c",
+        "text": "secará"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "id": "amos-cam-amos-amos-01-rugido-de-siao-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Amós 1:2",
+    "learningObjective": "Reconhecer que o rugido de Deus contra a injustiça alcança também o seu próprio povo, não apenas as nações vizinhas.",
+    "evidence": [
+      "Amós 1:2"
+    ],
+    "type": "choice",
+    "question": "Qual leitura melhor explica por que Amós abre o livro com essa imagem de rugido?",
+    "prompt": "Qual leitura melhor explica por que Amós abre o livro com essa imagem de rugido?",
+    "cue": "Qual leitura melhor explica por que Amós abre o livro com essa imagem de rugido?",
+    "feedbackCorrect": "Certo: o rugido estabelece a autoridade de Deus como juiz logo na abertura do livro.",
+    "feedbackWrong": {
+      "b": "O rugido introduz o juízo que o livro inteiro desenvolve, não é apenas estilo.",
+      "c": "O rugido parte de Sião; o texto não isenta esse lugar do juízo.",
+      "d": "É Jeová quem ruge e julga; Amós apenas anuncia a mensagem."
+    },
+    "passageText": "Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O rugido mostra que Deus fala com autoridade de juiz antes de julgar as nações e Israel."
+      },
+      {
+        "id": "b",
+        "text": "O rugido é apenas um recurso poético sem relação com um juízo real."
+      },
+      {
+        "id": "c",
+        "text": "O texto sugere que Sião ficará isenta enquanto pune as demais cidades."
+      },
+      {
+        "id": "d",
+        "text": "A imagem indica que o profeta, e não Deus, é quem julga as nações."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "id": "amos-cam-amos-amos-01-rugido-de-siao-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Amós 1:2",
+    "learningObjective": "Reconhecer que o rugido de Deus contra a injustiça alcança também o seu próprio povo, não apenas as nações vizinhas.",
+    "evidence": [
+      "Amós 1:2"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Amós 1:2?",
+    "prompt": "Como se encadeiam os eventos de Amós 1:2?",
+    "cue": "Como se encadeiam os eventos de Amós 1:2?",
+    "feedbackCorrect": "Certo: o rugido antecede e provoca o pranto das pastagens e a seca do Carmelo.",
+    "feedbackWrong": {
+      "b": "A ordem está deslocada: o pranto das pastagens é consequência do rugido, não o contrário.",
+      "c": "A ordem está deslocada: a seca do Carmelo fecha a cena, não a abre."
+    },
+    "passageText": "Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz"
+      },
+      {
+        "id": "b",
+        "text": "as pastagens dos pastores prantearão"
+      },
+      {
+        "id": "c",
+        "text": "o cume do Carmelo secará"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "id": "amos-cam-amos-amos-01-rugido-de-siao-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Amós 1:2",
+    "learningObjective": "Reconhecer que o rugido de Deus contra a injustiça alcança também o seu próprio povo, não apenas as nações vizinhas.",
+    "evidence": [
+      "Amós 1:2"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Jeová rugirá de ___ e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará\"",
+    "prompt": "Complete a frase: \"Jeová rugirá de ___ e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará\"",
+    "cue": "Complete a frase: \"Jeová rugirá de ___ e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará\"",
+    "feedbackCorrect": "Certo: é de Sião que parte o rugido de Jeová.",
+    "feedbackWrong": {
+      "b": "Jerusalém aparece depois de Sião como o lugar onde a voz é ouvida.",
+      "c": "O Carmelo aparece só no fim do verso, como o lugar que seca."
+    },
+    "passageText": "Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará.",
+    "template": "Jeová rugirá de ___ e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sião"
+      },
+      {
+        "id": "b",
+        "text": "Jerusalém"
+      },
+      {
+        "id": "c",
+        "text": "Carmelo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "id": "amos-cam-amos-amos-01-rugido-de-siao-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Amós 1:2",
+    "learningObjective": "Reconhecer que o rugido de Deus contra a injustiça alcança também o seu próprio povo, não apenas as nações vizinhas.",
+    "evidence": [
+      "Amós 1:2"
+    ],
+    "type": "connect",
+    "question": "O que Amós 1:2 comunica que se liga a este contexto?",
+    "prompt": "O que Amós 1:2 comunica que se liga a este contexto?",
+    "cue": "O que Amós 1:2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o mesmo rugido que julga as nações vizinhas atinge também Israel.",
+    "feedbackWrong": {
+      "a": "O texto mostra Deus rugindo e agindo, não calado diante da injustiça.",
+      "c": "O Carmelo, dentro de Israel, também seca — o juízo não poupa o povo da aliança."
+    },
+    "passageText": "Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará.",
+    "passageA": {
+      "ref": "Amós 1:2",
+      "text": "Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O rugido que abre o livro prepara o leitor para oráculos de juízo contra as nações e, por fim, contra Israel."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus fica em silêncio diante da injustiça de Israel"
+      },
+      {
+        "id": "b",
+        "text": "A justiça de Deus não poupa o seu povo escolhido"
+      },
+      {
+        "id": "c",
+        "text": "O juízo é reservado só para as nações pagãs"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "id": "amos-cam-amos-amos-01-rugido-de-siao-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Amós 1:2",
+    "learningObjective": "Reconhecer que o rugido de Deus contra a injustiça alcança também o seu próprio povo, não apenas as nações vizinhas.",
+    "evidence": [
+      "Amós 1:2"
+    ],
+    "type": "true_false",
+    "question": "Amós 1:2 sugere que a justiça de Deus não faz distinção entre nações estrangeiras e o povo da aliança.",
+    "prompt": "Amós 1:2 sugere que a justiça de Deus não faz distinção entre nações estrangeiras e o povo da aliança.",
+    "cue": "Amós 1:2 sugere que a justiça de Deus não faz distinção entre nações estrangeiras e o povo da aliança.",
+    "feedbackCorrect": "Certo: o mesmo rugido que julga as nações atinge também o território de Israel.",
+    "feedbackWrong": {
+      "false": "O texto mostra o juízo alcançando o Carmelo, que fica dentro de Israel."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará.",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "id": "amos-pro-amos-amos-01-rugido-de-siao-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Amós 1:2",
+    "learningObjective": "Reconhecer que o rugido de Deus contra a injustiça alcança também o seu próprio povo, não apenas as nações vizinhas.",
+    "evidence": [
+      "Amós 1:2"
+    ],
+    "type": "tap",
+    "question": "Em Amós 1:2, toque a palavra que falta em \"Jeová rugirá de Sião e de ___ fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará\"?",
+    "prompt": "Em Amós 1:2, toque a palavra que falta em \"Jeová rugirá de Sião e de ___ fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará\"?",
+    "cue": "Em Amós 1:2, toque a palavra que falta em \"Jeová rugirá de Sião e de ___ fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará\"?",
+    "feedbackCorrect": "Exato: é de Jerusalém que a voz de Jeová se faz ouvir.",
+    "feedbackWrong": {
+      "b": "Sião já aparece antes, como o lugar de onde parte o rugido.",
+      "c": "O Carmelo só aparece no fim do verso, como o lugar que seca."
+    },
+    "passageText": "Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará.",
+    "template": "Jeová rugirá de Sião e de ___ fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jerusalém"
+      },
+      {
+        "id": "b",
+        "text": "Sião"
+      },
+      {
+        "id": "c",
+        "text": "Carmelo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "id": "amos-pro-amos-amos-01-rugido-de-siao-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Amós 1:2",
+    "learningObjective": "Reconhecer que o rugido de Deus contra a injustiça alcança também o seu próprio povo, não apenas as nações vizinhas.",
+    "evidence": [
+      "Amós 1:2"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de Amós 1:2?",
+    "prompt": "Qual leitura interpreta melhor o sentido de Amós 1:2?",
+    "cue": "Qual leitura interpreta melhor o sentido de Amós 1:2?",
+    "feedbackCorrect": "Certo: o juízo parte do lugar da presença de Deus e se estende a toda a criação.",
+    "feedbackWrong": {
+      "b": "O rugido parte de Sião; o texto não descreve abandono desse lugar.",
+      "c": "A seca do Carmelo é sinal do juízo de Deus, não uma simples estação do ano.",
+      "d": "O texto descreve o oposto: é a voz que ruge, e não o silêncio, que traz o juízo."
+    },
+    "passageText": "Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O rugido revela que o juízo de Deus parte do seu santuário antes de alcançar toda a terra."
+      },
+      {
+        "id": "b",
+        "text": "O rugido indica que Deus abandonou Sião em favor das nações vizinhas."
+      },
+      {
+        "id": "c",
+        "text": "A imagem ensina que o juízo de Deus depende apenas do clima e das estações."
+      },
+      {
+        "id": "d",
+        "text": "O texto ensina que o silêncio de Deus é mais temível do que o seu rugido."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "id": "amos-pro-amos-amos-01-rugido-de-siao-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Amós 1:2",
+    "learningObjective": "Reconhecer que o rugido de Deus contra a injustiça alcança também o seu próprio povo, não apenas as nações vizinhas.",
+    "evidence": [
+      "Amós 1:2"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Amós 1:2?",
+    "prompt": "Qual sequência revela o sentido de Amós 1:2?",
+    "cue": "Qual sequência revela o sentido de Amós 1:2?",
+    "feedbackCorrect": "Certo: a voz de Jeová antecede e explica o pranto e a seca que se seguem.",
+    "feedbackWrong": {
+      "b": "A ordem está deslocada: o pranto das pastagens é efeito do rugido, não sua causa.",
+      "c": "A ordem está deslocada: a seca do Carmelo é o resultado final, não o ponto de partida."
+    },
+    "passageText": "Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz"
+      },
+      {
+        "id": "b",
+        "text": "as pastagens dos pastores prantearão"
+      },
+      {
+        "id": "c",
+        "text": "o cume do Carmelo secará"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "id": "amos-pro-amos-amos-01-rugido-de-siao-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Amós 1:2",
+    "learningObjective": "Reconhecer que o rugido de Deus contra a injustiça alcança também o seu próprio povo, não apenas as nações vizinhas.",
+    "evidence": [
+      "Amós 1:2"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do ___ secará\"",
+    "prompt": "Complete a frase: \"Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do ___ secará\"",
+    "cue": "Complete a frase: \"Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do ___ secará\"",
+    "feedbackCorrect": "Certo: é o cume do Carmelo, região fértil de Israel, que seca sob o juízo.",
+    "feedbackWrong": {
+      "b": "Sião é de onde parte o rugido, não o lugar que seca no fim do verso.",
+      "c": "Jerusalém é onde a voz é ouvida, não o lugar que seca no fim do verso."
+    },
+    "passageText": "Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará.",
+    "template": "Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do ___ secará",
+    "options": [
+      {
+        "id": "a",
+        "text": "Carmelo"
+      },
+      {
+        "id": "b",
+        "text": "Sião"
+      },
+      {
+        "id": "c",
+        "text": "Jerusalém"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "id": "amos-pro-amos-amos-01-rugido-de-siao-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Amós 1:2",
+    "learningObjective": "Reconhecer que o rugido de Deus contra a injustiça alcança também o seu próprio povo, não apenas as nações vizinhas.",
+    "evidence": [
+      "Amós 1:2"
+    ],
+    "type": "connect",
+    "question": "O que Amós 1:2 comunica que se liga a este contexto?",
+    "prompt": "O que Amós 1:2 comunica que se liga a este contexto?",
+    "cue": "O que Amós 1:2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o rugido nasce de Sião, o lugar da presença de Deus, e se estende à terra.",
+    "feedbackWrong": {
+      "a": "O texto mostra uma direção clara: de Sião para toda a terra.",
+      "b": "O Carmelo, dentro de Israel, também seca sob o mesmo juízo."
+    },
+    "passageText": "Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará.",
+    "passageA": {
+      "ref": "Amós 1:2",
+      "text": "Jeová rugirá de Sião e de Jerusalém fará ouvir a sua voz; as pastagens dos pastores prantearão, e o cume do Carmelo secará."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O rugido que parte de Sião mostra que o juízo de Deus nasce do seu próprio santuário antes de alcançar toda a terra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O juízo é aleatório e sem direção definida"
+      },
+      {
+        "id": "b",
+        "text": "Deus julga apenas o que está fora da aliança"
+      },
+      {
+        "id": "c",
+        "text": "O juízo começa no santuário de Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "amos",
+    "section": "amos-amos-01-rugido-de-siao",
+    "id": "amos-pro-amos-amos-01-rugido-de-siao-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Amós 5:24",
+    "learningObjective": "Entender que a verdadeira adoração exige a prática constante da justiça, não apenas cerimônias religiosas.",
+    "evidence": [
+      "Amós 5:24"
+    ],
+    "type": "true_false",
+    "question": "Em Amós 5:24, o juízo é comparado a águas que descem, e a justiça, a uma torrente poderosa.",
+    "prompt": "Em Amós 5:24, o juízo é comparado a águas que descem, e a justiça, a uma torrente poderosa.",
+    "cue": "Em Amós 5:24, o juízo é comparado a águas que descem, e a justiça, a uma torrente poderosa.",
+    "feedbackCorrect": "Certo: o texto usa exatamente essas duas imagens, água e torrente.",
+    "feedbackWrong": {
+      "false": "Releia Amós 5:24: o texto compara o juízo a águas e a justiça a uma torrente."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Porém desça o juízo como águas, e a justiça, como uma torrente poderosa.",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "id": "amos-sem-amos-amos-02-deixai-correr-o-juiz-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Amós 5:24",
+    "learningObjective": "Entender que a verdadeira adoração exige a prática constante da justiça, não apenas cerimônias religiosas.",
+    "evidence": [
+      "Amós 5:24"
+    ],
+    "type": "tap",
+    "question": "Em Amós 5:24, toque a palavra que falta em \"Porém ___ o juízo como águas, e a justiça, como uma torrente poderosa\"?",
+    "prompt": "Em Amós 5:24, toque a palavra que falta em \"Porém ___ o juízo como águas, e a justiça, como uma torrente poderosa\"?",
+    "cue": "Em Amós 5:24, toque a palavra que falta em \"Porém ___ o juízo como águas, e a justiça, como uma torrente poderosa\"?",
+    "feedbackCorrect": "Exato: é o verbo que pede a chegada do juízo, como uma correnteza.",
+    "feedbackWrong": {
+      "b": "Essa palavra é a imagem usada para o juízo, não o verbo que o convoca.",
+      "c": "Essa palavra é a imagem usada para a justiça, não o verbo que abre o verso."
+    },
+    "passageText": "Porém desça o juízo como águas, e a justiça, como uma torrente poderosa.",
+    "template": "Porém ___ o juízo como águas, e a justiça, como uma torrente poderosa",
+    "options": [
+      {
+        "id": "a",
+        "text": "desça"
+      },
+      {
+        "id": "b",
+        "text": "águas"
+      },
+      {
+        "id": "c",
+        "text": "torrente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "id": "amos-sem-amos-amos-02-deixai-correr-o-juiz-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Amós 5:24",
+    "learningObjective": "Entender que a verdadeira adoração exige a prática constante da justiça, não apenas cerimônias religiosas.",
+    "evidence": [
+      "Amós 5:24"
+    ],
+    "type": "choice",
+    "question": "Qual destas afirmações é feita diretamente pelo texto de Amós 5:24?",
+    "prompt": "Qual destas afirmações é feita diretamente pelo texto de Amós 5:24?",
+    "cue": "Qual destas afirmações é feita diretamente pelo texto de Amós 5:24?",
+    "feedbackCorrect": "Certo: essas são exatamente as duas imagens usadas no verso.",
+    "feedbackWrong": {
+      "b": "O texto usa água e torrente, não vento, como imagem do juízo.",
+      "c": "O texto pede uma torrente poderosa, e não um rio que seca.",
+      "d": "A imagem do verso é de água em movimento, não de oferta no altar."
+    },
+    "passageText": "Porém desça o juízo como águas, e a justiça, como uma torrente poderosa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O juízo é comparado a águas, e a justiça, a uma torrente poderosa."
+      },
+      {
+        "id": "b",
+        "text": "O texto compara o juízo ao vento que sopra sobre o deserto."
+      },
+      {
+        "id": "c",
+        "text": "A passagem descreve a justiça como um rio que seca todo verão."
+      },
+      {
+        "id": "d",
+        "text": "Amós compara a justiça a uma oferta queimada sobre o altar."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "id": "amos-sem-amos-amos-02-deixai-correr-o-juiz-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Amós 5:24",
+    "learningObjective": "Entender que a verdadeira adoração exige a prática constante da justiça, não apenas cerimônias religiosas.",
+    "evidence": [
+      "Amós 5:24"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Amós 5:24?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Amós 5:24?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Amós 5:24?",
+    "feedbackCorrect": "Certo: essa é a sequência que o texto mostra.",
+    "feedbackWrong": {
+      "b": "A ordem está deslocada: a menção à justiça vem depois do pedido pelo juízo.",
+      "c": "A ordem está deslocada: a torrente poderosa fecha o verso, como imagem da justiça."
+    },
+    "passageText": "Porém desça o juízo como águas, e a justiça, como uma torrente poderosa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porém desça o juízo como águas"
+      },
+      {
+        "id": "b",
+        "text": "e a justiça"
+      },
+      {
+        "id": "c",
+        "text": "como uma torrente poderosa"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "id": "amos-sem-amos-amos-02-deixai-correr-o-juiz-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Amós 5:24",
+    "learningObjective": "Entender que a verdadeira adoração exige a prática constante da justiça, não apenas cerimônias religiosas.",
+    "evidence": [
+      "Amós 5:24"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Porém desça o ___ como águas, e a justiça, como uma torrente poderosa\"",
+    "prompt": "Complete a frase: \"Porém desça o ___ como águas, e a justiça, como uma torrente poderosa\"",
+    "cue": "Complete a frase: \"Porém desça o ___ como águas, e a justiça, como uma torrente poderosa\"",
+    "feedbackCorrect": "Certo: é o juízo que deve descer como águas.",
+    "feedbackWrong": {
+      "b": "Essa palavra já abre o verso; a lacuna pede o que desce como águas.",
+      "c": "Essa palavra é a imagem usada, não o que desce como águas."
+    },
+    "passageText": "Porém desça o juízo como águas, e a justiça, como uma torrente poderosa.",
+    "template": "Porém desça o ___ como águas, e a justiça, como uma torrente poderosa",
+    "options": [
+      {
+        "id": "a",
+        "text": "juízo"
+      },
+      {
+        "id": "b",
+        "text": "desça"
+      },
+      {
+        "id": "c",
+        "text": "águas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "id": "amos-sem-amos-amos-02-deixai-correr-o-juiz-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Amós 5:24",
+    "learningObjective": "Entender que a verdadeira adoração exige a prática constante da justiça, não apenas cerimônias religiosas.",
+    "evidence": [
+      "Amós 5:24"
+    ],
+    "type": "connect",
+    "question": "O que Amós 5:24 comunica que se liga a este contexto?",
+    "prompt": "O que Amós 5:24 comunica que se liga a este contexto?",
+    "cue": "O que Amós 5:24 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a imagem da torrente poderosa pede justiça contínua, não ocasional.",
+    "feedbackWrong": {
+      "b": "O verso pede justiça em movimento constante, não apenas ritual.",
+      "c": "O verso apresenta a justiça como um pedido central, não como algo opcional."
+    },
+    "passageText": "Porém desça o juízo como águas, e a justiça, como uma torrente poderosa.",
+    "passageA": {
+      "ref": "Amós 5:24",
+      "text": "Porém desça o juízo como águas, e a justiça, como uma torrente poderosa."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Este passo ensina que festas e cultos não substituem a prática constante da justiça."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A justiça deve correr sem parar, como um rio"
+      },
+      {
+        "id": "b",
+        "text": "Ritual bem feito substitui a prática da justiça"
+      },
+      {
+        "id": "c",
+        "text": "A justiça é opcional para o povo de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "id": "amos-sem-amos-amos-02-deixai-correr-o-juiz-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Amós 5:24",
+    "learningObjective": "Entender que a verdadeira adoração exige a prática constante da justiça, não apenas cerimônias religiosas.",
+    "evidence": [
+      "Amós 5:21-24"
+    ],
+    "type": "true_false",
+    "question": "Em Amós 5:24, Deus pede que o povo aumente suas ofertas e festas para agradá-lo.",
+    "prompt": "Em Amós 5:24, Deus pede que o povo aumente suas ofertas e festas para agradá-lo.",
+    "cue": "Em Amós 5:24, Deus pede que o povo aumente suas ofertas e festas para agradá-lo.",
+    "feedbackCorrect": "Certo: o texto pede justiça constante, não mais ofertas ou festas.",
+    "feedbackWrong": {
+      "true": "Releia Amós 5:21-24: Deus rejeita as festas e ofertas quando falta justiça."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Porém desça o juízo como águas, e a justiça, como uma torrente poderosa.",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "id": "amos-cam-amos-amos-02-deixai-correr-o-juiz-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Amós 5:24",
+    "learningObjective": "Entender que a verdadeira adoração exige a prática constante da justiça, não apenas cerimônias religiosas.",
+    "evidence": [
+      "Amós 5:24"
+    ],
+    "type": "tap",
+    "question": "Em Amós 5:24, toque a palavra que falta em \"Porém desça o juízo como ___, e a justiça, como uma torrente poderosa\"?",
+    "prompt": "Em Amós 5:24, toque a palavra que falta em \"Porém desça o juízo como ___, e a justiça, como uma torrente poderosa\"?",
+    "cue": "Em Amós 5:24, toque a palavra que falta em \"Porém desça o juízo como ___, e a justiça, como uma torrente poderosa\"?",
+    "feedbackCorrect": "Exato: o juízo é comparado a águas que descem.",
+    "feedbackWrong": {
+      "b": "Essa palavra é o verbo do início do verso, não a imagem do juízo.",
+      "c": "Essa palavra é a imagem usada para a justiça, não para o juízo."
+    },
+    "passageText": "Porém desça o juízo como águas, e a justiça, como uma torrente poderosa.",
+    "template": "Porém desça o juízo como ___, e a justiça, como uma torrente poderosa",
+    "options": [
+      {
+        "id": "a",
+        "text": "águas"
+      },
+      {
+        "id": "b",
+        "text": "desça"
+      },
+      {
+        "id": "c",
+        "text": "torrente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "id": "amos-cam-amos-amos-02-deixai-correr-o-juiz-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Amós 5:24",
+    "learningObjective": "Entender que a verdadeira adoração exige a prática constante da justiça, não apenas cerimônias religiosas.",
+    "evidence": [
+      "Amós 5:24"
+    ],
+    "type": "choice",
+    "question": "Qual leitura melhor conecta Amós 5:24 ao contexto da missão?",
+    "prompt": "Qual leitura melhor conecta Amós 5:24 ao contexto da missão?",
+    "cue": "Qual leitura melhor conecta Amós 5:24 ao contexto da missão?",
+    "feedbackCorrect": "Certo: a torrente poderosa pede justiça constante, praticada por todos.",
+    "feedbackWrong": {
+      "b": "A imagem de uma torrente que corre pede uma justiça presente, não futura.",
+      "c": "O contexto do capítulo rejeita cultos que não vêm acompanhados de justiça.",
+      "d": "O apelo do profeta é dirigido a todo o povo, não apenas aos sacerdotes."
+    },
+    "passageText": "Porém desça o juízo como águas, e a justiça, como uma torrente poderosa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A verdadeira adoração exige que a justiça corra continuamente, como um rio."
+      },
+      {
+        "id": "b",
+        "text": "O texto ensina que a justiça é um ideal só para um futuro distante."
+      },
+      {
+        "id": "c",
+        "text": "A passagem sugere que os cultos bastam, desde que sejam bem organizados."
+      },
+      {
+        "id": "d",
+        "text": "Amós defende que a justiça é tarefa exclusiva dos sacerdotes."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "id": "amos-cam-amos-amos-02-deixai-correr-o-juiz-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Amós 5:24",
+    "learningObjective": "Entender que a verdadeira adoração exige a prática constante da justiça, não apenas cerimônias religiosas.",
+    "evidence": [
+      "Amós 5:24"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Amós 5:24?",
+    "prompt": "Como se encadeiam os eventos de Amós 5:24?",
+    "cue": "Como se encadeiam os eventos de Amós 5:24?",
+    "feedbackCorrect": "Certo: o pedido pelo juízo vem primeiro, e a justiça é descrita em seguida como torrente.",
+    "feedbackWrong": {
+      "b": "A ordem está deslocada: a justiça é retomada depois do pedido inicial pelo juízo.",
+      "c": "A ordem está deslocada: a torrente poderosa é a imagem final da justiça."
+    },
+    "passageText": "Porém desça o juízo como águas, e a justiça, como uma torrente poderosa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porém desça o juízo como águas"
+      },
+      {
+        "id": "b",
+        "text": "e a justiça"
+      },
+      {
+        "id": "c",
+        "text": "como uma torrente poderosa"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "id": "amos-cam-amos-amos-02-deixai-correr-o-juiz-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Amós 5:24",
+    "learningObjective": "Entender que a verdadeira adoração exige a prática constante da justiça, não apenas cerimônias religiosas.",
+    "evidence": [
+      "Amós 5:24"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Porém desça o juízo como águas, e a ___, como uma torrente poderosa\"",
+    "prompt": "Complete a frase: \"Porém desça o juízo como águas, e a ___, como uma torrente poderosa\"",
+    "cue": "Complete a frase: \"Porém desça o juízo como águas, e a ___, como uma torrente poderosa\"",
+    "feedbackCorrect": "Certo: é a justiça que deve correr como uma torrente poderosa.",
+    "feedbackWrong": {
+      "b": "Essa palavra é a imagem usada para o juízo, não o que corre como torrente.",
+      "c": "Essa palavra é a imagem, não o que ela descreve na lacuna."
+    },
+    "passageText": "Porém desça o juízo como águas, e a justiça, como uma torrente poderosa.",
+    "template": "Porém desça o juízo como águas, e a ___, como uma torrente poderosa",
+    "options": [
+      {
+        "id": "a",
+        "text": "justiça"
+      },
+      {
+        "id": "b",
+        "text": "águas"
+      },
+      {
+        "id": "c",
+        "text": "torrente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "id": "amos-cam-amos-amos-02-deixai-correr-o-juiz-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Amós 5:24",
+    "learningObjective": "Entender que a verdadeira adoração exige a prática constante da justiça, não apenas cerimônias religiosas.",
+    "evidence": [
+      "Amós 5:24"
+    ],
+    "type": "connect",
+    "question": "O que Amós 5:24 comunica que se liga a este contexto?",
+    "prompt": "O que Amós 5:24 comunica que se liga a este contexto?",
+    "cue": "O que Amós 5:24 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a torrente poderosa é imagem de uma justiça que nunca para.",
+    "feedbackWrong": {
+      "a": "O verso não pede mais ritual, e sim justiça em movimento contínuo.",
+      "c": "O contexto do capítulo coloca a justiça acima do culto vazio."
+    },
+    "passageText": "Porém desça o juízo como águas, e a justiça, como uma torrente poderosa.",
+    "passageA": {
+      "ref": "Amós 5:24",
+      "text": "Porém desça o juízo como águas, e a justiça, como uma torrente poderosa."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A fé que agrada a Deus se manifesta em justiça praticada todos os dias, não só em ocasiões especiais."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ritual mais elaborado resolve a injustiça do povo"
+      },
+      {
+        "id": "b",
+        "text": "Fé verdadeira produz justiça constante"
+      },
+      {
+        "id": "c",
+        "text": "A justiça é tema secundário diante do culto"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "id": "amos-cam-amos-amos-02-deixai-correr-o-juiz-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Amós 5:24",
+    "learningObjective": "Entender que a verdadeira adoração exige a prática constante da justiça, não apenas cerimônias religiosas.",
+    "evidence": [
+      "Amós 5:24"
+    ],
+    "type": "true_false",
+    "question": "Amós 5:24 ensina que a justiça deve ser tão constante quanto uma torrente que nunca seca.",
+    "prompt": "Amós 5:24 ensina que a justiça deve ser tão constante quanto uma torrente que nunca seca.",
+    "cue": "Amós 5:24 ensina que a justiça deve ser tão constante quanto uma torrente que nunca seca.",
+    "feedbackCorrect": "Certo: a imagem da torrente poderosa comunica continuidade, não um gesto isolado.",
+    "feedbackWrong": {
+      "false": "O texto compara a justiça a uma torrente poderosa, imagem de continuidade."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Porém desça o juízo como águas, e a justiça, como uma torrente poderosa.",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "id": "amos-pro-amos-amos-02-deixai-correr-o-juiz-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Amós 5:24",
+    "learningObjective": "Entender que a verdadeira adoração exige a prática constante da justiça, não apenas cerimônias religiosas.",
+    "evidence": [
+      "Amós 5:24"
+    ],
+    "type": "tap",
+    "question": "Em Amós 5:24, toque a palavra que falta em \"Porém desça o juízo como águas, e a justiça, como uma ___ poderosa\"?",
+    "prompt": "Em Amós 5:24, toque a palavra que falta em \"Porém desça o juízo como águas, e a justiça, como uma ___ poderosa\"?",
+    "cue": "Em Amós 5:24, toque a palavra que falta em \"Porém desça o juízo como águas, e a justiça, como uma ___ poderosa\"?",
+    "feedbackCorrect": "Exato: a justiça é comparada a uma torrente poderosa.",
+    "feedbackWrong": {
+      "b": "Essa palavra é a imagem usada para o juízo, não para a justiça no final do verso.",
+      "c": "Essa palavra é o que está sendo comparado, não a imagem em si."
+    },
+    "passageText": "Porém desça o juízo como águas, e a justiça, como uma torrente poderosa.",
+    "template": "Porém desça o juízo como águas, e a justiça, como uma ___ poderosa",
+    "options": [
+      {
+        "id": "a",
+        "text": "torrente"
+      },
+      {
+        "id": "b",
+        "text": "águas"
+      },
+      {
+        "id": "c",
+        "text": "justiça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "id": "amos-pro-amos-amos-02-deixai-correr-o-juiz-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Amós 5:24",
+    "learningObjective": "Entender que a verdadeira adoração exige a prática constante da justiça, não apenas cerimônias religiosas.",
+    "evidence": [
+      "Amós 5:24"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de Amós 5:24?",
+    "prompt": "Qual leitura interpreta melhor o sentido de Amós 5:24?",
+    "cue": "Qual leitura interpreta melhor o sentido de Amós 5:24?",
+    "feedbackCorrect": "Certo: o clamor por justiça revela que o culto, sem ela, não basta.",
+    "feedbackWrong": {
+      "b": "O contexto do capítulo rejeita justamente rituais sem justiça.",
+      "c": "O verso coloca a justiça no centro, à frente de qualquer liturgia.",
+      "d": "O apelo é dirigido ao próprio povo de Israel, não a nações estrangeiras."
+    },
+    "passageText": "Porém desça o juízo como águas, e a justiça, como uma torrente poderosa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O texto revela que a fé sem justiça é adoração vazia aos olhos de Deus."
+      },
+      {
+        "id": "b",
+        "text": "A passagem ensina que rituais bem executados garantem o favor divino."
+      },
+      {
+        "id": "c",
+        "text": "O texto sugere que a justiça é secundária diante da liturgia do templo."
+      },
+      {
+        "id": "d",
+        "text": "Amós ensina que o juízo de Deus só afeta as nações estrangeiras."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "id": "amos-pro-amos-amos-02-deixai-correr-o-juiz-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Amós 5:24",
+    "learningObjective": "Entender que a verdadeira adoração exige a prática constante da justiça, não apenas cerimônias religiosas.",
+    "evidence": [
+      "Amós 5:24"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Amós 5:24?",
+    "prompt": "Qual sequência revela o sentido de Amós 5:24?",
+    "cue": "Qual sequência revela o sentido de Amós 5:24?",
+    "feedbackCorrect": "Certo: o juízo abre caminho, e a justiça é descrita como força contínua.",
+    "feedbackWrong": {
+      "b": "A ordem está deslocada: a justiça é retomada depois do pedido pelo juízo.",
+      "c": "A ordem está deslocada: a torrente poderosa é a imagem final da justiça."
+    },
+    "passageText": "Porém desça o juízo como águas, e a justiça, como uma torrente poderosa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porém desça o juízo como águas"
+      },
+      {
+        "id": "b",
+        "text": "e a justiça"
+      },
+      {
+        "id": "c",
+        "text": "como uma torrente poderosa"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "id": "amos-pro-amos-amos-02-deixai-correr-o-juiz-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Amós 5:24",
+    "learningObjective": "Entender que a verdadeira adoração exige a prática constante da justiça, não apenas cerimônias religiosas.",
+    "evidence": [
+      "Amós 5:24"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Porém desça o juízo como águas, e a justiça, como uma torrente ___\"",
+    "prompt": "Complete a frase: \"Porém desça o juízo como águas, e a justiça, como uma torrente ___\"",
+    "cue": "Complete a frase: \"Porém desça o juízo como águas, e a justiça, como uma torrente ___\"",
+    "feedbackCorrect": "Certo: a torrente é descrita como poderosa, símbolo de força contínua.",
+    "feedbackWrong": {
+      "b": "Essa palavra é a imagem do juízo, não o adjetivo que descreve a torrente.",
+      "c": "Essa palavra já aparece antes da lacuna; falta o adjetivo que a qualifica."
+    },
+    "passageText": "Porém desça o juízo como águas, e a justiça, como uma torrente poderosa.",
+    "template": "Porém desça o juízo como águas, e a justiça, como uma torrente ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "poderosa"
+      },
+      {
+        "id": "b",
+        "text": "águas"
+      },
+      {
+        "id": "c",
+        "text": "torrente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "id": "amos-pro-amos-amos-02-deixai-correr-o-juiz-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Amós 5:24",
+    "learningObjective": "Entender que a verdadeira adoração exige a prática constante da justiça, não apenas cerimônias religiosas.",
+    "evidence": [
+      "Amós 5:24"
+    ],
+    "type": "connect",
+    "question": "O que Amós 5:24 comunica que se liga a este contexto?",
+    "prompt": "O que Amós 5:24 comunica que se liga a este contexto?",
+    "cue": "O que Amós 5:24 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o clamor por justiça em forma de torrente denuncia o culto vazio.",
+    "feedbackWrong": {
+      "a": "O verso pede justiça em movimento, e não apenas culto correto.",
+      "b": "O verso coloca a justiça como exigência central, não dispensável."
+    },
+    "passageText": "Porém desça o juízo como águas, e a justiça, como uma torrente poderosa.",
+    "passageA": {
+      "ref": "Amós 5:24",
+      "text": "Porém desça o juízo como águas, e a justiça, como uma torrente poderosa."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A adoração que Deus aceita nasce de uma vida marcada pela justiça, não apenas por cerimônias corretas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Culto correto substitui a prática da justiça"
+      },
+      {
+        "id": "b",
+        "text": "A justiça é dispensável quando há adoração"
+      },
+      {
+        "id": "c",
+        "text": "Adoração sem justiça não agrada a Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "amos",
+    "section": "amos-amos-02-deixai-correr-o-juiz",
+    "id": "amos-pro-amos-amos-02-deixai-correr-o-juiz-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Amós 5:18",
+    "learningObjective": "Sintetizar o alerta de Amós: o Dia do Senhor é motivo de temor, não de festa automática, para quem vive sem justiça.",
+    "evidence": [
+      "Amós 5:18"
+    ],
+    "type": "true_false",
+    "question": "Em Amós 5:18, o Dia de Jeová é chamado de trevas, e não de luz.",
+    "prompt": "Em Amós 5:18, o Dia de Jeová é chamado de trevas, e não de luz.",
+    "cue": "Em Amós 5:18, o Dia de Jeová é chamado de trevas, e não de luz.",
+    "feedbackCorrect": "Certo: o texto termina afirmando exatamente essa comparação.",
+    "feedbackWrong": {
+      "false": "Releia Amós 5:18: o texto diz que o Dia de Jeová é trevas e não luz."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz.",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "id": "amos-sem-amos-amos-03-desafio-amos-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Amós 5:18",
+    "learningObjective": "Sintetizar o alerta de Amós: o Dia do Senhor é motivo de temor, não de festa automática, para quem vive sem justiça.",
+    "evidence": [
+      "Amós 5:18"
+    ],
+    "type": "tap",
+    "question": "Em Amós 5:18, toque a palavra que falta em \"Ai de vós que ___ o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz\"?",
+    "prompt": "Em Amós 5:18, toque a palavra que falta em \"Ai de vós que ___ o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz\"?",
+    "cue": "Em Amós 5:18, toque a palavra que falta em \"Ai de vós que ___ o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz\"?",
+    "feedbackCorrect": "Exato: o profeta lamenta os que desejam esse dia.",
+    "feedbackWrong": {
+      "b": "Essa palavra descreve o Dia de Jeová no final do texto, não o verbo inicial.",
+      "c": "Essa palavra também descreve o Dia de Jeová no final, não o verbo inicial."
+    },
+    "passageText": "Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz.",
+    "template": "Ai de vós que ___ o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz",
+    "options": [
+      {
+        "id": "a",
+        "text": "desejais"
+      },
+      {
+        "id": "b",
+        "text": "trevas"
+      },
+      {
+        "id": "c",
+        "text": "luz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "id": "amos-sem-amos-amos-03-desafio-amos-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Amós 5:18",
+    "learningObjective": "Sintetizar o alerta de Amós: o Dia do Senhor é motivo de temor, não de festa automática, para quem vive sem justiça.",
+    "evidence": [
+      "Amós 5:18"
+    ],
+    "type": "choice",
+    "question": "Qual destas afirmações é feita diretamente pelo texto de Amós 5:18?",
+    "prompt": "Qual destas afirmações é feita diretamente pelo texto de Amós 5:18?",
+    "cue": "Qual destas afirmações é feita diretamente pelo texto de Amós 5:18?",
+    "feedbackCorrect": "Certo: o texto termina com exatamente essa afirmação.",
+    "feedbackWrong": {
+      "b": "O texto afirma o oposto: o Dia de Jeová é trevas, não alegria garantida.",
+      "c": "O texto não descreve uma festa; descreve um lamento sobre um dia temido.",
+      "d": "O texto fala de um dia ainda desejado e temido, não de algo já encerrado."
+    },
+    "passageText": "Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O texto chama o Dia de Jeová de trevas, e não de luz."
+      },
+      {
+        "id": "b",
+        "text": "O texto promete que o Dia de Jeová trará só alegria a Israel."
+      },
+      {
+        "id": "c",
+        "text": "A passagem descreve o Dia de Jeová como uma festa da colheita."
+      },
+      {
+        "id": "d",
+        "text": "Amós afirma que o Dia de Jeová já havia terminado em seus dias."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "id": "amos-sem-amos-amos-03-desafio-amos-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Amós 5:18",
+    "learningObjective": "Sintetizar o alerta de Amós: o Dia do Senhor é motivo de temor, não de festa automática, para quem vive sem justiça.",
+    "evidence": [
+      "Amós 5:18"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Amós 5:18?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Amós 5:18?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Amós 5:18?",
+    "feedbackCorrect": "Certo: essa é a sequência que o texto mostra.",
+    "feedbackWrong": {
+      "b": "A ordem está deslocada: a pergunta retórica vem depois do lamento inicial.",
+      "c": "A ordem está deslocada: a resposta sobre trevas e luz fecha o texto."
+    },
+    "passageText": "Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ai de vós que desejais o Dia de Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Para que desejais vós o Dia de Jeová"
+      },
+      {
+        "id": "c",
+        "text": "Ele é trevas e não luz"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "id": "amos-sem-amos-amos-03-desafio-amos-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Amós 5:18",
+    "learningObjective": "Sintetizar o alerta de Amós: o Dia do Senhor é motivo de temor, não de festa automática, para quem vive sem justiça.",
+    "evidence": [
+      "Amós 5:18"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é ___ e não luz\"",
+    "prompt": "Complete a frase: \"Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é ___ e não luz\"",
+    "cue": "Complete a frase: \"Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é ___ e não luz\"",
+    "feedbackCorrect": "Certo: o Dia de Jeová é chamado de trevas.",
+    "feedbackWrong": {
+      "b": "Essa palavra é o que o Dia de Jeová não é, segundo o texto.",
+      "c": "Essa palavra é o verbo repetido no início, não a resposta final."
+    },
+    "passageText": "Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz.",
+    "template": "Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é ___ e não luz",
+    "options": [
+      {
+        "id": "a",
+        "text": "trevas"
+      },
+      {
+        "id": "b",
+        "text": "luz"
+      },
+      {
+        "id": "c",
+        "text": "desejais"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "id": "amos-sem-amos-amos-03-desafio-amos-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Amós 5:18",
+    "learningObjective": "Sintetizar o alerta de Amós: o Dia do Senhor é motivo de temor, não de festa automática, para quem vive sem justiça.",
+    "evidence": [
+      "Amós 5:18"
+    ],
+    "type": "connect",
+    "question": "O que Amós 5:18 comunica que se liga a este contexto?",
+    "prompt": "O que Amós 5:18 comunica que se liga a este contexto?",
+    "cue": "O que Amós 5:18 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o texto adverte que desejar o dia do Senhor sem justiça é ilusão.",
+    "feedbackWrong": {
+      "b": "O texto chama esse dia de trevas, e não de festa garantida.",
+      "c": "O apelo do livro inteiro liga o juízo diretamente à falta de justiça."
+    },
+    "passageText": "Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz.",
+    "passageA": {
+      "ref": "Amós 5:18",
+      "text": "Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Este passo revela que confiar em privilégios religiosos não livra ninguém do juízo de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Privilégio religioso não livra do juízo"
+      },
+      {
+        "id": "b",
+        "text": "O Dia do Senhor é motivo de festa garantida"
+      },
+      {
+        "id": "c",
+        "text": "O juízo divino não depende da justiça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "id": "amos-sem-amos-amos-03-desafio-amos-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Amós 5:18",
+    "learningObjective": "Sintetizar o alerta de Amós: o Dia do Senhor é motivo de temor, não de festa automática, para quem vive sem justiça.",
+    "evidence": [
+      "Amós 5:18"
+    ],
+    "type": "true_false",
+    "question": "Amós ensina que o Dia de Jeová traria automaticamente luz e vitória para todo o povo de Israel, sem exceção.",
+    "prompt": "Amós ensina que o Dia de Jeová traria automaticamente luz e vitória para todo o povo de Israel, sem exceção.",
+    "cue": "Amós ensina que o Dia de Jeová traria automaticamente luz e vitória para todo o povo de Israel, sem exceção.",
+    "feedbackCorrect": "Certo: o texto adverte que esse dia será trevas, não luz automática.",
+    "feedbackWrong": {
+      "true": "O texto corrige exatamente essa expectativa: o Dia de Jeová é trevas, não luz."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz.",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "id": "amos-cam-amos-amos-03-desafio-amos-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Amós 5:18",
+    "learningObjective": "Sintetizar o alerta de Amós: o Dia do Senhor é motivo de temor, não de festa automática, para quem vive sem justiça.",
+    "evidence": [
+      "Amós 5:18"
+    ],
+    "type": "tap",
+    "question": "Em Amós 5:18, toque a palavra que falta em \"Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não ___\"?",
+    "prompt": "Em Amós 5:18, toque a palavra que falta em \"Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não ___\"?",
+    "cue": "Em Amós 5:18, toque a palavra que falta em \"Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não ___\"?",
+    "feedbackCorrect": "Exato: o Dia de Jeová não é luz, segundo o texto.",
+    "feedbackWrong": {
+      "b": "Essa palavra é o que o Dia de Jeová é, não o que ele não é.",
+      "c": "Essa palavra é o verbo repetido no início, não a resposta final."
+    },
+    "passageText": "Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz.",
+    "template": "Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "luz"
+      },
+      {
+        "id": "b",
+        "text": "trevas"
+      },
+      {
+        "id": "c",
+        "text": "desejais"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "id": "amos-cam-amos-amos-03-desafio-amos-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Amós 5:18",
+    "learningObjective": "Sintetizar o alerta de Amós: o Dia do Senhor é motivo de temor, não de festa automática, para quem vive sem justiça.",
+    "evidence": [
+      "Amós 5:18"
+    ],
+    "type": "choice",
+    "question": "Qual leitura melhor conecta Amós 5:18 ao contexto da missão?",
+    "prompt": "Qual leitura melhor conecta Amós 5:18 ao contexto da missão?",
+    "cue": "Qual leitura melhor conecta Amós 5:18 ao contexto da missão?",
+    "feedbackCorrect": "Certo: o profeta desmonta a esperança de um dia só de vitória.",
+    "feedbackWrong": {
+      "b": "O lamento do profeta é dirigido a todo o povo que deseja esse dia, não só aos sacerdotes.",
+      "c": "O texto não menciona jejum nem a possibilidade de adiar esse dia.",
+      "d": "O peso do lamento mostra que o profeta trata de um dia real, não apenas figurado."
+    },
+    "passageText": "Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A pergunta de Amós expõe a falsa expectativa de que o Dia traria só vitória."
+      },
+      {
+        "id": "b",
+        "text": "O texto sugere que o Dia de Jeová afetará somente os sacerdotes corruptos."
+      },
+      {
+        "id": "c",
+        "text": "A passagem ensina que o Dia do Senhor pode ser adiado com jejum."
+      },
+      {
+        "id": "d",
+        "text": "Amós afirma que o Dia de Jeová é apenas uma figura de linguagem sem cumprimento real."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "id": "amos-cam-amos-amos-03-desafio-amos-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Amós 5:18",
+    "learningObjective": "Sintetizar o alerta de Amós: o Dia do Senhor é motivo de temor, não de festa automática, para quem vive sem justiça.",
+    "evidence": [
+      "Amós 5:18"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Amós 5:18?",
+    "prompt": "Como se encadeiam os eventos de Amós 5:18?",
+    "cue": "Como se encadeiam os eventos de Amós 5:18?",
+    "feedbackCorrect": "Certo: o lamento inicial leva à pergunta retórica, respondida pela imagem das trevas.",
+    "feedbackWrong": {
+      "b": "A ordem está deslocada: a pergunta retórica retoma o lamento inicial, não o abre.",
+      "c": "A ordem está deslocada: a resposta sobre trevas e luz é a conclusão do texto."
+    },
+    "passageText": "Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ai de vós que desejais o Dia de Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Para que desejais vós o Dia de Jeová"
+      },
+      {
+        "id": "c",
+        "text": "Ele é trevas e não luz"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "id": "amos-cam-amos-amos-03-desafio-amos-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Amós 5:18",
+    "learningObjective": "Sintetizar o alerta de Amós: o Dia do Senhor é motivo de temor, não de festa automática, para quem vive sem justiça.",
+    "evidence": [
+      "Amós 5:18"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de ___? Ele é trevas e não luz\"",
+    "prompt": "Complete a frase: \"Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de ___? Ele é trevas e não luz\"",
+    "cue": "Complete a frase: \"Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de ___? Ele é trevas e não luz\"",
+    "feedbackCorrect": "Certo: é o Dia de Jeová que o texto repete na pergunta retórica.",
+    "feedbackWrong": {
+      "b": "Essa palavra aparece só na resposta final, não na pergunta retórica.",
+      "c": "Essa palavra também aparece só na resposta final, não na pergunta retórica."
+    },
+    "passageText": "Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz.",
+    "template": "Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de ___? Ele é trevas e não luz",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "trevas"
+      },
+      {
+        "id": "c",
+        "text": "luz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "id": "amos-cam-amos-amos-03-desafio-amos-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Amós 5:18",
+    "learningObjective": "Sintetizar o alerta de Amós: o Dia do Senhor é motivo de temor, não de festa automática, para quem vive sem justiça.",
+    "evidence": [
+      "Amós 5:18"
+    ],
+    "type": "connect",
+    "question": "O que Amós 5:18 comunica que se liga a este contexto?",
+    "prompt": "O que Amós 5:18 comunica que se liga a este contexto?",
+    "cue": "O que Amós 5:18 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a pergunta retórica do profeta desfaz essa esperança vazia.",
+    "feedbackWrong": {
+      "a": "O texto adverte justamente o contrário: quem deseja esse dia sem justiça terá trevas.",
+      "c": "O texto não liga esse dia à tradição religiosa, e sim à ausência de justiça."
+    },
+    "passageText": "Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz.",
+    "passageA": {
+      "ref": "Amós 5:18",
+      "text": "Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Esperar o Dia do Senhor como festa garantida, sem justiça, é uma esperança que o próprio profeta desmente."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Quem clama pelo juízo está sempre seguro dele"
+      },
+      {
+        "id": "b",
+        "text": "Esperar o Dia do Senhor sem justiça é ilusão"
+      },
+      {
+        "id": "c",
+        "text": "O Dia do Senhor favorece quem tem tradição religiosa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "id": "amos-cam-amos-amos-03-desafio-amos-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Amós 5:18",
+    "learningObjective": "Sintetizar o alerta de Amós: o Dia do Senhor é motivo de temor, não de festa automática, para quem vive sem justiça.",
+    "evidence": [
+      "Amós 5:18"
+    ],
+    "type": "true_false",
+    "question": "Amós 5:18 ensina que o Dia do Senhor só é motivo de esperança para quem pratica a justiça, não para quem confia apenas em privilégios.",
+    "prompt": "Amós 5:18 ensina que o Dia do Senhor só é motivo de esperança para quem pratica a justiça, não para quem confia apenas em privilégios.",
+    "cue": "Amós 5:18 ensina que o Dia do Senhor só é motivo de esperança para quem pratica a justiça, não para quem confia apenas em privilégios.",
+    "feedbackCorrect": "Certo: o lamento do profeta desmonta a esperança vazia de quem não vive a justiça.",
+    "feedbackWrong": {
+      "false": "O texto chama de trevas o dia que muitos esperavam como luz garantida."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz.",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "id": "amos-pro-amos-amos-03-desafio-amos-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Amós 5:18",
+    "learningObjective": "Sintetizar o alerta de Amós: o Dia do Senhor é motivo de temor, não de festa automática, para quem vive sem justiça.",
+    "evidence": [
+      "Amós 5:18"
+    ],
+    "type": "tap",
+    "question": "Em Amós 5:18, toque a palavra que falta em \"___ de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz\"?",
+    "prompt": "Em Amós 5:18, toque a palavra que falta em \"___ de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz\"?",
+    "cue": "Em Amós 5:18, toque a palavra que falta em \"___ de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz\"?",
+    "feedbackCorrect": "Exato: o texto abre com um lamento, \"Ai de vós\".",
+    "feedbackWrong": {
+      "b": "Essa palavra aparece só no fim do texto, não na abertura do lamento.",
+      "c": "Essa palavra também aparece só no fim do texto, não na abertura do lamento."
+    },
+    "passageText": "Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz.",
+    "template": "___ de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ai"
+      },
+      {
+        "id": "b",
+        "text": "trevas"
+      },
+      {
+        "id": "c",
+        "text": "luz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "id": "amos-pro-amos-amos-03-desafio-amos-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Amós 5:18",
+    "learningObjective": "Sintetizar o alerta de Amós: o Dia do Senhor é motivo de temor, não de festa automática, para quem vive sem justiça.",
+    "evidence": [
+      "Amós 5:18"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de Amós 5:18?",
+    "prompt": "Qual leitura interpreta melhor o sentido de Amós 5:18?",
+    "cue": "Qual leitura interpreta melhor o sentido de Amós 5:18?",
+    "feedbackCorrect": "Certo: o lamento expõe a ilusão de confiar em pertencimento sem justiça.",
+    "feedbackWrong": {
+      "b": "O texto não questiona a origem do Dia de Jeová, e sim a expectativa vazia sobre ele.",
+      "c": "O peso do lamento mostra que o profeta trata de um juízo real, não de um exagero.",
+      "d": "O texto liga o juízo à falta de justiça, não a datas do calendário religioso."
+    },
+    "passageText": "Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O texto revela que pertencer ao povo de Deus não substitui viver a justiça."
+      },
+      {
+        "id": "b",
+        "text": "A passagem ensina que o Dia de Jeová é uma invenção tardia de escribas."
+      },
+      {
+        "id": "c",
+        "text": "O texto sugere que a escuridão do Dia do Senhor é apenas um exagero poético."
+      },
+      {
+        "id": "d",
+        "text": "Amós ensina que o juízo divino depende do calendário das festas religiosas."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "id": "amos-pro-amos-amos-03-desafio-amos-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Amós 5:18",
+    "learningObjective": "Sintetizar o alerta de Amós: o Dia do Senhor é motivo de temor, não de festa automática, para quem vive sem justiça.",
+    "evidence": [
+      "Amós 5:18"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Amós 5:18?",
+    "prompt": "Qual sequência revela o sentido de Amós 5:18?",
+    "cue": "Qual sequência revela o sentido de Amós 5:18?",
+    "feedbackCorrect": "Certo: o lamento leva à pergunta, e a pergunta é respondida pela imagem das trevas.",
+    "feedbackWrong": {
+      "b": "A ordem está deslocada: a pergunta retórica repete e aprofunda o lamento inicial.",
+      "c": "A ordem está deslocada: a resposta sobre trevas e luz é o clímax final do texto."
+    },
+    "passageText": "Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ai de vós que desejais o Dia de Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Para que desejais vós o Dia de Jeová"
+      },
+      {
+        "id": "c",
+        "text": "Ele é trevas e não luz"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "id": "amos-pro-amos-amos-03-desafio-amos-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Amós 5:18",
+    "learningObjective": "Sintetizar o alerta de Amós: o Dia do Senhor é motivo de temor, não de festa automática, para quem vive sem justiça.",
+    "evidence": [
+      "Amós 5:18"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Ai de vós que desejais o ___ de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz\"",
+    "prompt": "Complete a frase: \"Ai de vós que desejais o ___ de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz\"",
+    "cue": "Complete a frase: \"Ai de vós que desejais o ___ de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz\"",
+    "feedbackCorrect": "Certo: é o Dia de Jeová que o povo desejava sem entender o seu peso.",
+    "feedbackWrong": {
+      "b": "Essa palavra aparece só na resposta final, não na primeira menção ao dia.",
+      "c": "Essa palavra também aparece só na resposta final, não na primeira menção ao dia."
+    },
+    "passageText": "Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz.",
+    "template": "Ai de vós que desejais o ___ de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dia"
+      },
+      {
+        "id": "b",
+        "text": "trevas"
+      },
+      {
+        "id": "c",
+        "text": "luz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "id": "amos-pro-amos-amos-03-desafio-amos-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Amós 5:18",
+    "learningObjective": "Sintetizar o alerta de Amós: o Dia do Senhor é motivo de temor, não de festa automática, para quem vive sem justiça.",
+    "evidence": [
+      "Amós 5:18"
+    ],
+    "type": "connect",
+    "question": "O que Amós 5:18 comunica que se liga a este contexto?",
+    "prompt": "O que Amós 5:18 comunica que se liga a este contexto?",
+    "cue": "O que Amós 5:18 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o lamento do profeta mostra que privilégio sem justiça não sustenta ninguém no juízo.",
+    "feedbackWrong": {
+      "a": "O texto mostra exatamente o oposto: pertencer ao povo não dispensa a justiça.",
+      "b": "O texto liga o juízo com clareza à falta de justiça, não ao acaso."
+    },
+    "passageText": "Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz.",
+    "passageA": {
+      "ref": "Amós 5:18",
+      "text": "Ai de vós que desejais o Dia de Jeová! Para que desejais vós o Dia de Jeová? Ele é trevas e não luz."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O juízo de Deus cobra fidelidade concreta, não apenas o fato de pertencer ao povo da aliança."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pertencer ao povo de Deus dispensa a prática da justiça"
+      },
+      {
+        "id": "b",
+        "text": "O juízo divino é aleatório e imprevisível"
+      },
+      {
+        "id": "c",
+        "text": "Pertencer ao povo de Deus exige fidelidade, não só tradição"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "amos",
+    "section": "amos-amos-03-desafio-amos",
+    "id": "amos-pro-amos-amos-03-desafio-amos-06"
+  }
+]

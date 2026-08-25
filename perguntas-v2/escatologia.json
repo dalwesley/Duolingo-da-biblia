@@ -1,0 +1,2972 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 1:11",
+    "learningObjective": "Reconhecer que Jesus voltará do mesmo modo como foi recebido no céu; a espera não é olhar vazio.",
+    "evidence": [
+      "Atos 1:11"
+    ],
+    "type": "true_false",
+    "question": "Esse Jesus virá do modo como o vistes ir para o céu.",
+    "prompt": "Esse Jesus virá do modo como o vistes ir para o céu.",
+    "cue": "Esse Jesus virá do modo como o vistes ir para o céu.",
+    "feedbackCorrect": "Certo: Atos 1:11 afirma a volta do mesmo modo da subida.",
+    "feedbackWrong": {
+      "false": "Releia: esse Jesus assim virá como o vistes ir."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu.",
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "id": "escatologia-sem-es-01-volta-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 1:11",
+    "learningObjective": "Reconhecer que Jesus voltará do mesmo modo como foi recebido no céu; a espera não é olhar vazio.",
+    "evidence": [
+      "Atos 1:11"
+    ],
+    "type": "tap",
+    "question": "Em Atos 1:11, toque a palavra que falta em \"Galileus, por que estais olhando para o ___\"?",
+    "prompt": "Em Atos 1:11, toque a palavra que falta em \"Galileus, por que estais olhando para o ___\"?",
+    "cue": "Em Atos 1:11, toque a palavra que falta em \"Galileus, por que estais olhando para o ___\"?",
+    "feedbackCorrect": "Exato: olhando para o céu.",
+    "feedbackWrong": {
+      "b": "Jesus é o sujeito da volta, não esta lacuna.",
+      "c": "Virá descreve a vinda, não o lugar do olhar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "céu"
+      },
+      {
+        "id": "b",
+        "text": "Jesus"
+      },
+      {
+        "id": "c",
+        "text": "virá"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu.",
+    "template": "Galileus, por que estais olhando para o ___",
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "id": "escatologia-sem-es-01-volta-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 1:11",
+    "learningObjective": "Reconhecer que Jesus voltará do mesmo modo como foi recebido no céu; a espera não é olhar vazio.",
+    "evidence": [
+      "Atos 1:11"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação o texto de Atos 1:11 registra diretamente?",
+    "prompt": "Qual afirmação o texto de Atos 1:11 registra diretamente?",
+    "cue": "Qual afirmação o texto de Atos 1:11 registra diretamente?",
+    "feedbackCorrect": "Certo: o mesmo Jesus voltará como foi visto ir.",
+    "feedbackWrong": {
+      "b": "O texto promete vinda, não ausência definitiva.",
+      "c": "A subida não apaga a identidade de Jesus.",
+      "d": "O olhar ao céu não substitui a promessa da volta."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Esse Jesus assim virá do modo como o vistes ir para o céu."
+      },
+      {
+        "id": "b",
+        "text": "Jesus não voltará depois de ser recebido no céu."
+      },
+      {
+        "id": "c",
+        "text": "Outro messias virá no lugar daquele que subiu."
+      },
+      {
+        "id": "d",
+        "text": "Os galileus devem ficar só olhando, sem esperança de volta."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu.",
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "id": "escatologia-sem-es-01-volta-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 1:11",
+    "learningObjective": "Reconhecer que Jesus voltará do mesmo modo como foi recebido no céu; a espera não é olhar vazio.",
+    "evidence": [
+      "Atos 1:11"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Atos 1:11?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Atos 1:11?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Atos 1:11?",
+    "feedbackCorrect": "Certo: pergunta, olhar ao céu, promessa da volta.",
+    "feedbackWrong": {
+      "b": "A fala aos galileus vem depois do ‘perguntaram’.",
+      "c": "A promessa da volta fecha o trecho, não o abre."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "e lhes perguntaram"
+      },
+      {
+        "id": "b",
+        "text": "Galileus, por que estais olhando para o céu"
+      },
+      {
+        "id": "c",
+        "text": "Esse Jesus que dentre vós foi recebido no céu assim virá"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "id": "escatologia-sem-es-01-volta-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 1:11",
+    "learningObjective": "Reconhecer que Jesus voltará do mesmo modo como foi recebido no céu; a espera não é olhar vazio.",
+    "evidence": [
+      "Atos 1:11"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Esse Jesus que dentre vós foi recebido no céu assim ___\"",
+    "prompt": "Complete a frase: \"Esse Jesus que dentre vós foi recebido no céu assim ___\"",
+    "cue": "Complete a frase: \"Esse Jesus que dentre vós foi recebido no céu assim ___\"",
+    "feedbackCorrect": "Certo: assim virá do modo como o vistes ir.",
+    "feedbackWrong": {
+      "b": "Céu é o lugar, não o verbo desta lacuna.",
+      "c": "Vistes descreve o modo da subida, não o verbo da volta."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "virá"
+      },
+      {
+        "id": "b",
+        "text": "céu"
+      },
+      {
+        "id": "c",
+        "text": "vistes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu.",
+    "template": "Esse Jesus que dentre vós foi recebido no céu assim ___",
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "id": "escatologia-sem-es-01-volta-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 1:11",
+    "learningObjective": "Reconhecer que Jesus voltará do mesmo modo como foi recebido no céu; a espera não é olhar vazio.",
+    "evidence": [
+      "Atos 1:11"
+    ],
+    "type": "connect",
+    "question": "O que Atos 1:11 comunica que se liga a este contexto?",
+    "prompt": "O que Atos 1:11 comunica que se liga a este contexto?",
+    "cue": "O que Atos 1:11 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a volta tem o mesmo modo da subida.",
+    "feedbackWrong": {
+      "b": "O texto não descreve espera vazia sem vinda.",
+      "c": "Jesus não é substituído por outro após a subida."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Volta como a subida"
+      },
+      {
+        "id": "b",
+        "text": "Olhar vazio sem volta"
+      },
+      {
+        "id": "c",
+        "text": "Outro messias no lugar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu.",
+    "passageA": {
+      "ref": "Atos 1:11",
+      "text": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jesus voltará do mesmo modo como foi recebido no céu — a espera não é olhar vazio."
+    },
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "id": "escatologia-sem-es-01-volta-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 1:11",
+    "learningObjective": "Reconhecer que Jesus voltará do mesmo modo como foi recebido no céu; a espera não é olhar vazio.",
+    "evidence": [
+      "Atos 1:11"
+    ],
+    "type": "true_false",
+    "question": "O texto ensina que a espera cristã se resume a olhar vazio para o céu, sem a promessa de que Jesus voltará.",
+    "prompt": "O texto ensina que a espera cristã se resume a olhar vazio para o céu, sem a promessa de que Jesus voltará.",
+    "cue": "O texto ensina que a espera cristã se resume a olhar vazio para o céu, sem a promessa de que Jesus voltará.",
+    "feedbackCorrect": "Certo: o olhar é corrigido pela promessa da volta.",
+    "feedbackWrong": {
+      "true": "Eles são perguntados pelo olhar; Jesus assim virá."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu.",
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "id": "escatologia-cam-es-01-volta-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 1:11",
+    "learningObjective": "Reconhecer que Jesus voltará do mesmo modo como foi recebido no céu; a espera não é olhar vazio.",
+    "evidence": [
+      "Atos 1:11"
+    ],
+    "type": "tap",
+    "question": "Em Atos 1:11, toque a palavra que falta em \"Esse Jesus que dentre vós foi ___ no céu\"?",
+    "prompt": "Em Atos 1:11, toque a palavra que falta em \"Esse Jesus que dentre vós foi ___ no céu\"?",
+    "cue": "Em Atos 1:11, toque a palavra que falta em \"Esse Jesus que dentre vós foi ___ no céu\"?",
+    "feedbackCorrect": "Exato: foi recebido no céu.",
+    "feedbackWrong": {
+      "b": "Olhando descreve os galileus, não esta lacuna.",
+      "c": "Vistes refere-se ao modo de ir, não ao ‘foi ___’."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "recebido"
+      },
+      {
+        "id": "b",
+        "text": "olhando"
+      },
+      {
+        "id": "c",
+        "text": "vistes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu.",
+    "template": "Esse Jesus que dentre vós foi ___ no céu",
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "id": "escatologia-cam-es-01-volta-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 1:11",
+    "learningObjective": "Reconhecer que Jesus voltará do mesmo modo como foi recebido no céu; a espera não é olhar vazio.",
+    "evidence": [
+      "Atos 1:11"
+    ],
+    "type": "choice",
+    "question": "Como Atos 1:11 relaciona o olhar para o céu e a volta de Jesus?",
+    "prompt": "Como Atos 1:11 relaciona o olhar para o céu e a volta de Jesus?",
+    "cue": "Como Atos 1:11 relaciona o olhar para o céu e a volta de Jesus?",
+    "feedbackCorrect": "Certo: o olhar vazio é corrigido pela mesma volta visível.",
+    "feedbackWrong": {
+      "a": "O texto não manda permanecer só olhando.",
+      "c": "A identidade de Jesus permanece na volta.",
+      "d": "A subida não cancela a vinda; ela a descreve."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O olhar ao céu substitui a espera da volta"
+      },
+      {
+        "id": "b",
+        "text": "A subida visível fundamenta a volta do mesmo modo"
+      },
+      {
+        "id": "c",
+        "text": "Quem subiu não é o mesmo que voltará"
+      },
+      {
+        "id": "d",
+        "text": "A recepção no céu encerra qualquer vinda futura"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu.",
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "id": "escatologia-cam-es-01-volta-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 1:11",
+    "learningObjective": "Reconhecer que Jesus voltará do mesmo modo como foi recebido no céu; a espera não é olhar vazio.",
+    "evidence": [
+      "Atos 1:11"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Atos 1:11?",
+    "prompt": "Como se encadeiam os eventos de Atos 1:11?",
+    "cue": "Como se encadeiam os eventos de Atos 1:11?",
+    "feedbackCorrect": "Certo: recebido no céu, assim virá, como o vistes ir.",
+    "feedbackWrong": {
+      "b": "Primeiro vem a recepção no céu, não o ‘para o céu’ final.",
+      "c": "O ‘para o céu’ fecha o modo da subida vista."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "foi recebido no céu"
+      },
+      {
+        "id": "b",
+        "text": "assim virá do modo como o vistes ir"
+      },
+      {
+        "id": "c",
+        "text": "para o céu"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "id": "escatologia-cam-es-01-volta-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 1:11",
+    "learningObjective": "Reconhecer que Jesus voltará do mesmo modo como foi recebido no céu; a espera não é olhar vazio.",
+    "evidence": [
+      "Atos 1:11"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"assim virá do modo como o ___ ir para o céu\"",
+    "prompt": "Complete a frase: \"assim virá do modo como o ___ ir para o céu\"",
+    "cue": "Complete a frase: \"assim virá do modo como o ___ ir para o céu\"",
+    "feedbackCorrect": "Certo: como o vistes ir para o céu.",
+    "feedbackWrong": {
+      "b": "Recebido descreve a subida, não esta lacuna.",
+      "c": "Galileus é o vocativo, não o verbo ‘vistes’."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "vistes"
+      },
+      {
+        "id": "b",
+        "text": "recebido"
+      },
+      {
+        "id": "c",
+        "text": "Galileus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu.",
+    "template": "assim virá do modo como o ___ ir para o céu",
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "id": "escatologia-cam-es-01-volta-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 1:11",
+    "learningObjective": "Reconhecer que Jesus voltará do mesmo modo como foi recebido no céu; a espera não é olhar vazio.",
+    "evidence": [
+      "Atos 1:11"
+    ],
+    "type": "connect",
+    "question": "O que Atos 1:11 comunica que se liga a este contexto?",
+    "prompt": "O que Atos 1:11 comunica que se liga a este contexto?",
+    "cue": "O que Atos 1:11 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a espera tem conteúdo — a mesma volta visível.",
+    "feedbackWrong": {
+      "b": "O trecho não reduz a fé a curiosidade celeste.",
+      "c": "Não há troca de pessoa entre subida e volta."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Espera com volta visível"
+      },
+      {
+        "id": "b",
+        "text": "Curiosidade sem promessa"
+      },
+      {
+        "id": "c",
+        "text": "Troca de messias no céu"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu.",
+    "passageA": {
+      "ref": "Atos 1:11",
+      "text": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jesus voltará do mesmo modo como foi recebido no céu — a espera não é olhar vazio."
+    },
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "id": "escatologia-cam-es-01-volta-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 1:11",
+    "learningObjective": "Reconhecer que Jesus voltará do mesmo modo como foi recebido no céu; a espera não é olhar vazio.",
+    "evidence": [
+      "Atos 1:11"
+    ],
+    "type": "true_false",
+    "question": "A volta de Jesus é do mesmo modo da subida: o que foi recebido no céu assim virá.",
+    "prompt": "A volta de Jesus é do mesmo modo da subida: o que foi recebido no céu assim virá.",
+    "cue": "A volta de Jesus é do mesmo modo da subida: o que foi recebido no céu assim virá.",
+    "feedbackCorrect": "Certo: o texto liga subida vista e vinda futura.",
+    "feedbackWrong": {
+      "false": "O ‘assim virá’ replica o modo da subida vista."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu.",
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "id": "escatologia-pro-es-01-volta-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 1:11",
+    "learningObjective": "Reconhecer que Jesus voltará do mesmo modo como foi recebido no céu; a espera não é olhar vazio.",
+    "evidence": [
+      "Atos 1:11"
+    ],
+    "type": "tap",
+    "question": "Em Atos 1:11, toque a palavra que falta em \"Esse ___ que dentre vós foi recebido no céu\"?",
+    "prompt": "Em Atos 1:11, toque a palavra que falta em \"Esse ___ que dentre vós foi recebido no céu\"?",
+    "cue": "Em Atos 1:11, toque a palavra que falta em \"Esse ___ que dentre vós foi recebido no céu\"?",
+    "feedbackCorrect": "Exato: esse Jesus, o mesmo que subiu.",
+    "feedbackWrong": {
+      "b": "Céu é o lugar, não o nome desta lacuna.",
+      "c": "Modo descreve a forma da volta, não o sujeito."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus"
+      },
+      {
+        "id": "b",
+        "text": "céu"
+      },
+      {
+        "id": "c",
+        "text": "modo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu.",
+    "template": "Esse ___ que dentre vós foi recebido no céu",
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "id": "escatologia-pro-es-01-volta-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 1:11",
+    "learningObjective": "Reconhecer que Jesus voltará do mesmo modo como foi recebido no céu; a espera não é olhar vazio.",
+    "evidence": [
+      "Atos 1:11"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido teológico de Atos 1:11?",
+    "prompt": "Qual leitura interpreta melhor o sentido teológico de Atos 1:11?",
+    "cue": "Qual leitura interpreta melhor o sentido teológico de Atos 1:11?",
+    "feedbackCorrect": "Certo: a esperança assenta no mesmo Jesus que subiu.",
+    "feedbackWrong": {
+      "a": "O olhar vazio é questionado, não canonizado.",
+      "b": "A identidade de Jesus persiste na volta.",
+      "d": "A recepção no céu descreve o modo, não o fim da história."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A fé escatológica é só contemplar o céu sem vinda"
+      },
+      {
+        "id": "b",
+        "text": "Outro virá, pois o que subiu já não retorna"
+      },
+      {
+        "id": "c",
+        "text": "O mesmo Jesus voltará visivelmente, como foi visto ir"
+      },
+      {
+        "id": "d",
+        "text": "Ser recebido no céu substitui qualquer juízo e volta"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu.",
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "id": "escatologia-pro-es-01-volta-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 1:11",
+    "learningObjective": "Reconhecer que Jesus voltará do mesmo modo como foi recebido no céu; a espera não é olhar vazio.",
+    "evidence": [
+      "Atos 1:11"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Atos 1:11?",
+    "prompt": "Qual sequência revela o sentido de Atos 1:11?",
+    "cue": "Qual sequência revela o sentido de Atos 1:11?",
+    "feedbackCorrect": "Certo: olhar, o mesmo Jesus recebido, a volta no mesmo modo.",
+    "feedbackWrong": {
+      "b": "O sentido começa no olhar questionado, não na volta.",
+      "c": "A volta no mesmo modo fecha o sentido do trecho."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "estais olhando para o céu"
+      },
+      {
+        "id": "b",
+        "text": "Esse Jesus que dentre vós foi recebido no céu"
+      },
+      {
+        "id": "c",
+        "text": "assim virá do modo como o vistes ir para o céu"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "id": "escatologia-pro-es-01-volta-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 1:11",
+    "learningObjective": "Reconhecer que Jesus voltará do mesmo modo como foi recebido no céu; a espera não é olhar vazio.",
+    "evidence": [
+      "Atos 1:11"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"___, por que estais olhando para o céu\"",
+    "prompt": "Complete a frase: \"___, por que estais olhando para o céu\"",
+    "cue": "Complete a frase: \"___, por que estais olhando para o céu\"",
+    "feedbackCorrect": "Certo: Galileus, por que estais olhando para o céu.",
+    "feedbackWrong": {
+      "b": "Jesus é o que volta, não o vocativo desta frase.",
+      "c": "Virá pertence à promessa, não a este chamado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Galileus"
+      },
+      {
+        "id": "b",
+        "text": "Jesus"
+      },
+      {
+        "id": "c",
+        "text": "virá"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu.",
+    "template": "___, por que estais olhando para o céu",
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "id": "escatologia-pro-es-01-volta-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 1:11",
+    "learningObjective": "Reconhecer que Jesus voltará do mesmo modo como foi recebido no céu; a espera não é olhar vazio.",
+    "evidence": [
+      "Atos 1:11"
+    ],
+    "type": "connect",
+    "question": "O que Atos 1:11 comunica que se liga a este contexto?",
+    "prompt": "O que Atos 1:11 comunica que se liga a este contexto?",
+    "cue": "O que Atos 1:11 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a esperança não é olhar vazio, mas a volta do mesmo.",
+    "feedbackWrong": {
+      "b": "O trecho recusa uma espera sem conteúdo.",
+      "c": "Espiritualizar a volta contra o ‘assim virá’."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Mesmo Jesus, mesma volta"
+      },
+      {
+        "id": "b",
+        "text": "Espera vazia sem vinda"
+      },
+      {
+        "id": "c",
+        "text": "Volta só interior e invisível"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu.",
+    "passageA": {
+      "ref": "Atos 1:11",
+      "text": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jesus voltará do mesmo modo como foi recebido no céu — a espera não é olhar vazio."
+    },
+    "trail": "escatologia",
+    "section": "es-01-volta",
+    "id": "escatologia-pro-es-01-volta-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Coríntios 5:10",
+    "learningObjective": "Reconhecer que todos comparecem ao tribunal de Cristo e recebem conforme o que praticaram no corpo.",
+    "evidence": [
+      "2 Coríntios 5:10"
+    ],
+    "type": "true_false",
+    "question": "É necessário que todos sejamos descobertos perante o tribunal de Cristo.",
+    "prompt": "É necessário que todos sejamos descobertos perante o tribunal de Cristo.",
+    "cue": "É necessário que todos sejamos descobertos perante o tribunal de Cristo.",
+    "feedbackCorrect": "Certo: 2 Coríntios 5:10 afirma o tribunal de Cristo.",
+    "feedbackWrong": {
+      "false": "Releia: todos sejamos descobertos perante o tribunal."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Pois é necessário que todos sejamos descobertos perante o tribunal de Cristo, para que cada um receba o que fez por meio do corpo, conforme o que praticou, o bem ou o mal.",
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "id": "escatologia-sem-es-02-juizo-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Coríntios 5:10",
+    "learningObjective": "Reconhecer que todos comparecem ao tribunal de Cristo e recebem conforme o que praticaram no corpo.",
+    "evidence": [
+      "2 Coríntios 5:10"
+    ],
+    "type": "tap",
+    "question": "Em 2 Coríntios 5:10, toque a palavra que falta em \"todos sejamos descobertos perante o ___ de Cristo\"?",
+    "prompt": "Em 2 Coríntios 5:10, toque a palavra que falta em \"todos sejamos descobertos perante o ___ de Cristo\"?",
+    "cue": "Em 2 Coríntios 5:10, toque a palavra que falta em \"todos sejamos descobertos perante o ___ de Cristo\"?",
+    "feedbackCorrect": "Exato: o tribunal de Cristo.",
+    "feedbackWrong": {
+      "b": "Corpo entra depois, no que se fez.",
+      "c": "Bem descreve o que se praticou, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "tribunal"
+      },
+      {
+        "id": "b",
+        "text": "corpo"
+      },
+      {
+        "id": "c",
+        "text": "bem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois é necessário que todos sejamos descobertos perante o tribunal de Cristo, para que cada um receba o que fez por meio do corpo, conforme o que praticou, o bem ou o mal.",
+    "template": "todos sejamos descobertos perante o ___ de Cristo",
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "id": "escatologia-sem-es-02-juizo-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Coríntios 5:10",
+    "learningObjective": "Reconhecer que todos comparecem ao tribunal de Cristo e recebem conforme o que praticaram no corpo.",
+    "evidence": [
+      "2 Coríntios 5:10"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação 2 Coríntios 5:10 registra diretamente?",
+    "prompt": "Qual afirmação 2 Coríntios 5:10 registra diretamente?",
+    "cue": "Qual afirmação 2 Coríntios 5:10 registra diretamente?",
+    "feedbackCorrect": "Certo: cada um recebe o que fez por meio do corpo.",
+    "feedbackWrong": {
+      "b": "O texto fala de todos, não de uma elite isenta.",
+      "c": "O que se fez no corpo entra no juízo.",
+      "d": "Há bem ou mal, não indiferença moral."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cada um recebe o que fez por meio do corpo, o bem ou o mal."
+      },
+      {
+        "id": "b",
+        "text": "Só alguns serão descobertos perante o tribunal de Cristo."
+      },
+      {
+        "id": "c",
+        "text": "O que se fez no corpo não entra no juízo."
+      },
+      {
+        "id": "d",
+        "text": "Perante Cristo não há distinção entre bem e mal."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois é necessário que todos sejamos descobertos perante o tribunal de Cristo, para que cada um receba o que fez por meio do corpo, conforme o que praticou, o bem ou o mal.",
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "id": "escatologia-sem-es-02-juizo-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Coríntios 5:10",
+    "learningObjective": "Reconhecer que todos comparecem ao tribunal de Cristo e recebem conforme o que praticaram no corpo.",
+    "evidence": [
+      "2 Coríntios 5:10"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em 2 Coríntios 5:10?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em 2 Coríntios 5:10?",
+    "cue": "Qual sequência mostra a ordem dos fatos em 2 Coríntios 5:10?",
+    "feedbackCorrect": "Certo: tribunal, o feito no corpo, bem ou mal.",
+    "feedbackWrong": {
+      "b": "O comparecimento vem antes da retribuição.",
+      "c": "O bem ou o mal fecha o critério, não o abre."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "é necessário que todos sejamos descobertos perante o tribunal de Cristo"
+      },
+      {
+        "id": "b",
+        "text": "para que cada um receba o que fez por meio do corpo"
+      },
+      {
+        "id": "c",
+        "text": "conforme o que praticou, o bem ou o mal"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois é necessário que todos sejamos descobertos perante o tribunal de Cristo, para que cada um receba o que fez por meio do corpo, conforme o que praticou, o bem ou o mal.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "id": "escatologia-sem-es-02-juizo-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Coríntios 5:10",
+    "learningObjective": "Reconhecer que todos comparecem ao tribunal de Cristo e recebem conforme o que praticaram no corpo.",
+    "evidence": [
+      "2 Coríntios 5:10"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"cada um receba o que fez por meio do ___\"",
+    "prompt": "Complete a frase: \"cada um receba o que fez por meio do ___\"",
+    "cue": "Complete a frase: \"cada um receba o que fez por meio do ___\"",
+    "feedbackCorrect": "Certo: por meio do corpo.",
+    "feedbackWrong": {
+      "b": "Tribunal é o lugar, não esta lacuna.",
+      "c": "Mal aparece no critério final, não aqui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "corpo"
+      },
+      {
+        "id": "b",
+        "text": "tribunal"
+      },
+      {
+        "id": "c",
+        "text": "mal"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois é necessário que todos sejamos descobertos perante o tribunal de Cristo, para que cada um receba o que fez por meio do corpo, conforme o que praticou, o bem ou o mal.",
+    "template": "cada um receba o que fez por meio do ___",
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "id": "escatologia-sem-es-02-juizo-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "2 Coríntios 5:10",
+    "learningObjective": "Reconhecer que todos comparecem ao tribunal de Cristo e recebem conforme o que praticaram no corpo.",
+    "evidence": [
+      "2 Coríntios 5:10"
+    ],
+    "type": "connect",
+    "question": "O que 2 Coríntios 5:10 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Coríntios 5:10 comunica que se liga a este contexto?",
+    "cue": "O que 2 Coríntios 5:10 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o que se fez no corpo importa no tribunal.",
+    "feedbackWrong": {
+      "b": "Ninguém fica de fora do comparecimento.",
+      "c": "O texto não trata o corpo como irrelevante."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O corpo importa no juízo"
+      },
+      {
+        "id": "b",
+        "text": "Só os ímpios comparecem"
+      },
+      {
+        "id": "c",
+        "text": "O corpo não entra no juízo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois é necessário que todos sejamos descobertos perante o tribunal de Cristo, para que cada um receba o que fez por meio do corpo, conforme o que praticou, o bem ou o mal.",
+    "passageA": {
+      "ref": "2 Coríntios 5:10",
+      "text": "Pois é necessário que todos sejamos descobertos perante o tribunal de Cristo, para que cada um receba o que fez por meio do corpo, conforme o que praticou, o bem ou o mal."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Justiça diante de Deus: todos comparecem ao tribunal de Cristo — o que se fez no corpo importa."
+    },
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "id": "escatologia-sem-es-02-juizo-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Coríntios 5:10",
+    "learningObjective": "Reconhecer que todos comparecem ao tribunal de Cristo e recebem conforme o que praticaram no corpo.",
+    "evidence": [
+      "2 Coríntios 5:10"
+    ],
+    "type": "true_false",
+    "question": "O texto ensina que o tribunal de Cristo é só para alguns, e o que se fez no corpo não pesa.",
+    "prompt": "O texto ensina que o tribunal de Cristo é só para alguns, e o que se fez no corpo não pesa.",
+    "cue": "O texto ensina que o tribunal de Cristo é só para alguns, e o que se fez no corpo não pesa.",
+    "feedbackCorrect": "Certo: todos comparecem; o feito no corpo é recebido.",
+    "feedbackWrong": {
+      "true": "Todos sejamos descobertos; cada um recebe o que fez."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Pois é necessário que todos sejamos descobertos perante o tribunal de Cristo, para que cada um receba o que fez por meio do corpo, conforme o que praticou, o bem ou o mal.",
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "id": "escatologia-cam-es-02-juizo-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Coríntios 5:10",
+    "learningObjective": "Reconhecer que todos comparecem ao tribunal de Cristo e recebem conforme o que praticaram no corpo.",
+    "evidence": [
+      "2 Coríntios 5:10"
+    ],
+    "type": "tap",
+    "question": "Em 2 Coríntios 5:10, toque a palavra que falta em \"é necessário que todos sejamos ___ perante o tribunal\"?",
+    "prompt": "Em 2 Coríntios 5:10, toque a palavra que falta em \"é necessário que todos sejamos ___ perante o tribunal\"?",
+    "cue": "Em 2 Coríntios 5:10, toque a palavra que falta em \"é necessário que todos sejamos ___ perante o tribunal\"?",
+    "feedbackCorrect": "Exato: sejamos descobertos perante o tribunal.",
+    "feedbackWrong": {
+      "b": "Necessário qualifica o dever, não esta lacuna.",
+      "c": "Praticou descreve o critério, não o comparecimento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "descobertos"
+      },
+      {
+        "id": "b",
+        "text": "necessário"
+      },
+      {
+        "id": "c",
+        "text": "praticou"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois é necessário que todos sejamos descobertos perante o tribunal de Cristo, para que cada um receba o que fez por meio do corpo, conforme o que praticou, o bem ou o mal.",
+    "template": "é necessário que todos sejamos ___ perante o tribunal",
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "id": "escatologia-cam-es-02-juizo-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Coríntios 5:10",
+    "learningObjective": "Reconhecer que todos comparecem ao tribunal de Cristo e recebem conforme o que praticaram no corpo.",
+    "evidence": [
+      "2 Coríntios 5:10"
+    ],
+    "type": "choice",
+    "question": "Como 2 Coríntios 5:10 relaciona o tribunal de Cristo e o que se fez no corpo?",
+    "prompt": "Como 2 Coríntios 5:10 relaciona o tribunal de Cristo e o que se fez no corpo?",
+    "cue": "Como 2 Coríntios 5:10 relaciona o tribunal de Cristo e o que se fez no corpo?",
+    "feedbackCorrect": "Certo: o comparecimento público mede o praticado no corpo.",
+    "feedbackWrong": {
+      "a": "O juízo não ignora a vida encarnada.",
+      "c": "Não há isenção por status espiritual.",
+      "d": "Bem e mal não se misturam num critério vazio."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O tribunal ignora o corpo e julga só intenções ocultas"
+      },
+      {
+        "id": "b",
+        "text": "Todos comparecem e recebem conforme o praticado no corpo"
+      },
+      {
+        "id": "c",
+        "text": "Quem crê fica de fora do tribunal de Cristo"
+      },
+      {
+        "id": "d",
+        "text": "O bem e o mal se anulam, e ninguém recebe nada"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Pois é necessário que todos sejamos descobertos perante o tribunal de Cristo, para que cada um receba o que fez por meio do corpo, conforme o que praticou, o bem ou o mal.",
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "id": "escatologia-cam-es-02-juizo-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Coríntios 5:10",
+    "learningObjective": "Reconhecer que todos comparecem ao tribunal de Cristo e recebem conforme o que praticaram no corpo.",
+    "evidence": [
+      "2 Coríntios 5:10"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de 2 Coríntios 5:10?",
+    "prompt": "Como se encadeiam os eventos de 2 Coríntios 5:10?",
+    "cue": "Como se encadeiam os eventos de 2 Coríntios 5:10?",
+    "feedbackCorrect": "Certo: descobertos, receber o feito, bem ou mal.",
+    "feedbackWrong": {
+      "b": "O recebimento segue o comparecimento, não o inverso.",
+      "c": "O critério moral fecha a cadeia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "todos sejamos descobertos perante o tribunal de Cristo"
+      },
+      {
+        "id": "b",
+        "text": "cada um receba o que fez por meio do corpo"
+      },
+      {
+        "id": "c",
+        "text": "conforme o que praticou, o bem ou o mal"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois é necessário que todos sejamos descobertos perante o tribunal de Cristo, para que cada um receba o que fez por meio do corpo, conforme o que praticou, o bem ou o mal.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "id": "escatologia-cam-es-02-juizo-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Coríntios 5:10",
+    "learningObjective": "Reconhecer que todos comparecem ao tribunal de Cristo e recebem conforme o que praticaram no corpo.",
+    "evidence": [
+      "2 Coríntios 5:10"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"descobertos perante o tribunal de ___\"",
+    "prompt": "Complete a frase: \"descobertos perante o tribunal de ___\"",
+    "cue": "Complete a frase: \"descobertos perante o tribunal de ___\"",
+    "feedbackCorrect": "Certo: o tribunal de Cristo.",
+    "feedbackWrong": {
+      "b": "Corpo é o meio do que se fez.",
+      "c": "Todos é o sujeito, não o nome do tribunal."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo"
+      },
+      {
+        "id": "b",
+        "text": "corpo"
+      },
+      {
+        "id": "c",
+        "text": "todos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois é necessário que todos sejamos descobertos perante o tribunal de Cristo, para que cada um receba o que fez por meio do corpo, conforme o que praticou, o bem ou o mal.",
+    "template": "descobertos perante o tribunal de ___",
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "id": "escatologia-cam-es-02-juizo-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "2 Coríntios 5:10",
+    "learningObjective": "Reconhecer que todos comparecem ao tribunal de Cristo e recebem conforme o que praticaram no corpo.",
+    "evidence": [
+      "2 Coríntios 5:10"
+    ],
+    "type": "connect",
+    "question": "O que 2 Coríntios 5:10 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Coríntios 5:10 comunica que se liga a este contexto?",
+    "cue": "O que 2 Coríntios 5:10 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: justiça de Deus mede a vida no corpo.",
+    "feedbackWrong": {
+      "b": "Não há juízo privado que ignore o comparecimento.",
+      "c": "O trecho não trata o mal como indiferente."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Justiça pelo feito no corpo"
+      },
+      {
+        "id": "b",
+        "text": "Juízo só interior e secreto"
+      },
+      {
+        "id": "c",
+        "text": "Mal e bem sem retribuição"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois é necessário que todos sejamos descobertos perante o tribunal de Cristo, para que cada um receba o que fez por meio do corpo, conforme o que praticou, o bem ou o mal.",
+    "passageA": {
+      "ref": "2 Coríntios 5:10",
+      "text": "Pois é necessário que todos sejamos descobertos perante o tribunal de Cristo, para que cada um receba o que fez por meio do corpo, conforme o que praticou, o bem ou o mal."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Justiça diante de Deus: todos comparecem ao tribunal de Cristo — o que se fez no corpo importa."
+    },
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "id": "escatologia-cam-es-02-juizo-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Coríntios 5:10",
+    "learningObjective": "Reconhecer que todos comparecem ao tribunal de Cristo e recebem conforme o que praticaram no corpo.",
+    "evidence": [
+      "2 Coríntios 5:10"
+    ],
+    "type": "true_false",
+    "question": "O tribunal de Cristo torna a vida no corpo responsável diante de Deus: o bem ou o mal será recebido.",
+    "prompt": "O tribunal de Cristo torna a vida no corpo responsável diante de Deus: o bem ou o mal será recebido.",
+    "cue": "O tribunal de Cristo torna a vida no corpo responsável diante de Deus: o bem ou o mal será recebido.",
+    "feedbackCorrect": "Certo: o texto liga comparecimento e retribuição moral.",
+    "feedbackWrong": {
+      "false": "Cada um recebe conforme o que praticou no corpo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Pois é necessário que todos sejamos descobertos perante o tribunal de Cristo, para que cada um receba o que fez por meio do corpo, conforme o que praticou, o bem ou o mal.",
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "id": "escatologia-pro-es-02-juizo-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Coríntios 5:10",
+    "learningObjective": "Reconhecer que todos comparecem ao tribunal de Cristo e recebem conforme o que praticaram no corpo.",
+    "evidence": [
+      "2 Coríntios 5:10"
+    ],
+    "type": "tap",
+    "question": "Em 2 Coríntios 5:10, toque a palavra que falta em \"Pois é ___ que todos sejamos descobertos\"?",
+    "prompt": "Em 2 Coríntios 5:10, toque a palavra que falta em \"Pois é ___ que todos sejamos descobertos\"?",
+    "cue": "Em 2 Coríntios 5:10, toque a palavra que falta em \"Pois é ___ que todos sejamos descobertos\"?",
+    "feedbackCorrect": "Exato: é necessário o comparecimento.",
+    "feedbackWrong": {
+      "b": "Descobertos é o estado, não esta lacuna.",
+      "c": "Receba descreve a retribuição posterior."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "necessário"
+      },
+      {
+        "id": "b",
+        "text": "descobertos"
+      },
+      {
+        "id": "c",
+        "text": "receba"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois é necessário que todos sejamos descobertos perante o tribunal de Cristo, para que cada um receba o que fez por meio do corpo, conforme o que praticou, o bem ou o mal.",
+    "template": "Pois é ___ que todos sejamos descobertos",
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "id": "escatologia-pro-es-02-juizo-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Coríntios 5:10",
+    "learningObjective": "Reconhecer que todos comparecem ao tribunal de Cristo e recebem conforme o que praticaram no corpo.",
+    "evidence": [
+      "2 Coríntios 5:10"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido teológico de 2 Coríntios 5:10?",
+    "prompt": "Qual leitura interpreta melhor o sentido teológico de 2 Coríntios 5:10?",
+    "cue": "Qual leitura interpreta melhor o sentido teológico de 2 Coríntios 5:10?",
+    "feedbackCorrect": "Certo: ninguém escapa; a vida no corpo tem peso eterno.",
+    "feedbackWrong": {
+      "a": "Graça não apaga o tribunal neste texto.",
+      "b": "O corpo não é palco irrelevante da fé.",
+      "d": "Bem e mal permanecem critérios reais."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A graça cancela qualquer tribunal para os crentes"
+      },
+      {
+        "id": "b",
+        "text": "Só o espírito importa; o corpo fica de fora"
+      },
+      {
+        "id": "c",
+        "text": "Todos comparecem, e o praticado no corpo será recebido"
+      },
+      {
+        "id": "d",
+        "text": "O mal não será levado em conta perante Cristo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Pois é necessário que todos sejamos descobertos perante o tribunal de Cristo, para que cada um receba o que fez por meio do corpo, conforme o que praticou, o bem ou o mal.",
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "id": "escatologia-pro-es-02-juizo-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Coríntios 5:10",
+    "learningObjective": "Reconhecer que todos comparecem ao tribunal de Cristo e recebem conforme o que praticaram no corpo.",
+    "evidence": [
+      "2 Coríntios 5:10"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de 2 Coríntios 5:10?",
+    "prompt": "Qual sequência revela o sentido de 2 Coríntios 5:10?",
+    "cue": "Qual sequência revela o sentido de 2 Coríntios 5:10?",
+    "feedbackCorrect": "Certo: necessidade, tribunal de Cristo, retribuição no corpo.",
+    "feedbackWrong": {
+      "b": "O sentido abre com a necessidade, não com o corpo.",
+      "c": "O feito no corpo é o desfecho do juízo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pois é necessário que todos sejamos descobertos"
+      },
+      {
+        "id": "b",
+        "text": "perante o tribunal de Cristo"
+      },
+      {
+        "id": "c",
+        "text": "cada um receba o que fez por meio do corpo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois é necessário que todos sejamos descobertos perante o tribunal de Cristo, para que cada um receba o que fez por meio do corpo, conforme o que praticou, o bem ou o mal.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "id": "escatologia-pro-es-02-juizo-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Coríntios 5:10",
+    "learningObjective": "Reconhecer que todos comparecem ao tribunal de Cristo e recebem conforme o que praticaram no corpo.",
+    "evidence": [
+      "2 Coríntios 5:10"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"conforme o que praticou, o bem ou o ___\"",
+    "prompt": "Complete a frase: \"conforme o que praticou, o bem ou o ___\"",
+    "cue": "Complete a frase: \"conforme o que praticou, o bem ou o ___\"",
+    "feedbackCorrect": "Certo: o bem ou o mal.",
+    "feedbackWrong": {
+      "b": "Corpo é o meio, não o par do bem.",
+      "c": "Tribunal é o lugar, não esta palavra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "mal"
+      },
+      {
+        "id": "b",
+        "text": "corpo"
+      },
+      {
+        "id": "c",
+        "text": "tribunal"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois é necessário que todos sejamos descobertos perante o tribunal de Cristo, para que cada um receba o que fez por meio do corpo, conforme o que praticou, o bem ou o mal.",
+    "template": "conforme o que praticou, o bem ou o ___",
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "id": "escatologia-pro-es-02-juizo-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "2 Coríntios 5:10",
+    "learningObjective": "Reconhecer que todos comparecem ao tribunal de Cristo e recebem conforme o que praticaram no corpo.",
+    "evidence": [
+      "2 Coríntios 5:10"
+    ],
+    "type": "connect",
+    "question": "O que 2 Coríntios 5:10 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Coríntios 5:10 comunica que se liga a este contexto?",
+    "cue": "O que 2 Coríntios 5:10 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a esperança não anula a responsabilidade.",
+    "feedbackWrong": {
+      "b": "O trecho recusa impunidade espiritual.",
+      "c": "O corpo não é teatro sem juízo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Responsabilidade no corpo"
+      },
+      {
+        "id": "b",
+        "text": "Impunidade dos crentes"
+      },
+      {
+        "id": "c",
+        "text": "Corpo sem peso eterno"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois é necessário que todos sejamos descobertos perante o tribunal de Cristo, para que cada um receba o que fez por meio do corpo, conforme o que praticou, o bem ou o mal.",
+    "passageA": {
+      "ref": "2 Coríntios 5:10",
+      "text": "Pois é necessário que todos sejamos descobertos perante o tribunal de Cristo, para que cada um receba o que fez por meio do corpo, conforme o que praticou, o bem ou o mal."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Justiça diante de Deus: todos comparecem ao tribunal de Cristo — o que se fez no corpo importa."
+    },
+    "trail": "escatologia",
+    "section": "es-02-juizo",
+    "id": "escatologia-pro-es-02-juizo-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Apocalipse 21:3–4",
+    "learningObjective": "Reconhecer que Deus habitará com os homens; morte, pranto e dor passarão.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "true_false",
+    "question": "Eis o tabernáculo de Deus está com os homens, e ele habitará com eles.",
+    "prompt": "Eis o tabernáculo de Deus está com os homens, e ele habitará com eles.",
+    "cue": "Eis o tabernáculo de Deus está com os homens, e ele habitará com eles.",
+    "feedbackCorrect": "Certo: Apocalipse 21:3 afirma a habitação de Deus.",
+    "feedbackWrong": {
+      "false": "Releia: o tabernáculo de Deus está com os homens."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "id": "escatologia-sem-es-03-novo-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Apocalipse 21:3–4",
+    "learningObjective": "Reconhecer que Deus habitará com os homens; morte, pranto e dor passarão.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "tap",
+    "question": "Em Apocalipse 21:3–4, toque a palavra que falta em \"Eis o ___ de Deus está com os homens\"?",
+    "prompt": "Em Apocalipse 21:3–4, toque a palavra que falta em \"Eis o ___ de Deus está com os homens\"?",
+    "cue": "Em Apocalipse 21:3–4, toque a palavra que falta em \"Eis o ___ de Deus está com os homens\"?",
+    "feedbackCorrect": "Exato: o tabernáculo de Deus está com os homens.",
+    "feedbackWrong": {
+      "b": "Trono é de onde vem a voz, não esta lacuna.",
+      "c": "Morte aparece depois, naquilo que passa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "tabernáculo"
+      },
+      {
+        "id": "b",
+        "text": "trono"
+      },
+      {
+        "id": "c",
+        "text": "morte"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "template": "Eis o ___ de Deus está com os homens",
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "id": "escatologia-sem-es-03-novo-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Apocalipse 21:3–4",
+    "learningObjective": "Reconhecer que Deus habitará com os homens; morte, pranto e dor passarão.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação Apocalipse 21:3–4 registra diretamente?",
+    "prompt": "Qual afirmação Apocalipse 21:3–4 registra diretamente?",
+    "cue": "Qual afirmação Apocalipse 21:3–4 registra diretamente?",
+    "feedbackCorrect": "Certo: não haverá mais morte, pranto, choro nem dor.",
+    "feedbackWrong": {
+      "b": "Deus habita com os homens, não permanece distante.",
+      "c": "A morte passa, não permanece.",
+      "d": "As primeiras coisas são passadas, não eternas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Não haverá mais morte, nem pranto, nem choro, nem dor."
+      },
+      {
+        "id": "b",
+        "text": "Deus permanece longe, e os homens habitam sós."
+      },
+      {
+        "id": "c",
+        "text": "A morte continua, embora o pranto diminua."
+      },
+      {
+        "id": "d",
+        "text": "As primeiras coisas permanecem para sempre."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "id": "escatologia-sem-es-03-novo-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Apocalipse 21:3–4",
+    "learningObjective": "Reconhecer que Deus habitará com os homens; morte, pranto e dor passarão.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Apocalipse 21:3–4?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Apocalipse 21:3–4?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Apocalipse 21:3–4?",
+    "feedbackCorrect": "Certo: tabernáculo, povo de Deus, lágrimas enxugadas.",
+    "feedbackWrong": {
+      "b": "A habitação vem antes de enxugar a lágrima.",
+      "c": "A lágrima é enxugada depois da habitação."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Eis o tabernáculo de Deus está com os homens, e ele habitará com eles"
+      },
+      {
+        "id": "b",
+        "text": "eles serão o seu povo, e Deus mesmo estará com eles"
+      },
+      {
+        "id": "c",
+        "text": "e enxugará toda lágrima dos olhos deles"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "id": "escatologia-sem-es-03-novo-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Apocalipse 21:3–4",
+    "learningObjective": "Reconhecer que Deus habitará com os homens; morte, pranto e dor passarão.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Não haverá mais ___, nem haverá mais pranto\"",
+    "prompt": "Complete a frase: \"Não haverá mais ___, nem haverá mais pranto\"",
+    "cue": "Complete a frase: \"Não haverá mais ___, nem haverá mais pranto\"",
+    "feedbackCorrect": "Certo: não haverá mais morte.",
+    "feedbackWrong": {
+      "b": "Povo descreve a relação, não esta lacuna.",
+      "c": "Trono é a origem da voz."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "morte"
+      },
+      {
+        "id": "b",
+        "text": "povo"
+      },
+      {
+        "id": "c",
+        "text": "trono"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "template": "Não haverá mais ___, nem haverá mais pranto",
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "id": "escatologia-sem-es-03-novo-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Apocalipse 21:3–4",
+    "learningObjective": "Reconhecer que Deus habitará com os homens; morte, pranto e dor passarão.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "connect",
+    "question": "O que Apocalipse 21:3–4 comunica que se liga a este contexto?",
+    "prompt": "O que Apocalipse 21:3–4 comunica que se liga a este contexto?",
+    "cue": "O que Apocalipse 21:3–4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Deus habita, e a dor passa.",
+    "feedbackWrong": {
+      "b": "O texto anuncia o fim da morte, não a sua permanência.",
+      "c": "Deus não fica distante neste trecho."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus habita; a dor passa"
+      },
+      {
+        "id": "b",
+        "text": "A morte permanece eterna"
+      },
+      {
+        "id": "c",
+        "text": "Deus permanece distante"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "passageA": {
+      "ref": "Apocalipse 21:3–4",
+      "text": "Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Novas todas as coisas: Deus habita com os homens; morte, pranto e dor passam."
+    },
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "id": "escatologia-sem-es-03-novo-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Apocalipse 21:3–4",
+    "learningObjective": "Reconhecer que Deus habitará com os homens; morte, pranto e dor passarão.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "true_false",
+    "question": "O texto ensina que Deus permanece longe dos homens, e a morte, o pranto e a dor continuam.",
+    "prompt": "O texto ensina que Deus permanece longe dos homens, e a morte, o pranto e a dor continuam.",
+    "cue": "O texto ensina que Deus permanece longe dos homens, e a morte, o pranto e a dor continuam.",
+    "feedbackCorrect": "Certo: ele habitará com eles; morte e dor passam.",
+    "feedbackWrong": {
+      "true": "Deus estará com eles e enxugará toda lágrima."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "id": "escatologia-cam-es-03-novo-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Apocalipse 21:3–4",
+    "learningObjective": "Reconhecer que Deus habitará com os homens; morte, pranto e dor passarão.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "tap",
+    "question": "Em Apocalipse 21:3–4, toque a palavra que falta em \"e enxugará toda ___ dos olhos deles\"?",
+    "prompt": "Em Apocalipse 21:3–4, toque a palavra que falta em \"e enxugará toda ___ dos olhos deles\"?",
+    "cue": "Em Apocalipse 21:3–4, toque a palavra que falta em \"e enxugará toda ___ dos olhos deles\"?",
+    "feedbackCorrect": "Exato: toda lágrima dos olhos deles.",
+    "feedbackWrong": {
+      "b": "Morte vem na lista do que não haverá mais.",
+      "c": "Povo descreve a aliança, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "lágrima"
+      },
+      {
+        "id": "b",
+        "text": "morte"
+      },
+      {
+        "id": "c",
+        "text": "povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "template": "e enxugará toda ___ dos olhos deles",
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "id": "escatologia-cam-es-03-novo-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Apocalipse 21:3–4",
+    "learningObjective": "Reconhecer que Deus habitará com os homens; morte, pranto e dor passarão.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "choice",
+    "question": "Como Apocalipse 21:3–4 relaciona a habitação de Deus e o fim da dor?",
+    "prompt": "Como Apocalipse 21:3–4 relaciona a habitação de Deus e o fim da dor?",
+    "cue": "Como Apocalipse 21:3–4 relaciona a habitação de Deus e o fim da dor?",
+    "feedbackCorrect": "Certo: a presença de Deus enxuga a lágrima e acaba a morte.",
+    "feedbackWrong": {
+      "a": "A nova ordem não convive com a morte.",
+      "c": "A voz do trono une habitação e consolo.",
+      "d": "As primeiras coisas passam, não se eternizam."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus habita, mas a morte permanece como lei"
+      },
+      {
+        "id": "b",
+        "text": "Porque Deus está com eles, lágrima, morte e dor passam"
+      },
+      {
+        "id": "c",
+        "text": "O consolo vem sem que Deus habite com os homens"
+      },
+      {
+        "id": "d",
+        "text": "As primeiras coisas continuam junto do tabernáculo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "id": "escatologia-cam-es-03-novo-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Apocalipse 21:3–4",
+    "learningObjective": "Reconhecer que Deus habitará com os homens; morte, pranto e dor passarão.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Apocalipse 21:3–4?",
+    "prompt": "Como se encadeiam os eventos de Apocalipse 21:3–4?",
+    "cue": "Como se encadeiam os eventos de Apocalipse 21:3–4?",
+    "feedbackCorrect": "Certo: habitação e povo, lágrima enxugada, morte e dor cessam.",
+    "feedbackWrong": {
+      "b": "A habitação precede o enxugar da lágrima.",
+      "c": "O fim da morte fecha o encadeamento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "ele habitará com eles; eles serão o seu povo"
+      },
+      {
+        "id": "b",
+        "text": "enxugará toda lágrima dos olhos deles"
+      },
+      {
+        "id": "c",
+        "text": "Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "id": "escatologia-cam-es-03-novo-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Apocalipse 21:3–4",
+    "learningObjective": "Reconhecer que Deus habitará com os homens; morte, pranto e dor passarão.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"eles serão o seu ___, e Deus mesmo estará com eles\"",
+    "prompt": "Complete a frase: \"eles serão o seu ___, e Deus mesmo estará com eles\"",
+    "cue": "Complete a frase: \"eles serão o seu ___, e Deus mesmo estará com eles\"",
+    "feedbackCorrect": "Certo: eles serão o seu povo.",
+    "feedbackWrong": {
+      "b": "Trono é a origem da voz.",
+      "c": "Dor pertence ao que passa, não a esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "povo"
+      },
+      {
+        "id": "b",
+        "text": "trono"
+      },
+      {
+        "id": "c",
+        "text": "dor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "template": "eles serão o seu ___, e Deus mesmo estará com eles",
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "id": "escatologia-cam-es-03-novo-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Apocalipse 21:3–4",
+    "learningObjective": "Reconhecer que Deus habitará com os homens; morte, pranto e dor passarão.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "connect",
+    "question": "O que Apocalipse 21:3–4 comunica que se liga a este contexto?",
+    "prompt": "O que Apocalipse 21:3–4 comunica que se liga a este contexto?",
+    "cue": "O que Apocalipse 21:3–4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: presença de Deus e fim das primeiras coisas.",
+    "feedbackWrong": {
+      "b": "O trecho não descreve aliança sem presença.",
+      "c": "Pranto e morte não sobrevivem à nova ordem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Presença que acaba a dor"
+      },
+      {
+        "id": "b",
+        "text": "Aliança sem habitação"
+      },
+      {
+        "id": "c",
+        "text": "Pranto eterno no trono"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "passageA": {
+      "ref": "Apocalipse 21:3–4",
+      "text": "Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Novas todas as coisas: Deus habita com os homens; morte, pranto e dor passam."
+    },
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "id": "escatologia-cam-es-03-novo-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Apocalipse 21:3–4",
+    "learningObjective": "Reconhecer que Deus habitará com os homens; morte, pranto e dor passarão.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "true_false",
+    "question": "A nova criação é a presença de Deus com o seu povo: as primeiras coisas — morte, pranto e dor — são passadas.",
+    "prompt": "A nova criação é a presença de Deus com o seu povo: as primeiras coisas — morte, pranto e dor — são passadas.",
+    "cue": "A nova criação é a presença de Deus com o seu povo: as primeiras coisas — morte, pranto e dor — são passadas.",
+    "feedbackCorrect": "Certo: habitação divina e fim das primeiras coisas.",
+    "feedbackWrong": {
+      "false": "Deus estará com eles; as primeiras coisas são passadas."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "id": "escatologia-pro-es-03-novo-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Apocalipse 21:3–4",
+    "learningObjective": "Reconhecer que Deus habitará com os homens; morte, pranto e dor passarão.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "tap",
+    "question": "Em Apocalipse 21:3–4, toque a palavra que falta em \"porque as primeiras coisas são ___\"?",
+    "prompt": "Em Apocalipse 21:3–4, toque a palavra que falta em \"porque as primeiras coisas são ___\"?",
+    "cue": "Em Apocalipse 21:3–4, toque a palavra que falta em \"porque as primeiras coisas são ___\"?",
+    "feedbackCorrect": "Exato: as primeiras coisas são passadas.",
+    "feedbackWrong": {
+      "b": "Homens recebem o tabernáculo, não esta lacuna.",
+      "c": "Choro está na lista do que não haverá mais."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "passadas"
+      },
+      {
+        "id": "b",
+        "text": "homens"
+      },
+      {
+        "id": "c",
+        "text": "choro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "template": "porque as primeiras coisas são ___",
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "id": "escatologia-pro-es-03-novo-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Apocalipse 21:3–4",
+    "learningObjective": "Reconhecer que Deus habitará com os homens; morte, pranto e dor passarão.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido teológico de Apocalipse 21:3–4?",
+    "prompt": "Qual leitura interpreta melhor o sentido teológico de Apocalipse 21:3–4?",
+    "cue": "Qual leitura interpreta melhor o sentido teológico de Apocalipse 21:3–4?",
+    "feedbackCorrect": "Certo: o fim da dor flui de Deus habitando com os homens.",
+    "feedbackWrong": {
+      "a": "O consolo não é só psicológico; a morte acaba.",
+      "b": "Deus não permanece distante neste quadro.",
+      "d": "As primeiras coisas passam, não se reformam só."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Só o sentimento muda; a morte continua"
+      },
+      {
+        "id": "b",
+        "text": "Deus visita de longe, sem habitar com o povo"
+      },
+      {
+        "id": "c",
+        "text": "Deus com os homens torna passadas morte, pranto e dor"
+      },
+      {
+        "id": "d",
+        "text": "As primeiras coisas se eternizam no tabernáculo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "id": "escatologia-pro-es-03-novo-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Apocalipse 21:3–4",
+    "learningObjective": "Reconhecer que Deus habitará com os homens; morte, pranto e dor passarão.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Apocalipse 21:3–4?",
+    "prompt": "Qual sequência revela o sentido de Apocalipse 21:3–4?",
+    "cue": "Qual sequência revela o sentido de Apocalipse 21:3–4?",
+    "feedbackCorrect": "Certo: tabernáculo com os homens, lágrima enxugada, primeiras coisas passadas.",
+    "feedbackWrong": {
+      "b": "O sentido começa na habitação, não no fim das coisas.",
+      "c": "As primeiras coisas passadas fecham o sentido."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Eis o tabernáculo de Deus está com os homens"
+      },
+      {
+        "id": "b",
+        "text": "e enxugará toda lágrima dos olhos deles"
+      },
+      {
+        "id": "c",
+        "text": "as primeiras coisas são passadas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "id": "escatologia-pro-es-03-novo-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Apocalipse 21:3–4",
+    "learningObjective": "Reconhecer que Deus habitará com os homens; morte, pranto e dor passarão.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Ouvi uma grande voz, vinda do ___\"",
+    "prompt": "Complete a frase: \"Ouvi uma grande voz, vinda do ___\"",
+    "cue": "Complete a frase: \"Ouvi uma grande voz, vinda do ___\"",
+    "feedbackCorrect": "Certo: voz vinda do trono.",
+    "feedbackWrong": {
+      "b": "Povo descreve a aliança, não a origem da voz.",
+      "c": "Lágrima é o que Deus enxuga depois."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "trono"
+      },
+      {
+        "id": "b",
+        "text": "povo"
+      },
+      {
+        "id": "c",
+        "text": "lágrima"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "template": "Ouvi uma grande voz, vinda do ___",
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "id": "escatologia-pro-es-03-novo-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Apocalipse 21:3–4",
+    "learningObjective": "Reconhecer que Deus habitará com os homens; morte, pranto e dor passarão.",
+    "evidence": [
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "connect",
+    "question": "O que Apocalipse 21:3–4 comunica que se liga a este contexto?",
+    "prompt": "O que Apocalipse 21:3–4 comunica que se liga a este contexto?",
+    "cue": "O que Apocalipse 21:3–4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: novas todas as coisas pela presença de Deus.",
+    "feedbackWrong": {
+      "b": "O trecho não eterniza a morte.",
+      "c": "Não há povo sem Deus no meio."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Novas: Deus no meio"
+      },
+      {
+        "id": "b",
+        "text": "Morte como lei eterna"
+      },
+      {
+        "id": "c",
+        "text": "Povo sem a presença"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "passageA": {
+      "ref": "Apocalipse 21:3–4",
+      "text": "Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Novas todas as coisas: Deus habita com os homens; morte, pranto e dor passam."
+    },
+    "trail": "escatologia",
+    "section": "es-03-novo",
+    "id": "escatologia-pro-es-03-novo-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 1:11; Apocalipse 21:3–4",
+    "learningObjective": "Integrar a volta de Jesus e a nova criação: o que subiu voltará, e Deus enxugará toda lágrima.",
+    "evidence": [
+      "Atos 1:11",
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "true_false",
+    "question": "Esse Jesus virá do modo como o vistes ir para o céu, e Deus enxugará toda lágrima.",
+    "prompt": "Esse Jesus virá do modo como o vistes ir para o céu, e Deus enxugará toda lágrima.",
+    "cue": "Esse Jesus virá do modo como o vistes ir para o céu, e Deus enxugará toda lágrima.",
+    "feedbackCorrect": "Certo: os dois textos unem volta e consolo final.",
+    "feedbackWrong": {
+      "false": "Atos promete a volta; Apocalipse, o enxugar da lágrima."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu. Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "id": "escatologia-sem-es-boss-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 1:11; Apocalipse 21:3–4",
+    "learningObjective": "Integrar a volta de Jesus e a nova criação: o que subiu voltará, e Deus enxugará toda lágrima.",
+    "evidence": [
+      "Atos 1:11",
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "tap",
+    "question": "Em Atos 1:11; Apocalipse 21:3–4, toque a palavra que falta em \"assim virá do modo como o vistes ir para o ___\"?",
+    "prompt": "Em Atos 1:11; Apocalipse 21:3–4, toque a palavra que falta em \"assim virá do modo como o vistes ir para o ___\"?",
+    "cue": "Em Atos 1:11; Apocalipse 21:3–4, toque a palavra que falta em \"assim virá do modo como o vistes ir para o ___\"?",
+    "feedbackCorrect": "Exato: ir para o céu, e assim virá.",
+    "feedbackWrong": {
+      "b": "Lágrima pertence a Apocalipse 21:4.",
+      "c": "Morte é o que não haverá mais."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "céu"
+      },
+      {
+        "id": "b",
+        "text": "lágrima"
+      },
+      {
+        "id": "c",
+        "text": "morte"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu. Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "template": "assim virá do modo como o vistes ir para o ___",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "id": "escatologia-sem-es-boss-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 1:11; Apocalipse 21:3–4",
+    "learningObjective": "Integrar a volta de Jesus e a nova criação: o que subiu voltará, e Deus enxugará toda lágrima.",
+    "evidence": [
+      "Atos 1:11",
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "choice",
+    "question": "O que Atos 1:11 e Apocalipse 21:3–4 afirmam juntos?",
+    "prompt": "O que Atos 1:11 e Apocalipse 21:3–4 afirmam juntos?",
+    "cue": "O que Atos 1:11 e Apocalipse 21:3–4 afirmam juntos?",
+    "feedbackCorrect": "Certo: o que subiu voltará, e Deus habitará com os homens.",
+    "feedbackWrong": {
+      "b": "A volta não é negada em Atos 1:11.",
+      "c": "Apocalipse 21 anuncia o fim da morte.",
+      "d": "Deus não permanece distante no quadro final."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus voltará como subiu, e Deus habitará com os homens."
+      },
+      {
+        "id": "b",
+        "text": "Jesus não volta, e a morte permanece para sempre."
+      },
+      {
+        "id": "c",
+        "text": "O tabernáculo chega, mas a lágrima nunca cessa."
+      },
+      {
+        "id": "d",
+        "text": "Deus fica longe, e o olhar ao céu substitui a esperança."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu. Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "id": "escatologia-sem-es-boss-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 1:11; Apocalipse 21:3–4",
+    "learningObjective": "Integrar a volta de Jesus e a nova criação: o que subiu voltará, e Deus enxugará toda lágrima.",
+    "evidence": [
+      "Atos 1:11",
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Atos 1:11; Apocalipse 21:3–4?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Atos 1:11; Apocalipse 21:3–4?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Atos 1:11; Apocalipse 21:3–4?",
+    "feedbackCorrect": "Certo: volta de Jesus, tabernáculo, lágrima enxugada.",
+    "feedbackWrong": {
+      "b": "A volta em Atos abre o conjunto.",
+      "c": "A lágrima enxugada vem no quadro final."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Esse Jesus que dentre vós foi recebido no céu assim virá"
+      },
+      {
+        "id": "b",
+        "text": "Eis o tabernáculo de Deus está com os homens"
+      },
+      {
+        "id": "c",
+        "text": "e enxugará toda lágrima dos olhos deles"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu. Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "escatologia",
+    "section": "es-boss",
+    "id": "escatologia-sem-es-boss-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 1:11; Apocalipse 21:3–4",
+    "learningObjective": "Integrar a volta de Jesus e a nova criação: o que subiu voltará, e Deus enxugará toda lágrima.",
+    "evidence": [
+      "Atos 1:11",
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"e enxugará toda ___ dos olhos deles\"",
+    "prompt": "Complete a frase: \"e enxugará toda ___ dos olhos deles\"",
+    "cue": "Complete a frase: \"e enxugará toda ___ dos olhos deles\"",
+    "feedbackCorrect": "Certo: toda lágrima dos olhos deles.",
+    "feedbackWrong": {
+      "b": "Céu pertence à subida e à volta.",
+      "c": "Jesus é o que virá, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "lágrima"
+      },
+      {
+        "id": "b",
+        "text": "céu"
+      },
+      {
+        "id": "c",
+        "text": "Jesus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu. Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "template": "e enxugará toda ___ dos olhos deles",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "id": "escatologia-sem-es-boss-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 1:11; Apocalipse 21:3–4",
+    "learningObjective": "Integrar a volta de Jesus e a nova criação: o que subiu voltará, e Deus enxugará toda lágrima.",
+    "evidence": [
+      "Atos 1:11",
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "connect",
+    "question": "O que Atos 1:11; Apocalipse 21:3–4 comunica que se liga a este contexto?",
+    "prompt": "O que Atos 1:11; Apocalipse 21:3–4 comunica que se liga a este contexto?",
+    "cue": "O que Atos 1:11; Apocalipse 21:3–4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o que subiu voltará, e a lágrima será enxugada.",
+    "feedbackWrong": {
+      "b": "O conjunto não descreve espera vazia.",
+      "c": "As lágrimas não são eternas neste quadro."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Volta e lágrima enxugada"
+      },
+      {
+        "id": "b",
+        "text": "Espera vazia sem volta"
+      },
+      {
+        "id": "c",
+        "text": "Lágrimas que nunca cessam"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu. Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "passageA": {
+      "ref": "Atos 1:11; Apocalipse 21:3–4",
+      "text": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu. Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Esperança firme: o que subiu voltará, e Deus enxugará toda lágrima."
+    },
+    "trail": "escatologia",
+    "section": "es-boss",
+    "id": "escatologia-sem-es-boss-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 1:11; Apocalipse 21:3–4",
+    "learningObjective": "Integrar a volta de Jesus e a nova criação: o que subiu voltará, e Deus enxugará toda lágrima.",
+    "evidence": [
+      "Atos 1:11",
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "true_false",
+    "question": "Os dois textos ensinam que Jesus não voltará e que a morte e o pranto permanecem.",
+    "prompt": "Os dois textos ensinam que Jesus não voltará e que a morte e o pranto permanecem.",
+    "cue": "Os dois textos ensinam que Jesus não voltará e que a morte e o pranto permanecem.",
+    "feedbackCorrect": "Certo: ele virá, e não haverá mais morte nem pranto.",
+    "feedbackWrong": {
+      "true": "Atos promete a volta; Apocalipse, o fim da morte."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu. Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "id": "escatologia-cam-es-boss-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 1:11; Apocalipse 21:3–4",
+    "learningObjective": "Integrar a volta de Jesus e a nova criação: o que subiu voltará, e Deus enxugará toda lágrima.",
+    "evidence": [
+      "Atos 1:11",
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "tap",
+    "question": "Em Atos 1:11; Apocalipse 21:3–4, toque a palavra que falta em \"Esse Jesus que dentre vós foi recebido no céu assim ___\"?",
+    "prompt": "Em Atos 1:11; Apocalipse 21:3–4, toque a palavra que falta em \"Esse Jesus que dentre vós foi recebido no céu assim ___\"?",
+    "cue": "Em Atos 1:11; Apocalipse 21:3–4, toque a palavra que falta em \"Esse Jesus que dentre vós foi recebido no céu assim ___\"?",
+    "feedbackCorrect": "Exato: assim virá do modo como o vistes ir.",
+    "feedbackWrong": {
+      "b": "Habitará descreve Deus com os homens.",
+      "c": "Passadas qualifica as primeiras coisas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "virá"
+      },
+      {
+        "id": "b",
+        "text": "habitará"
+      },
+      {
+        "id": "c",
+        "text": "passadas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu. Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "template": "Esse Jesus que dentre vós foi recebido no céu assim ___",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "id": "escatologia-cam-es-boss-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 1:11; Apocalipse 21:3–4",
+    "learningObjective": "Integrar a volta de Jesus e a nova criação: o que subiu voltará, e Deus enxugará toda lágrima.",
+    "evidence": [
+      "Atos 1:11",
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "choice",
+    "question": "Como a volta de Jesus e a nova criação se encadeiam nestes textos?",
+    "prompt": "Como a volta de Jesus e a nova criação se encadeiam nestes textos?",
+    "cue": "Como a volta de Jesus e a nova criação se encadeiam nestes textos?",
+    "feedbackCorrect": "Certo: quem subiu volta, e Deus enxuga a lágrima na nova ordem.",
+    "feedbackWrong": {
+      "a": "A espera não é olhar vazio sem vinda.",
+      "c": "A habitação de Deus acaba a dor, não a ignora.",
+      "d": "Subida e volta são do mesmo Jesus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O olhar ao céu substitui a volta e a nova criação"
+      },
+      {
+        "id": "b",
+        "text": "O mesmo que subiu volta, e Deus enxugará toda lágrima"
+      },
+      {
+        "id": "c",
+        "text": "Deus habita, mas a dor e a morte continuam"
+      },
+      {
+        "id": "d",
+        "text": "Outro virá, e as primeiras coisas permanecem"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu. Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "id": "escatologia-cam-es-boss-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 1:11; Apocalipse 21:3–4",
+    "learningObjective": "Integrar a volta de Jesus e a nova criação: o que subiu voltará, e Deus enxugará toda lágrima.",
+    "evidence": [
+      "Atos 1:11",
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Atos 1:11; Apocalipse 21:3–4?",
+    "prompt": "Como se encadeiam os eventos de Atos 1:11; Apocalipse 21:3–4?",
+    "cue": "Como se encadeiam os eventos de Atos 1:11; Apocalipse 21:3–4?",
+    "feedbackCorrect": "Certo: volta no mesmo modo, habitação, fim da morte e do pranto.",
+    "feedbackWrong": {
+      "b": "A volta visível abre o encadeamento.",
+      "c": "O fim da morte fecha a esperança."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "assim virá do modo como o vistes ir para o céu"
+      },
+      {
+        "id": "b",
+        "text": "ele habitará com eles; eles serão o seu povo"
+      },
+      {
+        "id": "c",
+        "text": "Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu. Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "escatologia",
+    "section": "es-boss",
+    "id": "escatologia-cam-es-boss-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 1:11; Apocalipse 21:3–4",
+    "learningObjective": "Integrar a volta de Jesus e a nova criação: o que subiu voltará, e Deus enxugará toda lágrima.",
+    "evidence": [
+      "Atos 1:11",
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Não haverá mais ___, nem haverá mais pranto\"",
+    "prompt": "Complete a frase: \"Não haverá mais ___, nem haverá mais pranto\"",
+    "cue": "Complete a frase: \"Não haverá mais ___, nem haverá mais pranto\"",
+    "feedbackCorrect": "Certo: não haverá mais morte.",
+    "feedbackWrong": {
+      "b": "Céu descreve a subida e a volta.",
+      "c": "Recebido descreve Jesus no céu."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "morte"
+      },
+      {
+        "id": "b",
+        "text": "céu"
+      },
+      {
+        "id": "c",
+        "text": "recebido"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu. Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "template": "Não haverá mais ___, nem haverá mais pranto",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "id": "escatologia-cam-es-boss-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 1:11; Apocalipse 21:3–4",
+    "learningObjective": "Integrar a volta de Jesus e a nova criação: o que subiu voltará, e Deus enxugará toda lágrima.",
+    "evidence": [
+      "Atos 1:11",
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "connect",
+    "question": "O que Atos 1:11; Apocalipse 21:3–4 comunica que se liga a este contexto?",
+    "prompt": "O que Atos 1:11; Apocalipse 21:3–4 comunica que se liga a este contexto?",
+    "cue": "O que Atos 1:11; Apocalipse 21:3–4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: esperança com volta e consolo final.",
+    "feedbackWrong": {
+      "b": "O conjunto recusa um céu sem vinda.",
+      "c": "Não há tabernáculo que eternize o pranto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Esperança de volta e consolo"
+      },
+      {
+        "id": "b",
+        "text": "Céu sem vinda de Jesus"
+      },
+      {
+        "id": "c",
+        "text": "Tabernáculo com pranto eterno"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu. Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "passageA": {
+      "ref": "Atos 1:11; Apocalipse 21:3–4",
+      "text": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu. Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Esperança firme: o que subiu voltará, e Deus enxugará toda lágrima."
+    },
+    "trail": "escatologia",
+    "section": "es-boss",
+    "id": "escatologia-cam-es-boss-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 1:11; Apocalipse 21:3–4",
+    "learningObjective": "Integrar a volta de Jesus e a nova criação: o que subiu voltará, e Deus enxugará toda lágrima.",
+    "evidence": [
+      "Atos 1:11",
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "true_false",
+    "question": "A esperança cristã une duas afirmações: o que foi recebido no céu assim virá, e Deus habitará com os homens até passar a lágrima.",
+    "prompt": "A esperança cristã une duas afirmações: o que foi recebido no céu assim virá, e Deus habitará com os homens até passar a lágrima.",
+    "cue": "A esperança cristã une duas afirmações: o que foi recebido no céu assim virá, e Deus habitará com os homens até passar a lágrima.",
+    "feedbackCorrect": "Certo: volta visível e nova criação se sustentam juntas.",
+    "feedbackWrong": {
+      "false": "Os textos combinam o ‘assim virá’ e o tabernáculo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu. Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "id": "escatologia-pro-es-boss-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 1:11; Apocalipse 21:3–4",
+    "learningObjective": "Integrar a volta de Jesus e a nova criação: o que subiu voltará, e Deus enxugará toda lágrima.",
+    "evidence": [
+      "Atos 1:11",
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "tap",
+    "question": "Em Atos 1:11; Apocalipse 21:3–4, toque a palavra que falta em \"Eis o ___ de Deus está com os homens\"?",
+    "prompt": "Em Atos 1:11; Apocalipse 21:3–4, toque a palavra que falta em \"Eis o ___ de Deus está com os homens\"?",
+    "cue": "Em Atos 1:11; Apocalipse 21:3–4, toque a palavra que falta em \"Eis o ___ de Deus está com os homens\"?",
+    "feedbackCorrect": "Exato: o tabernáculo de Deus está com os homens.",
+    "feedbackWrong": {
+      "b": "Galileus é o vocativo de Atos 1:11.",
+      "c": "Vistes descreve o modo da subida."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "tabernáculo"
+      },
+      {
+        "id": "b",
+        "text": "Galileus"
+      },
+      {
+        "id": "c",
+        "text": "vistes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu. Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "template": "Eis o ___ de Deus está com os homens",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "id": "escatologia-pro-es-boss-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 1:11; Apocalipse 21:3–4",
+    "learningObjective": "Integrar a volta de Jesus e a nova criação: o que subiu voltará, e Deus enxugará toda lágrima.",
+    "evidence": [
+      "Atos 1:11",
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido teológico de Atos 1:11 e Apocalipse 21:3–4 juntos?",
+    "prompt": "Qual leitura interpreta melhor o sentido teológico de Atos 1:11 e Apocalipse 21:3–4 juntos?",
+    "cue": "Qual leitura interpreta melhor o sentido teológico de Atos 1:11 e Apocalipse 21:3–4 juntos?",
+    "feedbackCorrect": "Certo: esperança firme — o mesmo Jesus volta, e Deus enxuga a lágrima.",
+    "feedbackWrong": {
+      "a": "O olhar vazio é corrigido, não canonizado.",
+      "b": "A morte passa na nova criação.",
+      "d": "A identidade de Jesus persiste da subida à volta."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A fé escatológica é só olhar o céu, sem vinda nem consolo"
+      },
+      {
+        "id": "b",
+        "text": "Jesus volta, mas a morte e o pranto permanecem"
+      },
+      {
+        "id": "c",
+        "text": "Quem subiu voltará, e Deus estará com eles sem mais lágrima"
+      },
+      {
+        "id": "d",
+        "text": "Outro messias vem, e as primeiras coisas se eternizam"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu. Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "id": "escatologia-pro-es-boss-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 1:11; Apocalipse 21:3–4",
+    "learningObjective": "Integrar a volta de Jesus e a nova criação: o que subiu voltará, e Deus enxugará toda lágrima.",
+    "evidence": [
+      "Atos 1:11",
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Atos 1:11; Apocalipse 21:3–4?",
+    "prompt": "Qual sequência revela o sentido de Atos 1:11; Apocalipse 21:3–4?",
+    "cue": "Qual sequência revela o sentido de Atos 1:11; Apocalipse 21:3–4?",
+    "feedbackCorrect": "Certo: o mesmo Jesus recebido, Deus com eles, primeiras coisas passadas.",
+    "feedbackWrong": {
+      "b": "O sentido começa em Jesus recebido no céu.",
+      "c": "As primeiras coisas passadas fecham a esperança."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Esse Jesus que dentre vós foi recebido no céu"
+      },
+      {
+        "id": "b",
+        "text": "Deus mesmo estará com eles"
+      },
+      {
+        "id": "c",
+        "text": "as primeiras coisas são passadas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu. Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "escatologia",
+    "section": "es-boss",
+    "id": "escatologia-pro-es-boss-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 1:11; Apocalipse 21:3–4",
+    "learningObjective": "Integrar a volta de Jesus e a nova criação: o que subiu voltará, e Deus enxugará toda lágrima.",
+    "evidence": [
+      "Atos 1:11",
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Esse Jesus que dentre vós foi ___ no céu\"",
+    "prompt": "Complete a frase: \"Esse Jesus que dentre vós foi ___ no céu\"",
+    "cue": "Complete a frase: \"Esse Jesus que dentre vós foi ___ no céu\"",
+    "feedbackCorrect": "Certo: foi recebido no céu, e assim virá.",
+    "feedbackWrong": {
+      "b": "Passadas qualifica as primeiras coisas.",
+      "c": "Povo descreve a aliança em Apocalipse 21."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "recebido"
+      },
+      {
+        "id": "b",
+        "text": "passadas"
+      },
+      {
+        "id": "c",
+        "text": "povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu. Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "template": "Esse Jesus que dentre vós foi ___ no céu",
+    "trail": "escatologia",
+    "section": "es-boss",
+    "id": "escatologia-pro-es-boss-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 1:11; Apocalipse 21:3–4",
+    "learningObjective": "Integrar a volta de Jesus e a nova criação: o que subiu voltará, e Deus enxugará toda lágrima.",
+    "evidence": [
+      "Atos 1:11",
+      "Apocalipse 21:3",
+      "Apocalipse 21:4"
+    ],
+    "type": "connect",
+    "question": "O que Atos 1:11; Apocalipse 21:3–4 comunica que se liga a este contexto?",
+    "prompt": "O que Atos 1:11; Apocalipse 21:3–4 comunica que se liga a este contexto?",
+    "cue": "O que Atos 1:11; Apocalipse 21:3–4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: esperança firme — volta e lágrima enxugada.",
+    "feedbackWrong": {
+      "b": "O conjunto recusa uma história sem volta.",
+      "c": "Não há nova criação com a morte intacta."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O que subiu voltará"
+      },
+      {
+        "id": "b",
+        "text": "História sem volta de Jesus"
+      },
+      {
+        "id": "c",
+        "text": "Nova criação com a morte"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu. Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas.",
+    "passageA": {
+      "ref": "Atos 1:11; Apocalipse 21:3–4",
+      "text": "e lhes perguntaram: Galileus, por que estais olhando para o céu? Esse Jesus que dentre vós foi recebido no céu assim virá do modo como o vistes ir para o céu. Ouvi uma grande voz, vinda do trono, dizendo: Eis o tabernáculo de Deus está com os homens, e ele habitará com eles; eles serão o seu povo, e Deus mesmo estará com eles. e enxugará toda lágrima dos olhos deles. Não haverá mais morte, nem haverá mais pranto, nem choro, nem dor, porque as primeiras coisas são passadas."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Esperança firme: o que subiu voltará, e Deus enxugará toda lágrima."
+    },
+    "trail": "escatologia",
+    "section": "es-boss",
+    "id": "escatologia-pro-es-boss-06"
+  }
+]

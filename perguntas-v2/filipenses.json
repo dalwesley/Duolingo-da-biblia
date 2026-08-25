@@ -1,0 +1,3026 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 1:21",
+    "learningObjective": "Reconhecer que, para Paulo, o viver é Cristo e o morrer é lucro — a alegria redefine o ganho.",
+    "evidence": [
+      "Filipenses 1:21"
+    ],
+    "type": "true_false",
+    "question": "Para Paulo, o viver é Cristo e o morrer é lucro.",
+    "prompt": "Para Paulo, o viver é Cristo e o morrer é lucro.",
+    "cue": "Para Paulo, o viver é Cristo e o morrer é lucro.",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "id": "filipenses-sem-fp-01-alegria-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro.",
+    "feedbackCorrect": "Certo: é a afirmação literal de Filipenses 1:21.",
+    "feedbackWrong": {
+      "false": "Releia: o viver é Cristo, e o morrer é lucro."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 1:21",
+    "learningObjective": "Reconhecer que, para Paulo, o viver é Cristo e o morrer é lucro — a alegria redefine o ganho.",
+    "evidence": [
+      "Filipenses 1:21"
+    ],
+    "type": "tap",
+    "question": "Em Filipenses 1:21, toque a palavra que falta em \"Pois para mim o ___ é Cristo, e o morrer é lucro.\"?",
+    "prompt": "Em Filipenses 1:21, toque a palavra que falta em \"Pois para mim o ___ é Cristo, e o morrer é lucro.\"?",
+    "cue": "Em Filipenses 1:21, toque a palavra que falta em \"Pois para mim o ___ é Cristo, e o morrer é lucro.\"?",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "id": "filipenses-sem-fp-01-alegria-02",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro.",
+    "template": "Pois para mim o ___ é Cristo, e o morrer é lucro.",
+    "feedbackCorrect": "Exato: o viver é Cristo.",
+    "feedbackWrong": {
+      "b": "Cristo completa a frase, mas não esta lacuna.",
+      "c": "Morrer vem depois: a lacuna é o viver."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "viver"
+      },
+      {
+        "id": "b",
+        "text": "Cristo"
+      },
+      {
+        "id": "c",
+        "text": "morrer"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 1:21",
+    "learningObjective": "Reconhecer que, para Paulo, o viver é Cristo e o morrer é lucro — a alegria redefine o ganho.",
+    "evidence": [
+      "Filipenses 1:21"
+    ],
+    "type": "choice",
+    "question": "O que Filipenses 1:21 afirma de modo explícito?",
+    "prompt": "O que Filipenses 1:21 afirma de modo explícito?",
+    "cue": "O que Filipenses 1:21 afirma de modo explícito?",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "id": "filipenses-sem-fp-01-alegria-03",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro.",
+    "feedbackCorrect": "Certo: viver é Cristo, e morrer é lucro.",
+    "feedbackWrong": {
+      "b": "O texto inverte: viver é Cristo, morrer é lucro.",
+      "c": "Paulo não chama a morte de prejuízo.",
+      "d": "Ele não reduz a vida a prisão nem a morte a descanso."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O viver é Cristo, e o morrer é lucro."
+      },
+      {
+        "id": "b",
+        "text": "O viver é lucro, e o morrer é Cristo."
+      },
+      {
+        "id": "c",
+        "text": "O morrer é prejuízo se Cristo não vier logo."
+      },
+      {
+        "id": "d",
+        "text": "O viver é prisão, e o morrer é só descanso."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 1:21",
+    "learningObjective": "Reconhecer que, para Paulo, o viver é Cristo e o morrer é lucro — a alegria redefine o ganho.",
+    "evidence": [
+      "Filipenses 1:21"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Filipenses 1:21?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Filipenses 1:21?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Filipenses 1:21?",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "id": "filipenses-sem-fp-01-alegria-04",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro.",
+    "feedbackCorrect": "Certo: primeiro o viver em Cristo, depois o morrer como lucro.",
+    "feedbackWrong": {
+      "b": "O versículo não começa pelo morrer.",
+      "c": "Releia a ordem: viver Cristo, depois morrer lucro."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pois para mim"
+      },
+      {
+        "id": "b",
+        "text": "o viver é Cristo"
+      },
+      {
+        "id": "c",
+        "text": "e o morrer é lucro"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 1:21",
+    "learningObjective": "Reconhecer que, para Paulo, o viver é Cristo e o morrer é lucro — a alegria redefine o ganho.",
+    "evidence": [
+      "Filipenses 1:21"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Pois para mim o viver é ___, e o morrer é lucro.\"",
+    "prompt": "Complete a frase: \"Pois para mim o viver é ___, e o morrer é lucro.\"",
+    "cue": "Complete a frase: \"Pois para mim o viver é ___, e o morrer é lucro.\"",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "id": "filipenses-sem-fp-01-alegria-05",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro.",
+    "template": "Pois para mim o viver é ___, e o morrer é lucro.",
+    "feedbackCorrect": "Certo: o viver é Cristo.",
+    "feedbackWrong": {
+      "b": "Viver é o sujeito, não o predicado desta lacuna.",
+      "c": "Lucro descreve o morrer, não o viver."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo"
+      },
+      {
+        "id": "b",
+        "text": "viver"
+      },
+      {
+        "id": "c",
+        "text": "lucro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 1:21",
+    "learningObjective": "Reconhecer que, para Paulo, o viver é Cristo e o morrer é lucro — a alegria redefine o ganho.",
+    "evidence": [
+      "Filipenses 1:21"
+    ],
+    "type": "connect",
+    "question": "O que Filipenses 1:21 comunica que se liga a este contexto?",
+    "prompt": "O que Filipenses 1:21 comunica que se liga a este contexto?",
+    "cue": "O que Filipenses 1:21 comunica que se liga a este contexto?",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "id": "filipenses-sem-fp-01-alegria-06",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro.",
+    "passageA": {
+      "ref": "Filipenses 1:21",
+      "text": "Pois para mim o viver é Cristo, e o morrer é lucro."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Alegria no evangelho redefine lucro: viver é Cristo; morrer não é perda."
+    },
+    "feedbackCorrect": "Certo: o lucro é Cristo no viver, não a sobrevivência.",
+    "feedbackWrong": {
+      "b": "Paulo não chama a morte de prejuízo.",
+      "c": "O centro não é o eu, mas Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Viver Cristo, morrer lucro"
+      },
+      {
+        "id": "b",
+        "text": "Morrer como prejuízo total"
+      },
+      {
+        "id": "c",
+        "text": "Lucro centrado no eu"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 1:21",
+    "learningObjective": "Reconhecer que, para Paulo, o viver é Cristo e o morrer é lucro — a alegria redefine o ganho.",
+    "evidence": [
+      "Filipenses 1:21"
+    ],
+    "type": "true_false",
+    "question": "Paulo trata a morte como prejuízo em relação a Cristo.",
+    "prompt": "Paulo trata a morte como prejuízo em relação a Cristo.",
+    "cue": "Paulo trata a morte como prejuízo em relação a Cristo.",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "id": "filipenses-cam-fp-01-alegria-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro.",
+    "feedbackCorrect": "Certo: ele chama o morrer de lucro, não de prejuízo.",
+    "feedbackWrong": {
+      "true": "O texto diz o contrário: o morrer é lucro."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 1:21",
+    "learningObjective": "Reconhecer que, para Paulo, o viver é Cristo e o morrer é lucro — a alegria redefine o ganho.",
+    "evidence": [
+      "Filipenses 1:21"
+    ],
+    "type": "tap",
+    "question": "Em Filipenses 1:21, toque a palavra que falta em \"Pois para mim o viver é Cristo, e o morrer é ___.\"?",
+    "prompt": "Em Filipenses 1:21, toque a palavra que falta em \"Pois para mim o viver é Cristo, e o morrer é ___.\"?",
+    "cue": "Em Filipenses 1:21, toque a palavra que falta em \"Pois para mim o viver é Cristo, e o morrer é ___.\"?",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "id": "filipenses-cam-fp-01-alegria-02",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro.",
+    "template": "Pois para mim o viver é Cristo, e o morrer é ___.",
+    "feedbackCorrect": "Exato: o morrer é lucro.",
+    "feedbackWrong": {
+      "a": "Cristo é o viver, não esta lacuna.",
+      "c": "Mim identifica Paulo, não o predicado do morrer."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo"
+      },
+      {
+        "id": "b",
+        "text": "lucro"
+      },
+      {
+        "id": "c",
+        "text": "mim"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 1:21",
+    "learningObjective": "Reconhecer que, para Paulo, o viver é Cristo e o morrer é lucro — a alegria redefine o ganho.",
+    "evidence": [
+      "Filipenses 1:21"
+    ],
+    "type": "choice",
+    "question": "O que a equação de Filipenses 1:21 faz com a ideia de lucro?",
+    "prompt": "O que a equação de Filipenses 1:21 faz com a ideia de lucro?",
+    "cue": "O que a equação de Filipenses 1:21 faz com a ideia de lucro?",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "id": "filipenses-cam-fp-01-alegria-03",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro.",
+    "feedbackCorrect": "Certo: lucro deixa de ser sobreviver e passa a ser Cristo.",
+    "feedbackWrong": {
+      "a": "Paulo não ensina a buscar a morte como fuga.",
+      "b": "Sobreviver não é o maior ganho no versículo.",
+      "d": "Cristo não fica de fora da vida cotidiana."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ensina a buscar a morte para fugir do sofrimento."
+      },
+      {
+        "id": "b",
+        "text": "Coloca a sobrevivência como o maior ganho de Paulo."
+      },
+      {
+        "id": "c",
+        "text": "Redefine o lucro: Cristo no viver; a morte não é perda."
+      },
+      {
+        "id": "d",
+        "text": "Separa Cristo da vida cotidiana de Paulo em Filipos."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 1:21",
+    "learningObjective": "Reconhecer que, para Paulo, o viver é Cristo e o morrer é lucro — a alegria redefine o ganho.",
+    "evidence": [
+      "Filipenses 1:21"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Filipenses 1:21?",
+    "prompt": "Como se encadeiam os eventos de Filipenses 1:21?",
+    "cue": "Como se encadeiam os eventos de Filipenses 1:21?",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "id": "filipenses-cam-fp-01-alegria-04",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro.",
+    "feedbackCorrect": "Certo: o viver em Cristo antecede o morrer como lucro.",
+    "feedbackWrong": {
+      "b": "O encadeamento não começa pelo morrer.",
+      "c": "Releia: viver Cristo, depois morrer lucro."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "para mim o viver é Cristo"
+      },
+      {
+        "id": "b",
+        "text": "e o morrer"
+      },
+      {
+        "id": "c",
+        "text": "é lucro"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 1:21",
+    "learningObjective": "Reconhecer que, para Paulo, o viver é Cristo e o morrer é lucro — a alegria redefine o ganho.",
+    "evidence": [
+      "Filipenses 1:21"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Pois para mim o viver é Cristo, e o ___ é lucro.\"",
+    "prompt": "Complete a frase: \"Pois para mim o viver é Cristo, e o ___ é lucro.\"",
+    "cue": "Complete a frase: \"Pois para mim o viver é Cristo, e o ___ é lucro.\"",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "id": "filipenses-cam-fp-01-alegria-05",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro.",
+    "template": "Pois para mim o viver é Cristo, e o ___ é lucro.",
+    "feedbackCorrect": "Certo: o morrer é lucro.",
+    "feedbackWrong": {
+      "b": "Viver já está na primeira cláusula.",
+      "c": "Mim não é o sujeito desta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "morrer"
+      },
+      {
+        "id": "b",
+        "text": "viver"
+      },
+      {
+        "id": "c",
+        "text": "mim"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 1:21",
+    "learningObjective": "Reconhecer que, para Paulo, o viver é Cristo e o morrer é lucro — a alegria redefine o ganho.",
+    "evidence": [
+      "Filipenses 1:21"
+    ],
+    "type": "connect",
+    "question": "O que Filipenses 1:21 comunica que se liga a este contexto?",
+    "prompt": "O que Filipenses 1:21 comunica que se liga a este contexto?",
+    "cue": "O que Filipenses 1:21 comunica que se liga a este contexto?",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "id": "filipenses-cam-fp-01-alegria-06",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro.",
+    "passageA": {
+      "ref": "Filipenses 1:21",
+      "text": "Pois para mim o viver é Cristo, e o morrer é lucro."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A alegria do evangelho não mede ganho pela sobrevivência, mas por Cristo."
+    },
+    "feedbackCorrect": "Certo: Cristo no viver torna a morte lucro, não perda.",
+    "feedbackWrong": {
+      "a": "O texto não faz da sobrevivência o critério.",
+      "c": "Não há contraste de prejuízo na morte."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ganho medido pela sobrevivência"
+      },
+      {
+        "id": "b",
+        "text": "Cristo como critério do lucro"
+      },
+      {
+        "id": "c",
+        "text": "Morte como prejuízo absoluto"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 1:21",
+    "learningObjective": "Reconhecer que, para Paulo, o viver é Cristo e o morrer é lucro — a alegria redefine o ganho.",
+    "evidence": [
+      "Filipenses 1:21"
+    ],
+    "type": "true_false",
+    "question": "O lucro de Paulo não é sobreviver a qualquer custo, mas ter Cristo.",
+    "prompt": "O lucro de Paulo não é sobreviver a qualquer custo, mas ter Cristo.",
+    "cue": "O lucro de Paulo não é sobreviver a qualquer custo, mas ter Cristo.",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "id": "filipenses-pro-fp-01-alegria-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro.",
+    "feedbackCorrect": "Certo: viver é Cristo; morrer, então, não é perda.",
+    "feedbackWrong": {
+      "false": "1:21 desloca o lucro de sobreviver para Cristo."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 1:21",
+    "learningObjective": "Reconhecer que, para Paulo, o viver é Cristo e o morrer é lucro — a alegria redefine o ganho.",
+    "evidence": [
+      "Filipenses 1:21"
+    ],
+    "type": "tap",
+    "question": "Em Filipenses 1:21, toque a palavra que falta em \"Pois para ___ o viver é Cristo, e o morrer é lucro.\"?",
+    "prompt": "Em Filipenses 1:21, toque a palavra que falta em \"Pois para ___ o viver é Cristo, e o morrer é lucro.\"?",
+    "cue": "Em Filipenses 1:21, toque a palavra que falta em \"Pois para ___ o viver é Cristo, e o morrer é lucro.\"?",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "id": "filipenses-pro-fp-01-alegria-02",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro.",
+    "template": "Pois para ___ o viver é Cristo, e o morrer é lucro.",
+    "feedbackCorrect": "Exato: é para mim — o testemunho pessoal de Paulo.",
+    "feedbackWrong": {
+      "b": "Cristo é o conteúdo do viver, não o pronome.",
+      "c": "Lucro predica o morrer, não preenche esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "mim"
+      },
+      {
+        "id": "b",
+        "text": "Cristo"
+      },
+      {
+        "id": "c",
+        "text": "lucro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 1:21",
+    "learningObjective": "Reconhecer que, para Paulo, o viver é Cristo e o morrer é lucro — a alegria redefine o ganho.",
+    "evidence": [
+      "Filipenses 1:21"
+    ],
+    "type": "choice",
+    "question": "Qual leitura teológica Filipenses 1:21 sustenta?",
+    "prompt": "Qual leitura teológica Filipenses 1:21 sustenta?",
+    "cue": "Qual leitura teológica Filipenses 1:21 sustenta?",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "id": "filipenses-pro-fp-01-alegria-03",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro.",
+    "feedbackCorrect": "Certo: Cristo é o centro do lucro; a morte não o desfaz.",
+    "feedbackWrong": {
+      "b": "A morte não anula o viver em Cristo; é lucro.",
+      "c": "Lucro aqui não é riqueza material.",
+      "d": "Paulo não despreza a vida: o viver é Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo é o centro do lucro; a morte não o desfaz."
+      },
+      {
+        "id": "b",
+        "text": "A morte anula o valor de viver em Cristo."
+      },
+      {
+        "id": "c",
+        "text": "Lucro aqui é riqueza material da igreja de Filipos."
+      },
+      {
+        "id": "d",
+        "text": "Paulo despreza a vida presente como inútil em si."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 1:21",
+    "learningObjective": "Reconhecer que, para Paulo, o viver é Cristo e o morrer é lucro — a alegria redefine o ganho.",
+    "evidence": [
+      "Filipenses 1:21"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Filipenses 1:21?",
+    "prompt": "Qual sequência revela o sentido de Filipenses 1:21?",
+    "cue": "Qual sequência revela o sentido de Filipenses 1:21?",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "id": "filipenses-pro-fp-01-alegria-04",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro.",
+    "feedbackCorrect": "Certo: o sentido vai do viver em Cristo ao morrer como lucro.",
+    "feedbackWrong": {
+      "b": "O sentido não começa pelo morrer isolado.",
+      "c": "Releia o movimento do versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "o viver é Cristo"
+      },
+      {
+        "id": "b",
+        "text": "e o morrer é lucro"
+      },
+      {
+        "id": "c",
+        "text": "Pois para mim"
+      }
+    ],
+    "correctOrder": [
+      "c",
+      "a",
+      "b"
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 1:21",
+    "learningObjective": "Reconhecer que, para Paulo, o viver é Cristo e o morrer é lucro — a alegria redefine o ganho.",
+    "evidence": [
+      "Filipenses 1:21"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Pois para mim o ___ é Cristo, e o morrer é lucro.\"",
+    "prompt": "Complete a frase: \"Pois para mim o ___ é Cristo, e o morrer é lucro.\"",
+    "cue": "Complete a frase: \"Pois para mim o ___ é Cristo, e o morrer é lucro.\"",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "id": "filipenses-pro-fp-01-alegria-05",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro.",
+    "template": "Pois para mim o ___ é Cristo, e o morrer é lucro.",
+    "feedbackCorrect": "Certo: o viver — a vida inteira — é Cristo.",
+    "feedbackWrong": {
+      "b": "Morrer é a segunda cláusula.",
+      "c": "Lucro predica o morrer, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "viver"
+      },
+      {
+        "id": "b",
+        "text": "morrer"
+      },
+      {
+        "id": "c",
+        "text": "lucro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 1:21",
+    "learningObjective": "Reconhecer que, para Paulo, o viver é Cristo e o morrer é lucro — a alegria redefine o ganho.",
+    "evidence": [
+      "Filipenses 1:21"
+    ],
+    "type": "connect",
+    "question": "O que Filipenses 1:21 comunica que se liga a este contexto?",
+    "prompt": "O que Filipenses 1:21 comunica que se liga a este contexto?",
+    "cue": "O que Filipenses 1:21 comunica que se liga a este contexto?",
+    "trail": "filipenses",
+    "section": "fp-01-alegria",
+    "id": "filipenses-pro-fp-01-alegria-06",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro.",
+    "passageA": {
+      "ref": "Filipenses 1:21",
+      "text": "Pois para mim o viver é Cristo, e o morrer é lucro."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Alegria no evangelho redefine lucro: viver é Cristo; morrer não é perda."
+    },
+    "feedbackCorrect": "Certo: a morte não cancela Cristo; o lucro é ele.",
+    "feedbackWrong": {
+      "a": "O versículo não faz da morte o fim de Cristo.",
+      "b": "Lucro não é acumular bens."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Morte como fim de Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Lucro como acumular bens"
+      },
+      {
+        "id": "c",
+        "text": "Cristo redefinindo o lucro"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 2:5–8",
+    "learningObjective": "Perceber que a mente de Cristo é esvaziar-se e obedecer até a cruz, sem agarrar igualdade como presa.",
+    "evidence": [
+      "Filipenses 2:5",
+      "Filipenses 2:6",
+      "Filipenses 2:7",
+      "Filipenses 2:8"
+    ],
+    "type": "true_false",
+    "question": "Cristo, subsistindo em forma de Deus, esvaziou-se, tomando a forma de servo.",
+    "prompt": "Cristo, subsistindo em forma de Deus, esvaziou-se, tomando a forma de servo.",
+    "cue": "Cristo, subsistindo em forma de Deus, esvaziou-se, tomando a forma de servo.",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "id": "filipenses-sem-fp-02-humildade-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Tende em vós este sentimento que houve também em Cristo Jesus, o qual, subsistindo em forma de Deus, não julgou que o ser igual a Deus fosse coisa de que não devesse abrir mão, mas esvaziou-se, tomando a forma de servo, feito semelhante aos homens; e, sendo reconhecido como homem, humilhou-se, tornando-se obediente até a morte e morte de cruz.",
+    "feedbackCorrect": "Certo: o hino diz exatamente isso em 2:6–7.",
+    "feedbackWrong": {
+      "false": "Releia: subsistindo em forma de Deus, esvaziou-se como servo."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 2:5–8",
+    "learningObjective": "Perceber que a mente de Cristo é esvaziar-se e obedecer até a cruz, sem agarrar igualdade como presa.",
+    "evidence": [
+      "Filipenses 2:5",
+      "Filipenses 2:6",
+      "Filipenses 2:7",
+      "Filipenses 2:8"
+    ],
+    "type": "tap",
+    "question": "Em Filipenses 2:5–8, toque a palavra que falta em \"mas esvaziou-se, tomando a forma de ___, feito semelhante aos homens\"?",
+    "prompt": "Em Filipenses 2:5–8, toque a palavra que falta em \"mas esvaziou-se, tomando a forma de ___, feito semelhante aos homens\"?",
+    "cue": "Em Filipenses 2:5–8, toque a palavra que falta em \"mas esvaziou-se, tomando a forma de ___, feito semelhante aos homens\"?",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "id": "filipenses-sem-fp-02-humildade-02",
+    "passageText": "Tende em vós este sentimento que houve também em Cristo Jesus, o qual, subsistindo em forma de Deus, não julgou que o ser igual a Deus fosse coisa de que não devesse abrir mão, mas esvaziou-se, tomando a forma de servo, feito semelhante aos homens; e, sendo reconhecido como homem, humilhou-se, tornando-se obediente até a morte e morte de cruz.",
+    "template": "mas esvaziou-se, tomando a forma de ___, feito semelhante aos homens",
+    "feedbackCorrect": "Exato: tomou a forma de servo.",
+    "feedbackWrong": {
+      "b": "Homens descreve a semelhança, não esta lacuna.",
+      "c": "Deus é a forma de que ele não se agarrou como presa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "servo"
+      },
+      {
+        "id": "b",
+        "text": "homens"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 2:5–8",
+    "learningObjective": "Perceber que a mente de Cristo é esvaziar-se e obedecer até a cruz, sem agarrar igualdade como presa.",
+    "evidence": [
+      "Filipenses 2:5",
+      "Filipenses 2:6",
+      "Filipenses 2:7",
+      "Filipenses 2:8"
+    ],
+    "type": "choice",
+    "question": "O que o texto diz que Cristo fez depois de subsistindo em forma de Deus?",
+    "prompt": "O que o texto diz que Cristo fez depois de subsistindo em forma de Deus?",
+    "cue": "O que o texto diz que Cristo fez depois de subsistindo em forma de Deus?",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "id": "filipenses-sem-fp-02-humildade-03",
+    "passageText": "Tende em vós este sentimento que houve também em Cristo Jesus, o qual, subsistindo em forma de Deus, não julgou que o ser igual a Deus fosse coisa de que não devesse abrir mão, mas esvaziou-se, tomando a forma de servo, feito semelhante aos homens; e, sendo reconhecido como homem, humilhou-se, tornando-se obediente até a morte e morte de cruz.",
+    "feedbackCorrect": "Certo: esvaziou-se, tomando a forma de servo.",
+    "feedbackWrong": {
+      "a": "O texto diz o contrário: não agarrou a igualdade.",
+      "c": "Ele se fez semelhante aos homens.",
+      "d": "A humilhação chega até a morte de cruz."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo segurou a igualdade com Deus como presa."
+      },
+      {
+        "id": "b",
+        "text": "Cristo esvaziou-se, tomando a forma de servo."
+      },
+      {
+        "id": "c",
+        "text": "Cristo recusou tornar-se semelhante aos homens."
+      },
+      {
+        "id": "d",
+        "text": "A humilhação parou antes da morte de cruz."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 2:5–8",
+    "learningObjective": "Perceber que a mente de Cristo é esvaziar-se e obedecer até a cruz, sem agarrar igualdade como presa.",
+    "evidence": [
+      "Filipenses 2:5",
+      "Filipenses 2:6",
+      "Filipenses 2:7",
+      "Filipenses 2:8"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Filipenses 2:5–8?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Filipenses 2:5–8?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Filipenses 2:5–8?",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "id": "filipenses-sem-fp-02-humildade-04",
+    "passageText": "Tende em vós este sentimento que houve também em Cristo Jesus, o qual, subsistindo em forma de Deus, não julgou que o ser igual a Deus fosse coisa de que não devesse abrir mão, mas esvaziou-se, tomando a forma de servo, feito semelhante aos homens; e, sendo reconhecido como homem, humilhou-se, tornando-se obediente até a morte e morte de cruz.",
+    "feedbackCorrect": "Certo: forma de Deus, esvaziamento, cruz.",
+    "feedbackWrong": {
+      "b": "A cruz não vem antes do esvaziamento.",
+      "c": "Releia o movimento de 2:6–8."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "subsistindo em forma de Deus"
+      },
+      {
+        "id": "b",
+        "text": "esvaziou-se, tomando a forma de servo"
+      },
+      {
+        "id": "c",
+        "text": "humilhou-se, tornando-se obediente até a morte e morte de cruz"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 2:5–8",
+    "learningObjective": "Perceber que a mente de Cristo é esvaziar-se e obedecer até a cruz, sem agarrar igualdade como presa.",
+    "evidence": [
+      "Filipenses 2:5",
+      "Filipenses 2:6",
+      "Filipenses 2:7",
+      "Filipenses 2:8"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"humilhou-se, tornando-se obediente até a morte e morte de ___.\"",
+    "prompt": "Complete a frase: \"humilhou-se, tornando-se obediente até a morte e morte de ___.\"",
+    "cue": "Complete a frase: \"humilhou-se, tornando-se obediente até a morte e morte de ___.\"",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "id": "filipenses-sem-fp-02-humildade-05",
+    "passageText": "Tende em vós este sentimento que houve também em Cristo Jesus, o qual, subsistindo em forma de Deus, não julgou que o ser igual a Deus fosse coisa de que não devesse abrir mão, mas esvaziou-se, tomando a forma de servo, feito semelhante aos homens; e, sendo reconhecido como homem, humilhou-se, tornando-se obediente até a morte e morte de cruz.",
+    "template": "humilhou-se, tornando-se obediente até a morte e morte de ___.",
+    "feedbackCorrect": "Certo: morte de cruz.",
+    "feedbackWrong": {
+      "b": "Servo é a forma que ele tomou, não esta lacuna.",
+      "c": "Homem descreve o reconhecimento, não o tipo de morte."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "cruz"
+      },
+      {
+        "id": "b",
+        "text": "servo"
+      },
+      {
+        "id": "c",
+        "text": "homem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 2:5–8",
+    "learningObjective": "Perceber que a mente de Cristo é esvaziar-se e obedecer até a cruz, sem agarrar igualdade como presa.",
+    "evidence": [
+      "Filipenses 2:5",
+      "Filipenses 2:6",
+      "Filipenses 2:7",
+      "Filipenses 2:8"
+    ],
+    "type": "connect",
+    "question": "O que Filipenses 2:5–8 comunica que se liga a este contexto?",
+    "prompt": "O que Filipenses 2:5–8 comunica que se liga a este contexto?",
+    "cue": "O que Filipenses 2:5–8 comunica que se liga a este contexto?",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "id": "filipenses-sem-fp-02-humildade-06",
+    "passageText": "Tende em vós este sentimento que houve também em Cristo Jesus, o qual, subsistindo em forma de Deus, não julgou que o ser igual a Deus fosse coisa de que não devesse abrir mão, mas esvaziou-se, tomando a forma de servo, feito semelhante aos homens; e, sendo reconhecido como homem, humilhou-se, tornando-se obediente até a morte e morte de cruz.",
+    "passageA": {
+      "ref": "Filipenses 2:5–8",
+      "text": "Tende em vós este sentimento que houve também em Cristo Jesus… esvaziou-se, tomando a forma de servo… humilhou-se, tornando-se obediente até a morte e morte de cruz."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A mente de Cristo é esvaziar-se e obedecer até a cruz — não agarrar igualdade como presa."
+    },
+    "feedbackCorrect": "Certo: o sentimento de Cristo é esvaziar-se até a cruz.",
+    "feedbackWrong": {
+      "b": "Ele não agarrou a igualdade como presa.",
+      "c": "A obediência chega à cruz, não para antes."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Esvaziar-se até a cruz"
+      },
+      {
+        "id": "b",
+        "text": "Agarrar igualdade como presa"
+      },
+      {
+        "id": "c",
+        "text": "Obediência que para antes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 2:5–8",
+    "learningObjective": "Perceber que a mente de Cristo é esvaziar-se e obedecer até a cruz, sem agarrar igualdade como presa.",
+    "evidence": [
+      "Filipenses 2:5",
+      "Filipenses 2:6",
+      "Filipenses 2:7",
+      "Filipenses 2:8"
+    ],
+    "type": "true_false",
+    "question": "Cristo julgou que ser igual a Deus era coisa de que não devesse abrir mão.",
+    "prompt": "Cristo julgou que ser igual a Deus era coisa de que não devesse abrir mão.",
+    "cue": "Cristo julgou que ser igual a Deus era coisa de que não devesse abrir mão.",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "id": "filipenses-cam-fp-02-humildade-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Tende em vós este sentimento que houve também em Cristo Jesus, o qual, subsistindo em forma de Deus, não julgou que o ser igual a Deus fosse coisa de que não devesse abrir mão, mas esvaziou-se, tomando a forma de servo, feito semelhante aos homens; e, sendo reconhecido como homem, humilhou-se, tornando-se obediente até a morte e morte de cruz.",
+    "feedbackCorrect": "Certo: o texto diz que ele não julgou assim.",
+    "feedbackWrong": {
+      "true": "Ele não julgou que a igualdade fosse coisa de que não devesse abrir mão."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 2:5–8",
+    "learningObjective": "Perceber que a mente de Cristo é esvaziar-se e obedecer até a cruz, sem agarrar igualdade como presa.",
+    "evidence": [
+      "Filipenses 2:5",
+      "Filipenses 2:6",
+      "Filipenses 2:7",
+      "Filipenses 2:8"
+    ],
+    "type": "tap",
+    "question": "Em Filipenses 2:5–8, toque a palavra que falta em \"Tende em vós este ___ que houve também em Cristo Jesus\"?",
+    "prompt": "Em Filipenses 2:5–8, toque a palavra que falta em \"Tende em vós este ___ que houve também em Cristo Jesus\"?",
+    "cue": "Em Filipenses 2:5–8, toque a palavra que falta em \"Tende em vós este ___ que houve também em Cristo Jesus\"?",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "id": "filipenses-cam-fp-02-humildade-02",
+    "passageText": "Tende em vós este sentimento que houve também em Cristo Jesus, o qual, subsistindo em forma de Deus, não julgou que o ser igual a Deus fosse coisa de que não devesse abrir mão, mas esvaziou-se, tomando a forma de servo, feito semelhante aos homens; e, sendo reconhecido como homem, humilhou-se, tornando-se obediente até a morte e morte de cruz.",
+    "template": "Tende em vós este ___ que houve também em Cristo Jesus",
+    "feedbackCorrect": "Exato: o sentimento que houve em Cristo.",
+    "feedbackWrong": {
+      "b": "Servo é a forma que ele tomou, não esta lacuna.",
+      "c": "Cruz fecha o hino, não esta frase."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "sentimento"
+      },
+      {
+        "id": "b",
+        "text": "servo"
+      },
+      {
+        "id": "c",
+        "text": "cruz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 2:5–8",
+    "learningObjective": "Perceber que a mente de Cristo é esvaziar-se e obedecer até a cruz, sem agarrar igualdade como presa.",
+    "evidence": [
+      "Filipenses 2:5",
+      "Filipenses 2:6",
+      "Filipenses 2:7",
+      "Filipenses 2:8"
+    ],
+    "type": "choice",
+    "question": "Como se relacionam igualdade com Deus e esvaziamento em 2:6–8?",
+    "prompt": "Como se relacionam igualdade com Deus e esvaziamento em 2:6–8?",
+    "cue": "Como se relacionam igualdade com Deus e esvaziamento em 2:6–8?",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "id": "filipenses-cam-fp-02-humildade-03",
+    "passageText": "Tende em vós este sentimento que houve também em Cristo Jesus, o qual, subsistindo em forma de Deus, não julgou que o ser igual a Deus fosse coisa de que não devesse abrir mão, mas esvaziou-se, tomando a forma de servo, feito semelhante aos homens; e, sendo reconhecido como homem, humilhou-se, tornando-se obediente até a morte e morte de cruz.",
+    "feedbackCorrect": "Certo: ele não agarra a igualdade; esvazia-se até a cruz.",
+    "feedbackWrong": {
+      "a": "A forma de Deus não vira exigência de honra.",
+      "c": "A obediência inclui custo até a morte.",
+      "d": "Ele é reconhecido como homem no caminho do servo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Usar a forma de Deus para exigir honra imediata."
+      },
+      {
+        "id": "b",
+        "text": "Não agarrar igualdade: esvaziar-se até a cruz."
+      },
+      {
+        "id": "c",
+        "text": "Obedecer só enquanto não houver custo real."
+      },
+      {
+        "id": "d",
+        "text": "Ser servo sem jamais ser reconhecido como homem."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 2:5–8",
+    "learningObjective": "Perceber que a mente de Cristo é esvaziar-se e obedecer até a cruz, sem agarrar igualdade como presa.",
+    "evidence": [
+      "Filipenses 2:5",
+      "Filipenses 2:6",
+      "Filipenses 2:7",
+      "Filipenses 2:8"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Filipenses 2:5–8?",
+    "prompt": "Como se encadeiam os eventos de Filipenses 2:5–8?",
+    "cue": "Como se encadeiam os eventos de Filipenses 2:5–8?",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "id": "filipenses-cam-fp-02-humildade-04",
+    "passageText": "Tende em vós este sentimento que houve também em Cristo Jesus, o qual, subsistindo em forma de Deus, não julgou que o ser igual a Deus fosse coisa de que não devesse abrir mão, mas esvaziou-se, tomando a forma de servo, feito semelhante aos homens; e, sendo reconhecido como homem, humilhou-se, tornando-se obediente até a morte e morte de cruz.",
+    "feedbackCorrect": "Certo: sentimento de Cristo, recusa de agarrar, esvaziamento.",
+    "feedbackWrong": {
+      "b": "O esvaziamento segue a recusa de agarrar, não o contrário.",
+      "c": "Comece pelo sentimento que houve em Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Tende em vós este sentimento que houve também em Cristo Jesus"
+      },
+      {
+        "id": "b",
+        "text": "não julgou que o ser igual a Deus fosse coisa de que não devesse abrir mão"
+      },
+      {
+        "id": "c",
+        "text": "mas esvaziou-se, tomando a forma de servo"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 2:5–8",
+    "learningObjective": "Perceber que a mente de Cristo é esvaziar-se e obedecer até a cruz, sem agarrar igualdade como presa.",
+    "evidence": [
+      "Filipenses 2:5",
+      "Filipenses 2:6",
+      "Filipenses 2:7",
+      "Filipenses 2:8"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"sendo reconhecido como homem, ___, tornando-se obediente até a morte\"?",
+    "prompt": "Complete a frase: \"sendo reconhecido como homem, ___, tornando-se obediente até a morte\"?",
+    "cue": "Complete a frase: \"sendo reconhecido como homem, ___, tornando-se obediente até a morte\"?",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "id": "filipenses-cam-fp-02-humildade-05",
+    "passageText": "Tende em vós este sentimento que houve também em Cristo Jesus, o qual, subsistindo em forma de Deus, não julgou que o ser igual a Deus fosse coisa de que não devesse abrir mão, mas esvaziou-se, tomando a forma de servo, feito semelhante aos homens; e, sendo reconhecido como homem, humilhou-se, tornando-se obediente até a morte e morte de cruz.",
+    "template": "sendo reconhecido como homem, ___, tornando-se obediente até a morte",
+    "feedbackCorrect": "Certo: humilhou-se.",
+    "feedbackWrong": {
+      "b": "Esvaziou-se vem antes, na forma de servo.",
+      "c": "Subsistindo descreve a forma de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "humilhou-se"
+      },
+      {
+        "id": "b",
+        "text": "esvaziou-se"
+      },
+      {
+        "id": "c",
+        "text": "subsistindo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 2:5–8",
+    "learningObjective": "Perceber que a mente de Cristo é esvaziar-se e obedecer até a cruz, sem agarrar igualdade como presa.",
+    "evidence": [
+      "Filipenses 2:5",
+      "Filipenses 2:6",
+      "Filipenses 2:7",
+      "Filipenses 2:8"
+    ],
+    "type": "connect",
+    "question": "O que Filipenses 2:5–8 comunica que se liga a este contexto?",
+    "prompt": "O que Filipenses 2:5–8 comunica que se liga a este contexto?",
+    "cue": "O que Filipenses 2:5–8 comunica que se liga a este contexto?",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "id": "filipenses-cam-fp-02-humildade-06",
+    "passageText": "Tende em vós este sentimento que houve também em Cristo Jesus, o qual, subsistindo em forma de Deus, não julgou que o ser igual a Deus fosse coisa de que não devesse abrir mão, mas esvaziou-se, tomando a forma de servo, feito semelhante aos homens; e, sendo reconhecido como homem, humilhou-se, tornando-se obediente até a morte e morte de cruz.",
+    "passageA": {
+      "ref": "Filipenses 2:6–7",
+      "text": "subsistindo em forma de Deus, não julgou que o ser igual a Deus fosse coisa de que não devesse abrir mão, mas esvaziou-se, tomando a forma de servo"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A mente de Cristo é esvaziar-se e obedecer até a cruz — não agarrar igualdade como presa."
+    },
+    "feedbackCorrect": "Certo: igualdade não é presa; o caminho é esvaziar-se.",
+    "feedbackWrong": {
+      "a": "Ele não retém a igualdade como botim.",
+      "c": "O sentimento não é só cortesia social."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Reter igualdade como botim"
+      },
+      {
+        "id": "b",
+        "text": "Não agarrar, esvaziar-se"
+      },
+      {
+        "id": "c",
+        "text": "Cortesia sem custo real"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 2:5–8",
+    "learningObjective": "Perceber que a mente de Cristo é esvaziar-se e obedecer até a cruz, sem agarrar igualdade como presa.",
+    "evidence": [
+      "Filipenses 2:5",
+      "Filipenses 2:6",
+      "Filipenses 2:7",
+      "Filipenses 2:8"
+    ],
+    "type": "true_false",
+    "question": "A obediência de Cristo chegou até a morte de cruz, não parou no serviço.",
+    "prompt": "A obediência de Cristo chegou até a morte de cruz, não parou no serviço.",
+    "cue": "A obediência de Cristo chegou até a morte de cruz, não parou no serviço.",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "id": "filipenses-pro-fp-02-humildade-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Tende em vós este sentimento que houve também em Cristo Jesus, o qual, subsistindo em forma de Deus, não julgou que o ser igual a Deus fosse coisa de que não devesse abrir mão, mas esvaziou-se, tomando a forma de servo, feito semelhante aos homens; e, sendo reconhecido como homem, humilhou-se, tornando-se obediente até a morte e morte de cruz.",
+    "feedbackCorrect": "Certo: obediente até a morte e morte de cruz.",
+    "feedbackWrong": {
+      "false": "O hino leva o esvaziamento até a cruz."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 2:5–8",
+    "learningObjective": "Perceber que a mente de Cristo é esvaziar-se e obedecer até a cruz, sem agarrar igualdade como presa.",
+    "evidence": [
+      "Filipenses 2:5",
+      "Filipenses 2:6",
+      "Filipenses 2:7",
+      "Filipenses 2:8"
+    ],
+    "type": "tap",
+    "question": "Em Filipenses 2:5–8, toque a palavra que falta em \"mas ___, tomando a forma de servo, feito semelhante aos homens\"?",
+    "prompt": "Em Filipenses 2:5–8, toque a palavra que falta em \"mas ___, tomando a forma de servo, feito semelhante aos homens\"?",
+    "cue": "Em Filipenses 2:5–8, toque a palavra que falta em \"mas ___, tomando a forma de servo, feito semelhante aos homens\"?",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "id": "filipenses-pro-fp-02-humildade-02",
+    "passageText": "Tende em vós este sentimento que houve também em Cristo Jesus, o qual, subsistindo em forma de Deus, não julgou que o ser igual a Deus fosse coisa de que não devesse abrir mão, mas esvaziou-se, tomando a forma de servo, feito semelhante aos homens; e, sendo reconhecido como homem, humilhou-se, tornando-se obediente até a morte e morte de cruz.",
+    "template": "mas ___, tomando a forma de servo, feito semelhante aos homens",
+    "feedbackCorrect": "Exato: esvaziou-se.",
+    "feedbackWrong": {
+      "b": "Humilhou-se vem depois, já reconhecido como homem.",
+      "c": "Obediente descreve a morte, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "esvaziou-se"
+      },
+      {
+        "id": "b",
+        "text": "humilhou-se"
+      },
+      {
+        "id": "c",
+        "text": "obediente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 2:5–8",
+    "learningObjective": "Perceber que a mente de Cristo é esvaziar-se e obedecer até a cruz, sem agarrar igualdade como presa.",
+    "evidence": [
+      "Filipenses 2:5",
+      "Filipenses 2:6",
+      "Filipenses 2:7",
+      "Filipenses 2:8"
+    ],
+    "type": "choice",
+    "question": "Qual sentido teológico o hino de Filipenses 2:5–8 impõe ao leitor?",
+    "prompt": "Qual sentido teológico o hino de Filipenses 2:5–8 impõe ao leitor?",
+    "cue": "Qual sentido teológico o hino de Filipenses 2:5–8 impõe ao leitor?",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "id": "filipenses-pro-fp-02-humildade-03",
+    "passageText": "Tende em vós este sentimento que houve também em Cristo Jesus, o qual, subsistindo em forma de Deus, não julgou que o ser igual a Deus fosse coisa de que não devesse abrir mão, mas esvaziou-se, tomando a forma de servo, feito semelhante aos homens; e, sendo reconhecido como homem, humilhou-se, tornando-se obediente até a morte e morte de cruz.",
+    "feedbackCorrect": "Certo: a mente de Cristo é esvaziar-se até a cruz, não status.",
+    "feedbackWrong": {
+      "b": "A igualdade não impede o esvaziamento; ele o escolhe.",
+      "c": "A cruz é obediência, não acidente.",
+      "d": "O sentimento vai além de cortesia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A mente de Cristo é esvaziar-se até a cruz, não status."
+      },
+      {
+        "id": "b",
+        "text": "Igualdade com Deus impede qualquer esvaziamento."
+      },
+      {
+        "id": "c",
+        "text": "A cruz é acidente, não obediência até a morte."
+      },
+      {
+        "id": "d",
+        "text": "O sentimento de Cristo é só exemplo de cortesia."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 2:5–8",
+    "learningObjective": "Perceber que a mente de Cristo é esvaziar-se e obedecer até a cruz, sem agarrar igualdade como presa.",
+    "evidence": [
+      "Filipenses 2:5",
+      "Filipenses 2:6",
+      "Filipenses 2:7",
+      "Filipenses 2:8"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Filipenses 2:5–8?",
+    "prompt": "Qual sequência revela o sentido de Filipenses 2:5–8?",
+    "cue": "Qual sequência revela o sentido de Filipenses 2:5–8?",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "id": "filipenses-pro-fp-02-humildade-04",
+    "passageText": "Tende em vós este sentimento que houve também em Cristo Jesus, o qual, subsistindo em forma de Deus, não julgou que o ser igual a Deus fosse coisa de que não devesse abrir mão, mas esvaziou-se, tomando a forma de servo, feito semelhante aos homens; e, sendo reconhecido como homem, humilhou-se, tornando-se obediente até a morte e morte de cruz.",
+    "feedbackCorrect": "Certo: servo, semelhança humana, cruz.",
+    "feedbackWrong": {
+      "b": "A cruz fecha o movimento, não o inicia.",
+      "c": "O sentido desce: servo, homem, cruz."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "esvaziou-se, tomando a forma de servo"
+      },
+      {
+        "id": "b",
+        "text": "feito semelhante aos homens"
+      },
+      {
+        "id": "c",
+        "text": "humilhou-se, tornando-se obediente até a morte e morte de cruz"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 2:5–8",
+    "learningObjective": "Perceber que a mente de Cristo é esvaziar-se e obedecer até a cruz, sem agarrar igualdade como presa.",
+    "evidence": [
+      "Filipenses 2:5",
+      "Filipenses 2:6",
+      "Filipenses 2:7",
+      "Filipenses 2:8"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"humilhou-se, tornando-se ___ até a morte e morte de cruz.\"",
+    "prompt": "Complete a frase: \"humilhou-se, tornando-se ___ até a morte e morte de cruz.\"",
+    "cue": "Complete a frase: \"humilhou-se, tornando-se ___ até a morte e morte de cruz.\"",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "id": "filipenses-pro-fp-02-humildade-05",
+    "passageText": "Tende em vós este sentimento que houve também em Cristo Jesus, o qual, subsistindo em forma de Deus, não julgou que o ser igual a Deus fosse coisa de que não devesse abrir mão, mas esvaziou-se, tomando a forma de servo, feito semelhante aos homens; e, sendo reconhecido como homem, humilhou-se, tornando-se obediente até a morte e morte de cruz.",
+    "template": "humilhou-se, tornando-se ___ até a morte e morte de cruz.",
+    "feedbackCorrect": "Certo: obediente até a morte de cruz.",
+    "feedbackWrong": {
+      "b": "Servo é a forma tomada antes.",
+      "c": "Semelhante descreve os homens, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "obediente"
+      },
+      {
+        "id": "b",
+        "text": "servo"
+      },
+      {
+        "id": "c",
+        "text": "semelhante"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 2:5–8",
+    "learningObjective": "Perceber que a mente de Cristo é esvaziar-se e obedecer até a cruz, sem agarrar igualdade como presa.",
+    "evidence": [
+      "Filipenses 2:5",
+      "Filipenses 2:6",
+      "Filipenses 2:7",
+      "Filipenses 2:8"
+    ],
+    "type": "connect",
+    "question": "O que Filipenses 2:5–8 comunica que se liga a este contexto?",
+    "prompt": "O que Filipenses 2:5–8 comunica que se liga a este contexto?",
+    "cue": "O que Filipenses 2:5–8 comunica que se liga a este contexto?",
+    "trail": "filipenses",
+    "section": "fp-02-humildade",
+    "id": "filipenses-pro-fp-02-humildade-06",
+    "passageText": "Tende em vós este sentimento que houve também em Cristo Jesus, o qual, subsistindo em forma de Deus, não julgou que o ser igual a Deus fosse coisa de que não devesse abrir mão, mas esvaziou-se, tomando a forma de servo, feito semelhante aos homens; e, sendo reconhecido como homem, humilhou-se, tornando-se obediente até a morte e morte de cruz.",
+    "passageA": {
+      "ref": "Filipenses 2:8",
+      "text": "e, sendo reconhecido como homem, humilhou-se, tornando-se obediente até a morte e morte de cruz."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A mente de Cristo é esvaziar-se e obedecer até a cruz — não agarrar igualdade como presa."
+    },
+    "feedbackCorrect": "Certo: a cruz é o termo da obediência, não um acréscimo.",
+    "feedbackWrong": {
+      "a": "A cruz não é opcional no hino.",
+      "c": "Status não é o sentimento de Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cruz como detalhe opcional"
+      },
+      {
+        "id": "b",
+        "text": "Obediência até a cruz"
+      },
+      {
+        "id": "c",
+        "text": "Status como mente de Cristo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Distinguir contentamento de ter de tudo: Cristo fortalece na fome e na fartura.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "true_false",
+    "question": "Paulo diz saber viver na penúria e também na abundância.",
+    "prompt": "Paulo diz saber viver na penúria e também na abundância.",
+    "cue": "Paulo diz saber viver na penúria e também na abundância.",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "id": "filipenses-sem-fp-03-contentamento-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome, ter abundância e padecer necessidade. Tudo posso naquele que me fortalece.",
+    "feedbackCorrect": "Certo: ele afirma os dois polos em 4:12.",
+    "feedbackWrong": {
+      "false": "O texto diz: penúria e abundância."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Distinguir contentamento de ter de tudo: Cristo fortalece na fome e na fartura.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "tap",
+    "question": "Em Filipenses 4:12–13, toque a palavra que falta em \"Sei ainda viver na ___, e sei também viver na abundância\"?",
+    "prompt": "Em Filipenses 4:12–13, toque a palavra que falta em \"Sei ainda viver na ___, e sei também viver na abundância\"?",
+    "cue": "Em Filipenses 4:12–13, toque a palavra que falta em \"Sei ainda viver na ___, e sei também viver na abundância\"?",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "id": "filipenses-sem-fp-03-contentamento-02",
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome, ter abundância e padecer necessidade. Tudo posso naquele que me fortalece.",
+    "template": "Sei ainda viver na ___, e sei também viver na abundância",
+    "feedbackCorrect": "Exato: viver na penúria.",
+    "feedbackWrong": {
+      "b": "Abundância é o outro polo, não esta lacuna.",
+      "c": "Fartura aparece depois, com fome."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "penúria"
+      },
+      {
+        "id": "b",
+        "text": "abundância"
+      },
+      {
+        "id": "c",
+        "text": "fartura"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Distinguir contentamento de ter de tudo: Cristo fortalece na fome e na fartura.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação o texto faz de modo explícito em 4:12–13?",
+    "prompt": "Qual afirmação o texto faz de modo explícito em 4:12–13?",
+    "cue": "Qual afirmação o texto faz de modo explícito em 4:12–13?",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "id": "filipenses-sem-fp-03-contentamento-03",
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome, ter abundância e padecer necessidade. Tudo posso naquele que me fortalece.",
+    "feedbackCorrect": "Certo: ele sabe penúria e abundância.",
+    "feedbackWrong": {
+      "a": "Ele também sabe viver na penúria.",
+      "c": "A fome não prova abandono.",
+      "d": "Ele inclui padecer necessidade."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Paulo só sabe viver quando há fartura."
+      },
+      {
+        "id": "b",
+        "text": "Paulo sabe viver na penúria e também na abundância."
+      },
+      {
+        "id": "c",
+        "text": "A fome prova que Cristo o abandonou."
+      },
+      {
+        "id": "d",
+        "text": "Ele nega padecer necessidade em qualquer tempo."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Distinguir contentamento de ter de tudo: Cristo fortalece na fome e na fartura.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Filipenses 4:12–13?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Filipenses 4:12–13?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Filipenses 4:12–13?",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "id": "filipenses-sem-fp-03-contentamento-04",
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome, ter abundância e padecer necessidade. Tudo posso naquele que me fortalece.",
+    "feedbackCorrect": "Certo: penúria, abundância, depois a força em Cristo.",
+    "feedbackWrong": {
+      "b": "A força em Cristo fecha o trecho, não o abre.",
+      "c": "Releia 4:12 antes de 4:13."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sei ainda viver na penúria"
+      },
+      {
+        "id": "b",
+        "text": "e sei também viver na abundância"
+      },
+      {
+        "id": "c",
+        "text": "Tudo posso naquele que me fortalece"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Distinguir contentamento de ter de tudo: Cristo fortalece na fome e na fartura.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Tudo posso naquele que me ___.\"",
+    "prompt": "Complete a frase: \"Tudo posso naquele que me ___.\"",
+    "cue": "Complete a frase: \"Tudo posso naquele que me ___.\"",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "id": "filipenses-sem-fp-03-contentamento-05",
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome, ter abundância e padecer necessidade. Tudo posso naquele que me fortalece.",
+    "template": "Tudo posso naquele que me ___.",
+    "feedbackCorrect": "Certo: naquele que me fortalece.",
+    "feedbackWrong": {
+      "b": "Penúria é o polo da falta, não o verbo.",
+      "c": "Fome é condição, não quem fortalece."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "fortalece"
+      },
+      {
+        "id": "b",
+        "text": "penúria"
+      },
+      {
+        "id": "c",
+        "text": "fome"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Distinguir contentamento de ter de tudo: Cristo fortalece na fome e na fartura.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "connect",
+    "question": "O que Filipenses 4:12–13 comunica que se liga a este contexto?",
+    "prompt": "O que Filipenses 4:12–13 comunica que se liga a este contexto?",
+    "cue": "O que Filipenses 4:12–13 comunica que se liga a este contexto?",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "id": "filipenses-sem-fp-03-contentamento-06",
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome, ter abundância e padecer necessidade. Tudo posso naquele que me fortalece.",
+    "passageA": {
+      "ref": "Filipenses 4:12–13",
+      "text": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome, ter abundância e padecer necessidade. Tudo posso naquele que me fortalece."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Contentamento não é ter de tudo: é Cristo que fortalece na fome e na fartura."
+    },
+    "feedbackCorrect": "Certo: o conteúdo é Cristo na falta e na fartura.",
+    "feedbackWrong": {
+      "b": "Não é ter de tudo que define o contentamento.",
+      "c": "A força não vem dos bens."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo na fome e fartura"
+      },
+      {
+        "id": "b",
+        "text": "Contentamento como ter de tudo"
+      },
+      {
+        "id": "c",
+        "text": "Força que vem dos bens"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Distinguir contentamento de ter de tudo: Cristo fortalece na fome e na fartura.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "true_false",
+    "question": "O contentamento de Paulo depende de ter fartura, não de padecer necessidade.",
+    "prompt": "O contentamento de Paulo depende de ter fartura, não de padecer necessidade.",
+    "cue": "O contentamento de Paulo depende de ter fartura, não de padecer necessidade.",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "id": "filipenses-cam-fp-03-contentamento-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome, ter abundância e padecer necessidade. Tudo posso naquele que me fortalece.",
+    "feedbackCorrect": "Certo: ele sabe fartura e fome, abundância e necessidade.",
+    "feedbackWrong": {
+      "true": "O texto inclui fome e padecer necessidade."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Distinguir contentamento de ter de tudo: Cristo fortalece na fome e na fartura.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "tap",
+    "question": "Em Filipenses 4:12–13, toque a palavra que falta em \"sei o que é ter ___ e ter fome\"?",
+    "prompt": "Em Filipenses 4:12–13, toque a palavra que falta em \"sei o que é ter ___ e ter fome\"?",
+    "cue": "Em Filipenses 4:12–13, toque a palavra que falta em \"sei o que é ter ___ e ter fome\"?",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "id": "filipenses-cam-fp-03-contentamento-02",
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome, ter abundância e padecer necessidade. Tudo posso naquele que me fortalece.",
+    "template": "sei o que é ter ___ e ter fome",
+    "feedbackCorrect": "Exato: ter fartura e ter fome.",
+    "feedbackWrong": {
+      "b": "Fome é o polo oposto nesta frase.",
+      "c": "Penúria aparece na primeira cláusula."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "fartura"
+      },
+      {
+        "id": "b",
+        "text": "fome"
+      },
+      {
+        "id": "c",
+        "text": "penúria"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Distinguir contentamento de ter de tudo: Cristo fortalece na fome e na fartura.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "choice",
+    "question": "Como 4:12–13 relaciona contentamento e circunstâncias?",
+    "prompt": "Como 4:12–13 relaciona contentamento e circunstâncias?",
+    "cue": "Como 4:12–13 relaciona contentamento e circunstâncias?",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "id": "filipenses-cam-fp-03-contentamento-03",
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome, ter abundância e padecer necessidade. Tudo posso naquele que me fortalece.",
+    "feedbackCorrect": "Certo: contentamento é Cristo na fome e na fartura.",
+    "feedbackWrong": {
+      "a": "Ele conhece necessidade; não a exclui.",
+      "c": "A força não vem do estoque de bens.",
+      "d": "Os dois polos cabem na mesma vida em Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Contentamento é nunca passar necessidade."
+      },
+      {
+        "id": "b",
+        "text": "Contentamento é Cristo na fome e na fartura."
+      },
+      {
+        "id": "c",
+        "text": "A força vem do estoque de bens em Filipos."
+      },
+      {
+        "id": "d",
+        "text": "Penúria e abundância se excluem da vida cristã."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Distinguir contentamento de ter de tudo: Cristo fortalece na fome e na fartura.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Filipenses 4:12–13?",
+    "prompt": "Como se encadeiam os eventos de Filipenses 4:12–13?",
+    "cue": "Como se encadeiam os eventos de Filipenses 4:12–13?",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "id": "filipenses-cam-fp-03-contentamento-04",
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome, ter abundância e padecer necessidade. Tudo posso naquele que me fortalece.",
+    "feedbackCorrect": "Certo: os pares de falta e fartura antecedem a força em Cristo.",
+    "feedbackWrong": {
+      "b": "4:13 não vem antes dos pares de 4:12.",
+      "c": "Siga fartura/fome, depois necessidade, depois a força."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "ter fartura e ter fome"
+      },
+      {
+        "id": "b",
+        "text": "ter abundância e padecer necessidade"
+      },
+      {
+        "id": "c",
+        "text": "Tudo posso naquele que me fortalece"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Distinguir contentamento de ter de tudo: Cristo fortalece na fome e na fartura.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"ter abundância e padecer ___.\"",
+    "prompt": "Complete a frase: \"ter abundância e padecer ___.\"",
+    "cue": "Complete a frase: \"ter abundância e padecer ___.\"",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "id": "filipenses-cam-fp-03-contentamento-05",
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome, ter abundância e padecer necessidade. Tudo posso naquele que me fortalece.",
+    "template": "ter abundância e padecer ___.",
+    "feedbackCorrect": "Certo: padecer necessidade.",
+    "feedbackWrong": {
+      "b": "Fartura é o polo da abundância, não esta lacuna.",
+      "c": "Penúria já apareceu na primeira frase."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "necessidade"
+      },
+      {
+        "id": "b",
+        "text": "fartura"
+      },
+      {
+        "id": "c",
+        "text": "penúria"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Distinguir contentamento de ter de tudo: Cristo fortalece na fome e na fartura.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "connect",
+    "question": "O que Filipenses 4:12–13 comunica que se liga a este contexto?",
+    "prompt": "O que Filipenses 4:12–13 comunica que se liga a este contexto?",
+    "cue": "O que Filipenses 4:12–13 comunica que se liga a este contexto?",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "id": "filipenses-cam-fp-03-contentamento-06",
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome, ter abundância e padecer necessidade. Tudo posso naquele que me fortalece.",
+    "passageA": {
+      "ref": "Filipenses 4:12",
+      "text": "sei o que é ter fartura e ter fome, ter abundância e padecer necessidade."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Contentamento não é ter de tudo: é Cristo que fortalece na fome e na fartura."
+    },
+    "feedbackCorrect": "Certo: os dois polos cabem no mesmo Cristo.",
+    "feedbackWrong": {
+      "a": "Ele não promete só fartura.",
+      "c": "A necessidade não cancela o fortalecimento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Promessa de só fartura"
+      },
+      {
+        "id": "b",
+        "text": "Dois polos no mesmo Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Necessidade que anula a força"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Distinguir contentamento de ter de tudo: Cristo fortalece na fome e na fartura.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "true_false",
+    "question": "A força para tudo em 4:13 é a de Cristo, não a autossuficiência de Paulo.",
+    "prompt": "A força para tudo em 4:13 é a de Cristo, não a autossuficiência de Paulo.",
+    "cue": "A força para tudo em 4:13 é a de Cristo, não a autossuficiência de Paulo.",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "id": "filipenses-pro-fp-03-contentamento-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome, ter abundância e padecer necessidade. Tudo posso naquele que me fortalece.",
+    "feedbackCorrect": "Certo: tudo posso naquele que me fortalece.",
+    "feedbackWrong": {
+      "false": "O sujeito da força é aquele que fortalece, não o eu."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Distinguir contentamento de ter de tudo: Cristo fortalece na fome e na fartura.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "tap",
+    "question": "Em Filipenses 4:12–13, toque a palavra que falta em \"Tudo ___ naquele que me fortalece.\"?",
+    "prompt": "Em Filipenses 4:12–13, toque a palavra que falta em \"Tudo ___ naquele que me fortalece.\"?",
+    "cue": "Em Filipenses 4:12–13, toque a palavra que falta em \"Tudo ___ naquele que me fortalece.\"?",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "id": "filipenses-pro-fp-03-contentamento-02",
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome, ter abundância e padecer necessidade. Tudo posso naquele que me fortalece.",
+    "template": "Tudo ___ naquele que me fortalece.",
+    "feedbackCorrect": "Exato: tudo posso naquele que fortalece.",
+    "feedbackWrong": {
+      "b": "Fortalece é o verbo de Cristo, não esta lacuna.",
+      "c": "Fome é circunstância, não o verbo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "posso"
+      },
+      {
+        "id": "b",
+        "text": "fortalece"
+      },
+      {
+        "id": "c",
+        "text": "fome"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Distinguir contentamento de ter de tudo: Cristo fortalece na fome e na fartura.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "choice",
+    "question": "Qual leitura de 4:13 o contexto de 4:12 impede?",
+    "prompt": "Qual leitura de 4:13 o contexto de 4:12 impede?",
+    "cue": "Qual leitura de 4:13 o contexto de 4:12 impede?",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "id": "filipenses-pro-fp-03-contentamento-03",
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome, ter abundância e padecer necessidade. Tudo posso naquele que me fortalece.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tudo posso aponta para Cristo que fortalece."
+      },
+      {
+        "id": "b",
+        "text": "Tudo posso é autonomia estoica sem Cristo."
+      },
+      {
+        "id": "c",
+        "text": "A fome desmente o fortalecimento em Cristo."
+      },
+      {
+        "id": "d",
+        "text": "Abundância dispensa a força daquele que fortalece."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "feedbackCorrect": "Certo: 4:12–13 impede ler 4:13 como autonomia sem Cristo.",
+    "feedbackWrong": {
+      "a": "Isso o texto afirma, não impede.",
+      "c": "A fome está no trecho; não desmente a força.",
+      "d": "A abundância também está sob aquele que fortalece."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Distinguir contentamento de ter de tudo: Cristo fortalece na fome e na fartura.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Filipenses 4:12–13?",
+    "prompt": "Qual sequência revela o sentido de Filipenses 4:12–13?",
+    "cue": "Qual sequência revela o sentido de Filipenses 4:12–13?",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "id": "filipenses-pro-fp-03-contentamento-04",
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome, ter abundância e padecer necessidade. Tudo posso naquele que me fortalece.",
+    "feedbackCorrect": "Certo: fome e necessidade preparam o tudo posso em Cristo.",
+    "feedbackWrong": {
+      "b": "A força em Cristo interpreta os polos, não os apaga.",
+      "c": "Siga o movimento do texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "sei o que é ter fartura e ter fome"
+      },
+      {
+        "id": "b",
+        "text": "ter abundância e padecer necessidade"
+      },
+      {
+        "id": "c",
+        "text": "Tudo posso naquele que me fortalece"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Distinguir contentamento de ter de tudo: Cristo fortalece na fome e na fartura.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Sei ainda viver na penúria e sei também viver na ___.\"",
+    "prompt": "Complete a frase: \"Sei ainda viver na penúria e sei também viver na ___.\"",
+    "cue": "Complete a frase: \"Sei ainda viver na penúria e sei também viver na ___.\"",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "id": "filipenses-pro-fp-03-contentamento-05",
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome, ter abundância e padecer necessidade. Tudo posso naquele que me fortalece.",
+    "template": "Sei ainda viver na penúria e sei também viver na ___.",
+    "feedbackCorrect": "Certo: também na abundância.",
+    "feedbackWrong": {
+      "b": "Fome é o par da fartura, não desta lacuna.",
+      "c": "Necessidade fecha o segundo par."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "abundância"
+      },
+      {
+        "id": "b",
+        "text": "fome"
+      },
+      {
+        "id": "c",
+        "text": "necessidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 4:12–13",
+    "learningObjective": "Distinguir contentamento de ter de tudo: Cristo fortalece na fome e na fartura.",
+    "evidence": [
+      "Filipenses 4:12",
+      "Filipenses 4:13"
+    ],
+    "type": "connect",
+    "question": "O que Filipenses 4:12–13 comunica que se liga a este contexto?",
+    "prompt": "O que Filipenses 4:12–13 comunica que se liga a este contexto?",
+    "cue": "O que Filipenses 4:12–13 comunica que se liga a este contexto?",
+    "trail": "filipenses",
+    "section": "fp-03-contentamento",
+    "id": "filipenses-pro-fp-03-contentamento-06",
+    "passageText": "Sei ainda viver na penúria e sei também viver na abundância; em tudo e em todas as coisas, sei o que é ter fartura e ter fome, ter abundância e padecer necessidade. Tudo posso naquele que me fortalece.",
+    "passageA": {
+      "ref": "Filipenses 4:13",
+      "text": "Tudo posso naquele que me fortalece."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Contentamento não é ter de tudo: é Cristo que fortalece na fome e na fartura."
+    },
+    "feedbackCorrect": "Certo: a força é relacional — naquele que fortalece.",
+    "feedbackWrong": {
+      "a": "Não é autonomia estoica.",
+      "c": "Não é magia da fartura."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Autonomia estoica do eu"
+      },
+      {
+        "id": "b",
+        "text": "Força naquele que fortalece"
+      },
+      {
+        "id": "c",
+        "text": "Magia da fartura material"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 1:21; 2:5",
+    "learningObjective": "Unir alegria, sentimento do Servo e força em Cristo como um só modo de permanecer.",
+    "evidence": [
+      "Filipenses 1:21",
+      "Filipenses 2:5",
+      "Filipenses 4:13"
+    ],
+    "type": "true_false",
+    "question": "Paulo une viver em Cristo (1:21) ao sentimento que houve em Cristo Jesus (2:5).",
+    "prompt": "Paulo une viver em Cristo (1:21) ao sentimento que houve em Cristo Jesus (2:5).",
+    "cue": "Paulo une viver em Cristo (1:21) ao sentimento que houve em Cristo Jesus (2:5).",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "id": "filipenses-sem-fp-04-desafio-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro. Tende em vós este sentimento que houve também em Cristo Jesus. Tudo posso naquele que me fortalece.",
+    "feedbackCorrect": "Certo: os dois textos falam de Cristo no centro da vida.",
+    "feedbackWrong": {
+      "false": "1:21 e 2:5 ambos colocam Cristo como norma."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 1:21; 2:5",
+    "learningObjective": "Unir alegria, sentimento do Servo e força em Cristo como um só modo de permanecer.",
+    "evidence": [
+      "Filipenses 1:21",
+      "Filipenses 2:5",
+      "Filipenses 4:13"
+    ],
+    "type": "tap",
+    "question": "Em Filipenses 1:21; 2:5, toque a palavra que falta em \"Pois para mim o viver é ___, e o morrer é lucro.\"?",
+    "prompt": "Em Filipenses 1:21; 2:5, toque a palavra que falta em \"Pois para mim o viver é ___, e o morrer é lucro.\"?",
+    "cue": "Em Filipenses 1:21; 2:5, toque a palavra que falta em \"Pois para mim o viver é ___, e o morrer é lucro.\"?",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "id": "filipenses-sem-fp-04-desafio-02",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro. Tende em vós este sentimento que houve também em Cristo Jesus. Tudo posso naquele que me fortalece.",
+    "template": "Pois para mim o viver é ___, e o morrer é lucro.",
+    "feedbackCorrect": "Exato: o viver é Cristo.",
+    "feedbackWrong": {
+      "b": "Sentimento é de 2:5, não desta lacuna.",
+      "c": "Lucro predica o morrer."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo"
+      },
+      {
+        "id": "b",
+        "text": "sentimento"
+      },
+      {
+        "id": "c",
+        "text": "lucro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 1:21; 2:5",
+    "learningObjective": "Unir alegria, sentimento do Servo e força em Cristo como um só modo de permanecer.",
+    "evidence": [
+      "Filipenses 1:21",
+      "Filipenses 2:5",
+      "Filipenses 4:13"
+    ],
+    "type": "choice",
+    "question": "O que 1:21 e 2:5 dizem juntos, de modo explícito?",
+    "prompt": "O que 1:21 e 2:5 dizem juntos, de modo explícito?",
+    "cue": "O que 1:21 e 2:5 dizem juntos, de modo explícito?",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "id": "filipenses-sem-fp-04-desafio-03",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro. Tende em vós este sentimento que houve também em Cristo Jesus. Tudo posso naquele que me fortalece.",
+    "feedbackCorrect": "Certo: viver é Cristo, com o sentimento do Servo.",
+    "feedbackWrong": {
+      "b": "1:21 não anula a humildade de 2:5.",
+      "c": "2:5 aponta o sentimento de Cristo, não um vago ethos.",
+      "d": "Os textos nomeiam Cristo, não só ética cívica."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "1:21 e 2:5 juntas: viver é Cristo, com mente de servo."
+      },
+      {
+        "id": "b",
+        "text": "1:21 anula 2:5: lucro na morte dispensa humildade."
+      },
+      {
+        "id": "c",
+        "text": "2:5 substitui Cristo por um sentimento vago."
+      },
+      {
+        "id": "d",
+        "text": "Os textos não falam de Cristo, só de ética cívica."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 1:21; 2:5; 4:13",
+    "learningObjective": "Unir alegria, sentimento do Servo e força em Cristo como um só modo de permanecer.",
+    "evidence": [
+      "Filipenses 1:21",
+      "Filipenses 2:5",
+      "Filipenses 4:13"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Filipenses 1:21; 2:5?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Filipenses 1:21; 2:5?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Filipenses 1:21; 2:5?",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "id": "filipenses-sem-fp-04-desafio-04",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro. Tende em vós este sentimento que houve também em Cristo Jesus. Tudo posso naquele que me fortalece.",
+    "feedbackCorrect": "Certo: lucro em Cristo, sentimento do Servo, força nele.",
+    "feedbackWrong": {
+      "b": "Não inverta 1:21 e 2:5.",
+      "c": "4:13 fecha o tríptico, não o abre."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pois para mim o viver é Cristo, e o morrer é lucro"
+      },
+      {
+        "id": "b",
+        "text": "Tende em vós este sentimento que houve também em Cristo Jesus"
+      },
+      {
+        "id": "c",
+        "text": "Tudo posso naquele que me fortalece"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 1:21; 2:5",
+    "learningObjective": "Unir alegria, sentimento do Servo e força em Cristo como um só modo de permanecer.",
+    "evidence": [
+      "Filipenses 1:21",
+      "Filipenses 2:5",
+      "Filipenses 4:13"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Tende em vós este ___ que houve também em Cristo Jesus.\"",
+    "prompt": "Complete a frase: \"Tende em vós este ___ que houve também em Cristo Jesus.\"",
+    "cue": "Complete a frase: \"Tende em vós este ___ que houve também em Cristo Jesus.\"",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "id": "filipenses-sem-fp-04-desafio-05",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro. Tende em vós este sentimento que houve também em Cristo Jesus. Tudo posso naquele que me fortalece.",
+    "template": "Tende em vós este ___ que houve também em Cristo Jesus.",
+    "feedbackCorrect": "Certo: o sentimento que houve em Cristo.",
+    "feedbackWrong": {
+      "b": "Lucro é de 1:21, não desta lacuna.",
+      "c": "Fortalece é de 4:13."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "sentimento"
+      },
+      {
+        "id": "b",
+        "text": "lucro"
+      },
+      {
+        "id": "c",
+        "text": "fortalece"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Filipenses 1:21; 2:5",
+    "learningObjective": "Unir alegria, sentimento do Servo e força em Cristo como um só modo de permanecer.",
+    "evidence": [
+      "Filipenses 1:21",
+      "Filipenses 2:5",
+      "Filipenses 4:13"
+    ],
+    "type": "connect",
+    "question": "O que Filipenses 1:21; 2:5 comunica que se liga a este contexto?",
+    "prompt": "O que Filipenses 1:21; 2:5 comunica que se liga a este contexto?",
+    "cue": "O que Filipenses 1:21; 2:5 comunica que se liga a este contexto?",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "id": "filipenses-sem-fp-04-desafio-06",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro. Tende em vós este sentimento que houve também em Cristo Jesus. Tudo posso naquele que me fortalece.",
+    "passageA": {
+      "ref": "Filipenses 1:21; 2:5",
+      "text": "Pois para mim o viver é Cristo, e o morrer é lucro. Tende em vós este sentimento que houve também em Cristo Jesus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Alegria que permanece: viver é Cristo, com o sentimento do Servo, fortalecido nele."
+    },
+    "feedbackCorrect": "Certo: Cristo no viver e a mente do Servo andam juntos.",
+    "feedbackWrong": {
+      "b": "Lucro na morte não dispensa o sentimento de Cristo.",
+      "c": "Não é ética sem Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo e mente do Servo"
+      },
+      {
+        "id": "b",
+        "text": "Lucro que dispensa humildade"
+      },
+      {
+        "id": "c",
+        "text": "Ética cívica sem Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 1:21; 2:5",
+    "learningObjective": "Unir alegria, sentimento do Servo e força em Cristo como um só modo de permanecer.",
+    "evidence": [
+      "Filipenses 1:21",
+      "Filipenses 2:5",
+      "Filipenses 4:13"
+    ],
+    "type": "true_false",
+    "question": "O sentimento de Cristo em 2:5 contradiz o lucro de morrer em 1:21.",
+    "prompt": "O sentimento de Cristo em 2:5 contradiz o lucro de morrer em 1:21.",
+    "cue": "O sentimento de Cristo em 2:5 contradiz o lucro de morrer em 1:21.",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "id": "filipenses-cam-fp-04-desafio-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro. Tende em vós este sentimento que houve também em Cristo Jesus. Tudo posso naquele que me fortalece.",
+    "feedbackCorrect": "Certo: os dois se reforçam — Cristo no viver e na mente.",
+    "feedbackWrong": {
+      "true": "Não há contradição: o mesmo Cristo define lucro e sentimento."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 1:21; 2:5; 4:13",
+    "learningObjective": "Unir alegria, sentimento do Servo e força em Cristo como um só modo de permanecer.",
+    "evidence": [
+      "Filipenses 1:21",
+      "Filipenses 2:5",
+      "Filipenses 4:13"
+    ],
+    "type": "tap",
+    "question": "Em Filipenses 4:13, toque a palavra que falta em \"Tudo posso naquele que me ___.\"?",
+    "prompt": "Em Filipenses 4:13, toque a palavra que falta em \"Tudo posso naquele que me ___.\"?",
+    "cue": "Em Filipenses 4:13, toque a palavra que falta em \"Tudo posso naquele que me ___.\"?",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "id": "filipenses-cam-fp-04-desafio-02",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro. Tende em vós este sentimento que houve também em Cristo Jesus. Tudo posso naquele que me fortalece.",
+    "template": "Tudo posso naquele que me ___.",
+    "feedbackCorrect": "Exato: aquele que me fortalece.",
+    "feedbackWrong": {
+      "b": "Posso é o verbo de Paulo, não esta lacuna.",
+      "c": "Cristo está em 1:21; aqui o verbo é fortalece."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "fortalece"
+      },
+      {
+        "id": "b",
+        "text": "posso"
+      },
+      {
+        "id": "c",
+        "text": "Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 1:21; 2:5; 4:13",
+    "learningObjective": "Unir alegria, sentimento do Servo e força em Cristo como um só modo de permanecer.",
+    "evidence": [
+      "Filipenses 1:21",
+      "Filipenses 2:5",
+      "Filipenses 4:13"
+    ],
+    "type": "choice",
+    "question": "Como 1:21, 2:5 e 4:13 se encadeiam na vida da igreja?",
+    "prompt": "Como 1:21, 2:5 e 4:13 se encadeiam na vida da igreja?",
+    "cue": "Como 1:21, 2:5 e 4:13 se encadeiam na vida da igreja?",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "id": "filipenses-cam-fp-04-desafio-03",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro. Tende em vós este sentimento que houve também em Cristo Jesus. Tudo posso naquele que me fortalece.",
+    "feedbackCorrect": "Certo: alegria que permanece une Cristo, Servo e força nele.",
+    "feedbackWrong": {
+      "a": "O contentamento de 4:13 inclui necessidade.",
+      "c": "O sentimento de Cristo não contradiz 1:21.",
+      "d": "A força de 4:13 não é técnica sem 1:21."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Alegria depende de nunca padecer necessidade."
+      },
+      {
+        "id": "b",
+        "text": "Alegria permanece: Cristo, mente do Servo, força nele."
+      },
+      {
+        "id": "c",
+        "text": "O sentimento de Cristo contradiz o viver em Cristo."
+      },
+      {
+        "id": "d",
+        "text": "Fortalecer-se é técnica, sem relação com 1:21."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 1:21; 2:5; 4:13",
+    "learningObjective": "Unir alegria, sentimento do Servo e força em Cristo como um só modo de permanecer.",
+    "evidence": [
+      "Filipenses 1:21",
+      "Filipenses 2:5",
+      "Filipenses 4:13"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Filipenses 1:21; 2:5?",
+    "prompt": "Como se encadeiam os eventos de Filipenses 1:21; 2:5?",
+    "cue": "Como se encadeiam os eventos de Filipenses 1:21; 2:5?",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "id": "filipenses-cam-fp-04-desafio-04",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro. Tende em vós este sentimento que houve também em Cristo Jesus. Tudo posso naquele que me fortalece.",
+    "feedbackCorrect": "Certo: viver Cristo, sentimento do Servo, força nele.",
+    "feedbackWrong": {
+      "b": "Não comece pela força sem o viver e o sentimento.",
+      "c": "Siga 1:21, depois 2:5, depois 4:13."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "o viver é Cristo e o morrer é lucro"
+      },
+      {
+        "id": "b",
+        "text": "o sentimento que houve em Cristo Jesus"
+      },
+      {
+        "id": "c",
+        "text": "Tudo posso naquele que me fortalece"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 1:21; 2:5",
+    "learningObjective": "Unir alegria, sentimento do Servo e força em Cristo como um só modo de permanecer.",
+    "evidence": [
+      "Filipenses 1:21",
+      "Filipenses 2:5",
+      "Filipenses 4:13"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Pois para mim o viver é Cristo, e o morrer é ___.\"",
+    "prompt": "Complete a frase: \"Pois para mim o viver é Cristo, e o morrer é ___.\"",
+    "cue": "Complete a frase: \"Pois para mim o viver é Cristo, e o morrer é ___.\"",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "id": "filipenses-cam-fp-04-desafio-05",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro. Tende em vós este sentimento que houve também em Cristo Jesus. Tudo posso naquele que me fortalece.",
+    "template": "Pois para mim o viver é Cristo, e o morrer é ___.",
+    "feedbackCorrect": "Certo: o morrer é lucro.",
+    "feedbackWrong": {
+      "b": "Sentimento é de 2:5.",
+      "c": "Fortalece é de 4:13."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "lucro"
+      },
+      {
+        "id": "b",
+        "text": "sentimento"
+      },
+      {
+        "id": "c",
+        "text": "fortalece"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Filipenses 1:21; 2:5; 4:13",
+    "learningObjective": "Unir alegria, sentimento do Servo e força em Cristo como um só modo de permanecer.",
+    "evidence": [
+      "Filipenses 1:21",
+      "Filipenses 2:5",
+      "Filipenses 4:13"
+    ],
+    "type": "connect",
+    "question": "O que Filipenses 1:21; 2:5 comunica que se liga a este contexto?",
+    "prompt": "O que Filipenses 1:21; 2:5 comunica que se liga a este contexto?",
+    "cue": "O que Filipenses 1:21; 2:5 comunica que se liga a este contexto?",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "id": "filipenses-cam-fp-04-desafio-06",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro. Tende em vós este sentimento que houve também em Cristo Jesus. Tudo posso naquele que me fortalece.",
+    "passageA": {
+      "ref": "Filipenses 1:21; 2:5",
+      "text": "Pois para mim o viver é Cristo, e o morrer é lucro. Tende em vós este sentimento que houve também em Cristo Jesus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Alegria que permanece: viver é Cristo, com o sentimento do Servo, fortalecido nele."
+    },
+    "feedbackCorrect": "Certo: a alegria une as três notas, não as opõe.",
+    "feedbackWrong": {
+      "a": "Não há oposição entre 1:21 e 2:5.",
+      "c": "4:13 não é técnica sem Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Oposição entre lucro e servo"
+      },
+      {
+        "id": "b",
+        "text": "Alegria que une as três notas"
+      },
+      {
+        "id": "c",
+        "text": "Técnica de força sem Cristo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 1:21; 2:5; 4:13",
+    "learningObjective": "Unir alegria, sentimento do Servo e força em Cristo como um só modo de permanecer.",
+    "evidence": [
+      "Filipenses 1:21",
+      "Filipenses 2:5",
+      "Filipenses 4:13"
+    ],
+    "type": "true_false",
+    "question": "Alegria que permanece junta viver em Cristo, a mente do Servo e a força nele.",
+    "prompt": "Alegria que permanece junta viver em Cristo, a mente do Servo e a força nele.",
+    "cue": "Alegria que permanece junta viver em Cristo, a mente do Servo e a força nele.",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "id": "filipenses-pro-fp-04-desafio-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro. Tende em vós este sentimento que houve também em Cristo Jesus. Tudo posso naquele que me fortalece.",
+    "feedbackCorrect": "Certo: 1:21, 2:5 e 4:13 formam um só modo de permanecer.",
+    "feedbackWrong": {
+      "false": "Os três textos se somam, não se cancelam."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 1:21; 2:5",
+    "learningObjective": "Unir alegria, sentimento do Servo e força em Cristo como um só modo de permanecer.",
+    "evidence": [
+      "Filipenses 1:21",
+      "Filipenses 2:5",
+      "Filipenses 4:13"
+    ],
+    "type": "tap",
+    "question": "Em Filipenses 2:5, toque a palavra que falta em \"Tende em vós este sentimento que houve também em Cristo ___.\"?",
+    "prompt": "Em Filipenses 2:5, toque a palavra que falta em \"Tende em vós este sentimento que houve também em Cristo ___.\"?",
+    "cue": "Em Filipenses 2:5, toque a palavra que falta em \"Tende em vós este sentimento que houve também em Cristo ___.\"?",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "id": "filipenses-pro-fp-04-desafio-02",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro. Tende em vós este sentimento que houve também em Cristo Jesus. Tudo posso naquele que me fortalece.",
+    "template": "Tende em vós este sentimento que houve também em Cristo ___.",
+    "feedbackCorrect": "Exato: Cristo Jesus.",
+    "feedbackWrong": {
+      "b": "Cristo já está na frase; a lacuna é Jesus.",
+      "c": "Mim é de 1:21."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus"
+      },
+      {
+        "id": "b",
+        "text": "Cristo"
+      },
+      {
+        "id": "c",
+        "text": "mim"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 1:21; 2:5; 4:13",
+    "learningObjective": "Unir alegria, sentimento do Servo e força em Cristo como um só modo de permanecer.",
+    "evidence": [
+      "Filipenses 1:21",
+      "Filipenses 2:5",
+      "Filipenses 4:13"
+    ],
+    "type": "choice",
+    "question": "Qual síntese teológica 1:21, 2:5 e 4:13 sustentam juntos?",
+    "prompt": "Qual síntese teológica 1:21, 2:5 e 4:13 sustentam juntos?",
+    "cue": "Qual síntese teológica 1:21, 2:5 e 4:13 sustentam juntos?",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "id": "filipenses-pro-fp-04-desafio-03",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro. Tende em vós este sentimento que houve também em Cristo Jesus. Tudo posso naquele que me fortalece.",
+    "feedbackCorrect": "Certo: lucro em Cristo, esvaziar-se e força nele.",
+    "feedbackWrong": {
+      "b": "Lucro em 1:21 não é acumular.",
+      "c": "2:5 pede o sentimento que vai à cruz.",
+      "d": "4:13 aponta àquele que fortalece, não ao eu."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A tríade une lucro em Cristo, esvaziar-se e força nele."
+      },
+      {
+        "id": "b",
+        "text": "Lucro em 1:21 é acumular, não viver Cristo."
+      },
+      {
+        "id": "c",
+        "text": "2:5 pede sentimento sem a cruz de 2:8."
+      },
+      {
+        "id": "d",
+        "text": "4:13 ensina força própria, sem aquele que fortalece."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 1:21; 2:5; 4:13",
+    "learningObjective": "Unir alegria, sentimento do Servo e força em Cristo como um só modo de permanecer.",
+    "evidence": [
+      "Filipenses 1:21",
+      "Filipenses 2:5",
+      "Filipenses 4:13"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Filipenses 1:21; 2:5?",
+    "prompt": "Qual sequência revela o sentido de Filipenses 1:21; 2:5?",
+    "cue": "Qual sequência revela o sentido de Filipenses 1:21; 2:5?",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "id": "filipenses-pro-fp-04-desafio-04",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro. Tende em vós este sentimento que houve também em Cristo Jesus. Tudo posso naquele que me fortalece.",
+    "feedbackCorrect": "Certo: o sentido vai de Cristo no viver à mente do Servo e à força nele.",
+    "feedbackWrong": {
+      "b": "Não comece pela força isolada.",
+      "c": "O sentido segue 1:21 → 2:5 → 4:13."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pois para mim o viver é Cristo, e o morrer é lucro"
+      },
+      {
+        "id": "b",
+        "text": "Tende em vós este sentimento que houve também em Cristo Jesus"
+      },
+      {
+        "id": "c",
+        "text": "Tudo posso naquele que me fortalece"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 1:21; 2:5; 4:13",
+    "learningObjective": "Unir alegria, sentimento do Servo e força em Cristo como um só modo de permanecer.",
+    "evidence": [
+      "Filipenses 1:21",
+      "Filipenses 2:5",
+      "Filipenses 4:13"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Tudo ___ naquele que me fortalece.\"",
+    "prompt": "Complete a frase: \"Tudo ___ naquele que me fortalece.\"",
+    "cue": "Complete a frase: \"Tudo ___ naquele que me fortalece.\"",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "id": "filipenses-pro-fp-04-desafio-05",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro. Tende em vós este sentimento que houve também em Cristo Jesus. Tudo posso naquele que me fortalece.",
+    "template": "Tudo ___ naquele que me fortalece.",
+    "feedbackCorrect": "Certo: tudo posso — naquele, não no eu.",
+    "feedbackWrong": {
+      "b": "Viver é de 1:21.",
+      "c": "Sentimento é de 2:5."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "posso"
+      },
+      {
+        "id": "b",
+        "text": "viver"
+      },
+      {
+        "id": "c",
+        "text": "sentimento"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Filipenses 1:21; 2:5; 4:13",
+    "learningObjective": "Unir alegria, sentimento do Servo e força em Cristo como um só modo de permanecer.",
+    "evidence": [
+      "Filipenses 1:21",
+      "Filipenses 2:5",
+      "Filipenses 4:13"
+    ],
+    "type": "connect",
+    "question": "O que Filipenses 1:21; 2:5 comunica que se liga a este contexto?",
+    "prompt": "O que Filipenses 1:21; 2:5 comunica que se liga a este contexto?",
+    "cue": "O que Filipenses 1:21; 2:5 comunica que se liga a este contexto?",
+    "trail": "filipenses",
+    "section": "fp-04-desafio",
+    "id": "filipenses-pro-fp-04-desafio-06",
+    "passageText": "Pois para mim o viver é Cristo, e o morrer é lucro. Tende em vós este sentimento que houve também em Cristo Jesus. Tudo posso naquele que me fortalece.",
+    "passageA": {
+      "ref": "Filipenses 1:21; 2:5; 4:13",
+      "text": "Pois para mim o viver é Cristo, e o morrer é lucro. Tende em vós este sentimento que houve também em Cristo Jesus. Tudo posso naquele que me fortalece."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Alegria que permanece: viver é Cristo, com o sentimento do Servo, fortalecido nele."
+    },
+    "feedbackCorrect": "Certo: permanecer é Cristo, esvaziar-se e força nele.",
+    "feedbackWrong": {
+      "a": "Não é alegria de circunstância.",
+      "b": "Não é força do eu."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Alegria só de circunstância"
+      },
+      {
+        "id": "b",
+        "text": "Força autônoma do eu"
+      },
+      {
+        "id": "c",
+        "text": "Cristo, Servo e força nele"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c"
+  }
+]

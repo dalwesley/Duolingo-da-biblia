@@ -1,0 +1,2261 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Joel 1:6",
+    "learningObjective": "Reconhecer que a invasão de gafanhotos é descrita como um exército de juízo enviado sobre a terra.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 1:6"
+    ],
+    "type": "true_false",
+    "question": "O texto descreve a chegada de uma nação forte e inumerável sobre a terra.",
+    "prompt": "O texto descreve a chegada de uma nação forte e inumerável sobre a terra.",
+    "cue": "O texto descreve a chegada de uma nação forte e inumerável sobre a terra.",
+    "feedbackCorrect": "Certo: o versículo afirma exatamente isso.",
+    "feedbackWrong": {
+      "false": "Releia Joel 1:6: o texto afirma claramente a chegada dessa nação."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma leoa.",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "id": "joel-sem-joel-joel-01-gafanhotos-e-juizo-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Joel 1:6",
+    "learningObjective": "Reconhecer que a invasão de gafanhotos é descrita como um exército de juízo enviado sobre a terra.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 1:6"
+    ],
+    "type": "tap",
+    "question": "Em Joel 1:6, toque a palavra que falta em \"Pois sobre a minha ___ é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma leoa\"?",
+    "prompt": "Em Joel 1:6, toque a palavra que falta em \"Pois sobre a minha ___ é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma leoa\"?",
+    "cue": "Em Joel 1:6, toque a palavra que falta em \"Pois sobre a minha ___ é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma leoa\"?",
+    "feedbackCorrect": "Exato: é a terra do povo que sofre a invasão.",
+    "feedbackWrong": {
+      "b": "\"Nação\" descreve quem vem, não o lugar atingido.",
+      "c": "\"Leão\" é a imagem usada para os dentes do invasor, não o lugar atingido."
+    },
+    "passageText": "Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma leoa.",
+    "template": "Pois sobre a minha ___ é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma leoa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "terra"
+      },
+      {
+        "id": "b",
+        "text": "nação"
+      },
+      {
+        "id": "c",
+        "text": "leão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "id": "joel-sem-joel-joel-01-gafanhotos-e-juizo-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Joel 1:6",
+    "learningObjective": "Reconhecer que a invasão de gafanhotos é descrita como um exército de juízo enviado sobre a terra.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 1:6"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelo texto em Joel 1:6?",
+    "prompt": "Qual afirmação é feita diretamente pelo texto em Joel 1:6?",
+    "cue": "Qual afirmação é feita diretamente pelo texto em Joel 1:6?",
+    "feedbackCorrect": "Certo: o texto usa exatamente essa comparação.",
+    "feedbackWrong": {
+      "b": "O verso fala de invasão, não de proteção às plantações.",
+      "c": "O texto diz o oposto: uma nação forte e inumerável.",
+      "d": "O texto usa a imagem do leão, não a do touro."
+    },
+    "passageText": "Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma leoa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O texto compara os dentes do exército invasor aos de um leão."
+      },
+      {
+        "id": "b",
+        "text": "O texto afirma que essa nação chega para proteger as plantações."
+      },
+      {
+        "id": "c",
+        "text": "O texto diz que o exército invasor é pequeno e fácil de conter."
+      },
+      {
+        "id": "d",
+        "text": "O texto descreve dentes de touro, e não de leão."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "id": "joel-sem-joel-joel-01-gafanhotos-e-juizo-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Joel 1:6",
+    "learningObjective": "Reconhecer que a invasão de gafanhotos é descrita como um exército de juízo enviado sobre a terra.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 1:6"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Joel 1:6?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Joel 1:6?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Joel 1:6?",
+    "feedbackCorrect": "Certo: primeiro a nação chega, depois vêm as imagens dos seus dentes e queixais.",
+    "feedbackWrong": {
+      "b": "A imagem dos dentes de leão vem depois de apresentar a nação invasora.",
+      "c": "Os queixais de leoa fecham a descrição, não a abrem."
+    },
+    "passageText": "Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma leoa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pois sobre a minha terra é vinda uma nação forte e inumerável"
+      },
+      {
+        "id": "b",
+        "text": "os seus dentes são os dentes dum leão"
+      },
+      {
+        "id": "c",
+        "text": "tem os queixais duma leoa"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "id": "joel-sem-joel-joel-01-gafanhotos-e-juizo-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Joel 1:6",
+    "learningObjective": "Reconhecer que a invasão de gafanhotos é descrita como um exército de juízo enviado sobre a terra.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 1:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Pois sobre a minha terra é vinda uma ___ forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma leoa\"",
+    "prompt": "Complete a frase: \"Pois sobre a minha terra é vinda uma ___ forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma leoa\"",
+    "cue": "Complete a frase: \"Pois sobre a minha terra é vinda uma ___ forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma leoa\"",
+    "feedbackCorrect": "Certo: é a \"nação\" que vem sobre a terra.",
+    "feedbackWrong": {
+      "b": "\"Leoa\" aparece no fim do verso, associada aos queixais.",
+      "c": "\"Terra\" é o lugar atingido, não quem vem sobre ela."
+    },
+    "passageText": "Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma leoa.",
+    "template": "Pois sobre a minha terra é vinda uma ___ forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma leoa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nação"
+      },
+      {
+        "id": "b",
+        "text": "leoa"
+      },
+      {
+        "id": "c",
+        "text": "terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "id": "joel-sem-joel-joel-01-gafanhotos-e-juizo-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Joel 1:6",
+    "learningObjective": "Reconhecer que a invasão de gafanhotos é descrita como um exército de juízo enviado sobre a terra.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 1:6"
+    ],
+    "type": "connect",
+    "question": "O que Joel 1:6 comunica que se liga a este contexto?",
+    "prompt": "O que Joel 1:6 comunica que se liga a este contexto?",
+    "cue": "O que Joel 1:6 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a invasão descrita aponta para o juízo que desperta o povo.",
+    "feedbackWrong": {
+      "a": "O texto não trata a invasão como algo sem sentido — ela serve de alerta.",
+      "b": "O texto descreve uma invasão sofrida por Judá, não uma vitória."
+    },
+    "passageText": "Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma leoa.",
+    "passageA": {
+      "ref": "Joel 1:6",
+      "text": "Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma leoa."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus usa até a natureza para chamar o seu povo à seriedade e ao arrependimento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Devastação sem nenhum sentido"
+      },
+      {
+        "id": "b",
+        "text": "Vitória militar garantida a Judá"
+      },
+      {
+        "id": "c",
+        "text": "Invasão que desperta para o juízo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "id": "joel-sem-joel-joel-01-gafanhotos-e-juizo-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Joel 1:6",
+    "learningObjective": "Reconhecer que a invasão de gafanhotos é descrita como um exército de juízo enviado sobre a terra.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 1:6"
+    ],
+    "type": "true_false",
+    "question": "O trecho ensina que a nação invasora chega para proteger a colheita de Judá.",
+    "prompt": "O trecho ensina que a nação invasora chega para proteger a colheita de Judá.",
+    "cue": "O trecho ensina que a nação invasora chega para proteger a colheita de Judá.",
+    "feedbackCorrect": "Certo: o texto descreve destruição, não proteção.",
+    "feedbackWrong": {
+      "true": "O texto descreve uma invasão devastadora, não uma proteção da colheita."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma leoa.",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "id": "joel-cam-joel-joel-01-gafanhotos-e-juizo-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Joel 1:6",
+    "learningObjective": "Reconhecer que a invasão de gafanhotos é descrita como um exército de juízo enviado sobre a terra.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 1:6"
+    ],
+    "type": "tap",
+    "question": "Em Joel 1:6, toque a palavra que falta em \"Pois sobre a minha terra é vinda uma nação forte e ___; os seus dentes são os dentes dum leão, e tem os queixais duma leoa\"?",
+    "prompt": "Em Joel 1:6, toque a palavra que falta em \"Pois sobre a minha terra é vinda uma nação forte e ___; os seus dentes são os dentes dum leão, e tem os queixais duma leoa\"?",
+    "cue": "Em Joel 1:6, toque a palavra que falta em \"Pois sobre a minha terra é vinda uma nação forte e ___; os seus dentes são os dentes dum leão, e tem os queixais duma leoa\"?",
+    "feedbackCorrect": "Exato: o texto reforça que essa nação é incontável.",
+    "feedbackWrong": {
+      "a": "\"Forte\" já aparece antes da lacuna nesta frase.",
+      "c": "\"Dentes\" descreve a arma da nação, não seu tamanho."
+    },
+    "passageText": "Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma leoa.",
+    "template": "Pois sobre a minha terra é vinda uma nação forte e ___; os seus dentes são os dentes dum leão, e tem os queixais duma leoa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "forte"
+      },
+      {
+        "id": "b",
+        "text": "inumerável"
+      },
+      {
+        "id": "c",
+        "text": "dentes"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "id": "joel-cam-joel-joel-01-gafanhotos-e-juizo-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Joel 1:6",
+    "learningObjective": "Reconhecer que a invasão de gafanhotos é descrita como um exército de juízo enviado sobre a terra.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 1:6"
+    ],
+    "type": "choice",
+    "question": "Qual ideia melhor conecta Joel 1:6 ao contexto da missão?",
+    "prompt": "Qual ideia melhor conecta Joel 1:6 ao contexto da missão?",
+    "cue": "Qual ideia melhor conecta Joel 1:6 ao contexto da missão?",
+    "feedbackCorrect": "Certo: a imagem revela um juízo que ultrapassa a força humana.",
+    "feedbackWrong": {
+      "a": "O texto não elogia o povo: descreve uma ameaça sofrida por ele.",
+      "c": "O texto não sugere resistência própria: descreve uma força inumerável.",
+      "d": "O texto trata a invasão como ameaça, não como ajuda enviada por Deus."
+    },
+    "passageText": "Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma leoa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A comparação com o leão elogia a coragem dos lavradores de Judá."
+      },
+      {
+        "id": "b",
+        "text": "A imagem da nação com dentes de leão mostra um juízo maior que a força humana."
+      },
+      {
+        "id": "c",
+        "text": "O texto sugere que o povo pode resistir sozinho a esse exército."
+      },
+      {
+        "id": "d",
+        "text": "A nação invasora representa um aliado enviado para socorrer o povo."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "id": "joel-cam-joel-joel-01-gafanhotos-e-juizo-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Joel 1:6",
+    "learningObjective": "Reconhecer que a invasão de gafanhotos é descrita como um exército de juízo enviado sobre a terra.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 1:6"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Joel 1:6?",
+    "prompt": "Como se encadeiam os eventos de Joel 1:6?",
+    "cue": "Como se encadeiam os eventos de Joel 1:6?",
+    "feedbackCorrect": "Certo: a nação chega primeiro, depois o texto detalha seus dentes e queixais.",
+    "feedbackWrong": {
+      "b": "A imagem dos dentes de leão vem depois de apresentar a nação invasora.",
+      "c": "Os queixais de leoa fecham a descrição, não a abrem."
+    },
+    "passageText": "Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma leoa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pois sobre a minha terra é vinda uma nação forte e inumerável"
+      },
+      {
+        "id": "b",
+        "text": "os seus dentes são os dentes dum leão"
+      },
+      {
+        "id": "c",
+        "text": "tem os queixais duma leoa"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "id": "joel-cam-joel-joel-01-gafanhotos-e-juizo-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Joel 1:6",
+    "learningObjective": "Reconhecer que a invasão de gafanhotos é descrita como um exército de juízo enviado sobre a terra.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 1:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os ___ duma leoa\"",
+    "prompt": "Complete a frase: \"Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os ___ duma leoa\"",
+    "cue": "Complete a frase: \"Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os ___ duma leoa\"",
+    "feedbackCorrect": "Certo: são os \"queixais\" da leoa que fecham a imagem.",
+    "feedbackWrong": {
+      "b": "\"Dentes\" já apareceu antes, ligado ao leão.",
+      "c": "\"Nação\" é quem chega, não a parte do corpo descrita aqui."
+    },
+    "passageText": "Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma leoa.",
+    "template": "Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os ___ duma leoa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "queixais"
+      },
+      {
+        "id": "b",
+        "text": "dentes"
+      },
+      {
+        "id": "c",
+        "text": "nação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "id": "joel-cam-joel-joel-01-gafanhotos-e-juizo-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Joel 1:6",
+    "learningObjective": "Reconhecer que a invasão de gafanhotos é descrita como um exército de juízo enviado sobre a terra.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 1:6"
+    ],
+    "type": "connect",
+    "question": "O que Joel 1:6 comunica que se liga a este contexto?",
+    "prompt": "O que Joel 1:6 comunica que se liga a este contexto?",
+    "cue": "O que Joel 1:6 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o juízo anunciado supera qualquer resistência humana.",
+    "feedbackWrong": {
+      "b": "O texto não trata a invasão como algo sem consequência.",
+      "c": "O texto vai além do lamento: aponta para um juízo real."
+    },
+    "passageText": "Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma leoa.",
+    "passageA": {
+      "ref": "Joel 1:6",
+      "text": "Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma leoa."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus usa até a natureza para chamar o seu povo à seriedade e ao arrependimento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Juízo maior que a força humana"
+      },
+      {
+        "id": "b",
+        "text": "Aliança sem qualquer consequência"
+      },
+      {
+        "id": "c",
+        "text": "Apenas motivo de lamento poético"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "id": "joel-cam-joel-joel-01-gafanhotos-e-juizo-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Joel 1:6",
+    "learningObjective": "Reconhecer que a invasão de gafanhotos é descrita como um exército de juízo enviado sobre a terra.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 1:6"
+    ],
+    "type": "true_false",
+    "question": "A passagem sustenta que o exército comparado a um leão revela um juízo que ultrapassa a capacidade humana de resistência.",
+    "prompt": "A passagem sustenta que o exército comparado a um leão revela um juízo que ultrapassa a capacidade humana de resistência.",
+    "cue": "A passagem sustenta que o exército comparado a um leão revela um juízo que ultrapassa a capacidade humana de resistência.",
+    "feedbackCorrect": "Certo: a força e o tamanho da nação descrita superam qualquer defesa humana.",
+    "feedbackWrong": {
+      "false": "O texto descreve exatamente essa força incontrolável através da imagem do leão."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma leoa.",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "id": "joel-pro-joel-joel-01-gafanhotos-e-juizo-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Joel 1:6",
+    "learningObjective": "Reconhecer que a invasão de gafanhotos é descrita como um exército de juízo enviado sobre a terra.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 1:6"
+    ],
+    "type": "tap",
+    "question": "Em Joel 1:6, toque a palavra que falta em \"Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum ___, e tem os queixais duma leoa\"?",
+    "prompt": "Em Joel 1:6, toque a palavra que falta em \"Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum ___, e tem os queixais duma leoa\"?",
+    "cue": "Em Joel 1:6, toque a palavra que falta em \"Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum ___, e tem os queixais duma leoa\"?",
+    "feedbackCorrect": "Exato: os dentes do exército são comparados aos de um leão.",
+    "feedbackWrong": {
+      "a": "\"Leoa\" aparece depois, ligada aos queixais.",
+      "c": "\"Terra\" é o lugar atingido, não a imagem usada para os dentes."
+    },
+    "passageText": "Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma leoa.",
+    "template": "Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum ___, e tem os queixais duma leoa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "leoa"
+      },
+      {
+        "id": "b",
+        "text": "leão"
+      },
+      {
+        "id": "c",
+        "text": "terra"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "id": "joel-pro-joel-joel-01-gafanhotos-e-juizo-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Joel 1:6",
+    "learningObjective": "Reconhecer que a invasão de gafanhotos é descrita como um exército de juízo enviado sobre a terra.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 1:6"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de Joel 1:6?",
+    "prompt": "Qual leitura interpreta melhor o sentido de Joel 1:6?",
+    "cue": "Qual leitura interpreta melhor o sentido de Joel 1:6?",
+    "feedbackCorrect": "Certo: até a natureza é usada por Deus para chamar o povo à seriedade.",
+    "feedbackWrong": {
+      "b": "O texto trata a invasão como algo carregado de sentido: um juízo anunciado.",
+      "c": "O restante do livro liga diretamente essa devastação à vida do povo.",
+      "d": "O texto não sustenta um Deus alheio: a invasão é apresentada como juízo dele."
+    },
+    "passageText": "Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma leoa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O grande exército mostra que o juízo de Deus usa até a natureza para chamar o povo."
+      },
+      {
+        "id": "b",
+        "text": "O texto ensina que calamidades naturais nunca carregam sentido espiritual."
+      },
+      {
+        "id": "c",
+        "text": "A passagem separa o juízo de Deus da vida cotidiana do povo."
+      },
+      {
+        "id": "d",
+        "text": "O sentido do texto é que Deus permanece alheio à terra devastada."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "id": "joel-pro-joel-joel-01-gafanhotos-e-juizo-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Joel 1:6",
+    "learningObjective": "Reconhecer que a invasão de gafanhotos é descrita como um exército de juízo enviado sobre a terra.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 1:6"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Joel 1:6?",
+    "prompt": "Qual sequência revela o sentido de Joel 1:6?",
+    "cue": "Qual sequência revela o sentido de Joel 1:6?",
+    "feedbackCorrect": "Certo: a chegada da nação precede e explica as imagens de força que seguem.",
+    "feedbackWrong": {
+      "b": "A imagem dos dentes de leão só faz sentido depois de apresentada a nação.",
+      "c": "Os queixais de leoa encerram a imagem, não a iniciam."
+    },
+    "passageText": "Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma leoa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pois sobre a minha terra é vinda uma nação forte e inumerável"
+      },
+      {
+        "id": "b",
+        "text": "os seus dentes são os dentes dum leão"
+      },
+      {
+        "id": "c",
+        "text": "tem os queixais duma leoa"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "id": "joel-pro-joel-joel-01-gafanhotos-e-juizo-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Joel 1:6",
+    "learningObjective": "Reconhecer que a invasão de gafanhotos é descrita como um exército de juízo enviado sobre a terra.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 1:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma ___\"",
+    "prompt": "Complete a frase: \"Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma ___\"",
+    "cue": "Complete a frase: \"Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma ___\"",
+    "feedbackCorrect": "Certo: os queixais são de uma \"leoa\", reforçando a imagem de fera predadora.",
+    "feedbackWrong": {
+      "b": "\"Terra\" é o lugar atingido, não a imagem final do verso.",
+      "c": "\"Nação\" já foi mencionada no início do verso."
+    },
+    "passageText": "Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma leoa.",
+    "template": "Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "leoa"
+      },
+      {
+        "id": "b",
+        "text": "terra"
+      },
+      {
+        "id": "c",
+        "text": "nação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "id": "joel-pro-joel-joel-01-gafanhotos-e-juizo-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Joel 1:6",
+    "learningObjective": "Reconhecer que a invasão de gafanhotos é descrita como um exército de juízo enviado sobre a terra.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 1:6"
+    ],
+    "type": "connect",
+    "question": "O que Joel 1:6 comunica que se liga a este contexto?",
+    "prompt": "O que Joel 1:6 comunica que se liga a este contexto?",
+    "cue": "O que Joel 1:6 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a devastação é um chamado urgente ao arrependimento, tema central do livro.",
+    "feedbackWrong": {
+      "b": "O texto não celebra fartura: descreve perda e devastação.",
+      "c": "A imagem vai além da agricultura: aponta para o juízo de Deus."
+    },
+    "passageText": "Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma leoa.",
+    "passageA": {
+      "ref": "Joel 1:6",
+      "text": "Pois sobre a minha terra é vinda uma nação forte e inumerável; os seus dentes são os dentes dum leão, e tem os queixais duma leoa."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus usa até a natureza para chamar o seu povo à seriedade e ao arrependimento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Chamado urgente ao arrependimento"
+      },
+      {
+        "id": "b",
+        "text": "Elogio à fartura da colheita"
+      },
+      {
+        "id": "c",
+        "text": "Aviso apenas sobre pragas agrícolas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-01-gafanhotos-e-juizo",
+    "id": "joel-pro-joel-joel-01-gafanhotos-e-juizo-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Joel 2:28",
+    "learningObjective": "Compreender que Deus promete derramar o seu Espírito sobre todo o seu povo, sem distinção de idade ou posição.",
+    "evidence": [
+      "Joel 2:28",
+      "Joel 2:29"
+    ],
+    "type": "true_false",
+    "question": "O texto anuncia que Deus derramará o seu Espírito sobre toda a carne.",
+    "prompt": "O texto anuncia que Deus derramará o seu Espírito sobre toda a carne.",
+    "cue": "O texto anuncia que Deus derramará o seu Espírito sobre toda a carne.",
+    "feedbackCorrect": "Certo: essa é a promessa central do versículo.",
+    "feedbackWrong": {
+      "false": "Releia Joel 2:28: essa é exatamente a promessa anunciada."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "id": "joel-sem-joel-joel-02-derramarei-o-meu-esp-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Joel 2:28",
+    "learningObjective": "Compreender que Deus promete derramar o seu Espírito sobre todo o seu povo, sem distinção de idade ou posição.",
+    "evidence": [
+      "Joel 2:28",
+      "Joel 2:29"
+    ],
+    "type": "tap",
+    "question": "Em Joel 2:28, toque a palavra que falta em \"___ depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos\"?",
+    "prompt": "Em Joel 2:28, toque a palavra que falta em \"___ depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos\"?",
+    "cue": "Em Joel 2:28, toque a palavra que falta em \"___ depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos\"?",
+    "feedbackCorrect": "Exato: é assim que o versículo abre a promessa.",
+    "feedbackWrong": {
+      "b": "\"Depois\" já está logo após a lacuna nesta frase.",
+      "c": "\"Derramarei\" descreve a ação, não a palavra de abertura."
+    },
+    "passageText": "Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos",
+    "template": "___ depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos",
+    "options": [
+      {
+        "id": "a",
+        "text": "Acontecerá"
+      },
+      {
+        "id": "b",
+        "text": "depois"
+      },
+      {
+        "id": "c",
+        "text": "derramarei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "id": "joel-sem-joel-joel-02-derramarei-o-meu-esp-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Joel 2:28",
+    "learningObjective": "Compreender que Deus promete derramar o seu Espírito sobre todo o seu povo, sem distinção de idade ou posição.",
+    "evidence": [
+      "Joel 2:28",
+      "Joel 2:29"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelo texto em Joel 2:28?",
+    "prompt": "Qual afirmação é feita diretamente pelo texto em Joel 2:28?",
+    "cue": "Qual afirmação é feita diretamente pelo texto em Joel 2:28?",
+    "feedbackCorrect": "Certo: o texto promete exatamente essa inversão de papéis por idade.",
+    "feedbackWrong": {
+      "b": "O texto não restringe a promessa aos sacerdotes.",
+      "c": "O texto não fala de estrangeiros nesta promessa.",
+      "d": "O texto inverte essa ordem: sonhos aos anciãos, visões aos jovens."
+    },
+    "passageText": "Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos",
+    "options": [
+      {
+        "id": "a",
+        "text": "O texto promete visões aos jovens e sonhos aos mais velhos."
+      },
+      {
+        "id": "b",
+        "text": "O texto reserva as visões apenas para os sacerdotes."
+      },
+      {
+        "id": "c",
+        "text": "O texto promete visões somente aos estrangeiros que visitarem Judá."
+      },
+      {
+        "id": "d",
+        "text": "O texto afirma que os jovens terão sonhos e os anciãos, visões."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "id": "joel-sem-joel-joel-02-derramarei-o-meu-esp-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Joel 2:28",
+    "learningObjective": "Compreender que Deus promete derramar o seu Espírito sobre todo o seu povo, sem distinção de idade ou posição.",
+    "evidence": [
+      "Joel 2:28",
+      "Joel 2:29"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Joel 2:28?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Joel 2:28?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Joel 2:28?",
+    "feedbackCorrect": "Certo: primeiro a promessa geral, depois filhos e filhas, depois anciãos e jovens.",
+    "feedbackWrong": {
+      "b": "Filhos e filhas profetizando vem antes da menção aos anciãos.",
+      "c": "Anciãos e jovens fecham a promessa, não a abrem."
+    },
+    "passageText": "Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos",
+    "options": [
+      {
+        "id": "a",
+        "text": "Acontecerá depois que derramarei o meu Espírito sobre toda a carne"
+      },
+      {
+        "id": "b",
+        "text": "vossos filhos e vossas filhas profetizarão"
+      },
+      {
+        "id": "c",
+        "text": "os vossos anciãos sonharão, terão visões vossos mancebos"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "id": "joel-sem-joel-joel-02-derramarei-o-meu-esp-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Joel 2:28",
+    "learningObjective": "Compreender que Deus promete derramar o seu Espírito sobre todo o seu povo, sem distinção de idade ou posição.",
+    "evidence": [
+      "Joel 2:28",
+      "Joel 2:29"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Acontecerá ___ que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos\"",
+    "prompt": "Complete a frase: \"Acontecerá ___ que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos\"",
+    "cue": "Complete a frase: \"Acontecerá ___ que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos\"",
+    "feedbackCorrect": "Certo: \"depois\" liga a promessa a um tempo futuro.",
+    "feedbackWrong": {
+      "b": "\"Acontecerá\" já abre a frase, antes da lacuna.",
+      "c": "\"Derramarei\" descreve a ação, não o advérbio de tempo."
+    },
+    "passageText": "Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos",
+    "template": "Acontecerá ___ que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos",
+    "options": [
+      {
+        "id": "a",
+        "text": "depois"
+      },
+      {
+        "id": "b",
+        "text": "Acontecerá"
+      },
+      {
+        "id": "c",
+        "text": "derramarei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "id": "joel-sem-joel-joel-02-derramarei-o-meu-esp-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Joel 2:28",
+    "learningObjective": "Compreender que Deus promete derramar o seu Espírito sobre todo o seu povo, sem distinção de idade ou posição.",
+    "evidence": [
+      "Joel 2:28",
+      "Joel 2:29"
+    ],
+    "type": "connect",
+    "question": "O que Joel 2:28 comunica que se liga a este contexto?",
+    "prompt": "O que Joel 2:28 comunica que se liga a este contexto?",
+    "cue": "O que Joel 2:28 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a promessa do Espírito alcança todo o povo, sem exceção.",
+    "feedbackWrong": {
+      "a": "O texto não limita o dom a um grupo restrito de sacerdotes.",
+      "b": "A promessa não depende de mérito: é dom de Deus."
+    },
+    "passageText": "Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos",
+    "passageA": {
+      "ref": "Joel 2:28",
+      "text": "Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A promessa do Espírito mostra que a graça de Deus alcança todos os que se voltam para ele."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Recompensa restrita aos sacerdotes"
+      },
+      {
+        "id": "b",
+        "text": "Promessa condicionada ao mérito pessoal"
+      },
+      {
+        "id": "c",
+        "text": "Graça de Deus para todo o povo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "id": "joel-sem-joel-joel-02-derramarei-o-meu-esp-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Joel 2:28",
+    "learningObjective": "Compreender que Deus promete derramar o seu Espírito sobre todo o seu povo, sem distinção de idade ou posição.",
+    "evidence": [
+      "Joel 2:28",
+      "Joel 2:29"
+    ],
+    "type": "true_false",
+    "question": "O trecho ensina que somente os sacerdotes receberão o Espírito prometido por Deus.",
+    "prompt": "O trecho ensina que somente os sacerdotes receberão o Espírito prometido por Deus.",
+    "cue": "O trecho ensina que somente os sacerdotes receberão o Espírito prometido por Deus.",
+    "feedbackCorrect": "Certo: o texto promete o Espírito a filhos, filhas, anciãos e jovens — não só a sacerdotes.",
+    "feedbackWrong": {
+      "true": "O texto nomeia filhos, filhas, anciãos e jovens, não apenas sacerdotes."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "id": "joel-cam-joel-joel-02-derramarei-o-meu-esp-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Joel 2:28",
+    "learningObjective": "Compreender que Deus promete derramar o seu Espírito sobre todo o seu povo, sem distinção de idade ou posição.",
+    "evidence": [
+      "Joel 2:28",
+      "Joel 2:29"
+    ],
+    "type": "tap",
+    "question": "Em Joel 2:28, toque a palavra que falta em \"Acontecerá depois que ___ o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos\"?",
+    "prompt": "Em Joel 2:28, toque a palavra que falta em \"Acontecerá depois que ___ o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos\"?",
+    "cue": "Em Joel 2:28, toque a palavra que falta em \"Acontecerá depois que ___ o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos\"?",
+    "feedbackCorrect": "Exato: é essa a ação que Deus promete realizar.",
+    "feedbackWrong": {
+      "a": "\"Espírito\" é o que será derramado, não a ação em si.",
+      "c": "\"Carne\" indica sobre quem recai a promessa, não a ação."
+    },
+    "passageText": "Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos",
+    "template": "Acontecerá depois que ___ o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos",
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito"
+      },
+      {
+        "id": "b",
+        "text": "derramarei"
+      },
+      {
+        "id": "c",
+        "text": "carne"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "id": "joel-cam-joel-joel-02-derramarei-o-meu-esp-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Joel 2:28",
+    "learningObjective": "Compreender que Deus promete derramar o seu Espírito sobre todo o seu povo, sem distinção de idade ou posição.",
+    "evidence": [
+      "Joel 2:28",
+      "Joel 2:29"
+    ],
+    "type": "choice",
+    "question": "Qual ideia melhor conecta Joel 2:28 ao contexto da missão?",
+    "prompt": "Qual ideia melhor conecta Joel 2:28 ao contexto da missão?",
+    "cue": "Qual ideia melhor conecta Joel 2:28 ao contexto da missão?",
+    "feedbackCorrect": "Certo: a promessa rompe hierarquias de idade e posição social.",
+    "feedbackWrong": {
+      "a": "O texto não impõe condição de mérito à promessa.",
+      "c": "A promessa é apresentada para os dias futuros, não só para os profetas antigos.",
+      "d": "O derramamento do Espírito não substitui o chamado à conversão do capítulo anterior."
+    },
+    "passageText": "Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos",
+    "options": [
+      {
+        "id": "a",
+        "text": "A promessa está condicionada ao mérito de cada família."
+      },
+      {
+        "id": "b",
+        "text": "A promessa do Espírito alcança todo o povo, sem hierarquia de idade ou posição."
+      },
+      {
+        "id": "c",
+        "text": "O texto reserva essa bênção só para a geração dos profetas antigos."
+      },
+      {
+        "id": "d",
+        "text": "O derramamento do Espírito substitui a necessidade de arrependimento."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "id": "joel-cam-joel-joel-02-derramarei-o-meu-esp-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Joel 2:28",
+    "learningObjective": "Compreender que Deus promete derramar o seu Espírito sobre todo o seu povo, sem distinção de idade ou posição.",
+    "evidence": [
+      "Joel 2:28",
+      "Joel 2:29"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Joel 2:28?",
+    "prompt": "Como se encadeiam os eventos de Joel 2:28?",
+    "cue": "Como se encadeiam os eventos de Joel 2:28?",
+    "feedbackCorrect": "Certo: a promessa geral vem primeiro, depois se detalha por grupo.",
+    "feedbackWrong": {
+      "b": "Filhos e filhas profetizando vem antes da menção aos anciãos.",
+      "c": "Anciãos e jovens fecham a promessa, não a abrem."
+    },
+    "passageText": "Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos",
+    "options": [
+      {
+        "id": "a",
+        "text": "Acontecerá depois que derramarei o meu Espírito sobre toda a carne"
+      },
+      {
+        "id": "b",
+        "text": "vossos filhos e vossas filhas profetizarão"
+      },
+      {
+        "id": "c",
+        "text": "os vossos anciãos sonharão, terão visões vossos mancebos"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "id": "joel-cam-joel-joel-02-derramarei-o-meu-esp-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Joel 2:28",
+    "learningObjective": "Compreender que Deus promete derramar o seu Espírito sobre todo o seu povo, sem distinção de idade ou posição.",
+    "evidence": [
+      "Joel 2:28",
+      "Joel 2:29"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos ___ sonharão, terão visões vossos mancebos\"",
+    "prompt": "Complete a frase: \"Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos ___ sonharão, terão visões vossos mancebos\"",
+    "cue": "Complete a frase: \"Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos ___ sonharão, terão visões vossos mancebos\"",
+    "feedbackCorrect": "Certo: são os \"anciãos\" que sonharão, segundo o texto.",
+    "feedbackWrong": {
+      "b": "\"Sonharão\" é a ação dos anciãos, não o grupo em si.",
+      "c": "\"Visões\" é o que os jovens terão, não o grupo desta lacuna."
+    },
+    "passageText": "Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos",
+    "template": "Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos ___ sonharão, terão visões vossos mancebos",
+    "options": [
+      {
+        "id": "a",
+        "text": "anciãos"
+      },
+      {
+        "id": "b",
+        "text": "sonharão"
+      },
+      {
+        "id": "c",
+        "text": "visões"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "id": "joel-cam-joel-joel-02-derramarei-o-meu-esp-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Joel 2:28",
+    "learningObjective": "Compreender que Deus promete derramar o seu Espírito sobre todo o seu povo, sem distinção de idade ou posição.",
+    "evidence": [
+      "Joel 2:28",
+      "Joel 2:29"
+    ],
+    "type": "connect",
+    "question": "O que Joel 2:28 comunica que se liga a este contexto?",
+    "prompt": "O que Joel 2:28 comunica que se liga a este contexto?",
+    "cue": "O que Joel 2:28 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o Espírito é derramado sem hierarquia entre os que o recebem.",
+    "feedbackWrong": {
+      "b": "O texto não trata a bênção como restrita a uma elite religiosa.",
+      "c": "O Espírito prometido não substitui o arrependimento pedido antes no livro."
+    },
+    "passageText": "Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos",
+    "passageA": {
+      "ref": "Joel 2:28",
+      "text": "Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A promessa do Espírito mostra que a graça de Deus alcança todos os que se voltam para ele."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito derramado sem hierarquia"
+      },
+      {
+        "id": "b",
+        "text": "Sinal reservado à elite religiosa"
+      },
+      {
+        "id": "c",
+        "text": "Substituto para o arrependimento"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "id": "joel-cam-joel-joel-02-derramarei-o-meu-esp-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Joel 2:28",
+    "learningObjective": "Compreender que Deus promete derramar o seu Espírito sobre todo o seu povo, sem distinção de idade ou posição.",
+    "evidence": [
+      "Joel 2:28",
+      "Joel 2:29"
+    ],
+    "type": "true_false",
+    "question": "A passagem sustenta que a promessa do Espírito alcança filhos, filhas, anciãos e jovens, sem distinção de posição.",
+    "prompt": "A passagem sustenta que a promessa do Espírito alcança filhos, filhas, anciãos e jovens, sem distinção de posição.",
+    "cue": "A passagem sustenta que a promessa do Espírito alcança filhos, filhas, anciãos e jovens, sem distinção de posição.",
+    "feedbackCorrect": "Certo: o texto nomeia explicitamente esses grupos, sem exceção.",
+    "feedbackWrong": {
+      "false": "O texto lista justamente esses grupos como destinatários da promessa."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "id": "joel-pro-joel-joel-02-derramarei-o-meu-esp-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Joel 2:28",
+    "learningObjective": "Compreender que Deus promete derramar o seu Espírito sobre todo o seu povo, sem distinção de idade ou posição.",
+    "evidence": [
+      "Joel 2:28",
+      "Joel 2:29"
+    ],
+    "type": "tap",
+    "question": "Em Joel 2:28, toque a palavra que falta em \"Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas ___ profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos\"?",
+    "prompt": "Em Joel 2:28, toque a palavra que falta em \"Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas ___ profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos\"?",
+    "cue": "Em Joel 2:28, toque a palavra que falta em \"Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas ___ profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos\"?",
+    "feedbackCorrect": "Exato: filhos e filhas são citados juntos como destinatários da promessa.",
+    "feedbackWrong": {
+      "a": "\"Filhos\" já aparece antes da lacuna nesta frase.",
+      "c": "\"Profetizarão\" é a ação, não quem a pratica nesta lacuna."
+    },
+    "passageText": "Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos",
+    "template": "Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas ___ profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos",
+    "options": [
+      {
+        "id": "a",
+        "text": "filhos"
+      },
+      {
+        "id": "b",
+        "text": "filhas"
+      },
+      {
+        "id": "c",
+        "text": "profetizarão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "id": "joel-pro-joel-joel-02-derramarei-o-meu-esp-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Joel 2:28",
+    "learningObjective": "Compreender que Deus promete derramar o seu Espírito sobre todo o seu povo, sem distinção de idade ou posição.",
+    "evidence": [
+      "Joel 2:28",
+      "Joel 2:29"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de Joel 2:28?",
+    "prompt": "Qual leitura interpreta melhor o sentido de Joel 2:28?",
+    "cue": "Qual leitura interpreta melhor o sentido de Joel 2:28?",
+    "feedbackCorrect": "Certo: o Espírito prometido ultrapassa idade, gênero e posição social.",
+    "feedbackWrong": {
+      "b": "O texto fala de sonhos e visões cotidianos, não apenas de cultos formais.",
+      "c": "A promessa não substitui a Escritura: cumpre o que os profetas já anunciavam.",
+      "d": "O texto não restringe o dom à liderança religiosa."
+    },
+    "passageText": "Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos",
+    "options": [
+      {
+        "id": "a",
+        "text": "O texto revela que a era do Espírito rompe barreiras de idade, gênero e posição social."
+      },
+      {
+        "id": "b",
+        "text": "A passagem ensina que o Espírito atua apenas nos momentos de culto formal."
+      },
+      {
+        "id": "c",
+        "text": "O sentido do texto é que sonhos e visões substituem a Escritura como autoridade."
+      },
+      {
+        "id": "d",
+        "text": "A promessa aponta para um dom reservado exclusivamente à liderança religiosa."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "id": "joel-pro-joel-joel-02-derramarei-o-meu-esp-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Joel 2:28",
+    "learningObjective": "Compreender que Deus promete derramar o seu Espírito sobre todo o seu povo, sem distinção de idade ou posição.",
+    "evidence": [
+      "Joel 2:28",
+      "Joel 2:29"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Joel 2:28?",
+    "prompt": "Qual sequência revela o sentido de Joel 2:28?",
+    "cue": "Qual sequência revela o sentido de Joel 2:28?",
+    "feedbackCorrect": "Certo: a promessa geral abre caminho para o detalhamento por geração.",
+    "feedbackWrong": {
+      "b": "Filhos e filhas profetizando vem antes da menção aos anciãos.",
+      "c": "Anciãos e jovens fecham a promessa, não a abrem."
+    },
+    "passageText": "Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos",
+    "options": [
+      {
+        "id": "a",
+        "text": "Acontecerá depois que derramarei o meu Espírito sobre toda a carne"
+      },
+      {
+        "id": "b",
+        "text": "vossos filhos e vossas filhas profetizarão"
+      },
+      {
+        "id": "c",
+        "text": "os vossos anciãos sonharão, terão visões vossos mancebos"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "id": "joel-pro-joel-joel-02-derramarei-o-meu-esp-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Joel 2:28",
+    "learningObjective": "Compreender que Deus promete derramar o seu Espírito sobre todo o seu povo, sem distinção de idade ou posição.",
+    "evidence": [
+      "Joel 2:28",
+      "Joel 2:29"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos ___\"",
+    "prompt": "Complete a frase: \"Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos ___\"",
+    "cue": "Complete a frase: \"Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos ___\"",
+    "feedbackCorrect": "Certo: são os \"mancebos\" (jovens) que terão visões, segundo o texto.",
+    "feedbackWrong": {
+      "b": "\"Visões\" é o que os jovens terão, não o grupo em si.",
+      "c": "\"Anciãos\" é o grupo que sonhará, não o desta lacuna."
+    },
+    "passageText": "Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos",
+    "template": "Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "mancebos"
+      },
+      {
+        "id": "b",
+        "text": "visões"
+      },
+      {
+        "id": "c",
+        "text": "anciãos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "id": "joel-pro-joel-joel-02-derramarei-o-meu-esp-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Joel 2:28",
+    "learningObjective": "Compreender que Deus promete derramar o seu Espírito sobre todo o seu povo, sem distinção de idade ou posição.",
+    "evidence": [
+      "Joel 2:28",
+      "Joel 2:29"
+    ],
+    "type": "connect",
+    "question": "O que Joel 2:28 comunica que se liga a este contexto?",
+    "prompt": "O que Joel 2:28 comunica que se liga a este contexto?",
+    "cue": "O que Joel 2:28 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a promessa inaugura uma nova era de proximidade entre Deus e seu povo.",
+    "feedbackWrong": {
+      "b": "O texto não trata a promessa como esvaziada de sentido.",
+      "c": "A promessa não se restringe ao templo: alcança toda a carne."
+    },
+    "passageText": "Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos",
+    "passageA": {
+      "ref": "Joel 2:28",
+      "text": "Acontecerá depois que derramarei o meu Espírito sobre toda a carne; vossos filhos e vossas filhas profetizarão, os vossos anciãos sonharão, terão visões vossos mancebos"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A promessa do Espírito mostra que a graça de Deus alcança todos os que se voltam para ele."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Nova era inaugurada pelo Espírito"
+      },
+      {
+        "id": "b",
+        "text": "Ritual esvaziado de sentido espiritual"
+      },
+      {
+        "id": "c",
+        "text": "Promessa cumprida somente no templo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-02-derramarei-o-meu-esp",
+    "id": "joel-pro-joel-joel-02-derramarei-o-meu-esp-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sintetizar o percurso de Joel: o juízo anunciado pelos gafanhotos leva ao chamado ao arrependimento sincero e à promessa do Espírito.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 2:13",
+      "Joel 2:28"
+    ],
+    "type": "true_false",
+    "question": "O texto pede que o povo rasgue o coração, e não apenas as vestes, ao converter-se a Jeová.",
+    "prompt": "O texto pede que o povo rasgue o coração, e não apenas as vestes, ao converter-se a Jeová.",
+    "cue": "O texto pede que o povo rasgue o coração, e não apenas as vestes, ao converter-se a Jeová.",
+    "feedbackCorrect": "Certo: é exatamente esse o pedido do versículo.",
+    "feedbackWrong": {
+      "false": "Releia Joel 2:13: o texto pede o coração rasgado, não as vestes."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus.",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "id": "joel-sem-joel-joel-03-desafio-joel-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sintetizar o percurso de Joel: o juízo anunciado pelos gafanhotos leva ao chamado ao arrependimento sincero e à promessa do Espírito.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 2:13",
+      "Joel 2:28"
+    ],
+    "type": "tap",
+    "question": "Em Joel 2:13, toque a palavra que falta em \"___ o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus\"?",
+    "prompt": "Em Joel 2:13, toque a palavra que falta em \"___ o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus\"?",
+    "cue": "Em Joel 2:13, toque a palavra que falta em \"___ o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus\"?",
+    "feedbackCorrect": "Exato: é assim que o versículo abre o apelo ao arrependimento.",
+    "feedbackWrong": {
+      "b": "\"Vestidos\" é o que não deve ser rasgado, segundo o texto.",
+      "c": "\"Jeová\" é a quem o povo deve se converter, não a ação inicial."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus.",
+    "template": "___ o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rasgai"
+      },
+      {
+        "id": "b",
+        "text": "vestidos"
+      },
+      {
+        "id": "c",
+        "text": "Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "id": "joel-sem-joel-joel-03-desafio-joel-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sintetizar o percurso de Joel: o juízo anunciado pelos gafanhotos leva ao chamado ao arrependimento sincero e à promessa do Espírito.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 2:13",
+      "Joel 2:28"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelo texto em Joel 2:13?",
+    "prompt": "Qual afirmação é feita diretamente pelo texto em Joel 2:13?",
+    "cue": "Qual afirmação é feita diretamente pelo texto em Joel 2:13?",
+    "feedbackCorrect": "Certo: o texto pede o coração rasgado, não um gesto externo com as vestes.",
+    "feedbackWrong": {
+      "b": "O texto pede o contrário: o coração, e não as vestes.",
+      "c": "O texto não menciona sacrifícios de animais neste versículo.",
+      "d": "O texto se dirige a \"vosso\" — todo o povo, não só aos sacerdotes."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O texto pede que o coração seja rasgado, e não as vestes."
+      },
+      {
+        "id": "b",
+        "text": "O texto pede que as vestes sejam rasgadas em sinal de luto público."
+      },
+      {
+        "id": "c",
+        "text": "O texto ordena sacrifícios de animais como sinal de arrependimento."
+      },
+      {
+        "id": "d",
+        "text": "O texto convoca apenas os sacerdotes a se converterem."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "id": "joel-sem-joel-joel-03-desafio-joel-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sintetizar o percurso de Joel: o juízo anunciado pelos gafanhotos leva ao chamado ao arrependimento sincero e à promessa do Espírito.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 2:13",
+      "Joel 2:28"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Joel 2:13?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Joel 2:13?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Joel 2:13?",
+    "feedbackCorrect": "Certo: primeiro o coração, depois a negação das vestes, depois o chamado à conversão.",
+    "feedbackWrong": {
+      "b": "A negação das vestes vem depois do pedido pelo coração.",
+      "c": "O chamado à conversão a Jeová fecha o versículo, não o abre."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rasgai o vosso coração"
+      },
+      {
+        "id": "b",
+        "text": "não os vossos vestidos"
+      },
+      {
+        "id": "c",
+        "text": "convertei-vos a Jeová, vosso Deus"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "id": "joel-sem-joel-joel-03-desafio-joel-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sintetizar o percurso de Joel: o juízo anunciado pelos gafanhotos leva ao chamado ao arrependimento sincero e à promessa do Espírito.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 2:13",
+      "Joel 2:28"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Rasgai o vosso ___, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus\"",
+    "prompt": "Complete a frase: \"Rasgai o vosso ___, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus\"",
+    "cue": "Complete a frase: \"Rasgai o vosso ___, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus\"",
+    "feedbackCorrect": "Certo: é o \"coração\" que deve ser rasgado, segundo o texto.",
+    "feedbackWrong": {
+      "b": "\"Vestidos\" é o que o texto diz para não rasgar.",
+      "c": "\"Deus\" identifica a quem o povo se converte, não o que se rasga."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus.",
+    "template": "Rasgai o vosso ___, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "coração"
+      },
+      {
+        "id": "b",
+        "text": "vestidos"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "id": "joel-sem-joel-joel-03-desafio-joel-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sintetizar o percurso de Joel: o juízo anunciado pelos gafanhotos leva ao chamado ao arrependimento sincero e à promessa do Espírito.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 2:13",
+      "Joel 2:28"
+    ],
+    "type": "connect",
+    "question": "O que Joel 2:13 comunica que se liga a este contexto?",
+    "prompt": "O que Joel 2:13 comunica que se liga a este contexto?",
+    "cue": "O que Joel 2:13 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o arrependimento pedido por Joel nasce de dentro, não de um gesto externo.",
+    "feedbackWrong": {
+      "b": "O texto pede justamente o oposto de um gesto só externo.",
+      "c": "O texto abre caminho à resposta, e não fecha a porta a ela."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus.",
+    "passageA": {
+      "ref": "Joel 2:13",
+      "text": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Juízo, arrependimento sincero e a promessa do Espírito formam o fio condutor de todo o livro de Joel."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Arrependimento que vem do coração"
+      },
+      {
+        "id": "b",
+        "text": "Ritual externo sem mudança real"
+      },
+      {
+        "id": "c",
+        "text": "Julgamento sem chance de resposta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "id": "joel-sem-joel-joel-03-desafio-joel-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sintetizar o percurso de Joel: o juízo anunciado pelos gafanhotos leva ao chamado ao arrependimento sincero e à promessa do Espírito.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 2:13",
+      "Joel 2:28"
+    ],
+    "type": "true_false",
+    "question": "O trecho ensina que rasgar as vestes é suficiente para demonstrar arrependimento diante de Jeová.",
+    "prompt": "O trecho ensina que rasgar as vestes é suficiente para demonstrar arrependimento diante de Jeová.",
+    "cue": "O trecho ensina que rasgar as vestes é suficiente para demonstrar arrependimento diante de Jeová.",
+    "feedbackCorrect": "Certo: o texto pede o coração rasgado, não apenas as vestes.",
+    "feedbackWrong": {
+      "true": "O texto diz o contrário: \"e não os vossos vestidos\"."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus.",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "id": "joel-cam-joel-joel-03-desafio-joel-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sintetizar o percurso de Joel: o juízo anunciado pelos gafanhotos leva ao chamado ao arrependimento sincero e à promessa do Espírito.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 2:13",
+      "Joel 2:28"
+    ],
+    "type": "tap",
+    "question": "Em Joel 2:13, toque a palavra que falta em \"Rasgai o vosso coração, e não os vossos ___, e convertei-vos a Jeová, vosso Deus\"?",
+    "prompt": "Em Joel 2:13, toque a palavra que falta em \"Rasgai o vosso coração, e não os vossos ___, e convertei-vos a Jeová, vosso Deus\"?",
+    "cue": "Em Joel 2:13, toque a palavra que falta em \"Rasgai o vosso coração, e não os vossos ___, e convertei-vos a Jeová, vosso Deus\"?",
+    "feedbackCorrect": "Exato: é isso que o texto diz para não rasgar.",
+    "feedbackWrong": {
+      "a": "\"Rasgai\" é a ação pedida para o coração, não o que se recusa.",
+      "c": "\"Jeová\" é a quem o povo se converte, não o que não deve ser rasgado."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus.",
+    "template": "Rasgai o vosso coração, e não os vossos ___, e convertei-vos a Jeová, vosso Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rasgai"
+      },
+      {
+        "id": "b",
+        "text": "vestidos"
+      },
+      {
+        "id": "c",
+        "text": "Jeová"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "id": "joel-cam-joel-joel-03-desafio-joel-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sintetizar o percurso de Joel: o juízo anunciado pelos gafanhotos leva ao chamado ao arrependimento sincero e à promessa do Espírito.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 2:13",
+      "Joel 2:28"
+    ],
+    "type": "choice",
+    "question": "Qual ideia melhor conecta Joel 2:13 ao contexto da missão?",
+    "prompt": "Qual ideia melhor conecta Joel 2:13 ao contexto da missão?",
+    "cue": "Qual ideia melhor conecta Joel 2:13 ao contexto da missão?",
+    "feedbackCorrect": "Certo: juízo e Espírito se unem pelo mesmo caminho — o arrependimento sincero.",
+    "feedbackWrong": {
+      "a": "O texto pede exatamente o oposto: mudança interior, não só externa.",
+      "c": "O texto pede a conversão do coração, não apenas um rito.",
+      "d": "O juízo permanece real: é o motivo do apelo à conversão."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O arrependimento externo, sem mudança interior, já basta para Jeová."
+      },
+      {
+        "id": "b",
+        "text": "Joel une juízo e Espírito por um caminho: o arrependimento sincero do coração."
+      },
+      {
+        "id": "c",
+        "text": "A conversão pedida por Joel é apenas ritual, sem envolver o coração."
+      },
+      {
+        "id": "d",
+        "text": "O texto sugere que o juízo anunciado antes já havia sido cancelado."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "id": "joel-cam-joel-joel-03-desafio-joel-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sintetizar o percurso de Joel: o juízo anunciado pelos gafanhotos leva ao chamado ao arrependimento sincero e à promessa do Espírito.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 2:13",
+      "Joel 2:28"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Joel 2:13?",
+    "prompt": "Como se encadeiam os eventos de Joel 2:13?",
+    "cue": "Como se encadeiam os eventos de Joel 2:13?",
+    "feedbackCorrect": "Certo: o pedido pelo coração vem antes da negação das vestes e do chamado final.",
+    "feedbackWrong": {
+      "b": "A negação das vestes vem depois do pedido pelo coração.",
+      "c": "O chamado à conversão a Jeová fecha o versículo, não o abre."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rasgai o vosso coração"
+      },
+      {
+        "id": "b",
+        "text": "não os vossos vestidos"
+      },
+      {
+        "id": "c",
+        "text": "convertei-vos a Jeová, vosso Deus"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "id": "joel-cam-joel-joel-03-desafio-joel-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sintetizar o percurso de Joel: o juízo anunciado pelos gafanhotos leva ao chamado ao arrependimento sincero e à promessa do Espírito.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 2:13",
+      "Joel 2:28"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Rasgai o vosso coração, e não os vossos vestidos, e ___ a Jeová, vosso Deus\"",
+    "prompt": "Complete a frase: \"Rasgai o vosso coração, e não os vossos vestidos, e ___ a Jeová, vosso Deus\"",
+    "cue": "Complete a frase: \"Rasgai o vosso coração, e não os vossos vestidos, e ___ a Jeová, vosso Deus\"",
+    "feedbackCorrect": "Certo: \"convertei-vos\" é o chamado final do versículo.",
+    "feedbackWrong": {
+      "b": "\"Rasgai\" já abre a frase, referindo-se ao coração.",
+      "c": "\"Jeová\" é a quem o povo se converte, não a ação em si."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus.",
+    "template": "Rasgai o vosso coração, e não os vossos vestidos, e ___ a Jeová, vosso Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "convertei-vos"
+      },
+      {
+        "id": "b",
+        "text": "Rasgai"
+      },
+      {
+        "id": "c",
+        "text": "Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "id": "joel-cam-joel-joel-03-desafio-joel-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sintetizar o percurso de Joel: o juízo anunciado pelos gafanhotos leva ao chamado ao arrependimento sincero e à promessa do Espírito.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 2:13",
+      "Joel 2:28"
+    ],
+    "type": "connect",
+    "question": "O que Joel 2:13 comunica que se liga a este contexto?",
+    "prompt": "O que Joel 2:13 comunica que se liga a este contexto?",
+    "cue": "O que Joel 2:13 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o versículo une o juízo anunciado ao chamado à conversão sincera.",
+    "feedbackWrong": {
+      "a": "O perdão de Jeová, no livro, segue o arrependimento pedido, não o dispensa.",
+      "c": "O texto pede justamente uma mudança interior, e não um culto vazio."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus.",
+    "passageA": {
+      "ref": "Joel 2:13",
+      "text": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Juízo, arrependimento sincero e a promessa do Espírito formam o fio condutor de todo o livro de Joel."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Perdão automático sem arrependimento"
+      },
+      {
+        "id": "b",
+        "text": "Elo entre juízo e conversão"
+      },
+      {
+        "id": "c",
+        "text": "Culto vazio de sentido interior"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "id": "joel-cam-joel-joel-03-desafio-joel-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sintetizar o percurso de Joel: o juízo anunciado pelos gafanhotos leva ao chamado ao arrependimento sincero e à promessa do Espírito.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 2:13",
+      "Joel 2:28"
+    ],
+    "type": "true_false",
+    "question": "A passagem sustenta que o arrependimento genuíno diante de Jeová é interior, e não apenas um gesto externo de luto.",
+    "prompt": "A passagem sustenta que o arrependimento genuíno diante de Jeová é interior, e não apenas um gesto externo de luto.",
+    "cue": "A passagem sustenta que o arrependimento genuíno diante de Jeová é interior, e não apenas um gesto externo de luto.",
+    "feedbackCorrect": "Certo: o contraste entre coração e vestes sustenta essa leitura.",
+    "feedbackWrong": {
+      "false": "O contraste \"coração\" versus \"vestidos\" sustenta exatamente essa leitura."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus.",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "id": "joel-pro-joel-joel-03-desafio-joel-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sintetizar o percurso de Joel: o juízo anunciado pelos gafanhotos leva ao chamado ao arrependimento sincero e à promessa do Espírito.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 2:13",
+      "Joel 2:28"
+    ],
+    "type": "tap",
+    "question": "Em Joel 2:13, toque a palavra que falta em \"Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a ___, vosso Deus\"?",
+    "prompt": "Em Joel 2:13, toque a palavra que falta em \"Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a ___, vosso Deus\"?",
+    "cue": "Em Joel 2:13, toque a palavra que falta em \"Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a ___, vosso Deus\"?",
+    "feedbackCorrect": "Exato: é a \"Jeová\" que o povo deve se converter.",
+    "feedbackWrong": {
+      "b": "\"Deus\" vem logo depois da lacuna, como aposto de Jeová.",
+      "c": "\"Convertei-vos\" é a ação, não a quem ela se dirige."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus.",
+    "template": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a ___, vosso Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Deus"
+      },
+      {
+        "id": "c",
+        "text": "convertei-vos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "id": "joel-pro-joel-joel-03-desafio-joel-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sintetizar o percurso de Joel: o juízo anunciado pelos gafanhotos leva ao chamado ao arrependimento sincero e à promessa do Espírito.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 2:13",
+      "Joel 2:28"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de Joel 2:13?",
+    "prompt": "Qual leitura interpreta melhor o sentido de Joel 2:13?",
+    "cue": "Qual leitura interpreta melhor o sentido de Joel 2:13?",
+    "feedbackCorrect": "Certo: o livro liga juízo, arrependimento e Espírito num só chamado de Deus.",
+    "feedbackWrong": {
+      "b": "O texto não separa juízo e conversão: um leva ao outro no livro.",
+      "c": "O texto rejeita justamente o ritual sem mudança de coração.",
+      "d": "A promessa do Espírito, no capítulo seguinte, pressupõe esse arrependimento."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Juízo, arrependimento sincero e promessa do Espírito pertencem ao mesmo chamado."
+      },
+      {
+        "id": "b",
+        "text": "A passagem separa o juízo anunciado do chamado à conversão."
+      },
+      {
+        "id": "c",
+        "text": "O texto ensina que rituais substituem a necessidade de conversão do coração."
+      },
+      {
+        "id": "d",
+        "text": "A promessa do Espírito, em Joel, independe de qualquer arrependimento."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "id": "joel-pro-joel-joel-03-desafio-joel-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sintetizar o percurso de Joel: o juízo anunciado pelos gafanhotos leva ao chamado ao arrependimento sincero e à promessa do Espírito.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 2:13",
+      "Joel 2:28"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Joel 2:13?",
+    "prompt": "Qual sequência revela o sentido de Joel 2:13?",
+    "cue": "Qual sequência revela o sentido de Joel 2:13?",
+    "feedbackCorrect": "Certo: o coração vem primeiro porque é ali que o arrependimento deve começar.",
+    "feedbackWrong": {
+      "b": "A negação das vestes vem depois do pedido pelo coração.",
+      "c": "O chamado à conversão a Jeová fecha o versículo, não o abre."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rasgai o vosso coração"
+      },
+      {
+        "id": "b",
+        "text": "não os vossos vestidos"
+      },
+      {
+        "id": "c",
+        "text": "convertei-vos a Jeová, vosso Deus"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "id": "joel-pro-joel-joel-03-desafio-joel-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sintetizar o percurso de Joel: o juízo anunciado pelos gafanhotos leva ao chamado ao arrependimento sincero e à promessa do Espírito.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 2:13",
+      "Joel 2:28"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso ___\"",
+    "prompt": "Complete a frase: \"Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso ___\"",
+    "cue": "Complete a frase: \"Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso ___\"",
+    "feedbackCorrect": "Certo: o versículo fecha nomeando Jeová como \"vosso Deus\".",
+    "feedbackWrong": {
+      "b": "\"Coração\" já foi mencionado no início do versículo.",
+      "c": "\"Vestidos\" é o que o texto diz para não rasgar."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus.",
+    "template": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus"
+      },
+      {
+        "id": "b",
+        "text": "coração"
+      },
+      {
+        "id": "c",
+        "text": "vestidos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "id": "joel-pro-joel-joel-03-desafio-joel-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Joel 2:13",
+    "learningObjective": "Sintetizar o percurso de Joel: o juízo anunciado pelos gafanhotos leva ao chamado ao arrependimento sincero e à promessa do Espírito.",
+    "evidence": [
+      "Joel 1:4",
+      "Joel 2:13",
+      "Joel 2:28"
+    ],
+    "type": "connect",
+    "question": "O que Joel 2:13 comunica que se liga a este contexto?",
+    "prompt": "O que Joel 2:13 comunica que se liga a este contexto?",
+    "cue": "O que Joel 2:13 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o chamado ao arrependimento é o fio que une todo o livro de Joel.",
+    "feedbackWrong": {
+      "a": "O apelo ao coração rasgado percorre o livro inteiro, do juízo à promessa do Espírito.",
+      "c": "O texto carrega peso teológico central, não é um detalhe cerimonial."
+    },
+    "passageText": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus.",
+    "passageA": {
+      "ref": "Joel 2:13",
+      "text": "Rasgai o vosso coração, e não os vossos vestidos, e convertei-vos a Jeová, vosso Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Juízo, arrependimento sincero e a promessa do Espírito formam o fio condutor de todo o livro de Joel."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Episódio isolado sem ligação com o resto"
+      },
+      {
+        "id": "b",
+        "text": "Fio condutor de todo o livro"
+      },
+      {
+        "id": "c",
+        "text": "Detalhe cerimonial sem peso teológico"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "joel",
+    "section": "joel-joel-03-desafio-joel",
+    "id": "joel-pro-joel-joel-03-desafio-joel-06"
+  }
+]

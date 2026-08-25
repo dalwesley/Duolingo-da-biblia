@@ -1,0 +1,2954 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tiago 2:17",
+    "learningObjective": "Perceber que, em Tiago 2:17, a fé sem obras é morta em si mesma.",
+    "evidence": [
+      "Tiago 2:17"
+    ],
+    "type": "true_false",
+    "question": "A fé, se não tiver obras, é morta em si mesma.",
+    "prompt": "A fé, se não tiver obras, é morta em si mesma.",
+    "cue": "A fé, se não tiver obras, é morta em si mesma.",
+    "feedbackCorrect": "Certo: Tiago 2:17 afirma exatamente isso.",
+    "feedbackWrong": {
+      "false": "Releia: sem obras, a fé é morta em si mesma."
+    },
+    "passageText": "Assim também a fé, se não tiver obras, é morta em si mesma.",
+    "trail": "tiago",
+    "section": "tg-01",
+    "id": "tiago-sem-tg-01-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tiago 2:17",
+    "learningObjective": "Perceber que, em Tiago 2:17, a fé sem obras é morta em si mesma.",
+    "evidence": [
+      "Tiago 2:17"
+    ],
+    "type": "tap",
+    "question": "Em Tiago 2:17, toque a palavra que falta em \"Assim também a fé, se não tiver ___, é morta em si mesma.\"?",
+    "prompt": "Em Tiago 2:17, toque a palavra que falta em \"Assim também a fé, se não tiver ___, é morta em si mesma.\"?",
+    "cue": "Em Tiago 2:17, toque a palavra que falta em \"Assim também a fé, se não tiver ___, é morta em si mesma.\"?",
+    "feedbackCorrect": "Exato: a fé sem obras é morta em si mesma.",
+    "feedbackWrong": {
+      "b": "Fé é o sujeito da frase, não o que falta nesta lacuna.",
+      "c": "Morta descreve o estado da fé, não o que ela deve ter."
+    },
+    "passageText": "Assim também a fé, se não tiver obras, é morta em si mesma.",
+    "trail": "tiago",
+    "section": "tg-01",
+    "id": "tiago-sem-tg-01-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "obras"
+      },
+      {
+        "id": "b",
+        "text": "fé"
+      },
+      {
+        "id": "c",
+        "text": "morta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Assim também a fé, se não tiver ___, é morta em si mesma."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tiago 2:17",
+    "learningObjective": "Perceber que, em Tiago 2:17, a fé sem obras é morta em si mesma.",
+    "evidence": [
+      "Tiago 2:17"
+    ],
+    "type": "choice",
+    "question": "O que Tiago 2:17 afirma sobre a fé que não tiver obras?",
+    "prompt": "O que Tiago 2:17 afirma sobre a fé que não tiver obras?",
+    "cue": "O que Tiago 2:17 afirma sobre a fé que não tiver obras?",
+    "feedbackCorrect": "Certo: o texto diz que essa fé é morta em si mesma.",
+    "feedbackWrong": {
+      "b": "O texto não chama essa fé de viva; chama-a de morta.",
+      "c": "Tiago não diz que as obras são opcionais.",
+      "d": "O versículo não trata de um atraso temporário."
+    },
+    "passageText": "Assim também a fé, se não tiver obras, é morta em si mesma.",
+    "trail": "tiago",
+    "section": "tg-01",
+    "id": "tiago-sem-tg-01-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "É morta em si mesma."
+      },
+      {
+        "id": "b",
+        "text": "Continua viva, só que invisível."
+      },
+      {
+        "id": "c",
+        "text": "Dispensa qualquer fruto visível."
+      },
+      {
+        "id": "d",
+        "text": "Fica apenas adormecida por um tempo."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tiago 2:17",
+    "learningObjective": "Perceber que, em Tiago 2:17, a fé sem obras é morta em si mesma.",
+    "evidence": [
+      "Tiago 2:17"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Tiago 2:17?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Tiago 2:17?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Tiago 2:17?",
+    "feedbackCorrect": "Certo: fé, ausência de obras, morte em si mesma.",
+    "feedbackWrong": {
+      "b": "Essa peça vem depois no versículo.",
+      "c": "Essa é a conclusão, não o começo."
+    },
+    "passageText": "Assim também a fé, se não tiver obras, é morta em si mesma.",
+    "trail": "tiago",
+    "section": "tg-01",
+    "id": "tiago-sem-tg-01-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Assim também a fé"
+      },
+      {
+        "id": "b",
+        "text": "se não tiver obras"
+      },
+      {
+        "id": "c",
+        "text": "é morta em si mesma"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tiago 2:17",
+    "learningObjective": "Perceber que, em Tiago 2:17, a fé sem obras é morta em si mesma.",
+    "evidence": [
+      "Tiago 2:17"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Assim também a fé, se não tiver obras, é ___ em si mesma.\"",
+    "prompt": "Complete a frase: \"Assim também a fé, se não tiver obras, é ___ em si mesma.\"",
+    "cue": "Complete a frase: \"Assim também a fé, se não tiver obras, é ___ em si mesma.\"",
+    "feedbackCorrect": "Certo: o texto diz que essa fé é morta.",
+    "feedbackWrong": {
+      "b": "Obras é o que falta à fé, não o adjetivo desta lacuna.",
+      "c": "Fé é o sujeito; a lacuna descreve o estado dela."
+    },
+    "passageText": "Assim também a fé, se não tiver obras, é morta em si mesma.",
+    "trail": "tiago",
+    "section": "tg-01",
+    "id": "tiago-sem-tg-01-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "morta"
+      },
+      {
+        "id": "b",
+        "text": "obras"
+      },
+      {
+        "id": "c",
+        "text": "fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Assim também a fé, se não tiver obras, é ___ em si mesma."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tiago 2:17",
+    "learningObjective": "Perceber que, em Tiago 2:17, a fé sem obras é morta em si mesma.",
+    "evidence": [
+      "Tiago 2:17"
+    ],
+    "type": "connect",
+    "question": "O que Tiago 2:17 comunica que se liga a este contexto?",
+    "prompt": "O que Tiago 2:17 comunica que se liga a este contexto?",
+    "cue": "O que Tiago 2:17 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: fé sem obras está morta em si mesma.",
+    "feedbackWrong": {
+      "b": "O texto não elogia uma fé só de palavras.",
+      "c": "Tiago não trata as obras como adorno opcional."
+    },
+    "passageText": "Assim também a fé, se não tiver obras, é morta em si mesma.",
+    "trail": "tiago",
+    "section": "tg-01",
+    "id": "tiago-sem-tg-01-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fé morta sem obras"
+      },
+      {
+        "id": "b",
+        "text": "Fé suficiente só na fala"
+      },
+      {
+        "id": "c",
+        "text": "Obras como enfeite extra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Tiago 2:17",
+      "text": "Assim também a fé, se não tiver obras, é morta em si mesma."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Fé que trabalha: sem obras, a fé está morta em si mesma."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tiago 2:17",
+    "learningObjective": "Perceber que, em Tiago 2:17, a fé sem obras é morta em si mesma.",
+    "evidence": [
+      "Tiago 2:17"
+    ],
+    "type": "true_false",
+    "question": "Tiago 2:17 descreve a fé sem obras como viva, ainda que incompleta.",
+    "prompt": "Tiago 2:17 descreve a fé sem obras como viva, ainda que incompleta.",
+    "cue": "Tiago 2:17 descreve a fé sem obras como viva, ainda que incompleta.",
+    "feedbackCorrect": "Certo: o texto chama essa fé de morta, não de viva.",
+    "feedbackWrong": {
+      "true": "O versículo não diz viva: diz morta em si mesma."
+    },
+    "passageText": "Assim também a fé, se não tiver obras, é morta em si mesma.",
+    "trail": "tiago",
+    "section": "tg-01",
+    "id": "tiago-cam-tg-01-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tiago 2:17",
+    "learningObjective": "Perceber que, em Tiago 2:17, a fé sem obras é morta em si mesma.",
+    "evidence": [
+      "Tiago 2:17"
+    ],
+    "type": "tap",
+    "question": "Em Tiago 2:17, toque a palavra que falta em \"Assim também a ___, se não tiver obras, é morta em si mesma.\"?",
+    "prompt": "Em Tiago 2:17, toque a palavra que falta em \"Assim também a ___, se não tiver obras, é morta em si mesma.\"?",
+    "cue": "Em Tiago 2:17, toque a palavra que falta em \"Assim também a ___, se não tiver obras, é morta em si mesma.\"?",
+    "feedbackCorrect": "Exato: o sujeito comparado é a fé.",
+    "feedbackWrong": {
+      "b": "Obras é o que a fé deve ter, não o sujeito da frase.",
+      "c": "Morta descreve o resultado, não o sujeito."
+    },
+    "passageText": "Assim também a fé, se não tiver obras, é morta em si mesma.",
+    "trail": "tiago",
+    "section": "tg-01",
+    "id": "tiago-cam-tg-01-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "fé"
+      },
+      {
+        "id": "b",
+        "text": "obras"
+      },
+      {
+        "id": "c",
+        "text": "morta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Assim também a ___, se não tiver obras, é morta em si mesma."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tiago 2:17",
+    "learningObjective": "Perceber que, em Tiago 2:17, a fé sem obras é morta em si mesma.",
+    "evidence": [
+      "Tiago 2:17"
+    ],
+    "type": "choice",
+    "question": "Como se relacionam fé e obras em Tiago 2:17?",
+    "prompt": "Como se relacionam fé e obras em Tiago 2:17?",
+    "cue": "Como se relacionam fé e obras em Tiago 2:17?",
+    "feedbackCorrect": "Certo: sem obras, a fé não permanece viva.",
+    "feedbackWrong": {
+      "b": "O texto não coloca obras no lugar da fé.",
+      "c": "Tiago não trata as obras como detalhe secundário.",
+      "d": "O versículo não descreve fé viva sem fruto."
+    },
+    "passageText": "Assim também a fé, se não tiver obras, é morta em si mesma.",
+    "trail": "tiago",
+    "section": "tg-01",
+    "id": "tiago-cam-tg-01-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "As obras mostram se a fé está viva ou morta."
+      },
+      {
+        "id": "b",
+        "text": "As obras substituem a fé e a tornam desnecessária."
+      },
+      {
+        "id": "c",
+        "text": "As obras são um acréscimo opcional à fé verdadeira."
+      },
+      {
+        "id": "d",
+        "text": "A fé permanece viva mesmo sem qualquer obra."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tiago 2:17",
+    "learningObjective": "Perceber que, em Tiago 2:17, a fé sem obras é morta em si mesma.",
+    "evidence": [
+      "Tiago 2:17"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Tiago 2:17?",
+    "prompt": "Como se encadeiam os eventos de Tiago 2:17?",
+    "cue": "Como se encadeiam os eventos de Tiago 2:17?",
+    "feedbackCorrect": "Certo: a comparação, a condição e o veredito.",
+    "feedbackWrong": {
+      "b": "A condição vem no meio, não no fim.",
+      "c": "O veredito fecha o versículo, não o abre."
+    },
+    "passageText": "Assim também a fé, se não tiver obras, é morta em si mesma.",
+    "trail": "tiago",
+    "section": "tg-01",
+    "id": "tiago-cam-tg-01-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Assim também a fé"
+      },
+      {
+        "id": "b",
+        "text": "se não tiver obras"
+      },
+      {
+        "id": "c",
+        "text": "é morta em si mesma"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tiago 2:17",
+    "learningObjective": "Perceber que, em Tiago 2:17, a fé sem obras é morta em si mesma.",
+    "evidence": [
+      "Tiago 2:17"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Assim também a fé, se não ___ obras, é morta em si mesma.\"",
+    "prompt": "Complete a frase: \"Assim também a fé, se não ___ obras, é morta em si mesma.\"",
+    "cue": "Complete a frase: \"Assim também a fé, se não ___ obras, é morta em si mesma.\"",
+    "feedbackCorrect": "Certo: a condição é não ter obras.",
+    "feedbackWrong": {
+      "b": "Morta é o resultado, não o verbo da condição.",
+      "c": "Assim abre a comparação, não preenche esta lacuna."
+    },
+    "passageText": "Assim também a fé, se não tiver obras, é morta em si mesma.",
+    "trail": "tiago",
+    "section": "tg-01",
+    "id": "tiago-cam-tg-01-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "tiver"
+      },
+      {
+        "id": "b",
+        "text": "morta"
+      },
+      {
+        "id": "c",
+        "text": "Assim"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Assim também a fé, se não ___ obras, é morta em si mesma."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tiago 2:17",
+    "learningObjective": "Perceber que, em Tiago 2:17, a fé sem obras é morta em si mesma.",
+    "evidence": [
+      "Tiago 2:17"
+    ],
+    "type": "connect",
+    "question": "O que Tiago 2:17 comunica que se liga a este contexto?",
+    "prompt": "O que Tiago 2:17 comunica que se liga a este contexto?",
+    "cue": "O que Tiago 2:17 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: fé que trabalha não fica morta em si.",
+    "feedbackWrong": {
+      "b": "O texto não separa fé viva de qualquer fruto.",
+      "c": "Tiago não reduz a fé a um sentimento interno."
+    },
+    "passageText": "Assim também a fé, se não tiver obras, é morta em si mesma.",
+    "trail": "tiago",
+    "section": "tg-01",
+    "id": "tiago-cam-tg-01-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fé viva produz obras"
+      },
+      {
+        "id": "b",
+        "text": "Fé e obras em compartimentos"
+      },
+      {
+        "id": "c",
+        "text": "Fé só como sentimento interno"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Tiago 2:17",
+      "text": "Assim também a fé, se não tiver obras, é morta em si mesma."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Fé que trabalha: sem obras, a fé está morta em si mesma."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tiago 2:17",
+    "learningObjective": "Perceber que, em Tiago 2:17, a fé sem obras é morta em si mesma.",
+    "evidence": [
+      "Tiago 2:17"
+    ],
+    "type": "true_false",
+    "question": "A ausência de obras, em Tiago 2:17, revela uma fé morta em si mesma, e não uma fé apenas discreta.",
+    "prompt": "A ausência de obras, em Tiago 2:17, revela uma fé morta em si mesma, e não uma fé apenas discreta.",
+    "cue": "A ausência de obras, em Tiago 2:17, revela uma fé morta em si mesma, e não uma fé apenas discreta.",
+    "feedbackCorrect": "Certo: o texto fala de morte, não de discrição.",
+    "feedbackWrong": {
+      "false": "Tiago não suaviza: sem obras, a fé está morta."
+    },
+    "passageText": "Assim também a fé, se não tiver obras, é morta em si mesma.",
+    "trail": "tiago",
+    "section": "tg-01",
+    "id": "tiago-pro-tg-01-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tiago 2:17",
+    "learningObjective": "Perceber que, em Tiago 2:17, a fé sem obras é morta em si mesma.",
+    "evidence": [
+      "Tiago 2:17"
+    ],
+    "type": "tap",
+    "question": "Em Tiago 2:17, toque a palavra que falta em \"Assim também a fé, se não tiver obras, é morta em si ___.\"?",
+    "prompt": "Em Tiago 2:17, toque a palavra que falta em \"Assim também a fé, se não tiver obras, é morta em si ___.\"?",
+    "cue": "Em Tiago 2:17, toque a palavra que falta em \"Assim também a fé, se não tiver obras, é morta em si ___.\"?",
+    "feedbackCorrect": "Exato: morta em si mesma.",
+    "feedbackWrong": {
+      "b": "Obras é o que falta à fé, não o fim da frase.",
+      "c": "Fé abre o versículo, não fecha esta lacuna."
+    },
+    "passageText": "Assim também a fé, se não tiver obras, é morta em si mesma.",
+    "trail": "tiago",
+    "section": "tg-01",
+    "id": "tiago-pro-tg-01-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "mesma"
+      },
+      {
+        "id": "b",
+        "text": "obras"
+      },
+      {
+        "id": "c",
+        "text": "fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Assim também a fé, se não tiver obras, é morta em si ___."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tiago 2:17",
+    "learningObjective": "Perceber que, em Tiago 2:17, a fé sem obras é morta em si mesma.",
+    "evidence": [
+      "Tiago 2:17"
+    ],
+    "type": "choice",
+    "question": "Qual leitura teológica Tiago 2:17 sustenta sem distorcer o texto?",
+    "prompt": "Qual leitura teológica Tiago 2:17 sustenta sem distorcer o texto?",
+    "cue": "Qual leitura teológica Tiago 2:17 sustenta sem distorcer o texto?",
+    "feedbackCorrect": "Certo: fé salvadora não permanece sem fruto.",
+    "feedbackWrong": {
+      "b": "Tiago não ensina salvação por merecimento de obras.",
+      "c": "O texto não trata a fé como opinião sem efeito.",
+      "d": "O versículo não descreve a morte da fé como metáfora vazia."
+    },
+    "passageText": "Assim também a fé, se não tiver obras, é morta em si mesma.",
+    "trail": "tiago",
+    "section": "tg-01",
+    "id": "tiago-pro-tg-01-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "A fé que recebe a Cristo não permanece sem fruto."
+      },
+      {
+        "id": "b",
+        "text": "As obras compram o favor de Deus no lugar da fé."
+      },
+      {
+        "id": "c",
+        "text": "A fé é só convicção mental, sem implicação prática."
+      },
+      {
+        "id": "d",
+        "text": "Chamar a fé de morta é só recurso literário sem peso."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tiago 2:17",
+    "learningObjective": "Perceber que, em Tiago 2:17, a fé sem obras é morta em si mesma.",
+    "evidence": [
+      "Tiago 2:17"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Tiago 2:17?",
+    "prompt": "Qual sequência revela o sentido de Tiago 2:17?",
+    "cue": "Qual sequência revela o sentido de Tiago 2:17?",
+    "feedbackCorrect": "Certo: a fé, a falta de obras e a morte em si.",
+    "feedbackWrong": {
+      "b": "A condição vem antes do veredito.",
+      "c": "O veredito encerra o sentido, não o inicia."
+    },
+    "passageText": "Assim também a fé, se não tiver obras, é morta em si mesma.",
+    "trail": "tiago",
+    "section": "tg-01",
+    "id": "tiago-pro-tg-01-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Assim também a fé"
+      },
+      {
+        "id": "b",
+        "text": "se não tiver obras"
+      },
+      {
+        "id": "c",
+        "text": "é morta em si mesma"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tiago 2:17",
+    "learningObjective": "Perceber que, em Tiago 2:17, a fé sem obras é morta em si mesma.",
+    "evidence": [
+      "Tiago 2:17"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"___ também a fé, se não tiver obras, é morta em si mesma.\"",
+    "prompt": "Complete a frase: \"___ também a fé, se não tiver obras, é morta em si mesma.\"",
+    "cue": "Complete a frase: \"___ também a fé, se não tiver obras, é morta em si mesma.\"",
+    "feedbackCorrect": "Certo: o versículo abre com Assim também.",
+    "feedbackWrong": {
+      "b": "Morta é o veredito, não a abertura da comparação.",
+      "c": "Obras entra na condição, não no início da frase."
+    },
+    "passageText": "Assim também a fé, se não tiver obras, é morta em si mesma.",
+    "trail": "tiago",
+    "section": "tg-01",
+    "id": "tiago-pro-tg-01-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "Assim"
+      },
+      {
+        "id": "b",
+        "text": "morta"
+      },
+      {
+        "id": "c",
+        "text": "obras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "___ também a fé, se não tiver obras, é morta em si mesma."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tiago 2:17",
+    "learningObjective": "Perceber que, em Tiago 2:17, a fé sem obras é morta em si mesma.",
+    "evidence": [
+      "Tiago 2:17"
+    ],
+    "type": "connect",
+    "question": "O que Tiago 2:17 comunica que se liga a este contexto?",
+    "prompt": "O que Tiago 2:17 comunica que se liga a este contexto?",
+    "cue": "O que Tiago 2:17 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a fé aparece na vida, não só na boca.",
+    "feedbackWrong": {
+      "b": "O texto não trata de mérito que compra salvação.",
+      "c": "Tiago não descreve fé verdadeira como coisa invisível."
+    },
+    "passageText": "Assim também a fé, se não tiver obras, é morta em si mesma.",
+    "trail": "tiago",
+    "section": "tg-01",
+    "id": "tiago-pro-tg-01-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fé visível na vida"
+      },
+      {
+        "id": "b",
+        "text": "Mérito que compra salvação"
+      },
+      {
+        "id": "c",
+        "text": "Fé verdadeira sempre invisível"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Tiago 2:17",
+      "text": "Assim também a fé, se não tiver obras, é morta em si mesma."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Fé que trabalha: sem obras, a fé está morta em si mesma."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tiago 3:8–10",
+    "learningObjective": "Perceber que a mesma boca não deve bendizer a Deus e amaldiçoar quem leva a imagem dele.",
+    "evidence": [
+      "Tiago 3:8",
+      "Tiago 3:9",
+      "Tiago 3:10"
+    ],
+    "type": "true_false",
+    "question": "Não há homem que possa domar a língua.",
+    "prompt": "Não há homem que possa domar a língua.",
+    "cue": "Não há homem que possa domar a língua.",
+    "feedbackCorrect": "Certo: Tiago 3:8 diz exatamente isso.",
+    "feedbackWrong": {
+      "false": "Releia: a língua, não há homem que a possa domar."
+    },
+    "passageText": "porém a língua, não há homem que a possa domar; é um mal irrequieto, está cheia de veneno mortífero. Com ela, bendizemos ao Senhor e Pai; e, com ela, amaldiçoamos aos homens, que foram criados à imagem de Deus. Da mesma boca procede bênção e maldição. Não convém, meus irmãos, que isso assim seja.",
+    "trail": "tiago",
+    "section": "tg-02",
+    "id": "tiago-sem-tg-02-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tiago 3:8–10",
+    "learningObjective": "Perceber que a mesma boca não deve bendizer a Deus e amaldiçoar quem leva a imagem dele.",
+    "evidence": [
+      "Tiago 3:8",
+      "Tiago 3:9",
+      "Tiago 3:10"
+    ],
+    "type": "tap",
+    "question": "Em Tiago 3:8–10, toque a palavra que falta em \"porém a ___, não há homem que a possa domar\"?",
+    "prompt": "Em Tiago 3:8–10, toque a palavra que falta em \"porém a ___, não há homem que a possa domar\"?",
+    "cue": "Em Tiago 3:8–10, toque a palavra que falta em \"porém a ___, não há homem que a possa domar\"?",
+    "feedbackCorrect": "Exato: o sujeito indomável é a língua.",
+    "feedbackWrong": {
+      "b": "Homem é quem não consegue domar, não o que falta aqui.",
+      "c": "Veneno descreve o conteúdo, não o órgão da frase."
+    },
+    "passageText": "porém a língua, não há homem que a possa domar; é um mal irrequieto, está cheia de veneno mortífero. Com ela, bendizemos ao Senhor e Pai; e, com ela, amaldiçoamos aos homens, que foram criados à imagem de Deus. Da mesma boca procede bênção e maldição. Não convém, meus irmãos, que isso assim seja.",
+    "trail": "tiago",
+    "section": "tg-02",
+    "id": "tiago-sem-tg-02-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "língua"
+      },
+      {
+        "id": "b",
+        "text": "homem"
+      },
+      {
+        "id": "c",
+        "text": "veneno"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "porém a ___, não há homem que a possa domar"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tiago 3:8–10",
+    "learningObjective": "Perceber que a mesma boca não deve bendizer a Deus e amaldiçoar quem leva a imagem dele.",
+    "evidence": [
+      "Tiago 3:8",
+      "Tiago 3:9",
+      "Tiago 3:10"
+    ],
+    "type": "choice",
+    "question": "O que o texto diz que procede da mesma boca?",
+    "prompt": "O que o texto diz que procede da mesma boca?",
+    "cue": "O que o texto diz que procede da mesma boca?",
+    "feedbackCorrect": "Certo: da mesma boca procedem bênção e maldição.",
+    "feedbackWrong": {
+      "b": "O texto fala de bênção e maldição, não só de louvor.",
+      "c": "Não é silêncio: é bênção misturada com maldição.",
+      "d": "O versículo não menciona juramentos e votos."
+    },
+    "passageText": "porém a língua, não há homem que a possa domar; é um mal irrequieto, está cheia de veneno mortífero. Com ela, bendizemos ao Senhor e Pai; e, com ela, amaldiçoamos aos homens, que foram criados à imagem de Deus. Da mesma boca procede bênção e maldição. Não convém, meus irmãos, que isso assim seja.",
+    "trail": "tiago",
+    "section": "tg-02",
+    "id": "tiago-sem-tg-02-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bênção e maldição."
+      },
+      {
+        "id": "b",
+        "text": "Somente louvor ao Senhor."
+      },
+      {
+        "id": "c",
+        "text": "Silêncio completo dos irmãos."
+      },
+      {
+        "id": "d",
+        "text": "Juramentos e votos ao templo."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tiago 3:8–10",
+    "learningObjective": "Perceber que a mesma boca não deve bendizer a Deus e amaldiçoar quem leva a imagem dele.",
+    "evidence": [
+      "Tiago 3:8",
+      "Tiago 3:9",
+      "Tiago 3:10"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Tiago 3:8–10?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Tiago 3:8–10?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Tiago 3:8–10?",
+    "feedbackCorrect": "Certo: língua indomável, uso duplo, veredito.",
+    "feedbackWrong": {
+      "b": "O uso duplo da boca vem depois da língua indomável.",
+      "c": "O veredito fecha o trecho, não o abre."
+    },
+    "passageText": "porém a língua, não há homem que a possa domar; é um mal irrequieto, está cheia de veneno mortífero. Com ela, bendizemos ao Senhor e Pai; e, com ela, amaldiçoamos aos homens, que foram criados à imagem de Deus. Da mesma boca procede bênção e maldição. Não convém, meus irmãos, que isso assim seja.",
+    "trail": "tiago",
+    "section": "tg-02",
+    "id": "tiago-sem-tg-02-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "porém a língua, não há homem que a possa domar"
+      },
+      {
+        "id": "b",
+        "text": "Com ela, bendizemos ao Senhor e Pai; e, com ela, amaldiçoamos aos homens"
+      },
+      {
+        "id": "c",
+        "text": "Da mesma boca procede bênção e maldição"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tiago 3:8–10",
+    "learningObjective": "Perceber que a mesma boca não deve bendizer a Deus e amaldiçoar quem leva a imagem dele.",
+    "evidence": [
+      "Tiago 3:8",
+      "Tiago 3:9",
+      "Tiago 3:10"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"é um mal irrequieto, está cheia de ___ mortífero.\"",
+    "prompt": "Complete a frase: \"é um mal irrequieto, está cheia de ___ mortífero.\"",
+    "cue": "Complete a frase: \"é um mal irrequieto, está cheia de ___ mortífero.\"",
+    "feedbackCorrect": "Certo: a língua está cheia de veneno mortífero.",
+    "feedbackWrong": {
+      "b": "Bênção aparece depois, não nesta descrição da língua.",
+      "c": "Boca entra no trecho seguinte, não nesta lacuna."
+    },
+    "passageText": "porém a língua, não há homem que a possa domar; é um mal irrequieto, está cheia de veneno mortífero. Com ela, bendizemos ao Senhor e Pai; e, com ela, amaldiçoamos aos homens, que foram criados à imagem de Deus. Da mesma boca procede bênção e maldição. Não convém, meus irmãos, que isso assim seja.",
+    "trail": "tiago",
+    "section": "tg-02",
+    "id": "tiago-sem-tg-02-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "veneno"
+      },
+      {
+        "id": "b",
+        "text": "bênção"
+      },
+      {
+        "id": "c",
+        "text": "boca"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "é um mal irrequieto, está cheia de ___ mortífero."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tiago 3:8–10",
+    "learningObjective": "Perceber que a mesma boca não deve bendizer a Deus e amaldiçoar quem leva a imagem dele.",
+    "evidence": [
+      "Tiago 3:8",
+      "Tiago 3:9",
+      "Tiago 3:10"
+    ],
+    "type": "connect",
+    "question": "O que Tiago 3:8–10 comunica que se liga a este contexto?",
+    "prompt": "O que Tiago 3:8–10 comunica que se liga a este contexto?",
+    "cue": "O que Tiago 3:8–10 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a mesma boca não deve misturar os dois.",
+    "feedbackWrong": {
+      "b": "O texto não trata a língua como coisa fácil de controlar.",
+      "c": "Tiago não aprova amaldiçoar a imagem de Deus."
+    },
+    "passageText": "porém a língua, não há homem que a possa domar; é um mal irrequieto, está cheia de veneno mortífero. Com ela, bendizemos ao Senhor e Pai; e, com ela, amaldiçoamos aos homens, que foram criados à imagem de Deus. Da mesma boca procede bênção e maldição. Não convém, meus irmãos, que isso assim seja.",
+    "trail": "tiago",
+    "section": "tg-02",
+    "id": "tiago-sem-tg-02-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Boca dupla não convém"
+      },
+      {
+        "id": "b",
+        "text": "Língua fácil de domar"
+      },
+      {
+        "id": "c",
+        "text": "Maldição justificada aos homens"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Tiago 3:9–10",
+      "text": "Com ela, bendizemos ao Senhor e Pai; e, com ela, amaldiçoamos aos homens, que foram criados à imagem de Deus. Da mesma boca procede bênção e maldição."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Palavras e sabedoria: a mesma boca não pode bendizer a Deus e amaldiçoar a imagem dele."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tiago 3:8–10",
+    "learningObjective": "Perceber que a mesma boca não deve bendizer a Deus e amaldiçoar quem leva a imagem dele.",
+    "evidence": [
+      "Tiago 3:8",
+      "Tiago 3:9",
+      "Tiago 3:10"
+    ],
+    "type": "true_false",
+    "question": "Tiago 3:8–10 afirma que é conveniente bendizer a Deus e amaldiçoar homens com a mesma boca.",
+    "prompt": "Tiago 3:8–10 afirma que é conveniente bendizer a Deus e amaldiçoar homens com a mesma boca.",
+    "cue": "Tiago 3:8–10 afirma que é conveniente bendizer a Deus e amaldiçoar homens com a mesma boca.",
+    "feedbackCorrect": "Certo: o texto diz que isso não convém.",
+    "feedbackWrong": {
+      "true": "O trecho fecha: não convém que isso assim seja."
+    },
+    "passageText": "porém a língua, não há homem que a possa domar; é um mal irrequieto, está cheia de veneno mortífero. Com ela, bendizemos ao Senhor e Pai; e, com ela, amaldiçoamos aos homens, que foram criados à imagem de Deus. Da mesma boca procede bênção e maldição. Não convém, meus irmãos, que isso assim seja.",
+    "trail": "tiago",
+    "section": "tg-02",
+    "id": "tiago-cam-tg-02-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tiago 3:8–10",
+    "learningObjective": "Perceber que a mesma boca não deve bendizer a Deus e amaldiçoar quem leva a imagem dele.",
+    "evidence": [
+      "Tiago 3:8",
+      "Tiago 3:9",
+      "Tiago 3:10"
+    ],
+    "type": "tap",
+    "question": "Em Tiago 3:8–10, toque a palavra que falta em \"que foram criados à ___ de Deus\"?",
+    "prompt": "Em Tiago 3:8–10, toque a palavra que falta em \"que foram criados à ___ de Deus\"?",
+    "cue": "Em Tiago 3:8–10, toque a palavra que falta em \"que foram criados à ___ de Deus\"?",
+    "feedbackCorrect": "Exato: os homens foram criados à imagem de Deus.",
+    "feedbackWrong": {
+      "b": "Língua é o instrumento, não o que os homens carregam.",
+      "c": "Boca é de onde procede a fala, não esta lacuna."
+    },
+    "passageText": "porém a língua, não há homem que a possa domar; é um mal irrequieto, está cheia de veneno mortífero. Com ela, bendizemos ao Senhor e Pai; e, com ela, amaldiçoamos aos homens, que foram criados à imagem de Deus. Da mesma boca procede bênção e maldição. Não convém, meus irmãos, que isso assim seja.",
+    "trail": "tiago",
+    "section": "tg-02",
+    "id": "tiago-cam-tg-02-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "imagem"
+      },
+      {
+        "id": "b",
+        "text": "língua"
+      },
+      {
+        "id": "c",
+        "text": "boca"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "que foram criados à ___ de Deus"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tiago 3:8–10",
+    "learningObjective": "Perceber que a mesma boca não deve bendizer a Deus e amaldiçoar quem leva a imagem dele.",
+    "evidence": [
+      "Tiago 3:8",
+      "Tiago 3:9",
+      "Tiago 3:10"
+    ],
+    "type": "choice",
+    "question": "Por que amaldiçoar homens se choca com bendizer a Deus neste trecho?",
+    "prompt": "Por que amaldiçoar homens se choca com bendizer a Deus neste trecho?",
+    "cue": "Por que amaldiçoar homens se choca com bendizer a Deus neste trecho?",
+    "feedbackCorrect": "Certo: os homens foram criados à imagem de Deus.",
+    "feedbackWrong": {
+      "b": "O texto não trata a maldição como direito da língua.",
+      "c": "Tiago não diz que Deus ignora o que a boca faz.",
+      "d": "O problema não é volume de palavras, e sim a contradição."
+    },
+    "passageText": "porém a língua, não há homem que a possa domar; é um mal irrequieto, está cheia de veneno mortífero. Com ela, bendizemos ao Senhor e Pai; e, com ela, amaldiçoamos aos homens, que foram criados à imagem de Deus. Da mesma boca procede bênção e maldição. Não convém, meus irmãos, que isso assim seja.",
+    "trail": "tiago",
+    "section": "tg-02",
+    "id": "tiago-cam-tg-02-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque esses homens foram criados à imagem de Deus."
+      },
+      {
+        "id": "b",
+        "text": "Porque a maldição é o uso próprio da língua."
+      },
+      {
+        "id": "c",
+        "text": "Porque Deus não se importa com o que a boca diz."
+      },
+      {
+        "id": "d",
+        "text": "Porque o problema é só falar demais, não o conteúdo."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tiago 3:8–10",
+    "learningObjective": "Perceber que a mesma boca não deve bendizer a Deus e amaldiçoar quem leva a imagem dele.",
+    "evidence": [
+      "Tiago 3:8",
+      "Tiago 3:9",
+      "Tiago 3:10"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Tiago 3:8–10?",
+    "prompt": "Como se encadeiam os eventos de Tiago 3:8–10?",
+    "cue": "Como se encadeiam os eventos de Tiago 3:8–10?",
+    "feedbackCorrect": "Certo: bênção, maldição e o juízo sobre a boca.",
+    "feedbackWrong": {
+      "b": "A maldição vem depois da bênção no texto.",
+      "c": "O juízo sobre a boca fecha o trecho."
+    },
+    "passageText": "porém a língua, não há homem que a possa domar; é um mal irrequieto, está cheia de veneno mortífero. Com ela, bendizemos ao Senhor e Pai; e, com ela, amaldiçoamos aos homens, que foram criados à imagem de Deus. Da mesma boca procede bênção e maldição. Não convém, meus irmãos, que isso assim seja.",
+    "trail": "tiago",
+    "section": "tg-02",
+    "id": "tiago-cam-tg-02-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Com ela, bendizemos ao Senhor e Pai"
+      },
+      {
+        "id": "b",
+        "text": "e, com ela, amaldiçoamos aos homens"
+      },
+      {
+        "id": "c",
+        "text": "Da mesma boca procede bênção e maldição"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tiago 3:8–10",
+    "learningObjective": "Perceber que a mesma boca não deve bendizer a Deus e amaldiçoar quem leva a imagem dele.",
+    "evidence": [
+      "Tiago 3:8",
+      "Tiago 3:9",
+      "Tiago 3:10"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Da mesma ___ procede bênção e maldição.\"",
+    "prompt": "Complete a frase: \"Da mesma ___ procede bênção e maldição.\"",
+    "cue": "Complete a frase: \"Da mesma ___ procede bênção e maldição.\"",
+    "feedbackCorrect": "Certo: da mesma boca procedem as duas coisas.",
+    "feedbackWrong": {
+      "b": "Língua aparece antes; aqui o texto diz boca.",
+      "c": "Pai é a quem se bendiz, não a origem desta frase."
+    },
+    "passageText": "porém a língua, não há homem que a possa domar; é um mal irrequieto, está cheia de veneno mortífero. Com ela, bendizemos ao Senhor e Pai; e, com ela, amaldiçoamos aos homens, que foram criados à imagem de Deus. Da mesma boca procede bênção e maldição. Não convém, meus irmãos, que isso assim seja.",
+    "trail": "tiago",
+    "section": "tg-02",
+    "id": "tiago-cam-tg-02-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "boca"
+      },
+      {
+        "id": "b",
+        "text": "língua"
+      },
+      {
+        "id": "c",
+        "text": "Pai"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Da mesma ___ procede bênção e maldição."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tiago 3:8–10",
+    "learningObjective": "Perceber que a mesma boca não deve bendizer a Deus e amaldiçoar quem leva a imagem dele.",
+    "evidence": [
+      "Tiago 3:8",
+      "Tiago 3:9",
+      "Tiago 3:10"
+    ],
+    "type": "connect",
+    "question": "O que Tiago 3:8–10 comunica que se liga a este contexto?",
+    "prompt": "O que Tiago 3:8–10 comunica que se liga a este contexto?",
+    "cue": "O que Tiago 3:8–10 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: amaldiçoar fere a imagem de Deus.",
+    "feedbackWrong": {
+      "b": "O texto não trata a fala como território neutro.",
+      "c": "Tiago não descreve a língua como já plenamente domada."
+    },
+    "passageText": "porém a língua, não há homem que a possa domar; é um mal irrequieto, está cheia de veneno mortífero. Com ela, bendizemos ao Senhor e Pai; e, com ela, amaldiçoamos aos homens, que foram criados à imagem de Deus. Da mesma boca procede bênção e maldição. Não convém, meus irmãos, que isso assim seja.",
+    "trail": "tiago",
+    "section": "tg-02",
+    "id": "tiago-cam-tg-02-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Maldição fere a imagem"
+      },
+      {
+        "id": "b",
+        "text": "Palavras sem peso moral"
+      },
+      {
+        "id": "c",
+        "text": "Língua já plenamente domada"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Tiago 3:9",
+      "text": "Com ela, bendizemos ao Senhor e Pai; e, com ela, amaldiçoamos aos homens, que foram criados à imagem de Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Palavras e sabedoria: a mesma boca não pode bendizer a Deus e amaldiçoar a imagem dele."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tiago 3:8–10",
+    "learningObjective": "Perceber que a mesma boca não deve bendizer a Deus e amaldiçoar quem leva a imagem dele.",
+    "evidence": [
+      "Tiago 3:8",
+      "Tiago 3:9",
+      "Tiago 3:10"
+    ],
+    "type": "true_false",
+    "question": "Amaldiçoar quem foi criado à imagem de Deus contradiz o louvor ao Senhor e Pai, segundo Tiago 3:8–10.",
+    "prompt": "Amaldiçoar quem foi criado à imagem de Deus contradiz o louvor ao Senhor e Pai, segundo Tiago 3:8–10.",
+    "cue": "Amaldiçoar quem foi criado à imagem de Deus contradiz o louvor ao Senhor e Pai, segundo Tiago 3:8–10.",
+    "feedbackCorrect": "Certo: a mesma boca não deve fazer as duas coisas.",
+    "feedbackWrong": {
+      "false": "O texto une imagem de Deus e o ‘não convém’."
+    },
+    "passageText": "porém a língua, não há homem que a possa domar; é um mal irrequieto, está cheia de veneno mortífero. Com ela, bendizemos ao Senhor e Pai; e, com ela, amaldiçoamos aos homens, que foram criados à imagem de Deus. Da mesma boca procede bênção e maldição. Não convém, meus irmãos, que isso assim seja.",
+    "trail": "tiago",
+    "section": "tg-02",
+    "id": "tiago-pro-tg-02-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tiago 3:8–10",
+    "learningObjective": "Perceber que a mesma boca não deve bendizer a Deus e amaldiçoar quem leva a imagem dele.",
+    "evidence": [
+      "Tiago 3:8",
+      "Tiago 3:9",
+      "Tiago 3:10"
+    ],
+    "type": "tap",
+    "question": "Em Tiago 3:8–10, toque a palavra que falta em \"Da mesma boca procede bênção e ___.\"?",
+    "prompt": "Em Tiago 3:8–10, toque a palavra que falta em \"Da mesma boca procede bênção e ___.\"?",
+    "cue": "Em Tiago 3:8–10, toque a palavra que falta em \"Da mesma boca procede bênção e ___.\"?",
+    "feedbackCorrect": "Exato: bênção e maldição saem da mesma boca.",
+    "feedbackWrong": {
+      "b": "Veneno descreve a língua antes, não este par.",
+      "c": "Irmãos é o vocativo final, não o que procede da boca."
+    },
+    "passageText": "porém a língua, não há homem que a possa domar; é um mal irrequieto, está cheia de veneno mortífero. Com ela, bendizemos ao Senhor e Pai; e, com ela, amaldiçoamos aos homens, que foram criados à imagem de Deus. Da mesma boca procede bênção e maldição. Não convém, meus irmãos, que isso assim seja.",
+    "trail": "tiago",
+    "section": "tg-02",
+    "id": "tiago-pro-tg-02-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "maldição"
+      },
+      {
+        "id": "b",
+        "text": "veneno"
+      },
+      {
+        "id": "c",
+        "text": "irmãos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Da mesma boca procede bênção e ___."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tiago 3:8–10",
+    "learningObjective": "Perceber que a mesma boca não deve bendizer a Deus e amaldiçoar quem leva a imagem dele.",
+    "evidence": [
+      "Tiago 3:8",
+      "Tiago 3:9",
+      "Tiago 3:10"
+    ],
+    "type": "choice",
+    "question": "Qual sentido Tiago 3:8–10 prepara no leitor sobre a fala?",
+    "prompt": "Qual sentido Tiago 3:8–10 prepara no leitor sobre a fala?",
+    "cue": "Qual sentido Tiago 3:8–10 prepara no leitor sobre a fala?",
+    "feedbackCorrect": "Certo: louvar a Deus e ferir sua imagem não combinam.",
+    "feedbackWrong": {
+      "b": "O texto não trata a língua como detalhe menor.",
+      "c": "Tiago não autoriza maldição se o culto estiver correto.",
+      "d": "O trecho não promete domínio humano fácil da língua."
+    },
+    "passageText": "porém a língua, não há homem que a possa domar; é um mal irrequieto, está cheia de veneno mortífero. Com ela, bendizemos ao Senhor e Pai; e, com ela, amaldiçoamos aos homens, que foram criados à imagem de Deus. Da mesma boca procede bênção e maldição. Não convém, meus irmãos, que isso assim seja.",
+    "trail": "tiago",
+    "section": "tg-02",
+    "id": "tiago-pro-tg-02-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Louvar a Deus e ferir sua imagem é incoerência espiritual."
+      },
+      {
+        "id": "b",
+        "text": "A fala é secundária; só o culto formal importa."
+      },
+      {
+        "id": "c",
+        "text": "Amaldiçoar é lícito se o louvor a Deus estiver correto."
+      },
+      {
+        "id": "d",
+        "text": "Qualquer homem pode, por esforço, domar a língua sozinho."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tiago 3:8–10",
+    "learningObjective": "Perceber que a mesma boca não deve bendizer a Deus e amaldiçoar quem leva a imagem dele.",
+    "evidence": [
+      "Tiago 3:8",
+      "Tiago 3:9",
+      "Tiago 3:10"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Tiago 3:8–10?",
+    "prompt": "Qual sequência revela o sentido de Tiago 3:8–10?",
+    "cue": "Qual sequência revela o sentido de Tiago 3:8–10?",
+    "feedbackCorrect": "Certo: imagem de Deus, boca dupla, recusa final.",
+    "feedbackWrong": {
+      "b": "A boca dupla vem depois da menção à imagem.",
+      "c": "O ‘não convém’ encerra o sentido do trecho."
+    },
+    "passageText": "porém a língua, não há homem que a possa domar; é um mal irrequieto, está cheia de veneno mortífero. Com ela, bendizemos ao Senhor e Pai; e, com ela, amaldiçoamos aos homens, que foram criados à imagem de Deus. Da mesma boca procede bênção e maldição. Não convém, meus irmãos, que isso assim seja.",
+    "trail": "tiago",
+    "section": "tg-02",
+    "id": "tiago-pro-tg-02-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "que foram criados à imagem de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Da mesma boca procede bênção e maldição"
+      },
+      {
+        "id": "c",
+        "text": "Não convém, meus irmãos, que isso assim seja"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tiago 3:8–10",
+    "learningObjective": "Perceber que a mesma boca não deve bendizer a Deus e amaldiçoar quem leva a imagem dele.",
+    "evidence": [
+      "Tiago 3:8",
+      "Tiago 3:9",
+      "Tiago 3:10"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Não ___, meus irmãos, que isso assim seja.\"",
+    "prompt": "Complete a frase: \"Não ___, meus irmãos, que isso assim seja.\"",
+    "cue": "Complete a frase: \"Não ___, meus irmãos, que isso assim seja.\"",
+    "feedbackCorrect": "Certo: não convém que a boca viva essa duplicidade.",
+    "feedbackWrong": {
+      "b": "Bendizemos descreve um uso da língua, não este juízo.",
+      "c": "Amaldiçoamos é o outro uso, não o verbo desta frase."
+    },
+    "passageText": "porém a língua, não há homem que a possa domar; é um mal irrequieto, está cheia de veneno mortífero. Com ela, bendizemos ao Senhor e Pai; e, com ela, amaldiçoamos aos homens, que foram criados à imagem de Deus. Da mesma boca procede bênção e maldição. Não convém, meus irmãos, que isso assim seja.",
+    "trail": "tiago",
+    "section": "tg-02",
+    "id": "tiago-pro-tg-02-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "convém"
+      },
+      {
+        "id": "b",
+        "text": "bendizemos"
+      },
+      {
+        "id": "c",
+        "text": "amaldiçoamos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Não ___, meus irmãos, que isso assim seja."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tiago 3:8–10",
+    "learningObjective": "Perceber que a mesma boca não deve bendizer a Deus e amaldiçoar quem leva a imagem dele.",
+    "evidence": [
+      "Tiago 3:8",
+      "Tiago 3:9",
+      "Tiago 3:10"
+    ],
+    "type": "connect",
+    "question": "O que Tiago 3:8–10 comunica que se liga a este contexto?",
+    "prompt": "O que Tiago 3:8–10 comunica que se liga a este contexto?",
+    "cue": "O que Tiago 3:8–10 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: sabedoria não bendiz e amaldiçoa juntos.",
+    "feedbackWrong": {
+      "b": "O texto não trata a incoerência da boca como virtude.",
+      "c": "Tiago não reduz o problema a um talento de oratória."
+    },
+    "passageText": "porém a língua, não há homem que a possa domar; é um mal irrequieto, está cheia de veneno mortífero. Com ela, bendizemos ao Senhor e Pai; e, com ela, amaldiçoamos aos homens, que foram criados à imagem de Deus. Da mesma boca procede bênção e maldição. Não convém, meus irmãos, que isso assim seja.",
+    "trail": "tiago",
+    "section": "tg-02",
+    "id": "tiago-pro-tg-02-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sabedoria sem boca dupla"
+      },
+      {
+        "id": "b",
+        "text": "Incoerência como sinal de zelo"
+      },
+      {
+        "id": "c",
+        "text": "Dom da oratória sem ética"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Tiago 3:10",
+      "text": "Da mesma boca procede bênção e maldição. Não convém, meus irmãos, que isso assim seja."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Palavras e sabedoria: a mesma boca não pode bendizer a Deus e amaldiçoar a imagem dele."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tiago 5:16",
+    "learningObjective": "Perceber que confessar e orar uns pelos outros se ligam à cura, e que a súplica fervorosa do justo muito pode.",
+    "evidence": [
+      "Tiago 5:16"
+    ],
+    "type": "true_false",
+    "question": "Tiago manda confessar os pecados uns aos outros e orar uns pelos outros, para serem curados.",
+    "prompt": "Tiago manda confessar os pecados uns aos outros e orar uns pelos outros, para serem curados.",
+    "cue": "Tiago manda confessar os pecados uns aos outros e orar uns pelos outros, para serem curados.",
+    "feedbackCorrect": "Certo: é o que Tiago 5:16 ordena.",
+    "feedbackWrong": {
+      "false": "Releia: confessai e orai uns pelos outros, para serdes curados."
+    },
+    "passageText": "Confessai os vossos pecados uns aos outros e orai uns pelos outros, para serdes curados. Muito pode a súplica fervorosa do justo.",
+    "trail": "tiago",
+    "section": "tg-03",
+    "id": "tiago-sem-tg-03-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tiago 5:16",
+    "learningObjective": "Perceber que confessar e orar uns pelos outros se ligam à cura, e que a súplica fervorosa do justo muito pode.",
+    "evidence": [
+      "Tiago 5:16"
+    ],
+    "type": "tap",
+    "question": "Em Tiago 5:16, toque a palavra que falta em \"Confessai os vossos ___ uns aos outros\"?",
+    "prompt": "Em Tiago 5:16, toque a palavra que falta em \"Confessai os vossos ___ uns aos outros\"?",
+    "cue": "Em Tiago 5:16, toque a palavra que falta em \"Confessai os vossos ___ uns aos outros\"?",
+    "feedbackCorrect": "Exato: o que se confessa são os pecados.",
+    "feedbackWrong": {
+      "b": "Justo aparece no fim, não nesta lacuna.",
+      "c": "Súplica descreve a oração, não o que se confessa."
+    },
+    "passageText": "Confessai os vossos pecados uns aos outros e orai uns pelos outros, para serdes curados. Muito pode a súplica fervorosa do justo.",
+    "trail": "tiago",
+    "section": "tg-03",
+    "id": "tiago-sem-tg-03-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "pecados"
+      },
+      {
+        "id": "b",
+        "text": "justo"
+      },
+      {
+        "id": "c",
+        "text": "súplica"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Confessai os vossos ___ uns aos outros"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tiago 5:16",
+    "learningObjective": "Perceber que confessar e orar uns pelos outros se ligam à cura, e que a súplica fervorosa do justo muito pode.",
+    "evidence": [
+      "Tiago 5:16"
+    ],
+    "type": "choice",
+    "question": "O que Tiago 5:16 diz que muito pode?",
+    "prompt": "O que Tiago 5:16 diz que muito pode?",
+    "cue": "O que Tiago 5:16 diz que muito pode?",
+    "feedbackCorrect": "Certo: muito pode a súplica fervorosa do justo.",
+    "feedbackWrong": {
+      "b": "O texto destaca a súplica do justo, não o silêncio.",
+      "c": "Não é a queixa isolada que o versículo exalta.",
+      "d": "O texto não fala de voto secreto sem oração."
+    },
+    "passageText": "Confessai os vossos pecados uns aos outros e orai uns pelos outros, para serdes curados. Muito pode a súplica fervorosa do justo.",
+    "trail": "tiago",
+    "section": "tg-03",
+    "id": "tiago-sem-tg-03-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "A súplica fervorosa do justo."
+      },
+      {
+        "id": "b",
+        "text": "O silêncio absoluto da igreja."
+      },
+      {
+        "id": "c",
+        "text": "A queixa isolada de cada um."
+      },
+      {
+        "id": "d",
+        "text": "O voto secreto sem intercessão."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tiago 5:16",
+    "learningObjective": "Perceber que confessar e orar uns pelos outros se ligam à cura, e que a súplica fervorosa do justo muito pode.",
+    "evidence": [
+      "Tiago 5:16"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Tiago 5:16?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Tiago 5:16?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Tiago 5:16?",
+    "feedbackCorrect": "Certo: confessar, orar para cura, súplica do justo.",
+    "feedbackWrong": {
+      "b": "Orar para serem curados vem depois de confessar.",
+      "c": "A súplica do justo fecha o versículo."
+    },
+    "passageText": "Confessai os vossos pecados uns aos outros e orai uns pelos outros, para serdes curados. Muito pode a súplica fervorosa do justo.",
+    "trail": "tiago",
+    "section": "tg-03",
+    "id": "tiago-sem-tg-03-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Confessai os vossos pecados uns aos outros"
+      },
+      {
+        "id": "b",
+        "text": "e orai uns pelos outros, para serdes curados"
+      },
+      {
+        "id": "c",
+        "text": "Muito pode a súplica fervorosa do justo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tiago 5:16",
+    "learningObjective": "Perceber que confessar e orar uns pelos outros se ligam à cura, e que a súplica fervorosa do justo muito pode.",
+    "evidence": [
+      "Tiago 5:16"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Confessai os vossos pecados uns aos outros e orai uns pelos outros, para serdes ___.\"",
+    "prompt": "Complete a frase: \"Confessai os vossos pecados uns aos outros e orai uns pelos outros, para serdes ___.\"",
+    "cue": "Complete a frase: \"Confessai os vossos pecados uns aos outros e orai uns pelos outros, para serdes ___.\"",
+    "feedbackCorrect": "Certo: o fim declarado é serdes curados.",
+    "feedbackWrong": {
+      "b": "Pecados é o que se confessa, não o resultado.",
+      "c": "Justo qualifica quem suplica, não esta lacuna."
+    },
+    "passageText": "Confessai os vossos pecados uns aos outros e orai uns pelos outros, para serdes curados. Muito pode a súplica fervorosa do justo.",
+    "trail": "tiago",
+    "section": "tg-03",
+    "id": "tiago-sem-tg-03-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "curados"
+      },
+      {
+        "id": "b",
+        "text": "pecados"
+      },
+      {
+        "id": "c",
+        "text": "justo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Confessai os vossos pecados uns aos outros e orai uns pelos outros, para serdes ___."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tiago 5:16",
+    "learningObjective": "Perceber que confessar e orar uns pelos outros se ligam à cura, e que a súplica fervorosa do justo muito pode.",
+    "evidence": [
+      "Tiago 5:16"
+    ],
+    "type": "connect",
+    "question": "O que Tiago 5:16 comunica que se liga a este contexto?",
+    "prompt": "O que Tiago 5:16 comunica que se liga a este contexto?",
+    "cue": "O que Tiago 5:16 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: confessar e orar se encontram na súplica.",
+    "feedbackWrong": {
+      "b": "O texto não descreve uma fé isolada e muda.",
+      "c": "Tiago não trata a oração como gesto sem efeito."
+    },
+    "passageText": "Confessai os vossos pecados uns aos outros e orai uns pelos outros, para serdes curados. Muito pode a súplica fervorosa do justo.",
+    "trail": "tiago",
+    "section": "tg-03",
+    "id": "tiago-sem-tg-03-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Confissão e oração mútuas"
+      },
+      {
+        "id": "b",
+        "text": "Fé isolada sem fala"
+      },
+      {
+        "id": "c",
+        "text": "Súplica sem qualquer efeito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Tiago 5:16",
+      "text": "Confessai os vossos pecados uns aos outros e orai uns pelos outros, para serdes curados. Muito pode a súplica fervorosa do justo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Oração, pobres e paciência se encontram na súplica: confessar, orar, e o justo é ouvido."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tiago 5:16",
+    "learningObjective": "Perceber que confessar e orar uns pelos outros se ligam à cura, e que a súplica fervorosa do justo muito pode.",
+    "evidence": [
+      "Tiago 5:16"
+    ],
+    "type": "true_false",
+    "question": "Em Tiago 5:16, a cura está ligada só à confissão privada, sem oração uns pelos outros.",
+    "prompt": "Em Tiago 5:16, a cura está ligada só à confissão privada, sem oração uns pelos outros.",
+    "cue": "Em Tiago 5:16, a cura está ligada só à confissão privada, sem oração uns pelos outros.",
+    "feedbackCorrect": "Certo: o texto une confessar e orar uns pelos outros.",
+    "feedbackWrong": {
+      "true": "O versículo manda confessar e orar uns pelos outros."
+    },
+    "passageText": "Confessai os vossos pecados uns aos outros e orai uns pelos outros, para serdes curados. Muito pode a súplica fervorosa do justo.",
+    "trail": "tiago",
+    "section": "tg-03",
+    "id": "tiago-cam-tg-03-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tiago 5:16",
+    "learningObjective": "Perceber que confessar e orar uns pelos outros se ligam à cura, e que a súplica fervorosa do justo muito pode.",
+    "evidence": [
+      "Tiago 5:16"
+    ],
+    "type": "tap",
+    "question": "Em Tiago 5:16, toque a palavra que falta em \"e ___ uns pelos outros, para serdes curados\"?",
+    "prompt": "Em Tiago 5:16, toque a palavra que falta em \"e ___ uns pelos outros, para serdes curados\"?",
+    "cue": "Em Tiago 5:16, toque a palavra que falta em \"e ___ uns pelos outros, para serdes curados\"?",
+    "feedbackCorrect": "Exato: além de confessar, é preciso orar.",
+    "feedbackWrong": {
+      "b": "Confessai abre o versículo, não esta lacuna.",
+      "c": "Curados é o resultado, não o verbo pedido aqui."
+    },
+    "passageText": "Confessai os vossos pecados uns aos outros e orai uns pelos outros, para serdes curados. Muito pode a súplica fervorosa do justo.",
+    "trail": "tiago",
+    "section": "tg-03",
+    "id": "tiago-cam-tg-03-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "orai"
+      },
+      {
+        "id": "b",
+        "text": "Confessai"
+      },
+      {
+        "id": "c",
+        "text": "curados"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "e ___ uns pelos outros, para serdes curados"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tiago 5:16",
+    "learningObjective": "Perceber que confessar e orar uns pelos outros se ligam à cura, e que a súplica fervorosa do justo muito pode.",
+    "evidence": [
+      "Tiago 5:16"
+    ],
+    "type": "choice",
+    "question": "Como se encadeiam confissão, oração e cura em Tiago 5:16?",
+    "prompt": "Como se encadeiam confissão, oração e cura em Tiago 5:16?",
+    "cue": "Como se encadeiam confissão, oração e cura em Tiago 5:16?",
+    "feedbackCorrect": "Certo: confessar e orar uns pelos outros visam a cura.",
+    "feedbackWrong": {
+      "b": "O texto não trata a cura como independente da oração.",
+      "c": "A súplica do justo não é apresentada como inútil.",
+      "d": "O versículo não descreve um rito solitário e mudo."
+    },
+    "passageText": "Confessai os vossos pecados uns aos outros e orai uns pelos outros, para serdes curados. Muito pode a súplica fervorosa do justo.",
+    "trail": "tiago",
+    "section": "tg-03",
+    "id": "tiago-cam-tg-03-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Confessar e orar uns pelos outros visam a cura."
+      },
+      {
+        "id": "b",
+        "text": "A cura acontece à parte de qualquer intercessão."
+      },
+      {
+        "id": "c",
+        "text": "A súplica do justo é mencionada só para ser ignorada."
+      },
+      {
+        "id": "d",
+        "text": "Tudo se resolve no silêncio, sem vida em comum."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tiago 5:16",
+    "learningObjective": "Perceber que confessar e orar uns pelos outros se ligam à cura, e que a súplica fervorosa do justo muito pode.",
+    "evidence": [
+      "Tiago 5:16"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Tiago 5:16?",
+    "prompt": "Como se encadeiam os eventos de Tiago 5:16?",
+    "cue": "Como se encadeiam os eventos de Tiago 5:16?",
+    "feedbackCorrect": "Certo: pecados confessados, oração mútua, poder da súplica.",
+    "feedbackWrong": {
+      "b": "Orar uns pelos outros vem depois de confessar.",
+      "c": "A súplica do justo conclui o encadeamento."
+    },
+    "passageText": "Confessai os vossos pecados uns aos outros e orai uns pelos outros, para serdes curados. Muito pode a súplica fervorosa do justo.",
+    "trail": "tiago",
+    "section": "tg-03",
+    "id": "tiago-cam-tg-03-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Confessai os vossos pecados uns aos outros"
+      },
+      {
+        "id": "b",
+        "text": "e orai uns pelos outros, para serdes curados"
+      },
+      {
+        "id": "c",
+        "text": "Muito pode a súplica fervorosa do justo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tiago 5:16",
+    "learningObjective": "Perceber que confessar e orar uns pelos outros se ligam à cura, e que a súplica fervorosa do justo muito pode.",
+    "evidence": [
+      "Tiago 5:16"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Muito pode a ___ fervorosa do justo.\"",
+    "prompt": "Complete a frase: \"Muito pode a ___ fervorosa do justo.\"",
+    "cue": "Complete a frase: \"Muito pode a ___ fervorosa do justo.\"",
+    "feedbackCorrect": "Certo: o que muito pode é a súplica fervorosa.",
+    "feedbackWrong": {
+      "b": "Pecados é o que se confessa, não o que muito pode.",
+      "c": "Curados é o resultado, não o sujeito desta frase."
+    },
+    "passageText": "Confessai os vossos pecados uns aos outros e orai uns pelos outros, para serdes curados. Muito pode a súplica fervorosa do justo.",
+    "trail": "tiago",
+    "section": "tg-03",
+    "id": "tiago-cam-tg-03-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "súplica"
+      },
+      {
+        "id": "b",
+        "text": "pecados"
+      },
+      {
+        "id": "c",
+        "text": "curados"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Muito pode a ___ fervorosa do justo."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tiago 5:16",
+    "learningObjective": "Perceber que confessar e orar uns pelos outros se ligam à cura, e que a súplica fervorosa do justo muito pode.",
+    "evidence": [
+      "Tiago 5:16"
+    ],
+    "type": "connect",
+    "question": "O que Tiago 5:16 comunica que se liga a este contexto?",
+    "prompt": "O que Tiago 5:16 comunica que se liga a este contexto?",
+    "cue": "O que Tiago 5:16 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a comunidade ora e o justo é ouvido.",
+    "feedbackWrong": {
+      "b": "O texto não descreve uma vida cristã autossuficiente.",
+      "c": "Tiago não trata a confissão como espetáculo vazio."
+    },
+    "passageText": "Confessai os vossos pecados uns aos outros e orai uns pelos outros, para serdes curados. Muito pode a súplica fervorosa do justo.",
+    "trail": "tiago",
+    "section": "tg-03",
+    "id": "tiago-cam-tg-03-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Comunidade que ora e confessa"
+      },
+      {
+        "id": "b",
+        "text": "Independência sem irmãos"
+      },
+      {
+        "id": "c",
+        "text": "Confissão como espetáculo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Tiago 5:16",
+      "text": "Confessai os vossos pecados uns aos outros e orai uns pelos outros, para serdes curados."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Oração, pobres e paciência se encontram na súplica: confessar, orar, e o justo é ouvido."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tiago 5:16",
+    "learningObjective": "Perceber que confessar e orar uns pelos outros se ligam à cura, e que a súplica fervorosa do justo muito pode.",
+    "evidence": [
+      "Tiago 5:16"
+    ],
+    "type": "true_false",
+    "question": "Tiago 5:16 apresenta a súplica fervorosa do justo como eficaz, unida à confissão e à oração mútuas.",
+    "prompt": "Tiago 5:16 apresenta a súplica fervorosa do justo como eficaz, unida à confissão e à oração mútuas.",
+    "cue": "Tiago 5:16 apresenta a súplica fervorosa do justo como eficaz, unida à confissão e à oração mútuas.",
+    "feedbackCorrect": "Certo: o justo é ouvido nesse tecido comunitário.",
+    "feedbackWrong": {
+      "false": "O texto une confissão, oração e o poder da súplica."
+    },
+    "passageText": "Confessai os vossos pecados uns aos outros e orai uns pelos outros, para serdes curados. Muito pode a súplica fervorosa do justo.",
+    "trail": "tiago",
+    "section": "tg-03",
+    "id": "tiago-pro-tg-03-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tiago 5:16",
+    "learningObjective": "Perceber que confessar e orar uns pelos outros se ligam à cura, e que a súplica fervorosa do justo muito pode.",
+    "evidence": [
+      "Tiago 5:16"
+    ],
+    "type": "tap",
+    "question": "Em Tiago 5:16, toque a palavra que falta em \"Muito pode a súplica fervorosa do ___.\"?",
+    "prompt": "Em Tiago 5:16, toque a palavra que falta em \"Muito pode a súplica fervorosa do ___.\"?",
+    "cue": "Em Tiago 5:16, toque a palavra que falta em \"Muito pode a súplica fervorosa do ___.\"?",
+    "feedbackCorrect": "Exato: a súplica é a do justo.",
+    "feedbackWrong": {
+      "b": "Pecados é o que se confessa, não quem suplica.",
+      "c": "Curados é o resultado, não o sujeito da súplica."
+    },
+    "passageText": "Confessai os vossos pecados uns aos outros e orai uns pelos outros, para serdes curados. Muito pode a súplica fervorosa do justo.",
+    "trail": "tiago",
+    "section": "tg-03",
+    "id": "tiago-pro-tg-03-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "justo"
+      },
+      {
+        "id": "b",
+        "text": "pecados"
+      },
+      {
+        "id": "c",
+        "text": "curados"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Muito pode a súplica fervorosa do ___."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tiago 5:16",
+    "learningObjective": "Perceber que confessar e orar uns pelos outros se ligam à cura, e que a súplica fervorosa do justo muito pode.",
+    "evidence": [
+      "Tiago 5:16"
+    ],
+    "type": "choice",
+    "question": "Qual implicação Tiago 5:16 sustenta para a vida da igreja?",
+    "prompt": "Qual implicação Tiago 5:16 sustenta para a vida da igreja?",
+    "cue": "Qual implicação Tiago 5:16 sustenta para a vida da igreja?",
+    "feedbackCorrect": "Certo: cura e súplica passam pela vida compartilhada.",
+    "feedbackWrong": {
+      "b": "O texto não reduz a fé a um segredo sem irmãos.",
+      "c": "Tiago não trata a oração como gesto vazio.",
+      "d": "O versículo não transfere a súplica para um especialista distante."
+    },
+    "passageText": "Confessai os vossos pecados uns aos outros e orai uns pelos outros, para serdes curados. Muito pode a súplica fervorosa do justo.",
+    "trail": "tiago",
+    "section": "tg-03",
+    "id": "tiago-pro-tg-03-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pecado, cura e oração passam pela vida compartilhada."
+      },
+      {
+        "id": "b",
+        "text": "A fé madura dispensa irmãos, confissão e súplica."
+      },
+      {
+        "id": "c",
+        "text": "Orar uns pelos outros é formalidade sem eficácia."
+      },
+      {
+        "id": "d",
+        "text": "Só um mediador distante pode suplicar; a igreja cala."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tiago 5:16",
+    "learningObjective": "Perceber que confessar e orar uns pelos outros se ligam à cura, e que a súplica fervorosa do justo muito pode.",
+    "evidence": [
+      "Tiago 5:16"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Tiago 5:16?",
+    "prompt": "Qual sequência revela o sentido de Tiago 5:16?",
+    "cue": "Qual sequência revela o sentido de Tiago 5:16?",
+    "feedbackCorrect": "Certo: abrir o pecado, interceder, confiar na súplica.",
+    "feedbackWrong": {
+      "b": "A intercessão vem depois da confissão.",
+      "c": "O poder da súplica fecha o sentido do versículo."
+    },
+    "passageText": "Confessai os vossos pecados uns aos outros e orai uns pelos outros, para serdes curados. Muito pode a súplica fervorosa do justo.",
+    "trail": "tiago",
+    "section": "tg-03",
+    "id": "tiago-pro-tg-03-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Confessai os vossos pecados uns aos outros"
+      },
+      {
+        "id": "b",
+        "text": "e orai uns pelos outros, para serdes curados"
+      },
+      {
+        "id": "c",
+        "text": "Muito pode a súplica fervorosa do justo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tiago 5:16",
+    "learningObjective": "Perceber que confessar e orar uns pelos outros se ligam à cura, e que a súplica fervorosa do justo muito pode.",
+    "evidence": [
+      "Tiago 5:16"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Muito pode a súplica ___ do justo.\"",
+    "prompt": "Complete a frase: \"Muito pode a súplica ___ do justo.\"",
+    "cue": "Complete a frase: \"Muito pode a súplica ___ do justo.\"",
+    "feedbackCorrect": "Certo: a súplica é fervorosa.",
+    "feedbackWrong": {
+      "b": "Justo qualifica a pessoa, não o adjetivo da súplica.",
+      "c": "Pecados pertence à confissão, não a esta lacuna."
+    },
+    "passageText": "Confessai os vossos pecados uns aos outros e orai uns pelos outros, para serdes curados. Muito pode a súplica fervorosa do justo.",
+    "trail": "tiago",
+    "section": "tg-03",
+    "id": "tiago-pro-tg-03-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "fervorosa"
+      },
+      {
+        "id": "b",
+        "text": "justo"
+      },
+      {
+        "id": "c",
+        "text": "pecados"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Muito pode a súplica ___ do justo."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tiago 5:16",
+    "learningObjective": "Perceber que confessar e orar uns pelos outros se ligam à cura, e que a súplica fervorosa do justo muito pode.",
+    "evidence": [
+      "Tiago 5:16"
+    ],
+    "type": "connect",
+    "question": "O que Tiago 5:16 comunica que se liga a este contexto?",
+    "prompt": "O que Tiago 5:16 comunica que se liga a este contexto?",
+    "cue": "O que Tiago 5:16 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o justo é ouvido na súplica compartilhada.",
+    "feedbackWrong": {
+      "b": "O texto não descreve um Deus surdo à oração.",
+      "c": "Tiago não trata a paciência como recusa de orar."
+    },
+    "passageText": "Confessai os vossos pecados uns aos outros e orai uns pelos outros, para serdes curados. Muito pode a súplica fervorosa do justo.",
+    "trail": "tiago",
+    "section": "tg-03",
+    "id": "tiago-pro-tg-03-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "O justo é ouvido"
+      },
+      {
+        "id": "b",
+        "text": "Deus surdo à súplica"
+      },
+      {
+        "id": "c",
+        "text": "Paciência sem oração"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Tiago 5:16",
+      "text": "Muito pode a súplica fervorosa do justo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Oração, pobres e paciência se encontram na súplica: confessar, orar, e o justo é ouvido."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Perceber que ouvir a palavra sem cumpri-la é enganar-se a si mesmo.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "true_false",
+    "question": "Tiago manda tornar-se cumpridores da palavra e não ouvidores tão somente.",
+    "prompt": "Tiago manda tornar-se cumpridores da palavra e não ouvidores tão somente.",
+    "cue": "Tiago manda tornar-se cumpridores da palavra e não ouvidores tão somente.",
+    "feedbackCorrect": "Certo: é o que Tiago 1:22 ordena.",
+    "feedbackWrong": {
+      "false": "Releia: tornai-vos cumpridores, e não só ouvidores."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "id": "tiago-sem-tg-boss-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Perceber que ouvir a palavra sem cumpri-la é enganar-se a si mesmo.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "tap",
+    "question": "Em Tiago 1:22, toque a palavra que falta em \"Tornai-vos ___ da palavra\"?",
+    "prompt": "Em Tiago 1:22, toque a palavra que falta em \"Tornai-vos ___ da palavra\"?",
+    "cue": "Em Tiago 1:22, toque a palavra que falta em \"Tornai-vos ___ da palavra\"?",
+    "feedbackCorrect": "Exato: o chamado é a ser cumpridores.",
+    "feedbackWrong": {
+      "b": "Ouvidores é o que não deve ser somente.",
+      "c": "Palavra é o objeto, não o tipo de pessoa."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "id": "tiago-sem-tg-boss-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "cumpridores"
+      },
+      {
+        "id": "b",
+        "text": "ouvidores"
+      },
+      {
+        "id": "c",
+        "text": "palavra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Tornai-vos ___ da palavra"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Perceber que ouvir a palavra sem cumpri-la é enganar-se a si mesmo.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "choice",
+    "question": "O que acontece, segundo Tiago 1:22, com quem é só ouvidor da palavra?",
+    "prompt": "O que acontece, segundo Tiago 1:22, com quem é só ouvidor da palavra?",
+    "cue": "O que acontece, segundo Tiago 1:22, com quem é só ouvidor da palavra?",
+    "feedbackCorrect": "Certo: está enganando-se a si mesmo.",
+    "feedbackWrong": {
+      "b": "O texto não chama isso de obediência completa.",
+      "c": "Não há elogio a quem só ouve.",
+      "d": "O versículo não fala de memorização como meta."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "id": "tiago-sem-tg-boss-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Engana-se a si mesmo."
+      },
+      {
+        "id": "b",
+        "text": "Cumpre toda a palavra."
+      },
+      {
+        "id": "c",
+        "text": "Recebe louvor por só escutar."
+      },
+      {
+        "id": "d",
+        "text": "Memoriza o texto sem risco algum."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Perceber que ouvir a palavra sem cumpri-la é enganar-se a si mesmo.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Tiago 1:22?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Tiago 1:22?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Tiago 1:22?",
+    "feedbackCorrect": "Certo: cumprir, não só ouvir, não se enganar.",
+    "feedbackWrong": {
+      "b": "A recusa do só ouvir vem no meio da frase.",
+      "c": "O autoengano fecha o versículo."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "id": "tiago-sem-tg-boss-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tornai-vos cumpridores da palavra"
+      },
+      {
+        "id": "b",
+        "text": "e não ouvidores tão somente"
+      },
+      {
+        "id": "c",
+        "text": "enganando-vos a vós mesmos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Perceber que ouvir a palavra sem cumpri-la é enganar-se a si mesmo.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Tornai-vos cumpridores da palavra e não ___ tão somente.\"",
+    "prompt": "Complete a frase: \"Tornai-vos cumpridores da palavra e não ___ tão somente.\"",
+    "cue": "Complete a frase: \"Tornai-vos cumpridores da palavra e não ___ tão somente.\"",
+    "feedbackCorrect": "Certo: não ouvidores tão somente.",
+    "feedbackWrong": {
+      "b": "Cumpridores é o chamado positivo, não esta lacuna.",
+      "c": "Palavra é o objeto ouvido e cumprido."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "id": "tiago-sem-tg-boss-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "ouvidores"
+      },
+      {
+        "id": "b",
+        "text": "cumpridores"
+      },
+      {
+        "id": "c",
+        "text": "palavra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Tornai-vos cumpridores da palavra e não ___ tão somente."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Perceber que ouvir a palavra sem cumpri-la é enganar-se a si mesmo.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "connect",
+    "question": "O que Tiago 1:22 comunica que se liga a este contexto?",
+    "prompt": "O que Tiago 1:22 comunica que se liga a este contexto?",
+    "cue": "O que Tiago 1:22 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: ouvir sem cumprir é enganar-se.",
+    "feedbackWrong": {
+      "b": "O texto não trata a escuta isolada como suficiente.",
+      "c": "Tiago não descreve o cumprimento como opcional."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "id": "tiago-sem-tg-boss-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ouvir sem cumprir engana"
+      },
+      {
+        "id": "b",
+        "text": "Escuta isolada já basta"
+      },
+      {
+        "id": "c",
+        "text": "Cumprir a palavra é opcional"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Tiago 1:22",
+      "text": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Revisão de Tiago: ouvir sem cumprir é enganar-se — a fé aparece na vida."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Perceber que ouvir a palavra sem cumpri-la é enganar-se a si mesmo.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "true_false",
+    "question": "Tiago 1:22 trata o ouvir tão somente como obediência suficiente à palavra.",
+    "prompt": "Tiago 1:22 trata o ouvir tão somente como obediência suficiente à palavra.",
+    "cue": "Tiago 1:22 trata o ouvir tão somente como obediência suficiente à palavra.",
+    "feedbackCorrect": "Certo: só ouvir é enganar-se, não obedecer.",
+    "feedbackWrong": {
+      "true": "O versículo opõe cumpridores a ouvidores tão somente."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "id": "tiago-cam-tg-boss-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Perceber que ouvir a palavra sem cumpri-la é enganar-se a si mesmo.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "tap",
+    "question": "Em Tiago 1:22, toque a palavra que falta em \"Tornai-vos cumpridores da ___\"?",
+    "prompt": "Em Tiago 1:22, toque a palavra que falta em \"Tornai-vos cumpridores da ___\"?",
+    "cue": "Em Tiago 1:22, toque a palavra que falta em \"Tornai-vos cumpridores da ___\"?",
+    "feedbackCorrect": "Exato: o objeto a cumprir é a palavra.",
+    "feedbackWrong": {
+      "b": "Cumpridores é o tipo de pessoa, não o objeto.",
+      "c": "Ouvidores é o contraste, não o que se cumpre."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "id": "tiago-cam-tg-boss-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "palavra"
+      },
+      {
+        "id": "b",
+        "text": "cumpridores"
+      },
+      {
+        "id": "c",
+        "text": "ouvidores"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Tornai-vos cumpridores da ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Perceber que ouvir a palavra sem cumpri-la é enganar-se a si mesmo.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "choice",
+    "question": "Como Tiago 1:22 relaciona ouvir e cumprir a palavra?",
+    "prompt": "Como Tiago 1:22 relaciona ouvir e cumprir a palavra?",
+    "cue": "Como Tiago 1:22 relaciona ouvir e cumprir a palavra?",
+    "feedbackCorrect": "Certo: ouvir sem cumprir é autoengano.",
+    "feedbackWrong": {
+      "b": "O texto não iguala ouvir e cumprir.",
+      "c": "Tiago não despreza a palavra; chama a cumpri-la.",
+      "d": "O versículo não trata o cumprimento como detalhe extra."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "id": "tiago-cam-tg-boss-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ouvir sem cumprir é enganar-se a si mesmo."
+      },
+      {
+        "id": "b",
+        "text": "Ouvir e cumprir são a mesma ação no texto."
+      },
+      {
+        "id": "c",
+        "text": "Cumprir a palavra é menos importante do que ouvi-la."
+      },
+      {
+        "id": "d",
+        "text": "O cumprimento é um adorno opcional depois da escuta."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Perceber que ouvir a palavra sem cumpri-la é enganar-se a si mesmo.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Tiago 1:22?",
+    "prompt": "Como se encadeiam os eventos de Tiago 1:22?",
+    "cue": "Como se encadeiam os eventos de Tiago 1:22?",
+    "feedbackCorrect": "Certo: chamado a cumprir, recusa do só ouvir, autoengano.",
+    "feedbackWrong": {
+      "b": "O contraste com os ouvidores vem no meio.",
+      "c": "O autoengano é o desfecho, não o início."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "id": "tiago-cam-tg-boss-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tornai-vos cumpridores da palavra"
+      },
+      {
+        "id": "b",
+        "text": "e não ouvidores tão somente"
+      },
+      {
+        "id": "c",
+        "text": "enganando-vos a vós mesmos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Perceber que ouvir a palavra sem cumpri-la é enganar-se a si mesmo.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Tornai-vos cumpridores da palavra e não ouvidores tão ___.\"",
+    "prompt": "Complete a frase: \"Tornai-vos cumpridores da palavra e não ouvidores tão ___.\"",
+    "cue": "Complete a frase: \"Tornai-vos cumpridores da palavra e não ouvidores tão ___.\"",
+    "feedbackCorrect": "Certo: não ouvidores tão somente.",
+    "feedbackWrong": {
+      "b": "Palavra é o objeto, não o advérbio desta lacuna.",
+      "c": "Cumpridores é o chamado, não o ‘tão somente’."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "id": "tiago-cam-tg-boss-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "somente"
+      },
+      {
+        "id": "b",
+        "text": "palavra"
+      },
+      {
+        "id": "c",
+        "text": "cumpridores"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Tornai-vos cumpridores da palavra e não ouvidores tão ___."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Perceber que ouvir a palavra sem cumpri-la é enganar-se a si mesmo.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "connect",
+    "question": "O que Tiago 1:22 comunica que se liga a este contexto?",
+    "prompt": "O que Tiago 1:22 comunica que se liga a este contexto?",
+    "cue": "O que Tiago 1:22 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a fé da carta aparece na vida cumprida.",
+    "feedbackWrong": {
+      "b": "O texto não separa ouvir de qualquer prática.",
+      "c": "Tiago não trata o autoengano como virtude piedosa."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "id": "tiago-cam-tg-boss-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fé visível no cumprimento"
+      },
+      {
+        "id": "b",
+        "text": "Ouvir sem nenhuma prática"
+      },
+      {
+        "id": "c",
+        "text": "Autoengano como piedade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Tiago 1:22",
+      "text": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Revisão de Tiago: ouvir sem cumprir é enganar-se — a fé aparece na vida."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Perceber que ouvir a palavra sem cumpri-la é enganar-se a si mesmo.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "true_false",
+    "question": "Ouvir a palavra sem cumpri-la, em Tiago 1:22, é uma forma de autoengano, não de fé inteira.",
+    "prompt": "Ouvir a palavra sem cumpri-la, em Tiago 1:22, é uma forma de autoengano, não de fé inteira.",
+    "cue": "Ouvir a palavra sem cumpri-la, em Tiago 1:22, é uma forma de autoengano, não de fé inteira.",
+    "feedbackCorrect": "Certo: a fé da carta se vê na vida cumprida.",
+    "feedbackWrong": {
+      "false": "O texto chama isso de enganar-se a si mesmo."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "id": "tiago-pro-tg-boss-01",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Perceber que ouvir a palavra sem cumpri-la é enganar-se a si mesmo.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "tap",
+    "question": "Em Tiago 1:22, toque a palavra que falta em \"Tornai-vos cumpridores da palavra e não ouvidores tão somente, ___ a vós mesmos.\"?",
+    "prompt": "Em Tiago 1:22, toque a palavra que falta em \"Tornai-vos cumpridores da palavra e não ouvidores tão somente, ___ a vós mesmos.\"?",
+    "cue": "Em Tiago 1:22, toque a palavra que falta em \"Tornai-vos cumpridores da palavra e não ouvidores tão somente, ___ a vós mesmos.\"?",
+    "feedbackCorrect": "Exato: o gerúndio descreve o autoengano.",
+    "feedbackWrong": {
+      "b": "Cumpridores é o chamado positivo, não esta lacuna.",
+      "c": "Ouvidores aparece antes, no contraste."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "id": "tiago-pro-tg-boss-02",
+    "options": [
+      {
+        "id": "a",
+        "text": "enganando-vos"
+      },
+      {
+        "id": "b",
+        "text": "cumpridores"
+      },
+      {
+        "id": "c",
+        "text": "ouvidores"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, ___ a vós mesmos."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Perceber que ouvir a palavra sem cumpri-la é enganar-se a si mesmo.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "choice",
+    "question": "Qual revisão de Tiago 1:22 une fé, língua e oração da carta?",
+    "prompt": "Qual revisão de Tiago 1:22 une fé, língua e oração da carta?",
+    "cue": "Qual revisão de Tiago 1:22 une fé, língua e oração da carta?",
+    "feedbackCorrect": "Certo: a fé aparece na vida, não só no ouvir.",
+    "feedbackWrong": {
+      "b": "A carta não reduz a fé a ouvir sem fruto.",
+      "c": "Tiago não trata palavras e oração como teatro vazio.",
+      "d": "O texto não descreve o cumprimento como mérito que compra salvação."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "id": "tiago-pro-tg-boss-03",
+    "options": [
+      {
+        "id": "a",
+        "text": "A fé verdadeira se mostra ao cumprir a palavra."
+      },
+      {
+        "id": "b",
+        "text": "Basta ouvir a palavra; o fruto é irrelevante."
+      },
+      {
+        "id": "c",
+        "text": "Língua e oração são teatro; só o ouvir conta."
+      },
+      {
+        "id": "d",
+        "text": "Cumprir a palavra substitui a fé e a torna inútil."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Perceber que ouvir a palavra sem cumpri-la é enganar-se a si mesmo.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Tiago 1:22?",
+    "prompt": "Qual sequência revela o sentido de Tiago 1:22?",
+    "cue": "Qual sequência revela o sentido de Tiago 1:22?",
+    "feedbackCorrect": "Certo: cumprir, recusar o só ouvir, desmascarar o engano.",
+    "feedbackWrong": {
+      "b": "O só ouvir é o contraste, não o chamado primeiro.",
+      "c": "O autoengano é o desfecho revelador."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "id": "tiago-pro-tg-boss-04",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tornai-vos cumpridores da palavra"
+      },
+      {
+        "id": "b",
+        "text": "e não ouvidores tão somente"
+      },
+      {
+        "id": "c",
+        "text": "enganando-vos a vós mesmos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Perceber que ouvir a palavra sem cumpri-la é enganar-se a si mesmo.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"___ cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.\"",
+    "prompt": "Complete a frase: \"___ cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.\"",
+    "cue": "Complete a frase: \"___ cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.\"",
+    "feedbackCorrect": "Certo: o versículo abre com Tornai-vos.",
+    "feedbackWrong": {
+      "b": "Ouvidores é o contraste, não o verbo inicial.",
+      "c": "Palavra é o objeto, não o chamado de abertura."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "id": "tiago-pro-tg-boss-05",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tornai-vos"
+      },
+      {
+        "id": "b",
+        "text": "ouvidores"
+      },
+      {
+        "id": "c",
+        "text": "palavra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "template": "___ cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Tiago 1:22",
+    "learningObjective": "Perceber que ouvir a palavra sem cumpri-la é enganar-se a si mesmo.",
+    "evidence": [
+      "Tiago 1:22"
+    ],
+    "type": "connect",
+    "question": "O que Tiago 1:22 comunica que se liga a este contexto?",
+    "prompt": "O que Tiago 1:22 comunica que se liga a este contexto?",
+    "cue": "O que Tiago 1:22 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a revisão une ouvir, cumprir e fé visível.",
+    "feedbackWrong": {
+      "b": "O texto não trata a escuta vazia como meta da carta.",
+      "c": "Tiago não descreve uma fé que nunca aparece na vida."
+    },
+    "passageText": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos.",
+    "trail": "tiago",
+    "section": "tg-boss",
+    "id": "tiago-pro-tg-boss-06",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fé inteira se cumpre"
+      },
+      {
+        "id": "b",
+        "text": "Ouvir vazio como meta"
+      },
+      {
+        "id": "c",
+        "text": "Fé que nunca aparece"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageA": {
+      "ref": "Tiago 1:22",
+      "text": "Tornai-vos cumpridores da palavra e não ouvidores tão somente, enganando-vos a vós mesmos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Revisão de Tiago: ouvir sem cumprir é enganar-se — a fé aparece na vida."
+    }
+  }
+]

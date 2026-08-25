@@ -1,0 +1,3026 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 5:3–4",
+    "learningObjective": "Reconhecer que o Espírito Santo é Deus: mentir a ele é mentir a Deus, não a um poder impessoal.",
+    "evidence": [
+      "Atos 5:3",
+      "Atos 5:4"
+    ],
+    "type": "true_false",
+    "question": "Ananias mentiu ao Espírito Santo e reteve parte do preço do terreno.",
+    "prompt": "Ananias mentiu ao Espírito Santo e reteve parte do preço do terreno.",
+    "cue": "Ananias mentiu ao Espírito Santo e reteve parte do preço do terreno.",
+    "feedbackCorrect": "Certo: Pedro afirma essa mentira e a retenção do preço.",
+    "feedbackWrong": {
+      "false": "Releia: ele mentiu ao Espírito Santo e reteve parte do preço."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Pedro disse-lhe: Ananias, por que encheu Satanás o teu coração, para que mentisses ao Espírito Santo e retivesses parte do preço do terreno? Porventura, se não o vendesses, não seria ele teu; e, vendido, não estava o preço no teu poder? Como formaste esse desígnio no teu coração? Não mentiste aos homens, mas a Deus.",
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "id": "pneumatologia-sem-pn-01-pessoa-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 5:3–4",
+    "learningObjective": "Reconhecer que o Espírito Santo é Deus: mentir a ele é mentir a Deus, não a um poder impessoal.",
+    "evidence": [
+      "Atos 5:3",
+      "Atos 5:4"
+    ],
+    "type": "tap",
+    "question": "Em Atos 5:3–4, toque a palavra que falta em \"para que ___ ao Espírito Santo e retivesses parte do preço do terreno\"?",
+    "prompt": "Em Atos 5:3–4, toque a palavra que falta em \"para que ___ ao Espírito Santo e retivesses parte do preço do terreno\"?",
+    "cue": "Em Atos 5:3–4, toque a palavra que falta em \"para que ___ ao Espírito Santo e retivesses parte do preço do terreno\"?",
+    "feedbackCorrect": "Exato: Ananias mentiu ao Espírito Santo.",
+    "feedbackWrong": {
+      "b": "Vendesses fala do terreno, não desta lacuna.",
+      "c": "Formaste aparece depois, no desígnio do coração."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "mentisses"
+      },
+      {
+        "id": "b",
+        "text": "vendesses"
+      },
+      {
+        "id": "c",
+        "text": "formaste"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pedro disse-lhe: Ananias, por que encheu Satanás o teu coração, para que mentisses ao Espírito Santo e retivesses parte do preço do terreno? Porventura, se não o vendesses, não seria ele teu; e, vendido, não estava o preço no teu poder? Como formaste esse desígnio no teu coração? Não mentiste aos homens, mas a Deus.",
+    "template": "para que ___ ao Espírito Santo e retivesses parte do preço do terreno",
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "id": "pneumatologia-sem-pn-01-pessoa-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 5:3–4",
+    "learningObjective": "Reconhecer que o Espírito Santo é Deus: mentir a ele é mentir a Deus, não a um poder impessoal.",
+    "evidence": [
+      "Atos 5:3",
+      "Atos 5:4"
+    ],
+    "type": "choice",
+    "question": "Qual fato Atos 5:3–4 afirma de modo explícito?",
+    "prompt": "Qual fato Atos 5:3–4 afirma de modo explícito?",
+    "cue": "Qual fato Atos 5:3–4 afirma de modo explícito?",
+    "feedbackCorrect": "Certo: a mentira foi ao Espírito Santo, com retenção do preço.",
+    "feedbackWrong": {
+      "b": "O texto não diz que o terreno ficou sem venda.",
+      "c": "Pedro nega que a mentira tenha sido só aos homens.",
+      "d": "Satanás encheu o coração; não há ordem de venda."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ananias mentiu ao Espírito Santo e reteve parte do preço."
+      },
+      {
+        "id": "b",
+        "text": "Ananias devolveu o terreno sem jamais vendê-lo."
+      },
+      {
+        "id": "c",
+        "text": "A mentira de Ananias foi somente a Pedro."
+      },
+      {
+        "id": "d",
+        "text": "Satanás ordenou que Ananias vendesse o terreno."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pedro disse-lhe: Ananias, por que encheu Satanás o teu coração, para que mentisses ao Espírito Santo e retivesses parte do preço do terreno? Porventura, se não o vendesses, não seria ele teu; e, vendido, não estava o preço no teu poder? Como formaste esse desígnio no teu coração? Não mentiste aos homens, mas a Deus.",
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "id": "pneumatologia-sem-pn-01-pessoa-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 5:3–4",
+    "learningObjective": "Reconhecer que o Espírito Santo é Deus: mentir a ele é mentir a Deus, não a um poder impessoal.",
+    "evidence": [
+      "Atos 5:3",
+      "Atos 5:4"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Atos 5:3–4?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Atos 5:3–4?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Atos 5:3–4?",
+    "feedbackCorrect": "Certo: essa é a ordem que o texto apresenta.",
+    "feedbackWrong": {
+      "b": "Esse trecho vem depois da fala inicial de Pedro.",
+      "c": "A declaração a Deus fecha o trecho, não o abre."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pedro disse-lhe: Ananias, por que encheu Satanás o teu coração"
+      },
+      {
+        "id": "b",
+        "text": "para que mentisses ao Espírito Santo e retivesses parte do preço do terreno"
+      },
+      {
+        "id": "c",
+        "text": "Não mentiste aos homens, mas a Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pedro disse-lhe: Ananias, por que encheu Satanás o teu coração, para que mentisses ao Espírito Santo e retivesses parte do preço do terreno? Porventura, se não o vendesses, não seria ele teu; e, vendido, não estava o preço no teu poder? Como formaste esse desígnio no teu coração? Não mentiste aos homens, mas a Deus.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "id": "pneumatologia-sem-pn-01-pessoa-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 5:3–4",
+    "learningObjective": "Reconhecer que o Espírito Santo é Deus: mentir a ele é mentir a Deus, não a um poder impessoal.",
+    "evidence": [
+      "Atos 5:3",
+      "Atos 5:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Não mentiste aos homens, mas a ___\"",
+    "prompt": "Complete a frase: \"Não mentiste aos homens, mas a ___\"",
+    "cue": "Complete a frase: \"Não mentiste aos homens, mas a ___\"",
+    "feedbackCorrect": "Certo: a mentira foi a Deus, não aos homens.",
+    "feedbackWrong": {
+      "b": "Satanás encheu o coração; a lacuna pede a quem se mentiu.",
+      "c": "Ananias é o acusado, não o destinatário da mentira."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus"
+      },
+      {
+        "id": "b",
+        "text": "Satanás"
+      },
+      {
+        "id": "c",
+        "text": "Ananias"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pedro disse-lhe: Ananias, por que encheu Satanás o teu coração, para que mentisses ao Espírito Santo e retivesses parte do preço do terreno? Porventura, se não o vendesses, não seria ele teu; e, vendido, não estava o preço no teu poder? Como formaste esse desígnio no teu coração? Não mentiste aos homens, mas a Deus.",
+    "template": "Não mentiste aos homens, mas a ___",
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "id": "pneumatologia-sem-pn-01-pessoa-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 5:3–4",
+    "learningObjective": "Reconhecer que o Espírito Santo é Deus: mentir a ele é mentir a Deus, não a um poder impessoal.",
+    "evidence": [
+      "Atos 5:3",
+      "Atos 5:4"
+    ],
+    "type": "connect",
+    "question": "O que Atos 5:3–4 comunica que se liga a este contexto?",
+    "prompt": "O que Atos 5:3–4 comunica que se liga a este contexto?",
+    "cue": "O que Atos 5:3–4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: mentir ao Espírito Santo é mentir a Deus.",
+    "feedbackWrong": {
+      "b": "O texto não trata o Espírito como força sem pessoa.",
+      "c": "Pedro recusa reduzir a mentira a um engano só humano."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Mentira ao Espírito é a Deus"
+      },
+      {
+        "id": "b",
+        "text": "Espírito como poder impessoal"
+      },
+      {
+        "id": "c",
+        "text": "Mentira só contra homens"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pedro disse-lhe: Ananias, por que encheu Satanás o teu coração, para que mentisses ao Espírito Santo e retivesses parte do preço do terreno? Porventura, se não o vendesses, não seria ele teu; e, vendido, não estava o preço no teu poder? Como formaste esse desígnio no teu coração? Não mentiste aos homens, mas a Deus.",
+    "passageA": {
+      "ref": "Atos 5:3–4",
+      "text": "Pedro disse-lhe: Ananias, por que encheu Satanás o teu coração, para que mentisses ao Espírito Santo e retivesses parte do preço do terreno? Porventura, se não o vendesses, não seria ele teu; e, vendido, não estava o preço no teu poder? Como formaste esse desígnio no teu coração? Não mentiste aos homens, mas a Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Espírito é Deus: mentir ao Espírito Santo é mentir a Deus, não a um poder impessoal."
+    },
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "id": "pneumatologia-sem-pn-01-pessoa-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 5:3–4",
+    "learningObjective": "Reconhecer que o Espírito Santo é Deus: mentir a ele é mentir a Deus, não a um poder impessoal.",
+    "evidence": [
+      "Atos 5:3",
+      "Atos 5:4"
+    ],
+    "type": "true_false",
+    "question": "Pedro ensina que mentir ao Espírito Santo é o mesmo que mentir somente aos homens.",
+    "prompt": "Pedro ensina que mentir ao Espírito Santo é o mesmo que mentir somente aos homens.",
+    "cue": "Pedro ensina que mentir ao Espírito Santo é o mesmo que mentir somente aos homens.",
+    "feedbackCorrect": "Certo: ele diz que a mentira não foi aos homens, mas a Deus.",
+    "feedbackWrong": {
+      "true": "O texto opõe homens e Deus: a mentira foi a Deus."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Pedro disse-lhe: Ananias, por que encheu Satanás o teu coração, para que mentisses ao Espírito Santo e retivesses parte do preço do terreno? Porventura, se não o vendesses, não seria ele teu; e, vendido, não estava o preço no teu poder? Como formaste esse desígnio no teu coração? Não mentiste aos homens, mas a Deus.",
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "id": "pneumatologia-cam-pn-01-pessoa-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 5:3–4",
+    "learningObjective": "Reconhecer que o Espírito Santo é Deus: mentir a ele é mentir a Deus, não a um poder impessoal.",
+    "evidence": [
+      "Atos 5:3",
+      "Atos 5:4"
+    ],
+    "type": "tap",
+    "question": "Em Atos 5:3–4, toque a palavra que falta em \"Não mentiste aos ___, mas a Deus\"?",
+    "prompt": "Em Atos 5:3–4, toque a palavra que falta em \"Não mentiste aos ___, mas a Deus\"?",
+    "cue": "Em Atos 5:3–4, toque a palavra que falta em \"Não mentiste aos ___, mas a Deus\"?",
+    "feedbackCorrect": "Exato: a mentira não foi aos homens.",
+    "feedbackWrong": {
+      "b": "Satanás encheu o coração, mas não preenche esta lacuna.",
+      "c": "Terreno é o bem vendido, não o alvo da frase."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "homens"
+      },
+      {
+        "id": "b",
+        "text": "Satanás"
+      },
+      {
+        "id": "c",
+        "text": "terreno"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pedro disse-lhe: Ananias, por que encheu Satanás o teu coração, para que mentisses ao Espírito Santo e retivesses parte do preço do terreno? Porventura, se não o vendesses, não seria ele teu; e, vendido, não estava o preço no teu poder? Como formaste esse desígnio no teu coração? Não mentiste aos homens, mas a Deus.",
+    "template": "Não mentiste aos ___, mas a Deus",
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "id": "pneumatologia-cam-pn-01-pessoa-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 5:3–4",
+    "learningObjective": "Reconhecer que o Espírito Santo é Deus: mentir a ele é mentir a Deus, não a um poder impessoal.",
+    "evidence": [
+      "Atos 5:3",
+      "Atos 5:4"
+    ],
+    "type": "choice",
+    "question": "Qual relação Atos 5:3–4 estabelece entre o Espírito Santo e Deus?",
+    "prompt": "Qual relação Atos 5:3–4 estabelece entre o Espírito Santo e Deus?",
+    "cue": "Qual relação Atos 5:3–4 estabelece entre o Espírito Santo e Deus?",
+    "feedbackCorrect": "Certo: mentir ao Espírito Santo é mentir a Deus.",
+    "feedbackWrong": {
+      "b": "O texto trata o Espírito como alguém a quem se mente.",
+      "c": "Não há rivalidade: o Espírito é identificado com Deus.",
+      "d": "Pedro não relativiza a gravidade diante de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Mentir ao Espírito Santo é mentir a Deus."
+      },
+      {
+        "id": "b",
+        "text": "O Espírito Santo é só uma força que Deus usa de longe."
+      },
+      {
+        "id": "c",
+        "text": "Deus e o Espírito Santo aparecem como rivais no relato."
+      },
+      {
+        "id": "d",
+        "text": "Mentir a Deus seria menos grave do que mentir a Pedro."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pedro disse-lhe: Ananias, por que encheu Satanás o teu coração, para que mentisses ao Espírito Santo e retivesses parte do preço do terreno? Porventura, se não o vendesses, não seria ele teu; e, vendido, não estava o preço no teu poder? Como formaste esse desígnio no teu coração? Não mentiste aos homens, mas a Deus.",
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "id": "pneumatologia-cam-pn-01-pessoa-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 5:3–4",
+    "learningObjective": "Reconhecer que o Espírito Santo é Deus: mentir a ele é mentir a Deus, não a um poder impessoal.",
+    "evidence": [
+      "Atos 5:3",
+      "Atos 5:4"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Atos 5:3–4?",
+    "prompt": "Como se encadeiam os eventos de Atos 5:3–4?",
+    "cue": "Como se encadeiam os eventos de Atos 5:3–4?",
+    "feedbackCorrect": "Certo: propriedade, poder sobre o preço e o desígnio no coração.",
+    "feedbackWrong": {
+      "b": "O preço no poder vem depois da posse do terreno.",
+      "c": "O desígnio no coração é o desfecho desta cadeia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "se não o vendesses, não seria ele teu"
+      },
+      {
+        "id": "b",
+        "text": "e, vendido, não estava o preço no teu poder"
+      },
+      {
+        "id": "c",
+        "text": "Como formaste esse desígnio no teu coração"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pedro disse-lhe: Ananias, por que encheu Satanás o teu coração, para que mentisses ao Espírito Santo e retivesses parte do preço do terreno? Porventura, se não o vendesses, não seria ele teu; e, vendido, não estava o preço no teu poder? Como formaste esse desígnio no teu coração? Não mentiste aos homens, mas a Deus.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "id": "pneumatologia-cam-pn-01-pessoa-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 5:3–4",
+    "learningObjective": "Reconhecer que o Espírito Santo é Deus: mentir a ele é mentir a Deus, não a um poder impessoal.",
+    "evidence": [
+      "Atos 5:3",
+      "Atos 5:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"para que mentisses ao Espírito ___ e retivesses parte do preço\"",
+    "prompt": "Complete a frase: \"para que mentisses ao Espírito ___ e retivesses parte do preço\"",
+    "cue": "Complete a frase: \"para que mentisses ao Espírito ___ e retivesses parte do preço\"",
+    "feedbackCorrect": "Certo: o texto diz Espírito Santo.",
+    "feedbackWrong": {
+      "b": "Terreno é o bem, não o nome do Espírito.",
+      "c": "Poder fala do preço vendido, não desta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Santo"
+      },
+      {
+        "id": "b",
+        "text": "terreno"
+      },
+      {
+        "id": "c",
+        "text": "poder"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pedro disse-lhe: Ananias, por que encheu Satanás o teu coração, para que mentisses ao Espírito Santo e retivesses parte do preço do terreno? Porventura, se não o vendesses, não seria ele teu; e, vendido, não estava o preço no teu poder? Como formaste esse desígnio no teu coração? Não mentiste aos homens, mas a Deus.",
+    "template": "para que mentisses ao Espírito ___ e retivesses parte do preço",
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "id": "pneumatologia-cam-pn-01-pessoa-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 5:3–4",
+    "learningObjective": "Reconhecer que o Espírito Santo é Deus: mentir a ele é mentir a Deus, não a um poder impessoal.",
+    "evidence": [
+      "Atos 5:3",
+      "Atos 5:4"
+    ],
+    "type": "connect",
+    "question": "O que Atos 5:3–4 comunica que se liga a este contexto?",
+    "prompt": "O que Atos 5:3–4 comunica que se liga a este contexto?",
+    "cue": "O que Atos 5:3–4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o Espírito é pessoa divina, não força sem juízo.",
+    "feedbackWrong": {
+      "b": "Mentir a ele mostra pessoa, não energia sem identidade.",
+      "c": "Pedro não o reduz a um mensageiro criado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito como pessoa divina"
+      },
+      {
+        "id": "b",
+        "text": "Força sem identidade"
+      },
+      {
+        "id": "c",
+        "text": "Apenas um anjo criado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pedro disse-lhe: Ananias, por que encheu Satanás o teu coração, para que mentisses ao Espírito Santo e retivesses parte do preço do terreno? Porventura, se não o vendesses, não seria ele teu; e, vendido, não estava o preço no teu poder? Como formaste esse desígnio no teu coração? Não mentiste aos homens, mas a Deus.",
+    "passageA": {
+      "ref": "Atos 5:3–4",
+      "text": "Pedro disse-lhe: Ananias, por que encheu Satanás o teu coração, para que mentisses ao Espírito Santo e retivesses parte do preço do terreno? Porventura, se não o vendesses, não seria ele teu; e, vendido, não estava o preço no teu poder? Como formaste esse desígnio no teu coração? Não mentiste aos homens, mas a Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Espírito é Deus: mentir ao Espírito Santo é mentir a Deus, não a um poder impessoal."
+    },
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "id": "pneumatologia-cam-pn-01-pessoa-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 5:3–4",
+    "learningObjective": "Reconhecer que o Espírito Santo é Deus: mentir a ele é mentir a Deus, não a um poder impessoal.",
+    "evidence": [
+      "Atos 5:3",
+      "Atos 5:4"
+    ],
+    "type": "true_false",
+    "question": "Neste texto, o Espírito Santo é tratado como Deus, não como um poder impessoal.",
+    "prompt": "Neste texto, o Espírito Santo é tratado como Deus, não como um poder impessoal.",
+    "cue": "Neste texto, o Espírito Santo é tratado como Deus, não como um poder impessoal.",
+    "feedbackCorrect": "Certo: mentir a ele é mentir a Deus.",
+    "feedbackWrong": {
+      "false": "Pedro identifica a mentira ao Espírito com a mentira a Deus."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Pedro disse-lhe: Ananias, por que encheu Satanás o teu coração, para que mentisses ao Espírito Santo e retivesses parte do preço do terreno? Porventura, se não o vendesses, não seria ele teu; e, vendido, não estava o preço no teu poder? Como formaste esse desígnio no teu coração? Não mentiste aos homens, mas a Deus.",
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "id": "pneumatologia-pro-pn-01-pessoa-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 5:3–4",
+    "learningObjective": "Reconhecer que o Espírito Santo é Deus: mentir a ele é mentir a Deus, não a um poder impessoal.",
+    "evidence": [
+      "Atos 5:3",
+      "Atos 5:4"
+    ],
+    "type": "tap",
+    "question": "Em Atos 5:3–4, toque a palavra que falta em \"Não mentiste aos homens, mas a ___\"?",
+    "prompt": "Em Atos 5:3–4, toque a palavra que falta em \"Não mentiste aos homens, mas a ___\"?",
+    "cue": "Em Atos 5:3–4, toque a palavra que falta em \"Não mentiste aos homens, mas a ___\"?",
+    "feedbackCorrect": "Exato: a mentira foi a Deus.",
+    "feedbackWrong": {
+      "a": "Pedro fala, mas não preenche esta lacuna.",
+      "b": "Preço é o valor do terreno, não o alvo da mentira."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pedro"
+      },
+      {
+        "id": "b",
+        "text": "preço"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Pedro disse-lhe: Ananias, por que encheu Satanás o teu coração, para que mentisses ao Espírito Santo e retivesses parte do preço do terreno? Porventura, se não o vendesses, não seria ele teu; e, vendido, não estava o preço no teu poder? Como formaste esse desígnio no teu coração? Não mentiste aos homens, mas a Deus.",
+    "template": "Não mentiste aos homens, mas a ___",
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "id": "pneumatologia-pro-pn-01-pessoa-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 5:3–4",
+    "learningObjective": "Reconhecer que o Espírito Santo é Deus: mentir a ele é mentir a Deus, não a um poder impessoal.",
+    "evidence": [
+      "Atos 5:3",
+      "Atos 5:4"
+    ],
+    "type": "choice",
+    "question": "O que o leitor deve concluir sobre o Espírito Santo em Atos 5:3–4?",
+    "prompt": "O que o leitor deve concluir sobre o Espírito Santo em Atos 5:3–4?",
+    "cue": "O que o leitor deve concluir sobre o Espírito Santo em Atos 5:3–4?",
+    "feedbackCorrect": "Certo: ele é Deus pessoal, a quem se pode mentir.",
+    "feedbackWrong": {
+      "b": "Energia sem vontade não recebe mentira nem juízo.",
+      "c": "O texto não o rebaixa: iguala a mentira a Deus.",
+      "d": "A cena é na igreja, no coração, não só no templo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele é Deus, a quem se mente como se mente a uma pessoa."
+      },
+      {
+        "id": "b",
+        "text": "Ele é energia divina sem vontade nem juízo."
+      },
+      {
+        "id": "c",
+        "text": "Ele é inferior ao Pai, e a mentira não o atinge."
+      },
+      {
+        "id": "d",
+        "text": "Ele só age no templo, nunca no coração da igreja."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pedro disse-lhe: Ananias, por que encheu Satanás o teu coração, para que mentisses ao Espírito Santo e retivesses parte do preço do terreno? Porventura, se não o vendesses, não seria ele teu; e, vendido, não estava o preço no teu poder? Como formaste esse desígnio no teu coração? Não mentiste aos homens, mas a Deus.",
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "id": "pneumatologia-pro-pn-01-pessoa-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 5:3–4",
+    "learningObjective": "Reconhecer que o Espírito Santo é Deus: mentir a ele é mentir a Deus, não a um poder impessoal.",
+    "evidence": [
+      "Atos 5:3",
+      "Atos 5:4"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Atos 5:3–4?",
+    "prompt": "Qual sequência revela o sentido de Atos 5:3–4?",
+    "cue": "Qual sequência revela o sentido de Atos 5:3–4?",
+    "feedbackCorrect": "Certo: desígnio, mentira ao Espírito e identificação com Deus.",
+    "feedbackWrong": {
+      "b": "A mentira ao Espírito vem depois do desígnio.",
+      "c": "A frase a Deus é o sentido final, não o primeiro passo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Como formaste esse desígnio no teu coração"
+      },
+      {
+        "id": "b",
+        "text": "mentisses ao Espírito Santo"
+      },
+      {
+        "id": "c",
+        "text": "Não mentiste aos homens, mas a Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pedro disse-lhe: Ananias, por que encheu Satanás o teu coração, para que mentisses ao Espírito Santo e retivesses parte do preço do terreno? Porventura, se não o vendesses, não seria ele teu; e, vendido, não estava o preço no teu poder? Como formaste esse desígnio no teu coração? Não mentiste aos homens, mas a Deus.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "id": "pneumatologia-pro-pn-01-pessoa-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 5:3–4",
+    "learningObjective": "Reconhecer que o Espírito Santo é Deus: mentir a ele é mentir a Deus, não a um poder impessoal.",
+    "evidence": [
+      "Atos 5:3",
+      "Atos 5:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"por que encheu ___ o teu coração\"",
+    "prompt": "Complete a frase: \"por que encheu ___ o teu coração\"",
+    "cue": "Complete a frase: \"por que encheu ___ o teu coração\"",
+    "feedbackCorrect": "Certo: Satanás encheu o coração de Ananias.",
+    "feedbackWrong": {
+      "b": "A mentira foi a Deus; quem encheu o coração foi Satanás.",
+      "c": "Pedro pergunta; não é ele quem encheu o coração."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Satanás"
+      },
+      {
+        "id": "b",
+        "text": "Deus"
+      },
+      {
+        "id": "c",
+        "text": "Pedro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pedro disse-lhe: Ananias, por que encheu Satanás o teu coração, para que mentisses ao Espírito Santo e retivesses parte do preço do terreno? Porventura, se não o vendesses, não seria ele teu; e, vendido, não estava o preço no teu poder? Como formaste esse desígnio no teu coração? Não mentiste aos homens, mas a Deus.",
+    "template": "por que encheu ___ o teu coração",
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "id": "pneumatologia-pro-pn-01-pessoa-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 5:3–4",
+    "learningObjective": "Reconhecer que o Espírito Santo é Deus: mentir a ele é mentir a Deus, não a um poder impessoal.",
+    "evidence": [
+      "Atos 5:3",
+      "Atos 5:4"
+    ],
+    "type": "connect",
+    "question": "O que Atos 5:3–4 comunica que se liga a este contexto?",
+    "prompt": "O que Atos 5:3–4 comunica que se liga a este contexto?",
+    "cue": "O que Atos 5:3–4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a mentira ao Espírito é mentira a Deus.",
+    "feedbackWrong": {
+      "b": "Pedro não reduz o caso a falha só da instituição.",
+      "c": "O Espírito aqui tem pessoa, não é força sem rosto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Mentira ao Espírito é a Deus"
+      },
+      {
+        "id": "b",
+        "text": "Mentira só institucional"
+      },
+      {
+        "id": "c",
+        "text": "Espírito sem pessoa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pedro disse-lhe: Ananias, por que encheu Satanás o teu coração, para que mentisses ao Espírito Santo e retivesses parte do preço do terreno? Porventura, se não o vendesses, não seria ele teu; e, vendido, não estava o preço no teu poder? Como formaste esse desígnio no teu coração? Não mentiste aos homens, mas a Deus.",
+    "passageA": {
+      "ref": "Atos 5:3–4",
+      "text": "Pedro disse-lhe: Ananias, por que encheu Satanás o teu coração, para que mentisses ao Espírito Santo e retivesses parte do preço do terreno? Porventura, se não o vendesses, não seria ele teu; e, vendido, não estava o preço no teu poder? Como formaste esse desígnio no teu coração? Não mentiste aos homens, mas a Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Espírito é Deus: mentir ao Espírito Santo é mentir a Deus, não a um poder impessoal."
+    },
+    "trail": "pneumatologia",
+    "section": "pn-01-pessoa",
+    "id": "pneumatologia-pro-pn-01-pessoa-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Romanos 8:9–11",
+    "learningObjective": "Reconhecer que o Espírito habita no crente e quem não tem o Espírito de Cristo não é dele.",
+    "evidence": [
+      "Romanos 8:9",
+      "Romanos 8:10",
+      "Romanos 8:11"
+    ],
+    "type": "true_false",
+    "question": "Se alguém não tem o Espírito de Cristo, esse não é dele.",
+    "prompt": "Se alguém não tem o Espírito de Cristo, esse não é dele.",
+    "cue": "Se alguém não tem o Espírito de Cristo, esse não é dele.",
+    "feedbackCorrect": "Certo: Romanos 8:9 afirma isso palavra por palavra.",
+    "feedbackWrong": {
+      "false": "Releia: sem o Espírito de Cristo, a pessoa não é dele."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Se Cristo está em vós, o corpo, na verdade, está morto por causa do pecado, mas o espírito é vida por causa da justiça.",
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "id": "pneumatologia-sem-pn-02-vida-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Romanos 8:9–11",
+    "learningObjective": "Reconhecer que o Espírito habita no crente e quem não tem o Espírito de Cristo não é dele.",
+    "evidence": [
+      "Romanos 8:9",
+      "Romanos 8:10",
+      "Romanos 8:11"
+    ],
+    "type": "tap",
+    "question": "Em Romanos 8:9–11, toque a palavra que falta em \"se realmente o Espírito de Deus ___ em vós\"?",
+    "prompt": "Em Romanos 8:9–11, toque a palavra que falta em \"se realmente o Espírito de Deus ___ em vós\"?",
+    "cue": "Em Romanos 8:9–11, toque a palavra que falta em \"se realmente o Espírito de Deus ___ em vós\"?",
+    "feedbackCorrect": "Exato: o Espírito de Deus habita em vós.",
+    "feedbackWrong": {
+      "b": "Morto descreve o corpo, não esta lacuna.",
+      "c": "Justiça explica a vida do espírito, depois."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "habita"
+      },
+      {
+        "id": "b",
+        "text": "morto"
+      },
+      {
+        "id": "c",
+        "text": "justiça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Se Cristo está em vós, o corpo, na verdade, está morto por causa do pecado, mas o espírito é vida por causa da justiça.",
+    "template": "se realmente o Espírito de Deus ___ em vós",
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "id": "pneumatologia-sem-pn-02-vida-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Romanos 8:9–11",
+    "learningObjective": "Reconhecer que o Espírito habita no crente e quem não tem o Espírito de Cristo não é dele.",
+    "evidence": [
+      "Romanos 8:9",
+      "Romanos 8:10",
+      "Romanos 8:11"
+    ],
+    "type": "choice",
+    "question": "O que Romanos 8:9–11 afirma sobre quem não tem o Espírito de Cristo?",
+    "prompt": "O que Romanos 8:9–11 afirma sobre quem não tem o Espírito de Cristo?",
+    "cue": "O que Romanos 8:9–11 afirma sobre quem não tem o Espírito de Cristo?",
+    "feedbackCorrect": "Certo: esse não é dele.",
+    "feedbackWrong": {
+      "b": "O texto não sustenta pertencer a Cristo só pela carne.",
+      "c": "Sem o Espírito, a pessoa não está nele.",
+      "d": "O corpo está morto por causa do pecado, não vivo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Esse não é dele."
+      },
+      {
+        "id": "b",
+        "text": "Esse ainda pertence a Cristo pela carne."
+      },
+      {
+        "id": "c",
+        "text": "Esse está sujeito ao Espírito mesmo sem tê-lo."
+      },
+      {
+        "id": "d",
+        "text": "Esse tem o corpo vivo por causa do pecado."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Se Cristo está em vós, o corpo, na verdade, está morto por causa do pecado, mas o espírito é vida por causa da justiça.",
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "id": "pneumatologia-sem-pn-02-vida-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Romanos 8:9–11",
+    "learningObjective": "Reconhecer que o Espírito habita no crente e quem não tem o Espírito de Cristo não é dele.",
+    "evidence": [
+      "Romanos 8:9",
+      "Romanos 8:10",
+      "Romanos 8:11"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Romanos 8:9–11?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Romanos 8:9–11?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Romanos 8:9–11?",
+    "feedbackCorrect": "Certo: essa é a ordem do trecho.",
+    "feedbackWrong": {
+      "b": "A habitação vem ligada à sujeição ao Espírito.",
+      "c": "Não ser dele fecha esta cadeia, não a abre."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "não estais sujeitos à carne, mas ao Espírito"
+      },
+      {
+        "id": "b",
+        "text": "se realmente o Espírito de Deus habita em vós"
+      },
+      {
+        "id": "c",
+        "text": "se alguém não tem o Espírito de Cristo, esse não é dele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Se Cristo está em vós, o corpo, na verdade, está morto por causa do pecado, mas o espírito é vida por causa da justiça.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "id": "pneumatologia-sem-pn-02-vida-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Romanos 8:9–11",
+    "learningObjective": "Reconhecer que o Espírito habita no crente e quem não tem o Espírito de Cristo não é dele.",
+    "evidence": [
+      "Romanos 8:9",
+      "Romanos 8:10",
+      "Romanos 8:11"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"o espírito é vida por causa da ___\"",
+    "prompt": "Complete a frase: \"o espírito é vida por causa da ___\"",
+    "cue": "Complete a frase: \"o espírito é vida por causa da ___\"",
+    "feedbackCorrect": "Certo: vida por causa da justiça.",
+    "feedbackWrong": {
+      "b": "Carne é o regime do qual não estão sujeitos.",
+      "c": "Pecado explica a morte do corpo, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "justiça"
+      },
+      {
+        "id": "b",
+        "text": "carne"
+      },
+      {
+        "id": "c",
+        "text": "pecado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Se Cristo está em vós, o corpo, na verdade, está morto por causa do pecado, mas o espírito é vida por causa da justiça.",
+    "template": "o espírito é vida por causa da ___",
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "id": "pneumatologia-sem-pn-02-vida-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Romanos 8:9–11",
+    "learningObjective": "Reconhecer que o Espírito habita no crente e quem não tem o Espírito de Cristo não é dele.",
+    "evidence": [
+      "Romanos 8:9",
+      "Romanos 8:10",
+      "Romanos 8:11"
+    ],
+    "type": "connect",
+    "question": "O que Romanos 8:9–11 comunica que se liga a este contexto?",
+    "prompt": "O que Romanos 8:9–11 comunica que se liga a este contexto?",
+    "cue": "O que Romanos 8:9–11 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: ter o Espírito é pertencer a Cristo.",
+    "feedbackWrong": {
+      "b": "A carne não basta para ser dele.",
+      "c": "O texto torna o Espírito decisivo, não opcional."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Habitar é pertencer a Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Carne basta para pertencer"
+      },
+      {
+        "id": "c",
+        "text": "Espírito opcional no salvo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Se Cristo está em vós, o corpo, na verdade, está morto por causa do pecado, mas o espírito é vida por causa da justiça.",
+    "passageA": {
+      "ref": "Romanos 8:9–11",
+      "text": "Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Se Cristo está em vós, o corpo, na verdade, está morto por causa do pecado, mas o espírito é vida por causa da justiça."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Nova vida pelo Espírito: quem não tem o Espírito de Cristo não é dele; o Espírito habita e vivifica."
+    },
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "id": "pneumatologia-sem-pn-02-vida-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Romanos 8:9–11",
+    "learningObjective": "Reconhecer que o Espírito habita no crente e quem não tem o Espírito de Cristo não é dele.",
+    "evidence": [
+      "Romanos 8:9",
+      "Romanos 8:10",
+      "Romanos 8:11"
+    ],
+    "type": "true_false",
+    "question": "O texto ensina que alguém pode ser de Cristo sem ter o Espírito de Cristo.",
+    "prompt": "O texto ensina que alguém pode ser de Cristo sem ter o Espírito de Cristo.",
+    "cue": "O texto ensina que alguém pode ser de Cristo sem ter o Espírito de Cristo.",
+    "feedbackCorrect": "Certo: quem não tem o Espírito de Cristo não é dele.",
+    "feedbackWrong": {
+      "true": "O texto recusa essa separação: sem o Espírito, não é dele."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Se Cristo está em vós, o corpo, na verdade, está morto por causa do pecado, mas o espírito é vida por causa da justiça.",
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "id": "pneumatologia-cam-pn-02-vida-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Romanos 8:9–11",
+    "learningObjective": "Reconhecer que o Espírito habita no crente e quem não tem o Espírito de Cristo não é dele.",
+    "evidence": [
+      "Romanos 8:9",
+      "Romanos 8:10",
+      "Romanos 8:11"
+    ],
+    "type": "tap",
+    "question": "Em Romanos 8:9–11, toque a palavra que falta em \"não estais sujeitos à ___, mas ao Espírito\"?",
+    "prompt": "Em Romanos 8:9–11, toque a palavra que falta em \"não estais sujeitos à ___, mas ao Espírito\"?",
+    "cue": "Em Romanos 8:9–11, toque a palavra que falta em \"não estais sujeitos à ___, mas ao Espírito\"?",
+    "feedbackCorrect": "Exato: não sujeitos à carne, mas ao Espírito.",
+    "feedbackWrong": {
+      "b": "Justiça explica a vida, não esta lacuna.",
+      "c": "Pecado explica a morte do corpo, depois."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "carne"
+      },
+      {
+        "id": "b",
+        "text": "justiça"
+      },
+      {
+        "id": "c",
+        "text": "pecado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Se Cristo está em vós, o corpo, na verdade, está morto por causa do pecado, mas o espírito é vida por causa da justiça.",
+    "template": "não estais sujeitos à ___, mas ao Espírito",
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "id": "pneumatologia-cam-pn-02-vida-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Romanos 8:9–11",
+    "learningObjective": "Reconhecer que o Espírito habita no crente e quem não tem o Espírito de Cristo não é dele.",
+    "evidence": [
+      "Romanos 8:9",
+      "Romanos 8:10",
+      "Romanos 8:11"
+    ],
+    "type": "choice",
+    "question": "Qual relação o texto estabelece entre o Espírito e pertencer a Cristo?",
+    "prompt": "Qual relação o texto estabelece entre o Espírito e pertencer a Cristo?",
+    "cue": "Qual relação o texto estabelece entre o Espírito e pertencer a Cristo?",
+    "feedbackCorrect": "Certo: sem o Espírito de Cristo, a pessoa não é dele.",
+    "feedbackWrong": {
+      "b": "A carne não substitui o Espírito.",
+      "c": "O Espírito habita em vós, não só à parte do crente.",
+      "d": "Pertencer a Cristo e ter o Espírito caminham juntos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sem o Espírito de Cristo, a pessoa não é dele."
+      },
+      {
+        "id": "b",
+        "text": "A carne substitui o Espírito para quem já crê."
+      },
+      {
+        "id": "c",
+        "text": "O Espírito habita só no corpo, nunca no crente."
+      },
+      {
+        "id": "d",
+        "text": "Pertencer a Cristo independe de ter o Espírito."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Se Cristo está em vós, o corpo, na verdade, está morto por causa do pecado, mas o espírito é vida por causa da justiça.",
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "id": "pneumatologia-cam-pn-02-vida-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Romanos 8:9–11",
+    "learningObjective": "Reconhecer que o Espírito habita no crente e quem não tem o Espírito de Cristo não é dele.",
+    "evidence": [
+      "Romanos 8:9",
+      "Romanos 8:10",
+      "Romanos 8:11"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Romanos 8:9–11?",
+    "prompt": "Como se encadeiam os eventos de Romanos 8:9–11?",
+    "cue": "Como se encadeiam os eventos de Romanos 8:9–11?",
+    "feedbackCorrect": "Certo: habitação, pertencimento e vida por justiça.",
+    "feedbackWrong": {
+      "b": "Não ser dele vem depois da cláusula da habitação.",
+      "c": "A vida por justiça fecha o trecho citado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "o Espírito de Deus habita em vós"
+      },
+      {
+        "id": "b",
+        "text": "se alguém não tem o Espírito de Cristo, esse não é dele"
+      },
+      {
+        "id": "c",
+        "text": "o espírito é vida por causa da justiça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Se Cristo está em vós, o corpo, na verdade, está morto por causa do pecado, mas o espírito é vida por causa da justiça.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "id": "pneumatologia-cam-pn-02-vida-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Romanos 8:9–11",
+    "learningObjective": "Reconhecer que o Espírito habita no crente e quem não tem o Espírito de Cristo não é dele.",
+    "evidence": [
+      "Romanos 8:9",
+      "Romanos 8:10",
+      "Romanos 8:11"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"o corpo, na verdade, está ___ por causa do pecado\"",
+    "prompt": "Complete a frase: \"o corpo, na verdade, está ___ por causa do pecado\"",
+    "cue": "Complete a frase: \"o corpo, na verdade, está ___ por causa do pecado\"",
+    "feedbackCorrect": "Certo: o corpo está morto por causa do pecado.",
+    "feedbackWrong": {
+      "b": "Sujeitos descreve carne e Espírito, não o corpo aqui.",
+      "c": "Dele fala de pertencer a Cristo, não do estado do corpo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "morto"
+      },
+      {
+        "id": "b",
+        "text": "sujeitos"
+      },
+      {
+        "id": "c",
+        "text": "dele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Se Cristo está em vós, o corpo, na verdade, está morto por causa do pecado, mas o espírito é vida por causa da justiça.",
+    "template": "o corpo, na verdade, está ___ por causa do pecado",
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "id": "pneumatologia-cam-pn-02-vida-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Romanos 8:9–11",
+    "learningObjective": "Reconhecer que o Espírito habita no crente e quem não tem o Espírito de Cristo não é dele.",
+    "evidence": [
+      "Romanos 8:9",
+      "Romanos 8:10",
+      "Romanos 8:11"
+    ],
+    "type": "connect",
+    "question": "O que Romanos 8:9–11 comunica que se liga a este contexto?",
+    "prompt": "O que Romanos 8:9–11 comunica que se liga a este contexto?",
+    "cue": "O que Romanos 8:9–11 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o Espírito marca quem é de Cristo.",
+    "feedbackWrong": {
+      "b": "A carne não define o pertencimento neste texto.",
+      "c": "A habitação é real, não um mero símbolo vazio."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito marca quem é de Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Carne define o pertencimento"
+      },
+      {
+        "id": "c",
+        "text": "Habitação é só símbolo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Se Cristo está em vós, o corpo, na verdade, está morto por causa do pecado, mas o espírito é vida por causa da justiça.",
+    "passageA": {
+      "ref": "Romanos 8:9–11",
+      "text": "Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Se Cristo está em vós, o corpo, na verdade, está morto por causa do pecado, mas o espírito é vida por causa da justiça."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Nova vida pelo Espírito: quem não tem o Espírito de Cristo não é dele; o Espírito habita e vivifica."
+    },
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "id": "pneumatologia-cam-pn-02-vida-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Romanos 8:9–11",
+    "learningObjective": "Reconhecer que o Espírito habita no crente e quem não tem o Espírito de Cristo não é dele.",
+    "evidence": [
+      "Romanos 8:9",
+      "Romanos 8:10",
+      "Romanos 8:11"
+    ],
+    "type": "true_false",
+    "question": "A nova vida no texto depende do Espírito que habita, não da carne.",
+    "prompt": "A nova vida no texto depende do Espírito que habita, não da carne.",
+    "cue": "A nova vida no texto depende do Espírito que habita, não da carne.",
+    "feedbackCorrect": "Certo: sujeitos ao Espírito; o espírito é vida por justiça.",
+    "feedbackWrong": {
+      "false": "O trecho opõe carne e Espírito e liga a vida à justiça."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Se Cristo está em vós, o corpo, na verdade, está morto por causa do pecado, mas o espírito é vida por causa da justiça.",
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "id": "pneumatologia-pro-pn-02-vida-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Romanos 8:9–11",
+    "learningObjective": "Reconhecer que o Espírito habita no crente e quem não tem o Espírito de Cristo não é dele.",
+    "evidence": [
+      "Romanos 8:9",
+      "Romanos 8:10",
+      "Romanos 8:11"
+    ],
+    "type": "tap",
+    "question": "Em Romanos 8:9–11, toque a palavra que falta em \"o espírito é ___ por causa da justiça\"?",
+    "prompt": "Em Romanos 8:9–11, toque a palavra que falta em \"o espírito é ___ por causa da justiça\"?",
+    "cue": "Em Romanos 8:9–11, toque a palavra que falta em \"o espírito é ___ por causa da justiça\"?",
+    "feedbackCorrect": "Exato: o espírito é vida por causa da justiça.",
+    "feedbackWrong": {
+      "a": "Carne é o regime recusado, não esta lacuna.",
+      "b": "Corpo está morto; a lacuna pede vida."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "carne"
+      },
+      {
+        "id": "b",
+        "text": "corpo"
+      },
+      {
+        "id": "c",
+        "text": "vida"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Se Cristo está em vós, o corpo, na verdade, está morto por causa do pecado, mas o espírito é vida por causa da justiça.",
+    "template": "o espírito é ___ por causa da justiça",
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "id": "pneumatologia-pro-pn-02-vida-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Romanos 8:9–11",
+    "learningObjective": "Reconhecer que o Espírito habita no crente e quem não tem o Espírito de Cristo não é dele.",
+    "evidence": [
+      "Romanos 8:9",
+      "Romanos 8:10",
+      "Romanos 8:11"
+    ],
+    "type": "choice",
+    "question": "O que o texto implica sobre a identidade do crente?",
+    "prompt": "O que o texto implica sobre a identidade do crente?",
+    "cue": "O que o texto implica sobre a identidade do crente?",
+    "feedbackCorrect": "Certo: ser de Cristo inclui o Espírito que habita e dá vida.",
+    "feedbackWrong": {
+      "b": "O Espírito não é um extra depois da carne.",
+      "c": "A morte do corpo é por causa do pecado, não falha do Espírito.",
+      "d": "Cristo em vós está ligado ao Espírito de Deus e de Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pertencer a Cristo inclui ter o Espírito que habita e dá vida."
+      },
+      {
+        "id": "b",
+        "text": "O Espírito é um extra depois da salvação pela carne."
+      },
+      {
+        "id": "c",
+        "text": "O corpo morto prova que o Espírito falhou."
+      },
+      {
+        "id": "d",
+        "text": "Cristo está em vós sem o Espírito de Deus."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Se Cristo está em vós, o corpo, na verdade, está morto por causa do pecado, mas o espírito é vida por causa da justiça.",
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "id": "pneumatologia-pro-pn-02-vida-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Romanos 8:9–11",
+    "learningObjective": "Reconhecer que o Espírito habita no crente e quem não tem o Espírito de Cristo não é dele.",
+    "evidence": [
+      "Romanos 8:9",
+      "Romanos 8:10",
+      "Romanos 8:11"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Romanos 8:9–11?",
+    "prompt": "Qual sequência revela o sentido de Romanos 8:9–11?",
+    "cue": "Qual sequência revela o sentido de Romanos 8:9–11?",
+    "feedbackCorrect": "Certo: sujeição ao Espírito, pertencimento e vida.",
+    "feedbackWrong": {
+      "b": "Não ser dele vem no meio da argumentação.",
+      "c": "A vida por justiça é o desfecho, não o início."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "não estais sujeitos à carne, mas ao Espírito"
+      },
+      {
+        "id": "b",
+        "text": "se alguém não tem o Espírito de Cristo, esse não é dele"
+      },
+      {
+        "id": "c",
+        "text": "o espírito é vida por causa da justiça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Se Cristo está em vós, o corpo, na verdade, está morto por causa do pecado, mas o espírito é vida por causa da justiça.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "id": "pneumatologia-pro-pn-02-vida-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Romanos 8:9–11",
+    "learningObjective": "Reconhecer que o Espírito habita no crente e quem não tem o Espírito de Cristo não é dele.",
+    "evidence": [
+      "Romanos 8:9",
+      "Romanos 8:10",
+      "Romanos 8:11"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"se realmente o Espírito de ___ habita em vós\"",
+    "prompt": "Complete a frase: \"se realmente o Espírito de ___ habita em vós\"",
+    "cue": "Complete a frase: \"se realmente o Espírito de ___ habita em vós\"",
+    "feedbackCorrect": "Certo: o Espírito de Deus habita em vós.",
+    "feedbackWrong": {
+      "b": "Pecado explica a morte do corpo, não quem habita.",
+      "c": "Corpo é o que está morto, não o dono do Espírito."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus"
+      },
+      {
+        "id": "b",
+        "text": "pecado"
+      },
+      {
+        "id": "c",
+        "text": "corpo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Se Cristo está em vós, o corpo, na verdade, está morto por causa do pecado, mas o espírito é vida por causa da justiça.",
+    "template": "se realmente o Espírito de ___ habita em vós",
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "id": "pneumatologia-pro-pn-02-vida-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Romanos 8:9–11",
+    "learningObjective": "Reconhecer que o Espírito habita no crente e quem não tem o Espírito de Cristo não é dele.",
+    "evidence": [
+      "Romanos 8:9",
+      "Romanos 8:10",
+      "Romanos 8:11"
+    ],
+    "type": "connect",
+    "question": "O que Romanos 8:9–11 comunica que se liga a este contexto?",
+    "prompt": "O que Romanos 8:9–11 comunica que se liga a este contexto?",
+    "cue": "O que Romanos 8:9–11 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a nova vida vem pelo Espírito que habita.",
+    "feedbackWrong": {
+      "b": "A carne não é a fonte desta vida.",
+      "c": "O texto não separa Cristo do Espírito."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Nova vida pelo Espírito"
+      },
+      {
+        "id": "b",
+        "text": "Vida só pela carne"
+      },
+      {
+        "id": "c",
+        "text": "Cristo sem o Espírito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Se Cristo está em vós, o corpo, na verdade, está morto por causa do pecado, mas o espírito é vida por causa da justiça.",
+    "passageA": {
+      "ref": "Romanos 8:9–11",
+      "text": "Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Se Cristo está em vós, o corpo, na verdade, está morto por causa do pecado, mas o espírito é vida por causa da justiça."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Nova vida pelo Espírito: quem não tem o Espírito de Cristo não é dele; o Espírito habita e vivifica."
+    },
+    "trail": "pneumatologia",
+    "section": "pn-02-vida",
+    "id": "pneumatologia-pro-pn-02-vida-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Reconhecer que o Espírito produz caráter — contra o fruto não há lei.",
+    "evidence": [
+      "Gálatas 5:22",
+      "Gálatas 5:23"
+    ],
+    "type": "true_false",
+    "question": "O fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança.",
+    "prompt": "O fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança.",
+    "cue": "O fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança.",
+    "feedbackCorrect": "Certo: Gálatas 5:22–23 lista exatamente esse fruto.",
+    "feedbackWrong": {
+      "false": "Releia a lista: o texto nomeia esse fruto do Espírito."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "id": "pneumatologia-sem-pn-03-fruto-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Reconhecer que o Espírito produz caráter — contra o fruto não há lei.",
+    "evidence": [
+      "Gálatas 5:22",
+      "Gálatas 5:23"
+    ],
+    "type": "tap",
+    "question": "Em Gálatas 5:22–23, toque a palavra que falta em \"Mas o ___ do Espírito é a caridade\"?",
+    "prompt": "Em Gálatas 5:22–23, toque a palavra que falta em \"Mas o ___ do Espírito é a caridade\"?",
+    "cue": "Em Gálatas 5:22–23, toque a palavra que falta em \"Mas o ___ do Espírito é a caridade\"?",
+    "feedbackCorrect": "Exato: o texto fala do fruto do Espírito.",
+    "feedbackWrong": {
+      "b": "Lei aparece no fim: contra tais coisas não há lei.",
+      "c": "Paz é item da lista, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "fruto"
+      },
+      {
+        "id": "b",
+        "text": "lei"
+      },
+      {
+        "id": "c",
+        "text": "paz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "template": "Mas o ___ do Espírito é a caridade",
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "id": "pneumatologia-sem-pn-03-fruto-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Reconhecer que o Espírito produz caráter — contra o fruto não há lei.",
+    "evidence": [
+      "Gálatas 5:22",
+      "Gálatas 5:23"
+    ],
+    "type": "choice",
+    "question": "O que Gálatas 5:22–23 lista como fruto do Espírito?",
+    "prompt": "O que Gálatas 5:22–23 lista como fruto do Espírito?",
+    "cue": "O que Gálatas 5:22–23 lista como fruto do Espírito?",
+    "feedbackCorrect": "Certo: caridade, gozo, paz e as demais virtudes citadas.",
+    "feedbackWrong": {
+      "b": "A lei não é o primeiro fruto; contra o fruto não há lei.",
+      "c": "Ira e discórdia não estão nesta lista.",
+      "d": "O texto descreve caráter, não só dons milagrosos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Caridade, gozo, paz, longanimidade e as demais virtudes citadas."
+      },
+      {
+        "id": "b",
+        "text": "A lei mosaica como primeiro fruto do Espírito."
+      },
+      {
+        "id": "c",
+        "text": "Ira, discórdia e ciúmes como fruto do Espírito."
+      },
+      {
+        "id": "d",
+        "text": "Somente dons milagrosos, sem traço de caráter."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "id": "pneumatologia-sem-pn-03-fruto-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Reconhecer que o Espírito produz caráter — contra o fruto não há lei.",
+    "evidence": [
+      "Gálatas 5:22",
+      "Gálatas 5:23"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Gálatas 5:22–23?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Gálatas 5:22–23?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Gálatas 5:22–23?",
+    "feedbackCorrect": "Certo: essa é a ordem da lista e do fecho.",
+    "feedbackWrong": {
+      "b": "Longanimidade vem depois de caridade, gozo e paz.",
+      "c": "A frase sobre a lei fecha o trecho."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "o fruto do Espírito é a caridade, o gozo, a paz"
+      },
+      {
+        "id": "b",
+        "text": "a longanimidade, a benignidade, a bondade"
+      },
+      {
+        "id": "c",
+        "text": "Contra tais coisas não há lei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "id": "pneumatologia-sem-pn-03-fruto-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Reconhecer que o Espírito produz caráter — contra o fruto não há lei.",
+    "evidence": [
+      "Gálatas 5:22",
+      "Gálatas 5:23"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Contra tais coisas não há ___\"",
+    "prompt": "Complete a frase: \"Contra tais coisas não há ___\"",
+    "cue": "Complete a frase: \"Contra tais coisas não há ___\"",
+    "feedbackCorrect": "Certo: contra tais coisas não há lei.",
+    "feedbackWrong": {
+      "b": "Caridade abre a lista, não fecha esta frase.",
+      "c": "Paz é um item do fruto, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "lei"
+      },
+      {
+        "id": "b",
+        "text": "caridade"
+      },
+      {
+        "id": "c",
+        "text": "paz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "template": "Contra tais coisas não há ___",
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "id": "pneumatologia-sem-pn-03-fruto-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Reconhecer que o Espírito produz caráter — contra o fruto não há lei.",
+    "evidence": [
+      "Gálatas 5:22",
+      "Gálatas 5:23"
+    ],
+    "type": "connect",
+    "question": "O que Gálatas 5:22–23 comunica que se liga a este contexto?",
+    "prompt": "O que Gálatas 5:22–23 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 5:22–23 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o Espírito produz caráter.",
+    "feedbackWrong": {
+      "b": "O fruto não se reduz a emoção passageira.",
+      "c": "O texto diz que contra o fruto não há lei."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito produz caráter"
+      },
+      {
+        "id": "b",
+        "text": "Fruto é só emoção"
+      },
+      {
+        "id": "c",
+        "text": "Lei anula o fruto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "passageA": {
+      "ref": "Gálatas 5:22–23",
+      "text": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Fruto e dons: o Espírito produz caráter — contra o fruto não há lei."
+    },
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "id": "pneumatologia-sem-pn-03-fruto-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Reconhecer que o Espírito produz caráter — contra o fruto não há lei.",
+    "evidence": [
+      "Gálatas 5:22",
+      "Gálatas 5:23"
+    ],
+    "type": "true_false",
+    "question": "O texto ensina que contra o fruto do Espírito há uma lei que o restringe.",
+    "prompt": "O texto ensina que contra o fruto do Espírito há uma lei que o restringe.",
+    "cue": "O texto ensina que contra o fruto do Espírito há uma lei que o restringe.",
+    "feedbackCorrect": "Certo: contra tais coisas não há lei.",
+    "feedbackWrong": {
+      "true": "O texto afirma o contrário: não há lei contra esse fruto."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "id": "pneumatologia-cam-pn-03-fruto-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Reconhecer que o Espírito produz caráter — contra o fruto não há lei.",
+    "evidence": [
+      "Gálatas 5:22",
+      "Gálatas 5:23"
+    ],
+    "type": "tap",
+    "question": "Em Gálatas 5:22–23, toque a palavra que falta em \"Contra tais coisas não há ___\"?",
+    "prompt": "Em Gálatas 5:22–23, toque a palavra que falta em \"Contra tais coisas não há ___\"?",
+    "cue": "Em Gálatas 5:22–23, toque a palavra que falta em \"Contra tais coisas não há ___\"?",
+    "feedbackCorrect": "Exato: não há lei contra tais coisas.",
+    "feedbackWrong": {
+      "b": "Gozo é item do fruto, não esta lacuna.",
+      "c": "Bondade também está na lista, não aqui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "lei"
+      },
+      {
+        "id": "b",
+        "text": "gozo"
+      },
+      {
+        "id": "c",
+        "text": "bondade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "template": "Contra tais coisas não há ___",
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "id": "pneumatologia-cam-pn-03-fruto-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Reconhecer que o Espírito produz caráter — contra o fruto não há lei.",
+    "evidence": [
+      "Gálatas 5:22",
+      "Gálatas 5:23"
+    ],
+    "type": "choice",
+    "question": "O que o texto distingue ao chamar isso de fruto do Espírito?",
+    "prompt": "O que o texto distingue ao chamar isso de fruto do Espírito?",
+    "cue": "O que o texto distingue ao chamar isso de fruto do Espírito?",
+    "feedbackCorrect": "Certo: é caráter que o Espírito produz, sem lei contra ele.",
+    "feedbackWrong": {
+      "b": "A lista é de virtudes, não de dons para exibir.",
+      "c": "Obras da carne não são rebatizadas aqui.",
+      "d": "O fruto não nasce da lei por esforço próprio."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Caráter produzido pelo Espírito, sem lei que o condene."
+      },
+      {
+        "id": "b",
+        "text": "Uma lista de dons para exibir na assembleia."
+      },
+      {
+        "id": "c",
+        "text": "Obras da carne com nomes piedosos."
+      },
+      {
+        "id": "d",
+        "text": "Regras da lei que geram o fruto por esforço."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "id": "pneumatologia-cam-pn-03-fruto-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Reconhecer que o Espírito produz caráter — contra o fruto não há lei.",
+    "evidence": [
+      "Gálatas 5:22",
+      "Gálatas 5:23"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Gálatas 5:22–23?",
+    "prompt": "Como se encadeiam os eventos de Gálatas 5:22–23?",
+    "cue": "Como se encadeiam os eventos de Gálatas 5:22–23?",
+    "feedbackCorrect": "Certo: a lista avança nessa ordem.",
+    "feedbackWrong": {
+      "b": "Gozo e paz vêm logo após a caridade.",
+      "c": "Fidelidade, mansidão e temperança fecham a lista."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas o fruto do Espírito é a caridade"
+      },
+      {
+        "id": "b",
+        "text": "o gozo, a paz, a longanimidade, a benignidade, a bondade"
+      },
+      {
+        "id": "c",
+        "text": "a fidelidade, a mansidão, a temperança"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "id": "pneumatologia-cam-pn-03-fruto-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Reconhecer que o Espírito produz caráter — contra o fruto não há lei.",
+    "evidence": [
+      "Gálatas 5:22",
+      "Gálatas 5:23"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"o fruto do Espírito é a ___\"",
+    "prompt": "Complete a frase: \"o fruto do Espírito é a ___\"",
+    "cue": "Complete a frase: \"o fruto do Espírito é a ___\"",
+    "feedbackCorrect": "Certo: o primeiro nome da lista é caridade.",
+    "feedbackWrong": {
+      "b": "Lei aparece no fecho, não como o fruto.",
+      "c": "Coisas aponta para o conjunto, não para o primeiro item."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "caridade"
+      },
+      {
+        "id": "b",
+        "text": "lei"
+      },
+      {
+        "id": "c",
+        "text": "coisas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "template": "o fruto do Espírito é a ___",
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "id": "pneumatologia-cam-pn-03-fruto-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Reconhecer que o Espírito produz caráter — contra o fruto não há lei.",
+    "evidence": [
+      "Gálatas 5:22",
+      "Gálatas 5:23"
+    ],
+    "type": "connect",
+    "question": "O que Gálatas 5:22–23 comunica que se liga a este contexto?",
+    "prompt": "O que Gálatas 5:22–23 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 5:22–23 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: há fruto, e contra ele não há lei.",
+    "feedbackWrong": {
+      "b": "O texto recusa lei contra esse fruto.",
+      "c": "Fruto aqui é caráter, não só um dom à parte."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fruto, não lei contra ele"
+      },
+      {
+        "id": "b",
+        "text": "Lei contra o fruto"
+      },
+      {
+        "id": "c",
+        "text": "Fruto é só um dom"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "passageA": {
+      "ref": "Gálatas 5:22–23",
+      "text": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Fruto e dons: o Espírito produz caráter — contra o fruto não há lei."
+    },
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "id": "pneumatologia-cam-pn-03-fruto-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Reconhecer que o Espírito produz caráter — contra o fruto não há lei.",
+    "evidence": [
+      "Gálatas 5:22",
+      "Gálatas 5:23"
+    ],
+    "type": "true_false",
+    "question": "O Espírito, neste texto, produz caráter visível, e contra esse fruto não há lei.",
+    "prompt": "O Espírito, neste texto, produz caráter visível, e contra esse fruto não há lei.",
+    "cue": "O Espírito, neste texto, produz caráter visível, e contra esse fruto não há lei.",
+    "feedbackCorrect": "Certo: a lista é de caráter, e não há lei contra ele.",
+    "feedbackWrong": {
+      "false": "O trecho une fruto de caráter e a ausência de lei contra ele."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "id": "pneumatologia-pro-pn-03-fruto-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Reconhecer que o Espírito produz caráter — contra o fruto não há lei.",
+    "evidence": [
+      "Gálatas 5:22",
+      "Gálatas 5:23"
+    ],
+    "type": "tap",
+    "question": "Em Gálatas 5:22–23, toque a palavra que falta em \"a ___, a temperança\"?",
+    "prompt": "Em Gálatas 5:22–23, toque a palavra que falta em \"a ___, a temperança\"?",
+    "cue": "Em Gálatas 5:22–23, toque a palavra que falta em \"a ___, a temperança\"?",
+    "feedbackCorrect": "Exato: a mansidão, a temperança.",
+    "feedbackWrong": {
+      "b": "Lei fecha o versículo, não esta lacuna.",
+      "c": "Fruto nomeia o conjunto, não o penúltimo item."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "mansidão"
+      },
+      {
+        "id": "b",
+        "text": "lei"
+      },
+      {
+        "id": "c",
+        "text": "fruto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "template": "a ___, a temperança",
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "id": "pneumatologia-pro-pn-03-fruto-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Reconhecer que o Espírito produz caráter — contra o fruto não há lei.",
+    "evidence": [
+      "Gálatas 5:22",
+      "Gálatas 5:23"
+    ],
+    "type": "choice",
+    "question": "Qual leitura o texto sustenta sobre o fruto do Espírito?",
+    "prompt": "Qual leitura o texto sustenta sobre o fruto do Espírito?",
+    "cue": "Qual leitura o texto sustenta sobre o fruto do Espírito?",
+    "feedbackCorrect": "Certo: o Espírito forma caráter, e contra ele não há lei.",
+    "feedbackWrong": {
+      "b": "O texto não diz que o fruto substitui Cristo.",
+      "c": "Caráter é a prova aqui, não só o espetáculo de dons.",
+      "d": "A lei não produz o fruto neste trecho."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O Espírito forma caráter; contra esse fruto não há lei."
+      },
+      {
+        "id": "b",
+        "text": "O fruto substitui Cristo e torna a lei inútil para todos."
+      },
+      {
+        "id": "c",
+        "text": "Só dons espetaculares provam o Espírito, não o caráter."
+      },
+      {
+        "id": "d",
+        "text": "A lei produz o fruto e o Espírito apenas observa."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "id": "pneumatologia-pro-pn-03-fruto-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Reconhecer que o Espírito produz caráter — contra o fruto não há lei.",
+    "evidence": [
+      "Gálatas 5:22",
+      "Gálatas 5:23"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Gálatas 5:22–23?",
+    "prompt": "Qual sequência revela o sentido de Gálatas 5:22–23?",
+    "cue": "Qual sequência revela o sentido de Gálatas 5:22–23?",
+    "feedbackCorrect": "Certo: fruto, lista de caráter e ausência de lei.",
+    "feedbackWrong": {
+      "b": "A tríade final vem depois da caridade.",
+      "c": "A frase sobre a lei é o sentido final."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "o fruto do Espírito é a caridade"
+      },
+      {
+        "id": "b",
+        "text": "a fidelidade, a mansidão, a temperança"
+      },
+      {
+        "id": "c",
+        "text": "Contra tais coisas não há lei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "id": "pneumatologia-pro-pn-03-fruto-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Reconhecer que o Espírito produz caráter — contra o fruto não há lei.",
+    "evidence": [
+      "Gálatas 5:22",
+      "Gálatas 5:23"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Mas o fruto do ___ é a caridade\"",
+    "prompt": "Complete a frase: \"Mas o fruto do ___ é a caridade\"",
+    "cue": "Complete a frase: \"Mas o fruto do ___ é a caridade\"",
+    "feedbackCorrect": "Certo: o fruto do Espírito.",
+    "feedbackWrong": {
+      "b": "Lei não produz o fruto neste versículo.",
+      "c": "Paz é item da lista, não o sujeito da frase."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito"
+      },
+      {
+        "id": "b",
+        "text": "lei"
+      },
+      {
+        "id": "c",
+        "text": "paz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "template": "Mas o fruto do ___ é a caridade",
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "id": "pneumatologia-pro-pn-03-fruto-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Gálatas 5:22–23",
+    "learningObjective": "Reconhecer que o Espírito produz caráter — contra o fruto não há lei.",
+    "evidence": [
+      "Gálatas 5:22",
+      "Gálatas 5:23"
+    ],
+    "type": "connect",
+    "question": "O que Gálatas 5:22–23 comunica que se liga a este contexto?",
+    "prompt": "O que Gálatas 5:22–23 comunica que se liga a este contexto?",
+    "cue": "O que Gálatas 5:22–23 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: caráter contra o qual não há lei.",
+    "feedbackWrong": {
+      "b": "A lei não é a fonte deste caráter.",
+      "c": "O texto não trata o fruto como opcional."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Caráter contra o qual não há lei"
+      },
+      {
+        "id": "b",
+        "text": "Lei gera o caráter"
+      },
+      {
+        "id": "c",
+        "text": "Fruto opcional no crente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei.",
+    "passageA": {
+      "ref": "Gálatas 5:22–23",
+      "text": "Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança. Contra tais coisas não há lei."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Fruto e dons: o Espírito produz caráter — contra o fruto não há lei."
+    },
+    "trail": "pneumatologia",
+    "section": "pn-03-fruto",
+    "id": "pneumatologia-pro-pn-03-fruto-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 5:4; Romanos 8:9; Gálatas 5:22",
+    "learningObjective": "Integrar vida no Espírito: ele é Deus, habita no crente e produz fruto.",
+    "evidence": [
+      "Atos 5:4",
+      "Romanos 8:9",
+      "Gálatas 5:22"
+    ],
+    "type": "true_false",
+    "question": "Não mentiste aos homens, mas a Deus; o Espírito de Deus habita em vós; o fruto do Espírito é a caridade.",
+    "prompt": "Não mentiste aos homens, mas a Deus; o Espírito de Deus habita em vós; o fruto do Espírito é a caridade.",
+    "cue": "Não mentiste aos homens, mas a Deus; o Espírito de Deus habita em vós; o fruto do Espírito é a caridade.",
+    "feedbackCorrect": "Certo: os três trechos afirmam Deus, habitação e fruto.",
+    "feedbackWrong": {
+      "false": "Os três textos combinados dizem exatamente isso."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Não mentiste aos homens, mas a Deus. Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança.",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "id": "pneumatologia-sem-pn-boss-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 5:4; Romanos 8:9; Gálatas 5:22",
+    "learningObjective": "Integrar vida no Espírito: ele é Deus, habita no crente e produz fruto.",
+    "evidence": [
+      "Atos 5:4",
+      "Romanos 8:9",
+      "Gálatas 5:22"
+    ],
+    "type": "tap",
+    "question": "Em Atos 5:4; Romanos 8:9; Gálatas 5:22, toque a palavra que falta em \"Não mentiste aos homens, mas a ___\"?",
+    "prompt": "Em Atos 5:4; Romanos 8:9; Gálatas 5:22, toque a palavra que falta em \"Não mentiste aos homens, mas a ___\"?",
+    "cue": "Em Atos 5:4; Romanos 8:9; Gálatas 5:22, toque a palavra que falta em \"Não mentiste aos homens, mas a ___\"?",
+    "feedbackCorrect": "Exato: a mentira foi a Deus.",
+    "feedbackWrong": {
+      "b": "Carne está em Romanos 8:9, não nesta lacuna.",
+      "c": "Caridade abre o fruto, não esta frase."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus"
+      },
+      {
+        "id": "b",
+        "text": "carne"
+      },
+      {
+        "id": "c",
+        "text": "caridade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Não mentiste aos homens, mas a Deus. Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança.",
+    "template": "Não mentiste aos homens, mas a ___",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "id": "pneumatologia-sem-pn-boss-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 5:4; Romanos 8:9; Gálatas 5:22",
+    "learningObjective": "Integrar vida no Espírito: ele é Deus, habita no crente e produz fruto.",
+    "evidence": [
+      "Atos 5:4",
+      "Romanos 8:9",
+      "Gálatas 5:22"
+    ],
+    "type": "choice",
+    "question": "O que os três textos afirmam juntos sobre o Espírito?",
+    "prompt": "O que os três textos afirmam juntos sobre o Espírito?",
+    "cue": "O que os três textos afirmam juntos sobre o Espírito?",
+    "feedbackCorrect": "Certo: ele é Deus, habita no crente e produz fruto.",
+    "feedbackWrong": {
+      "b": "Os trechos recusam reduzí-lo a energia sem habitação.",
+      "c": "Atos liga a mentira ao Espírito com mentira a Deus.",
+      "d": "O fruto é caridade e virtudes, não a lei."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O Espírito é Deus, habita no crente e produz fruto."
+      },
+      {
+        "id": "b",
+        "text": "O Espírito é só energia, sem habitação nem fruto."
+      },
+      {
+        "id": "c",
+        "text": "Mentir ao Espírito não tem relação com Deus."
+      },
+      {
+        "id": "d",
+        "text": "O fruto do Espírito é a lei mosaica."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Não mentiste aos homens, mas a Deus. Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança.",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "id": "pneumatologia-sem-pn-boss-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 5:4; Romanos 8:9; Gálatas 5:22",
+    "learningObjective": "Integrar vida no Espírito: ele é Deus, habita no crente e produz fruto.",
+    "evidence": [
+      "Atos 5:4",
+      "Romanos 8:9",
+      "Gálatas 5:22"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Atos 5:4; Romanos 8:9; Gálatas 5:22?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Atos 5:4; Romanos 8:9; Gálatas 5:22?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Atos 5:4; Romanos 8:9; Gálatas 5:22?",
+    "feedbackCorrect": "Certo: Deus, habitação e fruto nessa ordem.",
+    "feedbackWrong": {
+      "b": "A habitação vem no segundo trecho.",
+      "c": "O fruto fecha a combinação."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Não mentiste aos homens, mas a Deus"
+      },
+      {
+        "id": "b",
+        "text": "se realmente o Espírito de Deus habita em vós"
+      },
+      {
+        "id": "c",
+        "text": "Mas o fruto do Espírito é a caridade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Não mentiste aos homens, mas a Deus. Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "id": "pneumatologia-sem-pn-boss-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 5:4; Romanos 8:9; Gálatas 5:22",
+    "learningObjective": "Integrar vida no Espírito: ele é Deus, habita no crente e produz fruto.",
+    "evidence": [
+      "Atos 5:4",
+      "Romanos 8:9",
+      "Gálatas 5:22"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"se realmente o Espírito de Deus ___ em vós\"",
+    "prompt": "Complete a frase: \"se realmente o Espírito de Deus ___ em vós\"",
+    "cue": "Complete a frase: \"se realmente o Espírito de Deus ___ em vós\"",
+    "feedbackCorrect": "Certo: o Espírito de Deus habita em vós.",
+    "feedbackWrong": {
+      "b": "Homens está em Atos 5:4, não nesta lacuna.",
+      "c": "Gozo é item do fruto, não o verbo da habitação."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "habita"
+      },
+      {
+        "id": "b",
+        "text": "homens"
+      },
+      {
+        "id": "c",
+        "text": "gozo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Não mentiste aos homens, mas a Deus. Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança.",
+    "template": "se realmente o Espírito de Deus ___ em vós",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "id": "pneumatologia-sem-pn-boss-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Atos 5:4; Romanos 8:9; Gálatas 5:22",
+    "learningObjective": "Integrar vida no Espírito: ele é Deus, habita no crente e produz fruto.",
+    "evidence": [
+      "Atos 5:4",
+      "Romanos 8:9",
+      "Gálatas 5:22"
+    ],
+    "type": "connect",
+    "question": "O que Atos 5:4; Romanos 8:9; Gálatas 5:22 comunica que se liga a este contexto?",
+    "prompt": "O que Atos 5:4; Romanos 8:9; Gálatas 5:22 comunica que se liga a este contexto?",
+    "cue": "O que Atos 5:4; Romanos 8:9; Gálatas 5:22 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Deus, habitação e fruto se unem.",
+    "feedbackWrong": {
+      "b": "Os textos não o deixam como poder impessoal.",
+      "c": "O fruto vem do Espírito que habita, não sem ele."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus, habitação e fruto"
+      },
+      {
+        "id": "b",
+        "text": "Só poder impessoal"
+      },
+      {
+        "id": "c",
+        "text": "Fruto sem o Espírito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Não mentiste aos homens, mas a Deus. Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança.",
+    "passageA": {
+      "ref": "Atos 5:4; Romanos 8:9; Gálatas 5:22",
+      "text": "Não mentiste aos homens, mas a Deus. Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Vida no Espírito: ele é Deus, habita no crente e produz fruto."
+    },
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "id": "pneumatologia-sem-pn-boss-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 5:4; Romanos 8:9; Gálatas 5:22",
+    "learningObjective": "Integrar vida no Espírito: ele é Deus, habita no crente e produz fruto.",
+    "evidence": [
+      "Atos 5:4",
+      "Romanos 8:9",
+      "Gálatas 5:22"
+    ],
+    "type": "true_false",
+    "question": "Os três textos ensinam que o Espírito é um poder impessoal que não habita nem produz caráter.",
+    "prompt": "Os três textos ensinam que o Espírito é um poder impessoal que não habita nem produz caráter.",
+    "cue": "Os três textos ensinam que o Espírito é um poder impessoal que não habita nem produz caráter.",
+    "feedbackCorrect": "Certo: os trechos o ligam a Deus, à habitação e ao fruto.",
+    "feedbackWrong": {
+      "true": "Isso contradiz a combinação: Deus, habita e produz fruto."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Não mentiste aos homens, mas a Deus. Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança.",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "id": "pneumatologia-cam-pn-boss-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 5:4; Romanos 8:9; Gálatas 5:22",
+    "learningObjective": "Integrar vida no Espírito: ele é Deus, habita no crente e produz fruto.",
+    "evidence": [
+      "Atos 5:4",
+      "Romanos 8:9",
+      "Gálatas 5:22"
+    ],
+    "type": "tap",
+    "question": "Em Atos 5:4; Romanos 8:9; Gálatas 5:22, toque a palavra que falta em \"Mas o fruto do Espírito é a ___\"?",
+    "prompt": "Em Atos 5:4; Romanos 8:9; Gálatas 5:22, toque a palavra que falta em \"Mas o fruto do Espírito é a ___\"?",
+    "cue": "Em Atos 5:4; Romanos 8:9; Gálatas 5:22, toque a palavra que falta em \"Mas o fruto do Espírito é a ___\"?",
+    "feedbackCorrect": "Exato: o fruto do Espírito é a caridade.",
+    "feedbackWrong": {
+      "b": "Homens está em Atos 5:4, não nesta lacuna.",
+      "c": "Carne está em Romanos 8:9, não aqui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "caridade"
+      },
+      {
+        "id": "b",
+        "text": "homens"
+      },
+      {
+        "id": "c",
+        "text": "carne"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Não mentiste aos homens, mas a Deus. Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança.",
+    "template": "Mas o fruto do Espírito é a ___",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "id": "pneumatologia-cam-pn-boss-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 5:4; Romanos 8:9; Gálatas 5:22",
+    "learningObjective": "Integrar vida no Espírito: ele é Deus, habita no crente e produz fruto.",
+    "evidence": [
+      "Atos 5:4",
+      "Romanos 8:9",
+      "Gálatas 5:22"
+    ],
+    "type": "choice",
+    "question": "Como os três trechos se encadeiam na vida no Espírito?",
+    "prompt": "Como os três trechos se encadeiam na vida no Espírito?",
+    "cue": "Como os três trechos se encadeiam na vida no Espírito?",
+    "feedbackCorrect": "Certo: ele é Deus, habita em quem é de Cristo e gera fruto.",
+    "feedbackWrong": {
+      "b": "A ordem do texto não começa pelo fruto sem ser Deus.",
+      "c": "Mentir a Deus está ligado ao Espírito, não separado.",
+      "d": "O fruto não nasce da carne sem o Espírito."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele é Deus, habita no que é de Cristo e gera fruto."
+      },
+      {
+        "id": "b",
+        "text": "Primeiro vem o fruto, depois a habitação, sem ser Deus."
+      },
+      {
+        "id": "c",
+        "text": "Mentir a Deus não envolve o Espírito que habita."
+      },
+      {
+        "id": "d",
+        "text": "O crente produz fruto pela carne, sem o Espírito."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Não mentiste aos homens, mas a Deus. Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança.",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "id": "pneumatologia-cam-pn-boss-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 5:4; Romanos 8:9; Gálatas 5:22",
+    "learningObjective": "Integrar vida no Espírito: ele é Deus, habita no crente e produz fruto.",
+    "evidence": [
+      "Atos 5:4",
+      "Romanos 8:9",
+      "Gálatas 5:22"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Atos 5:4; Romanos 8:9; Gálatas 5:22?",
+    "prompt": "Como se encadeiam os eventos de Atos 5:4; Romanos 8:9; Gálatas 5:22?",
+    "cue": "Como se encadeiam os eventos de Atos 5:4; Romanos 8:9; Gálatas 5:22?",
+    "feedbackCorrect": "Certo: mentira a Deus, pertencimento e fruto.",
+    "feedbackWrong": {
+      "b": "Não ser dele vem no segundo trecho.",
+      "c": "O fruto fecha a cadeia combinada."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Não mentiste aos homens, mas a Deus"
+      },
+      {
+        "id": "b",
+        "text": "se alguém não tem o Espírito de Cristo, esse não é dele"
+      },
+      {
+        "id": "c",
+        "text": "o fruto do Espírito é a caridade, o gozo, a paz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Não mentiste aos homens, mas a Deus. Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "id": "pneumatologia-cam-pn-boss-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 5:4; Romanos 8:9; Gálatas 5:22",
+    "learningObjective": "Integrar vida no Espírito: ele é Deus, habita no crente e produz fruto.",
+    "evidence": [
+      "Atos 5:4",
+      "Romanos 8:9",
+      "Gálatas 5:22"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"não estais sujeitos à ___, mas ao Espírito\"",
+    "prompt": "Complete a frase: \"não estais sujeitos à ___, mas ao Espírito\"",
+    "cue": "Complete a frase: \"não estais sujeitos à ___, mas ao Espírito\"",
+    "feedbackCorrect": "Certo: não sujeitos à carne, mas ao Espírito.",
+    "feedbackWrong": {
+      "b": "Caridade é o fruto, não o regime recusado.",
+      "c": "Deus é o alvo da mentira em Atos, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "carne"
+      },
+      {
+        "id": "b",
+        "text": "caridade"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Não mentiste aos homens, mas a Deus. Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança.",
+    "template": "não estais sujeitos à ___, mas ao Espírito",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "id": "pneumatologia-cam-pn-boss-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Atos 5:4; Romanos 8:9; Gálatas 5:22",
+    "learningObjective": "Integrar vida no Espírito: ele é Deus, habita no crente e produz fruto.",
+    "evidence": [
+      "Atos 5:4",
+      "Romanos 8:9",
+      "Gálatas 5:22"
+    ],
+    "type": "connect",
+    "question": "O que Atos 5:4; Romanos 8:9; Gálatas 5:22 comunica que se liga a este contexto?",
+    "prompt": "O que Atos 5:4; Romanos 8:9; Gálatas 5:22 comunica que se liga a este contexto?",
+    "cue": "O que Atos 5:4; Romanos 8:9; Gálatas 5:22 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a vida no Espírito une os três temas.",
+    "feedbackWrong": {
+      "b": "Os trechos não ficam soltos: Deus, habita e frutifica.",
+      "c": "A carne não ocupa o lugar do Espírito."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Vida no Espírito unida"
+      },
+      {
+        "id": "b",
+        "text": "Três temas desligados"
+      },
+      {
+        "id": "c",
+        "text": "Carne no lugar do Espírito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Não mentiste aos homens, mas a Deus. Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança.",
+    "passageA": {
+      "ref": "Atos 5:4; Romanos 8:9; Gálatas 5:22",
+      "text": "Não mentiste aos homens, mas a Deus. Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Vida no Espírito: ele é Deus, habita no crente e produz fruto."
+    },
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "id": "pneumatologia-cam-pn-boss-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 5:4; Romanos 8:9; Gálatas 5:22",
+    "learningObjective": "Integrar vida no Espírito: ele é Deus, habita no crente e produz fruto.",
+    "evidence": [
+      "Atos 5:4",
+      "Romanos 8:9",
+      "Gálatas 5:22"
+    ],
+    "type": "true_false",
+    "question": "A vida no Espírito, segundo os três textos, une divindade, habitação e fruto de caráter.",
+    "prompt": "A vida no Espírito, segundo os três textos, une divindade, habitação e fruto de caráter.",
+    "cue": "A vida no Espírito, segundo os três textos, une divindade, habitação e fruto de caráter.",
+    "feedbackCorrect": "Certo: Deus, habita no crente e produz fruto.",
+    "feedbackWrong": {
+      "false": "Essa é a síntese que os três trechos sustentam juntos."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Não mentiste aos homens, mas a Deus. Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança.",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "id": "pneumatologia-pro-pn-boss-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 5:4; Romanos 8:9; Gálatas 5:22",
+    "learningObjective": "Integrar vida no Espírito: ele é Deus, habita no crente e produz fruto.",
+    "evidence": [
+      "Atos 5:4",
+      "Romanos 8:9",
+      "Gálatas 5:22"
+    ],
+    "type": "tap",
+    "question": "Em Atos 5:4; Romanos 8:9; Gálatas 5:22, toque a palavra que falta em \"se realmente o Espírito de Deus ___ em vós\"?",
+    "prompt": "Em Atos 5:4; Romanos 8:9; Gálatas 5:22, toque a palavra que falta em \"se realmente o Espírito de Deus ___ em vós\"?",
+    "cue": "Em Atos 5:4; Romanos 8:9; Gálatas 5:22, toque a palavra que falta em \"se realmente o Espírito de Deus ___ em vós\"?",
+    "feedbackCorrect": "Exato: o Espírito de Deus habita em vós.",
+    "feedbackWrong": {
+      "b": "Temperança fecha a lista do fruto, não esta lacuna.",
+      "c": "Homens está em Atos 5:4, não aqui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "habita"
+      },
+      {
+        "id": "b",
+        "text": "temperança"
+      },
+      {
+        "id": "c",
+        "text": "homens"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Não mentiste aos homens, mas a Deus. Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança.",
+    "template": "se realmente o Espírito de Deus ___ em vós",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "id": "pneumatologia-pro-pn-boss-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 5:4; Romanos 8:9; Gálatas 5:22",
+    "learningObjective": "Integrar vida no Espírito: ele é Deus, habita no crente e produz fruto.",
+    "evidence": [
+      "Atos 5:4",
+      "Romanos 8:9",
+      "Gálatas 5:22"
+    ],
+    "type": "choice",
+    "question": "Qual síntese teológica os três textos sustentam?",
+    "prompt": "Qual síntese teológica os três textos sustentam?",
+    "cue": "Qual síntese teológica os três textos sustentam?",
+    "feedbackCorrect": "Certo: o Espírito é Deus pessoal, habita e produz fruto.",
+    "feedbackWrong": {
+      "b": "Os trechos recusam um Espírito impessoal e inerte.",
+      "c": "Fruto e habitação não dispensam que ele seja Deus.",
+      "d": "A mentira a Deus não se reduz a ética social sem o Espírito."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O Espírito é Deus pessoal, habita no crente e produz fruto."
+      },
+      {
+        "id": "b",
+        "text": "O Espírito é impessoal, visita de fora e não muda o caráter."
+      },
+      {
+        "id": "c",
+        "text": "Fruto e habitação dispensam que o Espírito seja Deus."
+      },
+      {
+        "id": "d",
+        "text": "Mentir a Deus é só ética social, sem o Espírito Santo."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Não mentiste aos homens, mas a Deus. Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança.",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "id": "pneumatologia-pro-pn-boss-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 5:4; Romanos 8:9; Gálatas 5:22",
+    "learningObjective": "Integrar vida no Espírito: ele é Deus, habita no crente e produz fruto.",
+    "evidence": [
+      "Atos 5:4",
+      "Romanos 8:9",
+      "Gálatas 5:22"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Atos 5:4; Romanos 8:9; Gálatas 5:22?",
+    "prompt": "Qual sequência revela o sentido de Atos 5:4; Romanos 8:9; Gálatas 5:22?",
+    "cue": "Qual sequência revela o sentido de Atos 5:4; Romanos 8:9; Gálatas 5:22?",
+    "feedbackCorrect": "Certo: Deus, habitação e fruto de caráter.",
+    "feedbackWrong": {
+      "b": "A habitação vem no segundo trecho.",
+      "c": "O fruto é o desfecho da vida no Espírito."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Não mentiste aos homens, mas a Deus"
+      },
+      {
+        "id": "b",
+        "text": "o Espírito de Deus habita em vós"
+      },
+      {
+        "id": "c",
+        "text": "Mas o fruto do Espírito é a caridade, o gozo, a paz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Não mentiste aos homens, mas a Deus. Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança.",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "id": "pneumatologia-pro-pn-boss-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 5:4; Romanos 8:9; Gálatas 5:22",
+    "learningObjective": "Integrar vida no Espírito: ele é Deus, habita no crente e produz fruto.",
+    "evidence": [
+      "Atos 5:4",
+      "Romanos 8:9",
+      "Gálatas 5:22"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"esse não é ___\"",
+    "prompt": "Complete a frase: \"esse não é ___\"",
+    "cue": "Complete a frase: \"esse não é ___\"",
+    "feedbackCorrect": "Certo: quem não tem o Espírito de Cristo não é dele.",
+    "feedbackWrong": {
+      "b": "Deus é o alvo da mentira, não esta lacuna.",
+      "c": "Paz é item do fruto, não o pertencimento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "dele"
+      },
+      {
+        "id": "b",
+        "text": "Deus"
+      },
+      {
+        "id": "c",
+        "text": "paz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Não mentiste aos homens, mas a Deus. Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança.",
+    "template": "esse não é ___",
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "id": "pneumatologia-pro-pn-boss-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Atos 5:4; Romanos 8:9; Gálatas 5:22",
+    "learningObjective": "Integrar vida no Espírito: ele é Deus, habita no crente e produz fruto.",
+    "evidence": [
+      "Atos 5:4",
+      "Romanos 8:9",
+      "Gálatas 5:22"
+    ],
+    "type": "connect",
+    "question": "O que Atos 5:4; Romanos 8:9; Gálatas 5:22 comunica que se liga a este contexto?",
+    "prompt": "O que Atos 5:4; Romanos 8:9; Gálatas 5:22 comunica que se liga a este contexto?",
+    "cue": "O que Atos 5:4; Romanos 8:9; Gálatas 5:22 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: ele é Deus, habita e frutifica.",
+    "feedbackWrong": {
+      "b": "Os textos não o deixam como poder sem pessoa.",
+      "c": "Habitação e caráter caminham juntos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus, habita e produz fruto"
+      },
+      {
+        "id": "b",
+        "text": "Poder sem pessoa nem fruto"
+      },
+      {
+        "id": "c",
+        "text": "Habitação sem caráter"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Não mentiste aos homens, mas a Deus. Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança.",
+    "passageA": {
+      "ref": "Atos 5:4; Romanos 8:9; Gálatas 5:22",
+      "text": "Não mentiste aos homens, mas a Deus. Vós, porém, não estais sujeitos à carne, mas ao Espírito, se realmente o Espírito de Deus habita em vós. Mas, se alguém não tem o Espírito de Cristo, esse não é dele. Mas o fruto do Espírito é a caridade, o gozo, a paz, a longanimidade, a benignidade, a bondade, a fidelidade, a mansidão, a temperança."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Vida no Espírito: ele é Deus, habita no crente e produz fruto."
+    },
+    "trail": "pneumatologia",
+    "section": "pn-boss",
+    "id": "pneumatologia-pro-pn-boss-06"
+  }
+]

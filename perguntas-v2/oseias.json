@@ -1,0 +1,2207 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Oséias 1:2-3",
+    "learningObjective": "Reconhecer que o casamento de Oséias com Gômer é sinal profético da aliança de Deus com um povo infiel.",
+    "evidence": [
+      "Oséias 1:2",
+      "Oséias 1:3"
+    ],
+    "type": "true_false",
+    "question": "Jeová manda Oséias tomar uma mulher de fornicação e filhos de fornicação.",
+    "prompt": "Jeová manda Oséias tomar uma mulher de fornicação e filhos de fornicação.",
+    "cue": "Jeová manda Oséias tomar uma mulher de fornicação e filhos de fornicação.",
+    "feedbackCorrect": "Certo: é exatamente a ordem que Jeová dá a Oséias.",
+    "feedbackWrong": {
+      "false": "O texto ordena isso mesmo, no versículo 2."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová. Foi-se, pois, e tomou a Gômer, filha de Diblaim; ela concebeu e deu-lhe à luz um filho.",
+    "trail": "oseias",
+    "section": "oseias-oseias-01-oseias-e-gomer",
+    "id": "oseias-sem-oseias-oseias-01-oseias-e-gomer-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Oséias 1:2-3",
+    "learningObjective": "Reconhecer que o casamento de Oséias com Gômer é sinal profético da aliança de Deus com um povo infiel.",
+    "evidence": [
+      "Oséias 1:2",
+      "Oséias 1:3"
+    ],
+    "type": "tap",
+    "question": "Em Oséias 1:2-3, toque a palavra que falta em \"Foi-se, pois, e tomou a ___, filha de Diblaim; ela concebeu e deu-lhe à luz um filho\"?",
+    "prompt": "Em Oséias 1:2-3, toque a palavra que falta em \"Foi-se, pois, e tomou a ___, filha de Diblaim; ela concebeu e deu-lhe à luz um filho\"?",
+    "cue": "Em Oséias 1:2-3, toque a palavra que falta em \"Foi-se, pois, e tomou a ___, filha de Diblaim; ela concebeu e deu-lhe à luz um filho\"?",
+    "feedbackCorrect": "Exato: Gômer é quem Oséias toma por esposa.",
+    "feedbackWrong": {
+      "b": "Diblaim é o pai de Gômer, não o nome da esposa.",
+      "c": "Filho é quem nasce depois, não quem Oséias toma."
+    },
+    "passageText": "Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová. Foi-se, pois, e tomou a Gômer, filha de Diblaim; ela concebeu e deu-lhe à luz um filho.",
+    "template": "Foi-se, pois, e tomou a ___, filha de Diblaim; ela concebeu e deu-lhe à luz um filho",
+    "options": [
+      {
+        "id": "a",
+        "text": "Gômer"
+      },
+      {
+        "id": "b",
+        "text": "Diblaim"
+      },
+      {
+        "id": "c",
+        "text": "filho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-01-oseias-e-gomer",
+    "id": "oseias-sem-oseias-oseias-01-oseias-e-gomer-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Oséias 1:2-3",
+    "learningObjective": "Reconhecer que o casamento de Oséias com Gômer é sinal profético da aliança de Deus com um povo infiel.",
+    "evidence": [
+      "Oséias 1:2",
+      "Oséias 1:3"
+    ],
+    "type": "choice",
+    "question": "Qual fato o texto afirma sobre a ordem que Oséias recebe?",
+    "prompt": "Qual fato o texto afirma sobre a ordem que Oséias recebe?",
+    "cue": "Qual fato o texto afirma sobre a ordem que Oséias recebe?",
+    "feedbackCorrect": "Certo: é exatamente a ordem que o texto registra.",
+    "feedbackWrong": {
+      "b": "O texto atribui a ordem a Jeová, não a uma escolha de Oséias.",
+      "c": "O texto nada diz sobre Gômer ser sacerdotisa de Baal.",
+      "d": "O texto situa a ordem antes do nascimento do filho."
+    },
+    "passageText": "Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová. Foi-se, pois, e tomou a Gômer, filha de Diblaim; ela concebeu e deu-lhe à luz um filho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová manda Oséias casar com uma mulher marcada pela infidelidade"
+      },
+      {
+        "id": "b",
+        "text": "Oséias escolhe Gômer por conta própria, sem qualquer ordem de Jeová"
+      },
+      {
+        "id": "c",
+        "text": "Gômer atua como sacerdotisa do templo de Baal antes do casamento"
+      },
+      {
+        "id": "d",
+        "text": "O casamento acontece somente depois que o filho já havia nascido"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-01-oseias-e-gomer",
+    "id": "oseias-sem-oseias-oseias-01-oseias-e-gomer-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Oséias 1:2-3",
+    "learningObjective": "Reconhecer que o casamento de Oséias com Gômer é sinal profético da aliança de Deus com um povo infiel.",
+    "evidence": [
+      "Oséias 1:2",
+      "Oséias 1:3"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Oséias 1:2-3?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Oséias 1:2-3?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Oséias 1:2-3?",
+    "feedbackCorrect": "Certo: essa é a sequência real da ordem e do casamento de Oséias.",
+    "feedbackWrong": {
+      "b": "O motivo da ordem vem antes, não depois do casamento.",
+      "c": "Releia o texto: o casamento de Oséias vem por último."
+    },
+    "passageText": "Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová. Foi-se, pois, e tomou a Gômer, filha de Diblaim; ela concebeu e deu-lhe à luz um filho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Vai, toma uma mulher de fornicação e filhos de fornicação"
+      },
+      {
+        "id": "b",
+        "text": "porque a terra comete fornicação, apartando-se de Jeová"
+      },
+      {
+        "id": "c",
+        "text": "Foi-se, pois, e tomou a Gômer, filha de Diblaim, e lhe deu um filho"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-01-oseias-e-gomer",
+    "id": "oseias-sem-oseias-oseias-01-oseias-e-gomer-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Oséias 1:2-3",
+    "learningObjective": "Reconhecer que o casamento de Oséias com Gômer é sinal profético da aliança de Deus com um povo infiel.",
+    "evidence": [
+      "Oséias 1:2",
+      "Oséias 1:3"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Vai, toma uma mulher de fornicação e filhos de fornicação, porque a ___ comete fornicação, apartando-se de Jeová\"",
+    "prompt": "Complete a frase: \"Vai, toma uma mulher de fornicação e filhos de fornicação, porque a ___ comete fornicação, apartando-se de Jeová\"",
+    "cue": "Complete a frase: \"Vai, toma uma mulher de fornicação e filhos de fornicação, porque a ___ comete fornicação, apartando-se de Jeová\"",
+    "feedbackCorrect": "Certo: é a terra que comete fornicação, segundo o texto.",
+    "feedbackWrong": {
+      "b": "Mulher já foi citada antes, não nesta lacuna.",
+      "c": "Jeová é citado no fim da frase, não aqui."
+    },
+    "passageText": "Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová. Foi-se, pois, e tomou a Gômer, filha de Diblaim; ela concebeu e deu-lhe à luz um filho.",
+    "template": "Vai, toma uma mulher de fornicação e filhos de fornicação, porque a ___ comete fornicação, apartando-se de Jeová",
+    "options": [
+      {
+        "id": "a",
+        "text": "terra"
+      },
+      {
+        "id": "b",
+        "text": "mulher"
+      },
+      {
+        "id": "c",
+        "text": "Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-01-oseias-e-gomer",
+    "id": "oseias-sem-oseias-oseias-01-oseias-e-gomer-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Oséias 1:2-3",
+    "learningObjective": "Reconhecer que o casamento de Oséias com Gômer é sinal profético da aliança de Deus com um povo infiel.",
+    "evidence": [
+      "Oséias 1:2",
+      "Oséias 1:3"
+    ],
+    "type": "connect",
+    "question": "O que Oséias 1:2-3 comunica que se liga a este contexto?",
+    "prompt": "O que Oséias 1:2-3 comunica que se liga a este contexto?",
+    "cue": "O que Oséias 1:2-3 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o casamento representa a aliança entre Jeová e um povo infiel.",
+    "feedbackWrong": {
+      "b": "O relato liga o casamento a um propósito espiritual, não só social.",
+      "c": "A ordem de Jeová tem aplicação real, não é apenas simbólica."
+    },
+    "passageText": "Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová. Foi-se, pois, e tomou a Gômer, filha de Diblaim; ela concebeu e deu-lhe à luz um filho.",
+    "passageA": {
+      "ref": "Oséias 1:2-3",
+      "text": "Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová. Foi-se, pois, e tomou a Gômer, filha de Diblaim; ela concebeu e deu-lhe à luz um filho."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O casamento de Oséias com Gômer é um sinal profético: assim como ela foi infiel, Israel se afastou de Jeová."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O casamento de Oséias representa a aliança entre Jeová e um povo infiel"
+      },
+      {
+        "id": "b",
+        "text": "O relato apenas registra um costume social sem valor espiritual"
+      },
+      {
+        "id": "c",
+        "text": "A ordem de Jeová é apenas simbólica sem qualquer aplicação real"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-01-oseias-e-gomer",
+    "id": "oseias-sem-oseias-oseias-01-oseias-e-gomer-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Oséias 1:2-3",
+    "learningObjective": "Reconhecer que o casamento de Oséias com Gômer é sinal profético da aliança de Deus com um povo infiel.",
+    "evidence": [
+      "Oséias 1:2",
+      "Oséias 1:3"
+    ],
+    "type": "true_false",
+    "question": "O texto apresenta o casamento de Oséias como uma escolha pessoal, sem relação com a mensagem de Jeová a Israel.",
+    "prompt": "O texto apresenta o casamento de Oséias como uma escolha pessoal, sem relação com a mensagem de Jeová a Israel.",
+    "cue": "O texto apresenta o casamento de Oséias como uma escolha pessoal, sem relação com a mensagem de Jeová a Israel.",
+    "feedbackCorrect": "Certo: o casamento é sinal profético ligado a Israel, não escolha isolada.",
+    "feedbackWrong": {
+      "true": "O texto liga o casamento à mensagem de Jeová sobre a infidelidade de Israel."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová. Foi-se, pois, e tomou a Gômer, filha de Diblaim; ela concebeu e deu-lhe à luz um filho.",
+    "trail": "oseias",
+    "section": "oseias-oseias-01-oseias-e-gomer",
+    "id": "oseias-cam-oseias-oseias-01-oseias-e-gomer-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Oséias 1:2-3",
+    "learningObjective": "Reconhecer que o casamento de Oséias com Gômer é sinal profético da aliança de Deus com um povo infiel.",
+    "evidence": [
+      "Oséias 1:2",
+      "Oséias 1:3"
+    ],
+    "type": "tap",
+    "question": "Em Oséias 1:2-3, toque a palavra que falta em \"Foi-se, pois, e tomou a Gômer, filha de ___; ela concebeu e deu-lhe à luz um filho\"?",
+    "prompt": "Em Oséias 1:2-3, toque a palavra que falta em \"Foi-se, pois, e tomou a Gômer, filha de ___; ela concebeu e deu-lhe à luz um filho\"?",
+    "cue": "Em Oséias 1:2-3, toque a palavra que falta em \"Foi-se, pois, e tomou a Gômer, filha de ___; ela concebeu e deu-lhe à luz um filho\"?",
+    "feedbackCorrect": "Exato: Diblaim é o pai de Gômer, citado no texto.",
+    "feedbackWrong": {
+      "b": "Gômer é a esposa, não o pai dela.",
+      "c": "Filho é quem nasce depois, não o pai de Gômer."
+    },
+    "passageText": "Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová. Foi-se, pois, e tomou a Gômer, filha de Diblaim; ela concebeu e deu-lhe à luz um filho.",
+    "template": "Foi-se, pois, e tomou a Gômer, filha de ___; ela concebeu e deu-lhe à luz um filho",
+    "options": [
+      {
+        "id": "a",
+        "text": "Diblaim"
+      },
+      {
+        "id": "b",
+        "text": "Gômer"
+      },
+      {
+        "id": "c",
+        "text": "filho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-01-oseias-e-gomer",
+    "id": "oseias-cam-oseias-oseias-01-oseias-e-gomer-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Oséias 1:2-3",
+    "learningObjective": "Reconhecer que o casamento de Oséias com Gômer é sinal profético da aliança de Deus com um povo infiel.",
+    "evidence": [
+      "Oséias 1:2",
+      "Oséias 1:3"
+    ],
+    "type": "choice",
+    "question": "Qual leitura conecta corretamente o casamento de Oséias ao propósito de Jeová?",
+    "prompt": "Qual leitura conecta corretamente o casamento de Oséias ao propósito de Jeová?",
+    "cue": "Qual leitura conecta corretamente o casamento de Oséias ao propósito de Jeová?",
+    "feedbackCorrect": "Certo: o casamento denuncia, na prática, a infidelidade de Israel.",
+    "feedbackWrong": {
+      "a": "O texto liga o casamento diretamente à condição de Israel, não a uma metáfora vazia.",
+      "c": "O texto não apresenta o casamento como punição contra Oséias.",
+      "d": "O foco do texto é o sinal profético, não a genealogia."
+    },
+    "passageText": "Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová. Foi-se, pois, e tomou a Gômer, filha de Diblaim; ela concebeu e deu-lhe à luz um filho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O casamento é só uma metáfora poética sem relação com a nação"
+      },
+      {
+        "id": "b",
+        "text": "O casamento denuncia, em carne e sangue, a infidelidade de Israel a Jeová"
+      },
+      {
+        "id": "c",
+        "text": "Jeová pune Oséias obrigando-o a um casamento infeliz"
+      },
+      {
+        "id": "d",
+        "text": "O relato serve apenas para explicar a genealogia da família de Oséias"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "oseias",
+    "section": "oseias-oseias-01-oseias-e-gomer",
+    "id": "oseias-cam-oseias-oseias-01-oseias-e-gomer-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Oséias 1:2-3",
+    "learningObjective": "Reconhecer que o casamento de Oséias com Gômer é sinal profético da aliança de Deus com um povo infiel.",
+    "evidence": [
+      "Oséias 1:2",
+      "Oséias 1:3"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Oséias 1:2-3?",
+    "prompt": "Como se encadeiam os eventos de Oséias 1:2-3?",
+    "cue": "Como se encadeiam os eventos de Oséias 1:2-3?",
+    "feedbackCorrect": "Certo: essa é a sequência real da ordem e do casamento de Oséias.",
+    "feedbackWrong": {
+      "b": "O motivo da ordem vem antes, não depois do casamento.",
+      "c": "Releia o texto: o casamento de Oséias vem por último."
+    },
+    "passageText": "Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová. Foi-se, pois, e tomou a Gômer, filha de Diblaim; ela concebeu e deu-lhe à luz um filho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Vai, toma uma mulher de fornicação e filhos de fornicação"
+      },
+      {
+        "id": "b",
+        "text": "porque a terra comete fornicação, apartando-se de Jeová"
+      },
+      {
+        "id": "c",
+        "text": "Foi-se, pois, e tomou a Gômer, filha de Diblaim, e lhe deu um filho"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-01-oseias-e-gomer",
+    "id": "oseias-cam-oseias-oseias-01-oseias-e-gomer-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Oséias 1:2-3",
+    "learningObjective": "Reconhecer que o casamento de Oséias com Gômer é sinal profético da aliança de Deus com um povo infiel.",
+    "evidence": [
+      "Oséias 1:2",
+      "Oséias 1:3"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Vai, toma uma ___ de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová\"",
+    "prompt": "Complete a frase: \"Vai, toma uma ___ de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová\"",
+    "cue": "Complete a frase: \"Vai, toma uma ___ de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová\"",
+    "feedbackCorrect": "Certo: é uma mulher de fornicação que Oséias deve tomar.",
+    "feedbackWrong": {
+      "b": "Terra aparece depois, na segunda parte da frase.",
+      "c": "Jeová é citado no fim da frase, não aqui."
+    },
+    "passageText": "Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová. Foi-se, pois, e tomou a Gômer, filha de Diblaim; ela concebeu e deu-lhe à luz um filho.",
+    "template": "Vai, toma uma ___ de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová",
+    "options": [
+      {
+        "id": "a",
+        "text": "mulher"
+      },
+      {
+        "id": "b",
+        "text": "terra"
+      },
+      {
+        "id": "c",
+        "text": "Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-01-oseias-e-gomer",
+    "id": "oseias-cam-oseias-oseias-01-oseias-e-gomer-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Oséias 1:2-3",
+    "learningObjective": "Reconhecer que o casamento de Oséias com Gômer é sinal profético da aliança de Deus com um povo infiel.",
+    "evidence": [
+      "Oséias 1:2",
+      "Oséias 1:3"
+    ],
+    "type": "connect",
+    "question": "O que Oséias 1:2-3 comunica que se liga a este contexto?",
+    "prompt": "O que Oséias 1:2-3 comunica que se liga a este contexto?",
+    "cue": "O que Oséias 1:2-3 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o relacionamento denuncia a infidelidade espiritual de Israel.",
+    "feedbackWrong": {
+      "b": "A infidelidade de Gômer carrega peso teológico, não é só biografia.",
+      "c": "O relato vai além de costumes matrimoniais: é sinal profético."
+    },
+    "passageText": "Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová. Foi-se, pois, e tomou a Gômer, filha de Diblaim; ela concebeu e deu-lhe à luz um filho.",
+    "passageA": {
+      "ref": "Oséias 1:2-3",
+      "text": "Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová. Foi-se, pois, e tomou a Gômer, filha de Diblaim; ela concebeu e deu-lhe à luz um filho."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A infidelidade de Gômer expõe, em carne e osso, a infidelidade espiritual de Israel diante de Jeová."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O relacionamento de Oséias com Gômer denuncia a infidelidade espiritual de Israel"
+      },
+      {
+        "id": "b",
+        "text": "A infidelidade de Gômer é só um detalhe biográfico sem peso teológico"
+      },
+      {
+        "id": "c",
+        "text": "O relato ensina apenas costumes matrimoniais do Antigo Oriente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-01-oseias-e-gomer",
+    "id": "oseias-cam-oseias-oseias-01-oseias-e-gomer-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Oséias 1:2-3",
+    "learningObjective": "Reconhecer que o casamento de Oséias com Gômer é sinal profético da aliança de Deus com um povo infiel.",
+    "evidence": [
+      "Oséias 1:2",
+      "Oséias 1:3"
+    ],
+    "type": "true_false",
+    "question": "Ao ordenar esse casamento, Jeová transforma a vida de Oséias em profecia encarnada sobre a aliança quebrada.",
+    "prompt": "Ao ordenar esse casamento, Jeová transforma a vida de Oséias em profecia encarnada sobre a aliança quebrada.",
+    "cue": "Ao ordenar esse casamento, Jeová transforma a vida de Oséias em profecia encarnada sobre a aliança quebrada.",
+    "feedbackCorrect": "Certo: o profeta vive em casa o drama espiritual de Israel.",
+    "feedbackWrong": {
+      "false": "É exatamente essa a leitura teológica sustentada pelo texto."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová. Foi-se, pois, e tomou a Gômer, filha de Diblaim; ela concebeu e deu-lhe à luz um filho.",
+    "trail": "oseias",
+    "section": "oseias-oseias-01-oseias-e-gomer",
+    "id": "oseias-pro-oseias-oseias-01-oseias-e-gomer-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Oséias 1:2-3",
+    "learningObjective": "Reconhecer que o casamento de Oséias com Gômer é sinal profético da aliança de Deus com um povo infiel.",
+    "evidence": [
+      "Oséias 1:2",
+      "Oséias 1:3"
+    ],
+    "type": "tap",
+    "question": "Em Oséias 1:2-3, toque a palavra que falta em \"Foi-se, pois, e tomou a Gômer, filha de Diblaim; ela concebeu e deu-lhe à luz um ___\"?",
+    "prompt": "Em Oséias 1:2-3, toque a palavra que falta em \"Foi-se, pois, e tomou a Gômer, filha de Diblaim; ela concebeu e deu-lhe à luz um ___\"?",
+    "cue": "Em Oséias 1:2-3, toque a palavra que falta em \"Foi-se, pois, e tomou a Gômer, filha de Diblaim; ela concebeu e deu-lhe à luz um ___\"?",
+    "feedbackCorrect": "Exato: um filho nasce dessa união, conforme o texto.",
+    "feedbackWrong": {
+      "b": "Gômer é a mãe, não quem nasce.",
+      "c": "Diblaim é o avô, não quem nasce."
+    },
+    "passageText": "Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová. Foi-se, pois, e tomou a Gômer, filha de Diblaim; ela concebeu e deu-lhe à luz um filho.",
+    "template": "Foi-se, pois, e tomou a Gômer, filha de Diblaim; ela concebeu e deu-lhe à luz um ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "filho"
+      },
+      {
+        "id": "b",
+        "text": "Gômer"
+      },
+      {
+        "id": "c",
+        "text": "Diblaim"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-01-oseias-e-gomer",
+    "id": "oseias-pro-oseias-oseias-01-oseias-e-gomer-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Oséias 1:2-3",
+    "learningObjective": "Reconhecer que o casamento de Oséias com Gômer é sinal profético da aliança de Deus com um povo infiel.",
+    "evidence": [
+      "Oséias 1:2",
+      "Oséias 1:3"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido teológico de Oséias 1:2-3?",
+    "prompt": "Qual leitura interpreta melhor o sentido teológico de Oséias 1:2-3?",
+    "cue": "Qual leitura interpreta melhor o sentido teológico de Oséias 1:2-3?",
+    "feedbackCorrect": "Certo: a união torna visível, na carne, a aliança rompida por Israel.",
+    "feedbackWrong": {
+      "a": "O texto não trata a infidelidade como caminho aprovado por Deus.",
+      "b": "A ordem de Jeová mostra o contrário: atenção ao pecado de Israel.",
+      "d": "O peso do relato é profético, não genealógico."
+    },
+    "passageText": "Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová. Foi-se, pois, e tomou a Gômer, filha de Diblaim; ela concebeu e deu-lhe à luz um filho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O texto ensina que Deus aprova a infidelidade conjugal como caminho de fé"
+      },
+      {
+        "id": "b",
+        "text": "A ordem revela que Jeová está indiferente ao pecado de Israel"
+      },
+      {
+        "id": "c",
+        "text": "A união com a mulher infiel torna visível, na carne, a aliança rompida por Israel."
+      },
+      {
+        "id": "d",
+        "text": "O relato serve apenas para preencher a árvore genealógica do profeta"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "oseias",
+    "section": "oseias-oseias-01-oseias-e-gomer",
+    "id": "oseias-pro-oseias-oseias-01-oseias-e-gomer-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Oséias 1:2-3",
+    "learningObjective": "Reconhecer que o casamento de Oséias com Gômer é sinal profético da aliança de Deus com um povo infiel.",
+    "evidence": [
+      "Oséias 1:2",
+      "Oséias 1:3"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Oséias 1:2-3?",
+    "prompt": "Qual sequência revela o sentido de Oséias 1:2-3?",
+    "cue": "Qual sequência revela o sentido de Oséias 1:2-3?",
+    "feedbackCorrect": "Certo: essa é a sequência real da ordem e do casamento de Oséias.",
+    "feedbackWrong": {
+      "b": "O motivo da ordem vem antes, não depois do casamento.",
+      "c": "Releia o texto: o casamento de Oséias vem por último."
+    },
+    "passageText": "Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová. Foi-se, pois, e tomou a Gômer, filha de Diblaim; ela concebeu e deu-lhe à luz um filho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Vai, toma uma mulher de fornicação e filhos de fornicação"
+      },
+      {
+        "id": "b",
+        "text": "porque a terra comete fornicação, apartando-se de Jeová"
+      },
+      {
+        "id": "c",
+        "text": "Foi-se, pois, e tomou a Gômer, filha de Diblaim, e lhe deu um filho"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-01-oseias-e-gomer",
+    "id": "oseias-pro-oseias-oseias-01-oseias-e-gomer-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Oséias 1:2-3",
+    "learningObjective": "Reconhecer que o casamento de Oséias com Gômer é sinal profético da aliança de Deus com um povo infiel.",
+    "evidence": [
+      "Oséias 1:2",
+      "Oséias 1:3"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de ___\"",
+    "prompt": "Complete a frase: \"Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de ___\"",
+    "cue": "Complete a frase: \"Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de ___\"",
+    "feedbackCorrect": "Certo: é de Jeová que a terra se afasta, segundo o texto.",
+    "feedbackWrong": {
+      "b": "Terra aparece antes, não nesta lacuna.",
+      "c": "Mulher aparece no início da frase, não aqui."
+    },
+    "passageText": "Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová. Foi-se, pois, e tomou a Gômer, filha de Diblaim; ela concebeu e deu-lhe à luz um filho.",
+    "template": "Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "terra"
+      },
+      {
+        "id": "c",
+        "text": "mulher"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-01-oseias-e-gomer",
+    "id": "oseias-pro-oseias-oseias-01-oseias-e-gomer-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Oséias 1:2-3",
+    "learningObjective": "Reconhecer que o casamento de Oséias com Gômer é sinal profético da aliança de Deus com um povo infiel.",
+    "evidence": [
+      "Oséias 1:2",
+      "Oséias 1:3"
+    ],
+    "type": "connect",
+    "question": "O que Oséias 1:2-3 comunica que se liga a este contexto?",
+    "prompt": "O que Oséias 1:2-3 comunica que se liga a este contexto?",
+    "cue": "O que Oséias 1:2-3 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a vida conjugal de Oséias antecipa a fidelidade de Deus.",
+    "feedbackWrong": {
+      "b": "O texto atribui grande valor de fé a essa história, não é um detalhe.",
+      "c": "O texto mostra Jeová atento à vida do povo, não distante dela."
+    },
+    "passageText": "Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová. Foi-se, pois, e tomou a Gômer, filha de Diblaim; ela concebeu e deu-lhe à luz um filho.",
+    "passageA": {
+      "ref": "Oséias 1:2-3",
+      "text": "Vai, toma uma mulher de fornicação e filhos de fornicação, porque a terra comete fornicação, apartando-se de Jeová. Foi-se, pois, e tomou a Gômer, filha de Diblaim; ela concebeu e deu-lhe à luz um filho."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A entrega de Oséias no próprio casamento antecipa a fidelidade de Deus a um povo que rompeu a aliança."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A vida conjugal de Oséias antecipa a fidelidade de Deus a um povo que rompeu a aliança"
+      },
+      {
+        "id": "b",
+        "text": "Um detalhe sem qualquer valor para a fé de Israel"
+      },
+      {
+        "id": "c",
+        "text": "Um exemplo de que Jeová está distante da vida cotidiana do povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-01-oseias-e-gomer",
+    "id": "oseias-pro-oseias-oseias-01-oseias-e-gomer-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Oséias 6:6",
+    "learningObjective": "Compreender que Jeová valoriza mais a misericórdia e o conhecimento de Deus do que o cumprimento ritual de sacrifícios.",
+    "evidence": [
+      "Oséias 6:6"
+    ],
+    "type": "true_false",
+    "question": "Jeová declara que deseja misericórdia, e não sacrifício.",
+    "prompt": "Jeová declara que deseja misericórdia, e não sacrifício.",
+    "cue": "Jeová declara que deseja misericórdia, e não sacrifício.",
+    "feedbackCorrect": "Certo: é a afirmação central do versículo.",
+    "feedbackWrong": {
+      "false": "Releia o versículo: essa é exatamente a declaração de Jeová."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Pois misericórdia quero e não sacrifício; e o conhecimento de Deus, mais do que holocaustos",
+    "trail": "oseias",
+    "section": "oseias-oseias-02-misericordia-quero",
+    "id": "oseias-sem-oseias-oseias-02-misericordia-quero-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Oséias 6:6",
+    "learningObjective": "Compreender que Jeová valoriza mais a misericórdia e o conhecimento de Deus do que o cumprimento ritual de sacrifícios.",
+    "evidence": [
+      "Oséias 6:6"
+    ],
+    "type": "tap",
+    "question": "Em Oséias 6:6, toque a palavra que falta em \"Pois ___ quero e não sacrifício; e o conhecimento de Deus, mais do que holocaustos\"?",
+    "prompt": "Em Oséias 6:6, toque a palavra que falta em \"Pois ___ quero e não sacrifício; e o conhecimento de Deus, mais do que holocaustos\"?",
+    "cue": "Em Oséias 6:6, toque a palavra que falta em \"Pois ___ quero e não sacrifício; e o conhecimento de Deus, mais do que holocaustos\"?",
+    "feedbackCorrect": "Exato: misericórdia é o que Jeová declara desejar.",
+    "feedbackWrong": {
+      "b": "Sacrifício é o que o texto contrasta com misericórdia.",
+      "c": "Holocaustos aparece depois, não nesta lacuna."
+    },
+    "passageText": "Pois misericórdia quero e não sacrifício; e o conhecimento de Deus, mais do que holocaustos",
+    "template": "Pois ___ quero e não sacrifício; e o conhecimento de Deus, mais do que holocaustos",
+    "options": [
+      {
+        "id": "a",
+        "text": "misericórdia"
+      },
+      {
+        "id": "b",
+        "text": "sacrifício"
+      },
+      {
+        "id": "c",
+        "text": "holocaustos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-02-misericordia-quero",
+    "id": "oseias-sem-oseias-oseias-02-misericordia-quero-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Oséias 6:6",
+    "learningObjective": "Compreender que Jeová valoriza mais a misericórdia e o conhecimento de Deus do que o cumprimento ritual de sacrifícios.",
+    "evidence": [
+      "Oséias 6:6"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação o texto faz diretamente sobre o que Jeová deseja?",
+    "prompt": "Qual afirmação o texto faz diretamente sobre o que Jeová deseja?",
+    "cue": "Qual afirmação o texto faz diretamente sobre o que Jeová deseja?",
+    "feedbackCorrect": "Certo: é a prioridade que Jeová declara no texto.",
+    "feedbackWrong": {
+      "a": "O texto não trata de holocaustos diários como exigência central.",
+      "c": "O texto afirma uma preferência clara de Jeová, não indiferença.",
+      "d": "A ênfase do texto está na misericórdia, não em regras cerimoniais."
+    },
+    "passageText": "Pois misericórdia quero e não sacrifício; e o conhecimento de Deus, mais do que holocaustos",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová exige holocaustos diários acima de qualquer outra prática"
+      },
+      {
+        "id": "b",
+        "text": "Jeová deseja misericórdia e conhecimento de Deus, não sacrifícios"
+      },
+      {
+        "id": "c",
+        "text": "Jeová não se importa com a forma como o povo o adora"
+      },
+      {
+        "id": "d",
+        "text": "O texto trata apenas de regras cerimoniais do templo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "oseias",
+    "section": "oseias-oseias-02-misericordia-quero",
+    "id": "oseias-sem-oseias-oseias-02-misericordia-quero-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Oséias 6:6",
+    "learningObjective": "Compreender que Jeová valoriza mais a misericórdia e o conhecimento de Deus do que o cumprimento ritual de sacrifícios.",
+    "evidence": [
+      "Oséias 6:6"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Oséias 6:6?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Oséias 6:6?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Oséias 6:6?",
+    "feedbackCorrect": "Certo: essa é a sequência do versículo, do desejo à comparação final.",
+    "feedbackWrong": {
+      "b": "O conhecimento de Deus vem depois da primeira afirmação.",
+      "c": "A comparação com holocaustos fecha o versículo, não o abre."
+    },
+    "passageText": "Pois misericórdia quero e não sacrifício; e o conhecimento de Deus, mais do que holocaustos",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pois misericórdia quero e não sacrifício"
+      },
+      {
+        "id": "b",
+        "text": "e o conhecimento de Deus"
+      },
+      {
+        "id": "c",
+        "text": "mais do que holocaustos"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-02-misericordia-quero",
+    "id": "oseias-sem-oseias-oseias-02-misericordia-quero-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Oséias 6:6",
+    "learningObjective": "Compreender que Jeová valoriza mais a misericórdia e o conhecimento de Deus do que o cumprimento ritual de sacrifícios.",
+    "evidence": [
+      "Oséias 6:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Pois misericórdia quero e não sacrifício; e o ___ de Deus, mais do que holocaustos\"",
+    "prompt": "Complete a frase: \"Pois misericórdia quero e não sacrifício; e o ___ de Deus, mais do que holocaustos\"",
+    "cue": "Complete a frase: \"Pois misericórdia quero e não sacrifício; e o ___ de Deus, mais do que holocaustos\"",
+    "feedbackCorrect": "Certo: é o conhecimento de Deus que o texto valoriza.",
+    "feedbackWrong": {
+      "b": "Sacrifício já foi citado na primeira parte do versículo.",
+      "c": "Holocaustos aparece só no fim, não nesta lacuna."
+    },
+    "passageText": "Pois misericórdia quero e não sacrifício; e o conhecimento de Deus, mais do que holocaustos",
+    "template": "Pois misericórdia quero e não sacrifício; e o ___ de Deus, mais do que holocaustos",
+    "options": [
+      {
+        "id": "a",
+        "text": "conhecimento"
+      },
+      {
+        "id": "b",
+        "text": "sacrifício"
+      },
+      {
+        "id": "c",
+        "text": "holocaustos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-02-misericordia-quero",
+    "id": "oseias-sem-oseias-oseias-02-misericordia-quero-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Oséias 6:6",
+    "learningObjective": "Compreender que Jeová valoriza mais a misericórdia e o conhecimento de Deus do que o cumprimento ritual de sacrifícios.",
+    "evidence": [
+      "Oséias 6:6"
+    ],
+    "type": "connect",
+    "question": "O que Oséias 6:6 comunica que se liga a este contexto?",
+    "prompt": "O que Oséias 6:6 comunica que se liga a este contexto?",
+    "cue": "O que Oséias 6:6 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: misericórdia e conhecimento de Deus valem mais que o ritual.",
+    "feedbackWrong": {
+      "b": "O texto não aceita ritos sem misericórdia como suficientes.",
+      "c": "Sacrifícios não substituem a fidelidade pedida pelo texto."
+    },
+    "passageText": "Pois misericórdia quero e não sacrifício; e o conhecimento de Deus, mais do que holocaustos",
+    "passageA": {
+      "ref": "Oséias 6:6",
+      "text": "Pois misericórdia quero e não sacrifício; e o conhecimento de Deus, mais do que holocaustos"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jeová prefere um coração fiel a rituais vazios de sacrifício."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Misericórdia e conhecimento de Deus valem mais que ritual"
+      },
+      {
+        "id": "b",
+        "text": "Regras cerimoniais bastam para agradar a Jeová"
+      },
+      {
+        "id": "c",
+        "text": "Sacrifícios substituem a necessidade de fidelidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-02-misericordia-quero",
+    "id": "oseias-sem-oseias-oseias-02-misericordia-quero-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Oséias 6:6",
+    "learningObjective": "Compreender que Jeová valoriza mais a misericórdia e o conhecimento de Deus do que o cumprimento ritual de sacrifícios.",
+    "evidence": [
+      "Oséias 6:6"
+    ],
+    "type": "true_false",
+    "question": "O texto ensina que os sacrifícios têm mais valor diante de Jeová do que a misericórdia.",
+    "prompt": "O texto ensina que os sacrifícios têm mais valor diante de Jeová do que a misericórdia.",
+    "cue": "O texto ensina que os sacrifícios têm mais valor diante de Jeová do que a misericórdia.",
+    "feedbackCorrect": "Certo: o texto inverte essa prioridade em favor da misericórdia.",
+    "feedbackWrong": {
+      "true": "É o oposto: o texto valoriza a misericórdia acima do sacrifício."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Pois misericórdia quero e não sacrifício; e o conhecimento de Deus, mais do que holocaustos",
+    "trail": "oseias",
+    "section": "oseias-oseias-02-misericordia-quero",
+    "id": "oseias-cam-oseias-oseias-02-misericordia-quero-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Oséias 6:6",
+    "learningObjective": "Compreender que Jeová valoriza mais a misericórdia e o conhecimento de Deus do que o cumprimento ritual de sacrifícios.",
+    "evidence": [
+      "Oséias 6:6"
+    ],
+    "type": "tap",
+    "question": "Em Oséias 6:6, toque a palavra que falta em \"Pois misericórdia quero e não sacrifício; e o conhecimento de Deus, mais do que ___\"?",
+    "prompt": "Em Oséias 6:6, toque a palavra que falta em \"Pois misericórdia quero e não sacrifício; e o conhecimento de Deus, mais do que ___\"?",
+    "cue": "Em Oséias 6:6, toque a palavra que falta em \"Pois misericórdia quero e não sacrifício; e o conhecimento de Deus, mais do que ___\"?",
+    "feedbackCorrect": "Exato: holocaustos é comparado ao conhecimento de Deus.",
+    "feedbackWrong": {
+      "b": "Sacrifício aparece antes, não nesta lacuna.",
+      "c": "Misericórdia já foi citada na primeira parte do versículo."
+    },
+    "passageText": "Pois misericórdia quero e não sacrifício; e o conhecimento de Deus, mais do que holocaustos",
+    "template": "Pois misericórdia quero e não sacrifício; e o conhecimento de Deus, mais do que ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "holocaustos"
+      },
+      {
+        "id": "b",
+        "text": "sacrifício"
+      },
+      {
+        "id": "c",
+        "text": "misericórdia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-02-misericordia-quero",
+    "id": "oseias-cam-oseias-oseias-02-misericordia-quero-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Oséias 6:6",
+    "learningObjective": "Compreender que Jeová valoriza mais a misericórdia e o conhecimento de Deus do que o cumprimento ritual de sacrifícios.",
+    "evidence": [
+      "Oséias 6:6"
+    ],
+    "type": "choice",
+    "question": "Qual ideia melhor conecta Oséias 6:6 à crítica do profeta contra o culto vazio?",
+    "prompt": "Qual ideia melhor conecta Oséias 6:6 à crítica do profeta contra o culto vazio?",
+    "cue": "Qual ideia melhor conecta Oséias 6:6 à crítica do profeta contra o culto vazio?",
+    "feedbackCorrect": "Certo: Jeová rejeita rito sem fidelidade do coração.",
+    "feedbackWrong": {
+      "a": "O texto não pede o fim de toda oferta, mas outra prioridade.",
+      "b": "O texto inverte esse peso a favor da misericórdia.",
+      "d": "A crítica de Oséias se dirige ao povo, não só a sacerdotes estrangeiros."
+    },
+    "passageText": "Pois misericórdia quero e não sacrifício; e o conhecimento de Deus, mais do que holocaustos",
+    "options": [
+      {
+        "id": "a",
+        "text": "O profeta defende o fim de toda oferta apresentada no templo"
+      },
+      {
+        "id": "b",
+        "text": "O texto afirma que rituais e fidelidade têm o mesmo peso diante de Jeová"
+      },
+      {
+        "id": "c",
+        "text": "Jeová rejeita um culto que cumpre ritos mas ignora a fidelidade do coração"
+      },
+      {
+        "id": "d",
+        "text": "A crítica de Oséias se dirige apenas aos sacerdotes estrangeiros"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "oseias",
+    "section": "oseias-oseias-02-misericordia-quero",
+    "id": "oseias-cam-oseias-oseias-02-misericordia-quero-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Oséias 6:6",
+    "learningObjective": "Compreender que Jeová valoriza mais a misericórdia e o conhecimento de Deus do que o cumprimento ritual de sacrifícios.",
+    "evidence": [
+      "Oséias 6:6"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Oséias 6:6?",
+    "prompt": "Como se encadeiam os eventos de Oséias 6:6?",
+    "cue": "Como se encadeiam os eventos de Oséias 6:6?",
+    "feedbackCorrect": "Certo: essa é a sequência do versículo, do desejo à comparação final.",
+    "feedbackWrong": {
+      "b": "O conhecimento de Deus vem depois da primeira afirmação.",
+      "c": "A comparação com holocaustos fecha o versículo, não o abre."
+    },
+    "passageText": "Pois misericórdia quero e não sacrifício; e o conhecimento de Deus, mais do que holocaustos",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pois misericórdia quero e não sacrifício"
+      },
+      {
+        "id": "b",
+        "text": "e o conhecimento de Deus"
+      },
+      {
+        "id": "c",
+        "text": "mais do que holocaustos"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-02-misericordia-quero",
+    "id": "oseias-cam-oseias-oseias-02-misericordia-quero-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Oséias 6:6",
+    "learningObjective": "Compreender que Jeová valoriza mais a misericórdia e o conhecimento de Deus do que o cumprimento ritual de sacrifícios.",
+    "evidence": [
+      "Oséias 6:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Pois misericórdia quero e não ___; e o conhecimento de Deus, mais do que holocaustos\"",
+    "prompt": "Complete a frase: \"Pois misericórdia quero e não ___; e o conhecimento de Deus, mais do que holocaustos\"",
+    "cue": "Complete a frase: \"Pois misericórdia quero e não ___; e o conhecimento de Deus, mais do que holocaustos\"",
+    "feedbackCorrect": "Certo: sacrifício é o que Jeová declara não desejar.",
+    "feedbackWrong": {
+      "b": "Misericórdia é o que o texto afirma desejar, não aqui.",
+      "c": "Holocaustos aparece só no fim do versículo."
+    },
+    "passageText": "Pois misericórdia quero e não sacrifício; e o conhecimento de Deus, mais do que holocaustos",
+    "template": "Pois misericórdia quero e não ___; e o conhecimento de Deus, mais do que holocaustos",
+    "options": [
+      {
+        "id": "a",
+        "text": "sacrifício"
+      },
+      {
+        "id": "b",
+        "text": "misericórdia"
+      },
+      {
+        "id": "c",
+        "text": "holocaustos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-02-misericordia-quero",
+    "id": "oseias-cam-oseias-oseias-02-misericordia-quero-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Oséias 6:6",
+    "learningObjective": "Compreender que Jeová valoriza mais a misericórdia e o conhecimento de Deus do que o cumprimento ritual de sacrifícios.",
+    "evidence": [
+      "Oséias 6:6"
+    ],
+    "type": "connect",
+    "question": "O que Oséias 6:6 comunica que se liga a este contexto?",
+    "prompt": "O que Oséias 6:6 comunica que se liga a este contexto?",
+    "cue": "O que Oséias 6:6 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a fidelidade do coração importa mais que o rito.",
+    "feedbackWrong": {
+      "b": "O cumprimento de ritos não substitui o arrependimento pedido.",
+      "c": "O texto não trata ritual e fidelidade como equivalentes."
+    },
+    "passageText": "Pois misericórdia quero e não sacrifício; e o conhecimento de Deus, mais do que holocaustos",
+    "passageA": {
+      "ref": "Oséias 6:6",
+      "text": "Pois misericórdia quero e não sacrifício; e o conhecimento de Deus, mais do que holocaustos"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jeová quer fidelidade vivida, não apenas cumprimento de ritos religiosos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A fidelidade do coração importa mais que o cumprimento ritual"
+      },
+      {
+        "id": "b",
+        "text": "O cumprimento de ritos substitui a necessidade de arrependimento"
+      },
+      {
+        "id": "c",
+        "text": "Rituais e fidelidade pesam igualmente para Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-02-misericordia-quero",
+    "id": "oseias-cam-oseias-oseias-02-misericordia-quero-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Oséias 6:6",
+    "learningObjective": "Compreender que Jeová valoriza mais a misericórdia e o conhecimento de Deus do que o cumprimento ritual de sacrifícios.",
+    "evidence": [
+      "Oséias 6:6"
+    ],
+    "type": "true_false",
+    "question": "Ao valorizar misericórdia acima de sacrifício, Jeová revela que a aliança se sustenta na relação, não no ritual.",
+    "prompt": "Ao valorizar misericórdia acima de sacrifício, Jeová revela que a aliança se sustenta na relação, não no ritual.",
+    "cue": "Ao valorizar misericórdia acima de sacrifício, Jeová revela que a aliança se sustenta na relação, não no ritual.",
+    "feedbackCorrect": "Certo: é exatamente essa a ênfase teológica do versículo.",
+    "feedbackWrong": {
+      "false": "A aliança se sustenta na relação, não no cumprimento ritual."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Pois misericórdia quero e não sacrifício; e o conhecimento de Deus, mais do que holocaustos",
+    "trail": "oseias",
+    "section": "oseias-oseias-02-misericordia-quero",
+    "id": "oseias-pro-oseias-oseias-02-misericordia-quero-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Oséias 6:6",
+    "learningObjective": "Compreender que Jeová valoriza mais a misericórdia e o conhecimento de Deus do que o cumprimento ritual de sacrifícios.",
+    "evidence": [
+      "Oséias 6:6"
+    ],
+    "type": "tap",
+    "question": "Em Oséias 6:6, toque a palavra que falta em \"Pois misericórdia quero e não sacrifício; e o conhecimento de ___, mais do que holocaustos\"?",
+    "prompt": "Em Oséias 6:6, toque a palavra que falta em \"Pois misericórdia quero e não sacrifício; e o conhecimento de ___, mais do que holocaustos\"?",
+    "cue": "Em Oséias 6:6, toque a palavra que falta em \"Pois misericórdia quero e não sacrifício; e o conhecimento de ___, mais do que holocaustos\"?",
+    "feedbackCorrect": "Exato: é o conhecimento de Deus que o texto valoriza.",
+    "feedbackWrong": {
+      "b": "Misericórdia já aparece na primeira parte do versículo.",
+      "c": "Holocaustos aparece depois, não nesta lacuna."
+    },
+    "passageText": "Pois misericórdia quero e não sacrifício; e o conhecimento de Deus, mais do que holocaustos",
+    "template": "Pois misericórdia quero e não sacrifício; e o conhecimento de ___, mais do que holocaustos",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus"
+      },
+      {
+        "id": "b",
+        "text": "misericórdia"
+      },
+      {
+        "id": "c",
+        "text": "holocaustos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-02-misericordia-quero",
+    "id": "oseias-pro-oseias-oseias-02-misericordia-quero-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Oséias 6:6",
+    "learningObjective": "Compreender que Jeová valoriza mais a misericórdia e o conhecimento de Deus do que o cumprimento ritual de sacrifícios.",
+    "evidence": [
+      "Oséias 6:6"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de Oséias 6:6?",
+    "prompt": "Qual leitura interpreta melhor o sentido de Oséias 6:6?",
+    "cue": "Qual leitura interpreta melhor o sentido de Oséias 6:6?",
+    "feedbackCorrect": "Certo: a aliança exige um coração fiel, não apenas oferendas.",
+    "feedbackWrong": {
+      "a": "O texto não descarta sacrifícios por completo, mas reordena prioridades.",
+      "b": "O conhecimento de Deus é apresentado como algo desejado, não opcional.",
+      "c": "O texto tem peso teológico, não é só descrição cerimonial."
+    },
+    "passageText": "Pois misericórdia quero e não sacrifício; e o conhecimento de Deus, mais do que holocaustos",
+    "options": [
+      {
+        "id": "a",
+        "text": "O texto ensina que os sacrifícios perderam totalmente seu valor para sempre"
+      },
+      {
+        "id": "b",
+        "text": "A passagem sugere que o conhecimento de Deus é opcional na vida de fé"
+      },
+      {
+        "id": "c",
+        "text": "O versículo apenas descreve um costume cerimonial sem intenção teológica"
+      },
+      {
+        "id": "d",
+        "text": "O texto ensina que a aliança com Jeová exige um coração fiel, não apenas oferendas"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "trail": "oseias",
+    "section": "oseias-oseias-02-misericordia-quero",
+    "id": "oseias-pro-oseias-oseias-02-misericordia-quero-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Oséias 6:6",
+    "learningObjective": "Compreender que Jeová valoriza mais a misericórdia e o conhecimento de Deus do que o cumprimento ritual de sacrifícios.",
+    "evidence": [
+      "Oséias 6:6"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Oséias 6:6?",
+    "prompt": "Qual sequência revela o sentido de Oséias 6:6?",
+    "cue": "Qual sequência revela o sentido de Oséias 6:6?",
+    "feedbackCorrect": "Certo: essa é a sequência do versículo, do desejo à comparação final.",
+    "feedbackWrong": {
+      "b": "O conhecimento de Deus vem depois da primeira afirmação.",
+      "c": "A comparação com holocaustos fecha o versículo, não o abre."
+    },
+    "passageText": "Pois misericórdia quero e não sacrifício; e o conhecimento de Deus, mais do que holocaustos",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pois misericórdia quero e não sacrifício"
+      },
+      {
+        "id": "b",
+        "text": "e o conhecimento de Deus"
+      },
+      {
+        "id": "c",
+        "text": "mais do que holocaustos"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-02-misericordia-quero",
+    "id": "oseias-pro-oseias-oseias-02-misericordia-quero-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Oséias 6:6",
+    "learningObjective": "Compreender que Jeová valoriza mais a misericórdia e o conhecimento de Deus do que o cumprimento ritual de sacrifícios.",
+    "evidence": [
+      "Oséias 6:6"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Pois misericórdia quero e não sacrifício; e o conhecimento de Deus, mais do que ___\"",
+    "prompt": "Complete a frase: \"Pois misericórdia quero e não sacrifício; e o conhecimento de Deus, mais do que ___\"",
+    "cue": "Complete a frase: \"Pois misericórdia quero e não sacrifício; e o conhecimento de Deus, mais do que ___\"",
+    "feedbackCorrect": "Certo: holocaustos é comparado ao conhecimento de Deus no texto.",
+    "feedbackWrong": {
+      "b": "Misericórdia já aparece na primeira parte do versículo.",
+      "c": "Conhecimento já está citado antes desta lacuna."
+    },
+    "passageText": "Pois misericórdia quero e não sacrifício; e o conhecimento de Deus, mais do que holocaustos",
+    "template": "Pois misericórdia quero e não sacrifício; e o conhecimento de Deus, mais do que ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "holocaustos"
+      },
+      {
+        "id": "b",
+        "text": "misericórdia"
+      },
+      {
+        "id": "c",
+        "text": "conhecimento"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-02-misericordia-quero",
+    "id": "oseias-pro-oseias-oseias-02-misericordia-quero-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Oséias 6:6",
+    "learningObjective": "Compreender que Jeová valoriza mais a misericórdia e o conhecimento de Deus do que o cumprimento ritual de sacrifícios.",
+    "evidence": [
+      "Oséias 6:6"
+    ],
+    "type": "connect",
+    "question": "O que Oséias 6:6 comunica que se liga a este contexto?",
+    "prompt": "O que Oséias 6:6 comunica que se liga a este contexto?",
+    "cue": "O que Oséias 6:6 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a essência da aliança está na fidelidade do coração.",
+    "feedbackWrong": {
+      "b": "O texto reordena as prioridades: fidelidade antes do sacrifício.",
+      "c": "O conhecimento de Deus é central, não irrelevante, no texto."
+    },
+    "passageText": "Pois misericórdia quero e não sacrifício; e o conhecimento de Deus, mais do que holocaustos",
+    "passageA": {
+      "ref": "Oséias 6:6",
+      "text": "Pois misericórdia quero e não sacrifício; e o conhecimento de Deus, mais do que holocaustos"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A prioridade de Jeová aponta para a essência da aliança: relacionamento fiel, não cumprimento formal."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A essência da aliança está na fidelidade do coração, não no rito"
+      },
+      {
+        "id": "b",
+        "text": "Sacrifícios continuam sendo o critério central da aliança"
+      },
+      {
+        "id": "c",
+        "text": "O conhecimento de Deus é irrelevante diante do cumprimento ritual"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-02-misericordia-quero",
+    "id": "oseias-pro-oseias-oseias-02-misericordia-quero-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Oséias 3:1",
+    "learningObjective": "Perceber que o amor de Jeová busca ativamente um povo infiel, como retrata o amor renovado de Oséias por sua esposa.",
+    "evidence": [
+      "Oséias 3:1"
+    ],
+    "type": "true_false",
+    "question": "Jeová manda Oséias amar novamente uma mulher adúltera, à imagem do amor de Jeová por Israel.",
+    "prompt": "Jeová manda Oséias amar novamente uma mulher adúltera, à imagem do amor de Jeová por Israel.",
+    "cue": "Jeová manda Oséias amar novamente uma mulher adúltera, à imagem do amor de Jeová por Israel.",
+    "feedbackCorrect": "Certo: é exatamente a ordem registrada no texto.",
+    "feedbackWrong": {
+      "false": "Releia o versículo: Jeová manda Oséias amar de novo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de Israel, ainda que eles se desviam para outros deuses e amam passas de uvas.",
+    "trail": "oseias",
+    "section": "oseias-oseias-03-desafio-oseias",
+    "id": "oseias-sem-oseias-oseias-03-desafio-oseias-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Oséias 3:1",
+    "learningObjective": "Perceber que o amor de Jeová busca ativamente um povo infiel, como retrata o amor renovado de Oséias por sua esposa.",
+    "evidence": [
+      "Oséias 3:1"
+    ],
+    "type": "tap",
+    "question": "Em Oséias 3:1, toque a palavra que falta em \"Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e ___, assim como Jeová ama os filhos de Israel\"?",
+    "prompt": "Em Oséias 3:1, toque a palavra que falta em \"Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e ___, assim como Jeová ama os filhos de Israel\"?",
+    "cue": "Em Oséias 3:1, toque a palavra que falta em \"Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e ___, assim como Jeová ama os filhos de Israel\"?",
+    "feedbackCorrect": "Exato: adúltera descreve a mulher que Oséias deve amar.",
+    "feedbackWrong": {
+      "b": "Amigo se refere a outra pessoa da frase, não à mulher.",
+      "c": "Israel só aparece depois, referindo-se ao povo."
+    },
+    "passageText": "Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de Israel, ainda que eles se desviam para outros deuses e amam passas de uvas.",
+    "template": "Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e ___, assim como Jeová ama os filhos de Israel",
+    "options": [
+      {
+        "id": "a",
+        "text": "adúltera"
+      },
+      {
+        "id": "b",
+        "text": "amigo"
+      },
+      {
+        "id": "c",
+        "text": "Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-03-desafio-oseias",
+    "id": "oseias-sem-oseias-oseias-03-desafio-oseias-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Oséias 3:1",
+    "learningObjective": "Perceber que o amor de Jeová busca ativamente um povo infiel, como retrata o amor renovado de Oséias por sua esposa.",
+    "evidence": [
+      "Oséias 3:1"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação o texto faz diretamente sobre a ordem de Jeová a Oséias?",
+    "prompt": "Qual afirmação o texto faz diretamente sobre a ordem de Jeová a Oséias?",
+    "cue": "Qual afirmação o texto faz diretamente sobre a ordem de Jeová a Oséias?",
+    "feedbackCorrect": "Certo: é exatamente a ordem que o texto registra.",
+    "feedbackWrong": {
+      "a": "O texto manda Oséias amar de novo, não abandonar a esposa.",
+      "b": "O texto centra-se no amor de Jeová, não em julgamento sem amor.",
+      "d": "A ordem de Jeová não trata de acordo comercial algum."
+    },
+    "passageText": "Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de Israel, ainda que eles se desviam para outros deuses e amam passas de uvas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová ordena que Oséias abandone de vez sua esposa infiel"
+      },
+      {
+        "id": "b",
+        "text": "O texto descreve um julgamento contra os filhos de Israel sem menção ao amor de Jeová"
+      },
+      {
+        "id": "c",
+        "text": "Jeová manda Oséias amar de novo uma mulher adúltera, como sinal do seu amor por Israel"
+      },
+      {
+        "id": "d",
+        "text": "A ordem de Jeová trata apenas de um acordo comercial entre amigos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "oseias",
+    "section": "oseias-oseias-03-desafio-oseias",
+    "id": "oseias-sem-oseias-oseias-03-desafio-oseias-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Oséias 3:1",
+    "learningObjective": "Perceber que o amor de Jeová busca ativamente um povo infiel, como retrata o amor renovado de Oséias por sua esposa.",
+    "evidence": [
+      "Oséias 3:1"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Oséias 3:1?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Oséias 3:1?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Oséias 3:1?",
+    "feedbackCorrect": "Certo: essa é a sequência da ordem de Jeová a Oséias.",
+    "feedbackWrong": {
+      "b": "A comparação com Jeová vem depois da ordem inicial.",
+      "c": "A menção à idolatria fecha o versículo, não o abre."
+    },
+    "passageText": "Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de Israel, ainda que eles se desviam para outros deuses e amam passas de uvas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera"
+      },
+      {
+        "id": "b",
+        "text": "assim como Jeová ama os filhos de Israel"
+      },
+      {
+        "id": "c",
+        "text": "ainda que eles se desviam para outros deuses e amam passas de uvas"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-03-desafio-oseias",
+    "id": "oseias-sem-oseias-oseias-03-desafio-oseias-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Oséias 3:1",
+    "learningObjective": "Perceber que o amor de Jeová busca ativamente um povo infiel, como retrata o amor renovado de Oséias por sua esposa.",
+    "evidence": [
+      "Oséias 3:1"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de ___\"",
+    "prompt": "Complete a frase: \"Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de ___\"",
+    "cue": "Complete a frase: \"Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de ___\"",
+    "feedbackCorrect": "Certo: Israel é o povo comparado à mulher amada por Jeová.",
+    "feedbackWrong": {
+      "b": "Adúltera já foi citada antes, não nesta lacuna.",
+      "c": "Amigo já foi citado antes, não nesta lacuna."
+    },
+    "passageText": "Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de Israel, ainda que eles se desviam para outros deuses e amam passas de uvas.",
+    "template": "Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de ___",
+    "options": [
+      {
+        "id": "a",
+        "text": "Israel"
+      },
+      {
+        "id": "b",
+        "text": "adúltera"
+      },
+      {
+        "id": "c",
+        "text": "amigo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-03-desafio-oseias",
+    "id": "oseias-sem-oseias-oseias-03-desafio-oseias-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Oséias 3:1",
+    "learningObjective": "Perceber que o amor de Jeová busca ativamente um povo infiel, como retrata o amor renovado de Oséias por sua esposa.",
+    "evidence": [
+      "Oséias 3:1"
+    ],
+    "type": "connect",
+    "question": "O que Oséias 3:1 comunica que se liga a este contexto?",
+    "prompt": "O que Oséias 3:1 comunica que se liga a este contexto?",
+    "cue": "O que Oséias 3:1 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o amor de Jeová busca quem se desviou para outros deuses.",
+    "feedbackWrong": {
+      "b": "O texto mostra Jeová buscando, não abandonando, o infiel.",
+      "c": "O amor de Oséias reflete diretamente a fidelidade de Jeová."
+    },
+    "passageText": "Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de Israel, ainda que eles se desviam para outros deuses e amam passas de uvas.",
+    "passageA": {
+      "ref": "Oséias 3:1",
+      "text": "Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de Israel, ainda que eles se desviam para outros deuses e amam passas de uvas."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O amor renovado de Oséias por sua esposa retrata o amor de Jeová, que busca Israel mesmo depois da infidelidade."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O amor de Jeová busca ativamente um povo que se desviou para outros deuses"
+      },
+      {
+        "id": "b",
+        "text": "Jeová abandona definitivamente quem se afasta dele"
+      },
+      {
+        "id": "c",
+        "text": "O amor de Oséias por Gômer não tem relação com a fidelidade de Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-03-desafio-oseias",
+    "id": "oseias-sem-oseias-oseias-03-desafio-oseias-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Oséias 3:1",
+    "learningObjective": "Perceber que o amor de Jeová busca ativamente um povo infiel, como retrata o amor renovado de Oséias por sua esposa.",
+    "evidence": [
+      "Oséias 3:1"
+    ],
+    "type": "true_false",
+    "question": "O texto ensina que Jeová desiste de amar Israel depois que o povo se volta a outros deuses.",
+    "prompt": "O texto ensina que Jeová desiste de amar Israel depois que o povo se volta a outros deuses.",
+    "cue": "O texto ensina que Jeová desiste de amar Israel depois que o povo se volta a outros deuses.",
+    "feedbackCorrect": "Certo: o texto mostra Jeová amando mesmo depois da infidelidade.",
+    "feedbackWrong": {
+      "true": "O texto mostra o contrário: Jeová manda amar apesar da infidelidade."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de Israel, ainda que eles se desviam para outros deuses e amam passas de uvas.",
+    "trail": "oseias",
+    "section": "oseias-oseias-03-desafio-oseias",
+    "id": "oseias-cam-oseias-oseias-03-desafio-oseias-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Oséias 3:1",
+    "learningObjective": "Perceber que o amor de Jeová busca ativamente um povo infiel, como retrata o amor renovado de Oséias por sua esposa.",
+    "evidence": [
+      "Oséias 3:1"
+    ],
+    "type": "tap",
+    "question": "Em Oséias 3:1, toque a palavra que falta em \"Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu ___ e adúltera, assim como Jeová ama os filhos de Israel\"?",
+    "prompt": "Em Oséias 3:1, toque a palavra que falta em \"Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu ___ e adúltera, assim como Jeová ama os filhos de Israel\"?",
+    "cue": "Em Oséias 3:1, toque a palavra que falta em \"Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu ___ e adúltera, assim como Jeová ama os filhos de Israel\"?",
+    "feedbackCorrect": "Exato: amigo é de quem a mulher era amada antes.",
+    "feedbackWrong": {
+      "b": "Adúltera descreve a mulher, não a quem ela pertencia antes.",
+      "c": "Israel só aparece depois, referindo-se ao povo."
+    },
+    "passageText": "Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de Israel, ainda que eles se desviam para outros deuses e amam passas de uvas.",
+    "template": "Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu ___ e adúltera, assim como Jeová ama os filhos de Israel",
+    "options": [
+      {
+        "id": "a",
+        "text": "amigo"
+      },
+      {
+        "id": "b",
+        "text": "adúltera"
+      },
+      {
+        "id": "c",
+        "text": "Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-03-desafio-oseias",
+    "id": "oseias-cam-oseias-oseias-03-desafio-oseias-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Oséias 3:1",
+    "learningObjective": "Perceber que o amor de Jeová busca ativamente um povo infiel, como retrata o amor renovado de Oséias por sua esposa.",
+    "evidence": [
+      "Oséias 3:1"
+    ],
+    "type": "choice",
+    "question": "Qual ideia melhor conecta Oséias 3:1 ao restante do livro?",
+    "prompt": "Qual ideia melhor conecta Oséias 3:1 ao restante do livro?",
+    "cue": "Qual ideia melhor conecta Oséias 3:1 ao restante do livro?",
+    "feedbackCorrect": "Certo: o amor de Oséias repete o amor perseverante de Jeová.",
+    "feedbackWrong": {
+      "a": "O episódio se conecta ao restante do livro, não é isolado.",
+      "b": "O texto mostra o contrário: o amor busca de novo o infiel.",
+      "c": "O foco do texto é o sinal profético, não a reputação de Oséias."
+    },
+    "passageText": "Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de Israel, ainda que eles se desviam para outros deuses e amam passas de uvas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O episódio é um caso isolado sem ligação com o resto da profecia"
+      },
+      {
+        "id": "b",
+        "text": "O texto ensina que a infidelidade anula qualquer possibilidade de novo amor"
+      },
+      {
+        "id": "c",
+        "text": "A ordem de Jeová busca apenas restaurar a reputação pública de Oséias"
+      },
+      {
+        "id": "d",
+        "text": "O amor perseverante de Oséias repete, na prática, o amor perseverante de Jeová por Israel"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "trail": "oseias",
+    "section": "oseias-oseias-03-desafio-oseias",
+    "id": "oseias-cam-oseias-oseias-03-desafio-oseias-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Oséias 3:1",
+    "learningObjective": "Perceber que o amor de Jeová busca ativamente um povo infiel, como retrata o amor renovado de Oséias por sua esposa.",
+    "evidence": [
+      "Oséias 3:1"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Oséias 3:1?",
+    "prompt": "Como se encadeiam os eventos de Oséias 3:1?",
+    "cue": "Como se encadeiam os eventos de Oséias 3:1?",
+    "feedbackCorrect": "Certo: essa é a sequência da ordem de Jeová a Oséias.",
+    "feedbackWrong": {
+      "b": "A comparação com Jeová vem depois da ordem inicial.",
+      "c": "A menção à idolatria fecha o versículo, não o abre."
+    },
+    "passageText": "Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de Israel, ainda que eles se desviam para outros deuses e amam passas de uvas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera"
+      },
+      {
+        "id": "b",
+        "text": "assim como Jeová ama os filhos de Israel"
+      },
+      {
+        "id": "c",
+        "text": "ainda que eles se desviam para outros deuses e amam passas de uvas"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-03-desafio-oseias",
+    "id": "oseias-cam-oseias-oseias-03-desafio-oseias-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Oséias 3:1",
+    "learningObjective": "Perceber que o amor de Jeová busca ativamente um povo infiel, como retrata o amor renovado de Oséias por sua esposa.",
+    "evidence": [
+      "Oséias 3:1"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de Israel, ainda que eles se desviam para outros ___ e amam passas de uvas\"",
+    "prompt": "Complete a frase: \"Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de Israel, ainda que eles se desviam para outros ___ e amam passas de uvas\"",
+    "cue": "Complete a frase: \"Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de Israel, ainda que eles se desviam para outros ___ e amam passas de uvas\"",
+    "feedbackCorrect": "Certo: outros deuses são para onde o povo se desvia.",
+    "feedbackWrong": {
+      "b": "Israel já foi citado antes, não nesta lacuna.",
+      "c": "Amigo se refere a outra parte da frase."
+    },
+    "passageText": "Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de Israel, ainda que eles se desviam para outros deuses e amam passas de uvas.",
+    "template": "Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de Israel, ainda que eles se desviam para outros ___ e amam passas de uvas",
+    "options": [
+      {
+        "id": "a",
+        "text": "deuses"
+      },
+      {
+        "id": "b",
+        "text": "Israel"
+      },
+      {
+        "id": "c",
+        "text": "amigo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-03-desafio-oseias",
+    "id": "oseias-cam-oseias-oseias-03-desafio-oseias-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Oséias 3:1",
+    "learningObjective": "Perceber que o amor de Jeová busca ativamente um povo infiel, como retrata o amor renovado de Oséias por sua esposa.",
+    "evidence": [
+      "Oséias 3:1"
+    ],
+    "type": "connect",
+    "question": "O que Oséias 3:1 comunica que se liga a este contexto?",
+    "prompt": "O que Oséias 3:1 comunica que se liga a este contexto?",
+    "cue": "O que Oséias 3:1 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Jeová insiste em amar quem se afastou para a idolatria.",
+    "feedbackWrong": {
+      "b": "A idolatria não encerra a aliança: Jeová insiste em buscar Israel.",
+      "c": "O amor de Jeová independe do comportamento perfeito do povo."
+    },
+    "passageText": "Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de Israel, ainda que eles se desviam para outros deuses e amam passas de uvas.",
+    "passageA": {
+      "ref": "Oséias 3:1",
+      "text": "Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de Israel, ainda que eles se desviam para outros deuses e amam passas de uvas."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Mesmo diante da idolatria de Israel, Jeová insiste em amar e buscar o povo de volta."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová insiste em amar e buscar de volta quem se afastou para a idolatria"
+      },
+      {
+        "id": "b",
+        "text": "A idolatria de Israel encerra de vez a aliança com Jeová"
+      },
+      {
+        "id": "c",
+        "text": "O amor de Jeová depende do comportamento perfeito do povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-03-desafio-oseias",
+    "id": "oseias-cam-oseias-oseias-03-desafio-oseias-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Oséias 3:1",
+    "learningObjective": "Perceber que o amor de Jeová busca ativamente um povo infiel, como retrata o amor renovado de Oséias por sua esposa.",
+    "evidence": [
+      "Oséias 3:1"
+    ],
+    "type": "true_false",
+    "question": "O amor que Oséias renova por sua mulher revela, em carne, a graça de Jeová que ama antes de qualquer arrependimento.",
+    "prompt": "O amor que Oséias renova por sua mulher revela, em carne, a graça de Jeová que ama antes de qualquer arrependimento.",
+    "cue": "O amor que Oséias renova por sua mulher revela, em carne, a graça de Jeová que ama antes de qualquer arrependimento.",
+    "feedbackCorrect": "Certo: é exatamente essa a leitura teológica sustentada pelo texto.",
+    "feedbackWrong": {
+      "false": "O amor de Oséias antecipa a graça que ama antes do arrependimento."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de Israel, ainda que eles se desviam para outros deuses e amam passas de uvas.",
+    "trail": "oseias",
+    "section": "oseias-oseias-03-desafio-oseias",
+    "id": "oseias-pro-oseias-oseias-03-desafio-oseias-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Oséias 3:1",
+    "learningObjective": "Perceber que o amor de Jeová busca ativamente um povo infiel, como retrata o amor renovado de Oséias por sua esposa.",
+    "evidence": [
+      "Oséias 3:1"
+    ],
+    "type": "tap",
+    "question": "Em Oséias 3:1, toque a palavra que falta em \"Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de Israel, ainda que eles se desviam para outros deuses e amam ___ de uvas\"?",
+    "prompt": "Em Oséias 3:1, toque a palavra que falta em \"Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de Israel, ainda que eles se desviam para outros deuses e amam ___ de uvas\"?",
+    "cue": "Em Oséias 3:1, toque a palavra que falta em \"Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de Israel, ainda que eles se desviam para outros deuses e amam ___ de uvas\"?",
+    "feedbackCorrect": "Exato: passas de uvas é o que o texto menciona no final.",
+    "feedbackWrong": {
+      "b": "Deuses aparece antes, ligado à idolatria do povo.",
+      "c": "Israel se refere ao povo, não ao alimento citado."
+    },
+    "passageText": "Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de Israel, ainda que eles se desviam para outros deuses e amam passas de uvas.",
+    "template": "Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de Israel, ainda que eles se desviam para outros deuses e amam ___ de uvas",
+    "options": [
+      {
+        "id": "a",
+        "text": "passas"
+      },
+      {
+        "id": "b",
+        "text": "deuses"
+      },
+      {
+        "id": "c",
+        "text": "Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-03-desafio-oseias",
+    "id": "oseias-pro-oseias-oseias-03-desafio-oseias-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Oséias 3:1",
+    "learningObjective": "Perceber que o amor de Jeová busca ativamente um povo infiel, como retrata o amor renovado de Oséias por sua esposa.",
+    "evidence": [
+      "Oséias 3:1"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de Oséias 3:1?",
+    "prompt": "Qual leitura interpreta melhor o sentido de Oséias 3:1?",
+    "cue": "Qual leitura interpreta melhor o sentido de Oséias 3:1?",
+    "feedbackCorrect": "Certo: o amor que busca o infiel antecipa a graça imerecida.",
+    "feedbackWrong": {
+      "b": "O texto mostra Jeová amando antes do arrependimento pleno.",
+      "c": "O texto exige fidelidade, não reduz o amor a mero sentimento.",
+      "d": "O peso do relato é teológico, não apenas costumeiro."
+    },
+    "passageText": "Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de Israel, ainda que eles se desviam para outros deuses e amam passas de uvas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O amor que busca o infiel antecipa a graça que ama antes do arrependimento"
+      },
+      {
+        "id": "b",
+        "text": "O texto ensina que Jeová só ama quem já se arrependeu por completo"
+      },
+      {
+        "id": "c",
+        "text": "A passagem reduz o amor de Jeová a um sentimento sem exigência de fidelidade"
+      },
+      {
+        "id": "d",
+        "text": "O relato serve apenas para justificar costumes matrimoniais antigos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-03-desafio-oseias",
+    "id": "oseias-pro-oseias-oseias-03-desafio-oseias-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Oséias 3:1",
+    "learningObjective": "Perceber que o amor de Jeová busca ativamente um povo infiel, como retrata o amor renovado de Oséias por sua esposa.",
+    "evidence": [
+      "Oséias 3:1"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Oséias 3:1?",
+    "prompt": "Qual sequência revela o sentido de Oséias 3:1?",
+    "cue": "Qual sequência revela o sentido de Oséias 3:1?",
+    "feedbackCorrect": "Certo: essa é a sequência da ordem de Jeová a Oséias.",
+    "feedbackWrong": {
+      "b": "A comparação com Jeová vem depois da ordem inicial.",
+      "c": "A menção à idolatria fecha o versículo, não o abre."
+    },
+    "passageText": "Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de Israel, ainda que eles se desviam para outros deuses e amam passas de uvas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera"
+      },
+      {
+        "id": "b",
+        "text": "assim como Jeová ama os filhos de Israel"
+      },
+      {
+        "id": "c",
+        "text": "ainda que eles se desviam para outros deuses e amam passas de uvas"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-03-desafio-oseias",
+    "id": "oseias-pro-oseias-oseias-03-desafio-oseias-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Oséias 3:1",
+    "learningObjective": "Perceber que o amor de Jeová busca ativamente um povo infiel, como retrata o amor renovado de Oséias por sua esposa.",
+    "evidence": [
+      "Oséias 3:1"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu ___ e adúltera, assim como Jeová ama os filhos de Israel\"",
+    "prompt": "Complete a frase: \"Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu ___ e adúltera, assim como Jeová ama os filhos de Israel\"",
+    "cue": "Complete a frase: \"Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu ___ e adúltera, assim como Jeová ama os filhos de Israel\"",
+    "feedbackCorrect": "Certo: amigo é de quem a mulher era amada antes.",
+    "feedbackWrong": {
+      "b": "Adúltera descreve a mulher, não a quem ela pertencia.",
+      "c": "Israel só aparece depois, referindo-se ao povo."
+    },
+    "passageText": "Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de Israel, ainda que eles se desviam para outros deuses e amam passas de uvas.",
+    "template": "Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu ___ e adúltera, assim como Jeová ama os filhos de Israel",
+    "options": [
+      {
+        "id": "a",
+        "text": "amigo"
+      },
+      {
+        "id": "b",
+        "text": "adúltera"
+      },
+      {
+        "id": "c",
+        "text": "Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-03-desafio-oseias",
+    "id": "oseias-pro-oseias-oseias-03-desafio-oseias-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Oséias 3:1",
+    "learningObjective": "Perceber que o amor de Jeová busca ativamente um povo infiel, como retrata o amor renovado de Oséias por sua esposa.",
+    "evidence": [
+      "Oséias 3:1"
+    ],
+    "type": "connect",
+    "question": "O que Oséias 3:1 comunica que se liga a este contexto?",
+    "prompt": "O que Oséias 3:1 comunica que se liga a este contexto?",
+    "cue": "O que Oséias 3:1 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a graça de Jeová restaura antes de qualquer mérito humano.",
+    "feedbackWrong": {
+      "b": "A restauração não depende de méritos, mas da graça de Jeová.",
+      "c": "O amor de Jeová alcança até quem falhou gravemente."
+    },
+    "passageText": "Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de Israel, ainda que eles se desviam para outros deuses e amam passas de uvas.",
+    "passageA": {
+      "ref": "Oséias 3:1",
+      "text": "Disse-me Jeová: Vai ainda, ama a uma mulher amada do seu amigo e adúltera, assim como Jeová ama os filhos de Israel, ainda que eles se desviam para outros deuses e amam passas de uvas."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O amor perseverante de Jeová antecipa a graça que restaura antes de qualquer mérito."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A graça de Jeová restaura antes que haja qualquer mérito humano"
+      },
+      {
+        "id": "b",
+        "text": "A restauração de Israel depende de méritos acumulados"
+      },
+      {
+        "id": "c",
+        "text": "O amor de Jeová se limita a quem nunca falhou"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "oseias",
+    "section": "oseias-oseias-03-desafio-oseias",
+    "id": "oseias-pro-oseias-oseias-03-desafio-oseias-06"
+  }
+]

@@ -1,0 +1,3647 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ester 2:17",
+    "learningObjective": "Perceber que Ester se torna rainha por graça e favor, coroada no lugar de Vasti.",
+    "evidence": [
+      "Ester 2:17"
+    ],
+    "type": "true_false",
+    "question": "O rei amou a Ester mais do que a todas as mulheres.",
+    "prompt": "O rei amou a Ester mais do que a todas as mulheres.",
+    "cue": "O rei amou a Ester mais do que a todas as mulheres.",
+    "feedbackCorrect": "Certo: o versículo abre exatamente com esse amor do rei.",
+    "feedbackWrong": {
+      "false": "Releia Ester 2:17: o rei amou Ester mais do que a todas."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "O rei amou a Ester mais do que a todas as mulheres, e ela alcançou graça e favor diante dele mais do que todas as virgens; de sorte que lhe pôs sobre a cabeça a coroa real e a fez rainha em lugar de Vasti.",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "id": "ester-sem-ester-corte-01-ester-rainha-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ester 2:17",
+    "learningObjective": "Perceber que Ester se torna rainha por graça e favor, coroada no lugar de Vasti.",
+    "evidence": [
+      "Ester 2:17"
+    ],
+    "type": "tap",
+    "question": "Em Ester 2:17, toque a palavra que falta em \"e ela alcançou ___ e favor diante dele mais do que todas as virgens\"?",
+    "prompt": "Em Ester 2:17, toque a palavra que falta em \"e ela alcançou ___ e favor diante dele mais do que todas as virgens\"?",
+    "cue": "Em Ester 2:17, toque a palavra que falta em \"e ela alcançou ___ e favor diante dele mais do que todas as virgens\"?",
+    "feedbackCorrect": "Exato: ela alcançou \"graça\" e favor diante do rei.",
+    "feedbackWrong": {
+      "b": "Virgens compara o alcance do favor, não preenche esta lacuna.",
+      "c": "Vasti é quem Ester substitui, não o que ela alcançou."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "graça"
+      },
+      {
+        "id": "b",
+        "text": "virgens"
+      },
+      {
+        "id": "c",
+        "text": "Vasti"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "O rei amou a Ester mais do que a todas as mulheres, e ela alcançou graça e favor diante dele mais do que todas as virgens; de sorte que lhe pôs sobre a cabeça a coroa real e a fez rainha em lugar de Vasti.",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "id": "ester-sem-ester-corte-01-ester-rainha-02",
+    "template": "e ela alcançou ___ e favor diante dele mais do que todas as virgens"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ester 2:17",
+    "learningObjective": "Perceber que Ester se torna rainha por graça e favor, coroada no lugar de Vasti.",
+    "evidence": [
+      "Ester 2:17"
+    ],
+    "type": "choice",
+    "question": "Qual fato Ester 2:17 afirma diretamente sobre Ester?",
+    "prompt": "Qual fato Ester 2:17 afirma diretamente sobre Ester?",
+    "cue": "Qual fato Ester 2:17 afirma diretamente sobre Ester?",
+    "feedbackCorrect": "Certo: o rei pôs-lhe a coroa e a fez rainha no lugar de Vasti.",
+    "feedbackWrong": {
+      "a": "O texto afirma amor, não desprezo do rei.",
+      "b": "O texto diz que o rei a fez rainha, não que ela recusou a coroa.",
+      "d": "Vasti é substituída; o texto não diz que ela voltou ao trono."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O rei a desprezou depois de vê-la no palácio."
+      },
+      {
+        "id": "b",
+        "text": "Ela recusou a coroa real oferecida pelo rei."
+      },
+      {
+        "id": "c",
+        "text": "O rei pôs-lhe a coroa e a fez rainha no lugar de Vasti."
+      },
+      {
+        "id": "d",
+        "text": "Vasti voltou ao trono depois da festa real."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "O rei amou a Ester mais do que a todas as mulheres, e ela alcançou graça e favor diante dele mais do que todas as virgens; de sorte que lhe pôs sobre a cabeça a coroa real e a fez rainha em lugar de Vasti.",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "id": "ester-sem-ester-corte-01-ester-rainha-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ester 2:17",
+    "learningObjective": "Perceber que Ester se torna rainha por graça e favor, coroada no lugar de Vasti.",
+    "evidence": [
+      "Ester 2:17"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Ester 2:17?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Ester 2:17?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Ester 2:17?",
+    "feedbackCorrect": "Certo: amor, graça e favor, depois a coroa e o lugar de Vasti.",
+    "feedbackWrong": {
+      "b": "Essa peça não vem primeiro no versículo.",
+      "c": "Releia a ordem: a coroa vem depois do favor alcançado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O rei amou a Ester mais do que a todas as mulheres"
+      },
+      {
+        "id": "b",
+        "text": "ela alcançou graça e favor diante dele mais do que todas as virgens"
+      },
+      {
+        "id": "c",
+        "text": "lhe pôs sobre a cabeça a coroa real e a fez rainha em lugar de Vasti"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "O rei amou a Ester mais do que a todas as mulheres, e ela alcançou graça e favor diante dele mais do que todas as virgens; de sorte que lhe pôs sobre a cabeça a coroa real e a fez rainha em lugar de Vasti.",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "id": "ester-sem-ester-corte-01-ester-rainha-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ester 2:17",
+    "learningObjective": "Perceber que Ester se torna rainha por graça e favor, coroada no lugar de Vasti.",
+    "evidence": [
+      "Ester 2:17"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"de sorte que lhe pôs sobre a cabeça a ___ real e a fez rainha em lugar de Vasti.\"",
+    "prompt": "Complete a frase: \"de sorte que lhe pôs sobre a cabeça a ___ real e a fez rainha em lugar de Vasti.\"",
+    "cue": "Complete a frase: \"de sorte que lhe pôs sobre a cabeça a ___ real e a fez rainha em lugar de Vasti.\"",
+    "feedbackCorrect": "Certo: o rei lhe pôs a \"coroa\" real sobre a cabeça.",
+    "feedbackWrong": {
+      "a": "Graça é o que ela alcançou, não o objeto posto na cabeça.",
+      "c": "Mulheres compara o amor do rei, não o que ele pôs nela."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "graça"
+      },
+      {
+        "id": "b",
+        "text": "coroa"
+      },
+      {
+        "id": "c",
+        "text": "mulheres"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "O rei amou a Ester mais do que a todas as mulheres, e ela alcançou graça e favor diante dele mais do que todas as virgens; de sorte que lhe pôs sobre a cabeça a coroa real e a fez rainha em lugar de Vasti.",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "id": "ester-sem-ester-corte-01-ester-rainha-05",
+    "template": "de sorte que lhe pôs sobre a cabeça a ___ real e a fez rainha em lugar de Vasti."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ester 2:17",
+    "learningObjective": "Perceber que Ester se torna rainha por graça e favor, coroada no lugar de Vasti.",
+    "evidence": [
+      "Ester 2:17"
+    ],
+    "type": "connect",
+    "question": "O que Ester 2:17 comunica que se liga a este contexto?",
+    "prompt": "O que Ester 2:17 comunica que se liga a este contexto?",
+    "cue": "O que Ester 2:17 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a elevação de Ester vem de graça e favor, não de mérito ostensivo.",
+    "feedbackWrong": {
+      "a": "O texto não atribui a coroa a feito militar de Ester.",
+      "c": "Vasti é substituída; o texto não narra o seu retorno."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Mérito militar de Ester"
+      },
+      {
+        "id": "b",
+        "text": "Graça que a eleva rainha"
+      },
+      {
+        "id": "c",
+        "text": "Retorno de Vasti ao trono"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "O rei amou a Ester mais do que a todas as mulheres, e ela alcançou graça e favor diante dele mais do que todas as virgens; de sorte que lhe pôs sobre a cabeça a coroa real e a fez rainha em lugar de Vasti.",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "id": "ester-sem-ester-corte-01-ester-rainha-06",
+    "passageA": {
+      "ref": "Ester 2:17",
+      "text": "ela alcançou graça e favor diante dele mais do que todas as virgens"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Ester é rainha por graça e favor — a coroa não apaga o povo escondido."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ester 2:17",
+    "learningObjective": "Perceber que Ester se torna rainha por graça e favor, coroada no lugar de Vasti.",
+    "evidence": [
+      "Ester 2:17"
+    ],
+    "type": "true_false",
+    "question": "O texto diz que Ester foi feita rainha só por beleza, sem mencionar graça e favor.",
+    "prompt": "O texto diz que Ester foi feita rainha só por beleza, sem mencionar graça e favor.",
+    "cue": "O texto diz que Ester foi feita rainha só por beleza, sem mencionar graça e favor.",
+    "feedbackCorrect": "Certo: o versículo destaca graça e favor, não só aparência.",
+    "feedbackWrong": {
+      "true": "Ester 2:17 afirma graça e favor diante do rei, não só beleza."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "O rei amou a Ester mais do que a todas as mulheres, e ela alcançou graça e favor diante dele mais do que todas as virgens; de sorte que lhe pôs sobre a cabeça a coroa real e a fez rainha em lugar de Vasti.",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "id": "ester-cam-ester-corte-01-ester-rainha-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ester 2:17",
+    "learningObjective": "Perceber que Ester se torna rainha por graça e favor, coroada no lugar de Vasti.",
+    "evidence": [
+      "Ester 2:17"
+    ],
+    "type": "tap",
+    "question": "Em Ester 2:17, toque a palavra que falta em \"e a fez ___ em lugar de Vasti\"?",
+    "prompt": "Em Ester 2:17, toque a palavra que falta em \"e a fez ___ em lugar de Vasti\"?",
+    "cue": "Em Ester 2:17, toque a palavra que falta em \"e a fez ___ em lugar de Vasti\"?",
+    "feedbackCorrect": "Exato: o rei a fez \"rainha\" em lugar de Vasti.",
+    "feedbackWrong": {
+      "a": "Graça é o que ela alcançou, não o título que o rei lhe deu.",
+      "c": "Mulheres compara o amor do rei, não o ofício de Ester."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "graça"
+      },
+      {
+        "id": "b",
+        "text": "rainha"
+      },
+      {
+        "id": "c",
+        "text": "mulheres"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "O rei amou a Ester mais do que a todas as mulheres, e ela alcançou graça e favor diante dele mais do que todas as virgens; de sorte que lhe pôs sobre a cabeça a coroa real e a fez rainha em lugar de Vasti.",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "id": "ester-cam-ester-corte-01-ester-rainha-02",
+    "template": "e a fez ___ em lugar de Vasti"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ester 2:17",
+    "learningObjective": "Perceber que Ester se torna rainha por graça e favor, coroada no lugar de Vasti.",
+    "evidence": [
+      "Ester 2:17"
+    ],
+    "type": "choice",
+    "question": "O que o encadeamento de Ester 2:17 mostra sobre a subida de Ester?",
+    "prompt": "O que o encadeamento de Ester 2:17 mostra sobre a subida de Ester?",
+    "cue": "O que o encadeamento de Ester 2:17 mostra sobre a subida de Ester?",
+    "feedbackCorrect": "Certo: o trono segue o favor alcançado, não uma troca de impérios.",
+    "feedbackWrong": {
+      "a": "O texto não diz que ela comprou o trono com ouro.",
+      "c": "Não há aqui uma aliança militar com Pérsia contra Judá.",
+      "d": "O versículo não apresenta Vasti restaurando Ester."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ela comprou o trono com ouro das províncias."
+      },
+      {
+        "id": "b",
+        "text": "O favor alcançado antecede a coroa e o lugar de Vasti."
+      },
+      {
+        "id": "c",
+        "text": "Ela firmou aliança militar contra o próprio povo."
+      },
+      {
+        "id": "d",
+        "text": "Vasti a restaurou como conselheira do palácio."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "O rei amou a Ester mais do que a todas as mulheres, e ela alcançou graça e favor diante dele mais do que todas as virgens; de sorte que lhe pôs sobre a cabeça a coroa real e a fez rainha em lugar de Vasti.",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "id": "ester-cam-ester-corte-01-ester-rainha-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ester 2:17",
+    "learningObjective": "Perceber que Ester se torna rainha por graça e favor, coroada no lugar de Vasti.",
+    "evidence": [
+      "Ester 2:17"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Ester 2:17?",
+    "prompt": "Como se encadeiam os eventos de Ester 2:17?",
+    "cue": "Como se encadeiam os eventos de Ester 2:17?",
+    "feedbackCorrect": "Certo: o amor do rei, o favor alcançado e então a coroa.",
+    "feedbackWrong": {
+      "a": "A coroa não vem antes do favor no texto.",
+      "c": "Essa peça não fecha o encadeamento do versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "lhe pôs sobre a cabeça a coroa real e a fez rainha em lugar de Vasti"
+      },
+      {
+        "id": "b",
+        "text": "O rei amou a Ester mais do que a todas as mulheres"
+      },
+      {
+        "id": "c",
+        "text": "ela alcançou graça e favor diante dele mais do que todas as virgens"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "O rei amou a Ester mais do que a todas as mulheres, e ela alcançou graça e favor diante dele mais do que todas as virgens; de sorte que lhe pôs sobre a cabeça a coroa real e a fez rainha em lugar de Vasti.",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "id": "ester-cam-ester-corte-01-ester-rainha-04",
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ester 2:17",
+    "learningObjective": "Perceber que Ester se torna rainha por graça e favor, coroada no lugar de Vasti.",
+    "evidence": [
+      "Ester 2:17"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"ela alcançou graça e favor diante dele mais do que todas as ___.\"",
+    "prompt": "Complete a frase: \"ela alcançou graça e favor diante dele mais do que todas as ___.\"",
+    "cue": "Complete a frase: \"ela alcançou graça e favor diante dele mais do que todas as ___.\"",
+    "feedbackCorrect": "Certo: o favor é maior do que o de todas as \"virgens\".",
+    "feedbackWrong": {
+      "a": "Coroa é o que o rei põe nela depois, não o termo desta comparação.",
+      "b": "Rainha é o título dado no fim, não o grupo comparado aqui."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "coroa"
+      },
+      {
+        "id": "b",
+        "text": "rainha"
+      },
+      {
+        "id": "c",
+        "text": "virgens"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "O rei amou a Ester mais do que a todas as mulheres, e ela alcançou graça e favor diante dele mais do que todas as virgens; de sorte que lhe pôs sobre a cabeça a coroa real e a fez rainha em lugar de Vasti.",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "id": "ester-cam-ester-corte-01-ester-rainha-05",
+    "template": "ela alcançou graça e favor diante dele mais do que todas as ___."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ester 2:17",
+    "learningObjective": "Perceber que Ester se torna rainha por graça e favor, coroada no lugar de Vasti.",
+    "evidence": [
+      "Ester 2:17"
+    ],
+    "type": "connect",
+    "question": "O que Ester 2:17 comunica que se liga a este contexto?",
+    "prompt": "O que Ester 2:17 comunica que se liga a este contexto?",
+    "cue": "O que Ester 2:17 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a coroa eleva Ester sem apagar a origem do seu povo.",
+    "feedbackWrong": {
+      "a": "O texto não declara vitória política de Vasti.",
+      "b": "Nada aqui afirma o fim da identidade judaica."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Vitória política de Vasti"
+      },
+      {
+        "id": "b",
+        "text": "Fim da identidade judaica"
+      },
+      {
+        "id": "c",
+        "text": "Coroa sem apagar a origem"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "O rei amou a Ester mais do que a todas as mulheres, e ela alcançou graça e favor diante dele mais do que todas as virgens; de sorte que lhe pôs sobre a cabeça a coroa real e a fez rainha em lugar de Vasti.",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "id": "ester-cam-ester-corte-01-ester-rainha-06",
+    "passageA": {
+      "ref": "Ester 2:17",
+      "text": "lhe pôs sobre a cabeça a coroa real e a fez rainha em lugar de Vasti"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A coroa chega por graça e favor; o povo de Ester permanece escondido no palácio."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ester 2:17",
+    "learningObjective": "Perceber que Ester se torna rainha por graça e favor, coroada no lugar de Vasti.",
+    "evidence": [
+      "Ester 2:17"
+    ],
+    "type": "true_false",
+    "question": "A coroa de Ester, recebida por graça e favor, não apaga o povo ao qual ela pertence.",
+    "prompt": "A coroa de Ester, recebida por graça e favor, não apaga o povo ao qual ela pertence.",
+    "cue": "A coroa de Ester, recebida por graça e favor, não apaga o povo ao qual ela pertence.",
+    "feedbackCorrect": "Certo: o favor a eleva, mas a identidade do povo continua em jogo.",
+    "feedbackWrong": {
+      "false": "A missão lê a coroa como graça, não como apagamento do povo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "O rei amou a Ester mais do que a todas as mulheres, e ela alcançou graça e favor diante dele mais do que todas as virgens; de sorte que lhe pôs sobre a cabeça a coroa real e a fez rainha em lugar de Vasti.",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "id": "ester-pro-ester-corte-01-ester-rainha-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ester 2:17",
+    "learningObjective": "Perceber que Ester se torna rainha por graça e favor, coroada no lugar de Vasti.",
+    "evidence": [
+      "Ester 2:17"
+    ],
+    "type": "tap",
+    "question": "Em Ester 2:17, toque a palavra que falta em \"a fez rainha em lugar de ___\"?",
+    "prompt": "Em Ester 2:17, toque a palavra que falta em \"a fez rainha em lugar de ___\"?",
+    "cue": "Em Ester 2:17, toque a palavra que falta em \"a fez rainha em lugar de ___\"?",
+    "feedbackCorrect": "Exato: Ester ocupa o lugar de \"Vasti\".",
+    "feedbackWrong": {
+      "a": "Rei é quem coroa, não quem é substituído no trono.",
+      "b": "Graça descreve o favor alcançado, não a antecessora."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "rei"
+      },
+      {
+        "id": "b",
+        "text": "graça"
+      },
+      {
+        "id": "c",
+        "text": "Vasti"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "O rei amou a Ester mais do que a todas as mulheres, e ela alcançou graça e favor diante dele mais do que todas as virgens; de sorte que lhe pôs sobre a cabeça a coroa real e a fez rainha em lugar de Vasti.",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "id": "ester-pro-ester-corte-01-ester-rainha-02",
+    "template": "a fez rainha em lugar de ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ester 2:17",
+    "learningObjective": "Perceber que Ester se torna rainha por graça e favor, coroada no lugar de Vasti.",
+    "evidence": [
+      "Ester 2:17"
+    ],
+    "type": "choice",
+    "question": "Qual leitura teológica Ester 2:17 sustenta sem forçar o texto?",
+    "prompt": "Qual leitura teológica Ester 2:17 sustenta sem forçar o texto?",
+    "cue": "Qual leitura teológica Ester 2:17 sustenta sem forçar o texto?",
+    "feedbackCorrect": "Certo: o trono é graça, e o povo de Ester não desaparece com a coroa.",
+    "feedbackWrong": {
+      "a": "O texto não apresenta a coroa como mérito puro de Ester.",
+      "b": "Nada aqui ensina que o palácio apaga a vocação do povo.",
+      "c": "O versículo não trata a rainha como ídolo do império."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A coroa prova mérito absoluto de Ester perante Deus."
+      },
+      {
+        "id": "b",
+        "text": "O palácio apaga qualquer vínculo de Ester com seu povo."
+      },
+      {
+        "id": "c",
+        "text": "Ser rainha a torna objeto de culto no império."
+      },
+      {
+        "id": "d",
+        "text": "Favor a eleva, mas a coroa não dissolve o povo escondido."
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "passageText": "O rei amou a Ester mais do que a todas as mulheres, e ela alcançou graça e favor diante dele mais do que todas as virgens; de sorte que lhe pôs sobre a cabeça a coroa real e a fez rainha em lugar de Vasti.",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "id": "ester-pro-ester-corte-01-ester-rainha-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ester 2:17",
+    "learningObjective": "Perceber que Ester se torna rainha por graça e favor, coroada no lugar de Vasti.",
+    "evidence": [
+      "Ester 2:17"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Ester 2:17?",
+    "prompt": "Qual sequência revela o sentido de Ester 2:17?",
+    "cue": "Qual sequência revela o sentido de Ester 2:17?",
+    "feedbackCorrect": "Certo: o sentido vai do amor do rei ao favor e, então, à coroa.",
+    "feedbackWrong": {
+      "a": "Começar pela coroa inverte o sentido do versículo.",
+      "b": "Essa ordem não revela o movimento de graça do texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "lhe pôs sobre a cabeça a coroa real e a fez rainha em lugar de Vasti"
+      },
+      {
+        "id": "b",
+        "text": "ela alcançou graça e favor diante dele mais do que todas as virgens"
+      },
+      {
+        "id": "c",
+        "text": "O rei amou a Ester mais do que a todas as mulheres"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "O rei amou a Ester mais do que a todas as mulheres, e ela alcançou graça e favor diante dele mais do que todas as virgens; de sorte que lhe pôs sobre a cabeça a coroa real e a fez rainha em lugar de Vasti.",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "id": "ester-pro-ester-corte-01-ester-rainha-04",
+    "correctOrder": [
+      "c",
+      "b",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ester 2:17",
+    "learningObjective": "Perceber que Ester se torna rainha por graça e favor, coroada no lugar de Vasti.",
+    "evidence": [
+      "Ester 2:17"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"e ela alcançou graça e ___ diante dele mais do que todas as virgens.\"",
+    "prompt": "Complete a frase: \"e ela alcançou graça e ___ diante dele mais do que todas as virgens.\"",
+    "cue": "Complete a frase: \"e ela alcançou graça e ___ diante dele mais do que todas as virgens.\"",
+    "feedbackCorrect": "Certo: além da graça, o texto fala de \"favor\" diante do rei.",
+    "feedbackWrong": {
+      "a": "Vasti é a antecessora, não o que Ester alcançou.",
+      "b": "Cabeça é onde a coroa é posta, não o que ela alcançou."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Vasti"
+      },
+      {
+        "id": "b",
+        "text": "cabeça"
+      },
+      {
+        "id": "c",
+        "text": "favor"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "O rei amou a Ester mais do que a todas as mulheres, e ela alcançou graça e favor diante dele mais do que todas as virgens; de sorte que lhe pôs sobre a cabeça a coroa real e a fez rainha em lugar de Vasti.",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "id": "ester-pro-ester-corte-01-ester-rainha-05",
+    "template": "e ela alcançou graça e ___ diante dele mais do que todas as virgens."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ester 2:17",
+    "learningObjective": "Perceber que Ester se torna rainha por graça e favor, coroada no lugar de Vasti.",
+    "evidence": [
+      "Ester 2:17"
+    ],
+    "type": "connect",
+    "question": "O que Ester 2:17 comunica que se liga a este contexto?",
+    "prompt": "O que Ester 2:17 comunica que se liga a este contexto?",
+    "cue": "O que Ester 2:17 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o favor real não cancela o povo escondido de Ester.",
+    "feedbackWrong": {
+      "b": "O texto não apresenta a coroa como fim da aliança.",
+      "c": "Nada aqui reduz Ester a um enfeite sem povo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Favor que não apaga o povo"
+      },
+      {
+        "id": "b",
+        "text": "Coroa como fim da aliança"
+      },
+      {
+        "id": "c",
+        "text": "Rainha sem vínculo algum"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "O rei amou a Ester mais do que a todas as mulheres, e ela alcançou graça e favor diante dele mais do que todas as virgens; de sorte que lhe pôs sobre a cabeça a coroa real e a fez rainha em lugar de Vasti.",
+    "trail": "ester",
+    "section": "ester-corte-01-ester-rainha",
+    "id": "ester-pro-ester-corte-01-ester-rainha-06",
+    "passageA": {
+      "ref": "Ester 2:17",
+      "text": "o rei amou a Ester mais do que a todas as mulheres"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Ester é rainha por graça e favor — a coroa não apaga o povo escondido."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ester 3:8",
+    "learningObjective": "Identificar que Hamã denuncia um povo disperso, de leis distintas, e pede que o rei não o tolere.",
+    "evidence": [
+      "Ester 3:8"
+    ],
+    "type": "true_false",
+    "question": "Hamã afirmou ao rei que havia um povo espalhado e disperso por entre os povos.",
+    "prompt": "Hamã afirmou ao rei que havia um povo espalhado e disperso por entre os povos.",
+    "cue": "Hamã afirmou ao rei que havia um povo espalhado e disperso por entre os povos.",
+    "feedbackCorrect": "Certo: essa é a abertura da denúncia de Hamã em Ester 3:8.",
+    "feedbackWrong": {
+      "false": "Releia Ester 3:8: Hamã fala de um povo espalhado e disperso."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Hamã disse ao rei Assuero: Há um povo espalhado e disperso por entre os povos, em todas as províncias do teu reino, e as suas leis divergem das de todos os povos. Não observa as leis do rei; portanto, não convém ao rei tolerá-lo.",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "id": "ester-sem-ester-corte-02-o-plano-de-hama-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ester 3:8",
+    "learningObjective": "Identificar que Hamã denuncia um povo disperso, de leis distintas, e pede que o rei não o tolere.",
+    "evidence": [
+      "Ester 3:8"
+    ],
+    "type": "tap",
+    "question": "Em Ester 3:8, toque a palavra que falta em \"as suas leis ___ das de todos os povos\"?",
+    "prompt": "Em Ester 3:8, toque a palavra que falta em \"as suas leis ___ das de todos os povos\"?",
+    "cue": "Em Ester 3:8, toque a palavra que falta em \"as suas leis ___ das de todos os povos\"?",
+    "feedbackCorrect": "Exato: as leis do povo \"divergem\" das dos demais.",
+    "feedbackWrong": {
+      "a": "Espalhado descreve o povo, não o verbo desta frase.",
+      "c": "Assuero é o rei ouvido, não o que as leis fazem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "espalhado"
+      },
+      {
+        "id": "b",
+        "text": "divergem"
+      },
+      {
+        "id": "c",
+        "text": "Assuero"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Hamã disse ao rei Assuero: Há um povo espalhado e disperso por entre os povos, em todas as províncias do teu reino, e as suas leis divergem das de todos os povos. Não observa as leis do rei; portanto, não convém ao rei tolerá-lo.",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "id": "ester-sem-ester-corte-02-o-plano-de-hama-02",
+    "template": "as suas leis ___ das de todos os povos"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ester 3:8",
+    "learningObjective": "Identificar que Hamã denuncia um povo disperso, de leis distintas, e pede que o rei não o tolere.",
+    "evidence": [
+      "Ester 3:8"
+    ],
+    "type": "choice",
+    "question": "O que Hamã afirma literalmente sobre esse povo?",
+    "prompt": "O que Hamã afirma literalmente sobre esse povo?",
+    "cue": "O que Hamã afirma literalmente sobre esse povo?",
+    "feedbackCorrect": "Certo: Hamã diz que o povo não observa as leis do rei.",
+    "feedbackWrong": {
+      "a": "O texto o chama de espalhado, não de concentrado em Susã só.",
+      "c": "Hamã pede que não o tolerem, não que o honrem.",
+      "d": "Ele fala de leis que divergem, não de tributo dobrado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O povo vive reunido só na capital do reino."
+      },
+      {
+        "id": "b",
+        "text": "O povo não observa as leis do rei, segundo Hamã."
+      },
+      {
+        "id": "c",
+        "text": "O povo merece honra especial nas províncias."
+      },
+      {
+        "id": "d",
+        "text": "O povo pagava tributo dobrado a Assuero."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Hamã disse ao rei Assuero: Há um povo espalhado e disperso por entre os povos, em todas as províncias do teu reino, e as suas leis divergem das de todos os povos. Não observa as leis do rei; portanto, não convém ao rei tolerá-lo.",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "id": "ester-sem-ester-corte-02-o-plano-de-hama-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ester 3:8",
+    "learningObjective": "Identificar que Hamã denuncia um povo disperso, de leis distintas, e pede que o rei não o tolere.",
+    "evidence": [
+      "Ester 3:8"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Ester 3:8?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Ester 3:8?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Ester 3:8?",
+    "feedbackCorrect": "Certo: povo disperso, leis que divergem, pedido para não tolerá-lo.",
+    "feedbackWrong": {
+      "b": "Essa peça não ocupa este lugar no discurso de Hamã.",
+      "c": "O pedido de não tolerar fecha o argumento, não o abre."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Há um povo espalhado e disperso por entre os povos"
+      },
+      {
+        "id": "b",
+        "text": "as suas leis divergem das de todos os povos"
+      },
+      {
+        "id": "c",
+        "text": "não convém ao rei tolerá-lo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Hamã disse ao rei Assuero: Há um povo espalhado e disperso por entre os povos, em todas as províncias do teu reino, e as suas leis divergem das de todos os povos. Não observa as leis do rei; portanto, não convém ao rei tolerá-lo.",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "id": "ester-sem-ester-corte-02-o-plano-de-hama-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ester 3:8",
+    "learningObjective": "Identificar que Hamã denuncia um povo disperso, de leis distintas, e pede que o rei não o tolere.",
+    "evidence": [
+      "Ester 3:8"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"portanto, não convém ao rei ___.\"",
+    "prompt": "Complete a frase: \"portanto, não convém ao rei ___.\"",
+    "cue": "Complete a frase: \"portanto, não convém ao rei ___.\"",
+    "feedbackCorrect": "Certo: Hamã conclui que não convém \"tolerá-lo\".",
+    "feedbackWrong": {
+      "a": "Disperso descreve o povo, não o verbo do pedido final.",
+      "c": "Leis é o tema da denúncia, não o que o rei não deve fazer."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "disperso"
+      },
+      {
+        "id": "b",
+        "text": "tolerá-lo"
+      },
+      {
+        "id": "c",
+        "text": "leis"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Hamã disse ao rei Assuero: Há um povo espalhado e disperso por entre os povos, em todas as províncias do teu reino, e as suas leis divergem das de todos os povos. Não observa as leis do rei; portanto, não convém ao rei tolerá-lo.",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "id": "ester-sem-ester-corte-02-o-plano-de-hama-05",
+    "template": "portanto, não convém ao rei ___."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ester 3:8",
+    "learningObjective": "Identificar que Hamã denuncia um povo disperso, de leis distintas, e pede que o rei não o tolere.",
+    "evidence": [
+      "Ester 3:8"
+    ],
+    "type": "connect",
+    "question": "O que Ester 3:8 comunica que se liga a este contexto?",
+    "prompt": "O que Ester 3:8 comunica que se liga a este contexto?",
+    "cue": "O que Ester 3:8 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: Hamã veste o ódio de zelo pelas leis do rei.",
+    "feedbackWrong": {
+      "b": "O texto não apresenta o povo como sem lei alguma.",
+      "c": "Hamã não pede honra pessoal neste versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ódio vestido de lealdade"
+      },
+      {
+        "id": "b",
+        "text": "Povo sem lei alguma"
+      },
+      {
+        "id": "c",
+        "text": "Pedido de honra pessoal"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Hamã disse ao rei Assuero: Há um povo espalhado e disperso por entre os povos, em todas as províncias do teu reino, e as suas leis divergem das de todos os povos. Não observa as leis do rei; portanto, não convém ao rei tolerá-lo.",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "id": "ester-sem-ester-corte-02-o-plano-de-hama-06",
+    "passageA": {
+      "ref": "Ester 3:8",
+      "text": "Não observa as leis do rei; portanto, não convém ao rei tolerá-lo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O plano de Hamã é apagar um povo cuja lei diverge — ódio vestido de lealdade ao rei."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ester 3:8",
+    "learningObjective": "Identificar que Hamã denuncia um povo disperso, de leis distintas, e pede que o rei não o tolere.",
+    "evidence": [
+      "Ester 3:8"
+    ],
+    "type": "true_false",
+    "question": "Hamã descreve o povo como unido numa só cidade e fiel às leis do rei.",
+    "prompt": "Hamã descreve o povo como unido numa só cidade e fiel às leis do rei.",
+    "cue": "Hamã descreve o povo como unido numa só cidade e fiel às leis do rei.",
+    "feedbackCorrect": "Certo: ele o chama de espalhado e diz que não observa as leis do rei.",
+    "feedbackWrong": {
+      "true": "Ester 3:8 diz o contrário: povo disperso e leis que divergem."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Hamã disse ao rei Assuero: Há um povo espalhado e disperso por entre os povos, em todas as províncias do teu reino, e as suas leis divergem das de todos os povos. Não observa as leis do rei; portanto, não convém ao rei tolerá-lo.",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "id": "ester-cam-ester-corte-02-o-plano-de-hama-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ester 3:8",
+    "learningObjective": "Identificar que Hamã denuncia um povo disperso, de leis distintas, e pede que o rei não o tolere.",
+    "evidence": [
+      "Ester 3:8"
+    ],
+    "type": "tap",
+    "question": "Em Ester 3:8, toque a palavra que falta em \"Há um povo ___ e disperso por entre os povos\"?",
+    "prompt": "Em Ester 3:8, toque a palavra que falta em \"Há um povo ___ e disperso por entre os povos\"?",
+    "cue": "Em Ester 3:8, toque a palavra que falta em \"Há um povo ___ e disperso por entre os povos\"?",
+    "feedbackCorrect": "Exato: o povo é chamado de \"espalhado\" e disperso.",
+    "feedbackWrong": {
+      "b": "Tolerá-lo é o pedido final, não o adjetivo do povo.",
+      "c": "Assuero é o rei, não a condição do povo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "espalhado"
+      },
+      {
+        "id": "b",
+        "text": "tolerá-lo"
+      },
+      {
+        "id": "c",
+        "text": "Assuero"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Hamã disse ao rei Assuero: Há um povo espalhado e disperso por entre os povos, em todas as províncias do teu reino, e as suas leis divergem das de todos os povos. Não observa as leis do rei; portanto, não convém ao rei tolerá-lo.",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "id": "ester-cam-ester-corte-02-o-plano-de-hama-02",
+    "template": "Há um povo ___ e disperso por entre os povos"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ester 3:8",
+    "learningObjective": "Identificar que Hamã denuncia um povo disperso, de leis distintas, e pede que o rei não o tolere.",
+    "evidence": [
+      "Ester 3:8"
+    ],
+    "type": "choice",
+    "question": "Como Hamã constrói o argumento para o rei em Ester 3:8?",
+    "prompt": "Como Hamã constrói o argumento para o rei em Ester 3:8?",
+    "cue": "Como Hamã constrói o argumento para o rei em Ester 3:8?",
+    "feedbackCorrect": "Certo: a diferença de leis vira pretexto para não tolerar o povo.",
+    "feedbackWrong": {
+      "a": "Hamã não pede censo fiscal neste versículo.",
+      "b": "Ele não recomenda diálogo com os sábios de Susã.",
+      "d": "Não há aqui um elogio à lealdade do povo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Pede um censo para aumentar o tributo real."
+      },
+      {
+        "id": "b",
+        "text": "Sugere diálogo com os sábios de todas as cidades."
+      },
+      {
+        "id": "c",
+        "text": "Usa a diferença de leis como razão para não tolerar."
+      },
+      {
+        "id": "d",
+        "text": "Elogia a lealdade do povo às leis de Assuero."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Hamã disse ao rei Assuero: Há um povo espalhado e disperso por entre os povos, em todas as províncias do teu reino, e as suas leis divergem das de todos os povos. Não observa as leis do rei; portanto, não convém ao rei tolerá-lo.",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "id": "ester-cam-ester-corte-02-o-plano-de-hama-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ester 3:8",
+    "learningObjective": "Identificar que Hamã denuncia um povo disperso, de leis distintas, e pede que o rei não o tolere.",
+    "evidence": [
+      "Ester 3:8"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Ester 3:8?",
+    "prompt": "Como se encadeiam os eventos de Ester 3:8?",
+    "cue": "Como se encadeiam os eventos de Ester 3:8?",
+    "feedbackCorrect": "Certo: a denúncia vai da dispersão à divergência e ao pedido de exclusão.",
+    "feedbackWrong": {
+      "a": "Essa ordem embaralha o encadeamento do discurso.",
+      "b": "O pedido de não tolerar não abre o argumento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "não convém ao rei tolerá-lo"
+      },
+      {
+        "id": "b",
+        "text": "Há um povo espalhado e disperso por entre os povos"
+      },
+      {
+        "id": "c",
+        "text": "as suas leis divergem das de todos os povos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Hamã disse ao rei Assuero: Há um povo espalhado e disperso por entre os povos, em todas as províncias do teu reino, e as suas leis divergem das de todos os povos. Não observa as leis do rei; portanto, não convém ao rei tolerá-lo.",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "id": "ester-cam-ester-corte-02-o-plano-de-hama-04",
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ester 3:8",
+    "learningObjective": "Identificar que Hamã denuncia um povo disperso, de leis distintas, e pede que o rei não o tolere.",
+    "evidence": [
+      "Ester 3:8"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Há um povo espalhado e ___ por entre os povos.\"",
+    "prompt": "Complete a frase: \"Há um povo espalhado e ___ por entre os povos.\"",
+    "cue": "Complete a frase: \"Há um povo espalhado e ___ por entre os povos.\"",
+    "feedbackCorrect": "Certo: além de espalhado, o povo é chamado de \"disperso\".",
+    "feedbackWrong": {
+      "a": "Divergem refere-se às leis, não a este adjetivo do povo.",
+      "c": "Províncias indica o alcance geográfico, não este par com espalhado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "divergem"
+      },
+      {
+        "id": "b",
+        "text": "disperso"
+      },
+      {
+        "id": "c",
+        "text": "províncias"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Hamã disse ao rei Assuero: Há um povo espalhado e disperso por entre os povos, em todas as províncias do teu reino, e as suas leis divergem das de todos os povos. Não observa as leis do rei; portanto, não convém ao rei tolerá-lo.",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "id": "ester-cam-ester-corte-02-o-plano-de-hama-05",
+    "template": "Há um povo espalhado e ___ por entre os povos."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ester 3:8",
+    "learningObjective": "Identificar que Hamã denuncia um povo disperso, de leis distintas, e pede que o rei não o tolere.",
+    "evidence": [
+      "Ester 3:8"
+    ],
+    "type": "connect",
+    "question": "O que Ester 3:8 comunica que se liga a este contexto?",
+    "prompt": "O que Ester 3:8 comunica que se liga a este contexto?",
+    "cue": "O que Ester 3:8 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a denúncia visa apagar um povo cuja lei diverge.",
+    "feedbackWrong": {
+      "a": "Hamã não propõe reforma das leis do império.",
+      "b": "O texto não é um elogio à diversidade do povo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Reforma das leis do império"
+      },
+      {
+        "id": "b",
+        "text": "Elogio à diversidade do povo"
+      },
+      {
+        "id": "c",
+        "text": "Denúncia para apagar um povo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Hamã disse ao rei Assuero: Há um povo espalhado e disperso por entre os povos, em todas as províncias do teu reino, e as suas leis divergem das de todos os povos. Não observa as leis do rei; portanto, não convém ao rei tolerá-lo.",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "id": "ester-cam-ester-corte-02-o-plano-de-hama-06",
+    "passageA": {
+      "ref": "Ester 3:8",
+      "text": "Há um povo espalhado e disperso por entre os povos"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O plano de Hamã é apagar um povo cuja lei diverge — ódio vestido de lealdade ao rei."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ester 3:8",
+    "learningObjective": "Identificar que Hamã denuncia um povo disperso, de leis distintas, e pede que o rei não o tolere.",
+    "evidence": [
+      "Ester 3:8"
+    ],
+    "type": "true_false",
+    "question": "Hamã veste o ódio ao povo de lealdade ao rei, pedindo que não o tolerem.",
+    "prompt": "Hamã veste o ódio ao povo de lealdade ao rei, pedindo que não o tolerem.",
+    "cue": "Hamã veste o ódio ao povo de lealdade ao rei, pedindo que não o tolerem.",
+    "feedbackCorrect": "Certo: a lealdade ao rei é a roupagem do pedido de exclusão.",
+    "feedbackWrong": {
+      "false": "Ester 3:8 mostra ódio apresentado como zelo pelas leis reais."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Hamã disse ao rei Assuero: Há um povo espalhado e disperso por entre os povos, em todas as províncias do teu reino, e as suas leis divergem das de todos os povos. Não observa as leis do rei; portanto, não convém ao rei tolerá-lo.",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "id": "ester-pro-ester-corte-02-o-plano-de-hama-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ester 3:8",
+    "learningObjective": "Identificar que Hamã denuncia um povo disperso, de leis distintas, e pede que o rei não o tolere.",
+    "evidence": [
+      "Ester 3:8"
+    ],
+    "type": "tap",
+    "question": "Em Ester 3:8, toque a palavra que falta em \"em todas as ___ do teu reino\"?",
+    "prompt": "Em Ester 3:8, toque a palavra que falta em \"em todas as ___ do teu reino\"?",
+    "cue": "Em Ester 3:8, toque a palavra que falta em \"em todas as ___ do teu reino\"?",
+    "feedbackCorrect": "Exato: o povo está em todas as \"províncias\" do reino.",
+    "feedbackWrong": {
+      "b": "Leis é o tema da divergência, não o lugar da dispersão.",
+      "c": "Povos é o conjunto entre o qual estão, não esta palavra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "províncias"
+      },
+      {
+        "id": "b",
+        "text": "leis"
+      },
+      {
+        "id": "c",
+        "text": "povos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Hamã disse ao rei Assuero: Há um povo espalhado e disperso por entre os povos, em todas as províncias do teu reino, e as suas leis divergem das de todos os povos. Não observa as leis do rei; portanto, não convém ao rei tolerá-lo.",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "id": "ester-pro-ester-corte-02-o-plano-de-hama-02",
+    "template": "em todas as ___ do teu reino"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ester 3:8",
+    "learningObjective": "Identificar que Hamã denuncia um povo disperso, de leis distintas, e pede que o rei não o tolere.",
+    "evidence": [
+      "Ester 3:8"
+    ],
+    "type": "choice",
+    "question": "Qual erro de leitura Ester 3:8 ajuda a desmascarar?",
+    "prompt": "Qual erro de leitura Ester 3:8 ajuda a desmascarar?",
+    "cue": "Qual erro de leitura Ester 3:8 ajuda a desmascarar?",
+    "feedbackCorrect": "Certo: diferença de lei vira pretexto de ódio, não zelo neutro.",
+    "feedbackWrong": {
+      "b": "Hamã não descreve um censo piedoso e imparcial.",
+      "c": "O texto não apresenta o povo como ameaça militar explícita.",
+      "d": "Não há aqui um convite à conversão das leis judaicas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Tratar diferença de lei como pretexto de ódio ao povo."
+      },
+      {
+        "id": "b",
+        "text": "Ver a fala de Hamã como censo piedoso e imparcial."
+      },
+      {
+        "id": "c",
+        "text": "Ler o povo como exército pronto contra Assuero."
+      },
+      {
+        "id": "d",
+        "text": "Entender o versículo como convite à conversão das leis."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Hamã disse ao rei Assuero: Há um povo espalhado e disperso por entre os povos, em todas as províncias do teu reino, e as suas leis divergem das de todos os povos. Não observa as leis do rei; portanto, não convém ao rei tolerá-lo.",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "id": "ester-pro-ester-corte-02-o-plano-de-hama-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ester 3:8",
+    "learningObjective": "Identificar que Hamã denuncia um povo disperso, de leis distintas, e pede que o rei não o tolere.",
+    "evidence": [
+      "Ester 3:8"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Ester 3:8?",
+    "prompt": "Qual sequência revela o sentido de Ester 3:8?",
+    "cue": "Qual sequência revela o sentido de Ester 3:8?",
+    "feedbackCorrect": "Certo: o sentido vai da dispersão à divergência e à intolerância pedida.",
+    "feedbackWrong": {
+      "b": "Essa ordem não revela o movimento acusatório do texto.",
+      "c": "Começar pelo pedido final esconde como o ódio se veste."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Há um povo espalhado e disperso por entre os povos"
+      },
+      {
+        "id": "b",
+        "text": "não convém ao rei tolerá-lo"
+      },
+      {
+        "id": "c",
+        "text": "as suas leis divergem das de todos os povos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Hamã disse ao rei Assuero: Há um povo espalhado e disperso por entre os povos, em todas as províncias do teu reino, e as suas leis divergem das de todos os povos. Não observa as leis do rei; portanto, não convém ao rei tolerá-lo.",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "id": "ester-pro-ester-corte-02-o-plano-de-hama-04",
+    "correctOrder": [
+      "a",
+      "c",
+      "b"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ester 3:8",
+    "learningObjective": "Identificar que Hamã denuncia um povo disperso, de leis distintas, e pede que o rei não o tolere.",
+    "evidence": [
+      "Ester 3:8"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"e as suas ___ divergem das de todos os povos.\"",
+    "prompt": "Complete a frase: \"e as suas ___ divergem das de todos os povos.\"",
+    "cue": "Complete a frase: \"e as suas ___ divergem das de todos os povos.\"",
+    "feedbackCorrect": "Certo: são as \"leis\" do povo que Hamã diz divergirem.",
+    "feedbackWrong": {
+      "b": "Províncias localiza o povo, não o que diverge.",
+      "c": "Reino é o domínio de Assuero, não o sujeito de divergem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "leis"
+      },
+      {
+        "id": "b",
+        "text": "províncias"
+      },
+      {
+        "id": "c",
+        "text": "reino"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Hamã disse ao rei Assuero: Há um povo espalhado e disperso por entre os povos, em todas as províncias do teu reino, e as suas leis divergem das de todos os povos. Não observa as leis do rei; portanto, não convém ao rei tolerá-lo.",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "id": "ester-pro-ester-corte-02-o-plano-de-hama-05",
+    "template": "e as suas ___ divergem das de todos os povos."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ester 3:8",
+    "learningObjective": "Identificar que Hamã denuncia um povo disperso, de leis distintas, e pede que o rei não o tolere.",
+    "evidence": [
+      "Ester 3:8"
+    ],
+    "type": "connect",
+    "question": "O que Ester 3:8 comunica que se liga a este contexto?",
+    "prompt": "O que Ester 3:8 comunica que se liga a este contexto?",
+    "cue": "O que Ester 3:8 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a lei diversa é usada como pretexto para excluir.",
+    "feedbackWrong": {
+      "a": "Hamã não busca proteger o povo sob o rei.",
+      "c": "O versículo não é um tratado de harmonia entre povos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Proteção piedosa do povo"
+      },
+      {
+        "id": "b",
+        "text": "Lei diversa usada como pretexto"
+      },
+      {
+        "id": "c",
+        "text": "Harmonia entre todos os povos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Hamã disse ao rei Assuero: Há um povo espalhado e disperso por entre os povos, em todas as províncias do teu reino, e as suas leis divergem das de todos os povos. Não observa as leis do rei; portanto, não convém ao rei tolerá-lo.",
+    "trail": "ester",
+    "section": "ester-corte-02-o-plano-de-hama",
+    "id": "ester-pro-ester-corte-02-o-plano-de-hama-06",
+    "passageA": {
+      "ref": "Ester 3:8",
+      "text": "as suas leis divergem das de todos os povos"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O plano de Hamã é apagar um povo cuja lei diverge — ódio vestido de lealdade ao rei."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ester 4:16",
+    "learningObjective": "Ver que Ester pede jejum de três dias e se dispõe a ir ao rei mesmo contra a lei.",
+    "evidence": [
+      "Ester 4:16"
+    ],
+    "type": "true_false",
+    "question": "Ester pede que os judeus de Susã jejuem por ela, sem comer nem beber por três dias.",
+    "prompt": "Ester pede que os judeus de Susã jejuem por ela, sem comer nem beber por três dias.",
+    "cue": "Ester pede que os judeus de Susã jejuem por ela, sem comer nem beber por três dias.",
+    "feedbackCorrect": "Certo: o versículo manda ajuntar, jejuar e não comer nem beber três dias.",
+    "feedbackWrong": {
+      "false": "Releia Ester 4:16: jejum de três dias, de noite e de dia."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Vai ajuntar todos os judeus que se acham em Susã, e jejuai por mim; não comais, nem bebais por três dias, nem de noite nem de dia. Da mesma maneira, também eu e minhas criadas jejuaremos. Depois, irei ter com o rei, ainda que isso não é segundo a lei; se perecer, pereci.",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "id": "ester-sem-ester-livramento-01-jejuar-e-agir-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ester 4:16",
+    "learningObjective": "Ver que Ester pede jejum de três dias e se dispõe a ir ao rei mesmo contra a lei.",
+    "evidence": [
+      "Ester 4:16"
+    ],
+    "type": "tap",
+    "question": "Em Ester 4:16, toque a palavra que falta em \"todos os judeus que se acham em ___\"?",
+    "prompt": "Em Ester 4:16, toque a palavra que falta em \"todos os judeus que se acham em ___\"?",
+    "cue": "Em Ester 4:16, toque a palavra que falta em \"todos os judeus que se acham em ___\"?",
+    "feedbackCorrect": "Exato: o jejum reúne os judeus que estão em \"Susã\".",
+    "feedbackWrong": {
+      "b": "Lei aparece no risco de ir ao rei, não neste lugar.",
+      "c": "Rei é a quem ela irá depois, não o local do ajuntamento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Susã"
+      },
+      {
+        "id": "b",
+        "text": "lei"
+      },
+      {
+        "id": "c",
+        "text": "rei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Vai ajuntar todos os judeus que se acham em Susã, e jejuai por mim; não comais, nem bebais por três dias, nem de noite nem de dia. Da mesma maneira, também eu e minhas criadas jejuaremos. Depois, irei ter com o rei, ainda que isso não é segundo a lei; se perecer, pereci.",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "id": "ester-sem-ester-livramento-01-jejuar-e-agir-02",
+    "template": "todos os judeus que se acham em ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ester 4:16",
+    "learningObjective": "Ver que Ester pede jejum de três dias e se dispõe a ir ao rei mesmo contra a lei.",
+    "evidence": [
+      "Ester 4:16"
+    ],
+    "type": "choice",
+    "question": "O que Ester declara que fará depois do jejum?",
+    "prompt": "O que Ester declara que fará depois do jejum?",
+    "cue": "O que Ester declara que fará depois do jejum?",
+    "feedbackCorrect": "Certo: ela irá ao rei, ainda que isso não seja segundo a lei.",
+    "feedbackWrong": {
+      "a": "O texto não diz que ela fugirá de Susã.",
+      "b": "Não há pedido de decreto novo antes de ir.",
+      "c": "Ela não envia só as criadas no seu lugar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ela fugirá de Susã com as criadas."
+      },
+      {
+        "id": "b",
+        "text": "Ela pedirá um decreto novo antes de ir."
+      },
+      {
+        "id": "c",
+        "text": "Ela enviará só as criadas ao palácio."
+      },
+      {
+        "id": "d",
+        "text": "Ela irá ao rei, ainda que isso não seja segundo a lei."
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "passageText": "Vai ajuntar todos os judeus que se acham em Susã, e jejuai por mim; não comais, nem bebais por três dias, nem de noite nem de dia. Da mesma maneira, também eu e minhas criadas jejuaremos. Depois, irei ter com o rei, ainda que isso não é segundo a lei; se perecer, pereci.",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "id": "ester-sem-ester-livramento-01-jejuar-e-agir-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ester 4:16",
+    "learningObjective": "Ver que Ester pede jejum de três dias e se dispõe a ir ao rei mesmo contra a lei.",
+    "evidence": [
+      "Ester 4:16"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Ester 4:16?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Ester 4:16?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Ester 4:16?",
+    "feedbackCorrect": "Certo: ajuntar e jejuar, três dias, depois ir ao rei mesmo sob risco.",
+    "feedbackWrong": {
+      "b": "Essa peça não ocupa este lugar na fala de Ester.",
+      "c": "O risco de perecer fecha o texto, não o abre."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Vai ajuntar todos os judeus que se acham em Susã, e jejuai por mim"
+      },
+      {
+        "id": "b",
+        "text": "não comais, nem bebais por três dias, nem de noite nem de dia"
+      },
+      {
+        "id": "c",
+        "text": "irei ter com o rei, ainda que isso não é segundo a lei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Vai ajuntar todos os judeus que se acham em Susã, e jejuai por mim; não comais, nem bebais por três dias, nem de noite nem de dia. Da mesma maneira, também eu e minhas criadas jejuaremos. Depois, irei ter com o rei, ainda que isso não é segundo a lei; se perecer, pereci.",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "id": "ester-sem-ester-livramento-01-jejuar-e-agir-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ester 4:16",
+    "learningObjective": "Ver que Ester pede jejum de três dias e se dispõe a ir ao rei mesmo contra a lei.",
+    "evidence": [
+      "Ester 4:16"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"irei ter com o rei, ainda que isso não é segundo a ___.\"",
+    "prompt": "Complete a frase: \"irei ter com o rei, ainda que isso não é segundo a ___.\"",
+    "cue": "Complete a frase: \"irei ter com o rei, ainda que isso não é segundo a ___.\"",
+    "feedbackCorrect": "Certo: ir ao rei não é segundo a \"lei\".",
+    "feedbackWrong": {
+      "a": "Susã é a cidade do jejum, não o termo desta cláusula.",
+      "c": "Criadas jejuam com ela, mas não preenchem esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Susã"
+      },
+      {
+        "id": "b",
+        "text": "lei"
+      },
+      {
+        "id": "c",
+        "text": "criadas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Vai ajuntar todos os judeus que se acham em Susã, e jejuai por mim; não comais, nem bebais por três dias, nem de noite nem de dia. Da mesma maneira, também eu e minhas criadas jejuaremos. Depois, irei ter com o rei, ainda que isso não é segundo a lei; se perecer, pereci.",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "id": "ester-sem-ester-livramento-01-jejuar-e-agir-05",
+    "template": "irei ter com o rei, ainda que isso não é segundo a ___."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ester 4:16",
+    "learningObjective": "Ver que Ester pede jejum de três dias e se dispõe a ir ao rei mesmo contra a lei.",
+    "evidence": [
+      "Ester 4:16"
+    ],
+    "type": "connect",
+    "question": "O que Ester 4:16 comunica que se liga a este contexto?",
+    "prompt": "O que Ester 4:16 comunica que se liga a este contexto?",
+    "cue": "O que Ester 4:16 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o jejum precede o risco de entrar no palácio.",
+    "feedbackWrong": {
+      "b": "O texto não descreve recusa de Ester em agir.",
+      "c": "Não há aqui um jejum sem qualquer passo seguinte."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jejum antes de arriscar a vida"
+      },
+      {
+        "id": "b",
+        "text": "Recusa de Ester em agir"
+      },
+      {
+        "id": "c",
+        "text": "Jejum sem passo seguinte"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Vai ajuntar todos os judeus que se acham em Susã, e jejuai por mim; não comais, nem bebais por três dias, nem de noite nem de dia. Da mesma maneira, também eu e minhas criadas jejuaremos. Depois, irei ter com o rei, ainda que isso não é segundo a lei; se perecer, pereci.",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "id": "ester-sem-ester-livramento-01-jejuar-e-agir-06",
+    "passageA": {
+      "ref": "Ester 4:16",
+      "text": "jejuai por mim; não comais, nem bebais por três dias"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jejuar e agir: Ester arrisca a vida depois de três dias de jejum — fé que entra no palácio."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ester 4:16",
+    "learningObjective": "Ver que Ester pede jejum de três dias e se dispõe a ir ao rei mesmo contra a lei.",
+    "evidence": [
+      "Ester 4:16"
+    ],
+    "type": "true_false",
+    "question": "Ester decide ir ao rei somente depois de obter autorização legal explícita.",
+    "prompt": "Ester decide ir ao rei somente depois de obter autorização legal explícita.",
+    "cue": "Ester decide ir ao rei somente depois de obter autorização legal explícita.",
+    "feedbackCorrect": "Certo: ela irá ainda que isso não seja segundo a lei.",
+    "feedbackWrong": {
+      "true": "Ester 4:16 diz o contrário: irá mesmo contra a lei."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Vai ajuntar todos os judeus que se acham em Susã, e jejuai por mim; não comais, nem bebais por três dias, nem de noite nem de dia. Da mesma maneira, também eu e minhas criadas jejuaremos. Depois, irei ter com o rei, ainda que isso não é segundo a lei; se perecer, pereci.",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "id": "ester-cam-ester-livramento-01-jejuar-e-agir-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ester 4:16",
+    "learningObjective": "Ver que Ester pede jejum de três dias e se dispõe a ir ao rei mesmo contra a lei.",
+    "evidence": [
+      "Ester 4:16"
+    ],
+    "type": "tap",
+    "question": "Em Ester 4:16, toque a palavra que falta em \"não comais, nem bebais por três ___\"?",
+    "prompt": "Em Ester 4:16, toque a palavra que falta em \"não comais, nem bebais por três ___\"?",
+    "cue": "Em Ester 4:16, toque a palavra que falta em \"não comais, nem bebais por três ___\"?",
+    "feedbackCorrect": "Exato: o jejum dura três \"dias\".",
+    "feedbackWrong": {
+      "a": "Criadas jejuam com ela, mas não medem o tempo aqui.",
+      "c": "Judeus são os que jejum, não a unidade de tempo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "criadas"
+      },
+      {
+        "id": "b",
+        "text": "dias"
+      },
+      {
+        "id": "c",
+        "text": "judeus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Vai ajuntar todos os judeus que se acham em Susã, e jejuai por mim; não comais, nem bebais por três dias, nem de noite nem de dia. Da mesma maneira, também eu e minhas criadas jejuaremos. Depois, irei ter com o rei, ainda que isso não é segundo a lei; se perecer, pereci.",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "id": "ester-cam-ester-livramento-01-jejuar-e-agir-02",
+    "template": "não comais, nem bebais por três ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ester 4:16",
+    "learningObjective": "Ver que Ester pede jejum de três dias e se dispõe a ir ao rei mesmo contra a lei.",
+    "evidence": [
+      "Ester 4:16"
+    ],
+    "type": "choice",
+    "question": "Como jejum e ação se relacionam em Ester 4:16?",
+    "prompt": "Como jejum e ação se relacionam em Ester 4:16?",
+    "cue": "Como jejum e ação se relacionam em Ester 4:16?",
+    "feedbackCorrect": "Certo: o jejum prepara a ida ao rei, não a substitui.",
+    "feedbackWrong": {
+      "b": "O texto não apresenta o jejum como fim da história.",
+      "c": "Ela não transfere o risco só às criadas.",
+      "d": "Não há recusa de entrar no palácio após o jejum."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O jejum prepara a ida ao rei; não a substitui."
+      },
+      {
+        "id": "b",
+        "text": "O jejum encerra a crise sem nenhum passo seguinte."
+      },
+      {
+        "id": "c",
+        "text": "Só as criadas assumem o risco no lugar de Ester."
+      },
+      {
+        "id": "d",
+        "text": "Ester recusa entrar no palácio depois de jejuar."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Vai ajuntar todos os judeus que se acham em Susã, e jejuai por mim; não comais, nem bebais por três dias, nem de noite nem de dia. Da mesma maneira, também eu e minhas criadas jejuaremos. Depois, irei ter com o rei, ainda que isso não é segundo a lei; se perecer, pereci.",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "id": "ester-cam-ester-livramento-01-jejuar-e-agir-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ester 4:16",
+    "learningObjective": "Ver que Ester pede jejum de três dias e se dispõe a ir ao rei mesmo contra a lei.",
+    "evidence": [
+      "Ester 4:16"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Ester 4:16?",
+    "prompt": "Como se encadeiam os eventos de Ester 4:16?",
+    "cue": "Como se encadeiam os eventos de Ester 4:16?",
+    "feedbackCorrect": "Certo: primeiro o jejum conjunto, depois a ida ao rei sob risco.",
+    "feedbackWrong": {
+      "a": "Ir ao rei não abre a fala; vem depois do jejum.",
+      "c": "Essa ordem quebra o encadeamento do versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "irei ter com o rei, ainda que isso não é segundo a lei"
+      },
+      {
+        "id": "b",
+        "text": "jejuai por mim; não comais, nem bebais por três dias"
+      },
+      {
+        "id": "c",
+        "text": "também eu e minhas criadas jejuaremos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Vai ajuntar todos os judeus que se acham em Susã, e jejuai por mim; não comais, nem bebais por três dias, nem de noite nem de dia. Da mesma maneira, também eu e minhas criadas jejuaremos. Depois, irei ter com o rei, ainda que isso não é segundo a lei; se perecer, pereci.",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "id": "ester-cam-ester-livramento-01-jejuar-e-agir-04",
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ester 4:16",
+    "learningObjective": "Ver que Ester pede jejum de três dias e se dispõe a ir ao rei mesmo contra a lei.",
+    "evidence": [
+      "Ester 4:16"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"se ___, pereci.\"",
+    "prompt": "Complete a frase: \"se ___, pereci.\"",
+    "cue": "Complete a frase: \"se ___, pereci.\"",
+    "feedbackCorrect": "Certo: Ester conclui \"se perecer, pereci\".",
+    "feedbackWrong": {
+      "a": "Jejuaremos é a ação das criadas, não esta cláusula.",
+      "c": "Ajuntar é a ordem inicial, não o verbo do risco."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "jejuaremos"
+      },
+      {
+        "id": "b",
+        "text": "perecer"
+      },
+      {
+        "id": "c",
+        "text": "ajuntar"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Vai ajuntar todos os judeus que se acham em Susã, e jejuai por mim; não comais, nem bebais por três dias, nem de noite nem de dia. Da mesma maneira, também eu e minhas criadas jejuaremos. Depois, irei ter com o rei, ainda que isso não é segundo a lei; se perecer, pereci.",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "id": "ester-cam-ester-livramento-01-jejuar-e-agir-05",
+    "template": "se ___, pereci."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ester 4:16",
+    "learningObjective": "Ver que Ester pede jejum de três dias e se dispõe a ir ao rei mesmo contra a lei.",
+    "evidence": [
+      "Ester 4:16"
+    ],
+    "type": "connect",
+    "question": "O que Ester 4:16 comunica que se liga a este contexto?",
+    "prompt": "O que Ester 4:16 comunica que se liga a este contexto?",
+    "cue": "O que Ester 4:16 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a fé jejua e depois entra no palácio.",
+    "feedbackWrong": {
+      "a": "O texto não descreve fuga para fora de Susã.",
+      "b": "Não há aqui um decreto já garantido antes de ir."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fuga segura para fora de Susã"
+      },
+      {
+        "id": "b",
+        "text": "Decreto já garantido pelo rei"
+      },
+      {
+        "id": "c",
+        "text": "Fé que entra no palácio"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Vai ajuntar todos os judeus que se acham em Susã, e jejuai por mim; não comais, nem bebais por três dias, nem de noite nem de dia. Da mesma maneira, também eu e minhas criadas jejuaremos. Depois, irei ter com o rei, ainda que isso não é segundo a lei; se perecer, pereci.",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "id": "ester-cam-ester-livramento-01-jejuar-e-agir-06",
+    "passageA": {
+      "ref": "Ester 4:16",
+      "text": "Depois, irei ter com o rei, ainda que isso não é segundo a lei"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jejuar e agir: Ester arrisca a vida depois de três dias de jejum — fé que entra no palácio."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ester 4:16",
+    "learningObjective": "Ver que Ester pede jejum de três dias e se dispõe a ir ao rei mesmo contra a lei.",
+    "evidence": [
+      "Ester 4:16"
+    ],
+    "type": "true_false",
+    "question": "O jejum de Ester não substitui a ação: depois de três dias, ela se dispõe a ir ao rei sob risco de morte.",
+    "prompt": "O jejum de Ester não substitui a ação: depois de três dias, ela se dispõe a ir ao rei sob risco de morte.",
+    "cue": "O jejum de Ester não substitui a ação: depois de três dias, ela se dispõe a ir ao rei sob risco de morte.",
+    "feedbackCorrect": "Certo: jejum e risco de perecer estão juntos no mesmo plano.",
+    "feedbackWrong": {
+      "false": "Ester 4:16 une jejum, ida ao rei e 'se perecer, pereci'."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Vai ajuntar todos os judeus que se acham em Susã, e jejuai por mim; não comais, nem bebais por três dias, nem de noite nem de dia. Da mesma maneira, também eu e minhas criadas jejuaremos. Depois, irei ter com o rei, ainda que isso não é segundo a lei; se perecer, pereci.",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "id": "ester-pro-ester-livramento-01-jejuar-e-agir-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ester 4:16",
+    "learningObjective": "Ver que Ester pede jejum de três dias e se dispõe a ir ao rei mesmo contra a lei.",
+    "evidence": [
+      "Ester 4:16"
+    ],
+    "type": "tap",
+    "question": "Em Ester 4:16, toque a palavra que falta em \"também eu e minhas ___ jejuaremos\"?",
+    "prompt": "Em Ester 4:16, toque a palavra que falta em \"também eu e minhas ___ jejuaremos\"?",
+    "cue": "Em Ester 4:16, toque a palavra que falta em \"também eu e minhas ___ jejuaremos\"?",
+    "feedbackCorrect": "Exato: Ester e suas \"criadas\" também jejum.",
+    "feedbackWrong": {
+      "b": "Judeus são o povo ajuntado, não o par desta frase.",
+      "c": "Lei regula a ida ao rei, não quem jejua com ela."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "criadas"
+      },
+      {
+        "id": "b",
+        "text": "judeus"
+      },
+      {
+        "id": "c",
+        "text": "lei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Vai ajuntar todos os judeus que se acham em Susã, e jejuai por mim; não comais, nem bebais por três dias, nem de noite nem de dia. Da mesma maneira, também eu e minhas criadas jejuaremos. Depois, irei ter com o rei, ainda que isso não é segundo a lei; se perecer, pereci.",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "id": "ester-pro-ester-livramento-01-jejuar-e-agir-02",
+    "template": "também eu e minhas ___ jejuaremos"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ester 4:16",
+    "learningObjective": "Ver que Ester pede jejum de três dias e se dispõe a ir ao rei mesmo contra a lei.",
+    "evidence": [
+      "Ester 4:16"
+    ],
+    "type": "choice",
+    "question": "O que o risco de Ester 4:16 ensina sobre fé no palácio?",
+    "prompt": "O que o risco de Ester 4:16 ensina sobre fé no palácio?",
+    "cue": "O que o risco de Ester 4:16 ensina sobre fé no palácio?",
+    "feedbackCorrect": "Certo: fé jejua e age; não é fatalismo nem recusa do perigo.",
+    "feedbackWrong": {
+      "a": "O texto não trata o jejum como mágica sem ida ao rei.",
+      "c": "Ester não nega o perigo; ela o nomeia.",
+      "d": "Não há aqui um culto ao palácio como salvador."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O jejum dispensa qualquer passo seguinte no palácio."
+      },
+      {
+        "id": "b",
+        "text": "Fé jejua e depois arrisca a vida; não é fatalismo vazio."
+      },
+      {
+        "id": "c",
+        "text": "Ester ignora o perigo e trata a lei como irrelevante."
+      },
+      {
+        "id": "d",
+        "text": "O palácio é o salvador, e o jejum é só etiqueta real."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Vai ajuntar todos os judeus que se acham em Susã, e jejuai por mim; não comais, nem bebais por três dias, nem de noite nem de dia. Da mesma maneira, também eu e minhas criadas jejuaremos. Depois, irei ter com o rei, ainda que isso não é segundo a lei; se perecer, pereci.",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "id": "ester-pro-ester-livramento-01-jejuar-e-agir-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ester 4:16",
+    "learningObjective": "Ver que Ester pede jejum de três dias e se dispõe a ir ao rei mesmo contra a lei.",
+    "evidence": [
+      "Ester 4:16"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Ester 4:16?",
+    "prompt": "Qual sequência revela o sentido de Ester 4:16?",
+    "cue": "Qual sequência revela o sentido de Ester 4:16?",
+    "feedbackCorrect": "Certo: o sentido vai do jejum conjunto à ida ilegal e ao risco assumido.",
+    "feedbackWrong": {
+      "a": "Começar pelo risco esconde o jejum que o prepara.",
+      "c": "Essa ordem não revela o movimento de fé do texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "se perecer, pereci"
+      },
+      {
+        "id": "b",
+        "text": "jejuai por mim; não comais, nem bebais por três dias"
+      },
+      {
+        "id": "c",
+        "text": "irei ter com o rei, ainda que isso não é segundo a lei"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Vai ajuntar todos os judeus que se acham em Susã, e jejuai por mim; não comais, nem bebais por três dias, nem de noite nem de dia. Da mesma maneira, também eu e minhas criadas jejuaremos. Depois, irei ter com o rei, ainda que isso não é segundo a lei; se perecer, pereci.",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "id": "ester-pro-ester-livramento-01-jejuar-e-agir-04",
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ester 4:16",
+    "learningObjective": "Ver que Ester pede jejum de três dias e se dispõe a ir ao rei mesmo contra a lei.",
+    "evidence": [
+      "Ester 4:16"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Depois, irei ter com o ___, ainda que isso não é segundo a lei.\"",
+    "prompt": "Complete a frase: \"Depois, irei ter com o ___, ainda que isso não é segundo a lei.\"",
+    "cue": "Complete a frase: \"Depois, irei ter com o ___, ainda que isso não é segundo a lei.\"",
+    "feedbackCorrect": "Certo: o destino da ação é o \"rei\".",
+    "feedbackWrong": {
+      "a": "Dia mede o jejum, não a pessoa a quem ela irá.",
+      "c": "Susã é o lugar do ajuntamento, não o destinatário da ida."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "dia"
+      },
+      {
+        "id": "b",
+        "text": "rei"
+      },
+      {
+        "id": "c",
+        "text": "Susã"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Vai ajuntar todos os judeus que se acham em Susã, e jejuai por mim; não comais, nem bebais por três dias, nem de noite nem de dia. Da mesma maneira, também eu e minhas criadas jejuaremos. Depois, irei ter com o rei, ainda que isso não é segundo a lei; se perecer, pereci.",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "id": "ester-pro-ester-livramento-01-jejuar-e-agir-05",
+    "template": "Depois, irei ter com o ___, ainda que isso não é segundo a lei."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ester 4:16",
+    "learningObjective": "Ver que Ester pede jejum de três dias e se dispõe a ir ao rei mesmo contra a lei.",
+    "evidence": [
+      "Ester 4:16"
+    ],
+    "type": "connect",
+    "question": "O que Ester 4:16 comunica que se liga a este contexto?",
+    "prompt": "O que Ester 4:16 comunica que se liga a este contexto?",
+    "cue": "O que Ester 4:16 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o risco vem depois do jejum, não no lugar dele.",
+    "feedbackWrong": {
+      "a": "O texto não descreve segurança jurídica prévia.",
+      "c": "Não há aqui um jejum que cancele a responsabilidade de Ester."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Segurança jurídica antes de agir"
+      },
+      {
+        "id": "b",
+        "text": "Risco depois do jejum"
+      },
+      {
+        "id": "c",
+        "text": "Jejum que cancela a responsabilidade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Vai ajuntar todos os judeus que se acham em Susã, e jejuai por mim; não comais, nem bebais por três dias, nem de noite nem de dia. Da mesma maneira, também eu e minhas criadas jejuaremos. Depois, irei ter com o rei, ainda que isso não é segundo a lei; se perecer, pereci.",
+    "trail": "ester",
+    "section": "ester-livramento-01-jejuar-e-agir",
+    "id": "ester-pro-ester-livramento-01-jejuar-e-agir-06",
+    "passageA": {
+      "ref": "Ester 4:16",
+      "text": "se perecer, pereci"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jejuar e agir: Ester arrisca a vida depois de três dias de jejum — fé que entra no palácio."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ester 9:22",
+    "learningObjective": "Reconhecer que Purim marca descanso dos inimigos e inversão de tristeza em alegria, com partilha.",
+    "evidence": [
+      "Ester 9:22"
+    ],
+    "type": "true_false",
+    "question": "O texto fala de dias em que os judeus tiveram descanso dos seus inimigos.",
+    "prompt": "O texto fala de dias em que os judeus tiveram descanso dos seus inimigos.",
+    "cue": "O texto fala de dias em que os judeus tiveram descanso dos seus inimigos.",
+    "feedbackCorrect": "Certo: Ester 9:22 abre com esse descanso dos inimigos.",
+    "feedbackWrong": {
+      "false": "Releia o versículo: os judeus tiveram descanso dos inimigos."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "como os dias em que os judeus tiveram descanso dos seus inimigos e como o mês que se lhes mudou de tristeza em alegria e de pranto em festim, a fim de que os fizessem dias de banquetes e de alegria, em que enviassem quinhões uns aos outros e dádivas aos pobres.",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "id": "ester-sem-ester-livramento-02-purim-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ester 9:22",
+    "learningObjective": "Reconhecer que Purim marca descanso dos inimigos e inversão de tristeza em alegria, com partilha.",
+    "evidence": [
+      "Ester 9:22"
+    ],
+    "type": "tap",
+    "question": "Em Ester 9:22, toque a palavra que falta em \"mudou de tristeza em ___\"?",
+    "prompt": "Em Ester 9:22, toque a palavra que falta em \"mudou de tristeza em ___\"?",
+    "cue": "Em Ester 9:22, toque a palavra que falta em \"mudou de tristeza em ___\"?",
+    "feedbackCorrect": "Exato: a tristeza se muda em \"alegria\".",
+    "feedbackWrong": {
+      "b": "Pobres recebem dádivas, mas não preenchem esta inversão.",
+      "c": "Inimigos são de quem houve descanso, não o termo desta troca."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "alegria"
+      },
+      {
+        "id": "b",
+        "text": "pobres"
+      },
+      {
+        "id": "c",
+        "text": "inimigos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "como os dias em que os judeus tiveram descanso dos seus inimigos e como o mês que se lhes mudou de tristeza em alegria e de pranto em festim, a fim de que os fizessem dias de banquetes e de alegria, em que enviassem quinhões uns aos outros e dádivas aos pobres.",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "id": "ester-sem-ester-livramento-02-purim-02",
+    "template": "mudou de tristeza em ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ester 9:22",
+    "learningObjective": "Reconhecer que Purim marca descanso dos inimigos e inversão de tristeza em alegria, com partilha.",
+    "evidence": [
+      "Ester 9:22"
+    ],
+    "type": "choice",
+    "question": "O que Ester 9:22 afirma sobre o mês lembrado?",
+    "prompt": "O que Ester 9:22 afirma sobre o mês lembrado?",
+    "cue": "O que Ester 9:22 afirma sobre o mês lembrado?",
+    "feedbackCorrect": "Certo: o mês mudou de tristeza em alegria e de pranto em festim.",
+    "feedbackWrong": {
+      "a": "O texto fala de descanso, não de luto permanente.",
+      "b": "Há dádivas aos pobres, não silêncio sobre eles.",
+      "d": "Não descreve apenas jejum sem festa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Foi um mês de luto permanente sem festa."
+      },
+      {
+        "id": "b",
+        "text": "Os pobres foram excluídos de qualquer partilha."
+      },
+      {
+        "id": "c",
+        "text": "Mudou de tristeza em alegria e de pranto em festim."
+      },
+      {
+        "id": "d",
+        "text": "Foi só jejum, sem banquetes nem quinhões."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "como os dias em que os judeus tiveram descanso dos seus inimigos e como o mês que se lhes mudou de tristeza em alegria e de pranto em festim, a fim de que os fizessem dias de banquetes e de alegria, em que enviassem quinhões uns aos outros e dádivas aos pobres.",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "id": "ester-sem-ester-livramento-02-purim-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ester 9:22",
+    "learningObjective": "Reconhecer que Purim marca descanso dos inimigos e inversão de tristeza em alegria, com partilha.",
+    "evidence": [
+      "Ester 9:22"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Ester 9:22?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Ester 9:22?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Ester 9:22?",
+    "feedbackCorrect": "Certo: descanso, inversão da tristeza, depois banquetes e partilha.",
+    "feedbackWrong": {
+      "b": "Essa peça não vem neste lugar do versículo.",
+      "c": "As dádivas fecham o texto, não o abrem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "os judeus tiveram descanso dos seus inimigos"
+      },
+      {
+        "id": "b",
+        "text": "o mês que se lhes mudou de tristeza em alegria e de pranto em festim"
+      },
+      {
+        "id": "c",
+        "text": "enviassem quinhões uns aos outros e dádivas aos pobres"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "como os dias em que os judeus tiveram descanso dos seus inimigos e como o mês que se lhes mudou de tristeza em alegria e de pranto em festim, a fim de que os fizessem dias de banquetes e de alegria, em que enviassem quinhões uns aos outros e dádivas aos pobres.",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "id": "ester-sem-ester-livramento-02-purim-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ester 9:22",
+    "learningObjective": "Reconhecer que Purim marca descanso dos inimigos e inversão de tristeza em alegria, com partilha.",
+    "evidence": [
+      "Ester 9:22"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"enviassem quinhões uns aos outros e dádivas aos ___.\"",
+    "prompt": "Complete a frase: \"enviassem quinhões uns aos outros e dádivas aos ___.\"",
+    "cue": "Complete a frase: \"enviassem quinhões uns aos outros e dádivas aos ___.\"",
+    "feedbackCorrect": "Certo: as dádivas são enviadas aos \"pobres\".",
+    "feedbackWrong": {
+      "a": "Alegria é o tom da festa, não o destinatário das dádivas.",
+      "c": "Inimigos são de quem houve descanso, não quem recebe dádivas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "alegria"
+      },
+      {
+        "id": "b",
+        "text": "pobres"
+      },
+      {
+        "id": "c",
+        "text": "inimigos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "como os dias em que os judeus tiveram descanso dos seus inimigos e como o mês que se lhes mudou de tristeza em alegria e de pranto em festim, a fim de que os fizessem dias de banquetes e de alegria, em que enviassem quinhões uns aos outros e dádivas aos pobres.",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "id": "ester-sem-ester-livramento-02-purim-05",
+    "template": "enviassem quinhões uns aos outros e dádivas aos ___."
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ester 9:22",
+    "learningObjective": "Reconhecer que Purim marca descanso dos inimigos e inversão de tristeza em alegria, com partilha.",
+    "evidence": [
+      "Ester 9:22"
+    ],
+    "type": "connect",
+    "question": "O que Ester 9:22 comunica que se liga a este contexto?",
+    "prompt": "O que Ester 9:22 comunica que se liga a este contexto?",
+    "cue": "O que Ester 9:22 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a inversão se festeja partilhando, inclusive com os pobres.",
+    "feedbackWrong": {
+      "b": "O texto não descreve luto sem festa.",
+      "c": "Não há aqui uma memória só privada, sem partilha."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Inversão que se festeja partilhando"
+      },
+      {
+        "id": "b",
+        "text": "Luto sem festa alguma"
+      },
+      {
+        "id": "c",
+        "text": "Memória só privada e fechada"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "como os dias em que os judeus tiveram descanso dos seus inimigos e como o mês que se lhes mudou de tristeza em alegria e de pranto em festim, a fim de que os fizessem dias de banquetes e de alegria, em que enviassem quinhões uns aos outros e dádivas aos pobres.",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "id": "ester-sem-ester-livramento-02-purim-06",
+    "passageA": {
+      "ref": "Ester 9:22",
+      "text": "de tristeza em alegria e de pranto em festim"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Purim festeja a inversão: tristeza em alegria, e o povo lembra partilhando com os pobres."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ester 9:22",
+    "learningObjective": "Reconhecer que Purim marca descanso dos inimigos e inversão de tristeza em alegria, com partilha.",
+    "evidence": [
+      "Ester 9:22"
+    ],
+    "type": "true_false",
+    "question": "O texto descreve esses dias apenas como luto obrigatório, sem banquetes nem dádivas.",
+    "prompt": "O texto descreve esses dias apenas como luto obrigatório, sem banquetes nem dádivas.",
+    "cue": "O texto descreve esses dias apenas como luto obrigatório, sem banquetes nem dádivas.",
+    "feedbackCorrect": "Certo: fala de banquetes, alegria, quinhões e dádivas aos pobres.",
+    "feedbackWrong": {
+      "true": "Ester 9:22 manda banquetes, alegria e dádivas, não só luto."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "como os dias em que os judeus tiveram descanso dos seus inimigos e como o mês que se lhes mudou de tristeza em alegria e de pranto em festim, a fim de que os fizessem dias de banquetes e de alegria, em que enviassem quinhões uns aos outros e dádivas aos pobres.",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "id": "ester-cam-ester-livramento-02-purim-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ester 9:22",
+    "learningObjective": "Reconhecer que Purim marca descanso dos inimigos e inversão de tristeza em alegria, com partilha.",
+    "evidence": [
+      "Ester 9:22"
+    ],
+    "type": "tap",
+    "question": "Em Ester 9:22, toque a palavra que falta em \"de pranto em ___\"?",
+    "prompt": "Em Ester 9:22, toque a palavra que falta em \"de pranto em ___\"?",
+    "cue": "Em Ester 9:22, toque a palavra que falta em \"de pranto em ___\"?",
+    "feedbackCorrect": "Exato: o pranto se muda em \"festim\".",
+    "feedbackWrong": {
+      "a": "Descanso é o que tiveram dos inimigos, não esta inversão.",
+      "c": "Mês localiza o tempo, não o termo que substitui o pranto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "descanso"
+      },
+      {
+        "id": "b",
+        "text": "festim"
+      },
+      {
+        "id": "c",
+        "text": "mês"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "como os dias em que os judeus tiveram descanso dos seus inimigos e como o mês que se lhes mudou de tristeza em alegria e de pranto em festim, a fim de que os fizessem dias de banquetes e de alegria, em que enviassem quinhões uns aos outros e dádivas aos pobres.",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "id": "ester-cam-ester-livramento-02-purim-02",
+    "template": "de pranto em ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ester 9:22",
+    "learningObjective": "Reconhecer que Purim marca descanso dos inimigos e inversão de tristeza em alegria, com partilha.",
+    "evidence": [
+      "Ester 9:22"
+    ],
+    "type": "choice",
+    "question": "O que a memória de Ester 9:22 exige além da festa?",
+    "prompt": "O que a memória de Ester 9:22 exige além da festa?",
+    "cue": "O que a memória de Ester 9:22 exige além da festa?",
+    "feedbackCorrect": "Certo: a alegria inclui quinhões e dádivas aos pobres.",
+    "feedbackWrong": {
+      "a": "O texto não reduz a memória a um jejum secreto.",
+      "c": "Não manda apagar o nome dos pobres da festa.",
+      "d": "Não há ordem de isolamento sem partilha."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Que o povo jejuasse em segredo, sem festa."
+      },
+      {
+        "id": "b",
+        "text": "Que enviassem quinhões e dádivas também aos pobres."
+      },
+      {
+        "id": "c",
+        "text": "Que apagassem o nome dos pobres da festa."
+      },
+      {
+        "id": "d",
+        "text": "Que cada casa celebrasse isolada, sem partilha."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "como os dias em que os judeus tiveram descanso dos seus inimigos e como o mês que se lhes mudou de tristeza em alegria e de pranto em festim, a fim de que os fizessem dias de banquetes e de alegria, em que enviassem quinhões uns aos outros e dádivas aos pobres.",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "id": "ester-cam-ester-livramento-02-purim-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ester 9:22",
+    "learningObjective": "Reconhecer que Purim marca descanso dos inimigos e inversão de tristeza em alegria, com partilha.",
+    "evidence": [
+      "Ester 9:22"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Ester 9:22?",
+    "prompt": "Como se encadeiam os eventos de Ester 9:22?",
+    "cue": "Como se encadeiam os eventos de Ester 9:22?",
+    "feedbackCorrect": "Certo: do descanso à inversão, e da inversão à partilha.",
+    "feedbackWrong": {
+      "a": "As dádivas não abrem o versículo.",
+      "c": "Essa ordem embaralha o encadeamento da memória."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "enviassem quinhões uns aos outros e dádivas aos pobres"
+      },
+      {
+        "id": "b",
+        "text": "os judeus tiveram descanso dos seus inimigos"
+      },
+      {
+        "id": "c",
+        "text": "mudou de tristeza em alegria e de pranto em festim"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "como os dias em que os judeus tiveram descanso dos seus inimigos e como o mês que se lhes mudou de tristeza em alegria e de pranto em festim, a fim de que os fizessem dias de banquetes e de alegria, em que enviassem quinhões uns aos outros e dádivas aos pobres.",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "id": "ester-cam-ester-livramento-02-purim-04",
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ester 9:22",
+    "learningObjective": "Reconhecer que Purim marca descanso dos inimigos e inversão de tristeza em alegria, com partilha.",
+    "evidence": [
+      "Ester 9:22"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"em que enviassem ___ uns aos outros e dádivas aos pobres.\"",
+    "prompt": "Complete a frase: \"em que enviassem ___ uns aos outros e dádivas aos pobres.\"",
+    "cue": "Complete a frase: \"em que enviassem ___ uns aos outros e dádivas aos pobres.\"",
+    "feedbackCorrect": "Certo: enviam \"quinhões\" uns aos outros.",
+    "feedbackWrong": {
+      "a": "Festim nomeia a festa, não o que se envia entre si.",
+      "c": "Pranto é o que se inverte, não o que se envia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "festim"
+      },
+      {
+        "id": "b",
+        "text": "quinhões"
+      },
+      {
+        "id": "c",
+        "text": "pranto"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "como os dias em que os judeus tiveram descanso dos seus inimigos e como o mês que se lhes mudou de tristeza em alegria e de pranto em festim, a fim de que os fizessem dias de banquetes e de alegria, em que enviassem quinhões uns aos outros e dádivas aos pobres.",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "id": "ester-cam-ester-livramento-02-purim-05",
+    "template": "em que enviassem ___ uns aos outros e dádivas aos pobres."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ester 9:22",
+    "learningObjective": "Reconhecer que Purim marca descanso dos inimigos e inversão de tristeza em alegria, com partilha.",
+    "evidence": [
+      "Ester 9:22"
+    ],
+    "type": "connect",
+    "question": "O que Ester 9:22 comunica que se liga a este contexto?",
+    "prompt": "O que Ester 9:22 comunica que se liga a este contexto?",
+    "cue": "O que Ester 9:22 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a alegria da inversão inclui os pobres.",
+    "feedbackWrong": {
+      "a": "O texto não descreve festa só da corte.",
+      "b": "Não há aqui uma memória que exclui a partilha."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Festa exclusiva da corte real"
+      },
+      {
+        "id": "b",
+        "text": "Memória sem partilha alguma"
+      },
+      {
+        "id": "c",
+        "text": "Alegria que inclui os pobres"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "como os dias em que os judeus tiveram descanso dos seus inimigos e como o mês que se lhes mudou de tristeza em alegria e de pranto em festim, a fim de que os fizessem dias de banquetes e de alegria, em que enviassem quinhões uns aos outros e dádivas aos pobres.",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "id": "ester-cam-ester-livramento-02-purim-06",
+    "passageA": {
+      "ref": "Ester 9:22",
+      "text": "enviassem quinhões uns aos outros e dádivas aos pobres"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Purim festeja a inversão: tristeza em alegria, e o povo lembra partilhando com os pobres."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ester 9:22",
+    "learningObjective": "Reconhecer que Purim marca descanso dos inimigos e inversão de tristeza em alegria, com partilha.",
+    "evidence": [
+      "Ester 9:22"
+    ],
+    "type": "true_false",
+    "question": "Purim não é só alívio: a inversão se celebra com partilha, inclusive dádivas aos pobres.",
+    "prompt": "Purim não é só alívio: a inversão se celebra com partilha, inclusive dádivas aos pobres.",
+    "cue": "Purim não é só alívio: a inversão se celebra com partilha, inclusive dádivas aos pobres.",
+    "feedbackCorrect": "Certo: o texto une festa, quinhões e dádivas aos pobres.",
+    "feedbackWrong": {
+      "false": "Ester 9:22 amarra a alegria à partilha com os pobres."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "como os dias em que os judeus tiveram descanso dos seus inimigos e como o mês que se lhes mudou de tristeza em alegria e de pranto em festim, a fim de que os fizessem dias de banquetes e de alegria, em que enviassem quinhões uns aos outros e dádivas aos pobres.",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "id": "ester-pro-ester-livramento-02-purim-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ester 9:22",
+    "learningObjective": "Reconhecer que Purim marca descanso dos inimigos e inversão de tristeza em alegria, com partilha.",
+    "evidence": [
+      "Ester 9:22"
+    ],
+    "type": "tap",
+    "question": "Em Ester 9:22, toque a palavra que falta em \"dias de ___ e de alegria\"?",
+    "prompt": "Em Ester 9:22, toque a palavra que falta em \"dias de ___ e de alegria\"?",
+    "cue": "Em Ester 9:22, toque a palavra que falta em \"dias de ___ e de alegria\"?",
+    "feedbackCorrect": "Exato: os dias são de \"banquetes\" e de alegria.",
+    "feedbackWrong": {
+      "b": "Pobres recebem dádivas, mas não nomeiam estes dias aqui.",
+      "c": "Inimigos marcam o descanso anterior, não este par com alegria."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "banquetes"
+      },
+      {
+        "id": "b",
+        "text": "pobres"
+      },
+      {
+        "id": "c",
+        "text": "inimigos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "como os dias em que os judeus tiveram descanso dos seus inimigos e como o mês que se lhes mudou de tristeza em alegria e de pranto em festim, a fim de que os fizessem dias de banquetes e de alegria, em que enviassem quinhões uns aos outros e dádivas aos pobres.",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "id": "ester-pro-ester-livramento-02-purim-02",
+    "template": "dias de ___ e de alegria"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ester 9:22",
+    "learningObjective": "Reconhecer que Purim marca descanso dos inimigos e inversão de tristeza em alegria, com partilha.",
+    "evidence": [
+      "Ester 9:22"
+    ],
+    "type": "choice",
+    "question": "Qual sentido de Purim Ester 9:22 sustenta?",
+    "prompt": "Qual sentido de Purim Ester 9:22 sustenta?",
+    "cue": "Qual sentido de Purim Ester 9:22 sustenta?",
+    "feedbackCorrect": "Certo: a memória do livramento se molda na partilha com os pobres.",
+    "feedbackWrong": {
+      "a": "O texto não reduz Purim a vingança sem festa.",
+      "b": "Não descreve uma festa que esquece os pobres.",
+      "c": "Não há aqui um luto que substitui o festim."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Purim é só vingança, sem alegria nem partilha."
+      },
+      {
+        "id": "b",
+        "text": "A festa apaga os pobres para honrar só a corte."
+      },
+      {
+        "id": "c",
+        "text": "O pranto deve substituir o festim para sempre."
+      },
+      {
+        "id": "d",
+        "text": "A inversão se lembra festejando e partilhando com os pobres."
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "passageText": "como os dias em que os judeus tiveram descanso dos seus inimigos e como o mês que se lhes mudou de tristeza em alegria e de pranto em festim, a fim de que os fizessem dias de banquetes e de alegria, em que enviassem quinhões uns aos outros e dádivas aos pobres.",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "id": "ester-pro-ester-livramento-02-purim-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ester 9:22",
+    "learningObjective": "Reconhecer que Purim marca descanso dos inimigos e inversão de tristeza em alegria, com partilha.",
+    "evidence": [
+      "Ester 9:22"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Ester 9:22?",
+    "prompt": "Qual sequência revela o sentido de Ester 9:22?",
+    "cue": "Qual sequência revela o sentido de Ester 9:22?",
+    "feedbackCorrect": "Certo: o sentido vai do descanso à inversão e da inversão à partilha.",
+    "feedbackWrong": {
+      "b": "Essa ordem não revela o movimento da memória.",
+      "c": "Começar pelas dádivas esconde o descanso que as fundamenta."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "os judeus tiveram descanso dos seus inimigos"
+      },
+      {
+        "id": "b",
+        "text": "enviassem quinhões uns aos outros e dádivas aos pobres"
+      },
+      {
+        "id": "c",
+        "text": "mudou de tristeza em alegria e de pranto em festim"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "como os dias em que os judeus tiveram descanso dos seus inimigos e como o mês que se lhes mudou de tristeza em alegria e de pranto em festim, a fim de que os fizessem dias de banquetes e de alegria, em que enviassem quinhões uns aos outros e dádivas aos pobres.",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "id": "ester-pro-ester-livramento-02-purim-04",
+    "correctOrder": [
+      "a",
+      "c",
+      "b"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ester 9:22",
+    "learningObjective": "Reconhecer que Purim marca descanso dos inimigos e inversão de tristeza em alegria, com partilha.",
+    "evidence": [
+      "Ester 9:22"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"os judeus tiveram descanso dos seus ___.\"",
+    "prompt": "Complete a frase: \"os judeus tiveram descanso dos seus ___.\"",
+    "cue": "Complete a frase: \"os judeus tiveram descanso dos seus ___.\"",
+    "feedbackCorrect": "Certo: o descanso é dos \"inimigos\".",
+    "feedbackWrong": {
+      "b": "Pobres recebem dádivas, não são de quem se tem descanso.",
+      "c": "Banquetes descrevem a festa, não este complemento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "inimigos"
+      },
+      {
+        "id": "b",
+        "text": "pobres"
+      },
+      {
+        "id": "c",
+        "text": "banquetes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "como os dias em que os judeus tiveram descanso dos seus inimigos e como o mês que se lhes mudou de tristeza em alegria e de pranto em festim, a fim de que os fizessem dias de banquetes e de alegria, em que enviassem quinhões uns aos outros e dádivas aos pobres.",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "id": "ester-pro-ester-livramento-02-purim-05",
+    "template": "os judeus tiveram descanso dos seus ___."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ester 9:22",
+    "learningObjective": "Reconhecer que Purim marca descanso dos inimigos e inversão de tristeza em alegria, com partilha.",
+    "evidence": [
+      "Ester 9:22"
+    ],
+    "type": "connect",
+    "question": "O que Ester 9:22 comunica que se liga a este contexto?",
+    "prompt": "O que Ester 9:22 comunica que se liga a este contexto?",
+    "cue": "O que Ester 9:22 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: lembrar o livramento inclui partilhar o que se recebeu.",
+    "feedbackWrong": {
+      "a": "O texto não descreve uma festa que esquece o pobre.",
+      "c": "Não há aqui uma inversão só interior, sem gesto comunitário."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Festa que esquece o pobre"
+      },
+      {
+        "id": "b",
+        "text": "Memória que partilha o livramento"
+      },
+      {
+        "id": "c",
+        "text": "Inversão só interior e privada"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "como os dias em que os judeus tiveram descanso dos seus inimigos e como o mês que se lhes mudou de tristeza em alegria e de pranto em festim, a fim de que os fizessem dias de banquetes e de alegria, em que enviassem quinhões uns aos outros e dádivas aos pobres.",
+    "trail": "ester",
+    "section": "ester-livramento-02-purim",
+    "id": "ester-pro-ester-livramento-02-purim-06",
+    "passageA": {
+      "ref": "Ester 9:22",
+      "text": "dias de banquetes e de alegria"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Purim festeja a inversão: tristeza em alegria, e o povo lembra partilhando com os pobres."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ester 4:14",
+    "learningObjective": "Compreender que o livramento pode vir de outra parte, e que Ester pode ter sido elevada para aquele tempo.",
+    "evidence": [
+      "Ester 4:14"
+    ],
+    "type": "true_false",
+    "question": "Mardoqueu afirma que, se Ester se calar, de outra parte se levantará socorro e livramento para os judeus.",
+    "prompt": "Mardoqueu afirma que, se Ester se calar, de outra parte se levantará socorro e livramento para os judeus.",
+    "cue": "Mardoqueu afirma que, se Ester se calar, de outra parte se levantará socorro e livramento para os judeus.",
+    "feedbackCorrect": "Certo: o texto diz que o socorro se levantará de outra parte.",
+    "feedbackWrong": {
+      "false": "Releia Ester 4:14: o livramento não depende só do silêncio dela."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Pois, se de todo te calares agora, de outra parte se levantará socorro e livramento para os judeus, mas tu e a casa de teu pai perecereis; quem sabe se não foste elevada a rainha para tal tempo como este?",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "id": "ester-sem-ester-livramento-03-desafio-providencia-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ester 4:14",
+    "learningObjective": "Compreender que o livramento pode vir de outra parte, e que Ester pode ter sido elevada para aquele tempo.",
+    "evidence": [
+      "Ester 4:14"
+    ],
+    "type": "tap",
+    "question": "Em Ester 4:14, toque a palavra que falta em \"se de todo te ___ agora\"?",
+    "prompt": "Em Ester 4:14, toque a palavra que falta em \"se de todo te ___ agora\"?",
+    "cue": "Em Ester 4:14, toque a palavra que falta em \"se de todo te ___ agora\"?",
+    "feedbackCorrect": "Exato: a hipótese é \"se de todo te calares agora\".",
+    "feedbackWrong": {
+      "b": "Rainha é o ofício dela, não o verbo desta cláusula.",
+      "c": "Judeus recebem o livramento, não preenchem este verbo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "calares"
+      },
+      {
+        "id": "b",
+        "text": "rainha"
+      },
+      {
+        "id": "c",
+        "text": "judeus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois, se de todo te calares agora, de outra parte se levantará socorro e livramento para os judeus, mas tu e a casa de teu pai perecereis; quem sabe se não foste elevada a rainha para tal tempo como este?",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "id": "ester-sem-ester-livramento-03-desafio-providencia-02",
+    "template": "se de todo te ___ agora"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ester 4:14",
+    "learningObjective": "Compreender que o livramento pode vir de outra parte, e que Ester pode ter sido elevada para aquele tempo.",
+    "evidence": [
+      "Ester 4:14"
+    ],
+    "type": "choice",
+    "question": "O que Ester 4:14 afirma sobre Ester e a casa de seu pai?",
+    "prompt": "O que Ester 4:14 afirma sobre Ester e a casa de seu pai?",
+    "cue": "O que Ester 4:14 afirma sobre Ester e a casa de seu pai?",
+    "feedbackCorrect": "Certo: se ela se calar, ela e a casa de seu pai perecerão.",
+    "feedbackWrong": {
+      "b": "O texto não promete promoção da casa de seu pai.",
+      "c": "Não diz que o silêncio a torna rainha de novo.",
+      "d": "Não há aqui isenção de risco para a família."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Se ela se calar, ela e a casa de seu pai perecerão."
+      },
+      {
+        "id": "b",
+        "text": "A casa de seu pai será promovida no palácio."
+      },
+      {
+        "id": "c",
+        "text": "O silêncio a tornará rainha de outra nação."
+      },
+      {
+        "id": "d",
+        "text": "Nenhum risco alcança a família se ela se calar."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois, se de todo te calares agora, de outra parte se levantará socorro e livramento para os judeus, mas tu e a casa de teu pai perecereis; quem sabe se não foste elevada a rainha para tal tempo como este?",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "id": "ester-sem-ester-livramento-03-desafio-providencia-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ester 4:14",
+    "learningObjective": "Compreender que o livramento pode vir de outra parte, e que Ester pode ter sido elevada para aquele tempo.",
+    "evidence": [
+      "Ester 4:14"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Ester 4:14?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Ester 4:14?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Ester 4:14?",
+    "feedbackCorrect": "Certo: silêncio, socorro de outra parte, e o risco da casa paterna.",
+    "feedbackWrong": {
+      "b": "Essa peça não ocupa este lugar no versículo.",
+      "c": "A elevação a rainha fecha o texto, não o abre."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "se de todo te calares agora"
+      },
+      {
+        "id": "b",
+        "text": "de outra parte se levantará socorro e livramento para os judeus"
+      },
+      {
+        "id": "c",
+        "text": "tu e a casa de teu pai perecereis"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois, se de todo te calares agora, de outra parte se levantará socorro e livramento para os judeus, mas tu e a casa de teu pai perecereis; quem sabe se não foste elevada a rainha para tal tempo como este?",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "id": "ester-sem-ester-livramento-03-desafio-providencia-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ester 4:14",
+    "learningObjective": "Compreender que o livramento pode vir de outra parte, e que Ester pode ter sido elevada para aquele tempo.",
+    "evidence": [
+      "Ester 4:14"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"quem sabe se não foste elevada a ___ para tal tempo como este?\"",
+    "prompt": "Complete a frase: \"quem sabe se não foste elevada a ___ para tal tempo como este?\"",
+    "cue": "Complete a frase: \"quem sabe se não foste elevada a ___ para tal tempo como este?\"",
+    "feedbackCorrect": "Certo: ela foi elevada a \"rainha\" para tal tempo.",
+    "feedbackWrong": {
+      "a": "Judeus são o povo a livrar, não o ofício dela.",
+      "c": "Pai refere-se à casa que pode perecer, não a este título."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "judeus"
+      },
+      {
+        "id": "b",
+        "text": "rainha"
+      },
+      {
+        "id": "c",
+        "text": "pai"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Pois, se de todo te calares agora, de outra parte se levantará socorro e livramento para os judeus, mas tu e a casa de teu pai perecereis; quem sabe se não foste elevada a rainha para tal tempo como este?",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "id": "ester-sem-ester-livramento-03-desafio-providencia-05",
+    "template": "quem sabe se não foste elevada a ___ para tal tempo como este?"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ester 4:14",
+    "learningObjective": "Compreender que o livramento pode vir de outra parte, e que Ester pode ter sido elevada para aquele tempo.",
+    "evidence": [
+      "Ester 4:14"
+    ],
+    "type": "connect",
+    "question": "O que Ester 4:14 comunica que se liga a este contexto?",
+    "prompt": "O que Ester 4:14 comunica que se liga a este contexto?",
+    "cue": "O que Ester 4:14 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o texto convoca Ester a não se calar.",
+    "feedbackWrong": {
+      "b": "O versículo não recomenda silêncio como virtude.",
+      "c": "Não apresenta o palácio como fim em si mesmo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Chamado a não calar"
+      },
+      {
+        "id": "b",
+        "text": "Silêncio como virtude real"
+      },
+      {
+        "id": "c",
+        "text": "Palácio como fim em si"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois, se de todo te calares agora, de outra parte se levantará socorro e livramento para os judeus, mas tu e a casa de teu pai perecereis; quem sabe se não foste elevada a rainha para tal tempo como este?",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "id": "ester-sem-ester-livramento-03-desafio-providencia-06",
+    "passageA": {
+      "ref": "Ester 4:14",
+      "text": "se de todo te calares agora"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Providência: quem sabe se não foste rainha para este tempo — Deus livra, e chama a não calar."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ester 4:14",
+    "learningObjective": "Compreender que o livramento pode vir de outra parte, e que Ester pode ter sido elevada para aquele tempo.",
+    "evidence": [
+      "Ester 4:14"
+    ],
+    "type": "true_false",
+    "question": "O texto afirma que o livramento dos judeus depende só de Ester, sem outra possibilidade de socorro.",
+    "prompt": "O texto afirma que o livramento dos judeus depende só de Ester, sem outra possibilidade de socorro.",
+    "cue": "O texto afirma que o livramento dos judeus depende só de Ester, sem outra possibilidade de socorro.",
+    "feedbackCorrect": "Certo: de outra parte se levantará socorro e livramento.",
+    "feedbackWrong": {
+      "true": "Ester 4:14 diz que o socorro pode vir de outra parte."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Pois, se de todo te calares agora, de outra parte se levantará socorro e livramento para os judeus, mas tu e a casa de teu pai perecereis; quem sabe se não foste elevada a rainha para tal tempo como este?",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "id": "ester-cam-ester-livramento-03-desafio-providencia-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ester 4:14",
+    "learningObjective": "Compreender que o livramento pode vir de outra parte, e que Ester pode ter sido elevada para aquele tempo.",
+    "evidence": [
+      "Ester 4:14"
+    ],
+    "type": "tap",
+    "question": "Em Ester 4:14, toque a palavra que falta em \"se levantará socorro e ___ para os judeus\"?",
+    "prompt": "Em Ester 4:14, toque a palavra que falta em \"se levantará socorro e ___ para os judeus\"?",
+    "cue": "Em Ester 4:14, toque a palavra que falta em \"se levantará socorro e ___ para os judeus\"?",
+    "feedbackCorrect": "Exato: além de socorro, o texto fala de \"livramento\".",
+    "feedbackWrong": {
+      "a": "Pai refere-se à casa que pode perecer, não a este par.",
+      "c": "Tempo fecha o versículo, não o que se levanta para os judeus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "pai"
+      },
+      {
+        "id": "b",
+        "text": "livramento"
+      },
+      {
+        "id": "c",
+        "text": "tempo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Pois, se de todo te calares agora, de outra parte se levantará socorro e livramento para os judeus, mas tu e a casa de teu pai perecereis; quem sabe se não foste elevada a rainha para tal tempo como este?",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "id": "ester-cam-ester-livramento-03-desafio-providencia-02",
+    "template": "se levantará socorro e ___ para os judeus"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ester 4:14",
+    "learningObjective": "Compreender que o livramento pode vir de outra parte, e que Ester pode ter sido elevada para aquele tempo.",
+    "evidence": [
+      "Ester 4:14"
+    ],
+    "type": "choice",
+    "question": "Como Ester 4:14 relaciona o trono de Ester e aquele momento?",
+    "prompt": "Como Ester 4:14 relaciona o trono de Ester e aquele momento?",
+    "cue": "Como Ester 4:14 relaciona o trono de Ester e aquele momento?",
+    "feedbackCorrect": "Certo: ela pode ter sido elevada a rainha para aquele tempo.",
+    "feedbackWrong": {
+      "a": "O texto não trata o trono como acaso vazio.",
+      "b": "Não diz que a coroa a isenta de falar.",
+      "d": "Não reduz a rainha a um enfeite sem vocação."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O trono é acaso vazio, sem relação com aquele tempo."
+      },
+      {
+        "id": "b",
+        "text": "A coroa a isenta de falar em favor do povo."
+      },
+      {
+        "id": "c",
+        "text": "Ela pode ter sido elevada a rainha para aquele tempo."
+      },
+      {
+        "id": "d",
+        "text": "Ser rainha a torna só enfeite, sem vocação alguma."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Pois, se de todo te calares agora, de outra parte se levantará socorro e livramento para os judeus, mas tu e a casa de teu pai perecereis; quem sabe se não foste elevada a rainha para tal tempo como este?",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "id": "ester-cam-ester-livramento-03-desafio-providencia-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ester 4:14",
+    "learningObjective": "Compreender que o livramento pode vir de outra parte, e que Ester pode ter sido elevada para aquele tempo.",
+    "evidence": [
+      "Ester 4:14"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Ester 4:14?",
+    "prompt": "Como se encadeiam os eventos de Ester 4:14?",
+    "cue": "Como se encadeiam os eventos de Ester 4:14?",
+    "feedbackCorrect": "Certo: o silêncio, o socorro de outra parte e o risco da casa.",
+    "feedbackWrong": {
+      "a": "Essa ordem embaralha o encadeamento da fala.",
+      "c": "O risco da casa não abre o argumento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "tu e a casa de teu pai perecereis"
+      },
+      {
+        "id": "b",
+        "text": "se de todo te calares agora"
+      },
+      {
+        "id": "c",
+        "text": "de outra parte se levantará socorro e livramento para os judeus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Pois, se de todo te calares agora, de outra parte se levantará socorro e livramento para os judeus, mas tu e a casa de teu pai perecereis; quem sabe se não foste elevada a rainha para tal tempo como este?",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "id": "ester-cam-ester-livramento-03-desafio-providencia-04",
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ester 4:14",
+    "learningObjective": "Compreender que o livramento pode vir de outra parte, e que Ester pode ter sido elevada para aquele tempo.",
+    "evidence": [
+      "Ester 4:14"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"tu e a casa de teu pai ___.\"",
+    "prompt": "Complete a frase: \"tu e a casa de teu pai ___.\"",
+    "cue": "Complete a frase: \"tu e a casa de teu pai ___.\"",
+    "feedbackCorrect": "Certo: a consequência nomeada é \"perecereis\".",
+    "feedbackWrong": {
+      "a": "Calares é a hipótese inicial, não este verbo da casa.",
+      "c": "Elevada descreve Ester, não o destino da casa do pai."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "calares"
+      },
+      {
+        "id": "b",
+        "text": "perecereis"
+      },
+      {
+        "id": "c",
+        "text": "elevada"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Pois, se de todo te calares agora, de outra parte se levantará socorro e livramento para os judeus, mas tu e a casa de teu pai perecereis; quem sabe se não foste elevada a rainha para tal tempo como este?",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "id": "ester-cam-ester-livramento-03-desafio-providencia-05",
+    "template": "tu e a casa de teu pai ___."
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ester 4:14",
+    "learningObjective": "Compreender que o livramento pode vir de outra parte, e que Ester pode ter sido elevada para aquele tempo.",
+    "evidence": [
+      "Ester 4:14"
+    ],
+    "type": "connect",
+    "question": "O que Ester 4:14 comunica que se liga a este contexto?",
+    "prompt": "O que Ester 4:14 comunica que se liga a este contexto?",
+    "cue": "O que Ester 4:14 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a rainha pode ter sido posta ali para aquele tempo.",
+    "feedbackWrong": {
+      "a": "O texto não trata o trono como prêmio vazio.",
+      "b": "Não apresenta o silêncio como estratégia sábia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Trono como prêmio vazio"
+      },
+      {
+        "id": "b",
+        "text": "Silêncio como estratégia sábia"
+      },
+      {
+        "id": "c",
+        "text": "Rainha para este tempo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Pois, se de todo te calares agora, de outra parte se levantará socorro e livramento para os judeus, mas tu e a casa de teu pai perecereis; quem sabe se não foste elevada a rainha para tal tempo como este?",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "id": "ester-cam-ester-livramento-03-desafio-providencia-06",
+    "passageA": {
+      "ref": "Ester 4:14",
+      "text": "quem sabe se não foste elevada a rainha para tal tempo como este?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Providência: quem sabe se não foste rainha para este tempo — Deus livra, e chama a não calar."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ester 4:14",
+    "learningObjective": "Compreender que o livramento pode vir de outra parte, e que Ester pode ter sido elevada para aquele tempo.",
+    "evidence": [
+      "Ester 4:14"
+    ],
+    "type": "true_false",
+    "question": "O silêncio de Ester seria irrelevante, pois o texto não menciona risco para ela nem para a casa de seu pai.",
+    "prompt": "O silêncio de Ester seria irrelevante, pois o texto não menciona risco para ela nem para a casa de seu pai.",
+    "cue": "O silêncio de Ester seria irrelevante, pois o texto não menciona risco para ela nem para a casa de seu pai.",
+    "feedbackCorrect": "Certo: o texto diz que ela e a casa de seu pai pereceriam.",
+    "feedbackWrong": {
+      "true": "Ester 4:14 liga o silêncio ao risco de perecer, não à irrelevância."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Pois, se de todo te calares agora, de outra parte se levantará socorro e livramento para os judeus, mas tu e a casa de teu pai perecereis; quem sabe se não foste elevada a rainha para tal tempo como este?",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "id": "ester-pro-ester-livramento-03-desafio-providencia-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ester 4:14",
+    "learningObjective": "Compreender que o livramento pode vir de outra parte, e que Ester pode ter sido elevada para aquele tempo.",
+    "evidence": [
+      "Ester 4:14"
+    ],
+    "type": "tap",
+    "question": "Em Ester 4:14, toque a palavra que falta em \"para tal ___ como este\"?",
+    "prompt": "Em Ester 4:14, toque a palavra que falta em \"para tal ___ como este\"?",
+    "cue": "Em Ester 4:14, toque a palavra que falta em \"para tal ___ como este\"?",
+    "feedbackCorrect": "Exato: ela pode ter sido elevada para tal \"tempo\".",
+    "feedbackWrong": {
+      "a": "Pai refere-se à casa em risco, não a esta palavra.",
+      "b": "Socorro é o que se levanta de outra parte, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "pai"
+      },
+      {
+        "id": "b",
+        "text": "socorro"
+      },
+      {
+        "id": "c",
+        "text": "tempo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "passageText": "Pois, se de todo te calares agora, de outra parte se levantará socorro e livramento para os judeus, mas tu e a casa de teu pai perecereis; quem sabe se não foste elevada a rainha para tal tempo como este?",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "id": "ester-pro-ester-livramento-03-desafio-providencia-02",
+    "template": "para tal ___ como este"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ester 4:14",
+    "learningObjective": "Compreender que o livramento pode vir de outra parte, e que Ester pode ter sido elevada para aquele tempo.",
+    "evidence": [
+      "Ester 4:14"
+    ],
+    "type": "choice",
+    "question": "Qual leitura de providência Ester 4:14 sustenta?",
+    "prompt": "Qual leitura de providência Ester 4:14 sustenta?",
+    "cue": "Qual leitura de providência Ester 4:14 sustenta?",
+    "feedbackCorrect": "Certo: Deus pode livrar por outro caminho e ainda chama a não calar.",
+    "feedbackWrong": {
+      "a": "O texto não ensina que Ester é a única fonte de livramento.",
+      "c": "Não trata o silêncio como fé madura.",
+      "d": "Não reduz a coroa a acaso sem vocação."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ester é a única fonte possível de livramento dos judeus."
+      },
+      {
+        "id": "b",
+        "text": "Deus pode livrar por outro caminho e ainda chama a não calar."
+      },
+      {
+        "id": "c",
+        "text": "Calar-se é a forma mais madura de confiar no palácio."
+      },
+      {
+        "id": "d",
+        "text": "A coroa é acaso puro, sem chamado para aquele tempo."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Pois, se de todo te calares agora, de outra parte se levantará socorro e livramento para os judeus, mas tu e a casa de teu pai perecereis; quem sabe se não foste elevada a rainha para tal tempo como este?",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "id": "ester-pro-ester-livramento-03-desafio-providencia-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ester 4:14",
+    "learningObjective": "Compreender que o livramento pode vir de outra parte, e que Ester pode ter sido elevada para aquele tempo.",
+    "evidence": [
+      "Ester 4:14"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Ester 4:14?",
+    "prompt": "Qual sequência revela o sentido de Ester 4:14?",
+    "cue": "Qual sequência revela o sentido de Ester 4:14?",
+    "feedbackCorrect": "Certo: o sentido vai do silêncio ao livramento de outra parte e ao chamado do tempo.",
+    "feedbackWrong": {
+      "a": "Começar pelo tempo esconde o aviso contra calar.",
+      "c": "Essa ordem não revela o movimento de providência do texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "quem sabe se não foste elevada a rainha para tal tempo como este"
+      },
+      {
+        "id": "b",
+        "text": "se de todo te calares agora"
+      },
+      {
+        "id": "c",
+        "text": "de outra parte se levantará socorro e livramento para os judeus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Pois, se de todo te calares agora, de outra parte se levantará socorro e livramento para os judeus, mas tu e a casa de teu pai perecereis; quem sabe se não foste elevada a rainha para tal tempo como este?",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "id": "ester-pro-ester-livramento-03-desafio-providencia-04",
+    "correctOrder": [
+      "b",
+      "c",
+      "a"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ester 4:14",
+    "learningObjective": "Compreender que o livramento pode vir de outra parte, e que Ester pode ter sido elevada para aquele tempo.",
+    "evidence": [
+      "Ester 4:14"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"de outra ___ se levantará socorro e livramento para os judeus.\"",
+    "prompt": "Complete a frase: \"de outra ___ se levantará socorro e livramento para os judeus.\"",
+    "cue": "Complete a frase: \"de outra ___ se levantará socorro e livramento para os judeus.\"",
+    "feedbackCorrect": "Certo: o socorro se levantará de outra \"parte\".",
+    "feedbackWrong": {
+      "b": "Rainha é o ofício de Ester, não o lugar deste socorro.",
+      "c": "Tempo fecha o versículo, não o complemento de outra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "parte"
+      },
+      {
+        "id": "b",
+        "text": "rainha"
+      },
+      {
+        "id": "c",
+        "text": "tempo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Pois, se de todo te calares agora, de outra parte se levantará socorro e livramento para os judeus, mas tu e a casa de teu pai perecereis; quem sabe se não foste elevada a rainha para tal tempo como este?",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "id": "ester-pro-ester-livramento-03-desafio-providencia-05",
+    "template": "de outra ___ se levantará socorro e livramento para os judeus."
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ester 4:14",
+    "learningObjective": "Compreender que o livramento pode vir de outra parte, e que Ester pode ter sido elevada para aquele tempo.",
+    "evidence": [
+      "Ester 4:14"
+    ],
+    "type": "connect",
+    "question": "O que Ester 4:14 comunica que se liga a este contexto?",
+    "prompt": "O que Ester 4:14 comunica que se liga a este contexto?",
+    "cue": "O que Ester 4:14 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o livramento convoca Ester a agir, não a calar.",
+    "feedbackWrong": {
+      "a": "O texto não ensina destino fechado sem chamado.",
+      "c": "Não apresenta o silêncio como fé no palácio."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Destino fechado sem chamado"
+      },
+      {
+        "id": "b",
+        "text": "Livramento que convoca a agir"
+      },
+      {
+        "id": "c",
+        "text": "Silêncio como fé no palácio"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Pois, se de todo te calares agora, de outra parte se levantará socorro e livramento para os judeus, mas tu e a casa de teu pai perecereis; quem sabe se não foste elevada a rainha para tal tempo como este?",
+    "trail": "ester",
+    "section": "ester-livramento-03-desafio-providencia",
+    "id": "ester-pro-ester-livramento-03-desafio-providencia-06",
+    "passageA": {
+      "ref": "Ester 4:14",
+      "text": "de outra parte se levantará socorro e livramento para os judeus"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Providência: quem sabe se não foste rainha para este tempo — Deus livra, e chama a não calar."
+    }
+  }
+]

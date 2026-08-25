@@ -1,0 +1,2189 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Reconhecer como a queda de Jerusalém expõe a gravidade do pecado e da perda da aliança visível.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "type": "true_false",
+    "question": "A cidade que antes era populosa agora está sentada solitária.",
+    "prompt": "A cidade que antes era populosa agora está sentada solitária.",
+    "cue": "A cidade que antes era populosa agora está sentada solitária.",
+    "feedbackCorrect": "Certo: essa afirmação corresponde ao texto de Lamentações 1:1.",
+    "feedbackWrong": {
+      "false": "O texto afirma justamente isso: a cidade populosa agora está solitária."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Como está sentada solitária a cidade que era populosa! Tornou-se como viúva a que era grande entre as nações; a que era princesa entre as províncias ficou tributária.",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-01-como-esta-sentada-so",
+    "id": "lamentacoes-sem-lamentacoes-luto-01-como-esta-sentada-so-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Reconhecer como a queda de Jerusalém expõe a gravidade do pecado e da perda da aliança visível.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "type": "tap",
+    "question": "Em Lamentações 1:1, toque a palavra que falta em \"Como está sentada ___ a cidade que era populosa! Tornou-se como viúva a que era grande entre as nações; a que era princesa entre as províncias ficou tributária.\"?",
+    "prompt": "Em Lamentações 1:1, toque a palavra que falta em \"Como está sentada ___ a cidade que era populosa! Tornou-se como viúva a que era grande entre as nações; a que era princesa entre as províncias ficou tributária.\"?",
+    "cue": "Em Lamentações 1:1, toque a palavra que falta em \"Como está sentada ___ a cidade que era populosa! Tornou-se como viúva a que era grande entre as nações; a que era princesa entre as províncias ficou tributária.\"?",
+    "feedbackCorrect": "Exato: \"solitária\" é a palavra que completa a frase, como está em Lamentações 1:1.",
+    "feedbackWrong": {
+      "a": "\"viúva\" também aparece no texto, mas não é a palavra que falta nesta lacuna.",
+      "c": "\"tributária\" também aparece no texto, mas não é a palavra que falta nesta lacuna."
+    },
+    "passageText": "Como está sentada solitária a cidade que era populosa! Tornou-se como viúva a que era grande entre as nações; a que era princesa entre as províncias ficou tributária.",
+    "template": "Como está sentada ___ a cidade que era populosa! Tornou-se como viúva a que era grande entre as nações; a que era princesa entre as províncias ficou tributária.",
+    "options": [
+      {
+        "id": "a",
+        "text": "viúva"
+      },
+      {
+        "id": "b",
+        "text": "solitária"
+      },
+      {
+        "id": "c",
+        "text": "tributária"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-01-como-esta-sentada-so",
+    "id": "lamentacoes-sem-lamentacoes-luto-01-como-esta-sentada-so-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Reconhecer como a queda de Jerusalém expõe a gravidade do pecado e da perda da aliança visível.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelo texto em Lamentações 1:1?",
+    "prompt": "Qual afirmação é feita diretamente pelo texto em Lamentações 1:1?",
+    "cue": "Qual afirmação é feita diretamente pelo texto em Lamentações 1:1?",
+    "feedbackCorrect": "Certo: o texto compara a cidade caída a uma viúva que perdeu sua grandeza.",
+    "feedbackWrong": {
+      "a": "O texto diz o oposto: ela está solitária, não populosa.",
+      "b": "É o contrário: a cidade passou a pagar tributo, não a recebê-lo.",
+      "c": "O texto afirma que ela era grande entre as nações antes da queda."
+    },
+    "passageText": "Como está sentada solitária a cidade que era populosa! Tornou-se como viúva a que era grande entre as nações; a que era princesa entre as províncias ficou tributária.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A cidade continua tão populosa quanto antes."
+      },
+      {
+        "id": "b",
+        "text": "A cidade recebeu tributo das nações vizinhas."
+      },
+      {
+        "id": "c",
+        "text": "A cidade nunca foi reconhecida entre as nações."
+      },
+      {
+        "id": "d",
+        "text": "A cidade é comparada a uma viúva por ter perdido sua grandeza."
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-01-como-esta-sentada-so",
+    "id": "lamentacoes-sem-lamentacoes-luto-01-como-esta-sentada-so-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Reconhecer como a queda de Jerusalém expõe a gravidade do pecado e da perda da aliança visível.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Lamentações 1:1?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Lamentações 1:1?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Lamentações 1:1?",
+    "feedbackCorrect": "Certo: essa é a ordem em que os trechos aparecem em Lamentações 1:1.",
+    "feedbackWrong": {
+      "b": "Releia: a comparação com a viúva vem depois da abertura sobre a solidão da cidade.",
+      "c": "O desfecho sobre o tributo é o fecho da sequência, não o meio."
+    },
+    "passageText": "Como está sentada solitária a cidade que era populosa! Tornou-se como viúva a que era grande entre as nações; a que era princesa entre as províncias ficou tributária.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Como está sentada solitária a cidade que era populosa!"
+      },
+      {
+        "id": "b",
+        "text": "Tornou-se como viúva a que era grande entre as nações"
+      },
+      {
+        "id": "c",
+        "text": "a que era princesa entre as províncias ficou tributária."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-01-como-esta-sentada-so",
+    "id": "lamentacoes-sem-lamentacoes-luto-01-como-esta-sentada-so-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Reconhecer como a queda de Jerusalém expõe a gravidade do pecado e da perda da aliança visível.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Como está sentada solitária a cidade que era ___! Tornou-se como viúva a que era grande entre as nações; a que era princesa entre as províncias ficou tributária.\"",
+    "prompt": "Complete a frase: \"Como está sentada solitária a cidade que era ___! Tornou-se como viúva a que era grande entre as nações; a que era princesa entre as províncias ficou tributária.\"",
+    "cue": "Complete a frase: \"Como está sentada solitária a cidade que era ___! Tornou-se como viúva a que era grande entre as nações; a que era princesa entre as províncias ficou tributária.\"",
+    "feedbackCorrect": "Certo: \"populosa\" é a palavra que completa corretamente a frase.",
+    "feedbackWrong": {
+      "a": "\"viúva\" não é a palavra que falta nesta lacuna do texto.",
+      "c": "\"tributária\" não é a palavra que falta nesta lacuna do texto."
+    },
+    "passageText": "Como está sentada solitária a cidade que era populosa! Tornou-se como viúva a que era grande entre as nações; a que era princesa entre as províncias ficou tributária.",
+    "template": "Como está sentada solitária a cidade que era ___! Tornou-se como viúva a que era grande entre as nações; a que era princesa entre as províncias ficou tributária.",
+    "options": [
+      {
+        "id": "a",
+        "text": "viúva"
+      },
+      {
+        "id": "b",
+        "text": "populosa"
+      },
+      {
+        "id": "c",
+        "text": "tributária"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-01-como-esta-sentada-so",
+    "id": "lamentacoes-sem-lamentacoes-luto-01-como-esta-sentada-so-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Reconhecer como a queda de Jerusalém expõe a gravidade do pecado e da perda da aliança visível.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "type": "connect",
+    "question": "O que Lamentações 1:1 comunica que se liga a este contexto?",
+    "prompt": "O que Lamentações 1:1 comunica que se liga a este contexto?",
+    "cue": "O que Lamentações 1:1 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a imagem da cidade caída liga-se à perda de grandeza no centro da missão.",
+    "feedbackWrong": {
+      "a": "O texto não descreve vitória alguma; descreve uma queda.",
+      "b": "Lamentações 1:1 não fala de reconstrução, mas de ruína."
+    },
+    "passageText": "Tornou-se como viúva a que era grande entre as nações.",
+    "passageA": {
+      "ref": "Lamentações 1:1",
+      "text": "Tornou-se como viúva a que era grande entre as nações."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A missão mostra que perder a grandeza é o retrato do pecado e da aliança rompida, preparando a busca pela misericórdia de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Vitória militar sobre inimigos"
+      },
+      {
+        "id": "b",
+        "text": "Reconstrução imediata do templo"
+      },
+      {
+        "id": "c",
+        "text": "Perda da grandeza da cidade"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-01-como-esta-sentada-so",
+    "id": "lamentacoes-sem-lamentacoes-luto-01-como-esta-sentada-so-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Reconhecer como a queda de Jerusalém expõe a gravidade do pecado e da perda da aliança visível.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "type": "true_false",
+    "question": "A grandeza da cidade entre as nações continua intacta apesar da queda.",
+    "prompt": "A grandeza da cidade entre as nações continua intacta apesar da queda.",
+    "cue": "A grandeza da cidade entre as nações continua intacta apesar da queda.",
+    "feedbackCorrect": "Certo: essa afirmação não se sustenta no texto.",
+    "feedbackWrong": {
+      "true": "O texto mostra o oposto: a cidade que era grande tornou-se como viúva."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Como está sentada solitária a cidade que era populosa! Tornou-se como viúva a que era grande entre as nações; a que era princesa entre as províncias ficou tributária.",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-01-como-esta-sentada-so",
+    "id": "lamentacoes-cam-lamentacoes-luto-01-como-esta-sentada-so-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Reconhecer como a queda de Jerusalém expõe a gravidade do pecado e da perda da aliança visível.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "type": "tap",
+    "question": "Em Lamentações 1:1, toque a palavra que falta em \"Como está sentada solitária a cidade que era populosa! Tornou-se como ___ a que era grande entre as nações; a que era princesa entre as províncias ficou tributária.\"?",
+    "prompt": "Em Lamentações 1:1, toque a palavra que falta em \"Como está sentada solitária a cidade que era populosa! Tornou-se como ___ a que era grande entre as nações; a que era princesa entre as províncias ficou tributária.\"?",
+    "cue": "Em Lamentações 1:1, toque a palavra que falta em \"Como está sentada solitária a cidade que era populosa! Tornou-se como ___ a que era grande entre as nações; a que era princesa entre as províncias ficou tributária.\"?",
+    "feedbackCorrect": "Exato: \"viúva\" é a palavra que completa a frase, como está em Lamentações 1:1.",
+    "feedbackWrong": {
+      "b": "\"solitária\" também aparece no texto, mas não é a palavra que falta nesta lacuna.",
+      "c": "\"princesa\" também aparece no texto, mas não é a palavra que falta nesta lacuna."
+    },
+    "passageText": "Como está sentada solitária a cidade que era populosa! Tornou-se como viúva a que era grande entre as nações; a que era princesa entre as províncias ficou tributária.",
+    "template": "Como está sentada solitária a cidade que era populosa! Tornou-se como ___ a que era grande entre as nações; a que era princesa entre as províncias ficou tributária.",
+    "options": [
+      {
+        "id": "a",
+        "text": "viúva"
+      },
+      {
+        "id": "b",
+        "text": "solitária"
+      },
+      {
+        "id": "c",
+        "text": "princesa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-01-como-esta-sentada-so",
+    "id": "lamentacoes-cam-lamentacoes-luto-01-como-esta-sentada-so-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Reconhecer como a queda de Jerusalém expõe a gravidade do pecado e da perda da aliança visível.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "type": "choice",
+    "question": "Qual ideia melhor conecta Lamentações 1:1 ao contexto da missão?",
+    "prompt": "Qual ideia melhor conecta Lamentações 1:1 ao contexto da missão?",
+    "cue": "Qual ideia melhor conecta Lamentações 1:1 ao contexto da missão?",
+    "feedbackCorrect": "Certo: a viúva simboliza perda de proteção e identidade, não só de posses.",
+    "feedbackWrong": {
+      "a": "A imagem tem peso teológico: descreve perda real de aliança e proteção.",
+      "b": "Lamentações liga a queda ao pecado do povo, não ao acaso.",
+      "d": "O texto mostra justamente a reversão dessa grandeza."
+    },
+    "passageText": "Como está sentada solitária a cidade que era populosa! Tornou-se como viúva a que era grande entre as nações; a que era princesa entre as províncias ficou tributária.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A comparação com a viúva é apenas um detalhe poético sem peso histórico."
+      },
+      {
+        "id": "b",
+        "text": "O texto sugere que a queda da cidade foi um acidente sem causa moral."
+      },
+      {
+        "id": "c",
+        "text": "A imagem da viúva mostra que a cidade perdeu proteção e identidade, não só riqueza."
+      },
+      {
+        "id": "d",
+        "text": "A grandeza da cidade entre as nações permanece inalterada nesta passagem."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-01-como-esta-sentada-so",
+    "id": "lamentacoes-cam-lamentacoes-luto-01-como-esta-sentada-so-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Reconhecer como a queda de Jerusalém expõe a gravidade do pecado e da perda da aliança visível.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Lamentações 1:1?",
+    "prompt": "Como se encadeiam os eventos de Lamentações 1:1?",
+    "cue": "Como se encadeiam os eventos de Lamentações 1:1?",
+    "feedbackCorrect": "Certo: essa é a ordem em que os trechos aparecem em Lamentações 1:1.",
+    "feedbackWrong": {
+      "b": "Releia: a comparação com a viúva vem depois da abertura sobre a solidão da cidade.",
+      "c": "O desfecho sobre o tributo é o fecho da sequência, não o meio."
+    },
+    "passageText": "Como está sentada solitária a cidade que era populosa! Tornou-se como viúva a que era grande entre as nações; a que era princesa entre as províncias ficou tributária.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Como está sentada solitária a cidade que era populosa!"
+      },
+      {
+        "id": "b",
+        "text": "Tornou-se como viúva a que era grande entre as nações"
+      },
+      {
+        "id": "c",
+        "text": "a que era princesa entre as províncias ficou tributária."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-01-como-esta-sentada-so",
+    "id": "lamentacoes-cam-lamentacoes-luto-01-como-esta-sentada-so-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Reconhecer como a queda de Jerusalém expõe a gravidade do pecado e da perda da aliança visível.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Como está sentada solitária a cidade que era populosa! Tornou-se como viúva a que era grande entre as ___; a que era princesa entre as províncias ficou tributária.\"",
+    "prompt": "Complete a frase: \"Como está sentada solitária a cidade que era populosa! Tornou-se como viúva a que era grande entre as ___; a que era princesa entre as províncias ficou tributária.\"",
+    "cue": "Complete a frase: \"Como está sentada solitária a cidade que era populosa! Tornou-se como viúva a que era grande entre as ___; a que era princesa entre as províncias ficou tributária.\"",
+    "feedbackCorrect": "Certo: \"nações\" é a palavra que completa corretamente a frase.",
+    "feedbackWrong": {
+      "b": "\"solitária\" não é a palavra que falta nesta lacuna do texto.",
+      "c": "\"princesa\" não é a palavra que falta nesta lacuna do texto."
+    },
+    "passageText": "Como está sentada solitária a cidade que era populosa! Tornou-se como viúva a que era grande entre as nações; a que era princesa entre as províncias ficou tributária.",
+    "template": "Como está sentada solitária a cidade que era populosa! Tornou-se como viúva a que era grande entre as ___; a que era princesa entre as províncias ficou tributária.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nações"
+      },
+      {
+        "id": "b",
+        "text": "solitária"
+      },
+      {
+        "id": "c",
+        "text": "princesa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-01-como-esta-sentada-so",
+    "id": "lamentacoes-cam-lamentacoes-luto-01-como-esta-sentada-so-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Reconhecer como a queda de Jerusalém expõe a gravidade do pecado e da perda da aliança visível.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "type": "connect",
+    "question": "O que Lamentações 1:1 comunica que se liga a este contexto?",
+    "prompt": "O que Lamentações 1:1 comunica que se liga a este contexto?",
+    "cue": "O que Lamentações 1:1 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a solidão da cidade é sinal do juízo que caiu sobre o povo.",
+    "feedbackWrong": {
+      "a": "O texto descreve justamente a ruptura visível da aliança.",
+      "b": "O texto descreve perda, não prosperidade contínua."
+    },
+    "passageText": "Tornou-se como viúva a que era grande entre as nações.",
+    "passageA": {
+      "ref": "Lamentações 1:1",
+      "text": "Tornou-se como viúva a que era grande entre as nações."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A missão mostra que perder a grandeza é o retrato do pecado e da aliança rompida, preparando a busca pela misericórdia de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Aliança permanece intacta"
+      },
+      {
+        "id": "b",
+        "text": "Prosperidade contínua da cidade"
+      },
+      {
+        "id": "c",
+        "text": "Solidão como sinal de juízo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-01-como-esta-sentada-so",
+    "id": "lamentacoes-cam-lamentacoes-luto-01-como-esta-sentada-so-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Reconhecer como a queda de Jerusalém expõe a gravidade do pecado e da perda da aliança visível.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "type": "true_false",
+    "question": "A imagem da viúva e da tributária revela que a perda de status de Jerusalém reflete a gravidade do juízo sofrido.",
+    "prompt": "A imagem da viúva e da tributária revela que a perda de status de Jerusalém reflete a gravidade do juízo sofrido.",
+    "cue": "A imagem da viúva e da tributária revela que a perda de status de Jerusalém reflete a gravidade do juízo sofrido.",
+    "feedbackCorrect": "Certo: essa leitura é sustentada pelo texto.",
+    "feedbackWrong": {
+      "false": "As imagens de perda de status na passagem sustentam exatamente essa leitura."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Como está sentada solitária a cidade que era populosa! Tornou-se como viúva a que era grande entre as nações; a que era princesa entre as províncias ficou tributária.",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-01-como-esta-sentada-so",
+    "id": "lamentacoes-pro-lamentacoes-luto-01-como-esta-sentada-so-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Reconhecer como a queda de Jerusalém expõe a gravidade do pecado e da perda da aliança visível.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "type": "tap",
+    "question": "Em Lamentações 1:1, toque a palavra que falta em \"Como está sentada solitária a cidade que era populosa! Tornou-se como viúva a que era grande entre as nações; a que era ___ entre as províncias ficou tributária.\"?",
+    "prompt": "Em Lamentações 1:1, toque a palavra que falta em \"Como está sentada solitária a cidade que era populosa! Tornou-se como viúva a que era grande entre as nações; a que era ___ entre as províncias ficou tributária.\"?",
+    "cue": "Em Lamentações 1:1, toque a palavra que falta em \"Como está sentada solitária a cidade que era populosa! Tornou-se como viúva a que era grande entre as nações; a que era ___ entre as províncias ficou tributária.\"?",
+    "feedbackCorrect": "Exato: \"princesa\" é a palavra que completa a frase, como está em Lamentações 1:1.",
+    "feedbackWrong": {
+      "a": "\"viúva\" também aparece no texto, mas não é a palavra que falta nesta lacuna.",
+      "c": "\"tributária\" também aparece no texto, mas não é a palavra que falta nesta lacuna."
+    },
+    "passageText": "Como está sentada solitária a cidade que era populosa! Tornou-se como viúva a que era grande entre as nações; a que era princesa entre as províncias ficou tributária.",
+    "template": "Como está sentada solitária a cidade que era populosa! Tornou-se como viúva a que era grande entre as nações; a que era ___ entre as províncias ficou tributária.",
+    "options": [
+      {
+        "id": "a",
+        "text": "viúva"
+      },
+      {
+        "id": "b",
+        "text": "princesa"
+      },
+      {
+        "id": "c",
+        "text": "tributária"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-01-como-esta-sentada-so",
+    "id": "lamentacoes-pro-lamentacoes-luto-01-como-esta-sentada-so-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Reconhecer como a queda de Jerusalém expõe a gravidade do pecado e da perda da aliança visível.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de Lamentações 1:1?",
+    "prompt": "Qual leitura interpreta melhor o sentido de Lamentações 1:1?",
+    "cue": "Qual leitura interpreta melhor o sentido de Lamentações 1:1?",
+    "feedbackCorrect": "Certo: a queda expõe o peso do pecado e da aliança quebrada.",
+    "feedbackWrong": {
+      "b": "Lamentações liga diretamente a ruína ao pecado e à quebra da aliança.",
+      "c": "O livro caminha para a esperança do capítulo 3, não para o desespero final.",
+      "d": "O lamento convida o leitor a refletir sobre pecado, juízo e esperança."
+    },
+    "passageText": "Como está sentada solitária a cidade que era populosa! Tornou-se como viúva a que era grande entre as nações; a que era princesa entre as províncias ficou tributária.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A queda da cidade expõe as consequências visíveis do pecado e da aliança rompida."
+      },
+      {
+        "id": "b",
+        "text": "O texto ensina que o sofrimento da cidade não tem relação com sua infidelidade."
+      },
+      {
+        "id": "c",
+        "text": "A passagem apresenta a perda da cidade como algo definitivo e sem esperança."
+      },
+      {
+        "id": "d",
+        "text": "O luto descrito serve apenas para registrar fatos, sem convite à reflexão."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-01-como-esta-sentada-so",
+    "id": "lamentacoes-pro-lamentacoes-luto-01-como-esta-sentada-so-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Reconhecer como a queda de Jerusalém expõe a gravidade do pecado e da perda da aliança visível.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Lamentações 1:1?",
+    "prompt": "Qual sequência revela o sentido de Lamentações 1:1?",
+    "cue": "Qual sequência revela o sentido de Lamentações 1:1?",
+    "feedbackCorrect": "Certo: essa sequência revela o sentido de Lamentações 1:1.",
+    "feedbackWrong": {
+      "b": "Releia: a comparação com a viúva vem depois da abertura sobre a solidão da cidade.",
+      "c": "O desfecho sobre o tributo é o fecho da sequência, não o meio."
+    },
+    "passageText": "Como está sentada solitária a cidade que era populosa! Tornou-se como viúva a que era grande entre as nações; a que era princesa entre as províncias ficou tributária.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Como está sentada solitária a cidade que era populosa!"
+      },
+      {
+        "id": "b",
+        "text": "Tornou-se como viúva a que era grande entre as nações"
+      },
+      {
+        "id": "c",
+        "text": "a que era princesa entre as províncias ficou tributária."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-01-como-esta-sentada-so",
+    "id": "lamentacoes-pro-lamentacoes-luto-01-como-esta-sentada-so-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Reconhecer como a queda de Jerusalém expõe a gravidade do pecado e da perda da aliança visível.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Como está sentada solitária a cidade que era populosa! Tornou-se como viúva a que era grande entre as nações; a que era princesa entre as províncias ficou ___.\"",
+    "prompt": "Complete a frase: \"Como está sentada solitária a cidade que era populosa! Tornou-se como viúva a que era grande entre as nações; a que era princesa entre as províncias ficou ___.\"",
+    "cue": "Complete a frase: \"Como está sentada solitária a cidade que era populosa! Tornou-se como viúva a que era grande entre as nações; a que era princesa entre as províncias ficou ___.\"",
+    "feedbackCorrect": "Certo: \"tributária\" é a palavra que completa corretamente a frase.",
+    "feedbackWrong": {
+      "b": "\"populosa\" não é a palavra que falta nesta lacuna do texto.",
+      "c": "\"viúva\" não é a palavra que falta nesta lacuna do texto."
+    },
+    "passageText": "Como está sentada solitária a cidade que era populosa! Tornou-se como viúva a que era grande entre as nações; a que era princesa entre as províncias ficou tributária.",
+    "template": "Como está sentada solitária a cidade que era populosa! Tornou-se como viúva a que era grande entre as nações; a que era princesa entre as províncias ficou ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "tributária"
+      },
+      {
+        "id": "b",
+        "text": "populosa"
+      },
+      {
+        "id": "c",
+        "text": "viúva"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-01-como-esta-sentada-so",
+    "id": "lamentacoes-pro-lamentacoes-luto-01-como-esta-sentada-so-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lamentações 1:1",
+    "learningObjective": "Reconhecer como a queda de Jerusalém expõe a gravidade do pecado e da perda da aliança visível.",
+    "evidence": [
+      "Lamentações 1:1"
+    ],
+    "type": "connect",
+    "question": "O que Lamentações 1:1 comunica que se liga a este contexto?",
+    "prompt": "O que Lamentações 1:1 comunica que se liga a este contexto?",
+    "cue": "O que Lamentações 1:1 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a humilhação da cidade prepara o pedido de misericórdia que vem depois.",
+    "feedbackWrong": {
+      "b": "O livro caminha para a esperança do capítulo 3; a restauração é possível.",
+      "c": "Lamentações registra o clamor do povo; Deus não está ausente do relato."
+    },
+    "passageText": "Tornou-se como viúva a que era grande entre as nações.",
+    "passageA": {
+      "ref": "Lamentações 1:1",
+      "text": "Tornou-se como viúva a que era grande entre as nações."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A missão mostra que perder a grandeza é o retrato do pecado e da aliança rompida, preparando a busca pela misericórdia de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Humilhação que abre caminho à misericórdia"
+      },
+      {
+        "id": "b",
+        "text": "Julgamento sem possibilidade de restauração"
+      },
+      {
+        "id": "c",
+        "text": "Silêncio total de Deus diante da dor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-01-como-esta-sentada-so",
+    "id": "lamentacoes-pro-lamentacoes-luto-01-como-esta-sentada-so-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lamentações 3:22–23",
+    "learningObjective": "Reconhecer que as misericórdias de Deus não se esgotam e se renovam a cada manhã, mesmo na dor.",
+    "evidence": [
+      "Lamentações 3:22–23"
+    ],
+    "type": "true_false",
+    "question": "As misericórdias de Jeová não têm fim; são novas a cada manhã.",
+    "prompt": "As misericórdias de Jeová não têm fim; são novas a cada manhã.",
+    "cue": "As misericórdias de Jeová não têm fim; são novas a cada manhã.",
+    "feedbackCorrect": "Certo: essa afirmação corresponde ao texto de Lamentações 3:22–23.",
+    "feedbackWrong": {
+      "false": "O texto afirma exatamente isso: as misericórdias não falham e se renovam."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "As misericórdias de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada manhã; grande é a tua fidelidade.",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-02-as-misericordias-do-",
+    "id": "lamentacoes-sem-lamentacoes-luto-02-as-misericordias-do--01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lamentações 3:22–23",
+    "learningObjective": "Reconhecer que as misericórdias de Deus não se esgotam e se renovam a cada manhã, mesmo na dor.",
+    "evidence": [
+      "Lamentações 3:22–23"
+    ],
+    "type": "tap",
+    "question": "Em Lamentações 3:22–23, toque a palavra que falta em \"As ___ de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada manhã; grande é a tua fidelidade.\"?",
+    "prompt": "Em Lamentações 3:22–23, toque a palavra que falta em \"As ___ de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada manhã; grande é a tua fidelidade.\"?",
+    "cue": "Em Lamentações 3:22–23, toque a palavra que falta em \"As ___ de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada manhã; grande é a tua fidelidade.\"?",
+    "feedbackCorrect": "Exato: \"misericórdias\" é a palavra que completa a frase, como está em Lamentações 3:22–23.",
+    "feedbackWrong": {
+      "a": "\"Jeová\" também aparece no texto, mas não é a palavra que falta nesta lacuna.",
+      "c": "\"fidelidade\" também aparece no texto, mas não é a palavra que falta nesta lacuna."
+    },
+    "passageText": "As misericórdias de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada manhã; grande é a tua fidelidade.",
+    "template": "As ___ de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada manhã; grande é a tua fidelidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "misericórdias"
+      },
+      {
+        "id": "c",
+        "text": "fidelidade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-02-as-misericordias-do-",
+    "id": "lamentacoes-sem-lamentacoes-luto-02-as-misericordias-do--02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lamentações 3:22–23",
+    "learningObjective": "Reconhecer que as misericórdias de Deus não se esgotam e se renovam a cada manhã, mesmo na dor.",
+    "evidence": [
+      "Lamentações 3:22–23"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelo texto em Lamentações 3:22–23?",
+    "prompt": "Qual afirmação é feita diretamente pelo texto em Lamentações 3:22–23?",
+    "cue": "Qual afirmação é feita diretamente pelo texto em Lamentações 3:22–23?",
+    "feedbackCorrect": "Certo: o texto liga a sobrevivência do povo à renovação diária da misericórdia.",
+    "feedbackWrong": {
+      "a": "O texto diz o oposto: elas não falham nem se esgotam.",
+      "b": "O texto não condiciona a fidelidade às vitórias do povo.",
+      "c": "A manhã é sinal de misericórdia renovada, não de mais sofrimento."
+    },
+    "passageText": "As misericórdias de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada manhã; grande é a tua fidelidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "As misericórdias de Deus se esgotam quando o povo peca gravemente."
+      },
+      {
+        "id": "b",
+        "text": "A fidelidade de Deus é grande apenas nos dias de vitória do povo."
+      },
+      {
+        "id": "c",
+        "text": "O texto afirma que a manhã seguinte trará mais sofrimento."
+      },
+      {
+        "id": "d",
+        "text": "As misericórdias de Jeová se renovam a cada manhã e por isso o povo não é consumido."
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-02-as-misericordias-do-",
+    "id": "lamentacoes-sem-lamentacoes-luto-02-as-misericordias-do--03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lamentações 3:22–23",
+    "learningObjective": "Reconhecer que as misericórdias de Deus não se esgotam e se renovam a cada manhã, mesmo na dor.",
+    "evidence": [
+      "Lamentações 3:22–23"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Lamentações 3:22–23?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Lamentações 3:22–23?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Lamentações 3:22–23?",
+    "feedbackCorrect": "Certo: essa é a ordem em que os trechos aparecem em Lamentações 3:22–23.",
+    "feedbackWrong": {
+      "b": "Releia: a razão (\"porque não falham\") vem depois da afirmação inicial.",
+      "c": "A promessa sobre a manhã e a fidelidade é o fecho da sequência."
+    },
+    "passageText": "As misericórdias de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada manhã; grande é a tua fidelidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "As misericórdias de Jeová são a causa de não sermos consumidos"
+      },
+      {
+        "id": "b",
+        "text": "porque não falham as suas misericórdias"
+      },
+      {
+        "id": "c",
+        "text": "Novas são cada manhã; grande é a tua fidelidade."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-02-as-misericordias-do-",
+    "id": "lamentacoes-sem-lamentacoes-luto-02-as-misericordias-do--04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lamentações 3:22–23",
+    "learningObjective": "Reconhecer que as misericórdias de Deus não se esgotam e se renovam a cada manhã, mesmo na dor.",
+    "evidence": [
+      "Lamentações 3:22–23"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"As misericórdias de ___ são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada manhã; grande é a tua fidelidade.\"",
+    "prompt": "Complete a frase: \"As misericórdias de ___ são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada manhã; grande é a tua fidelidade.\"",
+    "cue": "Complete a frase: \"As misericórdias de ___ são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada manhã; grande é a tua fidelidade.\"",
+    "feedbackCorrect": "Certo: \"Jeová\" é a palavra que completa corretamente a frase.",
+    "feedbackWrong": {
+      "b": "\"manhã\" não é a palavra que falta nesta lacuna do texto.",
+      "c": "\"fidelidade\" não é a palavra que falta nesta lacuna do texto."
+    },
+    "passageText": "As misericórdias de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada manhã; grande é a tua fidelidade.",
+    "template": "As misericórdias de ___ são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada manhã; grande é a tua fidelidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "manhã"
+      },
+      {
+        "id": "c",
+        "text": "fidelidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-02-as-misericordias-do-",
+    "id": "lamentacoes-sem-lamentacoes-luto-02-as-misericordias-do--05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lamentações 3:22–23",
+    "learningObjective": "Reconhecer que as misericórdias de Deus não se esgotam e se renovam a cada manhã, mesmo na dor.",
+    "evidence": [
+      "Lamentações 3:22–23"
+    ],
+    "type": "connect",
+    "question": "O que Lamentações 3:22–23 comunica que se liga a este contexto?",
+    "prompt": "O que Lamentações 3:22–23 comunica que se liga a este contexto?",
+    "cue": "O que Lamentações 3:22–23 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a misericórdia renovada a cada manhã é o centro desta missão.",
+    "feedbackWrong": {
+      "b": "O texto afirma o contrário: a aliança e a fidelidade seguem firmes.",
+      "c": "O texto descreve a fidelidade ativa de Deus, não silêncio."
+    },
+    "passageText": "Novas são cada manhã; grande é a tua fidelidade.",
+    "passageA": {
+      "ref": "Lamentações 3:22–23",
+      "text": "Novas são cada manhã; grande é a tua fidelidade."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A missão ensina que, mesmo em meio à ruína, as misericórdias de Deus não se esgotam e se renovam todos os dias."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Misericórdia renovada cada manhã"
+      },
+      {
+        "id": "b",
+        "text": "Fim definitivo da aliança"
+      },
+      {
+        "id": "c",
+        "text": "Silêncio de Deus diante do povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-02-as-misericordias-do-",
+    "id": "lamentacoes-sem-lamentacoes-luto-02-as-misericordias-do--06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lamentações 3:22–23",
+    "learningObjective": "Reconhecer que as misericórdias de Deus não se esgotam e se renovam a cada manhã, mesmo na dor.",
+    "evidence": [
+      "Lamentações 3:22–23"
+    ],
+    "type": "true_false",
+    "question": "O texto ensina que a fidelidade de Deus muda de acordo com as circunstâncias do povo.",
+    "prompt": "O texto ensina que a fidelidade de Deus muda de acordo com as circunstâncias do povo.",
+    "cue": "O texto ensina que a fidelidade de Deus muda de acordo com as circunstâncias do povo.",
+    "feedbackCorrect": "Certo: essa afirmação não se sustenta no texto.",
+    "feedbackWrong": {
+      "true": "O texto afirma que a fidelidade de Deus é grande e constante, não variável."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "As misericórdias de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada manhã; grande é a tua fidelidade.",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-02-as-misericordias-do-",
+    "id": "lamentacoes-cam-lamentacoes-luto-02-as-misericordias-do--01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lamentações 3:22–23",
+    "learningObjective": "Reconhecer que as misericórdias de Deus não se esgotam e se renovam a cada manhã, mesmo na dor.",
+    "evidence": [
+      "Lamentações 3:22–23"
+    ],
+    "type": "tap",
+    "question": "Em Lamentações 3:22–23, toque a palavra que falta em \"As misericórdias de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada manhã; grande é a tua ___.\"?",
+    "prompt": "Em Lamentações 3:22–23, toque a palavra que falta em \"As misericórdias de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada manhã; grande é a tua ___.\"?",
+    "cue": "Em Lamentações 3:22–23, toque a palavra que falta em \"As misericórdias de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada manhã; grande é a tua ___.\"?",
+    "feedbackCorrect": "Exato: \"fidelidade\" é a palavra que completa a frase, como está em Lamentações 3:22–23.",
+    "feedbackWrong": {
+      "a": "\"misericórdias\" também aparece no texto, mas não é a palavra que falta nesta lacuna.",
+      "b": "\"novas\" também aparece no texto, mas não é a palavra que falta nesta lacuna."
+    },
+    "passageText": "As misericórdias de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada manhã; grande é a tua fidelidade.",
+    "template": "As misericórdias de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada manhã; grande é a tua ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "misericórdias"
+      },
+      {
+        "id": "b",
+        "text": "novas"
+      },
+      {
+        "id": "c",
+        "text": "fidelidade"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-02-as-misericordias-do-",
+    "id": "lamentacoes-cam-lamentacoes-luto-02-as-misericordias-do--02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lamentações 3:22–23",
+    "learningObjective": "Reconhecer que as misericórdias de Deus não se esgotam e se renovam a cada manhã, mesmo na dor.",
+    "evidence": [
+      "Lamentações 3:22–23"
+    ],
+    "type": "choice",
+    "question": "Qual ideia melhor conecta Lamentações 3:22–23 ao contexto da missão?",
+    "prompt": "Qual ideia melhor conecta Lamentações 3:22–23 ao contexto da missão?",
+    "cue": "Qual ideia melhor conecta Lamentações 3:22–23 ao contexto da missão?",
+    "feedbackCorrect": "Certo: a misericórdia renovada sustenta a esperança em meio à ruína da cidade.",
+    "feedbackWrong": {
+      "a": "O lamento e a esperança convivem no livro; um não anula o outro.",
+      "b": "A fidelidade descrita nasce do caráter de Deus, não do esforço humano.",
+      "d": "A manhã simboliza a renovação intencional da misericórdia de Deus."
+    },
+    "passageText": "As misericórdias de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada manhã; grande é a tua fidelidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A promessa de misericórdias novas anula o lamento das primeiras estrofes."
+      },
+      {
+        "id": "b",
+        "text": "O texto sugere que a fidelidade de Deus depende do esforço humano diário."
+      },
+      {
+        "id": "c",
+        "text": "A renovação diária da misericórdia sustenta a esperança em meio à devastação de Jerusalém."
+      },
+      {
+        "id": "d",
+        "text": "A imagem da manhã indica apenas a passagem do tempo, sem sentido espiritual."
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-02-as-misericordias-do-",
+    "id": "lamentacoes-cam-lamentacoes-luto-02-as-misericordias-do--03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lamentações 3:22–23",
+    "learningObjective": "Reconhecer que as misericórdias de Deus não se esgotam e se renovam a cada manhã, mesmo na dor.",
+    "evidence": [
+      "Lamentações 3:22–23"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Lamentações 3:22–23?",
+    "prompt": "Como se encadeiam os eventos de Lamentações 3:22–23?",
+    "cue": "Como se encadeiam os eventos de Lamentações 3:22–23?",
+    "feedbackCorrect": "Certo: essa é a ordem em que os trechos aparecem em Lamentações 3:22–23.",
+    "feedbackWrong": {
+      "b": "Releia: a razão (\"porque não falham\") vem depois da afirmação inicial.",
+      "c": "A promessa sobre a manhã e a fidelidade é o fecho da sequência."
+    },
+    "passageText": "As misericórdias de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada manhã; grande é a tua fidelidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "As misericórdias de Jeová são a causa de não sermos consumidos"
+      },
+      {
+        "id": "b",
+        "text": "porque não falham as suas misericórdias"
+      },
+      {
+        "id": "c",
+        "text": "Novas são cada manhã; grande é a tua fidelidade."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-02-as-misericordias-do-",
+    "id": "lamentacoes-cam-lamentacoes-luto-02-as-misericordias-do--04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lamentações 3:22–23",
+    "learningObjective": "Reconhecer que as misericórdias de Deus não se esgotam e se renovam a cada manhã, mesmo na dor.",
+    "evidence": [
+      "Lamentações 3:22–23"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"As misericórdias de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada ___; grande é a tua fidelidade.\"",
+    "prompt": "Complete a frase: \"As misericórdias de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada ___; grande é a tua fidelidade.\"",
+    "cue": "Complete a frase: \"As misericórdias de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada ___; grande é a tua fidelidade.\"",
+    "feedbackCorrect": "Certo: \"manhã\" é a palavra que completa corretamente a frase.",
+    "feedbackWrong": {
+      "a": "\"Jeová\" não é a palavra que falta nesta lacuna do texto.",
+      "c": "\"causa\" não é a palavra que falta nesta lacuna do texto."
+    },
+    "passageText": "As misericórdias de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada manhã; grande é a tua fidelidade.",
+    "template": "As misericórdias de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada ___; grande é a tua fidelidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová"
+      },
+      {
+        "id": "b",
+        "text": "manhã"
+      },
+      {
+        "id": "c",
+        "text": "causa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-02-as-misericordias-do-",
+    "id": "lamentacoes-cam-lamentacoes-luto-02-as-misericordias-do--05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lamentações 3:22–23",
+    "learningObjective": "Reconhecer que as misericórdias de Deus não se esgotam e se renovam a cada manhã, mesmo na dor.",
+    "evidence": [
+      "Lamentações 3:22–23"
+    ],
+    "type": "connect",
+    "question": "O que Lamentações 3:22–23 comunica que se liga a este contexto?",
+    "prompt": "O que Lamentações 3:22–23 comunica que se liga a este contexto?",
+    "cue": "O que Lamentações 3:22–23 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a fidelidade de Deus é o fundamento da esperança descrita na missão.",
+    "feedbackWrong": {
+      "a": "A fidelidade descrita nasce do caráter de Deus, não do mérito humano.",
+      "c": "No livro, lamento e esperança caminham juntos, um não anula o outro."
+    },
+    "passageText": "Novas são cada manhã; grande é a tua fidelidade.",
+    "passageA": {
+      "ref": "Lamentações 3:22–23",
+      "text": "Novas são cada manhã; grande é a tua fidelidade."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A missão ensina que, mesmo em meio à ruína, as misericórdias de Deus não se esgotam e se renovam todos os dias."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fidelidade condicionada ao mérito humano"
+      },
+      {
+        "id": "b",
+        "text": "Esperança sustentada pela fidelidade de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Lamento que anula a esperança"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-02-as-misericordias-do-",
+    "id": "lamentacoes-cam-lamentacoes-luto-02-as-misericordias-do--06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lamentações 3:22–23",
+    "learningObjective": "Reconhecer que as misericórdias de Deus não se esgotam e se renovam a cada manhã, mesmo na dor.",
+    "evidence": [
+      "Lamentações 3:22–23"
+    ],
+    "type": "true_false",
+    "question": "A renovação diária das misericórdias revela que a fidelidade de Deus independe do estado espiritual do povo sofredor.",
+    "prompt": "A renovação diária das misericórdias revela que a fidelidade de Deus independe do estado espiritual do povo sofredor.",
+    "cue": "A renovação diária das misericórdias revela que a fidelidade de Deus independe do estado espiritual do povo sofredor.",
+    "feedbackCorrect": "Certo: essa leitura é sustentada pelo texto.",
+    "feedbackWrong": {
+      "false": "O texto apresenta a fidelidade de Deus como constante, independente da condição do povo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "As misericórdias de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada manhã; grande é a tua fidelidade.",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-02-as-misericordias-do-",
+    "id": "lamentacoes-pro-lamentacoes-luto-02-as-misericordias-do--01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lamentações 3:22–23",
+    "learningObjective": "Reconhecer que as misericórdias de Deus não se esgotam e se renovam a cada manhã, mesmo na dor.",
+    "evidence": [
+      "Lamentações 3:22–23"
+    ],
+    "type": "tap",
+    "question": "Em Lamentações 3:22–23, toque a palavra que falta em \"As misericórdias de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. ___ são cada manhã; grande é a tua fidelidade.\"?",
+    "prompt": "Em Lamentações 3:22–23, toque a palavra que falta em \"As misericórdias de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. ___ são cada manhã; grande é a tua fidelidade.\"?",
+    "cue": "Em Lamentações 3:22–23, toque a palavra que falta em \"As misericórdias de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. ___ são cada manhã; grande é a tua fidelidade.\"?",
+    "feedbackCorrect": "Exato: \"Novas\" é a palavra que completa a frase, como está em Lamentações 3:22–23.",
+    "feedbackWrong": {
+      "b": "\"Jeová\" também aparece no texto, mas não é a palavra que falta nesta lacuna.",
+      "c": "\"fidelidade\" também aparece no texto, mas não é a palavra que falta nesta lacuna."
+    },
+    "passageText": "As misericórdias de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada manhã; grande é a tua fidelidade.",
+    "template": "As misericórdias de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. ___ são cada manhã; grande é a tua fidelidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Novas"
+      },
+      {
+        "id": "b",
+        "text": "Jeová"
+      },
+      {
+        "id": "c",
+        "text": "fidelidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-02-as-misericordias-do-",
+    "id": "lamentacoes-pro-lamentacoes-luto-02-as-misericordias-do--02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lamentações 3:22–23",
+    "learningObjective": "Reconhecer que as misericórdias de Deus não se esgotam e se renovam a cada manhã, mesmo na dor.",
+    "evidence": [
+      "Lamentações 3:22–23"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de Lamentações 3:22–23?",
+    "prompt": "Qual leitura interpreta melhor o sentido de Lamentações 3:22–23?",
+    "cue": "Qual leitura interpreta melhor o sentido de Lamentações 3:22–23?",
+    "feedbackCorrect": "Certo: a fidelidade constante de Deus sustenta a esperança em meio à dor.",
+    "feedbackWrong": {
+      "a": "O texto afirma continuidade da misericórdia, não esquecimento do povo.",
+      "c": "A fidelidade brota do caráter de Deus, não do mérito humano.",
+      "d": "É exatamente no meio da dor que o texto afirma a esperança."
+    },
+    "passageText": "As misericórdias de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada manhã; grande é a tua fidelidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O texto ensina que Deus pune primeiro e depois esquece o povo por completo."
+      },
+      {
+        "id": "b",
+        "text": "A fidelidade constante de Deus fundamenta a esperança mesmo com o sofrimento."
+      },
+      {
+        "id": "c",
+        "text": "A passagem apresenta a fidelidade de Deus como algo condicionado ao mérito humano."
+      },
+      {
+        "id": "d",
+        "text": "O sentido do texto é que a dor do povo invalida qualquer esperança futura."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-02-as-misericordias-do-",
+    "id": "lamentacoes-pro-lamentacoes-luto-02-as-misericordias-do--03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lamentações 3:22–23",
+    "learningObjective": "Reconhecer que as misericórdias de Deus não se esgotam e se renovam a cada manhã, mesmo na dor.",
+    "evidence": [
+      "Lamentações 3:22–23"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Lamentações 3:22–23?",
+    "prompt": "Qual sequência revela o sentido de Lamentações 3:22–23?",
+    "cue": "Qual sequência revela o sentido de Lamentações 3:22–23?",
+    "feedbackCorrect": "Certo: essa sequência revela o sentido de Lamentações 3:22–23.",
+    "feedbackWrong": {
+      "b": "Releia: a razão (\"porque não falham\") vem depois da afirmação inicial.",
+      "c": "A promessa sobre a manhã e a fidelidade é o fecho da sequência."
+    },
+    "passageText": "As misericórdias de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada manhã; grande é a tua fidelidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "As misericórdias de Jeová são a causa de não sermos consumidos"
+      },
+      {
+        "id": "b",
+        "text": "porque não falham as suas misericórdias"
+      },
+      {
+        "id": "c",
+        "text": "Novas são cada manhã; grande é a tua fidelidade."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-02-as-misericordias-do-",
+    "id": "lamentacoes-pro-lamentacoes-luto-02-as-misericordias-do--04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lamentações 3:22–23",
+    "learningObjective": "Reconhecer que as misericórdias de Deus não se esgotam e se renovam a cada manhã, mesmo na dor.",
+    "evidence": [
+      "Lamentações 3:22–23"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"As misericórdias de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada manhã; ___ é a tua fidelidade.\"",
+    "prompt": "Complete a frase: \"As misericórdias de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada manhã; ___ é a tua fidelidade.\"",
+    "cue": "Complete a frase: \"As misericórdias de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada manhã; ___ é a tua fidelidade.\"",
+    "feedbackCorrect": "Certo: \"grande\" é a palavra que completa corretamente a frase.",
+    "feedbackWrong": {
+      "b": "\"novas\" não é a palavra que falta nesta lacuna do texto.",
+      "c": "\"causa\" não é a palavra que falta nesta lacuna do texto."
+    },
+    "passageText": "As misericórdias de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada manhã; grande é a tua fidelidade.",
+    "template": "As misericórdias de Jeová são a causa de não sermos consumidos, porque não falham as suas misericórdias. Novas são cada manhã; ___ é a tua fidelidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "grande"
+      },
+      {
+        "id": "b",
+        "text": "novas"
+      },
+      {
+        "id": "c",
+        "text": "causa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-02-as-misericordias-do-",
+    "id": "lamentacoes-pro-lamentacoes-luto-02-as-misericordias-do--05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lamentações 3:22–23",
+    "learningObjective": "Reconhecer que as misericórdias de Deus não se esgotam e se renovam a cada manhã, mesmo na dor.",
+    "evidence": [
+      "Lamentações 3:22–23"
+    ],
+    "type": "connect",
+    "question": "O que Lamentações 3:22–23 comunica que se liga a este contexto?",
+    "prompt": "O que Lamentações 3:22–23 comunica que se liga a este contexto?",
+    "cue": "O que Lamentações 3:22–23 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a fidelidade de Deus resiste mesmo à ruína descrita no livro.",
+    "feedbackWrong": {
+      "b": "O texto promete restauração diária da misericórdia, não um fim sem saída.",
+      "c": "O texto descreve fidelidade constante, não condicionada às circunstâncias."
+    },
+    "passageText": "Novas são cada manhã; grande é a tua fidelidade.",
+    "passageA": {
+      "ref": "Lamentações 3:22–23",
+      "text": "Novas são cada manhã; grande é a tua fidelidade."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A missão ensina que, mesmo em meio à ruína, as misericórdias de Deus não se esgotam e se renovam todos os dias."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fidelidade que resiste à ruína"
+      },
+      {
+        "id": "b",
+        "text": "Julgamento sem qualquer restauração possível"
+      },
+      {
+        "id": "c",
+        "text": "Fidelidade que depende das circunstâncias"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-02-as-misericordias-do-",
+    "id": "lamentacoes-pro-lamentacoes-luto-02-as-misericordias-do--06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lamentações 3:21–24",
+    "learningObjective": "Identificar como lembrar a fidelidade de Deus sustenta a esperança em meio ao luto.",
+    "evidence": [
+      "Lamentações 3:21–24"
+    ],
+    "type": "true_false",
+    "question": "O autor lembra as misericórdias de Deus e, por isso, mantém esperança mesmo na dor.",
+    "prompt": "O autor lembra as misericórdias de Deus e, por isso, mantém esperança mesmo na dor.",
+    "cue": "O autor lembra as misericórdias de Deus e, por isso, mantém esperança mesmo na dor.",
+    "feedbackCorrect": "Certo: essa afirmação corresponde ao texto de Lamentações 3:21–24.",
+    "feedbackWrong": {
+      "false": "O texto afirma exatamente isso: a memória das misericórdias gera esperança."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Isto trago à memória, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada manhã. A minha porção é Jeová, diz a minha alma; portanto esperarei nele.",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-03-desafio-esperanca-no",
+    "id": "lamentacoes-sem-lamentacoes-luto-03-desafio-esperanca-no-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lamentações 3:21–24",
+    "learningObjective": "Identificar como lembrar a fidelidade de Deus sustenta a esperança em meio ao luto.",
+    "evidence": [
+      "Lamentações 3:21–24"
+    ],
+    "type": "tap",
+    "question": "Em Lamentações 3:21–24, toque a palavra que falta em \"Isto trago à memória, e por isso tenho ___: as misericórdias de Jeová não falham; são novas a cada manhã. A minha porção é Jeová, diz a minha alma; portanto esperarei nele.\"?",
+    "prompt": "Em Lamentações 3:21–24, toque a palavra que falta em \"Isto trago à memória, e por isso tenho ___: as misericórdias de Jeová não falham; são novas a cada manhã. A minha porção é Jeová, diz a minha alma; portanto esperarei nele.\"?",
+    "cue": "Em Lamentações 3:21–24, toque a palavra que falta em \"Isto trago à memória, e por isso tenho ___: as misericórdias de Jeová não falham; são novas a cada manhã. A minha porção é Jeová, diz a minha alma; portanto esperarei nele.\"?",
+    "feedbackCorrect": "Exato: \"esperança\" é a palavra que completa a frase, como está em Lamentações 3:21–24.",
+    "feedbackWrong": {
+      "b": "\"memória\" também aparece no texto, mas não é a palavra que falta nesta lacuna.",
+      "c": "\"misericórdias\" também aparece no texto, mas não é a palavra que falta nesta lacuna."
+    },
+    "passageText": "Isto trago à memória, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada manhã. A minha porção é Jeová, diz a minha alma; portanto esperarei nele.",
+    "template": "Isto trago à memória, e por isso tenho ___: as misericórdias de Jeová não falham; são novas a cada manhã. A minha porção é Jeová, diz a minha alma; portanto esperarei nele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "esperança"
+      },
+      {
+        "id": "b",
+        "text": "memória"
+      },
+      {
+        "id": "c",
+        "text": "misericórdias"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-03-desafio-esperanca-no",
+    "id": "lamentacoes-sem-lamentacoes-luto-03-desafio-esperanca-no-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lamentações 3:21–24",
+    "learningObjective": "Identificar como lembrar a fidelidade de Deus sustenta a esperança em meio ao luto.",
+    "evidence": [
+      "Lamentações 3:21–24"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelo texto nesta passagem de Lamentações?",
+    "prompt": "Qual afirmação é feita diretamente pelo texto nesta passagem de Lamentações?",
+    "cue": "Qual afirmação é feita diretamente pelo texto nesta passagem de Lamentações?",
+    "feedbackCorrect": "Certo: o autor escolhe esperar porque lembra que as misericórdias de Deus não falham.",
+    "feedbackWrong": {
+      "a": "O texto afirma o contrário: dali nasce a esperança do autor.",
+      "b": "O texto diz que a porção do autor é o próprio Jeová, não bens materiais.",
+      "c": "A esperança nasce da memória da fidelidade de Deus, não da mudança das circunstâncias."
+    },
+    "passageText": "Isto trago à memória, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada manhã. A minha porção é Jeová, diz a minha alma; portanto esperarei nele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O autor abandona toda esperança diante do tamanho da destruição."
+      },
+      {
+        "id": "b",
+        "text": "A porção do autor está nas riquezas que ainda lhe restaram."
+      },
+      {
+        "id": "c",
+        "text": "A esperança do autor depende de as circunstâncias melhorarem primeiro."
+      },
+      {
+        "id": "d",
+        "text": "O autor decide esperar em Deus porque lembra que suas misericórdias não falham."
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-03-desafio-esperanca-no",
+    "id": "lamentacoes-sem-lamentacoes-luto-03-desafio-esperanca-no-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lamentações 3:21–24",
+    "learningObjective": "Identificar como lembrar a fidelidade de Deus sustenta a esperança em meio ao luto.",
+    "evidence": [
+      "Lamentações 3:21–24"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Lamentações 3:21–24?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Lamentações 3:21–24?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Lamentações 3:21–24?",
+    "feedbackCorrect": "Certo: essa é a ordem em que os trechos aparecem no texto.",
+    "feedbackWrong": {
+      "b": "Releia: a lembrança das misericórdias vem depois da abertura sobre trazer à memória.",
+      "c": "A declaração sobre a porção e a decisão de esperar é o fecho da sequência."
+    },
+    "passageText": "Isto trago à memória, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada manhã. A minha porção é Jeová, diz a minha alma; portanto esperarei nele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Isto trago à memória, e por isso tenho esperança"
+      },
+      {
+        "id": "b",
+        "text": "as misericórdias de Jeová não falham; são novas a cada manhã"
+      },
+      {
+        "id": "c",
+        "text": "a minha porção é Jeová, diz a minha alma; portanto esperarei nele."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-03-desafio-esperanca-no",
+    "id": "lamentacoes-sem-lamentacoes-luto-03-desafio-esperanca-no-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lamentações 3:21–24",
+    "learningObjective": "Identificar como lembrar a fidelidade de Deus sustenta a esperança em meio ao luto.",
+    "evidence": [
+      "Lamentações 3:21–24"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Isto trago à ___, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada manhã. A minha porção é Jeová, diz a minha alma; portanto esperarei nele.\"",
+    "prompt": "Complete a frase: \"Isto trago à ___, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada manhã. A minha porção é Jeová, diz a minha alma; portanto esperarei nele.\"",
+    "cue": "Complete a frase: \"Isto trago à ___, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada manhã. A minha porção é Jeová, diz a minha alma; portanto esperarei nele.\"",
+    "feedbackCorrect": "Certo: \"memória\" é a palavra que completa corretamente a frase.",
+    "feedbackWrong": {
+      "a": "\"esperança\" não é a palavra que falta nesta lacuna do texto.",
+      "b": "\"alma\" não é a palavra que falta nesta lacuna do texto."
+    },
+    "passageText": "Isto trago à memória, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada manhã. A minha porção é Jeová, diz a minha alma; portanto esperarei nele.",
+    "template": "Isto trago à ___, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada manhã. A minha porção é Jeová, diz a minha alma; portanto esperarei nele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "esperança"
+      },
+      {
+        "id": "b",
+        "text": "alma"
+      },
+      {
+        "id": "c",
+        "text": "memória"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-03-desafio-esperanca-no",
+    "id": "lamentacoes-sem-lamentacoes-luto-03-desafio-esperanca-no-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Lamentações 3:21–24",
+    "learningObjective": "Identificar como lembrar a fidelidade de Deus sustenta a esperança em meio ao luto.",
+    "evidence": [
+      "Lamentações 3:21–24"
+    ],
+    "type": "connect",
+    "question": "O que Lamentações 3:21–24 comunica que se liga a este contexto?",
+    "prompt": "O que Lamentações 3:21–24 comunica que se liga a este contexto?",
+    "cue": "O que Lamentações 3:21–24 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: lembrar as misericórdias de Deus é o que gera esperança nesta passagem.",
+    "feedbackWrong": {
+      "a": "O autor não esquece a dor; ele a nomeia e, ainda assim, espera.",
+      "c": "O texto diz que a porção do autor é Jeová, não riqueza."
+    },
+    "passageText": "Isto trago à memória, e por isso tenho esperança.",
+    "passageA": {
+      "ref": "Lamentações 3:21–24",
+      "text": "Isto trago à memória, e por isso tenho esperança."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A missão mostra que a esperança bíblica nasce de nomear a dor com honestidade e lembrar a fidelidade constante de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Esquecimento da dor vivida"
+      },
+      {
+        "id": "b",
+        "text": "Memória que gera esperança"
+      },
+      {
+        "id": "c",
+        "text": "Riqueza como porção do autor"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-03-desafio-esperanca-no",
+    "id": "lamentacoes-sem-lamentacoes-luto-03-desafio-esperanca-no-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lamentações 3:21–24",
+    "learningObjective": "Identificar como lembrar a fidelidade de Deus sustenta a esperança em meio ao luto.",
+    "evidence": [
+      "Lamentações 3:21–24"
+    ],
+    "type": "true_false",
+    "question": "O texto ensina que lembrar o sofrimento é suficiente, sem necessidade de lembrar a fidelidade de Deus.",
+    "prompt": "O texto ensina que lembrar o sofrimento é suficiente, sem necessidade de lembrar a fidelidade de Deus.",
+    "cue": "O texto ensina que lembrar o sofrimento é suficiente, sem necessidade de lembrar a fidelidade de Deus.",
+    "feedbackCorrect": "Certo: essa afirmação não se sustenta no texto.",
+    "feedbackWrong": {
+      "true": "O texto liga a esperança à memória da fidelidade de Deus, não apenas do sofrimento."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Isto trago à memória, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada manhã. A minha porção é Jeová, diz a minha alma; portanto esperarei nele.",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-03-desafio-esperanca-no",
+    "id": "lamentacoes-cam-lamentacoes-luto-03-desafio-esperanca-no-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lamentações 3:21–24",
+    "learningObjective": "Identificar como lembrar a fidelidade de Deus sustenta a esperança em meio ao luto.",
+    "evidence": [
+      "Lamentações 3:21–24"
+    ],
+    "type": "tap",
+    "question": "Em Lamentações 3:21–24, toque a palavra que falta em \"Isto trago à memória, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada manhã. A minha ___ é Jeová, diz a minha alma; portanto esperarei nele.\"?",
+    "prompt": "Em Lamentações 3:21–24, toque a palavra que falta em \"Isto trago à memória, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada manhã. A minha ___ é Jeová, diz a minha alma; portanto esperarei nele.\"?",
+    "cue": "Em Lamentações 3:21–24, toque a palavra que falta em \"Isto trago à memória, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada manhã. A minha ___ é Jeová, diz a minha alma; portanto esperarei nele.\"?",
+    "feedbackCorrect": "Exato: \"porção\" é a palavra que completa a frase, como está em Lamentações 3:21–24.",
+    "feedbackWrong": {
+      "b": "\"alma\" também aparece no texto, mas não é a palavra que falta nesta lacuna.",
+      "c": "\"manhã\" também aparece no texto, mas não é a palavra que falta nesta lacuna."
+    },
+    "passageText": "Isto trago à memória, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada manhã. A minha porção é Jeová, diz a minha alma; portanto esperarei nele.",
+    "template": "Isto trago à memória, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada manhã. A minha ___ é Jeová, diz a minha alma; portanto esperarei nele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "porção"
+      },
+      {
+        "id": "b",
+        "text": "alma"
+      },
+      {
+        "id": "c",
+        "text": "manhã"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-03-desafio-esperanca-no",
+    "id": "lamentacoes-cam-lamentacoes-luto-03-desafio-esperanca-no-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lamentações 3:21–24",
+    "learningObjective": "Identificar como lembrar a fidelidade de Deus sustenta a esperança em meio ao luto.",
+    "evidence": [
+      "Lamentações 3:21–24"
+    ],
+    "type": "choice",
+    "question": "Qual ideia melhor conecta esta passagem ao contexto da missão?",
+    "prompt": "Qual ideia melhor conecta esta passagem ao contexto da missão?",
+    "cue": "Qual ideia melhor conecta esta passagem ao contexto da missão?",
+    "feedbackCorrect": "Certo: honestidade com a dor e lembrança da fidelidade de Deus sustentam a esperança.",
+    "feedbackWrong": {
+      "b": "O autor não esquece a dor; ele a nomeia e, ainda assim, espera.",
+      "c": "O texto não oferece essa explicação; a esperança nasce da confiança na fidelidade de Deus.",
+      "d": "O autor descreve uma decisão ativa: \"trago à memória\" e \"esperarei\"."
+    },
+    "passageText": "Isto trago à memória, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada manhã. A minha porção é Jeová, diz a minha alma; portanto esperarei nele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nomear a dor com honestidade e lembrar a fidelidade de Deus caminham juntos."
+      },
+      {
+        "id": "b",
+        "text": "A esperança bíblica exige esquecer completamente a dor vivida."
+      },
+      {
+        "id": "c",
+        "text": "A esperança descrita depende de uma explicação completa do porquê do sofrimento."
+      },
+      {
+        "id": "d",
+        "text": "O texto ensina que esperar em Deus é uma escolha passiva, sem decisão consciente."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-03-desafio-esperanca-no",
+    "id": "lamentacoes-cam-lamentacoes-luto-03-desafio-esperanca-no-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lamentações 3:21–24",
+    "learningObjective": "Identificar como lembrar a fidelidade de Deus sustenta a esperança em meio ao luto.",
+    "evidence": [
+      "Lamentações 3:21–24"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Lamentações 3:21–24?",
+    "prompt": "Como se encadeiam os eventos de Lamentações 3:21–24?",
+    "cue": "Como se encadeiam os eventos de Lamentações 3:21–24?",
+    "feedbackCorrect": "Certo: essa é a ordem em que os trechos aparecem no texto.",
+    "feedbackWrong": {
+      "b": "Releia: a lembrança das misericórdias vem depois da abertura sobre trazer à memória.",
+      "c": "A declaração sobre a porção e a decisão de esperar é o fecho da sequência."
+    },
+    "passageText": "Isto trago à memória, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada manhã. A minha porção é Jeová, diz a minha alma; portanto esperarei nele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Isto trago à memória, e por isso tenho esperança"
+      },
+      {
+        "id": "b",
+        "text": "as misericórdias de Jeová não falham; são novas a cada manhã"
+      },
+      {
+        "id": "c",
+        "text": "a minha porção é Jeová, diz a minha alma; portanto esperarei nele."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-03-desafio-esperanca-no",
+    "id": "lamentacoes-cam-lamentacoes-luto-03-desafio-esperanca-no-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lamentações 3:21–24",
+    "learningObjective": "Identificar como lembrar a fidelidade de Deus sustenta a esperança em meio ao luto.",
+    "evidence": [
+      "Lamentações 3:21–24"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Isto trago à memória, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada manhã. A minha porção é Jeová, diz a minha ___; portanto esperarei nele.\"",
+    "prompt": "Complete a frase: \"Isto trago à memória, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada manhã. A minha porção é Jeová, diz a minha ___; portanto esperarei nele.\"",
+    "cue": "Complete a frase: \"Isto trago à memória, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada manhã. A minha porção é Jeová, diz a minha ___; portanto esperarei nele.\"",
+    "feedbackCorrect": "Certo: \"alma\" é a palavra que completa corretamente a frase.",
+    "feedbackWrong": {
+      "a": "\"porção\" não é a palavra que falta nesta lacuna do texto.",
+      "c": "\"esperança\" não é a palavra que falta nesta lacuna do texto."
+    },
+    "passageText": "Isto trago à memória, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada manhã. A minha porção é Jeová, diz a minha alma; portanto esperarei nele.",
+    "template": "Isto trago à memória, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada manhã. A minha porção é Jeová, diz a minha ___; portanto esperarei nele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "porção"
+      },
+      {
+        "id": "b",
+        "text": "alma"
+      },
+      {
+        "id": "c",
+        "text": "esperança"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-03-desafio-esperanca-no",
+    "id": "lamentacoes-cam-lamentacoes-luto-03-desafio-esperanca-no-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Lamentações 3:21–24",
+    "learningObjective": "Identificar como lembrar a fidelidade de Deus sustenta a esperança em meio ao luto.",
+    "evidence": [
+      "Lamentações 3:21–24"
+    ],
+    "type": "connect",
+    "question": "O que Lamentações 3:21–24 comunica que se liga a este contexto?",
+    "prompt": "O que Lamentações 3:21–24 comunica que se liga a este contexto?",
+    "cue": "O que Lamentações 3:21–24 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a missão une a dor nomeada com honestidade à confiança na fidelidade de Deus.",
+    "feedbackWrong": {
+      "a": "O autor descreve uma decisão ativa: \"trago à memória\" e \"esperarei\".",
+      "b": "O texto não explica o sofrimento; ele afirma a fidelidade de Deus em meio a ele."
+    },
+    "passageText": "Isto trago à memória, e por isso tenho esperança.",
+    "passageA": {
+      "ref": "Lamentações 3:21–24",
+      "text": "Isto trago à memória, e por isso tenho esperança."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A missão mostra que a esperança bíblica nasce de nomear a dor com honestidade e lembrar a fidelidade constante de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Esperança passiva sem decisão"
+      },
+      {
+        "id": "b",
+        "text": "Explicação completa do sofrimento"
+      },
+      {
+        "id": "c",
+        "text": "Dor honesta unida à confiança em Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-03-desafio-esperanca-no",
+    "id": "lamentacoes-cam-lamentacoes-luto-03-desafio-esperanca-no-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lamentações 3:21–24",
+    "learningObjective": "Identificar como lembrar a fidelidade de Deus sustenta a esperança em meio ao luto.",
+    "evidence": [
+      "Lamentações 3:21–24"
+    ],
+    "type": "true_false",
+    "question": "A esperança do texto nasce da memória ativa da fidelidade de Deus, não da ausência da dor.",
+    "prompt": "A esperança do texto nasce da memória ativa da fidelidade de Deus, não da ausência da dor.",
+    "cue": "A esperança do texto nasce da memória ativa da fidelidade de Deus, não da ausência da dor.",
+    "feedbackCorrect": "Certo: essa leitura é sustentada pelo texto.",
+    "feedbackWrong": {
+      "false": "O texto liga esperança e memória da fidelidade de Deus, mesmo com a dor presente."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Isto trago à memória, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada manhã. A minha porção é Jeová, diz a minha alma; portanto esperarei nele.",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-03-desafio-esperanca-no",
+    "id": "lamentacoes-pro-lamentacoes-luto-03-desafio-esperanca-no-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lamentações 3:21–24",
+    "learningObjective": "Identificar como lembrar a fidelidade de Deus sustenta a esperança em meio ao luto.",
+    "evidence": [
+      "Lamentações 3:21–24"
+    ],
+    "type": "tap",
+    "question": "Em Lamentações 3:21–24, toque a palavra que falta em \"Isto trago à memória, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada ___. A minha porção é Jeová, diz a minha alma; portanto esperarei nele.\"?",
+    "prompt": "Em Lamentações 3:21–24, toque a palavra que falta em \"Isto trago à memória, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada ___. A minha porção é Jeová, diz a minha alma; portanto esperarei nele.\"?",
+    "cue": "Em Lamentações 3:21–24, toque a palavra que falta em \"Isto trago à memória, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada ___. A minha porção é Jeová, diz a minha alma; portanto esperarei nele.\"?",
+    "feedbackCorrect": "Exato: \"manhã\" é a palavra que completa a frase, como está em Lamentações 3:21–24.",
+    "feedbackWrong": {
+      "a": "\"porção\" também aparece no texto, mas não é a palavra que falta nesta lacuna.",
+      "b": "\"memória\" também aparece no texto, mas não é a palavra que falta nesta lacuna."
+    },
+    "passageText": "Isto trago à memória, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada manhã. A minha porção é Jeová, diz a minha alma; portanto esperarei nele.",
+    "template": "Isto trago à memória, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada ___. A minha porção é Jeová, diz a minha alma; portanto esperarei nele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "porção"
+      },
+      {
+        "id": "b",
+        "text": "memória"
+      },
+      {
+        "id": "c",
+        "text": "manhã"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-03-desafio-esperanca-no",
+    "id": "lamentacoes-pro-lamentacoes-luto-03-desafio-esperanca-no-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lamentações 3:21–24",
+    "learningObjective": "Identificar como lembrar a fidelidade de Deus sustenta a esperança em meio ao luto.",
+    "evidence": [
+      "Lamentações 3:21–24"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido desta passagem?",
+    "prompt": "Qual leitura interpreta melhor o sentido desta passagem?",
+    "cue": "Qual leitura interpreta melhor o sentido desta passagem?",
+    "feedbackCorrect": "Certo: a esperança madura nasce de lembrar quem Deus é, mesmo com o luto ainda presente.",
+    "feedbackWrong": {
+      "a": "O autor espera precisamente enquanto o sofrimento ainda está presente.",
+      "b": "O autor declara Jeová como sua porção antes de qualquer restauração visível.",
+      "c": "O texto une os dois: é porque lembra que o autor espera."
+    },
+    "passageText": "Isto trago à memória, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada manhã. A minha porção é Jeová, diz a minha alma; portanto esperarei nele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O texto ensina que a esperança verdadeira só existe quando o sofrimento termina."
+      },
+      {
+        "id": "b",
+        "text": "A passagem sugere que Jeová se torna porção do povo apenas depois da restauração."
+      },
+      {
+        "id": "c",
+        "text": "O sentido do texto é que memória e esperança são movimentos independentes um do outro."
+      },
+      {
+        "id": "d",
+        "text": "A esperança madura nasce de lembrar quem Deus é, mesmo no meio do luto."
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-03-desafio-esperanca-no",
+    "id": "lamentacoes-pro-lamentacoes-luto-03-desafio-esperanca-no-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lamentações 3:21–24",
+    "learningObjective": "Identificar como lembrar a fidelidade de Deus sustenta a esperança em meio ao luto.",
+    "evidence": [
+      "Lamentações 3:21–24"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Lamentações 3:21–24?",
+    "prompt": "Qual sequência revela o sentido de Lamentações 3:21–24?",
+    "cue": "Qual sequência revela o sentido de Lamentações 3:21–24?",
+    "feedbackCorrect": "Certo: essa sequência revela o sentido do texto.",
+    "feedbackWrong": {
+      "b": "Releia: a lembrança das misericórdias vem depois da abertura sobre trazer à memória.",
+      "c": "A declaração sobre a porção e a decisão de esperar é o fecho da sequência."
+    },
+    "passageText": "Isto trago à memória, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada manhã. A minha porção é Jeová, diz a minha alma; portanto esperarei nele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Isto trago à memória, e por isso tenho esperança"
+      },
+      {
+        "id": "b",
+        "text": "as misericórdias de Jeová não falham; são novas a cada manhã"
+      },
+      {
+        "id": "c",
+        "text": "a minha porção é Jeová, diz a minha alma; portanto esperarei nele."
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-03-desafio-esperanca-no",
+    "id": "lamentacoes-pro-lamentacoes-luto-03-desafio-esperanca-no-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lamentações 3:21–24",
+    "learningObjective": "Identificar como lembrar a fidelidade de Deus sustenta a esperança em meio ao luto.",
+    "evidence": [
+      "Lamentações 3:21–24"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Isto trago à memória, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada manhã. A minha porção é Jeová, diz a minha alma; portanto ___ nele.\"",
+    "prompt": "Complete a frase: \"Isto trago à memória, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada manhã. A minha porção é Jeová, diz a minha alma; portanto ___ nele.\"",
+    "cue": "Complete a frase: \"Isto trago à memória, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada manhã. A minha porção é Jeová, diz a minha alma; portanto ___ nele.\"",
+    "feedbackCorrect": "Certo: \"esperarei\" é a palavra que completa corretamente a frase.",
+    "feedbackWrong": {
+      "a": "\"manhã\" não é a palavra que falta nesta lacuna do texto.",
+      "c": "\"alma\" não é a palavra que falta nesta lacuna do texto."
+    },
+    "passageText": "Isto trago à memória, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada manhã. A minha porção é Jeová, diz a minha alma; portanto esperarei nele.",
+    "template": "Isto trago à memória, e por isso tenho esperança: as misericórdias de Jeová não falham; são novas a cada manhã. A minha porção é Jeová, diz a minha alma; portanto ___ nele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "manhã"
+      },
+      {
+        "id": "b",
+        "text": "esperarei"
+      },
+      {
+        "id": "c",
+        "text": "alma"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-03-desafio-esperanca-no",
+    "id": "lamentacoes-pro-lamentacoes-luto-03-desafio-esperanca-no-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Lamentações 3:21–24",
+    "learningObjective": "Identificar como lembrar a fidelidade de Deus sustenta a esperança em meio ao luto.",
+    "evidence": [
+      "Lamentações 3:21–24"
+    ],
+    "type": "connect",
+    "question": "O que Lamentações 3:21–24 comunica que se liga a este contexto?",
+    "prompt": "O que Lamentações 3:21–24 comunica que se liga a este contexto?",
+    "cue": "O que Lamentações 3:21–24 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a esperança da missão não depende do fim da dor, mas da fidelidade de Deus.",
+    "feedbackWrong": {
+      "b": "O autor espera precisamente enquanto o sofrimento ainda está presente.",
+      "c": "O autor declara confiança em Deus antes de qualquer restauração visível."
+    },
+    "passageText": "Isto trago à memória, e por isso tenho esperança.",
+    "passageA": {
+      "ref": "Lamentações 3:21–24",
+      "text": "Isto trago à memória, e por isso tenho esperança."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A missão mostra que a esperança bíblica nasce de nomear a dor com honestidade e lembrar a fidelidade constante de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Esperança que não exige fim da dor"
+      },
+      {
+        "id": "b",
+        "text": "Esperança condicionada ao fim do sofrimento"
+      },
+      {
+        "id": "c",
+        "text": "Restauração antes da confiança em Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "lamentacoes",
+    "section": "lamentacoes-luto-03-desafio-esperanca-no",
+    "id": "lamentacoes-pro-lamentacoes-luto-03-desafio-esperanca-no-06"
+  }
+]

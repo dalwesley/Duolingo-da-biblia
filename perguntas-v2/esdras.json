@@ -1,0 +1,2972 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Esdras 1:1–2",
+    "learningObjective": "Reconhecer que o decreto de Ciro cumpre a palavra de Jeová por Jeremias e serve à casa em Jerusalém.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 1:2"
+    ],
+    "type": "true_false",
+    "question": "No primeiro ano de Ciro, Jeová moveu o espírito do rei para cumprir a palavra dita por Jeremias.",
+    "prompt": "No primeiro ano de Ciro, Jeová moveu o espírito do rei para cumprir a palavra dita por Jeremias.",
+    "cue": "No primeiro ano de Ciro, Jeová moveu o espírito do rei para cumprir a palavra dita por Jeremias.",
+    "feedbackCorrect": "Certo: o decreto nasce do cumprimento da palavra de Jeová.",
+    "feedbackWrong": {
+      "false": "Releia Esdras 1:1 — Jeová move Ciro para cumprir Jeremias."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá.",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "id": "esdras-sem-esdras-retorno-01-decreto-de-ciro-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Esdras 1:1–2",
+    "learningObjective": "Reconhecer que o decreto de Ciro cumpre a palavra de Jeová por Jeremias e serve à casa em Jerusalém.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 1:2"
+    ],
+    "type": "tap",
+    "question": "Em Esdras 1:1–2, toque a palavra que falta em \"moveu Jeová o ___ de Ciro, rei da Pérsia\"?",
+    "prompt": "Em Esdras 1:1–2, toque a palavra que falta em \"moveu Jeová o ___ de Ciro, rei da Pérsia\"?",
+    "cue": "Em Esdras 1:1–2, toque a palavra que falta em \"moveu Jeová o ___ de Ciro, rei da Pérsia\"?",
+    "feedbackCorrect": "Exato: Jeová move o espírito de Ciro.",
+    "feedbackWrong": {
+      "b": "Jeremias é o profeta cuja palavra se cumpre, não o que Jeová move.",
+      "c": "Pregão é o anúncio publicado, não o que Jeová move."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "espírito"
+      },
+      {
+        "id": "b",
+        "text": "Jeremias"
+      },
+      {
+        "id": "c",
+        "text": "pregão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá.",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "id": "esdras-sem-esdras-retorno-01-decreto-de-ciro-02",
+    "template": "moveu Jeová o ___ de Ciro, rei da Pérsia"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Esdras 1:1–2",
+    "learningObjective": "Reconhecer que o decreto de Ciro cumpre a palavra de Jeová por Jeremias e serve à casa em Jerusalém.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 1:2"
+    ],
+    "type": "choice",
+    "question": "O que o texto de Esdras 1:1–2 afirma de modo explícito?",
+    "prompt": "O que o texto de Esdras 1:1–2 afirma de modo explícito?",
+    "cue": "O que o texto de Esdras 1:1–2 afirma de modo explícito?",
+    "feedbackCorrect": "Certo: Ciro declara o encargo de edificar a casa em Jerusalém.",
+    "feedbackWrong": {
+      "b": "O texto não fala de recusa; Ciro proclama o encargo.",
+      "c": "Quem move Ciro é Jeová, não um conselho persa.",
+      "d": "O pregão é de viva voz e por escrito, não só oral."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ciro diz que Jeová o encarregou de edificar uma casa em Jerusalém de Judá."
+      },
+      {
+        "id": "b",
+        "text": "Ciro recusa edificar qualquer casa em Jerusalém."
+      },
+      {
+        "id": "c",
+        "text": "O decreto nasce de um conselho persa, sem Jeová."
+      },
+      {
+        "id": "d",
+        "text": "O pregão de Ciro foi só de viva voz, nunca por escrito."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá.",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "id": "esdras-sem-esdras-retorno-01-decreto-de-ciro-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Esdras 1:1–2",
+    "learningObjective": "Reconhecer que o decreto de Ciro cumpre a palavra de Jeová por Jeremias e serve à casa em Jerusalém.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 1:2"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Esdras 1:1–2?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Esdras 1:1–2?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Esdras 1:1–2?",
+    "feedbackCorrect": "Certo: ano de Ciro, movimento de Jeová, encargo da casa.",
+    "feedbackWrong": {
+      "b": "Esse trecho vem depois, no pregão de Ciro.",
+      "c": "Esse trecho abre o texto, no primeiro ano de Ciro."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "No primeiro ano de Ciro, rei da Pérsia"
+      },
+      {
+        "id": "b",
+        "text": "moveu Jeová o espírito de Ciro, rei da Pérsia"
+      },
+      {
+        "id": "c",
+        "text": "encarregou-me de lhe edificar uma casa em Jerusalém de Judá"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá.",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "id": "esdras-sem-esdras-retorno-01-decreto-de-ciro-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Esdras 1:1–2",
+    "learningObjective": "Reconhecer que o decreto de Ciro cumpre a palavra de Jeová por Jeremias e serve à casa em Jerusalém.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 1:2"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"para que se cumprisse a palavra de Jeová por boca de ___\"",
+    "prompt": "Complete a frase: \"para que se cumprisse a palavra de Jeová por boca de ___\"",
+    "cue": "Complete a frase: \"para que se cumprisse a palavra de Jeová por boca de ___\"",
+    "feedbackCorrect": "Certo: a palavra cumprida é a de Jeová por boca de Jeremias.",
+    "feedbackWrong": {
+      "b": "Ciro é o rei movido, não o profeta da palavra cumprida.",
+      "c": "Judá é o território da casa, não a boca da profecia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeremias"
+      },
+      {
+        "id": "b",
+        "text": "Ciro"
+      },
+      {
+        "id": "c",
+        "text": "Judá"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá.",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "id": "esdras-sem-esdras-retorno-01-decreto-de-ciro-05",
+    "template": "para que se cumprisse a palavra de Jeová por boca de ___"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Esdras 1:1–2",
+    "learningObjective": "Reconhecer que o decreto de Ciro cumpre a palavra de Jeová por Jeremias e serve à casa em Jerusalém.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 1:2"
+    ],
+    "type": "connect",
+    "question": "O que Esdras 1:1–2 comunica que se liga a este contexto?",
+    "prompt": "O que Esdras 1:1–2 comunica que se liga a este contexto?",
+    "cue": "O que Esdras 1:1–2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o decreto de Ciro é Jeová cumprindo Jeremias.",
+    "feedbackWrong": {
+      "b": "O texto não trata Ciro como autor independente do plano.",
+      "c": "O encargo é edificar a casa, não impedir o culto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ciro serve à casa de Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Ciro inventa o próprio decreto"
+      },
+      {
+        "id": "c",
+        "text": "Ciro impede o culto em Judá"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá.",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "id": "esdras-sem-esdras-retorno-01-decreto-de-ciro-06",
+    "passageA": {
+      "ref": "Esdras 1:1–2",
+      "text": "moveu Jeová o espírito de Ciro… encarregou-me de lhe edificar uma casa em Jerusalém de Judá."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O decreto de Ciro é Jeová cumprindo Jeremias: até o rei da Pérsia serve à casa em Jerusalém."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Esdras 1:1–2",
+    "learningObjective": "Reconhecer que o decreto de Ciro cumpre a palavra de Jeová por Jeremias e serve à casa em Jerusalém.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 1:2"
+    ],
+    "type": "true_false",
+    "question": "Ciro atribui o decreto só à sua força militar, sem nomear Jeová nem Jerusalém.",
+    "prompt": "Ciro atribui o decreto só à sua força militar, sem nomear Jeová nem Jerusalém.",
+    "cue": "Ciro atribui o decreto só à sua força militar, sem nomear Jeová nem Jerusalém.",
+    "feedbackCorrect": "Certo: Ciro nomeia Jeová, Deus do céu, e a casa em Jerusalém.",
+    "feedbackWrong": {
+      "true": "O pregão cita Jeová, os reinos e o encargo da casa em Jerusalém."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá.",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "id": "esdras-cam-esdras-retorno-01-decreto-de-ciro-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Esdras 1:1–2",
+    "learningObjective": "Reconhecer que o decreto de Ciro cumpre a palavra de Jeová por Jeremias e serve à casa em Jerusalém.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 1:2"
+    ],
+    "type": "tap",
+    "question": "Em Esdras 1:1–2, toque a palavra que falta em \"de viva voz e por escrito, este ___\"?",
+    "prompt": "Em Esdras 1:1–2, toque a palavra que falta em \"de viva voz e por escrito, este ___\"?",
+    "cue": "Em Esdras 1:1–2, toque a palavra que falta em \"de viva voz e por escrito, este ___\"?",
+    "feedbackCorrect": "Exato: o anúncio de Ciro é chamado pregão.",
+    "feedbackWrong": {
+      "b": "Espírito é o que Jeová move, não o anúncio publicado.",
+      "c": "Reinos são o que Jeová deu a Ciro, não o anúncio."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "pregão"
+      },
+      {
+        "id": "b",
+        "text": "espírito"
+      },
+      {
+        "id": "c",
+        "text": "reinos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá.",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "id": "esdras-cam-esdras-retorno-01-decreto-de-ciro-02",
+    "template": "de viva voz e por escrito, este ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Esdras 1:1–2",
+    "learningObjective": "Reconhecer que o decreto de Ciro cumpre a palavra de Jeová por Jeremias e serve à casa em Jerusalém.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 1:2"
+    ],
+    "type": "choice",
+    "question": "Como o texto liga o decreto de Ciro à palavra anterior de Jeová?",
+    "prompt": "Como o texto liga o decreto de Ciro à palavra anterior de Jeová?",
+    "cue": "Como o texto liga o decreto de Ciro à palavra anterior de Jeová?",
+    "feedbackCorrect": "Certo: o decreto existe para que a palavra por Jeremias se cumpra.",
+    "feedbackWrong": {
+      "a": "O texto não descreve Ciro copiando um decreto babilônico.",
+      "c": "Não há recusa do rei; Jeová o move a proclamar.",
+      "d": "O motivo declarado é cumprir Jeremias, não honrar ídolos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ciro copia um decreto babilônico já antigo."
+      },
+      {
+        "id": "b",
+        "text": "O pregão existe para que se cumpra a palavra por Jeremias."
+      },
+      {
+        "id": "c",
+        "text": "Ciro recusa o encargo até Jeremias aparecer na corte."
+      },
+      {
+        "id": "d",
+        "text": "Ciro proclama para honrar os deuses da Pérsia."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá.",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "id": "esdras-cam-esdras-retorno-01-decreto-de-ciro-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Esdras 1:1–2",
+    "learningObjective": "Reconhecer que o decreto de Ciro cumpre a palavra de Jeová por Jeremias e serve à casa em Jerusalém.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 1:2"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Esdras 1:1–2?",
+    "prompt": "Como se encadeiam os eventos de Esdras 1:1–2?",
+    "cue": "Como se encadeiam os eventos de Esdras 1:1–2?",
+    "feedbackCorrect": "Certo: palavra, movimento de Jeová, pregão da casa.",
+    "feedbackWrong": {
+      "b": "O pregão vem depois de Jeová mover Ciro.",
+      "c": "A palavra de Jeremias é o ponto de partida do texto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A palavra de Jeová por boca de Jeremias deve cumprir-se"
+      },
+      {
+        "id": "b",
+        "text": "Jeová move o espírito de Ciro, rei da Pérsia"
+      },
+      {
+        "id": "c",
+        "text": "Ciro proclama o encargo de edificar a casa em Jerusalém"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá.",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "id": "esdras-cam-esdras-retorno-01-decreto-de-ciro-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Esdras 1:1–2",
+    "learningObjective": "Reconhecer que o decreto de Ciro cumpre a palavra de Jeová por Jeremias e serve à casa em Jerusalém.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 1:2"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"encarregou-me de lhe edificar uma casa em ___ de Judá\"",
+    "prompt": "Complete a frase: \"encarregou-me de lhe edificar uma casa em ___ de Judá\"",
+    "cue": "Complete a frase: \"encarregou-me de lhe edificar uma casa em ___ de Judá\"",
+    "feedbackCorrect": "Certo: a casa deve ser edificada em Jerusalém de Judá.",
+    "feedbackWrong": {
+      "b": "Pérsia é o reino de Ciro, não o lugar da casa.",
+      "c": "Céu é o título de Deus, não a cidade da casa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jerusalém"
+      },
+      {
+        "id": "b",
+        "text": "Pérsia"
+      },
+      {
+        "id": "c",
+        "text": "céu"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá.",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "id": "esdras-cam-esdras-retorno-01-decreto-de-ciro-05",
+    "template": "encarregou-me de lhe edificar uma casa em ___ de Judá"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Esdras 1:1–2",
+    "learningObjective": "Reconhecer que o decreto de Ciro cumpre a palavra de Jeová por Jeremias e serve à casa em Jerusalém.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 1:2"
+    ],
+    "type": "connect",
+    "question": "O que Esdras 1:1–2 comunica que se liga a este contexto?",
+    "prompt": "O que Esdras 1:1–2 comunica que se liga a este contexto?",
+    "cue": "O que Esdras 1:1–2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o rei da Pérsia serve ao plano de Jeová para a casa.",
+    "feedbackWrong": {
+      "b": "O texto mostra Ciro servindo, não resistindo.",
+      "c": "Jeová move Ciro; o decreto não é acaso político."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Império persa a serviço de Jeová"
+      },
+      {
+        "id": "b",
+        "text": "Resistência persa contra Jerusalém"
+      },
+      {
+        "id": "c",
+        "text": "Decreto nascido só do acaso"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá.",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "id": "esdras-cam-esdras-retorno-01-decreto-de-ciro-06",
+    "passageA": {
+      "ref": "Esdras 1:2",
+      "text": "Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O decreto de Ciro é Jeová cumprindo Jeremias: até o rei da Pérsia serve à casa em Jerusalém."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Esdras 1:1–2",
+    "learningObjective": "Reconhecer que o decreto de Ciro cumpre a palavra de Jeová por Jeremias e serve à casa em Jerusalém.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 1:2"
+    ],
+    "type": "true_false",
+    "question": "Ciro declara que Jeová, Deus do céu, deu-lhe os reinos e o encarregou de edificar a casa em Jerusalém.",
+    "prompt": "Ciro declara que Jeová, Deus do céu, deu-lhe os reinos e o encarregou de edificar a casa em Jerusalém.",
+    "cue": "Ciro declara que Jeová, Deus do céu, deu-lhe os reinos e o encarregou de edificar a casa em Jerusalém.",
+    "feedbackCorrect": "Certo: o próprio pregão atribui reinos e encargo a Jeová.",
+    "feedbackWrong": {
+      "false": "Esdras 1:2 registra exatamente essa declaração de Ciro."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá.",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "id": "esdras-pro-esdras-retorno-01-decreto-de-ciro-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Esdras 1:1–2",
+    "learningObjective": "Reconhecer que o decreto de Ciro cumpre a palavra de Jeová por Jeremias e serve à casa em Jerusalém.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 1:2"
+    ],
+    "type": "tap",
+    "question": "Em Esdras 1:1–2, toque a palavra que falta em \"deu-me todos os ___ da terra\"?",
+    "prompt": "Em Esdras 1:1–2, toque a palavra que falta em \"deu-me todos os ___ da terra\"?",
+    "cue": "Em Esdras 1:1–2, toque a palavra que falta em \"deu-me todos os ___ da terra\"?",
+    "feedbackCorrect": "Exato: Jeová deu a Ciro todos os reinos da terra.",
+    "feedbackWrong": {
+      "b": "Pregão é o anúncio, não o que Jeová deu.",
+      "c": "Espírito é o que Jeová move, não o que deu."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "reinos"
+      },
+      {
+        "id": "b",
+        "text": "pregão"
+      },
+      {
+        "id": "c",
+        "text": "espírito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá.",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "id": "esdras-pro-esdras-retorno-01-decreto-de-ciro-02",
+    "template": "deu-me todos os ___ da terra"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Esdras 1:1–2",
+    "learningObjective": "Reconhecer que o decreto de Ciro cumpre a palavra de Jeová por Jeremias e serve à casa em Jerusalém.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 1:2"
+    ],
+    "type": "choice",
+    "question": "Qual leitura teológica o texto de Esdras 1:1–2 sustenta?",
+    "prompt": "Qual leitura teológica o texto de Esdras 1:1–2 sustenta?",
+    "cue": "Qual leitura teológica o texto de Esdras 1:1–2 sustenta?",
+    "feedbackCorrect": "Certo: Jeová governa até o rei da Pérsia para cumprir sua palavra.",
+    "feedbackWrong": {
+      "a": "O texto não reduz o decreto a um capricho imperial.",
+      "c": "Ciro reconhece Jeová e o encargo da casa, não o ignora.",
+      "d": "Jeremias é a palavra cumprida, não um conselheiro da corte."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O retorno depende só do humor político de Ciro."
+      },
+      {
+        "id": "b",
+        "text": "Jeová cumpre sua palavra até por um rei da Pérsia."
+      },
+      {
+        "id": "c",
+        "text": "Ciro edifica a casa sem reconhecer Jeová."
+      },
+      {
+        "id": "d",
+        "text": "Jeremias redige o pregão como escriba da corte persa."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá.",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "id": "esdras-pro-esdras-retorno-01-decreto-de-ciro-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Esdras 1:1–2",
+    "learningObjective": "Reconhecer que o decreto de Ciro cumpre a palavra de Jeová por Jeremias e serve à casa em Jerusalém.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 1:2"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Esdras 1:1–2?",
+    "prompt": "Qual sequência revela o sentido de Esdras 1:1–2?",
+    "cue": "Qual sequência revela o sentido de Esdras 1:1–2?",
+    "feedbackCorrect": "Certo: palavra, Senhor que move, casa em Jerusalém.",
+    "feedbackWrong": {
+      "b": "Jeová mover Ciro vem depois da palavra a cumprir.",
+      "c": "A casa em Jerusalém é o alvo final do pregão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A palavra de Jeová por Jeremias está para cumprir-se"
+      },
+      {
+        "id": "b",
+        "text": "Jeová move o espírito do rei da Pérsia"
+      },
+      {
+        "id": "c",
+        "text": "O decreto serve à casa de Jeová em Jerusalém"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá.",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "id": "esdras-pro-esdras-retorno-01-decreto-de-ciro-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Esdras 1:1–2",
+    "learningObjective": "Reconhecer que o decreto de Ciro cumpre a palavra de Jeová por Jeremias e serve à casa em Jerusalém.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 1:2"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"para fazer por todo o seu reino, de viva voz e por ___, este pregão\"",
+    "prompt": "Complete a frase: \"para fazer por todo o seu reino, de viva voz e por ___, este pregão\"",
+    "cue": "Complete a frase: \"para fazer por todo o seu reino, de viva voz e por ___, este pregão\"",
+    "feedbackCorrect": "Certo: o pregão sai de viva voz e por escrito.",
+    "feedbackWrong": {
+      "b": "Boca refere-se a Jeremias, não a esta lacuna.",
+      "c": "Terra é o domínio dado, não o modo do pregão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "escrito"
+      },
+      {
+        "id": "b",
+        "text": "boca"
+      },
+      {
+        "id": "c",
+        "text": "terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá.",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "id": "esdras-pro-esdras-retorno-01-decreto-de-ciro-05",
+    "template": "para fazer por todo o seu reino, de viva voz e por ___, este pregão"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Esdras 1:1–2",
+    "learningObjective": "Reconhecer que o decreto de Ciro cumpre a palavra de Jeová por Jeremias e serve à casa em Jerusalém.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 1:2"
+    ],
+    "type": "connect",
+    "question": "O que Esdras 1:1–2 comunica que se liga a este contexto?",
+    "prompt": "O que Esdras 1:1–2 comunica que se liga a este contexto?",
+    "cue": "O que Esdras 1:1–2 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a soberania de Jeová alcança o rei da Pérsia.",
+    "feedbackWrong": {
+      "b": "O texto não descreve um templo persa em Susa.",
+      "c": "Ciro é instrumento, não dono autônomo da restauração."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Soberania de Jeová sobre impérios"
+      },
+      {
+        "id": "b",
+        "text": "Templo persa transferido a Susa"
+      },
+      {
+        "id": "c",
+        "text": "Autonomia total do rei Ciro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá.",
+    "trail": "esdras",
+    "section": "esdras-retorno-01-decreto-de-ciro",
+    "id": "esdras-pro-esdras-retorno-01-decreto-de-ciro-06",
+    "passageA": {
+      "ref": "Esdras 1:1",
+      "text": "para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O decreto de Ciro é Jeová cumprindo Jeremias: até o rei da Pérsia serve à casa em Jerusalém."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Esdras 3:10–11",
+    "learningObjective": "Ver que o culto recomeça com os alicerces: sacerdotes e levitas louvam segundo a ordem de Davi.",
+    "evidence": [
+      "Esdras 3:10",
+      "Esdras 3:11"
+    ],
+    "type": "true_false",
+    "question": "Os edificadores lançaram os alicerces do templo e sacerdotes com trombetas e levitas de Asafe com címbalos se apresentaram para louvar a Jeová.",
+    "prompt": "Os edificadores lançaram os alicerces do templo e sacerdotes com trombetas e levitas de Asafe com címbalos se apresentaram para louvar a Jeová.",
+    "cue": "Os edificadores lançaram os alicerces do templo e sacerdotes com trombetas e levitas de Asafe com címbalos se apresentaram para louvar a Jeová.",
+    "feedbackCorrect": "Certo: o texto descreve exatamente essa cena de louvor.",
+    "feedbackWrong": {
+      "false": "Esdras 3:10 registra sacerdotes, trombetas, Asafe e címbalos."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Quando os edificadores lançaram os alicerces do templo de Jeová, apresentaram-se os sacerdotes, trajando as suas vestes e com trombetas, e os levitas, filhos de Asafe, com címbalos, para louvarem a Jeová, segundo a ordem de Davi, rei de Israel.",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "id": "esdras-sem-esdras-retorno-02-altar-e-fundamentos-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Esdras 3:10–11",
+    "learningObjective": "Ver que o culto recomeça com os alicerces: sacerdotes e levitas louvam segundo a ordem de Davi.",
+    "evidence": [
+      "Esdras 3:10",
+      "Esdras 3:11"
+    ],
+    "type": "tap",
+    "question": "Em Esdras 3:10–11, toque a palavra que falta em \"Quando os edificadores lançaram os ___ do templo de Jeová\"?",
+    "prompt": "Em Esdras 3:10–11, toque a palavra que falta em \"Quando os edificadores lançaram os ___ do templo de Jeová\"?",
+    "cue": "Em Esdras 3:10–11, toque a palavra que falta em \"Quando os edificadores lançaram os ___ do templo de Jeová\"?",
+    "feedbackCorrect": "Exato: o que se lança são os alicerces do templo.",
+    "feedbackWrong": {
+      "b": "Címbalos são o instrumento dos levitas, não o que se lança.",
+      "c": "Trombetas acompanham os sacerdotes, não o lançamento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "alicerces"
+      },
+      {
+        "id": "b",
+        "text": "címbalos"
+      },
+      {
+        "id": "c",
+        "text": "trombetas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando os edificadores lançaram os alicerces do templo de Jeová, apresentaram-se os sacerdotes, trajando as suas vestes e com trombetas, e os levitas, filhos de Asafe, com címbalos, para louvarem a Jeová, segundo a ordem de Davi, rei de Israel.",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "id": "esdras-sem-esdras-retorno-02-altar-e-fundamentos-02",
+    "template": "Quando os edificadores lançaram os ___ do templo de Jeová"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Esdras 3:10–11",
+    "learningObjective": "Ver que o culto recomeça com os alicerces: sacerdotes e levitas louvam segundo a ordem de Davi.",
+    "evidence": [
+      "Esdras 3:10",
+      "Esdras 3:11"
+    ],
+    "type": "choice",
+    "question": "O que acontece no texto quando os alicerces do templo são lançados?",
+    "prompt": "O que acontece no texto quando os alicerces do templo são lançados?",
+    "cue": "O que acontece no texto quando os alicerces do templo são lançados?",
+    "feedbackCorrect": "Certo: sacerdotes e levitas se apresentam para louvar a Jeová.",
+    "feedbackWrong": {
+      "b": "O texto descreve louvor, não silêncio.",
+      "c": "Quem se apresenta são sacerdotes e levitas, não Ciro.",
+      "d": "Os levitas usam címbalos, segundo Asafe, não arcos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sacerdotes e levitas se apresentam para louvar a Jeová."
+      },
+      {
+        "id": "b",
+        "text": "O povo interrompe toda música até as paredes ficarem prontas."
+      },
+      {
+        "id": "c",
+        "text": "Ciro em pessoa lança a última pedra do templo."
+      },
+      {
+        "id": "d",
+        "text": "Os levitas guardam o recinto com arcos, sem címbalos."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando os edificadores lançaram os alicerces do templo de Jeová, apresentaram-se os sacerdotes, trajando as suas vestes e com trombetas, e os levitas, filhos de Asafe, com címbalos, para louvarem a Jeová, segundo a ordem de Davi, rei de Israel.",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "id": "esdras-sem-esdras-retorno-02-altar-e-fundamentos-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Esdras 3:10–11",
+    "learningObjective": "Ver que o culto recomeça com os alicerces: sacerdotes e levitas louvam segundo a ordem de Davi.",
+    "evidence": [
+      "Esdras 3:10",
+      "Esdras 3:11"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Esdras 3:10–11?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Esdras 3:10–11?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Esdras 3:10–11?",
+    "feedbackCorrect": "Certo: alicerces, sacerdotes com trombetas, levitas de Asafe.",
+    "feedbackWrong": {
+      "b": "Os sacerdotes vêm depois do lançamento dos alicerces.",
+      "c": "Os levitas de Asafe fecham a cena do louvor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "os edificadores lançaram os alicerces do templo de Jeová"
+      },
+      {
+        "id": "b",
+        "text": "apresentaram-se os sacerdotes, trajando as suas vestes e com trombetas"
+      },
+      {
+        "id": "c",
+        "text": "os levitas, filhos de Asafe, com címbalos, para louvarem a Jeová"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando os edificadores lançaram os alicerces do templo de Jeová, apresentaram-se os sacerdotes, trajando as suas vestes e com trombetas, e os levitas, filhos de Asafe, com címbalos, para louvarem a Jeová, segundo a ordem de Davi, rei de Israel.",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "id": "esdras-sem-esdras-retorno-02-altar-e-fundamentos-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Esdras 3:10–11",
+    "learningObjective": "Ver que o culto recomeça com os alicerces: sacerdotes e levitas louvam segundo a ordem de Davi.",
+    "evidence": [
+      "Esdras 3:10",
+      "Esdras 3:11"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"e os levitas, filhos de Asafe, com ___, para louvarem a Jeová\"",
+    "prompt": "Complete a frase: \"e os levitas, filhos de Asafe, com ___, para louvarem a Jeová\"",
+    "cue": "Complete a frase: \"e os levitas, filhos de Asafe, com ___, para louvarem a Jeová\"",
+    "feedbackCorrect": "Certo: os filhos de Asafe louvam com címbalos.",
+    "feedbackWrong": {
+      "b": "Trombetas estão com os sacerdotes, não com Asafe.",
+      "c": "Vestes são o traje dos sacerdotes, não o instrumento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "címbalos"
+      },
+      {
+        "id": "b",
+        "text": "trombetas"
+      },
+      {
+        "id": "c",
+        "text": "vestes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando os edificadores lançaram os alicerces do templo de Jeová, apresentaram-se os sacerdotes, trajando as suas vestes e com trombetas, e os levitas, filhos de Asafe, com címbalos, para louvarem a Jeová, segundo a ordem de Davi, rei de Israel.",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "id": "esdras-sem-esdras-retorno-02-altar-e-fundamentos-05",
+    "template": "e os levitas, filhos de Asafe, com ___, para louvarem a Jeová"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Esdras 3:10–11",
+    "learningObjective": "Ver que o culto recomeça com os alicerces: sacerdotes e levitas louvam segundo a ordem de Davi.",
+    "evidence": [
+      "Esdras 3:10",
+      "Esdras 3:11"
+    ],
+    "type": "connect",
+    "question": "O que Esdras 3:10–11 comunica que se liga a este contexto?",
+    "prompt": "O que Esdras 3:10–11 comunica que se liga a este contexto?",
+    "cue": "O que Esdras 3:10–11 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o culto volta já com o fundamento lançado.",
+    "feedbackWrong": {
+      "b": "Há louvor, não recusa de música.",
+      "c": "O texto descreve alicerces e louvor, não paredes prontas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Culto volta com o fundamento"
+      },
+      {
+        "id": "b",
+        "text": "Música proibida até o teto"
+      },
+      {
+        "id": "c",
+        "text": "Paredes já concluídas em silêncio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando os edificadores lançaram os alicerces do templo de Jeová, apresentaram-se os sacerdotes, trajando as suas vestes e com trombetas, e os levitas, filhos de Asafe, com címbalos, para louvarem a Jeová, segundo a ordem de Davi, rei de Israel.",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "id": "esdras-sem-esdras-retorno-02-altar-e-fundamentos-06",
+    "passageA": {
+      "ref": "Esdras 3:10",
+      "text": "Quando os edificadores lançaram os alicerces do templo de Jeová, apresentaram-se os sacerdotes… e os levitas, filhos de Asafe, com címbalos, para louvarem a Jeová"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Antes das paredes prontas, o povo lança alicerces e louva: o culto volta com o fundamento."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Esdras 3:10–11",
+    "learningObjective": "Ver que o culto recomeça com os alicerces: sacerdotes e levitas louvam segundo a ordem de Davi.",
+    "evidence": [
+      "Esdras 3:10",
+      "Esdras 3:11"
+    ],
+    "type": "true_false",
+    "question": "O louvor nos alicerces segue uma ordem improvisada, sem nenhuma referência a Davi.",
+    "prompt": "O louvor nos alicerces segue uma ordem improvisada, sem nenhuma referência a Davi.",
+    "cue": "O louvor nos alicerces segue uma ordem improvisada, sem nenhuma referência a Davi.",
+    "feedbackCorrect": "Certo: o louvor segue a ordem de Davi, rei de Israel.",
+    "feedbackWrong": {
+      "true": "O texto diz: segundo a ordem de Davi, rei de Israel."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Quando os edificadores lançaram os alicerces do templo de Jeová, apresentaram-se os sacerdotes, trajando as suas vestes e com trombetas, e os levitas, filhos de Asafe, com címbalos, para louvarem a Jeová, segundo a ordem de Davi, rei de Israel.",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "id": "esdras-cam-esdras-retorno-02-altar-e-fundamentos-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Esdras 3:10–11",
+    "learningObjective": "Ver que o culto recomeça com os alicerces: sacerdotes e levitas louvam segundo a ordem de Davi.",
+    "evidence": [
+      "Esdras 3:10",
+      "Esdras 3:11"
+    ],
+    "type": "tap",
+    "question": "Em Esdras 3:10–11, toque a palavra que falta em \"e os levitas, filhos de ___, com címbalos\"?",
+    "prompt": "Em Esdras 3:10–11, toque a palavra que falta em \"e os levitas, filhos de ___, com címbalos\"?",
+    "cue": "Em Esdras 3:10–11, toque a palavra que falta em \"e os levitas, filhos de ___, com címbalos\"?",
+    "feedbackCorrect": "Exato: os levitas são filhos de Asafe.",
+    "feedbackWrong": {
+      "b": "Davi dá a ordem do louvor, não o nome desses levitas.",
+      "c": "Israel é o povo do rei Davi, não o clã dos címbalos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Asafe"
+      },
+      {
+        "id": "b",
+        "text": "Davi"
+      },
+      {
+        "id": "c",
+        "text": "Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando os edificadores lançaram os alicerces do templo de Jeová, apresentaram-se os sacerdotes, trajando as suas vestes e com trombetas, e os levitas, filhos de Asafe, com címbalos, para louvarem a Jeová, segundo a ordem de Davi, rei de Israel.",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "id": "esdras-cam-esdras-retorno-02-altar-e-fundamentos-02",
+    "template": "e os levitas, filhos de ___, com címbalos"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Esdras 3:10–11",
+    "learningObjective": "Ver que o culto recomeça com os alicerces: sacerdotes e levitas louvam segundo a ordem de Davi.",
+    "evidence": [
+      "Esdras 3:10",
+      "Esdras 3:11"
+    ],
+    "type": "choice",
+    "question": "Por que o louvor dos alicerces não é um culto inventado na hora?",
+    "prompt": "Por que o louvor dos alicerces não é um culto inventado na hora?",
+    "cue": "Por que o louvor dos alicerces não é um culto inventado na hora?",
+    "feedbackCorrect": "Certo: o texto ancora o louvor na ordem de Davi.",
+    "feedbackWrong": {
+      "a": "O texto não espera paredes prontas para louvar.",
+      "c": "Não há recusa de címbalos; Asafe os usa no louvor.",
+      "d": "A ordem citada é de Davi, não um rito persa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque o povo só louva quando as paredes estão prontas."
+      },
+      {
+        "id": "b",
+        "text": "Porque o louvor segue a ordem de Davi, rei de Israel."
+      },
+      {
+        "id": "c",
+        "text": "Porque Asafe recusa címbalos até o teto ficar pronto."
+      },
+      {
+        "id": "d",
+        "text": "Porque Ciro impõe um rito persa no lugar de Davi."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Quando os edificadores lançaram os alicerces do templo de Jeová, apresentaram-se os sacerdotes, trajando as suas vestes e com trombetas, e os levitas, filhos de Asafe, com címbalos, para louvarem a Jeová, segundo a ordem de Davi, rei de Israel.",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "id": "esdras-cam-esdras-retorno-02-altar-e-fundamentos-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Esdras 3:10–11",
+    "learningObjective": "Ver que o culto recomeça com os alicerces: sacerdotes e levitas louvam segundo a ordem de Davi.",
+    "evidence": [
+      "Esdras 3:10",
+      "Esdras 3:11"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Esdras 3:10–11?",
+    "prompt": "Como se encadeiam os eventos de Esdras 3:10–11?",
+    "cue": "Como se encadeiam os eventos de Esdras 3:10–11?",
+    "feedbackCorrect": "Certo: fundamento, apresentação litúrgica, louvor segundo Davi.",
+    "feedbackWrong": {
+      "b": "A apresentação dos ministros vem após os alicerces.",
+      "c": "A ordem de Davi qualifica o louvor no fim da cena."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Os edificadores lançam os alicerces do templo"
+      },
+      {
+        "id": "b",
+        "text": "Sacerdotes e levitas se apresentam com instrumentos"
+      },
+      {
+        "id": "c",
+        "text": "O louvor segue a ordem de Davi, rei de Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando os edificadores lançaram os alicerces do templo de Jeová, apresentaram-se os sacerdotes, trajando as suas vestes e com trombetas, e os levitas, filhos de Asafe, com címbalos, para louvarem a Jeová, segundo a ordem de Davi, rei de Israel.",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "id": "esdras-cam-esdras-retorno-02-altar-e-fundamentos-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Esdras 3:10–11",
+    "learningObjective": "Ver que o culto recomeça com os alicerces: sacerdotes e levitas louvam segundo a ordem de Davi.",
+    "evidence": [
+      "Esdras 3:10",
+      "Esdras 3:11"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"apresentaram-se os sacerdotes, trajando as suas vestes e com ___\"",
+    "prompt": "Complete a frase: \"apresentaram-se os sacerdotes, trajando as suas vestes e com ___\"",
+    "cue": "Complete a frase: \"apresentaram-se os sacerdotes, trajando as suas vestes e com ___\"",
+    "feedbackCorrect": "Certo: os sacerdotes se apresentam com trombetas.",
+    "feedbackWrong": {
+      "b": "Címbalos estão com os levitas de Asafe.",
+      "c": "Alicerces são o que os edificadores lançam."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "trombetas"
+      },
+      {
+        "id": "b",
+        "text": "címbalos"
+      },
+      {
+        "id": "c",
+        "text": "alicerces"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando os edificadores lançaram os alicerces do templo de Jeová, apresentaram-se os sacerdotes, trajando as suas vestes e com trombetas, e os levitas, filhos de Asafe, com címbalos, para louvarem a Jeová, segundo a ordem de Davi, rei de Israel.",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "id": "esdras-cam-esdras-retorno-02-altar-e-fundamentos-05",
+    "template": "apresentaram-se os sacerdotes, trajando as suas vestes e com ___"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Esdras 3:10–11",
+    "learningObjective": "Ver que o culto recomeça com os alicerces: sacerdotes e levitas louvam segundo a ordem de Davi.",
+    "evidence": [
+      "Esdras 3:10",
+      "Esdras 3:11"
+    ],
+    "type": "connect",
+    "question": "O que Esdras 3:10–11 comunica que se liga a este contexto?",
+    "prompt": "O que Esdras 3:10–11 comunica que se liga a este contexto?",
+    "cue": "O que Esdras 3:10–11 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o louvor reata a memória de Davi já no fundamento.",
+    "feedbackWrong": {
+      "b": "Há continuidade com Davi, não ruptura total.",
+      "c": "O culto começa com alicerces, não espera o teto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Louvor segundo a memória de Davi"
+      },
+      {
+        "id": "b",
+        "text": "Ruptura total com o culto antigo"
+      },
+      {
+        "id": "c",
+        "text": "Culto adiado até o teto pronto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando os edificadores lançaram os alicerces do templo de Jeová, apresentaram-se os sacerdotes, trajando as suas vestes e com trombetas, e os levitas, filhos de Asafe, com címbalos, para louvarem a Jeová, segundo a ordem de Davi, rei de Israel.",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "id": "esdras-cam-esdras-retorno-02-altar-e-fundamentos-06",
+    "passageA": {
+      "ref": "Esdras 3:10",
+      "text": "para louvarem a Jeová, segundo a ordem de Davi, rei de Israel"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Antes das paredes prontas, o povo lança alicerces e louva: o culto volta com o fundamento."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Esdras 3:10–11",
+    "learningObjective": "Ver que o culto recomeça com os alicerces: sacerdotes e levitas louvam segundo a ordem de Davi.",
+    "evidence": [
+      "Esdras 3:10",
+      "Esdras 3:11"
+    ],
+    "type": "true_false",
+    "question": "O culto da restauração começa no fundamento: louvor segundo Davi quando os alicerces são lançados.",
+    "prompt": "O culto da restauração começa no fundamento: louvor segundo Davi quando os alicerces são lançados.",
+    "cue": "O culto da restauração começa no fundamento: louvor segundo Davi quando os alicerces são lançados.",
+    "feedbackCorrect": "Certo: o texto une alicerces e louvor segundo Davi.",
+    "feedbackWrong": {
+      "false": "Esdras 3:10 junta alicerces, ministros e ordem de Davi."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Quando os edificadores lançaram os alicerces do templo de Jeová, apresentaram-se os sacerdotes, trajando as suas vestes e com trombetas, e os levitas, filhos de Asafe, com címbalos, para louvarem a Jeová, segundo a ordem de Davi, rei de Israel.",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "id": "esdras-pro-esdras-retorno-02-altar-e-fundamentos-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Esdras 3:10–11",
+    "learningObjective": "Ver que o culto recomeça com os alicerces: sacerdotes e levitas louvam segundo a ordem de Davi.",
+    "evidence": [
+      "Esdras 3:10",
+      "Esdras 3:11"
+    ],
+    "type": "tap",
+    "question": "Em Esdras 3:10–11, toque a palavra que falta em \"Quando os ___ lançaram os alicerces do templo de Jeová\"?",
+    "prompt": "Em Esdras 3:10–11, toque a palavra que falta em \"Quando os ___ lançaram os alicerces do templo de Jeová\"?",
+    "cue": "Em Esdras 3:10–11, toque a palavra que falta em \"Quando os ___ lançaram os alicerces do templo de Jeová\"?",
+    "feedbackCorrect": "Exato: são os edificadores quem lançam os alicerces.",
+    "feedbackWrong": {
+      "b": "Sacerdotes se apresentam depois, com trombetas.",
+      "c": "Levitas vêm com címbalos, não lançam os alicerces neste verso."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "edificadores"
+      },
+      {
+        "id": "b",
+        "text": "sacerdotes"
+      },
+      {
+        "id": "c",
+        "text": "levitas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando os edificadores lançaram os alicerces do templo de Jeová, apresentaram-se os sacerdotes, trajando as suas vestes e com trombetas, e os levitas, filhos de Asafe, com címbalos, para louvarem a Jeová, segundo a ordem de Davi, rei de Israel.",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "id": "esdras-pro-esdras-retorno-02-altar-e-fundamentos-02",
+    "template": "Quando os ___ lançaram os alicerces do templo de Jeová"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Esdras 3:10–11",
+    "learningObjective": "Ver que o culto recomeça com os alicerces: sacerdotes e levitas louvam segundo a ordem de Davi.",
+    "evidence": [
+      "Esdras 3:10",
+      "Esdras 3:11"
+    ],
+    "type": "choice",
+    "question": "Qual sentido o lançamento dos alicerces com louvor prepara no leitor?",
+    "prompt": "Qual sentido o lançamento dos alicerces com louvor prepara no leitor?",
+    "cue": "Qual sentido o lançamento dos alicerces com louvor prepara no leitor?",
+    "feedbackCorrect": "Certo: o fundamento já é lugar de culto, não só de pedra.",
+    "feedbackWrong": {
+      "a": "O texto não espera o templo pronto para louvar.",
+      "c": "Há continuidade com Davi, não culto sem memória.",
+      "d": "O louvor é a Jeová, não um rito civil persa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O culto só vale quando o templo está inteiramente pronto."
+      },
+      {
+        "id": "b",
+        "text": "A restauração é fundamento e louvor, não só pedra."
+      },
+      {
+        "id": "c",
+        "text": "O povo inventa um culto sem memória de Davi."
+      },
+      {
+        "id": "d",
+        "text": "O louvor é um rito civil persa sem Jeová."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Quando os edificadores lançaram os alicerces do templo de Jeová, apresentaram-se os sacerdotes, trajando as suas vestes e com trombetas, e os levitas, filhos de Asafe, com címbalos, para louvarem a Jeová, segundo a ordem de Davi, rei de Israel.",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "id": "esdras-pro-esdras-retorno-02-altar-e-fundamentos-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Esdras 3:10–11",
+    "learningObjective": "Ver que o culto recomeça com os alicerces: sacerdotes e levitas louvam segundo a ordem de Davi.",
+    "evidence": [
+      "Esdras 3:10",
+      "Esdras 3:11"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Esdras 3:10–11?",
+    "prompt": "Qual sequência revela o sentido de Esdras 3:10–11?",
+    "cue": "Qual sequência revela o sentido de Esdras 3:10–11?",
+    "feedbackCorrect": "Certo: fundamento, ministros, memória de Davi.",
+    "feedbackWrong": {
+      "b": "Os ministros entram depois do fundamento lançado.",
+      "c": "A ordem de Davi dá o sentido do louvor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O templo recebe alicerces, ainda sem paredes prontas"
+      },
+      {
+        "id": "b",
+        "text": "Sacerdotes e levitas ocupam o lugar com louvor"
+      },
+      {
+        "id": "c",
+        "text": "O culto se ancora na ordem de Davi, rei de Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando os edificadores lançaram os alicerces do templo de Jeová, apresentaram-se os sacerdotes, trajando as suas vestes e com trombetas, e os levitas, filhos de Asafe, com címbalos, para louvarem a Jeová, segundo a ordem de Davi, rei de Israel.",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "id": "esdras-pro-esdras-retorno-02-altar-e-fundamentos-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Esdras 3:10–11",
+    "learningObjective": "Ver que o culto recomeça com os alicerces: sacerdotes e levitas louvam segundo a ordem de Davi.",
+    "evidence": [
+      "Esdras 3:10",
+      "Esdras 3:11"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"para louvarem a Jeová, segundo a ordem de ___, rei de Israel\"",
+    "prompt": "Complete a frase: \"para louvarem a Jeová, segundo a ordem de ___, rei de Israel\"",
+    "cue": "Complete a frase: \"para louvarem a Jeová, segundo a ordem de ___, rei de Israel\"",
+    "feedbackCorrect": "Certo: a ordem do louvor é a de Davi.",
+    "feedbackWrong": {
+      "b": "Asafe nomeia os levitas, não a ordem do rei.",
+      "c": "Címbalos são o instrumento, não quem ordena o louvor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Davi"
+      },
+      {
+        "id": "b",
+        "text": "Asafe"
+      },
+      {
+        "id": "c",
+        "text": "címbalos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando os edificadores lançaram os alicerces do templo de Jeová, apresentaram-se os sacerdotes, trajando as suas vestes e com trombetas, e os levitas, filhos de Asafe, com címbalos, para louvarem a Jeová, segundo a ordem de Davi, rei de Israel.",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "id": "esdras-pro-esdras-retorno-02-altar-e-fundamentos-05",
+    "template": "para louvarem a Jeová, segundo a ordem de ___, rei de Israel"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Esdras 3:10–11",
+    "learningObjective": "Ver que o culto recomeça com os alicerces: sacerdotes e levitas louvam segundo a ordem de Davi.",
+    "evidence": [
+      "Esdras 3:10",
+      "Esdras 3:11"
+    ],
+    "type": "connect",
+    "question": "O que Esdras 3:10–11 comunica que se liga a este contexto?",
+    "prompt": "O que Esdras 3:10–11 comunica que se liga a este contexto?",
+    "cue": "O que Esdras 3:10–11 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o fundamento já é altar de louvor, não espera o prédio.",
+    "feedbackWrong": {
+      "b": "O texto não descreve um palácio persa.",
+      "c": "Há louvor no fundamento, não silêncio até o fim da obra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fundamento já é lugar de culto"
+      },
+      {
+        "id": "b",
+        "text": "Palácio persa no lugar do templo"
+      },
+      {
+        "id": "c",
+        "text": "Silêncio obrigatório na obra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Quando os edificadores lançaram os alicerces do templo de Jeová, apresentaram-se os sacerdotes, trajando as suas vestes e com trombetas, e os levitas, filhos de Asafe, com címbalos, para louvarem a Jeová, segundo a ordem de Davi, rei de Israel.",
+    "trail": "esdras",
+    "section": "esdras-retorno-02-altar-e-fundamentos",
+    "id": "esdras-pro-esdras-retorno-02-altar-e-fundamentos-06",
+    "passageA": {
+      "ref": "Esdras 3:10",
+      "text": "lançaram os alicerces do templo de Jeová… para louvarem a Jeová, segundo a ordem de Davi"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Antes das paredes prontas, o povo lança alicerces e louva: o culto volta com o fundamento."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Esdras 7:10",
+    "learningObjective": "Perceber que Esdras prepara o coração para buscar, cumprir e ensinar a lei de Jeová em Israel.",
+    "evidence": [
+      "Esdras 7:10"
+    ],
+    "type": "true_false",
+    "question": "Esdras tinha preparado o seu coração para buscar a lei de Jeová e a cumprir.",
+    "prompt": "Esdras tinha preparado o seu coração para buscar a lei de Jeová e a cumprir.",
+    "cue": "Esdras tinha preparado o seu coração para buscar a lei de Jeová e a cumprir.",
+    "feedbackCorrect": "Certo: o verso começa com o coração preparado para buscar e cumprir.",
+    "feedbackWrong": {
+      "false": "Esdras 7:10 diz exatamente isso sobre o coração de Esdras."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "id": "esdras-sem-esdras-reforma-es-01-esdras-e-a-lei-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Esdras 7:10",
+    "learningObjective": "Perceber que Esdras prepara o coração para buscar, cumprir e ensinar a lei de Jeová em Israel.",
+    "evidence": [
+      "Esdras 7:10"
+    ],
+    "type": "tap",
+    "question": "Em Esdras 7:10, toque a palavra que falta em \"Porque tinha ___ o seu coração para buscar a lei de Jeová\"?",
+    "prompt": "Em Esdras 7:10, toque a palavra que falta em \"Porque tinha ___ o seu coração para buscar a lei de Jeová\"?",
+    "cue": "Em Esdras 7:10, toque a palavra que falta em \"Porque tinha ___ o seu coração para buscar a lei de Jeová\"?",
+    "feedbackCorrect": "Exato: o coração de Esdras estava preparado.",
+    "feedbackWrong": {
+      "b": "Ensinar vem no fim do verso, não nesta lacuna.",
+      "c": "Cumprir é o segundo verbo, depois de buscar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "preparado"
+      },
+      {
+        "id": "b",
+        "text": "ensinar"
+      },
+      {
+        "id": "c",
+        "text": "cumprir"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "id": "esdras-sem-esdras-reforma-es-01-esdras-e-a-lei-02",
+    "template": "Porque tinha ___ o seu coração para buscar a lei de Jeová"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Esdras 7:10",
+    "learningObjective": "Perceber que Esdras prepara o coração para buscar, cumprir e ensinar a lei de Jeová em Israel.",
+    "evidence": [
+      "Esdras 7:10"
+    ],
+    "type": "choice",
+    "question": "O que Esdras 7:10 afirma de modo explícito sobre Esdras?",
+    "prompt": "O que Esdras 7:10 afirma de modo explícito sobre Esdras?",
+    "cue": "O que Esdras 7:10 afirma de modo explícito sobre Esdras?",
+    "feedbackCorrect": "Certo: o coração preparado busca, cumpre e ensina a lei.",
+    "feedbackWrong": {
+      "b": "O texto inclui cumprir e ensinar, não só copiar.",
+      "c": "O ensino é em Israel, não a recusa da lei.",
+      "d": "Há preparação do coração, não abandono da lei."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Preparou o coração para buscar, cumprir e ensinar a lei."
+      },
+      {
+        "id": "b",
+        "text": "Limitou-se a copiar a lei, sem cumpri-la nem ensiná-la."
+      },
+      {
+        "id": "c",
+        "text": "Recusou ensinar estatutos e juízos em Israel."
+      },
+      {
+        "id": "d",
+        "text": "Abandonou a lei de Jeová para servir na corte persa."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "id": "esdras-sem-esdras-reforma-es-01-esdras-e-a-lei-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Esdras 7:10",
+    "learningObjective": "Perceber que Esdras prepara o coração para buscar, cumprir e ensinar a lei de Jeová em Israel.",
+    "evidence": [
+      "Esdras 7:10"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Esdras 7:10?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Esdras 7:10?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Esdras 7:10?",
+    "feedbackCorrect": "Certo: preparar o coração, buscar e cumprir, ensinar em Israel.",
+    "feedbackWrong": {
+      "b": "Buscar e cumprir vêm depois da preparação.",
+      "c": "Ensinar estatutos e juízos fecha o verso."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "tinha preparado o seu coração"
+      },
+      {
+        "id": "b",
+        "text": "para buscar a lei de Jeová e a cumprir"
+      },
+      {
+        "id": "c",
+        "text": "para ensinar em Israel estatutos e juízos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "id": "esdras-sem-esdras-reforma-es-01-esdras-e-a-lei-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Esdras 7:10",
+    "learningObjective": "Perceber que Esdras prepara o coração para buscar, cumprir e ensinar a lei de Jeová em Israel.",
+    "evidence": [
+      "Esdras 7:10"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"e para ___ em Israel estatutos e juízos\"",
+    "prompt": "Complete a frase: \"e para ___ em Israel estatutos e juízos\"",
+    "cue": "Complete a frase: \"e para ___ em Israel estatutos e juízos\"",
+    "feedbackCorrect": "Certo: Esdras se dispõe a ensinar em Israel.",
+    "feedbackWrong": {
+      "b": "Buscar aparece antes, ligado à lei.",
+      "c": "Preparar descreve o coração, não esta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "ensinar"
+      },
+      {
+        "id": "b",
+        "text": "buscar"
+      },
+      {
+        "id": "c",
+        "text": "preparado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "id": "esdras-sem-esdras-reforma-es-01-esdras-e-a-lei-05",
+    "template": "e para ___ em Israel estatutos e juízos"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Esdras 7:10",
+    "learningObjective": "Perceber que Esdras prepara o coração para buscar, cumprir e ensinar a lei de Jeová em Israel.",
+    "evidence": [
+      "Esdras 7:10"
+    ],
+    "type": "connect",
+    "question": "O que Esdras 7:10 comunica que se liga a este contexto?",
+    "prompt": "O que Esdras 7:10 comunica que se liga a este contexto?",
+    "cue": "O que Esdras 7:10 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a reforma começa no coração preparado para a Lei.",
+    "feedbackWrong": {
+      "b": "O texto une buscar, cumprir e ensinar, não só copiar.",
+      "c": "Há cumprimento, não recusa da lei."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Coração preparado para a Lei"
+      },
+      {
+        "id": "b",
+        "text": "Cópia da lei sem prática"
+      },
+      {
+        "id": "c",
+        "text": "Recusa de ensinar em Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "id": "esdras-sem-esdras-reforma-es-01-esdras-e-a-lei-06",
+    "passageA": {
+      "ref": "Esdras 7:10",
+      "text": "tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Esdras não só traz a Lei: prepara o coração para buscar, cumprir e ensinar."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Esdras 7:10",
+    "learningObjective": "Perceber que Esdras prepara o coração para buscar, cumprir e ensinar a lei de Jeová em Israel.",
+    "evidence": [
+      "Esdras 7:10"
+    ],
+    "type": "true_false",
+    "question": "Esdras prepara o coração apenas para ensinar, sem cumprir a lei de Jeová.",
+    "prompt": "Esdras prepara o coração apenas para ensinar, sem cumprir a lei de Jeová.",
+    "cue": "Esdras prepara o coração apenas para ensinar, sem cumprir a lei de Jeová.",
+    "feedbackCorrect": "Certo: o texto une buscar, cumprir e ensinar.",
+    "feedbackWrong": {
+      "true": "Esdras 7:10 inclui cumprir a lei, não só ensiná-la."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "id": "esdras-cam-esdras-reforma-es-01-esdras-e-a-lei-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Esdras 7:10",
+    "learningObjective": "Perceber que Esdras prepara o coração para buscar, cumprir e ensinar a lei de Jeová em Israel.",
+    "evidence": [
+      "Esdras 7:10"
+    ],
+    "type": "tap",
+    "question": "Em Esdras 7:10, toque a palavra que falta em \"tinha preparado o seu ___ para buscar a lei de Jeová\"?",
+    "prompt": "Em Esdras 7:10, toque a palavra que falta em \"tinha preparado o seu ___ para buscar a lei de Jeová\"?",
+    "cue": "Em Esdras 7:10, toque a palavra que falta em \"tinha preparado o seu ___ para buscar a lei de Jeová\"?",
+    "feedbackCorrect": "Exato: o que se prepara é o coração.",
+    "feedbackWrong": {
+      "b": "Lei é o objeto da busca, não o que se prepara.",
+      "c": "Israel é o lugar do ensino, não o que se prepara."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "coração"
+      },
+      {
+        "id": "b",
+        "text": "lei"
+      },
+      {
+        "id": "c",
+        "text": "Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "id": "esdras-cam-esdras-reforma-es-01-esdras-e-a-lei-02",
+    "template": "tinha preparado o seu ___ para buscar a lei de Jeová"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Esdras 7:10",
+    "learningObjective": "Perceber que Esdras prepara o coração para buscar, cumprir e ensinar a lei de Jeová em Israel.",
+    "evidence": [
+      "Esdras 7:10"
+    ],
+    "type": "choice",
+    "question": "Como Esdras 7:10 encadeia a relação de Esdras com a lei?",
+    "prompt": "Como Esdras 7:10 encadeia a relação de Esdras com a lei?",
+    "cue": "Como Esdras 7:10 encadeia a relação de Esdras com a lei?",
+    "feedbackCorrect": "Certo: interior (coração), prática (cumprir) e ensino (Israel).",
+    "feedbackWrong": {
+      "a": "O texto começa no coração, não num cargo persa.",
+      "c": "Há três verbos, não só memorização.",
+      "d": "O ensino visa Israel, não a corte persa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Começa pelo cargo persa e depois menciona a lei."
+      },
+      {
+        "id": "b",
+        "text": "Primeiro o coração, depois cumprir, depois ensinar."
+      },
+      {
+        "id": "c",
+        "text": "Reduz tudo a memorizar nomes da genealogia."
+      },
+      {
+        "id": "d",
+        "text": "Ensina a lei só na corte persa, nunca em Israel."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "id": "esdras-cam-esdras-reforma-es-01-esdras-e-a-lei-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Esdras 7:10",
+    "learningObjective": "Perceber que Esdras prepara o coração para buscar, cumprir e ensinar a lei de Jeová em Israel.",
+    "evidence": [
+      "Esdras 7:10"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Esdras 7:10?",
+    "prompt": "Como se encadeiam os eventos de Esdras 7:10?",
+    "cue": "Como se encadeiam os eventos de Esdras 7:10?",
+    "feedbackCorrect": "Certo: coração, cumprimento, ensino em Israel.",
+    "feedbackWrong": {
+      "b": "Cumprir a lei vem depois da preparação.",
+      "c": "Ensinar estatutos fecha o encadeamento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O coração é preparado para a lei de Jeová"
+      },
+      {
+        "id": "b",
+        "text": "A lei é buscada e cumprida"
+      },
+      {
+        "id": "c",
+        "text": "Estatutos e juízos são ensinados em Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "id": "esdras-cam-esdras-reforma-es-01-esdras-e-a-lei-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Esdras 7:10",
+    "learningObjective": "Perceber que Esdras prepara o coração para buscar, cumprir e ensinar a lei de Jeová em Israel.",
+    "evidence": [
+      "Esdras 7:10"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"para ensinar em Israel ___ e juízos\"",
+    "prompt": "Complete a frase: \"para ensinar em Israel ___ e juízos\"",
+    "cue": "Complete a frase: \"para ensinar em Israel ___ e juízos\"",
+    "feedbackCorrect": "Certo: o ensino inclui estatutos e juízos.",
+    "feedbackWrong": {
+      "b": "Coração é o que se prepara, não o que se ensina aqui.",
+      "c": "Lei aparece antes, na busca, não nesta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "estatutos"
+      },
+      {
+        "id": "b",
+        "text": "coração"
+      },
+      {
+        "id": "c",
+        "text": "lei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "id": "esdras-cam-esdras-reforma-es-01-esdras-e-a-lei-05",
+    "template": "para ensinar em Israel ___ e juízos"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Esdras 7:10",
+    "learningObjective": "Perceber que Esdras prepara o coração para buscar, cumprir e ensinar a lei de Jeová em Israel.",
+    "evidence": [
+      "Esdras 7:10"
+    ],
+    "type": "connect",
+    "question": "O que Esdras 7:10 comunica que se liga a este contexto?",
+    "prompt": "O que Esdras 7:10 comunica que se liga a este contexto?",
+    "cue": "O que Esdras 7:10 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: a reforma une interior, prática e ensino.",
+    "feedbackWrong": {
+      "b": "O texto não descreve um escriba ocioso.",
+      "c": "Há cumprimento, não lei só no discurso."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Buscar, cumprir e ensinar"
+      },
+      {
+        "id": "b",
+        "text": "Escriba ocioso na corte"
+      },
+      {
+        "id": "c",
+        "text": "Lei só no discurso público"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "id": "esdras-cam-esdras-reforma-es-01-esdras-e-a-lei-06",
+    "passageA": {
+      "ref": "Esdras 7:10",
+      "text": "para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Esdras não só traz a Lei: prepara o coração para buscar, cumprir e ensinar."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Esdras 7:10",
+    "learningObjective": "Perceber que Esdras prepara o coração para buscar, cumprir e ensinar a lei de Jeová em Israel.",
+    "evidence": [
+      "Esdras 7:10"
+    ],
+    "type": "true_false",
+    "question": "Buscar, cumprir e ensinar formam o propósito para o qual Esdras preparou o coração.",
+    "prompt": "Buscar, cumprir e ensinar formam o propósito para o qual Esdras preparou o coração.",
+    "cue": "Buscar, cumprir e ensinar formam o propósito para o qual Esdras preparou o coração.",
+    "feedbackCorrect": "Certo: os três verbos descrevem o propósito do coração preparado.",
+    "feedbackWrong": {
+      "false": "Esdras 7:10 lista buscar, cumprir e ensinar juntos."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "id": "esdras-pro-esdras-reforma-es-01-esdras-e-a-lei-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Esdras 7:10",
+    "learningObjective": "Perceber que Esdras prepara o coração para buscar, cumprir e ensinar a lei de Jeová em Israel.",
+    "evidence": [
+      "Esdras 7:10"
+    ],
+    "type": "tap",
+    "question": "Em Esdras 7:10, toque a palavra que falta em \"para buscar a lei de Jeová e a ___ e para ensinar\"?",
+    "prompt": "Em Esdras 7:10, toque a palavra que falta em \"para buscar a lei de Jeová e a ___ e para ensinar\"?",
+    "cue": "Em Esdras 7:10, toque a palavra que falta em \"para buscar a lei de Jeová e a ___ e para ensinar\"?",
+    "feedbackCorrect": "Exato: entre buscar e ensinar está cumprir.",
+    "feedbackWrong": {
+      "b": "Preparar descreve o coração no início do verso.",
+      "c": "Buscar já aparece antes desta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "cumprir"
+      },
+      {
+        "id": "b",
+        "text": "preparado"
+      },
+      {
+        "id": "c",
+        "text": "buscar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "id": "esdras-pro-esdras-reforma-es-01-esdras-e-a-lei-02",
+    "template": "para buscar a lei de Jeová e a ___ e para ensinar"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Esdras 7:10",
+    "learningObjective": "Perceber que Esdras prepara o coração para buscar, cumprir e ensinar a lei de Jeová em Israel.",
+    "evidence": [
+      "Esdras 7:10"
+    ],
+    "type": "choice",
+    "question": "Qual leitura de Esdras 7:10 o texto sustenta sobre a reforma?",
+    "prompt": "Qual leitura de Esdras 7:10 o texto sustenta sobre a reforma?",
+    "cue": "Qual leitura de Esdras 7:10 o texto sustenta sobre a reforma?",
+    "feedbackCorrect": "Certo: a Lei molda o interior antes de moldar Israel.",
+    "feedbackWrong": {
+      "a": "O verso não reduz Esdras a um cargo imperial.",
+      "c": "Há cumprimento, não lei só para os outros.",
+      "d": "O ensino é em Israel, com estatutos e juízos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Esdras reformou Israel só por decreto do rei."
+      },
+      {
+        "id": "b",
+        "text": "A reforma começa no coração antes de ensinar Israel."
+      },
+      {
+        "id": "c",
+        "text": "A lei vale para o povo, mas não para quem ensina."
+      },
+      {
+        "id": "d",
+        "text": "Estatutos e juízos ficam de fora do ensino de Esdras."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "id": "esdras-pro-esdras-reforma-es-01-esdras-e-a-lei-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Esdras 7:10",
+    "learningObjective": "Perceber que Esdras prepara o coração para buscar, cumprir e ensinar a lei de Jeová em Israel.",
+    "evidence": [
+      "Esdras 7:10"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Esdras 7:10?",
+    "prompt": "Qual sequência revela o sentido de Esdras 7:10?",
+    "cue": "Qual sequência revela o sentido de Esdras 7:10?",
+    "feedbackCorrect": "Certo: interior, obediência, formação de Israel.",
+    "feedbackWrong": {
+      "b": "A obediência vem depois do coração preparado.",
+      "c": "O ensino em Israel é o desfecho do propósito."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O coração se dispõe diante da lei de Jeová"
+      },
+      {
+        "id": "b",
+        "text": "A lei é cumprida, não só admirada"
+      },
+      {
+        "id": "c",
+        "text": "Israel recebe ensino de estatutos e juízos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "id": "esdras-pro-esdras-reforma-es-01-esdras-e-a-lei-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Esdras 7:10",
+    "learningObjective": "Perceber que Esdras prepara o coração para buscar, cumprir e ensinar a lei de Jeová em Israel.",
+    "evidence": [
+      "Esdras 7:10"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"para ensinar em Israel estatutos e ___\"",
+    "prompt": "Complete a frase: \"para ensinar em Israel estatutos e ___\"",
+    "cue": "Complete a frase: \"para ensinar em Israel estatutos e ___\"",
+    "feedbackCorrect": "Certo: junto aos estatutos estão os juízos.",
+    "feedbackWrong": {
+      "b": "Coração é o que se prepara no início.",
+      "c": "Lei é o objeto da busca, não esta lacuna final."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "juízos"
+      },
+      {
+        "id": "b",
+        "text": "coração"
+      },
+      {
+        "id": "c",
+        "text": "lei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "id": "esdras-pro-esdras-reforma-es-01-esdras-e-a-lei-05",
+    "template": "para ensinar em Israel estatutos e ___"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Esdras 7:10",
+    "learningObjective": "Perceber que Esdras prepara o coração para buscar, cumprir e ensinar a lei de Jeová em Israel.",
+    "evidence": [
+      "Esdras 7:10"
+    ],
+    "type": "connect",
+    "question": "O que Esdras 7:10 comunica que se liga a este contexto?",
+    "prompt": "O que Esdras 7:10 comunica que se liga a este contexto?",
+    "cue": "O que Esdras 7:10 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: quem ensina Israel primeiro se deixa formar pela Lei.",
+    "feedbackWrong": {
+      "b": "Há formação interior, não só transporte de um rolo.",
+      "c": "O texto une cumprir e ensinar, não os separa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Formação interior antes do ensino"
+      },
+      {
+        "id": "b",
+        "text": "Transporte de um rolo vazio"
+      },
+      {
+        "id": "c",
+        "text": "Ensino sem cumprimento pessoal"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-01-esdras-e-a-lei",
+    "id": "esdras-pro-esdras-reforma-es-01-esdras-e-a-lei-06",
+    "passageA": {
+      "ref": "Esdras 7:10",
+      "text": "tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Esdras não só traz a Lei: prepara o coração para buscar, cumprir e ensinar."
+    }
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Esdras 1:1; 7:10",
+    "learningObjective": "Unir decreto de Deus e coração preparado: restauração é volta sob Ciro e reforma sob a Lei.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 7:10"
+    ],
+    "type": "true_false",
+    "question": "Jeová move o espírito de Ciro no primeiro ano, e Esdras prepara o coração para a lei.",
+    "prompt": "Jeová move o espírito de Ciro no primeiro ano, e Esdras prepara o coração para a lei.",
+    "cue": "Jeová move o espírito de Ciro no primeiro ano, e Esdras prepara o coração para a lei.",
+    "feedbackCorrect": "Certo: os dois textos juntas descrevem decreto e coração.",
+    "feedbackWrong": {
+      "false": "Esdras 1:1 e 7:10 registram exatamente esses dois movimentos."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá. Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "id": "esdras-sem-esdras-reforma-es-02-desafio-restauracao-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Esdras 1:1; 7:10",
+    "learningObjective": "Unir decreto de Deus e coração preparado: restauração é volta sob Ciro e reforma sob a Lei.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 7:10"
+    ],
+    "type": "tap",
+    "question": "Em Esdras 1:1; 7:10, toque a palavra que falta em \"moveu Jeová o espírito de ___, rei da Pérsia\"?",
+    "prompt": "Em Esdras 1:1; 7:10, toque a palavra que falta em \"moveu Jeová o espírito de ___, rei da Pérsia\"?",
+    "cue": "Em Esdras 1:1; 7:10, toque a palavra que falta em \"moveu Jeová o espírito de ___, rei da Pérsia\"?",
+    "feedbackCorrect": "Exato: Jeová move o espírito de Ciro.",
+    "feedbackWrong": {
+      "b": "Jeremias é a boca da palavra cumprida, não o rei movido.",
+      "c": "Israel é o lugar do ensino de Esdras, não o rei da Pérsia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ciro"
+      },
+      {
+        "id": "b",
+        "text": "Jeremias"
+      },
+      {
+        "id": "c",
+        "text": "Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá. Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "id": "esdras-sem-esdras-reforma-es-02-desafio-restauracao-02",
+    "template": "moveu Jeová o espírito de ___, rei da Pérsia"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Esdras 1:1; 7:10",
+    "learningObjective": "Unir decreto de Deus e coração preparado: restauração é volta sob Ciro e reforma sob a Lei.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 7:10"
+    ],
+    "type": "choice",
+    "question": "O que os dois trechos afirmam juntos de modo explícito?",
+    "prompt": "O que os dois trechos afirmam juntos de modo explícito?",
+    "cue": "O que os dois trechos afirmam juntos de modo explícito?",
+    "feedbackCorrect": "Certo: decreto de Ciro e coração de Esdras para a lei.",
+    "feedbackWrong": {
+      "b": "Há movimento de Jeová e preparação, não só lista de reis.",
+      "c": "Esdras ensina, não recusa a lei.",
+      "d": "Ciro é encarregado de edificar, não de impedir a casa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová move Ciro e Esdras prepara o coração para a lei."
+      },
+      {
+        "id": "b",
+        "text": "Os textos só listam reis, sem lei e sem casa."
+      },
+      {
+        "id": "c",
+        "text": "Esdras recusa buscar a lei de Jeová em Israel."
+      },
+      {
+        "id": "d",
+        "text": "Ciro impede a edificação da casa em Jerusalém."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá. Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "id": "esdras-sem-esdras-reforma-es-02-desafio-restauracao-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Esdras 1:1; 7:10",
+    "learningObjective": "Unir decreto de Deus e coração preparado: restauração é volta sob Ciro e reforma sob a Lei.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 7:10"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Esdras 1:1; 7:10?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Esdras 1:1; 7:10?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Esdras 1:1; 7:10?",
+    "feedbackCorrect": "Certo: Ciro movido, casa proclamada, coração para a lei.",
+    "feedbackWrong": {
+      "b": "O pregão da casa vem no decreto de Ciro.",
+      "c": "O coração de Esdras fecha o arco da restauração."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová move o espírito de Ciro, rei da Pérsia"
+      },
+      {
+        "id": "b",
+        "text": "Ciro é encarregado de edificar uma casa em Jerusalém"
+      },
+      {
+        "id": "c",
+        "text": "Esdras prepara o coração para buscar, cumprir e ensinar a lei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá. Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "id": "esdras-sem-esdras-reforma-es-02-desafio-restauracao-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Esdras 1:1; 7:10",
+    "learningObjective": "Unir decreto de Deus e coração preparado: restauração é volta sob Ciro e reforma sob a Lei.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 7:10"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"para buscar a lei de Jeová e a ___ e para ensinar em Israel\"",
+    "prompt": "Complete a frase: \"para buscar a lei de Jeová e a ___ e para ensinar em Israel\"",
+    "cue": "Complete a frase: \"para buscar a lei de Jeová e a ___ e para ensinar em Israel\"",
+    "feedbackCorrect": "Certo: entre buscar e ensinar está cumprir.",
+    "feedbackWrong": {
+      "b": "Edificar é o encargo de Ciro, não este verbo de Esdras.",
+      "c": "Ensinar vem depois desta lacuna."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "cumprir"
+      },
+      {
+        "id": "b",
+        "text": "edificar"
+      },
+      {
+        "id": "c",
+        "text": "ensinar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá. Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "id": "esdras-sem-esdras-reforma-es-02-desafio-restauracao-05",
+    "template": "para buscar a lei de Jeová e a ___ e para ensinar em Israel"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Esdras 1:1; 7:10",
+    "learningObjective": "Unir decreto de Deus e coração preparado: restauração é volta sob Ciro e reforma sob a Lei.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 7:10"
+    ],
+    "type": "connect",
+    "question": "O que Esdras 1:1; 7:10 comunica que se liga a este contexto?",
+    "prompt": "O que Esdras 1:1; 7:10 comunica que se liga a este contexto?",
+    "cue": "O que Esdras 1:1; 7:10 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: restauração junta volta sob Ciro e reforma da Lei.",
+    "feedbackWrong": {
+      "b": "Os textos não separam decreto e coração.",
+      "c": "Há casa e lei, não só lista de reis."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Decreto e coração preparados"
+      },
+      {
+        "id": "b",
+        "text": "Volta sem reforma da Lei"
+      },
+      {
+        "id": "c",
+        "text": "Lista de reis sem propósito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá. Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "id": "esdras-sem-esdras-reforma-es-02-desafio-restauracao-06",
+    "passageA": {
+      "ref": "Esdras 1:1; 7:10",
+      "text": "moveu Jeová o espírito de Ciro… tinha preparado o seu coração para buscar a lei de Jeová"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Restauração é decreto de Deus e coração preparado para a Lei — volta e reforma juntas."
+    }
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Esdras 1:1; 7:10",
+    "learningObjective": "Unir decreto de Deus e coração preparado: restauração é volta sob Ciro e reforma sob a Lei.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 7:10"
+    ],
+    "type": "true_false",
+    "question": "A restauração em Esdras é só decreto político; o coração preparado para a Lei fica de fora.",
+    "prompt": "A restauração em Esdras é só decreto político; o coração preparado para a Lei fica de fora.",
+    "cue": "A restauração em Esdras é só decreto político; o coração preparado para a Lei fica de fora.",
+    "feedbackCorrect": "Certo: 7:10 coloca o coração preparado no centro da reforma.",
+    "feedbackWrong": {
+      "true": "Esdras 7:10 mostra o coração preparado junto ao decreto de 1:1."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá. Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "id": "esdras-cam-esdras-reforma-es-02-desafio-restauracao-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Esdras 1:1; 7:10",
+    "learningObjective": "Unir decreto de Deus e coração preparado: restauração é volta sob Ciro e reforma sob a Lei.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 7:10"
+    ],
+    "type": "tap",
+    "question": "Em Esdras 1:1; 7:10, toque a palavra que falta em \"encarregou-me de lhe edificar uma ___ em Jerusalém\"?",
+    "prompt": "Em Esdras 1:1; 7:10, toque a palavra que falta em \"encarregou-me de lhe edificar uma ___ em Jerusalém\"?",
+    "cue": "Em Esdras 1:1; 7:10, toque a palavra que falta em \"encarregou-me de lhe edificar uma ___ em Jerusalém\"?",
+    "feedbackCorrect": "Exato: o encargo de Ciro é edificar uma casa.",
+    "feedbackWrong": {
+      "b": "Lei é o objeto da busca de Esdras, não o edifício.",
+      "c": "Coração é o que Esdras prepara, não o que Ciro edifica."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "casa"
+      },
+      {
+        "id": "b",
+        "text": "lei"
+      },
+      {
+        "id": "c",
+        "text": "coração"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá. Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "id": "esdras-cam-esdras-reforma-es-02-desafio-restauracao-02",
+    "template": "encarregou-me de lhe edificar uma ___ em Jerusalém"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Esdras 1:1; 7:10",
+    "learningObjective": "Unir decreto de Deus e coração preparado: restauração é volta sob Ciro e reforma sob a Lei.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 7:10"
+    ],
+    "type": "choice",
+    "question": "Como os dois textos se relacionam na restauração?",
+    "prompt": "Como os dois textos se relacionam na restauração?",
+    "cue": "Como os dois textos se relacionam na restauração?",
+    "feedbackCorrect": "Certo: Jeová abre o caminho e Esdras forma o povo na Lei.",
+    "feedbackWrong": {
+      "a": "O decreto não substitui o coração preparado.",
+      "c": "Não há recusa da lei; Esdras a busca.",
+      "d": "Ciro serve à casa; não a impede."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O decreto de Ciro torna inútil o coração de Esdras."
+      },
+      {
+        "id": "b",
+        "text": "Jeová move Ciro e Esdras forma Israel na lei."
+      },
+      {
+        "id": "c",
+        "text": "Esdras busca a lei para anular o decreto de Ciro."
+      },
+      {
+        "id": "d",
+        "text": "Ciro edifica a casa para impedir o culto de Jeová."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá. Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "id": "esdras-cam-esdras-reforma-es-02-desafio-restauracao-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Esdras 1:1; 7:10",
+    "learningObjective": "Unir decreto de Deus e coração preparado: restauração é volta sob Ciro e reforma sob a Lei.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 7:10"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Esdras 1:1; 7:10?",
+    "prompt": "Como se encadeiam os eventos de Esdras 1:1; 7:10?",
+    "cue": "Como se encadeiam os eventos de Esdras 1:1; 7:10?",
+    "feedbackCorrect": "Certo: palavra cumprida, casa proclamada, lei ensinada.",
+    "feedbackWrong": {
+      "b": "A casa vem no decreto de Ciro, depois da palavra.",
+      "c": "O coração de Esdras fecha o encadeamento da reforma."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A palavra de Jeová por Jeremias se cumpre em Ciro"
+      },
+      {
+        "id": "b",
+        "text": "O rei proclama a casa em Jerusalém de Judá"
+      },
+      {
+        "id": "c",
+        "text": "Esdras prepara o coração para a lei em Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá. Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "id": "esdras-cam-esdras-reforma-es-02-desafio-restauracao-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Esdras 1:1; 7:10",
+    "learningObjective": "Unir decreto de Deus e coração preparado: restauração é volta sob Ciro e reforma sob a Lei.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 7:10"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"para ensinar em Israel ___ e juízos\"",
+    "prompt": "Complete a frase: \"para ensinar em Israel ___ e juízos\"",
+    "cue": "Complete a frase: \"para ensinar em Israel ___ e juízos\"",
+    "feedbackCorrect": "Certo: Esdras ensina estatutos e juízos.",
+    "feedbackWrong": {
+      "b": "Reinos são o que Jeová deu a Ciro.",
+      "c": "Pregão é o anúncio de Ciro, não o conteúdo do ensino."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "estatutos"
+      },
+      {
+        "id": "b",
+        "text": "reinos"
+      },
+      {
+        "id": "c",
+        "text": "pregão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá. Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "id": "esdras-cam-esdras-reforma-es-02-desafio-restauracao-05",
+    "template": "para ensinar em Israel ___ e juízos"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Esdras 1:1; 7:10",
+    "learningObjective": "Unir decreto de Deus e coração preparado: restauração é volta sob Ciro e reforma sob a Lei.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 7:10"
+    ],
+    "type": "connect",
+    "question": "O que Esdras 1:1; 7:10 comunica que se liga a este contexto?",
+    "prompt": "O que Esdras 1:1; 7:10 comunica que se liga a este contexto?",
+    "cue": "O que Esdras 1:1; 7:10 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: volta e reforma não se separam.",
+    "feedbackWrong": {
+      "b": "Há lei e casa, não só muralha.",
+      "c": "Ciro serve à casa; não a substitui por um palácio."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Volta e reforma juntas"
+      },
+      {
+        "id": "b",
+        "text": "Só muralha, sem a Lei"
+      },
+      {
+        "id": "c",
+        "text": "Palácio persa no lugar da casa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá. Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "id": "esdras-cam-esdras-reforma-es-02-desafio-restauracao-06",
+    "passageA": {
+      "ref": "Esdras 1:2; 7:10",
+      "text": "encarregou-me de lhe edificar uma casa em Jerusalém de Judá… para ensinar em Israel estatutos e juízos"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Restauração é decreto de Deus e coração preparado para a Lei — volta e reforma juntas."
+    }
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Esdras 1:1; 7:10",
+    "learningObjective": "Unir decreto de Deus e coração preparado: restauração é volta sob Ciro e reforma sob a Lei.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 7:10"
+    ],
+    "type": "true_false",
+    "question": "Restauração une o decreto que cumpre Jeremias e o coração preparado para buscar, cumprir e ensinar.",
+    "prompt": "Restauração une o decreto que cumpre Jeremias e o coração preparado para buscar, cumprir e ensinar.",
+    "cue": "Restauração une o decreto que cumpre Jeremias e o coração preparado para buscar, cumprir e ensinar.",
+    "feedbackCorrect": "Certo: os dois textos juntas descrevem essa união.",
+    "feedbackWrong": {
+      "false": "1:1 cumpre Jeremias; 7:10 prepara o coração para a lei."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá. Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "id": "esdras-pro-esdras-reforma-es-02-desafio-restauracao-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Esdras 1:1; 7:10",
+    "learningObjective": "Unir decreto de Deus e coração preparado: restauração é volta sob Ciro e reforma sob a Lei.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 7:10"
+    ],
+    "type": "tap",
+    "question": "Em Esdras 1:1; 7:10, toque a palavra que falta em \"por boca de ___, moveu Jeová o espírito de Ciro\"?",
+    "prompt": "Em Esdras 1:1; 7:10, toque a palavra que falta em \"por boca de ___, moveu Jeová o espírito de Ciro\"?",
+    "cue": "Em Esdras 1:1; 7:10, toque a palavra que falta em \"por boca de ___, moveu Jeová o espírito de Ciro\"?",
+    "feedbackCorrect": "Exato: a palavra cumprida é por boca de Jeremias.",
+    "feedbackWrong": {
+      "b": "Ciro é o rei movido, não a boca da profecia.",
+      "c": "Israel é o lugar do ensino, não o profeta citado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeremias"
+      },
+      {
+        "id": "b",
+        "text": "Ciro"
+      },
+      {
+        "id": "c",
+        "text": "Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá. Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "id": "esdras-pro-esdras-reforma-es-02-desafio-restauracao-02",
+    "template": "por boca de ___, moveu Jeová o espírito de Ciro"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Esdras 1:1; 7:10",
+    "learningObjective": "Unir decreto de Deus e coração preparado: restauração é volta sob Ciro e reforma sob a Lei.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 7:10"
+    ],
+    "type": "choice",
+    "question": "Qual sentido os dois textos preparam no leitor da restauração?",
+    "prompt": "Qual sentido os dois textos preparam no leitor da restauração?",
+    "cue": "Qual sentido os dois textos preparam no leitor da restauração?",
+    "feedbackCorrect": "Certo: Deus abre a porta e forma um povo pela Lei.",
+    "feedbackWrong": {
+      "a": "O decreto não esgota a restauração sem a Lei.",
+      "c": "Há cumprimento, não lei só como arquivo.",
+      "d": "Ciro é instrumento de Jeová, não dono da história."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Basta o decreto de Ciro; a Lei é acessório."
+      },
+      {
+        "id": "b",
+        "text": "Jeová restaura casa e povo: decreto e coração."
+      },
+      {
+        "id": "c",
+        "text": "A lei fica no arquivo, sem cumprir nem ensinar."
+      },
+      {
+        "id": "d",
+        "text": "Ciro substitui Jeová como autor da restauração."
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá. Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "id": "esdras-pro-esdras-reforma-es-02-desafio-restauracao-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Esdras 1:1; 7:10",
+    "learningObjective": "Unir decreto de Deus e coração preparado: restauração é volta sob Ciro e reforma sob a Lei.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 7:10"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Esdras 1:1; 7:10?",
+    "prompt": "Qual sequência revela o sentido de Esdras 1:1; 7:10?",
+    "cue": "Qual sequência revela o sentido de Esdras 1:1; 7:10?",
+    "feedbackCorrect": "Certo: palavra, casa, formação pela Lei.",
+    "feedbackWrong": {
+      "b": "A casa vem depois da palavra cumprida.",
+      "c": "O coração para a Lei é o desfecho da restauração."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Jeová cumpre sua palavra até por um rei da Pérsia"
+      },
+      {
+        "id": "b",
+        "text": "A casa em Jerusalém volta ao centro do decreto"
+      },
+      {
+        "id": "c",
+        "text": "Um coração preparado ensina a lei em Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá. Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "id": "esdras-pro-esdras-reforma-es-02-desafio-restauracao-04",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ]
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Esdras 1:1; 7:10",
+    "learningObjective": "Unir decreto de Deus e coração preparado: restauração é volta sob Ciro e reforma sob a Lei.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 7:10"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"tinha preparado o seu ___ para buscar a lei de Jeová\"",
+    "prompt": "Complete a frase: \"tinha preparado o seu ___ para buscar a lei de Jeová\"",
+    "cue": "Complete a frase: \"tinha preparado o seu ___ para buscar a lei de Jeová\"",
+    "feedbackCorrect": "Certo: o que se prepara é o coração.",
+    "feedbackWrong": {
+      "b": "Espírito é o que Jeová move em Ciro.",
+      "c": "Reino é o domínio de Ciro, não o que Esdras prepara."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "coração"
+      },
+      {
+        "id": "b",
+        "text": "espírito"
+      },
+      {
+        "id": "c",
+        "text": "reino"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá. Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "id": "esdras-pro-esdras-reforma-es-02-desafio-restauracao-05",
+    "template": "tinha preparado o seu ___ para buscar a lei de Jeová"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Esdras 1:1; 7:10",
+    "learningObjective": "Unir decreto de Deus e coração preparado: restauração é volta sob Ciro e reforma sob a Lei.",
+    "evidence": [
+      "Esdras 1:1",
+      "Esdras 7:10"
+    ],
+    "type": "connect",
+    "question": "O que Esdras 1:1; 7:10 comunica que se liga a este contexto?",
+    "prompt": "O que Esdras 1:1; 7:10 comunica que se liga a este contexto?",
+    "cue": "O que Esdras 1:1; 7:10 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: restauração é obra de Deus no rei e no coração.",
+    "feedbackWrong": {
+      "b": "Há duas mãos de Jeová, não só política persa.",
+      "c": "A Lei forma o povo; não é peça de museu."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus no rei e no coração"
+      },
+      {
+        "id": "b",
+        "text": "Só política persa sem Jeová"
+      },
+      {
+        "id": "c",
+        "text": "Lei como peça de museu"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "passageText": "No primeiro ano de Ciro, rei da Pérsia, para que se cumprisse a palavra de Jeová por boca de Jeremias, moveu Jeová o espírito de Ciro, rei da Pérsia, para fazer por todo o seu reino, de viva voz e por escrito, este pregão: Assim diz Ciro, rei da Pérsia: Jeová, Deus do céu, deu-me todos os reinos da terra e encarregou-me de lhe edificar uma casa em Jerusalém de Judá. Porque tinha preparado o seu coração para buscar a lei de Jeová e a cumprir e para ensinar em Israel estatutos e juízos.",
+    "trail": "esdras",
+    "section": "esdras-reforma-es-02-desafio-restauracao",
+    "id": "esdras-pro-esdras-reforma-es-02-desafio-restauracao-06",
+    "passageA": {
+      "ref": "Esdras 1:1; 7:10",
+      "text": "moveu Jeová o espírito de Ciro… tinha preparado o seu coração para buscar a lei de Jeová e a cumprir"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Restauração é decreto de Deus e coração preparado para a Lei — volta e reforma juntas."
+    }
+  }
+]

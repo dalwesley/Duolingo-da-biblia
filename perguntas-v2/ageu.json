@@ -1,0 +1,2225 @@
+[
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ageu 1:2-4",
+    "learningObjective": "Perceber que o povo priorizava suas próprias casas enquanto a casa de Jeová permanecia em ruínas.",
+    "evidence": [
+      "Ageu 1:2",
+      "Ageu 1:4"
+    ],
+    "type": "true_false",
+    "question": "O povo dizia que ainda não havia chegado o tempo de edificar a casa de Jeová.",
+    "prompt": "O povo dizia que ainda não havia chegado o tempo de edificar a casa de Jeová.",
+    "cue": "O povo dizia que ainda não havia chegado o tempo de edificar a casa de Jeová.",
+    "feedbackCorrect": "Correto: é exatamente essa a fala do povo registrada em Ageu 1:2.",
+    "feedbackWrong": {
+      "false": "Releia Ageu 1:2 — essa é literalmente a fala do povo."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa deserta?",
+    "trail": "ageu",
+    "section": "ageu-ageu-01-casas-forradas-templ",
+    "id": "ageu-sem-ageu-ageu-01-casas-forradas-templ-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ageu 1:2-4",
+    "learningObjective": "Perceber que o povo priorizava suas próprias casas enquanto a casa de Jeová permanecia em ruínas.",
+    "evidence": [
+      "Ageu 1:2",
+      "Ageu 1:4"
+    ],
+    "type": "tap",
+    "question": "Em Ageu 1:2-4, toque a palavra que falta em \"Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas ___ de madeira, estando esta casa deserta?\"?",
+    "prompt": "Em Ageu 1:2-4, toque a palavra que falta em \"Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas ___ de madeira, estando esta casa deserta?\"?",
+    "cue": "Em Ageu 1:2-4, toque a palavra que falta em \"Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas ___ de madeira, estando esta casa deserta?\"?",
+    "feedbackCorrect": "Exato: \"forradas\" é a palavra que descreve as casas do povo.",
+    "feedbackWrong": {
+      "b": "Essa palavra descreve a casa de Jeová, não as casas do povo.",
+      "c": "Essa palavra aparece antes, ligada à casa de Jeová, não a esta lacuna."
+    },
+    "passageText": "Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa deserta?",
+    "template": "Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas ___ de madeira, estando esta casa deserta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "forradas"
+      },
+      {
+        "id": "b",
+        "text": "deserta"
+      },
+      {
+        "id": "c",
+        "text": "edificar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-01-casas-forradas-templ",
+    "id": "ageu-sem-ageu-ageu-01-casas-forradas-templ-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ageu 1:2-4",
+    "learningObjective": "Perceber que o povo priorizava suas próprias casas enquanto a casa de Jeová permanecia em ruínas.",
+    "evidence": [
+      "Ageu 1:2",
+      "Ageu 1:4"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelo texto em Ageu 1:2-4?",
+    "prompt": "Qual afirmação é feita diretamente pelo texto em Ageu 1:2-4?",
+    "cue": "Qual afirmação é feita diretamente pelo texto em Ageu 1:2-4?",
+    "feedbackCorrect": "Certo: o texto sustenta essa leitura com clareza.",
+    "feedbackWrong": {
+      "b": "O texto mostra a obra parada, não concluída.",
+      "c": "Nada no texto atribui ordem de demolição ao rei Dario.",
+      "d": "O texto não fala de uma construção solitária do profeta."
+    },
+    "passageText": "Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa deserta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "O povo dizia que ainda não era o tempo de reconstruir a casa de Jeová."
+      },
+      {
+        "id": "b",
+        "text": "O povo já tinha concluído a reconstrução do templo."
+      },
+      {
+        "id": "c",
+        "text": "O rei Dario ordenou que o templo fosse demolido."
+      },
+      {
+        "id": "d",
+        "text": "O profeta Ageu construiu sozinho a casa de Jeová."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-01-casas-forradas-templ",
+    "id": "ageu-sem-ageu-ageu-01-casas-forradas-templ-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ageu 1:2-4",
+    "learningObjective": "Perceber que o povo priorizava suas próprias casas enquanto a casa de Jeová permanecia em ruínas.",
+    "evidence": [
+      "Ageu 1:2",
+      "Ageu 1:4"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Ageu 1:2-4?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Ageu 1:2-4?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Ageu 1:2-4?",
+    "feedbackCorrect": "Certo: essa é a sequência que o texto mostra.",
+    "feedbackWrong": {
+      "b": "A ordem está deslocada: esse trecho vem depois no texto.",
+      "c": "Releia a sequência da passagem: esse trecho é o último."
+    },
+    "passageText": "Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa deserta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová."
+      },
+      {
+        "id": "b",
+        "text": "É tempo de habitardes vós mesmos nas vossas casas forradas de madeira"
+      },
+      {
+        "id": "c",
+        "text": "estando esta casa deserta?"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-01-casas-forradas-templ",
+    "id": "ageu-sem-ageu-ageu-01-casas-forradas-templ-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ageu 1:2-4",
+    "learningObjective": "Perceber que o povo priorizava suas próprias casas enquanto a casa de Jeová permanecia em ruínas.",
+    "evidence": [
+      "Ageu 1:2",
+      "Ageu 1:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa ___?\"",
+    "prompt": "Complete a frase: \"Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa ___?\"",
+    "cue": "Complete a frase: \"Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa ___?\"",
+    "feedbackCorrect": "Certo: \"deserta\" descreve o estado da casa de Jeová no texto.",
+    "feedbackWrong": {
+      "b": "Essa palavra descreve as casas do povo, não a casa de Jeová.",
+      "c": "Essa palavra já aparece antes, ligada à intenção de construir."
+    },
+    "passageText": "Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa deserta?",
+    "template": "Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa ___?",
+    "options": [
+      {
+        "id": "a",
+        "text": "deserta"
+      },
+      {
+        "id": "b",
+        "text": "forradas"
+      },
+      {
+        "id": "c",
+        "text": "edificar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-01-casas-forradas-templ",
+    "id": "ageu-sem-ageu-ageu-01-casas-forradas-templ-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ageu 1:2-4",
+    "learningObjective": "Perceber que o povo priorizava suas próprias casas enquanto a casa de Jeová permanecia em ruínas.",
+    "evidence": [
+      "Ageu 1:2",
+      "Ageu 1:4"
+    ],
+    "type": "connect",
+    "question": "O que Ageu 1:2-4 comunica que se liga a este contexto?",
+    "prompt": "O que Ageu 1:2-4 comunica que se liga a este contexto?",
+    "cue": "O que Ageu 1:2-4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o texto se liga ao sentido central da missão.",
+    "feedbackWrong": {
+      "b": "O texto trata o adiamento como algo com peso, não como algo neutro.",
+      "c": "A casa de Jeová é chamada de deserta, e não de reconstruída."
+    },
+    "passageText": "Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa deserta?",
+    "passageA": {
+      "ref": "Ageu 1:4",
+      "text": "É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa deserta?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Contexto: o povo tinha tempo e recursos para cuidar de suas próprias casas, mas deixava a casa de Jeová sem atenção."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Prioridades invertidas diante de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Conforto sem nenhuma consequência"
+      },
+      {
+        "id": "c",
+        "text": "Reconstrução já concluída"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-01-casas-forradas-templ",
+    "id": "ageu-sem-ageu-ageu-01-casas-forradas-templ-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ageu 1:2-4",
+    "learningObjective": "Perceber que o povo priorizava suas próprias casas enquanto a casa de Jeová permanecia em ruínas.",
+    "evidence": [
+      "Ageu 1:2",
+      "Ageu 1:4"
+    ],
+    "type": "true_false",
+    "question": "Ageu 1:4 afirma que a casa de Jeová estava sendo reconstruída enquanto o povo aguardava em suas próprias casas.",
+    "prompt": "Ageu 1:4 afirma que a casa de Jeová estava sendo reconstruída enquanto o povo aguardava em suas próprias casas.",
+    "cue": "Ageu 1:4 afirma que a casa de Jeová estava sendo reconstruída enquanto o povo aguardava em suas próprias casas.",
+    "feedbackCorrect": "Correto: o texto chama a casa de Jeová de deserta, não de obra em andamento.",
+    "feedbackWrong": {
+      "true": "O texto não descreve reconstrução em curso; a casa de Jeová é chamada de deserta."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa deserta?",
+    "trail": "ageu",
+    "section": "ageu-ageu-01-casas-forradas-templ",
+    "id": "ageu-cam-ageu-ageu-01-casas-forradas-templ-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ageu 1:2-4",
+    "learningObjective": "Perceber que o povo priorizava suas próprias casas enquanto a casa de Jeová permanecia em ruínas.",
+    "evidence": [
+      "Ageu 1:2",
+      "Ageu 1:4"
+    ],
+    "type": "tap",
+    "question": "Em Ageu 1:2-4, toque a palavra que falta em \"Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa ___?\"?",
+    "prompt": "Em Ageu 1:2-4, toque a palavra que falta em \"Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa ___?\"?",
+    "cue": "Em Ageu 1:2-4, toque a palavra que falta em \"Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa ___?\"?",
+    "feedbackCorrect": "Exato: \"deserta\" é a palavra que qualifica a casa de Jeová no texto.",
+    "feedbackWrong": {
+      "b": "Essa palavra descreve as casas do povo, e não a casa de Jeová.",
+      "c": "Essa palavra aparece antes, ligada à obra ainda não iniciada."
+    },
+    "passageText": "Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa deserta?",
+    "template": "Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa ___?",
+    "options": [
+      {
+        "id": "a",
+        "text": "deserta"
+      },
+      {
+        "id": "b",
+        "text": "forradas"
+      },
+      {
+        "id": "c",
+        "text": "edificar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-01-casas-forradas-templ",
+    "id": "ageu-cam-ageu-ageu-01-casas-forradas-templ-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ageu 1:2-4",
+    "learningObjective": "Perceber que o povo priorizava suas próprias casas enquanto a casa de Jeová permanecia em ruínas.",
+    "evidence": [
+      "Ageu 1:2",
+      "Ageu 1:4"
+    ],
+    "type": "choice",
+    "question": "Qual ideia melhor conecta Ageu 1:2-4 ao contexto da missão?",
+    "prompt": "Qual ideia melhor conecta Ageu 1:2-4 ao contexto da missão?",
+    "cue": "Qual ideia melhor conecta Ageu 1:2-4 ao contexto da missão?",
+    "feedbackCorrect": "Certo: o texto sustenta essa leitura com clareza.",
+    "feedbackWrong": {
+      "b": "O texto mostra o povo cuidando das próprias casas, não em situação de escassez total.",
+      "c": "A repreensão do próprio Jeová mostra o contrário disso.",
+      "d": "O texto atribui a fala ao povo, não a uma ordem do governador."
+    },
+    "passageText": "Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa deserta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "O povo tinha tempo e recursos para si mesmo, mas adiava indefinidamente a obra de Deus."
+      },
+      {
+        "id": "b",
+        "text": "A demora se devia à falta total de recursos financeiros do povo."
+      },
+      {
+        "id": "c",
+        "text": "Deus não se importava com o estado do templo naquele momento."
+      },
+      {
+        "id": "d",
+        "text": "O adiamento era uma ordem direta do governador Zorobabel."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-01-casas-forradas-templ",
+    "id": "ageu-cam-ageu-ageu-01-casas-forradas-templ-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ageu 1:2-4",
+    "learningObjective": "Perceber que o povo priorizava suas próprias casas enquanto a casa de Jeová permanecia em ruínas.",
+    "evidence": [
+      "Ageu 1:2",
+      "Ageu 1:4"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Ageu 1:2-4?",
+    "prompt": "Como se encadeiam os eventos de Ageu 1:2-4?",
+    "cue": "Como se encadeiam os eventos de Ageu 1:2-4?",
+    "feedbackCorrect": "Certo: essa é a sequência que o texto mostra.",
+    "feedbackWrong": {
+      "b": "A ordem está deslocada: esse trecho vem depois no texto.",
+      "c": "Releia a sequência da passagem: esse trecho é o último."
+    },
+    "passageText": "Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa deserta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová."
+      },
+      {
+        "id": "b",
+        "text": "É tempo de habitardes vós mesmos nas vossas casas forradas de madeira"
+      },
+      {
+        "id": "c",
+        "text": "estando esta casa deserta?"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-01-casas-forradas-templ",
+    "id": "ageu-cam-ageu-ageu-01-casas-forradas-templ-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ageu 1:2-4",
+    "learningObjective": "Perceber que o povo priorizava suas próprias casas enquanto a casa de Jeová permanecia em ruínas.",
+    "evidence": [
+      "Ageu 1:2",
+      "Ageu 1:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Este povo diz: Não é ainda chegado o tempo de ___ a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa deserta?\"",
+    "prompt": "Complete a frase: \"Este povo diz: Não é ainda chegado o tempo de ___ a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa deserta?\"",
+    "cue": "Complete a frase: \"Este povo diz: Não é ainda chegado o tempo de ___ a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa deserta?\"",
+    "feedbackCorrect": "Certo: \"edificar\" é a ação que o povo dizia não ser hora de fazer.",
+    "feedbackWrong": {
+      "b": "Essa palavra descreve as casas do povo, não a ação de construir.",
+      "c": "Essa palavra qualifica a casa de Jeová, não a ação de construir."
+    },
+    "passageText": "Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa deserta?",
+    "template": "Este povo diz: Não é ainda chegado o tempo de ___ a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa deserta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "edificar"
+      },
+      {
+        "id": "b",
+        "text": "forradas"
+      },
+      {
+        "id": "c",
+        "text": "deserta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-01-casas-forradas-templ",
+    "id": "ageu-cam-ageu-ageu-01-casas-forradas-templ-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ageu 1:2-4",
+    "learningObjective": "Perceber que o povo priorizava suas próprias casas enquanto a casa de Jeová permanecia em ruínas.",
+    "evidence": [
+      "Ageu 1:2",
+      "Ageu 1:4"
+    ],
+    "type": "connect",
+    "question": "O que Ageu 1:2-4 comunica que se liga a este contexto?",
+    "prompt": "O que Ageu 1:2-4 comunica que se liga a este contexto?",
+    "cue": "O que Ageu 1:2-4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o texto se liga ao sentido central da missão.",
+    "feedbackWrong": {
+      "b": "O texto mostra recursos aplicados às próprias casas, não escassez total.",
+      "c": "A fala registrada é do povo, não uma decisão isolada do governador."
+    },
+    "passageText": "Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa deserta?",
+    "passageA": {
+      "ref": "Ageu 1:2",
+      "text": "Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Contexto: antes de cuidar da casa de Jeová, o povo já havia terminado de cuidar do próprio conforto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Conforto pessoal antes da casa de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Falta total de recursos do povo"
+      },
+      {
+        "id": "c",
+        "text": "Determinação exclusiva do governador"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-01-casas-forradas-templ",
+    "id": "ageu-cam-ageu-ageu-01-casas-forradas-templ-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ageu 1:2-4",
+    "learningObjective": "Perceber que o povo priorizava suas próprias casas enquanto a casa de Jeová permanecia em ruínas.",
+    "evidence": [
+      "Ageu 1:2",
+      "Ageu 1:4"
+    ],
+    "type": "true_false",
+    "question": "A repreensão de Jeová em Ageu 1 trata negligenciar sua casa, enquanto se prioriza a própria, como falta de reverência a Deus.",
+    "prompt": "A repreensão de Jeová em Ageu 1 trata negligenciar sua casa, enquanto se prioriza a própria, como falta de reverência a Deus.",
+    "cue": "A repreensão de Jeová em Ageu 1 trata negligenciar sua casa, enquanto se prioriza a própria, como falta de reverência a Deus.",
+    "feedbackCorrect": "Correto: o texto liga a negligência com a casa de Deus a uma questão de reverência.",
+    "feedbackWrong": {
+      "false": "O texto sustenta essa leitura: adiar a obra de Deus é tratado como falta grave."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa deserta?",
+    "trail": "ageu",
+    "section": "ageu-ageu-01-casas-forradas-templ",
+    "id": "ageu-pro-ageu-ageu-01-casas-forradas-templ-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ageu 1:2-4",
+    "learningObjective": "Perceber que o povo priorizava suas próprias casas enquanto a casa de Jeová permanecia em ruínas.",
+    "evidence": [
+      "Ageu 1:2",
+      "Ageu 1:4"
+    ],
+    "type": "tap",
+    "question": "Em Ageu 1:2-4, toque a palavra que falta em \"Este povo diz: Não é ainda chegado o tempo de ___ a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa deserta?\"?",
+    "prompt": "Em Ageu 1:2-4, toque a palavra que falta em \"Este povo diz: Não é ainda chegado o tempo de ___ a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa deserta?\"?",
+    "cue": "Em Ageu 1:2-4, toque a palavra que falta em \"Este povo diz: Não é ainda chegado o tempo de ___ a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa deserta?\"?",
+    "feedbackCorrect": "Exato: \"edificar\" nomeia a obra que o povo adiava.",
+    "feedbackWrong": {
+      "b": "Essa palavra descreve as casas do povo, e não a obra adiada.",
+      "c": "Essa palavra qualifica a casa de Jeová, e não a ação adiada."
+    },
+    "passageText": "Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa deserta?",
+    "template": "Este povo diz: Não é ainda chegado o tempo de ___ a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa deserta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "edificar"
+      },
+      {
+        "id": "b",
+        "text": "forradas"
+      },
+      {
+        "id": "c",
+        "text": "deserta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-01-casas-forradas-templ",
+    "id": "ageu-pro-ageu-ageu-01-casas-forradas-templ-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ageu 1:2-4",
+    "learningObjective": "Perceber que o povo priorizava suas próprias casas enquanto a casa de Jeová permanecia em ruínas.",
+    "evidence": [
+      "Ageu 1:2",
+      "Ageu 1:4"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de Ageu 1:2-4?",
+    "prompt": "Qual leitura interpreta melhor o sentido de Ageu 1:2-4?",
+    "cue": "Qual leitura interpreta melhor o sentido de Ageu 1:2-4?",
+    "feedbackCorrect": "Certo: o texto sustenta essa leitura com clareza.",
+    "feedbackWrong": {
+      "b": "O problema não é ter casa boa, mas a ordem de prioridades escolhida.",
+      "c": "O texto não compara estilos de construção, mas a ordem das prioridades.",
+      "d": "A repreensão de Jeová mostra justamente o contrário disso."
+    },
+    "passageText": "Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa deserta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Adiar o que é de Deus, cuidando só do que é nosso, é uma forma de desonrá-lo."
+      },
+      {
+        "id": "b",
+        "text": "O texto ensina que construir casas confortáveis é sempre um pecado."
+      },
+      {
+        "id": "c",
+        "text": "A passagem sugere que Deus prefere templos simples a qualquer conforto humano."
+      },
+      {
+        "id": "d",
+        "text": "O relato mostra que o adiamento humano não tem consequência espiritual alguma."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-01-casas-forradas-templ",
+    "id": "ageu-pro-ageu-ageu-01-casas-forradas-templ-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ageu 1:2-4",
+    "learningObjective": "Perceber que o povo priorizava suas próprias casas enquanto a casa de Jeová permanecia em ruínas.",
+    "evidence": [
+      "Ageu 1:2",
+      "Ageu 1:4"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Ageu 1:2-4?",
+    "prompt": "Qual sequência revela o sentido de Ageu 1:2-4?",
+    "cue": "Qual sequência revela o sentido de Ageu 1:2-4?",
+    "feedbackCorrect": "Certo: essa é a sequência que o texto mostra.",
+    "feedbackWrong": {
+      "b": "A ordem está deslocada: esse trecho vem depois no texto.",
+      "c": "Releia a sequência da passagem: esse trecho é o último."
+    },
+    "passageText": "Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa deserta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová."
+      },
+      {
+        "id": "b",
+        "text": "É tempo de habitardes vós mesmos nas vossas casas forradas de madeira"
+      },
+      {
+        "id": "c",
+        "text": "estando esta casa deserta?"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-01-casas-forradas-templ",
+    "id": "ageu-pro-ageu-ageu-01-casas-forradas-templ-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ageu 1:2-4",
+    "learningObjective": "Perceber que o povo priorizava suas próprias casas enquanto a casa de Jeová permanecia em ruínas.",
+    "evidence": [
+      "Ageu 1:2",
+      "Ageu 1:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas ___ de madeira, estando esta casa deserta?\"",
+    "prompt": "Complete a frase: \"Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas ___ de madeira, estando esta casa deserta?\"",
+    "cue": "Complete a frase: \"Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas ___ de madeira, estando esta casa deserta?\"",
+    "feedbackCorrect": "Certo: \"forradas\" descreve o cuidado que o povo tinha com as próprias casas.",
+    "feedbackWrong": {
+      "b": "Essa palavra descreve a casa de Jeová, não as casas do povo.",
+      "c": "Essa palavra se refere à obra ainda não realizada, não ao cuidado com as casas."
+    },
+    "passageText": "Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa deserta?",
+    "template": "Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas ___ de madeira, estando esta casa deserta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "forradas"
+      },
+      {
+        "id": "b",
+        "text": "deserta"
+      },
+      {
+        "id": "c",
+        "text": "edificar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-01-casas-forradas-templ",
+    "id": "ageu-pro-ageu-ageu-01-casas-forradas-templ-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ageu 1:2-4",
+    "learningObjective": "Perceber que o povo priorizava suas próprias casas enquanto a casa de Jeová permanecia em ruínas.",
+    "evidence": [
+      "Ageu 1:2",
+      "Ageu 1:4"
+    ],
+    "type": "connect",
+    "question": "O que Ageu 1:2-4 comunica que se liga a este contexto?",
+    "prompt": "O que Ageu 1:2-4 comunica que se liga a este contexto?",
+    "cue": "O que Ageu 1:2-4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o texto se liga ao sentido central da missão.",
+    "feedbackWrong": {
+      "b": "O texto não trata de estilo de construção, mas de prioridade e reverência.",
+      "c": "A repreensão de Jeová não é sobre o padrão do templo, mas sobre o adiamento."
+    },
+    "passageText": "Este povo diz: Não é ainda chegado o tempo de edificar a casa de Jeová. É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa deserta?",
+    "passageA": {
+      "ref": "Ageu 1:2,4",
+      "text": "Não é ainda chegado o tempo de edificar a casa de Jeová... estando esta casa deserta?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Contexto: o texto trata negligenciar a casa de Deus, enquanto se cuida da própria, como uma forma concreta de desonrá-lo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Negligenciar a Deus como forma de desonra"
+      },
+      {
+        "id": "b",
+        "text": "Simplicidade material como virtude absoluta"
+      },
+      {
+        "id": "c",
+        "text": "Templo humilde sempre preferido por Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-01-casas-forradas-templ",
+    "id": "ageu-pro-ageu-ageu-01-casas-forradas-templ-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ageu 2:4",
+    "learningObjective": "Reconhecer que o chamado ao esforço em Ageu vem acompanhado da promessa da presença de Deus.",
+    "evidence": [
+      "Ageu 2:4"
+    ],
+    "type": "true_false",
+    "question": "Em Ageu 2:4, Jeová ordena que Zorobabel, Josué e todo o povo se esforcem e trabalhem.",
+    "prompt": "Em Ageu 2:4, Jeová ordena que Zorobabel, Josué e todo o povo se esforcem e trabalhem.",
+    "cue": "Em Ageu 2:4, Jeová ordena que Zorobabel, Josué e todo o povo se esforcem e trabalhem.",
+    "feedbackCorrect": "Correto: o texto nomeia Zorobabel, Josué e todo o povo nesse chamado.",
+    "feedbackWrong": {
+      "false": "Releia Ageu 2:4 — os três grupos são chamados a se esforçar."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou convosco, diz Jeová dos exércitos.",
+    "trail": "ageu",
+    "section": "ageu-ageu-02-eu-estou-convosco",
+    "id": "ageu-sem-ageu-ageu-02-eu-estou-convosco-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ageu 2:4",
+    "learningObjective": "Reconhecer que o chamado ao esforço em Ageu vem acompanhado da promessa da presença de Deus.",
+    "evidence": [
+      "Ageu 2:4"
+    ],
+    "type": "tap",
+    "question": "Em Ageu 2:4, toque a palavra que falta em \"___, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou convosco, diz Jeová dos exércitos.\"?",
+    "prompt": "Em Ageu 2:4, toque a palavra que falta em \"___, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou convosco, diz Jeová dos exércitos.\"?",
+    "cue": "Em Ageu 2:4, toque a palavra que falta em \"___, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou convosco, diz Jeová dos exércitos.\"?",
+    "feedbackCorrect": "Exato: \"Esforça-te\" abre o chamado dirigido a Zorobabel.",
+    "feedbackWrong": {
+      "b": "Essa palavra aparece no final, na promessa da presença de Deus.",
+      "c": "Essa palavra aparece depois, ligada ao chamado ao povo."
+    },
+    "passageText": "Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou convosco, diz Jeová dos exércitos.",
+    "template": "___, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou convosco, diz Jeová dos exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Esforça-te"
+      },
+      {
+        "id": "b",
+        "text": "convosco"
+      },
+      {
+        "id": "c",
+        "text": "trabalhai"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-02-eu-estou-convosco",
+    "id": "ageu-sem-ageu-ageu-02-eu-estou-convosco-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ageu 2:4",
+    "learningObjective": "Reconhecer que o chamado ao esforço em Ageu vem acompanhado da promessa da presença de Deus.",
+    "evidence": [
+      "Ageu 2:4"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelo texto em Ageu 2:4?",
+    "prompt": "Qual afirmação é feita diretamente pelo texto em Ageu 2:4?",
+    "cue": "Qual afirmação é feita diretamente pelo texto em Ageu 2:4?",
+    "feedbackCorrect": "Certo: o texto sustenta essa leitura com clareza.",
+    "feedbackWrong": {
+      "b": "O texto pede ação imediata, não espera.",
+      "c": "O chamado inclui governador, sacerdote e todo o povo.",
+      "d": "Não há promessa de reconstrução solitária por outro profeta."
+    },
+    "passageText": "Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou convosco, diz Jeová dos exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus ordena que Zorobabel, Josué e todo o povo se esforcem e trabalhem."
+      },
+      {
+        "id": "b",
+        "text": "Deus manda que o povo espere sem trabalhar até nova ordem."
+      },
+      {
+        "id": "c",
+        "text": "Deus determina que apenas os sacerdotes participem da obra."
+      },
+      {
+        "id": "d",
+        "text": "Deus promete enviar outro profeta para reconstruir sozinho o templo."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-02-eu-estou-convosco",
+    "id": "ageu-sem-ageu-ageu-02-eu-estou-convosco-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ageu 2:4",
+    "learningObjective": "Reconhecer que o chamado ao esforço em Ageu vem acompanhado da promessa da presença de Deus.",
+    "evidence": [
+      "Ageu 2:4"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Ageu 2:4?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Ageu 2:4?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Ageu 2:4?",
+    "feedbackCorrect": "Certo: essa é a sequência que o texto mostra.",
+    "feedbackWrong": {
+      "b": "A ordem está deslocada: esse trecho vem depois no texto.",
+      "c": "Releia a sequência da passagem: esse trecho é o último."
+    },
+    "passageText": "Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou convosco, diz Jeová dos exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote"
+      },
+      {
+        "id": "b",
+        "text": "e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai"
+      },
+      {
+        "id": "c",
+        "text": "pois eu sou convosco, diz Jeová dos exércitos"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-02-eu-estou-convosco",
+    "id": "ageu-sem-ageu-ageu-02-eu-estou-convosco-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ageu 2:4",
+    "learningObjective": "Reconhecer que o chamado ao esforço em Ageu vem acompanhado da promessa da presença de Deus.",
+    "evidence": [
+      "Ageu 2:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e ___; pois eu sou convosco, diz Jeová dos exércitos.\"",
+    "prompt": "Complete a frase: \"Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e ___; pois eu sou convosco, diz Jeová dos exércitos.\"",
+    "cue": "Complete a frase: \"Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e ___; pois eu sou convosco, diz Jeová dos exércitos.\"",
+    "feedbackCorrect": "Certo: \"trabalhai\" é a ordem dada a todo o povo da terra.",
+    "feedbackWrong": {
+      "b": "Essa palavra aparece antes, dirigida a Zorobabel e Josué.",
+      "c": "Essa palavra está na promessa final, não na ordem ao povo."
+    },
+    "passageText": "Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou convosco, diz Jeová dos exércitos.",
+    "template": "Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e ___; pois eu sou convosco, diz Jeová dos exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "trabalhai"
+      },
+      {
+        "id": "b",
+        "text": "Esforça-te"
+      },
+      {
+        "id": "c",
+        "text": "convosco"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-02-eu-estou-convosco",
+    "id": "ageu-sem-ageu-ageu-02-eu-estou-convosco-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ageu 2:4",
+    "learningObjective": "Reconhecer que o chamado ao esforço em Ageu vem acompanhado da promessa da presença de Deus.",
+    "evidence": [
+      "Ageu 2:4"
+    ],
+    "type": "connect",
+    "question": "O que Ageu 2:4 comunica que se liga a este contexto?",
+    "prompt": "O que Ageu 2:4 comunica que se liga a este contexto?",
+    "cue": "O que Ageu 2:4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o texto se liga ao sentido central da missão.",
+    "feedbackWrong": {
+      "b": "A promessa \"eu sou convosco\" é dirigida a todo o povo, não só aos sacerdotes.",
+      "c": "O chamado ao esforço vem junto com a promessa da presença de Deus."
+    },
+    "passageText": "Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou convosco, diz Jeová dos exércitos.",
+    "passageA": {
+      "ref": "Ageu 2:4",
+      "text": "pois eu sou convosco, diz Jeová dos exércitos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Contexto: diante do medo de recomeçar uma obra que parecia menor, Deus responde com a promessa de sua presença."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Presença de Deus como coragem"
+      },
+      {
+        "id": "b",
+        "text": "Recompensa apenas para os sacerdotes"
+      },
+      {
+        "id": "c",
+        "text": "Ordem sem qualquer promessa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-02-eu-estou-convosco",
+    "id": "ageu-sem-ageu-ageu-02-eu-estou-convosco-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ageu 2:4",
+    "learningObjective": "Reconhecer que o chamado ao esforço em Ageu vem acompanhado da promessa da presença de Deus.",
+    "evidence": [
+      "Ageu 2:4"
+    ],
+    "type": "true_false",
+    "question": "Ageu 2:4 registra que Jeová pede esforço ao povo, mas nega qualquer promessa de estar com eles.",
+    "prompt": "Ageu 2:4 registra que Jeová pede esforço ao povo, mas nega qualquer promessa de estar com eles.",
+    "cue": "Ageu 2:4 registra que Jeová pede esforço ao povo, mas nega qualquer promessa de estar com eles.",
+    "feedbackCorrect": "Correto: o texto termina justamente com a promessa \"eu sou convosco\".",
+    "feedbackWrong": {
+      "true": "O versículo termina com a promessa \"pois eu sou convosco, diz Jeová dos exércitos\"."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou convosco, diz Jeová dos exércitos.",
+    "trail": "ageu",
+    "section": "ageu-ageu-02-eu-estou-convosco",
+    "id": "ageu-cam-ageu-ageu-02-eu-estou-convosco-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ageu 2:4",
+    "learningObjective": "Reconhecer que o chamado ao esforço em Ageu vem acompanhado da promessa da presença de Deus.",
+    "evidence": [
+      "Ageu 2:4"
+    ],
+    "type": "tap",
+    "question": "Em Ageu 2:4, toque a palavra que falta em \"Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e ___; pois eu sou convosco, diz Jeová dos exércitos.\"?",
+    "prompt": "Em Ageu 2:4, toque a palavra que falta em \"Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e ___; pois eu sou convosco, diz Jeová dos exércitos.\"?",
+    "cue": "Em Ageu 2:4, toque a palavra que falta em \"Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e ___; pois eu sou convosco, diz Jeová dos exércitos.\"?",
+    "feedbackCorrect": "Exato: \"trabalhai\" é a ordem dirigida a todo o povo da terra.",
+    "feedbackWrong": {
+      "b": "Essa palavra aparece antes, dirigida a Zorobabel e Josué.",
+      "c": "Essa palavra está na promessa final, não na ordem ao povo."
+    },
+    "passageText": "Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou convosco, diz Jeová dos exércitos.",
+    "template": "Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e ___; pois eu sou convosco, diz Jeová dos exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "trabalhai"
+      },
+      {
+        "id": "b",
+        "text": "Esforça-te"
+      },
+      {
+        "id": "c",
+        "text": "convosco"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-02-eu-estou-convosco",
+    "id": "ageu-cam-ageu-ageu-02-eu-estou-convosco-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ageu 2:4",
+    "learningObjective": "Reconhecer que o chamado ao esforço em Ageu vem acompanhado da promessa da presença de Deus.",
+    "evidence": [
+      "Ageu 2:4"
+    ],
+    "type": "choice",
+    "question": "Qual ideia melhor conecta Ageu 2:4 ao contexto da missão?",
+    "prompt": "Qual ideia melhor conecta Ageu 2:4 ao contexto da missão?",
+    "cue": "Qual ideia melhor conecta Ageu 2:4 ao contexto da missão?",
+    "feedbackCorrect": "Certo: o texto sustenta essa leitura com clareza.",
+    "feedbackWrong": {
+      "b": "O texto une esforço e presença de Deus, não substitui uma pela outra.",
+      "c": "O texto chama explicitamente \"todo o povo da terra\", não só as autoridades.",
+      "d": "Nada no texto associa o chamado a uma dúvida sobre a fé do povo."
+    },
+    "passageText": "Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou convosco, diz Jeová dos exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O chamado ao esforço vem com a promessa da presença de Deus, não como ordem fria."
+      },
+      {
+        "id": "b",
+        "text": "O texto sugere que o esforço humano substitui a necessidade da presença de Deus."
+      },
+      {
+        "id": "c",
+        "text": "A ordem de trabalhar é dirigida somente às autoridades políticas, não ao povo comum."
+      },
+      {
+        "id": "d",
+        "text": "A insistência no trabalho revela que Deus duvidava da fé do povo."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-02-eu-estou-convosco",
+    "id": "ageu-cam-ageu-ageu-02-eu-estou-convosco-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ageu 2:4",
+    "learningObjective": "Reconhecer que o chamado ao esforço em Ageu vem acompanhado da promessa da presença de Deus.",
+    "evidence": [
+      "Ageu 2:4"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Ageu 2:4?",
+    "prompt": "Como se encadeiam os eventos de Ageu 2:4?",
+    "cue": "Como se encadeiam os eventos de Ageu 2:4?",
+    "feedbackCorrect": "Certo: essa é a sequência que o texto mostra.",
+    "feedbackWrong": {
+      "b": "A ordem está deslocada: esse trecho vem depois no texto.",
+      "c": "Releia a sequência da passagem: esse trecho é o último."
+    },
+    "passageText": "Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou convosco, diz Jeová dos exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote"
+      },
+      {
+        "id": "b",
+        "text": "e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai"
+      },
+      {
+        "id": "c",
+        "text": "pois eu sou convosco, diz Jeová dos exércitos"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-02-eu-estou-convosco",
+    "id": "ageu-cam-ageu-ageu-02-eu-estou-convosco-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ageu 2:4",
+    "learningObjective": "Reconhecer que o chamado ao esforço em Ageu vem acompanhado da promessa da presença de Deus.",
+    "evidence": [
+      "Ageu 2:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"___, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou convosco, diz Jeová dos exércitos.\"",
+    "prompt": "Complete a frase: \"___, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou convosco, diz Jeová dos exércitos.\"",
+    "cue": "Complete a frase: \"___, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou convosco, diz Jeová dos exércitos.\"",
+    "feedbackCorrect": "Certo: \"Esforça-te\" é o chamado dirigido a Zorobabel e a Josué.",
+    "feedbackWrong": {
+      "b": "Essa palavra aparece depois, dirigida a todo o povo.",
+      "c": "Essa palavra está na promessa final, não no chamado inicial."
+    },
+    "passageText": "Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou convosco, diz Jeová dos exércitos.",
+    "template": "___, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou convosco, diz Jeová dos exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Esforça-te"
+      },
+      {
+        "id": "b",
+        "text": "trabalhai"
+      },
+      {
+        "id": "c",
+        "text": "convosco"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-02-eu-estou-convosco",
+    "id": "ageu-cam-ageu-ageu-02-eu-estou-convosco-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ageu 2:4",
+    "learningObjective": "Reconhecer que o chamado ao esforço em Ageu vem acompanhado da promessa da presença de Deus.",
+    "evidence": [
+      "Ageu 2:4"
+    ],
+    "type": "connect",
+    "question": "O que Ageu 2:4 comunica que se liga a este contexto?",
+    "prompt": "O que Ageu 2:4 comunica que se liga a este contexto?",
+    "cue": "O que Ageu 2:4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o texto se liga ao sentido central da missão.",
+    "feedbackWrong": {
+      "b": "A promessa \"eu sou convosco\" é justamente o apoio divino ao esforço.",
+      "c": "O chamado inclui \"todo o povo da terra\", não só as autoridades."
+    },
+    "passageText": "Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou convosco, diz Jeová dos exércitos.",
+    "passageA": {
+      "ref": "Ageu 2:4",
+      "text": "esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Contexto: o povo comparava o novo templo ao esplendor do antigo e se desanimava; a resposta de Deus não é sobre grandeza, mas presença."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ânimo apesar da comparação"
+      },
+      {
+        "id": "b",
+        "text": "Esforço sem nenhum apoio divino"
+      },
+      {
+        "id": "c",
+        "text": "Trabalho reservado só às autoridades"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-02-eu-estou-convosco",
+    "id": "ageu-cam-ageu-ageu-02-eu-estou-convosco-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ageu 2:4",
+    "learningObjective": "Reconhecer que o chamado ao esforço em Ageu vem acompanhado da promessa da presença de Deus.",
+    "evidence": [
+      "Ageu 2:4"
+    ],
+    "type": "true_false",
+    "question": "A ordem para trabalhar em Ageu 2:4 é sustentada pela promessa da presença de Deus, e não deixada apenas ao esforço humano.",
+    "prompt": "A ordem para trabalhar em Ageu 2:4 é sustentada pela promessa da presença de Deus, e não deixada apenas ao esforço humano.",
+    "cue": "A ordem para trabalhar em Ageu 2:4 é sustentada pela promessa da presença de Deus, e não deixada apenas ao esforço humano.",
+    "feedbackCorrect": "Correto: o texto une a ordem de trabalhar à promessa \"eu sou convosco\".",
+    "feedbackWrong": {
+      "false": "O texto encerra o chamado com a promessa da presença de Deus, sustentando a ordem dada."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou convosco, diz Jeová dos exércitos.",
+    "trail": "ageu",
+    "section": "ageu-ageu-02-eu-estou-convosco",
+    "id": "ageu-pro-ageu-ageu-02-eu-estou-convosco-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ageu 2:4",
+    "learningObjective": "Reconhecer que o chamado ao esforço em Ageu vem acompanhado da promessa da presença de Deus.",
+    "evidence": [
+      "Ageu 2:4"
+    ],
+    "type": "tap",
+    "question": "Em Ageu 2:4, toque a palavra que falta em \"Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou ___, diz Jeová dos exércitos.\"?",
+    "prompt": "Em Ageu 2:4, toque a palavra que falta em \"Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou ___, diz Jeová dos exércitos.\"?",
+    "cue": "Em Ageu 2:4, toque a palavra que falta em \"Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou ___, diz Jeová dos exércitos.\"?",
+    "feedbackCorrect": "Exato: \"convosco\" nomeia a promessa que sustenta o chamado ao esforço.",
+    "feedbackWrong": {
+      "b": "Essa palavra abre o chamado, mas não nomeia a promessa final.",
+      "c": "Essa palavra é a ordem dada, não a promessa que a sustenta."
+    },
+    "passageText": "Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou convosco, diz Jeová dos exércitos.",
+    "template": "Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou ___, diz Jeová dos exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "convosco"
+      },
+      {
+        "id": "b",
+        "text": "Esforça-te"
+      },
+      {
+        "id": "c",
+        "text": "trabalhai"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-02-eu-estou-convosco",
+    "id": "ageu-pro-ageu-ageu-02-eu-estou-convosco-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ageu 2:4",
+    "learningObjective": "Reconhecer que o chamado ao esforço em Ageu vem acompanhado da promessa da presença de Deus.",
+    "evidence": [
+      "Ageu 2:4"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de Ageu 2:4?",
+    "prompt": "Qual leitura interpreta melhor o sentido de Ageu 2:4?",
+    "cue": "Qual leitura interpreta melhor o sentido de Ageu 2:4?",
+    "feedbackCorrect": "Certo: o texto sustenta essa leitura com clareza.",
+    "feedbackWrong": {
+      "b": "A promessa é dada junto com a ordem, não como recompensa por mérito anterior.",
+      "c": "O texto não condiciona a promessa ao tamanho ou esplendor do templo.",
+      "d": "O texto sustenta esforço e promessa juntos, sem anular nenhum dos dois."
+    },
+    "passageText": "Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou convosco, diz Jeová dos exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "\"Eu sou convosco\": a força para reconstruir nasce da presença de Deus, não de nós."
+      },
+      {
+        "id": "b",
+        "text": "O texto ensina que a presença de Deus depende do esforço humano prévio."
+      },
+      {
+        "id": "c",
+        "text": "A passagem sugere que a obra só teria valor se o templo igualasse o esplendor do anterior."
+      },
+      {
+        "id": "d",
+        "text": "O chamado ao esforço anula qualquer promessa de acompanhamento divino."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-02-eu-estou-convosco",
+    "id": "ageu-pro-ageu-ageu-02-eu-estou-convosco-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ageu 2:4",
+    "learningObjective": "Reconhecer que o chamado ao esforço em Ageu vem acompanhado da promessa da presença de Deus.",
+    "evidence": [
+      "Ageu 2:4"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Ageu 2:4?",
+    "prompt": "Qual sequência revela o sentido de Ageu 2:4?",
+    "cue": "Qual sequência revela o sentido de Ageu 2:4?",
+    "feedbackCorrect": "Certo: essa é a sequência que o texto mostra.",
+    "feedbackWrong": {
+      "b": "A ordem está deslocada: esse trecho vem depois no texto.",
+      "c": "Releia a sequência da passagem: esse trecho é o último."
+    },
+    "passageText": "Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou convosco, diz Jeová dos exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote"
+      },
+      {
+        "id": "b",
+        "text": "e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai"
+      },
+      {
+        "id": "c",
+        "text": "pois eu sou convosco, diz Jeová dos exércitos"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-02-eu-estou-convosco",
+    "id": "ageu-pro-ageu-ageu-02-eu-estou-convosco-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ageu 2:4",
+    "learningObjective": "Reconhecer que o chamado ao esforço em Ageu vem acompanhado da promessa da presença de Deus.",
+    "evidence": [
+      "Ageu 2:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou ___, diz Jeová dos exércitos.\"",
+    "prompt": "Complete a frase: \"Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou ___, diz Jeová dos exércitos.\"",
+    "cue": "Complete a frase: \"Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou ___, diz Jeová dos exércitos.\"",
+    "feedbackCorrect": "Certo: \"convosco\" é a palavra que sustenta a promessa da presença de Deus.",
+    "feedbackWrong": {
+      "b": "Essa palavra abre o chamado, mas não é a base da promessa.",
+      "c": "Essa palavra é a ordem dada, e não a promessa que a sustenta."
+    },
+    "passageText": "Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou convosco, diz Jeová dos exércitos.",
+    "template": "Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou ___, diz Jeová dos exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "convosco"
+      },
+      {
+        "id": "b",
+        "text": "Esforça-te"
+      },
+      {
+        "id": "c",
+        "text": "trabalhai"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-02-eu-estou-convosco",
+    "id": "ageu-pro-ageu-ageu-02-eu-estou-convosco-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ageu 2:4",
+    "learningObjective": "Reconhecer que o chamado ao esforço em Ageu vem acompanhado da promessa da presença de Deus.",
+    "evidence": [
+      "Ageu 2:4"
+    ],
+    "type": "connect",
+    "question": "O que Ageu 2:4 comunica que se liga a este contexto?",
+    "prompt": "O que Ageu 2:4 comunica que se liga a este contexto?",
+    "cue": "O que Ageu 2:4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o texto se liga ao sentido central da missão.",
+    "feedbackWrong": {
+      "b": "O texto atribui a força à presença de Deus, não à capacidade humana.",
+      "c": "A promessa não depende de igualar o templo anterior."
+    },
+    "passageText": "Esforça-te, Zorobabel, diz Jeová; esforça-te, Josué, filho de Jozadaque, sumo sacerdote; e esforçai-vos, todo o povo da terra, diz Jeová, e trabalhai; pois eu sou convosco, diz Jeová dos exércitos.",
+    "passageA": {
+      "ref": "Ageu 2:4",
+      "text": "pois eu sou convosco, diz Jeová dos exércitos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Contexto: a força para reconstruir não vem da capacidade do povo, mas da presença que Deus promete sustentar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Força que nasce da presença de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Capacidade humana como base do sucesso"
+      },
+      {
+        "id": "c",
+        "text": "Promessa condicionada ao templo antigo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-02-eu-estou-convosco",
+    "id": "ageu-pro-ageu-ageu-02-eu-estou-convosco-06"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ageu 1:4; 2:4",
+    "learningObjective": "Unir os dois chamados de Ageu: reordenar prioridades diante de Deus e agir com a confiança de sua presença.",
+    "evidence": [
+      "Ageu 1:4",
+      "Ageu 2:4"
+    ],
+    "type": "true_false",
+    "question": "O desafio final de Ageu une o chamado a reordenar prioridades com a promessa da presença de Deus para agir.",
+    "prompt": "O desafio final de Ageu une o chamado a reordenar prioridades com a promessa da presença de Deus para agir.",
+    "cue": "O desafio final de Ageu une o chamado a reordenar prioridades com a promessa da presença de Deus para agir.",
+    "feedbackCorrect": "Correto: os dois chamados do livro aparecem juntos nesta revisão.",
+    "feedbackWrong": {
+      "false": "Releia as duas missões: prioridade (Ageu 1) e presença para agir (Ageu 2) se conectam."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou convosco, diz Jeová dos exércitos.",
+    "trail": "ageu",
+    "section": "ageu-ageu-03-desafio-ageu",
+    "id": "ageu-sem-ageu-ageu-03-desafio-ageu-01"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ageu 1:4; 2:4",
+    "learningObjective": "Unir os dois chamados de Ageu: reordenar prioridades diante de Deus e agir com a confiança de sua presença.",
+    "evidence": [
+      "Ageu 1:4",
+      "Ageu 2:4"
+    ],
+    "type": "tap",
+    "question": "Em Ageu 1:4; 2:4, toque a palavra que falta em \"Não é tempo de habitardes em casas ___ enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou convosco, diz Jeová dos exércitos.\"?",
+    "prompt": "Em Ageu 1:4; 2:4, toque a palavra que falta em \"Não é tempo de habitardes em casas ___ enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou convosco, diz Jeová dos exércitos.\"?",
+    "cue": "Em Ageu 1:4; 2:4, toque a palavra que falta em \"Não é tempo de habitardes em casas ___ enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou convosco, diz Jeová dos exércitos.\"?",
+    "feedbackCorrect": "Exato: \"forradas\" descreve as casas que o povo priorizava.",
+    "feedbackWrong": {
+      "b": "Essa palavra descreve a casa de Jeová, não as casas do povo.",
+      "c": "Essa palavra pertence à promessa da segunda parte do texto."
+    },
+    "passageText": "Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou convosco, diz Jeová dos exércitos.",
+    "template": "Não é tempo de habitardes em casas ___ enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou convosco, diz Jeová dos exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "forradas"
+      },
+      {
+        "id": "b",
+        "text": "deserta"
+      },
+      {
+        "id": "c",
+        "text": "convosco"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-03-desafio-ageu",
+    "id": "ageu-sem-ageu-ageu-03-desafio-ageu-02"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ageu 1:4; 2:4",
+    "learningObjective": "Unir os dois chamados de Ageu: reordenar prioridades diante de Deus e agir com a confiança de sua presença.",
+    "evidence": [
+      "Ageu 1:4",
+      "Ageu 2:4"
+    ],
+    "type": "choice",
+    "question": "Qual afirmação é feita diretamente pelo texto em Ageu 1:4; 2:4?",
+    "prompt": "Qual afirmação é feita diretamente pelo texto em Ageu 1:4; 2:4?",
+    "cue": "Qual afirmação é feita diretamente pelo texto em Ageu 1:4; 2:4?",
+    "feedbackCorrect": "Certo: o texto sustenta essa leitura com clareza.",
+    "feedbackWrong": {
+      "b": "O texto fala de prioridade e presença, não de uma data específica.",
+      "c": "Não há genealogia nesta síntese das duas missões.",
+      "d": "A síntese não trata de materiais de construção."
+    },
+    "passageText": "Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou convosco, diz Jeová dos exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O texto une reordenar prioridades e agir com a certeza da presença de Deus."
+      },
+      {
+        "id": "b",
+        "text": "O texto anuncia apenas a data exata da reconstrução do templo."
+      },
+      {
+        "id": "c",
+        "text": "O texto trata somente da genealogia de Zorobabel."
+      },
+      {
+        "id": "d",
+        "text": "O texto descreve unicamente os materiais usados na construção."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-03-desafio-ageu",
+    "id": "ageu-sem-ageu-ageu-03-desafio-ageu-03"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ageu 1:4; 2:4",
+    "learningObjective": "Unir os dois chamados de Ageu: reordenar prioridades diante de Deus e agir com a confiança de sua presença.",
+    "evidence": [
+      "Ageu 1:4",
+      "Ageu 2:4"
+    ],
+    "type": "order",
+    "question": "Qual sequência mostra a ordem dos fatos em Ageu 1:4; 2:4?",
+    "prompt": "Qual sequência mostra a ordem dos fatos em Ageu 1:4; 2:4?",
+    "cue": "Qual sequência mostra a ordem dos fatos em Ageu 1:4; 2:4?",
+    "feedbackCorrect": "Certo: essa é a sequência que o texto mostra.",
+    "feedbackWrong": {
+      "b": "A ordem está deslocada: esse trecho vem depois no texto.",
+      "c": "Releia a sequência da passagem: esse trecho é o último."
+    },
+    "passageText": "Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou convosco, diz Jeová dos exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta"
+      },
+      {
+        "id": "b",
+        "text": "esforçai-vos e trabalhai"
+      },
+      {
+        "id": "c",
+        "text": "pois eu sou convosco, diz Jeová dos exércitos"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-03-desafio-ageu",
+    "id": "ageu-sem-ageu-ageu-03-desafio-ageu-04"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ageu 1:4; 2:4",
+    "learningObjective": "Unir os dois chamados de Ageu: reordenar prioridades diante de Deus e agir com a confiança de sua presença.",
+    "evidence": [
+      "Ageu 1:4",
+      "Ageu 2:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está ___; esforçai-vos e trabalhai, pois eu sou convosco, diz Jeová dos exércitos.\"",
+    "prompt": "Complete a frase: \"Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está ___; esforçai-vos e trabalhai, pois eu sou convosco, diz Jeová dos exércitos.\"",
+    "cue": "Complete a frase: \"Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está ___; esforçai-vos e trabalhai, pois eu sou convosco, diz Jeová dos exércitos.\"",
+    "feedbackCorrect": "Certo: \"deserta\" descreve a casa de Jeová enquanto o povo cuidava de si.",
+    "feedbackWrong": {
+      "b": "Essa palavra descreve as casas do povo, não a casa de Jeová.",
+      "c": "Essa palavra pertence à promessa da segunda parte do texto."
+    },
+    "passageText": "Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou convosco, diz Jeová dos exércitos.",
+    "template": "Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está ___; esforçai-vos e trabalhai, pois eu sou convosco, diz Jeová dos exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "deserta"
+      },
+      {
+        "id": "b",
+        "text": "forradas"
+      },
+      {
+        "id": "c",
+        "text": "convosco"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-03-desafio-ageu",
+    "id": "ageu-sem-ageu-ageu-03-desafio-ageu-05"
+  },
+  {
+    "difficulty": "semente",
+    "skill": "observe",
+    "verseRef": "Ageu 1:4; 2:4",
+    "learningObjective": "Unir os dois chamados de Ageu: reordenar prioridades diante de Deus e agir com a confiança de sua presença.",
+    "evidence": [
+      "Ageu 1:4",
+      "Ageu 2:4"
+    ],
+    "type": "connect",
+    "question": "O que Ageu 1:4; 2:4 comunica que se liga a este contexto?",
+    "prompt": "O que Ageu 1:4; 2:4 comunica que se liga a este contexto?",
+    "cue": "O que Ageu 1:4; 2:4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o texto se liga ao sentido central da missão.",
+    "feedbackWrong": {
+      "b": "O livro trata o adiamento como algo com peso, cobrado por Deus.",
+      "c": "A promessa da presença vem junto com o chamado a agir, não o dispensa."
+    },
+    "passageText": "Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou convosco, diz Jeová dos exércitos.",
+    "passageA": {
+      "ref": "Ageu 1:4",
+      "text": "É tempo de habitardes vós mesmos nas vossas casas forradas de madeira, estando esta casa deserta?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Contexto: o desafio reúne os dois chamados de Ageu — reordenar prioridades e confiar na presença de Deus para agir."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Prioridade e presença diante de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Prioridade sem nenhuma cobrança"
+      },
+      {
+        "id": "c",
+        "text": "Presença que dispensa obediência"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-03-desafio-ageu",
+    "id": "ageu-sem-ageu-ageu-03-desafio-ageu-06"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ageu 1:4; 2:4",
+    "learningObjective": "Unir os dois chamados de Ageu: reordenar prioridades diante de Deus e agir com a confiança de sua presença.",
+    "evidence": [
+      "Ageu 1:4",
+      "Ageu 2:4"
+    ],
+    "type": "true_false",
+    "question": "O desafio final de Ageu ensina que o povo deveria agir sozinho, sem qualquer promessa de presença divina.",
+    "prompt": "O desafio final de Ageu ensina que o povo deveria agir sozinho, sem qualquer promessa de presença divina.",
+    "cue": "O desafio final de Ageu ensina que o povo deveria agir sozinho, sem qualquer promessa de presença divina.",
+    "feedbackCorrect": "Correto: Ageu 2:4 promete justamente \"eu sou convosco\" para sustentar a ação.",
+    "feedbackWrong": {
+      "true": "Ageu 2:4 promete a presença de Deus junto com o chamado a agir."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "passageText": "Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou convosco, diz Jeová dos exércitos.",
+    "trail": "ageu",
+    "section": "ageu-ageu-03-desafio-ageu",
+    "id": "ageu-cam-ageu-ageu-03-desafio-ageu-01"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ageu 1:4; 2:4",
+    "learningObjective": "Unir os dois chamados de Ageu: reordenar prioridades diante de Deus e agir com a confiança de sua presença.",
+    "evidence": [
+      "Ageu 1:4",
+      "Ageu 2:4"
+    ],
+    "type": "tap",
+    "question": "Em Ageu 1:4; 2:4, toque a palavra que falta em \"Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou ___, diz Jeová dos exércitos.\"?",
+    "prompt": "Em Ageu 1:4; 2:4, toque a palavra que falta em \"Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou ___, diz Jeová dos exércitos.\"?",
+    "cue": "Em Ageu 1:4; 2:4, toque a palavra que falta em \"Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou ___, diz Jeová dos exércitos.\"?",
+    "feedbackCorrect": "Exato: \"convosco\" nomeia a presença que sustenta a ação do povo.",
+    "feedbackWrong": {
+      "b": "Essa palavra pertence à primeira parte, sobre as casas do povo.",
+      "c": "Essa palavra é a ordem de agir, não a promessa que a sustenta."
+    },
+    "passageText": "Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou convosco, diz Jeová dos exércitos.",
+    "template": "Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou ___, diz Jeová dos exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "convosco"
+      },
+      {
+        "id": "b",
+        "text": "forradas"
+      },
+      {
+        "id": "c",
+        "text": "trabalhai"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-03-desafio-ageu",
+    "id": "ageu-cam-ageu-ageu-03-desafio-ageu-02"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ageu 1:4; 2:4",
+    "learningObjective": "Unir os dois chamados de Ageu: reordenar prioridades diante de Deus e agir com a confiança de sua presença.",
+    "evidence": [
+      "Ageu 1:4",
+      "Ageu 2:4"
+    ],
+    "type": "choice",
+    "question": "Qual ideia melhor conecta Ageu 1:4; 2:4 ao contexto da missão?",
+    "prompt": "Qual ideia melhor conecta Ageu 1:4; 2:4 ao contexto da missão?",
+    "cue": "Qual ideia melhor conecta Ageu 1:4; 2:4 ao contexto da missão?",
+    "feedbackCorrect": "Certo: o texto sustenta essa leitura com clareza.",
+    "feedbackWrong": {
+      "b": "O livro pede ação concreta, não apenas boa intenção.",
+      "c": "A presença de Deus acompanha a mudança de prioridades, não a substitui.",
+      "d": "Ageu 2 oferece um caminho de resposta: esforçar-se e trabalhar."
+    },
+    "passageText": "Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou convosco, diz Jeová dos exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reordenar prioridades sem agir não basta; agir sem prioridades certas também não."
+      },
+      {
+        "id": "b",
+        "text": "A mensagem sugere que basta ter boas intenções, sem necessidade de ação concreta."
+      },
+      {
+        "id": "c",
+        "text": "O texto indica que a presença de Deus substitui qualquer chamado à mudança de prioridades."
+      },
+      {
+        "id": "d",
+        "text": "A ênfase do livro está apenas na crítica, sem oferecer nenhum caminho de resposta."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-03-desafio-ageu",
+    "id": "ageu-cam-ageu-ageu-03-desafio-ageu-03"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ageu 1:4; 2:4",
+    "learningObjective": "Unir os dois chamados de Ageu: reordenar prioridades diante de Deus e agir com a confiança de sua presença.",
+    "evidence": [
+      "Ageu 1:4",
+      "Ageu 2:4"
+    ],
+    "type": "order",
+    "question": "Como se encadeiam os eventos de Ageu 1:4; 2:4?",
+    "prompt": "Como se encadeiam os eventos de Ageu 1:4; 2:4?",
+    "cue": "Como se encadeiam os eventos de Ageu 1:4; 2:4?",
+    "feedbackCorrect": "Certo: essa é a sequência que o texto mostra.",
+    "feedbackWrong": {
+      "b": "A ordem está deslocada: esse trecho vem depois no texto.",
+      "c": "Releia a sequência da passagem: esse trecho é o último."
+    },
+    "passageText": "Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou convosco, diz Jeová dos exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta"
+      },
+      {
+        "id": "b",
+        "text": "esforçai-vos e trabalhai"
+      },
+      {
+        "id": "c",
+        "text": "pois eu sou convosco, diz Jeová dos exércitos"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-03-desafio-ageu",
+    "id": "ageu-cam-ageu-ageu-03-desafio-ageu-04"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ageu 1:4; 2:4",
+    "learningObjective": "Unir os dois chamados de Ageu: reordenar prioridades diante de Deus e agir com a confiança de sua presença.",
+    "evidence": [
+      "Ageu 1:4",
+      "Ageu 2:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Não é tempo de habitardes em casas ___ enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou convosco, diz Jeová dos exércitos.\"",
+    "prompt": "Complete a frase: \"Não é tempo de habitardes em casas ___ enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou convosco, diz Jeová dos exércitos.\"",
+    "cue": "Complete a frase: \"Não é tempo de habitardes em casas ___ enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou convosco, diz Jeová dos exércitos.\"",
+    "feedbackCorrect": "Certo: \"forradas\" descreve as casas que o povo priorizava sobre a de Deus.",
+    "feedbackWrong": {
+      "b": "Essa palavra descreve a casa de Jeová, não as casas do povo.",
+      "c": "Essa palavra pertence à promessa da segunda parte do texto."
+    },
+    "passageText": "Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou convosco, diz Jeová dos exércitos.",
+    "template": "Não é tempo de habitardes em casas ___ enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou convosco, diz Jeová dos exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "forradas"
+      },
+      {
+        "id": "b",
+        "text": "deserta"
+      },
+      {
+        "id": "c",
+        "text": "convosco"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-03-desafio-ageu",
+    "id": "ageu-cam-ageu-ageu-03-desafio-ageu-05"
+  },
+  {
+    "difficulty": "caminhada",
+    "skill": "understand",
+    "verseRef": "Ageu 1:4; 2:4",
+    "learningObjective": "Unir os dois chamados de Ageu: reordenar prioridades diante de Deus e agir com a confiança de sua presença.",
+    "evidence": [
+      "Ageu 1:4",
+      "Ageu 2:4"
+    ],
+    "type": "connect",
+    "question": "O que Ageu 1:4; 2:4 comunica que se liga a este contexto?",
+    "prompt": "O que Ageu 1:4; 2:4 comunica que se liga a este contexto?",
+    "cue": "O que Ageu 1:4; 2:4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o texto se liga ao sentido central da missão.",
+    "feedbackWrong": {
+      "b": "O texto pede esforço concreto, não apenas intenção.",
+      "c": "A presença de Deus sustenta a mudança de prioridades, não a anula."
+    },
+    "passageText": "Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou convosco, diz Jeová dos exércitos.",
+    "passageA": {
+      "ref": "Ageu 2:4",
+      "text": "esforçai-vos e trabalhai, pois eu sou convosco, diz Jeová dos exércitos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Contexto: depois de reordenar prioridades, o povo precisa de coragem para agir, e essa coragem vem da presença prometida por Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Coragem para agir com Deus"
+      },
+      {
+        "id": "b",
+        "text": "Boas intenções bastam sozinhas"
+      },
+      {
+        "id": "c",
+        "text": "Presença que anula a mudança"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-03-desafio-ageu",
+    "id": "ageu-cam-ageu-ageu-03-desafio-ageu-06"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ageu 1:4; 2:4",
+    "learningObjective": "Unir os dois chamados de Ageu: reordenar prioridades diante de Deus e agir com a confiança de sua presença.",
+    "evidence": [
+      "Ageu 1:4",
+      "Ageu 2:4"
+    ],
+    "type": "true_false",
+    "question": "A leitura conjunta de Ageu 1 e 2 sustenta que prioridade sem presença de Deus, e presença sem mudança de prioridade, ficam incompletas.",
+    "prompt": "A leitura conjunta de Ageu 1 e 2 sustenta que prioridade sem presença de Deus, e presença sem mudança de prioridade, ficam incompletas.",
+    "cue": "A leitura conjunta de Ageu 1 e 2 sustenta que prioridade sem presença de Deus, e presença sem mudança de prioridade, ficam incompletas.",
+    "feedbackCorrect": "Correto: os dois chamados do livro se sustentam mutuamente.",
+    "feedbackWrong": {
+      "false": "As duas missões mostram que prioridade e presença caminham juntas no livro."
+    },
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "passageText": "Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou convosco, diz Jeová dos exércitos.",
+    "trail": "ageu",
+    "section": "ageu-ageu-03-desafio-ageu",
+    "id": "ageu-pro-ageu-ageu-03-desafio-ageu-01"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ageu 1:4; 2:4",
+    "learningObjective": "Unir os dois chamados de Ageu: reordenar prioridades diante de Deus e agir com a confiança de sua presença.",
+    "evidence": [
+      "Ageu 1:4",
+      "Ageu 2:4"
+    ],
+    "type": "tap",
+    "question": "Em Ageu 1:4; 2:4, toque a palavra que falta em \"Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta; esforçai-vos e ___, pois eu sou convosco, diz Jeová dos exércitos.\"?",
+    "prompt": "Em Ageu 1:4; 2:4, toque a palavra que falta em \"Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta; esforçai-vos e ___, pois eu sou convosco, diz Jeová dos exércitos.\"?",
+    "cue": "Em Ageu 1:4; 2:4, toque a palavra que falta em \"Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta; esforçai-vos e ___, pois eu sou convosco, diz Jeová dos exércitos.\"?",
+    "feedbackCorrect": "Exato: \"trabalhai\" é a ação concreta pedida depois da correção de prioridades.",
+    "feedbackWrong": {
+      "b": "Essa palavra pertence à primeira parte, sobre as casas do povo.",
+      "c": "Essa palavra nomeia a promessa, não a ação pedida."
+    },
+    "passageText": "Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou convosco, diz Jeová dos exércitos.",
+    "template": "Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta; esforçai-vos e ___, pois eu sou convosco, diz Jeová dos exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "trabalhai"
+      },
+      {
+        "id": "b",
+        "text": "forradas"
+      },
+      {
+        "id": "c",
+        "text": "convosco"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-03-desafio-ageu",
+    "id": "ageu-pro-ageu-ageu-03-desafio-ageu-02"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ageu 1:4; 2:4",
+    "learningObjective": "Unir os dois chamados de Ageu: reordenar prioridades diante de Deus e agir com a confiança de sua presença.",
+    "evidence": [
+      "Ageu 1:4",
+      "Ageu 2:4"
+    ],
+    "type": "choice",
+    "question": "Qual leitura interpreta melhor o sentido de Ageu 1:4; 2:4?",
+    "prompt": "Qual leitura interpreta melhor o sentido de Ageu 1:4; 2:4?",
+    "cue": "Qual leitura interpreta melhor o sentido de Ageu 1:4; 2:4?",
+    "feedbackCorrect": "Certo: o texto sustenta essa leitura com clareza.",
+    "feedbackWrong": {
+      "b": "A presença de Deus é prometida junto com o chamado a responder e agir.",
+      "c": "A bênção depende da prioridade unida à ação sustentada pela presença de Deus.",
+      "d": "Ageu 1 trata a construção como urgente, não como algo opcional."
+    },
+    "passageText": "Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou convosco, diz Jeová dos exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Prioridade sem presença vira legalismo; presença sem prioridade vira desculpa."
+      },
+      {
+        "id": "b",
+        "text": "O livro ensina que a presença de Deus é automática, sem resposta do povo."
+      },
+      {
+        "id": "c",
+        "text": "A mensagem final é que somente a prioridade material garante a bênção de Deus."
+      },
+      {
+        "id": "d",
+        "text": "O texto conclui que a construção do templo era opcional para o povo daquele tempo."
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-03-desafio-ageu",
+    "id": "ageu-pro-ageu-ageu-03-desafio-ageu-03"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ageu 1:4; 2:4",
+    "learningObjective": "Unir os dois chamados de Ageu: reordenar prioridades diante de Deus e agir com a confiança de sua presença.",
+    "evidence": [
+      "Ageu 1:4",
+      "Ageu 2:4"
+    ],
+    "type": "order",
+    "question": "Qual sequência revela o sentido de Ageu 1:4; 2:4?",
+    "prompt": "Qual sequência revela o sentido de Ageu 1:4; 2:4?",
+    "cue": "Qual sequência revela o sentido de Ageu 1:4; 2:4?",
+    "feedbackCorrect": "Certo: essa é a sequência que o texto mostra.",
+    "feedbackWrong": {
+      "b": "A ordem está deslocada: esse trecho vem depois no texto.",
+      "c": "Releia a sequência da passagem: esse trecho é o último."
+    },
+    "passageText": "Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou convosco, diz Jeová dos exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta"
+      },
+      {
+        "id": "b",
+        "text": "esforçai-vos e trabalhai"
+      },
+      {
+        "id": "c",
+        "text": "pois eu sou convosco, diz Jeová dos exércitos"
+      }
+    ],
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-03-desafio-ageu",
+    "id": "ageu-pro-ageu-ageu-03-desafio-ageu-04"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ageu 1:4; 2:4",
+    "learningObjective": "Unir os dois chamados de Ageu: reordenar prioridades diante de Deus e agir com a confiança de sua presença.",
+    "evidence": [
+      "Ageu 1:4",
+      "Ageu 2:4"
+    ],
+    "type": "complete",
+    "question": "Complete a frase: \"Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou ___, diz Jeová dos exércitos.\"",
+    "prompt": "Complete a frase: \"Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou ___, diz Jeová dos exércitos.\"",
+    "cue": "Complete a frase: \"Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou ___, diz Jeová dos exércitos.\"",
+    "feedbackCorrect": "Certo: \"convosco\" nomeia a presença que sustenta a mudança de prioridades.",
+    "feedbackWrong": {
+      "b": "Essa palavra pertence à primeira parte, sobre as casas do povo.",
+      "c": "Essa palavra é a ação pedida, não a promessa que a sustenta."
+    },
+    "passageText": "Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou convosco, diz Jeová dos exércitos.",
+    "template": "Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou ___, diz Jeová dos exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "convosco"
+      },
+      {
+        "id": "b",
+        "text": "forradas"
+      },
+      {
+        "id": "c",
+        "text": "trabalhai"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-03-desafio-ageu",
+    "id": "ageu-pro-ageu-ageu-03-desafio-ageu-05"
+  },
+  {
+    "difficulty": "profundezas",
+    "skill": "interpret",
+    "verseRef": "Ageu 1:4; 2:4",
+    "learningObjective": "Unir os dois chamados de Ageu: reordenar prioridades diante de Deus e agir com a confiança de sua presença.",
+    "evidence": [
+      "Ageu 1:4",
+      "Ageu 2:4"
+    ],
+    "type": "connect",
+    "question": "O que Ageu 1:4; 2:4 comunica que se liga a este contexto?",
+    "prompt": "O que Ageu 1:4; 2:4 comunica que se liga a este contexto?",
+    "cue": "O que Ageu 1:4; 2:4 comunica que se liga a este contexto?",
+    "feedbackCorrect": "Certo: o texto se liga ao sentido central da missão.",
+    "feedbackWrong": {
+      "b": "O livro liga a mudança de prioridade à promessa da presença de Deus.",
+      "c": "A presença é prometida junto com o chamado a agir, não à parte dele."
+    },
+    "passageText": "Não é tempo de habitardes em casas forradas enquanto a casa de Jeová está deserta; esforçai-vos e trabalhai, pois eu sou convosco, diz Jeová dos exércitos.",
+    "passageA": {
+      "ref": "Ageu 1:4; 2:4",
+      "text": "estando esta casa deserta?... pois eu sou convosco, diz Jeová dos exércitos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Contexto: prioridade sem obediência concreta fica vazia, e presença de Deus sem resposta do povo não é o que o livro ensina."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fé que une prioridade e obediência"
+      },
+      {
+        "id": "b",
+        "text": "Legalismo sem presença de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Presença automática sem resposta humana"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "trail": "ageu",
+    "section": "ageu-ageu-03-desafio-ageu",
+    "id": "ageu-pro-ageu-ageu-03-desafio-ageu-06"
+  }
+]
