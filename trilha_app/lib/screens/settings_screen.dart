@@ -587,7 +587,7 @@ class _SettingsScreenState extends State<SettingsScreen>
         for (final goal in [1, 2, 3]) ...[
           if (goal > 1) const SizedBox(width: AppSpace.sm),
           Expanded(
-            child: _ChoiceTile(
+            child: AppChoiceTile(
               selected: progress.settings.dailyGoal == goal,
               onTap: () {
                 HapticFeedback.selectionClick();
@@ -633,7 +633,7 @@ class _SettingsScreenState extends State<SettingsScreen>
               builder: (context) {
                 final (scale, label) = steps[i];
                 final selected = (current - scale).abs() < 0.01;
-                return _ChoiceTile(
+                return AppChoiceTile(
                   selected: selected,
                   onTap: () {
                     HapticFeedback.selectionClick();
@@ -726,7 +726,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                       _genesisTrailSlug,
                       meta.difficulty.id,
                     );
-                    return _ChoiceTile(
+                    return AppChoiceTile(
                       selected: selected,
                       onTap: () {
                         if (locked) {
@@ -852,7 +852,7 @@ class _SettingsScreenState extends State<SettingsScreen>
             final isSelected = selected == mode;
             return SizedBox(
               width: cellW,
-              child: _ChoiceTile(
+              child: AppChoiceTile(
                 selected: isSelected,
                 onTap: () {
                   HapticFeedback.selectionClick();
@@ -1105,47 +1105,6 @@ class _SettingsDivider extends StatelessWidget {
         height: 1,
         thickness: 1,
         color: a.cardBorder.withValues(alpha: 0.55),
-      ),
-    );
-  }
-}
-
-/// Chip de escolha — mesmo padrão de Aparência (tile com borda / ouro).
-class _ChoiceTile extends StatelessWidget {
-  final bool selected;
-  final VoidCallback onTap;
-  final Widget child;
-
-  const _ChoiceTile({
-    required this.selected,
-    required this.onTap,
-    required this.child,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return Material(
-      color: Colors.transparent,
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(AppRadii.sm),
-        child: AnimatedContainer(
-          duration: const Duration(milliseconds: 200),
-          width: double.infinity,
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 12),
-          decoration: BoxDecoration(
-            gradient: selected ? AppGradients.gold : null,
-            color: selected ? null : a.cardFillSoft,
-            borderRadius: BorderRadius.circular(AppRadii.sm),
-            border: Border.all(
-              color: selected
-                  ? Colors.transparent
-                  : a.cardBorder.withValues(alpha: 0.55),
-            ),
-          ),
-          child: child,
-        ),
       ),
     );
   }

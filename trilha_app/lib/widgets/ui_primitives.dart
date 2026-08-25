@@ -349,3 +349,150 @@ class CardHeader extends StatelessWidget {
     );
   }
 }
+
+/// Estilo do chip selecionável.
+///
+/// - [soft]: fill + borda (planos, ordem de livros)
+/// - [solid]: tile ouro quando selecionado (abas de ranking)
+/// - [ghost]: só destaque sutil no selecionado (segmentos em glass)
+enum AppSelectChipStyle { soft, solid, ghost }
+
+/// Pill de escolha compartilhado — Bíblia, plano, liga, etc.
+class AppSelectChip extends StatelessWidget {
+  final String label;
+  final bool selected;
+  final VoidCallback? onTap;
+  final AppSelectChipStyle style;
+  final EdgeInsetsGeometry padding;
+  final BorderRadius borderRadius;
+  final double fontSize;
+  final FontWeight fontWeight;
+  final Color? unselectedColor;
+
+  const AppSelectChip({
+    super.key,
+    required this.label,
+    required this.selected,
+    this.onTap,
+    this.style = AppSelectChipStyle.soft,
+    this.padding = const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+    this.borderRadius = const BorderRadius.all(Radius.circular(AppRadii.pill)),
+    this.fontSize = 13,
+    this.fontWeight = FontWeight.w800,
+    this.unselectedColor,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final gold = style == AppSelectChipStyle.solid && selected;
+    final useCta = style != AppSelectChipStyle.soft;
+
+    final Color ink;
+    if (gold) {
+      ink = AppColors.inkOnAccent;
+    } else if (selected) {
+      ink = AppColors.accent;
+    } else {
+      ink = unselectedColor ??
+          (useCta ? a.textMuted(0.7) : a.text);
+    }
+
+    final BoxDecoration decoration;
+    switch (style) {
+      case AppSelectChipStyle.solid:
+        decoration = BoxDecoration(
+          gradient: gold ? AppGradients.gold : null,
+          borderRadius: borderRadius,
+        );
+      case AppSelectChipStyle.soft:
+        decoration = BoxDecoration(
+          color: selected
+              ? AppMetrics.accentFill(alpha: 0.22)
+              : a.cardFillSoft,
+          borderRadius: borderRadius,
+          border: Border.all(
+            color: selected
+                ? AppMetrics.accentBorder(alpha: 0.7)
+                : a.cardBorder,
+          ),
+        );
+      case AppSelectChipStyle.ghost:
+        decoration = BoxDecoration(
+          color: selected
+              ? Colors.white.withValues(alpha: 0.04)
+              : null,
+          borderRadius: borderRadius,
+          border: selected
+              ? Border.all(color: AppMetrics.accentBorder(alpha: 0.45))
+              : null,
+        );
+    }
+
+    final text = Text(
+      label,
+      textAlign: TextAlign.center,
+      style: useCta
+          ? AppTypography.cta(size: fontSize, color: ink)
+          : AppTypography.body(
+              size: fontSize,
+              weight: fontWeight,
+              color: ink,
+            ),
+    );
+
+    final body = Ink(padding: padding, decoration: decoration, child: text);
+    if (onTap == null) return body;
+
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: borderRadius,
+        child: body,
+      ),
+    );
+  }
+}
+
+/// Tile de escolha — gradiente ouro quando selecionado (Aparência, metas, etc.).
+class AppChoiceTile extends StatelessWidget {
+  final bool selected;
+  final VoidCallback onTap;
+  final Widget child;
+
+  const AppChoiceTile({
+    super.key,
+    required this.selected,
+    required this.onTap,
+    required this.child,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(AppRadii.sm),
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 200),
+          width: double.infinity,
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 12),
+          decoration: BoxDecoration(
+            gradient: selected ? AppGradients.gold : null,
+            color: selected ? null : a.cardFillSoft,
+            borderRadius: BorderRadius.circular(AppRadii.sm),
+            border: Border.all(
+              color: selected
+                  ? Colors.transparent
+                  : a.cardBorder.withValues(alpha: 0.55),
+            ),
+          ),
+          child: child,
+        ),
+      ),
+    );
+  }
+}

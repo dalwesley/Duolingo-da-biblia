@@ -948,29 +948,14 @@ class _SegmentTabs extends StatelessWidget {
   Widget _seg(BuildContext context, int i, String label) {
     final selected = index == i;
     return Expanded(
-      child: GestureDetector(
+      child: AppSelectChip(
+        label: label,
+        selected: selected,
         onTap: () => onChanged(i),
-        child: AnimatedContainer(
-          duration: const Duration(milliseconds: 200),
-          padding: const EdgeInsets.symmetric(vertical: 10),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(AppRadii.sm),
-            border: selected
-                ? Border.all(color: AppColors.accent.withValues(alpha: 0.45))
-                : null,
-            color: selected ? Colors.white.withValues(alpha: 0.04) : null,
-          ),
-          child: Text(
-            label,
-            textAlign: TextAlign.center,
-            style: AppTypography.cta(
-              size: 13,
-              color: selected
-                  ? AppColors.accent
-                  : Appearance.of(context).textMuted(0.7),
-            ),
-          ),
-        ),
+        style: AppSelectChipStyle.ghost,
+        fontSize: 13,
+        padding: const EdgeInsets.symmetric(vertical: 10),
+        borderRadius: const BorderRadius.all(Radius.circular(AppRadii.sm)),
       ),
     );
   }
@@ -1010,25 +995,14 @@ class _RankingPeriodTabs extends StatelessWidget {
     required bool value,
   }) {
     final selected = overall == value;
-    return GestureDetector(
+    return AppSelectChip(
+      label: label,
+      selected: selected,
       onTap: () => onChanged(value),
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 200),
-        padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 8),
-        decoration: BoxDecoration(
-          gradient: selected ? AppGradients.gold : null,
-          borderRadius: BorderRadius.circular(AppRadii.sm),
-        ),
-        child: Text(
-          label,
-          style: AppTypography.cta(
-            size: 12,
-            color: selected
-                ? AppColors.inkOnAccent
-                : Appearance.of(context).textMuted(0.7),
-          ),
-        ),
-      ),
+      style: AppSelectChipStyle.solid,
+      fontSize: 12,
+      padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 8),
+      borderRadius: const BorderRadius.all(Radius.circular(AppRadii.sm)),
     );
   }
 }

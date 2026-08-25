@@ -505,35 +505,11 @@ class _BrowseOrderToggle extends StatelessWidget {
             for (final o in BibleReadingOrder.values) ...[
               if (o != BibleReadingOrder.values.first) const SizedBox(width: 8),
               Expanded(
-                child: Material(
-                  color: Colors.transparent,
-                  child: InkWell(
-                    onTap: () => onChanged(o),
-                    borderRadius: BorderRadius.circular(AppRadii.pill),
-                    child: Ink(
-                      padding: const EdgeInsets.symmetric(vertical: 10),
-                      decoration: BoxDecoration(
-                        color: value == o
-                            ? AppColors.cedar.withValues(alpha: 0.22)
-                            : a.cardFillSoft,
-                        borderRadius: BorderRadius.circular(AppRadii.pill),
-                        border: Border.all(
-                          color: value == o
-                              ? AppColors.cedar.withValues(alpha: 0.7)
-                              : a.cardBorder,
-                        ),
-                      ),
-                      child: Text(
-                        o.shortLabel,
-                        textAlign: TextAlign.center,
-                        style: AppTypography.body(
-                          size: 13,
-                          weight: FontWeight.w800,
-                          color: value == o ? AppColors.cedar : a.text,
-                        ),
-                      ),
-                    ),
-                  ),
+                child: AppSelectChip(
+                  label: o.shortLabel,
+                  selected: value == o,
+                  onTap: () => onChanged(o),
+                  padding: const EdgeInsets.symmetric(vertical: 10),
                 ),
               ),
             ],
@@ -699,14 +675,14 @@ class _TranslationPicker extends StatelessWidget {
                             ),
                             decoration: BoxDecoration(
                               color: isSelected
-                                  ? AppColors.cedar.withValues(alpha: 0.14)
+                                  ? AppMetrics.accentFill(alpha: 0.18)
                                   : AppColors.textOnDark.withValues(
                                       alpha: 0.05,
                                     ),
                               borderRadius: BorderRadius.circular(AppRadii.md),
                               border: Border.all(
                                 color: isSelected
-                                    ? AppColors.cedar.withValues(alpha: 0.7)
+                                    ? AppMetrics.accentBorder(alpha: 0.75)
                                     : AppColors.textOnDark.withValues(
                                         alpha: 0.1,
                                       ),
@@ -720,9 +696,13 @@ class _TranslationPicker extends StatelessWidget {
                                   alignment: Alignment.center,
                                   decoration: BoxDecoration(
                                     color: enabled
-                                        ? AppColors.cedar.withValues(
-                                            alpha: 0.16,
-                                          )
+                                        ? (isSelected
+                                              ? AppMetrics.accentFill(
+                                                  alpha: 0.28,
+                                                )
+                                              : Colors.white.withValues(
+                                                  alpha: 0.08,
+                                                ))
                                         : Colors.white.withValues(alpha: 0.06),
                                     borderRadius: BorderRadius.circular(
                                       AppRadii.sm,
@@ -733,7 +713,11 @@ class _TranslationPicker extends StatelessWidget {
                                     style: AppTypography.label(
                                       size: 12,
                                       color: enabled
-                                          ? AppColors.cedar
+                                          ? (isSelected
+                                                ? AppColors.accent
+                                                : Colors.white.withValues(
+                                                    alpha: 0.85,
+                                                  ))
                                           : Colors.white.withValues(
                                               alpha: 0.35,
                                             ),
@@ -774,7 +758,7 @@ class _TranslationPicker extends StatelessWidget {
                                   const CinematicIcon(
                                     glyph: CinematicGlyph.check,
                                     size: 20,
-                                    accent: AppColors.cedar,
+                                    accent: AppColors.accent,
                                     framed: false,
                                   )
                                 else if (!enabled)

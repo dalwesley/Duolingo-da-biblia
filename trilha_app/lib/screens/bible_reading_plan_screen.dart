@@ -319,7 +319,7 @@ class _SetupPlanBody extends StatelessWidget {
           runSpacing: 8,
           children: [
             for (final m in _minuteOptions)
-              _MinuteChip(
+              AppSelectChip(
                 label: '$m min',
                 selected: minutes == m,
                 onTap: () => onMinutes(m),
@@ -579,7 +579,7 @@ class _ActivePlanBody extends StatelessWidget {
           runSpacing: 8,
           children: [
             for (final m in const [5, 10, 15, 20, 30, 45, 60])
-              _MinuteChip(
+              AppSelectChip(
                 label: '$m min',
                 selected: plan.minutesPerDay == m,
                 onTap: () => onMinutesChanged(m),
@@ -616,7 +616,7 @@ class _OrderToggle extends StatelessWidget {
         for (final o in BibleReadingOrder.values) ...[
           if (o != BibleReadingOrder.values.first) const SizedBox(width: 8),
           Expanded(
-            child: _MinuteChip(
+            child: AppSelectChip(
               label: o.shortLabel,
               selected: value == o,
               onTap: () => onChanged(o),
@@ -624,53 +624,6 @@ class _OrderToggle extends StatelessWidget {
           ),
         ],
       ],
-    );
-  }
-}
-
-class _MinuteChip extends StatelessWidget {
-  final String label;
-  final bool selected;
-  final VoidCallback onTap;
-
-  const _MinuteChip({
-    required this.label,
-    required this.selected,
-    required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return Material(
-      color: Colors.transparent,
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(AppRadii.pill),
-        child: Ink(
-          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
-          decoration: BoxDecoration(
-            color: selected
-                ? AppColors.cedar.withValues(alpha: 0.22)
-                : a.cardFillSoft,
-            borderRadius: BorderRadius.circular(AppRadii.pill),
-            border: Border.all(
-              color: selected
-                  ? AppColors.cedar.withValues(alpha: 0.7)
-                  : a.cardBorder,
-            ),
-          ),
-          child: Text(
-            label,
-            textAlign: TextAlign.center,
-            style: AppTypography.body(
-              size: 13,
-              weight: FontWeight.w800,
-              color: selected ? AppColors.cedar : a.text,
-            ),
-          ),
-        ),
-      ),
     );
   }
 }
