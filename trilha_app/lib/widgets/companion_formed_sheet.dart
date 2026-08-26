@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../theme/app_theme.dart';
 import 'cinematic_icon.dart';
+import 'ui_primitives.dart';
 import 'confetti_overlay.dart';
 
 /// Momento de celebração quando a companhia é formada.
@@ -95,21 +96,11 @@ class _CompanionFormedSheet extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 28),
-                GestureDetector(
+                CopperCta(
+                  label: 'Andar juntos',
                   onTap: () => Navigator.pop(context),
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(vertical: 15),
-                    decoration: BoxDecoration(
-                      gradient: AppGradients.gold,
-                      borderRadius: BorderRadius.circular(AppRadii.md),
-                    ),
-                    child: Text(
-                      'ANDAR JUNTOS',
-                      textAlign: TextAlign.center,
-                      style: AppTypography.cta(size: 13)
-                          .copyWith(letterSpacing: 0.8),
-                    ),
-                  ),
+                  trailing: null,
+                  dense: true,
                 ),
               ],
             ),

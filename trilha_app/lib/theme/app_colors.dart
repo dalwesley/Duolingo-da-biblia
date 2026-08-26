@@ -10,6 +10,7 @@ import 'package:flutter/material.dart';
 /// - Fundo: Appearance / DayPhase / night*
 /// - Texto: textOnDark / Appearance.text|textMuted
 /// - Amarelo sólido: [accent] (#F7BB01) — nunca accentBright/sand/ember em labels
+/// - Modos: Observação [accent], Compreensão [coral], Interpretação [orchid]
 /// - CTA: AppGradients.gold + inkOnAccent
 /// - Borda accent: alpha ≥ 0.55 (senão vira “dourado”)
 class AppColors {
@@ -25,18 +26,42 @@ class AppColors {
   static const accent = Color(0xFFF7BB01);
   static const accentDark = Color(0xFFC99200);
   static const accentSoft = Color(0xFFFFE9A0);
+
   /// Só topo do gradiente CTA — não usar como amarelo sólido de UI.
   static const accentBright = Color(0xFFFFE066);
   static const inkOnAccent = Color(0xFF140E00);
 
   static const teal = Color(0xFF2EE6C5);
   static const streak = Color(0xFFFF3D6E);
+
+  /// Compreensão — coral luminoso, complementar ao céu teal/azul.
+  static const coral = Color(0xFFFF9468);
+  static const coralBright = Color(0xFFFFCDB8);
+  static const coralSoft = Color(0xFFFFE0D2);
+  static const inkOnCoral = Color(0xFF1C0704);
+
+  /// Interpretação — orquídea luminosa, fora da família azul do céu.
+  static const orchid = Color(0xFFF48CFF);
+  static const orchidBright = Color(0xFFF8C6FF);
+  static const orchidSoft = Color(0xFFFADAFD);
+  static const inkOnOrchid = Color(0xFF16081C);
   static const ice = Color(0xFF7AD4F0);
   static const iceSoft = Color(0xFFB8EAF8);
   static const iceDeep = Color(0xFF0E2E3C);
 
   static const error = Color(0xFFFF4F63);
   static const errorSoft = Color(0xFFFFC4CC);
+
+  /// Ouro, coral e orquídea — chrome de modo, sem misturar branco no glifo.
+  static bool isSolidChrome(Color color) {
+    final v = color.toARGB32();
+    return v == accent.toARGB32() ||
+        v == accentBright.toARGB32() ||
+        v == coral.toARGB32() ||
+        v == coralBright.toARGB32() ||
+        v == orchid.toARGB32() ||
+        v == orchidBright.toARGB32();
+  }
 
   // HUD — void mais profundo, painéis com contraste de jogo
   static const night = Color(0xFF070B14);
@@ -79,10 +104,10 @@ class AppColors {
   /// Chrome da aba (nav + leading) — amarelo só em Hoje / CTA / conquista.
   /// Trilhas (areia) ≠ Bíblia (cedar): frio vs quente, sem colisão.
   static Color tabChrome(int index) => switch (index) {
-        0 => accent, // Hoje
-        1 => sand, // Trilhas — caminho / bronze
-        2 => cedar, // Bíblia — palavra / teal
-        3 => clay, // Juntos
-        _ => slate, // Config
-      };
+    0 => accent, // Hoje
+    1 => sand, // Trilhas — caminho / bronze
+    2 => cedar, // Bíblia — palavra / teal
+    3 => clay, // Juntos
+    _ => slate, // Config
+  };
 }

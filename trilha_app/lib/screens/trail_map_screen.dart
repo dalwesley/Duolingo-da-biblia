@@ -161,7 +161,10 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
 
     final trail = _trail!;
     final allSlugs = trail.missionSlugs;
-    final live = TrailProgress.getLiveProgress(trail, progress.completedMissions);
+    final live = TrailProgress.getLiveProgress(
+      trail,
+      progress.completedMissions,
+    );
     final prog = live; // mapa da trilha = modo ativo
     final difficultyId = progress.difficultyForTrail(widget.slug);
     final cleared = progress.clearedModesFor(widget.slug);
@@ -270,9 +273,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
         ? 'CENA ${_roman(activeModule + 1)}'
         : null;
     final headerTitle = _useThematicMap && trail.modules.isNotEmpty
-        ? trail
-              .modules[activeModule.clamp(0, trail.modules.length - 1)]
-              .title
+        ? trail.modules[activeModule.clamp(0, trail.modules.length - 1)].title
         : trail.title;
     final headerGlyph = _useThematicMap && trail.modules.isNotEmpty
         ? CinematicGlyphResolver.forModule(
@@ -305,7 +306,8 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                     immersive: true,
                     dark: true,
                     title: headerTitle,
-                    subtitle: eyebrow ??
+                    subtitle:
+                        eyebrow ??
                         (_fromBank
                             ? '$modeName · ${prog.done}/${prog.total} missões'
                             : '${prog.done}/${prog.total} missões'),
@@ -350,9 +352,9 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                               '$modeName · ${prog.done} de ${prog.total} passos',
                           onDifficultyTap:
                               _fromBank &&
-                                      progress.hasDifficultyChoice(widget.slug)
-                                  ? _changeDifficulty
-                                  : null,
+                                  progress.hasDifficultyChoice(widget.slug)
+                              ? _changeDifficulty
+                              : null,
                         ),
                       ),
                       Padding(
@@ -382,9 +384,8 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                         final isActive = mi == activeModule;
                         final modDone = mod.missions
                             .where(
-                              (m) => progress.completedMissions.contains(
-                                m.slug,
-                              ),
+                              (m) =>
+                                  progress.completedMissions.contains(m.slug),
                             )
                             .length;
 
@@ -441,6 +442,7 @@ class _ModeReplayBanner extends StatelessWidget {
     final mode =
         TrailDifficulty.fromId(difficultyId) ?? TrailDifficulty.semente;
     final color = DifficultyVisuals.accentFor(mode);
+    final onSky = DifficultyVisuals.onSky(color);
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(
@@ -448,16 +450,16 @@ class _ModeReplayBanner extends StatelessWidget {
         vertical: AppSpace.sm + 2,
       ),
       decoration: BoxDecoration(
-        color: color.withValues(alpha: 0.12),
+        color: DifficultyVisuals.chipFill(color, alpha: 0.22),
         borderRadius: BorderRadius.circular(AppRadii.sm),
-        border: Border.all(color: color.withValues(alpha: 0.45)),
+        border: Border.all(color: onSky.withValues(alpha: 0.7)),
       ),
       child: Row(
         children: [
           CinematicIcon(
             glyph: DifficultyVisuals.glyphFor(mode),
             size: 18,
-            accent: color,
+            accent: onSky,
             framed: false,
           ),
           const SizedBox(width: AppSpace.sm),
@@ -502,10 +504,13 @@ class _TrailJourneyIntro extends StatelessWidget {
     }
     final a = Appearance.of(context);
     final mode = TrailDifficulty.fromId(difficultyId);
-    final color =
-        mode != null ? DifficultyVisuals.accentFor(mode) : AppColors.accent;
-    final glyph =
-        mode != null ? DifficultyVisuals.glyphFor(mode) : CinematicGlyph.seed;
+    final color = mode != null
+        ? DifficultyVisuals.accentFor(mode)
+        : AppColors.accent;
+    final onSky = DifficultyVisuals.onSky(color);
+    final glyph = mode != null
+        ? DifficultyVisuals.glyphFor(mode)
+        : CinematicGlyph.seed;
     final label = mode != null ? 'Modo ${mode.labelPt}' : null;
 
     return Column(
@@ -526,19 +531,9 @@ class _TrailJourneyIntro extends StatelessWidget {
                   AppSpace.sm - 1,
                 ),
                 decoration: BoxDecoration(
-                  color: color.withValues(alpha: 0.32),
+                  color: DifficultyVisuals.chipFill(color),
                   borderRadius: BorderRadius.circular(AppRadii.pill),
-                  border: Border.all(
-                    color: color,
-                    width: 1.8,
-                  ),
-                  boxShadow: [
-                    BoxShadow(
-                      color: color.withValues(alpha: 0.42),
-                      blurRadius: 16,
-                      offset: const Offset(0, 4),
-                    ),
-                  ],
+                  border: Border.all(color: onSky, width: 2),
                 ),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
@@ -546,7 +541,7 @@ class _TrailJourneyIntro extends StatelessWidget {
                     CinematicIcon(
                       glyph: glyph,
                       size: 22,
-                      accent: color,
+                      accent: onSky,
                       framed: false,
                     ),
                     const SizedBox(width: AppSpace.sm),
@@ -554,7 +549,7 @@ class _TrailJourneyIntro extends StatelessWidget {
                       label,
                       style: AppTypography.label(
                         size: 12,
-                        color: color,
+                        color: onSky,
                         letterSpacing: 0.4,
                       ),
                     ),
@@ -579,7 +574,7 @@ class _TrailJourneyIntro extends StatelessWidget {
             style: AppTypography.body(
               size: 12,
               weight: FontWeight.w700,
-              color: color.withValues(alpha: 0.72),
+              color: DifficultyVisuals.onSky(color).withValues(alpha: 0.88),
             ),
           ),
         ],

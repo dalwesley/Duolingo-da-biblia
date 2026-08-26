@@ -159,17 +159,12 @@ def parse_lexicon(path: Path, lang: str) -> list[tuple]:
             key = base_strong(e_strong) or normalize_strong(e_strong)
             if not key:
                 continue
-            # Preferir entrada canônica sem letra de desambiguação no eStrong base,
-            # ou a primeira vista.
-            score = 0
-            if "=" in d_field and "Part of" not in d_field and "Name of" not in d_field:
-                score += 2
-            if re.match(r"^[HG]\d+$", e_strong.upper()) or re.match(
-                r"^[HG]\d+G\s*$", e_strong.upper()
-            ):
-                score += 1
+            # Sentido G (geral) ou A (primeiro homônimo). Nunca "Part of"/"Name of"
+            # e nunca o último homônimo (B) — isso virava חסד="vergonha" e
+            # אלהים="Gibeate". Em empate, a primeira entrada vence.
+            score = _lexicon_score(e_strong, d_field)
             prev = rows.get(key)
-            if prev is None or score >= prev[0]:
+            if prev is None or score > prev[0]:
                 rows[key] = (
                     score,
                     key,
@@ -181,6 +176,30 @@ def parse_lexicon(path: Path, lang: str) -> list[tuple]:
                     definition,
                 )
     return [v[1:] for v in rows.values()]
+
+
+def _lexicon_score(e_strong: str, d_field: str) -> int:
+    d = d_field
+    e = e_strong.strip().upper()
+    # Compostos ("Gibeate-elohim") não são o verbete. "Name of" é outro nome
+    # da mesma palavra (Elohim = um nome de YHWH) e deve entrar.
+    if "Part of" in d:
+        return -80
+    score = 0
+    # Sem entrada G (H1254 só tem A=criar e B=engordar), A tem de ganhar de B.
+    if re.match(r"^[HG]\d+[G]?$", e):
+        score += 8
+    elif re.match(r"^[HG]\d+A$", e):
+        score += 6
+    elif re.match(r"^[HG]\d+B$", e):
+        score += 1
+    else:
+        score += 2
+    if re.search(r"[HG]\d+G\b", d) or re.search(r"G\s*=", d):
+        score += 4
+    if "=" in d and "Meaning of" not in d:
+        score += 1
+    return score
 
 
 def root_from_dstrongs(field: str) -> str | None:

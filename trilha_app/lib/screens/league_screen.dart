@@ -1498,31 +1498,12 @@ class _RoomHeader extends StatelessWidget {
           Row(
             children: [
               Expanded(
-                child: GestureDetector(
+                child: CopperCta(
+                  label: 'Compartilhar QR',
                   onTap: onShowQr,
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(vertical: 12),
-                    decoration: BoxDecoration(
-                      gradient: AppGradients.gold,
-                      borderRadius: BorderRadius.circular(AppRadii.md),
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const CinematicIcon(
-                          glyph: CinematicGlyph.qr,
-                          size: 18,
-                          accent: AppColors.inkOnAccent,
-                          framed: false,
-                        ),
-                        const SizedBox(width: AppSpace.sm),
-                        Text(
-                          'Compartilhar QR',
-                          style: AppTypography.cta(size: 13),
-                        ),
-                      ],
-                    ),
-                  ),
+                  leading: CinematicGlyph.qr,
+                  trailing: null,
+                  dense: true,
                 ),
               ),
               const SizedBox(width: 10),
@@ -3075,15 +3056,11 @@ class _FilledAction extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final enabled = onTap != null;
-    return Opacity(
-      opacity: enabled ? 1 : 0.45,
-      child: CopperCta(
-        label: label,
-        onTap: onTap,
-        trailing: null,
-        padding: const EdgeInsets.symmetric(vertical: 14),
-      ),
+    return CopperCta(
+      label: label,
+      onTap: onTap,
+      trailing: null,
+      dense: true,
     );
   }
 }
@@ -3096,31 +3073,6 @@ class _OutlineAction extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        width: double.infinity,
-        padding: const EdgeInsets.symmetric(vertical: 14),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(AppRadii.md),
-          border: Border.all(
-            color: onTap == null
-                ? Colors.white.withValues(alpha: 0.12)
-                : AppColors.accent.withValues(alpha: 0.45),
-          ),
-          color: Colors.white.withValues(alpha: 0.04),
-        ),
-        child: Text(
-          label,
-          textAlign: TextAlign.center,
-          style: AppTypography.cta(
-            size: 13,
-            color: onTap == null
-                ? Colors.white.withValues(alpha: 0.35)
-                : AppColors.accent,
-          ),
-        ),
-      ),
-    );
+    return OutlineCta(label: label, onTap: onTap);
   }
 }

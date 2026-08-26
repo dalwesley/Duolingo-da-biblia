@@ -10,6 +10,8 @@ import '../services/bible_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import 'stway_brand.dart';
+import 'cinematic_icon.dart';
+import 'ui_primitives.dart';
 
 /// Abre sheet para compartilhar um versículo (imagem com marca Stway, ou texto).
 Future<void> showShareVerseSheet(
@@ -167,33 +169,13 @@ Via Stway
             ),
           ),
           const SizedBox(height: 16),
-          SizedBox(
-            width: double.infinity,
-            child: FilledButton.icon(
-              onPressed: _busy ? null : _shareImage,
-              style: FilledButton.styleFrom(
-                backgroundColor: AppColors.accent,
-                foregroundColor: AppColors.inkOnAccent,
-                padding: const EdgeInsets.symmetric(vertical: 14),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(AppRadii.md),
-                ),
-              ),
-              icon: _busy
-                  ? const SizedBox(
-                      width: 18,
-                      height: 18,
-                      child: CircularProgressIndicator(
-                        strokeWidth: 2,
-                        color: AppColors.inkOnAccent,
-                      ),
-                    )
-                  : const Icon(Icons.image_rounded, size: 20),
-              label: Text(
-                _busy ? 'Preparando…' : 'Compartilhar imagem',
-                style: AppTypography.cta(),
-              ),
-            ),
+          CopperCta(
+            label: _busy ? 'Preparando…' : 'Compartilhar imagem',
+            onTap: _busy ? null : _shareImage,
+            leading: CinematicGlyph.share,
+            trailing: null,
+            dense: true,
+            busy: _busy,
           ),
           const SizedBox(height: AppSpace.sm),
           TextButton(

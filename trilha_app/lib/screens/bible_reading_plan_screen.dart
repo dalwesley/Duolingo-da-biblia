@@ -377,24 +377,10 @@ class _SetupPlanBody extends StatelessWidget {
             ),
           ),
         const SizedBox(height: AppSpace.section),
-        FilledButton(
-          onPressed: onStart,
-          style: FilledButton.styleFrom(
-            backgroundColor: AppColors.cedar,
-            foregroundColor: Colors.white,
-            padding: const EdgeInsets.symmetric(vertical: 16),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(AppRadii.lg),
-            ),
-          ),
-          child: Text(
-            'Começar plano · $minutes min/dia',
-            style: AppTypography.body(
-              size: 15,
-              weight: FontWeight.w800,
-              color: Colors.white,
-            ),
-          ),
+        CopperCta(
+          label: 'Começar plano · $minutes min/dia',
+                onTap: onStart,
+          trailing: null,
         ),
       ],
     );
@@ -496,7 +482,7 @@ class _ActivePlanBody extends StatelessWidget {
                   Material(
                     color: Colors.transparent,
                     child: InkWell(
-                      onTap: () => onOpen(p.chapters[i]),
+                onTap: () => onOpen(p.chapters[i]),
                       child: Padding(
                         padding: const EdgeInsets.symmetric(
                           horizontal: AppSpace.md,
@@ -538,24 +524,10 @@ class _ActivePlanBody extends StatelessWidget {
           ),
           const SizedBox(height: AppSpace.md),
           if (!doneToday)
-            FilledButton(
-              onPressed: onComplete,
-              style: FilledButton.styleFrom(
-                backgroundColor: AppColors.cedar,
-                foregroundColor: Colors.white,
-                padding: const EdgeInsets.symmetric(vertical: 16),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(AppRadii.lg),
-                ),
-              ),
-              child: Text(
-                'Marcar leitura do dia',
-                style: AppTypography.body(
-                  size: 15,
-                  weight: FontWeight.w800,
-                  color: Colors.white,
-                ),
-              ),
+            CopperCta(
+              label: 'Marcar leitura do dia',
+                onTap: onComplete,
+              trailing: null,
             )
           else
             GlassCard(
@@ -611,19 +583,32 @@ class _OrderToggle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        for (final o in BibleReadingOrder.values) ...[
-          if (o != BibleReadingOrder.values.first) const SizedBox(width: 8),
-          Expanded(
-            child: AppSelectChip(
-              label: o.shortLabel,
-              selected: value == o,
-              onTap: () => onChanged(o),
+    final a = Appearance.of(context);
+    return Container(
+      padding: const EdgeInsets.all(3),
+      decoration: BoxDecoration(
+        color: a.cardFillSoft,
+        borderRadius: BorderRadius.circular(AppRadii.md),
+        border: Border.all(color: a.cardBorder),
+      ),
+      child: Row(
+        children: [
+          for (final o in BibleReadingOrder.values)
+            Expanded(
+              child: AppSelectChip(
+                label: o.shortLabel,
+                selected: value == o,
+                onTap: () => onChanged(o),
+                style: AppSelectChipStyle.solid,
+                fontSize: 13,
+                padding: const EdgeInsets.symmetric(vertical: 10),
+                borderRadius: const BorderRadius.all(
+                  Radius.circular(AppRadii.sm),
+                ),
+              ),
             ),
-          ),
         ],
-      ],
+      ),
     );
   }
 }

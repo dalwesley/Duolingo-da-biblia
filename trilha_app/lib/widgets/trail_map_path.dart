@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../models/trail.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/difficulty_visuals.dart';
 import '../utils/genesis_theme.dart';
 import '../utils/trail_progress.dart';
 import 'cinematic_icon.dart';
@@ -214,14 +215,6 @@ class _TrailMapStepRail extends StatelessWidget {
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             color: dotColor,
-            boxShadow: [
-              if (completed || unlocked)
-                BoxShadow(
-                  color: activeColor.withValues(alpha: 0.22),
-                  blurRadius: 8,
-                  spreadRadius: 0,
-                ),
-            ],
           ),
         ),
         if (showBottom)
@@ -264,203 +257,210 @@ class _MissionSceneCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final accent = modeAccent;
+    final onSky = DifficultyVisuals.onSky(accent);
 
+    final radius = BorderRadius.circular(AppRadii.lg);
     final card = AnimatedContainer(
       duration: const Duration(milliseconds: 280),
       curve: Curves.easeOutCubic,
-      clipBehavior: Clip.antiAlias,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(AppRadii.lg),
+        borderRadius: radius,
         color: unlocked
             ? (completed ? a.cardFill.withValues(alpha: 0.72) : a.cardFill)
             : a.cardFill.withValues(alpha: 0.55),
         border: Border.all(
           color: _current
-              ? accent
+              ? onSky
               : completed
               ? accent.withValues(alpha: 0.28)
               : a.cardBorder,
-          width: _current ? 1.5 : 1,
+          width: _current ? 1.8 : 1,
         ),
       ),
-      child: IntrinsicHeight(
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Container(
-              width: _current ? 64 : 56,
-              alignment: Alignment.topCenter,
-              padding: EdgeInsets.only(top: _current ? 18 : 16),
-              decoration: BoxDecoration(
-                border: Border(
-                  right: BorderSide(
-                    color: a.cardBorder.withValues(alpha: unlocked ? 0.9 : 0.5),
-                  ),
-                ),
-                color: _current
-                    ? accent.withValues(alpha: 0.12)
-                    : null,
-              ),
-              child: Column(
-                children: [
-                  Text(
-                    mission.isBoss ? '∞' : _indexLabel,
-                    style: AppTypography.display(
-                      size: _current ? 28 : 22,
-                      weight: FontWeight.w700,
-                      height: 1,
-                      color: unlocked
-                          ? (_current
-                                ? accent
-                                : a.text.withValues(
-                                    alpha: completed ? 0.35 : 0.75,
-                                  ))
-                          : a.text.withValues(alpha: 0.28),
+      child: ClipRRect(
+        borderRadius: radius,
+        child: IntrinsicHeight(
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              if (_current) Container(width: 5, color: onSky),
+              Container(
+                width: _current ? 64 : 56,
+                alignment: Alignment.topCenter,
+                padding: EdgeInsets.only(top: _current ? 18 : 16),
+                decoration: BoxDecoration(
+                  border: Border(
+                    right: BorderSide(
+                      color: a.cardBorder.withValues(
+                        alpha: unlocked ? 0.9 : 0.5,
+                      ),
                     ),
                   ),
-                  if (_current) ...[
-                    const SizedBox(height: 8),
-                    Container(width: 18, height: 1.5, color: accent),
-                  ],
-                ],
-              ),
-            ),
-            Expanded(
-              child: Padding(
-                padding: EdgeInsets.fromLTRB(
-                  16,
-                  _current ? 16 : 14,
-                  16,
-                  _current ? 16 : 14,
+                  color: _current
+                      ? DifficultyVisuals.chipFill(accent, alpha: 0.28)
+                      : null,
                 ),
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Row(
-                      children: [
-                        Text(
-                          mission.isBoss
-                              ? 'DESAFIO'
-                              : _current
-                              ? 'PRÓXIMA LIÇÃO'
-                              : completed
-                              ? 'CONCLUÍDO'
-                              : 'PASSO',
-                          style: AppTypography.label(
-                            size: 10,
-                            weight: FontWeight.w700,
-                            letterSpacing: 1.6,
-                            color: _current
-                                ? accent
-                                : completed
-                                ? accent.withValues(alpha: 0.55)
-                                : a.textMuted(unlocked ? 0.45 : 0.28),
-                          ),
-                        ),
-                        if (!unlocked) ...[
-                          const Spacer(),
-                          Text(
-                            'Bloqueada',
-                            style: AppTypography.body(
-                              size: 11,
-                              weight: FontWeight.w600,
-                              color: a.textMuted(0.35),
-                            ),
-                          ),
-                        ],
-                      ],
+                    Text(
+                      mission.isBoss ? '∞' : _indexLabel,
+                      style: AppTypography.display(
+                        size: _current ? 28 : 22,
+                        weight: FontWeight.w700,
+                        height: 1,
+                        color: unlocked
+                            ? (_current
+                                  ? onSky
+                                  : a.text.withValues(
+                                      alpha: completed ? 0.35 : 0.75,
+                                    ))
+                            : a.text.withValues(alpha: 0.28),
+                      ),
                     ),
-                    const SizedBox(height: 8),
-                    Row(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Opacity(
-                          opacity: unlocked ? (completed ? 0.45 : 1) : 0.35,
-                          child: CinematicIcon.mission(
-                            mission.title,
-                            isBoss: mission.isBoss,
-                            size: _current ? 42 : 34,
-                            accent: accent,
-                            glowing: false,
-                          ),
-                        ),
-                        const SizedBox(width: 12),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                mission.title,
-                                style: AppTypography.display(
-                                  size: _current ? 22 : 18,
-                                  weight: FontWeight.w800,
-                                  height: 1.15,
-                                  color: a.text.withValues(
-                                    alpha: unlocked
-                                        ? (completed ? 0.45 : 0.98)
-                                        : 0.4,
-                                  ),
-                                ),
-                              ),
-                              if (mission.subtitle.isNotEmpty) ...[
-                                const SizedBox(height: AppSpace.xs),
-                                Text(
-                                  mission.subtitle,
-                                  maxLines: 2,
-                                  overflow: TextOverflow.ellipsis,
-                                  style: AppTypography.body(
-                                    size: 13,
-                                    height: 1.3,
-                                    weight: FontWeight.w500,
-                                    color: a.textMuted(
-                                      unlocked
-                                          ? (completed ? 0.35 : 0.55)
-                                          : 0.3,
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                    if (_current && mission.intro.isNotEmpty) ...[
+                    if (_current) ...[
                       const SizedBox(height: 8),
-                      Text(
-                        mission.intro,
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                        style: AppTypography.body(
-                          size: 13,
-                          height: 1.4,
-                          weight: FontWeight.w500,
-                          color: a.textMuted(0.6),
-                        ),
-                      ),
-                      const SizedBox(height: 14),
-                      Text(
-                        'Continuar →',
-                        style: AppTypography.cta(
-                          size: 14,
-                          color: accent,
-                        ).copyWith(letterSpacing: 0.2),
-                      ),
-                    ] else if (_current) ...[
-                      const SizedBox(height: 12),
-                      Text(
-                        'Continuar →',
-                        style: AppTypography.cta(
-                          size: 14,
-                          color: accent,
-                        ).copyWith(letterSpacing: 0.2),
-                      ),
+                      Container(width: 18, height: 1.5, color: onSky),
                     ],
                   ],
                 ),
               ),
-            ),
-          ],
+              Expanded(
+                child: Padding(
+                  padding: EdgeInsets.fromLTRB(
+                    16,
+                    _current ? 16 : 14,
+                    16,
+                    _current ? 16 : 14,
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          Text(
+                            mission.isBoss
+                                ? 'DESAFIO'
+                                : _current
+                                ? 'PRÓXIMA LIÇÃO'
+                                : completed
+                                ? 'CONCLUÍDO'
+                                : 'PASSO',
+                            style: AppTypography.label(
+                              size: 10,
+                              weight: FontWeight.w700,
+                              letterSpacing: 1.6,
+                              color: _current
+                                  ? onSky
+                                  : completed
+                                  ? accent.withValues(alpha: 0.55)
+                                  : a.textMuted(unlocked ? 0.45 : 0.28),
+                            ),
+                          ),
+                          if (!unlocked) ...[
+                            const Spacer(),
+                            Text(
+                              'Bloqueada',
+                              style: AppTypography.body(
+                                size: 11,
+                                weight: FontWeight.w600,
+                                color: a.textMuted(0.35),
+                              ),
+                            ),
+                          ],
+                        ],
+                      ),
+                      const SizedBox(height: 8),
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Opacity(
+                            opacity: unlocked ? (completed ? 0.45 : 1) : 0.35,
+                            child: CinematicIcon.mission(
+                              mission.title,
+                              isBoss: mission.isBoss,
+                              size: _current ? 42 : 34,
+                              accent: _current ? onSky : accent,
+                              glowing: false,
+                            ),
+                          ),
+                          const SizedBox(width: 12),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  mission.title,
+                                  style: AppTypography.display(
+                                    size: _current ? 22 : 18,
+                                    weight: FontWeight.w800,
+                                    height: 1.15,
+                                    color: a.text.withValues(
+                                      alpha: unlocked
+                                          ? (completed ? 0.45 : 0.98)
+                                          : 0.4,
+                                    ),
+                                  ),
+                                ),
+                                if (mission.subtitle.isNotEmpty) ...[
+                                  const SizedBox(height: AppSpace.xs),
+                                  Text(
+                                    mission.subtitle,
+                                    maxLines: 2,
+                                    overflow: TextOverflow.ellipsis,
+                                    style: AppTypography.body(
+                                      size: 13,
+                                      height: 1.3,
+                                      weight: FontWeight.w500,
+                                      color: a.textMuted(
+                                        unlocked
+                                            ? (completed ? 0.35 : 0.55)
+                                            : 0.3,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                      if (_current && mission.intro.isNotEmpty) ...[
+                        const SizedBox(height: 8),
+                        Text(
+                          mission.intro,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: AppTypography.body(
+                            size: 13,
+                            height: 1.4,
+                            weight: FontWeight.w500,
+                            color: a.textMuted(0.6),
+                          ),
+                        ),
+                        const SizedBox(height: 14),
+                        Text(
+                          'Continuar →',
+                          style: AppTypography.cta(
+                            size: 14,
+                            color: onSky,
+                          ).copyWith(letterSpacing: 0.2),
+                        ),
+                      ] else if (_current) ...[
+                        const SizedBox(height: 12),
+                        Text(
+                          'Continuar →',
+                          style: AppTypography.cta(
+                            size: 14,
+                            color: onSky,
+                          ).copyWith(letterSpacing: 0.2),
+                        ),
+                      ],
+                    ],
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
@@ -474,8 +474,8 @@ class _MissionSceneCard extends StatelessWidget {
       child: InkWell(
         onTap: onTap,
         borderRadius: BorderRadius.circular(AppRadii.lg),
-        splashColor: accent.withValues(alpha: 0.1),
-        highlightColor: accent.withValues(alpha: 0.05),
+        splashColor: onSky.withValues(alpha: 0.1),
+        highlightColor: onSky.withValues(alpha: 0.05),
         child: faded,
       ),
     );

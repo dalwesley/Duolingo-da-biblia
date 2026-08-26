@@ -323,17 +323,17 @@ class _SettingsScreenState extends State<SettingsScreen>
                 Row(
                   children: [
                     Expanded(
-                      child: _GhostAction(
+                      child: GhostCta(
                         label: 'Exportar',
-                        glyph: CinematicGlyph.share,
+                        leading: CinematicGlyph.share,
                         onTap: () => _exportProgress(progress, sync),
                       ),
                     ),
                     const SizedBox(width: AppSpace.sm),
                     Expanded(
-                      child: _GhostAction(
+                      child: GhostCta(
                         label: 'Importar',
-                        glyph: CinematicGlyph.copy,
+                        leading: CinematicGlyph.copy,
                         onTap: () => _importProgress(progress, sync),
                       ),
                     ),
@@ -387,11 +387,11 @@ class _SettingsScreenState extends State<SettingsScreen>
                   ],
                 ),
                 const SizedBox(height: AppSpace.sm),
-                _GhostAction(
+                GhostCta(
                   label: _checkingUpdate
                       ? 'Verificando…'
                       : 'Verificar atualizações',
-                  glyph: CinematicGlyph.rise,
+                  leading: CinematicGlyph.rise,
                   expanded: true,
                   onTap: _checkingUpdate ? null : _checkForUpdates,
                 ),
@@ -458,9 +458,9 @@ class _SettingsScreenState extends State<SettingsScreen>
               if (!_confirmReset)
                 Column(
                   children: [
-                    _GhostAction(
+                    GhostCta(
                       label: 'Rever introdução',
-                      glyph: CinematicGlyph.path,
+                      leading: CinematicGlyph.path,
                       expanded: true,
                       onTap: () async {
                         if (!mounted) return;
@@ -473,9 +473,9 @@ class _SettingsScreenState extends State<SettingsScreen>
                       },
                     ),
                     const SizedBox(height: AppSpace.sm),
-                    _GhostAction(
+                    GhostCta(
                       label: 'Resetar progresso',
-                      glyph: CinematicGlyph.fall,
+                      leading: CinematicGlyph.fall,
                       danger: true,
                       expanded: true,
                       onTap: () => setState(() => _confirmReset = true),
@@ -500,7 +500,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                       Row(
                         children: [
                           Expanded(
-                            child: _GhostAction(
+                            child: GhostCta(
                               label: 'Cancelar',
                               onTap: () =>
                                   setState(() => _confirmReset = false),
@@ -721,13 +721,17 @@ class _SettingsScreenState extends State<SettingsScreen>
                       _genesisTrailSlug,
                       meta.difficulty,
                     );
-                    final selected = selectedId == meta.difficulty.id && !locked;
+                    final selected =
+                        selectedId == meta.difficulty.id && !locked;
                     final cleared = progress.hasClearedMode(
                       _genesisTrailSlug,
                       meta.difficulty.id,
                     );
                     return AppChoiceTile(
                       selected: selected,
+                      selectedAccent: selected
+                          ? DifficultyVisuals.accentFor(meta.difficulty)
+                          : null,
                       onTap: () {
                         if (locked) {
                           HapticFeedback.selectionClick();
@@ -777,13 +781,15 @@ class _SettingsScreenState extends State<SettingsScreen>
                             CinematicIcon(
                               glyph: locked
                                   ? CinematicGlyph.lock
-                                  : DifficultyVisuals.glyphFor(
-                                      meta.difficulty,
-                                    ),
+                                  : DifficultyVisuals.glyphFor(meta.difficulty),
                               size: 18,
                               accent: selected
-                                  ? AppColors.inkOnAccent
-                                  : a.textMuted(0.8),
+                                  ? DifficultyVisuals.inkOn(meta.difficulty)
+                                  : locked
+                                  ? a.textMuted(0.55)
+                                  : DifficultyVisuals.accentFor(
+                                      meta.difficulty,
+                                    ),
                               framed: false,
                             ),
                             const SizedBox(height: 6),
@@ -796,8 +802,12 @@ class _SettingsScreenState extends State<SettingsScreen>
                                 size: 11,
                                 weight: FontWeight.w800,
                                 color: selected
-                                    ? AppColors.inkOnAccent
-                                    : a.text,
+                                    ? DifficultyVisuals.inkOn(meta.difficulty)
+                                    : locked
+                                    ? a.textMuted(0.7)
+                                    : DifficultyVisuals.accentFor(
+                                        meta.difficulty,
+                                      ),
                               ),
                             ),
                             if (cleared && !locked) ...[
@@ -808,12 +818,12 @@ class _SettingsScreenState extends State<SettingsScreen>
                                   size: 9,
                                   letterSpacing: 0.4,
                                   color: selected
-                                      ? AppColors.inkOnAccent.withValues(
-                                          alpha: 0.75,
-                                        )
-                                      : AppColors.accent.withValues(
-                                          alpha: 0.8,
-                                        ),
+                                      ? DifficultyVisuals.inkOn(
+                                          meta.difficulty,
+                                        ).withValues(alpha: 0.75)
+                                      : DifficultyVisuals.accentFor(
+                                          meta.difficulty,
+                                        ).withValues(alpha: 0.85),
                                 ),
                               ),
                             ],
@@ -879,9 +889,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                         style: AppTypography.body(
                           size: 12,
                           weight: FontWeight.w800,
-                          color: isSelected
-                              ? AppColors.inkOnAccent
-                              : a.text,
+                          color: isSelected ? AppColors.inkOnAccent : a.text,
                         ),
                       ),
                     ),
@@ -901,8 +909,8 @@ class _SettingsScreenState extends State<SettingsScreen>
     final providerLabel = backend.isAppleSignedIn
         ? 'Conta Apple conectada'
         : backend.isGoogleSignedIn
-            ? 'Conta Google conectada'
-            : 'Conta desconectada';
+        ? 'Conta Google conectada'
+        : 'Conta desconectada';
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -951,9 +959,9 @@ class _SettingsScreenState extends State<SettingsScreen>
         ],
         if (signedIn) ...[
           const SizedBox(height: AppSpace.md),
-          _GhostAction(
+          GhostCta(
             label: 'Sair da conta',
-            glyph: CinematicGlyph.lock,
+            leading: CinematicGlyph.lock,
             expanded: true,
             onTap: backend.isGoogleBusy ? null : () => _signOutGoogle(backend),
           ),
@@ -1105,73 +1113,6 @@ class _SettingsDivider extends StatelessWidget {
         height: 1,
         thickness: 1,
         color: a.cardBorder.withValues(alpha: 0.55),
-      ),
-    );
-  }
-}
-
-class _GhostAction extends StatelessWidget {
-  final String label;
-  final CinematicGlyph? glyph;
-  final VoidCallback? onTap;
-  final bool danger;
-  final bool expanded;
-
-  const _GhostAction({
-    required this.label,
-    this.glyph,
-    this.onTap,
-    this.danger = false,
-    this.expanded = false,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final ink = danger ? AppColors.error : a.text;
-    final border = danger
-        ? AppColors.error.withValues(alpha: 0.45)
-        : a.cardBorder;
-
-    return Material(
-      color: Colors.transparent,
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(AppRadii.md),
-        child: Container(
-          width: expanded ? double.infinity : null,
-          padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 12),
-          decoration: BoxDecoration(
-            color: danger
-                ? AppColors.error.withValues(alpha: 0.08)
-                : a.cardFillSoft,
-            borderRadius: BorderRadius.circular(AppRadii.md),
-            border: Border.all(color: border),
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            mainAxisSize: expanded ? MainAxisSize.max : MainAxisSize.max,
-            children: [
-              if (glyph != null) ...[
-                CinematicIcon(
-                  glyph: glyph!,
-                  size: 16,
-                  accent: ink,
-                  framed: false,
-                ),
-                const SizedBox(width: 8),
-              ],
-              Text(
-                label,
-                style: AppTypography.body(
-                  size: 13,
-                  weight: FontWeight.w800,
-                  color: ink,
-                ),
-              ),
-            ],
-          ),
-        ),
       ),
     );
   }

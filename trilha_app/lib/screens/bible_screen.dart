@@ -426,61 +426,41 @@ class _PlanEntryCard extends StatelessWidget {
             ? 'Porção de hoje concluída · ${plan.order.shortLabel}'
             : 'Continuar · ${plan.minutesPerDay} min · ${plan.order.shortLabel}')
         : 'Canônica ou cronológica · no tempo que você tem';
+    final badge = plan.active
+        ? '${plan.minutesPerDay} min'
+        : 'Novo';
 
-    return Material(
-      color: Colors.transparent,
-      child: InkWell(
-        onTap: onOpen,
-        borderRadius: BorderRadius.circular(AppRadii.lg),
-        child: Ink(
-          padding: const EdgeInsets.all(AppSpace.md),
-          decoration: BoxDecoration(
-            color: AppColors.cedar.withValues(alpha: 0.12),
-            borderRadius: BorderRadius.circular(AppRadii.lg),
-            border: Border.all(
-              color: AppColors.cedar.withValues(alpha: 0.45),
+    return GlassCard(
+      onTap: onOpen,
+      padding: const EdgeInsets.symmetric(
+        horizontal: AppSpace.md,
+        vertical: AppSpace.md,
+      ),
+      child: Row(
+        children: [
+          SoftBadge(
+            text: badge,
+            accent: AppColors.cedar,
+          ),
+          const SizedBox(width: AppSpace.sm),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  plan.active ? 'Plano de leitura' : 'Criar plano de leitura',
+                  style: AppTypography.title(size: 14, color: a.text),
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  subtitle,
+                  style: AppTypography.body(size: 11, color: a.textMuted(0.55)),
+                ),
+              ],
             ),
           ),
-          child: Row(
-            children: [
-              CinematicIcon(
-                glyph: CinematicGlyph.book,
-                size: 22,
-                accent: AppColors.cedar,
-                framed: false,
-              ),
-              const SizedBox(width: AppSpace.sm),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      plan.active ? 'Plano de leitura' : 'Criar plano de leitura',
-                      style: AppTypography.title(
-                        size: 15,
-                        weight: FontWeight.w800,
-                        color: a.text,
-                      ),
-                    ),
-                    const SizedBox(height: 2),
-                    Text(
-                      subtitle,
-                      style: AppTypography.body(
-                        size: 12,
-                        color: a.textMuted(0.65),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              Icon(
-                Icons.chevron_right_rounded,
-                size: 20,
-                color: Colors.white.withValues(alpha: 0.35),
-              ),
-            ],
-          ),
-        ),
+          Icon(Icons.chevron_right_rounded, color: a.textMuted(0.45), size: 22),
+        ],
       ),
     );
   }
@@ -500,20 +480,31 @@ class _BrowseOrderToggle extends StatelessWidget {
       children: [
         SectionLabel('Ordem dos livros', color: a.sectionLabel),
         const SizedBox(height: AppSpace.sm),
-        Row(
-          children: [
-            for (final o in BibleReadingOrder.values) ...[
-              if (o != BibleReadingOrder.values.first) const SizedBox(width: 8),
-              Expanded(
-                child: AppSelectChip(
-                  label: o.shortLabel,
-                  selected: value == o,
-                  onTap: () => onChanged(o),
-                  padding: const EdgeInsets.symmetric(vertical: 10),
+        Container(
+          padding: const EdgeInsets.all(3),
+          decoration: BoxDecoration(
+            color: a.cardFillSoft,
+            borderRadius: BorderRadius.circular(AppRadii.md),
+            border: Border.all(color: a.cardBorder),
+          ),
+          child: Row(
+            children: [
+              for (final o in BibleReadingOrder.values)
+                Expanded(
+                  child: AppSelectChip(
+                    label: o.shortLabel,
+                    selected: value == o,
+                    onTap: () => onChanged(o),
+                    style: AppSelectChipStyle.solid,
+                    fontSize: 13,
+                    padding: const EdgeInsets.symmetric(vertical: 10),
+                    borderRadius: const BorderRadius.all(
+                      Radius.circular(AppRadii.sm),
+                    ),
+                  ),
                 ),
-              ),
             ],
-          ],
+          ),
         ),
       ],
     );
@@ -1750,10 +1741,16 @@ class BibleReaderView extends StatelessWidget {
           ],
         ),
         const SizedBox(height: AppSpace.md),
-        GestureDetector(
-          onTap: alreadyRead
-              ? null
-              : () async {
+        alreadyRead
+            ? OutlineCta(
+                label: 'Capítulo lido',
+                onTap: null,
+                leading: CinematicGlyph.check,
+                color: reading.verseNumber,
+              )
+            : CopperCta(
+                label: 'Avançar na leitura',
+                onTap: () async {
                   await progress.recordBibleReading(book.abbrev, chapter);
                   if (context.mounted) {
                     ScaffoldMessenger.of(context).showSnackBar(
@@ -1763,45 +1760,9 @@ class BibleReaderView extends StatelessWidget {
                     );
                   }
                 },
-          child: Container(
-            width: double.infinity,
-            padding: const EdgeInsets.symmetric(vertical: AppSpace.lg),
-            decoration: BoxDecoration(
-              gradient: alreadyRead ? null : AppGradients.gold,
-              color: alreadyRead ? reading.chipFill : null,
-              borderRadius: BorderRadius.circular(AppRadii.md),
-              border: alreadyRead
-                  ? Border.all(color: reading.pageBorder)
-                  : null,
-            ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                CinematicIcon(
-                  glyph: alreadyRead
-                      ? CinematicGlyph.check
-                      : CinematicGlyph.book,
-                  size: 20,
-                  accent: alreadyRead
-                      ? reading.verseNumber
-                      : AppColors.inkOnAccent,
-                  glowing: false,
-                  framed: false,
-                ),
-                const SizedBox(width: AppSpace.sm),
-                Text(
-                  alreadyRead ? 'CAPÍTULO LIDO' : 'AVANÇAR NA LEITURA',
-                  style: AppTypography.cta(
-                    size: 14,
-                    color: alreadyRead
-                        ? reading.verseNumber
-                        : AppColors.inkOnAccent,
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ),
+                leading: CinematicGlyph.book,
+                trailing: null,
+              ),
       ],
     );
 

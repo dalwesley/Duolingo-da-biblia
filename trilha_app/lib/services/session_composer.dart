@@ -139,14 +139,19 @@ class SessionComposer {
     return 'id:${_vfBaseId(q.id)}';
   }
 
-  /// Se o pool só tem V/F falso (Firestore legado), monta um verdadeiro a partir do feedback.
-  static BankQuestion _vfAsTrue(BankQuestion q) {
+  /// Se o pool só tem V/F falso no formato legado (`Pergunta: recorte`),
+  /// monta um verdadeiro a partir do recorte citado no feedback.
+  /// Sem citação da resposta certa, não inverte — isso marcaria falsa uma
+  /// afirmação já completa (ex.: terra “ordenada e cheia” em Gn 1:1–2).
+  static BankQuestion? _tryVfAsTrue(BankQuestion q) {
     final m = RegExp(r'[“"]([^”"]+)[”"]').firstMatch(q.feedbackCorrect);
     final quoted = (m?.group(1) ?? '').trim();
+    if (quoted.isEmpty) return null;
+    if (!vfIsAskStem(q.question) && !vfIsAskStem(q.prompt ?? '')) {
+      return null;
+    }
     final stem = q.question.replaceAll(RegExp(r'\?\s*$'), '').trim();
-    final prompt = quoted.isEmpty
-        ? vfClaim(stem.isNotEmpty ? stem : (q.prompt ?? q.question))
-        : vfClaimFromParts(stem, quoted);
+    final prompt = vfClaimFromParts(stem, quoted);
     return BankQuestion(
       id: '${_vfBaseId(q.id)}__vftrue',
       trailSlug: q.trailSlug,
@@ -516,7 +521,7 @@ class SessionComposer {
               picked.every((q) => q.type != ExerciseType.trueFalse)) {
             final source = falses.first;
             if (!vfAvailable(source)) return null;
-            return _vfAsTrue(source);
+            return _tryVfAsTrue(source) ?? source;
           }
         } else {
           if (falses.isNotEmpty) return falses[random.nextInt(falses.length)];

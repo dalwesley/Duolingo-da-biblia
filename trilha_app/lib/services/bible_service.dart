@@ -183,14 +183,23 @@ class BibleService {
       .replaceAll('ç', 'c')
       .replaceAll(RegExp(r'\s+'), ' ');
 
+  /// "livro capítulo[:vIni[–vFim]]"
+  static final _refShape = RegExp(
+    r'^(.+?)\s+(\d+)(?::(\d+)(?:\s*[-–—]\s*(\d+))?)?',
+  );
+
+  /// True se parece citação bíblica ("Gênesis 1:1–2"), não rótulo ("Contexto").
+  static bool looksLikeReference(String reference) {
+    final compact = _norm(reference);
+    return compact.isNotEmpty && _refShape.hasMatch(compact);
+  }
+
   /// Resolve referências como "Gênesis 1:1–2", "Êxodo 3" ou "Gn 12:1-3".
   Future<BibleRef?> resolve(String reference) async {
     final list = await books();
     final compact = _norm(reference);
 
-    // "livro capítulo[:vIni[–vFim]]"
-    final m = RegExp(r'^(.+?)\s+(\d+)(?::(\d+)(?:\s*[-–—]\s*(\d+))?)?')
-        .firstMatch(compact);
+    final m = _refShape.firstMatch(compact);
     if (m == null) return null;
 
     final bookQuery = m.group(1)!.trim();

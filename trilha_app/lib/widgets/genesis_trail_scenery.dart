@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
+import '../utils/difficulty_visuals.dart';
 import '../utils/genesis_theme.dart';
 import 'ui_primitives.dart';
 
@@ -76,6 +77,7 @@ class _ChapterTitleCard extends StatelessWidget {
     final done = missionsDone ?? 0;
     final total = missionsTotal ?? 0;
     final pct = total > 0 ? done / total : 0.0;
+    final onSky = DifficultyVisuals.onSky(accent);
 
     return AnimatedContainer(
       duration: const Duration(milliseconds: 420),
@@ -105,10 +107,8 @@ class _ChapterTitleCard extends StatelessWidget {
           ],
         ),
         border: Border.all(
-          color: highlighted
-              ? accent
-              : Colors.white.withValues(alpha: 0.12),
-          width: highlighted ? 1.4 : 1,
+          color: highlighted ? onSky : Colors.white.withValues(alpha: 0.12),
+          width: highlighted ? 1.6 : 1,
         ),
       ),
       child: Column(
@@ -128,7 +128,7 @@ class _ChapterTitleCard extends StatelessWidget {
                           size: 10,
                           weight: FontWeight.w700,
                           letterSpacing: 2.6,
-                          color: accent.withValues(alpha: 0.85),
+                          color: onSky.withValues(alpha: 0.85),
                         ),
                       ),
                       const SizedBox(height: AppSpace.sm),
@@ -155,7 +155,7 @@ class _ChapterTitleCard extends StatelessWidget {
                           style: AppTypography.display(
                             size: 16,
                             weight: FontWeight.w600,
-                            color: accent.withValues(alpha: 0.9),
+                            color: onSky.withValues(alpha: 0.95),
                           ),
                         ),
                         const SizedBox(height: 2),
@@ -189,14 +189,14 @@ class _ChapterTitleCard extends StatelessWidget {
                 size: 12,
                 weight: FontWeight.w700,
                 letterSpacing: 0.3,
-                color: accent,
+                color: onSky,
               ),
             ),
             if (total > 0) ...[
               const SizedBox(height: 16),
               AppProgressBar(
                 value: pct,
-                color: accent,
+                color: onSky,
                 trackColor: Colors.white.withValues(alpha: 0.1),
               ),
               const SizedBox(height: 8),

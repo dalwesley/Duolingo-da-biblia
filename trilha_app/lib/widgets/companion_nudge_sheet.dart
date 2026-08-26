@@ -7,6 +7,8 @@ import 'package:flutter/services.dart';
 import 'package:share_plus/share_plus.dart';
 import '../models/walk_companion.dart';
 import '../theme/app_theme.dart';
+import 'cinematic_icon.dart';
+import 'ui_primitives.dart';
 import 'hero_card_atmosphere.dart';
 import 'stway_brand.dart';
 
@@ -201,50 +203,13 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
                 ),
               ),
               const SizedBox(height: 14),
-              Material(
-                color: Colors.transparent,
-                child: InkWell(
-                  onTap: _busy ? null : _share,
-                  borderRadius: BorderRadius.circular(AppRadii.md),
-                  child: Ink(
-                    padding: const EdgeInsets.symmetric(vertical: 14),
-                    decoration: BoxDecoration(
-                      gradient: AppGradients.gold,
-                      borderRadius: BorderRadius.circular(AppRadii.md),
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        if (_busy)
-                          const SizedBox(
-                            width: 18,
-                            height: 18,
-                            child: CircularProgressIndicator(
-                              strokeWidth: 2,
-                              color: AppColors.inkOnAccent,
-                            ),
-                          )
-                        else ...[
-                          const Icon(
-                            Icons.ios_share_rounded,
-                            size: 18,
-                            color: AppColors.inkOnAccent,
-                          ),
-                          const SizedBox(width: 8),
-                          Text(
-                            'COMPARTILHAR',
-                            style: AppTypography.label(
-                              size: 13,
-                              letterSpacing: 1.2,
-                              weight: FontWeight.w900,
-                              color: AppColors.inkOnAccent,
-                            ),
-                          ),
-                        ],
-                      ],
-                    ),
-                  ),
-                ),
+              CopperCta(
+                label: 'Compartilhar',
+                onTap: _busy ? null : _share,
+                leading: CinematicGlyph.share,
+                trailing: null,
+                dense: true,
+                busy: _busy,
               ),
             ],
           ),

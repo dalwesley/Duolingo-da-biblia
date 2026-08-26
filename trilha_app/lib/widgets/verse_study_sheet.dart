@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:share_plus/share_plus.dart';
@@ -8,8 +9,11 @@ import '../services/bible_service.dart';
 import '../services/bible_study_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/morphology.dart';
+import '../utils/strong_id.dart';
 import '../utils/strong_text.dart';
+import '../utils/study_gloss.dart';
 import 'cinematic_icon.dart';
+import 'ui_primitives.dart';
 
 Future<void> showVerseStudySheet(
   BuildContext context, {
@@ -169,23 +173,17 @@ Future<void> showVersePreviewDialog(
               ),
             ),
           ),
-          FilledButton(
-            onPressed: () {
+          CopperCta(
+            label: 'Ir para o texto',
+            onTap: () {
               Navigator.pop(ctx);
               Navigator.pop(context);
               onGoToText?.call(bookIndex, chapter, verse);
             },
-            style: FilledButton.styleFrom(
-              backgroundColor: AppColors.accent,
-              foregroundColor: AppColors.inkOnAccent,
-            ),
-            child: Text(
-              'Ir para o texto',
-              style: AppTypography.title(
-                weight: FontWeight.w800,
-                color: AppColors.inkOnAccent,
-              ),
-            ),
+            trailing: null,
+            dense: true,
+            expanded: false,
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
           ),
         ],
       );
@@ -272,7 +270,8 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
       'interjeição',
     };
     for (final t in tokens) {
-      if (t.strong.isEmpty) continue;
+      if (t.strong.isEmpty || isPunctuationStrong(t.strong)) continue;
+      if (isExtendedStrong(t.strong)) continue;
       final chips = morphologyChips(t.morph.isNotEmpty ? t.morph : null);
       if (chips.isEmpty || !skip.contains(chips.first)) return t;
     }
@@ -370,11 +369,12 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
   }
 
   Future<void> _shareStrong(StudyToken token, StrongEntry? entry) async {
+    final view = _viewFor(token, entry);
     final lemma =
         (entry?.lemma.isNotEmpty == true) ? entry!.lemma : token.surface;
     final translit =
         (entry?.translit.isNotEmpty == true) ? entry!.translit : token.translit;
-    final gloss = (entry?.gloss.isNotEmpty == true) ? entry!.gloss : token.gloss;
+    final gloss = view.gloss.isNotEmpty ? view.gloss : token.gloss;
     final body = [
       lemma,
       if (translit.isNotEmpty) translit,
@@ -503,8 +503,17 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                           padding: const EdgeInsets.fromLTRB(18, 8, 18, 10),
                           child: _VerseQuote(
                             text: widget.text,
-                            needles: _highlightNeedles(),
+                            links: _verseLinks(study.tokens),
+                            selectedPos: _selected?.pos,
                             accent: _langAccent(),
+                            onSelectPos: (pos) {
+                              for (final t in study.tokens) {
+                                if (t.pos == pos) {
+                                  _selectToken(t);
+                                  break;
+                                }
+                              }
+                            },
                           ),
                         ),
                       ),
@@ -512,6 +521,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                         SliverToBoxAdapter(
                           child: _WordRibbon(
                             tokens: study.tokens,
+                            verseText: widget.text,
                             selectedPos: _selected?.pos,
                             tokenKeys: _tokenKeys,
                             onSelect: _selectToken,
@@ -584,14 +594,27 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
     return _isHebrew(t, _strong?.entry) ? AppColors.accent : AppColors.cedar;
   }
 
-  List<String> _highlightNeedles() {
-    final token = _selected;
-    if (token == null) return const [];
-    final gloss = [
-      token.gloss,
-      if (_strong?.entry?.gloss.isNotEmpty == true) _strong!.entry!.gloss,
-    ].join(', ');
-    return glossNeedles(gloss);
+  TokenStudyView _viewFor(StudyToken token, StrongEntry? entry) {
+    return buildTokenStudyView(
+      strong: token.strong,
+      morph: token.morph,
+      tokenGloss: token.gloss,
+      entryGloss: entry?.gloss ?? '',
+      definition: entry?.definition ?? '',
+      verseText: widget.text,
+      hebrew: _isHebrew(token, entry),
+    );
+  }
+
+  List<VerseWordLink> _verseLinks(List<StudyToken> tokens) {
+    return linkVerseToTokens(
+      widget.text,
+      [
+        for (final t in tokens)
+          if (!isPunctuationStrong(t.strong))
+            TokenNeedle(t.pos, _viewFor(t, null).needles),
+      ],
+    );
   }
 
   Widget _tabBody(VerseStudy study, List<BibleBook> books) {
@@ -604,6 +627,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
         return _ConcordancePane(
           token: token,
           study: _strong,
+          view: _viewFor(token, entry),
           loading: loading,
           books: books,
           currentBook: widget.bookIndex,
@@ -647,6 +671,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
           entry: entry,
           loading: loading,
           study: _strong,
+          view: _viewFor(token, entry),
           books: books,
           copied: _copied,
           accent: accent,
@@ -715,16 +740,35 @@ class _StudyLoading extends StatelessWidget {
   }
 }
 
-class _VerseQuote extends StatelessWidget {
+class _VerseQuote extends StatefulWidget {
   final String text;
-  final List<String> needles;
+  final List<VerseWordLink> links;
+  final int? selectedPos;
   final Color accent;
+  final ValueChanged<int> onSelectPos;
 
   const _VerseQuote({
     required this.text,
-    required this.needles,
+    required this.links,
+    required this.selectedPos,
     required this.accent,
+    required this.onSelectPos,
   });
+
+  @override
+  State<_VerseQuote> createState() => _VerseQuoteState();
+}
+
+class _VerseQuoteState extends State<_VerseQuote> {
+  final _taps = <TapGestureRecognizer>[];
+
+  @override
+  void dispose() {
+    for (final r in _taps) {
+      r.dispose();
+    }
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -734,7 +778,6 @@ class _VerseQuote extends StatelessWidget {
       weight: FontWeight.w600,
       color: AppColors.textOnDark.withValues(alpha: 0.92),
     );
-    final ranges = highlightRanges(text, needles);
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -743,14 +786,14 @@ class _VerseQuote extends StatelessWidget {
           height: 48,
           margin: const EdgeInsets.only(top: 4),
           decoration: BoxDecoration(
-            color: accent,
+            color: widget.accent,
             borderRadius: BorderRadius.circular(2),
           ),
         ),
         const SizedBox(width: 12),
         Expanded(
           child: Text.rich(
-            _spans(text, ranges, base, accent),
+            _spans(base),
             maxLines: 6,
             overflow: TextOverflow.ellipsis,
           ),
@@ -759,33 +802,53 @@ class _VerseQuote extends StatelessWidget {
     );
   }
 
-  TextSpan _spans(
-    String text,
-    List<HighlightRange> ranges,
-    TextStyle base,
-    Color accent,
-  ) {
-    if (ranges.isEmpty) return TextSpan(text: text, style: base);
+  TextSpan _spans(TextStyle base) {
+    for (final r in _taps) {
+      r.dispose();
+    }
+    _taps.clear();
+    if (widget.links.isEmpty) {
+      return TextSpan(text: widget.text, style: base);
+    }
     final children = <InlineSpan>[];
     var cursor = 0;
-    for (final r in ranges) {
-      if (r.start > cursor) {
-        children.add(TextSpan(text: text.substring(cursor, r.start), style: base));
+    for (final link in widget.links) {
+      if (link.start > cursor) {
+        children.add(
+          TextSpan(
+            text: widget.text.substring(cursor, link.start),
+            style: base,
+          ),
+        );
       }
+      final on = link.tokenPos == widget.selectedPos;
+      final tap = TapGestureRecognizer()
+        ..onTap = () => widget.onSelectPos(link.tokenPos);
+      _taps.add(tap);
       children.add(
         TextSpan(
-          text: text.substring(r.start, r.end),
+          text: widget.text.substring(link.start, link.end),
+          recognizer: tap,
           style: base.copyWith(
-            color: accent,
+            color: on ? widget.accent : AppColors.textOnDark.withValues(alpha: 0.95),
             fontWeight: FontWeight.w700,
-            backgroundColor: accent.withValues(alpha: 0.18),
+            backgroundColor: on
+                ? widget.accent.withValues(alpha: 0.22)
+                : Colors.white.withValues(alpha: 0.06),
+            decoration: TextDecoration.underline,
+            decorationColor: on
+                ? widget.accent.withValues(alpha: 0.85)
+                : AppColors.accent.withValues(alpha: 0.45),
+            decorationThickness: 1.4,
           ),
         ),
       );
-      cursor = r.end;
+      cursor = link.end;
     }
-    if (cursor < text.length) {
-      children.add(TextSpan(text: text.substring(cursor), style: base));
+    if (cursor < widget.text.length) {
+      children.add(
+        TextSpan(text: widget.text.substring(cursor), style: base),
+      );
     }
     return TextSpan(children: children);
   }
@@ -829,12 +892,14 @@ class _PinnedRibbon extends SliverPersistentHeaderDelegate {
 
 class _WordRibbon extends StatelessWidget {
   final List<StudyToken> tokens;
+  final String verseText;
   final int? selectedPos;
   final Map<int, GlobalKey> tokenKeys;
   final void Function(StudyToken token) onSelect;
 
   const _WordRibbon({
     required this.tokens,
+    required this.verseText,
     required this.selectedPos,
     required this.tokenKeys,
     required this.onSelect,
@@ -842,17 +907,28 @@ class _WordRibbon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final visible = [
+      for (final t in tokens)
+        if (!isPunctuationStrong(t.strong)) t,
+    ];
     return Padding(
       padding: const EdgeInsets.fromLTRB(16, 2, 16, 8),
       child: Wrap(
         spacing: 7,
         runSpacing: 7,
         children: [
-          for (final t in tokens)
+          for (final t in visible)
             KeyedSubtree(
               key: tokenKeys.putIfAbsent(t.pos, GlobalKey.new),
               child: _TokenChip(
                 token: t,
+                gloss: buildTokenStudyView(
+                  strong: t.strong,
+                  morph: t.morph,
+                  tokenGloss: t.gloss,
+                  verseText: verseText,
+                  hebrew: t.strong.toUpperCase().startsWith('H'),
+                ).gloss,
                 selected: selectedPos == t.pos,
                 dimmed: selectedPos != null && selectedPos != t.pos,
                 onTap: () => onSelect(t),
@@ -936,12 +1012,14 @@ class _StudyTabs extends StatelessWidget {
 
 class _TokenChip extends StatelessWidget {
   final StudyToken token;
+  final String gloss;
   final bool selected;
   final bool dimmed;
   final VoidCallback onTap;
 
   const _TokenChip({
     required this.token,
+    required this.gloss,
     required this.selected,
     required this.dimmed,
     required this.onTap,
@@ -951,7 +1029,7 @@ class _TokenChip extends StatelessWidget {
   Widget build(BuildContext context) {
     final hebrew = token.strong.toUpperCase().startsWith('H');
     final accent = hebrew ? AppColors.accent : AppColors.cedar;
-    final gloss = token.gloss.isEmpty ? token.strong : token.gloss;
+    final label = gloss.isEmpty ? token.strong : gloss;
 
     return AnimatedOpacity(
       duration: const Duration(milliseconds: 180),
@@ -997,7 +1075,7 @@ class _TokenChip extends StatelessWidget {
                 ),
                 const SizedBox(height: 3),
                 Text(
-                  gloss,
+                  label,
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: AppTypography.label(
@@ -1073,6 +1151,7 @@ class _WordPane extends StatelessWidget {
   final StrongEntry? entry;
   final bool loading;
   final StrongStudy? study;
+  final TokenStudyView view;
   final List<BibleBook> books;
   final bool copied;
   final Color accent;
@@ -1085,6 +1164,7 @@ class _WordPane extends StatelessWidget {
     required this.entry,
     required this.loading,
     required this.study,
+    required this.view,
     required this.books,
     required this.copied,
     required this.accent,
@@ -1098,13 +1178,28 @@ class _WordPane extends StatelessWidget {
     final hebrew = _isHebrew(token, entry);
     final lemma =
         (entry?.lemma.isNotEmpty == true) ? entry!.lemma : token.surface;
-    final translit =
-        (entry?.translit.isNotEmpty == true) ? entry!.translit : token.translit;
-    final gloss = (entry?.gloss.isNotEmpty == true) ? entry!.gloss : token.gloss;
+    final translit = view.isAffix
+        ? token.translit
+        : ((entry?.translit.isNotEmpty == true)
+            ? entry!.translit
+            : token.translit);
+    final gloss = view.gloss;
     final chips = morphologyChips(token.morph.isNotEmpty ? token.morph : null);
+    final headline = view.isAffix ? token.surface : lemma;
     final sameForm = _normScript(lemma) == _normScript(token.surface);
     final senses = definitionSenses(entry?.definition ?? '');
-    final glossBits = glossNeedles(gloss);
+    final occ = study?.occurrences ?? 0;
+    final strongLabel = copied
+        ? 'copiado'
+        : [
+            token.strong,
+            if (view.extended) 'STEP',
+            if (!view.isAffix && occ > 0) '$occ×',
+          ].join(' · ');
+    final phrase = morphologyPhrase(
+      token.morph.isNotEmpty ? token.morph : null,
+      gloss: gloss,
+    );
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -1118,7 +1213,7 @@ class _WordPane extends StatelessWidget {
                 borderRadius: BorderRadius.circular(AppRadii.xs),
               ),
               child: Text(
-                hebrew ? 'HEBRAICO' : 'GREGO',
+                view.kindLabel,
                 style: AppTypography.label(
                   size: 9,
                   weight: FontWeight.w900,
@@ -1142,7 +1237,7 @@ class _WordPane extends StatelessWidget {
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
-                      copied ? 'copiado' : token.strong,
+                      strongLabel,
                       style: AppTypography.label(
                         size: 11,
                         weight: FontWeight.w900,
@@ -1175,7 +1270,7 @@ class _WordPane extends StatelessWidget {
         ),
         const SizedBox(height: 14),
         Text(
-          lemma,
+          headline,
           textAlign: TextAlign.center,
           textDirection: hebrew ? TextDirection.rtl : TextDirection.ltr,
           style: AppTypography.original(
@@ -1209,6 +1304,30 @@ class _WordPane extends StatelessWidget {
             ),
           ),
         ],
+        if (phrase.isNotEmpty) ...[
+          const SizedBox(height: 6),
+          Text(
+            phrase,
+            textAlign: TextAlign.center,
+            style: AppTypography.body(
+              size: 13,
+              height: 1.35,
+              color: AppColors.textOnDark.withValues(alpha: 0.62),
+            ),
+          ),
+        ],
+        if (view.grammarNote != null) ...[
+          const SizedBox(height: 10),
+          Text(
+            view.grammarNote!,
+            textAlign: TextAlign.center,
+            style: AppTypography.body(
+              size: 12,
+              height: 1.35,
+              color: AppColors.textOnDark.withValues(alpha: 0.5),
+            ),
+          ),
+        ],
         if (chips.isNotEmpty) ...[
           const SizedBox(height: 12),
           Wrap(
@@ -1218,7 +1337,7 @@ class _WordPane extends StatelessWidget {
             children: [for (final c in chips) _MorphChip(label: c, accent: accent)],
           ),
         ],
-        if (!sameForm && entry != null) ...[
+        if (!sameForm && entry != null && !view.isAffix) ...[
           const SizedBox(height: 14),
           _FormVsLemma(
             hebrew: hebrew,
@@ -1240,14 +1359,14 @@ class _WordPane extends StatelessWidget {
             ),
           ),
         ] else ...[
-          if (glossBits.length > 1) ...[
+          if (view.otherSenses.isNotEmpty) ...[
             const SizedBox(height: 14),
             Wrap(
               spacing: 6,
               runSpacing: 6,
               alignment: WrapAlignment.center,
               children: [
-                for (final g in glossBits.take(8))
+                for (final g in view.otherSenses)
                   _MorphChip(label: g, accent: accent),
               ],
             ),
@@ -1289,14 +1408,24 @@ class _WordPane extends StatelessWidget {
           ],
           if (study?.first != null && study?.last != null) ...[
             const SizedBox(height: 16),
-            _SpanLine(
-              first: study!.first!,
-              last: study!.last!,
-              books: books,
-              accent: accent,
-              occurrences: study!.occurrences,
-              onOpenHit: onOpenHit,
-            ),
+            if (view.isAffix && study!.occurrences > 200)
+              Text(
+                'Partícula gramatical · ${study!.occurrences} formas no cânon. O sentido está no nome ou no verbo que ela acompanha.',
+                style: AppTypography.body(
+                  size: 12,
+                  height: 1.35,
+                  color: AppColors.textOnDark.withValues(alpha: 0.5),
+                ),
+              )
+            else
+              _SpanLine(
+                first: study!.first!,
+                last: study!.last!,
+                books: books,
+                accent: accent,
+                occurrences: study!.occurrences,
+                onOpenHit: onOpenHit,
+              ),
           ],
         ],
       ],
@@ -1399,6 +1528,7 @@ class _SpanLine extends StatelessWidget {
 class _ConcordancePane extends StatelessWidget {
   final StudyToken token;
   final StrongStudy? study;
+  final TokenStudyView view;
   final bool loading;
   final List<BibleBook> books;
   final int currentBook;
@@ -1415,6 +1545,7 @@ class _ConcordancePane extends StatelessWidget {
   const _ConcordancePane({
     required this.token,
     required this.study,
+    required this.view,
     required this.loading,
     required this.books,
     required this.currentBook,
@@ -1463,7 +1594,9 @@ class _ConcordancePane extends StatelessWidget {
         Text(
           filtered
               ? 'Ocorrências em ${_bookName(books, filterBook!)}'
-              : 'Neste livro — as aparições perto deste versículo.',
+              : view.isAffix
+                  ? 'Esta partícula aparece milhares de vezes. Abaixo, as formas perto deste versículo.'
+                  : 'Neste livro — as aparições perto deste versículo.',
           style: AppTypography.body(
             size: 13,
             height: 1.35,
@@ -1550,7 +1683,7 @@ class _ConcordancePane extends StatelessWidget {
                 original: h.surface,
                 hebrew: hebrew,
                 current: _cite(books, h.bookIndex, h.chapter, h.verse, null) == currentRef,
-                needles: glossNeedles(token.gloss),
+                needles: view.needles,
                 accent: accent,
                 onTap: () => onOpenHit(h),
               ),
@@ -1574,7 +1707,7 @@ class _ConcordancePane extends StatelessWidget {
               original: h.surface,
               hebrew: hebrew,
               current: false,
-              needles: glossNeedles(token.gloss),
+              needles: view.needles,
               accent: accent,
               onTap: () => onOpenHit(h),
             ),

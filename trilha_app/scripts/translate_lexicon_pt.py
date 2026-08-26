@@ -279,22 +279,7 @@ def main() -> None:
     )
     print(f"   glosses ainda EN (aprox): {missing}")
 
-    print("6) Atualizando chips (tokens.gloss)…")
-    cur.execute(
-        """
-        UPDATE tokens
-        SET gloss = (
-          SELECT lexicon.gloss FROM lexicon WHERE lexicon.id = tokens.strong
-        )
-        WHERE EXISTS (
-          SELECT 1 FROM lexicon
-          WHERE lexicon.id = tokens.strong
-            AND lexicon.gloss IS NOT NULL
-            AND lexicon.gloss != ''
-        )
-        """
-    )
-    print(f"   tokens: {cur.rowcount}")
+    print("6) Chips de token: o gloss contextual do TAHOT fica; o léxico não sobrescreve.")
 
     cur.execute(
         "INSERT OR REPLACE INTO meta(key,value) VALUES ('lexicon_lang','pt')"

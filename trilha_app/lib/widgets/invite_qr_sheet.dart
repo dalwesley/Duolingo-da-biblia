@@ -10,6 +10,7 @@ import '../services/app_update_service.dart';
 import '../services/invite_deep_link_service.dart';
 import '../theme/app_theme.dart';
 import 'cinematic_icon.dart';
+import 'ui_primitives.dart';
 import 'stway_brand.dart';
 
 /// Bottom sheet de convite: QR presencial, card visual + código à distância.
@@ -304,42 +305,13 @@ $_installUrl
                 ),
               ),
               const SizedBox(height: 10),
-              GestureDetector(
+              CopperCta(
+                label: _busy ? 'Preparando…' : 'Enviar convite',
                 onTap: _busy ? null : _shareInvite,
-                child: Container(
-                  padding: const EdgeInsets.symmetric(vertical: 14),
-                  decoration: BoxDecoration(
-                    gradient: AppGradients.gold,
-                    borderRadius: BorderRadius.circular(AppRadii.md),
-                  ),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      if (_busy)
-                        const SizedBox(
-                          width: 18,
-                          height: 18,
-                          child: CircularProgressIndicator(
-                            strokeWidth: 2,
-                            color: AppColors.inkOnAccent,
-                          ),
-                        )
-                      else
-                        const CinematicIcon(
-                          glyph: CinematicGlyph.share,
-                          size: 18,
-                          accent: AppColors.inkOnAccent,
-                          framed: false,
-                        ),
-                      const SizedBox(width: AppSpace.sm),
-                      Text(
-                        _busy ? 'PREPARANDO…' : 'ENVIAR CONVITE',
-                        style: AppTypography.cta(size: 13)
-                            .copyWith(letterSpacing: 0.8),
-                      ),
-                    ],
-                  ),
-                ),
+                leading: CinematicGlyph.share,
+                trailing: null,
+                dense: true,
+                busy: _busy,
               ),
               const SizedBox(height: 6),
               Text(

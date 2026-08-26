@@ -20,7 +20,11 @@ void main() {
   });
 
   test('unlisted strongs pass through', () {
-    expect(overlayLexiconGloss('H0430', 'Deus'), 'Deus');
-    expect(overlayLexiconDefinition('H0430', 'Deus, deuses'), 'Deus, deuses');
+    expect(overlayLexiconGloss('H0125', 'avermelhado'), 'avermelhado');
+    expect(overlayLexiconDefinition('H0125', 'avermelhado, ser avermelhado'), 'avermelhado, ser avermelhado');
+  });
+
+  test('colon sub-senses collapse to the head word', () {
+    expect(overlayLexiconGloss('H4941', 'justiça: costume'), 'justiça');
   });
 }

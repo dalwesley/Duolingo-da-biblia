@@ -630,6 +630,99 @@ void main() {
       expect(answers.contains('true'), isTrue);
     });
 
+    test('does not flip a complete false VF claim to true', () {
+      const claim =
+          'Em Gênesis 1:1–2, a terra já aparece ordenada e cheia antes de qualquer ato de Deus.';
+      final pool = [
+        BankQuestion(
+          id: 'genesis-1-11-cam-gen-01-criador-01',
+          trailSlug: 'genesis-1-11',
+          difficulty: TrailDifficulty.caminhada,
+          section: 'gen-01-criador',
+          question: claim,
+          type: ExerciseType.trueFalse,
+          prompt: claim,
+          correctAnswer: 'false',
+          options: const [
+            QuestionOption(id: 'true', text: 'Verdadeiro'),
+            QuestionOption(id: 'false', text: 'Falso'),
+          ],
+          correctOptionId: 'false',
+          feedbackCorrect:
+              'Certo: a terra está sem forma e vazia; Deus é quem cria.',
+          feedbackWrong: const {
+            'true': 'O texto descreve criação e terra ainda sem forma.',
+          },
+        ),
+      ];
+
+      for (final slug in [
+        'a',
+        'b',
+        'c',
+        'd',
+        'e',
+        'f',
+        'g',
+        'h',
+        'gen-01-criador',
+      ]) {
+        final picked = SessionComposer.pickDiverseBankQuestions(
+          pool: pool,
+          usedIds: {},
+          max: 1,
+          missionSlug: slug,
+        );
+        expect(picked, isNotEmpty, reason: 'slug=$slug');
+        final ex = SessionComposer.fromBankQuestion(picked.first);
+        expect(ex.correctAnswer, 'false', reason: 'slug=$slug');
+        expect(ex.checkAnswer('false'), isTrue, reason: 'slug=$slug');
+        expect(ex.checkAnswer('true'), isFalse, reason: 'slug=$slug');
+        expect(ex.prompt.contains('ordenada e cheia'), isTrue, reason: 'slug=$slug');
+      }
+    });
+
+    test('does not rewrite a complete false VF that quotes the verse in feedback', () {
+      const claim =
+          'Ageu 2:4 registra que Jeová pede esforço ao povo, mas nega qualquer promessa de estar com eles.';
+      final pool = [
+        BankQuestion(
+          id: 'ageu-cam-ageu-ageu-02-eu-estou-convosco-01',
+          trailSlug: 'ageu',
+          difficulty: TrailDifficulty.caminhada,
+          section: 'ageu-ageu-02-eu-estou-convosco',
+          question: claim,
+          type: ExerciseType.trueFalse,
+          prompt: claim,
+          correctAnswer: 'false',
+          options: const [
+            QuestionOption(id: 'true', text: 'Verdadeiro'),
+            QuestionOption(id: 'false', text: 'Falso'),
+          ],
+          correctOptionId: 'false',
+          feedbackCorrect:
+              'Correto: o texto termina justamente com a promessa "eu sou convosco".',
+          feedbackWrong: const {
+            'true':
+                'O versículo termina com a promessa "pois eu sou convosco, diz Jeová dos exércitos".',
+          },
+        ),
+      ];
+      for (final slug in ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']) {
+        final picked = SessionComposer.pickDiverseBankQuestions(
+          pool: pool,
+          usedIds: {},
+          max: 1,
+          missionSlug: slug,
+        );
+        expect(picked, isNotEmpty, reason: 'slug=$slug');
+        final ex = SessionComposer.fromBankQuestion(picked.first);
+        expect(ex.correctAnswer, 'false', reason: 'slug=$slug');
+        expect(ex.checkAnswer('false'), isTrue, reason: 'slug=$slug');
+        expect(ex.prompt.contains('nega qualquer promessa'), isTrue, reason: 'slug=$slug');
+      }
+    });
+
     test('pickDiverseBankQuestions does not repeat VF stem as true and false', () {
       final pool = [
         BankQuestion(

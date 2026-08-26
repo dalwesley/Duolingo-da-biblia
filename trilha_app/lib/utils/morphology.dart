@@ -35,6 +35,86 @@ List<String> morphologyChips(String? code) {
       .toList();
 }
 
+/// Uma frase só, no lugar de códigos e chips soltos.
+String morphologyPhrase(String? code, {String gloss = ''}) {
+  final chips = morphologyChips(code);
+  if (chips.isEmpty) return '';
+  final pronoun = suffixPronounPt(code);
+  final g = gloss.trim();
+
+  if (chips.contains('preposição')) {
+    if (pronoun != null) {
+      return g.isNotEmpty
+          ? 'Preposição com sufixo — $g.'
+          : 'Preposição com sufixo pronominal.';
+    }
+    return g.isNotEmpty ? 'Preposição — $g.' : 'Preposição.';
+  }
+  if (chips.contains('conjunção')) {
+    return g.isNotEmpty ? 'Conjunção — $g.' : 'Conjunção.';
+  }
+  if (chips.contains('verbo')) {
+    const stems = {
+      'qal',
+      'nifal',
+      'piel',
+      'pual',
+      'hifil',
+      'hofal',
+      'hitpael',
+    };
+    const tenses = {
+      'perfeito',
+      'imperfecto',
+      'coortativo',
+      'jussivo',
+      'imperativo',
+      'particípio',
+      'particípio passivo',
+      'infinitivo construto',
+      'infinitivo absoluto',
+      'sequencial imperfecto (wayyiqtol)',
+      'sequencial perfeito (weqatal)',
+      'presente',
+      'aoristo',
+      'futuro',
+      'imperfeito',
+    };
+    final bits = <String>['Verbo'];
+    for (final c in chips) {
+      if (stems.contains(c) || tenses.contains(c)) bits.add(c);
+    }
+    final person = chips.where((c) => c.contains('pessoa')).toList();
+    final number = chips.where((c) => c == 'sing.' || c == 'pl.' || c == 'dual');
+    if (person.isNotEmpty) {
+      final n = number.isEmpty
+          ? ''
+          : ' do ${number.first == 'sing.' ? 'singular' : number.first == 'pl.' ? 'plural' : 'dual'}';
+      bits.add('${person.first}$n');
+    }
+    var s = bits.join(', ');
+    if (g.isNotEmpty) s = '$s — $g';
+    return '$s.';
+  }
+  if (chips.contains('substantivo')) {
+    final bits = <String>['Substantivo'];
+    if (chips.contains('próprio')) bits.add('próprio');
+    if (chips.contains('nome divino')) bits.add('nome divino');
+    if (chips.contains('masc.')) bits.add('masculino');
+    if (chips.contains('fem.')) bits.add('feminino');
+    if (chips.contains('sing.')) bits.add('singular');
+    if (chips.contains('pl.')) bits.add('plural');
+    if (chips.contains('absoluto')) bits.add('absoluto');
+    if (chips.contains('construto')) bits.add('em construto');
+    var s = bits.join(', ');
+    if (g.isNotEmpty) s = '$s — $g';
+    return '$s.';
+  }
+  final head = chips.first;
+  final titled = '${head[0].toUpperCase()}${head.substring(1)}';
+  return g.isNotEmpty ? '$titled — $g.' : '$titled.';
+}
+
 String _hebrew(String code) {
   // Exemplos: HVqp3ms, HNcmpa, HTd, HR, HTo, Hc, HD, HAcmsc
   final parts = <String>[];
@@ -171,6 +251,23 @@ String _hebrew(String code) {
     return parts.join(', ');
   }
 
+  if (rest.startsWith('S')) {
+    parts.add('sufixo');
+    var j = 1;
+    const suffixKind = {
+      'p': 'pronominal',
+      'd': 'direcional',
+      'h': 'paragógico',
+      'n': 'nun paragógico',
+    };
+    if (j < rest.length && suffixKind.containsKey(rest[j])) {
+      parts.add(suffixKind[rest[j]]!);
+      j++;
+    }
+    _personNumberGender(rest.substring(j), parts);
+    return parts.join(', ');
+  }
+
   if (rest.startsWith('A')) {
     parts.add('adjetivo');
     _personNumberGender(rest.substring(1), parts);
@@ -184,6 +281,44 @@ String _hebrew(String code) {
 
   parts.add(rest);
   return parts.join(', ');
+}
+
+/// Pronome sufixado em português curto (לְךָ → "ti").
+String? suffixPronounPt(String? morph) {
+  if (morph == null || morph.isEmpty) return null;
+  final m = RegExp(
+    r'Sp([123])([mfc])([spd])',
+    caseSensitive: false,
+  ).firstMatch(morph);
+  if (m == null) return null;
+  const map = {
+    '1cs': 'mim',
+    '1cp': 'nós',
+    '2ms': 'ti',
+    '2fs': 'ti',
+    '2mp': 'vós',
+    '2fp': 'vós',
+    '3ms': 'ele',
+    '3fs': 'ela',
+    '3mp': 'eles',
+    '3fp': 'elas',
+  };
+  return map['${m.group(1)}${m.group(2)}${m.group(3)}'.toLowerCase()];
+}
+
+/// Junta a glosa da partícula ao pronome: "para" + Sp2ms → "para ti".
+String attachSuffixGloss(String gloss, String morph) {
+  final pn = suffixPronounPt(morph);
+  if (pn == null) return gloss;
+  final folded = gloss.toLowerCase();
+  if (folded.contains(pn) ||
+      (pn == 'ti' && (folded.contains('teu') || folded.contains('tua'))) ||
+      (pn == 'ele' && folded.contains('dele')) ||
+      (pn == 'ela' && folded.contains('dela'))) {
+    return gloss;
+  }
+  if (gloss.isEmpty) return pn;
+  return '$gloss $pn';
 }
 
 void _personNumberGender(String s, List<String> parts) {

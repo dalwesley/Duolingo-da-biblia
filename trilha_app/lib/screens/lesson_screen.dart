@@ -26,7 +26,6 @@ import '../widgets/ui_primitives.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/verse_fill_panel.dart';
-import '../data/memory_verses.dart';
 import '../screens/celebration_screen.dart';
 import '../screens/difficulty_picker_screen.dart';
 
@@ -530,19 +529,31 @@ class _LessonScreenState extends State<LessonScreen>
     _goToCelebration(forced: forced);
   }
 
-  bool _canOfferMicro() {
-    final study = _study;
-    if (study != null && study.passageText.trim().length >= 20) return true;
-    return MemoryVerseCatalog.curated.isNotEmpty;
-  }
+  bool _canOfferMicro() => _microVerse() != null;
 
-  ({String reference, String text}) _microVerse() {
+  /// Palco da missão — nunca um verso de outra trilha (ex.: Salmos no meio de Gênesis).
+  ({String reference, String text})? _microVerse() {
     final study = _study;
-    if (study != null && study.passageText.trim().length >= 20) {
-      return (reference: study.passageRef, text: study.passageText.trim());
+    final studyText = study?.passageText.trim() ?? '';
+    final studyRef = study?.passageRef.trim() ?? '';
+    if (studyText.length >= 20) {
+      return (reference: studyRef.isNotEmpty ? studyRef : 'Verso', text: studyText);
     }
-    final v = MemoryVerseCatalog.curated.first;
-    return (reference: v.reference, text: v.text);
+
+    final hookText = (_mission?.hookVerse ?? '').trim();
+    final hookRef = (_mission?.hookRef ?? '').trim();
+    if (hookText.length >= 20) {
+      return (reference: hookRef.isNotEmpty ? hookRef : 'Verso', text: hookText);
+    }
+
+    for (final ex in _exercises) {
+      final t = (ex.passageText ?? '').trim();
+      if (t.length >= 20) {
+        final r = (ex.reference ?? '').trim();
+        return (reference: r.isNotEmpty ? r : hookRef, text: t);
+      }
+    }
+    return null;
   }
 
   Future<void> _completeMicro(bool correct) async {
@@ -782,10 +793,13 @@ class _LessonScreenState extends State<LessonScreen>
                         ),
                         _Phase.micro => () {
                           final v = _microVerse();
+                          if (v == null) return const SizedBox.shrink();
+                          final ref = v.reference;
+                          final text = v.text;
                           return VerseFillPanel(
                             key: const ValueKey('micro'),
-                            reference: v.reference,
-                            verseText: v.text,
+                            reference: ref,
+                            verseText: text,
                             accent: accent,
                             onDone: _completeMicro,
                           );

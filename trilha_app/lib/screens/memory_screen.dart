@@ -642,69 +642,27 @@ class _AnswerRow extends StatelessWidget {
     return Row(
       children: [
         Expanded(
-          child: _ActionBtn(
+          child: OutlineCta(
             label: 'Ainda não',
-            glyph: CinematicGlyph.echo,
+            leading: CinematicGlyph.echo,
             color: AppColors.error,
             onTap: onLearning,
+            uppercase: false,
+            padding: const EdgeInsets.symmetric(vertical: AppSpace.lg),
           ),
         ),
         const SizedBox(width: AppSpace.md),
         Expanded(
-          child: _ActionBtn(
+          child: OutlineCta(
             label: 'Já sei',
-            glyph: CinematicGlyph.check,
+            leading: CinematicGlyph.check,
             color: AppColors.teal,
             onTap: onKnown,
+            uppercase: false,
+            padding: const EdgeInsets.symmetric(vertical: AppSpace.lg),
           ),
         ),
       ],
-    );
-  }
-}
-
-class _ActionBtn extends StatelessWidget {
-  final String label;
-  final CinematicGlyph glyph;
-  final Color color;
-  final VoidCallback onTap;
-
-  const _ActionBtn({
-    required this.label,
-    required this.glyph,
-    required this.color,
-    required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Material(
-      color: Colors.transparent,
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(AppRadii.lg),
-        child: Ink(
-          padding: const EdgeInsets.symmetric(vertical: AppSpace.lg),
-          decoration: BoxDecoration(
-            color: color.withValues(alpha: 0.14),
-            borderRadius: BorderRadius.circular(AppRadii.lg),
-            border: Border.all(color: color.withValues(alpha: 0.65)),
-          ),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              CinematicIcon(
-                glyph: glyph,
-                size: 18,
-                accent: color,
-                framed: false,
-              ),
-              const SizedBox(width: 8),
-              Text(label, style: AppTypography.cta(size: 14, color: color)),
-            ],
-          ),
-        ),
-      ),
     );
   }
 }

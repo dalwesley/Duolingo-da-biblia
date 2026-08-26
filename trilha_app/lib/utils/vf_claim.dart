@@ -102,6 +102,15 @@ const _roleWords = {
   'arca',
 };
 
+/// True se o texto é pergunta (O que / Quem / …) ou `Pergunta: recorte`.
+/// Afirmações completas (ex.: Gn 1:1–2) não passam — não devem ser reescritas.
+bool vfIsAskStem(String text) {
+  final t = text.replaceAll(_space, ' ').trim();
+  if (t.isEmpty) return false;
+  if (_splitStemClaim(t) != null) return true;
+  return _isAsk(_cleanStem(t));
+}
+
 /// Enunciado de V/F a partir do prompt gravado (`Pergunta: recorte.`).
 String vfClaim(String prompt) {
   final text = prompt.replaceAll(_space, ' ').trim();

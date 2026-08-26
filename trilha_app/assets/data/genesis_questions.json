@@ -30,17 +30,21 @@
   ],
   "questions": [
     {
-      "difficulty": "caminhada",
-      "skill": "understand",
       "verseRef": "Gênesis 1:1–2",
-      "learningObjective": "Reconhecer que no princípio Deus cria o céu e a terra, e o Espírito paira sobre o abismo.",
+      "learningObjective": "Sair sabendo que Deus começa a criação; o vazio não é um deus; o Espírito já está presente.",
       "evidence": [
         "Gênesis 1:1–2"
       ],
-      "type": "true_false",
       "question": "Em Gênesis 1:1–2, a terra já aparece ordenada e cheia antes de qualquer ato de Deus.",
       "prompt": "Em Gênesis 1:1–2, a terra já aparece ordenada e cheia antes de qualquer ato de Deus.",
       "cue": "Em Gênesis 1:1–2, a terra já aparece ordenada e cheia antes de qualquer ato de Deus.",
+      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "caminhada",
+      "skill": "understand",
+      "type": "true_false",
+      "id": "genesis-1-11-cam-gen-01-criador-01",
       "feedbackCorrect": "Certo: a terra está sem forma e vazia; Deus é quem cria.",
       "feedbackWrong": {
         "true": "O texto descreve criação e terra ainda sem forma."
@@ -56,29 +60,30 @@
         }
       ],
       "correctOptionId": "false",
-      "correctAnswer": "false",
-      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
-      "trail": "genesis-1-11",
-      "section": "gen-01-criador",
-      "id": "genesis-1-11-cam-gen-01-criador-01"
+      "correctAnswer": "false"
     },
     {
-      "difficulty": "caminhada",
-      "skill": "understand",
       "verseRef": "Gênesis 1:1–2",
-      "learningObjective": "Reconhecer que no princípio Deus cria o céu e a terra, e o Espírito paira sobre o abismo.",
+      "learningObjective": "Sair sabendo que Deus começa a criação; o vazio não é um deus; o Espírito já está presente.",
       "evidence": [
         "Gênesis 1:1–2"
       ],
-      "type": "tap",
       "question": "Em Gênesis 1:1–2, toque a palavra que falta em \"o Espírito de Deus ___ por cima das águas\"?",
       "prompt": "Em Gênesis 1:1–2, toque a palavra que falta em \"o Espírito de Deus ___ por cima das águas\"?",
       "cue": "Em Gênesis 1:1–2, toque a palavra que falta em \"o Espírito de Deus ___ por cima das águas\"?",
-      "feedbackCorrect": "Exato: o Espírito \"pairava\" sobre as águas.",
+      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "caminhada",
+      "skill": "understand",
+      "type": "tap",
+      "id": "genesis-1-11-cam-gen-01-criador-02",
+      "feedbackCorrect": "Exato: o Espírito pairava — permanecia sobre as águas.",
       "feedbackWrong": {
         "a": "Trevas estão sobre o abismo, não nesta lacuna.",
         "c": "Águas são o lugar, não o verbo."
       },
+      "template": "o Espírito de Deus ___ por cima das águas",
       "options": [
         {
           "id": "a",
@@ -94,30 +99,29 @@
         }
       ],
       "correctOptionId": "b",
-      "correctAnswer": "b",
-      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
-      "trail": "genesis-1-11",
-      "section": "gen-01-criador",
-      "id": "genesis-1-11-cam-gen-01-criador-02",
-      "template": "o Espírito de Deus ___ por cima das águas"
+      "correctAnswer": "b"
     },
     {
-      "difficulty": "caminhada",
-      "skill": "understand",
       "verseRef": "Gênesis 1:1–2",
-      "learningObjective": "Reconhecer que no princípio Deus cria o céu e a terra, e o Espírito paira sobre o abismo.",
+      "learningObjective": "Sair sabendo que Deus começa a criação; o vazio não é um deus; o Espírito já está presente.",
       "evidence": [
         "Gênesis 1:1–2"
       ],
+      "question": "Por que Gênesis 1:1–2 mostra o Espírito depois da terra vazia?",
+      "prompt": "Por que Gênesis 1:1–2 mostra o Espírito depois da terra vazia?",
+      "cue": "Por que Gênesis 1:1–2 mostra o Espírito depois da terra vazia?",
+      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "caminhada",
+      "skill": "understand",
       "type": "choice",
-      "question": "Como Gênesis 1:1–2 encadeia criação e presença de Deus sobre o caos?",
-      "prompt": "Como Gênesis 1:1–2 encadeia criação e presença de Deus sobre o caos?",
-      "cue": "Como Gênesis 1:1–2 encadeia criação e presença de Deus sobre o caos?",
-      "feedbackCorrect": "Certo: Deus cria, a terra está vazia, e o Espírito paira.",
+      "id": "genesis-1-11-cam-gen-01-criador-03",
+      "feedbackCorrect": "Certo: o vazio não afasta Deus; o Espírito já paira ali.",
       "feedbackWrong": {
         "a": "O Espírito não se ausenta; paira sobre as águas.",
-        "c": "O texto não diz que a terra cria a si mesma.",
-        "d": "Não há menção de homens criando neste trecho."
+        "c": "O Espírito é de Deus, não produto da terra vazia.",
+        "d": "Não há homens criando neste trecho."
       },
       "options": [
         {
@@ -126,526 +130,40 @@
         },
         {
           "id": "b",
-          "text": "Deus cria; a terra vazia; o Espírito paira"
+          "text": "Deus permanece presente sobre o que ainda está vazio"
         },
         {
           "id": "c",
-          "text": "A terra ordena o caos antes de Deus agir"
+          "text": "A terra vazia gera o Espírito por si mesma"
         },
         {
           "id": "d",
-          "text": "Homens formam o céu e a terra sozinhos"
+          "text": "Homens vão ordenar o caos no lugar de Deus"
         }
       ],
       "correctOptionId": "b",
-      "correctAnswer": "b",
-      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
-      "trail": "genesis-1-11",
-      "section": "gen-01-criador",
-      "id": "genesis-1-11-cam-gen-01-criador-03"
+      "correctAnswer": "b"
     },
     {
-      "difficulty": "caminhada",
-      "skill": "understand",
       "verseRef": "Gênesis 1:1–2",
-      "learningObjective": "Reconhecer que no princípio Deus cria o céu e a terra, e o Espírito paira sobre o abismo.",
+      "learningObjective": "Sair sabendo que Deus começa a criação; o vazio não é um deus; o Espírito já está presente.",
       "evidence": [
         "Gênesis 1:1–2"
       ],
-      "type": "order",
       "question": "Como se encadeiam os eventos de Gênesis 1:1–2?",
       "prompt": "Como se encadeiam os eventos de Gênesis 1:1–2?",
       "cue": "Como se encadeiam os eventos de Gênesis 1:1–2?",
-      "feedbackCorrect": "Certo: princípio da criação, terra vazia, Espírito sobre as águas.",
-      "feedbackWrong": {
-        "b": "Siga a sequência do versículo.",
-        "c": "O Espírito vem após a descrição da terra."
-      },
-      "options": [
-        {
-          "id": "a",
-          "text": "criação no princípio"
-        },
-        {
-          "id": "b",
-          "text": "terra sem forma e vazia"
-        },
-        {
-          "id": "c",
-          "text": "Espírito pairando sobre as águas"
-        }
-      ],
-      "correctOptionId": "a",
-      "correctAnswer": "a",
       "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
       "trail": "genesis-1-11",
       "section": "gen-01-criador",
+      "difficulty": "caminhada",
+      "skill": "understand",
+      "type": "order",
       "id": "genesis-1-11-cam-gen-01-criador-04",
-      "correctOrder": [
-        "a",
-        "b",
-        "c"
-      ]
-    },
-    {
-      "difficulty": "caminhada",
-      "skill": "understand",
-      "verseRef": "Gênesis 1:1–2",
-      "learningObjective": "Reconhecer que no princípio Deus cria o céu e a terra, e o Espírito paira sobre o abismo.",
-      "evidence": [
-        "Gênesis 1:1–2"
-      ],
-      "type": "complete",
-      "question": "Complete Gênesis 1:1–2: \"A terra, porém, era sem forma e ___\".",
-      "prompt": "Complete Gênesis 1:1–2: \"A terra, porém, era sem forma e ___\".",
-      "cue": "Complete Gênesis 1:1–2: \"A terra, porém, era sem forma e ___\".",
-      "feedbackCorrect": "Certo: a terra era sem forma e vazia.",
+      "feedbackCorrect": "Certo: Deus age; o que falta aparece; Deus permanece.",
       "feedbackWrong": {
-        "b": "Trevas estão sobre o abismo.",
-        "c": "Águas são o lugar do Espírito."
-      },
-      "options": [
-        {
-          "id": "a",
-          "text": "vazia"
-        },
-        {
-          "id": "b",
-          "text": "trevas"
-        },
-        {
-          "id": "c",
-          "text": "águas"
-        }
-      ],
-      "correctOptionId": "a",
-      "correctAnswer": "a",
-      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
-      "trail": "genesis-1-11",
-      "section": "gen-01-criador",
-      "id": "genesis-1-11-cam-gen-01-criador-05",
-      "template": "A terra, porém, era sem forma e ___"
-    },
-    {
-      "difficulty": "caminhada",
-      "skill": "understand",
-      "verseRef": "Gênesis 1:1–2",
-      "learningObjective": "Reconhecer que no princípio Deus cria o céu e a terra, e o Espírito paira sobre o abismo.",
-      "evidence": [
-        "Gênesis 1:1–2"
-      ],
-      "type": "connect",
-      "question": "O que Gênesis 1:1–2 comunica que se liga a este contexto?",
-      "prompt": "O que Gênesis 1:1–2 comunica que se liga a este contexto?",
-      "cue": "O que Gênesis 1:1–2 comunica que se liga a este contexto?",
-      "feedbackCorrect": "Certo: o princípio aponta Deus como Criador ativo.",
-      "feedbackWrong": {
-        "b": "O caos não exclui a presença de Deus.",
-        "c": "Não há criação por acaso no texto."
-      },
-      "options": [
-        {
-          "id": "a",
-          "text": "Deus inicia e paira no caos"
-        },
-        {
-          "id": "b",
-          "text": "O caos exclui qualquer presença"
-        },
-        {
-          "id": "c",
-          "text": "A criação ocorre por acaso"
-        }
-      ],
-      "correctOptionId": "a",
-      "correctAnswer": "a",
-      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
-      "trail": "genesis-1-11",
-      "section": "gen-01-criador",
-      "id": "genesis-1-11-cam-gen-01-criador-06",
-      "passageA": {
-        "ref": "Gênesis 1:1–2",
-        "text": "o Espírito de Deus pairava por cima das águas"
-      },
-      "passageB": {
-        "ref": "Contexto",
-        "text": "No princípio, Deus cria — o Espírito paira sobre o abismo."
-      }
-    },
-    {
-      "difficulty": "profundezas",
-      "skill": "interpret",
-      "verseRef": "Gênesis 1:1–2",
-      "learningObjective": "Reconhecer que no princípio Deus cria o céu e a terra, e o Espírito paira sobre o abismo.",
-      "evidence": [
-        "Gênesis 1:1–2"
-      ],
-      "type": "true_false",
-      "question": "Gênesis 1:1–2 apresenta Deus como aquele que inicia a criação, não como espectador do caos.",
-      "prompt": "Gênesis 1:1–2 apresenta Deus como aquele que inicia a criação, não como espectador do caos.",
-      "cue": "Gênesis 1:1–2 apresenta Deus como aquele que inicia a criação, não como espectador do caos.",
-      "feedbackCorrect": "Certo: Deus cria e o Espírito paira sobre o abismo.",
-      "feedbackWrong": {
-        "false": "O texto põe Deus no princípio da criação."
-      },
-      "options": [
-        {
-          "id": "true",
-          "text": "Verdadeiro"
-        },
-        {
-          "id": "false",
-          "text": "Falso"
-        }
-      ],
-      "correctOptionId": "true",
-      "correctAnswer": "true",
-      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
-      "trail": "genesis-1-11",
-      "section": "gen-01-criador",
-      "id": "genesis-1-11-pro-gen-01-criador-01"
-    },
-    {
-      "difficulty": "profundezas",
-      "skill": "interpret",
-      "verseRef": "Gênesis 1:1–2",
-      "learningObjective": "Reconhecer que no princípio Deus cria o céu e a terra, e o Espírito paira sobre o abismo.",
-      "evidence": [
-        "Gênesis 1:1–2"
-      ],
-      "type": "tap",
-      "question": "Em Gênesis 1:1–2, toque a palavra que falta em \"sobre a face do ___, mas o Espírito de Deus pairava\"?",
-      "prompt": "Em Gênesis 1:1–2, toque a palavra que falta em \"sobre a face do ___, mas o Espírito de Deus pairava\"?",
-      "cue": "Em Gênesis 1:1–2, toque a palavra que falta em \"sobre a face do ___, mas o Espírito de Deus pairava\"?",
-      "feedbackCorrect": "Exato: o abismo é o cenário sobre o qual o Espírito paira.",
-      "feedbackWrong": {
-        "b": "Águas são o lugar do pairar, não esta lacuna.",
-        "c": "Terra já foi nomeada antes."
-      },
-      "options": [
-        {
-          "id": "a",
-          "text": "abismo"
-        },
-        {
-          "id": "b",
-          "text": "águas"
-        },
-        {
-          "id": "c",
-          "text": "terra"
-        }
-      ],
-      "correctOptionId": "a",
-      "correctAnswer": "a",
-      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
-      "trail": "genesis-1-11",
-      "section": "gen-01-criador",
-      "id": "genesis-1-11-pro-gen-01-criador-02",
-      "template": "sobre a face do ___, mas o Espírito de Deus pairava"
-    },
-    {
-      "difficulty": "profundezas",
-      "skill": "interpret",
-      "verseRef": "Gênesis 1:1–2",
-      "learningObjective": "Reconhecer que no princípio Deus cria o céu e a terra, e o Espírito paira sobre o abismo.",
-      "evidence": [
-        "Gênesis 1:1–2"
-      ],
-      "type": "choice",
-      "question": "Que leitura teológica Gênesis 1:1–2 prepara sobre o início de tudo?",
-      "prompt": "Que leitura teológica Gênesis 1:1–2 prepara sobre o início de tudo?",
-      "cue": "Que leitura teológica Gênesis 1:1–2 prepara sobre o início de tudo?",
-      "feedbackCorrect": "Certo: Deus é o centro criador; o caos não é absoluto.",
-      "feedbackWrong": {
-        "a": "O texto não diviniza o caos; Deus cria e paira.",
-        "c": "Não há rival eterno igual a Deus neste trecho.",
-        "d": "O Espírito não está ausente; paira sobre as águas."
-      },
-      "options": [
-        {
-          "id": "a",
-          "text": "O caos é eterno e igual a Deus"
-        },
-        {
-          "id": "b",
-          "text": "Deus inicia; o caos não é absoluto"
-        },
-        {
-          "id": "c",
-          "text": "Dois deuses disputam o princípio"
-        },
-        {
-          "id": "d",
-          "text": "Deus cria e depois se ausenta"
-        }
-      ],
-      "correctOptionId": "b",
-      "correctAnswer": "b",
-      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
-      "trail": "genesis-1-11",
-      "section": "gen-01-criador",
-      "id": "genesis-1-11-pro-gen-01-criador-03"
-    },
-    {
-      "difficulty": "profundezas",
-      "skill": "interpret",
-      "verseRef": "Gênesis 1:1–2",
-      "learningObjective": "Reconhecer que no princípio Deus cria o céu e a terra, e o Espírito paira sobre o abismo.",
-      "evidence": [
-        "Gênesis 1:1–2"
-      ],
-      "type": "order",
-      "question": "Qual sequência revela o sentido de Gênesis 1:1–2?",
-      "prompt": "Qual sequência revela o sentido de Gênesis 1:1–2?",
-      "cue": "Qual sequência revela o sentido de Gênesis 1:1–2?",
-      "feedbackCorrect": "Certo: Deus cria, o caos aparece, o Espírito paira.",
-      "feedbackWrong": {
-        "b": "Ordene pela lógica do texto.",
-        "c": "A presença do Espírito fecha o movimento."
-      },
-      "options": [
-        {
-          "id": "a",
-          "text": "Deus cria no princípio"
-        },
-        {
-          "id": "b",
-          "text": "a terra vazia e as trevas"
-        },
-        {
-          "id": "c",
-          "text": "o Espírito paira sobre as águas"
-        }
-      ],
-      "correctOptionId": "a",
-      "correctAnswer": "a",
-      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
-      "trail": "genesis-1-11",
-      "section": "gen-01-criador",
-      "id": "genesis-1-11-pro-gen-01-criador-04",
-      "correctOrder": [
-        "a",
-        "b",
-        "c"
-      ]
-    },
-    {
-      "difficulty": "profundezas",
-      "skill": "interpret",
-      "verseRef": "Gênesis 1:1–2",
-      "learningObjective": "Reconhecer que no princípio Deus cria o céu e a terra, e o Espírito paira sobre o abismo.",
-      "evidence": [
-        "Gênesis 1:1–2"
-      ],
-      "type": "complete",
-      "question": "Complete Gênesis 1:1–2: \"criou ___ o céu e a terra\".",
-      "prompt": "Complete Gênesis 1:1–2: \"criou ___ o céu e a terra\".",
-      "cue": "Complete Gênesis 1:1–2: \"criou ___ o céu e a terra\".",
-      "feedbackCorrect": "Certo: Deus é o sujeito da criação.",
-      "feedbackWrong": {
-        "b": "Princípio marca o tempo, não o sujeito.",
-        "c": "Espírito paira; Deus cria."
-      },
-      "options": [
-        {
-          "id": "a",
-          "text": "Deus"
-        },
-        {
-          "id": "b",
-          "text": "princípio"
-        },
-        {
-          "id": "c",
-          "text": "Espírito"
-        }
-      ],
-      "correctOptionId": "a",
-      "correctAnswer": "a",
-      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
-      "trail": "genesis-1-11",
-      "section": "gen-01-criador",
-      "id": "genesis-1-11-pro-gen-01-criador-05",
-      "template": "criou ___ o céu e a terra"
-    },
-    {
-      "difficulty": "profundezas",
-      "skill": "interpret",
-      "verseRef": "Gênesis 1:1–2",
-      "learningObjective": "Reconhecer que no princípio Deus cria o céu e a terra, e o Espírito paira sobre o abismo.",
-      "evidence": [
-        "Gênesis 1:1–2"
-      ],
-      "type": "connect",
-      "question": "O que Gênesis 1:1–2 comunica que se liga a este contexto?",
-      "prompt": "O que Gênesis 1:1–2 comunica que se liga a este contexto?",
-      "cue": "O que Gênesis 1:1–2 comunica que se liga a este contexto?",
-      "feedbackCorrect": "Certo: o leitor é preparado para um Deus Criador presente.",
-      "feedbackWrong": {
-        "b": "Não há indiferença divina no texto.",
-        "c": "O homem não é o criador aqui."
-      },
-      "options": [
-        {
-          "id": "a",
-          "text": "Criador presente no princípio"
-        },
-        {
-          "id": "b",
-          "text": "Indiferença divina ao caos"
-        },
-        {
-          "id": "c",
-          "text": "Homem como criador do céu"
-        }
-      ],
-      "correctOptionId": "a",
-      "correctAnswer": "a",
-      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
-      "trail": "genesis-1-11",
-      "section": "gen-01-criador",
-      "id": "genesis-1-11-pro-gen-01-criador-06",
-      "passageA": {
-        "ref": "Gênesis 1:1–2",
-        "text": "No princípio, criou Deus o céu e a terra"
-      },
-      "passageB": {
-        "ref": "Contexto",
-        "text": "No princípio, Deus cria — o Espírito paira sobre o abismo."
-      }
-    },
-    {
-      "difficulty": "semente",
-      "skill": "observe",
-      "verseRef": "Gênesis 1:1–2",
-      "learningObjective": "Reconhecer que no princípio Deus cria o céu e a terra, e o Espírito paira sobre o abismo.",
-      "evidence": [
-        "Gênesis 1:1–2"
-      ],
-      "type": "true_false",
-      "question": "No princípio, criou Deus o céu e a terra.",
-      "prompt": "No princípio, criou Deus o céu e a terra.",
-      "cue": "No princípio, criou Deus o céu e a terra.",
-      "feedbackCorrect": "Certo: Gênesis 1:1 afirma exatamente isso.",
-      "feedbackWrong": {
-        "false": "O versículo começa com a criação do céu e da terra."
-      },
-      "options": [
-        {
-          "id": "true",
-          "text": "Verdadeiro"
-        },
-        {
-          "id": "false",
-          "text": "Falso"
-        }
-      ],
-      "correctOptionId": "true",
-      "correctAnswer": "true",
-      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
-      "trail": "genesis-1-11",
-      "section": "gen-01-criador",
-      "id": "genesis-1-11-sem-gen-01-criador-01"
-    },
-    {
-      "difficulty": "semente",
-      "skill": "observe",
-      "verseRef": "Gênesis 1:1–2",
-      "learningObjective": "Reconhecer que no princípio Deus cria o céu e a terra, e o Espírito paira sobre o abismo.",
-      "evidence": [
-        "Gênesis 1:1–2"
-      ],
-      "type": "tap",
-      "question": "Em Gênesis 1:1–2, toque a palavra que falta em \"No ___, criou Deus o céu e a terra\"?",
-      "prompt": "Em Gênesis 1:1–2, toque a palavra que falta em \"No ___, criou Deus o céu e a terra\"?",
-      "cue": "Em Gênesis 1:1–2, toque a palavra que falta em \"No ___, criou Deus o céu e a terra\"?",
-      "feedbackCorrect": "Exato: o texto começa com \"princípio\".",
-      "feedbackWrong": {
-        "b": "Céu é o objeto criado, não esta lacuna.",
-        "c": "Terra completa o par criado."
-      },
-      "options": [
-        {
-          "id": "a",
-          "text": "princípio"
-        },
-        {
-          "id": "b",
-          "text": "céu"
-        },
-        {
-          "id": "c",
-          "text": "terra"
-        }
-      ],
-      "correctOptionId": "a",
-      "correctAnswer": "a",
-      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
-      "trail": "genesis-1-11",
-      "section": "gen-01-criador",
-      "id": "genesis-1-11-sem-gen-01-criador-02",
-      "template": "No ___, criou Deus o céu e a terra"
-    },
-    {
-      "difficulty": "semente",
-      "skill": "observe",
-      "verseRef": "Gênesis 1:1–2",
-      "learningObjective": "Reconhecer que no princípio Deus cria o céu e a terra, e o Espírito paira sobre o abismo.",
-      "evidence": [
-        "Gênesis 1:1–2"
-      ],
-      "type": "choice",
-      "question": "Segundo Gênesis 1:1–2, o que pairava por cima das águas?",
-      "prompt": "Segundo Gênesis 1:1–2, o que pairava por cima das águas?",
-      "cue": "Segundo Gênesis 1:1–2, o que pairava por cima das águas?",
-      "feedbackCorrect": "Certo: o Espírito de Deus pairava sobre as águas.",
-      "feedbackWrong": {
-        "b": "O texto fala do Espírito, não de um vento humano.",
-        "c": "Não há menção de anjos neste trecho.",
-        "d": "A terra estava sem forma; não pairava sobre as águas."
-      },
-      "options": [
-        {
-          "id": "a",
-          "text": "O Espírito de Deus"
-        },
-        {
-          "id": "b",
-          "text": "Um vento gerado pelo homem"
-        },
-        {
-          "id": "c",
-          "text": "Um exército de anjos"
-        },
-        {
-          "id": "d",
-          "text": "A terra sem forma"
-        }
-      ],
-      "correctOptionId": "a",
-      "correctAnswer": "a",
-      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
-      "trail": "genesis-1-11",
-      "section": "gen-01-criador",
-      "id": "genesis-1-11-sem-gen-01-criador-03"
-    },
-    {
-      "difficulty": "semente",
-      "skill": "observe",
-      "verseRef": "Gênesis 1:1–2",
-      "learningObjective": "Reconhecer que no princípio Deus cria o céu e a terra, e o Espírito paira sobre o abismo.",
-      "evidence": [
-        "Gênesis 1:1–2"
-      ],
-      "type": "order",
-      "question": "Qual é a ordem dos fatos em Gênesis 1:1–2?",
-      "prompt": "Qual é a ordem dos fatos em Gênesis 1:1–2?",
-      "cue": "Qual é a ordem dos fatos em Gênesis 1:1–2?",
-      "feedbackCorrect": "Certo: criação, terra vazia, Espírito sobre as águas.",
-      "feedbackWrong": {
-        "b": "Reordene conforme o fluxo do texto.",
-        "c": "Começa no princípio da criação."
+        "b": "A terra vazia descreve o que ainda falta, depois de criar.",
+        "c": "O pairar do Espírito vem após a terra vazia, não antes."
       },
       "options": [
         {
@@ -662,34 +180,521 @@
         }
       ],
       "correctOptionId": "a",
-      "correctAnswer": "a",
-      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
-      "trail": "genesis-1-11",
-      "section": "gen-01-criador",
-      "id": "genesis-1-11-sem-gen-01-criador-04",
       "correctOrder": [
         "a",
         "b",
         "c"
-      ]
+      ],
+      "correctAnswer": "a"
     },
     {
-      "difficulty": "semente",
-      "skill": "observe",
       "verseRef": "Gênesis 1:1–2",
-      "learningObjective": "Reconhecer que no princípio Deus cria o céu e a terra, e o Espírito paira sobre o abismo.",
+      "learningObjective": "Sair sabendo que Deus começa a criação; o vazio não é um deus; o Espírito já está presente.",
       "evidence": [
         "Gênesis 1:1–2"
       ],
+      "question": "Complete Gênesis 1:1–2: \"A terra, porém, era sem forma e ___\".",
+      "prompt": "Complete Gênesis 1:1–2: \"A terra, porém, era sem forma e ___\".",
+      "cue": "Complete Gênesis 1:1–2: \"A terra, porém, era sem forma e ___\".",
+      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "caminhada",
+      "skill": "understand",
       "type": "complete",
+      "id": "genesis-1-11-cam-gen-01-criador-05",
+      "feedbackCorrect": "Certo: a terra era sem forma e vazia.",
+      "feedbackWrong": {
+        "b": "Trevas estão sobre o abismo, não nesta lacuna.",
+        "c": "Águas são o lugar do Espírito."
+      },
+      "template": "A terra, porém, era sem forma e ___",
+      "options": [
+        {
+          "id": "a",
+          "text": "vazia"
+        },
+        {
+          "id": "b",
+          "text": "trevas"
+        },
+        {
+          "id": "c",
+          "text": "águas"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a"
+    },
+    {
+      "verseRef": "Gênesis 1:1–2",
+      "learningObjective": "Sair sabendo que Deus começa a criação; o vazio não é um deus; o Espírito já está presente.",
+      "evidence": [
+        "Gênesis 1:1–2"
+      ],
+      "question": "O que Gênesis 1:1–2 comunica que se liga a este contexto?",
+      "prompt": "O que Gênesis 1:1–2 comunica que se liga a este contexto?",
+      "cue": "O que Gênesis 1:1–2 comunica que se liga a este contexto?",
+      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "caminhada",
+      "skill": "understand",
+      "type": "connect",
+      "id": "genesis-1-11-cam-gen-01-criador-06",
+      "feedbackCorrect": "Certo: o Espírito paira; Deus não some quando ainda está vazio.",
+      "feedbackWrong": {
+        "b": "Deus cria no princípio; o caos não vem antes dEle.",
+        "c": "Pairar é presença, não ausência."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus permanece no vazio"
+        },
+        {
+          "id": "b",
+          "text": "Primeiro o caos, Deus depois"
+        },
+        {
+          "id": "c",
+          "text": "Deus cria e se ausenta"
+        }
+      ],
+      "correctOptionId": "a",
+      "passageA": {
+        "ref": "Gênesis 1:1–2",
+        "text": "o Espírito de Deus pairava por cima das águas"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Deus é o centro, não eu"
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "verseRef": "Gênesis 1:1–2",
+      "learningObjective": "Sair sabendo que Deus começa a criação; o vazio não é um deus; o Espírito já está presente.",
+      "evidence": [
+        "Gênesis 1:1–2"
+      ],
+      "question": "O vazio de Gênesis 1:2 é um poder igual a Deus.",
+      "prompt": "O vazio de Gênesis 1:2 é um poder igual a Deus.",
+      "cue": "O vazio de Gênesis 1:2 é um poder igual a Deus.",
+      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "profundezas",
+      "skill": "interpret",
+      "type": "true_false",
+      "id": "genesis-1-11-pro-gen-01-criador-01",
+      "feedbackCorrect": "Certo: o vazio não rivaliza; Deus cria e o Espírito paira.",
+      "feedbackWrong": {
+        "true": "O texto põe Deus no princípio; o vazio não é um deus."
+      },
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false"
+    },
+    {
+      "verseRef": "Gênesis 1:1–2",
+      "learningObjective": "Sair sabendo que Deus começa a criação; o vazio não é um deus; o Espírito já está presente.",
+      "evidence": [
+        "Gênesis 1:1–2"
+      ],
+      "question": "Em Gênesis 1:1–2, toque a palavra que falta em \"criou ___ o céu e a terra\"?",
+      "prompt": "Em Gênesis 1:1–2, toque a palavra que falta em \"criou ___ o céu e a terra\"?",
+      "cue": "Em Gênesis 1:1–2, toque a palavra que falta em \"criou ___ o céu e a terra\"?",
+      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "profundezas",
+      "skill": "interpret",
+      "type": "tap",
+      "id": "genesis-1-11-pro-gen-01-criador-02",
+      "feedbackCorrect": "Exato: Deus é o sujeito da criação.",
+      "feedbackWrong": {
+        "b": "Terra é o criado, não quem cria.",
+        "c": "Águas aparecem depois; quem cria é Deus."
+      },
+      "template": "criou ___ o céu e a terra",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus"
+        },
+        {
+          "id": "b",
+          "text": "terra"
+        },
+        {
+          "id": "c",
+          "text": "águas"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a"
+    },
+    {
+      "verseRef": "Gênesis 1:1–2",
+      "learningObjective": "Sair sabendo que Deus começa a criação; o vazio não é um deus; o Espírito já está presente.",
+      "evidence": [
+        "Gênesis 1:1–2"
+      ],
+      "question": "Que leitura teológica Gênesis 1:1–2 impede sobre o início de tudo?",
+      "prompt": "Que leitura teológica Gênesis 1:1–2 impede sobre o início de tudo?",
+      "cue": "Que leitura teológica Gênesis 1:1–2 impede sobre o início de tudo?",
+      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "profundezas",
+      "skill": "interpret",
+      "type": "choice",
+      "id": "genesis-1-11-pro-gen-01-criador-03",
+      "feedbackCorrect": "Certo: Deus inicia; o caos não é absoluto nem rival.",
+      "feedbackWrong": {
+        "a": "O texto começa com Deus criando, não com matéria eterna.",
+        "c": "Não há segundo deus neste trecho.",
+        "d": "Deus cria o céu e a terra; não herda um mundo alheio."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A matéria sempre existiu ao lado de Deus"
+        },
+        {
+          "id": "b",
+          "text": "Deus começa; o vazio não é um deus rival"
+        },
+        {
+          "id": "c",
+          "text": "Dois deuses disputam o princípio"
+        },
+        {
+          "id": "d",
+          "text": "Deus organiza um mundo que já era de outro"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b"
+    },
+    {
+      "verseRef": "Gênesis 1:1–2",
+      "learningObjective": "Sair sabendo que Deus começa a criação; o vazio não é um deus; o Espírito já está presente.",
+      "evidence": [
+        "Gênesis 1:1–2"
+      ],
+      "question": "Qual sequência revela o sentido de Gênesis 1:1–2?",
+      "prompt": "Qual sequência revela o sentido de Gênesis 1:1–2?",
+      "cue": "Qual sequência revela o sentido de Gênesis 1:1–2?",
+      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "profundezas",
+      "skill": "interpret",
+      "type": "order",
+      "id": "genesis-1-11-pro-gen-01-criador-04",
+      "feedbackCorrect": "Certo: Deus começa; o vazio não compete; o Espírito já está.",
+      "feedbackWrong": {
+        "b": "O vazio descreve o ainda-não, não um rival no meio.",
+        "c": "A presença do Espírito fecha o sentido, não o abre."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus cria no princípio"
+        },
+        {
+          "id": "b",
+          "text": "a terra vazia não rivaliza com Deus"
+        },
+        {
+          "id": "c",
+          "text": "o Espírito de Deus já paira sobre as águas"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a"
+    },
+    {
+      "verseRef": "Gênesis 1:1–2",
+      "learningObjective": "Sair sabendo que Deus começa a criação; o vazio não é um deus; o Espírito já está presente.",
+      "evidence": [
+        "Gênesis 1:1–2"
+      ],
+      "question": "Complete Gênesis 1:1–2: \"o ___ de Deus pairava por cima das águas\".",
+      "prompt": "Complete Gênesis 1:1–2: \"o ___ de Deus pairava por cima das águas\".",
+      "cue": "Complete Gênesis 1:1–2: \"o ___ de Deus pairava por cima das águas\".",
+      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "profundezas",
+      "skill": "interpret",
+      "type": "complete",
+      "id": "genesis-1-11-pro-gen-01-criador-05",
+      "feedbackCorrect": "Certo: o Espírito de Deus já paira sobre as águas.",
+      "feedbackWrong": {
+        "b": "Abismo é o cenário das trevas, não quem paira.",
+        "c": "Princípio marca o tempo; quem paira é o Espírito."
+      },
+      "template": "o ___ de Deus pairava por cima das águas",
+      "options": [
+        {
+          "id": "a",
+          "text": "Espírito"
+        },
+        {
+          "id": "b",
+          "text": "abismo"
+        },
+        {
+          "id": "c",
+          "text": "princípio"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a"
+    },
+    {
+      "verseRef": "Gênesis 1:1–2",
+      "learningObjective": "Sair sabendo que Deus começa a criação; o vazio não é um deus; o Espírito já está presente.",
+      "evidence": [
+        "Gênesis 1:1–2"
+      ],
+      "question": "O que Gênesis 1:1–2 comunica que se liga a este contexto?",
+      "prompt": "O que Gênesis 1:1–2 comunica que se liga a este contexto?",
+      "cue": "O que Gênesis 1:1–2 comunica que se liga a este contexto?",
+      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "profundezas",
+      "skill": "interpret",
+      "type": "connect",
+      "id": "genesis-1-11-pro-gen-01-criador-06",
+      "feedbackCorrect": "Certo: o princípio é de Deus, não do vazio nem do eu.",
+      "feedbackWrong": {
+        "b": "O Espírito paira; não há indiferença neste texto.",
+        "c": "O homem ainda não aparece; Deus é quem cria."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus é o centro"
+        },
+        {
+          "id": "b",
+          "text": "Indiferença divina ao caos"
+        },
+        {
+          "id": "c",
+          "text": "Homem como criador do céu"
+        }
+      ],
+      "correctOptionId": "a",
+      "passageA": {
+        "ref": "Gênesis 1:1–2",
+        "text": "No princípio, criou Deus o céu e a terra"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Deus é o centro, não eu"
+      },
+      "correctAnswer": "a"
+    },
+    {
+      "verseRef": "Gênesis 1:1–2",
+      "learningObjective": "Sair sabendo que Deus começa a criação; o vazio não é um deus; o Espírito já está presente.",
+      "evidence": [
+        "Gênesis 1:1–2"
+      ],
+      "question": "No princípio, criou Deus o céu e a terra.",
+      "prompt": "No princípio, criou Deus o céu e a terra.",
+      "cue": "No princípio, criou Deus o céu e a terra.",
+      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "semente",
+      "skill": "observe",
+      "type": "true_false",
+      "id": "genesis-1-11-sem-gen-01-criador-01",
+      "feedbackCorrect": "Certo: o versículo começa com Deus criando o céu e a terra.",
+      "feedbackWrong": {
+        "false": "Releia 1:1: criou Deus o céu e a terra."
+      },
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true"
+    },
+    {
+      "verseRef": "Gênesis 1:1–2",
+      "learningObjective": "Sair sabendo que Deus começa a criação; o vazio não é um deus; o Espírito já está presente.",
+      "evidence": [
+        "Gênesis 1:1–2"
+      ],
+      "question": "Em Gênesis 1:1–2, toque a palavra que falta em \"No ___, criou Deus o céu e a terra\"?",
+      "prompt": "Em Gênesis 1:1–2, toque a palavra que falta em \"No ___, criou Deus o céu e a terra\"?",
+      "cue": "Em Gênesis 1:1–2, toque a palavra que falta em \"No ___, criou Deus o céu e a terra\"?",
+      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "semente",
+      "skill": "observe",
+      "type": "tap",
+      "id": "genesis-1-11-sem-gen-01-criador-02",
+      "feedbackCorrect": "Exato: o texto começa com \"princípio\".",
+      "feedbackWrong": {
+        "b": "Céu é o que Deus cria, não esta lacuna.",
+        "c": "Terra completa o par criado, não o tempo."
+      },
+      "template": "No ___, criou Deus o céu e a terra",
+      "options": [
+        {
+          "id": "a",
+          "text": "princípio"
+        },
+        {
+          "id": "b",
+          "text": "céu"
+        },
+        {
+          "id": "c",
+          "text": "terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a"
+    },
+    {
+      "verseRef": "Gênesis 1:1–2",
+      "learningObjective": "Sair sabendo que Deus começa a criação; o vazio não é um deus; o Espírito já está presente.",
+      "evidence": [
+        "Gênesis 1:1–2"
+      ],
+      "question": "Segundo Gênesis 1:1–2, o que pairava por cima das águas?",
+      "prompt": "Segundo Gênesis 1:1–2, o que pairava por cima das águas?",
+      "cue": "Segundo Gênesis 1:1–2, o que pairava por cima das águas?",
+      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "semente",
+      "skill": "observe",
+      "type": "choice",
+      "id": "genesis-1-11-sem-gen-01-criador-03",
+      "feedbackCorrect": "Certo: o Espírito de Deus pairava sobre as águas.",
+      "feedbackWrong": {
+        "b": "Trevas estão sobre o abismo, não pairam sobre as águas.",
+        "c": "O abismo é o cenário, não quem paira.",
+        "d": "A terra estava vazia; não pairava sobre as águas."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O Espírito de Deus"
+        },
+        {
+          "id": "b",
+          "text": "As trevas"
+        },
+        {
+          "id": "c",
+          "text": "O abismo"
+        },
+        {
+          "id": "d",
+          "text": "A terra sem forma"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a"
+    },
+    {
+      "verseRef": "Gênesis 1:1–2",
+      "learningObjective": "Sair sabendo que Deus começa a criação; o vazio não é um deus; o Espírito já está presente.",
+      "evidence": [
+        "Gênesis 1:1–2"
+      ],
+      "question": "Qual é a ordem dos fatos em Gênesis 1:1–2?",
+      "prompt": "Qual é a ordem dos fatos em Gênesis 1:1–2?",
+      "cue": "Qual é a ordem dos fatos em Gênesis 1:1–2?",
+      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "semente",
+      "skill": "observe",
+      "type": "order",
+      "id": "genesis-1-11-sem-gen-01-criador-04",
+      "feedbackCorrect": "Certo: Deus cria, a terra está vazia, o Espírito paira.",
+      "feedbackWrong": {
+        "b": "A terra vazia vem depois da criação, não antes.",
+        "c": "O Espírito fecha o trecho, depois da terra vazia."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "No princípio, criou Deus o céu e a terra"
+        },
+        {
+          "id": "b",
+          "text": "A terra, porém, era sem forma e vazia"
+        },
+        {
+          "id": "c",
+          "text": "o Espírito de Deus pairava por cima das águas"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a"
+    },
+    {
+      "verseRef": "Gênesis 1:1–2",
+      "learningObjective": "Sair sabendo que Deus começa a criação; o vazio não é um deus; o Espírito já está presente.",
+      "evidence": [
+        "Gênesis 1:1–2"
+      ],
       "question": "Complete Gênesis 1:1–2: \"havia ___ sobre a face do abismo\".",
       "prompt": "Complete Gênesis 1:1–2: \"havia ___ sobre a face do abismo\".",
       "cue": "Complete Gênesis 1:1–2: \"havia ___ sobre a face do abismo\".",
+      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "semente",
+      "skill": "observe",
+      "type": "complete",
+      "id": "genesis-1-11-sem-gen-01-criador-05",
       "feedbackCorrect": "Certo: havia trevas sobre a face do abismo.",
       "feedbackWrong": {
-        "b": "Águas vêm depois; a lacuna é trevas.",
-        "c": "Espírito pairava, não preenche esta lacuna."
+        "b": "Águas são onde o Espírito paira, não esta lacuna.",
+        "c": "O Espírito pairava; a lacuna é trevas."
       },
+      "template": "havia ___ sobre a face do abismo",
       "options": [
         {
           "id": "a",
@@ -705,34 +710,33 @@
         }
       ],
       "correctOptionId": "a",
-      "correctAnswer": "a",
-      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
-      "trail": "genesis-1-11",
-      "section": "gen-01-criador",
-      "id": "genesis-1-11-sem-gen-01-criador-05",
-      "template": "havia ___ sobre a face do abismo"
+      "correctAnswer": "a"
     },
     {
-      "difficulty": "semente",
-      "skill": "observe",
       "verseRef": "Gênesis 1:1–2",
-      "learningObjective": "Reconhecer que no princípio Deus cria o céu e a terra, e o Espírito paira sobre o abismo.",
+      "learningObjective": "Sair sabendo que Deus começa a criação; o vazio não é um deus; o Espírito já está presente.",
       "evidence": [
         "Gênesis 1:1–2"
       ],
-      "type": "connect",
       "question": "O que Gênesis 1:1–2 comunica que se liga a este contexto?",
       "prompt": "O que Gênesis 1:1–2 comunica que se liga a este contexto?",
       "cue": "O que Gênesis 1:1–2 comunica que se liga a este contexto?",
-      "feedbackCorrect": "Certo: Deus cria e o Espírito paira sobre o abismo.",
+      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "semente",
+      "skill": "observe",
+      "type": "connect",
+      "id": "genesis-1-11-sem-gen-01-criador-06",
+      "feedbackCorrect": "Certo: o texto abre com Deus criando, não com o homem.",
       "feedbackWrong": {
-        "b": "O texto não descreve abandono.",
-        "c": "Não há recusa de criar neste versículo."
+        "b": "O Espírito paira; não há abandono neste versículo.",
+        "c": "O versículo afirma a criação, não a recusa."
       },
       "options": [
         {
           "id": "a",
-          "text": "Deus cria; Espírito paira"
+          "text": "Deus começa a criação"
         },
         {
           "id": "b",
@@ -744,19 +748,15 @@
         }
       ],
       "correctOptionId": "a",
-      "correctAnswer": "a",
-      "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
-      "trail": "genesis-1-11",
-      "section": "gen-01-criador",
-      "id": "genesis-1-11-sem-gen-01-criador-06",
       "passageA": {
         "ref": "Gênesis 1:1–2",
         "text": "No princípio, criou Deus o céu e a terra"
       },
       "passageB": {
         "ref": "Contexto",
-        "text": "No princípio, Deus cria — o Espírito paira sobre o abismo."
-      }
+        "text": "Deus é o centro, não eu"
+      },
+      "correctAnswer": "a"
     },
     {
       "difficulty": "caminhada",

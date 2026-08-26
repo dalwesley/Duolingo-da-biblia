@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../theme/app_theme.dart';
 import 'cinematic_icon.dart';
+import 'ui_primitives.dart';
 
 /// Confirma entrada na companhia com o código já resolvido (sem digitar).
 Future<bool> showCompanionInviteConfirmSheet(
@@ -103,20 +104,11 @@ class _CompanionInviteConfirmSheet extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 14),
-          GestureDetector(
+          CopperCta(
+            label: 'Aceitar convite',
             onTap: () => Navigator.pop(context, true),
-            child: Container(
-              padding: const EdgeInsets.symmetric(vertical: 15),
-              decoration: BoxDecoration(
-                gradient: AppGradients.gold,
-                borderRadius: BorderRadius.circular(AppRadii.md),
-              ),
-              child: Text(
-                'ACEITAR CONVITE',
-                textAlign: TextAlign.center,
-                style: AppTypography.cta(size: 13).copyWith(letterSpacing: 0.8),
-              ),
-            ),
+            trailing: null,
+            dense: true,
           ),
           const SizedBox(height: 8),
           TextButton(

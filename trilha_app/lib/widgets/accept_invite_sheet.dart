@@ -4,6 +4,7 @@ import 'package:mobile_scanner/mobile_scanner.dart';
 import '../services/invite_deep_link_service.dart';
 import '../theme/app_theme.dart';
 import 'cinematic_icon.dart';
+import 'ui_primitives.dart';
 
 /// Sheet para aceitar convite: colar código (clipboard), digitar ou escanear QR.
 Future<String?> showAcceptInviteSheet(
@@ -168,50 +169,17 @@ class _AcceptInviteSheetState extends State<_AcceptInviteSheet> {
               onSubmitted: _submit,
             ),
             const SizedBox(height: AppSpace.md),
-            GestureDetector(
+            OutlineCta(
+              label: 'Escanear QR',
               onTap: _scanQr,
-              child: Container(
-                padding: const EdgeInsets.symmetric(vertical: 15),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(AppRadii.md),
-                  border: Border.all(
-                    color: AppColors.accent.withValues(alpha: 0.45),
-                  ),
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    const CinematicIcon(
-                      glyph: CinematicGlyph.qr,
-                      size: 20,
-                      accent: AppColors.accent,
-                      framed: false,
-                    ),
-                    const SizedBox(width: AppSpace.sm),
-                    Text(
-                      'ESCANEAR QR',
-                      style: AppTypography.cta(size: 13, color: AppColors.accent)
-                          .copyWith(letterSpacing: 0.8),
-                    ),
-                  ],
-                ),
-              ),
+              leading: CinematicGlyph.qr,
             ),
             const SizedBox(height: AppSpace.md),
-            GestureDetector(
+            CopperCta(
+              label: 'Entrar',
               onTap: () => _submit(),
-              child: Container(
-                padding: const EdgeInsets.symmetric(vertical: 15),
-                decoration: BoxDecoration(
-                  gradient: AppGradients.gold,
-                  borderRadius: BorderRadius.circular(AppRadii.md),
-                ),
-                child: Text(
-                  'ENTRAR',
-                  textAlign: TextAlign.center,
-                  style: AppTypography.cta(size: 13).copyWith(letterSpacing: 0.8),
-                ),
-              ),
+              trailing: null,
+              dense: true,
             ),
           ],
         ),

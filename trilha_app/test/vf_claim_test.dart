@@ -114,4 +114,24 @@ void main() {
     expect(ex.instructionVerb, 'Julgue');
     expect(ex.displayCue, 'Abrão desce ao Egito para guerrear.');
   });
+
+  test('vfIsAskStem distingue pergunta de afirmação completa', () {
+    expect(vfIsAskStem('O que Deus criou no princípio?'), isTrue);
+    expect(
+      vfIsAskStem('O que Deus criou no princípio: Somente os mares.'),
+      isTrue,
+    );
+    expect(
+      vfIsAskStem(
+        'Ageu 2:4 registra que Jeová pede esforço ao povo, mas nega qualquer promessa de estar com eles.',
+      ),
+      isFalse,
+    );
+    expect(
+      vfIsAskStem(
+        'Em Gênesis 1:1–2, a terra já aparece ordenada e cheia antes de qualquer ato de Deus.',
+      ),
+      isFalse,
+    );
+  });
 }

@@ -69,4 +69,23 @@ void main() {
     expect(morphologyChips(null), isEmpty);
     expect(morphologyChips(''), isEmpty);
   });
+
+  test('HR/Sp2ms reads the pronominal suffix', () {
+    final chips = morphologyChips('HR/Sp2ms');
+    expect(chips.first, 'preposição');
+    expect(chips, containsAll(['sufixo', 'pronominal', '2ª pessoa', 'masc.', 'sing.']));
+    expect(suffixPronounPt('HR/Sp2ms'), 'ti');
+  });
+
+  test('morphologyPhrase is a Portuguese sentence', () {
+    expect(
+      morphologyPhrase('HR/Sp2ms', gloss: 'para ti'),
+      'Preposição com sufixo — para ti.',
+    );
+    expect(
+      morphologyPhrase('HNcmsa', gloss: 'bondade'),
+      contains('Substantivo'),
+    );
+    expect(morphologyPhrase('HNcmsa', gloss: 'bondade'), contains('bondade'));
+  });
 }

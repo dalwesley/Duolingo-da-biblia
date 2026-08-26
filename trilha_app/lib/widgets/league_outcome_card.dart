@@ -570,28 +570,11 @@ class _LeaguePromotionSheet extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 28),
-                GestureDetector(
+                CopperCta(
+                  label: 'Continuar',
                   onTap: () => Navigator.pop(context),
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(vertical: 15),
-                    decoration: BoxDecoration(
-                      gradient: AppGradients.gold,
-                      borderRadius: BorderRadius.circular(AppRadii.md),
-                      boxShadow: [
-                        BoxShadow(
-                          color: AppColors.accent.withValues(alpha: 0.4),
-                          blurRadius: 18,
-                          offset: const Offset(0, 6),
-                        ),
-                      ],
-                    ),
-                    child: Text(
-                      'CONTINUAR',
-                      textAlign: TextAlign.center,
-                      style: AppTypography.cta(size: 13)
-                          .copyWith(letterSpacing: 0.8),
-                    ),
-                  ),
+                  trailing: null,
+                  dense: true,
                 ),
               ],
             ),

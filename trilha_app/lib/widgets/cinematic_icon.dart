@@ -322,11 +322,9 @@ class _GlyphPainter extends CustomPainter {
     final c = Offset(size.width / 2, size.height / 2);
     final s = size.shortestSide;
 
-    // Amarelo de marca fica sólido (sem lerp → “dourado”).
-    final isBrandYellow =
-        color.toARGB32() == AppColors.accent.toARGB32() ||
-        color.toARGB32() == AppColors.accentBright.toARGB32();
-    _ink = isBrandYellow
+    // Acentos de modo (ouro/coral/orquídea) ficam sólidos — o lerp
+    // para branco apagava Compreensão e Interpretação no céu.
+    _ink = AppColors.isSolidChrome(color)
         ? color
         : Color.lerp(
             color,
@@ -740,14 +738,22 @@ class _GlyphPainter extends CustomPainter {
       final outer = Path()
         ..addRRect(
           RRect.fromRectAndRadius(
-            Rect.fromCenter(center: Offset.zero, width: s * 0.28, height: s * 0.4),
+            Rect.fromCenter(
+              center: Offset.zero,
+              width: s * 0.28,
+              height: s * 0.4,
+            ),
             Radius.circular(s * 0.14),
           ),
         );
       final inner = Path()
         ..addRRect(
           RRect.fromRectAndRadius(
-            Rect.fromCenter(center: Offset.zero, width: s * 0.12, height: s * 0.24),
+            Rect.fromCenter(
+              center: Offset.zero,
+              width: s * 0.12,
+              height: s * 0.24,
+            ),
             Radius.circular(s * 0.06),
           ),
         );
@@ -1036,8 +1042,16 @@ class _GlyphPainter extends CustomPainter {
         ),
       stroke,
     );
-    canvas.drawCircle(Offset(c.dx - s * 0.28, c.dy - s * 0.32), s * 0.075, _solid);
-    canvas.drawCircle(Offset(c.dx + s * 0.28, c.dy - s * 0.32), s * 0.075, _solid);
+    canvas.drawCircle(
+      Offset(c.dx - s * 0.28, c.dy - s * 0.32),
+      s * 0.075,
+      _solid,
+    );
+    canvas.drawCircle(
+      Offset(c.dx + s * 0.28, c.dy - s * 0.32),
+      s * 0.075,
+      _solid,
+    );
   }
 
   void _people(Canvas canvas, Offset c, double s) {

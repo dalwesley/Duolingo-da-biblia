@@ -13,8 +13,11 @@ void main() {
 
   test('wordMatchesNeedle stems Portuguese verbs', () {
     expect(wordMatchesNeedle('separou', 'separar'), isTrue);
+    expect(wordMatchesNeedle('criou', 'criar'), isTrue);
+    expect(wordMatchesNeedle('céus', 'céu'), isTrue);
     expect(wordMatchesNeedle('luz', 'luz'), isTrue);
     expect(wordMatchesNeedle('trevas', 'luz'), isFalse);
+    expect(wordMatchesNeedle('ti', 'ti'), isTrue);
   });
 
   test('highlightRanges marks gloss in the verse', () {

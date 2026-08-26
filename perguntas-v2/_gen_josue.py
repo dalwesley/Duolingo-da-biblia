@@ -1576,7 +1576,7 @@ bank += mission(
             nn="01",
             question="Em Josué 7:10–11, Jeová manda Josué levantar-se porque o problema não é só a prostração, mas o pecado de Israel.",
             ok="Certo: a pergunta e a denúncia deslocam o foco para o pecado.",
-            wrong={"true": "Jeová ordena levantar e denuncia o pecado da aliança."},
+            wrong={"false": "Jeová ordena levantar e denuncia o pecado da aliança."},
             options=tf_opts(),
             correct="true",
         ),

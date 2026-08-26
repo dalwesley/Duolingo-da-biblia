@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../models/trail.dart';
+import '../services/bible_service.dart';
 import '../theme/app_theme.dart';
 import 'cinematic_icon.dart';
 import 'lamps_bar.dart';
@@ -808,44 +809,71 @@ class _StudyRefChip extends StatelessWidget {
     final ref = reference.trim();
     if (ref.isEmpty) return const SizedBox.shrink();
 
+    final label = Text(
+      ref,
+      style: AppTypography.label(
+        size: 11,
+        letterSpacing: compact ? 0.6 : 1.4,
+        color: accent,
+      ),
+    );
+
+    if (!BibleService.looksLikeReference(ref)) {
+      return Center(child: label);
+    }
+
     return Center(
-      child: Material(
-        color: Colors.transparent,
-        child: InkWell(
-          borderRadius: BorderRadius.circular(99),
-          onTap: () {
-            HapticFeedback.selectionClick();
-            showVerseStudyFromReference(context, ref);
-          },
-          child: Padding(
-            padding: EdgeInsets.symmetric(
-              horizontal: compact ? 8 : 12,
-              vertical: compact ? 4 : 6,
-            ),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Text(
-                  ref,
-                  style: AppTypography.label(
-                    size: compact ? 11 : 11,
-                    letterSpacing: compact ? 0.6 : 1.4,
-                    color: accent,
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          label,
+          const SizedBox(width: 8),
+          Material(
+            color: accent.withValues(alpha: 0.18),
+            borderRadius: BorderRadius.circular(AppRadii.pill),
+            child: InkWell(
+              borderRadius: BorderRadius.circular(AppRadii.pill),
+              onTap: () {
+                HapticFeedback.selectionClick();
+                showVerseStudyFromReference(context, ref);
+              },
+              child: Container(
+                constraints: BoxConstraints(minHeight: compact ? 32 : 36),
+                padding: EdgeInsets.symmetric(
+                  horizontal: compact ? 10 : 12,
+                  vertical: compact ? 5 : 6,
+                ),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(AppRadii.pill),
+                  border: Border.all(
+                    color: accent.withValues(alpha: 0.8),
+                    width: 1.5,
                   ),
                 ),
-                const SizedBox(width: 8),
-                Text(
-                  'ESTUDAR',
-                  style: AppTypography.label(
-                    size: 9,
-                    letterSpacing: 1.2,
-                    color: accent.withValues(alpha: 0.72),
-                  ),
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    CinematicIcon(
+                      glyph: CinematicGlyph.book,
+                      size: compact ? 12 : 13,
+                      accent: accent,
+                      framed: false,
+                    ),
+                    const SizedBox(width: 5),
+                    Text(
+                      'ESTUDAR',
+                      style: AppTypography.label(
+                        size: 9,
+                        letterSpacing: 1.2,
+                        color: accent,
+                      ),
+                    ),
+                  ],
                 ),
-              ],
+              ),
             ),
           ),
-        ),
+        ],
       ),
     );
   }
