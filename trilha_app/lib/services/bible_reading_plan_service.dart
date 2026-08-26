@@ -8,9 +8,6 @@ class BibleReadingPlanService {
   BibleReadingPlanService._();
   static final instance = BibleReadingPlanService._();
 
-  /// Caracteres/minuto contemplativo (leitura bíblica, não romance).
-  static const charsPerMinute = 900.0;
-
   Future<List<PlanChapterRef>> buildSequence(BibleReadingOrder order) async {
     final books = await BibleService.instance.books();
     final indices = switch (order) {
@@ -115,40 +112,6 @@ class BibleReadingPlanService {
       finished: chapters.isEmpty,
       skippedAlreadyRead: start - plan.cursor,
     );
-  }
-
-  /// Dias restantes estimados (só capítulos ainda não lidos).
-  Future<int> estimatedDaysRemaining({
-    required BibleReadingPlan plan,
-    required Set<String> readKeys,
-  }) async {
-    if (!plan.active) return 0;
-    final seq = await buildSequence(plan.order);
-    var i = firstUnreadCursor(seq, readKeys, from: plan.cursor);
-    if (i >= seq.length) return 0;
-    var days = 0;
-    final budget = plan.minutesPerDay.toDouble();
-    while (i < seq.length) {
-      var minutes = 0.0;
-      var packed = false;
-      while (i < seq.length) {
-        final ch = seq[i];
-        if (_isRead(ch, readKeys)) {
-          i++;
-          continue;
-        }
-        final m = ch.estimatedMinutes;
-        if (packed && minutes + m > budget * 1.15) break;
-        minutes += m;
-        i++;
-        packed = true;
-        if (minutes >= budget) break;
-      }
-      if (!packed) break;
-      days++;
-      if (days > 2000) break;
-    }
-    return days;
   }
 
   Future<

@@ -212,13 +212,6 @@ class BibleStudyService {
     );
   }
 
-  Future<List<ConcordanceHit>> concordance(
-    String strongId, {
-    int limit = 40,
-  }) async {
-    return concordanceInBook(strongId, null, limit: limit);
-  }
-
   Future<List<ConcordanceHit>> concordanceInBook(
     String strongId,
     int? bookIndex, {
@@ -250,16 +243,6 @@ class BibleStudyService {
             [key, bookIndex, limit],
           );
     return _hitsFrom(key, rows);
-  }
-
-  Future<int> occurrenceCount(String strongId) async {
-    final db = await _database();
-    final key = _normalizeStrong(strongId);
-    final rows = await db.rawQuery(
-      'SELECT COUNT(DISTINCT book || \':\' || chapter || \':\' || verse) AS c FROM tokens WHERE strong = ?',
-      [key],
-    );
-    return (rows.first['c'] as int?) ?? 0;
   }
 
   Future<List<BookOccurrence>> occurrenceByBook(String strongId) async {

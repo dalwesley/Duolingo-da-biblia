@@ -179,13 +179,6 @@ class BibleChronology {
     return s;
   }
 
-  static BibleEra? eraById(String id) {
-    for (final e in eras) {
-      if (e.id == id) return e;
-    }
-    return null;
-  }
-
   /// Índices canônicos dos livros na ordem cronológica.
   /// Livros sem match caem no fim (não deveriam existir nos 66).
   static List<({int bookIndex, String eraId})> chronologicalIndices(

@@ -4,9 +4,8 @@ import '../theme/app_theme.dart';
 /// Marca STWAY — ícone da trilha + wordmark com o “A” em chevron.
 class StwayLogo extends StatelessWidget {
   final double size;
-  final double? pulse;
 
-  const StwayLogo({super.key, this.size = 96, this.pulse});
+  const StwayLogo({super.key, this.size = 96});
 
   @override
   Widget build(BuildContext context) {

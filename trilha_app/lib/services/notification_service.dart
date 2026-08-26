@@ -278,30 +278,6 @@ class NotificationService {
     }
   }
 
-  Future<void> scheduleDailyReminder({
-    required bool enabled,
-    int hour = 19,
-    int minute = 0,
-  }) async {
-    await init();
-    if (!_available || !_initialized) return;
-    if (!enabled) {
-      await _cancelAll();
-      return;
-    }
-    await _schedule(
-      id: _idEvening,
-      when: _nextSlot(hour, minute),
-      copy: const _ReminderCopy(
-        title: 'Meta de hoje',
-        body: 'Ainda dá tempo de cumprir sua meta diária no Stway.',
-        action: ReminderAction.home,
-        priority: 10,
-      ),
-      daily: true,
-    );
-  }
-
   List<_ReminderCopy> _buildHooks(ProgressService progress) {
     final hooks = <_ReminderCopy>[];
     final name = progress.userName.trim().isEmpty

@@ -11,7 +11,6 @@ class GenesisModuleTheme {
   final Color pathInactive;
   final Color nodeCurrentTop;
   final Color nodeCurrentBottom;
-  final Color decorColor;
 
   const GenesisModuleTheme({
     required this.narrative,
@@ -20,7 +19,6 @@ class GenesisModuleTheme {
     required this.pathInactive,
     required this.nodeCurrentTop,
     required this.nodeCurrentBottom,
-    required this.decorColor,
   });
 
   static const _gold = AppColors.accent;
@@ -282,7 +280,6 @@ class GenesisModuleTheme {
       pathInactive: _pathIdle,
       nodeCurrentTop: swatch.nodeTop,
       nodeCurrentBottom: swatch.nodeBottom,
-      decorColor: swatch.decor,
     );
   }
 }

@@ -84,8 +84,6 @@ class Mission {
 
   bool get isBoss => type == 'boss';
 
-  bool get hasExercises => exercises.any((e) => e.hasPlayableContent);
-
   bool get hasBibleHook =>
       (hookVerse ?? '').trim().isNotEmpty || (hookNote ?? '').trim().isNotEmpty;
 

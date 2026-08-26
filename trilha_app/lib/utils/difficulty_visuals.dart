@@ -18,18 +18,6 @@ class DifficultyVisuals {
     TrailDifficulty.profundezas => AppColors.orchid,
   };
 
-  static Color brightFor(TrailDifficulty d) => switch (d) {
-    TrailDifficulty.semente => AppColors.accentBright,
-    TrailDifficulty.caminhada => AppColors.coralBright,
-    TrailDifficulty.profundezas => AppColors.orchidBright,
-  };
-
-  static Color softFor(TrailDifficulty d) => switch (d) {
-    TrailDifficulty.semente => AppColors.accentSoft,
-    TrailDifficulty.caminhada => AppColors.coralSoft,
-    TrailDifficulty.profundezas => AppColors.orchidSoft,
-  };
-
   static CinematicGlyph glyphFor(TrailDifficulty d) => switch (d) {
     TrailDifficulty.semente => CinematicGlyph.seed,
     TrailDifficulty.caminhada => CinematicGlyph.path,

@@ -11,8 +11,6 @@ class SoundService {
   bool _enabled = true;
   bool _available = true;
 
-  bool get enabled => _enabled;
-
   Future<void> init() async {
     final prefs = await SharedPreferences.getInstance();
     _enabled = prefs.getBool('sound') ?? true;

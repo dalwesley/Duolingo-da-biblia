@@ -37,7 +37,6 @@ class HomeScreen extends StatefulWidget {
   final VoidCallback onOpenTrilhas;
   final VoidCallback? onOpenLeague;
   final VoidCallback? onOpenProfile;
-  final Widget? topBar;
 
   const HomeScreen({
     super.key,
@@ -46,7 +45,6 @@ class HomeScreen extends StatefulWidget {
     required this.onOpenTrilhas,
     this.onOpenLeague,
     this.onOpenProfile,
-    this.topBar,
   });
 
   @override

@@ -21,8 +21,6 @@ class InviteDeepLinkService extends ChangeNotifier {
   bool _wantCompanhiaTab = false;
 
   String? get pendingCompanionCode => _pendingCompanionCode;
-  bool get wantJuntosTab => _wantJuntosTab;
-  bool get wantCompanhiaTab => _wantCompanhiaTab;
 
   /// Link tocável no WhatsApp / QR — convite.
   static String companionUri(String code) =>

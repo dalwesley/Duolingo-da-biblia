@@ -264,30 +264,6 @@ class Exercise {
         t.startsWith('complete a lacuna');
   }
 
-  /// O que o usuário deve fazer neste ato.
-  String get displayInstruction {
-    final i = (instruction ?? '').trim();
-    if (i.isNotEmpty) return i;
-    return switch (type) {
-      ExerciseType.trueFalse =>
-        'Leia a afirmação e diga se é verdadeira ou falsa.',
-      ExerciseType.tap =>
-        usesCompletePalco
-            ? 'Toque a palavra que completa o trecho.'
-            : 'Toque o trecho que responde.',
-      ExerciseType.findInText => 'Toque o trecho que responde.',
-      ExerciseType.choice ||
-      ExerciseType.textSupported ||
-      ExerciseType.bestInterpretation =>
-        'Leia com atenção e escolha a melhor opção.',
-      ExerciseType.order => 'Arraste as peças na ordem certa.',
-      ExerciseType.match => 'Ligue cada item ao seu par.',
-      ExerciseType.complete => 'Complete a lacuna com a opção certa.',
-      ExerciseType.connect => 'Compare os textos e toque a palavra que os une.',
-      _ => 'Responda com base no que o texto diz.',
-    };
-  }
-
   String get instructionVerb => switch (type) {
     ExerciseType.trueFalse => 'Julgue',
     ExerciseType.tap || ExerciseType.findInText =>
@@ -309,11 +285,6 @@ class Exercise {
         .toSet();
     return effectiveOptions.where((o) => ids.contains(o.id)).toList()
       ..sort((a, b) => b.text.length.compareTo(a.text.length));
-  }
-
-  List<QuestionOption> optionsNotEmbeddedIn(String passage) {
-    final embedded = optionsEmbeddedIn(passage).map((o) => o.id).toSet();
-    return effectiveOptions.where((o) => !embedded.contains(o.id)).toList();
   }
 
   bool get supportsHint =>

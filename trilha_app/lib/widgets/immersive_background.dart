@@ -7,16 +7,10 @@ import 'ui_primitives.dart';
 /// Atmosfera Stway — gradiente sóbrio, sem orbs nem wash de luz.
 class AmbientAtmosphere extends StatelessWidget {
   final DayPhase? phase;
-  final Color? accent;
-  final Color? glow;
-  final double vignetteStrength;
 
   const AmbientAtmosphere({
     super.key,
     this.phase,
-    this.accent,
-    this.glow,
-    this.vignetteStrength = 0.06,
   });
 
   @override
@@ -52,7 +46,7 @@ class ImmersiveBackground extends StatelessWidget {
       fit: StackFit.expand,
       children: [
         background ??
-            AmbientAtmosphere(phase: style.phase, vignetteStrength: 0.05),
+            AmbientAtmosphere(phase: style.phase),
         child,
       ],
     );

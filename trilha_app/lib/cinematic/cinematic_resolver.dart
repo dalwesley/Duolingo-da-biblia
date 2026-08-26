@@ -23,21 +23,6 @@ class CreationWorldState {
     this.stars = 0,
     this.humanity = 0,
   });
-
-  CreationWorldState mergeMax(CreationWorldState other) {
-    return CreationWorldState(
-      voidDepth: voidDepth * (1 - other.light.clamp(0, 1)),
-      spirit: spirit > other.spirit ? spirit : other.spirit,
-      waters: waters > other.waters ? waters : other.waters,
-      light: light > other.light ? light : other.light,
-      land: land > other.land ? land : other.land,
-      plants: plants > other.plants ? plants : other.plants,
-      fish: fish > other.fish ? fish : other.fish,
-      birds: birds > other.birds ? birds : other.birds,
-      stars: stars > other.stars ? stars : other.stars,
-      humanity: humanity > other.humanity ? humanity : other.humanity,
-    );
-  }
 }
 
 enum CinematicRevealKey {

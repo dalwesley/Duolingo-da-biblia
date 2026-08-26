@@ -1,16 +1,11 @@
-import 'dart:math';
-
 import '../models/difficulty.dart';
 import '../services/content_catalog_service.dart';
-import '../services/progress_service.dart';
 
 class QuestionBank {
   static QuestionBank? _instance;
   static QuestionBank get instance => _instance ??= QuestionBank._();
 
   QuestionBank._();
-
-  final _rng = Random();
 
   Future<void> ensureLoaded() => ContentCatalogService.instance.ensureLoaded();
 
@@ -46,59 +41,6 @@ class QuestionBank {
     // IDs no formato genesis--sem-gen-01-criador-01 (seed atual)
     // ou genesis-1-11-sem-… / exodo-sem-exo-01-opressao-01
     return q.id.contains('-$section-') || q.id.endsWith('-$section');
-  }
-
-  Future<List<String>> pickIdsForMission({
-    required TrailDifficulty difficulty,
-    required String? moduleTitle,
-    required int count,
-    required List<String> usedIds,
-    String? trailSlug,
-    String? section,
-    /// Boss usa [count] maior (ex. 8); flag só documenta a intenção do caller.
-    bool isBoss = false,
-  }) async {
-    final questions = await _questions();
-    final trail = trailSlug ?? 'genesis-1-11';
-    final resolvedSection =
-        (section != null && section.isNotEmpty)
-            ? section
-            : moduleTitleToSection(moduleTitle, trailSlug: trail);
-    final target = count > 0
-        ? count
-        : (isBoss
-            ? ProgressService.bossQuestionCount
-            : ProgressService.normalQuestionCount);
-    final pool = questions
-        .where((q) => q.difficulty == difficulty && q.trailSlug == trail)
-        .toList();
-
-    // Só o passo atual — nunca misturar capítulos/missões da mesma trilha.
-    final sectionPool =
-        pool.where((q) => matchesMissionSection(q, resolvedSection)).toList();
-
-    final unused = sectionPool
-        .where((q) => !usedIds.contains(q.id))
-        .toList()
-      ..shuffle(_rng);
-    final usedInSection = sectionPool
-        .where((q) => usedIds.contains(q.id))
-        .toList()
-      ..shuffle(_rng);
-
-    final ids = <String>[];
-    void take(List<BankQuestion> from) {
-      for (final q in from) {
-        if (ids.length >= target) break;
-        if (ids.contains(q.id)) continue;
-        ids.add(q.id);
-      }
-    }
-
-    take(unused);
-    // Replay / pool esgotado: reutiliza só perguntas deste passo.
-    take(usedInSection);
-    return ids;
   }
 
   /// Todas as perguntas do passo × dificuldade (para o composer montar a mixagem).

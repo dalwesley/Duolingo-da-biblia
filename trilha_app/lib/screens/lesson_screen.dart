@@ -703,11 +703,7 @@ class _LessonScreenState extends State<LessonScreen>
             fit: StackFit.expand,
             children: [
               Positioned.fill(
-                child: AmbientAtmosphere(
-                  phase: appearance.phase,
-                  accent: accent,
-                  glow: _theme.pathActive,
-                ),
+                child: AmbientAtmosphere(phase: appearance.phase),
               ),
               Positioned.fill(
                 child: IgnorePointer(

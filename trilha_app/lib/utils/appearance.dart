@@ -152,11 +152,6 @@ class Appearance extends InheritedWidget {
     return scope?.style ?? AppearanceStyle.resolve(AppearanceMode.automatic);
   }
 
-  static AppearanceMode modeOf(BuildContext context) {
-    final scope = context.dependOnInheritedWidgetOfExactType<Appearance>();
-    return scope?.mode ?? AppearanceMode.automatic;
-  }
-
   @override
   bool updateShouldNotify(Appearance oldWidget) =>
       oldWidget.style.look != style.look ||

@@ -188,13 +188,6 @@ class CompanionService extends ChangeNotifier {
     await refresh();
   }
 
-  /// Publica que o usuário caminhou hoje e recalcula dias juntos.
-  Future<void> syncWalksIfNeeded(ProgressService progress) async {
-    if (!backend.isActive || companions.isEmpty) return;
-    if (!progress.walkedToday) return;
-    await syncPresence(progress);
-  }
-
   Future<void> leave(String code, {ProgressService? progress}) async {
     lastError = null;
     if (backend.isActive) {
@@ -205,17 +198,9 @@ class CompanionService extends ChangeNotifier {
     await refresh();
   }
 
-  /// Debug / testes.
-  @visibleForTesting
-  Future<void> replaceCodesForTest(List<String> codes) async {
-    await _saveCodes(codes);
-  }
-
-  Map<String, dynamic> debugSnapshot() => {
+  @override
+  String toString() => jsonEncode({
         'companions': companions.length,
         'codes': companions.map((c) => c.code).toList(),
-      };
-
-  @override
-  String toString() => jsonEncode(debugSnapshot());
+      });
 }

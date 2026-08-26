@@ -56,7 +56,6 @@ class UserBackupResult {
 
   bool get hasDocument => data != null;
   bool get isError => error != null;
-  bool get isMissing => missing;
 }
 
 /// Backend Firebase. Quando configurado, ativa:
@@ -958,14 +957,6 @@ class BackendService extends ChangeNotifier {
     }
   }
 
-  /// Restaura o backup da nuvem (retorna null se não houver).
-  /// Prefira [fetchBackupResult] quando precisar distinguir erro de doc ausente.
-  Future<Map<String, dynamic>?> fetchBackup() async {
-    final result = await fetchBackupResult();
-    if (result.isError || !result.hasDocument) return null;
-    return result.data;
-  }
-
   /// Distingue documento ausente de falha de rede/permissão.
   Future<UserBackupResult> fetchBackupResult() async {
     if (!isActive) {
@@ -1399,20 +1390,6 @@ class BackendService extends ChangeNotifier {
         debugPrint('Falha ao sincronizar companhia $code: $e');
       }
     }
-  }
-
-  /// Compat: publica caminhada de hoje (presença + passos zerados se só walk).
-  Future<void> publishCompanionWalks({
-    required List<String> codes,
-    required String userName,
-    int weeklySteps = 0,
-  }) async {
-    await syncCompanionPresence(
-      codes: codes,
-      userName: userName,
-      weeklySteps: weeklySteps,
-      walkedToday: true,
-    );
   }
 
   Future<void> leaveCompanion(String code) async {

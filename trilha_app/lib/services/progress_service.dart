@@ -226,14 +226,6 @@ class ProgressService extends ChangeNotifier {
 
   bool get isLoaded => _loaded;
   bool get canPersistCloud => _cloudReadyToPersist;
-  String? get cacheUid => _cacheUid;
-
-  /// Progresso real nesta sessão (missão, passos ou dia jogado).
-  bool get hasSessionProgress =>
-      steps > 0 ||
-      completedMissions.isNotEmpty ||
-      playDates.isNotEmpty ||
-      lastPlayedDate != null;
 
   void markCloudHydrated() {
     _cloudReadyToPersist = true;
@@ -935,16 +927,6 @@ class ProgressService extends ChangeNotifier {
     }
   }
 
-  String? reflectionFor(String missionSlug) => missionReflections[missionSlug];
-
-  Future<void> saveReflection(String missionSlug, String text) async {
-    final trimmed = text.trim();
-    if (trimmed.isEmpty) return;
-    missionReflections = {...missionReflections, missionSlug: trimmed};
-    await _save();
-    notifyListeners();
-  }
-
   /// Reflexões recentes (mais novas primeiro), até [limit].
   List<MapEntry<String, String>> recentReflections({int limit = 3}) {
     final entries = missionReflections.entries.toList();
@@ -1276,21 +1258,6 @@ class ProgressService extends ChangeNotifier {
     notifyListeners();
   }
 
-  Future<void> claimQuest(String id) async {
-    _ensureQuestDay();
-    DailyQuest? q;
-    for (final item in DailyQuestDefs.all) {
-      if (item.id == id) q = item;
-    }
-    if (q == null) return;
-    if (isQuestClaimed(id)) return;
-    if (questProgress(id) < q.target) return;
-    questClaimed = [...questClaimed, id];
-    _gainSteps(q.stepsReward);
-    await _save();
-    notifyListeners();
-  }
-
   /// Concede passos de missões já concluídas sem claim manual.
   Future<void> _autoClaimCompletedQuests() async {
     _ensureQuestDay();
@@ -1311,21 +1278,6 @@ class ProgressService extends ChangeNotifier {
       changed = true;
     }
     if (changed) await _save();
-  }
-
-  Future<void> claimWeeklyQuest(String id) async {
-    _ensureWeeklyWeek();
-    DailyQuest? q;
-    for (final item in WeeklyQuestDefs.all) {
-      if (item.id == id) q = item;
-    }
-    if (q == null) return;
-    if (isWeeklyQuestClaimed(id)) return;
-    if (weeklyQuestProgress(id) < q.target) return;
-    weeklyClaimed = [...weeklyClaimed, id];
-    _gainSteps(q.stepsReward);
-    await _save();
-    notifyListeners();
   }
 
   /// Calcula passos da lição: base × precisão × bônus perfeito × bônus lâmpadas.

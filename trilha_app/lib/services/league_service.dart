@@ -87,13 +87,6 @@ class LeagueService extends ChangeNotifier {
     return rank > groupSize - demoteCount - 2;
   }
 
-  /// Dias restantes até o ranking mensal fechar (inclui hoje).
-  static int daysLeftInMonth([DateTime? now]) {
-    final d = now ?? DateTime.now();
-    final lastDay = DateTime(d.year, d.month + 1, 0).day;
-    return lastDay - d.day + 1;
-  }
-
   Future<void> init() async {
     try {
       final prefs = await SharedPreferences.getInstance();

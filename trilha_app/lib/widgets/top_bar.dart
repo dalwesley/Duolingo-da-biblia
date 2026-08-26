@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../services/progress_service.dart';
@@ -26,93 +25,6 @@ class FrostController extends ValueNotifier<double> {
   }
 }
 
-/// Passos + dias caminhando — presente em toda app bar.
-class TopBarStats extends StatelessWidget {
-  final int steps;
-  final int streak;
-
-  const TopBarStats({super.key, required this.steps, required this.streak});
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      mainAxisSize: MainAxisSize.min,
-      children: [
-        StepsBadge(value: steps),
-        const SizedBox(width: 8),
-        StreakBadge(value: streak),
-      ],
-    );
-  }
-}
-
-class StepsBadge extends StatelessWidget {
-  final int value;
-
-  const StepsBadge({super.key, required this.value});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-      decoration: BoxDecoration(
-        gradient: AppGradients.gold,
-        borderRadius: BorderRadius.circular(AppRadii.pill),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          const CinematicIcon(
-            glyph: CinematicGlyph.path,
-            size: 14,
-            accent: AppColors.inkOnAccent,
-            framed: false,
-          ),
-          const SizedBox(width: 4),
-          Text(
-            '$value',
-            style: AppTypography.title(size: 13, color: AppColors.inkOnAccent),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class StreakBadge extends StatelessWidget {
-  final int value;
-
-  const StreakBadge({super.key, required this.value});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-      decoration: BoxDecoration(
-        color: AppColors.streak.withValues(alpha: 0.14),
-        borderRadius: BorderRadius.circular(AppRadii.pill),
-        border: Border.all(color: AppColors.streak.withValues(alpha: 0.55)),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          const CinematicIcon(
-            glyph: CinematicGlyph.flame,
-            size: 14,
-            accent: AppColors.streak,
-            framed: false,
-          ),
-          const SizedBox(width: 4),
-          Text(
-            '$value',
-            style: AppTypography.title(size: 13, color: AppColors.streak),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
 /// Altura mínima do chrome inline (sem AppBar — evita espaço morto).
 const double kTopBarInlineHeight = 48;
 
@@ -136,16 +48,6 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
   final CinematicGlyph leadingGlyph;
   final IconData? leadingIcon;
 
-  /// Mantido para compatibilidade com telas que ainda passam o controlador,
-  /// mas a TopBar agora é sempre sólida.
-  final ValueListenable<double>? frost;
-
-  /// Mantido para compatibilidade; sem efeito com a barra sólida.
-  final double frostFloor;
-
-  /// Quando false, esconde passos/dias.
-  final bool showStats;
-
   /// Marca leading (ícone da aba). Desligado em Config — o nav já basta.
   final bool showLeading;
 
@@ -153,7 +55,6 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
   final bool showTrailingAvatar;
 
   /// Cor do leading/back — por aba (Hoje=amarelo, Bíblia=cedar…).
-  /// Amarelo fica em CTA e badges de conquista ([StepsBadge]).
   final Color? chromeAccent;
 
   const TopBar({
@@ -169,9 +70,6 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
     this.onProfileTap,
     this.leadingGlyph = CinematicGlyph.spark,
     this.leadingIcon,
-    this.frost,
-    this.frostFloor = 0,
-    this.showStats = false,
     this.showLeading = true,
     this.showTrailingAvatar = false,
     this.chromeAccent,
@@ -186,12 +84,6 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
     final onDark = immersive || dark || onBack != null;
     final showAvatar = personalGreeting && onProfileTap != null;
     final userName = context.select((ProgressService p) => p.userName);
-    final steps = showStats
-        ? context.select((ProgressService p) => p.steps)
-        : 0;
-    final streak = showStats
-        ? context.select((ProgressService p) => p.streak)
-        : 0;
 
     // Chrome não herda a escala máxima da leitura — evita overflow em toda TopBar.
     final mark = chromeAccent ?? AppColors.accent;
@@ -211,11 +103,8 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
               onBack: onBack,
               leadingGlyph: leadingGlyph,
               leadingIcon: leadingIcon,
-              showStats: showStats,
               showLeading: showLeading,
               showTrailingAvatar: showTrailingAvatar,
-              steps: steps,
-              streak: streak,
               chromeAccent: mark,
             )
           : AppBar(
@@ -262,12 +151,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
                 personalGreeting: personalGreeting,
                 onDark: onDark,
               ),
-              actions: showStats
-                  ? [
-                      TopBarStats(steps: steps, streak: streak),
-                      const SizedBox(width: 8),
-                    ]
-                  : showTrailingAvatar
+              actions: showTrailingAvatar
                   ? [
                       Padding(
                         padding: const EdgeInsets.only(right: 8),
@@ -319,11 +203,8 @@ class _InlineChrome extends StatelessWidget {
   final VoidCallback? onBack;
   final CinematicGlyph leadingGlyph;
   final IconData? leadingIcon;
-  final bool showStats;
   final bool showLeading;
   final bool showTrailingAvatar;
-  final int steps;
-  final int streak;
   final Color chromeAccent;
 
   const _InlineChrome({
@@ -339,11 +220,8 @@ class _InlineChrome extends StatelessWidget {
     required this.onBack,
     required this.leadingGlyph,
     required this.leadingIcon,
-    required this.showStats,
     required this.showLeading,
     required this.showTrailingAvatar,
-    required this.steps,
-    required this.streak,
     required this.chromeAccent,
   });
 
@@ -398,10 +276,7 @@ class _InlineChrome extends StatelessWidget {
                 onDark: onDark,
               ),
             ),
-            if (showStats) ...[
-              const SizedBox(width: 8),
-              TopBarStats(steps: steps, streak: streak),
-            ] else if (showTrailingAvatar) ...[
+            if (showTrailingAvatar) ...[
               const SizedBox(width: 8),
               UserAvatar(photoUrl: photoUrl, name: userName, radius: 16),
             ] else if (onBack != null && showLeading) ...[

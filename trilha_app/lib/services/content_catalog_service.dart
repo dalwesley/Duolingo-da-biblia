@@ -41,8 +41,6 @@ class ContentCatalogService {
   Completer<void>? _trailsReady;
   bool _refreshInFlight = false;
 
-  List<Trail>? get trailsCache => _trails;
-  List<DifficultyMeta>? get difficultiesCache => _difficulties;
   List<BankQuestion>? get bankQuestionsCache => _bankQuestions;
   Map<String, Map<String, dynamic>>? get studiesCache => _studies;
   Map<String, String>? get versesCache => _verses;
@@ -51,13 +49,6 @@ class ContentCatalogService {
   /// Shell = trilhas + dificuldades. Banco de atos é sob demanda por trilha.
   bool get _catalogShellReady =>
       _hasTrails && (_difficulties?.isNotEmpty ?? false);
-
-  /// True quando ainda não há currículo em memória nem (após load) em cache/nuvem.
-  bool get hasCurriculum =>
-      _trails != null &&
-      _trails!.isNotEmpty &&
-      _bankQuestions != null &&
-      _studies != null;
 
   void _signalTrails() {
     final gate = _trailsReady;
@@ -201,11 +192,6 @@ class ContentCatalogService {
   Future<List<BankQuestion>> getBankQuestions() async {
     await ensureLoaded();
     return List.unmodifiable(_bankQuestions ?? const []);
-  }
-
-  Future<Map<String, dynamic>?> getStudy(String slug) async {
-    await ensureLoaded();
-    return _studies?[slug];
   }
 
   Future<String?> verseText(String? ref) async {
