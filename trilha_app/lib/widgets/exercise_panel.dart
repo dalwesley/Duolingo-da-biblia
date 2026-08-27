@@ -4,77 +4,76 @@ import 'package:flutter/services.dart';
 import '../models/trail.dart';
 import '../services/bible_service.dart';
 import '../theme/app_theme.dart';
+import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
+import 'icon_well.dart';
 import 'lamps_bar.dart';
 import 'ui_primitives.dart';
 import 'verse_study_sheet.dart';
 
 /// Player dos micro-atos — palco direto no fundo, sem card.
 class _ActSkin {
-  static const radius = AppRadii.lg;
+  static const radius = AppRadii.md;
   static const gap = AppSpace.sm;
   static const afterChrome = AppSpace.lg;
   static const afterHero = AppSpace.md;
   static const cueSize = 24.0;
   static const verseSize = 22.0;
   static const noteSize = 16.0;
-  static const badge = 34.0;
+  static const badge = 36.0;
   static const pad = EdgeInsets.fromLTRB(14, 14, 16, 14);
   static const anim = Duration(milliseconds: 180);
 
+  /// Superfície = GhostCta / AppSelectChip; letra = IconWell (mesmo poço do chrome).
   static ({
     Color fill,
     Color border,
-    Color badge,
-    Color badgeFg,
+    Color well,
+    Color wellFg,
     Color text,
     bool hot,
   })
-  paint(_OptState state, Color accent) {
-    final hot =
-        state == _OptState.picked ||
-        state == _OptState.correct ||
-        state == _OptState.wrong;
+  paint(_OptState state, Color accent, AppearanceStyle a) {
     return switch (state) {
       _OptState.correct => (
-        fill: accent.withValues(alpha: 0.2),
-        border: accent,
-        badge: accent,
-        badgeFg: AppColors.inkOnAccent,
+        fill: AppMetrics.accentFill(color: accent, alpha: 0.22),
+        border: AppMetrics.accentBorder(color: accent, alpha: 0.9),
+        well: accent,
+        wellFg: accent,
         text: AppColors.textOnDark,
         hot: true,
       ),
       _OptState.wrong => (
         fill: AppColors.error.withValues(alpha: 0.16),
         border: AppColors.error.withValues(alpha: 0.9),
-        badge: AppColors.error,
-        badgeFg: Colors.white,
+        well: AppColors.error,
+        wellFg: AppColors.error,
         text: AppColors.textOnDark,
         hot: true,
       ),
       _OptState.picked => (
-        fill: accent.withValues(alpha: 0.14),
-        border: accent.withValues(alpha: 0.9),
-        badge: accent,
-        badgeFg: AppColors.inkOnAccent,
+        fill: AppMetrics.accentFill(color: accent, alpha: 0.18),
+        border: AppMetrics.accentBorder(color: accent, alpha: 0.85),
+        well: accent,
+        wellFg: accent,
         text: AppColors.textOnDark,
         hot: true,
       ),
       _OptState.dimmed => (
-        fill: Colors.white.withValues(alpha: 0.03),
-        border: Colors.white.withValues(alpha: 0.08),
-        badge: Colors.white.withValues(alpha: 0.06),
-        badgeFg: Colors.white.withValues(alpha: 0.3),
-        text: Colors.white.withValues(alpha: 0.38),
+        fill: a.cardFillSoft.withValues(alpha: 0.5),
+        border: a.cardBorder.withValues(alpha: 0.45),
+        well: AppColors.textOnDark.withValues(alpha: 0.35),
+        wellFg: AppColors.textOnDark.withValues(alpha: 0.35),
+        text: AppColors.textOnDark.withValues(alpha: 0.38),
         hot: false,
       ),
       _OptState.idle => (
-        fill: Colors.white.withValues(alpha: 0.06),
-        border: Colors.white.withValues(alpha: 0.12),
-        badge: Colors.white.withValues(alpha: 0.1),
-        badgeFg: Colors.white.withValues(alpha: 0.82),
+        fill: a.cardFillSoft,
+        border: a.cardBorder,
+        well: accent,
+        wellFg: accent,
         text: AppColors.textOnDark,
-        hot: hot,
+        hot: false,
       ),
     };
   }
@@ -739,6 +738,21 @@ List<Widget> _verseWords(String text) {
   ];
 }
 
+/// Palco do gesto Complete — mesma tipografia do bônus (verso fill).
+List<Widget> _completeWords(String text) {
+  return [
+    for (final w in text.split(RegExp(r'\s+')).where((s) => s.isNotEmpty))
+      Text(
+        w,
+        style: AppTypography.display(
+          size: _ActSkin.verseSize,
+          weight: FontWeight.w700,
+          height: 1.45,
+        ),
+      ),
+  ];
+}
+
 class _ContextNote extends StatelessWidget {
   final String label;
   final String text;
@@ -954,7 +968,7 @@ class _CompleteVerse extends StatelessWidget {
         alignment: WrapAlignment.center,
         crossAxisAlignment: WrapCrossAlignment.center,
         children: [
-          ..._verseWords(before),
+          ..._completeWords(before),
           if (hasBlank)
             _VerseMark(
               text: filled ?? '',
@@ -962,7 +976,7 @@ class _CompleteVerse extends StatelessWidget {
               accent: accent,
               placeholder: true,
             ),
-          ..._verseWords(after),
+          ..._completeWords(after),
         ],
       ),
     );
@@ -1067,27 +1081,39 @@ class _VerseMark extends StatelessWidget {
       _OptState.idle => accent,
     };
 
-    if (placeholder && !filled) {
-      return SizedBox(
-        width: 120,
-        height: _ActSkin.verseSize * 1.65,
-        child: Align(
-          alignment: Alignment.bottomCenter,
-          child: Container(
-            height: 4,
-            margin: const EdgeInsets.only(bottom: 4),
-            decoration: BoxDecoration(
-              color: accent,
-              borderRadius: BorderRadius.circular(AppRadii.pill),
-              boxShadow: [
-                BoxShadow(
-                  color: accent.withValues(alpha: 0.35),
-                  blurRadius: 8,
-                  offset: const Offset(0, 2),
-                ),
-              ],
+    // Complete: mesma lacuna do bônus — traço vazio, palavra amarela no verso.
+    if (placeholder) {
+      if (!filled) {
+        return SizedBox(
+          width: 72,
+          height: _ActSkin.verseSize * 1.45,
+          child: Align(
+            alignment: Alignment.bottomCenter,
+            child: Container(
+              height: 3,
+              width: 72,
+              margin: const EdgeInsets.only(bottom: 2),
+              decoration: BoxDecoration(
+                color: accent,
+                borderRadius: BorderRadius.circular(AppRadii.pill),
+              ),
             ),
           ),
+        );
+      }
+      return Text(
+        text,
+        textAlign: TextAlign.center,
+        style: AppTypography.display(
+          size: _ActSkin.verseSize,
+          weight: FontWeight.w800,
+          height: 1.45,
+          color: color,
+        ).copyWith(
+          decoration: state == _OptState.wrong
+              ? TextDecoration.lineThrough
+              : TextDecoration.none,
+          decorationColor: color,
         ),
       );
     }
@@ -1099,7 +1125,7 @@ class _VerseMark extends StatelessWidget {
       _OptState.idle => color.withValues(alpha: 0.16),
     };
 
-    final marked = DecoratedBox(
+    return DecoratedBox(
       decoration: BoxDecoration(
         color: wash,
         borderRadius: BorderRadius.circular(AppRadii.xs),
@@ -1114,8 +1140,6 @@ class _VerseMark extends StatelessWidget {
         ),
       ),
     );
-
-    return marked;
   }
 }
 
@@ -1299,7 +1323,7 @@ class _OptionTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final skin = _ActSkin.paint(state, accent);
+    final skin = _ActSkin.paint(state, accent, Appearance.of(context));
     return _PressScale(
       onTap: onTap,
       child: AnimatedContainer(
@@ -1314,30 +1338,23 @@ class _OptionTile extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(_ActSkin.radius),
           color: skin.fill,
-          border: Border.all(color: skin.border, width: skin.hot ? 1.8 : 1),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withValues(alpha: skin.hot ? 0.5 : 0.4),
-              blurRadius: 0,
-              offset: Offset(0, skin.hot ? 5 : 4),
-            ),
-          ],
+          border: Border.all(
+            color: skin.border,
+            width: skin.hot ? AppMetrics.cardBorderWidth + 0.25 : 1,
+          ),
+          boxShadow: AppMetrics.cardShadow(elevated: skin.hot),
         ),
         child: Row(
           children: [
-            Container(
-              width: _ActSkin.badge,
-              height: _ActSkin.badge,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: skin.badge,
-              ),
+            IconWell(
+              size: _ActSkin.badge,
+              accent: skin.well,
+              glowing: skin.hot,
               child: Text(
                 letter,
                 style: AppTypography.title(
                   size: prominent ? 15 : 13,
-                  color: skin.badgeFg,
+                  color: skin.wellFg,
                 ),
               ),
             ),
@@ -1383,7 +1400,7 @@ class _OrderPiece extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final skin = _ActSkin.paint(state, accent);
+    final skin = _ActSkin.paint(state, accent, Appearance.of(context));
     return AnimatedContainer(
       duration: _ActSkin.anim,
       curve: Curves.easeOutCubic,
@@ -1393,28 +1410,21 @@ class _OrderPiece extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(_ActSkin.radius),
         color: skin.fill,
-        border: Border.all(color: skin.border, width: skin.hot ? 1.8 : 1),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withValues(alpha: 0.4),
-            blurRadius: 0,
-            offset: const Offset(0, 4),
-          ),
-        ],
+        border: Border.all(
+          color: skin.border,
+          width: skin.hot ? AppMetrics.cardBorderWidth + 0.25 : 1,
+        ),
+        boxShadow: AppMetrics.cardShadow(elevated: skin.hot),
       ),
       child: Row(
         children: [
-          Container(
-            width: 36,
-            height: 36,
-            alignment: Alignment.center,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: skin.badge,
-            ),
+          IconWell(
+            size: _ActSkin.badge,
+            accent: skin.well,
+            glowing: skin.hot,
             child: Text(
               '${index + 1}',
-              style: AppTypography.title(size: 15, color: skin.badgeFg),
+              style: AppTypography.title(size: 15, color: skin.wellFg),
             ),
           ),
           const SizedBox(width: 12),

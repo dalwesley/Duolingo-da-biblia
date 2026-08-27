@@ -9,11 +9,15 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
+## [1.0.22] — 2026-08-26
+
 ### Added
 - **Motor curricular V2:** validador pedagógico (`validate:bank`), purge de clones, pipeline (`pipeline:v2`)
 - **Gênesis 1–11 / 12–50 V2:** editorial handcrafted + fill para 6/8 atos por modo
 - **Catálogo completo V2:** **8.370** perguntas · 84 trilhas · 432 missões — 6 gestos equilibrados · validador verde · palco TB
 - Piloto documentado: [`docs/pilots/genesis-v2.md`](docs/pilots/genesis-v2.md)
+- Question Studio no admin (cadastro com preview do verso e copilot)
+- Gloss contextual no estudo: chip mostra a palavra da TB, não o homônimo do dicionário
 
 ### Changed
 - Seed CLI **24 ago**: catálogo local + Firestore alinhados (`catalog.version` 1787584947461)
@@ -21,6 +25,9 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 - Lookup TB: livros de 1 cap (`Obadias 21`), refs compostas, 0 palcos com reticências
 - Import admin bloqueia banco com erros pedagógicos; clones `-xch`/`-xfill` ignorados
 - Seed CLI: limpeza paginada de órfãos (`SEED_ORPHANS_ONLY`, throttle)
+- Toque no palco do Complete: palavra com lacuna + A/B/C, igual Complete
+- Chips e choice tiles unificados (`AppSelectChip` / `AppChoiceTile`)
+- Estudo Strong: alinha token ↔ versículo (sinônimos TB, sentidos ranqueados, `inVerse`); overlays H8193 / H1961
 
 ### Removed
 - Código morto do app: `StudyPanel`, `CinematicLessonPanel`, `SequenciaCard`, `StreakRiskBanner`, stack de relato (re-ligado depois), `question_feedback`
@@ -32,9 +39,11 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ### Fixed
 - **Relato de pergunta** religado no feedback da lição → `content_question_reports`
+- Homônimos TBESH e partículas STEP deixam de poluir o chip de estudo
 
 ### Content (Firestore)
-- Seed V2 **20 ago 2026:** **8.370** atos · 84 trilhas · 431 estudos · `catalog.version` **1787231875201** · **5.997** órfãos legados removidos
+- Seed V2 **24 ago 2026:** **8.370** atos · 84 trilhas · 432 missões · `catalog.version` **1787584947461**
+- (Histórico) Seed V2 **20 ago 2026:** `catalog.version` **1787231875201** · **5.997** órfãos legados removidos
 - (Histórico) Seed P0–P6 **18 ago 2026:** 10.368 atos · version `1787096847621`
 
 ## [1.0.21] — 2026-08-14

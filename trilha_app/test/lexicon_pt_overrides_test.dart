@@ -24,7 +24,12 @@ void main() {
     expect(overlayLexiconDefinition('H0125', 'avermelhado, ser avermelhado'), 'avermelhado, ser avermelhado');
   });
 
-  test('colon sub-senses collapse to the head word', () {
-    expect(overlayLexiconGloss('H4941', 'justiça: costume'), 'justiça');
+  test('colon keeps both TAHOT sides for alignment', () {
+    expect(overlayLexiconGloss('H4941', 'justiça: costume'), 'justiça, costume');
+    expect(overlayLexiconGloss('H8193', 'lábio: linguagem'), 'lábio, linguagem');
+    expect(
+      overlayLexiconDefinition('H8193', '1) lábio, margem, margem, borda, borda'),
+      contains('Linguagem'),
+    );
   });
 }

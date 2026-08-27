@@ -17,8 +17,8 @@ void main() {
   });
 
   test('tidyGloss keeps the head sense before the STEP colon', () {
-    expect(tidyGloss('justiça: costume'), 'justiça');
-    expect(tidyGloss('filho: idoso'), 'filho');
+    expect(tidyGloss('justiça: costume'), 'justiça, costume');
+    expect(tidyGloss('filho: idoso'), 'filho, idoso');
     expect(tidyGloss('para (alas)'), 'para');
     expect(tidyGloss('&'), 'e');
     expect(tidyGloss('[Obj.]'), 'objeto');
@@ -64,7 +64,7 @@ void main() {
       verseText: verse,
       hebrew: true,
     );
-    expect(bara.gloss, 'criar');
+    expect(bara.gloss, 'criou');
     expect(bara.needles, contains('criar'));
     final hits = highlightRanges(verse, bara.needles);
     expect(
@@ -138,5 +138,50 @@ void main() {
     expect(leka.gloss, 'para ti');
     expect(leka.kind, StrongKind.prefix);
     expect(leka.needles, contains('ti'));
+  });
+
+  test('Gn 11:1 maps TB words, not dictionary leftovers', () {
+    const verse =
+        'Toda a terra possuía uma única língua e utilizava as mesmas expressões.';
+    TokenStudyView view(String strong, String gloss, String morph) {
+      return buildTokenStudyView(
+        strong: strong,
+        morph: morph,
+        tokenGloss: gloss,
+        verseText: verse,
+        hebrew: true,
+      );
+    }
+
+    final sapah = view('H8193', 'lábio: linguagem', 'HNcfsa');
+    expect(sapah.gloss, 'língua');
+
+    final devarim = view('H1697', 'Crônicas', 'HC/Ncmpa');
+    expect(devarim.gloss, 'expressões');
+
+    final kol = view('H3605', 'tudo', 'HNcmsc');
+    expect(kol.gloss, 'Toda');
+
+    final arets = view('H0776', 'terra: solo', 'HTd/Ncfsa');
+    expect(arets.gloss, 'terra');
+
+    final links = linkVerseToTokens(verse, [
+      TokenNeedle(1, view('H1961', 'ser', 'Hc/Vqw3ms').needles),
+      TokenNeedle(2, kol.needles),
+      TokenNeedle(3, arets.needles),
+      TokenNeedle(4, sapah.needles),
+      TokenNeedle(5, view('H0259', 'um', 'HAcfsc').needles),
+      TokenNeedle(6, devarim.needles),
+      TokenNeedle(7, view('H0259', 'um', 'HAcmpa').needles),
+    ]);
+    String word(VerseWordLink l) => verse.substring(l.start, l.end);
+    final byPos = {for (final l in links) l.tokenPos: word(l)};
+    expect(byPos[2], 'Toda');
+    expect(byPos[3], 'terra');
+    expect(byPos[4], 'língua');
+    expect(byPos[5], 'única');
+    expect(byPos[6], 'expressões');
+    expect(byPos[7], 'mesmas');
+    expect(byPos.containsKey(1), isFalse);
   });
 }

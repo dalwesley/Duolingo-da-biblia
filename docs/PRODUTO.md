@@ -1,7 +1,7 @@
 # STWAY — Documentação de produto
 
-**Atualizado:** 24 ago/2026  
-**Versão do app:** 1.0.21  
+**Atualizado:** 26 ago/2026  
+**Versão do app:** 1.0.22  
 **Norte completo:** [`ROADMAP.md`](../ROADMAP.md)  
 **Pitch 1 página (nós vs. eles):** [`PITCH_NOS_VS_ELES.md`](PITCH_NOS_VS_ELES.md)  
 **Motor de formação (diretriz):** [`LEARNING_ENGINE.md`](LEARNING_ENGINE.md)  

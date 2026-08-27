@@ -8,6 +8,7 @@ import 'package:share_plus/share_plus.dart';
 import '../services/bible_service.dart';
 import '../services/bible_study_service.dart';
 import '../theme/app_theme.dart';
+import '../utils/answer_phrase.dart';
 import '../utils/morphology.dart';
 import '../utils/strong_id.dart';
 import '../utils/strong_text.dart';
@@ -228,7 +229,6 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
   int? _filterBook;
   List<ConcordanceHit> _filterHits = const [];
   bool _copied = false;
-  final _panelKey = GlobalKey();
   final _tokenKeys = <int, GlobalKey>{};
 
   String get _ref => '${widget.bookName} ${widget.chapter}:${widget.verse}';
@@ -256,6 +256,13 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
   }
 
   StudyToken? _firstContentToken(List<StudyToken> tokens) {
+    final links = _verseLinks(tokens);
+    if (links.isNotEmpty) {
+      final pos = links.first.tokenPos;
+      for (final t in tokens) {
+        if (t.pos == pos) return t;
+      }
+    }
     const skip = {
       'preposição',
       'artigo',
@@ -297,15 +304,6 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
           tokenCtx,
           alignment: 0.45,
           duration: const Duration(milliseconds: 280),
-          curve: Curves.easeOutCubic,
-        );
-      }
-      final panelCtx = _panelKey.currentContext;
-      if (panelCtx != null) {
-        Scrollable.ensureVisible(
-          panelCtx,
-          alignment: 0.05,
-          duration: const Duration(milliseconds: 340),
           curve: Curves.easeOutCubic,
         );
       }
@@ -496,84 +494,84 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                     );
                   }
 
-                  return CustomScrollView(
-                    slivers: [
-                      SliverToBoxAdapter(
-                        child: Padding(
-                          padding: const EdgeInsets.fromLTRB(18, 8, 18, 10),
-                          child: _VerseQuote(
-                            text: widget.text,
-                            links: _verseLinks(study.tokens),
-                            selectedPos: _selected?.pos,
-                            accent: _langAccent(),
-                            onSelectPos: (pos) {
-                              for (final t in study.tokens) {
-                                if (t.pos == pos) {
-                                  _selectToken(t);
-                                  break;
-                                }
+                  final links = _verseLinks(study.tokens);
+                  final verseWordByPos = <int, String>{
+                    for (final l in links)
+                      l.tokenPos: widget.text.substring(l.start, l.end),
+                  };
+                  return Column(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(18, 4, 18, 8),
+                        child: _VerseQuote(
+                          text: widget.text,
+                          links: links,
+                          selectedPos: _selected?.pos,
+                          accent: _langAccent(),
+                          onSelectPos: (pos) {
+                            for (final t in study.tokens) {
+                              if (t.pos == pos) {
+                                _selectToken(t);
+                                break;
                               }
-                            },
-                          ),
+                            }
+                          },
                         ),
                       ),
                       if (study.tokens.isNotEmpty)
-                        SliverToBoxAdapter(
-                          child: _WordRibbon(
-                            tokens: study.tokens,
-                            verseText: widget.text,
-                            selectedPos: _selected?.pos,
-                            tokenKeys: _tokenKeys,
-                            onSelect: _selectToken,
-                          ),
+                        _WordRibbon(
+                          tokens: study.tokens,
+                          verseText: widget.text,
+                          verseWordByPos: verseWordByPos,
+                          selectedPos: _selected?.pos,
+                          tokenKeys: _tokenKeys,
+                          onSelect: _selectToken,
                         ),
                       if (_selected != null)
-                        SliverPersistentHeader(
-                          pinned: true,
-                          delegate: _PinnedRibbon(
-                            height: 56,
-                            child: _StudyTabs(
-                              index: _tab,
-                              accent: _langAccent(),
-                              xrefCount: study.crossRefs.length,
-                              occ: _strong?.occurrences,
-                              onChanged: (i) => setState(() => _tab = i),
-                            ),
-                          ),
+                        _StudyTabs(
+                          index: _tab,
+                          accent: _langAccent(),
+                          xrefCount: study.crossRefs.length,
+                          occ: _strong?.occurrences,
+                          onChanged: (i) => setState(() => _tab = i),
                         ),
-                      SliverPadding(
-                        padding: EdgeInsets.fromLTRB(16, 10, 16, 20 + bottom),
-                        sliver: SliverList(
-                          delegate: SliverChildListDelegate([
-                            if (_selected != null)
-                              KeyedSubtree(
-                                key: _panelKey,
-                                child: _tabBody(study, books),
-                              )
-                            else if (study.tokens.isNotEmpty)
-                              const _EmptyStudyHint(),
-                            if (_selected == null &&
-                                study.crossRefs.isNotEmpty) ...[
+                      Expanded(
+                        child: SingleChildScrollView(
+                          padding: EdgeInsets.fromLTRB(16, 8, 16, 20 + bottom),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.stretch,
+                            children: [
+                              if (_selected != null)
+                                _tabBody(
+                                  study,
+                                  books,
+                                  verseWord: verseWordByPos[_selected!.pos],
+                                )
+                              else if (study.tokens.isNotEmpty)
+                                const _EmptyStudyHint(),
+                              if (_selected == null &&
+                                  study.crossRefs.isNotEmpty) ...[
+                                const SizedBox(height: 18),
+                                _SectionEyebrow(
+                                  'Referências cruzadas',
+                                  count: study.crossRefs.length,
+                                ),
+                                const SizedBox(height: 10),
+                                ..._crossRefTiles(study.crossRefs, books),
+                              ],
                               const SizedBox(height: 18),
-                              _SectionEyebrow(
-                                'Referências cruzadas',
-                                count: study.crossRefs.length,
-                              ),
-                              const SizedBox(height: 10),
-                              ..._crossRefTiles(study.crossRefs, books),
-                            ],
-                            const SizedBox(height: 18),
-                            Text(
-                              BibleStudyService.attribution,
-                              style: AppTypography.body(
-                                size: 10,
-                                height: 1.4,
-                                color: AppColors.textOnDark.withValues(
-                                  alpha: 0.32,
+                              Text(
+                                BibleStudyService.attribution,
+                                style: AppTypography.body(
+                                  size: 10,
+                                  height: 1.4,
+                                  color: AppColors.textOnDark.withValues(
+                                    alpha: 0.32,
+                                  ),
                                 ),
                               ),
-                            ),
-                          ]),
+                            ],
+                          ),
                         ),
                       ),
                     ],
@@ -617,7 +615,11 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
     );
   }
 
-  Widget _tabBody(VerseStudy study, List<BibleBook> books) {
+  Widget _tabBody(
+    VerseStudy study,
+    List<BibleBook> books, {
+    String? verseWord,
+  }) {
     final token = _selected!;
     final entry = _strong?.entry;
     final loading = _loadingStrong;
@@ -672,6 +674,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
           loading: loading,
           study: _strong,
           view: _viewFor(token, entry),
+          verseWord: verseWord,
           books: books,
           copied: _copied,
           accent: accent,
@@ -794,7 +797,7 @@ class _VerseQuoteState extends State<_VerseQuote> {
         Expanded(
           child: Text.rich(
             _spans(base),
-            maxLines: 6,
+            maxLines: 4,
             overflow: TextOverflow.ellipsis,
           ),
         ),
@@ -830,16 +833,16 @@ class _VerseQuoteState extends State<_VerseQuote> {
           text: widget.text.substring(link.start, link.end),
           recognizer: tap,
           style: base.copyWith(
-            color: on ? widget.accent : AppColors.textOnDark.withValues(alpha: 0.95),
-            fontWeight: FontWeight.w700,
+            color: on
+                ? widget.accent
+                : AppColors.textOnDark.withValues(alpha: 0.95),
+            fontWeight: on ? FontWeight.w800 : FontWeight.w600,
             backgroundColor: on
                 ? widget.accent.withValues(alpha: 0.22)
-                : Colors.white.withValues(alpha: 0.06),
-            decoration: TextDecoration.underline,
-            decorationColor: on
-                ? widget.accent.withValues(alpha: 0.85)
-                : AppColors.accent.withValues(alpha: 0.45),
-            decorationThickness: 1.4,
+                : Colors.transparent,
+            decoration: on ? TextDecoration.underline : TextDecoration.none,
+            decorationColor: widget.accent.withValues(alpha: 0.85),
+            decorationThickness: 1.6,
           ),
         ),
       );
@@ -854,45 +857,10 @@ class _VerseQuoteState extends State<_VerseQuote> {
   }
 }
 
-class _PinnedRibbon extends SliverPersistentHeaderDelegate {
-  final Widget child;
-  final double height;
-
-  _PinnedRibbon({required this.child, required this.height});
-
-  @override
-  double get minExtent => height;
-
-  @override
-  double get maxExtent => height;
-
-  @override
-  Widget build(
-    BuildContext context,
-    double shrinkOffset,
-    bool overlapsContent,
-  ) {
-    return DecoratedBox(
-      decoration: BoxDecoration(
-        color: AppColors.nightMid,
-        border: Border(
-          bottom: BorderSide(
-            color: Colors.white.withValues(alpha: overlapsContent ? 0.12 : 0),
-          ),
-        ),
-      ),
-      child: child,
-    );
-  }
-
-  @override
-  bool shouldRebuild(covariant _PinnedRibbon old) =>
-      height != old.height || child != old.child;
-}
-
 class _WordRibbon extends StatelessWidget {
   final List<StudyToken> tokens;
   final String verseText;
+  final Map<int, String> verseWordByPos;
   final int? selectedPos;
   final Map<int, GlobalKey> tokenKeys;
   final void Function(StudyToken token) onSelect;
@@ -900,6 +868,7 @@ class _WordRibbon extends StatelessWidget {
   const _WordRibbon({
     required this.tokens,
     required this.verseText,
+    required this.verseWordByPos,
     required this.selectedPos,
     required this.tokenKeys,
     required this.onSelect,
@@ -911,30 +880,35 @@ class _WordRibbon extends StatelessWidget {
       for (final t in tokens)
         if (!isPunctuationStrong(t.strong)) t,
     ];
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(16, 2, 16, 8),
-      child: Wrap(
-        spacing: 7,
-        runSpacing: 7,
-        children: [
-          for (final t in visible)
-            KeyedSubtree(
-              key: tokenKeys.putIfAbsent(t.pos, GlobalKey.new),
-              child: _TokenChip(
-                token: t,
-                gloss: buildTokenStudyView(
-                  strong: t.strong,
-                  morph: t.morph,
-                  tokenGloss: t.gloss,
-                  verseText: verseText,
-                  hebrew: t.strong.toUpperCase().startsWith('H'),
-                ).gloss,
-                selected: selectedPos == t.pos,
-                dimmed: selectedPos != null && selectedPos != t.pos,
-                onTap: () => onSelect(t),
-              ),
+    return SizedBox(
+      height: 72,
+      child: ListView.separated(
+        scrollDirection: Axis.horizontal,
+        padding: const EdgeInsets.fromLTRB(16, 2, 16, 8),
+        itemCount: visible.length,
+        separatorBuilder: (_, _) => const SizedBox(width: 7),
+        itemBuilder: (context, i) {
+          final t = visible[i];
+          final view = buildTokenStudyView(
+            strong: t.strong,
+            morph: t.morph,
+            tokenGloss: t.gloss,
+            verseText: verseText,
+            hebrew: t.strong.toUpperCase().startsWith('H'),
+          );
+          final verseWord = verseWordByPos[t.pos];
+          return KeyedSubtree(
+            key: tokenKeys.putIfAbsent(t.pos, GlobalKey.new),
+            child: _TokenChip(
+              token: t,
+              gloss: verseWord ?? view.gloss,
+              inVerse: verseWord != null,
+              selected: selectedPos == t.pos,
+              dimmed: selectedPos != null && selectedPos != t.pos,
+              onTap: () => onSelect(t),
             ),
-        ],
+          );
+        },
       ),
     );
   }
@@ -1013,6 +987,7 @@ class _StudyTabs extends StatelessWidget {
 class _TokenChip extends StatelessWidget {
   final StudyToken token;
   final String gloss;
+  final bool inVerse;
   final bool selected;
   final bool dimmed;
   final VoidCallback onTap;
@@ -1020,6 +995,7 @@ class _TokenChip extends StatelessWidget {
   const _TokenChip({
     required this.token,
     required this.gloss,
+    required this.inVerse,
     required this.selected,
     required this.dimmed,
     required this.onTap,
@@ -1033,7 +1009,7 @@ class _TokenChip extends StatelessWidget {
 
     return AnimatedOpacity(
       duration: const Duration(milliseconds: 180),
-      opacity: dimmed ? 0.45 : 1,
+      opacity: dimmed ? 0.42 : 1,
       child: Material(
         color: Colors.transparent,
         child: InkWell(
@@ -1046,12 +1022,12 @@ class _TokenChip extends StatelessWidget {
             decoration: BoxDecoration(
               color: selected
                   ? accent.withValues(alpha: 0.16)
-                  : Colors.white.withValues(alpha: 0.05),
+                  : Colors.white.withValues(alpha: inVerse ? 0.05 : 0.03),
               borderRadius: BorderRadius.circular(AppRadii.md),
               border: Border.all(
                 color: selected
                     ? accent.withValues(alpha: 0.85)
-                    : Colors.white.withValues(alpha: 0.1),
+                    : Colors.white.withValues(alpha: inVerse ? 0.1 : 0.06),
                 width: selected ? 1.5 : 1,
               ),
             ),
@@ -1084,7 +1060,9 @@ class _TokenChip extends StatelessWidget {
                     letterSpacing: 0.3,
                     color: selected
                         ? accent
-                        : AppColors.textOnDark.withValues(alpha: 0.5),
+                        : AppColors.textOnDark.withValues(
+                            alpha: inVerse ? 0.5 : 0.38,
+                          ),
                   ),
                 ),
               ],
@@ -1152,6 +1130,7 @@ class _WordPane extends StatelessWidget {
   final bool loading;
   final StrongStudy? study;
   final TokenStudyView view;
+  final String? verseWord;
   final List<BibleBook> books;
   final bool copied;
   final Color accent;
@@ -1165,6 +1144,7 @@ class _WordPane extends StatelessWidget {
     required this.loading,
     required this.study,
     required this.view,
+    required this.verseWord,
     required this.books,
     required this.copied,
     required this.accent,
@@ -1183,11 +1163,14 @@ class _WordPane extends StatelessWidget {
         : ((entry?.translit.isNotEmpty == true)
             ? entry!.translit
             : token.translit);
-    final gloss = view.gloss;
+    final gloss = verseWord ?? view.gloss;
     final chips = morphologyChips(token.morph.isNotEmpty ? token.morph : null);
     final headline = view.isAffix ? token.surface : lemma;
     final sameForm = _normScript(lemma) == _normScript(token.surface);
-    final senses = definitionSenses(entry?.definition ?? '');
+    final senses = rankDefinitionSenses(
+      definitionSenses(entry?.definition ?? ''),
+      view.needles,
+    );
     final occ = study?.occurrences ?? 0;
     final strongLabel = copied
         ? 'copiado'
@@ -1200,6 +1183,7 @@ class _WordPane extends StatelessWidget {
       token.morph.isNotEmpty ? token.morph : null,
       gloss: gloss,
     );
+    final inVerse = verseWord != null && verseWord!.isNotEmpty;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -1268,14 +1252,58 @@ class _WordPane extends StatelessWidget {
             ),
           ],
         ),
-        const SizedBox(height: 14),
+        const SizedBox(height: 12),
+        if (inVerse) ...[
+          Text(
+            'NESTE VERSÍCULO',
+            textAlign: TextAlign.center,
+            style: AppTypography.label(
+              size: 9,
+              weight: FontWeight.w900,
+              letterSpacing: 1.4,
+              color: accent.withValues(alpha: 0.8),
+            ),
+          ),
+          const SizedBox(height: 4),
+          Text(
+            verseWord!,
+            textAlign: TextAlign.center,
+            style: AppTypography.display(
+              size: 22,
+              weight: FontWeight.w700,
+              color: accent,
+            ),
+          ),
+          const SizedBox(height: 10),
+        ] else if (gloss.isNotEmpty) ...[
+          Text(
+            gloss,
+            textAlign: TextAlign.center,
+            style: AppTypography.display(
+              size: 20,
+              weight: FontWeight.w700,
+              color: accent,
+            ),
+          ),
+          const SizedBox(height: 6),
+          Text(
+            'A Tradução Brasileira não traz esta forma à letra neste versículo.',
+            textAlign: TextAlign.center,
+            style: AppTypography.body(
+              size: 12,
+              height: 1.35,
+              color: AppColors.textOnDark.withValues(alpha: 0.5),
+            ),
+          ),
+          const SizedBox(height: 10),
+        ],
         Text(
           headline,
           textAlign: TextAlign.center,
           textDirection: hebrew ? TextDirection.rtl : TextDirection.ltr,
           style: AppTypography.original(
             hebrew: hebrew,
-            size: hebrew ? 36 : 32,
+            size: hebrew ? 30 : 28,
             weight: FontWeight.w700,
             height: 1.2,
             color: AppColors.textOnDark,
@@ -1292,15 +1320,16 @@ class _WordPane extends StatelessWidget {
             ).copyWith(fontStyle: FontStyle.italic),
           ),
         ],
-        if (gloss.isNotEmpty) ...[
-          const SizedBox(height: 8),
+        if (inVerse &&
+            view.gloss.isNotEmpty &&
+            foldKey(view.gloss) != foldKey(verseWord!)) ...[
+          const SizedBox(height: 6),
           Text(
-            gloss,
+            view.gloss,
             textAlign: TextAlign.center,
-            style: AppTypography.display(
-              size: 20,
-              weight: FontWeight.w700,
-              color: accent,
+            style: AppTypography.body(
+              size: 13,
+              color: AppColors.textOnDark.withValues(alpha: 0.55),
             ),
           ),
         ],
@@ -1359,18 +1388,6 @@ class _WordPane extends StatelessWidget {
             ),
           ),
         ] else ...[
-          if (view.otherSenses.isNotEmpty) ...[
-            const SizedBox(height: 14),
-            Wrap(
-              spacing: 6,
-              runSpacing: 6,
-              alignment: WrapAlignment.center,
-              children: [
-                for (final g in view.otherSenses)
-                  _MorphChip(label: g, accent: accent),
-              ],
-            ),
-          ],
           if (senses.isNotEmpty) ...[
             const SizedBox(height: 16),
             const _SectionEyebrow('Definição'),
@@ -1387,7 +1404,9 @@ class _WordPane extends StatelessWidget {
                         '${i + 1}',
                         style: AppTypography.label(
                           size: 11,
-                          color: accent,
+                          color: i == 0
+                              ? accent
+                              : AppColors.textOnDark.withValues(alpha: 0.4),
                         ),
                       ),
                     ),
@@ -1398,7 +1417,9 @@ class _WordPane extends StatelessWidget {
                         size: 17,
                         height: 1.45,
                         weight: FontWeight.w500,
-                        color: AppColors.textOnDark.withValues(alpha: 0.88),
+                        color: AppColors.textOnDark.withValues(
+                          alpha: i == 0 ? 0.88 : 0.55,
+                        ),
                       ),
                     ),
                   ),
@@ -1432,6 +1453,7 @@ class _WordPane extends StatelessWidget {
     );
   }
 }
+
 
 class _SpanLine extends StatelessWidget {
   final ConcordanceHit first;

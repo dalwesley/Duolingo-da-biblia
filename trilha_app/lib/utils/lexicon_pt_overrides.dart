@@ -123,6 +123,20 @@ const lexiconPtOverrides = <String, LexiconPtOverride>{
     definition:
         'Marca de objeto definido (et). Em português costuma não se traduzir.',
   ),
+
+  'H8193': LexiconPtOverride(
+    gloss: 'lábio, linguagem',
+    definition:
+        '1. Linguagem, fala — o que a boca pronuncia.\n'
+        '2. Lábio, como parte do corpo.\n'
+        '3. Borda ou margem (de vaso, mar, rio).',
+  ),
+  'H1961': LexiconPtOverride(
+    gloss: 'ser, acontecer',
+    definition:
+        '1. Ser, estar, acontecer, tornar-se.\n'
+        '2. Na narrativa, wayhi ("e aconteceu") muitas vezes não aparece na tradução: a frase começa no sujeito.',
+  ),
 };
 
 String overlayLexiconGloss(String strongId, String gloss) {
@@ -171,10 +185,17 @@ String tidyGloss(String gloss) {
   final colon = s.indexOf(':');
   if (colon > 0) {
     final left = s.substring(0, colon).trim();
-    if (left.isNotEmpty &&
+    final right = s.substring(colon + 1).trim();
+    final leftOk = left.isNotEmpty &&
         left.length <= 28 &&
         !left.contains('(') &&
-        !RegExp(r'[:/;0-9]').hasMatch(left)) {
+        !RegExp(r'[:/;0-9]').hasMatch(left);
+    final rightOk = right.isNotEmpty &&
+        right.length <= 28 &&
+        right.toLowerCase() != left.toLowerCase();
+    if (leftOk && rightOk) {
+      s = '$left, $right';
+    } else if (leftOk) {
       s = left;
     }
   }
@@ -187,5 +208,6 @@ String tidyDefinition(String definition) {
   var t = definition.trim();
   if (t.isEmpty) return t;
   t = t.replaceFirst(RegExp(r'^:[^\n]*\n+'), '');
+  t = t.replaceAll(RegExp(r'(?:^|\n)\s*-{2,}\s*$', multiLine: true), '');
   return t.trim();
 }

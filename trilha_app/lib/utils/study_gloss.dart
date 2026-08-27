@@ -15,6 +15,7 @@ class TokenStudyView {
   final String kindLabel;
   final String? grammarNote;
   final bool extended;
+  final bool inVerse;
 
   const TokenStudyView({
     required this.gloss,
@@ -24,6 +25,7 @@ class TokenStudyView {
     required this.kindLabel,
     required this.grammarNote,
     required this.extended,
+    required this.inVerse,
   });
 
   bool get isAffix => kind != StrongKind.word;
@@ -54,6 +56,7 @@ TokenStudyView buildTokenStudyView({
     forAlign,
     definition: overlayLexiconDefinition(strong, definition),
   );
+  final needles = studyNeedles(withSuffix, morph, verseGloss: gloss);
   final others = <String>[];
   for (final b in glossNeedles(withSuffix)) {
     if (foldKey(b) == foldKey(gloss)) continue;
@@ -63,10 +66,11 @@ TokenStudyView buildTokenStudyView({
   return TokenStudyView(
     gloss: gloss,
     otherSenses: others.take(6).toList(),
-    needles: studyNeedles(withSuffix, morph, verseGloss: gloss),
+    needles: needles,
     kind: kind,
     kindLabel: strongKindLabel(kind, hebrew: hebrew),
     grammarNote: kind == StrongKind.word ? null : strongKindNote(kind),
     extended: isExtendedStrong(strong),
+    inVerse: highlightRanges(verseText, needles).isNotEmpty,
   );
 }
