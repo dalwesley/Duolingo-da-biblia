@@ -177,7 +177,7 @@ Não há mais missão especial embutida. `gen-03-imagem` e o restante usam o mes
 ## Monetização
 
 Hoje: **sem IAP, ads ou assinatura** no app.  
-Direção e hipóteses: [`MONETIZATION.md`](../MONETIZATION.md).
+Direção (28 ago): Pro anual **R$ 119,90** · Família · Igreja na web. Não gatear Profundezas do canônico. [`MONETIZATION.md`](../MONETIZATION.md).
 
 ---
 

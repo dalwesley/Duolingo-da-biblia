@@ -6,6 +6,7 @@ import 'package:share_plus/share_plus.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../data/question_bank.dart';
 import '../data/trail_repository.dart';
+import '../models/caravan_profile_prefs.dart';
 import '../models/difficulty.dart';
 import '../services/app_update_service.dart';
 import '../services/backend_service.dart';
@@ -269,6 +270,34 @@ class _SettingsScreenState extends State<SettingsScreen>
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                const CardHeader(label: 'Perfil na caravana'),
+                const SizedBox(height: AppSpace.sm),
+                Text(
+                  'Escolha o que outros peregrinos veem ao tocar no seu card no ranking.',
+                  style: AppTypography.body(
+                    size: 13,
+                    height: 1.35,
+                    color: a.textMuted(0.78),
+                  ),
+                ),
+                const SizedBox(height: AppSpace.md),
+                for (var i = 0; i < CaravanProfileSection.values.length; i++) ...[
+                  if (i > 0) _SettingsDivider(a),
+                  _caravanProfileToggle(progress, a, CaravanProfileSection.values[i]),
+                ],
+              ],
+            ),
+          ),
+        ),
+
+        const SizedBox(height: AppSpace.section),
+        _reveal(
+          4,
+          GlassCard(
+            padding: AppMetrics.cardPadding,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
                 const CardHeader(label: 'Conta'),
                 const SizedBox(height: AppSpace.md),
                 _cloudCard(a),
@@ -279,7 +308,7 @@ class _SettingsScreenState extends State<SettingsScreen>
 
         const SizedBox(height: AppSpace.section),
         _reveal(
-          4,
+          5,
           GlassCard(
             padding: AppMetrics.cardPadding,
             child: Column(
@@ -1096,6 +1125,25 @@ class _SettingsScreenState extends State<SettingsScreen>
           ),
         ],
       ),
+    );
+  }
+
+  Widget _caravanProfileToggle(
+    ProgressService progress,
+    AppearanceStyle a,
+    CaravanProfileSection section,
+  ) {
+    final prefs = progress.caravanProfilePrefs;
+    final visible = prefs.isVisible(section);
+    return _toggle(
+      a,
+      section.label,
+      section.subtitle,
+      visible,
+      (v) {
+        HapticFeedback.selectionClick();
+        progress.updateCaravanProfilePrefs(prefs.copyWithSection(section, v));
+      },
     );
   }
 }

@@ -17,8 +17,16 @@ class CloudPlayer {
   final String uid;
   final String name;
   final int steps;
+  final String? lastWalkDate;
+  final String? lastSeenDate;
 
-  const CloudPlayer({required this.uid, required this.name, required this.steps});
+  const CloudPlayer({
+    required this.uid,
+    required this.name,
+    required this.steps,
+    this.lastWalkDate,
+    this.lastSeenDate,
+  });
 }
 
 /// Resultado de uma tentativa de login (Google ou Apple).
@@ -484,11 +492,32 @@ class BackendService extends ChangeNotifier {
     };
   }
 
+  String _todayKey() => DateTime.now().toIso8601String().substring(0, 10);
+
+  static String? _fresherDateKey(String? a, String? b) {
+    if (a == null || a.isEmpty) return b;
+    if (b == null || b.isEmpty) return a;
+    return a.compareTo(b) >= 0 ? a : b;
+  }
+
+  static String? _readActivityDate(Map<String, dynamic> data, String key) {
+    final raw = (data[key] as String?)?.trim();
+    if (raw != null && raw.isNotEmpty) return raw;
+    if (key == 'lastWalkDate') {
+      final legacy = (data['lastPlayedDate'] as String?)?.trim();
+      if (legacy != null && legacy.isNotEmpty) return legacy;
+      final roomWalk = (data['lastWalk'] as String?)?.trim();
+      if (roomWalk != null && roomWalk.isNotEmpty) return roomWalk;
+    }
+    return null;
+  }
+
   Map<String, dynamic> _payload(ProgressService p, {LeagueService? league}) {
     final user = currentUser;
     return {
       ...p.toCloudMap(),
       if (league != null) ...league.toCloudMap(),
+      'lastSeenDate': _todayKey(),
       'email': user?.email,
       'photoUrl': user?.photoURL,
       'authProvider': isAppleSignedIn
@@ -598,10 +627,13 @@ class BackendService extends ChangeNotifier {
     try {
       final batch = _db.batch();
       final tier = league?.tierIndex ?? 0;
+      final today = _todayKey();
       final playerPayload = {
         'name': progress.userName,
         'xp': progress.weeklySteps,
         'tier': tier,
+        'lastWalkDate': progress.lastPlayedDate,
+        'lastSeenDate': today,
         'updatedAt': FieldValue.serverTimestamp(),
       };
       batch.set(
@@ -613,11 +645,15 @@ class BackendService extends ChangeNotifier {
       batch.set(_db.doc('monthlyLeagues/$month/players/$_uid'), {
         'name': progress.userName,
         'xp': progress.monthlySteps,
+        'lastWalkDate': progress.lastPlayedDate,
+        'lastSeenDate': today,
         'updatedAt': FieldValue.serverTimestamp(),
       });
       batch.set(_db.doc('overallPlayers/$_uid'), {
         'name': progress.userName,
         'xp': progress.steps,
+        'lastWalkDate': progress.lastPlayedDate,
+        'lastSeenDate': today,
         'updatedAt': FieldValue.serverTimestamp(),
       });
       final effectiveRoom = roomCode ?? progress.activeRoomCode;
@@ -625,7 +661,9 @@ class BackendService extends ChangeNotifier {
         batch.set(_db.doc('rooms/$effectiveRoom/members/$_uid'), {
           'name': progress.userName,
           'xp': progress.weeklySteps,
-          'lastWalk': DateTime.now().toIso8601String().substring(0, 10),
+          'lastWalk': today,
+          'lastWalkDate': progress.lastPlayedDate,
+          'lastSeenDate': today,
           'updatedAt': FieldValue.serverTimestamp(),
         }, SetOptions(merge: true));
       }
@@ -962,9 +1000,17 @@ class BackendService extends ChangeNotifier {
     if (!isActive) {
       return const UserBackupResult.error('backend inactive');
     }
+    return fetchPilgrimProfile(_uid!);
+  }
+
+  /// Perfil público de outro peregrino (`users/{uid}`) — ranking + jornada.
+  Future<UserBackupResult> fetchPilgrimProfile(String uid) async {
+    if (!isActive) {
+      return const UserBackupResult.error('backend inactive');
+    }
     try {
       final doc = await _db
-          .doc('users/$_uid')
+          .doc('users/$uid')
           .get()
           .timeout(const Duration(seconds: 10));
       if (!doc.exists || doc.data() == null) {
@@ -972,10 +1018,10 @@ class BackendService extends ChangeNotifier {
       }
       return UserBackupResult.found(doc.data()!);
     } on TimeoutException catch (e) {
-      debugPrint('Timeout ao restaurar da nuvem: $e');
+      debugPrint('Timeout ao ler perfil $uid: $e');
       return const UserBackupResult.error('timeout');
     } catch (e) {
-      debugPrint('Falha ao restaurar da nuvem: $e');
+      debugPrint('Falha ao ler perfil $uid: $e');
       return UserBackupResult.error(e.toString());
     }
   }
@@ -1035,6 +1081,8 @@ class BackendService extends ChangeNotifier {
                 ? data['name'] as String
                 : 'Aprendiz',
             steps: (data['xp'] as num?)?.toInt() ?? 0,
+            lastWalkDate: _readActivityDate(data, 'lastWalkDate'),
+            lastSeenDate: _readActivityDate(data, 'lastSeenDate'),
           ),
         );
       }
@@ -1060,6 +1108,8 @@ class BackendService extends ChangeNotifier {
                 ? d.data()['name'] as String
                 : 'Aprendiz',
             steps: (d.data()['xp'] as num?)?.toInt() ?? 0,
+            lastWalkDate: _readActivityDate(d.data(), 'lastWalkDate'),
+            lastSeenDate: _readActivityDate(d.data(), 'lastSeenDate'),
           ),
     ];
   }
@@ -1114,13 +1164,35 @@ class BackendService extends ChangeNotifier {
             : (data['name'] as String?)?.trim().isNotEmpty == true
                 ? data['name'] as String
                 : 'Aprendiz';
+        final lastWalk = _readActivityDate(data, 'lastWalkDate');
+        final lastSeen = _readActivityDate(data, 'lastSeenDate');
         final prev = byUid[d.id];
         if (prev == null || steps > prev.steps) {
-          byUid[d.id] = CloudPlayer(uid: d.id, name: rawName, steps: steps);
+          byUid[d.id] = CloudPlayer(
+            uid: d.id,
+            name: rawName,
+            steps: steps,
+            lastWalkDate: lastWalk ?? prev?.lastWalkDate,
+            lastSeenDate: _fresherDateKey(prev?.lastSeenDate, lastSeen),
+          );
         } else if (prev.steps == steps &&
             ProgressService.isPlaceholderUserName(prev.name) &&
             !ProgressService.isPlaceholderUserName(rawName)) {
-          byUid[d.id] = CloudPlayer(uid: d.id, name: rawName, steps: steps);
+          byUid[d.id] = CloudPlayer(
+            uid: d.id,
+            name: rawName,
+            steps: steps,
+            lastWalkDate: lastWalk ?? prev.lastWalkDate,
+            lastSeenDate: _fresherDateKey(prev.lastSeenDate, lastSeen),
+          );
+        } else if (prev.steps == steps) {
+          byUid[d.id] = CloudPlayer(
+            uid: d.id,
+            name: prev.name,
+            steps: prev.steps,
+            lastWalkDate: prev.lastWalkDate ?? lastWalk,
+            lastSeenDate: _fresherDateKey(prev.lastSeenDate, lastSeen),
+          );
         }
       }
 
@@ -1174,8 +1246,6 @@ class BackendService extends ChangeNotifier {
   }
 
   // ---- Companhia (pares de caminhada) ------------------------------------
-
-  String _todayKey() => DateTime.now().toIso8601String().substring(0, 10);
 
   String _yesterdayKey() {
     final d = DateTime.now().subtract(const Duration(days: 1));

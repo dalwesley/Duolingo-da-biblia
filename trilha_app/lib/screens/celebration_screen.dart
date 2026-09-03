@@ -211,9 +211,19 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                 final entries = league.standings(
                   userName: progress.userName,
                   userWeeklySteps: progress.weeklySteps,
+                  userUid: backend.uid,
+                  userLastWalkDate: progress.lastPlayedDate,
+                  userLastSeenDate:
+                      DateTime.now().toIso8601String().substring(0, 10),
                   realPlayers: [
                     for (final p in peers)
-                      LeagueEntry(name: p.name, steps: p.steps),
+                      LeagueEntry(
+                        uid: p.uid,
+                        name: p.name,
+                        steps: p.steps,
+                        lastWalkDate: p.lastWalkDate,
+                        lastSeenDate: p.lastSeenDate,
+                      ),
                   ],
                 );
                 final rank = league.userRank(entries);

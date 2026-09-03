@@ -85,7 +85,11 @@ class AppColors {
 
   static const medalGold = Color(0xFFFFD78A);
   static const medalSilver = Color(0xFFC8CEDC);
-  static const medalBronze = Color(0xFFE0A06A);
+  static const medalBronze = Color(0xFFC97B4A);
+  static const medalIron = Color(0xFF8B939E);
+  static const medalPlatinum = Color(0xFFE8ECF4);
+  static const medalDiamond = Color(0xFF9EE8FF);
+  static const medalMirra = Color(0xFFB88A5A);
   static const medalInk = Color(0xFF4A3400);
 
   // Acentos de reino (UI, não céu de cena) — um pouco mais saturados

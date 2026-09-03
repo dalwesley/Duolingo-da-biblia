@@ -6,15 +6,17 @@ import 'package:provider/provider.dart';
 import '../models/study_room.dart';
 import '../models/walk_companion.dart';
 import '../services/backend_service.dart';
+import '../services/medal_engagement_service.dart';
+import '../services/progress_service.dart';
 import '../services/companion_service.dart';
 import '../services/invite_deep_link_service.dart';
 import '../services/league_service.dart';
-import '../services/progress_service.dart';
 import '../services/room_service.dart';
 import '../services/app_update_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
+import '../widgets/caravan_pilgrim_sheet.dart';
 import '../widgets/accept_invite_sheet.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/companion_formed_sheet.dart';
@@ -29,8 +31,14 @@ class LeagueScreen extends StatefulWidget {
   final Widget? topBar;
   /// Quando a aba Juntos está visível — processa deep link pendente.
   final bool active;
+  final VoidCallback? onOpenOwnProfile;
 
-  const LeagueScreen({super.key, this.topBar, this.active = true});
+  const LeagueScreen({
+    super.key,
+    this.topBar,
+    this.active = true,
+    this.onOpenOwnProfile,
+  });
 
   @override
   State<LeagueScreen> createState() => _LeagueScreenState();
@@ -154,16 +162,42 @@ class _LeagueScreenState extends State<LeagueScreen>
       if (!mounted) return;
       setState(() {
         _realPlayers = [
-          for (final p in players) LeagueEntry(name: p.name, steps: p.steps),
+          for (final p in players)
+            LeagueEntry(
+              uid: p.uid,
+              name: p.name,
+              steps: p.steps,
+              lastWalkDate: p.lastWalkDate,
+              lastSeenDate: p.lastSeenDate,
+            ),
         ];
         _overallPlayers = [
           for (final p in overallPlayers)
-            LeagueEntry(name: p.name, steps: p.steps),
+            LeagueEntry(
+              uid: p.uid,
+              name: p.name,
+              steps: p.steps,
+              lastWalkDate: p.lastWalkDate,
+              lastSeenDate: p.lastSeenDate,
+            ),
         ];
         _playersLoading = false;
         _playersLoadedOnce = true;
         _playersError = null;
       });
+
+      final weeklyRank = league.userRank(
+        league.standings(
+          userName: progress.userName,
+          userWeeklySteps: progress.weeklySteps,
+          userUid: backend.uid,
+          userLastWalkDate: progress.lastPlayedDate,
+          realPlayers: _realPlayers,
+        ),
+      );
+      if (weeklyRank > 0) {
+        await league.observeWeeklyRank(weeklyRank);
+      }
 
       // Salas/companhia não devem travar o spinner da Caravana.
       final companionSvc = context.read<CompanionService>();
@@ -293,18 +327,37 @@ class _LeagueScreenState extends State<LeagueScreen>
     }
 
     final overall = _overallRanking;
+    final today = DateTime.now().toIso8601String().substring(0, 10);
+    final backend = context.watch<BackendService>();
     final entries = overall
         ? league.overallStandings(
             userName: progress.userName,
             userTotalSteps: progress.steps,
+            userUid: backend.uid,
+            userLastWalkDate: progress.lastPlayedDate,
+            userLastSeenDate: today,
             realPlayers: _overallPlayers,
           )
         : league.standings(
             userName: progress.userName,
             userWeeklySteps: progress.weeklySteps,
+            userUid: backend.uid,
+            userLastWalkDate: progress.lastPlayedDate,
+            userLastSeenDate: today,
             realPlayers: _realPlayers,
           );
     final userRank = league.userRank(entries);
+    if (overall && userRank == 1) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        progress.recordLeaderDay();
+      });
+    }
+    if (!overall && userRank > 0 && _playersLoadedOnce) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (!mounted) return;
+        context.read<LeagueService>().observeWeeklyRank(userRank);
+      });
+    }
     final userSteps = overall ? progress.steps : progress.weeklySteps;
     final canPromote = league.tierIndex < LeagueTier.values.length - 1;
     final canDemote = league.tierIndex > 0;
@@ -326,6 +379,7 @@ class _LeagueScreenState extends State<LeagueScreen>
           rank: userRank,
           steps: userSteps,
           tierIndex: league.tierIndex,
+          trend: overall ? null : league.weeklyTrendFor(userRank),
         ),
       ),
       if (_playersError != null) ...[
@@ -388,7 +442,12 @@ class _LeagueScreenState extends State<LeagueScreen>
       children.add(
         _reveal(
           (4 + i ~/ 4).clamp(0, 8),
-          _StandingRow(entry: entries[i], rank: rank),
+          _StandingRow(
+            entry: entries[i],
+            rank: rank,
+            weeklySteps: !overall,
+            onOpenOwnProfile: widget.onOpenOwnProfile,
+          ),
         ),
       );
       if (!overall && rank == LeagueService.promoteCount && canPromote) {
@@ -824,8 +883,11 @@ class _LeagueScreenState extends State<LeagueScreen>
                 name: members[i].name,
                 steps: members[i].steps,
                 isUser: members[i].isUser,
+                lastWalkDate: members[i].lastWalk,
               ),
               rank: i + 1,
+              weeklySteps: true,
+              onOpenOwnProfile: widget.onOpenOwnProfile,
             ),
           ),
       const SizedBox(height: 8),
@@ -1676,12 +1738,14 @@ class _CaravanaHeroCard extends StatelessWidget {
   final int rank;
   final int steps;
   final int tierIndex;
+  final WeeklyRankTrend? trend;
 
   const _CaravanaHeroCard({
     required this.overall,
     required this.rank,
     required this.steps,
     required this.tierIndex,
+    this.trend,
   });
 
   @override
@@ -1734,6 +1798,10 @@ class _CaravanaHeroCard extends StatelessWidget {
                     color: a.textMuted(0.7),
                   ),
                 ),
+                if (trend case final t?) ...[
+                  const SizedBox(height: 10),
+                  _WeeklyRankTrendLine(trend: t),
+                ],
               ],
             ),
           ),
@@ -1783,6 +1851,58 @@ class _CaravanaHeroCard extends StatelessWidget {
           ],
         ],
       ),
+    );
+  }
+}
+
+class _WeeklyRankTrendLine extends StatelessWidget {
+  final WeeklyRankTrend trend;
+
+  const _WeeklyRankTrendLine({required this.trend});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final color = switch (trend.drift) {
+      RankDrift.up => AppColors.teal,
+      RankDrift.down => AppColors.error,
+      RankDrift.stable => a.textMuted(0.55),
+    };
+
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        if (trend.drift == RankDrift.stable)
+          Container(
+            width: 10,
+            height: 2,
+            decoration: BoxDecoration(
+              color: color,
+              borderRadius: BorderRadius.circular(1),
+            ),
+          )
+        else
+          CinematicIcon(
+            glyph: trend.drift == RankDrift.up
+                ? CinematicGlyph.rise
+                : CinematicGlyph.demote,
+            size: 14,
+            accent: color,
+            framed: false,
+          ),
+        const SizedBox(width: 6),
+        Flexible(
+          child: Text(
+            trend.label,
+            textAlign: TextAlign.center,
+            style: AppTypography.body(
+              size: 12,
+              weight: FontWeight.w700,
+              color: color,
+            ),
+          ),
+        ),
+      ],
     );
   }
 }
@@ -2001,140 +2121,203 @@ class _ZoneDivider extends StatelessWidget {
 class _StandingRow extends StatelessWidget {
   final LeagueEntry entry;
   final int rank;
+  final bool weeklySteps;
+  final VoidCallback? onOpenOwnProfile;
 
-  const _StandingRow({required this.entry, required this.rank});
+  const _StandingRow({
+    required this.entry,
+    required this.rank,
+    required this.weeklySteps,
+    this.onOpenOwnProfile,
+  });
+
+  Color _ink(AppearanceStyle a) {
+    return entry.isUser ? AppColors.inkOnAccent : a.text;
+  }
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final isTop3 = rank <= 3;
     final medal = switch (rank) {
       1 => AppColors.medalGold,
       2 => AppColors.medalSilver,
       3 => AppColors.medalBronze,
       _ => null,
     };
+    final initial = entry.name.isEmpty ? '?' : entry.name[0].toUpperCase();
+    final stepsTone = entry.isUser
+        ? AppColors.inkOnAccent
+        : (medal ?? AppColors.accent).withValues(alpha: 0.95);
 
-    final row = Row(
+    final content = Row(
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              '${entry.steps}',
-              style: AppTypography.body(
-                size: 14,
-                weight: FontWeight.w900,
-                color: entry.isUser
-                    ? AppColors.inkOnAccent
-                    : AppColors.accent.withValues(alpha: 0.95),
-              ),
-            ),
-            Text(
-              'passos',
-              style: AppTypography.label(
-                size: 10,
-                letterSpacing: 0,
-                color: entry.isUser
-                    ? AppColors.inkOnAccent.withValues(alpha: 0.7)
-                    : a.textMuted(0.5),
-              ),
-            ),
-          ],
-        ),
+        _RankBadge(rank: rank, onUserRow: entry.isUser),
         const SizedBox(width: 10),
         Container(
-          width: 36,
-          height: 36,
+          width: 38,
+          height: 38,
           decoration: BoxDecoration(
             shape: BoxShape.circle,
             color: entry.isUser
-                ? Colors.white.withValues(alpha: 0.35)
-                : AppColors.primaryLight.withValues(alpha: 0.3),
+                ? Colors.white.withValues(alpha: 0.32)
+                : AppColors.primaryLight.withValues(alpha: 0.28),
             border: Border.all(
-              color: medal != null && !entry.isUser
-                  ? medal.withValues(alpha: 0.55)
-                  : entry.isUser
-                      ? Colors.white.withValues(alpha: 0.6)
-                      : Colors.white.withValues(alpha: 0.15),
-              width: medal != null ? 1.5 : 1,
+              color: entry.isOnlineToday
+                  ? AppColors.teal.withValues(alpha: 0.85)
+                  : medal != null && !entry.isUser
+                      ? medal.withValues(alpha: 0.5)
+                      : Colors.white.withValues(alpha: 0.16),
+              width: entry.isOnlineToday ? 2 : 1.2,
             ),
           ),
           child: Center(
             child: Text(
-              entry.name.isEmpty ? '?' : entry.name[0].toUpperCase(),
+              initial,
               style: AppTypography.title(
                 size: 14,
                 weight: FontWeight.w900,
-                color: entry.isUser ? AppColors.inkOnAccent : a.text,
+                color: _ink(a),
               ),
             ),
           ),
         ),
-        const SizedBox(width: 10),
+        const SizedBox(width: 12),
         Expanded(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
                 entry.isUser ? '${entry.name} (você)' : entry.name,
+                maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: AppTypography.body(
-                  weight: entry.isUser ? FontWeight.w900 : FontWeight.w600,
-                  color: entry.isUser ? AppColors.inkOnAccent : a.text,
+                  size: 14,
+                  weight: entry.isUser ? FontWeight.w900 : FontWeight.w700,
+                  color: _ink(a),
                 ),
               ),
-              if (isTop3)
-                Text(
-                  switch (rank) {
-                    1 => 'Líder da caravana',
-                    2 => 'Quase no topo',
-                    _ => 'Pódio',
-                  },
-                  style: AppTypography.label(
-                    size: 10,
-                    letterSpacing: 0,
-                    color: entry.isUser
-                        ? AppColors.inkOnAccent.withValues(alpha: 0.75)
-                        : (medal ?? a.textMuted(0.45)),
-                  ),
-                ),
+              if (entry.isUser) _UserMedalBadge(),
             ],
           ),
         ),
-        _RankBadge(rank: rank, onUserRow: entry.isUser),
-      ],
-    );
-
-    if (entry.isUser) {
-      return Container(
-        margin: const EdgeInsets.only(bottom: 8),
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-        decoration: BoxDecoration(
-          gradient: AppGradients.gold,
-          borderRadius: BorderRadius.circular(AppRadii.md),
-          border: Border.all(
-            color: Colors.white.withValues(alpha: 0.5),
-            width: 1.5,
-          ),
-          boxShadow: [
-            BoxShadow(
-              color: AppColors.accent.withValues(alpha: 0.35),
-              blurRadius: 14,
+        Column(
+          crossAxisAlignment: CrossAxisAlignment.end,
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(
+              '${entry.steps}',
+              style: AppTypography.title(
+                size: 17,
+                weight: FontWeight.w900,
+                color: stepsTone,
+              ),
+            ),
+            Text(
+              'passos',
+              style: AppTypography.label(
+                size: 9,
+                letterSpacing: 0.5,
+                color: entry.isUser
+                    ? AppColors.inkOnAccent.withValues(alpha: 0.62)
+                    : a.textMuted(0.45),
+              ),
             ),
           ],
         ),
-        child: row,
-      );
-    }
+      ],
+    );
 
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 8),
-      child: GlassCard(
-        radius: AppRadii.md,
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-        child: row,
+    final card = entry.isUser
+        ? Container(
+            margin: const EdgeInsets.only(bottom: 8),
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 11),
+            decoration: BoxDecoration(
+              gradient: AppGradients.gold,
+              borderRadius: BorderRadius.circular(AppRadii.lg),
+              border: Border.all(
+                color: Colors.white.withValues(alpha: 0.5),
+                width: 1.5,
+              ),
+              boxShadow: [
+                BoxShadow(
+                  color: AppColors.accent.withValues(alpha: 0.32),
+                  blurRadius: 14,
+                  offset: const Offset(0, 4),
+                ),
+              ],
+            ),
+            child: content,
+          )
+        : Padding(
+            padding: const EdgeInsets.only(bottom: 8),
+            child: GlassCard(
+              radius: AppRadii.lg,
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 11),
+              child: content,
+            ),
+          );
+
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: () {
+          if (entry.isUser) {
+            onOpenOwnProfile?.call();
+            return;
+          }
+          showCaravanPilgrimSheet(
+            context,
+            entry: entry,
+            rank: rank,
+            weeklySteps: weeklySteps,
+          );
+        },
+        borderRadius: BorderRadius.circular(AppRadii.lg),
+        child: card,
       ),
+    );
+  }
+}
+
+class _UserMedalBadge extends StatelessWidget {
+  const _UserMedalBadge();
+
+  @override
+  Widget build(BuildContext context) {
+    final progress = context.watch<ProgressService>();
+    final uid = context.read<BackendService>().uid ?? '';
+
+    return FutureBuilder<int>(
+      future: MedalEngagementService.unlockedCountCached(progress, uid),
+      builder: (context, snapshot) {
+        final count = snapshot.data ?? 0;
+        if (count <= 0) return const SizedBox.shrink();
+
+        return Padding(
+          padding: const EdgeInsets.only(top: 3),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const CinematicIcon(
+                glyph: CinematicGlyph.gem,
+                size: 12,
+                accent: AppColors.medalGold,
+                framed: false,
+              ),
+              const SizedBox(width: 4),
+              Text(
+                '$count medalha${count == 1 ? '' : 's'}',
+                style: AppTypography.label(
+                  size: 9,
+                  letterSpacing: 0.2,
+                  color: AppColors.inkOnAccent.withValues(alpha: 0.72),
+                ),
+              ),
+            ],
+          ),
+        );
+      },
     );
   }
 }

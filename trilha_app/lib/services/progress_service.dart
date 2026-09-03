@@ -1,7 +1,10 @@
 import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../models/pilgrim_medal_catalog.dart';
+import '../models/pilgrim_medals.dart';
 import '../models/bible_reading_plan.dart';
+import '../models/caravan_profile_prefs.dart';
 import '../models/daily_quest.dart';
 import '../models/difficulty.dart';
 import '../utils/appearance.dart';
@@ -171,6 +174,24 @@ class ProgressService extends ChangeNotifier {
   /// Referências compartilhadas ("Lucas 1:1"), mais recentes primeiro.
   List<String> sharedVerses = [];
 
+  /// Total de compartilhamentos (contador persistente).
+  int sharedVerseCount = 0;
+
+  /// Missões concluídas com 100% de acertos (slug, 1ª vez).
+  List<String> perfectMissions = [];
+
+  /// Medalhas já exibidas na celebração (ids de [PilgrimMedals.defs]).
+  List<String> celebratedMedalIds = [];
+
+  /// Evita popup em massa na 1ª abertura após o recurso existir.
+  bool medalCelebrationSeeded = false;
+
+  /// Cofres já celebrados como completos (`journey`, `trail:slug`, …).
+  List<String> vaultCompleteCelebratedIds = [];
+
+  /// Legado v1 — migrado para [vaultCompleteCelebratedIds].
+  bool medalVaultCompleteCelebrated = false;
+
   /// Pontuação de memorização por id (0–5).
   Map<String, int> memoryScores = {};
 
@@ -205,6 +226,17 @@ class ProgressService extends ChangeNotifier {
   String? firstLessonDate;
   String? firstLessonTrailSlug;
   int? firstOpenAtMs;
+
+  /// Perfil público na caravana — o que outros veem ao tocar no card.
+  CaravanProfilePrefs caravanProfilePrefs = const CaravanProfilePrefs();
+
+  /// Estatísticas agregadas para o perfil na caravana.
+  int lifetimeQuestionsCorrect = 0;
+  int lifetimeQuestionsAnswered = 0;
+  String? lastMissionSlug;
+  String? lastMissionCompletedDate;
+  int daysAsCaravanLeader = 0;
+  String? lastLeaderRankDay;
 
   /// Primeira abertura neste aparelho (antes do splash marcar visto).
   /// Garante Aparência = Automático em toda instalação nova.
@@ -585,6 +617,12 @@ class ProgressService extends ChangeNotifier {
     readBibleChapters = [];
     bibleBookmarks = [];
     sharedVerses = [];
+    sharedVerseCount = 0;
+    perfectMissions = [];
+    celebratedMedalIds = [];
+    medalCelebrationSeeded = false;
+    vaultCompleteCelebratedIds = [];
+    medalVaultCompleteCelebrated = false;
     bibleReadingPlan = BibleReadingPlan.inactive;
     memoryScores = {};
     memoryMastered = [];
@@ -877,6 +915,7 @@ class ProgressService extends ChangeNotifier {
     if (sharedVerses.length > 24) {
       sharedVerses = sharedVerses.sublist(0, 24);
     }
+    sharedVerseCount = sharedVerseCount + 1;
     await _save();
     notifyListeners();
   }
@@ -1345,6 +1384,17 @@ class ProgressService extends ChangeNotifier {
         await _bumpWeekly('w_missions');
         await _bumpWeekly('w_days', absolute: daysPlayedThisWeek);
         if (total > 0 && correct >= total) await _bumpWeekly('w_perfect');
+
+        if (total > 0) {
+          lifetimeQuestionsCorrect += correct;
+          lifetimeQuestionsAnswered += total;
+        }
+        lastMissionSlug = slug;
+        lastMissionCompletedDate = today;
+      }
+
+      if (total > 0 && correct >= total && !perfectMissions.contains(slug)) {
+        perfectMissions = [...perfectMissions, slug];
       }
 
       await _save();
@@ -1356,6 +1406,68 @@ class ProgressService extends ChangeNotifier {
 
   void clearGoalJustReached() {
     goalJustReached = false;
+  }
+
+  /// Conta um dia em 1º no ranking geral da caravana (máx. 1 por dia).
+  Future<void> recordLeaderDay() async {
+    final today = _todayKey();
+    if (lastLeaderRankDay == today) return;
+    daysAsCaravanLeader += 1;
+    lastLeaderRankDay = today;
+    await _save();
+    notifyListeners();
+  }
+
+  Future<void> markMedalCelebrated(String medalId) async {
+    final expanded = PilgrimMedalCatalog.expandCelebratedIds([medalId]);
+    var changed = false;
+    for (final id in expanded) {
+      if (celebratedMedalIds.contains(id)) continue;
+      celebratedMedalIds = [...celebratedMedalIds, id];
+      changed = true;
+    }
+    if (!changed) return;
+    await _save();
+    notifyListeners();
+  }
+
+  /// Na 1ª abertura após o recurso, não celebra medalhas antigas em massa.
+  Future<void> seedMedalCelebrationsIfNeeded({
+    required Iterable<String> currentlyUnlockedIds,
+  }) async {
+    if (medalCelebrationSeeded) return;
+    final migrated = PilgrimMedalCatalog.expandCelebratedIds([
+      ...celebratedMedalIds.map(PilgrimMedalCatalog.migrateMedalId),
+      ...currentlyUnlockedIds.map(PilgrimMedalCatalog.migrateMedalId),
+    ]);
+    celebratedMedalIds = migrated.toList();
+    medalCelebrationSeeded = true;
+    if (medalVaultCompleteCelebrated &&
+        !vaultCompleteCelebratedIds.contains(PilgrimMedalCatalog.journeyVaultId)) {
+      vaultCompleteCelebratedIds = [
+        ...vaultCompleteCelebratedIds,
+        PilgrimMedalCatalog.journeyVaultId,
+      ];
+    }
+    await _save();
+    notifyListeners();
+  }
+
+  Future<void> markVaultCompleteCelebrated(String vaultId) async {
+    if (vaultCompleteCelebratedIds.contains(vaultId)) return;
+    vaultCompleteCelebratedIds = [...vaultCompleteCelebratedIds, vaultId];
+    medalVaultCompleteCelebrated = vaultCompleteCelebratedIds
+        .contains(PilgrimMedalCatalog.journeyVaultId);
+    await _save();
+    notifyListeners();
+  }
+
+  Set<String> get celebratedVaultIds => vaultCompleteCelebratedIds.toSet();
+
+  Future<void> updateCaravanProfilePrefs(CaravanProfilePrefs prefs) async {
+    caravanProfilePrefs = prefs;
+    await _save();
+    notifyListeners();
   }
 
   Future<void> setHasSeenOnboarding(bool value) async {
@@ -1464,6 +1576,12 @@ class ProgressService extends ChangeNotifier {
       'readBibleChapters': readBibleChapters,
       'bibleBookmarks': bibleBookmarks,
       'sharedVerses': sharedVerses,
+      'sharedVerseCount': sharedVerseCount,
+      'perfectMissions': perfectMissions,
+      'celebratedMedalIds': celebratedMedalIds,
+      'medalCelebrationSeeded': medalCelebrationSeeded,
+      'medalVaultCompleteCelebrated': medalVaultCompleteCelebrated,
+      'vaultCompleteCelebratedIds': vaultCompleteCelebratedIds,
       'bibleReadingPlan': bibleReadingPlan.toMap(),
       'memoryScores': memoryScores,
       'memoryMastered': memoryMastered,
@@ -1479,6 +1597,13 @@ class ProgressService extends ChangeNotifier {
       'firstLessonDate': firstLessonDate,
       'firstLessonTrailSlug': firstLessonTrailSlug,
       'firstOpenAtMs': firstOpenAtMs,
+      'caravanProfilePrefs': caravanProfilePrefs.toMap(),
+      'lifetimeQuestionsCorrect': lifetimeQuestionsCorrect,
+      'lifetimeQuestionsAnswered': lifetimeQuestionsAnswered,
+      'lastMissionSlug': lastMissionSlug,
+      'lastMissionCompletedDate': lastMissionCompletedDate,
+      'daysAsCaravanLeader': daysAsCaravanLeader,
+      'lastLeaderRankDay': lastLeaderRankDay,
       'settings': {
         'sound': settings.sound,
         'notifications': settings.notifications,
@@ -1755,6 +1880,56 @@ class ProgressService extends ChangeNotifier {
           _asStringList(data['sharedVerses']),
         );
       }
+      if (data.containsKey('sharedVerseCount')) {
+        final cloud = (data['sharedVerseCount'] as num?)?.toInt() ?? 0;
+        sharedVerseCount = [
+          sharedVerseCount,
+          cloud,
+          sharedVerses.length,
+        ].reduce((a, b) => a > b ? a : b);
+      } else if (sharedVerses.isNotEmpty) {
+        sharedVerseCount = [
+          sharedVerseCount,
+          sharedVerses.length,
+        ].reduce((a, b) => a > b ? a : b);
+      }
+      if (data.containsKey('perfectMissions')) {
+        final cloudPerfect = _asStringList(data['perfectMissions']);
+        if (perfectMissions.isEmpty) {
+          perfectMissions = cloudPerfect;
+        } else if (cloudPerfect.isNotEmpty) {
+          perfectMissions = {...perfectMissions, ...cloudPerfect}.toList();
+        }
+      }
+      if (data.containsKey('celebratedMedalIds')) {
+        final cloudCelebrated = _asStringList(data['celebratedMedalIds']);
+        celebratedMedalIds = {
+          ...celebratedMedalIds,
+          ...cloudCelebrated,
+        }.toList();
+      }
+      if (data.containsKey('medalCelebrationSeeded')) {
+        medalCelebrationSeeded =
+            medalCelebrationSeeded || data['medalCelebrationSeeded'] == true;
+      }
+      if (data.containsKey('vaultCompleteCelebratedIds')) {
+        vaultCompleteCelebratedIds = {
+          ...vaultCompleteCelebratedIds,
+          ..._asStringList(data['vaultCompleteCelebratedIds']),
+        }.toList();
+      }
+      if (data.containsKey('medalVaultCompleteCelebrated')) {
+        medalVaultCompleteCelebrated = medalVaultCompleteCelebrated ||
+            data['medalVaultCompleteCelebrated'] == true;
+      }
+      if (medalVaultCompleteCelebrated &&
+          !vaultCompleteCelebratedIds
+              .contains(PilgrimMedalCatalog.journeyVaultId)) {
+        vaultCompleteCelebratedIds = [
+          ...vaultCompleteCelebratedIds,
+          PilgrimMedalCatalog.journeyVaultId,
+        ];
+      }
       if (data.containsKey('bibleReadingPlan')) {
         final remote = BibleReadingPlan.fromMap(data['bibleReadingPlan']);
         // Mantém o plano local se estiver mais avançado no mesmo modo.
@@ -1848,6 +2023,52 @@ class ProgressService extends ChangeNotifier {
         final ms = (data['firstOpenAtMs'] as num?)?.toInt();
         if (ms != null && (firstOpenAtMs == null || ms < firstOpenAtMs!)) {
           firstOpenAtMs = ms;
+        }
+      }
+      if (data.containsKey('caravanProfilePrefs')) {
+        caravanProfilePrefs =
+            CaravanProfilePrefs.fromMap(data['caravanProfilePrefs']);
+      }
+      if (data.containsKey('lifetimeQuestionsCorrect')) {
+        final cloud = (data['lifetimeQuestionsCorrect'] as num?)?.toInt() ?? 0;
+        if (cloud > lifetimeQuestionsCorrect) {
+          lifetimeQuestionsCorrect = cloud;
+        }
+      }
+      if (data.containsKey('lifetimeQuestionsAnswered')) {
+        final cloud = (data['lifetimeQuestionsAnswered'] as num?)?.toInt() ?? 0;
+        if (cloud > lifetimeQuestionsAnswered) {
+          lifetimeQuestionsAnswered = cloud;
+        }
+      }
+      if (data.containsKey('lastMissionSlug')) {
+        final slug = data['lastMissionSlug'] as String?;
+        if (slug != null && slug.isNotEmpty) {
+          lastMissionSlug = slug;
+        }
+      }
+      if (data.containsKey('lastMissionCompletedDate')) {
+        final d = data['lastMissionCompletedDate'] as String?;
+        if (d != null && d.isNotEmpty) {
+          final local = lastMissionCompletedDate;
+          if (local == null || d.compareTo(local) >= 0) {
+            lastMissionCompletedDate = d;
+          }
+        }
+      }
+      if (data.containsKey('daysAsCaravanLeader')) {
+        final cloud = (data['daysAsCaravanLeader'] as num?)?.toInt() ?? 0;
+        if (cloud > daysAsCaravanLeader) {
+          daysAsCaravanLeader = cloud;
+        }
+      }
+      if (data.containsKey('lastLeaderRankDay')) {
+        final d = data['lastLeaderRankDay'] as String?;
+        if (d != null && d.isNotEmpty) {
+          final local = lastLeaderRankDay;
+          if (local == null || d.compareTo(local) >= 0) {
+            lastLeaderRankDay = d;
+          }
         }
       }
       final s = data['settings'];
@@ -1986,6 +2207,12 @@ class ProgressService extends ChangeNotifier {
     readBibleChapters = [];
     bibleBookmarks = [];
     sharedVerses = [];
+    sharedVerseCount = 0;
+    perfectMissions = [];
+    celebratedMedalIds = [];
+    medalCelebrationSeeded = false;
+    vaultCompleteCelebratedIds = [];
+    medalVaultCompleteCelebrated = false;
     bibleReadingPlan = BibleReadingPlan.inactive;
     memoryScores = {};
     memoryMastered = [];

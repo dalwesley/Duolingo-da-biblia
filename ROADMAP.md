@@ -161,10 +161,13 @@ Tese: apps ensinam conhecimento; STWAY fecha com **obediência concreta** (Serm�
 
 Ver `MONETIZATION.md`. Não shipar Pro antes do hábito provar valor.
 
-- [ ] STWAY Pro (gates: gelo, lâmpadas, Strong, Profundezas) + trial pós 3ª missão / 1º gelo
-- [ ] Soft paywalls nos pontos A–F do MONETIZATION.md
-- [ ] Plano Igreja piloto (1–3 líderes): Salas + progresso do grupo + códigos presente Pro
-- [ ] Radar (após Igreja): trilha privada da sala / líder — MCQ embutido, fora do catálogo público; **não** UGC aberto
+- [ ] **Caminhada piloto** (Advento ou Quaresma) — o produto do Pro; sem isso, IAP não vende
+- [ ] STWAY Pro: Caminhada + áudio da missão + revisão da semana; alívio (gelo/lâmpadas/Strong) é suporte
+- [ ] Soft paywalls nos pontos A–F do MONETIZATION.md · default anual R$ 119,90 · copy da temporada
+- [ ] Pro Família (até 5) antes de packs avulsos
+- [ ] Plano Igreja piloto (1–3 líderes): Salas + progresso do grupo + códigos presente Pro · billing Stripe/Pix na web
+- [ ] Radar (após Igreja): **playlist da sala** (missões do catálogo na ordem da semana) → depois trilha privada MCQ, fora de `content_trails`; **não** UGC aberto
+- [ ] Radar: mais *salas* de ~12 (não uma sala de 50). Encontro da célula sem cronômetro — **não** Kahoot/PvP
 - [ ] Opcional: 1 minuto de oração pós-celebração (não aba Hallow)
 
 ### Motor de etapas configuráveis (só se retenção pedir)

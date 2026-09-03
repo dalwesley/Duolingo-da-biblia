@@ -8,6 +8,7 @@ import '../services/companion_service.dart';
 import '../services/home_widget_service.dart';
 import '../services/invite_deep_link_service.dart';
 import '../services/league_service.dart';
+import '../services/medal_engagement_service.dart';
 import '../services/notification_service.dart';
 import '../services/progress_service.dart';
 import '../services/room_service.dart';
@@ -94,6 +95,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       }
       unawaited(_maybePromptAppUpdate());
       _openJuntosIfInvitePending();
+      MedalEngagementService.instance.scheduleCheck(context);
     });
   }
 
@@ -162,6 +164,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       context.read<CompanionService>().syncPresence(progress);
     }
     HomeWidgetService.syncFromProgress(progress);
+    MedalEngagementService.instance.scheduleCheck(context);
   }
 
   @override
@@ -280,39 +283,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     Navigator.of(context).pushNamed('/lesson', arguments: missionSlug);
   }
 
-  void _openProfile() {
-    final progress = context.read<ProgressService>();
-    final backend = context.read<BackendService>();
-    final mode = progress.settings.appearanceMode;
-    final appearance = AppearanceStyle.resolve(mode);
-    Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (ctx) => Appearance(
-          mode: mode,
-          style: appearance,
-          child: Scaffold(
-            backgroundColor: Colors.transparent,
-            body: ImmersiveBackground(
-              appearance: appearance,
-              child: MeScreen(
-                topBar: TopBar(
-                  inline: true,
-                  immersive: true,
-                  dark: appearance.onDark,
-                  title: progress.userName,
-                  subtitle: 'Seu progresso, seu ritmo',
-                  onBack: () => Navigator.pop(ctx),
-                  photoUrl: backend.userPhotoUrl,
-                  showTrailingAvatar: true,
-                  showLeading: false,
-                ),
-              ),
-            ),
-          ),
-        ),
-      ),
-    );
-  }
+  void _openProfile() => openMeProfile(context);
 
   void _goToTrilhas() => setState(() {
     _index = 1;
@@ -404,6 +375,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
             LeagueScreen(
               topBar: tabBar(3),
               active: _index == 3,
+              onOpenOwnProfile: _openProfile,
             ),
             SettingsScreen(topBar: tabBar(4)),
           ],
