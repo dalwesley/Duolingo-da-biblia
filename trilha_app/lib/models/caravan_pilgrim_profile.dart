@@ -50,6 +50,7 @@ class CaravanPilgrimProfile {
   final List<CaravanTrailSnapshot> trails;
   final List<String> bibleBooksRead;
   final List<String> completeBibleBooks;
+  final List<String> completeBookNames;
   final List<String> completeNtBooks;
   final int bibleChaptersRead;
   final bool hasDepthsCleared;
@@ -81,6 +82,7 @@ class CaravanPilgrimProfile {
     this.trails = const [],
     this.bibleBooksRead = const [],
     this.completeBibleBooks = const [],
+    this.completeBookNames = const [],
     this.completeNtBooks = const [],
     this.bibleChaptersRead = 0,
     this.hasDepthsCleared = false,
@@ -130,44 +132,57 @@ class CaravanPilgrimProfile {
     );
   }
 
+  factory CaravanPilgrimProfile.fromRankingCard({
+    String? uid,
+    required String name,
+    required int steps,
+    String? lastWalkDate,
+    String? lastSeenDate,
+  }) {
+    return CaravanPilgrimProfile(
+      uid: uid,
+      name: name,
+      steps: steps,
+      lastWalkDate: lastWalkDate,
+      lastSeenDate: lastSeenDate,
+    );
+  }
+
   factory CaravanPilgrimProfile.fromCloudMap({
     required String uid,
     required Map<String, dynamic> data,
     String? fallbackName,
   }) {
-    final name = (data['userName'] as String?)?.trim().isNotEmpty == true
-        ? data['userName'] as String
-        : (data['name'] as String?)?.trim().isNotEmpty == true
-            ? data['name'] as String
-            : (fallbackName ?? 'Aprendiz');
+    final name = _asName(data['userName']) ??
+        _asName(data['name']) ??
+        (fallbackName?.trim().isNotEmpty == true
+            ? fallbackName!.trim()
+            : 'Aprendiz');
     return CaravanPilgrimProfile(
       uid: uid,
       name: name,
-      steps: (data['steps'] as num?)?.toInt() ??
-          (data['xp'] as num?)?.toInt() ??
-          0,
-      streak: (data['streak'] as num?)?.toInt() ?? 0,
-      lastWalkDate: (data['lastWalkDate'] as String?) ??
-          (data['lastPlayedDate'] as String?),
-      lastSeenDate: data['lastSeenDate'] as String?,
+      steps: _asInt(data['steps']) ?? _asInt(data['xp']) ?? 0,
+      streak: _asInt(data['streak']) ?? 0,
+      lastWalkDate:
+          _asDateKey(data['lastWalkDate']) ?? _asDateKey(data['lastPlayedDate']),
+      lastSeenDate: _asDateKey(data['lastSeenDate']),
       completedMissions: _asStringList(data['completedMissions']),
       clearedTrailModes: _asStringListMap(data['clearedTrailModes']),
       readBibleChapters: _asStringList(data['readBibleChapters']),
       perfectMissions: _asStringList(data['perfectMissions']),
-      sharedVerseCount: (data['sharedVerseCount'] as num?)?.toInt() ??
+      sharedVerseCount: _asInt(data['sharedVerseCount']) ??
           _asStringList(data['sharedVerses']).length,
       memoryMasteredCount: _asStringList(data['memoryMastered']).length,
       reflectionCount: _asStringMap(data['missionReflections']).length,
-      firstOpenDate: data['firstOpenDate'] as String?,
+      firstOpenDate: _asDateKey(data['firstOpenDate']),
       playDates: _asStringList(data['playDates']),
-      daysAsCaravanLeader:
-          (data['daysAsCaravanLeader'] as num?)?.toInt() ?? 0,
+      daysAsCaravanLeader: _asInt(data['daysAsCaravanLeader']) ?? 0,
       lifetimeQuestionsCorrect:
-          (data['lifetimeQuestionsCorrect'] as num?)?.toInt() ?? 0,
+          _asInt(data['lifetimeQuestionsCorrect']) ?? 0,
       lifetimeQuestionsAnswered:
-          (data['lifetimeQuestionsAnswered'] as num?)?.toInt() ?? 0,
-      lastMissionSlug: data['lastMissionSlug'] as String?,
-      lastMissionCompletedDate: data['lastMissionCompletedDate'] as String?,
+          _asInt(data['lifetimeQuestionsAnswered']) ?? 0,
+      lastMissionSlug: _asName(data['lastMissionSlug']),
+      lastMissionCompletedDate: _asDateKey(data['lastMissionCompletedDate']),
       prefs: CaravanProfilePrefs.fromMap(data['caravanProfilePrefs']),
     );
   }
@@ -253,6 +268,11 @@ class CaravanPilgrimProfile {
       (modes) => modes.contains('profundezas'),
     );
 
+    final completeNames = [
+      for (final abbrev in completeBooks)
+        abbrevToName[abbrev] ?? abbrev.toUpperCase(),
+    ]..sort();
+
     return CaravanPilgrimProfile(
       uid: uid,
       name: name,
@@ -278,12 +298,44 @@ class CaravanPilgrimProfile {
       trails: trails,
       bibleBooksRead: books,
       completeBibleBooks: completeBooks,
+      completeBookNames: completeNames,
       completeNtBooks: completeNt,
       bibleChaptersRead: readBibleChapters.length,
       hasDepthsCleared: depthsCleared,
       lastMissionTitle: missionTitle,
       lastTrailTitle: trailTitle,
     );
+  }
+
+  static String? _asName(dynamic raw) {
+    if (raw is! String) return null;
+    final t = raw.trim();
+    return t.isEmpty ? null : t;
+  }
+
+  static int? _asInt(dynamic raw) {
+    if (raw is num) return raw.toInt();
+    if (raw is String) return int.tryParse(raw.trim());
+    return null;
+  }
+
+  static String? _asDateKey(dynamic raw) {
+    if (raw == null) return null;
+    if (raw is String) {
+      final t = raw.trim();
+      if (t.isEmpty) return null;
+      return t.length >= 10 ? t.substring(0, 10) : t;
+    }
+    if (raw is DateTime) {
+      return raw.toIso8601String().substring(0, 10);
+    }
+    try {
+      final dated = (raw as dynamic).toDate();
+      if (dated is DateTime) {
+        return dated.toIso8601String().substring(0, 10);
+      }
+    } catch (_) {}
+    return null;
   }
 
   static Map<String, String> _asStringMap(dynamic raw) {

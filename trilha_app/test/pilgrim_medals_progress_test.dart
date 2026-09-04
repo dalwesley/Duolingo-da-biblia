@@ -50,5 +50,19 @@ void main() {
 
       expect(progress.perfectMissions, contains('gen-test-02'));
     });
+
+    test('marks bible-before-mission when chapter is read first', () async {
+      final progress = ProgressService();
+      await progress.recordBibleReading('gn', 1);
+      await progress.completeMission('gen-test-03', 40, correct: 6, total: 6);
+      expect(progress.bibleBeforeMission, isTrue);
+    });
+
+    test('does not mark bible-before-mission when mission is first', () async {
+      final progress = ProgressService();
+      await progress.completeMission('gen-test-04', 40, correct: 6, total: 6);
+      await progress.recordBibleReading('gn', 1);
+      expect(progress.bibleBeforeMission, isFalse);
+    });
   });
 }

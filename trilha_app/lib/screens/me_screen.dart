@@ -181,12 +181,6 @@ class _MeScreenState extends State<MeScreen> {
     } else if (profile != null) {
       body.addAll([
         const SizedBox(height: AppSpace.section),
-        const _ProfileSectionLabel(
-          title: 'Medalhas',
-          subtitle: 'Conquistas da sua jornada',
-          accent: AppColors.medalGold,
-        ),
-        const SizedBox(height: AppSpace.sm),
         PilgrimMedalVaultsPanel(
           profile: profile,
           evalContext: PilgrimMedalEvalContext.fromProfile(profile),
@@ -209,14 +203,8 @@ class _MeScreenState extends State<MeScreen> {
       const SizedBox(height: AppSpace.section),
       const WeeklyQuestsCard(),
       const SizedBox(height: AppSpace.section),
-      const _ProfileSectionLabel(
-        title: 'Na Palavra',
-        subtitle: 'Leitura, favoritos e compartilhados',
-        accent: AppColors.cedar,
-      ),
-      const SizedBox(height: AppSpace.sm),
       if (profile != null && !_caravanLoading)
-        _NaPalavraBlock(profile: profile)
+        const _NaPalavraBlock()
       else ...[
         const _FavoritesSection(),
         const _SharedVersesSection(),
@@ -290,63 +278,6 @@ class _ActiveTrailsCard extends StatelessWidget {
           for (final trail in trails) PilgrimTrailPath(trail: trail),
         ],
       ),
-    );
-  }
-}
-
-class _ProfileSectionLabel extends StatelessWidget {
-  final String title;
-  final String? subtitle;
-  final Color? accent;
-
-  const _ProfileSectionLabel({
-    required this.title,
-    this.subtitle,
-    this.accent,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final lineColor = accent ?? AppColors.accent;
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Container(
-          width: 3,
-          height: subtitle != null ? 34 : 18,
-          margin: const EdgeInsets.only(top: 1, right: 10),
-          decoration: BoxDecoration(
-            color: lineColor.withValues(alpha: 0.85),
-            borderRadius: BorderRadius.circular(AppRadii.pill),
-          ),
-        ),
-        Expanded(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                title.toUpperCase(),
-                style: AppTypography.label(
-                  size: 11,
-                  letterSpacing: 1.5,
-                  color: a.textMuted(0.72),
-                ),
-              ),
-              if (subtitle != null) ...[
-                const SizedBox(height: 3),
-                Text(
-                  subtitle!,
-                  style: AppTypography.body(
-                    size: 12,
-                    color: a.textMuted(0.48),
-                  ),
-                ),
-              ],
-            ],
-          ),
-        ),
-      ],
     );
   }
 }
@@ -460,32 +391,24 @@ class _SummaryCell extends StatelessWidget {
 }
 
 class _NaPalavraBlock extends StatelessWidget {
-  final CaravanPilgrimProfile profile;
-
-  const _NaPalavraBlock({required this.profile});
+  const _NaPalavraBlock();
 
   @override
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
     final a = Appearance.of(context);
-    final hasReading = profile.bibleChaptersRead > 0;
     final hasBookmarks = progress.parseBookmarks().isNotEmpty;
     final hasShared = progress.sharedVerses.isNotEmpty;
 
     return GlassCard(
-      padding: AppMetrics.cardPadding,
+      padding: const EdgeInsets.fromLTRB(16, 14, 16, 16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          if (hasReading) ...[
-            PilgrimScriptureShelf(
-              chapters: profile.bibleChaptersRead,
-              books: profile.bibleBooksRead,
-            ),
-            if (hasBookmarks || hasShared) _sectionDivider(a),
-          ],
+          const CardHeader(label: 'Na Palavra'),
+          const SizedBox(height: 12),
           const _FavoritesSection(embedded: true),
-          if (hasShared && (hasReading || hasBookmarks)) _sectionDivider(a),
+          if (hasShared && hasBookmarks) _sectionDivider(a),
           const _SharedVersesSection(embedded: true),
         ],
       ),

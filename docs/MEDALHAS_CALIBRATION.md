@@ -1,93 +1,86 @@
-# Calibração de medalhas v3
+# Calibração de medalhas v3.2
 
-Escadas por família (Ferro → Diamante) + raras Mirra. Marcos calibrados para **primeiro degrau em 1–3 sessões** e progressão visível.
+Faísca acende o emblema. Conquista é moeda que **não some**. Palavra no cofre mede hábito de capítulos, não catálogo de livros.
+
+Primeiro gesto em 1–3 sessões (faísca). Próximo passo visível (~20% restantes). Uma linha na celebração se o ato moveu a escada.
 
 ## Escadas da jornada
 
 ### Palavra (`track:word`)
-| Nível | Material | Marco |
+Medalha mede hábito de leitura (capítulos). Livro concluído não vira medalha.
+
+| Papel | Material | Marco |
 |-------|----------|-------|
-| 0 | Ferro | 1 capítulo lido |
-| 1 | Bronze | 25 capítulos |
-| 2 | Prata | 1 livro completo |
-| 3 | Ouro | 1 evangelho completo |
-| 4 | Platina | 1 livro do AT |
-| 5 | Diamante | 1 livro do NT |
+| Faísca | Ferro | 1 capítulo |
+| Conquista | Prata | 25 capítulos |
+| Conquista | Ouro | 100 capítulos |
 
 ### Formação (`track:formation`)
-| Nível | Material | Marco |
+| Papel | Material | Marco |
 |-------|----------|-------|
-| 0 | Bronze | 1 cena perfeita |
-| 1 | Prata | 5 cenas perfeitas |
-| 2 | Ouro | 25 cenas perfeitas |
-| 3 | Platina | 85%+ acertos (mín. 50 questões) |
-| 4 | Diamante | Boss com 100% |
+| Faísca | Bronze | 1 cena perfeita |
+| Conquista | Ouro | 25 cenas perfeitas |
 
 ### Caminho (`track:path`)
-| Nível | Material | Marco |
+| Papel | Material | Marco |
 |-------|----------|-------|
-| 0 | Ferro | 3 dias de sequência |
-| 1 | Bronze | 7 dias |
-| 2 | Prata | 14 dias |
-| 3 | Ouro | 30 dias |
-| 4 | Platina | 90 dias |
-| 5 | Diamante | 1 dia em 1º no ranking |
+| Faísca | Ferro | 3 dias |
+| Conquista | Ouro | 30 dias |
+| Conquista | Platina | 90 dias |
 
 ### Testemunho (`track:witness`)
-| Nível | Material | Marco |
+| Papel | Material | Marco |
 |-------|----------|-------|
-| 0 | Bronze | 1 compartilhamento |
-| 1 | Prata | 10 |
-| 2 | Ouro | 25 |
-| 3 | Platina | 50 |
+| Faísca | Bronze | 1 compartilhamento |
+| Conquista | Ouro | 10 |
+| Conquista | Diamante | 50 |
 
 ### Memória (`track:memory`)
-| Nível | Material | Marco |
+| Papel | Material | Marco |
 |-------|----------|-------|
-| 0 | Bronze | 5 versículos |
-| 1 | Prata | 15 |
-| 2 | Ouro | 30 |
-| 3 | Platina | 50 |
+| Faísca | Ferro | 1 versículo |
+| Conquista | Prata | 15 |
+| Conquista | Platina | 50 |
 
 ## Trilha (por slug)
-| Nível | Material | Marco |
+| Papel | Material | Marco |
 |-------|----------|-------|
-| 0 | Bronze | 1 missão |
-| 1 | Prata | Modo Observação |
-| 2 | Ouro | Modo Compreensão |
-| 3 | Diamante | Trilha + Interpretação |
+| Faísca | Bronze | 1 missão |
+| Conquista | Prata | Modo Observação |
+| Conquista | Ouro | Modo Compreensão |
+| Conquista | Diamante | Trilha + Interpretação |
+
+## Advento 2026 (`season:advento-2026`)
+Visível de 29 nov a 24 dez 2026 (+ 7 dias de graça). Depois só se houver progresso.
+
+| Papel | Material | Marco |
+|-------|----------|-------|
+| Faísca | Bronze | 1 dia na janela |
+| Conquista | Prata | 7 dias |
+| Conquista | Ouro | metade dos dias (~13) |
+| Conquista | Diamante | 22 dias |
+
+Rara: 7 dias seguidos no Advento.
 
 ## Raras (Mirra)
-| ID | Título | Marco calibrado |
-|----|--------|-----------------|
-| `discovery:founder` | Pioneiro | Entrou até 2026 |
+| ID | Título | Marco |
+|----|--------|-------|
+| `discovery:founder` | Pioneiro | Entrou até 2026 — **sem sheet** |
 | `discovery:comeback` | Volta firme | Retorno após 21+ dias |
-| `discovery:accuracy_elite` | Mira certeira | 95%+ em 150+ questões |
+| `discovery:bible_before` | Palavra antes | Capítulo no mesmo dia, antes da missão |
+| `discovery:andando_na_luz` | Andando na luz | 85%+ em 50+ questões |
+| `discovery:perfect_boss` | Prova impecável | Boss 100% |
+| `discovery:leader` | Líder da caravana | 1 dia em 1º |
+| `discovery:accuracy_elite` | Mira certeira | 95%+ em 150+ |
 | `discovery:trail_flawless` | Trilha impecável | Trilha inteira 100% |
 | `discovery:reflection_deep` | Diário profundo | 40 reflexões |
 
-## Alcance estimado (% usuários ativos)
+AT/NT e “livro completo” **não** são medalhas.
 
-Estimativas para usuários que abrem o app pelo menos 1× na janela. Ajustar com analytics reais.
-
-| Marco | 7 dias | 30 dias | 90 dias |
-|-------|--------|---------|---------|
-| Ferro Palavra (1 cap) | ~70% | ~85% | ~90% |
-| Bronze Palavra (25 cap) | ~15% | ~40% | ~55% |
-| Bronze Formação (1 perfeita) | ~45% | ~65% | ~75% |
-| Ferro Caminho (3d streak) | ~25% | ~50% | ~60% |
-| Bronze Caminho (7d) | ~12% | ~35% | ~45% |
-| Bronze Testemunho (1 share) | ~20% | ~35% | ~45% |
-| Bronze Memória (5) | ~8% | ~22% | ~35% |
-| Bronze Trilha (1 missão) | ~55% | ~75% | ~85% |
-| Prata Trilha (semente) | ~30% | ~50% | ~60% |
-| Diamante Trilha (peregrino) | ~3% | ~12% | ~25% |
-| Qualquer rara Mirra | ~2% | ~8% | ~15% |
-| Jornada completa (todos máx.) | <1% | ~2% | ~5% |
-
-## Princípios de engajamento
-
-1. **Primeiro brilho rápido** — Ferro/Bronze em Palavra, Formação e Trilha dentro de 1–3 sessões.
-2. **Próximo passo visível** — banner «Quase lá» quando faltam ≤1 unidade do próximo material.
-3. **Celebração por subida** — sheet «Subiu de nível» por degrau, não por medalha solta.
-4. **Raras como surpresa** — Mirra só aparece no cofre quando conquistada.
+## Princípios
+1. Prefixo consecutivo — nunca pintar ouro sem a faísca.
+2. 5 emblemas no cofre. Conquistas aparecem como moedas no sheet da família.
+3. Faísca não vira moeda no álbum.
+4. Feedback na celebração = uma linha (`Palavra 22/25 · Prata`), não card no Hoje.
+5. Pioneiro silencioso. Surpresa no fluxo real: Palavra antes da missão.
+6. Medalha não coleciona título bíblico. Palavra mede capítulos.

@@ -15,8 +15,9 @@ import 'ui_primitives.dart';
 
 Future<void> showTrackDetailSheet(
   BuildContext context,
-  PilgrimTrackState trackState,
-) {
+  PilgrimTrackState trackState, {
+  int? highlightLevelIndex,
+}) {
   HapticFeedback.selectionClick();
   return showModalBottomSheet<void>(
     context: context,
@@ -24,7 +25,10 @@ Future<void> showTrackDetailSheet(
     barrierColor: Colors.black.withValues(alpha: 0.72),
     isScrollControlled: true,
     enableDrag: true,
-    builder: (ctx) => _TrackDetailSheet(trackState: trackState),
+    builder: (ctx) => _TrackDetailSheet(
+      trackState: trackState,
+      highlightLevelIndex: highlightLevelIndex,
+    ),
   );
 }
 
@@ -55,7 +59,7 @@ Future<void> showMedalTileSheet(
   PilgrimMedalTile tile, {
   bool celebration = false,
 }) {
-  if (celebration || tile.unlocked) {
+  if (celebration) {
     HapticFeedback.mediumImpact();
   } else {
     HapticFeedback.selectionClick();
@@ -68,7 +72,29 @@ Future<void> showMedalTileSheet(
     enableDrag: true,
     builder: (ctx) => _MedalDetailSheet(
       tile: tile,
-      celebration: celebration || tile.unlocked,
+      celebration: celebration,
+    ),
+  );
+}
+
+Future<void> showMedalMysterySheet(BuildContext context, int hiddenCount) {
+  HapticFeedback.selectionClick();
+  return showModalBottomSheet<void>(
+    context: context,
+    backgroundColor: Colors.transparent,
+    barrierColor: Colors.black.withValues(alpha: 0.72),
+    isScrollControlled: true,
+    enableDrag: true,
+    builder: (ctx) => _MedalDetailSheet(
+      tile: PilgrimMedalTile(
+        id: 'discovery:mystery',
+        title: hiddenCount == 1 ? 'Uma descoberta' : '$hiddenCount descobertas',
+        hint: 'Revelam-se no caminho — sem dica no cofre.',
+        glyph: CinematicGlyph.search,
+        tier: PilgrimMedalTier.mirra,
+        unlocked: false,
+        secret: true,
+      ),
     ),
   );
 }
@@ -175,10 +201,10 @@ class _MedalDetailSheetState extends State<_MedalDetailSheet>
     final isDiscovery = tile.secret;
     final bottom = MediaQuery.viewPaddingOf(context).bottom;
     final headline = widget.celebration
-        ? (isDiscovery ? 'RARA' : 'NOVA CONQUISTA')
+        ? (isDiscovery ? 'DESCOBERTA' : 'NOVA CONQUISTA')
         : (unlocked
-            ? (isDiscovery ? 'RARA' : 'MEDALHA CONQUISTADA')
-            : 'A CONQUISTAR');
+            ? (isDiscovery ? 'RARA' : tier.toUpperCase())
+            : (isDiscovery ? 'DESCOBERTA' : 'A CONQUISTAR'));
 
     return Padding(
       padding: EdgeInsets.fromLTRB(AppSpace.md, 0, AppSpace.md, bottom + 12),
@@ -194,7 +220,7 @@ class _MedalDetailSheetState extends State<_MedalDetailSheet>
                 width: 1.5,
               ),
               color: AppColors.night.withValues(alpha: 0.94),
-              boxShadow: unlocked
+              boxShadow: widget.celebration && unlocked
                   ? [
                       BoxShadow(
                         color: accent.withValues(alpha: 0.35),
@@ -208,7 +234,7 @@ class _MedalDetailSheetState extends State<_MedalDetailSheet>
               borderRadius: BorderRadius.circular(AppRadii.xl),
               child: Stack(
                 children: [
-                  if (unlocked)
+                  if (widget.celebration && unlocked)
                     const Positioned.fill(
                       child: ConfettiOverlay(active: true, cinematic: true),
                     ),
@@ -290,7 +316,7 @@ class _MedalDetailSheetState extends State<_MedalDetailSheet>
                           opacity: _bodyOpacity,
                           child: Column(
                             children: [
-                              if (!isDiscovery && unlocked) ...[
+                              if (!isDiscovery && unlocked && widget.celebration) ...[
                                 Container(
                                   padding: const EdgeInsets.symmetric(
                                     horizontal: 12,
@@ -326,30 +352,15 @@ class _MedalDetailSheetState extends State<_MedalDetailSheet>
                               ),
                               if (tile.hint.isNotEmpty) ...[
                                 const SizedBox(height: 12),
-                                Container(
-                                  width: double.infinity,
-                                  padding: const EdgeInsets.symmetric(
-                                    horizontal: 16,
-                                    vertical: 12,
-                                  ),
-                                  decoration: BoxDecoration(
-                                    borderRadius:
-                                        BorderRadius.circular(AppRadii.md),
-                                    color: Colors.white.withValues(alpha: 0.05),
-                                    border: Border.all(
-                                      color: accent.withValues(alpha: 0.2),
-                                    ),
-                                  ),
-                                  child: Text(
-                                    unlocked
-                                        ? tile.hint
-                                        : 'Como conquistar: ${tile.hint}',
-                                    textAlign: TextAlign.center,
-                                    style: AppTypography.body(
-                                      size: 14,
-                                      height: 1.5,
-                                      color: a.textMuted(0.68),
-                                    ),
+                                Text(
+                                  unlocked || isDiscovery
+                                      ? tile.hint
+                                      : 'Como conquistar: ${tile.hint}',
+                                  textAlign: TextAlign.center,
+                                  style: AppTypography.body(
+                                    size: 14,
+                                    height: 1.5,
+                                    color: a.textMuted(0.62),
                                   ),
                                 ),
                               ],
@@ -449,98 +460,155 @@ class _TrackDetailSheetState extends State<_TrackDetailSheet>
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(AppRadii.xl),
               border: Border.all(
-                color: accent.withValues(alpha: trackState.hasStarted ? 0.8 : 0.28),
+                color: accent.withValues(
+                  alpha: trackState.hasStarted ? 0.8 : 0.28,
+                ),
               ),
               color: AppColors.night.withValues(alpha: 0.94),
+              boxShadow: widget.celebration
+                  ? [
+                      BoxShadow(
+                        color: accent.withValues(alpha: 0.32),
+                        blurRadius: 32,
+                        offset: const Offset(0, 12),
+                      ),
+                    ]
+                  : null,
             ),
             child: ConstrainedBox(
               constraints: BoxConstraints(
                 maxHeight: MediaQuery.sizeOf(context).height * 0.82,
               ),
-              child: SingleChildScrollView(
-                padding: const EdgeInsets.fromLTRB(24, 20, 24, 24),
-                child: Column(
-                  mainAxisSize: MainAxisSize.min,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(AppRadii.xl),
+                child: Stack(
                   children: [
-                    Container(
-                      width: 40,
-                      height: 4,
-                      decoration: BoxDecoration(
-                        color: Colors.white.withValues(alpha: 0.22),
-                        borderRadius: BorderRadius.circular(AppRadii.pill),
-                      ),
-                    ),
-                    const SizedBox(height: 20),
-                    Text(
-                      headline,
-                      style: AppTypography.label(
-                        size: 11,
-                        letterSpacing: 2,
-                        color: accent,
-                      ),
-                    ),
-                    const SizedBox(height: 18),
                     if (widget.celebration)
-                      const SizedBox(
-                        height: 0,
-                        child: OverflowBox(
-                          maxHeight: 200,
-                          child: ConfettiOverlay(active: true, cinematic: true),
-                        ),
+                      const Positioned.fill(
+                        child: ConfettiOverlay(active: true, cinematic: true),
                       ),
                     AnimatedBuilder(
                       animation: _pulse,
                       builder: (context, _) {
                         final breath =
                             (math.sin(_pulse.value * math.pi * 2) + 1) / 2;
-                        return MedalHeroEmblem(
-                          accent: accent,
-                          glyph: track.glyph,
-                          size: 64,
-                          breath: trackState.hasStarted ? breath : 0,
-                          glowing: trackState.hasStarted,
+                        return Positioned.fill(
+                          child: IgnorePointer(
+                            child: CustomPaint(
+                              painter: MedalSpotlightPainter(
+                                accent: accent,
+                                breath: breath,
+                                intensity: widget.celebration ||
+                                        trackState.hasStarted
+                                    ? 1
+                                    : 0.35,
+                              ),
+                            ),
+                          ),
                         );
                       },
                     ),
-                    const SizedBox(height: 14),
-                    Text(
-                      track.title,
-                      textAlign: TextAlign.center,
-                      style: AppTypography.display(
-                        size: 24,
-                        weight: FontWeight.w900,
-                        color: a.text,
-                      ),
-                    ),
-                    if (current != null) ...[
-                      const SizedBox(height: 8),
-                      Text(
-                        widget.celebration
-                            ? 'Agora em ${tierLabel(current.tier)}'
-                            : 'Nível atual: ${tierLabel(current.tier)}',
-                        style: AppTypography.title(
-                          size: 14,
-                          weight: FontWeight.w800,
-                          color: accent,
+                    SingleChildScrollView(
+                      padding: const EdgeInsets.fromLTRB(24, 20, 24, 24),
+                      child: FadeTransition(
+                        opacity: _entrance,
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Container(
+                              width: 40,
+                              height: 4,
+                              decoration: BoxDecoration(
+                                color: Colors.white.withValues(alpha: 0.22),
+                                borderRadius:
+                                    BorderRadius.circular(AppRadii.pill),
+                              ),
+                            ),
+                            const SizedBox(height: 20),
+                            Text(
+                              headline,
+                              style: AppTypography.label(
+                                size: 11,
+                                letterSpacing: 2,
+                                color: accent,
+                              ),
+                            ),
+                            const SizedBox(height: 18),
+                            AnimatedBuilder(
+                              animation: _pulse,
+                              builder: (context, _) {
+                                final breath =
+                                    (math.sin(_pulse.value * math.pi * 2) +
+                                            1) /
+                                        2;
+                                return MedalHeroEmblem(
+                                  accent: accent,
+                                  glyph: track.glyph,
+                                  size: 64,
+                                  breath: trackState.hasStarted ? breath : 0,
+                                  glowing: trackState.hasStarted,
+                                );
+                              },
+                            ),
+                            const SizedBox(height: 14),
+                            Text(
+                              track.title,
+                              textAlign: TextAlign.center,
+                              style: AppTypography.display(
+                                size: 24,
+                                weight: FontWeight.w900,
+                                color: a.text,
+                              ),
+                            ),
+                            const SizedBox(height: 6),
+                            Text(
+                              track.subtitle,
+                              textAlign: TextAlign.center,
+                              style: AppTypography.body(
+                                size: 13,
+                                color: a.textMuted(0.55),
+                              ),
+                            ),
+                            if (current != null) ...[
+                              const SizedBox(height: 8),
+                              Text(
+                                widget.celebration
+                                    ? 'Agora em ${tierLabel(current.tier)}'
+                                    : tierLabel(current.tier),
+                                style: AppTypography.title(
+                                  size: 14,
+                                  weight: FontWeight.w800,
+                                  color: accent,
+                                ),
+                              ),
+                            ],
+                            const SizedBox(height: 16),
+                            MedalTrackDots(
+                              trackState: trackState,
+                              accent: accent,
+                            ),
+                            const SizedBox(height: 18),
+                            for (var i = 0; i < track.levels.length; i++)
+                              _TrackLevelRow(
+                                level: track.levels[i],
+                                unlocked: i <= trackState.levelIndex,
+                                highlighted: widget.highlightLevelIndex == i,
+                                isNext: i == trackState.levelIndex + 1,
+                              ),
+                            const SizedBox(height: 20),
+                            CopperCta(
+                              label: widget.celebration
+                                  ? 'Continuar a jornada'
+                                  : 'Fechar',
+                              onTap: () => Navigator.pop(context),
+                              trailing: widget.celebration
+                                  ? CinematicGlyph.path
+                                  : null,
+                              dense: true,
+                            ),
+                          ],
                         ),
                       ),
-                    ],
-                    const SizedBox(height: 18),
-                    ...[
-                      for (var i = 0; i < track.levels.length; i++)
-                        _TrackLevelRow(
-                          level: track.levels[i],
-                          unlocked: i <= trackState.levelIndex,
-                          highlighted: widget.highlightLevelIndex == i,
-                          isNext: i == trackState.levelIndex + 1,
-                        ),
-                    ],
-                    const SizedBox(height: 20),
-                    CopperCta(
-                      label: widget.celebration ? 'Continuar a jornada' : 'Fechar',
-                      onTap: () => Navigator.pop(context),
-                      trailing: widget.celebration ? CinematicGlyph.path : null,
-                      dense: true,
                     ),
                   ],
                 ),
@@ -607,7 +675,9 @@ class _TrackLevelRow extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  '${tierLabel(level.tier)} · ${level.title}',
+                  level.isSpark
+                      ? level.title
+                      : '${tierLabel(level.tier)} · ${level.title}',
                   style: AppTypography.label(
                     size: 10,
                     letterSpacing: 0.3,

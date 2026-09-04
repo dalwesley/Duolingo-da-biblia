@@ -61,6 +61,13 @@ class _CaravanPilgrimSheetState extends State<_CaravanPilgrimSheet> {
   }
 
   Future<void> _load() async {
+    final retrying = _error != null || !_loading;
+    if (retrying && mounted) {
+      setState(() {
+        _loading = true;
+        _error = null;
+      });
+    }
     try {
       final backend = context.read<BackendService>();
       final enriched = await loadEnrichedVisitorProfile(
@@ -70,13 +77,22 @@ class _CaravanPilgrimSheetState extends State<_CaravanPilgrimSheet> {
       if (!mounted) return;
       setState(() {
         _profile = enriched;
+        _error = null;
         _loading = false;
       });
       if (widget.rank == 1) HapticFeedback.mediumImpact();
-    } catch (_) {
+    } catch (e, st) {
+      debugPrint('CaravanPilgrimSheet: $e\n$st');
       if (!mounted) return;
       setState(() {
-        _error = 'Não foi possível carregar o perfil.';
+        _profile = CaravanPilgrimProfile.fromRankingCard(
+          uid: widget.entry.uid,
+          name: widget.entry.name,
+          steps: widget.entry.steps,
+          lastWalkDate: widget.entry.lastWalkDate,
+          lastSeenDate: widget.entry.lastSeenDate,
+        );
+        _error = null;
         _loading = false;
       });
     }

@@ -102,6 +102,24 @@ Por isso:
 
 Não inventar senha para conta Google-only e colar no `.env` — não vai autenticar o `seed_content.mjs`. Use `make seed_full`.
 
+### Auditoria de rankings (Caravana)
+
+As regras do Firestore validam que o placar em qualquer coleção de ranking (`leagues/`, `overallPlayers/`, `monthlyLeagues/`, `rooms/*/members/`) seja exatamente o mesmo valor gravado em `users/{uid}`. Isso impede que um cliente infle o próprio placar diretamente.
+
+Antes do D7 e sempre que mexer em regras de pontuação:
+
+```bash
+# Da raiz do monorepo:
+make audit_rankings       # lista inconsistências (dry-run)
+make audit_rankings_fix   # corrige xp no ranking para espelhar users/{uid}
+make deploy_rules         # publica firestore.rules no projeto
+```
+
+Testes da lógica de espelhamento:
+```bash
+make test_rankings
+```
+
 ## Deploy do painel
 
 ```bash

@@ -81,8 +81,13 @@ class MedalEngagementService {
         catalog,
         ctx: ctx,
       );
-      if (rarePending.isNotEmpty && context.mounted) {
-        await _celebrateRares(context, progress, rarePending);
+      final silentRares = rarePending.where((m) => m.def.silent).toList();
+      for (final silent in silentRares) {
+        await progress.markMedalCelebrated(silent.def.id);
+      }
+      final loudRares = rarePending.where((m) => !m.def.silent).toList();
+      if (loudRares.isNotEmpty && context.mounted) {
+        await _celebrateRares(context, progress, loudRares);
       }
 
       if (!context.mounted) return;
@@ -138,20 +143,16 @@ class MedalEngagementService {
     ProgressService progress,
     List<PilgrimTrackTierUp> pending,
   ) async {
-    for (final tierUp in pending) {
+    for (final tierUp in medals.PilgrimMedals.collapsedNewTierUps(pending)) {
       if (!context.mounted) break;
       _showingSheet = true;
-      await showMedalTileSheet(
-        context,
-        PilgrimMedalTile.fromLevel(
-          track: tierUp.track,
-          level: tierUp.level,
-          unlocked: true,
-        ),
-        celebration: true,
-      );
+      await showTrackTierUpSheet(context, tierUp);
       _showingSheet = false;
-      await progress.markMedalCelebrated(tierUp.celebrationId);
+      for (final up in pending) {
+        if (up.track.id == tierUp.track.id) {
+          await progress.markMedalCelebrated(up.celebrationId);
+        }
+      }
     }
   }
 

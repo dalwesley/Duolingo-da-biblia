@@ -3,13 +3,15 @@ import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import '../data/question_bank.dart';
 import '../data/trail_repository.dart';
+import '../models/caravan_pilgrim_profile.dart';
+import '../models/difficulty.dart';
+import '../models/pilgrim_medals.dart';
 import '../models/trail.dart';
+import '../models/trail_catalog.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
-import '../models/trail_catalog.dart';
 import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
-import '../models/difficulty.dart';
 import '../utils/difficulty_trails.dart';
 import '../utils/difficulty_visuals.dart';
 import '../utils/genesis_theme.dart';
@@ -357,6 +359,16 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                               : null,
                         ),
                       ),
+                      if (_trailMedalChip(progress, trail) != null)
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(
+                            AppSpace.screen,
+                            0,
+                            AppSpace.screen,
+                            AppSpace.md,
+                          ),
+                          child: _trailMedalChip(progress, trail)!,
+                        ),
                       Padding(
                         padding: const EdgeInsets.fromLTRB(
                           AppSpace.screen,
@@ -427,6 +439,42 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
     const map = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X'];
     if (n >= 1 && n <= map.length) return map[n - 1];
     return '$n';
+  }
+
+  Widget? _trailMedalChip(ProgressService progress, Trail trail) {
+    final profile = CaravanPilgrimProfile.fromProgress(
+      progress: progress,
+      uid: '',
+    );
+    final proximity = PilgrimMedals.nearestLocked(
+      profile: profile,
+      catalog: [trail],
+      priorityTrailSlug: trail.slug,
+      ctx: PilgrimMedalEvalContext.fromProgress(progress),
+    );
+    if (proximity == null || proximity.track.trailSlug != trail.slug) {
+      return null;
+    }
+    final accent = tierColor(proximity.nextLevel.tier);
+    return Align(
+      alignment: Alignment.centerLeft,
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+        decoration: BoxDecoration(
+          color: accent.withValues(alpha: 0.12),
+          borderRadius: BorderRadius.circular(AppRadii.pill),
+          border: Border.all(color: accent.withValues(alpha: 0.35)),
+        ),
+        child: Text(
+          '+1 ${proximity.nextLevel.title}',
+          style: AppTypography.label(
+            size: 11,
+            letterSpacing: 0.2,
+            color: accent,
+          ),
+        ),
+      ),
+    );
   }
 }
 

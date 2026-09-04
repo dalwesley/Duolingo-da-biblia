@@ -51,6 +51,8 @@ class LiturgicalCalendar {
     return DateTime(year, month, day);
   }
 
+  static DateTime adventStart(int year) => _adventStart(year);
+
   static DateTime _adventStart(int year) {
     // Quarto domingo antes do Natal.
     var christmas = DateTime(year, 12, 25);

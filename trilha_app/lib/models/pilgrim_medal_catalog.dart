@@ -1,14 +1,16 @@
 import '../models/trail.dart';
+import '../utils/liturgical_calendar.dart';
 import '../widgets/cinematic_icon.dart';
 import 'pilgrim_medal_models.dart';
 
-/// Catálogo v3 — escadas por família (Ferro→Diamante) + raras Mirra.
+/// Catálogo v3.2 — faísca + conquistas; Palavra mede hábito, não título bíblico.
 class PilgrimMedalCatalog {
   PilgrimMedalCatalog._();
 
-  static const gospelAbbrevs = {'mt', 'mc', 'lc', 'jo'};
   static const journeyVaultId = 'journey';
   static const discoveryVaultId = 'discovery';
+  static const advent2026VaultId = 'season:advento-2026';
+  static const advent2026TrackId = 'track:season:advento-2026';
 
   static const trackWordId = 'track:word';
   static const trackFormationId = 'track:formation';
@@ -37,29 +39,75 @@ class PilgrimMedalCatalog {
     'witness_share_10': 'journey:witness:share_10',
     'memory_5': 'journey:memory:5',
     'memory_20': 'journey:memory:20',
-    'discovery:perfect_boss': 'journey:form:perfect_boss',
+    'discovery:perfect_boss': 'discovery:perfect_boss',
     'discovery:reflection': 'discovery:reflection_deep',
   };
 
-  /// v2 medal id → (trackId, highest level index achieved).
-  static const v2ToV3TrackLevel = <String, (String, int)>{
-    'journey:word:first_chapter': (trackWordId, 0),
-    'journey:word:chapters_25': (trackWordId, 1),
-    'journey:word:book': (trackWordId, 2),
-    'journey:word:gospel': (trackWordId, 3),
-    'journey:word:nt_book': (trackWordId, 5),
-    'journey:form:first_perfect': (trackFormationId, 0),
-    'journey:form:perfect_5': (trackFormationId, 1),
-    'journey:form:perfect_25': (trackFormationId, 2),
-    'journey:form:accuracy': (trackFormationId, 3),
-    'journey:form:perfect_boss': (trackFormationId, 4),
-    'journey:path:streak_7': (trackPathId, 1),
-    'journey:path:streak_30': (trackPathId, 3),
-    'journey:path:leader': (trackPathId, 5),
-    'journey:witness:share_1': (trackWitnessId, 0),
-    'journey:witness:share_10': (trackWitnessId, 1),
-    'journey:memory:5': (trackMemoryId, 0),
-    'journey:memory:20': (trackMemoryId, 2),
+  /// Ids semânticos atuais (e raras) a partir de ids v2.
+  static const v2ToSemantic = <String, String>{
+    'journey:word:first_chapter': 'track:word:chapters_1',
+    'journey:word:chapters_25': 'track:word:chapters_25',
+    'journey:word:book': 'track:word:chapters_25',
+    'journey:word:gospel': 'track:word:chapters_25',
+    'journey:word:nt_book': 'track:word:chapters_1',
+    'journey:form:first_perfect': 'track:formation:perfect_1',
+    'journey:form:perfect_5': 'track:formation:perfect_1',
+    'journey:form:perfect_25': 'track:formation:perfect_25',
+    'journey:form:accuracy': 'discovery:andando_na_luz',
+    'journey:form:perfect_boss': 'discovery:perfect_boss',
+    'journey:path:streak_7': 'track:path:streak_3',
+    'journey:path:streak_30': 'track:path:streak_30',
+    'journey:path:leader': 'discovery:leader',
+    'journey:witness:share_1': 'track:witness:share_1',
+    'journey:witness:share_10': 'track:witness:share_10',
+    'journey:memory:5': 'track:memory:verse_1',
+    'journey:memory:20': 'track:memory:verse_15',
+  };
+
+  /// Índices numéricos v3 (pré-v3.1) → id semântico. O significado antigo
+  /// (não o novo índice) é o que importa na migração.
+  static const legacyNumericToSemantic = <String, String>{
+    'track:word:0': 'track:word:chapters_1',
+    'track:word:1': 'track:word:chapters_25',
+    'track:word:2': 'track:word:chapters_25',
+    'track:word:3': 'track:word:chapters_25',
+    'track:word:4': 'track:word:chapters_1',
+    'track:word:5': 'track:word:chapters_1',
+    'track:formation:0': 'track:formation:perfect_1',
+    'track:formation:1': 'track:formation:perfect_1',
+    'track:formation:2': 'track:formation:perfect_25',
+    'track:formation:3': 'discovery:andando_na_luz',
+    'track:formation:4': 'discovery:perfect_boss',
+    'track:path:0': 'track:path:streak_3',
+    'track:path:1': 'track:path:streak_3',
+    'track:path:2': 'track:path:streak_3',
+    'track:path:3': 'track:path:streak_30',
+    'track:path:4': 'track:path:streak_90',
+    'track:path:5': 'discovery:leader',
+    'track:witness:0': 'track:witness:share_1',
+    'track:witness:1': 'track:witness:share_10',
+    'track:witness:2': 'track:witness:share_10',
+    'track:witness:3': 'track:witness:share_50',
+    'track:memory:0': 'track:memory:verse_1',
+    'track:memory:1': 'track:memory:verse_15',
+    'track:memory:2': 'track:memory:verse_15',
+    'track:memory:3': 'track:memory:verse_50',
+  };
+
+  /// Degraus aposentados (v3.1) → o que ainda existe.
+  static const retiredToCurrent = <String, String>{
+    'track:word:chapters_7': 'track:word:chapters_1',
+    'track:word:book': 'track:word:chapters_25',
+    'track:word:gospel': 'track:word:chapters_25',
+    'discovery:word_ot': 'track:word:chapters_1',
+    'discovery:word_nt': 'track:word:chapters_1',
+    'track:formation:perfect_5': 'track:formation:perfect_1',
+    'track:path:streak_7': 'track:path:streak_3',
+    'track:path:streak_14': 'track:path:streak_3',
+    'track:witness:share_3': 'track:witness:share_1',
+    'track:witness:share_25': 'track:witness:share_10',
+    'track:memory:verse_5': 'track:memory:verse_1',
+    'track:memory:verse_30': 'track:memory:verse_15',
   };
 
   static String migrateMedalId(String id) => v1ToV2Ids[id] ?? id;
@@ -67,48 +115,56 @@ class PilgrimMedalCatalog {
   static Iterable<String> migrateMedalIds(Iterable<String> ids) =>
       ids.map(migrateMedalId);
 
-  /// Expande ids celebrados (v1/v2/v3) para níveis v3 já vistos.
+  /// Expande ids celebrados (v1/v2/v3 numérico/v3.1) para o prefixo atual.
   static Set<String> expandCelebratedIds(Iterable<String> ids) {
     final result = <String>{};
     for (final raw in ids) {
       final migrated = migrateMedalId(raw);
-      if (migrated.startsWith('trail:') && migrated.contains(':first_step')) {
+      if (migrated.startsWith('trail:') &&
+          (migrated.contains(':first_step') ||
+              migrated.contains(':semente') ||
+              migrated.contains(':caminhada') ||
+              migrated.contains(':peregrino'))) {
         final slug = _trailSlugFromV2MedalId(migrated);
         if (slug != null) {
           final idx = _v2TrailMedalLevelIndex(migrated);
           if (idx != null) {
-            _addLevelsUpTo(result, trailTrackId(slug), idx);
+            _addTrailLevelsUpTo(result, slug, idx);
             continue;
           }
         }
       }
-      final mapping = v2ToV3TrackLevel[migrated];
-      if (mapping != null) {
-        _addLevelsUpTo(result, mapping.$1, mapping.$2);
-        continue;
-      }
-      if (_isV3LevelId(migrated)) {
-        final parts = migrated.split(':');
-        if (parts.length >= 3) {
-          final trackId = parts.sublist(0, parts.length - 1).join(':');
-          final idx = int.tryParse(parts.last);
-          if (idx != null) _addLevelsUpTo(result, trackId, idx);
-          continue;
-        }
-      }
-      result.add(migrated);
+      var semantic = v2ToSemantic[migrated] ??
+          legacyNumericToSemantic[migrated] ??
+          migrated;
+      semantic = retiredToCurrent[semantic] ?? semantic;
+      _addPrefixThrough(result, semantic);
     }
     return result;
   }
 
-  static void _addLevelsUpTo(Set<String> out, String trackId, int maxIndex) {
+  static void _addTrailLevelsUpTo(Set<String> out, String slug, int maxIndex) {
+    final trackId = trailTrackId(slug);
     for (var i = 0; i <= maxIndex; i++) {
       out.add(levelId(trackId, i));
     }
   }
 
-  static bool _isV3LevelId(String id) =>
-      id.startsWith('track:') && RegExp(r':\d+$').hasMatch(id);
+  static void _addPrefixThrough(Set<String> out, String levelOrRareId) {
+    for (final track in [
+      ...journeyTracks,
+      advent2026Track,
+    ]) {
+      final idx = track.levels.indexWhere((l) => l.id == levelOrRareId);
+      if (idx >= 0) {
+        for (var i = 0; i <= idx; i++) {
+          out.add(track.levels[i].id);
+        }
+        return;
+      }
+    }
+    out.add(levelOrRareId);
+  }
 
   static String? _trailSlugFromV2MedalId(String id) {
     final match = RegExp(r'^trail:([^:]+):').firstMatch(id);
@@ -133,46 +189,26 @@ class PilgrimMedalCatalog {
       kind: PilgrimVaultKind.journey,
       levels: [
         PilgrimMedalLevelDef(
-          id: 'track:word:0',
+          id: 'track:word:chapters_1',
           tier: PilgrimMedalTier.iron,
           title: 'Primeira Palavra',
           hint: 'Leia 1 capítulo na Bíblia',
           glyph: CinematicGlyph.spark,
+          rung: PilgrimMedalRung.spark,
         ),
         PilgrimMedalLevelDef(
-          id: 'track:word:1',
-          tier: PilgrimMedalTier.bronze,
+          id: 'track:word:chapters_25',
+          tier: PilgrimMedalTier.silver,
           title: 'Leitor atento',
           hint: 'Leia 25 capítulos',
-          glyph: CinematicGlyph.book,
-        ),
-        PilgrimMedalLevelDef(
-          id: 'track:word:2',
-          tier: PilgrimMedalTier.silver,
-          title: 'Livro completo',
-          hint: 'Conclua um livro inteiro da Bíblia',
           glyph: CinematicGlyph.scroll,
         ),
         PilgrimMedalLevelDef(
-          id: 'track:word:3',
+          id: 'track:word:chapters_100',
           tier: PilgrimMedalTier.gold,
-          title: 'Evangelho percorrido',
-          hint: 'Conclua um evangelho inteiro',
-          glyph: CinematicGlyph.dove,
-        ),
-        PilgrimMedalLevelDef(
-          id: 'track:word:4',
-          tier: PilgrimMedalTier.platinum,
-          title: 'Antigo Testamento',
-          hint: 'Conclua um livro do Antigo Testamento',
-          glyph: CinematicGlyph.scales,
-        ),
-        PilgrimMedalLevelDef(
-          id: 'track:word:5',
-          tier: PilgrimMedalTier.diamond,
-          title: 'Novo Testamento',
-          hint: 'Conclua um livro do Novo Testamento',
-          glyph: CinematicGlyph.gem,
+          title: 'Leitor constante',
+          hint: 'Leia 100 capítulos',
+          glyph: CinematicGlyph.book,
         ),
       ],
     ),
@@ -185,91 +221,51 @@ class PilgrimMedalCatalog {
       kind: PilgrimVaultKind.journey,
       levels: [
         PilgrimMedalLevelDef(
-          id: 'track:formation:0',
+          id: 'track:formation:perfect_1',
           tier: PilgrimMedalTier.bronze,
-          title: 'Passo firme',
+          title: 'Cena nítida',
           hint: 'Termine uma cena com 100% de acertos',
           glyph: CinematicGlyph.check,
+          rung: PilgrimMedalRung.spark,
         ),
         PilgrimMedalLevelDef(
-          id: 'track:formation:1',
-          tier: PilgrimMedalTier.silver,
-          title: 'Passos firmes',
-          hint: '5 cenas com 100% de acertos',
-          glyph: CinematicGlyph.lamp,
-        ),
-        PilgrimMedalLevelDef(
-          id: 'track:formation:2',
+          id: 'track:formation:perfect_25',
           tier: PilgrimMedalTier.gold,
           title: 'Clareza total',
           hint: '25 cenas com 100% de acertos',
           glyph: CinematicGlyph.target,
-        ),
-        PilgrimMedalLevelDef(
-          id: 'track:formation:3',
-          tier: PilgrimMedalTier.platinum,
-          title: 'Andando na luz',
-          hint: 'Mantenha 85%+ de acertos (mín. 50 questões)',
-          glyph: CinematicGlyph.shield,
-        ),
-        PilgrimMedalLevelDef(
-          id: 'track:formation:4',
-          tier: PilgrimMedalTier.diamond,
-          title: 'Prova impecável',
-          hint: 'Vença um desafio final com 100% de acertos',
-          glyph: CinematicGlyph.crown,
         ),
       ],
     ),
     PilgrimMedalTrackDef(
       id: trackPathId,
       title: 'Caminho',
-      subtitle: 'Constância e liderança na caravana',
+      subtitle: 'Constância na jornada',
       glyph: CinematicGlyph.flame,
       family: PilgrimMedalFamily.path,
       kind: PilgrimVaultKind.journey,
       levels: [
         PilgrimMedalLevelDef(
-          id: 'track:path:0',
+          id: 'track:path:streak_3',
           tier: PilgrimMedalTier.iron,
           title: 'Três dias firmes',
           hint: 'Mantenha 3 dias de sequência',
           glyph: CinematicGlyph.spark,
+          rung: PilgrimMedalRung.spark,
         ),
         PilgrimMedalLevelDef(
-          id: 'track:path:1',
-          tier: PilgrimMedalTier.bronze,
-          title: 'Semana firme',
-          hint: 'Mantenha 7 dias de sequência',
-          glyph: CinematicGlyph.flame,
-        ),
-        PilgrimMedalLevelDef(
-          id: 'track:path:2',
-          tier: PilgrimMedalTier.silver,
-          title: 'Duas semanas',
-          hint: 'Mantenha 14 dias de sequência',
-          glyph: CinematicGlyph.calendar,
-        ),
-        PilgrimMedalLevelDef(
-          id: 'track:path:3',
+          id: 'track:path:streak_30',
           tier: PilgrimMedalTier.gold,
           title: 'Mês constante',
           hint: 'Mantenha 30 dias de sequência',
           glyph: CinematicGlyph.rise,
         ),
         PilgrimMedalLevelDef(
-          id: 'track:path:4',
+          id: 'track:path:streak_90',
           tier: PilgrimMedalTier.platinum,
           title: 'Temporada fiel',
           hint: 'Mantenha 90 dias de sequência',
           glyph: CinematicGlyph.mountain,
-        ),
-        PilgrimMedalLevelDef(
-          id: 'track:path:5',
-          tier: PilgrimMedalTier.diamond,
-          title: 'Líder da caravana',
-          hint: 'Fique em 1º no ranking geral por um dia',
-          glyph: CinematicGlyph.podium,
         ),
       ],
     ),
@@ -282,32 +278,26 @@ class PilgrimMedalCatalog {
       kind: PilgrimVaultKind.journey,
       levels: [
         PilgrimMedalLevelDef(
-          id: 'track:witness:0',
+          id: 'track:witness:share_1',
           tier: PilgrimMedalTier.bronze,
           title: 'Palavra levada',
           hint: 'Compartilhe 1 versículo',
           glyph: CinematicGlyph.share,
+          rung: PilgrimMedalRung.spark,
         ),
         PilgrimMedalLevelDef(
-          id: 'track:witness:1',
-          tier: PilgrimMedalTier.silver,
+          id: 'track:witness:share_10',
+          tier: PilgrimMedalTier.gold,
           title: 'Semeador',
           hint: 'Compartilhe 10 versículos',
-          glyph: CinematicGlyph.echo,
-        ),
-        PilgrimMedalLevelDef(
-          id: 'track:witness:2',
-          tier: PilgrimMedalTier.gold,
-          title: 'Portador',
-          hint: 'Compartilhe 25 versículos',
           glyph: CinematicGlyph.qr,
         ),
         PilgrimMedalLevelDef(
-          id: 'track:witness:3',
-          tier: PilgrimMedalTier.platinum,
+          id: 'track:witness:share_50',
+          tier: PilgrimMedalTier.diamond,
           title: 'Voz na caravana',
           hint: 'Compartilhe 50 versículos',
-          glyph: CinematicGlyph.people,
+          glyph: CinematicGlyph.star,
         ),
       ],
     ),
@@ -320,28 +310,22 @@ class PilgrimMedalCatalog {
       kind: PilgrimVaultKind.journey,
       levels: [
         PilgrimMedalLevelDef(
-          id: 'track:memory:0',
-          tier: PilgrimMedalTier.bronze,
-          title: 'No coração',
-          hint: 'Firme 5 versículos na memorização',
-          glyph: CinematicGlyph.heart,
+          id: 'track:memory:verse_1',
+          tier: PilgrimMedalTier.iron,
+          title: 'Primeiro verso',
+          hint: 'Firme 1 versículo na memorização',
+          glyph: CinematicGlyph.spark,
+          rung: PilgrimMedalRung.spark,
         ),
         PilgrimMedalLevelDef(
-          id: 'track:memory:1',
+          id: 'track:memory:verse_15',
           tier: PilgrimMedalTier.silver,
           title: 'Palavra guardada',
           hint: 'Firme 15 versículos na memorização',
           glyph: CinematicGlyph.scroll,
         ),
         PilgrimMedalLevelDef(
-          id: 'track:memory:2',
-          tier: PilgrimMedalTier.gold,
-          title: 'Tesouro oculto',
-          hint: 'Firme 30 versículos na memorização',
-          glyph: CinematicGlyph.gem,
-        ),
-        PilgrimMedalLevelDef(
-          id: 'track:memory:3',
+          id: 'track:memory:verse_50',
           tier: PilgrimMedalTier.platinum,
           title: 'Escritura viva',
           hint: 'Firme 50 versículos na memorização',
@@ -351,6 +335,46 @@ class PilgrimMedalCatalog {
     ),
   ];
 
+  static final advent2026Track = PilgrimMedalTrackDef(
+    id: advent2026TrackId,
+    title: 'Advento',
+    subtitle: 'Espera e preparação — 2026',
+    glyph: CinematicGlyph.star,
+    family: PilgrimMedalFamily.season,
+    kind: PilgrimVaultKind.season,
+    levels: const [
+      PilgrimMedalLevelDef(
+        id: 'track:season:advento-2026:0',
+        tier: PilgrimMedalTier.bronze,
+        title: 'Porta aberta',
+        hint: 'Caminhe 1 dia no Advento',
+        glyph: CinematicGlyph.spark,
+        rung: PilgrimMedalRung.spark,
+      ),
+      PilgrimMedalLevelDef(
+        id: 'track:season:advento-2026:1',
+        tier: PilgrimMedalTier.silver,
+        title: 'Primeira semana',
+        hint: 'Caminhe 7 dias no Advento',
+        glyph: CinematicGlyph.calendar,
+      ),
+      PilgrimMedalLevelDef(
+        id: 'track:season:advento-2026:2',
+        tier: PilgrimMedalTier.gold,
+        title: 'Meio do caminho',
+        hint: 'Caminhe metade dos dias do Advento',
+        glyph: CinematicGlyph.path,
+      ),
+      PilgrimMedalLevelDef(
+        id: 'track:season:advento-2026:3',
+        tier: PilgrimMedalTier.diamond,
+        title: 'Temporada vivida',
+        hint: 'Caminhe 22 dias no Advento',
+        glyph: CinematicGlyph.crown,
+      ),
+    ],
+  );
+
   static const rareMedals = <PilgrimMedalDef>[
     PilgrimMedalDef(
       id: 'discovery:founder',
@@ -359,13 +383,46 @@ class PilgrimMedalCatalog {
       hint: 'Entrou no app durante o período de testes',
       glyph: CinematicGlyph.star,
       family: PilgrimMedalFamily.discovery,
+      silent: true,
     ),
     PilgrimMedalDef(
       id: 'discovery:comeback',
       vaultId: discoveryVaultId,
       title: 'Volta firme',
-      hint: 'Retornou à trilha após 21 dias ou mais afastado',
+      hint: 'A porta estava aberta — voltou após 21 dias ou mais',
       glyph: CinematicGlyph.path,
+      family: PilgrimMedalFamily.discovery,
+    ),
+    PilgrimMedalDef(
+      id: 'discovery:bible_before',
+      vaultId: discoveryVaultId,
+      title: 'Palavra antes',
+      hint: 'Leu um capítulo no mesmo dia, antes da missão',
+      glyph: CinematicGlyph.book,
+      family: PilgrimMedalFamily.discovery,
+    ),
+    PilgrimMedalDef(
+      id: 'discovery:andando_na_luz',
+      vaultId: discoveryVaultId,
+      title: 'Andando na luz',
+      hint: 'Manteve 85%+ de acertos (mín. 50 questões)',
+      glyph: CinematicGlyph.shield,
+      family: PilgrimMedalFamily.discovery,
+    ),
+    PilgrimMedalDef(
+      id: 'discovery:perfect_boss',
+      vaultId: discoveryVaultId,
+      title: 'Prova impecável',
+      hint: 'Venceu um desafio final com 100% de acertos',
+      glyph: CinematicGlyph.crown,
+      family: PilgrimMedalFamily.discovery,
+    ),
+    PilgrimMedalDef(
+      id: 'discovery:leader',
+      vaultId: discoveryVaultId,
+      title: 'Líder da caravana',
+      hint: 'Ficou em 1º no ranking geral por um dia',
+      glyph: CinematicGlyph.podium,
       family: PilgrimMedalFamily.discovery,
     ),
     PilgrimMedalDef(
@@ -392,25 +449,61 @@ class PilgrimMedalCatalog {
       glyph: CinematicGlyph.scroll,
       family: PilgrimMedalFamily.discovery,
     ),
+    PilgrimMedalDef(
+      id: 'discovery:advent_week',
+      vaultId: advent2026VaultId,
+      title: 'Semana de espera',
+      hint: 'Sete dias seguidos durante o Advento',
+      glyph: CinematicGlyph.flame,
+      family: PilgrimMedalFamily.season,
+    ),
   ];
 
   static PilgrimVaultDef journeyVault() => const PilgrimVaultDef(
         id: journeyVaultId,
         kind: PilgrimVaultKind.journey,
         title: 'Cofre da Jornada',
-        subtitle: 'Cinco emblemas que evoluem com você',
+        subtitle: 'Faísca acende; conquista fica',
         order: 0,
         tracks: journeyTracks,
       );
 
-  static PilgrimVaultDef discoveryVault() => const PilgrimVaultDef(
+  static PilgrimVaultDef discoveryVault() => PilgrimVaultDef(
         id: discoveryVaultId,
         kind: PilgrimVaultKind.discovery,
         title: 'Raras',
         subtitle: 'Conquistas excepcionais — só aparecem quando ganhas',
         order: 9000,
-        rareMedals: rareMedals,
+        rareMedals:
+            rareMedals.where((m) => m.vaultId == discoveryVaultId).toList(),
       );
+
+  static PilgrimVaultDef advent2026Vault() {
+    final start = LiturgicalCalendar.adventStart(2026);
+    final end = DateTime(2026, 12, 24);
+    return PilgrimVaultDef(
+      id: advent2026VaultId,
+      kind: PilgrimVaultKind.season,
+      title: 'Advento 2026',
+      subtitle: 'Espera e preparação',
+      order: 50,
+      tracks: [advent2026Track],
+      rareMedals: rareMedals
+          .where((m) => m.id == 'discovery:advent_week')
+          .toList(),
+      activeFrom: start,
+      activeUntil: end,
+      graceDays: 7,
+    );
+  }
+
+  static int advent2026DayCount() {
+    final start = LiturgicalCalendar.adventStart(2026);
+    final end = DateTime(2026, 12, 24);
+    return end.difference(start).inDays + 1;
+  }
+
+  static int advent2026HalfDays() => (advent2026DayCount() / 2).ceil();
 
   static String trailVaultId(String slug) => 'trail:$slug';
 
@@ -431,6 +524,7 @@ class PilgrimMedalCatalog {
           title: 'Primeiro passo',
           hint: 'Conclua 1 missão nesta trilha',
           glyph: CinematicGlyph.seed,
+          rung: PilgrimMedalRung.spark,
         ),
         PilgrimMedalLevelDef(
           id: levelId(trackId, 1),

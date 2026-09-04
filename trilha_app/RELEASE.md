@@ -6,7 +6,8 @@
 - [x] `android/key.properties` preenchido (gitignored; ver `key.properties.example`)
 - [ ] Firebase Crashlytics + Analytics ativos no Console
 - [x] SHA-1/SHA-256 no Firebase (Google Sign-In) — **upload key + App signing key real da Play** (ver abaixo)
-- [ ] `firestore.rules` publicados (`firebase deploy --only firestore:rules`)
+- [ ] `firestore.rules` publicados (`make deploy_rules`)
+- [ ] Auditoria de ranking ok (`make audit_rankings`)
 - [ ] Conteúdo seeded (`cd admin && npm run seed`)
 - [ ] iOS: `GoogleService-Info.plist` + `flutterfire configure` (ainda pendente)
 

@@ -241,19 +241,111 @@ class _MedalRingPainter extends CustomPainter {
 /// Medallion compacto para o grid do cofre — moeda metálica por material.
 class MedalVaultMedallion extends StatelessWidget {
   final PilgrimMedalTile tile;
-  final VoidCallback onTap;
+  final VoidCallback? onTap;
+  final double? size;
+  final bool mystery;
 
   const MedalVaultMedallion({
     super.key,
     required this.tile,
-    required this.onTap,
+    this.onTap,
+    this.size,
+    this.mystery = false,
   });
 
   @override
   Widget build(BuildContext context) {
     final unlocked = tile.unlocked;
     final palette = _MedalTierPalette.forTier(tile.tier, unlocked: unlocked);
-    final iconSize = unlocked ? 26.0 : 22.0;
+    final diameter = size ?? 44;
+    final iconSize = diameter * (unlocked ? 0.42 : 0.36);
+    final lockSize = (diameter * 0.28).clamp(12.0, 16.0);
+
+    final coin = SizedBox(
+      width: diameter,
+      height: diameter,
+      child: Stack(
+        alignment: Alignment.center,
+        clipBehavior: Clip.none,
+        children: [
+        if (unlocked)
+          Positioned.fill(
+            child: DecoratedBox(
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                boxShadow: [
+                  BoxShadow(
+                    color: palette.glow.withValues(alpha: 0.42),
+                    blurRadius: 10,
+                    spreadRadius: 0.5,
+                  ),
+                  BoxShadow(
+                    color: Colors.black.withValues(alpha: 0.45),
+                    blurRadius: 4,
+                    offset: const Offset(0, 2),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        CustomPaint(
+          size: Size.square(diameter),
+          painter: _MedallionCoinPainter(palette: palette),
+          child: Center(
+            child: Padding(
+              padding: EdgeInsets.all(diameter * 0.12),
+              child: Opacity(
+                opacity: unlocked || mystery ? 1 : 0.55,
+                child: CinematicIcon(
+                  glyph: mystery ? CinematicGlyph.search : tile.glyph,
+                  size: iconSize,
+                  accent: unlocked
+                      ? palette.glyph
+                      : Colors.white.withValues(alpha: mystery ? 0.55 : 0.72),
+                  framed: false,
+                  glowing: unlocked,
+                ),
+              ),
+            ),
+          ),
+        ),
+        if (!unlocked && !mystery)
+          Positioned(
+            right: 0,
+            bottom: 0,
+            child: Container(
+              width: lockSize,
+              height: lockSize,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                gradient: const LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [
+                    Color(0xFF4A5260),
+                    Color(0xFF1A1E26),
+                  ],
+                ),
+                border: Border.all(
+                  color: Colors.white.withValues(alpha: 0.28),
+                  width: 0.8,
+                ),
+              ),
+              child: Center(
+                child: CinematicIcon(
+                  glyph: CinematicGlyph.lock,
+                  size: lockSize * 0.55,
+                  accent: Colors.white.withValues(alpha: 0.82),
+                  framed: false,
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+
+    if (onTap == null) return coin;
 
     return Material(
       color: Colors.transparent,
@@ -262,94 +354,7 @@ class MedalVaultMedallion extends StatelessWidget {
         customBorder: const CircleBorder(),
         splashColor: palette.glow.withValues(alpha: 0.2),
         highlightColor: palette.glow.withValues(alpha: 0.08),
-        child: AspectRatio(
-          aspectRatio: 1,
-          child: Stack(
-            alignment: Alignment.center,
-            clipBehavior: Clip.none,
-            children: [
-              if (unlocked)
-                Positioned.fill(
-                  child: DecoratedBox(
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      boxShadow: [
-                        BoxShadow(
-                          color: palette.glow.withValues(alpha: 0.42),
-                          blurRadius: 10,
-                          spreadRadius: 0.5,
-                        ),
-                        BoxShadow(
-                          color: Colors.black.withValues(alpha: 0.45),
-                          blurRadius: 4,
-                          offset: const Offset(0, 2),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              CustomPaint(
-                painter: _MedallionCoinPainter(palette: palette),
-                child: Center(
-                  child: Padding(
-                    padding: const EdgeInsets.all(7),
-                    child: Opacity(
-                      opacity: unlocked ? 1 : 0.22,
-                      child: CinematicIcon(
-                        glyph: tile.glyph,
-                        size: iconSize,
-                        accent: unlocked
-                            ? palette.glyph
-                            : Colors.white.withValues(alpha: 0.35),
-                        framed: false,
-                        glowing: unlocked,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-              if (!unlocked)
-                Positioned(
-                  right: 1,
-                  bottom: 1,
-                  child: Container(
-                    width: 14,
-                    height: 14,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      gradient: LinearGradient(
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
-                        colors: [
-                          const Color(0xFF3A4250),
-                          const Color(0xFF1A1E26),
-                        ],
-                      ),
-                      border: Border.all(
-                        color: Colors.white.withValues(alpha: 0.22),
-                        width: 0.8,
-                      ),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.black.withValues(alpha: 0.5),
-                          blurRadius: 3,
-                          offset: const Offset(0, 1),
-                        ),
-                      ],
-                    ),
-                    child: Center(
-                      child: CinematicIcon(
-                        glyph: CinematicGlyph.lock,
-                        size: 8,
-                        accent: Colors.white.withValues(alpha: 0.72),
-                        framed: false,
-                      ),
-                    ),
-                  ),
-                ),
-            ],
-          ),
-        ),
+        child: coin,
       ),
     );
   }
@@ -580,17 +585,19 @@ class _MedallionCoinPainter extends CustomPainter {
       old.palette.rimMid != palette.rimMid;
 }
 
-/// Emblema evolutivo — uma família ou trilha com material atual.
+/// Emblema evolutivo — uma família, uma moeda, a escada em pontos.
 class MedalTrackEmblem extends StatelessWidget {
   final PilgrimTrackState trackState;
   final VoidCallback onTap;
   final bool compact;
+  final bool featured;
 
   const MedalTrackEmblem({
     super.key,
     required this.trackState,
     required this.onTap,
     this.compact = false,
+    this.featured = false,
   });
 
   @override
@@ -600,71 +607,104 @@ class MedalTrackEmblem extends StatelessWidget {
     final current = trackState.currentLevel;
     final accent = started && current != null
         ? tierColor(current.tier)
-        : a.textMuted(0.28);
-    final labelSize = compact ? 9.0 : 10.0;
+        : a.textMuted(0.38);
+    final tile = PilgrimMedalTile.fromTrack(trackState);
+    final diameter = compact ? 36.0 : 40.0;
 
     return Material(
       color: Colors.transparent,
       child: InkWell(
         onTap: onTap,
         borderRadius: BorderRadius.circular(AppRadii.md),
-        child: Ink(
-          padding: EdgeInsets.symmetric(
-            vertical: compact ? 8 : 10,
-            horizontal: compact ? 4 : 6,
-          ),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(AppRadii.md),
-            gradient: started
-                ? RadialGradient(
-                    center: const Alignment(0, -0.4),
-                    radius: 1.2,
-                    colors: [
-                      accent.withValues(alpha: 0.22),
-                      Colors.white.withValues(alpha: 0.03),
-                    ],
-                  )
-                : null,
-            border: Border.all(
-              color: started
-                  ? accent.withValues(alpha: 0.55)
-                  : Colors.white.withValues(alpha: 0.1),
-            ),
-          ),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 2),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              CinematicIcon(
-                glyph: trackState.track.glyph,
-                size: compact ? 22 : 26,
-                accent: accent,
-                framed: started,
-              ),
-              SizedBox(height: compact ? 4 : 6),
+              MedalVaultMedallion(tile: tile, size: diameter),
+              const SizedBox(height: 6),
               Text(
                 trackState.track.title,
                 textAlign: TextAlign.center,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: AppTypography.label(
-                  size: labelSize,
+                  size: compact ? 8 : 9,
                   letterSpacing: 0.2,
-                  color: started ? a.textMuted(0.78) : a.textMuted(0.42),
+                  color: featured
+                      ? accent
+                      : (started ? a.textMuted(0.72) : a.textMuted(0.4)),
                 ),
               ),
-              if (started && current != null) ...[
-                const SizedBox(height: 2),
-                Text(
-                  tierLabel(current.tier).toUpperCase(),
-                  style: AppTypography.label(
-                    size: compact ? 7 : 8,
-                    letterSpacing: 0.8,
-                    color: accent,
-                  ),
-                ),
-              ],
+              const SizedBox(height: 5),
+              MedalTrackDots(
+                trackState: trackState,
+                accent: accent,
+              ),
             ],
           ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Pontos da escada — o próximo degrau é um anel, sem números.
+class MedalTrackDots extends StatelessWidget {
+  final PilgrimTrackState trackState;
+  final Color accent;
+
+  const MedalTrackDots({
+    super.key,
+    required this.trackState,
+    required this.accent,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final count = trackState.track.levels.length;
+    if (count <= 0) return const SizedBox.shrink();
+
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        for (var i = 0; i < count; i++) ...[
+          if (i > 0) const SizedBox(width: 3),
+          _TrackDot(
+            filled: i <= trackState.levelIndex,
+            next: i == trackState.levelIndex + 1,
+            accent: accent,
+          ),
+        ],
+      ],
+    );
+  }
+}
+
+class _TrackDot extends StatelessWidget {
+  final bool filled;
+  final bool next;
+  final Color accent;
+
+  const _TrackDot({
+    required this.filled,
+    required this.next,
+    required this.accent,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: next ? 6 : 4,
+      height: next ? 6 : 4,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: filled ? accent : Colors.transparent,
+        border: Border.all(
+          color: filled || next
+              ? accent.withValues(alpha: next ? 0.85 : 1)
+              : Colors.white.withValues(alpha: 0.18),
+          width: next ? 1.2 : 0.8,
         ),
       ),
     );

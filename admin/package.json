@@ -19,7 +19,10 @@
     "author:handcraft": "node scripts/author_handcraft_trails.mjs",
     "repair:v2meta": "node scripts/repair_v2_metadata.mjs",
     "adapt:verbs": "node scripts/adapt_difficulty_verbs.mjs",
-    "pipeline:v2": "node scripts/run_v2_pipeline.mjs"
+    "pipeline:v2": "node scripts/run_v2_pipeline.mjs",
+    "audit:rankings": "node scripts/audit_rankings.mjs",
+    "audit:rankings:fix": "node scripts/audit_rankings.mjs --fix",
+    "test:rankings": "node --test scripts/_ranking_mirror.test.mjs"
   },
   "dependencies": {
     "firebase": "^11.10.0"

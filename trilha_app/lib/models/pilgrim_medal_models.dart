@@ -25,6 +25,9 @@ enum PilgrimMedalTier {
   mirra,
 }
 
+/// Faísca acende o emblema; conquista é moeda que não some.
+enum PilgrimMedalRung { spark, trophy }
+
 /// Um degrau na escada de uma família/trilha.
 class PilgrimMedalLevelDef {
   final String id;
@@ -32,6 +35,7 @@ class PilgrimMedalLevelDef {
   final String title;
   final String hint;
   final CinematicGlyph glyph;
+  final PilgrimMedalRung rung;
 
   const PilgrimMedalLevelDef({
     required this.id,
@@ -39,7 +43,12 @@ class PilgrimMedalLevelDef {
     required this.title,
     required this.hint,
     required this.glyph,
+    this.rung = PilgrimMedalRung.trophy,
   });
+
+  bool get isSpark => rung == PilgrimMedalRung.spark;
+
+  bool get isTrophy => rung == PilgrimMedalRung.trophy;
 }
 
 /// Emblema evolutivo — uma família (jornada) ou uma trilha.
@@ -77,6 +86,7 @@ class PilgrimMedalDef {
   final PilgrimMedalFamily family;
   final PilgrimMedalTier tier;
   final bool secret;
+  final bool silent;
   final String? trailSlug;
 
   const PilgrimMedalDef({
@@ -88,6 +98,7 @@ class PilgrimMedalDef {
     required this.family,
     this.tier = PilgrimMedalTier.mirra,
     this.secret = true,
+    this.silent = false,
     this.trailSlug,
   });
 }
@@ -100,6 +111,9 @@ class PilgrimVaultDef {
   final int order;
   final List<PilgrimMedalTrackDef> tracks;
   final List<PilgrimMedalDef> rareMedals;
+  final DateTime? activeFrom;
+  final DateTime? activeUntil;
+  final int graceDays;
 
   const PilgrimVaultDef({
     required this.id,
@@ -109,10 +123,26 @@ class PilgrimVaultDef {
     this.order = 0,
     this.tracks = const [],
     this.rareMedals = const [],
+    this.activeFrom,
+    this.activeUntil,
+    this.graceDays = 0,
   });
 
   int get totalLevels =>
       tracks.fold<int>(0, (sum, t) => sum + t.levelCount) + rareMedals.length;
+
+  bool isCampaignVisible(DateTime now, {required bool hasUnlock}) {
+    if (kind != PilgrimVaultKind.season) return true;
+    if (hasUnlock) return true;
+    final from = activeFrom;
+    final until = activeUntil;
+    if (from == null || until == null) return false;
+    final start = DateTime(from.year, from.month, from.day);
+    final end = DateTime(until.year, until.month, until.day)
+        .add(Duration(days: graceDays));
+    final day = DateTime(now.year, now.month, now.day);
+    return !day.isBefore(start) && !day.isAfter(end);
+  }
 }
 
 class PilgrimTrackState {
@@ -188,6 +218,22 @@ class PilgrimMedalTile {
         groupLabel: track.title,
       );
 
+  factory PilgrimMedalTile.fromTrack(PilgrimTrackState state) {
+    final track = state.track;
+    final level = state.currentLevel ?? track.levels.first;
+    return PilgrimMedalTile(
+      id: track.id,
+      title: track.title,
+      hint: state.hasStarted
+          ? '${tierLabel(level.tier)} · ${level.title}'
+          : track.subtitle,
+      glyph: track.glyph,
+      tier: state.hasStarted ? level.tier : track.levels.first.tier,
+      unlocked: state.hasStarted,
+      groupLabel: track.title,
+    );
+  }
+
   factory PilgrimMedalTile.fromRare(PilgrimMedalStatus status) =>
       PilgrimMedalTile(
         id: status.def.id,
@@ -241,13 +287,21 @@ class PilgrimMedalEvalContext {
   final int reflectionCount;
   final String? firstOpenDate;
   final int? lastMissionCompletedAtMs;
+  final String? lastBibleReadDate;
+  final bool bibleBeforeMission;
+  final DateTime? now;
 
   const PilgrimMedalEvalContext({
     this.playDates = const [],
     this.reflectionCount = 0,
     this.firstOpenDate,
     this.lastMissionCompletedAtMs,
+    this.lastBibleReadDate,
+    this.bibleBeforeMission = false,
+    this.now,
   });
+
+  DateTime get clock => now ?? DateTime.now();
 
   factory PilgrimMedalEvalContext.fromProfile(CaravanPilgrimProfile profile) {
     return PilgrimMedalEvalContext(
@@ -262,6 +316,8 @@ class PilgrimMedalEvalContext {
       playDates: List<String>.from(progress.playDates),
       reflectionCount: progress.missionReflections.length,
       firstOpenDate: progress.firstOpenDate,
+      lastBibleReadDate: progress.lastBibleReadDate,
+      bibleBeforeMission: progress.bibleBeforeMission,
     );
   }
 }
@@ -290,14 +346,36 @@ class PilgrimTrackProximity {
     if (remaining == 1) {
       return 'Falta 1 $unitLabel para $material em ${track.title}';
     }
+    if (current > 0 && current <= remaining) {
+      return '$current $unitLabel rumo a $material em ${track.title}';
+    }
     return 'Faltam $remaining $unitLabel para $material em ${track.title}';
   }
 
   String get shortMessage {
     final material = tierLabel(nextLevel.tier);
     if (remaining == 1) return 'Falta 1 para $material';
+    if (current > 0 && current <= remaining) {
+      return '$current/$target rumo a $material';
+    }
     return 'Faltam $remaining para $material';
   }
+
+  String get monitorMessage {
+    final material = tierLabel(nextLevel.tier);
+    return '${track.title} $current/$target · $material';
+  }
+
+  MedalCtaKind get ctaKind => switch (track.family) {
+        PilgrimMedalFamily.word => MedalCtaKind.bible,
+        PilgrimMedalFamily.memory => MedalCtaKind.memory,
+        PilgrimMedalFamily.formation when track.kind == PilgrimVaultKind.trail =>
+          MedalCtaKind.trail,
+        PilgrimMedalFamily.formation => MedalCtaKind.mission,
+        PilgrimMedalFamily.witness => MedalCtaKind.share,
+        PilgrimMedalFamily.season => MedalCtaKind.mission,
+        _ => MedalCtaKind.none,
+      };
 }
 
 /// Compat: proximidade legada para raras (não usada).
@@ -329,6 +407,8 @@ class PilgrimMedalProximity {
     return 'Faltam $remaining para «${def.title}»';
   }
 }
+
+enum MedalCtaKind { none, bible, memory, trail, share, mission }
 
 String tierLabel(PilgrimMedalTier tier) => switch (tier) {
       PilgrimMedalTier.iron => 'Ferro',

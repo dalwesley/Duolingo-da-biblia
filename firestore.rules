@@ -26,6 +26,70 @@ service cloud.firestore {
       return field is int && field >= 0 && field < 100000000;
     }
 
+    function userPath() {
+      return /databases/$(database)/documents/users/$(request.auth.uid);
+    }
+
+    function userExists() {
+      return exists(userPath());
+    }
+
+    function userData() {
+      return get(userPath()).data;
+    }
+
+    function userTotalSteps() {
+      return userExists()
+        ? (('steps' in userData() && userData().steps is int)
+            ? userData().steps
+            : (('xp' in userData() && userData().xp is int) ? userData().xp : 0))
+        : 0;
+    }
+
+    function userWeeklySteps() {
+      return userExists()
+        ? (('weeklySteps' in userData() && userData().weeklySteps is int)
+            ? userData().weeklySteps
+            : (('weeklyXp' in userData() && userData().weeklyXp is int)
+                ? userData().weeklyXp
+                : 0))
+        : 0;
+    }
+
+    function userMonthlySteps() {
+      return userExists()
+        ? (('monthlySteps' in userData() && userData().monthlySteps is int)
+            ? userData().monthlySteps
+            : 0)
+        : 0;
+    }
+
+    // Ranking só pode carregar o xp/steps já gravado em users/{uid}.
+    // Fecha o atalho de inflar o placar direto na coleção da Caravana.
+    function rankingScoreMatches(expected) {
+      return isSignedIn()
+        && request.auth.uid == uid
+        && nonNegInt(expected)
+        && (!('xp' in request.resource.data)
+            || request.resource.data.xp == expected)
+        && (!('steps' in request.resource.data)
+            || request.resource.data.steps == expected)
+        && (('xp' in request.resource.data)
+            || ('steps' in request.resource.data));
+    }
+
+    function ownRankingDelete() {
+      return isSignedIn() && request.auth.uid == uid;
+    }
+
+    function isYmd(value) {
+      return value is string && value.matches('^[0-9]{4}-[0-9]{2}-[0-9]{2}$');
+    }
+
+    function isYearMonth(value) {
+      return value is string && value.matches('^[0-9]{4}-[0-9]{2}$');
+    }
+
     // Progresso: qualquer autenticado lê (ranking geral precisa de nome/passos
     // dos outros). Escrita só do dono.
     match /users/{uid} {
@@ -34,44 +98,56 @@ service cloud.firestore {
         && request.auth.uid == uid
         && (!('steps' in request.resource.data) || nonNegInt(request.resource.data.steps))
         && (!('xp' in request.resource.data) || nonNegInt(request.resource.data.xp))
-        && (!('streak' in request.resource.data) || nonNegInt(request.resource.data.streak));
+        && (!('weeklySteps' in request.resource.data) || nonNegInt(request.resource.data.weeklySteps))
+        && (!('weeklyXp' in request.resource.data) || nonNegInt(request.resource.data.weeklyXp))
+        && (!('monthlySteps' in request.resource.data) || nonNegInt(request.resource.data.monthlySteps))
+        && (!('streak' in request.resource.data) || nonNegInt(request.resource.data.streak))
+        && (!('steps' in request.resource.data) || !('xp' in request.resource.data)
+            || request.resource.data.steps == request.resource.data.xp)
+        && (!('weeklySteps' in request.resource.data) || !('weeklyXp' in request.resource.data)
+            || request.resource.data.weeklySteps == request.resource.data.weeklyXp);
     }
 
-    // Liga semanal: qualquer autenticado lê; só o dono escreve o próprio ranking.
-    // Legado flat (migração).
+    // Liga semanal: qualquer autenticado lê; o dono só grava o próprio
+    // placar se ele espelhar users/{uid}.weeklySteps da semana corrente.
     match /leagues/{week}/players/{uid} {
       allow read: if isSignedIn();
-      allow write: if isSignedIn()
-        && request.auth.uid == uid
-        && (!('xp' in request.resource.data) || nonNegInt(request.resource.data.xp))
-        && (!('steps' in request.resource.data) || nonNegInt(request.resource.data.steps));
+      allow delete: if ownRankingDelete();
+      allow create, update: if isYmd(week)
+        && rankingScoreMatches(userWeeklySteps())
+        && (!userExists()
+            || !('weeklyWeek' in userData())
+            || userData().weeklyWeek == null
+            || userData().weeklyWeek == week);
     }
 
-    // Liga semanal por divisão (tier 0..4).
     match /leagues/{week}/tiers/{tier}/players/{uid} {
       allow read: if isSignedIn();
-      allow write: if isSignedIn()
-        && request.auth.uid == uid
-        && (!('xp' in request.resource.data) || nonNegInt(request.resource.data.xp))
-        && (!('steps' in request.resource.data) || nonNegInt(request.resource.data.steps));
+      allow delete: if ownRankingDelete();
+      allow create, update: if isYmd(week)
+        && tier.matches('^[0-4]$')
+        && rankingScoreMatches(userWeeklySteps())
+        && (!userExists()
+            || !('weeklyWeek' in userData())
+            || userData().weeklyWeek == null
+            || userData().weeklyWeek == week);
     }
 
-    // Ranking geral (passos totais): qualquer autenticado lê; cada um escreve o próprio.
     match /overallPlayers/{uid} {
       allow read: if isSignedIn();
-      allow write: if isSignedIn()
-        && request.auth.uid == uid
-        && (!('xp' in request.resource.data) || nonNegInt(request.resource.data.xp))
-        && (!('steps' in request.resource.data) || nonNegInt(request.resource.data.steps));
+      allow delete: if ownRankingDelete();
+      allow create, update: if rankingScoreMatches(userTotalSteps());
     }
 
-    // Ranking mensal (legado).
     match /monthlyLeagues/{month}/players/{uid} {
       allow read: if isSignedIn();
-      allow write: if isSignedIn()
-        && request.auth.uid == uid
-        && (!('xp' in request.resource.data) || nonNegInt(request.resource.data.xp))
-        && (!('steps' in request.resource.data) || nonNegInt(request.resource.data.steps));
+      allow delete: if ownRankingDelete();
+      allow create, update: if isYearMonth(month)
+        && rankingScoreMatches(userMonthlySteps())
+        && (!userExists()
+            || !('monthlyMonth' in userData())
+            || userData().monthlyMonth == null
+            || userData().monthlyMonth == month);
     }
 
     // Salas de estudo privadas.
@@ -84,7 +160,8 @@ service cloud.firestore {
 
       match /members/{uid} {
         allow read: if isSignedIn();
-        allow write: if isSignedIn() && request.auth.uid == uid;
+        allow delete: if ownRankingDelete();
+        allow create, update: if rankingScoreMatches(userWeeklySteps());
       }
     }
 

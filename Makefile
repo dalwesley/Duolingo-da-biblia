@@ -13,7 +13,8 @@ ADMIN := admin
         android_clean android_fix_gradle android_build deep_clean_android \
         ios_pods ios_update ios_clean ios_reset ios_run ios_build open_ios deep_clean_ios \
         doctor upgrade clean_cache fix_permissions \
-        seed seed_cli seed_full
+        seed seed_cli seed_full \
+        audit_rankings audit_rankings_fix test_rankings deploy_rules
 
 # ==========================================
 # CORES
@@ -214,6 +215,25 @@ seed_full:
 	@echo "$(GREEN)☁️  Publicando conteúdo completo no Firestore…$(NC)"
 	cd $(ADMIN) && npm run seed:cli
 
+# Auditoria de rankings — compara placares com users/{uid}
+audit_rankings:
+	@echo "$(GREEN)🔍 Auditoria de rankings…$(NC)"
+	cd $(ADMIN) && npm run audit:rankings
+
+audit_rankings_fix:
+	@echo "$(GREEN)🔧 Corrigindo rankings…$(NC)"
+	cd $(ADMIN) && npm run audit:rankings:fix
+
+# Testa lógica de espelhamento de ranking
+test_rankings:
+	@echo "$(GREEN)🧪 Testes de ranking mirror…$(NC)"
+	cd $(ADMIN) && npm run test:rankings
+
+# Deploy das regras no Firestore (requer firebase login)
+deploy_rules:
+	@echo "$(GREEN)🔒 Publicando firestore.rules…$(NC)"
+	firebase deploy --only firestore:rules --project trilha-biblia
+
 # ==========================================
 # HELP
 # ==========================================
@@ -253,6 +273,10 @@ help:
 	@echo "  make seed            # banco de questões (SEED_ONLY=bank)"
 	@echo "  make seed_full       # trilhas + banco + estudos"
 	@echo "  make seed SEED_ONLY=ot"
+	@echo "  make audit_rankings  # verificar placares vs progresso"
+	@echo "  make audit_rankings_fix  # corrigir inconsistências"
+	@echo "  make deploy_rules    # publicar firestore.rules"
+	@echo "  make test_rankings   # testes da lógica de mirror"
 	@echo ""
 	@echo "Utilitários:"
 	@echo "  make doctor"

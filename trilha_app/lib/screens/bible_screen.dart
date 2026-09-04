@@ -23,8 +23,9 @@ import 'bible_reading_plan_screen.dart';
 /// Aba Bíblia — navegação livro → capítulo → leitura, tudo offline.
 class BibleScreen extends StatefulWidget {
   final Widget? topBar;
+  final String? initialBookAbbrev;
 
-  const BibleScreen({super.key, this.topBar});
+  const BibleScreen({super.key, this.topBar, this.initialBookAbbrev});
 
   @override
   State<BibleScreen> createState() => _BibleScreenState();
@@ -63,8 +64,15 @@ class _BibleScreenState extends State<BibleScreen> {
     await BibleService.instance.setTranslation(id);
     final books = await BibleService.instance.books();
     if (!mounted) return;
+    int? bookIndex;
+    final needle = widget.initialBookAbbrev?.toLowerCase();
+    if (needle != null && needle.isNotEmpty) {
+      final i = books.indexWhere((b) => b.abbrev.toLowerCase() == needle);
+      if (i >= 0) bookIndex = i;
+    }
     setState(() {
       _books = books;
+      if (bookIndex != null) _bookIndex = bookIndex;
       _loadedTranslationId = id;
       _reloadScheduled = false;
     });

@@ -5,7 +5,9 @@ import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import '../data/question_bank.dart';
 import '../data/trail_repository.dart';
+import '../models/caravan_pilgrim_profile.dart';
 import '../models/difficulty.dart';
+import '../models/pilgrim_medals.dart';
 import '../services/analytics_service.dart';
 import '../services/backend_service.dart';
 import '../services/league_service.dart';
@@ -63,6 +65,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
   int _awardedSteps = 0;
   int _leagueRank = 0;
   bool _inPromotionZone = false;
+  String? _medalLine;
   TrailDifficulty? _currentMode;
   TrailDifficulty? _nextMode;
   DifficultyMeta? _nextMeta;
@@ -234,6 +237,23 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                         rank <= LeagueService.promoteCount &&
                         league.tierIndex < LeagueTier.values.length - 1;
                   });
+                }
+              } catch (_) {}
+              try {
+                final catalog = await TrailRepository().getTrails();
+                final profile = CaravanPilgrimProfile.fromProgress(
+                  progress: progress,
+                  uid: backend.uid ?? '',
+                );
+                final line = PilgrimMedals.celebrationLine(
+                  profile: profile,
+                  catalog: catalog,
+                  trailSlug: widget.trailSlug,
+                  perfect: widget.perfect,
+                  ctx: PilgrimMedalEvalContext.fromProgress(progress),
+                );
+                if (mounted && line != null) {
+                  setState(() => _medalLine = line.monitorMessage);
                 }
               } catch (_) {}
             }
@@ -512,6 +532,10 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                                   ),
                                               ],
                                             ),
+                                          ],
+                                          if (_medalLine != null) ...[
+                                            const SizedBox(height: AppSpace.md),
+                                            _MedalProgressLine(text: _medalLine!),
                                           ],
                                           if (_leagueRank > 0) ...[
                                             const SizedBox(height: AppSpace.lg),
@@ -1148,6 +1172,25 @@ class _CaravanaMoment extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class _MedalProgressLine extends StatelessWidget {
+  final String text;
+
+  const _MedalProgressLine({required this.text});
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      text,
+      textAlign: TextAlign.center,
+      style: AppTypography.label(
+        size: 12,
+        letterSpacing: 0.35,
+        color: AppColors.medalGold.withValues(alpha: 0.88),
       ),
     );
   }

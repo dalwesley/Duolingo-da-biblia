@@ -66,37 +66,44 @@ Future<CaravanPilgrimProfile> loadEnrichedVisitorProfile({
   required LeagueEntry entry,
   required BackendService backend,
 }) async {
-  CaravanPilgrimProfile base;
-  if (entry.uid != null && backend.isActive) {
-    final result = await backend.fetchPilgrimProfile(entry.uid!);
-    if (result.isError) throw StateError('fetch failed');
-    if (result.hasDocument) {
-      base = CaravanPilgrimProfile.fromCloudMap(
-        uid: entry.uid!,
-        data: result.data!,
-        fallbackName: entry.name,
-      );
-    } else {
-      base = CaravanPilgrimProfile(
-        uid: entry.uid,
-        name: entry.name,
-        steps: entry.steps,
-        lastWalkDate: entry.lastWalkDate,
-        lastSeenDate: entry.lastSeenDate,
-      );
+  var base = CaravanPilgrimProfile.fromRankingCard(
+    uid: entry.uid,
+    name: entry.name,
+    steps: entry.steps,
+    lastWalkDate: entry.lastWalkDate,
+    lastSeenDate: entry.lastSeenDate,
+  );
+
+  final uid = entry.uid?.trim();
+  if (uid != null && uid.isNotEmpty && backend.isActive) {
+    try {
+      final result = await backend.fetchPilgrimProfile(uid);
+      if (result.hasDocument) {
+        try {
+          base = CaravanPilgrimProfile.fromCloudMap(
+            uid: uid,
+            data: result.data!,
+            fallbackName: entry.name,
+          );
+        } catch (e, st) {
+          debugPrint('Perfil da caravana: mapa inválido ($uid): $e\n$st');
+        }
+      } else if (result.isError) {
+        debugPrint('Perfil da caravana: nuvem falhou ($uid): ${result.error}');
+      }
+    } catch (e, st) {
+      debugPrint('Perfil da caravana: leitura falhou ($uid): $e\n$st');
     }
-  } else {
-    base = CaravanPilgrimProfile(
-      uid: entry.uid,
-      name: entry.name,
-      steps: entry.steps,
-      lastWalkDate: entry.lastWalkDate,
-      lastSeenDate: entry.lastSeenDate,
-    );
   }
-  final trails = await TrailRepository().getTrails();
-  final books = await BibleService.instance.books();
-  return base.enriched(catalog: trails, bibleBooks: books);
+
+  try {
+    final trails = await TrailRepository().getTrails();
+    final books = await BibleService.instance.books();
+    return base.enriched(catalog: trails, bibleBooks: books);
+  } catch (e, st) {
+    debugPrint('Perfil da caravana: catálogo falhou: $e\n$st');
+    return base;
+  }
 }
 
 class PilgrimProfileDetailSections extends StatelessWidget {
@@ -194,13 +201,13 @@ class PilgrimProfileDetailSections extends StatelessWidget {
           chapter: 'Escrituras',
           subtitle: profile.bibleChaptersRead == 0
               ? 'Ainda sem leitura registrada'
-              : 'Livros e capítulos com progresso',
+              : '${profile.bibleChaptersRead} capítulo${profile.bibleChaptersRead == 1 ? '' : 's'} lidos',
           accent: AppColors.cedar,
           child: profile.bibleChaptersRead == 0
               ? const PilgrimEmptyHint('Ainda sem capítulos lidos registrados.')
-              : PilgrimScriptureShelf(
+              : _PilgrimBibleStats(
                   chapters: profile.bibleChaptersRead,
-                  books: profile.bibleBooksRead,
+                  completeBooks: profile.completeBibleBooks.length,
                 ),
         ),
       );
@@ -899,132 +906,6 @@ class PilgrimLeadershipMonument extends StatelessWidget {
   }
 }
 
-class PilgrimScriptureShelf extends StatelessWidget {
-  final int chapters;
-  final List<String> books;
-
-  const PilgrimScriptureShelf({
-    required this.chapters,
-    required this.books,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Row(
-          children: [
-            Expanded(
-              child: _PilgrimStatBlock(
-                glyph: CinematicGlyph.book,
-                value: '$chapters',
-                label: 'Capítulos',
-                accent: AppColors.cedar,
-              ),
-            ),
-            const SizedBox(width: 10),
-            Expanded(
-              child: _PilgrimStatBlock(
-                glyph: CinematicGlyph.scroll,
-                value: '${books.length}',
-                label: 'Livros',
-                accent: AppColors.cedar,
-              ),
-            ),
-          ],
-        ),
-        if (books.isNotEmpty) ...[
-          const SizedBox(height: 14),
-          Wrap(
-            spacing: 6,
-            runSpacing: 6,
-            children: [
-              for (final book in books.take(10))
-                _PilgrimTagChip(label: book, accent: AppColors.cedar),
-              if (books.length > 10)
-                _PilgrimTagChip(
-                  label: '+${books.length - 10}',
-                  accent: AppColors.slate,
-                ),
-            ],
-          ),
-          Padding(
-            padding: const EdgeInsets.only(top: 8),
-            child: Text(
-              'Livros com pelo menos um capítulo lido',
-              style: AppTypography.body(
-                size: 11,
-                color: a.textMuted(0.48),
-              ),
-            ),
-          ),
-        ],
-      ],
-    );
-  }
-}
-
-class _PilgrimStatBlock extends StatelessWidget {
-  final CinematicGlyph glyph;
-  final String value;
-  final String label;
-  final Color accent;
-
-  const _PilgrimStatBlock({
-    required this.glyph,
-    required this.value,
-    required this.label,
-    required this.accent,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return Container(
-      padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 12),
-      decoration: BoxDecoration(
-        color: accent.withValues(alpha: 0.08),
-        borderRadius: BorderRadius.circular(AppRadii.md),
-        border: Border.all(color: accent.withValues(alpha: 0.28)),
-      ),
-      child: Row(
-        children: [
-          CinematicIcon(
-            glyph: glyph,
-            size: 20,
-            accent: accent,
-            framed: false,
-          ),
-          const SizedBox(width: 10),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                value,
-                style: AppTypography.title(
-                  size: 18,
-                  weight: FontWeight.w900,
-                  color: accent,
-                ),
-              ),
-              Text(
-                label,
-                style: AppTypography.label(
-                  size: 8,
-                  letterSpacing: 0.2,
-                  color: a.textMuted(0.48),
-                ),
-              ),
-            ],
-          ),
-        ],
-      ),
-    );
-  }
-}
-
 class PilgrimTrailPath extends StatelessWidget {
   final CaravanTrailSnapshot trail;
 
@@ -1154,30 +1035,53 @@ class PilgrimOwnerPrivacyBanner extends StatelessWidget {
   }
 }
 
-class _PilgrimTagChip extends StatelessWidget {
-  final String label;
-  final Color accent;
+class _PilgrimBibleStats extends StatelessWidget {
+  final int chapters;
+  final int completeBooks;
 
-  const _PilgrimTagChip({required this.label, required this.accent});
+  const _PilgrimBibleStats({
+    required this.chapters,
+    required this.completeBooks,
+  });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-      decoration: BoxDecoration(
-        color: accent.withValues(alpha: 0.12),
-        borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: accent.withValues(alpha: 0.32)),
-      ),
-      child: Text(
-        label,
-        style: AppTypography.label(
-          size: 9,
-          letterSpacing: 0.15,
-          color: a.text.withValues(alpha: 0.88),
+    return Row(
+      children: [
+        _stat(a, '$chapters', chapters == 1 ? 'capítulo' : 'capítulos'),
+        const SizedBox(width: 28),
+        _stat(
+          a,
+          '$completeBooks',
+          completeBooks == 1 ? 'livro lido' : 'livros lidos',
         ),
-      ),
+      ],
+    );
+  }
+
+  Widget _stat(AppearanceStyle a, String value, String label) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          value,
+          style: AppTypography.title(
+            size: 22,
+            weight: FontWeight.w900,
+            color: a.text,
+          ),
+        ),
+        const SizedBox(height: 2),
+        Text(
+          label,
+          style: AppTypography.label(
+            size: 10,
+            letterSpacing: 0.3,
+            color: a.textMuted(0.5),
+          ),
+        ),
+      ],
     );
   }
 }

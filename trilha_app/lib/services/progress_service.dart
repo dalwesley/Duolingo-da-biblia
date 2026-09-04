@@ -235,6 +235,8 @@ class ProgressService extends ChangeNotifier {
   int lifetimeQuestionsAnswered = 0;
   String? lastMissionSlug;
   String? lastMissionCompletedDate;
+  String? lastBibleReadDate;
+  bool bibleBeforeMission = false;
   int daysAsCaravanLeader = 0;
   String? lastLeaderRankDay;
 
@@ -638,6 +640,8 @@ class ProgressService extends ChangeNotifier {
     brokenStreak = 0;
     lastComebackShownDate = null;
     comebackBonusPending = false;
+    lastBibleReadDate = null;
+    bibleBeforeMission = false;
     final prefs = await SharedPreferences.getInstance();
     await prefs.remove(_keyHasSeenOnboarding);
     await prefs.remove(_keyFirstOpenDate);
@@ -761,6 +765,7 @@ class ProgressService extends ChangeNotifier {
     if (!readBibleChapters.contains(key)) {
       readBibleChapters = [...readBibleChapters, key];
     }
+    lastBibleReadDate = _todayKey();
     await _bumpQuest('read');
     await _bumpQuest('seasonal');
   }
@@ -839,6 +844,7 @@ class ProgressService extends ChangeNotifier {
     await _bumpQuest('read');
     await _bumpQuest('seasonal');
     final today = _todayKey();
+    lastBibleReadDate = today;
     final already = bibleReadingPlan.lastCompletedDay == today;
     bibleReadingPlan = bibleReadingPlan.copyWith(
       cursor: toCursor,
@@ -1389,6 +1395,11 @@ class ProgressService extends ChangeNotifier {
           lifetimeQuestionsCorrect += correct;
           lifetimeQuestionsAnswered += total;
         }
+        if (!bibleBeforeMission &&
+            lastBibleReadDate == today &&
+            lastMissionCompletedDate != today) {
+          bibleBeforeMission = true;
+        }
         lastMissionSlug = slug;
         lastMissionCompletedDate = today;
       }
@@ -1602,6 +1613,8 @@ class ProgressService extends ChangeNotifier {
       'lifetimeQuestionsAnswered': lifetimeQuestionsAnswered,
       'lastMissionSlug': lastMissionSlug,
       'lastMissionCompletedDate': lastMissionCompletedDate,
+      'lastBibleReadDate': lastBibleReadDate,
+      'bibleBeforeMission': bibleBeforeMission,
       'daysAsCaravanLeader': daysAsCaravanLeader,
       'lastLeaderRankDay': lastLeaderRankDay,
       'settings': {
@@ -2056,6 +2069,18 @@ class ProgressService extends ChangeNotifier {
           }
         }
       }
+      if (data.containsKey('lastBibleReadDate')) {
+        final d = data['lastBibleReadDate'] as String?;
+        if (d != null && d.isNotEmpty) {
+          final local = lastBibleReadDate;
+          if (local == null || d.compareTo(local) >= 0) {
+            lastBibleReadDate = d;
+          }
+        }
+      }
+      if (data['bibleBeforeMission'] == true) {
+        bibleBeforeMission = true;
+      }
       if (data.containsKey('daysAsCaravanLeader')) {
         final cloud = (data['daysAsCaravanLeader'] as num?)?.toInt() ?? 0;
         if (cloud > daysAsCaravanLeader) {
@@ -2198,6 +2223,8 @@ class ProgressService extends ChangeNotifier {
     brokenStreak = 0;
     lastComebackShownDate = null;
     comebackBonusPending = false;
+    lastBibleReadDate = null;
+    bibleBeforeMission = false;
     questProgressMap = {};
     questClaimed = [];
     weeklyProgressMap = {};

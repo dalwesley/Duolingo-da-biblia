@@ -1,8 +1,12 @@
-# STWAY — Sistema de medalhas (v2)
+# STWAY — Sistema de medalhas (v2 → v3.1)
 
-**Status:** implementado (Fases A, B e D parcial — jornada, trilhas, 3 descobertas)  
+**Status:** v3.2 no app — faísca + conquistas; Palavra no cofre, não prateleira de livros  
 **Atualizado:** set/2026  
-**Substitui:** cofre único de 19 medalhas globais (`pilgrim_medals.dart` v1)
+**Calibração vigente:** [`MEDALHAS_CALIBRATION.md`](MEDALHAS_CALIBRATION.md)
+
+O texto abaixo descreve a arquitetura (cofres, famílias, loops). Os **marcos e IDs atuais** estão na calibração v3.1: prefixo consecutivo, diamantes ortogonais como Mirra, cofre sazonal Advento, Pioneiro sem sheet.
+
+---
 
 ---
 
@@ -55,7 +59,7 @@ COFRE (vault)          → container visível no perfil
 | **Sazonal** | `season:{id}` | Janela da temporada (ex. Advento 2026) | Medalhas ficam; cofre some da home |
 | **Descobertas** | `discovery` | Só medalhas já desbloqueadas | Não |
 
-**Não haverá cofre por livro bíblico** — leitura na Bíblia continua no cofre **Jornada** (família Palavra).
+**Não haverá medalha por livro bíblico.** O cofre **Jornada** (família Palavra) mede hábito de capítulos. Títulos ficam na Bíblia, não no perfil.
 
 ---
 
