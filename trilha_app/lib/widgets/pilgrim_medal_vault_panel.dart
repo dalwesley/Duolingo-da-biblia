@@ -148,14 +148,6 @@ class _PilgrimMedalVaultsPanelState extends State<PilgrimMedalVaultsPanel> {
               trailCount: trailVaults.length,
               onChanged: (tab) => setState(() => _tab = tab),
             ),
-            if (_tab == _MedalVaultTab.trails) ...[
-              const SizedBox(height: 10),
-              _TrailVaultPicker(
-                vaults: trailVaults,
-                selectedId: _selectedTrailVaultId,
-                onSelected: (id) => setState(() => _selectedTrailVaultId = id),
-              ),
-            ],
             const SizedBox(height: 12),
           ],
           if (proximity != null) ...[
@@ -182,8 +174,11 @@ class _PilgrimMedalVaultsPanelState extends State<PilgrimMedalVaultsPanel> {
               featuredTrackId: proximity?.track.id,
             ),
           ],
-          if (!showJourney && selectedTrail != null)
-            _TrailLevelRow(state: selectedTrail),
+          if (!showJourney)
+            _TrailEmblemStrip(
+              vaults: trailVaults,
+              featuredTrackId: proximity?.track.id,
+            ),
           if (showJourney && (rareTiles.isNotEmpty || hiddenRares > 0)) ...[
             const SizedBox(height: 16),
             _RareStrip(
@@ -226,7 +221,9 @@ class _ProximityWhisper extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 4),
           child: Text(
-            proximity.monitorMessage,
+            proximity.isNearMiss
+                ? proximity.actionMessage
+                : proximity.monitorMessage,
             textAlign: TextAlign.center,
             style: AppTypography.label(
               size: 11,
@@ -268,55 +265,43 @@ class _FamilyEmblemRow extends StatelessWidget {
   }
 }
 
-class _TrailLevelRow extends StatelessWidget {
-  final PilgrimVaultState state;
+class _TrailEmblemStrip extends StatelessWidget {
+  final List<PilgrimVaultState> vaults;
+  final String? featuredTrackId;
 
-  const _TrailLevelRow({required this.state});
+  const _TrailEmblemStrip({
+    required this.vaults,
+    this.featuredTrackId,
+  });
 
   @override
   Widget build(BuildContext context) {
-    final tiles = PilgrimMedals.trailLevelTiles(state);
-    if (tiles.isEmpty) return const SizedBox.shrink();
-    final track = state.tracks.isEmpty ? null : state.tracks.first;
-
-    return Column(
+    final tracks = [
+      for (final vault in vaults)
+        if (vault.tracks.isNotEmpty) vault.tracks.first,
+    ];
+    if (tracks.isEmpty) return const SizedBox.shrink();
+    if (tracks.length == 1) {
+      return MedalTrackEmblem(
+        trackState: tracks.first,
+        featured: true,
+        onTap: () => showTrackDetailSheet(context, tracks.first),
+      );
+    }
+    return Wrap(
+      alignment: WrapAlignment.center,
+      spacing: 8,
+      runSpacing: 10,
       children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            for (final tile in tiles)
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 8),
-                child: MedalVaultMedallion(
-                  tile: tile,
-                  size: 40,
-                  onTap: () {
-                    if (track != null) {
-                      final index = track.track.levels.indexWhere(
-                        (level) => level.id == tile.id,
-                      );
-                      showTrackDetailSheet(
-                        context,
-                        track,
-                        highlightLevelIndex: index >= 0 ? index : null,
-                      );
-                    } else {
-                      showMedalTileSheet(context, tile);
-                    }
-                  },
-                ),
-              ),
-          ],
-        ),
-        if (track != null) ...[
-          const SizedBox(height: 8),
-          MedalTrackDots(
-            trackState: track,
-            accent: track.currentLevel != null
-                ? tierColor(track.currentLevel!.tier)
-                : Colors.white.withValues(alpha: 0.28),
+        for (final track in tracks)
+          SizedBox(
+            width: 72,
+            child: MedalTrackEmblem(
+              trackState: track,
+              featured: track.track.id == featuredTrackId,
+              onTap: () => showTrackDetailSheet(context, track),
+            ),
           ),
-        ],
       ],
     );
   }
@@ -504,86 +489,6 @@ class _MedalTabChip extends StatelessWidget {
                     ? AppColors.medalGold
                     : Colors.white.withValues(alpha: 0.45),
               ),
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class _TrailVaultPicker extends StatelessWidget {
-  final List<PilgrimVaultState> vaults;
-  final String? selectedId;
-  final ValueChanged<String> onSelected;
-
-  const _TrailVaultPicker({
-    required this.vaults,
-    required this.selectedId,
-    required this.onSelected,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    if (vaults.length <= 1) return const SizedBox.shrink();
-    return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      child: Row(
-        children: [
-          for (final state in vaults) ...[
-            _TrailPickerChip(
-              title: state.vault.title,
-              selected: state.vault.id == selectedId,
-              onTap: () => onSelected(state.vault.id),
-            ),
-            const SizedBox(width: 8),
-          ],
-        ],
-      ),
-    );
-  }
-}
-
-class _TrailPickerChip extends StatelessWidget {
-  final String title;
-  final bool selected;
-  final VoidCallback onTap;
-
-  const _TrailPickerChip({
-    required this.title,
-    required this.selected,
-    required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final accent = AppColors.accent;
-    return Material(
-      color: selected
-          ? accent.withValues(alpha: 0.16)
-          : Colors.white.withValues(alpha: 0.04),
-      borderRadius: BorderRadius.circular(AppRadii.pill),
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(AppRadii.pill),
-        child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(AppRadii.pill),
-            border: Border.all(
-              color: selected
-                  ? accent.withValues(alpha: 0.6)
-                  : Colors.white.withValues(alpha: 0.1),
-            ),
-          ),
-          child: Text(
-            title,
-            style: AppTypography.label(
-              size: 10,
-              letterSpacing: 0.2,
-              color: selected
-                  ? accent
-                  : Colors.white.withValues(alpha: 0.55),
             ),
           ),
         ),

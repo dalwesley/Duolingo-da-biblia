@@ -57,6 +57,10 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
   /// Cor do leading/back — por aba (Hoje=amarelo, Bíblia=cedar…).
   final Color? chromeAccent;
 
+  /// Ação à direita (ex.: ajustes no perfil).
+  final VoidCallback? onTrailingTap;
+  final CinematicGlyph? trailingGlyph;
+
   const TopBar({
     super.key,
     required this.title,
@@ -73,6 +77,8 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
     this.showLeading = true,
     this.showTrailingAvatar = false,
     this.chromeAccent,
+    this.onTrailingTap,
+    this.trailingGlyph,
   });
 
   @override
@@ -106,6 +112,8 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
               showLeading: showLeading,
               showTrailingAvatar: showTrailingAvatar,
               chromeAccent: mark,
+              onTrailingTap: onTrailingTap,
+              trailingGlyph: trailingGlyph,
             )
           : AppBar(
               primary: true,
@@ -164,6 +172,19 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
                         ),
                       ),
                     ]
+                  : onTrailingTap != null
+                  ? [
+                      IconButton(
+                        onPressed: onTrailingTap,
+                        tooltip: 'Ajustes',
+                        icon: CinematicIcon(
+                          glyph: trailingGlyph ?? CinematicGlyph.tune,
+                          size: 32,
+                          accent: mark,
+                          glowing: false,
+                        ),
+                      ),
+                    ]
                   : onBack != null
                   ? [
                       _MenuMark(
@@ -206,6 +227,8 @@ class _InlineChrome extends StatelessWidget {
   final bool showLeading;
   final bool showTrailingAvatar;
   final Color chromeAccent;
+  final VoidCallback? onTrailingTap;
+  final CinematicGlyph? trailingGlyph;
 
   const _InlineChrome({
     required this.appearance,
@@ -223,6 +246,8 @@ class _InlineChrome extends StatelessWidget {
     required this.showLeading,
     required this.showTrailingAvatar,
     required this.chromeAccent,
+    this.onTrailingTap,
+    this.trailingGlyph,
   });
 
   @override
@@ -279,6 +304,18 @@ class _InlineChrome extends StatelessWidget {
             if (showTrailingAvatar) ...[
               const SizedBox(width: 8),
               UserAvatar(photoUrl: photoUrl, name: userName, radius: 16),
+            ] else if (onTrailingTap != null) ...[
+              const SizedBox(width: 4),
+              GestureDetector(
+                onTap: onTrailingTap,
+                behavior: HitTestBehavior.opaque,
+                child: CinematicIcon(
+                  glyph: trailingGlyph ?? CinematicGlyph.tune,
+                  size: 36,
+                  accent: chromeAccent,
+                  glowing: false,
+                ),
+              ),
             ] else if (onBack != null && showLeading) ...[
               const SizedBox(width: 8),
               _MenuMark(

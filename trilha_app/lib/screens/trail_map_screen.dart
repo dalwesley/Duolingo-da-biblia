@@ -20,6 +20,7 @@ import '../utils/trail_visuals.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/genesis_trail_scenery.dart';
 import '../widgets/immersive_background.dart';
+import '../widgets/medal_unlock_sheet.dart';
 import '../widgets/milestone_chests.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/trail_map_path.dart';
@@ -446,11 +447,12 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
       progress: progress,
       uid: '',
     );
+    final ctx = PilgrimMedalEvalContext.fromProgress(progress);
     final proximity = PilgrimMedals.nearestLocked(
       profile: profile,
       catalog: [trail],
       priorityTrailSlug: trail.slug,
-      ctx: PilgrimMedalEvalContext.fromProgress(progress),
+      ctx: ctx,
     );
     if (proximity == null || proximity.track.trailSlug != trail.slug) {
       return null;
@@ -458,19 +460,41 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
     final accent = tierColor(proximity.nextLevel.tier);
     return Align(
       alignment: Alignment.centerLeft,
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-        decoration: BoxDecoration(
-          color: accent.withValues(alpha: 0.12),
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: () {
+            HapticFeedback.selectionClick();
+            final vaults = PilgrimMedals.evaluateVaults(
+              profile: profile,
+              catalog: [trail],
+              ctx: ctx,
+            );
+            for (final vault in vaults) {
+              if (vault.vault.id != PilgrimMedalCatalog.trailVaultId(trail.slug)) {
+                continue;
+              }
+              if (vault.tracks.isEmpty) return;
+              showTrackDetailSheet(context, vault.tracks.first);
+              return;
+            }
+          },
           borderRadius: BorderRadius.circular(AppRadii.pill),
-          border: Border.all(color: accent.withValues(alpha: 0.35)),
-        ),
-        child: Text(
-          '+1 ${proximity.nextLevel.title}',
-          style: AppTypography.label(
-            size: 11,
-            letterSpacing: 0.2,
-            color: accent,
+          child: Container(
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+            decoration: BoxDecoration(
+              color: accent.withValues(alpha: 0.12),
+              borderRadius: BorderRadius.circular(AppRadii.pill),
+              border: Border.all(color: accent.withValues(alpha: 0.35)),
+            ),
+            child: Text(
+              proximity.actionMessage,
+              style: AppTypography.label(
+                size: 11,
+                letterSpacing: 0.2,
+                color: accent,
+              ),
+            ),
           ),
         ),
       ),

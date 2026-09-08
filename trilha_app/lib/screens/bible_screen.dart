@@ -12,6 +12,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/bible_reading_theme.dart';
 import '../utils/layout_utils.dart';
+import '../utils/liturgical_calendar.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/share_verse_sheet.dart';
@@ -339,6 +340,26 @@ class _BookPicker extends StatelessWidget {
         const SizedBox(height: AppSpace.sm),
         const _TranslationPicker(),
         const SizedBox(height: AppSpace.sm),
+        _LiturgyEntryCard(
+          onOpen: (ref) {
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (_) => BibleReaderScreen(reference: ref),
+              ),
+            );
+          },
+        ),
+        _ContinueWordCard(
+          books: books,
+          onOpen: (ref) {
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (_) => BibleReaderScreen(reference: ref),
+              ),
+            );
+          },
+        ),
+        const SizedBox(height: AppSpace.sm),
         _PlanEntryCard(plan: plan, onOpen: onOpenPlan),
         const SizedBox(height: AppSpace.md),
         _BrowseOrderToggle(
@@ -417,6 +438,136 @@ class _BookPicker extends StatelessWidget {
       );
     }
     return widgets;
+  }
+}
+
+class _LiturgyEntryCard extends StatelessWidget {
+  final ValueChanged<String> onOpen;
+
+  const _LiturgyEntryCard({required this.onOpen});
+
+  @override
+  Widget build(BuildContext context) {
+    final moment = LiturgicalCalendar.momentFor();
+    final accent = LiturgicalCalendar.accentOf(moment.season);
+    final a = Appearance.of(context);
+
+    return Padding(
+      padding: const EdgeInsets.only(bottom: AppSpace.sm),
+      child: GlassCard(
+        onTap: () => onOpen(moment.focusRef),
+        tint: accent,
+        padding: AppMetrics.cardPaddingCompact,
+        child: Row(
+          children: [
+            CinematicIcon(
+              glyph: CinematicGlyph.calendar,
+              size: 36,
+              accent: accent,
+              glowing: false,
+            ),
+            const SizedBox(width: AppSpace.md),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    moment.title,
+                    style: AppTypography.label(
+                      size: 10,
+                      letterSpacing: 1.2,
+                      color: accent,
+                    ),
+                  ),
+                  const SizedBox(height: 2),
+                  Text(
+                    moment.subtitle,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: AppTypography.title(size: 14, color: a.text),
+                  ),
+                  const SizedBox(height: 2),
+                  Text(
+                    moment.focusRef,
+                    style: AppTypography.body(
+                      size: 12,
+                      color: a.textMuted(0.55),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Icon(Icons.chevron_right_rounded, color: a.textMuted(0.45), size: 22),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class _ContinueWordCard extends StatelessWidget {
+  final List<BibleBook> books;
+  final ValueChanged<String> onOpen;
+
+  const _ContinueWordCard({required this.books, required this.onOpen});
+
+  @override
+  Widget build(BuildContext context) {
+    final progress = context.watch<ProgressService>();
+    final bookmarks = progress.parseBookmarks();
+    if (bookmarks.isEmpty) return const SizedBox.shrink();
+    final b = bookmarks.first;
+    String name = b.abbrev.toUpperCase();
+    for (final book in books) {
+      if (book.abbrev.toLowerCase() == b.abbrev.toLowerCase()) {
+        name = book.name;
+        break;
+      }
+    }
+    final label = '$name ${b.chapter}:${b.verse}';
+    final a = Appearance.of(context);
+
+    return Padding(
+      padding: const EdgeInsets.only(bottom: AppSpace.sm),
+      child: GlassCard(
+        onTap: () => onOpen(label),
+        padding: AppMetrics.cardPaddingCompact,
+        child: Row(
+          children: [
+            CinematicIcon(
+              glyph: CinematicGlyph.star,
+              size: 36,
+              accent: AppColors.accent,
+              glowing: false,
+            ),
+            const SizedBox(width: AppSpace.md),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Continuar na Palavra',
+                    style: AppTypography.label(
+                      size: 10,
+                      letterSpacing: 1.2,
+                      color: AppColors.accent,
+                    ),
+                  ),
+                  const SizedBox(height: 2),
+                  Text(
+                    label,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: AppTypography.title(size: 14, color: a.text),
+                  ),
+                ],
+              ),
+            ),
+            Icon(Icons.chevron_right_rounded, color: a.textMuted(0.45), size: 22),
+          ],
+        ),
+      ),
+    );
   }
 }
 
@@ -1049,33 +1200,42 @@ class _CanonTestamentCard extends StatelessWidget {
       );
       firstGroup = false;
 
+      final chips = <Widget>[];
       for (var i = group.startIndex; i <= end; i++) {
         bookCount++;
-        children.add(
-          _BookRow(
+        chips.add(
+          _BookChip(
             book: books[i],
             onTap: () => onPick(i),
-            showDivider: true,
-            isFirst: false,
-            isLast: false,
           ),
         );
       }
+      children.add(
+        Padding(
+          padding: const EdgeInsets.fromLTRB(
+            AppSpace.md,
+            4,
+            AppSpace.md,
+            AppSpace.sm,
+          ),
+          child: LayoutBuilder(
+            builder: (context, constraints) {
+              final w = (constraints.maxWidth - 8) / 2;
+              return Wrap(
+                spacing: 8,
+                runSpacing: 8,
+                children: [
+                  for (final chip in chips)
+                    SizedBox(width: w, child: chip),
+                ],
+              );
+            },
+          ),
+        ),
+      );
     }
 
     if (children.isEmpty) return const SizedBox.shrink();
-
-    // Última linha sem divisor.
-    final last = children.last;
-    if (last is _BookRow) {
-      children[children.length - 1] = _BookRow(
-        book: last.book,
-        onTap: last.onTap,
-        showDivider: false,
-        isFirst: false,
-        isLast: true,
-      );
-    }
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -1112,6 +1272,59 @@ class _CanonTestamentCard extends StatelessWidget {
           ),
         ),
       ],
+    );
+  }
+}
+
+class _BookChip extends StatelessWidget {
+  final BibleBook book;
+  final VoidCallback onTap;
+
+  const _BookChip({required this.book, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final abbrev = book.abbrev.toUpperCase();
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(AppRadii.sm),
+        child: Ink(
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+          decoration: BoxDecoration(
+            color: a.cardFillSoft,
+            borderRadius: BorderRadius.circular(AppRadii.sm),
+            border: Border.all(color: a.cardBorder.withValues(alpha: 0.7)),
+          ),
+          child: Row(
+            children: [
+              Text(
+                abbrev,
+                style: AppTypography.label(
+                  size: abbrev.length > 3 ? 9 : 11,
+                  letterSpacing: 0.2,
+                  color: AppColors.cedar,
+                ),
+              ),
+              const SizedBox(width: 8),
+              Expanded(
+                child: Text(
+                  book.name,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppTypography.title(
+                    size: 13,
+                    weight: FontWeight.w700,
+                    color: a.text,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }

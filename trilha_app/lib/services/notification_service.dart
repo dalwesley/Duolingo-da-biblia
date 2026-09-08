@@ -331,10 +331,10 @@ class NotificationService {
         DailyQuestDefs.all.length - progress.questsCompletedToday;
     if (questsLeft > 0) {
       hooks.add(_ReminderCopy(
-        title: 'Missões diárias',
+        title: 'Do dia',
         body: questsLeft == 1
-            ? 'Sobrou 1 missão diária. Um toque e ela some da lista.'
-            : 'Você ainda tem $questsLeft missões diárias pela frente.',
+            ? 'Sobrou 1 gesto. Um passo e o dia fecha.'
+            : 'Ainda faltam $questsLeft gestos do dia.',
         action: ReminderAction.home,
         priority: 80,
       ));

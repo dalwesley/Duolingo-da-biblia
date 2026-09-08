@@ -196,19 +196,21 @@ class PilgrimProfileDetailSections extends StatelessWidget {
     }
 
     if (_show(CaravanProfileSection.bible)) {
+      final chapters = profile.bibleChaptersRead;
+      final books = profile.completeBibleBooks.length;
+      final subtitle = chapters == 0
+          ? 'Ainda sem leitura registrada'
+          : books == 0
+              ? '$chapters capítulo${chapters == 1 ? '' : 's'} · medalha Palavra'
+              : '$chapters capítulo${chapters == 1 ? '' : 's'} · $books livro${books == 1 ? '' : 's'}';
       add(
         PilgrimCinematicSection(
           chapter: 'Escrituras',
-          subtitle: profile.bibleChaptersRead == 0
-              ? 'Ainda sem leitura registrada'
-              : '${profile.bibleChaptersRead} capítulo${profile.bibleChaptersRead == 1 ? '' : 's'} lidos',
+          subtitle: subtitle,
           accent: AppColors.cedar,
-          child: profile.bibleChaptersRead == 0
+          child: chapters == 0
               ? const PilgrimEmptyHint('Ainda sem capítulos lidos registrados.')
-              : _PilgrimBibleStats(
-                  chapters: profile.bibleChaptersRead,
-                  completeBooks: profile.completeBibleBooks.length,
-                ),
+              : null,
         ),
       );
     }
@@ -382,13 +384,13 @@ class PilgrimCinematicSection extends StatelessWidget {
   final String chapter;
   final String? subtitle;
   final Color accent;
-  final Widget child;
+  final Widget? child;
 
   const PilgrimCinematicSection({
     required this.chapter,
     this.subtitle,
     required this.accent,
-    required this.child,
+    this.child,
   });
 
   @override
@@ -403,8 +405,10 @@ class PilgrimCinematicSection extends StatelessWidget {
             subtitle: subtitle,
             accent: accent,
           ),
-          const SizedBox(height: 14),
-          child,
+          if (child != null) ...[
+            const SizedBox(height: 14),
+            child!,
+          ],
         ],
       ),
     );
@@ -1031,57 +1035,6 @@ class PilgrimOwnerPrivacyBanner extends StatelessWidget {
           ),
         ),
       ),
-    );
-  }
-}
-
-class _PilgrimBibleStats extends StatelessWidget {
-  final int chapters;
-  final int completeBooks;
-
-  const _PilgrimBibleStats({
-    required this.chapters,
-    required this.completeBooks,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return Row(
-      children: [
-        _stat(a, '$chapters', chapters == 1 ? 'capítulo' : 'capítulos'),
-        const SizedBox(width: 28),
-        _stat(
-          a,
-          '$completeBooks',
-          completeBooks == 1 ? 'livro lido' : 'livros lidos',
-        ),
-      ],
-    );
-  }
-
-  Widget _stat(AppearanceStyle a, String value, String label) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(
-          value,
-          style: AppTypography.title(
-            size: 22,
-            weight: FontWeight.w900,
-            color: a.text,
-          ),
-        ),
-        const SizedBox(height: 2),
-        Text(
-          label,
-          style: AppTypography.label(
-            size: 10,
-            letterSpacing: 0.3,
-            color: a.textMuted(0.5),
-          ),
-        ),
-      ],
     );
   }
 }

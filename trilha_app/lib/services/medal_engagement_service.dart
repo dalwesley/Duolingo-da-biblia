@@ -12,6 +12,7 @@ import '../models/trail.dart';
 import '../services/backend_service.dart';
 import '../services/bible_service.dart';
 import '../services/progress_service.dart';
+import '../theme/app_theme.dart';
 import '../widgets/medal_unlock_sheet.dart';
 
 /// Celebração de tier-ups, raras e proximidade (v3).
@@ -191,7 +192,14 @@ class MedalEngagementService {
     messenger.clearSnackBars();
     messenger.showSnackBar(
       SnackBar(
-        content: Text(proximity.shortMessage),
+        backgroundColor: AppColors.nightElevated,
+        content: Text(
+          proximity.actionMessage,
+          style: TextStyle(
+            color: medals.tierColor(proximity.nextLevel.tier),
+            fontWeight: FontWeight.w700,
+          ),
+        ),
         behavior: SnackBarBehavior.floating,
         duration: const Duration(seconds: 4),
       ),

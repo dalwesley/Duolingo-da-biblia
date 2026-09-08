@@ -15,6 +15,7 @@ import '../services/room_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
+import '../utils/liturgical_calendar.dart';
 import '../widgets/app_update_sheet.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
@@ -257,7 +258,10 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
         ).push(MaterialPageRoute(builder: (_) => const MemoryScreen()));
       case ReminderAction.favorites:
       case ReminderAction.weekly:
-        _openProfile();
+        setState(() {
+          _index = 4;
+          _frost.value = 0;
+        });
     }
   }
 
@@ -283,7 +287,12 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     Navigator.of(context).pushNamed('/lesson', arguments: missionSlug);
   }
 
-  void _openProfile() => openMeProfile(context);
+  void _openProfile() => setState(() {
+    _index = 4;
+    _frost.value = 0;
+  });
+
+  void _openSettings() => openSettings(context);
 
   void _goToTrilhas() => setState(() {
     _index = 1;
@@ -310,22 +319,24 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
         1 => CinematicGlyph.path,
         2 => CinematicGlyph.book,
         3 => CinematicGlyph.people,
-        _ => CinematicGlyph.tune,
+        _ => CinematicGlyph.humanity,
       },
       title: switch (index) {
         0 => userName,
         1 => 'Trilhas',
         2 => 'Bíblia',
         3 => 'Juntos',
-        _ => 'Config',
+        _ => userName,
       },
       subtitle: switch (index) {
         0 => DayPhaseHelper.greeting(), // relógio — não o tema de aparência
-        1 => 'Escolha o caminho',
-        2 => 'Leitura e estudo',
+        1 => 'O mapa da jornada',
+        2 => LiturgicalCalendar.momentFor().subtitle,
         3 => 'Caravana · Companhia · Salas',
-        _ => 'Ritmo · Aparência · Conta',
+        _ => 'Sua caminhada',
       },
+      onTrailingTap: index == 4 ? _openSettings : null,
+      trailingGlyph: index == 4 ? CinematicGlyph.tune : null,
     );
   }
 
@@ -377,7 +388,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
               active: _index == 3,
               onOpenOwnProfile: _openProfile,
             ),
-            SettingsScreen(topBar: tabBar(4)),
+            MeScreen(topBar: tabBar(4)),
           ],
         ),
       ),

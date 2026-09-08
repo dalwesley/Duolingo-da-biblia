@@ -1,4 +1,7 @@
+import 'package:flutter/material.dart';
+
 import '../models/daily_quest.dart';
+import '../theme/app_colors.dart';
 
 /// Estação do calendário cristão ocidental (aproximação gregoriana).
 enum LiturgicalSeason {
@@ -137,6 +140,17 @@ class LiturgicalCalendar {
     );
   }
 
+  /// Acento de chrome por estação — fio visual da home e da Bíblia.
+  static Color accentOf(LiturgicalSeason season) => switch (season) {
+        LiturgicalSeason.advent => AppColors.orchid,
+        LiturgicalSeason.christmas => AppColors.accent,
+        LiturgicalSeason.lent => AppColors.clay,
+        LiturgicalSeason.holyWeek => AppColors.ember,
+        LiturgicalSeason.easter => AppColors.accent,
+        LiturgicalSeason.pentecost => AppColors.coral,
+        LiturgicalSeason.ordinary => AppColors.cedar,
+      };
+
   /// Missão extra nos tempos fortes (não no tempo comum).
   static DailyQuest? seasonalQuestToday([DateTime? date]) {
     final m = momentFor(date);
@@ -147,7 +161,6 @@ class LiturgicalCalendar {
       subtitle: 'Leia um capítulo — foco: ${m.focusRef}',
       target: 1,
       stepsReward: 35,
-      icon: '✝️',
     );
   }
 }

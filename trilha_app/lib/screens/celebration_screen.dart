@@ -253,7 +253,11 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                   ctx: PilgrimMedalEvalContext.fromProgress(progress),
                 );
                 if (mounted && line != null) {
-                  setState(() => _medalLine = line.monitorMessage);
+                  setState(() {
+                    _medalLine = line.isNearMiss
+                        ? line.actionMessage
+                        : line.monitorMessage;
+                  });
                 }
               } catch (_) {}
             }

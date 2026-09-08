@@ -25,11 +25,45 @@ import '../utils/layout_utils.dart';
 import '../widgets/app_update_sheet.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
+import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 import 'login_screen.dart';
 import 'onboarding_screen.dart';
 
 const _genesisTrailSlug = 'genesis-1-11';
+
+/// Abre ajustes como página empurrada (engrenagem no perfil).
+void openSettings(BuildContext context) {
+  final progress = context.read<ProgressService>();
+  final mode = progress.settings.appearanceMode;
+  final appearance = AppearanceStyle.resolve(mode);
+  Navigator.of(context).push(
+    MaterialPageRoute(
+      builder: (ctx) => Appearance(
+        mode: mode,
+        style: appearance,
+        child: Scaffold(
+          backgroundColor: Colors.transparent,
+          body: ImmersiveBackground(
+            appearance: appearance,
+            child: SettingsScreen(
+              topBar: TopBar(
+                inline: true,
+                immersive: true,
+                dark: appearance.onDark,
+                title: 'Ajustes',
+                subtitle: 'Ritmo · Aparência · Conta',
+                leadingGlyph: CinematicGlyph.tune,
+                chromeAccent: AppColors.slate,
+                onBack: () => Navigator.pop(ctx),
+              ),
+            ),
+          ),
+        ),
+      ),
+    ),
+  );
+}
 
 class SettingsScreen extends StatefulWidget {
   final Widget? topBar;
@@ -182,7 +216,6 @@ class _SettingsScreenState extends State<SettingsScreen>
         _reveal(
           0,
           _ProfileHeader(
-            progress: progress,
             a: a,
             nameController: _nameController,
             nameDirty: _nameDirty,
@@ -198,7 +231,10 @@ class _SettingsScreenState extends State<SettingsScreen>
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const CardHeader(label: 'Seu caminho'),
+                const CardHeader(
+                  label: 'Seu caminho',
+                  glyph: CinematicGlyph.path,
+                ),
                 const SizedBox(height: AppSpace.md),
                 _fieldLabel(a, 'Ritmo diário'),
                 const SizedBox(height: AppSpace.sm),
@@ -220,7 +256,10 @@ class _SettingsScreenState extends State<SettingsScreen>
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const CardHeader(label: 'Experiência'),
+                const CardHeader(
+                  label: 'Experiência',
+                  glyph: CinematicGlyph.sun,
+                ),
                 const SizedBox(height: AppSpace.md),
                 _fieldLabel(a, 'Aparência'),
                 const SizedBox(height: AppSpace.sm),
@@ -270,7 +309,10 @@ class _SettingsScreenState extends State<SettingsScreen>
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const CardHeader(label: 'Perfil na caravana'),
+                const CardHeader(
+                  label: 'Perfil na caravana',
+                  glyph: CinematicGlyph.people,
+                ),
                 const SizedBox(height: AppSpace.sm),
                 Text(
                   'Escolha o que outros peregrinos veem ao tocar no seu card no ranking.',
@@ -298,7 +340,10 @@ class _SettingsScreenState extends State<SettingsScreen>
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const CardHeader(label: 'Conta'),
+                const CardHeader(
+                  label: 'Conta',
+                  glyph: CinematicGlyph.lock,
+                ),
                 const SizedBox(height: AppSpace.md),
                 _cloudCard(a),
               ],
@@ -314,7 +359,10 @@ class _SettingsScreenState extends State<SettingsScreen>
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const CardHeader(label: 'Backup'),
+                const CardHeader(
+                  label: 'Backup',
+                  glyph: CinematicGlyph.share,
+                ),
                 const SizedBox(height: AppSpace.sm),
                 Text(
                   'Exporte um backup ou importe da área de transferência.',
@@ -381,7 +429,10 @@ class _SettingsScreenState extends State<SettingsScreen>
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const CardHeader(label: 'Sobre'),
+                const CardHeader(
+                  label: 'Sobre',
+                  glyph: CinematicGlyph.spark,
+                ),
                 const SizedBox(height: AppSpace.sm),
                 Text(
                   'Aprenda a Bíblia em missões curtas, no seu ritmo.',
@@ -1167,14 +1218,12 @@ class _SettingsDivider extends StatelessWidget {
 }
 
 class _ProfileHeader extends StatelessWidget {
-  final ProgressService progress;
   final AppearanceStyle a;
   final TextEditingController nameController;
   final bool nameDirty;
   final VoidCallback onSaveName;
 
   const _ProfileHeader({
-    required this.progress,
     required this.a,
     required this.nameController,
     required this.nameDirty,
@@ -1183,140 +1232,47 @@ class _ProfileHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final missions = progress.completedMissions.length;
-
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        Row(
-          children: [
-            Expanded(
-              child: _StatSeal(
-                glyph: CinematicGlyph.path,
-                value: '${progress.steps}',
-                label: progress.steps == 1 ? 'passo' : 'passos',
-                accent: AppColors.accent,
-              ),
-            ),
-            const SizedBox(width: AppSpace.sm),
-            Expanded(
-              child: _StatSeal(
-                glyph: CinematicGlyph.flame,
-                value: '${progress.streak}',
-                label: progress.streak == 1 ? 'dia' : 'dias',
-                accent: AppColors.streak,
-              ),
-            ),
-            const SizedBox(width: AppSpace.sm),
-            Expanded(
-              child: _StatSeal(
-                glyph: CinematicGlyph.book,
-                value: '$missions',
-                label: missions == 1 ? 'missão' : 'missões',
-                accent: AppColors.primaryLight,
-              ),
-            ),
-          ],
-        ),
-        const SizedBox(height: AppSpace.md),
-        GlassCard(
-          padding: const EdgeInsets.fromLTRB(14, 12, 8, 12),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                'Nome no app',
-                style: AppTypography.label(
-                  size: 10,
-                  letterSpacing: 0.8,
-                  color: a.textMuted(0.55),
-                ),
-              ),
-              const SizedBox(height: 6),
-              TextField(
-                controller: nameController,
-                maxLength: 24,
-                textInputAction: TextInputAction.done,
-                onSubmitted: (_) => onSaveName(),
-                style: AppTypography.body(
-                  color: a.text,
-                  weight: FontWeight.w700,
-                  size: 15,
-                ),
-                decoration: InputDecoration(
-                  counterText: '',
-                  hintText: 'Como te chamamos?',
-                  hintStyle: AppTypography.body(color: a.textMuted(0.4)),
-                  isDense: true,
-                  contentPadding: const EdgeInsets.symmetric(vertical: 6),
-                  suffixIcon: nameDirty
-                      ? IconButton(
-                          onPressed: onSaveName,
-                          icon: const Icon(Icons.check_rounded),
-                          color: AppColors.accent,
-                          tooltip: 'Salvar',
-                        )
-                      : null,
-                  border: InputBorder.none,
-                  enabledBorder: InputBorder.none,
-                  focusedBorder: InputBorder.none,
-                ),
-              ),
-            ],
-          ),
-        ),
-      ],
-    );
-  }
-}
-
-class _StatSeal extends StatelessWidget {
-  final CinematicGlyph glyph;
-  final String value;
-  final String label;
-  final Color accent;
-
-  const _StatSeal({
-    required this.glyph,
-    required this.value,
-    required this.label,
-    required this.accent,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
     return GlassCard(
-      padding: const EdgeInsets.symmetric(
-        vertical: AppSpace.md,
-        horizontal: AppSpace.xs,
-      ),
+      padding: const EdgeInsets.fromLTRB(14, 12, 8, 12),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          CinematicIcon(
-            glyph: glyph,
-            size: 18,
-            accent: accent,
-            framed: false,
-            glowing: false,
-          ),
-          const SizedBox(height: 6),
           Text(
-            value,
-            style: AppTypography.title(
-              size: 16,
-              weight: FontWeight.w900,
-              color: a.text,
-              height: 1,
-            ),
-          ),
-          const SizedBox(height: 3),
-          Text(
-            label,
+            'Como te chamamos',
             style: AppTypography.label(
               size: 10,
-              letterSpacing: 0.3,
+              letterSpacing: 0.8,
               color: a.textMuted(0.55),
+            ),
+          ),
+          const SizedBox(height: 6),
+          TextField(
+            controller: nameController,
+            maxLength: 24,
+            textInputAction: TextInputAction.done,
+            onSubmitted: (_) => onSaveName(),
+            style: AppTypography.body(
+              color: a.text,
+              weight: FontWeight.w700,
+              size: 16,
+            ),
+            decoration: InputDecoration(
+              counterText: '',
+              hintText: 'Seu nome no caminho',
+              hintStyle: AppTypography.body(color: a.textMuted(0.4)),
+              isDense: true,
+              contentPadding: const EdgeInsets.symmetric(vertical: 6),
+              suffixIcon: nameDirty
+                  ? IconButton(
+                      onPressed: onSaveName,
+                      icon: const Icon(Icons.check_rounded),
+                      color: AppColors.accent,
+                      tooltip: 'Salvar',
+                    )
+                  : null,
+              border: InputBorder.none,
+              enabledBorder: InputBorder.none,
+              focusedBorder: InputBorder.none,
             ),
           ),
         ],
@@ -1324,3 +1280,4 @@ class _StatSeal extends StatelessWidget {
     );
   }
 }
+

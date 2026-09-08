@@ -26,7 +26,6 @@ import 'settings_screen.dart';
 /// Abre o perfil completo do usuário (avatar na home ou card na caravana).
 void openMeProfile(BuildContext context) {
   final progress = context.read<ProgressService>();
-  final backend = context.read<BackendService>();
   final mode = progress.settings.appearanceMode;
   final appearance = AppearanceStyle.resolve(mode);
   Navigator.of(context).push(
@@ -44,11 +43,12 @@ void openMeProfile(BuildContext context) {
                 immersive: true,
                 dark: appearance.onDark,
                 title: progress.userName,
-                subtitle: 'Seu progresso, seu ritmo',
+                subtitle: 'Sua caminhada',
                 onBack: () => Navigator.pop(ctx),
-                photoUrl: backend.userPhotoUrl,
-                showTrailingAvatar: true,
-                showLeading: false,
+                leadingGlyph: CinematicGlyph.humanity,
+                chromeAccent: AppColors.orchid,
+                onTrailingTap: () => openSettings(ctx),
+                trailingGlyph: CinematicGlyph.tune,
               ),
             ),
           ),
@@ -124,35 +124,7 @@ class _MeScreenState extends State<MeScreen> {
     }
   }
 
-  void _openCaravanPrivacySettings() {
-    final progress = context.read<ProgressService>();
-    final mode = progress.settings.appearanceMode;
-    final appearance = AppearanceStyle.resolve(mode);
-    Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (ctx) => Appearance(
-          mode: mode,
-          style: appearance,
-          child: Scaffold(
-            backgroundColor: Colors.transparent,
-            body: ImmersiveBackground(
-              appearance: appearance,
-              child: SettingsScreen(
-                topBar: TopBar(
-                  inline: true,
-                  immersive: true,
-                  dark: appearance.onDark,
-                  title: 'Configurações',
-                  onBack: () => Navigator.pop(ctx),
-                  showLeading: false,
-                ),
-              ),
-            ),
-          ),
-        ),
-      ),
-    );
-  }
+  void _openCaravanPrivacySettings() => openSettings(context);
 
   @override
   Widget build(BuildContext context) {
@@ -161,7 +133,7 @@ class _MeScreenState extends State<MeScreen> {
     final accuracy = profile?.accuracyPercent;
 
     final body = <Widget>[
-      const LivingSeedCard(compact: true),
+      const LivingSeedCard(),
       const SizedBox(height: AppSpace.md),
       _JourneySummaryBar(
         steps: progress.steps,

@@ -112,6 +112,6 @@ class AppColors {
     1 => sand, // Trilhas — caminho / bronze
     2 => cedar, // Bíblia — palavra / teal
     3 => clay, // Juntos
-    _ => slate, // Config
+    _ => orchid, // Eu — identidade
   };
 }

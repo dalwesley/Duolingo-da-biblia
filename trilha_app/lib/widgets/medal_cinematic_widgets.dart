@@ -585,7 +585,7 @@ class _MedallionCoinPainter extends CustomPainter {
       old.palette.rimMid != palette.rimMid;
 }
 
-/// Emblema evolutivo — uma família, uma moeda, a escada em pontos.
+/// Emblema da família — uma moeda, sem escada de pontos.
 class MedalTrackEmblem extends StatelessWidget {
   final PilgrimTrackState trackState;
   final VoidCallback onTap;
@@ -636,75 +636,8 @@ class MedalTrackEmblem extends StatelessWidget {
                       : (started ? a.textMuted(0.72) : a.textMuted(0.4)),
                 ),
               ),
-              const SizedBox(height: 5),
-              MedalTrackDots(
-                trackState: trackState,
-                accent: accent,
-              ),
             ],
           ),
-        ),
-      ),
-    );
-  }
-}
-
-/// Pontos da escada — o próximo degrau é um anel, sem números.
-class MedalTrackDots extends StatelessWidget {
-  final PilgrimTrackState trackState;
-  final Color accent;
-
-  const MedalTrackDots({
-    super.key,
-    required this.trackState,
-    required this.accent,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final count = trackState.track.levels.length;
-    if (count <= 0) return const SizedBox.shrink();
-
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        for (var i = 0; i < count; i++) ...[
-          if (i > 0) const SizedBox(width: 3),
-          _TrackDot(
-            filled: i <= trackState.levelIndex,
-            next: i == trackState.levelIndex + 1,
-            accent: accent,
-          ),
-        ],
-      ],
-    );
-  }
-}
-
-class _TrackDot extends StatelessWidget {
-  final bool filled;
-  final bool next;
-  final Color accent;
-
-  const _TrackDot({
-    required this.filled,
-    required this.next,
-    required this.accent,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: next ? 6 : 4,
-      height: next ? 6 : 4,
-      decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        color: filled ? accent : Colors.transparent,
-        border: Border.all(
-          color: filled || next
-              ? accent.withValues(alpha: next ? 0.85 : 1)
-              : Colors.white.withValues(alpha: 0.18),
-          width: next ? 1.2 : 0.8,
         ),
       ),
     );

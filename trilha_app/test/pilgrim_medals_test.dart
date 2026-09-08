@@ -269,6 +269,8 @@ void main() {
       );
       expect(proximity?.nextLevel.id, 'track:word:chapters_25');
       expect(proximity?.remaining, 3);
+      expect(proximity?.isNearMiss, isTrue);
+      expect(proximity?.actionMessage, contains('Palavra'));
     });
 
     test('isJourneyVaultComplete when all journey tracks maxed', () {
@@ -315,7 +317,9 @@ void main() {
       );
       expect(proximity?.nextLevel.id, 'track:path:streak_30');
       expect(proximity?.remaining, 1);
+      expect(proximity?.isNearMiss, isTrue);
       expect(proximity?.shortMessage, contains('Falta 1'));
+      expect(proximity?.actionMessage, contains('Falta 1'));
     });
 
     test('trail semente has proximity from missions done', () {

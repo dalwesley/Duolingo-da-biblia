@@ -446,9 +446,22 @@ class _TrackDetailSheetState extends State<_TrackDetailSheet>
         ? MedalEngagementService.tierColor(current.tier)
         : a.textMuted(0.35);
     final bottom = MediaQuery.viewPaddingOf(context).bottom;
+    final celebratedIndex = widget.highlightLevelIndex ??
+        (trackState.hasStarted ? trackState.levelIndex : null);
+    final celebrated = celebratedIndex != null &&
+            celebratedIndex >= 0 &&
+            celebratedIndex < track.levels.length
+        ? track.levels[celebratedIndex]
+        : current;
+    final next = trackState.nextLevel;
+    final sparkUp = widget.celebration && celebrated?.isSpark == true;
     final headline = widget.celebration
-        ? 'SUBIU DE NÍVEL'
-        : (trackState.hasStarted ? 'EMBLEMA DA JORNADA' : 'A CONQUISTAR');
+        ? (sparkUp ? 'EMBLEMA ACESO' : 'SUBIU DE NÍVEL')
+        : (trackState.hasStarted
+            ? (track.kind == PilgrimVaultKind.trail
+                ? 'EMBLEMA DA TRILHA'
+                : 'EMBLEMA DA JORNADA')
+            : 'A CONQUISTAR');
 
     return Padding(
       padding: EdgeInsets.fromLTRB(AppSpace.md, 0, AppSpace.md, bottom + 12),
@@ -544,9 +557,13 @@ class _TrackDetailSheetState extends State<_TrackDetailSheet>
                                 return MedalHeroEmblem(
                                   accent: accent,
                                   glyph: track.glyph,
-                                  size: 64,
-                                  breath: trackState.hasStarted ? breath : 0,
-                                  glowing: trackState.hasStarted,
+                                  size: widget.celebration ? 88 : 56,
+                                  breath: trackState.hasStarted ||
+                                          widget.celebration
+                                      ? breath
+                                      : 0,
+                                  glowing: trackState.hasStarted ||
+                                      widget.celebration,
                                 );
                               },
                             ),
@@ -560,41 +577,76 @@ class _TrackDetailSheetState extends State<_TrackDetailSheet>
                                 color: a.text,
                               ),
                             ),
-                            const SizedBox(height: 6),
-                            Text(
-                              track.subtitle,
-                              textAlign: TextAlign.center,
-                              style: AppTypography.body(
-                                size: 13,
-                                color: a.textMuted(0.55),
+                            if (!widget.celebration) ...[
+                              const SizedBox(height: 6),
+                              Text(
+                                track.subtitle,
+                                textAlign: TextAlign.center,
+                                style: AppTypography.body(
+                                  size: 13,
+                                  color: a.textMuted(0.55),
+                                ),
                               ),
-                            ),
-                            if (current != null) ...[
+                            ],
+                            if (widget.celebration && celebrated != null) ...[
                               const SizedBox(height: 8),
                               Text(
-                                widget.celebration
-                                    ? 'Agora em ${tierLabel(current.tier)}'
-                                    : tierLabel(current.tier),
+                                'Agora em ${tierLabel(celebrated.tier)}',
                                 style: AppTypography.title(
                                   size: 14,
                                   weight: FontWeight.w800,
                                   color: accent,
                                 ),
                               ),
-                            ],
-                            const SizedBox(height: 16),
-                            MedalTrackDots(
-                              trackState: trackState,
-                              accent: accent,
-                            ),
-                            const SizedBox(height: 18),
-                            for (var i = 0; i < track.levels.length; i++)
-                              _TrackLevelRow(
-                                level: track.levels[i],
-                                unlocked: i <= trackState.levelIndex,
-                                highlighted: widget.highlightLevelIndex == i,
-                                isNext: i == trackState.levelIndex + 1,
+                              const SizedBox(height: 6),
+                              Text(
+                                celebrated.title,
+                                textAlign: TextAlign.center,
+                                style: AppTypography.body(
+                                  size: 15,
+                                  weight: FontWeight.w700,
+                                  color: a.text,
+                                ),
                               ),
+                              const SizedBox(height: 4),
+                              Text(
+                                celebrated.hint,
+                                textAlign: TextAlign.center,
+                                style: AppTypography.body(
+                                  size: 13,
+                                  color: a.textMuted(0.55),
+                                ),
+                              ),
+                              if (next != null) ...[
+                                const SizedBox(height: 18),
+                                _TrackLevelRow(
+                                  level: next,
+                                  unlocked: false,
+                                  isNext: true,
+                                ),
+                              ],
+                            ] else ...[
+                              if (current != null) ...[
+                                const SizedBox(height: 8),
+                                Text(
+                                  tierLabel(current.tier),
+                                  style: AppTypography.title(
+                                    size: 14,
+                                    weight: FontWeight.w800,
+                                    color: accent,
+                                  ),
+                                ),
+                              ],
+                              const SizedBox(height: 18),
+                              for (var i = 0; i < track.levels.length; i++)
+                                _TrackLevelRow(
+                                  level: track.levels[i],
+                                  unlocked: i <= trackState.levelIndex,
+                                  highlighted:
+                                      widget.highlightLevelIndex == i,
+                                  isNext: i == trackState.levelIndex + 1,
+                                ),
+                            ],
                             const SizedBox(height: 20),
                             CopperCta(
                               label: widget.celebration
@@ -640,6 +692,9 @@ class _TrackLevelRow extends StatelessWidget {
     final accent = unlocked
         ? MedalEngagementService.tierColor(level.tier)
         : a.textMuted(0.28);
+    final heading = level.isSpark
+        ? level.title
+        : '${tierLabel(level.tier)} · ${level.title}';
 
     return Container(
       width: double.infinity,
@@ -675,9 +730,7 @@ class _TrackLevelRow extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  level.isSpark
-                      ? level.title
-                      : '${tierLabel(level.tier)} · ${level.title}',
+                  heading,
                   style: AppTypography.label(
                     size: 10,
                     letterSpacing: 0.3,

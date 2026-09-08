@@ -2,6 +2,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:trilha_app/models/caravan_pilgrim_profile.dart';
 import 'package:trilha_app/models/pilgrim_medal_catalog.dart';
 import 'package:trilha_app/models/pilgrim_medals.dart';
+import 'package:trilha_app/models/trail.dart';
 
 void main() {
   group('PilgrimMedals engagement v3.1', () {
@@ -48,6 +49,47 @@ void main() {
       expect(tiles.length, PilgrimMedalCatalog.journeyTracks.length);
       expect(tiles.map((t) => t.id), contains('track:word'));
       expect(tiles.map((t) => t.id), isNot(contains('track:word:chapters_25')));
+    });
+
+    test('trail vault is one evolving emblem, not three coins', () {
+      final trail = Trail(
+        slug: 'genesis-1-11',
+        title: 'Gênesis 1–11',
+        description: '',
+        icon: '📖',
+        order: 1,
+        comingSoon: false,
+        color: '#2F5D4A',
+        modules: [
+          TrailModule(
+            title: 'Mod',
+            icon: '🌍',
+            missions: [
+              Mission(
+                slug: 'a',
+                title: 'a',
+                intro: '',
+                type: 'lesson',
+                stepsReward: 50,
+                questions: const [],
+              ),
+            ],
+          ),
+        ],
+      );
+      const profile = CaravanPilgrimProfile(
+        name: 'Ana',
+        steps: 10,
+        completedMissions: ['a'],
+      );
+      final vault = PilgrimMedals.evaluateVaults(
+        profile: profile,
+        catalog: [trail],
+      ).firstWhere((v) => v.vault.kind == PilgrimVaultKind.trail);
+
+      expect(vault.tracks, hasLength(1));
+      expect(PilgrimMedals.tilesForVault(vault), hasLength(1));
+      expect(vault.tracks.first.track.title, 'Gênesis 1–11');
     });
 
     test('visibleDiscoveryTiles hides locked rares', () {

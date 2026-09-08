@@ -7,7 +7,6 @@ import '../services/league_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
-import '../utils/dust_copy.dart';
 import '../utils/layout_utils.dart';
 import '../utils/liturgical_calendar.dart';
 import '../utils/trail_progress.dart';
@@ -23,7 +22,7 @@ import '../widgets/league_outcome_card.dart';
 import '../widgets/league_risk_card.dart';
 import '../widgets/offline_curriculum_dialog.dart';
 import '../widgets/streak_repair_banner.dart';
-import '../widgets/streak_week.dart';
+import '../widgets/medal_proximity_whisper.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 import 'bible_screen.dart';
@@ -262,10 +261,7 @@ class _HomeScreenState extends State<HomeScreen>
     final current = active != null
         ? TrailProgress.getCurrentMission(active, progress.completedMissions)
         : null;
-    final goal = progress.settings.dailyGoal;
-    final playedToday = progress.walkedToday;
     final goalMet = progress.dailyGoalMet;
-    final goalPct = goal > 0 ? progress.missionsToday / goal : 0.0;
 
     _maybeShowComeback(progress, missionSlug: current?.slug);
 
@@ -278,7 +274,7 @@ class _HomeScreenState extends State<HomeScreen>
       ),
       physics: const ClampingScrollPhysics(),
       children: [
-        // Header unificado: foto + nome + HUD de run.
+        // Header: saudação + estação + pulso do dia.
         _reveal(
           0,
           HomePlayerHeader(
@@ -286,9 +282,8 @@ class _HomeScreenState extends State<HomeScreen>
             onTapMission: current != null
                 ? () => widget.onOpenMission(current.slug)
                 : widget.onOpenTrilhas,
-            lampsPreview: ProgressService.lampsForMission(
-              isBoss: current?.isBoss ?? false,
-            ),
+            onLiturgyTap: () =>
+                _openBible(LiturgicalCalendar.momentFor().focusRef),
           ),
         ),
         const SizedBox(height: AppSpace.md),
@@ -310,20 +305,34 @@ class _HomeScreenState extends State<HomeScreen>
         // CTA dominante: missão pronta.
         _reveal(
           1,
-          HeroContinueCard(
-            mission: current,
-            trailTitle: active?.title ?? '',
-            trailSlug: active?.slug ?? 'genesis-1-11',
-            trailColor: active?.color ?? '#1B3A5C',
-            onTap: current != null
-                ? () => widget.onOpenMission(current.slug)
-                : null,
-            onExploreTrails: widget.onOpenTrilhas,
-            goalMet: goalMet,
-            atRisk: progress.isStreakAtRisk,
-            lampsReady: ProgressService.lampsForMission(
-              isBoss: current?.isBoss ?? false,
-            ),
+          Column(
+            children: [
+              HeroContinueCard(
+                mission: current,
+                trailTitle: active?.title ?? '',
+                trailSlug: active?.slug ?? 'genesis-1-11',
+                trailColor: active?.color ?? '#1B3A5C',
+                onTap: current != null
+                    ? () => widget.onOpenMission(current.slug)
+                    : null,
+                onExploreTrails: widget.onOpenTrilhas,
+                goalMet: goalMet,
+                atRisk: progress.isStreakAtRisk,
+                lampsReady: ProgressService.lampsForMission(
+                  isBoss: current?.isBoss ?? false,
+                ),
+              ),
+              MedalHomeWhisper(
+                catalog: trails,
+                priorityTrailSlug: active?.slug,
+                onBible: _openBible,
+                onMemory: _openMemory,
+                onMission: current != null
+                    ? () => widget.onOpenMission(current.slug)
+                    : widget.onOpenTrilhas,
+                onShare: _openBible,
+              ),
+            ],
           ),
         ),
         const SizedBox(height: AppSpace.section),
@@ -331,22 +340,6 @@ class _HomeScreenState extends State<HomeScreen>
           _reveal(2, const StreakRepairBanner()),
           const SizedBox(height: AppSpace.section),
         ],
-        _reveal(
-          3,
-          _DayPulse(
-            missionsToday: progress.missionsToday,
-            goal: goal,
-            goalPct: goalPct,
-            streak: progress.streak,
-            playedToday: playedToday,
-            goalMet: goalMet,
-            returningAfterGap: progress.isReturningAfterGap,
-            atRisk: progress.isStreakAtRisk,
-            questsLeft:
-                DailyQuestDefs.all.length - progress.questsCompletedToday,
-          ),
-        ),
-        const SizedBox(height: AppSpace.section),
         Builder(
           builder: (context) {
             final league = context.watch<LeagueService>();
@@ -372,7 +365,6 @@ class _HomeScreenState extends State<HomeScreen>
           ),
         ),
         const SizedBox(height: AppSpace.section),
-        // Estudo / Palavra depois do loop de jogo.
         _reveal(
           4,
           HomeWordCard(
@@ -389,7 +381,7 @@ class _HomeScreenState extends State<HomeScreen>
   }
 }
 
-/// Só revisitar erros — Memorizar já tem card de quest.
+/// Só revisitar erros — memorizar vive na própria aba.
 class _RevisitPracticeLink extends StatelessWidget {
   const _RevisitPracticeLink();
 
@@ -432,99 +424,6 @@ class _RevisitPracticeLink extends StatelessWidget {
             ),
           ),
           Icon(Icons.chevron_right_rounded, size: 20, color: a.textMuted(0.45)),
-        ],
-      ),
-    );
-  }
-}
-
-/// Pulso do dia — sequência da semana + meta diária.
-class _DayPulse extends StatelessWidget {
-  final int missionsToday;
-  final int goal;
-  final double goalPct;
-  final int streak;
-  final bool playedToday;
-  final bool goalMet;
-  final bool returningAfterGap;
-  final bool atRisk;
-  final int questsLeft;
-
-  const _DayPulse({
-    required this.missionsToday,
-    required this.goal,
-    required this.goalPct,
-    required this.streak,
-    required this.playedToday,
-    required this.goalMet,
-    required this.returningAfterGap,
-    required this.atRisk,
-    this.questsLeft = 0,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final String detail;
-    if (goalMet) {
-      if (questsLeft > 0) {
-        detail = questsLeft == 1
-            ? 'Ainda há 1 missão diária · passos extras'
-            : 'Ainda há $questsLeft missões diárias';
-      } else if (streak > 0) {
-        detail = streak == 1
-            ? 'Meta ok · 1 dia protegido'
-            : 'Meta ok · $streak dias protegidos';
-      } else {
-        detail = 'Meta cumprida';
-      }
-    } else if (atRisk) {
-      detail = DustCopy.uiRiskDetail();
-    } else if (playedToday) {
-      detail = '$missionsToday de $goal na meta';
-    } else if (returningAfterGap) {
-      detail = 'Retome com uma lição';
-    } else {
-      detail = goal == 1
-          ? 'Meta de hoje · 1 lição'
-          : 'Meta de hoje · $goal lições';
-    }
-
-    final pulseTone = atRisk
-        ? AppColors.streak
-        : goalMet
-        ? AppColors.teal
-        : AppColors.primaryLight;
-
-    return GlassCard(
-      padding: AppMetrics.cardPaddingCompact,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text(
-            detail,
-            maxLines: 2,
-            overflow: TextOverflow.ellipsis,
-            style: AppTypography.title(
-              size: 13,
-              color: atRisk
-                  ? AppColors.streak
-                  : goalMet
-                  ? AppColors.teal
-                  : a.text.withValues(alpha: 0.88),
-            ),
-          ),
-          if (!returningAfterGap && !goalMet) ...[
-            const SizedBox(height: AppSpace.sm),
-            AppProgressBar(
-              value: goalPct,
-              height: AppMetrics.progressHeight,
-              color: pulseTone,
-              trackColor: pulseTone.withValues(alpha: 0.14),
-            ),
-          ],
-          const SizedBox(height: AppSpace.md),
-          const StreakWeek(),
         ],
       ),
     );
@@ -621,11 +520,9 @@ class _HomeSkeletonState extends State<_HomeSkeleton>
       ),
       physics: const NeverScrollableScrollPhysics(),
       children: [
-        _ShimmerBox(controller: _shimmer, height: 108),
+        _ShimmerBox(controller: _shimmer, height: 168),
         const SizedBox(height: AppSpace.md),
         _ShimmerBox(controller: _shimmer, height: 280),
-        const SizedBox(height: AppSpace.section),
-        _ShimmerBox(controller: _shimmer, height: 88),
         const SizedBox(height: AppSpace.section),
         _ShimmerBox(controller: _shimmer, height: 132),
       ],

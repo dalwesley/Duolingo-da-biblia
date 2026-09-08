@@ -540,14 +540,34 @@ class SoftBadge extends StatelessWidget {
 class CardHeader extends StatelessWidget {
   final String label;
   final Widget? trailing;
+  final CinematicGlyph? glyph;
+  final Color? accent;
 
-  const CardHeader({super.key, required this.label, this.trailing});
+  const CardHeader({
+    super.key,
+    required this.label,
+    this.trailing,
+    this.glyph,
+    this.accent,
+  });
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final mark = accent ?? a.sectionLabel;
     return Row(
       children: [
-        Expanded(child: SectionLabel(label)),
+        if (glyph != null) ...[
+          CinematicIcon(
+            glyph: glyph!,
+            size: 16,
+            accent: mark,
+            framed: false,
+            glowing: false,
+          ),
+          const SizedBox(width: 8),
+        ],
+        Expanded(child: SectionLabel(label, color: accent)),
         ?trailing,
       ],
     );

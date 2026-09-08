@@ -79,8 +79,8 @@ AT/NT e “livro completo” **não** são medalhas.
 
 ## Princípios
 1. Prefixo consecutivo — nunca pintar ouro sem a faísca.
-2. 5 emblemas no cofre. Conquistas aparecem como moedas no sheet da família.
-3. Faísca não vira moeda no álbum.
-4. Feedback na celebração = uma linha (`Palavra 22/25 · Prata`), não card no Hoje.
+2. Um emblema por família (e um por trilha). O emblema **evolui**; não há álbum de moedas do mesmo eixo.
+3. Sheet ao tocar: um emblema + escada em texto. Celebração: o degrau novo e o próximo passo — sem medalha dentro de medalha.
+4. Near-miss no ponto da ação: uma linha no Hoje e no mapa se faltam ≤3. Celebração: uma linha, não card.
 5. Pioneiro silencioso. Surpresa no fluxo real: Palavra antes da missão.
 6. Medalha não coleciona título bíblico. Palavra mede capítulos.

@@ -366,6 +366,14 @@ class PilgrimTrackProximity {
     return '${track.title} $current/$target · $material';
   }
 
+  /// Copy de puxar ação — Duolingo “2 lessons to go”.
+  String get actionMessage {
+    if (remaining == 1) return 'Falta 1 $unitLabel · ${track.title}';
+    return 'Faltam $remaining $unitLabel · ${track.title}';
+  }
+
+  bool get isNearMiss => remaining > 0 && remaining <= 3;
+
   MedalCtaKind get ctaKind => switch (track.family) {
         PilgrimMedalFamily.word => MedalCtaKind.bible,
         PilgrimMedalFamily.memory => MedalCtaKind.memory,
