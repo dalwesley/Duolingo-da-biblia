@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
+import '../models/pilgrim_medal_models.dart';
 import '../models/study_room.dart';
 import '../models/walk_companion.dart';
 import '../services/backend_service.dart';
@@ -11,6 +12,7 @@ import '../services/progress_service.dart';
 import '../services/companion_service.dart';
 import '../services/invite_deep_link_service.dart';
 import '../services/league_service.dart';
+import '../services/remote_config_service.dart';
 import '../services/room_service.dart';
 import '../services/app_update_service.dart';
 import '../theme/app_theme.dart';
@@ -29,6 +31,7 @@ import '../widgets/ui_primitives.dart';
 
 class LeagueScreen extends StatefulWidget {
   final Widget? topBar;
+
   /// Quando a aba Juntos está visível — processa deep link pendente.
   final bool active;
   final VoidCallback? onOpenOwnProfile;
@@ -131,11 +134,7 @@ class _LeagueScreenState extends State<LeagueScreen>
 
       try {
         await backend
-            .settleAndSyncLeague(
-              progress,
-              league,
-              roomCode: rooms.activeCode,
-            )
+            .settleAndSyncLeague(progress, league, roomCode: rooms.activeCode)
             .timeout(const Duration(seconds: 12));
       } on TimeoutException {
         debugPrint('settleAndSyncLeague timeout — segue sem bloquear a UI');
@@ -145,15 +144,19 @@ class _LeagueScreenState extends State<LeagueScreen>
         if (!mounted) return;
         setState(() {
           _playersLoading = false;
-          _playersError = backend.lastError ??
+          _playersError =
+              backend.lastError ??
               'Entre com Google para ver a caravana ao vivo.';
         });
         return;
       }
 
       final week = LeagueService.weekKey();
+      final groupCode = league.groupCode;
       final fetched = await Future.wait<List<CloudPlayer>>([
-        backend.fetchWeekPlayers(week, tier: league.tierIndex),
+        groupCode != null
+            ? backend.fetchGroupWeekPlayers(groupCode, week)
+            : backend.fetchWeekPlayers(week, tier: league.tierIndex),
         backend.fetchOverallPlayers(),
       ]).timeout(const Duration(seconds: 12));
       final players = fetched[0];
@@ -286,7 +289,15 @@ class _LeagueScreenState extends State<LeagueScreen>
           ],
           _reveal(
             0,
-            _SegmentTabs(index: _tab, onChanged: (i) => setState(() => _tab = i)),
+            _SegmentTabs(
+              index: _tab,
+              companionAlert:
+                  context.watch<CompanionService>().incomingNudge != null,
+              onChanged: (i) {
+                HapticFeedback.selectionClick();
+                setState(() => _tab = i);
+              },
+            ),
           ),
           const SizedBox(height: AppSpace.section),
           if (_tab == 0)
@@ -358,7 +369,6 @@ class _LeagueScreenState extends State<LeagueScreen>
         context.read<LeagueService>().observeWeeklyRank(userRank);
       });
     }
-    final userSteps = overall ? progress.steps : progress.weeklySteps;
     final canPromote = league.tierIndex < LeagueTier.values.length - 1;
     final canDemote = league.tierIndex > 0;
     final a = Appearance.of(context);
@@ -366,20 +376,11 @@ class _LeagueScreenState extends State<LeagueScreen>
     final children = <Widget>[
       _reveal(
         1,
-        _RankingPeriodTabs(
-          overall: overall,
-          onChanged: (value) => setState(() => _overallRanking = value),
-        ),
-      ),
-      const SizedBox(height: AppSpace.section),
-      _reveal(
-        2,
-        _CaravanaHeroCard(
-          overall: overall,
-          rank: userRank,
-          steps: userSteps,
-          tierIndex: league.tierIndex,
-          trend: overall ? null : league.weeklyTrendFor(userRank),
+        Center(
+          child: _RankingPeriodTabs(
+            overall: overall,
+            onChanged: (value) => setState(() => _overallRanking = value),
+          ),
         ),
       ),
       if (_playersError != null) ...[
@@ -390,12 +391,7 @@ class _LeagueScreenState extends State<LeagueScreen>
           style: AppTypography.body(size: 12, color: AppColors.error),
         ),
       ],
-      const SizedBox(height: AppSpace.section),
-      SectionLabel(
-        overall ? 'Classificação geral' : 'Classificação da semana',
-        color: a.textMuted(0.7),
-      ),
-      const SizedBox(height: AppSpace.sm),
+      const SizedBox(height: AppSpace.md),
     ];
 
     if (entries.length <= 1 && !_playersLoading) {
@@ -415,44 +411,20 @@ class _LeagueScreenState extends State<LeagueScreen>
           ),
         ),
       );
-    }
-
-    for (var i = 0; i < entries.length; i++) {
-      final rank = i + 1;
-      if (!overall && rank == 1 && canPromote) {
-        children.add(
-          _ZoneLabel(
-            text:
-                'ZONA DE SUBIDA · ${LeagueTier.values[league.tierIndex + 1].shortLabel.toUpperCase()}',
-            up: true,
-          ),
-        );
-      }
-      if (!overall &&
-          rank == LeagueService.groupSize - LeagueService.demoteCount + 1 &&
-          canDemote) {
-        children.add(
-          _ZoneLabel(
-            text:
-                'ZONA DE DESCIDA · ${LeagueTier.values[league.tierIndex - 1].shortLabel.toUpperCase()}',
-            up: false,
-          ),
-        );
-      }
+    } else if (entries.isNotEmpty) {
       children.add(
         _reveal(
-          (4 + i ~/ 4).clamp(0, 8),
-          _StandingRow(
-            entry: entries[i],
-            rank: rank,
-            weeklySteps: !overall,
+          3,
+          _LeaderboardBoard(
+            entries: entries,
+            weekly: !overall,
+            canPromote: !overall && canPromote,
+            canDemote: !overall && canDemote,
+            tierIndex: league.tierIndex,
             onOpenOwnProfile: widget.onOpenOwnProfile,
           ),
         ),
       );
-      if (!overall && rank == LeagueService.promoteCount && canPromote) {
-        children.add(const _ZoneDivider());
-      }
     }
     return children;
   }
@@ -461,7 +433,6 @@ class _LeagueScreenState extends State<LeagueScreen>
     final companions = context.watch<CompanionService>();
     final backend = context.watch<BackendService>();
     final progress = context.watch<ProgressService>();
-    final a = Appearance.of(context);
 
     if (!companions.isLoaded) {
       return [
@@ -490,13 +461,26 @@ class _LeagueScreenState extends State<LeagueScreen>
     final active = companions.companions
         .where((c) => !c.awaitingPartner)
         .toList();
-    final togetherToday =
-        active.where((c) => c.bothWalkedToday).length;
+    final togetherToday = active.where((c) => c.bothWalkedToday).length;
+    final waitingOnMe = active.where((c) => c.waitingOnMe).length;
     final bestStreak = companions.companions.isEmpty
         ? 0
         : companions.companions
-            .map((c) => c.sharedDays)
-            .reduce((a, b) => a > b ? a : b);
+              .map((c) => c.sharedDays)
+              .reduce((a, b) => a > b ? a : b);
+
+    final ordered = [...companions.companions]..sort((a, b) {
+      int score(WalkCompanion c) {
+        if (c.hasIncomingNudge) return 0;
+        if (c.waitingOnMe) return 1;
+        if (c.theyAreDusty) return 2;
+        if (c.awaitingPartner) return 3;
+        if (c.bothWalkedToday) return 5;
+        return 4;
+      }
+
+      return score(a).compareTo(score(b));
+    });
 
     final list = <Widget>[
       _reveal(
@@ -505,8 +489,9 @@ class _LeagueScreenState extends State<LeagueScreen>
           companionCount: companions.companions.length,
           activeCount: active.length,
           togetherToday: togetherToday,
+          waitingOnMe: waitingOnMe,
           bestStreak: bestStreak,
-          maxSlots: CompanionService.maxCompanions,
+          maxSlots: companions.maxCompanions,
         ),
       ),
       const SizedBox(height: AppSpace.section),
@@ -537,37 +522,39 @@ class _LeagueScreenState extends State<LeagueScreen>
       return list;
     }
 
-    for (var i = 0; i < companions.companions.length; i++) {
+    for (var i = 0; i < ordered.length; i++) {
       list.add(
         _reveal(
           (2 + i).clamp(0, 8),
           _CompanionCard(
-            companion: companions.companions[i],
+            companion: ordered[i],
             myName: progress.userName,
             onCopy: () async {
               await Clipboard.setData(
-                ClipboardData(text: companions.companions[i].code),
+                ClipboardData(text: ordered[i].code),
               );
               if (!context.mounted) return;
-              ScaffoldMessenger.of(
+              showAppToastFor(
                 context,
-              ).showSnackBar(const SnackBar(content: Text('Código copiado')));
+                message: 'Código copiado',
+                glyph: CinematicGlyph.copy,
+              );
             },
             onShowQr: () => showInviteQrSheet(
               context,
-              code: companions.companions[i].code,
+              code: ordered[i].code,
               inviterName: progress.userName,
             ),
             onNudge: () => showCompanionNudgeSheet(
               context,
-              companion: companions.companions[i],
+              companion: ordered[i],
               myName: progress.userName,
             ),
             onLeave: () async {
               final ok = await _confirmLeaveCompanion(context);
               if (ok == true && context.mounted) {
                 await context.read<CompanionService>().leave(
-                  companions.companions[i].code,
+                  ordered[i].code,
                   progress: progress,
                 );
               }
@@ -579,46 +566,35 @@ class _LeagueScreenState extends State<LeagueScreen>
     }
 
     list.add(const SizedBox(height: AppSpace.sm));
-    list.add(
-      Row(
-        children: [
-          if (companions.canAdd)
+    if (companions.canAdd) {
+      list.add(
+        Row(
+          children: [
             Expanded(
-              child: _FilledAction(
+              child: CopperCta(
                 label: 'Convidar',
+                leading: CinematicGlyph.people,
+                trailing: null,
+                dense: true,
                 onTap: companions.loading
                     ? null
                     : () => _createCompanion(context),
               ),
             ),
-          if (companions.canAdd) const SizedBox(width: AppSpace.sm),
-          if (companions.canAdd)
+            const SizedBox(width: AppSpace.sm),
             Expanded(
-              child: _FilledAction(
-                label: 'Aceitar convite',
+              child: GhostCta(
+                label: 'Aceitar',
+                leading: CinematicGlyph.qr,
                 onTap: companions.loading
                     ? null
                     : () => _joinCompanion(context),
               ),
             ),
-        ],
-      ),
-    );
-    list.add(const SizedBox(height: AppSpace.md));
-    list.add(
-      TextButton(
-        onPressed: () async {
-          await companions.syncPresence(progress);
-        },
-        child: Text(
-          'Atualizar presença',
-          style: AppTypography.body(
-            weight: FontWeight.w700,
-            color: a.textMuted(0.7),
-          ),
+          ],
         ),
-      ),
-    );
+      );
+    }
     return list;
   }
 
@@ -628,8 +604,11 @@ class _LeagueScreenState extends State<LeagueScreen>
     final created = await service.createInvite(progress);
     if (!context.mounted) return;
     if (created == null) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(service.lastError ?? 'Falha ao criar')),
+      showAppToastFor(
+        context,
+        message: service.lastError ?? 'Falha ao criar',
+        glyph: CinematicGlyph.echo,
+        tone: AppToastTone.warn,
       );
       return;
     }
@@ -666,10 +645,11 @@ class _LeagueScreenState extends State<LeagueScreen>
     );
     if (!context.mounted) return;
     if (!joinedOk) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(service.lastError ?? 'Não foi possível entrar'),
-        ),
+      showAppToastFor(
+        context,
+        message: service.lastError ?? 'Não foi possível entrar',
+        glyph: CinematicGlyph.echo,
+        tone: AppToastTone.warn,
       );
       return;
     }
@@ -680,10 +660,7 @@ class _LeagueScreenState extends State<LeagueScreen>
         break;
       }
     }
-    await showCompanionFormedSheet(
-      context,
-      partnerName: joined?.displayName,
-    );
+    await showCompanionFormedSheet(context, partnerName: joined?.displayName);
   }
 
   Future<bool?> _confirmLeaveCompanion(BuildContext context) {
@@ -723,7 +700,6 @@ class _LeagueScreenState extends State<LeagueScreen>
     final rooms = context.watch<RoomService>();
     final backend = context.watch<BackendService>();
     final progress = context.watch<ProgressService>();
-    final a = Appearance.of(context);
 
     if (!rooms.isLoaded) {
       return [
@@ -778,15 +754,6 @@ class _LeagueScreenState extends State<LeagueScreen>
 
     return [
       _reveal(
-        1,
-        const _RoomsIntro(
-          title: 'Caminhem em sala',
-          subtitle:
-              'Acompanhe a semana do grupo, compartilhe o código e anime quem ficou perto no ranking.',
-        ),
-      ),
-      const SizedBox(height: AppSpace.section),
-      _reveal(
         2,
         _RoomHeader(
           room: room,
@@ -797,9 +764,11 @@ class _LeagueScreenState extends State<LeagueScreen>
           onCopy: () async {
             await Clipboard.setData(ClipboardData(text: room.code));
             if (!context.mounted) return;
-            ScaffoldMessenger.of(
+            showAppToastFor(
               context,
-            ).showSnackBar(const SnackBar(content: Text('Código copiado!')));
+              message: 'Código copiado',
+              glyph: CinematicGlyph.copy,
+            );
           },
           onShowQr: () => showInviteQrSheet(
             context,
@@ -816,11 +785,12 @@ class _LeagueScreenState extends State<LeagueScreen>
             final ok = await _confirmLeave(context);
             if (ok == true && context.mounted) {
               await context.read<RoomService>().leaveRoom(
-                    progress: context.read<ProgressService>(),
-                  );
+                progress: context.read<ProgressService>(),
+              );
             }
           },
           onRefresh: () => rooms.refreshMembers(),
+          onEditGoal: () => _editRoomGoal(context, room.weeklyGoalSteps),
         ),
       ),
       const SizedBox(height: AppSpace.md),
@@ -830,19 +800,20 @@ class _LeagueScreenState extends State<LeagueScreen>
           members: members,
           roomCode: room.code,
           walkedToday: progress.walkedToday,
+          weeklyGoalSteps: room.weeklyGoalSteps,
           onClaim: () async {
             final week = LeagueService.weekKey();
             final chestId = 'room-pulse-$week-${room.code}';
-            final ok = await progress.claimChest(chestId, 15);
+            final bonus = RemoteConfigService.instance.roomChestBonusSteps;
+            final ok = await progress.claimChest(chestId, bonus);
             if (!context.mounted) return;
-            ScaffoldMessenger.of(context).showSnackBar(
-              SnackBar(
-                content: Text(
-                  ok
-                      ? 'Baú da sala · +15 passos'
-                      : 'Baú já coletado nesta semana',
-                ),
-              ),
+            showAppToastFor(
+              context,
+              message: ok
+                  ? 'Baú da sala · +$bonus passos'
+                  : 'Baú já coletado nesta semana',
+              glyph: ok ? CinematicGlyph.gem : CinematicGlyph.echo,
+              tone: ok ? AppToastTone.accent : AppToastTone.warn,
             );
           },
         ),
@@ -856,9 +827,7 @@ class _LeagueScreenState extends State<LeagueScreen>
           style: AppTypography.body(size: 12, color: AppColors.error),
         ),
       ],
-      const SizedBox(height: AppSpace.section),
-      SectionLabel('Ranking da sala', color: a.textMuted(0.7)),
-      const SizedBox(height: AppSpace.sm),
+      const SizedBox(height: AppSpace.md),
       if (rooms.loading)
         const Padding(
           padding: EdgeInsets.symmetric(vertical: AppSpace.xxl),
@@ -874,33 +843,52 @@ class _LeagueScreenState extends State<LeagueScreen>
             color: Appearance.of(context).textMuted(0.7),
           ),
         )
-      else
-        for (var i = 0; i < members.length; i++)
-          _reveal(
-            (3 + i ~/ 4).clamp(0, 8),
-            _StandingRow(
-              entry: LeagueEntry(
-                name: members[i].name,
-                steps: members[i].steps,
-                isUser: members[i].isUser,
-                lastWalkDate: members[i].lastWalk,
-              ),
-              rank: i + 1,
-              weeklySteps: true,
-              onOpenOwnProfile: widget.onOpenOwnProfile,
-            ),
+      else ...[
+        _reveal(
+          3,
+          _LeaderboardBoard(
+            entries: [
+              for (final m in members)
+                LeagueEntry(
+                  uid: m.uid,
+                  name: m.name,
+                  steps: m.steps,
+                  isUser: m.isUser,
+                  lastWalkDate: m.lastWalk,
+                ),
+            ],
+            weekly: true,
+            canPromote: false,
+            canDemote: false,
+            title: 'Esta semana',
+            onOpenOwnProfile: widget.onOpenOwnProfile,
           ),
-      const SizedBox(height: 8),
-      Text(
-        'Ordem por passos nesta semana · ${progress.userName}',
-        textAlign: TextAlign.center,
-        style: AppTypography.label(
-          size: 11,
-          letterSpacing: 0,
-          color: a.textMuted(0.55),
         ),
-      ),
+      ],
     ];
+  }
+
+  /// Dono define (ou apaga, deixando em branco) a meta semanal de passos da sala.
+  Future<void> _editRoomGoal(BuildContext context, int? current) async {
+    final raw = await showDialog<String>(
+      context: context,
+      builder: (ctx) => _TextInputDialog(
+        title: 'Meta semanal da sala',
+        hint: 'Ex.: 500 (deixe em branco para tirar a meta)',
+        confirmLabel: 'Salvar',
+        maxLength: 6,
+        initialValue: current != null ? '$current' : '',
+      ),
+    );
+    if (raw == null || !context.mounted) return;
+    final trimmed = raw.trim();
+    if (trimmed.isEmpty) {
+      await context.read<RoomService>().setWeeklyGoal(null);
+      return;
+    }
+    final goal = int.tryParse(trimmed);
+    if (goal == null) return;
+    await context.read<RoomService>().setWeeklyGoal(goal);
   }
 
   Future<void> _showCreateRoom(BuildContext context) async {
@@ -920,12 +908,11 @@ class _LeagueScreenState extends State<LeagueScreen>
     );
     if (!context.mounted) return;
     if (ok) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(
+      showAppToastFor(
+        context,
+        message:
             'Sala criada! Código: ${context.read<RoomService>().activeCode}',
-          ),
-        ),
+        glyph: CinematicGlyph.people,
       );
     }
   }
@@ -989,8 +976,13 @@ class _LeagueScreenState extends State<LeagueScreen>
 class _SegmentTabs extends StatelessWidget {
   final int index;
   final ValueChanged<int> onChanged;
+  final bool companionAlert;
 
-  const _SegmentTabs({required this.index, required this.onChanged});
+  const _SegmentTabs({
+    required this.index,
+    required this.onChanged,
+    this.companionAlert = false,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -999,25 +991,82 @@ class _SegmentTabs extends StatelessWidget {
       radius: AppRadii.md,
       child: Row(
         children: [
-          _seg(context, 0, 'Caravana'),
-          _seg(context, 1, 'Companhia'),
-          _seg(context, 2, 'Salas'),
+          _seg(context, 0, 'Caravana', CinematicGlyph.podium),
+          _seg(context, 1, 'Companhia', CinematicGlyph.path, alert: companionAlert),
+          _seg(context, 2, 'Salas', CinematicGlyph.people),
         ],
       ),
     );
   }
 
-  Widget _seg(BuildContext context, int i, String label) {
+  Widget _seg(
+    BuildContext context,
+    int i,
+    String label,
+    CinematicGlyph glyph, {
+    bool alert = false,
+  }) {
     final selected = index == i;
+    final a = Appearance.of(context);
+    final color = selected ? AppColors.accent : a.textMuted(0.55);
     return Expanded(
-      child: AppSelectChip(
-        label: label,
-        selected: selected,
-        onTap: () => onChanged(i),
-        style: AppSelectChipStyle.ghost,
-        fontSize: 13,
-        padding: const EdgeInsets.symmetric(vertical: 10),
-        borderRadius: const BorderRadius.all(Radius.circular(AppRadii.sm)),
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: () => onChanged(i),
+          borderRadius: BorderRadius.circular(AppRadii.sm),
+          child: AnimatedContainer(
+            duration: const Duration(milliseconds: 180),
+            padding: const EdgeInsets.symmetric(vertical: 10),
+            decoration: BoxDecoration(
+              color: selected
+                  ? AppColors.accent.withValues(alpha: 0.16)
+                  : Colors.transparent,
+              borderRadius: BorderRadius.circular(AppRadii.sm),
+              border: selected
+                  ? Border.all(color: AppColors.accent.withValues(alpha: 0.55))
+                  : null,
+            ),
+            child: Column(
+              children: [
+                Stack(
+                  clipBehavior: Clip.none,
+                  children: [
+                    CinematicIcon(
+                      glyph: glyph,
+                      size: 22,
+                      accent: color,
+                      framed: false,
+                    ),
+                    if (alert)
+                      Positioned(
+                        right: -3,
+                        top: -2,
+                        child: Container(
+                          width: 8,
+                          height: 8,
+                          decoration: const BoxDecoration(
+                            color: AppColors.streak,
+                            shape: BoxShape.circle,
+                          ),
+                        ),
+                      ),
+                  ],
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  label,
+                  style: AppTypography.label(
+                    size: 11,
+                    letterSpacing: 0.2,
+                    weight: selected ? FontWeight.w900 : FontWeight.w700,
+                    color: color,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
       ),
     );
   }
@@ -1032,21 +1081,19 @@ class _RankingPeriodTabs extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return Center(
-      child: Container(
-        padding: const EdgeInsets.all(3),
-        decoration: BoxDecoration(
-          color: a.cardFillSoft,
-          borderRadius: BorderRadius.circular(AppRadii.md),
-          border: Border.all(color: a.cardBorder),
-        ),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            _item(context, label: 'Geral', value: true),
-            _item(context, label: 'Semana', value: false),
-          ],
-        ),
+    return Container(
+      padding: const EdgeInsets.all(3),
+      decoration: BoxDecoration(
+        color: a.cardFillSoft,
+        borderRadius: BorderRadius.circular(AppRadii.md),
+        border: Border.all(color: a.cardBorder),
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          _item(context, label: 'Geral', value: true),
+          _item(context, label: 'Semana', value: false),
+        ],
       ),
     );
   }
@@ -1063,7 +1110,7 @@ class _RankingPeriodTabs extends StatelessWidget {
       onTap: () => onChanged(value),
       style: AppSelectChipStyle.solid,
       fontSize: 12,
-      padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 8),
+      padding: const EdgeInsets.symmetric(horizontal: 28, vertical: 8),
       borderRadius: const BorderRadius.all(Radius.circular(AppRadii.sm)),
     );
   }
@@ -1330,12 +1377,14 @@ class _RoomWeekPulse extends StatelessWidget {
   final List<RoomMember> members;
   final String roomCode;
   final bool walkedToday;
+  final int? weeklyGoalSteps;
   final VoidCallback onClaim;
 
   const _RoomWeekPulse({
     required this.members,
     required this.roomCode,
     required this.walkedToday,
+    this.weeklyGoalSteps,
     required this.onClaim,
   });
 
@@ -1346,27 +1395,46 @@ class _RoomWeekPulse extends StatelessWidget {
     final total = members.length;
     final active = members.where((m) => m.walkedThisWeek).length;
     final today = members.where((m) => m.walkedToday()).length;
+    final sumSteps = members.fold<int>(0, (sum, m) => sum + m.steps);
+    final goal = weeklyGoalSteps;
+    final goalReached = goal != null && goal > 0 && sumSteps >= goal;
     final week = LeagueService.weekKey();
     final chestId = 'room-pulse-$week-$roomCode';
     final claimed = progress.isChestClaimed(chestId);
-    final ready = !claimed &&
+    final ready =
+        !claimed &&
         walkedToday &&
         total > 0 &&
-        active * 2 >= total; // ≥50% caminhou na semana
+        (goalReached || active * 2 >= total); // meta batida OU ≥50% caminhou
 
     return GlassCard(
       padding: AppMetrics.cardPadding,
+      elevated: ready,
+      accent: ready,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Row(
             children: [
-              const CinematicIcon(
-                glyph: CinematicGlyph.people,
-                size: 28,
-                accent: AppColors.accent,
-                glowing: false,
-              ),
+              if (today > 0)
+                _AvatarCluster(
+                  people: [
+                    for (final m in members.where((m) => m.walkedToday()))
+                      (
+                        name: m.name,
+                        isUser: m.isUser,
+                        live: true,
+                      ),
+                  ],
+                  size: 28,
+                )
+              else
+                const CinematicIcon(
+                  glyph: CinematicGlyph.people,
+                  size: 28,
+                  accent: AppColors.accent,
+                  glowing: false,
+                ),
               const SizedBox(width: 12),
               Expanded(
                 child: Column(
@@ -1402,6 +1470,22 @@ class _RoomWeekPulse extends StatelessWidget {
               color: AppColors.accent,
             ),
           ],
+          if (goal != null && goal > 0) ...[
+            const SizedBox(height: 10),
+            Text(
+              '$sumSteps de $goal passos da meta do grupo',
+              style: AppTypography.body(
+                size: 12,
+                weight: FontWeight.w700,
+                color: a.textMuted(0.7),
+              ),
+            ),
+            const SizedBox(height: 6),
+            AppProgressBar(
+              value: (sumSteps / goal).clamp(0.0, 1.0),
+              color: AppColors.streak,
+            ),
+          ],
           const SizedBox(height: 14),
           if (claimed)
             Text(
@@ -1418,10 +1502,12 @@ class _RoomWeekPulse extends StatelessWidget {
               opacity: ready ? 1 : 0.55,
               child: CopperCta(
                 label: ready
-                    ? 'Abrir baú do grupo · +15'
+                    ? 'Abrir baú do grupo · +${RemoteConfigService.instance.roomChestBonusSteps}'
                     : walkedToday
-                        ? 'Baú libera com metade do grupo'
-                        : 'Caminhe hoje para liberar o baú',
+                    ? (goal != null && goal > 0
+                          ? 'Baú libera com metade do grupo ou a meta'
+                          : 'Baú libera com metade do grupo')
+                    : 'Caminhe hoje para liberar o baú',
                 onTap: ready ? onClaim : null,
                 expanded: true,
               ),
@@ -1442,6 +1528,7 @@ class _RoomHeader extends StatelessWidget {
   final VoidCallback onShowQr;
   final VoidCallback onLeave;
   final VoidCallback onRefresh;
+  final VoidCallback? onEditGoal;
 
   const _RoomHeader({
     required this.room,
@@ -1453,6 +1540,7 @@ class _RoomHeader extends StatelessWidget {
     required this.onShowQr,
     required this.onLeave,
     required this.onRefresh,
+    this.onEditGoal,
   });
 
   @override
@@ -1610,6 +1698,18 @@ class _RoomHeader extends StatelessWidget {
                   ),
                 ),
               ),
+              if (isOwner && onEditGoal != null)
+                TextButton(
+                  onPressed: onEditGoal,
+                  child: Text(
+                    room.weeklyGoalSteps != null ? 'Meta' : 'Definir meta',
+                    style: AppTypography.body(
+                      size: 12,
+                      weight: FontWeight.w700,
+                      color: a.textMuted(0.55),
+                    ),
+                  ),
+                ),
               TextButton(
                 onPressed: onLeave,
                 child: Text(
@@ -1733,231 +1833,6 @@ class _RoomStatChip extends StatelessWidget {
   }
 }
 
-class _CaravanaHeroCard extends StatelessWidget {
-  final bool overall;
-  final int rank;
-  final int steps;
-  final int tierIndex;
-  final WeeklyRankTrend? trend;
-
-  const _CaravanaHeroCard({
-    required this.overall,
-    required this.rank,
-    required this.steps,
-    required this.tierIndex,
-    this.trend,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final tier = LeagueTier.values[tierIndex];
-    final days = LeagueService.daysLeft();
-
-    return GlassCard(
-      padding: const EdgeInsets.fromLTRB(18, 18, 18, 16),
-      child: Column(
-        children: [
-          Text(
-            overall ? 'Ranking geral' : 'Sua semana',
-            style: AppTypography.display(size: 26, height: 1.1),
-          ),
-          const SizedBox(height: 4),
-          Text(
-            overall
-                ? 'Passos de toda a jornada'
-                : 'Quem mais caminhou nesta caravana',
-            textAlign: TextAlign.center,
-            style: AppTypography.body(height: 1.35, color: a.textMuted(0.65)),
-          ),
-          const SizedBox(height: 16),
-          Container(
-            width: double.infinity,
-            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 14),
-            decoration: BoxDecoration(
-              color: a.cardFillSoft,
-              borderRadius: BorderRadius.circular(AppRadii.md),
-              border: Border.all(color: a.cardBorder),
-            ),
-            child: Column(
-              children: [
-                Text(
-                  '$rankº lugar',
-                  style: AppTypography.title(
-                    size: 22,
-                    weight: FontWeight.w900,
-                    color: AppColors.accent,
-                  ),
-                ),
-                const SizedBox(height: 2),
-                Text(
-                  '$steps passos${overall ? ' no total' : ' esta semana'}',
-                  style: AppTypography.body(
-                    size: 13,
-                    weight: FontWeight.w600,
-                    color: a.textMuted(0.7),
-                  ),
-                ),
-                if (trend case final t?) ...[
-                  const SizedBox(height: 10),
-                  _WeeklyRankTrendLine(trend: t),
-                ],
-              ],
-            ),
-          ),
-          if (!overall) ...[
-            const SizedBox(height: 14),
-            Row(
-              children: [
-                Expanded(
-                  child: Text(
-                    tier.label,
-                    style: AppTypography.body(
-                      size: 13,
-                      weight: FontWeight.w800,
-                      color: a.textMuted(0.9),
-                    ),
-                  ),
-                ),
-                const CinematicIcon(
-                  glyph: CinematicGlyph.calendar,
-                  size: 14,
-                  accent: AppColors.streak,
-                  framed: false,
-                ),
-                const SizedBox(width: 4),
-                Text(
-                  days <= 1 ? 'Fecha hoje' : '$days dias',
-                  style: AppTypography.body(
-                    size: 12,
-                    weight: FontWeight.w700,
-                    color: a.textMuted(0.75),
-                  ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 10),
-            _TierLadder(currentIndex: tierIndex),
-            const SizedBox(height: 8),
-            Text(
-              'Top 7 sobem de caravana · últimos 5 descem',
-              textAlign: TextAlign.center,
-              style: AppTypography.label(
-                size: 11,
-                letterSpacing: 0,
-                color: a.textMuted(0.5),
-              ),
-            ),
-          ],
-        ],
-      ),
-    );
-  }
-}
-
-class _WeeklyRankTrendLine extends StatelessWidget {
-  final WeeklyRankTrend trend;
-
-  const _WeeklyRankTrendLine({required this.trend});
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final color = switch (trend.drift) {
-      RankDrift.up => AppColors.teal,
-      RankDrift.down => AppColors.error,
-      RankDrift.stable => a.textMuted(0.55),
-    };
-
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        if (trend.drift == RankDrift.stable)
-          Container(
-            width: 10,
-            height: 2,
-            decoration: BoxDecoration(
-              color: color,
-              borderRadius: BorderRadius.circular(1),
-            ),
-          )
-        else
-          CinematicIcon(
-            glyph: trend.drift == RankDrift.up
-                ? CinematicGlyph.rise
-                : CinematicGlyph.demote,
-            size: 14,
-            accent: color,
-            framed: false,
-          ),
-        const SizedBox(width: 6),
-        Flexible(
-          child: Text(
-            trend.label,
-            textAlign: TextAlign.center,
-            style: AppTypography.body(
-              size: 12,
-              weight: FontWeight.w700,
-              color: color,
-            ),
-          ),
-        ),
-      ],
-    );
-  }
-}
-
-class _TierLadder extends StatelessWidget {
-  final int currentIndex;
-
-  const _TierLadder({required this.currentIndex});
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-
-    return Row(
-      children: List.generate(LeagueTier.values.length, (i) {
-        final tier = LeagueTier.values[i];
-        final reached = i <= currentIndex;
-        final isCurrent = i == currentIndex;
-        final glyph = switch (tier) {
-          LeagueTier.semente => CinematicGlyph.seed,
-          LeagueTier.videira => CinematicGlyph.tree,
-          LeagueTier.oliveira => CinematicGlyph.mountain,
-          LeagueTier.cedro => CinematicGlyph.crown,
-          LeagueTier.estrela => CinematicGlyph.star,
-        };
-        return Expanded(
-          child: Column(
-            children: [
-              CinematicIcon(
-                glyph: glyph,
-                size: isCurrent ? 36 : 30,
-                accent: reached ? AppColors.accent : a.textMuted(0.35),
-                glowing: false,
-              ),
-              const SizedBox(height: 4),
-              Text(
-                tier.shortLabel,
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
-                style: AppTypography.label(
-                  size: 9,
-                  letterSpacing: 0,
-                  weight: isCurrent ? FontWeight.w900 : FontWeight.w600,
-                  color: isCurrent
-                      ? AppColors.accent
-                      : a.textMuted(reached ? 0.55 : 0.3),
-                ),
-              ),
-            ],
-          ),
-        );
-      }),
-    );
-  }
-}
 
 class _TextInputDialog extends StatefulWidget {
   final String title;
@@ -1966,6 +1841,7 @@ class _TextInputDialog extends StatefulWidget {
   final int maxLength;
   final bool capitalize;
   final double letterSpacing;
+  final String initialValue;
 
   const _TextInputDialog({
     required this.title,
@@ -1974,6 +1850,7 @@ class _TextInputDialog extends StatefulWidget {
     required this.maxLength,
     this.capitalize = false,
     this.letterSpacing = 0,
+    this.initialValue = '',
   });
 
   @override
@@ -1986,7 +1863,7 @@ class _TextInputDialogState extends State<_TextInputDialog> {
   @override
   void initState() {
     super.initState();
-    _controller = TextEditingController();
+    _controller = TextEditingController(text: widget.initialValue);
   }
 
   @override
@@ -2056,7 +1933,7 @@ class _ZoneLabel extends StatelessWidget {
   Widget build(BuildContext context) {
     final color = up ? AppColors.accent : AppColors.error;
     return Padding(
-      padding: const EdgeInsets.only(bottom: 10, top: 4),
+      padding: const EdgeInsets.fromLTRB(12, 6, 12, 2),
       child: Row(
         children: [
           CinematicIcon(
@@ -2088,7 +1965,7 @@ class _ZoneDivider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
       child: Row(
         children: [
           Expanded(
@@ -2118,16 +1995,136 @@ class _ZoneDivider extends StatelessWidget {
   }
 }
 
+class _LeaderboardBoard extends StatelessWidget {
+  final List<LeagueEntry> entries;
+  final bool weekly;
+  final bool canPromote;
+  final bool canDemote;
+  final int tierIndex;
+  final String? title;
+  final VoidCallback? onOpenOwnProfile;
+
+  const _LeaderboardBoard({
+    required this.entries,
+    required this.weekly,
+    required this.canPromote,
+    required this.canDemote,
+    this.tierIndex = 0,
+    this.title,
+    this.onOpenOwnProfile,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final leaderSteps = entries.first.steps;
+    final heading = title ??
+        (weekly ? 'Esta semana' : 'Toda a jornada');
+    final today = entries.where((e) => e.walkedToday).toList();
+    final rows = <Widget>[
+      Padding(
+        padding: const EdgeInsets.fromLTRB(14, 2, 10, 8),
+        child: Row(
+          children: [
+            Text(
+              heading.toUpperCase(),
+              style: AppTypography.label(
+                size: 10,
+                letterSpacing: 1.4,
+                color: AppColors.accent.withValues(alpha: 0.9),
+              ),
+            ),
+            const Spacer(),
+            if (today.isNotEmpty) ...[
+              _AvatarCluster(
+                people: [
+                  for (final e in today.take(5))
+                    (
+                      name: e.name,
+                      isUser: e.isUser,
+                      live: true,
+                    ),
+                ],
+                size: 22,
+              ),
+              const SizedBox(width: 8),
+            ],
+            Text(
+              today.isEmpty
+                  ? '${entries.length}'
+                  : '${today.length} hoje',
+              style: AppTypography.label(
+                size: 10,
+                letterSpacing: 0,
+                color: a.textMuted(0.5),
+              ),
+            ),
+          ],
+        ),
+      ),
+    ];
+
+    for (var i = 0; i < entries.length; i++) {
+      final rank = i + 1;
+      if (weekly && rank == 1 && canPromote) {
+        rows.add(
+          _ZoneLabel(
+            text:
+                'ZONA DE SUBIDA · ${LeagueTier.values[tierIndex + 1].shortLabel.toUpperCase()}',
+            up: true,
+          ),
+        );
+      }
+      if (weekly &&
+          rank ==
+              LeagueService.groupSize - LeagueService.demoteCount + 1 &&
+          canDemote) {
+        rows.add(
+          _ZoneLabel(
+            text:
+                'ZONA DE DESCIDA · ${LeagueTier.values[tierIndex - 1].shortLabel.toUpperCase()}',
+            up: false,
+          ),
+        );
+      }
+      rows.add(
+        _StandingRow(
+          entry: entries[i],
+          rank: rank,
+          weeklySteps: weekly,
+          gapToLeader: rank == 1 ? 0 : leaderSteps - entries[i].steps,
+          shareOfLeader: leaderSteps <= 0
+              ? 0
+              : (entries[i].steps / leaderSteps).clamp(0.0, 1.0),
+          onOpenOwnProfile: onOpenOwnProfile,
+        ),
+      );
+      if (weekly && rank == LeagueService.promoteCount && canPromote) {
+        rows.add(const _ZoneDivider());
+      }
+    }
+
+    return GlassCard(
+      padding: const EdgeInsets.fromLTRB(4, 10, 4, 8),
+      child: Column(children: rows),
+    );
+  }
+}
+
 class _StandingRow extends StatelessWidget {
   final LeagueEntry entry;
   final int rank;
   final bool weeklySteps;
+  final int gapToLeader;
+  final double shareOfLeader;
   final VoidCallback? onOpenOwnProfile;
 
   const _StandingRow({
     required this.entry,
     required this.rank,
     required this.weeklySteps,
+    this.gapToLeader = 0,
+    this.shareOfLeader = 0,
     this.onOpenOwnProfile,
   });
 
@@ -2144,43 +2141,21 @@ class _StandingRow extends StatelessWidget {
       3 => AppColors.medalBronze,
       _ => null,
     };
-    final initial = entry.name.isEmpty ? '?' : entry.name[0].toUpperCase();
     final stepsTone = entry.isUser
         ? AppColors.inkOnAccent
         : (medal ?? AppColors.accent).withValues(alpha: 0.95);
+    final gapLabel = gapToLeader <= 0 ? 'líder' : '−$gapToLeader';
 
     final content = Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        _RankBadge(rank: rank, onUserRow: entry.isUser),
-        const SizedBox(width: 10),
-        Container(
-          width: 38,
-          height: 38,
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            color: entry.isUser
-                ? Colors.white.withValues(alpha: 0.32)
-                : AppColors.primaryLight.withValues(alpha: 0.28),
-            border: Border.all(
-              color: entry.isOnlineToday
-                  ? AppColors.teal.withValues(alpha: 0.85)
-                  : medal != null && !entry.isUser
-                      ? medal.withValues(alpha: 0.5)
-                      : Colors.white.withValues(alpha: 0.16),
-              width: entry.isOnlineToday ? 2 : 1.2,
-            ),
-          ),
-          child: Center(
-            child: Text(
-              initial,
-              style: AppTypography.title(
-                size: 14,
-                weight: FontWeight.w900,
-                color: _ink(a),
-              ),
-            ),
-          ),
+        _PilgrimAvatar(
+          name: entry.name,
+          isUser: entry.isUser,
+          live: entry.walkedToday || entry.isOnlineToday,
+          size: 40,
+          ring: medal,
+          rank: rank,
         ),
         const SizedBox(width: 12),
         Expanded(
@@ -2197,10 +2172,31 @@ class _StandingRow extends StatelessWidget {
                   color: _ink(a),
                 ),
               ),
-              if (entry.isUser) _UserMedalBadge(),
+              if (entry.isUser && !weeklySteps)
+                const _UserMedalBadge()
+              else if (entry.activitySummary != null)
+                Padding(
+                  padding: const EdgeInsets.only(top: 1),
+                  child: Text(
+                    entry.activitySummary!,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: AppTypography.label(
+                      size: 10,
+                      letterSpacing: 0,
+                      weight: FontWeight.w700,
+                      color: entry.isUser
+                          ? AppColors.inkOnAccent.withValues(alpha: 0.62)
+                          : entry.walkedToday
+                          ? AppColors.teal.withValues(alpha: 0.95)
+                          : a.textMuted(0.5),
+                    ),
+                  ),
+                ),
             ],
           ),
         ),
+        const SizedBox(width: 8),
         Column(
           crossAxisAlignment: CrossAxisAlignment.end,
           mainAxisSize: MainAxisSize.min,
@@ -2208,16 +2204,16 @@ class _StandingRow extends StatelessWidget {
             Text(
               '${entry.steps}',
               style: AppTypography.title(
-                size: 17,
+                size: 16,
                 weight: FontWeight.w900,
                 color: stepsTone,
               ),
             ),
             Text(
-              'passos',
+              gapLabel,
               style: AppTypography.label(
                 size: 9,
-                letterSpacing: 0.5,
+                letterSpacing: 0.2,
                 color: entry.isUser
                     ? AppColors.inkOnAccent.withValues(alpha: 0.62)
                     : a.textMuted(0.45),
@@ -2228,33 +2224,47 @@ class _StandingRow extends StatelessWidget {
       ],
     );
 
-    final card = entry.isUser
+    final row = entry.isUser
         ? Container(
-            margin: const EdgeInsets.only(bottom: 8),
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 11),
+            margin: const EdgeInsets.symmetric(horizontal: 6, vertical: 3),
+            padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
             decoration: BoxDecoration(
               gradient: AppGradients.gold,
-              borderRadius: BorderRadius.circular(AppRadii.lg),
+              borderRadius: BorderRadius.circular(AppRadii.md),
               border: Border.all(
                 color: Colors.white.withValues(alpha: 0.5),
                 width: 1.5,
               ),
-              boxShadow: [
-                BoxShadow(
-                  color: AppColors.accent.withValues(alpha: 0.32),
-                  blurRadius: 14,
-                  offset: const Offset(0, 4),
-                ),
-              ],
             ),
             child: content,
           )
         : Padding(
-            padding: const EdgeInsets.only(bottom: 8),
-            child: GlassCard(
-              radius: AppRadii.lg,
-              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 11),
-              child: content,
+            padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+            child: Stack(
+              clipBehavior: Clip.none,
+              children: [
+                if (shareOfLeader > 0)
+                  Positioned.fill(
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(AppRadii.md),
+                      child: Align(
+                        alignment: Alignment.centerLeft,
+                        child: FractionallySizedBox(
+                          widthFactor: shareOfLeader.clamp(0.06, 1),
+                          heightFactor: 1,
+                          child: ColoredBox(
+                            color: (medal ?? AppColors.accent)
+                                .withValues(alpha: 0.12),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(10, 10, 8, 10),
+                  child: content,
+                ),
+              ],
             ),
           );
 
@@ -2273,13 +2283,14 @@ class _StandingRow extends StatelessWidget {
             weeklySteps: weeklySteps,
           );
         },
-        borderRadius: BorderRadius.circular(AppRadii.lg),
-        child: card,
+        borderRadius: BorderRadius.circular(AppRadii.md),
+        child: row,
       ),
     );
   }
 }
 
+/// Medalhas raras na linha do usuário — só no ranking geral da jornada.
 class _UserMedalBadge extends StatelessWidget {
   const _UserMedalBadge();
 
@@ -2288,30 +2299,61 @@ class _UserMedalBadge extends StatelessWidget {
     final progress = context.watch<ProgressService>();
     final uid = context.read<BackendService>().uid ?? '';
 
-    return FutureBuilder<int>(
-      future: MedalEngagementService.unlockedCountCached(progress, uid),
+    return FutureBuilder<List<Object>>(
+      future: Future.wait<Object>([
+        MedalEngagementService.unlockedRareMedalsCached(progress, uid),
+        MedalEngagementService.unlockedCountCached(progress, uid),
+      ]),
       builder: (context, snapshot) {
-        final count = snapshot.data ?? 0;
-        if (count <= 0) return const SizedBox.shrink();
+        final rares = snapshot.data?[0] as List<PilgrimMedalDef>? ?? const [];
+        final total = snapshot.data?[1] as int? ?? 0;
+        if (rares.isEmpty && total <= 0) return const SizedBox.shrink();
+
+        final shown = rares.take(3).toList();
+        final extraRares = rares.length - shown.length;
+        const label = AppColors.inkOnAccent;
 
         return Padding(
           padding: const EdgeInsets.only(top: 3),
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const CinematicIcon(
-                glyph: CinematicGlyph.gem,
-                size: 12,
-                accent: AppColors.medalGold,
-                framed: false,
-              ),
-              const SizedBox(width: 4),
+              if (shown.isEmpty)
+                const CinematicIcon(
+                  glyph: CinematicGlyph.gem,
+                  size: 16,
+                  accent: AppColors.medalGold,
+                  framed: false,
+                ),
+              for (final def in shown) ...[
+                CinematicIcon(
+                  glyph: def.glyph,
+                  size: 16,
+                  accent: MedalEngagementService.tierColor(def.tier),
+                  framed: false,
+                ),
+                const SizedBox(width: 3),
+              ],
+              if (extraRares > 0) ...[
+                Text(
+                  '+$extraRares',
+                  style: AppTypography.label(
+                    size: 9,
+                    letterSpacing: 0.2,
+                    color: label.withValues(alpha: 0.72),
+                  ),
+                ),
+                const SizedBox(width: 4),
+              ],
               Text(
-                '$count medalha${count == 1 ? '' : 's'}',
+                rares.isNotEmpty
+                    ? '${rares.length} rara${rares.length == 1 ? '' : 's'}'
+                    : '$total medalha${total == 1 ? '' : 's'}',
                 style: AppTypography.label(
                   size: 9,
                   letterSpacing: 0.2,
-                  color: AppColors.inkOnAccent.withValues(alpha: 0.72),
+                  weight: FontWeight.w700,
+                  color: label.withValues(alpha: 0.72),
                 ),
               ),
             ],
@@ -2322,119 +2364,163 @@ class _UserMedalBadge extends StatelessWidget {
   }
 }
 
-/// Badge de posição — pódio com medalha cheia; demais em cápsula uniforme.
-class _RankBadge extends StatelessWidget {
-  final int rank;
-  final bool onUserRow;
+class _PilgrimAvatar extends StatelessWidget {
+  final String name;
+  final bool isUser;
+  final bool live;
+  final double size;
+  final Color? ring;
+  final int? rank;
 
-  const _RankBadge({required this.rank, required this.onUserRow});
+  const _PilgrimAvatar({
+    required this.name,
+    required this.isUser,
+    this.live = false,
+    this.size = 36,
+    this.ring,
+    this.rank,
+  });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final initial = name.isEmpty ? '?' : name[0].toUpperCase();
+    final border = live
+        ? AppColors.teal
+        : ring ??
+            (isUser
+                ? Colors.white.withValues(alpha: 0.55)
+                : Colors.white.withValues(alpha: 0.16));
 
-    if (rank <= 3) {
-      final fill = switch (rank) {
-        1 => AppColors.medalGold,
-        2 => AppColors.medalSilver,
-        _ => AppColors.medalBronze,
-      };
-      final ink = switch (rank) {
-        1 => AppColors.medalInk,
-        2 => const Color(0xFF2A3140),
-        _ => const Color(0xFF3A2410),
-      };
-      final size = rank == 1 ? 34.0 : 32.0;
-
-      return SizedBox(
-        width: 36,
-        height: 36,
-        child: Center(
-          child: Container(
+    return SizedBox(
+      width: size,
+      height: size,
+      child: Stack(
+        clipBehavior: Clip.none,
+        children: [
+          Container(
             width: size,
             height: size,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              gradient: LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                colors: [
-                  Color.lerp(fill, Colors.white, 0.32)!,
-                  fill,
-                  Color.lerp(fill, Colors.black, 0.2)!,
-                ],
-                stops: const [0.0, 0.48, 1.0],
-              ),
-              border: Border.all(
-                color: Colors.white.withValues(alpha: 0.6),
-                width: 1.5,
-              ),
-              boxShadow: [
-                if (rank == 1)
-                  BoxShadow(
-                    color: fill.withValues(alpha: 0.5),
-                    blurRadius: 12,
-                    offset: const Offset(0, 2),
-                  ),
-                BoxShadow(
-                  color: Colors.black.withValues(alpha: 0.28),
-                  blurRadius: 5,
-                  offset: const Offset(0, 2),
-                ),
-              ],
+              gradient: isUser ? AppGradients.gold : null,
+              color: isUser
+                  ? null
+                  : AppColors.primaryLight.withValues(alpha: 0.28),
+              border: Border.all(color: border, width: live ? 2 : 1.2),
             ),
             child: Center(
               child: Text(
-                '$rank',
+                initial,
                 style: AppTypography.title(
-                  size: rank == 1 ? 16 : 14,
+                  size: size >= 52 ? 22 : size >= 38 ? 16 : 13,
                   weight: FontWeight.w900,
-                  color: ink,
+                  color: isUser ? AppColors.inkOnAccent : a.text,
                 ),
               ),
             ),
           ),
-        ),
-      );
-    }
-
-    // 4º+ — cápsula alinhada ao tamanho do pódio
-    return SizedBox(
-      width: 36,
-      height: 36,
-      child: Center(
-        child: Container(
-          constraints: const BoxConstraints(minWidth: 30, minHeight: 30),
-          padding: EdgeInsets.symmetric(horizontal: rank >= 10 ? 7 : 0),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(999),
-            color: onUserRow
-                ? Colors.white.withValues(alpha: 0.28)
-                : Colors.white.withValues(alpha: 0.08),
-            border: Border.all(
-              color: onUserRow
-                  ? Colors.white.withValues(alpha: 0.55)
-                  : AppColors.accent.withValues(alpha: 0.28),
-              width: 1.2,
+          if (rank != null)
+            Positioned(
+              left: -3,
+              top: -3,
+              child: _RankPip(rank: rank!),
             ),
-          ),
-          child: Center(
-            child: Text(
-              '$rank',
-              style: AppTypography.title(
-                size: rank >= 100 ? 10 : (rank >= 10 ? 12 : 13),
-                weight: FontWeight.w900,
-                color: onUserRow
-                    ? AppColors.inkOnAccent
-                    : a.textMuted(0.82),
+          if (live)
+            Positioned(
+              right: -1,
+              bottom: -1,
+              child: Container(
+                width: size >= 48 ? 12 : 10,
+                height: size >= 48 ? 12 : 10,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: AppColors.teal,
+                  border: Border.all(color: AppColors.night, width: 1.5),
+                ),
               ),
             ),
+        ],
+      ),
+    );
+  }
+}
+
+class _RankPip extends StatelessWidget {
+  final int rank;
+
+  const _RankPip({required this.rank});
+
+  @override
+  Widget build(BuildContext context) {
+    final fill = switch (rank) {
+      1 => AppColors.medalGold,
+      2 => AppColors.medalSilver,
+      3 => AppColors.medalBronze,
+      _ => AppColors.nightElevated,
+    };
+    final ink = rank <= 3 ? AppColors.medalInk : AppColors.accent;
+    return Container(
+      width: 20,
+      height: 20,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: fill,
+        border: Border.all(color: AppColors.night, width: 1.5),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withValues(alpha: 0.35),
+            blurRadius: 4,
+            offset: const Offset(0, 1),
+          ),
+        ],
+      ),
+      child: Center(
+        child: Text(
+          '$rank',
+          style: AppTypography.title(
+            size: 10,
+            weight: FontWeight.w900,
+            color: ink,
           ),
         ),
       ),
     );
   }
 }
+
+class _AvatarCluster extends StatelessWidget {
+  final List<({String name, bool isUser, bool live})> people;
+  final double size;
+
+  const _AvatarCluster({required this.people, this.size = 24});
+
+  @override
+  Widget build(BuildContext context) {
+    if (people.isEmpty) return const SizedBox.shrink();
+    final shown = people.take(5).toList();
+    final step = size * 0.62;
+    return SizedBox(
+      width: size + (shown.length - 1) * step,
+      height: size,
+      child: Stack(
+        children: [
+          for (var i = 0; i < shown.length; i++)
+            Positioned(
+              left: i * step,
+              child: _PilgrimAvatar(
+                name: shown[i].name,
+                isUser: shown[i].isUser,
+                live: shown[i].live,
+                size: size,
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+}
+
 
 class _CompanionsOfflineCard extends StatelessWidget {
   final String? error;
@@ -2561,9 +2647,17 @@ class _CompanionsEmpty extends StatelessWidget {
           if (loading)
             const CircularProgressIndicator(color: AppColors.accent)
           else ...[
-            _FilledAction(label: 'Convidar amigo', onTap: onInvite),
+            CopperCta(
+              label: 'Convidar amigo',
+              onTap: onInvite,
+              leading: CinematicGlyph.people,
+            ),
             const SizedBox(height: 10),
-            _FilledAction(label: 'Aceitar convite', onTap: onJoin),
+            GhostCta(
+              label: 'Aceitar convite',
+              leading: CinematicGlyph.qr,
+              onTap: onJoin,
+            ),
           ],
         ],
       ),
@@ -2616,6 +2710,7 @@ class _CompanhiaHeroCard extends StatelessWidget {
   final int companionCount;
   final int activeCount;
   final int togetherToday;
+  final int waitingOnMe;
   final int bestStreak;
   final int maxSlots;
 
@@ -2623,6 +2718,7 @@ class _CompanhiaHeroCard extends StatelessWidget {
     required this.companionCount,
     required this.activeCount,
     required this.togetherToday,
+    this.waitingOnMe = 0,
     required this.bestStreak,
     required this.maxSlots,
   });
@@ -2631,69 +2727,49 @@ class _CompanhiaHeroCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final hasAny = companionCount > 0;
-    final goldLine = !hasAny
+    final goldLine = waitingOnMe > 0
+        ? waitingOnMe == 1
+            ? 'Alguém te espera hoje'
+            : '$waitingOnMe te esperam hoje'
+        : !hasAny
         ? 'Até $maxSlots amigos íntimos'
         : bestStreak > 0
-            ? '$bestStreak ${bestStreak == 1 ? 'dia' : 'dias'} juntos'
-            : togetherToday > 0
-                ? '$togetherToday caminharam hoje'
-                : '$activeCount de $companionCount ativos';
+        ? '$bestStreak ${bestStreak == 1 ? 'dia' : 'dias'} juntos'
+        : togetherToday > 0
+        ? '$togetherToday caminharam hoje'
+        : '$activeCount de $companionCount ativos';
 
-    final goldSub = !hasAny
+    final goldSub = waitingOnMe > 0
+        ? 'Dê seu passo — a companhia só conta quando os dois caminham'
+        : !hasAny
         ? 'Convide alguém e andem lado a lado'
         : bestStreak > 0
-            ? togetherToday > 0
-                ? '$togetherToday juntos hoje · sem disputa, só presença'
-                : 'Sem disputa — só presença compartilhada'
-            : 'Quando os dois caminham, o dia conta';
+        ? togetherToday > 0
+              ? '$togetherToday juntos hoje · sem disputa, só presença'
+              : 'Sem disputa — só presença compartilhada'
+        : 'Quando os dois caminham, o dia conta';
 
     return GlassCard(
-      padding: const EdgeInsets.fromLTRB(18, 18, 18, 16),
+      padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
       child: Column(
         children: [
           Text(
-            'Andem juntos',
-            style: AppTypography.display(size: 26, height: 1.1),
+            goldLine,
+            textAlign: TextAlign.center,
+            style: AppTypography.title(
+              size: 18,
+              weight: FontWeight.w900,
+              color: AppColors.accent,
+            ),
           ),
           const SizedBox(height: 4),
           Text(
-            'Companhia é compromisso. Caravana é classificação.',
+            goldSub,
             textAlign: TextAlign.center,
-            style: AppTypography.body(height: 1.35, color: a.textMuted(0.65)),
-          ),
-          const SizedBox(height: 16),
-          Container(
-            width: double.infinity,
-            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
-            decoration: BoxDecoration(
-              color: AppColors.accent.withValues(alpha: 0.1),
-              borderRadius: BorderRadius.circular(AppRadii.md),
-              border: Border.all(
-                color: AppColors.accent.withValues(alpha: 0.35),
-              ),
-            ),
-            child: Column(
-              children: [
-                Text(
-                  goldLine,
-                  textAlign: TextAlign.center,
-                  style: AppTypography.title(
-                    size: 18,
-                    weight: FontWeight.w800,
-                    color: AppColors.accent,
-                  ),
-                ),
-                const SizedBox(height: 2),
-                Text(
-                  goldSub,
-                  textAlign: TextAlign.center,
-                  style: AppTypography.body(
-                    size: 12,
-                    weight: FontWeight.w600,
-                    color: a.textMuted(0.65),
-                  ),
-                ),
-              ],
+            style: AppTypography.body(
+              size: 12,
+              height: 1.35,
+              color: a.textMuted(0.65),
             ),
           ),
           if (hasAny) ...[
@@ -2792,25 +2868,56 @@ class _CompanionCard extends StatelessWidget {
     final a = Appearance.of(context);
     final partnerLabel = companion.awaitingPartner
         ? 'Convite'
-        : (companion.displayName.isEmpty ? 'Companheiro' : companion.displayName);
-    final myLabel = myName.trim().isEmpty ? 'Você' : myName.trim().split(' ').first;
+        : (companion.displayName.isEmpty
+              ? 'Companheiro'
+              : companion.displayName);
+    final myLabel = myName.trim().isEmpty
+        ? 'Você'
+        : myName.trim().split(' ').first;
     final away = companion.theyDaysAway;
-    final showAwayBadge = !companion.awaitingPartner &&
+    final showAwayBadge =
+        !companion.awaitingPartner &&
         away != null &&
         away >= 1 &&
         !companion.theyWalkedToday;
     final insight = companion.insightLine;
-    final canNudge = onNudge != null &&
+    final canNudge =
+        onNudge != null &&
         !companion.awaitingPartner &&
         (companion.waitingOnThem || (away != null && away >= 1));
 
     return GlassCard(
       padding: const EdgeInsets.fromLTRB(16, 14, 16, 10),
-      elevated: companion.bothWalkedToday,
+      elevated: companion.bothWalkedToday ||
+          companion.hasIncomingNudge ||
+          companion.waitingOnMe,
+      accent: companion.waitingOnMe || companion.hasIncomingNudge,
       child: Column(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          if (companion.waitingOnMe) ...[
+            Container(
+              width: double.infinity,
+              margin: const EdgeInsets.only(bottom: 12),
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+              decoration: BoxDecoration(
+                color: AppColors.streak.withValues(alpha: 0.16),
+                borderRadius: BorderRadius.circular(AppRadii.sm),
+                border: Border.all(
+                  color: AppColors.streak.withValues(alpha: 0.55),
+                ),
+              ),
+              child: Text(
+                'Sua vez — $partnerLabel já caminhou',
+                style: AppTypography.body(
+                  size: 12,
+                  weight: FontWeight.w800,
+                  color: AppColors.streak,
+                ),
+              ),
+            ),
+          ],
           Row(
             children: [
               Expanded(
@@ -2907,6 +3014,7 @@ class _CompanionCard extends StatelessWidget {
                     walked: companion.iWalkedToday,
                     highlight: companion.waitingOnMe,
                     dusty: false,
+                    isUser: true,
                     subtitle: companion.myWeeklySteps > 0
                         ? '${companion.myWeeklySteps} passos'
                         : null,
@@ -2934,8 +3042,8 @@ class _CompanionCard extends StatelessWidget {
                     subtitle: companion.theirWeeklySteps > 0
                         ? '${companion.theirWeeklySteps} passos'
                         : (showAwayBadge
-                            ? (away == 1 ? 'ontem' : '${away}d atrás')
-                            : null),
+                              ? (away == 1 ? 'ontem' : '${away}d atrás')
+                              : null),
                   ),
                 ),
               ],
@@ -2965,46 +3073,29 @@ class _CompanionCard extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 6),
-            ClipRRect(
-              borderRadius: BorderRadius.circular(4),
-              child: LinearProgressIndicator(
-                value: companion.milestoneProgress,
-                minHeight: 6,
-                backgroundColor: Colors.white.withValues(alpha: 0.08),
-                valueColor: AlwaysStoppedAnimation<Color>(
-                  companion.bothWalkedToday
-                      ? AppColors.accent
-                      : AppColors.accent.withValues(alpha: 0.65),
-                ),
-              ),
+            AppProgressBar(
+              value: companion.milestoneProgress,
+              color: companion.bothWalkedToday
+                  ? AppColors.accent
+                  : AppColors.accent.withValues(alpha: 0.75),
             ),
+          ],
+          if (companion.hasIncomingNudge) ...[
+            const SizedBox(height: 12),
+            _IncomingNudgeBanner(companion: companion),
           ],
           if (canNudge) ...[
             const SizedBox(height: 12),
-            SizedBox(
-              width: double.infinity,
-              child: OutlinedButton(
-                onPressed: onNudge,
-                style: OutlinedButton.styleFrom(
-                  foregroundColor: AppColors.streak,
-                  side: BorderSide(
-                    color: AppColors.streak.withValues(alpha: 0.55),
-                  ),
-                  padding: const EdgeInsets.symmetric(vertical: 12),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(AppRadii.md),
-                  ),
-                ),
-                child: Text(
-                  'Animar ${partnerLabel.split(' ').first}',
-                  style: AppTypography.label(
-                    size: 13,
-                    letterSpacing: 0.4,
-                    weight: FontWeight.w800,
-                    color: AppColors.streak,
-                  ),
-                ),
-              ),
+            CopperCta(
+              label: companion.iNudgedToday
+                  ? 'Mandar no WhatsApp'
+                  : 'Animar ${companion.partnerFirstName}',
+              onTap: onNudge,
+              leading: companion.iNudgedToday
+                  ? CinematicGlyph.share
+                  : CinematicGlyph.lamp,
+              trailing: null,
+              dense: true,
             ),
           ],
           const SizedBox(height: 4),
@@ -3091,6 +3182,7 @@ class _PresencePill extends StatelessWidget {
   final bool walked;
   final bool highlight;
   final bool dusty;
+  final bool isUser;
   final String? subtitle;
 
   const _PresencePill({
@@ -3098,18 +3190,18 @@ class _PresencePill extends StatelessWidget {
     required this.walked,
     required this.highlight,
     this.dusty = false,
+    this.isUser = false,
     this.subtitle,
   });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final initial = name.isEmpty ? '?' : name[0].toUpperCase();
     final status = walked
         ? 'Caminhou'
         : dusty
-            ? 'Na poeira'
-            : (highlight ? 'Esperando' : 'Ainda não');
+        ? 'Na poeira'
+        : (highlight ? 'Esperando' : 'Ainda não');
     final dustBorder = const Color(0xFFC4A070);
     final dustFill = const Color(0xFF3A2410);
 
@@ -3124,48 +3216,27 @@ class _PresencePill extends StatelessWidget {
               color: walked
                   ? AppColors.accent.withValues(alpha: 0.12)
                   : dusty
-                      ? dustFill.withValues(alpha: 0.55)
-                      : Colors.white.withValues(alpha: 0.04),
+                  ? dustFill.withValues(alpha: 0.55)
+                  : Colors.white.withValues(alpha: 0.04),
               borderRadius: BorderRadius.circular(AppRadii.md),
               border: Border.all(
                 color: walked
                     ? AppColors.accent.withValues(alpha: 0.45)
                     : dusty
-                        ? dustBorder.withValues(alpha: 0.55)
-                        : highlight
-                            ? AppColors.streak.withValues(alpha: 0.45)
-                            : Colors.white.withValues(alpha: 0.1),
+                    ? dustBorder.withValues(alpha: 0.55)
+                    : highlight
+                    ? AppColors.streak.withValues(alpha: 0.45)
+                    : Colors.white.withValues(alpha: 0.1),
                 width: walked || highlight || dusty ? 1.4 : 1,
               ),
             ),
             child: Column(
               children: [
-                Container(
-                  width: 36,
-                  height: 36,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    gradient: walked ? AppGradients.gold : null,
-                    color: walked
-                        ? null
-                        : dusty
-                            ? const Color(0xFF2A1A0C)
-                            : a.cardFillSoft,
-                  ),
-                  child: Center(
-                    child: Text(
-                      initial,
-                      style: AppTypography.title(
-                        size: 14,
-                        weight: FontWeight.w900,
-                        color: walked
-                            ? AppColors.inkOnAccent
-                            : dusty
-                                ? const Color(0xFFE8C48A).withValues(alpha: 0.75)
-                                : a.textMuted(0.7),
-                      ),
-                    ),
-                  ),
+                _PilgrimAvatar(
+                  name: name,
+                  isUser: isUser,
+                  live: walked,
+                  size: 40,
                 ),
                 const SizedBox(height: 6),
                 Text(
@@ -3190,10 +3261,10 @@ class _PresencePill extends StatelessWidget {
                     color: walked
                         ? AppColors.accent
                         : dusty
-                            ? dustBorder
-                            : highlight
-                                ? AppColors.streak
-                                : a.textMuted(0.5),
+                        ? dustBorder
+                        : highlight
+                        ? AppColors.streak
+                        : a.textMuted(0.5),
                   ),
                 ),
                 if (subtitle != null) ...[
@@ -3224,26 +3295,65 @@ class _PresencePill extends StatelessWidget {
     );
 
     if (!dusty) return pill;
-    return HeroCardColorGrade(
-      mood: HeroCardMood.dusty,
-      child: pill,
-    );
+    return HeroCardColorGrade(mood: HeroCardMood.dusty, child: pill);
   }
 }
 
-class _FilledAction extends StatelessWidget {
-  final String label;
-  final VoidCallback? onTap;
+class _IncomingNudgeBanner extends StatelessWidget {
+  final WalkCompanion companion;
 
-  const _FilledAction({required this.label, this.onTap});
+  const _IncomingNudgeBanner({required this.companion});
 
   @override
   Widget build(BuildContext context) {
-    return CopperCta(
-      label: label,
-      onTap: onTap,
-      trailing: null,
-      dense: true,
+    final from = companion.incomingNudgeFromName?.trim().isNotEmpty == true
+        ? companion.incomingNudgeFromName!.trim().split(' ').first
+        : 'Companheiro';
+    final message = companion.incomingNudgeMessage?.trim();
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.fromLTRB(12, 10, 12, 10),
+      decoration: BoxDecoration(
+        color: AppColors.accent.withValues(alpha: 0.12),
+        borderRadius: BorderRadius.circular(AppRadii.md),
+        border: Border.all(color: AppColors.accent.withValues(alpha: 0.45)),
+      ),
+      child: Row(
+        children: [
+          const CinematicIcon(
+            glyph: CinematicGlyph.lamp,
+            size: 22,
+            accent: AppColors.accent,
+            framed: false,
+            glowing: true,
+          ),
+          const SizedBox(width: 10),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  '$from te animou',
+                  style: AppTypography.title(size: 13, color: AppColors.accent),
+                ),
+                if (message != null && message.isNotEmpty) ...[
+                  const SizedBox(height: 2),
+                  Text(
+                    message,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: AppTypography.body(
+                      size: 12,
+                      height: 1.3,
+                      color: Colors.white.withValues(alpha: 0.78),
+                    ),
+                  ),
+                ],
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

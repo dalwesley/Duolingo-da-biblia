@@ -4,14 +4,17 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../models/walk_companion.dart';
 import 'backend_service.dart';
 import 'progress_service.dart';
+import 'subscription_service.dart';
 
-/// Companhia — até 3 pares de caminhada (friend streak de passos).
+/// Companhia — pares de caminhada (friend streak de passos).
 /// Local + sync Firebase quando autenticado.
 class CompanionService extends ChangeNotifier {
   static const _keyCodes = 'companionCodes';
-  static const maxCompanions = 3;
+  static const _freeMaxCompanions = 3;
+  static const _plusMaxCompanions = 6;
 
   final BackendService backend;
+  final SubscriptionService? subscription;
 
   List<WalkCompanion> companions = const [];
   bool loading = false;
@@ -19,9 +22,27 @@ class CompanionService extends ChangeNotifier {
   bool _loaded = false;
   bool _cloudSynced = false;
 
-  CompanionService(this.backend);
+  CompanionService(this.backend, [this.subscription]) {
+    subscription?.addListener(_onSubscriptionChanged);
+  }
+
+  void _onSubscriptionChanged() => notifyListeners();
 
   bool get isLoaded => _loaded;
+
+  /// Primeiro aceno pendente — a Home usa para o card e as 👋.
+  WalkCompanion? get incomingNudge {
+    for (final c in companions) {
+      if (c.hasIncomingNudge) return c;
+    }
+    return null;
+  }
+
+  /// Peregrino+ dobra o limite de companheiros simultâneos.
+  int get maxCompanions => subscription?.isPeregrinoPlus == true
+      ? _plusMaxCompanions
+      : _freeMaxCompanions;
+
   bool get canAdd => companions.length < maxCompanions;
   bool get cloudSynced => _cloudSynced;
 
@@ -62,10 +83,7 @@ class CompanionService extends ChangeNotifier {
       for (final c in cloudCodes)
         if (c.trim().isNotEmpty) c.trim().toUpperCase(),
     }.toList();
-    final capped = merged.length > maxCompanions
-        ? merged.sublist(0, maxCompanions)
-        : merged;
-    await _saveCodes(capped, progress: progress);
+    await _saveCodes(merged, progress: progress);
     await refresh();
   }
 
@@ -160,6 +178,7 @@ class CompanionService extends ChangeNotifier {
     final joined = await backend.joinCompanion(
       code: rawCode,
       userName: progress.userName,
+      hadMissionsAtJoin: progress.completedMissions.isNotEmpty,
     );
     loading = false;
     if (joined == null) {
@@ -176,16 +195,53 @@ class CompanionService extends ChangeNotifier {
   }
 
   /// Publica presença (visto + passos semanais) e, se caminhou hoje, o passo.
-  Future<void> syncPresence(ProgressService progress) async {
-    if (!backend.isActive || companions.isEmpty) return;
+  /// Retorna os códigos cuja recompensa de referral acabou de ser concedida
+  /// (convidado completou a 1ª missão), para o chamador celebrar na UI.
+  Future<List<String>> syncPresence(ProgressService progress) async {
+    if (!backend.isActive || companions.isEmpty) return const [];
     final codes = companions.map((c) => c.code).toList();
     await backend.syncCompanionPresence(
       codes: codes,
       userName: progress.userName,
       weeklySteps: progress.weeklySteps,
       walkedToday: progress.walkedToday,
+      completedFirstMission: progress.completedMissions.isNotEmpty,
     );
     await refresh();
+    final rewarded = <String>[];
+    for (final c in companions) {
+      if (c.isHost && c.guestFirstMissionDone) {
+        final granted = await progress.claimReferralReward(c.code);
+        if (granted) rewarded.add(c.code);
+      }
+    }
+    return rewarded;
+  }
+
+  /// Envia um aceno no app. WhatsApp continua opcional no sheet.
+  Future<bool> sendNudge({
+    required String code,
+    required String fromName,
+    required String message,
+  }) async {
+    lastError = null;
+    if (!backend.isActive) {
+      lastError = 'Entre na conta para acenar no app.';
+      notifyListeners();
+      return false;
+    }
+    final ok = await backend.sendCompanionNudge(
+      code: code,
+      fromName: fromName,
+      message: message,
+    );
+    if (!ok) {
+      lastError = 'Não foi possível enviar o aceno.';
+      notifyListeners();
+      return false;
+    }
+    await refresh();
+    return true;
   }
 
   Future<void> leave(String code, {ProgressService? progress}) async {
@@ -193,14 +249,23 @@ class CompanionService extends ChangeNotifier {
     if (backend.isActive) {
       await backend.leaveCompanion(code);
     }
-    final codes = [for (final c in await _loadCodes()) if (c != code) c];
+    final codes = [
+      for (final c in await _loadCodes())
+        if (c != code) c,
+    ];
     await _saveCodes(codes, progress: progress);
     await refresh();
   }
 
   @override
+  void dispose() {
+    subscription?.removeListener(_onSubscriptionChanged);
+    super.dispose();
+  }
+
+  @override
   String toString() => jsonEncode({
-        'companions': companions.length,
-        'codes': companions.map((c) => c.code).toList(),
-      });
+    'companions': companions.length,
+    'codes': companions.map((c) => c.code).toList(),
+  });
 }

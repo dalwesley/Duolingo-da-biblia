@@ -153,7 +153,7 @@ class PilgrimMedalCatalog {
   static void _addPrefixThrough(Set<String> out, String levelOrRareId) {
     for (final track in [
       ...journeyTracks,
-      advent2026Track,
+      adventTrack(2026),
     ]) {
       final idx = track.levels.indexWhere((l) => l.id == levelOrRareId);
       if (idx >= 0) {
@@ -335,45 +335,144 @@ class PilgrimMedalCatalog {
     ),
   ];
 
-  static final advent2026Track = PilgrimMedalTrackDef(
-    id: advent2026TrackId,
-    title: 'Advento',
-    subtitle: 'Espera e preparação — 2026',
-    glyph: CinematicGlyph.star,
-    family: PilgrimMedalFamily.season,
-    kind: PilgrimVaultKind.season,
-    levels: const [
-      PilgrimMedalLevelDef(
-        id: 'track:season:advento-2026:0',
-        tier: PilgrimMedalTier.bronze,
-        title: 'Porta aberta',
-        hint: 'Caminhe 1 dia no Advento',
-        glyph: CinematicGlyph.spark,
-        rung: PilgrimMedalRung.spark,
-      ),
-      PilgrimMedalLevelDef(
-        id: 'track:season:advento-2026:1',
-        tier: PilgrimMedalTier.silver,
-        title: 'Primeira semana',
-        hint: 'Caminhe 7 dias no Advento',
-        glyph: CinematicGlyph.calendar,
-      ),
-      PilgrimMedalLevelDef(
-        id: 'track:season:advento-2026:2',
-        tier: PilgrimMedalTier.gold,
-        title: 'Meio do caminho',
-        hint: 'Caminhe metade dos dias do Advento',
-        glyph: CinematicGlyph.path,
-      ),
-      PilgrimMedalLevelDef(
-        id: 'track:season:advento-2026:3',
-        tier: PilgrimMedalTier.diamond,
-        title: 'Temporada vivida',
-        hint: 'Caminhe 22 dias no Advento',
-        glyph: CinematicGlyph.crown,
-      ),
-    ],
-  );
+  /// Ano do Advento "ativo" a partir de [now] — só vira depois da janela
+  /// (24/12) + graça de 7 dias.
+  static int currentAdventYear(DateTime now) {
+    final day = DateTime(now.year, now.month, now.day);
+    final graceEnd = DateTime(now.year, 12, 24).add(const Duration(days: 7));
+    return day.isAfter(graceEnd) ? now.year + 1 : now.year;
+  }
+
+  /// Ano da Quaresma "ativa" a partir de [now] — só vira depois do Sábado
+  /// Santo + graça de 7 dias.
+  static int currentLentYear(DateTime now) {
+    final day = DateTime(now.year, now.month, now.day);
+    final window = lentWindow(now.year);
+    final graceEnd = DateTime(
+      window.end.year,
+      window.end.month,
+      window.end.day,
+    ).add(const Duration(days: 7));
+    return day.isAfter(graceEnd) ? now.year + 1 : now.year;
+  }
+
+  static String adventVaultId(int year) => 'season:advento-$year';
+  static String adventTrackId(int year) => 'track:season:advento-$year';
+  static String lentVaultId(int year) => 'season:quaresma-$year';
+  static String lentTrackId(int year) => 'track:season:quaresma-$year';
+
+  static ({DateTime start, DateTime end, int totalDays}) adventWindow(
+    int year,
+  ) {
+    final start = LiturgicalCalendar.adventStart(year);
+    final end = DateTime(year, 12, 24);
+    return (start: start, end: end, totalDays: end.difference(start).inDays + 1);
+  }
+
+  static ({DateTime start, DateTime end, int totalDays}) lentWindow(
+    int year,
+  ) {
+    final easter = LiturgicalCalendar.easterSunday(year);
+    final start = easter.subtract(const Duration(days: 46));
+    final end = easter.subtract(const Duration(days: 1));
+    return (start: start, end: end, totalDays: end.difference(start).inDays + 1);
+  }
+
+  static int adventDayCount(int year) => adventWindow(year).totalDays;
+  static int adventHalfDays(int year) => (adventDayCount(year) / 2).ceil();
+  static int adventDiamondDays(int year) =>
+      (adventDayCount(year) - 4).clamp(1, adventDayCount(year));
+
+  static int lentDayCount(int year) => lentWindow(year).totalDays;
+  static int lentHalfDays(int year) => (lentDayCount(year) / 2).ceil();
+  static int lentDiamondDays(int year) =>
+      (lentDayCount(year) - 4).clamp(1, lentDayCount(year));
+
+  static PilgrimMedalTrackDef adventTrack(int year) {
+    final trackId = adventTrackId(year);
+    return PilgrimMedalTrackDef(
+      id: trackId,
+      title: 'Advento',
+      subtitle: 'Espera e preparação — $year',
+      glyph: CinematicGlyph.star,
+      family: PilgrimMedalFamily.season,
+      kind: PilgrimVaultKind.season,
+      levels: [
+        PilgrimMedalLevelDef(
+          id: '$trackId:0',
+          tier: PilgrimMedalTier.bronze,
+          title: 'Porta aberta',
+          hint: 'Caminhe 1 dia no Advento',
+          glyph: CinematicGlyph.spark,
+          rung: PilgrimMedalRung.spark,
+        ),
+        PilgrimMedalLevelDef(
+          id: '$trackId:1',
+          tier: PilgrimMedalTier.silver,
+          title: 'Primeira semana',
+          hint: 'Caminhe 7 dias no Advento',
+          glyph: CinematicGlyph.calendar,
+        ),
+        PilgrimMedalLevelDef(
+          id: '$trackId:2',
+          tier: PilgrimMedalTier.gold,
+          title: 'Meio do caminho',
+          hint: 'Caminhe metade dos dias do Advento',
+          glyph: CinematicGlyph.path,
+        ),
+        PilgrimMedalLevelDef(
+          id: '$trackId:3',
+          tier: PilgrimMedalTier.diamond,
+          title: 'Temporada vivida',
+          hint: 'Caminhe ${adventDiamondDays(year)} dias no Advento',
+          glyph: CinematicGlyph.crown,
+        ),
+      ],
+    );
+  }
+
+  static PilgrimMedalTrackDef lentTrack(int year) {
+    final trackId = lentTrackId(year);
+    return PilgrimMedalTrackDef(
+      id: trackId,
+      title: 'Quaresma',
+      subtitle: 'Deserto, jejum e retorno — $year',
+      glyph: CinematicGlyph.path,
+      family: PilgrimMedalFamily.season,
+      kind: PilgrimVaultKind.season,
+      levels: [
+        PilgrimMedalLevelDef(
+          id: '$trackId:0',
+          tier: PilgrimMedalTier.bronze,
+          title: 'Primeiro passo no deserto',
+          hint: 'Caminhe 1 dia na Quaresma',
+          glyph: CinematicGlyph.spark,
+          rung: PilgrimMedalRung.spark,
+        ),
+        PilgrimMedalLevelDef(
+          id: '$trackId:1',
+          tier: PilgrimMedalTier.silver,
+          title: 'Primeira semana',
+          hint: 'Caminhe 7 dias na Quaresma',
+          glyph: CinematicGlyph.calendar,
+        ),
+        PilgrimMedalLevelDef(
+          id: '$trackId:2',
+          tier: PilgrimMedalTier.gold,
+          title: 'Meio do deserto',
+          hint: 'Caminhe metade dos dias da Quaresma',
+          glyph: CinematicGlyph.path,
+        ),
+        PilgrimMedalLevelDef(
+          id: '$trackId:3',
+          tier: PilgrimMedalTier.diamond,
+          title: 'Quaresma vivida',
+          hint: 'Caminhe ${lentDiamondDays(year)} dias na Quaresma',
+          glyph: CinematicGlyph.crown,
+        ),
+      ],
+    );
+  }
 
   static const rareMedals = <PilgrimMedalDef>[
     PilgrimMedalDef(
@@ -449,15 +548,16 @@ class PilgrimMedalCatalog {
       glyph: CinematicGlyph.scroll,
       family: PilgrimMedalFamily.discovery,
     ),
-    PilgrimMedalDef(
-      id: 'discovery:advent_week',
-      vaultId: advent2026VaultId,
-      title: 'Semana de espera',
-      hint: 'Sete dias seguidos durante o Advento',
-      glyph: CinematicGlyph.flame,
-      family: PilgrimMedalFamily.season,
-    ),
   ];
+
+  static PilgrimMedalDef adventWeekMedal(int year) => PilgrimMedalDef(
+        id: 'discovery:advent_week',
+        vaultId: adventVaultId(year),
+        title: 'Semana de espera',
+        hint: 'Sete dias seguidos durante o Advento',
+        glyph: CinematicGlyph.flame,
+        family: PilgrimMedalFamily.season,
+      );
 
   static PilgrimVaultDef journeyVault() => const PilgrimVaultDef(
         id: journeyVaultId,
@@ -478,32 +578,44 @@ class PilgrimMedalCatalog {
             rareMedals.where((m) => m.vaultId == discoveryVaultId).toList(),
       );
 
-  static PilgrimVaultDef advent2026Vault() {
-    final start = LiturgicalCalendar.adventStart(2026);
-    final end = DateTime(2026, 12, 24);
+  static PilgrimVaultDef adventVault(int year) {
+    final window = adventWindow(year);
     return PilgrimVaultDef(
-      id: advent2026VaultId,
+      id: adventVaultId(year),
       kind: PilgrimVaultKind.season,
-      title: 'Advento 2026',
+      title: 'Advento $year',
       subtitle: 'Espera e preparação',
       order: 50,
-      tracks: [advent2026Track],
-      rareMedals: rareMedals
-          .where((m) => m.id == 'discovery:advent_week')
-          .toList(),
-      activeFrom: start,
-      activeUntil: end,
+      tracks: [adventTrack(year)],
+      rareMedals: [adventWeekMedal(year)],
+      activeFrom: window.start,
+      activeUntil: window.end,
       graceDays: 7,
     );
   }
 
-  static int advent2026DayCount() {
-    final start = LiturgicalCalendar.adventStart(2026);
-    final end = DateTime(2026, 12, 24);
-    return end.difference(start).inDays + 1;
+  /// Cofre de Advento do ano corrente/próximo a partir de [now].
+  static PilgrimVaultDef adventVaultFor(DateTime now) =>
+      adventVault(currentAdventYear(now));
+
+  static PilgrimVaultDef lentVault(int year) {
+    final window = lentWindow(year);
+    return PilgrimVaultDef(
+      id: lentVaultId(year),
+      kind: PilgrimVaultKind.season,
+      title: 'Quaresma $year',
+      subtitle: 'Deserto, jejum e retorno',
+      order: 51,
+      tracks: [lentTrack(year)],
+      activeFrom: window.start,
+      activeUntil: window.end,
+      graceDays: 7,
+    );
   }
 
-  static int advent2026HalfDays() => (advent2026DayCount() / 2).ceil();
+  /// Cofre de Quaresma do ano corrente/próximo a partir de [now].
+  static PilgrimVaultDef lentVaultFor(DateTime now) =>
+      lentVault(currentLentYear(now));
 
   static String trailVaultId(String slug) => 'trail:$slug';
 

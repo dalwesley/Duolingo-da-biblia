@@ -11,6 +11,9 @@ class WalkCompanion {
   final bool awaitingPartner;
   final bool isHost;
 
+  /// True quando o convidado já completou a 1ª missão (dispara recompensa ao host).
+  final bool guestFirstMissionDone;
+
   /// Último dia em que o parceiro publicou um passo (`YYYY-MM-DD`).
   final String? theyLastWalkDate;
 
@@ -20,6 +23,14 @@ class WalkCompanion {
   /// Passos semanais denormalizados no doc da companhia.
   final int myWeeklySteps;
   final int theirWeeklySteps;
+
+  /// Aceno recebido do parceiro (ele te chamou de volta).
+  final String? incomingNudgeFromName;
+  final String? incomingNudgeMessage;
+  final String? incomingNudgeDay;
+
+  /// Já acenei hoje neste par.
+  final bool iNudgedToday;
 
   static const milestones = [3, 7, 14, 30, 60, 100];
 
@@ -36,13 +47,19 @@ class WalkCompanion {
     this.theyLastSeenDate,
     this.myWeeklySteps = 0,
     this.theirWeeklySteps = 0,
+    this.guestFirstMissionDone = false,
+    this.incomingNudgeFromName,
+    this.incomingNudgeMessage,
+    this.incomingNudgeDay,
+    this.iNudgedToday = false,
   });
 
   /// Ambos caminharam hoje — a companhia está viva.
   bool get bothWalkedToday => iWalkedToday && theyWalkedToday;
 
   /// Eu caminhei; ainda espero o outro.
-  bool get waitingOnThem => iWalkedToday && !theyWalkedToday && !awaitingPartner;
+  bool get waitingOnThem =>
+      iWalkedToday && !theyWalkedToday && !awaitingPartner;
 
   /// Eles caminharam; eu ainda não.
   bool get waitingOnMe => !iWalkedToday && theyWalkedToday && !awaitingPartner;
@@ -142,14 +159,16 @@ class WalkCompanion {
         shareCardLine: away == 1
             ? '1 dia pra trás na caminhada'
             : '$away dias pra trás na caminhada',
-        shareBody: '''
+        shareBody:
+            '''
 Oi $them 👋
 Você está ficando pra trás na nossa caminhada no Stway.
 Já dei meus passos de hoje e tô te esperando!
 Vem?
 
 ${InviteDeepLinkService.openAppFooter()}
-'''.trim(),
+'''
+                .trim(),
       );
     }
     if (away <= 6) {
@@ -160,14 +179,16 @@ ${InviteDeepLinkService.openAppFooter()}
         statusLine: 'Faz $away dias — a trilha sente falta de $them',
         insight: 'A poeira já cobriu o caminho',
         shareCardLine: '$away dias na poeira',
-        shareBody: '''
+        shareBody:
+            '''
 Oi $them 👋
 Faz $away dias que a gente não caminha juntos no Stway.
 A poeira já cobriu a trilha — tô te esperando pra limpar o caminho!
 Vem?
 
 ${InviteDeepLinkService.openAppFooter()}
-'''.trim(),
+'''
+                .trim(),
       );
     }
     return CompanionDelayCopy(
@@ -177,7 +198,8 @@ ${InviteDeepLinkService.openAppFooter()}
       statusLine: 'Te perdi na multidão — $away dias sem $them',
       insight: 'Mas dá pra retomar nossa caminhada',
       shareCardLine: '$away dias sumido na multidão',
-      shareBody: '''
+      shareBody:
+          '''
 Oi $them 👋
 Te perdi na multidão!
 Faz $away dias que a gente não caminha juntos no Stway.
@@ -186,9 +208,49 @@ Mas dá pra retomar nossa caminhada — já dei meus passos de hoje.
 Vem?
 
 ${InviteDeepLinkService.openAppFooter()}
-'''.trim(),
+'''
+              .trim(),
     );
   }
+
+  /// Primeiro nome do parceiro, para copy.
+  String get partnerFirstName {
+    final n = displayName.trim();
+    if (n.isEmpty || n == 'Companheiro' || n == 'Aguardando') {
+      return 'Companheiro';
+    }
+    return n.split(' ').first;
+  }
+
+  /// Mensagens curtas do aceno — o parceiro lê no app.
+  List<String> get nudgePresets {
+    final away = theyDaysAway ?? 0;
+    if (away >= 7) {
+      return const [
+        'Ainda tem lugar ao meu lado',
+        'Dá pra retomar — tô aqui',
+        'Dei meu passo hoje. Vem?',
+      ];
+    }
+    if (away >= 4) {
+      return const [
+        'A poeira cobriu o caminho',
+        'Tô te esperando pra limpar a trilha',
+        'Dei meu passo hoje. Vem?',
+      ];
+    }
+    return const [
+      'Tô te esperando na trilha',
+      'Já dei meu passo — falta o seu',
+      'Vamos caminhar juntos hoje',
+    ];
+  }
+
+  /// Aceno visível pra mim (ainda não caminhei hoje).
+  bool get hasIncomingNudge =>
+      !awaitingPartner &&
+      !iWalkedToday &&
+      (incomingNudgeFromName?.trim().isNotEmpty ?? false);
 
   /// Texto para compartilhar e chamar atenção (WhatsApp etc.).
   String nudgeShareText() {
@@ -203,7 +265,8 @@ Já dei meus passos de hoje no Stway — tô te esperando!
 Vem?
 
 ${InviteDeepLinkService.openAppFooter()}
-'''.trim();
+'''
+        .trim();
   }
 
   /// Parceiro em atraso — card empoeirado (como na home).

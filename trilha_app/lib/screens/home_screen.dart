@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import '../data/trail_repository.dart';
 import '../models/trail.dart';
 import '../services/analytics_service.dart';
+import '../services/companion_service.dart';
 import '../services/league_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
@@ -13,6 +14,7 @@ import '../utils/trail_progress.dart';
 import '../models/daily_quest.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/comeback_sheet.dart';
+import '../widgets/companion_nudge_home_card.dart';
 import '../widgets/daily_quests_card.dart';
 import '../widgets/hero_continue_card.dart';
 import '../widgets/home_player_header.dart';
@@ -23,8 +25,10 @@ import '../widgets/league_risk_card.dart';
 import '../widgets/offline_curriculum_dialog.dart';
 import '../widgets/streak_repair_banner.dart';
 import '../widgets/medal_proximity_whisper.dart';
+import '../widgets/season_challenge_banner.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
+import '../widgets/wave_hands_overlay.dart';
 import 'bible_screen.dart';
 import 'memory_screen.dart';
 import 'practice_screen.dart';
@@ -265,117 +269,141 @@ class _HomeScreenState extends State<HomeScreen>
 
     _maybeShowComeback(progress, missionSlug: current?.slug);
 
-    return ListView(
-      padding: EdgeInsets.fromLTRB(
-        AppSpace.screen,
-        MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
-        AppSpace.screen,
-        scrollPaddingBelowNav(context),
-      ),
-      physics: const ClampingScrollPhysics(),
+    final nudge = context.watch<CompanionService>().incomingNudge;
+    final walk = current != null
+        ? () => widget.onOpenMission(current.slug)
+        : widget.onOpenTrilhas;
+
+    return Stack(
       children: [
-        // Header: saudação + estação + pulso do dia.
-        _reveal(
-          0,
-          HomePlayerHeader(
-            onProfileTap: widget.onOpenProfile,
-            onTapMission: current != null
-                ? () => widget.onOpenMission(current.slug)
-                : widget.onOpenTrilhas,
-            onLiturgyTap: () =>
-                _openBible(LiturgicalCalendar.momentFor().focusRef),
+        ListView(
+          padding: EdgeInsets.fromLTRB(
+            AppSpace.screen,
+            MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
+            AppSpace.screen,
+            scrollPaddingBelowNav(context),
           ),
-        ),
-        const SizedBox(height: AppSpace.md),
-        // Resultado da semana da caravana — coletar na Home (não na aba Juntos).
-        Builder(
-          builder: (context) {
-            final league = context.watch<LeagueService>();
-            if (!league.isLoaded || league.pendingOutcome == null) {
-              return const SizedBox.shrink();
-            }
-            return Column(
-              children: [
-                _reveal(0, const LeagueOutcomeCard()),
-                const SizedBox(height: AppSpace.section),
-              ],
-            );
-          },
-        ),
-        // CTA dominante: missão pronta.
-        _reveal(
-          1,
-          Column(
-            children: [
-              HeroContinueCard(
-                mission: current,
-                trailTitle: active?.title ?? '',
-                trailSlug: active?.slug ?? 'genesis-1-11',
-                trailColor: active?.color ?? '#1B3A5C',
-                onTap: current != null
-                    ? () => widget.onOpenMission(current.slug)
-                    : null,
-                onExploreTrails: widget.onOpenTrilhas,
-                goalMet: goalMet,
-                atRisk: progress.isStreakAtRisk,
-                lampsReady: ProgressService.lampsForMission(
-                  isBoss: current?.isBoss ?? false,
-                ),
-              ),
-              MedalHomeWhisper(
-                catalog: trails,
-                priorityTrailSlug: active?.slug,
-                onBible: _openBible,
-                onMemory: _openMemory,
-                onMission: current != null
+          physics: const ClampingScrollPhysics(),
+          children: [
+            // Header: saudação + estação + pulso do dia.
+            _reveal(
+              0,
+              HomePlayerHeader(
+                onProfileTap: widget.onOpenProfile,
+                onTapMission: current != null
                     ? () => widget.onOpenMission(current.slug)
                     : widget.onOpenTrilhas,
-                onShare: _openBible,
+                onLiturgyTap: () =>
+                    _openBible(LiturgicalCalendar.momentFor().focusRef),
+              ),
+            ),
+            if (nudge != null) ...[
+              const SizedBox(height: AppSpace.md),
+              _reveal(
+                0,
+                CompanionNudgeHomeCard(
+                  companion: nudge,
+                  onWalk: walk,
+                  onOpenCompanhia: widget.onOpenLeague,
+                ),
               ),
             ],
-          ),
+            const SizedBox(height: AppSpace.md),
+            // Resultado da semana da caravana — coletar na Home (não na aba Juntos).
+            Builder(
+              builder: (context) {
+                final league = context.watch<LeagueService>();
+                if (!league.isLoaded || league.pendingOutcome == null) {
+                  return const SizedBox.shrink();
+                }
+                return Column(
+                  children: [
+                    _reveal(0, const LeagueOutcomeCard()),
+                    const SizedBox(height: AppSpace.section),
+                  ],
+                );
+              },
+            ),
+            // CTA dominante: missão pronta.
+            _reveal(
+              1,
+              Column(
+                children: [
+                  HeroContinueCard(
+                    mission: current,
+                    trailTitle: active?.title ?? '',
+                    trailSlug: active?.slug ?? 'genesis-1-11',
+                    trailColor: active?.color ?? '#1B3A5C',
+                    onTap: current != null
+                        ? () => widget.onOpenMission(current.slug)
+                        : null,
+                    onExploreTrails: widget.onOpenTrilhas,
+                    goalMet: goalMet,
+                    atRisk: progress.isStreakAtRisk,
+                    lampsReady: ProgressService.lampsForMission(
+                      isBoss: current?.isBoss ?? false,
+                    ),
+                  ),
+                  MedalHomeWhisper(
+                    catalog: trails,
+                    priorityTrailSlug: active?.slug,
+                    onBible: _openBible,
+                    onMemory: _openMemory,
+                    onMission: current != null
+                        ? () => widget.onOpenMission(current.slug)
+                        : widget.onOpenTrilhas,
+                    onShare: _openBible,
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: AppSpace.section),
+            _reveal(2, SeasonChallengeBanner(catalog: trails)),
+            if (progress.showStreakRepairOffer) ...[
+              _reveal(2, const StreakRepairBanner()),
+              const SizedBox(height: AppSpace.section),
+            ],
+            Builder(
+              builder: (context) {
+                final league = context.watch<LeagueService>();
+                if (!league.isLoaded) return const SizedBox.shrink();
+                final entries = league.standings(
+                  userName: progress.userName,
+                  userWeeklySteps: progress.weeklySteps,
+                );
+                final rank = league.userRank(entries);
+                if (!league.isNearDemotion(rank)) {
+                  return const SizedBox.shrink();
+                }
+                return Column(
+                  children: [
+                    _reveal(
+                      3,
+                      LeagueRiskCard(onOpenLeague: widget.onOpenLeague),
+                    ),
+                    const SizedBox(height: AppSpace.section),
+                  ],
+                );
+              },
+            ),
+            _reveal(
+              3,
+              DailyQuestsCard(
+                onQuestTap: (q) => _onQuestTap(q, missionSlug: current?.slug),
+              ),
+            ),
+            const SizedBox(height: AppSpace.section),
+            _reveal(
+              4,
+              HomeWordCard(mission: current, onOpen: (ref) => _openBible(ref)),
+            ),
+            if (progress.mistakeQuestionIds.isNotEmpty) ...[
+              const SizedBox(height: AppSpace.section),
+              _reveal(4, const _RevisitPracticeLink()),
+            ],
+          ],
         ),
-        const SizedBox(height: AppSpace.section),
-        if (progress.showStreakRepairOffer) ...[
-          _reveal(2, const StreakRepairBanner()),
-          const SizedBox(height: AppSpace.section),
-        ],
-        Builder(
-          builder: (context) {
-            final league = context.watch<LeagueService>();
-            if (!league.isLoaded) return const SizedBox.shrink();
-            final entries = league.standings(
-              userName: progress.userName,
-              userWeeklySteps: progress.weeklySteps,
-            );
-            final rank = league.userRank(entries);
-            if (!league.isNearDemotion(rank)) return const SizedBox.shrink();
-            return Column(
-              children: [
-                _reveal(3, LeagueRiskCard(onOpenLeague: widget.onOpenLeague)),
-                const SizedBox(height: AppSpace.section),
-              ],
-            );
-          },
-        ),
-        _reveal(
-          3,
-          DailyQuestsCard(
-            onQuestTap: (q) => _onQuestTap(q, missionSlug: current?.slug),
-          ),
-        ),
-        const SizedBox(height: AppSpace.section),
-        _reveal(
-          4,
-          HomeWordCard(
-            mission: current,
-            onOpen: (ref) => _openBible(ref),
-          ),
-        ),
-        if (progress.mistakeQuestionIds.isNotEmpty) ...[
-          const SizedBox(height: AppSpace.section),
-          _reveal(4, const _RevisitPracticeLink()),
-        ],
+        WaveHandsOverlay(active: nudge != null),
       ],
     );
   }

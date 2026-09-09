@@ -105,8 +105,10 @@ $_installUrl
     HapticFeedback.selectionClick();
     await Clipboard.setData(ClipboardData(text: widget.code));
     if (!mounted) return;
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(content: Text('Código copiado')),
+    showAppToastFor(
+      context,
+      message: 'Código copiado',
+      glyph: CinematicGlyph.copy,
     );
   }
 
@@ -119,8 +121,9 @@ $_installUrl
       if (widget.companionMode) {
         await Future<void>.delayed(const Duration(milliseconds: 40));
         await WidgetsBinding.instance.endOfFrame;
-        final boundary = _boundaryKey.currentContext?.findRenderObject()
-            as RenderRepaintBoundary?;
+        final boundary =
+            _boundaryKey.currentContext?.findRenderObject()
+                as RenderRepaintBoundary?;
         if (boundary != null) {
           final image = await boundary.toImage(pixelRatio: 3);
           final bytes = await image.toByteData(format: ui.ImageByteFormat.png);
@@ -335,10 +338,7 @@ class _InvitePreviewTile extends StatelessWidget {
   final String code;
   final String inviterName;
 
-  const _InvitePreviewTile({
-    required this.code,
-    required this.inviterName,
-  });
+  const _InvitePreviewTile({required this.code, required this.inviterName});
 
   @override
   Widget build(BuildContext context) {
@@ -512,19 +512,20 @@ class InviteShareCard extends StatelessWidget {
                   const SizedBox(height: 22),
                   Text(
                     headline ?? 'Andem juntos',
-                    style: AppTypography.display(
-                      size: 28,
-                      weight: FontWeight.w800,
-                      color: Colors.white,
-                    ).copyWith(
-                      shadows: [
-                        Shadow(
-                          color: Colors.black.withValues(alpha: 0.5),
-                          blurRadius: 12,
-                          offset: const Offset(0, 2),
+                    style:
+                        AppTypography.display(
+                          size: 28,
+                          weight: FontWeight.w800,
+                          color: Colors.white,
+                        ).copyWith(
+                          shadows: [
+                            Shadow(
+                              color: Colors.black.withValues(alpha: 0.5),
+                              blurRadius: 12,
+                              offset: const Offset(0, 2),
+                            ),
+                          ],
                         ),
-                      ],
-                    ),
                   ),
                   const SizedBox(height: 8),
                   Text(

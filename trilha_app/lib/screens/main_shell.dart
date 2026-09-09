@@ -11,7 +11,9 @@ import '../services/league_service.dart';
 import '../services/medal_engagement_service.dart';
 import '../services/notification_service.dart';
 import '../services/progress_service.dart';
+import '../services/remote_config_service.dart';
 import '../services/room_service.dart';
+import '../services/tts_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
@@ -51,6 +53,8 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
   DayPhase? _lastClockPhase;
 
   ProgressService? _progressRef;
+  BackendService? _backendRef;
+
   /// Evita fetch duplicado se o SO dispara vários `resumed` em sequência.
   bool _resumeHydrateInFlight = false;
   DateTime? _lastResumeHydrateAt;
@@ -79,9 +83,20 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       if (!mounted) return;
       _progressRef = context.read<ProgressService>();
       _progressRef!.addListener(_onProgressChanged);
+      _backendRef = context.read<BackendService>();
+      _backendRef!.addListener(_onBackendChanged);
       _flushCloudSave();
       _syncReminders();
       NotificationService.instance.onAction = _handleReminderAction;
+      NotificationService.instance.onRemoteToken = (token) {
+        context.read<BackendService>().saveFcmToken(token);
+      };
+      NotificationService.instance.onRemoteNudge = () {
+        unawaited(context.read<CompanionService>().refresh());
+      };
+      unawaited(NotificationService.instance.initRemote());
+      unawaited(RemoteConfigService.instance.init());
+      _onBackendChanged();
       final pending = NotificationService.instance.takePendingAction();
       if (pending != null) {
         WidgetsBinding.instance.addPostFrameCallback((_) {
@@ -98,6 +113,12 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       _openJuntosIfInvitePending();
       MedalEngagementService.instance.scheduleCheck(context);
     });
+  }
+
+  void _onBackendChanged() {
+    final backend = _backendRef;
+    if (backend == null || !backend.isActive) return;
+    NotificationService.instance.emitRemoteToken();
   }
 
   void _onInviteDeepLink() {
@@ -162,10 +183,28 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       league: context.read<LeagueService>(),
     );
     if (progress.walkedToday) {
-      context.read<CompanionService>().syncPresence(progress);
+      unawaited(_syncCompanionAndCelebrateReferral(progress));
     }
     HomeWidgetService.syncFromProgress(progress);
     MedalEngagementService.instance.scheduleCheck(context);
+  }
+
+  Future<void> _syncCompanionAndCelebrateReferral(
+    ProgressService progress,
+  ) async {
+    final rewarded = await context.read<CompanionService>().syncPresence(
+      progress,
+    );
+    if (!mounted || rewarded.isEmpty) return;
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(
+          rewarded.length == 1
+              ? 'Seu convite valeu +${ProgressService.referralFirstMissionBonus} passos!'
+              : 'Seus convites valeram +${rewarded.length * ProgressService.referralFirstMissionBonus} passos!',
+        ),
+      ),
+    );
   }
 
   @override
@@ -173,6 +212,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     if (state == AppLifecycleState.paused ||
         state == AppLifecycleState.inactive ||
         state == AppLifecycleState.detached) {
+      unawaited(TtsService.instance.stop());
       _flushCloudSave();
       _syncReminders();
       final progress = _progressRef;
@@ -217,6 +257,8 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       if (!mounted) return;
       _lastResumeHydrateAt = DateTime.now();
 
+      unawaited(context.read<CompanionService>().refresh());
+
       await backend.settleAndSyncLeague(
         progress,
         league,
@@ -258,10 +300,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
         ).push(MaterialPageRoute(builder: (_) => const MemoryScreen()));
       case ReminderAction.favorites:
       case ReminderAction.weekly:
-        setState(() {
-          _index = 4;
-          _frost.value = 0;
-        });
+        _openProfile();
     }
   }
 
@@ -274,6 +313,9 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     _progressRef?.removeListener(_onProgressChanged);
     InviteDeepLinkService.instance.removeListener(_onInviteDeepLink);
     NotificationService.instance.onAction = null;
+    NotificationService.instance.onRemoteNudge = null;
+    NotificationService.instance.onRemoteToken = null;
+    _backendRef?.removeListener(_onBackendChanged);
     super.dispose();
   }
 
@@ -287,12 +329,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     Navigator.of(context).pushNamed('/lesson', arguments: missionSlug);
   }
 
-  void _openProfile() => setState(() {
-    _index = 4;
-    _frost.value = 0;
-  });
-
-  void _openSettings() => openSettings(context);
+  void _openProfile() => openMeProfile(context);
 
   void _goToTrilhas() => setState(() {
     _index = 1;
@@ -319,24 +356,22 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
         1 => CinematicGlyph.path,
         2 => CinematicGlyph.book,
         3 => CinematicGlyph.people,
-        _ => CinematicGlyph.humanity,
+        _ => CinematicGlyph.tune,
       },
       title: switch (index) {
         0 => userName,
         1 => 'Trilhas',
         2 => 'Bíblia',
         3 => 'Juntos',
-        _ => userName,
+        _ => 'Ajustes',
       },
       subtitle: switch (index) {
         0 => DayPhaseHelper.greeting(), // relógio — não o tema de aparência
         1 => 'O mapa da jornada',
         2 => LiturgicalCalendar.momentFor().subtitle,
         3 => 'Caravana · Companhia · Salas',
-        _ => 'Sua caminhada',
+        _ => 'Conta · Preferências',
       },
-      onTrailingTap: index == 4 ? _openSettings : null,
-      trailingGlyph: index == 4 ? CinematicGlyph.tune : null,
     );
   }
 
@@ -388,13 +423,14 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
               active: _index == 3,
               onOpenOwnProfile: _openProfile,
             ),
-            MeScreen(topBar: tabBar(4)),
+            SettingsScreen(topBar: tabBar(4)),
           ],
         ),
       ),
       bottomNavigationBar: MainBottomNav(
         currentIndex: _index,
         onTap: (i) => setState(() {
+          if (_index == 2 && i != 2) unawaited(TtsService.instance.stop());
           _index = i;
           _frost.value = 0;
         }),

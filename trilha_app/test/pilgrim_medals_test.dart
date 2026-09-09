@@ -358,5 +358,44 @@ void main() {
       expect(line?.track.trailSlug, 'genesis-1-11');
       expect(line?.monitorMessage, contains('Gênesis'));
     });
+
+    test('advent year stays through Christmas grace week', () {
+      expect(
+        PilgrimMedalCatalog.currentAdventYear(DateTime(2026, 12, 28)),
+        2026,
+      );
+      expect(
+        PilgrimMedalCatalog.currentAdventYear(DateTime(2027, 1, 1)),
+        2027,
+      );
+    });
+
+    test('lent year stays through Easter grace week', () {
+      expect(
+        PilgrimMedalCatalog.currentLentYear(DateTime(2026, 4, 8)),
+        2026,
+      );
+      expect(
+        PilgrimMedalCatalog.currentLentYear(DateTime(2026, 4, 12)),
+        2027,
+      );
+    });
+
+    test('advent vault remains visible in grace week', () {
+      final vaults = PilgrimMedals.evaluateVaults(
+        profile: const CaravanPilgrimProfile(name: 'Test', steps: 1),
+        catalog: const [],
+        ctx: PilgrimMedalEvalContext(now: DateTime(2026, 12, 28)),
+      );
+      expect(
+        vaults.any((v) => v.vault.id == PilgrimMedalCatalog.advent2026VaultId),
+        isTrue,
+      );
+    });
+
+    test('advent week rare medal binds to the vault year', () {
+      final vault = PilgrimMedalCatalog.adventVault(2027);
+      expect(vault.rareMedals.single.vaultId, 'season:advento-2027');
+    });
   });
 }

@@ -28,7 +28,7 @@ class MainBottomNav extends StatelessWidget {
       (glyph: CinematicGlyph.path, label: 'Trilhas'),
       (glyph: CinematicGlyph.book, label: 'Bíblia'),
       (glyph: CinematicGlyph.people, label: 'Juntos'),
-      (glyph: CinematicGlyph.humanity, label: 'Eu'),
+      (glyph: CinematicGlyph.tune, label: 'Ajustes'),
     ];
 
     final bottomInset = MediaQuery.of(context).padding.bottom;

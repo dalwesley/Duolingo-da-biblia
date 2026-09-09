@@ -133,6 +133,18 @@ service cloud.firestore {
             || userData().weeklyWeek == week);
     }
 
+    // Grupo fechado da caravana (célula/paróquia) — mesmo critério da liga semanal.
+    match /leagueGroups/{code}/weeks/{week}/players/{uid} {
+      allow read: if isSignedIn();
+      allow delete: if ownRankingDelete();
+      allow create, update: if isYmd(week)
+        && rankingScoreMatches(userWeeklySteps())
+        && (!userExists()
+            || !('weeklyWeek' in userData())
+            || userData().weeklyWeek == null
+            || userData().weeklyWeek == week);
+    }
+
     match /overallPlayers/{uid} {
       allow read: if isSignedIn();
       allow delete: if ownRankingDelete();

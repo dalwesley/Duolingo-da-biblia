@@ -27,6 +27,10 @@ class MedalEngagementService {
   String? _lastProximitySnackId;
   List<Trail> _catalog = const [];
 
+  /// Id do próximo nível já exibido inline pela [MedalHomeWhisper] na Home —
+  /// evita duplicar a mesma mensagem num SnackBar por cima.
+  String? homeVisibleProximityId;
+
   void scheduleCheck(BuildContext context) {
     _debounce?.cancel();
     _debounce = Timer(const Duration(milliseconds: 600), () {
@@ -183,6 +187,7 @@ class MedalEngagementService {
       ctx: ctx,
     );
     if (proximity == null || proximity.remaining > 1) return;
+    if (proximity.nextLevel.id == homeVisibleProximityId) return;
     if (_lastProximitySnackId == proximity.nextLevel.id) return;
     _lastProximitySnackId = proximity.nextLevel.id;
 
@@ -240,6 +245,33 @@ class MedalEngagementService {
   static Future<int> unlockedCountCached(ProgressService progress, String uid) {
     return TrailRepository().getTrails().then(
           (catalog) => unlockedCountForProgress(progress, uid, catalog),
+        );
+  }
+
+  /// Só as medalhas raras "Mirra" já desbloqueadas (não a soma de tudo).
+  static List<PilgrimMedalDef> unlockedRareMedalsForProgress(
+    ProgressService progress,
+    String uid,
+    List<Trail> catalog,
+  ) {
+    final vaults = medals.PilgrimMedals.evaluateVaults(
+      profile: CaravanPilgrimProfile.fromProgress(progress: progress, uid: uid),
+      catalog: catalog,
+      ctx: PilgrimMedalEvalContext.fromProgress(progress),
+    );
+    return [
+      for (final vault in vaults)
+        for (final status in vault.rareMedals)
+          if (status.unlocked) status.def,
+    ];
+  }
+
+  static Future<List<PilgrimMedalDef>> unlockedRareMedalsCached(
+    ProgressService progress,
+    String uid,
+  ) {
+    return TrailRepository().getTrails().then(
+          (catalog) => unlockedRareMedalsForProgress(progress, uid, catalog),
         );
   }
 

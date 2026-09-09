@@ -11,6 +11,7 @@ import '../utils/appearance.dart';
 import '../utils/catalog_access.dart';
 import 'bible_reading_plan_service.dart';
 import 'bible_service.dart';
+import 'remote_config_service.dart';
 
 class AppSettings {
   final bool sound;
@@ -119,6 +120,10 @@ class ProgressService extends ChangeNotifier {
       isBoss ? bossQuestionCount : normalQuestionCount;
   static const comebackBonusSteps = 15;
   static const minStreakForRepair = 3;
+  /// Bônus ao host quando o convidado completa a 1ª missão (referral).
+  /// Calibrável via [RemoteConfigService], default igual ao valor anterior.
+  static int get referralFirstMissionBonus =>
+      RemoteConfigService.instance.referralFirstMissionBonus;
 
   /// Unidade do produto: passos (legado local/cloud ainda usa a chave `xp`).
   int steps = 0;
@@ -220,6 +225,9 @@ class ProgressService extends ChangeNotifier {
   /// Códigos de companhia / sala ativos (sync em `users/{uid}`).
   List<String> companionCodes = [];
   String? activeRoomCode;
+
+  /// Códigos de companhia cuja recompensa de referral já foi concedida ao host.
+  List<String> claimedReferralRewards = [];
 
   /// Coorte de retenção (D7) — datas locais YYYY-MM-DD + epoch do 1º open.
   String? firstOpenDate;
@@ -622,6 +630,7 @@ class ProgressService extends ChangeNotifier {
     sharedVerseCount = 0;
     perfectMissions = [];
     celebratedMedalIds = [];
+    claimedReferralRewards = [];
     medalCelebrationSeeded = false;
     vaultCompleteCelebratedIds = [];
     medalVaultCompleteCelebrated = false;
@@ -757,6 +766,20 @@ class ProgressService extends ChangeNotifier {
     _gainSteps(amount);
     await _save();
     notifyListeners();
+  }
+
+  /// Concede o bônus de referral ao host uma única vez por [code] de companhia.
+  /// Retorna `true` se concedeu agora (idempotente entre chamadas repetidas).
+  Future<bool> claimReferralReward(String code) async {
+    final normalized = code.trim().toUpperCase();
+    if (normalized.isEmpty || claimedReferralRewards.contains(normalized)) {
+      return false;
+    }
+    claimedReferralRewards = [...claimedReferralRewards, normalized];
+    _gainSteps(referralFirstMissionBonus);
+    await _save();
+    notifyListeners();
+    return true;
   }
 
   /// Registra a leitura de um capítulo da Bíblia (missão diária "Palavra viva").
@@ -1604,6 +1627,7 @@ class ProgressService extends ChangeNotifier {
       'missionReflections': missionReflections,
       'companionCodes': companionCodes,
       'activeRoomCode': activeRoomCode,
+      'claimedReferralRewards': claimedReferralRewards,
       'firstOpenDate': firstOpenDate,
       'firstLessonDate': firstLessonDate,
       'firstLessonTrailSlug': firstLessonTrailSlug,
@@ -1919,6 +1943,12 @@ class ProgressService extends ChangeNotifier {
         celebratedMedalIds = {
           ...celebratedMedalIds,
           ...cloudCelebrated,
+        }.toList();
+      }
+      if (data.containsKey('claimedReferralRewards')) {
+        claimedReferralRewards = {
+          ...claimedReferralRewards,
+          ..._asStringList(data['claimedReferralRewards']),
         }.toList();
       }
       if (data.containsKey('medalCelebrationSeeded')) {
@@ -2237,6 +2267,7 @@ class ProgressService extends ChangeNotifier {
     sharedVerseCount = 0;
     perfectMissions = [];
     celebratedMedalIds = [];
+    claimedReferralRewards = [];
     medalCelebrationSeeded = false;
     vaultCompleteCelebratedIds = [];
     medalVaultCompleteCelebrated = false;

@@ -232,6 +232,24 @@ class AppTheme {
         color: AppColors.accent,
         linearTrackColor: Colors.white12,
       ),
+      snackBarTheme: SnackBarThemeData(
+        behavior: SnackBarBehavior.floating,
+        elevation: 0,
+        backgroundColor: AppColors.nightElevated,
+        contentTextStyle: AppTypography.body(
+          size: 14,
+          weight: FontWeight.w800,
+          color: AppColors.textOnDark,
+        ),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(AppRadii.md),
+          side: BorderSide(
+            color: AppColors.accent.withValues(alpha: 0.7),
+            width: 1.5,
+          ),
+        ),
+        insetPadding: const EdgeInsets.fromLTRB(16, 8, 16, 96),
+      ),
     );
   }
 

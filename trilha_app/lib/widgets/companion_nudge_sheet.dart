@@ -4,15 +4,18 @@ import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
+import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
 import '../models/walk_companion.dart';
+import '../services/companion_service.dart';
 import '../theme/app_theme.dart';
+import '../utils/layout_utils.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
 import 'hero_card_atmosphere.dart';
 import 'stway_brand.dart';
 
-/// Abre preview + compartilha imagem empoeirada da companhia.
+/// Abre o gesto de animar: aceno no app + WhatsApp opcional.
 Future<void> showCompanionNudgeSheet(
   BuildContext context, {
   required WalkCompanion companion,
@@ -22,10 +25,7 @@ Future<void> showCompanionNudgeSheet(
     context: context,
     isScrollControlled: true,
     backgroundColor: Colors.transparent,
-    builder: (_) => _CompanionNudgeSheet(
-      companion: companion,
-      myName: myName,
-    ),
+    builder: (_) => _CompanionNudgeSheet(companion: companion, myName: myName),
   );
 }
 
@@ -33,10 +33,7 @@ class _CompanionNudgeSheet extends StatefulWidget {
   final WalkCompanion companion;
   final String myName;
 
-  const _CompanionNudgeSheet({
-    required this.companion,
-    required this.myName,
-  });
+  const _CompanionNudgeSheet({required this.companion, required this.myName});
 
   @override
   State<_CompanionNudgeSheet> createState() => _CompanionNudgeSheetState();
@@ -44,30 +41,46 @@ class _CompanionNudgeSheet extends StatefulWidget {
 
 class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
   final _boundaryKey = GlobalKey();
-  bool _busy = false;
+  bool _sending = false;
+  bool _sharing = false;
+  late int _presetIndex;
+
+  WalkCompanion _resolve({required bool watch}) {
+    final list = watch
+        ? context.watch<CompanionService>().companions
+        : context.read<CompanionService>().companions;
+    for (final c in list) {
+      if (c.code == widget.companion.code) return c;
+    }
+    return widget.companion;
+  }
 
   @override
   void initState() {
     super.initState();
+    _presetIndex = 0;
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
-      precacheImage(
-        const AssetImage('assets/icon/splash_bg.png'),
-        context,
-      );
-      precacheImage(
-        const AssetImage('assets/icon/app_icon.png'),
-        context,
-      );
+      precacheImage(const AssetImage('assets/icon/splash_bg.png'), context);
+      precacheImage(const AssetImage('assets/icon/app_icon.png'), context);
     });
+  }
+
+  String get _them => widget.companion.partnerFirstName;
+
+  String _messageOf(WalkCompanion live) {
+    final presets = live.nudgePresets;
+    if (presets.isEmpty) return 'Tô te esperando na trilha';
+    return presets[_presetIndex.clamp(0, presets.length - 1)];
   }
 
   Future<XFile?> _captureCard() async {
     await Future<void>.delayed(const Duration(milliseconds: 80));
     await WidgetsBinding.instance.endOfFrame;
     await WidgetsBinding.instance.endOfFrame;
-    final boundary = _boundaryKey.currentContext?.findRenderObject()
-        as RenderRepaintBoundary?;
+    final boundary =
+        _boundaryKey.currentContext?.findRenderObject()
+            as RenderRepaintBoundary?;
     if (boundary == null) {
       debugPrint('nudge share: RepaintBoundary ausente');
       return null;
@@ -82,9 +95,44 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
     return XFile(file.path, mimeType: 'image/png');
   }
 
-  Future<void> _share() async {
-    if (_busy) return;
-    setState(() => _busy = true);
+  Future<void> _sendAceno() async {
+    final live = _resolve(watch: false);
+    if (_sending || _sharing) return;
+    final companion = context.read<CompanionService>();
+    if (live.iNudgedToday) return;
+    setState(() => _sending = true);
+    HapticFeedback.mediumImpact();
+    final ok = await companion.sendNudge(
+      code: widget.companion.code,
+      fromName: widget.myName,
+      message: _messageOf(live),
+    );
+    if (!mounted) return;
+    setState(() => _sending = false);
+    final messenger = ScaffoldMessenger.of(context);
+    final gap = scrollPaddingBelowNav(context);
+    if (!ok) {
+      showAppToast(
+        messenger,
+        message: companion.lastError ?? 'Não foi possível enviar o aceno.',
+        glyph: CinematicGlyph.echo,
+        tone: AppToastTone.warn,
+        bottomGap: gap,
+      );
+      return;
+    }
+    Navigator.of(context).pop();
+    showAppToast(
+      messenger,
+      message: 'Aceno enviado. $_them vê ao abrir o Stway.',
+      glyph: CinematicGlyph.lamp,
+      bottomGap: gap,
+    );
+  }
+
+  Future<void> _shareWhatsApp() async {
+    if (_sending || _sharing) return;
+    setState(() => _sharing = true);
     HapticFeedback.lightImpact();
     final text = widget.companion.nudgeShareText();
     XFile? imageFile;
@@ -94,7 +142,6 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
       debugPrint('nudge share: falha ao capturar imagem: $e\n$st');
     }
 
-    // Fecha o sheet antes do share — no Android o modal costuma engolir o intent.
     if (mounted) Navigator.of(context).pop();
 
     try {
@@ -120,14 +167,15 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
   @override
   Widget build(BuildContext context) {
     final bottom = MediaQuery.viewPaddingOf(context).bottom;
-    final them = widget.companion.displayName.trim().isEmpty
-        ? 'Companheiro'
-        : widget.companion.displayName.trim().split(' ').first;
+    final live = _resolve(watch: true);
+    final presets = live.nudgePresets;
+    final already = live.iNudgedToday;
+    final canSendApp = context.watch<CompanionService>().backend.isActive;
+    final busy = _sending || _sharing;
 
     return Stack(
       clipBehavior: Clip.none,
       children: [
-        // Fora da tela (sem Opacity 0 — Impeller pula paint com alpha 0).
         Transform.translate(
           offset: const Offset(-4000, 0),
           child: SizedBox(
@@ -135,7 +183,7 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
             child: RepaintBoundary(
               key: _boundaryKey,
               child: CompanionNudgeShareCard(
-                companion: widget.companion,
+                companion: live,
                 myName: widget.myName,
               ),
             ),
@@ -157,9 +205,7 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
           decoration: BoxDecoration(
             color: AppColors.night,
             borderRadius: BorderRadius.circular(AppRadii.xl),
-            border: Border.all(
-              color: AppColors.accent.withValues(alpha: 0.55),
-            ),
+            border: Border.all(color: AppColors.accent.withValues(alpha: 0.55)),
           ),
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -175,9 +221,18 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
                   ),
                 ),
               ),
+              const SizedBox(height: 16),
+              const Center(
+                child: CinematicIcon(
+                  glyph: CinematicGlyph.lamp,
+                  size: 44,
+                  accent: AppColors.accent,
+                  glowing: true,
+                ),
+              ),
               const SizedBox(height: 12),
               Text(
-                'Animar $them',
+                'Animar $_them',
                 textAlign: TextAlign.center,
                 style: AppTypography.display(
                   size: 22,
@@ -185,36 +240,129 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
                   color: Colors.white,
                 ),
               ),
-              const SizedBox(height: 4),
+              const SizedBox(height: 6),
               Text(
-                'Manda o card empoeirado + a mensagem',
+                already
+                    ? 'Você já acenou hoje. Manda também no WhatsApp, se quiser.'
+                    : canSendApp
+                    ? 'Um aceno na trilha — $_them vê ao abrir o Stway.'
+                    : 'Entre na conta para acenar no app, ou manda no WhatsApp.',
                 textAlign: TextAlign.center,
                 style: AppTypography.body(
-                  size: 12,
-                  color: Colors.white.withValues(alpha: 0.55),
+                  size: 13,
+                  height: 1.35,
+                  color: Colors.white.withValues(alpha: 0.6),
                 ),
               ),
-              const SizedBox(height: 14),
-              Center(
-                child: CompanionNudgeShareCard(
-                  companion: widget.companion,
-                  myName: widget.myName,
-                  compact: true,
+              if (!already) ...[
+                const SizedBox(height: 16),
+                Wrap(
+                  spacing: 8,
+                  runSpacing: 8,
+                  alignment: WrapAlignment.center,
+                  children: [
+                    for (var i = 0; i < presets.length; i++)
+                      _NudgePresetChip(
+                        label: presets[i],
+                        selected: i == _presetIndex,
+                        onTap: busy
+                            ? null
+                            : () {
+                                HapticFeedback.selectionClick();
+                                setState(() => _presetIndex = i);
+                              },
+                      ),
+                  ],
                 ),
-              ),
-              const SizedBox(height: 14),
-              CopperCta(
-                label: 'Compartilhar',
-                onTap: _busy ? null : _share,
-                leading: CinematicGlyph.share,
-                trailing: null,
-                dense: true,
-                busy: _busy,
-              ),
+              ],
+              const SizedBox(height: 18),
+              if (canSendApp && !already)
+                CopperCta(
+                  label: 'Enviar aceno',
+                  onTap: busy ? null : _sendAceno,
+                  leading: CinematicGlyph.lamp,
+                  trailing: null,
+                  dense: true,
+                  busy: _sending,
+                )
+              else if (already)
+                CopperCta(
+                  label: 'Mandar no WhatsApp',
+                  onTap: busy ? null : _shareWhatsApp,
+                  leading: CinematicGlyph.share,
+                  trailing: null,
+                  dense: true,
+                  busy: _sharing,
+                )
+              else
+                CopperCta(
+                  label: 'Mandar no WhatsApp',
+                  onTap: busy ? null : _shareWhatsApp,
+                  leading: CinematicGlyph.share,
+                  trailing: null,
+                  dense: true,
+                  busy: _sharing,
+                ),
+              if (canSendApp && !already) ...[
+                const SizedBox(height: 8),
+                GhostCta(
+                  label: 'Também no WhatsApp',
+                  leading: CinematicGlyph.share,
+                  expanded: true,
+                  onTap: busy ? null : _shareWhatsApp,
+                ),
+              ],
             ],
           ),
         ),
       ],
+    );
+  }
+}
+
+class _NudgePresetChip extends StatelessWidget {
+  final String label;
+  final bool selected;
+  final VoidCallback? onTap;
+
+  const _NudgePresetChip({
+    required this.label,
+    required this.selected,
+    this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(AppRadii.pill),
+        child: Ink(
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+          decoration: BoxDecoration(
+            color: selected
+                ? AppColors.accent.withValues(alpha: 0.18)
+                : Colors.white.withValues(alpha: 0.06),
+            borderRadius: BorderRadius.circular(AppRadii.pill),
+            border: Border.all(
+              color: selected
+                  ? AppColors.accent.withValues(alpha: 0.85)
+                  : Colors.white.withValues(alpha: 0.12),
+            ),
+          ),
+          child: Text(
+            label,
+            style: AppTypography.body(
+              size: 12,
+              weight: FontWeight.w800,
+              color: selected
+                  ? AppColors.accent
+                  : Colors.white.withValues(alpha: 0.82),
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
@@ -328,8 +476,9 @@ class CompanionNudgeShareCard extends StatelessWidget {
                             color: Colors.black.withValues(alpha: 0.35),
                             borderRadius: BorderRadius.circular(AppRadii.pill),
                             border: Border.all(
-                              color: const Color(0xFFC4A070)
-                                  .withValues(alpha: 0.45),
+                              color: const Color(
+                                0xFFC4A070,
+                              ).withValues(alpha: 0.45),
                             ),
                           ),
                           child: Text(
@@ -355,12 +504,16 @@ class CompanionNudgeShareCard extends StatelessWidget {
                         shape: BoxShape.circle,
                         color: const Color(0xFF2A1A0C),
                         border: Border.all(
-                          color: const Color(0xFFC4A070).withValues(alpha: 0.55),
+                          color: const Color(
+                            0xFFC4A070,
+                          ).withValues(alpha: 0.55),
                           width: 2,
                         ),
                         boxShadow: [
                           BoxShadow(
-                            color: const Color(0xFF3A2410).withValues(alpha: 0.7),
+                            color: const Color(
+                              0xFF3A2410,
+                            ).withValues(alpha: 0.7),
                             blurRadius: 28,
                             spreadRadius: 4,
                           ),
@@ -375,8 +528,9 @@ class CompanionNudgeShareCard extends StatelessWidget {
                               style: AppTypography.display(
                                 size: compact ? 40 : 48,
                                 weight: FontWeight.w900,
-                                color: const Color(0xFFE8C48A)
-                                    .withValues(alpha: 0.72),
+                                color: const Color(
+                                  0xFFE8C48A,
+                                ).withValues(alpha: 0.72),
                               ),
                             ),
                           ),
@@ -391,8 +545,9 @@ class CompanionNudgeShareCard extends StatelessWidget {
                               height: compact ? 28 : 34,
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(20),
-                                color: const Color(0xFF8B6914)
-                                    .withValues(alpha: 0.35),
+                                color: const Color(
+                                  0xFF8B6914,
+                                ).withValues(alpha: 0.35),
                               ),
                             ),
                           ),
@@ -423,20 +578,21 @@ class CompanionNudgeShareCard extends StatelessWidget {
                   Text(
                     headline,
                     textAlign: TextAlign.center,
-                    style: AppTypography.display(
-                      size: compact ? 24 : 30,
-                      weight: FontWeight.w800,
-                      color: Colors.white,
-                    ).copyWith(
-                      height: 1.15,
-                      shadows: [
-                        Shadow(
-                          color: Colors.black.withValues(alpha: 0.55),
-                          blurRadius: 14,
-                          offset: const Offset(0, 2),
+                    style:
+                        AppTypography.display(
+                          size: compact ? 24 : 30,
+                          weight: FontWeight.w800,
+                          color: Colors.white,
+                        ).copyWith(
+                          height: 1.15,
+                          shadows: [
+                            Shadow(
+                              color: Colors.black.withValues(alpha: 0.55),
+                              blurRadius: 14,
+                              offset: const Offset(0, 2),
+                            ),
+                          ],
                         ),
-                      ],
-                    ),
                   ),
                   SizedBox(height: compact ? 8 : 10),
                   Text(
@@ -499,8 +655,9 @@ class CompanionNudgeShareCard extends StatelessWidget {
                                 'Vem retomar comigo no Stway',
                                 style: AppTypography.body(
                                   size: 12,
-                                  color: AppColors.accent
-                                      .withValues(alpha: 0.9),
+                                  color: AppColors.accent.withValues(
+                                    alpha: 0.9,
+                                  ),
                                 ),
                               ),
                             ],
@@ -566,8 +723,9 @@ class _StaticDustPainter extends CustomPainter {
     ];
     final boost = heavy ? 1.35 : 1.0;
     for (final (x, y, r, a) in specs) {
-      paint.color =
-          const Color(0xFFE8C48A).withValues(alpha: (a * boost).clamp(0.0, 0.45));
+      paint.color = const Color(
+        0xFFE8C48A,
+      ).withValues(alpha: (a * boost).clamp(0.0, 0.45));
       canvas.drawCircle(
         Offset(size.width * x, size.height * y),
         r * (heavy ? 1.25 : 1.0),
@@ -577,8 +735,9 @@ class _StaticDustPainter extends CustomPainter {
     canvas.drawRect(
       Offset.zero & size,
       Paint()
-        ..color = const Color(0xFF3A2410)
-            .withValues(alpha: heavy ? 0.28 : 0.18),
+        ..color = const Color(
+          0xFF3A2410,
+        ).withValues(alpha: heavy ? 0.28 : 0.18),
     );
   }
 
@@ -586,4 +745,3 @@ class _StaticDustPainter extends CustomPainter {
   bool shouldRepaint(covariant _StaticDustPainter oldDelegate) =>
       oldDelegate.heavy != heavy;
 }
-

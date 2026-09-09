@@ -57,6 +57,14 @@ class _ComebackSheet extends StatelessWidget {
           ),
           const SizedBox(height: 14),
           Text(
+            'O PEREGRINO',
+            style: AppTypography.label(
+              letterSpacing: 1.5,
+              color: AppColors.streak.withValues(alpha: 0.85),
+            ),
+          ),
+          const SizedBox(height: 6),
+          Text(
             'Sua sequência te espera',
             textAlign: TextAlign.center,
             style: AppTypography.title(size: 20, color: a.text),

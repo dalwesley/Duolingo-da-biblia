@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/layout_utils.dart';
 import 'cinematic_icon.dart';
 
 /// Tokens visuais compartilhados — barras, labels e badges iguais em toda a app.
@@ -716,6 +717,124 @@ class AppChoiceTile extends StatelessWidget {
             ),
           ),
           child: child,
+        ),
+      ),
+    );
+  }
+}
+
+enum AppToastTone { accent, warn }
+
+/// Aviso cinematográfico — flutuante, filete dourado, acima da nav.
+void showAppToast(
+  ScaffoldMessengerState messenger, {
+  required String message,
+  CinematicGlyph glyph = CinematicGlyph.check,
+  AppToastTone tone = AppToastTone.accent,
+  double? bottomGap,
+}) {
+  final accent = tone == AppToastTone.warn ? AppColors.clay : AppColors.accent;
+  messenger.hideCurrentSnackBar();
+  messenger.showSnackBar(
+    SnackBar(
+      behavior: SnackBarBehavior.floating,
+      backgroundColor: Colors.transparent,
+      elevation: 0,
+      padding: EdgeInsets.zero,
+      duration: const Duration(milliseconds: 3400),
+      margin: EdgeInsets.fromLTRB(AppSpace.md, 0, AppSpace.md, bottomGap ?? 96),
+      content: _AppToastCard(message: message, glyph: glyph, accent: accent),
+    ),
+  );
+}
+
+void showAppToastFor(
+  BuildContext context, {
+  required String message,
+  CinematicGlyph glyph = CinematicGlyph.check,
+  AppToastTone tone = AppToastTone.accent,
+}) {
+  showAppToast(
+    ScaffoldMessenger.of(context),
+    message: message,
+    glyph: glyph,
+    tone: tone,
+    bottomGap: scrollPaddingBelowNav(context),
+  );
+}
+
+class _AppToastCard extends StatelessWidget {
+  final String message;
+  final CinematicGlyph glyph;
+  final Color accent;
+
+  const _AppToastCard({
+    required this.message,
+    required this.glyph,
+    required this.accent,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(AppRadii.md),
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            Color.lerp(AppColors.nightElevated, Colors.white, 0.10)!,
+            AppColors.nightElevated,
+            Color.lerp(AppColors.nightElevated, Colors.black, 0.18)!,
+          ],
+          stops: const [0.0, 0.45, 1.0],
+        ),
+        border: Border.all(color: accent.withValues(alpha: 0.85), width: 1.75),
+        boxShadow: [
+          BoxShadow(
+            color: accent.withValues(alpha: 0.28),
+            blurRadius: 18,
+            offset: const Offset(0, 6),
+          ),
+          BoxShadow(
+            color: Colors.black.withValues(alpha: 0.45),
+            offset: const Offset(0, 4),
+            blurRadius: 0,
+          ),
+        ],
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(AppRadii.md - 1),
+        child: IntrinsicHeight(
+          child: Row(
+            children: [
+              Container(width: 4, color: accent),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(12, 12, 14, 12),
+                child: CinematicIcon(
+                  glyph: glyph,
+                  size: 22,
+                  accent: accent,
+                  framed: false,
+                  glowing: true,
+                ),
+              ),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(0, 12, 14, 12),
+                  child: Text(
+                    message,
+                    style: AppTypography.body(
+                      size: 14,
+                      weight: FontWeight.w800,
+                      height: 1.3,
+                      color: AppColors.textOnDark,
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

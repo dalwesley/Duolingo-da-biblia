@@ -35,10 +35,7 @@ WalkCompanion _base({
 void main() {
   group('WalkCompanion idle / steps', () {
     test('theyDaysAway uses lastSeen when fresher than walk', () {
-      final c = _base(
-        theyLastWalk: _daysAgo(10),
-        theyLastSeen: _daysAgo(3),
-      );
+      final c = _base(theyLastWalk: _daysAgo(10), theyLastSeen: _daysAgo(3));
       expect(c.theyDaysAway, 3);
       expect(c.theyDaysSinceWalk, 10);
       expect(c.theyDaysSinceSeen, 3);
@@ -74,7 +71,10 @@ void main() {
       final fresh = _base(theyLastWalk: _daysAgo(2));
       expect(fresh.delayCopy?.tier, CompanionDelayTier.fresh);
       expect(fresh.nudgeShareText(), contains('ficando pra trás'));
-      expect(fresh.nudgeShareText(), contains('trilha-biblia.web.app/abrir/juntos'));
+      expect(
+        fresh.nudgeShareText(),
+        contains('trilha-biblia.web.app/abrir/juntos'),
+      );
       expect(fresh.nudgeShareText(), isNot(contains('stway://juntos')));
 
       final dusty = _base(theyLastWalk: _daysAgo(5));
@@ -97,9 +97,47 @@ void main() {
       );
     });
 
-    test('weeklyStepsDelta sign', () {
-      expect(_base(myWeekly: 100, theirWeekly: 30).weeklyStepsDelta, 70);
-      expect(_base(myWeekly: 10, theirWeekly: 40).weeklyStepsDelta, -30);
+    test('nudge presets follow delay and incoming banner', () {
+      expect(
+        _base(theyLastWalk: _daysAgo(2)).nudgePresets.first,
+        contains('esperando'),
+      );
+      expect(
+        _base(theyLastWalk: _daysAgo(5)).nudgePresets.first,
+        contains('poeira'),
+      );
+      expect(
+        _base(theyLastWalk: _daysAgo(9)).nudgePresets.first,
+        contains('lugar'),
+      );
+
+      final incoming = WalkCompanion(
+        code: 'ABCD',
+        displayName: 'Lídia',
+        sharedDays: 1,
+        iWalkedToday: false,
+        theyWalkedToday: true,
+        awaitingPartner: false,
+        isHost: true,
+        incomingNudgeFromName: 'Dalwesley',
+        incomingNudgeMessage: 'Tô te esperando na trilha',
+        incomingNudgeDay: '2026-09-08',
+      );
+      expect(incoming.hasIncomingNudge, isTrue);
+      expect(incoming.incomingNudgeDay, '2026-09-08');
+
+      final walked = WalkCompanion(
+        code: 'ABCD',
+        displayName: 'Lídia',
+        sharedDays: 1,
+        iWalkedToday: true,
+        theyWalkedToday: false,
+        awaitingPartner: false,
+        isHost: true,
+        incomingNudgeFromName: 'Dalwesley',
+        incomingNudgeMessage: 'Vem',
+      );
+      expect(walked.hasIncomingNudge, isFalse);
     });
   });
 }

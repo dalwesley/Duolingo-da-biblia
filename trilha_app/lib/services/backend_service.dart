@@ -55,8 +55,7 @@ class UserBackupResult {
 
   const UserBackupResult._({this.data, this.error, this.missing = false});
 
-  const UserBackupResult.found(Map<String, dynamic> data)
-      : this._(data: data);
+  const UserBackupResult.found(Map<String, dynamic> data) : this._(data: data);
 
   const UserBackupResult.missing() : this._(missing: true);
 
@@ -98,6 +97,20 @@ class BackendService extends ChangeNotifier {
 
   User? get currentUser =>
       _firebaseReady ? FirebaseAuth.instance.currentUser : null;
+
+  /// Guarda o token FCM em `users/{uid}`. O envio do aceno é a
+  /// Cloud Function `onCompanionNudge` em `functions/`.
+  Future<void> saveFcmToken(String token) async {
+    if (!isActive) return;
+    try {
+      await _db.doc('users/$_uid').set({
+        'fcmToken': token,
+        'fcmTokenUpdatedAt': FieldValue.serverTimestamp(),
+      }, SetOptions(merge: true));
+    } catch (e) {
+      debugPrint('Falha ao salvar token FCM: $e');
+    }
+  }
 
   bool get isGoogleSignedIn {
     final user = currentUser;
@@ -292,8 +305,8 @@ class BackendService extends ChangeNotifier {
         'description=${e.description} details=${e.details}',
       );
       if (e.code == GoogleSignInExceptionCode.canceled) {
-        lastError =
-            'Login cancelado. [${e.code.name}] ${e.description ?? ''}'.trim();
+        lastError = 'Login cancelado. [${e.code.name}] ${e.description ?? ''}'
+            .trim();
         return AuthSignInResult(ok: false, error: lastError);
       }
       lastError =
@@ -468,7 +481,8 @@ class BackendService extends ChangeNotifier {
 
   static String _authErrorMessage(FirebaseAuthException e) {
     final msg = (e.message ?? '').toLowerCase();
-    final looksLikeNetwork = e.code == 'network-request-failed' ||
+    final looksLikeNetwork =
+        e.code == 'network-request-failed' ||
         msg.contains('connection reset') ||
         msg.contains('i/o error') ||
         msg.contains('timed out') ||
@@ -523,8 +537,8 @@ class BackendService extends ChangeNotifier {
       'authProvider': isAppleSignedIn
           ? 'apple'
           : isGoogleSignedIn
-              ? 'google'
-              : 'unknown',
+          ? 'google'
+          : 'unknown',
       'updatedAt': FieldValue.serverTimestamp(),
     };
   }
@@ -548,24 +562,26 @@ class BackendService extends ChangeNotifier {
 
     final generation = ++_saveGeneration;
     final completer = Completer<bool>();
-    _saveChain = _saveChain.then((_) async {
-      if (generation != _saveGeneration) {
-        _authLog('saveNow skipped — superseded gen=$generation');
-        completer.complete(false);
-        return;
-      }
-      final ok = await _saveNowBody(
-        progress,
-        week,
-        roomCode: roomCode,
-        league: league,
-        generation: generation,
-      );
-      completer.complete(ok);
-    }).catchError((Object e, StackTrace st) {
-      _authLog('saveNow chain error: $e\n$st');
-      if (!completer.isCompleted) completer.complete(false);
-    });
+    _saveChain = _saveChain
+        .then((_) async {
+          if (generation != _saveGeneration) {
+            _authLog('saveNow skipped — superseded gen=$generation');
+            completer.complete(false);
+            return;
+          }
+          final ok = await _saveNowBody(
+            progress,
+            week,
+            roomCode: roomCode,
+            league: league,
+            generation: generation,
+          );
+          completer.complete(ok);
+        })
+        .catchError((Object e, StackTrace st) {
+          _authLog('saveNow chain error: $e\n$st');
+          if (!completer.isCompleted) completer.complete(false);
+        });
     return completer.future;
   }
 
@@ -596,10 +612,7 @@ class BackendService extends ChangeNotifier {
       // rede/Firestore não responde.
       await _db
           .doc('users/$_uid')
-          .set(
-            _payload(progress, league: league),
-            SetOptions(merge: true),
-          )
+          .set(_payload(progress, league: league), SetOptions(merge: true))
           .timeout(const Duration(seconds: 12));
       if (generation != _saveGeneration) return false;
       lastCloudSaveAt = DateTime.now();
@@ -641,6 +654,13 @@ class BackendService extends ChangeNotifier {
         playerPayload,
       );
       batch.set(_db.doc('leagues/$week/players/$_uid'), playerPayload);
+      final groupCode = league?.groupCode;
+      if (groupCode != null && groupCode.isNotEmpty) {
+        batch.set(
+          _db.doc('leagueGroups/$groupCode/weeks/$week/players/$_uid'),
+          playerPayload,
+        );
+      }
       final month = LeagueService.monthKey();
       batch.set(_db.doc('monthlyLeagues/$month/players/$_uid'), {
         'name': progress.userName,
@@ -764,8 +784,7 @@ class BackendService extends ChangeNotifier {
         if (league != null) await league.applyFromCloud(data);
         await progress.clearLegacyLocalPrefs();
         await progress.persistLocalCache();
-        final restored =
-            await progress.ensureUserNameFromAuth(userDisplayName);
+        final restored = await progress.ensureUserNameFromAuth(userDisplayName);
         progress.markCloudHydrated();
         _authLog(
           'hydrate ok steps=${progress.steps} streak=${progress.streak} '
@@ -825,7 +844,8 @@ class BackendService extends ChangeNotifier {
 
   /// Cache local tem mais progresso que o estado atual (nuvem vazia/atrasada).
   bool _localCacheRicher(Map<String, dynamic> local, ProgressService progress) {
-    final localSteps = (local['steps'] as num?)?.toInt() ??
+    final localSteps =
+        (local['steps'] as num?)?.toInt() ??
         (local['xp'] as num?)?.toInt() ??
         0;
     final localMissions = (local['completedMissions'] as List?)?.length ?? 0;
@@ -869,6 +889,7 @@ class BackendService extends ChangeNotifier {
     required String name,
     required String userName,
     required int weeklySteps,
+    int? weeklyGoalSteps,
   }) async {
     if (!isActive) return null;
     final trimmed = name.trim();
@@ -886,6 +907,8 @@ class BackendService extends ChangeNotifier {
               'ownerId': _uid,
               'ownerName': userName,
               'createdAt': FieldValue.serverTimestamp(),
+              if (weeklyGoalSteps != null && weeklyGoalSteps > 0)
+                'weeklyGoalSteps': weeklyGoalSteps,
             });
           });
         } on StateError {
@@ -905,12 +928,32 @@ class BackendService extends ChangeNotifier {
           ownerId: _uid!,
           ownerName: userName,
           createdAt: DateTime.now(),
+          weeklyGoalSteps: (weeklyGoalSteps != null && weeklyGoalSteps > 0)
+              ? weeklyGoalSteps
+              : null,
         );
       }
       return null;
     } catch (e) {
       debugPrint('Falha ao criar sala: $e');
       return null;
+    }
+  }
+
+  /// Dono define (ou limpa, com `null`) a meta semanal de passos da sala.
+  Future<bool> setRoomWeeklyGoal(String code, int? goal) async {
+    if (!isActive) return false;
+    final normalized = code.trim().toUpperCase();
+    try {
+      await _db.doc('rooms/$normalized').set({
+        'weeklyGoalSteps': (goal != null && goal > 0)
+            ? goal
+            : FieldValue.delete(),
+      }, SetOptions(merge: true));
+      return true;
+    } catch (e) {
+      debugPrint('Falha ao definir meta da sala: $e');
+      return false;
     }
   }
 
@@ -1098,7 +1141,30 @@ class BackendService extends ChangeNotifier {
     return list.take(limit).toList();
   }
 
-  List<CloudPlayer> _mapCloudPlayers(List<QueryDocumentSnapshot<Map<String, dynamic>>> docs) {
+  /// Jogadores reais de um grupo fechado de liga (célula/paróquia/amigos)
+  /// nesta semana — sem filtro de tier, exclui o próprio usuário.
+  Future<List<CloudPlayer>> fetchGroupWeekPlayers(
+    String groupCode,
+    String week, {
+    int limit = 30,
+  }) async {
+    if (!isActive) return const [];
+    try {
+      final snap = await _db
+          .collection('leagueGroups/$groupCode/weeks/$week/players')
+          .orderBy('xp', descending: true)
+          .limit(limit)
+          .get();
+      return _mapCloudPlayers(snap.docs);
+    } catch (e) {
+      debugPrint('Grupo de liga $groupCode falhou: $e');
+      return const [];
+    }
+  }
+
+  List<CloudPlayer> _mapCloudPlayers(
+    List<QueryDocumentSnapshot<Map<String, dynamic>>> docs,
+  ) {
     return [
       for (final d in docs)
         if (d.id != _uid)
@@ -1124,7 +1190,10 @@ class BackendService extends ChangeNotifier {
     final current = LeagueService.weekKey();
     var peerSteps = const <int>[];
     if (isActive && closed != null && closed != current) {
-      final peers = await fetchWeekPlayers(closed, tier: league.tierIndex);
+      final groupCode = league.groupCode;
+      final peers = groupCode != null
+          ? await fetchGroupWeekPlayers(groupCode, closed)
+          : await fetchWeekPlayers(closed, tier: league.tierIndex);
       peerSteps = [for (final p in peers) p.steps];
     }
     await league.settleWeekIfNeeded(
@@ -1156,14 +1225,15 @@ class BackendService extends ChangeNotifier {
       void ingest(QueryDocumentSnapshot<Map<String, dynamic>> d) {
         if (d.id == _uid) return;
         final data = d.data();
-        final steps = (data['steps'] as num?)?.toInt() ??
+        final steps =
+            (data['steps'] as num?)?.toInt() ??
             (data['xp'] as num?)?.toInt() ??
             0;
         final rawName = (data['userName'] as String?)?.trim().isNotEmpty == true
             ? data['userName'] as String
             : (data['name'] as String?)?.trim().isNotEmpty == true
-                ? data['name'] as String
-                : 'Aprendiz';
+            ? data['name'] as String
+            : 'Aprendiz';
         final lastWalk = _readActivityDate(data, 'lastWalkDate');
         final lastSeen = _readActivityDate(data, 'lastSeenDate');
         final prev = byUid[d.id];
@@ -1208,8 +1278,10 @@ class BackendService extends ChangeNotifier {
       } catch (e) {
         debugPrint('Ranking geral via overallPlayers (orderBy) falhou: $e');
         try {
-          final overallSnap =
-              await _db.collection('overallPlayers').limit(fetchLimit).get();
+          final overallSnap = await _db
+              .collection('overallPlayers')
+              .limit(fetchLimit)
+              .get();
           for (final d in overallSnap.docs) {
             ingest(d);
           }
@@ -1252,10 +1324,7 @@ class BackendService extends ChangeNotifier {
     return d.toIso8601String().substring(0, 10);
   }
 
-  WalkCompanion _companionFromDoc(
-    String code,
-    Map<String, dynamic> data,
-  ) {
+  WalkCompanion _companionFromDoc(String code, Map<String, dynamic> data) {
     final today = _todayKey();
     final hostId = data['hostId'] as String? ?? '';
     final guestId = data['guestId'] as String?;
@@ -1278,6 +1347,16 @@ class BackendService extends ChangeNotifier {
     final theyWalked = awaiting
         ? false
         : (isHost ? guestWalk == today : hostWalk == today);
+    final guestFirstMissionDone = data['guestFirstMissionDone'] == true;
+    final nudgeFromId = (data['nudgeFromId'] as String?)?.trim() ?? '';
+    final nudgeFromName = (data['nudgeFromName'] as String?)?.trim();
+    final nudgeMessage = (data['nudgeMessage'] as String?)?.trim();
+    final nudgeDay = data['nudgeDay'] as String?;
+    final incomingNudge = nudgeFromId.isNotEmpty &&
+        nudgeFromId != _uid &&
+        !iWalked &&
+        nudgeDay == today;
+    final iNudgedToday = nudgeFromId == _uid && nudgeDay == today;
 
     return WalkCompanion(
       code: code,
@@ -1288,14 +1367,15 @@ class BackendService extends ChangeNotifier {
       theyWalkedToday: theyWalked,
       awaitingPartner: awaiting,
       isHost: isHost,
-      theyLastWalkDate: awaiting
-          ? null
-          : (isHost ? guestWalk : hostWalk),
-      theyLastSeenDate: awaiting
-          ? null
-          : (isHost ? guestSeen : hostSeen),
+      guestFirstMissionDone: guestFirstMissionDone,
+      theyLastWalkDate: awaiting ? null : (isHost ? guestWalk : hostWalk),
+      theyLastSeenDate: awaiting ? null : (isHost ? guestSeen : hostSeen),
       myWeeklySteps: isHost ? hostWeekly : guestWeekly,
       theirWeeklySteps: awaiting ? 0 : (isHost ? guestWeekly : hostWeekly),
+      incomingNudgeFromName: incomingNudge ? nudgeFromName : null,
+      incomingNudgeMessage: incomingNudge ? nudgeMessage : null,
+      incomingNudgeDay: incomingNudge ? nudgeDay : null,
+      iNudgedToday: iNudgedToday,
     );
   }
 
@@ -1324,6 +1404,7 @@ class BackendService extends ChangeNotifier {
               'guestLastSeen': null,
               'hostWeeklySteps': 0,
               'guestWeeklySteps': 0,
+              'guestFirstMissionDone': false,
               'createdAt': FieldValue.serverTimestamp(),
             });
           });
@@ -1346,6 +1427,7 @@ class BackendService extends ChangeNotifier {
   Future<WalkCompanion?> joinCompanion({
     required String code,
     required String userName,
+    bool hadMissionsAtJoin = false,
   }) async {
     if (!isActive) return null;
     final normalized = code.trim().toUpperCase();
@@ -1368,6 +1450,7 @@ class BackendService extends ChangeNotifier {
         tx.set(ref, {
           'guestId': _uid,
           'guestName': userName,
+          'guestHadMissionsAtJoin': hadMissionsAtJoin,
           'updatedAt': FieldValue.serverTimestamp(),
         }, SetOptions(merge: true));
       });
@@ -1408,6 +1491,7 @@ class BackendService extends ChangeNotifier {
     required String userName,
     required int weeklySteps,
     required bool walkedToday,
+    bool completedFirstMission = false,
   }) async {
     if (!isActive || codes.isEmpty) return;
     final today = _todayKey();
@@ -1434,6 +1518,12 @@ class BackendService extends ChangeNotifier {
             if (isHost) 'hostName': userName else 'guestName': userName,
             'updatedAt': FieldValue.serverTimestamp(),
           };
+          if (!isHost &&
+              completedFirstMission &&
+              data['guestHadMissionsAtJoin'] != true &&
+              data['guestFirstMissionDone'] != true) {
+            updates['guestFirstMissionDone'] = true;
+          }
 
           if (walkedToday) {
             updates[isHost ? 'hostLastWalk' : 'guestLastWalk'] = today;
@@ -1459,6 +1549,60 @@ class BackendService extends ChangeNotifier {
       } catch (e) {
         debugPrint('Falha ao sincronizar companhia $code: $e');
       }
+    }
+  }
+
+  /// Aceno 1:1 — o parceiro vê ao abrir a companhia.
+  Future<bool> sendCompanionNudge({
+    required String code,
+    required String fromName,
+    required String message,
+  }) async {
+    if (!isActive) return false;
+    final normalized = code.trim().toUpperCase();
+    final text = message.trim();
+    if (normalized.length < 4 || text.isEmpty) return false;
+    final today = _todayKey();
+    try {
+      final ref = _db.doc('companies/$normalized');
+      await _db.runTransaction((tx) async {
+        final doc = await tx.get(ref);
+        if (!doc.exists || doc.data() == null) {
+          throw StateError('missing');
+        }
+        final data = doc.data()!;
+        final hostId = data['hostId'] as String? ?? '';
+        final guestId = data['guestId'] as String?;
+        if (hostId != _uid && guestId != _uid) {
+          throw StateError('forbidden');
+        }
+        if (guestId == null || guestId.isEmpty) {
+          throw StateError('awaiting');
+        }
+        final previousFrom = data['nudgeFromId'] as String?;
+        final previousDay = data['nudgeDay'] as String?;
+        if (previousFrom == _uid && previousDay == today) {
+          throw StateError('already');
+        }
+        tx.set(ref, {
+          'nudgeFromId': _uid,
+          'nudgeFromName': fromName.trim().isEmpty
+              ? 'Companheiro'
+              : fromName.trim(),
+          'nudgeMessage': text,
+          'nudgeDay': today,
+          'nudgeAt': FieldValue.serverTimestamp(),
+          'updatedAt': FieldValue.serverTimestamp(),
+        }, SetOptions(merge: true));
+      });
+      return true;
+    } on StateError catch (e) {
+      if (e.message == 'already') return true;
+      debugPrint('Falha ao acenar na companhia: $e');
+      return false;
+    } catch (e) {
+      debugPrint('Falha ao acenar na companhia: $e');
+      return false;
     }
   }
 

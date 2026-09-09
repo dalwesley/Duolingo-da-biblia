@@ -6,12 +6,13 @@ import '../models/caravan_pilgrim_profile.dart';
 import '../models/pilgrim_medals.dart';
 import '../models/trail.dart';
 import '../services/backend_service.dart';
+import '../services/medal_engagement_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import 'medal_unlock_sheet.dart';
 
 /// Linha de “falta pouco” no Hoje — só aparece no near-miss.
-class MedalHomeWhisper extends StatelessWidget {
+class MedalHomeWhisper extends StatefulWidget {
   final List<Trail> catalog;
   final String? priorityTrailSlug;
   final VoidCallback? onBible;
@@ -30,8 +31,24 @@ class MedalHomeWhisper extends StatelessWidget {
   });
 
   @override
+  State<MedalHomeWhisper> createState() => _MedalHomeWhisperState();
+}
+
+class _MedalHomeWhisperState extends State<MedalHomeWhisper> {
+  @override
+  void dispose() {
+    MedalEngagementService.instance.homeVisibleProximityId = null;
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
-    if (catalog.isEmpty) return const SizedBox.shrink();
+    final catalog = widget.catalog;
+    final priorityTrailSlug = widget.priorityTrailSlug;
+    if (catalog.isEmpty) {
+      MedalEngagementService.instance.homeVisibleProximityId = null;
+      return const SizedBox.shrink();
+    }
     final progress = context.watch<ProgressService>();
     final uid = context.read<BackendService>().uid ?? '';
     final profile = CaravanPilgrimProfile.fromProgress(
@@ -45,8 +62,12 @@ class MedalHomeWhisper extends StatelessWidget {
       priorityTrailSlug: priorityTrailSlug,
     );
     if (proximity == null || !proximity.isNearMiss) {
+      MedalEngagementService.instance.homeVisibleProximityId = null;
       return const SizedBox.shrink();
     }
+    // Já mostrando esta mensagem inline — o snackbar de engajamento não repete.
+    MedalEngagementService.instance.homeVisibleProximityId =
+        proximity.nextLevel.id;
 
     final accent = tierColor(proximity.nextLevel.tier);
     return Padding(
@@ -56,14 +77,14 @@ class MedalHomeWhisper extends StatelessWidget {
           HapticFeedback.selectionClick();
           switch (proximity.ctaKind) {
             case MedalCtaKind.bible:
-              onBible?.call();
+              widget.onBible?.call();
             case MedalCtaKind.memory:
-              onMemory?.call();
+              widget.onMemory?.call();
             case MedalCtaKind.share:
-              onShare?.call();
+              widget.onShare?.call();
             case MedalCtaKind.trail:
             case MedalCtaKind.mission:
-              onMission?.call();
+              widget.onMission?.call();
             case MedalCtaKind.none:
               final vaults = PilgrimMedals.evaluateVaults(
                 profile: profile,

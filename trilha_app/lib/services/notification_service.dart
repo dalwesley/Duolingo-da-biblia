@@ -1,3 +1,5 @@
+import 'package:firebase_messaging/firebase_messaging.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_timezone/flutter_timezone.dart';
@@ -9,15 +11,14 @@ import '../models/daily_quest.dart';
 import '../utils/dust_copy.dart';
 import 'progress_service.dart';
 
-/// Ação ao tocar na notificação (deep link leve).
-enum ReminderAction {
-  home,
-  practice,
-  memory,
-  favorites,
-  weekly,
-  league,
+/// Isolado de background — precisa ser top-level e registrado antes do runApp.
+@pragma('vm:entry-point')
+Future<void> firebaseMessagingBackgroundHandler(RemoteMessage message) async {
+  // A notificação visível é desenhada pelo sistema (payload APNS/Android).
 }
+
+/// Ação ao tocar na notificação (deep link leve).
+enum ReminderAction { home, practice, memory, favorites, weekly, league }
 
 extension ReminderActionX on ReminderAction {
   String get payload => name;
@@ -60,6 +61,16 @@ class NotificationService {
   ReminderAction? pendingAction;
   void Function(ReminderAction action)? onAction;
 
+  /// Token FCM atual, se já obtido.
+  String? remoteToken;
+  void Function(String token)? onRemoteToken;
+  bool _remoteInitialized = false;
+
+  /// Aceno de companhia chegou (push em primeiro plano ou toque).
+  VoidCallback? onRemoteNudge;
+
+  /// Assinatura discreta — dá identidade consistente sem inventar personagem visual novo.
+  static const _signature = 'O Peregrino';
   static const _channelId = 'trilha_habits';
   static const _channelName = 'Lembretes Stway';
   static const _channelDesc =
@@ -72,6 +83,8 @@ class NotificationService {
   static const _idSoft = 104;
   static const _idLost1 = 105;
   static const _idLost2 = 106;
+  static const _idRemote = 107;
+  static const _idTrialEnding = 108;
   static const _legacyDaily = 1;
 
   static const _allIds = [
@@ -104,8 +117,9 @@ class NotificationService {
 
       final launch = await _plugin.getNotificationAppLaunchDetails();
       if (launch?.didNotificationLaunchApp == true) {
-        pendingAction =
-            ReminderActionX.tryParse(launch!.notificationResponse?.payload);
+        pendingAction = ReminderActionX.tryParse(
+          launch!.notificationResponse?.payload,
+        );
       }
 
       _initialized = true;
@@ -123,13 +137,92 @@ class NotificationService {
     try {
       final androidPlugin = _plugin
           .resolvePlatformSpecificImplementation<
-              AndroidFlutterLocalNotificationsPlugin>();
+            AndroidFlutterLocalNotificationsPlugin
+          >();
       await androidPlugin?.requestNotificationsPermission();
       final iosPlugin = _plugin
           .resolvePlatformSpecificImplementation<
-              IOSFlutterLocalNotificationsPlugin>();
-      await iosPlugin?.requestPermissions(alert: true, badge: true, sound: true);
+            IOSFlutterLocalNotificationsPlugin
+          >();
+      await iosPlugin?.requestPermissions(
+        alert: true,
+        badge: true,
+        sound: true,
+      );
     } catch (_) {}
+  }
+
+  /// Registra push remoto (FCM): permissão, token e escuta.
+  /// O envio do aceno é a Cloud Function `onCompanionNudge`.
+  Future<void> initRemote() async {
+    if (_remoteInitialized) return;
+    _remoteInitialized = true;
+    try {
+      final messaging = FirebaseMessaging.instance;
+      await messaging.requestPermission(alert: true, badge: true, sound: true);
+
+      final token = await messaging.getToken();
+      if (token != null) {
+        remoteToken = token;
+        onRemoteToken?.call(token);
+      }
+      messaging.onTokenRefresh.listen((t) {
+        remoteToken = t;
+        onRemoteToken?.call(t);
+      });
+
+      FirebaseMessaging.onMessage.listen(_showRemoteForeground);
+      FirebaseMessaging.onMessageOpenedApp.listen(_handleRemoteTap);
+      final initial = await messaging.getInitialMessage();
+      if (initial != null) _handleRemoteTap(initial);
+    } catch (e) {
+      debugPrint('NotificationService.initRemote falhou: $e');
+    }
+  }
+
+  /// Reemite o token atual (login depois do 1º frame).
+  void emitRemoteToken() {
+    final token = remoteToken;
+    if (token != null) onRemoteToken?.call(token);
+  }
+
+  bool _isAceno(RemoteMessage message) => message.data['type'] == 'aceno';
+
+  Future<void> _showRemoteForeground(RemoteMessage message) async {
+    if (_isAceno(message)) {
+      onRemoteNudge?.call();
+    }
+    final notif = message.notification;
+    if (notif == null || !_initialized) return;
+    const details = NotificationDetails(
+      android: AndroidNotificationDetails(
+        _channelId,
+        _channelName,
+        channelDescription: _channelDesc,
+        subText: _signature,
+      ),
+      iOS: DarwinNotificationDetails(subtitle: _signature),
+    );
+    await _plugin.show(
+      _idRemote,
+      notif.title,
+      notif.body,
+      details,
+      payload: message.data['action'] as String?,
+    );
+  }
+
+  void _handleRemoteTap(RemoteMessage message) {
+    if (_isAceno(message)) {
+      pendingAction = ReminderAction.home;
+      onRemoteNudge?.call();
+      onAction?.call(ReminderAction.home);
+      return;
+    }
+    final action = ReminderActionX.tryParse(message.data['action'] as String?);
+    if (action == null) return;
+    pendingAction = action;
+    onAction?.call(action);
   }
 
   void _onTap(NotificationResponse response) {
@@ -153,7 +246,10 @@ class NotificationService {
 
     final enabled = progress.settings.notifications;
     await _cancelAll();
-    if (!enabled) return;
+    if (!enabled) {
+      await cancelTrialEndingReminder();
+      return;
+    }
 
     final hooks = _buildHooks(progress);
     if (hooks.isEmpty) {
@@ -187,9 +283,7 @@ class NotificationService {
     for (var i = 0; i < slots.length && i < hooks.length; i++) {
       final (id, at) = slots[i];
       // Slots principais repetem diariamente — não morrem se o app não abrir.
-      final daily = id == _idMorning ||
-          id == _idAfternoon ||
-          id == _idEvening;
+      final daily = id == _idMorning || id == _idAfternoon || id == _idEvening;
       await _schedule(id: id, when: at, copy: hooks[i], daily: daily);
     }
 
@@ -296,107 +390,118 @@ class NotificationService {
       final left = (goal - done).clamp(1, goal);
       final atRisk = progress.isStreakAtRisk;
       final returning = progress.isReturningAfterGap;
-      hooks.add(_ReminderCopy(
-        title: atRisk
-            ? DustCopy.atRiskTitle(
-                lateEvening: DateTime.now().hour >= 19,
-              )
-            : returning
-                ? 'Hora de retomar'
-                : streak > 0
-                    ? 'Continue a jornada'
-                    : 'Meta de hoje',
-        body: atRisk
-            ? DustCopy.atRiskBody(
-                name: name,
-                countdown: progress.streakRiskCountdown,
-                hasFreeze: progress.hasStreakFreeze,
-                streak: streak,
-              )
-            : returning
-                ? '$name, faz ${progress.daysSinceLastPlayed} ${progress.daysSinceLastPlayed == 1 ? 'dia' : 'dias'} sem lição. A trilha empoeira — um passo limpa o caminho.'
-                : streak > 0
-                    ? '$name, você já anda há $streak ${streak == 1 ? 'dia' : 'dias'}. Falta${left == 1 ? '' : 'm'} $left missão${left == 1 ? '' : 'ões'} para acompanhar.'
-                    : 'Falta${left == 1 ? '' : 'm'} $left missão${left == 1 ? '' : 'ões'} para fechar a meta de hoje.',
-        action: ReminderAction.home,
-        priority: atRisk
-            ? 120
-            : returning
-                ? 115
-                : 100,
-      ));
+      hooks.add(
+        _ReminderCopy(
+          title: atRisk
+              ? DustCopy.atRiskTitle(lateEvening: DateTime.now().hour >= 19)
+              : returning
+              ? 'Hora de retomar'
+              : streak > 0
+              ? 'Continue a jornada'
+              : 'Meta de hoje',
+          body: atRisk
+              ? DustCopy.atRiskBody(
+                  name: name,
+                  countdown: progress.streakRiskCountdown,
+                  hasFreeze: progress.hasStreakFreeze,
+                  streak: streak,
+                )
+              : returning
+              ? '$name, faz ${progress.daysSinceLastPlayed} ${progress.daysSinceLastPlayed == 1 ? 'dia' : 'dias'} sem lição. A trilha empoeira — um passo limpa o caminho.'
+              : streak > 0
+              ? '$name, você já anda há $streak ${streak == 1 ? 'dia' : 'dias'}. Falta${left == 1 ? '' : 'm'} $left missão${left == 1 ? '' : 'ões'} para acompanhar.'
+              : 'Falta${left == 1 ? '' : 'm'} $left missão${left == 1 ? '' : 'ões'} para fechar a meta de hoje.',
+          action: ReminderAction.home,
+          priority: atRisk
+              ? 120
+              : returning
+              ? 115
+              : 100,
+        ),
+      );
     }
 
     final questsLeft =
         DailyQuestDefs.all.length - progress.questsCompletedToday;
     if (questsLeft > 0) {
-      hooks.add(_ReminderCopy(
-        title: 'Do dia',
-        body: questsLeft == 1
-            ? 'Sobrou 1 gesto. Um passo e o dia fecha.'
-            : 'Ainda faltam $questsLeft gestos do dia.',
-        action: ReminderAction.home,
-        priority: 80,
-      ));
+      hooks.add(
+        _ReminderCopy(
+          title: 'Do dia',
+          body: questsLeft == 1
+              ? 'Sobrou 1 gesto. Um passo e o dia fecha.'
+              : 'Ainda faltam $questsLeft gestos do dia.',
+          action: ReminderAction.home,
+          priority: 80,
+        ),
+      );
     }
 
     if (mistakes > 0) {
-      hooks.add(_ReminderCopy(
-        title: 'Hora de praticar',
-        body: mistakes == 1
-            ? 'Tem 1 erro para reforçar. Pratique agora e fixe o aprendizado.'
-            : 'Tem $mistakes erros para reforçar. Prática rápida, mente firme.',
-        action: ReminderAction.practice,
-        priority: 70,
-      ));
+      hooks.add(
+        _ReminderCopy(
+          title: 'Hora de praticar',
+          body: mistakes == 1
+              ? 'Tem 1 erro para reforçar. Pratique agora e fixe o aprendizado.'
+              : 'Tem $mistakes erros para reforçar. Prática rápida, mente firme.',
+          action: ReminderAction.practice,
+          priority: 70,
+        ),
+      );
     }
 
     if (memoryPending > 0) {
-      hooks.add(_ReminderCopy(
-        title: 'Memorizar',
-        body: memoryPending == 1
-            ? 'Um versículo espera por você. Dois minutos bastam.'
-            : '$memoryPending versículos no deck. Memorizar reforça o aprendizado.',
-        action: ReminderAction.memory,
-        priority: 55,
-      ));
+      hooks.add(
+        _ReminderCopy(
+          title: 'Memorizar',
+          body: memoryPending == 1
+              ? 'Um versículo espera por você. Dois minutos bastam.'
+              : '$memoryPending versículos no deck. Memorizar reforça o aprendizado.',
+          action: ReminderAction.memory,
+          priority: 55,
+        ),
+      );
     }
 
     if (favs > 0) {
-      hooks.add(_ReminderCopy(
-        title: 'Seus favoritos',
-        body: favs == 1
-            ? 'Você guardou um versículo. Que tal revisitá-lo agora?'
-            : 'Você tem $favs favoritos. Releia um e treine a memória.',
-        action: ReminderAction.favorites,
-        priority: 40,
-      ));
+      hooks.add(
+        _ReminderCopy(
+          title: 'Seus favoritos',
+          body: favs == 1
+              ? 'Você guardou um versículo. Que tal revisitá-lo agora?'
+              : 'Você tem $favs favoritos. Releia um e treine a memória.',
+          action: ReminderAction.favorites,
+          priority: 40,
+        ),
+      );
     }
 
     if (progress.weeklyQuestsCompleted < WeeklyQuestDefs.all.length) {
-      final left =
-          WeeklyQuestDefs.all.length - progress.weeklyQuestsCompleted;
-      hooks.add(_ReminderCopy(
-        title: 'Passos da semana',
-        body: left == 1
-            ? 'Falta 1 passo semanal. Feche o ciclo com calma.'
-            : 'Ainda faltam $left passos semanais. A semana ainda é sua.',
-        action: ReminderAction.weekly,
-        priority: 50,
-      ));
+      final left = WeeklyQuestDefs.all.length - progress.weeklyQuestsCompleted;
+      hooks.add(
+        _ReminderCopy(
+          title: 'Passos da semana',
+          body: left == 1
+              ? 'Falta 1 passo semanal. Feche o ciclo com calma.'
+              : 'Ainda faltam $left passos semanais. A semana ainda é sua.',
+          action: ReminderAction.weekly,
+          priority: 50,
+        ),
+      );
     }
 
     if (progress.dailyGoalMet && hooks.length < 2) {
-      hooks.add(_ReminderCopy(
-        title: '${progress.steps} passos',
-        body: 'Meta cumprida. Que tal um reforço rápido ou um versículo?',
-        action: mistakes > 0
-            ? ReminderAction.practice
-            : memoryPending > 0
-                ? ReminderAction.memory
-                : ReminderAction.home,
-        priority: 20,
-      ));
+      hooks.add(
+        _ReminderCopy(
+          title: '${progress.steps} passos',
+          body: 'Meta cumprida. Que tal um reforço rápido ou um versículo?',
+          action: mistakes > 0
+              ? ReminderAction.practice
+              : memoryPending > 0
+              ? ReminderAction.memory
+              : ReminderAction.home,
+          priority: 20,
+        ),
+      );
     }
 
     return hooks;
@@ -421,17 +526,48 @@ class NotificationService {
           importance: Importance.defaultImportance,
           priority: Priority.defaultPriority,
           styleInformation: BigTextStyleInformation(copy.body),
+          subText: _signature,
         ),
         iOS: const DarwinNotificationDetails(
           presentAlert: true,
           presentBadge: true,
           presentSound: true,
+          subtitle: _signature,
         ),
       ),
       androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
       matchDateTimeComponents: daily ? DateTimeComponents.time : null,
       payload: copy.action.payload,
     );
+  }
+
+  /// Avisa 24h antes do fim de um trial pago — mitiga cobrança-surpresa
+  /// (a reclamação nº1 de apps concorrentes com assinatura).
+  Future<void> scheduleTrialEndingReminder(DateTime trialEndsAt) async {
+    await init();
+    if (!_available) return;
+    final when = trialEndsAt.subtract(const Duration(days: 1));
+    if (when.isBefore(DateTime.now())) return;
+    try {
+      await _schedule(
+        id: _idTrialEnding,
+        when: tz.TZDateTime.from(when, tz.local),
+        copy: const _ReminderCopy(
+          title: 'Seu teste grátis termina amanhã',
+          body:
+              'Gerencie sua assinatura Peregrino+ nas configurações se não quiser continuar.',
+          action: ReminderAction.home,
+          priority: 0,
+        ),
+      );
+    } catch (_) {}
+  }
+
+  Future<void> cancelTrialEndingReminder() async {
+    if (!_available) return;
+    try {
+      await _plugin.cancel(_idTrialEnding);
+    } catch (_) {}
   }
 
   Future<void> _cancelAll() async {
@@ -442,8 +578,14 @@ class NotificationService {
 
   tz.TZDateTime _nextSlot(int hour, int minute) {
     final now = tz.TZDateTime.now(tz.local);
-    var scheduled =
-        tz.TZDateTime(tz.local, now.year, now.month, now.day, hour, minute);
+    var scheduled = tz.TZDateTime(
+      tz.local,
+      now.year,
+      now.month,
+      now.day,
+      hour,
+      minute,
+    );
     if (!scheduled.isAfter(now.add(const Duration(minutes: 2)))) {
       scheduled = scheduled.add(const Duration(days: 1));
     }
@@ -468,8 +610,14 @@ class NotificationService {
 
   tz.TZDateTime _nextWeekday(int weekday, int hour, int minute) {
     final now = tz.TZDateTime.now(tz.local);
-    var scheduled =
-        tz.TZDateTime(tz.local, now.year, now.month, now.day, hour, minute);
+    var scheduled = tz.TZDateTime(
+      tz.local,
+      now.year,
+      now.month,
+      now.day,
+      hour,
+      minute,
+    );
     while (scheduled.weekday != weekday ||
         !scheduled.isAfter(now.add(const Duration(minutes: 2)))) {
       scheduled = scheduled.add(const Duration(days: 1));

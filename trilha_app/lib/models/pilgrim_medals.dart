@@ -15,7 +15,8 @@ class PilgrimMedals {
 
   static List<PilgrimVaultDef> allVaultDefs(List<Trail> catalog) => [
         PilgrimMedalCatalog.journeyVault(),
-        PilgrimMedalCatalog.advent2026Vault(),
+        PilgrimMedalCatalog.adventVaultFor(DateTime.now()),
+        PilgrimMedalCatalog.lentVaultFor(DateTime.now()),
         ...PilgrimMedalCatalog.trailVaultsForCatalog(catalog),
         PilgrimMedalCatalog.discoveryVault(),
       ];
@@ -37,26 +38,30 @@ class PilgrimMedals {
       ),
     );
 
-    final seasonDef = PilgrimMedalCatalog.advent2026Vault();
-    final seasonState = PilgrimVaultState(
-      vault: seasonDef,
-      tracks: [
-        for (final track in seasonDef.tracks)
-          _evaluateTrack(track, profile, catalog, ctx),
-      ],
-      rareMedals: [
-        for (final medal in seasonDef.rareMedals)
-          PilgrimMedalStatus(
-            def: medal,
-            unlocked: _isRareUnlocked(medal, profile, catalog, ctx),
-          ),
-      ],
-    );
-    if (seasonDef.isCampaignVisible(
-      ctx.clock,
-      hasUnlock: seasonState.unlockedCount > 0,
-    )) {
-      vaults.add(seasonState);
+    for (final seasonDef in [
+      PilgrimMedalCatalog.adventVaultFor(ctx.clock),
+      PilgrimMedalCatalog.lentVaultFor(ctx.clock),
+    ]) {
+      final seasonState = PilgrimVaultState(
+        vault: seasonDef,
+        tracks: [
+          for (final track in seasonDef.tracks)
+            _evaluateTrack(track, profile, catalog, ctx),
+        ],
+        rareMedals: [
+          for (final medal in seasonDef.rareMedals)
+            PilgrimMedalStatus(
+              def: medal,
+              unlocked: _isRareUnlocked(medal, profile, catalog, ctx),
+            ),
+        ],
+      );
+      if (seasonDef.isCampaignVisible(
+        ctx.clock,
+        hasUnlock: seasonState.unlockedCount > 0,
+      )) {
+        vaults.add(seasonState);
+      }
     }
 
     final startedSlugs = _startedTrailSlugs(profile, catalog);
@@ -486,18 +491,57 @@ class PilgrimMedals {
         _ => false,
       };
 
+  /// Janela + alvo do degrau diamante de um track sazonal (Advento/Quaresma),
+  /// deduzidos do id do track (`track:season:advento-<ano>` ou `…quaresma-<ano>`).
+  static ({
+    DateTime start,
+    DateTime end,
+    int totalDays,
+    int diamondTarget,
+    String label,
+  })? _seasonWindowFor(PilgrimMedalTrackDef track) {
+    final advent =
+        RegExp(r'^track:season:advento-(\d+)$').firstMatch(track.id);
+    if (advent != null) {
+      final year = int.parse(advent.group(1)!);
+      final w = PilgrimMedalCatalog.adventWindow(year);
+      return (
+        start: w.start,
+        end: w.end,
+        totalDays: w.totalDays,
+        diamondTarget: PilgrimMedalCatalog.adventDiamondDays(year),
+        label: 'Advento',
+      );
+    }
+    final lent =
+        RegExp(r'^track:season:quaresma-(\d+)$').firstMatch(track.id);
+    if (lent != null) {
+      final year = int.parse(lent.group(1)!);
+      final w = PilgrimMedalCatalog.lentWindow(year);
+      return (
+        start: w.start,
+        end: w.end,
+        totalDays: w.totalDays,
+        diamondTarget: PilgrimMedalCatalog.lentDiamondDays(year),
+        label: 'Quaresma',
+      );
+    }
+    return null;
+  }
+
   static bool _isSeasonLevelUnlocked(
     PilgrimMedalTrackDef track,
     int levelIndex,
     PilgrimMedalEvalContext ctx,
   ) {
-    if (track.id != PilgrimMedalCatalog.advent2026TrackId) return false;
-    final days = _seasonPlayDays(ctx);
+    final window = _seasonWindowFor(track);
+    if (window == null) return false;
+    final days = _seasonPlayDaysInWindow(ctx, window.start, window.end);
     return switch (levelIndex) {
       0 => days >= 1,
       1 => days >= 7,
-      2 => days >= PilgrimMedalCatalog.advent2026HalfDays(),
-      3 => days >= 22,
+      2 => days >= (window.totalDays / 2).ceil(),
+      3 => days >= window.diamondTarget,
       _ => false,
     };
   }
@@ -548,11 +592,11 @@ class PilgrimMedals {
         _ => false,
       };
 
-  static int _seasonPlayDays(PilgrimMedalEvalContext ctx) {
-    final vault = PilgrimMedalCatalog.advent2026Vault();
-    final from = vault.activeFrom;
-    final until = vault.activeUntil;
-    if (from == null || until == null) return 0;
+  static int _seasonPlayDaysInWindow(
+    PilgrimMedalEvalContext ctx,
+    DateTime from,
+    DateTime until,
+  ) {
     final start = DateTime(from.year, from.month, from.day);
     final end = DateTime(until.year, until.month, until.day);
     var count = 0;
@@ -566,7 +610,7 @@ class PilgrimMedals {
   }
 
   static bool _hasSeasonStreak(PilgrimMedalEvalContext ctx, {required int minDays}) {
-    final vault = PilgrimMedalCatalog.advent2026Vault();
+    final vault = PilgrimMedalCatalog.adventVaultFor(ctx.clock);
     final from = vault.activeFrom;
     final until = vault.activeUntil;
     if (from == null || until == null) return false;
@@ -692,7 +736,7 @@ class PilgrimMedals {
       return _trailLevelProgress(track, levelIndex, profile, catalog);
     }
     if (track.kind == PilgrimVaultKind.season) {
-      return _seasonLevelProgress(levelIndex, ctx);
+      return _seasonLevelProgress(track, levelIndex, ctx);
     }
     return switch (track.id) {
       PilgrimMedalCatalog.trackWordId =>
@@ -861,34 +905,29 @@ class PilgrimMedals {
   }
 
   static _MedalStep? _seasonLevelProgress(
+    PilgrimMedalTrackDef track,
     int levelIndex,
     PilgrimMedalEvalContext ctx,
   ) {
-    final days = _seasonPlayDays(ctx);
+    final window = _seasonWindowFor(track);
+    if (window == null) return null;
+    final days = _seasonPlayDaysInWindow(ctx, window.start, window.end);
+    final unit = 'dia no ${window.label}';
+    final unitPlural = 'dias no ${window.label}';
     return switch (levelIndex) {
-      0 => _step(
-          current: days,
-          target: 1,
-          unit: 'dia no Advento',
-          unitPlural: 'dias no Advento',
-        ),
-      1 => _step(
-          current: days,
-          target: 7,
-          unit: 'dia no Advento',
-          unitPlural: 'dias no Advento',
-        ),
+      0 => _step(current: days, target: 1, unit: unit, unitPlural: unitPlural),
+      1 => _step(current: days, target: 7, unit: unit, unitPlural: unitPlural),
       2 => _step(
           current: days,
-          target: PilgrimMedalCatalog.advent2026HalfDays(),
-          unit: 'dia no Advento',
-          unitPlural: 'dias no Advento',
+          target: (window.totalDays / 2).ceil(),
+          unit: unit,
+          unitPlural: unitPlural,
         ),
       3 => _step(
           current: days,
-          target: 22,
-          unit: 'dia no Advento',
-          unitPlural: 'dias no Advento',
+          target: window.diamondTarget,
+          unit: unit,
+          unitPlural: unitPlural,
         ),
       _ => null,
     };

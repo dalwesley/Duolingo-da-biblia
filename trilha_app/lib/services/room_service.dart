@@ -72,7 +72,11 @@ class RoomService extends ChangeNotifier {
     }
   }
 
-  Future<bool> createRoom(String name, ProgressService progress) async {
+  Future<bool> createRoom(
+    String name,
+    ProgressService progress, {
+    int? weeklyGoalSteps,
+  }) async {
     lastError = null;
     if (!backend.isActive) {
       lastError = 'Conecte-se à nuvem para criar salas.';
@@ -85,6 +89,7 @@ class RoomService extends ChangeNotifier {
       name: name,
       userName: progress.userName,
       weeklySteps: progress.weeklySteps,
+      weeklyGoalSteps: weeklyGoalSteps,
     );
     loading = false;
     if (room == null) {
@@ -153,6 +158,25 @@ class RoomService extends ChangeNotifier {
     members = await backend.fetchRoomMembers(code);
     loading = false;
     notifyListeners();
+  }
+
+  /// Dono ajusta (ou limpa, com `null`) a meta semanal de passos da sala.
+  Future<bool> setWeeklyGoal(int? goal) async {
+    final room = activeRoom;
+    if (room == null || !backend.isActive) return false;
+    final ok = await backend.setRoomWeeklyGoal(room.code, goal);
+    if (ok) {
+      activeRoom = StudyRoom(
+        code: room.code,
+        name: room.name,
+        ownerId: room.ownerId,
+        ownerName: room.ownerName,
+        createdAt: room.createdAt,
+        weeklyGoalSteps: (goal != null && goal > 0) ? goal : null,
+      );
+      notifyListeners();
+    }
+    return ok;
   }
 
   Future<void> leaveRoom({ProgressService? progress}) async {

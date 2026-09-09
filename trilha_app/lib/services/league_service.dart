@@ -1,6 +1,8 @@
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'remote_config_service.dart';
+
 /// Divisões da caravana semanal — jornada coletiva, tema bíblico.
 enum LeagueTier { semente, videira, oliveira, cedro, estrela }
 
@@ -302,18 +304,25 @@ class LeagueService extends ChangeNotifier {
   static const _keyTrendBaseline = 'leagueTrendBaseline';
   static const _keyTrendLast = 'leagueTrendLast';
   static const _keyTrendAnchored = 'leagueTrendAnchored';
+  static const _keyGroupCode = 'leagueGroupCode';
 
-  static const groupSize = 20;
+  /// Tamanho do grupo (pool) por divisão — calibrável via [RemoteConfigService].
+  static int get groupSize => RemoteConfigService.instance.leagueGroupSize;
   static const promoteCount = 7;
   static const demoteCount = 5;
   static const promotionBonusXp = 50;
 
   int tierIndex = 0;
+
+  /// Código de grupo fechado (célula/paróquia/amigos) — quando definido, o
+  /// ranking semanal usa o pool do grupo em vez do pool público por tier.
+  String? groupCode;
   LeagueOutcome? pendingOutcome;
   int pendingRank = 0;
   String? _processedWeek;
   bool _loaded = false;
   bool _cloudHydrated = false;
+  bool _rcListening = false;
   final WeeklyRankSnapshot _weeklyTrend = WeeklyRankSnapshot();
 
   bool get isLoaded => _loaded;
@@ -356,6 +365,7 @@ class LeagueService extends ChangeNotifier {
       // Cloud (hydrate) tem prioridade se ja chegou enquanto o prefs carregava.
       if (_cloudHydrated) return;
       tierIndex = (prefs.getInt(_keyTier) ?? 0).clamp(0, LeagueTier.values.length - 1);
+      groupCode = prefs.getString(_keyGroupCode);
       _processedWeek = prefs.getString(_keyProcessedWeek);
       final rawOutcome = prefs.getString(_keyOutcome);
       if (rawOutcome != null) {
@@ -368,6 +378,10 @@ class LeagueService extends ChangeNotifier {
     } catch (e) {
       debugPrint('LeagueService.init falhou: $e');
     } finally {
+      if (!_rcListening) {
+        _rcListening = true;
+        RemoteConfigService.instance.addListener(notifyListeners);
+      }
       // Nunca deixar a aba Caravana em spinner eterno.
       if (!_loaded && !_cloudHydrated) {
         _loaded = true;
@@ -380,6 +394,7 @@ class LeagueService extends ChangeNotifier {
   Map<String, dynamic> toCloudMap() {
     return {
       'leagueTier': tierIndex,
+      'leagueGroupCode': groupCode,
       'leagueProcessedWeek': _processedWeek,
       'leaguePendingOutcome': pendingOutcome?.name,
       'leaguePendingRank': pendingRank,
@@ -391,6 +406,10 @@ class LeagueService extends ChangeNotifier {
     if (data.containsKey('leagueTier')) {
       tierIndex = ((data['leagueTier'] as num?)?.toInt() ?? tierIndex)
           .clamp(0, LeagueTier.values.length - 1);
+    }
+    if (data.containsKey('leagueGroupCode')) {
+      final code = (data['leagueGroupCode'] as String?)?.trim();
+      groupCode = (code == null || code.isEmpty) ? null : code.toUpperCase();
     }
     if (data.containsKey('leagueProcessedWeek')) {
       _processedWeek = data['leagueProcessedWeek'] as String? ?? _processedWeek;
@@ -462,6 +481,14 @@ class LeagueService extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// Define (ou limpa, com `null`) o grupo fechado de liga (célula/paróquia/amigos).
+  Future<void> setGroupCode(String? code) async {
+    final normalized = code?.trim().toUpperCase();
+    groupCode = (normalized == null || normalized.isEmpty) ? null : normalized;
+    await _persist();
+    notifyListeners();
+  }
+
   Future<void> dismissOutcome() async {
     pendingOutcome = null;
     await _persist();
@@ -471,6 +498,7 @@ class LeagueService extends ChangeNotifier {
   /// Limpa estado local (logout / troca de conta).
   Future<void> resetForLogout() async {
     tierIndex = 0;
+    groupCode = null;
     pendingOutcome = null;
     pendingRank = 0;
     _processedWeek = null;
@@ -479,6 +507,7 @@ class LeagueService extends ChangeNotifier {
     _weeklyTrend.clear();
     final prefs = await SharedPreferences.getInstance();
     await prefs.remove(_keyTier);
+    await prefs.remove(_keyGroupCode);
     await prefs.remove(_keyProcessedWeek);
     await prefs.remove(_keyOutcome);
     await prefs.remove(_keyOutcomeRank);
@@ -542,6 +571,11 @@ class LeagueService extends ChangeNotifier {
   Future<void> _persist() async {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setInt(_keyTier, tierIndex);
+    if (groupCode != null) {
+      await prefs.setString(_keyGroupCode, groupCode!);
+    } else {
+      await prefs.remove(_keyGroupCode);
+    }
     if (_processedWeek != null) {
       await prefs.setString(_keyProcessedWeek, _processedWeek!);
     }
@@ -610,5 +644,14 @@ class LeagueService extends ChangeNotifier {
     if (a.isUser) return -1;
     if (b.isUser) return 1;
     return a.name.compareTo(b.name);
+  }
+
+  @override
+  void dispose() {
+    if (_rcListening) {
+      RemoteConfigService.instance.removeListener(notifyListeners);
+      _rcListening = false;
+    }
+    super.dispose();
   }
 }

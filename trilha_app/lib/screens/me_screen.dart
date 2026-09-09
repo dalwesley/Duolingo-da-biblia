@@ -47,8 +47,6 @@ void openMeProfile(BuildContext context) {
                 onBack: () => Navigator.pop(ctx),
                 leadingGlyph: CinematicGlyph.humanity,
                 chromeAccent: AppColors.orchid,
-                onTrailingTap: () => openSettings(ctx),
-                trailingGlyph: CinematicGlyph.tune,
               ),
             ),
           ),

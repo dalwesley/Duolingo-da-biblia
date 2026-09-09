@@ -316,7 +316,14 @@ class _TrilhasScreenState extends State<TrilhasScreen>
       _infoFor(TrailRealm.antigoTestamento, trails, progress),
       _infoFor(TrailRealm.novoTestamento, trails, progress),
       _infoFor(TrailRealm.vidaCrista, trails, progress),
-      _infoFor(TrailRealm.teologia, trails, progress, locked: true),
+      _infoFor(
+        TrailRealm.teologia,
+        trails,
+        progress,
+        locked: trails
+            .where((t) => TrailRealm.fromId(t.realmId) == TrailRealm.teologia)
+            .every((t) => t.comingSoon || t.missionSlugs.isEmpty),
+      ),
     ];
 
     final topPad = widget.topBar != null

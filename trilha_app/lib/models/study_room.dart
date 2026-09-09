@@ -5,6 +5,8 @@ class StudyRoom {
   final String ownerId;
   final String ownerName;
   final DateTime? createdAt;
+  /// Meta semanal de passos somados da sala (definida pelo dono, opcional).
+  final int? weeklyGoalSteps;
 
   const StudyRoom({
     required this.code,
@@ -12,6 +14,7 @@ class StudyRoom {
     required this.ownerId,
     required this.ownerName,
     this.createdAt,
+    this.weeklyGoalSteps,
   });
 
   bool isOwner(String? uid) => uid != null && uid == ownerId;
@@ -38,6 +41,7 @@ class StudyRoom {
           ? data['ownerName'] as String
           : 'Anfitrião',
       createdAt: createdAt,
+      weeklyGoalSteps: (data['weeklyGoalSteps'] as num?)?.toInt(),
     );
   }
 }

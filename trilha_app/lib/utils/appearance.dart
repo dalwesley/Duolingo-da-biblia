@@ -23,8 +23,8 @@ extension AppearanceModeX on AppearanceMode {
 
   CinematicGlyph get glyph => switch (this) {
         AppearanceMode.morning => CinematicGlyph.sun,
-        AppearanceMode.afternoon => CinematicGlyph.spark,
-        AppearanceMode.night => CinematicGlyph.depths,
+        AppearanceMode.afternoon => CinematicGlyph.flame,
+        AppearanceMode.night => CinematicGlyph.star,
         AppearanceMode.automatic => CinematicGlyph.calendar,
       };
 
