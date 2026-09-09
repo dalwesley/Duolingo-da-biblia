@@ -10,6 +10,7 @@ import '../models/difficulty.dart';
 import '../models/pilgrim_medals.dart';
 import '../services/analytics_service.dart';
 import '../services/backend_service.dart';
+import '../services/companion_service.dart';
 import '../services/league_service.dart';
 import '../services/progress_service.dart';
 import '../services/sound_service.dart';
@@ -20,9 +21,11 @@ import '../utils/day_phase.dart';
 import '../utils/difficulty_trails.dart';
 import '../utils/mascot_messages.dart';
 import '../utils/trail_progress.dart';
+import '../widgets/companion_invite_prompt_sheet.dart';
 import '../widgets/confetti_overlay.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
+import '../widgets/invite_qr_sheet.dart';
 import '../widgets/living_seed_card.dart';
 import '../widgets/mascot_bubble.dart';
 import '../widgets/share_streak_button.dart';
@@ -65,6 +68,9 @@ class _CelebrationScreenState extends State<CelebrationScreen>
   int _awardedSteps = 0;
   int _leagueRank = 0;
   bool _inPromotionZone = false;
+  bool _leagueCompetitive = false;
+  bool _firstLessonSession = false;
+  bool _leaving = false;
   String? _medalLine;
   TrailDifficulty? _currentMode;
   TrailDifficulty? _nextMode;
@@ -173,15 +179,58 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     super.dispose();
   }
 
+  Future<void> _leaveCelebration({required bool toTrailMap}) async {
+    if (_leaving) return;
+    _leaving = true;
+    try {
+      await _offerRetentionPrompts();
+    } catch (_) {}
+    if (!mounted) return;
+    if (toTrailMap) {
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+          builder: (_) => TrailMapScreen(slug: widget.trailSlug),
+        ),
+      );
+    } else {
+      Navigator.of(context).popUntil((r) => r.isFirst);
+    }
+  }
+
+  Future<void> _offerRetentionPrompts() async {
+    if (widget.isReplay) return;
+    final progress = context.read<ProgressService>();
+    final companions = context.read<CompanionService>();
+    final hasPartner = companions.companions.any((c) => !c.awaitingPartner);
+    if (!_firstLessonSession ||
+        progress.companionInviteOffered ||
+        hasPartner ||
+        companions.companions.isNotEmpty) {
+      return;
+    }
+    final code = await showCompanionInvitePromptSheet(context);
+    if (!mounted) return;
+    if (code == null || code.isEmpty) return;
+    await showInviteQrSheet(
+      context,
+      code: code,
+      title: 'Um par na trilha',
+      subtitle: 'Um companheiro. Sem ranking — só presença.',
+      inviterName: progress.userName,
+    );
+  }
+
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
     if (!_saved) {
       _saved = true;
+      final progress = context.read<ProgressService>();
+      _firstLessonSession =
+          progress.firstLessonDate == null || progress.firstLessonDate!.isEmpty;
       _awardedSteps = widget.isReplay
           ? (widget.steps * 0.35).round().clamp(5, widget.steps)
           : widget.steps;
-      final progress = context.read<ProgressService>();
       progress
           .completeMission(
             widget.missionSlug,
@@ -232,8 +281,12 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                 final rank = league.userRank(entries);
                 if (mounted) {
                   setState(() {
+                    _leagueCompetitive = LeagueService.fieldIsCompetitive(
+                      peers.length,
+                    );
                     _leagueRank = rank;
-                    _inPromotionZone = rank > 0 &&
+                    _inPromotionZone = _leagueCompetitive &&
+                        rank > 0 &&
                         rank <= LeagueService.promoteCount &&
                         league.tierIndex < LeagueTier.values.length - 1;
                   });
@@ -541,7 +594,8 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                             const SizedBox(height: AppSpace.md),
                                             _MedalProgressLine(text: _medalLine!),
                                           ],
-                                          if (_leagueRank > 0) ...[
+                                          if (_leagueCompetitive &&
+                                              _leagueRank > 0) ...[
                                             const SizedBox(height: AppSpace.lg),
                                             _CaravanaMoment(
                                               rank: _leagueRank,
@@ -719,22 +773,16 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                           child: CopperCta(
                                             label: 'CONTINUAR A CAMINHADA',
                                             trailing: null,
-                                            onTap: () {
-                                              Navigator.of(context).pushReplacement(
-                                                MaterialPageRoute(
-                                                  builder: (_) => TrailMapScreen(
-                                                    slug: widget.trailSlug,
-                                                  ),
-                                                ),
-                                              );
-                                            },
+                                            onTap: () => _leaveCelebration(
+                                              toTrailMap: true,
+                                            ),
                                           ),
                                         ),
                                         const SizedBox(height: AppSpace.sm),
                                         TextButton(
-                                          onPressed: () => Navigator.of(
-                                            context,
-                                          ).popUntil((r) => r.isFirst),
+                                          onPressed: () => _leaveCelebration(
+                                            toTrailMap: false,
+                                          ),
                                           child: Text(
                                             'Voltar ao início',
                                             style: AppTypography.body(

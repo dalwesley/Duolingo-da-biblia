@@ -26,6 +26,22 @@ service cloud.firestore {
       return field is int && field >= 0 && field < 100000000;
     }
 
+    // Firestore grava número como int OU float conforme o SDK. Regras tratam
+    // 15 e 15.0 como o mesmo placar — senão o ranking inteiro toma PERMISSION_DENIED.
+    function nonNegNum(field) {
+      return (field is int || field is float)
+        && field >= 0
+        && field < 100000000;
+    }
+
+    function asFloat(field) {
+      return field is int ? field * 1.0 : field;
+    }
+
+    function scoresEqual(left, right) {
+      return nonNegNum(left) && nonNegNum(right) && asFloat(left) == asFloat(right);
+    }
+
     function userPath() {
       return /databases/$(database)/documents/users/$(request.auth.uid);
     }
@@ -40,17 +56,19 @@ service cloud.firestore {
 
     function userTotalSteps() {
       return userExists()
-        ? (('steps' in userData() && userData().steps is int)
+        ? (('steps' in userData() && nonNegNum(userData().steps))
             ? userData().steps
-            : (('xp' in userData() && userData().xp is int) ? userData().xp : 0))
+            : (('xp' in userData() && nonNegNum(userData().xp))
+                ? userData().xp
+                : 0))
         : 0;
     }
 
     function userWeeklySteps() {
       return userExists()
-        ? (('weeklySteps' in userData() && userData().weeklySteps is int)
+        ? (('weeklySteps' in userData() && nonNegNum(userData().weeklySteps))
             ? userData().weeklySteps
-            : (('weeklyXp' in userData() && userData().weeklyXp is int)
+            : (('weeklyXp' in userData() && nonNegNum(userData().weeklyXp))
                 ? userData().weeklyXp
                 : 0))
         : 0;
@@ -58,7 +76,7 @@ service cloud.firestore {
 
     function userMonthlySteps() {
       return userExists()
-        ? (('monthlySteps' in userData() && userData().monthlySteps is int)
+        ? (('monthlySteps' in userData() && nonNegNum(userData().monthlySteps))
             ? userData().monthlySteps
             : 0)
         : 0;
@@ -69,11 +87,11 @@ service cloud.firestore {
     function rankingScoreMatches(expected) {
       return isSignedIn()
         && request.auth.uid == uid
-        && nonNegInt(expected)
+        && nonNegNum(expected)
         && (!('xp' in request.resource.data)
-            || request.resource.data.xp == expected)
+            || scoresEqual(request.resource.data.xp, expected))
         && (!('steps' in request.resource.data)
-            || request.resource.data.steps == expected)
+            || scoresEqual(request.resource.data.steps, expected))
         && (('xp' in request.resource.data)
             || ('steps' in request.resource.data));
     }

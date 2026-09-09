@@ -13,7 +13,7 @@ App Flutter para missões diárias + painel admin no Firebase.
 | [`ROADMAP.md`](ROADMAP.md) | Norte, checklist e prioridades |
 | [`MONETIZATION.md`](MONETIZATION.md) | Hipóteses de receita (sem IAP ainda) |
 
-**Estado (26 ago/2026):** 8.370 atos V2 na nuvem · validador verde · app 1.0.22 · D7 aberto.
+**Estado (9 set/2026):** 8.370 atos V2 na nuvem · validador verde · app 1.0.23 · D7 aberto.
 
 Canvas mestre de posicionamento: `~/.cursor/projects/.../canvases/stway-posicionamento-mercado-24ago2026.canvas.tsx`
 

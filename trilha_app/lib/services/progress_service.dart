@@ -106,6 +106,8 @@ class ProgressService extends ChangeNotifier {
   static const _keyFirstLessonDate = 'cohortFirstLessonDate';
   static const _keyFirstLessonTrail = 'cohortFirstLessonTrail';
   static const _keyFirstOpenAtMs = 'cohortFirstOpenAtMs';
+  static const _keyNotificationsPrompted = 'notificationsPrompted';
+  static const _keyCompanionInviteOffered = 'companionInviteOffered';
 
   static const maxLamps = 5;
   /// Boss: menos margem de erro.
@@ -266,6 +268,12 @@ class ProgressService extends ChangeNotifier {
   /// Bônus leve na 1ª missão após gap (ativado ao reconhecer o retorno).
   bool comebackBonusPending = false;
 
+  /// Pedido de notificação já aconteceu neste aparelho (depois da 1ª celebração).
+  bool notificationsPrompted = false;
+
+  /// Convite de companhia da 1ª missão já foi oferecido (aceito ou recusado).
+  bool companionInviteOffered = false;
+
   bool get isLoaded => _loaded;
   bool get canPersistCloud => _cloudReadyToPersist;
 
@@ -361,6 +369,18 @@ class ProgressService extends ChangeNotifier {
     firstOpenAtMs = prefs.getInt(_keyFirstOpenAtMs);
     _freshInstall = !hasSeenSplash;
     settings = _settingsFromPrefs(prefs);
+    if (prefs.containsKey(_keyNotificationsPrompted)) {
+      notificationsPrompted = prefs.getBool(_keyNotificationsPrompted) ?? false;
+    } else {
+      // Instalações antigas já tomavam o prompt no boot. Só herda se já
+      // completou uma missão — senão o novo fluxo pede após a celebração.
+      final firstLesson = prefs.getString(_keyFirstLessonDate);
+      notificationsPrompted = firstLesson != null && firstLesson.isNotEmpty;
+    }
+    companionInviteOffered =
+        prefs.getBool(_keyCompanionInviteOffered) ?? false;
+    await prefs.setBool(_keyNotificationsPrompted, notificationsPrompted);
+    await prefs.setBool(_keyCompanionInviteOffered, companionInviteOffered);
     bibleBrowseOrder = BibleReadingOrder.fromStorage(
       prefs.getString(_keyBibleBrowseOrder),
     );
@@ -398,6 +418,8 @@ class ProgressService extends ChangeNotifier {
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool(_keySound, settings.sound);
     await prefs.setBool(_keyNotifications, settings.notifications);
+    await prefs.setBool(_keyNotificationsPrompted, notificationsPrompted);
+    await prefs.setBool(_keyCompanionInviteOffered, companionInviteOffered);
     await prefs.setInt(_keyDailyGoal, settings.dailyGoal);
     await prefs.setString(
       _keyAppearanceMode,
@@ -649,6 +671,8 @@ class ProgressService extends ChangeNotifier {
     brokenStreak = 0;
     lastComebackShownDate = null;
     comebackBonusPending = false;
+    notificationsPrompted = false;
+    companionInviteOffered = false;
     lastBibleReadDate = null;
     bibleBeforeMission = false;
     final prefs = await SharedPreferences.getInstance();
@@ -657,6 +681,8 @@ class ProgressService extends ChangeNotifier {
     await prefs.remove(_keyFirstLessonDate);
     await prefs.remove(_keyFirstLessonTrail);
     await prefs.remove(_keyFirstOpenAtMs);
+    await prefs.remove(_keyNotificationsPrompted);
+    await prefs.remove(_keyCompanionInviteOffered);
     await clearLocalCache();
     notifyListeners();
   }
@@ -1162,6 +1188,21 @@ class ProgressService extends ChangeNotifier {
     streakRepairPending = false;
     brokenStreak = 0;
     await _save();
+  }
+
+  Future<void> markNotificationsPrompted({required bool enabled}) async {
+    notificationsPrompted = true;
+    settings = settings.copyWith(notifications: enabled);
+    await _persistSettingsLocal();
+    await _save();
+  }
+
+  Future<void> markCompanionInviteOffered() async {
+    if (companionInviteOffered) return;
+    companionInviteOffered = true;
+    await _persistSettingsLocal();
+    await _save();
+    notifyListeners();
   }
 
   String? difficultyForTrail(String trailSlug) => trailDifficulties[trailSlug];
@@ -2253,6 +2294,8 @@ class ProgressService extends ChangeNotifier {
     brokenStreak = 0;
     lastComebackShownDate = null;
     comebackBonusPending = false;
+    notificationsPrompted = false;
+    companionInviteOffered = false;
     lastBibleReadDate = null;
     bibleBeforeMission = false;
     questProgressMap = {};
@@ -2279,6 +2322,7 @@ class ProgressService extends ChangeNotifier {
     lastWeekKey = null;
     monthlySteps = 0;
     monthlyMonth = _monthKey();
+    await _persistSettingsLocal();
     await _save();
     notifyListeners();
   }

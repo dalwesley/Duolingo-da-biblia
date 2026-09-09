@@ -23,6 +23,7 @@ import '../widgets/immersive_background.dart';
 import '../widgets/league_outcome_card.dart';
 import '../widgets/league_risk_card.dart';
 import '../widgets/offline_curriculum_dialog.dart';
+import '../widgets/reminder_prompt_sheet.dart';
 import '../widgets/streak_repair_banner.dart';
 import '../widgets/medal_proximity_whisper.dart';
 import '../widgets/season_challenge_banner.dart';
@@ -59,6 +60,7 @@ class _HomeScreenState extends State<HomeScreen>
   List<Trail>? _trails;
   late final AnimationController _fadeIn;
   bool _comebackChecked = false;
+  bool _reminderChecked = false;
   bool _retryingCatalog = false;
   bool _offlineDialogShown = false;
 
@@ -145,6 +147,29 @@ class _HomeScreenState extends State<HomeScreen>
           }
         },
       );
+    });
+  }
+
+  void _maybePromptReminders(ProgressService progress) {
+    if (_reminderChecked) return;
+    if (progress.notificationsPrompted) {
+      _reminderChecked = true;
+      return;
+    }
+    final first = progress.firstLessonDate;
+    if (first == null || first.isEmpty) return;
+    if (progress.shouldShowComeback) return;
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      if (progress.notificationsPrompted) {
+        _reminderChecked = true;
+        return;
+      }
+      final route = ModalRoute.of(context);
+      if (route == null || !route.isCurrent) return;
+      if (_reminderChecked) return;
+      _reminderChecked = true;
+      showReminderPromptSheet(context);
     });
   }
 
@@ -268,6 +293,7 @@ class _HomeScreenState extends State<HomeScreen>
     final goalMet = progress.dailyGoalMet;
 
     _maybeShowComeback(progress, missionSlug: current?.slug);
+    _maybePromptReminders(progress);
 
     final nudge = context.watch<CompanionService>().incomingNudge;
     final walk = current != null
@@ -358,41 +384,46 @@ class _HomeScreenState extends State<HomeScreen>
               ),
             ),
             const SizedBox(height: AppSpace.section),
-            _reveal(2, SeasonChallengeBanner(catalog: trails)),
+            if (goalMet) ...[
+              _reveal(2, SeasonChallengeBanner(catalog: trails)),
+            ],
             if (progress.showStreakRepairOffer) ...[
               _reveal(2, const StreakRepairBanner()),
               const SizedBox(height: AppSpace.section),
             ],
-            Builder(
-              builder: (context) {
-                final league = context.watch<LeagueService>();
-                if (!league.isLoaded) return const SizedBox.shrink();
-                final entries = league.standings(
-                  userName: progress.userName,
-                  userWeeklySteps: progress.weeklySteps,
-                );
-                final rank = league.userRank(entries);
-                if (!league.isNearDemotion(rank)) {
-                  return const SizedBox.shrink();
-                }
-                return Column(
-                  children: [
-                    _reveal(
-                      3,
-                      LeagueRiskCard(onOpenLeague: widget.onOpenLeague),
-                    ),
-                    const SizedBox(height: AppSpace.section),
-                  ],
-                );
-              },
-            ),
-            _reveal(
-              3,
-              DailyQuestsCard(
-                onQuestTap: (q) => _onQuestTap(q, missionSlug: current?.slug),
+            if (goalMet)
+              Builder(
+                builder: (context) {
+                  final league = context.watch<LeagueService>();
+                  if (!league.isLoaded) return const SizedBox.shrink();
+                  final entries = league.standings(
+                    userName: progress.userName,
+                    userWeeklySteps: progress.weeklySteps,
+                  );
+                  final rank = league.userRank(entries);
+                  if (!league.isNearDemotion(rank)) {
+                    return const SizedBox.shrink();
+                  }
+                  return Column(
+                    children: [
+                      _reveal(
+                        3,
+                        LeagueRiskCard(onOpenLeague: widget.onOpenLeague),
+                      ),
+                      const SizedBox(height: AppSpace.section),
+                    ],
+                  );
+                },
               ),
-            ),
-            const SizedBox(height: AppSpace.section),
+            if (goalMet) ...[
+              _reveal(
+                3,
+                DailyQuestsCard(
+                  onQuestTap: (q) => _onQuestTap(q, missionSlug: current?.slug),
+                ),
+              ),
+              const SizedBox(height: AppSpace.section),
+            ],
             _reveal(
               4,
               HomeWordCard(mission: current, onOpen: (ref) => _openBible(ref)),

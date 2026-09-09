@@ -28,6 +28,19 @@ extension LeagueTierX on LeagueTier {
 /// Resultado da semana anterior, aguardando o usuário ver.
 enum LeagueOutcome { promoted, stayed, demoted }
 
+/// Fechamento de uma semana — puro, testável, sem persistência.
+class LeagueWeekSettlement {
+  final LeagueOutcome? outcome;
+  final int rank;
+  final int tierDelta;
+
+  const LeagueWeekSettlement({
+    required this.outcome,
+    required this.rank,
+    required this.tierDelta,
+  });
+}
+
 /// Movimento da posição semanal desde o âncora do dia (ontem, ou a 1ª leitura de hoje).
 enum RankDrift { up, down, stable }
 
@@ -312,6 +325,13 @@ class LeagueService extends ChangeNotifier {
   static const demoteCount = 5;
   static const promotionBonusXp = 50;
 
+  /// Outros peregrinos mínimos para o ranking ter tensão (você + 2).
+  static const minPeerCount = 2;
+
+  /// Campo competitivo: pelo menos [minPeerCount] pares reais.
+  static bool fieldIsCompetitive(int peerCount) =>
+      peerCount >= minPeerCount;
+
   int tierIndex = 0;
 
   /// Código de grupo fechado (célula/paróquia/amigos) — quando definido, o
@@ -437,6 +457,46 @@ class LeagueService extends ChangeNotifier {
   /// Fecha a semana anterior se virou a semana. [lastWeekSteps] é o XP final do
   /// usuário na semana [lastWeekKey] (vindos do ProgressService).
   /// [peerSteps] = XP dos outros jogadores reais daquela semana/tier.
+  static LeagueWeekSettlement settleClosedWeek({
+    required int userXp,
+    required List<int> peerSteps,
+    required int tierIndex,
+    required int groupSize,
+    required int maxTierIndex,
+  }) {
+    if (userXp <= 0) {
+      return const LeagueWeekSettlement(
+        outcome: null,
+        rank: 0,
+        tierDelta: 0,
+      );
+    }
+    final peer = peerSteps.take(groupSize - 1).toList();
+    if (!fieldIsCompetitive(peer.length)) {
+      return const LeagueWeekSettlement(
+        outcome: null,
+        rank: 0,
+        tierDelta: 0,
+      );
+    }
+    final finalXp = <int>[...peer, userXp]..sort((a, b) => b.compareTo(a));
+    final rank = finalXp.indexOf(userXp) + 1;
+    var outcome = LeagueOutcome.stayed;
+    var delta = 0;
+    if (rank <= promoteCount && tierIndex < maxTierIndex) {
+      outcome = LeagueOutcome.promoted;
+      delta = 1;
+    } else if (rank > groupSize - demoteCount && tierIndex > 0) {
+      outcome = LeagueOutcome.demoted;
+      delta = -1;
+    }
+    return LeagueWeekSettlement(
+      outcome: outcome,
+      rank: rank,
+      tierDelta: delta,
+    );
+  }
+
   Future<void> settleWeekIfNeeded({
     required int lastWeekSteps,
     required String? lastWeekKey,
@@ -457,25 +517,18 @@ class LeagueService extends ChangeNotifier {
     // XP do usuário na semana fechada (0 se o registro não bate).
     final userXp = (lastWeekKey == closedWeek) ? lastWeekSteps : 0;
 
-    final peer = peerSteps.take(groupSize - 1).toList();
-    final finalXp = <int>[
-      ...peer,
-      userXp,
-    ]..sort((a, b) => b.compareTo(a));
-    final rank = finalXp.indexOf(userXp) + 1;
+    final settled = settleClosedWeek(
+      userXp: userXp,
+      peerSteps: peerSteps,
+      tierIndex: tierIndex,
+      groupSize: groupSize,
+      maxTierIndex: LeagueTier.values.length - 1,
+    );
+    tierIndex += settled.tierDelta;
 
-    var outcome = LeagueOutcome.stayed;
-    if (rank <= promoteCount && tierIndex < LeagueTier.values.length - 1) {
-      outcome = LeagueOutcome.promoted;
-      tierIndex += 1;
-    } else if (rank > groupSize - demoteCount && tierIndex > 0) {
-      outcome = LeagueOutcome.demoted;
-      tierIndex -= 1;
-    }
-
-    // Só mostra resultado se o usuário participou (jogou na semana fechada).
-    pendingOutcome = userXp > 0 ? outcome : null;
-    pendingRank = rank;
+    // Sem campo competitivo não inventa promoção. Sem XP, não mostra card.
+    pendingOutcome = settled.outcome;
+    pendingRank = settled.rank;
     _processedWeek = current;
     await _persist();
     notifyListeners();

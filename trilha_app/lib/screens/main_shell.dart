@@ -94,7 +94,12 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       NotificationService.instance.onRemoteNudge = () {
         unawaited(context.read<CompanionService>().refresh());
       };
-      unawaited(NotificationService.instance.initRemote());
+      unawaited(
+        NotificationService.instance.initRemote(
+          requestPermission: _progressRef?.notificationsPrompted == true &&
+              _progressRef?.settings.notifications == true,
+        ),
+      );
       unawaited(RemoteConfigService.instance.init());
       _onBackendChanged();
       final pending = NotificationService.instance.takePendingAction();
@@ -306,7 +311,6 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
 
   @override
   void dispose() {
-    _flushCloudSave();
     WidgetsBinding.instance.removeObserver(this);
     _phaseTimer?.cancel();
     _frost.dispose();

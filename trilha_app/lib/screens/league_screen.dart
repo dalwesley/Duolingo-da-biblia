@@ -358,12 +358,17 @@ class _LeagueScreenState extends State<LeagueScreen>
             realPlayers: _realPlayers,
           );
     final userRank = league.userRank(entries);
-    if (overall && userRank == 1) {
+    if (overall &&
+        userRank == 1 &&
+        LeagueService.fieldIsCompetitive(_overallPlayers.length)) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         progress.recordLeaderDay();
       });
     }
-    if (!overall && userRank > 0 && _playersLoadedOnce) {
+    if (!overall &&
+        userRank > 0 &&
+        _playersLoadedOnce &&
+        LeagueService.fieldIsCompetitive(_realPlayers.length)) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         if (!mounted) return;
         context.read<LeagueService>().observeWeeklyRank(userRank);
@@ -371,7 +376,6 @@ class _LeagueScreenState extends State<LeagueScreen>
     }
     final canPromote = league.tierIndex < LeagueTier.values.length - 1;
     final canDemote = league.tierIndex > 0;
-    final a = Appearance.of(context);
 
     final children = <Widget>[
       _reveal(
@@ -394,20 +398,19 @@ class _LeagueScreenState extends State<LeagueScreen>
       const SizedBox(height: AppSpace.md),
     ];
 
-    if (entries.length <= 1 && !_playersLoading) {
+    if (!LeagueService.fieldIsCompetitive(
+          overall ? _overallPlayers.length : _realPlayers.length,
+        ) &&
+        !_playersLoading) {
       children.add(
         Padding(
           padding: const EdgeInsets.symmetric(vertical: AppSpace.lg),
-          child: Text(
-            overall
-                ? 'Ainda poucos peregrinos no ranking geral.\nPuxe para atualizar — ou caminhe hoje e volte.'
-                : 'Nesta divisão da caravana ainda há pouca gente.\nContinue a missão — o grupo cresce com quem caminha.',
-            textAlign: TextAlign.center,
-            style: AppTypography.body(
-              size: 13,
-              height: 1.4,
-              color: a.textMuted(0.7),
-            ),
+          child: _CaravanEmptyCard(
+            overall: overall,
+            onInvite: () {
+              setState(() => _tab = 1);
+              _createCompanion(context);
+            },
           ),
         ),
       );
@@ -2017,7 +2020,6 @@ class _LeaderboardBoard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final leaderSteps = entries.first.steps;
     final heading = title ??
         (weekly ? 'Esta semana' : 'Toda a jornada');
     final today = entries.where((e) => e.walkedToday).toList();
@@ -2092,10 +2094,9 @@ class _LeaderboardBoard extends StatelessWidget {
           entry: entries[i],
           rank: rank,
           weeklySteps: weekly,
-          gapToLeader: rank == 1 ? 0 : leaderSteps - entries[i].steps,
-          shareOfLeader: leaderSteps <= 0
-              ? 0
-              : (entries[i].steps / leaderSteps).clamp(0.0, 1.0),
+          gapToAbove: i == 0 ? 0 : entries[i - 1].steps - entries[i].steps,
+          showDivider:
+              i < entries.length - 1 && !entries[i + 1].isUser,
           onOpenOwnProfile: onOpenOwnProfile,
         ),
       );
@@ -2105,7 +2106,7 @@ class _LeaderboardBoard extends StatelessWidget {
     }
 
     return GlassCard(
-      padding: const EdgeInsets.fromLTRB(4, 10, 4, 8),
+      padding: const EdgeInsets.fromLTRB(6, 12, 6, 8),
       child: Column(children: rows),
     );
   }
@@ -2115,21 +2116,33 @@ class _StandingRow extends StatelessWidget {
   final LeagueEntry entry;
   final int rank;
   final bool weeklySteps;
-  final int gapToLeader;
-  final double shareOfLeader;
+  final int gapToAbove;
+  final bool showDivider;
   final VoidCallback? onOpenOwnProfile;
 
   const _StandingRow({
     required this.entry,
     required this.rank,
     required this.weeklySteps,
-    this.gapToLeader = 0,
-    this.shareOfLeader = 0,
+    this.gapToAbove = 0,
+    this.showDivider = false,
     this.onOpenOwnProfile,
   });
 
   Color _ink(AppearanceStyle a) {
     return entry.isUser ? AppColors.inkOnAccent : a.text;
+  }
+
+  Color _stepsTone(AppearanceStyle a, Color? medal) {
+    if (entry.isUser) return AppColors.inkOnAccent;
+    if (medal != null) return medal;
+    return a.text;
+  }
+
+  String get _gapLabel {
+    if (rank == 1) return 'líder';
+    if (gapToAbove <= 0) return 'empate';
+    return '$gapToAbove do ${rank - 1}º';
   }
 
   @override
@@ -2141,21 +2154,22 @@ class _StandingRow extends StatelessWidget {
       3 => AppColors.medalBronze,
       _ => null,
     };
-    final stepsTone = entry.isUser
-        ? AppColors.inkOnAccent
-        : (medal ?? AppColors.accent).withValues(alpha: 0.95);
-    final gapLabel = gapToLeader <= 0 ? 'líder' : '−$gapToLeader';
+    final stepsTone = _stepsTone(a, medal);
+    final muted = entry.isUser
+        ? AppColors.inkOnAccent.withValues(alpha: 0.62)
+        : a.textMuted(0.5);
 
     final content = Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
+        _RankMark(rank: rank, onGold: entry.isUser),
+        const SizedBox(width: 10),
         _PilgrimAvatar(
           name: entry.name,
           isUser: entry.isUser,
           live: entry.walkedToday || entry.isOnlineToday,
           size: 40,
           ring: medal,
-          rank: rank,
         ),
         const SizedBox(width: 12),
         Expanded(
@@ -2186,10 +2200,10 @@ class _StandingRow extends StatelessWidget {
                       letterSpacing: 0,
                       weight: FontWeight.w700,
                       color: entry.isUser
-                          ? AppColors.inkOnAccent.withValues(alpha: 0.62)
+                          ? muted
                           : entry.walkedToday
                           ? AppColors.teal.withValues(alpha: 0.95)
-                          : a.textMuted(0.5),
+                          : muted,
                     ),
                   ),
                 ),
@@ -2210,13 +2224,11 @@ class _StandingRow extends StatelessWidget {
               ),
             ),
             Text(
-              gapLabel,
+              _gapLabel,
               style: AppTypography.label(
                 size: 9,
                 letterSpacing: 0.2,
-                color: entry.isUser
-                    ? AppColors.inkOnAccent.withValues(alpha: 0.62)
-                    : a.textMuted(0.45),
+                color: muted,
               ),
             ),
           ],
@@ -2226,8 +2238,8 @@ class _StandingRow extends StatelessWidget {
 
     final row = entry.isUser
         ? Container(
-            margin: const EdgeInsets.symmetric(horizontal: 6, vertical: 3),
-            padding: const EdgeInsets.fromLTRB(10, 10, 10, 10),
+            margin: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
+            padding: const EdgeInsets.fromLTRB(10, 11, 12, 11),
             decoration: BoxDecoration(
               gradient: AppGradients.gold,
               borderRadius: BorderRadius.circular(AppRadii.md),
@@ -2238,34 +2250,26 @@ class _StandingRow extends StatelessWidget {
             ),
             child: content,
           )
-        : Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
-            child: Stack(
-              clipBehavior: Clip.none,
-              children: [
-                if (shareOfLeader > 0)
-                  Positioned.fill(
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(AppRadii.md),
-                      child: Align(
-                        alignment: Alignment.centerLeft,
-                        child: FractionallySizedBox(
-                          widthFactor: shareOfLeader.clamp(0.06, 1),
-                          heightFactor: 1,
-                          child: ColoredBox(
-                            color: (medal ?? AppColors.accent)
-                                .withValues(alpha: 0.12),
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(10, 10, 8, 10),
-                  child: content,
+        : Column(
+            children: [
+              Container(
+                margin: const EdgeInsets.symmetric(horizontal: 2),
+                padding: const EdgeInsets.fromLTRB(8, 11, 10, 11),
+                decoration: BoxDecoration(
+                  color: medal?.withValues(alpha: 0.07),
+                  borderRadius: BorderRadius.circular(AppRadii.md),
                 ),
-              ],
-            ),
+                child: content,
+              ),
+              if (showDivider)
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 14),
+                  child: ColoredBox(
+                    color: a.text.withValues(alpha: 0.06),
+                    child: const SizedBox(height: 1, width: double.infinity),
+                  ),
+                ),
+            ],
           );
 
     return Material(
@@ -2370,7 +2374,6 @@ class _PilgrimAvatar extends StatelessWidget {
   final bool live;
   final double size;
   final Color? ring;
-  final int? rank;
 
   const _PilgrimAvatar({
     required this.name,
@@ -2378,7 +2381,6 @@ class _PilgrimAvatar extends StatelessWidget {
     this.live = false,
     this.size = 36,
     this.ring,
-    this.rank,
   });
 
   @override
@@ -2420,12 +2422,6 @@ class _PilgrimAvatar extends StatelessWidget {
               ),
             ),
           ),
-          if (rank != null)
-            Positioned(
-              left: -3,
-              top: -3,
-              child: _RankPip(rank: rank!),
-            ),
           if (live)
             Positioned(
               right: -1,
@@ -2446,40 +2442,66 @@ class _PilgrimAvatar extends StatelessWidget {
   }
 }
 
-class _RankPip extends StatelessWidget {
+class _RankMark extends StatelessWidget {
   final int rank;
+  final bool onGold;
 
-  const _RankPip({required this.rank});
+  const _RankMark({required this.rank, this.onGold = false});
 
   @override
   Widget build(BuildContext context) {
-    final fill = switch (rank) {
+    final a = Appearance.of(context);
+    final medal = switch (rank) {
       1 => AppColors.medalGold,
       2 => AppColors.medalSilver,
       3 => AppColors.medalBronze,
-      _ => AppColors.nightElevated,
+      _ => null,
     };
-    final ink = rank <= 3 ? AppColors.medalInk : AppColors.accent;
+
+    if (medal == null) {
+      return SizedBox(
+        width: 28,
+        height: 28,
+        child: Center(
+          child: Text(
+            '$rank',
+            textAlign: TextAlign.center,
+            style: AppTypography.title(
+              size: rank >= 10 ? 12 : 14,
+              weight: FontWeight.w800,
+              color: onGold
+                  ? AppColors.inkOnAccent.withValues(alpha: 0.72)
+                  : a.textMuted(0.55),
+            ),
+          ),
+        ),
+      );
+    }
+
+    final fill = onGold ? AppColors.inkOnAccent : medal;
+    final ink = onGold ? medal : AppColors.medalInk;
+
     return Container(
-      width: 20,
-      height: 20,
+      width: 28,
+      height: 28,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         color: fill,
-        border: Border.all(color: AppColors.night, width: 1.5),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withValues(alpha: 0.35),
-            blurRadius: 4,
-            offset: const Offset(0, 1),
-          ),
-        ],
+        boxShadow: onGold
+            ? null
+            : [
+                BoxShadow(
+                  color: medal.withValues(alpha: 0.38),
+                  blurRadius: 8,
+                  offset: const Offset(0, 2),
+                ),
+              ],
       ),
       child: Center(
         child: Text(
           '$rank',
           style: AppTypography.title(
-            size: 10,
+            size: 13,
             weight: FontWeight.w900,
             color: ink,
           ),
@@ -3351,6 +3373,61 @@ class _IncomingNudgeBanner extends StatelessWidget {
                 ],
               ],
             ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _CaravanEmptyCard extends StatelessWidget {
+  final bool overall;
+  final VoidCallback onInvite;
+
+  const _CaravanEmptyCard({
+    required this.overall,
+    required this.onInvite,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return GlassCard(
+      padding: AppMetrics.cardPadding,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          const Center(
+            child: CinematicIcon(
+              glyph: CinematicGlyph.people,
+              size: 44,
+              accent: AppColors.accent,
+              glowing: false,
+            ),
+          ),
+          const SizedBox(height: 14),
+          Text(
+            overall ? 'A caravana ainda é pequena' : 'Sua divisão ainda é quieta',
+            textAlign: TextAlign.center,
+            style: AppTypography.title(size: 16, color: a.text),
+          ),
+          const SizedBox(height: 6),
+          Text(
+            'Ranking só aparece com gente de verdade. Chame um companheiro — um par já muda a caminhada.',
+            textAlign: TextAlign.center,
+            style: AppTypography.body(
+              size: 13,
+              height: 1.4,
+              weight: FontWeight.w600,
+              color: a.textMuted(0.7),
+            ),
+          ),
+          const SizedBox(height: 16),
+          CopperCta(
+            label: 'Chamar um companheiro',
+            leading: CinematicGlyph.people,
+            onTap: onInvite,
+            dense: true,
           ),
         ],
       ),

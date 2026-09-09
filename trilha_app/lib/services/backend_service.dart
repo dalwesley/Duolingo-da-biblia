@@ -636,66 +636,114 @@ class BackendService extends ChangeNotifier {
       return false;
     }
 
-    // 2) Rankings — best-effort (falha aqui não apaga o save do usuário).
-    try {
-      final batch = _db.batch();
-      final tier = league?.tierIndex ?? 0;
-      final today = _todayKey();
-      final playerPayload = {
-        'name': progress.userName,
-        'xp': progress.weeklySteps,
-        'tier': tier,
-        'lastWalkDate': progress.lastPlayedDate,
-        'lastSeenDate': today,
-        'updatedAt': FieldValue.serverTimestamp(),
-      };
-      batch.set(
-        _db.doc('leagues/$week/tiers/$tier/players/$_uid'),
-        playerPayload,
+    // 2) Rankings — best-effort. Um doc recusado não pode derrubar os outros.
+    final rankingWeek = _rankingWeekKey(progress, week);
+    final rankingMonth = progress.monthlyMonth ?? LeagueService.monthKey();
+    final today = _todayKey();
+    final tier = (league?.tierIndex ?? 0).clamp(0, 4);
+    final weeklyPayload = _rankingPayload(
+      name: progress.userName,
+      score: progress.weeklySteps,
+      lastWalkDate: progress.lastPlayedDate,
+      lastSeenDate: today,
+      extra: {'tier': tier},
+    );
+    await _putRankingDoc(
+      'leagues/$rankingWeek/tiers/$tier/players/$_uid',
+      weeklyPayload,
+    );
+    await _putRankingDoc(
+      'leagues/$rankingWeek/players/$_uid',
+      weeklyPayload,
+    );
+    final groupCode = league?.groupCode;
+    if (groupCode != null && groupCode.isNotEmpty) {
+      await _putRankingDoc(
+        'leagueGroups/$groupCode/weeks/$rankingWeek/players/$_uid',
+        weeklyPayload,
       );
-      batch.set(_db.doc('leagues/$week/players/$_uid'), playerPayload);
-      final groupCode = league?.groupCode;
-      if (groupCode != null && groupCode.isNotEmpty) {
-        batch.set(
-          _db.doc('leagueGroups/$groupCode/weeks/$week/players/$_uid'),
-          playerPayload,
-        );
-      }
-      final month = LeagueService.monthKey();
-      batch.set(_db.doc('monthlyLeagues/$month/players/$_uid'), {
-        'name': progress.userName,
-        'xp': progress.monthlySteps,
-        'lastWalkDate': progress.lastPlayedDate,
-        'lastSeenDate': today,
-        'updatedAt': FieldValue.serverTimestamp(),
-      });
-      batch.set(_db.doc('overallPlayers/$_uid'), {
-        'name': progress.userName,
-        'xp': progress.steps,
-        'lastWalkDate': progress.lastPlayedDate,
-        'lastSeenDate': today,
-        'updatedAt': FieldValue.serverTimestamp(),
-      });
-      final effectiveRoom = roomCode ?? progress.activeRoomCode;
-      if (effectiveRoom != null && effectiveRoom.isNotEmpty) {
-        batch.set(_db.doc('rooms/$effectiveRoom/members/$_uid'), {
-          'name': progress.userName,
-          'xp': progress.weeklySteps,
-          'lastWalk': today,
-          'lastWalkDate': progress.lastPlayedDate,
-          'lastSeenDate': today,
-          'updatedAt': FieldValue.serverTimestamp(),
-        }, SetOptions(merge: true));
-      }
-      await batch.commit().timeout(const Duration(seconds: 12));
-    } on TimeoutException catch (e) {
-      _authLog('saveNow rankings TIMEOUT (user ok): $e');
-      debugPrint('Timeout ao salvar rankings: $e');
-    } catch (e) {
-      _authLog('saveNow rankings FAILED (user ok): $e');
-      debugPrint('Falha ao salvar rankings: $e');
+    }
+    await _putRankingDoc(
+      'monthlyLeagues/$rankingMonth/players/$_uid',
+      _rankingPayload(
+        name: progress.userName,
+        score: progress.monthlySteps,
+        lastWalkDate: progress.lastPlayedDate,
+        lastSeenDate: today,
+      ),
+    );
+    await _putRankingDoc(
+      'overallPlayers/$_uid',
+      _rankingPayload(
+        name: progress.userName,
+        score: progress.steps,
+        lastWalkDate: progress.lastPlayedDate,
+        lastSeenDate: today,
+      ),
+    );
+    final effectiveRoom = roomCode ?? progress.activeRoomCode;
+    if (effectiveRoom != null && effectiveRoom.isNotEmpty) {
+      await _putRankingDoc(
+        'rooms/$effectiveRoom/members/$_uid',
+        {
+          ..._rankingPayload(
+            name: progress.userName,
+            score: progress.weeklySteps,
+            lastWalkDate: progress.lastPlayedDate,
+            lastSeenDate: today,
+            extra: {'lastWalk': today},
+          ),
+        },
+        merge: true,
+      );
     }
     return true;
+  }
+
+  static final _ymd = RegExp(r'^\d{4}-\d{2}-\d{2}$');
+
+  /// A regra exige que o path da semana == users/{uid}.weeklyWeek.
+  String _rankingWeekKey(ProgressService progress, String fallback) {
+    final w = progress.weeklyWeek;
+    if (w != null && _ymd.hasMatch(w)) return w;
+    return fallback;
+  }
+
+  Map<String, dynamic> _rankingPayload({
+    required String name,
+    required int score,
+    required String? lastWalkDate,
+    required String lastSeenDate,
+    Map<String, dynamic> extra = const {},
+  }) {
+    return {
+      'name': name,
+      'xp': score,
+      'steps': score,
+      'lastWalkDate': lastWalkDate,
+      'lastSeenDate': lastSeenDate,
+      'updatedAt': FieldValue.serverTimestamp(),
+      ...extra,
+    };
+  }
+
+  Future<void> _putRankingDoc(
+    String path,
+    Map<String, dynamic> data, {
+    bool merge = false,
+  }) async {
+    try {
+      await _db
+          .doc(path)
+          .set(data, merge ? SetOptions(merge: true) : SetOptions(merge: false))
+          .timeout(const Duration(seconds: 12));
+    } on TimeoutException catch (e) {
+      _authLog('saveNow ranking TIMEOUT $path: $e');
+      debugPrint('Timeout ao salvar ranking $path: $e');
+    } catch (e) {
+      _authLog('saveNow ranking FAILED $path: $e');
+      debugPrint('Falha ao salvar ranking $path: $e');
+    }
   }
 
   /// Resultado de [hydrateProgress].

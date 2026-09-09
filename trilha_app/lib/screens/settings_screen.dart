@@ -303,9 +303,10 @@ class _SettingsScreenState extends State<SettingsScreen>
                 'Meta, missões e prática',
                 progress.settings.notifications,
                 (v) async {
-                  await progress.updateSettings(
-                    progress.settings.copyWith(notifications: v),
-                  );
+                  await progress.markNotificationsPrompted(enabled: v);
+                  if (v) {
+                    await NotificationService.instance.requestOsPermission();
+                  }
                   await NotificationService.instance.syncFromProgress(progress);
                 },
                 glyph: CinematicGlyph.mail,

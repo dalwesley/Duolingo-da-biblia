@@ -65,6 +65,7 @@ class NotificationService {
   String? remoteToken;
   void Function(String token)? onRemoteToken;
   bool _remoteInitialized = false;
+  bool _remotePermissionAsked = false;
 
   /// Aceno de companhia chegou (push em primeiro plano ou toque).
   VoidCallback? onRemoteNudge;
@@ -154,22 +155,26 @@ class NotificationService {
 
   /// Registra push remoto (FCM): permissão, token e escuta.
   /// O envio do aceno é a Cloud Function `onCompanionNudge`.
-  Future<void> initRemote() async {
-    if (_remoteInitialized) return;
-    _remoteInitialized = true;
+  /// [requestPermission] só depois da 1ª celebração (ou toggle em Ajustes).
+  Future<void> initRemote({bool requestPermission = false}) async {
     try {
       final messaging = FirebaseMessaging.instance;
-      await messaging.requestPermission(alert: true, badge: true, sound: true);
-
-      final token = await messaging.getToken();
-      if (token != null) {
-        remoteToken = token;
-        onRemoteToken?.call(token);
+      if (requestPermission && !_remotePermissionAsked) {
+        _remotePermissionAsked = true;
+        await messaging.requestPermission(alert: true, badge: true, sound: true);
+        final token = await messaging.getToken();
+        if (token != null) {
+          remoteToken = token;
+          onRemoteToken?.call(token);
+        }
+        messaging.onTokenRefresh.listen((t) {
+          remoteToken = t;
+          onRemoteToken?.call(t);
+        });
       }
-      messaging.onTokenRefresh.listen((t) {
-        remoteToken = t;
-        onRemoteToken?.call(t);
-      });
+
+      if (_remoteInitialized) return;
+      _remoteInitialized = true;
 
       FirebaseMessaging.onMessage.listen(_showRemoteForeground);
       FirebaseMessaging.onMessageOpenedApp.listen(_handleRemoteTap);
@@ -178,6 +183,13 @@ class NotificationService {
     } catch (e) {
       debugPrint('NotificationService.initRemote falhou: $e');
     }
+  }
+
+  /// Pedido explícito (celebração / Ajustes) — local + FCM.
+  Future<void> requestOsPermission() async {
+    await init();
+    await _askPermission();
+    await initRemote(requestPermission: true);
   }
 
   /// Reemite o token atual (login depois do 1º frame).
@@ -241,10 +253,13 @@ class NotificationService {
   /// Reagenda lembretes conforme o progresso atual.
   Future<void> syncFromProgress(ProgressService progress) async {
     await init();
-    await _askPermission();
+    if (progress.notificationsPrompted && progress.settings.notifications) {
+      await _askPermission();
+    }
     if (!_available || !_initialized) return;
 
-    final enabled = progress.settings.notifications;
+    final enabled =
+        progress.notificationsPrompted && progress.settings.notifications;
     await _cancelAll();
     if (!enabled) {
       await cancelTrialEndingReminder();

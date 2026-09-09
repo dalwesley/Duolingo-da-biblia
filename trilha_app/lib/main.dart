@@ -88,9 +88,13 @@ class TrilhaApp extends StatelessWidget {
           },
         ),
       ],
-      child: Consumer<ProgressService>(
-        builder: (context, progress, _) {
-          SoundService.instance.setEnabled(progress.settings.sound);
+      child: Builder(
+        builder: (context) {
+          final fontScale = context.select(
+            (ProgressService p) => p.settings.fontScale,
+          );
+          final sound = context.select((ProgressService p) => p.settings.sound);
+          SoundService.instance.setEnabled(sound);
           return MaterialApp(
             title: 'STWAY',
             debugShowCheckedModeBanner: false,
@@ -104,7 +108,7 @@ class TrilhaApp extends StatelessWidget {
                 child: MediaQuery(
                   data: MediaQuery.of(context).copyWith(
                     textScaler: TextScaler.linear(
-                      progress.settings.fontScale.clamp(0.85, 1.35),
+                      fontScale.clamp(0.85, 1.35),
                     ),
                   ),
                   child: child ?? const SizedBox.shrink(),

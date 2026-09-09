@@ -1,9 +1,9 @@
 # STWAY — Documentação técnica
 
-**Atualizado:** 26 ago/2026  
+**Atualizado:** 9 set/2026  
 **Monorepo:** `trilha_app/` (Flutter) + `admin/` (Vite)  
 **Firebase project:** `trilha-biblia`  
-**App:** 1.0.22+22
+**App:** 1.0.23+23
 
 ---
 

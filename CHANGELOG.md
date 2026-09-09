@@ -9,6 +9,28 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
+## [1.0.23] — 2026-09-09
+
+### Added
+- Push de aceno na companhia (FCM + Cloud Function), mesmo com o app fechado
+- Pedido de lembrete depois da 1ª missão — não no primeiro boot
+- Convite de um par no pico da 1ª celebração
+- Desafio da temporada na Home (depois da meta do dia)
+- Paywall / RevenueCat ligado no app
+- TTS para leitura em voz alta
+- Remote Config no boot
+
+### Changed
+- Ranking da caravana: posição à esquerda, pódio ouro/prata/bronze, distância para quem está na frente — sem a barra que ia enchendo
+- Semana da caravana só promove/desce com campo real (você + 2 pares)
+- Home: desafio, risco da liga e missões do dia só depois da meta diária
+- Permissão de notificação só após o prompt (ou o toggle em Ajustes)
+- Save de ranking isolado: um documento recusado não derruba os outros
+
+### Fixed
+- Firestore aceita o mesmo placar como int ou float — o ranking inteiro deixava de gravar com `PERMISSION_DENIED`
+- Celebração não mostra “momento da caravana” quando o ranking ainda é vazio
+
 ## [1.0.22] — 2026-08-26
 
 ### Added
