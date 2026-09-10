@@ -201,7 +201,9 @@ class _HeroContinueCardState extends State<HeroContinueCard>
             ],
           ),
           child: ClipRRect(
-            borderRadius: BorderRadius.circular(AppMetrics.heroRadius - 0.5),
+            borderRadius: BorderRadius.circular(
+              (AppMetrics.heroRadius - style.borderWidth).clamp(0.0, AppMetrics.heroRadius),
+            ),
             child: Stack(
               children: [
                 Positioned.fill(

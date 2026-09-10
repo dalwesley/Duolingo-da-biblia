@@ -1,5 +1,4 @@
 import 'dart:math' as math;
-import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
@@ -241,25 +240,6 @@ class _AtmospherePainter extends CustomPainter {
         ).createShader(Rect.fromLTWH(sweepX - 28, 0, 56, size.height)),
     );
     canvas.restore();
-
-    // Borda de cristal
-    final inset = Rect.fromLTWH(1.5, 1.5, size.width - 3, size.height - 3);
-    canvas.drawRRect(
-      RRect.fromRectAndRadius(inset, const Radius.circular(26)),
-      Paint()
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = 1.8
-        ..shader = LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            Colors.white.withValues(alpha: 0.7 + breathe * 0.2),
-            AppColors.iceSoft.withValues(alpha: 0.55),
-            AppColors.ice.withValues(alpha: 0.25),
-            AppColors.iceSoft.withValues(alpha: 0.45),
-          ],
-        ).createShader(inset),
-    );
   }
 
   void _drawIceCracks(Canvas canvas, Size size, double breathe) {
@@ -883,38 +863,6 @@ class _AtmospherePainter extends CustomPainter {
         canvas.drawCircle(Offset(ox, oy), s.size * 0.45, paint);
       }
     }
-
-    // Borda de vidro — highlight + sombra interna
-    final inset = Rect.fromLTWH(1.2, 1.2, size.width - 2.4, size.height - 2.4);
-    final rrect = RRect.fromRectAndRadius(inset, const Radius.circular(26));
-
-    // Glow externo suave na borda
-    canvas.drawRRect(
-      rrect,
-      Paint()
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = 3.2
-        ..color = AppColors.accentBright.withValues(alpha: 0.12 + breathe * 0.06)
-        ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 4),
-    );
-
-    canvas.drawRRect(
-      rrect,
-      Paint()
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = 1.6
-        ..shader = ui.Gradient.linear(
-          inset.topLeft,
-          inset.bottomRight,
-          [
-            Colors.white.withValues(alpha: 0.75 + breathe * 0.15),
-            AppColors.accentBright.withValues(alpha: 0.55),
-            AppColors.primaryLight.withValues(alpha: 0.35),
-            Colors.white.withValues(alpha: 0.4),
-          ],
-          const [0.0, 0.3, 0.7, 1.0],
-        ),
-    );
   }
 
   @override
