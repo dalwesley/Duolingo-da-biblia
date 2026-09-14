@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import '../models/pilgrim_chest.dart';
 import '../models/pilgrim_medal_catalog.dart';
 import '../models/pilgrim_medals.dart';
 import '../models/bible_reading_plan.dart';
@@ -165,6 +166,15 @@ class ProgressService extends ChangeNotifier {
   List<String> claimedChests = [];
   /// Última reflexão por slug de missão.
   Map<String, String> missionReflections = {};
+
+  /// Baú do Dia — dia (YYYY-MM-DD) em que já foi aberto (1x/dia).
+  String? dailyChestOpenedDay;
+  /// Aberturas desde a última recompensa topo (ouro/mirra) — garante piso.
+  int dailyChestPity = 0;
+  /// Ids únicos de recompensas do Baú já reveladas (coleção, sem duplicar).
+  List<String> dailyChestCollectedIds = [];
+  /// Última recompensa revelada — a UI lê para mostrar "hoje você tirou X".
+  String? lastDailyChestRewardId;
 
   /// Capítulos lidos na Bíblia ("abbrev:capítulo", ex.: "gn:1").
   List<String> readBibleChapters = [];
@@ -645,6 +655,10 @@ class ProgressService extends ChangeNotifier {
     weeklyProgressMap = {};
     weeklyClaimed = [];
     claimedChests = [];
+    dailyChestOpenedDay = null;
+    dailyChestPity = 0;
+    dailyChestCollectedIds = [];
+    lastDailyChestRewardId = null;
     missionReflections = {};
     readBibleChapters = [];
     bibleBookmarks = [];
@@ -1331,6 +1345,32 @@ class ProgressService extends ChangeNotifier {
     return true;
   }
 
+  /// Baú do Dia: liberado ao completar a missão de hoje ("Um passo"),
+  /// 1 abertura por dia civil. Cosmético — nunca soma passos/XP, então
+  /// não interfere no ranking nem disputa prestígio com o Cofre de medalhas.
+  bool get dailyChestAvailable =>
+      isQuestClaimed('mission') && dailyChestOpenedDay != _todayKey();
+
+  bool get dailyChestOpenedToday => dailyChestOpenedDay == _todayKey();
+
+  PilgrimChestReward? get lastDailyChestReward => lastDailyChestRewardId == null
+      ? null
+      : PilgrimChestRewardDefs.byId(lastDailyChestRewardId!);
+
+  /// Sorteia e revela a recompensa do dia (piso garantido via pity).
+  Future<PilgrimChestReward> openDailyChest() async {
+    final result = PilgrimChestRoll.rollDaily(dailyChestPity);
+    dailyChestOpenedDay = _todayKey();
+    dailyChestPity = result.nextPity;
+    lastDailyChestRewardId = result.reward.id;
+    if (!dailyChestCollectedIds.contains(result.reward.id)) {
+      dailyChestCollectedIds = [...dailyChestCollectedIds, result.reward.id];
+    }
+    await _save();
+    notifyListeners();
+    return result.reward;
+  }
+
   Future<void> _bumpQuest(String id, {int by = 1}) async {
     _ensureQuestDay();
     DailyQuest? q;
@@ -1648,6 +1688,10 @@ class ProgressService extends ChangeNotifier {
       'weeklyProgress': weeklyProgressMap,
       'weeklyClaimed': weeklyClaimed,
       'claimedChests': claimedChests,
+      'dailyChestOpenedDay': dailyChestOpenedDay,
+      'dailyChestPity': dailyChestPity,
+      'dailyChestCollectedIds': dailyChestCollectedIds,
+      'lastDailyChestRewardId': lastDailyChestRewardId,
       'readBibleChapters': readBibleChapters,
       'bibleBookmarks': bibleBookmarks,
       'sharedVerses': sharedVerses,
@@ -1940,6 +1984,27 @@ class ProgressService extends ChangeNotifier {
           _asStringList(data['claimedChests']),
         );
       }
+      // Baú do Dia: nuvem "ganha" o dia aberto (evita 2 aberturas no mesmo
+      // dia entre aparelhos); pity nunca regride.
+      final cloudChestDay = data['dailyChestOpenedDay'] as String?;
+      if (cloudChestDay == today) {
+        dailyChestOpenedDay = today;
+      } else if (dailyChestOpenedDay != today) {
+        dailyChestOpenedDay = cloudChestDay ?? dailyChestOpenedDay;
+      }
+      if (data.containsKey('dailyChestPity')) {
+        final cloudPity = (data['dailyChestPity'] as num?)?.toInt() ?? 0;
+        dailyChestPity =
+            dailyChestPity > cloudPity ? dailyChestPity : cloudPity;
+      }
+      if (data.containsKey('dailyChestCollectedIds')) {
+        dailyChestCollectedIds = _unionStringLists(
+          dailyChestCollectedIds,
+          _asStringList(data['dailyChestCollectedIds']),
+        );
+      }
+      lastDailyChestRewardId =
+          data['lastDailyChestRewardId'] as String? ?? lastDailyChestRewardId;
       if (data.containsKey('readBibleChapters')) {
         readBibleChapters = _unionStringLists(
           readBibleChapters,
@@ -2303,6 +2368,10 @@ class ProgressService extends ChangeNotifier {
     weeklyProgressMap = {};
     weeklyClaimed = [];
     claimedChests = [];
+    dailyChestOpenedDay = null;
+    dailyChestPity = 0;
+    dailyChestCollectedIds = [];
+    lastDailyChestRewardId = null;
     missionReflections = {};
     readBibleChapters = [];
     bibleBookmarks = [];

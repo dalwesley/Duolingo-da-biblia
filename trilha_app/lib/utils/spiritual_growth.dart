@@ -76,7 +76,9 @@ class SpiritualGrowth {
     final String subtitle;
     if (perfectRecent) {
       mood = SeedMood.perfectGlow;
-      subtitle = 'Missão perfeita · marco brilhou';
+      subtitle = streak <= 0
+          ? 'Missão perfeita'
+          : 'Missão perfeita · ${base.subtitle}';
     } else if (atRisk) {
       mood = SeedMood.atRisk;
       subtitle = DustCopy.uiRiskLine(hasFreeze: freezeAvailable);

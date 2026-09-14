@@ -95,6 +95,8 @@ class ExercisePanel extends StatefulWidget {
   final int total;
   final String? insightFallback;
 
+  final VoidCallback? onResolvedContinue;
+
   const ExercisePanel({
     super.key,
     required this.exercise,
@@ -111,6 +113,7 @@ class ExercisePanel extends StatefulWidget {
     this.outOfLamps = false,
     this.lamps = 5,
     this.insightFallback,
+    this.onResolvedContinue,
   });
 
   @override
@@ -385,6 +388,8 @@ class _ExercisePanelState extends State<ExercisePanel>
           passageA: ex.passageA,
           passageB: ex.passageB,
           accent: widget.accent,
+          resolved: widget.isCorrect == true,
+          insight: (widget.insightFallback ?? '').trim(),
         );
       case ExerciseType.tap:
       case ExerciseType.findInText:
@@ -458,6 +463,7 @@ class _ExercisePanelState extends State<ExercisePanel>
         if (embedded) return const [];
         return _optionBank(ex.effectiveOptions, stacked: true);
       case ExerciseType.connect:
+        if (widget.isCorrect == true) return const [];
         return _optionBank(ex.effectiveOptions, stacked: true);
       case ExerciseType.order:
       case ExerciseType.match:
@@ -659,6 +665,9 @@ class _ExercisePanelState extends State<ExercisePanel>
 
   Widget _footer(Exercise ex, bool canConfirm) {
     final needsConfirm = ex.type == ExerciseType.order;
+    final cliqueContinue = widget.isCorrect == true &&
+        widget.onResolvedContinue != null &&
+        (ex.type == ExerciseType.connect && widget.index >= widget.total - 1);
 
     return Padding(
       padding: const EdgeInsets.only(top: AppSpace.sm, bottom: AppSpace.md),
@@ -684,7 +693,18 @@ class _ExercisePanelState extends State<ExercisePanel>
               ),
             ),
           const Spacer(),
-          if (needsConfirm)
+          if (cliqueContinue)
+            CopperCta(
+              label: 'Seguir',
+              onTap: widget.onResolvedContinue,
+              trailing: null,
+              expanded: false,
+              padding: const EdgeInsets.symmetric(
+                horizontal: 22,
+                vertical: 12,
+              ),
+            )
+          else if (needsConfirm)
             Opacity(
               opacity: canConfirm ? 1 : 0.45,
               child: CopperCta(
@@ -704,7 +724,8 @@ class _ExercisePanelState extends State<ExercisePanel>
   }
 
   _OptState _state(String id) {
-    if (widget.showFeedback && widget.selected != null) {
+    final resolved = widget.selected != null && widget.isCorrect != null;
+    if (resolved) {
       final correct = widget.exercise.checkAnswer(widget.selected!);
       if (widget.exercise.type == ExerciseType.order ||
           widget.exercise.type == ExerciseType.match) {
@@ -987,72 +1008,138 @@ class _BridgePassages extends StatelessWidget {
   final ExercisePassage? passageA;
   final ExercisePassage? passageB;
   final Color accent;
+  final bool resolved;
+  final String insight;
 
   const _BridgePassages({
     required this.accent,
     this.passageA,
     this.passageB,
+    this.resolved = false,
+    this.insight = '',
   });
-
-  Widget _verse(ExercisePassage passage) {
-    final ref = passage.ref.trim();
-    return Column(
-      children: [
-        if (ref.isNotEmpty) ...[
-          _StudyRefChip(reference: ref, accent: accent, compact: true),
-          const SizedBox(height: 12),
-        ],
-        Wrap(
-          spacing: 5,
-          runSpacing: 12,
-          alignment: WrapAlignment.center,
-          crossAxisAlignment: WrapCrossAlignment.center,
-          children: _verseWords(passage.text),
-        ),
-      ],
-    );
-  }
 
   @override
   Widget build(BuildContext context) {
+    final b = passageB;
+    final bIsInsight = b != null &&
+        (b.ref.trim().toLowerCase() == 'contexto' ||
+            (insight.isNotEmpty &&
+                b.text.trim().toLowerCase() == insight.toLowerCase()));
+    final showInsight = resolved && insight.isNotEmpty && !bIsInsight;
+
     return _Manuscript(
       accent: accent,
       child: Column(
         children: [
-          if (passageA != null) _verse(passageA!),
+          if (passageA != null) _bridgeVerse(passageA!, accent, hoje: false),
           if (passageA != null && passageB != null)
-            Padding(
-              padding: const EdgeInsets.symmetric(vertical: 18),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: Divider(
-                      color: Colors.white.withValues(alpha: 0.12),
-                      height: 1,
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 12),
-                    child: Container(
-                      width: 6,
-                      height: 6,
-                      decoration: BoxDecoration(
-                        color: accent,
-                        shape: BoxShape.circle,
-                      ),
-                    ),
-                  ),
-                  Expanded(
-                    child: Divider(
-                      color: Colors.white.withValues(alpha: 0.12),
-                      height: 1,
-                    ),
-                  ),
-                ],
+            _BridgeSnap(accent: accent, resolved: resolved),
+          if (passageB != null)
+            _bridgeVerse(passageB!, accent, hoje: resolved && bIsInsight),
+          if (showInsight) ...[
+            const SizedBox(height: 18),
+            Text(
+              'HOJE',
+              style: AppTypography.label(
+                size: 11,
+                letterSpacing: 2.2,
+                color: accent,
               ),
             ),
-          if (passageB != null) _verse(passageB!),
+            const SizedBox(height: 8),
+            Text(
+              insight,
+              textAlign: TextAlign.center,
+              style: AppTypography.display(size: 22, height: 1.28),
+            ),
+          ],
         ],
+      ),
+    );
+  }
+}
+
+Widget _bridgeVerse(
+  ExercisePassage passage,
+  Color accent, {
+  required bool hoje,
+}) {
+  final ref = passage.ref.trim();
+  Widget? head;
+  if (hoje) {
+    head = Text(
+      'HOJE',
+      style: AppTypography.label(
+        size: 11,
+        letterSpacing: 2.2,
+        color: accent,
+      ),
+    );
+  } else if (ref.isNotEmpty) {
+    head = _StudyRefChip(reference: ref, accent: accent, compact: true);
+  }
+  return Column(
+    children: [
+      if (head != null) ...[head, const SizedBox(height: 12)],
+      Wrap(
+        spacing: 5,
+        runSpacing: 12,
+        alignment: WrapAlignment.center,
+        crossAxisAlignment: WrapCrossAlignment.center,
+        children: _verseWords(passage.text),
+      ),
+    ],
+  );
+}
+
+class _BridgeSnap extends StatelessWidget {
+  final Color accent;
+  final bool resolved;
+
+  const _BridgeSnap({required this.accent, required this.resolved});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 18),
+      child: TweenAnimationBuilder<double>(
+        key: ValueKey(resolved),
+        tween: Tween(begin: 0.35, end: resolved ? 1.0 : 0.35),
+        duration: const Duration(milliseconds: 700),
+        curve: Curves.easeOutCubic,
+        builder: (context, t, _) {
+          final line = Color.lerp(
+            Colors.white.withValues(alpha: 0.12),
+            accent,
+            t,
+          )!;
+          return Row(
+            children: [
+              Expanded(
+                child: Divider(color: line, height: 1, thickness: 1 + t),
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 12),
+                child: Container(
+                  width: 6 + 4 * t,
+                  height: 6 + 4 * t,
+                  decoration: BoxDecoration(
+                    color: Color.lerp(
+                      accent.withValues(alpha: 0.55),
+                      accent,
+                      t,
+                    ),
+                    shape: BoxShape.circle,
+                  ),
+                ),
+              ),
+              Expanded(
+                child: Divider(color: line, height: 1, thickness: 1 + t),
+              ),
+            ],
+          );
+        },
       ),
     );
   }

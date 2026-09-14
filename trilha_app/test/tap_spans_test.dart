@@ -111,6 +111,7 @@ void main() {
         QuestionOption(id: 'c', text: 'estava'),
       ],
     );
+    expect(ex.prefersVerseTap, isFalse);
     expect(ex.usesCompletePalco, isTrue);
     expect(ex.palcoTemplate, 'No ___, Deus criou os céus e a terra. A terra, porém, estava sem forma e vazia.');
     expect(ex.displayCue, 'Em Gênesis 1:1–2, toque a palavra que falta');

@@ -231,6 +231,18 @@ class Exercise {
     return _tapTemplateFromPassage();
   }
 
+  /// Toque no manuscrito só quando NÃO há lacuna — a lacuna + chips já era o gesto certo.
+  bool get prefersVerseTap {
+    if (type != ExerciseType.tap && type != ExerciseType.findInText) {
+      return false;
+    }
+    if (passageA != null || passageB != null) return false;
+    if ((palcoTemplate ?? '').contains('___')) return false;
+    final text = (passageText ?? '').trim();
+    if (text.isEmpty) return false;
+    return optionsEmbeddedIn(text).isNotEmpty;
+  }
+
   bool get usesCompletePalco =>
       type == ExerciseType.complete ||
       (type == ExerciseType.tap && (palcoTemplate ?? '').contains('___'));
@@ -244,7 +256,7 @@ class Exercise {
     for (final c in candidates) {
       if (_isGenericTaskCue(c)) continue;
       var text = type == ExerciseType.trueFalse ? vfClaim(c) : c;
-      if (usesCompletePalco && type == ExerciseType.tap) {
+      if (type == ExerciseType.tap) {
         text = _stripQuotedCloze(text);
       }
       return text;

@@ -26,7 +26,6 @@ import '../widgets/confetti_overlay.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/invite_qr_sheet.dart';
-import '../widgets/living_seed_card.dart';
 import '../widgets/mascot_bubble.dart';
 import '../widgets/share_streak_button.dart';
 import '../widgets/streak_repair_banner.dart';
@@ -689,16 +688,6 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                       ),
                                     ),
                                   ),
-                                  if (widget.perfect) ...[
-                                    const SizedBox(height: AppSpace.md),
-                                    FadeTransition(
-                                      opacity: _statsOpacity,
-                                      child: LivingSeedCard(
-                                        perfectRecent: true,
-                                        compact: true,
-                                      ),
-                                    ),
-                                  ],
                                   if (showModeUp) ...[
                                     const SizedBox(height: AppSpace.lg),
                                     FadeTransition(

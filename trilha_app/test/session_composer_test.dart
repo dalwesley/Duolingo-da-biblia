@@ -140,6 +140,7 @@ void main() {
       );
       final ex = SessionComposer.fromBankQuestion(bq);
       expect(ex.options.map((o) => o.text), ['princípio', 'terra', 'estava']);
+      expect(ex.prefersVerseTap, isFalse);
       expect(ex.usesCompletePalco, isTrue);
       expect(ex.palcoTemplate, contains('___'));
       expect(ex.displayCue, 'Em Gênesis 1:1–2, toque a palavra que falta');

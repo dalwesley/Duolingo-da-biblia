@@ -78,6 +78,7 @@ class _LessonScreenState extends State<LessonScreen>
   bool _hintUsed = false;
   Set<String> _eliminated = {};
   bool _outOfLamps = false;
+  bool _insightOnConnect = false;
 
   late final AnimationController _questionEnter;
   late final AnimationController _impactFlash;
@@ -428,7 +429,23 @@ class _LessonScreenState extends State<LessonScreen>
       _showFeedback = false;
     });
 
-    await Future.delayed(Duration(milliseconds: correct ? 280 : 320));
+    if (correct) {
+      final lastConnect = ex.type == ExerciseType.connect &&
+          _questionIndex >= _itemCount - 1;
+      if (lastConnect) {
+        _insightOnConnect = _closingInsight.trim().isNotEmpty;
+        _busy = false;
+        return;
+      }
+      await Future.delayed(
+        Duration(milliseconds: ex.type == ExerciseType.connect ? 900 : 640),
+      );
+      if (mounted) _continue();
+      _busy = false;
+      return;
+    }
+
+    await Future.delayed(const Duration(milliseconds: 320));
     if (mounted) setState(() => _showFeedback = true);
     _busy = false;
   }
@@ -466,6 +483,7 @@ class _LessonScreenState extends State<LessonScreen>
         _phase != _Phase.micro &&
         _phase != _Phase.insight &&
         !widget.practiceMode &&
+        !_insightOnConnect &&
         _canOfferMicro()) {
       setState(() {
         _celebrationForced = forced;
@@ -476,7 +494,9 @@ class _LessonScreenState extends State<LessonScreen>
       });
       return;
     }
-    if (_closingInsight.trim().isNotEmpty && _phase != _Phase.insight) {
+    if (_closingInsight.trim().isNotEmpty &&
+        _phase != _Phase.insight &&
+        !_insightOnConnect) {
       setState(() {
         _celebrationForced = forced;
         _showFeedback = false;
@@ -562,7 +582,7 @@ class _LessonScreenState extends State<LessonScreen>
     }
     if (!mounted) return;
     // Micro antes do insight — insight fecha a sessão.
-    if (_closingInsight.trim().isNotEmpty) {
+    if (_closingInsight.trim().isNotEmpty && !_insightOnConnect) {
       setState(() {
         _showFeedback = false;
         _selected = null;
@@ -786,6 +806,12 @@ class _LessonScreenState extends State<LessonScreen>
                           index: _questionIndex,
                           total: total,
                           insightFallback: mission.centralInsight,
+                          onResolvedContinue:
+                              _exercise.type == ExerciseType.connect &&
+                                  _isCorrect == true &&
+                                  _questionIndex >= total - 1
+                              ? _continue
+                              : null,
                         ),
                         _Phase.micro => () {
                           final v = _microVerse();
@@ -1110,10 +1136,25 @@ class _ExerciseFeedbackOverlay extends StatefulWidget {
 class _ExerciseFeedbackOverlayState extends State<_ExerciseFeedbackOverlay> {
   String? _verseText;
 
+  static final _verdictPrefix = RegExp(
+    r'^(certo|correto|isso|sim|errado|não|nao|quase)\s*[:.!—–-]\s*',
+    caseSensitive: false,
+  );
+
+  bool get _needsEvidence => !widget.isCorrect || widget.outOfLamps;
+
   @override
   void initState() {
     super.initState();
-    _loadVerse();
+    if (_needsEvidence) _loadVerse();
+  }
+
+  String _compactFeedback(String raw) {
+    final t = raw.trim();
+    if (t.isEmpty) return t;
+    final stripped = t.replaceFirst(_verdictPrefix, '');
+    if (stripped.isEmpty || stripped == t) return t;
+    return stripped[0].toUpperCase() + stripped.substring(1);
   }
 
   Future<void> _loadVerse() async {
@@ -1127,6 +1168,7 @@ class _ExerciseFeedbackOverlayState extends State<_ExerciseFeedbackOverlay> {
       setState(() => _verseText = SessionComposer.clipFeedbackPassage(
             existing,
             hint: hint,
+            maxWords: 16,
           ));
       return;
     }
@@ -1137,7 +1179,48 @@ class _ExerciseFeedbackOverlayState extends State<_ExerciseFeedbackOverlay> {
     setState(() => _verseText = SessionComposer.clipFeedbackPassage(
           full.trim(),
           hint: hint,
+          maxWords: 16,
         ));
+  }
+
+  Future<void> _report() async {
+    final exercise = widget.exercise;
+    String? optText(String id) {
+      for (final o in exercise.options) {
+        if (o.id == id) return o.text;
+      }
+      return null;
+    }
+
+    final ok = await showQuestionReportSheet(
+      context,
+      buildDraft: (category, comment) => QuestionReportDraft(
+        questionId: exercise.id,
+        questionText: exercise.prompt,
+        verseRef: exercise.reference,
+        selectedOptionId: widget.selected,
+        selectedOptionText: optText(widget.selected),
+        correctOptionId: exercise.correctAnswer,
+        correctOptionText: optText(exercise.correctAnswer),
+        userWasCorrect: widget.isCorrect,
+        missionSlug: widget.missionSlug,
+        trailSlug: widget.trailSlug,
+        difficulty: widget.difficulty,
+        practiceMode: widget.practiceMode,
+        category: category,
+        comment: comment,
+      ),
+    );
+    if (!mounted || !ok) return;
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text(
+          'Relato enviado. Obrigado.',
+          style: AppTypography.body(color: AppColors.textOnDark),
+        ),
+        backgroundColor: AppColors.nightElevated,
+      ),
+    );
   }
 
   @override
@@ -1148,19 +1231,22 @@ class _ExerciseFeedbackOverlayState extends State<_ExerciseFeedbackOverlay> {
     final outOfLamps = widget.outOfLamps;
     final color = isCorrect ? accent : AppColors.error;
     final bottom = MediaQuery.of(context).padding.bottom;
-    final feedback = exercise.feedbackFor(widget.selected, correct: isCorrect);
+    final feedback = _compactFeedback(
+      exercise.feedbackFor(widget.selected, correct: isCorrect),
+    );
     final title = outOfLamps
         ? 'Sem lâmpadas'
         : isCorrect
-        ? 'Acertou!'
-        : 'Quase';
+            ? 'Acertou!'
+            : 'Quase';
     final cta = outOfLamps
         ? 'ENCERRAR COM PASSOS PARCIAIS'
         : isCorrect
-        ? (widget.isLast ? 'SEGUIR' : 'CONTINUAR')
-        : 'TENTAR DE NOVO';
+            ? (widget.isLast ? 'SEGUIR' : 'CONTINUAR')
+            : 'TENTAR DE NOVO';
     final ref = (exercise.reference ?? '').trim();
     final verse = (_verseText ?? '').trim();
+    final showVerse = _needsEvidence && (ref.isNotEmpty || verse.isNotEmpty);
 
     return Positioned.fill(
       child: Container(
@@ -1177,13 +1263,13 @@ class _ExerciseFeedbackOverlayState extends State<_ExerciseFeedbackOverlay> {
             child: Container(
               width: double.infinity,
               constraints: BoxConstraints(
-                maxHeight: MediaQuery.of(context).size.height * 0.62,
+                maxHeight: MediaQuery.of(context).size.height * 0.42,
               ),
               padding: EdgeInsets.fromLTRB(
                 AppSpace.screen,
-                AppSpace.lg,
+                AppSpace.md,
                 AppSpace.screen,
-                AppSpace.lg + bottom,
+                AppSpace.md + bottom,
               ),
               decoration: BoxDecoration(
                 gradient: LinearGradient(
@@ -1210,16 +1296,16 @@ class _ExerciseFeedbackOverlayState extends State<_ExerciseFeedbackOverlay> {
                   Row(
                     children: [
                       Container(
-                        width: 52,
-                        height: 52,
+                        width: 40,
+                        height: 40,
                         decoration: BoxDecoration(
                           shape: BoxShape.circle,
                           color: color,
                           boxShadow: [
                             BoxShadow(
                               color: color.withValues(alpha: 0.35),
-                              blurRadius: 16,
-                              offset: const Offset(0, 4),
+                              blurRadius: 12,
+                              offset: const Offset(0, 3),
                             ),
                           ],
                         ),
@@ -1228,189 +1314,96 @@ class _ExerciseFeedbackOverlayState extends State<_ExerciseFeedbackOverlay> {
                             glyph: outOfLamps
                                 ? CinematicGlyph.frost
                                 : isCorrect
-                                ? CinematicGlyph.check
-                                : CinematicGlyph.book,
-                            size: 26,
+                                    ? CinematicGlyph.check
+                                    : CinematicGlyph.book,
+                            size: 22,
                             accent: AppColors.inkOnAccent,
                             framed: false,
                           ),
                         ),
                       ),
-                      const SizedBox(width: 14),
+                      const SizedBox(width: 12),
                       Expanded(
                         child: Text(
                           title,
-                          style: AppTypography.display(size: 28, color: color),
+                          style: AppTypography.display(size: 22, color: color),
+                        ),
+                      ),
+                      IconButton(
+                        tooltip: 'Relatar problema nesta pergunta',
+                        onPressed: _report,
+                        visualDensity: VisualDensity.compact,
+                        padding: EdgeInsets.zero,
+                        constraints: const BoxConstraints(
+                          minWidth: 36,
+                          minHeight: 36,
+                        ),
+                        icon: Icon(
+                          Icons.flag_outlined,
+                          size: 20,
+                          color: AppColors.textOnDark.withValues(alpha: 0.42),
                         ),
                       ),
                     ],
                   ),
-                  if (feedback.trim().isNotEmpty ||
-                      ref.isNotEmpty ||
-                      verse.isNotEmpty) ...[
-                    const SizedBox(height: AppSpace.md),
-                    ConstrainedBox(
-                      constraints: BoxConstraints(
-                        maxHeight: MediaQuery.of(context).size.height * 0.28,
+                  if (feedback.isNotEmpty) ...[
+                    const SizedBox(height: 8),
+                    Text(
+                      feedback,
+                      maxLines: 3,
+                      overflow: TextOverflow.ellipsis,
+                      style: AppTypography.body(
+                        size: 15,
+                        weight: FontWeight.w600,
+                        height: 1.35,
+                        color: AppColors.textOnDark.withValues(alpha: 0.88),
                       ),
-                      child: SingleChildScrollView(
-                        physics: const BouncingScrollPhysics(),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.stretch,
-                          children: [
-                            if (feedback.trim().isNotEmpty)
-                              Text(
-                                feedback,
-                                style: AppTypography.body(
-                                  size: 18,
-                                  weight: FontWeight.w600,
-                                  height: 1.45,
-                                  color: AppColors.textOnDark
-                                      .withValues(alpha: 0.95),
-                                ),
-                              ),
-                            if (!isCorrect &&
-                                !outOfLamps &&
-                                (exercise.retryHint?.trim().isNotEmpty ??
-                                    false) &&
-                                feedback != exercise.retryHint!.trim()) ...[
-                              const SizedBox(height: AppSpace.sm),
-                              Text(
-                                exercise.retryHint!,
-                                style: AppTypography.body(
-                                  size: 15,
-                                  height: 1.4,
-                                  color: AppColors.textOnDark
-                                      .withValues(alpha: 0.78),
-                                ),
-                              ),
-                            ],
-                            if (ref.isNotEmpty || verse.isNotEmpty) ...[
-                              SizedBox(
-                                height: feedback.trim().isNotEmpty
-                                    ? AppSpace.md
-                                    : 0,
-                              ),
-                              Container(
-                                width: double.infinity,
-                                padding: const EdgeInsets.fromLTRB(
-                                  14,
-                                  12,
-                                  14,
-                                  14,
-                                ),
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(16),
-                                  color: Colors.white.withValues(alpha: 0.06),
-                                  border: Border.all(
-                                    color: color.withValues(alpha: 0.28),
-                                  ),
-                                ),
-                                child: Row(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Container(
-                                      width: 3,
-                                      height: 52,
-                                      margin: const EdgeInsets.only(top: 2),
-                                      decoration: BoxDecoration(
-                                        color: color,
-                                        borderRadius: BorderRadius.circular(2),
-                                      ),
-                                    ),
-                                    const SizedBox(width: 12),
-                                    Expanded(
-                                      child: Column(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          if (ref.isNotEmpty)
-                                            Text(
-                                              ref,
-                                              style: AppTypography.label(
-                                                size: 11,
-                                                letterSpacing: 1.1,
-                                                color: color,
-                                              ),
-                                            ),
-                                          if (verse.isNotEmpty) ...[
-                                            if (ref.isNotEmpty)
-                                              const SizedBox(height: 8),
-                                            Text(
-                                              verse,
-                                              style: AppTypography.verse(
-                                                size: 19,
-                                                weight: FontWeight.w600,
-                                                height: 1.55,
-                                                color: AppColors.textOnDark
-                                                    .withValues(alpha: 0.94),
-                                              ),
-                                            ),
-                                          ],
-                                        ],
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ],
+                    ),
+                  ],
+                  if (showVerse) ...[
+                    const SizedBox(height: 10),
+                    Container(
+                      width: double.infinity,
+                      padding: const EdgeInsets.fromLTRB(12, 8, 12, 10),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(12),
+                        color: Colors.white.withValues(alpha: 0.06),
+                        border: Border.all(
+                          color: color.withValues(alpha: 0.22),
                         ),
+                      ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          if (ref.isNotEmpty)
+                            Text(
+                              ref,
+                              style: AppTypography.label(
+                                size: 11,
+                                letterSpacing: 1.1,
+                                color: color,
+                              ),
+                            ),
+                          if (verse.isNotEmpty) ...[
+                            if (ref.isNotEmpty) const SizedBox(height: 4),
+                            Text(
+                              verse,
+                              maxLines: 2,
+                              overflow: TextOverflow.ellipsis,
+                              style: AppTypography.verse(
+                                size: 16,
+                                weight: FontWeight.w600,
+                                height: 1.35,
+                                color: AppColors.textOnDark
+                                    .withValues(alpha: 0.9),
+                              ),
+                            ),
+                          ],
+                        ],
                       ),
                     ),
                   ],
                   const SizedBox(height: AppSpace.md),
-                  TextButton(
-                    onPressed: () async {
-                      final exercise = widget.exercise;
-                      String? optText(String id) {
-                        for (final o in exercise.options) {
-                          if (o.id == id) return o.text;
-                        }
-                        return null;
-                      }
-
-                      final ok = await showQuestionReportSheet(
-                        context,
-                        buildDraft: (category, comment) => QuestionReportDraft(
-                          questionId: exercise.id,
-                          questionText: exercise.prompt,
-                          verseRef: exercise.reference,
-                          selectedOptionId: widget.selected,
-                          selectedOptionText: optText(widget.selected),
-                          correctOptionId: exercise.correctAnswer,
-                          correctOptionText: optText(exercise.correctAnswer),
-                          userWasCorrect: widget.isCorrect,
-                          missionSlug: widget.missionSlug,
-                          trailSlug: widget.trailSlug,
-                          difficulty: widget.difficulty,
-                          practiceMode: widget.practiceMode,
-                          category: category,
-                          comment: comment,
-                        ),
-                      );
-                      if (!context.mounted || !ok) return;
-                      ScaffoldMessenger.of(context).showSnackBar(
-                        SnackBar(
-                          content: Text(
-                            'Relato enviado. Obrigado.',
-                            style: AppTypography.body(
-                              color: AppColors.textOnDark,
-                            ),
-                          ),
-                          backgroundColor: AppColors.nightElevated,
-                        ),
-                      );
-                    },
-                    child: Text(
-                      'Relatar problema nesta pergunta',
-                      style: AppTypography.label(
-                        size: 12,
-                        color: AppColors.textOnDark.withValues(alpha: 0.55),
-                      ),
-                    ),
-                  ),
-                  const SizedBox(height: AppSpace.sm),
                   CopperCta(label: cta, onTap: widget.onContinue),
                 ],
               ),

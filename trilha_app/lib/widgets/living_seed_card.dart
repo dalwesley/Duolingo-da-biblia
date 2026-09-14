@@ -107,13 +107,26 @@ class LivingSeedCard extends StatelessWidget {
             ),
           ),
           if (progress.streak > 0)
-            Text(
-              '${progress.streak}',
-              style: AppTypography.display(
-                size: 22,
-                weight: FontWeight.w900,
-                color: accent,
-              ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Text(
+                  '${progress.streak}',
+                  style: AppTypography.display(
+                    size: 22,
+                    weight: FontWeight.w900,
+                    color: accent,
+                    height: 1,
+                  ),
+                ),
+                Text(
+                  progress.streak == 1 ? 'dia' : 'dias',
+                  style: AppTypography.label(
+                    size: 10,
+                    color: a.textMuted(0.55),
+                  ),
+                ),
+              ],
             ),
         ],
       ),
