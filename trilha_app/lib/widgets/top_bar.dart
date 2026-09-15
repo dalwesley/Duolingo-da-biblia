@@ -61,6 +61,9 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
   final VoidCallback? onTrailingTap;
   final CinematicGlyph? trailingGlyph;
 
+  /// Slot livre à direita (ex.: lâmpadas no treino). Ganha de [onTrailingTap].
+  final Widget? trailing;
+
   const TopBar({
     super.key,
     required this.title,
@@ -79,6 +82,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
     this.chromeAccent,
     this.onTrailingTap,
     this.trailingGlyph,
+    this.trailing,
   });
 
   @override
@@ -114,6 +118,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
               chromeAccent: mark,
               onTrailingTap: onTrailingTap,
               trailingGlyph: trailingGlyph,
+              trailing: trailing,
             )
           : AppBar(
               primary: true,
@@ -229,6 +234,7 @@ class _InlineChrome extends StatelessWidget {
   final Color chromeAccent;
   final VoidCallback? onTrailingTap;
   final CinematicGlyph? trailingGlyph;
+  final Widget? trailing;
 
   const _InlineChrome({
     required this.appearance,
@@ -248,6 +254,7 @@ class _InlineChrome extends StatelessWidget {
     required this.chromeAccent,
     this.onTrailingTap,
     this.trailingGlyph,
+    this.trailing,
   });
 
   @override
@@ -301,7 +308,10 @@ class _InlineChrome extends StatelessWidget {
                 onDark: onDark,
               ),
             ),
-            if (showTrailingAvatar) ...[
+            if (trailing != null) ...[
+              const SizedBox(width: 8),
+              trailing!,
+            ] else if (showTrailingAvatar) ...[
               const SizedBox(width: 8),
               UserAvatar(photoUrl: photoUrl, name: userName, radius: 16),
             ] else if (onTrailingTap != null) ...[

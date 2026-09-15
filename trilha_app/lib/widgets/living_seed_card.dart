@@ -23,10 +23,10 @@ class LivingSeedCard extends StatelessWidget {
   CinematicGlyph _glyph(GrowthStage stage) {
     return switch (stage) {
       GrowthStage.seed => CinematicGlyph.seed,
-      GrowthStage.sprout => CinematicGlyph.flame,
-      GrowthStage.sapling => CinematicGlyph.path,
-      GrowthStage.olive => CinematicGlyph.tree,
-      GrowthStage.lamp => CinematicGlyph.lamp,
+      GrowthStage.sprout => CinematicGlyph.spark,
+      GrowthStage.branch => CinematicGlyph.rise,
+      GrowthStage.tree => CinematicGlyph.tree,
+      GrowthStage.fruit => CinematicGlyph.sun,
     };
   }
 
@@ -42,9 +42,9 @@ class LivingSeedCard extends StatelessWidget {
       SeedMood.calm => switch (growth.stage) {
           GrowthStage.seed => AppColors.cedar,
           GrowthStage.sprout => AppColors.ember,
-          GrowthStage.sapling => AppColors.accent,
-          GrowthStage.olive => AppColors.cedar,
-          GrowthStage.lamp => AppColors.accent,
+          GrowthStage.branch => AppColors.accent,
+          GrowthStage.tree => AppColors.cedar,
+          GrowthStage.fruit => AppColors.accent,
         },
     };
   }
@@ -183,7 +183,7 @@ class LivingSeedCard extends StatelessWidget {
                     const SizedBox(height: 4),
                     Text(
                       'Cada dia seguido sobe um marco — '
-                      'Semente → Broto → Muda → Oliveira → Lâmpada.',
+                      'Semente → Broto → Ramo → Árvore → Fruto.',
                       style: AppTypography.body(
                         size: 12,
                         height: 1.35,

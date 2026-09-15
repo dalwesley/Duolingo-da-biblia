@@ -276,7 +276,6 @@ class WeeklyQuestsCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
-    final a = Appearance.of(context);
 
     return GlassCard(
       padding: AppMetrics.cardPadding,
@@ -292,79 +291,95 @@ class WeeklyQuestsCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 12),
-          ...WeeklyQuestDefs.all.map((q) {
-            final value = progress.weeklyQuestProgress(q.id);
-            final claimed = progress.isWeeklyQuestClaimed(q.id);
-            final done = claimed || value >= q.target;
-            final pct = (value / q.target).clamp(0.0, 1.0);
-            final tone = claimed
-                ? AppColors.teal
-                : CinematicGlyphResolver.accentForQuest(q.id);
-
-            return Padding(
-              padding: const EdgeInsets.only(bottom: 10),
-              child: Row(
-                children: [
-                  CinematicIcon(
-                    glyph: CinematicGlyphResolver.forQuest(q.id),
-                    size: 34,
-                    accent: tone,
-                    glowing: false,
-                  ),
-                  const SizedBox(width: 10),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          q.title,
-                          style:
-                              AppTypography.title(
-                                size: 13,
-                                weight: FontWeight.w800,
-                                color: a.text.withValues(
-                                  alpha: claimed ? 0.45 : 0.95,
-                                ),
-                              ).copyWith(
-                                decoration: claimed
-                                    ? TextDecoration.lineThrough
-                                    : null,
-                              ),
-                        ),
-                        const SizedBox(height: 2),
-                        Text(
-                          '${value.clamp(0, q.target)}/${q.target} · ${q.subtitle}',
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: AppTypography.body(
-                            size: 11,
-                            color: a.textMuted(0.5),
-                          ),
-                        ),
-                        const SizedBox(height: 6),
-                        AppProgressBar(
-                          value: pct,
-                          color: tone,
-                          trackColor: tone.withValues(alpha: 0.14),
-                        ),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(width: 10),
-                  if (done)
-                    const CinematicIcon(
-                      glyph: CinematicGlyph.check,
-                      size: 22,
-                      accent: AppColors.teal,
-                    )
-                  else
-                    CountBadge('+${q.stepsReward}', filled: true, color: tone),
-                ],
-              ),
-            );
-          }),
+          for (var i = 0; i < WeeklyQuestDefs.all.length; i++) ...[
+            if (i > 0) const SizedBox(height: 12),
+            _WeeklyQuestRow(
+              quest: WeeklyQuestDefs.all[i],
+              progress: progress,
+            ),
+          ],
         ],
       ),
+    );
+  }
+}
+
+class _WeeklyQuestRow extends StatelessWidget {
+  final DailyQuest quest;
+  final ProgressService progress;
+
+  const _WeeklyQuestRow({required this.quest, required this.progress});
+
+  static const _rewardSlot = 56.0;
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final value = progress.weeklyQuestProgress(quest.id);
+    final claimed = progress.isWeeklyQuestClaimed(quest.id);
+    final done = claimed || value >= quest.target;
+    final pct = (value / quest.target).clamp(0.0, 1.0);
+    final tone = claimed
+        ? AppColors.teal
+        : CinematicGlyphResolver.accentForQuest(quest.id);
+    final bar = claimed ? AppColors.teal : AppColors.accent;
+
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        CinematicIcon(
+          glyph: CinematicGlyphResolver.forQuest(quest.id),
+          size: 34,
+          accent: tone,
+          glowing: false,
+        ),
+        const SizedBox(width: 10),
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                quest.title,
+                style:
+                    AppTypography.title(
+                      size: 13,
+                      weight: FontWeight.w800,
+                      color: a.text.withValues(alpha: claimed ? 0.45 : 0.95),
+                    ).copyWith(
+                      decoration: claimed ? TextDecoration.lineThrough : null,
+                    ),
+              ),
+              const SizedBox(height: 2),
+              Text(
+                '${value.clamp(0, quest.target)}/${quest.target} · ${quest.subtitle}',
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: AppTypography.body(size: 11, color: a.textMuted(0.5)),
+              ),
+              const SizedBox(height: 6),
+              AppProgressBar(value: pct, color: bar),
+            ],
+          ),
+        ),
+        const SizedBox(width: 10),
+        SizedBox(
+          width: _rewardSlot,
+          child: Align(
+            alignment: Alignment.centerRight,
+            child: done
+                ? const CinematicIcon(
+                    glyph: CinematicGlyph.check,
+                    size: 22,
+                    accent: AppColors.teal,
+                  )
+                : CountBadge(
+                    '+${quest.stepsReward}',
+                    filled: true,
+                    color: tone,
+                  ),
+          ),
+        ),
+      ],
     );
   }
 }

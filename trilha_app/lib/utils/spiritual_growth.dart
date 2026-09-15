@@ -4,33 +4,33 @@ import 'dust_copy.dart';
 enum GrowthStage {
   seed,
   sprout,
-  sapling,
-  olive,
-  lamp;
+  branch,
+  tree,
+  fruit;
 
   String get label => switch (this) {
         GrowthStage.seed => 'Semente',
         GrowthStage.sprout => 'Broto',
-        GrowthStage.sapling => 'Muda',
-        GrowthStage.olive => 'Oliveira',
-        GrowthStage.lamp => 'Lâmpada',
+        GrowthStage.branch => 'Ramo',
+        GrowthStage.tree => 'Árvore',
+        GrowthStage.fruit => 'Fruto',
       };
 
   /// Dias de streak necessários para alcançar este marco.
   int get unlockAt => switch (this) {
         GrowthStage.seed => 0,
         GrowthStage.sprout => 1,
-        GrowthStage.sapling => 3,
-        GrowthStage.olive => 7,
-        GrowthStage.lamp => 14,
+        GrowthStage.branch => 3,
+        GrowthStage.tree => 7,
+        GrowthStage.fruit => 14,
       };
 
   String get shortHint => switch (this) {
         GrowthStage.seed => 'dia 0',
         GrowthStage.sprout => '1 dia',
-        GrowthStage.sapling => '3 dias',
-        GrowthStage.olive => '7 dias',
-        GrowthStage.lamp => '14 dias',
+        GrowthStage.branch => '3 dias',
+        GrowthStage.tree => '7 dias',
+        GrowthStage.fruit => '14 dias',
       };
 }
 
@@ -119,8 +119,8 @@ class SpiritualGrowth {
         stage: GrowthStage.sprout,
         title: 'Broto',
         subtitle: left == 1
-            ? 'Falta 1 dia seguido para Muda'
-            : 'Faltam $left dias seguidos para Muda',
+            ? 'Falta 1 dia seguido para Ramo'
+            : 'Faltam $left dias seguidos para Ramo',
         streak: s,
         nextAt: 3,
       );
@@ -128,11 +128,11 @@ class SpiritualGrowth {
     if (s < 7) {
       final left = 7 - s;
       return SpiritualGrowth(
-        stage: GrowthStage.sapling,
-        title: 'Muda',
+        stage: GrowthStage.branch,
+        title: 'Ramo',
         subtitle: left == 1
-            ? 'Falta 1 dia seguido para Oliveira'
-            : 'Faltam $left dias seguidos para Oliveira',
+            ? 'Falta 1 dia seguido para Árvore'
+            : 'Faltam $left dias seguidos para Árvore',
         streak: s,
         nextAt: 7,
       );
@@ -140,19 +140,19 @@ class SpiritualGrowth {
     if (s < 14) {
       final left = 14 - s;
       return SpiritualGrowth(
-        stage: GrowthStage.olive,
-        title: 'Oliveira',
+        stage: GrowthStage.tree,
+        title: 'Árvore',
         subtitle: left == 1
-            ? 'Falta 1 dia seguido para Lâmpada'
-            : 'Faltam $left dias seguidos para Lâmpada',
+            ? 'Falta 1 dia seguido para Fruto'
+            : 'Faltam $left dias seguidos para Fruto',
         streak: s,
         nextAt: 14,
       );
     }
     return SpiritualGrowth(
-      stage: GrowthStage.lamp,
-      title: 'Lâmpada',
-      subtitle: '$s dias seguidos · hábito consolidado',
+      stage: GrowthStage.fruit,
+      title: 'Fruto',
+      subtitle: '$s dias seguidos · a sequência deu fruto',
       streak: s,
       nextAt: s,
     );
@@ -165,20 +165,20 @@ class SpiritualGrowth {
   }
 
   int get daysToNext {
-    if (stage == GrowthStage.lamp) return 0;
+    if (stage == GrowthStage.fruit) return 0;
     return (nextAt - streak).clamp(0, 99);
   }
 
   double get progressToNext {
-    if (stage == GrowthStage.lamp) return 1;
+    if (stage == GrowthStage.fruit) return 1;
     final prev = stage.unlockAt == 0 && stage == GrowthStage.seed
         ? 0
         : switch (stage) {
             GrowthStage.seed => 0,
             GrowthStage.sprout => 1,
-            GrowthStage.sapling => 3,
-            GrowthStage.olive => 7,
-            GrowthStage.lamp => 14,
+            GrowthStage.branch => 3,
+            GrowthStage.tree => 7,
+            GrowthStage.fruit => 14,
           };
     final span = (nextAt - prev).clamp(1, 99);
     return ((streak - prev) / span).clamp(0.0, 1.0);

@@ -62,25 +62,19 @@ class AppMetrics {
     ];
   }
 
-  /// Lip 3D do CTA — sem glow colorido.
+  /// Sombra do CTA — só apoio, sem halo de cor.
   static List<BoxShadow> accentGlow({
     double blur = 10,
     double alpha = 0.22,
     Offset offset = const Offset(0, 4),
     Color? color,
-  }) => [
-    BoxShadow(
-      color: Colors.black.withValues(alpha: 0.35),
-      offset: const Offset(0, 4),
-      blurRadius: 0,
-    ),
-  ];
+  }) => const [];
 }
 
 /// Botão CTA açafrão — ação principal em cards, sheets e telas.
 ///
-/// Padrão: [AppGradients.gold], raio [AppRadii.md], [AppTypography.cta],
-/// tinta [AppColors.inkOnAccent], sombra [AppMetrics.accentGlow].
+/// Padrão: fill [AppColors.accent] chapado, raio [AppRadii.md],
+/// [AppTypography.cta], tinta [AppColors.inkOnAccent].
 class CopperCta extends StatelessWidget {
   final String label;
   final VoidCallback? onTap;
@@ -103,7 +97,7 @@ class CopperCta extends StatelessWidget {
     this.padding,
     this.showArrow = false,
     this.dense = false,
-    this.showGlow = true,
+    this.showGlow = false,
     this.busy = false,
   });
 
@@ -124,7 +118,7 @@ class CopperCta extends StatelessWidget {
       child: Container(
         padding: pad,
         decoration: BoxDecoration(
-          gradient: AppGradients.gold,
+          color: AppColors.accent,
           borderRadius: BorderRadius.circular(AppRadii.md),
           boxShadow: showGlow ? AppMetrics.accentGlow() : null,
         ),
@@ -261,6 +255,9 @@ class OutlineCta extends StatelessWidget {
       color: Colors.transparent,
       child: InkWell(
         onTap: onTap,
+        splashColor: Colors.transparent,
+        highlightColor: Colors.transparent,
+        overlayColor: const WidgetStatePropertyAll(Colors.transparent),
         borderRadius: BorderRadius.circular(AppRadii.md),
         child: child,
       ),
@@ -299,6 +296,9 @@ class GhostCta extends StatelessWidget {
       color: Colors.transparent,
       child: InkWell(
         onTap: onTap,
+        splashColor: Colors.transparent,
+        highlightColor: Colors.transparent,
+        overlayColor: const WidgetStatePropertyAll(Colors.transparent),
         borderRadius: BorderRadius.circular(AppRadii.md),
         child: Container(
           width: expanded ? double.infinity : null,
@@ -342,15 +342,12 @@ class GhostCta extends StatelessWidget {
   }
 }
 
-/// Barra de progresso chunky 3D — fill claro + faixa escura embaixo.
+/// Barra de progresso chapada — fill sólido, sem bevel.
 class AppProgressBar extends StatelessWidget {
   final double value;
   final Color? color;
   final Color? trackColor;
   final double height;
-
-  /// Tom mais escuro da “base” 3D. Null = deriva de [color].
-  final Color? depthColor;
 
   const AppProgressBar({
     super.key,
@@ -358,22 +355,12 @@ class AppProgressBar extends StatelessWidget {
     this.color,
     this.trackColor,
     this.height = AppMetrics.progressHeight,
-    this.depthColor,
   });
-
-  static Color _depthOf(Color c) {
-    final hsl = HSLColor.fromColor(c);
-    return hsl
-        .withLightness((hsl.lightness * 0.72).clamp(0.0, 1.0))
-        .withSaturation((hsl.saturation * 1.05).clamp(0.0, 1.0))
-        .toColor();
-  }
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final fill = color ?? AppColors.accent;
-    final depth = depthColor ?? _depthOf(fill);
     final track = trackColor ?? a.progressTrack;
     final t = value.clamp(0.0, 1.0);
 
@@ -398,11 +385,7 @@ class AppProgressBar extends StatelessWidget {
                       child: DecoratedBox(
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(AppRadii.pill),
-                          gradient: LinearGradient(
-                            begin: Alignment.topCenter,
-                            end: Alignment.bottomCenter,
-                            colors: [fill, depth],
-                          ),
+                          color: fill,
                         ),
                       ),
                     ),
@@ -632,7 +615,7 @@ class AppSelectChip extends StatelessWidget {
     switch (style) {
       case AppSelectChipStyle.solid:
         decoration = BoxDecoration(
-          gradient: gold ? AppGradients.gold : null,
+          color: gold ? AppColors.accent : null,
           borderRadius: borderRadius,
         );
       case AppSelectChipStyle.soft:
@@ -672,12 +655,19 @@ class AppSelectChip extends StatelessWidget {
 
     return Material(
       color: Colors.transparent,
-      child: InkWell(onTap: onTap, borderRadius: borderRadius, child: body),
+      child: InkWell(
+        onTap: onTap,
+        splashColor: Colors.transparent,
+        highlightColor: Colors.transparent,
+        overlayColor: const WidgetStatePropertyAll(Colors.transparent),
+        borderRadius: borderRadius,
+        child: body,
+      ),
     );
   }
 }
 
-/// Tile de escolha — gradiente ouro quando selecionado (Aparência, metas, etc.).
+/// Tile de escolha — ouro chapado quando selecionado (Aparência, metas, etc.).
 class AppChoiceTile extends StatelessWidget {
   final bool selected;
   final VoidCallback onTap;
@@ -699,16 +689,18 @@ class AppChoiceTile extends StatelessWidget {
       color: Colors.transparent,
       child: InkWell(
         onTap: onTap,
+        splashColor: Colors.transparent,
+        highlightColor: Colors.transparent,
+        overlayColor: const WidgetStatePropertyAll(Colors.transparent),
         borderRadius: BorderRadius.circular(AppRadii.sm),
         child: AnimatedContainer(
           duration: const Duration(milliseconds: 200),
           width: double.infinity,
           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 12),
           decoration: BoxDecoration(
-            gradient: selected && selectedAccent == null
-                ? AppGradients.gold
-                : null,
-            color: selected ? selectedAccent : a.cardFillSoft,
+            color: selected
+                ? (selectedAccent ?? AppColors.accent)
+                : a.cardFillSoft,
             borderRadius: BorderRadius.circular(AppRadii.sm),
             border: Border.all(
               color: selected

@@ -96,7 +96,7 @@ void main() {
     );
   });
 
-  test('tap with word options uses complete-style palco template', () {
+  test('tap with word options uses a blank and chips, not verse-tap', () {
     const ex = Exercise(
       id: 't',
       type: ExerciseType.tap,
@@ -113,7 +113,10 @@ void main() {
     );
     expect(ex.prefersVerseTap, isFalse);
     expect(ex.usesCompletePalco, isTrue);
-    expect(ex.palcoTemplate, 'No ___, Deus criou os céus e a terra. A terra, porém, estava sem forma e vazia.');
+    expect(ex.palcoTemplate, contains('___'));
+    expect(ex.palcoTemplate, isNot(contains('princípio')));
+    expect(ex.showActVerb, isFalse);
+    expect(ex.needsConfirm, isTrue);
     expect(ex.displayCue, 'Em Gênesis 1:1–2, toque a palavra que falta');
   });
 
@@ -127,6 +130,9 @@ void main() {
     );
     expect(fill.instructionVerb, 'Complete');
     expect(fill.displayCue, isEmpty);
+    expect(fill.usesCompletePalco, isTrue);
+    expect(fill.needsConfirm, isTrue);
+    expect(fill.showActVerb, isFalse);
 
     const order = Exercise(
       id: 'o',
@@ -137,5 +143,93 @@ void main() {
     );
     expect(order.instructionVerb, 'Ordene');
     expect(order.displayCue, 'Monte a sequência do trecho.');
+    expect(order.needsConfirm, isTrue);
+    expect(order.showActVerb, isFalse);
+  });
+
+  test('playable acts wait for CONFIRMAR', () {
+    const choice = Exercise(
+      id: 'q',
+      type: ExerciseType.choice,
+      prompt: 'O que o texto afirma?',
+      correctAnswer: 'a',
+    );
+    expect(choice.needsConfirm, isTrue);
+    expect(choice.showActVerb, isFalse);
+
+    const vf = Exercise(
+      id: 'vf2',
+      type: ExerciseType.trueFalse,
+      prompt: 'Deus criou os céus e a terra.',
+      correctAnswer: 'true',
+    );
+    expect(vf.needsConfirm, isTrue);
+    expect(vf.showActVerb, isFalse);
+
+    const tap = Exercise(
+      id: 't3',
+      type: ExerciseType.tap,
+      prompt: 'Toque.',
+      correctAnswer: 'a',
+    );
+    expect(tap.needsConfirm, isTrue);
+  });
+
+  test('true/false and choice keep a verse witness on the palco', () {
+    const verse = 'No princípio, Deus criou os céus e a terra.';
+    const vf = Exercise(
+      id: 'vf3',
+      type: ExerciseType.trueFalse,
+      prompt: 'Deus criou os céus e a terra.',
+      correctAnswer: 'true',
+      passageText: verse,
+      reference: 'Gênesis 1:1',
+    );
+    expect(vf.hasFieldHero, isTrue);
+    expect(vf.stageWitness(), verse);
+    expect(vf.stageWitness(fallback: 'outro'), verse);
+
+    const vfNoPassage = Exercise(
+      id: 'vf4',
+      type: ExerciseType.trueFalse,
+      prompt: 'Deus criou os céus e a terra.',
+      correctAnswer: 'true',
+    );
+    expect(vfNoPassage.hasFieldHero, isFalse);
+    expect(vfNoPassage.stageWitness(fallback: verse), verse);
+
+    const tap = Exercise(
+      id: 't2',
+      type: ExerciseType.tap,
+      prompt: 'Toque.',
+      correctAnswer: 'a',
+      passageText: verse,
+    );
+    expect(tap.stageWitness(fallback: 'board'), isNull);
+  });
+
+  test('complete palco uses the full verse and hides the cloze cue', () {
+    const passage =
+        'No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.';
+    const fill = Exercise(
+      id: 'c-full',
+      type: ExerciseType.complete,
+      prompt: 'Complete Gênesis 1:1–2: "havia ___ sobre a face do abismo".',
+      cue: 'Complete Gênesis 1:1–2: "havia ___ sobre a face do abismo".',
+      correctAnswer: 'a',
+      template: 'havia ___ sobre a face do abismo',
+      passageText: passage,
+      options: [
+        QuestionOption(id: 'a', text: 'trevas'),
+        QuestionOption(id: 'b', text: 'águas'),
+        QuestionOption(id: 'c', text: 'Espírito'),
+      ],
+    );
+    expect(fill.displayCue, isEmpty);
+    final stage = fill.clozeStageText();
+    expect(stage, isNotNull);
+    expect(stage, contains('No princípio'));
+    expect(stage, contains('havia ___ sobre a face do abismo'));
+    expect(stage!.contains('havia trevas sobre a face do abismo'), isFalse);
   });
 }

@@ -25,9 +25,16 @@ void main() {
     test('stages unlock with streak', () {
       expect(SpiritualGrowth.fromStreak(0).stage, GrowthStage.seed);
       expect(SpiritualGrowth.fromStreak(2).stage, GrowthStage.sprout);
-      expect(SpiritualGrowth.fromStreak(5).stage, GrowthStage.sapling);
-      expect(SpiritualGrowth.fromStreak(10).stage, GrowthStage.olive);
-      expect(SpiritualGrowth.fromStreak(20).stage, GrowthStage.lamp);
+      expect(SpiritualGrowth.fromStreak(5).stage, GrowthStage.branch);
+      expect(SpiritualGrowth.fromStreak(10).stage, GrowthStage.tree);
+      expect(SpiritualGrowth.fromStreak(20).stage, GrowthStage.fruit);
+      expect(GrowthStage.values.map((s) => s.label).toList(), [
+        'Semente',
+        'Broto',
+        'Ramo',
+        'Árvore',
+        'Fruto',
+      ]);
     });
   });
 }

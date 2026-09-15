@@ -189,7 +189,7 @@ class Exercise {
   bool get hasFieldHero {
     switch (type) {
       case ExerciseType.trueFalse:
-        return false;
+        return (passageText ?? '').trim().isNotEmpty;
       case ExerciseType.complete:
         return (template ?? '').trim().isNotEmpty;
       case ExerciseType.tap:
@@ -207,8 +207,8 @@ class Exercise {
       case ExerciseType.bestInterpretation:
         return (passageText ?? '').trim().isNotEmpty;
       case ExerciseType.order:
+        return (passageText ?? '').trim().isNotEmpty;
       case ExerciseType.match:
-        return false;
       case ExerciseType.insight:
       case ExerciseType.explain:
       case ExerciseType.classify:
@@ -231,7 +231,7 @@ class Exercise {
     return _tapTemplateFromPassage();
   }
 
-  /// Toque no manuscrito só quando NÃO há lacuna — a lacuna + chips já era o gesto certo.
+  /// Toque no manuscrito só quando NÃO há lacuna — a lacuna + chips já era o gesto.
   bool get prefersVerseTap {
     if (type != ExerciseType.tap && type != ExerciseType.findInText) {
       return false;
@@ -247,6 +247,47 @@ class Exercise {
       type == ExerciseType.complete ||
       (type == ExerciseType.tap && (palcoTemplate ?? '').contains('___'));
 
+  /// Todos os atos jogáveis pedem CONFIRMAR. Insight só revela.
+  bool get needsConfirm => type.isPlayable && !type.isRevealOnly;
+
+  /// Verbo some quando o palco já ensina a tarefa.
+  bool get showActVerb => switch (type) {
+    ExerciseType.trueFalse ||
+    ExerciseType.tap ||
+    ExerciseType.findInText ||
+    ExerciseType.complete ||
+    ExerciseType.order ||
+    ExerciseType.choice ||
+    ExerciseType.textSupported ||
+    ExerciseType.bestInterpretation => false,
+    _ => true,
+  };
+
+  /// Verso estável no palco (V/F, Escolher, Ordenar). Toque/Completar/Conectar já são o palco.
+  String? stageWitness({String? fallback}) {
+    switch (type) {
+      case ExerciseType.tap:
+      case ExerciseType.findInText:
+      case ExerciseType.complete:
+      case ExerciseType.connect:
+      case ExerciseType.insight:
+      case ExerciseType.explain:
+      case ExerciseType.classify:
+      case ExerciseType.review:
+      case ExerciseType.match:
+        return null;
+      case ExerciseType.trueFalse:
+      case ExerciseType.choice:
+      case ExerciseType.textSupported:
+      case ExerciseType.bestInterpretation:
+      case ExerciseType.order:
+        final own = (passageText ?? '').trim();
+        if (own.isNotEmpty) return own;
+        final board = (fallback ?? '').trim();
+        return board.isEmpty ? null : board;
+    }
+  }
+
   /// Cue exibido (nunca o beat pedagógico, nunca o verbo repetido).
   String get displayCue {
     final candidates = <String>[
@@ -256,7 +297,7 @@ class Exercise {
     for (final c in candidates) {
       if (_isGenericTaskCue(c)) continue;
       var text = type == ExerciseType.trueFalse ? vfClaim(c) : c;
-      if (type == ExerciseType.tap) {
+      if (usesCompletePalco && type == ExerciseType.tap) {
         text = _stripQuotedCloze(text);
       }
       return text;
@@ -269,11 +310,34 @@ class Exercise {
   }
 
   bool _isGenericTaskCue(String text) {
-    final t = text.trim().toLowerCase().replaceAll(RegExp(r'[.!?…]+$'), '');
     if (type != ExerciseType.complete) return false;
+    // Palco já é o verso com lacuna — enunciado extra compete com o bônus.
+    if ((palcoTemplate ?? '').contains('___')) return true;
+    final t = text.trim().toLowerCase().replaceAll(RegExp(r'[.!?…]+$'), '');
     return t == 'complete' ||
         t == 'complete a lacuna' ||
         t.startsWith('complete a lacuna');
+  }
+
+  String? get correctOptionText {
+    final id = resolvedCorrectAnswer;
+    for (final o in effectiveOptions) {
+      if (o.id == id) {
+        final t = o.text.trim();
+        if (t.isNotEmpty) return t;
+      }
+    }
+    return null;
+  }
+
+  /// Verso no palco do complete: trecho TB com a lacuna no lugar da resposta.
+  String? clozeStageText({String? fallbackPassage}) {
+    if (!usesCompletePalco) return null;
+    final tpl = (palcoTemplate ?? '').trim();
+    if (tpl.isEmpty) return null;
+    final own = (passageText ?? '').trim();
+    final passage = own.isNotEmpty ? own : (fallbackPassage ?? '').trim();
+    return spliceClozeIntoPassage(tpl, passage, correctOptionText);
   }
 
   String get instructionVerb => switch (type) {
@@ -552,10 +616,47 @@ class Exercise {
         .map((o) => o.text.trim())
         .firstWhere((t) => t.isNotEmpty, orElse: () => '');
     if (correct.isEmpty) return null;
-    final re = RegExp('\\b${RegExp.escape(correct)}\\b', caseSensitive: false);
-    if (!re.hasMatch(passage)) return null;
-    return passage.replaceFirst(re, '___');
+    final lower = passage.toLowerCase();
+    final needle = correct.toLowerCase();
+    var from = 0;
+    while (true) {
+      final i = lower.indexOf(needle, from);
+      if (i < 0) return null;
+      final end = i + needle.length;
+      final bounded =
+          !_isLetterAt(passage, i - 1) && !_isLetterAt(passage, end);
+      if (bounded) {
+        return '${passage.substring(0, i)}___${passage.substring(end)}';
+      }
+      from = i + 1;
+    }
   }
+}
+
+/// Encaixa o template `___` no versículo completo, como no bônus.
+String spliceClozeIntoPassage(
+  String template,
+  String passage,
+  String? answer,
+) {
+  final tpl = template.trim();
+  if (tpl.isEmpty) return passage.trim();
+  final verse = passage.trim();
+  if (verse.isEmpty) return tpl;
+  if (verse.contains('___')) return verse;
+
+  final blank = RegExp(r'_{3,}');
+  final ans = (answer ?? '').trim();
+  if (ans.isNotEmpty) {
+    final filled = tpl.replaceAll(blank, ans);
+    final lower = verse.toLowerCase();
+    final needle = filled.toLowerCase();
+    final i = lower.indexOf(needle);
+    if (i >= 0) {
+      return '${verse.substring(0, i)}$tpl${verse.substring(i + filled.length)}';
+    }
+  }
+  return tpl;
 }
 
 String _stripQuotedCloze(String text) {

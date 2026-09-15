@@ -5,7 +5,6 @@ import '../data/mission_study.dart';
 import '../data/question_bank.dart';
 import '../data/trail_repository.dart';
 import '../models/difficulty.dart';
-import '../models/question_report.dart';
 import '../models/trail.dart';
 import '../models/trail_catalog.dart';
 import '../services/analytics_service.dart';
@@ -19,9 +18,11 @@ import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
 import '../utils/genesis_theme.dart';
 import '../utils/trail_progress.dart';
+import '../widgets/act_feel.dart';
 import '../widgets/cinematic_icon.dart';
+import '../widgets/exercise_feedback_dialog.dart';
 import '../widgets/exercise_panel.dart';
-import '../widgets/question_report_sheet.dart';
+import '../widgets/lamps_bar.dart';
 import '../widgets/ui_primitives.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/top_bar.dart';
@@ -89,7 +90,7 @@ class _LessonScreenState extends State<LessonScreen>
     super.initState();
     _questionEnter = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 520),
+      duration: const Duration(milliseconds: 240),
     );
     _impactFlash = AnimationController(
       vsync: this,
@@ -346,6 +347,13 @@ class _LessonScreenState extends State<LessonScreen>
     trailSlug: _trailSlug,
   );
 
+  ({String reference, String text})? get _board {
+    final hookT = (_mission?.hookVerse ?? '').trim();
+    final hookR = (_mission?.hookRef ?? '').trim();
+    if (hookT.length >= 12) return (reference: hookR, text: hookT);
+    return _microVerse();
+  }
+
   Future<void> _select(String optionId) async {
     await _selectExercise(optionId);
   }
@@ -398,13 +406,13 @@ class _LessonScreenState extends State<LessonScreen>
         (_pickedIds.contains(ex.id) || widget.practiceMode);
     if (correct) {
       SoundService.instance.playCorrect();
-      HapticFeedback.lightImpact();
+      ActHaptics.success();
       if (trackBankId) {
         await progress.clearMistake(ex.id);
       }
     } else {
       SoundService.instance.playWrong();
-      HapticFeedback.mediumImpact();
+      ActHaptics.error();
       _mistakeInSession = true;
       if (trackBankId) {
         await progress.recordMistake(ex.id);
@@ -438,7 +446,7 @@ class _LessonScreenState extends State<LessonScreen>
         return;
       }
       await Future.delayed(
-        Duration(milliseconds: ex.type == ExerciseType.connect ? 900 : 640),
+        Duration(milliseconds: ex.type == ExerciseType.connect ? 720 : 420),
       );
       if (mounted) _continue();
       _busy = false;
@@ -770,9 +778,7 @@ class _LessonScreenState extends State<LessonScreen>
                               _Phase.intro =>
                                 _difficultyMeta?.label ??
                                     (mission.isBoss ? 'Desafio' : 'Treino'),
-                              _Phase.quiz =>
-                                _difficultyMeta?.label ??
-                                    _exercise.instructionVerb,
+                              _Phase.quiz => _difficultyMeta?.label,
                               _Phase.micro => 'Complete o verso',
                               _Phase.insight => 'O que ficou',
                             },
@@ -781,6 +787,17 @@ class _LessonScreenState extends State<LessonScreen>
                               mission.title,
                               isBoss: mission.isBoss,
                             ),
+                            trailing: _phase == _Phase.quiz
+                                ? Padding(
+                                    padding: const EdgeInsets.only(right: 8),
+                                    child: LampsBar(
+                                      current: _lamps,
+                                      max: _maxLamps,
+                                      accent: accent,
+                                      compact: true,
+                                    ),
+                                  )
+                                : null,
                           ),
                           const SizedBox(height: 8),
                         ],
@@ -789,7 +806,7 @@ class _LessonScreenState extends State<LessonScreen>
                     Expanded(
                       child: switch (_phase) {
                         _Phase.quiz => ExercisePanel(
-                          key: ValueKey('ex-$_questionIndex-${_exercise.id}'),
+                          key: const ValueKey('quiz-board'),
                           exercise: _exercise,
                           selected: _selected,
                           isCorrect: _isCorrect,
@@ -802,10 +819,11 @@ class _LessonScreenState extends State<LessonScreen>
                               ? null
                               : _useHint,
                           outOfLamps: _outOfLamps,
-                          lamps: _lamps,
                           index: _questionIndex,
                           total: total,
                           insightFallback: mission.centralInsight,
+                          boardText: _board?.text,
+                          boardRef: _board?.reference,
                           onResolvedContinue:
                               _exercise.type == ExerciseType.connect &&
                                   _isCorrect == true &&
@@ -903,6 +921,27 @@ class _LessonScreenState extends State<LessonScreen>
                   ],
                 ),
               ),
+              if (_phase == _Phase.quiz &&
+                  _showFeedback &&
+                  _selected != null &&
+                  _isCorrect != null)
+                Positioned.fill(
+                  child: ExerciseFeedbackDialog(
+                    exercise: _exercise,
+                    selected: _selected!,
+                    isCorrect: _isCorrect!,
+                    isLast:
+                        _outOfLamps ||
+                        (_isCorrect == true && _questionIndex >= total - 1),
+                    accent: accent,
+                    outOfLamps: _outOfLamps,
+                    onContinue: _continue,
+                    missionSlug: widget.missionSlug,
+                    trailSlug: _trailSlug,
+                    difficulty: _difficultyMeta?.difficulty.id,
+                    practiceMode: widget.practiceMode,
+                  ),
+                ),
               if (_phase == _Phase.quiz)
                 AnimatedBuilder(
                   animation: _impactFlash,
@@ -932,22 +971,6 @@ class _LessonScreenState extends State<LessonScreen>
                       ),
                     );
                   },
-                ),
-              if (_showFeedback && _selected != null && _isCorrect != null)
-                _ExerciseFeedbackOverlay(
-                  exercise: _exercise,
-                  selected: _selected!,
-                  isCorrect: _isCorrect!,
-                  isLast:
-                      _outOfLamps ||
-                      (_isCorrect == true && _questionIndex >= total - 1),
-                  accent: accent,
-                  outOfLamps: _outOfLamps,
-                  onContinue: _continue,
-                  missionSlug: widget.missionSlug,
-                  trailSlug: _trailSlug,
-                  difficulty: _difficultyMeta?.difficulty.id,
-                  practiceMode: widget.practiceMode,
                 ),
             ],
           ),
@@ -1097,319 +1120,6 @@ class _IntroPanel extends StatelessWidget {
           CopperCta(label: 'Começar', onTap: onStart),
           const SizedBox(height: AppSpace.sm),
         ],
-      ),
-    );
-  }
-}
-class _ExerciseFeedbackOverlay extends StatefulWidget {
-  final Exercise exercise;
-  final String selected;
-  final bool isCorrect;
-  final bool isLast;
-  final Color accent;
-  final bool outOfLamps;
-  final VoidCallback onContinue;
-  final String missionSlug;
-  final String? trailSlug;
-  final String? difficulty;
-  final bool practiceMode;
-
-  const _ExerciseFeedbackOverlay({
-    required this.exercise,
-    required this.selected,
-    required this.isCorrect,
-    required this.isLast,
-    required this.accent,
-    required this.onContinue,
-    required this.missionSlug,
-    this.outOfLamps = false,
-    this.trailSlug,
-    this.difficulty,
-    this.practiceMode = false,
-  });
-
-  @override
-  State<_ExerciseFeedbackOverlay> createState() =>
-      _ExerciseFeedbackOverlayState();
-}
-
-class _ExerciseFeedbackOverlayState extends State<_ExerciseFeedbackOverlay> {
-  String? _verseText;
-
-  static final _verdictPrefix = RegExp(
-    r'^(certo|correto|isso|sim|errado|não|nao|quase)\s*[:.!—–-]\s*',
-    caseSensitive: false,
-  );
-
-  bool get _needsEvidence => !widget.isCorrect || widget.outOfLamps;
-
-  @override
-  void initState() {
-    super.initState();
-    if (_needsEvidence) _loadVerse();
-  }
-
-  String _compactFeedback(String raw) {
-    final t = raw.trim();
-    if (t.isEmpty) return t;
-    final stripped = t.replaceFirst(_verdictPrefix, '');
-    if (stripped.isEmpty || stripped == t) return t;
-    return stripped[0].toUpperCase() + stripped.substring(1);
-  }
-
-  Future<void> _loadVerse() async {
-    final existing = (widget.exercise.passageText ?? '').trim();
-    final hint = [
-      widget.exercise.prompt,
-      widget.exercise.displayCue,
-      widget.selected,
-    ].whereType<String>().join(' ');
-    if (existing.isNotEmpty) {
-      setState(() => _verseText = SessionComposer.clipFeedbackPassage(
-            existing,
-            hint: hint,
-            maxWords: 16,
-          ));
-      return;
-    }
-    final ref = (widget.exercise.reference ?? '').trim();
-    if (ref.isEmpty) return;
-    final full = await BibleService.instance.passageText(ref);
-    if (!mounted || full == null || full.trim().isEmpty) return;
-    setState(() => _verseText = SessionComposer.clipFeedbackPassage(
-          full.trim(),
-          hint: hint,
-          maxWords: 16,
-        ));
-  }
-
-  Future<void> _report() async {
-    final exercise = widget.exercise;
-    String? optText(String id) {
-      for (final o in exercise.options) {
-        if (o.id == id) return o.text;
-      }
-      return null;
-    }
-
-    final ok = await showQuestionReportSheet(
-      context,
-      buildDraft: (category, comment) => QuestionReportDraft(
-        questionId: exercise.id,
-        questionText: exercise.prompt,
-        verseRef: exercise.reference,
-        selectedOptionId: widget.selected,
-        selectedOptionText: optText(widget.selected),
-        correctOptionId: exercise.correctAnswer,
-        correctOptionText: optText(exercise.correctAnswer),
-        userWasCorrect: widget.isCorrect,
-        missionSlug: widget.missionSlug,
-        trailSlug: widget.trailSlug,
-        difficulty: widget.difficulty,
-        practiceMode: widget.practiceMode,
-        category: category,
-        comment: comment,
-      ),
-    );
-    if (!mounted || !ok) return;
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(
-          'Relato enviado. Obrigado.',
-          style: AppTypography.body(color: AppColors.textOnDark),
-        ),
-        backgroundColor: AppColors.nightElevated,
-      ),
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final exercise = widget.exercise;
-    final isCorrect = widget.isCorrect;
-    final accent = widget.accent;
-    final outOfLamps = widget.outOfLamps;
-    final color = isCorrect ? accent : AppColors.error;
-    final bottom = MediaQuery.of(context).padding.bottom;
-    final feedback = _compactFeedback(
-      exercise.feedbackFor(widget.selected, correct: isCorrect),
-    );
-    final title = outOfLamps
-        ? 'Sem lâmpadas'
-        : isCorrect
-            ? 'Acertou!'
-            : 'Quase';
-    final cta = outOfLamps
-        ? 'ENCERRAR COM PASSOS PARCIAIS'
-        : isCorrect
-            ? (widget.isLast ? 'SEGUIR' : 'CONTINUAR')
-            : 'TENTAR DE NOVO';
-    final ref = (exercise.reference ?? '').trim();
-    final verse = (_verseText ?? '').trim();
-    final showVerse = _needsEvidence && (ref.isNotEmpty || verse.isNotEmpty);
-
-    return Positioned.fill(
-      child: Container(
-        color: Colors.black.withValues(alpha: 0.42),
-        alignment: Alignment.bottomCenter,
-        child: TweenAnimationBuilder<double>(
-          tween: Tween(begin: 1, end: 0),
-          duration: const Duration(milliseconds: 420),
-          curve: Curves.easeOutBack,
-          builder: (context, value, child) =>
-              Transform.translate(offset: Offset(0, value * 120), child: child),
-          child: ClipRRect(
-            borderRadius: const BorderRadius.vertical(top: Radius.circular(28)),
-            child: Container(
-              width: double.infinity,
-              constraints: BoxConstraints(
-                maxHeight: MediaQuery.of(context).size.height * 0.42,
-              ),
-              padding: EdgeInsets.fromLTRB(
-                AppSpace.screen,
-                AppSpace.md,
-                AppSpace.screen,
-                AppSpace.md + bottom,
-              ),
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [
-                    Color.lerp(AppColors.nightElevated, color, 0.14)!,
-                    Color.lerp(AppColors.nightLight, color, 0.06)!,
-                  ],
-                ),
-                border: Border(top: BorderSide(color: color, width: 3.5)),
-                boxShadow: [
-                  BoxShadow(
-                    color: color.withValues(alpha: 0.22),
-                    blurRadius: 28,
-                    offset: const Offset(0, -8),
-                  ),
-                ],
-              ),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  Row(
-                    children: [
-                      Container(
-                        width: 40,
-                        height: 40,
-                        decoration: BoxDecoration(
-                          shape: BoxShape.circle,
-                          color: color,
-                          boxShadow: [
-                            BoxShadow(
-                              color: color.withValues(alpha: 0.35),
-                              blurRadius: 12,
-                              offset: const Offset(0, 3),
-                            ),
-                          ],
-                        ),
-                        child: Center(
-                          child: CinematicIcon(
-                            glyph: outOfLamps
-                                ? CinematicGlyph.frost
-                                : isCorrect
-                                    ? CinematicGlyph.check
-                                    : CinematicGlyph.book,
-                            size: 22,
-                            accent: AppColors.inkOnAccent,
-                            framed: false,
-                          ),
-                        ),
-                      ),
-                      const SizedBox(width: 12),
-                      Expanded(
-                        child: Text(
-                          title,
-                          style: AppTypography.display(size: 22, color: color),
-                        ),
-                      ),
-                      IconButton(
-                        tooltip: 'Relatar problema nesta pergunta',
-                        onPressed: _report,
-                        visualDensity: VisualDensity.compact,
-                        padding: EdgeInsets.zero,
-                        constraints: const BoxConstraints(
-                          minWidth: 36,
-                          minHeight: 36,
-                        ),
-                        icon: Icon(
-                          Icons.flag_outlined,
-                          size: 20,
-                          color: AppColors.textOnDark.withValues(alpha: 0.42),
-                        ),
-                      ),
-                    ],
-                  ),
-                  if (feedback.isNotEmpty) ...[
-                    const SizedBox(height: 8),
-                    Text(
-                      feedback,
-                      maxLines: 3,
-                      overflow: TextOverflow.ellipsis,
-                      style: AppTypography.body(
-                        size: 15,
-                        weight: FontWeight.w600,
-                        height: 1.35,
-                        color: AppColors.textOnDark.withValues(alpha: 0.88),
-                      ),
-                    ),
-                  ],
-                  if (showVerse) ...[
-                    const SizedBox(height: 10),
-                    Container(
-                      width: double.infinity,
-                      padding: const EdgeInsets.fromLTRB(12, 8, 12, 10),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(12),
-                        color: Colors.white.withValues(alpha: 0.06),
-                        border: Border.all(
-                          color: color.withValues(alpha: 0.22),
-                        ),
-                      ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          if (ref.isNotEmpty)
-                            Text(
-                              ref,
-                              style: AppTypography.label(
-                                size: 11,
-                                letterSpacing: 1.1,
-                                color: color,
-                              ),
-                            ),
-                          if (verse.isNotEmpty) ...[
-                            if (ref.isNotEmpty) const SizedBox(height: 4),
-                            Text(
-                              verse,
-                              maxLines: 2,
-                              overflow: TextOverflow.ellipsis,
-                              style: AppTypography.verse(
-                                size: 16,
-                                weight: FontWeight.w600,
-                                height: 1.35,
-                                color: AppColors.textOnDark
-                                    .withValues(alpha: 0.9),
-                              ),
-                            ),
-                          ],
-                        ],
-                      ),
-                    ),
-                  ],
-                  const SizedBox(height: AppSpace.md),
-                  CopperCta(label: cta, onTap: widget.onContinue),
-                ],
-              ),
-            ),
-          ),
-        ),
       ),
     );
   }

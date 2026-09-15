@@ -16,11 +16,11 @@ class AppGradients {
     colors: [AppColors.primaryDark, AppColors.primary, AppColors.primaryLight],
   );
 
-  /// Chama fosca — CTAs sem topo brilhante.
+  /// CTA chapado — amarelo sólido, sem bevel nem topo brilhante.
   static const gold = LinearGradient(
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
-    colors: [AppColors.accent, AppColors.accentDark],
+    colors: [AppColors.accent, AppColors.accent],
   );
 }
 
@@ -180,6 +180,10 @@ class AppTheme {
     );
 
     return base.copyWith(
+      splashFactory: NoSplash.splashFactory,
+      splashColor: Colors.transparent,
+      highlightColor: Colors.transparent,
+      hoverColor: Colors.white.withValues(alpha: 0.04),
       textTheme: bodyTheme.copyWith(
         displayLarge: AppTypography.display(size: 34),
         displayMedium: AppTypography.display(size: 28),
@@ -223,9 +227,29 @@ class AppTheme {
           backgroundColor: AppColors.accent,
           foregroundColor: AppColors.inkOnAccent,
           elevation: 0,
+          shadowColor: Colors.transparent,
+          surfaceTintColor: Colors.transparent,
+          overlayColor: Colors.black.withValues(alpha: 0.08),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(AppRadii.md),
           ),
+        ),
+      ),
+      filledButtonTheme: FilledButtonThemeData(
+        style: FilledButton.styleFrom(
+          backgroundColor: AppColors.accent,
+          foregroundColor: AppColors.inkOnAccent,
+          elevation: 0,
+          shadowColor: Colors.transparent,
+          overlayColor: Colors.black.withValues(alpha: 0.08),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(AppRadii.md),
+          ),
+        ),
+      ),
+      textButtonTheme: TextButtonThemeData(
+        style: TextButton.styleFrom(
+          overlayColor: Colors.white.withValues(alpha: 0.06),
         ),
       ),
       progressIndicatorTheme: const ProgressIndicatorThemeData(

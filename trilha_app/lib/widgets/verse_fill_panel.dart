@@ -817,15 +817,6 @@ class _WordChip extends StatelessWidget {
                     color: Colors.white.withValues(alpha: used ? 0.06 : 0.08),
                     width: 1,
                   ),
-                  boxShadow: used
-                      ? null
-                      : [
-                          BoxShadow(
-                            color: Colors.black.withValues(alpha: 0.45),
-                            blurRadius: 0,
-                            offset: const Offset(0, 3),
-                          ),
-                        ],
                 ),
                 child: Text(
                   label,

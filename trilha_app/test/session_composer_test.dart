@@ -115,7 +115,7 @@ void main() {
       expect(ex.displayCue.toLowerCase().contains('sem forma'), isFalse);
     });
 
-    test('fromBankQuestion keeps tap options as complete-style words', () {
+    test('fromBankQuestion keeps tap as cloze with chips, not verse-tap', () {
       final bq = BankQuestion(
         id: 'g-tap-word',
         trailSlug: 'genesis-1-11',
@@ -142,12 +142,12 @@ void main() {
       expect(ex.options.map((o) => o.text), ['princípio', 'terra', 'estava']);
       expect(ex.prefersVerseTap, isFalse);
       expect(ex.usesCompletePalco, isTrue);
-      expect(ex.palcoTemplate, contains('___'));
+      expect(ex.palcoTemplate, contains('No ___,'));
       expect(ex.displayCue, 'Em Gênesis 1:1–2, toque a palavra que falta');
       expect(ex.displayCue.toLowerCase().contains('princípio criou'), isFalse);
     });
 
-    test('fromBankQuestion complete uses the real question, not Complete a lacuna', () {
+    test('fromBankQuestion complete hides cue when palco already has the verse', () {
       final bq = BankQuestion(
         id: 'g-complete',
         trailSlug: 'genesis-1-11',
@@ -168,8 +168,8 @@ void main() {
       );
       final ex = SessionComposer.fromBankQuestion(bq);
       expect(ex.type, ExerciseType.complete);
-      expect(ex.displayCue, 'Como a terra é descrita antes das ordens criadoras?');
-      expect(ex.displayCue.toLowerCase().contains('lacuna'), isFalse);
+      expect(ex.displayCue, isEmpty);
+      expect(ex.template, 'A terra, porém, era ___.');
     });
 
     test('fromBankQuestion preserves tagged skill', () {

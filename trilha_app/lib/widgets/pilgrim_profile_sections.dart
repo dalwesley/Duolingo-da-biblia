@@ -13,6 +13,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
 import 'immersive_background.dart';
+import 'ui_primitives.dart';
 
 Color pilgrimRankAccent(int rank) => switch (rank) {
       1 => AppColors.medalGold,
@@ -965,14 +966,9 @@ class PilgrimTrailPath extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 12),
-          ClipRRect(
-            borderRadius: BorderRadius.circular(AppRadii.pill),
-            child: LinearProgressIndicator(
-              value: trail.progress,
-              minHeight: 8,
-              backgroundColor: Colors.white.withValues(alpha: 0.06),
-              color: accent,
-            ),
+          AppProgressBar(
+            value: trail.progress,
+            color: accent,
           ),
           const SizedBox(height: 6),
           Text(

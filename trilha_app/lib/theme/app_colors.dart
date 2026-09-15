@@ -11,7 +11,7 @@ import 'package:flutter/material.dart';
 /// - Texto: textOnDark / Appearance.text|textMuted
 /// - Amarelo sólido: [accent] (#F7BB01) — nunca accentBright/sand/ember em labels
 /// - Modos: Observação [accent], Compreensão [coral], Interpretação [orchid]
-/// - CTA: AppGradients.gold + inkOnAccent
+/// - CTA: [accent] chapado + inkOnAccent
 /// - Borda accent: alpha ≥ 0.55 (senão vira “dourado”)
 class AppColors {
   AppColors._();
@@ -21,8 +21,7 @@ class AppColors {
   static const primaryLight = Color(0xFF8AD0FF);
   static const primaryDark = Color(0xFF040910);
 
-  /// CTA / conquista — amarelo do wordmark STWAY (#F7BB01).
-  /// Gradiente: [accentBright] → [accent] → [accentDark] via [AppGradients.gold].
+  /// CTA / conquista — amarelo do wordmark STWAY (#F7BB01), chapado.
   static const accent = Color(0xFFF7BB01);
   static const accentDark = Color(0xFFC99200);
   static const accentSoft = Color(0xFFFFE9A0);
