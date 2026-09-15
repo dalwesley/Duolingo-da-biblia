@@ -355,10 +355,17 @@ class _VerseFillPanelState extends State<VerseFillPanel>
                                   label: _options[i],
                                   used: used.contains(_options[i]),
                                   accent: accent,
-                                  enabled: !used.contains(_options[i]),
                                   stagger: _stagger,
                                   index: i,
-                                  onTap: () => _select(_options[i]),
+                                  onTap: used.contains(_options[i])
+                                      ? () {
+                                          final slot = _picked.entries
+                                              .where((e) => e.value == _options[i])
+                                              .map((e) => e.key)
+                                              .firstOrNull;
+                                          if (slot != null) _clearSlot(slot);
+                                        }
+                                      : () => _select(_options[i]),
                                 ),
                             ],
                           ),
@@ -759,7 +766,6 @@ class _BlankSlot extends StatelessWidget {
 class _WordChip extends StatelessWidget {
   final String label;
   final bool used;
-  final bool enabled;
   final Color accent;
   final AnimationController stagger;
   final int index;
@@ -768,7 +774,6 @@ class _WordChip extends StatelessWidget {
   const _WordChip({
     required this.label,
     required this.used,
-    required this.enabled,
     required this.accent,
     required this.stagger,
     required this.index,
@@ -797,36 +802,32 @@ class _WordChip extends StatelessWidget {
         child: Material(
           color: Colors.transparent,
           child: InkWell(
-            onTap: enabled ? onTap : null,
+            onTap: onTap,
             borderRadius: BorderRadius.circular(AppRadii.md),
-            child: AnimatedOpacity(
+            child: AnimatedContainer(
               duration: const Duration(milliseconds: 200),
-              opacity: used ? 0.3 : 1,
-              child: AnimatedContainer(
-                duration: const Duration(milliseconds: 200),
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 14,
-                  vertical: 12,
-                ),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(14),
+              padding: const EdgeInsets.symmetric(
+                horizontal: 14,
+                vertical: 12,
+              ),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(14),
+                color: used
+                    ? AppMetrics.accentFill(color: accent, alpha: 0.18)
+                    : AppColors.nightElevated,
+                border: Border.all(
                   color: used
-                      ? Colors.white.withValues(alpha: 0.04)
-                      : AppColors.nightElevated,
-                  border: Border.all(
-                    color: Colors.white.withValues(alpha: used ? 0.06 : 0.08),
-                    width: 1,
-                  ),
+                      ? AppMetrics.accentBorder(color: accent, alpha: 0.85)
+                      : Colors.white.withValues(alpha: 0.08),
+                  width: used ? AppMetrics.cardBorderWidth : 1,
                 ),
-                child: Text(
-                  label,
-                  style: AppTypography.body(
-                    size: 15,
-                    weight: FontWeight.w800,
-                    color: AppColors.textOnDark.withValues(
-                      alpha: used ? 0.45 : 0.98,
-                    ),
-                  ),
+              ),
+              child: Text(
+                label,
+                style: AppTypography.body(
+                  size: 15,
+                  weight: FontWeight.w800,
+                  color: AppColors.textOnDark,
                 ),
               ),
             ),

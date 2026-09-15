@@ -175,6 +175,26 @@ void main() {
     expect(tap.needsConfirm, isTrue);
   });
 
+  test('connect palco hides the quiz prompt', () {
+    const ex = Exercise(
+      id: 'k',
+      type: ExerciseType.connect,
+      prompt: 'O que Gênesis 1:1-2 comunica que se liga a este contexto?',
+      correctAnswer: 'a',
+      passageA: ExercisePassage(
+        ref: 'Gênesis 1:1-2',
+        text: 'No princípio, criou Deus o céu e a terra',
+      ),
+      passageB: ExercisePassage(
+        ref: 'Contexto',
+        text: 'Deus é o centro, não eu',
+      ),
+    );
+    expect(ex.showActVerb, isFalse);
+    expect(ex.displayCue, isEmpty);
+    expect(ex.needsConfirm, isTrue);
+  });
+
   test('true/false and choice keep a verse witness on the palco', () {
     const verse = 'No princípio, Deus criou os céus e a terra.';
     const vf = Exercise(

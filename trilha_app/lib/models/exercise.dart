@@ -259,7 +259,8 @@ class Exercise {
     ExerciseType.order ||
     ExerciseType.choice ||
     ExerciseType.textSupported ||
-    ExerciseType.bestInterpretation => false,
+    ExerciseType.bestInterpretation ||
+    ExerciseType.connect => false,
     _ => true,
   };
 
@@ -310,6 +311,11 @@ class Exercise {
   }
 
   bool _isGenericTaskCue(String text) {
+    if (type == ExerciseType.connect &&
+        passageA != null &&
+        passageB != null) {
+      return true;
+    }
     if (type != ExerciseType.complete) return false;
     // Palco já é o verso com lacuna — enunciado extra compete com o bônus.
     if ((palcoTemplate ?? '').contains('___')) return true;

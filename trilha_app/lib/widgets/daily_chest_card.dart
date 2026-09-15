@@ -15,6 +15,7 @@ import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
 import 'confetti_overlay.dart';
 import 'immersive_background.dart';
+import 'medal_cinematic_widgets.dart';
 import 'ui_primitives.dart';
 
 /// Baú do Dia — recompensa cosmética variável, 1x/dia, ao completar a
@@ -23,7 +24,10 @@ import 'ui_primitives.dart';
 /// apresentação — a recompensa em si sempre vem (piso garantido por pity
 /// em [PilgrimChestRoll]).
 class DailyChestCard extends StatelessWidget {
-  const DailyChestCard({super.key});
+  /// Dentro de Gestos de hoje — inset ouro, sem card próprio.
+  final bool embedded;
+
+  const DailyChestCard({super.key, this.embedded = false});
 
   @override
   Widget build(BuildContext context) {
@@ -36,68 +40,87 @@ class DailyChestCard extends StatelessWidget {
 
     final accent = showsTodayReward
         ? tierColor(lastReward.tier)
-        : (available ? AppColors.medalGold : a.textMuted(0.35));
+        : AppColors.medalGold;
+
+    final row = Row(
+      children: [
+        _ChestGlyph(accent: accent, glowing: available),
+        const SizedBox(width: AppSpace.md),
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Baú do Dia',
+                style: AppTypography.title(
+                  size: 14,
+                  weight: FontWeight.w800,
+                  color: a.text,
+                ),
+              ),
+              const SizedBox(height: 2),
+              Text(
+                showsTodayReward
+                    ? lastReward.title
+                    : (available
+                        ? 'Toque para abrir'
+                        : 'Complete a missão de hoje para abrir'),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: AppTypography.body(
+                  size: 12,
+                  weight: FontWeight.w700,
+                  color: accent.withValues(
+                    alpha: showsTodayReward || available ? 0.95 : 0.8,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        const SizedBox(width: AppSpace.md),
+        if (showsTodayReward)
+          const CinematicIcon(
+            glyph: CinematicGlyph.check,
+            size: 22,
+            accent: AppColors.teal,
+            framed: false,
+          )
+        else if (available)
+          CountBadge('Abrir', filled: true, color: accent)
+        else
+          CinematicIcon(
+            glyph: CinematicGlyph.lock,
+            size: 20,
+            accent: accent.withValues(alpha: 0.85),
+            framed: false,
+          ),
+      ],
+    );
+
+    final body = embedded
+        ? DecoratedBox(
+            decoration: BoxDecoration(
+              color: accent.withValues(alpha: available ? 0.16 : 0.1),
+              borderRadius: BorderRadius.circular(AppRadii.md),
+              border: Border.all(
+                color: accent.withValues(alpha: available ? 0.55 : 0.4),
+              ),
+            ),
+            child: Padding(
+              padding: const EdgeInsets.fromLTRB(12, 10, 12, 10),
+              child: row,
+            ),
+          )
+        : GlassCard(
+            padding: AppMetrics.cardPadding,
+            tint: accent,
+            child: row,
+          );
 
     return GestureDetector(
       onTap: available ? () => _open(context) : null,
-      child: GlassCard(
-        padding: AppMetrics.cardPadding,
-        child: Row(
-          children: [
-            _ChestGlyph(accent: accent, glowing: available),
-            const SizedBox(width: AppSpace.md),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    'Baú do Dia',
-                    style: AppTypography.title(
-                      size: 14,
-                      weight: FontWeight.w800,
-                      color: a.text,
-                    ),
-                  ),
-                  const SizedBox(height: 2),
-                  Text(
-                    showsTodayReward
-                        ? lastReward.title
-                        : (available
-                            ? 'Toque para abrir'
-                            : 'Complete a missão de hoje para abrir'),
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: AppTypography.body(
-                      size: 12,
-                      weight: FontWeight.w700,
-                      color: showsTodayReward || available
-                          ? accent
-                          : a.textMuted(0.55),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            const SizedBox(width: AppSpace.md),
-            if (showsTodayReward)
-              const CinematicIcon(
-                glyph: CinematicGlyph.check,
-                size: 22,
-                accent: AppColors.teal,
-                framed: false,
-              )
-            else if (available)
-              CountBadge('Abrir', filled: true, color: accent)
-            else
-              CinematicIcon(
-                glyph: CinematicGlyph.lock,
-                size: 20,
-                accent: a.textMuted(0.4),
-                framed: false,
-              ),
-          ],
-        ),
-      ),
+      child: body,
     );
   }
 
@@ -106,9 +129,11 @@ class DailyChestCard extends StatelessWidget {
     showModalBottomSheet<void>(
       context: context,
       backgroundColor: Colors.transparent,
-      barrierColor: Colors.black.withValues(alpha: 0.72),
+      barrierColor: Colors.black.withValues(alpha: 0.82),
       isScrollControlled: true,
       enableDrag: false,
+      isDismissible: false,
+      useRootNavigator: true,
       builder: (ctx) => const _DailyChestSheet(),
     );
   }
@@ -127,8 +152,10 @@ class _ChestGlyph extends StatelessWidget {
       height: 44,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
-        color: accent.withValues(alpha: glowing ? 0.18 : 0.08),
-        border: Border.all(color: accent.withValues(alpha: glowing ? 0.7 : 0.3)),
+        color: accent.withValues(alpha: glowing ? 0.22 : 0.14),
+        border: Border.all(
+          color: accent.withValues(alpha: glowing ? 0.75 : 0.55),
+        ),
         boxShadow: glowing
             ? [
                 BoxShadow(
@@ -162,6 +189,7 @@ class _DailyChestSheetState extends State<_DailyChestSheet>
     with TickerProviderStateMixin {
   late final AnimationController _anticipation;
   late final AnimationController _reveal;
+  late final AnimationController _pulse;
   bool _opening = false;
   PilgrimChestReward? _reward;
 
@@ -170,18 +198,26 @@ class _DailyChestSheetState extends State<_DailyChestSheet>
     super.initState();
     _anticipation = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 750),
+      duration: const Duration(milliseconds: 900),
     );
     _reveal = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 700),
+      duration: const Duration(milliseconds: 900),
     );
+    _pulse = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 2800),
+    )..repeat();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) unawaited(_open());
+    });
   }
 
   @override
   void dispose() {
     _anticipation.dispose();
     _reveal.dispose();
+    _pulse.dispose();
     super.dispose();
   }
 
@@ -209,12 +245,15 @@ class _DailyChestSheetState extends State<_DailyChestSheet>
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final bottom = MediaQuery.viewPaddingOf(context).bottom;
+    final media = MediaQuery.of(context);
+    final bottom = media.viewPadding.bottom;
+    final minHeight = media.size.height * 0.56;
     final reward = _reward;
     final accent = reward != null ? tierColor(reward.tier) : AppColors.medalGold;
+    final glyph = reward?.glyph ?? CinematicGlyph.gem;
 
     return Padding(
-      padding: EdgeInsets.fromLTRB(AppSpace.md, 0, AppSpace.md, bottom + 12),
+      padding: const EdgeInsets.fromLTRB(AppSpace.md, 0, AppSpace.md, 8),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(AppRadii.xl),
         child: BackdropFilter(
@@ -222,17 +261,18 @@ class _DailyChestSheetState extends State<_DailyChestSheet>
           child: DecoratedBox(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(AppRadii.xl),
-              border: Border.all(color: accent.withValues(alpha: 0.8), width: 1.5),
-              color: AppColors.night.withValues(alpha: 0.94),
-              boxShadow: reward != null
-                  ? [
-                      BoxShadow(
-                        color: accent.withValues(alpha: 0.35),
-                        blurRadius: 32,
-                        offset: const Offset(0, 12),
-                      ),
-                    ]
-                  : null,
+              border: Border.all(
+                color: accent.withValues(alpha: 0.8),
+                width: 1.5,
+              ),
+              color: AppColors.night.withValues(alpha: 0.96),
+              boxShadow: [
+                BoxShadow(
+                  color: accent.withValues(alpha: reward != null ? 0.4 : 0.22),
+                  blurRadius: 32,
+                  offset: const Offset(0, 12),
+                ),
+              ],
             ),
             child: ClipRRect(
               borderRadius: BorderRadius.circular(AppRadii.xl),
@@ -242,101 +282,193 @@ class _DailyChestSheetState extends State<_DailyChestSheet>
                     const Positioned.fill(
                       child: ConfettiOverlay(active: true, cinematic: true),
                     ),
+                  Positioned.fill(
+                    child: IgnorePointer(
+                      child: AnimatedBuilder(
+                        animation: Listenable.merge(
+                          [_pulse, _reveal, _anticipation],
+                        ),
+                        builder: (context, _) {
+                          final breath =
+                              (math.sin(_pulse.value * math.pi * 2) + 1) / 2;
+                          final intensity = reward != null
+                              ? Curves.easeOut.transform(_reveal.value)
+                              : 0.45 + _anticipation.value * 0.35;
+                          return CustomPaint(
+                            painter: MedalSpotlightPainter(
+                              accent: accent,
+                              breath: breath,
+                              intensity: intensity,
+                            ),
+                          );
+                        },
+                      ),
+                    ),
+                  ),
                   Padding(
-                    padding: const EdgeInsets.fromLTRB(24, 20, 24, 24),
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        Container(
-                          width: 40,
-                          height: 4,
-                          decoration: BoxDecoration(
-                            color: Colors.white.withValues(alpha: 0.22),
-                            borderRadius: BorderRadius.circular(AppRadii.pill),
-                          ),
-                        ),
-                        const SizedBox(height: 24),
-                        Text(
-                          reward == null ? 'BAÚ DO DIA' : _headline(reward.tier),
-                          style: AppTypography.label(
-                            size: 11,
-                            letterSpacing: 2.0,
-                            color: accent,
-                          ),
-                        ),
-                        const SizedBox(height: 22),
-                        GestureDetector(
-                          onTap: reward == null ? _open : null,
-                          child: AnimatedBuilder(
-                            animation: Listenable.merge([_anticipation, _reveal]),
-                            builder: (context, _) {
-                              final wobble = _opening
-                                  ? math.sin(_anticipation.value * math.pi * 6) *
-                                      (1 - _anticipation.value) *
-                                      0.18
-                                  : 0.0;
-                              final scale = reward != null
-                                  ? Curves.elasticOut.transform(_reveal.value)
-                                  : 1.0;
-                              return Transform.rotate(
-                                angle: wobble,
-                                child: Transform.scale(
-                                  scale: 0.7 + 0.3 * scale,
-                                  child: _ChestGlyph(
-                                    accent: accent,
-                                    glowing: reward != null || _opening,
-                                  ),
-                                ),
-                              );
-                            },
-                          ),
-                        ),
-                        const SizedBox(height: 18),
-                        if (reward == null) ...[
-                          Text(
-                            _opening ? 'Abrindo…' : 'Toque no baú para abrir',
-                            textAlign: TextAlign.center,
-                            style: AppTypography.body(
-                              size: 14,
-                              color: a.textMuted(0.62),
+                    padding: EdgeInsets.fromLTRB(24, 20, 24, 28 + bottom),
+                    child: SizedBox(
+                      height: minHeight,
+                      child: Column(
+                        children: [
+                          Container(
+                            width: 40,
+                            height: 4,
+                            decoration: BoxDecoration(
+                              color: Colors.white.withValues(alpha: 0.22),
+                              borderRadius:
+                                  BorderRadius.circular(AppRadii.pill),
                             ),
                           ),
-                        ] else ...[
-                          FadeTransition(
-                            opacity: _reveal,
+                          Expanded(
                             child: Column(
                               children: [
+                                const SizedBox(height: 28),
                                 Text(
-                                  reward.title,
-                                  textAlign: TextAlign.center,
-                                  style: AppTypography.display(
-                                    size: 24,
-                                    weight: FontWeight.w900,
-                                    color: a.text,
+                                  reward == null
+                                      ? 'BAÚ DO DIA'
+                                      : _headline(reward.tier),
+                                  style: AppTypography.label(
+                                    size: 11,
+                                    letterSpacing: 2.0,
+                                    color: accent,
                                   ),
                                 ),
-                                const SizedBox(height: 10),
-                                Text(
-                                  reward.message,
-                                  textAlign: TextAlign.center,
-                                  style: AppTypography.body(
-                                    size: 14,
-                                    height: 1.5,
-                                    color: a.textMuted(0.65),
+                                const SizedBox(height: 28),
+                                AnimatedBuilder(
+                                  animation: Listenable.merge(
+                                    [_anticipation, _reveal, _pulse],
                                   ),
+                                  builder: (context, _) {
+                                    final wobble = _opening
+                                        ? math.sin(
+                                              _anticipation.value *
+                                                  math.pi *
+                                                  7,
+                                            ) *
+                                            (1 - _anticipation.value) *
+                                            0.16
+                                        : 0.0;
+                                    final breath = (math.sin(
+                                              _pulse.value * math.pi * 2,
+                                            ) +
+                                            1) /
+                                        2;
+                                    final revealScale = reward != null
+                                        ? Curves.elasticOut
+                                            .transform(_reveal.value)
+                                        : 1.0;
+                                    return Transform.rotate(
+                                      angle: wobble,
+                                      child: Transform.scale(
+                                        scale: 0.86 + 0.14 * revealScale,
+                                        child: MedalHeroEmblem(
+                                          accent: accent,
+                                          glyph: glyph,
+                                          size: 72,
+                                          breath: breath,
+                                          glowing: true,
+                                        ),
+                                      ),
+                                    );
+                                  },
                                 ),
+                                const SizedBox(height: 22),
+                                if (reward == null) ...[
+                                  Text(
+                                    'A constância de hoje guarda uma recompensa.',
+                                    textAlign: TextAlign.center,
+                                    style: AppTypography.title(
+                                      size: 20,
+                                      weight: FontWeight.w800,
+                                      color: a.text,
+                                    ),
+                                  ),
+                                  const SizedBox(height: 10),
+                                  Text(
+                                    _opening
+                                        ? 'Abrindo…'
+                                        : 'A revelação começa agora.',
+                                    textAlign: TextAlign.center,
+                                    style: AppTypography.body(
+                                      size: 14,
+                                      height: 1.45,
+                                      color: a.textMuted(0.62),
+                                    ),
+                                  ),
+                                  const Spacer(),
+                                ] else ...[
+                                  FadeTransition(
+                                    opacity: _reveal,
+                                    child: Column(
+                                      children: [
+                                        Container(
+                                          padding: const EdgeInsets.symmetric(
+                                            horizontal: 12,
+                                            vertical: 5,
+                                          ),
+                                          decoration: BoxDecoration(
+                                            color: accent.withValues(
+                                              alpha: 0.18,
+                                            ),
+                                            borderRadius: BorderRadius.circular(
+                                              AppRadii.pill,
+                                            ),
+                                            border: Border.all(
+                                              color: accent.withValues(
+                                                alpha: 0.55,
+                                              ),
+                                            ),
+                                          ),
+                                          child: Text(
+                                            tierLabel(reward.tier)
+                                                .toUpperCase(),
+                                            style: AppTypography.label(
+                                              size: 10,
+                                              letterSpacing: 1.4,
+                                              color: accent,
+                                            ),
+                                          ),
+                                        ),
+                                        const SizedBox(height: 14),
+                                        Text(
+                                          reward.title,
+                                          textAlign: TextAlign.center,
+                                          style: AppTypography.display(
+                                            size: 26,
+                                            weight: FontWeight.w900,
+                                            color: a.text,
+                                          ),
+                                        ),
+                                        const SizedBox(height: 12),
+                                        Text(
+                                          reward.message,
+                                          textAlign: TextAlign.center,
+                                          style: AppTypography.body(
+                                            size: 14,
+                                            height: 1.5,
+                                            color: a.textMuted(0.65),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  const Spacer(),
+                                  FadeTransition(
+                                    opacity: _reveal,
+                                    child: CopperCta(
+                                      label: 'Continuar a jornada',
+                                      onTap: () => Navigator.pop(context),
+                                      trailing: CinematicGlyph.path,
+                                      dense: true,
+                                    ),
+                                  ),
+                                ],
                               ],
                             ),
                           ),
-                          const SizedBox(height: 24),
-                          CopperCta(
-                            label: 'Continuar a jornada',
-                            onTap: () => Navigator.pop(context),
-                            trailing: CinematicGlyph.path,
-                            dense: true,
-                          ),
                         ],
-                      ],
+                      ),
                     ),
                   ),
                 ],

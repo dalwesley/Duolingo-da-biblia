@@ -116,6 +116,7 @@ class CopperCta extends StatelessWidget {
       duration: const Duration(milliseconds: 180),
       opacity: enabled || busy ? 1 : 0.45,
       child: Container(
+        width: expanded ? double.infinity : null,
         padding: pad,
         decoration: BoxDecoration(
           color: AppColors.accent,

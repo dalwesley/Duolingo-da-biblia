@@ -15,7 +15,6 @@ import '../models/daily_quest.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/comeback_sheet.dart';
 import '../widgets/companion_nudge_home_card.dart';
-import '../widgets/daily_chest_card.dart';
 import '../widgets/daily_quests_card.dart';
 import '../widgets/hero_continue_card.dart';
 import '../widgets/home_player_header.dart';
@@ -423,8 +422,6 @@ class _HomeScreenState extends State<HomeScreen>
                   onQuestTap: (q) => _onQuestTap(q, missionSlug: current?.slug),
                 ),
               ),
-              const SizedBox(height: AppSpace.section),
-              _reveal(3, const DailyChestCard()),
               const SizedBox(height: AppSpace.section),
             ],
             _reveal(
