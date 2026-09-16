@@ -4,23 +4,30 @@ import 'package:flutter/material.dart';
 
 import '../models/trail.dart';
 import '../theme/app_theme.dart';
-import '../utils/appearance.dart';
 import 'act_feel.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
 
 /// Player dos micro-atos — palco direto no fundo, sem card.
 class _ActSkin {
-  static const radius = AppRadii.md;
+  static const radius = 18.0;
   static const gap = AppSpace.sm;
-  static const afterChrome = AppSpace.md;
-  static const afterHero = AppSpace.md;
-  static const cueSize = 24.0;
   static const verseSize = 22.0;
   static const noteSize = 16.0;
   static const pad = EdgeInsets.fromLTRB(14, 14, 16, 14);
   static const anim = Duration(milliseconds: 180);
   static const enter = Duration(milliseconds: 240);
+
+  static const plateShadow = [
+    BoxShadow(
+      color: Color(0x59000000),
+      blurRadius: 0,
+      offset: Offset(0, 4),
+    ),
+  ];
+
+  static Color ivory(Color accent) =>
+      Color.lerp(AppColors.card, accent, 0.16)!;
 
   static ({
     Color fill,
@@ -30,46 +37,40 @@ class _ActSkin {
     Color text,
     bool hot,
   })
-  paint(_OptState state, Color accent, AppearanceStyle a) {
+  paint(_OptState state, Color accent) {
+    final ivory = _ActSkin.ivory(accent);
+    final ink = AppColors.inkOnAccent;
     return switch (state) {
-      _OptState.correct => (
-        fill: AppMetrics.accentFill(color: accent, alpha: 0.22),
-        border: AppMetrics.accentBorder(color: accent, alpha: 0.9),
-        well: accent,
+      _OptState.correct || _OptState.picked => (
+        fill: accent,
+        border: accent,
+        well: ink,
         wellFg: accent,
-        text: AppColors.textOnDark,
+        text: ink,
         hot: true,
       ),
       _OptState.wrong => (
-        fill: AppColors.error.withValues(alpha: 0.16),
-        border: AppColors.error.withValues(alpha: 0.9),
-        well: AppColors.error,
+        fill: AppColors.error.withValues(alpha: 0.92),
+        border: AppColors.error,
+        well: AppColors.textOnDark,
         wellFg: AppColors.error,
         text: AppColors.textOnDark,
         hot: true,
       ),
-      _OptState.picked => (
-        fill: AppMetrics.accentFill(color: accent, alpha: 0.18),
-        border: AppMetrics.accentBorder(color: accent, alpha: 0.85),
-        well: accent,
-        wellFg: accent,
-        text: AppColors.textOnDark,
-        hot: true,
-      ),
       _OptState.dimmed => (
-        fill: a.cardFillSoft.withValues(alpha: 0.5),
-        border: a.cardBorder.withValues(alpha: 0.45),
-        well: AppColors.textOnDark.withValues(alpha: 0.35),
-        wellFg: AppColors.textOnDark.withValues(alpha: 0.35),
-        text: AppColors.textOnDark.withValues(alpha: 0.38),
+        fill: ivory.withValues(alpha: 0.45),
+        border: ivory.withValues(alpha: 0.45),
+        well: Colors.transparent,
+        wellFg: ink.withValues(alpha: 0.35),
+        text: ink.withValues(alpha: 0.38),
         hot: false,
       ),
       _OptState.idle => (
-        fill: a.cardFillSoft,
-        border: a.cardBorder,
-        well: accent,
+        fill: ivory,
+        border: ivory,
+        well: Colors.transparent,
         wellFg: accent,
-        text: AppColors.textOnDark,
+        text: ink,
         hot: false,
       ),
     };
@@ -129,6 +130,8 @@ class _ExercisePanelState extends State<ExercisePanel>
   final Map<String, String> _pairs = {};
   late List<QuestionOption> _shuffledOrderItems;
 
+  bool get _lit => widget.isCorrect == true;
+
   @override
   void initState() {
     super.initState();
@@ -148,6 +151,10 @@ class _ExercisePanelState extends State<ExercisePanel>
       _picked = null;
       _resetLocal();
       _enter.forward(from: 0);
+    } else if (oldWidget.selected != null && widget.selected == null) {
+      // Erro: o pai limpou a seleção para nova tentativa — solta o CTA.
+      _picked = null;
+      _resetLocal();
     }
     if (widget.selected != null && widget.selected != _picked) {
       _picked = widget.selected;
@@ -218,11 +225,6 @@ class _ExercisePanelState extends State<ExercisePanel>
     if (_locked || widget.eliminatedIds.contains(id)) return;
     ActHaptics.tap();
     setState(() => _picked = id);
-    if (!widget.exercise.needsConfirm) {
-      WidgetsBinding.instance.addPostFrameCallback((_) {
-        if (mounted && _picked == id) _submit(id);
-      });
-    }
   }
 
   void _clearComplete() {
@@ -268,14 +270,8 @@ class _ExercisePanelState extends State<ExercisePanel>
       _ => _picked != null && !_locked,
     };
     final options = ex.effectiveOptions;
-    final cue = ex.displayCue;
-    final showQuestion = cue.isNotEmpty;
-    final questionIsLong = showQuestion && cue.length > 72;
-
-    final hero = _fieldHero(ex);
-    final response = _responseSurface(ex, options);
-    final palco = hero;
-    final below = response;
+    final palco = _fieldHero(ex);
+    final below = _responseSurface(ex, options);
     final showFooter = _showFooter(ex);
 
     return Padding(
@@ -285,88 +281,68 @@ class _ExercisePanelState extends State<ExercisePanel>
         AppSpace.screen,
         AppSpace.sm,
       ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
+      child: Stack(
         children: [
-          if (ex.showActVerb)
-            _in(
-              0,
-              0.45,
-              Text(
-                ex.instructionVerb.toUpperCase(),
-                style: AppTypography.label(
-                  size: 11,
-                  letterSpacing: 1.6,
-                  color: widget.accent,
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              _in(
+                0,
+                0.42,
+                _GestureSeal(
+                  title: ex.instructionTitle,
+                  accent: widget.accent,
                 ),
               ),
+              if (_showNote(ex)) ...[
+                const SizedBox(height: AppSpace.md),
+                _in(
+                  0.1,
+                  0.6,
+                  _ContextNote(
+                    label: (ex.noteLabel ?? 'Contexto').trim(),
+                    text: ex.note!.trim(),
+                    accent: widget.accent,
+                  ),
+                ),
+              ],
+              const SizedBox(height: 14),
+              if (palco != null)
+                Expanded(child: _in(0.12, 0.72, SizedBox.expand(child: palco)))
+              else
+                const Spacer(),
+              if (below.isNotEmpty) ...[
+                const SizedBox(height: 12),
+                _in(
+                  0.35,
+                  1,
+                  Column(
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: below,
+                  ),
+                ),
+              ],
+              if (showFooter) ...[
+                const SizedBox(height: 10),
+                _in(0.55, 1, _footer(ex, canConfirm)),
+              ],
+            ],
+          ),
+          Positioned.fill(
+            child: ActSparkBurst(
+              active: widget.isCorrect == true,
+              color: widget.accent,
             ),
-          if (showQuestion) ...[
-            if (ex.showActVerb) const SizedBox(height: 8),
-            _in(
-              0.05,
-              0.55,
-              Text(
-                cue,
-                textAlign: TextAlign.left,
-                style: questionIsLong
-                    ? AppTypography.body(
-                        size: 18,
-                        height: 1.28,
-                        weight: FontWeight.w600,
-                        color: AppColors.textOnDark,
-                      )
-                    : AppTypography.display(
-                        size: _ActSkin.cueSize,
-                        height: 1.22,
-                      ),
-              ),
-            ),
-          ],
-          if (_showNote(ex)) ...[
-            const SizedBox(height: AppSpace.md),
-            _in(
-              0.1,
-              0.6,
-              _ContextNote(
-                label: (ex.noteLabel ?? 'Contexto').trim(),
-                text: ex.note!.trim(),
-                accent: widget.accent,
-              ),
-            ),
-          ],
-          const SizedBox(height: _ActSkin.afterChrome),
-          if (palco != null)
-            Expanded(child: palco)
-          else
-            const Spacer(),
-          if (below.isNotEmpty) ...[
-            const SizedBox(height: _ActSkin.afterHero),
-            _in(
-              0.35,
-              1,
-              Column(
-                mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: below,
-              ),
-            ),
-          ],
-          if (showFooter) ...[
-            const SizedBox(height: AppSpace.sm),
-            _in(0.55, 1, _footer(ex, canConfirm)),
-          ],
+          ),
         ],
       ),
     );
   }
 
   bool _showFooter(Exercise ex) {
-    final continueLast = widget.isCorrect == true &&
-        widget.onResolvedContinue != null;
-    if (continueLast) return true;
-    final hint = widget.onHint != null && ex.supportsHint;
-    return hint || ex.needsConfirm;
+    if (ex.type.isRevealOnly) return false;
+    return true;
   }
 
   bool _showNote(Exercise ex) {
@@ -390,20 +366,22 @@ class _ExercisePanelState extends State<ExercisePanel>
         return _clozePalco(ex);
       case ExerciseType.connect:
       case ExerciseType.tap when ex.passageA != null || ex.passageB != null:
+        final id = widget.selected ?? _picked;
         return _BridgePassages(
           passageA: ex.passageA,
           passageB: ex.passageB,
           accent: widget.accent,
-          resolved: widget.isCorrect == true,
-          insight: (widget.insightFallback ?? '').trim(),
-          picked: () {
-            final id = widget.selected ?? _picked;
-            if (id == null) return null;
-            return ex.effectiveOptions
-                .where((o) => o.id == id)
-                .map((o) => o.text)
-                .firstOrNull;
-          }(),
+          lit: _lit,
+          fill: true,
+          footer: _stagePromptOf(ex),
+          picked: id == null
+              ? null
+              : ex.effectiveOptions
+                    .where((o) => o.id == id)
+                    .map((o) => o.text)
+                    .firstOrNull,
+          expected: ex.correctOptionText ?? 'ponte',
+          state: id == null ? _OptState.idle : _state(id),
           pulse: _pulse,
           onClear: _locked ? null : _clearComplete,
         );
@@ -417,6 +395,9 @@ class _ExercisePanelState extends State<ExercisePanel>
             reference: _witnessRef(ex),
             exercise: ex,
             locked: _locked,
+            lit: _lit,
+            fill: true,
+            footer: _stagePromptOf(ex),
             onPick: _locked ? null : _pickChoice,
             stateFor: _state,
           );
@@ -427,6 +408,8 @@ class _ExercisePanelState extends State<ExercisePanel>
       case ExerciseType.match:
         return _Manuscript(
           accent: widget.accent,
+          lit: _lit,
+          fill: false,
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -457,6 +440,9 @@ class _ExercisePanelState extends State<ExercisePanel>
       accent: widget.accent,
       reference: _witnessRef(ex),
       pulse: _pulse,
+      lit: _lit,
+      fill: true,
+      footer: _stagePromptOf(ex),
       onClear: _locked ? null : _clearComplete,
     );
   }
@@ -468,6 +454,27 @@ class _ExercisePanelState extends State<ExercisePanel>
     return board.isEmpty ? null : board;
   }
 
+  Widget? _stagePromptOf(Exercise ex) {
+    if (ex.showsStagePrompt) {
+      return _TaskPrompt(
+        label: ex.taskPromptLabel,
+        text: ex.displayCue,
+        accent: widget.accent,
+      );
+    }
+    final label = switch (ex.type) {
+      ExerciseType.tap ||
+      ExerciseType.findInText ||
+      ExerciseType.complete => 'Palavra',
+      ExerciseType.connect => 'Ponte',
+      ExerciseType.order => 'Ordem',
+      ExerciseType.match => 'Pares',
+      _ => null,
+    };
+    if (label == null) return null;
+    return _TaskPrompt(label: label, text: '', accent: widget.accent);
+  }
+
   Widget? _witnessFromBoard() {
     final board = (widget.boardText ?? '').trim();
     if (board.isEmpty) return null;
@@ -475,18 +482,33 @@ class _ExercisePanelState extends State<ExercisePanel>
       text: board,
       accent: widget.accent,
       reference: _witnessRef(widget.exercise),
+      lit: _lit,
+      fill: true,
     );
   }
 
   Widget? _witnessPalco(Exercise ex) {
     final text = ex.stageWitness(fallback: widget.boardText);
-    if (text == null) return null;
+    final prompt = _stagePromptOf(ex);
+    if (text == null && prompt == null) return null;
+    if (text == null) {
+      return _Manuscript(
+        accent: widget.accent,
+        reference: _witnessRef(ex),
+        framed: true,
+        fill: true,
+        lit: _lit,
+        child: prompt!,
+      );
+    }
     return _PassageBlock(
       text: text,
       accent: widget.accent,
       reference: _witnessRef(ex),
       framed: true,
       fill: true,
+      lit: _lit,
+      footer: prompt,
     );
   }
 
@@ -499,6 +521,7 @@ class _ExercisePanelState extends State<ExercisePanel>
               Expanded(
                 child: _VfSlab(
                   label: 'Verdadeiro',
+                  mark: 'V',
                   state: _state('true'),
                   accent: widget.accent,
                   onTap: _locked ? null : () => _pickChoice('true'),
@@ -508,6 +531,7 @@ class _ExercisePanelState extends State<ExercisePanel>
               Expanded(
                 child: _VfSlab(
                   label: 'Falso',
+                  mark: 'F',
                   state: _state('false'),
                   accent: widget.accent,
                   onTap: _locked ? null : () => _pickChoice('false'),
@@ -524,7 +548,7 @@ class _ExercisePanelState extends State<ExercisePanel>
         if (ex.prefersVerseTap) return const [];
         return _chipBank(ex.effectiveOptions);
       case ExerciseType.connect:
-        return _chipBank(ex.effectiveOptions);
+        return _chipBank(ex.effectiveOptions, occupyVerse: true);
       case ExerciseType.order:
         return [_orderList()];
       case ExerciseType.match:
@@ -541,6 +565,7 @@ class _ExercisePanelState extends State<ExercisePanel>
     return Opacity(
       opacity: eliminated ? 0.38 : 1,
       child: _OptionTile(
+        mark: o.id.length <= 2 ? o.id.toUpperCase() : null,
         text: o.text,
         state: eliminated ? _OptState.dimmed : _state(o.id),
         accent: widget.accent,
@@ -550,10 +575,7 @@ class _ExercisePanelState extends State<ExercisePanel>
     );
   }
 
-  Widget _bankChip(
-    QuestionOption o, {
-    bool fill = false,
-  }) {
+  Widget _bankChip(QuestionOption o, {bool fill = false}) {
     final eliminated = widget.eliminatedIds.contains(o.id);
     final state = eliminated ? _OptState.dimmed : _state(o.id);
     return _WordChip(
@@ -577,10 +599,8 @@ class _ExercisePanelState extends State<ExercisePanel>
     return Row(
       children: [
         for (var i = 0; i < slice.length; i++) ...[
-          if (i > 0) const SizedBox(width: 8),
-          Expanded(
-            child: _bankChip(slice[i], fill: true),
-          ),
+          if (i > 0) const SizedBox(width: 10),
+          Expanded(child: _bankChip(slice[i], fill: true)),
         ],
       ],
     );
@@ -591,12 +611,15 @@ class _ExercisePanelState extends State<ExercisePanel>
     bool occupyVerse = false,
   }) {
     if (options.isEmpty) return const [];
-    final short = options.every((o) => o.text.trim().length <= 22);
+    final short = options.every((o) {
+      final t = o.text.trim();
+      return t.length <= 22 && !t.contains(' ');
+    });
     if (!short && !occupyVerse) {
       return [
         for (var i = 0; i < options.length; i++)
           Padding(
-            padding: EdgeInsets.only(bottom: i == options.length - 1 ? 0 : 8),
+            padding: EdgeInsets.only(bottom: i == options.length - 1 ? 0 : 10),
             child: _tileFor(options[i]),
           ),
       ];
@@ -609,7 +632,7 @@ class _ExercisePanelState extends State<ExercisePanel>
         Column(
           children: [
             for (var i = 0; i < options.length; i++) ...[
-              if (i > 0) const SizedBox(height: 8),
+              if (i > 0) const SizedBox(height: 10),
               _bankChip(options[i], fill: true),
             ],
           ],
@@ -621,7 +644,7 @@ class _ExercisePanelState extends State<ExercisePanel>
         Column(
           children: [
             _slabRow(options.sublist(0, 2)),
-            const SizedBox(height: 8),
+            const SizedBox(height: 10),
             _slabRow(options.sublist(2)),
           ],
         ),
@@ -632,9 +655,7 @@ class _ExercisePanelState extends State<ExercisePanel>
         spacing: 8,
         runSpacing: 8,
         alignment: WrapAlignment.center,
-        children: [
-          for (final o in options) _bankChip(o),
-        ],
+        children: [for (final o in options) _bankChip(o)],
       ),
     ];
   }
@@ -644,7 +665,7 @@ class _ExercisePanelState extends State<ExercisePanel>
     return [
       for (var i = 0; i < options.length; i++)
         Padding(
-          padding: EdgeInsets.only(bottom: i == options.length - 1 ? 0 : 8),
+          padding: EdgeInsets.only(bottom: i == options.length - 1 ? 0 : 10),
           child: _tileFor(options[i]),
         ),
     ];
@@ -661,7 +682,8 @@ class _ExercisePanelState extends State<ExercisePanel>
       physics: const NeverScrollableScrollPhysics(),
       buildDefaultDragHandles: false,
       padding: EdgeInsets.zero,
-      proxyDecorator: (child, index, animation) => child,
+      proxyDecorator: (child, index, animation) =>
+          ActDragProxy(animation: animation, child: child),
       onReorderStart: (_) {
         if (!_locked) ActHaptics.tick();
       },
@@ -678,7 +700,7 @@ class _ExercisePanelState extends State<ExercisePanel>
       itemBuilder: (context, i) {
         return Padding(
           key: ValueKey(pool[i].id),
-          padding: EdgeInsets.only(bottom: i == pool.length - 1 ? 0 : 8),
+          padding: EdgeInsets.only(bottom: i == pool.length - 1 ? 0 : 10),
           child: ReorderableDragStartListener(
             index: i,
             enabled: !_locked,
@@ -787,50 +809,36 @@ class _ExercisePanelState extends State<ExercisePanel>
   }
 
   Widget _footer(Exercise ex, bool canConfirm) {
-    final continueLast = widget.isCorrect == true &&
-        widget.onResolvedContinue != null;
-    final showHint = widget.onHint != null && ex.supportsHint;
-    final waiting = !continueLast &&
-        (_confirming || widget.selected != null);
-    final cta = continueLast
-        ? CopperCta(
-            label: 'Seguir',
-            onTap: widget.onResolvedContinue,
-            trailing: null,
-            padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 14),
-          )
-        : CopperCta(
-            label: 'Confirmar',
-            onTap: canConfirm && !waiting ? _confirmChoice : null,
-            busy: waiting,
-            trailing: null,
-            padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 14),
-          );
+    final hintAvailable = widget.onHint != null && ex.supportsHint;
+    final waiting = _confirming || widget.selected != null;
 
-    return Padding(
-      padding: const EdgeInsets.only(top: AppSpace.xs, bottom: AppSpace.sm),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          if (showHint)
-            Align(
-              alignment: Alignment.centerLeft,
-              child: TextButton(
-                onPressed: widget.hintUsed || _locked ? null : widget.onHint,
-                child: Text(
-                  widget.hintUsed ? 'Dica usada' : 'Dica',
-                  style: AppTypography.body(
-                    size: 13,
-                    color: widget.hintUsed
-                        ? AppColors.textOnDark.withValues(alpha: 0.35)
-                        : widget.accent,
-                  ),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        if (hintAvailable)
+          Align(
+            alignment: Alignment.centerLeft,
+            child: TextButton(
+              onPressed: widget.hintUsed || _locked ? null : widget.onHint,
+              child: Text(
+                widget.hintUsed ? 'Dica usada' : 'Dica',
+                style: AppTypography.body(
+                  size: 13,
+                  color: widget.hintUsed || _locked
+                      ? AppColors.textOnDark.withValues(alpha: 0.35)
+                      : widget.accent,
                 ),
               ),
             ),
-          cta,
-        ],
-      ),
+          ),
+        CopperCta(
+          label: 'Continuar',
+          onTap: canConfirm && !waiting ? _confirmChoice : null,
+          busy: waiting,
+          trailing: null,
+          padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 15),
+        ),
+      ],
     );
   }
 
@@ -856,32 +864,50 @@ class _ExercisePanelState extends State<ExercisePanel>
 TextStyle _verseWordStyle({
   Color? color,
   FontWeight weight = FontWeight.w600,
+  double height = 1.55,
 }) => AppTypography.verse(
   size: _ActSkin.verseSize,
   weight: weight,
-  height: 1.5,
+  height: height,
   color: color ?? AppColors.textOnDark,
 );
 
-List<Widget> _verseWords(String text) {
-  return [
-    for (final w in text.split(RegExp(r'\s+')).where((s) => s.isNotEmpty))
-      Text(w, style: _verseWordStyle()),
-  ];
-}
+class _GestureSeal extends StatelessWidget {
+  final String title;
+  final Color accent;
 
-List<Widget> _completeWords(String text) {
-  return [
-    for (final w in text.split(RegExp(r'\s+')).where((s) => s.isNotEmpty))
-      Text(
-        w,
-        style: AppTypography.display(
-          size: _ActSkin.verseSize,
-          weight: FontWeight.w700,
-          height: 1.45,
+  const _GestureSeal({required this.title, required this.accent});
+
+  CinematicGlyph get _glyph => switch (title.split(' ').first.toLowerCase()) {
+    'julgue' => CinematicGlyph.scales,
+    'toque' => CinematicGlyph.search,
+    'escolha' => CinematicGlyph.target,
+    'ordene' => CinematicGlyph.path,
+    'complete' => CinematicGlyph.spark,
+    'conecte' => CinematicGlyph.chain,
+    _ => CinematicGlyph.book,
+  };
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        CinematicIcon(glyph: _glyph, size: 22, accent: accent, framed: false),
+        const SizedBox(width: 10),
+        Expanded(
+          child: Text(
+            title.toUpperCase(),
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: AppTypography.title(
+              size: 18,
+              color: AppColors.textOnDark,
+            ).copyWith(letterSpacing: 1.4),
+          ),
         ),
-      ),
-  ];
+      ],
+    );
+  }
 }
 
 class _ContextNote extends StatelessWidget {
@@ -937,6 +963,51 @@ class _ContextNote extends StatelessWidget {
   }
 }
 
+class _TaskPrompt extends StatelessWidget {
+  final String label;
+  final String text;
+  final Color accent;
+
+  const _TaskPrompt({
+    required this.label,
+    required this.text,
+    required this.accent,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final body = text.trim();
+    return Column(
+      children: [
+        Container(
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
+          decoration: BoxDecoration(
+            color: Colors.black.withValues(alpha: 0.35),
+            borderRadius: BorderRadius.circular(AppRadii.pill),
+            border: Border.all(color: accent.withValues(alpha: 0.45)),
+          ),
+          child: Text(
+            '${label.toUpperCase()}:',
+            style: AppTypography.label(
+              size: 10,
+              letterSpacing: 1.6,
+              color: accent,
+            ),
+          ),
+        ),
+        if (body.isNotEmpty) ...[
+          const SizedBox(height: 12),
+          Text(
+            body,
+            textAlign: TextAlign.center,
+            style: AppTypography.title(size: 16, height: 1.3, color: accent),
+          ),
+        ],
+      ],
+    );
+  }
+}
+
 class _RefLabel extends StatelessWidget {
   final String reference;
   final Color accent;
@@ -948,9 +1019,9 @@ class _RefLabel extends StatelessWidget {
     final ref = reference.trim();
     if (ref.isEmpty) return const SizedBox.shrink();
     return Text(
-      ref,
+      ref.toUpperCase(),
       textAlign: TextAlign.center,
-      style: AppTypography.label(size: 11, letterSpacing: 0.6, color: accent),
+      style: AppTypography.label(size: 13, letterSpacing: 1.8, color: accent),
     );
   }
 }
@@ -961,28 +1032,47 @@ class _Manuscript extends StatelessWidget {
   final String? reference;
   final bool framed;
   final bool fill;
+  final bool lit;
+  final Widget? footer;
 
   const _Manuscript({
     required this.accent,
     required this.child,
     this.reference,
     this.framed = false,
-    this.fill = true,
+    this.fill = false,
+    this.lit = false,
+    this.footer,
   });
 
   BoxDecoration get _plate => BoxDecoration(
-    color: AppColors.nightElevated.withValues(alpha: 0.78),
-    borderRadius: BorderRadius.circular(16),
+    borderRadius: BorderRadius.circular(20),
+    gradient: LinearGradient(
+      begin: Alignment.topCenter,
+      end: Alignment.bottomCenter,
+      colors: [
+        Color.lerp(AppColors.nightElevated, accent, lit ? 0.18 : 0.07)!,
+        AppColors.nightElevated.withValues(alpha: 0.92),
+      ],
+    ),
     border: Border.all(
-      color: Colors.white.withValues(alpha: 0.08),
-      width: 1,
+      color: lit
+          ? accent.withValues(alpha: 0.72)
+          : Colors.white.withValues(alpha: 0.10),
+      width: lit ? 1.6 : 1,
     ),
     boxShadow: [
       BoxShadow(
-        color: Colors.black.withValues(alpha: 0.45),
+        color: Colors.black.withValues(alpha: 0.5),
         blurRadius: 0,
-        offset: const Offset(0, 4),
+        offset: const Offset(0, 5),
       ),
+      if (lit)
+        BoxShadow(
+          color: accent.withValues(alpha: 0.28),
+          blurRadius: 28,
+          spreadRadius: -6,
+        ),
     ],
   );
 
@@ -1016,25 +1106,25 @@ class _Manuscript extends StatelessWidget {
             const SizedBox(height: 14),
           ],
           child,
+          if (footer != null) ...[const SizedBox(height: 18), footer!],
         ],
       );
       final plate = framed
           ? Container(
               width: double.infinity,
-              padding: const EdgeInsets.all(18),
+              padding: const EdgeInsets.fromLTRB(18, 18, 18, 22),
               decoration: _plate,
+              clipBehavior: Clip.none,
               child: content,
             )
           : content;
       return LayoutBuilder(
         builder: (context, constraints) {
           if (!constraints.maxHeight.isFinite) return plate;
-          return ConstrainedBox(
-            constraints: BoxConstraints(maxHeight: constraints.maxHeight),
-            child: SingleChildScrollView(
-              physics: const BouncingScrollPhysics(),
-              child: plate,
-            ),
+          return CustomScrollView(
+            shrinkWrap: true,
+            physics: const BouncingScrollPhysics(),
+            slivers: [SliverToBoxAdapter(child: plate)],
           );
         },
       );
@@ -1046,7 +1136,7 @@ class _Manuscript extends StatelessWidget {
       return Container(
         width: double.infinity,
         height: double.infinity,
-        padding: const EdgeInsets.all(18),
+        padding: const EdgeInsets.fromLTRB(22, 20, 22, 22),
         decoration: _plate,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -1056,12 +1146,13 @@ class _Manuscript extends StatelessWidget {
               const SizedBox(height: 14),
             ],
             Expanded(child: stage),
+            if (footer != null) ...[const SizedBox(height: 16), footer!],
           ],
         ),
       );
     }
 
-    if (ref.isEmpty) return stage;
+    if (ref.isEmpty && footer == null) return stage;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -1083,6 +1174,9 @@ class _CompleteVerse extends StatelessWidget {
   final String? reference;
   final AnimationController pulse;
   final VoidCallback? onClear;
+  final bool lit;
+  final bool fill;
+  final Widget? footer;
 
   const _CompleteVerse({
     required this.template,
@@ -1093,6 +1187,9 @@ class _CompleteVerse extends StatelessWidget {
     this.expected,
     this.reference,
     this.onClear,
+    this.lit = false,
+    this.fill = false,
+    this.footer,
   });
 
   static final _blank = RegExp(r'_{3,}');
@@ -1104,33 +1201,40 @@ class _CompleteVerse extends StatelessWidget {
     final hasBlank = match != null && last != null;
     final before = hasBlank ? template.substring(0, match.start) : template;
     final after = hasBlank ? template.substring(last.end) : '';
+    final style = _verseWordStyle();
 
     return _Manuscript(
       accent: accent,
       reference: reference,
       framed: true,
-      fill: true,
-      child: Wrap(
-        spacing: 5,
-        runSpacing: 12,
-        alignment: WrapAlignment.center,
-        crossAxisAlignment: WrapCrossAlignment.center,
-        children: [
-          ..._completeWords(before),
-          if (hasBlank)
-            ActShake(
-              active: state == _OptState.wrong,
-              child: _BlankGap(
-                filled: filled,
-                expected: expected ?? filled ?? 'palavra',
-                state: state,
-                accent: accent,
-                pulse: pulse,
-                onClear: onClear,
+      fill: fill,
+      lit: lit,
+      footer: footer,
+      child: Text.rich(
+        TextSpan(
+          style: style,
+          children: [
+            if (before.isNotEmpty) TextSpan(text: before),
+            if (hasBlank)
+              WidgetSpan(
+                alignment: PlaceholderAlignment.baseline,
+                baseline: TextBaseline.alphabetic,
+                child: ActShake(
+                  active: state == _OptState.wrong,
+                  child: _BlankGap(
+                    filled: filled,
+                    expected: expected ?? filled ?? 'palavra',
+                    state: state,
+                    accent: accent,
+                    pulse: pulse,
+                    onClear: onClear,
+                  ),
+                ),
               ),
-            ),
-          ..._completeWords(after),
-        ],
+            if (after.isNotEmpty) TextSpan(text: after),
+          ],
+        ),
+        textAlign: TextAlign.center,
       ),
     );
   }
@@ -1156,65 +1260,71 @@ class _BlankGap extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final has = (filled ?? '').trim().isNotEmpty;
+    final probeStyle = _verseWordStyle(weight: FontWeight.w700);
     final probe = TextPainter(
-      text: TextSpan(
-        text: has ? filled! : expected,
-        style: AppTypography.display(
-          size: _ActSkin.verseSize,
-          weight: FontWeight.w800,
-        ),
-      ),
+      text: TextSpan(text: has ? filled! : expected, style: probeStyle),
       textDirection: TextDirection.ltr,
     )..layout();
-    final minW = math.max(48.0, probe.width);
-    final body = AppTypography.display(
-      size: _ActSkin.verseSize,
-      weight: FontWeight.w800,
-      height: 1.45,
-    );
+    final minW = math.min(260.0, math.max(72.0, probe.width + 8));
 
     if (has && state == _OptState.wrong) {
-      return Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          Text(
-            filled!,
-            style: body
-                .copyWith(color: AppColors.error, height: 1.2)
-                .copyWith(decoration: TextDecoration.lineThrough),
-          ),
-          Text(
-            expected,
-            style: AppTypography.display(
-              size: _ActSkin.verseSize * 0.85,
-              weight: FontWeight.w800,
-              height: 1.15,
-              color: accent,
+      return ConstrainedBox(
+        constraints: const BoxConstraints(maxWidth: 260),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Text(
+              filled!,
+              textAlign: TextAlign.center,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+              style: probeStyle
+                  .copyWith(color: AppColors.error, height: 1.25)
+                  .copyWith(decoration: TextDecoration.lineThrough),
             ),
-          ),
-        ],
+            Text(
+              expected,
+              textAlign: TextAlign.center,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+              style: _verseWordStyle(color: accent, weight: FontWeight.w700),
+            ),
+          ],
+        ),
       );
     }
 
     if (has) {
       return GestureDetector(
         onTap: onClear,
-        child: Text(filled!, style: body.copyWith(color: accent)),
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 260),
+          child: Text(
+            filled!,
+            textAlign: TextAlign.center,
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
+            style: _verseWordStyle(color: accent, weight: FontWeight.w700),
+          ),
+        ),
       );
     }
 
     final slot = SizedBox(
       width: minW,
-      height: _ActSkin.verseSize * 1.45,
+      height: _ActSkin.verseSize * 1.5,
       child: Align(
         alignment: Alignment.bottomCenter,
         child: Container(
           height: 3,
           width: minW,
-          margin: const EdgeInsets.only(bottom: 2),
+          margin: const EdgeInsets.only(bottom: 3),
           decoration: BoxDecoration(
             color: accent,
             borderRadius: BorderRadius.circular(AppRadii.pill),
+            boxShadow: [
+              BoxShadow(color: accent.withValues(alpha: 0.45), blurRadius: 8),
+            ],
           ),
         ),
       ),
@@ -1235,194 +1345,80 @@ class _BridgePassages extends StatelessWidget {
   final ExercisePassage? passageA;
   final ExercisePassage? passageB;
   final Color accent;
-  final bool resolved;
-  final String insight;
+  final bool lit;
+  final bool fill;
   final String? picked;
+  final String expected;
+  final _OptState state;
   final AnimationController pulse;
   final VoidCallback? onClear;
+  final Widget? footer;
 
   const _BridgePassages({
     required this.accent,
     required this.pulse,
+    required this.expected,
+    required this.state,
     this.passageA,
     this.passageB,
-    this.resolved = false,
-    this.insight = '',
+    this.lit = false,
+    this.fill = false,
     this.picked,
     this.onClear,
+    this.footer,
   });
 
   @override
   Widget build(BuildContext context) {
-    final b = passageB;
-    final bIsInsight = b != null &&
-        (b.ref.trim().toLowerCase() == 'contexto' ||
-            (insight.isNotEmpty &&
-                b.text.trim().toLowerCase() == insight.toLowerCase()));
-    final showInsight = resolved && insight.isNotEmpty && !bIsInsight;
-
     return _Manuscript(
       accent: accent,
       framed: true,
-      fill: true,
+      fill: fill,
+      lit: lit,
+      footer: footer,
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          if (passageA != null) _bridgeVerse(passageA!, accent, hoje: false),
-          if (passageA != null && passageB != null)
-            _BridgeSnap(
-              accent: accent,
-              resolved: resolved,
-              picked: picked,
-              pulse: pulse,
-              onClear: onClear,
-            ),
-          if (passageB != null)
-            _bridgeVerse(passageB!, accent, hoje: resolved && bIsInsight),
-          if (showInsight) ...[
-            const SizedBox(height: 18),
-            Text(
-              'HOJE',
-              style: AppTypography.label(
-                size: 11,
-                letterSpacing: 2.2,
-                color: accent,
+          if (passageA != null) _connectStanza(passageA!, accent),
+          if (passageA != null && passageB != null) ...[
+            const SizedBox(height: 14),
+            ActShake(
+              active: state == _OptState.wrong,
+              child: Center(
+                child: _BlankGap(
+                  filled: picked,
+                  expected: expected,
+                  state: state,
+                  accent: accent,
+                  pulse: pulse,
+                  onClear: onClear,
+                ),
               ),
             ),
-            const SizedBox(height: 8),
-            Text(
-              insight,
-              textAlign: TextAlign.center,
-              style: AppTypography.display(size: 22, height: 1.28),
-            ),
+            const SizedBox(height: 14),
           ],
+          if (passageB != null) _connectStanza(passageB!, accent),
         ],
       ),
     );
   }
 }
 
-Widget _bridgeVerse(
-  ExercisePassage passage,
-  Color accent, {
-  required bool hoje,
-}) {
+Widget _connectStanza(ExercisePassage passage, Color accent) {
   final ref = passage.ref.trim();
-  Widget? head;
-  if (hoje) {
-    head = Text(
-      'HOJE',
-      style: AppTypography.label(
-        size: 11,
-        letterSpacing: 2.2,
-        color: accent,
-      ),
-    );
-  } else if (ref.isNotEmpty) {
-    head = _RefLabel(reference: ref, accent: accent);
-  }
   return Column(
     children: [
-      if (head != null) ...[head, const SizedBox(height: 12)],
-      Wrap(
-        spacing: 5,
-        runSpacing: 12,
-        alignment: WrapAlignment.center,
-        crossAxisAlignment: WrapCrossAlignment.center,
-        children: _verseWords(passage.text),
+      if (ref.isNotEmpty) ...[
+        _RefLabel(reference: ref, accent: accent),
+        const SizedBox(height: 8),
+      ],
+      Text(
+        passage.text.trim(),
+        textAlign: TextAlign.center,
+        style: _verseWordStyle(height: 1.35),
       ),
     ],
   );
-}
-
-class _BridgeSnap extends StatelessWidget {
-  final Color accent;
-  final bool resolved;
-  final String? picked;
-  final AnimationController pulse;
-  final VoidCallback? onClear;
-
-  const _BridgeSnap({
-    required this.accent,
-    required this.resolved,
-    required this.pulse,
-    this.picked,
-    this.onClear,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final has = (picked ?? '').trim().isNotEmpty;
-    final line = resolved || has
-        ? accent
-        : Colors.white.withValues(alpha: 0.14);
-
-    Widget slot = ConstrainedBox(
-      constraints: const BoxConstraints(minWidth: 152, minHeight: 48),
-      child: AnimatedContainer(
-        duration: _ActSkin.anim,
-        curve: Curves.easeOutCubic,
-        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
-        alignment: Alignment.center,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(14),
-          color: resolved
-              ? AppMetrics.accentFill(color: accent, alpha: 0.22)
-              : AppColors.nightElevated,
-          border: Border.all(
-            color: has
-                ? AppMetrics.accentBorder(color: accent, alpha: 0.9)
-                : Colors.white.withValues(alpha: 0.16),
-            width: has ? AppMetrics.cardBorderWidth : 1,
-          ),
-        ),
-        child: Text(
-          has ? picked! : 'toque a ponte',
-          textAlign: TextAlign.center,
-          maxLines: 2,
-          overflow: TextOverflow.ellipsis,
-          style: has
-              ? AppTypography.body(
-                  size: 15,
-                  weight: FontWeight.w800,
-                  color: accent,
-                )
-              : AppTypography.label(
-                  size: 12,
-                  letterSpacing: 0.6,
-                  color: AppColors.textOnDark.withValues(alpha: 0.45),
-                ),
-        ),
-      ),
-    );
-
-    if (!has) {
-      slot = AnimatedBuilder(
-        animation: pulse,
-        builder: (context, child) {
-          final t = Curves.easeInOut.transform(pulse.value);
-          return Opacity(opacity: 0.72 + t * 0.28, child: child);
-        },
-        child: slot,
-      );
-    } else if (onClear != null) {
-      slot = GestureDetector(onTap: onClear, child: slot);
-    }
-
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 16),
-      child: Row(
-        children: [
-          Expanded(child: Divider(color: line, height: 1, thickness: 1.5)),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10),
-            child: slot,
-          ),
-          Expanded(child: Divider(color: line, height: 1, thickness: 1.5)),
-        ],
-      ),
-    );
-  }
 }
 
 class _InsightView extends StatelessWidget {
@@ -1496,6 +1492,8 @@ class _PassageBlock extends StatelessWidget {
   final bool locked;
   final bool framed;
   final bool fill;
+  final bool lit;
+  final Widget? footer;
   final ValueChanged<String>? onPick;
   final _OptState Function(String id)? stateFor;
 
@@ -1506,7 +1504,9 @@ class _PassageBlock extends StatelessWidget {
     this.exercise,
     this.locked = false,
     this.framed = true,
-    this.fill = true,
+    this.fill = false,
+    this.lit = false,
+    this.footer,
     this.onPick,
     this.stateFor,
   });
@@ -1518,40 +1518,49 @@ class _PassageBlock extends StatelessWidget {
         ? const <TapSpan>[]
         : buildTapSpans(text, ex.effectiveOptions);
     final tappable = spans.any((s) => s.optionId != null);
+    final style = _verseWordStyle(height: 1.45);
 
     return _Manuscript(
       accent: accent,
       reference: reference,
       framed: framed,
       fill: fill,
-      child: Wrap(
-        spacing: 5,
-        runSpacing: 12,
-        alignment: WrapAlignment.center,
-        crossAxisAlignment: WrapCrossAlignment.center,
-        children: tappable
-            ? [
-                for (final span in spans)
-                  if (span.optionId != null)
-                    ActShake(
-                      active: stateFor?.call(span.optionId!) == _OptState.wrong,
-                      child: _PressScale(
-                        onTap: locked || onPick == null
-                            ? null
-                            : () => onPick!(span.optionId!),
-                        child: _VerseMark(
-                          text: span.text,
-                          state:
-                              stateFor?.call(span.optionId!) ?? _OptState.idle,
-                          accent: accent,
+      lit: lit,
+      footer: footer,
+      child: tappable
+          ? Text.rich(
+              TextSpan(
+                style: style,
+                children: [
+                  for (final span in spans)
+                    if (span.optionId != null)
+                      WidgetSpan(
+                        alignment: PlaceholderAlignment.baseline,
+                        baseline: TextBaseline.alphabetic,
+                        child: ActShake(
+                          active:
+                              stateFor?.call(span.optionId!) == _OptState.wrong,
+                          child: _PressScale(
+                            onTap: locked || onPick == null
+                                ? null
+                                : () => onPick!(span.optionId!),
+                            child: _VerseMark(
+                              text: span.text,
+                              state:
+                                  stateFor?.call(span.optionId!) ??
+                                  _OptState.idle,
+                              accent: accent,
+                            ),
+                          ),
                         ),
-                      ),
-                    )
-                  else
-                    ..._verseWords(span.text),
-              ]
-            : _verseWords(text),
-      ),
+                      )
+                    else
+                      TextSpan(text: span.text),
+                ],
+              ),
+              textAlign: TextAlign.center,
+            )
+          : Text(text, textAlign: TextAlign.center, style: style),
     );
   }
 }
@@ -1605,31 +1614,59 @@ class _VerseMark extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final hot =
+        state == _OptState.correct ||
+        state == _OptState.picked ||
+        state == _OptState.wrong;
     final color = switch (state) {
       _OptState.wrong => AppColors.error,
       _OptState.dimmed => AppColors.textOnDark.withValues(alpha: 0.38),
       _OptState.correct || _OptState.picked => accent,
-      _OptState.idle => accent,
+      _OptState.idle => AppColors.textOnDark,
     };
     final wash = switch (state) {
       _OptState.wrong => color.withValues(alpha: 0.18),
-      _OptState.dimmed => Colors.white.withValues(alpha: 0.06),
+      _OptState.dimmed => Colors.transparent,
       _OptState.correct || _OptState.picked => color.withValues(alpha: 0.28),
-      _OptState.idle => color.withValues(alpha: 0.16),
+      _OptState.idle => Colors.transparent,
+    };
+    final underline = switch (state) {
+      _OptState.idle => accent.withValues(alpha: 0.7),
+      _OptState.dimmed => Colors.transparent,
+      _ => color,
     };
 
-    return DecoratedBox(
-      decoration: BoxDecoration(
-        color: wash,
-        borderRadius: BorderRadius.circular(AppRadii.xs),
-        border: Border(bottom: BorderSide(color: color, width: 2)),
-      ),
-      child: Padding(
-        padding: const EdgeInsets.fromLTRB(7, 3, 7, 4),
-        child: Text(
-          text,
-          textAlign: TextAlign.center,
-          style: _verseWordStyle(color: color, weight: FontWeight.w700),
+    return AnimatedScale(
+      scale: hot ? 1.04 : 1,
+      duration: _ActSkin.anim,
+      curve: Curves.easeOutCubic,
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+          color: wash,
+          borderRadius: BorderRadius.circular(AppRadii.xs),
+          border: Border(
+            bottom: BorderSide(color: underline, width: hot ? 2.4 : 1.6),
+          ),
+          boxShadow: state == _OptState.correct || state == _OptState.picked
+              ? [
+                  BoxShadow(
+                    color: accent.withValues(alpha: 0.32),
+                    blurRadius: 10,
+                    offset: const Offset(0, 2),
+                  ),
+                ]
+              : const [],
+        ),
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(5, 2, 5, 3),
+          child: Text(
+            text,
+            textAlign: TextAlign.center,
+            style: _verseWordStyle(
+              color: color,
+              weight: hot ? FontWeight.w700 : FontWeight.w600,
+            ),
+          ),
         ),
       ),
     );
@@ -1653,60 +1690,37 @@ class _WordChip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final pad = fill
-        ? const EdgeInsets.symmetric(horizontal: 10, vertical: 16)
-        : const EdgeInsets.symmetric(horizontal: 14, vertical: 12);
-    final type = AppTypography.body(
-      size: fill ? 16 : 15,
-      weight: FontWeight.w800,
-    );
-
-    Widget plate({
-      required Color fillColor,
-      required Color border,
-      required Color text,
-      required double opacity,
-      required double borderWidth,
-    }) {
-      return ActPress(
+    final skin = _ActSkin.paint(state, accent);
+    final used = state == _OptState.dimmed;
+    return ActShake(
+      active: state == _OptState.wrong,
+      child: ActPress(
         onTap: onTap,
+        depth: 4,
         child: AnimatedOpacity(
           duration: _ActSkin.anim,
-          opacity: opacity,
+          opacity: used ? 0.38 : 1,
           child: AnimatedContainer(
             duration: _ActSkin.anim,
             curve: Curves.easeOutCubic,
             width: fill ? double.infinity : null,
-            constraints: BoxConstraints(minHeight: fill ? 56 : 0),
+            constraints: BoxConstraints(minHeight: fill ? 72 : 56),
             alignment: Alignment.center,
-            padding: pad,
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 16),
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(14),
-              color: fillColor,
-              border: Border.all(color: border, width: borderWidth),
+              borderRadius: BorderRadius.circular(_ActSkin.radius),
+              color: skin.fill,
+              boxShadow: _ActSkin.plateShadow,
             ),
             child: Text(
               label,
               textAlign: TextAlign.center,
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
-              style: type.copyWith(color: text),
+              style: AppTypography.title(size: 15, color: skin.text),
             ),
           ),
         ),
-      );
-    }
-
-    final skin = _ActSkin.paint(state, accent, Appearance.of(context));
-    final used = state == _OptState.dimmed;
-    return ActShake(
-      active: state == _OptState.wrong,
-      child: plate(
-        fillColor: skin.fill,
-        border: skin.border,
-        text: skin.text,
-        opacity: used ? 0.38 : 1,
-        borderWidth: skin.hot ? AppMetrics.cardBorderWidth : 1,
       ),
     );
   }
@@ -1714,12 +1728,14 @@ class _WordChip extends StatelessWidget {
 
 class _VfSlab extends StatelessWidget {
   final String label;
+  final String mark;
   final _OptState state;
   final Color accent;
   final VoidCallback? onTap;
 
   const _VfSlab({
     required this.label,
+    required this.mark,
     required this.state,
     required this.accent,
     this.onTap,
@@ -1727,29 +1743,55 @@ class _VfSlab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final skin = _ActSkin.paint(state, accent, Appearance.of(context));
+    final skin = _ActSkin.paint(state, accent);
+    final wellBorder = state == _OptState.wrong
+        ? AppColors.textOnDark
+        : accent;
+
     return ActShake(
       active: state == _OptState.wrong,
       child: ActPress(
         onTap: onTap,
+        depth: 4,
         child: AnimatedContainer(
           duration: _ActSkin.anim,
           curve: Curves.easeOutCubic,
-          constraints: const BoxConstraints(minHeight: 72),
+          constraints: const BoxConstraints(minHeight: 96),
           alignment: Alignment.center,
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 16),
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 16),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(_ActSkin.radius),
             color: skin.fill,
-            border: Border.all(
-              color: skin.border,
-              width: skin.hot ? AppMetrics.cardBorderWidth + 0.25 : 1,
-            ),
+            boxShadow: _ActSkin.plateShadow,
           ),
-          child: Text(
-            label,
-            textAlign: TextAlign.center,
-            style: AppTypography.title(size: 16, color: skin.text),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              AnimatedContainer(
+                duration: _ActSkin.anim,
+                width: 30,
+                height: 30,
+                alignment: Alignment.center,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: skin.well,
+                  border: Border.all(
+                    color: wellBorder,
+                    width: skin.hot ? 0 : 1.6,
+                  ),
+                ),
+                child: Text(
+                  mark,
+                  style: AppTypography.title(size: 14, color: skin.wellFg),
+                ),
+              ),
+              const SizedBox(height: 8),
+              Text(
+                label,
+                textAlign: TextAlign.center,
+                style: AppTypography.title(size: 15, color: skin.text),
+              ),
+            ],
           ),
         ),
       ),
@@ -1763,6 +1805,7 @@ class _OptionTile extends StatelessWidget {
   final Color accent;
   final VoidCallback? onTap;
   final bool struck;
+  final String? mark;
 
   const _OptionTile({
     required this.text,
@@ -1770,47 +1813,70 @@ class _OptionTile extends StatelessWidget {
     required this.accent,
     this.onTap,
     this.struck = false,
+    this.mark,
   });
 
   @override
   Widget build(BuildContext context) {
-    final skin = _ActSkin.paint(state, accent, Appearance.of(context));
+    final skin = _ActSkin.paint(state, accent);
+    final wellBorder = state == _OptState.wrong
+        ? AppColors.textOnDark
+        : accent;
     return ActShake(
       active: state == _OptState.wrong,
       child: ActPress(
         onTap: onTap,
+        depth: 4,
         child: AnimatedContainer(
           duration: _ActSkin.anim,
           curve: Curves.easeOutCubic,
           width: double.infinity,
-          constraints: const BoxConstraints(minHeight: 54),
+          constraints: const BoxConstraints(minHeight: 64),
           alignment: Alignment.centerLeft,
           padding: _ActSkin.pad,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(_ActSkin.radius),
             color: skin.fill,
-            border: Border.all(
-              color: skin.border,
-              width: skin.hot ? AppMetrics.cardBorderWidth + 0.25 : 1,
-            ),
+            boxShadow: _ActSkin.plateShadow,
           ),
           child: Row(
             children: [
+              if (mark != null) ...[
+                AnimatedContainer(
+                  duration: _ActSkin.anim,
+                  width: 28,
+                  height: 28,
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: skin.well,
+                    border: Border.all(
+                      color: wellBorder,
+                      width: skin.hot ? 0 : 1.6,
+                    ),
+                  ),
+                  child: Text(
+                    mark!,
+                    style: AppTypography.title(size: 13, color: skin.wellFg),
+                  ),
+                ),
+                const SizedBox(width: 12),
+              ],
               Expanded(
                 child: Text(
                   text,
                   textAlign: TextAlign.start,
-                  style: AppTypography.body(
-                    size: 15,
-                    height: 1.3,
-                    weight: FontWeight.w700,
-                    color: skin.text,
-                  ).copyWith(
-                    decoration: struck
-                        ? TextDecoration.lineThrough
-                        : TextDecoration.none,
-                    decorationColor: skin.text,
-                  ),
+                  style:
+                      AppTypography.title(
+                        size: 15,
+                        height: 1.3,
+                        color: skin.text,
+                      ).copyWith(
+                        decoration: struck
+                            ? TextDecoration.lineThrough
+                            : TextDecoration.none,
+                        decorationColor: skin.text,
+                      ),
                 ),
               ),
             ],
@@ -1889,35 +1955,45 @@ class _OrderPiece extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final skin = _ActSkin.paint(state, accent, Appearance.of(context));
+    final skin = _ActSkin.paint(state, accent);
+    final wellBorder = state == _OptState.wrong
+        ? AppColors.textOnDark
+        : accent;
     return AnimatedContainer(
       duration: _ActSkin.anim,
       curve: Curves.easeOutCubic,
       width: double.infinity,
-      constraints: const BoxConstraints(minHeight: 58),
+      constraints: const BoxConstraints(minHeight: 64),
       padding: const EdgeInsets.fromLTRB(12, 12, 10, 12),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(_ActSkin.radius),
         color: skin.fill,
-        border: Border.all(
-          color: skin.border,
-          width: skin.hot ? AppMetrics.cardBorderWidth + 0.25 : 1,
-        ),
+        boxShadow: _ActSkin.plateShadow,
       ),
       child: Row(
         children: [
-          Text(
-            '${index + 1}',
-            style: AppTypography.title(size: 16, color: skin.wellFg),
+          AnimatedContainer(
+            duration: _ActSkin.anim,
+            width: 28,
+            height: 28,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: skin.well,
+              border: Border.all(color: wellBorder, width: skin.hot ? 0 : 1.6),
+            ),
+            child: Text(
+              '${index + 1}',
+              style: AppTypography.title(size: 13, color: skin.wellFg),
+            ),
           ),
           const SizedBox(width: 12),
           Expanded(
             child: Text(
               text,
-              style: AppTypography.body(
+              style: AppTypography.title(
                 size: 15,
                 height: 1.3,
-                weight: FontWeight.w700,
                 color: skin.text,
               ),
             ),
@@ -1926,7 +2002,7 @@ class _OrderPiece extends StatelessWidget {
             Icons.drag_indicator_rounded,
             size: 22,
             color: locked
-                ? AppColors.textOnDark.withValues(alpha: 0.18)
+                ? AppColors.inkOnAccent.withValues(alpha: 0.18)
                 : accent.withValues(alpha: 0.85),
           ),
         ],

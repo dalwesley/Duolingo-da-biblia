@@ -280,7 +280,7 @@ class _LessonScreenState extends State<LessonScreen>
   /// Entrada bíblica: missão (Firestore) → estudo curto (sem spoiler).
   /// Sempre prefere o texto completo da Bíblia pela referência.
   Future<({String? ref, String? verse, String? note, String? thread})>
-      _resolveHooks(Mission mission) async {
+  _resolveHooks(Mission mission) async {
     if (mission.hasBibleHook) {
       final ref = (mission.hookRef ?? '').trim();
       var verse = (mission.hookVerse ?? '').trim();
@@ -308,8 +308,9 @@ class _LessonScreenState extends State<LessonScreen>
     if (study == null) {
       return (ref: null, verse: null, note: null, thread: null);
     }
-    final ref =
-        study.passageRef.trim().isNotEmpty ? study.passageRef.trim() : null;
+    final ref = study.passageRef.trim().isNotEmpty
+        ? study.passageRef.trim()
+        : null;
     var verse = study.passageText.trim();
     if (ref != null) {
       final full = await BibleService.instance.passageText(ref);
@@ -402,8 +403,7 @@ class _LessonScreenState extends State<LessonScreen>
     );
     final progress = context.read<ProgressService>();
     final trackBankId =
-        ex.id.isNotEmpty &&
-        (_pickedIds.contains(ex.id) || widget.practiceMode);
+        ex.id.isNotEmpty && (_pickedIds.contains(ex.id) || widget.practiceMode);
     if (correct) {
       SoundService.instance.playCorrect();
       ActHaptics.success();
@@ -438,16 +438,7 @@ class _LessonScreenState extends State<LessonScreen>
     });
 
     if (correct) {
-      final lastConnect = ex.type == ExerciseType.connect &&
-          _questionIndex >= _itemCount - 1;
-      if (lastConnect) {
-        _insightOnConnect = _closingInsight.trim().isNotEmpty;
-        _busy = false;
-        return;
-      }
-      await Future.delayed(
-        Duration(milliseconds: ex.type == ExerciseType.connect ? 720 : 420),
-      );
+      await Future.delayed(const Duration(milliseconds: 520));
       if (mounted) _continue();
       _busy = false;
       return;
@@ -464,9 +455,7 @@ class _LessonScreenState extends State<LessonScreen>
     HapticFeedback.selectionClick();
     final ex = _exercise;
     final correctId = ex.resolvedCorrectAnswer.trim();
-    final wrong = ex.effectiveOptions
-        .where((o) => o.id != correctId)
-        .toList();
+    final wrong = ex.effectiveOptions.where((o) => o.id != correctId).toList();
     // Sem distrator eliminável — não marca dica como usada.
     if (wrong.isEmpty || correctId.isEmpty) return;
     // Garante que a resposta certa existe nas opções (evita eliminar o acerto).
@@ -565,13 +554,19 @@ class _LessonScreenState extends State<LessonScreen>
     final studyText = study?.passageText.trim() ?? '';
     final studyRef = study?.passageRef.trim() ?? '';
     if (studyText.length >= 20) {
-      return (reference: studyRef.isNotEmpty ? studyRef : 'Verso', text: studyText);
+      return (
+        reference: studyRef.isNotEmpty ? studyRef : 'Verso',
+        text: studyText,
+      );
     }
 
     final hookText = (_mission?.hookVerse ?? '').trim();
     final hookRef = (_mission?.hookRef ?? '').trim();
     if (hookText.length >= 20) {
-      return (reference: hookRef.isNotEmpty ? hookRef : 'Verso', text: hookText);
+      return (
+        reference: hookRef.isNotEmpty ? hookRef : 'Verso',
+        text: hookText,
+      );
     }
 
     for (final ex in _exercises) {
@@ -665,9 +660,12 @@ class _LessonScreenState extends State<LessonScreen>
       _questionEnter.forward(from: 0);
       _logExerciseStart();
     } else if (_mistakeInSession && !_reviewInserted) {
-      final diffId = _difficultyMeta?.difficulty ??
+      final diffId =
+          _difficultyMeta?.difficulty ??
           TrailDifficulty.fromId(
-            context.read<ProgressService>().difficultyForTrail(_trailSlug ?? ''),
+            context.read<ProgressService>().difficultyForTrail(
+              _trailSlug ?? '',
+            ),
           ) ??
           TrailDifficulty.semente;
       final rev = SessionComposer.reviewFromBank(
@@ -764,41 +762,45 @@ class _LessonScreenState extends State<LessonScreen>
                       ),
                       child: Column(
                         children: [
-                          TopBar(
-                            inline: true,
-                            immersive: true,
-                            dark: true,
-                            title: switch (_phase) {
-                              _Phase.intro => mission.title,
-                              _Phase.quiz => '${_questionIndex + 1}/$total',
-                              _Phase.micro => 'Bônus',
-                              _Phase.insight => 'Hoje',
-                            },
-                            subtitle: switch (_phase) {
-                              _Phase.intro =>
-                                _difficultyMeta?.label ??
-                                    (mission.isBoss ? 'Desafio' : 'Treino'),
-                              _Phase.quiz => _difficultyMeta?.label,
-                              _Phase.micro => 'Complete o verso',
-                              _Phase.insight => 'O que ficou',
-                            },
-                            onBack: () => Navigator.pop(context),
-                            leadingGlyph: CinematicGlyphResolver.forMission(
-                              mission.title,
-                              isBoss: mission.isBoss,
+                          if (_phase == _Phase.quiz)
+                            _QuizSessionChrome(
+                              index: _questionIndex,
+                              total: total,
+                              lamps: _lamps,
+                              maxLamps: _maxLamps,
+                              accent: accent,
+                              onBack: () => Navigator.pop(context),
+                            )
+                          else if (_phase == _Phase.micro)
+                            _BonusSessionChrome(
+                              accent: accent,
+                              onBack: () => Navigator.pop(context),
+                            )
+                          else
+                            TopBar(
+                              inline: true,
+                              immersive: true,
+                              dark: true,
+                              title: switch (_phase) {
+                                _Phase.intro => mission.title,
+                                _Phase.quiz => '${_questionIndex + 1}/$total',
+                                _Phase.micro => 'Bônus',
+                                _Phase.insight => 'Hoje',
+                              },
+                              subtitle: switch (_phase) {
+                                _Phase.intro =>
+                                  _difficultyMeta?.label ??
+                                      (mission.isBoss ? 'Desafio' : 'Treino'),
+                                _Phase.quiz => _difficultyMeta?.label,
+                                _Phase.micro => 'Complete o verso',
+                                _Phase.insight => 'O que ficou',
+                              },
+                              onBack: () => Navigator.pop(context),
+                              leadingGlyph: CinematicGlyphResolver.forMission(
+                                mission.title,
+                                isBoss: mission.isBoss,
+                              ),
                             ),
-                            trailing: _phase == _Phase.quiz
-                                ? Padding(
-                                    padding: const EdgeInsets.only(right: 8),
-                                    child: LampsBar(
-                                      current: _lamps,
-                                      max: _maxLamps,
-                                      accent: accent,
-                                      compact: true,
-                                    ),
-                                  )
-                                : null,
-                          ),
                           const SizedBox(height: 8),
                         ],
                       ),
@@ -806,7 +808,7 @@ class _LessonScreenState extends State<LessonScreen>
                     Expanded(
                       child: switch (_phase) {
                         _Phase.quiz => ExercisePanel(
-                          key: const ValueKey('quiz-board'),
+                          key: ValueKey(_exercise.id),
                           exercise: _exercise,
                           selected: _selected,
                           isCorrect: _isCorrect,
@@ -824,12 +826,6 @@ class _LessonScreenState extends State<LessonScreen>
                           insightFallback: mission.centralInsight,
                           boardText: _board?.text,
                           boardRef: _board?.reference,
-                          onResolvedContinue:
-                              _exercise.type == ExerciseType.connect &&
-                                  _isCorrect == true &&
-                                  _questionIndex >= total - 1
-                              ? _continue
-                              : null,
                         ),
                         _Phase.micro => () {
                           final v = _microVerse();
@@ -907,9 +903,7 @@ class _LessonScreenState extends State<LessonScreen>
                               CopperCta(
                                 label: 'Seguir',
                                 onTap: () {
-                                  _pushCelebration(
-                                    forced: _celebrationForced,
-                                  );
+                                  _pushCelebration(forced: _celebrationForced);
                                 },
                               ),
                               const SizedBox(height: AppSpace.sm),
@@ -980,7 +974,6 @@ class _LessonScreenState extends State<LessonScreen>
   }
 }
 
-
 class _IntroPanel extends StatelessWidget {
   final Mission mission;
   final GenesisModuleTheme theme;
@@ -1045,7 +1038,9 @@ class _IntroPanel extends StatelessWidget {
                         padding: const EdgeInsets.fromLTRB(20, 18, 20, 20),
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(18),
-                          color: AppColors.nightElevated.withValues(alpha: 0.78),
+                          color: AppColors.nightElevated.withValues(
+                            alpha: 0.78,
+                          ),
                           border: Border.all(
                             color: Colors.white.withValues(alpha: 0.08),
                             width: 1,
@@ -1084,7 +1079,10 @@ class _IntroPanel extends StatelessWidget {
                             Text(
                               verse,
                               textAlign: TextAlign.center,
-                              style: AppTypography.display(size: 20, height: 1.35),
+                              style: AppTypography.display(
+                                size: 20,
+                                height: 1.35,
+                              ),
                             ),
                           ],
                         ),
@@ -1121,6 +1119,125 @@ class _IntroPanel extends StatelessWidget {
           const SizedBox(height: AppSpace.sm),
         ],
       ),
+    );
+  }
+}
+
+class _QuizSessionChrome extends StatelessWidget {
+  final int index;
+  final int total;
+  final int lamps;
+  final int maxLamps;
+  final Color accent;
+  final VoidCallback onBack;
+
+  const _QuizSessionChrome({
+    required this.index,
+    required this.total,
+    required this.lamps,
+    required this.maxLamps,
+    required this.accent,
+    required this.onBack,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final step = index + 1;
+    final value = total <= 0 ? 0.0 : step / total;
+    return Row(
+      children: [
+        GestureDetector(
+          onTap: onBack,
+          behavior: HitTestBehavior.opaque,
+          child: CinematicIcon(
+            glyph: CinematicGlyph.back,
+            size: 28,
+            accent: accent,
+            framed: false,
+            glowing: false,
+          ),
+        ),
+        const SizedBox(width: 10),
+        Expanded(
+          child: SizedBox(
+            height: 28,
+            child: Stack(
+              alignment: Alignment.center,
+              children: [
+                AppProgressBar(
+                  value: value,
+                  color: accent,
+                  height: 8,
+                  trackColor: Colors.white.withValues(alpha: 0.12),
+                ),
+                Container(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 12,
+                    vertical: 4,
+                  ),
+                  decoration: BoxDecoration(
+                    color: AppColors.night,
+                    borderRadius: BorderRadius.circular(AppRadii.pill),
+                    border: Border.all(color: accent.withValues(alpha: 0.85)),
+                  ),
+                  child: Text(
+                    '$step/$total',
+                    style: AppTypography.label(
+                      size: 11,
+                      letterSpacing: 0.6,
+                      color: accent,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+        const SizedBox(width: 10),
+        LampsBar(
+          current: lamps,
+          max: maxLamps,
+          accent: accent,
+          compact: true,
+        ),
+      ],
+    );
+  }
+}
+
+class _BonusSessionChrome extends StatelessWidget {
+  final Color accent;
+  final VoidCallback onBack;
+
+  const _BonusSessionChrome({required this.accent, required this.onBack});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        GestureDetector(
+          onTap: onBack,
+          behavior: HitTestBehavior.opaque,
+          child: CinematicIcon(
+            glyph: CinematicGlyph.back,
+            size: 28,
+            accent: accent,
+            framed: false,
+            glowing: false,
+          ),
+        ),
+        const SizedBox(width: 10),
+        Expanded(
+          child: Text(
+            'BÔNUS',
+            style: AppTypography.label(
+              size: 12,
+              letterSpacing: 1.8,
+              color: AppColors.textOnDark,
+            ),
+          ),
+        ),
+      ],
     );
   }
 }

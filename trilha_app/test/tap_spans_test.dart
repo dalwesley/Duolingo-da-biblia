@@ -7,10 +7,7 @@ void main() {
       const passage =
           'Viu Deus a luz que era boa e fez separação entre a luz e as trevas.';
       final spans = buildTapSpans(passage, const [
-        QuestionOption(
-          id: 'a',
-          text: 'separação entre a luz e as trevas',
-        ),
+        QuestionOption(id: 'a', text: 'separação entre a luz e as trevas'),
         QuestionOption(id: 'b', text: 'a luz que era boa'),
         QuestionOption(id: 'c', text: 'Viu Deus'),
       ]);
@@ -48,10 +45,9 @@ void main() {
         QuestionOption(id: 'b', text: 'de'),
       ]);
 
-      expect(
-        spans.where((s) => s.optionId != null).map((s) => s.text),
-        ['tarde'],
-      );
+      expect(spans.where((s) => s.optionId != null).map((s) => s.text), [
+        'tarde',
+      ]);
     });
   });
 
@@ -61,7 +57,8 @@ void main() {
       type: ExerciseType.tap,
       prompt: 'O que Deus separou no primeiro dia?',
       correctAnswer: 'a',
-      passageText: 'Viu Deus a luz que era boa e fez separação entre a luz e as trevas.',
+      passageText:
+          'Viu Deus a luz que era boa e fez separação entre a luz e as trevas.',
     );
     expect(ex.instructionVerb, 'Toque');
   });
@@ -82,21 +79,21 @@ void main() {
   });
 
   test('single-word tap options stay distinct marks in the verse', () {
-    final spans = buildTapSpans(
-      'No princípio, Deus criou os céus e a terra.',
-      const [
-        QuestionOption(id: 'a', text: 'criou'),
-        QuestionOption(id: 'b', text: 'princípio'),
-        QuestionOption(id: 'c', text: 'céus'),
-      ],
-    );
+    final spans =
+        buildTapSpans('No princípio, Deus criou os céus e a terra.', const [
+          QuestionOption(id: 'a', text: 'criou'),
+          QuestionOption(id: 'b', text: 'princípio'),
+          QuestionOption(id: 'c', text: 'céus'),
+        ]);
     expect(
-      spans.where((s) => s.optionId != null).map((s) => '${s.optionId}:${s.text}'),
+      spans
+          .where((s) => s.optionId != null)
+          .map((s) => '${s.optionId}:${s.text}'),
       ['b:princípio', 'a:criou', 'c:céus'],
     );
   });
 
-  test('tap with word options uses a blank and chips, not verse-tap', () {
+  test('tap with word options uses a blank and buttons, not verse-tap', () {
     const ex = Exercise(
       id: 't',
       type: ExerciseType.tap,
@@ -147,7 +144,7 @@ void main() {
     expect(order.showActVerb, isFalse);
   });
 
-  test('playable acts wait for CONFIRMAR', () {
+  test('playable acts wait for Continuar to check the answer', () {
     const choice = Exercise(
       id: 'q',
       type: ExerciseType.choice,
@@ -175,19 +172,19 @@ void main() {
     expect(tap.needsConfirm, isTrue);
   });
 
-  test('connect palco hides the quiz prompt', () {
+  test('connect palco is the question, no extra cue', () {
     const ex = Exercise(
       id: 'k',
       type: ExerciseType.connect,
-      prompt: 'O que Gênesis 1:1-2 comunica que se liga a este contexto?',
+      prompt: 'O que une Gênesis 1:1 e 1:2?',
       correctAnswer: 'a',
       passageA: ExercisePassage(
-        ref: 'Gênesis 1:1-2',
+        ref: 'Gênesis 1:1',
         text: 'No princípio, criou Deus o céu e a terra',
       ),
       passageB: ExercisePassage(
-        ref: 'Contexto',
-        text: 'Deus é o centro, não eu',
+        ref: 'Gênesis 1:2',
+        text: 'o Espírito de Deus pairava por cima das águas',
       ),
     );
     expect(ex.showActVerb, isFalse);
@@ -251,5 +248,77 @@ void main() {
     expect(stage, contains('No princípio'));
     expect(stage, contains('havia ___ sobre a face do abismo'));
     expect(stage!.contains('havia trevas sobre a face do abismo'), isFalse);
+  });
+
+  test('witness-first titles and stage prompts by gesture', () {
+    const verse = 'No princípio, criou Deus o céu e a terra.';
+    const vf = Exercise(
+      id: 'vf-ui',
+      type: ExerciseType.trueFalse,
+      prompt: 'Deus criou o céu e a terra no fim.',
+      correctAnswer: 'false',
+      passageText: verse,
+      reference: 'Gênesis 1:1',
+    );
+    expect(vf.instructionTitle, 'Julgue o versículo');
+    expect(vf.showsStagePrompt, isTrue);
+    expect(vf.taskPromptLabel, 'Afirmação');
+    expect(vf.displayCue, 'Deus criou o céu e a terra no fim.');
+
+    const tap = Exercise(
+      id: 't-ui',
+      type: ExerciseType.tap,
+      prompt:
+          'Em Gênesis 1:1–2, toque a palavra que falta em “No ___, criou Deus”?',
+      correctAnswer: 'a',
+      passageText: verse,
+      options: [QuestionOption(id: 'a', text: 'princípio')],
+    );
+    expect(tap.instructionTitle, 'Toque a palavra');
+    expect(tap.showsStagePrompt, isFalse);
+
+    const choice = Exercise(
+      id: 'q-ui',
+      type: ExerciseType.choice,
+      prompt: 'O que o texto afirma sobre o começo?',
+      correctAnswer: 'a',
+      passageText: verse,
+    );
+    expect(choice.instructionTitle, 'Escolha a resposta');
+    expect(choice.showsStagePrompt, isTrue);
+    expect(choice.taskPromptLabel, 'Pergunta');
+
+    const order = Exercise(
+      id: 'o-ui',
+      type: ExerciseType.order,
+      prompt: 'Monte a sequência do trecho.',
+      cue: 'Monte a sequência do trecho.',
+      correctAnswer: 'a,b,c',
+      passageText: verse,
+    );
+    expect(order.instructionTitle, 'Ordene os fatos');
+    expect(order.showsStagePrompt, isFalse);
+
+    const fill = Exercise(
+      id: 'c-ui',
+      type: ExerciseType.complete,
+      prompt: 'Complete a lacuna.',
+      correctAnswer: 'a',
+      template: 'No princípio, ___ Deus o céu e a terra.',
+      passageText: verse,
+    );
+    expect(fill.instructionTitle, 'Complete o versículo');
+    expect(fill.showsStagePrompt, isFalse);
+
+    const connect = Exercise(
+      id: 'k-ui',
+      type: ExerciseType.connect,
+      prompt: 'O que une Gênesis 1:1 e 1:2?',
+      correctAnswer: 'a',
+      passageA: ExercisePassage(ref: 'Gênesis 1:1', text: 'criou Deus o céu'),
+      passageB: ExercisePassage(ref: 'Gênesis 1:2', text: 'a terra era vazia'),
+    );
+    expect(connect.instructionTitle, 'Conecte os trechos');
+    expect(connect.showsStagePrompt, isFalse);
   });
 }

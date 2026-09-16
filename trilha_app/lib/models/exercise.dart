@@ -231,7 +231,7 @@ class Exercise {
     return _tapTemplateFromPassage();
   }
 
-  /// Toque no manuscrito só quando NÃO há lacuna — a lacuna + chips já era o gesto.
+  /// Toque no manuscrito só quando NÃO há lacuna — a lacuna + botões já é o gesto.
   bool get prefersVerseTap {
     if (type != ExerciseType.tap && type != ExerciseType.findInText) {
       return false;
@@ -247,7 +247,7 @@ class Exercise {
       type == ExerciseType.complete ||
       (type == ExerciseType.tap && (palcoTemplate ?? '').contains('___'));
 
-  /// Todos os atos jogáveis pedem CONFIRMAR. Insight só revela.
+  /// Continuar verifica a escolha. Insight só revela.
   bool get needsConfirm => type.isPlayable && !type.isRevealOnly;
 
   /// Verbo some quando o palco já ensina a tarefa.
@@ -291,6 +291,10 @@ class Exercise {
 
   /// Cue exibido (nunca o beat pedagógico, nunca o verbo repetido).
   String get displayCue {
+    // Palco do Conecte já é a pergunta: A, lacuna, B.
+    if (type == ExerciseType.connect && passageA != null && passageB != null) {
+      return '';
+    }
     final candidates = <String>[
       if ((cue ?? '').trim().isNotEmpty) (cue ?? '').trim(),
       if (prompt.trim().isNotEmpty) prompt.trim(),
@@ -298,7 +302,7 @@ class Exercise {
     for (final c in candidates) {
       if (_isGenericTaskCue(c)) continue;
       var text = type == ExerciseType.trueFalse ? vfClaim(c) : c;
-      if (usesCompletePalco && type == ExerciseType.tap) {
+      if (type == ExerciseType.tap) {
         text = _stripQuotedCloze(text);
       }
       return text;
@@ -311,11 +315,6 @@ class Exercise {
   }
 
   bool _isGenericTaskCue(String text) {
-    if (type == ExerciseType.connect &&
-        passageA != null &&
-        passageB != null) {
-      return true;
-    }
     if (type != ExerciseType.complete) return false;
     // Palco já é o verso com lacuna — enunciado extra compete com o bônus.
     if ((palcoTemplate ?? '').contains('___')) return true;
@@ -359,12 +358,56 @@ class Exercise {
     _ => 'Responda',
   };
 
+  /// Título do ato — o objeto da ação, não só o verbo.
+  String get instructionTitle => switch (type) {
+    ExerciseType.trueFalse => 'Julgue o versículo',
+    ExerciseType.tap || ExerciseType.findInText =>
+      (passageA != null && passageB != null)
+          ? 'Conecte os trechos'
+          : 'Toque a palavra',
+    ExerciseType.order => 'Ordene os fatos',
+    ExerciseType.complete => 'Complete o versículo',
+    ExerciseType.connect || ExerciseType.match => 'Conecte os trechos',
+    ExerciseType.choice ||
+    ExerciseType.textSupported ||
+    ExerciseType.bestInterpretation => 'Escolha a resposta',
+    _ => 'Responda',
+  };
+
+  /// Rótulo da carga abaixo do palco (afirmação, pergunta, sequência).
+  String get taskPromptLabel => switch (type) {
+    ExerciseType.trueFalse => 'Afirmação',
+    ExerciseType.order => 'Sequência',
+    _ => 'Pergunta',
+  };
+
+  /// Palco primeiro: o cue só aparece abaixo do verso, e só quando não é o palco.
+  bool get showsStagePrompt {
+    final cue = displayCue.trim();
+    if (cue.isEmpty) return false;
+    return switch (type) {
+      ExerciseType.trueFalse ||
+      ExerciseType.choice ||
+      ExerciseType.textSupported ||
+      ExerciseType.bestInterpretation => true,
+      ExerciseType.order => !_isGenericOrderCue(cue),
+      _ => false,
+    };
+  }
+
+  bool _isGenericOrderCue(String text) {
+    final t = text.trim().toLowerCase().replaceAll(RegExp(r'[.!?…]+$'), '');
+    return t == 'monte a sequência' ||
+        t == 'monte a sequência do trecho' ||
+        t.startsWith('monte a sequência');
+  }
+
   /// Opções cujo texto aparece no trecho (toque no versículo).
   List<QuestionOption> optionsEmbeddedIn(String passage) {
-    final ids = buildTapSpans(passage, effectiveOptions)
-        .map((s) => s.optionId)
-        .whereType<String>()
-        .toSet();
+    final ids = buildTapSpans(
+      passage,
+      effectiveOptions,
+    ).map((s) => s.optionId).whereType<String>().toSet();
     return effectiveOptions.where((o) => ids.contains(o.id)).toList()
       ..sort((a, b) => b.text.length.compareTo(a.text.length));
   }
@@ -640,11 +683,7 @@ class Exercise {
 }
 
 /// Encaixa o template `___` no versículo completo, como no bônus.
-String spliceClozeIntoPassage(
-  String template,
-  String passage,
-  String? answer,
-) {
+String spliceClozeIntoPassage(String template, String passage, String? answer) {
   final tpl = template.trim();
   if (tpl.isEmpty) return passage.trim();
   final verse = passage.trim();
@@ -709,7 +748,8 @@ List<TapSpan> buildTapSpans(String passage, List<QuestionOption> options) {
       final i = lower.indexOf(needle, from);
       if (i < 0) break;
       final end = i + needle.length;
-      final bounded = !_isLetterAt(passage, i - 1) && !_isLetterAt(passage, end);
+      final bounded =
+          !_isLetterAt(passage, i - 1) && !_isLetterAt(passage, end);
       final overlaps = hits.any((h) => i < h.end && end > h.start);
       if (bounded && !overlaps) {
         hits.add((start: i, end: end, id: o.id));
