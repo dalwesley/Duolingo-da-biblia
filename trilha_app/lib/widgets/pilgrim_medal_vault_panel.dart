@@ -44,7 +44,10 @@ class _PilgrimMedalVaultsPanelState extends State<PilgrimMedalVaultsPanel> {
   @override
   void didUpdateWidget(covariant PilgrimMedalVaultsPanel oldWidget) {
     super.didUpdateWidget(oldWidget);
-    if (oldWidget.profile != widget.profile) _load();
+    if (oldWidget.profile != widget.profile ||
+        oldWidget.evalContext.clock != widget.evalContext.clock) {
+      _load();
+    }
   }
 
   Future<void> _load() async {

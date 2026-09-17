@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../data/trail_repository.dart';
+import '../data/season_walk_catalog.dart';
 import '../models/trail.dart';
 import '../services/analytics_service.dart';
 import '../services/companion_service.dart';
@@ -33,6 +34,7 @@ import '../widgets/wave_hands_overlay.dart';
 import 'bible_screen.dart';
 import 'memory_screen.dart';
 import 'practice_screen.dart';
+import 'season_walk_screen.dart';
 
 /// Home — um único trabalho: a próxima lição.
 class HomeScreen extends StatefulWidget {
@@ -380,12 +382,17 @@ class _HomeScreenState extends State<HomeScreen>
                         : widget.onOpenTrilhas,
                     onShare: _openBible,
                   ),
+                  const SizedBox(height: AppSpace.md),
+                  _WalkHomeCard(heroMissionSlug: current?.slug),
                 ],
               ),
             ),
             const SizedBox(height: AppSpace.section),
             if (goalMet) ...[
-              _reveal(2, SeasonChallengeBanner(catalog: trails)),
+              _reveal(
+                2,
+                SeasonChallengeBanner(catalog: trails),
+              ),
             ],
             if (progress.showStreakRepairOffer) ...[
               _reveal(2, const StreakRepairBanner()),
@@ -619,6 +626,96 @@ class _ShimmerBox extends StatelessWidget {
           ),
         );
       },
+    );
+  }
+}
+
+class _WalkHomeCard extends StatelessWidget {
+  final String? heroMissionSlug;
+
+  const _WalkHomeCard({this.heroMissionSlug});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final progress = context.watch<ProgressService>();
+    final now = DateTime.now();
+    final today = DateTime(now.year, now.month, now.day);
+    final campaign = SeasonWalkCatalog.current(today);
+    if (!campaign.contains(today)) return const SizedBox.shrink();
+    final index = campaign.dayIndexOn(today);
+    final day = index == null ? null : campaign.dayAt(index);
+    final ymd =
+        '${today.year.toString().padLeft(4, '0')}-${today.month.toString().padLeft(2, '0')}-${today.day.toString().padLeft(2, '0')}';
+    final done = day != null &&
+        (progress.isWalkDateDone(campaign.id, ymd) ||
+            progress.isMissionCompleted(day.missionSlug));
+    final sameAsHero =
+        day != null && heroMissionSlug != null && day.missionSlug == heroMissionSlug;
+
+    // A missão do hero já é o dia da Caminhada — não duplica o CTA.
+    if (sameAsHero) {
+      return Padding(
+        padding: const EdgeInsets.only(top: 2),
+        child: TextButton(
+          onPressed: () => openSeasonWalk(context),
+          child: Text(
+            done
+                ? 'Dia $index de ${campaign.length} feito · ${campaign.title}'
+                : 'Dia $index de ${campaign.length} · ${campaign.title}',
+            style: AppTypography.body(
+              size: 12,
+              weight: FontWeight.w600,
+              color: a.textMuted(0.6),
+            ),
+          ),
+        ),
+      );
+    }
+
+    return Padding(
+      padding: const EdgeInsets.only(top: 4),
+      child: GlassCard(
+        padding: AppMetrics.cardPaddingCompact,
+        child: InkWell(
+          onTap: () => openSeasonWalk(context),
+          child: Row(
+            children: [
+              CinematicIcon(
+                glyph: CinematicGlyph.calendar,
+                size: 36,
+                accent: AppColors.accent,
+                framed: false,
+              ),
+              const SizedBox(width: 10),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      campaign.title,
+                      style: AppTypography.title(size: 14, color: a.text),
+                    ),
+                    Text(
+                      day == null
+                          ? campaign.subtitle
+                          : done
+                              ? 'Dia $index feito · ${day.title}'
+                              : 'Dia $index · ${day.title}',
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: AppTypography.body(
+                        size: 12,
+                        color: a.textMuted(0.65),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }

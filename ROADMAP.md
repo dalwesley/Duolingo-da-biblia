@@ -18,10 +18,12 @@ Não somos YouVersion (ler), nem Hallow (orar), nem Ascend/Bible Way (jogo com p
 | **Conteúdo** | 8.370 atos V2 na nuvem; Gn 1–11 / 12–50 editorial; Êxodo/Sermão pack; resto gerado |
 | **Hábito / social** | Streak, quests, Caravana, Companhia (FCM de aceno), Salas, widget iOS/Android |
 | **Medalhas** | **v3.2** no app — faísca + cofres; sazonal Advento + proximidade no mapa ([`docs/MEDALHAS_CALIBRATION.md`](docs/MEDALHAS_CALIBRATION.md)) |
-| **Strong / TTS** | Strong na missão e na Bíblia; TTS **só na aba Bíblia** (não é áudio da missão) |
+| **Strong / TTS** | Strong na missão e na Bíblia; TTS na aba Bíblia **e** na entrada da missão (passagem + insight) |
 | **IAP** | Casca RevenueCat (`Peregrino+`) — **chaves vazias**, perk = 3→6 companheiros, tela só em Config. **Não é o Pro** de [`MONETIZATION.md`](MONETIZATION.md) |
 | **`lifeChallenge`** | 1 campo `dailyChallenge` no study `sm-08-pacificadores` — o app **não lê** |
-| **Caminhada 40 dias** | Cofre de medalhas + banner na janela litúrgica. **Não** há calendário compartilhado / 3 dias grátis / revisão da semana |
+| **Caminhada** | Só Advento/Quaresma. Sem temporada genérica de 40 dias no outono. |
+| **Trilhas por dor** | `ansiedade` e `recomeco` (5 missões cada, banco emprestado) em Vida Cristã → cânon |
+| **Selos** | 6 personagens (fato + verso); perfil, mapa, celebração — sem loja |
 | **Prova** | Protocolo D7 pronto; planilha [`docs/D7_TESTERS.csv`](docs/D7_TESTERS.csv) **vazia** |
 
 ## Critério de pronto para crescer
@@ -70,7 +72,7 @@ Histórico de releases: [`CHANGELOG.md`](CHANGELOG.md).
 - [x] Widget iOS/Android (App Group `group.ZS7LYV9Y7U.stway`)
 - [x] Push de aceno na companhia (FCM + Cloud Function)
 - [x] Remote Config no boot (liga / baú / bônus de convite)
-- [x] TTS na aba Bíblia (não substitui áudio da missão)
+- [x] TTS na aba Bíblia **e** áudio da missão (passagem + insight)
 - [x] Medalhas v3.2 — cofres, sazonal Advento, proximidade no Hoje/mapa
 - [x] Paywall casca Peregrino+ (inativo sem chaves RevenueCat)
 
@@ -123,16 +125,15 @@ Protocolo: [`docs/D7_TESTER_PROTOCOLO.md`](docs/D7_TESTER_PROTOCOLO.md) · convi
 
 Só avançar o que melhora D7. Roubar do mercado **melhorado**, sem virar clone.
 
-**Ordem pós-D7 (não inverter):**
+**Ordem pós-D7 (não inverter o que ainda falta):**
 1. `lifeChallenge` — viver o texto (piloto nas bem-aventuranças)
-2. Trilhas de entrada por dor (ansiedade, recomeço) que desembocam no cânon
-3. Áudio curto da missão (passagem + 1 insight) — commute BR, não hub de oração
-4. Selos de personagem (fato teológico + verso) — sem skin shop
+
+Já no app (16 set): trilhas por dor, áudio da missão, selos de personagem. Caminhada = Advento/Quaresma (sem 40 dias genéricos agora).
 
 ### Currículo e hábito
 - [ ] Prova do caminho Criação → NT com testers (critério de pronto — conteúdo mínimo já no asset)
 - [ ] Densificar Romanos / Tiago se abandono aparecer na entrada das Epístolas
-- [ ] Trilhas de entrada por dor (3–5 missões: ansiedade, recomeço…) que desembocam no currículo canônico
+- [x] Trilhas de entrada por dor (3–5 missões: ansiedade, recomeço) que desembocam no currículo canônico
 - [ ] Sermão vitrine: testers terminam as 6 cenas (studies já 100% nos passos)
 
 ### Anatomia da missão (núcleo enxuto — não 9 telas)
@@ -163,10 +164,10 @@ Tese: apps ensinam conhecimento; STWAY fecha com **obediência concreta** (Serm�
 **Cuidado teológico:** não gamificar pecado/perdão com XP alto; convite pastoral > mecânica de clique.
 
 ### Diferenciais (roubar melhorado)
-- [ ] **Áudio da missão** (MVP): passagem narrada + 1 insight do preparo — commute BR; não hub de oração. (TTS da aba Bíblia **não** conta)
-- [ ] **Selos de personagem da trilha** (Abrão, Moisés…): 1 fato teológico + versículo âncora — heróis Bible Way sem skin shop
+- [x] **Áudio da missão** (MVP): passagem narrada + 1 insight do preparo — commute BR; não hub de oração. (TTS da aba Bíblia **não** conta)
+- [x] **Selos de personagem da trilha** (Abrão, Moisés…): 1 fato teológico + versículo âncora — heróis Bible Way sem skin shop
 - [x] **Living Seed elevado**: reações à streak / risco / missão perfeita — companion Ascend com metáfora bíblica (já existe base)
-- [ ] **Campanha litúrgica piloto** (Advento ou Quaresma): quest + trilha curta em massa — #Pray40 do Hallow, no DNA STWAY. (Cofre/banner Advento 2026 **já existem**; falta o produto de 40 dias)
+- [x] **Campanha litúrgica piloto** (Advento): cofre + banner + calendário compartilhado na janela. Sem Caminhada de 40 dias fora de tempo litúrgico.
 - [x] **Pulso semanal nas Salas**: quem caminhou + baú de grupo (+15 passos, calibrável via Remote Config)
 - [x] **Micro-modo cognitivo** na missão: completar verso (~20s) após o quiz
 - [x] **Home/onboarding game-first**: HUD + missão pronta; estudo (Palavra) depois do loop
@@ -182,8 +183,8 @@ Tese: apps ensinam conhecimento; STWAY fecha com **obediência concreta** (Serm�
 
 Ver `MONETIZATION.md`. Não shipar Pro antes do hábito provar valor.
 
-- [ ] **Caminhada piloto** (Advento ou Quaresma) — o produto do Pro; sem isso, IAP não vende. Cofre de medalhas ≠ Caminhada
-- [ ] STWAY Pro: Caminhada + áudio da missão + revisão da semana; alívio (gelo/lâmpadas/Strong) é suporte. (Casca Peregrino+ já no app — não ligar chaves antes disto)
+- [x] **Caminhada no app** — Advento 2026 (calendário, 3 dias grátis, revisão). Sem temporada genérica de 40 dias. IAP desligado.
+- [ ] STWAY Pro: ligar chaves RevenueCat + soft paywalls A–F **depois** do D7; alívio (gelo/lâmpadas/Strong) é suporte. (Casca Peregrino+ já no app)
 - [ ] Soft paywalls nos pontos A–F do MONETIZATION.md · default anual R$ 119,90 · copy da temporada (hoje o paywall só abre em Config)
 - [ ] Pro Família (até 5) antes de packs avulsos
 - [ ] Plano Igreja piloto (1–3 líderes): Salas + progresso do grupo + códigos presente Pro · billing Stripe/Pix na web

@@ -28,7 +28,9 @@ import '../widgets/ui_primitives.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/verse_fill_panel.dart';
+import '../widgets/mission_listen_button.dart';
 import '../screens/celebration_screen.dart';
+import '../services/tts_service.dart';
 import '../screens/difficulty_picker_screen.dart';
 
 /// Sessão única: entrada → atos → (micro) → insight → saída.
@@ -38,6 +40,7 @@ enum _Phase { intro, quiz, micro, insight }
 class LessonScreen extends StatefulWidget {
   final String missionSlug;
   final bool practiceMode;
+  final bool skipTrailLock;
   final Mission? missionOverride;
   final List<String>? questionIdsOverride;
 
@@ -45,6 +48,7 @@ class LessonScreen extends StatefulWidget {
     super.key,
     required this.missionSlug,
     this.practiceMode = false,
+    this.skipTrailLock = false,
     this.missionOverride,
     this.questionIdsOverride,
   });
@@ -80,7 +84,7 @@ class _LessonScreenState extends State<LessonScreen>
   bool _hintUsed = false;
   Set<String> _eliminated = {};
   bool _outOfLamps = false;
-  bool _insightOnConnect = false;
+  final bool _insightOnConnect = false;
 
   late final AnimationController _questionEnter;
   late final AnimationController _impactFlash;
@@ -104,6 +108,7 @@ class _LessonScreenState extends State<LessonScreen>
   void dispose() {
     _questionEnter.dispose();
     _impactFlash.dispose();
+    TtsService.instance.stop();
     super.dispose();
   }
 
@@ -144,14 +149,19 @@ class _LessonScreenState extends State<LessonScreen>
       return;
     }
 
-    // Após seed, o pull completo de 8k pode demorar — baixa só a trilha.
-    if (trailSlug != null && trailSlug.isNotEmpty) {
-      await ContentCatalogService.instance.ensureTrailBank(trailSlug);
+    // Após seed, o pull completo de 8k pode demorar — baixa só a trilha (ou o banco emprestado).
+    final bankTrail = (mission.bankTrailSlug ?? '').trim().isNotEmpty
+        ? mission.bankTrailSlug
+        : trailSlug;
+    if (bankTrail != null && bankTrail.isNotEmpty) {
+      await ContentCatalogService.instance.ensureTrailBank(bankTrail);
       if (!mounted) return;
     }
 
     // Deep link / rota direta: não deixa pular unlock de trilha ou passo.
+    // Caminhada compartilhada usa skipTrailLock — o calendário já autorizou o dia.
     if (!widget.practiceMode &&
+        !widget.skipTrailLock &&
         widget.missionOverride == null &&
         trailSlug != null) {
       final trails = await _repo.getTrails();
@@ -186,15 +196,16 @@ class _LessonScreenState extends State<LessonScreen>
       }
     }
 
-    final usesBank = QuestionBank.instance.hasBankForTrail(trailSlug);
+    final usesBank = QuestionBank.instance.hasBankForTrail(bankTrail);
 
     if (usesBank &&
-        trailSlug != null &&
-        !progress.hasDifficultyForTrail(trailSlug)) {
+        bankTrail != null &&
+        !progress.hasDifficultyForTrail(bankTrail) &&
+        (mission.bankTrailSlug ?? '').isEmpty) {
       if (!mounted) return;
       final ok = await DifficultyPickerScreen.ensureSelected(
         context,
-        trailSlug: trailSlug,
+        trailSlug: bankTrail,
       );
       if (!mounted) return;
       if (!ok) {
@@ -208,7 +219,7 @@ class _LessonScreenState extends State<LessonScreen>
     final plan = await SessionComposer.compose(
       mission: mission,
       missionSlug: widget.missionSlug,
-      trailSlug: trailSlug,
+      trailSlug: bankTrail ?? trailSlug,
       moduleTitle: moduleTitle,
       usesBank: usesBank,
       progress: freshProgress,
@@ -232,7 +243,7 @@ class _LessonScreenState extends State<LessonScreen>
       return;
     }
 
-    final hooks = await _resolveHooks(mission);
+    final hooks = await _resolveHooks(mission, acts: plan.acts);
     if (!mounted) return;
     AnalyticsService.instance.logLessonStart(
       missionSlug: widget.missionSlug,
@@ -258,9 +269,7 @@ class _LessonScreenState extends State<LessonScreen>
         slug: mission.slug,
         title: mission.title,
         subtitle: '~3 min',
-        intro: (hooks.note ?? '').trim().isNotEmpty
-            ? hooks.note!
-            : mission.intro,
+        intro: mission.intro,
         type: mission.type,
         stepsReward: _scaledSteps(
           mission.stepsReward,
@@ -274,46 +283,26 @@ class _LessonScreenState extends State<LessonScreen>
         hookVerse: hooks.verse,
         hookNote: hooks.note,
         hookThread: hooks.thread,
+        bankSection: mission.bankSection,
+        bankTrailSlug: mission.bankTrailSlug,
       );
     });
   }
 
-  /// Entrada bíblica: missão (Firestore) → estudo curto (sem spoiler).
-  /// Sempre prefere o texto completo da Bíblia pela referência.
+  /// Entrada bíblica: missão → estudo → atos. Texto TB pela referência.
   Future<({String? ref, String? verse, String? note, String? thread})>
-  _resolveHooks(Mission mission) async {
-    if (mission.hasBibleHook) {
-      final ref = (mission.hookRef ?? '').trim();
-      var verse = (mission.hookVerse ?? '').trim();
-      if (ref.isNotEmpty) {
-        final full = await BibleService.instance.passageText(ref);
-        if (full != null && full.trim().isNotEmpty) {
-          verse = SessionComposer.clipEntranceVerse(full.trim());
-        }
-      }
-      if (verse.isNotEmpty) {
-        verse = SessionComposer.clipEntranceVerse(verse);
-      }
-      final note = (mission.hookNote ?? '').trim();
-      final thread = (mission.hookThread ?? '').trim();
-      // Contrato: contexto OU conexão — um bloco.
-      final side = note.isNotEmpty ? note : thread;
-      return (
-        ref: ref.isNotEmpty ? ref : mission.hookRef,
-        verse: verse.isNotEmpty ? verse : null,
-        note: side.isNotEmpty ? side : null,
-        thread: null,
-      );
-    }
-    final study = MissionStudy.forSlug(widget.missionSlug);
-    if (study == null) {
-      return (ref: null, verse: null, note: null, thread: null);
-    }
-    final ref = study.passageRef.trim().isNotEmpty
-        ? study.passageRef.trim()
-        : null;
-    var verse = study.passageText.trim();
-    if (ref != null) {
+  _resolveHooks(Mission mission, {List<Exercise> acts = const []}) async {
+    final study = _studyFor(mission);
+    var entrance = SessionComposer.resolveEntrance(
+      mission: mission,
+      studyRef: study?.passageRef,
+      studyVerse: study?.passageText,
+      studyContext: study?.context,
+      acts: acts,
+    );
+    final ref = (entrance.ref ?? '').trim();
+    var verse = (entrance.verse ?? '').trim();
+    if (ref.isNotEmpty) {
       final full = await BibleService.instance.passageText(ref);
       if (full != null && full.trim().isNotEmpty) {
         verse = SessionComposer.clipEntranceVerse(full.trim());
@@ -322,13 +311,18 @@ class _LessonScreenState extends State<LessonScreen>
     if (verse.isNotEmpty) {
       verse = SessionComposer.clipEntranceVerse(verse);
     }
-    final note = study.context.trim();
     return (
-      ref: ref,
+      ref: ref.isNotEmpty ? ref : null,
       verse: verse.isNotEmpty ? verse : null,
-      note: note.isNotEmpty ? note : null,
+      note: entrance.note,
       thread: null,
     );
+  }
+
+  MissionStudy? _studyFor(Mission mission) {
+    if (widget.practiceMode) return null;
+    return MissionStudy.forSlug(widget.missionSlug) ??
+        MissionStudy.forSlug(mission.resolvedBankSection);
   }
 
   int get _maxLamps =>
@@ -470,7 +464,7 @@ class _LessonScreenState extends State<LessonScreen>
   }
 
   MissionStudy? get _study =>
-      widget.practiceMode ? null : MissionStudy.forSlug(widget.missionSlug);
+      _mission == null ? null : _studyFor(_mission!);
 
   int get _answeredCount => _questionIndex + (_selected != null ? 1 : 0);
 
@@ -610,6 +604,7 @@ class _LessonScreenState extends State<LessonScreen>
   }
 
   void _startQuiz() {
+    TtsService.instance.stop();
     if (_exercises.isEmpty) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
@@ -937,39 +932,16 @@ class _IntroPanel extends StatelessWidget {
     final note = (mission.hookNote ?? '').trim();
     final fallbackIntro = mission.intro.trim();
     final accent = theme.pathActive;
+    // Palco = verso. Intro narrativo só se nada mais restou.
     final stageText = verse.isNotEmpty
         ? verse
-        : (fallbackIntro.isNotEmpty ? fallbackIntro : '');
+        : (note.isEmpty && fallbackIntro.isNotEmpty ? fallbackIntro : '');
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: AppSpace.screen),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Row(
-            children: [
-              CinematicIcon.mission(
-                mission.title,
-                isBoss: mission.isBoss,
-                size: 22,
-                accent: accent,
-                framed: false,
-              ),
-              const SizedBox(width: 10),
-              Expanded(
-                child: Text(
-                  mission.title.toUpperCase(),
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: AppTypography.title(
-                    size: 18,
-                    color: AppColors.textOnDark,
-                  ).copyWith(letterSpacing: 1.4),
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 6),
           Text(
             mission.isBoss
                 ? 'Desafio · $itemCount atos · +${mission.stepsReward} passos'
@@ -980,7 +952,11 @@ class _IntroPanel extends StatelessWidget {
               color: AppColors.textOnDark.withValues(alpha: 0.5),
             ),
           ),
-          const SizedBox(height: 14),
+          if (note.isNotEmpty) ...[
+            const SizedBox(height: 12),
+            _PlatePrompt(label: 'Contexto', text: note, accent: accent),
+          ],
+          const SizedBox(height: 12),
           Expanded(
             child: stageText.isEmpty
                 ? const SizedBox.shrink()
@@ -997,10 +973,12 @@ class _IntroPanel extends StatelessWidget {
                     ),
                   ),
           ),
-          if (note.isNotEmpty) ...[
-            const SizedBox(height: 12),
-            _PlatePrompt(label: 'Contexto', text: note, accent: accent),
-          ],
+          const SizedBox(height: 10),
+          MissionListenButton(
+            verse: stageText,
+            insight: mission.centralInsight,
+            accent: accent,
+          ),
           const SizedBox(height: 10),
           CopperCta(label: 'Começar', onTap: onStart, trailing: null),
           const SizedBox(height: AppSpace.sm),

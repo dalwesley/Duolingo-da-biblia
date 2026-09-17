@@ -233,11 +233,14 @@ Contrato de sessão: [`SESSAO_TREINO.md`](SESSAO_TREINO.md) v1.2.
 | CMS bank (type/skill/palco) + trails (objective/insight/hook) | feito |
 | `skill` tagueado no banco | feito (heurística + seed) |
 | Strong / morfologia | feito **na aba Bíblia** e **na missão** (toque na ref do palco → sheet Strong) |
-| TTS | feito **só na aba Bíblia** — não é áudio da missão |
+| TTS | feito na aba Bíblia **e** na entrada da missão (passagem + insight) |
+| Caminhada | feito — Advento 2026 (`SeasonWalkCatalog`); sem 40 dias genéricos |
+| Trilhas por dor | overlay `ansiedade` / `recomeco` (banco emprestado via `bankSection`) |
+| Selos | `CharacterSeals` — fato + verso; sem loja |
 | Medalhas v3.2 | feito — faísca, cofres, sazonal, proximidade |
 | `lifeChallenge` / `dailyChallenge` | **não** no player (`MissionStudy` ignora o campo) |
 | `content_exercises` / `skillEstimates` | **não** — fases futuras |
-| Monetização / IAP | casca RevenueCat **inativa** (chaves vazias); perk = companheiros |
+| Monetização / IAP | casca RevenueCat **inativa** (chaves vazias); Caminhada/áudio/revisão no código; perk extra = companheiros |
 | Jornada canônica (unlock) | código existe; bypass só com `--dart-define=OPEN_ALL_TRAILS=true` |
 
 ### Hierarquia de dados (alvo)

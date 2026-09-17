@@ -18,7 +18,10 @@
 | **UI / UX** | Tema escuro cinemático, 5 tabs; Toque responde no versículo (`buildTapSpans`); medalhas v3.2 no perfil |
 | **Distribuição no app** | Cache por trilha no boot; limpa banco antigo quando `catalog.version` muda; atos baixados ao abrir missão |
 | **Escola no conteúdo** | 6 gestos ~equilibrados; palco TB; Gn 1–11 editorial; Êxodo/Sermão pack; resto gerado — próximo salto = handcraft vitrine |
-| **Strong / TTS** | Strong offline na aba Bíblia **e** na missão (ref do palco → Estudar). TTS **só na Bíblia** |
+| **Strong / TTS** | Strong offline na aba Bíblia **e** na missão (ref do palco → Estudar). TTS na Bíblia **e** na entrada da missão (passagem + “Hoje:” ~90 s) |
+| **Caminhada** | Advento/Quaresma **só na janela** (29 nov–24 dez 2026). Calendário + cofre + banner aparecem sozinhos. |
+| **Trilhas por dor** | Ansiedade → Sermão do Monte; Recomeço → Gênesis 1–11 (Vida Cristã, 5 missões, banco do cânon) |
+| **Selos** | 6 personagens (fato + verso) no perfil/mapa/celebração — sem skin shop |
 | **Hábito extra** | Widget home, FCM de aceno na companhia, lembrete após 1ª missão, Remote Config |
 | **Prática IRL** | `dailyChallenge` existe em **1** study (`sm-08`); o modelo `MissionStudy` **não parseia** — sem check-in |
 | **Prova com usuário** | Protocolo D7 pronto ([`D7_TESTER_PROTOCOLO.md`](D7_TESTER_PROTOCOLO.md)); planilha vazia — falta 10–20 testers |
@@ -66,8 +69,8 @@ Regra de feature ([§46](LEARNING_ENGINE.md)): *isso torna o usuário melhor em 
 
 ### Abas principais
 
-1. **Hoje** — Próxima missão dominante, quests, streak, medalhas próximas, desafio sazonal (se janela), entrada para prática/memória  
-2. **Trilhas** — Catálogo por reino (AT / NT / Vida Cristã / Teologia)  
+1. **Hoje** — Uma missão dominante. Caminhada só na janela de Advento/Quaresma (ou prévia em Ajustes).  
+2. **Trilhas** — Catálogo por reino (AT / NT / Vida Cristã / Teologia) — inclui Ansiedade e Recomeço  
 3. **Bíblia** — Leitor offline + Strong + TTS + plano de leitura leve  
 4. **Juntos** — Caravana, Companhia, Salas  
 5. **Config** — Som, notificações, Peregrino+ (casca), export/import, logout  
@@ -178,7 +181,7 @@ Não há mais missão especial embutida. `gen-03-imagem` e o restante usam o mes
 
 ## Monetização
 
-Hoje: **IAP inativo**. Há tela Peregrino+ e SDK RevenueCat, mas as chaves estão vazias — ninguém compra. O perk implementado (quando ligar) é só **mais companheiros**. O produto Pro (Caminhada + áudio + revisão da semana + alívio de ritmo) **não está no app**. Direção: [`MONETIZATION.md`](../MONETIZATION.md). Não gatear Profundezas do canônico. Não abrir IAP de verdade antes do D7 e da 1ª Caminhada piloto.
+Hoje: **IAP inativo**. Há tela Peregrino+ e SDK RevenueCat, mas as chaves estão vazias — ninguém compra. Caminhada, áudio da missão e revisão da semana **já estão no app**; dia 4+ da Caminhada só trava se as chaves existirem. Perk extra quando ligar: **mais companheiros**. Direção: [`MONETIZATION.md`](../MONETIZATION.md). Não gatear Profundezas do canônico. Não preencher as chaves RevenueCat antes do D7.
 
 ---
 

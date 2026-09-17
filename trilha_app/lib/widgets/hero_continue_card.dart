@@ -107,8 +107,8 @@ class _HeroContinueCardState extends State<HeroContinueCard>
 
     // Em dia: não “Entrar” de novo — reconhece o passo já dado.
     final ctaLabel = switch (mood) {
-      HeroCardMood.frozen => 'Retomar caminhada',
-      HeroCardMood.dusty => 'Continuar caminhada',
+      HeroCardMood.frozen => 'Retomar a trilha',
+      HeroCardMood.dusty => 'Continuar a trilha',
       HeroCardMood.alive =>
         widget.goalMet
             ? 'Avançar'

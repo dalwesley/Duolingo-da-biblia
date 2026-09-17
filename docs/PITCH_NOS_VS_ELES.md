@@ -74,7 +74,7 @@ SESSÃO (2–4 min)
 | Retenção medida (D7) | Protocolo pronto; planilha vazia — falta 10–20 testers |
 | Escola editorial vitrine | Infra ok (gerador + TB); falta autor humano em Gn/Sermão |
 | Marca / polish / aquisição | Shell cinemático ok; gigantes ganham por confiança |
-| IAP | Casca Peregrino+ **inativa**; Pro de verdade só depois do D7 + Caminhada piloto |
+| IAP | Casca Peregrino+ **inativa**; Caminhada/áudio/revisão já no app; não ligar chaves antes do D7 |
 
 ---
 

@@ -7,6 +7,18 @@ import '../services/progress_service.dart';
 import '../utils/answer_phrase.dart';
 import '../utils/vf_claim.dart';
 
+/// Entrada da sessão: verso âncora + 1 nota ([docs/SESSAO_TREINO.md] §3.0).
+class SessionEntrance {
+  final String? ref;
+  final String? verse;
+  final String? note;
+
+  const SessionEntrance({this.ref, this.verse, this.note});
+
+  bool get hasVerse => (verse ?? '').trim().isNotEmpty;
+  bool get hasNote => (note ?? '').trim().isNotEmpty;
+}
+
 /// Resultado do composer — sempre uma sessão única ([docs/SESSAO_TREINO.md]).
 class SessionPlan {
   final List<Exercise> acts;
@@ -203,6 +215,94 @@ class SessionComposer {
     final words = t.split(' ').where((w) => w.isNotEmpty).toList();
     if (words.length <= maxWords) return t;
     return '${words.take(maxWords).join(' ')}…';
+  }
+
+  /// Mesmo layout para toda missão: ref + verso + contexto/conexão.
+  /// Missão → estudo → atos. Insight não entra aqui (é spoiler).
+  static SessionEntrance resolveEntrance({
+    required Mission mission,
+    String? studyRef,
+    String? studyVerse,
+    String? studyContext,
+    List<Exercise> acts = const [],
+  }) {
+    final hookRef = (mission.hookRef ?? '').trim();
+    final hookVerse = (mission.hookVerse ?? '').trim();
+    final hookNote = (mission.hookNote ?? '').trim();
+    final hookThread = (mission.hookThread ?? '').trim();
+    final fromStudyRef = (studyRef ?? '').trim();
+    final fromStudyVerse = (studyVerse ?? '').trim();
+    final fromStudyNote = (studyContext ?? '').trim();
+
+    String? actRef;
+    String? actVerse;
+    for (final ex in acts) {
+      final t = (ex.passageText ?? '').trim();
+      if (t.length < 20) continue;
+      actVerse = t;
+      final r = (ex.reference ?? '').trim();
+      if (r.isNotEmpty) actRef = r;
+      break;
+    }
+
+    final ref = _firstNonEmpty([hookRef, fromStudyRef, actRef]);
+    var verse = _firstNonEmpty([hookVerse, fromStudyVerse, actVerse]);
+    if (verse != null) {
+      verse = clipEntranceVerse(verse);
+    }
+
+    final introNote = _noteFromIntro(mission.intro, verse: verse);
+    final note = _clipEntranceNote(
+      _firstNonEmpty([
+        hookNote,
+        hookThread,
+        fromStudyNote,
+        introNote,
+      ]),
+    );
+
+    return SessionEntrance(
+      ref: ref,
+      verse: verse,
+      note: note != null && note != verse ? note : null,
+    );
+  }
+
+  static String? _firstNonEmpty(Iterable<String?> values) {
+    for (final v in values) {
+      final t = (v ?? '').trim();
+      if (t.isNotEmpty) return t;
+    }
+    return null;
+  }
+
+  static final _ctaTail = RegExp(
+    r'(?:\s*(?:vamos começar por aqui|vamos começar|você consegue!?)[^.!?]*[.!?]?\s*)+$',
+    caseSensitive: false,
+  );
+
+  /// Intro narrativo vira nota de contexto — nunca o palco do verso.
+  static String? _noteFromIntro(String intro, {String? verse}) {
+    var t = intro.replaceAll(RegExp(r'\s+'), ' ').trim();
+    if (t.isEmpty) return null;
+    t = t.replaceAll(_ctaTail, '').trim();
+    if (t.isEmpty) return null;
+    final lower = t.toLowerCase();
+    if (lower.startsWith('hora de provar') ||
+        lower.contains('o que aprendeu sobre')) {
+      return null;
+    }
+    final v = (verse ?? '').trim();
+    if (v.isNotEmpty && (t == v || t.contains(v))) return null;
+    return t;
+  }
+
+  static String? _clipEntranceNote(String? text) {
+    final t = (text ?? '').replaceAll(RegExp(r'\s+'), ' ').trim();
+    if (t.isEmpty) return null;
+    final parts = t.split(RegExp(r'(?<=[.!?])\s+'));
+    if (parts.length <= 2) return t;
+    return parts.take(2).join(' ');
   }
 
   static const _feedbackStops = {
@@ -689,8 +789,8 @@ class SessionComposer {
       final pool = await QuestionBank.instance.listForMission(
         difficulty: difficulty,
         moduleTitle: moduleTitle,
-        section: mission.slug,
-        trailSlug: trailSlug,
+        section: mission.resolvedBankSection,
+        trailSlug: mission.bankTrailSlug ?? trailSlug,
       );
       final max = ProgressService.questionCountForMission(isBoss: mission.isBoss)
           .clamp(5, 12);

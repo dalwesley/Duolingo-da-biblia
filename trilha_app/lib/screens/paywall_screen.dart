@@ -15,8 +15,9 @@ class PaywallScreen extends StatelessWidget {
   const PaywallScreen({super.key});
 
   static const _perks = [
+    'A temporada (Advento / Quaresma) — depois dos 3 dias grátis',
+    'Revisão da semana: os 7 “Hoje:” + 3 atos',
     'Companheiros de caminhada: até 6, em vez de 3',
-    'Apoia diretamente a produção de novas trilhas',
   ];
 
   @override

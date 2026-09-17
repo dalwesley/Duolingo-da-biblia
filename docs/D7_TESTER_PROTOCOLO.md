@@ -92,4 +92,4 @@ Meta qualitativa: ≥50% das frases espontâneas alinhadas ao norte; D7 ≥ reto
 - [ ] D7 medido (GA4 + planilha) na vitrine escolhida
 - [ ] Frase espontânea majoritariamente alinhada ao norte
 
-Só então, nesta ordem: `lifeChallenge` → trilhas por dor → áudio de commute ([`ROADMAP.md`](../ROADMAP.md) “Depois”).
+Só então: `lifeChallenge` ([`ROADMAP.md`](../ROADMAP.md) “Depois”). Trilhas por dor, áudio da missão e selos **já estão no app**.

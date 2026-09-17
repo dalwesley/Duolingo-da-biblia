@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import '../data/question_bank.dart';
+import '../data/entry_trails.dart';
 import '../data/trail_repository.dart';
+import '../widgets/character_seals_strip.dart';
 import '../models/caravan_pilgrim_profile.dart';
 import '../models/difficulty.dart';
 import '../models/pilgrim_medals.dart';
@@ -370,6 +372,16 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                           ),
                           child: _trailMedalChip(progress, trail)!,
                         ),
+                      if (_trailSealChip(progress, trail) != null)
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(
+                            AppSpace.screen,
+                            0,
+                            AppSpace.screen,
+                            AppSpace.md,
+                          ),
+                          child: _trailSealChip(progress, trail)!,
+                        ),
                       Padding(
                         padding: const EdgeInsets.fromLTRB(
                           AppSpace.screen,
@@ -494,6 +506,62 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                 size: 11,
                 letterSpacing: 0.2,
                 color: accent,
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget? _trailSealChip(ProgressService progress, Trail trail) {
+    final seal = CharacterSeals.forTrail(trail.slug);
+    if (seal == null) return null;
+    final unlocked = progress.isMissionCompleted(seal.missionSlug);
+    if (!unlocked) {
+      final next = trail.missionSlugs
+          .where((s) => !progress.isMissionCompleted(s))
+          .firstOrNull;
+      if (next != seal.missionSlug) return null;
+    }
+    final a = Appearance.of(context);
+    return Align(
+      alignment: Alignment.centerLeft,
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: unlocked ? () => showCharacterSealSheet(context, seal) : null,
+          borderRadius: BorderRadius.circular(AppRadii.pill),
+          child: Opacity(
+            opacity: unlocked ? 1 : 0.5,
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+              decoration: BoxDecoration(
+                color: AppColors.accent.withValues(alpha: 0.12),
+                borderRadius: BorderRadius.circular(AppRadii.pill),
+                border: Border.all(
+                  color: AppColors.accent.withValues(alpha: 0.35),
+                ),
+              ),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  CinematicIcon(
+                    glyph: seal.glyph,
+                    size: 18,
+                    accent: AppColors.accent,
+                    framed: false,
+                  ),
+                  const SizedBox(width: 6),
+                  Text(
+                    'Selo ${seal.name}',
+                    style: AppTypography.label(
+                      size: 11,
+                      letterSpacing: 0.2,
+                      color: a.text,
+                    ),
+                  ),
+                ],
               ),
             ),
           ),

@@ -18,7 +18,8 @@ Não confundir **casca** com **produto**.
 | Entitlement `peregrino_plus` | Sim | Sempre `false` sem chaves |
 | Perk implementado | 3 → 6 companheiros | **Não** é nenhum dos 5 itens do Pro abaixo |
 | Soft paywalls (0 lâmpadas, gelo, Strong, dia 3) | **Não** | — |
-| Caminhada 40 dias / áudio / revisão da semana | **Não** | — |
+| Caminhada (Advento / Quaresma) / revisão da semana | **Sim** | Sem temporada genérica de 40 dias. Dia 4+ e revisão só travam com chaves |
+| Áudio da missão | **Sim** (entrada da missão) | Grátis por enquanto — não está no paywall |
 | Família / Igreja / Stripe | **Não** | — |
 
 Ordem de implementação (seção no fim) **não mudou**. Não preencher as chaves RevenueCat antes da 1ª Caminhada piloto.
@@ -30,9 +31,9 @@ Ordem de implementação (seção no fim) **não mudou**. Não preencher as chav
 Quem paga **R$ 119,90/ano** ganha isto. Cinco coisas. Nada além.
 
 **1. A Caminhada inteira**
-Uma temporada com data: Advento, Quaresma ou 40 dias. Todo mundo no mesmo dia.
+Uma temporada com data: Advento ou Quaresma. Todo mundo no mesmo dia.
 Grátis: os 3 primeiros dias.
-Pro: os 40 dias, a revisão no fim de cada semana, o fecho da temporada.
+Pro: o restante da temporada, a revisão no fim de cada semana, o fecho.
 
 **2. Áudio na missão**
 A passagem lida + 1 insight (~90 segundos). Toda missão. No ônibus, no trânsito.
@@ -176,7 +177,7 @@ Copy: a temporada, não o gelo.
 - 0 lâmpadas → *Continuar com Pro*
 - Streak em risco → *Proteger caminhada*
 - Strong no teto → *Estudo ilimitado*
-- Dia 3 da Caminhada → *Seguir os 40 dias*
+- Dia 3 da Caminhada → *Seguir a temporada*
 - Trilha-escola → *Modo escola*
 - Settings → gerenciar / restaurar / Família / presentear
 
@@ -226,7 +227,7 @@ Não é caridade tardia. É canal — e desarma “estão vendendo a Bíblia”.
 A janela não é cupom. É o lançamento da Caminhada.
 
 - Advento / Quaresma / Páscoa → Caminhada nova + anual a R$ 96,90 no 1º ano (1× por conta)
-- Resto do ano → preço cheio R$ 119,90 · Caminhada “40 dias” genérica se não houver tempo litúrgico
+- Resto do ano → preço cheio R$ 119,90 · sem Caminhada genérica; espera a próxima janela litúrgica
 - Presentear Pro no Natal (SKU presente, 12 meses)
 
 Mensal nunca entra em promo (precisa continuar caro).

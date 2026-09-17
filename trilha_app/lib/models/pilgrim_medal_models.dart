@@ -303,21 +303,29 @@ class PilgrimMedalEvalContext {
 
   DateTime get clock => now ?? DateTime.now();
 
-  factory PilgrimMedalEvalContext.fromProfile(CaravanPilgrimProfile profile) {
+  factory PilgrimMedalEvalContext.fromProfile(
+    CaravanPilgrimProfile profile, {
+    DateTime? now,
+  }) {
     return PilgrimMedalEvalContext(
       playDates: profile.playDates,
       reflectionCount: profile.reflectionCount,
       firstOpenDate: profile.firstOpenDate,
+      now: now,
     );
   }
 
-  factory PilgrimMedalEvalContext.fromProgress(ProgressService progress) {
+  factory PilgrimMedalEvalContext.fromProgress(
+    ProgressService progress, {
+    DateTime? now,
+  }) {
     return PilgrimMedalEvalContext(
       playDates: List<String>.from(progress.playDates),
       reflectionCount: progress.missionReflections.length,
       firstOpenDate: progress.firstOpenDate,
       lastBibleReadDate: progress.lastBibleReadDate,
       bibleBeforeMission: progress.bibleBeforeMission,
+      now: now,
     );
   }
 }

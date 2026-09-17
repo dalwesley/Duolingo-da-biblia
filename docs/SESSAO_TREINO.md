@@ -319,6 +319,6 @@ Gestos MVP: V/F · toque · escolha · ordenar · completar · conectar · insig
 
 **Ainda editorial (não código):** profundezas com operações reais (não clone de Semente); prova D7 com testers.
 
-**Ainda código (fora deste contrato):** `lifeChallenge` no fim da sessão; áudio da passagem na missão.
+**Ainda código (fora deste contrato):** `lifeChallenge` no fim da sessão.
 
-**Código (já feito):** Strong no fluxo do treino (toque na ref do palco → sheet Estudar) e na aba Bíblia.
+**Código (já feito):** Strong no fluxo do treino (toque na ref do palco → sheet Estudar) e na aba Bíblia; áudio da passagem + insight na entrada da missão.

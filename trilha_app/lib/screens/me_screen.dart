@@ -16,6 +16,7 @@ import '../widgets/immersive_background.dart';
 import '../widgets/living_seed_card.dart';
 import '../widgets/milestone_chests.dart';
 import '../models/pilgrim_medals.dart';
+import '../widgets/character_seals_strip.dart';
 import '../widgets/pilgrim_medal_vault_panel.dart';
 import '../widgets/pilgrim_profile_sections.dart';
 import '../widgets/reflection_journal_card.dart';
@@ -155,6 +156,16 @@ class _MeScreenState extends State<MeScreen> {
           profile: profile,
           evalContext: PilgrimMedalEvalContext.fromProfile(profile),
         ),
+      ]);
+    }
+
+    body.addAll([
+      const SizedBox(height: AppSpace.section),
+      CharacterSealsStrip(completed: progress.completedMissions),
+    ]);
+
+    if (profile != null && !_caravanLoading) {
+      body.addAll([
         if (profile.trails.isNotEmpty) ...[
           const SizedBox(height: AppSpace.section),
           _ActiveTrailsCard(trails: profile.trails.take(3).toList()),

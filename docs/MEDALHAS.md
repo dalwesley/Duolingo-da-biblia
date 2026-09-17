@@ -15,9 +15,9 @@ As tabelas de IDs v2 mais abaixo são **históricas** — o app não as usa mais
 | Cofre sazonal `season:advento-2026` | Feito (visível só na janela 29 nov–24 dez + 7 dias) |
 | Proximidade no Hoje, mapa e perfil | Feito (`MedalProximityWhisper`, chip no mapa) |
 | Celebração de medalha / cofre | Feito |
-| **Caminhada de 40 dias** (produto Pro) | **Não** — o cofre não é a temporada jogável |
+| **Caminhada de 40 dias** (produto genérico) | **Removido** — fora de tempo litúrgico. Fica Advento/Quaresma |
 
-**Não falta medalha nova.** Falta o produto Caminhada (calendário compartilhado) se o D7 pedir Pro.
+**Não falta medalha nova.** Caminhada (calendário) já está no app; IAP continua desligado.
 
 ---
 
@@ -373,11 +373,11 @@ Opcional v2.1: toggle por cofre (provavelmente overkill).
 |------|--------|--------|
 | **A** | Modelo `vaultId` + migração Jornada | **Feito** |
 | **B** | Template trilha + geração do catálogo | **Feito** |
-| **C** | Sazonal (cofre Advento) | **Feito no cofre** — produto 40 dias ainda não |
+| **C** | Sazonal (cofre Advento) | **Feito** |
 | **D** | Descobertas | **Feito** |
 | **E** | Mapa + proximidade por trilha ativa | **Feito** |
 
-Não abrir fase nova de medalha antes do D7. Próximo produto relacionado: **Caminhada 40 dias** (não mais medalhas).
+Não abrir fase nova de medalha antes do D7. Caminhada = Advento/Quaresma, não 40 dias genéricos.
 
 ---
 
@@ -402,4 +402,4 @@ Não abrir fase nova de medalha antes do D7. Próximo produto relacionado: **Cam
 | O que acontece quando “acaba”? | Acaba **um cofre**, não o jogo; surgem trilhas e temporadas novas |
 | Quantas medalhas no total? | Escadas v3.2 (não 14 globais) + 4 níveis/trilha + sazonal + raras — ver calibração |
 
-**Próximo passo:** nenhum de medalha. Prova D7; depois Caminhada como produto (o cofre já espera Advento 2026).
+**Próximo passo:** nenhum de medalha. Prova D7. Calendário da Caminhada = Advento/Quaresma.

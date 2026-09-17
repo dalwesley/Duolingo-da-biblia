@@ -2,7 +2,6 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../models/pilgrim_chest.dart';
-import '../models/pilgrim_medal_catalog.dart';
 import '../models/pilgrim_medals.dart';
 import '../models/bible_reading_plan.dart';
 import '../models/caravan_profile_prefs.dart';
@@ -150,6 +149,8 @@ class ProgressService extends ChangeNotifier {
   Map<String, String> trailDifficulties = {};
   /// Modos (dificuldades) em que a trilha já foi concluída por completo.
   Map<String, List<String>> clearedTrailModes = {};
+  /// Dias da Caminhada concluídos: `{ campaignId: ['YYYY-MM-DD', ...] }`.
+  Map<String, List<String>> seasonWalkDays = {};
   List<String> usedQuestionIds = [];
   List<String> mistakeQuestionIds = [];
   List<String> playDates = [];
@@ -642,6 +643,7 @@ class ProgressService extends ChangeNotifier {
     settings = const AppSettings();
     trailDifficulties = {};
     clearedTrailModes = {};
+    seasonWalkDays = {};
     usedQuestionIds = [];
     mistakeQuestionIds = [];
     playDates = [];
@@ -1519,6 +1521,23 @@ class ProgressService extends ChangeNotifier {
     return awarded;
   }
 
+  List<String> walkDatesFor(String campaignId) =>
+      List<String>.from(seasonWalkDays[campaignId] ?? const []);
+
+  bool isWalkDateDone(String campaignId, String ymd) =>
+      walkDatesFor(campaignId).contains(ymd);
+
+  Future<void> markWalkDate(String campaignId, String ymd) async {
+    final cur = walkDatesFor(campaignId);
+    if (cur.contains(ymd)) return;
+    seasonWalkDays = {
+      ...seasonWalkDays,
+      campaignId: [...cur, ymd],
+    };
+    await _save();
+    notifyListeners();
+  }
+
   void clearGoalJustReached() {
     goalJustReached = false;
   }
@@ -1709,6 +1728,7 @@ class ProgressService extends ChangeNotifier {
       'playDates': playDates,
       'trailDifficulties': trailDifficulties,
       'clearedTrailModes': clearedTrailModes,
+      'seasonWalkDays': seasonWalkDays,
       'missionReflections': missionReflections,
       'companionCodes': companionCodes,
       'activeRoomCode': activeRoomCode,
@@ -2132,6 +2152,18 @@ class ProgressService extends ChangeNotifier {
           clearedTrailModes = merged;
         }
       }
+      if (data.containsKey('seasonWalkDays')) {
+        final cloudWalk = _asStringListMap(data['seasonWalkDays']);
+        if (seasonWalkDays.isEmpty) {
+          seasonWalkDays = cloudWalk;
+        } else {
+          final merged = Map<String, List<String>>.from(seasonWalkDays);
+          for (final e in cloudWalk.entries) {
+            merged[e.key] = _unionStringLists(merged[e.key] ?? const [], e.value);
+          }
+          seasonWalkDays = merged;
+        }
+      }
       if (data.containsKey('missionReflections')) {
         missionReflections = {
           ...missionReflections,
@@ -2351,6 +2383,7 @@ class ProgressService extends ChangeNotifier {
     mistakeQuestionIds = [];
     playDates = [];
     frozenDates = [];
+    seasonWalkDays = {};
     streakFreezeAvailable = true;
     streakFreezeWeek = null;
     streakRepairAvailable = true;

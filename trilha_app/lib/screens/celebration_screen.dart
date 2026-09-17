@@ -3,7 +3,9 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
+import '../data/entry_trails.dart';
 import '../data/question_bank.dart';
+import '../data/season_walk_catalog.dart';
 import '../data/trail_repository.dart';
 import '../models/caravan_pilgrim_profile.dart';
 import '../models/difficulty.dart';
@@ -21,6 +23,7 @@ import '../utils/day_phase.dart';
 import '../utils/difficulty_trails.dart';
 import '../utils/mascot_messages.dart';
 import '../utils/trail_progress.dart';
+import '../widgets/character_seals_strip.dart';
 import '../widgets/companion_invite_prompt_sheet.dart';
 import '../widgets/confetti_overlay.dart';
 import '../widgets/cinematic_icon.dart';
@@ -71,6 +74,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
   bool _firstLessonSession = false;
   bool _leaving = false;
   String? _medalLine;
+  CharacterSeal? _newSeal;
   TrailDifficulty? _currentMode;
   TrailDifficulty? _nextMode;
   DifficultyMeta? _nextMeta;
@@ -186,9 +190,10 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     } catch (_) {}
     if (!mounted) return;
     if (toTrailMap) {
+      final canon = EntryTrails.continuesTo[widget.missionSlug];
       Navigator.of(context).pushReplacement(
         MaterialPageRoute(
-          builder: (_) => TrailMapScreen(slug: widget.trailSlug),
+          builder: (_) => TrailMapScreen(slug: canon ?? widget.trailSlug),
         ),
       );
     } else {
@@ -241,6 +246,24 @@ class _CelebrationScreenState extends State<CelebrationScreen>
           .then((awarded) async {
             if (mounted && awarded > 0) {
               setState(() => _awardedSteps = awarded);
+            }
+            final now = DateTime.now();
+            final today = DateTime(now.year, now.month, now.day);
+            final campaign = SeasonWalkCatalog.current(today);
+            for (final d in campaign.days) {
+              if (d.missionSlug != widget.missionSlug) continue;
+              final date = d.dateOn(campaign.start);
+              if (date.isAfter(today)) continue;
+              final ymd =
+                  '${date.year.toString().padLeft(4, '0')}-${date.month.toString().padLeft(2, '0')}-${date.day.toString().padLeft(2, '0')}';
+              await progress.markWalkDate(campaign.id, ymd);
+              break;
+            }
+            if (!widget.isReplay) {
+              final seal = CharacterSeals.forMission(widget.missionSlug);
+              if (seal != null && mounted) {
+                setState(() => _newSeal = seal);
+              }
             }
             // Grava na hora — o debounce de 2s perdia o dia ao reiniciar o app.
             if (mounted) {
@@ -593,6 +616,10 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                             const SizedBox(height: AppSpace.md),
                                             _MedalProgressLine(text: _medalLine!),
                                           ],
+                                          if (_newSeal != null) ...[
+                                            const SizedBox(height: AppSpace.md),
+                                            _SealUnlockCard(seal: _newSeal!),
+                                          ],
                                           if (_leagueCompetitive &&
                                               _leagueRank > 0) ...[
                                             const SizedBox(height: AppSpace.lg),
@@ -760,7 +787,12 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                             );
                                           },
                                           child: CopperCta(
-                                            label: 'CONTINUAR A CAMINHADA',
+                                            label: EntryTrails.continuesTo
+                                                    .containsKey(
+                                                  widget.missionSlug,
+                                                )
+                                                ? 'SEGUIR NO CÂNON'
+                                                : 'CONTINUAR A TRILHA',
                                             trailing: null,
                                             onTap: () => _leaveCelebration(
                                               toTrailMap: true,
@@ -1213,6 +1245,58 @@ class _CaravanaMoment extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class _SealUnlockCard extends StatelessWidget {
+  final CharacterSeal seal;
+
+  const _SealUnlockCard({required this.seal});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: () => showCharacterSealSheet(context, seal),
+        borderRadius: BorderRadius.circular(AppRadii.md),
+        child: GlassCard(
+          padding: AppMetrics.cardPaddingCompact,
+          child: Row(
+            children: [
+              CinematicIcon(
+                glyph: seal.glyph,
+                size: 36,
+                accent: AppColors.accent,
+                framed: true,
+              ),
+              const SizedBox(width: 10),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Selo ${seal.name}',
+                      style: AppTypography.title(size: 13, color: a.text),
+                    ),
+                    Text(
+                      seal.fact,
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                      style: AppTypography.body(
+                        size: 12,
+                        color: a.textMuted(0.7),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }

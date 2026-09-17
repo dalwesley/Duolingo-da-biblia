@@ -16,11 +16,14 @@ import 'immersive_background.dart';
 import 'ui_primitives.dart';
 
 /// Desafio sazonal público (Advento/Quaresma) — só aparece na janela ativa.
-/// Convida a compartilhar, reaproveitando o cofre de medalhas já calculado.
+/// Convite do cofre; a Caminhada tem entrada própria na home.
 class SeasonChallengeBanner extends StatelessWidget {
   final List<Trail> catalog;
 
-  const SeasonChallengeBanner({super.key, required this.catalog});
+  const SeasonChallengeBanner({
+    super.key,
+    required this.catalog,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -48,6 +51,7 @@ class SeasonChallengeBanner extends StatelessWidget {
     if (season == null || season.tracks.isEmpty) return const SizedBox.shrink();
     final track = season.tracks.first;
     if (track.isComplete) return const SizedBox.shrink();
+    final vaultTitle = season.vault.title;
 
     final next = track.nextLevel;
     final accent = tierColor(
@@ -76,7 +80,7 @@ class SeasonChallengeBanner extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        season.vault.title,
+                        vaultTitle,
                         style: AppTypography.title(size: 14, color: a.text),
                       ),
                       const SizedBox(height: 2),
@@ -107,19 +111,13 @@ class SeasonChallengeBanner extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 14),
-            Row(
-              children: [
-                Expanded(
-                  child: CopperCta(
-                    label: 'Convidar para o desafio',
-                    trailing: CinematicGlyph.path,
-                    onTap: () {
-                      HapticFeedback.mediumImpact();
-                      _share(season!.vault.title);
-                    },
-                  ),
-                ),
-              ],
+            CopperCta(
+              label: 'Convidar para o desafio',
+              trailing: CinematicGlyph.share,
+              onTap: () {
+                HapticFeedback.mediumImpact();
+                _share(vaultTitle);
+              },
             ),
           ],
         ),

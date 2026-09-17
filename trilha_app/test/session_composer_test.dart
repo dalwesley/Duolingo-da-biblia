@@ -210,6 +210,112 @@ void main() {
       expect(clipped.split(' ').length, 40);
     });
 
+    test('resolveEntrance keeps mission hooks over study and acts', () {
+      const mission = Mission(
+        slug: 'dor-ansia-01',
+        title: 'Tesouros e ansiedade',
+        intro: 'Onde está o tesouro, está o coração.',
+        type: 'lesson',
+        stepsReward: 60,
+        questions: [],
+        hookRef: 'Mateus 6:25–34',
+        hookVerse: 'Não andeis ansiosos pela vossa vida.',
+        hookNote:
+            'O cuidado do Pai é o argumento contra a ansiedade — não a ausência de necessidade.',
+      );
+      final entrance = SessionComposer.resolveEntrance(
+        mission: mission,
+        studyRef: 'Gênesis 1:1',
+        studyVerse: 'No princípio, criou Deus o céu e a terra.',
+        studyContext: 'A Bíblia começa com o Criador.',
+        acts: const [
+          Exercise(
+            id: 'a1',
+            type: ExerciseType.trueFalse,
+            prompt: 'x',
+            correctAnswer: 'true',
+            reference: 'Salmo 23:1',
+            passageText: 'Jeová é o meu pastor; nada me faltará.',
+          ),
+        ],
+      );
+      expect(entrance.ref, 'Mateus 6:25–34');
+      expect(entrance.verse, 'Não andeis ansiosos pela vossa vida.');
+      expect(
+        entrance.note,
+        'O cuidado do Pai é o argumento contra a ansiedade — não a ausência de necessidade.',
+      );
+    });
+
+    test('resolveEntrance fills verse and context when mission has no hook', () {
+      const mission = Mission(
+        slug: 'gen-01-criador',
+        title: 'Quem criou o mundo?',
+        intro:
+            'Gênesis 1 abre com uma declaração poderosa: Deus é o Criador de tudo. Antes de qualquer coisa existir, Deus já era. Vamos começar por aqui.',
+        type: 'lesson',
+        stepsReward: 50,
+        questions: [],
+      );
+      final entrance = SessionComposer.resolveEntrance(
+        mission: mission,
+        studyRef: 'Gênesis 1:1–2',
+        studyVerse:
+            'No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia.',
+        studyContext:
+            'Antes de qualquer coisa existir, Deus já era. A Bíblia não começa com o homem — começa com o Criador.',
+      );
+      expect(entrance.ref, 'Gênesis 1:1–2');
+      expect(entrance.verse, contains('No princípio, criou Deus'));
+      expect(entrance.note, contains('A Bíblia não começa com o homem'));
+      expect(entrance.note, isNot(contains('Vamos começar')));
+    });
+
+    test('resolveEntrance uses first act verse and strips intro CTA', () {
+      const mission = Mission(
+        slug: 'gen-01-criador',
+        title: 'Quem criou o mundo?',
+        intro:
+            'Gênesis 1 abre com uma declaração poderosa: Deus é o Criador de tudo. Antes de qualquer coisa existir, Deus já era. Vamos começar por aqui.',
+        type: 'lesson',
+        stepsReward: 50,
+        questions: [],
+      );
+      final entrance = SessionComposer.resolveEntrance(
+        mission: mission,
+        acts: const [
+          Exercise(
+            id: 'genesis-1-11-sem-gen-01-criador-01',
+            type: ExerciseType.trueFalse,
+            prompt: 'No princípio, criou Deus o céu e a terra.',
+            correctAnswer: 'true',
+            reference: 'Gênesis 1:1–2',
+            passageText:
+                'No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.',
+          ),
+        ],
+      );
+      expect(entrance.ref, 'Gênesis 1:1–2');
+      expect(entrance.verse, contains('No princípio, criou Deus'));
+      expect(entrance.note, contains('Deus é o Criador de tudo'));
+      expect(entrance.note, isNot(contains('Vamos começar por aqui')));
+    });
+
+    test('resolveEntrance does not use insight or boss CTA as context', () {
+      const mission = Mission(
+        slug: 'gen-boss-01',
+        title: 'Desafio: A Criação',
+        intro: 'Hora de provar o que aprendeu sobre a Criação. Respire fundo — você consegue!',
+        type: 'boss',
+        stepsReward: 100,
+        questions: [],
+        centralInsight: 'Deus é o centro, não eu',
+      );
+      final entrance = SessionComposer.resolveEntrance(mission: mission);
+      expect(entrance.note, isNull);
+      expect(entrance.verse, isNull);
+    });
+
     test('clipFeedbackPassage windows around the question keyword', () {
       const start =
           'O Senhor disse a Abrão: Saia da sua terra e da sua parentela.';
