@@ -335,17 +335,6 @@ class _VerseFillPanelState extends State<VerseFillPanel>
                       ),
                       child: Column(
                         children: [
-                          Text(
-                            'Toque na ordem',
-                            style: AppTypography.label(
-                              size: 10,
-                              letterSpacing: 1.0,
-                              color: AppColors.textOnDark.withValues(
-                                alpha: 0.42,
-                              ),
-                            ),
-                          ),
-                          SizedBox(height: compact ? 8 : 12),
                           Wrap(
                             spacing: 10,
                             runSpacing: 10,
@@ -432,23 +421,42 @@ class _MemoryHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        CinematicIcon(
-          glyph: CinematicGlyph.spark,
-          size: 22,
-          accent: accent,
-          framed: false,
+        Padding(
+          padding: const EdgeInsets.only(top: 2),
+          child: CinematicIcon(
+            glyph: CinematicGlyph.spark,
+            size: 22,
+            accent: accent,
+            framed: false,
+          ),
         ),
         const SizedBox(width: 10),
         Expanded(
-          child: Text(
-            'COMPLETE O VERSÍCULO',
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            style: AppTypography.title(
-              size: 18,
-              color: AppColors.textOnDark,
-            ).copyWith(letterSpacing: 1.4),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'PALAVRA',
+                style: AppTypography.label(
+                  size: 11,
+                  letterSpacing: 1.8,
+                  color: accent,
+                ),
+              ),
+              const SizedBox(height: 6),
+              Text(
+                'Complete o versículo',
+                maxLines: 2,
+                overflow: TextOverflow.ellipsis,
+                style: AppTypography.title(
+                  size: 22,
+                  height: 1.28,
+                  color: AppColors.textOnDark,
+                ),
+              ),
+            ],
           ),
         ),
         const SizedBox(width: 10),
@@ -588,25 +596,6 @@ class _VerseStage extends StatelessWidget {
                     ],
                   ),
                   textAlign: TextAlign.center,
-                ),
-              ),
-            ),
-          ),
-          const SizedBox(height: 16),
-          Center(
-            child: Container(
-              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
-              decoration: BoxDecoration(
-                color: Colors.black.withValues(alpha: 0.35),
-                borderRadius: BorderRadius.circular(AppRadii.pill),
-                border: Border.all(color: accent.withValues(alpha: 0.45)),
-              ),
-              child: Text(
-                'PALAVRA:',
-                style: AppTypography.label(
-                  size: 10,
-                  letterSpacing: 1.6,
-                  color: accent,
                 ),
               ),
             ),

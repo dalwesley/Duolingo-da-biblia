@@ -98,8 +98,7 @@ void main() {
         prompt: 'Toque no texto: Sem forma e vazia',
         cue: 'Toque no texto: Sem forma e vazia',
         type: ExerciseType.tap,
-        passageText:
-            'A terra, porém, estava sem forma e vazia; havia trevas.',
+        passageText: 'A terra, porém, estava sem forma e vazia; havia trevas.',
         options: const [
           QuestionOption(id: 'a', text: 'Sem forma e vazia'),
           QuestionOption(id: 'b', text: 'trevas'),
@@ -115,7 +114,7 @@ void main() {
       expect(ex.displayCue.toLowerCase().contains('sem forma'), isFalse);
     });
 
-    test('fromBankQuestion keeps tap as cloze with chips, not verse-tap', () {
+    test('fromBankQuestion keeps tap as cloze with buttons, not verse-tap', () {
       final bq = BankQuestion(
         id: 'g-tap-word',
         trailSlug: 'genesis-1-11',
@@ -147,30 +146,36 @@ void main() {
       expect(ex.displayCue.toLowerCase().contains('princípio criou'), isFalse);
     });
 
-    test('fromBankQuestion complete hides cue when palco already has the verse', () {
-      final bq = BankQuestion(
-        id: 'g-complete',
-        trailSlug: 'genesis-1-11',
-        difficulty: TrailDifficulty.semente,
-        section: 'gen-01-criador',
-        question: 'Como a terra é descrita antes das ordens criadoras?',
-        prompt: 'Complete a lacuna.',
-        type: ExerciseType.complete,
-        template: 'A terra, porém, era ___.',
-        options: const [
-          QuestionOption(id: 'a', text: 'sem forma e vazia'),
-          QuestionOption(id: 'b', text: 'cheia de animais'),
-        ],
-        correctOptionId: 'a',
-        correctAnswer: 'a',
-        feedbackCorrect: 'Sim.',
-        feedbackWrong: const {'b': 'Não.'},
-      );
-      final ex = SessionComposer.fromBankQuestion(bq);
-      expect(ex.type, ExerciseType.complete);
-      expect(ex.displayCue, isEmpty);
-      expect(ex.template, 'A terra, porém, era ___.');
-    });
+    test(
+      'fromBankQuestion complete keeps the question when palco already has the verse',
+      () {
+        final bq = BankQuestion(
+          id: 'g-complete',
+          trailSlug: 'genesis-1-11',
+          difficulty: TrailDifficulty.semente,
+          section: 'gen-01-criador',
+          question: 'Como a terra é descrita antes das ordens criadoras?',
+          prompt: 'Complete a lacuna.',
+          type: ExerciseType.complete,
+          template: 'A terra, porém, era ___.',
+          options: const [
+            QuestionOption(id: 'a', text: 'sem forma e vazia'),
+            QuestionOption(id: 'b', text: 'cheia de animais'),
+          ],
+          correctOptionId: 'a',
+          correctAnswer: 'a',
+          feedbackCorrect: 'Sim.',
+          feedbackWrong: const {'b': 'Não.'},
+        );
+        final ex = SessionComposer.fromBankQuestion(bq);
+        expect(ex.type, ExerciseType.complete);
+        expect(
+          ex.displayCue,
+          'Como a terra é descrita antes das ordens criadoras?',
+        );
+        expect(ex.template, 'A terra, porém, era ___.');
+      },
+    );
 
     test('fromBankQuestion preserves tagged skill', () {
       final bq = BankQuestion(
@@ -194,7 +199,9 @@ void main() {
 
     test('clipEntranceVerse keeps short verse and clips long passage', () {
       expect(
-        SessionComposer.clipEntranceVerse('À imagem de Deus o criou; homem e mulher os criou.'),
+        SessionComposer.clipEntranceVerse(
+          'À imagem de Deus o criou; homem e mulher os criou.',
+        ),
         'À imagem de Deus o criou; homem e mulher os criou.',
       );
       final long = List.filled(50, 'palavra').join(' ');
@@ -204,7 +211,8 @@ void main() {
     });
 
     test('clipFeedbackPassage windows around the question keyword', () {
-      const start = 'O Senhor disse a Abrão: Saia da sua terra e da sua parentela.';
+      const start =
+          'O Senhor disse a Abrão: Saia da sua terra e da sua parentela.';
       const egypt =
           'Houve fome na terra. Então Abrão desceu ao Egito para peregrinar ali.';
       final long = ('$start ${List.filled(80, 'palavra').join(' ')} $egypt');
@@ -360,7 +368,10 @@ void main() {
           ],
         ),
       ], max: 7);
-      expect(acts.where((e) => e.type == ExerciseType.trueFalse).length, lessThanOrEqualTo(2));
+      expect(
+        acts.where((e) => e.type == ExerciseType.trueFalse).length,
+        lessThanOrEqualTo(2),
+      );
       expect(
         acts.where((e) => e.type == ExerciseType.choice).length,
         lessThanOrEqualTo(SessionComposer.maxChoiceActs(7)),
@@ -440,127 +451,133 @@ void main() {
       expect(picked.any((q) => q.id == 'vf2'), isTrue); // unused VF preferred
       expect(picked.any((q) => q.id == 'tap'), isTrue);
       expect(picked.any((q) => q.id == 'ch'), isTrue);
-      expect(picked.map((q) => q.type).toSet(), containsAll([
-        ExerciseType.trueFalse,
-        ExerciseType.tap,
-        ExerciseType.choice,
-      ]));
+      expect(
+        picked.map((q) => q.type).toSet(),
+        containsAll([
+          ExerciseType.trueFalse,
+          ExerciseType.tap,
+          ExerciseType.choice,
+        ]),
+      );
     });
 
-    test('pickDiverseBankQuestions includes a second choice when filling to 8', () {
-      BankQuestion choice(String id) => BankQuestion(
-            id: id,
+    test(
+      'pickDiverseBankQuestions includes a second choice when filling to 8',
+      () {
+        BankQuestion choice(String id) => BankQuestion(
+          id: id,
+          trailSlug: 'genesis-1-11',
+          difficulty: TrailDifficulty.semente,
+          section: 'gen-03-imagem',
+          question: id,
+          type: ExerciseType.choice,
+          options: const [
+            QuestionOption(id: 'a', text: 'A'),
+            QuestionOption(id: 'b', text: 'B'),
+          ],
+          correctOptionId: 'a',
+          feedbackCorrect: 'Ok',
+          feedbackWrong: const {},
+        );
+        final pool = [
+          BankQuestion(
+            id: 'vf',
             trailSlug: 'genesis-1-11',
             difficulty: TrailDifficulty.semente,
             section: 'gen-03-imagem',
-            question: id,
-            type: ExerciseType.choice,
+            question: 'VF?',
+            type: ExerciseType.trueFalse,
+            prompt: 'Afirmação.',
+            correctAnswer: 'false',
+            options: const [],
+            correctOptionId: 'false',
+            feedbackCorrect: 'Ok',
+            feedbackWrong: const {},
+          ),
+          BankQuestion(
+            id: 'tap',
+            trailSlug: 'genesis-1-11',
+            difficulty: TrailDifficulty.semente,
+            section: 'gen-03-imagem',
+            question: 'Toque?',
+            type: ExerciseType.tap,
+            prompt: 'Toque',
+            passageText: 'homem e mulher',
             options: const [
-              QuestionOption(id: 'a', text: 'A'),
-              QuestionOption(id: 'b', text: 'B'),
+              QuestionOption(id: 'a', text: 'homem e mulher'),
+              QuestionOption(id: 'b', text: 'luz'),
+            ],
+            correctOptionId: 'a',
+            correctAnswer: 'a',
+            feedbackCorrect: 'Ok',
+            feedbackWrong: const {},
+          ),
+          choice('ch1'),
+          choice('ch2'),
+          BankQuestion(
+            id: 'ord',
+            trailSlug: 'genesis-1-11',
+            difficulty: TrailDifficulty.semente,
+            section: 'gen-03-imagem',
+            question: 'Ordene',
+            type: ExerciseType.order,
+            options: const [
+              QuestionOption(id: 'a', text: '1'),
+              QuestionOption(id: 'b', text: '2'),
+              QuestionOption(id: 'c', text: '3'),
+            ],
+            correctOptionId: 'a',
+            correctOrder: const ['a', 'b', 'c'],
+            feedbackCorrect: 'Ok',
+            feedbackWrong: const {},
+          ),
+          BankQuestion(
+            id: 'cmp',
+            trailSlug: 'genesis-1-11',
+            difficulty: TrailDifficulty.semente,
+            section: 'gen-03-imagem',
+            question: 'Complete',
+            type: ExerciseType.complete,
+            template: '___ e mulher',
+            options: const [
+              QuestionOption(id: 'a', text: 'homem'),
+              QuestionOption(id: 'b', text: 'anjo'),
             ],
             correctOptionId: 'a',
             feedbackCorrect: 'Ok',
             feedbackWrong: const {},
-          );
-      final pool = [
-        BankQuestion(
-          id: 'vf',
-          trailSlug: 'genesis-1-11',
-          difficulty: TrailDifficulty.semente,
-          section: 'gen-03-imagem',
-          question: 'VF?',
-          type: ExerciseType.trueFalse,
-          prompt: 'Afirmação.',
-          correctAnswer: 'false',
-          options: const [],
-          correctOptionId: 'false',
-          feedbackCorrect: 'Ok',
-          feedbackWrong: const {},
-        ),
-        BankQuestion(
-          id: 'tap',
-          trailSlug: 'genesis-1-11',
-          difficulty: TrailDifficulty.semente,
-          section: 'gen-03-imagem',
-          question: 'Toque?',
-          type: ExerciseType.tap,
-          prompt: 'Toque',
-          passageText: 'homem e mulher',
-          options: const [
-            QuestionOption(id: 'a', text: 'homem e mulher'),
-            QuestionOption(id: 'b', text: 'luz'),
-          ],
-          correctOptionId: 'a',
-          correctAnswer: 'a',
-          feedbackCorrect: 'Ok',
-          feedbackWrong: const {},
-        ),
-        choice('ch1'),
-        choice('ch2'),
-        BankQuestion(
-          id: 'ord',
-          trailSlug: 'genesis-1-11',
-          difficulty: TrailDifficulty.semente,
-          section: 'gen-03-imagem',
-          question: 'Ordene',
-          type: ExerciseType.order,
-          options: const [
-            QuestionOption(id: 'a', text: '1'),
-            QuestionOption(id: 'b', text: '2'),
-            QuestionOption(id: 'c', text: '3'),
-          ],
-          correctOptionId: 'a',
-          correctOrder: const ['a', 'b', 'c'],
-          feedbackCorrect: 'Ok',
-          feedbackWrong: const {},
-        ),
-        BankQuestion(
-          id: 'cmp',
-          trailSlug: 'genesis-1-11',
-          difficulty: TrailDifficulty.semente,
-          section: 'gen-03-imagem',
-          question: 'Complete',
-          type: ExerciseType.complete,
-          template: '___ e mulher',
-          options: const [
-            QuestionOption(id: 'a', text: 'homem'),
-            QuestionOption(id: 'b', text: 'anjo'),
-          ],
-          correctOptionId: 'a',
-          feedbackCorrect: 'Ok',
-          feedbackWrong: const {},
-        ),
-        BankQuestion(
-          id: 'con',
-          trailSlug: 'genesis-1-11',
-          difficulty: TrailDifficulty.semente,
-          section: 'gen-03-imagem',
-          question: 'Conecte',
-          type: ExerciseType.connect,
-          options: const [
-            QuestionOption(id: 'a', text: 'imagem'),
-            QuestionOption(id: 'b', text: 'Deus'),
-          ],
-          correctOptionId: 'a',
-          feedbackCorrect: 'Ok',
-          feedbackWrong: const {},
-        ),
-      ];
-      final picked = SessionComposer.pickDiverseBankQuestions(
-        pool: pool,
-        usedIds: {},
-        max: 8,
-        missionSlug: 'gen-03-imagem',
-        rng: Random(1),
-      );
-      expect(picked.where((q) => q.type == ExerciseType.choice).length, 2);
-      expect(picked.length, inInclusiveRange(7, 8));
-      expect(
-        picked.where((q) => q.type == ExerciseType.trueFalse).length,
-        lessThanOrEqualTo(2),
-      );
-    });
+          ),
+          BankQuestion(
+            id: 'con',
+            trailSlug: 'genesis-1-11',
+            difficulty: TrailDifficulty.semente,
+            section: 'gen-03-imagem',
+            question: 'Conecte',
+            type: ExerciseType.connect,
+            options: const [
+              QuestionOption(id: 'a', text: 'imagem'),
+              QuestionOption(id: 'b', text: 'Deus'),
+            ],
+            correctOptionId: 'a',
+            feedbackCorrect: 'Ok',
+            feedbackWrong: const {},
+          ),
+        ];
+        final picked = SessionComposer.pickDiverseBankQuestions(
+          pool: pool,
+          usedIds: {},
+          max: 8,
+          missionSlug: 'gen-03-imagem',
+          rng: Random(1),
+        );
+        expect(picked.where((q) => q.type == ExerciseType.choice).length, 2);
+        expect(picked.length, inInclusiveRange(7, 8));
+        expect(
+          picked.where((q) => q.type == ExerciseType.trueFalse).length,
+          lessThanOrEqualTo(2),
+        );
+      },
+    );
 
     test('reviewFromBank skips types already used in the session', () {
       // Sem cache de banco → null; o contrato é não devolver tipo bloqueado.
@@ -582,54 +599,59 @@ void main() {
       expect(rev, isNull);
     });
 
-    test('pickDiverseBankQuestions synthesizes true VF when pool is all false', () {
-      final pool = [
-        BankQuestion(
-          id: 'vf-only-false',
-          trailSlug: 'genesis-1-11',
-          difficulty: TrailDifficulty.semente,
-          section: 'gen-01-criador',
-          question: 'O que Deus criou no princípio?',
-          type: ExerciseType.trueFalse,
-          prompt: 'O que Deus criou no princípio: Somente os mares.',
-          correctAnswer: 'false',
-          options: const [
-            QuestionOption(id: 'true', text: 'Verdadeiro'),
-            QuestionOption(id: 'false', text: 'Falso'),
-          ],
-          correctOptionId: 'false',
-          feedbackCorrect:
-              'Correto. Gênesis 1:1 sustenta a resposta: “Os céus e a terra”.',
-          feedbackWrong: const {},
-        ),
-      ];
-      // Hash even → prefer true → must synthesize.
-      final picked = SessionComposer.pickDiverseBankQuestions(
-        pool: pool,
-        usedIds: {},
-        max: 6,
-        missionSlug: 'aa', // choose slug that prefers true
-        rng: Random(1),
-      );
-      final vf = picked.where((q) => q.type == ExerciseType.trueFalse).toList();
-      expect(vf, isNotEmpty);
-      // Force prefer-true path by trying both parities of usedIds length.
-      final answers = <String>{};
-      for (final slug in ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']) {
-        final p = SessionComposer.pickDiverseBankQuestions(
+    test(
+      'pickDiverseBankQuestions synthesizes true VF when pool is all false',
+      () {
+        final pool = [
+          BankQuestion(
+            id: 'vf-only-false',
+            trailSlug: 'genesis-1-11',
+            difficulty: TrailDifficulty.semente,
+            section: 'gen-01-criador',
+            question: 'O que Deus criou no princípio?',
+            type: ExerciseType.trueFalse,
+            prompt: 'O que Deus criou no princípio: Somente os mares.',
+            correctAnswer: 'false',
+            options: const [
+              QuestionOption(id: 'true', text: 'Verdadeiro'),
+              QuestionOption(id: 'false', text: 'Falso'),
+            ],
+            correctOptionId: 'false',
+            feedbackCorrect:
+                'Correto. Gênesis 1:1 sustenta a resposta: “Os céus e a terra”.',
+            feedbackWrong: const {},
+          ),
+        ];
+        // Hash even → prefer true → must synthesize.
+        final picked = SessionComposer.pickDiverseBankQuestions(
           pool: pool,
           usedIds: {},
-          max: 1,
-          missionSlug: slug,
+          max: 6,
+          missionSlug: 'aa', // choose slug that prefers true
+          rng: Random(1),
         );
-        if (p.isNotEmpty) {
-          answers.add(
-            SessionComposer.fromBankQuestion(p.first).correctAnswer,
+        final vf = picked
+            .where((q) => q.type == ExerciseType.trueFalse)
+            .toList();
+        expect(vf, isNotEmpty);
+        // Force prefer-true path by trying both parities of usedIds length.
+        final answers = <String>{};
+        for (final slug in ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']) {
+          final p = SessionComposer.pickDiverseBankQuestions(
+            pool: pool,
+            usedIds: {},
+            max: 1,
+            missionSlug: slug,
           );
+          if (p.isNotEmpty) {
+            answers.add(
+              SessionComposer.fromBankQuestion(p.first).correctAnswer,
+            );
+          }
         }
-      }
-      expect(answers.contains('true'), isTrue);
-    });
+        expect(answers.contains('true'), isTrue);
+      },
+    );
 
     test('does not flip a complete false VF claim to true', () {
       const claim =
@@ -679,119 +701,145 @@ void main() {
         expect(ex.correctAnswer, 'false', reason: 'slug=$slug');
         expect(ex.checkAnswer('false'), isTrue, reason: 'slug=$slug');
         expect(ex.checkAnswer('true'), isFalse, reason: 'slug=$slug');
-        expect(ex.prompt.contains('ordenada e cheia'), isTrue, reason: 'slug=$slug');
-      }
-    });
-
-    test('does not rewrite a complete false VF that quotes the verse in feedback', () {
-      const claim =
-          'Ageu 2:4 registra que Jeová pede esforço ao povo, mas nega qualquer promessa de estar com eles.';
-      final pool = [
-        BankQuestion(
-          id: 'ageu-cam-ageu-ageu-02-eu-estou-convosco-01',
-          trailSlug: 'ageu',
-          difficulty: TrailDifficulty.caminhada,
-          section: 'ageu-ageu-02-eu-estou-convosco',
-          question: claim,
-          type: ExerciseType.trueFalse,
-          prompt: claim,
-          correctAnswer: 'false',
-          options: const [
-            QuestionOption(id: 'true', text: 'Verdadeiro'),
-            QuestionOption(id: 'false', text: 'Falso'),
-          ],
-          correctOptionId: 'false',
-          feedbackCorrect:
-              'Correto: o texto termina justamente com a promessa "eu sou convosco".',
-          feedbackWrong: const {
-            'true':
-                'O versículo termina com a promessa "pois eu sou convosco, diz Jeová dos exércitos".',
-          },
-        ),
-      ];
-      for (final slug in ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']) {
-        final picked = SessionComposer.pickDiverseBankQuestions(
-          pool: pool,
-          usedIds: {},
-          max: 1,
-          missionSlug: slug,
+        expect(
+          ex.prompt.contains('ordenada e cheia'),
+          isTrue,
+          reason: 'slug=$slug',
         );
-        expect(picked, isNotEmpty, reason: 'slug=$slug');
-        final ex = SessionComposer.fromBankQuestion(picked.first);
-        expect(ex.correctAnswer, 'false', reason: 'slug=$slug');
-        expect(ex.checkAnswer('false'), isTrue, reason: 'slug=$slug');
-        expect(ex.prompt.contains('nega qualquer promessa'), isTrue, reason: 'slug=$slug');
       }
     });
 
-    test('pickDiverseBankQuestions does not repeat VF stem as true and false', () {
-      final pool = [
-        BankQuestion(
-          id: 'vf-noe',
-          trailSlug: 'genesis-1-11',
-          difficulty: TrailDifficulty.semente,
-          section: 'gen-06-noe',
-          question: 'Quais eram os três filhos de Noé?',
-          type: ExerciseType.trueFalse,
-          prompt: 'Quais eram os três filhos de Noé: Caim, Abel e Sete.',
-          correctAnswer: 'false',
-          options: const [
-            QuestionOption(id: 'true', text: 'Verdadeiro'),
-            QuestionOption(id: 'false', text: 'Falso'),
-          ],
-          correctOptionId: 'false',
-          feedbackCorrect:
-              'Correto. Gênesis 6:10 sustenta a resposta: “Sem, Cam e Jafé”.',
-          feedbackWrong: const {},
-        ),
-        BankQuestion(
-          id: 'tap-1',
-          trailSlug: 'genesis-1-11',
-          difficulty: TrailDifficulty.semente,
-          section: 'gen-06-noe',
-          question: 'Toque?',
-          type: ExerciseType.tap,
-          prompt: 'Toque',
-          passageText: 'arca',
-          options: const [
-            QuestionOption(id: 'a', text: 'arca'),
-            QuestionOption(id: 'b', text: 'torre'),
-          ],
-          correctOptionId: 'a',
-          correctAnswer: 'a',
-          feedbackCorrect: 'Ok',
-          feedbackWrong: const {},
-        ),
-        BankQuestion(
-          id: 'ch-1',
-          trailSlug: 'genesis-1-11',
-          difficulty: TrailDifficulty.semente,
-          section: 'gen-06-noe',
-          question: 'Escolha?',
-          type: ExerciseType.choice,
-          options: const [
-            QuestionOption(id: 'a', text: 'A'),
-            QuestionOption(id: 'b', text: 'B'),
-          ],
-          correctOptionId: 'a',
-          feedbackCorrect: 'Ok',
-          feedbackWrong: const {},
-        ),
-      ];
+    test(
+      'does not rewrite a complete false VF that quotes the verse in feedback',
+      () {
+        const claim =
+            'Ageu 2:4 registra que Jeová pede esforço ao povo, mas nega qualquer promessa de estar com eles.';
+        final pool = [
+          BankQuestion(
+            id: 'ageu-cam-ageu-ageu-02-eu-estou-convosco-01',
+            trailSlug: 'ageu',
+            difficulty: TrailDifficulty.caminhada,
+            section: 'ageu-ageu-02-eu-estou-convosco',
+            question: claim,
+            type: ExerciseType.trueFalse,
+            prompt: claim,
+            correctAnswer: 'false',
+            options: const [
+              QuestionOption(id: 'true', text: 'Verdadeiro'),
+              QuestionOption(id: 'false', text: 'Falso'),
+            ],
+            correctOptionId: 'false',
+            feedbackCorrect:
+                'Correto: o texto termina justamente com a promessa "eu sou convosco".',
+            feedbackWrong: const {
+              'true':
+                  'O versículo termina com a promessa "pois eu sou convosco, diz Jeová dos exércitos".',
+            },
+          ),
+        ];
+        for (final slug in ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']) {
+          final picked = SessionComposer.pickDiverseBankQuestions(
+            pool: pool,
+            usedIds: {},
+            max: 1,
+            missionSlug: slug,
+          );
+          expect(picked, isNotEmpty, reason: 'slug=$slug');
+          final ex = SessionComposer.fromBankQuestion(picked.first);
+          expect(ex.correctAnswer, 'false', reason: 'slug=$slug');
+          expect(ex.checkAnswer('false'), isTrue, reason: 'slug=$slug');
+          expect(
+            ex.prompt.contains('nega qualquer promessa'),
+            isTrue,
+            reason: 'slug=$slug',
+          );
+        }
+      },
+    );
 
-      for (final slug in ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'mission-x']) {
-        final picked = SessionComposer.pickDiverseBankQuestions(
-          pool: pool,
-          usedIds: {},
-          max: 6,
-          missionSlug: slug,
-        );
-        final vf = picked.where((q) => q.type == ExerciseType.trueFalse).toList();
-        expect(vf.length, lessThanOrEqualTo(1), reason: 'slug=$slug');
-        final stems = vf.map((q) => q.question.trim().toLowerCase()).toSet();
-        expect(stems.length, vf.length, reason: 'slug=$slug');
-      }
-    });
+    test(
+      'pickDiverseBankQuestions does not repeat VF stem as true and false',
+      () {
+        final pool = [
+          BankQuestion(
+            id: 'vf-noe',
+            trailSlug: 'genesis-1-11',
+            difficulty: TrailDifficulty.semente,
+            section: 'gen-06-noe',
+            question: 'Quais eram os três filhos de Noé?',
+            type: ExerciseType.trueFalse,
+            prompt: 'Quais eram os três filhos de Noé: Caim, Abel e Sete.',
+            correctAnswer: 'false',
+            options: const [
+              QuestionOption(id: 'true', text: 'Verdadeiro'),
+              QuestionOption(id: 'false', text: 'Falso'),
+            ],
+            correctOptionId: 'false',
+            feedbackCorrect:
+                'Correto. Gênesis 6:10 sustenta a resposta: “Sem, Cam e Jafé”.',
+            feedbackWrong: const {},
+          ),
+          BankQuestion(
+            id: 'tap-1',
+            trailSlug: 'genesis-1-11',
+            difficulty: TrailDifficulty.semente,
+            section: 'gen-06-noe',
+            question: 'Toque?',
+            type: ExerciseType.tap,
+            prompt: 'Toque',
+            passageText: 'arca',
+            options: const [
+              QuestionOption(id: 'a', text: 'arca'),
+              QuestionOption(id: 'b', text: 'torre'),
+            ],
+            correctOptionId: 'a',
+            correctAnswer: 'a',
+            feedbackCorrect: 'Ok',
+            feedbackWrong: const {},
+          ),
+          BankQuestion(
+            id: 'ch-1',
+            trailSlug: 'genesis-1-11',
+            difficulty: TrailDifficulty.semente,
+            section: 'gen-06-noe',
+            question: 'Escolha?',
+            type: ExerciseType.choice,
+            options: const [
+              QuestionOption(id: 'a', text: 'A'),
+              QuestionOption(id: 'b', text: 'B'),
+            ],
+            correctOptionId: 'a',
+            feedbackCorrect: 'Ok',
+            feedbackWrong: const {},
+          ),
+        ];
+
+        for (final slug in [
+          'a',
+          'b',
+          'c',
+          'd',
+          'e',
+          'f',
+          'g',
+          'h',
+          'mission-x',
+        ]) {
+          final picked = SessionComposer.pickDiverseBankQuestions(
+            pool: pool,
+            usedIds: {},
+            max: 6,
+            missionSlug: slug,
+          );
+          final vf = picked
+              .where((q) => q.type == ExerciseType.trueFalse)
+              .toList();
+          expect(vf.length, lessThanOrEqualTo(1), reason: 'slug=$slug');
+          final stems = vf.map((q) => q.question.trim().toLowerCase()).toSet();
+          expect(stems.length, vf.length, reason: 'slug=$slug');
+        }
+      },
+    );
 
     test('fromBankQuestion normalizes VF answer to true/false ids', () {
       final bq = BankQuestion(

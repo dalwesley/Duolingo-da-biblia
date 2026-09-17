@@ -290,7 +290,12 @@ class _ExercisePanelState extends State<ExercisePanel>
                 0,
                 0.42,
                 _GestureSeal(
-                  title: ex.instructionTitle,
+                  title: ex.displayCue.trim().isNotEmpty
+                      ? ex.displayCue
+                      : ex.instructionTitle,
+                  instructionTitle: ex.instructionTitle,
+                  label: ex.taskPromptLabel,
+                  isPrompt: ex.showsStagePrompt,
                   accent: widget.accent,
                 ),
               ),
@@ -373,7 +378,6 @@ class _ExercisePanelState extends State<ExercisePanel>
           accent: widget.accent,
           lit: _lit,
           fill: true,
-          footer: _stagePromptOf(ex),
           picked: id == null
               ? null
               : ex.effectiveOptions
@@ -397,7 +401,6 @@ class _ExercisePanelState extends State<ExercisePanel>
             locked: _locked,
             lit: _lit,
             fill: true,
-            footer: _stagePromptOf(ex),
             onPick: _locked ? null : _pickChoice,
             stateFor: _state,
           );
@@ -442,7 +445,6 @@ class _ExercisePanelState extends State<ExercisePanel>
       pulse: _pulse,
       lit: _lit,
       fill: true,
-      footer: _stagePromptOf(ex),
       onClear: _locked ? null : _clearComplete,
     );
   }
@@ -452,27 +454,6 @@ class _ExercisePanelState extends State<ExercisePanel>
     if (own.isNotEmpty) return own;
     final board = (widget.boardRef ?? '').trim();
     return board.isEmpty ? null : board;
-  }
-
-  Widget? _stagePromptOf(Exercise ex) {
-    if (ex.showsStagePrompt) {
-      return _TaskPrompt(
-        label: ex.taskPromptLabel,
-        text: ex.displayCue,
-        accent: widget.accent,
-      );
-    }
-    final label = switch (ex.type) {
-      ExerciseType.tap ||
-      ExerciseType.findInText ||
-      ExerciseType.complete => 'Palavra',
-      ExerciseType.connect => 'Ponte',
-      ExerciseType.order => 'Ordem',
-      ExerciseType.match => 'Pares',
-      _ => null,
-    };
-    if (label == null) return null;
-    return _TaskPrompt(label: label, text: '', accent: widget.accent);
   }
 
   Widget? _witnessFromBoard() {
@@ -489,18 +470,7 @@ class _ExercisePanelState extends State<ExercisePanel>
 
   Widget? _witnessPalco(Exercise ex) {
     final text = ex.stageWitness(fallback: widget.boardText);
-    final prompt = _stagePromptOf(ex);
-    if (text == null && prompt == null) return null;
-    if (text == null) {
-      return _Manuscript(
-        accent: widget.accent,
-        reference: _witnessRef(ex),
-        framed: true,
-        fill: true,
-        lit: _lit,
-        child: prompt!,
-      );
-    }
+    if (text == null) return null;
     return _PassageBlock(
       text: text,
       accent: widget.accent,
@@ -508,7 +478,6 @@ class _ExercisePanelState extends State<ExercisePanel>
       framed: true,
       fill: true,
       lit: _lit,
-      footer: prompt,
     );
   }
 
@@ -874,36 +843,83 @@ TextStyle _verseWordStyle({
 
 class _GestureSeal extends StatelessWidget {
   final String title;
+  final String instructionTitle;
+  final String label;
+  final bool isPrompt;
   final Color accent;
 
-  const _GestureSeal({required this.title, required this.accent});
+  const _GestureSeal({
+    required this.title,
+    required this.instructionTitle,
+    required this.label,
+    required this.isPrompt,
+    required this.accent,
+  });
 
-  CinematicGlyph get _glyph => switch (title.split(' ').first.toLowerCase()) {
-    'julgue' => CinematicGlyph.scales,
-    'toque' => CinematicGlyph.search,
-    'escolha' => CinematicGlyph.target,
-    'ordene' => CinematicGlyph.path,
-    'complete' => CinematicGlyph.spark,
-    'conecte' => CinematicGlyph.chain,
-    _ => CinematicGlyph.book,
-  };
+  CinematicGlyph get _glyph =>
+      switch (instructionTitle.split(' ').first.toLowerCase()) {
+        'julgue' => CinematicGlyph.scales,
+        'toque' => CinematicGlyph.search,
+        'escolha' => CinematicGlyph.target,
+        'ordene' => CinematicGlyph.path,
+        'complete' => CinematicGlyph.spark,
+        'conecte' => CinematicGlyph.chain,
+        _ => CinematicGlyph.book,
+      };
 
   @override
   Widget build(BuildContext context) {
+    final cue = title.trim();
     return Row(
+      crossAxisAlignment: isPrompt
+          ? CrossAxisAlignment.start
+          : CrossAxisAlignment.center,
       children: [
-        CinematicIcon(glyph: _glyph, size: 22, accent: accent, framed: false),
+        Padding(
+          padding: EdgeInsets.only(top: isPrompt ? 2 : 0),
+          child: CinematicIcon(
+            glyph: _glyph,
+            size: 22,
+            accent: accent,
+            framed: false,
+          ),
+        ),
         const SizedBox(width: 10),
         Expanded(
-          child: Text(
-            title.toUpperCase(),
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            style: AppTypography.title(
-              size: 18,
-              color: AppColors.textOnDark,
-            ).copyWith(letterSpacing: 1.4),
-          ),
+          child: isPrompt
+              ? Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      label.toUpperCase(),
+                      style: AppTypography.label(
+                        size: 11,
+                        letterSpacing: 1.8,
+                        color: accent,
+                      ),
+                    ),
+                    const SizedBox(height: 6),
+                    Text(
+                      cue,
+                      maxLines: 3,
+                      overflow: TextOverflow.ellipsis,
+                      style: AppTypography.title(
+                        size: 22,
+                        height: 1.28,
+                        color: AppColors.textOnDark,
+                      ),
+                    ),
+                  ],
+                )
+              : Text(
+                  cue.toUpperCase(),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppTypography.title(
+                    size: 18,
+                    color: AppColors.textOnDark,
+                  ).copyWith(letterSpacing: 1.4),
+                ),
         ),
       ],
     );
@@ -963,51 +979,6 @@ class _ContextNote extends StatelessWidget {
   }
 }
 
-class _TaskPrompt extends StatelessWidget {
-  final String label;
-  final String text;
-  final Color accent;
-
-  const _TaskPrompt({
-    required this.label,
-    required this.text,
-    required this.accent,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final body = text.trim();
-    return Column(
-      children: [
-        Container(
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
-          decoration: BoxDecoration(
-            color: Colors.black.withValues(alpha: 0.35),
-            borderRadius: BorderRadius.circular(AppRadii.pill),
-            border: Border.all(color: accent.withValues(alpha: 0.45)),
-          ),
-          child: Text(
-            '${label.toUpperCase()}:',
-            style: AppTypography.label(
-              size: 10,
-              letterSpacing: 1.6,
-              color: accent,
-            ),
-          ),
-        ),
-        if (body.isNotEmpty) ...[
-          const SizedBox(height: 12),
-          Text(
-            body,
-            textAlign: TextAlign.center,
-            style: AppTypography.title(size: 16, height: 1.3, color: accent),
-          ),
-        ],
-      ],
-    );
-  }
-}
-
 class _RefLabel extends StatelessWidget {
   final String reference;
   final Color accent;
@@ -1033,7 +1004,6 @@ class _Manuscript extends StatelessWidget {
   final bool framed;
   final bool fill;
   final bool lit;
-  final Widget? footer;
 
   const _Manuscript({
     required this.accent,
@@ -1042,7 +1012,6 @@ class _Manuscript extends StatelessWidget {
     this.framed = false,
     this.fill = false,
     this.lit = false,
-    this.footer,
   });
 
   BoxDecoration get _plate => BoxDecoration(
@@ -1106,7 +1075,6 @@ class _Manuscript extends StatelessWidget {
             const SizedBox(height: 14),
           ],
           child,
-          if (footer != null) ...[const SizedBox(height: 18), footer!],
         ],
       );
       final plate = framed
@@ -1146,13 +1114,12 @@ class _Manuscript extends StatelessWidget {
               const SizedBox(height: 14),
             ],
             Expanded(child: stage),
-            if (footer != null) ...[const SizedBox(height: 16), footer!],
           ],
         ),
       );
     }
 
-    if (ref.isEmpty && footer == null) return stage;
+    if (ref.isEmpty) return stage;
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -1176,7 +1143,6 @@ class _CompleteVerse extends StatelessWidget {
   final VoidCallback? onClear;
   final bool lit;
   final bool fill;
-  final Widget? footer;
 
   const _CompleteVerse({
     required this.template,
@@ -1189,7 +1155,6 @@ class _CompleteVerse extends StatelessWidget {
     this.onClear,
     this.lit = false,
     this.fill = false,
-    this.footer,
   });
 
   static final _blank = RegExp(r'_{3,}');
@@ -1209,7 +1174,6 @@ class _CompleteVerse extends StatelessWidget {
       framed: true,
       fill: fill,
       lit: lit,
-      footer: footer,
       child: Text.rich(
         TextSpan(
           style: style,
@@ -1352,7 +1316,6 @@ class _BridgePassages extends StatelessWidget {
   final _OptState state;
   final AnimationController pulse;
   final VoidCallback? onClear;
-  final Widget? footer;
 
   const _BridgePassages({
     required this.accent,
@@ -1365,23 +1328,22 @@ class _BridgePassages extends StatelessWidget {
     this.fill = false,
     this.picked,
     this.onClear,
-    this.footer,
   });
 
   @override
   Widget build(BuildContext context) {
+    final caption = _connectCaption(passageA, passageB);
     return _Manuscript(
       accent: accent,
       framed: true,
       fill: fill,
       lit: lit,
-      footer: footer,
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          if (passageA != null) _connectStanza(passageA!, accent),
+          if (passageA != null) _connectStanza(passageA!),
           if (passageA != null && passageB != null) ...[
-            const SizedBox(height: 14),
+            const SizedBox(height: 10),
             ActShake(
               active: state == _OptState.wrong,
               child: Center(
@@ -1395,29 +1357,45 @@ class _BridgePassages extends StatelessWidget {
                 ),
               ),
             ),
-            const SizedBox(height: 14),
+            const SizedBox(height: 10),
           ],
-          if (passageB != null) _connectStanza(passageB!, accent),
+          if (passageB != null) _connectStanza(passageB!),
+          if (caption != null) ...[
+            const SizedBox(height: 16),
+            Text(
+              caption,
+              textAlign: TextAlign.center,
+              style: AppTypography.label(
+                size: 11,
+                letterSpacing: 1.2,
+                color: accent.withValues(alpha: 0.72),
+              ),
+            ),
+          ],
         ],
       ),
     );
   }
 }
 
-Widget _connectStanza(ExercisePassage passage, Color accent) {
-  final ref = passage.ref.trim();
-  return Column(
-    children: [
-      if (ref.isNotEmpty) ...[
-        _RefLabel(reference: ref, accent: accent),
-        const SizedBox(height: 8),
-      ],
-      Text(
-        passage.text.trim(),
-        textAlign: TextAlign.center,
-        style: _verseWordStyle(height: 1.35),
-      ),
-    ],
+String? _connectCaption(ExercisePassage? a, ExercisePassage? b) {
+  final refs = <String>[
+    if (a != null) a.ref.trim(),
+    if (b != null) b.ref.trim(),
+  ].where((r) => r.isNotEmpty).toList();
+  if (refs.isEmpty) return null;
+  if (refs.length == 2 &&
+      refs[0].toLowerCase() == refs[1].toLowerCase()) {
+    return refs[0];
+  }
+  return refs.join('  ·  ');
+}
+
+Widget _connectStanza(ExercisePassage passage) {
+  return Text(
+    passage.text.trim(),
+    textAlign: TextAlign.center,
+    style: _verseWordStyle(height: 1.35),
   );
 }
 
@@ -1437,44 +1415,75 @@ class _InsightView extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: AppSpace.screen),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          const Spacer(flex: 2),
-          CinematicIcon(
-            glyph: CinematicGlyph.spark,
-            size: 36,
-            accent: accent,
-            framed: false,
-          ),
-          const SizedBox(height: AppSpace.md),
           Row(
             children: [
-              Expanded(
-                child: Divider(color: accent.withValues(alpha: 0.4), height: 1),
+              CinematicIcon(
+                glyph: CinematicGlyph.spark,
+                size: 22,
+                accent: accent,
+                framed: false,
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 12),
+              const SizedBox(width: 10),
+              Expanded(
                 child: Text(
                   'HOJE',
-                  style: AppTypography.label(
-                    size: 12,
-                    letterSpacing: 2.2,
-                    color: accent,
-                  ),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppTypography.title(
+                    size: 18,
+                    color: AppColors.textOnDark,
+                  ).copyWith(letterSpacing: 1.4),
                 ),
-              ),
-              Expanded(
-                child: Divider(color: accent.withValues(alpha: 0.4), height: 1),
               ),
             ],
           ),
-          const SizedBox(height: AppSpace.lg),
-          Text(
-            text,
-            textAlign: TextAlign.center,
-            style: AppTypography.display(size: 26, height: 1.32),
+          const SizedBox(height: 14),
+          Expanded(
+            child: Container(
+              width: double.infinity,
+              padding: const EdgeInsets.fromLTRB(22, 20, 22, 22),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(20),
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [
+                    Color.lerp(AppColors.nightElevated, accent, 0.07)!,
+                    AppColors.nightElevated.withValues(alpha: 0.92),
+                  ],
+                ),
+                border: Border.all(
+                  color: Colors.white.withValues(alpha: 0.10),
+                  width: 1,
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withValues(alpha: 0.5),
+                    blurRadius: 0,
+                    offset: const Offset(0, 5),
+                  ),
+                ],
+              ),
+              child: Center(
+                child: SingleChildScrollView(
+                  physics: const BouncingScrollPhysics(),
+                  child: Text(
+                    text,
+                    textAlign: TextAlign.center,
+                    style: AppTypography.title(
+                      size: 22,
+                      height: 1.32,
+                      color: accent,
+                    ),
+                  ),
+                ),
+              ),
+            ),
           ),
-          const Spacer(flex: 3),
-          CopperCta(label: 'Seguir', onTap: onContinue),
+          const SizedBox(height: 10),
+          CopperCta(label: 'Seguir', onTap: onContinue, trailing: null),
           const SizedBox(height: AppSpace.lg),
         ],
       ),
@@ -1493,7 +1502,6 @@ class _PassageBlock extends StatelessWidget {
   final bool framed;
   final bool fill;
   final bool lit;
-  final Widget? footer;
   final ValueChanged<String>? onPick;
   final _OptState Function(String id)? stateFor;
 
@@ -1506,7 +1514,6 @@ class _PassageBlock extends StatelessWidget {
     this.framed = true,
     this.fill = false,
     this.lit = false,
-    this.footer,
     this.onPick,
     this.stateFor,
   });
@@ -1526,7 +1533,6 @@ class _PassageBlock extends StatelessWidget {
       framed: framed,
       fill: fill,
       lit: lit,
-      footer: footer,
       child: tappable
           ? Text.rich(
               TextSpan(

@@ -762,45 +762,42 @@ class _LessonScreenState extends State<LessonScreen>
                       ),
                       child: Column(
                         children: [
-                          if (_phase == _Phase.quiz)
-                            _QuizSessionChrome(
-                              index: _questionIndex,
-                              total: total,
-                              lamps: _lamps,
-                              maxLamps: _maxLamps,
-                              accent: accent,
-                              onBack: () => Navigator.pop(context),
-                            )
-                          else if (_phase == _Phase.micro)
-                            _BonusSessionChrome(
-                              accent: accent,
-                              onBack: () => Navigator.pop(context),
-                            )
-                          else
-                            TopBar(
-                              inline: true,
-                              immersive: true,
-                              dark: true,
-                              title: switch (_phase) {
-                                _Phase.intro => mission.title,
-                                _Phase.quiz => '${_questionIndex + 1}/$total',
-                                _Phase.micro => 'Bônus',
-                                _Phase.insight => 'Hoje',
-                              },
-                              subtitle: switch (_phase) {
-                                _Phase.intro =>
-                                  _difficultyMeta?.label ??
-                                      (mission.isBoss ? 'Desafio' : 'Treino'),
-                                _Phase.quiz => _difficultyMeta?.label,
-                                _Phase.micro => 'Complete o verso',
-                                _Phase.insight => 'O que ficou',
-                              },
-                              onBack: () => Navigator.pop(context),
-                              leadingGlyph: CinematicGlyphResolver.forMission(
-                                mission.title,
-                                isBoss: mission.isBoss,
-                              ),
+                          TopBar(
+                            inline: true,
+                            immersive: true,
+                            dark: true,
+                            title: switch (_phase) {
+                              _Phase.intro => mission.title,
+                              _Phase.quiz => '${_questionIndex + 1}/$total',
+                              _Phase.micro => 'Bônus',
+                              _Phase.insight => 'Hoje',
+                            },
+                            subtitle: switch (_phase) {
+                              _Phase.intro =>
+                                _difficultyMeta?.label ??
+                                    (mission.isBoss ? 'Desafio' : 'Treino'),
+                              _Phase.quiz => _difficultyMeta?.label,
+                              _Phase.micro => 'Complete o verso',
+                              _Phase.insight => 'O que ficou',
+                            },
+                            onBack: () => Navigator.pop(context),
+                            leadingGlyph: CinematicGlyphResolver.forMission(
+                              mission.title,
+                              isBoss: mission.isBoss,
                             ),
+                            chromeAccent: accent,
+                            trailing: _phase == _Phase.quiz
+                                ? Padding(
+                                    padding: const EdgeInsets.only(right: 8),
+                                    child: LampsBar(
+                                      current: _lamps,
+                                      max: _maxLamps,
+                                      accent: accent,
+                                      compact: true,
+                                    ),
+                                  )
+                                : null,
+                          ),
                           const SizedBox(height: 8),
                         ],
                       ),
@@ -847,68 +844,12 @@ class _LessonScreenState extends State<LessonScreen>
                           itemCount: total,
                           onStart: _startQuiz,
                         ),
-                        _Phase.insight => Padding(
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: AppSpace.screen,
-                          ),
-                          child: Column(
-                            children: [
-                              const Spacer(flex: 2),
-                              CinematicIcon(
-                                glyph: CinematicGlyph.spark,
-                                size: 36,
-                                accent: accent,
-                                framed: false,
-                              ),
-                              const SizedBox(height: AppSpace.md),
-                              Row(
-                                children: [
-                                  Expanded(
-                                    child: Divider(
-                                      color: accent.withValues(alpha: 0.4),
-                                      height: 1,
-                                    ),
-                                  ),
-                                  Padding(
-                                    padding: const EdgeInsets.symmetric(
-                                      horizontal: 12,
-                                    ),
-                                    child: Text(
-                                      'HOJE',
-                                      style: AppTypography.label(
-                                        size: 12,
-                                        letterSpacing: 2.2,
-                                        color: accent,
-                                      ),
-                                    ),
-                                  ),
-                                  Expanded(
-                                    child: Divider(
-                                      color: accent.withValues(alpha: 0.4),
-                                      height: 1,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              const SizedBox(height: AppSpace.lg),
-                              Text(
-                                _closingInsight,
-                                textAlign: TextAlign.center,
-                                style: AppTypography.display(
-                                  size: 26,
-                                  height: 1.32,
-                                ),
-                              ),
-                              const Spacer(flex: 3),
-                              CopperCta(
-                                label: 'Seguir',
-                                onTap: () {
-                                  _pushCelebration(forced: _celebrationForced);
-                                },
-                              ),
-                              const SizedBox(height: AppSpace.sm),
-                            ],
-                          ),
+                        _Phase.insight => _InsightPanel(
+                          text: _closingInsight,
+                          accent: accent,
+                          onContinue: () {
+                            _pushCelebration(forced: _celebrationForced);
+                          },
                         ),
                       },
                     ),
@@ -994,128 +935,73 @@ class _IntroPanel extends StatelessWidget {
     final ref = (mission.hookRef ?? '').trim();
     final note = (mission.hookNote ?? '').trim();
     final fallbackIntro = mission.intro.trim();
-    final bibleFirst = verse.isNotEmpty || note.isNotEmpty;
+    final accent = theme.pathActive;
+    final stageText = verse.isNotEmpty
+        ? verse
+        : (fallbackIntro.isNotEmpty ? fallbackIntro : '');
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: AppSpace.screen),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Expanded(
-            child: SingleChildScrollView(
-              physics: const BouncingScrollPhysics(),
-              child: Column(
-                children: [
-                  const SizedBox(height: 8),
-                  CinematicIcon.mission(
-                    mission.title,
-                    isBoss: mission.isBoss,
-                    size: 96,
-                    accent: theme.pathActive,
-                    animate: true,
-                  ),
-                  const SizedBox(height: 18),
-                  Text(
-                    mission.title,
-                    textAlign: TextAlign.center,
-                    style: AppTypography.display(size: 26),
-                  ),
-                  const SizedBox(height: 6),
-                  Text(
-                    mission.isBoss
-                        ? 'Desafio · $itemCount atos · +${mission.stepsReward} passos'
-                        : '~3 min · $itemCount atos · +${mission.stepsReward} passos',
-                    style: AppTypography.body(
-                      size: 12,
-                      weight: FontWeight.w600,
-                      color: AppColors.textOnDark.withValues(alpha: 0.5),
-                    ),
-                  ),
-                  const SizedBox(height: AppSpace.section),
-                  if (bibleFirst) ...[
-                    if (verse.isNotEmpty)
-                      Container(
-                        width: double.infinity,
-                        padding: const EdgeInsets.fromLTRB(20, 18, 20, 20),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(18),
-                          color: AppColors.nightElevated.withValues(
-                            alpha: 0.78,
-                          ),
-                          border: Border.all(
-                            color: Colors.white.withValues(alpha: 0.08),
-                            width: 1,
-                          ),
-                          boxShadow: [
-                            BoxShadow(
-                              color: Colors.black.withValues(alpha: 0.45),
-                              offset: const Offset(0, 5),
-                              blurRadius: 0,
-                            ),
-                          ],
-                        ),
-                        child: Column(
-                          children: [
-                            Container(
-                              width: 36,
-                              height: 3,
-                              decoration: BoxDecoration(
-                                color: theme.pathActive,
-                                borderRadius: BorderRadius.circular(99),
-                              ),
-                            ),
-                            if (ref.isNotEmpty) ...[
-                              const SizedBox(height: 12),
-                              Text(
-                                ref,
-                                textAlign: TextAlign.center,
-                                style: AppTypography.label(
-                                  size: 11,
-                                  letterSpacing: 1.4,
-                                  color: theme.pathActive,
-                                ),
-                              ),
-                            ],
-                            const SizedBox(height: 12),
-                            Text(
-                              verse,
-                              textAlign: TextAlign.center,
-                              style: AppTypography.display(
-                                size: 20,
-                                height: 1.35,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    if (note.isNotEmpty) ...[
-                      const SizedBox(height: AppSpace.md),
-                      Text(
-                        note,
-                        textAlign: TextAlign.center,
-                        style: AppTypography.body(
-                          size: 18,
-                          weight: FontWeight.w600,
-                          height: 1.45,
-                          color: AppColors.textOnDark.withValues(alpha: 0.92),
-                        ),
-                      ),
-                    ],
-                  ] else if (fallbackIntro.isNotEmpty)
-                    Text(
-                      fallbackIntro,
-                      textAlign: TextAlign.center,
-                      style: AppTypography.body(
-                        size: 15,
-                        height: 1.4,
-                        color: AppColors.textOnDark.withValues(alpha: 0.72),
-                      ),
-                    ),
-                  const SizedBox(height: AppSpace.lg),
-                ],
+          Row(
+            children: [
+              CinematicIcon.mission(
+                mission.title,
+                isBoss: mission.isBoss,
+                size: 22,
+                accent: accent,
+                framed: false,
               ),
+              const SizedBox(width: 10),
+              Expanded(
+                child: Text(
+                  mission.title.toUpperCase(),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppTypography.title(
+                    size: 18,
+                    color: AppColors.textOnDark,
+                  ).copyWith(letterSpacing: 1.4),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 6),
+          Text(
+            mission.isBoss
+                ? 'Desafio · $itemCount atos · +${mission.stepsReward} passos'
+                : '~3 min · $itemCount atos · +${mission.stepsReward} passos',
+            style: AppTypography.body(
+              size: 12,
+              weight: FontWeight.w600,
+              color: AppColors.textOnDark.withValues(alpha: 0.5),
             ),
           ),
-          CopperCta(label: 'Começar', onTap: onStart),
+          const SizedBox(height: 14),
+          Expanded(
+            child: stageText.isEmpty
+                ? const SizedBox.shrink()
+                : _WitnessPlate(
+                    accent: accent,
+                    reference: ref,
+                    child: Text(
+                      stageText,
+                      textAlign: TextAlign.center,
+                      style: AppTypography.verse(
+                        size: 22,
+                        height: 1.55,
+                      ),
+                    ),
+                  ),
+          ),
+          if (note.isNotEmpty) ...[
+            const SizedBox(height: 12),
+            _PlatePrompt(label: 'Contexto', text: note, accent: accent),
+          ],
+          const SizedBox(height: 10),
+          CopperCta(label: 'Começar', onTap: onStart, trailing: null),
           const SizedBox(height: AppSpace.sm),
         ],
       ),
@@ -1123,119 +1009,179 @@ class _IntroPanel extends StatelessWidget {
   }
 }
 
-class _QuizSessionChrome extends StatelessWidget {
-  final int index;
-  final int total;
-  final int lamps;
-  final int maxLamps;
+class _InsightPanel extends StatelessWidget {
+  final String text;
   final Color accent;
-  final VoidCallback onBack;
+  final VoidCallback onContinue;
 
-  const _QuizSessionChrome({
-    required this.index,
-    required this.total,
-    required this.lamps,
-    required this.maxLamps,
+  const _InsightPanel({
+    required this.text,
     required this.accent,
-    required this.onBack,
+    required this.onContinue,
   });
 
   @override
   Widget build(BuildContext context) {
-    final step = index + 1;
-    final value = total <= 0 ? 0.0 : step / total;
-    return Row(
-      children: [
-        GestureDetector(
-          onTap: onBack,
-          behavior: HitTestBehavior.opaque,
-          child: CinematicIcon(
-            glyph: CinematicGlyph.back,
-            size: 28,
-            accent: accent,
-            framed: false,
-            glowing: false,
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: AppSpace.screen),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Row(
+            children: [
+              CinematicIcon(
+                glyph: CinematicGlyph.spark,
+                size: 22,
+                accent: accent,
+                framed: false,
+              ),
+              const SizedBox(width: 10),
+              Expanded(
+                child: Text(
+                  'HOJE',
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppTypography.title(
+                    size: 18,
+                    color: AppColors.textOnDark,
+                  ).copyWith(letterSpacing: 1.4),
+                ),
+              ),
+            ],
           ),
-        ),
-        const SizedBox(width: 10),
-        Expanded(
-          child: SizedBox(
-            height: 28,
-            child: Stack(
-              alignment: Alignment.center,
-              children: [
-                AppProgressBar(
-                  value: value,
+          const SizedBox(height: 14),
+          Expanded(
+            child: _WitnessPlate(
+              accent: accent,
+              child: Text(
+                text,
+                textAlign: TextAlign.center,
+                style: AppTypography.title(
+                  size: 22,
+                  height: 1.32,
                   color: accent,
-                  height: 8,
-                  trackColor: Colors.white.withValues(alpha: 0.12),
                 ),
-                Container(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 12,
-                    vertical: 4,
-                  ),
-                  decoration: BoxDecoration(
-                    color: AppColors.night,
-                    borderRadius: BorderRadius.circular(AppRadii.pill),
-                    border: Border.all(color: accent.withValues(alpha: 0.85)),
-                  ),
-                  child: Text(
-                    '$step/$total',
-                    style: AppTypography.label(
-                      size: 11,
-                      letterSpacing: 0.6,
-                      color: accent,
-                    ),
-                  ),
-                ),
-              ],
+              ),
             ),
           ),
-        ),
-        const SizedBox(width: 10),
-        LampsBar(
-          current: lamps,
-          max: maxLamps,
-          accent: accent,
-          compact: true,
-        ),
-      ],
+          const SizedBox(height: 10),
+          CopperCta(label: 'Seguir', onTap: onContinue, trailing: null),
+          const SizedBox(height: AppSpace.sm),
+        ],
+      ),
     );
   }
 }
 
-class _BonusSessionChrome extends StatelessWidget {
+class _WitnessPlate extends StatelessWidget {
   final Color accent;
-  final VoidCallback onBack;
+  final String? reference;
+  final Widget child;
 
-  const _BonusSessionChrome({required this.accent, required this.onBack});
+  const _WitnessPlate({
+    required this.accent,
+    required this.child,
+    this.reference,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        GestureDetector(
-          onTap: onBack,
-          behavior: HitTestBehavior.opaque,
-          child: CinematicIcon(
-            glyph: CinematicGlyph.back,
-            size: 28,
-            accent: accent,
-            framed: false,
-            glowing: false,
-          ),
+    final ref = (reference ?? '').trim();
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.fromLTRB(22, 20, 22, 22),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(20),
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            Color.lerp(AppColors.nightElevated, accent, 0.07)!,
+            AppColors.nightElevated.withValues(alpha: 0.92),
+          ],
         ),
-        const SizedBox(width: 10),
-        Expanded(
-          child: Text(
-            'BÔNUS',
-            style: AppTypography.label(
-              size: 12,
-              letterSpacing: 1.8,
-              color: AppColors.textOnDark,
+        border: Border.all(
+          color: Colors.white.withValues(alpha: 0.10),
+          width: 1,
+        ),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withValues(alpha: 0.5),
+            blurRadius: 0,
+            offset: const Offset(0, 5),
+          ),
+        ],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          if (ref.isNotEmpty) ...[
+            Text(
+              ref.toUpperCase(),
+              textAlign: TextAlign.center,
+              style: AppTypography.label(
+                size: 13,
+                letterSpacing: 1.8,
+                color: accent,
+              ),
+            ),
+            const SizedBox(height: 14),
+          ],
+          Expanded(
+            child: LayoutBuilder(
+              builder: (context, constraints) {
+                return SingleChildScrollView(
+                  physics: const BouncingScrollPhysics(),
+                  child: ConstrainedBox(
+                    constraints: BoxConstraints(minHeight: constraints.maxHeight),
+                    child: Center(child: child),
+                  ),
+                );
+              },
             ),
           ),
+        ],
+      ),
+    );
+  }
+}
+
+class _PlatePrompt extends StatelessWidget {
+  final String label;
+  final String text;
+  final Color accent;
+
+  const _PlatePrompt({
+    required this.label,
+    required this.text,
+    required this.accent,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Container(
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
+          decoration: BoxDecoration(
+            color: Colors.black.withValues(alpha: 0.35),
+            borderRadius: BorderRadius.circular(AppRadii.pill),
+            border: Border.all(color: accent.withValues(alpha: 0.45)),
+          ),
+          child: Text(
+            '${label.toUpperCase()}:',
+            style: AppTypography.label(
+              size: 10,
+              letterSpacing: 1.6,
+              color: accent,
+            ),
+          ),
+        ),
+        const SizedBox(height: 12),
+        Text(
+          text,
+          textAlign: TextAlign.center,
+          style: AppTypography.title(size: 16, height: 1.3, color: accent),
         ),
       ],
     );

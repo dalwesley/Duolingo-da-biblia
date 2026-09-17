@@ -289,12 +289,8 @@ class Exercise {
     }
   }
 
-  /// Cue exibido (nunca o beat pedagógico, nunca o verbo repetido).
+  /// Cue exibido no topo (nunca o beat pedagógico, nunca o verbo repetido).
   String get displayCue {
-    // Palco do Conecte já é a pergunta: A, lacuna, B.
-    if (type == ExerciseType.connect && passageA != null && passageB != null) {
-      return '';
-    }
     final candidates = <String>[
       if ((cue ?? '').trim().isNotEmpty) (cue ?? '').trim(),
       if (prompt.trim().isNotEmpty) prompt.trim(),
@@ -302,7 +298,7 @@ class Exercise {
     for (final c in candidates) {
       if (_isGenericTaskCue(c)) continue;
       var text = type == ExerciseType.trueFalse ? vfClaim(c) : c;
-      if (type == ExerciseType.tap) {
+      if (type == ExerciseType.tap || type == ExerciseType.complete) {
         text = _stripQuotedCloze(text);
       }
       return text;
@@ -316,8 +312,6 @@ class Exercise {
 
   bool _isGenericTaskCue(String text) {
     if (type != ExerciseType.complete) return false;
-    // Palco já é o verso com lacuna — enunciado extra compete com o bônus.
-    if ((palcoTemplate ?? '').contains('___')) return true;
     final t = text.trim().toLowerCase().replaceAll(RegExp(r'[.!?…]+$'), '');
     return t == 'complete' ||
         t == 'complete a lacuna' ||
@@ -374,33 +368,20 @@ class Exercise {
     _ => 'Responda',
   };
 
-  /// Rótulo da carga abaixo do palco (afirmação, pergunta, sequência).
+  /// Rótulo pequeno acima do enunciado no topo.
   String get taskPromptLabel => switch (type) {
     ExerciseType.trueFalse => 'Afirmação',
     ExerciseType.order => 'Sequência',
+    ExerciseType.tap ||
+    ExerciseType.findInText ||
+    ExerciseType.complete => 'Palavra',
+    ExerciseType.connect => 'Ponte',
+    ExerciseType.match => 'Pares',
     _ => 'Pergunta',
   };
 
-  /// Palco primeiro: o cue só aparece abaixo do verso, e só quando não é o palco.
-  bool get showsStagePrompt {
-    final cue = displayCue.trim();
-    if (cue.isEmpty) return false;
-    return switch (type) {
-      ExerciseType.trueFalse ||
-      ExerciseType.choice ||
-      ExerciseType.textSupported ||
-      ExerciseType.bestInterpretation => true,
-      ExerciseType.order => !_isGenericOrderCue(cue),
-      _ => false,
-    };
-  }
-
-  bool _isGenericOrderCue(String text) {
-    final t = text.trim().toLowerCase().replaceAll(RegExp(r'[.!?…]+$'), '');
-    return t == 'monte a sequência' ||
-        t == 'monte a sequência do trecho' ||
-        t.startsWith('monte a sequência');
-  }
+  /// Há enunciado para o topo — o palco fica só com o texto.
+  bool get showsStagePrompt => displayCue.trim().isNotEmpty;
 
   /// Opções cujo texto aparece no trecho (toque no versículo).
   List<QuestionOption> optionsEmbeddedIn(String passage) {
@@ -706,6 +687,7 @@ String spliceClozeIntoPassage(String template, String passage, String? answer) {
 
 String _stripQuotedCloze(String text) {
   var t = text.trim();
+  final before = t;
   t = t.replaceAll(
     RegExp(
       r'\s+em\s+[“"\u201c][^”"\u201d]*___[^”"\u201d]*[”"\u201d]\s*[?.!]?$',
@@ -713,6 +695,14 @@ String _stripQuotedCloze(String text) {
     ),
     '',
   );
+  t = t.replaceAll(
+    RegExp(
+      r'\s*:\s*[“"\u201c][^”"\u201d]*___[^”"\u201d]*[”"\u201d]\s*[?.!]?$',
+      caseSensitive: false,
+    ),
+    '',
+  );
+  if (t == before) return text.trim();
   t = t.replaceAll(RegExp(r'[?.!…]+$'), '').trim();
   return t.isEmpty ? text.trim() : t;
 }

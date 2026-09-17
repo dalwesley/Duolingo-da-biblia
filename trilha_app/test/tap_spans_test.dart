@@ -172,7 +172,7 @@ void main() {
     expect(tap.needsConfirm, isTrue);
   });
 
-  test('connect palco is the question, no extra cue', () {
+  test('connect keeps the question above the palco', () {
     const ex = Exercise(
       id: 'k',
       type: ExerciseType.connect,
@@ -188,7 +188,7 @@ void main() {
       ),
     );
     expect(ex.showActVerb, isFalse);
-    expect(ex.displayCue, isEmpty);
+    expect(ex.displayCue, 'O que une Gênesis 1:1 e 1:2?');
     expect(ex.needsConfirm, isTrue);
   });
 
@@ -225,7 +225,7 @@ void main() {
     expect(tap.stageWitness(fallback: 'board'), isNull);
   });
 
-  test('complete palco uses the full verse and hides the cloze cue', () {
+  test('complete palco uses the full verse and keeps the question', () {
     const passage =
         'No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.';
     const fill = Exercise(
@@ -242,7 +242,7 @@ void main() {
         QuestionOption(id: 'c', text: 'Espírito'),
       ],
     );
-    expect(fill.displayCue, isEmpty);
+    expect(fill.displayCue, 'Complete Gênesis 1:1–2');
     final stage = fill.clozeStageText();
     expect(stage, isNotNull);
     expect(stage, contains('No princípio'));
@@ -275,7 +275,8 @@ void main() {
       options: [QuestionOption(id: 'a', text: 'princípio')],
     );
     expect(tap.instructionTitle, 'Toque a palavra');
-    expect(tap.showsStagePrompt, isFalse);
+    expect(tap.showsStagePrompt, isTrue);
+    expect(tap.taskPromptLabel, 'Palavra');
 
     const choice = Exercise(
       id: 'q-ui',
@@ -297,7 +298,8 @@ void main() {
       passageText: verse,
     );
     expect(order.instructionTitle, 'Ordene os fatos');
-    expect(order.showsStagePrompt, isFalse);
+    expect(order.showsStagePrompt, isTrue);
+    expect(order.taskPromptLabel, 'Sequência');
 
     const fill = Exercise(
       id: 'c-ui',
@@ -309,6 +311,7 @@ void main() {
     );
     expect(fill.instructionTitle, 'Complete o versículo');
     expect(fill.showsStagePrompt, isFalse);
+    expect(fill.taskPromptLabel, 'Palavra');
 
     const connect = Exercise(
       id: 'k-ui',
@@ -319,6 +322,7 @@ void main() {
       passageB: ExercisePassage(ref: 'Gênesis 1:2', text: 'a terra era vazia'),
     );
     expect(connect.instructionTitle, 'Conecte os trechos');
-    expect(connect.showsStagePrompt, isFalse);
+    expect(connect.showsStagePrompt, isTrue);
+    expect(connect.taskPromptLabel, 'Ponte');
   });
 }
