@@ -11,11 +11,12 @@ App Flutter para missões diárias + painel admin no Firebase.
 | [`docs/PITCH_NOS_VS_ELES.md`](docs/PITCH_NOS_VS_ELES.md) | Pitch 1 página · concorrência |
 | [`docs/TECNICA.md`](docs/TECNICA.md) | Arquitetura, stack, Firestore, sync |
 | [`ROADMAP.md`](ROADMAP.md) | Norte, checklist e prioridades |
-| [`MONETIZATION.md`](MONETIZATION.md) | Hipóteses de receita (sem IAP ainda) |
+| [`MONETIZATION.md`](MONETIZATION.md) | Hipóteses de receita (IAP casca; Pro depois do D7) |
+| [`docs/MEDALHAS_CALIBRATION.md`](docs/MEDALHAS_CALIBRATION.md) | Medalhas v3.2 vigentes |
 
-**Estado (9 set/2026):** 8.370 atos V2 na nuvem · validador verde · app 1.0.23 · D7 aberto.
+**Estado (16 set/2026):** app **1.0.23+23** · 8.370 atos V2 na nuvem · validador verde · sessão 6/8 · D7 **ainda aberto** (planilha vazia). IAP Peregrino+ no código, **chaves vazias**.
 
-Canvas mestre de posicionamento: `~/.cursor/projects/.../canvases/stway-posicionamento-mercado-24ago2026.canvas.tsx`
+Canvas mestre de posicionamento: `stway-posicionamento-mercado-24ago2026.canvas.tsx`
 
 ## Projetos
 

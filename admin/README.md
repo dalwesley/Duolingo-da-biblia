@@ -12,6 +12,7 @@ Hierarquia no app e no painel: **Trilha → Cena → Passo → Preparo → Pergu
   - `content_bank_questions/{id}`
   - `content_difficulties/{id}`
   - `content_mission_studies/{slug}`
+  - `content_question_reports/{id}`
   - `content_meta/catalog` (versão)
   - `admin_users/{uid}`
 

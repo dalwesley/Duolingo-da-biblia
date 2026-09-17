@@ -1,6 +1,6 @@
 # Roadmap STWAY — hábito de ler e estudar a Bíblia
 
-**Atualizado:** 24 ago/2026 (banco local + Firebase 8.370, validador verde, palco TB, seed 1787584947461).
+**Atualizado:** 16 set/2026 · app **1.0.23+23** · banco local + Firebase **8.370** · validador verde · palco TB · seed `1787584947461`.
 
 **Norte:** missões diárias em português para **criar hábito de ler e estudar a Bíblia** — sessões curtas + estudo offline quando o versículo pede.
 Não somos YouVersion (ler), nem Hallow (orar), nem Ascend/Bible Way (jogo com pet/heróis sem estudo), nem trivia vazia.
@@ -9,6 +9,20 @@ Não somos YouVersion (ler), nem Hallow (orar), nem Ascend/Bible Way (jogo com p
 **Frase do tester:** *“app de missões pra criar hábito de ler a Bíblia.”*
 
 **Posicionamento vs mercado:** [`docs/PITCH_NOS_VS_ELES.md`](docs/PITCH_NOS_VS_ELES.md) · [`docs/PRODUTO.md`](docs/PRODUTO.md) · canvas `stway-posicionamento-mercado-24ago2026`
+
+### Estado (16 set) — o que o app *é* vs o que ainda falta
+
+| Camada | Situação |
+|--------|----------|
+| **Shell** | Pronto — sessão **6 atos** (boss **8**), 6 gestos, insight, micro-verso opcional |
+| **Conteúdo** | 8.370 atos V2 na nuvem; Gn 1–11 / 12–50 editorial; Êxodo/Sermão pack; resto gerado |
+| **Hábito / social** | Streak, quests, Caravana, Companhia (FCM de aceno), Salas, widget iOS/Android |
+| **Medalhas** | **v3.2** no app — faísca + cofres; sazonal Advento + proximidade no mapa ([`docs/MEDALHAS_CALIBRATION.md`](docs/MEDALHAS_CALIBRATION.md)) |
+| **Strong / TTS** | Strong na missão e na Bíblia; TTS **só na aba Bíblia** (não é áudio da missão) |
+| **IAP** | Casca RevenueCat (`Peregrino+`) — **chaves vazias**, perk = 3→6 companheiros, tela só em Config. **Não é o Pro** de [`MONETIZATION.md`](MONETIZATION.md) |
+| **`lifeChallenge`** | 1 campo `dailyChallenge` no study `sm-08-pacificadores` — o app **não lê** |
+| **Caminhada 40 dias** | Cofre de medalhas + banner na janela litúrgica. **Não** há calendário compartilhado / 3 dias grátis / revisão da semana |
+| **Prova** | Protocolo D7 pronto; planilha [`docs/D7_TESTERS.csv`](docs/D7_TESTERS.csv) **vazia** |
 
 ## Critério de pronto para crescer
 
@@ -53,6 +67,12 @@ Histórico de releases: [`CHANGELOG.md`](CHANGELOG.md).
 - [x] Sync por conta endurecido (sem misturar progresso entre usuários)
 - [x] **Relato de pergunta** (feedback da lição → `content_question_reports` → admin Relatos)
 - [x] Análise competitiva profunda (ago/2026) → prioridades abaixo
+- [x] Widget iOS/Android (App Group `group.ZS7LYV9Y7U.stway`)
+- [x] Push de aceno na companhia (FCM + Cloud Function)
+- [x] Remote Config no boot (liga / baú / bônus de convite)
+- [x] TTS na aba Bíblia (não substitui áudio da missão)
+- [x] Medalhas v3.2 — cofres, sazonal Advento, proximidade no Hoje/mapa
+- [x] Paywall casca Peregrino+ (inativo sem chaves RevenueCat)
 
 ### Piloto Sermão do Monte — estrutura
 
@@ -84,13 +104,14 @@ Foco: **usuários reais no arco Criação (Gênesis V2) e Sermão**. Banco **V2 
 - [x] **Catálogo:** default fechado (loja); teste com `--dart-define=OPEN_ALL_TRAILS=true`
 - [x] Protocolo D7 + eventos `retention_pulse` / `first_lesson_complete` — [`docs/D7_TESTER_PROTOCOLO.md`](docs/D7_TESTER_PROTOCOLO.md)
 - [x] **Profundezas cena 1** (sm-01…05) reescritas como interpretar/conectar — não clone de Semente
-- [x] Widget iOS: App Group `group.ZS7LYV9Y7U.stway` no Runner + extensão (criar o grupo no Developer)
+- [x] Widget iOS: App Group `group.ZS7LYV9Y7U.stway` no Runner + extensão
+- [x] FCM de aceno na companhia · Remote Config · TTS na Bíblia · medalhas v3.2
 - [ ] Medir time-to-value: onboarding → 1ª missão concluída em &lt;2 min
 - [ ] **Rodar D7:** 10–20 testers — [`docs/D7_CONVITE.md`](docs/D7_CONVITE.md) + `make d7_run` · vitrine Sermão e/ou Gênesis 1–11 V2
-- [ ] Pipeline semanal no admin: ajustes via Relatos sem release
+- [ ] Pipeline semanal no admin: ajustes via Relatos sem release (a fila existe; a rotina não)
 - [ ] Strong como momento “uau” na 1ª semana do Sermão (provar com tester)
 - [ ] Caminhar o arco Criação→NT com 1–2 testers (caçar buraco residual de copy/quiz)
-- [ ] Não expandir plano de leitura / paridade YouVersion
+- [ ] Não expandir plano de leitura / paridade YouVersion — plano leve na aba Bíblia já existe; não virar YouVersion
 
 Critério de sucesso desta fase = conclusão de missão e retorno D7 **no Sermão** (e/ou Gênesis V2).
 
@@ -133,7 +154,7 @@ Núcleo:
 
 Tese: apps ensinam conhecimento; STWAY fecha com **obediência concreta** (Sermão do Monte *é* ética do Reino).
 
-- [ ] Campo `lifeChallenge` / `dailyChallenge` no fim da missão (título + 1 frase acionável)
+- [ ] Campo `lifeChallenge` / `dailyChallenge` no fim da missão (título + 1 frase acionável) — **dado:** 1 study (`sm-08`); **app:** `MissionStudy` ignora o campo
 - [ ] Check-in leve: Fiz / Ainda não / Refleti — **sem punição**, sem prova/foto
 - [ ] XP pequeno ou só via reflexão existente — não segundo sistema de reward paralelo
 - [ ] Follow-up no dia seguinte: “Como foi o desafio de ontem?” (1 prompt)
@@ -142,11 +163,11 @@ Tese: apps ensinam conhecimento; STWAY fecha com **obediência concreta** (Serm�
 **Cuidado teológico:** não gamificar pecado/perdão com XP alto; convite pastoral > mecânica de clique.
 
 ### Diferenciais (roubar melhorado)
-- [ ] **Áudio da missão** (MVP): passagem narrada + 1 insight do preparo — commute BR; não hub de oração
+- [ ] **Áudio da missão** (MVP): passagem narrada + 1 insight do preparo — commute BR; não hub de oração. (TTS da aba Bíblia **não** conta)
 - [ ] **Selos de personagem da trilha** (Abrão, Moisés…): 1 fato teológico + versículo âncora — heróis Bible Way sem skin shop
 - [x] **Living Seed elevado**: reações à streak / risco / missão perfeita — companion Ascend com metáfora bíblica (já existe base)
-- [ ] **Campanha litúrgica piloto** (Advento ou Quaresma): quest + trilha curta em massa — #Pray40 do Hallow, no DNA STWAY
-- [x] **Pulso semanal nas Salas**: quem caminhou + baú de grupo (+15 passos)
+- [ ] **Campanha litúrgica piloto** (Advento ou Quaresma): quest + trilha curta em massa — #Pray40 do Hallow, no DNA STWAY. (Cofre/banner Advento 2026 **já existem**; falta o produto de 40 dias)
+- [x] **Pulso semanal nas Salas**: quem caminhou + baú de grupo (+15 passos, calibrável via Remote Config)
 - [x] **Micro-modo cognitivo** na missão: completar verso (~20s) após o quiz
 - [x] **Home/onboarding game-first**: HUD + missão pronta; estudo (Palavra) depois do loop
 - [x] **Celebração placar**: combo / rank Caravana / quase promove
@@ -161,9 +182,9 @@ Tese: apps ensinam conhecimento; STWAY fecha com **obediência concreta** (Serm�
 
 Ver `MONETIZATION.md`. Não shipar Pro antes do hábito provar valor.
 
-- [ ] **Caminhada piloto** (Advento ou Quaresma) — o produto do Pro; sem isso, IAP não vende
-- [ ] STWAY Pro: Caminhada + áudio da missão + revisão da semana; alívio (gelo/lâmpadas/Strong) é suporte
-- [ ] Soft paywalls nos pontos A–F do MONETIZATION.md · default anual R$ 119,90 · copy da temporada
+- [ ] **Caminhada piloto** (Advento ou Quaresma) — o produto do Pro; sem isso, IAP não vende. Cofre de medalhas ≠ Caminhada
+- [ ] STWAY Pro: Caminhada + áudio da missão + revisão da semana; alívio (gelo/lâmpadas/Strong) é suporte. (Casca Peregrino+ já no app — não ligar chaves antes disto)
+- [ ] Soft paywalls nos pontos A–F do MONETIZATION.md · default anual R$ 119,90 · copy da temporada (hoje o paywall só abre em Config)
 - [ ] Pro Família (até 5) antes de packs avulsos
 - [ ] Plano Igreja piloto (1–3 líderes): Salas + progresso do grupo + códigos presente Pro · billing Stripe/Pix na web
 - [ ] Radar (após Igreja): **playlist da sala** (missões do catálogo na ordem da semana) → depois trilha privada MCQ, fora de `content_trails`; **não** UGC aberto
@@ -217,8 +238,8 @@ Não começar por aqui. Schema de steps (contexto, curiosidade, match…) + admi
 ### Ordem de execução (resumo)
 
 1. ~~**Seed Firebase**~~ — **feito** 24 ago 2026 (**8.370** atos V2 · `catalog.version` `1787584947461`)
-2. **Prova** — 10–20 testers + D7 no Sermão e 1 volta no caminho Criação→NT
-3. **Prática** — `lifeChallenge` leve + check-in + follow-up
+2. **Prova** — 10–20 testers + D7 no Sermão e 1 volta no caminho Criação→NT ← **estamos aqui**
+3. **Prática** — `lifeChallenge` leve + check-in + follow-up (ligar o campo que já está no study)
 4. **Motor** — steps configuráveis só se D7 / conclusão pedirem
 
 ## Fosso vs mercado (lembrete)

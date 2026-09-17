@@ -1,7 +1,7 @@
 # STWAY — Nós vs. eles (1 página)
 
 **Para:** tester · líder de igreja · conversa rápida de produto  
-**Atualizado:** 26 ago/2026 · app v1.0.22 · catalog `1787584947461`  
+**Atualizado:** 16 set/2026 · app v1.0.23+23 · catalog `1787584947461`  
 **Frase:** *“Enquanto outros te fazem jogar a Bíblia, o STWAY te põe em missão nela.”*
 
 **Canvas:** `canvases/stway-posicionamento-mercado-24ago2026.canvas.tsx`
@@ -71,10 +71,10 @@ SESSÃO (2–4 min)
 
 | Gap | Honestidade |
 |-----|-------------|
-| Retenção medida (D7) | Protocolo pronto; falta 10–20 testers |
+| Retenção medida (D7) | Protocolo pronto; planilha vazia — falta 10–20 testers |
 | Escola editorial vitrine | Infra ok (gerador + TB); falta autor humano em Gn/Sermão |
-| Marca / polish / aquisição | Gigantes ganham por confiança |
-| IAP | Pro desenhado; só depois de D7 |
+| Marca / polish / aquisição | Shell cinemático ok; gigantes ganham por confiança |
+| IAP | Casca Peregrino+ **inativa**; Pro de verdade só depois do D7 + Caminhada piloto |
 
 ---
 

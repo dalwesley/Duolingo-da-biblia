@@ -1,6 +1,6 @@
 # Marketing — STWAY
 
-**Atualizado:** 24 ago/2026
+**Atualizado:** 16 set/2026
 
 Assets visuais Instagram: repositório externo `stway-marketing` (`instagram/semana-1`, `instagram/semana-2`).
 
@@ -51,6 +51,6 @@ Detalhe: [`docs/PITCH_NOS_VS_ELES.md`](docs/PITCH_NOS_VS_ELES.md)
 
 - Rodar **D7** com 10–20 testers antes de escala de aquisição  
 - Prova: usuário explica o app numa frase + retorno D7  
-- IAP / ads: **depois** de retenção ok ([`MONETIZATION.md`](MONETIZATION.md))
+- IAP: casca Peregrino+ já no app, **inativa**; produto Pro só depois de retenção ok ([`MONETIZATION.md`](MONETIZATION.md))
 
 Canvas: `stway-posicionamento-mercado-24ago2026.canvas.tsx`

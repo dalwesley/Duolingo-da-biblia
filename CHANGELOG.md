@@ -9,6 +9,9 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
+### Changed
+- Docs alinhadas ao app 1.0.23: sessão **6/8**, IAP casca (chaves vazias), medalhas v3.2, FCM, TTS só na Bíblia, `lifeChallenge` ainda fora do player.
+
 ## [1.0.23] — 2026-09-09
 
 ### Added

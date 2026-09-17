@@ -1,10 +1,23 @@
-# STWAY — Sistema de medalhas (v2 → v3.1)
+# STWAY — Sistema de medalhas (v2 → v3.2)
 
-**Status:** v3.2 no app — faísca + conquistas; Palavra no cofre, não prateleira de livros  
-**Atualizado:** set/2026  
-**Calibração vigente:** [`MEDALHAS_CALIBRATION.md`](MEDALHAS_CALIBRATION.md)
+**Status:** **v3.2 no app** — faísca + conquistas; Palavra mede capítulos, não catálogo de livros  
+**Atualizado:** 16 set/2026  
+**Fonte de verdade dos marcos/IDs:** [`MEDALHAS_CALIBRATION.md`](MEDALHAS_CALIBRATION.md)
 
-O texto abaixo descreve a arquitetura (cofres, famílias, loops). Os **marcos e IDs atuais** estão na calibração v3.1: prefixo consecutivo, diamantes ortogonais como Mirra, cofre sazonal Advento, Pioneiro sem sheet.
+Este arquivo descreve **arquitetura** (cofres, famílias, loops, persistência).  
+As tabelas de IDs v2 mais abaixo são **históricas** — o app não as usa mais. Critérios vigentes = calibração v3.2 (prefixo consecutivo, diamantes ortogonais como Mirra, cofre sazonal Advento, Pioneiro sem sheet).
+
+### O que já está no código (set/2026)
+
+| Peça | Estado |
+|------|--------|
+| Cofres Jornada / Trilha / Descobertas | Feito |
+| Cofre sazonal `season:advento-2026` | Feito (visível só na janela 29 nov–24 dez + 7 dias) |
+| Proximidade no Hoje, mapa e perfil | Feito (`MedalProximityWhisper`, chip no mapa) |
+| Celebração de medalha / cofre | Feito |
+| **Caminhada de 40 dias** (produto Pro) | **Não** — o cofre não é a temporada jogável |
+
+**Não falta medalha nova.** Falta o produto Caminhada (calendário compartilhado) se o D7 pedir Pro.
 
 ---
 
@@ -81,7 +94,9 @@ Mantém o vocabulário atual, com um acréscimo:
 
 ## Cofre da Jornada (global)
 
-**14 medalhas** — hábitos que atravessam trilhas.
+**Spec v2 (14 medalhas fixas)** — substituída. O app usa **trilhas** (`track:word`, `track:formation`, …) com faísca + 1–2 conquistas. Ver [`MEDALHAS_CALIBRATION.md`](MEDALHAS_CALIBRATION.md).
+
+A tabela abaixo fica como histórico da migração v1→v2.
 
 ### Palavra (5)
 
@@ -354,13 +369,15 @@ Opcional v2.1: toggle por cofre (provavelmente overkill).
 
 ## Fases de implementação
 
-| Fase | Escopo | Entrega |
-|------|--------|---------|
-| **A** | Modelo `vaultId` + migração Jornada (14) | Cofre único renomeado; IDs novos |
-| **B** | Template trilha + geração do catálogo | Cofres por trilha no perfil |
-| **C** | Sazonal (1ª Caminhada piloto) | `season:advento-2026` |
-| **D** | Descobertas (6 iniciais) | Grid separado + sheets |
-| **E** | Mapa + proximidade por trilha ativa | Chip na missão |
+| Fase | Escopo | Estado |
+|------|--------|--------|
+| **A** | Modelo `vaultId` + migração Jornada | **Feito** |
+| **B** | Template trilha + geração do catálogo | **Feito** |
+| **C** | Sazonal (cofre Advento) | **Feito no cofre** — produto 40 dias ainda não |
+| **D** | Descobertas | **Feito** |
+| **E** | Mapa + proximidade por trilha ativa | **Feito** |
+
+Não abrir fase nova de medalha antes do D7. Próximo produto relacionado: **Caminhada 40 dias** (não mais medalhas).
 
 ---
 
@@ -383,6 +400,6 @@ Opcional v2.1: toggle por cofre (provavelmente overkill).
 | Cofre por trilha? | **Sim** — 4 medalhas template por trilha ativa |
 | Especiais / sazonais / secretas? | **Sim** — cofres `season` e `discovery` separados |
 | O que acontece quando “acaba”? | Acaba **um cofre**, não o jogo; surgem trilhas e temporadas novas |
-| Quantas medalhas no total? | ~14 jornada + ~4×trilhas ativas + ~5/temporada + descobertas — escala com conteúdo |
+| Quantas medalhas no total? | Escadas v3.2 (não 14 globais) + 4 níveis/trilha + sazonal + raras — ver calibração |
 
-**Próximo passo:** Fase C (sazonal) e chip de proximidade no mapa (Fase E).
+**Próximo passo:** nenhum de medalha. Prova D7; depois Caminhada como produto (o cofre já espera Advento 2026).

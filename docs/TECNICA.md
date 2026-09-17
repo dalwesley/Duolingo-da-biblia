@@ -1,6 +1,6 @@
 # STWAY — Documentação técnica
 
-**Atualizado:** 9 set/2026  
+**Atualizado:** 16 set/2026  
 **Monorepo:** `trilha_app/` (Flutter) + `admin/` (Vite)  
 **Firebase project:** `trilha-biblia`  
 **App:** 1.0.23+23
@@ -28,7 +28,7 @@ Currículo é **fonte de verdade no Firestore**. O app sincroniza por versão (`
 
 JSON em `trilha_app/assets/data/` = **origem do seed / backup editorial** — não o runtime do usuário. Composer, UI e analytics ficam no **código Flutter** (APK/IPA).
 
-**Estado 24 ago/2026:** catálogo **local + Firestore** alinhados — **8.370** perguntas V2, validador **verde**. Palco TB. Toque no verso. Seed `catalog.version` `1787584947461`. App: cache por trilha (`ensureTrailBank`). Ver [`docs/PITCH_NOS_VS_ELES.md`](docs/PITCH_NOS_VS_ELES.md) para posicionamento.
+**Estado 16 set/2026:** catálogo **local + Firestore** alinhados — **8.370** perguntas V2, validador **verde**. Palco TB. Toque no verso. Seed `catalog.version` `1787584947461`. App: cache por trilha (`ensureTrailBank`). Sessão **6/8**. IAP casca inativa. Ver [`docs/PITCH_NOS_VS_ELES.md`](PITCH_NOS_VS_ELES.md) para posicionamento.
 
 ---
 
@@ -56,8 +56,8 @@ Não há app Next.js na raiz (ver `AGENTS.md`).
 | Backend | Cloud Firestore |
 | Analytics | Firebase Analytics + Crashlytics (off em debug) |
 | Local | SharedPreferences, JSON em disco (catálogo), sqflite (Strong) |
-| Notificações | `flutter_local_notifications` (sem FCM) |
-| Outros | audioplayers, share_plus, qr_flutter, mobile_scanner, home_widget, app_links |
+| Notificações | `flutter_local_notifications` + **FCM** (`firebase_messaging`) — aceno da companhia |
+| Outros | audioplayers, share_plus, qr_flutter, mobile_scanner, home_widget, app_links, `flutter_tts`, `purchases_flutter`, `firebase_remote_config` |
 
 ### Estrutura `lib/`
 
@@ -79,14 +79,17 @@ lib/
 
 | Serviço | Responsabilidade |
 |---------|------------------|
-| `BackendService` | Init Firebase, auth Google, backup user, ligas/salas/companias |
+| `BackendService` | Init Firebase, auth Google/Apple, backup user, ligas/salas/companias |
 | `ProgressService` | Passos, streak, missões, settings; mapa local + nuvem |
 | `ContentCatalogService` | Currículo Firestore + cache em disco |
 | `LeagueService` | Tiers semanais promote/demote |
 | `RoomService` / `CompanionService` | Salas e companhia 1:1 |
-| `NotificationService` | Lembretes de hábito |
+| `NotificationService` | Lembretes locais + token FCM (aceno da companhia) |
 | `SyncService` | Device ID + export/import JSON |
 | `BibleService` / `BibleStudyService` | Bíblia + Strong offline |
+| `TtsService` | Leitura em voz alta — **aba Bíblia** |
+| `RemoteConfigService` | Liga / baú da sala / bônus de convite |
+| `SubscriptionService` | Peregrino+ via RevenueCat — **no-op sem chaves** |
 | `AppUpdateService` | Soft/force update via `content_meta/app_release` |
 | `AnalyticsService` | Funil de eventos |
 | `QuestionReportService` | Relatos de pergunta |
@@ -96,7 +99,7 @@ lib/
 ### Fluxo de bootstrap
 
 1. Splash aguarda init do backend (até ~8s)  
-2. Sem Google → `LoginScreen`  
+2. Sem sessão → `LoginScreen` (Google; Apple no iOS)  
 3. Hidrata `users/{uid}` → onboarding ou `MainShell`  
 4. Catálogo: cache disco → compara versão → fetch se stale  
 
@@ -105,7 +108,7 @@ lib/
 - Shell com 5 tabs (`MainShell` / `main_bottom_nav.dart`)  
 - Rota nomeada: `/lesson` (`missionSlug`)  
 - Demais: `MaterialPageRoute`  
-- Deep link: `stway://companhia/CODIGO`
+- Deep link: `stway://companhia/CODIGO` · `stway://hoje` (widget) · `stway://juntos`
 
 ### Modelo de conteúdo (app)
 
@@ -223,15 +226,18 @@ Contrato de sessão: [`SESSAO_TREINO.md`](SESSAO_TREINO.md) v1.2.
 
 | Peça | Estado |
 |------|--------|
-| `SessionComposer` só banco | feito — 8 atos / boss 10; gestos diversos; skill do banco |
-| `LessonScreen` modo único | feito — entrada → atos → micro opcional → insight → celebração |
-| `ExercisePanel` gestos MVP | feito — V/F, toque **no verso**, choice, order, complete, connect |
+| `SessionComposer` só banco | feito — **6 atos** / boss **8**; gestos diversos; skill do banco |
+| `LessonScreen` modo único | feito — entrada → atos → micro-verso opcional → insight → celebração |
+| `ExercisePanel` gestos MVP | feito — V/F, toque **no verso**, choice, order, complete, connect (`match` mapeia a connect) |
 | Analytics `exercise_*` + skill | feito |
 | CMS bank (type/skill/palco) + trails (objective/insight/hook) | feito |
 | `skill` tagueado no banco | feito (heurística + seed) |
 | Strong / morfologia | feito **na aba Bíblia** e **na missão** (toque na ref do palco → sheet Strong) |
+| TTS | feito **só na aba Bíblia** — não é áudio da missão |
+| Medalhas v3.2 | feito — faísca, cofres, sazonal, proximidade |
+| `lifeChallenge` / `dailyChallenge` | **não** no player (`MissionStudy` ignora o campo) |
 | `content_exercises` / `skillEstimates` | **não** — fases futuras |
-| Monetização / IAP | **não** |
+| Monetização / IAP | casca RevenueCat **inativa** (chaves vazias); perk = companheiros |
 | Jornada canônica (unlock) | código existe; bypass só com `--dart-define=OPEN_ALL_TRAILS=true` |
 
 ### Hierarquia de dados (alvo)
@@ -332,7 +338,7 @@ Contrato: [`SESSAO_TREINO.md`](SESSAO_TREINO.md) v1.1 — **modo único**, vári
 
 | Camada | Mudança |
 |--------|---------|
-| `services/session_composer.dart` | Só banco; 8 atos; 2º Escolher ≤ 40%; skill preservada |
+| `services/session_composer.dart` | Só banco; **6 atos** (boss 8); 2º Escolher ≤ 40%; skill preservada |
 | `models/trail.dart` | `Mission` + campos hook/objective/insight; `exercises[]` legado |
 | `lesson_screen.dart` | Sempre `ExercisePanel`; entrada = verso curto + 1 nota |
 | `exercise_panel.dart` | Esqueleto verbo · pergunta · nota · palco · ação |
@@ -354,9 +360,10 @@ Contrato: [`SESSAO_TREINO.md`](SESSAO_TREINO.md) v1.1 — **modo único**, vári
 
 1. ~~Schema + CMS + shell sessão~~ — **feito**  
 2. ~~Player banco-only~~ — **feito**  
-3. **Editorial** — profundezas distintas; prova D7 com testers  
-4. **`content_exercises`** + revisão/interleaving  
-5. **`skillEstimates`** + seleção adaptativa leve  
+3. **Editorial + prova** — profundezas distintas; **D7 com testers** (planilha ainda vazia)  
+4. **`lifeChallenge`** no player (campo já existe em 1 study)  
+5. **`content_exercises`** + revisão/interleaving  
+6. **`skillEstimates`** + seleção adaptativa leve  
 
 Não criar componente novo sem necessidade pedagógica recorrente ([§12](LEARNING_ENGINE.md)).
 
@@ -381,7 +388,7 @@ Protocolo de teste: [`D7_TESTER_PROTOCOLO.md`](D7_TESTER_PROTOCOLO.md).
 | Currículo | Cache pós-sync; precisa rede na 1ª carga |
 | Progresso | Cache local; hidrata da nuvem no login |
 | Backend down | Modo offline parcial no `BackendService` |
-| Notificações | Locais (manhã/tarde/noite, semanal, nudges D+1/D+2) |
+| Notificações | Locais (manhã/tarde/noite, semanal, nudges D+1/D+2) + **FCM** de aceno na companhia |
 
 ---
 
@@ -430,6 +437,9 @@ Não versionar secrets (`.env`, keystores). Ver `trilha_app/RELEASE.md` para SHA
 | Auth + cloud | `trilha_app/lib/services/backend_service.dart` |
 | Progresso | `trilha_app/lib/services/progress_service.dart` |
 | Catálogo | `trilha_app/lib/services/content_catalog_service.dart` |
+| Sessão | `session_composer.dart` · `lesson_screen.dart` · `exercise_panel.dart` |
+| Assinatura (casca) | `subscription_service.dart` · `paywall_screen.dart` |
+| Medalhas v3.2 | `models/pilgrim_medal_catalog.dart` |
 | Modelos de trilha | `trilha_app/lib/models/trail.dart` |
 | Persistência admin | `admin/src/db.js` |
 | Editor de trilhas | `admin/src/trails-page.js` |
@@ -444,7 +454,7 @@ Não versionar secrets (`.env`, keystores). Ver `trilha_app/RELEASE.md` para SHA
 - Learning Engine: [`docs/LEARNING_ENGINE.md`](LEARNING_ENGINE.md)  
 - Sessão: [`docs/SESSAO_TREINO.md`](SESSAO_TREINO.md)  
 - Pitch: [`docs/PITCH_NOS_VS_ELES.md`](PITCH_NOS_VS_ELES.md)  
-- Referência gen-03: [`docs/pilots/gen-03-imagem.md`](pilots/gen-03-imagem.md)  
+- Medalhas: [`docs/MEDALHAS_CALIBRATION.md`](MEDALHAS_CALIBRATION.md) · arquitetura [`MEDALHAS.md`](MEDALHAS.md)  
 - Roadmap / norte: [`ROADMAP.md`](../ROADMAP.md)  
 - Monetização (plano): [`MONETIZATION.md`](../MONETIZATION.md)  
 - Changelog: [`CHANGELOG.md`](../CHANGELOG.md)  

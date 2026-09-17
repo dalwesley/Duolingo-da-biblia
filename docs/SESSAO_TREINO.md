@@ -1,6 +1,6 @@
 # STWAY — Contrato de sessão (modo único)
 
-**Versão:** 1.2 · ago/2026  
+**Versão:** 1.3 · set/2026  
 **Status:** padrão oficial do produto · **implementado no app**  
 **Relaciona:** [`LEARNING_ENGINE.md`](LEARNING_ENGINE.md) · [`PRODUTO.md`](PRODUTO.md) · [`TECNICA.md`](TECNICA.md)
 
@@ -17,7 +17,7 @@ TODO MISSÃO = UMA SESSÃO
 
 O banco MCQ **não** é um modo — é o gesto **Escolher** (`choice`), montado pelo composer a partir de `content_bank_questions`.
 
-**Estado (ago/2026):** `LessonScreen` + `SessionComposer` + `ExercisePanel` seguem este contrato. Conteúdo canônico no Firestore; JSON local só para seed/edição.
+**Estado (set/2026):** `LessonScreen` + `SessionComposer` + `ExercisePanel` seguem este contrato. Conteúdo canônico no Firestore; JSON local só para seed/edição. Contagem real: **6 atos** (boss **8**) — não 8/10.
 
 ---
 
@@ -38,7 +38,7 @@ Insight sem ato curto = sermão.
 ```text
 SESSÃO = 1 objetivo observável + 5–12 atos + 1 insight (no fim) + saída
 Duração alvo: 2–3 min (teto 4)
-Padrão: 5–7 atos · simples 4–5 · denso 7–8 · boss 8
+Implementado: **6 atos** · boss **8** (`ProgressService.normalQuestionCount`)
 ```
 
 - **Não é** mini-aula → quiz.  
@@ -118,7 +118,7 @@ Mínimo **3 gestos distintos** por sessão (quando houver conteúdo autorado). M
 **Regra:** se a ideia cabe num gesto existente, usar. Novo gesto só se for recorrente em muitas trilhas.
 
 MCQ clássico (`Escolher`) ≤ **40%** dos atos quando a sessão tem gestos mistos.  
-O banco (`*_questions.json`) carrega `type` por pergunta. O composer monta diversidade de gestos e preenche **6 atos** (8 boss) com **1 de cada gesto** no pool (V/F · tap · choice · order · complete · connect); 2º Escolher no meio se couber (≤ 40%).
+O banco (`*_questions.json`) carrega `type` por pergunta. O composer monta diversidade de gestos e preenche **6 atos** (8 boss) com **1 de cada gesto** no pool (V/F · tap · choice · order · complete · connect); 2º Escolher no meio se couber (≤ 40%). `match` no banco entra no slot **Conectar**.
 
 ---
 
@@ -311,11 +311,14 @@ Nota: [`pilots/gen-03-imagem.md`](pilots/gen-03-imagem.md) (referência históri
 - [x] Contrato aprovado (v1.0 piloto)  
 - [x] Anatomia de tela refinada (v1.1)  
 - [x] Modo único + composer no app (v1.2)  
-- [x] Catálogo Firestore alinhado ao contrato (seed ago/2026)
+- [x] Catálogo Firestore alinhado ao contrato (seed ago/2026)  
+- [x] Contagem 6/8 confirmada no código (v1.3)
 
 Player: `SessionComposer` → `ExercisePanel` · shell em `LessonScreen`.  
-Gestos MVP: V/F · toque · escolha · ordenar · completar · conectar · insight (+ review).
+Gestos MVP: V/F · toque · escolha · ordenar · completar · conectar · insight (+ review). Micro-verso opcional entre atos e insight.
 
 **Ainda editorial (não código):** profundezas com operações reais (não clone de Semente); prova D7 com testers.
+
+**Ainda código (fora deste contrato):** `lifeChallenge` no fim da sessão; áudio da passagem na missão.
 
 **Código (já feito):** Strong no fluxo do treino (toque na ref do palco → sheet Estudar) e na aba Bíblia.

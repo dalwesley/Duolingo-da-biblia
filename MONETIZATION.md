@@ -3,7 +3,25 @@
 Não cobramos para começar. Não cobramos para ler a Palavra.
 Shipar Pro só depois do D7 ok.
 
-28 ago 2026.
+28 ago 2026 · **estado do código 16 set/2026 abaixo.**
+
+---
+
+## Estado no app (16 set)
+
+Não confundir **casca** com **produto**.
+
+| Peça | Código | Produto |
+|------|--------|---------|
+| SDK RevenueCat (`purchases_flutter`) | Sim | Chaves `_apiKeyAndroid` / `_apiKeyIos` **vazias** → nunca inicializa |
+| Tela Peregrino+ | Sim — só em Configurações | Não interrompe sessão (alinhado: sem paywall no splash/missão) |
+| Entitlement `peregrino_plus` | Sim | Sempre `false` sem chaves |
+| Perk implementado | 3 → 6 companheiros | **Não** é nenhum dos 5 itens do Pro abaixo |
+| Soft paywalls (0 lâmpadas, gelo, Strong, dia 3) | **Não** | — |
+| Caminhada 40 dias / áudio / revisão da semana | **Não** | — |
+| Família / Igreja / Stripe | **Não** | — |
+
+Ordem de implementação (seção no fim) **não mudou**. Não preencher as chaves RevenueCat antes da 1ª Caminhada piloto.
 
 ---
 
@@ -233,10 +251,11 @@ Se o anual converter mal: a Caminhada não ficou clara — não abrir loja de en
 
 Só depois do D7 com testers.
 
+0. ~~Casca RevenueCat + tela em Config~~ — **feito 1.0.23**, chaves vazias de propósito
 1. Apple Small Business 15% + Play
-2. RevenueCat (`pro` / `family`) — não IAP cru
+2. Preencher chaves RevenueCat (`peregrino_plus` / `family`) — não IAP cru
 3. `isPro` no Firestore via webhook
-4. Paywall (default anual) + restore
+4. Paywall (default anual) + restore — e **só então** nos pontos de dor (não só Config)
 5. **Caminhada piloto** (conteúdo + Caravana da temporada + paywall no dia 3)
 6. Áudio da missão + revisão da semana
 7. Gates de alívio: gelo, repair, lâmpada, Strong

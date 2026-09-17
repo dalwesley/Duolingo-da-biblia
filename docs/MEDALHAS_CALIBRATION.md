@@ -1,5 +1,7 @@
 # Calibração de medalhas v3.2
 
+**Vigente no app** (16 set/2026). Arquitetura: [`MEDALHAS.md`](MEDALHAS.md).
+
 Faísca acende o emblema. Conquista é moeda que **não some**. Palavra no cofre mede hábito de capítulos, não catálogo de livros.
 
 Primeiro gesto em 1–3 sessões (faísca). Próximo passo visível (~20% restantes). Uma linha na celebração se o ato moveu a escada.

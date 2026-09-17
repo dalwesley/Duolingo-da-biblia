@@ -1,6 +1,8 @@
 # STWAY App (Flutter)
 
-App nativo para iOS e Android — aprenda a Bíblia em missões gamificadas.
+App nativo para iOS e Android — missões diárias para criar hábito de ler e estudar a Bíblia.
+
+Versão: ver `pubspec.yaml` (**1.0.23+23**). Norte do produto: [`../docs/PRODUTO.md`](../docs/PRODUTO.md).
 
 ## Rodar no celular
 
@@ -40,7 +42,7 @@ Para editar / publicar conteúdo, use o painel em `../admin/`.
 
 ## Estudo bíblico (Strong)
 
-Na leitura, toque num versículo → **Estudar** para ver palavras originais, Strong, morfologia, concordância e referências cruzadas (offline).
+Na leitura **e na missão**, toque na referência → **Estudar** para Strong, morfologia, concordância (offline). Na aba Bíblia há TTS (voz alta).
 
 Dados em `assets/data/bible_study.sqlite.gz` (STEPBible / openbible.info, CC BY). Para regenerar:
 
@@ -60,8 +62,8 @@ flutter build ios --release
 
 ## Estrutura
 
-- `lib/screens/` — splash, home, trilhas, config, mapa, lição, celebração
-- `lib/services/` — progresso, Firebase, catálogo de conteúdo
-- `assets/data/` — fallback offline (Bíblia, trilhas)
+- `lib/screens/` — splash, home, trilhas, Bíblia, juntos, config, mapa, lição, celebração  
+- `lib/services/` — progresso, Firebase, catálogo, FCM, Remote Config, assinatura (casca)  
+- `assets/data/` — Bíblia + Strong empacotados; currículo vem do Firestore
 
 O painel web Firebase fica em `../admin/`, separado do app.

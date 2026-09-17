@@ -1,7 +1,7 @@
 # STWAY — Documentação de produto
 
-**Atualizado:** 9 set/2026  
-**Versão do app:** 1.0.23  
+**Atualizado:** 16 set/2026  
+**Versão do app:** 1.0.23+23  
 **Norte completo:** [`ROADMAP.md`](../ROADMAP.md)  
 **Pitch 1 página (nós vs. eles):** [`PITCH_NOS_VS_ELES.md`](PITCH_NOS_VS_ELES.md)  
 **Motor de formação (diretriz):** [`LEARNING_ENGINE.md`](LEARNING_ENGINE.md)  
@@ -13,14 +13,16 @@
 
 | Camada | Situação |
 |--------|----------|
-| **Shell de sessão** | Pronto — entrada → 6 gestos (V/F · toque no verso · escolher · ordenar · completar · conectar) → insight → saída |
+| **Shell de sessão** | Pronto — entrada → **6 atos** (boss **8**) nos 6 gestos → micro-verso opcional → insight → saída |
 | **Conteúdo no Firebase** | Seed CLI **24 ago** — **8.370** perguntas, validador **verde**, palco TB, 6 gestos. `catalog.version` `1787584947461`. |
-| **UI / UX** | Tema escuro cinemático, 5 tabs; Toque responde no versículo (`buildTapSpans`) |
+| **UI / UX** | Tema escuro cinemático, 5 tabs; Toque responde no versículo (`buildTapSpans`); medalhas v3.2 no perfil |
 | **Distribuição no app** | Cache por trilha no boot; limpa banco antigo quando `catalog.version` muda; atos baixados ao abrir missão |
 | **Escola no conteúdo** | 6 gestos ~equilibrados; palco TB; Gn 1–11 editorial; Êxodo/Sermão pack; resto gerado — próximo salto = handcraft vitrine |
-| **Strong** | Offline na aba Bíblia **e** na missão (toque na referência do ato → Estudar) |
-| **Prova com usuário** | Protocolo D7 pronto ([`D7_TESTER_PROTOCOLO.md`](D7_TESTER_PROTOCOLO.md)); falta execução com 10–20 testers |
-| **Monetização** | Sem IAP |
+| **Strong / TTS** | Strong offline na aba Bíblia **e** na missão (ref do palco → Estudar). TTS **só na Bíblia** |
+| **Hábito extra** | Widget home, FCM de aceno na companhia, lembrete após 1ª missão, Remote Config |
+| **Prática IRL** | `dailyChallenge` existe em **1** study (`sm-08`); o modelo `MissionStudy` **não parseia** — sem check-in |
+| **Prova com usuário** | Protocolo D7 pronto ([`D7_TESTER_PROTOCOLO.md`](D7_TESTER_PROTOCOLO.md)); planilha vazia — falta 10–20 testers |
+| **Monetização** | Casca RevenueCat (`Peregrino+`) **sem chaves** — IAP inativo. Perk previsto: 3→6 companheiros. Pro de verdade = [`MONETIZATION.md`](../MONETIZATION.md) (depois do D7) |
 
 ---
 
@@ -51,7 +53,7 @@ Cristãos de língua portuguesa que querem:
 | O que entrega | Como |
 |---------------|------|
 | Formação progressiva | Jornada → trilhas → cenas → **missões** → exercícios tipados |
-| Hábito diário | Missão do dia, quests, streak, lembretes locais |
+| Hábito diário | Missão do dia, quests, streak, lembretes locais + FCM de aceno, widget |
 | Profundidade | 3 níveis cognitivos (Semente / Rota / Profundezas) + Strong offline |
 | Social leve | Caravana (liga semanal), Companhia 1:1, Salas de estudo |
 | Conteúdo vivo | CMS admin no Firebase (studio com preview do ato) — atualiza sem release na loja |
@@ -64,11 +66,11 @@ Regra de feature ([§46](LEARNING_ENGINE.md)): *isso torna o usuário melhor em 
 
 ### Abas principais
 
-1. **Hoje** — Próxima missão dominante, quests, streak, entrada para prática/memória  
+1. **Hoje** — Próxima missão dominante, quests, streak, medalhas próximas, desafio sazonal (se janela), entrada para prática/memória  
 2. **Trilhas** — Catálogo por reino (AT / NT / Vida Cristã / Teologia)  
-3. **Bíblia** — Leitor offline + estudo Strong ao tocar no versículo  
+3. **Bíblia** — Leitor offline + Strong + TTS + plano de leitura leve  
 4. **Juntos** — Caravana, Companhia, Salas  
-5. **Config** — Som, notificações, export/import, logout  
+5. **Config** — Som, notificações, Peregrino+ (casca), export/import, logout  
 
 ### Fluxo principal
 
@@ -84,11 +86,11 @@ Onboarding em 5 beats: origem → hábito → caminhada → ritmo → primeira t
 ### Loop da missão
 
 1. Entrada curta (título · verso · contexto/conexão · Começar)  
-2. Atos tipados no mesmo shell (V/F, toque, escolher, ordenar, completar, conectar) — **8** padrão · boss **10**  
+2. Atos tipados no mesmo shell (V/F, toque, escolher, ordenar, completar, conectar) — **6** padrão · boss **8** (`ProgressService`)  
 3. Erro com correção em 1 linha + nova chance; acerto gera **passos**  
 4. Se errou: micro-review (outro gesto) opcional  
-5. Insight (“Hoje: …”) → saída (passos / streak; micro bônus de verso opcional)  
-6. Bosses = revisão / interleaving do módulo  
+5. Micro-verso opcional → insight (“Hoje: …”) → saída (passos / streak)  
+6. Bosses = revisão / interleaving do módulo   
 
 Composer monta a sessão **só do banco** Firestore. Detalhe: [`SESSAO_TREINO.md`](SESSAO_TREINO.md) · [`LEARNING_ENGINE.md`](LEARNING_ENGINE.md).
 
@@ -176,8 +178,7 @@ Não há mais missão especial embutida. `gen-03-imagem` e o restante usam o mes
 
 ## Monetização
 
-Hoje: **sem IAP, ads ou assinatura** no app.  
-Direção (28 ago): Pro anual **R$ 119,90** · Família · Igreja na web. Não gatear Profundezas do canônico. [`MONETIZATION.md`](../MONETIZATION.md).
+Hoje: **IAP inativo**. Há tela Peregrino+ e SDK RevenueCat, mas as chaves estão vazias — ninguém compra. O perk implementado (quando ligar) é só **mais companheiros**. O produto Pro (Caminhada + áudio + revisão da semana + alívio de ritmo) **não está no app**. Direção: [`MONETIZATION.md`](../MONETIZATION.md). Não gatear Profundezas do canônico. Não abrir IAP de verdade antes do D7 e da 1ª Caminhada piloto.
 
 ---
 
@@ -258,13 +259,15 @@ STWAY ocupa **formação ativa em PT-BR** — nicho que gigantes não priorizam.
 
 | Termo | Significado |
 |-------|-------------|
-| Missão | Unidade pedagógica (~2–4 min, 3–8 exercícios); no código: `Mission` |
+| Missão | Unidade pedagógica (~2–4 min, **6** atos · boss **8**); no código: `Mission` |
 | Exercício | Ação tipada (`choice`, `order`, `connect`…) |
 | Cena | Módulo dentro da trilha |
-| Preparo / estudo | Texto + contexto + conexões da missão (legado: `MissionStudy`) |
+| Preparo / estudo | Texto + contexto + conexões da missão (`MissionStudy`) |
+| `dailyChallenge` | Desafio IRL no study — **ainda não no player** |
 | Passos (moeda) | Progresso ganho nas missões |
 | Lâmpadas | Vidas na missão |
 | Caravana | Liga semanal |
-| Companhia | Par 1:1 |
+| Companhia | Par 1:1 (FCM de aceno) |
+| Peregrino+ | Casca de assinatura — IAP inativo |
 | Relato | Report de exercício pelo usuário → fila no admin |
 | Competência | Observar → … → Aplicar ([§9](LEARNING_ENGINE.md)) |

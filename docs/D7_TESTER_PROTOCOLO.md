@@ -1,12 +1,14 @@
 # Protocolo D7 — fase “Agora”
 
-**Atualizado:** 20 ago/2026  
+**Atualizado:** 16 set/2026 · app **1.0.23+23**  
 **Objetivo:** provar o loop com 10–20 pessoas reais. Critério = conclusão de missão + retorno D7.  
 **Vitrines:** **Sermão do Monte** (cena 1) e/ou **Gênesis 1–11 V2** (banco 8.370 na nuvem).  
 **Norte:** [`ROADMAP.md`](../ROADMAP.md) · pitch: [`PITCH_NOS_VS_ELES.md`](PITCH_NOS_VS_ELES.md)  
 **Planilha:** [`D7_TESTERS.csv`](D7_TESTERS.csv) · convite: [`D7_CONVITE.md`](D7_CONVITE.md)
 
 **Frase para o tester (só isto):** *“é um app de missões curtas pra criar hábito de ler a Bíblia.”*
+
+**Estado da prova:** planilha vazia — nenhum tester registrado. Infra (eventos `retention_pulse` / `first_lesson_complete`, Relatos, build `make d7_run`) já está no app.
 
 ---
 
@@ -24,7 +26,7 @@ cd trilha_app && flutter run --dart-define=OPEN_ALL_TRAILS=true
   - **Sermão:** Trilhas → Sermão do Monte → cena 1 (Bem-aventuranças)
   - **Gênesis:** onboarding já aponta; ou Trilhas → Gênesis 1–11
 - Não explicar o app além da frase acima.
-- Sessão esperada: **~6 atos** (boss 8), com choice + V/F.
+- Sessão esperada: **6 atos** (boss **8**), 6 gestos no mesmo shell.
 - Se a pergunta falhar: **Relatar problema nesta pergunta** (vai para admin → Relatos).
 
 ---

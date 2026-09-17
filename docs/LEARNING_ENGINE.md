@@ -3,22 +3,24 @@
 ## Especificação mestre para trilhas, currículo, treinos, exercícios e refatoração do fluxo
 
 **Versão:** 2.0  
-**Atualizado:** agosto/2026  
+**Atualizado:** setembro/2026  
 **Status:** Diretriz central do produto  
 
 Docs relacionadas: [`PRODUTO.md`](PRODUTO.md) · [`TECNICA.md`](TECNICA.md) · contrato de sessão [`SESSAO_TREINO.md`](SESSAO_TREINO.md) · pitch [`PITCH_NOS_VS_ELES.md`](PITCH_NOS_VS_ELES.md)
 
-### Implementação (ago/2026) — o que este doc *exige* vs. o que o app *faz*
+### Implementação (set/2026) — o que este doc *exige* vs. o que o app *faz*
 
 | Exigência deste engine | No app hoje |
 |------------------------|-------------|
-| Sessão única com atos tipados + insight | **Sim** (`LessonScreen` + composer) |
-| Gestos além de MCQ | **Sim** (V/F, toque, order, complete, connect…) |
+| Sessão única com atos tipados + insight | **Sim** (`LessonScreen` + composer) — 6 atos / boss 8 |
+| Gestos além de MCQ | **Sim** (V/F, toque, order, complete, connect; `match` → connect) |
 | Competências (`skill`) | Tag + analytics; **sem** modelo adaptativo |
 | 3 profundidades como operações | UI + banco V2 (8.370 · validador verde); handcraft vitrine = próximo salto |
 | Strong / morfologia no estudo | **Sim** — aba Bíblia + ref tocável no palco do treino |
 | Currículo progressivo | Catálogo Firebase; unlock bypass em builds de teste |
-| Revisão espaçada / banco de exercícios tipados | Micro-review in-session; sem `content_exercises` |
+| Revisão espaçada / banco de exercícios tipados | Micro-review in-session + tela de erros; sem `content_exercises` |
+| Viver o texto (`apply` / desafio IRL) | **Não** no player — 1 `dailyChallenge` no JSON, ignorado |
+| Gestos `explain` / `classify` / `find_in_text` | Enum no modelo; **sem** UI dedicada — não inventar até retenção pedir |
 
 Este arquivo continua sendo o **norte pedagógico**. O que já foi construído no código está em [`SESSAO_TREINO.md`](SESSAO_TREINO.md) e [`TECNICA.md`](TECNICA.md).
 
