@@ -27,7 +27,6 @@ import '../widgets/app_update_sheet.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/hero_card_atmosphere.dart';
 import '../widgets/immersive_background.dart';
-import '../widgets/lantern_glyph.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 import '../widgets/user_avatar.dart';
@@ -225,7 +224,7 @@ class _SettingsScreenState extends State<SettingsScreen>
           _groupedCard(
             a,
             title: 'O ritmo',
-            glyph: CinematicGlyph.lamp,
+            glyph: CinematicGlyph.path,
             children: [
               Text(
                 'Quantos passos você quer dar hoje.',
@@ -1327,8 +1326,6 @@ class _RhythmTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final lanternW = steps == 1 ? 28.0 : 18.0;
-    final lanternH = steps == 1 ? 40.0 : 28.0;
 
     return GestureDetector(
       onTap: onTap,
@@ -1352,20 +1349,13 @@ class _RhythmTile extends StatelessWidget {
           children: [
             SizedBox(
               height: 40,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  for (var i = 0; i < steps; i++) ...[
-                    if (i > 0) const SizedBox(width: 4),
-                    CustomPaint(
-                      size: Size(lanternW, lanternH),
-                      painter: LanternPainter(
-                        lit: selected,
-                        color: AppColors.accent,
-                      ),
-                    ),
-                  ],
-                ],
+              width: double.infinity,
+              child: CustomPaint(
+                painter: _RhythmStationsPainter(
+                  steps: steps,
+                  lit: selected,
+                  color: AppColors.accent,
+                ),
               ),
             ),
             const SizedBox(height: 8),
@@ -1382,6 +1372,74 @@ class _RhythmTile extends StatelessWidget {
       ),
     );
   }
+}
+
+/// Estações na trilha — 1/2/3 marcos. A lanterna fica só para vidas da missão.
+class _RhythmStationsPainter extends CustomPainter {
+  final int steps;
+  final bool lit;
+  final Color color;
+
+  const _RhythmStationsPainter({
+    required this.steps,
+    required this.lit,
+    required this.color,
+  });
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final ink = lit ? color : color.withValues(alpha: 0.42);
+    final r = steps == 1 ? 6.5 : 5.0;
+    final pad = r + 6;
+    final cy = size.height * 0.55;
+
+    Offset at(int i) {
+      if (steps == 1) return Offset(size.width / 2, cy);
+      final t = i / (steps - 1);
+      return Offset(
+        pad + t * (size.width - pad * 2),
+        cy + (0.5 - t) * (size.height * 0.30),
+      );
+    }
+
+    final pts = [for (var i = 0; i < steps; i++) at(i)];
+    final spine = Path();
+    if (steps == 1) {
+      final p = pts.first;
+      spine
+        ..moveTo(p.dx - 7, p.dy + 11)
+        ..quadraticBezierTo(p.dx - 4, p.dy + 1, p.dx, p.dy)
+        ..quadraticBezierTo(p.dx + 5, p.dy - 2, p.dx + 6, p.dy - 12);
+    } else {
+      spine.moveTo(pts.first.dx, pts.first.dy);
+      for (var i = 1; i < pts.length; i++) {
+        final prev = pts[i - 1];
+        final next = pts[i];
+        final ctrl = Offset(
+          (prev.dx + next.dx) / 2,
+          (prev.dy + next.dy) / 2 - 4,
+        );
+        spine.quadraticBezierTo(ctrl.dx, ctrl.dy, next.dx, next.dy);
+      }
+    }
+
+    canvas.drawPath(
+      spine,
+      Paint()
+        ..color = ink
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = steps == 1 ? 5 : 4
+        ..strokeCap = StrokeCap.round
+        ..strokeJoin = StrokeJoin.round,
+    );
+    for (final p in pts) {
+      canvas.drawCircle(p, r, Paint()..color = ink);
+    }
+  }
+
+  @override
+  bool shouldRepaint(covariant _RhythmStationsPainter old) =>
+      old.steps != steps || old.lit != lit || old.color != color;
 }
 
 class _ModeStation extends StatelessWidget {
