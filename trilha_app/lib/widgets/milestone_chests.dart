@@ -8,18 +8,21 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
 import 'immersive_background.dart';
+import 'stage_plate.dart';
 import 'ui_primitives.dart';
 
 class MilestoneChestsCard extends StatelessWidget {
   final String trailSlug;
   final int done;
   final int total;
+  final Color? accent;
 
   const MilestoneChestsCard({
     super.key,
     required this.trailSlug,
     required this.done,
     required this.total,
+    this.accent,
   });
 
   @override
@@ -28,14 +31,16 @@ class MilestoneChestsCard extends StatelessWidget {
     final a = Appearance.of(context);
     final pct = total > 0 ? (done / total * 100) : 0.0;
 
+    final mark = accent ?? AppColors.accent;
     return Padding(
       padding: const EdgeInsets.only(bottom: AppSpace.section),
-      child: GlassCard(
-        padding: AppMetrics.cardPadding,
+      child: StagePlate(
+        accent: mark,
+        padding: const EdgeInsets.fromLTRB(18, 18, 18, 20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const CardHeader(label: 'Baús de progresso'),
+            StageEyebrow(label: 'Baús de progresso', accent: mark),
             const SizedBox(height: AppSpace.xs),
             Text(
               'Recompensas ao avançar na trilha',

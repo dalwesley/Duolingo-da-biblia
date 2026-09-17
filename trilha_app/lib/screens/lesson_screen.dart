@@ -23,6 +23,7 @@ import '../widgets/cinematic_icon.dart';
 import '../widgets/exercise_feedback_dialog.dart';
 import '../widgets/exercise_panel.dart';
 import '../widgets/lamps_bar.dart';
+import '../widgets/stage_plate.dart';
 import '../widgets/ui_primitives.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/top_bar.dart';
@@ -1087,31 +1088,8 @@ class _WitnessPlate extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final ref = (reference ?? '').trim();
-    return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.fromLTRB(22, 20, 22, 22),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
-        gradient: LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            Color.lerp(AppColors.nightElevated, accent, 0.07)!,
-            AppColors.nightElevated.withValues(alpha: 0.92),
-          ],
-        ),
-        border: Border.all(
-          color: Colors.white.withValues(alpha: 0.10),
-          width: 1,
-        ),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withValues(alpha: 0.5),
-            blurRadius: 0,
-            offset: const Offset(0, 5),
-          ),
-        ],
-      ),
+    return StagePlate(
+      accent: accent,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -1133,7 +1111,9 @@ class _WitnessPlate extends StatelessWidget {
                 return SingleChildScrollView(
                   physics: const BouncingScrollPhysics(),
                   child: ConstrainedBox(
-                    constraints: BoxConstraints(minHeight: constraints.maxHeight),
+                    constraints: BoxConstraints(
+                      minHeight: constraints.maxHeight,
+                    ),
                     child: Center(child: child),
                   ),
                 );

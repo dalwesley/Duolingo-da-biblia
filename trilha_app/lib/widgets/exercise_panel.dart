@@ -6,6 +6,7 @@ import '../models/trail.dart';
 import '../theme/app_theme.dart';
 import 'act_feel.dart';
 import 'cinematic_icon.dart';
+import 'stage_plate.dart';
 import 'ui_primitives.dart';
 
 /// Player dos micro-atos — palco direto no fundo, sem card.
@@ -1014,36 +1015,8 @@ class _Manuscript extends StatelessWidget {
     this.lit = false,
   });
 
-  BoxDecoration get _plate => BoxDecoration(
-    borderRadius: BorderRadius.circular(20),
-    gradient: LinearGradient(
-      begin: Alignment.topCenter,
-      end: Alignment.bottomCenter,
-      colors: [
-        Color.lerp(AppColors.nightElevated, accent, lit ? 0.18 : 0.07)!,
-        AppColors.nightElevated.withValues(alpha: 0.92),
-      ],
-    ),
-    border: Border.all(
-      color: lit
-          ? accent.withValues(alpha: 0.72)
-          : Colors.white.withValues(alpha: 0.10),
-      width: lit ? 1.6 : 1,
-    ),
-    boxShadow: [
-      BoxShadow(
-        color: Colors.black.withValues(alpha: 0.5),
-        blurRadius: 0,
-        offset: const Offset(0, 5),
-      ),
-      if (lit)
-        BoxShadow(
-          color: accent.withValues(alpha: 0.28),
-          blurRadius: 28,
-          spreadRadius: -6,
-        ),
-    ],
-  );
+  BoxDecoration get _plate =>
+      StagePlate.decoration(accent: accent, lit: lit);
 
   Widget _filledStage() {
     return LayoutBuilder(

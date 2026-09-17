@@ -381,6 +381,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                           trailSlug: trail.slug,
                           done: prog.done,
                           total: prog.total,
+                          accent: TrailVisuals.forTrail(trail).accent,
                         ),
                       ),
                       ...trail.modules.asMap().entries.map((entry) {

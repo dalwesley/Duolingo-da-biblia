@@ -4,6 +4,7 @@ import 'package:flutter/services.dart';
 import '../theme/app_theme.dart';
 import 'act_feel.dart';
 import 'cinematic_icon.dart';
+import 'stage_plate.dart';
 import 'ui_primitives.dart';
 
 /// Micro-modo (~20s): completar palavras do versículo — cena, alinhada ao estudo.
@@ -518,31 +519,8 @@ class _VerseStage extends StatelessWidget {
       height: 1.55,
     );
 
-    return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.fromLTRB(22, 20, 22, 22),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
-        gradient: LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            Color.lerp(AppColors.nightElevated, accent, 0.07)!,
-            AppColors.nightElevated.withValues(alpha: 0.92),
-          ],
-        ),
-        border: Border.all(
-          color: Colors.white.withValues(alpha: 0.10),
-          width: 1,
-        ),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withValues(alpha: 0.5),
-            blurRadius: 0,
-            offset: const Offset(0, 5),
-          ),
-        ],
-      ),
+    return StagePlate(
+      accent: accent,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [

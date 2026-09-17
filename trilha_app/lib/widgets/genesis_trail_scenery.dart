@@ -3,6 +3,7 @@ import '../theme/app_theme.dart';
 import '../utils/difficulty_visuals.dart';
 import '../utils/genesis_theme.dart';
 import 'ui_primitives.dart';
+import 'stage_plate.dart';
 
 /// Capítulo da trilha — cartão de título sobre o céu contínuo da tela.
 class GenesisModuleScenery extends StatelessWidget {
@@ -83,34 +84,12 @@ class _ChapterTitleCard extends StatelessWidget {
       duration: const Duration(milliseconds: 420),
       curve: Curves.easeOutCubic,
       padding: EdgeInsets.fromLTRB(
-        18,
-        highlighted ? 18 : 14,
-        18,
-        highlighted ? 18 : 14,
+        22,
+        highlighted ? 20 : 16,
+        22,
+        highlighted ? 22 : 16,
       ),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(AppRadii.lg),
-        gradient: LinearGradient(
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-          colors: [
-            Color.lerp(
-              theme.nodeCurrentBottom,
-              Colors.black,
-              0.35,
-            )!.withValues(alpha: highlighted ? 0.72 : 0.55),
-            Color.lerp(
-              theme.nodeCurrentTop,
-              theme.nodeCurrentBottom,
-              0.55,
-            )!.withValues(alpha: highlighted ? 0.55 : 0.38),
-          ],
-        ),
-        border: Border.all(
-          color: highlighted ? onSky : Colors.white.withValues(alpha: 0.12),
-          width: highlighted ? 1.6 : 1,
-        ),
-      ),
+      decoration: StagePlate.decoration(accent: accent, lit: highlighted),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -122,14 +101,9 @@ class _ChapterTitleCard extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
-                        'CENA ${_roman(sectionIndex)}',
-                        style: AppTypography.label(
-                          size: 10,
-                          weight: FontWeight.w700,
-                          letterSpacing: 2.6,
-                          color: onSky.withValues(alpha: 0.85),
-                        ),
+                      StageEyebrow(
+                        label: 'Cena ${_roman(sectionIndex)}',
+                        accent: onSky.withValues(alpha: 0.85),
                       ),
                       const SizedBox(height: AppSpace.sm),
                       Text(
@@ -173,6 +147,11 @@ class _ChapterTitleCard extends StatelessWidget {
               ],
             ),
           if (highlighted) ...[
+            StageEyebrow(
+              label: 'Cena ${_roman(sectionIndex)}',
+              accent: onSky,
+            ),
+            const SizedBox(height: 10),
             Text(
               theme.narrative,
               style: AppTypography.body(
@@ -186,10 +165,9 @@ class _ChapterTitleCard extends StatelessWidget {
             Text(
               theme.verse,
               style: AppTypography.label(
-                size: 12,
-                weight: FontWeight.w700,
-                letterSpacing: 0.3,
-                color: onSky,
+                size: 11,
+                letterSpacing: 1.2,
+                color: onSky.withValues(alpha: 0.72),
               ),
             ),
             if (total > 0) ...[

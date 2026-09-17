@@ -6,6 +6,7 @@ import '../utils/difficulty_visuals.dart';
 import '../utils/genesis_theme.dart';
 import '../utils/trail_progress.dart';
 import 'cinematic_icon.dart';
+import 'stage_plate.dart';
 
 /// Sequência editorial de cenas — tipografia no lugar de ícones de app.
 class TrailMapPath extends StatelessWidget {
@@ -259,24 +260,11 @@ class _MissionSceneCard extends StatelessWidget {
     final accent = modeAccent;
     final onSky = DifficultyVisuals.onSky(accent);
 
-    final radius = BorderRadius.circular(AppRadii.lg);
+    final radius = BorderRadius.circular(StagePlate.radius);
     final card = AnimatedContainer(
       duration: const Duration(milliseconds: 280),
       curve: Curves.easeOutCubic,
-      decoration: BoxDecoration(
-        borderRadius: radius,
-        color: unlocked
-            ? (completed ? a.cardFill.withValues(alpha: 0.72) : a.cardFill)
-            : a.cardFill.withValues(alpha: 0.55),
-        border: Border.all(
-          color: _current
-              ? onSky
-              : completed
-              ? accent.withValues(alpha: 0.28)
-              : a.cardBorder,
-          width: _current ? 1.8 : 1,
-        ),
-      ),
+      decoration: StagePlate.decoration(accent: accent, lit: _current),
       child: ClipRRect(
         borderRadius: radius,
         child: IntrinsicHeight(
@@ -291,14 +279,12 @@ class _MissionSceneCard extends StatelessWidget {
                 decoration: BoxDecoration(
                   border: Border(
                     right: BorderSide(
-                      color: a.cardBorder.withValues(
-                        alpha: unlocked ? 0.9 : 0.5,
+                      color: Colors.white.withValues(
+                        alpha: unlocked ? 0.10 : 0.06,
                       ),
                     ),
                   ),
-                  color: _current
-                      ? DifficultyVisuals.chipFill(accent, alpha: 0.28)
-                      : null,
+                  color: _current ? accent.withValues(alpha: 0.16) : null,
                 ),
                 child: Column(
                   children: [
@@ -337,19 +323,16 @@ class _MissionSceneCard extends StatelessWidget {
                     children: [
                       Row(
                         children: [
-                          Text(
-                            mission.isBoss
-                                ? 'DESAFIO'
-                                : _current
-                                ? 'PRÓXIMA LIÇÃO'
-                                : completed
-                                ? 'CONCLUÍDO'
-                                : 'PASSO',
-                            style: AppTypography.label(
-                              size: 10,
-                              weight: FontWeight.w700,
-                              letterSpacing: 1.6,
-                              color: _current
+                          Expanded(
+                            child: StageEyebrow(
+                              label: mission.isBoss
+                                  ? 'Desafio'
+                                  : _current
+                                  ? 'Próxima lição'
+                                  : completed
+                                  ? 'Concluído'
+                                  : 'Passo',
+                              accent: _current
                                   ? onSky
                                   : completed
                                   ? accent.withValues(alpha: 0.55)
