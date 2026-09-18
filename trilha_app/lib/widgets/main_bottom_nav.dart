@@ -50,15 +50,7 @@ class MainBottomNav extends StatelessWidget {
             constraints: const BoxConstraints(minHeight: 72),
             padding: const EdgeInsets.symmetric(vertical: 8),
             decoration: BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topCenter,
-                end: Alignment.bottomCenter,
-                colors: [
-                  Color.lerp(style.navBarFill, Colors.white, 0.05)!,
-                  style.navBarFill,
-                  Color.lerp(style.navBarFill, Colors.black, 0.12)!,
-                ],
-              ),
+              color: style.navBarFill,
               borderRadius: BorderRadius.circular(AppRadii.lg),
               border: Border.all(
                 color: style.navBarBorder,
@@ -83,7 +75,7 @@ class MainBottomNav extends StatelessWidget {
                       children: [
                         CinematicIcon(
                           glyph: tab.glyph,
-                          size: 32,
+                          size: 36,
                           accent: color,
                           glowing: false,
                         ),

@@ -115,7 +115,7 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
       showAppToast(
         messenger,
         message: companion.lastError ?? 'Não foi possível enviar o aceno.',
-        glyph: CinematicGlyph.echo,
+        glyph: CinematicGlyph.wrong,
         tone: AppToastTone.warn,
         bottomGap: gap,
       );
@@ -125,7 +125,7 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
     showAppToast(
       messenger,
       message: 'Aceno enviado. $_them vê ao abrir o Stway.',
-      glyph: CinematicGlyph.lamp,
+      glyph: CinematicGlyph.heart,
       bottomGap: gap,
     );
   }
@@ -224,7 +224,7 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
               const SizedBox(height: 16),
               const Center(
                 child: CinematicIcon(
-                  glyph: CinematicGlyph.lamp,
+                  glyph: CinematicGlyph.heart,
                   size: 44,
                   accent: AppColors.accent,
                   glowing: true,
@@ -280,7 +280,7 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
                 CopperCta(
                   label: 'Enviar aceno',
                   onTap: busy ? null : _sendAceno,
-                  leading: CinematicGlyph.lamp,
+                  leading: CinematicGlyph.heart,
                   trailing: null,
                   dense: true,
                   busy: _sending,
@@ -511,11 +511,9 @@ class CompanionNudgeShareCard extends StatelessWidget {
                         ),
                         boxShadow: [
                           BoxShadow(
-                            color: const Color(
-                              0xFF3A2410,
-                            ).withValues(alpha: 0.7),
-                            blurRadius: 28,
-                            spreadRadius: 4,
+                            color: Colors.black.withValues(alpha: 0.45),
+                            blurRadius: 8,
+                            offset: const Offset(0, 4),
                           ),
                         ],
                       ),

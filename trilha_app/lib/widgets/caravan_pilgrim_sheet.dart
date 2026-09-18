@@ -8,7 +8,9 @@ import '../services/backend_service.dart';
 import '../services/league_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import 'cinematic_icon.dart';
 import 'pilgrim_profile_sections.dart';
+import 'stway_brand.dart';
 
 /// Vitrine social — só para outros peregrinos da caravana.
 Future<void> showCaravanPilgrimSheet(
@@ -57,6 +59,10 @@ class _CaravanPilgrimSheetState extends State<_CaravanPilgrimSheet> {
   @override
   void initState() {
     super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      precacheImage(const AssetImage(StwayPathBackdrop.asset), context);
+    });
     _load();
   }
 
@@ -116,13 +122,8 @@ class _CaravanPilgrimSheetState extends State<_CaravanPilgrimSheet> {
           ),
           boxShadow: [
             BoxShadow(
-              color: rankColor.withValues(alpha: widget.rank <= 3 ? 0.22 : 0.08),
-              blurRadius: 36,
-              offset: const Offset(0, -12),
-            ),
-            BoxShadow(
               color: Colors.black.withValues(alpha: 0.65),
-              blurRadius: 32,
+              blurRadius: 24,
               offset: const Offset(0, -8),
             ),
           ],
@@ -266,25 +267,46 @@ class _VisitorPoster extends StatelessWidget {
       CaravanProfileSection.ranking,
       isOwner: false,
     );
+    final showTrailsStat = profile.prefs.shouldShow(
+      CaravanProfileSection.trails,
+      isOwner: false,
+    );
+    final showAccuracyStat = profile.prefs.shouldShow(
+          CaravanProfileSection.accuracy,
+          isOwner: false,
+        ) &&
+        profile.accuracyPercent != null;
+    final showStreakStat = profile.prefs.shouldShow(
+          CaravanProfileSection.presence,
+          isOwner: false,
+        ) &&
+        profile.streak > 0 &&
+        !showAccuracyStat;
+    final trailsOpen = profile.trails.where((t) => !t.isComplete).length;
 
     return Stack(
-      clipBehavior: Clip.none,
       children: [
-        Positioned(
-          left: 0,
-          right: 0,
-          top: 0,
-          height: 280,
+        const Positioned.fill(
+          child: ColoredBox(color: AppColors.night),
+        ),
+        const Positioned.fill(
+          child: StwayPathBackdrop(
+            opacity: 0.88,
+            alignment: Alignment(0, 0.28),
+          ),
+        ),
+        const Positioned.fill(
           child: DecoratedBox(
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
                 colors: [
-                  rankColor.withValues(alpha: 0.32),
-                  rankColor.withValues(alpha: 0.1),
-                  Colors.transparent,
+                  Color(0x66070B14),
+                  Color(0x22070B14),
+                  Color(0xE6070B14),
                 ],
+                stops: [0, 0.38, 1],
               ),
             ),
           ),
@@ -297,159 +319,252 @@ class _VisitorPoster extends StatelessWidget {
             AppSpace.md,
           ),
           child: Column(
+            mainAxisSize: MainAxisSize.min,
             children: [
               const _SheetDragHandle(),
-              const SizedBox(height: 14),
-              Stack(
-                clipBehavior: Clip.none,
-                children: [
-                  Positioned(
-                    right: -8,
-                    top: -20,
-                    child: Text(
-                      '$rank',
-                      style: AppTypography.display(
-                        size: rank <= 3 ? 148 : 120,
-                        weight: FontWeight.w900,
-                        color: rankColor.withValues(alpha: 0.1),
-                      ),
-                    ),
-                  ),
-                  Column(
-                    children: [
-                      Stack(
-                        clipBehavior: Clip.none,
-                        alignment: Alignment.center,
-                        children: [
-                          Container(
-                            width: 80,
-                            height: 80,
-                            decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              gradient: LinearGradient(
-                                colors: [
-                                  Colors.white.withValues(alpha: 0.32),
-                                  AppColors.nightMid,
-                                ],
-                              ),
-                              border: Border.all(
-                                color: entry.isOnlineToday
-                                    ? AppColors.teal
-                                    : rankColor.withValues(alpha: 0.85),
-                                width: 2.5,
-                              ),
-                            ),
-                            child: Center(
-                              child: Text(
-                                initial,
-                                style: AppTypography.display(
-                                  size: 32,
-                                  color: a.text,
-                                ),
-                              ),
-                            ),
-                          ),
-                          Positioned(
-                            right: -6,
-                            bottom: -4,
-                            child: Container(
-                              padding: const EdgeInsets.symmetric(
-                                horizontal: 10,
-                                vertical: 5,
-                              ),
+              const SizedBox(height: 12),
+              _TopoPanel(
+                padding: const EdgeInsets.fromLTRB(14, 12, 14, 10),
+                child: Column(
+                  children: [
+                    Row(
+                      children: [
+                        Stack(
+                          clipBehavior: Clip.none,
+                          children: [
+                            Container(
+                              width: 52,
+                              height: 52,
                               decoration: BoxDecoration(
-                                gradient:
-                                    rank <= 3 ? AppGradients.gold : null,
-                                color: rank > 3 ? rankColor : null,
-                                borderRadius:
-                                    BorderRadius.circular(AppRadii.pill),
+                                shape: BoxShape.circle,
+                                color: AppColors.nightMid,
                                 border: Border.all(
-                                  color: AppColors.night,
+                                  color: entry.isOnlineToday
+                                      ? AppColors.teal
+                                      : rankColor.withValues(alpha: 0.9),
                                   width: 2,
                                 ),
                               ),
-                              child: Text(
-                                '$rankº',
-                                style: AppTypography.label(
-                                  size: 11,
-                                  letterSpacing: 0.4,
-                                  color: rank <= 3
-                                      ? AppColors.inkOnAccent
-                                      : AppColors.night,
+                              child: Center(
+                                child: Text(
+                                  initial,
+                                  style: AppTypography.display(
+                                    size: 22,
+                                    color: a.text,
+                                  ),
                                 ),
                               ),
                             ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 16),
-                      Text(
-                        pilgrimRankEpithet(rank).toUpperCase(),
-                        style: AppTypography.label(
-                          size: 10,
-                          letterSpacing: 1.8,
-                          color: rankColor,
-                        ),
-                      ),
-                      const SizedBox(height: 6),
-                      Text(
-                        profile.name,
-                        textAlign: TextAlign.center,
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                        style: AppTypography.display(
-                          size: 26,
-                          weight: FontWeight.w900,
-                          color: a.text,
-                        ),
-                      ),
-                      if (showStats) ...[
-                        const SizedBox(height: 18),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.baseline,
-                          textBaseline: TextBaseline.alphabetic,
-                          children: [
-                            Text(
-                              '${profile.steps}',
-                              style: AppTypography.display(
-                                size: 44,
-                                weight: FontWeight.w900,
-                                color: AppColors.accent,
-                              ),
-                            ),
-                            const SizedBox(width: 6),
-                            Flexible(
-                              child: Text(
-                                weeklySteps
-                                    ? 'passos nesta semana'
-                                    : 'passos na jornada',
-                                style: AppTypography.body(
-                                  size: 13,
-                                  weight: FontWeight.w700,
-                                  color: a.textMuted(0.62),
+                            Positioned(
+                              right: -6,
+                              bottom: -4,
+                              child: Container(
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal: 7,
+                                  vertical: 2,
+                                ),
+                                decoration: BoxDecoration(
+                                  gradient:
+                                      rank <= 3 ? AppGradients.gold : null,
+                                  color: rank > 3 ? rankColor : null,
+                                  borderRadius:
+                                      BorderRadius.circular(AppRadii.pill),
+                                  border: Border.all(
+                                    color: AppColors.night,
+                                    width: 2,
+                                  ),
+                                ),
+                                child: Text(
+                                  '$rankº',
+                                  style: AppTypography.label(
+                                    size: 9,
+                                    letterSpacing: 0.3,
+                                    color: rank <= 3
+                                        ? AppColors.inkOnAccent
+                                        : AppColors.night,
+                                  ),
                                 ),
                               ),
                             ),
                           ],
                         ),
-                        if (profile.missionsCompleted > 0) ...[
-                          const SizedBox(height: 6),
-                          Text(
-                            '${profile.missionsCompleted} cenas concluídas',
-                            style: AppTypography.body(
-                              size: 12,
-                              weight: FontWeight.w700,
-                              color: a.textMuted(0.55),
+                        const SizedBox(width: 12),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                pilgrimRankEpithet(rank).toUpperCase(),
+                                style: AppTypography.label(
+                                  size: 10,
+                                  letterSpacing: 1.4,
+                                  color: rankColor,
+                                ),
+                              ),
+                              const SizedBox(height: 2),
+                              Text(
+                                profile.name,
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: AppTypography.display(
+                                  size: 22,
+                                  weight: FontWeight.w900,
+                                  color: a.text,
+                                ),
+                              ),
+                              const SizedBox(height: 2),
+                              Text(
+                                'Um passo. Uma jornada.',
+                                style: AppTypography.body(
+                                  size: 12,
+                                  height: 1.2,
+                                  color: a.textMuted(0.62),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                    if (showStats) ...[
+                      const SizedBox(height: 12),
+                      Divider(
+                        height: 1,
+                        thickness: 1,
+                        color: Colors.white.withValues(alpha: 0.08),
+                      ),
+                      const SizedBox(height: 10),
+                      Row(
+                        children: [
+                          Expanded(
+                            child: _PosterStat(
+                              glyph: CinematicGlyph.path,
+                              value: pilgrimFormatCount(profile.steps),
+                              label: weeklySteps
+                                  ? 'Na semana'
+                                  : 'Passos na Palavra',
                             ),
                           ),
+                          Expanded(
+                            child: _PosterStat(
+                              glyph: CinematicGlyph.scroll,
+                              value: '${profile.missionsCompleted}',
+                              label: profile.missionsCompleted == 1
+                                  ? 'Cena concluída'
+                                  : 'Cenas concluídas',
+                            ),
+                          ),
+                          if (showTrailsStat)
+                            Expanded(
+                              child: _PosterStat(
+                                glyph: CinematicGlyph.book,
+                                value: '$trailsOpen',
+                                label: trailsOpen == 1
+                                    ? 'Trilha em andamento'
+                                    : 'Trilhas em andamento',
+                              ),
+                            ),
+                          if (showAccuracyStat)
+                            Expanded(
+                              child: _PosterStat(
+                                glyph: CinematicGlyph.target,
+                                value: '${profile.accuracyPercent}%',
+                                label: 'Precisão',
+                              ),
+                            )
+                          else if (showStreakStat)
+                            Expanded(
+                              child: _PosterStat(
+                                glyph: CinematicGlyph.flame,
+                                value: '${profile.streak}',
+                                label: profile.streak == 1
+                                    ? 'Dia seguido'
+                                    : 'Dias seguidos',
+                              ),
+                            ),
                         ],
-                      ],
+                      ),
                     ],
-                  ),
-                ],
+                  ],
+                ),
               ),
             ],
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class _TopoPanel extends StatelessWidget {
+  final Widget child;
+  final EdgeInsetsGeometry padding;
+
+  const _TopoPanel({
+    required this.child,
+    required this.padding,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return DecoratedBox(
+      decoration: BoxDecoration(
+        color: AppColors.night.withValues(alpha: 0.62),
+        borderRadius: BorderRadius.circular(AppRadii.lg),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.1)),
+      ),
+      child: Padding(
+        padding: padding,
+        child: child,
+      ),
+    );
+  }
+}
+
+class _PosterStat extends StatelessWidget {
+  final CinematicGlyph glyph;
+  final String value;
+  final String label;
+
+  const _PosterStat({
+    required this.glyph,
+    required this.value,
+    required this.label,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Column(
+      children: [
+        CinematicIcon(
+          glyph: glyph,
+          size: 14,
+          accent: AppColors.accent.withValues(alpha: 0.9),
+          framed: false,
+        ),
+        const SizedBox(height: 4),
+        Text(
+          value,
+          textAlign: TextAlign.center,
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          style: AppTypography.display(
+            size: 16,
+            weight: FontWeight.w900,
+            color: AppColors.accent,
+          ),
+        ),
+        const SizedBox(height: 2),
+        Text(
+          label.toUpperCase(),
+          textAlign: TextAlign.center,
+          maxLines: 2,
+          overflow: TextOverflow.ellipsis,
+          style: AppTypography.label(
+            size: 7,
+            letterSpacing: 0.3,
+            color: a.textMuted(0.5),
           ),
         ),
       ],

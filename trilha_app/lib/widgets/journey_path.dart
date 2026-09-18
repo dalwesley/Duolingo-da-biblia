@@ -659,8 +659,7 @@ class _QuietStation extends StatelessWidget {
                     ),
                   ),
                   if (!isLocked)
-                    Icon(
-                      Icons.chevron_right_rounded,
+                    ListChevron(
                       color: Colors.white.withValues(alpha: 0.28),
                     ),
                 ],

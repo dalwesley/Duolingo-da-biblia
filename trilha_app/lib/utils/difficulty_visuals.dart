@@ -32,13 +32,7 @@ class DifficultyVisuals {
   };
 
   /// Texto/ícone no céu — ouro/coral/orquídea já puncionam; outros sobem.
-  static Color onSky(Color accent) {
-    if (AppColors.isSolidChrome(accent)) return accent;
-    final l = accent.computeLuminance();
-    if (l >= _goldLuminance) return accent;
-    final t = ((_goldLuminance - l) * 0.9).clamp(0.0, 0.28);
-    return Color.lerp(accent, Colors.white, t)!;
-  }
+  static Color onSky(Color accent) => AppColors.glyphInk(accent);
 
   /// Wash de chip/card — compensa acentos mais escuros que o ouro.
   static Color chipFill(Color accent, {double alpha = 0.40}) {

@@ -14,19 +14,23 @@ class LivingSeedCard extends StatelessWidget {
   final bool perfectRecent;
   final bool compact;
 
+  /// Se informado, usa este streak (perfil da caravana) em vez do progresso local.
+  final int? streak;
+
   const LivingSeedCard({
     super.key,
     this.perfectRecent = false,
     this.compact = false,
+    this.streak,
   });
 
   CinematicGlyph _glyph(GrowthStage stage) {
     return switch (stage) {
       GrowthStage.seed => CinematicGlyph.seed,
-      GrowthStage.sprout => CinematicGlyph.spark,
+      GrowthStage.sprout => CinematicGlyph.sprout,
       GrowthStage.branch => CinematicGlyph.rise,
       GrowthStage.tree => CinematicGlyph.tree,
-      GrowthStage.fruit => CinematicGlyph.sun,
+      GrowthStage.fruit => CinematicGlyph.gem,
     };
   }
 
@@ -51,20 +55,24 @@ class LivingSeedCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final progress = context.watch<ProgressService>();
-    final growth = SpiritualGrowth.fromSignals(
-      streak: progress.streak,
-      atRisk: progress.isStreakAtRisk,
-      freezeAvailable: progress.streakFreezeAvailable,
-      perfectRecent: perfectRecent,
-    );
-    if (compact) return _compact(context, progress, growth);
-    return _profile(context, progress, growth);
+    final SpiritualGrowth growth;
+    if (streak != null) {
+      growth = SpiritualGrowth.fromStreak(streak!);
+    } else {
+      final progress = context.watch<ProgressService>();
+      growth = SpiritualGrowth.fromSignals(
+        streak: progress.streak,
+        atRisk: progress.isStreakAtRisk,
+        freezeAvailable: progress.streakFreezeAvailable,
+        perfectRecent: perfectRecent,
+      );
+    }
+    if (compact) return _compact(context, growth);
+    return _profile(context, growth);
   }
 
   Widget _compact(
     BuildContext context,
-    ProgressService progress,
     SpiritualGrowth growth,
   ) {
     final a = Appearance.of(context);
@@ -106,12 +114,12 @@ class LivingSeedCard extends StatelessWidget {
               ],
             ),
           ),
-          if (progress.streak > 0)
+          if (growth.streak > 0)
             Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 Text(
-                  '${progress.streak}',
+                  '${growth.streak}',
                   style: AppTypography.display(
                     size: 22,
                     weight: FontWeight.w900,
@@ -120,7 +128,7 @@ class LivingSeedCard extends StatelessWidget {
                   ),
                 ),
                 Text(
-                  progress.streak == 1 ? 'dia' : 'dias',
+                  growth.streak == 1 ? 'dia' : 'dias',
                   style: AppTypography.label(
                     size: 10,
                     color: a.textMuted(0.55),
@@ -135,7 +143,6 @@ class LivingSeedCard extends StatelessWidget {
 
   Widget _profile(
     BuildContext context,
-    ProgressService progress,
     SpiritualGrowth growth,
   ) {
     final a = Appearance.of(context);
@@ -197,7 +204,7 @@ class LivingSeedCard extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.end,
                 children: [
                   Text(
-                    '${progress.streak}',
+                    '${growth.streak}',
                     style: AppTypography.display(
                       size: 26,
                       weight: FontWeight.w900,
@@ -206,7 +213,7 @@ class LivingSeedCard extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    progress.streak == 1 ? 'dia' : 'dias',
+                    growth.streak == 1 ? 'dia' : 'dias',
                     style: AppTypography.label(
                       size: 10,
                       color: a.textMuted(0.55),

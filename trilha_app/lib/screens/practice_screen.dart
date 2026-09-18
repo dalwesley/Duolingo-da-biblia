@@ -118,7 +118,7 @@ class _PracticeScreenState extends State<PracticeScreen> {
                       title: 'Revisitar',
                       subtitle: 'Reforce as passagens',
                       onBack: () => Navigator.pop(context),
-                      leadingGlyph: CinematicGlyph.echo,
+                      leadingGlyph: CinematicGlyph.refresh,
                       chromeAccent: AppColors.clay,
                     ),
                   ),
@@ -130,7 +130,7 @@ class _PracticeScreenState extends State<PracticeScreen> {
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             const CinematicIcon(
-                              glyph: CinematicGlyph.echo,
+                              glyph: CinematicGlyph.refresh,
                               size: 56,
                               accent: AppColors.accent,
                               glowing: false,

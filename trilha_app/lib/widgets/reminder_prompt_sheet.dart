@@ -48,9 +48,9 @@ class _ReminderPromptSheet extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           const CinematicIcon(
-            glyph: CinematicGlyph.mail,
+            glyph: CinematicGlyph.bell,
             size: 56,
-            accent: AppColors.streak,
+            accent: AppColors.accent,
             glowing: false,
           ),
           const SizedBox(height: 14),
@@ -58,18 +58,18 @@ class _ReminderPromptSheet extends StatelessWidget {
             'O PEREGRINO',
             style: AppTypography.label(
               letterSpacing: 1.5,
-              color: AppColors.streak.withValues(alpha: 0.85),
+              color: AppColors.accent.withValues(alpha: 0.85),
             ),
           ),
           const SizedBox(height: 6),
           Text(
-            'Quer proteger a sequência?',
+            'Podemos proteger sua sequência!',
             textAlign: TextAlign.center,
             style: AppTypography.title(size: 20, color: a.text),
           ),
           const SizedBox(height: 8),
           Text(
-            'Um aviso amanhã, na hora certa — antes da chama se apagar. Você muda isso quando quiser em Ajustes.',
+            'Se quiser, te avisamos antes da caminhada falhar. Assim você não perde a sequência e segue firme.',
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 14,
@@ -78,9 +78,20 @@ class _ReminderPromptSheet extends StatelessWidget {
               color: a.textMuted(0.72),
             ),
           ),
+          const SizedBox(height: 8),
+          Text(
+            'Dá para desligar em Ajustes.',
+            textAlign: TextAlign.center,
+            style: AppTypography.body(
+              size: 12,
+              height: 1.3,
+              weight: FontWeight.w600,
+              color: a.textMuted(0.5),
+            ),
+          ),
           const SizedBox(height: 20),
           CopperCta(
-            label: 'Proteger sequência',
+            label: 'Ativar lembrete',
             onTap: () {
               HapticFeedback.mediumImpact();
               Navigator.of(context).pop(true);

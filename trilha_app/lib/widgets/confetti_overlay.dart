@@ -30,11 +30,10 @@ class _ConfettiOverlayState extends State<ConfettiOverlay>
     final count = widget.cinematic ? 56 : 36;
     final palette = [
       AppColors.accent,
-      AppColors.accentBright,
-      AppColors.primaryLight,
+      AppColors.accentDark,
+      AppColors.primary,
       AppColors.teal,
       AppColors.streak,
-      Colors.white,
       AppColors.sand,
     ];
     _particles = List.generate(count, (i) {

@@ -37,22 +37,22 @@ class TrailVisuals {
   static TrailVisuals _byCategory(String categoryId, String hexColor) {
     final accent = _parseColor(hexColor) ?? AppColors.primaryLight;
     return switch (categoryId) {
-      'pentateuco' => _palette(CinematicGlyph.book, AppColors.primaryLight, AppColors.primary),
-      'historicos-at' => _palette(CinematicGlyph.shield, AppColors.cedar, AppColors.cedarDeep),
+      'pentateuco' => _palette(CinematicGlyph.book, AppColors.sand, AppColors.sandDeep),
+      'historicos-at' => _palette(CinematicGlyph.shield, AppColors.sand, AppColors.sandDeep),
       'poeticos' => _palette(CinematicGlyph.dove, AppColors.sand, AppColors.sandDeep),
-      'profetas-maiores' => _palette(CinematicGlyph.spark, AppColors.slate, AppColors.slateDeep),
-      'profetas-menores' => _palette(CinematicGlyph.star, AppColors.slate, AppColors.slateDeep),
-      'intertestamentario' => _palette(CinematicGlyph.calendar, AppColors.slate, AppColors.slateDeep),
+      'profetas-maiores' => _palette(CinematicGlyph.spark, AppColors.ember, AppColors.emberDeep),
+      'profetas-menores' => _palette(CinematicGlyph.star, AppColors.sand, AppColors.sandDeep),
+      'intertestamentario' => _palette(CinematicGlyph.calendar, AppColors.sand, AppColors.sandDeep),
       'evangelhos' => _palette(CinematicGlyph.heart, AppColors.clay, AppColors.clayDeep),
       'historicos-nt' => _palette(CinematicGlyph.flame, AppColors.ember, AppColors.emberDeep),
       'epistolas' => _palette(CinematicGlyph.mail, AppColors.clay, AppColors.clayDeep),
       'apocalipse' => _palette(CinematicGlyph.crown, AppColors.ember, AppColors.emberDeep),
-      'discipulado' => _palette(CinematicGlyph.seed, AppColors.teal, AppColors.cedarDeep),
-      'oracao' => _palette(CinematicGlyph.dove, AppColors.sand, AppColors.primaryDark),
+      'discipulado' => _palette(CinematicGlyph.seed, AppColors.accent, AppColors.accentDark),
+      'oracao' => _palette(CinematicGlyph.dove, AppColors.sand, AppColors.sandDeep),
       'historia-igreja' => _palette(CinematicGlyph.tower, AppColors.sand, AppColors.sandDeep),
-      'hermeneutica' => _palette(CinematicGlyph.search, AppColors.slate, AppColors.slateDeep),
+      'hermeneutica' => _palette(CinematicGlyph.search, AppColors.sand, AppColors.sandDeep),
       'linguas' => _palette(CinematicGlyph.scroll, AppColors.sand, AppColors.sandDeep),
-      'sistematica' => _palette(CinematicGlyph.scroll, AppColors.slate, AppColors.slateDeep),
+      'sistematica' => _palette(CinematicGlyph.scroll, AppColors.sand, AppColors.sandDeep),
       'cristologia' => _palette(CinematicGlyph.heart, AppColors.clay, AppColors.clayDeep),
       _ => _palette(CinematicGlyph.book, accent, AppColors.primary),
     };
@@ -79,8 +79,8 @@ class TrailVisuals {
   }
 
   static final Map<String, TrailVisuals> _bySlug = {
-    'genesis-1-11': _palette(CinematicGlyph.book, AppColors.primaryLight, AppColors.primary),
-    'exodo': _palette(CinematicGlyph.mountain, AppColors.primaryLight, AppColors.cedarDeep),
+    'genesis-1-11': _palette(CinematicGlyph.book, AppColors.accent, AppColors.accentDark),
+    'exodo': _palette(CinematicGlyph.mountain, AppColors.sand, AppColors.sandDeep),
     'evangelhos': _palette(CinematicGlyph.heart, AppColors.clay, AppColors.clayDeep),
     'atos': _palette(CinematicGlyph.flame, AppColors.ember, AppColors.emberDeep),
     'apocalipse': _palette(CinematicGlyph.crown, AppColors.ember, AppColors.emberDeep),

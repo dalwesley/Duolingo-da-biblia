@@ -508,8 +508,7 @@ class _ActivePlanBody extends StatelessWidget {
                               ),
                             ),
                             const SizedBox(width: 4),
-                            Icon(
-                              Icons.chevron_right_rounded,
+                            ListChevron(
                               size: 18,
                               color: Colors.white.withValues(alpha: 0.28),
                             ),
@@ -593,7 +592,7 @@ class _OrderToggle extends StatelessWidget {
       ),
       child: Row(
         children: [
-          for (final o in BibleReadingOrder.values)
+          for (final o in BibleReadingOrder.planOrders)
             Expanded(
               child: AppSelectChip(
                 label: o.shortLabel,

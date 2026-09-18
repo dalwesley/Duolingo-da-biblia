@@ -135,7 +135,7 @@ class HomePlayerHeader extends StatelessWidget {
                     glyph: CinematicGlyph.check,
                     accent: progress.dailyGoalMet
                         ? AppColors.accent
-                        : AppColors.primaryLight,
+                        : AppColors.sand,
                     label: '$done/$goal',
                     hint: 'meta',
                   ),
@@ -145,8 +145,8 @@ class HomePlayerHeader extends StatelessWidget {
                   child: _Stat(
                     glyph: CinematicGlyph.frost,
                     accent: progress.streakFreezeAvailable
-                        ? AppColors.ice
-                        : a.textMuted(0.45),
+                        ? AppColors.iceSoft
+                        : a.textMuted(0.55),
                     label: progress.streakFreezeAvailable ? '1' : '0',
                     hint: progress.streakFreezeAvailable ? 'gelo' : 'usado',
                   ),
@@ -239,7 +239,7 @@ class _Stat extends StatelessWidget {
           children: [
             CinematicIcon(
               glyph: glyph,
-              size: 14,
+              size: 16,
               accent: accent,
               glowing: false,
               framed: false,

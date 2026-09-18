@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:share_plus/share_plus.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import 'cinematic_icon.dart';
 
 /// Compartilhar a sequência — funciona mesmo com streak 0.
 class ShareStreakButton extends StatelessWidget {
@@ -64,10 +65,11 @@ Baixe o Stway e venha junto.
             child: SizedBox(
               width: 36,
               height: 36,
-              child: Icon(
-                Icons.ios_share_rounded,
+              child: CinematicIcon(
+                glyph: CinematicGlyph.share,
                 size: 18,
-                color: a.text.withValues(alpha: 0.72),
+                accent: a.text.withValues(alpha: 0.72),
+                framed: false,
               ),
             ),
           ),
@@ -87,10 +89,11 @@ Baixe o Stway e venha junto.
         child: Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Icon(
-              Icons.ios_share_rounded,
+            const CinematicIcon(
+              glyph: CinematicGlyph.share,
               size: 16,
-              color: AppColors.streak,
+              accent: AppColors.streak,
+              framed: false,
             ),
             const SizedBox(width: AppSpace.sm),
             Text(

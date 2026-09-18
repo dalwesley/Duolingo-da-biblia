@@ -610,7 +610,7 @@ class _LeagueScreenState extends State<LeagueScreen>
       showAppToastFor(
         context,
         message: service.lastError ?? 'Falha ao criar',
-        glyph: CinematicGlyph.echo,
+        glyph: CinematicGlyph.wrong,
         tone: AppToastTone.warn,
       );
       return;
@@ -651,7 +651,7 @@ class _LeagueScreenState extends State<LeagueScreen>
       showAppToastFor(
         context,
         message: service.lastError ?? 'Não foi possível entrar',
-        glyph: CinematicGlyph.echo,
+        glyph: CinematicGlyph.wrong,
         tone: AppToastTone.warn,
       );
       return;
@@ -815,7 +815,7 @@ class _LeagueScreenState extends State<LeagueScreen>
               message: ok
                   ? 'Baú da sala · +$bonus passos'
                   : 'Baú já coletado nesta semana',
-              glyph: ok ? CinematicGlyph.gem : CinematicGlyph.echo,
+              glyph: ok ? CinematicGlyph.gift : CinematicGlyph.wrong,
               tone: ok ? AppToastTone.accent : AppToastTone.warn,
             );
           },
@@ -995,7 +995,7 @@ class _SegmentTabs extends StatelessWidget {
       child: Row(
         children: [
           _seg(context, 0, 'Caravana', CinematicGlyph.podium),
-          _seg(context, 1, 'Companhia', CinematicGlyph.path, alert: companionAlert),
+          _seg(context, 1, 'Companhia', CinematicGlyph.heart, alert: companionAlert),
           _seg(context, 2, 'Salas', CinematicGlyph.people),
         ],
       ),
@@ -1011,7 +1011,7 @@ class _SegmentTabs extends StatelessWidget {
   }) {
     final selected = index == i;
     final a = Appearance.of(context);
-    final color = selected ? AppColors.accent : a.textMuted(0.55);
+    final color = selected ? AppColors.accent : a.textMuted(0.72);
     return Expanded(
       child: Material(
         color: Colors.transparent,
@@ -1138,9 +1138,9 @@ class _RoomsOfflineCard extends StatelessWidget {
       child: Column(
         children: [
           const CinematicIcon(
-            glyph: CinematicGlyph.path,
+            glyph: CinematicGlyph.people,
             size: 40,
-            accent: AppColors.accent,
+            accent: AppColors.clay,
             glowing: false,
           ),
           const SizedBox(height: 14),
@@ -1344,8 +1344,8 @@ class _RoomBenefit extends StatelessWidget {
           children: [
             CinematicIcon(
               glyph: glyph,
-              size: 16,
-              accent: AppColors.accent.withValues(alpha: 0.9),
+              size: 20,
+              accent: AppColors.accent,
               framed: false,
             ),
             const SizedBox(height: 5),
@@ -1661,7 +1661,7 @@ class _RoomHeader extends StatelessWidget {
               ),
               const SizedBox(width: 10),
               _RoomIconButton(
-                glyph: CinematicGlyph.echo,
+                glyph: CinematicGlyph.refresh,
                 label: 'Atualizar',
                 onTap: onRefresh,
               ),
@@ -2022,7 +2022,7 @@ class _LeaderboardBoard extends StatelessWidget {
     final a = Appearance.of(context);
     final heading = title ??
         (weekly ? 'Esta semana' : 'Toda a jornada');
-    final today = entries.where((e) => e.walkedToday).toList();
+    final online = entries.where((e) => e.isOnlineToday).toList();
     final rows = <Widget>[
       Padding(
         padding: const EdgeInsets.fromLTRB(14, 2, 10, 8),
@@ -2037,10 +2037,10 @@ class _LeaderboardBoard extends StatelessWidget {
               ),
             ),
             const Spacer(),
-            if (today.isNotEmpty) ...[
+            if (online.isNotEmpty) ...[
               _AvatarCluster(
                 people: [
-                  for (final e in today.take(5))
+                  for (final e in online.take(5))
                     (
                       name: e.name,
                       isUser: e.isUser,
@@ -2050,15 +2050,29 @@ class _LeaderboardBoard extends StatelessWidget {
                 size: 22,
               ),
               const SizedBox(width: 8),
+            ] else ...[
+              Container(
+                width: 8,
+                height: 8,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: AppColors.teal.withValues(alpha: 0.35),
+                ),
+              ),
+              const SizedBox(width: 6),
             ],
             Text(
-              today.isEmpty
-                  ? '${entries.length}'
-                  : '${today.length} hoje',
+              online.isEmpty
+                  ? '0 online'
+                  : online.length == 1
+                      ? '1 online'
+                      : '${online.length} online',
               style: AppTypography.label(
                 size: 10,
                 letterSpacing: 0,
-                color: a.textMuted(0.5),
+                color: online.isEmpty
+                    ? a.textMuted(0.45)
+                    : AppColors.teal.withValues(alpha: 0.9),
               ),
             ),
           ],
@@ -2129,10 +2143,6 @@ class _StandingRow extends StatelessWidget {
     this.onOpenOwnProfile,
   });
 
-  Color _ink(AppearanceStyle a) {
-    return entry.isUser ? AppColors.inkOnAccent : a.text;
-  }
-
   Color _stepsTone(AppearanceStyle a, Color? medal) {
     if (entry.isUser) return AppColors.inkOnAccent;
     if (medal != null) return medal;
@@ -2143,6 +2153,11 @@ class _StandingRow extends StatelessWidget {
     if (rank == 1) return 'líder';
     if (gapToAbove <= 0) return 'empate';
     return '$gapToAbove do ${rank - 1}º';
+  }
+
+  String? get _presenceShort {
+    if (entry.walkedToday) return 'hoje';
+    return LeagueEntry.formatShortBrDate(entry.lastWalkDate);
   }
 
   @override
@@ -2158,6 +2173,10 @@ class _StandingRow extends StatelessWidget {
     final muted = entry.isUser
         ? AppColors.inkOnAccent.withValues(alpha: 0.62)
         : a.textMuted(0.5);
+    final presence = _presenceShort;
+
+    final ink = entry.isUser ? AppColors.inkOnAccent : a.text;
+    final live = entry.walkedToday || entry.isOnlineToday;
 
     final content = Row(
       crossAxisAlignment: CrossAxisAlignment.center,
@@ -2167,9 +2186,10 @@ class _StandingRow extends StatelessWidget {
         _PilgrimAvatar(
           name: entry.name,
           isUser: entry.isUser,
-          live: entry.walkedToday || entry.isOnlineToday,
+          live: live,
           size: 40,
           ring: medal,
+          onGold: entry.isUser,
         ),
         const SizedBox(width: 12),
         Expanded(
@@ -2177,35 +2197,19 @@ class _StandingRow extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                entry.isUser ? '${entry.name} (você)' : entry.name,
+                entry.name,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: AppTypography.body(
-                  size: 14,
+                  size: 15,
                   weight: entry.isUser ? FontWeight.w900 : FontWeight.w700,
-                  color: _ink(a),
+                  color: ink,
                 ),
               ),
-              if (entry.isUser && !weeklySteps)
-                const _UserMedalBadge()
-              else if (entry.activitySummary != null)
+              if (!weeklySteps)
                 Padding(
-                  padding: const EdgeInsets.only(top: 1),
-                  child: Text(
-                    entry.activitySummary!,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: AppTypography.label(
-                      size: 10,
-                      letterSpacing: 0,
-                      weight: FontWeight.w700,
-                      color: entry.isUser
-                          ? muted
-                          : entry.walkedToday
-                          ? AppColors.teal.withValues(alpha: 0.95)
-                          : muted,
-                    ),
-                  ),
+                  padding: const EdgeInsets.only(top: 4),
+                  child: _StandingMedalLine(entry: entry),
                 ),
             ],
           ),
@@ -2218,59 +2222,67 @@ class _StandingRow extends StatelessWidget {
             Text(
               '${entry.steps}',
               style: AppTypography.title(
-                size: 16,
+                size: 17,
                 weight: FontWeight.w900,
                 color: stepsTone,
               ),
             ),
-            Text(
-              _gapLabel,
-              style: AppTypography.label(
-                size: 9,
-                letterSpacing: 0.2,
-                color: muted,
+            if (weeklySteps)
+              Text(
+                _gapLabel,
+                style: AppTypography.label(
+                  size: 10,
+                  letterSpacing: 0.2,
+                  color: muted,
+                ),
+              )
+            else if (presence != null)
+              Text(
+                presence,
+                style: AppTypography.label(
+                  size: 10,
+                  letterSpacing: 0.2,
+                  weight: FontWeight.w800,
+                  color: entry.isUser
+                      ? muted
+                      : entry.walkedToday
+                      ? AppColors.teal.withValues(alpha: 0.95)
+                      : muted,
+                ),
               ),
-            ),
           ],
         ),
       ],
     );
 
-    final row = entry.isUser
-        ? Container(
-            margin: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
-            padding: const EdgeInsets.fromLTRB(10, 11, 12, 11),
-            decoration: BoxDecoration(
-              gradient: AppGradients.gold,
-              borderRadius: BorderRadius.circular(AppRadii.md),
-              border: Border.all(
-                color: Colors.white.withValues(alpha: 0.5),
-                width: 1.5,
-              ),
+    final row = Column(
+      children: [
+        Container(
+          margin: const EdgeInsets.symmetric(horizontal: 2, vertical: 2),
+          padding: const EdgeInsets.fromLTRB(8, 12, 10, 12),
+          decoration: BoxDecoration(
+            gradient: entry.isUser ? AppGradients.gold : null,
+            color: entry.isUser ? null : medal?.withValues(alpha: 0.07),
+            borderRadius: BorderRadius.circular(AppRadii.md),
+            border: entry.isUser
+                ? Border.all(
+                    color: Colors.white.withValues(alpha: 0.45),
+                    width: 1.4,
+                  )
+                : null,
+          ),
+          child: content,
+        ),
+        if (showDivider)
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 14),
+            child: ColoredBox(
+              color: a.text.withValues(alpha: 0.06),
+              child: const SizedBox(height: 1, width: double.infinity),
             ),
-            child: content,
-          )
-        : Column(
-            children: [
-              Container(
-                margin: const EdgeInsets.symmetric(horizontal: 2),
-                padding: const EdgeInsets.fromLTRB(8, 11, 10, 11),
-                decoration: BoxDecoration(
-                  color: medal?.withValues(alpha: 0.07),
-                  borderRadius: BorderRadius.circular(AppRadii.md),
-                ),
-                child: content,
-              ),
-              if (showDivider)
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 14),
-                  child: ColoredBox(
-                    color: a.text.withValues(alpha: 0.06),
-                    child: const SizedBox(height: 1, width: double.infinity),
-                  ),
-                ),
-            ],
-          );
+          ),
+      ],
+    );
 
     return Material(
       color: Colors.transparent,
@@ -2294,76 +2306,142 @@ class _StandingRow extends StatelessWidget {
   }
 }
 
-/// Medalhas raras na linha do usuário — só no ranking geral da jornada.
-class _UserMedalBadge extends StatelessWidget {
-  const _UserMedalBadge();
+/// Só os discos — o ouro já conta as medalhas, sem “2 raras”.
+class _StandingMedalLine extends StatelessWidget {
+  final LeagueEntry entry;
+
+  const _StandingMedalLine({required this.entry});
 
   @override
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
-    final uid = context.read<BackendService>().uid ?? '';
+    final backend = context.read<BackendService>();
+    final uid = entry.isUser ? (backend.uid ?? '') : (entry.uid ?? '');
 
-    return FutureBuilder<List<Object>>(
-      future: Future.wait<Object>([
-        MedalEngagementService.unlockedRareMedalsCached(progress, uid),
-        MedalEngagementService.unlockedCountCached(progress, uid),
-      ]),
+    return FutureBuilder<({List<PilgrimMedalDef> rares, int total})>(
+      future: MedalEngagementService.standingMedalsCached(
+        isUser: entry.isUser,
+        uid: uid,
+        name: entry.name,
+        progress: progress,
+        backend: backend,
+      ),
       builder: (context, snapshot) {
-        final rares = snapshot.data?[0] as List<PilgrimMedalDef>? ?? const [];
-        final total = snapshot.data?[1] as int? ?? 0;
+        final rares = snapshot.data?.rares ?? const <PilgrimMedalDef>[];
+        final total = snapshot.data?.total ?? 0;
         if (rares.isEmpty && total <= 0) return const SizedBox.shrink();
 
         final shown = rares.take(3).toList();
         final extraRares = rares.length - shown.length;
-        const label = AppColors.inkOnAccent;
 
-        return Padding(
-          padding: const EdgeInsets.only(top: 3),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              if (shown.isEmpty)
-                const CinematicIcon(
-                  glyph: CinematicGlyph.gem,
-                  size: 16,
-                  accent: AppColors.medalGold,
-                  framed: false,
-                ),
-              for (final def in shown) ...[
-                CinematicIcon(
-                  glyph: def.glyph,
-                  size: 16,
-                  accent: MedalEngagementService.tierColor(def.tier),
-                  framed: false,
-                ),
-                const SizedBox(width: 3),
-              ],
-              if (extraRares > 0) ...[
-                Text(
-                  '+$extraRares',
-                  style: AppTypography.label(
-                    size: 9,
-                    letterSpacing: 0.2,
-                    color: label.withValues(alpha: 0.72),
-                  ),
-                ),
-                const SizedBox(width: 4),
-              ],
-              Text(
-                rares.isNotEmpty
-                    ? '${rares.length} rara${rares.length == 1 ? '' : 's'}'
-                    : '$total medalha${total == 1 ? '' : 's'}',
-                style: AppTypography.label(
-                  size: 9,
-                  letterSpacing: 0.2,
-                  weight: FontWeight.w700,
-                  color: label.withValues(alpha: 0.72),
-                ),
+        return _MedalStack(
+          glyphs: [
+            if (shown.isEmpty)
+              (
+                glyph: CinematicGlyph.gem,
+                accent: AppColors.medalGold,
               ),
-            ],
-          ),
+            for (final def in shown)
+              (
+                glyph: def.glyph,
+                accent: MedalEngagementService.tierColor(def.tier),
+              ),
+          ],
+          extra: extraRares > 0 ? extraRares : null,
         );
       },
+    );
+  }
+}
+
+class _MedalStack extends StatelessWidget {
+  final List<({CinematicGlyph glyph, Color accent})> glyphs;
+  final int? extra;
+
+  const _MedalStack({required this.glyphs, this.extra});
+
+  @override
+  Widget build(BuildContext context) {
+    const size = 24.0;
+    const overlap = 16.0;
+    final extraSlot = extra != null ? 1 : 0;
+    final count = glyphs.length + extraSlot;
+    if (count == 0) return const SizedBox.shrink();
+
+    return SizedBox(
+      width: size + (count - 1) * overlap,
+      height: size,
+      child: Stack(
+        children: [
+          for (var i = 0; i < glyphs.length; i++)
+            Positioned(
+              left: i * overlap,
+              child: _MedalDisc(
+                glyph: glyphs[i].glyph,
+                accent: glyphs[i].accent,
+              ),
+            ),
+          if (extra != null)
+            Positioned(
+              left: glyphs.length * overlap,
+              child: _MedalDisc(
+                glyph: CinematicGlyph.gem,
+                accent: AppColors.medalGold,
+                overlay: '+$extra',
+              ),
+            ),
+        ],
+      ),
+    );
+  }
+}
+
+class _MedalDisc extends StatelessWidget {
+  final CinematicGlyph glyph;
+  final Color accent;
+  final String? overlay;
+
+  const _MedalDisc({
+    required this.glyph,
+    required this.accent,
+    this.overlay,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 24,
+      height: 24,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: const Color(0xFF1A1408),
+        border: Border.all(color: accent, width: 1.4),
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withValues(alpha: 0.28),
+            blurRadius: 3,
+            offset: const Offset(0, 1),
+          ),
+        ],
+      ),
+      child: Center(
+        child: overlay != null
+            ? Text(
+                overlay!,
+                style: AppTypography.label(
+                  size: 8,
+                  letterSpacing: 0,
+                  weight: FontWeight.w900,
+                  color: AppColors.medalGold,
+                ),
+              )
+            : CinematicIcon(
+                glyph: glyph,
+                size: 13,
+                accent: accent,
+                framed: false,
+              ),
+      ),
     );
   }
 }
@@ -2374,6 +2452,7 @@ class _PilgrimAvatar extends StatelessWidget {
   final bool live;
   final double size;
   final Color? ring;
+  final bool onGold;
 
   const _PilgrimAvatar({
     required this.name,
@@ -2381,16 +2460,20 @@ class _PilgrimAvatar extends StatelessWidget {
     this.live = false,
     this.size = 36,
     this.ring,
+    this.onGold = false,
   });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final initial = name.isEmpty ? '?' : name[0].toUpperCase();
+    final onPlate = isUser && onGold;
     final border = live
         ? AppColors.teal
         : ring ??
-            (isUser
+            (onPlate
+                ? Colors.white.withValues(alpha: 0.45)
+                : isUser
                 ? Colors.white.withValues(alpha: 0.55)
                 : Colors.white.withValues(alpha: 0.16));
 
@@ -2405,8 +2488,14 @@ class _PilgrimAvatar extends StatelessWidget {
             height: size,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              gradient: isUser ? AppGradients.gold : null,
-              color: isUser
+              gradient: onPlate
+                  ? null
+                  : isUser
+                  ? AppGradients.gold
+                  : null,
+              color: onPlate
+                  ? AppColors.inkOnAccent
+                  : isUser
                   ? null
                   : AppColors.primaryLight.withValues(alpha: 0.28),
               border: Border.all(color: border, width: live ? 2 : 1.2),
@@ -2417,7 +2506,11 @@ class _PilgrimAvatar extends StatelessWidget {
                 style: AppTypography.title(
                   size: size >= 52 ? 22 : size >= 38 ? 16 : 13,
                   weight: FontWeight.w900,
-                  color: isUser ? AppColors.inkOnAccent : a.text,
+                  color: onPlate
+                      ? AppColors.accent
+                      : isUser
+                      ? AppColors.inkOnAccent
+                      : a.text,
                 ),
               ),
             ),
@@ -2563,9 +2656,9 @@ class _CompanionsOfflineCard extends StatelessWidget {
       child: Column(
         children: [
           const CinematicIcon(
-            glyph: CinematicGlyph.path,
+            glyph: CinematicGlyph.heart,
             size: 40,
-            accent: AppColors.accent,
+            accent: AppColors.clay,
             glowing: false,
           ),
           const SizedBox(height: 14),
@@ -2619,9 +2712,9 @@ class _CompanionsEmpty extends StatelessWidget {
       child: Column(
         children: [
           const CinematicIcon(
-            glyph: CinematicGlyph.path,
+            glyph: CinematicGlyph.heart,
             size: 44,
-            accent: AppColors.accent,
+            accent: AppColors.clay,
             glowing: false,
           ),
           const SizedBox(height: 14),
@@ -3046,12 +3139,12 @@ class _CompanionCard extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 8),
                   child: CinematicIcon(
                     glyph: companion.bothWalkedToday
-                        ? CinematicGlyph.star
+                        ? CinematicGlyph.check
                         : CinematicGlyph.path,
                     size: 18,
                     accent: companion.bothWalkedToday
                         ? AppColors.accent
-                        : a.textMuted(0.4),
+                        : AppColors.clay,
                     framed: false,
                   ),
                 ),

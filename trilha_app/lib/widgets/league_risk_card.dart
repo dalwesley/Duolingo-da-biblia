@@ -71,11 +71,7 @@ class LeagueRiskCard extends StatelessWidget {
               ],
             ),
           ),
-          Icon(
-            Icons.chevron_right_rounded,
-            size: 20,
-            color: a.textMuted(0.45),
-          ),
+          ListChevron(color: a.textMuted(0.45), size: 20),
         ],
       ),
     );

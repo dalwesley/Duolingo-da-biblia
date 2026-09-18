@@ -39,8 +39,9 @@ class MascotBubble extends StatelessWidget {
               boxShadow: glowing
                   ? [
                       BoxShadow(
-                        color: AppColors.accent.withValues(alpha: 0.22),
-                        blurRadius: 18,
+                        color: Colors.black.withValues(alpha: 0.28),
+                        blurRadius: 8,
+                        offset: const Offset(0, 3),
                       ),
                     ]
                   : null,

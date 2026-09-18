@@ -15,6 +15,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/stway_brand.dart';
+import '../widgets/cinematic_icon.dart';
 import '../widgets/ui_primitives.dart';
 import 'main_shell.dart';
 import 'onboarding_screen.dart';
@@ -203,7 +204,12 @@ class _LoginScreenState extends State<LoginScreen> {
               if (!backend.isFirebaseReady && !backend.isInitializing) ...[
                 OutlinedButton.icon(
                   onPressed: busy ? null : () => backend.retry(),
-                  icon: const Icon(Icons.refresh_rounded, size: 18),
+                  icon: const CinematicIcon(
+                    glyph: CinematicGlyph.refresh,
+                    size: 18,
+                    accent: Colors.white70,
+                    framed: false,
+                  ),
                   label: Text(
                     'Tentar reconectar',
                     style: AppTypography.cta(color: Colors.white70),

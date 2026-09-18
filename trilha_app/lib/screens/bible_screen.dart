@@ -22,6 +22,63 @@ import '../widgets/ui_primitives.dart';
 import '../widgets/verse_study_sheet.dart';
 import 'bible_reading_plan_screen.dart';
 
+/// Nome dobrado para A–Z em português ("Êxodo" → e, "1 João" → joao).
+({int ordinal, String key}) _bookSortParts(String name) {
+  final trimmed = name.trim();
+  final numbered = RegExp(r'^([123])\s+(.+)$').firstMatch(trimmed);
+  final ordinal = numbered != null ? int.parse(numbered.group(1)!) : 0;
+  final core = numbered != null ? numbered.group(2)! : trimmed;
+  return (ordinal: ordinal, key: _foldPt(core));
+}
+
+int _compareBookName(String a, String b) {
+  final pa = _bookSortParts(a);
+  final pb = _bookSortParts(b);
+  final byName = pa.key.compareTo(pb.key);
+  if (byName != 0) return byName;
+  return pa.ordinal.compareTo(pb.ordinal);
+}
+
+String _bookLetter(String name) {
+  final key = _bookSortParts(name).key;
+  if (key.isEmpty) return '#';
+  return key[0].toUpperCase();
+}
+
+String _foldPt(String input) {
+  const map = {
+    'á': 'a',
+    'à': 'a',
+    'â': 'a',
+    'ã': 'a',
+    'ä': 'a',
+    'é': 'e',
+    'è': 'e',
+    'ê': 'e',
+    'ë': 'e',
+    'í': 'i',
+    'ì': 'i',
+    'î': 'i',
+    'ï': 'i',
+    'ó': 'o',
+    'ò': 'o',
+    'ô': 'o',
+    'õ': 'o',
+    'ö': 'o',
+    'ú': 'u',
+    'ù': 'u',
+    'û': 'u',
+    'ü': 'u',
+    'ç': 'c',
+    'ñ': 'n',
+  };
+  final out = StringBuffer();
+  for (final ch in input.toLowerCase().split('')) {
+    out.write(map[ch] ?? ch);
+  }
+  return out.toString();
+}
+
 /// Aba Bíblia — navegação livro → capítulo → leitura, tudo offline.
 class BibleScreen extends StatefulWidget {
   final Widget? topBar;
@@ -335,8 +392,8 @@ class _BookPicker extends StatelessWidget {
                       children: [
                         CinematicIcon(
                           glyph: CinematicGlyph.search,
-                          size: 20,
-                          accent: AppColors.cedar.withValues(alpha: 0.9),
+                          size: 22,
+                          accent: AppColors.sand,
                           framed: false,
                         ),
                         const SizedBox(width: AppSpace.sm),
@@ -375,10 +432,14 @@ class _BookPicker extends StatelessWidget {
                     context.read<ProgressService>().setBibleBrowseOrder(o),
               ),
               const SizedBox(height: AppSpace.section),
-              if (order == BibleReadingOrder.canonical)
-                ..._canonicalSections(books, onPick)
-              else
-                ..._chronologicalSections(books, onPick),
+              ...switch (order) {
+                BibleReadingOrder.canonical =>
+                  _canonicalSections(books, onPick),
+                BibleReadingOrder.chronological =>
+                  _chronologicalSections(books, onPick),
+                BibleReadingOrder.alphabetical =>
+                  _alphabeticalSections(books, onPick),
+              },
             ],
           ),
         ),
@@ -437,7 +498,43 @@ class _BookPicker extends StatelessWidget {
         widgets.add(const SizedBox(height: AppSpace.section));
       }
       widgets.add(
-        _ChronoEraSection(era: era, entries: entries, onPick: onPick),
+        _BookGroupSection(
+          title: era.title,
+          blurb: era.blurb,
+          entries: entries,
+          onPick: onPick,
+        ),
+      );
+    }
+    return widgets;
+  }
+
+  List<Widget> _alphabeticalSections(
+    List<BibleBook> books,
+    ValueChanged<int> onPick,
+  ) {
+    final entries = [
+      for (var i = 0; i < books.length; i++) (book: books[i], index: i),
+    ]..sort((a, b) => _compareBookName(a.book.name, b.book.name));
+
+    final byLetter = <String, List<({BibleBook book, int index})>>{};
+    for (final e in entries) {
+      byLetter.putIfAbsent(_bookLetter(e.book.name), () => []).add(e);
+    }
+
+    final widgets = <Widget>[];
+    final letters = byLetter.keys.toList()..sort();
+    for (final letter in letters) {
+      final group = byLetter[letter]!;
+      if (widgets.isNotEmpty) {
+        widgets.add(const SizedBox(height: AppSpace.section));
+      }
+      widgets.add(
+        _BookGroupSection(
+          title: letter,
+          entries: group,
+          onPick: onPick,
+        ),
       );
     }
     return widgets;
@@ -502,7 +599,9 @@ class _WordHubCard extends StatelessWidget {
           children: [
             _WordHubRow(
               glyph: CinematicGlyph.calendar,
-              accent: momentAccent,
+              accent: moment.season == LiturgicalSeason.ordinary
+                  ? AppColors.sand
+                  : momentAccent,
               eyebrow: moment.title,
               title: moment.subtitle,
               detail: moment.focusRef,
@@ -511,7 +610,7 @@ class _WordHubCard extends StatelessWidget {
             if (continueLabel != null) ...[
               divider,
               _WordHubRow(
-                glyph: CinematicGlyph.star,
+                glyph: CinematicGlyph.book,
                 accent: AppColors.accent,
                 eyebrow: 'Continuar na Palavra',
                 title: continueLabel,
@@ -602,11 +701,7 @@ class _WordHubRow extends StatelessWidget {
                   ],
                 ),
               ),
-              Icon(
-                Icons.chevron_right_rounded,
-                color: a.textMuted(0.4),
-                size: 20,
-              ),
+              ListChevron(color: a.textMuted(0.4), size: 20),
             ],
           ),
         ),
@@ -645,7 +740,7 @@ class _BrowseOrderToggle extends StatelessWidget {
                     selected: value == o,
                     onTap: () => onChanged(o),
                     style: AppSelectChipStyle.solid,
-                    fontSize: 13,
+                    fontSize: 12,
                     padding: const EdgeInsets.symmetric(vertical: 10),
                     borderRadius: const BorderRadius.all(
                       Radius.circular(AppRadii.sm),
@@ -660,13 +755,15 @@ class _BrowseOrderToggle extends StatelessWidget {
   }
 }
 
-class _ChronoEraSection extends StatelessWidget {
-  final BibleEra era;
+class _BookGroupSection extends StatelessWidget {
+  final String title;
+  final String? blurb;
   final List<({BibleBook book, int index})> entries;
   final ValueChanged<int> onPick;
 
-  const _ChronoEraSection({
-    required this.era,
+  const _BookGroupSection({
+    required this.title,
+    this.blurb,
     required this.entries,
     required this.onPick,
   });
@@ -688,7 +785,7 @@ class _ChronoEraSection extends StatelessWidget {
               ),
             ),
             const SizedBox(width: AppSpace.sm),
-            Expanded(child: SectionLabel(era.title, color: a.sectionLabel)),
+            Expanded(child: SectionLabel(title, color: a.sectionLabel)),
             Text(
               '${entries.length}',
               style: AppTypography.body(
@@ -699,14 +796,16 @@ class _ChronoEraSection extends StatelessWidget {
             ),
           ],
         ),
-        const SizedBox(height: 4),
-        Padding(
-          padding: const EdgeInsets.only(left: 11),
-          child: Text(
-            era.blurb,
-            style: AppTypography.body(size: 12, color: a.textMuted(0.55)),
+        if (blurb != null) ...[
+          const SizedBox(height: 4),
+          Padding(
+            padding: const EdgeInsets.only(left: 11),
+            child: Text(
+              blurb!,
+              style: AppTypography.body(size: 12, color: a.textMuted(0.55)),
+            ),
           ),
-        ),
+        ],
         const SizedBox(height: AppSpace.md),
         GlassCard(
           padding: EdgeInsets.zero,
@@ -773,8 +872,8 @@ class _SearchPane extends StatelessWidget {
           padding: const EdgeInsets.all(AppSpace.md),
           child: CinematicIcon(
             glyph: CinematicGlyph.search,
-            size: 20,
-            accent: a.textMuted(0.55),
+            size: 22,
+            accent: AppColors.sand,
             framed: false,
           ),
         ),
@@ -943,33 +1042,16 @@ class _CanonTestamentCard extends StatelessWidget {
       );
       firstGroup = false;
 
-      final chips = <Widget>[];
       for (var i = group.startIndex; i <= end; i++) {
         bookCount++;
-        chips.add(_BookChip(book: books[i], onTap: () => onPick(i)));
+        children.add(
+          _BookRow(
+            book: books[i],
+            onTap: () => onPick(i),
+            showDivider: i != end,
+          ),
+        );
       }
-      children.add(
-        Padding(
-          padding: const EdgeInsets.fromLTRB(
-            AppSpace.md,
-            4,
-            AppSpace.md,
-            AppSpace.sm,
-          ),
-          child: LayoutBuilder(
-            builder: (context, constraints) {
-              final w = (constraints.maxWidth - 8) / 2;
-              return Wrap(
-                spacing: 8,
-                runSpacing: 8,
-                children: [
-                  for (final chip in chips) SizedBox(width: w, child: chip),
-                ],
-              );
-            },
-          ),
-        ),
-      );
     }
 
     if (children.isEmpty) return const SizedBox.shrink();
@@ -1009,59 +1091,6 @@ class _CanonTestamentCard extends StatelessWidget {
           ),
         ),
       ],
-    );
-  }
-}
-
-class _BookChip extends StatelessWidget {
-  final BibleBook book;
-  final VoidCallback onTap;
-
-  const _BookChip({required this.book, required this.onTap});
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final abbrev = book.abbrev.toUpperCase();
-    return Material(
-      color: Colors.transparent,
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(AppRadii.sm),
-        child: Ink(
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
-          decoration: BoxDecoration(
-            color: a.cardFillSoft,
-            borderRadius: BorderRadius.circular(AppRadii.sm),
-            border: Border.all(color: a.cardBorder.withValues(alpha: 0.7)),
-          ),
-          child: Row(
-            children: [
-              Text(
-                abbrev,
-                style: AppTypography.label(
-                  size: abbrev.length > 3 ? 9 : 11,
-                  letterSpacing: 0.2,
-                  color: AppColors.cedar,
-                ),
-              ),
-              const SizedBox(width: 8),
-              Expanded(
-                child: Text(
-                  book.name,
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: AppTypography.title(
-                    size: 13,
-                    weight: FontWeight.w700,
-                    color: a.text,
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
     );
   }
 }
@@ -1143,8 +1172,7 @@ class _BookRow extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(width: AppSpace.xs),
-                  Icon(
-                    Icons.chevron_right_rounded,
+                  ListChevron(
                     size: 18,
                     color: Colors.white.withValues(alpha: 0.28),
                   ),
@@ -1687,7 +1715,7 @@ class BibleReaderView extends StatelessWidget {
                     ListTile(
                       contentPadding: EdgeInsets.zero,
                       leading: CinematicIcon(
-                        glyph: CinematicGlyph.star,
+                        glyph: CinematicGlyph.bookmark,
                         size: 24,
                         accent: reading.verseNumber.withValues(
                           alpha: saved ? 1 : 0.45,
@@ -1778,12 +1806,13 @@ class BibleReaderView extends StatelessWidget {
                     ),
                     ListTile(
                       contentPadding: EdgeInsets.zero,
-                      leading: Icon(
-                        TtsService.instance.isSpeaking
-                            ? Icons.stop_rounded
-                            : Icons.volume_up_rounded,
+                      leading: CinematicIcon(
+                        glyph: TtsService.instance.isSpeaking
+                            ? CinematicGlyph.stop
+                            : CinematicGlyph.echo,
                         size: 24,
-                        color: reading.inkMuted,
+                        accent: reading.inkMuted,
+                        framed: false,
                       ),
                       title: Text(
                         TtsService.instance.isSpeaking
@@ -1990,7 +2019,7 @@ class BibleReaderView extends StatelessWidget {
                                     top: 4,
                                   ),
                                   child: CinematicIcon(
-                                    glyph: CinematicGlyph.star,
+                                    glyph: CinematicGlyph.bookmark,
                                     size: 14,
                                     accent: reading.verseNumber,
                                     framed: false,
@@ -2091,7 +2120,7 @@ class BibleReaderView extends StatelessWidget {
                 bottom: scrollPaddingBelowNav(context),
                 child: GhostCta(
                   label: 'Parar leitura',
-                  leading: CinematicGlyph.echo,
+                  leading: CinematicGlyph.stop,
                   expanded: true,
                   onTap: () => TtsService.instance.stop(),
                 ),

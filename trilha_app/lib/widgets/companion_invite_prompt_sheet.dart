@@ -58,7 +58,7 @@ class _CompanionInvitePromptSheetState
       showAppToastFor(
         context,
         message: companions.lastError ?? 'Não foi possível criar o convite',
-        glyph: CinematicGlyph.echo,
+        glyph: CinematicGlyph.wrong,
         tone: AppToastTone.warn,
       );
       Navigator.of(context).pop();

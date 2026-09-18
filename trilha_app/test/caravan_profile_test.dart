@@ -1,6 +1,8 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:trilha_app/models/caravan_profile_prefs.dart';
 import 'package:trilha_app/models/caravan_pilgrim_profile.dart';
+import 'package:trilha_app/models/trail.dart';
+import 'package:trilha_app/widgets/pilgrim_profile_sections.dart';
 
 void main() {
   group('CaravanProfilePrefs', () {
@@ -41,6 +43,20 @@ void main() {
         lifetimeQuestionsAnswered: 10,
       );
       expect(profile.accuracyPercent, 80);
+    });
+  });
+
+  group('pilgrim profile copy', () {
+    test('formatCount uses thousands separator', () {
+      expect(pilgrimFormatCount(1923), '1.923');
+      expect(pilgrimFormatCount(12), '12');
+      expect(pilgrimFormatCount(1000000), '1.000.000');
+    });
+
+    test('short stop label drops articles', () {
+      expect(pilgrimShortStopLabel('A Criação'), 'Criação');
+      expect(pilgrimShortStopLabel('O Jardim'), 'Jardim');
+      expect(pilgrimShortStopLabel('Depois do Éden'), 'Éden');
     });
   });
 
@@ -102,7 +118,125 @@ void main() {
       expect(profile.completedMissions, isEmpty);
     });
   });
+
+  group('CaravanPilgrimProfile.enriched', () {
+    test('fills module stops and last mission insight from catalog', () async {
+      const profile = CaravanPilgrimProfile(
+        name: 'João',
+        steps: 10,
+        completedMissions: ['gen-01', 'gen-02'],
+        lastMissionSlug: 'gen-02',
+      );
+      final catalog = [
+        Trail(
+          slug: 'genesis-1-11',
+          title: 'Gênesis 1–11',
+          description: 'Do princípio aos primeiros povos',
+          icon: '📖',
+          order: 1,
+          comingSoon: false,
+          color: '#2F5D4A',
+          modules: [
+            TrailModule(
+              title: 'A Criação',
+              icon: '☀️',
+              missions: [
+                _mission('gen-01', 'No princípio', insight: 'Deus fala e há luz'),
+              ],
+            ),
+            TrailModule(
+              title: 'O Jardim',
+              icon: '🌳',
+              missions: [
+                _mission(
+                  'gen-02',
+                  'A queda',
+                  insight: 'Deus ainda pergunta onde estás',
+                  hookRef: 'Gênesis 3:9',
+                ),
+                _mission('gen-02b', 'Caim'),
+              ],
+            ),
+            TrailModule(
+              title: 'Depois do Éden',
+              icon: '🌊',
+              missions: [_mission('gen-03', 'O dilúvio')],
+            ),
+          ],
+        ),
+      ];
+
+      final out = await profile.enriched(catalog: catalog, bibleBooks: const []);
+      expect(out.trails, hasLength(1));
+      expect(out.trails.first.description, 'Do princípio aos primeiros povos');
+      expect(out.trails.first.modules, hasLength(3));
+      expect(out.trails.first.modules[0].isComplete, isTrue);
+      expect(out.trails.first.modules[1].isCurrent, isTrue);
+      expect(out.trails.first.modules[2].hasStarted, isFalse);
+      expect(out.lastMissionTitle, 'A queda');
+      expect(out.lastTrailTitle, 'Gênesis 1–11');
+      expect(out.lastMissionInsight, 'Deus ainda pergunta onde estás');
+      expect(out.lastMissionRef, 'Gênesis 3:9');
+    });
+
+    test('infers last scene from completed missions when slug is missing',
+        () async {
+      const profile = CaravanPilgrimProfile(
+        name: 'Josias',
+        steps: 10,
+        completedMissions: ['gen-01', 'gen-02'],
+      );
+      final catalog = [
+        Trail(
+          slug: 'genesis-1-11',
+          title: 'Gênesis 1–11',
+          description: 'Do princípio aos primeiros povos',
+          icon: '📖',
+          order: 1,
+          comingSoon: false,
+          color: '#2F5D4A',
+          modules: [
+            TrailModule(
+              title: 'A Criação',
+              icon: '☀️',
+              missions: [_mission('gen-01', 'No princípio')],
+            ),
+            TrailModule(
+              title: 'O Jardim',
+              icon: '🌳',
+              missions: [
+                _mission('gen-02', 'A queda', hookRef: 'Gênesis 3:9'),
+                _mission('gen-02b', 'Caim'),
+              ],
+            ),
+          ],
+        ),
+      ];
+
+      final out = await profile.enriched(catalog: catalog, bibleBooks: const []);
+      expect(out.lastMissionTitle, 'A queda');
+      expect(out.lastTrailTitle, 'Gênesis 1–11');
+      expect(out.lastMissionRef, 'Gênesis 3:9');
+    });
+  });
 }
+
+Mission _mission(
+  String slug,
+  String title, {
+  String? insight,
+  String? hookRef,
+}) =>
+    Mission(
+      slug: slug,
+      title: title,
+      intro: '',
+      type: 'lesson',
+      stepsReward: 50,
+      questions: const [],
+      centralInsight: insight,
+      hookRef: hookRef,
+    );
 
 class _FakeTimestamp {
   final DateTime value;

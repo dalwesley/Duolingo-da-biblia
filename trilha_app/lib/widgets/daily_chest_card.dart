@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'dart:math' as math;
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -168,7 +167,7 @@ class _ChestGlyph extends StatelessWidget {
       ),
       child: Center(
         child: CinematicIcon(
-          glyph: CinematicGlyph.gem,
+          glyph: CinematicGlyph.gift,
           size: 22,
           accent: accent,
           framed: false,
@@ -256,23 +255,15 @@ class _DailyChestSheetState extends State<_DailyChestSheet>
       padding: const EdgeInsets.fromLTRB(AppSpace.md, 0, AppSpace.md, 8),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(AppRadii.xl),
-        child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
-          child: DecoratedBox(
+        child: DecoratedBox(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(AppRadii.xl),
               border: Border.all(
                 color: accent.withValues(alpha: 0.8),
                 width: 1.5,
               ),
-              color: AppColors.night.withValues(alpha: 0.96),
-              boxShadow: [
-                BoxShadow(
-                  color: accent.withValues(alpha: reward != null ? 0.4 : 0.22),
-                  blurRadius: 32,
-                  offset: const Offset(0, 12),
-                ),
-              ],
+              color: AppColors.night,
+              boxShadow: AppMetrics.cardShadow(elevated: true),
             ),
             child: ClipRRect(
               borderRadius: BorderRadius.circular(AppRadii.xl),
@@ -459,7 +450,7 @@ class _DailyChestSheetState extends State<_DailyChestSheet>
                                     child: CopperCta(
                                       label: 'Continuar a jornada',
                                       onTap: () => Navigator.pop(context),
-                                      trailing: CinematicGlyph.path,
+                                      trailing: CinematicGlyph.forward,
                                       dense: true,
                                     ),
                                   ),
@@ -474,7 +465,6 @@ class _DailyChestSheetState extends State<_DailyChestSheet>
                 ],
               ),
             ),
-          ),
         ),
       ),
     );

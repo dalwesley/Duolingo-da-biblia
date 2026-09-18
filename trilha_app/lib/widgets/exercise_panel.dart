@@ -860,11 +860,11 @@ class _GestureSeal extends StatelessWidget {
   CinematicGlyph get _glyph =>
       switch (instructionTitle.split(' ').first.toLowerCase()) {
         'julgue' => CinematicGlyph.scales,
-        'toque' => CinematicGlyph.search,
+        'toque' => CinematicGlyph.tap,
         'escolha' => CinematicGlyph.target,
-        'ordene' => CinematicGlyph.path,
-        'complete' => CinematicGlyph.spark,
-        'conecte' => CinematicGlyph.chain,
+        'ordene' => CinematicGlyph.stack,
+        'complete' => CinematicGlyph.gap,
+        'conecte' => CinematicGlyph.link,
         _ => CinematicGlyph.book,
       };
 

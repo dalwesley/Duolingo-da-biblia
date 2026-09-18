@@ -24,32 +24,19 @@ class StagePlate extends StatelessWidget {
   }) {
     return BoxDecoration(
       borderRadius: BorderRadius.circular(radius),
-      gradient: LinearGradient(
-        begin: Alignment.topCenter,
-        end: Alignment.bottomCenter,
-        colors: [
-          Color.lerp(AppColors.nightElevated, accent, lit ? 0.18 : 0.07)!,
-          AppColors.nightElevated.withValues(alpha: 0.92),
-        ],
-      ),
+      color: Color.lerp(AppColors.nightElevated, accent, lit ? 0.1 : 0.04),
       border: Border.all(
         color: lit
             ? accent.withValues(alpha: 0.72)
             : Colors.white.withValues(alpha: 0.10),
         width: lit ? 1.6 : 1,
       ),
-      boxShadow: [
-        const BoxShadow(
+      boxShadow: const [
+        BoxShadow(
           color: Color(0x80000000),
           blurRadius: 0,
           offset: Offset(0, 5),
         ),
-        if (lit)
-          BoxShadow(
-            color: accent.withValues(alpha: 0.28),
-            blurRadius: 28,
-            spreadRadius: -6,
-          ),
       ],
     );
   }

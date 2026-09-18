@@ -45,7 +45,7 @@ class LeagueOutcomeCard extends StatelessWidget {
       child: Row(
         children: [
           CinematicIcon(
-            glyph: demoted ? CinematicGlyph.demote : CinematicGlyph.path,
+            glyph: demoted ? CinematicGlyph.demote : CinematicGlyph.rise,
             size: 40,
             accent: AppColors.accent,
             glowing: false,
@@ -174,11 +174,6 @@ class _PromotionBannerState extends State<_PromotionBanner>
             borderRadius: BorderRadius.circular(AppRadii.lg),
             boxShadow: [
               BoxShadow(
-                color: AppColors.accent.withValues(alpha: 0.28 + pulse * 0.18),
-                blurRadius: 18 + pulse * 8,
-                offset: const Offset(0, 6),
-              ),
-              BoxShadow(
                 color: Colors.black.withValues(alpha: 0.35),
                 blurRadius: 16,
                 offset: const Offset(0, 8),
@@ -202,7 +197,7 @@ class _PromotionBannerState extends State<_PromotionBanner>
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
                           colors: [
-                            Colors.white.withValues(alpha: 0.28),
+                            Colors.white.withValues(alpha: 0.06),
                             Colors.transparent,
                             AppColors.inkOnAccent.withValues(alpha: 0.16),
                           ],
@@ -296,10 +291,9 @@ class _PromotionMedal extends StatelessWidget {
                 ),
                 boxShadow: [
                   BoxShadow(
-                    color: AppColors.accentBright.withValues(
-                      alpha: 0.4 + pulse * 0.28,
-                    ),
-                    blurRadius: 10 + pulse * 8,
+                    color: Colors.black.withValues(alpha: 0.35),
+                    blurRadius: 6,
+                    offset: const Offset(0, 3),
                   ),
                 ],
               ),
@@ -465,13 +459,7 @@ class _LeaguePromotionSheet extends StatelessWidget {
         border: Border.all(
           color: AppColors.accent.withValues(alpha: 0.7),
         ),
-        boxShadow: [
-          BoxShadow(
-            color: AppColors.accent.withValues(alpha: 0.28),
-            blurRadius: 28,
-            offset: const Offset(0, 10),
-          ),
-        ],
+        boxShadow: AppMetrics.cardShadow(elevated: true),
       ),
       clipBehavior: Clip.antiAlias,
       child: Stack(

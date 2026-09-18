@@ -5,13 +5,13 @@ import '../theme/app_theme.dart';
 
 /// Humor cinematográfico do card de continuar.
 enum HeroCardMood {
-  /// Gelo já cobriu um dia nesta semana — cristal, frio, brilho.
+  /// Gelo já cobriu um dia nesta semana — cristal, frio, fosco.
   frozen,
 
   /// Em risco, mas ainda dá tempo — pó, sépia, filme velho.
   dusty,
 
-  /// Em dia — vidro limpo, reflexo, luz viva.
+  /// Em dia — céu limpo, sem reflexo de vidro.
   alive,
 }
 
@@ -154,8 +154,8 @@ class _AtmospherePainter extends CustomPainter {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            AppColors.iceSoft.withValues(alpha: 0.38 + breathe * 0.08),
-            AppColors.ice.withValues(alpha: 0.28),
+            AppColors.iceSoft.withValues(alpha: 0.22 + breathe * 0.04),
+            AppColors.ice.withValues(alpha: 0.18),
             AppColors.iceDeep.withValues(alpha: 0.62),
             const Color(0xFF061018).withValues(alpha: 0.72),
           ],
@@ -177,8 +177,8 @@ class _AtmospherePainter extends CustomPainter {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            Colors.white.withValues(alpha: 0.32 + breathe * 0.08),
-            AppColors.iceSoft.withValues(alpha: 0.14),
+            Colors.white.withValues(alpha: 0.12 + breathe * 0.03),
+            AppColors.iceSoft.withValues(alpha: 0.08),
             Colors.transparent,
           ],
         ).createShader(
@@ -198,8 +198,8 @@ class _AtmospherePainter extends CustomPainter {
           (0.3 + 0.55 * (1 - (cycle - 0.5).abs() * 2)).clamp(0.0, 0.9);
       final c = Color.lerp(
         AppColors.iceSoft,
-        Colors.white,
-        s.kind.isEven ? 0.65 : 0.25,
+        AppColors.ice,
+        s.kind.isEven ? 0.35 : 0.15,
       )!;
       final paint = Paint()..color = c.withValues(alpha: alpha);
       final ox = x * size.width;
@@ -214,37 +214,11 @@ class _AtmospherePainter extends CustomPainter {
       }
       canvas.restore();
     }
-
-    // Brilho frio varrendo (reflexo no gelo)
-    final sweep = (t * 0.55) % 1.0;
-    final sweepX = size.width * (sweep * 1.4 - 0.2);
-    canvas.save();
-    canvas.clipRRect(
-      RRect.fromRectAndRadius(
-        Offset.zero & size,
-        const Radius.circular(26),
-      ),
-    );
-    canvas.drawRect(
-      Rect.fromLTWH(sweepX - 28, 0, 56, size.height),
-      Paint()
-        ..shader = LinearGradient(
-          begin: Alignment.centerLeft,
-          end: Alignment.centerRight,
-          colors: [
-            Colors.transparent,
-            Colors.white.withValues(alpha: 0.14 + breathe * 0.05),
-            AppColors.iceSoft.withValues(alpha: 0.08),
-            Colors.transparent,
-          ],
-        ).createShader(Rect.fromLTWH(sweepX - 28, 0, 56, size.height)),
-    );
-    canvas.restore();
   }
 
   void _drawIceCracks(Canvas canvas, Size size, double breathe) {
     final crack = Paint()
-      ..color = Colors.white.withValues(alpha: 0.16 + breathe * 0.06)
+      ..color = Colors.white.withValues(alpha: 0.08 + breathe * 0.03)
       ..strokeWidth = 1.15
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round;
@@ -297,8 +271,8 @@ class _AtmospherePainter extends CustomPainter {
       Paint()
         ..shader = RadialGradient(
           colors: [
-            Colors.white.withValues(alpha: 0.42 * strength),
-            AppColors.iceSoft.withValues(alpha: 0.28 * strength),
+            Colors.white.withValues(alpha: 0.16 * strength),
+            AppColors.iceSoft.withValues(alpha: 0.14 * strength),
             AppColors.ice.withValues(alpha: 0.1 * strength),
             Colors.transparent,
           ],
@@ -310,7 +284,7 @@ class _AtmospherePainter extends CustomPainter {
 
     // Veios de gelo densos
     final vein = Paint()
-      ..color = Colors.white.withValues(alpha: 0.22 + breathe * 0.1)
+      ..color = Colors.white.withValues(alpha: 0.1 + breathe * 0.04)
       ..strokeWidth = 1.25
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round;
@@ -719,12 +693,11 @@ class _AtmospherePainter extends CustomPainter {
   double breatheNoise(double phase) =>
       0.5 + 0.5 * math.sin((t + phase) * math.pi * 2);
 
-  // ─── VIDRO / EM DIA ───────────────────────────────────────────────────
+  // ─── EM DIA ────────────────────────────────────────────────────────────
 
   void _paintAlive(Canvas canvas, Size size) {
     final breathe = 0.5 + 0.5 * math.sin(t * math.pi * 2);
 
-    // Base de vidro — leve tint azul-cristal + claridade
     canvas.drawRect(
       Offset.zero & size,
       Paint()
@@ -732,136 +705,49 @@ class _AtmospherePainter extends CustomPainter {
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
-            Colors.white.withValues(alpha: 0.1 + breathe * 0.04),
-            AppColors.primaryLight.withValues(alpha: 0.06),
+            Colors.white.withValues(alpha: 0.03 + breathe * 0.01),
             Colors.transparent,
-            AppColors.accent.withValues(alpha: 0.04),
+            AppColors.accent.withValues(alpha: 0.03),
           ],
-          stops: const [0.0, 0.25, 0.7, 1.0],
+          stops: const [0.0, 0.55, 1.0],
         ).createShader(Offset.zero & size),
     );
 
-    canvas.save();
-    canvas.clipRRect(
-      RRect.fromRectAndRadius(
-        Offset.zero & size,
-        const Radius.circular(26),
-      ),
-    );
-
-    // Highlight de bisel no topo (aresta de vidro)
-    canvas.drawRRect(
-      RRect.fromRectAndCorners(
-        Rect.fromLTWH(8, 5, size.width - 16, 2.2),
-        topLeft: const Radius.circular(2),
-        topRight: const Radius.circular(2),
-      ),
-      Paint()
-        ..shader = LinearGradient(
-          colors: [
-            Colors.transparent,
-            Colors.white.withValues(alpha: 0.55 + breathe * 0.2),
-            Colors.white.withValues(alpha: 0.7),
-            Colors.transparent,
-          ],
-          stops: const [0.0, 0.25, 0.7, 1.0],
-        ).createShader(Rect.fromLTWH(8, 5, size.width - 16, 2.2)),
-    );
-
-    // Borda interna esquerda (luz lateral)
-    canvas.drawRect(
-      Rect.fromLTWH(4, 12, 1.4, size.height - 28),
-      Paint()
-        ..shader = LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            Colors.white.withValues(alpha: 0.35),
-            Colors.white.withValues(alpha: 0.08),
-            Colors.transparent,
-          ],
-        ).createShader(Rect.fromLTWH(4, 12, 1.4, size.height - 28)),
-    );
-
-    canvas.restore();
-
-    // Aurora quente no canto superior direito
     canvas.drawCircle(
       Offset(size.width * 0.88, size.height * 0.12),
-      size.shortestSide * 0.58,
+      size.shortestSide * 0.5,
       Paint()
         ..shader = RadialGradient(
           colors: [
-            AppColors.accentBright.withValues(alpha: 0.28 + breathe * 0.1),
-            AppColors.accent.withValues(alpha: 0.12),
-            AppColors.primaryLight.withValues(alpha: 0.04),
+            AppColors.accent.withValues(alpha: 0.1 + breathe * 0.04),
+            AppColors.accent.withValues(alpha: 0.04),
             Colors.transparent,
           ],
-          stops: const [0.0, 0.35, 0.6, 1.0],
+          stops: const [0.0, 0.4, 1.0],
         ).createShader(
           Rect.fromCircle(
             center: Offset(size.width * 0.88, size.height * 0.12),
-            radius: size.shortestSide * 0.58,
+            radius: size.shortestSide * 0.5,
           ),
         ),
     );
 
-    // Caústicos / manchas de luz no vidro
-    for (var i = 0; i < 5; i++) {
-      final phase = (t + i * 0.17) % 1.0;
-      final cx = size.width * (0.15 + i * 0.18 + 0.04 * math.sin(phase * math.pi * 2));
-      final cy = size.height * (0.25 + 0.12 * math.cos(phase * math.pi * 2 + i));
-      final r = size.shortestSide * (0.08 + 0.04 * math.sin(phase * math.pi));
-      canvas.drawOval(
-        Rect.fromCenter(center: Offset(cx, cy), width: r * 2.4, height: r),
-        Paint()
-          ..shader = RadialGradient(
-            colors: [
-              Colors.white.withValues(alpha: 0.1 + breathe * 0.04),
-              Colors.white.withValues(alpha: 0.02),
-              Colors.transparent,
-            ],
-          ).createShader(
-            Rect.fromCenter(center: Offset(cx, cy), width: r * 2.4, height: r),
-          ),
-      );
-    }
-
-    // Partículas de luz — faíscas limpas
     for (final s in specs) {
       final cycle = (t * s.speed + s.phase) % 1.0;
       final y = 1.1 - cycle * 1.25;
       final x = (s.x + math.sin((t + s.phase) * math.pi * 2) * s.drift) % 1.0;
-      final alpha = (math.sin(cycle * math.pi) * 0.85).clamp(0.0, 0.9);
+      final alpha = (math.sin(cycle * math.pi) * 0.28).clamp(0.0, 0.32);
       final c = switch (s.kind) {
-        0 => AppColors.accentBright,
-        1 => Colors.white,
+        0 => AppColors.accent,
+        1 => AppColors.accentSoft,
         2 => AppColors.primaryLight,
         _ => AppColors.accentSoft,
       };
-      final paint = Paint()..color = c.withValues(alpha: alpha);
-      final ox = x * size.width;
-      final oy = y * size.height;
-      if (s.kind == 0) {
-        // Cruz de brilho (sparkle)
-        final spark = Paint()
-          ..color = c.withValues(alpha: alpha)
-          ..strokeWidth = 1.2
-          ..strokeCap = StrokeCap.round;
-        canvas.drawLine(
-          Offset(ox, oy - s.size * 1.4),
-          Offset(ox, oy + s.size * 1.4),
-          spark,
-        );
-        canvas.drawLine(
-          Offset(ox - s.size * 1.0, oy),
-          Offset(ox + s.size * 1.0, oy),
-          spark,
-        );
-        canvas.drawCircle(Offset(ox, oy), s.size * 0.25, paint);
-      } else {
-        canvas.drawCircle(Offset(ox, oy), s.size * 0.45, paint);
-      }
+      canvas.drawCircle(
+        Offset(x * size.width, y * size.height),
+        s.size * 0.35,
+        Paint()..color = c.withValues(alpha: alpha),
+      );
     }
   }
 
@@ -886,8 +772,8 @@ class HeroCardColorGrade extends StatelessWidget {
     final matrix = switch (mood) {
       HeroCardMood.frozen => _freezeMatrix,
       HeroCardMood.dusty => _dustMatrix,
-      // Clareza + contraste — vidro limpo
-      HeroCardMood.alive => _glassMatrix,
+      // Clareza leve — sem empurrão de vidro
+      HeroCardMood.alive => _matteMatrix,
     };
     return ColorFiltered(
       colorFilter: ColorFilter.matrix(matrix),
@@ -911,11 +797,11 @@ class HeroCardColorGrade extends StatelessWidget {
     0, 0, 0, 1, 0,
   ];
 
-  /// Contraste + saturação leve — limpo como vidro.
-  static const _glassMatrix = <double>[
-    1.08, -0.02, -0.02, 0, 6,
-    -0.02, 1.06, -0.01, 0, 4,
-    -0.01, -0.01, 1.1, 0, 8,
+  /// Contraste leve, sem saturação extra.
+  static const _matteMatrix = <double>[
+    1.02, 0, 0, 0, 0,
+    0, 1.02, 0, 0, 0,
+    0, 0, 1.03, 0, 2,
     0, 0, 0, 1, 0,
   ];
 }
@@ -944,9 +830,9 @@ class HeroCardMoodStyle {
   }) {
     return switch (mood) {
       HeroCardMood.frozen => HeroCardMoodStyle(
-          border: AppColors.iceSoft.withValues(alpha: 0.95),
-          borderWidth: 2.4,
-          glow: AppColors.ice.withValues(alpha: 0.45),
+          border: AppColors.ice.withValues(alpha: 0.7),
+          borderWidth: 1.8,
+          glow: AppColors.ice.withValues(alpha: 0.12),
           label: AppColors.iceSoft,
           footer: AppColors.iceSoft.withValues(alpha: 0.95),
           stepLabel: 'Protegido pelo gelo',
@@ -960,9 +846,9 @@ class HeroCardMoodStyle {
           stepLabel: 'Ficando para trás',
         ),
       HeroCardMood.alive => HeroCardMoodStyle(
-          border: Colors.white.withValues(alpha: 0.5),
-          borderWidth: 2.0,
-          glow: trailAccent.withValues(alpha: 0.32),
+          border: Colors.white.withValues(alpha: 0.22),
+          borderWidth: 1.6,
+          glow: trailAccent.withValues(alpha: 0.12),
           label: trailAccent,
           footer: trailAccent,
           stepLabel: 'Em dia',
@@ -973,12 +859,15 @@ class HeroCardMoodStyle {
 
 /// Resolve mood a partir do progresso.
 ///
+/// Dia já caminhado → vivo (o gelo fica no orbe da semana, não no CTA).
 /// Em risco (ainda dá para cumprir) → empoeirado.
-/// Congelado só depois que o gelo de fato cobriu um dia.
+/// Congelado só se o gelo cobriu um dia e hoje ainda não foi caminhado.
 HeroCardMood resolveHeroCardMood({
   required bool atRisk,
   required bool freezeUsedThisWeek,
+  required bool walkedToday,
 }) {
+  if (walkedToday) return HeroCardMood.alive;
   if (atRisk) return HeroCardMood.dusty;
   if (freezeUsedThisWeek) return HeroCardMood.frozen;
   return HeroCardMood.alive;

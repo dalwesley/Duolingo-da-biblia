@@ -760,32 +760,13 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                           ),
                                           const SizedBox(height: AppSpace.md),
                                         ],
-                                        AnimatedBuilder(
-                                          animation: _pulse,
-                                          builder: (context, child) {
-                                            final breath =
-                                                (math.sin(_pulse.value * math.pi * 2) +
-                                                    1) /
-                                                2;
-                                            return DecoratedBox(
-                                              decoration: BoxDecoration(
-                                                borderRadius: BorderRadius.circular(
-                                                  AppRadii.lg,
-                                                ),
-                                                boxShadow: [
-                                                  BoxShadow(
-                                                    color: AppColors.accent
-                                                        .withValues(
-                                                      alpha: 0.18 + breath * 0.14,
-                                                    ),
-                                                    blurRadius: 18 + breath * 10,
-                                                    spreadRadius: breath * 1.5,
-                                                  ),
-                                                ],
-                                              ),
-                                              child: child,
-                                            );
-                                          },
+                                        DecoratedBox(
+                                          decoration: BoxDecoration(
+                                            borderRadius: BorderRadius.circular(
+                                              AppRadii.lg,
+                                            ),
+                                            boxShadow: AppMetrics.cardShadow(),
+                                          ),
                                           child: CopperCta(
                                             label: EntryTrails.continuesTo
                                                     .containsKey(
@@ -880,8 +861,8 @@ class _HeroEmblem extends StatelessWidget {
               shape: BoxShape.circle,
               gradient: RadialGradient(
                 colors: [
-                  (perfect ? AppColors.accentBright : accent).withValues(
-                    alpha: 0.22 + breath * 0.1,
+                  (perfect ? AppColors.accent : accent).withValues(
+                    alpha: 0.1 + breath * 0.04,
                   ),
                   Colors.transparent,
                 ],
@@ -894,19 +875,10 @@ class _HeroEmblem extends StatelessWidget {
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               gradient: perfect ? AppGradients.gold : AppGradients.hero,
-              boxShadow: [
-                ...AppTheme.glow(
-                  perfect ? AppColors.accent : accent,
-                  blur: 32 + breath * 12,
-                ),
-                BoxShadow(
-                  color: (perfect ? AppColors.accent : accent).withValues(
-                    alpha: 0.35 + breath * 0.2,
-                  ),
-                  blurRadius: 28 + breath * 16,
-                  spreadRadius: 2,
-                ),
-              ],
+              boxShadow: AppTheme.glow(
+                perfect ? AppColors.accent : accent,
+                blur: 10,
+              ),
             ),
             child: Center(child: child),
           ),
@@ -946,9 +918,9 @@ class _CelebrationAtmospherePainter extends CustomPainter {
         ..shader = RadialGradient(
           colors: [
             (perfect ? gold : accent).withValues(
-              alpha: (0.22 + breath * 0.08) * a,
+              alpha: (0.08 + breath * 0.03) * a,
             ),
-            (perfect ? gold : accent).withValues(alpha: 0.06 * a),
+            (perfect ? gold : accent).withValues(alpha: 0.03 * a),
             Colors.transparent,
           ],
           stops: const [0.0, 0.35, 1.0],
@@ -964,7 +936,7 @@ class _CelebrationAtmospherePainter extends CustomPainter {
       Paint()
         ..shader = RadialGradient(
           colors: [
-            gold.withValues(alpha: (0.12 + breath * 0.05) * a),
+            gold.withValues(alpha: (0.05 + breath * 0.02) * a),
             Colors.transparent,
           ],
         ).createShader(Rect.fromCircle(center: secondary, radius: secR)),
@@ -989,7 +961,7 @@ class _CelebrationAtmospherePainter extends CustomPainter {
           );
       rayPaint.shader = LinearGradient(
         colors: [
-          Colors.white.withValues(alpha: 0.18 * a * (0.6 + breath * 0.4)),
+          Colors.white.withValues(alpha: 0.05 * a * (0.5 + breath * 0.2)),
           Colors.transparent,
         ],
       ).createShader(Rect.fromPoints(p1, p2));

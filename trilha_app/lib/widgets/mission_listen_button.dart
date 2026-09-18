@@ -42,7 +42,7 @@ class MissionListenButton extends StatelessWidget {
         final speaking = TtsService.instance.isSpeaking;
         return GhostCta(
           label: speaking ? 'Parar' : 'Ouvir o texto',
-          leading: speaking ? CinematicGlyph.lamp : CinematicGlyph.echo,
+          leading: speaking ? CinematicGlyph.stop : CinematicGlyph.echo,
           expanded: true,
           onTap: () {
             if (speaking) {

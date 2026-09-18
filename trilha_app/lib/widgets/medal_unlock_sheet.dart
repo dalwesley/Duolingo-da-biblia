@@ -1,5 +1,4 @@
 import 'dart:math' as math;
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -90,7 +89,7 @@ Future<void> showMedalMysterySheet(BuildContext context, int hiddenCount) {
         id: 'discovery:mystery',
         title: hiddenCount == 1 ? 'Uma descoberta' : '$hiddenCount descobertas',
         hint: 'Revelam-se no caminho — sem dica no cofre.',
-        glyph: CinematicGlyph.search,
+        glyph: CinematicGlyph.spark,
         tier: PilgrimMedalTier.mirra,
         unlocked: false,
         secret: true,
@@ -210,24 +209,16 @@ class _MedalDetailSheetState extends State<_MedalDetailSheet>
       padding: EdgeInsets.fromLTRB(AppSpace.md, 0, AppSpace.md, bottom + 12),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(AppRadii.xl),
-        child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
-          child: DecoratedBox(
+        child: DecoratedBox(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(AppRadii.xl),
               border: Border.all(
                 color: accent.withValues(alpha: unlocked ? 0.8 : 0.28),
                 width: 1.5,
               ),
-              color: AppColors.night.withValues(alpha: 0.94),
+              color: AppColors.night,
               boxShadow: widget.celebration && unlocked
-                  ? [
-                      BoxShadow(
-                        color: accent.withValues(alpha: 0.35),
-                        blurRadius: 32,
-                        offset: const Offset(0, 12),
-                      ),
-                    ]
+                  ? AppMetrics.cardShadow(elevated: true)
                   : null,
             ),
             child: ClipRRect(
@@ -371,7 +362,7 @@ class _MedalDetailSheetState extends State<_MedalDetailSheet>
                                     : (unlocked ? 'Fechar' : 'Entendi'),
                                 onTap: () => Navigator.pop(context),
                                 trailing: widget.celebration
-                                    ? CinematicGlyph.path
+                                    ? CinematicGlyph.forward
                                     : null,
                                 dense: true,
                               ),
@@ -384,7 +375,6 @@ class _MedalDetailSheetState extends State<_MedalDetailSheet>
                 ],
               ),
             ),
-          ),
         ),
       ),
     );
@@ -467,9 +457,7 @@ class _TrackDetailSheetState extends State<_TrackDetailSheet>
       padding: EdgeInsets.fromLTRB(AppSpace.md, 0, AppSpace.md, bottom + 12),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(AppRadii.xl),
-        child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
-          child: DecoratedBox(
+        child: DecoratedBox(
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(AppRadii.xl),
               border: Border.all(
@@ -477,15 +465,9 @@ class _TrackDetailSheetState extends State<_TrackDetailSheet>
                   alpha: trackState.hasStarted ? 0.8 : 0.28,
                 ),
               ),
-              color: AppColors.night.withValues(alpha: 0.94),
+              color: AppColors.night,
               boxShadow: widget.celebration
-                  ? [
-                      BoxShadow(
-                        color: accent.withValues(alpha: 0.32),
-                        blurRadius: 32,
-                        offset: const Offset(0, 12),
-                      ),
-                    ]
+                  ? AppMetrics.cardShadow(elevated: true)
                   : null,
             ),
             child: ConstrainedBox(
@@ -654,7 +636,7 @@ class _TrackDetailSheetState extends State<_TrackDetailSheet>
                                   : 'Fechar',
                               onTap: () => Navigator.pop(context),
                               trailing: widget.celebration
-                                  ? CinematicGlyph.path
+                                  ? CinematicGlyph.forward
                                   : null,
                               dense: true,
                             ),
@@ -666,7 +648,6 @@ class _TrackDetailSheetState extends State<_TrackDetailSheet>
                 ),
               ),
             ),
-          ),
         ),
       ),
     );
@@ -845,13 +826,7 @@ class _MedalVaultCompleteSheetState extends State<_MedalVaultCompleteSheet>
             width: 1.5,
           ),
           color: AppColors.night,
-          boxShadow: [
-            BoxShadow(
-              color: AppColors.medalGold.withValues(alpha: 0.35),
-              blurRadius: 32,
-              offset: const Offset(0, 12),
-            ),
-          ],
+          boxShadow: AppMetrics.cardShadow(elevated: true),
         ),
         child: ClipRRect(
           borderRadius: BorderRadius.circular(AppRadii.xl),

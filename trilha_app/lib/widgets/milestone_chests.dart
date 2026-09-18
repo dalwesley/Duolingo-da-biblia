@@ -216,10 +216,11 @@ class _ChestOpenDialog extends StatelessWidget {
                 shape: BoxShape.circle,
                 gradient: AppGradients.gold,
               ),
-              child: const Icon(
-                Icons.card_giftcard_rounded,
+              child: const CinematicIcon(
+                glyph: CinematicGlyph.gift,
                 size: 36,
-                color: AppColors.inkOnAccent,
+                accent: AppColors.inkOnAccent,
+                framed: false,
               ),
             ),
             const SizedBox(height: 18),

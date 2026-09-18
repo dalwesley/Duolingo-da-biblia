@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../data/trail_repository.dart';
+import '../models/caravan_profile_prefs.dart';
 import '../models/caravan_pilgrim_profile.dart';
 import '../models/pilgrim_medal_catalog.dart';
 import '../models/pilgrim_medal_models.dart';
@@ -273,6 +274,70 @@ class MedalEngagementService {
     return TrailRepository().getTrails().then(
           (catalog) => unlockedRareMedalsForProgress(progress, uid, catalog),
         );
+  }
+
+  static final _standingMedals =
+      <String, Future<({List<PilgrimMedalDef> rares, int total})>>{};
+
+  /// Medalhas do card do ranking (eu: local; outros: perfil público).
+  static Future<({List<PilgrimMedalDef> rares, int total})>
+      standingMedalsCached({
+    required bool isUser,
+    required String uid,
+    required String name,
+    required ProgressService progress,
+    required BackendService backend,
+  }) {
+    final key = isUser ? 'self:$uid' : uid;
+    if (key.isEmpty) {
+      return Future.value((rares: <PilgrimMedalDef>[], total: 0));
+    }
+    return _standingMedals.putIfAbsent(key, () async {
+      if (isUser) {
+        final catalog = await TrailRepository().getTrails();
+        return (
+          rares: unlockedRareMedalsForProgress(progress, uid, catalog),
+          total: unlockedCountForProgress(progress, uid, catalog),
+        );
+      }
+
+      final result = await backend.fetchPilgrimProfile(uid);
+      if (!result.hasDocument) {
+        return (rares: <PilgrimMedalDef>[], total: 0);
+      }
+      var profile = CaravanPilgrimProfile.fromCloudMap(
+        uid: uid,
+        data: result.data!,
+        fallbackName: name,
+      );
+      if (!profile.prefs.shouldShow(
+        CaravanProfileSection.medals,
+        isOwner: false,
+      )) {
+        return (rares: <PilgrimMedalDef>[], total: 0);
+      }
+      final catalog = await TrailRepository().getTrails();
+      final books = await BibleService.instance.books();
+      profile = await profile.enriched(catalog: catalog, bibleBooks: books);
+      final ctx = PilgrimMedalEvalContext.fromProfile(profile);
+      final vaults = medals.PilgrimMedals.evaluateVaults(
+        profile: profile,
+        catalog: catalog,
+        ctx: ctx,
+      );
+      return (
+        rares: [
+          for (final vault in vaults)
+            for (final status in vault.rareMedals)
+              if (status.unlocked) status.def,
+        ],
+        total: medals.PilgrimMedals.unlockedCount(
+          profile,
+          catalog,
+          ctx: ctx,
+        ),
+      );
+    });
   }
 
   static Color tierColor(PilgrimMedalTier tier) => medals.tierColor(tier);

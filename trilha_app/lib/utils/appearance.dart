@@ -101,7 +101,7 @@ class AppearanceStyle {
   Color get iconMuted => textOnDarkInactive;
 
   Color get textOnDarkInactive =>
-      AppColors.textOnDark.withValues(alpha: isDay ? 0.45 : 0.4);
+      AppColors.textOnDark.withValues(alpha: isDay ? 0.58 : 0.5);
 
   static AppearanceStyle resolve(AppearanceMode mode, [DateTime? now]) {
     final clock = now ?? DateTime.now();

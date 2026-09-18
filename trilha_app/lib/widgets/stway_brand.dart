@@ -109,6 +109,34 @@ class _ChevronAPainter extends CustomPainter {
       oldDelegate.color != color;
 }
 
+/// Caminho do logo STWAY — atmosfera de hero, cards e sheets.
+class StwayPathBackdrop extends StatelessWidget {
+  static const asset = 'assets/icon/splash_bg.png';
+
+  final Alignment alignment;
+  final double opacity;
+  final BoxFit fit;
+
+  const StwayPathBackdrop({
+    super.key,
+    this.alignment = const Alignment(0, 0.35),
+    this.opacity = 1,
+    this.fit = BoxFit.cover,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final image = Image.asset(
+      asset,
+      fit: fit,
+      alignment: alignment,
+      filterQuality: FilterQuality.high,
+    );
+    if (opacity >= 1) return image;
+    return Opacity(opacity: opacity, child: image);
+  }
+}
+
 class StwayTagline extends StatelessWidget {
   final Color? color;
   final double size;

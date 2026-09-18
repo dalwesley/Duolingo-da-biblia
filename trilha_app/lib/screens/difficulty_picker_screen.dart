@@ -175,9 +175,11 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen>
                                     AppRadii.sm,
                                   ),
                                 ),
-                                child: Icon(
-                                  Icons.close_rounded,
-                                  color: appearance.text,
+                                child: CinematicIcon(
+                                  glyph: CinematicGlyph.close,
+                                  size: 22,
+                                  accent: appearance.text,
+                                  framed: false,
                                 ),
                               ),
                             ),

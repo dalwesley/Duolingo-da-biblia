@@ -70,21 +70,33 @@ void showCharacterSealSheet(BuildContext context, CharacterSeal seal) {
 
 class CharacterSealsStrip extends StatelessWidget {
   final Iterable<String> completed;
+  final bool acquiredOnly;
 
-  const CharacterSealsStrip({super.key, required this.completed});
+  const CharacterSealsStrip({
+    super.key,
+    required this.completed,
+    this.acquiredOnly = false,
+  });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final unlocked = CharacterSeals.unlocked(completed);
+    if (acquiredOnly && unlocked.isEmpty) return const SizedBox.shrink();
+
     final next = CharacterSeals.nextLocked(completed);
-    final subtitle = unlocked.isEmpty
-        ? (next == null
-            ? 'Fato e verso de quem o texto já mostrou.'
-            : 'O próximo abre em ${next.name}.')
-        : next == null
-            ? '${unlocked.length} de ${CharacterSeals.all.length} — fato e verso, no texto.'
-            : '${unlocked.length} de ${CharacterSeals.all.length} · próximo: ${next.name}';
+    final shown = acquiredOnly ? unlocked : CharacterSeals.all;
+    final subtitle = acquiredOnly
+        ? (unlocked.length == 1
+            ? '1 selo — fato e verso, no texto.'
+            : '${unlocked.length} selos — fato e verso, no texto.')
+        : unlocked.isEmpty
+            ? (next == null
+                ? 'Fato e verso de quem o texto já mostrou.'
+                : 'O próximo abre em ${next.name}.')
+            : next == null
+                ? '${unlocked.length} de ${CharacterSeals.all.length} — fato e verso, no texto.'
+                : '${unlocked.length} de ${CharacterSeals.all.length} · próximo: ${next.name}';
     return GlassCard(
       padding: AppMetrics.cardPadding,
       child: Column(
@@ -101,7 +113,7 @@ class CharacterSealsStrip extends StatelessWidget {
             spacing: 10,
             runSpacing: 10,
             children: [
-              for (final seal in CharacterSeals.all)
+              for (final seal in shown)
                 GestureDetector(
                   onTap: unlocked.any((s) => s.id == seal.id)
                       ? () => showCharacterSealSheet(context, seal)

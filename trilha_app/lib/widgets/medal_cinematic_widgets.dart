@@ -22,7 +22,7 @@ class MedalSpotlightPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final center = Offset(size.width * 0.5, size.height * 0.22);
-    final glow = accent.withValues(alpha: (0.14 + breath * 0.1) * intensity);
+    final glow = accent.withValues(alpha: (0.06 + breath * 0.04) * intensity);
     final paint = Paint()
       ..shader = RadialGradient(
         center: Alignment(
@@ -36,7 +36,7 @@ class MedalSpotlightPainter extends CustomPainter {
     canvas.drawRect(Offset.zero & size, paint);
 
     final rayPaint = Paint()
-      ..color = accent.withValues(alpha: 0.04 * intensity)
+      ..color = accent.withValues(alpha: 0.02 * intensity)
       ..strokeWidth = 1.2;
     for (var i = 0; i < 6; i++) {
       final angle = (i / 6) * math.pi * 2 + breath * 0.3;
@@ -90,9 +90,9 @@ class MedalHeroEmblem extends StatelessWidget {
                 boxShadow: glowing
                     ? [
                         BoxShadow(
-                          color: accent.withValues(alpha: 0.45 + breath * 0.2),
-                          blurRadius: 32 + breath * 12,
-                          spreadRadius: 2 + breath * 4,
+                          color: Colors.black.withValues(alpha: 0.4),
+                          blurRadius: 8,
+                          offset: const Offset(0, 4),
                         ),
                       ]
                     : null,
@@ -106,8 +106,8 @@ class MedalHeroEmblem extends StatelessWidget {
               shape: BoxShape.circle,
               gradient: RadialGradient(
                 colors: [
-                  accent.withValues(alpha: 0.35),
-                  accent.withValues(alpha: 0.08),
+                  accent.withValues(alpha: 0.18),
+                  accent.withValues(alpha: 0.05),
                   Colors.transparent,
                 ],
                 stops: const [0.0, 0.55, 1.0],
@@ -275,11 +275,6 @@ class MedalVaultMedallion extends StatelessWidget {
                 shape: BoxShape.circle,
                 boxShadow: [
                   BoxShadow(
-                    color: palette.glow.withValues(alpha: 0.42),
-                    blurRadius: 10,
-                    spreadRadius: 0.5,
-                  ),
-                  BoxShadow(
                     color: Colors.black.withValues(alpha: 0.45),
                     blurRadius: 4,
                     offset: const Offset(0, 2),
@@ -297,7 +292,7 @@ class MedalVaultMedallion extends StatelessWidget {
               child: Opacity(
                 opacity: unlocked || mystery ? 1 : 0.55,
                 child: CinematicIcon(
-                  glyph: mystery ? CinematicGlyph.search : tile.glyph,
+                  glyph: mystery ? CinematicGlyph.spark : tile.glyph,
                   size: iconSize,
                   accent: unlocked
                       ? palette.glyph
@@ -408,43 +403,43 @@ class _MedalTierPalette {
           glow: AppColors.medalBronze,
         ),
       PilgrimMedalTier.silver => const _MedalTierPalette(
-          rimLight: Color(0xFFF2F6FC),
-          rimMid: Color(0xFFC8CEDC),
+          rimLight: Color(0xFFD0D6E0),
+          rimMid: Color(0xFFB0B6C4),
           rimDark: Color(0xFF7A8494),
-          faceLight: Color(0xFFE4EAF4),
+          faceLight: Color(0xFFC8CED8),
           faceMid: Color(0xFFA8B0C0),
           faceDark: Color(0xFF5A6270),
-          glyph: Color(0xFFFFFFFF),
+          glyph: Color(0xFFE8EDF2),
           glow: AppColors.medalSilver,
         ),
       PilgrimMedalTier.gold => const _MedalTierPalette(
-          rimLight: Color(0xFFFFF0C8),
-          rimMid: Color(0xFFFFD78A),
+          rimLight: Color(0xFFE8C878),
+          rimMid: Color(0xFFE0B868),
           rimDark: Color(0xFFB8862E),
-          faceLight: Color(0xFFFFE8A8),
-          faceMid: Color(0xFFE8B85A),
+          faceLight: Color(0xFFD4B060),
+          faceMid: Color(0xFFC9A048),
           faceDark: Color(0xFF8A6020),
-          glyph: Color(0xFFFFF8E8),
+          glyph: Color(0xFFF4E8C8),
           glow: AppColors.medalGold,
         ),
       PilgrimMedalTier.platinum => const _MedalTierPalette(
-          rimLight: Color(0xFFFFFFFF),
-          rimMid: Color(0xFFE8ECF4),
+          rimLight: Color(0xFFD0D6E0),
+          rimMid: Color(0xFFC4CAD6),
           rimDark: Color(0xFF98A4B8),
-          faceLight: Color(0xFFF8FAFF),
-          faceMid: Color(0xFFD0D8E8),
+          faceLight: Color(0xFFD4DAE4),
+          faceMid: Color(0xFFB8C0D0),
           faceDark: Color(0xFF7888A0),
-          glyph: Color(0xFFFFFFFF),
+          glyph: Color(0xFFE8EDF2),
           glow: AppColors.medalPlatinum,
         ),
       PilgrimMedalTier.diamond => const _MedalTierPalette(
-          rimLight: Color(0xFFE8FFFF),
-          rimMid: Color(0xFF9EE8FF),
+          rimLight: Color(0xFFA8D4E0),
+          rimMid: Color(0xFF7AB4C4),
           rimDark: Color(0xFF3A9CB8),
-          faceLight: Color(0xFFB8F4FF),
-          faceMid: Color(0xFF68D0F0),
+          faceLight: Color(0xFF88C4D4),
+          faceMid: Color(0xFF5AA8BC),
           faceDark: Color(0xFF2878A0),
-          glyph: Color(0xFFE8FFFF),
+          glyph: Color(0xFFD0E8F0),
           glow: AppColors.medalDiamond,
         ),
       PilgrimMedalTier.mirra => const _MedalTierPalette(
@@ -487,7 +482,6 @@ class _MedallionCoinPainter extends CustomPainter {
 
     _drawOuterRim(canvas, center, rimR);
     _drawFace(canvas, center, faceR, innerR);
-    _drawSpecular(canvas, center, faceR);
     _drawTicks(canvas, center, rimR);
   }
 
@@ -497,14 +491,11 @@ class _MedallionCoinPainter extends CustomPainter {
       ..shader = SweepGradient(
         colors: [
           palette.rimDark,
-          palette.rimLight,
           palette.rimMid,
-          palette.rimDark,
           palette.rimLight,
-          palette.rimMid,
           palette.rimDark,
         ],
-        stops: const [0.0, 0.15, 0.35, 0.5, 0.65, 0.85, 1.0],
+        stops: const [0.0, 0.35, 0.7, 1.0],
       ).createShader(rect);
     canvas.drawCircle(center, radius, paint);
 
@@ -540,24 +531,10 @@ class _MedallionCoinPainter extends CustomPainter {
     canvas.drawCircle(center, innerR, innerRing);
 
     final highlightRing = Paint()
-      ..color = palette.rimLight.withValues(alpha: 0.25)
+      ..color = palette.rimLight.withValues(alpha: 0.12)
       ..style = PaintingStyle.stroke
       ..strokeWidth = 0.6;
     canvas.drawCircle(center, faceR * 0.92, highlightRing);
-  }
-
-  void _drawSpecular(Canvas canvas, Offset center, double faceR) {
-    final specCenter = center + Offset(-faceR * 0.22, -faceR * 0.28);
-    final spec = Paint()
-      ..shader = RadialGradient(
-        colors: [
-          Colors.white.withValues(alpha: 0.38),
-          Colors.white.withValues(alpha: 0.08),
-          Colors.transparent,
-        ],
-        stops: const [0.0, 0.45, 1.0],
-      ).createShader(Rect.fromCircle(center: specCenter, radius: faceR * 0.42));
-    canvas.drawCircle(specCenter, faceR * 0.38, spec);
   }
 
   void _drawTicks(Canvas canvas, Offset center, double rimR) {
@@ -609,7 +586,7 @@ class MedalTrackEmblem extends StatelessWidget {
         ? tierColor(current.tier)
         : a.textMuted(0.38);
     final tile = PilgrimMedalTile.fromTrack(trackState);
-    final diameter = compact ? 36.0 : 40.0;
+    final diameter = compact ? 40.0 : 48.0;
 
     return Material(
       color: Colors.transparent,

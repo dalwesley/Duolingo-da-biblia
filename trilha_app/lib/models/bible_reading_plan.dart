@@ -1,22 +1,33 @@
-/// Plano de leitura bíblica persistido (canônico ou cronológico).
+/// Plano de leitura: canônico ou cronológico.
+/// Navegação da aba Bíblia também oferece alfabética.
 enum BibleReadingOrder {
   canonical,
-  chronological;
+  chronological,
+  alphabetical;
 
   String get storageKey => name;
 
   String get label => switch (this) {
         BibleReadingOrder.canonical => 'Ordem da Bíblia',
         BibleReadingOrder.chronological => 'Ordem cronológica',
+        BibleReadingOrder.alphabetical => 'Ordem alfabética',
       };
 
   String get shortLabel => switch (this) {
         BibleReadingOrder.canonical => 'Canônica',
         BibleReadingOrder.chronological => 'Cronológica',
+        BibleReadingOrder.alphabetical => 'Alfabética',
       };
+
+  /// Plano de leitura — A–Z não é um percurso de estudo.
+  static const planOrders = [
+    BibleReadingOrder.canonical,
+    BibleReadingOrder.chronological,
+  ];
 
   static BibleReadingOrder fromStorage(String? raw) {
     if (raw == 'chronological') return BibleReadingOrder.chronological;
+    if (raw == 'alphabetical') return BibleReadingOrder.alphabetical;
     return BibleReadingOrder.canonical;
   }
 }

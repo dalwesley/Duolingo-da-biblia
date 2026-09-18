@@ -42,8 +42,8 @@ class RealmVisuals {
             tagline: 'Discipulado, oração e a história da fé',
           ),
         TrailRealm.teologia => const RealmVisuals(
-            accent: AppColors.slate,
-            glow: AppColors.slateDeep,
+            accent: AppColors.sand,
+            glow: AppColors.sandDeep,
             glyph: CinematicGlyph.scroll,
             eyebrow: 'O FUNDAMENTO',
             tagline: 'Hermenêutica, línguas e a doutrina da fé',

@@ -102,6 +102,7 @@ class _HeroContinueCardState extends State<HeroContinueCard>
     final mood = resolveHeroCardMood(
       atRisk: widget.atRisk,
       freezeUsedThisWeek: progress.streakFreezeUsedThisWeek,
+      walkedToday: walkedToday,
     );
     final style = HeroCardMoodStyle.of(mood, trailAccent: trailAccent);
 
@@ -176,29 +177,7 @@ class _HeroContinueCardState extends State<HeroContinueCard>
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
             border: Border.all(color: style.border, width: style.borderWidth),
-            boxShadow: [
-              ...AppMetrics.cardShadow(elevated: true),
-              BoxShadow(
-                color: style.glow,
-                blurRadius: switch (mood) {
-                  HeroCardMood.alive => 28,
-                  HeroCardMood.frozen => 26,
-                  HeroCardMood.dusty => 18,
-                },
-                offset: const Offset(0, 8),
-                spreadRadius: switch (mood) {
-                  HeroCardMood.alive => 0,
-                  HeroCardMood.frozen => 2,
-                  HeroCardMood.dusty => 0,
-                },
-              ),
-              if (mood == HeroCardMood.alive)
-                BoxShadow(
-                  color: Colors.white.withValues(alpha: 0.08),
-                  blurRadius: 1,
-                  offset: const Offset(0, -1),
-                ),
-            ],
+            boxShadow: AppMetrics.cardShadow(elevated: true),
           ),
           child: ClipRRect(
             borderRadius: BorderRadius.circular(
@@ -224,25 +203,6 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                     ),
                   ),
                 ),
-                // Camada de vidro — só em dia (frosted glass tint)
-                if (mood == HeroCardMood.alive)
-                  Positioned.fill(
-                    child: DecoratedBox(
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          begin: Alignment.topLeft,
-                          end: Alignment.bottomRight,
-                          colors: [
-                            Colors.white.withValues(alpha: 0.07),
-                            Colors.white.withValues(alpha: 0.02),
-                            Colors.transparent,
-                            AppColors.primaryLight.withValues(alpha: 0.04),
-                          ],
-                          stops: const [0.0, 0.2, 0.65, 1.0],
-                        ),
-                      ),
-                    ),
-                  ),
                 // Gelo / vivo: atmosfera atrás. Dusty sobe por cima do conteúdo.
                 if (mood != HeroCardMood.dusty)
                   Positioned.fill(child: HeroCardAtmosphere(mood: mood)),
@@ -484,10 +444,11 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                               child: Row(
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
-                                  Icon(
-                                    Icons.auto_awesome_rounded,
+                                  CinematicIcon(
+                                    glyph: CinematicGlyph.spark,
                                     size: 14,
-                                    color: rewardColor,
+                                    accent: rewardColor,
+                                    framed: false,
                                   ),
                                   const SizedBox(width: 5),
                                   Text(
@@ -508,7 +469,6 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                       _CtaBar(
                         label: ctaLabel,
                         mood: mood,
-                        pulseAnimation: _pulseController,
                       ),
                       const SizedBox(height: 12),
                       Center(
@@ -618,27 +578,20 @@ class _HeroContinueCardState extends State<HeroContinueCard>
 class _CtaBar extends StatelessWidget {
   final String label;
   final HeroCardMood mood;
-  final Animation<double>? pulseAnimation;
 
-  const _CtaBar({required this.label, required this.mood, this.pulseAnimation});
+  const _CtaBar({required this.label, required this.mood});
 
   @override
   Widget build(BuildContext context) {
     if (mood == HeroCardMood.alive) {
-      return _AliveShineCta(label: label, pulseAnimation: pulseAnimation);
+      return _AliveShineCta(label: label);
     }
 
     final gradient = switch (mood) {
       HeroCardMood.frozen => const LinearGradient(
         begin: Alignment.topCenter,
         end: Alignment.bottomCenter,
-        colors: [
-          Color(0xFFE0F6FC),
-          Color(0xFFB8E8F5),
-          AppColors.ice,
-          Color(0xFF3A8AAA),
-        ],
-        stops: [0.0, 0.35, 0.7, 1.0],
+        colors: [AppColors.ice, Color(0xFF3A8AAA)],
       ),
       HeroCardMood.dusty => const LinearGradient(
         begin: Alignment.topCenter,
@@ -660,55 +613,21 @@ class _CtaBar extends StatelessWidget {
         gradient: gradient,
         borderRadius: BorderRadius.circular(AppRadii.lg),
         border: mood == HeroCardMood.frozen
-            ? Border.all(color: Colors.white.withValues(alpha: 0.45))
+            ? Border.all(color: AppColors.iceDeep.withValues(alpha: 0.55))
             : Border.all(
                 color: const Color(0xFF4A3010).withValues(alpha: 0.65),
               ),
-        boxShadow: switch (mood) {
-          HeroCardMood.frozen => [
-            BoxShadow(
-              color: AppColors.ice.withValues(alpha: 0.45),
-              blurRadius: 16,
-              offset: const Offset(0, 4),
-            ),
-          ],
-          HeroCardMood.dusty => [
-            BoxShadow(
-              color: Colors.black.withValues(alpha: 0.5),
-              offset: const Offset(0, 4),
-              blurRadius: 0,
-            ),
-            BoxShadow(
-              color: const Color(0xFF1A1008).withValues(alpha: 0.45),
-              blurRadius: 10,
-              offset: const Offset(0, 5),
-            ),
-          ],
-          HeroCardMood.alive => const [],
-        },
+        boxShadow: [
+          BoxShadow(
+            color: Colors.black.withValues(alpha: 0.45),
+            offset: const Offset(0, 4),
+            blurRadius: 0,
+          ),
+        ],
       ),
       child: Stack(
         alignment: Alignment.center,
         children: [
-          if (mood == HeroCardMood.frozen)
-            Positioned(
-              top: 0,
-              left: 16,
-              right: 16,
-              child: Container(
-                height: 1.5,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(2),
-                  gradient: LinearGradient(
-                    colors: [
-                      Colors.transparent,
-                      Colors.white.withValues(alpha: 0.7),
-                      Colors.transparent,
-                    ],
-                  ),
-                ),
-              ),
-            ),
           if (mood == HeroCardMood.dusty)
             Positioned.fill(
               child: DecoratedBox(
@@ -726,47 +645,21 @@ class _CtaBar extends StatelessWidget {
                 ),
               ),
             ),
-          // Adiciona shimmer sutil quando vivo
-          AnimatedBuilder(
-            animation: pulseAnimation ?? AlwaysStoppedAnimation(0.0),
-            builder: (context, child) {
-              if (mood == HeroCardMood.alive) {
-                final pulseValue = pulseAnimation?.value ?? 0.0;
-                final slide = (pulseValue * 1.8) - 0.4;
-                return ShaderMask(
-                  shaderCallback: (rect) {
-                    return LinearGradient(
-                      colors: [
-                        Colors.white.withValues(alpha: 0.0),
-                        Colors.white.withValues(alpha: 0.55),
-                        Colors.white.withValues(alpha: 0.0),
-                      ],
-                      stops: [
-                        (slide - 0.18).clamp(0.0, 1.0),
-                        slide.clamp(0.0, 1.0),
-                        (slide + 0.18).clamp(0.0, 1.0),
-                      ],
-                      begin: Alignment(-1 - slide, 0),
-                      end: Alignment(1 - slide, 0),
-                    ).createShader(rect);
-                  },
-                  blendMode: BlendMode.srcATop,
-                  child: child,
-                );
-              }
-              return child!;
-            },
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  label.toUpperCase(),
-                  style: AppTypography.cta(size: 16).copyWith(color: ink),
-                ),
-                const SizedBox(width: 10),
-                Icon(Icons.arrow_forward_rounded, size: 20, color: ink),
-              ],
-            ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                label.toUpperCase(),
+                style: AppTypography.cta(size: 16).copyWith(color: ink),
+              ),
+              const SizedBox(width: 10),
+              CinematicIcon(
+                glyph: CinematicGlyph.forward,
+                size: 20,
+                accent: ink,
+                framed: false,
+              ),
+            ],
           ),
         ],
       ),
@@ -774,90 +667,45 @@ class _CtaBar extends StatelessWidget {
   }
 }
 
-/// CTA em dia — portal/ritual, com identidade própria e menos “botão genérico”.
+/// CTA em dia — açafrão chapado, sem reflexo.
 class _AliveShineCta extends StatelessWidget {
   final String label;
-  final Animation<double>? pulseAnimation;
 
-  const _AliveShineCta({required this.label, this.pulseAnimation});
+  const _AliveShineCta({required this.label});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
+      padding: const EdgeInsets.symmetric(vertical: 16),
       decoration: BoxDecoration(
+        color: AppColors.accent,
         borderRadius: BorderRadius.circular(AppRadii.lg),
         boxShadow: [
           BoxShadow(
-            color: AppColors.accentBright.withValues(alpha: 0.55),
-            blurRadius: 22,
+            color: Colors.black.withValues(alpha: 0.45),
             offset: const Offset(0, 4),
-            spreadRadius: 1,
-          ),
-          BoxShadow(
-            color: AppColors.accent.withValues(alpha: 0.35),
-            blurRadius: 36,
-            offset: const Offset(0, 10),
+            blurRadius: 0,
           ),
         ],
       ),
-      child: Container(
-        padding: const EdgeInsets.symmetric(vertical: 16),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(AppRadii.lg),
-          gradient: const LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              Color(0xFFFFF0A8),
-              AppColors.accentBright,
-              AppColors.accent,
-              Color(0xFFE0A800),
-            ],
-            stops: [0.0, 0.28, 0.7, 1.0],
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(
+            label.toUpperCase(),
+            style: AppTypography.cta(
+              size: 16,
+            ).copyWith(color: AppColors.inkOnAccent, letterSpacing: 1.2),
           ),
-        ),
-        child: Stack(
-          alignment: Alignment.center,
-          children: [
-            // Brilho suave atravessando a face
-            Positioned.fill(
-              child: DecoratedBox(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(AppRadii.lg - 1),
-                  gradient: LinearGradient(
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight,
-                    colors: [
-                      Colors.white.withValues(alpha: 0.22),
-                      Colors.white.withValues(alpha: 0.05),
-                      Colors.transparent,
-                      Colors.white.withValues(alpha: 0.08),
-                    ],
-                    stops: const [0.0, 0.22, 0.55, 1.0],
-                  ),
-                ),
-              ),
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  label.toUpperCase(),
-                  style: AppTypography.cta(
-                    size: 16,
-                  ).copyWith(color: AppColors.inkOnAccent, letterSpacing: 1.2),
-                ),
-                const SizedBox(width: 10),
-                Icon(
-                  Icons.arrow_forward_rounded,
-                  size: 20,
-                  color: AppColors.inkOnAccent.withValues(alpha: 0.9),
-                ),
-              ],
-            ),
-          ],
-        ),
+          const SizedBox(width: 10),
+          CinematicIcon(
+            glyph: CinematicGlyph.forward,
+            size: 20,
+            accent: AppColors.inkOnAccent.withValues(alpha: 0.9),
+            framed: false,
+          ),
+        ],
       ),
     );
   }

@@ -37,7 +37,7 @@ class CompanionNudgeHomeCard extends StatelessWidget {
             Row(
               children: [
                 const CinematicIcon(
-                  glyph: CinematicGlyph.lamp,
+                  glyph: CinematicGlyph.heart,
                   size: 40,
                   accent: AppColors.accent,
                   glowing: true,

@@ -163,7 +163,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
     await Navigator.of(context).pushReplacement(
       PageRouteBuilder(
         pageBuilder: (context, animation, secondaryAnimation) =>
-            const MainShell(initialTrailSlug: 'genesis-1-11'),
+            const MainShell(),
         transitionsBuilder: (context, animation, secondaryAnimation, child) =>
             FadeTransition(opacity: animation, child: child),
         transitionDuration: const Duration(milliseconds: 640),
@@ -176,7 +176,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
     _Beat.habit => 'Continuar',
     _Beat.walk => 'Continuar',
     _Beat.rhythm => 'Definir ritmo',
-    _Beat.threshold => 'Abrir primeira lição',
+    _Beat.threshold => 'Começar',
   };
 
   bool get _showSkip => _beat != _Beat.threshold;
@@ -599,14 +599,14 @@ class _StoryPointCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text(title, style: AppTypography.title(size: 17, color: a.text)),
+                Text(
+                  title,
+                  style: AppTypography.title(size: 17, color: a.text),
+                ),
                 const SizedBox(height: 4),
                 Text(
                   subtitle,
-                  style: AppTypography.body(
-                    size: 13,
-                    color: a.textMuted(0.62),
-                  ),
+                  style: AppTypography.body(size: 13, color: a.textMuted(0.62)),
                 ),
               ],
             ),
@@ -914,7 +914,7 @@ class _ThresholdBeat extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           Text(
-            'Começamos no princípio — Gênesis.',
+            'A primeira missão espera em Hoje.',
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 14,
@@ -954,14 +954,7 @@ class _FirstMissionHero extends StatelessWidget {
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
         border: Border.all(color: style.border, width: style.borderWidth),
-        boxShadow: [
-          ...AppMetrics.cardShadow(elevated: true),
-          BoxShadow(
-            color: style.glow,
-            blurRadius: 28,
-            offset: const Offset(0, 8),
-          ),
-        ],
+        boxShadow: AppMetrics.cardShadow(elevated: true),
       ),
       child: ClipRRect(
         borderRadius: BorderRadius.circular(AppMetrics.heroRadius - 0.5),
@@ -1077,12 +1070,7 @@ class _HeroChip extends StatelessWidget {
       child: Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          CinematicIcon(
-            glyph: glyph,
-            size: 14,
-            accent: accent,
-            framed: false,
-          ),
+          CinematicIcon(glyph: glyph, size: 14, accent: accent, framed: false),
           const SizedBox(width: 6),
           Text(
             label,

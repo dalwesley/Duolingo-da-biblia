@@ -13,7 +13,7 @@ class AppGradients {
   static const hero = LinearGradient(
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
-    colors: [AppColors.primaryDark, AppColors.primary, AppColors.primaryLight],
+    colors: [AppColors.primaryDark, AppColors.primary, AppColors.primary],
   );
 
   /// CTA chapado — amarelo sólido, sem bevel nem topo brilhante.

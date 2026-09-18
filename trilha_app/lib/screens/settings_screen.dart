@@ -224,10 +224,10 @@ class _SettingsScreenState extends State<SettingsScreen>
           _groupedCard(
             a,
             title: 'O ritmo',
-            glyph: CinematicGlyph.path,
+            glyph: CinematicGlyph.target,
             children: [
               Text(
-                'Quantos passos você quer dar hoje.',
+                'Meta de missões por dia.',
                 style: AppTypography.body(
                   size: 13,
                   height: 1.35,
@@ -282,7 +282,7 @@ class _SettingsScreenState extends State<SettingsScreen>
           _groupedCard(
             a,
             title: 'Lembretes',
-            glyph: CinematicGlyph.mail,
+            glyph: CinematicGlyph.bell,
             children: [
               _toggle(
                 a,
@@ -308,7 +308,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                   }
                   await NotificationService.instance.syncFromProgress(progress);
                 },
-                glyph: CinematicGlyph.mail,
+                glyph: CinematicGlyph.bell,
               ),
             ],
           ),
@@ -364,7 +364,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                   children: [
                     GhostCta(
                       label: 'Rever introdução',
-                      leading: CinematicGlyph.path,
+                      leading: CinematicGlyph.scroll,
                       expanded: true,
                       onTap: () async {
                         if (!mounted) return;
@@ -882,7 +882,7 @@ class _SettingsScreenState extends State<SettingsScreen>
     final prefs = progress.caravanProfilePrefs;
     final visible = prefs.isVisible(section);
     final glyph = switch (section) {
-      CaravanProfileSection.presence => CinematicGlyph.spark,
+      CaravanProfileSection.presence => CinematicGlyph.people,
       CaravanProfileSection.ranking => CinematicGlyph.podium,
       CaravanProfileSection.daysAsLeader => CinematicGlyph.crown,
       CaravanProfileSection.lastMission => CinematicGlyph.path,
@@ -1260,7 +1260,12 @@ class _ProfileHeader extends StatelessWidget {
                   suffixIcon: nameDirty
                       ? IconButton(
                           onPressed: onSaveName,
-                          icon: const Icon(Icons.check_rounded),
+                          icon: const CinematicIcon(
+                            glyph: CinematicGlyph.check,
+                            size: 20,
+                            accent: AppColors.accent,
+                            framed: false,
+                          ),
                           color: AppColors.accent,
                           tooltip: 'Salvar',
                         )
@@ -1287,24 +1292,30 @@ class _RhythmPath extends StatelessWidget {
 
   const _RhythmPath({required this.progress});
 
+  static const _options = <({int steps, String pace, String time})>[
+    (steps: 1, pace: 'Leve', time: '~3 min'),
+    (steps: 2, pace: 'Firme', time: '~6 min'),
+    (steps: 3, pace: 'Intenso', time: '~9 min'),
+  ];
+
   @override
   Widget build(BuildContext context) {
     final goal = progress.settings.dailyGoal;
-    return Row(
+    return Column(
       children: [
-        for (final n in [1, 2, 3]) ...[
-          if (n > 1) const SizedBox(width: 8),
-          Expanded(
-            child: _RhythmTile(
-              steps: n,
-              selected: goal == n,
-              onTap: () {
-                HapticFeedback.selectionClick();
-                progress.updateSettings(
-                  progress.settings.copyWith(dailyGoal: n),
-                );
-              },
-            ),
+        for (var i = 0; i < _options.length; i++) ...[
+          if (i > 0) const SizedBox(height: 8),
+          _RhythmStation(
+            steps: _options[i].steps,
+            pace: _options[i].pace,
+            time: _options[i].time,
+            selected: goal == _options[i].steps,
+            onTap: () {
+              HapticFeedback.selectionClick();
+              progress.updateSettings(
+                progress.settings.copyWith(dailyGoal: _options[i].steps),
+              );
+            },
           ),
         ],
       ],
@@ -1312,13 +1323,17 @@ class _RhythmPath extends StatelessWidget {
   }
 }
 
-class _RhythmTile extends StatelessWidget {
+class _RhythmStation extends StatelessWidget {
   final int steps;
+  final String pace;
+  final String time;
   final bool selected;
   final VoidCallback onTap;
 
-  const _RhythmTile({
+  const _RhythmStation({
     required this.steps,
+    required this.pace,
+    required this.time,
     required this.selected,
     required this.onTap,
   });
@@ -1326,120 +1341,87 @@ class _RhythmTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final label = steps == 1 ? '1 passo' : '$steps passos';
 
     return GestureDetector(
       onTap: onTap,
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 220),
         curve: Curves.easeOutCubic,
-        padding: const EdgeInsets.fromLTRB(6, 12, 6, 12),
+        padding: const EdgeInsets.fromLTRB(12, 12, 12, 12),
         decoration: BoxDecoration(
           color: selected
-              ? AppColors.accent.withValues(alpha: 0.12)
+              ? AppMetrics.accentFill(alpha: 0.22)
               : a.cardFillSoft,
           borderRadius: BorderRadius.circular(AppRadii.md),
           border: Border.all(
             color: selected
-                ? AppColors.accent.withValues(alpha: 0.9)
+                ? AppMetrics.accentBorder(alpha: 0.85)
                 : a.cardBorder,
             width: selected ? 1.75 : 1.25,
           ),
         ),
-        child: Column(
+        child: Row(
           children: [
-            SizedBox(
+            Container(
+              width: 40,
               height: 40,
-              width: double.infinity,
-              child: CustomPaint(
-                painter: _RhythmStationsPainter(
-                  steps: steps,
-                  lit: selected,
-                  color: AppColors.accent,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                color: selected
+                    ? AppColors.accent
+                    : a.cardFill,
+                border: Border.all(
+                  color: selected
+                      ? AppColors.accent
+                      : a.cardBorder,
+                ),
+              ),
+              child: Text(
+                '$steps',
+                style: AppTypography.title(
+                  size: 18,
+                  weight: FontWeight.w900,
+                  color: selected ? AppColors.inkOnAccent : a.text,
                 ),
               ),
             ),
-            const SizedBox(height: 8),
-            Text(
-              steps == 1 ? '1 passo' : '$steps passos',
-              style: AppTypography.label(
-                size: 11,
-                letterSpacing: 0.4,
-                color: selected ? AppColors.accent : a.textMuted(0.72),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    label,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: AppTypography.title(size: 16, color: a.text),
+                  ),
+                  const SizedBox(height: 2),
+                  Text(
+                    '$pace · $time',
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: AppTypography.body(
+                      size: 12,
+                      color: a.textMuted(selected ? 0.78 : 0.58),
+                    ),
+                  ),
+                ],
               ),
             ),
+            if (selected)
+              const SoftBadge(
+                text: 'Atual',
+                glyph: CinematicGlyph.check,
+                accent: AppColors.accent,
+              ),
           ],
         ),
       ),
     );
   }
-}
-
-/// Estações na trilha — 1/2/3 marcos. A lanterna fica só para vidas da missão.
-class _RhythmStationsPainter extends CustomPainter {
-  final int steps;
-  final bool lit;
-  final Color color;
-
-  const _RhythmStationsPainter({
-    required this.steps,
-    required this.lit,
-    required this.color,
-  });
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    final ink = lit ? color : color.withValues(alpha: 0.42);
-    final r = steps == 1 ? 6.5 : 5.0;
-    final pad = r + 6;
-    final cy = size.height * 0.55;
-
-    Offset at(int i) {
-      if (steps == 1) return Offset(size.width / 2, cy);
-      final t = i / (steps - 1);
-      return Offset(
-        pad + t * (size.width - pad * 2),
-        cy + (0.5 - t) * (size.height * 0.30),
-      );
-    }
-
-    final pts = [for (var i = 0; i < steps; i++) at(i)];
-    final spine = Path();
-    if (steps == 1) {
-      final p = pts.first;
-      spine
-        ..moveTo(p.dx - 7, p.dy + 11)
-        ..quadraticBezierTo(p.dx - 4, p.dy + 1, p.dx, p.dy)
-        ..quadraticBezierTo(p.dx + 5, p.dy - 2, p.dx + 6, p.dy - 12);
-    } else {
-      spine.moveTo(pts.first.dx, pts.first.dy);
-      for (var i = 1; i < pts.length; i++) {
-        final prev = pts[i - 1];
-        final next = pts[i];
-        final ctrl = Offset(
-          (prev.dx + next.dx) / 2,
-          (prev.dy + next.dy) / 2 - 4,
-        );
-        spine.quadraticBezierTo(ctrl.dx, ctrl.dy, next.dx, next.dy);
-      }
-    }
-
-    canvas.drawPath(
-      spine,
-      Paint()
-        ..color = ink
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = steps == 1 ? 5 : 4
-        ..strokeCap = StrokeCap.round
-        ..strokeJoin = StrokeJoin.round,
-    );
-    for (final p in pts) {
-      canvas.drawCircle(p, r, Paint()..color = ink);
-    }
-  }
-
-  @override
-  bool shouldRepaint(covariant _RhythmStationsPainter old) =>
-      old.steps != steps || old.lit != lit || old.color != color;
 }
 
 class _ModeStation extends StatelessWidget {

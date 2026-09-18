@@ -189,10 +189,10 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
             ? (widget.isLast ? 'Seguir' : 'Continuar')
             : 'Tentar de novo';
     final glyph = outOfLamps
-        ? CinematicGlyph.frost
+        ? CinematicGlyph.lamp
         : isCorrect
             ? CinematicGlyph.check
-            : CinematicGlyph.book;
+            : CinematicGlyph.wrong;
     final verse = (_verseText ?? '').trim();
     final ref = (exercise.reference ?? '').trim();
     final showVerse = _needsEvidence && verse.isNotEmpty;
@@ -244,11 +244,6 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
                       ),
                       boxShadow: [
                         ...AppTheme.cardShadow(elevated: true),
-                        BoxShadow(
-                          color: color.withValues(alpha: 0.22),
-                          blurRadius: 28,
-                          spreadRadius: -4,
-                        ),
                       ],
                     ),
                     child: Padding(
@@ -267,12 +262,13 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
                                 minWidth: 36,
                                 minHeight: 36,
                               ),
-                              icon: Icon(
-                                Icons.flag_outlined,
+                              icon: CinematicIcon(
+                                glyph: CinematicGlyph.flag,
                                 size: 18,
-                                color: AppColors.textOnDark.withValues(
+                                accent: AppColors.textOnDark.withValues(
                                   alpha: 0.38,
                                 ),
+                                framed: false,
                               ),
                             ),
                           ),
@@ -328,8 +324,8 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
                               label: cta,
                               onTap: widget.onContinue,
                               trailing: isCorrect
-                                  ? CinematicGlyph.path
-                                  : CinematicGlyph.echo,
+                                  ? CinematicGlyph.forward
+                                  : CinematicGlyph.refresh,
                               showArrow: false,
                             ),
                           ),

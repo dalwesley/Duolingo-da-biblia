@@ -18,34 +18,34 @@ class AppColors {
 
   // Marca — azul trilha mais vivo + amarelo do wordmark
   static const primary = Color(0xFF4A9EFF);
-  static const primaryLight = Color(0xFF8AD0FF);
+  static const primaryLight = Color(0xFF6BA8C4);
   static const primaryDark = Color(0xFF040910);
 
   /// CTA / conquista — amarelo do wordmark STWAY (#F7BB01), chapado.
   static const accent = Color(0xFFF7BB01);
   static const accentDark = Color(0xFFC99200);
-  static const accentSoft = Color(0xFFFFE9A0);
+  static const accentSoft = Color(0xFFD4C078);
 
-  /// Só topo do gradiente CTA — não usar como amarelo sólido de UI.
-  static const accentBright = Color(0xFFFFE066);
+  /// Variante mais clara do accent — nunca como amarelo sólido de UI.
+  static const accentBright = Color(0xFFE0BE4A);
   static const inkOnAccent = Color(0xFF140E00);
 
-  static const teal = Color(0xFF2EE6C5);
+  static const teal = Color(0xFF3AAB98);
   static const streak = Color(0xFFFF3D6E);
 
-  /// Compreensão — coral luminoso, complementar ao céu teal/azul.
+  /// Compreensão — coral, complementar ao céu teal/azul.
   static const coral = Color(0xFFFF9468);
-  static const coralBright = Color(0xFFFFCDB8);
-  static const coralSoft = Color(0xFFFFE0D2);
+  static const coralBright = Color(0xFFE0B098);
+  static const coralSoft = Color(0xFFE8C8BC);
   static const inkOnCoral = Color(0xFF1C0704);
 
-  /// Interpretação — orquídea luminosa, fora da família azul do céu.
+  /// Interpretação — orquídea, fora da família azul do céu.
   static const orchid = Color(0xFFF48CFF);
-  static const orchidBright = Color(0xFFF8C6FF);
-  static const orchidSoft = Color(0xFFFADAFD);
+  static const orchidBright = Color(0xFFC8A0D0);
+  static const orchidSoft = Color(0xFFD8C0DC);
   static const inkOnOrchid = Color(0xFF16081C);
-  static const ice = Color(0xFF7AD4F0);
-  static const iceSoft = Color(0xFFB8EAF8);
+  static const ice = Color(0xFF5AABC0);
+  static const iceSoft = Color(0xFF8BB8C8);
   static const iceDeep = Color(0xFF0E2E3C);
 
   static const error = Color(0xFFFF4F63);
@@ -60,6 +60,25 @@ class AppColors {
         v == coralBright.toARGB32() ||
         v == orchid.toARGB32() ||
         v == orchidBright.toARGB32();
+  }
+
+  /// Tinta de glifo que punciona no céu pintado e nos cards.
+  ///
+  /// Ouro/coral/orquídea ficam chapados. Ciano/azul do céu (cedar, slate,
+  /// ice, primary) sobem rumo ao branco. Pretos de CTA não sobem.
+  static Color glyphInk(Color color) {
+    if (isSolidChrome(color)) return color;
+    final l = color.computeLuminance();
+    if (l < 0.08) return color;
+
+    const target = 0.52;
+    if (l >= target) return color;
+
+    final hue = HSLColor.fromColor(color).hue;
+    final skyFamily = hue >= 165 && hue <= 235;
+    final maxLift = skyFamily ? 0.55 : 0.34;
+    final t = ((target - l) * (skyFamily ? 1.2 : 0.85)).clamp(0.0, maxLift);
+    return Color.lerp(color, Colors.white, t)!;
   }
 
   // HUD — void mais profundo, painéis com contraste de jogo
@@ -82,12 +101,12 @@ class AppColors {
   static const textMuted = Color(0xFF5A6878);
   static const textMutedDark = Color(0xFF9AADC0);
 
-  static const medalGold = Color(0xFFFFD78A);
-  static const medalSilver = Color(0xFFC8CEDC);
+  static const medalGold = Color(0xFFE0B868);
+  static const medalSilver = Color(0xFFB0B6C4);
   static const medalBronze = Color(0xFFC97B4A);
   static const medalIron = Color(0xFF8B939E);
-  static const medalPlatinum = Color(0xFFE8ECF4);
-  static const medalDiamond = Color(0xFF9EE8FF);
+  static const medalPlatinum = Color(0xFFC4CAD6);
+  static const medalDiamond = Color(0xFF7AB4C4);
   static const medalMirra = Color(0xFFB88A5A);
   static const medalInk = Color(0xFF4A3400);
 

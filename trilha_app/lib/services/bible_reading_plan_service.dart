@@ -11,7 +11,8 @@ class BibleReadingPlanService {
   Future<List<PlanChapterRef>> buildSequence(BibleReadingOrder order) async {
     final books = await BibleService.instance.books();
     final indices = switch (order) {
-      BibleReadingOrder.canonical => [
+      // Alfabética é só navegação; plano cai na ordem da Bíblia.
+      BibleReadingOrder.canonical || BibleReadingOrder.alphabetical => [
           for (var i = 0; i < books.length; i++) i,
         ],
       BibleReadingOrder.chronological => [

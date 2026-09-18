@@ -519,12 +519,6 @@ class _RealmPosterState extends State<_RealmPoster> {
             borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
             boxShadow: [
               ...AppMetrics.cardShadow(elevated: true),
-              if (featured)
-                BoxShadow(
-                  color: visuals.accent.withValues(alpha: 0.22),
-                  blurRadius: 28,
-                  offset: const Offset(0, 10),
-                ),
             ],
           ),
           child: ClipRRect(
@@ -627,8 +621,8 @@ class _RealmPosterState extends State<_RealmPoster> {
                           ),
                           const SizedBox(width: 4),
                           CinematicIcon(
-                            glyph: CinematicGlyph.path,
-                            size: 16,
+                            glyph: CinematicGlyph.forward,
+                            size: 18,
                             accent: visuals.accent,
                             framed: false,
                           ),

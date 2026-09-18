@@ -3,17 +3,43 @@ import '../services/progress_service.dart';
 import 'caravan_profile_prefs.dart';
 import 'trail.dart';
 
-class CaravanTrailSnapshot {
+class CaravanTrailModuleStop {
   final String title;
+  final int done;
+  final int total;
+
+  const CaravanTrailModuleStop({
+    required this.title,
+    required this.done,
+    required this.total,
+  });
+
+  bool get isComplete => total > 0 && done >= total;
+
+  bool get hasStarted => done > 0;
+
+  bool get isCurrent => hasStarted && !isComplete;
+}
+
+class CaravanTrailSnapshot {
+  final String slug;
+  final String title;
+  final String description;
   final int missionsDone;
   final int missionsTotal;
   final List<String> clearedModes;
+  final List<CaravanTrailModuleStop> modules;
+  final String? lastCompletedSlug;
 
   const CaravanTrailSnapshot({
+    this.slug = '',
     required this.title,
+    this.description = '',
     required this.missionsDone,
     required this.missionsTotal,
     this.clearedModes = const [],
+    this.modules = const [],
+    this.lastCompletedSlug,
   });
 
   double get progress =>
@@ -56,6 +82,8 @@ class CaravanPilgrimProfile {
   final bool hasDepthsCleared;
   final String? lastMissionTitle;
   final String? lastTrailTitle;
+  final String? lastMissionInsight;
+  final String? lastMissionRef;
 
   const CaravanPilgrimProfile({
     this.uid,
@@ -88,6 +116,8 @@ class CaravanPilgrimProfile {
     this.hasDepthsCleared = false,
     this.lastMissionTitle,
     this.lastTrailTitle,
+    this.lastMissionInsight,
+    this.lastMissionRef,
   });
 
   int get missionsCompleted => completedMissions.length;
@@ -193,20 +223,14 @@ class CaravanPilgrimProfile {
     required List<BibleBook> bibleBooks,
   }) async {
     final trails = <CaravanTrailSnapshot>[];
-    String? missionTitle;
-    String? trailTitle;
+    final missionBySlug = <String, ({Mission mission, Trail trail})>{};
 
     for (final trail in catalog) {
       if (trail.missionSlugs.isEmpty || trail.comingSoon) continue;
 
-      if (lastMissionSlug != null && missionTitle == null) {
-        for (final mod in trail.modules) {
-          for (final mission in mod.missions) {
-            if (mission.slug == lastMissionSlug) {
-              missionTitle = mission.title;
-              trailTitle = trail.title;
-            }
-          }
+      for (final mod in trail.modules) {
+        for (final mission in mod.missions) {
+          missionBySlug[mission.slug] = (mission: mission, trail: trail);
         }
       }
 
@@ -215,14 +239,22 @@ class CaravanPilgrimProfile {
       if (done == 0 && !(clearedTrailModes[trail.slug]?.isNotEmpty ?? false)) {
         continue;
       }
+      String? lastDone;
+      for (final slug in slugs) {
+        if (completedMissions.contains(slug)) lastDone = slug;
+      }
       trails.add(
         CaravanTrailSnapshot(
+          slug: trail.slug,
           title: trail.title,
+          description: trail.description,
           missionsDone: done,
           missionsTotal: slugs.length,
           clearedModes: List<String>.from(
             clearedTrailModes[trail.slug] ?? const [],
           ),
+          modules: _moduleStops(trail, completedMissions),
+          lastCompletedSlug: lastDone,
         ),
       );
     }
@@ -231,6 +263,20 @@ class CaravanPilgrimProfile {
       if (byProgress != 0) return byProgress;
       return a.title.compareTo(b.title);
     });
+
+    final resolvedSlug =
+        lastMissionSlug ?? trails.firstOrNull?.lastCompletedSlug;
+    String? missionTitle;
+    String? trailTitle;
+    String? missionInsight;
+    String? missionRef;
+    final hit = resolvedSlug == null ? null : missionBySlug[resolvedSlug];
+    if (hit != null) {
+      missionTitle = hit.mission.title;
+      trailTitle = hit.trail.title;
+      missionInsight = hit.mission.centralInsight;
+      missionRef = hit.mission.hookRef;
+    }
 
     final abbrevToName = {
       for (final b in bibleBooks) b.abbrev.toLowerCase(): b.name,
@@ -304,7 +350,39 @@ class CaravanPilgrimProfile {
       hasDepthsCleared: depthsCleared,
       lastMissionTitle: missionTitle,
       lastTrailTitle: trailTitle,
+      lastMissionInsight: missionInsight,
+      lastMissionRef: missionRef,
     );
+  }
+
+  static List<CaravanTrailModuleStop> _moduleStops(
+    Trail trail,
+    List<String> completed,
+  ) {
+    if (trail.modules.length >= 2) {
+      return [
+        for (final mod in trail.modules)
+          if (mod.missions.isNotEmpty)
+            CaravanTrailModuleStop(
+              title: mod.title,
+              done: mod.missions.where((m) => completed.contains(m.slug)).length,
+              total: mod.missions.length,
+            ),
+      ];
+    }
+
+    final missions = [
+      for (final mod in trail.modules) ...mod.missions,
+    ];
+    if (missions.length < 2) return const [];
+    return [
+      for (final mission in missions.take(6))
+        CaravanTrailModuleStop(
+          title: mission.title,
+          done: completed.contains(mission.slug) ? 1 : 0,
+          total: 1,
+        ),
+    ];
   }
 
   static String? _asName(dynamic raw) {

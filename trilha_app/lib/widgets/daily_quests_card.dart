@@ -88,7 +88,7 @@ class _QuestRow extends StatelessWidget {
             children: [
               CinematicIcon(
                 glyph: CinematicGlyphResolver.forQuest(q.id),
-                size: 28,
+                size: 32,
                 accent: tone,
                 glowing: false,
               ),

@@ -446,9 +446,11 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                   ),
                   IconButton(
                     onPressed: () => Navigator.pop(context),
-                    icon: Icon(
-                      Icons.close_rounded,
-                      color: AppColors.textOnDark.withValues(alpha: 0.6),
+                    icon: CinematicIcon(
+                      glyph: CinematicGlyph.close,
+                      size: 22,
+                      accent: AppColors.textOnDark.withValues(alpha: 0.6),
+                      framed: false,
                     ),
                   ),
                 ],
@@ -1230,10 +1232,11 @@ class _WordPane extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(width: 4),
-                    Icon(
-                      copied ? Icons.check_rounded : Icons.copy_rounded,
+                    CinematicIcon(
+                      glyph: copied ? CinematicGlyph.check : CinematicGlyph.copy,
                       size: 12,
-                      color: AppColors.textOnDark.withValues(alpha: 0.45),
+                      accent: AppColors.textOnDark.withValues(alpha: 0.45),
+                      framed: false,
                     ),
                   ],
                 ),
@@ -1244,10 +1247,11 @@ class _WordPane extends StatelessWidget {
               visualDensity: VisualDensity.compact,
               onPressed: onShare,
               tooltip: 'Compartilhar',
-              icon: Icon(
-                Icons.ios_share_rounded,
+              icon: CinematicIcon(
+                glyph: CinematicGlyph.share,
                 size: 18,
-                color: AppColors.textOnDark.withValues(alpha: 0.55),
+                accent: AppColors.textOnDark.withValues(alpha: 0.55),
+                framed: false,
               ),
             ),
           ],
@@ -1799,10 +1803,11 @@ class _FormVsLemma extends StatelessWidget {
         ),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 8),
-          child: Icon(
-            Icons.arrow_forward_rounded,
+          child: CinematicIcon(
+            glyph: CinematicGlyph.forward,
             size: 16,
-            color: accent.withValues(alpha: 0.7),
+            accent: accent.withValues(alpha: 0.7),
+            framed: false,
           ),
         ),
         Expanded(
@@ -1971,8 +1976,7 @@ class _ConcordanceRow extends StatelessWidget {
                     ],
                   ),
                 ),
-                Icon(
-                  Icons.chevron_right_rounded,
+                ListChevron(
                   size: 18,
                   color: AppColors.textOnDark.withValues(alpha: 0.28),
                 ),
@@ -2061,8 +2065,7 @@ class _CrossRefTile extends StatelessWidget {
                     ),
                 ],
               ),
-              Icon(
-                Icons.chevron_right_rounded,
+              ListChevron(
                 size: 18,
                 color: Colors.white.withValues(alpha: 0.35),
               ),

@@ -91,7 +91,7 @@ class CopperCta extends StatelessWidget {
     super.key,
     required this.label,
     this.onTap,
-    this.trailing = CinematicGlyph.path,
+    this.trailing = CinematicGlyph.forward,
     this.leading,
     this.expanded = true,
     this.padding,
@@ -155,10 +155,11 @@ class CopperCta extends StatelessWidget {
             ),
             if (!busy && showArrow) ...[
               const SizedBox(width: 8),
-              const Icon(
-                Icons.arrow_forward_rounded,
+              const CinematicIcon(
+                glyph: CinematicGlyph.forward,
                 size: 18,
-                color: AppColors.inkOnAccent,
+                accent: AppColors.inkOnAccent,
+                framed: false,
               ),
             ] else if (!busy && trailing != null) ...[
               const SizedBox(width: 8),
@@ -176,6 +177,24 @@ class CopperCta extends StatelessWidget {
 
     if (!enabled) return child;
     return GestureDetector(onTap: onTap, child: child);
+  }
+}
+
+/// Seta de lista — mesmo glifo em todas as rows.
+class ListChevron extends StatelessWidget {
+  final Color color;
+  final double size;
+
+  const ListChevron({super.key, required this.color, this.size = 18});
+
+  @override
+  Widget build(BuildContext context) {
+    return CinematicIcon(
+      glyph: CinematicGlyph.chevron,
+      size: size,
+      accent: color,
+      framed: false,
+    );
   }
 }
 
@@ -772,23 +791,9 @@ class _AppToastCard extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(AppRadii.md),
-        gradient: LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            Color.lerp(AppColors.nightElevated, Colors.white, 0.10)!,
-            AppColors.nightElevated,
-            Color.lerp(AppColors.nightElevated, Colors.black, 0.18)!,
-          ],
-          stops: const [0.0, 0.45, 1.0],
-        ),
+        color: AppColors.nightElevated,
         border: Border.all(color: accent.withValues(alpha: 0.85), width: 1.75),
         boxShadow: [
-          BoxShadow(
-            color: accent.withValues(alpha: 0.28),
-            blurRadius: 18,
-            offset: const Offset(0, 6),
-          ),
           BoxShadow(
             color: Colors.black.withValues(alpha: 0.45),
             offset: const Offset(0, 4),

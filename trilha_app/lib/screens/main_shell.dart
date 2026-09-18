@@ -96,7 +96,8 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       };
       unawaited(
         NotificationService.instance.initRemote(
-          requestPermission: _progressRef?.notificationsPrompted == true &&
+          requestPermission:
+              _progressRef?.notificationsPrompted == true &&
               _progressRef?.settings.notifications == true,
         ),
       );
@@ -411,6 +412,10 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
               onOpenMission: _openMission,
               onOpenTrilhas: _goToTrilhas,
               onOpenProfile: _openProfile,
+              onOpenBible: () => setState(() {
+                _index = 2;
+                _frost.value = 0;
+              }),
               onOpenLeague: () => setState(() {
                 _index = 3;
                 _frost.value = 0;

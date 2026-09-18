@@ -16,19 +16,21 @@ class IconWell extends StatelessWidget {
     this.glowing = false,
   });
 
+  static double borderWidth(double size) => (size * 0.06).clamp(1.8, 2.6);
+
   static BoxDecoration decoration({
     required double size,
     Color? accent,
     bool glowing = false,
   }) {
-    final tone = accent ?? AppColors.accent;
+    final tone = AppColors.glyphInk(accent ?? AppColors.accent);
 
     return BoxDecoration(
       shape: BoxShape.circle,
-      color: tone.withValues(alpha: glowing ? 0.42 : 0.2),
+      color: tone.withValues(alpha: glowing ? 0.32 : 0.22),
       border: Border.all(
         color: tone.withValues(alpha: 0.95),
-        width: (size * 0.07).clamp(2.2, 3.2),
+        width: borderWidth(size),
       ),
     );
   }

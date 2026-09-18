@@ -148,16 +148,7 @@ class GlassCard extends StatelessWidget {
       padding: padding,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(radius),
-        gradient: LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            Color.lerp(fill, Colors.white, 0.07)!,
-            fill,
-            Color.lerp(fill, Colors.black, 0.14)!,
-          ],
-          stops: const [0.0, 0.45, 1.0],
-        ),
+        color: fill,
         border: Border.all(
           color: borderColor,
           width: accent || tint != null

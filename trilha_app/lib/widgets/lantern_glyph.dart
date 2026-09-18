@@ -12,7 +12,7 @@ class LanternGlyph {
     final cx = w * 0.5;
     final ink = Paint()..color = color;
     final soft = Paint()..color = color.withValues(alpha: 0.55);
-    final hot = Paint()..color = Color.lerp(color, Colors.white, 0.4)!;
+    final hot = Paint()..color = Color.lerp(color, const Color(0xFFE8C878), 0.25)!;
 
     // Anel superior (fill donut)
     final ringOuter = Path()
@@ -104,8 +104,8 @@ class LanternPainter extends CustomPainter {
         ? Color.lerp(color, const Color(0xFF8A5A28), 0.25)!
         : Colors.white.withValues(alpha: 0.42);
     final metalHi = lit
-        ? Color.lerp(color, Colors.white, 0.4)!
-        : Colors.white.withValues(alpha: 0.55);
+        ? Color.lerp(color, const Color(0xFFE8C878), 0.18)!
+        : Colors.white.withValues(alpha: 0.4);
     final metalLo = lit
         ? Color.lerp(color, const Color(0xFF3D2208), 0.5)!
         : Colors.white.withValues(alpha: 0.22);
@@ -120,7 +120,7 @@ class LanternPainter extends CustomPainter {
         Paint()
           ..shader = RadialGradient(
             colors: [
-              color.withValues(alpha: 0.45),
+              color.withValues(alpha: 0.22),
               color.withValues(alpha: 0),
             ],
           ).createShader(
@@ -227,8 +227,8 @@ class LanternPainter extends CustomPainter {
             end: Alignment.topCenter,
             colors: [
               color,
-              Color.lerp(color, const Color(0xFFFFE9A8), 0.55)!,
-              Colors.white,
+              Color.lerp(color, const Color(0xFFE8C878), 0.35)!,
+              Color.lerp(color, const Color(0xFFC99200), 0.15)!,
             ],
             stops: const [0, 0.55, 1],
           ).createShader(
@@ -241,7 +241,7 @@ class LanternPainter extends CustomPainter {
           width: w * 0.08,
           height: h * 0.12,
         ),
-        Paint()..color = Colors.white.withValues(alpha: 0.85),
+        Paint()..color = color.withValues(alpha: 0.35),
       );
     } else {
       canvas.drawLine(

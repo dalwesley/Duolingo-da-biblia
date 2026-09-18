@@ -9,15 +9,29 @@ import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
 
 class StreakWeek extends StatelessWidget {
-  const StreakWeek({super.key});
+  /// Se omitido, lê o [ProgressService] local (home).
+  final bool Function(DateTime day)? playedOnDate;
+  final bool Function(DateTime day)? frozenOnDate;
+
+  const StreakWeek({
+    super.key,
+    this.playedOnDate,
+    this.frozenOnDate,
+  });
 
   @override
   Widget build(BuildContext context) {
-    final progress = context.watch<ProgressService>();
+    final progress =
+        playedOnDate == null ? context.watch<ProgressService>() : null;
     final a = Appearance.of(context);
     final today = DateTime.now();
     final monday = today.subtract(Duration(days: today.weekday - 1));
     const labels = ['S', 'T', 'Q', 'Q', 'S', 'S', 'D'];
+
+    bool played(DateTime day) =>
+        playedOnDate?.call(day) ?? progress!.playedOnDate(day);
+    bool frozen(DateTime day) =>
+        frozenOnDate?.call(day) ?? progress?.wasFrozenOnDate(day) ?? false;
 
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -27,12 +41,12 @@ class StreakWeek extends StatelessWidget {
             day.year == today.year &&
             day.month == today.month &&
             day.day == today.day;
-        final active = progress.playedOnDate(day);
-        final frozen = progress.wasFrozenOnDate(day);
+        final active = played(day);
+        final iced = frozen(day);
 
         return Column(
           children: [
-            if (frozen)
+            if (iced)
               const _FrozenDayOrb()
             else
               AnimatedContainer(
@@ -154,13 +168,12 @@ class _FrozenOrbPainter extends CustomPainter {
     canvas.save();
     canvas.clipPath(Path()..addOval(rect));
 
-    _paintIceBody(canvas, c, r, rect, breathe);
+    _paintIceBody(canvas, c, r, rect);
     _paintFrostFilm(canvas, size, breathe);
     _paintCracks(canvas, c, r, breathe);
     _paintSnowflake(canvas, c, r, breathe);
     _paintCrystals(canvas, size, breathe);
-    _paintSweep(canvas, size, breathe);
-    _paintRim(canvas, c, r, rect, breathe);
+    _paintRim(canvas, c, r, rect);
 
     canvas.restore();
   }
@@ -170,32 +183,24 @@ class _FrozenOrbPainter extends CustomPainter {
     Offset c,
     double r,
     Rect rect,
-    double breathe,
   ) {
     canvas.drawCircle(
       c,
       r,
       Paint()
         ..shader = RadialGradient(
-          center: const Alignment(-0.38, -0.46),
+          center: const Alignment(-0.28, -0.36),
           radius: 1.12,
           colors: [
-            Color.lerp(
-              const Color(0xFFF4FCFF),
-              Colors.white,
-              breathe * 0.18,
-            )!,
-            const Color(0xFFD8F4FC),
             AppColors.iceSoft,
             AppColors.ice,
             const Color(0xFF2A6A82),
             AppColors.iceDeep,
           ],
-          stops: const [0.0, 0.16, 0.34, 0.55, 0.8, 1.0],
+          stops: const [0.0, 0.38, 0.72, 1.0],
         ).createShader(rect),
     );
 
-    // Espessura do gelo — sombra no canto inferior
     canvas.drawCircle(
       c,
       r,
@@ -211,25 +216,6 @@ class _FrozenOrbPainter extends CustomPainter {
           stops: const [0.0, 0.45, 1.0],
         ).createShader(rect),
     );
-
-    // Luz presa no núcleo
-    canvas.drawCircle(
-      c.translate(-r * 0.18, -r * 0.22),
-      r * (0.42 + breathe * 0.04),
-      Paint()
-        ..shader = RadialGradient(
-          colors: [
-            Colors.white.withValues(alpha: 0.42 + breathe * 0.12),
-            AppColors.iceSoft.withValues(alpha: 0.18),
-            Colors.transparent,
-          ],
-        ).createShader(
-          Rect.fromCircle(
-            center: c.translate(-r * 0.18, -r * 0.22),
-            radius: r * 0.46,
-          ),
-        ),
-    );
   }
 
   void _paintFrostFilm(Canvas canvas, Size size, double breathe) {
@@ -240,8 +226,8 @@ class _FrozenOrbPainter extends CustomPainter {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            Colors.white.withValues(alpha: 0.46 + breathe * 0.1),
-            AppColors.iceSoft.withValues(alpha: 0.16),
+            Colors.white.withValues(alpha: 0.16 + breathe * 0.04),
+            AppColors.iceSoft.withValues(alpha: 0.1),
             Colors.transparent,
           ],
         ).createShader(Rect.fromLTWH(0, 0, size.width, size.height * 0.42)),
@@ -252,11 +238,11 @@ class _FrozenOrbPainter extends CustomPainter {
       ..shader = SweepGradient(
         startAngle: -math.pi / 2,
         colors: [
-          Colors.white.withValues(alpha: 0.18),
+          AppColors.iceSoft.withValues(alpha: 0.12),
           Colors.transparent,
-          AppColors.iceSoft.withValues(alpha: 0.22),
+          AppColors.iceSoft.withValues(alpha: 0.14),
           Colors.transparent,
-          Colors.white.withValues(alpha: 0.14),
+          AppColors.iceSoft.withValues(alpha: 0.1),
         ],
         stops: const [0.0, 0.22, 0.5, 0.78, 1.0],
       ).createShader(Offset.zero & size)
@@ -276,7 +262,7 @@ class _FrozenOrbPainter extends CustomPainter {
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round;
     final crack = Paint()
-      ..color = Colors.white.withValues(alpha: 0.55 + breathe * 0.12)
+      ..color = AppColors.iceSoft.withValues(alpha: 0.28 + breathe * 0.08)
       ..strokeWidth = 0.7
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round;
@@ -314,7 +300,7 @@ class _FrozenOrbPainter extends CustomPainter {
       c,
       s * 0.42,
       Paint()
-        ..color = Colors.white.withValues(alpha: 0.16 + breathe * 0.08)
+        ..color = AppColors.iceSoft.withValues(alpha: 0.12 + breathe * 0.04)
         ..maskFilter = const ui.MaskFilter.blur(ui.BlurStyle.normal, 2.4),
     );
 
@@ -330,9 +316,9 @@ class _FrozenOrbPainter extends CustomPainter {
         begin: Alignment.topCenter,
         end: Alignment.bottomCenter,
         colors: [
-          Colors.white,
           AppColors.iceSoft,
-          const Color(0xFFE8F8FC),
+          AppColors.ice,
+          const Color(0xFF3A8AAA),
         ],
       ).createShader(Rect.fromCircle(center: c, radius: s))
       ..strokeWidth = 1.15
@@ -341,7 +327,7 @@ class _FrozenOrbPainter extends CustomPainter {
       ..style = PaintingStyle.stroke;
 
     final highlight = Paint()
-      ..color = Colors.white.withValues(alpha: 0.92)
+      ..color = AppColors.iceSoft.withValues(alpha: 0.45)
       ..strokeWidth = 0.45
       ..strokeCap = StrokeCap.round
       ..style = PaintingStyle.stroke;
@@ -376,14 +362,14 @@ class _FrozenOrbPainter extends CustomPainter {
         ..close();
       canvas.drawPath(
         facet,
-        Paint()..color = Colors.white.withValues(alpha: 0.88),
+        Paint()..color = AppColors.iceSoft.withValues(alpha: 0.55),
       );
     }
 
     canvas.drawCircle(
       c,
       s * 0.09,
-      Paint()..color = Colors.white,
+      Paint()..color = AppColors.iceSoft,
     );
     canvas.drawCircle(
       c,
@@ -414,8 +400,8 @@ class _FrozenOrbPainter extends CustomPainter {
       final paint = Paint()
         ..color = Color.lerp(
           AppColors.iceSoft,
-          Colors.white,
-          phase < 0.4 ? 0.75 : 0.35,
+          AppColors.ice,
+          phase < 0.4 ? 0.35 : 0.15,
         )!.withValues(alpha: alpha);
       final path = Path()
         ..moveTo(0, -s * 1.6)
@@ -428,36 +414,11 @@ class _FrozenOrbPainter extends CustomPainter {
     }
   }
 
-  void _paintSweep(Canvas canvas, Size size, double breathe) {
-    final sweep = (t * 0.55) % 1.0;
-    final sweepX = size.width * (sweep * 1.55 - 0.28);
-    canvas.save();
-    canvas.translate(size.width / 2, size.height / 2);
-    canvas.rotate(-0.42);
-    canvas.translate(-size.width / 2, -size.height / 2);
-    canvas.drawRect(
-      Rect.fromLTWH(sweepX - 7, -4, 14, size.height + 8),
-      Paint()
-        ..shader = LinearGradient(
-          begin: Alignment.centerLeft,
-          end: Alignment.centerRight,
-          colors: [
-            Colors.transparent,
-            Colors.white.withValues(alpha: 0.22 + breathe * 0.08),
-            AppColors.iceSoft.withValues(alpha: 0.1),
-            Colors.transparent,
-          ],
-        ).createShader(Rect.fromLTWH(sweepX - 7, 0, 14, size.height)),
-    );
-    canvas.restore();
-  }
-
   void _paintRim(
     Canvas canvas,
     Offset c,
     double r,
     Rect rect,
-    double breathe,
   ) {
     canvas.drawCircle(
       c,
@@ -469,25 +430,12 @@ class _FrozenOrbPainter extends CustomPainter {
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            Colors.white.withValues(alpha: 0.88 + breathe * 0.1),
-            AppColors.iceSoft.withValues(alpha: 0.7),
-            AppColors.ice.withValues(alpha: 0.35),
             AppColors.iceSoft.withValues(alpha: 0.55),
+            AppColors.ice.withValues(alpha: 0.45),
+            AppColors.iceDeep.withValues(alpha: 0.7),
+            AppColors.ice.withValues(alpha: 0.4),
           ],
         ).createShader(rect),
-    );
-
-    // Filete de reflexo no topo — mesmo do botão do CTA
-    canvas.drawArc(
-      Rect.fromCircle(center: c, radius: r - 2.4),
-      math.pi * 1.12,
-      math.pi * 0.76,
-      false,
-      Paint()
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = 1.15
-        ..strokeCap = StrokeCap.round
-        ..color = Colors.white.withValues(alpha: 0.78 + breathe * 0.12),
     );
   }
 

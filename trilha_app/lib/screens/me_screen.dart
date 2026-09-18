@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 
 import '../data/trail_repository.dart';
 import '../models/caravan_pilgrim_profile.dart';
+import '../models/caravan_profile_prefs.dart';
 import '../services/bible_service.dart';
 import '../services/backend_service.dart';
 import '../services/league_service.dart';
@@ -15,9 +16,6 @@ import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/living_seed_card.dart';
 import '../widgets/milestone_chests.dart';
-import '../models/pilgrim_medals.dart';
-import '../widgets/character_seals_strip.dart';
-import '../widgets/pilgrim_medal_vault_panel.dart';
 import '../widgets/pilgrim_profile_sections.dart';
 import '../widgets/reflection_journal_card.dart';
 import '../widgets/ui_primitives.dart';
@@ -150,26 +148,9 @@ class _MeScreenState extends State<MeScreen> {
         ),
       ]);
     } else if (profile != null) {
+      final backend = context.read<BackendService>();
+      final today = DateTime.now().toIso8601String().substring(0, 10);
       body.addAll([
-        const SizedBox(height: AppSpace.section),
-        PilgrimMedalVaultsPanel(
-          profile: profile,
-          evalContext: PilgrimMedalEvalContext.fromProfile(profile),
-        ),
-      ]);
-    }
-
-    body.addAll([
-      const SizedBox(height: AppSpace.section),
-      CharacterSealsStrip(completed: progress.completedMissions),
-    ]);
-
-    if (profile != null && !_caravanLoading) {
-      body.addAll([
-        if (profile.trails.isNotEmpty) ...[
-          const SizedBox(height: AppSpace.section),
-          _ActiveTrailsCard(trails: profile.trails.take(3).toList()),
-        ],
         if (_overallRank > 0) ...[
           const SizedBox(height: AppSpace.md),
           PilgrimMeRankHeader(
@@ -177,7 +158,27 @@ class _MeScreenState extends State<MeScreen> {
             weeklySteps: false,
           ),
         ],
+        const SizedBox(height: AppSpace.section),
+        PilgrimProfileDetailSections(
+          profile: profile,
+          entry: LeagueEntry(
+            uid: backend.uid,
+            name: progress.userName,
+            steps: progress.steps,
+            isUser: true,
+            lastWalkDate: progress.lastPlayedDate,
+            lastSeenDate: today,
+          ),
+          isOwner: true,
+          onOpenSettings: _openCaravanPrivacySettings,
+          omitSections: const {CaravanProfileSection.ranking},
+          includeStreakMilestones: false,
+        ),
       ]);
+    } else {
+      body.add(
+        PilgrimOwnerPrivacyBanner(onSettings: _openCaravanPrivacySettings),
+      );
     }
 
     body.addAll([
@@ -193,10 +194,6 @@ class _MeScreenState extends State<MeScreen> {
       if (progress.missionReflections.isNotEmpty) ...[
         const SizedBox(height: AppSpace.section),
         const ReflectionJournalCard(),
-      ],
-      if (!_caravanLoading) ...[
-        const SizedBox(height: AppSpace.md),
-        PilgrimOwnerPrivacyBanner(onSettings: _openCaravanPrivacySettings),
       ],
       const SizedBox(height: AppSpace.sm),
     ]);
@@ -238,27 +235,6 @@ class _MeScreenState extends State<MeScreen> {
           ),
         ),
       ],
-    );
-  }
-}
-
-class _ActiveTrailsCard extends StatelessWidget {
-  final List<CaravanTrailSnapshot> trails;
-
-  const _ActiveTrailsCard({required this.trails});
-
-  @override
-  Widget build(BuildContext context) {
-    return GlassCard(
-      padding: const EdgeInsets.fromLTRB(16, 14, 16, 10),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          const CardHeader(label: 'Trilhas em andamento'),
-          const SizedBox(height: 10),
-          for (final trail in trails) PilgrimTrailPath(trail: trail),
-        ],
-      ),
     );
   }
 }
@@ -307,7 +283,7 @@ class _JourneySummaryBar extends StatelessWidget {
               accent: accuracyPercent != null ? AppColors.teal : AppColors.cedar,
               glyph: accuracyPercent != null
                   ? CinematicGlyph.target
-                  : CinematicGlyph.book,
+                  : CinematicGlyph.mountain,
             ),
           ),
         ],
@@ -459,7 +435,7 @@ class _FavoritesSectionState extends State<_FavoritesSection> {
           Row(
             children: [
               CinematicIcon(
-                glyph: CinematicGlyph.star,
+                glyph: CinematicGlyph.bookmark,
                 size: 22,
                 accent: AppColors.accent.withValues(alpha: 0.95),
               ),
@@ -484,11 +460,7 @@ class _FavoritesSectionState extends State<_FavoritesSection> {
                 ),
               ),
               if (!widget.embedded)
-                Icon(
-                  Icons.chevron_right_rounded,
-                  color: a.textMuted(0.4),
-                  size: 20,
-                ),
+                ListChevron(color: a.textMuted(0.4), size: 20),
             ],
           )
         else
@@ -519,7 +491,7 @@ class _FavoritesSectionState extends State<_FavoritesSection> {
                       child: Row(
                         children: [
                           CinematicIcon(
-                            glyph: CinematicGlyph.star,
+                            glyph: CinematicGlyph.bookmark,
                             size: 18,
                             accent: AppColors.accent.withValues(
                               alpha: 0.95,
@@ -536,11 +508,7 @@ class _FavoritesSectionState extends State<_FavoritesSection> {
                               ),
                             ),
                           ),
-                          Icon(
-                            Icons.chevron_right_rounded,
-                            color: a.textMuted(0.4),
-                            size: 20,
-                          ),
+                          ListChevron(color: a.textMuted(0.4), size: 20),
                         ],
                       ),
                     ),

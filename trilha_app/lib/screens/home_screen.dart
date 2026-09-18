@@ -43,6 +43,7 @@ class HomeScreen extends StatefulWidget {
   final VoidCallback onOpenTrilhas;
   final VoidCallback? onOpenLeague;
   final VoidCallback? onOpenProfile;
+  final VoidCallback? onOpenBible;
 
   const HomeScreen({
     super.key,
@@ -51,6 +52,7 @@ class HomeScreen extends StatefulWidget {
     required this.onOpenTrilhas,
     this.onOpenLeague,
     this.onOpenProfile,
+    this.onOpenBible,
   });
 
   @override
@@ -176,6 +178,11 @@ class _HomeScreenState extends State<HomeScreen>
   }
 
   void _openBible([String? reference]) {
+    if ((reference == null || reference.isEmpty) &&
+        widget.onOpenBible != null) {
+      widget.onOpenBible!();
+      return;
+    }
     final mode = context.read<ProgressService>().settings.appearanceMode;
     final appearance = AppearanceStyle.resolve(mode);
     Navigator.of(context).push(
@@ -389,10 +396,7 @@ class _HomeScreenState extends State<HomeScreen>
             ),
             const SizedBox(height: AppSpace.section),
             if (goalMet) ...[
-              _reveal(
-                2,
-                SeasonChallengeBanner(catalog: trails),
-              ),
+              _reveal(2, SeasonChallengeBanner(catalog: trails)),
             ],
             if (progress.showStreakRepairOffer) ...[
               _reveal(2, const StreakRepairBanner()),
@@ -465,7 +469,7 @@ class _RevisitPracticeLink extends StatelessWidget {
       child: Row(
         children: [
           CinematicIcon(
-            glyph: CinematicGlyph.echo,
+            glyph: CinematicGlyph.refresh,
             size: AppMetrics.leadingIcon,
             accent: AppColors.error,
             glowing: false,
@@ -489,7 +493,12 @@ class _RevisitPracticeLink extends StatelessWidget {
               ],
             ),
           ),
-          Icon(Icons.chevron_right_rounded, size: 20, color: a.textMuted(0.45)),
+          CinematicIcon(
+            glyph: CinematicGlyph.chevron,
+            size: 18,
+            accent: a.textMuted(0.45),
+            framed: false,
+          ),
         ],
       ),
     );
@@ -647,11 +656,14 @@ class _WalkHomeCard extends StatelessWidget {
     final day = index == null ? null : campaign.dayAt(index);
     final ymd =
         '${today.year.toString().padLeft(4, '0')}-${today.month.toString().padLeft(2, '0')}-${today.day.toString().padLeft(2, '0')}';
-    final done = day != null &&
+    final done =
+        day != null &&
         (progress.isWalkDateDone(campaign.id, ymd) ||
             progress.isMissionCompleted(day.missionSlug));
     final sameAsHero =
-        day != null && heroMissionSlug != null && day.missionSlug == heroMissionSlug;
+        day != null &&
+        heroMissionSlug != null &&
+        day.missionSlug == heroMissionSlug;
 
     // A missão do hero já é o dia da Caminhada — não duplica o CTA.
     if (sameAsHero) {
@@ -700,8 +712,8 @@ class _WalkHomeCard extends StatelessWidget {
                       day == null
                           ? campaign.subtitle
                           : done
-                              ? 'Dia $index feito · ${day.title}'
-                              : 'Dia $index · ${day.title}',
+                          ? 'Dia $index feito · ${day.title}'
+                          : 'Dia $index · ${day.title}',
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: AppTypography.body(

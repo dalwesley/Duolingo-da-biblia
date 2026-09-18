@@ -860,7 +860,7 @@ class _RevealBanner extends StatelessWidget {
           child: Row(
             children: [
               CinematicIcon(
-                glyph: correct ? CinematicGlyph.check : CinematicGlyph.book,
+                glyph: correct ? CinematicGlyph.check : CinematicGlyph.wrong,
                 size: 22,
                 accent: color,
                 framed: false,
@@ -899,7 +899,7 @@ class _RevealBanner extends StatelessWidget {
         CopperCta(
           label: correct ? 'Seguir' : 'Continuar',
           onTap: onContinue,
-          trailing: CinematicGlyph.path,
+          trailing: CinematicGlyph.forward,
         ),
       ],
     );

@@ -118,7 +118,12 @@ class _QuestionReportSheetState extends State<_QuestionReportSheet> {
                   ),
                   IconButton(
                     onPressed: () => Navigator.of(context).pop(false),
-                    icon: Icon(Icons.close, color: a.textMuted(0.55)),
+                    icon: CinematicIcon(
+                      glyph: CinematicGlyph.close,
+                      size: 22,
+                      accent: a.textMuted(0.55),
+                      framed: false,
+                    ),
                   ),
                 ],
               ),

@@ -376,7 +376,6 @@ class _FlashCard extends StatelessWidget {
           final breathe = revealed ? 1.0 : 0.92 + (pulse.value * 0.08);
           final angle = Curves.easeInOutCubic.transform(flip.value) * math.pi;
           final showFront = angle <= (math.pi / 2);
-          final glowAlpha = showFront ? 0.18 * breathe : 0.28;
 
           return Transform(
             alignment: Alignment.center,
@@ -406,11 +405,6 @@ class _FlashCard extends StatelessWidget {
                       color: Colors.black.withValues(alpha: 0.4),
                       blurRadius: 24,
                       offset: const Offset(0, 14),
-                    ),
-                    BoxShadow(
-                      color: AppColors.accent.withValues(alpha: glowAlpha),
-                      blurRadius: showFront ? 16 : 24,
-                      offset: const Offset(0, 8),
                     ),
                   ],
                 ),
@@ -644,7 +638,7 @@ class _AnswerRow extends StatelessWidget {
         Expanded(
           child: OutlineCta(
             label: 'Ainda não',
-            leading: CinematicGlyph.echo,
+            leading: CinematicGlyph.refresh,
             color: AppColors.error,
             onTap: onLearning,
             uppercase: false,
@@ -709,7 +703,7 @@ class _DonePane extends StatelessWidget {
           const SizedBox(height: AppSpace.xxl),
           CopperCta(
             label: 'Tentar de novo',
-            trailing: CinematicGlyph.path,
+            trailing: CinematicGlyph.refresh,
             onTap: onAgain,
           ),
           const SizedBox(height: AppSpace.sm),

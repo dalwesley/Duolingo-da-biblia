@@ -24,7 +24,7 @@ extension CaravanProfileSectionX on CaravanProfileSection {
 
   String get subtitle => switch (this) {
         CaravanProfileSection.presence =>
-          'Última caminhada, online e sequência',
+          'Semana caminhada, sequência e marcos (Semente → Fruto)',
         CaravanProfileSection.ranking => 'Posição e passos totais',
         CaravanProfileSection.daysAsLeader =>
           'Quantos dias ficou em 1º no ranking geral',
@@ -33,7 +33,8 @@ extension CaravanProfileSectionX on CaravanProfileSection {
         CaravanProfileSection.accuracy =>
           'Percentual de acertos nas cenas',
         CaravanProfileSection.bible => 'Livros e capítulos lidos',
-        CaravanProfileSection.trails => 'Progresso nas trilhas',
+        CaravanProfileSection.trails =>
+          'Progresso nas trilhas e selos adquiridos',
         CaravanProfileSection.medals => 'Medalhas e conquistas da jornada',
       };
 }
