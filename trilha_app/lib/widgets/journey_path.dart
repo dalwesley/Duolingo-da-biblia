@@ -398,7 +398,6 @@ class _HeroStation extends StatelessWidget {
         onTap: onTap,
         borderRadius: BorderRadius.circular(AppRadii.lg),
         child: Ink(
-          height: 200,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(AppRadii.lg),
             color: a.cardFill,
@@ -415,6 +414,7 @@ class _HeroStation extends StatelessWidget {
               AppSpace.lg,
             ),
             child: Column(
+              mainAxisSize: MainAxisSize.min,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Row(
@@ -451,10 +451,12 @@ class _HeroStation extends StatelessWidget {
                     ),
                   ],
                 ),
-                const Spacer(),
+                const SizedBox(height: AppSpace.md),
                 Text(
                   item.trail.title,
-                  style: AppTypography.display(size: 28, height: 1.05),
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppTypography.display(size: 26, height: 1.08),
                 ),
                 const SizedBox(height: AppSpace.sm),
                 Text(
@@ -463,18 +465,18 @@ class _HeroStation extends StatelessWidget {
                   overflow: TextOverflow.ellipsis,
                   style: AppTypography.body(
                     size: 13,
-                    height: 1.35,
+                    height: 1.3,
                     color: a.textMuted(0.55),
                   ),
                 ),
-                const SizedBox(height: AppSpace.lg),
+                const SizedBox(height: AppSpace.md),
                 if (item.total > 0) ...[
                   AppProgressBar(
                     value: pct,
                     color: accent,
                     trackColor: a.progressTrack,
                   ),
-                  const SizedBox(height: 10),
+                  const SizedBox(height: 8),
                 ],
                 Row(
                   children: [

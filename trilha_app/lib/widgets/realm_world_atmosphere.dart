@@ -253,6 +253,7 @@ class _RealmWorldPainter extends CustomPainter {
             c(sky.sun),
             c(sky.fire),
           ],
+          const [0.0, 0.45, 1.0],
         ),
     );
   }
