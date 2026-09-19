@@ -883,7 +883,8 @@ class ProgressService extends ChangeNotifier {
     return true;
   }
 
-  /// +50 na Caravana se alguma dupla fechou os 7 dias desta semana. 1× por semana.
+  /// +50 na Caravana para você quando a dupla fecha os 7 dias. O par ganha
+  /// o mesmo ao sincronizar. 1× por semana.
   Future<bool> claimCompanionWeekTogetherBonus(
     Iterable<WalkCompanion> companions, {
     DateTime? now,

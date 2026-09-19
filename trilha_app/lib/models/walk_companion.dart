@@ -34,8 +34,7 @@ class WalkCompanion {
 
   static const milestones = [3, 7, 14, 30, 60, 100];
 
-  /// Bônus na Caravana quando a dupla fecha os 7 dias da semana (seg–dom).
-  /// Uma vez por semana, não empilha por par. Mesmo valor de uma promoção.
+  /// Os dois ganham na Caravana só se a dupla fechar os 7 dias (seg–dom).
   static const weekTogetherBonusSteps = 50;
 
   const WalkCompanion({
@@ -159,7 +158,7 @@ class WalkCompanion {
     if (delay != null) parts.add(delay.insight);
     if (coveredLeagueWeekTogether()) {
       parts.add(
-        'Semana junta · +$weekTogetherBonusSteps na caravana',
+        'Dupla fechou a semana · +$weekTogetherBonusSteps para os dois',
       );
     } else if (bothWalkedToday) {
       final n = togetherDaysThisWeek();

@@ -219,7 +219,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       messenger.showSnackBar(
         SnackBar(
           content: Text(
-            'Semana junta: +${WalkCompanion.weekTogetherBonusSteps} passos na caravana',
+            'A dupla ganhou +${WalkCompanion.weekTogetherBonusSteps} na caravana',
           ),
         ),
       );

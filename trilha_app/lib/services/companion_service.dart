@@ -20,12 +20,13 @@ class CompanionSyncResult {
       referralCodes.isNotEmpty || weekTogetherBonusGranted;
 }
 
-/// Companhia — pares de caminhada (friend streak de passos).
+/// Companhia — uma dupla de caminhada (friend streak de passos).
 /// Local + sync Firebase quando autenticado.
 class CompanionService extends ChangeNotifier {
   static const _keyCodes = 'companionCodes';
-  static const _freeMaxCompanions = 3;
-  static const _plusMaxCompanions = 6;
+
+  /// Uma dupla só. Extra de instalações antigas continua visível até sair.
+  static const maxCompanions = 1;
 
   final BackendService backend;
   final SubscriptionService? subscription;
@@ -51,11 +52,6 @@ class CompanionService extends ChangeNotifier {
     }
     return null;
   }
-
-  /// Peregrino+ dobra o limite de companheiros simultâneos.
-  int get maxCompanions => subscription?.isPeregrinoPlus == true
-      ? _plusMaxCompanions
-      : _freeMaxCompanions;
 
   bool get canAdd => companions.length < maxCompanions;
   bool get cloudSynced => _cloudSynced;
@@ -146,7 +142,7 @@ class CompanionService extends ChangeNotifier {
   Future<WalkCompanion?> createInvite(ProgressService progress) async {
     lastError = null;
     if (!canAdd) {
-      lastError = 'No máximo $maxCompanions companheiros.';
+      lastError = 'Você já tem uma dupla.';
       notifyListeners();
       return null;
     }
@@ -178,7 +174,7 @@ class CompanionService extends ChangeNotifier {
   Future<bool> joinWithCode(String rawCode, ProgressService progress) async {
     lastError = null;
     if (!canAdd) {
-      lastError = 'No máximo $maxCompanions companheiros.';
+      lastError = 'Você já tem uma dupla.';
       notifyListeners();
       return false;
     }
@@ -275,6 +271,19 @@ class CompanionService extends ChangeNotifier {
         if (c != code) c,
     ];
     await _saveCodes(codes, progress: progress);
+    await refresh();
+  }
+
+  /// Encerra todas as duplas deste aparelho (e na nuvem, se autenticado).
+  Future<void> leaveAll({ProgressService? progress}) async {
+    lastError = null;
+    final codes = await _loadCodes();
+    if (backend.isActive) {
+      for (final code in codes) {
+        await backend.leaveCompanion(code);
+      }
+    }
+    await _saveCodes(const [], progress: progress);
     await refresh();
   }
 

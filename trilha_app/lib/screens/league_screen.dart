@@ -240,7 +240,7 @@ class _LeagueScreenState extends State<LeagueScreen>
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(
-              'Semana junta: +${WalkCompanion.weekTogetherBonusSteps} passos na caravana',
+              'A dupla ganhou +${WalkCompanion.weekTogetherBonusSteps} na caravana',
             ),
           ),
         );
@@ -495,6 +495,12 @@ class _LeagueScreenState extends State<LeagueScreen>
       return score(a).compareTo(score(b));
     });
 
+    final weekTogetherDays = active.isEmpty
+        ? 0
+        : active
+            .map((c) => c.togetherDaysThisWeek())
+            .reduce((a, b) => a > b ? a : b);
+
     final list = <Widget>[
       _reveal(
         1,
@@ -504,7 +510,7 @@ class _LeagueScreenState extends State<LeagueScreen>
           togetherToday: togetherToday,
           waitingOnMe: waitingOnMe,
           bestStreak: bestStreak,
-          maxSlots: companions.maxCompanions,
+          weekTogetherDays: weekTogetherDays,
         ),
       ),
       const SizedBox(height: AppSpace.section),
@@ -576,6 +582,34 @@ class _LeagueScreenState extends State<LeagueScreen>
         ),
       );
       list.add(const SizedBox(height: AppSpace.sm));
+    }
+
+    if (companions.companions.length > 1) {
+      list.add(
+        TextButton(
+          onPressed: companions.loading
+              ? null
+              : () async {
+                  final ok = await _confirmLeaveAllCompanions(
+                    context,
+                    companions.companions.length,
+                  );
+                  if (ok == true && context.mounted) {
+                    await context.read<CompanionService>().leaveAll(
+                      progress: progress,
+                    );
+                  }
+                },
+          child: Text(
+            'Encerrar todas as duplas',
+            style: AppTypography.body(
+              size: 13,
+              weight: FontWeight.w700,
+              color: AppColors.error.withValues(alpha: 0.85),
+            ),
+          ),
+        ),
+      );
     }
 
     list.add(const SizedBox(height: AppSpace.sm));
@@ -674,6 +708,41 @@ class _LeagueScreenState extends State<LeagueScreen>
       }
     }
     await showCompanionFormedSheet(context, partnerName: joined?.displayName);
+  }
+
+  Future<bool?> _confirmLeaveAllCompanions(BuildContext context, int count) {
+    return showDialog<bool>(
+      context: context,
+      builder: (ctx) {
+        final a = Appearance.of(ctx);
+        return AlertDialog(
+          backgroundColor: a.cardFill,
+          title: Text(
+            'Encerrar todas as duplas?',
+            style: AppTypography.title(color: a.text),
+          ),
+          content: Text(
+            count == 1
+                ? 'A parceria termina. Você fica sem companhia.'
+                : 'As $count parcerias terminam. Você fica sem companhia.',
+            style: TextStyle(color: a.textMuted(0.8)),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(ctx, false),
+              child: Text('Ficar', style: TextStyle(color: a.textMuted(0.7))),
+            ),
+            TextButton(
+              onPressed: () => Navigator.pop(ctx, true),
+              child: const Text(
+                'Encerrar todas',
+                style: TextStyle(color: AppColors.error),
+              ),
+            ),
+          ],
+        );
+      },
+    );
   }
 
   Future<bool?> _confirmLeaveCompanion(BuildContext context) {
@@ -2735,7 +2804,7 @@ class _CompanionsEmpty extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           Text(
-            'Até 3 pares. Presença primeiro — se a dupla caminhar os 7 dias da semana, +${WalkCompanion.weekTogetherBonusSteps} passos na caravana.',
+            'Uma dupla. Fechem os 7 dias da semana juntos — os dois ganham +${WalkCompanion.weekTogetherBonusSteps} na caravana.',
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 13,
@@ -2763,7 +2832,7 @@ class _CompanionsEmpty extends StatelessWidget {
               Expanded(
                 child: _CompanhiaPerk(
                   glyph: CinematicGlyph.people,
-                  label: 'Presença',
+                  label: '7 dias',
                 ),
               ),
             ],
@@ -2837,7 +2906,7 @@ class _CompanhiaHeroCard extends StatelessWidget {
   final int togetherToday;
   final int waitingOnMe;
   final int bestStreak;
-  final int maxSlots;
+  final int weekTogetherDays;
 
   const _CompanhiaHeroCard({
     required this.companionCount,
@@ -2845,7 +2914,7 @@ class _CompanhiaHeroCard extends StatelessWidget {
     required this.togetherToday,
     this.waitingOnMe = 0,
     required this.bestStreak,
-    required this.maxSlots,
+    this.weekTogetherDays = 0,
   });
 
   @override
@@ -2857,7 +2926,7 @@ class _CompanhiaHeroCard extends StatelessWidget {
             ? 'Alguém te espera hoje'
             : '$waitingOnMe te esperam hoje'
         : !hasAny
-        ? 'Até $maxSlots amigos íntimos'
+        ? 'Uma dupla'
         : bestStreak > 0
         ? '$bestStreak ${bestStreak == 1 ? 'dia' : 'dias'} juntos'
         : togetherToday > 0
@@ -2867,11 +2936,11 @@ class _CompanhiaHeroCard extends StatelessWidget {
     final goldSub = waitingOnMe > 0
         ? 'Dê seu passo — a companhia só conta quando os dois caminham'
         : !hasAny
-        ? 'Convide alguém e andem lado a lado'
+        ? 'Convide uma pessoa e fechem a semana juntos'
         : bestStreak > 0
         ? togetherToday > 0
-              ? '$togetherToday juntos hoje · semana junta vale +${WalkCompanion.weekTogetherBonusSteps}'
-              : 'Semana junta (7 dias) vale +${WalkCompanion.weekTogetherBonusSteps} na caravana'
+              ? '$togetherToday juntos hoje · 7 dias valem +${WalkCompanion.weekTogetherBonusSteps} para os dois'
+              : 'Fechem os 7 dias da semana: +${WalkCompanion.weekTogetherBonusSteps} na caravana para os dois'
         : 'Quando os dois caminham, o dia conta';
 
     return GlassCard(
@@ -2910,8 +2979,8 @@ class _CompanhiaHeroCard extends StatelessWidget {
                 const SizedBox(width: 8),
                 Expanded(
                   child: _CompanhiaStatChip(
-                    label: 'Vagas',
-                    value: '$companionCount/$maxSlots',
+                    label: 'Semana',
+                    value: '$weekTogetherDays/7',
                   ),
                 ),
                 const SizedBox(width: 8),

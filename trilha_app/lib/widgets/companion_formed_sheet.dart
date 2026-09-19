@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import '../models/walk_companion.dart';
 import '../theme/app_theme.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
@@ -86,8 +87,8 @@ class _CompanionFormedSheet extends StatelessWidget {
                 const SizedBox(height: 10),
                 Text(
                   hasName
-                      ? 'Agora você e $name caminham juntos.\nQuando os dois dão um passo no dia, a companhia avança.'
-                      : 'Vocês caminham juntos agora.\nQuando os dois dão um passo no dia, a companhia avança.',
+                      ? 'Agora você e $name caminham juntos.\nFechem os 7 dias da semana: +${WalkCompanion.weekTogetherBonusSteps} na caravana para os dois.'
+                      : 'Vocês caminham juntos agora.\nFechem os 7 dias da semana: +${WalkCompanion.weekTogetherBonusSteps} na caravana para os dois.',
                   textAlign: TextAlign.center,
                   style: AppTypography.body(
                     size: 14,

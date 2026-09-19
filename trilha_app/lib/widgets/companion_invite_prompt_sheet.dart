@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
+import '../models/walk_companion.dart';
 import '../services/companion_service.dart';
 import '../services/invite_deep_link_service.dart';
 import '../services/progress_service.dart';
@@ -110,7 +111,7 @@ class _CompanionInvitePromptSheetState
           ),
           const SizedBox(height: 8),
           Text(
-            'Um amigo. Um aceno quando a trilha empoeira. Não é ranking — é presença.',
+            'Um amigo. Fechem os 7 dias da semana juntos — os dois ganham +${WalkCompanion.weekTogetherBonusSteps} na caravana.',
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 14,
