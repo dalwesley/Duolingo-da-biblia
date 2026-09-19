@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../theme/app_theme.dart';
 
 /// Marca STWAY — ícone da trilha + wordmark com o “A” em chevron.
@@ -35,8 +34,7 @@ class StwayLogo extends StatelessWidget {
   }
 }
 
-/// Wordmark STWAY — Oswald (gótica condensada, do tipo do “A”),
-/// não a Exo 2 do HUD. Letras brancas, “A” em chevron dourado.
+/// Wordmark STWAY — letras brancas, “A” em chevron dourado (sem travessão).
 class StwayWordmark extends StatelessWidget {
   final double fontSize;
   final double letterSpacing;
@@ -50,24 +48,21 @@ class StwayWordmark extends StatelessWidget {
     this.letterSpacing = 8,
     this.letterColor,
     this.aColor,
-    this.weight = FontWeight.w700,
+    this.weight = FontWeight.w900,
   });
 
   @override
   Widget build(BuildContext context) {
     final letters = letterColor ?? Colors.white;
     final chevron = aColor ?? AppColors.accent;
-    // Fonte da marca — isolada do HUD (Exo 2). O A é um pico
-    // triangular; Oswald é a mesma família visual (gótica condensada).
-    final style = GoogleFonts.oswald(
-      fontSize: fontSize,
-      fontWeight: weight,
+    final style = AppTypography.display(
+      size: fontSize,
+      weight: weight,
       color: letters,
       height: 1,
-      letterSpacing: letterSpacing,
-    );
+    ).copyWith(letterSpacing: letterSpacing);
 
-    final aSize = fontSize * 0.82;
+    final aSize = fontSize * 0.72;
     return Row(
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.center,
@@ -77,7 +72,7 @@ class StwayWordmark extends StatelessWidget {
         Text('W', style: style),
         SizedBox(width: letterSpacing * 0.35),
         CustomPaint(
-          size: Size(aSize * 0.78, aSize),
+          size: Size(aSize * 0.95, aSize),
           painter: _ChevronAPainter(color: chevron),
         ),
         SizedBox(width: letterSpacing * 0.35),
@@ -97,15 +92,14 @@ class _ChevronAPainter extends CustomPainter {
     final paint = Paint()
       ..color = color
       ..style = PaintingStyle.stroke
-      ..strokeWidth = size.width * 0.22
-      ..strokeCap = StrokeCap.square
-      ..strokeJoin = StrokeJoin.miter
-      ..strokeMiterLimit = 4;
+      ..strokeWidth = size.width * 0.18
+      ..strokeCap = StrokeCap.round
+      ..strokeJoin = StrokeJoin.round;
 
     final path = Path()
-      ..moveTo(size.width * 0.08, size.height * 0.96)
-      ..lineTo(size.width * 0.5, size.height * 0.06)
-      ..lineTo(size.width * 0.92, size.height * 0.96);
+      ..moveTo(size.width * 0.08, size.height * 0.92)
+      ..lineTo(size.width * 0.5, size.height * 0.12)
+      ..lineTo(size.width * 0.92, size.height * 0.92);
 
     canvas.drawPath(path, paint);
   }
