@@ -433,12 +433,18 @@ class _BookPicker extends StatelessWidget {
               ),
               const SizedBox(height: AppSpace.section),
               ...switch (order) {
-                BibleReadingOrder.canonical =>
-                  _canonicalSections(books, onPick),
-                BibleReadingOrder.chronological =>
-                  _chronologicalSections(books, onPick),
-                BibleReadingOrder.alphabetical =>
-                  _alphabeticalSections(books, onPick),
+                BibleReadingOrder.canonical => _canonicalSections(
+                  books,
+                  onPick,
+                ),
+                BibleReadingOrder.chronological => _chronologicalSections(
+                  books,
+                  onPick,
+                ),
+                BibleReadingOrder.alphabetical => _alphabeticalSections(
+                  books,
+                  onPick,
+                ),
               },
             ],
           ),
@@ -530,11 +536,7 @@ class _BookPicker extends StatelessWidget {
         widgets.add(const SizedBox(height: AppSpace.section));
       }
       widgets.add(
-        _BookGroupSection(
-          title: letter,
-          entries: group,
-          onPick: onPick,
-        ),
+        _BookGroupSection(title: letter, entries: group, onPick: onPick),
       );
     }
     return widgets;
@@ -1661,6 +1663,16 @@ class BibleReaderView extends StatelessWidget {
     await progress.updateSettings(progress.settings.copyWith(fontScale: next));
   }
 
+  Future<void> _toggleReadingNight(BuildContext context) async {
+    final progress = context.read<ProgressService>();
+    final appearance = Appearance.of(context);
+    final current = progress.settings.bibleReadingNight ?? !appearance.isDay;
+    HapticFeedback.selectionClick();
+    await progress.updateSettings(
+      progress.settings.copyWith(bibleReadingNight: !current),
+    );
+  }
+
   Future<void> _verseActions(
     BuildContext context, {
     required ProgressService progress,
@@ -1848,6 +1860,9 @@ class BibleReaderView extends StatelessWidget {
     final fontScale = context.select(
       (ProgressService p) => p.settings.fontScale,
     );
+    final bibleReadingNight = context.select(
+      (ProgressService p) => p.settings.bibleReadingNight,
+    );
     final alreadyRead = context.select(
       (ProgressService p) => p.hasReadBibleChapter(book.abbrev, chapter),
     );
@@ -1856,7 +1871,10 @@ class BibleReaderView extends StatelessWidget {
       return p.bibleBookmarks.where((k) => k.startsWith(prefix)).join('|');
     });
     final progress = context.read<ProgressService>();
-    final reading = BibleReadingStyle.resolve(a);
+    final reading = BibleReadingStyle.resolve(
+      a,
+      readingNight: bibleReadingNight,
+    );
     final verses = book.chapters[chapter - 1];
     final topPad = topBar == null
         ? AppSpace.sm
@@ -1870,7 +1888,7 @@ class BibleReaderView extends StatelessWidget {
         scrollPaddingBelowNav(context),
       ),
       children: [
-        // Página de leitura — contraste adaptado ao horário.
+        // Página de leitura — noite só neste painel, se o leitor quiser.
         Container(
           decoration: BoxDecoration(
             color: reading.page,
@@ -1898,22 +1916,32 @@ class BibleReaderView extends StatelessWidget {
                     const SizedBox(height: AppSpace.sm),
                     _ChapterVersionBar(reading: reading),
                     const SizedBox(height: AppSpace.md),
-                    // Conforto: tamanho do texto.
+                    // Conforto: fonte à esquerda, noite só na página à direita.
                     Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        _FontChip(
-                          label: 'A−',
-                          enabled: fontScale > 0.86,
-                          reading: reading,
-                          onTap: () => _adjustFont(context, -0.1),
+                        Row(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            _FontChip(
+                              label: 'A−',
+                              enabled: fontScale > 0.86,
+                              reading: reading,
+                              onTap: () => _adjustFont(context, -0.1),
+                            ),
+                            const SizedBox(width: AppSpace.sm),
+                            _FontChip(
+                              label: 'A+',
+                              enabled: fontScale < 1.34,
+                              reading: reading,
+                              onTap: () => _adjustFont(context, 0.1),
+                            ),
+                          ],
                         ),
-                        const SizedBox(width: AppSpace.sm),
-                        _FontChip(
-                          label: 'A+',
-                          enabled: fontScale < 1.34,
+                        const Spacer(),
+                        _ReadingNightChip(
+                          night: !reading.isDay,
                           reading: reading,
-                          onTap: () => _adjustFont(context, 0.1),
+                          onTap: () => _toggleReadingNight(context),
                         ),
                       ],
                     ),
@@ -2128,6 +2156,51 @@ class BibleReaderView extends StatelessWidget {
           ],
         );
       },
+    );
+  }
+}
+
+class _ReadingNightChip extends StatelessWidget {
+  final bool night;
+  final BibleReadingStyle reading;
+  final VoidCallback onTap;
+
+  const _ReadingNightChip({
+    required this.night,
+    required this.reading,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Tooltip(
+      message: night ? 'Modo claro da leitura' : 'Modo noite da leitura',
+      child: Semantics(
+        button: true,
+        label: night
+            ? 'Usar modo claro na leitura'
+            : 'Usar modo noite na leitura',
+        child: GestureDetector(
+          onTap: onTap,
+          child: Container(
+            width: 40,
+            height: 32,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              color: night ? reading.highlightFill : reading.chipFill,
+              borderRadius: BorderRadius.circular(AppRadii.sm),
+              border: Border.all(
+                color: night ? reading.highlightBorder : reading.pageBorder,
+              ),
+            ),
+            child: Icon(
+              night ? Icons.light_mode_rounded : Icons.dark_mode_rounded,
+              size: 18,
+              color: reading.ink,
+            ),
+          ),
+        ),
+      ),
     );
   }
 }

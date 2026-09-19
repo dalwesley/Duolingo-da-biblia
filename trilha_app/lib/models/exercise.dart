@@ -577,8 +577,10 @@ class Exercise {
 
   bool checkAnswer(String answer) {
     if (type.isRevealOnly) return true;
+    final raw = answer.trim();
+    if (raw.isEmpty) return false;
     if (type == ExerciseType.order) {
-      final got = answer
+      final got = raw
           .split(',')
           .map((s) => s.trim())
           .where((s) => s.isNotEmpty);
@@ -594,7 +596,7 @@ class Exercise {
     }
     if (type == ExerciseType.match && correctPairs.isNotEmpty) {
       // answer "a:x,b:y"
-      final parts = answer.split(',');
+      final parts = raw.split(',');
       final got = <String, String>{};
       for (final p in parts) {
         final kv = p.split(':');
@@ -606,7 +608,27 @@ class Exercise {
       }
       return true;
     }
-    return answer == resolvedCorrectAnswer;
+    final wantId = resolvedCorrectAnswer.trim();
+    if (raw == wantId) return true;
+    if (_norm(raw) == _norm(wantId)) return true;
+    for (final o in effectiveOptions) {
+      if (o.id == wantId && _norm(o.text) == _norm(raw)) return true;
+    }
+    return false;
+  }
+
+  /// Id da opção quando a resposta veio como texto do chip.
+  String canonicalizeAnswer(String answer) {
+    final raw = answer.trim();
+    if (raw.isEmpty) return raw;
+    for (final o in effectiveOptions) {
+      if (o.id == raw) return o.id;
+    }
+    final want = _norm(raw);
+    for (final o in effectiveOptions) {
+      if (_norm(o.text) == want) return o.id;
+    }
+    return raw;
   }
 
   String feedbackFor(String selectedId, {required bool correct}) {

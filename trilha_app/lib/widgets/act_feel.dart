@@ -10,7 +10,7 @@ class ActHaptics {
   static void tap() => HapticFeedback.selectionClick();
   static void confirm() => HapticFeedback.mediumImpact();
   static void success() => HapticFeedback.heavyImpact();
-  static void error() => HapticFeedback.vibrate();
+  static void error() => HapticFeedback.heavyImpact();
   static void tick() => HapticFeedback.selectionClick();
 }
 
@@ -92,14 +92,16 @@ class _ActShakeState extends State<ActShake>
 
   @override
   Widget build(BuildContext context) {
-    return AnimatedBuilder(
-      animation: _ctrl,
-      builder: (context, child) {
-        final t = _ctrl.value;
-        final wave = math.sin(t * math.pi * 8) * 6 * (1 - t);
-        return Transform.translate(offset: Offset(wave, 0), child: child);
-      },
-      child: widget.child,
+    return RepaintBoundary(
+      child: AnimatedBuilder(
+        animation: _ctrl,
+        builder: (context, child) {
+          final t = _ctrl.value;
+          final wave = math.sin(t * math.pi * 8) * 6 * (1 - t);
+          return Transform.translate(offset: Offset(wave, 0), child: child);
+        },
+        child: widget.child,
+      ),
     );
   }
 }

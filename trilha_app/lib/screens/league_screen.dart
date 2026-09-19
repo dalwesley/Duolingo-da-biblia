@@ -232,9 +232,19 @@ class _LeagueScreenState extends State<LeagueScreen>
     try {
       await rooms.syncIfNeeded().timeout(const Duration(seconds: 10));
       await companionSvc.refresh().timeout(const Duration(seconds: 10));
-      await companionSvc
+      final result = await companionSvc
           .syncPresence(progress)
           .timeout(const Duration(seconds: 10));
+      if (!mounted) return;
+      if (result.weekTogetherBonusGranted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(
+              'Semana junta: +${WalkCompanion.weekTogetherBonusSteps} passos na caravana',
+            ),
+          ),
+        );
+      }
     } catch (e) {
       debugPrint('Falha ao sincronizar salas/companhia: $e');
     }
@@ -2725,7 +2735,7 @@ class _CompanionsEmpty extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           Text(
-            'Até 3 pares. Sem disputa — o foco é presença: quando os dois dão um passo no dia, a companhia avança.',
+            'Até 3 pares. Presença primeiro — se a dupla caminhar os 7 dias da semana, +${WalkCompanion.weekTogetherBonusSteps} passos na caravana.',
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 13,
@@ -2860,8 +2870,8 @@ class _CompanhiaHeroCard extends StatelessWidget {
         ? 'Convide alguém e andem lado a lado'
         : bestStreak > 0
         ? togetherToday > 0
-              ? '$togetherToday juntos hoje · sem disputa, só presença'
-              : 'Sem disputa — só presença compartilhada'
+              ? '$togetherToday juntos hoje · semana junta vale +${WalkCompanion.weekTogetherBonusSteps}'
+              : 'Semana junta (7 dias) vale +${WalkCompanion.weekTogetherBonusSteps} na caravana'
         : 'Quando os dois caminham, o dia conta';
 
     return GlassCard(

@@ -70,7 +70,12 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
     _pulse = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 1800),
-    )..repeat();
+    );
+    _enter.addStatusListener((status) {
+      if (status == AnimationStatus.completed && mounted) {
+        _pulse.repeat();
+      }
+    });
     _scrim = CurvedAnimation(
       parent: _enter,
       curve: const Interval(0, 0.45, curve: Curves.easeOut),
@@ -83,7 +88,11 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
       parent: _enter,
       curve: const Interval(0.08, 0.85, curve: Curves.easeOutCubic),
     );
-    if (_needsEvidence) _loadVerse();
+    if (_needsEvidence) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) _loadVerse();
+      });
+    }
   }
 
   @override
@@ -230,11 +239,12 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
             },
             child: ConstrainedBox(
               constraints: const BoxConstraints(maxWidth: 360),
-              child: Material(
-                color: Colors.transparent,
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 28),
-                  child: DecoratedBox(
+              child: RepaintBoundary(
+                child: Material(
+                  color: Colors.transparent,
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 28),
+                    child: DecoratedBox(
                     decoration: BoxDecoration(
                       color: Color.lerp(a.cardFill, color, 0.08),
                       borderRadius: BorderRadius.circular(AppRadii.xl),
@@ -333,6 +343,7 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
                       ),
                     ),
                   ),
+                ),
                 ),
               ),
             ),

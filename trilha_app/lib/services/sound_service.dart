@@ -10,6 +10,7 @@ class SoundService {
   AudioPlayer? _player;
   bool _enabled = true;
   bool _available = true;
+  bool _warmed = false;
 
   Future<void> init() async {
     final prefs = await SharedPreferences.getInstance();
@@ -18,11 +19,23 @@ class SoundService {
       final player = AudioPlayer();
       await player.setReleaseMode(ReleaseMode.stop);
       _player = player;
+      await _precache();
     } on MissingPluginException {
       _available = false;
     } catch (_) {
       _available = false;
     }
+  }
+
+  Future<void> _precache() async {
+    if (_warmed) return;
+    try {
+      await AudioCache.instance.loadAll(const [
+        'sounds/correct.mp3',
+        'sounds/wrong.mp3',
+      ]);
+      _warmed = true;
+    } catch (_) {}
   }
 
   void setEnabled(bool value) => _enabled = value;

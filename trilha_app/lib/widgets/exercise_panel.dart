@@ -1,5 +1,6 @@
 import 'dart:math' as math;
 
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 import '../models/trail.dart';
@@ -20,15 +21,10 @@ class _ActSkin {
   static const enter = Duration(milliseconds: 240);
 
   static const plateShadow = [
-    BoxShadow(
-      color: Color(0x59000000),
-      blurRadius: 0,
-      offset: Offset(0, 4),
-    ),
+    BoxShadow(color: Color(0x59000000), blurRadius: 0, offset: Offset(0, 4)),
   ];
 
-  static Color ivory(Color accent) =>
-      Color.lerp(AppColors.card, accent, 0.16)!;
+  static Color ivory(Color accent) => Color.lerp(AppColors.card, accent, 0.16)!;
 
   static ({
     Color fill,
@@ -125,6 +121,7 @@ class _ExercisePanelState extends State<ExercisePanel>
     with TickerProviderStateMixin {
   late final AnimationController _enter;
   late final AnimationController _pulse;
+  late final TapGestureRecognizer _completeClearTap;
   String? _picked;
   String? _matchLeft;
   bool _confirming = false;
@@ -142,20 +139,23 @@ class _ExercisePanelState extends State<ExercisePanel>
       vsync: this,
       duration: const Duration(milliseconds: 1400),
     )..repeat(reverse: true);
+    _completeClearTap = TapGestureRecognizer()..onTap = _clearComplete;
     _resetLocal();
   }
 
   @override
   void didUpdateWidget(covariant ExercisePanel oldWidget) {
     super.didUpdateWidget(oldWidget);
-    if (oldWidget.exercise.id != widget.exercise.id) {
+    final newAct = oldWidget.exercise.id != widget.exercise.id;
+    final retry = oldWidget.selected != null && widget.selected == null;
+    final dismissed =
+        oldWidget.showFeedback &&
+        !widget.showFeedback &&
+        widget.selected == null;
+    if (newAct || retry || dismissed) {
       _picked = null;
       _resetLocal();
-      _enter.forward(from: 0);
-    } else if (oldWidget.selected != null && widget.selected == null) {
-      // Erro: o pai limpou a seleção para nova tentativa — solta o CTA.
-      _picked = null;
-      _resetLocal();
+      if (newAct) _enter.forward(from: 0);
     }
     if (widget.selected != null && widget.selected != _picked) {
       _picked = widget.selected;
@@ -181,6 +181,7 @@ class _ExercisePanelState extends State<ExercisePanel>
 
   @override
   void dispose() {
+    _completeClearTap.dispose();
     _enter.dispose();
     _pulse.dispose();
     super.dispose();
@@ -219,7 +220,7 @@ class _ExercisePanelState extends State<ExercisePanel>
     if (_locked) return;
     ActHaptics.confirm();
     setState(() => _confirming = true);
-    widget.onSelect(answer);
+    widget.onSelect(widget.exercise.canonicalizeAnswer(answer));
   }
 
   void _pickChoice(String id) {
@@ -447,6 +448,7 @@ class _ExercisePanelState extends State<ExercisePanel>
       lit: _lit,
       fill: true,
       onClear: _locked ? null : _clearComplete,
+      clearRecognizer: _locked ? null : _completeClearTap,
     );
   }
 
@@ -804,7 +806,6 @@ class _ExercisePanelState extends State<ExercisePanel>
         CopperCta(
           label: 'Continuar',
           onTap: canConfirm && !waiting ? _confirmChoice : null,
-          busy: waiting,
           trailing: null,
           padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 15),
         ),
@@ -1015,8 +1016,7 @@ class _Manuscript extends StatelessWidget {
     this.lit = false,
   });
 
-  BoxDecoration get _plate =>
-      StagePlate.decoration(accent: accent, lit: lit);
+  BoxDecoration get _plate => StagePlate.decoration(accent: accent, lit: lit);
 
   Widget _filledStage() {
     return LayoutBuilder(
@@ -1114,6 +1114,7 @@ class _CompleteVerse extends StatelessWidget {
   final String? reference;
   final AnimationController pulse;
   final VoidCallback? onClear;
+  final GestureRecognizer? clearRecognizer;
   final bool lit;
   final bool fill;
 
@@ -1126,6 +1127,7 @@ class _CompleteVerse extends StatelessWidget {
     this.expected,
     this.reference,
     this.onClear,
+    this.clearRecognizer,
     this.lit = false,
     this.fill = false,
   });
@@ -1140,6 +1142,9 @@ class _CompleteVerse extends StatelessWidget {
     final before = hasBlank ? template.substring(0, match.start) : template;
     final after = hasBlank ? template.substring(last.end) : '';
     final style = _verseWordStyle();
+    final filledWord = (filled ?? '').trim();
+    final showFill =
+        hasBlank && filledWord.isNotEmpty && state != _OptState.wrong;
 
     return _Manuscript(
       accent: accent,
@@ -1152,7 +1157,13 @@ class _CompleteVerse extends StatelessWidget {
           style: style,
           children: [
             if (before.isNotEmpty) TextSpan(text: before),
-            if (hasBlank)
+            if (showFill)
+              TextSpan(
+                text: filledWord,
+                style: style.copyWith(color: accent),
+                recognizer: clearRecognizer,
+              )
+            else if (hasBlank)
               WidgetSpan(
                 alignment: PlaceholderAlignment.baseline,
                 baseline: TextBaseline.alphabetic,
@@ -1197,7 +1208,7 @@ class _BlankGap extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final has = (filled ?? '').trim().isNotEmpty;
-    final probeStyle = _verseWordStyle(weight: FontWeight.w700);
+    final probeStyle = _verseWordStyle();
     final probe = TextPainter(
       text: TextSpan(text: has ? filled! : expected, style: probeStyle),
       textDirection: TextDirection.ltr,
@@ -1207,26 +1218,14 @@ class _BlankGap extends StatelessWidget {
     if (has && state == _OptState.wrong) {
       return ConstrainedBox(
         constraints: const BoxConstraints(maxWidth: 260),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              filled!,
-              textAlign: TextAlign.center,
-              maxLines: 2,
-              overflow: TextOverflow.ellipsis,
-              style: probeStyle
-                  .copyWith(color: AppColors.error, height: 1.25)
-                  .copyWith(decoration: TextDecoration.lineThrough),
-            ),
-            Text(
-              expected,
-              textAlign: TextAlign.center,
-              maxLines: 2,
-              overflow: TextOverflow.ellipsis,
-              style: _verseWordStyle(color: accent, weight: FontWeight.w700),
-            ),
-          ],
+        child: Text(
+          filled!,
+          textAlign: TextAlign.center,
+          maxLines: 2,
+          overflow: TextOverflow.ellipsis,
+          style: probeStyle
+              .copyWith(color: AppColors.error, height: 1.25)
+              .copyWith(decoration: TextDecoration.lineThrough),
         ),
       );
     }
@@ -1241,7 +1240,7 @@ class _BlankGap extends StatelessWidget {
             textAlign: TextAlign.center,
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
-            style: _verseWordStyle(color: accent, weight: FontWeight.w700),
+            style: _verseWordStyle(color: accent),
           ),
         ),
       );
@@ -1357,8 +1356,7 @@ String? _connectCaption(ExercisePassage? a, ExercisePassage? b) {
     if (b != null) b.ref.trim(),
   ].where((r) => r.isNotEmpty).toList();
   if (refs.isEmpty) return null;
-  if (refs.length == 2 &&
-      refs[0].toLowerCase() == refs[1].toLowerCase()) {
+  if (refs.length == 2 && refs[0].toLowerCase() == refs[1].toLowerCase()) {
     return refs[0];
   }
   return refs.join('  ·  ');
@@ -1723,9 +1721,7 @@ class _VfSlab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final skin = _ActSkin.paint(state, accent);
-    final wellBorder = state == _OptState.wrong
-        ? AppColors.textOnDark
-        : accent;
+    final wellBorder = state == _OptState.wrong ? AppColors.textOnDark : accent;
 
     return ActShake(
       active: state == _OptState.wrong,
@@ -1798,9 +1794,7 @@ class _OptionTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final skin = _ActSkin.paint(state, accent);
-    final wellBorder = state == _OptState.wrong
-        ? AppColors.textOnDark
-        : accent;
+    final wellBorder = state == _OptState.wrong ? AppColors.textOnDark : accent;
     return ActShake(
       active: state == _OptState.wrong,
       child: ActPress(
@@ -1935,9 +1929,7 @@ class _OrderPiece extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final skin = _ActSkin.paint(state, accent);
-    final wellBorder = state == _OptState.wrong
-        ? AppColors.textOnDark
-        : accent;
+    final wellBorder = state == _OptState.wrong ? AppColors.textOnDark : accent;
     return AnimatedContainer(
       duration: _ActSkin.anim,
       curve: Curves.easeOutCubic,

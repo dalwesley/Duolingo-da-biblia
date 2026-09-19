@@ -6,6 +6,20 @@ import 'backend_service.dart';
 import 'progress_service.dart';
 import 'subscription_service.dart';
 
+/// Resultado do sync de presença — referral e/ou bônus da semana junta.
+class CompanionSyncResult {
+  final List<String> referralCodes;
+  final bool weekTogetherBonusGranted;
+
+  const CompanionSyncResult({
+    this.referralCodes = const [],
+    this.weekTogetherBonusGranted = false,
+  });
+
+  bool get hasFeedback =>
+      referralCodes.isNotEmpty || weekTogetherBonusGranted;
+}
+
 /// Companhia — pares de caminhada (friend streak de passos).
 /// Local + sync Firebase quando autenticado.
 class CompanionService extends ChangeNotifier {
@@ -195,10 +209,11 @@ class CompanionService extends ChangeNotifier {
   }
 
   /// Publica presença (visto + passos semanais) e, se caminhou hoje, o passo.
-  /// Retorna os códigos cuja recompensa de referral acabou de ser concedida
-  /// (convidado completou a 1ª missão), para o chamador celebrar na UI.
-  Future<List<String>> syncPresence(ProgressService progress) async {
-    if (!backend.isActive || companions.isEmpty) return const [];
+  /// Concede referral (1ª missão do convidado) e o bônus da semana junta.
+  Future<CompanionSyncResult> syncPresence(ProgressService progress) async {
+    if (!backend.isActive || companions.isEmpty) {
+      return const CompanionSyncResult();
+    }
     final codes = companions.map((c) => c.code).toList();
     await backend.syncCompanionPresence(
       codes: codes,
@@ -215,7 +230,13 @@ class CompanionService extends ChangeNotifier {
         if (granted) rewarded.add(c.code);
       }
     }
-    return rewarded;
+    final weekTogether = await progress.claimCompanionWeekTogetherBonus(
+      companions,
+    );
+    return CompanionSyncResult(
+      referralCodes: rewarded,
+      weekTogetherBonusGranted: weekTogether,
+    );
   }
 
   /// Envia um aceno no app. WhatsApp continua opcional no sheet.

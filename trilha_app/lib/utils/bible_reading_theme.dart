@@ -3,6 +3,7 @@ import '../theme/app_theme.dart';
 import 'appearance.dart';
 
 /// Tema de leitura bíblica — contraste alto no sol, suave à noite.
+/// Independente do visual do app: a página pode ser noite só para ler.
 /// O tamanho da fonte segue a escala global do app ([MediaQuery.textScaler]).
 class BibleReadingStyle {
   final bool isDay;
@@ -37,32 +38,27 @@ class BibleReadingStyle {
   static const lineHeight = 1.72;
 
   TextStyle get verseStyle => AppTypography.verse(
-        size: baseSize,
-        height: lineHeight,
-        weight: FontWeight.w500,
-        color: ink,
-      );
+    size: baseSize,
+    height: lineHeight,
+    weight: FontWeight.w500,
+    color: ink,
+  );
 
-  TextStyle get numberStyle => AppTypography.label(
-        size: 11,
-        letterSpacing: 0.3,
-        color: verseNumber,
-      );
+  TextStyle get numberStyle =>
+      AppTypography.label(size: 11, letterSpacing: 0.3, color: verseNumber);
 
-  TextStyle get metaStyle => AppTypography.body(
-        size: 12,
-        weight: FontWeight.w600,
-        color: inkMuted,
-      );
+  TextStyle get metaStyle =>
+      AppTypography.body(size: 12, weight: FontWeight.w600, color: inkMuted);
 
-  TextStyle get titleStyle => AppTypography.verse(
-        size: 28,
-        weight: FontWeight.w700,
-        color: ink,
-      );
+  TextStyle get titleStyle =>
+      AppTypography.verse(size: 28, weight: FontWeight.w700, color: ink);
 
-  static BibleReadingStyle resolve(AppearanceStyle appearance) {
-    if (appearance.isDay) {
+  static BibleReadingStyle resolve(
+    AppearanceStyle appearance, {
+    bool? readingNight,
+  }) {
+    final isDay = readingNight == null ? appearance.isDay : !readingNight;
+    if (isDay) {
       return BibleReadingStyle(
         isDay: true,
         page: AppColors.surface,

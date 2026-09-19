@@ -34,6 +34,10 @@ class WalkCompanion {
 
   static const milestones = [3, 7, 14, 30, 60, 100];
 
+  /// Bônus na Caravana quando a dupla fecha os 7 dias da semana (seg–dom).
+  /// Uma vez por semana, não empilha por par. Mesmo valor de uma promoção.
+  static const weekTogetherBonusSteps = 50;
+
   const WalkCompanion({
     required this.code,
     required this.displayName,
@@ -86,6 +90,34 @@ class WalkCompanion {
   bool get hasWeeklyStepsCompare =>
       !awaitingPartner && (myWeeklySteps > 0 || theirWeeklySteps > 0);
 
+  /// Dias da semana da caravana (seg–dom) em que os dois caminharam juntos.
+  int togetherDaysThisWeek([DateTime? now]) {
+    if (awaitingPartner || sharedDays <= 0) return 0;
+    final d = now ?? DateTime.now();
+    final today = _dateKey(d);
+    final lastRaw = lastSharedDate ?? (bothWalkedToday ? today : null);
+    if (lastRaw == null || lastRaw.isEmpty) return 0;
+    final last = _parseYmd(lastRaw);
+    if (last == null) return 0;
+    final monday = DateTime(
+      d.year,
+      d.month,
+      d.day,
+    ).subtract(Duration(days: d.weekday - 1));
+    if (last.isBefore(monday)) return 0;
+    final spanned = last.difference(monday).inDays + 1;
+    final n = sharedDays < spanned ? sharedDays : spanned;
+    return n.clamp(0, 7);
+  }
+
+  /// Domingo: os dois caminharam e a dupla cobriu seg–dom.
+  bool coveredLeagueWeekTogether([DateTime? now]) {
+    if (awaitingPartner || !bothWalkedToday) return false;
+    final d = now ?? DateTime.now();
+    if (d.weekday != DateTime.sunday) return false;
+    return togetherDaysThisWeek(d) >= 7;
+  }
+
   /// Próximo marco de dias juntos (3, 7, 14…).
   int get nextMilestone {
     for (final m in milestones) {
@@ -119,12 +151,20 @@ class WalkCompanion {
     return 'Vamos dar o próximo passo juntos?';
   }
 
-  /// Linha curta sob o status (passos / ausência).
+  /// Linha curta sob o status (passos / ausência / semana junta).
   String? get insightLine {
     if (awaitingPartner) return null;
     final parts = <String>[];
     final delay = delayCopy;
     if (delay != null) parts.add(delay.insight);
+    if (coveredLeagueWeekTogether()) {
+      parts.add(
+        'Semana junta · +$weekTogetherBonusSteps na caravana',
+      );
+    } else if (bothWalkedToday) {
+      final n = togetherDaysThisWeek();
+      if (n > 0) parts.add('$n/7 nesta semana');
+    }
     if (hasWeeklyStepsCompare) {
       final d = weeklyStepsDelta;
       if (d > 0) {
@@ -273,15 +313,27 @@ ${InviteDeepLinkService.openAppFooter()}
   bool get theyAreDusty =>
       !awaitingPartner && !theyWalkedToday && (theyDaysAway ?? 0) >= 1;
 
-  static int? _daysSince(String? yyyyMmDd) {
-    if (yyyyMmDd == null || yyyyMmDd.isEmpty) return null;
+  static String _dateKey(DateTime d) {
+    final y = d.year.toString().padLeft(4, '0');
+    final m = d.month.toString().padLeft(2, '0');
+    final day = d.day.toString().padLeft(2, '0');
+    return '$y-$m-$day';
+  }
+
+  static DateTime? _parseYmd(String yyyyMmDd) {
     final parts = yyyyMmDd.split('-');
     if (parts.length != 3) return null;
     final y = int.tryParse(parts[0]);
     final m = int.tryParse(parts[1]);
     final d = int.tryParse(parts[2]);
     if (y == null || m == null || d == null) return null;
-    final last = DateTime(y, m, d);
+    return DateTime(y, m, d);
+  }
+
+  static int? _daysSince(String? yyyyMmDd) {
+    if (yyyyMmDd == null || yyyyMmDd.isEmpty) return null;
+    final last = _parseYmd(yyyyMmDd);
+    if (last == null) return null;
     final now = DateTime.now();
     final today = DateTime(now.year, now.month, now.day);
     return today.difference(last).inDays.clamp(0, 999);

@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../data/trail_repository.dart';
+import '../models/walk_companion.dart';
 import '../services/app_update_service.dart';
 import '../services/backend_service.dart';
 import '../services/companion_service.dart';
@@ -198,19 +199,31 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
   Future<void> _syncCompanionAndCelebrateReferral(
     ProgressService progress,
   ) async {
-    final rewarded = await context.read<CompanionService>().syncPresence(
+    final result = await context.read<CompanionService>().syncPresence(
       progress,
     );
-    if (!mounted || rewarded.isEmpty) return;
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(
-          rewarded.length == 1
-              ? 'Seu convite valeu +${ProgressService.referralFirstMissionBonus} passos!'
-              : 'Seus convites valeram +${rewarded.length * ProgressService.referralFirstMissionBonus} passos!',
+    if (!mounted || !result.hasFeedback) return;
+    final messenger = ScaffoldMessenger.of(context);
+    if (result.referralCodes.isNotEmpty) {
+      messenger.showSnackBar(
+        SnackBar(
+          content: Text(
+            result.referralCodes.length == 1
+                ? 'Seu convite valeu +${ProgressService.referralFirstMissionBonus} passos!'
+                : 'Seus convites valeram +${result.referralCodes.length * ProgressService.referralFirstMissionBonus} passos!',
+          ),
         ),
-      ),
-    );
+      );
+    }
+    if (result.weekTogetherBonusGranted) {
+      messenger.showSnackBar(
+        SnackBar(
+          content: Text(
+            'Semana junta: +${WalkCompanion.weekTogetherBonusSteps} passos na caravana',
+          ),
+        ),
+      );
+    }
   }
 
   @override
@@ -223,6 +236,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       _syncReminders();
       final progress = _progressRef;
       if (progress != null) {
+        unawaited(progress.persistLocalCache());
         HomeWidgetService.syncFromProgress(progress, immediate: true);
       }
     }
@@ -263,7 +277,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       if (!mounted) return;
       _lastResumeHydrateAt = DateTime.now();
 
-      unawaited(context.read<CompanionService>().refresh());
+      unawaited(_syncCompanionAndCelebrateReferral(progress));
 
       await backend.settleAndSyncLeague(
         progress,
@@ -407,32 +421,47 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
         IndexedStack(
           index: _index,
           children: [
-            HomeScreen(
-              repo: _repo,
-              onOpenMission: _openMission,
-              onOpenTrilhas: _goToTrilhas,
-              onOpenProfile: _openProfile,
-              onOpenBible: () => setState(() {
-                _index = 2;
-                _frost.value = 0;
-              }),
-              onOpenLeague: () => setState(() {
-                _index = 3;
-                _frost.value = 0;
-              }),
+            TickerMode(
+              enabled: _index == 0,
+              child: HomeScreen(
+                repo: _repo,
+                onOpenMission: _openMission,
+                onOpenTrilhas: _goToTrilhas,
+                onOpenProfile: _openProfile,
+                onOpenBible: () => setState(() {
+                  _index = 2;
+                  _frost.value = 0;
+                }),
+                onOpenLeague: () => setState(() {
+                  _index = 3;
+                  _frost.value = 0;
+                }),
+              ),
             ),
-            TrilhasScreen(
-              repo: _repo,
-              topBar: tabBar(1),
-              portalsActive: _index == 1,
+            TickerMode(
+              enabled: _index == 1,
+              child: TrilhasScreen(
+                repo: _repo,
+                topBar: tabBar(1),
+                portalsActive: _index == 1,
+              ),
             ),
-            BibleScreen(topBar: tabBar(2)),
-            LeagueScreen(
-              topBar: tabBar(3),
-              active: _index == 3,
-              onOpenOwnProfile: _openProfile,
+            TickerMode(
+              enabled: _index == 2,
+              child: BibleScreen(topBar: tabBar(2)),
             ),
-            SettingsScreen(topBar: tabBar(4)),
+            TickerMode(
+              enabled: _index == 3,
+              child: LeagueScreen(
+                topBar: tabBar(3),
+                active: _index == 3,
+                onOpenOwnProfile: _openProfile,
+              ),
+            ),
+            TickerMode(
+              enabled: _index == 4,
+              child: SettingsScreen(topBar: tabBar(4)),
+            ),
           ],
         ),
       ),

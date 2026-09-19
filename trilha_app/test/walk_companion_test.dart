@@ -14,16 +14,20 @@ WalkCompanion _base({
   bool theyWalked = false,
   String? theyLastWalk,
   String? theyLastSeen,
+  String? lastShared,
+  int sharedDays = 1,
   int myWeekly = 0,
   int theirWeekly = 0,
+  bool awaiting = false,
 }) {
   return WalkCompanion(
     code: 'ABCD',
     displayName: 'Lídia',
-    sharedDays: 1,
+    sharedDays: sharedDays,
+    lastSharedDate: lastShared,
     iWalkedToday: iWalked,
     theyWalkedToday: theyWalked,
-    awaitingPartner: false,
+    awaitingPartner: awaiting,
     isHost: true,
     theyLastWalkDate: theyLastWalk,
     theyLastSeenDate: theyLastSeen,
@@ -138,6 +142,75 @@ void main() {
         incomingNudgeMessage: 'Vem',
       );
       expect(walked.hasIncomingNudge, isFalse);
+    });
+  });
+
+  group('WalkCompanion week together', () {
+    // Semana da caravana: seg 14/09/2026 → dom 20/09/2026.
+    final sunday = DateTime(2026, 9, 20);
+    final saturday = DateTime(2026, 9, 19);
+    final wednesday = DateTime(2026, 9, 16);
+
+    test('counts together days inside the league week', () {
+      final c = _base(
+        theyWalked: true,
+        lastShared: '2026-09-16',
+        sharedDays: 3,
+      );
+      expect(c.togetherDaysThisWeek(wednesday), 3);
+      expect(c.coveredLeagueWeekTogether(wednesday), isFalse);
+    });
+
+    test('caps at 7 and ignores streak from the previous week', () {
+      final long = _base(
+        theyWalked: true,
+        lastShared: '2026-09-20',
+        sharedDays: 40,
+      );
+      expect(long.togetherDaysThisWeek(sunday), 7);
+      expect(long.coveredLeagueWeekTogether(sunday), isTrue);
+    });
+
+    test('full week only on Sunday with both walking', () {
+      final sat = _base(
+        theyWalked: true,
+        lastShared: '2026-09-19',
+        sharedDays: 6,
+      );
+      expect(sat.coveredLeagueWeekTogether(saturday), isFalse);
+
+      final missed = _base(
+        theyWalked: true,
+        lastShared: '2026-09-20',
+        sharedDays: 6,
+      );
+      expect(missed.coveredLeagueWeekTogether(sunday), isFalse);
+
+      final solo = _base(
+        theyWalked: false,
+        lastShared: '2026-09-19',
+        sharedDays: 7,
+      );
+      expect(solo.coveredLeagueWeekTogether(sunday), isFalse);
+
+      final done = _base(
+        theyWalked: true,
+        lastShared: '2026-09-20',
+        sharedDays: 7,
+      );
+      expect(done.coveredLeagueWeekTogether(sunday), isTrue);
+      expect(WalkCompanion.weekTogetherBonusSteps, 50);
+    });
+
+    test('awaiting partner never covers the week', () {
+      final c = _base(
+        theyWalked: true,
+        lastShared: '2026-09-20',
+        sharedDays: 7,
+        awaiting: true,
+      );
+      expect(c.togetherDaysThisWeek(sunday), 0);
+      expect(c.coveredLeagueWeekTogether(sunday), isFalse);
     });
   });
 }

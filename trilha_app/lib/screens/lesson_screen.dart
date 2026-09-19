@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
@@ -18,7 +20,6 @@ import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
 import '../utils/genesis_theme.dart';
 import '../utils/trail_progress.dart';
-import '../widgets/act_feel.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/exercise_feedback_dialog.dart';
 import '../widgets/exercise_panel.dart';
@@ -58,7 +59,7 @@ class LessonScreen extends StatefulWidget {
 }
 
 class _LessonScreenState extends State<LessonScreen>
-    with TickerProviderStateMixin {
+    with SingleTickerProviderStateMixin {
   final _repo = TrailRepository();
   Mission? _baseMission;
   Mission? _mission;
@@ -84,19 +85,15 @@ class _LessonScreenState extends State<LessonScreen>
   bool _hintUsed = false;
   Set<String> _eliminated = {};
   bool _outOfLamps = false;
+  int _attempt = 0;
   final bool _insightOnConnect = false;
 
-  late final AnimationController _questionEnter;
   late final AnimationController _impactFlash;
   bool _impactPositive = true;
 
   @override
   void initState() {
     super.initState();
-    _questionEnter = AnimationController(
-      vsync: this,
-      duration: const Duration(milliseconds: 240),
-    );
     _impactFlash = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 700),
@@ -106,7 +103,6 @@ class _LessonScreenState extends State<LessonScreen>
 
   @override
   void dispose() {
-    _questionEnter.dispose();
     _impactFlash.dispose();
     TtsService.instance.stop();
     super.dispose();
@@ -377,41 +373,11 @@ class _LessonScreenState extends State<LessonScreen>
     }
 
     final correct = ex.checkAnswer(optionId);
-    AnalyticsService.instance.logQuestionAnswered(
-      missionSlug: widget.missionSlug,
-      trailSlug: _trailSlug,
-      questionId: ex.id.isNotEmpty
-          ? ex.id
-          : '${widget.missionSlug}_e$_questionIndex',
-      questionIndex: _questionIndex,
-      correct: correct,
-      hintUsed: _hintUsed,
-      difficulty: _difficultyMeta?.difficulty.id,
-      isBoss: _mission?.isBoss ?? false,
-    );
-    AnalyticsService.instance.logExerciseComplete(
-      missionSlug: widget.missionSlug,
-      type: ex.type.wireId,
-      skill: ex.skill,
-      index: _questionIndex,
-      correct: correct,
-    );
-    final progress = context.read<ProgressService>();
-    final trackBankId =
-        ex.id.isNotEmpty && (_pickedIds.contains(ex.id) || widget.practiceMode);
     if (correct) {
       SoundService.instance.playCorrect();
-      ActHaptics.success();
-      if (trackBankId) {
-        await progress.clearMistake(ex.id);
-      }
     } else {
       SoundService.instance.playWrong();
-      ActHaptics.error();
       _mistakeInSession = true;
-      if (trackBankId) {
-        await progress.recordMistake(ex.id);
-      }
     }
 
     _impactPositive = correct;
@@ -432,16 +398,48 @@ class _LessonScreenState extends State<LessonScreen>
       _showFeedback = false;
     });
 
+    final progress = context.read<ProgressService>();
+    final trackBankId =
+        ex.id.isNotEmpty && (_pickedIds.contains(ex.id) || widget.practiceMode);
+    if (trackBankId) {
+      unawaited(
+        correct ? progress.clearMistake(ex.id) : progress.recordMistake(ex.id),
+      );
+    }
+    unawaited(
+      AnalyticsService.instance.logQuestionAnswered(
+        missionSlug: widget.missionSlug,
+        trailSlug: _trailSlug,
+        questionId: ex.id.isNotEmpty
+            ? ex.id
+            : '${widget.missionSlug}_e$_questionIndex',
+        questionIndex: _questionIndex,
+        correct: correct,
+        hintUsed: _hintUsed,
+        difficulty: _difficultyMeta?.difficulty.id,
+        isBoss: _mission?.isBoss ?? false,
+      ),
+    );
+    unawaited(
+      AnalyticsService.instance.logExerciseComplete(
+        missionSlug: widget.missionSlug,
+        type: ex.type.wireId,
+        skill: ex.skill,
+        index: _questionIndex,
+        correct: correct,
+      ),
+    );
+
     if (correct) {
-      await Future.delayed(const Duration(milliseconds: 520));
-      if (mounted) _continue();
+      await Future.delayed(const Duration(milliseconds: 420));
       _busy = false;
+      if (mounted) _continue();
       return;
     }
 
-    await Future.delayed(const Duration(milliseconds: 320));
-    if (mounted) setState(() => _showFeedback = true);
+    await Future.delayed(const Duration(milliseconds: 360));
     _busy = false;
+    if (mounted) setState(() => _showFeedback = true);
   }
 
   void _useHint() {
@@ -463,8 +461,7 @@ class _LessonScreenState extends State<LessonScreen>
     });
   }
 
-  MissionStudy? get _study =>
-      _mission == null ? null : _studyFor(_mission!);
+  MissionStudy? get _study => _mission == null ? null : _studyFor(_mission!);
 
   int get _answeredCount => _questionIndex + (_selected != null ? 1 : 0);
 
@@ -617,13 +614,18 @@ class _LessonScreenState extends State<LessonScreen>
       );
       return;
     }
-    setState(() => _phase = _Phase.quiz);
-    _questionEnter.forward(from: 0);
+    setState(() {
+      _phase = _Phase.quiz;
+      _attempt = 0;
+    });
     _logExerciseStart();
   }
 
   void _continue() {
     if (_mission == null) return;
+    _impactFlash
+      ..stop()
+      ..value = 0;
 
     if (_outOfLamps) {
       _finishLesson(forced: true);
@@ -638,8 +640,8 @@ class _LessonScreenState extends State<LessonScreen>
         _isCorrect = null;
         _hintUsed = false;
         _eliminated = {};
+        _attempt++;
       });
-      _questionEnter.forward(from: 0);
       return;
     }
 
@@ -652,8 +654,8 @@ class _LessonScreenState extends State<LessonScreen>
         _isCorrect = null;
         _hintUsed = false;
         _eliminated = {};
+        _attempt = 0;
       });
-      _questionEnter.forward(from: 0);
       _logExerciseStart();
     } else if (_mistakeInSession && !_reviewInserted) {
       final diffId =
@@ -681,8 +683,8 @@ class _LessonScreenState extends State<LessonScreen>
           _isCorrect = null;
           _hintUsed = false;
           _eliminated = {};
+          _attempt = 0;
         });
-        _questionEnter.forward(from: 0);
         _logExerciseStart();
         return;
       }
@@ -694,8 +696,9 @@ class _LessonScreenState extends State<LessonScreen>
 
   @override
   Widget build(BuildContext context) {
-    final progressSvc = context.watch<ProgressService>();
-    final mode = progressSvc.settings.appearanceMode;
+    final mode = context.select(
+      (ProgressService p) => p.settings.appearanceMode,
+    );
     final appearance = AppearanceStyle.resolve(mode);
 
     if (_mission == null || _baseMission == null) {
@@ -725,7 +728,9 @@ class _LessonScreenState extends State<LessonScreen>
             fit: StackFit.expand,
             children: [
               Positioned.fill(
-                child: AmbientAtmosphere(phase: appearance.phase),
+                child: RepaintBoundary(
+                  child: AmbientAtmosphere(phase: appearance.phase),
+                ),
               ),
               Positioned.fill(
                 child: IgnorePointer(
@@ -800,25 +805,27 @@ class _LessonScreenState extends State<LessonScreen>
                     ),
                     Expanded(
                       child: switch (_phase) {
-                        _Phase.quiz => ExercisePanel(
-                          key: ValueKey(_exercise.id),
-                          exercise: _exercise,
-                          selected: _selected,
-                          isCorrect: _isCorrect,
-                          showFeedback: _showFeedback,
-                          onSelect: _select,
-                          accent: accent,
-                          hintUsed: _hintUsed,
-                          eliminatedIds: _eliminated,
-                          onHint: mission.isBoss || !_exercise.supportsHint
-                              ? null
-                              : _useHint,
-                          outOfLamps: _outOfLamps,
-                          index: _questionIndex,
-                          total: total,
-                          insightFallback: mission.centralInsight,
-                          boardText: _board?.text,
-                          boardRef: _board?.reference,
+                        _Phase.quiz => RepaintBoundary(
+                          child: ExercisePanel(
+                            key: ValueKey('${_exercise.id}-$_attempt'),
+                            exercise: _exercise,
+                            selected: _selected,
+                            isCorrect: _isCorrect,
+                            showFeedback: _showFeedback,
+                            onSelect: _select,
+                            accent: accent,
+                            hintUsed: _hintUsed,
+                            eliminatedIds: _eliminated,
+                            onHint: mission.isBoss || !_exercise.supportsHint
+                                ? null
+                                : _useHint,
+                            outOfLamps: _outOfLamps,
+                            index: _questionIndex,
+                            total: total,
+                            insightFallback: mission.centralInsight,
+                            boardText: _board?.text,
+                            boardRef: _board?.reference,
+                          ),
                         ),
                         _Phase.micro => () {
                           final v = _microVerse();
@@ -841,6 +848,7 @@ class _LessonScreenState extends State<LessonScreen>
                           onStart: _startQuiz,
                         ),
                         _Phase.insight => _InsightPanel(
+                          key: const ValueKey('insight'),
                           text: _closingInsight,
                           accent: accent,
                           onContinue: () {
@@ -852,25 +860,12 @@ class _LessonScreenState extends State<LessonScreen>
                   ],
                 ),
               ),
-              if (_phase == _Phase.quiz &&
-                  _showFeedback &&
-                  _selected != null &&
-                  _isCorrect != null)
-                Positioned.fill(
-                  child: ExerciseFeedbackDialog(
-                    exercise: _exercise,
-                    selected: _selected!,
-                    isCorrect: _isCorrect!,
-                    isLast:
-                        _outOfLamps ||
-                        (_isCorrect == true && _questionIndex >= total - 1),
-                    accent: accent,
-                    outOfLamps: _outOfLamps,
-                    onContinue: _continue,
-                    missionSlug: widget.missionSlug,
-                    trailSlug: _trailSlug,
-                    difficulty: _difficultyMeta?.difficulty.id,
-                    practiceMode: widget.practiceMode,
+              if (_phase == _Phase.intro)
+                const Positioned(
+                  left: -140,
+                  top: -140,
+                  child: IgnorePointer(
+                    child: Opacity(opacity: 0.02, child: _ActWarmup()),
                   ),
                 ),
               if (_phase == _Phase.quiz)
@@ -902,6 +897,27 @@ class _LessonScreenState extends State<LessonScreen>
                       ),
                     );
                   },
+                ),
+              if (_phase == _Phase.quiz &&
+                  _showFeedback &&
+                  _selected != null &&
+                  _isCorrect != null)
+                Positioned.fill(
+                  child: ExerciseFeedbackDialog(
+                    exercise: _exercise,
+                    selected: _selected!,
+                    isCorrect: _isCorrect!,
+                    isLast:
+                        _outOfLamps ||
+                        (_isCorrect == true && _questionIndex >= total - 1),
+                    accent: accent,
+                    outOfLamps: _outOfLamps,
+                    onContinue: _continue,
+                    missionSlug: widget.missionSlug,
+                    trailSlug: _trailSlug,
+                    difficulty: _difficultyMeta?.difficulty.id,
+                    practiceMode: widget.practiceMode,
+                  ),
                 ),
             ],
           ),
@@ -966,10 +982,7 @@ class _IntroPanel extends StatelessWidget {
                     child: Text(
                       stageText,
                       textAlign: TextAlign.center,
-                      style: AppTypography.verse(
-                        size: 22,
-                        height: 1.55,
-                      ),
+                      style: AppTypography.verse(size: 22, height: 1.55),
                     ),
                   ),
           ),
@@ -994,6 +1007,7 @@ class _InsightPanel extends StatelessWidget {
   final VoidCallback onContinue;
 
   const _InsightPanel({
+    super.key,
     required this.text,
     required this.accent,
     required this.onContinue,
@@ -1140,6 +1154,58 @@ class _PlatePrompt extends StatelessWidget {
           text,
           textAlign: TextAlign.center,
           style: AppTypography.title(size: 16, height: 1.3, color: accent),
+        ),
+      ],
+    );
+  }
+}
+
+/// Pinta fora da tela no intro para aquecer shaders do veredito.
+class _ActWarmup extends StatelessWidget {
+  const _ActWarmup();
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        const CinematicIcon(
+          glyph: CinematicGlyph.wrong,
+          size: 78,
+          accent: AppColors.error,
+          glowing: true,
+        ),
+        const CinematicIcon(
+          glyph: CinematicGlyph.check,
+          size: 78,
+          accent: AppColors.accent,
+          glowing: true,
+        ),
+        const CinematicIcon(
+          glyph: CinematicGlyph.refresh,
+          size: 18,
+          accent: AppColors.inkOnAccent,
+          framed: false,
+        ),
+        Transform.translate(
+          offset: const Offset(6, 0),
+          child: const SizedBox(width: 48, height: 48),
+        ),
+        const SizedBox(
+          width: 18,
+          height: 18,
+          child: CircularProgressIndicator(
+            strokeWidth: 2,
+            color: AppColors.inkOnAccent,
+          ),
+        ),
+        DecoratedBox(
+          decoration: BoxDecoration(
+            color: AppColors.nightElevated,
+            borderRadius: BorderRadius.circular(AppRadii.xl),
+            boxShadow: AppTheme.cardShadow(elevated: true),
+          ),
+          child: const SizedBox(width: 120, height: 64),
         ),
       ],
     );

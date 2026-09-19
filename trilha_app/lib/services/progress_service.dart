@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -7,6 +8,7 @@ import '../models/bible_reading_plan.dart';
 import '../models/caravan_profile_prefs.dart';
 import '../models/daily_quest.dart';
 import '../models/difficulty.dart';
+import '../models/walk_companion.dart';
 import '../utils/appearance.dart';
 import '../utils/catalog_access.dart';
 import 'bible_reading_plan_service.dart';
@@ -19,8 +21,12 @@ class AppSettings {
   final int dailyGoal;
   final AppearanceMode appearanceMode;
   final String bibleTranslationId;
+
   /// Escala tipográfica global do app (0.85–1.35).
   final double fontScale;
+
+  /// Noite só na página de leitura. `null` segue o visual do app.
+  final bool? bibleReadingNight;
 
   const AppSettings({
     this.sound = true,
@@ -29,6 +35,7 @@ class AppSettings {
     this.appearanceMode = AppearanceMode.automatic,
     this.bibleTranslationId = BibleService.defaultTranslationId,
     this.fontScale = 1.0,
+    this.bibleReadingNight,
   });
 
   /// Compat: true quando o visual preferido é noturno.
@@ -41,6 +48,7 @@ class AppSettings {
     AppearanceMode? appearanceMode,
     String? bibleTranslationId,
     double? fontScale,
+    bool? bibleReadingNight,
   }) {
     return AppSettings(
       sound: sound ?? this.sound,
@@ -49,6 +57,7 @@ class AppSettings {
       appearanceMode: appearanceMode ?? this.appearanceMode,
       bibleTranslationId: bibleTranslationId ?? this.bibleTranslationId,
       fontScale: fontScale ?? this.fontScale,
+      bibleReadingNight: bibleReadingNight ?? this.bibleReadingNight,
     );
   }
 }
@@ -69,6 +78,8 @@ class ProgressService extends ChangeNotifier {
   static const _keyAppearanceMode = 'appearanceMode';
   static const _keyBibleTranslation = 'bibleTranslationId';
   static const _keyFontScale = 'fontScale';
+  static const _keyBibleReadingNight = 'bibleReadingNight';
+
   /// Legado — migrado para [_keyFontScale].
   static const _keyBibleFontScale = 'bibleFontScale';
   static const _keyTrailDifficulty = 'trailDifficultyMap';
@@ -98,9 +109,11 @@ class ProgressService extends ChangeNotifier {
   static const _keyBibleBrowseOrder = 'bibleBrowseOrder';
   static const _keyMemoryScores = 'memoryScores';
   static const _keyMemoryMastered = 'memoryMastered';
+
   /// Espelho local do progresso (escopo por uid; limpo no logout).
   static const _keyProgressCache = 'progressSessionCache';
   static const _keyProgressCacheUid = 'progressSessionCacheUid';
+
   /// Coorte D7: primeiro open / primeira missão (ISO date YYYY-MM-DD).
   static const _keyFirstOpenDate = 'cohortFirstOpenDate';
   static const _keyFirstLessonDate = 'cohortFirstLessonDate';
@@ -110,6 +123,7 @@ class ProgressService extends ChangeNotifier {
   static const _keyCompanionInviteOffered = 'companionInviteOffered';
 
   static const maxLamps = 5;
+
   /// Boss: menos margem de erro.
   static const bossMaxLamps = 3;
   static const normalQuestionCount = 6;
@@ -122,6 +136,7 @@ class ProgressService extends ChangeNotifier {
       isBoss ? bossQuestionCount : normalQuestionCount;
   static const comebackBonusSteps = 15;
   static const minStreakForRepair = 3;
+
   /// Bônus ao host quando o convidado completa a 1ª missão (referral).
   /// Calibrável via [RemoteConfigService], default igual ao valor anterior.
   static int get referralFirstMissionBonus =>
@@ -147,8 +162,10 @@ class ProgressService extends ChangeNotifier {
 
   AppSettings settings = const AppSettings();
   Map<String, String> trailDifficulties = {};
+
   /// Modos (dificuldades) em que a trilha já foi concluída por completo.
   Map<String, List<String>> clearedTrailModes = {};
+
   /// Dias da Caminhada concluídos: `{ campaignId: ['YYYY-MM-DD', ...] }`.
   Map<String, List<String>> seasonWalkDays = {};
   List<String> usedQuestionIds = [];
@@ -156,6 +173,7 @@ class ProgressService extends ChangeNotifier {
   List<String> playDates = [];
   bool streakFreezeAvailable = true;
   String? streakFreezeWeek;
+
   /// Dias cobertos pelo congelamento (aparecem com gelo na semana).
   List<String> frozenDates = [];
   String? questDay;
@@ -165,15 +183,19 @@ class ProgressService extends ChangeNotifier {
   Map<String, int> weeklyProgressMap = {};
   List<String> weeklyClaimed = [];
   List<String> claimedChests = [];
+
   /// Última reflexão por slug de missão.
   Map<String, String> missionReflections = {};
 
   /// Baú do Dia — dia (YYYY-MM-DD) em que já foi aberto (1x/dia).
   String? dailyChestOpenedDay;
+
   /// Aberturas desde a última recompensa topo (ouro/mirra) — garante piso.
   int dailyChestPity = 0;
+
   /// Ids únicos de recompensas do Baú já reveladas (coleção, sem duplicar).
   List<String> dailyChestCollectedIds = [];
+
   /// Última recompensa revelada — a UI lê para mostrar "hoje você tirou X".
   String? lastDailyChestRewardId;
 
@@ -276,6 +298,7 @@ class ProgressService extends ChangeNotifier {
 
   /// Sheet de retorno — mostra no máx. 1× por dia civil.
   String? lastComebackShownDate;
+
   /// Bônus leve na 1ª missão após gap (ativado ao reconhecer o retorno).
   bool comebackBonusPending = false;
 
@@ -284,6 +307,9 @@ class ProgressService extends ChangeNotifier {
 
   /// Convite de companhia da 1ª missão já foi oferecido (aceito ou recusado).
   bool companionInviteOffered = false;
+
+  /// Semana (segunda YYYY-MM-DD) em que o bônus da dupla já entrou na Caravana.
+  String? companionWeekBonusWeek;
 
   bool get isLoaded => _loaded;
   bool get canPersistCloud => _cloudReadyToPersist;
@@ -302,8 +328,25 @@ class ProgressService extends ChangeNotifier {
     _cacheUid = (uid != null && uid.isNotEmpty) ? uid : null;
   }
 
+  Timer? _persistTimer;
+  bool _persistDirty = false;
+
+  /// Adia o jsonEncode + SharedPreferences para fora do frame do gesto.
+  void _schedulePersist() {
+    _persistDirty = true;
+    _persistTimer ??= Timer(const Duration(milliseconds: 450), () {
+      _persistTimer = null;
+      if (!_persistDirty) return;
+      _persistDirty = false;
+      unawaited(persistLocalCache());
+    });
+  }
+
   /// Espelho em SharedPreferences — recupera se a nuvem falhar/atrasar.
   Future<void> persistLocalCache() async {
+    _persistTimer?.cancel();
+    _persistTimer = null;
+    _persistDirty = false;
     final uid = _cacheUid;
     if (uid == null || uid.isEmpty) return;
     final prefs = await SharedPreferences.getInstance();
@@ -358,8 +401,11 @@ class ProgressService extends ChangeNotifier {
 
   String _weekMondayKey([DateTime? now]) {
     final d = now ?? DateTime.now();
-    final monday = DateTime(d.year, d.month, d.day)
-        .subtract(Duration(days: d.weekday - 1));
+    final monday = DateTime(
+      d.year,
+      d.month,
+      d.day,
+    ).subtract(Duration(days: d.weekday - 1));
     return monday.toIso8601String().substring(0, 10);
   }
 
@@ -388,8 +434,7 @@ class ProgressService extends ChangeNotifier {
       final firstLesson = prefs.getString(_keyFirstLessonDate);
       notificationsPrompted = firstLesson != null && firstLesson.isNotEmpty;
     }
-    companionInviteOffered =
-        prefs.getBool(_keyCompanionInviteOffered) ?? false;
+    companionInviteOffered = prefs.getBool(_keyCompanionInviteOffered) ?? false;
     await prefs.setBool(_keyNotificationsPrompted, notificationsPrompted);
     await prefs.setBool(_keyCompanionInviteOffered, companionInviteOffered);
     bibleBrowseOrder = BibleReadingOrder.fromStorage(
@@ -416,12 +461,17 @@ class ProgressService extends ChangeNotifier {
         prefs.getString(_keyAppearanceMode),
         legacyDarkMode: prefs.getBool(_keyDarkMode),
       ),
-      bibleTranslationId: prefs.getString(_keyBibleTranslation) ??
+      bibleTranslationId:
+          prefs.getString(_keyBibleTranslation) ??
           BibleService.defaultTranslationId,
-      fontScale: (prefs.getDouble(_keyFontScale) ??
-              prefs.getDouble(_keyBibleFontScale) ??
-              1.0)
-          .clamp(0.85, 1.35),
+      fontScale:
+          (prefs.getDouble(_keyFontScale) ??
+                  prefs.getDouble(_keyBibleFontScale) ??
+                  1.0)
+              .clamp(0.85, 1.35),
+      bibleReadingNight: prefs.containsKey(_keyBibleReadingNight)
+          ? prefs.getBool(_keyBibleReadingNight)
+          : null,
     );
   }
 
@@ -438,6 +488,11 @@ class ProgressService extends ChangeNotifier {
     );
     await prefs.setString(_keyBibleTranslation, settings.bibleTranslationId);
     await prefs.setDouble(_keyFontScale, settings.fontScale);
+    if (settings.bibleReadingNight == null) {
+      await prefs.remove(_keyBibleReadingNight);
+    } else {
+      await prefs.setBool(_keyBibleReadingNight, settings.bibleReadingNight!);
+    }
     await prefs.setString(_keyBibleBrowseOrder, bibleBrowseOrder.storageKey);
   }
 
@@ -449,7 +504,8 @@ class ProgressService extends ChangeNotifier {
     final streak = prefs.getInt(_keyStreak) ?? 0;
     final name = prefs.getString(_keyUserName);
     final hasSeenOnboarding = prefs.getBool(_keyHasSeenOnboarding) ?? false;
-    final hasAnything = steps > 0 ||
+    final hasAnything =
+        steps > 0 ||
         completed.isNotEmpty ||
         streak > 0 ||
         hasSeenOnboarding ||
@@ -477,10 +533,9 @@ class ProgressService extends ChangeNotifier {
       try {
         final decoded = jsonDecode(clearedRaw) as Map<String, dynamic>;
         clearedModes = decoded.map(
-          (k, v) => MapEntry(
-            k,
-            [for (final e in (v as List? ?? const [])) e.toString()],
-          ),
+          (k, v) => MapEntry(k, [
+            for (final e in (v as List? ?? const [])) e.toString(),
+          ]),
         );
       } catch (_) {}
     }
@@ -490,8 +545,7 @@ class ProgressService extends ChangeNotifier {
     if (qp != null && qp.isNotEmpty) {
       try {
         final decoded = jsonDecode(qp) as Map<String, dynamic>;
-        questProgress =
-            decoded.map((k, v) => MapEntry(k, (v as num).toInt()));
+        questProgress = decoded.map((k, v) => MapEntry(k, (v as num).toInt()));
       } catch (_) {}
     }
 
@@ -500,8 +554,7 @@ class ProgressService extends ChangeNotifier {
     if (wp != null && wp.isNotEmpty) {
       try {
         final decoded = jsonDecode(wp) as Map<String, dynamic>;
-        weeklyProgress =
-            decoded.map((k, v) => MapEntry(k, (v as num).toInt()));
+        weeklyProgress = decoded.map((k, v) => MapEntry(k, (v as num).toInt()));
       } catch (_) {}
     }
 
@@ -547,14 +600,15 @@ class ProgressService extends ChangeNotifier {
       'questProgress': questProgress,
       'questClaimed': prefs.getStringList(_keyQuestClaimed) ?? const <String>[],
       'weeklyProgress': weeklyProgress,
-      'weeklyClaimed': prefs.getStringList(_keyWeeklyClaimed) ?? const <String>[],
-      'claimedChests': prefs.getStringList(_keyClaimedChests) ?? const <String>[],
+      'weeklyClaimed':
+          prefs.getStringList(_keyWeeklyClaimed) ?? const <String>[],
+      'claimedChests':
+          prefs.getStringList(_keyClaimedChests) ?? const <String>[],
       'readBibleChapters':
           prefs.getStringList(_keyReadBibleChapters) ?? const <String>[],
       'bibleBookmarks':
           prefs.getStringList(_keyBibleBookmarks) ?? const <String>[],
-      'sharedVerses':
-          prefs.getStringList(_keySharedVerses) ?? const <String>[],
+      'sharedVerses': prefs.getStringList(_keySharedVerses) ?? const <String>[],
       'memoryScores': memScores,
       'memoryMastered':
           prefs.getStringList(_keyMemoryMastered) ?? const <String>[],
@@ -571,11 +625,15 @@ class ProgressService extends ChangeNotifier {
         'notifications': prefs.getBool(_keyNotifications) ?? true,
         'dailyGoal': prefs.getInt(_keyDailyGoal) ?? 1,
         'appearanceMode': appearance.storageKey,
-        'bibleTranslationId': prefs.getString(_keyBibleTranslation) ??
+        'bibleTranslationId':
+            prefs.getString(_keyBibleTranslation) ??
             BibleService.defaultTranslationId,
-        'fontScale': prefs.getDouble(_keyFontScale) ??
+        'fontScale':
+            prefs.getDouble(_keyFontScale) ??
             prefs.getDouble(_keyBibleFontScale) ??
             1.0,
+        if (prefs.containsKey(_keyBibleReadingNight))
+          'bibleReadingNight': prefs.getBool(_keyBibleReadingNight),
       },
     };
   }
@@ -669,6 +727,7 @@ class ProgressService extends ChangeNotifier {
     perfectMissions = [];
     celebratedMedalIds = [];
     claimedReferralRewards = [];
+    companionWeekBonusWeek = null;
     medalCelebrationSeeded = false;
     vaultCompleteCelebratedIds = [];
     medalVaultCompleteCelebrated = false;
@@ -824,6 +883,29 @@ class ProgressService extends ChangeNotifier {
     return true;
   }
 
+  /// +50 na Caravana se alguma dupla fechou os 7 dias desta semana. 1× por semana.
+  Future<bool> claimCompanionWeekTogetherBonus(
+    Iterable<WalkCompanion> companions, {
+    DateTime? now,
+  }) async {
+    _ensureWeeklyWeek();
+    final week = _weekMondayKey(now);
+    if (companionWeekBonusWeek == week) return false;
+    var eligible = false;
+    for (final c in companions) {
+      if (c.coveredLeagueWeekTogether(now)) {
+        eligible = true;
+        break;
+      }
+    }
+    if (!eligible) return false;
+    companionWeekBonusWeek = week;
+    _gainSteps(WalkCompanion.weekTogetherBonusSteps);
+    await _save();
+    notifyListeners();
+    return true;
+  }
+
   /// Registra a leitura de um capítulo da Bíblia (missão diária "Palavra viva").
   Future<void> recordBibleReading(String bookAbbrev, int chapter) async {
     final key = bibleChapterKey(bookAbbrev, chapter);
@@ -847,8 +929,7 @@ class ProgressService extends ChangeNotifier {
     required int minutesPerDay,
   }) async {
     final today = _todayKey();
-    final seq =
-        await BibleReadingPlanService.instance.buildSequence(order);
+    final seq = await BibleReadingPlanService.instance.buildSequence(order);
     final readKeys = readBibleChapters.toSet();
     final cursor = BibleReadingPlanService.instance.firstUnreadCursor(
       seq,
@@ -870,8 +951,9 @@ class ProgressService extends ChangeNotifier {
   /// Avança o cursor do plano por cima de capítulos já lidos na Bíblia.
   Future<int> syncBibleReadingPlanWithReadChapters() async {
     if (!bibleReadingPlan.active) return 0;
-    final seq = await BibleReadingPlanService.instance
-        .buildSequence(bibleReadingPlan.order);
+    final seq = await BibleReadingPlanService.instance.buildSequence(
+      bibleReadingPlan.order,
+    );
     final next = BibleReadingPlanService.instance.firstUnreadCursor(
       seq,
       readBibleChapters.toSet(),
@@ -939,16 +1021,25 @@ class ProgressService extends ChangeNotifier {
 
   int readChaptersInBook(String bookAbbrev) {
     final prefix = '${bookAbbrev.toLowerCase()}:';
-    return readBibleChapters.where((k) => k.startsWith(prefix) && k.split(':').length == 2).length;
+    return readBibleChapters
+        .where((k) => k.startsWith(prefix) && k.split(':').length == 2)
+        .length;
   }
 
   bool isVerseBookmarked(String bookAbbrev, int chapter, int verse) =>
       bibleBookmarks.contains(bibleBookmarkKey(bookAbbrev, chapter, verse));
 
-  Future<bool> toggleBibleBookmark(String bookAbbrev, int chapter, int verse) async {
+  Future<bool> toggleBibleBookmark(
+    String bookAbbrev,
+    int chapter,
+    int verse,
+  ) async {
     final key = bibleBookmarkKey(bookAbbrev, chapter, verse);
     if (bibleBookmarks.contains(key)) {
-      bibleBookmarks = [for (final k in bibleBookmarks) if (k != key) k];
+      bibleBookmarks = [
+        for (final k in bibleBookmarks)
+          if (k != key) k,
+      ];
       await _save();
       notifyListeners();
       return false;
@@ -1005,7 +1096,10 @@ class ProgressService extends ChangeNotifier {
         memoryMastered = [...memoryMastered, id];
       }
     } else {
-      memoryMastered = [for (final m in memoryMastered) if (m != id) m];
+      memoryMastered = [
+        for (final m in memoryMastered)
+          if (m != id) m,
+      ];
     }
     await _bumpQuest('memory');
     await _save();
@@ -1223,7 +1317,8 @@ class ProgressService extends ChangeNotifier {
 
   String? difficultyForTrail(String trailSlug) => trailDifficulties[trailSlug];
 
-  bool hasDifficultyForTrail(String trailSlug) => trailDifficulties.containsKey(trailSlug);
+  bool hasDifficultyForTrail(String trailSlug) =>
+      trailDifficulties.containsKey(trailSlug);
 
   /// Semente sempre liberada. Demais modos exigem ter concluído o anterior.
   bool isDifficultyUnlocked(String trailSlug, TrailDifficulty d) {
@@ -1238,9 +1333,9 @@ class ProgressService extends ChangeNotifier {
   }
 
   List<TrailDifficulty> unlockedDifficulties(String trailSlug) => [
-        for (final d in TrailDifficulty.values)
-          if (isDifficultyUnlocked(trailSlug, d)) d,
-      ];
+    for (final d in TrailDifficulty.values)
+      if (isDifficultyUnlocked(trailSlug, d)) d,
+  ];
 
   /// Há escolha real de modo (2+ liberados). Caso contrário, Semente é o único caminho.
   bool hasDifficultyChoice(String trailSlug) =>
@@ -1274,7 +1369,10 @@ class ProgressService extends ChangeNotifier {
   bool hasClearedMode(String trailSlug, String difficultyId) =>
       clearedModesFor(trailSlug).contains(difficultyId);
 
-  Future<void> markTrailModeCleared(String trailSlug, String difficultyId) async {
+  Future<void> markTrailModeCleared(
+    String trailSlug,
+    String difficultyId,
+  ) async {
     final current = clearedModesFor(trailSlug);
     if (current.contains(difficultyId)) return;
     clearedTrailModes = {
@@ -1290,45 +1388,59 @@ class ProgressService extends ChangeNotifier {
     final next = {...usedQuestionIds, ...ids}.toList();
     // Cap generoso: cobre várias trilhas × modos sem “esquecer” IDs cedo
     // e reintroduzir perguntas já vistas no meio do progresso.
-    usedQuestionIds = next.length > 400 ? next.sublist(next.length - 400) : next;
+    usedQuestionIds = next.length > 400
+        ? next.sublist(next.length - 400)
+        : next;
     await _save();
-    notifyListeners();
   }
 
+  /// Livro de erros da sessão — não notifica a Home/IndexedStack no meio do ato.
   Future<void> recordMistake(String questionId) async {
     if (mistakeQuestionIds.contains(questionId)) return;
     mistakeQuestionIds = [...mistakeQuestionIds, questionId];
     if (mistakeQuestionIds.length > 80) {
-      mistakeQuestionIds = mistakeQuestionIds.sublist(mistakeQuestionIds.length - 80);
+      mistakeQuestionIds = mistakeQuestionIds.sublist(
+        mistakeQuestionIds.length - 80,
+      );
     }
-    await _save();
-    notifyListeners();
+    _schedulePersist();
   }
 
   Future<void> clearMistake(String questionId) async {
-    mistakeQuestionIds = mistakeQuestionIds.where((id) => id != questionId).toList();
-    await _save();
-    notifyListeners();
+    if (!mistakeQuestionIds.contains(questionId)) return;
+    mistakeQuestionIds = mistakeQuestionIds
+        .where((id) => id != questionId)
+        .toList();
+    _schedulePersist();
   }
 
   int questProgress(String id) => questProgressMap[id] ?? 0;
 
   bool isQuestClaimed(String id) => questClaimed.contains(id);
 
-  int get questsCompletedToday =>
-      DailyQuestDefs.all.where((q) => questProgress(q.id) >= q.target || isQuestClaimed(q.id)).length;
+  int get questsCompletedToday => DailyQuestDefs.all
+      .where((q) => questProgress(q.id) >= q.target || isQuestClaimed(q.id))
+      .length;
 
   int weeklyQuestProgress(String id) => weeklyProgressMap[id] ?? 0;
 
   bool isWeeklyQuestClaimed(String id) => weeklyClaimed.contains(id);
 
-  int get weeklyQuestsCompleted =>
-      WeeklyQuestDefs.all.where((q) => weeklyQuestProgress(q.id) >= q.target || isWeeklyQuestClaimed(q.id)).length;
+  int get weeklyQuestsCompleted => WeeklyQuestDefs.all
+      .where(
+        (q) =>
+            weeklyQuestProgress(q.id) >= q.target || isWeeklyQuestClaimed(q.id),
+      )
+      .length;
 
   int get daysPlayedThisWeek {
     _ensureWeeklyWeek();
     final now = DateTime.now();
-    final monday = DateTime(now.year, now.month, now.day).subtract(Duration(days: now.weekday - 1));
+    final monday = DateTime(
+      now.year,
+      now.month,
+      now.day,
+    ).subtract(Duration(days: now.weekday - 1));
     var count = 0;
     for (var i = 0; i < 7; i++) {
       if (playedOnDate(monday.add(Duration(days: i)))) count++;
@@ -1471,8 +1583,9 @@ class ProgressService extends ChangeNotifier {
         }
       }
 
-      awarded =
-          isReplay ? (rewardSteps * 0.35).round().clamp(5, rewardSteps) : rewardSteps;
+      awarded = isReplay
+          ? (rewardSteps * 0.35).round().clamp(5, rewardSteps)
+          : rewardSteps;
       _gainSteps(awarded);
 
       if (!alreadyToday) {
@@ -1577,7 +1690,9 @@ class ProgressService extends ChangeNotifier {
     celebratedMedalIds = migrated.toList();
     medalCelebrationSeeded = true;
     if (medalVaultCompleteCelebrated &&
-        !vaultCompleteCelebratedIds.contains(PilgrimMedalCatalog.journeyVaultId)) {
+        !vaultCompleteCelebratedIds.contains(
+          PilgrimMedalCatalog.journeyVaultId,
+        )) {
       vaultCompleteCelebratedIds = [
         ...vaultCompleteCelebratedIds,
         PilgrimMedalCatalog.journeyVaultId,
@@ -1590,8 +1705,9 @@ class ProgressService extends ChangeNotifier {
   Future<void> markVaultCompleteCelebrated(String vaultId) async {
     if (vaultCompleteCelebratedIds.contains(vaultId)) return;
     vaultCompleteCelebratedIds = [...vaultCompleteCelebratedIds, vaultId];
-    medalVaultCompleteCelebrated = vaultCompleteCelebratedIds
-        .contains(PilgrimMedalCatalog.journeyVaultId);
+    medalVaultCompleteCelebrated = vaultCompleteCelebratedIds.contains(
+      PilgrimMedalCatalog.journeyVaultId,
+    );
     await _save();
     notifyListeners();
   }
@@ -1613,15 +1729,18 @@ class ProgressService extends ChangeNotifier {
   }
 
   /// Garante coorte D0 (primeiro open) e devolve métricas para `retention_pulse`.
-  Future<({int daysSinceFirstOpen, int? daysSinceFirstLesson, String? cohortTrail})>
-      ensureCohortAndPulse() async {
+  Future<
+    ({int daysSinceFirstOpen, int? daysSinceFirstLesson, String? cohortTrail})
+  >
+  ensureCohortAndPulse() async {
     final prefs = await SharedPreferences.getInstance();
     final today = _todayKey();
     var changed = false;
     if (firstOpenDate == null || firstOpenDate!.isEmpty) {
       firstOpenDate = prefs.getString(_keyFirstOpenDate) ?? today;
       firstOpenAtMs =
-          prefs.getInt(_keyFirstOpenAtMs) ?? DateTime.now().millisecondsSinceEpoch;
+          prefs.getInt(_keyFirstOpenAtMs) ??
+          DateTime.now().millisecondsSinceEpoch;
       changed = true;
     }
     if (firstLessonDate == null || firstLessonDate!.isEmpty) {
@@ -1733,6 +1852,7 @@ class ProgressService extends ChangeNotifier {
       'companionCodes': companionCodes,
       'activeRoomCode': activeRoomCode,
       'claimedReferralRewards': claimedReferralRewards,
+      'companionWeekBonusWeek': companionWeekBonusWeek,
       'firstOpenDate': firstOpenDate,
       'firstLessonDate': firstLessonDate,
       'firstLessonTrailSlug': firstLessonTrailSlug,
@@ -1753,13 +1873,15 @@ class ProgressService extends ChangeNotifier {
         'appearanceMode': settings.appearanceMode.storageKey,
         'bibleTranslationId': settings.bibleTranslationId,
         'fontScale': settings.fontScale,
+        if (settings.bibleReadingNight != null)
+          'bibleReadingNight': settings.bibleReadingNight,
       },
     };
   }
 
   static List<String> _asStringList(dynamic v) => [
-        for (final e in (v as List? ?? const [])) e.toString(),
-      ];
+    for (final e in (v as List? ?? const [])) e.toString(),
+  ];
 
   static Map<String, int> _asIntMap(dynamic v) {
     if (v is! Map) return {};
@@ -1822,8 +1944,8 @@ class ProgressService extends ChangeNotifier {
     final version = (data['version'] as num?)?.toInt() ?? 1;
 
     if (data.containsKey('xp') || data.containsKey('steps')) {
-      final cloudSteps = (data['steps'] as num?)?.toInt() ??
-          (data['xp'] as num?)?.toInt();
+      final cloudSteps =
+          (data['steps'] as num?)?.toInt() ?? (data['xp'] as num?)?.toInt();
       if (cloudSteps != null) {
         // Nunca regride passos locais se a nuvem veio atrasada/zerada.
         steps = cloudSteps > steps ? cloudSteps : steps;
@@ -1871,7 +1993,8 @@ class ProgressService extends ChangeNotifier {
       }
     }
     if (data.containsKey('weeklySteps') || data.containsKey('weeklyXp')) {
-      final cloudWeekly = (data['weeklySteps'] as num?)?.toInt() ??
+      final cloudWeekly =
+          (data['weeklySteps'] as num?)?.toInt() ??
           (data['weeklyXp'] as num?)?.toInt();
       if (cloudWeekly != null && cloudWeekly > weeklySteps) {
         weeklySteps = cloudWeekly;
@@ -1912,7 +2035,8 @@ class ProgressService extends ChangeNotifier {
     }
 
     if (version >= 2) {
-      lastWeekSteps = (data['lastWeekSteps'] as num?)?.toInt() ??
+      lastWeekSteps =
+          (data['lastWeekSteps'] as num?)?.toInt() ??
           (data['lastWeekXp'] as num?)?.toInt() ??
           lastWeekSteps;
       lastWeekKey = data['lastWeekKey'] as String? ?? lastWeekKey;
@@ -1937,8 +2061,7 @@ class ProgressService extends ChangeNotifier {
           data['streakRepairMonth'] as String? ?? streakRepairMonth;
       streakRepairPending =
           data['streakRepairPending'] as bool? ?? streakRepairPending;
-      brokenStreak =
-          (data['brokenStreak'] as num?)?.toInt() ?? brokenStreak;
+      brokenStreak = (data['brokenStreak'] as num?)?.toInt() ?? brokenStreak;
       lastComebackShownDate =
           data['lastComebackShownDate'] as String? ?? lastComebackShownDate;
       comebackBonusPending =
@@ -2014,8 +2137,9 @@ class ProgressService extends ChangeNotifier {
       }
       if (data.containsKey('dailyChestPity')) {
         final cloudPity = (data['dailyChestPity'] as num?)?.toInt() ?? 0;
-        dailyChestPity =
-            dailyChestPity > cloudPity ? dailyChestPity : cloudPity;
+        dailyChestPity = dailyChestPity > cloudPity
+            ? dailyChestPity
+            : cloudPity;
       }
       if (data.containsKey('dailyChestCollectedIds')) {
         dailyChestCollectedIds = _unionStringLists(
@@ -2077,6 +2201,16 @@ class ProgressService extends ChangeNotifier {
           ..._asStringList(data['claimedReferralRewards']),
         }.toList();
       }
+      if (data.containsKey('companionWeekBonusWeek')) {
+        final cloudWeek = (data['companionWeekBonusWeek'] as String?)?.trim();
+        if (cloudWeek != null && cloudWeek.isNotEmpty) {
+          if (companionWeekBonusWeek == null ||
+              companionWeekBonusWeek!.isEmpty ||
+              cloudWeek.compareTo(companionWeekBonusWeek!) > 0) {
+            companionWeekBonusWeek = cloudWeek;
+          }
+        }
+      }
       if (data.containsKey('medalCelebrationSeeded')) {
         medalCelebrationSeeded =
             medalCelebrationSeeded || data['medalCelebrationSeeded'] == true;
@@ -2088,12 +2222,14 @@ class ProgressService extends ChangeNotifier {
         }.toList();
       }
       if (data.containsKey('medalVaultCompleteCelebrated')) {
-        medalVaultCompleteCelebrated = medalVaultCompleteCelebrated ||
+        medalVaultCompleteCelebrated =
+            medalVaultCompleteCelebrated ||
             data['medalVaultCompleteCelebrated'] == true;
       }
       if (medalVaultCompleteCelebrated &&
-          !vaultCompleteCelebratedIds
-              .contains(PilgrimMedalCatalog.journeyVaultId)) {
+          !vaultCompleteCelebratedIds.contains(
+            PilgrimMedalCatalog.journeyVaultId,
+          )) {
         vaultCompleteCelebratedIds = [
           ...vaultCompleteCelebratedIds,
           PilgrimMedalCatalog.journeyVaultId,
@@ -2147,7 +2283,10 @@ class ProgressService extends ChangeNotifier {
         } else {
           final merged = Map<String, List<String>>.from(clearedTrailModes);
           for (final e in cloudModes.entries) {
-            merged[e.key] = _unionStringLists(merged[e.key] ?? const [], e.value);
+            merged[e.key] = _unionStringLists(
+              merged[e.key] ?? const [],
+              e.value,
+            );
           }
           clearedTrailModes = merged;
         }
@@ -2159,7 +2298,10 @@ class ProgressService extends ChangeNotifier {
         } else {
           final merged = Map<String, List<String>>.from(seasonWalkDays);
           for (final e in cloudWalk.entries) {
-            merged[e.key] = _unionStringLists(merged[e.key] ?? const [], e.value);
+            merged[e.key] = _unionStringLists(
+              merged[e.key] ?? const [],
+              e.value,
+            );
           }
           seasonWalkDays = merged;
         }
@@ -2185,7 +2327,9 @@ class ProgressService extends ChangeNotifier {
       if (data.containsKey('firstOpenDate')) {
         final v = data['firstOpenDate'] as String?;
         if (v != null && v.isNotEmpty) {
-          if (firstOpenDate == null || firstOpenDate!.isEmpty || v.compareTo(firstOpenDate!) < 0) {
+          if (firstOpenDate == null ||
+              firstOpenDate!.isEmpty ||
+              v.compareTo(firstOpenDate!) < 0) {
             firstOpenDate = v;
           }
         }
@@ -2193,7 +2337,9 @@ class ProgressService extends ChangeNotifier {
       if (data.containsKey('firstLessonDate')) {
         final v = data['firstLessonDate'] as String?;
         if (v != null && v.isNotEmpty) {
-          if (firstLessonDate == null || firstLessonDate!.isEmpty || v.compareTo(firstLessonDate!) < 0) {
+          if (firstLessonDate == null ||
+              firstLessonDate!.isEmpty ||
+              v.compareTo(firstLessonDate!) < 0) {
             firstLessonDate = v;
             firstLessonTrailSlug =
                 data['firstLessonTrailSlug'] as String? ?? firstLessonTrailSlug;
@@ -2207,8 +2353,9 @@ class ProgressService extends ChangeNotifier {
         }
       }
       if (data.containsKey('caravanProfilePrefs')) {
-        caravanProfilePrefs =
-            CaravanProfilePrefs.fromMap(data['caravanProfilePrefs']);
+        caravanProfilePrefs = CaravanProfilePrefs.fromMap(
+          data['caravanProfilePrefs'],
+        );
       }
       if (data.containsKey('lifetimeQuestionsCorrect')) {
         final cloud = (data['lifetimeQuestionsCorrect'] as num?)?.toInt() ?? 0;
@@ -2276,10 +2423,14 @@ class ProgressService extends ChangeNotifier {
           ),
           bibleTranslationId:
               s['bibleTranslationId'] as String? ?? settings.bibleTranslationId,
-          fontScale: ((s['fontScale'] as num?)?.toDouble() ??
-                  (s['bibleFontScale'] as num?)?.toDouble() ??
-                  settings.fontScale)
-              .clamp(0.85, 1.35),
+          fontScale:
+              ((s['fontScale'] as num?)?.toDouble() ??
+                      (s['bibleFontScale'] as num?)?.toDouble() ??
+                      settings.fontScale)
+                  .clamp(0.85, 1.35),
+          bibleReadingNight: s.containsKey('bibleReadingNight')
+              ? s['bibleReadingNight'] as bool?
+              : settings.bibleReadingNight,
         );
       }
     }
@@ -2294,6 +2445,11 @@ class ProgressService extends ChangeNotifier {
       );
     } else if (_freshInstall) {
       settings = settings.copyWith(appearanceMode: AppearanceMode.automatic);
+    }
+    if (prefs.containsKey(_keyBibleReadingNight)) {
+      settings = settings.copyWith(
+        bibleReadingNight: prefs.getBool(_keyBibleReadingNight),
+      );
     }
     _freshInstall = false;
     await _persistSettingsLocal();
@@ -2326,7 +2482,9 @@ class ProgressService extends ChangeNotifier {
   }
 
   Future<void> setSyncedRoomCode(String? code) async {
-    final next = (code == null || code.isEmpty) ? null : code.trim().toUpperCase();
+    final next = (code == null || code.isEmpty)
+        ? null
+        : code.trim().toUpperCase();
     if (activeRoomCode == next) return;
     activeRoomCode = next;
     await _save();
@@ -2413,6 +2571,7 @@ class ProgressService extends ChangeNotifier {
     perfectMissions = [];
     celebratedMedalIds = [];
     claimedReferralRewards = [];
+    companionWeekBonusWeek = null;
     medalCelebrationSeeded = false;
     vaultCompleteCelebratedIds = [];
     medalVaultCompleteCelebrated = false;

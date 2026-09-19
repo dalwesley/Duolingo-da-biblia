@@ -250,6 +250,26 @@ void main() {
     expect(stage!.contains('havia trevas sobre a face do abismo'), isFalse);
   });
 
+  test('complete checkAnswer accepts option id or chip text', () {
+    const fill = Exercise(
+      id: 'c-ans',
+      type: ExerciseType.complete,
+      prompt: 'havia ___ sobre a face do abismo',
+      correctAnswer: 'a',
+      options: [
+        QuestionOption(id: 'a', text: 'trevas'),
+        QuestionOption(id: 'b', text: 'águas'),
+        QuestionOption(id: 'c', text: 'Espírito'),
+      ],
+    );
+    expect(fill.checkAnswer('a'), isTrue);
+    expect(fill.checkAnswer('trevas'), isTrue);
+    expect(fill.checkAnswer('c'), isFalse);
+    expect(fill.checkAnswer('Espírito'), isFalse);
+    expect(fill.canonicalizeAnswer('trevas'), 'a');
+    expect(fill.canonicalizeAnswer('c'), 'c');
+  });
+
   test('witness-first titles and stage prompts by gesture', () {
     const verse = 'No princípio, criou Deus o céu e a terra.';
     const vf = Exercise(

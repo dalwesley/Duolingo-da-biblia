@@ -1,4 +1,5 @@
 import 'dart:math' as math;
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../theme/app_theme.dart';
@@ -38,6 +39,7 @@ class _VerseFillPanelState extends State<VerseFillPanel>
   late final AnimationController _stagger;
   late final AnimationController _pulse;
   late final AnimationController _revealFlash;
+  final Map<int, TapGestureRecognizer> _clearRecognizers = {};
 
   @override
   void initState() {
@@ -91,8 +93,18 @@ class _VerseFillPanelState extends State<VerseFillPanel>
     return m?.group(0) ?? '';
   }
 
+  TapGestureRecognizer _clearRecognizer(int index) {
+    return _clearRecognizers.putIfAbsent(
+      index,
+      () => TapGestureRecognizer()..onTap = () => _clearSlot(index),
+    );
+  }
+
   @override
   void dispose() {
+    for (final recognizer in _clearRecognizers.values) {
+      recognizer.dispose();
+    }
     _stagger.dispose();
     _pulse.dispose();
     _revealFlash.dispose();
@@ -319,6 +331,7 @@ class _VerseFillPanelState extends State<VerseFillPanel>
                         pulse: _pulse,
                         compact: compact,
                         onClear: _clearSlot,
+                        clearRecognizer: _clearRecognizer,
                         cleanWord: _cleanWord,
                       ),
                     ),
@@ -495,6 +508,7 @@ class _VerseStage extends StatelessWidget {
   final AnimationController pulse;
   final bool compact;
   final ValueChanged<int> onClear;
+  final TapGestureRecognizer Function(int index) clearRecognizer;
   final String Function(String) cleanWord;
 
   const _VerseStage({
@@ -508,8 +522,60 @@ class _VerseStage extends StatelessWidget {
     required this.pulse,
     required this.compact,
     required this.onClear,
+    required this.clearRecognizer,
     required this.cleanWord,
   });
+
+  InlineSpan _spanFor(int i, TextStyle verseStyle) {
+    if (!blankIndexes.contains(i)) {
+      return TextSpan(text: words[i]);
+    }
+
+    final token = words[i];
+    final value = picked[i];
+    final expected = cleanWord(token);
+    final correct =
+        revealed && (value?.toLowerCase() == expected.toLowerCase());
+    final filled = value != null;
+    final wrong = revealed && filled && !correct;
+
+    // Palavra preenchida entra no mesmo recorte do versículo — mesma
+    // família/peso/corpo; só a cor marca a lacuna.
+    if (filled && !wrong) {
+      final lead = _VerseFillPanelState._leadingPunct(token);
+      final trail = _VerseFillPanelState._trailingPunct(token);
+      return TextSpan(
+        children: [
+          if (lead.isNotEmpty) TextSpan(text: lead),
+          TextSpan(
+            text: value,
+            style: verseStyle.copyWith(color: accent),
+            recognizer: revealed ? null : clearRecognizer(i),
+          ),
+          if (trail.isNotEmpty) TextSpan(text: trail),
+        ],
+      );
+    }
+
+    return WidgetSpan(
+      alignment: PlaceholderAlignment.baseline,
+      baseline: TextBaseline.alphabetic,
+      child: _BlankToken(
+        value: value,
+        token: token,
+        revealed: revealed,
+        correct: correct,
+        active: activeBlank == i && !revealed,
+        accent: accent,
+        pulse: pulse,
+        verseStyle: verseStyle,
+        onTap: () => onClear(i),
+        cleanWord: cleanWord,
+        leadingPunct: _VerseFillPanelState._leadingPunct,
+        trailingPunct: _VerseFillPanelState._trailingPunct,
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -544,32 +610,7 @@ class _VerseStage extends StatelessWidget {
                     children: [
                       for (var i = 0; i < words.length; i++) ...[
                         if (i > 0) const TextSpan(text: ' '),
-                        if (blankIndexes.contains(i))
-                          WidgetSpan(
-                            alignment: PlaceholderAlignment.baseline,
-                            baseline: TextBaseline.alphabetic,
-                            child: _BlankToken(
-                              value: picked[i],
-                              token: words[i],
-                              revealed: revealed,
-                              correct:
-                                  revealed &&
-                                  (picked[i]?.toLowerCase() ==
-                                      cleanWord(words[i]).toLowerCase()),
-                              active: activeBlank == i && !revealed,
-                              accent: accent,
-                              pulse: pulse,
-                              fontSize: compact ? 20.0 : 22.0,
-                              onTap: () => onClear(i),
-                              cleanWord: cleanWord,
-                              leadingPunct:
-                                  _VerseFillPanelState._leadingPunct,
-                              trailingPunct:
-                                  _VerseFillPanelState._trailingPunct,
-                            ),
-                          )
-                        else
-                          TextSpan(text: words[i]),
+                        _spanFor(i, verseStyle),
                       ],
                     ],
                   ),
@@ -592,7 +633,7 @@ class _BlankToken extends StatelessWidget {
   final bool active;
   final Color accent;
   final AnimationController pulse;
-  final double fontSize;
+  final TextStyle verseStyle;
   final VoidCallback onTap;
   final String Function(String) cleanWord;
   final String Function(String) leadingPunct;
@@ -606,7 +647,7 @@ class _BlankToken extends StatelessWidget {
     required this.active,
     required this.accent,
     required this.pulse,
-    required this.fontSize,
+    required this.verseStyle,
     required this.onTap,
     required this.cleanWord,
     required this.leadingPunct,
@@ -618,18 +659,13 @@ class _BlankToken extends StatelessWidget {
     final expected = cleanWord(token);
     final lead = leadingPunct(token);
     final trail = trailingPunct(token);
-    final bodyStyle = AppTypography.verse(
-      size: fontSize,
-      weight: FontWeight.w600,
-      height: 1.55,
-    );
 
     return Row(
       mainAxisSize: MainAxisSize.min,
       crossAxisAlignment: CrossAxisAlignment.baseline,
       textBaseline: TextBaseline.alphabetic,
       children: [
-        if (lead.isNotEmpty) Text(lead, style: bodyStyle),
+        if (lead.isNotEmpty) Text(lead, style: verseStyle),
         _BlankSlot(
           value: value,
           expected: expected,
@@ -638,10 +674,10 @@ class _BlankToken extends StatelessWidget {
           active: active,
           accent: accent,
           pulse: pulse,
-          fontSize: fontSize,
+          verseStyle: verseStyle,
           onTap: onTap,
         ),
-        if (trail.isNotEmpty) Text(trail, style: bodyStyle),
+        if (trail.isNotEmpty) Text(trail, style: verseStyle),
       ],
     );
   }
@@ -655,7 +691,7 @@ class _BlankSlot extends StatelessWidget {
   final bool active;
   final Color accent;
   final AnimationController pulse;
-  final double fontSize;
+  final TextStyle verseStyle;
   final VoidCallback onTap;
 
   const _BlankSlot({
@@ -666,19 +702,17 @@ class _BlankSlot extends StatelessWidget {
     required this.active,
     required this.accent,
     required this.pulse,
-    required this.fontSize,
+    required this.verseStyle,
     required this.onTap,
   });
 
   @override
   Widget build(BuildContext context) {
     final filled = value != null;
+    final fontSize = verseStyle.fontSize ?? 22;
 
     final probe = TextPainter(
-      text: TextSpan(
-        text: filled ? value! : expected,
-        style: AppTypography.verse(size: fontSize, weight: FontWeight.w700),
-      ),
+      text: TextSpan(text: filled ? value! : expected, style: verseStyle),
       textDirection: TextDirection.ltr,
     )..layout();
     final minW = math.max(40.0, probe.width);
@@ -711,18 +745,14 @@ class _BlankSlot extends StatelessWidget {
         children: [
           Text(
             value!,
-            style: AppTypography.verse(
-              size: fontSize,
-              weight: FontWeight.w700,
-              height: 1.2,
-              color: AppColors.error,
-            ).copyWith(decoration: TextDecoration.lineThrough),
+            style: verseStyle
+                .copyWith(color: AppColors.error, height: 1.2)
+                .copyWith(decoration: TextDecoration.lineThrough),
           ),
           Text(
             expected,
-            style: AppTypography.verse(
-              size: fontSize * 0.85,
-              weight: FontWeight.w700,
+            style: verseStyle.copyWith(
+              fontSize: fontSize * 0.85,
               height: 1.15,
               color: accent,
             ),
@@ -732,15 +762,7 @@ class _BlankSlot extends StatelessWidget {
     } else {
       slot = GestureDetector(
         onTap: revealed ? null : onTap,
-        child: Text(
-          value!,
-          style: AppTypography.verse(
-            size: fontSize,
-            weight: FontWeight.w700,
-            height: 1.55,
-            color: accent,
-          ),
-        ),
+        child: Text(value!, style: verseStyle.copyWith(color: accent)),
       );
     }
 
