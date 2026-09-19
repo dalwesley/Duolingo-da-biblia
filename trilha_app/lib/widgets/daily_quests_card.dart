@@ -6,7 +6,6 @@ import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
-import 'daily_chest_card.dart';
 import 'immersive_background.dart';
 import 'ui_primitives.dart';
 
@@ -46,8 +45,6 @@ class DailyQuestsCard extends StatelessWidget {
               onTap: onQuestTap,
             ),
           ],
-          const SizedBox(height: 10),
-          const DailyChestCard(embedded: true),
         ],
       ),
     );

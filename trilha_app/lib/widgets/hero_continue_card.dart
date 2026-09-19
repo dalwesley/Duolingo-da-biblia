@@ -145,18 +145,6 @@ class _HeroContinueCardState extends State<HeroContinueCard>
             ? 'Em dia'
             : 'Missão pronta',
     };
-    final dailyGoal = progress.settings.dailyGoal;
-    final dailyGoalRatio = dailyGoal > 0
-        ? (progress.missionsToday / dailyGoal).clamp(0.0, 1.0).toDouble()
-        : 0.0;
-    final progressLabel = dailyGoal > 0
-        ? '${progress.missionsToday}/$dailyGoal'
-        : '${progress.missionsToday} passos';
-    final progressHint = widget.goalMet
-        ? 'meta alcançada · siga para a próxima missão'
-        : walkedToday
-        ? 'uma boa caminhada hoje · continue'
-        : 'pronto para entrar em ação';
 
     return GestureDetector(
       onTapDown: (_) => setState(() => _pressed = true),
@@ -368,104 +356,6 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                         ),
                       ],
                       const SizedBox(height: 20),
-                      Container(
-                        padding: const EdgeInsets.all(12),
-                        decoration: BoxDecoration(
-                          color: Colors.white.withValues(alpha: 0.055),
-                          borderRadius: BorderRadius.circular(AppRadii.md),
-                          border: Border.all(
-                            color: Colors.white.withValues(alpha: 0.12),
-                            width: 1,
-                          ),
-                        ),
-                        child: Row(
-                          children: [
-                            Expanded(
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Row(
-                                    children: [
-                                      Text(
-                                        'Progresso do dia',
-                                        style: AppTypography.label(
-                                          size: 10,
-                                          letterSpacing: 1.15,
-                                          color: a.text.withValues(alpha: 0.82),
-                                        ),
-                                      ),
-                                      const Spacer(),
-                                      Text(
-                                        progressLabel,
-                                        style: AppTypography.body(
-                                          size: 12,
-                                          weight: FontWeight.w800,
-                                          color: style.footer,
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                  const SizedBox(height: 8),
-                                  AppProgressBar(
-                                    value: dailyGoalRatio,
-                                    color: style.footer,
-                                    trackColor: Colors.white.withValues(
-                                      alpha: 0.08,
-                                    ),
-                                    height: 10,
-                                  ),
-                                  const SizedBox(height: 6),
-                                  Text(
-                                    progressHint,
-                                    style: AppTypography.body(
-                                      size: 12,
-                                      weight: FontWeight.w700,
-                                      color: a.text.withValues(alpha: 0.74),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                            const SizedBox(width: 10),
-                            Container(
-                              padding: const EdgeInsets.symmetric(
-                                horizontal: 10,
-                                vertical: 8,
-                              ),
-                              decoration: BoxDecoration(
-                                color: rewardColor.withValues(alpha: 0.16),
-                                borderRadius: BorderRadius.circular(
-                                  AppRadii.pill,
-                                ),
-                                border: Border.all(
-                                  color: rewardColor.withValues(alpha: 0.3),
-                                ),
-                              ),
-                              child: Row(
-                                mainAxisSize: MainAxisSize.min,
-                                children: [
-                                  CinematicIcon(
-                                    glyph: CinematicGlyph.spark,
-                                    size: 14,
-                                    accent: rewardColor,
-                                    framed: false,
-                                  ),
-                                  const SizedBox(width: 5),
-                                  Text(
-                                    '+${mission.stepsReward}',
-                                    style: AppTypography.label(
-                                      size: 10,
-                                      letterSpacing: 0.8,
-                                      color: rewardColor,
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      const SizedBox(height: 14),
                       _CtaBar(
                         label: ctaLabel,
                         mood: mood,

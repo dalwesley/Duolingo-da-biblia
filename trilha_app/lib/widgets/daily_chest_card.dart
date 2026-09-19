@@ -23,10 +23,7 @@ import 'ui_primitives.dart';
 /// apresentação — a recompensa em si sempre vem (piso garantido por pity
 /// em [PilgrimChestRoll]).
 class DailyChestCard extends StatelessWidget {
-  /// Dentro de Gestos de hoje — inset ouro, sem card próprio.
-  final bool embedded;
-
-  const DailyChestCard({super.key, this.embedded = false});
+  const DailyChestCard({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -97,29 +94,13 @@ class DailyChestCard extends StatelessWidget {
       ],
     );
 
-    final body = embedded
-        ? DecoratedBox(
-            decoration: BoxDecoration(
-              color: accent.withValues(alpha: available ? 0.16 : 0.1),
-              borderRadius: BorderRadius.circular(AppRadii.md),
-              border: Border.all(
-                color: accent.withValues(alpha: available ? 0.55 : 0.4),
-              ),
-            ),
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(12, 10, 12, 10),
-              child: row,
-            ),
-          )
-        : GlassCard(
-            padding: AppMetrics.cardPadding,
-            tint: accent,
-            child: row,
-          );
-
     return GestureDetector(
       onTap: available ? () => _open(context) : null,
-      child: body,
+      child: GlassCard(
+        padding: AppMetrics.cardPadding,
+        tint: accent,
+        child: row,
+      ),
     );
   }
 
