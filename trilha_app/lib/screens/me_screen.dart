@@ -19,8 +19,8 @@ import '../widgets/living_seed_card.dart';
 import '../widgets/milestone_chests.dart';
 import '../widgets/pilgrim_profile_sections.dart';
 import '../widgets/reflection_journal_card.dart';
+import '../widgets/relic_panel.dart';
 import '../widgets/top_bar.dart';
-import '../widgets/ui_primitives.dart';
 import 'bible_screen.dart';
 import 'settings_screen.dart';
 
@@ -263,8 +263,8 @@ class _JourneySummaryBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GlassCard(
-      padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 4),
+    return RelicPanel(
+      padding: const EdgeInsets.fromLTRB(10, 16, 10, 16),
       child: Row(
         children: [
           Expanded(
@@ -275,7 +275,6 @@ class _JourneySummaryBar extends StatelessWidget {
               glyph: CinematicGlyph.path,
             ),
           ),
-          _summaryDivider(context),
           Expanded(
             child: _SummaryCell(
               value: '$missions',
@@ -284,7 +283,6 @@ class _JourneySummaryBar extends StatelessWidget {
               glyph: CinematicGlyph.scroll,
             ),
           ),
-          _summaryDivider(context),
           Expanded(
             child: _SummaryCell(
               value: accuracyPercent != null ? '$accuracyPercent%' : '$trails',
@@ -297,14 +295,6 @@ class _JourneySummaryBar extends StatelessWidget {
           ),
         ],
       ),
-    );
-  }
-
-  Widget _summaryDivider(BuildContext context) {
-    return Container(
-      width: 1,
-      height: 36,
-      color: Appearance.of(context).cardBorder.withValues(alpha: 0.45),
     );
   }
 }
@@ -327,27 +317,22 @@ class _SummaryCell extends StatelessWidget {
     final a = Appearance.of(context);
     return Column(
       children: [
-        CinematicIcon(
-          glyph: glyph,
-          size: 20,
-          accent: accent.withValues(alpha: 0.9),
-          framed: false,
-        ),
-        const SizedBox(height: 6),
+        RelicDisc(glyph: glyph, accent: accent, size: 40),
+        const SizedBox(height: 8),
         Text(
           value,
           style: AppTypography.title(
             size: 18,
             weight: FontWeight.w900,
-            color: accent,
+            color: a.text,
           ),
         ),
         const SizedBox(height: 2),
         Text(
-          label,
+          label.toUpperCase(),
           style: AppTypography.label(
             size: 9,
-            letterSpacing: 0.35,
+            letterSpacing: 1.2,
             color: a.textMuted(0.5),
           ),
         ),
@@ -362,31 +347,30 @@ class _NaPalavraBlock extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
-    final a = Appearance.of(context);
     final hasBookmarks = progress.parseBookmarks().isNotEmpty;
     final hasShared = progress.sharedVerses.isNotEmpty;
 
-    return GlassCard(
-      padding: const EdgeInsets.fromLTRB(16, 14, 16, 16),
+    return RelicPanel(
+      accent: AppColors.cedar,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          const CardHeader(label: 'Na Palavra'),
-          const SizedBox(height: 12),
+          RelicChapter(
+            title: 'Na Palavra',
+            accent: AppColors.cedar,
+            whisper: hasBookmarks || hasShared
+                ? null
+                : 'Versos que você guarda e os que já saíram daqui.',
+          ),
+          const SizedBox(height: 14),
           const _FavoritesSection(embedded: true),
-          if (hasShared && hasBookmarks) _sectionDivider(a),
+          if (hasShared && hasBookmarks) ...[
+            const SizedBox(height: 14),
+            const RelicHairline(accent: AppColors.cedar),
+            const SizedBox(height: 14),
+          ],
           const _SharedVersesSection(embedded: true),
         ],
-      ),
-    );
-  }
-
-  Widget _sectionDivider(AppearanceStyle a) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(vertical: AppSpace.md),
-      child: Divider(
-        height: 1,
-        color: a.cardBorder.withValues(alpha: 0.45),
       ),
     );
   }
@@ -433,93 +417,62 @@ class _FavoritesSectionState extends State<_FavoritesSection> {
     final content = Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        CardHeader(
-          label: 'Favoritos',
+        RelicChapter(
+          title: 'Guardados',
+          accent: AppColors.cedar,
+          displayTitle: false,
           trailing: bookmarks.isEmpty
               ? null
-              : CountBadge('${bookmarks.length}'),
-        ),
-        const SizedBox(height: AppSpace.md),
-        if (bookmarks.isEmpty)
-          Row(
-            children: [
-              CinematicIcon(
-                glyph: CinematicGlyph.bookmark,
-                size: 22,
-                accent: AppColors.accent.withValues(alpha: 0.95),
-              ),
-              const SizedBox(width: AppSpace.sm),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Nenhum versículo salvo',
-                      style: AppTypography.title(size: 14, color: a.text),
-                    ),
-                    const SizedBox(height: 2),
-                    Text(
-                      'Na Bíblia, toque num versículo e guarde no coração.',
-                      style: AppTypography.body(
-                        size: 12,
-                        color: a.textMuted(0.55),
-                      ),
-                    ),
-                  ],
+              : Text(
+                  '${bookmarks.length}',
+                  style: AppTypography.label(
+                    size: 10,
+                    letterSpacing: 1.1,
+                    color: a.textMuted(0.5),
+                  ),
                 ),
-              ),
-              if (!widget.embedded)
-                ListChevron(color: a.textMuted(0.4), size: 20),
-            ],
+        ),
+        const SizedBox(height: 12),
+        if (bookmarks.isEmpty)
+          Text(
+            'Na Bíblia, toque num versículo e guarde no coração.',
+            style: AppTypography.body(size: 13, color: a.textMuted(0.55)),
           )
         else
           ...bookmarks.asMap().entries.map((entry) {
             final i = entry.key;
             final label = _label(entry.value);
-            final isLast = i == bookmarks.length - 1;
             return Column(
               children: [
-                if (i > 0)
-                  Divider(
-                    height: 1,
-                    thickness: 1,
-                    color: a.cardBorder.withValues(alpha: 0.45),
-                  ),
-                Material(
-                  color: Colors.transparent,
-                  child: InkWell(
-                    onTap: () => Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (_) => BibleReaderScreen(reference: label),
-                      ),
+                if (i > 0) const RelicHairline(accent: AppColors.cedar),
+                InkWell(
+                  onTap: () => Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => BibleReaderScreen(reference: label),
                     ),
-                    child: Padding(
-                      padding: EdgeInsets.symmetric(
-                        vertical: isLast && i == 0 ? 0 : AppSpace.sm,
-                      ),
-                      child: Row(
-                        children: [
-                          CinematicIcon(
-                            glyph: CinematicGlyph.bookmark,
-                            size: 18,
-                            accent: AppColors.accent.withValues(
-                              alpha: 0.95,
-                            ),
-                            framed: false,
-                          ),
-                          const SizedBox(width: AppSpace.sm),
-                          Expanded(
-                            child: Text(
-                              label,
-                              style: AppTypography.title(
-                                size: 14,
-                                color: a.text,
-                              ),
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 10),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: Text(
+                            label,
+                            style: AppTypography.verse(
+                              size: 16,
+                              color: a.text.withValues(alpha: 0.92),
                             ),
                           ),
-                          ListChevron(color: a.textMuted(0.4), size: 20),
-                        ],
-                      ),
+                        ),
+                        Text(
+                          'abrir',
+                          style: AppTypography.label(
+                            size: 9,
+                            letterSpacing: 1.1,
+                            color: AppColors.cedar.withValues(alpha: 0.7),
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ),
@@ -531,30 +484,24 @@ class _FavoritesSectionState extends State<_FavoritesSection> {
 
     if (widget.embedded) {
       if (bookmarks.isEmpty) {
-        return Material(
-          color: Colors.transparent,
-          child: InkWell(
-            onTap: () => Navigator.of(context).push(
-              MaterialPageRoute(builder: (_) => const BibleScreen()),
-            ),
-            child: content,
+        return GestureDetector(
+          onTap: () => Navigator.of(context).push(
+            MaterialPageRoute(builder: (_) => const BibleScreen()),
           ),
+          child: content,
         );
       }
       return content;
     }
 
-    return Padding(
-      padding: const EdgeInsets.only(top: AppSpace.md),
-      child: GlassCard(
-        onTap: bookmarks.isEmpty
-            ? () => Navigator.of(
-                context,
-              ).push(MaterialPageRoute(builder: (_) => const BibleScreen()))
-            : null,
-        padding: AppMetrics.cardPadding,
-        child: content,
-      ),
+    return RelicPanel(
+      accent: AppColors.cedar,
+      onTap: bookmarks.isEmpty
+          ? () => Navigator.of(context).push(
+                MaterialPageRoute(builder: (_) => const BibleScreen()),
+              )
+          : null,
+      child: content,
     );
   }
 }
@@ -573,20 +520,31 @@ class _SharedVersesSection extends StatelessWidget {
     final content = Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        CardHeader(
-          label: 'Compartilhados',
-          trailing: refs.isEmpty ? null : CountBadge('${refs.length}'),
+        RelicChapter(
+          title: 'Enviados',
+          accent: AppColors.cedar,
+          displayTitle: false,
+          trailing: refs.isEmpty
+              ? null
+              : Text(
+                  '${refs.length}',
+                  style: AppTypography.label(
+                    size: 10,
+                    letterSpacing: 1.1,
+                    color: a.textMuted(0.5),
+                  ),
+                ),
         ),
-        const SizedBox(height: AppSpace.md),
+        const SizedBox(height: 12),
         if (refs.isEmpty)
           Text(
             'Versículos que você compartilhar aparecem aqui — só a referência.',
-            style: AppTypography.body(size: 12, color: a.textMuted(0.55)),
+            style: AppTypography.body(size: 13, color: a.textMuted(0.55)),
           )
         else
           Wrap(
-            spacing: AppSpace.sm,
-            runSpacing: AppSpace.sm,
+            spacing: 8,
+            runSpacing: 8,
             children: [
               for (final ref in refs)
                 GestureDetector(
@@ -595,10 +553,25 @@ class _SharedVersesSection extends StatelessWidget {
                       builder: (_) => BibleReaderScreen(reference: ref),
                     ),
                   ),
-                  child: SoftBadge(
-                    text: ref,
-                    glyph: CinematicGlyph.share,
-                    accent: AppColors.accent,
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 12,
+                      vertical: 8,
+                    ),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(AppRadii.sm),
+                      border: Border.all(
+                        color: AppColors.cedar.withValues(alpha: 0.35),
+                      ),
+                      color: AppColors.cedar.withValues(alpha: 0.08),
+                    ),
+                    child: Text(
+                      ref,
+                      style: AppTypography.verse(
+                        size: 14,
+                        color: a.text.withValues(alpha: 0.9),
+                      ),
+                    ),
                   ),
                 ),
             ],
@@ -608,13 +581,7 @@ class _SharedVersesSection extends StatelessWidget {
 
     if (embedded) return content;
 
-    return Padding(
-      padding: const EdgeInsets.only(top: AppSpace.md),
-      child: GlassCard(
-        padding: AppMetrics.cardPadding,
-        child: content,
-      ),
-    );
+    return RelicPanel(accent: AppColors.cedar, child: content);
   }
 }
 

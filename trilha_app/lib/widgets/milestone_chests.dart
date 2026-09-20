@@ -7,7 +7,7 @@ import '../services/sound_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
-import 'immersive_background.dart';
+import 'relic_panel.dart';
 import 'stage_plate.dart';
 import 'ui_primitives.dart';
 
@@ -283,22 +283,30 @@ class WeeklyQuestsCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
 
-    return GlassCard(
-      padding: AppMetrics.cardPadding,
-      tint: AppColors.primaryLight,
+    return RelicPanel(
+      accent: AppColors.primaryLight,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          CardHeader(
-            label: 'Passos da semana',
-            trailing: CountBadge(
-              '${progress.weeklyQuestsCompleted}/${WeeklyQuestDefs.all.length}',
-              color: AppColors.primaryLight,
+          RelicChapter(
+            title: 'Passos da semana',
+            accent: AppColors.primaryLight,
+            trailing: Text(
+              '${progress.weeklyQuestsCompleted} de ${WeeklyQuestDefs.all.length}',
+              style: AppTypography.label(
+                size: 10,
+                letterSpacing: 1.1,
+                color: Appearance.of(context).textMuted(0.5),
+              ),
             ),
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: 16),
           for (var i = 0; i < WeeklyQuestDefs.all.length; i++) ...[
-            if (i > 0) const SizedBox(height: 12),
+            if (i > 0) ...[
+              const SizedBox(height: 12),
+              const RelicHairline(accent: AppColors.primaryLight),
+              const SizedBox(height: 12),
+            ],
             _WeeklyQuestRow(
               quest: WeeklyQuestDefs.all[i],
               progress: progress,
@@ -333,13 +341,13 @@ class _WeeklyQuestRow extends StatelessWidget {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        CinematicIcon(
+        RelicDisc(
           glyph: CinematicGlyphResolver.forQuest(quest.id),
-          size: 34,
           accent: tone,
-          glowing: false,
+          size: 44,
+          lit: true,
         ),
-        const SizedBox(width: 10),
+        const SizedBox(width: 12),
         Expanded(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -348,7 +356,7 @@ class _WeeklyQuestRow extends StatelessWidget {
                 quest.title,
                 style:
                     AppTypography.title(
-                      size: 13,
+                      size: 14,
                       weight: FontWeight.w800,
                       color: a.text.withValues(alpha: claimed ? 0.45 : 0.95),
                     ).copyWith(
@@ -357,13 +365,13 @@ class _WeeklyQuestRow extends StatelessWidget {
               ),
               const SizedBox(height: 2),
               Text(
-                '${value.clamp(0, quest.target)}/${quest.target} · ${quest.subtitle}',
+                '${value.clamp(0, quest.target)} de ${quest.target} · ${quest.subtitle}',
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
-                style: AppTypography.body(size: 11, color: a.textMuted(0.5)),
+                style: AppTypography.body(size: 12, color: a.textMuted(0.5)),
               ),
-              const SizedBox(height: 6),
-              AppProgressBar(value: pct, color: bar),
+              const SizedBox(height: 8),
+              RelicProgress(value: pct, accent: bar),
             ],
           ),
         ),
@@ -373,15 +381,21 @@ class _WeeklyQuestRow extends StatelessWidget {
           child: Align(
             alignment: Alignment.centerRight,
             child: done
-                ? const CinematicIcon(
-                    glyph: CinematicGlyph.check,
-                    size: 22,
-                    accent: AppColors.teal,
+                ? Text(
+                    'feito',
+                    style: AppTypography.label(
+                      size: 10,
+                      letterSpacing: 1.2,
+                      color: AppColors.teal.withValues(alpha: 0.85),
+                    ),
                   )
-                : CountBadge(
+                : Text(
                     '+${quest.stepsReward}',
-                    filled: true,
-                    color: tone,
+                    style: AppTypography.label(
+                      size: 11,
+                      letterSpacing: 0.8,
+                      color: tone,
+                    ),
                   ),
           ),
         ),

@@ -15,6 +15,7 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ### Changed
 - Selos e Medalhas no perfil: cera recortada e moeda gravada — não mais ícone em círculo
+- Perfil: painéis de relíquia, discos gravados e filamento de ouro — cards e ícones deixam o poço de HUD
 - Jornada: Bronze → Prata → Ouro em todas as famílias; platina/diamante ficam para marcos futuros
 - Posicionamento vs mercado (20 set noite): três donos de “missão” no BR (Bibliando, Bíblia Fácil, nós); ranking direto/indireto no pitch; canvas `stway-concorrencia-direta-indireta`
 - Rodapé da celebração: um CTA ouro; compartilhar e voltar como texto; reparo da sequência não compete com Continuar

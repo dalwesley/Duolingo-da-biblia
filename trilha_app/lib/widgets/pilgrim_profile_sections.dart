@@ -16,10 +16,9 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
 import 'character_seals_strip.dart';
-import 'immersive_background.dart';
 import 'living_seed_card.dart';
+import 'relic_panel.dart';
 import 'streak_week.dart';
-import 'ui_primitives.dart';
 
 String pilgrimFormatCount(int n) {
   final digits = n.abs().toString();
@@ -201,11 +200,13 @@ class PilgrimProfileDetailSections extends StatelessWidget {
     if (_show(CaravanProfileSection.trails)) {
       add(
         profile.trails.isEmpty
-            ? const PilgrimCinematicSection(
-                chapter: 'Trilha',
-                subtitle: 'Nenhuma trilha em andamento',
+            ? const RelicPanel(
                 accent: AppColors.cedar,
-                child: PilgrimEmptyHint('Nenhuma trilha em andamento ainda.'),
+                child: RelicChapter(
+                  title: 'Trilha',
+                  whisper: 'Nenhuma trilha em andamento ainda.',
+                  accent: AppColors.cedar,
+                ),
               )
             : PilgrimTrailPath(trail: profile.trails.first),
       );
@@ -251,14 +252,23 @@ class PilgrimProfileDetailSections extends StatelessWidget {
             )
           : null;
       final accuracy = showAccuracy
-          ? PilgrimCinematicSection(
-              chapter: 'Precisão',
-              subtitle: pilgrimAccuracyEpithet(profile.accuracyPercent!),
+          ? RelicPanel(
               accent: AppColors.teal,
-              child: PilgrimPrecisionArc(
-                percent: profile.accuracyPercent!,
-                correct: profile.lifetimeQuestionsCorrect,
-                total: profile.lifetimeQuestionsAnswered,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  RelicChapter(
+                    title: 'Precisão',
+                    whisper: pilgrimAccuracyEpithet(profile.accuracyPercent!),
+                    accent: AppColors.teal,
+                  ),
+                  const SizedBox(height: 16),
+                  PilgrimPrecisionArc(
+                    percent: profile.accuracyPercent!,
+                    correct: profile.lifetimeQuestionsCorrect,
+                    total: profile.lifetimeQuestionsAnswered,
+                  ),
+                ],
               ),
             )
           : null;
@@ -280,31 +290,33 @@ class PilgrimProfileDetailSections extends StatelessWidget {
               ? '$chapters capítulo${chapters == 1 ? '' : 's'} · medalha Palavra'
               : '$chapters capítulo${chapters == 1 ? '' : 's'} · $books livro${books == 1 ? '' : 's'}';
       add(
-        PilgrimCinematicSection(
-          chapter: 'Escrituras',
-          subtitle: subtitle,
+        RelicPanel(
           accent: AppColors.cedar,
-          child: chapters == 0
-              ? const PilgrimEmptyHint('Ainda sem capítulos lidos registrados.')
-              : profile.completeBookNames.isEmpty
-                  ? null
-                  : Wrap(
-                      spacing: 8,
-                      runSpacing: 8,
-                      children: [
-                        for (final name in profile.completeBookNames.take(8))
-                          SoftBadge(
-                            text: name,
-                            glyph: CinematicGlyph.book,
-                            accent: AppColors.cedar,
-                          ),
-                        if (profile.completeBookNames.length > 8)
-                          SoftBadge(
-                            text: '+${profile.completeBookNames.length - 8}',
-                            accent: AppColors.cedar,
-                          ),
-                      ],
-                    ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              RelicChapter(
+                title: 'Escrituras',
+                whisper: subtitle,
+                accent: AppColors.cedar,
+              ),
+              if (chapters > 0 && profile.completeBookNames.isNotEmpty) ...[
+                const SizedBox(height: 14),
+                Wrap(
+                  spacing: 8,
+                  runSpacing: 8,
+                  children: [
+                    for (final name in profile.completeBookNames.take(8))
+                      _ScriptureChip(name: name),
+                    if (profile.completeBookNames.length > 8)
+                      _ScriptureChip(
+                        name: '+${profile.completeBookNames.length - 8}',
+                      ),
+                  ],
+                ),
+              ],
+            ],
+          ),
         ),
       );
     }
@@ -336,12 +348,12 @@ class PilgrimProfileDetailSections extends StatelessWidget {
 
     if (!isOwner && sections.isEmpty) {
       add(
-        PilgrimCinematicSection(
-          chapter: 'Perfil privado',
-          subtitle: 'Este peregrino guarda sua jornada',
+        const RelicPanel(
           accent: AppColors.slate,
-          child: const PilgrimEmptyHint(
-            'Escolheu não compartilhar detalhes com a caravana.',
+          child: RelicChapter(
+            title: 'Perfil privado',
+            whisper: 'Escolheu não compartilhar detalhes com a caravana.',
+            accent: AppColors.slate,
           ),
         ),
       );
@@ -368,82 +380,47 @@ class PilgrimMeRankHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final rankColor = pilgrimRankAccent(rank);
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(AppRadii.xl),
-      child: Stack(
+    return RelicPanel(
+      accent: rankColor,
+      elevated: rank <= 3,
+      child: Row(
         children: [
-          Positioned.fill(
-            child: DecoratedBox(
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                  colors: [
-                    rankColor.withValues(alpha: 0.22),
-                    AppColors.nightLight.withValues(alpha: 0.95),
-                  ],
-                ),
-              ),
-            ),
+          RelicDisc(
+            glyph: CinematicGlyph.crown,
+            accent: rankColor,
+            size: 56,
           ),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(18, 16, 18, 16),
-            child: Row(
+          const SizedBox(width: 14),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Container(
-                  width: 56,
-                  height: 56,
-                  alignment: Alignment.center,
-                  decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    gradient: rank <= 3 ? AppGradients.gold : null,
-                    color: rank > 3 ? rankColor.withValues(alpha: 0.25) : null,
-                    border: Border.all(
-                      color: rankColor.withValues(alpha: 0.65),
-                      width: 2,
-                    ),
-                  ),
-                  child: Text(
-                    '$rankº',
-                    style: AppTypography.title(
-                      size: 20,
-                      weight: FontWeight.w900,
-                      color: rank <= 3 ? AppColors.inkOnAccent : rankColor,
-                    ),
+                Text(
+                  pilgrimRankEpithet(rank).toUpperCase(),
+                  style: AppTypography.label(
+                    size: 10,
+                    letterSpacing: 1.4,
+                    color: rankColor,
                   ),
                 ),
-                const SizedBox(width: 14),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        pilgrimRankEpithet(rank).toUpperCase(),
-                        style: AppTypography.label(
-                          size: 10,
-                          letterSpacing: 1.3,
-                          color: rankColor,
-                        ),
-                      ),
-                      const SizedBox(height: 4),
-                      Text(
-                        weeklySteps
-                            ? 'Ranking semanal da caravana'
-                            : 'Ranking geral da caravana',
-                        style: AppTypography.body(
-                          size: 13,
-                          weight: FontWeight.w700,
-                          color: a.textMuted(0.68),
-                        ),
-                      ),
-                    ],
+                const SizedBox(height: 4),
+                Text(
+                  '$rankº',
+                  style: AppTypography.display(
+                    size: 28,
+                    weight: FontWeight.w900,
+                    color: a.text,
                   ),
                 ),
-                CinematicIcon(
-                  glyph: CinematicGlyph.crown,
-                  size: 28,
-                  accent: rankColor,
-                  framed: false,
+                const SizedBox(height: 2),
+                Text(
+                  weeklySteps
+                      ? 'Ranking semanal da caravana'
+                      : 'Ranking geral da caravana',
+                  style: AppTypography.body(
+                    size: 13,
+                    color: a.textMuted(0.62),
+                  ),
                 ),
               ],
             ),
@@ -469,14 +446,14 @@ class PilgrimCinematicSection extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GlassCard(
-      padding: const EdgeInsets.fromLTRB(16, 16, 16, 18),
+    return RelicPanel(
+      accent: accent,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          PilgrimChapterTitle(
+          RelicChapter(
             title: chapter,
-            subtitle: subtitle,
+            whisper: subtitle,
             accent: accent,
           ),
           if (child != null) ...[
@@ -485,64 +462,6 @@ class PilgrimCinematicSection extends StatelessWidget {
           ],
         ],
       ),
-    );
-  }
-}
-
-class PilgrimChapterTitle extends StatelessWidget {
-  final String title;
-  final String? subtitle;
-  final Color accent;
-
-  const PilgrimChapterTitle({
-    required this.title,
-    this.subtitle,
-    required this.accent,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Row(
-          children: [
-            Container(
-              width: 3,
-              height: 18,
-              decoration: BoxDecoration(
-                color: accent,
-                borderRadius: BorderRadius.circular(2),
-              ),
-            ),
-            const SizedBox(width: 10),
-            Expanded(
-              child: Text(
-                title.toUpperCase(),
-                style: AppTypography.label(
-                  size: 11,
-                  letterSpacing: 1.4,
-                  color: a.textMuted(0.78),
-                ),
-              ),
-            ),
-          ],
-        ),
-        if (subtitle != null) ...[
-          const SizedBox(height: 4),
-          Padding(
-            padding: const EdgeInsets.only(left: 13),
-            child: Text(
-              subtitle!,
-              style: AppTypography.body(
-                size: 12,
-                color: a.textMuted(0.52),
-              ),
-            ),
-          ),
-        ],
-      ],
     );
   }
 }
@@ -566,97 +485,57 @@ class PilgrimScenePoster extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final quote = insight?.trim();
-    return GlassCard(
-      padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
+    return RelicPanel(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
-            children: [
-              Text(
-                'ÚLTIMA CENA',
-                style: AppTypography.label(
-                  size: 9,
-                  letterSpacing: 1.6,
-                  color: a.textMuted(0.55),
-                ),
-              ),
-              if (trail != null &&
-                  (verseRef == null || verseRef!.isEmpty)) ...[
-                const Spacer(),
-                Text(
-                  trail!,
-                  style: AppTypography.label(
-                    size: 9,
-                    letterSpacing: 0.3,
-                    color: a.textMuted(0.5),
-                  ),
-                ),
-              ],
-            ],
+          RelicChapter(
+            title: 'Última cena',
+            whisper: trail,
           ),
-          const SizedBox(height: 8),
+          const SizedBox(height: 12),
           Text(
             title,
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
             style: AppTypography.display(
-              size: 20,
+              size: 22,
               weight: FontWeight.w900,
               color: a.text,
             ),
           ),
           if (verseRef != null && verseRef!.isNotEmpty) ...[
-            const SizedBox(height: 4),
+            const SizedBox(height: 6),
             Text(
               verseRef!,
-              style: AppTypography.body(
-                size: 13,
-                color: a.textMuted(0.65),
-              ),
-            ),
-          ] else if (trail != null) ...[
-            const SizedBox(height: 4),
-            Text(
-              trail!,
-              style: AppTypography.body(
-                size: 13,
-                color: a.textMuted(0.65),
+              style: AppTypography.label(
+                size: 11,
+                letterSpacing: 1.2,
+                color: AppColors.accent.withValues(alpha: 0.85),
               ),
             ),
           ],
           if (quote != null && quote.isNotEmpty) ...[
-            const SizedBox(height: 10),
+            const SizedBox(height: 12),
             Text(
               '“$quote”',
-              maxLines: 2,
+              maxLines: 3,
               overflow: TextOverflow.ellipsis,
               style: AppTypography.verse(
-                size: 15,
-                color: a.text.withValues(alpha: 0.88),
+                size: 16,
+                color: a.text.withValues(alpha: 0.9),
               ),
             ),
           ],
           if (date != null && date!.isNotEmpty) ...[
-            const SizedBox(height: 12),
-            Row(
-              children: [
-                CinematicIcon(
-                  glyph: CinematicGlyph.calendar,
-                  size: 13,
-                  accent: AppColors.accent,
-                  framed: false,
-                ),
-                const SizedBox(width: 6),
-                Text(
-                  'Concluída em $date',
-                  style: AppTypography.label(
-                    size: 9,
-                    letterSpacing: 0.3,
-                    color: AppColors.accent.withValues(alpha: 0.88),
-                  ),
-                ),
-              ],
+            const SizedBox(height: 14),
+            Text(
+              'Concluída em $date',
+              style: AppTypography.label(
+                size: 9,
+                letterSpacing: 1.1,
+                color: a.textMuted(0.48),
+              ),
             ),
           ],
         ],
@@ -763,25 +642,11 @@ class _PilgrimTimelineNode extends StatelessWidget {
     return Expanded(
       child: Column(
         children: [
-          Container(
-            width: 36,
-            height: 36,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: stop.accent.withValues(alpha: stop.live ? 0.22 : 0.1),
-              border: Border.all(
-                color: stop.accent.withValues(alpha: stop.live ? 0.9 : 0.4),
-                width: stop.live ? 2 : 1.5,
-              ),
-            ),
-            child: Center(
-              child: CinematicIcon(
-                glyph: stop.glyph,
-                size: 16,
-                accent: stop.accent,
-                framed: false,
-              ),
-            ),
+          RelicDisc(
+            glyph: stop.glyph,
+            accent: stop.accent,
+            size: 36,
+            lit: stop.live,
           ),
           const SizedBox(height: 10),
           Text(
@@ -831,39 +696,32 @@ class PilgrimPrecisionArc extends StatelessWidget {
         : percent >= 60
             ? AppColors.accent
             : AppColors.coral;
-    final ring = compact ? 72.0 : 100.0;
+    final ring = compact ? 72.0 : 108.0;
+    final gauge = SizedBox(
+      width: ring,
+      height: ring,
+      child: CustomPaint(
+        painter: _PrecisionGaugePainter(
+          progress: percent / 100,
+          tone: tone,
+        ),
+        child: Center(
+          child: Text(
+            '$percent%',
+            style: AppTypography.title(
+              size: compact ? 18 : 22,
+              weight: FontWeight.w900,
+              color: a.text,
+            ),
+          ),
+        ),
+      ),
+    );
 
     if (compact) {
       return Column(
         children: [
-          SizedBox(
-            width: ring,
-            height: ring,
-            child: Stack(
-              alignment: Alignment.center,
-              children: [
-                SizedBox(
-                  width: ring,
-                  height: ring,
-                  child: CircularProgressIndicator(
-                    value: percent / 100,
-                    strokeWidth: 7,
-                    backgroundColor: Colors.white.withValues(alpha: 0.06),
-                    color: tone,
-                    strokeCap: StrokeCap.round,
-                  ),
-                ),
-                Text(
-                  '$percent%',
-                  style: AppTypography.title(
-                    size: 18,
-                    weight: FontWeight.w900,
-                    color: tone,
-                  ),
-                ),
-              ],
-            ),
-          ),
+          gauge,
           const SizedBox(height: 10),
           Text(
             '$correct de $total',
@@ -880,7 +738,7 @@ class PilgrimPrecisionArc extends StatelessWidget {
             textAlign: TextAlign.center,
             style: AppTypography.label(
               size: 9,
-              letterSpacing: 0.2,
+              letterSpacing: 0.8,
               color: a.textMuted(0.5),
             ),
           ),
@@ -890,45 +748,7 @@ class PilgrimPrecisionArc extends StatelessWidget {
 
     return Row(
       children: [
-        SizedBox(
-          width: 100,
-          height: 100,
-          child: Stack(
-            alignment: Alignment.center,
-            children: [
-              SizedBox(
-                width: 100,
-                height: 100,
-                child: CircularProgressIndicator(
-                  value: percent / 100,
-                  strokeWidth: 8,
-                  backgroundColor: Colors.white.withValues(alpha: 0.06),
-                  color: tone,
-                  strokeCap: StrokeCap.round,
-                ),
-              ),
-              Container(
-                width: 72,
-                height: 72,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: tone.withValues(alpha: 0.1),
-                  border: Border.all(color: tone.withValues(alpha: 0.28)),
-                ),
-                child: Center(
-                  child: Text(
-                    '$percent%',
-                    style: AppTypography.title(
-                      size: 22,
-                      weight: FontWeight.w900,
-                      color: tone,
-                    ),
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
+        gauge,
         const SizedBox(width: 18),
         Expanded(
           child: Column(
@@ -945,7 +765,7 @@ class PilgrimPrecisionArc extends StatelessWidget {
               Text(
                 'perguntas certas na jornada',
                 style: AppTypography.body(
-                  size: 12,
+                  size: 13,
                   color: a.textMuted(0.62),
                 ),
               ),
@@ -957,6 +777,72 @@ class PilgrimPrecisionArc extends StatelessWidget {
   }
 }
 
+class _PrecisionGaugePainter extends CustomPainter {
+  final double progress;
+  final Color tone;
+
+  const _PrecisionGaugePainter({required this.progress, required this.tone});
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final center = Offset(size.width / 2, size.height / 2);
+    final r = size.width / 2 - 6;
+    const start = -math.pi * 0.75;
+    const sweep = math.pi * 1.5;
+
+    canvas.drawCircle(
+      center,
+      r * 0.78,
+      Paint()
+        ..shader = RadialGradient(
+          colors: [
+            tone.withValues(alpha: 0.16),
+            Colors.transparent,
+          ],
+        ).createShader(Rect.fromCircle(center: center, radius: r * 0.78)),
+    );
+
+    final track = Paint()
+      ..color = Colors.white.withValues(alpha: 0.08)
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 7
+      ..strokeCap = StrokeCap.round;
+    canvas.drawArc(
+      Rect.fromCircle(center: center, radius: r),
+      start,
+      sweep,
+      false,
+      track,
+    );
+
+    if (progress <= 0) return;
+    final arc = Paint()
+      ..shader = SweepGradient(
+        startAngle: start,
+        endAngle: start + sweep,
+        colors: [
+          tone.withValues(alpha: 0.45),
+          tone,
+          Color.lerp(tone, const Color(0xFFFFF0C8), 0.4)!,
+        ],
+      ).createShader(Rect.fromCircle(center: center, radius: r))
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 7
+      ..strokeCap = StrokeCap.round;
+    canvas.drawArc(
+      Rect.fromCircle(center: center, radius: r),
+      start,
+      sweep * progress.clamp(0.0, 1.0),
+      false,
+      arc,
+    );
+  }
+
+  @override
+  bool shouldRepaint(covariant _PrecisionGaugePainter old) =>
+      old.progress != progress || old.tone != tone;
+}
+
 class PilgrimLeadershipMonument extends StatelessWidget {
   final int days;
 
@@ -964,51 +850,34 @@ class PilgrimLeadershipMonument extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.fromLTRB(14, 14, 16, 14),
-      decoration: BoxDecoration(
-        color: AppColors.accent.withValues(alpha: 0.14),
-        borderRadius: BorderRadius.circular(AppRadii.lg),
-        border: Border.all(color: AppColors.accent.withValues(alpha: 0.45)),
-      ),
+    return RelicPanel(
+      elevated: true,
       child: Row(
         children: [
-          Container(
-            width: 44,
-            height: 44,
-            decoration: const BoxDecoration(
-              shape: BoxShape.circle,
-              color: AppColors.inkOnAccent,
-            ),
-            child: const Center(
-              child: CinematicIcon(
-                glyph: CinematicGlyph.crown,
-                size: 22,
-                accent: AppColors.accent,
-                framed: false,
-              ),
-            ),
+          const RelicDisc(
+            glyph: CinematicGlyph.crown,
+            accent: AppColors.accent,
+            size: 52,
           ),
-          const SizedBox(width: 12),
+          const SizedBox(width: 14),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   days == 1 ? '1 dia no topo' : '$days dias no topo',
-                  style: AppTypography.title(
-                    size: 16,
+                  style: AppTypography.display(
+                    size: 20,
                     weight: FontWeight.w900,
-                    color: AppColors.accent,
+                    color: Appearance.of(context).text,
                   ),
                 ),
-                const SizedBox(height: 2),
+                const SizedBox(height: 4),
                 Text(
                   'Já liderou o ranking geral',
                   style: AppTypography.body(
-                    size: 12,
-                    weight: FontWeight.w700,
-                    color: Appearance.of(context).textMuted(0.7),
+                    size: 13,
+                    color: Appearance.of(context).textMuted(0.62),
                   ),
                 ),
               ],
@@ -1039,86 +908,61 @@ class PilgrimTrailPath extends StatelessWidget {
         ? '${trail.missionsDone} de ${trail.missionsTotal} cenas'
         : trail.description;
 
-    return Container(
-      margin: EdgeInsets.only(bottom: compact ? 10 : 12),
-      padding: EdgeInsets.fromLTRB(16, compact ? 12 : 14, 16, compact ? 12 : 14),
-      decoration: BoxDecoration(
-        color: AppColors.nightLight.withValues(alpha: 0.72),
-        borderRadius: BorderRadius.circular(AppRadii.xl),
-        border: Border.all(
-          color: accent.withValues(alpha: complete ? 0.4 : 0.18),
-        ),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            children: [
-              Text(
-                compact ? 'TRILHA' : 'SUA TRILHA',
-                style: AppTypography.label(
-                  size: 9,
-                  letterSpacing: 1.5,
-                  color: a.textMuted(0.55),
-                ),
-              ),
-              const Spacer(),
-              Text(
+    return Padding(
+      padding: EdgeInsets.only(bottom: compact ? 10 : 0),
+      child: RelicPanel(
+        accent: accent,
+        padding: EdgeInsets.fromLTRB(16, compact ? 14 : 16, 16, compact ? 14 : 18),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            RelicChapter(
+              title: compact ? 'Trilha' : 'Sua trilha',
+              whisper: subtitle,
+              accent: accent,
+              trailing: Text(
                 '$pct%',
                 style: AppTypography.label(
                   size: 11,
-                  letterSpacing: 0.2,
+                  letterSpacing: 1.1,
                   color: accent,
                 ),
               ),
-            ],
-          ),
-          const SizedBox(height: 8),
-          Text(
-            trail.title,
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            style: AppTypography.display(
-              size: compact ? 16 : 20,
-              weight: FontWeight.w900,
-              color: a.text,
             ),
-          ),
-          const SizedBox(height: 4),
-          Text(
-            subtitle,
-            maxLines: 2,
-            overflow: TextOverflow.ellipsis,
-            style: AppTypography.body(
-              size: 12,
-              color: a.textMuted(0.58),
-            ),
-          ),
-          const SizedBox(height: 12),
-          AppProgressBar(
-            value: trail.progress,
-            color: accent,
-          ),
-          if (trail.modules.length >= 2) ...[
-            const SizedBox(height: 16),
-            _PilgrimHorizontalTrail(
-              modules: trail.modules,
-              progress: trail.progress,
-              accent: accent,
-            ),
-          ] else ...[
-            const SizedBox(height: 6),
+            const SizedBox(height: 10),
             Text(
-              '${trail.missionsDone} de ${trail.missionsTotal} cenas'
-              '${trail.clearedModes.isNotEmpty ? ' · ${trail.clearedModes.join(', ')}' : ''}',
-              style: AppTypography.label(
-                size: 9,
-                letterSpacing: 0,
-                color: a.textMuted(0.45),
+              trail.title,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: AppTypography.display(
+                size: compact ? 16 : 22,
+                weight: FontWeight.w900,
+                color: a.text,
               ),
             ),
+            const SizedBox(height: 12),
+            RelicProgress(value: trail.progress, accent: accent),
+            if (trail.modules.length >= 2) ...[
+              const SizedBox(height: 16),
+              _PilgrimHorizontalTrail(
+                modules: trail.modules,
+                progress: trail.progress,
+                accent: accent,
+              ),
+            ] else ...[
+              const SizedBox(height: 6),
+              Text(
+                '${trail.missionsDone} de ${trail.missionsTotal} cenas'
+                '${trail.clearedModes.isNotEmpty ? ' · ${trail.clearedModes.join(', ')}' : ''}',
+                style: AppTypography.label(
+                  size: 9,
+                  letterSpacing: 0,
+                  color: a.textMuted(0.45),
+                ),
+              ),
+            ],
           ],
-        ],
+        ),
       ),
     );
   }
@@ -1373,57 +1217,41 @@ class PilgrimConstancyCard extends StatelessWidget {
     final a = Appearance.of(context);
     final played = playDates.toSet();
 
-    return GlassCard(
-      padding: const EdgeInsets.fromLTRB(16, 14, 16, 12),
+    return RelicPanel(
+      accent: AppColors.streak,
+      padding: const EdgeInsets.fromLTRB(16, 16, 16, 14),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            'CONSTÂNCIA',
-            style: AppTypography.label(
-              size: 9,
-              letterSpacing: 1.5,
-              color: a.textMuted(0.55),
-            ),
+          RelicChapter(
+            title: 'Constância',
+            accent: AppColors.streak,
+            whisper: showStreak ? 'sequência atual' : 'última caminhada',
           ),
-          const SizedBox(height: 10),
+          const SizedBox(height: 14),
           Row(
             children: [
-              CinematicIcon(
+              RelicDisc(
                 glyph: CinematicGlyph.flame,
-                size: 18,
                 accent: AppColors.streak,
-                framed: false,
+                size: 44,
               ),
-              const SizedBox(width: 8),
+              const SizedBox(width: 12),
               Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      showStreak
-                          ? (streak == 1 ? '1 dia' : '$streak dias')
-                          : walk,
-                      style: AppTypography.title(
-                        size: 16,
-                        weight: FontWeight.w900,
-                        color: a.text,
-                      ),
-                    ),
-                    Text(
-                      showStreak ? 'sequência atual' : 'última caminhada',
-                      style: AppTypography.label(
-                        size: 8,
-                        letterSpacing: 0.2,
-                        color: a.textMuted(0.48),
-                      ),
-                    ),
-                  ],
+                child: Text(
+                  showStreak
+                      ? (streak == 1 ? '1 dia' : '$streak dias')
+                      : walk,
+                  style: AppTypography.display(
+                    size: 24,
+                    weight: FontWeight.w900,
+                    color: a.text,
+                  ),
                 ),
               ),
             ],
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: 14),
           StreakWeek(
             playedOnDate: (day) {
               final key = day.toIso8601String().substring(0, 10);
@@ -1435,12 +1263,12 @@ class PilgrimConstancyCard extends StatelessWidget {
             },
           ),
           if (online.isNotEmpty && online != '—') ...[
-            const SizedBox(height: 4),
+            const SizedBox(height: 8),
             Text(
               'Online $online',
               style: AppTypography.label(
-                size: 8,
-                letterSpacing: 0.2,
+                size: 9,
+                letterSpacing: 0.8,
                 color: a.textMuted(0.42),
               ),
             ),
@@ -1459,58 +1287,55 @@ class PilgrimOwnerPrivacyBanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return Material(
-      color: Colors.transparent,
-      child: InkWell(
-        onTap: onSettings,
-        borderRadius: BorderRadius.circular(AppRadii.md),
-        child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
-          decoration: BoxDecoration(
-            color: AppColors.accent.withValues(alpha: 0.08),
-            borderRadius: BorderRadius.circular(AppRadii.md),
-            border: Border.all(color: AppColors.accent.withValues(alpha: 0.28)),
+    return RelicPanel(
+      onTap: onSettings,
+      padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
+      child: Row(
+        children: [
+          const RelicDisc(
+            glyph: CinematicGlyph.tune,
+            accent: AppColors.accent,
+            size: 36,
           ),
-          child: Row(
-            children: [
-              const CinematicIcon(
-                glyph: CinematicGlyph.tune,
-                size: 18,
-                accent: AppColors.accent,
-                framed: false,
+          const SizedBox(width: 12),
+          Expanded(
+            child: Text(
+              'Toque para escolher o que a caravana vê no seu perfil.',
+              style: AppTypography.body(
+                size: 13,
+                height: 1.4,
+                color: a.textMuted(0.68),
               ),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Text(
-                  'Toque para escolher o que a caravana vê no seu perfil.',
-                  style: AppTypography.body(
-                    size: 11,
-                    height: 1.4,
-                    color: a.textMuted(0.7),
-                  ),
-                ),
-              ),
-              if (onSettings != null)
-                ListChevron(color: a.textMuted(0.45), size: 20),
-            ],
+            ),
           ),
-        ),
+        ],
       ),
     );
   }
 }
 
-class PilgrimEmptyHint extends StatelessWidget {
-  final String text;
+class _ScriptureChip extends StatelessWidget {
+  final String name;
 
-  const PilgrimEmptyHint(this.text);
+  const _ScriptureChip({required this.name});
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return Text(
-      text,
-      style: AppTypography.body(size: 13, color: a.textMuted(0.58)),
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(AppRadii.sm),
+        border: Border.all(color: AppColors.cedar.withValues(alpha: 0.35)),
+        color: AppColors.cedar.withValues(alpha: 0.08),
+      ),
+      child: Text(
+        name,
+        style: AppTypography.verse(
+          size: 14,
+          color: a.text.withValues(alpha: 0.9),
+        ),
+      ),
     );
   }
 }

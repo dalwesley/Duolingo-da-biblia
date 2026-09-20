@@ -5,7 +5,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/spiritual_growth.dart';
 import 'cinematic_icon.dart';
-import 'immersive_background.dart';
+import 'relic_panel.dart';
 import 'ui_primitives.dart';
 
 /// Marcos da sequência diária — deixa claro o que é e o próximo passo.
@@ -77,15 +77,16 @@ class LivingSeedCard extends StatelessWidget {
   ) {
     final a = Appearance.of(context);
     final accent = _accent(growth);
-    return GlassCard(
+    return RelicPanel(
+      accent: accent,
       padding: AppMetrics.cardPaddingCompact,
       child: Row(
         children: [
-          CinematicIcon(
+          RelicDisc(
             glyph: _glyph(growth.stage),
-            size: 40,
             accent: accent,
-            glowing: growth.glowing,
+            size: 48,
+            lit: growth.glowing || growth.streak > 0,
           ),
           const SizedBox(width: 14),
           Expanded(
@@ -150,78 +151,46 @@ class LivingSeedCard extends StatelessWidget {
     final next = growth.nextStage;
     final daysLeft = growth.daysToNext;
 
-    return GlassCard(
-      padding: AppMetrics.cardPadding,
+    return RelicPanel(
+      accent: accent,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              CinematicIcon(
-                glyph: _glyph(growth.stage),
-                size: 52,
-                accent: accent,
-                glowing: growth.glowing,
-              ),
-              const SizedBox(width: 14),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'MARCOS DA SEQUÊNCIA',
-                      style: AppTypography.label(
-                        size: 10,
-                        letterSpacing: 1.1,
-                        color: a.textMuted(0.55),
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    Text(
-                      growth.title,
-                      style: AppTypography.display(
-                        size: 22,
-                        weight: FontWeight.w900,
-                        color: a.text,
-                        height: 1.1,
-                      ),
-                    ),
-                    const SizedBox(height: 4),
-                    Text(
-                      'Cada dia seguido sobe um marco — '
-                      'Semente → Broto → Ramo → Árvore → Fruto.',
-                      style: AppTypography.body(
-                        size: 12,
-                        height: 1.35,
-                        color: a.textMuted(0.65),
-                      ),
-                    ),
-                  ],
+          RelicChapter(
+            title: growth.title,
+            whisper: 'Cada dia seguido sobe um marco — '
+                'Semente → Broto → Ramo → Árvore → Fruto.',
+            accent: accent,
+            trailing: Column(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                Text(
+                  '${growth.streak}',
+                  style: AppTypography.display(
+                    size: 26,
+                    weight: FontWeight.w900,
+                    color: accent,
+                    height: 1,
+                  ),
                 ),
-              ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.end,
-                children: [
-                  Text(
-                    '${growth.streak}',
-                    style: AppTypography.display(
-                      size: 26,
-                      weight: FontWeight.w900,
-                      color: accent,
-                      height: 1,
-                    ),
+                Text(
+                  growth.streak == 1 ? 'dia' : 'dias',
+                  style: AppTypography.label(
+                    size: 10,
+                    color: a.textMuted(0.55),
                   ),
-                  Text(
-                    growth.streak == 1 ? 'dia' : 'dias',
-                    style: AppTypography.label(
-                      size: 10,
-                      color: a.textMuted(0.55),
-                    ),
-                  ),
-                ],
-              ),
-            ],
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 16),
+          Center(
+            child: RelicDisc(
+              glyph: _glyph(growth.stage),
+              accent: accent,
+              size: 64,
+              lit: growth.glowing || growth.streak > 0,
+            ),
           ),
           const SizedBox(height: 16),
           _StageTrack(
@@ -252,7 +221,7 @@ class LivingSeedCard extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 8),
-            AppProgressBar(value: growth.progressToNext, color: accent),
+            RelicProgress(value: growth.progressToNext, accent: accent),
           ] else
             Text(
               growth.subtitle,
@@ -329,38 +298,14 @@ class _StageNode extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final ink = current
-        ? accent
-        : reached
-            ? accent.withValues(alpha: 0.75)
-            : a.textMuted(0.35);
 
     return Column(
       children: [
-        Container(
-          width: current ? 36 : 28,
-          height: current ? 36 : 28,
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            color: current
-                ? accent.withValues(alpha: 0.2)
-                : reached
-                    ? accent.withValues(alpha: 0.1)
-                    : a.cardFillSoft,
-            border: Border.all(
-              color: ink,
-              width: current ? 2 : 1,
-            ),
-          ),
-          child: Center(
-            child: CinematicIcon(
-              glyph: glyph,
-              size: current ? 18 : 14,
-              accent: ink,
-              glowing: false,
-              framed: false,
-            ),
-          ),
+        RelicDisc(
+          glyph: glyph,
+          accent: accent,
+          size: current ? 36 : 28,
+          lit: reached,
         ),
         const SizedBox(height: 6),
         Text(
