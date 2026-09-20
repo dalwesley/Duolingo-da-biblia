@@ -7,6 +7,7 @@ import '../data/entry_trails.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
+import 'embossed_glyph.dart';
 import 'immersive_background.dart';
 import 'share_seal_card.dart';
 import 'ui_primitives.dart';
@@ -143,7 +144,7 @@ class _SealEncounterSheetState extends State<_SealEncounterSheet> {
   }
 }
 
-/// Galeria 2×3 — os seis encontros. Travado = cera opaca, sem “?”.
+/// Galeria 2×3 — seis selos de cera. Travado = cera fria, sem “?”.
 class CharacterSealsStrip extends StatelessWidget {
   final Iterable<String> completed;
   final bool acquiredOnly;
@@ -161,19 +162,26 @@ class CharacterSealsStrip extends StatelessWidget {
     if (acquiredOnly && unlocked.isEmpty) return const SizedBox.shrink();
 
     final next = CharacterSeals.nextLocked(completed);
-    final shown = acquiredOnly ? unlocked : CharacterSeals.all;
+    final shown = acquiredOnly
+        ? unlocked
+        : [
+            ...unlocked,
+            ...CharacterSeals.all.where(
+              (s) => unlocked.every((u) => u.id != s.id),
+            ),
+          ];
 
     final subtitle = acquiredOnly
         ? (unlocked.length == 1
-            ? '1 encontro — fato e verso, no texto.'
-            : '${unlocked.length} encontros — fato e verso, no texto.')
+            ? '1 selo — fato e verso, no texto.'
+            : '${unlocked.length} selos — fato e verso, no texto.')
         : unlocked.isEmpty
             ? (next == null
                 ? 'Fato e verso de quem o texto já mostrou.'
-                : 'O próximo encontro abre em ${next.name}.')
+                : 'Ainda no texto — começa em ${next.name}.')
             : next == null
                 ? '${unlocked.length} de ${CharacterSeals.all.length} — a galeria está cheia.'
-                : '${unlocked.length} de ${CharacterSeals.all.length} · próximo: ${next.name}';
+                : '${unlocked.length} de ${CharacterSeals.all.length} — ainda no texto: ${next.name}';
 
     return GlassCard(
       padding: EdgeInsets.zero,
@@ -200,7 +208,7 @@ class CharacterSealsStrip extends StatelessWidget {
                       const SizedBox(width: 10),
                       Expanded(
                         child: Text(
-                          'Encontros',
+                          'Selos',
                           style: AppTypography.title(size: 16, color: a.text),
                         ),
                       ),
@@ -225,7 +233,6 @@ class CharacterSealsStrip extends StatelessWidget {
                   _EncounterGallery(
                     seals: shown,
                     unlocked: unlocked,
-                    nextId: next?.id,
                   ),
                 ],
               ),
@@ -264,12 +271,10 @@ class _EncounterAtmosphere extends StatelessWidget {
 class _EncounterGallery extends StatelessWidget {
   final List<CharacterSeal> seals;
   final List<CharacterSeal> unlocked;
-  final String? nextId;
 
   const _EncounterGallery({
     required this.seals,
     required this.unlocked,
-    this.nextId,
   });
 
   @override
@@ -289,7 +294,6 @@ class _EncounterGallery extends StatelessWidget {
                 child: _SealMedallion(
                   seal: seal,
                   unlocked: unlocked.any((s) => s.id == seal.id),
-                  next: seal.id == nextId,
                 ),
               ),
           ],
@@ -302,12 +306,10 @@ class _EncounterGallery extends StatelessWidget {
 class _SealMedallion extends StatelessWidget {
   final CharacterSeal seal;
   final bool unlocked;
-  final bool next;
 
   const _SealMedallion({
     required this.seal,
     required this.unlocked,
-    this.next = false,
   });
 
   @override
@@ -317,14 +319,15 @@ class _SealMedallion extends StatelessWidget {
       key: ValueKey(seal.id),
       behavior: HitTestBehavior.opaque,
       onTap: unlocked ? () => showCharacterSealSheet(context, seal) : null,
-      child: Column(
-        children: [
-          _EncounterSeal(
-            glyph: seal.glyph,
-            size: 52,
-            unlocked: unlocked,
-            next: next && !unlocked,
-          ),
+      child: Transform.rotate(
+        angle: ((seal.id.hashCode % 9) - 4) * 0.028,
+        child: Column(
+          children: [
+            _EncounterSeal(
+              glyph: seal.glyph,
+              size: 58,
+              unlocked: unlocked,
+            ),
           const SizedBox(height: 8),
           SizedBox(
             height: 16,
@@ -341,6 +344,7 @@ class _SealMedallion extends StatelessWidget {
             ),
           ),
         ],
+        ),
       ),
     );
   }
@@ -361,161 +365,159 @@ class _EncounterSeal extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final accent = unlocked
-        ? AppColors.accent
-        : next
-            ? AppColors.accent.withValues(alpha: 0.55)
-            : Colors.white.withValues(alpha: 0.22);
-    final halo = size * 1.28;
-
+    final glyphSize = size * 0.36;
     return SizedBox(
-      width: halo,
-      height: halo,
+      width: size,
+      height: size,
       child: Stack(
         alignment: Alignment.center,
         children: [
-          if (unlocked || next)
-            Container(
-              width: size * 1.12,
-              height: size * 1.12,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                boxShadow: [
-                  BoxShadow(
-                    color: accent.withValues(alpha: unlocked ? 0.35 : 0.16),
-                    blurRadius: unlocked ? 16 : 10,
-                  ),
-                ],
-              ),
-            ),
           CustomPaint(
             size: Size.square(size),
-            painter: _EncounterSealPainter(
-              accent: accent,
-              unlocked: unlocked,
-              next: next,
-            ),
-            child: Center(
-              child: Opacity(
-                opacity: unlocked
-                    ? 1
-                    : next
-                        ? 0.42
-                        : 0.22,
-                child: CinematicIcon(
-                  glyph: glyph,
-                  size: size * 0.38,
-                  accent: unlocked
-                      ? AppColors.accent
-                      : Colors.white.withValues(alpha: next ? 0.7 : 0.45),
-                  framed: false,
-                  glowing: unlocked,
-                ),
-              ),
-            ),
+            painter: _WaxSealPainter(unlocked: unlocked, next: next),
           ),
+          if (unlocked || next)
+            EmbossedGlyph(
+              glyph: glyph,
+              size: glyphSize,
+              fill: unlocked
+                  ? const Color(0xFFE8C878)
+                  : const Color(0xFF8A7050),
+              groove: unlocked
+                  ? const Color(0xFF3A1808)
+                  : const Color(0xFF121018),
+              ridge: unlocked
+                  ? const Color(0xFFFFF0C8)
+                  : const Color(0xFF6A5A40),
+              depth: unlocked ? 1.2 : 0.7,
+              opacity: unlocked ? 1 : 0.38,
+            ),
         ],
       ),
     );
   }
 }
 
-class _EncounterSealPainter extends CustomPainter {
-  final Color accent;
+/// Cera recortada — lóbulos de lacre, não um poço de ícone.
+class _WaxSealPainter extends CustomPainter {
   final bool unlocked;
   final bool next;
 
-  const _EncounterSealPainter({
-    required this.accent,
-    required this.unlocked,
-    required this.next,
-  });
+  const _WaxSealPainter({required this.unlocked, required this.next});
 
   @override
   void paint(Canvas canvas, Size size) {
     final center = Offset(size.width / 2, size.height / 2);
-    final outerR = size.width / 2;
-    final rimR = outerR * 0.96;
-    final faceR = outerR * 0.78;
+    final r = size.width / 2;
+    final path = _waxPath(center, r * 0.92);
 
-    final rimLight = unlocked
-        ? const Color(0xFFE8C878)
+    final waxLight = unlocked
+        ? const Color(0xFFB24A28)
         : next
-            ? const Color(0xFF8A7A48)
-            : const Color(0xFF4A5260);
-    final rimMid = unlocked
-        ? const Color(0xFFC9A048)
+            ? const Color(0xFF5A3A28)
+            : const Color(0xFF2E323A);
+    final waxMid = unlocked
+        ? const Color(0xFF7A2414)
         : next
-            ? const Color(0xFF4A4230)
-            : const Color(0xFF2E3540);
-    final rimDark = unlocked
-        ? const Color(0xFF8A6020)
-        : const Color(0xFF181C22);
-    final faceLight = unlocked
-        ? const Color(0xFF3A2E14)
-        : const Color(0xFF323A48);
-    final faceMid = unlocked
-        ? const Color(0xFF1C1810)
-        : const Color(0xFF1A1E26);
-    final faceDark = const Color(0xFF0A0C10);
+            ? const Color(0xFF3A2418)
+            : const Color(0xFF1A1E26);
+    final waxDark = unlocked
+        ? const Color(0xFF2C0C08)
+        : const Color(0xFF0C0E12);
 
-    final rimRect = Rect.fromCircle(center: center, radius: rimR);
-    final rim = Paint()
-      ..shader = SweepGradient(
-        colors: [rimDark, rimMid, rimLight, rimDark],
-        stops: const [0.0, 0.35, 0.7, 1.0],
-      ).createShader(rimRect);
-    canvas.drawCircle(center, rimR, rim);
+    canvas.drawPath(
+      path.shift(const Offset(0, 2.4)),
+      Paint()
+        ..color = Colors.black.withValues(alpha: unlocked ? 0.5 : 0.32)
+        ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 3.5),
+    );
 
-    final faceRect = Rect.fromCircle(center: center, radius: faceR);
-    final face = Paint()
-      ..shader = RadialGradient(
-        center: const Alignment(-0.32, -0.42),
-        radius: 1.05,
-        colors: [faceLight, faceMid, faceDark],
-        stops: const [0.0, 0.55, 1.0],
-      ).createShader(faceRect);
-    canvas.drawCircle(center, faceR, face);
+    canvas.drawPath(
+      path,
+      Paint()
+        ..shader = RadialGradient(
+          center: const Alignment(-0.28, -0.38),
+          radius: 1.05,
+          colors: [waxLight, waxMid, waxDark],
+          stops: const [0.0, 0.48, 1.0],
+        ).createShader(Rect.fromCircle(center: center, radius: r)),
+    );
 
-    final well = Paint()
-      ..shader = RadialGradient(
-        colors: [
-          accent.withValues(alpha: unlocked ? 0.22 : next ? 0.1 : 0.04),
-          Colors.transparent,
-        ],
-      ).createShader(faceRect);
-    canvas.drawCircle(center, faceR * 0.82, well);
+    final pressR = r * 0.58;
+    canvas.drawCircle(
+      center,
+      pressR,
+      Paint()
+        ..shader = RadialGradient(
+          center: const Alignment(-0.2, -0.3),
+          radius: 0.95,
+          colors: [
+            waxDark.withValues(alpha: 0.15),
+            waxDark.withValues(alpha: unlocked ? 0.55 : 0.7),
+          ],
+        ).createShader(Rect.fromCircle(center: center, radius: pressR)),
+    );
 
-    final inner = Paint()
-      ..color = rimLight.withValues(alpha: unlocked ? 0.45 : 0.18)
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 1.1;
-    canvas.drawCircle(center, outerR * 0.62, inner);
-
-    final edge = Paint()
-      ..color = rimDark.withValues(alpha: 0.7)
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 0.8;
-    canvas.drawCircle(center, rimR, edge);
-
-    final tick = Paint()
-      ..color = rimLight.withValues(alpha: unlocked ? 0.5 : 0.18)
-      ..strokeWidth = 0.7
-      ..strokeCap = StrokeCap.round;
-    const count = 12;
-    for (var i = 0; i < count; i++) {
-      final angle = (i / count) * math.pi * 2 - math.pi / 2;
-      final cos = math.cos(angle);
-      final sin = math.sin(angle);
-      canvas.drawLine(
-        center + Offset(cos * rimR * 0.88, sin * rimR * 0.88),
-        center + Offset(cos * rimR * 0.97, sin * rimR * 0.97),
-        tick,
+    if (unlocked || next) {
+      final thread = Paint()
+        ..color = (unlocked ? AppColors.accent : const Color(0xFF8A7048))
+            .withValues(alpha: unlocked ? 0.85 : 0.35)
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = unlocked ? 1.6 : 1.1;
+      canvas.drawCircle(center, pressR * 0.96, thread);
+      canvas.drawCircle(
+        center,
+        pressR * 0.82,
+        Paint()
+          ..color = waxDark.withValues(alpha: 0.45)
+          ..style = PaintingStyle.stroke
+          ..strokeWidth = 0.8,
       );
     }
+
+    canvas.save();
+    canvas.clipPath(path);
+    canvas.drawOval(
+      Rect.fromCenter(
+        center: center + Offset(-r * 0.18, -r * 0.28),
+        width: r * 1.05,
+        height: r * 0.48,
+      ),
+      Paint()
+        ..shader = LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [
+            Colors.white.withValues(alpha: unlocked ? 0.28 : 0.06),
+            Colors.transparent,
+          ],
+        ).createShader(Rect.fromCircle(center: center, radius: r)),
+    );
+    canvas.restore();
+
+    canvas.drawPath(
+      path,
+      Paint()
+        ..color = waxDark.withValues(alpha: 0.55)
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = 0.9,
+    );
+  }
+
+  Path _waxPath(Offset center, double r) {
+    const lobes = 9;
+    final path = Path()
+      ..addOval(Rect.fromCircle(center: center, radius: r * 0.74));
+    for (var i = 0; i < lobes; i++) {
+      final a = (i / lobes) * math.pi * 2 - math.pi / 2;
+      final lobe = center + Offset(math.cos(a) * r * 0.24, math.sin(a) * r * 0.24);
+      path.addOval(Rect.fromCircle(center: lobe, radius: r * 0.58));
+    }
+    return path;
   }
 
   @override
-  bool shouldRepaint(covariant _EncounterSealPainter old) =>
-      old.accent != accent || old.unlocked != unlocked || old.next != next;
+  bool shouldRepaint(covariant _WaxSealPainter old) =>
+      old.unlocked != unlocked || old.next != next;
 }
+

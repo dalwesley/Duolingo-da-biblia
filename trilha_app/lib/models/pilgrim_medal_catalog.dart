@@ -103,7 +103,7 @@ class PilgrimMedalCatalog {
     'discovery:word_nt': 'track:word:chapters_1',
     'track:formation:perfect_5': 'track:formation:perfect_1',
     'track:path:streak_7': 'track:path:streak_3',
-    'track:path:streak_14': 'track:path:streak_3',
+    'track:path:streak_90': 'track:path:streak_30',
     'track:witness:share_3': 'track:witness:share_1',
     'track:witness:share_25': 'track:witness:share_10',
     'track:memory:verse_5': 'track:memory:verse_1',
@@ -190,7 +190,7 @@ class PilgrimMedalCatalog {
       levels: [
         PilgrimMedalLevelDef(
           id: 'track:word:chapters_1',
-          tier: PilgrimMedalTier.iron,
+          tier: PilgrimMedalTier.bronze,
           title: 'Primeira Palavra',
           hint: 'Leia 1 capítulo na Bíblia',
           glyph: CinematicGlyph.spark,
@@ -229,11 +229,18 @@ class PilgrimMedalCatalog {
           rung: PilgrimMedalRung.spark,
         ),
         PilgrimMedalLevelDef(
+          id: 'track:formation:perfect_10',
+          tier: PilgrimMedalTier.silver,
+          title: 'Olho firme',
+          hint: 'Termine 10 cenas com 100% de acertos',
+          glyph: CinematicGlyph.target,
+        ),
+        PilgrimMedalLevelDef(
           id: 'track:formation:perfect_25',
           tier: PilgrimMedalTier.gold,
           title: 'Clareza total',
           hint: '25 cenas com 100% de acertos',
-          glyph: CinematicGlyph.target,
+          glyph: CinematicGlyph.lamp,
         ),
       ],
     ),
@@ -247,25 +254,25 @@ class PilgrimMedalCatalog {
       levels: [
         PilgrimMedalLevelDef(
           id: 'track:path:streak_3',
-          tier: PilgrimMedalTier.iron,
+          tier: PilgrimMedalTier.bronze,
           title: 'Três dias firmes',
           hint: 'Mantenha 3 dias de sequência',
           glyph: CinematicGlyph.spark,
           rung: PilgrimMedalRung.spark,
         ),
         PilgrimMedalLevelDef(
+          id: 'track:path:streak_14',
+          tier: PilgrimMedalTier.silver,
+          title: 'Duas semanas',
+          hint: 'Mantenha 14 dias de sequência',
+          glyph: CinematicGlyph.rise,
+        ),
+        PilgrimMedalLevelDef(
           id: 'track:path:streak_30',
           tier: PilgrimMedalTier.gold,
           title: 'Mês constante',
           hint: 'Mantenha 30 dias de sequência',
-          glyph: CinematicGlyph.rise,
-        ),
-        PilgrimMedalLevelDef(
-          id: 'track:path:streak_90',
-          tier: PilgrimMedalTier.platinum,
-          title: 'Temporada fiel',
-          hint: 'Mantenha 90 dias de sequência',
-          glyph: CinematicGlyph.mountain,
+          glyph: CinematicGlyph.flame,
         ),
       ],
     ),
@@ -287,14 +294,14 @@ class PilgrimMedalCatalog {
         ),
         PilgrimMedalLevelDef(
           id: 'track:witness:share_10',
-          tier: PilgrimMedalTier.gold,
+          tier: PilgrimMedalTier.silver,
           title: 'Semeador',
           hint: 'Compartilhe 10 versículos',
           glyph: CinematicGlyph.qr,
         ),
         PilgrimMedalLevelDef(
           id: 'track:witness:share_50',
-          tier: PilgrimMedalTier.diamond,
+          tier: PilgrimMedalTier.gold,
           title: 'Voz na caravana',
           hint: 'Compartilhe 50 versículos',
           glyph: CinematicGlyph.star,
@@ -311,7 +318,7 @@ class PilgrimMedalCatalog {
       levels: [
         PilgrimMedalLevelDef(
           id: 'track:memory:verse_1',
-          tier: PilgrimMedalTier.iron,
+          tier: PilgrimMedalTier.bronze,
           title: 'Primeiro verso',
           hint: 'Firme 1 versículo na memorização',
           glyph: CinematicGlyph.spark,
@@ -326,7 +333,7 @@ class PilgrimMedalCatalog {
         ),
         PilgrimMedalLevelDef(
           id: 'track:memory:verse_50',
-          tier: PilgrimMedalTier.platinum,
+          tier: PilgrimMedalTier.gold,
           title: 'Escritura viva',
           hint: 'Firme 50 versículos na memorização',
           glyph: CinematicGlyph.star,

@@ -14,7 +14,7 @@ enum PilgrimMedalFamily {
   discovery,
 }
 
-/// Material da medalha — escada Ferro → Diamante; Mirra para raras.
+/// Material da medalha — jornada Bronze → Prata → Ouro; Platina/Diamante reservados; Mirra para raras.
 enum PilgrimMedalTier {
   iron,
   bronze,

@@ -14,7 +14,8 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 - Combo ×N na missão; placar de desafios fechados no perfil (não volta para a Home)
 
 ### Changed
-- Encontros e Medalhas no perfil: selos 2×3, capítulos e anéis — não mais grade de ícones
+- Selos e Medalhas no perfil: cera recortada e moeda gravada — não mais ícone em círculo
+- Jornada: Bronze → Prata → Ouro em todas as famílias; platina/diamante ficam para marcos futuros
 - Posicionamento vs mercado (20 set noite): três donos de “missão” no BR (Bibliando, Bíblia Fácil, nós); ranking direto/indireto no pitch; canvas `stway-concorrencia-direta-indireta`
 - Rodapé da celebração: um CTA ouro; compartilhar e voltar como texto; reparo da sequência não compete com Continuar
 - Flash de acerto/erro mais curto; haptic forte no combo

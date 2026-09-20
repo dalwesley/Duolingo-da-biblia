@@ -6,6 +6,7 @@ import '../models/pilgrim_medals.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
+import 'embossed_glyph.dart';
 
 /// Halo radial + raios suaves — fundo de sheets e tiles de medalha.
 class MedalSpotlightPainter extends CustomPainter {
@@ -291,9 +292,8 @@ class MedalVaultMedallion extends StatelessWidget {
   Widget build(BuildContext context) {
     final unlocked = tile.unlocked;
     final palette = _MedalTierPalette.forTier(tile.tier, unlocked: unlocked);
-    final diameter = size ?? 44;
-    final iconSize = diameter * (unlocked ? 0.42 : 0.36);
-    final lockSize = (diameter * 0.28).clamp(12.0, 16.0);
+    final diameter = size ?? 52;
+    final iconSize = diameter * (unlocked ? 0.38 : 0.32);
 
     final coin = SizedBox(
       width: diameter,
@@ -302,74 +302,23 @@ class MedalVaultMedallion extends StatelessWidget {
         alignment: Alignment.center,
         clipBehavior: Clip.none,
         children: [
-        if (unlocked)
-          Positioned.fill(
-            child: DecoratedBox(
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.black.withValues(alpha: 0.45),
-                    blurRadius: 4,
-                    offset: const Offset(0, 2),
-                  ),
-                ],
-              ),
+          CustomPaint(
+            size: Size.square(diameter),
+            painter: _MedallionCoinPainter(
+              palette: palette,
+              unlocked: unlocked,
             ),
           ),
-        CustomPaint(
-          size: Size.square(diameter),
-          painter: _MedallionCoinPainter(palette: palette),
-          child: Center(
-            child: Padding(
-              padding: EdgeInsets.all(diameter * 0.12),
-              child: Opacity(
-                opacity: unlocked || mystery ? 1 : 0.55,
-                child: CinematicIcon(
-                  glyph: mystery ? CinematicGlyph.spark : tile.glyph,
-                  size: iconSize,
-                  accent: unlocked
-                      ? palette.glyph
-                      : Colors.white.withValues(alpha: mystery ? 0.55 : 0.72),
-                  framed: false,
-                  glowing: unlocked,
-                ),
-              ),
+          if (unlocked || mystery)
+            EmbossedGlyph(
+              glyph: mystery ? CinematicGlyph.spark : tile.glyph,
+              size: iconSize,
+              fill: palette.glyph,
+              groove: palette.faceDark,
+              ridge: palette.rimLight,
+              depth: unlocked ? 1.15 : 0.7,
+              opacity: mystery && !unlocked ? 0.55 : 1,
             ),
-          ),
-        ),
-        if (!unlocked && !mystery)
-          Positioned(
-            right: 0,
-            bottom: 0,
-            child: Container(
-              width: lockSize,
-              height: lockSize,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                gradient: const LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                  colors: [
-                    Color(0xFF4A5260),
-                    Color(0xFF1A1E26),
-                  ],
-                ),
-                border: Border.all(
-                  color: Colors.white.withValues(alpha: 0.28),
-                  width: 0.8,
-                ),
-              ),
-              child: Center(
-                child: CinematicIcon(
-                  glyph: CinematicGlyph.lock,
-                  size: lockSize * 0.55,
-                  accent: Colors.white.withValues(alpha: 0.82),
-                  framed: false,
-                ),
-              ),
-            ),
-          ),
         ],
       ),
     );
@@ -503,97 +452,152 @@ class _MedalTierPalette {
 
 class _MedallionCoinPainter extends CustomPainter {
   final _MedalTierPalette palette;
+  final bool unlocked;
 
-  const _MedallionCoinPainter({required this.palette});
+  const _MedallionCoinPainter({
+    required this.palette,
+    required this.unlocked,
+  });
 
   @override
   void paint(Canvas canvas, Size size) {
     final center = Offset(size.width / 2, size.height / 2);
     final outerR = size.width / 2;
     final rimR = outerR * 0.96;
-    final faceR = outerR * 0.78;
-    final innerR = outerR * 0.62;
+    final faceR = outerR * 0.74;
+    final innerR = outerR * 0.58;
+
+    canvas.drawCircle(
+      center + const Offset(0, 2.2),
+      outerR * 0.9,
+      Paint()
+        ..color = Colors.black.withValues(alpha: unlocked ? 0.48 : 0.3)
+        ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 3.2),
+    );
 
     _drawOuterRim(canvas, center, rimR);
     _drawFace(canvas, center, faceR, innerR);
-    _drawTicks(canvas, center, rimR);
+    _drawReeding(canvas, center, rimR);
+    if (unlocked) _drawSpecular(canvas, center, faceR);
   }
 
   void _drawOuterRim(Canvas canvas, Offset center, double radius) {
     final rect = Rect.fromCircle(center: center, radius: radius);
-    final paint = Paint()
-      ..shader = SweepGradient(
-        colors: [
-          palette.rimDark,
-          palette.rimMid,
-          palette.rimLight,
-          palette.rimDark,
-        ],
-        stops: const [0.0, 0.35, 0.7, 1.0],
-      ).createShader(rect);
-    canvas.drawCircle(center, radius, paint);
+    canvas.drawCircle(
+      center,
+      radius,
+      Paint()
+        ..shader = SweepGradient(
+          colors: [
+            palette.rimDark,
+            palette.rimMid,
+            palette.rimLight,
+            palette.rimMid,
+            palette.rimDark,
+          ],
+          stops: const [0.0, 0.22, 0.48, 0.78, 1.0],
+        ).createShader(rect),
+    );
 
-    final innerCut = Paint()
-      ..shader = RadialGradient(
-        colors: [palette.faceMid, palette.rimDark],
-        stops: const [0.82, 1.0],
-      ).createShader(rect);
-    canvas.drawCircle(center, radius * 0.88, innerCut);
+    canvas.drawCircle(
+      center,
+      radius * 0.86,
+      Paint()
+        ..shader = RadialGradient(
+          center: const Alignment(-0.35, -0.4),
+          colors: [palette.faceMid, palette.rimDark],
+          stops: const [0.72, 1.0],
+        ).createShader(rect),
+    );
 
-    final edge = Paint()
-      ..color = palette.rimDark.withValues(alpha: 0.6)
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 0.8;
-    canvas.drawCircle(center, radius, edge);
+    canvas.drawCircle(
+      center,
+      radius,
+      Paint()
+        ..color = palette.rimDark.withValues(alpha: 0.7)
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = 1.0,
+    );
   }
 
   void _drawFace(Canvas canvas, Offset center, double faceR, double innerR) {
     final rect = Rect.fromCircle(center: center, radius: faceR);
-    final face = Paint()
-      ..shader = RadialGradient(
-        center: const Alignment(-0.35, -0.45),
-        radius: 1.05,
-        colors: [palette.faceLight, palette.faceMid, palette.faceDark],
-        stops: const [0.0, 0.55, 1.0],
-      ).createShader(rect);
-    canvas.drawCircle(center, faceR, face);
+    canvas.drawCircle(
+      center,
+      faceR,
+      Paint()
+        ..shader = RadialGradient(
+          center: const Alignment(-0.38, -0.48),
+          radius: 1.1,
+          colors: [palette.faceLight, palette.faceMid, palette.faceDark],
+          stops: const [0.0, 0.5, 1.0],
+        ).createShader(rect),
+    );
 
-    final innerRing = Paint()
-      ..color = palette.rimDark.withValues(alpha: 0.35)
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 1.2;
-    canvas.drawCircle(center, innerR, innerRing);
+    canvas.drawCircle(
+      center,
+      innerR,
+      Paint()
+        ..color = palette.rimDark.withValues(alpha: 0.4)
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = 1.3,
+    );
 
-    final highlightRing = Paint()
-      ..color = palette.rimLight.withValues(alpha: 0.12)
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = 0.6;
-    canvas.drawCircle(center, faceR * 0.92, highlightRing);
+    canvas.drawCircle(
+      center,
+      faceR * 0.93,
+      Paint()
+        ..color = palette.rimLight.withValues(alpha: unlocked ? 0.22 : 0.08)
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = 0.7,
+    );
   }
 
-  void _drawTicks(Canvas canvas, Offset center, double rimR) {
+  void _drawReeding(Canvas canvas, Offset center, double rimR) {
     final tickPaint = Paint()
-      ..color = palette.rimLight.withValues(alpha: 0.45)
-      ..strokeWidth = 0.7
+      ..color = palette.rimLight.withValues(alpha: unlocked ? 0.62 : 0.18)
+      ..strokeWidth = 0.85
       ..strokeCap = StrokeCap.round;
-    const count = 12;
+    const count = 28;
     for (var i = 0; i < count; i++) {
       final angle = (i / count) * math.pi * 2 - math.pi / 2;
       final cos = math.cos(angle);
       final sin = math.sin(angle);
-      final inner = rimR * 0.9;
-      final outer = rimR * 0.98;
       canvas.drawLine(
-        center + Offset(cos * inner, sin * inner),
-        center + Offset(cos * outer, sin * outer),
+        center + Offset(cos * rimR * 0.88, sin * rimR * 0.88),
+        center + Offset(cos * rimR * 0.99, sin * rimR * 0.99),
         tickPaint,
       );
     }
   }
 
+  void _drawSpecular(Canvas canvas, Offset center, double faceR) {
+    canvas.save();
+    canvas.clipPath(
+      Path()..addOval(Rect.fromCircle(center: center, radius: faceR)),
+    );
+    canvas.drawOval(
+      Rect.fromCenter(
+        center: center + Offset(-faceR * 0.18, -faceR * 0.32),
+        width: faceR * 1.35,
+        height: faceR * 0.62,
+      ),
+      Paint()
+        ..shader = LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [
+            palette.rimLight.withValues(alpha: 0.42),
+            Colors.transparent,
+          ],
+        ).createShader(Rect.fromCircle(center: center, radius: faceR)),
+    );
+    canvas.restore();
+  }
+
   @override
   bool shouldRepaint(covariant _MedallionCoinPainter old) =>
-      old.palette.rimMid != palette.rimMid;
+      old.palette.rimMid != palette.rimMid || old.unlocked != unlocked;
 }
 
 /// Emblema da família — uma moeda, sem escada de pontos.
@@ -620,8 +624,7 @@ class MedalTrackEmblem extends StatelessWidget {
         ? tierColor(current.tier)
         : a.textMuted(0.38);
     final tile = PilgrimMedalTile.fromTrack(trackState);
-    final diameter = compact ? 40.0 : 46.0;
-    final ring = diameter + (compact ? 10 : 12);
+    final diameter = compact ? 42.0 : 54.0;
 
     return Material(
       color: Colors.transparent,
@@ -633,14 +636,8 @@ class MedalTrackEmblem extends StatelessWidget {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              MedalHaloRing(
-                progress: trackState.progress,
-                accent: accent,
-                size: ring,
-                stroke: featured ? 2.6 : 2.1,
-                child: MedalVaultMedallion(tile: tile, size: diameter),
-              ),
-              const SizedBox(height: 4),
+              MedalVaultMedallion(tile: tile, size: diameter),
+              const SizedBox(height: 6),
               Text(
                 trackState.track.title,
                 textAlign: TextAlign.center,

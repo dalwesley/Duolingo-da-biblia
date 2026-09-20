@@ -118,7 +118,7 @@ void main() {
       expect(word.isComplete, isTrue);
     });
 
-    test('leader day does not paint 90-day path', () {
+    test('leader day does not paint path gold', () {
       const profile = CaravanPilgrimProfile(
         name: 'Ana',
         steps: 10,
@@ -178,6 +178,40 @@ void main() {
             (t) => t.track.id == PilgrimMedalCatalog.trackFormationId,
           );
       expect(formation.levelIndex, 0);
+      expect(formation.isComplete, isFalse);
+    });
+
+    test('journey tracks share bronze silver gold', () {
+      for (final track in PilgrimMedalCatalog.journeyTracks) {
+        expect(track.levels.length, 3, reason: track.id);
+        expect(
+          track.levels.map((l) => l.tier).toList(),
+          [
+            PilgrimMedalTier.bronze,
+            PilgrimMedalTier.silver,
+            PilgrimMedalTier.gold,
+          ],
+          reason: track.id,
+        );
+      }
+    });
+
+    test('ten perfect missions is Formação silver', () {
+      const profile = CaravanPilgrimProfile(
+        name: 'Ana',
+        steps: 100,
+        perfectMissions: [
+          'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
+        ],
+      );
+      final formation = PilgrimMedals.evaluateVaults(
+        profile: profile,
+        catalog: const [],
+      ).first.tracks.firstWhere(
+            (t) => t.track.id == PilgrimMedalCatalog.trackFormationId,
+          );
+      expect(formation.currentLevel?.id, 'track:formation:perfect_10');
+      expect(formation.currentLevel?.tier, PilgrimMedalTier.silver);
       expect(formation.isComplete, isFalse);
     });
 

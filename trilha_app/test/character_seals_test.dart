@@ -16,7 +16,7 @@ void main() {
         ),
       ),
     );
-    expect(find.text('Encontros'), findsOneWidget);
+    expect(find.text('Selos'), findsOneWidget);
     expect(find.text('?'), findsNothing);
     expect(find.text('Imagem'), findsNothing);
   });
@@ -36,6 +36,24 @@ void main() {
     );
     expect(find.text('Imagem'), findsOneWidget);
     expect(find.text('Guardar'), findsNothing);
+  });
+
+  testWidgets('unlocked seals sit first, even if later in the canon', (tester) async {
+    await tester.pumpWidget(
+      MaterialApp(
+        theme: AppTheme.dark,
+        home: const Scaffold(
+          body: SingleChildScrollView(
+            child: CharacterSealsStrip(
+              completed: ['gen12-01-chamado'],
+            ),
+          ),
+        ),
+      ),
+    );
+    expect(find.text('Abrão'), findsOneWidget);
+    expect(find.text('Imagem'), findsNothing);
+    expect(find.textContaining('ainda no texto: Imagem'), findsOneWidget);
   });
 
   testWidgets('sheet shares the encounter instead of Guardar', (tester) async {

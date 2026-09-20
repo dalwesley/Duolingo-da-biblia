@@ -278,28 +278,9 @@ class _MedalDetailSheetState extends State<_MedalDetailSheet>
                         const SizedBox(height: 22),
                         ScaleTransition(
                           scale: _heroScale,
-                          child: AnimatedBuilder(
-                            animation: _pulse,
-                            builder: (context, _) {
-                              final breath =
-                                  (math.sin(_pulse.value * math.pi * 2) + 1) /
-                                  2;
-                              return MedalHeroEmblem(
-                                accent: accent,
-                                glyph: tile.glyph,
-                                size: 68,
-                                breath: unlocked ? breath : 0,
-                                glowing: unlocked,
-                                overlay: !unlocked
-                                    ? CinematicIcon(
-                                        glyph: CinematicGlyph.lock,
-                                        size: 24,
-                                        accent: a.textMuted(0.72),
-                                        framed: false,
-                                      )
-                                    : null,
-                              );
-                            },
+                          child: MedalVaultMedallion(
+                            tile: tile,
+                            size: 104,
                           ),
                         ),
                         const SizedBox(height: 18),
@@ -443,7 +424,6 @@ class _TrackDetailSheetState extends State<_TrackDetailSheet>
             celebratedIndex < track.levels.length
         ? track.levels[celebratedIndex]
         : current;
-    final next = trackState.nextLevel;
     final sparkUp = widget.celebration && celebrated?.isSpark == true;
     final headline = widget.celebration
         ? (sparkUp ? 'EMBLEMA ACESO' : 'SUBIU DE NÍVEL')
@@ -529,25 +509,9 @@ class _TrackDetailSheetState extends State<_TrackDetailSheet>
                               ),
                             ),
                             const SizedBox(height: 18),
-                            AnimatedBuilder(
-                              animation: _pulse,
-                              builder: (context, _) {
-                                final breath =
-                                    (math.sin(_pulse.value * math.pi * 2) +
-                                            1) /
-                                        2;
-                                return MedalHeroEmblem(
-                                  accent: accent,
-                                  glyph: track.glyph,
-                                  size: widget.celebration ? 88 : 56,
-                                  breath: trackState.hasStarted ||
-                                          widget.celebration
-                                      ? breath
-                                      : 0,
-                                  glowing: trackState.hasStarted ||
-                                      widget.celebration,
-                                );
-                              },
+                            MedalVaultMedallion(
+                              tile: PilgrimMedalTile.fromTrack(trackState),
+                              size: widget.celebration ? 112 : 104,
                             ),
                             const SizedBox(height: 14),
                             Text(
@@ -590,45 +554,9 @@ class _TrackDetailSheetState extends State<_TrackDetailSheet>
                                   color: a.text,
                                 ),
                               ),
-                              const SizedBox(height: 4),
-                              Text(
-                                celebrated.hint,
-                                textAlign: TextAlign.center,
-                                style: AppTypography.body(
-                                  size: 13,
-                                  color: a.textMuted(0.55),
-                                ),
-                              ),
-                              if (next != null) ...[
-                                const SizedBox(height: 18),
-                                _TrackLevelRow(
-                                  level: next,
-                                  unlocked: false,
-                                  isNext: true,
-                                ),
-                              ],
-                            ] else ...[
-                              if (current != null) ...[
-                                const SizedBox(height: 8),
-                                Text(
-                                  tierLabel(current.tier),
-                                  style: AppTypography.title(
-                                    size: 14,
-                                    weight: FontWeight.w800,
-                                    color: accent,
-                                  ),
-                                ),
-                              ],
-                              const SizedBox(height: 18),
-                              for (var i = 0; i < track.levels.length; i++)
-                                _TrackLevelRow(
-                                  level: track.levels[i],
-                                  unlocked: i <= trackState.levelIndex,
-                                  highlighted:
-                                      widget.highlightLevelIndex == i,
-                                  isNext: i == trackState.levelIndex + 1,
-                                ),
                             ],
+                            const SizedBox(height: 22),
+                            _AlloyPath(trackState: trackState),
                             const SizedBox(height: 20),
                             CopperCta(
                               label: widget.celebration
@@ -654,107 +582,131 @@ class _TrackDetailSheetState extends State<_TrackDetailSheet>
   }
 }
 
-class _TrackLevelRow extends StatelessWidget {
+class _AlloyPath extends StatelessWidget {
+  final PilgrimTrackState trackState;
+
+  const _AlloyPath({required this.trackState});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final track = trackState.track;
+    final levels = track.levels;
+    if (levels.isEmpty) return const SizedBox.shrink();
+    final current = trackState.levelIndex;
+    final next = trackState.nextLevel;
+
+    return Column(
+      children: [
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            for (var i = 0; i < levels.length; i++) ...[
+              if (i > 0)
+                Expanded(
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 20),
+                    child: Container(
+                      height: 1.5,
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          colors: [
+                            tierColor(levels[i - 1].tier).withValues(
+                              alpha: i - 1 <= current ? 0.7 : 0.14,
+                            ),
+                            tierColor(levels[i].tier).withValues(
+                              alpha: i <= current ? 0.7 : 0.14,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              _AlloyStep(
+                track: track,
+                level: levels[i],
+                unlocked: i <= current,
+                lit: i == current && trackState.hasStarted,
+              ),
+            ],
+          ],
+        ),
+        const SizedBox(height: 16),
+        if (next != null) ...[
+          Text(
+            next.isSpark ? next.title : '${tierLabel(next.tier)} · ${next.title}',
+            textAlign: TextAlign.center,
+            style: AppTypography.title(
+              size: 14,
+              weight: FontWeight.w800,
+              color: tierColor(next.tier),
+            ),
+          ),
+          const SizedBox(height: 4),
+          Text(
+            next.hint,
+            textAlign: TextAlign.center,
+            style: AppTypography.body(
+              size: 13,
+              color: a.textMuted(0.55),
+            ),
+          ),
+        ] else if (trackState.isComplete) ...[
+          Text(
+            'A escada está completa.',
+            textAlign: TextAlign.center,
+            style: AppTypography.body(
+              size: 13,
+              color: a.textMuted(0.55),
+            ),
+          ),
+        ],
+      ],
+    );
+  }
+}
+
+class _AlloyStep extends StatelessWidget {
+  final PilgrimMedalTrackDef track;
   final PilgrimMedalLevelDef level;
   final bool unlocked;
-  final bool highlighted;
-  final bool isNext;
+  final bool lit;
 
-  const _TrackLevelRow({
+  const _AlloyStep({
+    required this.track,
     required this.level,
     required this.unlocked,
-    this.highlighted = false,
-    this.isNext = false,
+    required this.lit,
   });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final accent = unlocked
-        ? MedalEngagementService.tierColor(level.tier)
-        : a.textMuted(0.28);
-    final heading = level.isSpark
-        ? level.title
-        : '${tierLabel(level.tier)} · ${level.title}';
-
-    return Container(
-      width: double.infinity,
-      margin: const EdgeInsets.only(bottom: 8),
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(AppRadii.md),
-        color: highlighted
-            ? accent.withValues(alpha: 0.16)
-            : Colors.white.withValues(alpha: unlocked ? 0.05 : 0.02),
-        border: Border.all(
-          color: highlighted
-              ? accent.withValues(alpha: 0.7)
-              : (isNext
-                  ? accent.withValues(alpha: 0.35)
-                  : Colors.white.withValues(alpha: 0.08)),
+    final accent = unlocked ? tierColor(level.tier) : a.textMuted(0.35);
+    return Column(
+      children: [
+        MedalVaultMedallion(
+          tile: PilgrimMedalTile(
+            id: level.id,
+            title: level.title,
+            hint: level.hint,
+            glyph: track.glyph,
+            tier: level.tier,
+            unlocked: unlocked,
+          ),
+          size: lit ? 48 : 34,
         ),
-      ),
-      child: Row(
-        children: [
-          Container(
-            width: 8,
-            height: 8,
-            decoration: BoxDecoration(
-              color: unlocked ? accent : Colors.transparent,
-              shape: BoxShape.circle,
-              border: Border.all(color: accent.withValues(alpha: 0.6)),
-            ),
+        const SizedBox(height: 6),
+        Text(
+          tierLabel(level.tier),
+          style: AppTypography.label(
+            size: 8,
+            letterSpacing: 0.8,
+            color: accent,
           ),
-          const SizedBox(width: 10),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  heading,
-                  style: AppTypography.label(
-                    size: 10,
-                    letterSpacing: 0.3,
-                    color: unlocked ? accent : a.textMuted(0.45),
-                  ),
-                ),
-                const SizedBox(height: 2),
-                Text(
-                  level.hint,
-                  style: AppTypography.body(
-                    size: 11,
-                    height: 1.3,
-                    color: a.textMuted(unlocked ? 0.62 : 0.4),
-                  ),
-                ),
-              ],
-            ),
-          ),
-          if (highlighted)
-            CinematicIcon(
-              glyph: CinematicGlyph.star,
-              size: 14,
-              accent: accent,
-              framed: false,
-            )
-          else if (unlocked)
-            CinematicIcon(
-              glyph: CinematicGlyph.check,
-              size: 12,
-              accent: accent,
-              framed: false,
-            )
-          else if (isNext)
-            Text(
-              'PRÓXIMO',
-              style: AppTypography.label(
-                size: 8,
-                letterSpacing: 0.6,
-                color: accent,
-              ),
-            ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
@@ -876,18 +828,16 @@ class _MedalVaultCompleteSheetState extends State<_MedalVaultCompleteSheet>
                       ),
                     ),
                     const SizedBox(height: 22),
-                    AnimatedBuilder(
-                      animation: _pulse,
-                      builder: (context, _) {
-                        final breath =
-                            (math.sin(_pulse.value * math.pi * 2) + 1) / 2;
-                        return MedalHeroEmblem(
-                          accent: AppColors.medalGold,
-                          glyph: CinematicGlyph.crown,
-                          size: 60,
-                          breath: breath,
-                        );
-                      },
+                    MedalVaultMedallion(
+                      tile: PilgrimMedalTile(
+                        id: 'vault:complete',
+                        title: widget.vaultTitle,
+                        hint: '',
+                        glyph: CinematicGlyph.crown,
+                        tier: PilgrimMedalTier.gold,
+                        unlocked: true,
+                      ),
+                      size: 96,
                     ),
                     const SizedBox(height: 18),
                     Text(

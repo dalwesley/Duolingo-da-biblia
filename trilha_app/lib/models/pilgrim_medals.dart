@@ -463,15 +463,16 @@ class PilgrimMedals {
   static bool _formationLevel(int level, CaravanPilgrimProfile profile) =>
       switch (level) {
         0 => profile.perfectMissions.isNotEmpty,
-        1 => profile.perfectMissions.length >= 25,
+        1 => profile.perfectMissions.length >= 10,
+        2 => profile.perfectMissions.length >= 25,
         _ => false,
       };
 
   static bool _pathLevel(int level, CaravanPilgrimProfile profile) =>
       switch (level) {
         0 => profile.streak >= 3,
-        1 => profile.streak >= 30,
-        2 => profile.streak >= 90,
+        1 => profile.streak >= 14,
+        2 => profile.streak >= 30,
         _ => false,
       };
 
@@ -788,6 +789,12 @@ class PilgrimMedals {
           ),
         1 => _step(
             current: profile.perfectMissions.length,
+            target: 10,
+            unit: 'cena perfeita',
+            unitPlural: 'cenas perfeitas',
+          ),
+        2 => _step(
+            current: profile.perfectMissions.length,
             target: 25,
             unit: 'cena perfeita',
             unitPlural: 'cenas perfeitas',
@@ -805,13 +812,13 @@ class PilgrimMedals {
           ),
         1 => _step(
             current: profile.streak,
-            target: 30,
+            target: 14,
             unit: 'dia de sequência',
             unitPlural: 'dias de sequência',
           ),
         2 => _step(
             current: profile.streak,
-            target: 90,
+            target: 30,
             unit: 'dia de sequência',
             unitPlural: 'dias de sequência',
           ),

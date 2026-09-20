@@ -335,73 +335,38 @@ class _RareStrip extends StatelessWidget {
             color: AppColors.medalMirra.withValues(alpha: 0.88),
           ),
         ),
-        const SizedBox(height: 10),
-        Wrap(
-          spacing: 10,
-          runSpacing: 10,
-          crossAxisAlignment: WrapCrossAlignment.center,
-          children: [
-            for (final tile in tiles)
-              MedalVaultMedallion(
-                tile: tile,
-                size: 52,
-                onTap: () => showMedalTileSheet(context, tile),
+        if (tiles.isNotEmpty) ...[
+          const SizedBox(height: 10),
+          Wrap(
+            spacing: 10,
+            runSpacing: 10,
+            children: [
+              for (final tile in tiles)
+                MedalVaultMedallion(
+                  tile: tile,
+                  size: 52,
+                  onTap: () => showMedalTileSheet(context, tile),
+                ),
+            ],
+          ),
+        ],
+        if (hiddenCount > 0) ...[
+          const SizedBox(height: 8),
+          GestureDetector(
+            onTap: () => showMedalMysterySheet(context, hiddenCount),
+            behavior: HitTestBehavior.opaque,
+            child: Text(
+              tiles.isEmpty
+                  ? 'Revelam-se no caminho — sem dica.'
+                  : 'Outras se revelam no caminho.',
+              style: AppTypography.body(
+                size: 12,
+                color: a.textMuted(0.45),
               ),
-            if (hiddenCount > 0)
-              _MysteryCount(
-                count: hiddenCount,
-                onTap: () => showMedalMysterySheet(context, hiddenCount),
-              ),
-          ],
-        ),
-        if (tiles.isEmpty && hiddenCount > 0) ...[
-          const SizedBox(height: 6),
-          Text(
-            'Revelam-se no caminho — sem dica.',
-            style: AppTypography.body(
-              size: 11,
-              color: a.textMuted(0.42),
             ),
           ),
         ],
       ],
-    );
-  }
-}
-
-class _MysteryCount extends StatelessWidget {
-  final int count;
-  final VoidCallback onTap;
-
-  const _MysteryCount({required this.count, required this.onTap});
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return Material(
-      color: Colors.transparent,
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(AppRadii.pill),
-        child: Container(
-          height: 52,
-          padding: const EdgeInsets.symmetric(horizontal: 14),
-          alignment: Alignment.center,
-          decoration: BoxDecoration(
-            color: Colors.black.withValues(alpha: 0.28),
-            borderRadius: BorderRadius.circular(AppRadii.pill),
-            border: Border.all(color: AppColors.medalMirra.withValues(alpha: 0.35)),
-          ),
-          child: Text(
-            count == 1 ? '1 no véu' : '$count no véu',
-            style: AppTypography.label(
-              size: 10,
-              letterSpacing: 0.8,
-              color: a.textMuted(0.7),
-            ),
-          ),
-        ),
-      ),
     );
   }
 }

@@ -8,12 +8,14 @@ Primeiro gesto em 1–3 sessões (faísca). Próximo passo visível (~20% restan
 
 ## Escadas da jornada
 
+Base comum: **Bronze → Prata → Ouro**. Platina e diamante ficam para marcos futuros.
+
 ### Palavra (`track:word`)
 Medalha mede hábito de leitura (capítulos). Livro concluído não vira medalha.
 
 | Papel | Material | Marco |
 |-------|----------|-------|
-| Faísca | Ferro | 1 capítulo |
+| Faísca | Bronze | 1 capítulo |
 | Conquista | Prata | 25 capítulos |
 | Conquista | Ouro | 100 capítulos |
 
@@ -21,28 +23,29 @@ Medalha mede hábito de leitura (capítulos). Livro concluído não vira medalha
 | Papel | Material | Marco |
 |-------|----------|-------|
 | Faísca | Bronze | 1 cena perfeita |
+| Conquista | Prata | 10 cenas perfeitas |
 | Conquista | Ouro | 25 cenas perfeitas |
 
 ### Caminho (`track:path`)
 | Papel | Material | Marco |
 |-------|----------|-------|
-| Faísca | Ferro | 3 dias |
+| Faísca | Bronze | 3 dias |
+| Conquista | Prata | 14 dias |
 | Conquista | Ouro | 30 dias |
-| Conquista | Platina | 90 dias |
 
 ### Testemunho (`track:witness`)
 | Papel | Material | Marco |
 |-------|----------|-------|
 | Faísca | Bronze | 1 compartilhamento |
-| Conquista | Ouro | 10 |
-| Conquista | Diamante | 50 |
+| Conquista | Prata | 10 |
+| Conquista | Ouro | 50 |
 
 ### Memória (`track:memory`)
 | Papel | Material | Marco |
 |-------|----------|-------|
-| Faísca | Ferro | 1 versículo |
+| Faísca | Bronze | 1 versículo |
 | Conquista | Prata | 15 |
-| Conquista | Platina | 50 |
+| Conquista | Ouro | 50 |
 
 ## Trilha (por slug)
 | Papel | Material | Marco |
@@ -82,7 +85,7 @@ AT/NT e “livro completo” **não** são medalhas.
 ## Princípios
 1. Prefixo consecutivo — nunca pintar ouro sem a faísca.
 2. Um emblema por família (e um por trilha). O emblema **evolui**; não há álbum de moedas do mesmo eixo.
-3. Sheet ao tocar: um emblema + escada em texto. Celebração: o degrau novo e o próximo passo — sem medalha dentro de medalha.
+3. Sheet ao tocar: um emblema + escada Bronze/Prata/Ouro. Celebração: o degrau novo e o próximo passo — sem medalha dentro de medalha.
 4. Near-miss no ponto da ação: uma linha no Hoje e no mapa se faltam ≤3. Celebração: uma linha, não card.
 5. Pioneiro silencioso. Surpresa no fluxo real: Palavra antes da missão.
 6. Medalha não coleciona título bíblico. Palavra mede capítulos.
