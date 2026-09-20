@@ -8,6 +8,7 @@ import 'screens/splash_screen.dart';
 import 'services/backend_service.dart';
 import 'services/companion_service.dart';
 import 'services/content_catalog_service.dart';
+import 'services/corner_service.dart';
 import 'services/league_service.dart';
 import 'services/home_widget_service.dart';
 import 'services/invite_deep_link_service.dart';
@@ -85,6 +86,19 @@ class TrilhaApp extends StatelessWidget {
               companions.markCloudUnsynced();
             }
             return companions;
+          },
+        ),
+        ChangeNotifierProxyProvider<BackendService, CornerService>(
+          create: (ctx) => CornerService(ctx.read<BackendService>())..init(),
+          update: (_, backend, previous) {
+            final corners = previous ?? CornerService(backend);
+            if (backend.isActive && !corners.cloudSynced) {
+              corners.refresh();
+            }
+            if (!backend.isActive) {
+              corners.markCloudUnsynced();
+            }
+            return corners;
           },
         ),
       ],

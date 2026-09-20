@@ -13,6 +13,7 @@ import '../services/backend_service.dart';
 import '../services/bible_service.dart';
 import '../services/bible_study_service.dart';
 import '../services/companion_service.dart';
+import '../services/corner_service.dart';
 import '../services/league_service.dart';
 import '../services/notification_service.dart';
 import '../services/progress_service.dart';
@@ -30,6 +31,7 @@ import '../widgets/immersive_background.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 import '../widgets/user_avatar.dart';
+import '../widgets/portrait_face.dart';
 import 'login_screen.dart';
 import 'paywall_screen.dart';
 import 'onboarding_screen.dart';
@@ -217,68 +219,51 @@ class _SettingsScreenState extends State<SettingsScreen>
           const SizedBox(height: AppSpace.afterTopBar),
         ],
 
-        _reveal(0, _accountBlock(progress, a)),
+        _reveal(0, _identityCard(progress, a)),
         const SizedBox(height: AppSpace.section),
-        _reveal(
-          1,
-          _groupedCard(
-            a,
-            title: 'O ritmo',
-            glyph: CinematicGlyph.target,
-            children: [
-              Text(
-                'Meta de missões por dia.',
-                style: AppTypography.body(
-                  size: 13,
-                  height: 1.35,
-                  color: a.textMuted(0.65),
-                ),
-              ),
-              const SizedBox(height: 12),
-              _RhythmPath(progress: progress),
-            ],
-          ),
-        ),
-        const SizedBox(height: AppSpace.section),
-        _reveal(
-          2,
-          _groupedCard(
-            a,
-            title: 'O olhar',
-            glyph: CinematicGlyph.book,
-            children: [
-              Text(
-                'Gênesis 1–11 · o primeiro caminho',
-                style: AppTypography.body(
-                  size: 13,
-                  height: 1.35,
-                  color: a.textMuted(0.65),
-                ),
-              ),
-              const SizedBox(height: 12),
-              _difficultyPicker(progress),
-            ],
-          ),
-        ),
+        _reveal(1, _membershipCard(a)),
         const SizedBox(height: AppSpace.section),
         _reveal(
           3,
           _groupedCard(
             a,
-            title: 'O céu',
-            glyph: CinematicGlyph.sun,
-            children: [
-              _skyPicker(progress),
-              _SettingsDivider(a),
-              _fieldLabel(a, 'Tamanho do texto'),
-              const SizedBox(height: 10),
-              _fontScalePicker(progress, a),
-            ],
+            title: 'O ritmo',
+            glyph: CinematicGlyph.target,
+            subtitle: 'Quantas missões por dia cabem no seu dia.',
+            children: [_RhythmPath(progress: progress)],
           ),
         ),
         const SizedBox(height: AppSpace.section),
         _reveal(
           4,
+          _groupedCard(
+            a,
+            title: 'O olhar',
+            glyph: CinematicGlyph.book,
+            subtitle: 'Gênesis 1–11 · o primeiro caminho',
+            children: [_difficultyPicker(progress)],
+          ),
+        ),
+        const SizedBox(height: AppSpace.section),
+        _reveal(
+          5,
+          _groupedCard(
+            a,
+            title: 'O céu',
+            glyph: CinematicGlyph.sun,
+            subtitle: 'Luz da tela e tamanho da letra.',
+            children: [
+              _skyPicker(progress),
+              const SizedBox(height: 16),
+              _fieldLabel(a, 'Tamanho do texto'),
+              const SizedBox(height: 10),
+              _fontScalePicker(progress),
+            ],
+          ),
+        ),
+        const SizedBox(height: AppSpace.section),
+        _reveal(
+          6,
           _groupedCard(
             a,
             title: 'Lembretes',
@@ -315,21 +300,13 @@ class _SettingsScreenState extends State<SettingsScreen>
         ),
         const SizedBox(height: AppSpace.section),
         _reveal(
-          5,
+          7,
           _groupedCard(
             a,
             title: 'Privacidade',
             glyph: CinematicGlyph.shield,
+            subtitle: 'O que outros veem no seu card da caravana.',
             children: [
-              Text(
-                'O que outros veem no seu card da caravana.',
-                style: AppTypography.body(
-                  size: 13,
-                  height: 1.35,
-                  color: a.textMuted(0.65),
-                ),
-              ),
-              const SizedBox(height: AppSpace.sm),
               for (var i = 0; i < CaravanProfileSection.values.length; i++) ...[
                 if (i > 0) _SettingsDivider(a, compact: true),
                 _caravanProfileToggle(
@@ -342,124 +319,11 @@ class _SettingsScreenState extends State<SettingsScreen>
           ),
         ),
         const SizedBox(height: AppSpace.section),
-        _reveal(6, _backupBlock(a, sync, progress)),
+        _reveal(8, _backupBlock(a, sync, progress)),
         const SizedBox(height: AppSpace.section),
-        _reveal(7, _aboutBlock(a)),
-
+        _reveal(9, _aboutBlock(a)),
         const SizedBox(height: AppSpace.section),
-        _reveal(
-          10,
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Padding(
-                padding: const EdgeInsets.only(left: 4, bottom: 10),
-                child: SectionLabel(
-                  'Zona de perigo',
-                  color: AppColors.error.withValues(alpha: 0.85),
-                ),
-              ),
-              if (!_confirmReset)
-                Column(
-                  children: [
-                    GhostCta(
-                      label: 'Rever introdução',
-                      leading: CinematicGlyph.scroll,
-                      expanded: true,
-                      onTap: () async {
-                        if (!mounted) return;
-                        await Navigator.of(context).pushAndRemoveUntil(
-                          MaterialPageRoute<void>(
-                            builder: (_) => const OnboardingScreen(),
-                          ),
-                          (_) => false,
-                        );
-                      },
-                    ),
-                    const SizedBox(height: AppSpace.sm),
-                    GhostCta(
-                      label: 'Resetar progresso',
-                      leading: CinematicGlyph.fall,
-                      danger: true,
-                      expanded: true,
-                      onTap: () => setState(() => _confirmReset = true),
-                    ),
-                  ],
-                )
-              else
-                GlassCard(
-                  padding: AppMetrics.cardPadding,
-                  child: Column(
-                    children: [
-                      Text(
-                        'Tem certeza? Todos os passos, dias caminhando e progresso serão apagados. A introdução volta a aparecer.',
-                        style: AppTypography.body(
-                          size: 13,
-                          weight: FontWeight.w700,
-                          color: AppColors.error,
-                          height: 1.35,
-                        ),
-                      ),
-                      const SizedBox(height: AppSpace.md),
-                      Row(
-                        children: [
-                          Expanded(
-                            child: GhostCta(
-                              label: 'Cancelar',
-                              onTap: () =>
-                                  setState(() => _confirmReset = false),
-                            ),
-                          ),
-                          const SizedBox(width: AppSpace.sm),
-                          Expanded(
-                            child: FilledButton(
-                              onPressed: () async {
-                                final backend = context.read<BackendService>();
-                                final league = context.read<LeagueService>();
-                                await progress.resetProgress();
-                                await backend.saveNow(
-                                  progress,
-                                  LeagueService.weekKey(),
-                                  league: league,
-                                );
-                                if (!mounted) return;
-                                setState(() => _confirmReset = false);
-                                await Navigator.of(context).pushAndRemoveUntil(
-                                  MaterialPageRoute<void>(
-                                    builder: (_) => const OnboardingScreen(),
-                                  ),
-                                  (_) => false,
-                                );
-                              },
-                              style: FilledButton.styleFrom(
-                                backgroundColor: AppColors.error,
-                                foregroundColor: Colors.white,
-                                padding: const EdgeInsets.symmetric(
-                                  vertical: 14,
-                                ),
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(
-                                    AppRadii.md,
-                                  ),
-                                ),
-                              ),
-                              child: Text(
-                                'Confirmar',
-                                style: AppTypography.cta(
-                                  size: 13,
-                                  color: Colors.white,
-                                ),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-            ],
-          ),
-        ),
+        _reveal(10, _dangerBlock(a, progress)),
         const SizedBox(height: 8),
       ],
     );
@@ -492,7 +356,7 @@ class _SettingsScreenState extends State<SettingsScreen>
     HapticFeedback.lightImpact();
   }
 
-  Widget _fontScalePicker(ProgressService progress, AppearanceStyle a) {
+  Widget _fontScalePicker(ProgressService progress) {
     const steps = <(double, String)>[
       (0.9, 'Peq.'),
       (1.0, 'Médio'),
@@ -501,55 +365,19 @@ class _SettingsScreenState extends State<SettingsScreen>
     ];
     final current = progress.settings.fontScale;
 
-    return Row(
-      children: [
-        for (var i = 0; i < steps.length; i++) ...[
-          if (i > 0) const SizedBox(width: AppSpace.sm),
-          Expanded(
-            child: Builder(
-              builder: (context) {
-                final (scale, label) = steps[i];
-                final selected = (current - scale).abs() < 0.01;
-                return AppChoiceTile(
-                  selected: selected,
-                  onTap: () {
-                    HapticFeedback.selectionClick();
-                    progress.updateSettings(
-                      progress.settings.copyWith(fontScale: scale),
-                    );
-                  },
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Text(
-                        'A',
-                        style: AppTypography.title(
-                          size: 12 + (scale * 6),
-                          weight: FontWeight.w900,
-                          height: 1,
-                          color: selected
-                              ? AppColors.inkOnAccent
-                              : a.textMuted(0.85),
-                        ),
-                      ),
-                      const SizedBox(height: 2),
-                      Text(
-                        label,
-                        style: AppTypography.label(
-                          size: 9,
-                          letterSpacing: 0.3,
-                          color: selected
-                              ? AppColors.inkOnAccent.withValues(alpha: 0.8)
-                              : a.textMuted(0.55),
-                        ),
-                      ),
-                    ],
-                  ),
-                );
-              },
-            ),
+    return _SegmentTrack(
+      items: [
+        for (final step in steps)
+          (
+            label: step.$2,
+            selected: (current - step.$1).abs() < 0.01,
+            onTap: () {
+              HapticFeedback.selectionClick();
+              progress.updateSettings(
+                progress.settings.copyWith(fontScale: step.$1),
+              );
+            },
           ),
-        ],
       ],
     );
   }
@@ -648,97 +476,185 @@ class _SettingsScreenState extends State<SettingsScreen>
 
   Widget _skyPicker(ProgressService progress) {
     final selected = progress.settings.appearanceMode;
+    final modes = AppearanceMode.values;
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        for (final mode in AppearanceMode.values) ...[
-          if (mode.index > 0) const SizedBox(height: 8),
-          _SkyStation(
-            mode: mode,
-            selected: selected == mode,
-            onTap: () {
-              HapticFeedback.selectionClick();
-              progress.updateSettings(
-                progress.settings.copyWith(appearanceMode: mode),
-              );
-            },
+        for (var row = 0; row < 2; row++) ...[
+          if (row > 0) const SizedBox(height: 8),
+          Row(
+            children: [
+              for (var col = 0; col < 2; col++) ...[
+                if (col > 0) const SizedBox(width: 8),
+                Expanded(
+                  child: _SkyStation(
+                    mode: modes[row * 2 + col],
+                    selected: selected == modes[row * 2 + col],
+                    onTap: () {
+                      HapticFeedback.selectionClick();
+                      progress.updateSettings(
+                        progress.settings.copyWith(
+                          appearanceMode: modes[row * 2 + col],
+                        ),
+                      );
+                    },
+                  ),
+                ),
+              ],
+            ],
           ),
         ],
       ],
     );
   }
 
-  Widget _cloudCard(AppearanceStyle a) {
+  Widget _identityCard(ProgressService progress, AppearanceStyle a) {
     final backend = context.watch<BackendService>();
-    final signedIn = backend.isSignedIn;
-    final providerLabel = backend.isAppleSignedIn
-        ? 'Conta Apple conectada'
-        : backend.isGoogleSignedIn
-        ? 'Conta Google conectada'
-        : 'Conta desconectada';
+    return GlassCard(
+      elevated: true,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          CardHeader(
+            label: 'Você',
+            glyph: CinematicGlyph.humanity,
+            accent: a.sectionLabel,
+            trailing: backend.isSignedIn
+                ? GestureDetector(
+                    onTap: backend.isGoogleBusy
+                        ? null
+                        : () => _signOutGoogle(backend),
+                    child: Text(
+                      'Sair',
+                      style: AppTypography.body(
+                        size: 13,
+                        weight: FontWeight.w800,
+                        color: a.textMuted(0.72),
+                      ),
+                    ),
+                  )
+                : null,
+          ),
+          const SizedBox(height: 16),
+          _ProfileHeader(
+            a: a,
+            nameController: _nameController,
+            nameDirty: _nameDirty,
+            photoUrl: backend.userPhotoUrl,
+            seed: backend.uid,
+            portraitStyle: progress.settings.portraitStyle,
+            hasPhoto: PortraitFace.isUsablePhotoUrl(backend.userPhotoUrl),
+            onPortraitStyle: (style) {
+              HapticFeedback.selectionClick();
+              progress.updateSettings(
+                progress.settings.copyWith(portraitStyle: style),
+              );
+            },
+            onSaveName: () => _saveName(progress),
+          ),
+          _SettingsDivider(a),
+          _sessionBlock(a, backend),
+        ],
+      ),
+    );
+  }
 
+  Widget _sessionBlock(AppearanceStyle a, BackendService backend) {
+    final signedIn = backend.isSignedIn;
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Row(
-          children: [
-            Container(
-              width: 8,
-              height: 8,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: signedIn ? AppColors.teal : a.textMuted(0.4),
-              ),
-            ),
-            const SizedBox(width: 8),
-            Expanded(
-              child: Text(
-                providerLabel,
-                style: AppTypography.title(size: 14, color: a.text),
-              ),
-            ),
-          ],
-        ),
-        const SizedBox(height: AppSpace.xs),
         Text(
           signedIn
               ? (backend.userEmail ??
-                    'Progresso sincronizado automaticamente com a nuvem.')
-              : 'Faça login novamente para sincronizar a nuvem.',
-          style: AppTypography.body(
-            size: 12,
-            height: 1.35,
-            color: a.textMuted(0.78),
-          ),
+                    backend.userDisplayName ??
+                    'Progresso na nuvem')
+              : 'Entre de novo para sincronizar o caminho.',
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          style: AppTypography.body(size: 12, color: a.textMuted(0.68)),
         ),
-        if (signedIn && backend.userDisplayName != null) ...[
-          const SizedBox(height: AppSpace.xs),
-          Text(
-            backend.userDisplayName!,
-            style: AppTypography.body(
-              size: 13,
-              weight: FontWeight.w700,
-              color: a.text,
-            ),
-          ),
-        ],
-        if (signedIn) ...[
-          const SizedBox(height: AppSpace.md),
-          GhostCta(
-            label: 'Sair da conta',
-            leading: CinematicGlyph.lock,
-            expanded: true,
-            onTap: backend.isGoogleBusy ? null : () => _signOutGoogle(backend),
-          ),
-        ],
         if (backend.isActive && backend.lastCloudSaveAt != null) ...[
-          const SizedBox(height: AppSpace.sm),
+          const SizedBox(height: 8),
           Text(
             'Última sync · ${_shortDate(backend.lastCloudSaveAt!)}',
-            style: AppTypography.body(size: 11, color: a.textMuted(0.55)),
+            style: AppTypography.body(size: 11, color: a.textMuted(0.5)),
           ),
         ],
       ],
+    );
+  }
+
+  Widget _membershipCard(AppearanceStyle a) {
+    final plus = context.watch<SubscriptionService>().isPeregrinoPlus;
+    return GlassCard(
+      elevated: plus,
+      accent: plus,
+      onTap: () => Navigator.push(
+        context,
+        MaterialPageRoute<void>(builder: (_) => const PaywallScreen()),
+      ),
+      child: Stack(
+        children: [
+          if (plus)
+            const Positioned.fill(
+              child: IgnorePointer(
+                child: Opacity(
+                  opacity: 0.22,
+                  child: HeroCardAtmosphere(mood: HeroCardMood.alive),
+                ),
+              ),
+            ),
+          Row(
+            children: [
+              CinematicIcon(
+                glyph: CinematicGlyph.crown,
+                size: 44,
+                accent: AppColors.accent,
+                glowing: plus,
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      'Peregrino+',
+                      style: AppTypography.title(size: 16, color: a.text),
+                    ),
+                    const SizedBox(height: 2),
+                    Text(
+                      plus
+                          ? 'Assinatura ativa · mais espaço na companhia'
+                          : 'Mais espaço para companhia no caminho',
+                      style: AppTypography.body(
+                        size: 12,
+                        height: 1.3,
+                        color: a.textMuted(0.65),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(width: 8),
+              if (plus)
+                const SoftBadge(
+                  text: 'Ativo',
+                  glyph: CinematicGlyph.check,
+                  accent: AppColors.accent,
+                )
+              else
+                Text(
+                  'Ver',
+                  style: AppTypography.body(
+                    size: 13,
+                    weight: FontWeight.w800,
+                    color: AppColors.accent,
+                  ),
+                ),
+            ],
+          ),
+        ],
+      ),
     );
   }
 
@@ -761,6 +677,8 @@ class _SettingsScreenState extends State<SettingsScreen>
     await prefs.remove('activeRoomCode');
     if (!mounted) return;
     context.read<CompanionService>().markCloudUnsynced();
+    if (!mounted) return;
+    context.read<CornerService>().markCloudUnsynced();
     if (!mounted) return;
     Navigator.of(context, rootNavigator: true).pushAndRemoveUntil(
       PageRouteBuilder(
@@ -902,6 +820,7 @@ class _SettingsScreenState extends State<SettingsScreen>
     required String title,
     required CinematicGlyph glyph,
     required List<Widget> children,
+    String? subtitle,
     Color? accent,
   }) {
     return GlassCard(
@@ -914,128 +833,125 @@ class _SettingsScreenState extends State<SettingsScreen>
             glyph: glyph,
             accent: accent ?? a.sectionLabel,
           ),
-          const SizedBox(height: 12),
+          if (subtitle != null) ...[
+            const SizedBox(height: 6),
+            Text(
+              subtitle,
+              style: AppTypography.body(
+                size: 13,
+                height: 1.35,
+                color: a.textMuted(0.62),
+              ),
+            ),
+          ],
+          const SizedBox(height: 14),
           ...children,
         ],
       ),
     );
   }
 
-  Widget _accountBlock(ProgressService progress, AppearanceStyle a) {
-    final subscription = context.watch<SubscriptionService>();
-    final backend = context.watch<BackendService>();
-    final plus = subscription.isPeregrinoPlus;
-
+  Widget _dangerBlock(AppearanceStyle a, ProgressService progress) {
     return GlassCard(
-      elevated: plus,
-      accent: plus,
-      child: Stack(
+      tint: AppColors.error,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          if (plus)
-            const Positioned.fill(
-              child: IgnorePointer(
-                child: Opacity(
-                  opacity: 0.22,
-                  child: HeroCardAtmosphere(mood: HeroCardMood.alive),
-                ),
+          const CardHeader(
+            label: 'Zona de perigo',
+            glyph: CinematicGlyph.fall,
+            accent: AppColors.error,
+          ),
+          const SizedBox(height: 6),
+          Text(
+            'Ações que não dá para desfazer.',
+            style: AppTypography.body(
+              size: 13,
+              height: 1.35,
+              color: a.textMuted(0.62),
+            ),
+          ),
+          const SizedBox(height: 14),
+          if (!_confirmReset) ...[
+            GhostCta(
+              label: 'Rever introdução',
+              leading: CinematicGlyph.scroll,
+              expanded: true,
+              onTap: () async {
+                if (!mounted) return;
+                await Navigator.of(context).pushAndRemoveUntil(
+                  MaterialPageRoute<void>(
+                    builder: (_) => const OnboardingScreen(),
+                  ),
+                  (_) => false,
+                );
+              },
+            ),
+            const SizedBox(height: AppSpace.sm),
+            GhostCta(
+              label: 'Resetar progresso',
+              leading: CinematicGlyph.fall,
+              danger: true,
+              expanded: true,
+              onTap: () => setState(() => _confirmReset = true),
+            ),
+          ] else ...[
+            Text(
+              'Tem certeza? Todos os passos, dias caminhando e progresso serão apagados. A introdução volta a aparecer.',
+              style: AppTypography.body(
+                size: 13,
+                weight: FontWeight.w700,
+                color: AppColors.error,
+                height: 1.35,
               ),
             ),
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              _ProfileHeader(
-                a: a,
-                nameController: _nameController,
-                nameDirty: _nameDirty,
-                photoUrl: backend.userPhotoUrl,
-                onSaveName: () => _saveName(progress),
-              ),
-              const SizedBox(height: 14),
-              _cloudCard(a),
-              const SizedBox(height: 12),
-              Material(
-                color: Colors.transparent,
-                child: InkWell(
-                  onTap: () => Navigator.push(
-                    context,
-                    MaterialPageRoute<void>(
-                      builder: (_) => const PaywallScreen(),
-                    ),
+            const SizedBox(height: AppSpace.md),
+            Row(
+              children: [
+                Expanded(
+                  child: GhostCta(
+                    label: 'Cancelar',
+                    onTap: () => setState(() => _confirmReset = false),
                   ),
-                  borderRadius: BorderRadius.circular(AppRadii.md),
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 12,
-                      vertical: 12,
-                    ),
-                    decoration: BoxDecoration(
-                      gradient: plus ? AppGradients.gold : null,
-                      color: plus
-                          ? null
-                          : AppColors.accent.withValues(alpha: 0.12),
-                      borderRadius: BorderRadius.circular(AppRadii.md),
-                      border: Border.all(
-                        color: plus
-                            ? Colors.white.withValues(alpha: 0.45)
-                            : AppColors.accent.withValues(alpha: 0.55),
+                ),
+                const SizedBox(width: AppSpace.sm),
+                Expanded(
+                  child: FilledButton(
+                    onPressed: () async {
+                      final backend = context.read<BackendService>();
+                      final league = context.read<LeagueService>();
+                      await progress.resetProgress();
+                      await backend.saveNow(
+                        progress,
+                        LeagueService.weekKey(),
+                        league: league,
+                      );
+                      if (!mounted) return;
+                      setState(() => _confirmReset = false);
+                      await Navigator.of(context).pushAndRemoveUntil(
+                        MaterialPageRoute<void>(
+                          builder: (_) => const OnboardingScreen(),
+                        ),
+                        (_) => false,
+                      );
+                    },
+                    style: FilledButton.styleFrom(
+                      backgroundColor: AppColors.error,
+                      foregroundColor: Colors.white,
+                      padding: const EdgeInsets.symmetric(vertical: 14),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(AppRadii.md),
                       ),
-                      boxShadow: plus ? AppMetrics.accentGlow() : null,
                     ),
-                    child: Row(
-                      children: [
-                        CinematicIcon(
-                          glyph: CinematicGlyph.crown,
-                          size: 36,
-                          accent: plus
-                              ? AppColors.inkOnAccent
-                              : AppColors.accent,
-                          glowing: false,
-                        ),
-                        const SizedBox(width: 12),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Peregrino+',
-                                style: AppTypography.title(
-                                  size: 15,
-                                  color: plus ? AppColors.inkOnAccent : a.text,
-                                ),
-                              ),
-                              Text(
-                                plus
-                                    ? 'Assinatura ativa'
-                                    : 'Mais espaço para companhia',
-                                style: AppTypography.body(
-                                  size: 12,
-                                  color: plus
-                                      ? AppColors.inkOnAccent.withValues(
-                                          alpha: 0.75,
-                                        )
-                                      : a.textMuted(0.65),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        Text(
-                          plus ? 'Ativo' : 'Ver',
-                          style: AppTypography.body(
-                            size: 13,
-                            weight: FontWeight.w800,
-                            color: plus
-                                ? AppColors.inkOnAccent
-                                : AppColors.accent,
-                          ),
-                        ),
-                      ],
+                    child: Text(
+                      'Confirmar',
+                      style: AppTypography.cta(size: 13, color: Colors.white),
                     ),
                   ),
                 ),
-              ),
-            ],
-          ),
+              ],
+            ),
+          ],
         ],
       ),
     );
@@ -1050,40 +966,33 @@ class _SettingsScreenState extends State<SettingsScreen>
       a,
       title: 'Dados',
       glyph: CinematicGlyph.copy,
+      subtitle: 'Exporte um backup ou cole um da área de transferência.',
       children: [
-        Text(
-          'Exporte um backup ou importe da área de transferência.',
-          style: AppTypography.body(
-            size: 13,
-            height: 1.35,
-            color: a.textMuted(0.65),
-          ),
-        ),
-        if (sync.deviceId != null) ...[
-          const SizedBox(height: AppSpace.sm),
-          Text(
-            'Dispositivo · ${sync.deviceId}',
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            style: AppTypography.body(
-              size: 11,
-              weight: FontWeight.w600,
-              color: a.textMuted(0.5),
+        if (sync.deviceId != null || sync.lastSyncAt != null) ...[
+          if (sync.deviceId != null)
+            Text(
+              'Dispositivo · ${sync.deviceId}',
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: AppTypography.body(
+                size: 11,
+                weight: FontWeight.w600,
+                color: a.textMuted(0.5),
+              ),
             ),
-          ),
-        ],
-        if (sync.lastSyncAt != null) ...[
-          const SizedBox(height: 2),
-          Text(
-            'Último backup · ${_shortDate(sync.lastSyncAt!)}',
-            style: AppTypography.body(
-              size: 11,
-              weight: FontWeight.w600,
-              color: a.textMuted(0.5),
+          if (sync.lastSyncAt != null) ...[
+            if (sync.deviceId != null) const SizedBox(height: 2),
+            Text(
+              'Último backup · ${_shortDate(sync.lastSyncAt!)}',
+              style: AppTypography.body(
+                size: 11,
+                weight: FontWeight.w600,
+                color: a.textMuted(0.5),
+              ),
             ),
-          ),
+          ],
+          const SizedBox(height: AppSpace.md),
         ],
-        const SizedBox(height: AppSpace.md),
         Row(
           children: [
             Expanded(
@@ -1112,30 +1021,32 @@ class _SettingsScreenState extends State<SettingsScreen>
       a,
       title: 'Sobre',
       glyph: CinematicGlyph.spark,
+      subtitle: 'Aprenda a Bíblia em missões curtas, no seu ritmo.',
       children: [
-        Text(
-          'Aprenda a Bíblia em missões curtas, no seu ritmo.',
-          style: AppTypography.body(
-            size: 13,
-            height: 1.4,
-            color: a.textMuted(0.65),
-          ),
-        ),
-        const SizedBox(height: AppSpace.md),
-        Text(
-          _versionLabel == null ? 'Versão…' : 'Versão $_versionLabel',
-          style: AppTypography.body(
-            size: 13,
-            weight: FontWeight.w700,
-            color: a.text.withValues(alpha: 0.9),
-          ),
-        ),
-        const SizedBox(height: AppSpace.sm),
-        GhostCta(
-          label: _checkingUpdate ? 'Verificando…' : 'Verificar atualizações',
-          leading: CinematicGlyph.rise,
-          expanded: true,
-          onTap: _checkingUpdate ? null : _checkForUpdates,
+        Row(
+          children: [
+            Expanded(
+              child: Text(
+                _versionLabel == null ? 'Versão…' : 'Versão $_versionLabel',
+                style: AppTypography.body(
+                  size: 13,
+                  weight: FontWeight.w700,
+                  color: a.text.withValues(alpha: 0.9),
+                ),
+              ),
+            ),
+            GestureDetector(
+              onTap: _checkingUpdate ? null : _checkForUpdates,
+              child: Text(
+                _checkingUpdate ? 'Verificando…' : 'Atualizar',
+                style: AppTypography.body(
+                  size: 13,
+                  weight: FontWeight.w800,
+                  color: _checkingUpdate ? a.textMuted(0.45) : AppColors.accent,
+                ),
+              ),
+            ),
+          ],
         ),
         const SizedBox(height: AppSpace.md),
         Text(
@@ -1208,6 +1119,10 @@ class _ProfileHeader extends StatelessWidget {
   final TextEditingController nameController;
   final bool nameDirty;
   final String? photoUrl;
+  final String? seed;
+  final PortraitStyle portraitStyle;
+  final bool hasPhoto;
+  final ValueChanged<PortraitStyle> onPortraitStyle;
   final VoidCallback onSaveName;
 
   const _ProfileHeader({
@@ -1215,74 +1130,173 @@ class _ProfileHeader extends StatelessWidget {
     required this.nameController,
     required this.nameDirty,
     required this.onSaveName,
+    required this.portraitStyle,
+    required this.hasPhoto,
+    required this.onPortraitStyle,
     this.photoUrl,
+    this.seed,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.center,
+    final name = nameController.text;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        UserAvatar(
-          name: nameController.text,
-          photoUrl: photoUrl,
-          radius: 28,
-          borderColor: AppColors.accent.withValues(alpha: 0.55),
+        Center(
+          child: UserAvatar(
+            name: name,
+            photoUrl: photoUrl,
+            seed: seed,
+            style: portraitStyle,
+            radius: 40,
+            borderColor: AppColors.accent.withValues(alpha: 0.7),
+          ),
         ),
-        const SizedBox(width: 14),
-        Expanded(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+        const SizedBox(height: 16),
+        Text(
+          'Como te chamamos',
+          style: AppTypography.label(
+            size: 10,
+            letterSpacing: 0.8,
+            color: a.textMuted(0.55),
+          ),
+        ),
+        const SizedBox(height: 8),
+        Container(
+          padding: const EdgeInsets.fromLTRB(14, 4, 8, 4),
+          decoration: BoxDecoration(
+            color: a.cardFillSoft,
+            borderRadius: BorderRadius.circular(AppRadii.md),
+            border: Border.all(color: a.cardBorder),
+          ),
+          child: Row(
             children: [
-              Text(
-                'Como te chamamos',
-                style: AppTypography.label(
-                  size: 10,
-                  letterSpacing: 0.8,
-                  color: a.textMuted(0.55),
+              Expanded(
+                child: TextField(
+                  controller: nameController,
+                  maxLength: 24,
+                  textInputAction: TextInputAction.done,
+                  onSubmitted: (_) => onSaveName(),
+                  cursorColor: AppColors.accent,
+                  style: AppTypography.title(size: 18, color: a.text),
+                  decoration: InputDecoration(
+                    counterText: '',
+                    hintText: 'Seu nome no caminho',
+                    hintStyle: AppTypography.title(
+                      size: 18,
+                      color: a.textMuted(0.35),
+                    ),
+                    isDense: true,
+                    contentPadding: const EdgeInsets.symmetric(vertical: 10),
+                    border: InputBorder.none,
+                    enabledBorder: InputBorder.none,
+                    focusedBorder: InputBorder.none,
+                  ),
                 ),
               ),
-              TextField(
-                controller: nameController,
-                maxLength: 24,
-                textInputAction: TextInputAction.done,
-                onSubmitted: (_) => onSaveName(),
-                style: AppTypography.title(size: 20, color: a.text),
-                decoration: InputDecoration(
-                  counterText: '',
-                  hintText: 'Seu nome no caminho',
-                  hintStyle: AppTypography.title(
-                    size: 20,
-                    color: a.textMuted(0.35),
+              if (nameDirty)
+                GestureDetector(
+                  onTap: onSaveName,
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 8,
+                      vertical: 8,
+                    ),
+                    child: Text(
+                      'Salvar',
+                      style: AppTypography.body(
+                        size: 13,
+                        weight: FontWeight.w800,
+                        color: AppColors.accent,
+                      ),
+                    ),
                   ),
-                  isDense: true,
-                  contentPadding: const EdgeInsets.symmetric(vertical: 4),
-                  suffixIcon: nameDirty
-                      ? IconButton(
-                          onPressed: onSaveName,
-                          icon: const CinematicIcon(
-                            glyph: CinematicGlyph.check,
-                            size: 20,
-                            accent: AppColors.accent,
-                            framed: false,
-                          ),
-                          color: AppColors.accent,
-                          tooltip: 'Salvar',
-                        )
-                      : null,
-                  suffixIconConstraints: const BoxConstraints(
-                    minWidth: 32,
-                    minHeight: 32,
-                  ),
-                  border: InputBorder.none,
-                  enabledBorder: InputBorder.none,
-                  focusedBorder: InputBorder.none,
                 ),
-              ),
             ],
           ),
         ),
+        const SizedBox(height: 16),
+        Text(
+          'Retrato',
+          style: AppTypography.label(
+            size: 10,
+            letterSpacing: 0.8,
+            color: a.textMuted(0.55),
+          ),
+        ),
+        const SizedBox(height: 8),
+        _SegmentTrack(
+          items: [
+            for (final style in PortraitStyle.values)
+              (
+                label: style.label,
+                selected: portraitStyle == style,
+                onTap: () => onPortraitStyle(style),
+              ),
+          ],
+        ),
+        if (portraitStyle == PortraitStyle.photo && !hasPhoto) ...[
+          const SizedBox(height: 10),
+          Text(
+            'Esta conta não tem retrato — o avatar entra no lugar da foto.',
+            style: AppTypography.body(size: 12, color: a.textMuted(0.55)),
+          ),
+        ],
       ],
+    );
+  }
+}
+
+class _SegmentTrack extends StatelessWidget {
+  final List<({String label, bool selected, VoidCallback onTap})> items;
+
+  const _SegmentTrack({required this.items});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Container(
+      padding: const EdgeInsets.all(4),
+      decoration: BoxDecoration(
+        color: a.cardFillSoft,
+        borderRadius: BorderRadius.circular(AppRadii.md),
+        border: Border.all(color: a.cardBorder.withValues(alpha: 0.75)),
+      ),
+      child: Row(
+        children: [
+          for (final item in items)
+            Expanded(
+              child: GestureDetector(
+                onTap: item.onTap,
+                child: AnimatedContainer(
+                  duration: const Duration(milliseconds: 180),
+                  curve: Curves.easeOutCubic,
+                  padding: const EdgeInsets.symmetric(vertical: 10),
+                  decoration: BoxDecoration(
+                    color: item.selected
+                        ? AppColors.accent
+                        : Colors.transparent,
+                    borderRadius: BorderRadius.circular(AppRadii.sm),
+                  ),
+                  child: Text(
+                    item.label,
+                    textAlign: TextAlign.center,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: AppTypography.label(
+                      size: 11,
+                      letterSpacing: 0.4,
+                      color: item.selected
+                          ? AppColors.inkOnAccent
+                          : a.textMuted(0.68),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+        ],
+      ),
     );
   }
 }
@@ -1350,9 +1364,7 @@ class _RhythmStation extends StatelessWidget {
         curve: Curves.easeOutCubic,
         padding: const EdgeInsets.fromLTRB(12, 12, 12, 12),
         decoration: BoxDecoration(
-          color: selected
-              ? AppMetrics.accentFill(alpha: 0.22)
-              : a.cardFillSoft,
+          color: selected ? AppMetrics.accentFill(alpha: 0.22) : a.cardFillSoft,
           borderRadius: BorderRadius.circular(AppRadii.md),
           border: Border.all(
             color: selected
@@ -1369,13 +1381,9 @@ class _RhythmStation extends StatelessWidget {
               alignment: Alignment.center,
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: selected
-                    ? AppColors.accent
-                    : a.cardFill,
+                color: selected ? AppColors.accent : a.cardFill,
                 border: Border.all(
-                  color: selected
-                      ? AppColors.accent
-                      : a.cardBorder,
+                  color: selected ? AppColors.accent : a.cardBorder,
                 ),
               ),
               child: Text(
@@ -1596,44 +1604,32 @@ class _SkyStation extends StatelessWidget {
             width: selected ? 1.75 : 1.25,
           ),
         ),
-        child: Row(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             CinematicIcon(
               glyph: mode.glyph,
-              size: 40,
+              size: 32,
               accent: accent,
               glowing: false,
             ),
-            const SizedBox(width: 12),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    mode.label,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: AppTypography.title(size: 16, color: a.text),
-                  ),
-                  const SizedBox(height: 2),
-                  Text(
-                    _caption,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: AppTypography.body(
-                      size: 12,
-                      color: a.textMuted(selected ? 0.78 : 0.58),
-                    ),
-                  ),
-                ],
+            const SizedBox(height: 8),
+            Text(
+              mode.label,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: AppTypography.title(size: 14, color: a.text),
+            ),
+            const SizedBox(height: 2),
+            Text(
+              _caption,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: AppTypography.body(
+                size: 11,
+                color: a.textMuted(selected ? 0.78 : 0.58),
               ),
             ),
-            if (selected)
-              SoftBadge(
-                text: 'Atual',
-                glyph: CinematicGlyph.check,
-                accent: accent,
-              ),
           ],
         ),
       ),

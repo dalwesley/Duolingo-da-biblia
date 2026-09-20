@@ -111,6 +111,7 @@ Future<CaravanPilgrimProfile> loadEnrichedVisitorProfile({
     steps: entry.steps,
     lastWalkDate: entry.lastWalkDate,
     lastSeenDate: entry.lastSeenDate,
+    photoUrl: entry.photoUrl,
   );
 
   final uid = entry.uid?.trim();
@@ -123,6 +124,7 @@ Future<CaravanPilgrimProfile> loadEnrichedVisitorProfile({
             uid: uid,
             data: result.data!,
             fallbackName: entry.name,
+            fallbackPhotoUrl: entry.photoUrl,
           );
         } catch (e, st) {
           debugPrint('Perfil da caravana: mapa inválido ($uid): $e\n$st');

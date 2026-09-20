@@ -8,6 +8,7 @@ import 'package:google_sign_in/google_sign_in.dart';
 import '../firebase_options.dart';
 import '../models/study_room.dart';
 import '../models/walk_companion.dart';
+import '../models/portrait_style.dart';
 import 'analytics_service.dart';
 import 'league_service.dart';
 import 'progress_service.dart';
@@ -19,6 +20,8 @@ class CloudPlayer {
   final int steps;
   final String? lastWalkDate;
   final String? lastSeenDate;
+  final String? photoUrl;
+  final PortraitStyle portraitStyle;
 
   const CloudPlayer({
     required this.uid,
@@ -26,7 +29,37 @@ class CloudPlayer {
     required this.steps,
     this.lastWalkDate,
     this.lastSeenDate,
+    this.photoUrl,
+    this.portraitStyle = PortraitStyle.photo,
   });
+
+  CloudPlayer withPhoto(String? url) {
+    if (url == null || url.isEmpty) return this;
+    if (photoUrl != null && photoUrl!.isNotEmpty) return this;
+    return CloudPlayer(
+      uid: uid,
+      name: name,
+      steps: steps,
+      lastWalkDate: lastWalkDate,
+      lastSeenDate: lastSeenDate,
+      photoUrl: url,
+      portraitStyle: portraitStyle,
+    );
+  }
+
+  CloudPlayer withStyle(PortraitStyle? style) {
+    if (style == null) return this;
+    if (portraitStyle != PortraitStyle.photo) return this;
+    return CloudPlayer(
+      uid: uid,
+      name: name,
+      steps: steps,
+      lastWalkDate: lastWalkDate,
+      lastSeenDate: lastSeenDate,
+      photoUrl: photoUrl,
+      portraitStyle: style,
+    );
+  }
 }
 
 /// Resultado de uma tentativa de login (Google ou Apple).
@@ -228,6 +261,24 @@ class BackendService extends ChangeNotifier {
       }
     }
 
+    if (_googleBusy) {
+      _authLog('signIn ignored: already busy');
+      return const GoogleSignInResult(
+        ok: false,
+        error: 'Login em andamento.',
+      );
+    }
+
+    if (isGoogleSignedIn) {
+      final user = currentUser;
+      _authLog('already signed in uid=${user?.uid} — skip authenticate');
+      return AuthSignInResult(
+        ok: true,
+        displayName: user?.displayName,
+        email: user?.email,
+      );
+    }
+
     _googleBusy = true;
     lastError = null;
     notifyListeners();
@@ -344,6 +395,21 @@ class BackendService extends ChangeNotifier {
         _authLog('abort Apple: Firebase not ready → $err');
         return AuthSignInResult(ok: false, error: err);
       }
+    }
+
+    if (_googleBusy) {
+      _authLog('Apple signIn ignored: already busy');
+      return const AuthSignInResult(ok: false, error: 'Login em andamento.');
+    }
+
+    if (isAppleSignedIn) {
+      final user = currentUser;
+      _authLog('already signed in with Apple uid=${user?.uid} — skip');
+      return AuthSignInResult(
+        ok: true,
+        displayName: user?.displayName,
+        email: user?.email,
+      );
     }
 
     _googleBusy = true;
@@ -514,6 +580,21 @@ class BackendService extends ChangeNotifier {
     return a.compareTo(b) >= 0 ? a : b;
   }
 
+  static String? _readPhotoUrl(Map<String, dynamic> data) {
+    final raw = (data['photoUrl'] as String?)?.trim();
+    return (raw != null && raw.isNotEmpty) ? raw : null;
+  }
+
+  static PortraitStyle? _readPortraitStyle(Map<String, dynamic> data) {
+    final top = PortraitStyleX.tryParse(data['portraitStyle'] as String?);
+    if (top != null) return top;
+    final settings = data['settings'];
+    if (settings is Map) {
+      return PortraitStyleX.tryParse(settings['portraitStyle'] as String?);
+    }
+    return null;
+  }
+
   static String? _readActivityDate(Map<String, dynamic> data, String key) {
     final raw = (data[key] as String?)?.trim();
     if (raw != null && raw.isNotEmpty) return raw;
@@ -641,11 +722,13 @@ class BackendService extends ChangeNotifier {
     final rankingMonth = progress.monthlyMonth ?? LeagueService.monthKey();
     final today = _todayKey();
     final tier = (league?.tierIndex ?? 0).clamp(0, 4);
+    final portraitStyle = progress.settings.portraitStyle;
     final weeklyPayload = _rankingPayload(
       name: progress.userName,
       score: progress.weeklySteps,
       lastWalkDate: progress.lastPlayedDate,
       lastSeenDate: today,
+      portraitStyle: portraitStyle,
       extra: {'tier': tier},
     );
     await _putRankingDoc(
@@ -670,6 +753,7 @@ class BackendService extends ChangeNotifier {
         score: progress.monthlySteps,
         lastWalkDate: progress.lastPlayedDate,
         lastSeenDate: today,
+        portraitStyle: portraitStyle,
       ),
     );
     await _putRankingDoc(
@@ -679,6 +763,7 @@ class BackendService extends ChangeNotifier {
         score: progress.steps,
         lastWalkDate: progress.lastPlayedDate,
         lastSeenDate: today,
+        portraitStyle: portraitStyle,
       ),
     );
     final effectiveRoom = roomCode ?? progress.activeRoomCode;
@@ -691,6 +776,7 @@ class BackendService extends ChangeNotifier {
             score: progress.weeklySteps,
             lastWalkDate: progress.lastPlayedDate,
             lastSeenDate: today,
+            portraitStyle: portraitStyle,
             extra: {'lastWalk': today},
           ),
         },
@@ -714,14 +800,18 @@ class BackendService extends ChangeNotifier {
     required int score,
     required String? lastWalkDate,
     required String lastSeenDate,
+    PortraitStyle portraitStyle = PortraitStyle.photo,
     Map<String, dynamic> extra = const {},
   }) {
+    final photo = currentUser?.photoURL?.trim();
     return {
       'name': name,
       'xp': score,
       'steps': score,
       'lastWalkDate': lastWalkDate,
       'lastSeenDate': lastSeenDate,
+      if (photo != null && photo.isNotEmpty) 'photoUrl': photo,
+      'portraitStyle': portraitStyle.storageKey,
       'updatedAt': FieldValue.serverTimestamp(),
       ...extra,
     };
@@ -1066,6 +1156,9 @@ class BackendService extends ChangeNotifier {
             steps: (d.data()['xp'] as num?)?.toInt() ?? 0,
             isUser: d.id == _uid,
             lastWalk: d.data()['lastWalk'] as String?,
+            photoUrl: _readPhotoUrl(d.data()),
+            portraitStyle:
+                _readPortraitStyle(d.data()) ?? PortraitStyle.photo,
           ),
       ];
     } catch (e) {
@@ -1132,11 +1225,14 @@ class BackendService extends ChangeNotifier {
     void put(CloudPlayer p) {
       final prev = byUid[p.uid];
       if (prev == null || p.steps > prev.steps) {
-        byUid[p.uid] = p;
+        byUid[p.uid] =
+            p.withPhoto(prev?.photoUrl).withStyle(prev?.portraitStyle);
       } else if (prev.steps == p.steps &&
           ProgressService.isPlaceholderUserName(prev.name) &&
           !ProgressService.isPlaceholderUserName(p.name)) {
-        byUid[p.uid] = p;
+        byUid[p.uid] = p.withPhoto(prev.photoUrl).withStyle(prev.portraitStyle);
+      } else {
+        byUid[p.uid] = prev.withPhoto(p.photoUrl).withStyle(p.portraitStyle);
       }
     }
 
@@ -1174,6 +1270,8 @@ class BackendService extends ChangeNotifier {
             steps: (data['xp'] as num?)?.toInt() ?? 0,
             lastWalkDate: _readActivityDate(data, 'lastWalkDate'),
             lastSeenDate: _readActivityDate(data, 'lastSeenDate'),
+            photoUrl: _readPhotoUrl(data),
+            portraitStyle: _readPortraitStyle(data) ?? PortraitStyle.photo,
           ),
         );
       }
@@ -1224,6 +1322,8 @@ class BackendService extends ChangeNotifier {
             steps: (d.data()['xp'] as num?)?.toInt() ?? 0,
             lastWalkDate: _readActivityDate(d.data(), 'lastWalkDate'),
             lastSeenDate: _readActivityDate(d.data(), 'lastSeenDate'),
+            photoUrl: _readPhotoUrl(d.data()),
+            portraitStyle: _readPortraitStyle(d.data()) ?? PortraitStyle.photo,
           ),
     ];
   }
@@ -1284,6 +1384,8 @@ class BackendService extends ChangeNotifier {
             : 'Aprendiz';
         final lastWalk = _readActivityDate(data, 'lastWalkDate');
         final lastSeen = _readActivityDate(data, 'lastSeenDate');
+        final photo = _readPhotoUrl(data);
+        final style = _readPortraitStyle(data);
         final prev = byUid[d.id];
         if (prev == null || steps > prev.steps) {
           byUid[d.id] = CloudPlayer(
@@ -1292,6 +1394,8 @@ class BackendService extends ChangeNotifier {
             steps: steps,
             lastWalkDate: lastWalk ?? prev?.lastWalkDate,
             lastSeenDate: _fresherDateKey(prev?.lastSeenDate, lastSeen),
+            photoUrl: photo ?? prev?.photoUrl,
+            portraitStyle: style ?? prev?.portraitStyle ?? PortraitStyle.photo,
           );
         } else if (prev.steps == steps &&
             ProgressService.isPlaceholderUserName(prev.name) &&
@@ -1302,6 +1406,8 @@ class BackendService extends ChangeNotifier {
             steps: steps,
             lastWalkDate: lastWalk ?? prev.lastWalkDate,
             lastSeenDate: _fresherDateKey(prev.lastSeenDate, lastSeen),
+            photoUrl: photo ?? prev.photoUrl,
+            portraitStyle: style ?? prev.portraitStyle,
           );
         } else if (prev.steps == steps) {
           byUid[d.id] = CloudPlayer(
@@ -1310,7 +1416,13 @@ class BackendService extends ChangeNotifier {
             steps: prev.steps,
             lastWalkDate: prev.lastWalkDate ?? lastWalk,
             lastSeenDate: _fresherDateKey(prev.lastSeenDate, lastSeen),
+            photoUrl: prev.photoUrl ?? photo,
+            portraitStyle: prev.portraitStyle != PortraitStyle.photo
+                ? prev.portraitStyle
+                : (style ?? prev.portraitStyle),
           );
+        } else {
+          byUid[d.id] = prev.withPhoto(photo).withStyle(style);
         }
       }
 
@@ -1338,19 +1450,18 @@ class BackendService extends ChangeNotifier {
         }
       }
 
-      if (byUid.length < limit) {
-        try {
-          final usersSnap = await _db
-              .collection('users')
-              .orderBy('steps', descending: true)
-              .limit(fetchLimit)
-              .get();
-          for (final d in usersSnap.docs) {
-            ingest(d);
-          }
-        } catch (e) {
-          debugPrint('Ranking geral via users/ falhou: $e');
+      // Complementa nome/foto a partir de users/ — docs já têm photoUrl do Auth.
+      try {
+        final usersSnap = await _db
+            .collection('users')
+            .orderBy('steps', descending: true)
+            .limit(fetchLimit)
+            .get();
+        for (final d in usersSnap.docs) {
+          ingest(d);
         }
+      } catch (e) {
+        debugPrint('Ranking geral via users/ falhou: $e');
       }
 
       final list = byUid.values.toList()

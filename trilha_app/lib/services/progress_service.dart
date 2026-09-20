@@ -9,8 +9,10 @@ import '../models/caravan_profile_prefs.dart';
 import '../models/daily_quest.dart';
 import '../models/difficulty.dart';
 import '../models/walk_companion.dart';
+import '../models/corner_challenge.dart';
 import '../utils/appearance.dart';
 import '../utils/catalog_access.dart';
+import '../models/portrait_style.dart';
 import 'bible_reading_plan_service.dart';
 import 'bible_service.dart';
 import 'remote_config_service.dart';
@@ -28,6 +30,9 @@ class AppSettings {
   /// Noite só na página de leitura. `null` segue o visual do app.
   final bool? bibleReadingNight;
 
+  /// Como o retrato aparece na caravana e no perfil.
+  final PortraitStyle portraitStyle;
+
   const AppSettings({
     this.sound = true,
     this.notifications = true,
@@ -36,6 +41,7 @@ class AppSettings {
     this.bibleTranslationId = BibleService.defaultTranslationId,
     this.fontScale = 1.0,
     this.bibleReadingNight,
+    this.portraitStyle = PortraitStyle.photo,
   });
 
   /// Compat: true quando o visual preferido é noturno.
@@ -49,6 +55,7 @@ class AppSettings {
     String? bibleTranslationId,
     double? fontScale,
     bool? bibleReadingNight,
+    PortraitStyle? portraitStyle,
   }) {
     return AppSettings(
       sound: sound ?? this.sound,
@@ -58,6 +65,7 @@ class AppSettings {
       bibleTranslationId: bibleTranslationId ?? this.bibleTranslationId,
       fontScale: fontScale ?? this.fontScale,
       bibleReadingNight: bibleReadingNight ?? this.bibleReadingNight,
+      portraitStyle: portraitStyle ?? this.portraitStyle,
     );
   }
 }
@@ -79,6 +87,7 @@ class ProgressService extends ChangeNotifier {
   static const _keyBibleTranslation = 'bibleTranslationId';
   static const _keyFontScale = 'fontScale';
   static const _keyBibleReadingNight = 'bibleReadingNight';
+  static const _keyPortraitStyle = 'portraitStyle';
 
   /// Legado — migrado para [_keyFontScale].
   static const _keyBibleFontScale = 'bibleFontScale';
@@ -263,6 +272,9 @@ class ProgressService extends ChangeNotifier {
 
   /// Códigos de companhia cuja recompensa de referral já foi concedida ao host.
   List<String> claimedReferralRewards = [];
+
+  /// Desafios cuja chegada (+10) já entrou na Caravana.
+  List<String> claimedCornerRewards = [];
 
   /// Coorte de retenção (D7) — datas locais YYYY-MM-DD + epoch do 1º open.
   String? firstOpenDate;
@@ -472,6 +484,9 @@ class ProgressService extends ChangeNotifier {
       bibleReadingNight: prefs.containsKey(_keyBibleReadingNight)
           ? prefs.getBool(_keyBibleReadingNight)
           : null,
+      portraitStyle: PortraitStyleX.fromStorage(
+        prefs.getString(_keyPortraitStyle),
+      ),
     );
   }
 
@@ -493,6 +508,7 @@ class ProgressService extends ChangeNotifier {
     } else {
       await prefs.setBool(_keyBibleReadingNight, settings.bibleReadingNight!);
     }
+    await prefs.setString(_keyPortraitStyle, settings.portraitStyle.storageKey);
     await prefs.setString(_keyBibleBrowseOrder, bibleBrowseOrder.storageKey);
   }
 
@@ -727,6 +743,7 @@ class ProgressService extends ChangeNotifier {
     perfectMissions = [];
     celebratedMedalIds = [];
     claimedReferralRewards = [];
+    claimedCornerRewards = [];
     companionWeekBonusWeek = null;
     medalCelebrationSeeded = false;
     vaultCompleteCelebratedIds = [];
@@ -803,12 +820,60 @@ class ProgressService extends ChangeNotifier {
   /// 1 congelamento por semana civil (estilo Duolingo).
   void _ensureStreakFreezeWeek() {
     final week = _weekMondayKey();
+    // Dia congelado nesta semana é a prova de consumo — mesmo se a nuvem
+    // perdeu streakFreezeWeek e tentou devolver o gelo.
+    if (_hasFrozenDateInCurrentWeek()) {
+      streakFreezeAvailable = false;
+      streakFreezeWeek = week;
+      return;
+    }
     if (streakFreezeAvailable) return;
     // Sem registro de consumo, ou consumo de outra semana → concede de novo.
     // Evita “Gelo usado” preso quando streakFreezeWeek veio null da nuvem.
     if (streakFreezeWeek == null || streakFreezeWeek != week) {
       streakFreezeAvailable = true;
     }
+  }
+
+  bool _hasFrozenDateInCurrentWeek() {
+    if (frozenDates.isEmpty) return false;
+    final monday = _weekMondayKey();
+    final parts = monday.split('-');
+    if (parts.length != 3) return false;
+    final sunday = DateTime(
+      int.parse(parts[0]),
+      int.parse(parts[1]),
+      int.parse(parts[2]),
+    ).add(const Duration(days: 6)).toIso8601String().substring(0, 10);
+    for (final day in frozenDates) {
+      if (day.compareTo(monday) >= 0 && day.compareTo(sunday) <= 0) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  /// Cobre ontem com gelo ao virar o dia — não espera a próxima missão.
+  /// Não conta como passo caminhado (o orbe da semana fica congelado).
+  bool _applyPendingStreakFreeze() {
+    _ensureStreakFreezeWeek();
+    if (!streakFreezeAvailable) return false;
+    if (lastPlayedDate == null) return false;
+    if (lastPlayedDate == _todayKey()) return false;
+    if (!missedExactlyOneDay) return false;
+
+    final gap = _yesterdayKey();
+    streakFreezeAvailable = false;
+    streakFreezeWeek = _weekMondayKey();
+    if (!frozenDates.contains(gap)) {
+      frozenDates = [...frozenDates, gap];
+      if (frozenDates.length > 30) {
+        frozenDates = frozenDates.sublist(frozenDates.length - 30);
+      }
+    }
+    // O gelo manteve a sequência até ontem; hoje ainda precisa caminhar.
+    lastPlayedDate = gap;
+    return true;
   }
 
   /// 1 reparo de sequência por mês civil.
@@ -902,6 +967,17 @@ class ProgressService extends ChangeNotifier {
     if (!eligible) return false;
     companionWeekBonusWeek = week;
     _gainSteps(WalkCompanion.weekTogetherBonusSteps);
+    await _save();
+    notifyListeners();
+    return true;
+  }
+
+  /// +10 na Caravana ao fechar a cena do desafio. 1× por desafio.
+  Future<bool> claimCornerArrivalBonus(String cornerId) async {
+    final id = cornerId.trim();
+    if (id.isEmpty || claimedCornerRewards.contains(id)) return false;
+    claimedCornerRewards = [...claimedCornerRewards, id];
+    _gainSteps(cornerArrivalBonusSteps);
     await _save();
     notifyListeners();
     return true;
@@ -1145,25 +1221,10 @@ class ProgressService extends ChangeNotifier {
 
     _ensureStreakFreezeWeek();
     _ensureStreakRepairMonth();
+    _applyPendingStreakFreeze();
 
     if (lastPlayedDate == _yesterdayKey()) {
       streak = streak + 1;
-      streakRepairPending = false;
-      brokenStreak = 0;
-    } else if (lastPlayedDate != null &&
-        missedExactlyOneDay &&
-        streakFreezeAvailable) {
-      // Perdeu exatamente 1 dia — protege com congelamento.
-      streakFreezeAvailable = false;
-      streakFreezeWeek = _weekMondayKey();
-      final gap = _dayAfterKey(lastPlayedDate!);
-      if (gap != today && !frozenDates.contains(gap)) {
-        frozenDates = [...frozenDates, gap];
-        if (frozenDates.length > 30) {
-          frozenDates = frozenDates.sublist(frozenDates.length - 30);
-        }
-      }
-      streak = streak + 1; // continua a sequência após o dia protegido
       streakRepairPending = false;
       brokenStreak = 0;
     } else if (lastPlayedDate != null &&
@@ -1197,12 +1258,21 @@ class ProgressService extends ChangeNotifier {
 
   bool playedOnDate(DateTime date) {
     final key = date.toIso8601String().substring(0, 10);
+    // Dia coberto pelo gelo não é passo caminhado.
+    if (frozenDates.contains(key)) return false;
     return playDates.contains(key) || lastPlayedDate == key;
   }
 
   bool wasFrozenOnDate(DateTime date) {
     final key = date.toIso8601String().substring(0, 10);
     return frozenDates.contains(key);
+  }
+
+  /// O gelo cobriu ontem — o card congelado só vale para este buraco.
+  bool get yesterdayWasFrozen {
+    return wasFrozenOnDate(
+      DateTime.now().subtract(const Duration(days: 1)),
+    );
   }
 
   /// De fato caminhou neste dia civil (não usa missionsToday residual de ontem).
@@ -1853,6 +1923,7 @@ class ProgressService extends ChangeNotifier {
       'companionCodes': companionCodes,
       'activeRoomCode': activeRoomCode,
       'claimedReferralRewards': claimedReferralRewards,
+      'claimedCornerRewards': claimedCornerRewards,
       'companionWeekBonusWeek': companionWeekBonusWeek,
       'firstOpenDate': firstOpenDate,
       'firstLessonDate': firstLessonDate,
@@ -1876,6 +1947,7 @@ class ProgressService extends ChangeNotifier {
         'fontScale': settings.fontScale,
         if (settings.bibleReadingNight != null)
           'bibleReadingNight': settings.bibleReadingNight,
+        'portraitStyle': settings.portraitStyle.storageKey,
       },
     };
   }
@@ -2202,6 +2274,12 @@ class ProgressService extends ChangeNotifier {
           ..._asStringList(data['claimedReferralRewards']),
         }.toList();
       }
+      if (data.containsKey('claimedCornerRewards')) {
+        claimedCornerRewards = {
+          ...claimedCornerRewards,
+          ..._asStringList(data['claimedCornerRewards']),
+        }.toList();
+      }
       if (data.containsKey('companionWeekBonusWeek')) {
         final cloudWeek = (data['companionWeekBonusWeek'] as String?)?.trim();
         if (cloudWeek != null && cloudWeek.isNotEmpty) {
@@ -2432,6 +2510,10 @@ class ProgressService extends ChangeNotifier {
           bibleReadingNight: s.containsKey('bibleReadingNight')
               ? s['bibleReadingNight'] as bool?
               : settings.bibleReadingNight,
+          portraitStyle: PortraitStyleX.tryParse(
+                s['portraitStyle'] as String?,
+              ) ??
+              settings.portraitStyle,
         );
       }
     }
@@ -2462,15 +2544,19 @@ class ProgressService extends ChangeNotifier {
     _ensureQuestDay();
     _ensureWeeklyWeek();
     _ensureMonthlyMonth();
-    // Repara gelo preso (false sem semana) e persiste se mudou.
+    // Repara gelo preso (false sem semana), cobre ontem se couber, persiste.
     final freezeBefore = streakFreezeAvailable;
+    final lastPlayedBefore = lastPlayedDate;
     _ensureStreakFreezeWeek();
+    final freezeApplied = _applyPendingStreakFreeze();
     final repairBefore = streakRepairAvailable;
     _ensureStreakRepairMonth();
     await _autoClaimCompletedQuests();
     await BibleService.instance.setTranslation(settings.bibleTranslationId);
     _loaded = true;
-    if (freezeBefore != streakFreezeAvailable ||
+    if (freezeApplied ||
+        freezeBefore != streakFreezeAvailable ||
+        lastPlayedBefore != lastPlayedDate ||
         repairBefore != streakRepairAvailable) {
       await _save();
     }
@@ -2572,6 +2658,7 @@ class ProgressService extends ChangeNotifier {
     perfectMissions = [];
     celebratedMedalIds = [];
     claimedReferralRewards = [];
+    claimedCornerRewards = [];
     companionWeekBonusWeek = null;
     medalCelebrationSeeded = false;
     vaultCompleteCelebratedIds = [];

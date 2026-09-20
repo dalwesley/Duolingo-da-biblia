@@ -32,6 +32,9 @@ class _LoginScreenState extends State<LoginScreen> {
   String? _error;
   String? _versionLabel;
 
+  /// True do tap até a navegação (ou erro) — inclusive durante o hydrate.
+  bool _entering = false;
+
   bool get _showApple => !kIsWeb && defaultTargetPlatform == TargetPlatform.iOS;
 
   @override
@@ -68,6 +71,7 @@ class _LoginScreenState extends State<LoginScreen> {
     if (hydrate == BackendService.hydrateFailed) {
       if (!mounted) return;
       setState(() {
+        _entering = false;
         _error =
             'Não foi possível carregar seu progresso. Verifique a conexão e tente de novo.';
       });
@@ -101,9 +105,13 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   Future<void> _signInWithGoogle() async {
+    if (_entering) return;
     final progress = context.read<ProgressService>();
     final backend = context.read<BackendService>();
-    setState(() => _error = null);
+    setState(() {
+      _error = null;
+      _entering = true;
+    });
     HapticFeedback.lightImpact();
 
     debugPrint('[STWAY:Auth] LoginScreen: tap Continuar com Google');
@@ -112,7 +120,10 @@ class _LoginScreenState extends State<LoginScreen> {
     if (!result.ok) {
       debugPrint('[STWAY:Auth] LoginScreen: fail → ${result.error}');
       unawaited(AnalyticsService.instance.logLoginFailed(reason: result.error));
-      setState(() => _error = result.error ?? 'Falha no login com Google');
+      setState(() {
+        _entering = false;
+        _error = result.error ?? 'Falha no login com Google';
+      });
       return;
     }
     debugPrint('[STWAY:Auth] LoginScreen: ok → ${result.email}');
@@ -122,9 +133,13 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   Future<void> _signInWithApple() async {
+    if (_entering) return;
     final progress = context.read<ProgressService>();
     final backend = context.read<BackendService>();
-    setState(() => _error = null);
+    setState(() {
+      _error = null;
+      _entering = true;
+    });
     HapticFeedback.lightImpact();
 
     debugPrint('[STWAY:Auth] LoginScreen: tap Continuar com Apple');
@@ -133,7 +148,10 @@ class _LoginScreenState extends State<LoginScreen> {
     if (!result.ok) {
       debugPrint('[STWAY:Auth] LoginScreen: Apple fail → ${result.error}');
       unawaited(AnalyticsService.instance.logLoginFailed(reason: result.error));
-      setState(() => _error = result.error ?? 'Falha no login com Apple');
+      setState(() {
+        _entering = false;
+        _error = result.error ?? 'Falha no login com Apple';
+      });
       return;
     }
     debugPrint('[STWAY:Auth] LoginScreen: Apple ok → ${result.email}');
@@ -145,7 +163,8 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     final backend = context.watch<BackendService>();
-    final busy = backend.isAuthBusy || backend.isInitializing;
+    final busy = _entering || backend.isAuthBusy || backend.isInitializing;
+    final preparing = _entering && backend.isSignedIn;
     final mode = context.watch<ProgressService>().settings.appearanceMode;
     final appearance = AppearanceStyle.resolve(mode);
     final a = appearance;
@@ -174,13 +193,15 @@ class _LoginScreenState extends State<LoginScreen> {
               const StwayTagline(size: 9),
               const SizedBox(height: AppSpace.xxl),
               Text(
-                'Entre para continuar',
+                preparing ? 'Preparando sua jornada' : 'Entre para continuar',
                 textAlign: TextAlign.center,
                 style: AppTypography.display(size: 32),
               ),
               const SizedBox(height: AppSpace.md),
               Text(
-                'Sua conta guarda seus passos, dias e missões — assim nada se perde entre aparelhos.',
+                preparing
+                    ? 'Carregando seus passos, dias e missões…'
+                    : 'Sua conta guarda seus passos, dias e missões — assim nada se perde entre aparelhos.',
                 textAlign: TextAlign.center,
                 style: AppTypography.body(color: a.textMuted(0.65)),
               ),
@@ -201,62 +222,82 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 const SizedBox(height: AppSpace.md),
               ],
-              if (!backend.isFirebaseReady && !backend.isInitializing) ...[
-                OutlinedButton.icon(
-                  onPressed: busy ? null : () => backend.retry(),
-                  icon: const CinematicIcon(
-                    glyph: CinematicGlyph.refresh,
-                    size: 18,
-                    accent: Colors.white70,
-                    framed: false,
-                  ),
-                  label: Text(
-                    'Tentar reconectar',
-                    style: AppTypography.cta(color: Colors.white70),
-                  ),
-                  style: OutlinedButton.styleFrom(
-                    foregroundColor: Colors.white70,
-                    side: BorderSide(color: a.cardBorder),
-                    padding: const EdgeInsets.symmetric(vertical: AppSpace.md),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(AppRadii.lg),
-                    ),
-                  ),
-                ),
-                const SizedBox(height: AppSpace.sm),
-              ],
-              if (_showApple) ...[
-                Opacity(
-                  opacity: busy ? 0.55 : 1,
-                  child: OutlinedButton.icon(
-                    onPressed: busy ? null : _signInWithApple,
-                    icon: const Icon(Icons.apple, size: 22),
-                    label: Text(
-                      busy ? 'Entrando…' : 'Continuar com Apple',
-                      style: AppTypography.cta(color: Colors.white),
-                    ),
-                    style: OutlinedButton.styleFrom(
-                      foregroundColor: Colors.white,
-                      backgroundColor: Colors.black.withValues(alpha: 0.55),
-                      side: BorderSide(color: a.cardBorder),
-                      padding: const EdgeInsets.symmetric(
-                        vertical: AppSpace.md,
+              AbsorbPointer(
+                absorbing: busy,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    if (!backend.isFirebaseReady &&
+                        !backend.isInitializing) ...[
+                      OutlinedButton.icon(
+                        onPressed: busy ? null : () => backend.retry(),
+                        icon: const CinematicIcon(
+                          glyph: CinematicGlyph.refresh,
+                          size: 18,
+                          accent: Colors.white70,
+                          framed: false,
+                        ),
+                        label: Text(
+                          'Tentar reconectar',
+                          style: AppTypography.cta(color: Colors.white70),
+                        ),
+                        style: OutlinedButton.styleFrom(
+                          foregroundColor: Colors.white70,
+                          side: BorderSide(color: a.cardBorder),
+                          padding: const EdgeInsets.symmetric(
+                            vertical: AppSpace.md,
+                          ),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(AppRadii.lg),
+                          ),
+                        ),
                       ),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(AppRadii.lg),
+                      const SizedBox(height: AppSpace.sm),
+                    ],
+                    if (_showApple) ...[
+                      Opacity(
+                        opacity: busy ? 0.55 : 1,
+                        child: OutlinedButton.icon(
+                          onPressed: busy ? null : _signInWithApple,
+                          icon: busy
+                              ? const SizedBox(
+                                  width: 18,
+                                  height: 18,
+                                  child: CircularProgressIndicator(
+                                    strokeWidth: 2,
+                                    color: Colors.white,
+                                  ),
+                                )
+                              : const Icon(Icons.apple, size: 22),
+                          label: Text(
+                            busy ? 'Entrando…' : 'Continuar com Apple',
+                            style: AppTypography.cta(color: Colors.white),
+                          ),
+                          style: OutlinedButton.styleFrom(
+                            foregroundColor: Colors.white,
+                            backgroundColor: Colors.black.withValues(
+                              alpha: 0.55,
+                            ),
+                            side: BorderSide(color: a.cardBorder),
+                            padding: const EdgeInsets.symmetric(
+                              vertical: AppSpace.md,
+                            ),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(AppRadii.lg),
+                            ),
+                          ),
+                        ),
                       ),
+                      const SizedBox(height: AppSpace.sm),
+                    ],
+                    CopperCta(
+                      label: busy ? 'Entrando…' : 'Continuar com Google',
+                      onTap: busy ? null : _signInWithGoogle,
+                      busy: busy,
+                      trailing: null,
+                      showArrow: false,
                     ),
-                  ),
-                ),
-                const SizedBox(height: AppSpace.sm),
-              ],
-              Opacity(
-                opacity: busy ? 0.55 : 1,
-                child: CopperCta(
-                  label: busy ? 'Entrando…' : 'Continuar com Google',
-                  onTap: busy ? null : _signInWithGoogle,
-                  trailing: null,
-                  showArrow: false,
+                  ],
                 ),
               ),
               const SizedBox(height: AppSpace.lg),

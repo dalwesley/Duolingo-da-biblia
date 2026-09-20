@@ -105,6 +105,7 @@ class _MeScreenState extends State<MeScreen> {
               steps: p.steps,
               lastWalkDate: p.lastWalkDate,
               lastSeenDate: p.lastSeenDate,
+              photoUrl: p.photoUrl,
             ),
         ];
         rank = league.userRank(entries);
@@ -168,6 +169,7 @@ class _MeScreenState extends State<MeScreen> {
             isUser: true,
             lastWalkDate: progress.lastPlayedDate,
             lastSeenDate: today,
+            photoUrl: backend.userPhotoUrl,
           ),
           isOwner: true,
           onOpenSettings: _openCaravanPrivacySettings,

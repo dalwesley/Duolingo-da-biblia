@@ -71,6 +71,7 @@ void main() {
           'lastWalkDate': '2026-09-01',
           'lastSeenDate': '2026-09-02',
           'completedMissions': ['gen-01'],
+          'photoUrl': 'https://example.com/maria.jpg',
         },
       );
       expect(profile.name, 'Maria');
@@ -78,6 +79,7 @@ void main() {
       expect(profile.streak, 3);
       expect(profile.lastWalkDate, '2026-09-01');
       expect(profile.missionsCompleted, 1);
+      expect(profile.photoUrl, 'https://example.com/maria.jpg');
     });
 
     test('tolerates Timestamp-like dates and string numbers', () {

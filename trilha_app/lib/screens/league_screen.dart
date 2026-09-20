@@ -28,6 +28,7 @@ import '../widgets/hero_card_atmosphere.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/invite_qr_sheet.dart';
 import '../widgets/ui_primitives.dart';
+import '../widgets/portrait_face.dart';
 
 class LeagueScreen extends StatefulWidget {
   final Widget? topBar;
@@ -172,6 +173,8 @@ class _LeagueScreenState extends State<LeagueScreen>
               steps: p.steps,
               lastWalkDate: p.lastWalkDate,
               lastSeenDate: p.lastSeenDate,
+              photoUrl: p.photoUrl,
+              portraitStyle: p.portraitStyle,
             ),
         ];
         _overallPlayers = [
@@ -182,6 +185,8 @@ class _LeagueScreenState extends State<LeagueScreen>
               steps: p.steps,
               lastWalkDate: p.lastWalkDate,
               lastSeenDate: p.lastSeenDate,
+              photoUrl: p.photoUrl,
+              portraitStyle: p.portraitStyle,
             ),
         ];
         _playersLoading = false;
@@ -195,6 +200,7 @@ class _LeagueScreenState extends State<LeagueScreen>
           userWeeklySteps: progress.weeklySteps,
           userUid: backend.uid,
           userLastWalkDate: progress.lastPlayedDate,
+          userPhotoUrl: backend.userPhotoUrl,
           realPlayers: _realPlayers,
         ),
       );
@@ -357,6 +363,8 @@ class _LeagueScreenState extends State<LeagueScreen>
             userUid: backend.uid,
             userLastWalkDate: progress.lastPlayedDate,
             userLastSeenDate: today,
+            userPhotoUrl: backend.userPhotoUrl,
+            userPortraitStyle: progress.settings.portraitStyle,
             realPlayers: _overallPlayers,
           )
         : league.standings(
@@ -365,6 +373,8 @@ class _LeagueScreenState extends State<LeagueScreen>
             userUid: backend.uid,
             userLastWalkDate: progress.lastPlayedDate,
             userLastSeenDate: today,
+            userPhotoUrl: backend.userPhotoUrl,
+            userPortraitStyle: progress.settings.portraitStyle,
             realPlayers: _realPlayers,
           );
     final userRank = league.userRank(entries);
@@ -937,6 +947,10 @@ class _LeagueScreenState extends State<LeagueScreen>
                   steps: m.steps,
                   isUser: m.isUser,
                   lastWalkDate: m.lastWalk,
+                  photoUrl: m.isUser ? backend.userPhotoUrl : m.photoUrl,
+                  portraitStyle: m.isUser
+                      ? progress.settings.portraitStyle
+                      : m.portraitStyle,
                 ),
             ],
             weekly: true,
@@ -1473,6 +1487,7 @@ class _RoomWeekPulse extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
+    final myPhoto = context.select((BackendService b) => b.userPhotoUrl);
     final a = Appearance.of(context);
     final total = members.length;
     final active = members.where((m) => m.walkedThisWeek).length;
@@ -1506,6 +1521,11 @@ class _RoomWeekPulse extends StatelessWidget {
                         name: m.name,
                         isUser: m.isUser,
                         live: true,
+                        photoUrl: m.isUser ? (myPhoto ?? m.photoUrl) : m.photoUrl,
+                        seed: m.uid,
+                        style: m.isUser
+                            ? progress.settings.portraitStyle
+                            : m.portraitStyle,
                       ),
                   ],
                   size: 28,
@@ -2101,10 +2121,53 @@ class _LeaderboardBoard extends StatelessWidget {
     final a = Appearance.of(context);
     final heading = title ??
         (weekly ? 'Esta semana' : 'Toda a jornada');
-    final online = entries.where((e) => e.isOnlineToday).toList();
+    final online = LeagueService.onlineNow(entries);
+    final countLabel = LeagueService.onlineCountLabel(online.length);
+    final onlineChip = Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        if (online.isNotEmpty) ...[
+          _AvatarCluster(
+            people: [
+              for (final p in online.take(5))
+                (
+                  name: p.entry.name,
+                  isUser: p.entry.isUser,
+                  live: true,
+                  photoUrl: p.entry.photoUrl,
+                  seed: p.entry.uid ?? p.entry.name,
+                  style: p.entry.portraitStyle,
+                ),
+            ],
+            size: 22,
+          ),
+          const SizedBox(width: 8),
+        ] else ...[
+          Container(
+            width: 8,
+            height: 8,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: AppColors.teal.withValues(alpha: 0.35),
+            ),
+          ),
+          const SizedBox(width: 6),
+        ],
+        Text(
+          countLabel,
+          style: AppTypography.label(
+            size: 10,
+            letterSpacing: 0,
+            color: online.isEmpty
+                ? a.textMuted(0.45)
+                : AppColors.teal.withValues(alpha: 0.9),
+          ),
+        ),
+      ],
+    );
     final rows = <Widget>[
       Padding(
-        padding: const EdgeInsets.fromLTRB(14, 2, 10, 8),
+        padding: const EdgeInsets.fromLTRB(14, 2, 6, 8),
         child: Row(
           children: [
             Text(
@@ -2116,44 +2179,32 @@ class _LeaderboardBoard extends StatelessWidget {
               ),
             ),
             const Spacer(),
-            if (online.isNotEmpty) ...[
-              _AvatarCluster(
-                people: [
-                  for (final e in online.take(5))
-                    (
-                      name: e.name,
-                      isUser: e.isUser,
-                      live: true,
+            if (online.isEmpty)
+              Padding(
+                padding: const EdgeInsets.fromLTRB(6, 4, 8, 4),
+                child: onlineChip,
+              )
+            else
+              Semantics(
+                button: true,
+                label: '$countLabel. Ver quem está na trilha',
+                child: Material(
+                  color: Colors.transparent,
+                  child: InkWell(
+                    onTap: () => _showCaravanOnlineSheet(
+                      context,
+                      people: online,
+                      weekly: weekly,
+                      onOpenOwnProfile: onOpenOwnProfile,
                     ),
-                ],
-                size: 22,
-              ),
-              const SizedBox(width: 8),
-            ] else ...[
-              Container(
-                width: 8,
-                height: 8,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  color: AppColors.teal.withValues(alpha: 0.35),
+                    borderRadius: BorderRadius.circular(AppRadii.pill),
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(6, 4, 8, 4),
+                      child: onlineChip,
+                    ),
+                  ),
                 ),
               ),
-              const SizedBox(width: 6),
-            ],
-            Text(
-              online.isEmpty
-                  ? '0 online'
-                  : online.length == 1
-                      ? '1 online'
-                      : '${online.length} online',
-              style: AppTypography.label(
-                size: 10,
-                letterSpacing: 0,
-                color: online.isEmpty
-                    ? a.textMuted(0.45)
-                    : AppColors.teal.withValues(alpha: 0.9),
-              ),
-            ),
           ],
         ),
       ),
@@ -2201,6 +2252,303 @@ class _LeaderboardBoard extends StatelessWidget {
     return GlassCard(
       padding: const EdgeInsets.fromLTRB(6, 12, 6, 8),
       child: Column(children: rows),
+    );
+  }
+}
+
+void _showCaravanOnlineSheet(
+  BuildContext context, {
+  required List<({LeagueEntry entry, int rank})> people,
+  required bool weekly,
+  VoidCallback? onOpenOwnProfile,
+}) {
+  HapticFeedback.lightImpact();
+  showModalBottomSheet<void>(
+    context: context,
+    backgroundColor: Colors.transparent,
+    barrierColor: Colors.black.withValues(alpha: 0.62),
+    isScrollControlled: true,
+    enableDrag: true,
+    isDismissible: true,
+    builder: (ctx) => _CaravanOnlineSheet(
+      people: people,
+      weekly: weekly,
+      onOpenOwnProfile: onOpenOwnProfile,
+    ),
+  );
+}
+
+class _CaravanOnlineSheet extends StatelessWidget {
+  final List<({LeagueEntry entry, int rank})> people;
+  final bool weekly;
+  final VoidCallback? onOpenOwnProfile;
+
+  const _CaravanOnlineSheet({
+    required this.people,
+    required this.weekly,
+    this.onOpenOwnProfile,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final bottom = MediaQuery.viewPaddingOf(context).bottom;
+    final maxH = MediaQuery.sizeOf(context).height * 0.72;
+    final count = people.length;
+    final subtitle = count == 1
+        ? '1 peregrino da caravana'
+        : '$count peregrinos da caravana';
+
+    return ConstrainedBox(
+      constraints: BoxConstraints(maxHeight: maxH),
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+          borderRadius: const BorderRadius.vertical(top: Radius.circular(32)),
+          border: Border.all(
+            color: AppColors.teal.withValues(alpha: 0.45),
+            width: 1.5,
+          ),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withValues(alpha: 0.65),
+              blurRadius: 24,
+              offset: const Offset(0, -8),
+            ),
+          ],
+        ),
+        child: ClipRRect(
+          borderRadius: const BorderRadius.vertical(top: Radius.circular(32)),
+          child: Stack(
+            children: [
+              const Positioned.fill(
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [
+                        AppColors.nightElevated,
+                        AppColors.night,
+                        AppColors.nightMid,
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              Positioned.fill(
+                child: IgnorePointer(
+                  child: DecoratedBox(
+                    decoration: BoxDecoration(
+                      gradient: RadialGradient(
+                        center: const Alignment(0, -0.7),
+                        radius: 1.1,
+                        colors: [
+                          AppColors.teal.withValues(alpha: 0.18),
+                          Colors.transparent,
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              ListView.separated(
+                shrinkWrap: true,
+                padding: EdgeInsets.fromLTRB(10, AppSpace.sm, 10, bottom + 18),
+                itemCount: people.length + 1,
+                separatorBuilder: (ctx, i) {
+                  if (i == 0) return const SizedBox(height: 4);
+                  return Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 12),
+                    child: ColoredBox(
+                      color: a.text.withValues(alpha: 0.06),
+                      child: const SizedBox(height: 1, width: double.infinity),
+                    ),
+                  );
+                },
+                itemBuilder: (ctx, i) {
+                  if (i == 0) {
+                    return Padding(
+                      padding: const EdgeInsets.fromLTRB(12, 0, 12, 8),
+                      child: Column(
+                        children: [
+                          Center(
+                            child: Container(
+                              width: 48,
+                              height: 4,
+                              decoration: BoxDecoration(
+                                color: Colors.white.withValues(alpha: 0.24),
+                                borderRadius:
+                                    BorderRadius.circular(AppRadii.pill),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(height: 16),
+                          Row(
+                            children: [
+                              const CinematicIcon(
+                                glyph: CinematicGlyph.people,
+                                size: 36,
+                                accent: AppColors.teal,
+                                glowing: true,
+                              ),
+                              const SizedBox(width: 12),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'Na trilha agora',
+                                      style: AppTypography.display(
+                                        size: 22,
+                                        weight: FontWeight.w800,
+                                        color: a.text,
+                                      ),
+                                    ),
+                                    const SizedBox(height: 2),
+                                    Text(
+                                      subtitle,
+                                      style: AppTypography.body(
+                                        size: 13,
+                                        color: a.textMuted(0.62),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    );
+                  }
+                  final p = people[i - 1];
+                  return _OnlineSheetRow(
+                    entry: p.entry,
+                    rank: p.rank,
+                    weekly: weekly,
+                    onOpenOwnProfile: onOpenOwnProfile,
+                  );
+                },
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class _OnlineSheetRow extends StatelessWidget {
+  final LeagueEntry entry;
+  final int rank;
+  final bool weekly;
+  final VoidCallback? onOpenOwnProfile;
+
+  const _OnlineSheetRow({
+    required this.entry,
+    required this.rank,
+    required this.weekly,
+    this.onOpenOwnProfile,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final ink = entry.isUser ? AppColors.inkOnAccent : a.text;
+    final muted = entry.isUser
+        ? AppColors.inkOnAccent.withValues(alpha: 0.62)
+        : a.textMuted(0.55);
+    final walked = entry.walkedToday;
+
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: () {
+          if (entry.isUser) {
+            Navigator.pop(context);
+            onOpenOwnProfile?.call();
+            return;
+          }
+          showCaravanPilgrimSheet(
+            context,
+            entry: entry,
+            rank: rank,
+            weeklySteps: weekly,
+          );
+        },
+        borderRadius: BorderRadius.circular(AppRadii.md),
+        child: Container(
+          margin: const EdgeInsets.symmetric(horizontal: 2, vertical: 2),
+          padding: const EdgeInsets.fromLTRB(8, 10, 10, 10),
+          decoration: BoxDecoration(
+            gradient: entry.isUser ? AppGradients.gold : null,
+            borderRadius: BorderRadius.circular(AppRadii.md),
+            border: entry.isUser
+                ? Border.all(
+                    color: Colors.white.withValues(alpha: 0.45),
+                    width: 1.4,
+                  )
+                : null,
+          ),
+          child: Row(
+            children: [
+              _RankMark(rank: rank, onGold: entry.isUser),
+              const SizedBox(width: 10),
+              _PilgrimAvatar(
+                name: entry.name,
+                isUser: entry.isUser,
+                live: true,
+                size: 40,
+                onGold: entry.isUser,
+                photoUrl: entry.photoUrl,
+                seed: entry.uid ?? entry.name,
+                style: entry.portraitStyle,
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      entry.name,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: AppTypography.body(
+                        size: 15,
+                        weight: entry.isUser ? FontWeight.w900 : FontWeight.w700,
+                        color: ink,
+                      ),
+                    ),
+                    const SizedBox(height: 2),
+                    Text(
+                      walked ? 'Caminhou hoje' : 'Online',
+                      style: AppTypography.label(
+                        size: 10,
+                        letterSpacing: 0.2,
+                        weight: FontWeight.w800,
+                        color: walked
+                            ? (entry.isUser
+                                ? muted
+                                : AppColors.teal.withValues(alpha: 0.95))
+                            : muted,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(width: 8),
+              Text(
+                '${entry.steps}',
+                style: AppTypography.title(
+                  size: 16,
+                  weight: FontWeight.w900,
+                  color: entry.isUser ? AppColors.inkOnAccent : a.text,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
@@ -2269,6 +2617,9 @@ class _StandingRow extends StatelessWidget {
           size: 40,
           ring: medal,
           onGold: entry.isUser,
+          photoUrl: entry.photoUrl,
+          seed: entry.uid ?? entry.name,
+          style: entry.portraitStyle,
         ),
         const SizedBox(width: 12),
         Expanded(
@@ -2532,6 +2883,9 @@ class _PilgrimAvatar extends StatelessWidget {
   final double size;
   final Color? ring;
   final bool onGold;
+  final String? photoUrl;
+  final String? seed;
+  final PortraitStyle style;
 
   const _PilgrimAvatar({
     required this.name,
@@ -2540,12 +2894,13 @@ class _PilgrimAvatar extends StatelessWidget {
     this.size = 36,
     this.ring,
     this.onGold = false,
+    this.photoUrl,
+    this.seed,
+    this.style = PortraitStyle.photo,
   });
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final initial = name.isEmpty ? '?' : name[0].toUpperCase();
     final onPlate = isUser && onGold;
     final border = live
         ? AppColors.teal
@@ -2565,33 +2920,18 @@ class _PilgrimAvatar extends StatelessWidget {
           Container(
             width: size,
             height: size,
+            clipBehavior: Clip.antiAlias,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
-              gradient: onPlate
-                  ? null
-                  : isUser
-                  ? AppGradients.gold
-                  : null,
-              color: onPlate
-                  ? AppColors.inkOnAccent
-                  : isUser
-                  ? null
-                  : AppColors.primaryLight.withValues(alpha: 0.28),
+              color: AppColors.nightMid,
               border: Border.all(color: border, width: live ? 2 : 1.2),
             ),
-            child: Center(
-              child: Text(
-                initial,
-                style: AppTypography.title(
-                  size: size >= 52 ? 22 : size >= 38 ? 16 : 13,
-                  weight: FontWeight.w900,
-                  color: onPlate
-                      ? AppColors.accent
-                      : isUser
-                      ? AppColors.inkOnAccent
-                      : a.text,
-                ),
-              ),
+            child: PortraitFace(
+              name: name,
+              photoUrl: photoUrl,
+              seed: seed,
+              size: size,
+              style: style,
             ),
           ),
           if (live)
@@ -2684,7 +3024,15 @@ class _RankMark extends StatelessWidget {
 }
 
 class _AvatarCluster extends StatelessWidget {
-  final List<({String name, bool isUser, bool live})> people;
+  final List<
+      ({
+        String name,
+        bool isUser,
+        bool live,
+        String? photoUrl,
+        String? seed,
+        PortraitStyle style,
+      })> people;
   final double size;
 
   const _AvatarCluster({required this.people, this.size = 24});
@@ -2707,6 +3055,9 @@ class _AvatarCluster extends StatelessWidget {
                 isUser: shown[i].isUser,
                 live: shown[i].live,
                 size: size,
+                photoUrl: shown[i].photoUrl,
+                seed: shown[i].seed,
+                style: shown[i].style,
               ),
             ),
         ],
@@ -3060,6 +3411,11 @@ class _CompanionCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final myPhoto = context.select((BackendService b) => b.userPhotoUrl);
+    final myUid = context.select((BackendService b) => b.uid);
+    final myStyle = context.select(
+      (ProgressService p) => p.settings.portraitStyle,
+    );
     final partnerLabel = companion.awaitingPartner
         ? 'Convite'
         : (companion.displayName.isEmpty
@@ -3209,6 +3565,9 @@ class _CompanionCard extends StatelessWidget {
                     highlight: companion.waitingOnMe,
                     dusty: false,
                     isUser: true,
+                    photoUrl: myPhoto,
+                    seed: myUid ?? myName,
+                    style: myStyle,
                     subtitle: companion.myWeeklySteps > 0
                         ? '${companion.myWeeklySteps} passos'
                         : null,
@@ -3233,6 +3592,7 @@ class _CompanionCard extends StatelessWidget {
                     walked: companion.theyWalkedToday,
                     highlight: companion.waitingOnThem,
                     dusty: companion.theyAreDusty,
+                    seed: companion.displayName,
                     subtitle: companion.theirWeeklySteps > 0
                         ? '${companion.theirWeeklySteps} passos'
                         : (showAwayBadge
@@ -3378,6 +3738,9 @@ class _PresencePill extends StatelessWidget {
   final bool dusty;
   final bool isUser;
   final String? subtitle;
+  final String? photoUrl;
+  final String? seed;
+  final PortraitStyle style;
 
   const _PresencePill({
     required this.name,
@@ -3386,6 +3749,9 @@ class _PresencePill extends StatelessWidget {
     this.dusty = false,
     this.isUser = false,
     this.subtitle,
+    this.photoUrl,
+    this.seed,
+    this.style = PortraitStyle.photo,
   });
 
   @override
@@ -3431,6 +3797,9 @@ class _PresencePill extends StatelessWidget {
                   isUser: isUser,
                   live: walked,
                   size: 40,
+                  photoUrl: photoUrl,
+                  seed: seed ?? name,
+                  style: style,
                 ),
                 const SizedBox(height: 6),
                 Text(

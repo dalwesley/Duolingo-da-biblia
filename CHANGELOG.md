@@ -9,8 +9,26 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
+## [1.0.24] — 2026-09-20
+
+### Added
+- Esquina da Caravana: um desafio de cena por semana, até domingo, +10 ao fechar
+- Card do desafio na Home e CTA no perfil do peregrino
+- Retrato na caravana, home e perfil: foto, letra ou avatar ilustrado
+- Quem está online hoje no ranking da liga
+- Intro histórica de cada livro no seletor de capítulos
+- Pedido de trilha no mapa (card “em breve” → Firestore) e fila no admin em Relatos
+- Firestore: `corners/` e `content_trail_suggestions/`
+
 ### Changed
-- Docs alinhadas ao app 1.0.23: sessão **6/8**, IAP casca (chaves vazias), medalhas v3.2, FCM, TTS só na Bíblia, `lifeChallenge` ainda fora do player.
+- Gelo da sequência cobre ontem ao virar o dia — não espera a próxima missão
+- Card de continuar congela só enquanto o gelo cobre o buraco; caminhou hoje volta vivo
+- Login mostra “Preparando sua jornada” no hydrate e ignora toque duplo
+- Ranking grava foto e estilo de retrato; o geral completa nome/foto a partir de `users/`
+- Leitura bíblica: CTA “Marcar como lido”
+
+### Fixed
+- Gelo da semana não volta a “disponível” quando o dia congelado já está no calendário
 
 ## [1.0.23] — 2026-09-09
 
@@ -29,6 +47,7 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 - Home: desafio, risco da liga e missões do dia só depois da meta diária
 - Permissão de notificação só após o prompt (ou o toggle em Ajustes)
 - Save de ranking isolado: um documento recusado não derruba os outros
+- Docs alinhadas ao app 1.0.23: sessão **6/8**, IAP casca (chaves vazias), medalhas v3.2, FCM, TTS só na Bíblia, `lifeChallenge` ainda fora do player.
 
 ### Fixed
 - Firestore aceita o mesmo placar como int ou float — o ranking inteiro deixava de gravar com `PERMISSION_DENIED`

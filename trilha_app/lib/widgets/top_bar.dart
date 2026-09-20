@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../services/progress_service.dart';
+import '../models/portrait_style.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
@@ -94,6 +95,9 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
     final onDark = immersive || dark || onBack != null;
     final showAvatar = personalGreeting && onProfileTap != null;
     final userName = context.select((ProgressService p) => p.userName);
+    final portraitStyle = context.select(
+      (ProgressService p) => p.settings.portraitStyle,
+    );
 
     // Chrome não herda a escala máxima da leitura — evita overflow em toda TopBar.
     final mark = chromeAccent ?? AppColors.accent;
@@ -109,6 +113,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
               showAvatar: showAvatar,
               photoUrl: photoUrl,
               userName: userName,
+              portraitStyle: portraitStyle,
               onProfileTap: onProfileTap,
               onBack: onBack,
               leadingGlyph: leadingGlyph,
@@ -173,6 +178,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
                             photoUrl: photoUrl,
                             name: userName,
                             radius: 16,
+                            style: portraitStyle,
                           ),
                         ),
                       ),
@@ -225,6 +231,7 @@ class _InlineChrome extends StatelessWidget {
   final bool showAvatar;
   final String? photoUrl;
   final String userName;
+  final PortraitStyle portraitStyle;
   final VoidCallback? onProfileTap;
   final VoidCallback? onBack;
   final CinematicGlyph leadingGlyph;
@@ -245,6 +252,7 @@ class _InlineChrome extends StatelessWidget {
     required this.showAvatar,
     required this.photoUrl,
     required this.userName,
+    required this.portraitStyle,
     required this.onProfileTap,
     required this.onBack,
     required this.leadingGlyph,
@@ -288,6 +296,7 @@ class _InlineChrome extends StatelessWidget {
                 name: userName,
                 radius: 16,
                 onTap: onProfileTap,
+                style: portraitStyle,
               ),
               const SizedBox(width: 10),
             ] else if (showLeading) ...[
@@ -313,7 +322,12 @@ class _InlineChrome extends StatelessWidget {
               trailing!,
             ] else if (showTrailingAvatar) ...[
               const SizedBox(width: 8),
-              UserAvatar(photoUrl: photoUrl, name: userName, radius: 16),
+              UserAvatar(
+                photoUrl: photoUrl,
+                name: userName,
+                radius: 16,
+                style: portraitStyle,
+              ),
             ] else if (onTrailingTap != null) ...[
               const SizedBox(width: 4),
               GestureDetector(

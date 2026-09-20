@@ -154,6 +154,22 @@ class DustCopy {
     ]);
   }
 
+  /// Buraco já aberto (ontem vazio). Gelo da semana não cobre de novo.
+  static String heroGapLine({required bool hasFreeze}) {
+    if (hasFreeze) {
+      return _pick(const [
+        'Ontem ficou vazio · o gelo ainda cobre 1 falta',
+        'Um dia de poeira · gelo à postos nesta semana',
+        'Buraco de ontem · o gelo ainda pode cobrir 1 dia',
+      ]);
+    }
+    return _pick(const [
+      'Ontem ficou vazio · o gelo da semana já foi usado',
+      'Um dia sem cobertura · o gelo já cobriu outra falta',
+      'Poeira de ontem · sem gelo restante nesta semana',
+    ]);
+  }
+
   static String _pick(List<String> options) {
     if (options.isEmpty) return '';
     return options[_tick.abs() % options.length];

@@ -216,6 +216,32 @@ service cloud.firestore {
         && resource.data.hostId == request.auth.uid;
     }
 
+    // Esquina da Caravana (desafio de uma cena, até domingo).
+    match /corners/{id} {
+      allow read: if isSignedIn()
+        && request.auth.uid in resource.data.participantIds;
+      allow create: if isSignedIn()
+        && request.resource.data.challengerId == request.auth.uid
+        && request.auth.uid in request.resource.data.participantIds
+        && request.resource.data.opponentId is string
+        && request.resource.data.opponentId != request.auth.uid
+        && request.resource.data.status == 'pending'
+        && request.resource.data.participantIds.size() == 2
+        && request.resource.data.participantIds.hasAll([
+             request.auth.uid,
+             request.resource.data.opponentId
+           ]);
+      allow update: if isSignedIn()
+        && request.auth.uid in resource.data.participantIds
+        && request.resource.data.challengerId == resource.data.challengerId
+        && request.resource.data.opponentId == resource.data.opponentId
+        && request.resource.data.participantIds == resource.data.participantIds
+        && request.resource.data.missionSlug == resource.data.missionSlug
+        && request.resource.data.trailSlug == resource.data.trailSlug
+        && request.resource.data.weekStart == resource.data.weekStart;
+      allow delete: if false;
+    }
+
     // —— Conteúdo do currículo (trilhas / perguntas / estudos) ——
     match /content_trails/{id} {
       allow read: if true;
@@ -258,6 +284,22 @@ service cloud.firestore {
         && (!('comment' in request.resource.data)
             || (request.resource.data.comment is string
                 && request.resource.data.comment.size() <= 800));
+      allow update, delete: if isContentEditor();
+    }
+
+    // Sugestões de novas trilhas (usuários autenticados criam; editores revisam).
+    match /content_trail_suggestions/{id} {
+      allow read: if isContentEditor();
+      allow create: if isSignedIn()
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.status == 'open'
+        && request.resource.data.text is string
+        && request.resource.data.text.size() >= 4
+        && request.resource.data.text.size() <= 400
+        && request.resource.data.realmId in [
+          'antigo-testamento', 'novo-testamento',
+          'vida-crista', 'teologia', 'outros'
+        ];
       allow update, delete: if isContentEditor();
     }
 

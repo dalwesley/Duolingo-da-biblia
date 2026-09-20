@@ -1,0 +1,54 @@
+import 'package:flutter_test/flutter_test.dart';
+import 'package:trilha_app/widgets/portrait_face.dart';
+
+void main() {
+  group('PortraitStyle', () {
+    test('fromStorage defaults to photo', () {
+      expect(PortraitStyleX.fromStorage(null), PortraitStyle.photo);
+      expect(PortraitStyleX.fromStorage('nope'), PortraitStyle.photo);
+    });
+
+    test('round-trips storage keys', () {
+      for (final style in PortraitStyle.values) {
+        expect(PortraitStyleX.fromStorage(style.storageKey), style);
+      }
+    });
+
+    test('tryParse ignores unknown', () {
+      expect(PortraitStyleX.tryParse('letter'), PortraitStyle.letter);
+      expect(PortraitStyleX.tryParse(''), isNull);
+    });
+  });
+
+  group('PortraitFace.resolve', () {
+    test('letter and avatar stay even with photo', () {
+      expect(
+        PortraitFace.resolve(PortraitStyle.letter, 'https://x'),
+        PortraitStyle.letter,
+      );
+      expect(
+        PortraitFace.resolve(PortraitStyle.avatar, 'https://x'),
+        PortraitStyle.avatar,
+      );
+    });
+
+    test('photo falls back to avatar without a real portrait', () {
+      expect(PortraitFace.resolve(PortraitStyle.photo, null), PortraitStyle.avatar);
+      expect(PortraitFace.resolve(PortraitStyle.photo, ''), PortraitStyle.avatar);
+      expect(
+        PortraitFace.resolve(
+          PortraitStyle.photo,
+          'https://lh3.googleusercontent.com/a/ACg8ocLetterOnly=s96-c',
+        ),
+        PortraitStyle.avatar,
+      );
+      expect(
+        PortraitFace.resolve(
+          PortraitStyle.photo,
+          'https://lh3.googleusercontent.com/a-/AOh14RealPhoto=s96-c',
+        ),
+        PortraitStyle.photo,
+      );
+    });
+  });
+}

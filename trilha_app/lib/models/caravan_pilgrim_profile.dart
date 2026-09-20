@@ -84,6 +84,7 @@ class CaravanPilgrimProfile {
   final String? lastTrailTitle;
   final String? lastMissionInsight;
   final String? lastMissionRef;
+  final String? photoUrl;
 
   const CaravanPilgrimProfile({
     this.uid,
@@ -118,6 +119,7 @@ class CaravanPilgrimProfile {
     this.lastTrailTitle,
     this.lastMissionInsight,
     this.lastMissionRef,
+    this.photoUrl,
   });
 
   int get missionsCompleted => completedMissions.length;
@@ -168,6 +170,7 @@ class CaravanPilgrimProfile {
     required int steps,
     String? lastWalkDate,
     String? lastSeenDate,
+    String? photoUrl,
   }) {
     return CaravanPilgrimProfile(
       uid: uid,
@@ -175,6 +178,7 @@ class CaravanPilgrimProfile {
       steps: steps,
       lastWalkDate: lastWalkDate,
       lastSeenDate: lastSeenDate,
+      photoUrl: photoUrl,
     );
   }
 
@@ -182,6 +186,7 @@ class CaravanPilgrimProfile {
     required String uid,
     required Map<String, dynamic> data,
     String? fallbackName,
+    String? fallbackPhotoUrl,
   }) {
     final name = _asName(data['userName']) ??
         _asName(data['name']) ??
@@ -214,6 +219,7 @@ class CaravanPilgrimProfile {
       lastMissionSlug: _asName(data['lastMissionSlug']),
       lastMissionCompletedDate: _asDateKey(data['lastMissionCompletedDate']),
       prefs: CaravanProfilePrefs.fromMap(data['caravanProfilePrefs']),
+      photoUrl: _asName(data['photoUrl']) ?? _asName(fallbackPhotoUrl),
     );
   }
 
@@ -352,6 +358,7 @@ class CaravanPilgrimProfile {
       lastTrailTitle: trailTitle,
       lastMissionInsight: missionInsight,
       lastMissionRef: missionRef,
+      photoUrl: photoUrl,
     );
   }
 

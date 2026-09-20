@@ -5,6 +5,7 @@ import '../data/season_walk_catalog.dart';
 import '../models/trail.dart';
 import '../services/analytics_service.dart';
 import '../services/companion_service.dart';
+import '../services/corner_service.dart';
 import '../services/league_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
@@ -16,6 +17,7 @@ import '../models/daily_quest.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/comeback_sheet.dart';
 import '../widgets/companion_nudge_home_card.dart';
+import '../widgets/corner_home_card.dart';
 import '../widgets/daily_chest_card.dart';
 import '../widgets/daily_quests_card.dart';
 import '../widgets/hero_continue_card.dart';
@@ -306,6 +308,7 @@ class _HomeScreenState extends State<HomeScreen>
     _maybePromptReminders(progress);
 
     final nudge = context.watch<CompanionService>().incomingNudge;
+    final corner = context.watch<CornerService>().homeCard;
     final walk = current != null
         ? () => widget.onOpenMission(current.slug)
         : widget.onOpenTrilhas;
@@ -341,6 +344,16 @@ class _HomeScreenState extends State<HomeScreen>
                   companion: nudge,
                   onWalk: walk,
                   onOpenCompanhia: widget.onOpenLeague,
+                ),
+              ),
+            ],
+            if (corner != null) ...[
+              const SizedBox(height: AppSpace.md),
+              _reveal(
+                0,
+                CornerHomeCard(
+                  challenge: corner,
+                  onWalk: () => widget.onOpenMission(corner.missionSlug),
                 ),
               ),
             ],

@@ -27,7 +27,7 @@ const NAV = [
   { route: 'trails', label: 'Trilhas', icon: '🗺️', hint: 'Passos e versos' },
   { route: 'bank', label: 'Perguntas', icon: '❓', hint: 'Quiz, V/F, complete' },
   { route: 'studies', label: 'Estudos', icon: '📖', hint: 'Preparo (opcional)' },
-  { route: 'reports', label: 'Relatos', icon: '⚑', hint: 'Erros reportados' },
+  { route: 'reports', label: 'Relatos', icon: '⚑', hint: 'Erros e sugestões' },
   { route: 'import', label: 'Importar', icon: '↕️', hint: 'Backup em lote' },
 ];
 

@@ -5,7 +5,7 @@ import '../theme/app_theme.dart';
 
 /// Humor cinematográfico do card de continuar.
 enum HeroCardMood {
-  /// Gelo já cobriu um dia nesta semana — cristal, frio, fosco.
+  /// Gelo cobriu ontem — cristal, frio, fosco.
   frozen,
 
   /// Em risco, mas ainda dá tempo — pó, sépia, filme velho.
@@ -860,15 +860,17 @@ class HeroCardMoodStyle {
 /// Resolve mood a partir do progresso.
 ///
 /// Dia já caminhado → vivo (o gelo fica no orbe da semana, não no CTA).
-/// Em risco (ainda dá para cumprir) → empoeirado.
-/// Congelado só se o gelo cobriu um dia e hoje ainda não foi caminhado.
+/// Em risco hoje, ou buraco sem cobertura → empoeirado.
+/// Congelado só se o gelo cobriu ontem e hoje ainda não foi caminhado.
+/// Gelo usado mais cedo na semana NÃO congela um buraco novo.
 HeroCardMood resolveHeroCardMood({
   required bool atRisk,
-  required bool freezeUsedThisWeek,
+  required bool yesterdayFrozen,
   required bool walkedToday,
+  bool returningAfterGap = false,
 }) {
   if (walkedToday) return HeroCardMood.alive;
-  if (atRisk) return HeroCardMood.dusty;
-  if (freezeUsedThisWeek) return HeroCardMood.frozen;
+  if (yesterdayFrozen) return HeroCardMood.frozen;
+  if (atRisk || returningAfterGap) return HeroCardMood.dusty;
   return HeroCardMood.alive;
 }

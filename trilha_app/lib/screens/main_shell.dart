@@ -6,6 +6,7 @@ import '../models/walk_companion.dart';
 import '../services/app_update_service.dart';
 import '../services/backend_service.dart';
 import '../services/companion_service.dart';
+import '../services/corner_service.dart';
 import '../services/home_widget_service.dart';
 import '../services/invite_deep_link_service.dart';
 import '../services/league_service.dart';
@@ -94,6 +95,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       };
       NotificationService.instance.onRemoteNudge = () {
         unawaited(context.read<CompanionService>().refresh());
+        unawaited(context.read<CornerService>().refresh());
       };
       unawaited(
         NotificationService.instance.initRemote(
@@ -278,6 +280,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       _lastResumeHydrateAt = DateTime.now();
 
       unawaited(_syncCompanionAndCelebrateReferral(progress));
+      unawaited(context.read<CornerService>().refresh());
 
       await backend.settleAndSyncLeague(
         progress,

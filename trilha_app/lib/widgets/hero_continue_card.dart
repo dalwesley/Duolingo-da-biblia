@@ -99,10 +99,12 @@ class _HeroContinueCardState extends State<HeroContinueCard>
     final progress = context.watch<ProgressService>();
     final hasFreeze = progress.hasStreakFreeze;
     final walkedToday = progress.walkedToday;
+    final returningAfterGap = progress.isReturningAfterGap;
     final mood = resolveHeroCardMood(
       atRisk: widget.atRisk,
-      freezeUsedThisWeek: progress.streakFreezeUsedThisWeek,
+      yesterdayFrozen: progress.yesterdayWasFrozen,
       walkedToday: walkedToday,
+      returningAfterGap: returningAfterGap,
     );
     final style = HeroCardMoodStyle.of(mood, trailAccent: trailAccent);
 
@@ -127,11 +129,13 @@ class _HeroContinueCardState extends State<HeroContinueCard>
     final countdown = progress.streakRiskCountdown;
     final riskLine = switch (mood) {
       HeroCardMood.frozen =>
-        'O gelo cobriu 1 dia nesta semana · sequência preservada',
-      HeroCardMood.dusty => DustCopy.heroRiskLine(
-        countdown: countdown,
-        hasFreeze: hasFreeze,
-      ),
+        'O gelo cobriu ontem · sequência preservada',
+      HeroCardMood.dusty => returningAfterGap
+          ? DustCopy.heroGapLine(hasFreeze: hasFreeze)
+          : DustCopy.heroRiskLine(
+              countdown: countdown,
+              hasFreeze: hasFreeze,
+            ),
       HeroCardMood.alive => null,
     };
 

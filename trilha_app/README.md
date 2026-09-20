@@ -2,7 +2,7 @@
 
 App nativo para iOS e Android — missões diárias para criar hábito de ler e estudar a Bíblia.
 
-Versão: ver `pubspec.yaml` (**1.0.23+23**). Norte do produto: [`../docs/PRODUTO.md`](../docs/PRODUTO.md).
+Versão: ver `pubspec.yaml` (**1.0.24+24**). Norte do produto: [`../docs/PRODUTO.md`](../docs/PRODUTO.md).
 
 ## Rodar no celular
 

@@ -76,6 +76,8 @@ class HomePlayerHeader extends StatelessWidget {
                 UserAvatar(
                   name: progress.userName,
                   photoUrl: backend.userPhotoUrl,
+                  seed: backend.uid,
+                  style: progress.settings.portraitStyle,
                   radius: 22,
                 ),
                 const SizedBox(width: 12),
@@ -144,11 +146,14 @@ class HomePlayerHeader extends StatelessWidget {
                 Expanded(
                   child: _Stat(
                     glyph: CinematicGlyph.frost,
-                    accent: progress.streakFreezeAvailable
-                        ? AppColors.iceSoft
-                        : a.textMuted(0.55),
-                    label: progress.streakFreezeAvailable ? '1' : '0',
-                    hint: progress.streakFreezeAvailable ? 'gelo' : 'usado',
+                    accent: progress.streakFreezeUsedThisWeek
+                        ? a.textMuted(0.55)
+                        : AppColors.iceSoft,
+                    label: progress.streakFreezeUsedThisWeek ||
+                            progress.streakFreezeAvailable
+                        ? '1'
+                        : '0',
+                    hint: progress.streakFreezeUsedThisWeek ? 'usado' : 'gelo',
                   ),
                 ),
               ],

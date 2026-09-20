@@ -4,11 +4,15 @@ import 'package:provider/provider.dart';
 
 import '../models/caravan_profile_prefs.dart';
 import '../models/caravan_pilgrim_profile.dart';
+import '../models/trail.dart';
+import '../data/trail_repository.dart';
 import '../services/backend_service.dart';
 import '../services/league_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
+import 'corner_profile_cta.dart';
+import 'portrait_face.dart';
 import 'pilgrim_profile_sections.dart';
 import 'stway_brand.dart';
 
@@ -53,6 +57,7 @@ class _CaravanPilgrimSheet extends StatefulWidget {
 
 class _CaravanPilgrimSheetState extends State<_CaravanPilgrimSheet> {
   CaravanPilgrimProfile? _profile;
+  List<Trail> _catalog = const [];
   String? _error;
   bool _loading = true;
 
@@ -76,13 +81,17 @@ class _CaravanPilgrimSheetState extends State<_CaravanPilgrimSheet> {
     }
     try {
       final backend = context.read<BackendService>();
-      final enriched = await loadEnrichedVisitorProfile(
-        entry: widget.entry,
-        backend: backend,
-      );
+      final results = await Future.wait<Object?>([
+        loadEnrichedVisitorProfile(
+          entry: widget.entry,
+          backend: backend,
+        ),
+        TrailRepository().getTrails(),
+      ]);
       if (!mounted) return;
       setState(() {
-        _profile = enriched;
+        _profile = results[0] as CaravanPilgrimProfile;
+        _catalog = results[1] as List<Trail>;
         _error = null;
         _loading = false;
       });
@@ -97,6 +106,7 @@ class _CaravanPilgrimSheetState extends State<_CaravanPilgrimSheet> {
           steps: widget.entry.steps,
           lastWalkDate: widget.entry.lastWalkDate,
           lastSeenDate: widget.entry.lastSeenDate,
+          photoUrl: widget.entry.photoUrl,
         );
         _error = null;
         _loading = false;
@@ -218,6 +228,10 @@ class _CaravanPilgrimSheetState extends State<_CaravanPilgrimSheet> {
                                     profile: profile!,
                                     weeklySteps: widget.weeklySteps,
                                   ),
+                                  CornerProfileCta(
+                                    profile: profile,
+                                    catalog: _catalog,
+                                  ),
                                   Padding(
                                     padding: const EdgeInsets.fromLTRB(
                                       AppSpace.screen,
@@ -261,8 +275,7 @@ class _VisitorPoster extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final rankColor = pilgrimRankAccent(rank);
-    final initial =
-        profile.name.isEmpty ? '?' : profile.name[0].toUpperCase();
+    final seed = profile.uid ?? entry.uid ?? profile.name;
     final showStats = profile.prefs.shouldShow(
       CaravanProfileSection.ranking,
       isOwner: false,
@@ -335,6 +348,7 @@ class _VisitorPoster extends StatelessWidget {
                             Container(
                               width: 52,
                               height: 52,
+                              clipBehavior: Clip.antiAlias,
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
                                 color: AppColors.nightMid,
@@ -345,14 +359,12 @@ class _VisitorPoster extends StatelessWidget {
                                   width: 2,
                                 ),
                               ),
-                              child: Center(
-                                child: Text(
-                                  initial,
-                                  style: AppTypography.display(
-                                    size: 22,
-                                    color: a.text,
-                                  ),
-                                ),
+                              child: PortraitFace(
+                                name: profile.name,
+                                photoUrl: profile.photoUrl ?? entry.photoUrl,
+                                seed: seed,
+                                size: 52,
+                                style: entry.portraitStyle,
                               ),
                             ),
                             Positioned(

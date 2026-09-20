@@ -13,6 +13,7 @@ import '../models/pilgrim_medals.dart';
 import '../services/analytics_service.dart';
 import '../services/backend_service.dart';
 import '../services/companion_service.dart';
+import '../services/corner_service.dart';
 import '../services/league_service.dart';
 import '../services/progress_service.dart';
 import '../services/sound_service.dart';
@@ -289,6 +290,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                   userLastWalkDate: progress.lastPlayedDate,
                   userLastSeenDate:
                       DateTime.now().toIso8601String().substring(0, 10),
+                  userPhotoUrl: backend.userPhotoUrl,
                   realPlayers: [
                     for (final p in peers)
                       LeagueEntry(
@@ -297,6 +299,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                         steps: p.steps,
                         lastWalkDate: p.lastWalkDate,
                         lastSeenDate: p.lastSeenDate,
+                        photoUrl: p.photoUrl,
                       ),
                   ],
                 );
@@ -346,6 +349,16 @@ class _CelebrationScreenState extends State<CelebrationScreen>
               isReplay: widget.isReplay,
               perfect: widget.perfect,
             );
+            if (!widget.isReplay && mounted) {
+              unawaited(
+                context.read<CornerService>().reportMissionComplete(
+                  progress: progress,
+                  missionSlug: widget.missionSlug,
+                  correct: widget.correct,
+                  total: widget.total,
+                ),
+              );
+            }
             final ttv = await progress.markFirstLessonIfNeeded(
               trailSlug: widget.trailSlug,
               missionSlug: widget.missionSlug,

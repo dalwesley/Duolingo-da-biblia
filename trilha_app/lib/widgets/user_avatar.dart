@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
-import '../theme/app_theme.dart';
+import 'portrait_face.dart';
 
-/// Foto do Google com fallback para iniciais.
+/// Foto, letra ou retrato ilustrado — conforme [PortraitStyle].
 class UserAvatar extends StatelessWidget {
   final String? photoUrl;
   final String name;
   final double radius;
   final VoidCallback? onTap;
   final Color? borderColor;
+  final String? seed;
+  final PortraitStyle style;
 
   const UserAvatar({
     super.key,
@@ -16,14 +18,9 @@ class UserAvatar extends StatelessWidget {
     this.radius = 20,
     this.onTap,
     this.borderColor,
+    this.seed,
+    this.style = PortraitStyle.photo,
   });
-
-  String get _initials {
-    final parts = name.trim().split(RegExp(r'\s+'));
-    if (parts.isEmpty || parts.first.isEmpty) return '?';
-    if (parts.length == 1) return parts.first[0].toUpperCase();
-    return '${parts.first[0]}${parts.last[0]}'.toUpperCase();
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -42,22 +39,13 @@ class UserAvatar extends StatelessWidget {
           ),
         ],
       ),
-      child: CircleAvatar(
-        radius: radius - 1.5,
-        backgroundColor: AppColors.nightLight,
-        backgroundImage: photoUrl != null && photoUrl!.isNotEmpty
-            ? NetworkImage(photoUrl!)
-            : null,
-        child: photoUrl == null || photoUrl!.isEmpty
-            ? Text(
-                _initials,
-                style: TextStyle(
-                  fontSize: radius * 0.72,
-                  fontWeight: FontWeight.w900,
-                  color: AppColors.accent,
-                ),
-              )
-            : null,
+      clipBehavior: Clip.antiAlias,
+      child: PortraitFace(
+        name: name,
+        photoUrl: photoUrl,
+        seed: seed,
+        size: radius * 2,
+        style: style,
       ),
     );
 

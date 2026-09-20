@@ -57,4 +57,24 @@ void main() {
       expect(entry.lastOnlineLabel, 'Online hoje');
     });
   });
+
+  group('LeagueService.onlineNow', () {
+    test('keeps ranking order and original ranks', () {
+      final today = DateTime.now().toIso8601String().substring(0, 10);
+      final entries = [
+        LeagueEntry(name: 'A', steps: 100, lastSeenDate: today),
+        const LeagueEntry(name: 'B', steps: 80),
+        LeagueEntry(name: 'C', steps: 60, lastSeenDate: today),
+      ];
+      final online = LeagueService.onlineNow(entries);
+      expect(online.map((p) => p.entry.name), ['A', 'C']);
+      expect(online.map((p) => p.rank), [1, 3]);
+    });
+
+    test('onlineCountLabel', () {
+      expect(LeagueService.onlineCountLabel(0), '0 online');
+      expect(LeagueService.onlineCountLabel(1), '1 online');
+      expect(LeagueService.onlineCountLabel(3), '3 online');
+    });
+  });
 }

@@ -1,3 +1,5 @@
+import 'portrait_style.dart';
+
 /// Sala privada de caminhada — grupo fechado por código de convite.
 class StudyRoom {
   final String code;
@@ -53,6 +55,8 @@ class RoomMember {
   final bool isUser;
   /// YYYY-MM-DD da última caminhada sincronizada (se houver).
   final String? lastWalk;
+  final String? photoUrl;
+  final PortraitStyle portraitStyle;
 
   const RoomMember({
     required this.uid,
@@ -60,6 +64,8 @@ class RoomMember {
     required this.steps,
     this.isUser = false,
     this.lastWalk,
+    this.photoUrl,
+    this.portraitStyle = PortraitStyle.photo,
   });
 
   bool get walkedThisWeek => steps > 0;

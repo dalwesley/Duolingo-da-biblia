@@ -14,6 +14,8 @@ import '../utils/appearance.dart';
 import '../utils/bible_reading_theme.dart';
 import '../utils/layout_utils.dart';
 import '../utils/liturgical_calendar.dart';
+import '../widgets/bible_book_intro_card.dart';
+import '../widgets/bible_chapter_grid.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/share_verse_sheet.dart';
@@ -1212,9 +1214,7 @@ class _ChapterPicker extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
     final progress = context.watch<ProgressService>();
-    final readCount = progress.readChaptersInBook(book.abbrev);
     final topPad = topBar == null
         ? AppSpace.sm
         : MediaQuery.viewPaddingOf(context).top + AppSpace.sm;
@@ -1234,61 +1234,14 @@ class _ChapterPicker extends StatelessWidget {
               style: AppTypography.display(size: 32, color: Colors.white),
             ),
           ),
-          const SizedBox(height: AppSpace.xs),
-        ],
-        Center(
-          child: Text(
-            readCount > 0
-                ? '$readCount de ${book.chapters.length} capítulos lidos'
-                : '${book.chapters.length} capítulos',
-            style: AppTypography.body(size: 12, color: a.textMuted(0.6)),
-          ),
-        ),
-        if (readCount > 0) ...[
           const SizedBox(height: AppSpace.md),
-          AppProgressBar(
-            value: readCount / book.chapters.length,
-            trackColor: Colors.white.withValues(alpha: 0.08),
-          ),
         ],
-        const SizedBox(height: AppSpace.section),
-        Wrap(
-          spacing: AppSpace.sm,
-          runSpacing: AppSpace.sm,
-          children: List.generate(book.chapters.length, (i) {
-            final chapter = i + 1;
-            final read = progress.hasReadBibleChapter(book.abbrev, chapter);
-            return Material(
-              color: Colors.transparent,
-              child: InkWell(
-                onTap: () => onPick(chapter),
-                borderRadius: BorderRadius.circular(AppRadii.pill),
-                child: Ink(
-                  width: 48,
-                  height: 48,
-                  decoration: BoxDecoration(
-                    color: read ? null : a.cardFillSoft,
-                    gradient: read ? AppGradients.gold : null,
-                    borderRadius: BorderRadius.circular(AppRadii.pill),
-                    border: Border.all(
-                      color: read
-                          ? AppColors.accent.withValues(alpha: 0.7)
-                          : a.cardBorder,
-                    ),
-                  ),
-                  child: Center(
-                    child: Text(
-                      '$chapter',
-                      style: AppTypography.title(
-                        size: 15,
-                        color: read ? AppColors.inkOnAccent : a.text,
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-            );
-          }),
+        BibleBookIntroCard(book: book),
+        const SizedBox(height: AppSpace.xl),
+        BibleChapterGrid(
+          count: book.chapters.length,
+          isRead: (c) => progress.hasReadBibleChapter(book.abbrev, c),
+          onPick: onPick,
         ),
       ],
     );
@@ -2096,7 +2049,7 @@ class BibleReaderView extends StatelessWidget {
                 color: reading.verseNumber,
               )
             : CopperCta(
-                label: 'Avançar na leitura',
+                label: 'Marcar como lido',
                 onTap: () async {
                   await progress.recordBibleReading(book.abbrev, chapter);
                   if (context.mounted) {

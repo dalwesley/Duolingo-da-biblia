@@ -21,6 +21,7 @@ export const COL = {
   studies: 'content_mission_studies',
   meta: 'content_meta',
   reports: 'content_question_reports',
+  suggestions: 'content_trail_suggestions',
 };
 
 function sortByOrder(items) {

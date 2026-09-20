@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'remote_config_service.dart';
+import '../models/portrait_style.dart';
 
 /// Divisões da caravana semanal — jornada coletiva, tema bíblico.
 enum LeagueTier { semente, videira, oliveira, cedro, estrela }
@@ -163,6 +164,8 @@ class LeagueEntry {
   final String? lastWalkDate;
   /// Último dia online (`YYYY-MM-DD`).
   final String? lastSeenDate;
+  final String? photoUrl;
+  final PortraitStyle portraitStyle;
 
   const LeagueEntry({
     this.uid,
@@ -171,6 +174,8 @@ class LeagueEntry {
     this.isUser = false,
     this.lastWalkDate,
     this.lastSeenDate,
+    this.photoUrl,
+    this.portraitStyle = PortraitStyle.photo,
   });
 
   static String? formatShortBrDate(String? yyyyMmDd) {
@@ -331,6 +336,22 @@ class LeagueService extends ChangeNotifier {
   /// Campo competitivo: pelo menos [minPeerCount] pares reais.
   static bool fieldIsCompetitive(int peerCount) =>
       peerCount >= minPeerCount;
+
+  /// Peregrinos vistos hoje, na ordem do ranking (posição original).
+  static List<({LeagueEntry entry, int rank})> onlineNow(
+    List<LeagueEntry> entries,
+  ) {
+    return [
+      for (var i = 0; i < entries.length; i++)
+        if (entries[i].isOnlineToday) (entry: entries[i], rank: i + 1),
+    ];
+  }
+
+  static String onlineCountLabel(int n) {
+    if (n <= 0) return '0 online';
+    if (n == 1) return '1 online';
+    return '$n online';
+  }
 
   int tierIndex = 0;
 
@@ -648,6 +669,8 @@ class LeagueService extends ChangeNotifier {
     String? userUid,
     String? userLastWalkDate,
     String? userLastSeenDate,
+    String? userPhotoUrl,
+    PortraitStyle userPortraitStyle = PortraitStyle.photo,
     List<LeagueEntry> realPlayers = const [],
   }) {
     final real = realPlayers.take(groupSize - 1).toList();
@@ -660,6 +683,8 @@ class LeagueService extends ChangeNotifier {
         isUser: true,
         lastWalkDate: userLastWalkDate,
         lastSeenDate: userLastSeenDate,
+        photoUrl: userPhotoUrl,
+        portraitStyle: userPortraitStyle,
       ),
     ]..sort(_compareEntries);
     return entries;
@@ -672,6 +697,8 @@ class LeagueService extends ChangeNotifier {
     String? userUid,
     String? userLastWalkDate,
     String? userLastSeenDate,
+    String? userPhotoUrl,
+    PortraitStyle userPortraitStyle = PortraitStyle.photo,
     List<LeagueEntry> realPlayers = const [],
   }) {
     final entries = [
@@ -683,6 +710,8 @@ class LeagueService extends ChangeNotifier {
         isUser: true,
         lastWalkDate: userLastWalkDate,
         lastSeenDate: userLastSeenDate,
+        photoUrl: userPhotoUrl,
+        portraitStyle: userPortraitStyle,
       ),
     ]..sort(_compareEntries);
     return entries;

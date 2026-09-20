@@ -175,6 +175,9 @@ class AnalyticsService {
         'correct': correct,
       });
 
+  Future<void> logEvent(String name, [Map<String, Object>? params]) =>
+      _log(name, params);
+
   Future<void> _log(String name, [Map<String, Object>? params]) async {
     if (!_ready) return;
     try {

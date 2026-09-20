@@ -11,10 +11,12 @@ import '../utils/layout_utils.dart';
 import '../utils/realm_visuals.dart';
 import '../utils/trail_progress.dart';
 import '../widgets/cinematic_icon.dart';
+import '../widgets/coming_soon_trails_card.dart';
 import '../widgets/hero_continue_card.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/offline_curriculum_dialog.dart';
 import '../widgets/realm_world_atmosphere.dart';
+import '../widgets/trail_suggestion_sheet.dart';
 import '../widgets/ui_primitives.dart';
 import 'realm_journey_screen.dart';
 import 'trail_map_screen.dart';
@@ -148,6 +150,16 @@ class _TrilhasScreenState extends State<TrilhasScreen>
           );
         },
       ),
+    );
+  }
+
+  Future<void> _suggestTrail() async {
+    final ok = await showTrailSuggestionSheet(context);
+    if (!mounted || !ok) return;
+    showAppToastFor(
+      context,
+      message: 'Sugestão guardada. Obrigado por abrir o caminho.',
+      glyph: CinematicGlyph.spark,
     );
   }
 
@@ -402,6 +414,10 @@ class _TrilhasScreenState extends State<TrilhasScreen>
               ),
             ),
           ),
+        _reveal(
+          2 + realms.length,
+          ComingSoonTrailsCard(onSuggest: _suggestTrail),
+        ),
       ],
     );
   }
