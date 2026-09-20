@@ -138,102 +138,102 @@ class _PilgrimMedalVaultsPanelState extends State<PilgrimMedalVaultsPanel> {
     final rareTiles = PilgrimMedals.visibleDiscoveryTiles(_discoveryVault);
     final hiddenRares = PilgrimMedals.hiddenDiscoveryCount(_discoveryVault);
 
+    final a = Appearance.of(context);
+    final journeyLit = journey?.unlockedCount ?? 0;
+    final journeyTotal = journey?.total ?? 0;
+
     return GlassCard(
-      padding: const EdgeInsets.fromLTRB(16, 14, 16, 16),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          const CardHeader(label: 'Medalhas'),
-          const SizedBox(height: 12),
-          if (hasTrails) ...[
-            _MedalTabBar(
-              tab: _tab,
-              trailCount: trailVaults.length,
-              onChanged: (tab) => setState(() => _tab = tab),
+      padding: EdgeInsets.zero,
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(AppMetrics.cardRadius),
+        child: Stack(
+          children: [
+            Positioned.fill(
+              child: IgnorePointer(
+                child: CustomPaint(
+                  painter: const MedalSpotlightPainter(
+                    accent: AppColors.medalGold,
+                    intensity: 0.9,
+                  ),
+                ),
+              ),
             ),
-            const SizedBox(height: 12),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 16, 16, 18),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Row(
+                    children: [
+                      Container(
+                        width: 3,
+                        height: 18,
+                        decoration: BoxDecoration(
+                          color: AppColors.medalGold,
+                          borderRadius: BorderRadius.circular(2),
+                        ),
+                      ),
+                      const SizedBox(width: 10),
+                      Expanded(
+                        child: Text(
+                          'Medalhas',
+                          style: AppTypography.title(size: 16, color: a.text),
+                        ),
+                      ),
+                      if (journeyTotal > 0)
+                        CountBadge(
+                          '$journeyLit/$journeyTotal',
+                          color: AppColors.medalGold,
+                        ),
+                    ],
+                  ),
+                  const SizedBox(height: 14),
+                  if (hasTrails) ...[
+                    _MedalTabBar(
+                      tab: _tab,
+                      trailCount: trailVaults.length,
+                      onChanged: (tab) => setState(() => _tab = tab),
+                    ),
+                    const SizedBox(height: 14),
+                  ],
+                  if (showJourney && journey != null)
+                    _FamilyEmblemRow(
+                      tracks: journey.tracks,
+                      featuredTrackId: proximity?.track.id,
+                    ),
+                  if (showJourney && _seasonVault != null) ...[
+                    const SizedBox(height: 14),
+                    Text(
+                      'TEMPORADA',
+                      style: AppTypography.label(
+                        size: 9,
+                        letterSpacing: 1.4,
+                        color: AppColors.medalGold.withValues(alpha: 0.72),
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    _FamilyEmblemRow(
+                      tracks: _seasonVault!.tracks,
+                      featuredTrackId: proximity?.track.id,
+                    ),
+                  ],
+                  if (!showJourney)
+                    _TrailEmblemStrip(
+                      vaults: trailVaults,
+                      featuredTrackId: proximity?.track.id,
+                    ),
+                  if (showJourney &&
+                      (rareTiles.isNotEmpty || hiddenRares > 0)) ...[
+                    const SizedBox(height: 18),
+                    _RareStrip(
+                      tiles: rareTiles,
+                      hiddenCount: hiddenRares,
+                    ),
+                  ],
+                ],
+              ),
+            ),
           ],
-          if (proximity != null) ...[
-            _ProximityWhisper(
-              proximity: proximity,
-              onTap: () {
-                final trackState = _trackStateFor(proximity.track.id);
-                if (trackState != null) {
-                  showTrackDetailSheet(context, trackState);
-                }
-              },
-            ),
-            const SizedBox(height: 12),
-          ],
-          if (showJourney && journey != null)
-            _FamilyEmblemRow(
-              tracks: journey.tracks,
-              featuredTrackId: proximity?.track.id,
-            ),
-          if (showJourney && _seasonVault != null) ...[
-            const SizedBox(height: 10),
-            _FamilyEmblemRow(
-              tracks: _seasonVault!.tracks,
-              featuredTrackId: proximity?.track.id,
-            ),
-          ],
-          if (!showJourney)
-            _TrailEmblemStrip(
-              vaults: trailVaults,
-              featuredTrackId: proximity?.track.id,
-            ),
-          if (showJourney && (rareTiles.isNotEmpty || hiddenRares > 0)) ...[
-            const SizedBox(height: 16),
-            _RareStrip(
-              tiles: rareTiles,
-              hiddenCount: hiddenRares,
-            ),
-          ],
-        ],
-      ),
-    );
-  }
-
-  PilgrimTrackState? _trackStateFor(String trackId) {
-    for (final vault in _vaults ?? const <PilgrimVaultState>[]) {
-      for (final track in vault.tracks) {
-        if (track.track.id == trackId) return track;
-      }
-    }
-    return null;
-  }
-}
-
-class _ProximityWhisper extends StatelessWidget {
-  final PilgrimTrackProximity proximity;
-  final VoidCallback onTap;
-
-  const _ProximityWhisper({
-    required this.proximity,
-    required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final accent = tierColor(proximity.nextLevel.tier);
-    return Material(
-      color: Colors.transparent,
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(AppRadii.sm),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 4),
-          child: Text(
-            proximity.isNearMiss
-                ? proximity.actionMessage
-                : proximity.monitorMessage,
-            textAlign: TextAlign.center,
-            style: AppTypography.label(
-              size: 11,
-              letterSpacing: 0.35,
-              color: accent.withValues(alpha: 0.9),
-            ),
-          ),
         ),
       ),
     );
@@ -325,12 +325,14 @@ class _RareStrip extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
+        Divider(color: AppColors.medalMirra.withValues(alpha: 0.18), height: 1),
+        const SizedBox(height: 12),
         Text(
-          'RARAS',
+          'DESCOBERTAS',
           style: AppTypography.label(
-            size: 10,
-            letterSpacing: 1.2,
-            color: AppColors.medalMirra.withValues(alpha: 0.8),
+            size: 9,
+            letterSpacing: 1.4,
+            color: AppColors.medalMirra.withValues(alpha: 0.88),
           ),
         ),
         const SizedBox(height: 10),
@@ -342,7 +344,7 @@ class _RareStrip extends StatelessWidget {
             for (final tile in tiles)
               MedalVaultMedallion(
                 tile: tile,
-                size: 44,
+                size: 52,
                 onTap: () => showMedalTileSheet(context, tile),
               ),
             if (hiddenCount > 0)
@@ -380,25 +382,22 @@ class _MysteryCount extends StatelessWidget {
       color: Colors.transparent,
       child: InkWell(
         onTap: onTap,
-        customBorder: const CircleBorder(),
-        child: SizedBox(
-          width: 44,
-          height: 44,
-          child: DecoratedBox(
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Colors.white.withValues(alpha: 0.04),
-              border: Border.all(color: Colors.white.withValues(alpha: 0.12)),
-            ),
-            child: Center(
-              child: Text(
-                '$count',
-                style: AppTypography.label(
-                  size: 12,
-                  letterSpacing: 0.4,
-                  color: a.textMuted(0.55),
-                ),
-              ),
+        borderRadius: BorderRadius.circular(AppRadii.pill),
+        child: Container(
+          height: 52,
+          padding: const EdgeInsets.symmetric(horizontal: 14),
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+            color: Colors.black.withValues(alpha: 0.28),
+            borderRadius: BorderRadius.circular(AppRadii.pill),
+            border: Border.all(color: AppColors.medalMirra.withValues(alpha: 0.35)),
+          ),
+          child: Text(
+            count == 1 ? '1 no véu' : '$count no véu',
+            style: AppTypography.label(
+              size: 10,
+              letterSpacing: 0.8,
+              color: a.textMuted(0.7),
             ),
           ),
         ),
@@ -420,79 +419,77 @@ class _MedalTabBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(3),
-      decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.04),
-        borderRadius: BorderRadius.circular(AppRadii.md),
-        border: Border.all(color: Colors.white.withValues(alpha: 0.08)),
-      ),
-      child: Row(
-        children: [
-          Expanded(
-            child: _MedalTabChip(
-              label: 'Jornada',
-              selected: tab == _MedalVaultTab.journey,
-              onTap: () => onChanged(_MedalVaultTab.journey),
-            ),
+    return Row(
+      children: [
+        Expanded(
+          child: _MedalChapter(
+            label: 'Jornada',
+            selected: tab == _MedalVaultTab.journey,
+            onTap: () => onChanged(_MedalVaultTab.journey),
           ),
-          const SizedBox(width: 4),
-          Expanded(
-            child: _MedalTabChip(
-              label: 'Trilhas ($trailCount)',
-              selected: tab == _MedalVaultTab.trails,
-              onTap: () => onChanged(_MedalVaultTab.trails),
-            ),
+        ),
+        Expanded(
+          child: _MedalChapter(
+            label: 'Trilhas',
+            count: trailCount,
+            selected: tab == _MedalVaultTab.trails,
+            onTap: () => onChanged(_MedalVaultTab.trails),
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
 
-class _MedalTabChip extends StatelessWidget {
+class _MedalChapter extends StatelessWidget {
   final String label;
+  final int? count;
   final bool selected;
   final VoidCallback onTap;
 
-  const _MedalTabChip({
+  const _MedalChapter({
     required this.label,
+    this.count,
     required this.selected,
     required this.onTap,
   });
 
   @override
   Widget build(BuildContext context) {
-    return AnimatedContainer(
-      duration: const Duration(milliseconds: 220),
-      curve: Curves.easeOutCubic,
-      decoration: BoxDecoration(
-        color: selected
-            ? AppColors.medalGold.withValues(alpha: 0.18)
-            : Colors.transparent,
+    final ink = selected
+        ? AppColors.medalGold
+        : Colors.white.withValues(alpha: 0.42);
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: onTap,
         borderRadius: BorderRadius.circular(AppRadii.sm),
-        border: selected
-            ? Border.all(color: AppColors.medalGold.withValues(alpha: 0.55))
-            : null,
-      ),
-      child: Material(
-        color: Colors.transparent,
-        child: InkWell(
-          onTap: onTap,
-          borderRadius: BorderRadius.circular(AppRadii.sm),
-          child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 10),
-            child: Text(
-              label,
-              textAlign: TextAlign.center,
-              style: AppTypography.label(
-                size: 10,
-                letterSpacing: 0.6,
-                color: selected
-                    ? AppColors.medalGold
-                    : Colors.white.withValues(alpha: 0.45),
+        child: Padding(
+          padding: const EdgeInsets.only(bottom: 2),
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 8),
+                child: Text(
+                  count == null ? label.toUpperCase() : '${label.toUpperCase()}  $count',
+                  textAlign: TextAlign.center,
+                  style: AppTypography.label(
+                    size: 11,
+                    letterSpacing: 1.4,
+                    color: ink,
+                  ),
+                ),
               ),
-            ),
+              AnimatedContainer(
+                duration: const Duration(milliseconds: 220),
+                curve: Curves.easeOutCubic,
+                height: 2,
+                decoration: BoxDecoration(
+                  color: selected ? AppColors.medalGold : Colors.white.withValues(alpha: 0.08),
+                  borderRadius: BorderRadius.circular(2),
+                ),
+              ),
+            ],
           ),
         ),
       ),

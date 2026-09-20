@@ -11,10 +11,10 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ### Added
 - Encontro na celebração: carta verso-first + share em imagem (carimbo pequeno)
-- Galeria compacta de encontros no perfil; sheet compartilha a carta, não “Guardar”
 - Combo ×N na missão; placar de desafios fechados no perfil (não volta para a Home)
 
 ### Changed
+- Encontros e Medalhas no perfil: selos 2×3, capítulos e anéis — não mais grade de ícones
 - Posicionamento vs mercado (20 set noite): três donos de “missão” no BR (Bibliando, Bíblia Fácil, nós); ranking direto/indireto no pitch; canvas `stway-concorrencia-direta-indireta`
 - Rodapé da celebração: um CTA ouro; compartilhar e voltar como texto; reparo da sequência não compete com Continuar
 - Flash de acerto/erro mais curto; haptic forte no combo

@@ -152,6 +152,55 @@ class MedalRingProgress extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    return MedalHaloRing(
+      progress: progress,
+      accent: accent,
+      size: size,
+      stroke: 5,
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(
+            '$value',
+            style: AppTypography.title(
+              size: size * 0.28,
+              weight: FontWeight.w900,
+              color: accent,
+            ),
+          ),
+          Text(
+            '/$total',
+            style: AppTypography.label(
+              size: size * 0.12,
+              letterSpacing: 0.2,
+              color: a.textMuted(0.42),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Halo fino em volta de um emblema — progresso sem números.
+class MedalHaloRing extends StatelessWidget {
+  final double progress;
+  final Color accent;
+  final double size;
+  final double stroke;
+  final Widget? child;
+
+  const MedalHaloRing({
+    super.key,
+    required this.progress,
+    required this.accent,
+    this.size = 72,
+    this.stroke = 3,
+    this.child,
+  });
+
+  @override
+  Widget build(BuildContext context) {
     return SizedBox(
       width: size,
       height: size,
@@ -159,30 +208,9 @@ class MedalRingProgress extends StatelessWidget {
         painter: _MedalRingPainter(
           progress: progress,
           accent: accent,
+          stroke: stroke,
         ),
-        child: Center(
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              Text(
-                '$value',
-                style: AppTypography.title(
-                  size: size * 0.28,
-                  weight: FontWeight.w900,
-                  color: accent,
-                ),
-              ),
-              Text(
-                '/$total',
-                style: AppTypography.label(
-                  size: size * 0.12,
-                  letterSpacing: 0.2,
-                  color: a.textMuted(0.42),
-                ),
-              ),
-            ],
-          ),
-        ),
+        child: child == null ? null : Center(child: child),
       ),
     );
   }
@@ -191,14 +219,18 @@ class MedalRingProgress extends StatelessWidget {
 class _MedalRingPainter extends CustomPainter {
   final double progress;
   final Color accent;
+  final double stroke;
 
-  _MedalRingPainter({required this.progress, required this.accent});
+  _MedalRingPainter({
+    required this.progress,
+    required this.accent,
+    this.stroke = 5,
+  });
 
   @override
   void paint(Canvas canvas, Size size) {
     final center = Offset(size.width / 2, size.height / 2);
-    final radius = size.width / 2 - 5;
-    const stroke = 5.0;
+    final radius = size.width / 2 - stroke;
 
     final track = Paint()
       ..color = Colors.white.withValues(alpha: 0.08)
@@ -235,7 +267,9 @@ class _MedalRingPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant _MedalRingPainter old) =>
-      old.progress != progress || old.accent != accent;
+      old.progress != progress ||
+      old.accent != accent ||
+      old.stroke != stroke;
 }
 
 /// Medallion compacto para o grid do cofre — moeda metálica por material.
@@ -586,7 +620,8 @@ class MedalTrackEmblem extends StatelessWidget {
         ? tierColor(current.tier)
         : a.textMuted(0.38);
     final tile = PilgrimMedalTile.fromTrack(trackState);
-    final diameter = compact ? 40.0 : 48.0;
+    final diameter = compact ? 40.0 : 46.0;
+    final ring = diameter + (compact ? 10 : 12);
 
     return Material(
       color: Colors.transparent,
@@ -594,12 +629,18 @@ class MedalTrackEmblem extends StatelessWidget {
         onTap: onTap,
         borderRadius: BorderRadius.circular(AppRadii.md),
         child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 2),
+          padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 1),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              MedalVaultMedallion(tile: tile, size: diameter),
-              const SizedBox(height: 6),
+              MedalHaloRing(
+                progress: trackState.progress,
+                accent: accent,
+                size: ring,
+                stroke: featured ? 2.6 : 2.1,
+                child: MedalVaultMedallion(tile: tile, size: diameter),
+              ),
+              const SizedBox(height: 4),
               Text(
                 trackState.track.title,
                 textAlign: TextAlign.center,
@@ -607,10 +648,10 @@ class MedalTrackEmblem extends StatelessWidget {
                 overflow: TextOverflow.ellipsis,
                 style: AppTypography.label(
                   size: compact ? 8 : 9,
-                  letterSpacing: 0.2,
+                  letterSpacing: 0.25,
                   color: featured
                       ? accent
-                      : (started ? a.textMuted(0.72) : a.textMuted(0.4)),
+                      : (started ? a.textMuted(0.78) : a.textMuted(0.42)),
                 ),
               ),
             ],
