@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
-import '../cinematic/cinematic_resolver.dart';
 import '../models/corner_challenge.dart';
 import '../models/portrait_style.dart';
 import '../services/backend_service.dart';
@@ -10,13 +9,13 @@ import '../services/corner_service.dart';
 import '../services/league_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
-import 'cinematic_backdrop.dart';
 import 'cinematic_icon.dart';
+import 'immersive_background.dart';
 import 'ui_primitives.dart';
 import 'user_avatar.dart';
 
-/// Poster do desafio na Home — mesma família do card de continuar.
-class CornerHomeCard extends StatefulWidget {
+/// Convite de esquina na Home — painel social, não poster de missão.
+class CornerHomeCard extends StatelessWidget {
   final CornerChallenge challenge;
   final VoidCallback? onWalk;
 
@@ -27,15 +26,7 @@ class CornerHomeCard extends StatefulWidget {
   });
 
   @override
-  State<CornerHomeCard> createState() => _CornerHomeCardState();
-}
-
-class _CornerHomeCardState extends State<CornerHomeCard> {
-  bool _pressed = false;
-
-  @override
   Widget build(BuildContext context) {
-    final challenge = widget.challenge;
     final uid = context.watch<BackendService>().uid ?? '';
     final progress = context.watch<ProgressService>();
     final backend = context.watch<BackendService>();
@@ -45,7 +36,7 @@ class _CornerHomeCardState extends State<CornerHomeCard> {
         challenge.iAmChallenger(uid);
     final canWalk = challenge.status == CornerStatus.active &&
         !challenge.iDone(uid) &&
-        widget.onWalk != null;
+        onWalk != null;
     final settled = challenge.bothDone ||
         challenge.status == CornerStatus.settled ||
         (!challenge.isThisWeek && !incoming && !waiting);
@@ -54,11 +45,6 @@ class _CornerHomeCardState extends State<CornerHomeCard> {
     final theirName = challenge.peerName(uid);
     final days = LeagueService.daysLeft();
     final when = days <= 1 ? 'Fecha hoje' : '$days dias';
-    final world = CinematicResolver.ambientForHome(
-      trailSlug: challenge.trailSlug,
-      missionTitle: challenge.missionTitle,
-      missionSlug: challenge.missionSlug,
-    );
 
     final whisper = incoming
         ? CornerCopy.incomingFrom(theirName)
@@ -79,184 +65,106 @@ class _CornerHomeCardState extends State<CornerHomeCard> {
       if (incoming) {
         context.read<CornerService>().accept(challenge.id);
       } else if (canWalk) {
-        widget.onWalk?.call();
+        onWalk?.call();
       }
     }
 
     return Padding(
       padding: const EdgeInsets.only(bottom: AppSpace.section),
-      child: GestureDetector(
-        onTapDown: ctaLabel == null
-            ? null
-            : (_) => setState(() => _pressed = true),
-        onTapCancel: () => setState(() => _pressed = false),
-        onTapUp: ctaLabel == null
-            ? null
-            : (_) {
-                setState(() => _pressed = false);
-                if (!incoming) primary();
-              },
-        child: AnimatedScale(
-          scale: _pressed ? 0.986 : 1,
-          duration: const Duration(milliseconds: 120),
-          curve: Curves.easeOutCubic,
-          child: DecoratedBox(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
-              border: Border.all(
-                color: AppColors.accent.withValues(alpha: 0.42),
-                width: 1.5,
-              ),
-              boxShadow: AppMetrics.cardShadow(elevated: true),
-            ),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(AppMetrics.heroRadius - 1.5),
-              child: Stack(
-                children: [
-                  Positioned.fill(
-                    child: CinematicBackdrop(world: world),
+      child: GlassCard(
+        elevated: true,
+        tint: AppColors.accent,
+        padding: AppMetrics.cardPadding,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Row(
+              children: [
+                Text(
+                  CornerCopy.kicker.toUpperCase(),
+                  style: AppTypography.label(
+                    size: 11,
+                    letterSpacing: 1.8,
+                    color: AppColors.accent,
                   ),
-                  const Positioned.fill(
-                    child: DecoratedBox(
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          begin: Alignment.topCenter,
-                          end: Alignment.bottomCenter,
-                          colors: [
-                            Color(0x33070B14),
-                            Color(0x99070B14),
-                            Color(0xF2070B14),
-                          ],
-                          stops: [0, 0.42, 1],
-                        ),
+                ),
+                const Spacer(),
+                if (incoming)
+                  GestureDetector(
+                    onTap: () {
+                      HapticFeedback.lightImpact();
+                      context.read<CornerService>().decline(challenge.id);
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.all(6),
+                      child: CinematicIcon(
+                        glyph: CinematicGlyph.close,
+                        size: 16,
+                        accent: Colors.white.withValues(alpha: 0.4),
+                        framed: false,
                       ),
                     ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(20, 18, 16, 18),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          children: [
-                            Text(
-                              CornerCopy.kicker.toUpperCase(),
-                              style: AppTypography.label(
-                                size: 11,
-                                letterSpacing: 1.8,
-                                color: AppColors.accent,
-                              ),
-                            ),
-                            const Spacer(),
-                            if (incoming)
-                              GestureDetector(
-                                onTap: () {
-                                  HapticFeedback.lightImpact();
-                                  context
-                                      .read<CornerService>()
-                                      .decline(challenge.id);
-                                },
-                                child: Padding(
-                                  padding: const EdgeInsets.all(6),
-                                  child: CinematicIcon(
-                                    glyph: CinematicGlyph.close,
-                                    size: 16,
-                                    accent: Colors.white.withValues(alpha: 0.4),
-                                    framed: false,
-                                  ),
-                                ),
-                              )
-                            else
-                              Text(
-                                '+$cornerArrivalBonusSteps',
-                                style: AppTypography.label(
-                                  size: 11,
-                                  letterSpacing: 0.6,
-                                  color: AppColors.accent,
-                                ),
-                              ),
-                          ],
-                        ),
-                        const SizedBox(height: 16),
-                        _DuelRow(
-                          myName: myName,
-                          theirName: theirName,
-                          myPhoto: backend.userPhotoUrl,
-                          mySeed: backend.uid,
-                          portrait: progress.settings.portraitStyle,
-                          incoming: incoming,
-                        ),
-                        const SizedBox(height: 18),
-                        if (incoming) ...[
-                          Text(
-                            CornerCopy.incomingTitle.toUpperCase(),
-                            style: AppTypography.label(
-                              size: 11,
-                              letterSpacing: 1.4,
-                              color: AppColors.accent.withValues(alpha: 0.9),
-                            ),
-                          ),
-                          const SizedBox(height: 10),
-                        ],
-                        Text(
-                          'CENA',
-                          style: AppTypography.label(
-                            size: 10,
-                            letterSpacing: 1.8,
-                            color: Colors.white.withValues(alpha: 0.5),
-                          ),
-                        ),
-                        const SizedBox(height: 6),
-                        Text(
-                          challenge.missionTitle,
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                          style: AppTypography.display(
-                            size: 28,
-                            height: 1.08,
-                            weight: FontWeight.w900,
-                            color: Colors.white,
-                          ),
-                        ),
-                        const SizedBox(height: 8),
-                        Text(
-                          whisper,
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                          style: AppTypography.body(
-                            size: 13,
-                            height: 1.35,
-                            weight: FontWeight.w700,
-                            color: Colors.white.withValues(alpha: 0.68),
-                          ),
-                        ),
-                        if (ctaLabel != null) ...[
-                          const SizedBox(height: 18),
-                          _GoldBar(
-                            label: ctaLabel,
-                            onTap: incoming ? primary : null,
-                          ),
-                          const SizedBox(height: 10),
-                          Center(
-                            child: Text(
-                              incoming
-                                  ? '+$cornerArrivalBonusSteps na caravana · $when'
-                                  : '+$cornerArrivalBonusSteps na caravana se você fizer',
-                              style: AppTypography.body(
-                                size: 13,
-                                weight: FontWeight.w800,
-                                color: AppColors.accent.withValues(alpha: 0.88),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ],
+                  )
+                else
+                  Text(
+                    '+$cornerArrivalBonusSteps',
+                    style: AppTypography.label(
+                      size: 11,
+                      letterSpacing: 0.6,
+                      color: AppColors.accent,
                     ),
                   ),
-                ],
+              ],
+            ),
+            const SizedBox(height: 14),
+            _DuelRow(
+              myName: myName,
+              theirName: theirName,
+              myPhoto: backend.userPhotoUrl,
+              mySeed: backend.uid,
+              portrait: progress.settings.portraitStyle,
+              incoming: incoming,
+            ),
+            const SizedBox(height: 14),
+            if (incoming) ...[
+              Text(
+                CornerCopy.incomingTitle.toUpperCase(),
+                style: AppTypography.label(
+                  size: 10,
+                  letterSpacing: 1.4,
+                  color: AppColors.accent.withValues(alpha: 0.9),
+                ),
+              ),
+              const SizedBox(height: 6),
+            ],
+            Text(
+              challenge.missionTitle,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+              style: AppTypography.title(size: 18, color: Colors.white),
+            ),
+            const SizedBox(height: 4),
+            Text(
+              whisper,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+              style: AppTypography.body(
+                size: 13,
+                height: 1.35,
+                color: Colors.white.withValues(alpha: 0.62),
               ),
             ),
-          ),
+            if (ctaLabel != null) ...[
+              const SizedBox(height: 14),
+              OutlineCta(
+                label: ctaLabel,
+                leading: incoming
+                    ? CinematicGlyph.check
+                    : CinematicGlyph.path,
+                onTap: primary,
+              ),
+            ],
+          ],
         ),
       ),
     );
@@ -433,40 +341,4 @@ class _CrossedSwordsPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
-}
-
-class _GoldBar extends StatelessWidget {
-  final String label;
-  final VoidCallback? onTap;
-
-  const _GoldBar({required this.label, this.onTap});
-
-  @override
-  Widget build(BuildContext context) {
-    final bar = Container(
-      width: double.infinity,
-      padding: const EdgeInsets.symmetric(vertical: 15),
-      decoration: BoxDecoration(
-        color: AppColors.accent,
-        borderRadius: BorderRadius.circular(AppRadii.lg),
-        boxShadow: const [
-          BoxShadow(
-            color: Color(0x73000000),
-            offset: Offset(0, 4),
-            blurRadius: 0,
-          ),
-        ],
-      ),
-      child: Text(
-        label.toUpperCase(),
-        textAlign: TextAlign.center,
-        style: AppTypography.cta(size: 15),
-      ),
-    );
-    if (onTap == null) return bar;
-    return GestureDetector(
-      onTap: onTap,
-      child: bar,
-    );
-  }
 }

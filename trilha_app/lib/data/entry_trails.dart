@@ -332,4 +332,14 @@ class CharacterSeals {
     }
     return null;
   }
+
+  /// Primeiro término desta missão-selo — o encontro, não o replay.
+  static bool unlocksOn(
+    String missionSlug,
+    Iterable<String> completedBefore,
+  ) {
+    final seal = forMission(missionSlug);
+    if (seal == null) return false;
+    return !completedBefore.contains(missionSlug);
+  }
 }

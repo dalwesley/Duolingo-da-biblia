@@ -12,6 +12,7 @@ import '../models/trail_catalog.dart';
 import '../services/analytics_service.dart';
 import '../services/bible_service.dart';
 import '../services/content_catalog_service.dart';
+import '../services/corner_service.dart';
 import '../services/progress_service.dart';
 import '../services/session_composer.dart';
 import '../services/sound_service.dart';
@@ -20,6 +21,7 @@ import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
 import '../utils/genesis_theme.dart';
 import '../utils/trail_progress.dart';
+import '../widgets/act_feel.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/exercise_feedback_dialog.dart';
 import '../widgets/exercise_panel.dart';
@@ -79,6 +81,7 @@ class _LessonScreenState extends State<LessonScreen>
   String? _selected;
   bool? _isCorrect;
   int _correctCount = 0;
+  int _combo = 0;
   bool _showFeedback = false;
   bool _busy = false;
   int _lamps = ProgressService.maxLamps;
@@ -96,7 +99,7 @@ class _LessonScreenState extends State<LessonScreen>
     super.initState();
     _impactFlash = AnimationController(
       vsync: this,
-      duration: const Duration(milliseconds: 700),
+      duration: const Duration(milliseconds: 380),
     );
     _load();
   }
@@ -155,9 +158,12 @@ class _LessonScreenState extends State<LessonScreen>
     }
 
     // Deep link / rota direta: não deixa pular unlock de trilha ou passo.
-    // Caminhada compartilhada usa skipTrailLock — o calendário já autorizou o dia.
+    // Caminhada e Esquina ativa já autorizaram a cena.
+    final cornerOpens = !widget.practiceMode &&
+        context.read<CornerService>().opensMission(widget.missionSlug);
     if (!widget.practiceMode &&
         !widget.skipTrailLock &&
+        !cornerOpens &&
         widget.missionOverride == null &&
         trailSlug != null) {
       final trails = await _repo.getTrails();
@@ -375,8 +381,11 @@ class _LessonScreenState extends State<LessonScreen>
     final correct = ex.checkAnswer(optionId);
     if (correct) {
       SoundService.instance.playCorrect();
+      _combo++;
+      if (_combo >= 2) ActHaptics.success();
     } else {
       SoundService.instance.playWrong();
+      _combo = 0;
       _mistakeInSession = true;
     }
 
@@ -769,7 +778,10 @@ class _LessonScreenState extends State<LessonScreen>
                             dark: true,
                             title: switch (_phase) {
                               _Phase.intro => mission.title,
-                              _Phase.quiz => '${_questionIndex + 1}/$total',
+                              _Phase.quiz =>
+                                _combo >= 2
+                                    ? '${_questionIndex + 1}/$total · ×$_combo'
+                                    : '${_questionIndex + 1}/$total',
                               _Phase.micro => 'Bônus',
                               _Phase.insight => 'Hoje',
                             },

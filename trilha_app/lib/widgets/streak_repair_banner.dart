@@ -107,7 +107,7 @@ class StreakRepairBanner extends StatelessWidget {
   }
 }
 
-/// Card compacto na tela de celebração.
+/// Oferta na celebração — quieta, sem segundo CTA ouro.
 class StreakRepairCelebrationCard extends StatelessWidget {
   const StreakRepairCelebrationCard({super.key});
 
@@ -116,51 +116,58 @@ class StreakRepairCelebrationCard extends StatelessWidget {
     final progress = context.watch<ProgressService>();
     if (!progress.showStreakRepairOffer) return const SizedBox.shrink();
 
+    final a = Appearance.of(context);
     final broken = progress.brokenStreak;
     final restored = broken + 1;
 
-    return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.all(AppSpace.lg),
-      decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.08),
-        borderRadius: BorderRadius.circular(AppRadii.lg),
-        border: Border.all(color: AppColors.streak.withValues(alpha: 0.5)),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
+    return GlassCard(
+      tint: AppColors.streak,
+      padding: AppMetrics.cardPaddingCompact,
+      child: Row(
         children: [
-          Text(
-            'Sua sequência de $broken dias ainda pode voltar',
-            textAlign: TextAlign.center,
-            style: AppTypography.title(size: 14, color: Colors.white),
+          const CinematicIcon(
+            glyph: CinematicGlyph.flame,
+            size: 36,
+            accent: AppColors.streak,
+            framed: false,
           ),
-          const SizedBox(height: 6),
-          Text(
-            'Reparar agora e seguir com $restored dias — 1× neste mês.',
-            textAlign: TextAlign.center,
-            style: AppTypography.body(
-              size: 13,
-              height: 1.35,
-              color: Colors.white.withValues(alpha: 0.72),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  '$broken dias ainda podem voltar',
+                  style: AppTypography.title(size: 14, color: a.text),
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  'Segue com $restored · 1× neste mês',
+                  style: AppTypography.body(
+                    size: 12,
+                    height: 1.3,
+                    weight: FontWeight.w600,
+                    color: a.textMuted(0.7),
+                  ),
+                ),
+              ],
             ),
           ),
-          const SizedBox(height: 12),
-          CopperCta(
-            label: 'Reparar sequência',
-            trailing: CinematicGlyph.flame,
-            onTap: () async {
+          TextButton(
+            onPressed: () async {
               HapticFeedback.mediumImpact();
               await progress.claimStreakRepair();
             },
-          ),
-          TextButton(
-            onPressed: () => progress.dismissStreakRepair(),
+            style: TextButton.styleFrom(
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+              minimumSize: Size.zero,
+              tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+            ),
             child: Text(
-              'Recomeçar do 1',
-              style: AppTypography.body(
-                weight: FontWeight.w700,
-                color: Colors.white.withValues(alpha: 0.55),
+              'Reparar',
+              style: AppTypography.title(
+                size: 13,
+                color: AppColors.streak,
               ),
             ),
           ),

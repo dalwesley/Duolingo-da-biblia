@@ -3,11 +3,11 @@
 Não cobramos para começar. Não cobramos para ler a Palavra.
 Shipar Pro só depois do D7 ok.
 
-28 ago 2026 · **estado do código 16 set/2026 abaixo.**
+28 ago 2026 · **estado do código 20 set/2026 abaixo.**
 
 ---
 
-## Estado no app (16 set)
+## Estado no app (20 set)
 
 Não confundir **casca** com **produto**.
 

@@ -1,10 +1,22 @@
 # STWAY — Nós vs. eles (1 página)
 
 **Para:** tester · líder de igreja · conversa rápida de produto  
-**Atualizado:** 16 set/2026 · app v1.0.23+23 · catalog `1787584947461`  
+**Atualizado:** 20 set/2026 · app v1.0.24+24 · catalog `1787584947461`  
 **Frase:** *“Enquanto outros te fazem jogar a Bíblia, o STWAY te põe em missão nela.”*
 
-**Canvas:** `canvases/stway-posicionamento-mercado-24ago2026.canvas.tsx`
+**Canvas:** `stway-posicionamento-mercado-20set2026.canvas.tsx` · histórico: `stway-posicionamento-mercado-24ago2026`
+
+---
+
+## Veredito (20 set)
+
+O fosso **não** é “missões em português”. **Bibliando** já vende trilhas + missão do dia + XP em PT-BR. **Bible Way** já localiza (inclui português) com clubes, heróis e IA.
+
+O fosso que ainda é nosso: **treinar a leitura do texto** — 6 gestos, 3 profundidades, palco TB, Strong na missão, validador pedagógico — e **accountability de um par** (Companhia + Esquina), não feed nem PvP.
+
+Gigantes (YouVersion, Hallow) avançaram em *guiado* e *juntos*. Continuam consumo / oração. Não copiar o catálogo deles.
+
+**Prova em aberto:** D7 zerado. Sem isso, o fosso é tese — não evidência.
 
 ---
 
@@ -12,11 +24,13 @@
 
 | App | O que é |
 |-----|---------|
-| **YouVersion** | Bíblia + planos de leitura + áudio |
-| **Hallow** | Oração, áudio, hábito espiritual |
-| **Glorify** | Adoração + devocional + polish |
-| **Bible Way / Ascend** | Jogo bíblico com streak e pet/herói |
-| **Trivia bíblica** | Quiz de memória solto |
+| **YouVersion** | Bíblia + planos + áudio + *Plans with Friends* (até 300) |
+| **Hallow** | Oração, áudio, hábito espiritual (+ games na Home em 2026) |
+| **Glorify** | Adoração + devocional + polish (~10 min) |
+| **Manna** | Um trecho por dia — Duolingo de *leitura*, sem estudo |
+| **Bible Way / Ascend** | Jogo bíblico: streak, herói/fênix, clube, quiz, IA / battle pass |
+| **Bibliando** | Missões + trilhas em PT-BR (leitura + contexto + descoberta) |
+| **Guia de Fé / Verbo / trivia** | Planos+igreja+IA · quiz gamificado · memória solta |
 | **STWAY** | **Missões diárias** para criar hábito de **ler e estudar** a Bíblia |
 
 Sensação-alvo: **Duolingo no loop · ler e estudar a Palavra de verdade.**
@@ -25,30 +39,35 @@ Sensação-alvo: **Duolingo no loop · ler e estudar a Palavra de verdade.**
 
 ## Quadro competitivo
 
-| | YouVersion | Hallow | Glorify | Bible games | Trivia | **STWAY** |
+| | YouVersion | Hallow | Bible games | Bibliando | Trivia | **STWAY** |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| Hábito diário curto | ○ | ● | ● | ● | ◐ | **●** |
-| Ensina a *ler* o texto | ○ | ○ | ○ | ○ | ○ | **●** |
-| Currículo progressivo (Criação→NT) | ○ | ○ | ○ | ◐ | ○ | **●** |
-| Gestos variados (6 tipos) | ○ | ○ | ○ | ◐ | ○ | **●** |
+| Hábito diário curto | ◐ | ● | ● | ● | ◐ | **●** |
+| Ensina a *ler* o texto | ○ | ○ | ◐ | ◐ | ○ | **●** |
+| Currículo progressivo (Criação→NT) | ○ | ○ | ◐ | ◐ | ○ | **●** |
+| Gestos variados (6 tipos) | ○ | ○ | ◐ | ○ | ○ | **●** |
 | 3 profundidades cognitivas | ○ | ○ | ○ | ○ | ○ | **●** |
 | Strong na missão + Bíblia | ◐ | ○ | ○ | ○ | ○ | **●** |
-| Social / accountability | ● | ◐ | ○ | ◐ | ○ | **◐** |
-| Áudio / oração | ● | ● | ● | ◐ | ○ | **○** |
-| Escala / marca / polish | ● | ● | ● | ◐ | ◐ | **○** |
-| Monetização madura | ● | ● | ● | ◐ | ◐ | **○** |
+| Social / accountability | ● | ◐ | ● | ○ | ◐ | **◐** |
+| PT-BR nativo (produto, não locale) | ◐ | ○ | ◐ | ● | ● | **●** |
+| Áudio / oração | ● | ● | ◐ | ○ | ○ | **◐** |
+| Escala / marca / polish | ● | ● | ◐ | ◐ | ◐ | **○** |
+| Monetização madura | ● | ● | ● | ● | ◐ | **○** |
 
 ● forte · ◐ parcial · ○ fraco/ausente
+
+Social STWAY = Caravana + Companhia + Salas + **Esquina** (1.0.24). Forte no par; fraco vs igreja YouVersion ou clube Bible Way.
 
 ---
 
 ## Diretos vs indiretos
 
-**Diretos** (mesmo job: Bíblia no bolso): YouVersion, Bible Way, Ascend, trivia.  
-**Indiretos** (mesmo tempo no bolso): Hallow, Glorify, Duolingo (referência de loop).
+**Diretos** (mesmo job: Bíblia no bolso *e* treino): Bible Way, Ascend, **Bibliando**, Verbo, trivia.  
+**Indiretos** (mesmo tempo no bolso): YouVersion, Hallow, Glorify, Manna, Guia de Fé, Duolingo (referência de loop).
 
 STWAY **não** compete em MAU nem biblioteca de áudio.  
 STWAY **compete** em: *hábito de ler e estudar — e querer voltar amanhã.*
+
+O clone de copy mais perigoso é **Bibliando** (missões / trilhas / XP em PT-BR, sem os 6 gestos nem Strong). Diferenciar na sessão, não no slogan.
 
 ---
 
@@ -63,7 +82,8 @@ SESSÃO (2–4 min)
 - **3 profundidades** — Observação / Compreensão / Interpretação  
 - **Bíblia + Strong offline** — na missão (ref do palco) e na aba Bíblia  
 - **Currículo** — 84 trilhas · 8.370 atos V2 · validador pedagógico  
-- **Social leve** — Caravana, Companhia, Salas (sem feed de XP)  
+- **Social leve** — Caravana, Companhia, Salas, Esquina (mesma cena até domingo, +10)  
+- **1.0.24** — retrato (foto / letra / avatar), intro dos livros, pedido de trilha no mapa  
 
 ---
 
@@ -75,6 +95,10 @@ SESSÃO (2–4 min)
 | Escola editorial vitrine | Infra ok (gerador + TB); falta autor humano em Gn/Sermão |
 | Marca / polish / aquisição | Shell cinemático ok; gigantes ganham por confiança |
 | IAP | Casca Peregrino+ **inativa**; Caminhada/áudio/revisão já no app; não ligar chaves antes do D7 |
+| Igreja em escala | YouVersion *Plans with Friends* (até 300) + Hallow Family. Nós: sala ~12 + par |
+| Janela PT-BR | Bible Way localiza; Bibliando já fala “missão”. Fosso = pedagogia, não idioma |
+
+**Não copiar:** IA solta “explica o versículo”, battle pass / energia Ascend, PvP trivia, hub de oração Hallow, planos infinitos YouVersion.
 
 ---
 
@@ -91,8 +115,8 @@ SESSÃO (2–4 min)
 ## Pedido desta conversa
 
 1. **Tester:** 1 missão → explicar o app numa frase.  
-2. **Igreja:** 1 célula piloto (Companhia / Sala) por 2 semanas.  
-3. **Produto:** validar se a sessão *treina* — não se parece YouVersion ou trivia.
+2. **Igreja:** 1 célula piloto (Companhia / Sala / Esquina) por 2 semanas.  
+3. **Produto:** validar se a sessão *treina* — não se parece YouVersion, Bibliando ou trivia.
 
 ---
 

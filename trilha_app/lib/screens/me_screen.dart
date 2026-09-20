@@ -6,18 +6,20 @@ import '../models/caravan_pilgrim_profile.dart';
 import '../models/caravan_profile_prefs.dart';
 import '../services/bible_service.dart';
 import '../services/backend_service.dart';
+import '../services/corner_service.dart';
 import '../services/league_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
-import '../widgets/top_bar.dart';
 import '../widgets/cinematic_icon.dart';
+import '../widgets/corner_record_card.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/living_seed_card.dart';
 import '../widgets/milestone_chests.dart';
 import '../widgets/pilgrim_profile_sections.dart';
 import '../widgets/reflection_journal_card.dart';
+import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 import 'bible_screen.dart';
 import 'settings_screen.dart';
@@ -127,6 +129,7 @@ class _MeScreenState extends State<MeScreen> {
   @override
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
+    final record = context.watch<CornerService>().record;
     final profile = _caravanProfile;
     final accuracy = profile?.accuracyPercent;
 
@@ -139,6 +142,10 @@ class _MeScreenState extends State<MeScreen> {
         trails: _trailCount,
         accuracyPercent: accuracy,
       ),
+      if (!record.isEmpty) ...[
+        const SizedBox(height: AppSpace.md),
+        CornerRecordCard(record: record),
+      ],
     ];
 
     if (_caravanLoading) {

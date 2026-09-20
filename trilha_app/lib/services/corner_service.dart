@@ -41,25 +41,13 @@ class CornerService extends ChangeNotifier {
   CornerChallenge? get homeCard {
     final uid = _uid;
     if (uid == null) return null;
-    CornerChallenge? incoming;
-    CornerChallenge? active;
-    CornerChallenge? outgoing;
-    CornerChallenge? settled;
-    for (final c in mine) {
-      if (!c.isThisWeek && c.status != CornerStatus.settled && !c.bothDone) {
-        continue;
-      }
-      if (c.status == CornerStatus.pending && c.iAmOpponent(uid)) {
-        incoming ??= c;
-      } else if (c.status == CornerStatus.active && !c.bothDone) {
-        active ??= c;
-      } else if (c.status == CornerStatus.pending && c.iAmChallenger(uid)) {
-        outgoing ??= c;
-      } else if (c.bothDone || c.status == CornerStatus.settled) {
-        settled ??= c;
-      }
-    }
-    return incoming ?? active ?? outgoing ?? settled;
+    return CornerHomePick.of(mine, uid);
+  }
+
+  CornerRecord get record {
+    final uid = _uid;
+    if (uid == null) return const CornerRecord.empty();
+    return CornerRecord.of(mine, uid);
   }
 
   CornerChallenge? withPeer(String uid) {
@@ -69,6 +57,12 @@ class CornerService extends ChangeNotifier {
       }
     }
     return null;
+  }
+
+  bool opensMission(String missionSlug) {
+    final uid = _uid;
+    if (uid == null || uid.isEmpty) return false;
+    return CornerChallenge.authorizes(missionSlug, uid, mine);
   }
 
   bool get hasOpenThisWeek {

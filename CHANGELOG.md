@@ -9,6 +9,19 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
+### Added
+- Encontro na celebração: carta verso-first + share em imagem (carimbo pequeno)
+- Galeria compacta de encontros no perfil; sheet compartilha a carta, não “Guardar”
+- Combo ×N na missão; placar de desafios fechados no perfil (não volta para a Home)
+
+### Changed
+- Posicionamento vs mercado (20 set): fosso = pedagogia + par, não “missões em PT-BR” — Bibliando e Bible Way PT no quadro; canvas `stway-posicionamento-mercado-20set2026`
+- Rodapé da celebração: um CTA ouro; compartilhar e voltar como texto; reparo da sequência não compete com Continuar
+- Flash de acerto/erro mais curto; haptic forte no combo
+
+### Fixed
+- Esquina ativa abre a cena combinada mesmo se o passo da trilha ainda está bloqueado
+
 ## [1.0.24] — 2026-09-20
 
 ### Added

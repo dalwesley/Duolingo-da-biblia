@@ -1,6 +1,6 @@
 # Protocolo D7 — fase “Agora”
 
-**Atualizado:** 16 set/2026 · app **1.0.23+23**  
+**Atualizado:** 20 set/2026 · app **1.0.24+24**  
 **Objetivo:** provar o loop com 10–20 pessoas reais. Critério = conclusão de missão + retorno D7.  
 **Vitrines:** **Sermão do Monte** (cena 1) e/ou **Gênesis 1–11 V2** (banco 8.370 na nuvem).  
 **Norte:** [`ROADMAP.md`](../ROADMAP.md) · pitch: [`PITCH_NOS_VS_ELES.md`](PITCH_NOS_VS_ELES.md)  

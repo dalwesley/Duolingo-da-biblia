@@ -1,22 +1,22 @@
 # Roadmap STWAY — hábito de ler e estudar a Bíblia
 
-**Atualizado:** 16 set/2026 · app **1.0.23+23** · banco local + Firebase **8.370** · validador verde · palco TB · seed `1787584947461`.
+**Atualizado:** 20 set/2026 · app **1.0.24+24** · banco local + Firebase **8.370** · validador verde · palco TB · seed `1787584947461`.
 
 **Norte:** missões diárias em português para **criar hábito de ler e estudar a Bíblia** — sessões curtas + estudo offline quando o versículo pede.
-Não somos YouVersion (ler), nem Hallow (orar), nem Ascend/Bible Way (jogo com pet/heróis sem estudo), nem trivia vazia.
+Não somos YouVersion (ler), nem Hallow (orar), nem Ascend/Bible Way (jogo com pet/heróis sem estudo), nem Bibliando (missão sem os 6 gestos), nem trivia vazia.
 **Sensação:** Duolingo no loop · **ler e estudar a Palavra** (não formação teológica — hábito + estudo no texto).
 **Frase competitiva:** *“Enquanto outros te fazem jogar a Bíblia, o STWAY te põe em missão nela.”*
 **Frase do tester:** *“app de missões pra criar hábito de ler a Bíblia.”*
 
-**Posicionamento vs mercado:** [`docs/PITCH_NOS_VS_ELES.md`](docs/PITCH_NOS_VS_ELES.md) · [`docs/PRODUTO.md`](docs/PRODUTO.md) · canvas `stway-posicionamento-mercado-24ago2026`
+**Posicionamento vs mercado:** [`docs/PITCH_NOS_VS_ELES.md`](docs/PITCH_NOS_VS_ELES.md) · [`docs/PRODUTO.md`](docs/PRODUTO.md) · canvas `stway-posicionamento-mercado-20set2026`
 
-### Estado (16 set) — o que o app *é* vs o que ainda falta
+### Estado (20 set) — o que o app *é* vs o que ainda falta
 
 | Camada | Situação |
 |--------|----------|
 | **Shell** | Pronto — sessão **6 atos** (boss **8**), 6 gestos, insight, micro-verso opcional |
 | **Conteúdo** | 8.370 atos V2 na nuvem; Gn 1–11 / 12–50 editorial; Êxodo/Sermão pack; resto gerado |
-| **Hábito / social** | Streak, quests, Caravana, Companhia (FCM de aceno), Salas, widget iOS/Android |
+| **Hábito / social** | Streak (gelo ao virar o dia), quests, Caravana + online, Companhia (FCM), Salas, **Esquina**, retrato, widget iOS/Android |
 | **Medalhas** | **v3.2** no app — faísca + cofres; sazonal Advento + proximidade no mapa ([`docs/MEDALHAS_CALIBRATION.md`](docs/MEDALHAS_CALIBRATION.md)) |
 | **Strong / TTS** | Strong na missão e na Bíblia; TTS na aba Bíblia **e** na entrada da missão (passagem + insight) |
 | **IAP** | Casca RevenueCat (`Peregrino+`) — **chaves vazias**, perk = 3→6 companheiros, tela só em Config. **Não é o Pro** de [`MONETIZATION.md`](MONETIZATION.md) |
@@ -63,12 +63,12 @@ Histórico de releases: [`CHANGELOG.md`](CHANGELOG.md).
 - [x] Onboarding → Gênesis 1–11 (deep-link pós-login)
 - [x] Home: um trabalho dominante = próxima missão (+ card da Palavra)
 - [x] Identidade visual + loop missão (estudo → quiz → reflexão opcional)
-- [x] Social base: Caravana · Companhia · Salas (+ convite deep link `stway://companhia`)
+- [x] Social base: Caravana · Companhia · Salas · Esquina (+ convite deep link `stway://companhia`)
 - [x] Calendário litúrgico (quests sazonais)
 - [x] Feedback pedagógico no erro + modo boss real
 - [x] Sync por conta endurecido (sem misturar progresso entre usuários)
 - [x] **Relato de pergunta** (feedback da lição → `content_question_reports` → admin Relatos)
-- [x] Análise competitiva profunda (ago/2026) → prioridades abaixo
+- [x] Análise competitiva profunda (ago/2026) + recorte **20 set** (Bibliando, Bible Way PT, YouVersion Plans with Friends, Hallow games)
 - [x] Widget iOS/Android (App Group `group.ZS7LYV9Y7U.stway`)
 - [x] Push de aceno na companhia (FCM + Cloud Function)
 - [x] Remote Config no boot (liga / baú / bônus de convite)
@@ -128,7 +128,7 @@ Só avançar o que melhora D7. Roubar do mercado **melhorado**, sem virar clone.
 **Ordem pós-D7 (não inverter o que ainda falta):**
 1. `lifeChallenge` — viver o texto (piloto nas bem-aventuranças)
 
-Já no app (16 set): trilhas por dor, áudio da missão, selos de personagem. Caminhada = Advento/Quaresma (sem 40 dias genéricos agora).
+Já no app (20 set): trilhas por dor, áudio da missão, selos, Esquina, retrato, intro dos livros, pedido de trilha. Caminhada = Advento/Quaresma (sem 40 dias genéricos agora).
 
 ### Currículo e hábito
 - [ ] Prova do caminho Criação → NT com testers (critério de pronto — conteúdo mínimo já no asset)
@@ -204,14 +204,15 @@ Não começar por aqui. Schema de steps (contexto, curiosidade, match…) + admi
 ## Segurar (até D7 ok — e depois, com filtro)
 
 ### Até D7 ok
-- [ ] Novas mecânicas de liga/social além do pulso de Salas
+- [ ] Novas mecânicas de liga/social **além** de Esquina / pulso de Salas (a Esquina 1.0.24 já entrou — não empilhar clube/PvP)
 - [ ] Paridade com YouVersion (traduções em massa, **planos infinitos**, feed) — plano de leitura leve ok; não virar produto de leitura
-- [ ] Oração/meditação estilo Hallow (hub de sono/rosário)
+- [ ] Oração/meditação estilo Hallow (hub de sono/rosário) — nem o *game* que a Home do Hallow ganhou em 2026
 - [ ] Polimento cinematográfico sem missão nova / sem study faltante
 - [ ] **9 etapas obrigatórias por missão** (pipeline de curso, mata micro-sessão)
 - [ ] Motor multi-step / “clone Duolingo” antes de Sermão 100% + prática IRL
 - [ ] XP alto em atos de vida real não verificáveis
 - [ ] Mais trilhas “em breve” / volume NT sem studies e sem testers no Sermão
+- [ ] Paridade de copy com Bibliando (missão/trilha/XP) sem aprofundar gestos — o slogan já está ocupado; o fosso é a sessão
 
 ### Nunca (ou só com prova forte)
 - [ ] Battle pass / den / relics / ads de energia estilo Ascend
@@ -243,16 +244,17 @@ Não começar por aqui. Schema de steps (contexto, curiosidade, match…) + admi
 3. **Prática** — `lifeChallenge` leve + check-in + follow-up (ligar o campo que já está no study)
 4. **Motor** — steps configuráveis só se D7 / conclusão pedirem
 
-## Fosso vs mercado (lembrete)
+## Fosso vs mercado (lembrete · 20 set)
 
 | Nós | Eles |
 |-----|------|
-| Strong + Bíblia offline na missão | Ascend/Bible Way: quiz + pet/heróis |
-| Dificuldade pedagógica (Semente→Profundezas) | Hearts/energy genéricos |
-| Reflexão + preparo + **desafio de vida real** (próximo) | Trivia ou devocional raso |
+| Strong + Bíblia offline na missão + intro do livro | Ascend/Bible Way: quiz + pet/heróis; Bibliando: missão sem palco TB |
+| Dificuldade pedagógica (Semente→Profundezas) · 6 gestos | Hearts/energy genéricos · MCQ |
+| Esquina (mesma cena até domingo) + Companhia | YouVersion: plano com 300 amigos; Ascend: Showdown PvP |
+| Reflexão + preparo + **desafio de vida real** (próximo) | Trivia, IA “explica o verso”, ou devocional raso |
 | Granularidade tipo Duolingo no currículo (Sermão 31 passos) | Capítulos “resumidos” em poucas missões |
-| Relatos de pergunta → correção rápida no admin | Conteúdo engessado em release |
-| pt-BR first + liturgia | EN-first ou localização superficial |
+| Relatos de pergunta + pedido de trilha → admin | Conteúdo engessado em release |
+| pt-BR first + liturgia | EN-first com locale (Bible Way) ou copy nativa rasa (Bibliando) |
 | Célula/Salas → Igreja | Leaderboard global vazio |
 
-Janela: Bible Way já localiza; Ascend pode localizar. Ser o padrão **academia bíblica pt-BR** agora — treino + compreensão + prática que sai do app.
+Janela: Bible Way **já** localiza (PT na lista). Bibliando **já** fala missão/trilha em PT-BR. Ser o padrão **academia bíblica pt-BR** agora — treino + compreensão + prática que sai do app. Diferenciar na sessão, não no slogan.

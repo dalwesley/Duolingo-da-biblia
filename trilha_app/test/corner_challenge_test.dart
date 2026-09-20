@@ -169,7 +169,7 @@ void main() {
         challengerCorrect: 5,
         challengerTotal: 6,
       );
-      expect(c.headline(me), CornerCopy.closed('A queda'));
+      expect(c.headline(me), CornerCopy.winHeadline);
       expect(c.scoreSign(me), 1);
       expect(c.subline(me), CornerCopy.yourReadingLed);
       expect(c.scoreSign(them), -1);
@@ -186,6 +186,7 @@ void main() {
         challengerTotal: 6,
       );
       expect(c.scoreSign(me), 0);
+      expect(c.headline(me), CornerCopy.tieHeadline);
       expect(c.subline(me), CornerCopy.tied);
     });
 
@@ -197,6 +198,89 @@ void main() {
       );
       expect(c.isThisWeek, isFalse);
       expect(c.headline(me), CornerCopy.stayedThisSide('A queda'));
+    });
+
+    test('active corner opens that scene even if the trail is gated', () {
+      final c = _challenge(status: CornerStatus.active);
+      expect(c.opensFor(me, 'gen-02'), isTrue);
+      expect(c.opensFor(me, 'gen-03'), isFalse);
+      expect(
+        CornerChallenge.authorizes('gen-02', me, [c]),
+        isTrue,
+      );
+    });
+
+    test('done or pending corner does not skip the lock', () {
+      expect(
+        _challenge(
+          status: CornerStatus.active,
+          opponentDoneAt: 'now',
+        ).opensFor(me, 'gen-02'),
+        isFalse,
+      );
+      expect(
+        _challenge(status: CornerStatus.pending).opensFor(me, 'gen-02'),
+        isFalse,
+      );
+    });
+  });
+
+  group('CornerHomePick', () {
+    const me = 'me';
+
+    test('hides a closed challenge', () {
+      final settled = _challenge(
+        status: CornerStatus.settled,
+        challengerDoneAt: 'a',
+        opponentDoneAt: 'b',
+        opponentCorrect: 5,
+        opponentTotal: 6,
+        challengerCorrect: 5,
+        challengerTotal: 6,
+      );
+      expect(CornerHomePick.of([settled], me), isNull);
+    });
+
+    test('keeps an active challenge', () {
+      final active = _challenge(status: CornerStatus.active);
+      expect(CornerHomePick.of([active], me)?.id, 'c1');
+    });
+  });
+
+  group('CornerRecord', () {
+    const me = 'me';
+
+    test('one tie becomes 1 empate', () {
+      final tied = _challenge(
+        status: CornerStatus.settled,
+        challengerDoneAt: 'a',
+        opponentDoneAt: 'b',
+        opponentCorrect: 5,
+        opponentTotal: 6,
+        challengerCorrect: 5,
+        challengerTotal: 6,
+      );
+      final record = CornerRecord.of([tied], me);
+      expect(record.closed, 1);
+      expect(record.ties, 1);
+      expect(record.line, '1 empate');
+      expect(record.whisper, CornerCopy.tied);
+    });
+
+    test('one win becomes 1 vitória', () {
+      final win = _challenge(
+        status: CornerStatus.settled,
+        challengerDoneAt: 'a',
+        opponentDoneAt: 'b',
+        opponentCorrect: 6,
+        opponentTotal: 6,
+        challengerCorrect: 5,
+        challengerTotal: 6,
+      );
+      final record = CornerRecord.of([win], me);
+      expect(record.wins, 1);
+      expect(record.line, '1 vitória');
+      expect(record.whisper, CornerCopy.yourReadingLed);
     });
   });
 }

@@ -24,13 +24,15 @@ import '../utils/day_phase.dart';
 import '../utils/difficulty_trails.dart';
 import '../utils/mascot_messages.dart';
 import '../utils/trail_progress.dart';
-import '../widgets/character_seals_strip.dart';
+import '../models/corner_challenge.dart';
 import '../widgets/companion_invite_prompt_sheet.dart';
 import '../widgets/confetti_overlay.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/invite_qr_sheet.dart';
 import '../widgets/mascot_bubble.dart';
+import '../widgets/portrait_face.dart';
+import '../widgets/share_seal_card.dart';
 import '../widgets/share_streak_button.dart';
 import '../widgets/streak_repair_banner.dart';
 import '../widgets/ui_primitives.dart';
@@ -76,6 +78,8 @@ class _CelebrationScreenState extends State<CelebrationScreen>
   bool _leaving = false;
   String? _medalLine;
   CharacterSeal? _newSeal;
+  CornerChallenge? _closedCorner;
+  final _sealShareKey = GlobalKey();
   TrailDifficulty? _currentMode;
   TrailDifficulty? _nextMode;
   DifficultyMeta? _nextMeta;
@@ -233,6 +237,10 @@ class _CelebrationScreenState extends State<CelebrationScreen>
       final progress = context.read<ProgressService>();
       _firstLessonSession =
           progress.firstLessonDate == null || progress.firstLessonDate!.isEmpty;
+      final firstSealEncounter = CharacterSeals.unlocksOn(
+        widget.missionSlug,
+        progress.completedMissions,
+      );
       _awardedSteps = widget.isReplay
           ? (widget.steps * 0.35).round().clamp(5, widget.steps)
           : widget.steps;
@@ -260,11 +268,9 @@ class _CelebrationScreenState extends State<CelebrationScreen>
               await progress.markWalkDate(campaign.id, ymd);
               break;
             }
-            if (!widget.isReplay) {
+            if (firstSealEncounter && mounted) {
               final seal = CharacterSeals.forMission(widget.missionSlug);
-              if (seal != null && mounted) {
-                setState(() => _newSeal = seal);
-              }
+              if (seal != null) setState(() => _newSeal = seal);
             }
             // Grava na hora — o debounce de 2s perdia o dia ao reiniciar o app.
             if (mounted) {
@@ -350,14 +356,23 @@ class _CelebrationScreenState extends State<CelebrationScreen>
               perfect: widget.perfect,
             );
             if (!widget.isReplay && mounted) {
-              unawaited(
-                context.read<CornerService>().reportMissionComplete(
-                  progress: progress,
-                  missionSlug: widget.missionSlug,
-                  correct: widget.correct,
-                  total: widget.total,
-                ),
+              final corners = context.read<CornerService>();
+              await corners.reportMissionComplete(
+                progress: progress,
+                missionSlug: widget.missionSlug,
+                correct: widget.correct,
+                total: widget.total,
               );
+              CornerChallenge? closed;
+              for (final c in corners.mine) {
+                if (c.missionSlug == widget.missionSlug && c.bothDone) {
+                  closed = c;
+                  break;
+                }
+              }
+              if (closed != null && mounted) {
+                setState(() => _closedCorner = closed);
+              }
             }
             final ttv = await progress.markFirstLessonIfNeeded(
               trailSlug: widget.trailSlug,
@@ -451,28 +466,35 @@ class _CelebrationScreenState extends State<CelebrationScreen>
   }
 
   CinematicGlyph get _heroGlyph {
+    final seal = _newSeal;
+    if (seal != null) return seal.glyph;
     if (widget.perfect) return CinematicGlyph.crown;
     if (widget.isBoss) return CinematicGlyph.podium;
     return CinematicGlyph.check;
   }
 
   Color get _heroAccent {
+    if (_newSeal != null) return AppColors.accent;
     if (widget.perfect) return AppColors.accent;
     if (widget.isBoss) return AppColors.primaryLight;
     return AppColors.primary;
   }
 
-  String get _kicker => CelebrationCopy.kicker(
-        perfect: widget.perfect,
-        isReplay: widget.isReplay,
-        isBoss: widget.isBoss,
-      );
+  String get _kicker => _newSeal != null
+      ? 'ENCONTRO'
+      : CelebrationCopy.kicker(
+          perfect: widget.perfect,
+          isReplay: widget.isReplay,
+          isBoss: widget.isBoss,
+        );
 
-  String get _headline => CelebrationCopy.headline(
-        perfect: widget.perfect,
-        isReplay: widget.isReplay,
-        isBoss: widget.isBoss,
-      );
+  String get _headline => _newSeal != null
+      ? _newSeal!.name
+      : CelebrationCopy.headline(
+          perfect: widget.perfect,
+          isReplay: widget.isReplay,
+          isBoss: widget.isBoss,
+        );
 
   @override
   Widget build(BuildContext context) {
@@ -535,60 +557,70 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                             children: [
                               Column(
                                 children: [
-                                  ScaleTransition(
-                                    scale: _heroScale,
-                                    child: AnimatedBuilder(
-                                      animation: _pulse,
-                                      builder: (context, child) {
-                                        final breath =
-                                            (math.sin(_pulse.value * math.pi * 2) + 1) /
-                                            2;
-                                        return _HeroEmblem(
-                                          accent: heroAccent,
-                                          perfect: widget.perfect,
-                                          breath: breath,
-                                          child: child!,
-                                        );
-                                      },
-                                      child: CinematicIcon(
-                                        glyph: _heroGlyph,
-                                        size: 54,
-                                        accent: widget.perfect
-                                            ? AppColors.inkOnAccent
-                                            : Colors.white,
-                                        framed: false,
+                                  if (_newSeal != null)
+                                    ScaleTransition(
+                                      scale: _heroScale,
+                                      child: RepaintBoundary(
+                                        key: _sealShareKey,
+                                        child: ShareSealCard(seal: _newSeal!),
+                                      ),
+                                    )
+                                  else ...[
+                                    ScaleTransition(
+                                      scale: _heroScale,
+                                      child: AnimatedBuilder(
+                                        animation: _pulse,
+                                        builder: (context, child) {
+                                          final breath =
+                                              (math.sin(_pulse.value * math.pi * 2) + 1) /
+                                              2;
+                                          return _HeroEmblem(
+                                            accent: heroAccent,
+                                            perfect: widget.perfect,
+                                            breath: breath,
+                                            child: child!,
+                                          );
+                                        },
+                                        child: CinematicIcon(
+                                          glyph: _heroGlyph,
+                                          size: 54,
+                                          accent: widget.perfect
+                                              ? AppColors.inkOnAccent
+                                              : Colors.white,
+                                          framed: false,
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                  const SizedBox(height: 28),
-                                  FadeTransition(
-                                    opacity: _titleOpacity,
-                                    child: SlideTransition(
-                                      position: _titleSlide,
-                                      child: Column(
-                                        children: [
-                                          Text(
-                                            _kicker,
-                                            textAlign: TextAlign.center,
-                                            style: AppTypography.label(
-                                              size: 11,
-                                              letterSpacing: 2.4,
-                                              color: AppColors.accent,
+                                    const SizedBox(height: 28),
+                                    FadeTransition(
+                                      opacity: _titleOpacity,
+                                      child: SlideTransition(
+                                        position: _titleSlide,
+                                        child: Column(
+                                          children: [
+                                            Text(
+                                              _kicker,
+                                              textAlign: TextAlign.center,
+                                              style: AppTypography.label(
+                                                size: 11,
+                                                letterSpacing: 2.4,
+                                                color: AppColors.accent,
+                                              ),
                                             ),
-                                          ),
-                                          const SizedBox(height: 8),
-                                          Text(
-                                            _headline,
-                                            textAlign: TextAlign.center,
-                                            style: AppTypography.display(
-                                              size: 34,
-                                              height: 1.08,
+                                            const SizedBox(height: 8),
+                                            Text(
+                                              _headline,
+                                              textAlign: TextAlign.center,
+                                              style: AppTypography.display(
+                                                size: 34,
+                                                height: 1.08,
+                                              ),
                                             ),
-                                          ),
-                                        ],
+                                          ],
+                                        ),
                                       ),
                                     ),
-                                  ),
+                                  ],
                                   const SizedBox(height: AppSpace.md),
                                   FadeTransition(
                                     opacity: _bodyOpacity,
@@ -596,77 +628,84 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                       position: _bodySlide,
                                       child: Column(
                                         children: [
-                                          MascotBubble(
-                                            glowing: true,
-                                            message: MascotMessages.celebration(
-                                              isBoss: isBoss,
-                                              pct: pct,
-                                              perfect: widget.perfect,
-                                              isReplay: widget.isReplay,
+                                          if (_newSeal == null) ...[
+                                            MascotBubble(
+                                              glowing: true,
+                                              message: MascotMessages.celebration(
+                                                isBoss: isBoss,
+                                                pct: pct,
+                                                perfect: widget.perfect,
+                                                isReplay: widget.isReplay,
+                                              ),
                                             ),
-                                          ),
-                                          if (widget.perfect || widget.isBoss) ...[
-                                            const SizedBox(height: AppSpace.md),
-                                            Wrap(
-                                              spacing: 8,
-                                              runSpacing: 8,
-                                              alignment: WrapAlignment.center,
-                                              children: [
-                                                if (widget.perfect)
-                                                  const _ComboChip(
-                                                    label: 'PERFEITA',
-                                                    color: AppColors.accent,
+                                            if (widget.perfect || widget.isBoss) ...[
+                                              const SizedBox(height: AppSpace.md),
+                                              Wrap(
+                                                spacing: 8,
+                                                runSpacing: 8,
+                                                alignment: WrapAlignment.center,
+                                                children: [
+                                                  if (widget.perfect)
+                                                    const _ComboChip(
+                                                      label: 'PERFEITA',
+                                                      color: AppColors.accent,
+                                                    ),
+                                                  if (widget.isBoss)
+                                                    const _ComboChip(
+                                                      label: 'BOSS',
+                                                      color: AppColors.sand,
+                                                    ),
+                                                ],
+                                              ),
+                                            ],
+                                            if (_medalLine != null) ...[
+                                              const SizedBox(height: AppSpace.md),
+                                              _MedalProgressLine(text: _medalLine!),
+                                            ],
+                                            if (_leagueCompetitive &&
+                                                _leagueRank > 0) ...[
+                                              const SizedBox(height: AppSpace.lg),
+                                              _CaravanaMoment(
+                                                rank: _leagueRank,
+                                                inPromotionZone: _inPromotionZone,
+                                              ),
+                                            ],
+                                            if (_showGoalBanner) ...[
+                                              const SizedBox(height: AppSpace.section),
+                                              Container(
+                                                width: double.infinity,
+                                                padding: const EdgeInsets.all(
+                                                  AppSpace.section,
+                                                ),
+                                                decoration: BoxDecoration(
+                                                  gradient: AppGradients.gold,
+                                                  borderRadius: BorderRadius.circular(
+                                                    AppRadii.md,
                                                   ),
-                                                if (widget.isBoss)
-                                                  const _ComboChip(
-                                                    label: 'BOSS',
-                                                    color: AppColors.sand,
+                                                  boxShadow: AppTheme.glow(
+                                                    AppColors.accent,
+                                                    blur: 22,
                                                   ),
-                                              ],
-                                            ),
+                                                ),
+                                                child: Text(
+                                                  '✦ Meta do dia · streak protegida · +combo',
+                                                  textAlign: TextAlign.center,
+                                                  style: AppTypography.body(
+                                                    size: 13,
+                                                    weight: FontWeight.w900,
+                                                    color: AppColors.inkOnAccent,
+                                                  ),
+                                                ),
+                                              ),
+                                            ],
                                           ],
-                                          if (_medalLine != null) ...[
+                                          if (_closedCorner != null) ...[
                                             const SizedBox(height: AppSpace.md),
-                                            _MedalProgressLine(text: _medalLine!),
-                                          ],
-                                          if (_newSeal != null) ...[
-                                            const SizedBox(height: AppSpace.md),
-                                            _SealUnlockCard(seal: _newSeal!),
-                                          ],
-                                          if (_leagueCompetitive &&
-                                              _leagueRank > 0) ...[
-                                            const SizedBox(height: AppSpace.lg),
-                                            _CaravanaMoment(
-                                              rank: _leagueRank,
-                                              inPromotionZone: _inPromotionZone,
-                                            ),
-                                          ],
-                                          if (_showGoalBanner) ...[
-                                            const SizedBox(height: AppSpace.section),
-                                            Container(
-                                              width: double.infinity,
-                                              padding: const EdgeInsets.all(
-                                                AppSpace.section,
-                                              ),
-                                              decoration: BoxDecoration(
-                                                gradient: AppGradients.gold,
-                                                borderRadius: BorderRadius.circular(
-                                                  AppRadii.md,
-                                                ),
-                                                boxShadow: AppTheme.glow(
-                                                  AppColors.accent,
-                                                  blur: 22,
-                                                ),
-                                              ),
-                                              child: Text(
-                                                '✦ Meta do dia · streak protegida · +combo',
-                                                textAlign: TextAlign.center,
-                                                style: AppTypography.body(
-                                                  size: 13,
-                                                  weight: FontWeight.w900,
-                                                  color: AppColors.inkOnAccent,
-                                                ),
-                                              ),
+                                            _CornerClosedBeat(
+                                              challenge: _closedCorner!,
+                                              myUid: context
+                                                  .read<BackendService>()
+                                                  .uid,
                                             ),
                                           ],
                                         ],
@@ -687,6 +726,17 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                           final streakShown =
                                               (progress.streak * t).round();
                                           final pctShown = (pct * t).round();
+                                          if (_newSeal != null) {
+                                            return Text(
+                                              '+$stepsShown passos · $streakShown ${streakShown == 1 ? 'dia' : 'dias'} · $pctShown%',
+                                              textAlign: TextAlign.center,
+                                              style: AppTypography.body(
+                                                size: 13,
+                                                weight: FontWeight.w700,
+                                                color: appearance.textMuted(0.7),
+                                              ),
+                                            );
+                                          }
                                           return Row(
                                             children: [
                                               Expanded(
@@ -728,7 +778,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                       ),
                                     ),
                                   ),
-                                  if (showModeUp) ...[
+                                  if (showModeUp && _newSeal == null) ...[
                                     const SizedBox(height: AppSpace.lg),
                                     FadeTransition(
                                       opacity: _statsOpacity,
@@ -748,13 +798,6 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                       ),
                                     ),
                                   ],
-                                  if (progress.showStreakRepairOffer) ...[
-                                    const SizedBox(height: AppSpace.lg),
-                                    FadeTransition(
-                                      opacity: _statsOpacity,
-                                      child: const StreakRepairCelebrationCard(),
-                                    ),
-                                  ],
                                 ],
                               ),
                               FadeTransition(
@@ -765,45 +808,43 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                     padding: const EdgeInsets.only(top: AppSpace.lg),
                                     child: Column(
                                       children: [
-                                        if (progress.streak > 0) ...[
-                                          ShareStreakButton(
-                                            streak: progress.streak,
-                                            userName: progress.userName,
-                                            steps: progress.steps,
-                                          ),
+                                        if (progress.showStreakRepairOffer) ...[
+                                          const StreakRepairCelebrationCard(),
                                           const SizedBox(height: AppSpace.md),
                                         ],
-                                        DecoratedBox(
-                                          decoration: BoxDecoration(
-                                            borderRadius: BorderRadius.circular(
-                                              AppRadii.lg,
-                                            ),
-                                            boxShadow: AppMetrics.cardShadow(),
-                                          ),
-                                          child: CopperCta(
-                                            label: EntryTrails.continuesTo
-                                                    .containsKey(
-                                                  widget.missionSlug,
-                                                )
-                                                ? 'SEGUIR NO CÂNON'
-                                                : 'CONTINUAR A TRILHA',
-                                            trailing: null,
-                                            onTap: () => _leaveCelebration(
-                                              toTrailMap: true,
-                                            ),
+                                        CopperCta(
+                                          label: EntryTrails.continuesTo
+                                                  .containsKey(
+                                                widget.missionSlug,
+                                              )
+                                              ? 'SEGUIR NO CÂNON'
+                                              : 'CONTINUAR A TRILHA',
+                                          trailing: null,
+                                          onTap: () => _leaveCelebration(
+                                            toTrailMap: true,
                                           ),
                                         ),
-                                        const SizedBox(height: AppSpace.sm),
-                                        TextButton(
-                                          onPressed: () => _leaveCelebration(
+                                        const SizedBox(height: 4),
+                                        _CelebrationSecondaryRow(
+                                          appearance: appearance,
+                                          onShareSeal: _newSeal == null
+                                              ? null
+                                              : () => shareSealImage(
+                                                    boundaryKey: _sealShareKey,
+                                                    seal: _newSeal!,
+                                                  ),
+                                          shareStreak: _newSeal == null &&
+                                                  progress.streak > 0 &&
+                                                  !progress.showStreakRepairOffer
+                                              ? ShareStreakButton(
+                                                  streak: progress.streak,
+                                                  userName: progress.userName,
+                                                  steps: progress.steps,
+                                                  asLink: true,
+                                                )
+                                              : null,
+                                          onHome: () => _leaveCelebration(
                                             toTrailMap: false,
-                                          ),
-                                          child: Text(
-                                            'Voltar ao início',
-                                            style: AppTypography.body(
-                                              weight: FontWeight.w700,
-                                              color: appearance.textMuted(0.7),
-                                            ),
                                           ),
                                         ),
                                       ],
@@ -823,6 +864,83 @@ class _CelebrationScreenState extends State<CelebrationScreen>
           ),
         ),
       ),
+    );
+  }
+}
+
+class _CelebrationSecondaryRow extends StatelessWidget {
+  final AppearanceStyle appearance;
+  final VoidCallback? onShareSeal;
+  final Widget? shareStreak;
+  final VoidCallback onHome;
+
+  const _CelebrationSecondaryRow({
+    required this.appearance,
+    required this.onHome,
+    this.onShareSeal,
+    this.shareStreak,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final share = onShareSeal != null
+        ? TextButton(
+            onPressed: onShareSeal,
+            style: TextButton.styleFrom(
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+              minimumSize: Size.zero,
+              tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                CinematicIcon(
+                  glyph: CinematicGlyph.share,
+                  size: 15,
+                  accent: appearance.textMuted(0.7),
+                  framed: false,
+                ),
+                const SizedBox(width: 6),
+                Text(
+                  'Compartilhar',
+                  style: AppTypography.body(
+                    weight: FontWeight.w700,
+                    color: appearance.textMuted(0.7),
+                  ),
+                ),
+              ],
+            ),
+          )
+        : shareStreak;
+
+    final home = TextButton(
+      onPressed: onHome,
+      style: TextButton.styleFrom(
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+        minimumSize: Size.zero,
+        tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+      ),
+      child: Text(
+        'Voltar ao início',
+        style: AppTypography.body(
+          weight: FontWeight.w700,
+          color: appearance.textMuted(0.7),
+        ),
+      ),
+    );
+
+    if (share == null) return home;
+
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        share,
+        Text(
+          '·',
+          style: AppTypography.body(color: appearance.textMuted(0.4)),
+        ),
+        home,
+      ],
     );
   }
 }
@@ -1235,53 +1353,85 @@ class _CaravanaMoment extends StatelessWidget {
   }
 }
 
-class _SealUnlockCard extends StatelessWidget {
-  final CharacterSeal seal;
+class _CornerClosedBeat extends StatelessWidget {
+  final CornerChallenge challenge;
+  final String? myUid;
 
-  const _SealUnlockCard({required this.seal});
+  const _CornerClosedBeat({required this.challenge, this.myUid});
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return Material(
-      color: Colors.transparent,
-      child: InkWell(
-        onTap: () => showCharacterSealSheet(context, seal),
-        borderRadius: BorderRadius.circular(AppRadii.md),
-        child: GlassCard(
-          padding: AppMetrics.cardPaddingCompact,
-          child: Row(
-            children: [
-              CinematicIcon(
-                glyph: seal.glyph,
-                size: 36,
-                accent: AppColors.accent,
-                framed: true,
-              ),
-              const SizedBox(width: 10),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Selo ${seal.name}',
-                      style: AppTypography.title(size: 13, color: a.text),
-                    ),
-                    Text(
-                      seal.fact,
-                      maxLines: 2,
-                      overflow: TextOverflow.ellipsis,
-                      style: AppTypography.body(
-                        size: 12,
-                        color: a.textMuted(0.7),
-                      ),
-                    ),
-                  ],
+    final mine = myUid == null || challenge.iAmChallenger(myUid!)
+        ? challenge.challengerName
+        : challenge.opponentName;
+    final theirs = myUid == null || challenge.iAmChallenger(myUid!)
+        ? challenge.opponentName
+        : challenge.challengerName;
+    return GlassCard(
+      tint: AppColors.accent,
+      padding: AppMetrics.cardPaddingCompact,
+      child: Row(
+        children: [
+          SizedBox(
+            width: 72,
+            height: 36,
+            child: Stack(
+              children: [
+                Positioned(
+                  left: 0,
+                  child: PortraitFace(
+                    name: mine,
+                    seed: myUid ?? mine,
+                    size: 36,
+                    style: PortraitStyle.avatar,
+                  ),
                 ),
-              ),
-            ],
+                Positioned(
+                  left: 22,
+                  child: PortraitFace(
+                    name: theirs,
+                    seed: theirs,
+                    size: 36,
+                    style: PortraitStyle.avatar,
+                  ),
+                ),
+              ],
+            ),
           ),
-        ),
+          const SizedBox(width: 10),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  CornerCopy.closedHeadline(
+                    myUid == null ? 0 : challenge.scoreSign(myUid!),
+                  ),
+                  style: AppTypography.title(size: 14, color: a.text),
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  challenge.subline(myUid ?? ''),
+                  style: AppTypography.body(
+                    size: 12,
+                    color: a.textMuted(0.7),
+                  ),
+                ),
+                if (challenge.missionTitle.isNotEmpty) ...[
+                  const SizedBox(height: 2),
+                  Text(
+                    challenge.missionTitle,
+                    style: AppTypography.body(
+                      size: 11,
+                      color: a.textMuted(0.5),
+                    ),
+                  ),
+                ],
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }

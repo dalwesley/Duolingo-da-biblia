@@ -21,9 +21,13 @@ class CornerCopy {
   static const deadline = 'Até domingo.';
   static const incomingTitle = 'Você foi desafiado';
   static const kicker = 'Desafio';
-  static const yourReadingLed = 'Sua leitura levou o marco.';
-  static const theirReadingLed = 'A leitura deles levou o marco.';
-  static const tied = 'Os dois fecharam iguais.';
+  static const winHeadline = 'Vitória de leitura';
+  static const lossHeadline = 'Leitura deles à frente';
+  static const tieHeadline = 'Empate';
+  static const yourReadingLed = 'Sua leitura ficou à frente.';
+  static const theirReadingLed = 'A leitura deles ficou à frente.';
+  static const tied = 'Vocês leram iguais.';
+  static const recordChapter = 'Desafios';
   static const needsCloud = 'Entre com Google para chamar alguém.';
   static const busyWeek = 'Você já tem uma esquina nesta semana.';
   static const sendFailed = 'Não deu para chamar agora.';
@@ -60,7 +64,30 @@ class CornerCopy {
 
   static String theyDid(String mission) => 'Eles fizeram $mission.';
 
-  static String closed(String mission) => '$mission fechado.';
+  static String closedHeadline(int? sign) {
+    if (sign == 1) return winHeadline;
+    if (sign == -1) return lossHeadline;
+    return tieHeadline;
+  }
+
+  static String recordLine({
+    required int wins,
+    required int ties,
+    required int losses,
+  }) {
+    final closed = wins + ties + losses;
+    if (closed == 0) return '';
+    if (closed == 1) {
+      if (wins == 1) return '1 vitória';
+      if (ties == 1) return '1 empate';
+      return '1 desafio fechado';
+    }
+    final parts = <String>[];
+    if (wins > 0) parts.add('$wins ${wins == 1 ? 'vitória' : 'vitórias'}');
+    if (ties > 0) parts.add('$ties ${ties == 1 ? 'empate' : 'empates'}');
+    if (parts.isEmpty) return '$closed desafios fechados';
+    return parts.join(' · ');
+  }
 
   static String theyOnStretch(String name) => '$name no mesmo trecho.';
 
@@ -283,6 +310,25 @@ class CornerChallenge {
       isThisWeek &&
       (status == CornerStatus.pending || status == CornerStatus.active);
 
+  /// A cena combinada desta semana — abre mesmo fora da ordem da trilha.
+  bool opensFor(String uid, String missionSlug) {
+    return status == CornerStatus.active &&
+        isThisWeek &&
+        this.missionSlug == missionSlug &&
+        !iDone(uid);
+  }
+
+  static bool authorizes(
+    String missionSlug,
+    String uid,
+    Iterable<CornerChallenge> mine,
+  ) {
+    for (final c in mine) {
+      if (c.opensFor(uid, missionSlug)) return true;
+    }
+    return false;
+  }
+
   bool involves(String uid) => uid == challengerId || uid == opponentId;
 
   String peerId(String uid) =>
@@ -351,7 +397,7 @@ class CornerChallenge {
       return CornerCopy.stayedThisSide(missionTitle);
     }
     if (bothDone || status == CornerStatus.settled) {
-      return CornerCopy.closed(missionTitle);
+      return CornerCopy.closedHeadline(scoreSign(uid));
     }
     if (iDone(uid) && !theyDone(uid)) {
       return CornerCopy.youDid(missionTitle);
@@ -381,5 +427,84 @@ class CornerChallenge {
       return CornerCopy.deadline;
     }
     return CornerCopy.sameStretch;
+  }
+
+  bool get isClosed => bothDone || status == CornerStatus.settled;
+}
+
+/// Placar de leitura — vitórias e empates, sem placar de derrota.
+class CornerRecord {
+  final int wins;
+  final int ties;
+  final int losses;
+
+  const CornerRecord({
+    required this.wins,
+    required this.ties,
+    required this.losses,
+  });
+
+  const CornerRecord.empty()
+      : wins = 0,
+        ties = 0,
+        losses = 0;
+
+  int get closed => wins + ties + losses;
+
+  bool get isEmpty => closed == 0;
+
+  String get line => CornerCopy.recordLine(
+        wins: wins,
+        ties: ties,
+        losses: losses,
+      );
+
+  String get whisper {
+    if (closed == 0) return '';
+    if (closed == 1) {
+      if (wins == 1) return CornerCopy.yourReadingLed;
+      if (ties == 1) return CornerCopy.tied;
+      return CornerCopy.theirReadingLed;
+    }
+    return 'Cenas lidas lado a lado.';
+  }
+
+  static CornerRecord of(Iterable<CornerChallenge> mine, String uid) {
+    var wins = 0;
+    var ties = 0;
+    var losses = 0;
+    for (final c in mine) {
+      if (!c.isClosed) continue;
+      final sign = c.scoreSign(uid);
+      if (sign == 1) {
+        wins++;
+      } else if (sign == -1) {
+        losses++;
+      } else {
+        ties++;
+      }
+    }
+    return CornerRecord(wins: wins, ties: ties, losses: losses);
+  }
+}
+
+/// Home só mostra desafio vivo — fechado vai para o perfil.
+class CornerHomePick {
+  static CornerChallenge? of(Iterable<CornerChallenge> mine, String uid) {
+    CornerChallenge? incoming;
+    CornerChallenge? active;
+    CornerChallenge? outgoing;
+    for (final c in mine) {
+      if (!c.isThisWeek) continue;
+      if (c.isClosed) continue;
+      if (c.status == CornerStatus.pending && c.iAmOpponent(uid)) {
+        incoming ??= c;
+      } else if (c.status == CornerStatus.active && !c.bothDone) {
+        active ??= c;
+      } else if (c.status == CornerStatus.pending && c.iAmChallenger(uid)) {
+        outgoing ??= c;
+      }
+    }
+    return incoming ?? active ?? outgoing;
   }
 }

@@ -1,6 +1,6 @@
 # Marketing — STWAY
 
-**Atualizado:** 16 set/2026
+**Atualizado:** 20 set/2026
 
 Assets visuais Instagram: repositório externo `stway-marketing` (`instagram/semana-1`, `instagram/semana-2`).
 
@@ -14,7 +14,9 @@ Assets visuais Instagram: repositório externo `stway-marketing` (`instagram/sem
 | **O que somos** | Missões diárias para criar hábito de ler e estudar a Bíblia |
 | **Sensação** | Duolingo no loop · ler e estudar a Palavra de verdade |
 | **Tester (1 frase)** | App de missões pra criar hábito de ler a Bíblia |
-| **Anti-posicionamento** | Não somos YouVersion (só ler), Hallow (orar), academia teológica, nem pet game |
+| **Anti-posicionamento** | Não somos YouVersion (só ler), Hallow (orar), Bibliando (missão sem estudo), academia teológica, nem pet game |
+
+Cuidado: **Bibliando** já usa missão/trilha/XP em PT-BR. Na conversa, descer para o *como* (6 gestos, palco, Strong) — não repetir só “missões”.
 
 ---
 
@@ -22,7 +24,7 @@ Assets visuais Instagram: repositório externo `stway-marketing` (`instagram/sem
 
 - Cristãos **PT-BR**, 18–35, celular-first  
 - 5–12 min/dia, querem hábito **e** compreensão  
-- Igreja como **canal** depois que o loop solo retém (Salas / Companhia)
+- Igreja como **canal** depois que o loop solo retém (Salas / Companhia / Esquina)
 
 ---
 
@@ -31,8 +33,9 @@ Assets visuais Instagram: repositório externo `stway-marketing` (`instagram/sem
 | Concorrente | Não dizer | Dizer |
 |-------------|-----------|-------|
 | YouVersion | “Bíblia melhor” | “Hábito de *ler e estudar*, não só marcar capítulo” |
-| Hallow | “Oramos melhor” | “Formação cognitiva da Palavra” |
-| Bible Way | “Mais divertido” | “Hábito de ler e estudar, não pet no tema” |
+| Hallow | “Oramos melhor” / “também temos game” | “Formação cognitiva da Palavra” |
+| Bible Way / Ascend | “Mais divertido” | “Hábito de ler e estudar, não pet no tema” |
+| Bibliando | “Também temos missões” | “Seis gestos no texto + Strong — não só quiz com contexto” |
 | Trivia | “Mais perguntas” | “Currículo + Strong + 3 profundidades” |
 
 Detalhe: [`docs/PITCH_NOS_VS_ELES.md`](docs/PITCH_NOS_VS_ELES.md)
@@ -52,5 +55,6 @@ Detalhe: [`docs/PITCH_NOS_VS_ELES.md`](docs/PITCH_NOS_VS_ELES.md)
 - Rodar **D7** com 10–20 testers antes de escala de aquisição  
 - Prova: usuário explica o app numa frase + retorno D7  
 - IAP: casca Peregrino+ já no app, **inativa**; produto Pro só depois de retenção ok ([`MONETIZATION.md`](MONETIZATION.md))
+- Não gastar mídia contra YouVersion/Hallow em catálogo; o clone de copy a vigiar é Bibliando
 
-Canvas: `stway-posicionamento-mercado-24ago2026.canvas.tsx`
+Canvas: `stway-posicionamento-mercado-20set2026.canvas.tsx`

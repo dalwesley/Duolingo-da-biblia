@@ -28,7 +28,7 @@ Currículo é **fonte de verdade no Firestore**. O app sincroniza por versão (`
 
 JSON em `trilha_app/assets/data/` = **origem do seed / backup editorial** — não o runtime do usuário. Composer, UI e analytics ficam no **código Flutter** (APK/IPA).
 
-**Estado 16 set/2026:** catálogo **local + Firestore** alinhados — **8.370** perguntas V2, validador **verde**. Palco TB. Toque no verso. Seed `catalog.version` `1787584947461`. App: cache por trilha (`ensureTrailBank`). Sessão **6/8**. IAP casca inativa. Ver [`docs/PITCH_NOS_VS_ELES.md`](PITCH_NOS_VS_ELES.md) para posicionamento.
+**Estado 20 set/2026:** catálogo **local + Firestore** alinhados — **8.370** perguntas V2, validador **verde**. Palco TB. Toque no verso. Seed `catalog.version` `1787584947461`. App: cache por trilha (`ensureTrailBank`). Sessão **6/8**. IAP casca inativa. Ver [`docs/PITCH_NOS_VS_ELES.md`](PITCH_NOS_VS_ELES.md) para posicionamento (recorte 20 set: Bibliando, Bible Way PT, Esquina).
 
 ---
 

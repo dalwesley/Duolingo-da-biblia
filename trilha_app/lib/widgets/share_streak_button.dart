@@ -11,6 +11,7 @@ class ShareStreakButton extends StatelessWidget {
   final String userName;
   final int steps;
   final bool compact;
+  final bool asLink;
 
   const ShareStreakButton({
     super.key,
@@ -18,6 +19,7 @@ class ShareStreakButton extends StatelessWidget {
     required this.userName,
     required this.steps,
     this.compact = false,
+    this.asLink = false,
   });
 
   Future<void> _share() async {
@@ -53,6 +55,37 @@ Baixe o Stway e venha junto.
 
   @override
   Widget build(BuildContext context) {
+    if (asLink) {
+      final a = Appearance.of(context);
+      return TextButton(
+        onPressed: _share,
+        style: TextButton.styleFrom(
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+          minimumSize: Size.zero,
+          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            CinematicIcon(
+              glyph: CinematicGlyph.share,
+              size: 15,
+              accent: a.textMuted(0.7),
+              framed: false,
+            ),
+            const SizedBox(width: 6),
+            Text(
+              'Compartilhar',
+              style: AppTypography.body(
+                weight: FontWeight.w700,
+                color: a.textMuted(0.7),
+              ),
+            ),
+          ],
+        ),
+      );
+    }
+
     if (compact) {
       final a = Appearance.of(context);
       return Tooltip(

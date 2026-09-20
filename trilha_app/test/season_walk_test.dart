@@ -92,6 +92,15 @@ void main() {
       expect(one.single.name, 'Imagem');
     });
 
+    test('first encounter is the unlock, replay is not', () {
+      expect(CharacterSeals.unlocksOn('gen-03-imagem', const []), isTrue);
+      expect(
+        CharacterSeals.unlocksOn('gen-03-imagem', ['gen-03-imagem']),
+        isFalse,
+      );
+      expect(CharacterSeals.unlocksOn('gen-01-criador', const []), isFalse);
+    });
+
     test('last pain-trail missions continue into the canon', () {
       expect(EntryTrails.continuesTo['dor-ansia-05'], 'sermao-do-monte');
       expect(EntryTrails.continuesTo['dor-recome-05'], 'genesis-1-11');
