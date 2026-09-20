@@ -3,12 +3,12 @@
 **Atualizado:** 20 set/2026 · app **1.0.24+24** · banco local + Firebase **8.370** · validador verde · palco TB · seed `1787584947461`.
 
 **Norte:** missões diárias em português para **criar hábito de ler e estudar a Bíblia** — sessões curtas + estudo offline quando o versículo pede.
-Não somos YouVersion (ler), nem Hallow (orar), nem Ascend/Bible Way (jogo com pet/heróis sem estudo), nem Bibliando (missão sem os 6 gestos), nem trivia vazia.
+Não somos YouVersion (ler), nem Hallow (orar), nem Ascend/Bible Way (jogo com pet/heróis sem estudo), nem Bibliando (missão sem os 6 gestos), nem Bíblia Fácil (oração+quiz), nem trivia vazia.
 **Sensação:** Duolingo no loop · **ler e estudar a Palavra** (não formação teológica — hábito + estudo no texto).
 **Frase competitiva:** *“Enquanto outros te fazem jogar a Bíblia, o STWAY te põe em missão nela.”*
 **Frase do tester:** *“app de missões pra criar hábito de ler a Bíblia.”*
 
-**Posicionamento vs mercado:** [`docs/PITCH_NOS_VS_ELES.md`](docs/PITCH_NOS_VS_ELES.md) · [`docs/PRODUTO.md`](docs/PRODUTO.md) · canvas `stway-posicionamento-mercado-20set2026`
+**Posicionamento vs mercado:** [`docs/PITCH_NOS_VS_ELES.md`](docs/PITCH_NOS_VS_ELES.md) · [`docs/PRODUTO.md`](docs/PRODUTO.md) · canvas `stway-concorrencia-direta-indireta`
 
 ### Estado (20 set) — o que o app *é* vs o que ainda falta
 
@@ -68,7 +68,7 @@ Histórico de releases: [`CHANGELOG.md`](CHANGELOG.md).
 - [x] Feedback pedagógico no erro + modo boss real
 - [x] Sync por conta endurecido (sem misturar progresso entre usuários)
 - [x] **Relato de pergunta** (feedback da lição → `content_question_reports` → admin Relatos)
-- [x] Análise competitiva profunda (ago/2026) + recorte **20 set** (Bibliando, Bible Way PT, YouVersion Plans with Friends, Hallow games)
+- [x] Análise competitiva profunda (ago/2026) + recorte **20 set noite** (Bibliando, Bible Way PT, Bíblia Fácil, YouVersion slot, Hallow games)
 - [x] Widget iOS/Android (App Group `group.ZS7LYV9Y7U.stway`)
 - [x] Push de aceno na companhia (FCM + Cloud Function)
 - [x] Remote Config no boot (liga / baú / bônus de convite)
@@ -212,7 +212,7 @@ Não começar por aqui. Schema de steps (contexto, curiosidade, match…) + admi
 - [ ] Motor multi-step / “clone Duolingo” antes de Sermão 100% + prática IRL
 - [ ] XP alto em atos de vida real não verificáveis
 - [ ] Mais trilhas “em breve” / volume NT sem studies e sem testers no Sermão
-- [ ] Paridade de copy com Bibliando (missão/trilha/XP) sem aprofundar gestos — o slogan já está ocupado; o fosso é a sessão
+- [ ] Paridade de copy com Bibliando / Bíblia Fácil (missão/trilha/XP) sem aprofundar gestos — o slogan já está ocupado; o fosso é a sessão
 
 ### Nunca (ou só com prova forte)
 - [ ] Battle pass / den / relics / ads de energia estilo Ascend
@@ -248,7 +248,7 @@ Não começar por aqui. Schema de steps (contexto, curiosidade, match…) + admi
 
 | Nós | Eles |
 |-----|------|
-| Strong + Bíblia offline na missão + intro do livro | Ascend/Bible Way: quiz + pet/heróis; Bibliando: missão sem palco TB |
+| Strong + Bíblia offline na missão + intro do livro | Ascend/Bible Way: quiz + pet/heróis; Bibliando: missão sem palco TB; Bíblia Fácil: oração+quiz |
 | Dificuldade pedagógica (Semente→Profundezas) · 6 gestos | Hearts/energy genéricos · MCQ |
 | Esquina (mesma cena até domingo) + Companhia | YouVersion: plano com 300 amigos; Ascend: Showdown PvP |
 | Reflexão + preparo + **desafio de vida real** (próximo) | Trivia, IA “explica o verso”, ou devocional raso |
@@ -257,4 +257,4 @@ Não começar por aqui. Schema de steps (contexto, curiosidade, match…) + admi
 | pt-BR first + liturgia | EN-first com locale (Bible Way) ou copy nativa rasa (Bibliando) |
 | Célula/Salas → Igreja | Leaderboard global vazio |
 
-Janela: Bible Way **já** localiza (PT na lista). Bibliando **já** fala missão/trilha em PT-BR. Ser o padrão **academia bíblica pt-BR** agora — treino + compreensão + prática que sai do app. Diferenciar na sessão, não no slogan.
+Janela: Bible Way **já** localiza (PT na lista). Bibliando **já** fala missão/trilha em PT-BR. Bíblia Fácil **já** vende “missão prática” + oração. Ser o padrão **academia bíblica pt-BR** agora — treino + compreensão + prática que sai do app. Diferenciar na sessão, não no slogan.

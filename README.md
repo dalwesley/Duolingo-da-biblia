@@ -14,9 +14,9 @@ App Flutter para missões diárias + painel admin no Firebase.
 | [`MONETIZATION.md`](MONETIZATION.md) | Hipóteses de receita (IAP casca; Pro depois do D7) |
 | [`docs/MEDALHAS_CALIBRATION.md`](docs/MEDALHAS_CALIBRATION.md) | Medalhas v3.2 vigentes |
 
-**Estado (20 set/2026):** app **1.0.24+24** · 8.370 atos V2 na nuvem · validador verde · sessão 6/8 · D7 **ainda aberto** (planilha vazia). IAP Peregrino+ no código, **chaves vazias**. Fosso vs mercado: pedagogia (6 gestos · Strong) + par (Esquina) — não “missões em PT-BR” (Bibliando já fala isso).
+**Estado (20 set/2026):** app **1.0.24+24** · 8.370 atos V2 na nuvem · validador verde · sessão 6/8 · D7 **ainda aberto** (planilha vazia). IAP Peregrino+ no código, **chaves vazias**. Fosso vs mercado: pedagogia (6 gestos · Strong) + par (Esquina) — não “missões em PT-BR” (Bibliando e Bíblia Fácil já falam isso).
 
-Canvas de posicionamento: `stway-posicionamento-mercado-20set2026.canvas.tsx`
+Canvas de concorrência: `stway-concorrencia-direta-indireta.canvas.tsx`
 
 ## Projetos
 

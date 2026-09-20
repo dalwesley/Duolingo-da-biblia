@@ -1,20 +1,20 @@
 # STWAY — Nós vs. eles (1 página)
 
 **Para:** tester · líder de igreja · conversa rápida de produto  
-**Atualizado:** 20 set/2026 · app v1.0.24+24 · catalog `1787584947461`  
+**Atualizado:** 20 set/2026 (recorte noite) · app v1.0.24+24 · catalog `1787584947461`  
 **Frase:** *“Enquanto outros te fazem jogar a Bíblia, o STWAY te põe em missão nela.”*
 
-**Canvas:** `stway-posicionamento-mercado-20set2026.canvas.tsx` · histórico: `stway-posicionamento-mercado-24ago2026`
+**Canvas:** `stway-concorrencia-direta-indireta.canvas.tsx` · histórico: `stway-posicionamento-mercado-20set2026` · `stway-posicionamento-mercado-24ago2026`
 
 ---
 
-## Veredito (20 set)
+## Veredito (20 set, noite)
 
-O fosso **não** é “missões em português”. **Bibliando** já vende trilhas + missão do dia + XP em PT-BR. **Bible Way** já localiza (inclui português) com clubes, heróis e IA.
+O fosso **não** é “missões em português”. Três apps BR já falam *missão*: **Bibliando** (trilhas + XP + IAP), **Bíblia Fácil** (devocional + quiz + oração, 10 mil+ downloads), e nós. **Bible Way** já localiza de verdade (1.4.5, 10 idiomas, inclui PT) com clubes, heróis e IA.
 
 O fosso que ainda é nosso: **treinar a leitura do texto** — 6 gestos, 3 profundidades, palco TB, Strong na missão, validador pedagógico — e **accountability de um par** (Companhia + Esquina), não feed nem PvP.
 
-Gigantes (YouVersion, Hallow) avançaram em *guiado* e *juntos*. Continuam consumo / oração. Não copiar o catálogo deles.
+Gigantes indiretos (YouVersion, Hallow) ocupam o **slot de 10 minutos**. Continuam consumo / oração. Não copiar o catálogo deles.
 
 **Prova em aberto:** D7 zerado. Sem isso, o fosso é tese — não evidência.
 
@@ -29,7 +29,8 @@ Gigantes (YouVersion, Hallow) avançaram em *guiado* e *juntos*. Continuam consu
 | **Glorify** | Adoração + devocional + polish (~10 min) |
 | **Manna** | Um trecho por dia — Duolingo de *leitura*, sem estudo |
 | **Bible Way / Ascend** | Jogo bíblico: streak, herói/fênix, clube, quiz, IA / battle pass |
-| **Bibliando** | Missões + trilhas em PT-BR (leitura + contexto + descoberta) |
+| **Bibliando** | Missões + trilhas em PT-BR (leitura + contexto + descoberta) · já cobra |
+| **Bíblia Fácil** | Devocional 5 min + oração + quiz + “missões bíblicas” (BR, 10 mil+) |
 | **Guia de Fé / Verbo / trivia** | Planos+igreja+IA · quiz gamificado · memória solta |
 | **STWAY** | **Missões diárias** para criar hábito de **ler e estudar** a Bíblia |
 
@@ -55,19 +56,28 @@ Sensação-alvo: **Duolingo no loop · ler e estudar a Palavra de verdade.**
 
 ● forte · ◐ parcial · ○ fraco/ausente
 
-Social STWAY = Caravana + Companhia + Salas + **Esquina** (1.0.24). Forte no par; fraco vs igreja YouVersion ou clube Bible Way.
+Social STWAY = Caravana + Companhia + Salas + **Esquina** (1.0.24). Forte no par; fraco vs igreja YouVersion ou clube Bible Way.  
+**Bíblia Fácil** (fora da grade): hábito ● · texto ○ · currículo ○ · áudio/oração ● · PT-BR ● · IAP ◐. Híbrido Hallow-lite + trivia, não pedagogia.
 
 ---
 
 ## Diretos vs indiretos
 
-**Diretos** (mesmo job: Bíblia no bolso *e* treino): Bible Way, Ascend, **Bibliando**, Verbo, trivia.  
-**Indiretos** (mesmo tempo no bolso): YouVersion, Hallow, Glorify, Manna, Guia de Fé, Duolingo (referência de loop).
+**Diretos** (mesmo job: Bíblia no bolso *e* treino), por ameaça:
+
+1. **Bibliando** — clone de copy; já cobra  
+2. **Bible Way** — mesmo loop, polish, PT de verdade  
+3. **Bíblia Fácil** — terceiro dono de “missão” no BR  
+4. **Verbo** — leitor + quiz  
+5. **Show do Biblião** — PvP trivia (anti-posição)  
+6. **Ascend** — pet + energia (EN; influi expectativa)
+
+**Indiretos** (mesmo tempo no bolso): YouVersion (já instalado), Hallow (manhã), Glorify, Manna, Guia de Fé (igreja-CMS), Duolingo (referência de loop).
 
 STWAY **não** compete em MAU nem biblioteca de áudio.  
 STWAY **compete** em: *hábito de ler e estudar — e querer voltar amanhã.*
 
-O clone de copy mais perigoso é **Bibliando** (missões / trilhas / XP em PT-BR, sem os 6 gestos nem Strong). Diferenciar na sessão, não no slogan.
+O clone de copy mais perigoso continua **Bibliando**. Bíblia Fácil ocupa a *busca*. Bible Way ocupa o *loop*. Diferenciar na sessão, não no slogan.
 
 ---
 
@@ -84,6 +94,7 @@ SESSÃO (2–4 min)
 - **Currículo** — 84 trilhas · 8.370 atos V2 · validador pedagógico  
 - **Social leve** — Caravana, Companhia, Salas, Esquina (mesma cena até domingo, +10)  
 - **1.0.24** — retrato (foto / letra / avatar), intro dos livros, pedido de trilha no mapa  
+- **Branch** — carta do encontro (verso-first) para share; combo na missão  
 
 ---
 
@@ -96,9 +107,11 @@ SESSÃO (2–4 min)
 | Marca / polish / aquisição | Shell cinemático ok; gigantes ganham por confiança |
 | IAP | Casca Peregrino+ **inativa**; Caminhada/áudio/revisão já no app; não ligar chaves antes do D7 |
 | Igreja em escala | YouVersion *Plans with Friends* (até 300) + Hallow Family. Nós: sala ~12 + par |
-| Janela PT-BR | Bible Way localiza; Bibliando já fala “missão”. Fosso = pedagogia, não idioma |
+| Janela PT-BR | Três vozes dizem “missão”. Fosso = pedagogia, não idioma nem slogan |
+| Prática IRL | `lifeChallenge` ainda fora do player — Bíblia Fácil já vende “missão prática do dia” |
+| Share | YouVersion ganha versículo-imagem; carta do encontro ainda unreleased |
 
-**Não copiar:** IA solta “explica o versículo”, battle pass / energia Ascend, PvP trivia, hub de oração Hallow, planos infinitos YouVersion.
+**Não copiar:** IA solta “explica o versículo”, battle pass / energia Ascend, PvP trivia, hub de oração Hallow, planos infinitos YouVersion, oração+quiz+Fécoins da Bíblia Fácil.
 
 ---
 
@@ -120,4 +133,4 @@ SESSÃO (2–4 min)
 
 ---
 
-*Detalhe:* [`PRODUTO.md`](PRODUTO.md) · [`ROADMAP.md`](../ROADMAP.md) · [`SESSAO_TREINO.md`](SESSAO_TREINO.md) · [`TECNICA.md`](TECNICA.md)
+*Detalhe:* [`PRODUTO.md`](PRODUTO.md) · [`ROADMAP.md`](../ROADMAP.md) · [`SESSAO_TREINO.md`](SESSAO_TREINO.md) · [`TECNICA.md`](TECNICA.md) · [`MARKETING.md`](../MARKETING.md)

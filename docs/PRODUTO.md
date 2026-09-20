@@ -36,7 +36,7 @@ STWAY são **missões diárias em português** para criar **hábito de ler e est
 
 **Frase competitiva:** *“Enquanto outros te fazem jogar a Bíblia, o STWAY te põe em missão nela.”*
 
-Não somos YouVersion (só ler), Hallow (orar), Ascend/Bible Way (jogo com pet/heróis sem estudo), Bibliando (missão sem os 6 gestos), nem trivia vazia.  
+Não somos YouVersion (só ler), Hallow (orar), Ascend/Bible Way (jogo com pet/heróis sem estudo), Bibliando (missão sem os 6 gestos), Bíblia Fácil (oração+quiz), nem trivia vazia.  
 **Sensação:** Duolingo no loop · **ler e estudar a Palavra de verdade**.
 
 ---
@@ -214,39 +214,41 @@ Pipeline editorial: [`LEARNING_ENGINE.md` §42–43](LEARNING_ENGINE.md).
 
 ## Posicionamento vs. concorrentes
 
-Pitch 1 página: [`PITCH_NOS_VS_ELES.md`](PITCH_NOS_VS_ELES.md) · canvas `stway-posicionamento-mercado-20set2026.canvas.tsx`
+Pitch 1 página: [`PITCH_NOS_VS_ELES.md`](PITCH_NOS_VS_ELES.md) · canvas `stway-concorrencia-direta-indireta.canvas.tsx`
 
-**Veredito 20 set/2026:** o nicho “missões em PT-BR” já tem dono de copy (**Bibliando**). Bible Way localiza (10 idiomas, inclui português). YouVersion 2026 reforçou *Plans with Friends* e Guided Scripture. Hallow pôs games na Home. O fosso STWAY continua sendo **treinar a leitura** (6 gestos · 3 modos · Strong · validador) + **par** (Companhia / Esquina) — não idioma, não slogan, não pet.
+**Veredito 20 set/2026 (noite):** o nicho “missões em PT-BR” tem **três** vozes (**Bibliando**, **Bíblia Fácil**, nós). Bible Way localiza de verdade (1.4.5, 10 idiomas). YouVersion ocupa o slot com *Plans with Friends*; Hallow, com oração + games na Home. O fosso STWAY continua sendo **treinar a leitura** (6 gestos · 3 modos · Strong · validador) + **par** (Companhia / Esquina) — não idioma, não slogan, não pet.
 
 ### Mapa em duas dimensões
 
 | | **Consumo passivo** (ler · orar · ouvir) | **Prática ativa** (exercícios · competência) |
 |---|------------------------------------------|-----------------------------------------------|
-| **Escala / marca** | YouVersion · Hallow · Glorify | Bible Way · Ascend |
-| **PT-BR / formação** | Guia de Fé (planos + igreja + IA) | **STWAY** · Bibliando · Verbo |
+| **Escala / marca** | YouVersion · Hallow · Glorify · Manna | Bible Way · Ascend |
+| **PT-BR / formação** | Guia de Fé (planos + igreja + IA) | **STWAY** · Bibliando · Verbo · Bíblia Fácil · trivia |
 
-STWAY ocupa **formação ativa com pedagogia explícita**. Gigantes não priorizam isso; Bibliando prioriza o *formato* (missão/trilha/XP) sem os 6 gestos nem Strong.
+STWAY ocupa **formação ativa com pedagogia explícita**. Gigantes não priorizam isso; Bibliando prioriza o *formato* (missão/trilha/XP) sem os 6 gestos nem Strong; Bíblia Fácil mistura oração + quiz.
 
 ### Diretos (mesmo job: “Bíblia no bolso” + treino)
 
+Por ameaça: Bibliando → Bible Way → Bíblia Fácil → Verbo → Show do Biblião → Ascend.
+
 | Player | O que faz (2026) | STWAY vs |
 |--------|------------------|----------|
-| **YouVersion** | 2.500+ versões; planos; áudio; *Plans with Friends* até 300; Guided Scripture/Prayer; QR | Não competimos em catálogo nem igreja-em-escala. Competimos em *hábito de ler e estudar*. |
-| **Bible Way** | Lição 5 min, heróis, clubes, ranking, IA, áudio/sleep; **locale PT**; Premium ~US$ 4,99/sem | Gamifica *tema* + coleção. STWAY gamifica *competência*. Não copiar IA solta. |
-| **Ascend** | Lição &lt;10 min, fênix, relics, battle pass, energia, Showdown PvP | Loop de jogo (energia/ads). STWAY recusa battle pass e PvP. |
 | **Bibliando** | Missões + trilhas PT-BR; leitura + contexto + descoberta; 1ª trilha grátis, resto IAP | Clone de *copy*. Sem 6 gestos, 3 modos, Strong, Caravana/Esquina. Diferenciar na sessão. |
-| **Verbo / Show do Biblião** | Quiz + leitura / trivia multiplayer | Sem currículo progressivo nem evidência no palco. |
-| **Manna** | Um trecho/dia, amanhã trava, widget — iPhone | Duolingo de *leitura*. STWAY é estudo ativo. |
+| **Bible Way** | Lição 5 min, heróis, clubes, ranking, IA, áudio/sleep; **PT de verdade** (1.4.5); Premium ~US$ 4,99/sem | Gamifica *tema* + coleção. STWAY gamifica *competência*. Não copiar IA solta. |
+| **Bíblia Fácil** | Devocional 5 min + oração + quiz + “missões bíblicas”; 10 mil+ downloads BR | Terceiro dono da palavra *missão*. Híbrido raso. `lifeChallenge` (ainda fora do player) é a resposta à “missão prática”. |
+| **Verbo / Show do Biblião** | Quiz + leitura / trivia multiplayer | Sem currículo progressivo nem evidência no palco. Não copiar PvP. |
+| **Ascend** | Lição &lt;10 min, fênix, relics, battle pass, energia, Showdown PvP | Loop de jogo (energia/ads). STWAY recusa battle pass e PvP. |
 
 ### Indiretos (mesmo bolso: tempo / hábito espiritual)
 
 | Player | O que faz (2026) | STWAY vs |
 |--------|------------------|----------|
+| **YouVersion** | 2.500+ versões; planos; áudio; *Plans with Friends* até 300; Guided Scripture/Prayer; QR | Não competimos em catálogo nem igreja-em-escala. Competimos em *hábito de ler e estudar*. Já está instalado — é o slot, não o quiz. |
 | **Hallow** | Oração + áudio + Family (6 pessoas); Home com games e desafios de comunidade | Complementar. **Não** virar app de oração nem copiar o game na Home. |
 | **Glorify** | Devocional ~10 min + adoração + polish (~20 M) | **Não** competir em biblioteca sonora. |
+| **Manna** | Um trecho/dia, amanhã trava, widget — iPhone | Duolingo de *leitura*. STWAY é estudo ativo. |
 | **Guia de Fé** | Bíblia offline + planos + grupo de igreja + conselheiro IA (BR) | Igreja-CMS + leitura. STWAY = treino do aprendiz. |
 | **Duolingo** | Loop de hábito | Copiamos o *loop* (missão, streak, gelo ao virar o dia); rejeitamos tom punitivo. |
-| **Apps de igreja** | CMS pastoral | Igreja = canal futuro (Salas), não o produto. |
 
 ### O que só STWAY junta (hoje, 1.0.24)
 
