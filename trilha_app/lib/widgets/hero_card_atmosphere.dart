@@ -2,6 +2,7 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
+import 'ui_primitives.dart';
 
 /// Humor cinematográfico do card de continuar.
 enum HeroCardMood {
@@ -806,6 +807,17 @@ class HeroCardColorGrade extends StatelessWidget {
   ];
 }
 
+/// Contorno compartilhado dos cards da Home.
+///
+/// Empoeirada = vermelho do card de perfil.
+/// Congelada = gelo/azul.
+/// Em dia = ouro da marca.
+Color homeTrailOutline(HeroCardMood mood) => switch (mood) {
+      HeroCardMood.dusty => AppColors.error.withValues(alpha: 0.55),
+      HeroCardMood.frozen => AppColors.iceSoft.withValues(alpha: 0.85),
+      HeroCardMood.alive => AppColors.accent.withValues(alpha: 0.7),
+    };
+
 /// Tokens de UI por mood — borda, labels, CTA.
 class HeroCardMoodStyle {
   final Color border;
@@ -828,26 +840,27 @@ class HeroCardMoodStyle {
     HeroCardMood mood, {
     required Color trailAccent,
   }) {
+    final outline = homeTrailOutline(mood);
     return switch (mood) {
       HeroCardMood.frozen => HeroCardMoodStyle(
-          border: AppColors.ice.withValues(alpha: 0.7),
-          borderWidth: 1.8,
+          border: outline,
+          borderWidth: AppMetrics.cardBorderWidth,
           glow: AppColors.ice.withValues(alpha: 0.12),
           label: AppColors.iceSoft,
           footer: AppColors.iceSoft.withValues(alpha: 0.95),
           stepLabel: 'Protegido pelo gelo',
         ),
       HeroCardMood.dusty => HeroCardMoodStyle(
-          border: const Color(0xFF6B4A28).withValues(alpha: 0.7),
-          borderWidth: 1.6,
+          border: outline,
+          borderWidth: AppMetrics.cardBorderWidth,
           glow: const Color(0xFF1A1008).withValues(alpha: 0.5),
           label: const Color(0xFFB89868),
           footer: const Color(0xFF9A7850),
           stepLabel: 'Ficando para trás',
         ),
       HeroCardMood.alive => HeroCardMoodStyle(
-          border: Colors.white.withValues(alpha: 0.22),
-          borderWidth: 1.6,
+          border: outline,
+          borderWidth: AppMetrics.cardBorderWidth,
           glow: trailAccent.withValues(alpha: 0.12),
           label: trailAccent,
           footer: trailAccent,

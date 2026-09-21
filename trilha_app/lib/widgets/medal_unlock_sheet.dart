@@ -22,6 +22,7 @@ Future<void> showTrackDetailSheet(
     context: context,
     backgroundColor: Colors.transparent,
     barrierColor: Colors.black.withValues(alpha: 0.72),
+    elevation: 0,
     isScrollControlled: true,
     enableDrag: true,
     builder: (ctx) => _TrackDetailSheet(
@@ -40,6 +41,7 @@ Future<void> showTrackTierUpSheet(
     context: context,
     backgroundColor: Colors.transparent,
     barrierColor: Colors.black.withValues(alpha: 0.72),
+    elevation: 0,
     isScrollControlled: true,
     enableDrag: true,
     builder: (ctx) => _TrackDetailSheet(
@@ -67,6 +69,7 @@ Future<void> showMedalTileSheet(
     context: context,
     backgroundColor: Colors.transparent,
     barrierColor: Colors.black.withValues(alpha: 0.72),
+    elevation: 0,
     isScrollControlled: true,
     enableDrag: true,
     builder: (ctx) => _MedalDetailSheet(
@@ -82,6 +85,7 @@ Future<void> showMedalMysterySheet(BuildContext context, int hiddenCount) {
     context: context,
     backgroundColor: Colors.transparent,
     barrierColor: Colors.black.withValues(alpha: 0.72),
+    elevation: 0,
     isScrollControlled: true,
     enableDrag: true,
     builder: (ctx) => _MedalDetailSheet(
@@ -173,7 +177,11 @@ class _MedalDetailSheetState extends State<_MedalDetailSheet>
       curve: const Interval(0.48, 0.78, curve: Curves.easeOut),
     );
 
-    _entrance.forward();
+    if (widget.celebration) {
+      _entrance.forward();
+    } else {
+      _entrance.value = 1;
+    }
     if (widget.celebration && widget.tile.unlocked) {
       Future<void>.delayed(const Duration(milliseconds: 180), () {
         if (mounted) HapticFeedback.lightImpact();
@@ -378,17 +386,12 @@ class _TrackDetailSheet extends StatefulWidget {
 }
 
 class _TrackDetailSheetState extends State<_TrackDetailSheet>
-    with TickerProviderStateMixin {
-  late final AnimationController _entrance;
+    with SingleTickerProviderStateMixin {
   late final AnimationController _pulse;
 
   @override
   void initState() {
     super.initState();
-    _entrance = AnimationController(
-      vsync: this,
-      duration: const Duration(milliseconds: 900),
-    )..forward();
     _pulse = AnimationController(
       vsync: this,
       duration: const Duration(milliseconds: 2800),
@@ -402,7 +405,6 @@ class _TrackDetailSheetState extends State<_TrackDetailSheet>
 
   @override
   void dispose() {
-    _entrance.dispose();
     _pulse.dispose();
     super.dispose();
   }
@@ -485,9 +487,7 @@ class _TrackDetailSheetState extends State<_TrackDetailSheet>
                     ),
                     SingleChildScrollView(
                       padding: const EdgeInsets.fromLTRB(24, 20, 24, 24),
-                      child: FadeTransition(
-                        opacity: _entrance,
-                        child: Column(
+                      child: Column(
                           mainAxisSize: MainAxisSize.min,
                           children: [
                             Container(
@@ -570,7 +570,6 @@ class _TrackDetailSheetState extends State<_TrackDetailSheet>
                             ),
                           ],
                         ),
-                      ),
                     ),
                   ],
                 ),
@@ -721,6 +720,7 @@ Future<void> showMedalVaultCompleteSheet(
     context: context,
     backgroundColor: Colors.transparent,
     barrierColor: Colors.black.withValues(alpha: 0.72),
+    elevation: 0,
     isScrollControlled: true,
     enableDrag: true,
     builder: (ctx) => _MedalVaultCompleteSheet(

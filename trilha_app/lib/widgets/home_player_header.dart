@@ -54,9 +54,10 @@ class HomePlayerHeader extends StatelessWidget {
         ),
         borderRadius: BorderRadius.circular(AppRadii.lg),
         border: Border.all(
-          color: atRisk
-              ? AppColors.error.withValues(alpha: 0.55)
-              : a.cardBorder,
+          color: HomeTrailChrome.outlineOf(context) ??
+              (atRisk
+                  ? AppColors.error.withValues(alpha: 0.55)
+                  : a.cardBorder),
           width: AppMetrics.cardBorderWidth,
         ),
         boxShadow: AppMetrics.cardShadow(),

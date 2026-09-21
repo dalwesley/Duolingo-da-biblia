@@ -136,6 +136,26 @@ class AppearanceStyle {
   }
 }
 
+/// Contorno dos cards da Home — segue o humor da trilha (poeira / gelo / em dia).
+class HomeTrailChrome extends InheritedWidget {
+  final Color outline;
+
+  const HomeTrailChrome({
+    super.key,
+    required this.outline,
+    required super.child,
+  });
+
+  static HomeTrailChrome? maybeOf(BuildContext context) =>
+      context.dependOnInheritedWidgetOfExactType<HomeTrailChrome>();
+
+  static Color? outlineOf(BuildContext context) => maybeOf(context)?.outline;
+
+  @override
+  bool updateShouldNotify(HomeTrailChrome oldWidget) =>
+      oldWidget.outline != outline;
+}
+
 class Appearance extends InheritedWidget {
   final AppearanceStyle style;
   final AppearanceMode mode;

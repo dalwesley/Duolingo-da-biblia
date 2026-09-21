@@ -203,7 +203,10 @@ class _HomeWordCardState extends State<HomeWordCard> {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(AppMetrics.cardRadius),
           color: a.cardFill.withValues(alpha: 0.72),
-          border: Border.all(color: a.cardBorder.withValues(alpha: 0.7)),
+          border: Border.all(
+            color: HomeTrailChrome.outlineOf(context) ??
+                a.cardBorder.withValues(alpha: 0.7),
+          ),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,

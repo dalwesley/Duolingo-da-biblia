@@ -20,6 +20,7 @@ import '../widgets/companion_nudge_home_card.dart';
 import '../widgets/corner_home_card.dart';
 import '../widgets/daily_chest_card.dart';
 import '../widgets/daily_quests_card.dart';
+import '../widgets/hero_card_atmosphere.dart';
 import '../widgets/hero_continue_card.dart';
 import '../widgets/home_player_header.dart';
 import '../widgets/home_word_card.dart';
@@ -29,7 +30,6 @@ import '../widgets/league_risk_card.dart';
 import '../widgets/offline_curriculum_dialog.dart';
 import '../widgets/reminder_prompt_sheet.dart';
 import '../widgets/streak_repair_banner.dart';
-import '../widgets/medal_proximity_whisper.dart';
 import '../widgets/season_challenge_banner.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
@@ -313,7 +313,16 @@ class _HomeScreenState extends State<HomeScreen>
         ? () => widget.onOpenMission(current.slug)
         : widget.onOpenTrilhas;
 
-    return Stack(
+    final trailMood = resolveHeroCardMood(
+      atRisk: progress.isStreakAtRisk,
+      yesterdayFrozen: progress.yesterdayWasFrozen,
+      walkedToday: progress.walkedToday,
+      returningAfterGap: progress.isReturningAfterGap,
+    );
+
+    return HomeTrailChrome(
+      outline: homeTrailOutline(trailMood),
+      child: Stack(
       children: [
         ListView(
           padding: EdgeInsets.fromLTRB(
@@ -393,16 +402,6 @@ class _HomeScreenState extends State<HomeScreen>
                       isBoss: current?.isBoss ?? false,
                     ),
                   ),
-                  MedalHomeWhisper(
-                    catalog: trails,
-                    priorityTrailSlug: active?.slug,
-                    onBible: _openBible,
-                    onMemory: _openMemory,
-                    onMission: current != null
-                        ? () => widget.onOpenMission(current.slug)
-                        : widget.onOpenTrilhas,
-                    onShare: _openBible,
-                  ),
                   const SizedBox(height: AppSpace.md),
                   _WalkHomeCard(heroMissionSlug: current?.slug),
                 ],
@@ -465,6 +464,7 @@ class _HomeScreenState extends State<HomeScreen>
         ),
         WaveHandsOverlay(active: nudge != null),
       ],
+    ),
     );
   }
 }

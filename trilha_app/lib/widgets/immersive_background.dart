@@ -133,16 +133,18 @@ class GlassCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final style = Appearance.of(context);
+    final trailOutline = HomeTrailChrome.outlineOf(context);
     final fill =
         color ??
         (tint != null
             ? Color.lerp(style.cardFill, tint, 0.12)!
             : style.cardFill);
-    final borderColor = accent
-        ? AppMetrics.accentBorder(alpha: elevated ? 0.85 : 0.7)
-        : tint != null
-        ? tint!.withValues(alpha: 0.45)
-        : style.cardBorder;
+    final borderColor = trailOutline ??
+        (accent
+            ? AppMetrics.accentBorder(alpha: elevated ? 0.85 : 0.7)
+            : tint != null
+            ? tint!.withValues(alpha: 0.45)
+            : style.cardBorder);
 
     final content = Container(
       padding: padding,
@@ -151,7 +153,7 @@ class GlassCard extends StatelessWidget {
         color: fill,
         border: Border.all(
           color: borderColor,
-          width: accent || tint != null
+          width: trailOutline != null || accent || tint != null
               ? AppMetrics.cardBorderWidth + 0.25
               : AppMetrics.cardBorderWidth,
         ),
