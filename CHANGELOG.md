@@ -9,6 +9,13 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
+## [1.0.27] — 2026-09-22
+
+### Changed
+- Onboarding em cinco atos: cartelas, corte entre cenas e o mundo da Criação em movimento
+- O hábito pede o retorno de amanhã, não uma escolha entre 7, 14 ou 30 dias
+- O fechamento fala a língua da trilha: o primeiro passo já está no caminho
+
 ## [1.0.26] — 2026-09-22
 
 ### Added
