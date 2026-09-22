@@ -85,7 +85,9 @@ class BibleService {
 
   BibleService._();
 
-  static const defaultTranslationId = 'tb';
+  /// Leitura e palco: Almeida. TB continua no disco do banco (legado).
+  static const defaultTranslationId = 'jfaal';
+  static const palcoTranslationId = 'jfaal';
   static const oldTestamentCount = 39;
 
   static const catalog = <BibleTranslation>[
@@ -93,7 +95,7 @@ class BibleService {
       id: 'tb',
       name: 'Tradução Brasileira',
       shortName: 'TB',
-      blurb: '1917 · domínio público · offline',
+      blurb: '1917 · domínio público · usa Jeová',
       assetPath: 'assets/data/bible_tb.json',
       attribution: 'Tradução Brasileira (1917) · domínio público.',
     ),
@@ -125,6 +127,9 @@ class BibleService {
     for (final t in catalog) {
       if (t.id == id) return t;
     }
+    for (final t in catalog) {
+      if (t.id == defaultTranslationId) return t;
+    }
     return catalog.first;
   }
 
@@ -132,33 +137,37 @@ class BibleService {
   static String get translationName => instance.current.name;
 
   String _translationId = defaultTranslationId;
-  List<BibleBook>? _books;
+  final Map<String, List<BibleBook>> _loaded = {};
 
   String get translationId => _translationId;
   BibleTranslation get current => byId(_translationId);
 
-  /// Troca a tradução ativa e limpa o cache de livros.
+  /// Gancho na Home: TB usa Jeová, então o cartão lê Almeida.
+  String get readerTranslationId =>
+      _translationId == 'tb' ? palcoTranslationId : _translationId;
+
+  /// Troca a tradução ativa. Cache por id — não descarrega as outras.
   Future<void> setTranslation(String id) async {
     final next = byId(id);
     if (!next.available) return;
-    if (_translationId == next.id && _books != null) return;
+    if (_translationId == next.id && _loaded.containsKey(next.id)) return;
     _translationId = next.id;
-    _books = null;
     await books();
   }
 
-  Future<List<BibleBook>> books() async {
-    if (_books != null) return _books!;
-    final path = current.assetPath;
-    if (path == null) {
-      // Fallback seguro caso a preferência aponte para algo indisponível.
-      _translationId = defaultTranslationId;
+  Future<List<BibleBook>> books() async => _booksFor(_translationId);
+
+  Future<List<BibleBook>> _booksFor(String id) async {
+    var useId = id;
+    if (byId(useId).assetPath == null) {
+      useId = defaultTranslationId;
+      if (id == _translationId) _translationId = useId;
     }
-    final raw = await rootBundle.loadString(
-      byId(_translationId).assetPath!,
-    );
+    final cached = _loaded[useId];
+    if (cached != null) return cached;
+    final raw = await rootBundle.loadString(byId(useId).assetPath!);
     final data = jsonDecode(raw) as List<dynamic>;
-    _books = [
+    final list = [
       for (final b in data)
         BibleBook(
           name: (b as Map<String, dynamic>)['name'] as String,
@@ -169,7 +178,8 @@ class BibleService {
           ],
         ),
     ];
-    return _books!;
+    _loaded[useId] = list;
+    return list;
   }
 
   static String _norm(String s) => s
@@ -195,8 +205,8 @@ class BibleService {
   }
 
   /// Resolve referências como "Gênesis 1:1–2", "Êxodo 3" ou "Gn 12:1-3".
-  Future<BibleRef?> resolve(String reference) async {
-    final list = await books();
+  Future<BibleRef?> resolve(String reference, {String? translationId}) async {
+    final list = await _booksFor(translationId ?? _translationId);
     final compact = _norm(reference);
 
     final m = _refShape.firstMatch(compact);
@@ -285,10 +295,11 @@ class BibleService {
   }
 
   /// Texto completo da passagem ("Gênesis 1:1–2"), versículos unidos por espaço.
-  Future<String?> passageText(String reference) async {
-    final ref = await resolve(reference);
+  Future<String?> passageText(String reference, {String? translationId}) async {
+    final id = translationId ?? _translationId;
+    final ref = await resolve(reference, translationId: id);
     if (ref == null) return null;
-    final list = await books();
+    final list = await _booksFor(id);
     if (ref.bookIndex < 0 || ref.bookIndex >= list.length) return null;
     final chapters = list[ref.bookIndex].chapters;
     if (ref.chapter < 1 || ref.chapter > chapters.length) return null;

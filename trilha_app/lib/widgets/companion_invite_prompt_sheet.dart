@@ -14,14 +14,17 @@ import 'ui_primitives.dart';
 
 /// Convite de um par — no pico da 1ª missão, não na aba vazia.
 /// Devolve o código se o convite foi criado (QR fica a cargo de quem chamou).
-Future<String?> showCompanionInvitePromptSheet(BuildContext context) {
+Future<String?> showCompanionInvitePromptSheet(
+  BuildContext context, {
+  String? tomorrowTitle,
+}) {
   final progress = context.read<ProgressService>();
   return showModalBottomSheet<String?>(
     context: context,
     isScrollControlled: true,
     backgroundColor: Colors.transparent,
     isDismissible: true,
-    builder: (_) => const _CompanionInvitePromptSheet(),
+    builder: (_) => _CompanionInvitePromptSheet(tomorrowTitle: tomorrowTitle),
   ).whenComplete(() {
     if (progress.companionInviteOffered) return;
     unawaited(progress.markCompanionInviteOffered());
@@ -29,7 +32,9 @@ Future<String?> showCompanionInvitePromptSheet(BuildContext context) {
 }
 
 class _CompanionInvitePromptSheet extends StatefulWidget {
-  const _CompanionInvitePromptSheet();
+  final String? tomorrowTitle;
+
+  const _CompanionInvitePromptSheet({this.tomorrowTitle});
 
   @override
   State<_CompanionInvitePromptSheet> createState() =>
@@ -76,6 +81,10 @@ class _CompanionInvitePromptSheetState
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final bottom = MediaQuery.paddingOf(context).bottom;
+    final scene = widget.tomorrowTitle?.trim() ?? '';
+    final body = scene.isEmpty
+        ? 'Um amigo. Fechem os 7 dias da semana juntos — os dois ganham +${WalkCompanion.weekTogetherBonusSteps} na caravana.'
+        : 'Amanhã: $scene. Chama alguém para chegar junto.';
 
     return Container(
       margin: const EdgeInsets.fromLTRB(12, 0, 12, 12),
@@ -111,7 +120,7 @@ class _CompanionInvitePromptSheetState
           ),
           const SizedBox(height: 8),
           Text(
-            'Um amigo. Fechem os 7 dias da semana juntos — os dois ganham +${WalkCompanion.weekTogetherBonusSteps} na caravana.',
+            body,
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 14,

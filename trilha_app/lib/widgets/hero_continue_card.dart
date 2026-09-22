@@ -9,6 +9,7 @@ import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/dust_copy.dart';
+import '../utils/tomorrow_hook.dart';
 import '../utils/trail_visuals.dart';
 import 'cinematic_backdrop.dart';
 import 'cinematic_icon.dart';
@@ -50,6 +51,8 @@ class _HeroContinueCardState extends State<HeroContinueCard>
   Timer? _tick;
   late final AnimationController _pulseController;
   bool _pressed = false;
+  String? _readerTease;
+  String? _readerTeaseKey;
 
   @override
   void initState() {
@@ -62,11 +65,23 @@ class _HeroContinueCardState extends State<HeroContinueCard>
   }
 
   @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    _loadReaderTease();
+  }
+
+  @override
   void didUpdateWidget(covariant HeroContinueCard oldWidget) {
     super.didUpdateWidget(oldWidget);
     if (oldWidget.atRisk != widget.atRisk) {
       _syncTick(widget.atRisk);
     }
+    if (oldWidget.mission?.slug != widget.mission?.slug ||
+        oldWidget.mission?.hookRef != widget.mission?.hookRef) {
+      _readerTease = null;
+      _readerTeaseKey = null;
+    }
+    _loadReaderTease();
   }
 
   void _syncTick(bool atRisk) {
@@ -76,6 +91,26 @@ class _HeroContinueCardState extends State<HeroContinueCard>
     _tick = Timer.periodic(const Duration(minutes: 1), (_) {
       if (mounted) setState(() {});
     });
+  }
+
+  void _loadReaderTease() {
+    final mission = widget.mission;
+    if (mission == null) return;
+    final translationId = context
+        .read<ProgressService>()
+        .settings
+        .bibleTranslationId;
+    final key = '${mission.slug}|${mission.hookRef}|$translationId';
+    if (key == _readerTeaseKey) return;
+    _readerTeaseKey = key;
+    unawaited(_resolveReaderTease(mission, key));
+  }
+
+  Future<void> _resolveReaderTease(Mission mission, String key) async {
+    final text = await TomorrowHook.readerTease(mission);
+    if (!mounted || _readerTeaseKey != key) return;
+    if (text == _readerTease) return;
+    setState(() => _readerTease = text);
   }
 
   @override
@@ -108,13 +143,14 @@ class _HeroContinueCardState extends State<HeroContinueCard>
     );
     final style = HeroCardMoodStyle.of(mood, trailAccent: trailAccent);
 
-    // Em dia: não “Entrar” de novo — reconhece o passo já dado.
+    // Em dia: o cartão é o trailer de amanhã — o ouro convida a abrir agora.
+    final resting = widget.goalMet && mood == HeroCardMood.alive;
     final ctaLabel = switch (mood) {
       HeroCardMood.frozen => 'Retomar a trilha',
       HeroCardMood.dusty => 'Continuar a trilha',
       HeroCardMood.alive =>
-        widget.goalMet
-            ? 'Avançar'
+        resting
+            ? 'Abrir agora'
             : walkedToday
             ? 'Continuar'
             : 'Entrar',
@@ -139,12 +175,26 @@ class _HeroContinueCardState extends State<HeroContinueCard>
       HeroCardMood.alive => null,
     };
 
+    final arrived = !walkedToday &&
+        TomorrowHook.promisedArrived(
+          promisedTitle: progress.nextSceneTitle,
+          currentTitle: mission.title,
+        );
+    final yesterday = !walkedToday
+        ? TomorrowHook.yesterdayLine(progress.lastInsight)
+        : null;
+    final tease = resting
+        ? TomorrowHook.pullOf(mission)
+        : (_readerTease ?? TomorrowHook.teaseOf(mission));
+
     final stepLabel = switch (mood) {
       HeroCardMood.frozen => style.stepLabel,
       HeroCardMood.dusty => style.stepLabel,
       HeroCardMood.alive =>
-        widget.goalMet
-            ? 'Além da meta'
+        resting
+            ? 'Amanhã'
+            : arrived
+            ? 'Hoje'
             : walkedToday
             ? 'Em dia'
             : 'Missão pronta',
@@ -154,6 +204,7 @@ class _HeroContinueCardState extends State<HeroContinueCard>
       onTapDown: (_) => setState(() => _pressed = true),
       onTapUp: (_) {
         setState(() => _pressed = false);
+        if (resting) return;
         HapticFeedback.mediumImpact();
         widget.onTap?.call();
       },
@@ -252,6 +303,7 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                               ],
                             ),
                           ),
+                          if (!resting) ...[
                           const SizedBox(height: 8),
                           _Chip(
                             tone: AppColors.accent,
@@ -296,6 +348,7 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                               ],
                             ),
                           ),
+                          ],
                         ],
                       ),
                       const SizedBox(height: 24),
@@ -336,6 +389,44 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                             color: style.label.withValues(alpha: 0.92),
                           ),
                         ),
+                      ] else if (resting) ...[
+                        const SizedBox(height: 8),
+                        Text(
+                          tease,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: AppTypography.verse(
+                            size: 16,
+                            height: 1.35,
+                            fontStyle: FontStyle.italic,
+                            color: a.text.withValues(alpha: 0.88),
+                          ),
+                        ),
+                      ] else if (arrived) ...[
+                        if (yesterday != null) ...[
+                          const SizedBox(height: 8),
+                          Text(
+                            yesterday,
+                            maxLines: 2,
+                            overflow: TextOverflow.ellipsis,
+                            style: AppTypography.body(
+                              size: 13,
+                              weight: FontWeight.w700,
+                              color: a.text.withValues(alpha: 0.55),
+                            ),
+                          ),
+                        ],
+                        const SizedBox(height: 6),
+                        Text(
+                          tease,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: AppTypography.verse(
+                            size: 16,
+                            height: 1.35,
+                            color: a.text.withValues(alpha: 0.88),
+                          ),
+                        ),
                       ] else if (mission.subtitle.trim().isNotEmpty) ...[
                         const SizedBox(height: 8),
                         Text(
@@ -360,27 +451,50 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                         ),
                       ],
                       const SizedBox(height: 20),
-                      _CtaBar(
-                        label: ctaLabel,
-                        mood: mood,
-                      ),
-                      const SizedBox(height: 12),
-                      Center(
-                        child: Text(
-                          mood == HeroCardMood.dusty
-                              ? '+${mission.stepsReward} passos · protege a sequência'
-                              : widget.goalMet
-                              ? '+${mission.stepsReward} passos · além da meta'
-                              : walkedToday
-                              ? '+${mission.stepsReward} passos · fecha a meta'
-                              : '+${mission.stepsReward} passos · ~3 min',
-                          style: AppTypography.body(
-                            size: 13,
-                            weight: FontWeight.w800,
-                            color: rewardColor,
+                      if (resting) ...[
+                        GestureDetector(
+                          behavior: HitTestBehavior.opaque,
+                          onTap: () {
+                            HapticFeedback.mediumImpact();
+                            widget.onTap?.call();
+                          },
+                          child: _CtaBar(
+                            label: ctaLabel,
+                            mood: mood,
                           ),
                         ),
-                      ),
+                        const SizedBox(height: 12),
+                        Center(
+                          child: Text(
+                            '+${mission.stepsReward} passos · extra de hoje',
+                            style: AppTypography.body(
+                              size: 13,
+                              weight: FontWeight.w800,
+                              color: rewardColor,
+                            ),
+                          ),
+                        ),
+                      ] else ...[
+                        _CtaBar(
+                          label: ctaLabel,
+                          mood: mood,
+                        ),
+                        const SizedBox(height: 12),
+                        Center(
+                          child: Text(
+                            mood == HeroCardMood.dusty
+                                ? '+${mission.stepsReward} passos · protege a sequência'
+                                : walkedToday
+                                ? '+${mission.stepsReward} passos · fecha a meta'
+                                : '+${mission.stepsReward} passos · ~3 min',
+                            style: AppTypography.body(
+                              size: 13,
+                              weight: FontWeight.w800,
+                              color: rewardColor,
+                            ),
+                          ),
+                        ),
+                      ],
                     ],
                   ),
                 ),

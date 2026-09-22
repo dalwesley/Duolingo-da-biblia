@@ -26,7 +26,15 @@ void main() {
           isReplay: true,
           isBoss: false,
         ),
-        'Memória reforçada',
+        'Você voltou ao texto',
+      );
+      expect(
+        CelebrationCopy.kicker(
+          perfect: false,
+          isReplay: true,
+          isBoss: false,
+        ),
+        'REVISÃO',
       );
       expect(
         CelebrationCopy.headline(

@@ -127,7 +127,10 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
     }
     final ref = (widget.exercise.reference ?? '').trim();
     if (ref.isEmpty) return;
-    final full = await BibleService.instance.passageText(ref);
+    final full = await BibleService.instance.passageText(
+      ref,
+      translationId: BibleService.palcoTranslationId,
+    );
     if (!mounted || full == null || full.trim().isEmpty) return;
     setState(() => _verseText = SessionComposer.clipFeedbackPassage(
           full.trim(),

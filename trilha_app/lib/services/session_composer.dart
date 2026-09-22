@@ -5,6 +5,7 @@ import '../models/difficulty.dart';
 import '../models/trail.dart';
 import '../services/progress_service.dart';
 import '../utils/answer_phrase.dart';
+import '../utils/palco_verse.dart';
 import '../utils/vf_claim.dart';
 
 /// Entrada da sessão: verso âncora + 1 nota ([docs/SESSAO_TREINO.md] §3.0).
@@ -733,7 +734,7 @@ class SessionComposer {
         .firstOrNull;
     pick ??= all.firstOrNull;
     if (pick == null) return null;
-    return fromBankQuestion(pick);
+    return PalcoVerse.apply(fromBankQuestion(pick));
   }
 
   static Future<SessionPlan> compose({
@@ -774,12 +775,14 @@ class SessionComposer {
         }
       }
       if (acts.isNotEmpty) {
-        return SessionPlan(
-          acts: arrangeActs(acts),
-          insight: insight,
-          bankQuestionIds: usedIds,
-          revealTags: tags,
-          difficultyMeta: meta,
+        return _planWithPalco(
+          SessionPlan(
+            acts: arrangeActs(acts),
+            insight: insight,
+            bankQuestionIds: usedIds,
+            revealTags: tags,
+            difficultyMeta: meta,
+          ),
         );
       }
     }
@@ -804,16 +807,18 @@ class SessionComposer {
       final converted = picked.map((q) => fromBankQuestion(q, rng: rng)).toList();
       final acts = arrangeActs(converted, max: max);
       if (acts.isNotEmpty) {
-        return SessionPlan(
-          acts: acts,
-          insight: insight,
-          bankQuestionIds: acts.map((e) => e.id).toList(),
-          revealTags: acts.map((e) {
-            final bq = QuestionBank.instance.byId(e.id);
-            if (bq == null || bq.reveal == 'null') return null;
-            return bq.reveal;
-          }).toList(),
-          difficultyMeta: meta,
+        return _planWithPalco(
+          SessionPlan(
+            acts: acts,
+            insight: insight,
+            bankQuestionIds: acts.map((e) => e.id).toList(),
+            revealTags: acts.map((e) {
+              final bq = QuestionBank.instance.byId(e.id);
+              if (bq == null || bq.reveal == 'null') return null;
+              return bq.reveal;
+            }).toList(),
+            difficultyMeta: meta,
+          ),
         );
       }
     }
@@ -829,11 +834,25 @@ class SessionComposer {
         ),
       );
     }
+    return _planWithPalco(
+      SessionPlan(
+        acts: arrangeActs(embedded),
+        insight: insight,
+        difficultyMeta: meta,
+        fromAuthoredExercises: false,
+      ),
+    );
+  }
+
+  static Future<SessionPlan> _planWithPalco(SessionPlan plan) async {
+    if (plan.acts.isEmpty) return plan;
     return SessionPlan(
-      acts: arrangeActs(embedded),
-      insight: insight,
-      difficultyMeta: meta,
-      fromAuthoredExercises: false,
+      acts: await PalcoVerse.hydrateAll(plan.acts),
+      insight: plan.insight,
+      bankQuestionIds: plan.bankQuestionIds,
+      revealTags: plan.revealTags,
+      difficultyMeta: plan.difficultyMeta,
+      fromAuthoredExercises: plan.fromAuthoredExercises,
     );
   }
 }

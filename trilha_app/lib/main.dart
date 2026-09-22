@@ -23,7 +23,9 @@ import 'theme/app_theme.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(statusBarColor: Colors.transparent));
+  SystemChrome.setSystemUIOverlayStyle(
+    const SystemUiOverlayStyle(statusBarColor: Colors.transparent),
+  );
 
   try {
     FirebaseMessaging.onBackgroundMessage(firebaseMessagingBackgroundHandler);
@@ -69,8 +71,11 @@ class TrilhaApp extends StatelessWidget {
             return room;
           },
         ),
-        ChangeNotifierProxyProvider2<BackendService, SubscriptionService,
-            CompanionService>(
+        ChangeNotifierProxyProvider2<
+          BackendService,
+          SubscriptionService,
+          CompanionService
+        >(
           create: (ctx) => CompanionService(
             ctx.read<BackendService>(),
             ctx.read<SubscriptionService>(),
@@ -121,9 +126,7 @@ class TrilhaApp extends StatelessWidget {
                 color: AppColors.night,
                 child: MediaQuery(
                   data: MediaQuery.of(context).copyWith(
-                    textScaler: TextScaler.linear(
-                      fontScale.clamp(0.85, 1.35),
-                    ),
+                    textScaler: TextScaler.linear(fontScale.clamp(0.85, 1.35)),
                   ),
                   child: child ?? const SizedBox.shrink(),
                 ),

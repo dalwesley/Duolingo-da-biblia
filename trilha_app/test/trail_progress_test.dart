@@ -64,7 +64,71 @@ void main() {
     expect(TrailProgress.getLiveProgress(trail, []).done, 0);
     expect(
       TrailProgress.clearedModeStatusLabel(['semente']),
-      'Semente concluída',
+      'Observação concluída',
+    );
+    expect(
+      TrailProgress.activeModeProgressLabel(
+        clearedModes: ['semente'],
+        activeDifficultyId: 'semente',
+        liveDone: 2,
+        total: 2,
+      ),
+      'Observação concluída',
+    );
+    expect(
+      TrailProgress.modeSealedHint(
+        clearedModes: ['semente'],
+        activeDifficultyId: 'semente',
+      ),
+      'Observação concluída · o próximo modo é Compreensão',
+    );
+    expect(
+      TrailProgress.openDifficultyId(
+        activeDifficultyId: 'semente',
+        clearedModes: const ['semente'],
+      ),
+      'caminhada',
+    );
+    expect(
+      TrailProgress.openDifficultyId(
+        activeDifficultyId: 'semente',
+        clearedModes: const [],
+      ),
+      'semente',
+    );
+    expect(
+      TrailProgress.openDifficultyId(
+        activeDifficultyId: 'caminhada',
+        clearedModes: const ['semente'],
+      ),
+      'caminhada',
+    );
+    expect(
+      TrailProgress.openDifficultyId(
+        activeDifficultyId: 'semente',
+        clearedModes: const ['semente', 'caminhada'],
+      ),
+      'profundezas',
+    );
+    expect(
+      TrailProgress.resolvedDifficultyId('genesis-12-50', 'caminhada'),
+      'caminhada',
+    );
+    expect(
+      TrailProgress.modeChipLabel(
+        difficultyId: 'semente',
+        clearedModes: const [],
+      ),
+      'Modo Observação',
+    );
+    expect(
+      TrailProgress.activeModeProgressLabel(
+        clearedModes: const [],
+        activeDifficultyId: 'semente',
+        liveDone: 7,
+        total: 23,
+      ),
+      'Observação · 7 de 23 passos',
     );
     expect(
       TrailProgress.isReplayingUnclearedMode(
@@ -80,7 +144,7 @@ void main() {
         clearedModes: ['semente'],
         activeDifficultyId: 'caminhada',
       ),
-      'Semente concluída · progresso abaixo é do modo Rota',
+      'Observação concluída · progresso abaixo é do modo Compreensão',
     );
   });
 

@@ -458,6 +458,7 @@ class _SettingsScreenState extends State<SettingsScreen>
       _genesisTrailSlug,
       meta.difficulty.id,
       missionSlugs: _genesisMissionSlugs,
+      pin: true,
     );
     if (prev != null &&
         prev != meta.difficulty.id &&
@@ -1541,13 +1542,10 @@ class _ModeStation extends StatelessWidget {
                 accent: accent,
               )
             else if (cleared)
-              Text(
-                'Feito',
-                style: AppTypography.label(
-                  size: 10,
-                  letterSpacing: 0.4,
-                  color: a.textMuted(0.5),
-                ),
+              SoftBadge(
+                text: 'Concluído',
+                glyph: CinematicGlyph.check,
+                accent: accent,
               ),
           ],
         ),

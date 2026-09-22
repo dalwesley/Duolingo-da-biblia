@@ -9,4 +9,9 @@ void main() {
     expect(BibleService.looksLikeReference('Contexto'), isFalse);
     expect(BibleService.looksLikeReference(''), isFalse);
   });
+
+  test('default reading translation is Almeida, not TB', () {
+    expect(BibleService.defaultTranslationId, 'jfaal');
+    expect(BibleService.instance.readerTranslationId, isNot('tb'));
+  });
 }

@@ -2,6 +2,7 @@ import '../models/difficulty.dart';
 import '../models/trail.dart';
 import '../models/trail_catalog.dart';
 import 'catalog_access.dart';
+import 'difficulty_trails.dart';
 
 class TrailProgress {
   static List<String> missionSlugs(Trail trail) => trail.missionSlugs;
@@ -49,15 +50,42 @@ class TrailProgress {
     return (clearedTrailModes[trail.slug] ?? const []).isNotEmpty;
   }
 
-  /// Rótulo curto p/ mapa: "Semente concluída".
+  /// Modos limpos na ordem canônica (Observação → Compreensão → Interpretação).
+  static List<TrailDifficulty> orderedClearedDifficulties(
+    List<String> clearedModes,
+  ) {
+    return [
+      for (final d in TrailDifficulty.values)
+        if (clearedModes.contains(d.id)) d,
+    ];
+  }
+
+  /// Rótulo curto p/ mapa: "Observação concluída".
   static String? clearedModeStatusLabel(List<String> clearedModes) {
     if (clearedModes.isEmpty) return null;
     final labels = [
-      for (final id in clearedModes)
-        TrailDifficulty.fromId(id)?.labelPt ?? id,
+      for (final d in orderedClearedDifficulties(clearedModes)) d.labelPt,
     ];
+    if (labels.isEmpty) return null;
     if (labels.length == 1) return '${labels.first} concluída';
     return '${labels.join(' · ')} concluídas';
+  }
+
+  /// Progresso do modo ativo: "Observação concluída" quando já selado.
+  static String activeModeProgressLabel({
+    required List<String> clearedModes,
+    required String? activeDifficultyId,
+    required int liveDone,
+    required int total,
+  }) {
+    final label = modeLabel(activeDifficultyId);
+    final active = activeDifficultyId ?? TrailDifficulty.semente.id;
+    if (total > 0 &&
+        clearedModes.contains(active) &&
+        liveDone >= total) {
+      return '$label concluída';
+    }
+    return '$label · $liveDone de $total passos';
   }
 
   /// True quando há modo limpo e o modo ativo ainda não foi concluído
@@ -74,7 +102,7 @@ class TrailProgress {
     return liveDone < total;
   }
 
-  /// Texto explicativo: "Semente concluída · progresso abaixo é do modo Rota".
+  /// Texto explicativo: "Observação concluída · progresso abaixo é do modo Compreensão".
   static String? modeReplayHint({
     required List<String> clearedModes,
     required String? activeDifficultyId,
@@ -82,16 +110,71 @@ class TrailProgress {
     if (clearedModes.isEmpty) return null;
     final active = activeDifficultyId ?? TrailDifficulty.semente.id;
     if (clearedModes.contains(active)) return null;
-    final clearedLabel =
-        TrailDifficulty.fromId(clearedModes.last)?.labelPt ??
-        clearedModes.last;
+    final ordered = orderedClearedDifficulties(clearedModes);
+    final clearedLabel = ordered.isNotEmpty
+        ? ordered.last.labelPt
+        : (TrailDifficulty.fromId(clearedModes.last)?.labelPt ??
+            clearedModes.last);
     final activeLabel = TrailDifficulty.fromId(active)?.labelPt ?? active;
     return '$clearedLabel concluída · progresso abaixo é do modo $activeLabel';
+  }
+
+  /// Quando o modo ativo já está selado — convite ao próximo, sem zerar a cena.
+  static String? modeSealedHint({
+    required List<String> clearedModes,
+    required String? activeDifficultyId,
+  }) {
+    if (clearedModes.isEmpty) return null;
+    final active = activeDifficultyId ?? TrailDifficulty.semente.id;
+    if (!clearedModes.contains(active)) return null;
+    final current = TrailDifficulty.fromId(active);
+    final next = current?.next;
+    final label = current?.labelPt ?? active;
+    if (next == null) {
+      return '$label concluída · os três modos desta trilha estão selados';
+    }
+    return '$label concluída · o próximo modo é ${next.labelPt}';
   }
 
   static String modeLabel(String? difficultyId) {
     final id = difficultyId ?? TrailDifficulty.semente.id;
     return TrailDifficulty.fromId(id)?.labelPt ?? id;
+  }
+
+  /// Modo efetivo da trilha: o gravado, ou Observação se a trilha usa os 3 modos.
+  static String? resolvedDifficultyId(String trailSlug, String? stored) {
+    if (stored != null && stored.isNotEmpty) return stored;
+    if (trailUsesDifficultyBank(trailSlug)) return TrailDifficulty.semente.id;
+    return null;
+  }
+
+  /// Modo que o cartão deve mostrar: se o gravado já foi selado, o próximo.
+  /// Gênesis 1-11 com Observação concluída aponta para Compreensão.
+  static String? openDifficultyId({
+    required String? activeDifficultyId,
+    required List<String> clearedModes,
+  }) {
+    final start = TrailDifficulty.fromId(
+          activeDifficultyId ?? TrailDifficulty.semente.id,
+        ) ??
+        TrailDifficulty.semente;
+    if (!clearedModes.contains(start.id)) return start.id;
+    var next = start.next;
+    while (next != null && clearedModes.contains(next.id)) {
+      next = next.next;
+    }
+    return next?.id ?? start.id;
+  }
+
+  /// Chip curto: "Modo Observação" / "Observação concluída".
+  static String modeChipLabel({
+    required String? difficultyId,
+    required List<String> clearedModes,
+  }) {
+    final label = modeLabel(difficultyId);
+    final active = difficultyId ?? TrailDifficulty.semente.id;
+    if (clearedModes.contains(active)) return '$label concluída';
+    return 'Modo $label';
   }
 
   /// Trilha liberada se não há pré-requisito, se a pré-requisito está

@@ -20,6 +20,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
 import '../utils/genesis_theme.dart';
+import '../utils/palco_verse.dart';
 import '../utils/trail_progress.dart';
 import '../widgets/act_feel.dart';
 import '../widgets/cinematic_icon.dart';
@@ -202,7 +203,6 @@ class _LessonScreenState extends State<LessonScreen>
 
     if (usesBank &&
         bankTrail != null &&
-        !progress.hasDifficultyForTrail(bankTrail) &&
         (mission.bankTrailSlug ?? '').isEmpty) {
       if (!mounted) return;
       final ok = await DifficultyPickerScreen.ensureSelected(
@@ -291,7 +291,7 @@ class _LessonScreenState extends State<LessonScreen>
     });
   }
 
-  /// Entrada bíblica: missão → estudo → atos. Texto TB pela referência.
+  /// Entrada bíblica: missão → estudo → atos. Leitura na tradução escolhida.
   Future<({String? ref, String? verse, String? note, String? thread})>
   _resolveHooks(Mission mission, {List<Exercise> acts = const []}) async {
     final study = _studyFor(mission);
@@ -305,7 +305,10 @@ class _LessonScreenState extends State<LessonScreen>
     final ref = (entrance.ref ?? '').trim();
     var verse = (entrance.verse ?? '').trim();
     if (ref.isNotEmpty) {
-      final full = await BibleService.instance.passageText(ref);
+      final full = await BibleService.instance.passageText(
+        ref,
+        translationId: BibleService.palcoTranslationId,
+      );
       if (full != null && full.trim().isNotEmpty) {
         verse = SessionComposer.clipEntranceVerse(full.trim());
       }
@@ -446,7 +449,7 @@ class _LessonScreenState extends State<LessonScreen>
       return;
     }
 
-    await Future.delayed(const Duration(milliseconds: 360));
+    await Future.delayed(const Duration(milliseconds: 420));
     _busy = false;
     if (mounted) setState(() => _showFeedback = true);
   }
@@ -537,6 +540,7 @@ class _LessonScreenState extends State<LessonScreen>
           isBoss: _mission!.isBoss,
           isReplay: isReplay,
           perfect: !forced && _correctCount == total && _lamps == maxLamps,
+          todayInsight: _mission!.centralInsight,
         ),
       ),
     );
@@ -667,40 +671,48 @@ class _LessonScreenState extends State<LessonScreen>
       });
       _logExerciseStart();
     } else if (_mistakeInSession && !_reviewInserted) {
-      final diffId =
-          _difficultyMeta?.difficulty ??
-          TrailDifficulty.fromId(
-            context.read<ProgressService>().difficultyForTrail(
-              _trailSlug ?? '',
-            ),
-          ) ??
-          TrailDifficulty.semente;
-      final rev = SessionComposer.reviewFromBank(
-        missionSlug: widget.missionSlug,
-        difficulty: diffId,
-        trailSlug: _trailSlug ?? 'genesis-1-11',
-        usedInSession: _exercises.map((e) => e.id).toSet(),
-        usedTypes: _exercises.map((e) => e.type).toSet(),
-      );
-      if (rev != null) {
-        setState(() {
-          _exercises = [..._exercises, rev];
-          _reviewInserted = true;
-          _showFeedback = false;
-          _questionIndex = _exercises.length - 1;
-          _selected = null;
-          _isCorrect = null;
-          _hintUsed = false;
-          _eliminated = {};
-          _attempt = 0;
-        });
-        _logExerciseStart();
-        return;
-      }
-      _finishLesson();
+      unawaited(_insertReview());
     } else {
       _finishLesson();
     }
+  }
+
+  Future<void> _insertReview() async {
+    if (_reviewInserted || _mission == null) return;
+    _reviewInserted = true;
+    final diffId =
+        _difficultyMeta?.difficulty ??
+        TrailDifficulty.fromId(
+          context.read<ProgressService>().difficultyForTrail(
+            _trailSlug ?? '',
+          ),
+        ) ??
+        TrailDifficulty.semente;
+    final rev = SessionComposer.reviewFromBank(
+      missionSlug: widget.missionSlug,
+      difficulty: diffId,
+      trailSlug: _trailSlug ?? 'genesis-1-11',
+      usedInSession: _exercises.map((e) => e.id).toSet(),
+      usedTypes: _exercises.map((e) => e.type).toSet(),
+    );
+    if (rev == null) {
+      _reviewInserted = false;
+      _finishLesson();
+      return;
+    }
+    final hydrated = await PalcoVerse.hydrate(rev);
+    if (!mounted) return;
+    setState(() {
+      _exercises = [..._exercises, hydrated];
+      _showFeedback = false;
+      _questionIndex = _exercises.length - 1;
+      _selected = null;
+      _isCorrect = null;
+      _hintUsed = false;
+      _eliminated = {};
+      _attempt = 0;
+    });
+    _logExerciseStart();
   }
 
   @override

@@ -329,7 +329,7 @@ class Exercise {
     return null;
   }
 
-  /// Verso no palco do complete: trecho TB com a lacuna no lugar da resposta.
+  /// Verso no palco do complete: trecho com a lacuna no lugar da resposta.
   String? clozeStageText({String? fallbackPassage}) {
     if (!usesCompletePalco) return null;
     final tpl = (palcoTemplate ?? '').trim();

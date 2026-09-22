@@ -39,4 +39,23 @@ class DifficultyVisuals {
     final lift = (_goldLuminance - accent.computeLuminance()).clamp(0.0, 0.32);
     return Color.lerp(accent, Colors.white, lift)!.withValues(alpha: alpha);
   }
+
+  /// Cartão da jornada — o modo entra no contorno, não no fill.
+  /// Wash forte vira “app amador”; o palco fica noite, o acento pontua.
+  static BoxDecoration stationCard({
+    required Color accent,
+    required Color baseFill,
+    required bool lit,
+    bool sealed = false,
+  }) {
+    final wash = lit ? 0.07 : 0.0;
+    return BoxDecoration(
+      borderRadius: BorderRadius.circular(AppRadii.lg),
+      color: wash == 0 ? baseFill : Color.lerp(baseFill, accent, wash),
+      border: Border.all(
+        color: accent.withValues(alpha: lit ? 0.70 : (sealed ? 0.55 : 0.40)),
+        width: lit ? 1.4 : 1.15,
+      ),
+    );
+  }
 }

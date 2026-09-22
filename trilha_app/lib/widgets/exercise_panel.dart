@@ -121,7 +121,6 @@ class _ExercisePanelState extends State<ExercisePanel>
     with TickerProviderStateMixin {
   late final AnimationController _enter;
   late final AnimationController _pulse;
-  late final TapGestureRecognizer _completeClearTap;
   String? _picked;
   String? _matchLeft;
   bool _confirming = false;
@@ -139,7 +138,6 @@ class _ExercisePanelState extends State<ExercisePanel>
       vsync: this,
       duration: const Duration(milliseconds: 1400),
     )..repeat(reverse: true);
-    _completeClearTap = TapGestureRecognizer()..onTap = _clearComplete;
     _resetLocal();
   }
 
@@ -181,7 +179,6 @@ class _ExercisePanelState extends State<ExercisePanel>
 
   @override
   void dispose() {
-    _completeClearTap.dispose();
     _enter.dispose();
     _pulse.dispose();
     super.dispose();
@@ -448,7 +445,6 @@ class _ExercisePanelState extends State<ExercisePanel>
       lit: _lit,
       fill: true,
       onClear: _locked ? null : _clearComplete,
-      clearRecognizer: _locked ? null : _completeClearTap,
     );
   }
 
@@ -1105,7 +1101,7 @@ class _Manuscript extends StatelessWidget {
   }
 }
 
-class _CompleteVerse extends StatelessWidget {
+class _CompleteVerse extends StatefulWidget {
   final String template;
   final String? filled;
   final String? expected;
@@ -1114,7 +1110,6 @@ class _CompleteVerse extends StatelessWidget {
   final String? reference;
   final AnimationController pulse;
   final VoidCallback? onClear;
-  final GestureRecognizer? clearRecognizer;
   final bool lit;
   final bool fill;
 
@@ -1127,58 +1122,98 @@ class _CompleteVerse extends StatelessWidget {
     this.expected,
     this.reference,
     this.onClear,
-    this.clearRecognizer,
     this.lit = false,
     this.fill = false,
   });
 
+  @override
+  State<_CompleteVerse> createState() => _CompleteVerseState();
+}
+
+class _CompleteVerseState extends State<_CompleteVerse> {
   static final _blank = RegExp(r'_{3,}');
+  TapGestureRecognizer? _clear;
+
+  @override
+  void initState() {
+    super.initState();
+    _bindClear();
+  }
+
+  @override
+  void didUpdateWidget(covariant _CompleteVerse oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.onClear != widget.onClear) _bindClear();
+  }
+
+  @override
+  void dispose() {
+    _clear?.dispose();
+    super.dispose();
+  }
+
+  void _bindClear() {
+    if (widget.onClear == null) {
+      _clear?.dispose();
+      _clear = null;
+      return;
+    }
+    _clear ??= TapGestureRecognizer();
+    _clear!.onTap = widget.onClear;
+  }
+
+  InlineSpan _blankSpan(TextStyle style) {
+    final filled = (widget.filled ?? '').trim();
+    // Palavra preenchida fica no mesmo recorte do versículo — mesma
+    // família/peso/corpo; só a cor marca a lacuna.
+    if (filled.isNotEmpty && widget.state != _OptState.wrong) {
+      return TextSpan(
+        text: widget.filled,
+        style: style.copyWith(color: widget.accent),
+        recognizer: _clear,
+      );
+    }
+    return WidgetSpan(
+      alignment: PlaceholderAlignment.baseline,
+      baseline: TextBaseline.alphabetic,
+      style: style,
+      child: ActShake(
+        key: const ValueKey('cloze-shake'),
+        active: widget.state == _OptState.wrong,
+        child: _BlankGap(
+          filled: widget.filled,
+          expected: widget.expected ?? widget.filled ?? 'palavra',
+          state: widget.state,
+          accent: widget.accent,
+          pulse: widget.pulse,
+          onClear: widget.onClear,
+        ),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
+    final template = widget.template;
     final match = _blank.firstMatch(template);
     final last = _blank.allMatches(template).lastOrNull;
     final hasBlank = match != null && last != null;
     final before = hasBlank ? template.substring(0, match.start) : template;
     final after = hasBlank ? template.substring(last.end) : '';
     final style = _verseWordStyle();
-    final filledWord = (filled ?? '').trim();
-    final showFill =
-        hasBlank && filledWord.isNotEmpty && state != _OptState.wrong;
 
     return _Manuscript(
-      accent: accent,
-      reference: reference,
+      accent: widget.accent,
+      reference: widget.reference,
       framed: true,
-      fill: fill,
-      lit: lit,
+      fill: widget.fill,
+      lit: widget.lit,
       child: Text.rich(
         TextSpan(
           style: style,
           children: [
             if (before.isNotEmpty) TextSpan(text: before),
-            if (showFill)
-              TextSpan(
-                text: filledWord,
-                style: style.copyWith(color: accent),
-                recognizer: clearRecognizer,
-              )
-            else if (hasBlank)
-              WidgetSpan(
-                alignment: PlaceholderAlignment.baseline,
-                baseline: TextBaseline.alphabetic,
-                child: ActShake(
-                  active: state == _OptState.wrong,
-                  child: _BlankGap(
-                    filled: filled,
-                    expected: expected ?? filled ?? 'palavra',
-                    state: state,
-                    accent: accent,
-                    pulse: pulse,
-                    onClear: onClear,
-                  ),
-                ),
-              ),
+            if (hasBlank) _blankSpan(style),
             if (after.isNotEmpty) TextSpan(text: after),
           ],
         ),
@@ -1224,7 +1259,7 @@ class _BlankGap extends StatelessWidget {
           maxLines: 2,
           overflow: TextOverflow.ellipsis,
           style: probeStyle
-              .copyWith(color: AppColors.error, height: 1.25)
+              .copyWith(color: AppColors.error, height: 1)
               .copyWith(decoration: TextDecoration.lineThrough),
         ),
       );
@@ -1240,7 +1275,7 @@ class _BlankGap extends StatelessWidget {
             textAlign: TextAlign.center,
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
-            style: _verseWordStyle(color: accent),
+            style: _verseWordStyle(color: accent, height: 1),
           ),
         ),
       );
@@ -1515,6 +1550,7 @@ class _PassageBlock extends StatelessWidget {
                         alignment: PlaceholderAlignment.baseline,
                         baseline: TextBaseline.alphabetic,
                         child: ActShake(
+                          key: ValueKey('tap-shake-${span.optionId}'),
                           active:
                               stateFor?.call(span.optionId!) == _OptState.wrong,
                           child: _PressScale(

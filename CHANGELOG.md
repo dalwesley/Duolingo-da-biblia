@@ -9,19 +9,27 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
+## [1.0.25] — 2026-09-21
+
 ### Added
+- Emblemas de modo na jornada, no mapa e no seletor: Observação, Compreensão e Interpretação — o selo marca o modo concluído
+- Gancho de amanhã na celebração (próxima cena + verso) e faixa de compromisso nos primeiros 7 dias
+- Palco das perguntas em Almeida (JFAAL), hidratado na sessão
 - Encontro na celebração: carta verso-first + share em imagem (carimbo pequeno)
 - Combo ×N na missão; placar de desafios fechados no perfil (não volta para a Home)
 
 ### Changed
+- Cartão, ícone e trilho da jornada seguem a cor do modo (ouro / coral / orquídea)
+- Observação selada abre Compreensão no mapa; Mudar modo grava a escolha e as perguntas acompanham
+- Celebração: um CTA ouro; compartilhar e voltar como texto; gancho da próxima cena no lugar do placar da liga
+- Connect de Gênesis 1 liga dois trechos do texto, não um “contexto” genérico
 - Selos e Medalhas no perfil: cera recortada e moeda gravada — não mais ícone em círculo
 - Perfil: painéis de relíquia, discos gravados e filamento de ouro — cards e ícones deixam o poço de HUD
 - Jornada: Bronze → Prata → Ouro em todas as famílias; platina/diamante ficam para marcos futuros
-- Posicionamento vs mercado (20 set noite): três donos de “missão” no BR (Bibliando, Bíblia Fácil, nós); ranking direto/indireto no pitch; canvas `stway-concorrencia-direta-indireta`
-- Rodapé da celebração: um CTA ouro; compartilhar e voltar como texto; reparo da sequência não compete com Continuar
 - Flash de acerto/erro mais curto; haptic forte no combo
 
 ### Fixed
+- Lição puxava Compreensão mesmo depois de voltar para Observação
 - Esquina ativa abre a cena combinada mesmo se o passo da trilha ainda está bloqueado
 
 ## [1.0.24] — 2026-09-20

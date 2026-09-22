@@ -71,11 +71,16 @@ class HomeWidgetService {
       streak: streak,
       goal: goal,
       done: done,
+      nextTitle: progress.nextSceneTitle,
+      nextTease: progress.nextSceneTease,
     );
     final streakLabel = streak == 1 ? '1 dia' : '$streak dias';
-    final progressLabel = goalMet
-        ? 'Meta concluída'
-        : '$done/$goal missõ${goal == 1 ? 'ão' : 'es'}';
+    final nextTitle = (progress.nextSceneTitle ?? '').trim();
+    final progressLabel = nextTitle.isNotEmpty
+        ? (goalMet ? 'Amanhã: $nextTitle' : 'Hoje: $nextTitle')
+        : (goalMet
+            ? 'Meta concluída'
+            : '$done/$goal missõ${goal == 1 ? 'ão' : 'es'}');
 
     await HomeWidget.saveWidgetData('streak', streak);
     await HomeWidget.saveWidgetData('missions_done', done);
@@ -99,11 +104,19 @@ class HomeWidgetService {
     required int streak,
     required int goal,
     required int done,
+    String? nextTitle,
+    String? nextTease,
   }) {
-    if (goalMet) return 'Meta de hoje concluída';
+    final tease = (nextTease ?? '').trim();
+    if (goalMet) {
+      return tease.isEmpty ? 'A trilha espera amanhã' : tease;
+    }
     if (atRisk && streak > 0) {
       return 'Ficando para trás na caravana — caminhe hoje';
     }
+    if (tease.isNotEmpty) return tease;
+    final title = (nextTitle ?? '').trim();
+    if (title.isNotEmpty) return title;
     final left = (goal - done).clamp(1, goal);
     return left == 1
         ? 'Falta 1 missão hoje'

@@ -202,9 +202,9 @@
     "evidence": [
       "Gênesis 1:1–2"
     ],
-    "question": "O que Gênesis 1:1–2 comunica que se liga a este contexto?",
-    "prompt": "O que Gênesis 1:1–2 comunica que se liga a este contexto?",
-    "cue": "O que Gênesis 1:1–2 comunica que se liga a este contexto?",
+    "question": "O que une o princípio e a terra vazia?",
+    "prompt": "O que une o princípio e a terra vazia?",
+    "cue": "O que une o princípio e a terra vazia?",
     "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
     "trail": "genesis-1-11",
     "section": "gen-01-criador",
@@ -212,33 +212,33 @@
     "skill": "observe",
     "type": "connect",
     "id": "genesis-1-11-sem-gen-01-criador-06",
-    "feedbackCorrect": "Certo: o texto abre com Deus criando, não com o homem.",
+    "feedbackCorrect": "Certo: Deus cria primeiro; o vazio vem depois, não antes.",
     "feedbackWrong": {
-      "b": "O Espírito paira; não há abandono neste versículo.",
-      "c": "O versículo afirma a criação, não a recusa."
+      "b": "O texto não diz que o mundo nasce sozinho.",
+      "c": "Deus cria a terra; não recusa criá-la."
     },
     "options": [
       {
         "id": "a",
-        "text": "Deus começa a criação"
+        "text": "Deus cria antes do vazio"
       },
       {
         "id": "b",
-        "text": "O mundo nasce abandonado"
+        "text": "o vazio gera o mundo"
       },
       {
         "id": "c",
-        "text": "Deus recusa criar a terra"
+        "text": "Deus recusa criar"
       }
     ],
     "correctOptionId": "a",
     "passageA": {
-      "ref": "Gênesis 1:1–2",
+      "ref": "Gênesis 1:1",
       "text": "No princípio, criou Deus o céu e a terra"
     },
     "passageB": {
-      "ref": "Contexto",
-      "text": "Deus é o centro, não eu"
+      "ref": "Gênesis 1:2",
+      "text": "A terra, porém, era sem forma e vazia"
     },
     "correctAnswer": "a"
   },
@@ -445,9 +445,9 @@
     "evidence": [
       "Gênesis 1:1–2"
     ],
-    "question": "O que Gênesis 1:1–2 comunica que se liga a este contexto?",
-    "prompt": "O que Gênesis 1:1–2 comunica que se liga a este contexto?",
-    "cue": "O que Gênesis 1:1–2 comunica que se liga a este contexto?",
+    "question": "O que une a criação e o Espírito sobre as águas?",
+    "prompt": "O que une a criação e o Espírito sobre as águas?",
+    "cue": "O que une a criação e o Espírito sobre as águas?",
     "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
     "trail": "genesis-1-11",
     "section": "gen-01-criador",
@@ -455,19 +455,19 @@
     "skill": "understand",
     "type": "connect",
     "id": "genesis-1-11-cam-gen-01-criador-06",
-    "feedbackCorrect": "Certo: o Espírito paira; Deus não some quando ainda está vazio.",
+    "feedbackCorrect": "Certo: Deus cria e o Espírito já paira no vazio.",
     "feedbackWrong": {
-      "b": "Deus cria no princípio; o caos não vem antes dEle.",
+      "b": "O texto começa com Deus; o vazio não vem antes.",
       "c": "Pairar é presença, não ausência."
     },
     "options": [
       {
         "id": "a",
-        "text": "Deus permanece no vazio"
+        "text": "Deus já está presente"
       },
       {
         "id": "b",
-        "text": "Primeiro o caos, Deus depois"
+        "text": "primeiro o caos, depois Deus"
       },
       {
         "id": "c",
@@ -476,12 +476,12 @@
     ],
     "correctOptionId": "a",
     "passageA": {
-      "ref": "Gênesis 1:1–2",
-      "text": "o Espírito de Deus pairava por cima das águas"
+      "ref": "Gênesis 1:1",
+      "text": "criou Deus o céu e a terra"
     },
     "passageB": {
-      "ref": "Contexto",
-      "text": "Deus é o centro, não eu"
+      "ref": "Gênesis 1:2",
+      "text": "o Espírito de Deus pairava por cima das águas"
     },
     "correctAnswer": "a"
   },
@@ -688,9 +688,9 @@
     "evidence": [
       "Gênesis 1:1–2"
     ],
-    "question": "O que Gênesis 1:1–2 comunica que se liga a este contexto?",
-    "prompt": "O que Gênesis 1:1–2 comunica que se liga a este contexto?",
-    "cue": "O que Gênesis 1:1–2 comunica que se liga a este contexto?",
+    "question": "O que o princípio e o Espírito sobre as águas revelam juntos?",
+    "prompt": "O que o princípio e o Espírito sobre as águas revelam juntos?",
+    "cue": "O que o princípio e o Espírito sobre as águas revelam juntos?",
     "passageText": "No princípio, criou Deus o céu e a terra. A terra, porém, era sem forma e vazia; havia trevas sobre a face do abismo, mas o Espírito de Deus pairava por cima das águas.",
     "trail": "genesis-1-11",
     "section": "gen-01-criador",
@@ -698,7 +698,7 @@
     "skill": "interpret",
     "type": "connect",
     "id": "genesis-1-11-pro-gen-01-criador-06",
-    "feedbackCorrect": "Certo: o princípio é de Deus, não do vazio nem do eu.",
+    "feedbackCorrect": "Certo: o princípio é de Deus; o vazio não rivaliza com Ele.",
     "feedbackWrong": {
       "b": "O Espírito paira; não há indiferença neste texto.",
       "c": "O homem ainda não aparece; Deus é quem cria."
@@ -710,21 +710,21 @@
       },
       {
         "id": "b",
-        "text": "Indiferença divina ao caos"
+        "text": "indiferença divina ao caos"
       },
       {
         "id": "c",
-        "text": "Homem como criador do céu"
+        "text": "o homem inicia a criação"
       }
     ],
     "correctOptionId": "a",
     "passageA": {
-      "ref": "Gênesis 1:1–2",
+      "ref": "Gênesis 1:1",
       "text": "No princípio, criou Deus o céu e a terra"
     },
     "passageB": {
-      "ref": "Contexto",
-      "text": "Deus é o centro, não eu"
+      "ref": "Gênesis 1:2",
+      "text": "o Espírito de Deus pairava por cima das águas"
     },
     "correctAnswer": "a"
   },

@@ -105,19 +105,39 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
       final hasContent = trail.missionSlugs.isNotEmpty && !trail.comingSoon;
       final cleared = clearedTrailModes[trail.slug] ?? const <String>[];
       final live = TrailProgress.getLiveProgress(trail, completed);
-      final activeId = trailDifficulties[trail.slug];
+      final storedId = TrailProgress.resolvedDifficultyId(
+        trail.slug,
+        trailDifficulties[trail.slug],
+      );
+      final openId = TrailProgress.openDifficultyId(
+        activeDifficultyId: storedId,
+        clearedModes: cleared,
+      );
       final replaying = TrailProgress.isReplayingUnclearedMode(
         clearedModes: cleared,
-        activeDifficultyId: activeId,
+        activeDifficultyId: storedId,
         liveDone: live.done,
         total: live.total,
       );
       final clearedLabel = TrailProgress.clearedModeStatusLabel(cleared);
       final String? statusLabel;
       if (done && clearedLabel != null) {
-        statusLabel = replaying
-            ? '$clearedLabel · ${TrailProgress.modeLabel(activeId)} ${live.done}/${live.total}'
-            : clearedLabel;
+        if (replaying) {
+          statusLabel =
+              '${TrailProgress.modeLabel(storedId)} em curso';
+        } else if (openId != null &&
+            !cleared.contains(openId)) {
+          statusLabel = '${TrailProgress.modeLabel(openId)} à frente';
+        } else {
+          statusLabel = clearedLabel;
+        }
+      } else if (!done && unlocked && hasContent && storedId != null) {
+        statusLabel = TrailProgress.activeModeProgressLabel(
+          clearedModes: cleared,
+          activeDifficultyId: storedId,
+          liveDone: live.done,
+          total: live.total,
+        );
       } else {
         statusLabel = null;
       }
@@ -144,6 +164,8 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
           done: prog.done,
           total: prog.total,
           statusLabel: statusLabel,
+          clearedModeIds: cleared,
+          activeDifficultyId: openId ?? storedId,
         ),
       );
     }

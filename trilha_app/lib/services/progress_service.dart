@@ -12,6 +12,7 @@ import '../models/walk_companion.dart';
 import '../models/corner_challenge.dart';
 import '../utils/appearance.dart';
 import '../utils/catalog_access.dart';
+import '../utils/trail_progress.dart';
 import '../models/portrait_style.dart';
 import 'bible_reading_plan_service.dart';
 import 'bible_service.dart';
@@ -21,6 +22,10 @@ class AppSettings {
   final bool sound;
   final bool notifications;
   final int dailyGoal;
+  /// Compromisso de sequência (7 / 14 / 30). A meta diária continua 1 missão.
+  final int streakGoal;
+  /// Hora local do lembrete principal (6–22).
+  final int reminderHour;
   final AppearanceMode appearanceMode;
   final String bibleTranslationId;
 
@@ -37,6 +42,8 @@ class AppSettings {
     this.sound = true,
     this.notifications = true,
     this.dailyGoal = 1,
+    this.streakGoal = 7,
+    this.reminderHour = 10,
     this.appearanceMode = AppearanceMode.automatic,
     this.bibleTranslationId = BibleService.defaultTranslationId,
     this.fontScale = 1.0,
@@ -51,6 +58,8 @@ class AppSettings {
     bool? sound,
     bool? notifications,
     int? dailyGoal,
+    int? streakGoal,
+    int? reminderHour,
     AppearanceMode? appearanceMode,
     String? bibleTranslationId,
     double? fontScale,
@@ -61,6 +70,8 @@ class AppSettings {
       sound: sound ?? this.sound,
       notifications: notifications ?? this.notifications,
       dailyGoal: dailyGoal ?? this.dailyGoal,
+      streakGoal: streakGoal ?? this.streakGoal,
+      reminderHour: reminderHour ?? this.reminderHour,
       appearanceMode: appearanceMode ?? this.appearanceMode,
       bibleTranslationId: bibleTranslationId ?? this.bibleTranslationId,
       fontScale: fontScale ?? this.fontScale,
@@ -82,6 +93,11 @@ class ProgressService extends ChangeNotifier {
   static const _keySound = 'sound';
   static const _keyNotifications = 'notifications';
   static const _keyDailyGoal = 'dailyGoal';
+  static const _keyStreakGoal = 'streakGoal';
+  static const _keyReminderHour = 'reminderHour';
+  static const _keyNextSceneTitle = 'nextSceneTitle';
+  static const _keyNextSceneTease = 'nextSceneTease';
+  static const _keyLastInsight = 'lastMissionInsightLocal';
   static const _keyDarkMode = 'darkMode';
   static const _keyAppearanceMode = 'appearanceMode';
   static const _keyBibleTranslation = 'bibleTranslationId';
@@ -170,7 +186,13 @@ class ProgressService extends ChangeNotifier {
   }
 
   AppSettings settings = const AppSettings();
+  String? nextSceneTitle;
+  String? nextSceneTease;
+  String? lastInsight;
   Map<String, String> trailDifficulties = {};
+
+  /// Modo escolhido na tela de dificuldade — não auto-avançar por cima.
+  Map<String, String> pinnedTrailDifficulties = {};
 
   /// Modos (dificuldades) em que a trilha já foi concluída por completo.
   Map<String, List<String>> clearedTrailModes = {};
@@ -447,6 +469,9 @@ class ProgressService extends ChangeNotifier {
       notificationsPrompted = firstLesson != null && firstLesson.isNotEmpty;
     }
     companionInviteOffered = prefs.getBool(_keyCompanionInviteOffered) ?? false;
+    nextSceneTitle = prefs.getString(_keyNextSceneTitle);
+    nextSceneTease = prefs.getString(_keyNextSceneTease);
+    lastInsight = prefs.getString(_keyLastInsight);
     await prefs.setBool(_keyNotificationsPrompted, notificationsPrompted);
     await prefs.setBool(_keyCompanionInviteOffered, companionInviteOffered);
     bibleBrowseOrder = BibleReadingOrder.fromStorage(
@@ -469,6 +494,8 @@ class ProgressService extends ChangeNotifier {
       sound: prefs.getBool(_keySound) ?? true,
       notifications: prefs.getBool(_keyNotifications) ?? true,
       dailyGoal: prefs.getInt(_keyDailyGoal) ?? 1,
+      streakGoal: (prefs.getInt(_keyStreakGoal) ?? 7).clamp(7, 30),
+      reminderHour: (prefs.getInt(_keyReminderHour) ?? 10).clamp(6, 22),
       appearanceMode: AppearanceModeX.fromStorage(
         prefs.getString(_keyAppearanceMode),
         legacyDarkMode: prefs.getBool(_keyDarkMode),
@@ -497,6 +524,8 @@ class ProgressService extends ChangeNotifier {
     await prefs.setBool(_keyNotificationsPrompted, notificationsPrompted);
     await prefs.setBool(_keyCompanionInviteOffered, companionInviteOffered);
     await prefs.setInt(_keyDailyGoal, settings.dailyGoal);
+    await prefs.setInt(_keyStreakGoal, settings.streakGoal);
+    await prefs.setInt(_keyReminderHour, settings.reminderHour);
     await prefs.setString(
       _keyAppearanceMode,
       settings.appearanceMode.storageKey,
@@ -716,6 +745,7 @@ class ProgressService extends ChangeNotifier {
     firstOpenAtMs = null;
     settings = const AppSettings();
     trailDifficulties = {};
+    pinnedTrailDifficulties = {};
     clearedTrailModes = {};
     seasonWalkDays = {};
     usedQuestionIds = [];
@@ -765,6 +795,9 @@ class ProgressService extends ChangeNotifier {
     comebackBonusPending = false;
     notificationsPrompted = false;
     companionInviteOffered = false;
+    nextSceneTitle = null;
+    nextSceneTease = null;
+    lastInsight = null;
     lastBibleReadDate = null;
     bibleBeforeMission = false;
     final prefs = await SharedPreferences.getInstance();
@@ -1386,6 +1419,46 @@ class ProgressService extends ChangeNotifier {
     notifyListeners();
   }
 
+  Future<void> setNextScene({
+    required String title,
+    required String tease,
+    String? todayInsight,
+    bool saveInsight = false,
+  }) async {
+    final t = title.trim();
+    final s = tease.trim();
+    final insight = (todayInsight ?? '').trim();
+    if (t == (nextSceneTitle ?? '') &&
+        s == (nextSceneTease ?? '') &&
+        (!saveInsight || insight == (lastInsight ?? ''))) {
+      return;
+    }
+    nextSceneTitle = t.isEmpty ? null : t;
+    nextSceneTease = s.isEmpty ? null : s;
+    if (saveInsight) {
+      lastInsight = insight.isEmpty ? null : insight;
+    }
+    final prefs = await SharedPreferences.getInstance();
+    if (nextSceneTitle == null) {
+      await prefs.remove(_keyNextSceneTitle);
+    } else {
+      await prefs.setString(_keyNextSceneTitle, nextSceneTitle!);
+    }
+    if (nextSceneTease == null) {
+      await prefs.remove(_keyNextSceneTease);
+    } else {
+      await prefs.setString(_keyNextSceneTease, nextSceneTease!);
+    }
+    if (saveInsight) {
+      if (lastInsight == null) {
+        await prefs.remove(_keyLastInsight);
+      } else {
+        await prefs.setString(_keyLastInsight, lastInsight!);
+      }
+    }
+    notifyListeners();
+  }
+
   String? difficultyForTrail(String trailSlug) => trailDifficulties[trailSlug];
 
   bool hasDifficultyForTrail(String trailSlug) =>
@@ -1414,15 +1487,24 @@ class ProgressService extends ChangeNotifier {
 
   /// Troca o modo da trilha. Se já havia outro modo e [missionSlugs] for
   /// passado, zera o progresso desses passos — cada modo recomeça do início.
+  ///
+  /// [pin] = escolha explícita (picker). O auto-avanço não sobrescreve.
   Future<void> setTrailDifficulty(
     String trailSlug,
     String difficultyId, {
     List<String> missionSlugs = const [],
+    bool pin = false,
   }) async {
     final d = TrailDifficulty.fromId(difficultyId) ?? TrailDifficulty.semente;
     if (!isDifficultyUnlocked(trailSlug, d)) return;
     final prev = trailDifficulties[trailSlug];
     trailDifficulties = {...trailDifficulties, trailSlug: difficultyId};
+    if (pin) {
+      pinnedTrailDifficulties = {
+        ...pinnedTrailDifficulties,
+        trailSlug: difficultyId,
+      };
+    }
     if (prev != null && prev != difficultyId && missionSlugs.isNotEmpty) {
       final drop = missionSlugs.toSet();
       completedMissions = [
@@ -1432,6 +1514,35 @@ class ProgressService extends ChangeNotifier {
     }
     await _save();
     notifyListeners();
+  }
+
+  /// Se o modo gravado já foi selado, avança para o próximo aberto.
+  /// Observação concluída → Compreensão, com o progresso do novo modo zerado.
+  /// Não avança se o aluno escolheu esse modo de propósito (replay).
+  Future<bool> advancePastClearedMode(
+    String trailSlug, {
+    List<String> missionSlugs = const [],
+  }) async {
+    final stored = difficultyForTrail(trailSlug) ?? TrailDifficulty.semente.id;
+    if (pinnedTrailDifficulties[trailSlug] == stored) return false;
+    if (missionSlugs.isNotEmpty &&
+        clearedModesFor(trailSlug).contains(stored)) {
+      final done = missionSlugs.where(completedMissions.contains).length;
+      if (done < missionSlugs.length) return false;
+    }
+    final open = TrailProgress.openDifficultyId(
+      activeDifficultyId: stored,
+      clearedModes: clearedModesFor(trailSlug),
+    );
+    if (open == null || open == stored) return false;
+    final next = TrailDifficulty.fromId(open);
+    if (next == null || !isDifficultyUnlocked(trailSlug, next)) return false;
+    await setTrailDifficulty(
+      trailSlug,
+      open,
+      missionSlugs: missionSlugs,
+    );
+    return true;
   }
 
   List<String> clearedModesFor(String trailSlug) =>
@@ -1450,6 +1561,9 @@ class ProgressService extends ChangeNotifier {
       ...clearedTrailModes,
       trailSlug: [...current, difficultyId],
     };
+    if (pinnedTrailDifficulties[trailSlug] == difficultyId) {
+      pinnedTrailDifficulties = {...pinnedTrailDifficulties}..remove(trailSlug);
+    }
     await _save();
     notifyListeners();
   }
@@ -1917,6 +2031,7 @@ class ProgressService extends ChangeNotifier {
       'mistakeQuestionIds': mistakeQuestionIds,
       'playDates': playDates,
       'trailDifficulties': trailDifficulties,
+      'pinnedTrailDifficulties': pinnedTrailDifficulties,
       'clearedTrailModes': clearedTrailModes,
       'seasonWalkDays': seasonWalkDays,
       'missionReflections': missionReflections,
@@ -1942,6 +2057,8 @@ class ProgressService extends ChangeNotifier {
         'sound': settings.sound,
         'notifications': settings.notifications,
         'dailyGoal': settings.dailyGoal,
+        'streakGoal': settings.streakGoal,
+        'reminderHour': settings.reminderHour,
         'appearanceMode': settings.appearanceMode.storageKey,
         'bibleTranslationId': settings.bibleTranslationId,
         'fontScale': settings.fontScale,
@@ -2355,6 +2472,12 @@ class ProgressService extends ChangeNotifier {
           ..._asStringMap(data['trailDifficulties']),
         };
       }
+      if (data.containsKey('pinnedTrailDifficulties')) {
+        pinnedTrailDifficulties = {
+          ...pinnedTrailDifficulties,
+          ..._asStringMap(data['pinnedTrailDifficulties']),
+        };
+      }
       if (data.containsKey('clearedTrailModes')) {
         final cloudModes = _asStringListMap(data['clearedTrailModes']);
         if (clearedTrailModes.isEmpty) {
@@ -2496,6 +2619,11 @@ class ProgressService extends ChangeNotifier {
           sound: s['sound'] as bool? ?? settings.sound,
           notifications: s['notifications'] as bool? ?? settings.notifications,
           dailyGoal: (s['dailyGoal'] as num?)?.toInt() ?? settings.dailyGoal,
+          streakGoal: ((s['streakGoal'] as num?)?.toInt() ?? settings.streakGoal)
+              .clamp(7, 30),
+          reminderHour:
+              ((s['reminderHour'] as num?)?.toInt() ?? settings.reminderHour)
+                  .clamp(6, 22),
           appearanceMode: AppearanceModeX.fromStorage(
             s['appearanceMode'] as String?,
             legacyDarkMode: s['darkMode'] as bool?,
@@ -2639,6 +2767,9 @@ class ProgressService extends ChangeNotifier {
     comebackBonusPending = false;
     notificationsPrompted = false;
     companionInviteOffered = false;
+    nextSceneTitle = null;
+    nextSceneTease = null;
+    lastInsight = null;
     lastBibleReadDate = null;
     bibleBeforeMission = false;
     questProgressMap = {};

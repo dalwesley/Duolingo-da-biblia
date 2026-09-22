@@ -37,4 +37,22 @@ void main() {
     expect(DifficultyVisuals.onSky(AppColors.coral), AppColors.coral);
     expect(DifficultyVisuals.onSky(AppColors.orchid), AppColors.orchid);
   });
+
+  test('station card chrome follows the mode accent', () {
+    final gold = DifficultyVisuals.stationCard(
+      accent: AppColors.accent,
+      baseFill: AppColors.nightElevated,
+      lit: true,
+    );
+    final coral = DifficultyVisuals.stationCard(
+      accent: AppColors.coral,
+      baseFill: AppColors.nightElevated,
+      lit: true,
+    );
+    final goldBorder = (gold.border as Border).top.color;
+    final coralBorder = (coral.border as Border).top.color;
+    expect(goldBorder, AppColors.accent.withValues(alpha: 0.70));
+    expect(coralBorder, AppColors.coral.withValues(alpha: 0.70));
+    expect(goldBorder, isNot(coralBorder));
+  });
 }

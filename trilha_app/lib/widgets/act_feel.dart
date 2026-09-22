@@ -73,15 +73,24 @@ class _ActShakeState extends State<ActShake>
       vsync: this,
       duration: const Duration(milliseconds: 280),
     );
-    if (widget.active) _ctrl.forward(from: 0);
+    if (widget.active) _queuePlay();
   }
 
   @override
   void didUpdateWidget(covariant ActShake oldWidget) {
     super.didUpdateWidget(oldWidget);
     if (widget.active && !oldWidget.active) {
-      _ctrl.forward(from: 0);
+      _queuePlay();
     }
+  }
+
+  /// `forward()` no `initState`/`didUpdateWidget` cai no meio do rebuild:
+  /// o ticker ainda não tiqueta, e o primeiro erro passa sem tremer.
+  void _queuePlay() {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted || !widget.active) return;
+      _ctrl.forward(from: 0);
+    });
   }
 
   @override

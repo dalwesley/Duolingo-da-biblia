@@ -7,6 +7,7 @@ import '../services/bible_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/liturgical_calendar.dart';
+import '../utils/palco_verse.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
 
@@ -89,7 +90,7 @@ class _HomeWordCardState extends State<HomeWordCard> {
           study.passageRef.trim().isNotEmpty) {
         return _WordSnap(
           reference: study.passageRef,
-          text: study.passageText.trim(),
+          text: PalcoVerse.swapDivineName(study.passageText.trim()),
           label: 'Nesta lição',
         );
       }
@@ -159,18 +160,9 @@ class _HomeWordCardState extends State<HomeWordCard> {
     ];
 
     for (final c in candidates) {
-      final resolved = await BibleService.instance.resolve(c.ref);
-      if (resolved == null) continue;
-      final books = await BibleService.instance.books();
-      if (resolved.bookIndex < 0 || resolved.bookIndex >= books.length) {
-        continue;
-      }
-      final book = books[resolved.bookIndex];
-      final verse = resolved.verseStart ?? 1;
-      final text = await BibleService.instance.verseText(
-        book.abbrev,
-        resolved.chapter,
-        verse,
+      final text = await BibleService.instance.passageText(
+        c.ref,
+        translationId: BibleService.palcoTranslationId,
       );
       if (text == null || text.trim().isEmpty) continue;
       return _WordSnap(

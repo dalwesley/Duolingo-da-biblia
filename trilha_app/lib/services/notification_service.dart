@@ -270,10 +270,15 @@ class NotificationService {
     if (hooks.isEmpty) {
       await _schedule(
         id: _idMorning,
-        when: _nextSlot(10, 0),
-        copy: const _ReminderCopy(
-          title: 'Sua lição te espera',
-          body: 'Um passo por dia. A sequência continua amanhã.',
+        when: _nextSlot(progress.settings.reminderHour.clamp(6, 22), 0),
+        copy: _ReminderCopy(
+          title: (progress.nextSceneTitle ?? '').trim().isEmpty
+              ? 'Sua lição te espera'
+              : 'Amanhã',
+          body: (progress.nextSceneTitle ?? '').trim().isEmpty
+              ? 'Um passo por dia. A sequência continua amanhã.'
+              : '${progress.nextSceneTitle}. ${progress.nextSceneTease ?? ''}'
+                    .trim(),
           action: ReminderAction.home,
           priority: 1,
         ),
@@ -286,7 +291,7 @@ class NotificationService {
     hooks.sort((a, b) => b.priority.compareTo(a.priority));
 
     final slots = <(int id, tz.TZDateTime when)>[
-      (_idMorning, _nextSlot(10, 0)),
+      (_idMorning, _nextSlot(progress.settings.reminderHour.clamp(6, 22), 0)),
       (_idAfternoon, _nextSlot(15, 0)),
       (_idEvening, _nextSlot(19, 0)),
     ];
@@ -423,6 +428,8 @@ class NotificationService {
                 )
               : returning
               ? '$name, faz ${progress.daysSinceLastPlayed} ${progress.daysSinceLastPlayed == 1 ? 'dia' : 'dias'} sem lição. A trilha empoeira — um passo limpa o caminho.'
+              : (progress.nextSceneTitle ?? '').trim().isNotEmpty
+              ? '$name, ${progress.nextSceneTitle} espera.'
               : streak > 0
               ? '$name, você já anda há $streak ${streak == 1 ? 'dia' : 'dias'}. Falta${left == 1 ? '' : 'm'} $left missão${left == 1 ? '' : 'ões'} para acompanhar.'
               : 'Falta${left == 1 ? '' : 'm'} $left missão${left == 1 ? '' : 'ões'} para fechar a meta de hoje.',
@@ -504,17 +511,16 @@ class NotificationService {
       );
     }
 
-    if (progress.dailyGoalMet && hooks.length < 2) {
+    if (progress.dailyGoalMet) {
+      final title = (progress.nextSceneTitle ?? '').trim();
       hooks.add(
         _ReminderCopy(
-          title: '${progress.steps} passos',
-          body: 'Meta cumprida. Que tal um reforço rápido ou um versículo?',
-          action: mistakes > 0
-              ? ReminderAction.practice
-              : memoryPending > 0
-              ? ReminderAction.memory
-              : ReminderAction.home,
-          priority: 20,
+          title: title.isEmpty ? 'Até amanhã' : title,
+          body: (progress.nextSceneTease ?? '').trim().isEmpty
+              ? 'Um passo. A sequência continua amanhã.'
+              : progress.nextSceneTease!.trim(),
+          action: ReminderAction.home,
+          priority: 90,
         ),
       );
     }

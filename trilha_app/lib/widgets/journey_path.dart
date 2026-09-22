@@ -1,11 +1,15 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
+import '../models/difficulty.dart';
 import '../models/trail.dart';
 import '../models/trail_catalog.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/difficulty_visuals.dart';
+import '../utils/trail_progress.dart';
 import '../utils/trail_visuals.dart';
 import 'cinematic_icon.dart';
+import 'mode_emblem.dart';
 import 'ui_primitives.dart';
 
 enum JourneyNodeState { locked, upcoming, current, completed, soon }
@@ -18,8 +22,14 @@ class JourneyPathItem {
   final int total;
   final int chapterIndex;
 
-  /// Ex.: "Semente concluída" — diferencia modo limpo de progresso zerado.
+  /// Ex.: "Observação concluída" — diferencia modo limpo de progresso zerado.
   final String? statusLabel;
+
+  /// IDs dos modos já selados nesta trilha (`semente`, `caminhada`, …).
+  final List<String> clearedModeIds;
+
+  /// Modo ativo nesta trilha (`semente` = Observação).
+  final String? activeDifficultyId;
 
   const JourneyPathItem({
     required this.trail,
@@ -29,6 +39,8 @@ class JourneyPathItem {
     this.total = 0,
     this.chapterIndex = 1,
     this.statusLabel,
+    this.clearedModeIds = const [],
+    this.activeDifficultyId,
   });
 }
 
@@ -82,6 +94,8 @@ class JourneyPath extends StatelessWidget {
         total: item.total,
         chapterIndex: chapter,
         statusLabel: item.statusLabel,
+        clearedModeIds: item.clearedModeIds,
+        activeDifficultyId: item.activeDifficultyId,
       );
 
       children.add(
@@ -89,6 +103,7 @@ class JourneyPath extends StatelessWidget {
           key: item.state == JourneyNodeState.current ? currentKey : null,
           child: _PathStation(
             item: station,
+            nextItem: i + 1 < items.length ? items[i + 1] : null,
             accent: accent,
             glow: glow,
             isLast: i == items.length - 1,
@@ -157,6 +172,7 @@ class _FilmIntertitle extends StatelessWidget {
 
 class _PathStation extends StatelessWidget {
   final JourneyPathItem item;
+  final JourneyPathItem? nextItem;
   final Color accent;
   final Color glow;
   final bool isLast;
@@ -164,6 +180,7 @@ class _PathStation extends StatelessWidget {
 
   const _PathStation({
     required this.item,
+    this.nextItem,
     required this.accent,
     required this.glow,
     required this.isLast,
@@ -176,6 +193,11 @@ class _PathStation extends StatelessWidget {
     final isDone = item.state == JourneyNodeState.completed;
     final isLocked = item.state == JourneyNodeState.locked;
     final railActive = isDone || isCurrent;
+    final liveModeColor = _liveModeAccentOf(item);
+    final railColor = _stationChromeOf(item) ?? accent;
+    final nextRailColor = nextItem == null
+        ? railColor
+        : (_stationChromeOf(nextItem!) ?? railColor);
 
     return IntrinsicHeight(
       child: Row(
@@ -187,7 +209,7 @@ class _PathStation extends StatelessWidget {
               child: Column(
                 children: [
                   _RailBeacon(
-                    accent: accent,
+                    accent: railColor,
                     glow: glow,
                     isCurrent: isCurrent,
                     isDone: isDone,
@@ -198,8 +220,9 @@ class _PathStation extends StatelessWidget {
                       child: CustomPaint(
                         painter: _RailPainter(
                           color: railActive
-                              ? accent
+                              ? railColor
                               : Colors.white.withValues(alpha: 0.2),
+                          endColor: railActive ? nextRailColor : null,
                           active: railActive,
                           seed: item.trail.slug.hashCode ^ item.chapterIndex,
                         ),
@@ -217,17 +240,56 @@ class _PathStation extends StatelessWidget {
               child: isCurrent
                   ? _HeroStation(
                       item: item,
-                      accent: accent,
+                      accent: liveModeColor ?? accent,
                       glow: glow,
                       onTap: onTap,
                     )
-                  : _QuietStation(item: item, accent: accent, onTap: onTap),
+                  : _QuietStation(
+                      item: item,
+                      accent: liveModeColor ?? accent,
+                      onTap: onTap,
+                    ),
             ),
           ),
         ],
       ),
     );
   }
+}
+
+Color? _stationChromeOf(JourneyPathItem item) {
+  if (item.state == JourneyNodeState.locked ||
+      item.state == JourneyNodeState.soon) {
+    return null;
+  }
+  final live = _liveModeAccentOf(item);
+  if (live != null) return live;
+  final open = TrailDifficulty.fromId(item.activeDifficultyId);
+  if (open != null) return DifficultyVisuals.accentFor(open);
+  return _sealedModeAccentOf(item);
+}
+
+/// Cor do modo vivo (o que a pessoa está andando agora).
+/// Trilha selada e parada não herda o ouro da Observação concluída.
+Color? _liveModeAccentOf(JourneyPathItem item) {
+  if (item.state == JourneyNodeState.locked ||
+      item.state == JourneyNodeState.soon) {
+    return null;
+  }
+  final live = TrailDifficulty.fromId(item.activeDifficultyId);
+  if (item.state == JourneyNodeState.completed) {
+    if (live != null && !item.clearedModeIds.contains(live.id)) {
+      return DifficultyVisuals.accentFor(live);
+    }
+    return null;
+  }
+  return live == null ? null : DifficultyVisuals.accentFor(live);
+}
+
+Color? _sealedModeAccentOf(JourneyPathItem item) {
+  final ordered = TrailProgress.orderedClearedDifficulties(item.clearedModeIds);
+  if (ordered.isEmpty) return null;
+  return DifficultyVisuals.accentFor(ordered.last);
 }
 
 class _RailBeacon extends StatelessWidget {
@@ -282,10 +344,16 @@ class _RailBeacon extends StatelessWidget {
 
 class _RailPainter extends CustomPainter {
   final Color color;
+  final Color? endColor;
   final bool active;
   final int seed;
 
-  _RailPainter({required this.color, required this.active, required this.seed});
+  _RailPainter({
+    required this.color,
+    this.endColor,
+    required this.active,
+    required this.seed,
+  });
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -293,12 +361,22 @@ class _RailPainter extends CustomPainter {
 
     final path = _trailPath(size);
     final paint = Paint()
-      ..color = color
       ..style = PaintingStyle.stroke
       ..strokeWidth = active ? 1.6 : 1.4
       ..strokeCap = StrokeCap.butt
       ..strokeJoin = StrokeJoin.round
       ..isAntiAlias = true;
+
+    final tail = endColor;
+    if (tail != null && tail.toARGB32() != color.toARGB32()) {
+      paint.shader = LinearGradient(
+        begin: Alignment.topCenter,
+        end: Alignment.bottomCenter,
+        colors: [color, tail],
+      ).createShader(Offset.zero & size);
+    } else {
+      paint.color = color;
+    }
 
     if (active) {
       _drawDashed(canvas, path, paint, dash: 10, gap: 4);
@@ -372,7 +450,10 @@ class _RailPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant _RailPainter old) =>
-      old.color != color || old.active != active || old.seed != seed;
+      old.color != color ||
+      old.endColor != endColor ||
+      old.active != active ||
+      old.seed != seed;
 }
 
 class _HeroStation extends StatelessWidget {
@@ -392,110 +473,144 @@ class _HeroStation extends StatelessWidget {
   Widget build(BuildContext context) {
     final pct = item.total > 0 ? item.done / item.total : 0.0;
     final a = Appearance.of(context);
+    final mode = TrailDifficulty.fromId(item.activeDifficultyId);
+    final modeCleared =
+        mode != null && item.clearedModeIds.contains(mode.id);
+    final modeColor = mode != null
+        ? DifficultyVisuals.accentFor(mode)
+        : accent;
     return Material(
       color: Colors.transparent,
       child: InkWell(
         onTap: onTap,
         borderRadius: BorderRadius.circular(AppRadii.lg),
         child: Ink(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(AppRadii.lg),
-            color: a.cardFill,
-            border: Border.all(
-              color: AppMetrics.accentBorder(alpha: 0.45),
-              width: 1.5,
-            ),
+          decoration: DifficultyVisuals.stationCard(
+            accent: modeColor,
+            baseFill: a.cardFill,
+            lit: true,
           ),
-          child: Padding(
-            padding: const EdgeInsets.fromLTRB(
-              AppSpace.xl,
-              AppSpace.lg,
-              AppSpace.xl,
-              AppSpace.lg,
-            ),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.start,
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(AppRadii.lg),
+            child: Stack(
               children: [
-                Row(
-                  children: [
-                    Text(
-                      'CENA ${_roman(item.chapterIndex)}',
-                      style: AppTypography.label(
-                        size: 10,
-                        letterSpacing: 2.4,
-                        color: accent.withValues(alpha: 0.9),
-                      ),
-                    ),
-                    const Spacer(),
-                    Container(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 9,
-                        vertical: 4,
-                      ),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(AppRadii.lg),
-                        color: accent.withValues(alpha: 0.14),
-                        border: Border.all(
-                          color: accent.withValues(alpha: 0.4),
-                        ),
-                      ),
-                      child: Text(
-                        'AGORA',
-                        style: AppTypography.label(
-                          size: 9,
-                          letterSpacing: 0.8,
-                          color: accent,
-                        ),
-                      ),
-                    ),
-                  ],
+                Positioned(
+                  top: 0,
+                  left: 0,
+                  right: 0,
+                  height: 2,
+                  child: ColoredBox(color: modeColor),
                 ),
-                const SizedBox(height: AppSpace.md),
-                Text(
-                  item.trail.title,
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
-                  style: AppTypography.display(size: 26, height: 1.08),
-                ),
-                const SizedBox(height: AppSpace.sm),
-                Text(
-                  item.trail.description,
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
-                  style: AppTypography.body(
-                    size: 13,
-                    height: 1.3,
-                    color: a.textMuted(0.55),
+                Padding(
+                  padding: const EdgeInsets.fromLTRB(
+                    AppSpace.xl,
+                    AppSpace.lg + 2,
+                    AppSpace.xl,
+                    AppSpace.lg,
                   ),
-                ),
-                const SizedBox(height: AppSpace.md),
-                if (item.total > 0) ...[
-                  AppProgressBar(
-                    value: pct,
-                    color: accent,
-                    trackColor: a.progressTrack,
-                  ),
-                  const SizedBox(height: 8),
-                ],
-                Row(
-                  children: [
-                    if (item.total > 0)
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          Text(
+                            'CENA ${_roman(item.chapterIndex)}',
+                            style: AppTypography.label(
+                              size: 10,
+                              letterSpacing: 2.4,
+                              color: modeColor.withValues(alpha: 0.9),
+                            ),
+                          ),
+                          const Spacer(),
+                          Container(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 9,
+                              vertical: 4,
+                            ),
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(AppRadii.lg),
+                              color: modeColor,
+                            ),
+                            child: Text(
+                              'AGORA',
+                              style: AppTypography.label(
+                                size: 9,
+                                letterSpacing: 0.8,
+                                color: DifficultyVisuals.inkOn(
+                                  mode ?? TrailDifficulty.semente,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      if (mode != null) ...[
+                        const SizedBox(height: AppSpace.sm + 2),
+                        ModeStatusChip(
+                          difficulty: mode,
+                          cleared: modeCleared,
+                        ),
+                      ],
+                      const SizedBox(height: AppSpace.md),
                       Text(
-                        item.statusLabel ??
-                            '${item.done} de ${item.total} passos',
+                        item.trail.title,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: AppTypography.display(size: 26, height: 1.08),
+                      ),
+                      const SizedBox(height: AppSpace.sm),
+                      Text(
+                        item.trail.description,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
                         style: AppTypography.body(
-                          size: 12,
-                          weight: FontWeight.w600,
-                          color: a.textMuted(0.5),
+                          size: 13,
+                          height: 1.3,
+                          color: a.textMuted(0.55),
                         ),
                       ),
-                    const Spacer(),
-                    Text(
-                      'CONTINUAR →',
-                      style: AppTypography.cta(size: 12, color: accent),
-                    ),
-                  ],
+                      const SizedBox(height: AppSpace.md),
+                      if (item.total > 0) ...[
+                        AppProgressBar(
+                          value: pct,
+                          color: modeColor,
+                          trackColor: a.progressTrack,
+                        ),
+                        const SizedBox(height: 8),
+                      ],
+                      Row(
+                        children: [
+                          if (item.total > 0)
+                            Expanded(
+                              child: Text(
+                                item.statusLabel ??
+                                    '${item.done} de ${item.total} passos',
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: AppTypography.body(
+                                  size: 12,
+                                  weight: FontWeight.w600,
+                                  color: mode != null
+                                      ? DifficultyVisuals.onSky(modeColor)
+                                          .withValues(alpha: 0.88)
+                                      : a.textMuted(0.5),
+                                ),
+                              ),
+                            )
+                          else
+                            const Spacer(),
+                          Text(
+                            'CONTINUAR →',
+                            style: AppTypography.cta(
+                              size: 12,
+                              color: modeColor,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),
@@ -551,6 +666,15 @@ class _QuietStation extends StatelessWidget {
     final isLocked = item.state == JourneyNodeState.locked;
     final isSoon = item.state == JourneyNodeState.soon;
     final alpha = isLocked ? 0.55 : 1.0;
+    final a = Appearance.of(context);
+    final liveColor = _liveModeAccentOf(item);
+    final sealedColor = isDone ? _sealedModeAccentOf(item) : null;
+    final chrome = liveColor ?? sealedColor;
+    final replaying = liveColor != null;
+    final sealedIdle = isDone && !replaying && sealedColor != null;
+    final openMode = TrailDifficulty.fromId(item.activeDifficultyId);
+    final openUncleared =
+        openMode != null && !item.clearedModeIds.contains(openMode.id);
 
     return Opacity(
       opacity: alpha,
@@ -560,17 +684,18 @@ class _QuietStation extends StatelessWidget {
           onTap: onTap,
           borderRadius: BorderRadius.circular(AppRadii.lg),
           child: Ink(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(AppRadii.lg),
-              color: Appearance.of(
-                context,
-              ).cardFill.withValues(alpha: isLocked ? 0.55 : 1),
-              border: Border.all(
-                color: isDone
-                    ? accent.withValues(alpha: 0.28)
-                    : Appearance.of(context).cardBorder,
-              ),
-            ),
+            decoration: chrome != null && !isLocked && !isSoon
+                ? DifficultyVisuals.stationCard(
+                    accent: chrome,
+                    baseFill: a.cardFill,
+                    lit: false,
+                    sealed: sealedIdle,
+                  )
+                : BoxDecoration(
+                    borderRadius: BorderRadius.circular(AppRadii.lg),
+                    color: a.cardFill.withValues(alpha: isLocked ? 0.55 : 1),
+                    border: Border.all(color: a.cardBorder),
+                  ),
             child: Padding(
               padding: const EdgeInsets.fromLTRB(
                 AppSpace.lg,
@@ -580,40 +705,14 @@ class _QuietStation extends StatelessWidget {
               ),
               child: Row(
                 children: [
-                  Container(
-                    width: 48,
-                    height: 48,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(AppRadii.sm),
-                      gradient: isLocked ? null : visuals.iconGradient,
-                      color: isLocked
-                          ? Colors.white.withValues(alpha: 0.06)
-                          : null,
-                      border: Border.all(
-                        color: Colors.white.withValues(alpha: 0.12),
-                      ),
-                    ),
-                    child: isDone || isLocked || isSoon
-                        ? CinematicIcon(
-                            glyph: isDone
-                                ? CinematicGlyph.check
-                                : isLocked
-                                ? CinematicGlyph.lock
-                                : CinematicGlyph.calendar,
-                            size: 22,
-                            accent: isDone
-                                ? accent
-                                : Colors.white.withValues(
-                                    alpha: isLocked ? 0.4 : 0.9,
-                                  ),
-                            framed: false,
-                          )
-                        : CinematicIcon(
-                            glyph: visuals.glyph,
-                            size: 22,
-                            accent: Colors.white.withValues(alpha: 0.92),
-                            framed: false,
-                          ),
+                  _QuietLeading(
+                    visuals: visuals,
+                    isDone: isDone,
+                    isLocked: isLocked,
+                    isSoon: isSoon,
+                    accent: chrome ?? accent,
+                    clearedModeIds: item.clearedModeIds,
+                    openDifficulty: openUncleared && !isLocked ? openMode : null,
                   ),
                   const SizedBox(width: 14),
                   Expanded(
@@ -623,37 +722,44 @@ class _QuietStation extends StatelessWidget {
                         SectionLabel(
                           'Cena ${_roman(item.chapterIndex)}',
                           size: 10,
-                          color: Colors.white.withValues(alpha: 0.35),
+                          color: Colors.white.withValues(alpha: 0.38),
                         ),
                         const SizedBox(height: 3),
+                              Text(
+                                item.trail.title,
+                                style: AppTypography.display(
+                                  size: 20,
+                                  height: 1.1,
+                                  color: Colors.white.withValues(
+                                    alpha: isLocked ? 0.65 : 0.92,
+                                  ),
+                                ),
+                              ),
+                              if (openUncleared && !isLocked && !isSoon) ...[
+                                const SizedBox(height: 6),
+                                ModeStatusChip(
+                                  difficulty: openMode,
+                                  compact: true,
+                                ),
+                              ],
+                              const SizedBox(height: AppSpace.xs),
                         Text(
-                          item.trail.title,
-                          style: AppTypography.display(
-                            size: 20,
-                            height: 1.1,
-                            color: Colors.white.withValues(
-                              alpha: isLocked ? 0.65 : 0.92,
-                            ),
-                          ),
-                        ),
-                        const SizedBox(height: AppSpace.xs),
-                        Text(
-                          item.statusLabel ??
-                              (isDone
-                                  ? 'Concluída'
-                                  : isSoon
+                          isLocked
+                              ? 'Ainda além do horizonte'
+                              : isSoon
                                   ? 'Em breve neste caminho'
-                                  : isLocked
-                                  ? 'Ainda além do horizonte'
-                                  : item.total > 0
-                                  ? '${item.done}/${item.total} passos'
-                                  : item.trail.description),
+                                  : item.statusLabel ??
+                                      (isDone
+                                          ? 'Concluída'
+                                          : item.total > 0
+                                              ? '${item.done}/${item.total} passos'
+                                              : item.trail.description),
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
                           style: AppTypography.body(
                             size: 12,
-                            color: isDone
-                                ? accent.withValues(alpha: 0.8)
+                            color: chrome != null
+                                ? chrome.withValues(alpha: 0.9)
                                 : Colors.white.withValues(alpha: 0.42),
                           ),
                         ),
@@ -698,5 +804,76 @@ class _QuietStation extends StatelessWidget {
     ];
     if (n >= 1 && n <= map.length) return map[n - 1];
     return '$n';
+  }
+}
+
+class _QuietLeading extends StatelessWidget {
+  final TrailVisuals visuals;
+  final bool isDone;
+  final bool isLocked;
+  final bool isSoon;
+  final Color accent;
+  final List<String> clearedModeIds;
+  final TrailDifficulty? openDifficulty;
+
+  const _QuietLeading({
+    required this.visuals,
+    required this.isDone,
+    required this.isLocked,
+    required this.isSoon,
+    required this.accent,
+    required this.clearedModeIds,
+    this.openDifficulty,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    if (openDifficulty != null) {
+      return ModeEmblem(
+        key: ValueKey('mode-emblem-${openDifficulty!.id}'),
+        difficulty: openDifficulty!,
+        size: 44,
+        cleared: false,
+        active: true,
+      );
+    }
+    if (isDone && clearedModeIds.isNotEmpty) {
+      final n = clearedModeIds.toSet().length;
+      return ModeEmblemStrip(
+        clearedModeIds: clearedModeIds,
+        clearedOnly: true,
+        emblemSize: n > 1 ? 34 : 44,
+      );
+    }
+
+    return Container(
+      width: 48,
+      height: 48,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(AppRadii.sm),
+        gradient: isLocked ? null : visuals.iconGradient,
+        color: isLocked ? Colors.white.withValues(alpha: 0.06) : null,
+        border: Border.all(color: Colors.white.withValues(alpha: 0.12)),
+      ),
+      child: isDone || isLocked || isSoon
+          ? CinematicIcon(
+              glyph: isDone
+                  ? CinematicGlyph.check
+                  : isLocked
+                  ? CinematicGlyph.lock
+                  : CinematicGlyph.calendar,
+              size: 22,
+              accent: isDone
+                  ? accent
+                  : Colors.white.withValues(alpha: isLocked ? 0.4 : 0.9),
+              framed: false,
+            )
+          : CinematicIcon(
+              glyph: visuals.glyph,
+              size: 22,
+              accent: Colors.white.withValues(alpha: 0.92),
+              framed: false,
+            ),
+    );
   }
 }

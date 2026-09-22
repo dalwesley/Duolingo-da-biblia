@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../data/trail_repository.dart';
@@ -13,6 +15,7 @@ import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
 import '../utils/liturgical_calendar.dart';
 import '../utils/trail_progress.dart';
+import '../utils/tomorrow_hook.dart';
 import '../models/daily_quest.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/comeback_sheet.dart';
@@ -105,6 +108,21 @@ class _HomeScreenState extends State<HomeScreen>
         _maybeShowOfflineDialog();
       } else {
         _offlineDialogShown = false;
+        final progress = context.read<ProgressService>();
+        final hook = TomorrowHook.resolve(
+          trails: trails,
+          completed: progress.completedMissions,
+          clearedTrailModes: progress.clearedTrailModes,
+        );
+        if (hook != null) {
+          unawaited(() async {
+            final hydrated = await hook.withReaderVerse();
+            await progress.setNextScene(
+              title: hydrated.title,
+              tease: hydrated.trailer,
+            );
+          }());
+        }
       }
     }
   }
@@ -338,7 +356,9 @@ class _HomeScreenState extends State<HomeScreen>
               0,
               HomePlayerHeader(
                 onProfileTap: widget.onOpenProfile,
-                onTapMission: current != null
+                onTapMission: goalMet
+                    ? null
+                    : current != null
                     ? () => widget.onOpenMission(current.slug)
                     : widget.onOpenTrilhas,
                 onLiturgyTap: () =>

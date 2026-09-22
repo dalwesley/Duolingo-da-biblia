@@ -6,7 +6,7 @@ class CelebrationCopy {
     required bool isBoss,
   }) {
     if (perfect) return 'SEM ERRO';
-    if (isReplay) return 'DE NOVO NO TEXTO';
+    if (isReplay) return 'REVISÃO';
     if (isBoss) return 'O PASSO MAIOR';
     return 'MAIS UM PASSO';
   }
@@ -17,7 +17,7 @@ class CelebrationCopy {
     required bool isBoss,
   }) {
     if (perfect) return 'Clareza total';
-    if (isReplay) return 'Memória reforçada';
+    if (isReplay) return 'Você voltou ao texto';
     if (isBoss) return 'Boss vencido';
     return 'Missão cumprida';
   }
@@ -60,7 +60,7 @@ class MascotMessages {
           : 'Boss feito. Vale reforçar o que ainda tremeu.';
     }
     if (isReplay) return 'Voltar ao texto fortalece o que já caminhou.';
-    if (pct == 100) return 'Tudo claro. Volte amanhã para não perder o fio.';
+    if (pct == 100) return 'Tudo claro. Volte amanhã para continuar.';
     if (pct >= 70) return 'Bom passo. A trilha te espera amanhã.';
     return 'Missão feita. Reforce o que faltou — a memória agradece.';
   }

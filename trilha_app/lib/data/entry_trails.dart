@@ -70,8 +70,8 @@ class EntryTrails {
             questions: [],
             hookRef: 'Salmo 23:1–3',
             hookVerse:
-                'Jeová é o meu pastor; nada me faltará. Faz-me repousar em pastos verdejantes; conduz-me às águas de descanso.',
-            hookNote: 'O pastor guia — inclusive no vale. A falta que some é a de cuidado, não a de luta.',
+                'O Senhor é o meu pastor; nada me faltará. Ele me faz repousar em pastos verdejantes; leva-me para junto das águas de descanso.',
+            hookNote: 'O pastor guia — inclusive no vale. O que some não é a luta; é o medo e a sensação de solidão.',
             centralInsight: 'Há pastor no vale',
             objective: 'Ler o Salmo 23 como cuidado, não como amuleto.',
             bankSection: 'salmos-louvor-02-o-senhor-e-o-meu-pas',
@@ -138,7 +138,7 @@ class EntryTrails {
             questions: [],
             hookRef: 'Gênesis 3:8–9',
             hookVerse:
-                'Ouviram a voz de Jeová Deus, que passeava no jardim pela viração do dia… Jeová Deus chamou o homem e lhe perguntou: Onde estás?',
+                'E ouviram a voz do Senhor Deus, que andava no jardim à viração da tarde… E o Senhor Deus chamou o homem e lhe perguntou: Onde você está?',
             hookNote: 'O primeiro movimento depois da queda é Deus procurando — não o humano se escondendo com sucesso.',
             centralInsight: 'Deus ainda pergunta onde estás',
             objective: 'Ver a queda como ruptura, não como o fim da conversa.',
@@ -186,7 +186,7 @@ class EntryTrails {
             questions: [],
             hookRef: 'Gênesis 12:1–2',
             hookVerse:
-                'Ora, disse Jeová a Abrão: Sai da tua terra, da tua parentela e da casa de teu pai, para a terra que eu te mostrarei.',
+                'O Senhor disse a Abrão: Saia da sua terra, de sua parentela e da casa de seu pai e vá para a terra que eu lhe mostrarei.',
             hookNote: 'Deus não conserta Babel com outra torre. Chama uma família para ser bênção.',
             centralInsight: 'O recomeço caminha para fora',
             objective: 'Ligar recomeço a chamado, não a isolamento.',
@@ -280,7 +280,7 @@ class CharacterSeals {
       missionSlug: 'salmos-louvor-02-o-senhor-e-o-meu-pas',
       fact: 'O rei-pastor canta cuidado, não invencibilidade. O vale também é do Senhor.',
       verseRef: 'Salmo 23:1',
-      verseText: 'Jeová é o meu pastor; nada me faltará.',
+      verseText: 'O Senhor é o meu pastor; nada me faltará.',
       glyph: CinematicGlyph.heart,
     ),
     CharacterSeal(

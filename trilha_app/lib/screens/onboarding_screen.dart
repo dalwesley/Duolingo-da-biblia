@@ -36,7 +36,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
   late final AnimationController _world;
 
   int _index = 0;
-  int _dailyGoal = 1;
+  int _streakGoal = 7;
   bool _askName = false;
   bool _finishing = false;
 
@@ -152,7 +152,8 @@ class _OnboardingScreenState extends State<OnboardingScreen>
     }
     await progress.updateSettings(
       progress.settings.copyWith(
-        dailyGoal: _dailyGoal,
+        dailyGoal: 1,
+        streakGoal: _streakGoal,
         appearanceMode: AppearanceMode.morning,
       ),
     );
@@ -175,7 +176,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
     _Beat.origin => 'Começar',
     _Beat.habit => 'Continuar',
     _Beat.walk => 'Continuar',
-    _Beat.rhythm => 'Definir ritmo',
+    _Beat.rhythm => 'Comprometer-me',
     _Beat.threshold => 'Começar',
   };
 
@@ -293,10 +294,10 @@ class _OnboardingScreenState extends State<OnboardingScreen>
       _Beat.rhythm => _RhythmBeat(
         controller: _nameController,
         askName: _askName,
-        dailyGoal: _dailyGoal,
+        streakGoal: _streakGoal,
         onGoal: (g) {
           HapticFeedback.selectionClick();
-          setState(() => _dailyGoal = g);
+          setState(() => _streakGoal = g);
         },
       ),
       _Beat.threshold => _ThresholdBeat(
@@ -538,7 +539,7 @@ class _WalkBeat extends StatelessWidget {
                 (
                   glyph: CinematicGlyph.path,
                   title: 'Volte amanhã',
-                  subtitle: 'A sequência sustenta o hábito',
+                  subtitle: 'Sete dias abrem o hábito',
                 ),
               ],
             ),
@@ -630,45 +631,45 @@ class _GoalOption {
     required this.time,
   });
 
-  String get unit => goal == 1 ? 'passo' : 'passos';
+  String get unit => 'dias';
 }
 
 const _goals = <_GoalOption>[
   _GoalOption(
-    goal: 1,
-    pace: 'Leve',
-    echo: 'Uma missão. O hábito nasce no retorno.',
-    time: '~3 min',
+    goal: 7,
+    pace: 'Começar',
+    echo: 'Uma semana. O hábito nasce no retorno.',
+    time: '1 missão/dia',
   ),
   _GoalOption(
-    goal: 2,
+    goal: 14,
     pace: 'Firme',
-    echo: 'Dois passos. A semana muda de cara.',
-    time: '~6 min',
+    echo: 'Duas semanas. A trilha muda de cara.',
+    time: '1 missão/dia',
   ),
   _GoalOption(
-    goal: 3,
-    pace: 'Intenso',
-    echo: 'Reserve o tempo — o estudo vale a presença.',
-    time: '~9 min',
+    goal: 30,
+    pace: 'Caminhada',
+    echo: 'Um mês. A Palavra vira presença.',
+    time: '1 missão/dia',
   ),
 ];
 
 class _RhythmBeat extends StatelessWidget {
   final TextEditingController controller;
   final bool askName;
-  final int dailyGoal;
+  final int streakGoal;
   final ValueChanged<int> onGoal;
 
   const _RhythmBeat({
     required this.controller,
     required this.askName,
-    required this.dailyGoal,
+    required this.streakGoal,
     required this.onGoal,
   });
 
   _GoalOption get _selected =>
-      _goals.firstWhere((g) => g.goal == dailyGoal, orElse: () => _goals.first);
+      _goals.firstWhere((g) => g.goal == streakGoal, orElse: () => _goals.first);
 
   @override
   Widget build(BuildContext context) {
@@ -693,7 +694,7 @@ class _RhythmBeat extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           Text(
-            'Quanto você caminha\npor dia?',
+            'Com quantos dias\nvocê se compromete?',
             textAlign: TextAlign.center,
             style: AppTypography.display(size: 30, height: 1.12),
           ),
@@ -730,7 +731,7 @@ class _RhythmBeat extends StatelessWidget {
                   Expanded(
                     child: _GoalCard(
                       option: _goals[i],
-                      selected: dailyGoal == _goals[i].goal,
+                      selected: streakGoal == _goals[i].goal,
                       onTap: () => onGoal(_goals[i].goal),
                     ),
                   ),
@@ -828,7 +829,7 @@ class _GoalCard extends StatelessWidget {
               Text(
                 '${option.goal}',
                 style: AppTypography.display(
-                  size: 42,
+                  size: option.goal >= 10 ? 32 : 42,
                   weight: FontWeight.w900,
                   color: ink,
                   height: 1,

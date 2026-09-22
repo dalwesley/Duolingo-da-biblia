@@ -12,6 +12,7 @@ import '../utils/day_phase.dart';
 import '../utils/difficulty_visuals.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
+import '../widgets/mode_emblem.dart';
 
 /// Escolha cinematográfica de dificuldade ao iniciar a trilha de Gênesis.
 class DifficultyPickerScreen extends StatefulWidget {
@@ -31,40 +32,45 @@ class DifficultyPickerScreen extends StatefulWidget {
     required String trailSlug,
   }) async {
     final progress = context.read<ProgressService>();
-    if (progress.hasDifficultyForTrail(trailSlug)) return true;
+    final trail = await TrailRepository().getTrailBySlug(trailSlug);
+    if (!context.mounted) return false;
+    final slugs = trail?.missionSlugs ?? const [];
 
-    final unlocked = progress.unlockedDifficulties(trailSlug);
-    if (unlocked.length <= 1) {
-      final id = unlocked.isEmpty
-          ? TrailDifficulty.semente.id
-          : unlocked.first.id;
-      final trail = await TrailRepository().getTrailBySlug(trailSlug);
+    final hadStored = progress.hasDifficultyForTrail(trailSlug);
+    if (!hadStored) {
+      final unlocked = progress.unlockedDifficulties(trailSlug);
+      if (unlocked.length <= 1) {
+        final id = unlocked.isEmpty
+            ? TrailDifficulty.semente.id
+            : unlocked.first.id;
+        await progress.setTrailDifficulty(
+          trailSlug,
+          id,
+          missionSlugs: slugs,
+        );
+        AnalyticsService.instance.logDifficultyPick(
+          trailSlug: trailSlug,
+          difficulty: id,
+        );
+        return true;
+      }
+
+      await Navigator.of(context).push(
+        PageRouteBuilder(
+          opaque: true,
+          pageBuilder: (_, _, _) => DifficultyPickerScreen(
+            trailSlug: trailSlug,
+            onSelected: () => Navigator.of(context).pop(),
+          ),
+          transitionsBuilder: (_, anim, _, child) =>
+              FadeTransition(opacity: anim, child: child),
+        ),
+      );
       if (!context.mounted) return false;
-      await progress.setTrailDifficulty(
-        trailSlug,
-        id,
-        missionSlugs: trail?.missionSlugs ?? const [],
-      );
-      AnalyticsService.instance.logDifficultyPick(
-        trailSlug: trailSlug,
-        difficulty: id,
-      );
-      return true;
+      return progress.hasDifficultyForTrail(trailSlug);
     }
 
-    await Navigator.of(context).push(
-      PageRouteBuilder(
-        opaque: true,
-        pageBuilder: (_, _, _) => DifficultyPickerScreen(
-          trailSlug: trailSlug,
-          onSelected: () => Navigator.of(context).pop(),
-        ),
-        transitionsBuilder: (_, anim, _, child) =>
-            FadeTransition(opacity: anim, child: child),
-      ),
-    );
-    if (!context.mounted) return false;
-    return context.read<ProgressService>().hasDifficultyForTrail(trailSlug);
+    return true;
   }
 
   @override
@@ -121,6 +127,7 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen>
       widget.trailSlug,
       meta.difficulty.id,
       missionSlugs: trail?.missionSlugs ?? const [],
+      pin: true,
     );
     AnalyticsService.instance.logDifficultyPick(
       trailSlug: widget.trailSlug,
@@ -390,13 +397,12 @@ class _DifficultyCard extends StatelessWidget {
                 ),
                 child: Row(
                   children: [
-                    CinematicIcon(
-                      glyph: locked
-                          ? CinematicGlyph.lock
-                          : DifficultyVisuals.glyphFor(meta.difficulty),
+                    ModeEmblem(
+                      difficulty: meta.difficulty,
                       size: 52,
-                      accent: onSky,
-                      glowing: lit,
+                      cleared: cleared,
+                      locked: locked,
+                      active: current && !locked,
                     ),
                     const SizedBox(width: AppSpace.md),
                     Expanded(
@@ -435,14 +441,26 @@ class _DifficultyCard extends StatelessWidget {
                                       letterSpacing: 0.4,
                                     ),
                                   ),
-                                )
-                              else if (cleared)
-                                Text(
-                                  'Concluído',
-                                  style: AppTypography.label(
-                                    size: 10,
-                                    color: AppColors.teal,
-                                    letterSpacing: 0.4,
+                                ),
+                              if (cleared)
+                                Container(
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: AppSpace.sm + 2,
+                                    vertical: 3,
+                                  ),
+                                  decoration: BoxDecoration(
+                                    color: color.withValues(alpha: 0.28),
+                                    borderRadius: BorderRadius.circular(
+                                      AppRadii.pill,
+                                    ),
+                                  ),
+                                  child: Text(
+                                    'Concluído',
+                                    style: AppTypography.label(
+                                      size: 10,
+                                      color: ink,
+                                      letterSpacing: 0.4,
+                                    ),
                                   ),
                                 ),
                               if (locked)
