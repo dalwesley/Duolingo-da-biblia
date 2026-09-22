@@ -385,9 +385,6 @@ class _TrilhasScreenState extends State<TrilhasScreen>
                       : null,
                   goalMet: progress.dailyGoalMet,
                   atRisk: progress.isStreakAtRisk,
-                  lampsReady: ProgressService.lampsForMission(
-                    isBoss: current?.isBoss ?? false,
-                  ),
                 ),
               ),
             ),

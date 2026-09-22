@@ -135,39 +135,27 @@ class DustCopy {
         'Pó na sequência · caminhe hoje',
       ]);
 
-  /// Linha do hero card (com countdown).
+  /// Linha do hero card (com countdown). Uma frase: o que acaba, quando, o que fazer.
   static String heroRiskLine({
     required String countdown,
     required bool hasFreeze,
+    int streak = 0,
   }) {
+    final seq = streak <= 1
+        ? 'a sequência'
+        : 'a sequência de $streak dias';
     if (hasFreeze) {
-      return _pick([
-        'Faltam $countdown · um passo alcança — ou o gelo cobre 1 dia',
-        'Faltam $countdown · poeira sobe · gelo ainda cobre 1 falta',
-        'Faltam $countdown · continue a caminhada (gelo à postos)',
-      ]);
+      return '$countdown para $seq cair. Faz a missão hoje — o gelo ainda salva 1 dia.';
     }
-    return _pick([
-      'Faltam $countdown · sem gelo · a caravana segue sem você',
-      'Faltam $countdown · poeira engole a sequência',
-      'Faltam $countdown · uma lição limpa o caminho',
-    ]);
+    return '$countdown para $seq cair. Faz a missão hoje.';
   }
 
   /// Buraco já aberto (ontem vazio). Gelo da semana não cobre de novo.
   static String heroGapLine({required bool hasFreeze}) {
     if (hasFreeze) {
-      return _pick(const [
-        'Ontem ficou vazio · o gelo ainda cobre 1 falta',
-        'Um dia de poeira · gelo à postos nesta semana',
-        'Buraco de ontem · o gelo ainda pode cobrir 1 dia',
-      ]);
+      return 'Ontem ficou vazio. Faz a missão hoje — o gelo ainda salva 1 dia.';
     }
-    return _pick(const [
-      'Ontem ficou vazio · o gelo da semana já foi usado',
-      'Um dia sem cobertura · o gelo já cobriu outra falta',
-      'Poeira de ontem · sem gelo restante nesta semana',
-    ]);
+    return 'Ontem ficou vazio. Faz a missão hoje para não perder a sequência.';
   }
 
   static String _pick(List<String> options) {

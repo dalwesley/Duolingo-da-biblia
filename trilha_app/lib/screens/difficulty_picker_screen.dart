@@ -123,12 +123,19 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen>
     HapticFeedback.mediumImpact();
     final trail = await TrailRepository().getTrailBySlug(widget.trailSlug);
     if (!mounted) return;
-    await progress.setTrailDifficulty(
-      widget.trailSlug,
-      meta.difficulty.id,
-      missionSlugs: trail?.missionSlugs ?? const [],
-      pin: true,
-    );
+    if (!progress.hasDifficultyForTrail(widget.trailSlug)) {
+      await progress.setTrailDifficulty(
+        widget.trailSlug,
+        meta.difficulty.id,
+        missionSlugs: trail?.missionSlugs ?? const [],
+      );
+    } else {
+      progress.setSessionTrailDifficulty(
+        widget.trailSlug,
+        meta.difficulty.id,
+        missionSlugs: trail?.missionSlugs ?? const [],
+      );
+    }
     AnalyticsService.instance.logDifficultyPick(
       trailSlug: widget.trailSlug,
       difficulty: meta.difficulty.id,

@@ -19,6 +19,7 @@ import '../services/sound_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
+import '../utils/difficulty_visuals.dart';
 import '../utils/genesis_theme.dart';
 import '../utils/palco_verse.dart';
 import '../utils/trail_progress.dart';
@@ -170,18 +171,22 @@ class _LessonScreenState extends State<LessonScreen>
       final trails = await _repo.getTrails();
       final trail = trails.where((t) => t.slug == trailSlug).firstOrNull;
       if (trail != null) {
+        final visibleCompleted = progress.completedMissionsForTrail(
+          trailSlug: trail.slug,
+          missionSlugs: trail.missionSlugs,
+        );
         final unlockedTrail = TrailProgress.isTrailUnlocked(
           trail,
           trails,
-          progress.completedMissions,
+          visibleCompleted,
           clearedTrailModes: progress.clearedTrailModes,
         );
         final unlockedMission = TrailProgress.isMissionUnlocked(
           widget.missionSlug,
           trail.missionSlugs,
-          progress.completedMissions,
+          visibleCompleted,
         );
-        final alreadyDone = progress.isMissionCompleted(widget.missionSlug);
+        final alreadyDone = visibleCompleted.contains(widget.missionSlug);
         if (!unlockedTrail || (!unlockedMission && !alreadyDone)) {
           if (!mounted) return;
           ScaffoldMessenger.of(context).showSnackBar(
@@ -201,19 +206,25 @@ class _LessonScreenState extends State<LessonScreen>
 
     final usesBank = QuestionBank.instance.hasBankForTrail(bankTrail);
 
-    if (usesBank &&
-        bankTrail != null &&
-        (mission.bankTrailSlug ?? '').isEmpty) {
-      if (!mounted) return;
-      final ok = await DifficultyPickerScreen.ensureSelected(
-        context,
-        trailSlug: bankTrail,
-      );
-      if (!mounted) return;
-      if (!ok) {
-        Navigator.of(context).pop();
-        return;
+    if (usesBank && bankTrail != null) {
+      if ((mission.bankTrailSlug ?? '').isEmpty) {
+        if (!mounted) return;
+        final ok = await DifficultyPickerScreen.ensureSelected(
+          context,
+          trailSlug: bankTrail,
+        );
+        if (!mounted) return;
+        if (!ok) {
+          Navigator.of(context).pop();
+          return;
+        }
       }
+      final trailForMode = await _repo.getTrailBySlug(bankTrail);
+      if (!mounted) return;
+      await context.read<ProgressService>().advancePastClearedMode(
+        bankTrail,
+        missionSlugs: trailForMode?.missionSlugs ?? const [],
+      );
     }
 
     if (!mounted) return;
@@ -347,6 +358,12 @@ class _LessonScreenState extends State<LessonScreen>
     realm: TrailRealm.fromId(_realmId),
     trailSlug: _trailSlug,
   );
+
+  Color get _sessionAccent {
+    final d = _difficultyMeta?.difficulty;
+    if (d != null) return DifficultyVisuals.accentFor(d);
+    return _theme.pathActive;
+  }
 
   ({String reference, String text})? get _board {
     final hookT = (_mission?.hookVerse ?? '').trim();
@@ -520,7 +537,8 @@ class _LessonScreenState extends State<LessonScreen>
     final isReplay =
         widget.practiceMode ||
         (_baseMission != null &&
-            progress.isMissionCompleted(_baseMission!.slug));
+            (progress.isSessionReplayMission(_baseMission!.slug) ||
+                progress.isMissionCompleted(_baseMission!.slug)));
     final maxLamps = _maxLamps;
     final steps = ProgressService.computeLessonSteps(
       baseSteps: _mission!.stepsReward,
@@ -736,7 +754,7 @@ class _LessonScreenState extends State<LessonScreen>
 
     final mission = _mission!;
     final total = _itemCount.clamp(1, 999);
-    final accent = _theme.pathActive;
+    final accent = _sessionAccent;
 
     return Appearance(
       mode: mode,
@@ -867,8 +885,8 @@ class _LessonScreenState extends State<LessonScreen>
                         _Phase.intro => _IntroPanel(
                           key: const ValueKey('intro'),
                           mission: mission,
-                          theme: _theme,
                           itemCount: total,
+                          accent: accent,
                           onStart: _startQuiz,
                         ),
                         _Phase.insight => _InsightPanel(
@@ -953,15 +971,15 @@ class _LessonScreenState extends State<LessonScreen>
 
 class _IntroPanel extends StatelessWidget {
   final Mission mission;
-  final GenesisModuleTheme theme;
   final int itemCount;
+  final Color accent;
   final VoidCallback onStart;
 
   const _IntroPanel({
     super.key,
     required this.mission,
-    required this.theme,
     required this.itemCount,
+    required this.accent,
     required this.onStart,
   });
 
@@ -971,11 +989,12 @@ class _IntroPanel extends StatelessWidget {
     final ref = (mission.hookRef ?? '').trim();
     final note = (mission.hookNote ?? '').trim();
     final fallbackIntro = mission.intro.trim();
-    final accent = theme.pathActive;
-    // Palco = verso. Intro narrativo só se nada mais restou.
     final stageText = verse.isNotEmpty
         ? verse
         : (note.isEmpty && fallbackIntro.isNotEmpty ? fallbackIntro : '');
+    final pulse = mission.isBoss
+        ? 'Desafio · $itemCount atos'
+        : '~3 min · $itemCount atos';
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: AppSpace.screen),
@@ -983,34 +1002,43 @@ class _IntroPanel extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Text(
-            mission.isBoss
-                ? 'Desafio · $itemCount atos · +${mission.stepsReward} passos'
-                : '~3 min · $itemCount atos · +${mission.stepsReward} passos',
+            pulse,
+            textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 12,
               weight: FontWeight.w600,
-              color: AppColors.textOnDark.withValues(alpha: 0.5),
+              color: AppColors.textOnDark.withValues(alpha: 0.42),
             ),
           ),
           if (note.isNotEmpty) ...[
-            const SizedBox(height: 12),
-            _PlatePrompt(label: 'Contexto', text: note, accent: accent),
+            const SizedBox(height: 18),
+            Text(
+              note,
+              textAlign: TextAlign.center,
+              style: AppTypography.body(
+                size: 15,
+                height: 1.45,
+                weight: FontWeight.w600,
+                color: AppColors.textOnDark.withValues(alpha: 0.72),
+              ),
+            ),
           ],
-          const SizedBox(height: 12),
           Expanded(
             child: stageText.isEmpty
                 ? const SizedBox.shrink()
-                : _WitnessPlate(
-                    accent: accent,
-                    reference: ref,
-                    child: Text(
-                      stageText,
-                      textAlign: TextAlign.center,
-                      style: AppTypography.verse(size: 22, height: 1.55),
+                : Padding(
+                    padding: const EdgeInsets.only(top: 12, bottom: 10),
+                    child: _WitnessPlate(
+                      accent: accent,
+                      reference: ref,
+                      child: Text(
+                        stageText,
+                        textAlign: TextAlign.center,
+                        style: AppTypography.verse(size: 22, height: 1.55),
+                      ),
                     ),
                   ),
           ),
-          const SizedBox(height: 10),
           MissionListenButton(
             verse: stageText,
             insight: mission.centralInsight,
@@ -1138,48 +1166,6 @@ class _WitnessPlate extends StatelessWidget {
           ),
         ],
       ),
-    );
-  }
-}
-
-class _PlatePrompt extends StatelessWidget {
-  final String label;
-  final String text;
-  final Color accent;
-
-  const _PlatePrompt({
-    required this.label,
-    required this.text,
-    required this.accent,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Container(
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
-          decoration: BoxDecoration(
-            color: Colors.black.withValues(alpha: 0.35),
-            borderRadius: BorderRadius.circular(AppRadii.pill),
-            border: Border.all(color: accent.withValues(alpha: 0.45)),
-          ),
-          child: Text(
-            '${label.toUpperCase()}:',
-            style: AppTypography.label(
-              size: 10,
-              letterSpacing: 1.6,
-              color: accent,
-            ),
-          ),
-        ),
-        const SizedBox(height: 12),
-        Text(
-          text,
-          textAlign: TextAlign.center,
-          style: AppTypography.title(size: 16, height: 1.3, color: accent),
-        ),
-      ],
     );
   }
 }

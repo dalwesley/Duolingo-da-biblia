@@ -87,95 +87,66 @@ class _ChapterTitleCard extends StatelessWidget {
         22,
         highlighted ? 20 : 16,
         22,
-        highlighted ? 22 : 16,
+        highlighted ? 20 : 16,
       ),
-      decoration: StagePlate.decoration(accent: accent, lit: highlighted),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(StagePlate.radius),
+        color: AppColors.nightElevated.withValues(alpha: highlighted ? 0.78 : 0.55),
+        border: Border.all(
+          color: highlighted
+              ? accent.withValues(alpha: 0.36)
+              : Colors.white.withValues(alpha: 0.08),
+          width: 1,
+        ),
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          if (!highlighted)
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      StageEyebrow(
-                        label: 'Cena ${_roman(sectionIndex)}',
-                        accent: onSky.withValues(alpha: 0.85),
-                      ),
-                      const SizedBox(height: AppSpace.sm),
-                      Text(
-                        title,
-                        style: AppTypography.display(
-                          size: 24,
-                          weight: FontWeight.w600,
-                          height: 1.1,
-                          color: Colors.white.withValues(alpha: 0.75),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                if (total > 0)
-                  Padding(
-                    padding: const EdgeInsets.only(top: 2),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
-                        Text(
-                          '$done de $total',
-                          style: AppTypography.display(
-                            size: 16,
-                            weight: FontWeight.w600,
-                            color: onSky.withValues(alpha: 0.95),
-                          ),
-                        ),
-                        const SizedBox(height: 2),
-                        Text(
-                          done >= total ? 'concluída' : 'passos',
-                          style: AppTypography.label(
-                            size: 9,
-                            letterSpacing: 0.8,
-                            color: Colors.white.withValues(alpha: 0.45),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-              ],
+          Text(
+            'Cena ${_roman(sectionIndex)}',
+            style: AppTypography.body(
+              size: 12,
+              weight: FontWeight.w700,
+              color: Colors.white.withValues(alpha: highlighted ? 0.48 : 0.38),
             ),
+          ),
+          const SizedBox(height: 8),
+          Text(
+            title,
+            style: AppTypography.display(
+              size: highlighted ? 26 : 22,
+              weight: FontWeight.w600,
+              height: 1.12,
+              color: Colors.white.withValues(alpha: highlighted ? 0.94 : 0.72),
+            ),
+          ),
           if (highlighted) ...[
-            StageEyebrow(
-              label: 'Cena ${_roman(sectionIndex)}',
-              accent: onSky,
-            ),
-            const SizedBox(height: 10),
+            const SizedBox(height: 12),
             Text(
               theme.narrative,
               style: AppTypography.body(
-                size: 14,
+                size: 15,
                 height: 1.5,
                 weight: FontWeight.w500,
-                color: Colors.white.withValues(alpha: 0.72),
+                color: Colors.white.withValues(alpha: 0.7),
               ),
             ),
-            const SizedBox(height: AppSpace.sm),
+            const SizedBox(height: 14),
             Text(
               theme.verse,
-              style: AppTypography.label(
-                size: 11,
-                letterSpacing: 1.2,
-                color: onSky.withValues(alpha: 0.72),
+              style: AppTypography.verse(
+                size: 16,
+                height: 1.4,
+                color: Colors.white.withValues(alpha: 0.82),
               ),
             ),
             if (total > 0) ...[
               const SizedBox(height: 16),
               AppProgressBar(
                 value: pct,
-                color: onSky,
-                trackColor: Colors.white.withValues(alpha: 0.1),
+                color: onSky.withValues(alpha: 0.7),
+                trackColor: Colors.white.withValues(alpha: 0.08),
+                height: 3,
               ),
               const SizedBox(height: 8),
               Text(
@@ -183,10 +154,20 @@ class _ChapterTitleCard extends StatelessWidget {
                 style: AppTypography.body(
                   size: 12,
                   weight: FontWeight.w600,
-                  color: Colors.white.withValues(alpha: 0.5),
+                  color: Colors.white.withValues(alpha: 0.42),
                 ),
               ),
             ],
+          ] else if (total > 0) ...[
+            const SizedBox(height: 8),
+            Text(
+              done >= total ? 'Concluída' : '$done de $total',
+              style: AppTypography.body(
+                size: 12,
+                weight: FontWeight.w600,
+                color: onSky.withValues(alpha: 0.55),
+              ),
+            ),
           ],
         ],
       ),

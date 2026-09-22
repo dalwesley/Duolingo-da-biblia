@@ -32,9 +32,9 @@ Gigantes indiretos (YouVersion, Hallow) ocupam o **slot de 10 minutos**. Continu
 | **Bibliando** | Missões + trilhas em PT-BR (leitura + contexto + descoberta) · já cobra |
 | **Bíblia Fácil** | Devocional 5 min + oração + quiz + “missões bíblicas” (BR, 10 mil+) |
 | **Guia de Fé / Verbo / trivia** | Planos+igreja+IA · quiz gamificado · memória solta |
-| **STWAY** | **Missões diárias** para criar hábito de **ler e estudar** a Bíblia |
+| **STWAY** | **Hábito bíblico gamificado** — missões para ler e estudar todo dia |
 
-Sensação-alvo: **Duolingo no loop · ler e estudar a Palavra de verdade.**
+Sensação-alvo: **o verso no centro · o jogo no pulso (voltar amanhã).**
 
 ---
 

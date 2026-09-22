@@ -1,7 +1,7 @@
 # STWAY — Documentação de produto
 
-**Atualizado:** 20 set/2026  
-**Versão do app:** 1.0.24+24  
+**Atualizado:** 22 set/2026  
+**Versão do app:** 1.0.25+25  
 **Norte completo:** [`ROADMAP.md`](../ROADMAP.md)  
 **Pitch 1 página (nós vs. eles):** [`PITCH_NOS_VS_ELES.md`](PITCH_NOS_VS_ELES.md)  
 **Motor de formação (diretriz):** [`LEARNING_ENGINE.md`](LEARNING_ENGINE.md)  
@@ -32,12 +32,13 @@
 
 ## Em uma frase
 
-STWAY são **missões diárias em português** para criar **hábito de ler e estudar a Bíblia** — em poucos minutos por dia, com currículo, exercícios e Strong quando o versículo pede.
+STWAY é **hábito bíblico gamificado**: missões curtas em português para **ler e estudar a Bíblia todo dia**, com o ritmo de um jogo.
 
 **Frase competitiva:** *“Enquanto outros te fazem jogar a Bíblia, o STWAY te põe em missão nela.”*
 
-Não somos YouVersion (só ler), Hallow (orar), Ascend/Bible Way (jogo com pet/heróis sem estudo), Bibliando (missão sem os 6 gestos), Bíblia Fácil (oração+quiz), nem trivia vazia.  
-**Sensação:** Duolingo no loop · **ler e estudar a Palavra de verdade**.
+Não somos YouVersion (só ler), Hallow (orar), Ascend/Bible Way (jogo com pet/heróis sem estudo), Bibliando (missão sem os 6 gestos), Bíblia Fácil (oração+quiz), nem trivia vazia.
+
+**Hierarquia:** o verso é o centro; o jogo é o pulso (começar, sequência, voltar amanhã). Não é game bíblico — é o hábito de abrir a Bíblia, feito para viciar no bom sentido.
 
 ---
 
@@ -166,7 +167,7 @@ Não há mais missão especial embutida. `gen-03-imagem` e o restante usam o mes
 - **Visual:** tema escuro noturno, accent azul + CTA amarelo, painéis elevados, fundo imersivo / cinemático em Gênesis  
 - **Padrão:** 5 tabs (Hoje · Trilhas · Bíblia · Juntos · Config); mapa de trilha; picker de dificuldade  
 - **Força:** sessão curta com gestos variados no mesmo shell  
-- **Fraqueza vs. mercado:** polish/escala de marca; slogan “missão” já ocupado no BR (Bibliando); HUD de jogo pode obscurecer a sensação de “escola”  
+- **Fraqueza vs. mercado:** polish/escala de marca; slogan “missão” já ocupado no BR (Bibliando); HUD de jogo ainda compete com o verso  
 
 ---
 

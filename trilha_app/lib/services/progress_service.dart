@@ -194,6 +194,12 @@ class ProgressService extends ChangeNotifier {
   /// Modo escolhido na tela de dificuldade — não auto-avançar por cima.
   Map<String, String> pinnedTrailDifficulties = {};
 
+  /// Troca de modo só nesta sessão do app — some ao fechar.
+  Map<String, String> _sessionTrailDifficulties = {};
+
+  /// Passos da trilha em replay de modo já selado (sessão). Não persiste.
+  Map<String, List<String>> _sessionReplayMissionSlugs = {};
+
   /// Modos (dificuldades) em que a trilha já foi concluída por completo.
   Map<String, List<String>> clearedTrailModes = {};
 
@@ -746,6 +752,8 @@ class ProgressService extends ChangeNotifier {
     settings = const AppSettings();
     trailDifficulties = {};
     pinnedTrailDifficulties = {};
+    _sessionTrailDifficulties = {};
+    _sessionReplayMissionSlugs = {};
     clearedTrailModes = {};
     seasonWalkDays = {};
     usedQuestionIds = [];
@@ -1459,10 +1467,51 @@ class ProgressService extends ChangeNotifier {
     notifyListeners();
   }
 
-  String? difficultyForTrail(String trailSlug) => trailDifficulties[trailSlug];
+  /// Modo efetivo: sessão (se houver) ou o modo atual da trilha.
+  String? difficultyForTrail(String trailSlug) {
+    final session = _sessionTrailDifficulties[trailSlug];
+    if (session != null && session.isNotEmpty) return session;
+    final stored = trailDifficulties[trailSlug];
+    if (stored == null && clearedModesFor(trailSlug).isEmpty) return stored;
+    return canonicalDifficultyId(trailSlug);
+  }
+
+  String? storedDifficultyForTrail(String trailSlug) =>
+      trailDifficulties[trailSlug];
+
+  bool hasSessionDifficulty(String trailSlug) =>
+      _sessionTrailDifficulties.containsKey(trailSlug);
+
+  /// Modo atual da trilha: o gravado, ou o próximo se aquele já foi selado.
+  String canonicalDifficultyId(String trailSlug) {
+    return TrailProgress.openDifficultyId(
+          activeDifficultyId:
+              trailDifficulties[trailSlug] ?? TrailDifficulty.semente.id,
+          clearedModes: clearedModesFor(trailSlug),
+        ) ??
+        TrailDifficulty.semente.id;
+  }
 
   bool hasDifficultyForTrail(String trailSlug) =>
       trailDifficulties.containsKey(trailSlug);
+
+  /// Progresso visível na cena: replay de modo selado mostra a trilha limpa.
+  List<String> completedMissionsForTrail({
+    required String trailSlug,
+    required List<String> missionSlugs,
+  }) {
+    if (_sessionReplayMissionSlugs.containsKey(trailSlug)) {
+      return {...completedMissions, ...missionSlugs}.toList();
+    }
+    return completedMissions;
+  }
+
+  bool isSessionReplayMission(String slug) {
+    for (final slugs in _sessionReplayMissionSlugs.values) {
+      if (slugs.contains(slug)) return true;
+    }
+    return false;
+  }
 
   /// Semente sempre liberada. Demais modos exigem ter concluído o anterior.
   bool isDifficultyUnlocked(String trailSlug, TrailDifficulty d) {
@@ -1516,20 +1565,49 @@ class ProgressService extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// Troca de modo só enquanto o app estiver aberto.
+  /// Fecha o app → volta ao [canonicalDifficultyId]. Não zera o progresso gravado.
+  void setSessionTrailDifficulty(
+    String trailSlug,
+    String difficultyId, {
+    List<String> missionSlugs = const [],
+  }) {
+    final d = TrailDifficulty.fromId(difficultyId) ?? TrailDifficulty.semente;
+    if (!isDifficultyUnlocked(trailSlug, d)) return;
+    final canonical = canonicalDifficultyId(trailSlug);
+    if (difficultyId == canonical) {
+      _sessionTrailDifficulties = {..._sessionTrailDifficulties}
+        ..remove(trailSlug);
+      _sessionReplayMissionSlugs = {..._sessionReplayMissionSlugs}
+        ..remove(trailSlug);
+    } else {
+      _sessionTrailDifficulties = {
+        ..._sessionTrailDifficulties,
+        trailSlug: difficultyId,
+      };
+      if (hasClearedMode(trailSlug, difficultyId) && missionSlugs.isNotEmpty) {
+        _sessionReplayMissionSlugs = {
+          ..._sessionReplayMissionSlugs,
+          trailSlug: List<String>.from(missionSlugs),
+        };
+      } else {
+        _sessionReplayMissionSlugs = {..._sessionReplayMissionSlugs}
+          ..remove(trailSlug);
+      }
+    }
+    notifyListeners();
+  }
+
   /// Se o modo gravado já foi selado, avança para o próximo aberto.
   /// Observação concluída → Compreensão, com o progresso do novo modo zerado.
-  /// Não avança se o aluno escolheu esse modo de propósito (replay).
+  /// Respeita troca de sessão (não sobrescreve enquanto o app está aberto).
   Future<bool> advancePastClearedMode(
     String trailSlug, {
     List<String> missionSlugs = const [],
   }) async {
-    final stored = difficultyForTrail(trailSlug) ?? TrailDifficulty.semente.id;
-    if (pinnedTrailDifficulties[trailSlug] == stored) return false;
-    if (missionSlugs.isNotEmpty &&
-        clearedModesFor(trailSlug).contains(stored)) {
-      final done = missionSlugs.where(completedMissions.contains).length;
-      if (done < missionSlugs.length) return false;
-    }
+    if (_sessionTrailDifficulties.containsKey(trailSlug)) return false;
+    final stored =
+        trailDifficulties[trailSlug] ?? TrailDifficulty.semente.id;
     final open = TrailProgress.openDifficultyId(
       activeDifficultyId: stored,
       clearedModes: clearedModesFor(trailSlug),
@@ -1760,8 +1838,8 @@ class ProgressService extends ChangeNotifier {
       final wasGoalMet = missionsToday >= settings.dailyGoal;
 
       if (!isReplay) {
-        if (completedMissions.contains(slug)) {
-          // Já completa: trata como revisão (XP reduzido)
+        if (isSessionReplayMission(slug) || completedMissions.contains(slug)) {
+          // Replay de modo selado (sessão) ou passo já limpo: não grava progresso.
           isReplay = true;
         } else {
           completedMissions = [...completedMissions, slug];

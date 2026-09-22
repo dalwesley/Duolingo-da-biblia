@@ -470,7 +470,6 @@ class _CelebrationScreenState extends State<CelebrationScreen>
       widget.trailSlug,
       next.id,
       missionSlugs: trail?.missionSlugs ?? const [],
-      pin: true,
     );
     if (!mounted) return;
 
@@ -749,7 +748,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                         child: Text(
                                           _hook!.trailJustCompleted
                                               ? 'Seguir no cânon'
-                                              : 'Abrir agora',
+                                              : 'Continuar trilha',
                                           style: AppTypography.cta(
                                             size: 13,
                                             color: AppColors.accent,

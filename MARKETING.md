@@ -1,8 +1,8 @@
 # Marketing — STWAY
 
-**Atualizado:** 20 set/2026
+**Atualizado:** 22 set/2026
 
-Assets visuais Instagram: repositório externo `stway-marketing` (`instagram/semana-1`, `instagram/semana-2`).
+Assets visuais Instagram: repositório externo `stway-marketing` (`instagram/semana-1`, `instagram/semana-2`, `instagram/semana-3`). Semana 3 (22–28 set): palco + gestos + CTA **TESTE** (D7), sem loja.
 
 ---
 

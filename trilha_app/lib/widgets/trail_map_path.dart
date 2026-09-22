@@ -264,7 +264,18 @@ class _MissionSceneCard extends StatelessWidget {
     final card = AnimatedContainer(
       duration: const Duration(milliseconds: 280),
       curve: Curves.easeOutCubic,
-      decoration: StagePlate.decoration(accent: accent, lit: _current),
+      decoration: BoxDecoration(
+        borderRadius: radius,
+        color: AppColors.nightElevated.withValues(
+          alpha: _current ? 0.82 : (unlocked ? 0.55 : 0.4),
+        ),
+        border: Border.all(
+          color: _current
+              ? accent.withValues(alpha: 0.38)
+              : Colors.white.withValues(alpha: unlocked ? 0.08 : 0.05),
+          width: 1,
+        ),
+      ),
       child: ClipRRect(
         borderRadius: radius,
         child: IntrinsicHeight(
@@ -324,19 +335,23 @@ class _MissionSceneCard extends StatelessWidget {
                       Row(
                         children: [
                           Expanded(
-                            child: StageEyebrow(
-                              label: mission.isBoss
+                            child: Text(
+                              mission.isBoss
                                   ? 'Desafio'
                                   : _current
                                   ? 'Próxima lição'
                                   : completed
                                   ? 'Concluído'
                                   : 'Passo',
-                              accent: _current
-                                  ? onSky
-                                  : completed
-                                  ? accent.withValues(alpha: 0.55)
-                                  : a.textMuted(unlocked ? 0.45 : 0.28),
+                              style: AppTypography.body(
+                                size: 11,
+                                weight: FontWeight.w700,
+                                color: _current
+                                    ? onSky.withValues(alpha: 0.8)
+                                    : completed
+                                    ? a.textMuted(0.4)
+                                    : a.textMuted(unlocked ? 0.45 : 0.28),
+                              ),
                             ),
                           ),
                           if (!unlocked) ...[

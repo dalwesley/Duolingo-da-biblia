@@ -60,7 +60,7 @@ class HomePlayerHeader extends StatelessWidget {
                   : a.cardBorder),
           width: AppMetrics.cardBorderWidth,
         ),
-        boxShadow: AppMetrics.cardShadow(),
+        boxShadow: AppMetrics.cardShadow(hardLip: false),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,

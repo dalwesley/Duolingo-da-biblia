@@ -27,7 +27,6 @@ class HeroContinueCard extends StatefulWidget {
   final VoidCallback? onExploreTrails;
   final bool goalMet;
   final bool atRisk;
-  final int lampsReady;
 
   const HeroContinueCard({
     super.key,
@@ -39,7 +38,6 @@ class HeroContinueCard extends StatefulWidget {
     this.onExploreTrails,
     this.goalMet = false,
     this.atRisk = false,
-    this.lampsReady = 5,
   });
 
   @override
@@ -171,6 +169,7 @@ class _HeroContinueCardState extends State<HeroContinueCard>
           : DustCopy.heroRiskLine(
               countdown: countdown,
               hasFreeze: hasFreeze,
+              streak: progress.streak,
             ),
       HeroCardMood.alive => null,
     };
@@ -220,7 +219,7 @@ class _HeroContinueCardState extends State<HeroContinueCard>
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
             border: Border.all(color: style.border, width: style.borderWidth),
-            boxShadow: AppMetrics.cardShadow(elevated: true),
+            boxShadow: AppMetrics.cardShadow(elevated: true, hardLip: false),
           ),
           child: ClipRRect(
             borderRadius: BorderRadius.circular(
@@ -263,7 +262,6 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                             child: Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [
-                                // Pulso sutil no ícone para reforçar vida/energia
                                 AnimatedBuilder(
                                   animation: _pulseController,
                                   builder: (context, child) {
@@ -303,52 +301,6 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                               ],
                             ),
                           ),
-                          if (!resting) ...[
-                          const SizedBox(height: 8),
-                          _Chip(
-                            tone: AppColors.accent,
-                            worn: mood == HeroCardMood.dusty,
-                            child: Row(
-                              mainAxisSize: MainAxisSize.min,
-                              children: [
-                                AnimatedBuilder(
-                                  animation: _pulseController,
-                                  builder: (context, child) {
-                                    final pulseVal =
-                                        1.0 + (_pulseController.value * 0.06);
-                                    final effective = mood == HeroCardMood.alive
-                                        ? pulseVal
-                                        : 1.0;
-                                    return Transform.scale(
-                                      scale: effective,
-                                      alignment: Alignment.center,
-                                      child: const CinematicIcon(
-                                        glyph: CinematicGlyph.lamp,
-                                        size: 14,
-                                        accent: AppColors.accent,
-                                        glowing: false,
-                                        framed: false,
-                                      ),
-                                    );
-                                  },
-                                ),
-                                const SizedBox(width: 5),
-                                Text(
-                                  '${widget.lampsReady} LÂMPADAS',
-                                  style: AppTypography.label(
-                                    size: 9,
-                                    letterSpacing: 0.9,
-                                    color: a.text.withValues(
-                                      alpha: mood == HeroCardMood.dusty
-                                          ? 0.7
-                                          : 0.9,
-                                    ),
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          ],
                         ],
                       ),
                       const SizedBox(height: 24),
@@ -389,21 +341,10 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                             color: style.label.withValues(alpha: 0.92),
                           ),
                         ),
-                      ] else if (resting) ...[
-                        const SizedBox(height: 8),
-                        Text(
-                          tease,
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                          style: AppTypography.verse(
-                            size: 16,
-                            height: 1.35,
-                            fontStyle: FontStyle.italic,
-                            color: a.text.withValues(alpha: 0.88),
-                          ),
-                        ),
-                      ] else if (arrived) ...[
-                        if (yesterday != null) ...[
+                      ],
+                      if (tease.trim().isNotEmpty &&
+                          mood != HeroCardMood.dusty) ...[
+                        if (arrived && yesterday != null) ...[
                           const SizedBox(height: 8),
                           Text(
                             yesterday,
@@ -416,18 +357,19 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                             ),
                           ),
                         ],
-                        const SizedBox(height: 6),
+                        const SizedBox(height: 10),
                         Text(
                           tease,
-                          maxLines: 2,
+                          maxLines: 3,
                           overflow: TextOverflow.ellipsis,
                           style: AppTypography.verse(
-                            size: 16,
-                            height: 1.35,
-                            color: a.text.withValues(alpha: 0.88),
+                            size: 18,
+                            height: 1.4,
+                            color: a.text.withValues(alpha: 0.9),
                           ),
                         ),
-                      ] else if (mission.subtitle.trim().isNotEmpty) ...[
+                      ] else if (mission.subtitle.trim().isNotEmpty &&
+                          mood == HeroCardMood.dusty) ...[
                         const SizedBox(height: 8),
                         Text(
                           mission.subtitle.trim(),
@@ -437,16 +379,6 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                             size: 14,
                             weight: FontWeight.w600,
                             color: a.text.withValues(alpha: 0.72),
-                          ),
-                        ),
-                      ] else if (mission.isBoss) ...[
-                        const SizedBox(height: 10),
-                        Text(
-                          'Boss · menos lâmpadas · mais passos',
-                          style: AppTypography.body(
-                            size: 14,
-                            weight: FontWeight.w700,
-                            color: AppColors.sand.withValues(alpha: 0.9),
                           ),
                         ),
                       ],
@@ -468,9 +400,9 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                           child: Text(
                             '+${mission.stepsReward} passos · extra de hoje',
                             style: AppTypography.body(
-                              size: 13,
-                              weight: FontWeight.w800,
-                              color: rewardColor,
+                              size: 12,
+                              weight: FontWeight.w600,
+                              color: rewardColor.withValues(alpha: 0.7),
                             ),
                           ),
                         ),
@@ -483,14 +415,12 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                         Center(
                           child: Text(
                             mood == HeroCardMood.dusty
-                                ? '+${mission.stepsReward} passos · protege a sequência'
-                                : walkedToday
-                                ? '+${mission.stepsReward} passos · fecha a meta'
-                                : '+${mission.stepsReward} passos · ~3 min',
+                                ? 'protege a sequência · ~3 min'
+                                : '~3 min',
                             style: AppTypography.body(
-                              size: 13,
-                              weight: FontWeight.w800,
-                              color: rewardColor,
+                              size: 12,
+                              weight: FontWeight.w600,
+                              color: rewardColor.withValues(alpha: 0.7),
                             ),
                           ),
                         ),

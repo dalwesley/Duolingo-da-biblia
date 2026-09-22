@@ -220,6 +220,34 @@ void main() {
 
     expect(find.text('Modo Observação'), findsOneWidget);
     expect(find.text('Observação · 7 de 23 passos'), findsOneWidget);
-    expect(find.text('AGORA'), findsOneWidget);
+    expect(find.text('você está aqui'), findsOneWidget);
+    expect(find.text('AGORA'), findsNothing);
+    expect(find.text('CONTINUAR →'), findsNothing);
+  });
+
+  testWidgets('labeled strip reports the tapped mode', (tester) async {
+    TrailDifficulty? tapped;
+    await tester.pumpWidget(
+      MaterialApp(
+        theme: AppTheme.dark,
+        home: Scaffold(
+          body: ModeEmblemStrip(
+            clearedModeIds: const ['semente'],
+            activeDifficultyId: 'caminhada',
+            labeled: true,
+            emblemSize: 32,
+            onSelect: (d) => tapped = d,
+          ),
+        ),
+      ),
+    );
+
+    await tester.tap(find.byKey(const ValueKey('mode-emblem-semente')));
+    await tester.pump();
+    expect(tapped, TrailDifficulty.semente);
+
+    await tester.tap(find.byKey(const ValueKey('mode-emblem-caminhada')));
+    await tester.pump();
+    expect(tapped, TrailDifficulty.caminhada);
   });
 }

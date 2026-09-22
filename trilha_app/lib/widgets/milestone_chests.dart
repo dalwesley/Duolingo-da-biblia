@@ -8,21 +8,18 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
 import 'relic_panel.dart';
-import 'stage_plate.dart';
 import 'ui_primitives.dart';
 
 class MilestoneChestsCard extends StatelessWidget {
   final String trailSlug;
   final int done;
   final int total;
-  final Color? accent;
 
   const MilestoneChestsCard({
     super.key,
     required this.trailSlug,
     required this.done,
     required this.total,
-    this.accent,
   });
 
   @override
@@ -31,43 +28,40 @@ class MilestoneChestsCard extends StatelessWidget {
     final a = Appearance.of(context);
     final pct = total > 0 ? (done / total * 100) : 0.0;
 
-    final mark = accent ?? AppColors.accent;
     return Padding(
-      padding: const EdgeInsets.only(bottom: AppSpace.section),
-      child: StagePlate(
-        accent: mark,
-        padding: const EdgeInsets.fromLTRB(18, 18, 18, 20),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            StageEyebrow(label: 'Baús de progresso', accent: mark),
-            const SizedBox(height: AppSpace.xs),
-            Text(
-              'Recompensas ao avançar na trilha',
-              style: AppTypography.body(size: 11, color: a.textMuted(0.55)),
+      padding: const EdgeInsets.only(bottom: AppSpace.sm),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            'Recompensas',
+            style: AppTypography.body(
+              size: 12,
+              weight: FontWeight.w700,
+              color: a.textMuted(0.5),
             ),
-            const SizedBox(height: 14),
-            Row(
-              children: TrailMilestone.all.map((m) {
-                final unlocked = pct >= m.percent;
-                final claimed = progress.isChestClaimed(m.chestId(trailSlug));
-                return Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 4),
-                    child: _ChestTile(
-                      milestone: m,
-                      unlocked: unlocked,
-                      claimed: claimed,
-                      onTap: unlocked && !claimed
-                          ? () => _openChest(context, progress, m)
-                          : null,
-                    ),
+          ),
+          const SizedBox(height: 12),
+          Row(
+            children: TrailMilestone.all.map((m) {
+              final unlocked = pct >= m.percent;
+              final claimed = progress.isChestClaimed(m.chestId(trailSlug));
+              return Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 4),
+                  child: _ChestTile(
+                    milestone: m,
+                    unlocked: unlocked,
+                    claimed: claimed,
+                    onTap: unlocked && !claimed
+                        ? () => _openChest(context, progress, m)
+                        : null,
                   ),
-                );
-              }).toList(),
-            ),
-          ],
-        ),
+                ),
+              );
+            }).toList(),
+          ),
+        ],
       ),
     );
   }

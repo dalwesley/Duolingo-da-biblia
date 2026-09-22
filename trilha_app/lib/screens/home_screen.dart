@@ -386,7 +386,7 @@ class _HomeScreenState extends State<HomeScreen>
                 ),
               ),
             ],
-            const SizedBox(height: AppSpace.md),
+            const SizedBox(height: AppSpace.sm),
             // Resultado da semana da caravana — coletar na Home (não na aba Juntos).
             Builder(
               builder: (context) {
@@ -397,7 +397,7 @@ class _HomeScreenState extends State<HomeScreen>
                 return Column(
                   children: [
                     _reveal(0, const LeagueOutcomeCard()),
-                    const SizedBox(height: AppSpace.section),
+                    const SizedBox(height: AppSpace.sm),
                   ],
                 );
               },
@@ -418,16 +418,12 @@ class _HomeScreenState extends State<HomeScreen>
                     onExploreTrails: widget.onOpenTrilhas,
                     goalMet: goalMet,
                     atRisk: progress.isStreakAtRisk,
-                    lampsReady: ProgressService.lampsForMission(
-                      isBoss: current?.isBoss ?? false,
-                    ),
                   ),
-                  const SizedBox(height: AppSpace.md),
                   _WalkHomeCard(heroMissionSlug: current?.slug),
                 ],
               ),
             ),
-            const SizedBox(height: AppSpace.section),
+            const SizedBox(height: AppSpace.sm),
             if (goalMet) ...[
               _reveal(2, SeasonChallengeBanner(catalog: trails)),
             ],
@@ -472,10 +468,11 @@ class _HomeScreenState extends State<HomeScreen>
               _reveal(3, const DailyChestCard()),
               const SizedBox(height: AppSpace.section),
             ],
-            _reveal(
-              4,
-              HomeWordCard(mission: current, onOpen: (ref) => _openBible(ref)),
-            ),
+            if (current == null)
+              _reveal(
+                4,
+                HomeWordCard(mission: current, onOpen: (ref) => _openBible(ref)),
+              ),
             if (progress.mistakeQuestionIds.isNotEmpty) ...[
               const SizedBox(height: AppSpace.section),
               _reveal(4, const _RevisitPracticeLink()),
@@ -706,7 +703,7 @@ class _WalkHomeCard extends StatelessWidget {
     // A missão do hero já é o dia da Caminhada — não duplica o CTA.
     if (sameAsHero) {
       return Padding(
-        padding: const EdgeInsets.only(top: 2),
+        padding: const EdgeInsets.only(top: 4),
         child: TextButton(
           onPressed: () => openSeasonWalk(context),
           child: Text(

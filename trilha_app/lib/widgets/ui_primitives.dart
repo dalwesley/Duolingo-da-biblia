@@ -41,19 +41,22 @@ class AppMetrics {
   static Color accentFill({double alpha = 0.18, Color? color}) =>
       (color ?? AppColors.accent).withValues(alpha: alpha);
 
-  /// Sombra de painel de jogo — lip duro embaixo + soft ambient.
+  /// Sombra de painel — lip duro embaixo + soft ambient.
+  /// [hardLip] false: só o halo, sem a faixa preta que parece outro card.
   static List<BoxShadow> cardShadow({
     bool elevated = false,
     bool accent = false,
     Color? tint,
+    bool hardLip = true,
   }) {
     final lip = elevated ? 5.0 : 4.0;
     return [
-      BoxShadow(
-        color: Colors.black.withValues(alpha: elevated ? 0.55 : 0.42),
-        offset: Offset(0, lip),
-        blurRadius: 0,
-      ),
+      if (hardLip)
+        BoxShadow(
+          color: Colors.black.withValues(alpha: elevated ? 0.55 : 0.42),
+          offset: Offset(0, lip),
+          blurRadius: 0,
+        ),
       BoxShadow(
         color: Colors.black.withValues(alpha: elevated ? 0.28 : 0.18),
         blurRadius: elevated ? 18 : 12,

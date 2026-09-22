@@ -24,6 +24,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/difficulty_visuals.dart';
 import '../utils/layout_utils.dart';
+import '../utils/trail_progress.dart';
 import '../widgets/app_update_sheet.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/hero_card_atmosphere.dart';
@@ -453,20 +454,17 @@ class _SettingsScreenState extends State<SettingsScreen>
       return;
     }
     HapticFeedback.selectionClick();
-    final prev = progress.difficultyForTrail(_genesisTrailSlug);
-    progress.setTrailDifficulty(
+    progress.setSessionTrailDifficulty(
       _genesisTrailSlug,
       meta.difficulty.id,
       missionSlugs: _genesisMissionSlugs,
-      pin: true,
     );
-    if (prev != null &&
-        prev != meta.difficulty.id &&
-        _genesisMissionSlugs.isNotEmpty) {
+    final canonical = progress.canonicalDifficultyId(_genesisTrailSlug);
+    if (meta.difficulty.id != canonical) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(
-            'Progresso da trilha reiniciado neste modo.',
+            'Modo ${meta.label} só nesta sessão. Ao fechar o app volta para ${TrailProgress.modeLabel(canonical)}.',
             style: AppTypography.body(color: AppColors.textOnDark),
           ),
           backgroundColor: AppColors.nightElevated,
