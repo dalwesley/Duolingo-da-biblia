@@ -9,6 +9,20 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
+## [1.0.26] — 2026-09-22
+
+### Added
+- Folha de retrato: foto, letra ou peregrino ilustrado — toque no avatar do perfil
+- Card de identidade no perfil: retrato editável, posição na caravana e precisão
+- Ajustes em capítulos — O ritmo, O olhar, O céu, Lembretes, Privacidade
+- Palco da missão na Home (cerca de metade da tela): verso, atmosfera e CTA
+
+### Changed
+- Ajustes: subtítulo “Como você caminha”; céu manhã/tarde/noite com painéis distintos; ritmo em trilha (Leve / Firme / Intenso)
+- Perfil da caravana: trilha em foco é a da última cena, senão a mais avançada
+- Jornada: estações editoriais, chips mais leves e subtítulo do reino
+- Header da Home mais compacto para o palco respirar
+
 ## [1.0.25] — 2026-09-21
 
 ### Added

@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:package_info_plus/package_info_plus.dart';
@@ -29,10 +31,10 @@ import '../widgets/app_update_sheet.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/hero_card_atmosphere.dart';
 import '../widgets/immersive_background.dart';
+import '../widgets/mode_emblem.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 import '../widgets/user_avatar.dart';
-import '../widgets/portrait_face.dart';
 import 'login_screen.dart';
 import 'paywall_screen.dart';
 import 'onboarding_screen.dart';
@@ -41,41 +43,45 @@ const _genesisTrailSlug = 'genesis-1-11';
 
 /// Abre ajustes como página empurrada (engrenagem no perfil).
 void openSettings(BuildContext context) {
-  final progress = context.read<ProgressService>();
-  final mode = progress.settings.appearanceMode;
-  final appearance = AppearanceStyle.resolve(mode);
   Navigator.of(context).push(
     MaterialPageRoute(
-      builder: (ctx) => Appearance(
-        mode: mode,
-        style: appearance,
-        child: Scaffold(
-          backgroundColor: Colors.transparent,
-          body: ImmersiveBackground(
-            appearance: appearance,
-            child: SettingsScreen(
-              topBar: TopBar(
-                inline: true,
-                immersive: true,
-                dark: appearance.onDark,
-                title: 'Ajustes',
-                subtitle: 'Conta · Preferências',
-                leadingGlyph: CinematicGlyph.tune,
-                chromeAccent: AppColors.slate,
-                onBack: () => Navigator.pop(ctx),
+      builder: (ctx) {
+        final progress = ctx.watch<ProgressService>();
+        final mode = progress.settings.appearanceMode;
+        final appearance = AppearanceStyle.resolve(mode);
+        return Appearance(
+          mode: mode,
+          style: appearance,
+          child: Scaffold(
+            backgroundColor: Colors.transparent,
+            body: ImmersiveBackground(
+              appearance: appearance,
+              child: SettingsScreen(
+                onOpenProfile: () => Navigator.pop(ctx),
+                topBar: TopBar(
+                  inline: true,
+                  immersive: true,
+                  dark: appearance.onDark,
+                  title: 'Ajustes',
+                  subtitle: 'Como você caminha',
+                  leadingGlyph: CinematicGlyph.tune,
+                  chromeAccent: AppColors.slate,
+                  onBack: () => Navigator.pop(ctx),
+                ),
               ),
             ),
           ),
-        ),
-      ),
+        );
+      },
     ),
   );
 }
 
 class SettingsScreen extends StatefulWidget {
   final Widget? topBar;
+  final VoidCallback? onOpenProfile;
 
-  const SettingsScreen({super.key, this.topBar});
+  const SettingsScreen({super.key, this.topBar, this.onOpenProfile});
 
   @override
   State<SettingsScreen> createState() => _SettingsScreenState();
@@ -230,7 +236,7 @@ class _SettingsScreenState extends State<SettingsScreen>
             a,
             title: 'O ritmo',
             glyph: CinematicGlyph.target,
-            subtitle: 'Quantas missões por dia cabem no seu dia.',
+            subtitle: 'Quantas missões cabem no seu dia.',
             children: [_RhythmPath(progress: progress)],
           ),
         ),
@@ -407,7 +413,7 @@ class _SettingsScreenState extends State<SettingsScreen>
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         for (var i = 0; i < items.length; i++) ...[
-          if (i > 0) const SizedBox(height: 8),
+          if (i > 0) const SizedBox(height: 10),
           Builder(
             builder: (context) {
               final meta = items[i];
@@ -475,34 +481,14 @@ class _SettingsScreenState extends State<SettingsScreen>
 
   Widget _skyPicker(ProgressService progress) {
     final selected = progress.settings.appearanceMode;
-    final modes = AppearanceMode.values;
-    return Column(
-      children: [
-        for (var row = 0; row < 2; row++) ...[
-          if (row > 0) const SizedBox(height: 8),
-          Row(
-            children: [
-              for (var col = 0; col < 2; col++) ...[
-                if (col > 0) const SizedBox(width: 8),
-                Expanded(
-                  child: _SkyStation(
-                    mode: modes[row * 2 + col],
-                    selected: selected == modes[row * 2 + col],
-                    onTap: () {
-                      HapticFeedback.selectionClick();
-                      progress.updateSettings(
-                        progress.settings.copyWith(
-                          appearanceMode: modes[row * 2 + col],
-                        ),
-                      );
-                    },
-                  ),
-                ),
-              ],
-            ],
-          ),
-        ],
-      ],
+    return _SkySwitch(
+      selected: selected,
+      onChanged: (mode) {
+        if (mode == selected) return;
+        progress.updateSettings(
+          progress.settings.copyWith(appearanceMode: mode),
+        );
+      },
     );
   }
 
@@ -510,30 +496,15 @@ class _SettingsScreenState extends State<SettingsScreen>
     final backend = context.watch<BackendService>();
     return GlassCard(
       elevated: true,
+      padding: const EdgeInsets.fromLTRB(
+        AppSpace.lg,
+        AppSpace.lg,
+        AppSpace.lg,
+        AppSpace.md,
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          CardHeader(
-            label: 'Você',
-            glyph: CinematicGlyph.humanity,
-            accent: a.sectionLabel,
-            trailing: backend.isSignedIn
-                ? GestureDetector(
-                    onTap: backend.isGoogleBusy
-                        ? null
-                        : () => _signOutGoogle(backend),
-                    child: Text(
-                      'Sair',
-                      style: AppTypography.body(
-                        size: 13,
-                        weight: FontWeight.w800,
-                        color: a.textMuted(0.72),
-                      ),
-                    ),
-                  )
-                : null,
-          ),
-          const SizedBox(height: 16),
           _ProfileHeader(
             a: a,
             nameController: _nameController,
@@ -541,118 +512,126 @@ class _SettingsScreenState extends State<SettingsScreen>
             photoUrl: backend.userPhotoUrl,
             seed: backend.uid,
             portraitStyle: progress.settings.portraitStyle,
-            hasPhoto: PortraitFace.isUsablePhotoUrl(backend.userPhotoUrl),
-            onPortraitStyle: (style) {
-              HapticFeedback.selectionClick();
-              progress.updateSettings(
-                progress.settings.copyWith(portraitStyle: style),
-              );
-            },
+            signedIn: backend.isSignedIn,
+            email: backend.isSignedIn
+                ? (backend.userEmail ?? backend.userDisplayName)
+                : null,
+            lastSync: backend.isActive ? backend.lastCloudSaveAt : null,
+            onSignOut: backend.isSignedIn && !backend.isGoogleBusy
+                ? () => _signOutGoogle(backend)
+                : null,
+            onOpenProfile: widget.onOpenProfile,
             onSaveName: () => _saveName(progress),
           ),
-          _SettingsDivider(a),
-          _sessionBlock(a, backend),
         ],
       ),
-    );
-  }
-
-  Widget _sessionBlock(AppearanceStyle a, BackendService backend) {
-    final signedIn = backend.isSignedIn;
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        Text(
-          signedIn
-              ? (backend.userEmail ??
-                    backend.userDisplayName ??
-                    'Progresso na nuvem')
-              : 'Entre de novo para sincronizar o caminho.',
-          maxLines: 1,
-          overflow: TextOverflow.ellipsis,
-          style: AppTypography.body(size: 12, color: a.textMuted(0.68)),
-        ),
-        if (backend.isActive && backend.lastCloudSaveAt != null) ...[
-          const SizedBox(height: 8),
-          Text(
-            'Última sync · ${_shortDate(backend.lastCloudSaveAt!)}',
-            style: AppTypography.body(size: 11, color: a.textMuted(0.5)),
-          ),
-        ],
-      ],
     );
   }
 
   Widget _membershipCard(AppearanceStyle a) {
     final plus = context.watch<SubscriptionService>().isPeregrinoPlus;
     return GlassCard(
-      elevated: plus,
-      accent: plus,
+      elevated: true,
+      accent: true,
+      padding: EdgeInsets.zero,
       onTap: () => Navigator.push(
         context,
         MaterialPageRoute<void>(builder: (_) => const PaywallScreen()),
       ),
-      child: Stack(
-        children: [
-          if (plus)
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(AppMetrics.cardRadius - 1.5),
+        child: Stack(
+          children: [
             const Positioned.fill(
               child: IgnorePointer(
                 child: Opacity(
-                  opacity: 0.22,
+                  opacity: 0.16,
                   child: HeroCardAtmosphere(mood: HeroCardMood.alive),
                 ),
               ),
             ),
-          Row(
-            children: [
-              CinematicIcon(
-                glyph: CinematicGlyph.crown,
-                size: 44,
-                accent: AppColors.accent,
-                glowing: plus,
-              ),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Peregrino+',
-                      style: AppTypography.title(size: 16, color: a.text),
-                    ),
-                    const SizedBox(height: 2),
-                    Text(
-                      plus
-                          ? 'Assinatura ativa · mais espaço na companhia'
-                          : 'Mais espaço para companhia no caminho',
-                      style: AppTypography.body(
-                        size: 12,
-                        height: 1.3,
-                        color: a.textMuted(0.65),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-              const SizedBox(width: 8),
-              if (plus)
-                const SoftBadge(
-                  text: 'Ativo',
-                  glyph: CinematicGlyph.check,
-                  accent: AppColors.accent,
-                )
-              else
-                Text(
-                  'Ver',
-                  style: AppTypography.body(
-                    size: 13,
-                    weight: FontWeight.w800,
-                    color: AppColors.accent,
+            Positioned.fill(
+              child: DecoratedBox(
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.centerLeft,
+                    end: Alignment.centerRight,
+                    colors: [
+                      AppColors.accent.withValues(alpha: plus ? 0.18 : 0.10),
+                      AppColors.accent.withValues(alpha: 0.02),
+                      Colors.transparent,
+                    ],
+                    stops: const [0, 0.42, 1],
                   ),
                 ),
-            ],
-          ),
-        ],
+              ),
+            ),
+            const Positioned(
+              left: 0,
+              top: 0,
+              bottom: 0,
+              width: 5,
+              child: ColoredBox(color: AppColors.accent),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(22, 20, 16, 20),
+              child: Row(
+                children: [
+                  CinematicIcon(
+                    glyph: CinematicGlyph.crown,
+                    size: 52,
+                    accent: AppColors.accent,
+                    glowing: plus,
+                  ),
+                  const SizedBox(width: 14),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          'PEREGRINO+',
+                          style: AppTypography.label(
+                            size: 11,
+                            letterSpacing: 1.8,
+                            color: AppColors.accent,
+                          ),
+                        ),
+                        const SizedBox(height: 4),
+                        Text(
+                          plus
+                              ? 'Assinatura ativa no caminho'
+                              : 'Mais espaço para a companhia',
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: AppTypography.title(
+                            size: 16,
+                            height: 1.15,
+                            color: a.text,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  if (plus)
+                    Text(
+                      'ATIVO',
+                      style: AppTypography.label(
+                        size: 10,
+                        letterSpacing: 1.2,
+                        color: AppColors.accent,
+                      ),
+                    )
+                  else
+                    ListChevron(
+                      color: AppColors.accent.withValues(alpha: 0.9),
+                    ),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -754,14 +733,15 @@ class _SettingsScreenState extends State<SettingsScreen>
   }) {
     final tone = accent ?? AppColors.accent;
     return Padding(
-      padding: const EdgeInsets.symmetric(vertical: 6),
+      padding: const EdgeInsets.symmetric(vertical: 4),
       child: Row(
         children: [
           CinematicIcon(
             glyph: glyph,
-            size: 40,
-            accent: value ? tone : a.textMuted(0.45),
+            size: 32,
+            accent: value ? tone : a.textMuted(0.42),
             glowing: false,
+            framed: false,
           ),
           const SizedBox(width: 12),
           Expanded(
@@ -775,7 +755,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                 const SizedBox(height: 2),
                 Text(
                   desc,
-                  style: AppTypography.body(size: 12, color: a.textMuted(0.62)),
+                  style: AppTypography.body(size: 12, color: a.textMuted(0.58)),
                 ),
               ],
             ),
@@ -822,28 +802,36 @@ class _SettingsScreenState extends State<SettingsScreen>
     String? subtitle,
     Color? accent,
   }) {
+    final mark = accent ?? a.sectionLabel;
     return GlassCard(
-      padding: AppMetrics.cardPadding,
+      padding: const EdgeInsets.fromLTRB(
+        AppSpace.lg,
+        AppSpace.lg,
+        AppSpace.lg,
+        AppSpace.lg,
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          CardHeader(
-            label: title,
-            glyph: glyph,
-            accent: accent ?? a.sectionLabel,
-          ),
+          CardHeader(label: title, glyph: glyph, accent: mark),
           if (subtitle != null) ...[
-            const SizedBox(height: 6),
+            const SizedBox(height: 8),
             Text(
               subtitle,
               style: AppTypography.body(
                 size: 13,
-                height: 1.35,
+                height: 1.4,
                 color: a.textMuted(0.62),
               ),
             ),
           ],
-          const SizedBox(height: 14),
+          const SizedBox(height: 12),
+          Divider(
+            height: 1,
+            thickness: 1,
+            color: a.cardBorder.withValues(alpha: 0.7),
+          ),
+          const SizedBox(height: 16),
           ...children,
         ],
       ),
@@ -1120,8 +1108,11 @@ class _ProfileHeader extends StatelessWidget {
   final String? photoUrl;
   final String? seed;
   final PortraitStyle portraitStyle;
-  final bool hasPhoto;
-  final ValueChanged<PortraitStyle> onPortraitStyle;
+  final bool signedIn;
+  final String? email;
+  final DateTime? lastSync;
+  final VoidCallback? onSignOut;
+  final VoidCallback? onOpenProfile;
   final VoidCallback onSaveName;
 
   const _ProfileHeader({
@@ -1130,118 +1121,171 @@ class _ProfileHeader extends StatelessWidget {
     required this.nameDirty,
     required this.onSaveName,
     required this.portraitStyle,
-    required this.hasPhoto,
-    required this.onPortraitStyle,
+    required this.signedIn,
+    this.email,
+    this.lastSync,
+    this.onSignOut,
+    this.onOpenProfile,
     this.photoUrl,
     this.seed,
   });
 
+  String _whisperDate(DateTime dt) {
+    final local = dt.toLocal();
+    final d = local.day.toString().padLeft(2, '0');
+    final m = local.month.toString().padLeft(2, '0');
+    final h = local.hour.toString().padLeft(2, '0');
+    final min = local.minute.toString().padLeft(2, '0');
+    return '$d/$m · $h:$min';
+  }
+
   @override
   Widget build(BuildContext context) {
     final name = nameController.text;
+    final caption = signedIn
+        ? (email?.trim().isNotEmpty == true
+              ? email!
+              : 'Progresso na nuvem')
+        : 'Entre de novo para sincronizar o caminho.';
+    final syncLine = lastSync == null
+        ? null
+        : 'Nuvem · ${_whisperDate(lastSync!)}';
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Center(
-          child: UserAvatar(
-            name: name,
-            photoUrl: photoUrl,
-            seed: seed,
-            style: portraitStyle,
-            radius: 40,
-            borderColor: AppColors.accent.withValues(alpha: 0.7),
-          ),
-        ),
-        const SizedBox(height: 16),
-        Text(
-          'Como te chamamos',
-          style: AppTypography.label(
-            size: 10,
-            letterSpacing: 0.8,
-            color: a.textMuted(0.55),
-          ),
-        ),
-        const SizedBox(height: 8),
-        Container(
-          padding: const EdgeInsets.fromLTRB(14, 4, 8, 4),
-          decoration: BoxDecoration(
-            color: a.cardFillSoft,
-            borderRadius: BorderRadius.circular(AppRadii.md),
-            border: Border.all(color: a.cardBorder),
-          ),
-          child: Row(
-            children: [
-              Expanded(
-                child: TextField(
-                  controller: nameController,
-                  maxLength: 24,
-                  textInputAction: TextInputAction.done,
-                  onSubmitted: (_) => onSaveName(),
-                  cursorColor: AppColors.accent,
-                  style: AppTypography.title(size: 18, color: a.text),
-                  decoration: InputDecoration(
-                    counterText: '',
-                    hintText: 'Seu nome no caminho',
-                    hintStyle: AppTypography.title(
-                      size: 18,
-                      color: a.textMuted(0.35),
-                    ),
-                    isDense: true,
-                    contentPadding: const EdgeInsets.symmetric(vertical: 10),
-                    border: InputBorder.none,
-                    enabledBorder: InputBorder.none,
-                    focusedBorder: InputBorder.none,
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            UserAvatar(
+              name: name,
+              photoUrl: photoUrl,
+              seed: seed,
+              style: portraitStyle,
+              radius: 34,
+              borderColor: AppColors.accent.withValues(alpha: 0.82),
+              onTap: onOpenProfile,
+            ),
+            const SizedBox(width: 14),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          'VOCÊ',
+                          style: AppTypography.label(
+                            size: 10,
+                            letterSpacing: 1.4,
+                            color: a.sectionLabel,
+                          ),
+                        ),
+                      ),
+                      if (onSignOut != null)
+                        GestureDetector(
+                          onTap: onSignOut,
+                          child: Text(
+                            'Sair',
+                            style: AppTypography.body(
+                              size: 13,
+                              weight: FontWeight.w800,
+                              color: a.textMuted(0.62),
+                            ),
+                          ),
+                        ),
+                    ],
                   ),
-                ),
-              ),
-              if (nameDirty)
-                GestureDetector(
-                  onTap: onSaveName,
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 8,
-                      vertical: 8,
+                  const SizedBox(height: 6),
+                  TextField(
+                    controller: nameController,
+                    maxLength: 24,
+                    textInputAction: TextInputAction.done,
+                    onSubmitted: (_) => onSaveName(),
+                    cursorColor: AppColors.accent,
+                    style: AppTypography.display(
+                      size: 22,
+                      weight: FontWeight.w800,
+                      color: a.text,
+                      height: 1.1,
                     ),
-                    child: Text(
-                      'Salvar',
-                      style: AppTypography.body(
-                        size: 13,
+                    decoration: InputDecoration(
+                      counterText: '',
+                      hintText: 'Seu nome no caminho',
+                      hintStyle: AppTypography.display(
+                        size: 22,
                         weight: FontWeight.w800,
-                        color: AppColors.accent,
+                        color: a.textMuted(0.32),
+                        height: 1.1,
+                      ),
+                      isDense: true,
+                      filled: false,
+                      contentPadding: const EdgeInsets.symmetric(vertical: 4),
+                      border: InputBorder.none,
+                      enabledBorder: InputBorder.none,
+                      focusedBorder: InputBorder.none,
+                    ),
+                  ),
+                  if (nameDirty)
+                    Align(
+                      alignment: Alignment.centerLeft,
+                      child: GestureDetector(
+                        onTap: onSaveName,
+                        child: Padding(
+                          padding: const EdgeInsets.only(top: 4, bottom: 2),
+                          child: Text(
+                            'Salvar nome',
+                            style: AppTypography.body(
+                              size: 13,
+                              weight: FontWeight.w800,
+                              color: AppColors.accent,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  const SizedBox(height: 4),
+                  Text(
+                    caption,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: AppTypography.body(
+                      size: 12,
+                      color: a.textMuted(0.58),
+                    ),
+                  ),
+                  if (syncLine != null) ...[
+                    const SizedBox(height: 2),
+                    Text(
+                      syncLine,
+                      style: AppTypography.body(
+                        size: 11,
+                        color: a.textMuted(0.42),
+                      ),
+                    ),
+                  ],
+                  const SizedBox(height: 8),
+                  GestureDetector(
+                    onTap: onOpenProfile,
+                    child: Text(
+                      onOpenProfile == null
+                          ? 'Retrato · ${portraitStyle.label}'
+                          : 'Retrato · ${portraitStyle.label} · no perfil',
+                      style: AppTypography.body(
+                        size: 12,
+                        weight: FontWeight.w700,
+                        color: onOpenProfile == null
+                            ? a.textMuted(0.5)
+                            : AppColors.accent.withValues(alpha: 0.9),
                       ),
                     ),
                   ),
-                ),
-            ],
-          ),
-        ),
-        const SizedBox(height: 16),
-        Text(
-          'Retrato',
-          style: AppTypography.label(
-            size: 10,
-            letterSpacing: 0.8,
-            color: a.textMuted(0.55),
-          ),
-        ),
-        const SizedBox(height: 8),
-        _SegmentTrack(
-          items: [
-            for (final style in PortraitStyle.values)
-              (
-                label: style.label,
-                selected: portraitStyle == style,
-                onTap: () => onPortraitStyle(style),
+                ],
               ),
+            ),
           ],
         ),
-        if (portraitStyle == PortraitStyle.photo && !hasPhoto) ...[
-          const SizedBox(height: 10),
-          Text(
-            'Esta conta não tem retrato — o avatar entra no lugar da foto.',
-            style: AppTypography.body(size: 12, color: a.textMuted(0.55)),
-          ),
-        ],
       ],
     );
   }
@@ -1314,39 +1358,106 @@ class _RhythmPath extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final goal = progress.settings.dailyGoal;
+    final selectedIndex = _options.indexWhere((o) => o.steps == goal);
+
+    final litIndex = selectedIndex < 0 ? 0 : selectedIndex;
+
     return Column(
       children: [
-        for (var i = 0; i < _options.length; i++) ...[
-          if (i > 0) const SizedBox(height: 8),
-          _RhythmStation(
-            steps: _options[i].steps,
-            pace: _options[i].pace,
-            time: _options[i].time,
-            selected: goal == _options[i].steps,
-            onTap: () {
-              HapticFeedback.selectionClick();
-              progress.updateSettings(
-                progress.settings.copyWith(dailyGoal: _options[i].steps),
+        SizedBox(
+          height: 44,
+          child: LayoutBuilder(
+            builder: (context, constraints) {
+              final w = constraints.maxWidth;
+              final start = w / 6;
+              final span = w * 2 / 3;
+              return Stack(
+                alignment: Alignment.center,
+                children: [
+                  Positioned(
+                    left: start,
+                    width: span,
+                    child: Container(
+                      height: 2,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(99),
+                        color: AppColors.accent.withValues(alpha: 0.22),
+                      ),
+                    ),
+                  ),
+                  Positioned(
+                    left: start,
+                    width: span * (litIndex / (_options.length - 1)),
+                    child: Container(
+                      height: 2,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(99),
+                        color: AppColors.accent.withValues(alpha: 0.9),
+                      ),
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      for (final option in _options)
+                        Expanded(
+                          child: Center(
+                            child: _RhythmNode(
+                              steps: option.steps,
+                              selected: goal == option.steps,
+                              onTap: () {
+                                HapticFeedback.selectionClick();
+                                progress.updateSettings(
+                                  progress.settings.copyWith(
+                                    dailyGoal: option.steps,
+                                  ),
+                                );
+                              },
+                            ),
+                          ),
+                        ),
+                    ],
+                  ),
+                ],
               );
             },
           ),
-        ],
+        ),
+        const SizedBox(height: 12),
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            for (final option in _options)
+              Expanded(
+                child: GestureDetector(
+                  onTap: () {
+                    HapticFeedback.selectionClick();
+                    progress.updateSettings(
+                      progress.settings.copyWith(dailyGoal: option.steps),
+                    );
+                  },
+                  behavior: HitTestBehavior.opaque,
+                  child: _RhythmCaption(
+                    steps: option.steps,
+                    pace: option.pace,
+                    time: option.time,
+                    selected: goal == option.steps,
+                  ),
+                ),
+              ),
+          ],
+        ),
       ],
     );
   }
 }
 
-class _RhythmStation extends StatelessWidget {
+class _RhythmNode extends StatelessWidget {
   final int steps;
-  final String pace;
-  final String time;
   final bool selected;
   final VoidCallback onTap;
 
-  const _RhythmStation({
+  const _RhythmNode({
     required this.steps,
-    required this.pace,
-    required this.time,
     required this.selected,
     required this.onTap,
   });
@@ -1354,79 +1465,97 @@ class _RhythmStation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final label = steps == 1 ? '1 passo' : '$steps passos';
-
     return GestureDetector(
       onTap: onTap,
       child: AnimatedContainer(
-        duration: const Duration(milliseconds: 220),
+        duration: const Duration(milliseconds: 240),
         curve: Curves.easeOutCubic,
-        padding: const EdgeInsets.fromLTRB(12, 12, 12, 12),
+        width: selected ? 40 : 32,
+        height: selected ? 40 : 32,
+        alignment: Alignment.center,
         decoration: BoxDecoration(
-          color: selected ? AppMetrics.accentFill(alpha: 0.22) : a.cardFillSoft,
-          borderRadius: BorderRadius.circular(AppRadii.md),
+          shape: BoxShape.circle,
+          color: selected ? AppColors.accent : a.cardFill,
           border: Border.all(
             color: selected
-                ? AppMetrics.accentBorder(alpha: 0.85)
-                : a.cardBorder,
-            width: selected ? 1.75 : 1.25,
+                ? AppColors.accent
+                : AppColors.accent.withValues(alpha: 0.45),
+            width: selected ? 2 : 1.4,
+          ),
+          boxShadow: selected
+              ? [
+                  BoxShadow(
+                    color: AppColors.accent.withValues(alpha: 0.28),
+                    blurRadius: 12,
+                    offset: const Offset(0, 2),
+                  ),
+                ]
+              : null,
+        ),
+        child: Text(
+          '$steps',
+          style: AppTypography.title(
+            size: selected ? 18 : 15,
+            weight: FontWeight.w900,
+            color: selected ? AppColors.inkOnAccent : a.text,
           ),
         ),
-        child: Row(
-          children: [
-            Container(
-              width: 40,
-              height: 40,
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: selected ? AppColors.accent : a.cardFill,
-                border: Border.all(
-                  color: selected ? AppColors.accent : a.cardBorder,
-                ),
-              ),
-              child: Text(
-                '$steps',
-                style: AppTypography.title(
-                  size: 18,
-                  weight: FontWeight.w900,
-                  color: selected ? AppColors.inkOnAccent : a.text,
-                ),
-              ),
-            ),
-            const SizedBox(width: 12),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    label,
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: AppTypography.title(size: 16, color: a.text),
-                  ),
-                  const SizedBox(height: 2),
-                  Text(
-                    '$pace · $time',
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: AppTypography.body(
-                      size: 12,
-                      color: a.textMuted(selected ? 0.78 : 0.58),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-            if (selected)
-              const SoftBadge(
-                text: 'Atual',
-                glyph: CinematicGlyph.check,
-                accent: AppColors.accent,
-              ),
-          ],
-        ),
       ),
+    );
+  }
+}
+
+class _RhythmCaption extends StatelessWidget {
+  final int steps;
+  final String pace;
+  final String time;
+  final bool selected;
+
+  const _RhythmCaption({
+    required this.steps,
+    required this.pace,
+    required this.time,
+    required this.selected,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final label = steps == 1 ? '1 passo' : '$steps passos';
+    return Column(
+      children: [
+        Text(
+          label,
+          textAlign: TextAlign.center,
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          style: AppTypography.title(
+            size: 13,
+            color: selected ? AppColors.accent : a.text,
+          ),
+        ),
+        const SizedBox(height: 2),
+        Text(
+          '$pace · $time',
+          textAlign: TextAlign.center,
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          style: AppTypography.body(
+            size: 11,
+            color: a.textMuted(selected ? 0.72 : 0.5),
+          ),
+        ),
+        const SizedBox(height: 8),
+        AnimatedContainer(
+          duration: const Duration(milliseconds: 220),
+          height: 2,
+          width: selected ? 28 : 0,
+          decoration: BoxDecoration(
+            color: AppColors.accent,
+            borderRadius: BorderRadius.circular(99),
+          ),
+        ),
+      ],
     );
   }
 }
@@ -1454,181 +1583,736 @@ class _ModeStation extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: AnimatedContainer(
-        duration: const Duration(milliseconds: 220),
+        duration: const Duration(milliseconds: 240),
         curve: Curves.easeOutCubic,
-        padding: const EdgeInsets.fromLTRB(12, 12, 12, 12),
-        decoration: BoxDecoration(
-          color: locked
-              ? a.cardFillSoft.withValues(alpha: 0.45)
-              : selected
-              ? DifficultyVisuals.chipFill(accent, alpha: 0.28)
-              : a.cardFillSoft,
-          borderRadius: BorderRadius.circular(AppRadii.md),
-          border: Border.all(
-            color: locked
-                ? a.cardBorder.withValues(alpha: 0.35)
-                : selected
-                ? accent.withValues(alpha: 0.9)
-                : a.cardBorder,
-            width: selected ? 1.75 : 1.25,
-          ),
-          boxShadow: selected
-              ? [
-                  BoxShadow(
-                    color: accent.withValues(alpha: 0.22),
-                    blurRadius: 14,
-                    offset: const Offset(0, 6),
-                  ),
-                ]
-              : null,
+        clipBehavior: Clip.antiAlias,
+        decoration: DifficultyVisuals.stationCard(
+          accent: accent,
+          baseFill: a.cardFillSoft,
+          lit: selected && !locked,
+          sealed: cleared,
         ),
-        child: Row(
-          children: [
-            Opacity(
-              opacity: locked ? 0.45 : 1,
-              child: CinematicIcon(
-                glyph: locked
-                    ? CinematicGlyph.lock
-                    : DifficultyVisuals.glyphFor(meta.difficulty),
-                size: 40,
-                accent: locked ? a.textMuted(0.5) : accent,
-                glowing: false,
+        child: IntrinsicHeight(
+          child: Row(
+            children: [
+              AnimatedContainer(
+                duration: const Duration(milliseconds: 240),
+                width: 5,
+                color: locked
+                    ? accent.withValues(alpha: 0.22)
+                    : selected
+                    ? accent
+                    : accent.withValues(alpha: 0.4),
               ),
-            ),
-            const SizedBox(width: 12),
-            Expanded(
-              child: Opacity(
-                opacity: locked ? 0.5 : 1,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      meta.label,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: AppTypography.title(size: 16, color: a.text),
-                    ),
-                    if (meta.subtitle.isNotEmpty) ...[
-                      const SizedBox(height: 2),
-                      Text(
-                        meta.subtitle,
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        style: AppTypography.body(
-                          size: 12,
-                          color: a.textMuted(selected ? 0.78 : 0.58),
+              Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.fromLTRB(12, 12, 12, 12),
+                  child: Row(
+                    children: [
+                      Opacity(
+                        opacity: locked ? 0.46 : 1,
+                        child: ModeEmblem(
+                          difficulty: meta.difficulty,
+                          size: 40,
+                          locked: locked,
+                          cleared: cleared,
+                          active: selected && !locked,
                         ),
                       ),
+                      const SizedBox(width: 12),
+                      Expanded(
+                        child: Opacity(
+                          opacity: locked ? 0.55 : 1,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                meta.label,
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: AppTypography.title(
+                                  size: 16,
+                                  color: selected && !locked
+                                      ? DifficultyVisuals.onSky(accent)
+                                      : a.text,
+                                ),
+                              ),
+                              if (meta.subtitle.isNotEmpty) ...[
+                                const SizedBox(height: 3),
+                                Text(
+                                  locked
+                                      ? 'Conclua o modo anterior'
+                                      : meta.subtitle,
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: AppTypography.body(
+                                    size: 12,
+                                    color: a.textMuted(selected ? 0.72 : 0.55),
+                                  ),
+                                ),
+                              ],
+                            ],
+                          ),
+                        ),
+                      ),
+                      if (locked)
+                        CinematicIcon(
+                          glyph: CinematicGlyph.lock,
+                          size: 16,
+                          accent: a.textMuted(0.42),
+                          framed: false,
+                        )
+                      else if (selected)
+                        Container(
+                          width: 7,
+                          height: 7,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            color: accent,
+                            boxShadow: [
+                              BoxShadow(
+                                color: accent.withValues(alpha: 0.45),
+                                blurRadius: 8,
+                              ),
+                            ],
+                          ),
+                        )
+                      else if (cleared)
+                        CinematicIcon(
+                          glyph: CinematicGlyph.check,
+                          size: 16,
+                          accent: accent,
+                          framed: false,
+                        ),
                     ],
-                  ],
+                  ),
                 ),
               ),
-            ),
-            if (locked)
-              Text(
-                'Bloqueado',
-                style: AppTypography.label(
-                  size: 10,
-                  letterSpacing: 0.4,
-                  color: a.textMuted(0.45),
-                ),
-              )
-            else if (selected)
-              SoftBadge(
-                text: 'Atual',
-                glyph: CinematicGlyph.check,
-                accent: accent,
-              )
-            else if (cleared)
-              SoftBadge(
-                text: 'Concluído',
-                glyph: CinematicGlyph.check,
-                accent: accent,
-              ),
-          ],
+            ],
+          ),
         ),
       ),
     );
   }
 }
 
-class _SkyStation extends StatelessWidget {
-  final AppearanceMode mode;
-  final bool selected;
-  final VoidCallback onTap;
+/// Switch do céu — quatro estágios, de ponta a ponta do card.
+class _SkySwitch extends StatefulWidget {
+  final AppearanceMode selected;
+  final ValueChanged<AppearanceMode> onChanged;
 
-  const _SkyStation({
-    required this.mode,
-    required this.selected,
-    required this.onTap,
-  });
+  const _SkySwitch({required this.selected, required this.onChanged});
 
-  String get _caption => switch (mode) {
+  static const modes = AppearanceMode.values;
+  static const trackHeight = 100.0;
+
+  @override
+  State<_SkySwitch> createState() => _SkySwitchState();
+}
+
+class _SkySwitchState extends State<_SkySwitch>
+    with TickerProviderStateMixin {
+  static const _modes = _SkySwitch.modes;
+  static const _slideDuration = Duration(milliseconds: 520);
+  static const _slideCurve = Curves.easeOutCubic;
+
+  late final AnimationController _slide;
+  late final AnimationController _life;
+  double _downX = 0;
+  int _lastSlot = -1;
+
+  int get _index {
+    final i = _modes.indexOf(widget.selected);
+    return i < 0 ? 0 : i;
+  }
+
+  double get _visual => _slide.value;
+
+  AppearanceMode get _visualMode {
+    final i = _visual.round().clamp(0, _modes.length - 1);
+    return _modes[i];
+  }
+
+  String get _caption => switch (_visualMode) {
     AppearanceMode.morning => 'Céu claro',
     AppearanceMode.afternoon => 'Luz baixa',
     AppearanceMode.night => 'Céu escuro',
     AppearanceMode.automatic => 'Segue o horário',
   };
 
-  Color get _accent => switch (mode) {
+  Color _accentFor(AppearanceMode mode) => switch (mode) {
     AppearanceMode.morning => AppColors.accent,
     AppearanceMode.afternoon => AppColors.ember,
     AppearanceMode.night => AppColors.orchid,
     AppearanceMode.automatic => AppColors.slate,
   };
 
+  Color get _accentNow {
+    final x = _visual.clamp(0.0, 3.0);
+    final i = x.floor().clamp(0, 2);
+    final t = Curves.easeInOut.transform(x - i);
+    return Color.lerp(
+      _accentFor(_modes[i]),
+      _accentFor(_modes[i + 1]),
+      t,
+    )!;
+  }
+
+  String _shortLabel(AppearanceMode mode) => switch (mode) {
+    AppearanceMode.automatic => 'Auto',
+    _ => mode.label,
+  };
+
+  double _focus(int i) {
+    final d = (_visual - i).abs();
+    return (1.0 - d).clamp(0.0, 1.0);
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    _slide = AnimationController(
+      vsync: this,
+      duration: _slideDuration,
+      lowerBound: 0,
+      upperBound: (_modes.length - 1).toDouble(),
+      value: _index.toDouble(),
+    );
+    _life = AnimationController(
+      vsync: this,
+      duration: const Duration(seconds: 10),
+    )..repeat();
+    _lastSlot = _index;
+  }
+
+  @override
+  void didUpdateWidget(covariant _SkySwitch oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.selected == widget.selected) return;
+    _lastSlot = _index;
+    if (!_slide.isAnimating) {
+      _slide.animateTo(
+        _index.toDouble(),
+        duration: _slideDuration,
+        curve: _slideCurve,
+      );
+    }
+  }
+
+  @override
+  void dispose() {
+    _slide.dispose();
+    _life.dispose();
+    super.dispose();
+  }
+
+  void _commit(int index) {
+    final next = _modes[index.clamp(0, _modes.length - 1)];
+    if (next != widget.selected) {
+      if (_lastSlot != index) HapticFeedback.selectionClick();
+      widget.onChanged(next);
+    }
+    _lastSlot = index;
+  }
+
+  void _goTo(int index) {
+    _slide.animateTo(
+      index.toDouble(),
+      duration: _slideDuration,
+      curve: _slideCurve,
+    );
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) _commit(index);
+    });
+  }
+
+  void _pickSnap(double localX, double width) {
+    if (width <= 0) return;
+    final i = (localX / width * _modes.length)
+        .floor()
+        .clamp(0, _modes.length - 1);
+    _goTo(i);
+  }
+
+  void _follow(double localX, double width) {
+    if (width <= 0) return;
+    final v = ((localX / width) * _modes.length - 0.5)
+        .clamp(0.0, (_modes.length - 1).toDouble());
+    final slot = v.round();
+    if (slot != _lastSlot) {
+      _lastSlot = slot;
+      HapticFeedback.selectionClick();
+    }
+    _slide.stop();
+    _slide.value = v;
+  }
+
+  void _endDrag() {
+    final snap = _visual.round().clamp(0, _modes.length - 1);
+    _goTo(snap);
+  }
+
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final accent = _accent;
 
-    return GestureDetector(
-      onTap: onTap,
-      child: AnimatedContainer(
-        duration: const Duration(milliseconds: 220),
-        curve: Curves.easeOutCubic,
-        padding: const EdgeInsets.fromLTRB(12, 12, 12, 12),
-        decoration: BoxDecoration(
-          color: selected
-              ? AppMetrics.accentFill(color: accent, alpha: 0.22)
-              : a.cardFillSoft,
-          borderRadius: BorderRadius.circular(AppRadii.md),
-          border: Border.all(
-            color: selected
-                ? AppMetrics.accentBorder(color: accent, alpha: 0.85)
-                : a.cardBorder,
-            width: selected ? 1.75 : 1.25,
+    return Column(
+      children: [
+        MediaQuery.withClampedTextScaling(
+          maxScaleFactor: 1.05,
+          child: SizedBox(
+            height: _SkySwitch.trackHeight,
+            width: double.infinity,
+            child: LayoutBuilder(
+              builder: (context, constraints) {
+                final w = constraints.maxWidth;
+                return GestureDetector(
+                  behavior: HitTestBehavior.opaque,
+                  onTapDown: (d) => _downX = d.localPosition.dx,
+                  onTap: () => _pickSnap(_downX, w),
+                  onHorizontalDragStart: (d) =>
+                      _follow(d.localPosition.dx, w),
+                  onHorizontalDragUpdate: (d) =>
+                      _follow(d.localPosition.dx, w),
+                  onHorizontalDragEnd: (_) => _endDrag(),
+                  onHorizontalDragCancel: _endDrag,
+                  child: DecoratedBox(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(AppRadii.md),
+                      border: Border.all(color: a.cardBorder, width: 1.2),
+                    ),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(AppRadii.md - 0.6),
+                      child: AnimatedBuilder(
+                        animation: _slide,
+                        builder: (context, _) {
+                          return Stack(
+                            children: [
+                              Row(
+                                children: [
+                                  for (var i = 0; i < _modes.length; i++)
+                                    Expanded(
+                                      child: _SkyStageSky(
+                                        mode: _modes[i],
+                                        focus: _focus(i),
+                                      ),
+                                    ),
+                                ],
+                              ),
+                              Row(
+                                children: [
+                                  for (var i = 0; i < _modes.length; i++)
+                                    Expanded(
+                                      child: _SkyStageFace(
+                                        mode: _modes[i],
+                                        label: _shortLabel(_modes[i]),
+                                        accent: _accentFor(_modes[i]),
+                                        focus: _focus(i),
+                                        selected: i == _visual.round(),
+                                        life: _life,
+                                      ),
+                                    ),
+                                ],
+                              ),
+                            ],
+                          );
+                        },
+                      ),
+                    ),
+                  ),
+                );
+              },
+            ),
           ),
         ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            CinematicIcon(
-              glyph: mode.glyph,
-              size: 32,
-              accent: accent,
-              glowing: false,
-            ),
-            const SizedBox(height: 8),
-            Text(
-              mode.label,
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-              style: AppTypography.title(size: 14, color: a.text),
-            ),
-            const SizedBox(height: 2),
-            Text(
-              _caption,
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-              style: AppTypography.body(
-                size: 11,
-                color: a.textMuted(selected ? 0.78 : 0.58),
+        const SizedBox(height: 10),
+        AnimatedBuilder(
+          animation: _slide,
+          builder: (context, _) {
+            return Column(
+              children: [
+                Text(
+                  _visualMode.label,
+                  style: AppTypography.title(size: 15, color: _accentNow),
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  _caption,
+                  style: AppTypography.body(
+                    size: 12,
+                    color: a.textMuted(0.68),
+                  ),
+                ),
+              ],
+            );
+          },
+        ),
+      ],
+    );
+  }
+}
+
+class _SkyStageSky extends StatelessWidget {
+  final AppearanceMode mode;
+  final double focus;
+
+  const _SkyStageSky({required this.mode, required this.focus});
+
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      fit: StackFit.expand,
+      children: [
+        AmbientAtmosphere(phase: AppearanceStyle.resolve(mode).phase),
+        IgnorePointer(
+          child: ColoredBox(
+            color: Color.fromRGBO(0, 0, 0, 0.46 * (1 - focus)),
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class _SkyStageFace extends StatelessWidget {
+  final AppearanceMode mode;
+  final String label;
+  final Color accent;
+  final double focus;
+  final bool selected;
+  final Animation<double> life;
+
+  const _SkyStageFace({
+    required this.mode,
+    required this.label,
+    required this.accent,
+    required this.focus,
+    required this.selected,
+    required this.life,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final color = Color.lerp(
+      Colors.white.withValues(alpha: 0.7),
+      accent,
+      Curves.easeOut.transform(focus),
+    )!;
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(2, 10, 2, 8),
+      child: Column(
+        children: [
+          Expanded(
+            child: Center(
+              child: Transform.scale(
+                scale: 0.86 + 0.22 * focus,
+                child: selected
+                    ? AnimatedBuilder(
+                        animation: life,
+                        builder: (context, _) {
+                          return CustomPaint(
+                            size: const Size(38, 38),
+                            painter: _SkyMarkPainter(
+                              mode: mode,
+                              color: color,
+                              t: life.value,
+                              alive: true,
+                              amp: 1,
+                            ),
+                          );
+                        },
+                      )
+                    : CustomPaint(
+                        size: const Size(38, 38),
+                        painter: _SkyMarkPainter(
+                          mode: mode,
+                          color: color,
+                          t: 0,
+                          alive: false,
+                          amp: 0,
+                        ),
+                      ),
               ),
             ),
-          ],
-        ),
+          ),
+          Text(
+            label,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: AppTypography.label(
+              size: 10,
+              letterSpacing: 0.2,
+              color: color,
+              weight: focus > 0.55 ? FontWeight.w800 : FontWeight.w600,
+            ),
+          ),
+        ],
       ),
     );
   }
 }
+
+/// Marcas do switch: sol entre nuvens, sol, lua entre nuvens, ciclo.
+class _SkyMarkPainter extends CustomPainter {
+  final AppearanceMode mode;
+  final Color color;
+  final double t;
+  final bool alive;
+  final double amp;
+
+  _SkyMarkPainter({
+    required this.mode,
+    required this.color,
+    required this.t,
+    required this.alive,
+    this.amp = 1,
+  });
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final c = Offset(size.width / 2, size.height / 2);
+    final s = size.shortestSide;
+    final wave = t * math.pi * 2;
+    final breathe = 0.5 + 0.5 * math.sin(wave);
+    final drift = math.sin(wave) * amp;
+    final drift2 = math.cos(wave) * amp;
+    final fill = Paint()
+      ..color = color
+      ..style = PaintingStyle.fill
+      ..isAntiAlias = true;
+    final soft = Paint()
+      ..color = color.withValues(alpha: 0.86)
+      ..style = PaintingStyle.fill
+      ..isAntiAlias = true;
+
+    if (alive) {
+      canvas.drawCircle(
+        c,
+        s * (0.46 + breathe * 0.05 * amp),
+        Paint()
+          ..shader = RadialGradient(
+            colors: [
+              color.withValues(alpha: (0.16 + breathe * 0.12) * amp),
+              color.withValues(alpha: 0),
+            ],
+          ).createShader(Rect.fromCircle(center: c, radius: s * 0.52)),
+      );
+    }
+
+    switch (mode) {
+      case AppearanceMode.morning:
+        _sun(
+          canvas,
+          c + Offset(0, -s * 0.08),
+          s * (0.9 + breathe * 0.04 * amp),
+          fill,
+          spin: wave,
+        );
+        _cloud(
+          canvas,
+          c + Offset(-s * 0.08 + drift * s * 0.05, s * 0.18),
+          s * 0.72,
+          fill,
+        );
+        _cloud(
+          canvas,
+          c + Offset(s * 0.18 + drift2 * s * 0.04, s * 0.22),
+          s * 0.5,
+          soft,
+        );
+      case AppearanceMode.afternoon:
+        _sun(
+          canvas,
+          c + Offset(0, -s * 0.06),
+          s * (0.94 + breathe * 0.05 * amp),
+          fill,
+          spin: wave * 0.7,
+        );
+        _cloud(
+          canvas,
+          c + Offset(s * 0.02 + drift * s * 0.04, s * 0.28),
+          s * 0.55,
+          soft,
+        );
+      case AppearanceMode.night:
+        _star(
+          canvas,
+          c + Offset(s * 0.28, -s * 0.28),
+          s * (0.08 + breathe * 0.025 * amp),
+          Paint()
+            ..color = color.withValues(alpha: 0.4 + breathe * 0.6 * amp)
+            ..isAntiAlias = true,
+        );
+        _moon(
+          canvas,
+          c + Offset(-s * 0.04, -s * 0.08 + drift * s * 0.025),
+          s * 0.88,
+          fill,
+        );
+        _cloud(
+          canvas,
+          c + Offset(-s * 0.06 + drift * s * 0.04, s * 0.2),
+          s * 0.7,
+          fill,
+        );
+        _cloud(
+          canvas,
+          c + Offset(s * 0.2 + drift2 * s * 0.03, s * 0.24),
+          s * 0.48,
+          soft,
+        );
+      case AppearanceMode.automatic:
+        _clock(canvas, c, s, fill, alive: alive);
+    }
+  }
+
+  void _sun(
+    Canvas canvas,
+    Offset c,
+    double s,
+    Paint paint, {
+    double spin = 0,
+  }) {
+    canvas.save();
+    canvas.translate(c.dx, c.dy);
+    canvas.rotate(spin);
+    canvas.drawCircle(Offset.zero, s * 0.16, paint);
+    for (var i = 0; i < 8; i++) {
+      final a = i * math.pi / 4 - math.pi / 2;
+      final len = s * (i.isEven ? 0.13 : 0.09);
+      final inner = s * 0.22;
+      final p1 = Offset(math.cos(a) * inner, math.sin(a) * inner);
+      final p2 = Offset(
+        math.cos(a) * (inner + len),
+        math.sin(a) * (inner + len),
+      );
+      final perp = Offset(-math.sin(a), math.cos(a)) * s * 0.04;
+      canvas.drawPath(
+        Path()
+          ..moveTo(p1.dx + perp.dx, p1.dy + perp.dy)
+          ..lineTo(p2.dx + perp.dx, p2.dy + perp.dy)
+          ..lineTo(p2.dx - perp.dx, p2.dy - perp.dy)
+          ..lineTo(p1.dx - perp.dx, p1.dy - perp.dy)
+          ..close(),
+        paint,
+      );
+    }
+    canvas.restore();
+  }
+
+  void _cloud(Canvas canvas, Offset c, double s, Paint paint) {
+    canvas.drawCircle(c + Offset(-s * 0.18, 0), s * 0.16, paint);
+    canvas.drawCircle(c + Offset(s * 0.02, -s * 0.08), s * 0.2, paint);
+    canvas.drawCircle(c + Offset(s * 0.2, 0), s * 0.14, paint);
+    canvas.drawRRect(
+      RRect.fromRectAndRadius(
+        Rect.fromCenter(
+          center: c + Offset(0, s * 0.06),
+          width: s * 0.62,
+          height: s * 0.2,
+        ),
+        Radius.circular(s * 0.1),
+      ),
+      paint,
+    );
+  }
+
+  void _moon(Canvas canvas, Offset c, double s, Paint paint) {
+    final moon = Path()..addOval(Rect.fromCircle(center: c, radius: s * 0.2));
+    final cut = Path()
+      ..addOval(
+        Rect.fromCircle(
+          center: c + Offset(s * 0.1, -s * 0.05),
+          radius: s * 0.17,
+        ),
+      );
+    canvas.drawPath(Path.combine(PathOperation.difference, moon, cut), paint);
+  }
+
+  void _star(Canvas canvas, Offset c, double r, Paint paint) {
+    final path = Path();
+    for (var i = 0; i < 4; i++) {
+      final a = i * math.pi / 2 - math.pi / 2;
+      final p = c + Offset(math.cos(a) * r, math.sin(a) * r);
+      if (i == 0) {
+        path.moveTo(p.dx, p.dy);
+      } else {
+        path.lineTo(p.dx, p.dy);
+      }
+      final b = a + math.pi / 4;
+      final q = c + Offset(math.cos(b) * r * 0.35, math.sin(b) * r * 0.35);
+      path.lineTo(q.dx, q.dy);
+    }
+    path.close();
+    canvas.drawPath(path, paint);
+  }
+
+  void _clock(
+    Canvas canvas,
+    Offset c,
+    double s,
+    Paint paint, {
+    required bool alive,
+  }) {
+    final ring = Paint()
+      ..color = paint.color
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = s * 0.07
+      ..strokeCap = StrokeCap.round
+      ..isAntiAlias = true;
+    canvas.drawCircle(c, s * 0.32, ring);
+
+    final tick = Paint()
+      ..color = paint.color
+      ..strokeWidth = s * 0.045
+      ..strokeCap = StrokeCap.round
+      ..isAntiAlias = true;
+    for (var i = 0; i < 4; i++) {
+      final a = i * math.pi / 2 - math.pi / 2;
+      final inner = s * 0.24;
+      final outer = s * 0.32;
+      canvas.drawLine(
+        c + Offset(math.cos(a) * inner, math.sin(a) * inner),
+        c + Offset(math.cos(a) * outer, math.sin(a) * outer),
+        tick,
+      );
+    }
+
+    final now = DateTime.now();
+    final hour = ((now.hour % 12) + now.minute / 60) / 12 * math.pi * 2 -
+        math.pi / 2;
+    final minute = (now.minute + now.second / 60) / 60 * math.pi * 2 -
+        math.pi / 2;
+    final second = alive
+        ? (now.second + now.millisecond / 1000) / 60 * math.pi * 2 - math.pi / 2
+        : minute;
+
+    void hand(double angle, double len, double weight) {
+      canvas.drawLine(
+        c,
+        c + Offset(math.cos(angle) * s * len, math.sin(angle) * s * len),
+        Paint()
+          ..color = paint.color
+          ..strokeWidth = s * weight
+          ..strokeCap = StrokeCap.round
+          ..isAntiAlias = true,
+      );
+    }
+
+    hand(hour, 0.16, 0.07);
+    hand(minute, 0.24, 0.05);
+    if (alive) {
+      hand(second, 0.26, 0.03);
+    }
+    canvas.drawCircle(c, s * 0.035, paint);
+  }
+
+  @override
+  bool shouldRepaint(covariant _SkyMarkPainter old) =>
+      old.mode != mode ||
+      old.color != color ||
+      old.t != t ||
+      old.alive != alive ||
+      old.amp != amp;
+}
+

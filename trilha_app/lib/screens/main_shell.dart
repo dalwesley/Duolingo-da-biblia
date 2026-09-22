@@ -392,7 +392,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
         1 => 'O mapa da jornada',
         2 => LiturgicalCalendar.momentFor().subtitle,
         3 => 'Caravana · Companhia · Salas',
-        _ => 'Conta · Preferências',
+        _ => 'Como você caminha',
       },
     );
   }
@@ -463,7 +463,10 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
             ),
             TickerMode(
               enabled: _index == 4,
-              child: SettingsScreen(topBar: tabBar(4)),
+              child: SettingsScreen(
+                topBar: tabBar(4),
+                onOpenProfile: _openProfile,
+              ),
             ),
           ],
         ),

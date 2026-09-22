@@ -39,6 +39,7 @@ enum CinematicGlyph {
   echo,
   target,
   tune,
+  pencil,
   lock,
   search,
   shield,
@@ -234,6 +235,7 @@ class CinematicGlyphResolver {
       CinematicGlyph.calendar => accent ?? AppColors.sand,
       CinematicGlyph.check => accent ?? AppColors.accent,
       CinematicGlyph.tune ||
+      CinematicGlyph.pencil ||
       CinematicGlyph.share ||
       CinematicGlyph.refresh => accent ?? AppColors.accent,
       CinematicGlyph.lock => AppColors.sand,
@@ -410,6 +412,8 @@ class _GlyphPainter extends CustomPainter {
         _target(canvas, c, s);
       case CinematicGlyph.tune:
         _tune(canvas, c, s);
+      case CinematicGlyph.pencil:
+        _pencil(canvas, c, s);
       case CinematicGlyph.lock:
         _lock(canvas, c, s);
       case CinematicGlyph.search:
@@ -1270,6 +1274,39 @@ class _GlyphPainter extends CustomPainter {
     _ring(canvas, c, s * 0.34, s * 0.24);
     _ring(canvas, c, s * 0.2, s * 0.1);
     canvas.drawCircle(c, s * 0.08, _solid);
+  }
+
+  void _pencil(Canvas canvas, Offset c, double s) {
+    canvas.save();
+    canvas.translate(c.dx, c.dy);
+    canvas.rotate(-math.pi / 4);
+    _rect(
+      canvas,
+      Rect.fromCenter(
+        center: Offset(0, -s * 0.02),
+        width: s * 0.2,
+        height: s * 0.5,
+      ),
+      s * 0.04,
+    );
+    canvas.drawRRect(
+      RRect.fromRectAndRadius(
+        Rect.fromCenter(
+          center: Offset(0, -s * 0.32),
+          width: s * 0.22,
+          height: s * 0.12,
+        ),
+        Radius.circular(s * 0.03),
+      ),
+      _solid,
+    );
+    final tip = Path()
+      ..moveTo(-s * 0.1, s * 0.22)
+      ..lineTo(0, s * 0.4)
+      ..lineTo(s * 0.1, s * 0.22)
+      ..close();
+    canvas.drawPath(tip, _solid);
+    canvas.restore();
   }
 
   void _tune(Canvas canvas, Offset c, double s) {

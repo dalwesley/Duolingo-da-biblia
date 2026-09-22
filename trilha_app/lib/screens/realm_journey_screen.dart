@@ -318,6 +318,7 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
                       immersive: true,
                       dark: true,
                       title: widget.realm.label,
+                      subtitle: visuals.eyebrow,
                       onBack: () => Navigator.pop(context),
                       leadingGlyph: CinematicGlyph.path,
                       chromeAccent: AppColors.sand,
@@ -334,10 +335,10 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
                         SliverToBoxAdapter(
                           child: Padding(
                             padding: EdgeInsets.fromLTRB(
-                              16,
                               12,
-                              20,
-                              140 + bottom,
+                              4,
+                              12,
+                              120 + bottom,
                             ),
                             child: JourneyPath(
                               items: items,
@@ -391,13 +392,13 @@ class _JumpChip extends StatelessWidget {
           ),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(AppRadii.lg),
-            color: AppColors.night.withValues(alpha: 0.93),
-            border: Border.all(color: accent.withValues(alpha: 0.7)),
+            color: AppColors.night.withValues(alpha: 0.72),
+            border: Border.all(color: accent.withValues(alpha: 0.32)),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withValues(alpha: 0.4),
-                blurRadius: 20,
-                offset: const Offset(0, 8),
+                color: Colors.black.withValues(alpha: 0.28),
+                blurRadius: 12,
+                offset: const Offset(0, 6),
               ),
             ],
           ),

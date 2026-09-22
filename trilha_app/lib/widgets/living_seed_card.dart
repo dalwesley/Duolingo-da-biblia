@@ -184,15 +184,6 @@ class LivingSeedCard extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 16),
-          Center(
-            child: RelicDisc(
-              glyph: _glyph(growth.stage),
-              accent: accent,
-              size: 64,
-              lit: growth.glowing || growth.streak > 0,
-            ),
-          ),
-          const SizedBox(height: 16),
           _StageTrack(
             current: growth.stage,
             accent: accent,
@@ -254,17 +245,23 @@ class _StageTrack extends StatelessWidget {
     final stages = GrowthStage.values;
     final currentIndex = stages.indexOf(current);
 
+    const currentSize = 48.0;
+    const restSize = 30.0;
+
     return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         for (var i = 0; i < stages.length; i++) ...[
           if (i > 0)
             Expanded(
-              child: Container(
-                height: 2,
-                margin: const EdgeInsets.only(bottom: 18),
-                color: i <= currentIndex
-                    ? accent.withValues(alpha: 0.7)
-                    : a.cardBorder,
+              child: Padding(
+                padding: const EdgeInsets.only(top: currentSize / 2 - 1),
+                child: Container(
+                  height: 2,
+                  color: i <= currentIndex
+                      ? accent.withValues(alpha: 0.7)
+                      : a.cardBorder,
+                ),
               ),
             ),
           _StageNode(
@@ -273,6 +270,8 @@ class _StageTrack extends StatelessWidget {
             reached: i <= currentIndex,
             current: i == currentIndex,
             accent: accent,
+            discSize: i == currentIndex ? currentSize : restSize,
+            slotHeight: currentSize,
           ),
         ],
       ],
@@ -286,6 +285,8 @@ class _StageNode extends StatelessWidget {
   final bool reached;
   final bool current;
   final Color accent;
+  final double discSize;
+  final double slotHeight;
 
   const _StageNode({
     required this.stage,
@@ -293,6 +294,8 @@ class _StageNode extends StatelessWidget {
     required this.reached,
     required this.current,
     required this.accent,
+    required this.discSize,
+    required this.slotHeight,
   });
 
   @override
@@ -301,17 +304,23 @@ class _StageNode extends StatelessWidget {
 
     return Column(
       children: [
-        RelicDisc(
-          glyph: glyph,
-          accent: accent,
-          size: current ? 36 : 28,
-          lit: reached,
+        SizedBox(
+          height: slotHeight,
+          width: slotHeight,
+          child: Center(
+            child: RelicDisc(
+              glyph: glyph,
+              accent: accent,
+              size: discSize,
+              lit: reached,
+            ),
+          ),
         ),
         const SizedBox(height: 6),
         Text(
           stage.label,
           style: AppTypography.label(
-            size: 8,
+            size: current ? 9 : 8,
             letterSpacing: 0.2,
             weight: current ? FontWeight.w900 : FontWeight.w600,
             color: current ? a.text : a.textMuted(reached ? 0.55 : 0.35),

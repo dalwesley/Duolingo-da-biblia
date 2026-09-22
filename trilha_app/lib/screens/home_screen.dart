@@ -341,147 +341,151 @@ class _HomeScreenState extends State<HomeScreen>
     return HomeTrailChrome(
       outline: homeTrailOutline(trailMood),
       child: Stack(
-      children: [
-        ListView(
-          padding: EdgeInsets.fromLTRB(
-            AppSpace.screen,
-            MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
-            AppSpace.screen,
-            scrollPaddingBelowNav(context),
-          ),
-          physics: const ClampingScrollPhysics(),
-          children: [
-            // Header: saudação + estação + pulso do dia.
-            _reveal(
-              0,
-              HomePlayerHeader(
-                onProfileTap: widget.onOpenProfile,
-                onTapMission: goalMet
-                    ? null
-                    : current != null
-                    ? () => widget.onOpenMission(current.slug)
-                    : widget.onOpenTrilhas,
-                onLiturgyTap: () =>
-                    _openBible(LiturgicalCalendar.momentFor().focusRef),
-              ),
+        children: [
+          ListView(
+            padding: EdgeInsets.fromLTRB(
+              AppSpace.screen,
+              MediaQuery.viewPaddingOf(context).top + AppSpace.sm,
+              AppSpace.screen,
+              scrollPaddingBelowNav(context),
             ),
-            if (nudge != null) ...[
-              const SizedBox(height: AppSpace.md),
+            physics: const ClampingScrollPhysics(),
+            children: [
+              // Header: saudação + estação + pulso do dia.
               _reveal(
                 0,
-                CompanionNudgeHomeCard(
-                  companion: nudge,
-                  onWalk: walk,
-                  onOpenCompanhia: widget.onOpenLeague,
+                HomePlayerHeader(
+                  onProfileTap: widget.onOpenProfile,
+                  onTapMission: goalMet
+                      ? null
+                      : current != null
+                      ? () => widget.onOpenMission(current.slug)
+                      : widget.onOpenTrilhas,
+                  onLiturgyTap: () =>
+                      _openBible(LiturgicalCalendar.momentFor().focusRef),
                 ),
               ),
-            ],
-            if (corner != null) ...[
-              const SizedBox(height: AppSpace.md),
-              _reveal(
-                0,
-                CornerHomeCard(
-                  challenge: corner,
-                  onWalk: () => widget.onOpenMission(corner.missionSlug),
-                ),
-              ),
-            ],
-            const SizedBox(height: AppSpace.sm),
-            // Resultado da semana da caravana — coletar na Home (não na aba Juntos).
-            Builder(
-              builder: (context) {
-                final league = context.watch<LeagueService>();
-                if (!league.isLoaded || league.pendingOutcome == null) {
-                  return const SizedBox.shrink();
-                }
-                return Column(
-                  children: [
-                    _reveal(0, const LeagueOutcomeCard()),
-                    const SizedBox(height: AppSpace.sm),
-                  ],
-                );
-              },
-            ),
-            // CTA dominante: missão pronta.
-            _reveal(
-              1,
-              Column(
-                children: [
-                  HeroContinueCard(
-                    mission: current,
-                    trailTitle: active?.title ?? '',
-                    trailSlug: active?.slug ?? 'genesis-1-11',
-                    trailColor: active?.color ?? '#1B3A5C',
-                    onTap: current != null
-                        ? () => widget.onOpenMission(current.slug)
-                        : null,
-                    onExploreTrails: widget.onOpenTrilhas,
-                    goalMet: goalMet,
-                    atRisk: progress.isStreakAtRisk,
+              if (nudge != null) ...[
+                const SizedBox(height: AppSpace.md),
+                _reveal(
+                  0,
+                  CompanionNudgeHomeCard(
+                    companion: nudge,
+                    onWalk: walk,
+                    onOpenCompanhia: widget.onOpenLeague,
                   ),
-                  _WalkHomeCard(heroMissionSlug: current?.slug),
-                ],
-              ),
-            ),
-            const SizedBox(height: AppSpace.sm),
-            if (goalMet) ...[
-              _reveal(2, SeasonChallengeBanner(catalog: trails)),
-            ],
-            if (progress.showStreakRepairOffer) ...[
-              _reveal(2, const StreakRepairBanner()),
-              const SizedBox(height: AppSpace.section),
-            ],
-            if (goalMet)
+                ),
+              ],
+              if (corner != null) ...[
+                const SizedBox(height: AppSpace.md),
+                _reveal(
+                  0,
+                  CornerHomeCard(
+                    challenge: corner,
+                    onWalk: () => widget.onOpenMission(corner.missionSlug),
+                  ),
+                ),
+              ],
+              const SizedBox(height: AppSpace.lg),
+              // Resultado da semana da caravana — coletar na Home (não na aba Juntos).
               Builder(
                 builder: (context) {
                   final league = context.watch<LeagueService>();
-                  if (!league.isLoaded) return const SizedBox.shrink();
-                  final entries = league.standings(
-                    userName: progress.userName,
-                    userWeeklySteps: progress.weeklySteps,
-                  );
-                  final rank = league.userRank(entries);
-                  if (!league.isNearDemotion(rank)) {
+                  if (!league.isLoaded || league.pendingOutcome == null) {
                     return const SizedBox.shrink();
                   }
                   return Column(
                     children: [
-                      _reveal(
-                        3,
-                        LeagueRiskCard(onOpenLeague: widget.onOpenLeague),
-                      ),
-                      const SizedBox(height: AppSpace.section),
+                      _reveal(0, const LeagueOutcomeCard()),
+                      const SizedBox(height: AppSpace.sm),
                     ],
                   );
                 },
               ),
-            if (goalMet) ...[
+              // CTA dominante: missão pronta.
               _reveal(
-                3,
-                DailyQuestsCard(
-                  onQuestTap: (q) => _onQuestTap(q, missionSlug: current?.slug),
+                1,
+                Column(
+                  children: [
+                    HeroContinueCard(
+                      mission: current,
+                      trailTitle: active?.title ?? '',
+                      trailSlug: active?.slug ?? 'genesis-1-11',
+                      trailColor: active?.color ?? '#1B3A5C',
+                      onTap: current != null
+                          ? () => widget.onOpenMission(current.slug)
+                          : null,
+                      onExploreTrails: widget.onOpenTrilhas,
+                      goalMet: goalMet,
+                      atRisk: progress.isStreakAtRisk,
+                    ),
+                    _WalkHomeCard(heroMissionSlug: current?.slug),
+                  ],
                 ),
               ),
-              const SizedBox(height: AppSpace.section),
+              const SizedBox(height: AppSpace.xl),
+              if (goalMet) ...[
+                _reveal(2, SeasonChallengeBanner(catalog: trails)),
+              ],
+              if (progress.showStreakRepairOffer) ...[
+                _reveal(2, const StreakRepairBanner()),
+                const SizedBox(height: AppSpace.section),
+              ],
+              if (goalMet)
+                Builder(
+                  builder: (context) {
+                    final league = context.watch<LeagueService>();
+                    if (!league.isLoaded) return const SizedBox.shrink();
+                    final entries = league.standings(
+                      userName: progress.userName,
+                      userWeeklySteps: progress.weeklySteps,
+                    );
+                    final rank = league.userRank(entries);
+                    if (!league.isNearDemotion(rank)) {
+                      return const SizedBox.shrink();
+                    }
+                    return Column(
+                      children: [
+                        _reveal(
+                          3,
+                          LeagueRiskCard(onOpenLeague: widget.onOpenLeague),
+                        ),
+                        const SizedBox(height: AppSpace.section),
+                      ],
+                    );
+                  },
+                ),
+              if (goalMet) ...[
+                _reveal(
+                  3,
+                  DailyQuestsCard(
+                    onQuestTap: (q) =>
+                        _onQuestTap(q, missionSlug: current?.slug),
+                  ),
+                ),
+                const SizedBox(height: AppSpace.section),
+              ],
+              if (progress.dailyChestAvailable) ...[
+                _reveal(3, const DailyChestCard()),
+                const SizedBox(height: AppSpace.section),
+              ],
+              if (current == null)
+                _reveal(
+                  4,
+                  HomeWordCard(
+                    mission: current,
+                    onOpen: (ref) => _openBible(ref),
+                  ),
+                ),
+              if (progress.mistakeQuestionIds.isNotEmpty) ...[
+                const SizedBox(height: AppSpace.section),
+                _reveal(4, const _RevisitPracticeLink()),
+              ],
             ],
-            if (progress.dailyChestAvailable) ...[
-              _reveal(3, const DailyChestCard()),
-              const SizedBox(height: AppSpace.section),
-            ],
-            if (current == null)
-              _reveal(
-                4,
-                HomeWordCard(mission: current, onOpen: (ref) => _openBible(ref)),
-              ),
-            if (progress.mistakeQuestionIds.isNotEmpty) ...[
-              const SizedBox(height: AppSpace.section),
-              _reveal(4, const _RevisitPracticeLink()),
-            ],
-          ],
-        ),
-        WaveHandsOverlay(active: nudge != null),
-      ],
-    ),
+          ),
+          WaveHandsOverlay(active: nudge != null),
+        ],
+      ),
     );
   }
 }
@@ -630,10 +634,10 @@ class _HomeSkeletonState extends State<_HomeSkeleton>
       ),
       physics: const NeverScrollableScrollPhysics(),
       children: [
-        _ShimmerBox(controller: _shimmer, height: 168),
-        const SizedBox(height: AppSpace.md),
-        _ShimmerBox(controller: _shimmer, height: 280),
-        const SizedBox(height: AppSpace.section),
+        _ShimmerBox(controller: _shimmer, height: 132),
+        const SizedBox(height: AppSpace.lg),
+        _ShimmerBox(controller: _shimmer, height: 400),
+        const SizedBox(height: AppSpace.xl),
         _ShimmerBox(controller: _shimmer, height: 132),
       ],
     );

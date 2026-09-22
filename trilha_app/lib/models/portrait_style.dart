@@ -14,6 +14,12 @@ extension PortraitStyleX on PortraitStyle {
         PortraitStyle.avatar => 'Avatar',
       };
 
+  String get hint => switch (this) {
+        PortraitStyle.photo => 'A foto da sua conta',
+        PortraitStyle.letter => 'As iniciais do nome',
+        PortraitStyle.avatar => 'Um peregrino ilustrado',
+      };
+
   static PortraitStyle fromStorage(String? raw) {
     switch (raw?.trim().toLowerCase()) {
       case 'letter':

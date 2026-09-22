@@ -124,6 +124,37 @@ class CaravanPilgrimProfile {
 
   int get missionsCompleted => completedMissions.length;
 
+  /// Trilha em foco no perfil — a da última cena, senão a mais avançada.
+  CaravanTrailSnapshot? get featuredTrail {
+    if (trails.isEmpty) return null;
+    final last = lastTrailTitle?.trim();
+    if (last != null && last.isNotEmpty) {
+      for (final trail in trails) {
+        if (trail.title == last) return trail;
+      }
+    }
+    for (final trail in trails) {
+      if (!trail.isComplete) return trail;
+    }
+    return trails.first;
+  }
+
+  int get otherOpenTrailCount {
+    final featured = featuredTrail?.slug;
+    return trails
+        .where((t) => !t.isComplete && t.slug != featured)
+        .length;
+  }
+
+  /// Trilhas ainda em curso, a do foco primeiro.
+  List<CaravanTrailSnapshot> get restOpenTrails {
+    final featured = featuredTrail?.slug;
+    return [
+      for (final trail in trails)
+        if (!trail.isComplete && trail.slug != featured) trail,
+    ];
+  }
+
   int? get accuracyPercent {
     if (lifetimeQuestionsAnswered <= 0) return null;
     return ((lifetimeQuestionsCorrect / lifetimeQuestionsAnswered) * 100)

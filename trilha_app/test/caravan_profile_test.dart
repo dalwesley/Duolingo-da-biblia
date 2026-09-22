@@ -44,6 +44,47 @@ void main() {
       );
       expect(profile.accuracyPercent, 80);
     });
+
+    test('featuredTrail prefers last scene, then open path', () {
+      const genesis = CaravanTrailSnapshot(
+        slug: 'genesis-1-11',
+        title: 'Gênesis 1-11',
+        missionsDone: 8,
+        missionsTotal: 8,
+      );
+      const anxiety = CaravanTrailSnapshot(
+        slug: 'ansiedade',
+        title: 'Ansiedade',
+        missionsDone: 2,
+        missionsTotal: 5,
+      );
+      const sermon = CaravanTrailSnapshot(
+        slug: 'sermao',
+        title: 'Sermão do Monte',
+        missionsDone: 1,
+        missionsTotal: 8,
+      );
+      const profile = CaravanPilgrimProfile(
+        name: 'João',
+        steps: 10,
+        lastTrailTitle: 'Gênesis 1-11',
+        trails: [anxiety, genesis, sermon],
+      );
+      expect(profile.featuredTrail?.slug, 'genesis-1-11');
+      expect(profile.otherOpenTrailCount, 2);
+      expect(
+        profile.restOpenTrails.map((t) => t.slug),
+        ['ansiedade', 'sermao'],
+      );
+
+      const openOnly = CaravanPilgrimProfile(
+        name: 'João',
+        steps: 10,
+        trails: [anxiety, sermon],
+      );
+      expect(openOnly.featuredTrail?.slug, 'ansiedade');
+      expect(openOnly.restOpenTrails.map((t) => t.slug), ['sermao']);
+    });
   });
 
   group('pilgrim profile copy', () {

@@ -24,6 +24,11 @@ class AppMetrics {
   /// Raio do card hero / destaque.
   static const heroRadius = AppRadii.xl;
 
+  /// Palco da próxima missão na Home — precisa ocupar o primeiro viewport,
+  /// não parecer mais um tile na lista.
+  static double heroStageHeight(double screenHeight) =>
+      (screenHeight * 0.52).clamp(380.0, 520.0);
+
   /// Ícone leading em listas (quests, trilhas).
   static const leadingIcon = 40.0;
 

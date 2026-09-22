@@ -18,6 +18,12 @@ void main() {
       expect(PortraitStyleX.tryParse('letter'), PortraitStyle.letter);
       expect(PortraitStyleX.tryParse(''), isNull);
     });
+
+    test('hint names the three faces', () {
+      expect(PortraitStyle.photo.hint, contains('foto'));
+      expect(PortraitStyle.letter.hint, contains('iniciais'));
+      expect(PortraitStyle.avatar.hint, contains('ilustrado'));
+    });
   });
 
   group('PortraitFace.resolve', () {

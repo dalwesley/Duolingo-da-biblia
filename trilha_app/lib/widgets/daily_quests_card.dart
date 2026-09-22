@@ -28,7 +28,7 @@ class DailyQuestsCard extends StatelessWidget {
         .length;
 
     return GlassCard(
-      padding: AppMetrics.cardPadding,
+      padding: AppMetrics.cardPaddingCompact,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -39,11 +39,7 @@ class DailyQuestsCard extends StatelessWidget {
           const SizedBox(height: 8),
           for (var i = 0; i < quests.length; i++) ...[
             if (i > 0) const SizedBox(height: 2),
-            _QuestRow(
-              quest: quests[i],
-              progress: progress,
-              onTap: onQuestTap,
-            ),
+            _QuestRow(quest: quests[i], progress: progress, onTap: onQuestTap),
           ],
         ],
       ),

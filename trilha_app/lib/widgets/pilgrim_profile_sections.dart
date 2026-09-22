@@ -198,38 +198,24 @@ class PilgrimProfileDetailSections extends StatelessWidget {
     }
 
     if (_show(CaravanProfileSection.trails)) {
-      add(
-        profile.trails.isEmpty
-            ? const RelicPanel(
-                accent: AppColors.cedar,
-                child: RelicChapter(
-                  title: 'Trilha',
-                  whisper: 'Nenhuma trilha em andamento ainda.',
-                  accent: AppColors.cedar,
-                ),
-              )
-            : PilgrimTrailPath(trail: profile.trails.first),
-      );
-      if (profile.trails.length > 1) {
+      final featured = profile.featuredTrail;
+      if (featured == null) {
         add(
-          Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              for (final trail in profile.trails.skip(1).take(4))
-                PilgrimTrailPath(trail: trail, compact: true),
-              if (profile.trails.length > 5)
-                Padding(
-                  padding: const EdgeInsets.only(top: 4),
-                  child: Text(
-                    '+ ${profile.trails.length - 5} trilha${profile.trails.length - 5 == 1 ? '' : 's'}',
-                    style: AppTypography.label(
-                      size: 10,
-                      letterSpacing: 0.3,
-                      color: Appearance.of(context).textMuted(0.5),
-                    ),
-                  ),
-                ),
-            ],
+          const RelicPanel(
+            accent: AppColors.cedar,
+            child: RelicChapter(
+              title: 'Trilha',
+              whisper: 'Nenhuma trilha em andamento ainda.',
+              accent: AppColors.cedar,
+            ),
+          ),
+        );
+      } else {
+        add(
+          PilgrimTrailPath(
+            trail: featured,
+            owner: isOwner,
+            rest: profile.restOpenTrails,
           ),
         );
       }
@@ -680,12 +666,14 @@ class PilgrimPrecisionArc extends StatelessWidget {
   final int correct;
   final int total;
   final bool compact;
+  final bool stat;
 
   const PilgrimPrecisionArc({
     required this.percent,
     required this.correct,
     required this.total,
     this.compact = false,
+    this.stat = false,
   });
 
   @override
@@ -696,7 +684,11 @@ class PilgrimPrecisionArc extends StatelessWidget {
         : percent >= 60
             ? AppColors.accent
             : AppColors.coral;
-    final ring = compact ? 72.0 : 108.0;
+    final ring = stat
+        ? 44.0
+        : compact
+        ? 72.0
+        : 108.0;
     final gauge = SizedBox(
       width: ring,
       height: ring,
@@ -704,19 +696,49 @@ class PilgrimPrecisionArc extends StatelessWidget {
         painter: _PrecisionGaugePainter(
           progress: percent / 100,
           tone: tone,
+          stroke: stat ? 4.2 : 7,
         ),
         child: Center(
-          child: Text(
-            '$percent%',
-            style: AppTypography.title(
-              size: compact ? 18 : 22,
-              weight: FontWeight.w900,
-              color: a.text,
+          child: FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Padding(
+              padding: EdgeInsets.symmetric(horizontal: stat ? 6 : 0),
+              child: Text(
+                '$percent%',
+                style: AppTypography.title(
+                  size: stat
+                      ? 11
+                      : compact
+                      ? 18
+                      : 22,
+                  weight: FontWeight.w900,
+                  color: a.text,
+                  height: 1,
+                ),
+              ),
             ),
           ),
         ),
       ),
     );
+
+    if (stat) {
+      return Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          SizedBox(height: 44, child: Center(child: gauge)),
+          const SizedBox(height: 6),
+          Text(
+            '$correct/$total',
+            style: AppTypography.label(
+              size: 9,
+              letterSpacing: 1.2,
+              color: a.textMuted(0.5),
+            ),
+          ),
+        ],
+      );
+    }
 
     if (compact) {
       return Column(
@@ -780,8 +802,13 @@ class PilgrimPrecisionArc extends StatelessWidget {
 class _PrecisionGaugePainter extends CustomPainter {
   final double progress;
   final Color tone;
+  final double stroke;
 
-  const _PrecisionGaugePainter({required this.progress, required this.tone});
+  const _PrecisionGaugePainter({
+    required this.progress,
+    required this.tone,
+    this.stroke = 7,
+  });
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -805,7 +832,7 @@ class _PrecisionGaugePainter extends CustomPainter {
     final track = Paint()
       ..color = Colors.white.withValues(alpha: 0.08)
       ..style = PaintingStyle.stroke
-      ..strokeWidth = 7
+      ..strokeWidth = stroke
       ..strokeCap = StrokeCap.round;
     canvas.drawArc(
       Rect.fromCircle(center: center, radius: r),
@@ -827,7 +854,7 @@ class _PrecisionGaugePainter extends CustomPainter {
         ],
       ).createShader(Rect.fromCircle(center: center, radius: r))
       ..style = PaintingStyle.stroke
-      ..strokeWidth = 7
+      ..strokeWidth = stroke
       ..strokeCap = StrokeCap.round;
     canvas.drawArc(
       Rect.fromCircle(center: center, radius: r),
@@ -840,7 +867,7 @@ class _PrecisionGaugePainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant _PrecisionGaugePainter old) =>
-      old.progress != progress || old.tone != tone;
+      old.progress != progress || old.tone != tone || old.stroke != stroke;
 }
 
 class PilgrimLeadershipMonument extends StatelessWidget {
@@ -892,10 +919,14 @@ class PilgrimLeadershipMonument extends StatelessWidget {
 class PilgrimTrailPath extends StatelessWidget {
   final CaravanTrailSnapshot trail;
   final bool compact;
+  final bool owner;
+  final List<CaravanTrailSnapshot> rest;
 
   const PilgrimTrailPath({
     required this.trail,
     this.compact = false,
+    this.owner = false,
+    this.rest = const [],
   });
 
   @override
@@ -917,8 +948,14 @@ class PilgrimTrailPath extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             RelicChapter(
-              title: compact ? 'Trilha' : 'Sua trilha',
-              whisper: subtitle,
+              title: compact
+                  ? 'Trilha'
+                  : rest.isNotEmpty
+                  ? (owner ? 'Suas trilhas' : 'Trilhas')
+                  : (owner ? 'Sua trilha' : 'Trilha'),
+              whisper: rest.isEmpty
+                  ? subtitle
+                  : '${rest.length + (trail.isComplete ? 0 : 1)} em curso',
               accent: accent,
               trailing: Text(
                 '$pct%',
@@ -961,8 +998,68 @@ class PilgrimTrailPath extends StatelessWidget {
                 ),
               ),
             ],
+            if (rest.isNotEmpty) ...[
+              const SizedBox(height: 16),
+              RelicHairline(accent: accent),
+              const SizedBox(height: 4),
+              for (final other in rest) _OpenTrailRow(trail: other),
+            ],
           ],
         ),
+      ),
+    );
+  }
+}
+
+class _OpenTrailRow extends StatelessWidget {
+  final CaravanTrailSnapshot trail;
+
+  const _OpenTrailRow({required this.trail});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final pct = (trail.progress * 100).round();
+    return Padding(
+      padding: const EdgeInsets.only(top: 12),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Row(
+            children: [
+              Expanded(
+                child: Text(
+                  trail.title,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppTypography.title(
+                    size: 15,
+                    color: a.text,
+                  ),
+                ),
+              ),
+              const SizedBox(width: 10),
+              Text(
+                '$pct%',
+                style: AppTypography.label(
+                  size: 11,
+                  letterSpacing: 0.8,
+                  color: AppColors.accent,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 3),
+          Text(
+            '${trail.missionsDone} de ${trail.missionsTotal} cenas',
+            style: AppTypography.body(
+              size: 12,
+              color: a.textMuted(0.52),
+            ),
+          ),
+          const SizedBox(height: 8),
+          RelicProgress(value: trail.progress, accent: AppColors.accent),
+        ],
       ),
     );
   }

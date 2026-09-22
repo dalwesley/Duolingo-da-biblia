@@ -12,17 +12,20 @@ class StreakWeek extends StatelessWidget {
   /// Se omitido, lê o [ProgressService] local (home).
   final bool Function(DateTime day)? playedOnDate;
   final bool Function(DateTime day)? frozenOnDate;
+  final double orbSize;
 
   const StreakWeek({
     super.key,
     this.playedOnDate,
     this.frozenOnDate,
+    this.orbSize = 34,
   });
 
   @override
   Widget build(BuildContext context) {
-    final progress =
-        playedOnDate == null ? context.watch<ProgressService>() : null;
+    final progress = playedOnDate == null
+        ? context.watch<ProgressService>()
+        : null;
     final a = Appearance.of(context);
     final today = DateTime.now();
     final monday = today.subtract(Duration(days: today.weekday - 1));
@@ -47,12 +50,12 @@ class StreakWeek extends StatelessWidget {
         return Column(
           children: [
             if (iced)
-              const _FrozenDayOrb()
+              _FrozenDayOrb(size: orbSize)
             else
               AnimatedContainer(
                 duration: const Duration(milliseconds: 280),
-                width: 34,
-                height: 34,
+                width: orbSize,
+                height: orbSize,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   gradient: active ? AppGradients.gold : null,
@@ -108,7 +111,9 @@ class StreakWeek extends StatelessWidget {
 /// Dia protegido pelo gelo — mesma linguagem do CTA congelado:
 /// cristal, geada, brilho preso e varredura de reflexo.
 class _FrozenDayOrb extends StatefulWidget {
-  const _FrozenDayOrb();
+  final double size;
+
+  const _FrozenDayOrb({this.size = 34});
 
   @override
   State<_FrozenDayOrb> createState() => _FrozenDayOrbState();
@@ -140,11 +145,11 @@ class _FrozenDayOrbState extends State<_FrozenDayOrb>
         animation: _pulse,
         builder: (context, _) {
           return SizedBox(
-            width: 34,
-            height: 34,
+            width: widget.size,
+            height: widget.size,
             child: CustomPaint(
               painter: _FrozenOrbPainter(t: _pulse.value),
-              size: const Size.square(34),
+              size: Size.square(widget.size),
             ),
           );
         },
@@ -178,12 +183,7 @@ class _FrozenOrbPainter extends CustomPainter {
     canvas.restore();
   }
 
-  void _paintIceBody(
-    Canvas canvas,
-    Offset c,
-    double r,
-    Rect rect,
-  ) {
+  void _paintIceBody(Canvas canvas, Offset c, double r, Rect rect) {
     canvas.drawCircle(
       c,
       r,
@@ -315,11 +315,7 @@ class _FrozenOrbPainter extends CustomPainter {
       ..shader = LinearGradient(
         begin: Alignment.topCenter,
         end: Alignment.bottomCenter,
-        colors: [
-          AppColors.iceSoft,
-          AppColors.ice,
-          const Color(0xFF3A8AAA),
-        ],
+        colors: [AppColors.iceSoft, AppColors.ice, const Color(0xFF3A8AAA)],
       ).createShader(Rect.fromCircle(center: c, radius: s))
       ..strokeWidth = 1.15
       ..strokeCap = StrokeCap.round
@@ -366,11 +362,7 @@ class _FrozenOrbPainter extends CustomPainter {
       );
     }
 
-    canvas.drawCircle(
-      c,
-      s * 0.09,
-      Paint()..color = AppColors.iceSoft,
-    );
+    canvas.drawCircle(c, s * 0.09, Paint()..color = AppColors.iceSoft);
     canvas.drawCircle(
       c,
       s * 0.045,
@@ -390,8 +382,10 @@ class _FrozenOrbPainter extends CustomPainter {
       final (nx, ny, s, phase) = spec;
       final cycle = (t * 0.55 + phase) % 1.0;
       final alpha =
-          (0.25 + 0.55 * (1 - (cycle - 0.5).abs() * 2) + breathe * 0.12)
-              .clamp(0.0, 0.9);
+          (0.25 + 0.55 * (1 - (cycle - 0.5).abs() * 2) + breathe * 0.12).clamp(
+            0.0,
+            0.9,
+          );
       final ox = nx * size.width;
       final oy = ny * size.height;
       canvas.save();
@@ -414,12 +408,7 @@ class _FrozenOrbPainter extends CustomPainter {
     }
   }
 
-  void _paintRim(
-    Canvas canvas,
-    Offset c,
-    double r,
-    Rect rect,
-  ) {
+  void _paintRim(Canvas canvas, Offset c, double r, Rect rect) {
     canvas.drawCircle(
       c,
       r - 0.7,

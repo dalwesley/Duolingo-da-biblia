@@ -160,7 +160,6 @@ void main() {
       ),
     );
 
-    expect(find.text('Compreensão à frente'), findsOneWidget);
     expect(find.text('Modo Compreensão'), findsOneWidget);
     expect(find.byKey(const ValueKey('mode-emblem-caminhada')), findsWidgets);
   });
@@ -220,9 +219,9 @@ void main() {
 
     expect(find.text('Modo Observação'), findsOneWidget);
     expect(find.text('Observação · 7 de 23 passos'), findsOneWidget);
-    expect(find.text('você está aqui'), findsOneWidget);
-    expect(find.text('AGORA'), findsNothing);
-    expect(find.text('CONTINUAR →'), findsNothing);
+    expect(find.text('AGORA'), findsOneWidget);
+    expect(find.text('CONTINUAR →'), findsOneWidget);
+    expect(find.text('você está aqui'), findsNothing);
   });
 
   testWidgets('labeled strip reports the tapped mode', (tester) async {

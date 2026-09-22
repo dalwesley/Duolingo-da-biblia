@@ -9,7 +9,6 @@ import '../utils/day_phase.dart';
 import '../utils/liturgical_calendar.dart';
 import 'cinematic_icon.dart';
 import 'streak_week.dart';
-import 'ui_primitives.dart';
 import 'user_avatar.dart';
 
 /// Saudação do dia — identidade + pulso, sem HUD de lâmpadas (isso é da missão).
@@ -41,26 +40,26 @@ class HomePlayerHeader extends StatelessWidget {
     final liturgy = LiturgicalCalendar.accentOf(moment.season);
 
     return Container(
-      padding: const EdgeInsets.fromLTRB(14, 12, 14, 14),
+      padding: const EdgeInsets.fromLTRB(12, 10, 12, 10),
       decoration: BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
-            Color.lerp(a.cardFill, liturgy, 0.08)!,
-            a.cardFill,
-            Color.lerp(a.cardFill, Colors.black, 0.1)!,
+            Color.lerp(a.cardFill, liturgy, 0.06)!,
+            a.cardFill.withValues(alpha: 0.82),
           ],
         ),
         borderRadius: BorderRadius.circular(AppRadii.lg),
         border: Border.all(
-          color: HomeTrailChrome.outlineOf(context) ??
-              (atRisk
-                  ? AppColors.error.withValues(alpha: 0.55)
-                  : a.cardBorder),
-          width: AppMetrics.cardBorderWidth,
+          color:
+              (HomeTrailChrome.outlineOf(context) ??
+                      (atRisk
+                          ? AppColors.error.withValues(alpha: 0.55)
+                          : a.cardBorder))
+                  .withValues(alpha: 0.45),
+          width: 1.2,
         ),
-        boxShadow: AppMetrics.cardShadow(hardLip: false),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -79,9 +78,9 @@ class HomePlayerHeader extends StatelessWidget {
                   photoUrl: backend.userPhotoUrl,
                   seed: backend.uid,
                   style: progress.settings.portraitStyle,
-                  radius: 22,
+                  radius: 18,
                 ),
-                const SizedBox(width: 12),
+                const SizedBox(width: 10),
                 Expanded(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
@@ -89,18 +88,18 @@ class HomePlayerHeader extends StatelessWidget {
                       Text(
                         DayPhaseHelper.greeting(),
                         style: AppTypography.label(
-                          size: 10,
+                          size: 9,
                           letterSpacing: 0.8,
-                          color: a.textMuted(0.55),
+                          color: a.textMuted(0.5),
                         ),
                       ),
-                      const SizedBox(height: 2),
+                      const SizedBox(height: 1),
                       Text(
                         name,
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         style: AppTypography.display(
-                          size: 22,
+                          size: 18,
                           weight: FontWeight.w800,
                           color: a.text,
                           height: 1.05,
@@ -118,7 +117,7 @@ class HomePlayerHeader extends StatelessWidget {
               ],
             ),
           ),
-          const SizedBox(height: 14),
+          const SizedBox(height: 10),
           GestureDetector(
             onTap: onTapMission,
             behavior: HitTestBehavior.opaque,
@@ -150,7 +149,8 @@ class HomePlayerHeader extends StatelessWidget {
                     accent: progress.streakFreezeUsedThisWeek
                         ? a.textMuted(0.55)
                         : AppColors.iceSoft,
-                    label: progress.streakFreezeUsedThisWeek ||
+                    label:
+                        progress.streakFreezeUsedThisWeek ||
                             progress.streakFreezeAvailable
                         ? '1'
                         : '0',
@@ -160,8 +160,8 @@ class HomePlayerHeader extends StatelessWidget {
               ],
             ),
           ),
-          const SizedBox(height: 12),
-          const StreakWeek(),
+          const SizedBox(height: 8),
+          const StreakWeek(orbSize: 28),
         ],
       ),
     );
@@ -245,7 +245,7 @@ class _Stat extends StatelessWidget {
           children: [
             CinematicIcon(
               glyph: glyph,
-              size: 16,
+              size: 14,
               accent: accent,
               glowing: false,
               framed: false,
@@ -254,7 +254,7 @@ class _Stat extends StatelessWidget {
             Text(
               label,
               style: AppTypography.title(
-                size: 14,
+                size: 13,
                 weight: FontWeight.w900,
                 color: a.text,
               ),

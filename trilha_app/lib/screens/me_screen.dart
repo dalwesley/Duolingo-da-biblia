@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../data/trail_repository.dart';
 import '../models/caravan_pilgrim_profile.dart';
 import '../models/caravan_profile_prefs.dart';
+import '../models/corner_challenge.dart';
 import '../services/bible_service.dart';
 import '../services/backend_service.dart';
 import '../services/corner_service.dart';
@@ -13,14 +13,16 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
 import '../widgets/cinematic_icon.dart';
-import '../widgets/corner_record_card.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/living_seed_card.dart';
 import '../widgets/milestone_chests.dart';
 import '../widgets/pilgrim_profile_sections.dart';
+import '../widgets/portrait_picker_sheet.dart';
 import '../widgets/reflection_journal_card.dart';
 import '../widgets/relic_panel.dart';
+import '../widgets/streak_week.dart';
 import '../widgets/top_bar.dart';
+import '../widgets/user_avatar.dart';
 import 'bible_screen.dart';
 import 'settings_screen.dart';
 
@@ -43,7 +45,7 @@ void openMeProfile(BuildContext context) {
                 inline: true,
                 immersive: true,
                 dark: appearance.onDark,
-                title: progress.userName,
+                title: 'Perfil',
                 subtitle: 'Sua caminhada',
                 onBack: () => Navigator.pop(ctx),
                 leadingGlyph: CinematicGlyph.humanity,
@@ -68,8 +70,6 @@ class MeScreen extends StatefulWidget {
 }
 
 class _MeScreenState extends State<MeScreen> {
-  final _repo = TrailRepository();
-  int _trailCount = 0;
   CaravanPilgrimProfile? _caravanProfile;
   int _overallRank = 0;
   bool _caravanLoading = true;
@@ -77,16 +77,7 @@ class _MeScreenState extends State<MeScreen> {
   @override
   void initState() {
     super.initState();
-    _load();
-  }
-
-  Future<void> _load() async {
-    final trails = await _repo.getTrails();
-    if (!mounted) return;
-    setState(() {
-      _trailCount = trails.where((t) => t.missionSlugs.isNotEmpty).length;
-    });
-    await _loadCaravan();
+    _loadCaravan();
   }
 
   Future<void> _loadCaravan() async {
@@ -131,21 +122,32 @@ class _MeScreenState extends State<MeScreen> {
     final progress = context.watch<ProgressService>();
     final record = context.watch<CornerService>().record;
     final profile = _caravanProfile;
-    final accuracy = profile?.accuracyPercent;
+    final accuracy = profile?.accuracyPercent ??
+        (progress.lifetimeQuestionsAnswered > 0
+            ? ((progress.lifetimeQuestionsCorrect /
+                          progress.lifetimeQuestionsAnswered) *
+                      100)
+                  .round()
+                  .clamp(0, 100)
+            : null);
 
     final body = <Widget>[
-      const LivingSeedCard(),
-      const SizedBox(height: AppSpace.md),
-      _JourneySummaryBar(
+      _ProfileIdentityCard(
         steps: progress.steps,
         missions: progress.completedMissions.length,
-        trails: _trailCount,
         accuracyPercent: accuracy,
+        accuracyCorrect:
+            profile?.lifetimeQuestionsCorrect ??
+            progress.lifetimeQuestionsCorrect,
+        accuracyTotal:
+            profile?.lifetimeQuestionsAnswered ??
+            progress.lifetimeQuestionsAnswered,
+        rank: _overallRank,
+        leaderDays: profile?.daysAsCaravanLeader ?? progress.daysAsCaravanLeader,
+        record: record,
       ),
-      if (!record.isEmpty) ...[
-        const SizedBox(height: AppSpace.md),
-        CornerRecordCard(record: record),
-      ],
+      const SizedBox(height: AppSpace.section),
+      const LivingSeedCard(),
     ];
 
     if (_caravanLoading) {
@@ -159,13 +161,6 @@ class _MeScreenState extends State<MeScreen> {
       final backend = context.read<BackendService>();
       final today = DateTime.now().toIso8601String().substring(0, 10);
       body.addAll([
-        if (_overallRank > 0) ...[
-          const SizedBox(height: AppSpace.md),
-          PilgrimMeRankHeader(
-            rank: _overallRank,
-            weeklySteps: false,
-          ),
-        ],
         const SizedBox(height: AppSpace.section),
         PilgrimProfileDetailSections(
           profile: profile,
@@ -180,7 +175,12 @@ class _MeScreenState extends State<MeScreen> {
           ),
           isOwner: true,
           onOpenSettings: _openCaravanPrivacySettings,
-          omitSections: const {CaravanProfileSection.ranking},
+          omitSections: const {
+            CaravanProfileSection.ranking,
+            CaravanProfileSection.daysAsLeader,
+            CaravanProfileSection.accuracy,
+            CaravanProfileSection.presence,
+          },
           includeStreakMilestones: false,
         ),
       ]);
@@ -248,86 +248,180 @@ class _MeScreenState extends State<MeScreen> {
   }
 }
 
-class _JourneySummaryBar extends StatelessWidget {
+class _ProfileIdentityCard extends StatelessWidget {
   final int steps;
   final int missions;
-  final int trails;
   final int? accuracyPercent;
+  final int accuracyCorrect;
+  final int accuracyTotal;
+  final int rank;
+  final int leaderDays;
+  final CornerRecord record;
 
-  const _JourneySummaryBar({
+  const _ProfileIdentityCard({
     required this.steps,
     required this.missions,
-    required this.trails,
-    this.accuracyPercent,
+    required this.accuracyPercent,
+    required this.accuracyCorrect,
+    required this.accuracyTotal,
+    required this.rank,
+    required this.leaderDays,
+    required this.record,
   });
+
+  String? get _whisper {
+    final parts = <String>[];
+    if (rank > 0) {
+      parts.add(rank <= 3 ? pilgrimRankEpithet(rank) : '$rankº na caravana');
+    }
+    if (leaderDays > 0) {
+      parts.add(leaderDays == 1 ? '1 dia no topo' : '$leaderDays dias no topo');
+    }
+    if (!record.isEmpty) parts.add(record.line);
+    if (parts.isEmpty && accuracyPercent != null) {
+      parts.add(pilgrimAccuracyEpithet(accuracyPercent!));
+    }
+    if (parts.isEmpty) return null;
+    return parts.join(' · ');
+  }
 
   @override
   Widget build(BuildContext context) {
+    final progress = context.watch<ProgressService>();
+    final backend = context.watch<BackendService>();
+    final a = Appearance.of(context);
+    final name = progress.userName.trim().isEmpty
+        ? 'Peregrino'
+        : progress.userName.trim();
+    final whisper = _whisper;
+    final showPrecision = accuracyPercent != null && accuracyTotal > 0;
+
     return RelicPanel(
-      padding: const EdgeInsets.fromLTRB(10, 16, 10, 16),
-      child: Row(
+      elevated: true,
+      padding: const EdgeInsets.fromLTRB(18, 18, 18, 16),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Expanded(
-            child: _SummaryCell(
-              value: '$steps',
-              label: 'Passos',
-              accent: AppColors.accent,
-              glyph: CinematicGlyph.path,
-            ),
+          Row(
+            children: [
+              UserAvatar(
+                name: name,
+                photoUrl: backend.userPhotoUrl,
+                seed: backend.uid,
+                style: progress.settings.portraitStyle,
+                radius: 40,
+                borderColor: AppColors.accent.withValues(alpha: 0.85),
+                editable: true,
+                onTap: () => showPortraitPickerSheet(context),
+              ),
+              const SizedBox(width: 14),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      name,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: AppTypography.display(
+                        size: 24,
+                        weight: FontWeight.w800,
+                        color: a.text,
+                        height: 1.05,
+                      ),
+                    ),
+                    if (whisper != null) ...[
+                      const SizedBox(height: 6),
+                      Text(
+                        whisper,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: AppTypography.body(
+                          size: 13,
+                          height: 1.3,
+                          color: rank > 0 && rank <= 3
+                              ? pilgrimRankAccent(rank)
+                              : a.textMuted(0.62),
+                        ),
+                      ),
+                    ],
+                  ],
+                ),
+              ),
+            ],
           ),
-          Expanded(
-            child: _SummaryCell(
-              value: '$missions',
-              label: 'Cenas',
-              accent: AppColors.primaryLight,
-              glyph: CinematicGlyph.scroll,
-            ),
+          const SizedBox(height: 18),
+          const RelicHairline(),
+          const SizedBox(height: 14),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                child: _IdentityStat(
+                  value: pilgrimFormatCount(steps),
+                  label: 'Passos',
+                ),
+              ),
+              _IdentityRule(a: a),
+              Expanded(
+                child: _IdentityStat(
+                  value: pilgrimFormatCount(missions),
+                  label: 'Cenas',
+                ),
+              ),
+              if (showPrecision) ...[
+                _IdentityRule(a: a),
+                Expanded(
+                  child: PilgrimPrecisionArc(
+                    percent: accuracyPercent!,
+                    correct: accuracyCorrect,
+                    total: accuracyTotal,
+                    stat: true,
+                  ),
+                ),
+              ],
+            ],
           ),
-          Expanded(
-            child: _SummaryCell(
-              value: accuracyPercent != null ? '$accuracyPercent%' : '$trails',
-              label: accuracyPercent != null ? 'Acertos' : 'Trilhas',
-              accent: accuracyPercent != null ? AppColors.teal : AppColors.cedar,
-              glyph: accuracyPercent != null
-                  ? CinematicGlyph.target
-                  : CinematicGlyph.mountain,
-            ),
-          ),
+          const SizedBox(height: 16),
+          const RelicHairline(),
+          const SizedBox(height: 12),
+          const StreakWeek(orbSize: 30),
         ],
       ),
     );
   }
 }
 
-class _SummaryCell extends StatelessWidget {
+class _IdentityStat extends StatelessWidget {
   final String value;
   final String label;
-  final Color accent;
-  final CinematicGlyph glyph;
 
-  const _SummaryCell({
-    required this.value,
-    required this.label,
-    required this.accent,
-    required this.glyph,
-  });
+  const _IdentityStat({required this.value, required this.label});
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     return Column(
       children: [
-        RelicDisc(glyph: glyph, accent: accent, size: 40),
-        const SizedBox(height: 8),
-        Text(
-          value,
-          style: AppTypography.title(
-            size: 18,
-            weight: FontWeight.w900,
-            color: a.text,
+        SizedBox(
+          height: 44,
+          child: Center(
+            child: FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text(
+                value,
+                maxLines: 1,
+                style: AppTypography.title(
+                  size: 20,
+                  weight: FontWeight.w900,
+                  color: a.text,
+                  height: 1,
+                ),
+              ),
+            ),
           ),
         ),
-        const SizedBox(height: 2),
+        const SizedBox(height: 6),
         Text(
           label.toUpperCase(),
           style: AppTypography.label(
@@ -337,6 +431,22 @@ class _SummaryCell extends StatelessWidget {
           ),
         ),
       ],
+    );
+  }
+}
+
+class _IdentityRule extends StatelessWidget {
+  final AppearanceStyle a;
+
+  const _IdentityRule({required this.a});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 1,
+      height: 44,
+      margin: const EdgeInsets.symmetric(horizontal: 4),
+      color: a.cardBorder.withValues(alpha: 0.85),
     );
   }
 }
