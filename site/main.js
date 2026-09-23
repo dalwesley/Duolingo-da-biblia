@@ -117,7 +117,10 @@ document.querySelectorAll('[data-kinetic]').forEach((el) => {
 
 (function intro() {
   const stages = ['s1', 's2', 's3', 's4'];
-  const times = [180, 1700, 2750, 3600];
+  // Sem o versículo, a luz e o título entram logo — não fica tela preta.
+  const times = document.querySelector('.genesis')
+    ? [180, 1700, 2750, 3600]
+    : [80, 80, 280, 700];
   const skipEvents = ['wheel', 'touchmove', 'keydown'];
   const replay = document.querySelector('.replay-intro');
   let timers = [];

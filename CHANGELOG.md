@@ -9,6 +9,24 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
+## [1.0.28] — 2026-09-23
+
+### Added
+- Eco na celebração: quando a próxima missão tem `echoQuestion`, o fechamento planta a pergunta de amanhã (Gênesis e Recomeço com ecos escritos à mão)
+- Reconhecimento entre peregrinos: um toque na caminhada ou na medalha — card na Home, histórico no perfil, push e regras no Firestore
+- Companhia: semana juntos (Seg–Dom), marcos com barra e card “Como funciona” no card da dupla
+- Site de divulgação: hero, gestos, privacidade, sitemap e deep link `/abrir/juntos`
+
+### Changed
+- Companhia fala de presença, não de placar de passos; avatar maior e insight sem ranking
+- Grupos (Salas): copy clara — código, lista de quem estudou na semana, baú e meta
+- Trilhas por dor (Recomeço/Ansiedade) sempre sobrescrevem stub remoto do mesmo slug
+- Celebração: Eco no lugar do placar; gancho clássico só quando não há pergunta plantada
+- Site: abertura mais rápida sem o bloco de Gênesis no hero; Juntos alinhado ao app
+
+### Fixed
+- Eco apontava para a trilha de entrada errada depois de terminar Recomeço
+
 ## [1.0.27] — 2026-09-22
 
 ### Changed

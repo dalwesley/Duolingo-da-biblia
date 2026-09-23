@@ -852,7 +852,7 @@ class _LeagueScreenState extends State<LeagueScreen>
           const _RoomsIntro(
             title: 'Estudem juntos',
             subtitle:
-                'Célula, sala de EBD ou o devocional da semana.\nRanking só de quem entrou — foco no grupo.',
+                'Crie o grupo, mande o código e veja quem estudou nesta semana.',
           ),
         ),
         const SizedBox(height: AppSpace.section),
@@ -894,11 +894,13 @@ class _LeagueScreenState extends State<LeagueScreen>
             context,
             code: room.code,
             title: room.name,
-            subtitle: 'Escaneie o QR ou entre com o código',
+            subtitle: 'Aponte a câmera ou digite o código para entrar',
             companionMode: false,
             inviterName: progress.userName,
             shareMessage:
-                'Entre no grupo "${room.name}" no Stway com o código ${room.code}.\n\n'
+                'Entra no grupo "${room.name}" no Stway.\n'
+                'Código: ${room.code}\n\n'
+                'A lista mostra quem estudou nesta semana.\n\n'
                 'Ainda não tem o app? Baixe: ${AppUpdateService.androidStoreUrl}',
           ),
           onLeave: () async {
@@ -957,7 +959,7 @@ class _LeagueScreenState extends State<LeagueScreen>
         )
       else if (members.isEmpty)
         Text(
-          'Ainda sem participantes. Compartilhe o código ${room.code}.',
+          'Ninguém entrou ainda. Envie o código ${room.code}.',
           textAlign: TextAlign.center,
           style: AppTypography.body(
             color: Appearance.of(context).textMuted(0.7),
@@ -997,8 +999,8 @@ class _LeagueScreenState extends State<LeagueScreen>
     final raw = await showDialog<String>(
       context: context,
       builder: (ctx) => _TextInputDialog(
-        title: 'Meta semanal do grupo',
-        hint: 'Ex.: 500 (deixe em branco para tirar a meta)',
+        title: 'Meta de passos do grupo',
+        hint: 'Soma da semana. Em branco, tira a meta.',
         confirmLabel: 'Salvar',
         maxLength: 6,
         initialValue: current != null ? '$current' : '',
@@ -1019,8 +1021,8 @@ class _LeagueScreenState extends State<LeagueScreen>
     final name = await showDialog<String>(
       context: context,
       builder: (ctx) => const _TextInputDialog(
-        title: 'Criar grupo',
-        hint: 'Ex.: Célula Norte, EBD Jovens',
+        title: 'Nome do grupo',
+        hint: 'Ex.: Célula Norte',
         confirmLabel: 'Criar',
         maxLength: 40,
       ),
@@ -1035,7 +1037,7 @@ class _LeagueScreenState extends State<LeagueScreen>
       showAppToastFor(
         context,
         message:
-            'Grupo criado! Código: ${context.read<RoomService>().activeCode}',
+            'Grupo criado. Mande o código ${context.read<RoomService>().activeCode}.',
         glyph: CinematicGlyph.people,
       );
     }
@@ -1046,7 +1048,7 @@ class _LeagueScreenState extends State<LeagueScreen>
       context: context,
       builder: (ctx) => const _TextInputDialog(
         title: 'Entrar no grupo',
-        hint: 'Código',
+        hint: 'Código que você recebeu',
         confirmLabel: 'Entrar',
         maxLength: 8,
         capitalize: true,
@@ -1072,7 +1074,7 @@ class _LeagueScreenState extends State<LeagueScreen>
             style: AppTypography.title(color: a.text),
           ),
           content: Text(
-            'Você sai do ranking deste grupo. Pode entrar de novo com o código.',
+            'Você sai da lista. Para voltar, use o código de novo.',
             style: TextStyle(color: a.textMuted(0.8)),
           ),
           actions: [
@@ -1266,13 +1268,14 @@ class _RoomsOfflineCard extends StatelessWidget {
           ),
           const SizedBox(height: 14),
           Text(
-            'Grupos precisam da nuvem',
+            'Entre para criar o grupo',
             textAlign: TextAlign.center,
             style: AppTypography.display(size: 24),
           ),
           const SizedBox(height: 8),
           Text(
-            error ?? 'Entre com Google para caminhar na caravana ao vivo.',
+            error ??
+                'O grupo fica na sua conta. Entre com Google para criar ou usar um código.',
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 13,
@@ -1290,7 +1293,7 @@ class _RoomsOfflineCard extends StatelessWidget {
           ),
           const SizedBox(height: 10),
           Text(
-            'Faça login com Google ao abrir o app',
+            'Sem login, o código não funciona',
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 12,
@@ -1316,9 +1319,10 @@ class _RoomsIntro extends StatelessWidget {
     return Column(
       children: [
         Text(
-          'NA IGREJA',
+          'CÉLULA, EBD, DEVOCIONAL',
+          textAlign: TextAlign.center,
           style: AppTypography.label(
-            letterSpacing: 2,
+            letterSpacing: 1.1,
             color: AppColors.accent.withValues(alpha: 0.9),
           ),
         ),
@@ -1371,13 +1375,13 @@ class _RoomsEmptyState extends StatelessWidget {
           ),
           const SizedBox(height: 14),
           Text(
-            'Quem vai estudar com você?',
+            'A lista é só de quem entrou',
             textAlign: TextAlign.center,
             style: AppTypography.display(size: 26),
           ),
           const SizedBox(height: 10),
           Text(
-            'Crie o grupo e envie o código, ou entre num grupo que o líder já abriu. Célula, EBD, jovens ou o devocional — a semana fica mais clara no mesmo placar.',
+            'Mande o código no WhatsApp da célula, da sala de EBD ou do devocional. Cada pessoa aparece com os passos que fez nesta semana. Quem não tem o código não entra.',
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 13,
@@ -1390,22 +1394,22 @@ class _RoomsEmptyState extends StatelessWidget {
             children: [
               _RoomBenefit(
                 glyph: CinematicGlyph.lock,
-                label: 'Célula',
-                detail: 'Só quem entrou',
+                label: 'Código',
+                detail: 'Só quem tem entra',
                 color: a.textMuted(0.78),
               ),
               const SizedBox(width: 8),
               _RoomBenefit(
                 glyph: CinematicGlyph.people,
-                label: 'EBD',
-                detail: 'A sala de domingo',
+                label: 'Lista',
+                detail: 'Quem estudou',
                 color: a.textMuted(0.78),
               ),
               const SizedBox(width: 8),
               _RoomBenefit(
                 glyph: CinematicGlyph.podium,
-                label: 'Devocional',
-                detail: 'Placar da semana',
+                label: 'Semana',
+                detail: 'Fecha no domingo',
                 color: a.textMuted(0.78),
               ),
             ],
@@ -1571,7 +1575,7 @@ class _RoomWeekPulse extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Pulso da semana',
+                      'Quem estudou',
                       style: AppTypography.display(
                         size: 18,
                         weight: FontWeight.w800,
@@ -1581,8 +1585,8 @@ class _RoomWeekPulse extends StatelessWidget {
                     const SizedBox(height: 4),
                     Text(
                       total == 0
-                          ? 'Convide alguém para o grupo'
-                          : '$active de $total caminharam · $today hoje',
+                          ? 'Ninguém entrou. Envie o código.'
+                          : '$active de $total estudaram · $today hoje',
                       style: AppTypography.body(
                         size: 13,
                         color: a.textMuted(0.7),
@@ -1603,7 +1607,7 @@ class _RoomWeekPulse extends StatelessWidget {
           if (goal != null && goal > 0) ...[
             const SizedBox(height: 10),
             Text(
-              '$sumSteps de $goal passos da meta do grupo',
+              '$sumSteps de $goal passos somados do grupo',
               style: AppTypography.body(
                 size: 12,
                 weight: FontWeight.w700,
@@ -1632,12 +1636,12 @@ class _RoomWeekPulse extends StatelessWidget {
               opacity: ready ? 1 : 0.55,
               child: CopperCta(
                 label: ready
-                    ? 'Abrir baú do grupo · +${RemoteConfigService.instance.roomChestBonusSteps}'
+                    ? 'Abrir baú · +${RemoteConfigService.instance.roomChestBonusSteps} passos'
                     : walkedToday
                     ? (goal != null && goal > 0
-                          ? 'Baú libera com metade do grupo ou a meta'
-                          : 'Baú libera com metade do grupo')
-                    : 'Caminhe hoje para liberar o baú',
+                          ? 'Abre com metade do grupo ou a meta'
+                          : 'Abre quando metade do grupo estudar')
+                    : 'Estude hoje para abrir o baú',
                 onTap: ready ? onClaim : null,
                 expanded: true,
               ),
@@ -1677,7 +1681,9 @@ class _RoomHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final days = LeagueService.daysLeft();
-    final closesText = days <= 1 ? 'Fecha hoje' : '$days dias';
+    final closesText = days <= 1
+        ? 'A lista fecha hoje'
+        : 'A lista fecha em $days dias';
 
     return GlassCard(
       padding: const EdgeInsets.fromLTRB(18, 18, 18, 14),
@@ -1798,14 +1804,14 @@ class _RoomHeader extends StatelessWidget {
           Row(
             children: [
               _RoomStatChip(
-                label: 'Seu lugar',
+                label: 'Posição',
                 value: rank == null ? '--' : '$rankº',
                 accent: rank != null,
               ),
               const SizedBox(width: 8),
               _RoomStatChip(label: 'Pessoas', value: '$memberCount'),
               const SizedBox(width: 8),
-              _RoomStatChip(label: 'Você', value: '$weeklySteps'),
+              _RoomStatChip(label: 'Seus passos', value: '$weeklySteps'),
             ],
           ),
           const SizedBox(height: 10),
@@ -1820,7 +1826,7 @@ class _RoomHeader extends StatelessWidget {
               const SizedBox(width: 6),
               Expanded(
                 child: Text(
-                  'Semana da caravana: $closesText',
+                  closesText,
                   style: AppTypography.body(
                     size: 12,
                     weight: FontWeight.w700,
