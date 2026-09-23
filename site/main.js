@@ -82,27 +82,49 @@ document.querySelectorAll('[data-kinetic]').forEach((el) => {
 /* ─── Abertura: "No princípio… e houve luz." ───────── */
 
 (function intro() {
-  let seen = false;
-  try { seen = sessionStorage.getItem('stway-intro') === '1'; } catch (_) { /* sem storage */ }
-  if (!motionOk || seen || window.scrollY > 40 || location.hash) return;
-
-  root.classList.add('intro');
   const stages = ['s1', 's2', 's3', 's4'];
   const times = [180, 1700, 2750, 3600];
-  const timers = stages.map((stage, i) => setTimeout(() => root.classList.add(stage), times[i]));
+  const skipEvents = ['wheel', 'touchmove', 'keydown'];
+  const replay = document.querySelector('.replay-intro');
+  let timers = [];
 
   function finish() {
     timers.forEach(clearTimeout);
+    timers = [];
     root.classList.add(...stages);
     try { sessionStorage.setItem('stway-intro', '1'); } catch (_) { /* sem storage */ }
-    ['wheel', 'touchmove', 'keydown'].forEach((type) => window.removeEventListener(type, finish));
+    skipEvents.forEach((type) => window.removeEventListener(type, finish));
   }
 
-  setTimeout(finish, times[3]);
+  function play() {
+    timers.forEach(clearTimeout);
+    // Volta ao escuro sem animar a saída, depois roda a linha do tempo do zero.
+    root.classList.add('intro-reset', 'intro');
+    root.classList.remove(...stages);
+    void root.offsetHeight;
+    root.classList.remove('intro-reset');
+    timers = stages.map((stage, i) => setTimeout(() => root.classList.add(stage), times[i]));
+    timers.push(setTimeout(finish, times[3]));
+    skipEvents.forEach((type) => window.addEventListener(type, finish, { passive: true, once: true }));
+  }
+
   document.querySelector('.skip-intro')?.addEventListener('click', finish);
-  ['wheel', 'touchmove', 'keydown'].forEach((type) => {
-    window.addEventListener(type, finish, { passive: true, once: true });
+
+  if (!motionOk) {
+    replay?.remove();
+    return;
+  }
+
+  replay?.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+    // Evita que o próprio scroll de volta conte como "pular".
+    requestAnimationFrame(play);
   });
+
+  let seen = false;
+  try { seen = sessionStorage.getItem('stway-intro') === '1'; } catch (_) { /* sem storage */ }
+  if (seen || window.scrollY > 40 || location.hash) return;
+  play();
 })();
 
 /* ─── Motor de cenas: --p de 0→1 por seção ─────────── */
