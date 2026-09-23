@@ -12,6 +12,7 @@ import 'user_avatar.dart';
 /// Escolha do retrato — foto, letra ou peregrino ilustrado.
 Future<void> showPortraitPickerSheet(BuildContext context) {
   HapticFeedback.selectionClick();
+  context.read<BackendService>().ensureAccountPhoto(allowPrompt: true);
   return showModalBottomSheet<void>(
     context: context,
     backgroundColor: Colors.transparent,

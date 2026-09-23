@@ -4,18 +4,21 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 import '../models/pilgrim_medals.dart';
+import '../models/recognition.dart';
 import '../services/medal_engagement_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
 import 'confetti_overlay.dart';
 import 'medal_cinematic_widgets.dart';
+import 'recognition_actions.dart';
 import 'ui_primitives.dart';
 
 Future<void> showTrackDetailSheet(
   BuildContext context,
   PilgrimTrackState trackState, {
   int? highlightLevelIndex,
+  String? recognizeToUid,
 }) {
   HapticFeedback.selectionClick();
   return showModalBottomSheet<void>(
@@ -28,6 +31,7 @@ Future<void> showTrackDetailSheet(
     builder: (ctx) => _TrackDetailSheet(
       trackState: trackState,
       highlightLevelIndex: highlightLevelIndex,
+      recognizeToUid: recognizeToUid,
     ),
   );
 }
@@ -59,6 +63,7 @@ Future<void> showMedalTileSheet(
   BuildContext context,
   PilgrimMedalTile tile, {
   bool celebration = false,
+  String? recognizeToUid,
 }) {
   if (celebration) {
     HapticFeedback.mediumImpact();
@@ -75,6 +80,7 @@ Future<void> showMedalTileSheet(
     builder: (ctx) => _MedalDetailSheet(
       tile: tile,
       celebration: celebration,
+      recognizeToUid: recognizeToUid,
     ),
   );
 }
@@ -121,10 +127,12 @@ Future<void> showMedalUnlockSheet(
 class _MedalDetailSheet extends StatefulWidget {
   final PilgrimMedalTile tile;
   final bool celebration;
+  final String? recognizeToUid;
 
   const _MedalDetailSheet({
     required this.tile,
     this.celebration = false,
+    this.recognizeToUid,
   });
 
   @override
@@ -206,11 +214,16 @@ class _MedalDetailSheetState extends State<_MedalDetailSheet>
         : a.textMuted(0.45);
     final tier = tierLabel(tile.tier);
     final isDiscovery = tile.secret;
+    final ultra = tile.tier == PilgrimMedalTier.aurora;
     final bottom = MediaQuery.viewPaddingOf(context).bottom;
     final headline = widget.celebration
-        ? (isDiscovery ? 'DESCOBERTA' : 'NOVA CONQUISTA')
+        ? (ultra
+            ? 'ULTRA RARA'
+            : (isDiscovery ? 'DESCOBERTA' : 'NOVA CONQUISTA'))
         : (unlocked
-            ? (isDiscovery ? 'RARA' : tier.toUpperCase())
+            ? (ultra
+                ? 'ULTRA RARA'
+                : (isDiscovery ? 'RARA' : tier.toUpperCase()))
             : (isDiscovery ? 'DESCOBERTA' : 'A CONQUISTAR'));
 
     return Padding(
@@ -273,12 +286,30 @@ class _MedalDetailSheetState extends State<_MedalDetailSheet>
                           opacity: _titleOpacity,
                           child: SlideTransition(
                             position: _titleSlide,
-                            child: Text(
-                              headline,
-                              style: AppTypography.label(
-                                size: 11,
-                                letterSpacing: 2.0,
-                                color: accent,
+                            child: SizedBox(
+                              height: 44,
+                              child: Stack(
+                                alignment: Alignment.center,
+                                children: [
+                                  Text(
+                                    headline,
+                                    style: AppTypography.label(
+                                      size: 11,
+                                      letterSpacing: 2.0,
+                                      color: accent,
+                                    ),
+                                  ),
+                                  if (!widget.celebration && unlocked)
+                                    Align(
+                                      alignment: Alignment.centerRight,
+                                      child: RecognizeHeartButton(
+                                        toUid: widget.recognizeToUid,
+                                        kind: RecognitionKind.medal,
+                                        subjectKey: tile.id,
+                                        padding: EdgeInsets.zero,
+                                      ),
+                                    ),
+                                ],
                               ),
                             ),
                           ),
@@ -374,11 +405,13 @@ class _TrackDetailSheet extends StatefulWidget {
   final PilgrimTrackState trackState;
   final bool celebration;
   final int? highlightLevelIndex;
+  final String? recognizeToUid;
 
   const _TrackDetailSheet({
     required this.trackState,
     this.celebration = false,
     this.highlightLevelIndex,
+    this.recognizeToUid,
   });
 
   @override
@@ -500,12 +533,32 @@ class _TrackDetailSheetState extends State<_TrackDetailSheet>
                               ),
                             ),
                             const SizedBox(height: 20),
-                            Text(
-                              headline,
-                              style: AppTypography.label(
-                                size: 11,
-                                letterSpacing: 2,
-                                color: accent,
+                            SizedBox(
+                              height: 44,
+                              child: Stack(
+                                alignment: Alignment.center,
+                                children: [
+                                  Text(
+                                    headline,
+                                    style: AppTypography.label(
+                                      size: 11,
+                                      letterSpacing: 2,
+                                      color: accent,
+                                    ),
+                                  ),
+                                  if (!widget.celebration &&
+                                      trackState.hasStarted &&
+                                      current != null)
+                                    Align(
+                                      alignment: Alignment.centerRight,
+                                      child: RecognizeHeartButton(
+                                        toUid: widget.recognizeToUid,
+                                        kind: RecognitionKind.medal,
+                                        subjectKey: current.id,
+                                        padding: EdgeInsets.zero,
+                                      ),
+                                    ),
+                                ],
                               ),
                             ),
                             const SizedBox(height: 18),
@@ -887,3 +940,4 @@ class _MedalVaultCompleteSheetState extends State<_MedalVaultCompleteSheet>
     );
   }
 }
+

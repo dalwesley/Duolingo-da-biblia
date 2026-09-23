@@ -12,6 +12,7 @@ import '../models/walk_companion.dart';
 import '../models/corner_challenge.dart';
 import '../utils/appearance.dart';
 import '../utils/catalog_access.dart';
+import '../utils/tomorrow_hook.dart';
 import '../utils/trail_progress.dart';
 import '../models/portrait_style.dart';
 import 'bible_reading_plan_service.dart';
@@ -98,6 +99,7 @@ class ProgressService extends ChangeNotifier {
   static const _keyNextSceneTitle = 'nextSceneTitle';
   static const _keyNextSceneTease = 'nextSceneTease';
   static const _keyLastInsight = 'lastMissionInsightLocal';
+  static const _keyLastEchoQuestion = 'lastEchoQuestionLocal';
   static const _keyDarkMode = 'darkMode';
   static const _keyAppearanceMode = 'appearanceMode';
   static const _keyBibleTranslation = 'bibleTranslationId';
@@ -189,6 +191,8 @@ class ProgressService extends ChangeNotifier {
   String? nextSceneTitle;
   String? nextSceneTease;
   String? lastInsight;
+  /// Pergunta aberta plantada ontem — porta do Eco no dia seguinte.
+  String? lastEchoQuestion;
   Map<String, String> trailDifficulties = {};
 
   /// Modo escolhido na tela de dificuldade — não auto-avançar por cima.
@@ -478,6 +482,7 @@ class ProgressService extends ChangeNotifier {
     nextSceneTitle = prefs.getString(_keyNextSceneTitle);
     nextSceneTease = prefs.getString(_keyNextSceneTease);
     lastInsight = prefs.getString(_keyLastInsight);
+    lastEchoQuestion = prefs.getString(_keyLastEchoQuestion);
     await prefs.setBool(_keyNotificationsPrompted, notificationsPrompted);
     await prefs.setBool(_keyCompanionInviteOffered, companionInviteOffered);
     bibleBrowseOrder = BibleReadingOrder.fromStorage(
@@ -806,8 +811,10 @@ class ProgressService extends ChangeNotifier {
     nextSceneTitle = null;
     nextSceneTease = null;
     lastInsight = null;
+    lastEchoQuestion = null;
     lastBibleReadDate = null;
     bibleBeforeMission = false;
+    _dropOrphanedWalkStats();
     final prefs = await SharedPreferences.getInstance();
     await prefs.remove(_keyHasSeenOnboarding);
     await prefs.remove(_keyFirstOpenDate);
@@ -1431,20 +1438,25 @@ class ProgressService extends ChangeNotifier {
     required String title,
     required String tease,
     String? todayInsight,
+    String? echoQuestion,
     bool saveInsight = false,
   }) async {
     final t = title.trim();
     final s = tease.trim();
     final insight = (todayInsight ?? '').trim();
+    final echo = (echoQuestion ?? '').trim();
     if (t == (nextSceneTitle ?? '') &&
         s == (nextSceneTease ?? '') &&
-        (!saveInsight || insight == (lastInsight ?? ''))) {
+        (!saveInsight ||
+            (insight == (lastInsight ?? '') &&
+                echo == (lastEchoQuestion ?? '')))) {
       return;
     }
     nextSceneTitle = t.isEmpty ? null : t;
     nextSceneTease = s.isEmpty ? null : s;
     if (saveInsight) {
       lastInsight = insight.isEmpty ? null : insight;
+      lastEchoQuestion = echo.isEmpty ? null : echo;
     }
     final prefs = await SharedPreferences.getInstance();
     if (nextSceneTitle == null) {
@@ -1463,7 +1475,26 @@ class ProgressService extends ChangeNotifier {
       } else {
         await prefs.setString(_keyLastInsight, lastInsight!);
       }
+      if (lastEchoQuestion == null) {
+        await prefs.remove(_keyLastEchoQuestion);
+      } else {
+        await prefs.setString(_keyLastEchoQuestion, lastEchoQuestion!);
+      }
     }
+    notifyListeners();
+  }
+
+  /// Limpa o Eco quando a pessoa entra na missão prometida.
+  Future<void> clearEchoIfArrived(String missionTitle) async {
+    final arrived = TomorrowHook.promisedArrived(
+      promisedTitle: nextSceneTitle,
+      currentTitle: missionTitle,
+    );
+    if (!arrived && (lastEchoQuestion ?? '').trim().isEmpty) return;
+    if (!arrived) return;
+    lastEchoQuestion = null;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.remove(_keyLastEchoQuestion);
     notifyListeners();
   }
 
@@ -2746,6 +2777,7 @@ class ProgressService extends ChangeNotifier {
     // Espelha o gate no aparelho (sobrevive a falha de rede no próximo boot).
     await prefs.setBool(_keyHasSeenOnboarding, hasSeenOnboarding);
 
+    _dropOrphanedWalkStats();
     _ensureMissionsDay();
     _ensureQuestDay();
     _ensureWeeklyWeek();
@@ -2848,6 +2880,7 @@ class ProgressService extends ChangeNotifier {
     nextSceneTitle = null;
     nextSceneTease = null;
     lastInsight = null;
+    lastEchoQuestion = null;
     lastBibleReadDate = null;
     bibleBeforeMission = false;
     questProgressMap = {};
@@ -2880,8 +2913,41 @@ class ProgressService extends ChangeNotifier {
     lastWeekKey = null;
     monthlySteps = 0;
     monthlyMonth = _monthKey();
+    _dropOrphanedWalkStats();
     await _persistSettingsLocal();
     await _save();
     notifyListeners();
+  }
+
+  /// Jornada zerada não guarda medalha. Só o Pioneiro fica, via [firstOpenDate].
+  /// Datas soltas não contam: um reset antigo apagava missões e deixava
+  /// acertos, liderança, modos e dias — e as descobertas continuavam.
+  void _dropOrphanedWalkStats() {
+    final journeyGone = steps == 0 &&
+        streak == 0 &&
+        completedMissions.isEmpty &&
+        perfectMissions.isEmpty &&
+        readBibleChapters.isEmpty &&
+        sharedVerseCount == 0 &&
+        memoryMastered.isEmpty &&
+        missionReflections.isEmpty;
+    if (!journeyGone) return;
+    playDates = [];
+    frozenDates = [];
+    lastPlayedDate = null;
+    lifetimeQuestionsCorrect = 0;
+    lifetimeQuestionsAnswered = 0;
+    daysAsCaravanLeader = 0;
+    lastLeaderRankDay = null;
+    lastMissionSlug = null;
+    lastMissionCompletedDate = null;
+    lastBibleReadDate = null;
+    bibleBeforeMission = false;
+    clearedTrailModes = {};
+    seasonWalkDays = {};
+    trailDifficulties = {};
+    pinnedTrailDifficulties = {};
+    _sessionTrailDifficulties = {};
+    _sessionReplayMissionSlugs = {};
   }
 }

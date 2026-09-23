@@ -103,6 +103,7 @@ function emptyStep(n = 1, title = '') {
     hookVerse: '',
     hookNote: '',
     centralInsight: '',
+    echoQuestion: '',
     objective: '',
   };
 }
@@ -558,6 +559,11 @@ export async function renderTrailEditor(root, trailId, navigate) {
                 { where: 'Tela final, depois das perguntas' },
               )}
               ${field(
+                'Eco (pergunta aberta)',
+                `<textarea id="f-echo" rows="2" maxlength="160" placeholder="Pergunta que esta missão responde — plantada ontem, sem spoiler.">${escapeHtml(ms.echoQuestion || '')}</textarea>`,
+                { where: 'Celebração de ontem + porta de hoje. Vazio = gancho clássico.' },
+              )}
+              ${field(
                 'Objetivo (só no painel)',
                 `<input id="f-objective" value="${escapeHtml(ms.objective || '')}" placeholder="O que o aprendiz deve conseguir fazer" />`,
                 { hint: 'Não aparece no app. Ajuda quem escreve o conteúdo.' },
@@ -884,6 +890,7 @@ export async function renderTrailEditor(root, trailId, navigate) {
     ms.intro = root.querySelector('#f-intro')?.value || '';
     ms.objective = root.querySelector('#f-objective')?.value || '';
     ms.centralInsight = root.querySelector('#f-insight')?.value || '';
+    ms.echoQuestion = root.querySelector('#f-echo')?.value?.trim() || '';
     ms.hookRef = root.querySelector('#f-hook-ref')?.value || '';
     ms.hookVerse = root.querySelector('#f-hook-verse')?.value || '';
     ms.hookNote = root.querySelector('#f-hook-note')?.value || '';
@@ -938,7 +945,7 @@ export async function renderTrailEditor(root, trailId, navigate) {
     }
 
     root.querySelectorAll(
-      '#f-title, #f-intro, #f-objective, #f-insight, #f-hook-ref, #f-hook-verse, #f-hook-note, #f-slug, #st-ref, #st-text, #st-kw, #t-title, #t-desc, #t-icon, #t-realm, #t-category, #t-soon',
+      '#f-title, #f-intro, #f-objective, #f-insight, #f-echo, #f-hook-ref, #f-hook-verse, #f-hook-note, #f-slug, #st-ref, #st-text, #st-kw, #t-title, #t-desc, #t-icon, #t-realm, #t-category, #t-soon',
     ).forEach((el) => {
       const bump = () => {
         if (el.id === 't-realm') {

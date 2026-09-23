@@ -1,5 +1,17 @@
 {
   "projects": {
     "default": "trilha-biblia"
+  },
+  "targets": {
+    "trilha-biblia": {
+      "hosting": {
+        "panel": [
+          "trilha-biblia"
+        ],
+        "app": [
+          "stway-app"
+        ]
+      }
+    }
   }
 }

@@ -1,7 +1,9 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:trilha_app/data/entry_trails.dart';
 import 'package:trilha_app/data/season_walk_catalog.dart';
+import 'package:trilha_app/data/trail_repository.dart';
 import 'package:trilha_app/models/season_walk.dart';
+import 'package:trilha_app/models/trail.dart';
 import 'package:trilha_app/utils/liturgical_calendar.dart';
 import 'package:trilha_app/widgets/mission_listen_button.dart';
 
@@ -83,6 +85,25 @@ void main() {
           expect(m.bankTrailSlug, isNotEmpty);
         }
       }
+    });
+
+    test('entry overlay wins over empty remote stub', () {
+      final stub = Trail(
+        slug: 'recomeco',
+        title: 'Recomeço (remoto vazio)',
+        description: '',
+        icon: '',
+        order: 99,
+        comingSoon: true,
+        color: '#000000',
+        modules: const [],
+      );
+      final merged = TrailRepository.mergeEntry([stub]);
+      final hit = merged.firstWhere((t) => t.slug == 'recomeco');
+      expect(hit.comingSoon, isFalse);
+      expect(hit.missionSlugs, hasLength(5));
+      expect(hit.title, 'Recomeço');
+      expect(merged.where((t) => t.slug == 'recomeco'), hasLength(1));
     });
 
     test('seals unlock only after the anchor mission', () {

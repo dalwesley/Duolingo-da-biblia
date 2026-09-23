@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abrir Stway</title>
+  <meta name="description" content="Abrir o Stway na Companhia" />
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #120a06;
+      --gold: #e8c48a;
+      --accent: #d4a84b;
+      --text: #f5f0e8;
+      --muted: rgba(245, 240, 232, 0.65);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100dvh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background:
+        radial-gradient(ellipse at 50% 20%, rgba(196, 160, 112, 0.22), transparent 55%),
+        var(--bg);
+      color: var(--text);
+    }
+    .card {
+      width: min(420px, 100%);
+      padding: 28px 22px;
+      border-radius: 20px;
+      border: 1px solid rgba(196, 160, 112, 0.45);
+      background: rgba(10, 6, 4, 0.72);
+      text-align: center;
+    }
+    .brand {
+      letter-spacing: 0.28em;
+      font-weight: 800;
+      font-size: 13px;
+      color: var(--gold);
+      margin-bottom: 18px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: 1.55rem;
+      line-height: 1.2;
+    }
+    p {
+      margin: 0 0 22px;
+      color: var(--muted);
+      line-height: 1.45;
+      font-size: 0.95rem;
+    }
+    a.btn {
+      display: block;
+      width: 100%;
+      padding: 14px 16px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      margin-bottom: 10px;
+    }
+    a.primary {
+      color: #1a1208;
+      background: linear-gradient(135deg, #f0d078, var(--accent));
+    }
+    a.secondary {
+      color: var(--gold);
+      border: 1px solid rgba(196, 160, 112, 0.45);
+      background: transparent;
+    }
+    .hint {
+      margin-top: 14px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="brand">STWAY</div>
+    <h1>Abrindo a Companhia…</h1>
+    <p>Se o app não abrir sozinho, toque abaixo.</p>
+    <a class="btn primary" id="open" href="stway://juntos">Abrir no Stway</a>
+    <a
+      class="btn secondary"
+      href="https://play.google.com/store/apps/details?id=com.trilha.trilha_app"
+    >Baixar na Play Store</a>
+    <p class="hint">Companhia · caminhada em pares</p>
+  </main>
+  <script>
+    (function () {
+      var deep = 'stway://juntos';
+      var store =
+        'https://play.google.com/store/apps/details?id=com.trilha.trilha_app';
+      var opened = Date.now();
+      // Tenta abrir o app imediatamente (WhatsApp → https → scheme).
+      window.location.href = deep;
+      setTimeout(function () {
+        // Se ainda estamos aqui após ~1.4s, o app provavelmente não abriu.
+        if (Date.now() - opened < 2000) {
+          // Não força a loja automaticamente — o botão cobre o fallback.
+          document.getElementById('open').focus();
+        }
+      }, 1400);
+      // Fallback tardio só se a página continuar visível por muito tempo.
+      setTimeout(function () {
+        if (!document.hidden) {
+          // Mantém o usuário na página com CTAs; store fica opcional.
+        }
+      }, 2500);
+    })();
+  </script>
+</body>
+</html>

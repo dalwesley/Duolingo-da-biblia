@@ -195,7 +195,10 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       unawaited(_syncCompanionAndCelebrateReferral(progress));
     }
     HomeWidgetService.syncFromProgress(progress);
-    MedalEngagementService.instance.scheduleCheck(context);
+    if (context.read<BackendService>().isSignedIn &&
+        progress.hasSeenOnboarding) {
+      MedalEngagementService.instance.scheduleCheck(context);
+    }
   }
 
   Future<void> _syncCompanionAndCelebrateReferral(

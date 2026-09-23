@@ -411,6 +411,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
         title: hydrated.title,
         tease: hydrated.trailer,
         todayInsight: hydrated.todayInsight,
+        echoQuestion: hydrated.echoQuestion,
         saveInsight: true,
       );
       if (mounted) {
@@ -630,12 +631,15 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                         accent: heroAccent,
                                         perfect: widget.perfect,
                                         isBoss: widget.isBoss,
-                                        compact: compact,
+                                        compact: compact ||
+                                            (_hook?.hasEcho ?? false),
                                         pulse: _pulse,
                                         scale: _heroScale,
                                         kicker: _kicker,
                                         headline: _headline,
-                                        insight: _todayLine,
+                                        insight: (_hook?.hasEcho ?? false)
+                                            ? null
+                                            : _todayLine,
                                         medalLine: _medalLine,
                                         count: _countProgress,
                                         awardedSteps: _awardedSteps,
@@ -643,7 +647,9 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                         streakGoal:
                                             progress.settings.streakGoal,
                                         pct: pct,
-                                        mascot: compact
+                                        denseStats: true,
+                                        mascot: compact ||
+                                                (_hook?.hasEcho ?? false)
                                             ? null
                                             : MascotMessages.celebration(
                                                 isBoss: isBoss,
@@ -668,10 +674,14 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                         accent: true,
                                         elevated: true,
                                         padding: EdgeInsets.fromLTRB(
-                                          20,
-                                          compact ? 16 : 20,
-                                          20,
-                                          compact ? 14 : 18,
+                                          (_hook?.hasEcho ?? false) ? 22 : 20,
+                                          (_hook?.hasEcho ?? false)
+                                              ? (compact ? 22 : 28)
+                                              : (compact ? 16 : 20),
+                                          (_hook?.hasEcho ?? false) ? 22 : 20,
+                                          (_hook?.hasEcho ?? false)
+                                              ? (compact ? 20 : 24)
+                                              : (compact ? 14 : 18),
                                         ),
                                         child: _centerBeat(
                                           progress: progress,
@@ -805,6 +815,7 @@ class _HeroBeat extends StatelessWidget {
   final bool perfect;
   final bool isBoss;
   final bool compact;
+  final bool denseStats;
   final AnimationController pulse;
   final Animation<double> scale;
   final String kicker;
@@ -833,6 +844,7 @@ class _HeroBeat extends StatelessWidget {
     required this.streak,
     required this.streakGoal,
     required this.pct,
+    this.denseStats = false,
     this.insight,
     this.medalLine,
     this.mascot,
@@ -841,9 +853,11 @@ class _HeroBeat extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final emblemSize = compact ? 92.0 : 118.0;
-    final iconSize = compact ? 34.0 : 44.0;
+    final emblemSize = compact ? 72.0 : 118.0;
+    final iconSize = compact ? 28.0 : 44.0;
     final inCommit = streak > 0 && streak <= streakGoal;
+    // Sem "SEM ERRO" — a headline já celebra a missão.
+    final showKicker = !perfect && kicker.trim().isNotEmpty;
     return Column(
       children: [
         ScaleTransition(
@@ -868,22 +882,24 @@ class _HeroBeat extends StatelessWidget {
             ),
           ),
         ),
-        SizedBox(height: compact ? 8 : 12),
-        Text(
-          kicker,
-          textAlign: TextAlign.center,
-          style: AppTypography.label(
-            size: 11,
-            letterSpacing: 2.6,
-            color: AppColors.accent,
+        if (showKicker) ...[
+          SizedBox(height: compact ? 6 : 12),
+          Text(
+            kicker,
+            textAlign: TextAlign.center,
+            style: AppTypography.label(
+              size: 11,
+              letterSpacing: 2.6,
+              color: AppColors.accent,
+            ),
           ),
-        ),
-        const SizedBox(height: 6),
+        ],
+        SizedBox(height: showKicker ? 6 : (compact ? 8 : 12)),
         Text(
           headline,
           textAlign: TextAlign.center,
           style: AppTypography.display(
-            size: compact ? 24 : 28,
+            size: compact ? 22 : 28,
             height: 1.12,
             weight: FontWeight.w900,
           ),
@@ -903,25 +919,15 @@ class _HeroBeat extends StatelessWidget {
             ),
           ),
         ],
-        if (perfect || isBoss) ...[
+        if (isBoss) ...[
           const SizedBox(height: 10),
-          Wrap(
-            spacing: 8,
-            runSpacing: 8,
-            alignment: WrapAlignment.center,
-            children: [
-              if (perfect)
-                const _ComboChip(label: 'PERFEITA', color: AppColors.accent),
-              if (isBoss)
-                const _ComboChip(label: 'BOSS', color: AppColors.sand),
-            ],
-          ),
+          const _ComboChip(label: 'BOSS', color: AppColors.sand),
         ],
         if ((medalLine ?? '').trim().isNotEmpty) ...[
           const SizedBox(height: 8),
           _MedalProgressLine(text: medalLine!.trim()),
         ],
-        SizedBox(height: compact ? 12 : 16),
+        SizedBox(height: compact || denseStats ? 10 : 16),
         AnimatedBuilder(
           animation: count,
           builder: (context, _) {
@@ -940,10 +946,10 @@ class _HeroBeat extends StatelessWidget {
                     delay: 0,
                     pulse: pulse,
                     featured: !inCommit,
-                    compact: compact,
+                    dense: denseStats || compact,
                   ),
                 ),
-                const SizedBox(width: AppSpace.sm),
+                SizedBox(width: denseStats || compact ? 6 : AppSpace.sm),
                 Expanded(
                   child: _StatCard(
                     glyph: CinematicGlyph.flame,
@@ -953,10 +959,10 @@ class _HeroBeat extends StatelessWidget {
                     delay: 0.08,
                     pulse: pulse,
                     featured: inCommit,
-                    compact: compact,
+                    dense: denseStats || compact,
                   ),
                 ),
-                const SizedBox(width: AppSpace.sm),
+                SizedBox(width: denseStats || compact ? 6 : AppSpace.sm),
                 Expanded(
                   child: _StatCard(
                     glyph: CinematicGlyph.check,
@@ -965,7 +971,7 @@ class _HeroBeat extends StatelessWidget {
                     color: AppColors.teal,
                     delay: 0.16,
                     pulse: pulse,
-                    compact: compact,
+                    dense: denseStats || compact,
                   ),
                 ),
               ],
@@ -1130,6 +1136,9 @@ class _TomorrowBeat extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    if (hook.hasEcho) {
+      return _EchoBeat(hook: hook, streak: streak, goal: goal);
+    }
     final pull = hook.trailer;
     final ref = (hook.hookRef ?? '').trim();
     return Column(
@@ -1204,6 +1213,75 @@ class _TomorrowBeat extends StatelessWidget {
         ),
         if (CommitStrip.visible(streak: streak, goal: goal)) ...[
           const SizedBox(height: 18),
+          CommitStrip(streak: streak, goal: goal),
+        ],
+      ],
+    );
+  }
+}
+
+/// Cliffhanger bíblico — descoberta de hoje + pergunta aberta + título de amanhã.
+class _EchoBeat extends StatelessWidget {
+  final TomorrowHook hook;
+  final int streak;
+  final int goal;
+
+  const _EchoBeat({
+    required this.hook,
+    required this.streak,
+    required this.goal,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final planted = (hook.todayInsight ?? '').trim();
+    final question = (hook.echoQuestion ?? '').trim();
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        const _TomorrowKicker(label: 'HOJE VOCÊ VIU'),
+        const SizedBox(height: 18),
+        Text(
+          planted,
+          textAlign: TextAlign.center,
+          style: AppTypography.display(
+            size: 28,
+            height: 1.18,
+            weight: FontWeight.w900,
+            color: a.text,
+          ).copyWith(
+            shadows: [
+              Shadow(
+                color: AppColors.accent.withValues(alpha: 0.32),
+                blurRadius: 28,
+              ),
+            ],
+          ),
+        ),
+        const SizedBox(height: 20),
+        Text(
+          question,
+          textAlign: TextAlign.center,
+          style: AppTypography.verse(
+            size: 20,
+            height: 1.42,
+            fontStyle: FontStyle.italic,
+            color: a.text.withValues(alpha: 0.94),
+          ),
+        ),
+        const SizedBox(height: 22),
+        Text(
+          hook.promiseLine,
+          textAlign: TextAlign.center,
+          style: AppTypography.body(
+            size: 16,
+            weight: FontWeight.w800,
+            color: AppColors.accent,
+          ),
+        ),
+        if (CommitStrip.visible(streak: streak, goal: goal)) ...[
+          const SizedBox(height: 20),
           CommitStrip(streak: streak, goal: goal),
         ],
       ],
@@ -1585,7 +1663,7 @@ class _StatCard extends StatelessWidget {
   final double delay;
   final AnimationController pulse;
   final bool featured;
-  final bool compact;
+  final bool dense;
 
   const _StatCard({
     required this.glyph,
@@ -1595,7 +1673,7 @@ class _StatCard extends StatelessWidget {
     required this.delay,
     required this.pulse,
     this.featured = false,
-    this.compact = false,
+    this.dense = false,
   });
 
   @override
@@ -1608,11 +1686,11 @@ class _StatCard extends StatelessWidget {
         final breath = (math.sin(phase * math.pi * 2) + 1) / 2;
         return DecoratedBox(
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(AppRadii.md),
+            borderRadius: BorderRadius.circular(AppRadii.sm),
             boxShadow: [
               BoxShadow(
-                color: color.withValues(alpha: 0.08 + breath * 0.1),
-                blurRadius: 10 + breath * 8,
+                color: color.withValues(alpha: dense ? 0.04 : 0.08 + breath * 0.1),
+                blurRadius: dense ? 6 : 10 + breath * 8,
               ),
             ],
           ),
@@ -1621,35 +1699,36 @@ class _StatCard extends StatelessWidget {
       },
       child: GlassCard(
         padding: EdgeInsets.symmetric(
-          vertical: compact ? 10 : AppSpace.section,
-          horizontal: AppSpace.sm,
+          vertical: dense ? 6 : AppSpace.section,
+          horizontal: dense ? 4 : AppSpace.sm,
         ),
-        radius: AppRadii.md,
+        radius: dense ? AppRadii.sm : AppRadii.md,
         accent: featured,
         tint: featured ? color : null,
         child: Column(
+          mainAxisSize: MainAxisSize.min,
           children: [
             CinematicIcon(
               glyph: glyph,
-              size: compact ? 18 : 20,
+              size: dense ? 14 : 20,
               accent: color,
               framed: false,
               glowing: false,
             ),
-            SizedBox(height: compact ? 4 : AppSpace.xs),
+            SizedBox(height: dense ? 2 : AppSpace.xs),
             Text(
               value,
               style: AppTypography.title(
-                size: featured ? 18 : 16,
+                size: dense ? (featured ? 14 : 13) : (featured ? 18 : 16),
                 color: featured ? color : a.text,
               ),
             ),
             Text(
               label,
               style: AppTypography.label(
-                size: 10,
+                size: dense ? 8 : 10,
                 weight: FontWeight.w600,
-                letterSpacing: 0.4,
+                letterSpacing: 0.3,
                 color: a.textMuted(0.55),
               ),
             ),

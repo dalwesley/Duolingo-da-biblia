@@ -108,6 +108,9 @@ class AppColors {
   static const medalPlatinum = Color(0xFFC4CAD6);
   static const medalDiamond = Color(0xFF7AB4C4);
   static const medalMirra = Color(0xFFB88A5A);
+
+  /// Pioneiro — violeta, fora do ouro das raras e da orquídea dos modos.
+  static const medalAurora = Color(0xFF7C4DFF);
   static const medalInk = Color(0xFF4A3400);
 
   // Acentos de reino (UI, não céu de cena) — um pouco mais saturados

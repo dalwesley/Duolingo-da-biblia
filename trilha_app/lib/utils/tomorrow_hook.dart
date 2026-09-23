@@ -15,6 +15,8 @@ class TomorrowHook {
   /// Insight da missão que acabou — o corte HOJE / AMANHÃ.
   final String? todayInsight;
   final String? hookRef;
+  /// Pergunta aberta da próxima missão — Eco (só se escrita à mão).
+  final String? echoQuestion;
 
   const TomorrowHook({
     required this.title,
@@ -26,12 +28,24 @@ class TomorrowHook {
     this.trailJustCompleted = false,
     this.todayInsight,
     this.hookRef,
+    this.echoQuestion,
   });
 
-  String get kicker => trailJustCompleted ? 'PRÓXIMA TRILHA' : 'AMANHÃ';
+  bool get hasEcho {
+    final q = (echoQuestion ?? '').trim();
+    final i = (todayInsight ?? '').trim();
+    return q.isNotEmpty && i.isNotEmpty;
+  }
+
+  String get kicker => trailJustCompleted
+      ? 'PRÓXIMA TRILHA'
+      : hasEcho
+      ? 'HOJE VOCÊ VIU'
+      : 'AMANHÃ';
 
   /// Linha do cartão de celebração: a fome, não a porta.
   String get trailer {
+    if (hasEcho) return echoQuestion!.trim();
     final p = pull.trim();
     if (p.isNotEmpty) return p;
     return tease.trim();
@@ -39,6 +53,8 @@ class TomorrowHook {
 
   String get promiseLine => trailJustCompleted
       ? 'A próxima trilha já está no mapa.'
+      : hasEcho
+      ? 'Amanhã: $title'
       : 'A cena espera você.';
 
   String get cardLine => trailJustCompleted
@@ -55,6 +71,11 @@ class TomorrowHook {
     final text = (insight ?? '').trim();
     if (text.isEmpty) return null;
     return 'Ontem: $text';
+  }
+
+  static String? echoDoorLine(String? echoQuestion) {
+    final text = (echoQuestion ?? '').trim();
+    return text.isEmpty ? null : text;
   }
 
   static bool promisedArrived({
@@ -178,6 +199,7 @@ class TomorrowHook {
       trailJustCompleted: trailJustCompleted,
       todayInsight: text,
       hookRef: hookRef,
+      echoQuestion: echoQuestion,
     );
   }
 
@@ -202,6 +224,7 @@ class TomorrowHook {
         trailJustCompleted: trailJustCompleted,
         todayInsight: todayInsight,
         hookRef: hookRef,
+        echoQuestion: echoQuestion,
       );
     } catch (_) {
       return this;
@@ -232,6 +255,28 @@ class TomorrowHook {
     return '$keep…';
   }
 
+  static TomorrowHook? fromMission({
+    required Mission next,
+    required String trailTitle,
+    required String trailSlug,
+    required bool trailJustCompleted,
+    String? todayInsight,
+  }) {
+    final echo = (next.echoQuestion ?? '').trim();
+    return TomorrowHook(
+      title: next.title.trim(),
+      tease: teaseOf(next),
+      pull: pullOf(next),
+      missionSlug: next.slug,
+      trailTitle: trailTitle,
+      trailSlug: trailSlug,
+      trailJustCompleted: trailJustCompleted,
+      todayInsight: todayInsight,
+      hookRef: (next.hookRef ?? '').trim().isEmpty ? null : next.hookRef!.trim(),
+      echoQuestion: echo.isEmpty ? null : echo,
+    );
+  }
+
   static TomorrowHook? resolve({
     required List<Trail> trails,
     required List<String> completed,
@@ -239,31 +284,31 @@ class TomorrowHook {
     String? justFinishedSlug,
   }) {
     if (trails.isEmpty) return null;
-    final todayInsight = justFinishedSlug == null
-        ? null
-        : insightOf(trails, justFinishedSlug);
+    final finished = (justFinishedSlug ?? '').trim();
+    final todayInsight =
+        finished.isEmpty ? null : insightOf(trails, finished);
 
-    final active = TrailProgress.findActiveTrail(
-      trails,
-      completed,
-      clearedTrailModes: clearedTrailModes,
-    );
+    // Celebração: o amanhã é a próxima cena DA trilha que acabou —
+    // não a primeira trilha "ativa" do catálogo (Ansiedade vinha antes).
+    final homeTrail = finished.isEmpty
+        ? null
+        : trails.where((t) => t.missionSlugs.contains(finished)).firstOrNull;
+    final active = homeTrail ??
+        TrailProgress.findActiveTrail(
+          trails,
+          completed,
+          clearedTrailModes: clearedTrailModes,
+        );
     if (active == null) return null;
 
     final next = TrailProgress.getCurrentMission(active, completed);
     if (next != null) {
-      return TomorrowHook(
-        title: next.title.trim(),
-        tease: teaseOf(next),
-        pull: pullOf(next),
-        missionSlug: next.slug,
+      return fromMission(
+        next: next,
         trailTitle: active.title,
         trailSlug: active.slug,
         trailJustCompleted: false,
         todayInsight: todayInsight,
-        hookRef: (next.hookRef ?? '').trim().isEmpty
-            ? null
-            : next.hookRef!.trim(),
       );
     }
 
@@ -284,18 +329,12 @@ class TomorrowHook {
     if (successor == null) return null;
     final first = TrailProgress.getCurrentMission(successor, completed);
     if (first == null) return null;
-    return TomorrowHook(
-      title: first.title.trim(),
-      tease: teaseOf(first),
-      pull: pullOf(first),
-      missionSlug: first.slug,
+    return fromMission(
+      next: first,
       trailTitle: successor.title,
       trailSlug: successor.slug,
       trailJustCompleted: true,
       todayInsight: todayInsight,
-      hookRef: (first.hookRef ?? '').trim().isEmpty
-          ? null
-          : first.hookRef!.trim(),
     );
   }
 }

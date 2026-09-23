@@ -154,6 +154,9 @@ class PilgrimProfileDetailSections extends StatelessWidget {
   final Set<CaravanProfileSection> omitSections;
   final bool includeStreakMilestones;
 
+  /// Quando o cartão de identidade já mostra o que estas seções omitem.
+  final bool suppressEmptyState;
+
   const PilgrimProfileDetailSections({
     super.key,
     required this.profile,
@@ -162,6 +165,7 @@ class PilgrimProfileDetailSections extends StatelessWidget {
     this.onOpenSettings,
     this.omitSections = const {},
     this.includeStreakMilestones = true,
+    this.suppressEmptyState = false,
   });
 
   bool _show(CaravanProfileSection section) =>
@@ -324,6 +328,7 @@ class PilgrimProfileDetailSections extends StatelessWidget {
         PilgrimMedalVaultsPanel(
           profile: profile,
           evalContext: PilgrimMedalEvalContext.fromProfile(profile),
+          recognizeToUid: isOwner ? null : profile.uid,
         ),
       );
     }
@@ -332,7 +337,7 @@ class PilgrimProfileDetailSections extends StatelessWidget {
       add(PilgrimOwnerPrivacyBanner(onSettings: onOpenSettings));
     }
 
-    if (!isOwner && sections.isEmpty) {
+    if (!isOwner && sections.isEmpty && !suppressEmptyState) {
       add(
         const RelicPanel(
           accent: AppColors.slate,

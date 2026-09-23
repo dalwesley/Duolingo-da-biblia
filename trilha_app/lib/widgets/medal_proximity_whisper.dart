@@ -6,13 +6,12 @@ import '../models/caravan_pilgrim_profile.dart';
 import '../models/pilgrim_medals.dart';
 import '../models/trail.dart';
 import '../services/backend_service.dart';
-import '../services/medal_engagement_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import 'medal_unlock_sheet.dart';
 
 /// Linha de “falta pouco” no Hoje — só aparece no near-miss.
-class MedalHomeWhisper extends StatefulWidget {
+class MedalHomeWhisper extends StatelessWidget {
   final List<Trail> catalog;
   final String? priorityTrailSlug;
   final VoidCallback? onBible;
@@ -31,22 +30,10 @@ class MedalHomeWhisper extends StatefulWidget {
   });
 
   @override
-  State<MedalHomeWhisper> createState() => _MedalHomeWhisperState();
-}
-
-class _MedalHomeWhisperState extends State<MedalHomeWhisper> {
-  @override
-  void dispose() {
-    MedalEngagementService.instance.homeVisibleProximityId = null;
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
-    final catalog = widget.catalog;
-    final priorityTrailSlug = widget.priorityTrailSlug;
+    final catalog = this.catalog;
+    final priorityTrailSlug = this.priorityTrailSlug;
     if (catalog.isEmpty) {
-      MedalEngagementService.instance.homeVisibleProximityId = null;
       return const SizedBox.shrink();
     }
     final progress = context.watch<ProgressService>();
@@ -62,12 +49,8 @@ class _MedalHomeWhisperState extends State<MedalHomeWhisper> {
       priorityTrailSlug: priorityTrailSlug,
     );
     if (proximity == null || !proximity.isNearMiss) {
-      MedalEngagementService.instance.homeVisibleProximityId = null;
       return const SizedBox.shrink();
     }
-    // Já mostrando esta mensagem inline — o snackbar de engajamento não repete.
-    MedalEngagementService.instance.homeVisibleProximityId =
-        proximity.nextLevel.id;
 
     final accent = tierColor(proximity.nextLevel.tier);
     return Padding(
@@ -77,14 +60,14 @@ class _MedalHomeWhisperState extends State<MedalHomeWhisper> {
           HapticFeedback.selectionClick();
           switch (proximity.ctaKind) {
             case MedalCtaKind.bible:
-              widget.onBible?.call();
+              onBible?.call();
             case MedalCtaKind.memory:
-              widget.onMemory?.call();
+              onMemory?.call();
             case MedalCtaKind.share:
-              widget.onShare?.call();
+              onShare?.call();
             case MedalCtaKind.trail:
             case MedalCtaKind.mission:
-              widget.onMission?.call();
+              onMission?.call();
             case MedalCtaKind.none:
               final vaults = PilgrimMedals.evaluateVaults(
                 profile: profile,

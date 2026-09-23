@@ -17,6 +17,7 @@ import '../services/bible_study_service.dart';
 import '../services/companion_service.dart';
 import '../services/corner_service.dart';
 import '../services/league_service.dart';
+import '../services/medal_engagement_service.dart';
 import '../services/notification_service.dart';
 import '../services/progress_service.dart';
 import '../services/sound_service.dart';
@@ -32,6 +33,7 @@ import '../widgets/cinematic_icon.dart';
 import '../widgets/hero_card_atmosphere.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/mode_emblem.dart';
+import '../widgets/reset_progress_sheet.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 import '../widgets/user_avatar.dart';
@@ -90,7 +92,6 @@ class SettingsScreen extends StatefulWidget {
 class _SettingsScreenState extends State<SettingsScreen>
     with SingleTickerProviderStateMixin {
   final _nameController = TextEditingController();
-  bool _confirmReset = false;
   bool _nameDirty = false;
   List<DifficultyMeta>? _difficulties;
   List<String> _genesisMissionSlugs = const [];
@@ -646,6 +647,10 @@ class _SettingsScreenState extends State<SettingsScreen>
       );
       return;
     }
+    // O reset zera capítulos e dispara a checagem de medalhas.
+    // Sem isso, a folha de conquista abre na tela de entrar.
+    MedalEngagementService.instance.cancelPending();
+    ScaffoldMessenger.of(context).clearSnackBars();
     await progress.resetMemoryToDefaults();
     if (!mounted) return;
     await context.read<LeagueService>().resetForLogout();
@@ -658,6 +663,8 @@ class _SettingsScreenState extends State<SettingsScreen>
     if (!mounted) return;
     context.read<CornerService>().markCloudUnsynced();
     if (!mounted) return;
+    MedalEngagementService.instance.cancelPending();
+    ScaffoldMessenger.of(context).clearSnackBars();
     Navigator.of(context, rootNavigator: true).pushAndRemoveUntil(
       PageRouteBuilder(
         pageBuilder: (context, animation, secondaryAnimation) =>
@@ -838,6 +845,42 @@ class _SettingsScreenState extends State<SettingsScreen>
     );
   }
 
+  Future<void> _confirmResetProgress(ProgressService progress) async {
+    // A folha de conquista usa o navigator da raiz. Cancela antes do
+    // reset para ela não abrir por cima dos ajustes.
+    MedalEngagementService.instance.cancelPending();
+    if (!mounted) return;
+    ScaffoldMessenger.of(context).clearSnackBars();
+
+    final confirmed = await showResetProgressSheet(context);
+    if (!confirmed || !mounted) return;
+
+    MedalEngagementService.instance.cancelPending();
+    ScaffoldMessenger.of(context).clearSnackBars();
+
+    final backend = context.read<BackendService>();
+    final league = context.read<LeagueService>();
+    await progress.resetProgress();
+    // O reset notifica a casca e reagendaria a checagem da medalha.
+    MedalEngagementService.instance.cancelPending();
+    if (!mounted) return;
+    ScaffoldMessenger.of(context).clearSnackBars();
+    await backend.saveNow(
+      progress,
+      LeagueService.weekKey(),
+      league: league,
+    );
+    if (!mounted) return;
+    MedalEngagementService.instance.cancelPending();
+    ScaffoldMessenger.of(context).clearSnackBars();
+    await Navigator.of(context).pushAndRemoveUntil(
+      MaterialPageRoute<void>(
+        builder: (_) => const OnboardingScreen(),
+      ),
+      (_) => false,
+    );
+  }
+
   Widget _dangerBlock(AppearanceStyle a, ProgressService progress) {
     return GlassCard(
       tint: AppColors.error,
@@ -859,86 +902,28 @@ class _SettingsScreenState extends State<SettingsScreen>
             ),
           ),
           const SizedBox(height: 14),
-          if (!_confirmReset) ...[
-            GhostCta(
-              label: 'Rever introdução',
-              leading: CinematicGlyph.scroll,
-              expanded: true,
-              onTap: () async {
-                if (!mounted) return;
-                await Navigator.of(context).pushAndRemoveUntil(
-                  MaterialPageRoute<void>(
-                    builder: (_) => const OnboardingScreen(),
-                  ),
-                  (_) => false,
-                );
-              },
-            ),
-            const SizedBox(height: AppSpace.sm),
-            GhostCta(
-              label: 'Resetar progresso',
-              leading: CinematicGlyph.fall,
-              danger: true,
-              expanded: true,
-              onTap: () => setState(() => _confirmReset = true),
-            ),
-          ] else ...[
-            Text(
-              'Tem certeza? Todos os passos, dias caminhando e progresso serão apagados. A introdução volta a aparecer.',
-              style: AppTypography.body(
-                size: 13,
-                weight: FontWeight.w700,
-                color: AppColors.error,
-                height: 1.35,
-              ),
-            ),
-            const SizedBox(height: AppSpace.md),
-            Row(
-              children: [
-                Expanded(
-                  child: GhostCta(
-                    label: 'Cancelar',
-                    onTap: () => setState(() => _confirmReset = false),
-                  ),
+          GhostCta(
+            label: 'Rever introdução',
+            leading: CinematicGlyph.scroll,
+            expanded: true,
+            onTap: () async {
+              if (!mounted) return;
+              await Navigator.of(context).pushAndRemoveUntil(
+                MaterialPageRoute<void>(
+                  builder: (_) => const OnboardingScreen(),
                 ),
-                const SizedBox(width: AppSpace.sm),
-                Expanded(
-                  child: FilledButton(
-                    onPressed: () async {
-                      final backend = context.read<BackendService>();
-                      final league = context.read<LeagueService>();
-                      await progress.resetProgress();
-                      await backend.saveNow(
-                        progress,
-                        LeagueService.weekKey(),
-                        league: league,
-                      );
-                      if (!mounted) return;
-                      setState(() => _confirmReset = false);
-                      await Navigator.of(context).pushAndRemoveUntil(
-                        MaterialPageRoute<void>(
-                          builder: (_) => const OnboardingScreen(),
-                        ),
-                        (_) => false,
-                      );
-                    },
-                    style: FilledButton.styleFrom(
-                      backgroundColor: AppColors.error,
-                      foregroundColor: Colors.white,
-                      padding: const EdgeInsets.symmetric(vertical: 14),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(AppRadii.md),
-                      ),
-                    ),
-                    child: Text(
-                      'Confirmar',
-                      style: AppTypography.cta(size: 13, color: Colors.white),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ],
+                (_) => false,
+              );
+            },
+          ),
+          const SizedBox(height: AppSpace.sm),
+          GhostCta(
+            label: 'Resetar progresso',
+            leading: CinematicGlyph.fall,
+            danger: true,
+            expanded: true,
+            onTap: () => _confirmResetProgress(progress),
+          ),
         ],
       ),
     );
@@ -1149,7 +1134,7 @@ class _ProfileHeader extends StatelessWidget {
         : 'Entre de novo para sincronizar o caminho.';
     final syncLine = lastSync == null
         ? null
-        : 'Nuvem · ${_whisperDate(lastSync!)}';
+        : 'Logado em · ${_whisperDate(lastSync!)}';
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -1186,12 +1171,37 @@ class _ProfileHeader extends StatelessWidget {
                       if (onSignOut != null)
                         GestureDetector(
                           onTap: onSignOut,
-                          child: Text(
-                            'Sair',
-                            style: AppTypography.body(
-                              size: 13,
-                              weight: FontWeight.w800,
-                              color: a.textMuted(0.62),
+                          behavior: HitTestBehavior.opaque,
+                          child: Container(
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 10,
+                              vertical: 5,
+                            ),
+                            decoration: BoxDecoration(
+                              color: AppColors.error.withValues(alpha: 0.16),
+                              borderRadius: BorderRadius.circular(999),
+                              border: Border.all(
+                                color: AppColors.error.withValues(alpha: 0.78),
+                              ),
+                            ),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                const Icon(
+                                  Icons.logout_rounded,
+                                  size: 14,
+                                  color: AppColors.error,
+                                ),
+                                const SizedBox(width: 4),
+                                Text(
+                                  'Sair',
+                                  style: AppTypography.body(
+                                    size: 13,
+                                    weight: FontWeight.w800,
+                                    color: AppColors.error,
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
                         ),
@@ -1265,22 +1275,6 @@ class _ProfileHeader extends StatelessWidget {
                       ),
                     ),
                   ],
-                  const SizedBox(height: 8),
-                  GestureDetector(
-                    onTap: onOpenProfile,
-                    child: Text(
-                      onOpenProfile == null
-                          ? 'Retrato · ${portraitStyle.label}'
-                          : 'Retrato · ${portraitStyle.label} · no perfil',
-                      style: AppTypography.body(
-                        size: 12,
-                        weight: FontWeight.w700,
-                        color: onOpenProfile == null
-                            ? a.textMuted(0.5)
-                            : AppColors.accent.withValues(alpha: 0.9),
-                      ),
-                    ),
-                  ),
                 ],
               ),
             ),

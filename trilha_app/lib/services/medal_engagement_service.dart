@@ -13,7 +13,6 @@ import '../models/trail.dart';
 import '../services/backend_service.dart';
 import '../services/bible_service.dart';
 import '../services/progress_service.dart';
-import '../theme/app_theme.dart';
 import '../widgets/medal_unlock_sheet.dart';
 
 /// Celebração de tier-ups, raras e proximidade (v3).
@@ -25,12 +24,16 @@ class MedalEngagementService {
   Timer? _debounce;
   bool _checking = false;
   bool _showingSheet = false;
-  String? _lastProximitySnackId;
   List<Trail> _catalog = const [];
+  int _epoch = 0;
 
-  /// Id do próximo nível já exibido inline pela [MedalHomeWhisper] na Home —
-  /// evita duplicar a mesma mensagem num SnackBar por cima.
-  String? homeVisibleProximityId;
+  /// Descarta checagens pendentes (logout). Um check já em curso
+  /// também aborta antes de abrir a folha de conquista.
+  void cancelPending() {
+    _debounce?.cancel();
+    _debounce = null;
+    _epoch++;
+  }
 
   void scheduleCheck(BuildContext context) {
     _debounce?.cancel();
@@ -40,15 +43,26 @@ class MedalEngagementService {
     });
   }
 
+  bool _sessionOpen(BuildContext context, int epoch) {
+    return epoch == _epoch && context.read<BackendService>().isSignedIn;
+  }
+
   Future<void> check(BuildContext context) async {
     if (_checking || _showingSheet) return;
+    final epoch = _epoch;
     _checking = true;
     try {
       final progress = context.read<ProgressService>();
       if (!progress.isLoaded) return;
+      // Reset de progresso volta à introdução. Sem isso, a folha de
+      // conquista abre por cima dos ajustes ou da tela de entrar.
+      if (!progress.hasSeenOnboarding) return;
 
       final backend = context.read<BackendService>();
+      if (!backend.isSignedIn || epoch != _epoch) return;
       final bundle = await _buildBundle(progress, backend);
+      if (!context.mounted) return;
+      if (!_sessionOpen(context, epoch)) return;
       final profile = bundle.profile;
       final catalog = bundle.catalog;
       final ctx = bundle.ctx;
@@ -73,11 +87,13 @@ class MedalEngagementService {
         catalog,
         ctx: ctx,
       );
-      if (tierUps.isNotEmpty && context.mounted) {
+      if (!context.mounted) return;
+      if (tierUps.isNotEmpty && _sessionOpen(context, epoch)) {
         await _celebrateTierUps(context, progress, tierUps);
       }
 
       if (!context.mounted) return;
+      if (!_sessionOpen(context, epoch)) return;
       final refreshedCelebrated = PilgrimMedalCatalog.expandCelebratedIds(
         progress.celebratedMedalIds,
       );
@@ -92,11 +108,13 @@ class MedalEngagementService {
         await progress.markMedalCelebrated(silent.def.id);
       }
       final loudRares = rarePending.where((m) => !m.def.silent).toList();
-      if (loudRares.isNotEmpty && context.mounted) {
+      if (!context.mounted) return;
+      if (loudRares.isNotEmpty && _sessionOpen(context, epoch)) {
         await _celebrateRares(context, progress, loudRares);
       }
 
       if (!context.mounted) return;
+      if (!_sessionOpen(context, epoch)) return;
       final refreshed = await _buildBundle(progress, backend);
       final refreshedVaults = medals.PilgrimMedals.evaluateVaults(
         profile: refreshed.profile,
@@ -109,6 +127,7 @@ class MedalEngagementService {
       );
       for (final vaultId in newVaults) {
         if (!context.mounted) break;
+        if (!_sessionOpen(context, epoch)) break;
         final state = refreshedVaults.firstWhere((v) => v.vault.id == vaultId);
         _showingSheet = true;
         await showMedalVaultCompleteSheet(
@@ -118,15 +137,6 @@ class MedalEngagementService {
         );
         _showingSheet = false;
         await progress.markVaultCompleteCelebrated(vaultId);
-      }
-
-      if (context.mounted) {
-        _maybeProximitySnack(
-          context,
-          refreshed.profile,
-          refreshed.catalog,
-          refreshed.ctx,
-        );
       }
     } finally {
       _checking = false;
@@ -174,42 +184,6 @@ class MedalEngagementService {
       _showingSheet = false;
       await progress.markMedalCelebrated(medal.def.id);
     }
-  }
-
-  void _maybeProximitySnack(
-    BuildContext context,
-    CaravanPilgrimProfile profile,
-    List<Trail> catalog,
-    PilgrimMedalEvalContext ctx,
-  ) {
-    final proximity = medals.PilgrimMedals.nearestLocked(
-      profile: profile,
-      catalog: catalog,
-      ctx: ctx,
-    );
-    if (proximity == null || proximity.remaining > 1) return;
-    if (proximity.nextLevel.id == homeVisibleProximityId) return;
-    if (_lastProximitySnackId == proximity.nextLevel.id) return;
-    _lastProximitySnackId = proximity.nextLevel.id;
-
-    final messenger = ScaffoldMessenger.maybeOf(context);
-    if (messenger == null) return;
-
-    messenger.clearSnackBars();
-    messenger.showSnackBar(
-      SnackBar(
-        backgroundColor: AppColors.nightElevated,
-        content: Text(
-          proximity.actionMessage,
-          style: TextStyle(
-            color: medals.tierColor(proximity.nextLevel.tier),
-            fontWeight: FontWeight.w700,
-          ),
-        ),
-        behavior: SnackBarBehavior.floating,
-        duration: const Duration(seconds: 4),
-      ),
-    );
   }
 
   Future<({

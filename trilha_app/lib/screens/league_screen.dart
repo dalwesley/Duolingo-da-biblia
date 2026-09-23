@@ -29,6 +29,7 @@ import '../widgets/immersive_background.dart';
 import '../widgets/invite_qr_sheet.dart';
 import '../widgets/ui_primitives.dart';
 import '../widgets/portrait_face.dart';
+import '../widgets/recognition_actions.dart';
 
 class LeagueScreen extends StatefulWidget {
   final Widget? topBar;
@@ -2473,7 +2474,6 @@ class _OnlineSheetRow extends StatelessWidget {
             context,
             entry: entry,
             rank: rank,
-            weeklySteps: weekly,
           );
         },
         borderRadius: BorderRadius.circular(AppRadii.md),
@@ -2726,7 +2726,6 @@ class _StandingRow extends StatelessWidget {
             context,
             entry: entry,
             rank: rank,
-            weeklySteps: weeklySteps,
           );
         },
         borderRadius: BorderRadius.circular(AppRadii.md),
@@ -3638,6 +3637,10 @@ class _CompanionCard extends StatelessWidget {
             const SizedBox(height: 12),
             _IncomingNudgeBanner(companion: companion),
           ],
+          RecognizeCompanionWalk(
+            partnerUid: companion.partnerUid,
+            walkDate: companion.theyLastWalkDate,
+          ),
           if (canNudge) ...[
             const SizedBox(height: 12),
             CopperCta(

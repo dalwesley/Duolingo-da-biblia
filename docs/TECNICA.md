@@ -148,7 +148,8 @@ Detalhes de store/keystore: `trilha_app/RELEASE.md`.
 - Vite 6 (dev em `:5174`)  
 - **Vanilla JS** (não React)  
 - Firebase Auth (email/senha) + Firestore  
-- Hosting: `firebase deploy --only hosting` → `admin/dist`
+- Hosting do painel: `firebase deploy --only hosting:panel` → `admin/dist` (`trilha-biblia.web.app`)
+- Site público: `firebase deploy --only hosting:app` → `site/` (`stway.com.br`, também `stway-app.web.app`)
 
 ### Rotas SPA (`src/main.js`)
 
@@ -414,7 +415,7 @@ make seed_full                 # da raiz: trails + bank + studies + catalog.vers
 # Não re-rodar pipelines legados de migrate/enrich — use `pipeline:v2` + `seed:cli`.
 # Lotes / cota Spark (CLI):
 SEED_ONLY=bank SEED_BANKS=sermao SEED_CHUNK=80 npm run seed:cli
-npm run build && cd .. && firebase deploy --only hosting
+npm run build && cd .. && firebase deploy --only hosting:panel
 ```
 
 Seed / auth (não perder): donos do projeto são **Google-only** — `SEED_EMAIL`/`SEED_PASSWORD` falham nessas contas. Fluxo documentado em [`admin/README.md`](../admin/README.md#seed-publicar-json--firestore) (CLI `stway.app@gmail.com` ou user Email/Password em `admin_users`).

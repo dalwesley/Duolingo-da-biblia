@@ -64,8 +64,7 @@ class AppUpdateService {
 
   static const androidStoreUrl =
       'https://play.google.com/store/apps/details?id=com.trilha.trilha_app';
-  static const iosStoreUrl =
-      'https://apps.apple.com/br/search?term=STWAY';
+  static const iosStoreUrl = 'https://apps.apple.com/br/search?term=STWAY';
 
   static const _androidStoreDefault = androidStoreUrl;
   static const _iosStoreDefault = iosStoreUrl;
@@ -76,13 +75,26 @@ class AppUpdateService {
   /// Uma vez por sessão (soft auto-check).
   static bool _sessionPromptShown = false;
 
-  /// `flutter run --dart-define=FORCE_UPDATE_PROMPT=true` — força sheet 1×/sessão.
+  /// `flutter run --dart-define=FORCE_UPDATE_PROMPT=true` — prévia da sheet
+  /// 1×/sessão, mesmo com o build local à frente da loja.
   static const forceUpdatePrompt = bool.fromEnvironment(
     'FORCE_UPDATE_PROMPT',
     defaultValue: false,
   );
 
-  static bool get _testPromptEnabled => kDebugMode || forceUpdatePrompt;
+  /// Soft só quando a loja tem build maior. Abaixo de [minBuild], obrigatório.
+  /// [preview] existe só para o dart-define acima — debug comum não força.
+  static AppUpdateKind resolveKind({
+    required int localBuild,
+    required int latestBuild,
+    required int minBuild,
+    bool preview = false,
+  }) {
+    if (minBuild > 0 && localBuild < minBuild) return AppUpdateKind.force;
+    if (latestBuild > 0 && localBuild < latestBuild) return AppUpdateKind.soft;
+    if (preview && latestBuild > 0) return AppUpdateKind.soft;
+    return AppUpdateKind.none;
+  }
 
   static Future<AppUpdateStatus> check({bool ignoreSnooze = false}) async {
     final info = await PackageInfo.fromPlatform();
@@ -104,14 +116,14 @@ class AppUpdateService {
     try {
       final snap = await FirebaseFirestore.instance.doc(_docPath).get();
       if (!snap.exists) {
-        if (_testPromptEnabled) {
+        if (forceUpdatePrompt) {
           return AppUpdateStatus(
             kind: AppUpdateKind.soft,
             localVersion: localVersion,
             localBuild: localBuild,
             latestVersion: localVersion,
             latestBuild: localBuild + 1,
-            message: '$_defaultMessage\n\n(Modo teste — sem doc na nuvem)',
+            message: _defaultMessage,
             storeUrl: storeUrl,
           );
         }
@@ -147,28 +159,27 @@ class AppUpdateService {
           : _defaultMessage;
       final url = _storeUrlFrom(data) ?? storeUrl;
 
-      AppUpdateKind kind = AppUpdateKind.none;
-      if (minBuild > 0 && localBuild < minBuild) {
-        kind = AppUpdateKind.force;
-      } else if (latestBuild > 0 && localBuild < latestBuild) {
-        kind = AppUpdateKind.soft;
-      } else if (_testPromptEnabled && latestBuild > 0) {
-        // Debug / FORCE_UPDATE_PROMPT: mostra soft mesmo se já estiver “em dia”.
-        kind = AppUpdateKind.soft;
-      }
-
-      final skipSnooze = ignoreSnooze || _testPromptEnabled;
+      var kind = resolveKind(
+        localBuild: localBuild,
+        latestBuild: latestBuild,
+        minBuild: minBuild,
+        preview: forceUpdatePrompt,
+      );
+      final skipSnooze = ignoreSnooze || forceUpdatePrompt;
       if (kind == AppUpdateKind.soft && !skipSnooze) {
         if (await _isSnoozed()) {
           kind = AppUpdateKind.none;
         }
       }
 
-      final testNote = kind == AppUpdateKind.soft &&
-              _testPromptEnabled &&
-              (latestBuild <= 0 || localBuild >= latestBuild)
-          ? '\n\n(Modo teste — sheet forçado)'
-          : '';
+      if (forceUpdatePrompt &&
+          kind == AppUpdateKind.soft &&
+          (latestBuild <= 0 || localBuild >= latestBuild)) {
+        debugPrint(
+          'AppUpdateService: prévia forçada (FORCE_UPDATE_PROMPT) — '
+          'local $localBuild, loja $latestBuild',
+        );
+      }
 
       return AppUpdateStatus(
         kind: kind,
@@ -177,8 +188,8 @@ class AppUpdateService {
         latestVersion: latestVersion.isEmpty ? null : latestVersion,
         latestBuild: latestBuild > 0
             ? latestBuild
-            : (_testPromptEnabled ? localBuild + 1 : null),
-        message: '$message$testNote',
+            : (forceUpdatePrompt ? localBuild + 1 : null),
+        message: message,
         storeUrl: url,
       );
     } catch (e, st) {
@@ -195,10 +206,10 @@ class AppUpdateService {
   }
 
   /// Soft update automático — no máximo 1× por sessão e respeita snooze
-  /// (exceto em debug / FORCE_UPDATE_PROMPT).
+  /// (exceto com FORCE_UPDATE_PROMPT).
   static Future<AppUpdateStatus?> checkForPrompt() async {
     if (_sessionPromptShown) return null;
-    final status = await check(ignoreSnooze: _testPromptEnabled);
+    final status = await check(ignoreSnooze: forceUpdatePrompt);
     if (!status.updateAvailable) return null;
     _sessionPromptShown = true;
     return status;

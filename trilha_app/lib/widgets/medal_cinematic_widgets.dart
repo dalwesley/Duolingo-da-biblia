@@ -435,6 +435,16 @@ class _MedalTierPalette {
           glyph: Color(0xFFFFECD8),
           glow: AppColors.medalMirra,
         ),
+      PilgrimMedalTier.aurora => const _MedalTierPalette(
+          rimLight: Color(0xFFE4D8FF),
+          rimMid: Color(0xFF9B6DFF),
+          rimDark: Color(0xFF4C2A9A),
+          faceLight: Color(0xFFC4A6FF),
+          faceMid: Color(0xFF7C4DFF),
+          faceDark: Color(0xFF32167A),
+          glyph: Color(0xFFF4EEFF),
+          glow: AppColors.medalAurora,
+        ),
     };
   }
 

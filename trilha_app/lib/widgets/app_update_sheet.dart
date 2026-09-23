@@ -42,10 +42,14 @@ class _AppUpdateSheet extends StatelessWidget {
         margin: const EdgeInsets.fromLTRB(12, 0, 12, 12),
         padding: EdgeInsets.fromLTRB(20, 18, 20, 16 + bottom),
         decoration: BoxDecoration(
-          color: Color.lerp(a.cardFill, accent, 0.08),
+          color: _force ? Color.lerp(a.cardFill, accent, 0.08) : a.cardFill,
           borderRadius: BorderRadius.circular(AppRadii.lg),
-          border: Border.all(color: accent.withValues(alpha: 0.45)),
-          boxShadow: AppMetrics.cardShadow(elevated: true, tint: accent),
+          border: Border.all(
+            color: _force ? accent.withValues(alpha: 0.45) : a.cardBorder,
+          ),
+          boxShadow: _force
+              ? AppMetrics.cardShadow(elevated: true, tint: accent)
+              : AppTheme.cardShadow(elevated: true),
         ),
         child: Column(
           mainAxisSize: MainAxisSize.min,
@@ -58,7 +62,17 @@ class _AppUpdateSheet extends StatelessWidget {
             ),
             const SizedBox(height: 14),
             Text(
-              _force ? 'Atualização necessária' : 'Nova versão disponível',
+              'O PEREGRINO',
+              style: AppTypography.label(
+                letterSpacing: 1.5,
+                color: accent.withValues(alpha: 0.85),
+              ),
+            ),
+            const SizedBox(height: 6),
+            Text(
+              _force
+                  ? 'Esta versão precisa atualizar'
+                  : 'Uma versão nova te espera',
               textAlign: TextAlign.center,
               style: AppTypography.title(size: 20, color: a.text),
             ),
@@ -73,42 +87,15 @@ class _AppUpdateSheet extends StatelessWidget {
                 color: a.textMuted(0.72),
               ),
             ),
-            const SizedBox(height: 14),
-            Container(
-              width: double.infinity,
-              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-              decoration: BoxDecoration(
-                color: accent.withValues(alpha: 0.1),
-                borderRadius: BorderRadius.circular(AppRadii.md),
-                border: Border.all(color: accent.withValues(alpha: 0.28)),
-              ),
-              child: Row(
-                children: [
-                  Expanded(
-                    child: Text(
-                      'Você · ${status.localLabel}',
-                      style: AppTypography.body(
-                        size: 12,
-                        weight: FontWeight.w700,
-                        color: a.textMuted(0.7),
-                      ),
-                    ),
-                  ),
-                  Text(
-                    'Nova · ${status.latestLabel}',
-                    style: AppTypography.body(
-                      size: 12,
-                      weight: FontWeight.w800,
-                      color: accent,
-                    ),
-                  ),
-                ],
-              ),
+            const SizedBox(height: 16),
+            _VersionLane(
+              local: status.localLabel,
+              latest: status.latestLabel,
+              accent: accent,
             ),
             const SizedBox(height: 20),
             CopperCta(
               label: 'Atualizar agora',
-              trailing: CinematicGlyph.rise,
               onTap: () async {
                 HapticFeedback.mediumImpact();
                 final ok = await AppUpdateService.openStore(status.storeUrl);
@@ -132,7 +119,7 @@ class _AppUpdateSheet extends StatelessWidget {
               },
             ),
             if (!_force) ...[
-              const SizedBox(height: 10),
+              const SizedBox(height: 8),
               TextButton(
                 onPressed: () async {
                   HapticFeedback.selectionClick();
@@ -142,9 +129,8 @@ class _AppUpdateSheet extends StatelessWidget {
                 child: Text(
                   'Agora não',
                   style: AppTypography.body(
-                    size: 14,
                     weight: FontWeight.w700,
-                    color: a.textMuted(0.65),
+                    color: a.textMuted(0.55),
                   ),
                 ),
               ),
@@ -152,6 +138,97 @@ class _AppUpdateSheet extends StatelessWidget {
           ],
         ),
       ),
+    );
+  }
+}
+
+class _VersionLane extends StatelessWidget {
+  final String local;
+  final String latest;
+  final Color accent;
+
+  const _VersionLane({
+    required this.local,
+    required this.latest,
+    required this.accent,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+      decoration: BoxDecoration(
+        color: a.cardFillSoft,
+        borderRadius: BorderRadius.circular(AppRadii.md),
+        border: Border.all(color: a.cardBorder),
+      ),
+      child: Row(
+        children: [
+          Expanded(
+            child: _VersionMark(
+              kicker: 'Você',
+              value: local,
+              valueColor: a.textMuted(0.85),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 8),
+            child: CinematicIcon(
+              glyph: CinematicGlyph.forward,
+              size: 16,
+              accent: a.textMuted(0.45),
+              framed: false,
+            ),
+          ),
+          Expanded(
+            child: _VersionMark(
+              kicker: 'Na loja',
+              value: latest,
+              valueColor: accent,
+              alignEnd: true,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _VersionMark extends StatelessWidget {
+  final String kicker;
+  final String value;
+  final Color valueColor;
+  final bool alignEnd;
+
+  const _VersionMark({
+    required this.kicker,
+    required this.value,
+    required this.valueColor,
+    this.alignEnd = false,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final align = alignEnd ? CrossAxisAlignment.end : CrossAxisAlignment.start;
+
+    return Column(
+      crossAxisAlignment: align,
+      children: [
+        Text(
+          kicker.toUpperCase(),
+          style: AppTypography.label(
+            size: 10,
+            letterSpacing: 1.2,
+            color: a.textMuted(0.5),
+          ),
+        ),
+        const SizedBox(height: 2),
+        Text(value, style: AppTypography.title(size: 14, color: valueColor)),
+      ],
     );
   }
 }

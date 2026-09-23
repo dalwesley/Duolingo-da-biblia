@@ -126,10 +126,10 @@ make test_rankings
 ```bash
 npm run build
 cd ..
-firebase deploy --only hosting
+firebase deploy --only hosting:panel
 ```
 
-(`../firebase.json` aponta para `admin/dist`.)
+(`../firebase.json` aponta o alvo `panel` para `admin/dist`. O site público é o alvo `app`, em `site/`.)
 
 ## App Flutter
 

@@ -64,6 +64,9 @@ class Mission {
   final String? hookVerse;
   final String? hookNote;
   final String? hookThread;
+  /// Pergunta aberta que esta missão responde — plantada ontem, aberta no Eco.
+  /// Escrita à mão; sem este campo a celebração fica no gancho clássico.
+  final String? echoQuestion;
   /// Banco de atos — se vazio, usa [slug] / a trilha da sessão.
   final String? bankSection;
   final String? bankTrailSlug;
@@ -83,6 +86,7 @@ class Mission {
     this.hookVerse,
     this.hookNote,
     this.hookThread,
+    this.echoQuestion,
     this.bankSection,
     this.bankTrailSlug,
   });
@@ -123,9 +127,15 @@ class Mission {
       hookNote: json['hookNote'] as String? ?? entranceMap?['note'] as String?,
       hookThread:
           json['hookThread'] as String? ?? entranceMap?['thread'] as String?,
+      echoQuestion: _optionalTrim(json['echoQuestion'] as String?),
       bankSection: json['bankSection'] as String?,
       bankTrailSlug: json['bankTrailSlug'] as String?,
     );
+  }
+
+  static String? _optionalTrim(String? raw) {
+    final t = (raw ?? '').trim();
+    return t.isEmpty ? null : t;
   }
 }
 

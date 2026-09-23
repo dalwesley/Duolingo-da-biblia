@@ -3,7 +3,6 @@ import 'package:provider/provider.dart';
 
 import '../models/caravan_pilgrim_profile.dart';
 import '../models/caravan_profile_prefs.dart';
-import '../models/corner_challenge.dart';
 import '../services/bible_service.dart';
 import '../services/backend_service.dart';
 import '../services/corner_service.dart';
@@ -16,13 +15,14 @@ import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/living_seed_card.dart';
 import '../widgets/milestone_chests.dart';
+import '../widgets/pilgrim_identity_card.dart';
 import '../widgets/pilgrim_profile_sections.dart';
 import '../widgets/portrait_picker_sheet.dart';
 import '../widgets/reflection_journal_card.dart';
 import '../widgets/relic_panel.dart';
-import '../widgets/streak_week.dart';
+import '../widgets/recognition_history_sheet.dart';
 import '../widgets/top_bar.dart';
-import '../widgets/user_avatar.dart';
+import '../services/recognition_service.dart';
 import 'bible_screen.dart';
 import 'settings_screen.dart';
 
@@ -120,6 +120,7 @@ class _MeScreenState extends State<MeScreen> {
   @override
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
+    final backend = context.watch<BackendService>();
     final record = context.watch<CornerService>().record;
     final profile = _caravanProfile;
     final accuracy = profile?.accuracyPercent ??
@@ -132,7 +133,13 @@ class _MeScreenState extends State<MeScreen> {
             : null);
 
     final body = <Widget>[
-      _ProfileIdentityCard(
+      PilgrimIdentityCard(
+        name: progress.userName,
+        photoUrl: backend.userPhotoUrl,
+        seed: backend.uid,
+        style: progress.settings.portraitStyle,
+        editable: true,
+        onEditPortrait: () => showPortraitPickerSheet(context),
         steps: progress.steps,
         missions: progress.completedMissions.length,
         accuracyPercent: accuracy,
@@ -143,9 +150,12 @@ class _MeScreenState extends State<MeScreen> {
             profile?.lifetimeQuestionsAnswered ??
             progress.lifetimeQuestionsAnswered,
         rank: _overallRank,
-        leaderDays: profile?.daysAsCaravanLeader ?? progress.daysAsCaravanLeader,
-        record: record,
+        leaderDays:
+            profile?.daysAsCaravanLeader ?? progress.daysAsCaravanLeader,
+        recordLine: record.isEmpty ? null : record.line,
       ),
+      const SizedBox(height: AppSpace.section),
+      const _RecognitionHistoryEntry(),
       const SizedBox(height: AppSpace.section),
       const LivingSeedCard(),
     ];
@@ -158,7 +168,6 @@ class _MeScreenState extends State<MeScreen> {
         ),
       ]);
     } else if (profile != null) {
-      final backend = context.read<BackendService>();
       final today = DateTime.now().toIso8601String().substring(0, 10);
       body.addAll([
         const SizedBox(height: AppSpace.section),
@@ -244,209 +253,6 @@ class _MeScreenState extends State<MeScreen> {
           ),
         ),
       ],
-    );
-  }
-}
-
-class _ProfileIdentityCard extends StatelessWidget {
-  final int steps;
-  final int missions;
-  final int? accuracyPercent;
-  final int accuracyCorrect;
-  final int accuracyTotal;
-  final int rank;
-  final int leaderDays;
-  final CornerRecord record;
-
-  const _ProfileIdentityCard({
-    required this.steps,
-    required this.missions,
-    required this.accuracyPercent,
-    required this.accuracyCorrect,
-    required this.accuracyTotal,
-    required this.rank,
-    required this.leaderDays,
-    required this.record,
-  });
-
-  String? get _whisper {
-    final parts = <String>[];
-    if (rank > 0) {
-      parts.add(rank <= 3 ? pilgrimRankEpithet(rank) : '$rankº na caravana');
-    }
-    if (leaderDays > 0) {
-      parts.add(leaderDays == 1 ? '1 dia no topo' : '$leaderDays dias no topo');
-    }
-    if (!record.isEmpty) parts.add(record.line);
-    if (parts.isEmpty && accuracyPercent != null) {
-      parts.add(pilgrimAccuracyEpithet(accuracyPercent!));
-    }
-    if (parts.isEmpty) return null;
-    return parts.join(' · ');
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final progress = context.watch<ProgressService>();
-    final backend = context.watch<BackendService>();
-    final a = Appearance.of(context);
-    final name = progress.userName.trim().isEmpty
-        ? 'Peregrino'
-        : progress.userName.trim();
-    final whisper = _whisper;
-    final showPrecision = accuracyPercent != null && accuracyTotal > 0;
-
-    return RelicPanel(
-      elevated: true,
-      padding: const EdgeInsets.fromLTRB(18, 18, 18, 16),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Row(
-            children: [
-              UserAvatar(
-                name: name,
-                photoUrl: backend.userPhotoUrl,
-                seed: backend.uid,
-                style: progress.settings.portraitStyle,
-                radius: 40,
-                borderColor: AppColors.accent.withValues(alpha: 0.85),
-                editable: true,
-                onTap: () => showPortraitPickerSheet(context),
-              ),
-              const SizedBox(width: 14),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      name,
-                      maxLines: 1,
-                      overflow: TextOverflow.ellipsis,
-                      style: AppTypography.display(
-                        size: 24,
-                        weight: FontWeight.w800,
-                        color: a.text,
-                        height: 1.05,
-                      ),
-                    ),
-                    if (whisper != null) ...[
-                      const SizedBox(height: 6),
-                      Text(
-                        whisper,
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                        style: AppTypography.body(
-                          size: 13,
-                          height: 1.3,
-                          color: rank > 0 && rank <= 3
-                              ? pilgrimRankAccent(rank)
-                              : a.textMuted(0.62),
-                        ),
-                      ),
-                    ],
-                  ],
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: 18),
-          const RelicHairline(),
-          const SizedBox(height: 14),
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Expanded(
-                child: _IdentityStat(
-                  value: pilgrimFormatCount(steps),
-                  label: 'Passos',
-                ),
-              ),
-              _IdentityRule(a: a),
-              Expanded(
-                child: _IdentityStat(
-                  value: pilgrimFormatCount(missions),
-                  label: 'Cenas',
-                ),
-              ),
-              if (showPrecision) ...[
-                _IdentityRule(a: a),
-                Expanded(
-                  child: PilgrimPrecisionArc(
-                    percent: accuracyPercent!,
-                    correct: accuracyCorrect,
-                    total: accuracyTotal,
-                    stat: true,
-                  ),
-                ),
-              ],
-            ],
-          ),
-          const SizedBox(height: 16),
-          const RelicHairline(),
-          const SizedBox(height: 12),
-          const StreakWeek(orbSize: 30),
-        ],
-      ),
-    );
-  }
-}
-
-class _IdentityStat extends StatelessWidget {
-  final String value;
-  final String label;
-
-  const _IdentityStat({required this.value, required this.label});
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return Column(
-      children: [
-        SizedBox(
-          height: 44,
-          child: Center(
-            child: FittedBox(
-              fit: BoxFit.scaleDown,
-              child: Text(
-                value,
-                maxLines: 1,
-                style: AppTypography.title(
-                  size: 20,
-                  weight: FontWeight.w900,
-                  color: a.text,
-                  height: 1,
-                ),
-              ),
-            ),
-          ),
-        ),
-        const SizedBox(height: 6),
-        Text(
-          label.toUpperCase(),
-          style: AppTypography.label(
-            size: 9,
-            letterSpacing: 1.2,
-            color: a.textMuted(0.5),
-          ),
-        ),
-      ],
-    );
-  }
-}
-
-class _IdentityRule extends StatelessWidget {
-  final AppearanceStyle a;
-
-  const _IdentityRule({required this.a});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 1,
-      height: 44,
-      margin: const EdgeInsets.symmetric(horizontal: 4),
-      color: a.cardBorder.withValues(alpha: 0.85),
     );
   }
 }
@@ -692,6 +498,56 @@ class _SharedVersesSection extends StatelessWidget {
     if (embedded) return content;
 
     return RelicPanel(accent: AppColors.cedar, child: content);
+  }
+}
+
+/// Atalho no perfil — quem reconheceu cena e medalhas.
+class _RecognitionHistoryEntry extends StatelessWidget {
+  const _RecognitionHistoryEntry();
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final count = context.watch<RecognitionService>().recent.length;
+    return GlassCard(
+      onTap: () {
+        showRecognitionHistorySheet(context);
+      },
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+      child: Row(
+        children: [
+          const Icon(Icons.favorite_rounded, size: 20, color: AppColors.clay),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Quem reconheceu',
+                  style: AppTypography.title(size: 16, color: a.text),
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  count == 0
+                      ? 'Cena e medalhas que outros viram em você'
+                      : count == 1
+                      ? '1 reconhecimento recente'
+                      : '$count reconhecimentos recentes',
+                  style: AppTypography.body(
+                    size: 13,
+                    color: a.textMuted(0.65),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Icon(
+            Icons.chevron_right_rounded,
+            color: a.textMuted(0.45),
+          ),
+        ],
+      ),
+    );
   }
 }
 

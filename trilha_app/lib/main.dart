@@ -14,6 +14,7 @@ import 'services/home_widget_service.dart';
 import 'services/invite_deep_link_service.dart';
 import 'services/notification_service.dart';
 import 'services/progress_service.dart';
+import 'services/recognition_service.dart';
 import 'services/remote_config_service.dart';
 import 'services/room_service.dart';
 import 'services/sound_service.dart';
@@ -91,6 +92,15 @@ class TrilhaApp extends StatelessWidget {
               companions.markCloudUnsynced();
             }
             return companions;
+          },
+        ),
+        ChangeNotifierProxyProvider<BackendService, RecognitionService>(
+          create: (ctx) =>
+              RecognitionService(ctx.read<BackendService>())..bind(),
+          update: (_, backend, previous) {
+            final recognitions = previous ?? RecognitionService(backend);
+            unawaited(recognitions.bind());
+            return recognitions;
           },
         ),
         ChangeNotifierProxyProvider<BackendService, CornerService>(

@@ -11,6 +11,7 @@ Mission _m({
   String? hookVerse,
   String? hookRef,
   String? insight,
+  String? echoQuestion,
 }) {
   return Mission(
     slug: slug,
@@ -24,6 +25,7 @@ Mission _m({
     hookVerse: hookVerse,
     hookRef: hookRef,
     centralInsight: insight,
+    echoQuestion: echoQuestion,
   );
 }
 
@@ -177,6 +179,95 @@ void main() {
     expect(hook!.todayInsight, 'Deus é o centro, não eu');
     expect(hook.title, 'A serpente no jardim');
     expect(hook.tease, isNot(contains('pecado')));
+  });
+
+  test('echo replaces trailer when next mission has echoQuestion', () {
+    final trail = _trail(
+      slug: 'recomeco',
+      missions: [
+        _m(
+          slug: 'queda',
+          title: 'A queda',
+          insight: 'Deus ainda pergunta onde estás',
+        ),
+        _m(
+          slug: 'conseq',
+          title: 'Consequências',
+          hookNote: 'No mesmo capítulo Deus fala de uma semente.',
+          insight: 'Há semente depois da porta',
+          echoQuestion:
+              'Ele perguntou. E depois da resposta, a história acabou?',
+        ),
+      ],
+    );
+    final hook = TomorrowHook.resolve(
+      trails: [trail],
+      completed: ['queda'],
+      justFinishedSlug: 'queda',
+    );
+    expect(hook, isNotNull);
+    expect(hook!.hasEcho, isTrue);
+    expect(hook.kicker, 'HOJE VOCÊ VIU');
+    expect(hook.trailer, contains('história acabou'));
+    expect(hook.trailer, isNot(contains('semente')));
+    expect(hook.promiseLine, 'Amanhã: Consequências');
+  });
+
+  test('celebration after recomeco stays on recomeco, not ansiedade', () {
+    final ansiedade = _trail(
+      slug: 'ansiedade',
+      missions: [
+        _m(
+          slug: 'dor-ansia-01',
+          title: 'Tesouros e ansiedade',
+          hookNote: 'O cuidado do Pai é o argumento contra a ansiedade.',
+          hookRef: 'Mateus 6:25–34',
+          insight: 'O tesouro puxa o coração',
+        ),
+      ],
+    );
+    final recomeco = _trail(
+      slug: 'recomeco',
+      missions: [
+        _m(
+          slug: 'dor-recome-01',
+          title: 'A queda',
+          insight: 'Deus ainda pergunta onde estás',
+        ),
+        _m(
+          slug: 'dor-recome-02',
+          title: 'Consequências',
+          hookNote: 'No mesmo capítulo Deus fala de uma semente.',
+          insight: 'Há semente depois da porta',
+          echoQuestion:
+              'Ele perguntou. E depois da resposta, a história acabou?',
+        ),
+      ],
+    );
+    // Overlay coloca Ansiedade antes — o bug antigo apontava para ela.
+    final hook = TomorrowHook.resolve(
+      trails: [ansiedade, recomeco],
+      completed: ['dor-recome-01'],
+      justFinishedSlug: 'dor-recome-01',
+    );
+    expect(hook, isNotNull);
+    expect(hook!.trailSlug, 'recomeco');
+    expect(hook.title, 'Consequências');
+    expect(hook.hasEcho, isTrue);
+    expect(hook.kicker, 'HOJE VOCÊ VIU');
+    expect(hook.trailer, contains('história acabou'));
+    expect(hook.title, isNot(contains('ansiedade')));
+  });
+
+  test('without echoQuestion celebration stays classic', () {
+    final hook = TomorrowHook.resolve(
+      trails: [genesis],
+      completed: ['imagem'],
+      justFinishedSlug: 'imagem',
+    );
+    expect(hook!.hasEcho, isFalse);
+    expect(hook.kicker, 'AMANHÃ');
+    expect(hook.trailer, contains('pergunta'));
   });
 
   test('withToday fills insight when the catalog omitted it', () {

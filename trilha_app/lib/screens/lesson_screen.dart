@@ -28,6 +28,7 @@ import '../widgets/cinematic_icon.dart';
 import '../widgets/exercise_feedback_dialog.dart';
 import '../widgets/exercise_panel.dart';
 import '../widgets/lamps_bar.dart';
+import '../widgets/brand_flip_card.dart';
 import '../widgets/stage_plate.dart';
 import '../widgets/ui_primitives.dart';
 import '../widgets/immersive_background.dart';
@@ -161,7 +162,8 @@ class _LessonScreenState extends State<LessonScreen>
 
     // Deep link / rota direta: não deixa pular unlock de trilha ou passo.
     // Caminhada e Esquina ativa já autorizaram a cena.
-    final cornerOpens = !widget.practiceMode &&
+    final cornerOpens =
+        !widget.practiceMode &&
         context.read<CornerService>().opensMission(widget.missionSlug);
     if (!widget.practiceMode &&
         !widget.skipTrailLock &&
@@ -295,11 +297,13 @@ class _LessonScreenState extends State<LessonScreen>
         hookRef: hooks.ref,
         hookVerse: hooks.verse,
         hookNote: hooks.note,
+        echoQuestion: mission.echoQuestion,
         hookThread: hooks.thread,
         bankSection: mission.bankSection,
         bankTrailSlug: mission.bankTrailSlug,
       );
     });
+    unawaited(freshProgress.clearEchoIfArrived(mission.title));
   }
 
   /// Entrada bíblica: missão → estudo → atos. Leitura na tradução escolhida.
@@ -701,9 +705,7 @@ class _LessonScreenState extends State<LessonScreen>
     final diffId =
         _difficultyMeta?.difficulty ??
         TrailDifficulty.fromId(
-          context.read<ProgressService>().difficultyForTrail(
-            _trailSlug ?? '',
-          ),
+          context.read<ProgressService>().difficultyForTrail(_trailSlug ?? ''),
         ) ??
         TrailDifficulty.semente;
     final rev = SessionComposer.reviewFromBank(
@@ -1031,6 +1033,7 @@ class _IntroPanel extends StatelessWidget {
                     child: _WitnessPlate(
                       accent: accent,
                       reference: ref,
+                      brandBack: true,
                       child: Text(
                         stageText,
                         textAlign: TextAlign.center,
@@ -1118,19 +1121,28 @@ class _InsightPanel extends StatelessWidget {
   }
 }
 
+/// Palco do versículo. Com [brandBack], um toque gira a carta e mostra a marca.
 class _WitnessPlate extends StatelessWidget {
   final Color accent;
   final String? reference;
   final Widget child;
+  final bool brandBack;
 
   const _WitnessPlate({
     required this.accent,
     required this.child,
     this.reference,
+    this.brandBack = false,
   });
 
   @override
   Widget build(BuildContext context) {
+    final face = _face();
+    if (!brandBack) return face;
+    return BrandFlipCard(accent: accent, front: face);
+  }
+
+  Widget _face() {
     final ref = (reference ?? '').trim();
     return StagePlate(
       accent: accent,

@@ -104,6 +104,7 @@ class _BibleScreenState extends State<BibleScreen> {
   bool _reloadScheduled = false;
   Timer? _searchDebounce;
   int _searchGen = 0;
+  final Set<String> _closedBrowseCards = {};
 
   @override
   void initState() {
@@ -283,6 +284,15 @@ class _BibleScreenState extends State<BibleScreen> {
       return _BookPicker(
         topBar: _rootTopBar(),
         books: books,
+        closedCards: _closedBrowseCards,
+        onToggleCard: (id) {
+          HapticFeedback.selectionClick();
+          setState(() {
+            if (!_closedBrowseCards.add(id)) {
+              _closedBrowseCards.remove(id);
+            }
+          });
+        },
         onPick: (i) => setState(() => _bookIndex = i),
         onSearch: () => setState(() => _searching = true),
         onOpenPlan: () {
@@ -333,6 +343,8 @@ class _BibleScreenState extends State<BibleScreen> {
 class _BookPicker extends StatelessWidget {
   final Widget topBar;
   final List<BibleBook> books;
+  final Set<String> closedCards;
+  final ValueChanged<String> onToggleCard;
   final ValueChanged<int> onPick;
   final VoidCallback onSearch;
   final VoidCallback onOpenPlan;
@@ -340,6 +352,8 @@ class _BookPicker extends StatelessWidget {
   const _BookPicker({
     required this.topBar,
     required this.books,
+    required this.closedCards,
+    required this.onToggleCard,
     required this.onPick,
     required this.onSearch,
     required this.onOpenPlan,
@@ -469,16 +483,22 @@ class _BookPicker extends StatelessWidget {
 
     return [
       _CanonTestamentCard(
+        cardId: 'canon-ot',
         title: 'ANTIGO TESTAMENTO',
         groups: otGroups,
         books: books,
+        expanded: !closedCards.contains('canon-ot'),
+        onToggle: () => onToggleCard('canon-ot'),
         onPick: onPick,
       ),
       const SizedBox(height: AppSpace.section),
       _CanonTestamentCard(
+        cardId: 'canon-nt',
         title: 'NOVO TESTAMENTO',
         groups: ntGroups,
         books: books,
+        expanded: !closedCards.contains('canon-nt'),
+        onToggle: () => onToggleCard('canon-nt'),
         onPick: onPick,
       ),
     ];
@@ -505,11 +525,15 @@ class _BookPicker extends StatelessWidget {
       if (widgets.isNotEmpty) {
         widgets.add(const SizedBox(height: AppSpace.section));
       }
+      final cardId = 'chrono-${era.id}';
       widgets.add(
         _BookGroupSection(
+          key: ValueKey(cardId),
           title: era.title,
           blurb: era.blurb,
           entries: entries,
+          expanded: !closedCards.contains(cardId),
+          onToggle: () => onToggleCard(cardId),
           onPick: onPick,
         ),
       );
@@ -537,8 +561,16 @@ class _BookPicker extends StatelessWidget {
       if (widgets.isNotEmpty) {
         widgets.add(const SizedBox(height: AppSpace.section));
       }
+      final cardId = 'alpha-$letter';
       widgets.add(
-        _BookGroupSection(title: letter, entries: group, onPick: onPick),
+        _BookGroupSection(
+          key: ValueKey(cardId),
+          title: letter,
+          entries: group,
+          expanded: !closedCards.contains(cardId),
+          onToggle: () => onToggleCard(cardId),
+          onPick: onPick,
+        ),
       );
     }
     return widgets;
@@ -723,38 +755,47 @@ class _BrowseOrderToggle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        SectionLabel('Ordem dos livros', color: a.sectionLabel),
-        const SizedBox(height: AppSpace.sm),
-        Container(
-          padding: const EdgeInsets.all(3),
-          decoration: BoxDecoration(
-            color: a.cardFillSoft,
-            borderRadius: BorderRadius.circular(AppRadii.md),
-            border: Border.all(color: a.cardBorder),
+    return Container(
+      decoration: BoxDecoration(
+        color: a.cardFillSoft,
+        borderRadius: BorderRadius.circular(AppRadii.md),
+        border: Border.all(color: a.cardBorder),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Padding(
+            padding: const EdgeInsets.fromLTRB(
+              AppSpace.md,
+              AppSpace.md,
+              AppSpace.md,
+              AppSpace.sm,
+            ),
+            child: SectionLabel('Ordem dos livros', color: a.sectionLabel),
           ),
-          child: Row(
-            children: [
-              for (final o in BibleReadingOrder.values)
-                Expanded(
-                  child: AppSelectChip(
-                    label: o.shortLabel,
-                    selected: value == o,
-                    onTap: () => onChanged(o),
-                    style: AppSelectChipStyle.solid,
-                    fontSize: 12,
-                    padding: const EdgeInsets.symmetric(vertical: 10),
-                    borderRadius: const BorderRadius.all(
-                      Radius.circular(AppRadii.sm),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(3, 0, 3, 3),
+            child: Row(
+              children: [
+                for (final o in BibleReadingOrder.values)
+                  Expanded(
+                    child: AppSelectChip(
+                      label: o.shortLabel,
+                      selected: value == o,
+                      onTap: () => onChanged(o),
+                      style: AppSelectChipStyle.solid,
+                      fontSize: 12,
+                      padding: const EdgeInsets.symmetric(vertical: 10),
+                      borderRadius: const BorderRadius.all(
+                        Radius.circular(AppRadii.sm),
+                      ),
                     ),
                   ),
-                ),
-            ],
+              ],
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
@@ -763,71 +804,39 @@ class _BookGroupSection extends StatelessWidget {
   final String title;
   final String? blurb;
   final List<({BibleBook book, int index})> entries;
+  final bool expanded;
+  final VoidCallback onToggle;
   final ValueChanged<int> onPick;
 
   const _BookGroupSection({
+    super.key,
     required this.title,
     this.blurb,
     required this.entries,
+    required this.expanded,
+    required this.onToggle,
     required this.onPick,
   });
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Row(
-          children: [
-            Container(
-              width: 3,
-              height: 14,
-              decoration: BoxDecoration(
-                color: AppColors.cedar,
-                borderRadius: BorderRadius.circular(2),
-              ),
-            ),
-            const SizedBox(width: AppSpace.sm),
-            Expanded(child: SectionLabel(title, color: a.sectionLabel)),
-            Text(
-              '${entries.length}',
-              style: AppTypography.body(
-                size: 12,
-                weight: FontWeight.w700,
-                color: a.textMuted(0.45),
-              ),
-            ),
-          ],
-        ),
-        if (blurb != null) ...[
-          const SizedBox(height: 4),
-          Padding(
-            padding: const EdgeInsets.only(left: 11),
-            child: Text(
-              blurb!,
-              style: AppTypography.body(size: 12, color: a.textMuted(0.55)),
-            ),
-          ),
-        ],
-        const SizedBox(height: AppSpace.md),
-        GlassCard(
-          padding: EdgeInsets.zero,
-          radius: AppRadii.lg,
-          child: Column(
-            children: List.generate(entries.length, (i) {
-              final isLast = i == entries.length - 1;
-              return _BookRow(
-                book: entries[i].book,
-                onTap: () => onPick(entries[i].index),
-                showDivider: !isLast,
-                isFirst: i == 0,
-                isLast: isLast,
-              );
-            }),
-          ),
-        ),
-      ],
+    return _CollapsibleBrowseCard(
+      title: title,
+      blurb: blurb,
+      count: '${entries.length}',
+      expanded: expanded,
+      onToggle: onToggle,
+      body: Column(
+        children: List.generate(entries.length, (i) {
+          final isLast = i == entries.length - 1;
+          return _BookRow(
+            book: entries[i].book,
+            onTap: () => onPick(entries[i].index),
+            showDivider: !isLast,
+            isLast: isLast,
+          );
+        }),
+      ),
     );
   }
 }
@@ -998,21 +1007,26 @@ class _SearchPane extends StatelessWidget {
 }
 
 class _CanonTestamentCard extends StatelessWidget {
+  final String cardId;
   final String title;
   final List<BibleCanonGroup> groups;
   final List<BibleBook> books;
+  final bool expanded;
+  final VoidCallback onToggle;
   final ValueChanged<int> onPick;
 
   const _CanonTestamentCard({
+    required this.cardId,
     required this.title,
     required this.groups,
     required this.books,
+    required this.expanded,
+    required this.onToggle,
     required this.onPick,
   });
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
     final children = <Widget>[];
     var bookCount = 0;
     var firstGroup = true;
@@ -1060,41 +1074,142 @@ class _CanonTestamentCard extends StatelessWidget {
 
     if (children.isEmpty) return const SizedBox.shrink();
 
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Row(
+    return _CollapsibleBrowseCard(
+      key: ValueKey(cardId),
+      title: title,
+      count: '$bookCount',
+      expanded: expanded,
+      onToggle: onToggle,
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: children,
+      ),
+    );
+  }
+}
+
+/// Cabeçalho do card de livros abre e fecha a lista.
+class _CollapsibleBrowseCard extends StatelessWidget {
+  final String title;
+  final String? blurb;
+  final String count;
+  final bool expanded;
+  final VoidCallback onToggle;
+  final Widget body;
+
+  const _CollapsibleBrowseCard({
+    super.key,
+    required this.title,
+    this.blurb,
+    required this.count,
+    required this.expanded,
+    required this.onToggle,
+    required this.body,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final motion = MediaQuery.disableAnimationsOf(context);
+    final duration = motion
+        ? Duration.zero
+        : const Duration(milliseconds: 220);
+
+    return GlassCard(
+      padding: EdgeInsets.zero,
+      radius: AppRadii.lg,
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(AppRadii.lg),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Container(
-              width: 3,
-              height: 14,
-              decoration: BoxDecoration(
-                color: AppColors.cedar,
-                borderRadius: BorderRadius.circular(2),
+            Material(
+              color: Colors.transparent,
+              child: InkWell(
+                onTap: onToggle,
+                borderRadius: BorderRadius.vertical(
+                  top: const Radius.circular(AppRadii.lg),
+                  bottom: expanded
+                      ? Radius.zero
+                      : const Radius.circular(AppRadii.lg),
+                ),
+                child: Semantics(
+                  button: true,
+                  expanded: expanded,
+                  hint: expanded ? 'Toque para fechar' : 'Toque para abrir',
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(
+                      AppSpace.md,
+                      AppSpace.md,
+                      AppSpace.md,
+                      AppSpace.md,
+                    ),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: SectionLabel(title, color: a.sectionLabel),
+                        ),
+                        Text(
+                          count,
+                          style: AppTypography.body(
+                            size: 12,
+                            weight: FontWeight.w700,
+                            color: a.textMuted(0.45),
+                          ),
+                        ),
+                        const SizedBox(width: AppSpace.xs),
+                        AnimatedRotation(
+                          turns: expanded ? -0.25 : 0.25,
+                          duration: duration,
+                          curve: Curves.easeOutCubic,
+                          child: ListChevron(
+                            size: 18,
+                            color: a.textMuted(0.45),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
               ),
             ),
-            const SizedBox(width: AppSpace.sm),
-            Expanded(child: SectionLabel(title, color: a.sectionLabel)),
-            Text(
-              '$bookCount',
-              style: AppTypography.body(
-                size: 12,
-                weight: FontWeight.w700,
-                color: a.textMuted(0.45),
-              ),
+            AnimatedSize(
+              duration: duration,
+              curve: Curves.easeOutCubic,
+              alignment: Alignment.topCenter,
+              child: expanded
+                  ? Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: [
+                        if (blurb != null)
+                          Padding(
+                            padding: const EdgeInsets.fromLTRB(
+                              AppSpace.md,
+                              0,
+                              AppSpace.md,
+                              AppSpace.sm,
+                            ),
+                            child: Text(
+                              blurb!,
+                              style: AppTypography.body(
+                                size: 12,
+                                color: a.textMuted(0.55),
+                              ),
+                            ),
+                          ),
+                        Divider(
+                          height: 1,
+                          thickness: 1,
+                          color: Colors.white.withValues(alpha: 0.06),
+                        ),
+                        body,
+                      ],
+                    )
+                  : const SizedBox(width: double.infinity),
             ),
           ],
         ),
-        const SizedBox(height: AppSpace.md),
-        GlassCard(
-          padding: EdgeInsets.zero,
-          radius: AppRadii.lg,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: children,
-          ),
-        ),
-      ],
+      ),
     );
   }
 }
@@ -1103,14 +1218,12 @@ class _BookRow extends StatelessWidget {
   final BibleBook book;
   final VoidCallback onTap;
   final bool showDivider;
-  final bool isFirst;
   final bool isLast;
 
   const _BookRow({
     required this.book,
     required this.onTap,
     required this.showDivider,
-    this.isFirst = false,
     this.isLast = false,
   });
 
@@ -1120,7 +1233,6 @@ class _BookRow extends StatelessWidget {
     final chapters = book.chapters.length;
     final abbrev = book.abbrev.toUpperCase();
     final radius = BorderRadius.vertical(
-      top: isFirst ? const Radius.circular(AppRadii.lg) : Radius.zero,
       bottom: isLast ? const Radius.circular(AppRadii.lg) : Radius.zero,
     );
 

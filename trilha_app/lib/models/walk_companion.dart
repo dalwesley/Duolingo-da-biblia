@@ -32,6 +32,9 @@ class WalkCompanion {
   /// Já acenei hoje neste par.
   final bool iNudgedToday;
 
+  /// Uid do parceiro, para reconhecer a caminhada dele.
+  final String? partnerUid;
+
   static const milestones = [3, 7, 14, 30, 60, 100];
 
   /// Os dois ganham na Caravana só se a dupla fechar os 7 dias (seg–dom).
@@ -55,6 +58,7 @@ class WalkCompanion {
     this.incomingNudgeMessage,
     this.incomingNudgeDay,
     this.iNudgedToday = false,
+    this.partnerUid,
   });
 
   /// Ambos caminharam hoje — a companhia está viva.

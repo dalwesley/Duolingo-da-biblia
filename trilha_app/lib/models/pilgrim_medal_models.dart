@@ -14,7 +14,7 @@ enum PilgrimMedalFamily {
   discovery,
 }
 
-/// Material da medalha — jornada Bronze → Prata → Ouro; Platina/Diamante reservados; Mirra para raras.
+/// Material da medalha — jornada Bronze → Prata → Ouro; Platina/Diamante reservados; Mirra para raras; Aurora só no Pioneiro.
 enum PilgrimMedalTier {
   iron,
   bronze,
@@ -23,6 +23,7 @@ enum PilgrimMedalTier {
   platinum,
   diamond,
   mirra,
+  aurora,
 }
 
 /// Faísca acende o emblema; conquista é moeda que não some.
@@ -76,7 +77,7 @@ class PilgrimMedalTrackDef {
   int get levelCount => levels.length;
 }
 
-/// Medalha rara (Mirra) — conquista única, não escada.
+/// Medalha rara — conquista única, não escada. Mirra nas descobertas; Aurora só no Pioneiro.
 class PilgrimMedalDef {
   final String id;
   final String vaultId;
@@ -434,4 +435,5 @@ String tierLabel(PilgrimMedalTier tier) => switch (tier) {
       PilgrimMedalTier.platinum => 'Platina',
       PilgrimMedalTier.diamond => 'Diamante',
       PilgrimMedalTier.mirra => 'Mirra',
+      PilgrimMedalTier.aurora => 'Ultra rara',
     };

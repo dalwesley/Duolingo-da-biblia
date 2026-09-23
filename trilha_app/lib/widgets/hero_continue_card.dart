@@ -143,6 +143,18 @@ class _HeroContinueCardState extends State<HeroContinueCard>
 
     // Em dia: o cartão é o trailer de amanhã — o ouro convida a abrir agora.
     final resting = widget.goalMet && mood == HeroCardMood.alive;
+    final arrived =
+        !walkedToday &&
+        TomorrowHook.promisedArrived(
+          promisedTitle: progress.nextSceneTitle,
+          currentTitle: mission.title,
+        );
+    final yesterday = !walkedToday
+        ? TomorrowHook.yesterdayLine(progress.lastInsight)
+        : null;
+    final echoDoor = !walkedToday && arrived
+        ? TomorrowHook.echoDoorLine(progress.lastEchoQuestion)
+        : null;
     final ctaLabel = switch (mood) {
       HeroCardMood.frozen => 'Retomar a trilha',
       HeroCardMood.dusty => 'Continuar a trilha',
@@ -151,6 +163,8 @@ class _HeroContinueCardState extends State<HeroContinueCard>
             ? 'Abrir agora'
             : walkedToday
             ? 'Continuar'
+            : echoDoor != null
+            ? 'Descobrir'
             : 'Entrar',
     };
     final rewardColor = mission.isBoss ? AppColors.sand : style.footer;
@@ -174,15 +188,6 @@ class _HeroContinueCardState extends State<HeroContinueCard>
       HeroCardMood.alive => null,
     };
 
-    final arrived =
-        !walkedToday &&
-        TomorrowHook.promisedArrived(
-          promisedTitle: progress.nextSceneTitle,
-          currentTitle: mission.title,
-        );
-    final yesterday = !walkedToday
-        ? TomorrowHook.yesterdayLine(progress.lastInsight)
-        : null;
     final tease = resting
         ? TomorrowHook.pullOf(mission)
         : (_readerTease ?? TomorrowHook.teaseOf(mission));
@@ -193,6 +198,8 @@ class _HeroContinueCardState extends State<HeroContinueCard>
       HeroCardMood.alive =>
         resting
             ? 'Amanhã'
+            : echoDoor != null
+            ? 'Eco de ontem'
             : arrived
             ? 'Hoje'
             : walkedToday
@@ -375,19 +382,34 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                               ),
                             ),
                           ],
-                          const SizedBox(height: 12),
-                          Flexible(
-                            child: Text(
-                              tease,
+                          if (echoDoor != null) ...[
+                            const SizedBox(height: 10),
+                            Text(
+                              echoDoor,
                               maxLines: 3,
                               overflow: TextOverflow.ellipsis,
                               style: AppTypography.verse(
-                                size: 20,
+                                size: 18,
                                 height: 1.35,
+                                fontStyle: FontStyle.italic,
                                 color: a.text.withValues(alpha: 0.92),
                               ),
                             ),
-                          ),
+                          ] else ...[
+                            const SizedBox(height: 12),
+                            Flexible(
+                              child: Text(
+                                tease,
+                                maxLines: 3,
+                                overflow: TextOverflow.ellipsis,
+                                style: AppTypography.verse(
+                                  size: 20,
+                                  height: 1.35,
+                                  color: a.text.withValues(alpha: 0.92),
+                                ),
+                              ),
+                            ),
+                          ],
                         ] else if (mission.subtitle.trim().isNotEmpty &&
                             mood == HeroCardMood.dusty) ...[
                           const SizedBox(height: 10),

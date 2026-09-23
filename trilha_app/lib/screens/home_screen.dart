@@ -10,6 +10,7 @@ import '../services/companion_service.dart';
 import '../services/corner_service.dart';
 import '../services/league_service.dart';
 import '../services/progress_service.dart';
+import '../services/recognition_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
@@ -20,6 +21,7 @@ import '../models/daily_quest.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/comeback_sheet.dart';
 import '../widgets/companion_nudge_home_card.dart';
+import '../widgets/recognition_home_card.dart';
 import '../widgets/corner_home_card.dart';
 import '../widgets/daily_chest_card.dart';
 import '../widgets/daily_quests_card.dart';
@@ -326,6 +328,7 @@ class _HomeScreenState extends State<HomeScreen>
     _maybePromptReminders(progress);
 
     final nudge = context.watch<CompanionService>().incomingNudge;
+    final recognitions = context.watch<RecognitionService>().incoming;
     final corner = context.watch<CornerService>().homeCard;
     final walk = current != null
         ? () => widget.onOpenMission(current.slug)
@@ -376,16 +379,6 @@ class _HomeScreenState extends State<HomeScreen>
                   ),
                 ),
               ],
-              if (corner != null) ...[
-                const SizedBox(height: AppSpace.md),
-                _reveal(
-                  0,
-                  CornerHomeCard(
-                    challenge: corner,
-                    onWalk: () => widget.onOpenMission(corner.missionSlug),
-                  ),
-                ),
-              ],
               const SizedBox(height: AppSpace.lg),
               // Resultado da semana da caravana — coletar na Home (não na aba Juntos).
               Builder(
@@ -423,7 +416,24 @@ class _HomeScreenState extends State<HomeScreen>
                   ],
                 ),
               ),
-              const SizedBox(height: AppSpace.xl),
+              if (recognitions.isNotEmpty) ...[
+                const SizedBox(height: AppSpace.section),
+                _reveal(1, RecognitionHomeCard(items: recognitions)),
+              ],
+              if (corner != null) ...[
+                const SizedBox(height: AppSpace.section),
+                _reveal(
+                  1,
+                  CornerHomeCard(
+                    challenge: corner,
+                    onWalk: () => widget.onOpenMission(corner.missionSlug),
+                  ),
+                ),
+              ],
+              if (recognitions.isEmpty && corner == null)
+                const SizedBox(height: AppSpace.xl)
+              else
+                const SizedBox(height: AppSpace.section),
               if (goalMet) ...[
                 _reveal(2, SeasonChallengeBanner(catalog: trails)),
               ],
@@ -478,7 +488,8 @@ class _HomeScreenState extends State<HomeScreen>
                   ),
                 ),
               if (progress.mistakeQuestionIds.isNotEmpty) ...[
-                const SizedBox(height: AppSpace.section),
+                if (recognitions.isEmpty || current == null)
+                  const SizedBox(height: AppSpace.section),
                 _reveal(4, const _RevisitPracticeLink()),
               ],
             ],

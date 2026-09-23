@@ -38,8 +38,12 @@ class PortraitFace extends StatelessWidget {
     return '${parts.first[0]}${parts.last[0]}'.toUpperCase();
   }
 
-  /// Foto real — ignora URL vazia e a letra colorida que o Google gera
-  /// quando a conta não tem retrato (`.../a/...`, sem o hífen de `/a-/`).
+  /// Foto da conta. Ignora URL vazia e os placeholders conhecidos
+  /// (`default-user`, silhueta `AAAAAAAAAAI`).
+  ///
+  /// O Google passou a servir retrato real em `/a/ACg8oc…`, o mesmo
+  /// prefixo da letra colorida antiga. A URL sozinha não separa os dois;
+  /// esconder todo `/a/` sem hífen ocultava a foto de verdade.
   static bool isUsablePhotoUrl(String? url) {
     if (url == null) return false;
     final u = url.trim();
@@ -47,11 +51,8 @@ class PortraitFace extends StatelessWidget {
     final lower = u.toLowerCase();
     if (lower.contains('default-user') ||
         lower.contains('default-avatar') ||
-        lower.contains('avatar/empty')) {
-      return false;
-    }
-    if (lower.contains('googleusercontent.com/a/') &&
-        !lower.contains('googleusercontent.com/a-/')) {
+        lower.contains('avatar/empty') ||
+        lower.contains('aaaaaaaaaai')) {
       return false;
     }
     return true;

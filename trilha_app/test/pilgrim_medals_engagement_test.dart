@@ -1,6 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 import 'package:trilha_app/models/caravan_pilgrim_profile.dart';
 import 'package:trilha_app/models/pilgrim_medal_catalog.dart';
+import 'package:trilha_app/models/pilgrim_medal_models.dart';
 import 'package:trilha_app/models/pilgrim_medals.dart';
 import 'package:trilha_app/models/trail.dart';
 
@@ -132,6 +133,7 @@ void main() {
         (m) => m.id == 'discovery:founder',
       );
       expect(founder.silent, isTrue);
+      expect(founder.tier, PilgrimMedalTier.aurora);
     });
 
     test('expandCelebratedIds maps v2 medal to semantic prefix', () {

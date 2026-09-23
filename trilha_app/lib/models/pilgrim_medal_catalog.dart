@@ -489,6 +489,7 @@ class PilgrimMedalCatalog {
       hint: 'Entrou no app durante o período de testes',
       glyph: CinematicGlyph.star,
       family: PilgrimMedalFamily.discovery,
+      tier: PilgrimMedalTier.aurora,
       silent: true,
     ),
     PilgrimMedalDef(

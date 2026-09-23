@@ -19,7 +19,7 @@ class EntryTrails {
     title: 'Ansiedade',
     description: 'Cinco missões para lançar o amanhã no Pai — e seguir no cânon.',
     icon: '🌊',
-    order: 2,
+    order: 0,
     comingSoon: false,
     color: '#4C6EF5',
     realmId: 'vida-crista',
@@ -119,7 +119,7 @@ class EntryTrails {
     title: 'Recomeço',
     description: 'Cinco missões da queda ao chamado — e de volta a Gênesis 1–11.',
     icon: '🌱',
-    order: 3,
+    order: 1,
     comingSoon: false,
     color: '#2F9E44',
     realmId: 'vida-crista',
@@ -157,6 +157,8 @@ class EntryTrails {
                 'Porei inimizade entre ti e a mulher, e entre a tua semente e a semente dela; esta te ferirá a cabeça, e tu lhe ferirás o calcanhar.',
             hookNote: 'No mesmo capítulo da expulsão, Deus fala de uma semente. O juízo não cancela a história.',
             centralInsight: 'Há semente depois da porta',
+            echoQuestion:
+                'Ele perguntou. E depois da resposta, a história acabou?',
             objective: 'Ler consequência e promessa no mesmo texto.',
             bankSection: 'gen-07-consequencias',
             bankTrailSlug: 'genesis-1-11',
@@ -173,6 +175,8 @@ class EntryTrails {
                 'Disse Deus: Este é o sinal da aliança que instituo entre mim e vós… O meu arco tenho posto nas nuvens.',
             hookNote: 'O mundo recomeça sob aliança, não sob amnésia. O arco lembra a Deus — e a nós.',
             centralInsight: 'Recomeçar é aliança, não apagar',
+            echoQuestion:
+                'Há semente depois da porta. O mundo recomeça apagando o passado?',
             objective: 'Ver o dilúvio como juízo que guarda um resto.',
             bankSection: 'gen-09-diluvio',
             bankTrailSlug: 'genesis-1-11',
@@ -189,6 +193,8 @@ class EntryTrails {
                 'O Senhor disse a Abrão: Saia da sua terra, de sua parentela e da casa de seu pai e vá para a terra que eu lhe mostrarei.',
             hookNote: 'Deus não conserta Babel com outra torre. Chama uma família para ser bênção.',
             centralInsight: 'O recomeço caminha para fora',
+            echoQuestion:
+                'Recomeçar é aliança. Babel se conserta com outra torre?',
             objective: 'Ligar recomeço a chamado, não a isolamento.',
             bankSection: 'gen-11-abraao',
             bankTrailSlug: 'genesis-1-11',
@@ -204,6 +210,8 @@ class EntryTrails {
             hookVerse: 'Bem-aventurados os que choram, porque eles serão consolados.',
             hookNote: 'O Reino não apressa o luto. Consola. A trilha canônica começa em Gênesis 1–11.',
             centralInsight: 'Há conforto para quem chora de verdade',
+            echoQuestion:
+                'O recomeço caminha para fora. Quem chora o que morreu encontra o quê no Reino?',
             objective: 'Sair da trilha de dor para o currículo: Gênesis 1–11.',
             bankSection: 'sm-03-os-que-choram',
             bankTrailSlug: 'sermao-do-monte',

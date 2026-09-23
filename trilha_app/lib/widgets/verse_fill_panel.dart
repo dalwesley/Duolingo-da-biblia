@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import '../theme/app_theme.dart';
 import 'act_feel.dart';
+import 'brand_flip_card.dart';
 import 'cinematic_icon.dart';
 import 'stage_plate.dart';
 import 'ui_primitives.dart';
@@ -77,10 +78,7 @@ class _VerseFillPanelState extends State<VerseFillPanel>
     if (t.isNotEmpty && !RegExp(r'[.!?]$').hasMatch(t)) {
       t = '$t.';
     }
-    return t
-        .split(RegExp(r'\s+'))
-        .where((w) => w.trim().isNotEmpty)
-        .toList();
+    return t.split(RegExp(r'\s+')).where((w) => w.trim().isNotEmpty).toList();
   }
 
   static String _trailingPunct(String w) {
@@ -186,8 +184,7 @@ class _VerseFillPanelState extends State<VerseFillPanel>
     return all;
   }
 
-  static String _cleanWord(String w) =>
-      w.replaceAll(RegExp(r'[^\wÀ-ÿ\-]'), '');
+  static String _cleanWord(String w) => w.replaceAll(RegExp(r'[^\wÀ-ÿ\-]'), '');
 
   int? get _activeBlank {
     for (final i in _blankIndexes) {
@@ -196,8 +193,7 @@ class _VerseFillPanelState extends State<VerseFillPanel>
     return null;
   }
 
-  int get _filledCount =>
-      _blankIndexes.where((i) => _picked[i] != null).length;
+  int get _filledCount => _blankIndexes.where((i) => _picked[i] != null).length;
 
   void _select(String option) {
     if (_revealed) return;
@@ -254,8 +250,8 @@ class _VerseFillPanelState extends State<VerseFillPanel>
         final gap = tight
             ? AppSpace.xs
             : compact
-                ? AppSpace.sm
-                : AppSpace.md;
+            ? AppSpace.sm
+            : AppSpace.md;
 
         return Stack(
           fit: StackFit.expand,
@@ -277,7 +273,8 @@ class _VerseFillPanelState extends State<VerseFillPanel>
                         radius: 1.15,
                         colors: [
                           flashColor.withValues(
-                            alpha: (1 - _revealFlash.value) *
+                            alpha:
+                                (1 - _revealFlash.value) *
                                 (_correct ? 0.28 : 0.2),
                           ),
                           Colors.transparent,
@@ -303,11 +300,11 @@ class _VerseFillPanelState extends State<VerseFillPanel>
                       parent: _stagger,
                       curve: const Interval(0, 0.35, curve: Curves.easeOut),
                     ),
-                      child: _MemoryHeader(
-                        accent: accent,
-                        filled: _filledCount,
-                        total: _blankIndexes.length,
-                      ),
+                    child: _MemoryHeader(
+                      accent: accent,
+                      filled: _filledCount,
+                      total: _blankIndexes.length,
+                    ),
                   ),
                   SizedBox(height: gap),
                   Expanded(
@@ -341,11 +338,7 @@ class _VerseFillPanelState extends State<VerseFillPanel>
                     FadeTransition(
                       opacity: CurvedAnimation(
                         parent: _stagger,
-                        curve: const Interval(
-                          0.4,
-                          0.9,
-                          curve: Curves.easeOut,
-                        ),
+                        curve: const Interval(0.4, 0.9, curve: Curves.easeOut),
                       ),
                       child: Column(
                         children: [
@@ -364,7 +357,9 @@ class _VerseFillPanelState extends State<VerseFillPanel>
                                   onTap: used.contains(_options[i])
                                       ? () {
                                           final slot = _picked.entries
-                                              .where((e) => e.value == _options[i])
+                                              .where(
+                                                (e) => e.value == _options[i],
+                                              )
                                               .map((e) => e.key)
                                               .firstOrNull;
                                           if (slot != null) _clearSlot(slot);
@@ -585,41 +580,50 @@ class _VerseStage extends StatelessWidget {
       height: 1.55,
     );
 
-    return StagePlate(
+    final chosen = [
+      for (final index in blankIndexes)
+        if (picked[index] != null) '$index:${picked[index]}',
+    ].join('|');
+
+    return BrandFlipCard(
       accent: accent,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Text(
-            reference.toUpperCase(),
-            textAlign: TextAlign.center,
-            style: AppTypography.label(
-              size: 13,
-              letterSpacing: 1.8,
-              color: accent,
+      answer: chosen.isEmpty ? null : chosen,
+      front: StagePlate(
+        accent: accent,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Text(
+              reference.toUpperCase(),
+              textAlign: TextAlign.center,
+              style: AppTypography.label(
+                size: 13,
+                letterSpacing: 1.8,
+                color: accent,
+              ),
             ),
-          ),
-          const SizedBox(height: 14),
-          Expanded(
-            child: Center(
-              child: SingleChildScrollView(
-                physics: const BouncingScrollPhysics(),
-                child: Text.rich(
-                  TextSpan(
-                    style: verseStyle,
-                    children: [
-                      for (var i = 0; i < words.length; i++) ...[
-                        if (i > 0) const TextSpan(text: ' '),
-                        _spanFor(i, verseStyle),
+            const SizedBox(height: 14),
+            Expanded(
+              child: Center(
+                child: SingleChildScrollView(
+                  physics: const BouncingScrollPhysics(),
+                  child: Text.rich(
+                    TextSpan(
+                      style: verseStyle,
+                      children: [
+                        for (var i = 0; i < words.length; i++) ...[
+                          if (i > 0) const TextSpan(text: ' '),
+                          _spanFor(i, verseStyle),
+                        ],
                       ],
-                    ],
+                    ),
+                    textAlign: TextAlign.center,
                   ),
-                  textAlign: TextAlign.center,
                 ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
@@ -824,9 +828,7 @@ class _WordChip extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(18),
-              color: used
-                  ? accent
-                  : Color.lerp(AppColors.card, accent, 0.16)!,
+              color: used ? accent : Color.lerp(AppColors.card, accent, 0.16)!,
               boxShadow: const [
                 BoxShadow(
                   color: Color(0x59000000),
@@ -901,10 +903,10 @@ class _RevealBanner extends StatelessWidget {
                       correct
                           ? '+2 passos'
                           : corrections.isEmpty
-                              ? 'Veja a palavra certa'
-                              : corrections
-                                  .map((c) => '${c.got} → ${c.expected}')
-                                  .join(' · '),
+                          ? 'Veja a palavra certa'
+                          : corrections
+                                .map((c) => '${c.got} → ${c.expected}')
+                                .join(' · '),
                       style: AppTypography.body(
                         size: 13,
                         weight: FontWeight.w700,

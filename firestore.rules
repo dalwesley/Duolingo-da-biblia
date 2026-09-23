@@ -242,6 +242,55 @@ service cloud.firestore {
       allow delete: if false;
     }
 
+    // Reconhecimento: um toque na cena ou na medalha de outro peregrino.
+    // O destinatário lê a caixa; quem enviou só confirma o próprio doc.
+    match /users/{uid}/recognitions/{recognitionId} {
+      function recognitionCreateOk() {
+        return request.resource.data.keys().hasOnly([
+            'fromUid', 'fromName', 'toUid', 'kind', 'subjectKey', 'seen', 'createdAt'
+          ])
+          && request.resource.data.fromUid == request.auth.uid
+          && request.resource.data.toUid == uid
+          && request.resource.data.fromUid != uid
+          && request.resource.data.kind in ['walk', 'medal']
+          && request.resource.data.subjectKey is string
+          && request.resource.data.fromName is string
+          && request.resource.data.fromName.size() > 0
+          && request.resource.data.fromName.size() <= 40
+          && request.resource.data.seen == false
+          && request.resource.data.createdAt is timestamp
+          && recognitionId == request.resource.data.fromUid
+              + '_' + request.resource.data.toUid
+              + '_' + request.resource.data.kind
+              + '_' + request.resource.data.subjectKey
+          && (
+            (request.resource.data.kind == 'walk'
+              && isYmd(request.resource.data.subjectKey))
+            || (request.resource.data.kind == 'medal'
+              && request.resource.data.subjectKey.size() > 0
+              && request.resource.data.subjectKey.size() <= 80
+              && request.resource.data.subjectKey.matches('^[A-Za-z0-9:_-]+$'))
+          );
+      }
+
+      allow get: if isSignedIn() && (
+        resource == null
+        || request.auth.uid == uid
+        || resource.data.fromUid == request.auth.uid
+      );
+      allow list: if isSignedIn() && request.auth.uid == uid;
+      allow create: if isSignedIn()
+        && request.auth.uid != uid
+        && recognitionCreateOk();
+      allow update: if isSignedIn()
+        && request.auth.uid == uid
+        && resource.data.seen == false
+        && request.resource.data.seen == true
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['seen']);
+      allow delete: if isSignedIn()
+        && resource.data.fromUid == request.auth.uid;
+    }
+
     // —— Conteúdo do currículo (trilhas / perguntas / estudos) ——
     match /content_trails/{id} {
       allow read: if true;

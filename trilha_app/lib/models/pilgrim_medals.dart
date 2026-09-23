@@ -984,4 +984,5 @@ Color tierColor(PilgrimMedalTier tier) => switch (tier) {
       PilgrimMedalTier.platinum => AppColors.medalPlatinum,
       PilgrimMedalTier.diamond => AppColors.medalDiamond,
       PilgrimMedalTier.mirra => AppColors.medalMirra,
+      PilgrimMedalTier.aurora => AppColors.medalAurora,
     };

@@ -44,9 +44,24 @@ void main() {
       expect(
         PortraitFace.resolve(
           PortraitStyle.photo,
-          'https://lh3.googleusercontent.com/a/ACg8ocLetterOnly=s96-c',
+          'https://lh3.googleusercontent.com/a/default-user=s96-c',
         ),
         PortraitStyle.avatar,
+      );
+      expect(
+        PortraitFace.resolve(
+          PortraitStyle.photo,
+          'https://lh3.googleusercontent.com/-XdUIqdMkCWA/AAAAAAAAAAI/AAAAAAAAAAA/4252rscbv5M/photo.jpg',
+        ),
+        PortraitStyle.avatar,
+      );
+      // Retrato real atual do Google usa /a/ACg8oc…, não só /a-/.
+      expect(
+        PortraitFace.resolve(
+          PortraitStyle.photo,
+          'https://lh3.googleusercontent.com/a/ACg8ocRealPhoto=s96-c',
+        ),
+        PortraitStyle.photo,
       );
       expect(
         PortraitFace.resolve(

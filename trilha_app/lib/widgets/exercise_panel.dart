@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import '../models/trail.dart';
 import '../theme/app_theme.dart';
 import 'act_feel.dart';
+import 'brand_flip_card.dart';
 import 'cinematic_icon.dart';
 import 'stage_plate.dart';
 import 'ui_primitives.dart';
@@ -312,7 +313,22 @@ class _ExercisePanelState extends State<ExercisePanel>
               ],
               const SizedBox(height: 14),
               if (palco != null)
-                Expanded(child: _in(0.12, 0.72, SizedBox.expand(child: palco)))
+                Expanded(
+                  child: _in(
+                    0.12,
+                    0.72,
+                    SizedBox.expand(
+                      child: BrandFlipCard(
+                        accent: widget.accent,
+                        answer:
+                            _picked ??
+                            widget.selected ??
+                            (_confirming ? 'confirm' : null),
+                        front: palco,
+                      ),
+                    ),
+                  ),
+                )
               else
                 const Spacer(),
               if (below.isNotEmpty) ...[

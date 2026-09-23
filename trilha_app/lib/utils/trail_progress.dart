@@ -189,6 +189,7 @@ class TrailProgress {
     if (CatalogAccess.openAllForTesting) return true;
     // Vitrine D7 + NT: abertos sem exigir o caminho do AT.
     if (trail.slug == 'sermao-do-monte') return true;
+    if (trail.slug == 'ansiedade' || trail.slug == 'recomeco') return true;
     if (trail.realmId == TrailRealm.novoTestamento.id) return true;
     if (trail.unlockAfter == null) return true;
     final prereq =

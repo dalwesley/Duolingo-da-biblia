@@ -5,7 +5,9 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../firebase_options.dart';
+import '../models/recognition.dart';
 import '../models/study_room.dart';
 import '../models/walk_companion.dart';
 import '../models/portrait_style.dart';
@@ -117,6 +119,14 @@ class BackendService extends ChangeNotifier {
   Timer? _debounce;
   StreamSubscription<User?>? _authSub;
 
+  /// Foto vinda do Google Sign-In. O Firebase Auth muitas vezes fica sem
+  /// `photoURL` quando o login usa só o idToken.
+  String? _googlePhotoUrl;
+  Future<void>? _silentPhotoRestore;
+  Future<void>? _photoPrompt;
+
+  static const _photoCachePrefix = 'account_photo_url_';
+
   /// Serializa writes; gerações descartam saves obsoletos.
   Future<void> _saveChain = Future<void>.value();
   int _saveGeneration = 0;
@@ -163,7 +173,24 @@ class BackendService extends ChangeNotifier {
 
   String? get userEmail => currentUser?.email;
   String? get userDisplayName => currentUser?.displayName;
-  String? get userPhotoUrl => currentUser?.photoURL;
+
+  /// Foto da conta: a do Google Sign-In, senão a do Firebase (perfil ou provedor).
+  String? get userPhotoUrl {
+    final google = _googlePhotoUrl?.trim();
+    if (google != null && google.isNotEmpty) return google;
+    return _photoUrlOf(currentUser);
+  }
+
+  static String? _photoUrlOf(User? user) {
+    if (user == null) return null;
+    final direct = user.photoURL?.trim();
+    if (direct != null && direct.isNotEmpty) return direct;
+    for (final info in user.providerData) {
+      final url = info.photoURL?.trim();
+      if (url != null && url.isNotEmpty) return url;
+    }
+    return null;
+  }
 
   FirebaseFirestore get _db => FirebaseFirestore.instance;
   GoogleSignIn get _google => GoogleSignIn.instance;
@@ -212,6 +239,7 @@ class BackendService extends ChangeNotifier {
     }
     _initializing = false;
     notifyListeners();
+    unawaited(ensureAccountPhoto());
   }
 
   /// Tenta reconectar (útil depois de ativar Auth/Firestore no Console).
@@ -233,6 +261,93 @@ class BackendService extends ChangeNotifier {
     );
     _googleInitialized = true;
     _authLog('GoogleSignIn initialized ok');
+  }
+
+  /// Completa a foto da conta quando o Firebase Auth não a trouxe no idToken.
+  ///
+  /// [allowPrompt] pede a foto ao Google. Só a folha de retrato usa isso:
+  /// no arranque a busca fica no cache e no perfil já salvo.
+  Future<void> ensureAccountPhoto({bool allowPrompt = false}) {
+    if (!isGoogleSignedIn) return Future<void>.value();
+    final existing = userPhotoUrl?.trim();
+    if (existing != null && existing.isNotEmpty) return Future<void>.value();
+    final restore = _silentPhotoRestore ??= _restoreAccountPhoto();
+    if (!allowPrompt) return restore;
+    return restore.then((_) => _promptForAccountPhoto());
+  }
+
+  Future<void> _restoreAccountPhoto() async {
+    try {
+      final uid = _uid;
+      if (uid != null) {
+        final cached = await _cachedAccountPhoto(uid);
+        if (cached != null) {
+          _googlePhotoUrl = cached;
+          notifyListeners();
+          return;
+        }
+      }
+      final user = currentUser;
+      if (user == null) return;
+      try {
+        await user.reload();
+      } catch (e) {
+        _authLog('photo reload skipped: $e');
+      }
+      final refreshed = _photoUrlOf(FirebaseAuth.instance.currentUser);
+      if (refreshed == null || refreshed.isEmpty) return;
+      await _adoptAccountPhoto(user, refreshed);
+    } catch (e) {
+      _authLog('photo restore skipped: $e');
+    }
+  }
+
+  Future<void> _promptForAccountPhoto() {
+    final existing = userPhotoUrl?.trim();
+    if (existing != null && existing.isNotEmpty) return Future<void>.value();
+    return _photoPrompt ??= _fetchGoogleAccountPhoto();
+  }
+
+  Future<void> _fetchGoogleAccountPhoto() async {
+    try {
+      await _ensureGoogleSignInInitialized();
+      final pending = _google.attemptLightweightAuthentication();
+      if (pending == null) return;
+      final account = await pending;
+      await _adoptAccountPhoto(currentUser, account?.photoUrl);
+    } catch (e) {
+      _authLog('photo refresh skipped: $e');
+    }
+  }
+
+  Future<void> _adoptAccountPhoto(User? user, String? raw) async {
+    final photo = raw?.trim();
+    if (photo == null || photo.isEmpty) return;
+    _googlePhotoUrl = photo;
+    notifyListeners();
+    final uid = user?.uid ?? _uid;
+    if (uid != null) unawaited(_cacheAccountPhoto(uid, photo));
+    if (user == null || user.photoURL?.trim() == photo) return;
+    try {
+      await user.updatePhotoURL(photo);
+      await user.reload();
+      _authLog('photo synced');
+    } catch (e) {
+      _authLog('photo sync failed: $e');
+    }
+    notifyListeners();
+  }
+
+  Future<String?> _cachedAccountPhoto(String uid) async {
+    final prefs = await SharedPreferences.getInstance();
+    final raw = prefs.getString('$_photoCachePrefix$uid')?.trim();
+    if (raw == null || raw.isEmpty) return null;
+    return raw;
+  }
+
+  Future<void> _cacheAccountPhoto(String uid, String photo) async {
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString('$_photoCachePrefix$uid', photo);
   }
 
   /// Logs de auth — só em debug (evitar ruído em release).
@@ -263,10 +378,7 @@ class BackendService extends ChangeNotifier {
 
     if (_googleBusy) {
       _authLog('signIn ignored: already busy');
-      return const GoogleSignInResult(
-        ok: false,
-        error: 'Login em andamento.',
-      );
+      return const GoogleSignInResult(ok: false, error: 'Login em andamento.');
     }
 
     if (isGoogleSignedIn) {
@@ -340,9 +452,11 @@ class BackendService extends ChangeNotifier {
       }
 
       _applyUser(cred.user);
+      await _adoptAccountPhoto(cred.user, googleUser.photoUrl);
       notifyListeners();
       _authLog(
         'success uid=${cred.user?.uid} email=${cred.user?.email} '
+        'photo=${googleUser.photoUrl != null} '
         'providers=${cred.user?.providerData.map((p) => p.providerId).toList()}',
       );
       return AuthSignInResult(
@@ -614,7 +728,7 @@ class BackendService extends ChangeNotifier {
       if (league != null) ...league.toCloudMap(),
       'lastSeenDate': _todayKey(),
       'email': user?.email,
-      'photoUrl': user?.photoURL,
+      if (userPhotoUrl != null) 'photoUrl': userPhotoUrl,
       'authProvider': isAppleSignedIn
           ? 'apple'
           : isGoogleSignedIn
@@ -735,10 +849,7 @@ class BackendService extends ChangeNotifier {
       'leagues/$rankingWeek/tiers/$tier/players/$_uid',
       weeklyPayload,
     );
-    await _putRankingDoc(
-      'leagues/$rankingWeek/players/$_uid',
-      weeklyPayload,
-    );
+    await _putRankingDoc('leagues/$rankingWeek/players/$_uid', weeklyPayload);
     final groupCode = league?.groupCode;
     if (groupCode != null && groupCode.isNotEmpty) {
       await _putRankingDoc(
@@ -768,20 +879,16 @@ class BackendService extends ChangeNotifier {
     );
     final effectiveRoom = roomCode ?? progress.activeRoomCode;
     if (effectiveRoom != null && effectiveRoom.isNotEmpty) {
-      await _putRankingDoc(
-        'rooms/$effectiveRoom/members/$_uid',
-        {
-          ..._rankingPayload(
-            name: progress.userName,
-            score: progress.weeklySteps,
-            lastWalkDate: progress.lastPlayedDate,
-            lastSeenDate: today,
-            portraitStyle: portraitStyle,
-            extra: {'lastWalk': today},
-          ),
-        },
-        merge: true,
-      );
+      await _putRankingDoc('rooms/$effectiveRoom/members/$_uid', {
+        ..._rankingPayload(
+          name: progress.userName,
+          score: progress.weeklySteps,
+          lastWalkDate: progress.lastPlayedDate,
+          lastSeenDate: today,
+          portraitStyle: portraitStyle,
+          extra: {'lastWalk': today},
+        ),
+      }, merge: true);
     }
     return true;
   }
@@ -803,7 +910,7 @@ class BackendService extends ChangeNotifier {
     PortraitStyle portraitStyle = PortraitStyle.photo,
     Map<String, dynamic> extra = const {},
   }) {
-    final photo = currentUser?.photoURL?.trim();
+    final photo = userPhotoUrl?.trim();
     return {
       'name': name,
       'xp': score,
@@ -1157,8 +1264,7 @@ class BackendService extends ChangeNotifier {
             isUser: d.id == _uid,
             lastWalk: d.data()['lastWalk'] as String?,
             photoUrl: _readPhotoUrl(d.data()),
-            portraitStyle:
-                _readPortraitStyle(d.data()) ?? PortraitStyle.photo,
+            portraitStyle: _readPortraitStyle(d.data()) ?? PortraitStyle.photo,
           ),
       ];
     } catch (e) {
@@ -1225,8 +1331,9 @@ class BackendService extends ChangeNotifier {
     void put(CloudPlayer p) {
       final prev = byUid[p.uid];
       if (prev == null || p.steps > prev.steps) {
-        byUid[p.uid] =
-            p.withPhoto(prev?.photoUrl).withStyle(prev?.portraitStyle);
+        byUid[p.uid] = p
+            .withPhoto(prev?.photoUrl)
+            .withStyle(prev?.portraitStyle);
       } else if (prev.steps == p.steps &&
           ProgressService.isPlaceholderUserName(prev.name) &&
           !ProgressService.isPlaceholderUserName(p.name)) {
@@ -1511,7 +1618,8 @@ class BackendService extends ChangeNotifier {
     final nudgeFromName = (data['nudgeFromName'] as String?)?.trim();
     final nudgeMessage = (data['nudgeMessage'] as String?)?.trim();
     final nudgeDay = data['nudgeDay'] as String?;
-    final incomingNudge = nudgeFromId.isNotEmpty &&
+    final incomingNudge =
+        nudgeFromId.isNotEmpty &&
         nudgeFromId != _uid &&
         !iWalked &&
         nudgeDay == today;
@@ -1535,6 +1643,7 @@ class BackendService extends ChangeNotifier {
       incomingNudgeMessage: incomingNudge ? nudgeMessage : null,
       incomingNudgeDay: incomingNudge ? nudgeDay : null,
       iNudgedToday: iNudgedToday,
+      partnerUid: awaiting ? null : (isHost ? guestId : hostId),
     );
   }
 
@@ -1806,6 +1915,194 @@ class BackendService extends ChangeNotifier {
       }
     } catch (e) {
       debugPrint('Falha ao sair da companhia: $e');
+    }
+  }
+
+  /// Quem me reconheceu e ainda não foi recebido.
+  Stream<List<Recognition>> watchIncomingRecognitions() {
+    if (!isActive) return const Stream.empty();
+    return _db
+        .collection('users/$_uid/recognitions')
+        .where('seen', isEqualTo: false)
+        .limit(24)
+        .snapshots()
+        .map((snap) {
+          final list = <Recognition>[];
+          for (final doc in snap.docs) {
+            final parsed = _recognitionFromDoc(doc.id, doc.data());
+            if (parsed == null || parsed.toUid != _uid) continue;
+            list.add(parsed);
+          }
+          list.sort((a, b) {
+            final ad = a.createdAt;
+            final bd = b.createdAt;
+            if (ad == null && bd == null) return 0;
+            if (ad == null) return 1;
+            if (bd == null) return -1;
+            return bd.compareTo(ad);
+          });
+          return list;
+        });
+  }
+
+  /// Histórico recente — visto e ainda não visto.
+  Future<List<Recognition>> fetchRecentRecognitions({int limit = 40}) async {
+    if (!isActive) return const [];
+    try {
+      final snap = await _db
+          .collection('users/$_uid/recognitions')
+          .orderBy('createdAt', descending: true)
+          .limit(limit)
+          .get();
+      final list = <Recognition>[];
+      for (final doc in snap.docs) {
+        final parsed = _recognitionFromDoc(doc.id, doc.data());
+        if (parsed == null || parsed.toUid != _uid) continue;
+        list.add(parsed);
+      }
+      return list;
+    } catch (e) {
+      debugPrint('Falha ao buscar histórico de reconhecimentos: $e');
+      // Sem índice / createdAt: cai no que ainda não foi recebido.
+      try {
+        final snap = await _db
+            .collection('users/$_uid/recognitions')
+            .limit(limit)
+            .get();
+        final list = <Recognition>[];
+        for (final doc in snap.docs) {
+          final parsed = _recognitionFromDoc(doc.id, doc.data());
+          if (parsed == null || parsed.toUid != _uid) continue;
+          list.add(parsed);
+        }
+        list.sort((a, b) {
+          final ad = a.createdAt;
+          final bd = b.createdAt;
+          if (ad == null && bd == null) return 0;
+          if (ad == null) return 1;
+          if (bd == null) return -1;
+          return bd.compareTo(ad);
+        });
+        return list;
+      } catch (e2) {
+        debugPrint('Falha no fallback de reconhecimentos: $e2');
+        return const [];
+      }
+    }
+  }
+
+  Recognition? _recognitionFromDoc(String id, Map<String, dynamic> data) {
+    final kind = RecognitionKind.parse(data['kind'] as String?);
+    final fromUid = (data['fromUid'] as String?)?.trim() ?? '';
+    final toUid = (data['toUid'] as String?)?.trim() ?? '';
+    final subjectKey = (data['subjectKey'] as String?)?.trim() ?? '';
+    if (kind == null || fromUid.isEmpty || toUid.isEmpty) return null;
+    if (!Recognition.validSubject(kind, subjectKey)) return null;
+    DateTime? createdAt;
+    final raw = data['createdAt'];
+    if (raw is Timestamp) createdAt = raw.toDate();
+    return Recognition(
+      id: id,
+      fromUid: fromUid,
+      fromName: recognitionFromName((data['fromName'] as String?) ?? ''),
+      toUid: toUid,
+      kind: kind,
+      subjectKey: subjectKey,
+      createdAt: createdAt,
+    );
+  }
+
+  /// Um toque. O doc id impede reconhecer de novo a mesma cena ou medalha.
+  Future<RecognitionGiveStatus> giveRecognition({
+    required String toUid,
+    required String fromName,
+    required RecognitionKind kind,
+    required String subjectKey,
+  }) async {
+    if (!isActive || _uid == null || _uid == toUid) {
+      return RecognitionGiveStatus.failed;
+    }
+    if (!Recognition.validSubject(kind, subjectKey)) {
+      return RecognitionGiveStatus.failed;
+    }
+    final id = Recognition.docId(
+      fromUid: _uid!,
+      toUid: toUid,
+      kind: kind,
+      subjectKey: subjectKey,
+    );
+    final ref = _db.doc('users/$toUid/recognitions/$id');
+    try {
+      await ref.set({
+        'fromUid': _uid,
+        'fromName': recognitionFromName(fromName),
+        'toUid': toUid,
+        'kind': kind.name,
+        'subjectKey': subjectKey,
+        'seen': false,
+        'createdAt': FieldValue.serverTimestamp(),
+      });
+      return RecognitionGiveStatus.given;
+    } on FirebaseException catch (e) {
+      if (e.code == 'permission-denied') {
+        try {
+          final snap = await ref.get();
+          if (snap.exists && snap.data()?['fromUid'] == _uid) {
+            return RecognitionGiveStatus.already;
+          }
+        } catch (readError) {
+          debugPrint('Falha ao confirmar reconhecimento: $readError');
+        }
+      }
+      debugPrint('Falha ao reconhecer: $e');
+      return RecognitionGiveStatus.failed;
+    } catch (e) {
+      debugPrint('Falha ao reconhecer: $e');
+      return RecognitionGiveStatus.failed;
+    }
+  }
+
+  /// Quem enviou pode retirar o reconhecimento.
+  Future<bool> revokeRecognition({
+    required String toUid,
+    required RecognitionKind kind,
+    required String subjectKey,
+  }) async {
+    if (!isActive || _uid == null || _uid == toUid) return false;
+    if (!Recognition.validSubject(kind, subjectKey)) return false;
+    final id = Recognition.docId(
+      fromUid: _uid!,
+      toUid: toUid,
+      kind: kind,
+      subjectKey: subjectKey,
+    );
+    final ref = _db.doc('users/$toUid/recognitions/$id');
+    try {
+      await ref.delete();
+      return true;
+    } on FirebaseException catch (e) {
+      if (e.code == 'not-found') return true;
+      debugPrint('Falha ao retirar reconhecimento: $e');
+      return false;
+    } catch (e) {
+      debugPrint('Falha ao retirar reconhecimento: $e');
+      return false;
+    }
+  }
+
+  Future<bool> acknowledgeRecognitions(List<String> ids) async {
+    if (!isActive || ids.isEmpty) return false;
+    try {
+      final batch = _db.batch();
+      for (final id in ids) {
+        if (id.trim().isEmpty) continue;
+        batch.update(_db.doc('users/$_uid/recognitions/$id'), {'seen': true});
+      }
+      await batch.commit();
+      return true;
+    } catch (e) {
+      debugPrint('Falha ao receber reconhecimentos: $e');
+      return false;
     }
   }
 

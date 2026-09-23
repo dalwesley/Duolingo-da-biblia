@@ -18,10 +18,14 @@ class PilgrimMedalVaultsPanel extends StatefulWidget {
   final CaravanPilgrimProfile profile;
   final PilgrimMedalEvalContext evalContext;
 
+  /// Quando visita outro peregrino — coração no sheet do emblema.
+  final String? recognizeToUid;
+
   const PilgrimMedalVaultsPanel({
     super.key,
     required this.profile,
     this.evalContext = const PilgrimMedalEvalContext(),
+    this.recognizeToUid,
   });
 
   @override
@@ -200,6 +204,7 @@ class _PilgrimMedalVaultsPanelState extends State<PilgrimMedalVaultsPanel> {
                     _FamilyEmblemRow(
                       tracks: journey.tracks,
                       featuredTrackId: proximity?.track.id,
+                      recognizeToUid: widget.recognizeToUid,
                     ),
                   if (showJourney && _seasonVault != null) ...[
                     const SizedBox(height: 14),
@@ -215,12 +220,14 @@ class _PilgrimMedalVaultsPanelState extends State<PilgrimMedalVaultsPanel> {
                     _FamilyEmblemRow(
                       tracks: _seasonVault!.tracks,
                       featuredTrackId: proximity?.track.id,
+                      recognizeToUid: widget.recognizeToUid,
                     ),
                   ],
                   if (!showJourney)
                     _TrailEmblemStrip(
                       vaults: trailVaults,
                       featuredTrackId: proximity?.track.id,
+                      recognizeToUid: widget.recognizeToUid,
                     ),
                   if (showJourney &&
                       (rareTiles.isNotEmpty || hiddenRares > 0)) ...[
@@ -228,6 +235,7 @@ class _PilgrimMedalVaultsPanelState extends State<PilgrimMedalVaultsPanel> {
                     _RareStrip(
                       tiles: rareTiles,
                       hiddenCount: hiddenRares,
+                      recognizeToUid: widget.recognizeToUid,
                     ),
                   ],
                 ],
@@ -243,10 +251,12 @@ class _PilgrimMedalVaultsPanelState extends State<PilgrimMedalVaultsPanel> {
 class _FamilyEmblemRow extends StatelessWidget {
   final List<PilgrimTrackState> tracks;
   final String? featuredTrackId;
+  final String? recognizeToUid;
 
   const _FamilyEmblemRow({
     required this.tracks,
     this.featuredTrackId,
+    this.recognizeToUid,
   });
 
   @override
@@ -260,7 +270,11 @@ class _FamilyEmblemRow extends StatelessWidget {
             child: MedalTrackEmblem(
               trackState: track,
               featured: track.track.id == featuredTrackId,
-              onTap: () => showTrackDetailSheet(context, track),
+              onTap: () => showTrackDetailSheet(
+                context,
+                track,
+                recognizeToUid: recognizeToUid,
+              ),
             ),
           ),
       ],
@@ -271,10 +285,12 @@ class _FamilyEmblemRow extends StatelessWidget {
 class _TrailEmblemStrip extends StatelessWidget {
   final List<PilgrimVaultState> vaults;
   final String? featuredTrackId;
+  final String? recognizeToUid;
 
   const _TrailEmblemStrip({
     required this.vaults,
     this.featuredTrackId,
+    this.recognizeToUid,
   });
 
   @override
@@ -288,7 +304,11 @@ class _TrailEmblemStrip extends StatelessWidget {
       return MedalTrackEmblem(
         trackState: tracks.first,
         featured: true,
-        onTap: () => showTrackDetailSheet(context, tracks.first),
+        onTap: () => showTrackDetailSheet(
+          context,
+          tracks.first,
+          recognizeToUid: recognizeToUid,
+        ),
       );
     }
     return Wrap(
@@ -302,7 +322,11 @@ class _TrailEmblemStrip extends StatelessWidget {
             child: MedalTrackEmblem(
               trackState: track,
               featured: track.track.id == featuredTrackId,
-              onTap: () => showTrackDetailSheet(context, track),
+              onTap: () => showTrackDetailSheet(
+                context,
+                track,
+                recognizeToUid: recognizeToUid,
+              ),
             ),
           ),
       ],
@@ -313,10 +337,12 @@ class _TrailEmblemStrip extends StatelessWidget {
 class _RareStrip extends StatelessWidget {
   final List<PilgrimMedalTile> tiles;
   final int hiddenCount;
+  final String? recognizeToUid;
 
   const _RareStrip({
     required this.tiles,
     required this.hiddenCount,
+    this.recognizeToUid,
   });
 
   @override
@@ -345,7 +371,11 @@ class _RareStrip extends StatelessWidget {
                 MedalVaultMedallion(
                   tile: tile,
                   size: 52,
-                  onTap: () => showMedalTileSheet(context, tile),
+                  onTap: () => showMedalTileSheet(
+                    context,
+                    tile,
+                    recognizeToUid: recognizeToUid,
+                  ),
                 ),
             ],
           ),
