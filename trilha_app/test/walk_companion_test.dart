@@ -50,17 +50,17 @@ void main() {
       expect(c.theyDaysAway, 5);
     });
 
-    test('insightLine shows absence and step lead', () {
+    test('insightLine shows absence without step ranking', () {
       final c = _base(
         theyLastWalk: _daysAgo(4),
         myWeekly: 120,
         theirWeekly: 40,
       );
       expect(c.insightLine, contains('poeira'));
-      expect(c.insightLine, contains('Você 80 passos à frente'));
+      expect(c.insightLine, isNot(contains('passos')));
     });
 
-    test('insightLine when partner ahead', () {
+    test('insightLine when partner walked is quiet', () {
       final c = _base(
         iWalked: false,
         theyWalked: true,
@@ -68,7 +68,8 @@ void main() {
         myWeekly: 10,
         theirWeekly: 55,
       );
-      expect(c.insightLine, contains('Lídia 45 passos à frente'));
+      expect(c.insightLine, isNull);
+      expect(c.statusLine, contains('sua vez'));
     });
 
     test('delay tiers 1-3 / 4-6 / 7+', () {

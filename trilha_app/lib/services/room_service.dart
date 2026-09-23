@@ -79,7 +79,7 @@ class RoomService extends ChangeNotifier {
   }) async {
     lastError = null;
     if (!backend.isActive) {
-      lastError = 'Conecte-se à nuvem para criar salas.';
+      lastError = 'Conecte-se à nuvem para criar grupos.';
       notifyListeners();
       return false;
     }
@@ -93,7 +93,7 @@ class RoomService extends ChangeNotifier {
     );
     loading = false;
     if (room == null) {
-      lastError = 'Não foi possível criar a sala. Tente de novo.';
+      lastError = 'Não foi possível criar o grupo. Tente de novo.';
       notifyListeners();
       return false;
     }
@@ -106,7 +106,7 @@ class RoomService extends ChangeNotifier {
   Future<bool> joinRoom(String code, ProgressService progress) async {
     lastError = null;
     if (!backend.isActive) {
-      lastError = 'Conecte-se à nuvem para entrar em salas.';
+      lastError = 'Conecte-se à nuvem para entrar em grupos.';
       notifyListeners();
       return false;
     }
@@ -119,7 +119,7 @@ class RoomService extends ChangeNotifier {
     );
     loading = false;
     if (room == null) {
-      lastError = 'Código inválido ou sala não encontrada.';
+      lastError = 'Código inválido ou grupo não encontrado.';
       notifyListeners();
       return false;
     }
@@ -138,7 +138,7 @@ class RoomService extends ChangeNotifier {
       activeRoom = null;
       members = const [];
       await _persistCode(null, progress: progress);
-      lastError = 'Sala anterior não encontrada.';
+      lastError = 'Grupo anterior não encontrado.';
       loading = false;
       notifyListeners();
       return;

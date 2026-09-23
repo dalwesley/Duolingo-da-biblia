@@ -154,32 +154,19 @@ class WalkCompanion {
     return 'Vamos dar o próximo passo juntos?';
   }
 
-  /// Linha curta sob o status (passos / ausência / semana junta).
+  /// Linha curta sob o status — presença, não ranking de passos.
   String? get insightLine {
     if (awaitingPartner) return null;
-    final parts = <String>[];
     final delay = delayCopy;
-    if (delay != null) parts.add(delay.insight);
-    if (coveredLeagueWeekTogether()) {
-      parts.add(
-        'Dupla fechou a semana · +$weekTogetherBonusSteps para os dois',
-      );
-    } else if (bothWalkedToday) {
+    if (delay != null) return delay.insight;
+    if (bothWalkedToday) {
       final n = togetherDaysThisWeek();
-      if (n > 0) parts.add('$n/7 nesta semana');
-    }
-    if (hasWeeklyStepsCompare) {
-      final d = weeklyStepsDelta;
-      if (d > 0) {
-        parts.add('Você $d passos à frente esta semana');
-      } else if (d < 0) {
-        parts.add('$displayName ${-d} passos à frente esta semana');
-      } else if (myWeeklySteps > 0) {
-        parts.add('Empatados em $myWeeklySteps passos na semana');
+      if (n > 0 && n < 7) return '$n de 7 dias juntos nesta semana';
+      if (coveredLeagueWeekTogether()) {
+        return 'Semana fechada juntos';
       }
     }
-    if (parts.isEmpty) return null;
-    return parts.join(' · ');
+    return null;
   }
 
   /// Copy por faixa de atraso do parceiro (1–3 / 4–6 / 7+).

@@ -37,7 +37,7 @@ class StudyRoom {
       code: code,
       name: (data['name'] as String?)?.trim().isNotEmpty == true
           ? data['name'] as String
-          : 'Sala',
+          : 'Grupo',
       ownerId: (data['ownerId'] as String?) ?? '',
       ownerName: (data['ownerName'] as String?)?.trim().isNotEmpty == true
           ? data['ownerName'] as String

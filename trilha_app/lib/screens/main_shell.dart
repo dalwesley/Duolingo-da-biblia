@@ -394,7 +394,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
         0 => DayPhaseHelper.greeting(), // relógio — não o tema de aparência
         1 => 'O mapa da jornada',
         2 => LiturgicalCalendar.momentFor().subtitle,
-        3 => 'Caravana · Companhia · Salas',
+        3 => 'Caravana · Companhia · Grupos',
         _ => 'Como você caminha',
       },
     );

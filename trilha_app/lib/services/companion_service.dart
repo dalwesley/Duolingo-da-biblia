@@ -53,6 +53,14 @@ class CompanionService extends ChangeNotifier {
     return null;
   }
 
+  /// Dupla viva (sem convite pendente).
+  WalkCompanion? get homeWalkCompanion {
+    for (final c in companions) {
+      if (!c.awaitingPartner) return c;
+    }
+    return null;
+  }
+
   bool get canAdd => companions.length < maxCompanions;
   bool get cloudSynced => _cloudSynced;
 

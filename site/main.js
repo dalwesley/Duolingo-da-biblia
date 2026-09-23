@@ -1,6 +1,8 @@
 const ENDPOINT = '/api/form';
 const root = document.documentElement;
 const motionOk = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const finePointer = window.matchMedia('(pointer: fine)').matches;
+let lenis = null;
 
 /* ─── Formulários ──────────────────────────────────── */
 
@@ -10,7 +12,38 @@ function note(form, text, kind) {
   el.className = `form-note ${kind || ''}`;
 }
 
+const FIELD_HINTS = {
+  name: 'Diga seu nome.',
+  email: 'Confira o e-mail.',
+  phone: 'Informe seu WhatsApp.',
+  platform: 'Escolha o aparelho.',
+  message: 'Escreva sua mensagem.',
+  consent: 'Marque a autorização para enviar.',
+};
+
+// Marca o primeiro campo inválido e explica em uma linha, antes de ir ao servidor.
+function validate(form) {
+  form.querySelectorAll('[aria-invalid]').forEach((el) => el.removeAttribute('aria-invalid'));
+  const invalid = [...form.elements].find((el) => el.willValidate && !el.checkValidity());
+  if (!invalid) return true;
+  const target = invalid.type === 'radio' ? invalid.closest('.choices')
+    : invalid.type === 'checkbox' ? invalid.closest('.check') : invalid;
+  target?.setAttribute('aria-invalid', 'true');
+  note(form, FIELD_HINTS[invalid.name] || 'Confira os campos.', 'err');
+  invalid.focus({ preventScroll: true });
+  target?.scrollIntoView({ block: 'center', behavior: motionOk ? 'smooth' : 'auto' });
+  return false;
+}
+
+document.querySelectorAll('.form-card').forEach((form) => {
+  form.addEventListener('input', (event) => {
+    const field = event.target.closest('[aria-invalid]') || event.target.closest('.choices, .check');
+    field?.removeAttribute('aria-invalid');
+  });
+});
+
 async function send(form, kind) {
+  if (!validate(form)) return;
   const button = form.querySelector('button[type="submit"]');
   const data = Object.fromEntries(new FormData(form).entries());
   data.kind = kind;
@@ -32,6 +65,7 @@ async function send(form, kind) {
       return;
     }
     form.reset();
+    form.classList.add('is-sent');
     note(
       form,
       kind === 'tester'
@@ -96,11 +130,22 @@ document.querySelectorAll('[data-kinetic]').forEach((el) => {
     skipEvents.forEach((type) => window.removeEventListener(type, finish));
   }
 
+  // Durante a abertura o versículo fica no centro exato da tela; depois sobe ao lugar dele.
+  function centerGenesis() {
+    const genesis = document.querySelector('.genesis');
+    if (!genesis) return;
+    genesis.style.setProperty('--shift', '0px');
+    const rect = genesis.getBoundingClientRect();
+    const shift = window.innerHeight / 2 - (rect.top + rect.height / 2);
+    genesis.style.setProperty('--shift', `${Math.round(shift)}px`);
+  }
+
   function play() {
     timers.forEach(clearTimeout);
     // Volta ao escuro sem animar a saída, depois roda a linha do tempo do zero.
     root.classList.add('intro-reset', 'intro');
     root.classList.remove(...stages);
+    centerGenesis();
     void root.offsetHeight;
     root.classList.remove('intro-reset');
     timers = stages.map((stage, i) => setTimeout(() => root.classList.add(stage), times[i]));
@@ -116,7 +161,8 @@ document.querySelectorAll('[data-kinetic]').forEach((el) => {
   }
 
   replay?.addEventListener('click', () => {
-    window.scrollTo({ top: 0, behavior: 'instant' });
+    if (lenis) lenis.scrollTo(0, { immediate: true });
+    else window.scrollTo({ top: 0, behavior: 'instant' });
     // Evita que o próprio scroll de volta conte como "pular".
     requestAnimationFrame(play);
   });
@@ -236,6 +282,43 @@ function setStep(scene, index) {
   if (scene.el.id === 'profundidades') scene.el.style.setProperty('--tone-now', depthTones[index]);
 }
 
+const coda = document.querySelector('.coda');
+const filmstrip = document.querySelector('.filmstrip');
+const acts = [...document.querySelectorAll('.reel a')].map((link) => ({
+  link,
+  id: link.dataset.act,
+  el: document.getElementById(link.dataset.act),
+})).filter((act) => act.el);
+let currentAct = '';
+
+// Ato atual = seção que cruza o meio da tela; muda a cor do céu e o trilho.
+function paintAct(vh) {
+  let active = acts[0]?.id || '';
+  for (const act of acts) {
+    if (act.el.getBoundingClientRect().top <= vh * 0.5) active = act.id;
+  }
+  if (active === currentAct) return;
+  currentAct = active;
+  root.dataset.act = active;
+  acts.forEach((act) => act.link.classList.toggle('is-on', act.id === active));
+}
+
+// Menu do topo: acende o link da seção que ocupa o meio da tela.
+const navLinks = [...document.querySelectorAll('.nav a.quiet')].map((link) => ({
+  link,
+  el: document.querySelector(link.getAttribute('href')),
+})).filter((item) => item.el);
+
+function paintNav(vh) {
+  for (const { link, el } of navLinks) {
+    const rect = el.getBoundingClientRect();
+    const on = rect.top <= vh * 0.5 && rect.bottom >= vh * 0.5;
+    link.classList.toggle('is-on', on);
+    if (on) link.setAttribute('aria-current', 'true');
+    else link.removeAttribute('aria-current');
+  }
+}
+
 function paint() {
   const vh = window.innerHeight;
 
@@ -261,6 +344,19 @@ function paint() {
     const t = clamp01((vh - rect.top) / (vh + rect.height));
     strong.style.setProperty('--drift', t.toFixed(3));
   }
+
+  if (coda) {
+    const rect = coda.getBoundingClientRect();
+    coda.style.setProperty('--lit', clamp01((vh - rect.top) / (vh * 0.9)).toFixed(3));
+  }
+
+  if (filmstrip) {
+    const rect = filmstrip.getBoundingClientRect();
+    filmstrip.style.setProperty('--film', clamp01((vh - rect.top) / (vh + rect.height)).toFixed(3));
+  }
+
+  paintAct(vh);
+  paintNav(vh);
 
   const max = root.scrollHeight - vh;
   header?.classList.toggle('is-solid', window.scrollY > 40);
@@ -319,7 +415,9 @@ paint();
       translit.textContent = entry.translit;
       num.textContent = entry.num;
       def.textContent = entry.def;
-      panel.classList.remove('is-swap');
+      panel.classList.remove('is-swap', 'is-writing');
+      void panel.offsetWidth;
+      panel.classList.add('is-writing');
     };
     clearTimeout(swapTimer);
     if (!motionOk) return apply();
@@ -451,5 +549,92 @@ paint();
   document.addEventListener('visibilitychange', () => {
     cancelAnimationFrame(frame);
     if (!document.hidden) frame = requestAnimationFrame(loop);
+  });
+})();
+
+/* ─── Títulos: máscara palavra por palavra ─────────── */
+
+(function titles() {
+  const heads = document.querySelectorAll('.display');
+  if (!motionOk || !('IntersectionObserver' in window)) return;
+  let index = 0;
+
+  function wrap(node) {
+    [...node.childNodes].forEach((child) => {
+      if (child.nodeType === Node.TEXT_NODE) {
+        const parts = child.textContent.split(/(\s+)/);
+        const frag = document.createDocumentFragment();
+        parts.forEach((part) => {
+          if (!part) return;
+          if (/^\s+$/.test(part)) {
+            frag.appendChild(document.createTextNode(part));
+            return;
+          }
+          const outer = document.createElement('span');
+          outer.className = 'sw';
+          const inner = document.createElement('span');
+          inner.style.setProperty('--i', String(index));
+          index += 1;
+          inner.textContent = part;
+          outer.appendChild(inner);
+          frag.appendChild(outer);
+        });
+        child.replaceWith(frag);
+      } else if (child.nodeType === Node.ELEMENT_NODE && child.tagName !== 'BR') {
+        wrap(child);
+      }
+    });
+  }
+
+  heads.forEach((head) => {
+    index = 0;
+    head.setAttribute('aria-label', head.textContent.replace(/\s+/g, ' ').trim());
+    wrap(head);
+    head.querySelectorAll('.sw').forEach((sw) => sw.setAttribute('aria-hidden', 'true'));
+  });
+
+  const watcher = new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+      if (!entry.isIntersecting) continue;
+      entry.target.classList.add('is-shown');
+      watcher.unobserve(entry.target);
+    }
+  }, { threshold: 0.4 });
+  heads.forEach((head) => watcher.observe(head));
+})();
+
+/* ─── Scroll suave (Lenis) ─────────────────────────── */
+
+(function smooth() {
+  if (!motionOk || !window.Lenis) return;
+  lenis = new window.Lenis({ lerp: 0.085, smoothWheel: true, anchors: true });
+  lenis.on('scroll', queuePaint);
+  const raf = (time) => {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  };
+  requestAnimationFrame(raf);
+})();
+
+/* ─── Parallax do mouse e botões magnéticos ────────── */
+
+(function pointer() {
+  if (!motionOk || !finePointer) return;
+  const opening = document.querySelector('.opening');
+
+  window.addEventListener('pointermove', (event) => {
+    if (!opening || window.scrollY >= window.innerHeight) return;
+    opening.style.setProperty('--mx', ((event.clientX / window.innerWidth) * 2 - 1).toFixed(3));
+    opening.style.setProperty('--my', ((event.clientY / window.innerHeight) * 2 - 1).toFixed(3));
+  }, { passive: true });
+
+  document.querySelectorAll('.hero-actions .btn, .coda-cta .btn, .nav .btn').forEach((button) => {
+    button.addEventListener('pointermove', (event) => {
+      const rect = button.getBoundingClientRect();
+      const dx = event.clientX - (rect.left + rect.width / 2);
+      const dy = event.clientY - (rect.top + rect.height / 2);
+      button.style.translate = `${(dx * 0.22).toFixed(1)}px ${(dy * 0.3).toFixed(1)}px`;
+    });
+    button.addEventListener('pointerleave', () => { button.style.translate = ''; });
   });
 })();
