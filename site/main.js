@@ -470,8 +470,11 @@ paint();
   let nextMeteor = performance.now() + 6000;
   let frame = 0;
 
+  let dpr = 1;
+
   function resize() {
-    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    // Resolução nativa da tela (até 3x) para estrelas nítidas em celular e 4K.
+    dpr = Math.min(window.devicePixelRatio || 1, 3);
     width = window.innerWidth;
     height = window.innerHeight;
     canvas.width = Math.round(width * dpr);
@@ -496,8 +499,9 @@ paint();
       const twinkle = motionOk ? 0.55 + 0.45 * Math.sin(now * 0.0012 * (0.4 + star.z) + star.phase) : 0.8;
       ctx.globalAlpha = (0.25 + star.z * 0.75) * twinkle;
       ctx.fillStyle = star.warm ? '#ffe7a0' : '#ffffff';
-      const size = 0.4 + star.z * 1.3;
-      ctx.fillRect(star.x, y, size, size);
+      // Alinha cada estrela ao pixel físico: sem borrão de antialiasing.
+      const size = Math.max(1, Math.round((0.4 + star.z * 1.3) * dpr)) / dpr;
+      ctx.fillRect(Math.round(star.x * dpr) / dpr, Math.round(y * dpr) / dpr, size, size);
     }
 
     if (motionOk) {
