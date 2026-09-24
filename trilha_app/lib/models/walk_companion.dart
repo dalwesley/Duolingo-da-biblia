@@ -35,6 +35,12 @@ class WalkCompanion {
   /// Uid do parceiro, para reconhecer a caminhada dele.
   final String? partnerUid;
 
+  /// Dias (`YYYY-MM-DD`) em que eu caminhei nesta semana.
+  final List<String> myWalkDates;
+
+  /// Dias (`YYYY-MM-DD`) em que o parceiro caminhou nesta semana.
+  final List<String> theirWalkDates;
+
   static const milestones = [3, 7, 14, 30, 60, 100];
 
   /// Os dois ganham na Caravana só se a dupla fechar os 7 dias (seg–dom).
@@ -59,6 +65,8 @@ class WalkCompanion {
     this.incomingNudgeDay,
     this.iNudgedToday = false,
     this.partnerUid,
+    this.myWalkDates = const [],
+    this.theirWalkDates = const [],
   });
 
   /// Ambos caminharam hoje — a companhia está viva.
@@ -92,6 +100,73 @@ class WalkCompanion {
 
   bool get hasWeeklyStepsCompare =>
       !awaitingPartner && (myWeeklySteps > 0 || theirWeeklySteps > 0);
+
+  /// Quem caminhou num dia civil: esquerda = eu, direita = o parceiro.
+  ///
+  /// Dias futuros ficam vazios. A sequência de dias juntos marca os dois,
+  /// mesmo quando a lista da semana ainda não foi gravada.
+  CompanionDayPresence presenceOn(
+    DateTime day, {
+    DateTime? now,
+    Iterable<String> alsoMine = const [],
+  }) {
+    if (awaitingPartner) return CompanionDayPresence.empty;
+    final clock = now ?? DateTime.now();
+    final today = DateTime(clock.year, clock.month, clock.day);
+    final date = DateTime(day.year, day.month, day.day);
+    if (date.isAfter(today)) return CompanionDayPresence.empty;
+
+    final key = _dateKey(date);
+    final mine = {...myWalkDates, ...alsoMine};
+    final theirs = {...theirWalkDates};
+    final theirLast = theyLastWalkDate;
+    if (theirLast != null && theirLast.isNotEmpty) theirs.add(theirLast);
+    if (key == _dateKey(today)) {
+      if (iWalkedToday) mine.add(key);
+      if (theyWalkedToday) theirs.add(key);
+    }
+    if (_sharedDateKeys().contains(key)) {
+      mine.add(key);
+      theirs.add(key);
+    }
+    return CompanionDayPresence(
+      me: mine.contains(key),
+      them: theirs.contains(key),
+    );
+  }
+
+  /// Dias desta semana (seg–dom, até hoje) em que a bolinha fecha inteira.
+  int bothWalkedThisWeek({
+    DateTime? now,
+    Iterable<String> alsoMine = const [],
+  }) {
+    final clock = now ?? DateTime.now();
+    final monday = DateTime(
+      clock.year,
+      clock.month,
+      clock.day,
+    ).subtract(Duration(days: clock.weekday - 1));
+    var n = 0;
+    for (var i = 0; i < 7; i++) {
+      final mark = presenceOn(
+        monday.add(Duration(days: i)),
+        now: clock,
+        alsoMine: alsoMine,
+      );
+      if (mark.both) n++;
+    }
+    return n;
+  }
+
+  Set<String> _sharedDateKeys() {
+    if (sharedDays <= 0) return const {};
+    final last = _parseYmd(lastSharedDate ?? '');
+    if (last == null) return const {};
+    return {
+      for (var i = 0; i < sharedDays; i++)
+        _dateKey(last.subtract(Duration(days: i))),
+    };
+  }
 
   /// Dias da semana da caravana (seg–dom) em que os dois caminharam juntos.
   int togetherDaysThisWeek([DateTime? now]) {
@@ -328,6 +403,19 @@ ${InviteDeepLinkService.openAppFooter()}
     final today = DateTime(now.year, now.month, now.day);
     return today.difference(last).inDays.clamp(0, 999);
   }
+}
+
+/// Quem pintou o dia: você, o parceiro, os dois, ou ninguém.
+class CompanionDayPresence {
+  final bool me;
+  final bool them;
+
+  const CompanionDayPresence({required this.me, required this.them});
+
+  static const empty = CompanionDayPresence(me: false, them: false);
+
+  bool get both => me && them;
+  int get walkers => (me ? 1 : 0) + (them ? 1 : 0);
 }
 
 enum CompanionDelayTier { fresh, dusty, lost }

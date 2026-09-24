@@ -1129,6 +1129,31 @@ class BackendService extends ChangeNotifier {
     ).join();
   }
 
+  /// A regra de `rooms/{code}/members` só aceita `xp`/`steps` iguais ao
+  /// `weeklySteps` já gravado em `users/{uid}`. Sem este passo, criar ou
+  /// entrar no grupo toma PERMISSION_DENIED.
+  Future<void> _alignUserWeeklySteps(int weeklySteps) async {
+    await _db.doc('users/$_uid').set({
+      'weeklySteps': weeklySteps,
+      'weeklyXp': weeklySteps,
+      'updatedAt': FieldValue.serverTimestamp(),
+    }, SetOptions(merge: true));
+  }
+
+  Map<String, dynamic> _roomMemberPayload(String userName, int weeklySteps) {
+    final today = _todayKey();
+    return {
+      ..._rankingPayload(
+        name: userName,
+        score: weeklySteps,
+        lastWalkDate: today,
+        lastSeenDate: today,
+        extra: {'lastWalk': today},
+      ),
+      'joinedAt': FieldValue.serverTimestamp(),
+    };
+  }
+
   /// Cria uma sala e já entra como dono/membro.
   Future<StudyRoom?> createRoom({
     required String name,
@@ -1160,13 +1185,19 @@ class BackendService extends ChangeNotifier {
           continue;
         }
 
-        await ref.collection('members').doc(_uid).set({
-          'name': userName,
-          'xp': weeklySteps,
-          'lastWalk': DateTime.now().toIso8601String().substring(0, 10),
-          'joinedAt': FieldValue.serverTimestamp(),
-          'updatedAt': FieldValue.serverTimestamp(),
-        });
+        try {
+          await _alignUserWeeklySteps(weeklySteps);
+          await ref.collection('members').doc(_uid).set(
+            _roomMemberPayload(userName, weeklySteps),
+          );
+        } catch (e) {
+          try {
+            await ref.delete();
+          } catch (deleteError) {
+            debugPrint('Falha ao apagar sala órfã $code: $deleteError');
+          }
+          rethrow;
+        }
         return StudyRoom(
           code: code,
           name: trimmed,
@@ -1216,13 +1247,11 @@ class BackendService extends ChangeNotifier {
       final doc = await ref.get();
       if (!doc.exists || doc.data() == null) return null;
 
-      await ref.collection('members').doc(_uid).set({
-        'name': userName,
-        'xp': weeklySteps,
-        'lastWalk': DateTime.now().toIso8601String().substring(0, 10),
-        'joinedAt': FieldValue.serverTimestamp(),
-        'updatedAt': FieldValue.serverTimestamp(),
-      }, SetOptions(merge: true));
+      await _alignUserWeeklySteps(weeklySteps);
+      await ref.collection('members').doc(_uid).set(
+        _roomMemberPayload(userName, weeklySteps),
+        SetOptions(merge: true),
+      );
 
       return StudyRoom.fromMap(normalized, doc.data()!);
     } catch (e) {
@@ -1644,7 +1673,48 @@ class BackendService extends ChangeNotifier {
       incomingNudgeDay: incomingNudge ? nudgeDay : null,
       iNudgedToday: iNudgedToday,
       partnerUid: awaiting ? null : (isHost ? guestId : hostId),
+      myWalkDates: _weekDateList(
+        isHost ? data['hostWalkDates'] : data['guestWalkDates'],
+      ),
+      theirWalkDates: awaiting
+          ? const []
+          : _weekDateList(
+              isHost ? data['guestWalkDates'] : data['hostWalkDates'],
+            ),
     );
+  }
+
+  List<String> _weekDateList(Object? raw) {
+    if (raw is! List) return const [];
+    final out = <String>[];
+    for (final item in raw) {
+      if (item is! String || item.length < 10) continue;
+      final key = item.substring(0, 10);
+      if (!out.contains(key)) out.add(key);
+    }
+    out.sort();
+    return out;
+  }
+
+  /// Mantém só seg–dom da semana civil de [now].
+  List<String> _datesInCurrentWeek(Iterable<String> dates, [DateTime? now]) {
+    final clock = now ?? DateTime.now();
+    final monday = DateTime(
+      clock.year,
+      clock.month,
+      clock.day,
+    ).subtract(Duration(days: clock.weekday - 1));
+    final sunday = monday.add(const Duration(days: 6));
+    String key(DateTime d) => d.toIso8601String().substring(0, 10);
+    final start = key(monday);
+    final end = key(sunday);
+    final out = <String>{};
+    for (final raw in dates) {
+      if (raw.length < 10) continue;
+      final k = raw.substring(0, 10);
+      if (k.compareTo(start) >= 0 && k.compareTo(end) <= 0) out.add(k);
+    }
+    return out.toList()..sort();
   }
 
   Future<WalkCompanion?> createCompanionInvite({
@@ -1760,6 +1830,7 @@ class BackendService extends ChangeNotifier {
     required int weeklySteps,
     required bool walkedToday,
     bool completedFirstMission = false,
+    List<String> walkDates = const [],
   }) async {
     if (!isActive || codes.isEmpty) return;
     final today = _todayKey();
@@ -1792,6 +1863,15 @@ class BackendService extends ChangeNotifier {
               data['guestFirstMissionDone'] != true) {
             updates['guestFirstMissionDone'] = true;
           }
+
+          final dateKey = isHost ? 'hostWalkDates' : 'guestWalkDates';
+          final previousDates = _weekDateList(data[dateKey]);
+          final weekDates = _datesInCurrentWeek([
+            ...previousDates,
+            ...walkDates,
+            if (walkedToday) today,
+          ]);
+          updates[dateKey] = weekDates;
 
           if (walkedToday) {
             updates[isHost ? 'hostLastWalk' : 'guestLastWalk'] = today;

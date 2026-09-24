@@ -289,31 +289,44 @@ section { position: relative; }
   opacity: calc(1 - var(--p) * 1.3);
 }
 
+/* Prólogo da abertura: versículo em tela cheia, depois some */
+.prologue { display: none; }
+
+.intro .prologue {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  display: grid;
+  place-items: center;
+  padding: 0 24px;
+  text-align: center;
+  pointer-events: none;
+  transition: opacity 0.9s ease, transform 1.4s var(--ease), filter 0.9s ease;
+}
+
 .genesis {
-  margin: 0 0 48px;
+  margin: 0;
+  max-width: 920px;
   font-family: var(--serif);
   font-style: italic;
-  color: rgba(244, 247, 251, 0.62);
-  font-size: clamp(1rem, 1.6vw, 1.2rem);
-  line-height: 1.6;
-  transition: transform 1.6s var(--ease), opacity 1.2s ease, font-size 1.6s var(--ease), margin 1.6s var(--ease);
+  font-size: clamp(1.5rem, 3.4vw, 2.6rem);
+  line-height: 1.5;
+  color: rgba(244, 247, 251, 0.92);
 }
 
 .genesis p { margin: 0; }
-
+.genesis .w { display: inline-block; white-space: pre; }
 .gen-light { color: var(--gold-soft); }
 
 .gen-ref {
-  margin-top: 10px;
+  margin-top: 18px;
   font-family: "Sora", sans-serif;
   font-style: normal;
   font-size: 10px;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.26em;
   text-transform: uppercase;
   color: var(--dim);
 }
-
-.genesis .w { display: inline-block; white-space: pre; }
 
 .opening-copy h1 {
   font-size: clamp(2.8rem, 7.4vw, 6.4rem);
@@ -473,7 +486,6 @@ section { position: relative; }
 .intro-reset, .intro-reset * { transition: none !important; animation: none !important; }
 
 /* Linha do tempo da abertura (só com JS; sem JS tudo aparece) */
-.intro .genesis { margin-bottom: -40px; font-size: clamp(1.5rem, 3.4vw, 2.6rem); color: rgba(244, 247, 251, 0.9); }
 /* "No princípio": tudo preto até "e houve luz" acender o céu */
 .intro body { background: #000; transition: background 2.4s ease; }
 .intro .cosmos { opacity: 0; transition: opacity 2.4s ease; }
@@ -483,8 +495,6 @@ section { position: relative; }
 .intro.s3 .grade { opacity: 1; }
 .intro .grain { transition: opacity 2.4s ease; }
 .intro:not(.s3) .grain { opacity: 0; }
-.intro .genesis { transform: translateY(var(--shift, 0px)); }
-.intro.s4 .genesis { transform: none; }
 .intro .gen-ref { opacity: 0; transition: opacity 1s ease 0.4s; }
 .intro .gen-1 .w { opacity: 0; filter: blur(10px); transform: translateY(10px); transition: opacity 0.9s ease, filter 0.9s ease, transform 0.9s var(--ease); transition-delay: calc(var(--i) * 110ms); }
 .intro .gen-2 { opacity: 0; filter: blur(10px); transition: opacity 1s ease, filter 1s ease; }
@@ -500,12 +510,10 @@ section { position: relative; }
 .intro.s3 .dawn { opacity: 1; transform: translateY(calc(var(--p) * 120px)); }
 .intro.s3 .flash { animation: flash 2.2s ease-out both; }
 .intro.s3 .gen-light { color: #fff; text-shadow: 0 0 30px rgba(255, 231, 160, 0.9); }
-.intro.s4 .genesis { margin-bottom: 48px; font-size: clamp(1rem, 1.6vw, 1.2rem); color: rgba(244, 247, 251, 0.62); }
-.intro.s4 .gen-light { color: var(--gold-soft); text-shadow: none; }
-.intro.s4 .opening-copy > * { opacity: 1; transform: none; filter: none; }
-.intro.s4 .opening-copy > :nth-child(2) { transition-delay: 0.15s; }
-.intro.s4 .opening-copy > :nth-child(3) { transition-delay: 0.35s; }
-.intro.s4 .opening-copy > :nth-child(4) { transition-delay: 0.55s; }
+/* O versículo sobe e se desfaz; o título entra logo atrás dele */
+.intro.s4 .prologue { opacity: 0; transform: translateY(-48px) scale(0.98); filter: blur(10px); }
+.intro.s4 .opening-copy > * { opacity: 1; transform: none; filter: none; transition-delay: 0.45s; }
+.intro.s4 .opening-copy > :nth-child(2) { transition-delay: 0.7s; }
 .intro.s4 .scroll-cue { opacity: 1; transition-delay: 1.4s; }
 
 /* ─── II. Palco ────────────────────────────────────── */
@@ -1527,7 +1535,6 @@ input:focus, textarea:focus, select:focus {
 @media (max-width: 560px) {
   .wrap { width: calc(100% - 32px); }
   .opening-inner { width: calc(100% - 32px); }
-  .intro .genesis { font-size: 1.4rem; }
   .hero-actions .btn { width: 100%; }
   .places { grid-template-columns: 1fr; }
   .form-card { padding: 22px 18px; }

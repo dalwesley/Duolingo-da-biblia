@@ -191,7 +191,16 @@ service cloud.firestore {
       match /members/{uid} {
         allow read: if isSignedIn();
         allow delete: if ownRankingDelete();
-        allow create, update: if rankingScoreMatches(userWeeklySteps());
+        // O placar da célula é o do próprio membro. Não espelha users/{uid}:
+        // esse get() recusava a criação do grupo quando o weeklySteps local
+        // ainda não era o número gravado no perfil (int vs float, ou 0 na nuvem).
+        allow create, update: if isSignedIn()
+          && request.auth.uid == uid
+          && (!('xp' in request.resource.data) || nonNegNum(request.resource.data.xp))
+          && (!('steps' in request.resource.data) || nonNegNum(request.resource.data.steps))
+          && (('xp' in request.resource.data) || ('steps' in request.resource.data))
+          && (!('xp' in request.resource.data) || !('steps' in request.resource.data)
+              || scoresEqual(request.resource.data.xp, request.resource.data.steps));
       }
     }
 

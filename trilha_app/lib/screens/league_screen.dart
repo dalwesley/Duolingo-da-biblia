@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -95,6 +96,18 @@ class _LeagueScreenState extends State<LeagueScreen>
   Future<void> _consumePendingInvite() async {
     if (!mounted || _handlingInvite) return;
     final links = InviteDeepLinkService.instance;
+    final roomCode = links.takePendingRoomCode();
+    if (roomCode != null) {
+      links.takeWantGruposTab();
+      _handlingInvite = true;
+      setState(() => _tab = 2);
+      try {
+        await _joinRoomWithCode(context, roomCode);
+      } finally {
+        _handlingInvite = false;
+      }
+      return;
+    }
     if (links.takeWantCompanhiaTab()) {
       setState(() => _tab = 1);
     }
@@ -852,7 +865,7 @@ class _LeagueScreenState extends State<LeagueScreen>
           const _RoomsIntro(
             title: 'Estudem juntos',
             subtitle:
-                'Crie o grupo, mande o código e veja quem estudou nesta semana.',
+                'Crie o grupo e mande o código.\nVeja quem estudou nesta semana.',
           ),
         ),
         const SizedBox(height: AppSpace.section),
@@ -899,6 +912,8 @@ class _LeagueScreenState extends State<LeagueScreen>
             inviterName: progress.userName,
             shareMessage:
                 'Entra no grupo "${room.name}" no Stway.\n'
+                'Toque ou aponte a câmera:\n'
+                '${InviteDeepLinkService.roomHttpsUrl(room.code)}\n\n'
                 'Código: ${room.code}\n\n'
                 'A lista mostra quem estudou nesta semana.\n\n'
                 'Ainda não tem o app? Baixe: ${AppUpdateService.androidStoreUrl}',
@@ -942,14 +957,13 @@ class _LeagueScreenState extends State<LeagueScreen>
       ),
       const SizedBox(height: AppSpace.md),
       if (rooms.lastError != null) ...[
-        const SizedBox(height: AppSpace.md),
         Text(
           rooms.lastError!,
           textAlign: TextAlign.center,
           style: AppTypography.body(size: 12, color: AppColors.error),
         ),
+        const SizedBox(height: AppSpace.md),
       ],
-      const SizedBox(height: AppSpace.md),
       if (rooms.loading)
         const Padding(
           padding: EdgeInsets.symmetric(vertical: AppSpace.xxl),
@@ -1056,9 +1070,29 @@ class _LeagueScreenState extends State<LeagueScreen>
       ),
     );
     if (code == null || code.isEmpty || !context.mounted) return;
-    await context.read<RoomService>().joinRoom(
-      code,
-      context.read<ProgressService>(),
+    final parsed = InviteDeepLinkService.extractRoomCode(code) ??
+        InviteDeepLinkService.extractCompanionCode(code) ??
+        code;
+    await _joinRoomWithCode(context, parsed);
+  }
+
+  Future<void> _joinRoomWithCode(BuildContext context, String code) async {
+    final rooms = context.read<RoomService>();
+    final ok = await rooms.joinRoom(code, context.read<ProgressService>());
+    if (!context.mounted) return;
+    if (!ok) {
+      showAppToastFor(
+        context,
+        message: rooms.lastError ?? 'Não foi possível entrar no grupo.',
+        glyph: CinematicGlyph.wrong,
+        tone: AppToastTone.warn,
+      );
+      return;
+    }
+    showAppToastFor(
+      context,
+      message: 'Você entrou em ${rooms.activeRoom?.name ?? 'o grupo'}.',
+      glyph: CinematicGlyph.people,
     );
   }
 
@@ -1333,13 +1367,17 @@ class _RoomsIntro extends StatelessWidget {
           style: AppTypography.display(size: 30, height: 1.1),
         ),
         const SizedBox(height: 8),
-        Text(
-          subtitle,
-          textAlign: TextAlign.center,
-          style: AppTypography.body(
-            size: 13,
-            weight: FontWeight.w600,
-            color: a.textMuted(0.58),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 12),
+          child: Text(
+            subtitle,
+            textAlign: TextAlign.center,
+            style: AppTypography.body(
+              size: 14,
+              height: 1.45,
+              weight: FontWeight.w600,
+              color: a.textMuted(0.72),
+            ),
           ),
         ),
       ],
@@ -1620,30 +1658,37 @@ class _RoomWeekPulse extends StatelessWidget {
               color: AppColors.streak,
             ),
           ],
-          const SizedBox(height: 14),
+          const SizedBox(height: 12),
           if (claimed)
             Text(
-              'Baú do grupo já coletado nesta semana',
-              textAlign: TextAlign.center,
+              'Baú coletado nesta semana',
               style: AppTypography.body(
-                size: 12,
+                size: 13,
                 weight: FontWeight.w700,
                 color: a.textMuted(0.55),
               ),
             )
+          else if (ready)
+            CopperCta(
+              label:
+                  'Abrir baú · +${RemoteConfigService.instance.roomChestBonusSteps} passos',
+              onTap: onClaim,
+              leading: CinematicGlyph.gift,
+              trailing: null,
+              dense: true,
+            )
           else
-            Opacity(
-              opacity: ready ? 1 : 0.55,
-              child: CopperCta(
-                label: ready
-                    ? 'Abrir baú · +${RemoteConfigService.instance.roomChestBonusSteps} passos'
-                    : walkedToday
-                    ? (goal != null && goal > 0
-                          ? 'Abre com metade do grupo ou a meta'
-                          : 'Abre quando metade do grupo estudar')
-                    : 'Estude hoje para abrir o baú',
-                onTap: ready ? onClaim : null,
-                expanded: true,
+            Text(
+              walkedToday
+                  ? (goal != null && goal > 0
+                        ? 'O baú abre com metade do grupo ou a meta.'
+                        : 'O baú abre quando metade do grupo estudar.')
+                  : 'Estude hoje para abrir o baú do grupo.',
+              style: AppTypography.body(
+                size: 13,
+                height: 1.35,
+                weight: FontWeight.w700,
+                color: walkedToday ? a.textMuted(0.62) : AppColors.accent,
               ),
             ),
         ],
@@ -1681,69 +1726,79 @@ class _RoomHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final days = LeagueService.daysLeft();
-    final closesText = days <= 1
-        ? 'A lista fecha hoje'
-        : 'A lista fecha em $days dias';
+    final closesText = days <= 1 ? 'Fecha hoje' : 'Fecha em $days dias';
 
     return GlassCard(
-      padding: const EdgeInsets.fromLTRB(18, 18, 18, 14),
+      padding: const EdgeInsets.fromLTRB(18, 16, 18, 8),
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const CinematicIcon(
-                glyph: CinematicGlyph.people,
-                size: 42,
-                accent: AppColors.accent,
-                glowing: true,
-              ),
-              const SizedBox(width: 12),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      isOwner ? 'Seu grupo' : 'Grupo',
+                      isOwner ? 'SEU GRUPO' : 'GRUPO',
                       style: AppTypography.label(
-                        letterSpacing: 1.5,
+                        size: 10,
+                        letterSpacing: 1.4,
                         color: AppColors.accent.withValues(alpha: 0.9),
                       ),
                     ),
-                    const SizedBox(height: 2),
+                    const SizedBox(height: 4),
                     Text(
                       room.name,
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
-                      style: AppTypography.display(size: 26, height: 1.05),
+                      style: AppTypography.display(size: 28, height: 1.05),
+                    ),
+                    const SizedBox(height: 4),
+                    Text(
+                      'Criado por ${room.ownerName}',
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: AppTypography.body(
+                        size: 13,
+                        color: a.textMuted(0.62),
+                      ),
                     ),
                   ],
                 ),
               ),
+              const SizedBox(width: 10),
+              Container(
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 10,
+                  vertical: 6,
+                ),
+                decoration: BoxDecoration(
+                  color: AppColors.streak.withValues(alpha: 0.14),
+                  borderRadius: BorderRadius.circular(AppRadii.pill),
+                ),
+                child: Text(
+                  closesText,
+                  style: AppTypography.label(
+                    size: 10,
+                    letterSpacing: 0.2,
+                    color: AppColors.streak,
+                  ),
+                ),
+              ),
             ],
-          ),
-          const SizedBox(height: 8),
-          Align(
-            alignment: Alignment.centerLeft,
-            child: Text(
-              'Criada por ${room.ownerName}',
-              style: AppTypography.body(
-                size: 12,
-                color: a.textMuted(0.65),
-              ).copyWith(fontStyle: FontStyle.italic),
-            ),
           ),
           const SizedBox(height: 16),
           GestureDetector(
             onTap: onCopy,
+            behavior: HitTestBehavior.opaque,
             child: Container(
-              width: double.infinity,
-              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 13),
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
               decoration: BoxDecoration(
                 color: a.cardFillSoft,
                 borderRadius: BorderRadius.circular(AppRadii.md),
-                border: Border.all(
-                  color: AppColors.accent.withValues(alpha: 0.32),
-                ),
+                border: Border.all(color: a.cardBorder),
               ),
               child: Row(
                 children: [
@@ -1752,10 +1807,11 @@ class _RoomHeader extends StatelessWidget {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Código do grupo',
+                          'CÓDIGO',
                           style: AppTypography.label(
-                            letterSpacing: 0,
-                            color: a.textMuted(0.58),
+                            size: 10,
+                            letterSpacing: 1.2,
+                            color: a.textMuted(0.5),
                           ),
                         ),
                         const SizedBox(height: 2),
@@ -1765,97 +1821,59 @@ class _RoomHeader extends StatelessWidget {
                             size: 22,
                             weight: FontWeight.w900,
                             color: AppColors.accent,
-                          ).copyWith(letterSpacing: 4),
+                          ).copyWith(letterSpacing: 3),
                         ),
                       ],
                     ),
                   ),
-                  CinematicIcon(
-                    glyph: CinematicGlyph.copy,
-                    size: 20,
-                    accent: a.textMuted(0.72),
-                    framed: false,
+                  Text(
+                    'Copiar',
+                    style: AppTypography.body(
+                      size: 13,
+                      weight: FontWeight.w800,
+                      color: a.textMuted(0.72),
+                    ),
                   ),
                 ],
               ),
             ),
           ),
-          const SizedBox(height: 12),
-          Row(
-            children: [
-              Expanded(
-                child: CopperCta(
-                  label: 'Compartilhar QR',
-                  onTap: onShowQr,
-                  leading: CinematicGlyph.qr,
-                  trailing: null,
-                  dense: true,
-                ),
-              ),
-              const SizedBox(width: 10),
-              _RoomIconButton(
-                glyph: CinematicGlyph.refresh,
-                label: 'Atualizar',
-                onTap: onRefresh,
-              ),
-            ],
+          const SizedBox(height: 10),
+          CopperCta(
+            label: 'Compartilhar',
+            onTap: onShowQr,
+            leading: CinematicGlyph.qr,
+            trailing: null,
+            dense: true,
           ),
-          const SizedBox(height: 14),
+          const SizedBox(height: 16),
           Row(
             children: [
               _RoomStatChip(
                 label: 'Posição',
-                value: rank == null ? '--' : '$rankº',
-                accent: rank != null,
+                value: rank == null ? '—' : '$rankº',
+                highlight: rank == 1,
               ),
-              const SizedBox(width: 8),
               _RoomStatChip(label: 'Pessoas', value: '$memberCount'),
-              const SizedBox(width: 8),
               _RoomStatChip(label: 'Seus passos', value: '$weeklySteps'),
             ],
           ),
-          const SizedBox(height: 10),
+          const SizedBox(height: 8),
           Row(
             children: [
-              CinematicIcon(
-                glyph: CinematicGlyph.calendar,
-                size: 14,
-                accent: AppColors.streak.withValues(alpha: 0.95),
-                framed: false,
-              ),
-              const SizedBox(width: 6),
-              Expanded(
-                child: Text(
-                  closesText,
-                  style: AppTypography.body(
-                    size: 12,
-                    weight: FontWeight.w700,
-                    color: a.textMuted(0.72),
-                  ),
-                ),
-              ),
               if (isOwner && onEditGoal != null)
-                TextButton(
-                  onPressed: onEditGoal,
-                  child: Text(
-                    room.weeklyGoalSteps != null ? 'Meta' : 'Definir meta',
-                    style: AppTypography.body(
-                      size: 12,
-                      weight: FontWeight.w700,
-                      color: a.textMuted(0.55),
-                    ),
-                  ),
+                _RoomTextAction(
+                  label: room.weeklyGoalSteps != null
+                      ? 'Meta ${room.weeklyGoalSteps}'
+                      : 'Definir meta',
+                  onTap: onEditGoal!,
                 ),
-              TextButton(
-                onPressed: onLeave,
-                child: Text(
-                  'Sair',
-                  style: AppTypography.body(
-                    size: 12,
-                    weight: FontWeight.w700,
-                    color: a.textMuted(0.55),
-                  ),
-                ),
+              _RoomTextAction(label: 'Atualizar', onTap: onRefresh),
+              const Spacer(),
+              _RoomTextAction(
+                label: 'Sair',
+                onTap: onLeave,
+                color: AppColors.error.withValues(alpha: 0.9),
               ),
             ],
           ),
@@ -1865,47 +1883,34 @@ class _RoomHeader extends StatelessWidget {
   }
 }
 
-class _RoomIconButton extends StatelessWidget {
-  final CinematicGlyph glyph;
+class _RoomTextAction extends StatelessWidget {
   final String label;
   final VoidCallback onTap;
+  final Color? color;
 
-  const _RoomIconButton({
-    required this.glyph,
+  const _RoomTextAction({
     required this.label,
     required this.onTap,
+    this.color,
   });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 12),
-        decoration: BoxDecoration(
-          color: a.cardFillSoft,
-          borderRadius: BorderRadius.circular(AppRadii.md),
-          border: Border.all(color: a.cardBorder),
-        ),
-        child: Column(
-          children: [
-            CinematicIcon(
-              glyph: glyph,
-              size: 17,
-              accent: AppColors.accent.withValues(alpha: 0.9),
-              framed: false,
-            ),
-            const SizedBox(height: 2),
-            Text(
-              label,
-              style: AppTypography.label(
-                size: 9,
-                letterSpacing: 0,
-                color: a.textMuted(0.68),
-              ),
-            ),
-          ],
+    return TextButton(
+      onPressed: onTap,
+      style: TextButton.styleFrom(
+        minimumSize: Size.zero,
+        tapTargetSize: MaterialTapTargetSize.shrinkWrap,
+        visualDensity: VisualDensity.compact,
+        padding: const EdgeInsets.fromLTRB(0, 8, 14, 8),
+      ),
+      child: Text(
+        label,
+        style: AppTypography.body(
+          size: 13,
+          weight: FontWeight.w700,
+          color: color ?? a.textMuted(0.72),
         ),
       ),
     );
@@ -1915,55 +1920,42 @@ class _RoomIconButton extends StatelessWidget {
 class _RoomStatChip extends StatelessWidget {
   final String label;
   final String value;
-  final bool accent;
+  final bool highlight;
 
   const _RoomStatChip({
     required this.label,
     required this.value,
-    this.accent = false,
+    this.highlight = false,
   });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     return Expanded(
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 9),
-        decoration: BoxDecoration(
-          gradient: accent ? AppGradients.gold : null,
-          color: accent ? null : a.cardFillSoft,
-          borderRadius: BorderRadius.circular(AppRadii.md),
-          border: Border.all(
-            color: accent ? Colors.white.withValues(alpha: 0.45) : a.cardBorder,
+      child: Column(
+        children: [
+          Text(
+            value,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: AppTypography.title(
+              size: 20,
+              weight: FontWeight.w900,
+              color: highlight ? AppColors.accent : a.text,
+            ),
           ),
-        ),
-        child: Column(
-          children: [
-            Text(
-              value,
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-              style: AppTypography.title(
-                size: 15,
-                weight: FontWeight.w900,
-                color: accent ? AppColors.inkOnAccent : AppColors.accent,
-              ),
+          const SizedBox(height: 2),
+          Text(
+            label,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: AppTypography.label(
+              size: 10,
+              letterSpacing: 0.3,
+              color: a.textMuted(0.5),
             ),
-            const SizedBox(height: 2),
-            Text(
-              label,
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-              style: AppTypography.label(
-                size: 10,
-                letterSpacing: 0,
-                color: accent
-                    ? AppColors.inkOnAccent.withValues(alpha: 0.75)
-                    : a.textMuted(0.58),
-              ),
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
@@ -3400,7 +3392,6 @@ class _CompanionCard extends StatelessWidget {
         ? 'Você'
         : myName.trim().split(' ').first;
     final away = companion.theyDaysAway;
-    final insight = companion.insightLine;
     final canNudge =
         onNudge != null &&
         !companion.awaitingPartner &&
@@ -3452,15 +3443,17 @@ class _CompanionCard extends StatelessWidget {
                         color: AppColors.accent,
                       ),
                     ),
-                    const SizedBox(height: 6),
-                    Text(
-                      companion.awaitingPartner ? 'Convite aberto' : partnerLabel,
-                      style: AppTypography.title(
-                        size: 24,
-                        weight: FontWeight.w900,
-                        color: a.text,
+                    if (companion.awaitingPartner) ...[
+                      const SizedBox(height: 6),
+                      Text(
+                        'Convite aberto',
+                        style: AppTypography.title(
+                          size: 24,
+                          weight: FontWeight.w900,
+                          color: a.text,
+                        ),
                       ),
-                    ),
+                    ],
                   ],
                 ),
               ),
@@ -3506,29 +3499,20 @@ class _CompanionCard extends StatelessWidget {
                 ),
             ],
           ),
-          const SizedBox(height: 12),
-          Text(
-            companion.statusLine,
-            style: AppTypography.body(
-              size: 16,
-              height: 1.35,
-              weight: FontWeight.w600,
-              color: a.text.withValues(alpha: 0.9),
-            ),
-          ),
-          if (insight != null) ...[
-            const SizedBox(height: 6),
+          if (companion.awaitingPartner) ...[
+            const SizedBox(height: 12),
             Text(
-              insight,
+              companion.statusLine,
               style: AppTypography.body(
-                size: 14,
+                size: 16,
                 height: 1.35,
-                color: a.textMuted(0.68),
+                weight: FontWeight.w600,
+                color: a.text.withValues(alpha: 0.9),
               ),
             ),
           ],
           if (!companion.awaitingPartner) ...[
-            const SizedBox(height: 20),
+            const SizedBox(height: 16),
             Row(
               children: [
                 Expanded(
@@ -3685,12 +3669,16 @@ class _CompanionWeekStrip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final week = companion.togetherDaysThisWeek();
-    final todayIdx = DateTime.now().weekday - 1; // seg=0
+    final mine = context.select((ProgressService p) => p.playDates);
+    final now = DateTime.now();
+    final todayIdx = now.weekday - 1; // seg=0
+    final together = companion.bothWalkedThisWeek(alsoMine: mine);
     const labels = ['S', 'T', 'Q', 'Q', 'S', 'S', 'D'];
-    final waitingHint = companion.waitingOnThem && week == 0
-        ? 'Quando ${companion.partnerFirstName} caminhar hoje, o dia conta'
-        : null;
+    final monday = DateTime(
+      now.year,
+      now.month,
+      now.day,
+    ).subtract(Duration(days: todayIdx));
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -3707,7 +3695,7 @@ class _CompanionWeekStrip extends StatelessWidget {
             ),
             const Spacer(),
             Text(
-              '$week de 7',
+              '$together de 7',
               style: AppTypography.body(
                 size: 13,
                 weight: FontWeight.w800,
@@ -3716,12 +3704,7 @@ class _CompanionWeekStrip extends StatelessWidget {
             ),
           ],
         ),
-        const SizedBox(height: 6),
-        Text(
-          waitingHint ?? 'Dias em que os dois caminharam',
-          style: AppTypography.body(size: 13, color: a.textMuted(0.62)),
-        ),
-        const SizedBox(height: 14),
+        const SizedBox(height: 12),
         Row(
           children: [
             for (var i = 0; i < 7; i++) ...[
@@ -3729,7 +3712,11 @@ class _CompanionWeekStrip extends StatelessWidget {
               Expanded(
                 child: _WeekDot(
                   label: labels[i],
-                  filled: i < week,
+                  presence: companion.presenceOn(
+                    monday.add(Duration(days: i)),
+                    now: now,
+                    alsoMine: mine,
+                  ),
                   isToday: i == todayIdx,
                   style: a,
                 ),
@@ -3750,6 +3737,15 @@ class _CompanionMilestonesBlock extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final shared = companion.sharedDays;
+    final next = companion.nextMilestone;
+    final marks = WalkCompanion.milestones;
+    final caption = shared == 0
+        ? 'Primeiro marco: $next dias juntos'
+        : shared >= marks.last
+        ? 'Próximo marco: $next dias'
+        : 'Faltam ${next - shared} para o marco de $next';
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -3761,37 +3757,20 @@ class _CompanionMilestonesBlock extends StatelessWidget {
             color: AppColors.accent,
           ),
         ),
-        const SizedBox(height: 12),
-        Wrap(
-          spacing: 8,
-          runSpacing: 8,
-          children: [
-            for (final m in WalkCompanion.milestones)
-              _MilestoneChip(
-                days: m,
-                reached: companion.sharedDays >= m,
-                next: companion.nextMilestone == m,
-                style: a,
-              ),
-          ],
-        ),
-        if (companion.sharedDays < companion.nextMilestone) ...[
-          const SizedBox(height: 14),
+        const SizedBox(height: 14),
+        _MilestoneTrail(sharedDays: shared, next: next, style: a),
+        if (shared < next) ...[
+          const SizedBox(height: 12),
           Row(
             children: [
               Expanded(
                 child: Text(
-                  companion.sharedDays == 0
-                      ? 'Primeiro marco: ${companion.nextMilestone} dias juntos'
-                      : 'Faltam ${companion.nextMilestone - companion.sharedDays} para o próximo',
-                  style: AppTypography.body(
-                    size: 13,
-                    color: a.textMuted(0.65),
-                  ),
+                  caption,
+                  style: AppTypography.body(size: 13, color: a.textMuted(0.65)),
                 ),
               ),
               Text(
-                '${companion.sharedDays}/${companion.nextMilestone}',
+                '$shared/$next',
                 style: AppTypography.label(
                   size: 11,
                   weight: FontWeight.w800,
@@ -3799,11 +3778,6 @@ class _CompanionMilestonesBlock extends StatelessWidget {
                 ),
               ),
             ],
-          ),
-          const SizedBox(height: 8),
-          AppProgressBar(
-            value: companion.milestoneProgress,
-            color: AppColors.accent.withValues(alpha: 0.85),
           ),
         ],
       ],
@@ -3813,48 +3787,40 @@ class _CompanionMilestonesBlock extends StatelessWidget {
 
 class _WeekDot extends StatelessWidget {
   final String label;
-  final bool filled;
+  final CompanionDayPresence presence;
   final bool isToday;
   final AppearanceStyle style;
 
   const _WeekDot({
     required this.label,
-    required this.filled,
+    required this.presence,
     required this.isToday,
     required this.style,
   });
 
   @override
   Widget build(BuildContext context) {
+    final painted = presence.me || presence.them;
     return Column(
       children: [
-        Container(
-          height: 36,
-          alignment: Alignment.center,
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            color: filled
-                ? AppColors.accent.withValues(alpha: 0.22)
-                : style.cardFillSoft,
-            border: Border.all(
-              color: isToday
-                  ? AppColors.accent
-                  : filled
-                  ? AppColors.accent.withValues(alpha: 0.55)
-                  : style.cardBorder.withValues(alpha: 0.6),
-              width: isToday ? 1.8 : 1,
+        Center(
+          child: SizedBox(
+            width: 36,
+            height: 36,
+            child: CustomPaint(
+              painter: _SplitDayPainter(
+                me: presence.me,
+                them: presence.them,
+                isToday: isToday,
+                empty: style.cardFillSoft,
+                border: isToday
+                    ? AppColors.accent
+                    : painted
+                    ? AppColors.accent.withValues(alpha: 0.55)
+                    : style.cardBorder.withValues(alpha: 0.6),
+              ),
             ),
           ),
-          child: filled
-              ? Text(
-                  '✓',
-                  style: AppTypography.label(
-                    size: 12,
-                    weight: FontWeight.w900,
-                    color: AppColors.accent,
-                  ),
-                )
-              : null,
         ),
         const SizedBox(height: 6),
         Text(
@@ -3869,52 +3835,311 @@ class _WeekDot extends StatelessWidget {
   }
 }
 
-class _MilestoneChip extends StatelessWidget {
-  final int days;
-  final bool reached;
-  final bool next;
+/// Bolinha da semana: metade esquerda é você, metade direita é o parceiro.
+class _SplitDayPainter extends CustomPainter {
+  final bool me;
+  final bool them;
+  final bool isToday;
+  final Color empty;
+  final Color border;
+
+  const _SplitDayPainter({
+    required this.me,
+    required this.them,
+    required this.isToday,
+    required this.empty,
+    required this.border,
+  });
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final center = Offset(size.width / 2, size.height / 2);
+    final radius = size.width / 2;
+    final stroke = isToday ? 1.8 : 1.15;
+    final disk = radius - stroke / 2;
+
+    canvas.drawCircle(center, disk, Paint()..color = empty);
+
+    final inner = disk - stroke - 2.4;
+    const seam = 1.4;
+    if (inner > 0 && (me || them)) {
+      canvas.save();
+      canvas.clipPath(
+        Path()..addOval(Rect.fromCircle(center: center, radius: inner)),
+      );
+      final fill = Paint()..color = AppColors.accent;
+      if (me && them) {
+        canvas.drawCircle(center, inner, fill);
+      } else {
+        final half = me
+            ? Rect.fromLTRB(0, 0, center.dx - seam / 2, size.height)
+            : Rect.fromLTRB(center.dx + seam / 2, 0, size.width, size.height);
+        canvas.drawRect(half, fill);
+      }
+      canvas.restore();
+    }
+
+    canvas.drawCircle(
+      center,
+      disk,
+      Paint()
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = stroke
+        ..color = border,
+    );
+  }
+
+  @override
+  bool shouldRepaint(covariant _SplitDayPainter old) =>
+      me != old.me ||
+      them != old.them ||
+      isToday != old.isToday ||
+      empty != old.empty ||
+      border != old.border;
+}
+
+class _MilestoneTrail extends StatelessWidget {
+  final int sharedDays;
+  final int next;
   final AppearanceStyle style;
 
-  const _MilestoneChip({
-    required this.days,
-    required this.reached,
+  const _MilestoneTrail({
+    required this.sharedDays,
     required this.next,
     required this.style,
   });
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(AppRadii.pill),
-        color: reached
-            ? AppColors.accent.withValues(alpha: 0.16)
-            : next
-            ? AppColors.streak.withValues(alpha: 0.12)
-            : Colors.white.withValues(alpha: 0.04),
-        border: Border.all(
-          color: reached
-              ? AppColors.accent.withValues(alpha: 0.55)
-              : next
-              ? AppColors.streak.withValues(alpha: 0.45)
-              : style.cardBorder.withValues(alpha: 0.5),
-        ),
-      ),
-      child: Text(
-        reached ? '$days ✓' : '$days d',
-        style: AppTypography.body(
-          size: 13,
-          weight: FontWeight.w800,
-          color: reached
-              ? AppColors.accent
-              : next
-              ? AppColors.streak
-              : style.textMuted(0.55),
-        ),
+    final marks = WalkCompanion.milestones;
+    return LayoutBuilder(
+      builder: (context, constraints) {
+        final n = marks.length;
+        final slot = constraints.maxWidth / n;
+        const node = 28.0;
+        return Column(
+          children: [
+            SizedBox(
+              height: node,
+              child: Stack(
+                alignment: Alignment.center,
+                children: [
+                  Positioned(
+                    left: slot / 2,
+                    right: slot / 2,
+                    top: (node / 2) - 1.5,
+                    child: _MilestoneLine(sharedDays: sharedDays, style: style),
+                  ),
+                  Row(
+                    children: [
+                      for (final m in marks)
+                        Expanded(
+                          child: Center(
+                            child: _MilestoneNode(
+                              reached: sharedDays >= m,
+                              current: next == m,
+                              arc: _gapProgress(sharedDays, m),
+                              style: style,
+                            ),
+                          ),
+                        ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            const SizedBox(height: 6),
+            Row(
+              children: [
+                for (final m in marks)
+                  Expanded(
+                    child: Text(
+                      '$m',
+                      textAlign: TextAlign.center,
+                      style: AppTypography.label(
+                        size: 11,
+                        letterSpacing: 0,
+                        weight: sharedDays >= m || next == m
+                            ? FontWeight.w800
+                            : FontWeight.w600,
+                        color: sharedDays >= m
+                            ? AppColors.accent
+                            : next == m
+                            ? AppColors.streak
+                            : style.textMuted(0.45),
+                      ),
+                    ),
+                  ),
+              ],
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  /// Quanto do trecho até [days] já foi caminhado (0–1). Só o marco atual.
+  static double _gapProgress(int shared, int days) {
+    if (shared >= days) return 1;
+    final marks = WalkCompanion.milestones;
+    var prev = 0;
+    for (final m in marks) {
+      if (m == days) break;
+      if (m < days) prev = m;
+    }
+    if (days <= prev) return 0;
+    return ((shared - prev) / (days - prev)).clamp(0.0, 1.0);
+  }
+}
+
+class _MilestoneLine extends StatelessWidget {
+  final int sharedDays;
+  final AppearanceStyle style;
+
+  const _MilestoneLine({required this.sharedDays, required this.style});
+
+  @override
+  Widget build(BuildContext context) {
+    final marks = WalkCompanion.milestones;
+    return SizedBox(
+      height: 3,
+      child: Row(
+        children: [
+          for (var i = 0; i < marks.length - 1; i++)
+            Expanded(child: _segment(marks[i], marks[i + 1])),
+        ],
       ),
     );
   }
+
+  Widget _segment(int from, int to) {
+    final done = sharedDays >= to;
+    final current = sharedDays >= from && sharedDays < to;
+    final t = current
+        ? ((sharedDays - from) / (to - from)).clamp(0.0, 1.0)
+        : (done ? 1.0 : 0.0);
+    return Stack(
+      fit: StackFit.expand,
+      children: [
+        DecoratedBox(
+          decoration: BoxDecoration(
+            color: style.cardBorder.withValues(alpha: 0.45),
+            borderRadius: BorderRadius.circular(2),
+          ),
+        ),
+        if (t > 0)
+          FractionallySizedBox(
+            alignment: Alignment.centerLeft,
+            widthFactor: t,
+            child: const DecoratedBox(
+              decoration: BoxDecoration(
+                color: AppColors.accent,
+                borderRadius: BorderRadius.all(Radius.circular(2)),
+              ),
+            ),
+          ),
+      ],
+    );
+  }
+}
+
+class _MilestoneNode extends StatelessWidget {
+  final bool reached;
+  final bool current;
+  final double arc;
+  final AppearanceStyle style;
+
+  const _MilestoneNode({
+    required this.reached,
+    required this.current,
+    required this.arc,
+    required this.style,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: 28,
+      height: 28,
+      child: CustomPaint(
+        painter: _MilestoneNodePainter(
+          reached: reached,
+          current: current,
+          arc: arc,
+          track: style.cardBorder.withValues(alpha: 0.7),
+          empty: style.cardFillSoft,
+        ),
+        child: reached
+            ? Center(
+                child: Text(
+                  '✓',
+                  style: AppTypography.label(
+                    size: 11,
+                    weight: FontWeight.w900,
+                    color: AppColors.inkOnAccent,
+                  ),
+                ),
+              )
+            : null,
+      ),
+    );
+  }
+}
+
+class _MilestoneNodePainter extends CustomPainter {
+  final bool reached;
+  final bool current;
+  final double arc;
+  final Color track;
+  final Color empty;
+
+  const _MilestoneNodePainter({
+    required this.reached,
+    required this.current,
+    required this.arc,
+    required this.track,
+    required this.empty,
+  });
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    final center = Offset(size.width / 2, size.height / 2);
+    final radius = size.width / 2 - 1.2;
+    if (reached) {
+      canvas.drawCircle(center, radius, Paint()..color = AppColors.accent);
+      return;
+    }
+    canvas.drawCircle(center, radius, Paint()..color = empty);
+    canvas.drawCircle(
+      center,
+      radius,
+      Paint()
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = current ? 1.8 : 1.1
+        ..color = current ? AppColors.streak : track,
+    );
+    if (current && arc > 0.01) {
+      canvas.drawArc(
+        Rect.fromCircle(center: center, radius: radius),
+        -math.pi / 2,
+        math.pi * 2 * arc.clamp(0.0, 1.0),
+        false,
+        Paint()
+          ..style = PaintingStyle.stroke
+          ..strokeWidth = 2.4
+          ..strokeCap = StrokeCap.round
+          ..color = AppColors.accent,
+      );
+    }
+  }
+
+  @override
+  bool shouldRepaint(covariant _MilestoneNodePainter old) =>
+      reached != old.reached ||
+      current != old.current ||
+      arc != old.arc ||
+      track != old.track ||
+      empty != old.empty;
 }
 
 class _CompanionGuideCard extends StatelessWidget {

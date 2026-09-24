@@ -14,6 +14,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/stway_brand.dart';
+import '../widgets/tilt_star_sky.dart';
 import 'login_screen.dart';
 import 'main_shell.dart';
 import 'onboarding_screen.dart';
@@ -28,8 +29,9 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen>
     with SingleTickerProviderStateMixin {
-  static const _firstDuration = Duration(milliseconds: 1800);
-  static const _returnDuration = Duration(milliseconds: 1100);
+  // Tempo para o céu estrelado (e o parallax) aparecer de verdade.
+  static const _firstDuration = Duration(milliseconds: 3400);
+  static const _returnDuration = Duration(milliseconds: 2400);
 
   late final AnimationController _master;
 
@@ -81,10 +83,7 @@ class _SplashScreenState extends State<SplashScreen>
       if (!mounted || !backend.isSignedIn) return;
       try {
         hydrateResult = await backend
-            .hydrateProgress(
-              progress,
-              league: context.read<LeagueService>(),
-            )
+            .hydrateProgress(progress, league: context.read<LeagueService>())
             .timeout(
               const Duration(seconds: 10),
               onTimeout: () => BackendService.hydrateFailed,
@@ -136,7 +135,9 @@ class _SplashScreenState extends State<SplashScreen>
       if (hydrate != null && hydrate != BackendService.hydrateFailed) {
         final companions = context.read<CompanionService>();
         final rooms = context.read<RoomService>();
-        unawaited(companions.applyCloudCodes(progress.companionCodes, progress));
+        unawaited(
+          companions.applyCloudCodes(progress.companionCodes, progress),
+        );
         unawaited(
           rooms.applyCloudCode(progress.activeRoomCode, progress: progress),
         );
@@ -215,12 +216,16 @@ class _SplashScreenState extends State<SplashScreen>
       style: appearance,
       background: const ColoredBox(
         color: AppColors.primaryDark,
-        child: SizedBox.expand(
-          child: Image(
-            image: AssetImage('assets/icon/splash_bg.png'),
-            fit: BoxFit.cover,
-            alignment: Alignment.center,
-          ),
+        child: Stack(
+          fit: StackFit.expand,
+          children: [
+            Image(
+              image: AssetImage('assets/icon/splash_bg.png'),
+              fit: BoxFit.cover,
+              alignment: Alignment.center,
+            ),
+            TiltStarSky(),
+          ],
         ),
       ),
       body: AnimatedBuilder(

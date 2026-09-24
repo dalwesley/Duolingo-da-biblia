@@ -70,7 +70,9 @@ class _InviteQrSheetState extends State<_InviteQrSheet> {
 
   String get _installUrl => AppUpdateService.androidStoreUrl;
 
-  String get _inviteLink => InviteDeepLinkService.companionUri(widget.code);
+  String get _inviteLink => widget.companionMode
+      ? InviteDeepLinkService.companionUri(widget.code)
+      : InviteDeepLinkService.roomHttpsUrl(widget.code);
 
   String get _defaultShareText {
     if (!widget.companionMode) {
@@ -157,7 +159,7 @@ $_installUrl
         borderRadius: BorderRadius.circular(AppRadii.md),
       ),
       child: QrImageView(
-        data: widget.companionMode ? _inviteLink : widget.code,
+        data: _inviteLink,
         version: QrVersions.auto,
         size: size,
         gapless: true,

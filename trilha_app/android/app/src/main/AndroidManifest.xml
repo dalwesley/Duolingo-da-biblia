@@ -33,6 +33,7 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
             <!-- Convite de companhia: stway://companhia/CODIGO -->
+            <!-- Convite de grupo: stway://sala/CODIGO -->
             <!-- Abrir Juntos: stway://juntos -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW"/>
@@ -41,6 +42,8 @@
                 <data android:scheme="stway" android:host="companhia"/>
                 <data android:scheme="stway" android:host="c"/>
                 <data android:scheme="stway" android:host="juntos"/>
+                <data android:scheme="stway" android:host="sala"/>
+                <data android:scheme="stway" android:host="grupo"/>
             </intent-filter>
         </activity>
         <receiver

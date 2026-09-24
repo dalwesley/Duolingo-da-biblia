@@ -3,8 +3,8 @@ import 'dart:async';
 import 'package:app_links/app_links.dart';
 import 'package:flutter/foundation.dart';
 
-/// Deep links: `stway://companhia/CODIGO` · `stway://juntos` · `stway://hoje` (widget)
-/// Link https (WhatsApp): [juntosHttpsUrl]
+/// Deep links: `stway://companhia/CODIGO` · `stway://sala/CODIGO` · `stway://juntos`
+/// Link https do grupo (câmera / WhatsApp): [roomHttpsUrl]
 class InviteDeepLinkService extends ChangeNotifier {
   InviteDeepLinkService._();
   static final InviteDeepLinkService instance = InviteDeepLinkService._();
@@ -12,15 +12,19 @@ class InviteDeepLinkService extends ChangeNotifier {
   static const scheme = 'stway';
   static const companionHost = 'companhia';
   static const juntosHost = 'juntos';
+  static const roomHost = 'sala';
 
   final _appLinks = AppLinks();
   StreamSubscription<Uri>? _sub;
 
   String? _pendingCompanionCode;
+  String? _pendingRoomCode;
   bool _wantJuntosTab = false;
   bool _wantCompanhiaTab = false;
+  bool _wantGruposTab = false;
 
   String? get pendingCompanionCode => _pendingCompanionCode;
+  String? get pendingRoomCode => _pendingRoomCode;
 
   /// Link tocável no WhatsApp / QR — convite.
   static String companionUri(String code) =>
@@ -33,6 +37,16 @@ class InviteDeepLinkService extends ChangeNotifier {
   /// Hosting: `admin/public/abrir/juntos/` → Firebase Hosting.
   static const juntosHttpsUrl =
       'https://trilha-biblia.web.app/abrir/juntos/';
+
+  /// Página que a câmera abre e redireciona para [roomUri].
+  /// Hosting: `site/abrir/sala/` → stway-app.web.app.
+  static const roomHttpsBase = 'https://stway-app.web.app/abrir/sala';
+
+  static String roomUri(String code) =>
+      '$scheme://$roomHost/${code.trim().toUpperCase()}';
+
+  static String roomHttpsUrl(String code) =>
+      '$roomHttpsBase?c=${Uri.encodeQueryComponent(code.trim().toUpperCase())}';
 
   /// Bloco padrão pro fim das mensagens de Animar.
   static String openAppFooter() {
@@ -68,6 +82,44 @@ $juntosHttpsUrl
     return _normalizeCode(text);
   }
 
+  /// Código de grupo em `stway://sala/CODIGO` ou `https://…/abrir/sala?c=CODIGO`.
+  static String? extractRoomCode(String? raw) {
+    if (raw == null || raw.trim().isEmpty) return null;
+    final uri = Uri.tryParse(raw.trim());
+    if (uri == null) return null;
+
+    if (uri.scheme == scheme) {
+      final host = uri.host.toLowerCase();
+      if (host == roomHost || host == 'grupo' || host == 'room') {
+        return _firstPathCode(uri) ??
+            _normalizeCode(uri.queryParameters['c'] ?? uri.queryParameters['code']);
+      }
+      final segs = uri.pathSegments.where((s) => s.isNotEmpty).toList();
+      if (segs.length >= 2 &&
+          (segs.first.toLowerCase() == roomHost ||
+              segs.first.toLowerCase() == 'grupo')) {
+        return _normalizeCode(segs[1]);
+      }
+      return null;
+    }
+
+    if (uri.scheme == 'https' || uri.scheme == 'http') {
+      final segs = uri.pathSegments.where((s) => s.isNotEmpty).toList();
+      final salaIndex = segs.indexWhere((s) => s.toLowerCase() == roomHost);
+      if (salaIndex < 0) return null;
+      final query = uri.queryParameters['c'] ?? uri.queryParameters['code'];
+      if (query != null && query.isNotEmpty) return _normalizeCode(query);
+      if (salaIndex + 1 < segs.length) return _normalizeCode(segs[salaIndex + 1]);
+    }
+    return null;
+  }
+
+  static String? _firstPathCode(Uri uri) {
+    final segs = uri.pathSegments.where((s) => s.isNotEmpty).toList();
+    if (segs.isEmpty) return null;
+    return _normalizeCode(segs.first);
+  }
+
   static String? _normalizeCode(String? raw) {
     if (raw == null) return null;
     final match = RegExp(r'[A-Z0-9]{4,8}', caseSensitive: false)
@@ -89,6 +141,11 @@ $juntosHttpsUrl
   }
 
   void _ingestUri(Uri uri) {
+    final roomCode = extractRoomCode(uri.toString());
+    if (roomCode != null) {
+      offerRoomCode(roomCode);
+      return;
+    }
     if (uri.scheme != scheme) return;
     final host = uri.host.toLowerCase();
     // stway://juntos  ou  stway:///juntos
@@ -111,6 +168,16 @@ $juntosHttpsUrl
     offerCompanionCode(code);
   }
 
+  void offerRoomCode(String code) {
+    final normalized = _normalizeCode(code);
+    if (normalized == null) return;
+    _pendingRoomCode = normalized;
+    _wantJuntosTab = true;
+    _wantGruposTab = true;
+    _wantCompanhiaTab = false;
+    notifyListeners();
+  }
+
   void offerCompanionCode(String code) {
     final normalized = _normalizeCode(code);
     if (normalized == null) return;
@@ -127,11 +194,25 @@ $juntosHttpsUrl
     return true;
   }
 
+  /// LeagueScreen consome o pedido de ir em Grupos.
+  bool takeWantGruposTab() {
+    if (!_wantGruposTab) return false;
+    _wantGruposTab = false;
+    return true;
+  }
+
   /// LeagueScreen consome o pedido de ir em Companhia.
   bool takeWantCompanhiaTab() {
     if (!_wantCompanhiaTab) return false;
     _wantCompanhiaTab = false;
     return true;
+  }
+
+  /// LeagueScreen consome o código de grupo pendente (uma vez).
+  String? takePendingRoomCode() {
+    final code = _pendingRoomCode;
+    _pendingRoomCode = null;
+    return code;
   }
 
   /// LeagueScreen consome o código pendente (uma vez).

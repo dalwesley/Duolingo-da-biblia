@@ -117,10 +117,8 @@ document.querySelectorAll('[data-kinetic]').forEach((el) => {
 
 (function intro() {
   const stages = ['s1', 's2', 's3', 's4'];
-  // Sem o versículo, a luz e o título entram logo — não fica tela preta.
-  const times = document.querySelector('.genesis')
-    ? [180, 1700, 2750, 3600]
-    : [80, 80, 280, 700];
+  // s1 versículo · s2 "Haja luz" · s3 luz no céu · s4 versículo sai, título entra
+  const times = [180, 1700, 2750, 3900];
   const skipEvents = ['wheel', 'touchmove', 'keydown'];
   const replay = document.querySelector('.replay-intro');
   let timers = [];
@@ -133,22 +131,11 @@ document.querySelectorAll('[data-kinetic]').forEach((el) => {
     skipEvents.forEach((type) => window.removeEventListener(type, finish));
   }
 
-  // Durante a abertura o versículo fica no centro exato da tela; depois sobe ao lugar dele.
-  function centerGenesis() {
-    const genesis = document.querySelector('.genesis');
-    if (!genesis) return;
-    genesis.style.setProperty('--shift', '0px');
-    const rect = genesis.getBoundingClientRect();
-    const shift = window.innerHeight / 2 - (rect.top + rect.height / 2);
-    genesis.style.setProperty('--shift', `${Math.round(shift)}px`);
-  }
-
   function play() {
     timers.forEach(clearTimeout);
     // Volta ao escuro sem animar a saída, depois roda a linha do tempo do zero.
     root.classList.add('intro-reset', 'intro');
     root.classList.remove(...stages);
-    centerGenesis();
     void root.offsetHeight;
     root.classList.remove('intro-reset');
     timers = stages.map((stage, i) => setTimeout(() => root.classList.add(stage), times[i]));

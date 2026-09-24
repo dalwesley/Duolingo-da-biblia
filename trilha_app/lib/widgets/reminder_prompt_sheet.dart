@@ -62,6 +62,14 @@ class _ReminderPromptSheetState extends State<_ReminderPromptSheet> {
   int _hour = 7;
 
   @override
+  void initState() {
+    super.initState();
+    // Já vem com o horário escolhido no onboarding.
+    final chosen = context.read<ProgressService>().settings.reminderHour;
+    if (_hours.any((h) => h.hour == chosen)) _hour = chosen;
+  }
+
+  @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final bottom = MediaQuery.paddingOf(context).bottom;
@@ -197,9 +205,7 @@ class _HourChip extends StatelessWidget {
                 style: AppTypography.label(
                   size: 10,
                   letterSpacing: 0.8,
-                  color: selected
-                      ? AppColors.inkOnAccent
-                      : a.textMuted(0.7),
+                  color: selected ? AppColors.inkOnAccent : a.textMuted(0.7),
                 ),
               ),
               const SizedBox(height: 4),

@@ -225,6 +225,7 @@ class CompanionService extends ChangeNotifier {
       weeklySteps: progress.weeklySteps,
       walkedToday: progress.walkedToday,
       completedFirstMission: progress.completedMissions.isNotEmpty,
+      walkDates: progress.playDates,
     );
     await refresh();
     final rewarded = <String>[];

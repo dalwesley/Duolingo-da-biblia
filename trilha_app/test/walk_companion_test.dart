@@ -203,6 +203,59 @@ void main() {
       expect(WalkCompanion.weekTogetherBonusSteps, 50);
     });
 
+    test('paints half when one walks and full when both do', () {
+      final wednesday = DateTime(2026, 9, 16);
+      final c = WalkCompanion(
+        code: 'ABCD',
+        displayName: 'Regina',
+        sharedDays: 1,
+        lastSharedDate: '2026-09-15',
+        iWalkedToday: true,
+        theyWalkedToday: false,
+        awaitingPartner: false,
+        isHost: true,
+        theyLastWalkDate: '2026-09-14',
+        myWalkDates: const ['2026-09-16'],
+        theirWalkDates: const ['2026-09-14'],
+      );
+
+      final monday = c.presenceOn(DateTime(2026, 9, 14), now: wednesday);
+      expect(monday.me, isFalse);
+      expect(monday.them, isTrue);
+      expect(monday.walkers, 1);
+
+      final tuesday = c.presenceOn(DateTime(2026, 9, 15), now: wednesday);
+      expect(tuesday.both, isTrue);
+
+      final today = c.presenceOn(wednesday, now: wednesday);
+      expect(today.me, isTrue);
+      expect(today.them, isFalse);
+
+      final thursday = c.presenceOn(DateTime(2026, 9, 17), now: wednesday);
+      expect(thursday.walkers, 0);
+
+      expect(c.bothWalkedThisWeek(now: wednesday), 1);
+    });
+
+    test('local play dates fill my half before the cloud list arrives', () {
+      final thursday = DateTime(2026, 9, 24);
+      final c = _base(
+        iWalked: false,
+        theyWalked: false,
+        theyLastWalk: '2026-09-22',
+        sharedDays: 0,
+        lastShared: null,
+      );
+      final mine = c.presenceOn(
+        DateTime(2026, 9, 22),
+        now: thursday,
+        alsoMine: const ['2026-09-22'],
+      );
+      expect(mine.both, isTrue);
+      final today = c.presenceOn(thursday, now: thursday);
+      expect(today.walkers, 0);
+    });
+
     test('awaiting partner never covers the week', () {
       final c = _base(
         theyWalked: true,

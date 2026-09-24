@@ -138,7 +138,11 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
   void _openJuntosIfInvitePending() {
     final links = InviteDeepLinkService.instance;
     final openTab = links.takeWantJuntosTab();
-    if (!openTab && links.pendingCompanionCode == null) return;
+    if (!openTab &&
+        links.pendingCompanionCode == null &&
+        links.pendingRoomCode == null) {
+      return;
+    }
     setState(() {
       _index = 3;
       _frost.value = 0;
