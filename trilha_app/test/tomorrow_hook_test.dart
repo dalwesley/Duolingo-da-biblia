@@ -207,7 +207,7 @@ void main() {
     );
     expect(hook, isNotNull);
     expect(hook!.hasEcho, isTrue);
-    expect(hook.kicker, 'HOJE VOCÊ VIU');
+    expect(hook.kicker, 'Hoje você viu');
     expect(hook.trailer, contains('história acabou'));
     expect(hook.trailer, isNot(contains('semente')));
     expect(hook.promiseLine, 'Amanhã: Consequências');
@@ -254,7 +254,7 @@ void main() {
     expect(hook!.trailSlug, 'recomeco');
     expect(hook.title, 'Consequências');
     expect(hook.hasEcho, isTrue);
-    expect(hook.kicker, 'HOJE VOCÊ VIU');
+    expect(hook.kicker, 'Hoje você viu');
     expect(hook.trailer, contains('história acabou'));
     expect(hook.title, isNot(contains('ansiedade')));
   });
@@ -266,7 +266,7 @@ void main() {
       justFinishedSlug: 'imagem',
     );
     expect(hook!.hasEcho, isFalse);
-    expect(hook.kicker, 'AMANHÃ');
+    expect(hook.kicker, 'Amanhã');
     expect(hook.trailer, contains('pergunta'));
   });
 

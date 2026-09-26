@@ -221,7 +221,7 @@ class WalkCompanion {
     if (waitingOnThem) {
       final delay = delayCopy;
       if (delay != null) return delay.statusLine;
-      return 'Você já deu o passo — anime $displayName';
+      return 'Você já deu o passo — acene para $displayName';
     }
     if (waitingOnMe) return '$displayName já caminhou — sua vez';
     final delay = delayCopy;
@@ -256,11 +256,11 @@ class WalkCompanion {
       return CompanionDelayCopy(
         daysAway: away,
         tier: CompanionDelayTier.fresh,
-        headline: 'Ficando pra trás',
+        headline: 'Ficando para trás',
         statusLine: away == 1
             ? 'Você já deu o passo — $them ainda não apareceu'
             : 'Você já deu o passo — $them está ${away}d atrás',
-        insight: 'Está ficando pra trás na nossa caminhada',
+        insight: 'Está ficando para trás na nossa caminhada',
         shareCardLine: away == 1
             ? '1 dia pra trás na caminhada'
             : '$away dias pra trás na caminhada',
@@ -301,7 +301,7 @@ ${InviteDeepLinkService.openAppFooter()}
       tier: CompanionDelayTier.lost,
       headline: 'Te perdi na multidão',
       statusLine: 'Te perdi na multidão — $away dias sem $them',
-      insight: 'Mas dá pra retomar nossa caminhada',
+      insight: 'Mas dá para retomar nossa caminhada',
       shareCardLine: '$away dias sumido na multidão',
       shareBody:
           '''

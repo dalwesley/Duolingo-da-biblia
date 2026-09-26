@@ -14,10 +14,7 @@ class BibleBookIntroCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final intro = BibleBookIntros.of(
-      book.abbrev,
-      bookName: book.name,
-    );
+    final intro = BibleBookIntros.of(book.abbrev, bookName: book.name);
     if (intro == null) return const SizedBox.shrink();
 
     final a = Appearance.of(context);
@@ -33,11 +30,7 @@ class BibleBookIntroCard extends StatelessWidget {
         children: [
           Text(
             intro.title,
-            style: AppTypography.display(
-              size: 22,
-              height: 1.15,
-              color: a.text,
-            ),
+            style: AppTypography.display(size: 20, height: 1.15, color: a.text),
           ),
           const SizedBox(height: AppSpace.sm),
           Container(
@@ -45,28 +38,29 @@ class BibleBookIntroCard extends StatelessWidget {
             height: 3,
             decoration: BoxDecoration(
               color: AppColors.cedar,
-              borderRadius: BorderRadius.circular(2),
+              borderRadius: BorderRadius.circular(AppRadii.hair),
             ),
           ),
           const SizedBox(height: AppSpace.md),
           Text(
             intro.summary,
-            style: AppTypography.body(
-              size: 15,
-              height: 1.55,
-              weight: FontWeight.w600,
-              color: a.text.withValues(alpha: 0.9),
-            ),
+            style: AppTypography.body(size: 14, height: 1.55, color: a.text),
           ),
           const SizedBox(height: AppSpace.lg),
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Expanded(child: _Meta(label: 'Quem', value: who)),
+              Expanded(
+                child: _Meta(label: 'Quem', value: who),
+              ),
               const SizedBox(width: AppSpace.md),
-              Expanded(child: _Meta(label: 'Quando', value: intro.when)),
+              Expanded(
+                child: _Meta(label: 'Quando', value: intro.when),
+              ),
               const SizedBox(width: AppSpace.md),
-              Expanded(child: _Meta(label: 'Para quem', value: intro.audience)),
+              Expanded(
+                child: _Meta(label: 'Para quem', value: intro.audience),
+              ),
             ],
           ),
         ],
@@ -87,14 +81,7 @@ class _Meta extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          label.toUpperCase(),
-          style: AppTypography.label(
-            size: 9,
-            letterSpacing: 1.1,
-            color: AppColors.cedar,
-          ),
-        ),
+        SectionLabel(label, color: AppColors.cedar),
         const SizedBox(height: 4),
         Text(
           value,

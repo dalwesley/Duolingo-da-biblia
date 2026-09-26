@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:share_plus/share_plus.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import 'act_feel.dart';
 import 'cinematic_icon.dart';
+import 'ui_primitives.dart';
 
 /// Compartilhar a sequência — funciona mesmo com streak 0.
 class ShareStreakButton extends StatelessWidget {
@@ -23,26 +24,28 @@ class ShareStreakButton extends StatelessWidget {
   });
 
   Future<void> _share() async {
-    HapticFeedback.lightImpact();
     final name = userName.trim().isEmpty ? '' : '\n— $userName';
     final String body;
     if (streak > 0) {
       final days = streak == 1 ? '1 dia' : '$streak dias';
-      body = '''
+      body =
+          '''
 🔥 $days no Stway!
 
-Estou aprendendo a Bíblia em missões curtas — $steps passos até agora.$name
+Estou aprendendo a Bíblia em cenas curtas — $steps passos até agora.$name
 
 Baixe o Stway e venha junto.
 ''';
     } else if (steps > 0) {
-      body = '''
+      body =
+          '''
 🔥 Estou aprendendo a Bíblia no Stway — $steps passos até agora.$name
 
 Baixe o Stway e venha junto.
 ''';
     } else {
-      body = '''
+      body =
+          '''
 🔥 Comecei a aprender a Bíblia com o Stway.$name
 
 Baixe o Stway e venha junto.
@@ -57,32 +60,11 @@ Baixe o Stway e venha junto.
   Widget build(BuildContext context) {
     if (asLink) {
       final a = Appearance.of(context);
-      return TextButton(
-        onPressed: _share,
-        style: TextButton.styleFrom(
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
-          minimumSize: Size.zero,
-          tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-        ),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            CinematicIcon(
-              glyph: CinematicGlyph.share,
-              size: 15,
-              accent: a.textMuted(0.7),
-              framed: false,
-            ),
-            const SizedBox(width: 6),
-            Text(
-              'Compartilhar',
-              style: AppTypography.body(
-                weight: FontWeight.w700,
-                color: a.textMuted(0.7),
-              ),
-            ),
-          ],
-        ),
+      return TextCta(
+        label: 'Compartilhar',
+        leading: CinematicGlyph.share,
+        color: a.textSecondary,
+        onTap: _share,
       );
     }
 
@@ -93,7 +75,10 @@ Baixe o Stway e venha junto.
         child: Material(
           color: Colors.transparent,
           child: InkWell(
-            onTap: _share,
+            onTap: () {
+              ActHaptics.light();
+              _share();
+            },
             borderRadius: BorderRadius.circular(AppRadii.sm),
             child: SizedBox(
               width: 36,
@@ -101,7 +86,7 @@ Baixe o Stway e venha junto.
               child: CinematicIcon(
                 glyph: CinematicGlyph.share,
                 size: 18,
-                accent: a.text.withValues(alpha: 0.72),
+                accent: a.textSecondary,
                 framed: false,
               ),
             ),
@@ -110,8 +95,12 @@ Baixe o Stway e venha junto.
       );
     }
 
+    final a = Appearance.of(context);
     return GestureDetector(
-      onTap: _share,
+      onTap: () {
+        ActHaptics.light();
+        _share();
+      },
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
         decoration: BoxDecoration(
@@ -131,11 +120,7 @@ Baixe o Stway e venha junto.
             const SizedBox(width: AppSpace.sm),
             Text(
               'Compartilhar',
-              style: AppTypography.title(
-                size: 12,
-                weight: FontWeight.w800,
-                color: Colors.white.withValues(alpha: 0.9),
-              ),
+              style: AppTypography.title(size: 12, color: a.text),
             ),
           ],
         ),

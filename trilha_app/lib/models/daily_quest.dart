@@ -25,7 +25,7 @@ class DailyQuestDefs {
   static const List<DailyQuest> core = [
     DailyQuest(
       id: 'mission',
-      title: 'Um passo',
+      title: 'Uma cena',
       subtitle: 'Complete uma cena',
       target: 1,
       stepsReward: 15,
@@ -59,7 +59,7 @@ class WeeklyQuestDefs {
   static const List<DailyQuest> all = [
     DailyQuest(
       id: 'w_missions',
-      title: 'Cinco passos',
+      title: 'Cinco cenas',
       subtitle: 'Complete 5 cenas nesta semana',
       target: 5,
       stepsReward: 80,

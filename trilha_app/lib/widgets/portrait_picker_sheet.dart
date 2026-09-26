@@ -1,23 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
 import '../services/backend_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
-import 'immersive_background.dart';
+import 'act_feel.dart';
+import 'app_sheet.dart';
+import 'ui_primitives.dart';
 import 'user_avatar.dart';
 
 /// Escolha do retrato — foto, letra ou peregrino ilustrado.
 Future<void> showPortraitPickerSheet(BuildContext context) {
-  HapticFeedback.selectionClick();
+  ActHaptics.tap();
   context.read<BackendService>().ensureAccountPhoto(allowPrompt: true);
-  return showModalBottomSheet<void>(
-    context: context,
-    backgroundColor: Colors.transparent,
-    barrierColor: Colors.black.withValues(alpha: 0.72),
-    isScrollControlled: true,
+  return showAppSheet<void>(
+    context,
     builder: (_) => const _PortraitPickerSheet(),
   );
 }
@@ -27,81 +25,55 @@ class _PortraitPickerSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
     final progress = context.watch<ProgressService>();
     final backend = context.watch<BackendService>();
     final selected = progress.settings.portraitStyle;
     final hasPhoto = PortraitFace.isUsablePhotoUrl(backend.userPhotoUrl);
-    final bottom = MediaQuery.paddingOf(context).bottom;
     final name = progress.userName.trim().isEmpty
         ? 'Peregrino'
         : progress.userName.trim();
 
-    return Padding(
-      padding: EdgeInsets.fromLTRB(16, 0, 16, 12 + bottom),
-      child: GlassCard(
-        elevated: true,
-        padding: const EdgeInsets.fromLTRB(20, 18, 20, 20),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Center(
-              child: Container(
-                width: 36,
-                height: 4,
-                decoration: BoxDecoration(
-                  color: a.textMuted(0.28),
-                  borderRadius: BorderRadius.circular(99),
-                ),
-              ),
-            ),
-            const SizedBox(height: 16),
-            Text(
-              'RETRATO',
-              textAlign: TextAlign.center,
-              style: AppTypography.label(
-                size: 11,
-                letterSpacing: 1.8,
-                color: AppColors.accent,
-              ),
-            ),
-            const SizedBox(height: 6),
-            Text(
-              'Como você aparece no caminho',
-              textAlign: TextAlign.center,
-              style: AppTypography.title(size: 18, color: a.text),
-            ),
-            const SizedBox(height: 22),
-            Row(
-              children: [
-                for (var i = 0; i < PortraitStyle.values.length; i++) ...[
-                  if (i > 0) const SizedBox(width: 10),
-                  Expanded(
-                    child: _PortraitChoice(
-                      style: PortraitStyle.values[i],
-                      name: name,
-                      photoUrl: backend.userPhotoUrl,
-                      seed: backend.uid,
-                      selected: selected == PortraitStyle.values[i],
-                      available: PortraitStyle.values[i] != PortraitStyle.photo ||
-                          hasPhoto,
-                      onTap: () {
-                        HapticFeedback.selectionClick();
-                        progress.updateSettings(
-                          progress.settings.copyWith(
-                            portraitStyle: PortraitStyle.values[i],
-                          ),
-                        );
-                        Navigator.of(context).pop();
-                      },
-                    ),
+    return AppSheetPanel(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          const AppSheetHeader(
+            eyebrow: 'Retrato',
+            eyebrowColor: AppColors.accent,
+            title: 'Como você aparece no caminho',
+            center: true,
+          ),
+          const SizedBox(height: 22),
+          Row(
+            children: [
+              for (var i = 0; i < PortraitStyle.values.length; i++) ...[
+                if (i > 0) const SizedBox(width: 10),
+                Expanded(
+                  child: _PortraitChoice(
+                    style: PortraitStyle.values[i],
+                    name: name,
+                    photoUrl: backend.userPhotoUrl,
+                    seed: backend.uid,
+                    selected: selected == PortraitStyle.values[i],
+                    available:
+                        PortraitStyle.values[i] != PortraitStyle.photo ||
+                        hasPhoto,
+                    onTap: () {
+                      ActHaptics.tap();
+                      progress.updateSettings(
+                        progress.settings.copyWith(
+                          portraitStyle: PortraitStyle.values[i],
+                        ),
+                      );
+                      Navigator.of(context).pop();
+                    },
                   ),
-                ],
+                ),
               ],
-            ),
-          ],
-        ),
+            ],
+          ),
+        ],
       ),
     );
   }
@@ -178,7 +150,7 @@ class _PortraitChoice extends StatelessWidget {
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
               style: AppTypography.title(
-                size: 13,
+                size: 14,
                 color: selected ? AppColors.accent : a.text,
               ),
             ),
@@ -191,7 +163,7 @@ class _PortraitChoice extends StatelessWidget {
               style: AppTypography.body(
                 size: 11,
                 height: 1.25,
-                color: a.textMuted(selected ? 0.7 : 0.5),
+                color: selected ? a.textSecondary : a.textFaint,
               ),
             ),
           ],

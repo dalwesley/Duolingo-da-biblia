@@ -29,13 +29,13 @@ extension CaravanProfileSectionX on CaravanProfileSection {
         CaravanProfileSection.daysAsLeader =>
           'Quantos dias ficou em 1º no ranking geral',
         CaravanProfileSection.lastMission =>
-          'Última missão concluída com nome da cena',
+          'Nome da última cena concluída',
         CaravanProfileSection.accuracy =>
           'Percentual de acertos nas cenas',
         CaravanProfileSection.bible => 'Livros e capítulos lidos',
         CaravanProfileSection.trails =>
           'Progresso nas trilhas e selos adquiridos',
-        CaravanProfileSection.medals => 'Medalhas e conquistas da jornada',
+        CaravanProfileSection.medals => 'Medalhas da jornada',
       };
 }
 

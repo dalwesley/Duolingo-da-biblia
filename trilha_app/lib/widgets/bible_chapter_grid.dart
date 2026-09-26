@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import 'act_feel.dart';
 import 'ui_primitives.dart';
 
 /// Grade de capítulos — 6 colunas, lido em ouro cheio.
@@ -35,7 +35,7 @@ class BibleChapterGrid extends StatelessWidget {
               size: size,
               read: isRead(chapter),
               onTap: () {
-                HapticFeedback.selectionClick();
+                ActHaptics.tap();
                 onPick(chapter);
               },
             );
@@ -92,13 +92,15 @@ class _ChapterDot extends StatelessWidget {
             child: Center(
               child: Text(
                 label,
-                style: AppTypography.title(
-                  size: fontSize,
-                  color: read ? AppColors.inkOnAccent : a.text,
-                ).copyWith(
-                  fontFeatures: const [FontFeature.tabularFigures()],
-                  height: 1,
-                ),
+                style:
+                    AppTypography.title(
+                      size: fontSize,
+                      exact: true,
+                      color: read ? AppColors.inkOnAccent : a.text,
+                    ).copyWith(
+                      fontFeatures: const [FontFeature.tabularFigures()],
+                      height: 1,
+                    ),
               ),
             ),
           ),

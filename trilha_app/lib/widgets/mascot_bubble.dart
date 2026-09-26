@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
+import 'ui_primitives.dart';
 import 'trilha_mascot.dart';
 
 class MascotBubble extends StatelessWidget {
@@ -22,29 +23,26 @@ class MascotBubble extends StatelessWidget {
         TrilhaMascot(size: glowing ? 56 : 48, glowing: glowing),
         const SizedBox(width: 12),
         Expanded(
+          // Balão de fala: canto do mascote reto (a “cauda”), demais no
+          // raio de card — por isso não é GlassCard.
           child: Container(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
             decoration: BoxDecoration(
-              color: dark ? Colors.black.withValues(alpha: 0.35) : AppColors.card,
+              color: dark
+                  ? Colors.black.withValues(alpha: 0.35)
+                  : AppColors.card,
               borderRadius: const BorderRadius.only(
-                topLeft: Radius.circular(16),
-                topRight: Radius.circular(16),
-                bottomRight: Radius.circular(16),
+                topLeft: Radius.circular(AppMetrics.cardRadius),
+                topRight: Radius.circular(AppMetrics.cardRadius),
+                bottomRight: Radius.circular(AppMetrics.cardRadius),
               ),
               border: Border.all(
                 color: dark
-                    ? AppColors.accent.withValues(alpha: glowing ? 0.85 : 0.65)
+                    ? AppMetrics.accentBorder(alpha: glowing ? 0.85 : 0.65)
                     : Colors.black.withValues(alpha: 0.08),
+                width: AppMetrics.cardBorderWidth,
               ),
-              boxShadow: glowing
-                  ? [
-                      BoxShadow(
-                        color: Colors.black.withValues(alpha: 0.28),
-                        blurRadius: 8,
-                        offset: const Offset(0, 3),
-                      ),
-                    ]
-                  : null,
+              boxShadow: glowing ? AppMetrics.cardShadow(elevated: true) : null,
             ),
             child: Text(
               message,

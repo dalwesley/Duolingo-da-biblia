@@ -2,13 +2,15 @@ import 'dart:async';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../models/corner_challenge.dart';
 import 'analytics_service.dart';
 import 'backend_service.dart';
 import 'progress_service.dart';
 
-/// Desafio de cena na Caravana — uma esquina por pessoa por semana.
+/// Desafio na aba Juntos — duas pessoas, a mesma cena, até domingo.
+/// Um desafio aberto por pessoa.
 class CornerService extends ChangeNotifier {
   CornerService(this.backend);
 
@@ -20,7 +22,15 @@ class CornerService extends ChangeNotifier {
   bool _cloudSynced = false;
   bool _loaded = false;
 
+  // Chave antiga mantida: quem já viu a animação não vê de novo.
+  static const _acceptSeenKey = 'corner_duel_seen_v1';
+  final List<CornerChallenge> _acceptReveals = [];
+
   bool get isLoaded => _loaded;
+
+  /// Travessia que eu propus e o outro aceitou — animação uma vez só.
+  CornerChallenge? takeAcceptReveal() =>
+      _acceptReveals.isEmpty ? null : _acceptReveals.removeAt(0);
   bool get cloudSynced => _cloudSynced;
 
   void markCloudUnsynced() {
@@ -44,6 +54,16 @@ class CornerService extends ChangeNotifier {
     return CornerHomePick.of(mine, uid);
   }
 
+  /// Já houve um desafio (aberto ou encerrado). Antes disso o retângulo não aparece.
+  bool get hasChallenge {
+    final uid = _uid;
+    if (uid == null || uid.isEmpty) return false;
+    return !CornerScoreboard.of(mine, uid).isEmpty;
+  }
+
+  /// O par do retângulo. Só o desafio aberto — quem já fechou não volta para a foto.
+  CornerChallenge? get face => homeCard;
+
   CornerRecord get record {
     final uid = _uid;
     if (uid == null) return const CornerRecord.empty();
@@ -52,6 +72,9 @@ class CornerService extends ChangeNotifier {
 
   CornerChallenge? withPeer(String uid) {
     for (final c in mine) {
+      // Convite cancelado ou travessia de que eu saí liberam convidar de novo.
+      if (c.isCancelled && c.isWithdrawn) continue;
+      if (_uid != null && c.iLeft(_uid!)) continue;
       if (c.involves(uid) && (c.isOpen || c.bothDone || c.isThisWeek)) {
         return c;
       }
@@ -65,9 +88,12 @@ class CornerService extends ChangeNotifier {
     return CornerChallenge.authorizes(missionSlug, uid, mine);
   }
 
-  bool get hasOpenThisWeek {
+  /// Limite: 1 travessia por pessoa. [except] ignora o próprio convite ao aceitar.
+  bool isBusy({String? except}) {
+    final uid = _uid;
+    if (uid == null) return false;
     for (final c in mine) {
-      if (c.isOpen) return true;
+      if (c.id != except && c.occupies(uid)) return true;
     }
     return false;
   }
@@ -87,11 +113,10 @@ class CornerService extends ChangeNotifier {
           .collection('corners')
           .where('participantIds', arrayContains: uid)
           .get();
-      mine = [
-        for (final doc in snap.docs) _fromDoc(doc),
-      ];
+      mine = [for (final doc in snap.docs) _fromDoc(doc)];
       lastError = null;
       _cloudSynced = true;
+      await _collectAcceptReveals(uid);
     } catch (e) {
       debugPrint('CornerService.refresh: $e');
       lastError = null;
@@ -102,11 +127,36 @@ class CornerService extends ChangeNotifier {
     }
   }
 
+  Future<void> _collectAcceptReveals(String uid) async {
+    final accepted = [
+      for (final c in mine)
+        if (c.iAmChallenger(uid) &&
+            c.isThisWeek &&
+            c.status == CornerStatus.active)
+          c,
+    ];
+    if (accepted.isEmpty) return;
+    final prefs = await SharedPreferences.getInstance();
+    final seen = prefs.getStringList(_acceptSeenKey) ?? const <String>[];
+    final fresh = [
+      for (final c in accepted)
+        if (!seen.contains(c.id) && !_acceptReveals.any((r) => r.id == c.id)) c,
+    ];
+    if (fresh.isEmpty) return;
+    _acceptReveals.addAll(fresh);
+    final keep = [...seen, for (final c in fresh) c.id];
+    await prefs.setStringList(
+      _acceptSeenKey,
+      keep.length > 40 ? keep.sublist(keep.length - 40) : keep,
+    );
+  }
+
   Future<CornerChallenge?> propose({
     required String opponentId,
     required String opponentName,
     required String myName,
     required CornerProposal proposal,
+    String? opponentPhotoUrl,
   }) async {
     lastError = null;
     final uid = _uid;
@@ -120,7 +170,7 @@ class CornerService extends ChangeNotifier {
       notifyListeners();
       return null;
     }
-    if (hasOpenThisWeek && !CornerMatch.forceOpenForPreview) {
+    if (isBusy()) {
       lastError = CornerCopy.busyWeek;
       notifyListeners();
       return null;
@@ -131,8 +181,10 @@ class CornerService extends ChangeNotifier {
       await ref.set({
         'challengerId': uid,
         'challengerName': myName,
+        'challengerPhotoUrl': ?backend.userPhotoUrl,
         'opponentId': opponentId,
         'opponentName': opponentName,
+        'opponentPhotoUrl': ?opponentPhotoUrl,
         'participantIds': [uid, opponentId],
         'trailSlug': proposal.trailSlug,
         'trailTitle': proposal.trailTitle,
@@ -156,6 +208,8 @@ class CornerService extends ChangeNotifier {
         moduleTitle: proposal.moduleTitle,
         weekStart: weekStart,
         status: CornerStatus.pending,
+        challengerPhotoUrl: backend.userPhotoUrl,
+        opponentPhotoUrl: opponentPhotoUrl,
       );
       mine = [...mine, created];
       notifyListeners();
@@ -175,7 +229,18 @@ class CornerService extends ChangeNotifier {
   }
 
   Future<bool> accept(String id) async {
-    return _setStatus(id, status: CornerStatus.active, event: 'corner_accept');
+    if (isBusy(except: id)) {
+      lastError = CornerCopy.busyAccept;
+      notifyListeners();
+      return false;
+    }
+    // Quem aceita grava o próprio retrato — o outro lado passa a vê-lo.
+    return _setStatus(
+      id,
+      status: CornerStatus.active,
+      event: 'corner_accept',
+      extra: {'opponentPhotoUrl': ?backend.userPhotoUrl},
+    );
   }
 
   Future<bool> decline(String id) async {
@@ -186,10 +251,67 @@ class CornerService extends ChangeNotifier {
     );
   }
 
+  /// Quem convidou cancela o convite, ou qualquer um sai da travessia.
+  ///
+  /// Sair não encerra para o outro: ele segue e ainda pode chegar. Só fecha
+  /// se o outro já chegou ou também saiu. Status lido na transação.
+  Future<bool> withdraw(String id) async {
+    lastError = null;
+    final uid = _uid;
+    if (!backend.isActive || uid == null) return false;
+    final ref = FirebaseFirestore.instance.doc('corners/$id');
+    try {
+      final next = await FirebaseFirestore.instance.runTransaction((tx) async {
+        final snap = await tx.get(ref);
+        final c = _fromDoc(snap);
+        final CornerStatus next;
+        if (c.status == CornerStatus.pending) {
+          next = CornerStatus.declined;
+        } else if (c.status == CornerStatus.active) {
+          if (c.theyLeft(uid)) {
+            next = CornerStatus.declined;
+          } else if (c.theyDone(uid)) {
+            next = CornerStatus.settled;
+          } else {
+            next = CornerStatus.active;
+          }
+        } else {
+          throw StateError('corner $id já fechado');
+        }
+        tx.set(ref, {
+          'status': next.name,
+          if (!c.isWithdrawn) 'withdrawnBy': uid,
+          'updatedAt': FieldValue.serverTimestamp(),
+        }, SetOptions(merge: true));
+        return next;
+      });
+      mine = [
+        for (final c in mine)
+          if (c.id == id)
+            c.copyWith(status: next, withdrawnBy: c.isWithdrawn ? null : uid)
+          else
+            c,
+      ];
+      notifyListeners();
+      unawaited(
+        AnalyticsService.instance.logEvent('corner_withdraw', {
+          'status': next.name,
+        }),
+      );
+      return true;
+    } catch (e) {
+      debugPrint('CornerService.withdraw: $e');
+      lastError = CornerCopy.actionFailed;
+      await refresh();
+      return false;
+    }
+  }
+
   Future<bool> _setStatus(
     String id, {
     required CornerStatus status,
     required String event,
+    Map<String, Object> extra = const {},
   }) async {
     lastError = null;
     final uid = _uid;
@@ -198,29 +320,14 @@ class CornerService extends ChangeNotifier {
       await FirebaseFirestore.instance.doc('corners/$id').set({
         'status': status.name,
         'updatedAt': FieldValue.serverTimestamp(),
+        ...extra,
       }, SetOptions(merge: true));
       mine = [
         for (final c in mine)
           if (c.id == id)
-            CornerChallenge(
-              id: c.id,
-              challengerId: c.challengerId,
-              challengerName: c.challengerName,
-              opponentId: c.opponentId,
-              opponentName: c.opponentName,
-              trailSlug: c.trailSlug,
-              trailTitle: c.trailTitle,
-              missionSlug: c.missionSlug,
-              missionTitle: c.missionTitle,
-              moduleTitle: c.moduleTitle,
-              weekStart: c.weekStart,
+            c.copyWith(
               status: status,
-              challengerDoneAt: c.challengerDoneAt,
-              opponentDoneAt: c.opponentDoneAt,
-              challengerCorrect: c.challengerCorrect,
-              challengerTotal: c.challengerTotal,
-              opponentCorrect: c.opponentCorrect,
-              opponentTotal: c.opponentTotal,
+              opponentPhotoUrl: extra['opponentPhotoUrl'] as String?,
             )
           else
             c,
@@ -230,7 +337,7 @@ class CornerService extends ChangeNotifier {
       return true;
     } catch (e) {
       debugPrint('CornerService.$event: $e');
-      lastError = CornerCopy.sendFailed;
+      lastError = CornerCopy.actionFailed;
       notifyListeners();
       return false;
     }
@@ -246,10 +353,7 @@ class CornerService extends ChangeNotifier {
     if (!backend.isActive || uid == null) return;
     CornerChallenge? match;
     for (final c in mine) {
-      if (c.status == CornerStatus.active &&
-          c.isThisWeek &&
-          c.missionSlug == missionSlug &&
-          !c.iDone(uid)) {
+      if (c.opensFor(uid, missionSlug)) {
         match = c;
         break;
       }
@@ -257,10 +361,7 @@ class CornerService extends ChangeNotifier {
     if (match == null) {
       await refresh();
       for (final c in mine) {
-        if (c.status == CornerStatus.active &&
-            c.isThisWeek &&
-            c.missionSlug == missionSlug &&
-            !c.iDone(uid)) {
+        if (c.opensFor(uid, missionSlug)) {
           match = c;
           break;
         }
@@ -270,9 +371,9 @@ class CornerService extends ChangeNotifier {
 
     final iAmChallenger = match.iAmChallenger(uid);
     final now = DateTime.now().toIso8601String();
-    final theyAlready = match.theyDone(uid);
-    final nextStatus =
-        theyAlready ? CornerStatus.settled : CornerStatus.active;
+    // Fecha quando o outro já se resolveu (chegou ou saiu).
+    final theyAlready = match.theyDone(uid) || match.theyLeft(uid);
+    final nextStatus = theyAlready ? CornerStatus.settled : CornerStatus.active;
     final payload = <String, dynamic>{
       'updatedAt': FieldValue.serverTimestamp(),
       'status': nextStatus.name,
@@ -306,14 +407,15 @@ class CornerService extends ChangeNotifier {
               moduleTitle: c.moduleTitle,
               weekStart: c.weekStart,
               status: nextStatus,
-              challengerDoneAt:
-                  iAmChallenger ? now : c.challengerDoneAt,
+              challengerDoneAt: iAmChallenger ? now : c.challengerDoneAt,
               opponentDoneAt: iAmChallenger ? c.opponentDoneAt : now,
-              challengerCorrect:
-                  iAmChallenger ? correct : c.challengerCorrect,
+              challengerCorrect: iAmChallenger ? correct : c.challengerCorrect,
               challengerTotal: iAmChallenger ? total : c.challengerTotal,
               opponentCorrect: iAmChallenger ? c.opponentCorrect : correct,
               opponentTotal: iAmChallenger ? c.opponentTotal : total,
+              challengerPhotoUrl: c.challengerPhotoUrl,
+              opponentPhotoUrl: c.opponentPhotoUrl,
+              withdrawnBy: c.withdrawnBy,
             )
           else
             c,
@@ -352,6 +454,9 @@ class CornerService extends ChangeNotifier {
       challengerTotal: (d['challengerTotal'] as num?)?.toInt(),
       opponentCorrect: (d['opponentCorrect'] as num?)?.toInt(),
       opponentTotal: (d['opponentTotal'] as num?)?.toInt(),
+      withdrawnBy: d['withdrawnBy'] as String?,
+      challengerPhotoUrl: d['challengerPhotoUrl'] as String?,
+      opponentPhotoUrl: d['opponentPhotoUrl'] as String?,
     );
   }
 

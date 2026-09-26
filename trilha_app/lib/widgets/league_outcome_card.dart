@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import '../services/backend_service.dart';
 import '../services/league_service.dart';
@@ -7,6 +6,8 @@ import '../services/progress_service.dart';
 import '../services/room_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import 'act_feel.dart';
+import 'app_sheet.dart';
 import 'cinematic_icon.dart';
 import 'confetti_overlay.dart';
 import 'immersive_background.dart';
@@ -46,7 +47,7 @@ class LeagueOutcomeCard extends StatelessWidget {
         children: [
           CinematicIcon(
             glyph: demoted ? CinematicGlyph.demote : CinematicGlyph.rise,
-            size: 40,
+            size: AppMetrics.leadingIcon,
             accent: AppColors.accent,
             glowing: false,
           ),
@@ -57,11 +58,7 @@ class LeagueOutcomeCard extends StatelessWidget {
               children: [
                 Text(
                   title,
-                  style: AppTypography.title(
-                    size: 15,
-                    weight: FontWeight.w900,
-                    color: a.text,
-                  ),
+                  style: AppTypography.title(size: 16, color: a.text),
                 ),
                 const SizedBox(height: 3),
                 Text(
@@ -70,7 +67,7 @@ class LeagueOutcomeCard extends StatelessWidget {
                     size: 12,
                     height: 1.35,
                     weight: FontWeight.w600,
-                    color: a.textMuted(0.72),
+                    color: a.textSecondary,
                   ),
                 ),
               ],
@@ -78,7 +75,7 @@ class LeagueOutcomeCard extends StatelessWidget {
           ),
           const SizedBox(width: 8),
           _CollectButton(
-            label: 'Ok',
+            label: 'Entendi',
             onDarkGold: false,
             onTap: () => _claim(context, league, outcome),
           ),
@@ -92,8 +89,6 @@ class LeagueOutcomeCard extends StatelessWidget {
     LeagueService league,
     LeagueOutcome outcome,
   ) async {
-    HapticFeedback.mediumImpact();
-
     if (outcome == LeagueOutcome.promoted) {
       await showLeaguePromotionSheet(
         context,
@@ -174,7 +169,7 @@ class _PromotionBannerState extends State<_PromotionBanner>
             borderRadius: BorderRadius.circular(AppRadii.lg),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withValues(alpha: 0.35),
+                color: AppColors.dropShadow,
                 blurRadius: 16,
                 offset: const Offset(0, 8),
               ),
@@ -207,9 +202,7 @@ class _PromotionBannerState extends State<_PromotionBanner>
                     ),
                   ),
                 ),
-                const Positioned.fill(
-                  child: ConfettiOverlay(active: true),
-                ),
+                const Positioned.fill(child: ConfettiOverlay(active: true)),
                 Padding(
                   padding: const EdgeInsets.fromLTRB(14, 14, 12, 14),
                   child: Row(
@@ -223,8 +216,7 @@ class _PromotionBannerState extends State<_PromotionBanner>
                             Text(
                               'Você avançou de caravana',
                               style: AppTypography.title(
-                                size: 15,
-                                weight: FontWeight.w900,
+                                size: 16,
                                 color: AppColors.inkOnAccent,
                               ),
                             ),
@@ -235,7 +227,9 @@ class _PromotionBannerState extends State<_PromotionBanner>
                                 size: 12,
                                 height: 1.35,
                                 weight: FontWeight.w700,
-                                color: AppColors.medalInk.withValues(alpha: 0.88),
+                                color: AppColors.medalInk.withValues(
+                                  alpha: 0.88,
+                                ),
                               ),
                             ),
                             const SizedBox(height: 8),
@@ -285,13 +279,10 @@ class _PromotionMedal extends StatelessWidget {
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 color: AppColors.inkOnAccent,
-                border: Border.all(
-                  color: AppColors.accentSoft,
-                  width: 1.75,
-                ),
+                border: Border.all(color: AppColors.accentSoft, width: 1.75),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withValues(alpha: 0.35),
+                    color: AppColors.dropShadow,
                     blurRadius: 6,
                     offset: const Offset(0, 3),
                   ),
@@ -308,27 +299,10 @@ class _PromotionMedal extends StatelessWidget {
               Positioned(
                 right: -2,
                 bottom: -2,
-                child: Container(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 5,
-                    vertical: 2,
-                  ),
-                  decoration: BoxDecoration(
-                    color: AppColors.accentSoft,
-                    borderRadius: BorderRadius.circular(AppRadii.pill),
-                    border: Border.all(
-                      color: AppColors.inkOnAccent,
-                      width: 1.4,
-                    ),
-                  ),
-                  child: Text(
-                    '$rankº',
-                    style: AppTypography.label(
-                      size: 9,
-                      letterSpacing: 0.2,
-                      color: AppColors.inkOnAccent,
-                    ),
-                  ),
+                child: SoftBadge(
+                  text: '$rankº',
+                  accent: AppColors.accentSoft,
+                  solid: true,
                 ),
               ),
           ],
@@ -345,20 +319,10 @@ class _BonusChip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-      decoration: BoxDecoration(
-        color: AppColors.inkOnAccent.withValues(alpha: 0.88),
-        borderRadius: BorderRadius.circular(AppRadii.pill),
-      ),
-      child: Text(
-        '+$steps passos',
-        style: AppTypography.label(
-          size: 10,
-          letterSpacing: 0.6,
-          color: AppColors.accent,
-        ),
-      ),
+    return SoftBadge(
+      text: '+$steps passos',
+      accent: AppColors.inkOnAccent,
+      textColor: AppColors.inkOnAccent,
     );
   }
 }
@@ -376,36 +340,16 @@ class _CollectButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    if (onDarkGold) {
-      return Material(
-        color: AppColors.inkOnAccent,
-        borderRadius: BorderRadius.circular(AppRadii.pill),
-        child: InkWell(
-          onTap: onTap,
-          borderRadius: BorderRadius.circular(AppRadii.pill),
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-            child: Text(
-              label.toUpperCase(),
-              style: AppTypography.cta(size: 12, color: AppColors.accent),
-            ),
-          ),
+    // Sobre o banner dourado, o fantasma escuro faz contraste; no card
+    // neutro, o mesmo CTA secundário.
+    return IntrinsicWidth(
+      child: GhostCta(
+        label: label,
+        padding: EdgeInsets.symmetric(
+          horizontal: onDarkGold ? 14 : 12,
+          vertical: 10,
         ),
-      );
-    }
-
-    return Material(
-      color: Colors.transparent,
-      child: InkWell(
         onTap: onTap,
-        borderRadius: BorderRadius.circular(AppRadii.sm),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
-          child: Text(
-            label.toUpperCase(),
-            style: AppTypography.cta(size: 13, color: AppColors.accent),
-          ),
-        ),
       ),
     );
   }
@@ -418,11 +362,9 @@ Future<void> showLeaguePromotionSheet(
   required int rank,
   required int bonusSteps,
 }) {
-  HapticFeedback.heavyImpact();
-  return showModalBottomSheet<void>(
-    context: context,
-    backgroundColor: Colors.transparent,
-    isScrollControlled: true,
+  ActHaptics.success();
+  return showAppSheet<void>(
+    context,
     builder: (ctx) => _LeaguePromotionSheet(
       tierLabel: tierLabel,
       rank: rank,
@@ -444,25 +386,16 @@ class _LeaguePromotionSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final bottom = MediaQuery.viewPaddingOf(context).bottom;
-
-    return Container(
-      margin: const EdgeInsets.fromLTRB(
+    final a = Appearance.of(context);
+    return AppSheetPanel(
+      tint: AppColors.accent,
+      padding: const EdgeInsets.fromLTRB(
+        AppSpace.xxl,
         AppSpace.md,
-        0,
-        AppSpace.md,
-        AppSpace.md,
+        AppSpace.xxl,
+        AppSpace.screen,
       ),
-      decoration: BoxDecoration(
-        color: AppColors.night,
-        borderRadius: BorderRadius.circular(AppRadii.xl),
-        border: Border.all(
-          color: AppColors.accent.withValues(alpha: 0.7),
-        ),
-        boxShadow: AppMetrics.cardShadow(elevated: true),
-      ),
-      clipBehavior: Clip.antiAlias,
-      child: Stack(
+      background: Stack(
         children: [
           const Positioned.fill(
             child: ConfettiOverlay(active: true, cinematic: true),
@@ -483,89 +416,58 @@ class _LeaguePromotionSheet extends StatelessWidget {
               ),
             ),
           ),
-          Padding(
-            padding: EdgeInsets.fromLTRB(
-              AppSpace.xxl,
-              AppSpace.screen + 8,
-              AppSpace.xxl,
-              AppSpace.screen + bottom,
+        ],
+      ),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          const SizedBox(height: AppSpace.md),
+          const Center(
+            child: CinematicIcon(
+              glyph: CinematicGlyph.crown,
+              size: 56,
+              accent: AppColors.accent,
+              glowing: true,
             ),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Center(
-                  child: Container(
-                    width: 40,
-                    height: 4,
-                    decoration: BoxDecoration(
-                      color: Colors.white.withValues(alpha: 0.2),
-                      borderRadius: BorderRadius.circular(AppRadii.pill),
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 28),
-                const Center(
-                  child: CinematicIcon(
-                    glyph: CinematicGlyph.crown,
-                    size: 56,
-                    accent: AppColors.accent,
-                    glowing: true,
-                  ),
-                ),
-                const SizedBox(height: 20),
-                Text(
-                  'Caravana avançou',
-                  textAlign: TextAlign.center,
-                  style: AppTypography.display(
-                    size: 28,
-                    weight: FontWeight.w800,
-                    color: Colors.white,
-                  ),
-                ),
-                const SizedBox(height: 10),
-                Text(
-                  rank > 0
-                      ? 'Ficou em $rankº · agora caminha na\n$tierLabel'
-                      : 'Agora você caminha na\n$tierLabel',
-                  textAlign: TextAlign.center,
-                  style: AppTypography.body(
-                    size: 14,
-                    height: 1.45,
-                    color: Colors.white.withValues(alpha: 0.72),
-                  ),
-                ),
-                const SizedBox(height: 16),
-                Container(
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: AppSpace.lg,
-                    vertical: AppSpace.md,
-                  ),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(AppRadii.md),
-                    color: AppColors.accent.withValues(alpha: 0.14),
-                    border: Border.all(
-                      color: AppColors.accent.withValues(alpha: 0.45),
-                    ),
-                  ),
-                  child: Text(
-                    '+$bonusSteps passos de encorajamento',
-                    textAlign: TextAlign.center,
-                    style: AppTypography.title(
-                      size: 14,
-                      color: AppColors.accent,
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 28),
-                CopperCta(
-                  label: 'Continuar',
-                  onTap: () => Navigator.pop(context),
-                  trailing: null,
-                  dense: true,
-                ),
-              ],
+          ),
+          const SizedBox(height: 20),
+          const AppSheetHeader(
+            title: 'Caravana avançou',
+            center: true,
+            celebration: true,
+          ),
+          const SizedBox(height: 10),
+          Text(
+            rank > 0
+                ? 'Ficou em $rankº · agora caminha na\n$tierLabel'
+                : 'Agora você caminha na\n$tierLabel',
+            textAlign: TextAlign.center,
+            style: AppTypography.body(
+              size: 14,
+              height: 1.45,
+              color: a.textSecondary,
             ),
+          ),
+          const SizedBox(height: 16),
+          InsetPanel(
+            borderColor: AppColors.accent.withValues(alpha: 0.45),
+            padding: const EdgeInsets.symmetric(
+              horizontal: AppSpace.lg,
+              vertical: AppSpace.md,
+            ),
+            child: Text(
+              '+$bonusSteps passos de encorajamento',
+              textAlign: TextAlign.center,
+              style: AppTypography.title(size: 14, color: AppColors.accent),
+            ),
+          ),
+          const SizedBox(height: 28),
+          CopperCta(
+            label: 'Continuar',
+            onTap: () => Navigator.pop(context),
+            trailing: null,
+            dense: true,
           ),
         ],
       ),

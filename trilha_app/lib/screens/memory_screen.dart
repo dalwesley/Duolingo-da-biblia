@@ -10,6 +10,7 @@ import '../services/sound_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
+import '../widgets/act_feel.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/top_bar.dart';
@@ -137,7 +138,6 @@ class _MemoryScreenState extends State<MemoryScreen>
 
   void _revealCard() {
     if (_revealed || _flip.isAnimating) return;
-    HapticFeedback.lightImpact();
     _pulse.stop();
     setState(() => _revealed = true);
     _flip.forward(from: 0);
@@ -145,7 +145,6 @@ class _MemoryScreenState extends State<MemoryScreen>
 
   Future<void> _answer({required bool knew}) async {
     final progress = context.read<ProgressService>();
-    HapticFeedback.selectionClick();
     await progress.recordMemoryReview(_current.id, knew: knew);
     if (knew) {
       SoundService.instance.playCorrect();
@@ -205,11 +204,7 @@ class _MemoryScreenState extends State<MemoryScreen>
                 ),
                 Expanded(
                   child: _loading
-                      ? const Center(
-                          child: CircularProgressIndicator(
-                            color: AppColors.accent,
-                          ),
-                        )
+                      ? const AppSpinner()
                       : _finished
                       ? _DonePane(
                           known: _known,
@@ -320,20 +315,16 @@ class _ProgressHeader extends StatelessWidget {
       children: [
         Row(
           children: [
-            Text(
-              'CARTA',
-              style: AppTypography.label(
-                size: 10,
-                color: AppColors.accent.withValues(alpha: 0.85),
-                letterSpacing: 1.6,
-              ),
+            SectionLabel(
+              'Carta',
+              color: AppColors.accent.withValues(alpha: 0.85),
             ),
             const Spacer(),
             Text(
               '${index + 1}  ·  $total',
               style: AppTypography.label(
                 size: 12,
-                color: Appearance.of(context).textMuted(0.55),
+                color: Appearance.of(context).textFaint,
                 letterSpacing: 0.6,
               ),
             ),
@@ -368,7 +359,12 @@ class _FlashCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: revealed ? null : onReveal,
+      onTap: revealed
+          ? null
+          : () {
+              ActHaptics.light();
+              onReveal();
+            },
       behavior: HitTestBehavior.opaque,
       child: AnimatedBuilder(
         animation: Listenable.merge([pulse, flip]),
@@ -394,9 +390,7 @@ class _FlashCard extends StatelessWidget {
                   borderRadius: BorderRadius.circular(AppMetrics.heroRadius),
                   border: Border.all(
                     color: AppMetrics.accentBorder(
-                      alpha: showFront
-                          ? 0.55 + (0.12 * breathe)
-                          : 0.75,
+                      alpha: showFront ? 0.55 + (0.12 * breathe) : 0.75,
                     ),
                     width: 1.2,
                   ),
@@ -492,15 +486,7 @@ class _CardFront extends StatelessWidget {
           glowing: false,
         ),
         const SizedBox(height: AppSpace.lg),
-        Text(
-          reference.toUpperCase(),
-          textAlign: TextAlign.center,
-          style: AppTypography.label(
-            size: 13,
-            letterSpacing: 1.8,
-            color: AppColors.accent,
-          ),
-        ),
+        SectionLabel(reference, size: 13, color: AppColors.accent),
         const SizedBox(height: AppSpace.md),
         const _GoldRule(),
         const SizedBox(height: AppSpace.xl),
@@ -545,15 +531,7 @@ class _CardBack extends StatelessWidget {
           glowing: true,
         ),
         const SizedBox(height: AppSpace.lg),
-        Text(
-          reference.toUpperCase(),
-          textAlign: TextAlign.center,
-          style: AppTypography.label(
-            size: 13,
-            letterSpacing: 1.8,
-            color: AppColors.accent,
-          ),
-        ),
+        SectionLabel(reference, size: 13, color: AppColors.accent),
         const SizedBox(height: AppSpace.md),
         const _GoldRule(),
         const SizedBox(height: AppSpace.xl),
@@ -692,13 +670,13 @@ class _DonePane extends StatelessWidget {
           Text(
             'Sessão concluída',
             textAlign: TextAlign.center,
-            style: AppTypography.display(size: 32),
+            style: AppTypography.display(size: 28, color: a.text),
           ),
           const SizedBox(height: AppSpace.md),
           Text(
             '$known firmes · $learning em progresso',
             textAlign: TextAlign.center,
-            style: AppTypography.body(color: a.textMuted(0.65)),
+            style: AppTypography.body(color: a.textSecondary),
           ),
           const SizedBox(height: AppSpace.xxl),
           CopperCta(
@@ -707,13 +685,7 @@ class _DonePane extends StatelessWidget {
             onTap: onAgain,
           ),
           const SizedBox(height: AppSpace.sm),
-          TextButton(
-            onPressed: onClose,
-            child: Text(
-              'Fechar',
-              style: AppTypography.body(color: a.textMuted(0.7)),
-            ),
-          ),
+          TextCta(label: 'Fechar', onTap: onClose),
         ],
       ),
     );

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import '../data/memory_verses.dart';
 import '../data/mission_study.dart';
 import '../models/trail.dart';
@@ -8,6 +7,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/liturgical_calendar.dart';
 import '../utils/palco_verse.dart';
+import 'act_feel.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
 
@@ -64,8 +64,9 @@ class _HomeWordCardState extends State<HomeWordCard> {
     final async = await _asyncSnap(widget.mission);
     if (!mounted || async == null) return;
     final current = _snap;
-    final upgrade = current == null ||
-        (async.label == 'Nesta lição' && current.label != 'Nesta lição');
+    final upgrade =
+        current == null ||
+        (async.label == 'Nesta cena' && current.label != 'Nesta cena');
     if (upgrade) {
       setState(() => _snap = async);
     }
@@ -91,7 +92,7 @@ class _HomeWordCardState extends State<HomeWordCard> {
         return _WordSnap(
           reference: study.passageRef,
           text: PalcoVerse.swapDivineName(study.passageText.trim()),
-          label: 'Nesta lição',
+          label: 'Nesta cena',
         );
       }
       for (final q in mission.questions) {
@@ -102,7 +103,7 @@ class _HomeWordCardState extends State<HomeWordCard> {
           return _WordSnap(
             reference: ref,
             text: text.trim(),
-            label: 'Nesta lição',
+            label: 'Nesta cena',
           );
         }
       }
@@ -136,12 +137,9 @@ class _HomeWordCardState extends State<HomeWordCard> {
     final day = DateTime.now()
         .difference(DateTime(DateTime.now().year, 1, 1))
         .inDays;
-    final v = MemoryVerseCatalog.curated[day % MemoryVerseCatalog.curated.length];
-    return _WordSnap(
-      reference: v.reference,
-      text: v.text,
-      label: 'Palavra',
-    );
+    final v =
+        MemoryVerseCatalog.curated[day % MemoryVerseCatalog.curated.length];
+    return _WordSnap(reference: v.reference, text: v.text, label: 'Palavra');
   }
 
   static Future<_WordSnap?> _asyncSnap(Mission? mission) async {
@@ -150,7 +148,7 @@ class _HomeWordCardState extends State<HomeWordCard> {
       if (mission != null)
         for (final q in mission.questions)
           if (q.verseRef != null && q.verseRef!.trim().isNotEmpty)
-            (ref: q.verseRef!, label: 'Nesta lição'),
+            (ref: q.verseRef!, label: 'Nesta cena'),
       (
         ref: moment.focusRef,
         label: moment.season == LiturgicalSeason.ordinary
@@ -165,11 +163,7 @@ class _HomeWordCardState extends State<HomeWordCard> {
         translationId: BibleService.palcoTranslationId,
       );
       if (text == null || text.trim().isEmpty) continue;
-      return _WordSnap(
-        reference: c.ref,
-        text: text.trim(),
-        label: c.label,
-      );
+      return _WordSnap(reference: c.ref, text: text.trim(), label: c.label);
     }
     return null;
   }
@@ -184,68 +178,71 @@ class _HomeWordCardState extends State<HomeWordCard> {
     }
     if (snap == null) return const SizedBox.shrink();
 
-    return GestureDetector(
-      onTap: () {
-        HapticFeedback.selectionClick();
-        widget.onOpen?.call(snap.reference);
-      },
-      child: Container(
-        width: double.infinity,
-        padding: const EdgeInsets.fromLTRB(18, 16, 18, 16),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(AppMetrics.cardRadius),
-          color: a.cardFill.withValues(alpha: 0.72),
-          border: Border.all(
-            color: HomeTrailChrome.outlineOf(context) ??
-                a.cardBorder.withValues(alpha: 0.7),
+    return Semantics(
+      button: widget.onOpen != null,
+      label: 'Ler ${snap.reference}',
+      child: GestureDetector(
+        behavior: HitTestBehavior.opaque,
+        onTap: () {
+          ActHaptics.tap();
+          widget.onOpen?.call(snap.reference);
+        },
+        child: Container(
+          width: double.infinity,
+          padding: AppMetrics.cardPadding,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(AppMetrics.cardRadius),
+            // Fundo sólido: o verso não disputa com a arte da trilha atrás.
+            color: a.cardFill.withValues(alpha: 0.94),
+            border: Border.all(
+              color:
+                  HomeTrailChrome.outlineOf(context) ??
+                  a.cardBorder.withValues(alpha: 0.7),
+            ),
           ),
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              children: [
-                CinematicIcon(
-                  glyph: CinematicGlyph.book,
-                  size: 18,
-                  accent: AppColors.cedar,
-                  framed: false,
-                  glowing: false,
-                ),
-                const SizedBox(width: 8),
-                Expanded(
-                  child: Text(
-                    snap.label.toUpperCase(),
-                    style: AppTypography.label(
-                      size: 10,
-                      letterSpacing: 1.4,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  CinematicIcon(
+                    glyph: CinematicGlyph.book,
+                    size: 18,
+                    accent: AppColors.cedar,
+                    framed: false,
+                    glowing: false,
+                  ),
+                  const SizedBox(width: 8),
+                  Expanded(
+                    child: SectionLabel(
+                      snap.label,
                       color: AppColors.cedar.withValues(alpha: 0.95),
                     ),
                   ),
-                ),
-                Text(
-                  snap.reference,
-                  style: AppTypography.body(
-                    size: 12,
-                    weight: FontWeight.w700,
-                    color: a.textMuted(0.55),
+                  Text(
+                    snap.reference,
+                    style: AppTypography.body(
+                      size: 12,
+                      weight: FontWeight.w700,
+                      color: a.textFaint,
+                    ),
                   ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 10),
-            Text(
-              '“${_clip(snap.text)}”',
-              maxLines: 3,
-              overflow: TextOverflow.ellipsis,
-              style: AppTypography.verse(
-                size: 18,
-                height: 1.35,
-                weight: FontWeight.w600,
-                color: a.text.withValues(alpha: 0.92),
+                ],
               ),
-            ),
-          ],
+              const SizedBox(height: 10),
+              Text(
+                '“${_clip(snap.text)}”',
+                maxLines: 3,
+                overflow: TextOverflow.ellipsis,
+                style: AppTypography.verse(
+                  size: 18,
+                  height: 1.35,
+                  weight: FontWeight.w600,
+                  color: a.text,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );

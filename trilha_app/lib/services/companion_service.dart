@@ -150,7 +150,7 @@ class CompanionService extends ChangeNotifier {
   Future<WalkCompanion?> createInvite(ProgressService progress) async {
     lastError = null;
     if (!canAdd) {
-      lastError = 'Você já tem uma dupla.';
+      lastError = 'Você já tem uma companhia.';
       notifyListeners();
       return null;
     }
@@ -182,7 +182,7 @@ class CompanionService extends ChangeNotifier {
   Future<bool> joinWithCode(String rawCode, ProgressService progress) async {
     lastError = null;
     if (!canAdd) {
-      lastError = 'Você já tem uma dupla.';
+      lastError = 'Você já tem uma companhia.';
       notifyListeners();
       return false;
     }

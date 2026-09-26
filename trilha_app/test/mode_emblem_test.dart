@@ -8,15 +8,14 @@ import 'package:trilha_app/widgets/journey_path.dart';
 import 'package:trilha_app/widgets/mode_emblem.dart';
 
 void main() {
-  testWidgets('cleared observation emblem is labeled concluída', (tester) async {
+  testWidgets('cleared observation emblem is labeled concluída', (
+    tester,
+  ) async {
     await tester.pumpWidget(
       MaterialApp(
         theme: AppTheme.dark,
         home: const Scaffold(
-          body: ModeEmblem(
-            difficulty: TrailDifficulty.semente,
-            cleared: true,
-          ),
+          body: ModeEmblem(difficulty: TrailDifficulty.semente, cleared: true),
         ),
       ),
     );
@@ -48,7 +47,9 @@ void main() {
     expect(find.bySemanticsLabel('Interpretação bloqueada'), findsOneWidget);
   });
 
-  testWidgets('completed journey station shows the mode emblem', (tester) async {
+  testWidgets('completed journey station shows the mode emblem', (
+    tester,
+  ) async {
     final trail = Trail(
       slug: 'genesis-1-11',
       title: 'Gênesis 1-11',
@@ -219,8 +220,8 @@ void main() {
 
     expect(find.text('Modo Observação'), findsOneWidget);
     expect(find.text('Observação · 7 de 23 passos'), findsOneWidget);
-    expect(find.text('AGORA'), findsOneWidget);
-    expect(find.text('CONTINUAR →'), findsOneWidget);
+    expect(find.text('Agora'), findsOneWidget);
+    expect(find.text('Continuar'), findsOneWidget);
     expect(find.text('você está aqui'), findsNothing);
   });
 

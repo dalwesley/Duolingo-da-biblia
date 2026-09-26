@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
 import '../models/pilgrim_medals.dart';
@@ -9,6 +8,8 @@ import '../services/progress_service.dart';
 import '../services/recognition_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import 'act_feel.dart';
+import 'app_sheet.dart';
 import 'cinematic_icon.dart';
 import 'medal_cinematic_widgets.dart';
 import 'ui_primitives.dart';
@@ -38,7 +39,7 @@ class RecognizeHeartButton extends StatelessWidget {
       kind: kind,
       subjectKey: subjectKey,
     );
-    HapticFeedback.lightImpact();
+    ActHaptics.light();
     final status = await service.give(
       toUid: uid,
       fromName: name,
@@ -47,50 +48,39 @@ class RecognizeHeartButton extends StatelessWidget {
     );
     if (!context.mounted) return;
     final title = switch (status) {
-      RecognitionGiveStatus.given => kind == RecognitionKind.medal
-          ? 'Medalha reconhecida'
-          : 'Caminhada reconhecida',
+      RecognitionGiveStatus.given =>
+        kind == RecognitionKind.medal
+            ? 'Medalha reconhecida'
+            : 'Caminhada reconhecida',
       RecognitionGiveStatus.removed => 'Reconhecimento retirado',
-      RecognitionGiveStatus.already => kind == RecognitionKind.medal
-          ? 'Medalha reconhecida'
-          : 'Caminhada reconhecida',
-      RecognitionGiveStatus.failed => wasGiven
-          ? 'Não foi possível retirar'
-          : 'Não foi possível reconhecer',
+      RecognitionGiveStatus.already =>
+        kind == RecognitionKind.medal
+            ? 'Medalha reconhecida'
+            : 'Caminhada reconhecida',
+      RecognitionGiveStatus.failed =>
+        wasGiven ? 'Não foi possível retirar' : 'Não foi possível reconhecer',
     };
-    await showDialog<void>(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        backgroundColor: AppColors.nightElevated,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(AppRadii.lg),
-          side: BorderSide(color: AppColors.clay.withValues(alpha: 0.45)),
+    await showAppDialog<void>(
+      context,
+      builder: (ctx) => AppDialog(
+        title: title,
+        content: Center(
+          child: CinematicIcon(
+            glyph: CinematicGlyph.heart,
+            size: 36,
+            framed: false,
+            accent: status == RecognitionGiveStatus.failed
+                ? Appearance.of(context).textFaint
+                : AppColors.clay,
+          ),
         ),
-        title: Text(
-          title,
-          textAlign: TextAlign.center,
-          style: AppTypography.title(size: 18, color: Colors.white),
-        ),
-        content: Icon(
-          status == RecognitionGiveStatus.failed
-              ? Icons.favorite_border_rounded
-              : Icons.favorite_rounded,
-          size: 36,
-          color: status == RecognitionGiveStatus.failed
-              ? Colors.white.withValues(alpha: 0.35)
-              : AppColors.clay,
-        ),
-        actionsAlignment: MainAxisAlignment.center,
         actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(ctx),
-            child: Text(
-              'Ok',
-              style: AppTypography.body(
-                weight: FontWeight.w800,
-                color: AppColors.accent,
-              ),
-            ),
+          CopperCta(
+            label: 'Entendi',
+            dense: true,
+            trailing: null,
+            showGlow: false,
+            onTap: () => Navigator.pop(ctx),
           ),
         ],
       ),
@@ -138,12 +128,15 @@ class RecognizeHeartButton extends StatelessWidget {
                     : Colors.white.withValues(alpha: 0.2),
               ),
             ),
-            child: Icon(
-              given ? Icons.favorite_rounded : Icons.favorite_border_rounded,
-              size: 22,
-              color: given
-                  ? AppColors.clay
-                  : Colors.white.withValues(alpha: 0.55),
+            child: Center(
+              child: CinematicIcon(
+                glyph: CinematicGlyph.heart,
+                size: 22,
+                framed: false,
+                accent: given
+                    ? AppColors.clay
+                    : Appearance.of(context).textFaint,
+              ),
             ),
           ),
         ),
@@ -181,7 +174,7 @@ class RecognizeCompanionWalk extends StatelessWidget {
             'Reconhecer a caminhada',
             style: AppTypography.body(
               size: 13,
-              color: Appearance.of(context).textMuted(0.55),
+              color: Appearance.of(context).textFaint,
             ),
           ),
           const Spacer(),
@@ -242,8 +235,8 @@ class _RecognizeTargetButtonState extends State<RecognizeTargetButton> {
       _busy = false;
       _error = status == RecognitionGiveStatus.failed
           ? (wasGiven
-              ? 'Não foi possível retirar'
-              : 'Não foi possível reconhecer')
+                ? 'Não foi possível retirar'
+                : 'Não foi possível reconhecer')
           : null;
     });
   }
@@ -273,7 +266,7 @@ class _RecognizeTargetButtonState extends State<RecognizeTargetButton> {
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 12,
-              color: Colors.white.withValues(alpha: 0.45),
+              color: Appearance.of(context).textFaint,
             ),
           ),
         ],
@@ -300,12 +293,9 @@ Future<void> showRecognizeMedalSheet(
   required String name,
   required List<RecognizableMedal> medals,
 }) {
-  HapticFeedback.selectionClick();
-  return showModalBottomSheet<void>(
-    context: context,
-    backgroundColor: Colors.transparent,
-    barrierColor: Colors.black.withValues(alpha: 0.72),
-    isScrollControlled: true,
+  ActHaptics.tap();
+  return showAppSheet<void>(
+    context,
     builder: (ctx) =>
         _MedalRecognizeSheet(toUid: toUid, name: name, medals: medals),
   );
@@ -351,96 +341,56 @@ class _MedalRecognizeSheetState extends State<_MedalRecognizeSheet> {
       _busyId = null;
       _error = status == RecognitionGiveStatus.failed
           ? (wasGiven
-              ? 'Não foi possível retirar'
-              : 'Não foi possível reconhecer')
+                ? 'Não foi possível retirar'
+                : 'Não foi possível reconhecer')
           : null;
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    final bottom = MediaQuery.viewPaddingOf(context).bottom;
     final maxHeight = MediaQuery.sizeOf(context).height * 0.78;
     final who = recognitionFromName(widget.name);
 
-    return ConstrainedBox(
-      constraints: BoxConstraints(maxHeight: maxHeight),
-      child: DecoratedBox(
-        decoration: const BoxDecoration(
-          borderRadius: BorderRadius.vertical(top: Radius.circular(28)),
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              AppColors.nightElevated,
-              AppColors.night,
-              AppColors.nightMid,
-            ],
-          ),
-        ),
-        child: Padding(
-          padding: EdgeInsets.fromLTRB(20, 12, 20, bottom + 16),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Center(
-                child: Container(
-                  width: 48,
-                  height: 4,
-                  decoration: BoxDecoration(
-                    color: Colors.white.withValues(alpha: 0.24),
-                    borderRadius: BorderRadius.circular(AppRadii.pill),
-                  ),
-                ),
-              ),
-              const SizedBox(height: 16),
+    return AppSheetPanel(
+      child: ConstrainedBox(
+        constraints: BoxConstraints(maxHeight: maxHeight),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            AppSheetHeader(title: who, subtitle: 'Qual medalha você viu?'),
+            if (_error != null) ...[
+              const SizedBox(height: 10),
               Text(
-                who,
-                style: AppTypography.title(size: 20, color: Colors.white),
-              ),
-              const SizedBox(height: 2),
-              Text(
-                'Qual medalha você viu?',
+                _error!,
                 style: AppTypography.body(
                   size: 13,
-                  color: Colors.white.withValues(alpha: 0.55),
-                ),
-              ),
-              if (_error != null) ...[
-                const SizedBox(height: 10),
-                Text(
-                  _error!,
-                  style: AppTypography.body(
-                    size: 13,
-                    weight: FontWeight.w700,
-                    color: AppColors.clay,
-                  ),
-                ),
-              ],
-              const SizedBox(height: 16),
-              Flexible(
-                child: ListView(
-                  shrinkWrap: true,
-                  children: [
-                    for (final medal in widget.medals)
-                      _MedalRecognizeRow(
-                        medal: medal,
-                        given: context.watch<RecognitionService>().alreadyGiven(
-                          toUid: widget.toUid,
-                          kind: RecognitionKind.medal,
-                          subjectKey: medal.id,
-                        ),
-                        busy: _busyId == medal.id,
-                        onTap: _busyId != null
-                            ? null
-                            : () => _recognize(medal),
-                      ),
-                  ],
+                  weight: FontWeight.w700,
+                  color: AppColors.clay,
                 ),
               ),
             ],
-          ),
+            const SizedBox(height: 16),
+            Flexible(
+              child: ListView(
+                shrinkWrap: true,
+                children: [
+                  for (final medal in widget.medals)
+                    _MedalRecognizeRow(
+                      medal: medal,
+                      given: context.watch<RecognitionService>().alreadyGiven(
+                        toUid: widget.toUid,
+                        kind: RecognitionKind.medal,
+                        subjectKey: medal.id,
+                      ),
+                      busy: _busyId == medal.id,
+                      onTap: _busyId != null ? null : () => _recognize(medal),
+                    ),
+                ],
+              ),
+            ),
+          ],
         ),
       ),
     );
@@ -479,83 +429,54 @@ class _MedalRecognizeRow extends StatelessWidget {
       child: Material(
         color: Colors.transparent,
         child: InkWell(
-          borderRadius: BorderRadius.circular(22),
+          borderRadius: BorderRadius.circular(AppRadii.md),
           onTap: onTap,
-          child: Ink(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(22),
-              color: AppColors.nightElevated,
-              border: Border.all(
-                color: accent.withValues(alpha: given ? 0.7 : 0.45),
-                width: 1.5,
-              ),
-              boxShadow: [
-                BoxShadow(
-                  color: accent.withValues(alpha: 0.12),
-                  blurRadius: 16,
-                  offset: const Offset(0, 6),
-                ),
-              ],
-            ),
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(14, 14, 16, 14),
-              child: Row(
-                children: [
-                  MedalVaultMedallion(tile: tile, size: 64),
-                  const SizedBox(width: 14),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        if (family.isNotEmpty && family != medal.title) ...[
-                          Text(
-                            family.toUpperCase(),
-                            maxLines: 1,
-                            overflow: TextOverflow.ellipsis,
-                            style: AppTypography.label(
-                              size: 10,
-                              letterSpacing: 1.1,
-                              color: accent.withValues(alpha: 0.85),
-                            ),
-                          ),
-                          const SizedBox(height: 4),
-                        ],
-                        Text(
-                          medal.title,
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                          style: AppTypography.title(
-                            size: 17,
-                            color: Colors.white.withValues(
-                              alpha: given ? 0.75 : 1,
-                            ),
-                          ),
+          child: InsetPanel(
+            borderColor: accent.withValues(alpha: given ? 0.7 : 0.45),
+            padding: const EdgeInsets.fromLTRB(14, 14, 16, 14),
+            child: Row(
+              children: [
+                MedalVaultMedallion(tile: tile, size: 64),
+                const SizedBox(width: 14),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      if (family.isNotEmpty && family != medal.title) ...[
+                        SectionLabel(
+                          family,
+                          size: 10,
+                          color: accent.withValues(alpha: 0.85),
                         ),
                         const SizedBox(height: 4),
-                        Text(
-                          given
-                              ? 'Reconhecida · toque para retirar'
-                              : tierLabel(medal.tier),
-                          style: AppTypography.body(
-                            size: 13,
-                            weight: FontWeight.w700,
-                            color: accent,
-                          ),
-                        ),
                       ],
-                    ),
-                  ),
-                  if (busy)
-                    const SizedBox(
-                      width: 18,
-                      height: 18,
-                      child: CircularProgressIndicator(
-                        strokeWidth: 2,
-                        color: AppColors.accent,
+                      Text(
+                        medal.title,
+                        maxLines: 2,
+                        overflow: TextOverflow.ellipsis,
+                        style: AppTypography.title(
+                          size: 16,
+                          color: given
+                              ? Appearance.of(context).textSecondary
+                              : Appearance.of(context).text,
+                        ),
                       ),
-                    ),
-                ],
-              ),
+                      const SizedBox(height: 4),
+                      Text(
+                        given
+                            ? 'Reconhecida · toque para retirar'
+                            : tierLabel(medal.tier),
+                        style: AppTypography.body(
+                          size: 13,
+                          weight: FontWeight.w700,
+                          color: accent,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                if (busy) const AppSpinner(inline: true),
+              ],
             ),
           ),
         ),
@@ -572,7 +493,7 @@ Future<RecognitionGiveStatus> giveRecognition(
 }) async {
   final service = context.read<RecognitionService>();
   final name = context.read<ProgressService>().userName;
-  HapticFeedback.lightImpact();
+  ActHaptics.light();
   final status = await service.give(
     toUid: toUid,
     fromName: name,

@@ -48,7 +48,7 @@ class PaywallScreen extends StatelessWidget {
                           ? 'Você já é Peregrino+'
                           : 'Vá além na trilha',
                       textAlign: TextAlign.center,
-                      style: AppTypography.display(size: 24, color: a.text),
+                      style: AppTypography.display(size: 28, color: a.text),
                     ),
                     const SizedBox(height: AppSpace.sm),
                     Text(
@@ -58,7 +58,7 @@ class PaywallScreen extends StatelessWidget {
                       textAlign: TextAlign.center,
                       style: AppTypography.body(
                         size: 14,
-                        color: a.textMuted(0.75),
+                        color: a.textSecondary,
                       ),
                     ),
                     const SizedBox(height: AppSpace.xl),
@@ -83,7 +83,7 @@ class PaywallScreen extends StatelessWidget {
                                     perk,
                                     style: AppTypography.body(
                                       size: 13,
-                                      color: a.textMuted(0.85),
+                                      color: a.textSecondary,
                                     ),
                                   ),
                                 ),
@@ -99,10 +99,7 @@ class PaywallScreen extends StatelessWidget {
                       Text(
                         'Assinatura ainda não disponível nesta versão.',
                         textAlign: TextAlign.center,
-                        style: AppTypography.body(
-                          size: 12,
-                          color: a.textMuted(0.55),
-                        ),
+                        style: AppTypography.body(size: 12, color: a.textFaint),
                       )
                     else if (!subscription.isPeregrinoPlus) ...[
                       for (final package in subscription.availablePackages) ...[
@@ -115,16 +112,12 @@ class PaywallScreen extends StatelessWidget {
                         ),
                         const SizedBox(height: 10),
                       ],
-                      TextButton(
-                        onPressed:
-                            subscription.loading ? null : () => subscription.restore(),
-                        child: Text(
-                          'Restaurar compra',
-                          style: AppTypography.body(
-                            weight: FontWeight.w700,
-                            color: a.textMuted(0.6),
-                          ),
-                        ),
+                      TextCta(
+                        label: 'Restaurar compra',
+                        onTap: subscription.loading
+                            ? null
+                            : () => subscription.restore(),
+                        color: a.textSecondary,
                       ),
                     ],
                     if (subscription.lastError != null) ...[
@@ -132,7 +125,10 @@ class PaywallScreen extends StatelessWidget {
                       Text(
                         subscription.lastError!,
                         textAlign: TextAlign.center,
-                        style: AppTypography.body(size: 12, color: AppColors.error),
+                        style: AppTypography.body(
+                          size: 12,
+                          color: AppColors.error,
+                        ),
                       ),
                     ],
                   ],

@@ -33,23 +33,22 @@ class UserAvatar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final border = borderColor ?? Colors.white.withValues(alpha: 0.18);
+    // Rosto ocupa o círculo inteiro; a borda é desenhada por cima (não
+    // empurra o rosto para dentro nem deixa folga escura em volta).
     final face = Container(
       width: radius * 2,
       height: radius * 2,
-      decoration: BoxDecoration(
-        shape: BoxShape.circle,
-        border: borderColor == Colors.transparent
-            ? null
-            : Border.all(color: border, width: 1.5),
-        boxShadow: [
-          BoxShadow(
-            color: Colors.black.withValues(alpha: 0.28),
-            blurRadius: 10,
-            offset: const Offset(0, 3),
-          ),
-        ],
-      ),
       clipBehavior: Clip.antiAlias,
+      decoration: const BoxDecoration(
+        shape: BoxShape.circle,
+        color: AppColors.nightLight,
+      ),
+      foregroundDecoration: borderColor == Colors.transparent
+          ? null
+          : BoxDecoration(
+              shape: BoxShape.circle,
+              border: Border.all(color: border, width: 1.5),
+            ),
       child: PortraitFace(
         name: name,
         photoUrl: photoUrl,

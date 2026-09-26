@@ -3,7 +3,6 @@ import 'dart:math' as math;
 import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import '../cinematic/cinematic_resolver.dart';
 import '../services/analytics_service.dart';
@@ -15,6 +14,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
 import '../utils/trail_visuals.dart';
+import '../widgets/act_feel.dart';
 import '../widgets/cinematic_backdrop.dart';
 import '../widgets/brand_trail.dart';
 import '../widgets/cinematic_icon.dart';
@@ -166,23 +166,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
     final base = _worldFor(beat);
     if (beat.index < _Beat.sky.index || beat == _Beat.rhythm) return base;
     // Só o céu (acima dos morros) muda; a arte STWAY fica igual.
-    // Mesmas cores do céu da Home ([DayPhaseHelper]).
-    final style = AppearanceStyle.resolve(_sky);
-    final sky = DayPhaseHelper.backgroundGradient(style.phase).colors;
-    return switch (style.look) {
-      AppearanceLook.morning => base.copyWith(
-        skyTop: sky[0],
-        skyLow: sky[1],
-        skyAmount: 1,
-      ),
-      AppearanceLook.afternoon => base.copyWith(
-        skyTop: sky[0],
-        skyLow: sky[2],
-        skyAmount: 1,
-        warmth: 1,
-      ),
-      AppearanceLook.night => base.copyWith(stars: 1),
-    };
+    return base.withSky(AppearanceStyle.resolve(_sky));
   }
 
   AppearanceMode get _chromeMode =>
@@ -190,7 +174,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
 
   void _pickSky(AppearanceMode mode) {
     if (mode == _sky) return;
-    HapticFeedback.selectionClick();
+    ActHaptics.tap();
     final shown = Curves.easeInOutCubic.transform(_world.value);
     setState(() {
       _fromWorld = TrailShot.lerp(_fromWorld, _toWorld, shown);
@@ -203,28 +187,28 @@ class _OnboardingScreenState extends State<OnboardingScreen>
 
   void _pickGoal(int goal) {
     if (goal == _dailyGoal) return;
-    HapticFeedback.selectionClick();
+    ActHaptics.tap();
     setState(() => _dailyGoal = goal);
     _logChoice('daily_goal', goal);
   }
 
   void _pickIntent(_Intent intent) {
     if (intent == _intent) return;
-    HapticFeedback.selectionClick();
+    ActHaptics.tap();
     setState(() => _intent = intent);
     _logChoice('intent', intent.name);
   }
 
   void _pickStreak(int goal) {
     if (goal == _streakGoal) return;
-    HapticFeedback.selectionClick();
+    ActHaptics.tap();
     setState(() => _streakGoal = goal);
     _logChoice('streak_goal', goal);
   }
 
   void _pickHour(int hour) {
     if (hour == _reminderHour) return;
-    HapticFeedback.selectionClick();
+    ActHaptics.tap();
     setState(() => _reminderHour = hour);
     _logChoice('reminder_hour', hour);
   }
@@ -314,12 +298,12 @@ class _OnboardingScreenState extends State<OnboardingScreen>
     if (_beat == _Beat.origin) {
       if (_scene.value < GenesisHero.flashAt) return;
       _landed = true;
-      HapticFeedback.heavyImpact();
+      ActHaptics.success();
       return;
     }
     if (_scene.value < 0.48) return;
     _landed = true;
-    HapticFeedback.selectionClick();
+    ActHaptics.tap();
   }
 
   Future<void> _goNext() async {
@@ -331,7 +315,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
 
     _transitioning = true;
     FocusManager.instance.primaryFocus?.unfocus();
-    HapticFeedback.lightImpact();
+    ActHaptics.light();
 
     await _cut.animateTo(
       1,
@@ -377,7 +361,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
         'seconds': DateTime.now().difference(_startedAt).inSeconds,
       }),
     );
-    HapticFeedback.mediumImpact();
+    ActHaptics.confirm();
     FocusManager.instance.primaryFocus?.unfocus();
 
     try {
@@ -523,9 +507,7 @@ class _OnboardingScreenState extends State<OnboardingScreen>
                                       style: AppTypography.body(
                                         size: 13,
                                         weight: FontWeight.w700,
-                                        color: Appearance.of(
-                                          context,
-                                        ).textMuted(0.42),
+                                        color: Appearance.of(context).textFaint,
                                       ),
                                     ),
                                   ),
@@ -689,18 +671,18 @@ class _WorldFrame extends StatelessWidget {
             ),
           ),
         ),
-        const DecoratedBox(
+        DecoratedBox(
           decoration: BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter,
               colors: [
-                Color(0x99040910),
-                Color(0x33040910),
-                Color(0x33040910),
-                Color(0xCC040910),
+                AppColors.primaryDark.withValues(alpha: 0.6),
+                AppColors.primaryDark.withValues(alpha: 0.2),
+                AppColors.primaryDark.withValues(alpha: 0.2),
+                AppColors.primaryDark.withValues(alpha: 0.8),
               ],
-              stops: [0.0, 0.3, 0.66, 1.0],
+              stops: const [0.0, 0.3, 0.66, 1.0],
             ),
           ),
         ),
@@ -736,13 +718,13 @@ class _FilmBar extends StatelessWidget {
               child: Padding(
                 padding: EdgeInsets.only(right: i == total - 1 ? 0 : 6),
                 child: ClipRRect(
-                  borderRadius: BorderRadius.circular(2),
+                  borderRadius: BorderRadius.circular(AppRadii.hair),
                   child: SizedBox(
                     height: 2,
                     child: Stack(
                       fit: StackFit.expand,
                       children: [
-                        const ColoredBox(color: Color(0x33FFFFFF)),
+                        ColoredBox(color: Colors.white.withValues(alpha: 0.2)),
                         FractionallySizedBox(
                           alignment: Alignment.centerLeft,
                           widthFactor: fill.clamp(0.0, 1.0),
@@ -822,15 +804,7 @@ class _Kicker extends StatelessWidget {
           opacity: t,
           child: FittedBox(
             fit: BoxFit.scaleDown,
-            child: Text(
-              text,
-              textAlign: TextAlign.center,
-              style: AppTypography.label(
-                size: 12,
-                letterSpacing: 5.6 - 3.4 * t,
-                color: AppColors.accent,
-              ),
-            ),
+            child: SectionLabel(text, color: AppColors.accent),
           ),
         );
       },
@@ -896,7 +870,7 @@ class _OriginBeat extends StatelessWidget {
       height: 1.5,
       weight: FontWeight.w500,
       fontStyle: FontStyle.italic,
-      color: Colors.white.withValues(alpha: 0.92),
+      color: a.text,
     );
     final words = _first.split(' ');
     final gap = size * 0.26;
@@ -988,14 +962,7 @@ class _OriginBeat extends StatelessWidget {
               to: 0.34,
               blur: 0,
               rise: 0,
-              child: Text(
-                'GÊNESIS 1:1–3',
-                style: AppTypography.label(
-                  size: 10,
-                  letterSpacing: 2.6,
-                  color: a.textMuted(0.5),
-                ),
-              ),
+              child: SectionLabel('Gênesis 1:1–3', color: a.textFaint),
             ),
           ],
         ),
@@ -1061,9 +1028,9 @@ class _HabitBeat extends StatelessWidget {
   });
 
   static const _paces = [
-    _Choice(1, 'Leve', '1 missão por dia · ~3 min'),
-    _Choice(2, 'Firme', '2 missões por dia · ~6 min'),
-    _Choice(3, 'Intenso', '3 missões por dia · ~9 min'),
+    _Choice(1, 'Leve', '1 cena por dia · ~3 min'),
+    _Choice(2, 'Firme', '2 cenas por dia · ~6 min'),
+    _Choice(3, 'Intenso', '3 cenas por dia · ~9 min'),
   ];
 
   @override
@@ -1076,7 +1043,7 @@ class _HabitBeat extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          _Kicker(text: 'II   ·   UM PASSO', scene: scene),
+          _Kicker(text: 'II   ·   Um passo', scene: scene),
           SizedBox(height: short ? 18 : 28),
           _Reveal(
             scene: scene,
@@ -1138,14 +1105,7 @@ class _HabitBeat extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 6),
-                Text(
-                  'MINUTOS',
-                  style: AppTypography.label(
-                    size: 13,
-                    letterSpacing: 4,
-                    color: a.text.withValues(alpha: 0.82),
-                  ),
-                ),
+                SectionLabel('Minutos', color: a.textSecondary, size: 13),
               ],
             ),
           ),
@@ -1158,7 +1118,7 @@ class _HabitBeat extends StatelessWidget {
               'Todo dia.',
               textAlign: TextAlign.center,
               style: AppTypography.display(
-                size: short ? 32 : 38,
+                size: short ? 32 : 40,
                 height: 1.05,
                 weight: FontWeight.w900,
               ),
@@ -1173,10 +1133,10 @@ class _HabitBeat extends StatelessWidget {
               'Conhecer a Deus não pede uma maratona.\nPede que você volte, todo dia.',
               textAlign: TextAlign.center,
               style: AppTypography.body(
-                size: 15,
+                size: 14,
                 height: 1.45,
                 weight: FontWeight.w600,
-                color: a.text.withValues(alpha: 0.76),
+                color: a.textSecondary,
               ),
             ),
           ),
@@ -1186,7 +1146,7 @@ class _HabitBeat extends StatelessWidget {
             from: 0.64,
             to: 0.9,
             child: _ChoiceRow<int>(
-              label: 'SEU RITMO',
+              label: 'Seu ritmo',
               options: _paces,
               selected: goal,
               onChanged: onGoal,
@@ -1230,10 +1190,10 @@ class _TomorrowBeat extends StatelessWidget {
   };
 
   static String _span(int days) => switch (days) {
-    7 => 'Uma semana seguida',
-    14 => 'Duas semanas seguidas',
+    7 => 'Uma semana de sequência',
+    14 => 'Duas semanas de sequência',
     30 => 'Um mês inteiro',
-    _ => '$days dias seguidos',
+    _ => '$days dias de sequência',
   };
 
   @override
@@ -1246,7 +1206,7 @@ class _TomorrowBeat extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          _Kicker(text: 'V   ·   AMANHÃ', scene: scene),
+          _Kicker(text: 'V   ·   Amanhã', scene: scene),
           SizedBox(height: short ? 18 : 28),
           _Reveal(
             scene: scene,
@@ -1302,10 +1262,10 @@ class _TomorrowBeat extends StatelessWidget {
               'O hábito nasce quando você volta.\nFirme com você mesmo um começo.',
               textAlign: TextAlign.center,
               style: AppTypography.body(
-                size: 15,
+                size: 14,
                 height: 1.45,
                 weight: FontWeight.w600,
-                color: a.text.withValues(alpha: 0.76),
+                color: a.textSecondary,
               ),
             ),
           ),
@@ -1326,7 +1286,7 @@ class _TomorrowBeat extends StatelessWidget {
             child: Column(
               children: [
                 _ChoiceRow<int>(
-                  label: 'MEU COMPROMISSO',
+                  label: 'Meu compromisso',
                   options: [
                     for (final d in streaks) _Choice(d, '$d dias', _span(d)),
                   ],
@@ -1335,7 +1295,7 @@ class _TomorrowBeat extends StatelessWidget {
                 ),
                 SizedBox(height: short ? 14 : 18),
                 _ChoiceRow<int>(
-                  label: 'TE LEMBRAMOS ÀS',
+                  label: 'Te lembramos às',
                   options: [
                     for (final h in hours) _Choice(h, '${h}h', _moment(h)),
                   ],
@@ -1380,14 +1340,7 @@ class _ChoiceRow<T> extends StatelessWidget {
     final current = options.where((o) => o.value == selected).firstOrNull;
     return Column(
       children: [
-        Text(
-          label,
-          style: AppTypography.label(
-            size: 10,
-            letterSpacing: 1.8,
-            color: a.textMuted(0.55),
-          ),
-        ),
+        SectionLabel(label, color: a.textFaint),
         const SizedBox(height: 10),
         Row(
           children: [
@@ -1412,7 +1365,7 @@ class _ChoiceRow<T> extends StatelessWidget {
             style: AppTypography.body(
               size: 13,
               weight: FontWeight.w600,
-              color: a.textMuted(0.7),
+              color: a.textSecondary,
             ),
           ),
         ),
@@ -1452,13 +1405,9 @@ class _ChoicePill<T> extends StatelessWidget {
           decoration: BoxDecoration(
             color: on
                 ? AppColors.accent.withValues(alpha: 0.1)
-                : const Color(0xC7070C16),
+                : AppColors.night.withValues(alpha: 0.78),
             borderRadius: BorderRadius.circular(_SiteCta.radius),
-            border: Border.all(
-              color: on
-                  ? AppColors.accent
-                  : Colors.white.withValues(alpha: 0.14),
-            ),
+            border: Border.all(color: on ? AppColors.accent : a.cardBorder),
           ),
           child: FittedBox(
             fit: BoxFit.scaleDown,
@@ -1466,7 +1415,7 @@ class _ChoicePill<T> extends StatelessWidget {
               choice.title,
               maxLines: 1,
               style: AppTypography.body(
-                size: 15,
+                size: 14,
                 weight: FontWeight.w700,
                 color: on ? AppColors.accent : a.text,
               ),
@@ -1505,7 +1454,7 @@ class _SkyBeat extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          _Kicker(text: 'IV   ·   SEU CÉU', scene: scene),
+          _Kicker(text: 'IV   ·   Seu céu', scene: scene),
           SizedBox(height: short ? 16 : 24),
           _Reveal(
             scene: scene,
@@ -1515,7 +1464,7 @@ class _SkyBeat extends StatelessWidget {
               'Escolha seu céu.',
               textAlign: TextAlign.center,
               style: AppTypography.display(
-                size: short ? 32 : 38,
+                size: short ? 32 : 40,
                 height: 1.05,
                 weight: FontWeight.w900,
               ),
@@ -1530,10 +1479,10 @@ class _SkyBeat extends StatelessWidget {
               'Ele te acompanha no app inteiro.\nDá para trocar depois nos ajustes.',
               textAlign: TextAlign.center,
               style: AppTypography.body(
-                size: 15,
+                size: 14,
                 height: 1.45,
                 weight: FontWeight.w600,
-                color: a.text.withValues(alpha: 0.76),
+                color: a.textSecondary,
               ),
             ),
           ),
@@ -1605,7 +1554,7 @@ class _IntentBeat extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          _Kicker(text: 'III   ·   SEU MOTIVO', scene: scene),
+          _Kicker(text: 'III   ·   Seu motivo', scene: scene),
           SizedBox(height: short ? 16 : 24),
           _Reveal(
             scene: scene,
@@ -1615,7 +1564,7 @@ class _IntentBeat extends StatelessWidget {
               'O que te traz aqui?',
               textAlign: TextAlign.center,
               style: AppTypography.display(
-                size: short ? 30 : 36,
+                size: short ? 28 : 32,
                 height: 1.05,
                 weight: FontWeight.w900,
               ),
@@ -1627,13 +1576,13 @@ class _IntentBeat extends StatelessWidget {
             from: 0.3,
             to: 0.58,
             child: Text(
-              'Cada missão: leia, responda, entenda.\nSeu motivo abre o caminho.',
+              'Cada cena: leia, responda, entenda.\nSeu motivo abre o caminho.',
               textAlign: TextAlign.center,
               style: AppTypography.body(
-                size: 15,
+                size: 14,
                 height: 1.45,
                 weight: FontWeight.w600,
-                color: a.text.withValues(alpha: 0.76),
+                color: a.textSecondary,
               ),
             ),
           ),
@@ -1697,18 +1646,18 @@ class _HoldCtaState extends State<_HoldCta>
     final step = (_hold.value * 4).floor();
     if (_hold.status == AnimationStatus.forward && step > _tick) {
       _tick = step;
-      HapticFeedback.selectionClick();
+      ActHaptics.tap();
     }
     if (_hold.value >= 1 && !_done) {
       _done = true;
-      HapticFeedback.heavyImpact();
+      ActHaptics.success();
       widget.onDone();
     }
   }
 
   void _start() {
     if (_done) return;
-    HapticFeedback.lightImpact();
+    ActHaptics.light();
     _hold.forward();
   }
 
@@ -1752,18 +1701,12 @@ class _HoldCtaState extends State<_HoldCta>
             return Transform.scale(
               scale: 1 - 0.02 * t,
               child: Container(
-                height: _SiteCta.height,
+                height: CopperCta.height,
                 decoration: BoxDecoration(
                   color: AppColors.accent.withValues(alpha: 0.1),
                   borderRadius: radius,
                   border: Border.all(color: AppColors.accent, width: 1.4),
-                  boxShadow: [
-                    BoxShadow(
-                      color: AppColors.accent.withValues(alpha: 0.12 + 0.3 * t),
-                      blurRadius: 34,
-                      offset: const Offset(0, 12),
-                    ),
-                  ],
+                  boxShadow: AppMetrics.accentGlow(alpha: 0.12 + 0.3 * t),
                 ),
                 child: ClipRRect(
                   borderRadius: radius,
@@ -1793,7 +1736,7 @@ class _HoldCtaState extends State<_HoldCta>
                                 child: Text(
                                   t > 0 ? widget.holdingLabel : widget.label,
                                   maxLines: 1,
-                                  style: _SiteCta.textStyle(ink),
+                                  style: CopperCta.labelStyle(color: ink),
                                 ),
                               ),
                             ),
@@ -1820,14 +1763,8 @@ class _SiteCta extends StatefulWidget {
   final VoidCallback? onTap;
   final bool busy;
 
-  static const height = 52.0;
-  static const radius = 14.0;
-
-  static TextStyle textStyle(Color color) => AppTypography.body(
-    size: 16,
-    weight: FontWeight.w700,
-    color: color,
-  ).copyWith(letterSpacing: 0.32);
+  static const height = CopperCta.height;
+  static const radius = AppRadii.md;
 
   const _SiteCta({required this.label, this.onTap, this.busy = false});
 
@@ -1883,13 +1820,7 @@ class _SiteCtaState extends State<_SiteCta>
             decoration: BoxDecoration(
               color: AppColors.accent,
               borderRadius: radius,
-              boxShadow: [
-                BoxShadow(
-                  color: AppColors.accent.withValues(alpha: 0.26),
-                  blurRadius: 34,
-                  offset: const Offset(0, 12),
-                ),
-              ],
+              boxShadow: AppMetrics.accentGlow(),
             ),
             child: ClipRRect(
               borderRadius: radius,
@@ -1897,12 +1828,14 @@ class _SiteCtaState extends State<_SiteCta>
                 fit: StackFit.expand,
                 children: [
                   // Luz de cima (inset do site).
-                  const Align(
+                  Align(
                     alignment: Alignment.topCenter,
                     child: SizedBox(
                       height: 1,
                       width: double.infinity,
-                      child: ColoredBox(color: Color(0x73FFFFFF)),
+                      child: ColoredBox(
+                        color: Colors.white.withValues(alpha: 0.45),
+                      ),
                     ),
                   ),
                   AnimatedBuilder(
@@ -1932,13 +1865,9 @@ class _SiteCtaState extends State<_SiteCta>
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         if (widget.busy) ...[
-                          const SizedBox(
-                            width: 18,
-                            height: 18,
-                            child: CircularProgressIndicator(
-                              strokeWidth: 2,
-                              color: AppColors.inkOnAccent,
-                            ),
+                          const AppSpinner(
+                            inline: true,
+                            color: AppColors.inkOnAccent,
                           ),
                           const SizedBox(width: 10),
                         ],
@@ -1948,7 +1877,7 @@ class _SiteCtaState extends State<_SiteCta>
                             child: Text(
                               widget.label,
                               maxLines: 1,
-                              style: _SiteCta.textStyle(AppColors.inkOnAccent),
+                              style: CopperCta.labelStyle(),
                             ),
                           ),
                         ),
@@ -1994,7 +1923,7 @@ class _StreakPath extends StatelessWidget {
             children: [
               for (var i = 0; i < dots; i++) ...[
                 if (i > 0)
-                  Container(width: 14, height: 1.5, color: a.textMuted(0.3)),
+                  Container(width: 14, height: 1.5, color: a.textFaint),
                 if (i == 0)
                   AnimatedBuilder(
                     animation: breath,
@@ -2025,7 +1954,7 @@ class _StreakPath extends StatelessWidget {
                     height: 10,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      border: Border.all(color: a.textMuted(0.45), width: 1.4),
+                      border: Border.all(color: a.textFaint, width: 1.4),
                     ),
                   ),
               ],
@@ -2033,14 +1962,7 @@ class _StreakPath extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 8),
-        Text(
-          'HOJE  ·  DIA 1 DE $goal',
-          style: AppTypography.label(
-            size: 10,
-            letterSpacing: 1.8,
-            color: AppColors.accent,
-          ),
-        ),
+        SectionLabel('Hoje  ·  dia 1 de $goal', color: AppColors.accent),
       ],
     );
   }
@@ -2088,13 +2010,9 @@ class _OptionCard extends StatelessWidget {
           decoration: BoxDecoration(
             color: on
                 ? AppColors.accent.withValues(alpha: 0.1)
-                : const Color(0xC7070C16),
+                : AppColors.night.withValues(alpha: 0.78),
             borderRadius: BorderRadius.circular(_SiteCta.radius),
-            border: Border.all(
-              color: on
-                  ? AppColors.accent
-                  : Colors.white.withValues(alpha: 0.14),
-            ),
+            border: Border.all(color: on ? AppColors.accent : a.cardBorder),
           ),
           child: Row(
             children: [
@@ -2146,7 +2064,7 @@ class _OptionCard extends StatelessWidget {
                         style: AppTypography.body(
                           size: 13,
                           weight: FontWeight.w600,
-                          color: a.textMuted(0.6),
+                          color: a.textSecondary,
                         ),
                       ),
                     ],
@@ -2200,21 +2118,14 @@ class _NameLine extends StatelessWidget {
     final a = Appearance.of(context);
     return Column(
       children: [
-        Text(
-          'COMO TE CHAMAMOS',
-          style: AppTypography.label(
-            size: 10,
-            letterSpacing: 1.8,
-            color: a.textMuted(0.55),
-          ),
-        ),
+        SectionLabel('Como te chamamos', color: a.textFaint),
         const SizedBox(height: 4),
         TextField(
           controller: controller,
           textAlign: TextAlign.center,
           textCapitalization: TextCapitalization.words,
           style: AppTypography.display(
-            size: 22,
+            size: 20,
             weight: FontWeight.w800,
             color: a.text,
           ),
@@ -2222,9 +2133,9 @@ class _NameLine extends StatelessWidget {
           decoration: InputDecoration(
             hintText: 'seu nome',
             hintStyle: AppTypography.display(
-              size: 22,
+              size: 20,
               weight: FontWeight.w700,
-              color: a.textMuted(0.28),
+              color: a.textFaint,
             ),
             filled: false,
             isDense: true,
@@ -2280,7 +2191,7 @@ class _ThresholdBeat extends StatelessWidget {
       ),
       child: Column(
         children: [
-          _Kicker(text: 'VI   ·   A CAMINHADA', scene: scene),
+          _Kicker(text: 'VI   ·   A caminhada', scene: scene),
           const SizedBox(height: 12),
           _Reveal(
             scene: scene,
@@ -2402,40 +2313,33 @@ class _FirstMissionHero extends StatelessWidget {
                       _HeroChip(
                         glyph: visuals.glyph,
                         accent: visuals.accent,
-                        label: 'GÊNESIS 1–11',
+                        label: 'Gênesis 1–11',
                       ),
                       const _HeroChip(
                         glyph: CinematicGlyph.lamp,
                         accent: AppColors.accent,
-                        label: '5 LÂMPADAS',
+                        label: '5 lâmpadas',
                       ),
                     ],
                   ),
                   const Spacer(),
-                  Text(
-                    'MISSÃO PRONTA',
-                    style: AppTypography.label(
-                      size: 12,
-                      letterSpacing: 2,
-                      color: style.label,
-                    ),
-                  ),
+                  SectionLabel('Cena pronta', color: style.label),
                   const SizedBox(height: 10),
                   Text(
                     _title,
                     style: AppTypography.display(
-                      size: 32,
+                      size: 28,
                       height: 1.08,
                       weight: FontWeight.w900,
                     ),
                   ),
                   const SizedBox(height: 8),
                   Text(
-                    'Leia · Responda · Entenda  ·  ~3 min',
+                    'Leia · responda · entenda  ·  ~3 min',
                     style: AppTypography.body(
                       size: 14,
                       weight: FontWeight.w600,
-                      color: a.text.withValues(alpha: 0.74),
+                      color: a.textSecondary,
                     ),
                   ),
                 ],
@@ -2462,28 +2366,11 @@ class _HeroChip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-      decoration: BoxDecoration(
-        color: a.cardFillSoft,
-        borderRadius: BorderRadius.circular(AppRadii.pill),
-        border: Border.all(color: a.cardBorder),
-      ),
-      child: Row(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          CinematicIcon(glyph: glyph, size: 14, accent: accent, framed: false),
-          const SizedBox(width: 6),
-          Text(
-            label,
-            style: AppTypography.label(
-              size: 9,
-              letterSpacing: 1,
-              color: a.text.withValues(alpha: 0.88),
-            ),
-          ),
-        ],
-      ),
+    return SoftBadge(
+      text: label,
+      glyph: glyph,
+      accent: accent,
+      textColor: a.text,
     );
   }
 }

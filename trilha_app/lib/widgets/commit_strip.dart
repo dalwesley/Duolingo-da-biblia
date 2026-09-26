@@ -47,7 +47,7 @@ class CommitStrip extends StatelessWidget {
             style: AppTypography.label(
               size: 11,
               letterSpacing: 1.1,
-              color: a.textMuted(0.7),
+              color: a.textSecondary,
             ),
           ),
         ],

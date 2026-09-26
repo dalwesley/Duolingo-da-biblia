@@ -22,6 +22,7 @@ export const COL = {
   meta: 'content_meta',
   reports: 'content_question_reports',
   suggestions: 'content_trail_suggestions',
+  authorSuggestions: 'content_author_suggestions',
 };
 
 function sortByOrder(items) {

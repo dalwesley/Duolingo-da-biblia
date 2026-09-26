@@ -1,27 +1,25 @@
 import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 import '../data/entry_trails.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import 'act_feel.dart';
+import 'app_sheet.dart';
 import 'cinematic_icon.dart';
 import 'embossed_glyph.dart';
 import 'immersive_background.dart';
 import 'share_seal_card.dart';
 import 'ui_primitives.dart';
+import 'profile_privacy.dart';
+import 'relic_panel.dart';
+import '../models/caravan_profile_prefs.dart';
 
-Future<void> showCharacterSealSheet(
-  BuildContext context,
-  CharacterSeal seal,
-) {
-  HapticFeedback.selectionClick();
-  return showModalBottomSheet<void>(
-    context: context,
-    backgroundColor: Colors.transparent,
-    barrierColor: Colors.black.withValues(alpha: 0.72),
-    isScrollControlled: true,
+Future<void> showCharacterSealSheet(BuildContext context, CharacterSeal seal) {
+  ActHaptics.tap();
+  return showAppSheet<void>(
+    context,
     builder: (_) => _SealEncounterSheet(seal: seal),
   );
 }
@@ -53,93 +51,66 @@ class _SealEncounterSheetState extends State<_SealEncounterSheet> {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final seal = widget.seal;
-    final bottom = MediaQuery.of(context).padding.bottom;
-    return Padding(
-      padding: EdgeInsets.fromLTRB(16, 0, 16, 16 + bottom),
-      child: Stack(
-        children: [
-          Positioned(
-            left: 0,
-            top: 0,
-            child: IgnorePointer(
-              child: Opacity(
-                opacity: 0,
-                child: SizedBox(
-                  width: 360,
-                  child: RepaintBoundary(
-                    key: _shareKey,
-                    child: ShareSealCard(seal: seal),
-                  ),
+    return Stack(
+      children: [
+        Positioned(
+          left: 0,
+          top: 0,
+          child: IgnorePointer(
+            child: Opacity(
+              opacity: 0,
+              child: SizedBox(
+                width: 360,
+                child: RepaintBoundary(
+                  key: _shareKey,
+                  child: ShareSealCard(seal: seal),
                 ),
               ),
             ),
           ),
-          GlassCard(
-            elevated: true,
-            padding: EdgeInsets.zero,
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(AppMetrics.cardRadius),
-              child: Stack(
-                children: [
-                  const Positioned.fill(child: _EncounterAtmosphere()),
-                  Padding(
-                    padding: AppMetrics.cardPadding,
-                    child: Column(
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        _EncounterSeal(
-                          glyph: seal.glyph,
-                          size: 72,
-                          unlocked: true,
-                        ),
-                        const SizedBox(height: 14),
-                        Text(
-                          seal.name.toUpperCase(),
-                          style: AppTypography.label(
-                            size: 12,
-                            letterSpacing: 2.2,
-                            color: AppColors.accent,
-                          ),
-                        ),
-                        const SizedBox(height: 10),
-                        Text(
-                          seal.fact,
-                          textAlign: TextAlign.center,
-                          style: AppTypography.body(size: 15, color: a.text),
-                        ),
-                        const SizedBox(height: 18),
-                        Text(
-                          seal.verseRef,
-                          style: AppTypography.body(
-                            size: 12,
-                            weight: FontWeight.w700,
-                            color: a.textMuted(0.55),
-                          ),
-                        ),
-                        const SizedBox(height: 6),
-                        Text(
-                          seal.verseText,
-                          textAlign: TextAlign.center,
-                          style: AppTypography.verse(size: 18, height: 1.45),
-                        ),
-                        const SizedBox(height: 22),
-                        CopperCta(
-                          label: _busy ? 'Preparando…' : 'Compartilhar',
-                          expanded: true,
-                          leading: CinematicGlyph.share,
-                          trailing: null,
-                          busy: _busy,
-                          onTap: _busy ? null : _share,
-                        ),
-                      ],
-                    ),
-                  ),
-                ],
+        ),
+        AppSheetPanel(
+          background: const _EncounterAtmosphere(),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              _EncounterSeal(glyph: seal.glyph, size: 72, unlocked: true),
+              const SizedBox(height: 14),
+              SectionLabel(seal.name, size: 12, color: AppColors.accent),
+              const SizedBox(height: 10),
+              Text(
+                seal.fact,
+                textAlign: TextAlign.center,
+                style: AppTypography.body(size: 14, color: a.text),
               ),
-            ),
+              const SizedBox(height: 18),
+              Text(
+                seal.verseRef,
+                style: AppTypography.body(
+                  size: 12,
+                  weight: FontWeight.w700,
+                  color: a.textFaint,
+                ),
+              ),
+              const SizedBox(height: 6),
+              Text(
+                seal.verseText,
+                textAlign: TextAlign.center,
+                style: AppTypography.verse(size: 18, height: 1.45),
+              ),
+              const SizedBox(height: 22),
+              CopperCta(
+                label: _busy ? 'Preparando…' : 'Compartilhar',
+                expanded: true,
+                leading: CinematicGlyph.share,
+                trailing: null,
+                busy: _busy,
+                onTap: _busy ? null : _share,
+              ),
+            ],
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }
@@ -157,7 +128,6 @@ class CharacterSealsStrip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
     final unlocked = CharacterSeals.unlocked(completed);
     if (acquiredOnly && unlocked.isEmpty) return const SizedBox.shrink();
 
@@ -173,15 +143,15 @@ class CharacterSealsStrip extends StatelessWidget {
 
     final subtitle = acquiredOnly
         ? (unlocked.length == 1
-            ? '1 selo — fato e verso, no texto.'
-            : '${unlocked.length} selos — fato e verso, no texto.')
+              ? '1 selo — fato e verso, no texto.'
+              : '${unlocked.length} selos — fato e verso, no texto.')
         : unlocked.isEmpty
-            ? (next == null
-                ? 'Fato e verso de quem o texto já mostrou.'
-                : 'Ainda no texto — começa em ${next.name}.')
-            : next == null
-                ? '${unlocked.length} de ${CharacterSeals.all.length} — a galeria está cheia.'
-                : '${unlocked.length} de ${CharacterSeals.all.length} — ainda no texto: ${next.name}';
+        ? (next == null
+              ? 'Fato e verso de quem o texto já mostrou.'
+              : 'Ainda no texto — começa em ${next.name}.')
+        : next == null
+        ? '${unlocked.length} de ${CharacterSeals.all.length} — a galeria está cheia.'
+        : '${unlocked.length} de ${CharacterSeals.all.length} — ainda no texto: ${next.name}';
 
     return GlassCard(
       padding: EdgeInsets.zero,
@@ -195,45 +165,16 @@ class CharacterSealsStrip extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Row(
-                    children: [
-                      Container(
-                        width: 3,
-                        height: 18,
-                        decoration: BoxDecoration(
-                          color: AppColors.accent,
-                          borderRadius: BorderRadius.circular(2),
-                        ),
-                      ),
-                      const SizedBox(width: 10),
-                      Expanded(
-                        child: Text(
-                          'Selos',
-                          style: AppTypography.title(size: 16, color: a.text),
-                        ),
-                      ),
-                      CountBadge(
-                        '${unlocked.length}/${CharacterSeals.all.length}',
-                        color: AppColors.accent,
-                      ),
-                    ],
-                  ),
-                  const SizedBox(height: 6),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 13),
-                    child: Text(
-                      subtitle,
-                      style: AppTypography.body(
-                        size: 12,
-                        color: a.textMuted(0.58),
-                      ),
+                  RelicChapter(
+                    title: 'Selos',
+                    whisper: subtitle,
+                    action: const PrivacyEye(
+                      sections: {CaravanProfileSection.trails},
+                      label: 'Selos e trilhas',
                     ),
                   ),
                   const SizedBox(height: 16),
-                  _EncounterGallery(
-                    seals: shown,
-                    unlocked: unlocked,
-                  ),
+                  _EncounterGallery(seals: shown, unlocked: unlocked),
                 ],
               ),
             ),
@@ -272,10 +213,7 @@ class _EncounterGallery extends StatelessWidget {
   final List<CharacterSeal> seals;
   final List<CharacterSeal> unlocked;
 
-  const _EncounterGallery({
-    required this.seals,
-    required this.unlocked,
-  });
+  const _EncounterGallery({required this.seals, required this.unlocked});
 
   @override
   Widget build(BuildContext context) {
@@ -307,43 +245,40 @@ class _SealMedallion extends StatelessWidget {
   final CharacterSeal seal;
   final bool unlocked;
 
-  const _SealMedallion({
-    required this.seal,
-    required this.unlocked,
-  });
+  const _SealMedallion({required this.seal, required this.unlocked});
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return GestureDetector(
-      key: ValueKey(seal.id),
-      behavior: HitTestBehavior.opaque,
-      onTap: unlocked ? () => showCharacterSealSheet(context, seal) : null,
-      child: Transform.rotate(
-        angle: ((seal.id.hashCode % 9) - 4) * 0.028,
-        child: Column(
-          children: [
-            _EncounterSeal(
-              glyph: seal.glyph,
-              size: 58,
-              unlocked: unlocked,
-            ),
-          const SizedBox(height: 8),
-          SizedBox(
-            height: 16,
-            child: Text(
-              unlocked ? seal.name : '',
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-              textAlign: TextAlign.center,
-              style: AppTypography.label(
-                size: 10,
-                letterSpacing: 0.3,
-                color: a.textMuted(0.78),
+    return Semantics(
+      button: unlocked,
+      label: unlocked ? 'Selo ${seal.name}' : 'Selo ainda fechado',
+      child: GestureDetector(
+        key: ValueKey(seal.id),
+        behavior: HitTestBehavior.opaque,
+        onTap: unlocked ? () => showCharacterSealSheet(context, seal) : null,
+        child: Transform.rotate(
+          angle: ((seal.id.hashCode % 9) - 4) * 0.028,
+          child: Column(
+            children: [
+              _EncounterSeal(glyph: seal.glyph, size: 58, unlocked: unlocked),
+              const SizedBox(height: 8),
+              SizedBox(
+                height: 16,
+                child: Text(
+                  unlocked ? seal.name : '',
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  textAlign: TextAlign.center,
+                  style: AppTypography.label(
+                    size: 10,
+                    letterSpacing: 0.3,
+                    color: a.textSecondary,
+                  ),
+                ),
               ),
-            ),
+            ],
           ),
-        ],
         ),
       ),
     );
@@ -414,13 +349,13 @@ class _WaxSealPainter extends CustomPainter {
     final waxLight = unlocked
         ? const Color(0xFFB24A28)
         : next
-            ? const Color(0xFF5A3A28)
-            : const Color(0xFF2E323A);
+        ? const Color(0xFF5A3A28)
+        : const Color(0xFF2E323A);
     final waxMid = unlocked
         ? const Color(0xFF7A2414)
         : next
-            ? const Color(0xFF3A2418)
-            : const Color(0xFF1A1E26);
+        ? const Color(0xFF3A2418)
+        : const Color(0xFF1A1E26);
     final waxDark = unlocked
         ? const Color(0xFF2C0C08)
         : const Color(0xFF0C0E12);
@@ -510,7 +445,8 @@ class _WaxSealPainter extends CustomPainter {
       ..addOval(Rect.fromCircle(center: center, radius: r * 0.74));
     for (var i = 0; i < lobes; i++) {
       final a = (i / lobes) * math.pi * 2 - math.pi / 2;
-      final lobe = center + Offset(math.cos(a) * r * 0.24, math.sin(a) * r * 0.24);
+      final lobe =
+          center + Offset(math.cos(a) * r * 0.24, math.sin(a) * r * 0.24);
       path.addOval(Rect.fromCircle(center: lobe, radius: r * 0.58));
     }
     return path;
@@ -520,4 +456,3 @@ class _WaxSealPainter extends CustomPainter {
   bool shouldRepaint(covariant _WaxSealPainter old) =>
       old.unlocked != unlocked || old.next != next;
 }
-

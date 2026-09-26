@@ -134,6 +134,8 @@ class ProgressService extends ChangeNotifier {
   static const _keyBibleBookmarks = 'bibleBookmarks';
   static const _keySharedVerses = 'sharedVerses';
   static const _keyBibleBrowseOrder = 'bibleBrowseOrder';
+  static const _keyLastBibleSpot = 'lastBibleSpot';
+  static const _keyBibleSepia = 'bibleSepia';
   static const _keyMemoryScores = 'memoryScores';
   static const _keyMemoryMastered = 'memoryMastered';
 
@@ -251,6 +253,12 @@ class ProgressService extends ChangeNotifier {
 
   /// Favoritos ("abbrev:capítulo:versículo", ex.: "gn:1:1").
   List<String> bibleBookmarks = [];
+
+  /// Último capítulo aberto no leitor ("abbrev:capítulo", ex.: "gn:1").
+  String? lastBibleSpot;
+
+  /// Papel sépia na leitura (vale quando a página está clara).
+  bool bibleSepia = false;
 
   /// Referências compartilhadas ("Lucas 1:1"), mais recentes primeiro.
   List<String> sharedVerses = [];
@@ -488,6 +496,8 @@ class ProgressService extends ChangeNotifier {
     bibleBrowseOrder = BibleReadingOrder.fromStorage(
       prefs.getString(_keyBibleBrowseOrder),
     );
+    lastBibleSpot = prefs.getString(_keyLastBibleSpot);
+    bibleSepia = prefs.getBool(_keyBibleSepia) ?? false;
     // Instalação nova sem preferência salva → Automático (segue o horário).
     if (_freshInstall && prefs.getString(_keyAppearanceMode) == null) {
       settings = settings.copyWith(appearanceMode: AppearanceMode.automatic);
@@ -728,6 +738,7 @@ class ProgressService extends ChangeNotifier {
       _keyMonthlyMonth,
       _keyReadBibleChapters,
       _keyBibleBookmarks,
+      _keyLastBibleSpot,
       _keyMemoryScores,
       _keyMemoryMastered,
     ];
@@ -781,6 +792,7 @@ class ProgressService extends ChangeNotifier {
     missionReflections = {};
     readBibleChapters = [];
     bibleBookmarks = [];
+    lastBibleSpot = null;
     sharedVerses = [];
     sharedVerseCount = 0;
     perfectMissions = [];
@@ -1040,6 +1052,32 @@ class ProgressService extends ChangeNotifier {
     lastBibleReadDate = _todayKey();
     await _bumpQuest('read');
     await _bumpQuest('seasonal');
+  }
+
+  /// Guarda onde a leitura parou — a aba Bíblia abre o "Continuar" aqui.
+  Future<void> setLastBibleSpot(String bookAbbrev, int chapter) async {
+    final key = bibleChapterKey(bookAbbrev, chapter);
+    if (lastBibleSpot == key) return;
+    lastBibleSpot = key;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(_keyLastBibleSpot, key);
+    notifyListeners();
+  }
+
+  ({String abbrev, int chapter})? get lastBibleSpotParts {
+    final parts = lastBibleSpot?.split(':');
+    if (parts == null || parts.length != 2) return null;
+    final chapter = int.tryParse(parts[1]);
+    if (chapter == null) return null;
+    return (abbrev: parts[0], chapter: chapter);
+  }
+
+  Future<void> setBibleSepia(bool value) async {
+    if (bibleSepia == value) return;
+    bibleSepia = value;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool(_keyBibleSepia, value);
+    notifyListeners();
   }
 
   Future<void> setBibleBrowseOrder(BibleReadingOrder order) async {

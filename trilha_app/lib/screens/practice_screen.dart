@@ -12,6 +12,7 @@ import '../utils/day_phase.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/top_bar.dart';
+import '../widgets/ui_primitives.dart';
 import 'lesson_screen.dart';
 
 /// Prática de erros — revisão das perguntas erradas (estilo Practice do Duolingo).
@@ -83,9 +84,7 @@ class _PracticeScreenState extends State<PracticeScreen> {
         backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
         body: ImmersiveBackground(
           appearance: appearance,
-          child: const Center(
-            child: CircularProgressIndicator(color: AppColors.accent),
-          ),
+          child: const AppSpinner(),
         ),
       );
     }
@@ -137,10 +136,10 @@ class _PracticeScreenState extends State<PracticeScreen> {
                             ),
                             const SizedBox(height: AppSpace.section),
                             Text(
-                              'Nenhum erro guardado ainda.\nContinue as missões — quando errar, volta aqui.',
+                              'Nenhum erro guardado ainda.\nContinue as cenas — quando errar, a pergunta volta aqui.',
                               textAlign: TextAlign.center,
                               style: AppTypography.body(
-                                color: appearance.textMuted(0.7),
+                                color: appearance.textSecondary,
                                 height: 1.5,
                               ),
                             ),

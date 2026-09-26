@@ -79,8 +79,8 @@ class SeasonWalkScreen extends StatelessWidget {
                             inWindow
                                 ? 'Dia ${todayIndex ?? '—'} de ${campaign.length}'
                                 : campaign.start.isAfter(today)
-                                    ? 'Começa em ${_daysUntil(campaign.start, today)} dias'
-                                    : 'Temporada encerrada',
+                                ? 'Começa em ${_daysUntil(campaign.start, today)} dias'
+                                : 'Temporada encerrada',
                             style: AppTypography.title(size: 16, color: a.text),
                           ),
                           const SizedBox(height: 6),
@@ -88,25 +88,21 @@ class SeasonWalkScreen extends StatelessWidget {
                             'Gratuito: 3 primeiros dias · depois, Peregrino+',
                             style: AppTypography.body(
                               size: 13,
-                              color: a.textMuted(0.7),
+                              color: a.textSecondary,
                             ),
                           ),
                           const SizedBox(height: 12),
-                          LinearProgressIndicator(
+                          AppProgressBar(
                             value: campaign.length == 0
                                 ? 0
-                                : (done / campaign.length).clamp(0, 1),
-                            minHeight: AppMetrics.progressHeight,
-                            borderRadius: BorderRadius.circular(8),
-                            color: AppColors.accent,
-                            backgroundColor: a.textMuted(0.12),
+                                : (done / campaign.length).clamp(0.0, 1.0),
                           ),
                           const SizedBox(height: 8),
                           Text(
                             '$done / ${campaign.length} dias caminhados',
                             style: AppTypography.body(
                               size: 12,
-                              color: a.textMuted(0.55),
+                              color: a.textFaint,
                             ),
                           ),
                         ],
@@ -168,8 +164,8 @@ class _WeekBlock extends StatelessWidget {
           ),
         )
         .length;
-    final weekEnded = days.isNotEmpty &&
-        !days.last.dateOn(campaign.start).isAfter(today);
+    final weekEnded =
+        days.isNotEmpty && !days.last.dateOn(campaign.start).isAfter(today);
     final reviewReady = weekEnded && doneCount >= (days.length / 2).ceil();
     final reviewLocked = reviewReady && proConfigured && !isPro;
 
@@ -253,7 +249,8 @@ class _DayTile extends StatelessWidget {
     final progress = context.watch<ProgressService>();
     final date = day.dateOn(campaign.start);
     final ymd = _ymd(date);
-    final done = progress.isWalkDateDone(campaign.id, ymd) ||
+    final done =
+        progress.isWalkDateDone(campaign.id, ymd) ||
         progress.isMissionCompleted(day.missionSlug);
     final access = SeasonWalkCatalog.access(
       campaign: campaign,
@@ -277,15 +274,14 @@ class _DayTile extends StatelessWidget {
                 glyph: locked
                     ? CinematicGlyph.lock
                     : done
-                        ? CinematicGlyph.check
-                        : CinematicGlyph.calendar,
-                size: 36,
+                    ? CinematicGlyph.check
+                    : CinematicGlyph.calendar,
+                size: AppMetrics.leadingIcon,
                 accent: done
                     ? AppColors.accent
                     : isToday
-                        ? AppColors.accent
-                        : a.textMuted(0.45),
-                framed: false,
+                    ? AppColors.accent
+                    : a.textFaint,
               ),
               const SizedBox(width: 10),
               Expanded(
@@ -302,13 +298,13 @@ class _DayTile extends StatelessWidget {
                       access.needsPro
                           ? 'Peregrino+ a partir do dia 4'
                           : access.future
-                              ? 'Ainda não é hoje'
-                              : day.insight,
+                          ? 'Ainda não é hoje'
+                          : day.insight,
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: AppTypography.body(
                         size: 12,
-                        color: a.textMuted(0.6),
+                        color: a.textSecondary,
                       ),
                     ),
                   ],
@@ -328,9 +324,9 @@ class _DayTile extends StatelessWidget {
   ) async {
     if (access.future) return;
     if (access.needsPro) {
-      await Navigator.of(context).push(
-        MaterialPageRoute(builder: (_) => const PaywallScreen()),
-      );
+      await Navigator.of(
+        context,
+      ).push(MaterialPageRoute(builder: (_) => const PaywallScreen()));
       return;
     }
     if (!access.playable) return;
@@ -338,16 +334,17 @@ class _DayTile extends StatelessWidget {
     if (!context.mounted) return;
     await Navigator.of(context).push(
       MaterialPageRoute(
-        builder: (_) => LessonScreen(
-          missionSlug: day.missionSlug,
-          skipTrailLock: true,
-        ),
+        builder: (_) =>
+            LessonScreen(missionSlug: day.missionSlug, skipTrailLock: true),
       ),
     );
     if (!context.mounted) return;
     final progress = context.read<ProgressService>();
     if (progress.isMissionCompleted(day.missionSlug) || done) {
-      await progress.markWalkDate(campaign.id, _ymd(day.dateOn(campaign.start)));
+      await progress.markWalkDate(
+        campaign.id,
+        _ymd(day.dateOn(campaign.start)),
+      );
     }
   }
 }
@@ -412,14 +409,14 @@ class _SeasonWalkReviewScreenState extends State<SeasonWalkReviewScreen> {
                                 'Dia ${day.index} · ${day.title}',
                                 style: AppTypography.body(
                                   size: 12,
-                                  color: a.textMuted(0.55),
+                                  color: a.textFaint,
                                 ),
                               ),
                               const SizedBox(height: 4),
                               Text(
                                 'Hoje: ${day.insight}',
                                 style: AppTypography.title(
-                                  size: 15,
+                                  size: 14,
                                   color: a.text,
                                 ),
                               ),
@@ -454,7 +451,8 @@ class _SeasonWalkReviewScreenState extends State<SeasonWalkReviewScreen> {
     for (final day in _days) {
       if (ids.length >= 3) break;
       final pool = await QuestionBank.instance.listForMission(
-        difficulty: TrailDifficulty.fromId(
+        difficulty:
+            TrailDifficulty.fromId(
               progress.difficultyForTrail(day.trailSlug),
             ) ??
             TrailDifficulty.semente,

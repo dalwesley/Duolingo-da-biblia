@@ -24,7 +24,52 @@ class AppGradients {
   );
 }
 
+/// Degraus da escala tipográfica — o app só usa estes tamanhos.
+///
+/// Qualquer tamanho pedido a [AppTypography] é encaixado no degrau mais
+/// próximo (empate desce, para nunca estourar layout). Assim um `size: 15`
+/// perdido vira 14 e a tela inteira fala a mesma língua.
+class AppTypeScale {
+  /// Títulos de tela e palco (Exo 2 pesado).
+  static const display = <double>[18, 20, 24, 28, 32, 40, 48];
+
+  /// Títulos de card, linha e número de HUD.
+  static const title = <double>[12, 14, 16, 18, 20, 24];
+
+  /// Texto corrido, legenda e letra miúda.
+  static const body = <double>[11, 12, 13, 14, 16];
+
+  /// Rótulos em caixa alta, chips e selos.
+  static const label = <double>[10, 11, 12, 13];
+
+  /// Versículo e citação.
+  static const verse = <double>[14, 16, 18, 21, 24, 28];
+
+  /// Botões.
+  static const cta = <double>[12, 14, 18];
+
+  /// Encaixa [size] no degrau mais próximo de [steps].
+  /// Use `exact: true` nos estilos só quando o tamanho é proporcional a
+  /// um desenho (medalha, logo, grade) — nunca para “ficar mais bonito”.
+  static double snap(double size, List<double> steps) {
+    var best = steps.first;
+    var bestDist = (size - best).abs();
+    for (final s in steps.skip(1)) {
+      final d = (size - s).abs();
+      // Empate desce: `<` mantém o degrau menor já encontrado.
+      if (d < bestDist) {
+        best = s;
+        bestDist = d;
+      }
+    }
+    return best;
+  }
+}
+
 /// Escala tipográfica unificada — HUD de jogo sem mudar copy.
+/// Piso de legibilidade: texto de leitura (body/title) nunca abaixo de
+/// 11pt; rótulos em caixa alta (label) nunca abaixo de 10pt.
+/// Todo tamanho passa por [AppTypeScale.snap].
 class AppTypography {
   /// Headlines de UI / jogo — geometric game.
   static TextStyle display({
@@ -33,8 +78,9 @@ class AppTypography {
     Color color = AppColors.textOnDark,
     double height = 1.1,
     FontStyle fontStyle = FontStyle.normal,
+    bool exact = false,
   }) => GoogleFonts.exo2(
-    fontSize: size,
+    fontSize: exact ? size : AppTypeScale.snap(size, AppTypeScale.display),
     fontWeight: weight,
     color: color,
     height: height,
@@ -49,8 +95,9 @@ class AppTypography {
     Color color = AppColors.textOnDark,
     double height = 1.5,
     FontStyle fontStyle = FontStyle.normal,
+    bool exact = false,
   }) => GoogleFonts.cormorantGaramond(
-    fontSize: size,
+    fontSize: exact ? size : AppTypeScale.snap(size, AppTypeScale.verse),
     fontWeight: weight,
     color: color,
     height: height,
@@ -86,8 +133,9 @@ class AppTypography {
     FontWeight weight = FontWeight.w800,
     Color color = AppColors.textOnDark,
     double height = 1.2,
+    bool exact = false,
   }) => GoogleFonts.exo2(
-    fontSize: size,
+    fontSize: exact ? size : AppTypeScale.snap(size, AppTypeScale.title),
     fontWeight: weight,
     color: color,
     height: height,
@@ -99,8 +147,9 @@ class AppTypography {
     FontWeight weight = FontWeight.w600,
     Color color = AppColors.textOnDark,
     double height = 1.4,
+    bool exact = false,
   }) => GoogleFonts.nunito(
-    fontSize: size,
+    fontSize: exact ? size : AppTypeScale.snap(size, AppTypeScale.body),
     fontWeight: weight,
     color: color,
     height: height,
@@ -111,8 +160,9 @@ class AppTypography {
     FontWeight weight = FontWeight.w800,
     Color color = AppColors.accent,
     double letterSpacing = 1.6,
+    bool exact = false,
   }) => GoogleFonts.exo2(
-    fontSize: size,
+    fontSize: exact ? size : AppTypeScale.snap(size, AppTypeScale.label),
     fontWeight: weight,
     color: color,
     letterSpacing: letterSpacing,
@@ -121,8 +171,9 @@ class AppTypography {
   static TextStyle cta({
     double size = 14,
     Color color = AppColors.inkOnAccent,
+    bool exact = false,
   }) => GoogleFonts.exo2(
-    fontSize: size,
+    fontSize: exact ? size : AppTypeScale.snap(size, AppTypeScale.cta),
     fontWeight: FontWeight.w900,
     color: color,
     letterSpacing: 1.0,
@@ -131,12 +182,17 @@ class AppTypography {
 
 /// Raios padronizados — painéis de jogo (menos “blob”, mais HUD).
 class AppRadii {
+  /// Traços finos: alça de sheet, barras de 2–4px, divisórias.
+  static const hair = 2.0;
   static const xs = 6.0;
   static const sm = 10.0;
   static const md = 14.0;
   static const lg = 16.0;
   static const xl = 20.0;
   static const pill = 999.0;
+
+  /// Painel de sheet e diálogo.
+  static const sheet = xl;
 }
 
 /// Espaçamento padronizado.

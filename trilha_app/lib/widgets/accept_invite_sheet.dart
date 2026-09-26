@@ -3,6 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
 import '../services/invite_deep_link_service.dart';
 import '../theme/app_theme.dart';
+import '../utils/appearance.dart';
+import 'app_sheet.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
 
@@ -11,10 +13,8 @@ Future<String?> showAcceptInviteSheet(
   BuildContext context, {
   String? initialCode,
 }) {
-  return showModalBottomSheet<String>(
-    context: context,
-    backgroundColor: Colors.transparent,
-    isScrollControlled: true,
+  return showAppSheet<String>(
+    context,
     builder: (ctx) => _AcceptInviteSheet(initialCode: initialCode),
   );
 }
@@ -58,131 +58,96 @@ class _AcceptInviteSheetState extends State<_AcceptInviteSheet> {
   }
 
   void _submit([String? raw]) {
-    final code = InviteDeepLinkService.extractCompanionCode(
-          raw ?? _controller.text,
-        ) ??
+    final code =
+        InviteDeepLinkService.extractCompanionCode(raw ?? _controller.text) ??
         (raw ?? _controller.text).trim().toUpperCase();
     if (code.isEmpty) return;
     Navigator.pop(context, code);
   }
 
   Future<void> _scanQr() async {
-    final code = await Navigator.of(context).push<String>(
-      MaterialPageRoute(builder: (_) => const _QrScanPage()),
-    );
+    final code = await Navigator.of(
+      context,
+    ).push<String>(MaterialPageRoute(builder: (_) => const _QrScanPage()));
     if (!mounted || code == null || code.isEmpty) return;
     _submit(code);
   }
 
   @override
   Widget build(BuildContext context) {
-    final bottom = MediaQuery.viewPaddingOf(context).bottom;
-    final keyboard = MediaQuery.viewInsetsOf(context).bottom;
-
-    return Padding(
-      padding: EdgeInsets.only(bottom: keyboard),
-      child: Container(
-        margin: const EdgeInsets.fromLTRB(AppSpace.md, 0, AppSpace.md, AppSpace.md),
-        padding: EdgeInsets.fromLTRB(
-          AppSpace.xxl,
-          AppSpace.screen,
-          AppSpace.xxl,
-          AppSpace.screen + bottom,
-        ),
-        decoration: BoxDecoration(
-          color: AppColors.night,
-          borderRadius: BorderRadius.circular(AppRadii.xl),
-          border: Border.all(color: AppColors.accent.withValues(alpha: 0.65)),
-        ),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Center(
-              child: Container(
-                width: 40,
-                height: 4,
-                decoration: BoxDecoration(
-                  color: Colors.white.withValues(alpha: 0.2),
-                  borderRadius: BorderRadius.circular(AppRadii.pill),
-                ),
-              ),
-            ),
-            const SizedBox(height: 18),
-            Text(
-              'Aceitar convite',
-              textAlign: TextAlign.center,
-              style: AppTypography.display(
+    final a = Appearance.of(context);
+    return AppSheetPanel(
+      tint: AppColors.accent,
+      padding: const EdgeInsets.fromLTRB(
+        AppSpace.xxl,
+        AppSpace.md,
+        AppSpace.xxl,
+        AppSpace.screen,
+      ),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          const AppSheetHeader(
+            title: 'Aceitar convite',
+            subtitle:
+                'Se você copiou o código no WhatsApp, ele já aparece aqui',
+            center: true,
+          ),
+          const SizedBox(height: AppSpace.screen),
+          TextField(
+            controller: _controller,
+            autofocus: _controller.text.isEmpty,
+            textCapitalization: TextCapitalization.characters,
+            textAlign: TextAlign.center,
+            maxLength: 8,
+            style: AppTypography.title(
+              color: a.text,
+              size: 24,
+            ).copyWith(letterSpacing: 4),
+            decoration: InputDecoration(
+              counterText: '',
+              hintText: 'Código',
+              hintStyle: AppTypography.title(
+                color: a.textFaint,
                 size: 24,
                 weight: FontWeight.w700,
-                color: Colors.white,
-              ),
-            ),
-            const SizedBox(height: AppSpace.xs),
-            Text(
-              'Se você copiou o código no WhatsApp, ele já aparece aqui',
-              textAlign: TextAlign.center,
-              style: AppTypography.body(
-                size: 12,
-                color: Colors.white.withValues(alpha: 0.6),
-              ),
-            ),
-            const SizedBox(height: AppSpace.screen),
-            TextField(
-              controller: _controller,
-              autofocus: _controller.text.isEmpty,
-              textCapitalization: TextCapitalization.characters,
-              textAlign: TextAlign.center,
-              maxLength: 8,
-              style: AppTypography.title(
-                color: Colors.white,
-                size: 22,
-                weight: FontWeight.w800,
               ).copyWith(letterSpacing: 4),
-              decoration: InputDecoration(
-                counterText: '',
-                hintText: 'CÓDIGO',
-                hintStyle: AppTypography.title(
-                  color: Colors.white.withValues(alpha: 0.25),
-                  size: 22,
-                  weight: FontWeight.w700,
-                ).copyWith(letterSpacing: 4),
-                filled: true,
-                fillColor: Colors.white.withValues(alpha: 0.06),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(AppRadii.md),
-                  borderSide: BorderSide(
-                    color: AppColors.accent.withValues(alpha: 0.35),
-                  ),
-                ),
-                enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(AppRadii.md),
-                  borderSide: BorderSide(
-                    color: AppColors.accent.withValues(alpha: 0.35),
-                  ),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(AppRadii.md),
-                  borderSide: const BorderSide(color: AppColors.accent),
+              filled: true,
+              fillColor: a.insetFill,
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(AppRadii.md),
+                borderSide: BorderSide(
+                  color: AppColors.accent.withValues(alpha: 0.35),
                 ),
               ),
-              onSubmitted: _submit,
+              enabledBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(AppRadii.md),
+                borderSide: BorderSide(
+                  color: AppColors.accent.withValues(alpha: 0.35),
+                ),
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(AppRadii.md),
+                borderSide: const BorderSide(color: AppColors.accent),
+              ),
             ),
-            const SizedBox(height: AppSpace.md),
-            OutlineCta(
-              label: 'Escanear QR',
-              onTap: _scanQr,
-              leading: CinematicGlyph.qr,
-            ),
-            const SizedBox(height: AppSpace.md),
-            CopperCta(
-              label: 'Entrar',
-              onTap: () => _submit(),
-              trailing: null,
-              dense: true,
-            ),
-          ],
-        ),
+            onSubmitted: _submit,
+          ),
+          const SizedBox(height: AppSpace.md),
+          OutlineCta(
+            label: 'Escanear QR',
+            onTap: _scanQr,
+            leading: CinematicGlyph.qr,
+          ),
+          const SizedBox(height: AppSpace.md),
+          CopperCta(
+            label: 'Entrar',
+            onTap: () => _submit(),
+            trailing: null,
+            dense: true,
+          ),
+        ],
       ),
     );
   }
@@ -226,14 +191,11 @@ class _QrScanPageState extends State<_QrScanPage> {
     return Scaffold(
       backgroundColor: Colors.black,
       appBar: AppBar(
-        backgroundColor: Colors.black,
+        backgroundColor: AppColors.night,
         foregroundColor: Colors.white,
         title: Text(
           'Escanear QR',
-          style: AppTypography.display(
-            weight: FontWeight.w700,
-            size: 22,
-          ),
+          style: AppTypography.title(size: 18, color: Colors.white),
         ),
       ),
       body: Stack(

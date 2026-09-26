@@ -3,6 +3,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:trilha_app/services/trail_suggestion_service.dart';
 import 'package:trilha_app/theme/app_theme.dart';
 import 'package:trilha_app/widgets/coming_soon_trails_card.dart';
+import 'package:trilha_app/widgets/ui_primitives.dart';
 
 void main() {
   test('normalize trims, collapses spaces and clips at max', () {
@@ -37,7 +38,36 @@ void main() {
     );
   });
 
-  testWidgets('coming soon card shows launch copy and suggest action', (
+  testWidgets('coming soon card suggests a trail or an author', (tester) async {
+    var trailTaps = 0;
+    var authorTaps = 0;
+    await tester.pumpWidget(
+      MaterialApp(
+        theme: AppTheme.dark,
+        home: Scaffold(
+          body: ComingSoonTrailsCard(
+            onSuggest: () => trailTaps++,
+            onSuggestAuthor: () => authorTaps++,
+          ),
+        ),
+      ),
+    );
+
+    expect(find.text('Lançamentos em breve'), findsOneWidget);
+    expect(find.text('Sugerir uma trilha'), findsOneWidget);
+    expect(find.text('Sugerir um autor'), findsOneWidget);
+
+    await tester.tap(find.text('Lançamentos em breve'));
+    expect(trailTaps, 1);
+    expect(authorTaps, 0);
+
+    await tester.tap(find.text('Sugerir um autor'));
+    await tester.pump();
+    expect(trailTaps, 1);
+    expect(authorTaps, 1);
+  });
+
+  testWidgets('donate card is a solid gift band and opens donate', (
     tester,
   ) async {
     var taps = 0;
@@ -45,15 +75,16 @@ void main() {
       MaterialApp(
         theme: AppTheme.dark,
         home: Scaffold(
-          body: ComingSoonTrailsCard(onSuggest: () => taps++),
+          body: DonateCard(onDonate: () => taps++),
         ),
       ),
     );
 
-    expect(find.text('Lançamentos em breve'), findsOneWidget);
-    expect(find.text('SUGERIR UMA TRILHA'), findsOneWidget);
+    expect(find.text('Ajude a continuar'), findsOneWidget);
+    expect(find.text('Doar'), findsOneWidget);
+    expect(find.byType(CopperCta), findsOneWidget);
 
-    await tester.tap(find.text('Lançamentos em breve'));
+    await tester.tap(find.text('Doar'));
     expect(taps, 1);
   });
 }

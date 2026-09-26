@@ -78,7 +78,7 @@ class PilgrimChestRewardDefs {
       id: 'chest:voz',
       tier: PilgrimMedalTier.gold,
       title: 'Voz da caravana',
-      message: 'Sua constância já fala mais alto que qualquer palavra.',
+      message: 'Sua sequência já fala mais alto que qualquer palavra.',
       glyph: CinematicGlyph.share,
       weight: 3,
     ),

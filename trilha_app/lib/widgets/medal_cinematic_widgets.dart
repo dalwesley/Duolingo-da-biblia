@@ -41,14 +41,21 @@ class MedalSpotlightPainter extends CustomPainter {
       ..strokeWidth = 1.2;
     for (var i = 0; i < 6; i++) {
       final angle = (i / 6) * math.pi * 2 + breath * 0.3;
-      final end = center + Offset(math.cos(angle) * size.width * 0.55, math.sin(angle) * size.height * 0.4);
+      final end =
+          center +
+          Offset(
+            math.cos(angle) * size.width * 0.55,
+            math.sin(angle) * size.height * 0.4,
+          );
       canvas.drawLine(center, end, rayPaint);
     }
   }
 
   @override
   bool shouldRepaint(covariant MedalSpotlightPainter old) =>
-      old.accent != accent || old.breath != breath || old.intensity != intensity;
+      old.accent != accent ||
+      old.breath != breath ||
+      old.intensity != intensity;
 }
 
 /// Emblema central com pulso — medalha em destaque.
@@ -165,6 +172,7 @@ class MedalRingProgress extends StatelessWidget {
             '$value',
             style: AppTypography.title(
               size: size * 0.28,
+              exact: true,
               weight: FontWeight.w900,
               color: accent,
             ),
@@ -173,8 +181,9 @@ class MedalRingProgress extends StatelessWidget {
             '/$total',
             style: AppTypography.label(
               size: size * 0.12,
+              exact: true,
               letterSpacing: 0.2,
-              color: a.textMuted(0.42),
+              color: a.textFaint,
             ),
           ),
         ],
@@ -268,9 +277,7 @@ class _MedalRingPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant _MedalRingPainter old) =>
-      old.progress != progress ||
-      old.accent != accent ||
-      old.stroke != stroke;
+      old.progress != progress || old.accent != accent || old.stroke != stroke;
 }
 
 /// Medallion compacto para o grid do cofre — moeda metálica por material.
@@ -366,108 +373,105 @@ class _MedalTierPalette {
     if (!unlocked) return _MedalTierPalette.locked();
     return switch (tier) {
       PilgrimMedalTier.iron => const _MedalTierPalette(
-          rimLight: Color(0xFFB8C0CA),
-          rimMid: Color(0xFF7A8490),
-          rimDark: Color(0xFF4A525C),
-          faceLight: Color(0xFF9AA5B2),
-          faceMid: Color(0xFF6B7580),
-          faceDark: Color(0xFF3D4550),
-          glyph: Color(0xFFE8EDF2),
-          glow: AppColors.medalIron,
-        ),
+        rimLight: Color(0xFFB8C0CA),
+        rimMid: Color(0xFF7A8490),
+        rimDark: Color(0xFF4A525C),
+        faceLight: Color(0xFF9AA5B2),
+        faceMid: Color(0xFF6B7580),
+        faceDark: Color(0xFF3D4550),
+        glyph: Color(0xFFE8EDF2),
+        glow: AppColors.medalIron,
+      ),
       PilgrimMedalTier.bronze => const _MedalTierPalette(
-          rimLight: Color(0xFFE8A86A),
-          rimMid: Color(0xFFC97B4A),
-          rimDark: Color(0xFF7A4528),
-          faceLight: Color(0xFFD4925E),
-          faceMid: Color(0xFFA86538),
-          faceDark: Color(0xFF5C3218),
-          glyph: Color(0xFFFFE8D4),
-          glow: AppColors.medalBronze,
-        ),
+        rimLight: Color(0xFFE8A86A),
+        rimMid: Color(0xFFC97B4A),
+        rimDark: Color(0xFF7A4528),
+        faceLight: Color(0xFFD4925E),
+        faceMid: Color(0xFFA86538),
+        faceDark: Color(0xFF5C3218),
+        glyph: Color(0xFFFFE8D4),
+        glow: AppColors.medalBronze,
+      ),
       PilgrimMedalTier.silver => const _MedalTierPalette(
-          rimLight: Color(0xFFD0D6E0),
-          rimMid: Color(0xFFB0B6C4),
-          rimDark: Color(0xFF7A8494),
-          faceLight: Color(0xFFC8CED8),
-          faceMid: Color(0xFFA8B0C0),
-          faceDark: Color(0xFF5A6270),
-          glyph: Color(0xFFE8EDF2),
-          glow: AppColors.medalSilver,
-        ),
+        rimLight: Color(0xFFD0D6E0),
+        rimMid: Color(0xFFB0B6C4),
+        rimDark: Color(0xFF7A8494),
+        faceLight: Color(0xFFC8CED8),
+        faceMid: Color(0xFFA8B0C0),
+        faceDark: Color(0xFF5A6270),
+        glyph: Color(0xFFE8EDF2),
+        glow: AppColors.medalSilver,
+      ),
       PilgrimMedalTier.gold => const _MedalTierPalette(
-          rimLight: Color(0xFFE8C878),
-          rimMid: Color(0xFFE0B868),
-          rimDark: Color(0xFFB8862E),
-          faceLight: Color(0xFFD4B060),
-          faceMid: Color(0xFFC9A048),
-          faceDark: Color(0xFF8A6020),
-          glyph: Color(0xFFF4E8C8),
-          glow: AppColors.medalGold,
-        ),
+        rimLight: Color(0xFFE8C878),
+        rimMid: Color(0xFFE0B868),
+        rimDark: Color(0xFFB8862E),
+        faceLight: Color(0xFFD4B060),
+        faceMid: Color(0xFFC9A048),
+        faceDark: Color(0xFF8A6020),
+        glyph: Color(0xFFF4E8C8),
+        glow: AppColors.medalGold,
+      ),
       PilgrimMedalTier.platinum => const _MedalTierPalette(
-          rimLight: Color(0xFFD0D6E0),
-          rimMid: Color(0xFFC4CAD6),
-          rimDark: Color(0xFF98A4B8),
-          faceLight: Color(0xFFD4DAE4),
-          faceMid: Color(0xFFB8C0D0),
-          faceDark: Color(0xFF7888A0),
-          glyph: Color(0xFFE8EDF2),
-          glow: AppColors.medalPlatinum,
-        ),
+        rimLight: Color(0xFFD0D6E0),
+        rimMid: Color(0xFFC4CAD6),
+        rimDark: Color(0xFF98A4B8),
+        faceLight: Color(0xFFD4DAE4),
+        faceMid: Color(0xFFB8C0D0),
+        faceDark: Color(0xFF7888A0),
+        glyph: Color(0xFFE8EDF2),
+        glow: AppColors.medalPlatinum,
+      ),
       PilgrimMedalTier.diamond => const _MedalTierPalette(
-          rimLight: Color(0xFFA8D4E0),
-          rimMid: Color(0xFF7AB4C4),
-          rimDark: Color(0xFF3A9CB8),
-          faceLight: Color(0xFF88C4D4),
-          faceMid: Color(0xFF5AA8BC),
-          faceDark: Color(0xFF2878A0),
-          glyph: Color(0xFFD0E8F0),
-          glow: AppColors.medalDiamond,
-        ),
+        rimLight: Color(0xFFA8D4E0),
+        rimMid: Color(0xFF7AB4C4),
+        rimDark: Color(0xFF3A9CB8),
+        faceLight: Color(0xFF88C4D4),
+        faceMid: Color(0xFF5AA8BC),
+        faceDark: Color(0xFF2878A0),
+        glyph: Color(0xFFD0E8F0),
+        glow: AppColors.medalDiamond,
+      ),
       PilgrimMedalTier.mirra => const _MedalTierPalette(
-          rimLight: Color(0xFFD4B088),
-          rimMid: Color(0xFFB88A5A),
-          rimDark: Color(0xFF6A4828),
-          faceLight: Color(0xFFC8A070),
-          faceMid: Color(0xFF9A7048),
-          faceDark: Color(0xFF4A3018),
-          glyph: Color(0xFFFFECD8),
-          glow: AppColors.medalMirra,
-        ),
+        rimLight: Color(0xFFD4B088),
+        rimMid: Color(0xFFB88A5A),
+        rimDark: Color(0xFF6A4828),
+        faceLight: Color(0xFFC8A070),
+        faceMid: Color(0xFF9A7048),
+        faceDark: Color(0xFF4A3018),
+        glyph: Color(0xFFFFECD8),
+        glow: AppColors.medalMirra,
+      ),
       PilgrimMedalTier.aurora => const _MedalTierPalette(
-          rimLight: Color(0xFFE4D8FF),
-          rimMid: Color(0xFF9B6DFF),
-          rimDark: Color(0xFF4C2A9A),
-          faceLight: Color(0xFFC4A6FF),
-          faceMid: Color(0xFF7C4DFF),
-          faceDark: Color(0xFF32167A),
-          glyph: Color(0xFFF4EEFF),
-          glow: AppColors.medalAurora,
-        ),
+        rimLight: Color(0xFFE4D8FF),
+        rimMid: Color(0xFF9B6DFF),
+        rimDark: Color(0xFF4C2A9A),
+        faceLight: Color(0xFFC4A6FF),
+        faceMid: Color(0xFF7C4DFF),
+        faceDark: Color(0xFF32167A),
+        glyph: Color(0xFFF4EEFF),
+        glow: AppColors.medalAurora,
+      ),
     };
   }
 
   factory _MedalTierPalette.locked() => _MedalTierPalette(
-        rimLight: const Color(0xFF4A5260),
-        rimMid: const Color(0xFF2E3540),
-        rimDark: const Color(0xFF181C22),
-        faceLight: const Color(0xFF323A48),
-        faceMid: const Color(0xFF222830),
-        faceDark: const Color(0xFF12161C),
-        glyph: Colors.white.withValues(alpha: 0.35),
-        glow: const Color(0xFF3A4250),
-      );
+    rimLight: const Color(0xFF4A5260),
+    rimMid: const Color(0xFF2E3540),
+    rimDark: const Color(0xFF181C22),
+    faceLight: const Color(0xFF323A48),
+    faceMid: const Color(0xFF222830),
+    faceDark: const Color(0xFF12161C),
+    glyph: Colors.white.withValues(alpha: 0.35),
+    glow: const Color(0xFF3A4250),
+  );
 }
 
 class _MedallionCoinPainter extends CustomPainter {
   final _MedalTierPalette palette;
   final bool unlocked;
 
-  const _MedallionCoinPainter({
-    required this.palette,
-    required this.unlocked,
-  });
+  const _MedallionCoinPainter({required this.palette, required this.unlocked});
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -610,7 +614,8 @@ class _MedallionCoinPainter extends CustomPainter {
       old.palette.rimMid != palette.rimMid || old.unlocked != unlocked;
 }
 
-/// Emblema da família — uma moeda, sem escada de pontos.
+/// Emblema da família — moeda no centro, halo com o avanço na escada
+/// (Bronze → Prata → Ouro) e o material atual escrito embaixo.
 class MedalTrackEmblem extends StatelessWidget {
   final PilgrimTrackState trackState;
   final VoidCallback onTap;
@@ -634,34 +639,72 @@ class MedalTrackEmblem extends StatelessWidget {
         ? tierColor(current.tier)
         : a.textMuted(0.38);
     final tile = PilgrimMedalTile.fromTrack(trackState);
-    final diameter = compact ? 42.0 : 54.0;
+    // Cabe 5 por linha num cartão de 360px (halo incluso).
+    final diameter = compact ? 38.0 : 46.0;
+    final halo = diameter + 12;
+    final tierText = started && current != null
+        ? (trackState.isComplete ? 'Completa' : tierLabel(current.tier))
+        : 'A acender';
 
-    return Material(
-      color: Colors.transparent,
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(AppRadii.md),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: 2, horizontal: 1),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              MedalVaultMedallion(tile: tile, size: diameter),
-              const SizedBox(height: 6),
-              Text(
-                trackState.track.title,
-                textAlign: TextAlign.center,
-                maxLines: 1,
-                overflow: TextOverflow.ellipsis,
-                style: AppTypography.label(
-                  size: compact ? 8 : 9,
-                  letterSpacing: 0.25,
-                  color: featured
-                      ? accent
-                      : (started ? a.textMuted(0.78) : a.textMuted(0.42)),
+    return Semantics(
+      button: true,
+      label: '${trackState.track.title}, $tierText',
+      excludeSemantics: true,
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: onTap,
+          borderRadius: BorderRadius.circular(AppRadii.md),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(vertical: 4, horizontal: 1),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                DecoratedBox(
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    boxShadow: featured || trackState.isComplete
+                        ? [
+                            BoxShadow(
+                              color: accent.withValues(alpha: 0.35),
+                              blurRadius: 18,
+                            ),
+                          ]
+                        : null,
+                  ),
+                  child: MedalHaloRing(
+                    progress: trackState.progress,
+                    accent: started ? accent : a.textMuted(0.25),
+                    size: halo,
+                    stroke: 2.5,
+                    child: MedalVaultMedallion(tile: tile, size: diameter),
+                  ),
                 ),
-              ),
-            ],
+                const SizedBox(height: 6),
+                Text(
+                  trackState.track.title,
+                  textAlign: TextAlign.center,
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: AppTypography.body(
+                    size: 11,
+                    weight: FontWeight.w800,
+                    color: started ? a.text : a.textFaint,
+                  ).copyWith(height: 1.15),
+                ),
+                const SizedBox(height: 1),
+                Text(
+                  tierText,
+                  textAlign: TextAlign.center,
+                  maxLines: 1,
+                  style: AppTypography.body(
+                    size: 11,
+                    weight: FontWeight.w700,
+                    color: started ? accent : a.textFaint,
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),

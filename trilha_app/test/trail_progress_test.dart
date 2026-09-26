@@ -128,7 +128,7 @@ void main() {
         liveDone: 7,
         total: 23,
       ),
-      'Observação · 7 de 23 passos',
+      'Observação · 7 de 23 cenas',
     );
     expect(
       TrailProgress.isReplayingUnclearedMode(

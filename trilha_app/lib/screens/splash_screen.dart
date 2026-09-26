@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:provider/provider.dart';
 import '../services/analytics_service.dart';
@@ -12,6 +11,7 @@ import '../services/progress_service.dart';
 import '../services/room_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../widgets/act_feel.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/stway_brand.dart';
 import '../widgets/tilt_star_sky.dart';
@@ -107,7 +107,7 @@ class _SplashScreenState extends State<SplashScreen>
     final climax = _isReturnVisit ? 0.35 : 0.4;
     if (!_hitClimax && _master.value >= climax) {
       _hitClimax = true;
-      HapticFeedback.mediumImpact();
+      ActHaptics.confirm();
     }
   }
 
@@ -273,14 +273,12 @@ class _SplashScreenState extends State<SplashScreen>
                           const StwayTagline(size: 11),
                           const SizedBox(height: 10),
                           Text(
-                            'A Bíblia em missões',
+                            'A Bíblia, cena a cena',
                             textAlign: TextAlign.center,
                             style: AppTypography.title(
                               size: 16,
                               weight: FontWeight.w700,
-                              color: AppColors.textOnDark.withValues(
-                                alpha: 0.92,
-                              ),
+                              color: appearance.text,
                             ),
                           ),
                         ],
@@ -324,7 +322,7 @@ class _SplashScreenState extends State<SplashScreen>
                           style: AppTypography.label(
                             size: 10,
                             letterSpacing: 1.4,
-                            color: AppColors.textOnDark.withValues(alpha: 0.35),
+                            color: appearance.textFaint,
                           ),
                         ),
                         if (_versionLabel != null) ...[

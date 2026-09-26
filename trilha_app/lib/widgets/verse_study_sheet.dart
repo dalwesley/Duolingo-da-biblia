@@ -9,10 +9,13 @@ import '../services/bible_service.dart';
 import '../services/bible_study_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/answer_phrase.dart';
+import '../utils/appearance.dart';
 import '../utils/morphology.dart';
 import '../utils/strong_id.dart';
 import '../utils/strong_text.dart';
 import '../utils/study_gloss.dart';
+import 'act_feel.dart';
+import 'app_sheet.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
 
@@ -25,10 +28,8 @@ Future<void> showVerseStudySheet(
   required String text,
   void Function(int bookIndex, int chapter, int verse)? onOpenRef,
 }) {
-  return showModalBottomSheet<void>(
-    context: context,
-    isScrollControlled: true,
-    backgroundColor: Colors.transparent,
+  return showAppSheet<void>(
+    context,
     builder: (_) => _VerseStudySheet(
       bookIndex: bookIndex,
       bookName: bookName,
@@ -56,7 +57,7 @@ Future<void> showVerseStudyFromReference(
   final verse = ref.verseStart ?? 1;
   final text =
       await BibleService.instance.verseText(book.abbrev, ref.chapter, verse) ??
-          '';
+      '';
   if (!context.mounted) return;
 
   await showVerseStudySheet(
@@ -101,79 +102,60 @@ Future<void> showVersePreviewDialog(
       ? '$name $chapter:$verse–$end'
       : '$name $chapter:$verse';
 
-  await showDialog<void>(
-    context: context,
+  await showAppDialog<void>(
+    context,
     builder: (ctx) {
-      return AlertDialog(
-        backgroundColor: AppColors.sheet,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(AppRadii.lg),
-        ),
-        title: Text(
-          refLabel,
-          style: AppTypography.title(
-            color: AppColors.accent,
-            weight: FontWeight.w800,
-            size: 16,
+      final a = Appearance.of(ctx);
+      return AppDialog(
+        title: refLabel,
+        content: ConstrainedBox(
+          constraints: BoxConstraints(
+            maxHeight: MediaQuery.sizeOf(ctx).height * 0.5,
           ),
-        ),
-        content: SingleChildScrollView(
-          child: verses.isEmpty
-              ? Text(
-                  'Versículo indisponível nesta tradução.',
-                  style: AppTypography.body(
-                    color: AppColors.textOnDark.withValues(alpha: 0.65),
-                    height: 1.35,
-                  ),
-                )
-              : Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    for (var i = 0; i < verses.length; i++) ...[
-                      if (i > 0) const SizedBox(height: 10),
-                      if (verses.length > 1)
+          child: SingleChildScrollView(
+            child: verses.isEmpty
+                ? Text(
+                    'Versículo indisponível nesta tradução.',
+                    style: AppTypography.body(
+                      color: a.textSecondary,
+                      height: 1.35,
+                    ),
+                  )
+                : Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      for (var i = 0; i < verses.length; i++) ...[
+                        if (i > 0) const SizedBox(height: 10),
+                        if (verses.length > 1)
+                          Text(
+                            '${verse + i}',
+                            style: AppTypography.label(
+                              size: 11,
+                              color: AppColors.accent.withValues(alpha: 0.8),
+                            ),
+                          ),
                         Text(
-                          '${verse + i}',
-                          style: AppTypography.label(
-                            size: 11,
-                            weight: FontWeight.w800,
-                            color: AppColors.accent.withValues(alpha: 0.8),
+                          verses[i],
+                          style: AppTypography.verse(
+                            size: 20,
+                            height: 1.45,
+                            weight: FontWeight.w600,
+                            color: a.text,
                           ),
                         ),
+                      ],
+                      const SizedBox(height: 10),
                       Text(
-                        verses[i],
-                        style: AppTypography.verse(
-                          size: 20,
-                          height: 1.45,
-                          weight: FontWeight.w600,
-                          color: AppColors.textOnDark.withValues(alpha: 0.92),
-                        ),
+                        BibleService.translationName,
+                        style: AppTypography.body(size: 11, color: a.textFaint),
                       ),
                     ],
-                    const SizedBox(height: 10),
-                    Text(
-                      BibleService.translationName,
-                      style: AppTypography.body(
-                        size: 11,
-                        color: AppColors.textOnDark.withValues(alpha: 0.4),
-                      ),
-                    ),
-                  ],
-                ),
-        ),
-        actionsAlignment: MainAxisAlignment.spaceBetween,
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(ctx),
-            child: Text(
-              'Fechar',
-              style: AppTypography.title(
-                weight: FontWeight.w700,
-                color: AppColors.textOnDark.withValues(alpha: 0.65),
-              ),
-            ),
+                  ),
           ),
+        ),
+        actions: [
+          TextCta(label: 'Fechar', onTap: () => Navigator.pop(ctx)),
           CopperCta(
             label: 'Ir para o texto',
             onTap: () {
@@ -183,8 +165,6 @@ Future<void> showVersePreviewDialog(
             },
             trailing: null,
             dense: true,
-            expanded: false,
-            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
           ),
         ],
       );
@@ -287,7 +267,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
 
   Future<void> _selectToken(StudyToken token) async {
     if (_selected?.pos == token.pos && !_loadingStrong) return;
-    HapticFeedback.selectionClick();
+    ActHaptics.tap();
     setState(() {
       _selected = token;
       _loadingStrong = true;
@@ -326,7 +306,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
   }
 
   Future<void> _filterConcordBook(int bookIndex) async {
-    HapticFeedback.selectionClick();
+    ActHaptics.tap();
     if (bookIndex == widget.bookIndex) {
       setState(() {
         _filterBook = bookIndex;
@@ -359,7 +339,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
 
   Future<void> _copyStrong(String id) async {
     await Clipboard.setData(ClipboardData(text: id));
-    HapticFeedback.lightImpact();
+    ActHaptics.light();
     if (!mounted) return;
     setState(() => _copied = true);
     await Future<void>.delayed(const Duration(milliseconds: 1400));
@@ -368,10 +348,12 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
 
   Future<void> _shareStrong(StudyToken token, StrongEntry? entry) async {
     final view = _viewFor(token, entry);
-    final lemma =
-        (entry?.lemma.isNotEmpty == true) ? entry!.lemma : token.surface;
-    final translit =
-        (entry?.translit.isNotEmpty == true) ? entry!.translit : token.translit;
+    final lemma = (entry?.lemma.isNotEmpty == true)
+        ? entry!.lemma
+        : token.surface;
+    final translit = (entry?.translit.isNotEmpty == true)
+        ? entry!.translit
+        : token.translit;
     final gloss = view.gloss.isNotEmpty ? view.gloss : token.gloss;
     final body = [
       lemma,
@@ -381,67 +363,33 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
       '$_ref — via Stway',
     ].join('\n');
     await SharePlus.instance.share(
-      ShareParams(
-        text: body,
-        subject: '${token.strong} — $_ref',
-      ),
+      ShareParams(text: body, subject: '${token.strong} — $_ref'),
     );
   }
 
   @override
   Widget build(BuildContext context) {
     final bottom = MediaQuery.paddingOf(context).bottom;
-    final height = MediaQuery.sizeOf(context).height * 0.92;
+    // Mesma altura total de antes: alça, margens e área segura do painel
+    // saem da conta do conteúdo.
+    final height = MediaQuery.sizeOf(context).height * 0.92 - bottom - 40;
+    final a = Appearance.of(context);
 
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(10, 0, 10, 10),
-      child: ClipRRect(
-        borderRadius: BorderRadius.circular(AppRadii.lg),
-        child: Container(
-          height: height,
-          decoration: BoxDecoration(
-            color: AppColors.nightMid,
-            borderRadius: BorderRadius.circular(AppRadii.lg),
-            border: Border.all(color: AppColors.textOnDark.withValues(alpha: 0.1)),
-          ),
-          child: Column(
-            children: [
-            const SizedBox(height: 10),
-            Container(
-              width: 36,
-              height: 4,
-              decoration: BoxDecoration(
-                color: AppColors.textOnDark.withValues(alpha: 0.25),
-                borderRadius: BorderRadius.circular(2),
-              ),
-            ),
+    return AppSheetPanel(
+      padding: const EdgeInsets.only(top: AppSpace.sm),
+      child: SizedBox(
+        height: height,
+        child: Column(
+          children: [
             Padding(
-              padding: const EdgeInsets.fromLTRB(18, 12, 6, 4),
+              padding: const EdgeInsets.fromLTRB(18, 0, 6, 4),
               child: Row(
                 children: [
                   Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'ESTUDAR',
-                          style: AppTypography.label(
-                            size: 10,
-                            weight: FontWeight.w900,
-                            letterSpacing: 1.8,
-                            color: AppColors.accent,
-                          ),
-                        ),
-                        const SizedBox(height: 2),
-                        Text(
-                          _ref,
-                          style: AppTypography.display(
-                            size: 24,
-                            weight: FontWeight.w700,
-                            color: AppColors.textOnDark,
-                          ),
-                        ),
-                      ],
+                    child: AppSheetHeader(
+                      eyebrow: 'Estudar',
+                      eyebrowColor: AppColors.accent,
+                      title: _ref,
                     ),
                   ),
                   IconButton(
@@ -449,7 +397,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                     icon: CinematicIcon(
                       glyph: CinematicGlyph.close,
                       size: 22,
-                      accent: AppColors.textOnDark.withValues(alpha: 0.6),
+                      accent: a.textSecondary,
                       framed: false,
                     ),
                   ),
@@ -475,7 +423,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                               : 'Não foi possível carregar o estudo.',
                           textAlign: TextAlign.center,
                           style: AppTypography.body(
-                            color: AppColors.textOnDark.withValues(alpha: 0.7),
+                            color: a.textSecondary,
                             height: 1.4,
                           ),
                         ),
@@ -489,9 +437,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                     return Center(
                       child: Text(
                         'Sem dados de originais para este versículo.',
-                        style: AppTypography.body(
-                          color: AppColors.textOnDark.withValues(alpha: 0.55),
-                        ),
+                        style: AppTypography.body(color: a.textFaint),
                       ),
                     );
                   }
@@ -539,7 +485,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                         ),
                       Expanded(
                         child: SingleChildScrollView(
-                          padding: EdgeInsets.fromLTRB(16, 8, 16, 20 + bottom),
+                          padding: const EdgeInsets.fromLTRB(16, 8, 16, 20),
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.stretch,
                             children: [
@@ -565,11 +511,9 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                               Text(
                                 BibleStudyService.attribution,
                                 style: AppTypography.body(
-                                  size: 10,
+                                  size: 11,
                                   height: 1.4,
-                                  color: AppColors.textOnDark.withValues(
-                                    alpha: 0.32,
-                                  ),
+                                  color: a.textFaint,
                                 ),
                               ),
                             ],
@@ -581,8 +525,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                 },
               ),
             ),
-            ],
-          ),
+          ],
         ),
       ),
     );
@@ -607,14 +550,11 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
   }
 
   List<VerseWordLink> _verseLinks(List<StudyToken> tokens) {
-    return linkVerseToTokens(
-      widget.text,
-      [
-        for (final t in tokens)
-          if (!isPunctuationStrong(t.strong))
-            TokenNeedle(t.pos, _viewFor(t, null).needles),
-      ],
-    );
+    return linkVerseToTokens(widget.text, [
+      for (final t in tokens)
+        if (!isPunctuationStrong(t.strong))
+          TokenNeedle(t.pos, _viewFor(t, null).needles),
+    ]);
   }
 
   Widget _tabBody(
@@ -662,7 +602,7 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
                 'Sem conexões catalogadas para este versículo.',
                 style: AppTypography.body(
                   size: 13,
-                  color: AppColors.textOnDark.withValues(alpha: 0.5),
+                  color: Appearance.of(context).textFaint,
                 ),
               )
             else
@@ -695,19 +635,10 @@ class _VerseStudySheetState extends State<_VerseStudySheet> {
           padding: const EdgeInsets.only(bottom: 8),
           child: _CrossRefTile(
             label: _cite(books, r.bookIndex, r.chapter, r.verse, r.verseEnd),
-            snippet: _verseSnippet(
-              books,
-              r.bookIndex,
-              r.chapter,
-              r.verse,
-            ),
+            snippet: _verseSnippet(books, r.bookIndex, r.chapter, r.verse),
             strength: maxVotes <= 0 ? 0 : r.votes / maxVotes,
-            onTap: () => _openRef(
-              r.bookIndex,
-              r.chapter,
-              r.verse,
-              verseEnd: r.verseEnd,
-            ),
+            onTap: () =>
+                _openRef(r.bookIndex, r.chapter, r.verse, verseEnd: r.verseEnd),
           ),
         ),
     ];
@@ -723,20 +654,13 @@ class _StudyLoading extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          const SizedBox(
-            width: 28,
-            height: 28,
-            child: CircularProgressIndicator(
-              color: AppColors.accent,
-              strokeWidth: 2.4,
-            ),
-          ),
+          const AppSpinner(),
           const SizedBox(height: 14),
           Text(
             'Abrindo o léxico…',
             style: AppTypography.body(
               size: 13,
-              color: AppColors.textOnDark.withValues(alpha: 0.5),
+              color: Appearance.of(context).textFaint,
             ),
           ),
         ],
@@ -777,11 +701,12 @@ class _VerseQuoteState extends State<_VerseQuote> {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     final base = AppTypography.verse(
       size: 20,
       height: 1.42,
       weight: FontWeight.w600,
-      color: AppColors.textOnDark.withValues(alpha: 0.92),
+      color: a.text,
     );
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -792,7 +717,7 @@ class _VerseQuoteState extends State<_VerseQuote> {
           margin: const EdgeInsets.only(top: 4),
           decoration: BoxDecoration(
             color: widget.accent,
-            borderRadius: BorderRadius.circular(2),
+            borderRadius: BorderRadius.circular(AppRadii.hair),
           ),
         ),
         const SizedBox(width: 12),
@@ -808,6 +733,7 @@ class _VerseQuoteState extends State<_VerseQuote> {
   }
 
   TextSpan _spans(TextStyle base) {
+    final a = Appearance.of(context);
     for (final r in _taps) {
       r.dispose();
     }
@@ -835,9 +761,7 @@ class _VerseQuoteState extends State<_VerseQuote> {
           text: widget.text.substring(link.start, link.end),
           recognizer: tap,
           style: base.copyWith(
-            color: on
-                ? widget.accent
-                : AppColors.textOnDark.withValues(alpha: 0.95),
+            color: on ? widget.accent : a.text,
             fontWeight: on ? FontWeight.w800 : FontWeight.w600,
             backgroundColor: on
                 ? widget.accent.withValues(alpha: 0.22)
@@ -851,9 +775,7 @@ class _VerseQuoteState extends State<_VerseQuote> {
       cursor = link.end;
     }
     if (cursor < widget.text.length) {
-      children.add(
-        TextSpan(text: widget.text.substring(cursor), style: base),
-      );
+      children.add(TextSpan(text: widget.text.substring(cursor), style: base));
     }
     return TextSpan(children: children);
   }
@@ -933,26 +855,27 @@ class _StudyTabs extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     return Padding(
       padding: const EdgeInsets.fromLTRB(16, 6, 16, 8),
       child: DecoratedBox(
         decoration: BoxDecoration(
-          color: Colors.white.withValues(alpha: 0.05),
+          color: a.cardFillSoft,
           borderRadius: BorderRadius.circular(AppRadii.sm),
-          border: Border.all(color: Colors.white.withValues(alpha: 0.08)),
+          border: Border.all(color: a.cardBorder),
         ),
         child: Row(
           children: [
-            _seg('Palavra', 0),
-            _seg(occ != null && occ! > 0 ? 'Usos · $occ' : 'Usos', 1),
-            _seg(xrefCount > 0 ? 'Conexões · $xrefCount' : 'Conexões', 2),
+            _seg(a, 'Palavra', 0),
+            _seg(a, occ != null && occ! > 0 ? 'Usos · $occ' : 'Usos', 1),
+            _seg(a, xrefCount > 0 ? 'Conexões · $xrefCount' : 'Conexões', 2),
           ],
         ),
       ),
     );
   }
 
-  Widget _seg(String label, int i) {
+  Widget _seg(AppearanceStyle a, String label, int i) {
     final on = index == i;
     return Expanded(
       child: Material(
@@ -973,10 +896,9 @@ class _StudyTabs extends StatelessWidget {
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
               style: AppTypography.label(
-                size: 10,
-                weight: FontWeight.w900,
+                size: 11,
                 letterSpacing: 0.4,
-                color: on ? accent : AppColors.textOnDark.withValues(alpha: 0.45),
+                color: on ? accent : a.textFaint,
               ),
             ),
           ),
@@ -1008,6 +930,7 @@ class _TokenChip extends StatelessWidget {
     final hebrew = token.strong.toUpperCase().startsWith('H');
     final accent = hebrew ? AppColors.accent : AppColors.cedar;
     final label = gloss.isEmpty ? token.strong : gloss;
+    final a = Appearance.of(context);
 
     return AnimatedOpacity(
       duration: const Duration(milliseconds: 180),
@@ -1021,54 +944,52 @@ class _TokenChip extends StatelessWidget {
             constraints: const BoxConstraints(minWidth: 76),
             child: Ink(
               padding: const EdgeInsets.fromLTRB(12, 10, 12, 8),
-            decoration: BoxDecoration(
-              color: selected
-                  ? accent.withValues(alpha: 0.16)
-                  : Colors.white.withValues(alpha: inVerse ? 0.05 : 0.03),
-              borderRadius: BorderRadius.circular(AppRadii.md),
-              border: Border.all(
+              decoration: BoxDecoration(
                 color: selected
-                    ? accent.withValues(alpha: 0.85)
-                    : Colors.white.withValues(alpha: inVerse ? 0.1 : 0.06),
-                width: selected ? 1.5 : 1,
+                    ? accent.withValues(alpha: 0.16)
+                    : Colors.white.withValues(alpha: inVerse ? 0.05 : 0.03),
+                borderRadius: BorderRadius.circular(AppRadii.md),
+                border: Border.all(
+                  color: selected
+                      ? accent.withValues(alpha: 0.85)
+                      : Colors.white.withValues(alpha: inVerse ? 0.1 : 0.06),
+                  width: selected ? 1.5 : 1,
+                ),
               ),
-            ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                Text(
-                  token.surface,
-                  textDirection:
-                      hebrew ? TextDirection.rtl : TextDirection.ltr,
-                  maxLines: 1,
-                  overflow: TextOverflow.fade,
-                  softWrap: false,
-                  style: AppTypography.original(
-                    hebrew: hebrew,
-                    size: hebrew ? 22 : 18,
-                    weight: FontWeight.w600,
-                    color: AppColors.textOnDark,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text(
+                    token.surface,
+                    textDirection: hebrew
+                        ? TextDirection.rtl
+                        : TextDirection.ltr,
+                    maxLines: 1,
+                    overflow: TextOverflow.fade,
+                    softWrap: false,
+                    style: AppTypography.original(
+                      hebrew: hebrew,
+                      size: hebrew ? 22 : 18,
+                      weight: FontWeight.w600,
+                      color: a.text,
+                    ),
                   ),
-                ),
-                const SizedBox(height: 3),
-                Text(
-                  label,
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: AppTypography.label(
-                    size: 10,
-                    weight: FontWeight.w800,
-                    letterSpacing: 0.3,
-                    color: selected
-                        ? accent
-                        : AppColors.textOnDark.withValues(
-                            alpha: inVerse ? 0.5 : 0.38,
-                          ),
+                  const SizedBox(height: 3),
+                  Text(
+                    label,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: AppTypography.label(
+                      size: 10,
+                      letterSpacing: 0.3,
+                      color: selected
+                          ? accent
+                          : (inVerse ? a.textFaint : a.textMuted(0.38)),
+                    ),
                   ),
-                ),
-              ],
-            ),
+                ],
+              ),
             ),
           ),
         ),
@@ -1082,14 +1003,9 @@ class _EmptyStudyHint extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
+    final a = Appearance.of(context);
+    return InsetPanel(
       padding: const EdgeInsets.fromLTRB(16, 22, 16, 22),
-      decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.04),
-        borderRadius: BorderRadius.circular(AppRadii.lg),
-        border: Border.all(color: Colors.white.withValues(alpha: 0.08)),
-      ),
       child: Column(
         children: [
           CinematicIcon(
@@ -1103,20 +1019,16 @@ class _EmptyStudyHint extends StatelessWidget {
           Text(
             'Toque numa palavra original',
             textAlign: TextAlign.center,
-            style: AppTypography.title(
-              size: 15,
-              weight: FontWeight.w800,
-              color: AppColors.textOnDark.withValues(alpha: 0.9),
-            ),
+            style: AppTypography.title(size: 16, color: a.text),
           ),
           const SizedBox(height: 6),
           Text(
-            'O léxico Strong, a gramática e cada vez que ela aparece na Escritura abrem aqui.',
+            'O léxico Strong, a gramática e cada vez que ela aparece nas Escrituras abrem aqui.',
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 13,
               height: 1.4,
-              color: AppColors.textOnDark.withValues(alpha: 0.5),
+              color: a.textFaint,
             ),
           ),
         ],
@@ -1124,7 +1036,6 @@ class _EmptyStudyHint extends StatelessWidget {
     );
   }
 }
-
 
 class _WordPane extends StatelessWidget {
   final StudyToken token;
@@ -1158,13 +1069,14 @@ class _WordPane extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final hebrew = _isHebrew(token, entry);
-    final lemma =
-        (entry?.lemma.isNotEmpty == true) ? entry!.lemma : token.surface;
+    final lemma = (entry?.lemma.isNotEmpty == true)
+        ? entry!.lemma
+        : token.surface;
     final translit = view.isAffix
         ? token.translit
         : ((entry?.translit.isNotEmpty == true)
-            ? entry!.translit
-            : token.translit);
+              ? entry!.translit
+              : token.translit);
     final gloss = verseWord ?? view.gloss;
     final chips = morphologyChips(token.morph.isNotEmpty ? token.morph : null);
     final headline = view.isAffix ? token.surface : lemma;
@@ -1186,38 +1098,29 @@ class _WordPane extends StatelessWidget {
       gloss: gloss,
     );
     final inVerse = verseWord != null && verseWord!.isNotEmpty;
+    final a = Appearance.of(context);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
         Row(
           children: [
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
-              decoration: BoxDecoration(
-                color: accent.withValues(alpha: 0.16),
-                borderRadius: BorderRadius.circular(AppRadii.xs),
-              ),
-              child: Text(
-                view.kindLabel,
-                style: AppTypography.label(
-                  size: 9,
-                  weight: FontWeight.w900,
-                  letterSpacing: 1.6,
-                  color: accent,
-                ),
-              ),
+            SoftBadge(
+              text: view.kindLabel,
+              accent: accent,
+              textColor: accent,
+              bordered: false,
             ),
             const SizedBox(width: 8),
             InkWell(
               onTap: onCopy,
-              borderRadius: BorderRadius.circular(8),
+              borderRadius: BorderRadius.circular(AppRadii.sm),
               child: Container(
                 padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                 decoration: BoxDecoration(
-                  color: Colors.white.withValues(alpha: 0.06),
-                  borderRadius: BorderRadius.circular(8),
-                  border: Border.all(color: Colors.white.withValues(alpha: 0.12)),
+                  color: a.insetFill,
+                  borderRadius: BorderRadius.circular(AppRadii.sm),
+                  border: Border.all(color: a.insetBorder),
                 ),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
@@ -1226,16 +1129,17 @@ class _WordPane extends StatelessWidget {
                       strongLabel,
                       style: AppTypography.label(
                         size: 11,
-                        weight: FontWeight.w900,
                         letterSpacing: 0.4,
-                        color: copied ? accent : AppColors.textOnDark,
+                        color: copied ? accent : a.text,
                       ),
                     ),
                     const SizedBox(width: 4),
                     CinematicIcon(
-                      glyph: copied ? CinematicGlyph.check : CinematicGlyph.copy,
+                      glyph: copied
+                          ? CinematicGlyph.check
+                          : CinematicGlyph.copy,
                       size: 12,
-                      accent: AppColors.textOnDark.withValues(alpha: 0.45),
+                      accent: a.textFaint,
                       framed: false,
                     ),
                   ],
@@ -1250,7 +1154,7 @@ class _WordPane extends StatelessWidget {
               icon: CinematicIcon(
                 glyph: CinematicGlyph.share,
                 size: 18,
-                accent: AppColors.textOnDark.withValues(alpha: 0.55),
+                accent: a.textFaint,
                 framed: false,
               ),
             ),
@@ -1258,13 +1162,9 @@ class _WordPane extends StatelessWidget {
         ),
         const SizedBox(height: 12),
         if (inVerse) ...[
-          Text(
-            'NESTE VERSÍCULO',
-            textAlign: TextAlign.center,
-            style: AppTypography.label(
-              size: 9,
-              weight: FontWeight.w900,
-              letterSpacing: 1.4,
+          Center(
+            child: SectionLabel(
+              'Neste versículo',
               color: accent.withValues(alpha: 0.8),
             ),
           ),
@@ -1273,7 +1173,7 @@ class _WordPane extends StatelessWidget {
             verseWord!,
             textAlign: TextAlign.center,
             style: AppTypography.display(
-              size: 22,
+              size: 20,
               weight: FontWeight.w700,
               color: accent,
             ),
@@ -1296,7 +1196,7 @@ class _WordPane extends StatelessWidget {
             style: AppTypography.body(
               size: 12,
               height: 1.35,
-              color: AppColors.textOnDark.withValues(alpha: 0.5),
+              color: a.textFaint,
             ),
           ),
           const SizedBox(height: 10),
@@ -1310,7 +1210,7 @@ class _WordPane extends StatelessWidget {
             size: hebrew ? 30 : 28,
             weight: FontWeight.w700,
             height: 1.2,
-            color: AppColors.textOnDark,
+            color: a.text,
           ),
         ),
         if (translit.isNotEmpty) ...[
@@ -1320,7 +1220,7 @@ class _WordPane extends StatelessWidget {
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 14,
-              color: AppColors.textOnDark.withValues(alpha: 0.55),
+              color: a.textFaint,
             ).copyWith(fontStyle: FontStyle.italic),
           ),
         ],
@@ -1331,10 +1231,7 @@ class _WordPane extends StatelessWidget {
           Text(
             view.gloss,
             textAlign: TextAlign.center,
-            style: AppTypography.body(
-              size: 13,
-              color: AppColors.textOnDark.withValues(alpha: 0.55),
-            ),
+            style: AppTypography.body(size: 13, color: a.textFaint),
           ),
         ],
         if (phrase.isNotEmpty) ...[
@@ -1345,7 +1242,7 @@ class _WordPane extends StatelessWidget {
             style: AppTypography.body(
               size: 13,
               height: 1.35,
-              color: AppColors.textOnDark.withValues(alpha: 0.62),
+              color: a.textSecondary,
             ),
           ),
         ],
@@ -1357,7 +1254,7 @@ class _WordPane extends StatelessWidget {
             style: AppTypography.body(
               size: 12,
               height: 1.35,
-              color: AppColors.textOnDark.withValues(alpha: 0.5),
+              color: a.textFaint,
             ),
           ),
         ],
@@ -1367,7 +1264,9 @@ class _WordPane extends StatelessWidget {
             spacing: 6,
             runSpacing: 6,
             alignment: WrapAlignment.center,
-            children: [for (final c in chips) _MorphChip(label: c, accent: accent)],
+            children: [
+              for (final c in chips) _MorphChip(label: c, accent: accent),
+            ],
           ),
         ],
         if (!sameForm && entry != null && !view.isAffix) ...[
@@ -1384,7 +1283,7 @@ class _WordPane extends StatelessWidget {
         if (loading) ...[
           const SizedBox(height: 16),
           ClipRRect(
-            borderRadius: BorderRadius.circular(2),
+            borderRadius: BorderRadius.circular(AppRadii.hair),
             child: LinearProgressIndicator(
               minHeight: 2,
               color: accent,
@@ -1408,9 +1307,7 @@ class _WordPane extends StatelessWidget {
                         '${i + 1}',
                         style: AppTypography.label(
                           size: 11,
-                          color: i == 0
-                              ? accent
-                              : AppColors.textOnDark.withValues(alpha: 0.4),
+                          color: i == 0 ? accent : a.textFaint,
                         ),
                       ),
                     ),
@@ -1418,12 +1315,10 @@ class _WordPane extends StatelessWidget {
                     child: Text(
                       senses[i],
                       style: AppTypography.verse(
-                        size: 17,
+                        size: 16,
                         height: 1.45,
                         weight: FontWeight.w500,
-                        color: AppColors.textOnDark.withValues(
-                          alpha: i == 0 ? 0.88 : 0.55,
-                        ),
+                        color: i == 0 ? a.text : a.textFaint,
                       ),
                     ),
                   ),
@@ -1439,7 +1334,7 @@ class _WordPane extends StatelessWidget {
                 style: AppTypography.body(
                   size: 12,
                   height: 1.35,
-                  color: AppColors.textOnDark.withValues(alpha: 0.5),
+                  color: a.textFaint,
                 ),
               )
             else
@@ -1457,7 +1352,6 @@ class _WordPane extends StatelessWidget {
     );
   }
 }
-
 
 class _SpanLine extends StatelessWidget {
   final ConcordanceHit first;
@@ -1481,13 +1375,9 @@ class _SpanLine extends StatelessWidget {
     final a = _cite(books, first.bookIndex, first.chapter, first.verse, null);
     final b = _cite(books, last.bookIndex, last.chapter, last.verse, null);
     final same = a == b;
-    return Container(
+    final look = Appearance.of(context);
+    return InsetPanel(
       padding: const EdgeInsets.fromLTRB(12, 10, 12, 10),
-      decoration: BoxDecoration(
-        color: Colors.white.withValues(alpha: 0.04),
-        borderRadius: BorderRadius.circular(AppRadii.sm),
-        border: Border.all(color: Colors.white.withValues(alpha: 0.08)),
-      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -1495,18 +1385,15 @@ class _SpanLine extends StatelessWidget {
             occurrences <= 1
                 ? 'Só neste versículo no índice.'
                 : '$occurrences lugares · de $a a $b',
-            style: AppTypography.body(
-              size: 12,
-              color: AppColors.textOnDark.withValues(alpha: 0.55),
-            ),
+            style: AppTypography.body(size: 12, color: look.textFaint),
           ),
           if (!same) ...[
             const SizedBox(height: 8),
             Row(
               children: [
-                _miniRef('primeira', a, () => onOpenHit(first), accent),
+                _miniRef(look, 'primeira', a, () => onOpenHit(first), accent),
                 const SizedBox(width: 8),
-                _miniRef('última', b, () => onOpenHit(last), accent),
+                _miniRef(look, 'última', b, () => onOpenHit(last), accent),
               ],
             ),
           ],
@@ -1515,7 +1402,13 @@ class _SpanLine extends StatelessWidget {
     );
   }
 
-  Widget _miniRef(String label, String cite, VoidCallback onTap, Color accent) {
+  Widget _miniRef(
+    AppearanceStyle look,
+    String label,
+    String cite,
+    VoidCallback onTap,
+    Color accent,
+  ) {
     return Expanded(
       child: InkWell(
         onTap: onTap,
@@ -1525,23 +1418,12 @@ class _SpanLine extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                label.toUpperCase(),
-                style: AppTypography.label(
-                  size: 8,
-                  letterSpacing: 1.0,
-                  color: accent.withValues(alpha: 0.8),
-                ),
-              ),
+              SectionLabel(label, color: accent.withValues(alpha: 0.8)),
               Text(
                 cite,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
-                style: AppTypography.title(
-                  size: 12,
-                  weight: FontWeight.w800,
-                  color: AppColors.textOnDark,
-                ),
+                style: AppTypography.title(size: 12, color: look.text),
               ),
             ],
           ),
@@ -1591,13 +1473,7 @@ class _ConcordancePane extends StatelessWidget {
     if (loading && study == null) {
       return Padding(
         padding: const EdgeInsets.symmetric(vertical: 28),
-        child: Center(
-          child: SizedBox(
-            width: 22,
-            height: 22,
-            child: CircularProgressIndicator(color: accent, strokeWidth: 2.2),
-          ),
-        ),
+        child: AppSpinner(color: accent),
       );
     }
     final hebrew = token.strong.toUpperCase().startsWith('H');
@@ -1613,6 +1489,7 @@ class _ConcordancePane extends StatelessWidget {
         : _aroundHits(rawHits, currentChapter, currentVerse, 12);
     final grouped = _groupHits(hits);
     final scriptureHits = spread;
+    final a = Appearance.of(context);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -1621,13 +1498,9 @@ class _ConcordancePane extends StatelessWidget {
           filtered
               ? 'Ocorrências em ${_bookName(books, filterBook!)}'
               : view.isAffix
-                  ? 'Esta partícula aparece milhares de vezes. Abaixo, as formas perto deste versículo.'
-                  : 'Neste livro — as aparições perto deste versículo.',
-          style: AppTypography.body(
-            size: 13,
-            height: 1.35,
-            color: AppColors.textOnDark.withValues(alpha: 0.55),
-          ),
+              ? 'Esta partícula aparece milhares de vezes. Abaixo, as formas perto deste versículo.'
+              : 'Neste livro — as aparições perto deste versículo.',
+          style: AppTypography.body(size: 13, height: 1.35, color: a.textFaint),
         ),
         if (byBook.length > 1) ...[
           const SizedBox(height: 10),
@@ -1640,40 +1513,23 @@ class _ConcordancePane extends StatelessWidget {
               itemBuilder: (context, i) {
                 final b = byBook[i];
                 final on = filterBook == b.bookIndex;
-                return Material(
-                  color: Colors.transparent,
-                  child: InkWell(
-                    onTap: () {
-                      if (on) {
-                        onClearFilter();
-                      } else {
-                        onFilterBook(b.bookIndex);
-                      }
-                    },
-                    borderRadius: BorderRadius.circular(AppRadii.pill),
-                    child: Ink(
-                      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
-                      decoration: BoxDecoration(
-                        color: on
-                            ? accent.withValues(alpha: 0.18)
-                            : Colors.white.withValues(alpha: 0.05),
-                        borderRadius: BorderRadius.circular(AppRadii.pill),
-                        border: Border.all(
-                          color: on
-                              ? accent.withValues(alpha: 0.7)
-                              : Colors.white.withValues(alpha: 0.08),
-                        ),
-                      ),
-                      child: Text(
-                        '${_bookName(books, b.bookIndex)} ${b.count}',
-                        style: AppTypography.label(
-                          size: 10,
-                          letterSpacing: 0.2,
-                          color: on ? accent : AppColors.textOnDark.withValues(alpha: 0.7),
-                        ),
-                      ),
-                    ),
+                return AppSelectChip(
+                  label: '${_bookName(books, b.bookIndex)} ${b.count}',
+                  selected: on,
+                  accent: accent,
+                  unselectedColor: a.textSecondary,
+                  fontSize: 12,
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 10,
+                    vertical: 8,
                   ),
+                  onTap: () {
+                    if (on) {
+                      onClearFilter();
+                    } else {
+                      onFilterBook(b.bookIndex);
+                    }
+                  },
                 );
               },
             ),
@@ -1683,23 +1539,15 @@ class _ConcordancePane extends StatelessWidget {
         if (hits.isEmpty)
           Text(
             'Sem outras ocorrências neste recorte.',
-            style: AppTypography.body(
-              size: 13,
-              color: AppColors.textOnDark.withValues(alpha: 0.45),
-            ),
+            style: AppTypography.body(size: 13, color: a.textFaint),
           )
         else
           for (final group in grouped) ...[
             Padding(
               padding: const EdgeInsets.only(top: 6, bottom: 4),
-              child: Text(
-                _bookName(books, group.$1).toUpperCase(),
-                style: AppTypography.label(
-                  size: 10,
-                  weight: FontWeight.w900,
-                  letterSpacing: 1.2,
-                  color: accent.withValues(alpha: 0.85),
-                ),
+              child: SectionLabel(
+                _bookName(books, group.$1),
+                color: accent.withValues(alpha: 0.85),
               ),
             ),
             for (final h in group.$2)
@@ -1708,7 +1556,9 @@ class _ConcordancePane extends StatelessWidget {
                 snippet: _verseSnippet(books, h.bookIndex, h.chapter, h.verse),
                 original: h.surface,
                 hebrew: hebrew,
-                current: _cite(books, h.bookIndex, h.chapter, h.verse, null) == currentRef,
+                current:
+                    _cite(books, h.bookIndex, h.chapter, h.verse, null) ==
+                    currentRef,
                 needles: view.needles,
                 accent: accent,
                 onTap: () => onOpenHit(h),
@@ -1720,10 +1570,7 @@ class _ConcordancePane extends StatelessWidget {
           const SizedBox(height: 8),
           Text(
             'A primeira aparição em cada livro onde a palavra é mais frequente.',
-            style: AppTypography.body(
-              size: 12,
-              color: AppColors.textOnDark.withValues(alpha: 0.45),
-            ),
+            style: AppTypography.body(size: 12, color: a.textFaint),
           ),
           const SizedBox(height: 8),
           for (final h in scriptureHits)
@@ -1751,23 +1598,7 @@ class _MorphChip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
-      decoration: BoxDecoration(
-        color: accent.withValues(alpha: 0.12),
-        borderRadius: BorderRadius.circular(AppRadii.pill),
-        border: Border.all(color: accent.withValues(alpha: 0.35)),
-      ),
-      child: Text(
-        label,
-        style: AppTypography.label(
-          size: 10,
-          weight: FontWeight.w800,
-          letterSpacing: 0.3,
-          color: AppColors.textOnDark.withValues(alpha: 0.88),
-        ),
-      ),
-    );
+    return SoftBadge(text: label, accent: accent);
   }
 }
 
@@ -1841,23 +1672,12 @@ class _ScriptCell extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    final a = Appearance.of(context);
+    return InsetPanel(
       padding: const EdgeInsets.fromLTRB(10, 8, 10, 10),
-      decoration: BoxDecoration(
-        color: Colors.black.withValues(alpha: 0.2),
-        borderRadius: BorderRadius.circular(AppRadii.sm),
-        border: Border.all(color: Colors.white.withValues(alpha: 0.08)),
-      ),
       child: Column(
         children: [
-          Text(
-            eyebrow.toUpperCase(),
-            style: AppTypography.label(
-              size: 8,
-              letterSpacing: 1.1,
-              color: accent.withValues(alpha: 0.8),
-            ),
-          ),
+          SectionLabel(eyebrow, color: accent.withValues(alpha: 0.8)),
           const SizedBox(height: 4),
           Text(
             script,
@@ -1866,7 +1686,7 @@ class _ScriptCell extends StatelessWidget {
             style: AppTypography.original(
               hebrew: hebrew,
               size: hebrew ? 20 : 18,
-              color: AppColors.textOnDark,
+              color: a.text,
             ),
           ),
           if (translit.isNotEmpty) ...[
@@ -1876,10 +1696,7 @@ class _ScriptCell extends StatelessWidget {
               textAlign: TextAlign.center,
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
-              style: AppTypography.body(
-                size: 11,
-                color: AppColors.textOnDark.withValues(alpha: 0.45),
-              ),
+              style: AppTypography.body(size: 11, color: a.textFaint),
             ),
           ],
         ],
@@ -1911,10 +1728,11 @@ class _ConcordanceRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     final base = AppTypography.body(
       size: 13,
       height: 1.3,
-      color: AppColors.textOnDark.withValues(alpha: 0.82),
+      color: a.textSecondary,
     );
     return Padding(
       padding: const EdgeInsets.only(bottom: 6),
@@ -1926,14 +1744,10 @@ class _ConcordanceRow extends StatelessWidget {
           child: Ink(
             padding: const EdgeInsets.fromLTRB(10, 8, 8, 8),
             decoration: BoxDecoration(
-              color: current
-                  ? accent.withValues(alpha: 0.1)
-                  : Colors.black.withValues(alpha: 0.18),
+              color: current ? accent.withValues(alpha: 0.1) : a.insetFill,
               borderRadius: BorderRadius.circular(AppRadii.sm),
               border: Border.all(
-                color: current
-                    ? accent.withValues(alpha: 0.45)
-                    : Colors.white.withValues(alpha: 0.06),
+                color: current ? accent.withValues(alpha: 0.45) : a.insetBorder,
               ),
             ),
             child: Row(
@@ -1943,11 +1757,7 @@ class _ConcordanceRow extends StatelessWidget {
                   width: citation.length > 6 ? 96 : 44,
                   child: Text(
                     citation,
-                    style: AppTypography.title(
-                      size: 12,
-                      weight: FontWeight.w800,
-                      color: accent,
-                    ),
+                    style: AppTypography.title(size: 12, color: accent),
                   ),
                 ),
                 Expanded(
@@ -1964,22 +1774,20 @@ class _ConcordanceRow extends StatelessWidget {
                         const SizedBox(height: 2),
                         Text(
                           original,
-                          textDirection:
-                              hebrew ? TextDirection.rtl : TextDirection.ltr,
+                          textDirection: hebrew
+                              ? TextDirection.rtl
+                              : TextDirection.ltr,
                           style: AppTypography.original(
                             hebrew: hebrew,
                             size: 13,
-                            color: AppColors.textOnDark.withValues(alpha: 0.42),
+                            color: a.textFaint,
                           ),
                         ),
                       ],
                     ],
                   ),
                 ),
-                ListChevron(
-                  size: 18,
-                  color: AppColors.textOnDark.withValues(alpha: 0.28),
-                ),
+                ListChevron(color: a.textFaint),
               ],
             ),
           ),
@@ -2005,18 +1813,14 @@ class _CrossRefTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final dots = strength >= 0.7 ? 3 : (strength >= 0.35 ? 2 : 1);
+    final a = Appearance.of(context);
     return Material(
       color: Colors.transparent,
       child: InkWell(
         borderRadius: BorderRadius.circular(AppRadii.md),
         onTap: onTap,
-        child: Ink(
+        child: InsetPanel(
           padding: const EdgeInsets.fromLTRB(12, 11, 8, 11),
-          decoration: BoxDecoration(
-            color: Colors.white.withValues(alpha: 0.05),
-            borderRadius: BorderRadius.circular(AppRadii.md),
-            border: Border.all(color: Colors.white.withValues(alpha: 0.08)),
-          ),
           child: Row(
             children: [
               Expanded(
@@ -2025,11 +1829,7 @@ class _CrossRefTile extends StatelessWidget {
                   children: [
                     Text(
                       label,
-                      style: AppTypography.title(
-                        color: AppColors.textOnDark,
-                        weight: FontWeight.w800,
-                        size: 14,
-                      ),
+                      style: AppTypography.title(size: 14, color: a.text),
                     ),
                     if (snippet != null && snippet!.isNotEmpty) ...[
                       const SizedBox(height: 3),
@@ -2040,7 +1840,7 @@ class _CrossRefTile extends StatelessWidget {
                         style: AppTypography.body(
                           size: 12,
                           height: 1.3,
-                          color: AppColors.textOnDark.withValues(alpha: 0.5),
+                          color: a.textSecondary,
                         ),
                       ),
                     ],
@@ -2058,17 +1858,12 @@ class _CrossRefTile extends StatelessWidget {
                       margin: const EdgeInsets.only(right: 3),
                       decoration: BoxDecoration(
                         shape: BoxShape.circle,
-                        color: i < dots
-                            ? AppColors.accent
-                            : Colors.white.withValues(alpha: 0.18),
+                        color: i < dots ? AppColors.accent : a.textMuted(0.18),
                       ),
                     ),
                 ],
               ),
-              ListChevron(
-                size: 18,
-                color: Colors.white.withValues(alpha: 0.35),
-              ),
+              ListChevron(color: a.textFaint),
             ],
           ),
         ),
@@ -2087,26 +1882,10 @@ class _SectionEyebrow extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Text(
-          text.toUpperCase(),
-          style: AppTypography.label(
-            size: 10,
-            weight: FontWeight.w900,
-            letterSpacing: 1.3,
-            color: AppColors.textOnDark.withValues(alpha: 0.48),
-          ),
-        ),
+        SectionLabel(text),
         if (count != null) ...[
           const SizedBox(width: 8),
-          Text(
-            '$count',
-            style: AppTypography.label(
-              size: 10,
-              weight: FontWeight.w800,
-              letterSpacing: 0.4,
-              color: AppColors.accent.withValues(alpha: 0.8),
-            ),
-          ),
+          CountBadge('$count', filled: false),
         ],
       ],
     );
@@ -2132,15 +1911,14 @@ TextSpan _snippetSpan(
   var cursor = 0;
   for (final r in ranges) {
     if (r.start > cursor) {
-      children.add(TextSpan(text: text.substring(cursor, r.start), style: base));
+      children.add(
+        TextSpan(text: text.substring(cursor, r.start), style: base),
+      );
     }
     children.add(
       TextSpan(
         text: text.substring(r.start, r.end),
-        style: base.copyWith(
-          color: accent,
-          fontWeight: FontWeight.w800,
-        ),
+        style: base.copyWith(color: accent, fontWeight: FontWeight.w800),
       ),
     );
     cursor = r.end;

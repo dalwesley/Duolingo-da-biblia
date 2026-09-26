@@ -9,6 +9,25 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
+## [1.0.29] — 2026-09-25
+
+### Added
+- Doação voluntária: página `/doar` no site (PIX) e atalhos no app — Trilhas, Ajustes → Sobre, tradução em breve na Bíblia e link discreto no fim de jornada
+- Leitor bíblico imersivo: capítulo por deslize, chrome que some ao rolar, áudio versículo a versículo e painel Aa (tamanho, papel, versão)
+- Sugestão de autor nas Trilhas (além de sugerir trilha) e fila no admin
+- Fontes da marca embutidas no app (offline na 1ª abertura, sem troca de tipografia no versículo)
+- Grupos: chamado (nudge) com push; teto de 20 membros reforçado no backend
+
+### Changed
+- Ajustes e perfil: linguagem visual alinhada (tipografia, sheets, identidade)
+- Celebração: fim de modo/trilha marca a jornada concluída mesmo no último modo
+- Esquina, salas e caravana: painéis e fluxo mais claros
+- Site: link Doar no nav e no rodapé
+
+### Fixed
+- Regras do ranking da liga: `PERMISSION_DENIED` por escopo do `uid` nas funções de placar
+- Entrada simultânea em grupo cheio: quem passou do 20º é removido pela Cloud Function
+
 ## [1.0.28] — 2026-09-23
 
 ### Added

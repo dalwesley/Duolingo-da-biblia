@@ -5,6 +5,8 @@ import 'dart:ui' as ui;
 import 'package:flutter/material.dart';
 
 import '../theme/app_theme.dart';
+import '../utils/appearance.dart';
+import '../utils/day_phase.dart';
 import 'film_layers.dart';
 
 /// Enquadramento da arte STWAY (a trilha do ícone e da splash) num ato.
@@ -120,6 +122,29 @@ class TrailShot {
     focusY: _mix(a.focusY, b.focusY, t),
     drop: _mix(a.drop, b.drop, t),
   );
+}
+
+/// Céu escolhido no app sobre a arte (a arte em si não muda).
+extension TrailSky on TrailShot {
+  /// Mesmas cores do céu da Home ([DayPhaseHelper]): manhã azul, tarde
+  /// turquesa com sol de luz baixa, noite = céu escuro original + estrelas.
+  TrailShot withSky(AppearanceStyle style) {
+    final sky = DayPhaseHelper.backgroundGradient(style.phase).colors;
+    return switch (style.look) {
+      AppearanceLook.morning => copyWith(
+        skyTop: sky[0],
+        skyLow: sky[1],
+        skyAmount: 1,
+      ),
+      AppearanceLook.afternoon => copyWith(
+        skyTop: sky[0],
+        skyLow: sky[2],
+        skyAmount: 1,
+        warmth: 1,
+      ),
+      AppearanceLook.night => copyWith(stars: 1),
+    };
+  }
 }
 
 /// Pintura da arte STWAY com luz viva por cima.

@@ -30,6 +30,15 @@ class StreakWeek extends StatelessWidget {
     final today = DateTime.now();
     final monday = today.subtract(Duration(days: today.weekday - 1));
     const labels = ['S', 'T', 'Q', 'Q', 'S', 'S', 'D'];
+    const names = [
+      'segunda',
+      'terça',
+      'quarta',
+      'quinta',
+      'sexta',
+      'sábado',
+      'domingo',
+    ];
 
     bool played(DateTime day) =>
         playedOnDate?.call(day) ?? progress!.playedOnDate(day);
@@ -47,61 +56,70 @@ class StreakWeek extends StatelessWidget {
         final active = played(day);
         final iced = frozen(day);
 
-        return Column(
-          children: [
-            if (iced)
-              _FrozenDayOrb(size: orbSize)
-            else
-              AnimatedContainer(
-                duration: const Duration(milliseconds: 280),
-                width: orbSize,
-                height: orbSize,
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  gradient: active ? AppGradients.gold : null,
-                  color: active ? null : Colors.white.withValues(alpha: 0.06),
-                  border: Border.all(
-                    color: isToday
-                        ? AppColors.accent
-                        : Colors.white.withValues(alpha: active ? 0 : 0.12),
-                    width: isToday ? 2 : 1,
+        final status = iced
+            ? 'protegido pelo gelo'
+            : active
+            ? 'feito'
+            : 'sem cena';
+        return Semantics(
+          label: '${isToday ? 'Hoje, ' : ''}${names[i]}: $status',
+          excludeSemantics: true,
+          child: Column(
+            children: [
+              if (iced)
+                _FrozenDayOrb(size: orbSize)
+              else
+                AnimatedContainer(
+                  duration: const Duration(milliseconds: 280),
+                  width: orbSize,
+                  height: orbSize,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    gradient: active ? AppGradients.gold : null,
+                    color: active ? null : Colors.white.withValues(alpha: 0.06),
+                    border: Border.all(
+                      color: isToday
+                          ? AppColors.accent
+                          : Colors.white.withValues(alpha: active ? 0 : 0.12),
+                      width: isToday ? 2 : 1,
+                    ),
+                  ),
+                  child: Center(
+                    child: active
+                        ? const CinematicIcon(
+                            glyph: CinematicGlyph.check,
+                            size: 16,
+                            accent: AppColors.inkOnAccent,
+                            framed: false,
+                          )
+                        : Text(
+                            labels[i],
+                            style: AppTypography.label(
+                              size: 10,
+                              letterSpacing: 0,
+                              weight: FontWeight.w700,
+                              color: isToday
+                                  ? AppColors.accent.withValues(alpha: 0.95)
+                                  : a.textFaint,
+                            ),
+                          ),
                   ),
                 ),
-                child: Center(
-                  child: active
-                      ? const CinematicIcon(
-                          glyph: CinematicGlyph.check,
-                          size: 16,
-                          accent: AppColors.inkOnAccent,
-                          framed: false,
-                        )
-                      : Text(
-                          labels[i],
-                          style: AppTypography.label(
-                            size: 10,
-                            letterSpacing: 0,
-                            weight: FontWeight.w700,
-                            color: isToday
-                                ? AppColors.accent.withValues(alpha: 0.95)
-                                : a.textMuted(0.4),
-                          ),
+              SizedBox(
+                height: 14,
+                child: isToday
+                    ? Text(
+                        'hoje',
+                        style: AppTypography.label(
+                          size: 10,
+                          letterSpacing: 0.2,
+                          color: AppColors.accent.withValues(alpha: 0.9),
                         ),
-                ),
+                      )
+                    : null,
               ),
-            SizedBox(
-              height: 14,
-              child: isToday
-                  ? Text(
-                      'hoje',
-                      style: AppTypography.label(
-                        size: 9,
-                        letterSpacing: 0.2,
-                        color: AppColors.accent.withValues(alpha: 0.9),
-                      ),
-                    )
-                  : null,
-            ),
-          ],
+            ],
+          ),
         );
       }),
     );

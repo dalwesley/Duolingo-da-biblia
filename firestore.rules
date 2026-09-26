@@ -84,9 +84,12 @@ service cloud.firestore {
 
     // Ranking só pode carregar o xp/steps já gravado em users/{uid}.
     // Fecha o atalho de inflar o placar direto na coleção da Caravana.
-    function rankingScoreMatches(expected) {
+    // playerId tem de ser argumento: função no escopo externo não enxerga
+    // o curinga {uid} do match. Ler `uid` aqui estoura "Null value error"
+    // e o cliente só vê PERMISSION_DENIED em todo o ranking.
+    function rankingScoreMatches(expected, playerId) {
       return isSignedIn()
-        && request.auth.uid == uid
+        && request.auth.uid == playerId
         && nonNegNum(expected)
         && (!('xp' in request.resource.data)
             || scoresEqual(request.resource.data.xp, expected))
@@ -96,8 +99,8 @@ service cloud.firestore {
             || ('steps' in request.resource.data));
     }
 
-    function ownRankingDelete() {
-      return isSignedIn() && request.auth.uid == uid;
+    function ownRankingDelete(playerId) {
+      return isSignedIn() && request.auth.uid == playerId;
     }
 
     function isYmd(value) {
@@ -130,9 +133,9 @@ service cloud.firestore {
     // placar se ele espelhar users/{uid}.weeklySteps da semana corrente.
     match /leagues/{week}/players/{uid} {
       allow read: if isSignedIn();
-      allow delete: if ownRankingDelete();
+      allow delete: if ownRankingDelete(uid);
       allow create, update: if isYmd(week)
-        && rankingScoreMatches(userWeeklySteps())
+        && rankingScoreMatches(userWeeklySteps(), uid)
         && (!userExists()
             || !('weeklyWeek' in userData())
             || userData().weeklyWeek == null
@@ -141,10 +144,10 @@ service cloud.firestore {
 
     match /leagues/{week}/tiers/{tier}/players/{uid} {
       allow read: if isSignedIn();
-      allow delete: if ownRankingDelete();
+      allow delete: if ownRankingDelete(uid);
       allow create, update: if isYmd(week)
         && tier.matches('^[0-4]$')
-        && rankingScoreMatches(userWeeklySteps())
+        && rankingScoreMatches(userWeeklySteps(), uid)
         && (!userExists()
             || !('weeklyWeek' in userData())
             || userData().weeklyWeek == null
@@ -154,9 +157,9 @@ service cloud.firestore {
     // Grupo fechado da caravana (célula/paróquia) — mesmo critério da liga semanal.
     match /leagueGroups/{code}/weeks/{week}/players/{uid} {
       allow read: if isSignedIn();
-      allow delete: if ownRankingDelete();
+      allow delete: if ownRankingDelete(uid);
       allow create, update: if isYmd(week)
-        && rankingScoreMatches(userWeeklySteps())
+        && rankingScoreMatches(userWeeklySteps(), uid)
         && (!userExists()
             || !('weeklyWeek' in userData())
             || userData().weeklyWeek == null
@@ -165,15 +168,15 @@ service cloud.firestore {
 
     match /overallPlayers/{uid} {
       allow read: if isSignedIn();
-      allow delete: if ownRankingDelete();
-      allow create, update: if rankingScoreMatches(userTotalSteps());
+      allow delete: if ownRankingDelete(uid);
+      allow create, update: if rankingScoreMatches(userTotalSteps(), uid);
     }
 
     match /monthlyLeagues/{month}/players/{uid} {
       allow read: if isSignedIn();
-      allow delete: if ownRankingDelete();
+      allow delete: if ownRankingDelete(uid);
       allow create, update: if isYearMonth(month)
-        && rankingScoreMatches(userMonthlySteps())
+        && rankingScoreMatches(userMonthlySteps(), uid)
         && (!userExists()
             || !('monthlyMonth' in userData())
             || userData().monthlyMonth == null
@@ -182,15 +185,39 @@ service cloud.firestore {
 
     // Salas de estudo privadas.
     match /rooms/{code} {
+      function isRoomMember(uid) {
+        return exists(/databases/$(database)/documents/rooms/$(code)/members/$(uid));
+      }
+
       allow read: if isSignedIn();
       allow create: if isSignedIn()
         && request.resource.data.ownerId == request.auth.uid;
-      allow update, delete: if isSignedIn()
+      allow delete: if isSignedIn()
         && resource.data.ownerId == request.auth.uid;
+      // Só o líder edita. Passar a liderança exige que o novo líder já esteja
+      // na lista do grupo.
+      allow update: if isSignedIn()
+        && resource.data.ownerId == request.auth.uid
+        && (request.resource.data.ownerId == resource.data.ownerId
+            || isRoomMember(request.resource.data.ownerId));
+
+      // Chamado para estudar: um doc por destinatário, no máximo 1 por dia.
+      match /nudges/{toUid} {
+        allow read: if isSignedIn() && isRoomMember(request.auth.uid);
+        allow create, update: if isSignedIn()
+          && toUid != request.auth.uid
+          && isRoomMember(request.auth.uid)
+          && isRoomMember(toUid)
+          && request.resource.data.fromId == request.auth.uid
+          && request.resource.data.day is string
+          && isYmd(request.resource.data.day)
+          && (resource == null || resource.data.day != request.resource.data.day);
+        allow delete: if false;
+      }
 
       match /members/{uid} {
         allow read: if isSignedIn();
-        allow delete: if ownRankingDelete();
+        allow delete: if ownRankingDelete(uid);
         // O placar da célula é o do próprio membro. Não espelha users/{uid}:
         // esse get() recusava a criação do grupo quando o weeklySteps local
         // ainda não era o número gravado no perfil (int vs float, ou 0 na nuvem).
@@ -248,6 +275,83 @@ service cloud.firestore {
         && request.resource.data.missionSlug == resource.data.missionSlug
         && request.resource.data.trailSlug == resource.data.trailSlug
         && request.resource.data.weekStart == resource.data.weekStart;
+      allow delete: if false;
+    }
+
+    // Convite de grupo dentro do app. Quem recebe aceita em Grupos.
+    match /roomInvites/{id} {
+      function isMemberOfInvitedRoom(code) {
+        return exists(/databases/$(database)/documents/rooms/$(code)/members/$(request.auth.uid));
+      }
+
+      function roomInviteIdentitySame() {
+        return request.resource.data.roomCode == resource.data.roomCode
+          && request.resource.data.roomName == resource.data.roomName
+          && request.resource.data.kind == resource.data.kind
+          && request.resource.data.fromUid == resource.data.fromUid
+          && request.resource.data.fromName == resource.data.fromName
+          && request.resource.data.toUid == resource.data.toUid
+          && request.resource.data.toName == resource.data.toName
+          && request.resource.data.participantIds == resource.data.participantIds
+          && request.resource.data.createdAt == resource.data.createdAt;
+      }
+
+      function roomInviteShape(data) {
+        return data.keys().hasAll([
+            'roomCode', 'roomName', 'kind', 'fromUid', 'fromName',
+            'toUid', 'toName', 'participantIds', 'status', 'createdAt'
+          ])
+          && data.roomCode is string
+          && data.roomCode.size() >= 4
+          && data.roomCode.size() <= 8
+          && data.roomName is string
+          && data.roomName.size() > 0
+          && data.roomName.size() <= 40
+          && data.fromUid == request.auth.uid
+          && data.toUid is string
+          && data.toUid.size() > 0
+          && data.toUid.size() <= 128
+          && data.toUid != request.auth.uid
+          && data.fromName is string
+          && data.fromName.size() > 0
+          && data.fromName.size() <= 120
+          && data.toName is string
+          && data.toName.size() > 0
+          && data.toName.size() <= 120
+          && data.kind in ['celula', 'discipulado', 'ebd', 'familia', 'amigos']
+          && data.participantIds is list
+          && data.participantIds.size() == 2
+          && data.participantIds.hasAll([request.auth.uid, data.toUid])
+          && data.createdAt is timestamp
+          && id == data.roomCode + '_' + data.toUid;
+      }
+
+      allow read: if isSignedIn()
+        && request.auth.uid in resource.data.participantIds;
+      // Quem já está no grupo pode chamar. O nome do grupo no doc é só
+      // exibição — a prova de pertencimento é o doc em members/.
+      allow create: if isSignedIn()
+        && request.resource.data.status == 'pending'
+        && roomInviteShape(request.resource.data)
+        && isMemberOfInvitedRoom(request.resource.data.roomCode)
+        && exists(/databases/$(database)/documents/rooms/$(request.resource.data.roomCode));
+      allow update: if isSignedIn()
+        && request.auth.uid in resource.data.participantIds
+        && id == resource.data.roomCode + '_' + resource.data.toUid
+        && (
+          (request.auth.uid == resource.data.toUid
+            && resource.data.status == 'pending'
+            && request.resource.data.status in ['accepted', 'declined']
+            && roomInviteIdentitySame())
+          || (request.auth.uid == resource.data.fromUid
+            && isMemberOfInvitedRoom(resource.data.roomCode)
+            && request.resource.data.fromUid == resource.data.fromUid
+            && request.resource.data.toUid == resource.data.toUid
+            && request.resource.data.roomCode == resource.data.roomCode
+            && request.resource.data.participantIds == resource.data.participantIds
+            && request.resource.data.status in ['pending', 'cancelled']
+            && roomInviteShape(request.resource.data))
+        );
       allow delete: if false;
     }
 
@@ -342,6 +446,29 @@ service cloud.firestore {
         && (!('comment' in request.resource.data)
             || (request.resource.data.comment is string
                 && request.resource.data.comment.size() <= 800));
+      allow update, delete: if isContentEditor();
+    }
+
+    // Indicações de autores (usuários autenticados criam; editores revisam).
+    match /content_author_suggestions/{id} {
+      allow read: if isContentEditor();
+      allow create: if isSignedIn()
+        && request.resource.data.uid == request.auth.uid
+        && request.resource.data.status == 'open'
+        && request.resource.data.name is string
+        && request.resource.data.name.size() >= 2
+        && request.resource.data.name.size() <= 80
+        && request.resource.data.phone is string
+        && request.resource.data.phone.size() <= 15
+        && request.resource.data.email is string
+        && request.resource.data.email.size() <= 120
+        && request.resource.data.instagram is string
+        && request.resource.data.instagram.size() <= 30
+        && (
+          request.resource.data.phone.size() > 0
+          || request.resource.data.email.size() > 0
+          || request.resource.data.instagram.size() > 0
+        );
       allow update, delete: if isContentEditor();
     }
 

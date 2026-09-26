@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
 import '../models/caravan_pilgrim_profile.dart';
@@ -9,8 +8,12 @@ import '../services/backend_service.dart';
 import '../services/corner_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
+import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
-import 'corner_invite_sheet.dart';
+import 'corner_withdraw.dart';
+import 'corner_burst.dart';
+import 'crossing_burst.dart';
+import 'immersive_background.dart';
 import 'ui_primitives.dart';
 
 /// CTA no perfil da Caravana — sempre visível; inativo se não der para chamar.
@@ -40,6 +43,7 @@ class CornerProfileCta extends StatelessWidget {
       return _StatusCard(
         challenge: existing,
         myUid: uid,
+        acceptBlocked: corners.isBusy(except: existing.id),
         onAccept: () => corners.accept(existing.id),
         onDecline: () => corners.decline(existing.id),
       );
@@ -58,22 +62,23 @@ class CornerProfileCta extends StatelessWidget {
     String? blocked;
     if (!backend.isActive || uid == null) {
       blocked = CornerCopy.needsCloud;
-    } else if (!CornerMatch.forceOpenForPreview && corners.hasOpenThisWeek) {
+    } else if (corners.isBusy()) {
       blocked = CornerCopy.busyWeek;
     } else if (proposal == null && !CornerMatch.forceOpenForPreview) {
       blocked = catalog.isEmpty
           ? CornerCopy.noCorner
           : CornerMatch.blockReason(
-                catalog: catalog,
-                myCompleted: progress.completedMissions,
-                myClearedModes: progress.clearedTrailModes,
-                theirCompleted: profile.completedMissions,
-                theirClearedModes: profile.clearedTrailModes,
-              ) ??
-              CornerCopy.noCorner;
+                  catalog: catalog,
+                  myCompleted: progress.completedMissions,
+                  myClearedModes: progress.clearedTrailModes,
+                  theirCompleted: profile.completedMissions,
+                  theirClearedModes: profile.clearedTrailModes,
+                ) ??
+                CornerCopy.noCorner;
     }
 
-    final usable = proposal ??
+    final usable =
+        proposal ??
         (CornerMatch.forceOpenForPreview
             ? CornerMatch.fallbackProposal(
                 catalog: catalog,
@@ -99,29 +104,29 @@ class CornerProfileCta extends StatelessWidget {
     );
   }
 
-  Future<void> _challenge(
-    BuildContext context,
-    CornerProposal proposal,
-  ) async {
-    HapticFeedback.lightImpact();
-    final ok = await showCornerInviteSheet(
-      context,
-      proposal: proposal,
-      peerName: profile.name,
-    );
-    if (!ok || !context.mounted) return;
+  /// Segurar o botão já é a confirmação — animação e envio na sequência.
+  Future<void> _challenge(BuildContext context, CornerProposal proposal) async {
     final corners = context.read<CornerService>();
     final progress = context.read<ProgressService>();
+    final messenger = ScaffoldMessenger.maybeOf(context);
+    // Animação primeiro; envio (e o rebuild do card) só depois que some.
+    await showCornerBurst(
+      context,
+      peerName: profile.name,
+      peerPhoto: profile.photoUrl,
+      caption: CornerCopy.burstSent,
+      kicker: proposal.missionTitle,
+    );
     final created = await corners.propose(
       opponentId: profile.uid!,
       opponentName: profile.name,
       myName: progress.userName,
       proposal: proposal,
+      opponentPhotoUrl: profile.photoUrl,
     );
-    if (!context.mounted) return;
     if (created == null) {
       final msg = corners.lastError ?? CornerCopy.sendFailed;
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(msg)));
+      messenger?.showSnackBar(SnackBar(content: Text(msg)));
     }
   }
 }
@@ -139,73 +144,60 @@ class _ChallengeCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     final enabled = onTap != null;
     final title = proposal == null
-        ? CornerCopy.ctaChallenge
+        ? CornerCopy.ctaInvite
         : CornerCopy.inviteTitle(proposal!.missionTitle);
     final sub = blocked ?? CornerCopy.sameStretch;
     final accent = enabled
         ? AppColors.accent
         : AppColors.accent.withValues(alpha: 0.38);
 
-    return DecoratedBox(
-      decoration: BoxDecoration(
-        color: AppColors.nightLight.withValues(alpha: 0.72),
-        borderRadius: BorderRadius.circular(AppRadii.xl),
-        border: Border.all(
-          color: accent.withValues(alpha: enabled ? 0.45 : 0.22),
-        ),
-      ),
-      child: Padding(
-        padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Row(
-              children: [
-                CinematicIcon(
-                  glyph: CinematicGlyph.flag,
-                  size: 36,
-                  accent: accent,
-                  glowing: enabled,
-                ),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        title,
-                        style: AppTypography.title(
-                          size: 16,
-                          color: Colors.white.withValues(
-                            alpha: enabled ? 1 : 0.72,
-                          ),
-                        ),
+    return GlassCard(
+      glow: enabled ? 0.45 : 0.1,
+      tint: AppColors.accent,
+      radius: AppMetrics.heroRadius,
+      padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Row(
+            children: [
+              CinematicIcon(
+                glyph: CinematicGlyph.flag,
+                size: AppMetrics.leadingIcon,
+                accent: accent,
+                glowing: enabled,
+              ),
+              const SizedBox(width: 12),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      title,
+                      style: AppTypography.title(
+                        size: 16,
+                        color: enabled ? a.text : a.textSecondary,
                       ),
-                      const SizedBox(height: 2),
-                      Text(
-                        sub,
-                        style: AppTypography.body(
-                          size: 12,
-                          color: Colors.white.withValues(alpha: 0.62),
-                        ),
+                    ),
+                    const SizedBox(height: 2),
+                    Text(
+                      sub,
+                      style: AppTypography.body(
+                        size: 12,
+                        color: a.textSecondary,
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
-              ],
-            ),
-            const SizedBox(height: 12),
-            CopperCta(
-              label: CornerCopy.ctaChallenge,
-              leading: CinematicGlyph.flag,
-              trailing: null,
-              dense: true,
-              onTap: onTap,
-            ),
-          ],
-        ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 12),
+          HoldToConfirmCta(label: CornerCopy.holdInvite, onConfirm: onTap),
+        ],
       ),
     );
   }
@@ -214,19 +206,23 @@ class _ChallengeCard extends StatelessWidget {
 class _StatusCard extends StatelessWidget {
   final CornerChallenge challenge;
   final String myUid;
+  final bool acceptBlocked;
   final Future<void> Function() onAccept;
   final Future<void> Function() onDecline;
 
   const _StatusCard({
     required this.challenge,
     required this.myUid,
+    required this.acceptBlocked,
     required this.onAccept,
     required this.onDecline,
   });
 
   @override
   Widget build(BuildContext context) {
-    final incoming = challenge.status == CornerStatus.pending &&
+    final a = Appearance.of(context);
+    final incoming =
+        challenge.status == CornerStatus.pending &&
         challenge.iAmOpponent(myUid);
 
     return Padding(
@@ -236,52 +232,72 @@ class _StatusCard extends StatelessWidget {
         AppSpace.screen,
         0,
       ),
-      child: DecoratedBox(
-        decoration: BoxDecoration(
-          color: AppColors.nightLight.withValues(alpha: 0.72),
-          borderRadius: BorderRadius.circular(AppRadii.xl),
-          border: Border.all(color: AppColors.accent.withValues(alpha: 0.35)),
-        ),
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: [
-              Text(
-                challenge.headline(myUid),
-                style: AppTypography.title(size: 16, color: Colors.white),
+      child: GlassCard(
+        glow: 0.3,
+        tint: AppColors.accent,
+        radius: AppMetrics.heroRadius,
+        padding: const EdgeInsets.fromLTRB(16, 14, 16, 14),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            Text(
+              challenge.headline(myUid),
+              style: AppTypography.title(size: 16, color: a.text),
+            ),
+            const SizedBox(height: 4),
+            Text(
+              challenge.subline(myUid),
+              style: AppTypography.body(size: 12, color: a.textSecondary),
+            ),
+            if (incoming) ...[
+              const SizedBox(height: 12),
+              HoldToConfirmCta(
+                label: CornerCopy.holdAccept,
+                leading: CinematicGlyph.check,
+                onConfirm: acceptBlocked
+                    ? null
+                    : () async {
+                        await showCornerBurst(
+                          context,
+                          peerName: challenge.peerName(myUid),
+                          peerPhoto: challenge.peerPhoto(myUid),
+                          caption: CornerCopy.burstAccepted,
+                          kicker: challenge.missionTitle,
+                        );
+                        await onAccept();
+                      },
               ),
-              const SizedBox(height: 4),
-              Text(
-                challenge.subline(myUid),
-                style: AppTypography.body(
-                  size: 12,
-                  color: Colors.white.withValues(alpha: 0.62),
-                ),
-              ),
-              if (incoming) ...[
-                const SizedBox(height: 12),
-                CopperCta(
-                  label: CornerCopy.accept,
-                  leading: CinematicGlyph.check,
-                  trailing: null,
-                  dense: true,
-                  onTap: () async {
-                    HapticFeedback.lightImpact();
-                    await onAccept();
-                  },
-                ),
-                const SizedBox(height: 8),
-                GhostCta(
-                  label: CornerCopy.decline,
-                  expanded: true,
-                  onTap: () async {
-                    await onDecline();
-                  },
+              if (acceptBlocked) ...[
+                const SizedBox(height: 6),
+                Text(
+                  CornerCopy.busyAccept,
+                  textAlign: TextAlign.center,
+                  style: AppTypography.body(size: 12, color: a.textSecondary),
                 ),
               ],
+              const SizedBox(height: 8),
+              GhostCta(
+                label: CornerCopy.decline,
+                expanded: true,
+                onTap: () async {
+                  await onDecline();
+                },
+              ),
+            ] else if (challenge.canWithdraw(myUid)) ...[
+              const SizedBox(height: 10),
+              Center(
+                child: TextCta(
+                  label: CornerCopy.withdraw,
+                  danger: true,
+                  onTap: () => confirmCornerWithdraw(
+                    context,
+                    challenge: challenge,
+                    myUid: myUid,
+                  ),
+                ),
+              ),
             ],
-          ),
+          ],
         ),
       ),
     );

@@ -1,11 +1,12 @@
 import 'dart:math' as math;
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import '../theme/app_theme.dart';
+import '../utils/appearance.dart';
 import 'act_feel.dart';
 import 'brand_flip_card.dart';
 import 'cinematic_icon.dart';
+import 'immersive_background.dart';
 import 'stage_plate.dart';
 import 'ui_primitives.dart';
 
@@ -199,7 +200,7 @@ class _VerseFillPanelState extends State<VerseFillPanel>
     if (_revealed) return;
     final nextBlank = _activeBlank;
     if (nextBlank == null) return;
-    HapticFeedback.selectionClick();
+    ActHaptics.tap();
     setState(() => _picked[nextBlank] = option);
     if (_blankIndexes.every((i) => _picked[i] != null)) {
       _submit();
@@ -223,15 +224,15 @@ class _VerseFillPanelState extends State<VerseFillPanel>
     _pulse.stop();
     _revealFlash.forward(from: 0);
     if (ok) {
-      HapticFeedback.heavyImpact();
+      ActHaptics.success();
     } else {
-      HapticFeedback.mediumImpact();
+      ActHaptics.error();
     }
   }
 
   void _clearSlot(int index) {
     if (_revealed) return;
-    HapticFeedback.selectionClick();
+    ActHaptics.tap();
     setState(() => _picked.remove(index));
   }
 
@@ -369,18 +370,10 @@ class _VerseFillPanelState extends State<VerseFillPanel>
                             ],
                           ),
                           SizedBox(height: compact ? 4 : 8),
-                          TextButton(
-                            onPressed: () => widget.onDone(false),
-                            child: Text(
-                              'Pular',
-                              style: AppTypography.body(
-                                size: 13,
-                                weight: FontWeight.w700,
-                                color: AppColors.textOnDark.withValues(
-                                  alpha: 0.45,
-                                ),
-                              ),
-                            ),
+                          TextCta(
+                            label: 'Pular',
+                            onTap: () => widget.onDone(false),
+                            color: Appearance.of(context).textFaint,
                           ),
                         ],
                       ),
@@ -429,6 +422,7 @@ class _MemoryHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -446,23 +440,16 @@ class _MemoryHeader extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                'PALAVRA',
-                style: AppTypography.label(
-                  size: 11,
-                  letterSpacing: 1.8,
-                  color: accent,
-                ),
-              ),
+              SectionLabel('Palavra', color: accent),
               const SizedBox(height: 6),
               Text(
                 'Complete o versículo',
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
                 style: AppTypography.title(
-                  size: 22,
+                  size: 20,
                   height: 1.28,
-                  color: AppColors.textOnDark,
+                  color: a.text,
                 ),
               ),
             ],
@@ -593,15 +580,7 @@ class _VerseStage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            Text(
-              reference.toUpperCase(),
-              textAlign: TextAlign.center,
-              style: AppTypography.label(
-                size: 13,
-                letterSpacing: 1.8,
-                color: accent,
-              ),
-            ),
+            Center(child: SectionLabel(reference, color: accent, size: 13)),
             const SizedBox(height: 14),
             Expanded(
               child: Center(
@@ -755,8 +734,9 @@ class _BlankSlot extends StatelessWidget {
           ),
           Text(
             expected,
-            style: verseStyle.copyWith(
-              fontSize: fontSize * 0.85,
+            style: AppTypography.verse(
+              size: fontSize * 0.85,
+              weight: FontWeight.w600,
               height: 1.15,
               color: accent,
             ),
@@ -827,11 +807,11 @@ class _WordChip extends StatelessWidget {
             constraints: const BoxConstraints(minHeight: 56),
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(18),
+              borderRadius: BorderRadius.circular(AppRadii.xl),
               color: used ? accent : Color.lerp(AppColors.card, accent, 0.16)!,
               boxShadow: const [
                 BoxShadow(
-                  color: Color(0x59000000),
+                  color: AppColors.dropShadow,
                   blurRadius: 0,
                   offset: Offset(0, 4),
                 ),
@@ -840,7 +820,7 @@ class _WordChip extends StatelessWidget {
             child: Text(
               label,
               style: AppTypography.title(
-                size: 15,
+                size: 14,
                 color: AppColors.inkOnAccent,
               ),
             ),
@@ -866,62 +846,61 @@ class _RevealBanner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     final color = correct ? accent : AppColors.error;
 
     return Column(
       children: [
-        Container(
+        SizedBox(
           width: double.infinity,
-          padding: const EdgeInsets.symmetric(
-            horizontal: AppSpace.lg,
-            vertical: AppSpace.md,
-          ),
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(AppRadii.lg),
-            color: color.withValues(alpha: 0.12),
-            border: Border.all(color: color.withValues(alpha: 0.45)),
-          ),
-          child: Row(
-            children: [
-              CinematicIcon(
-                glyph: correct ? CinematicGlyph.check : CinematicGlyph.wrong,
-                size: 22,
-                accent: color,
-                framed: false,
-              ),
-              const SizedBox(width: 12),
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      correct ? 'Acertou!' : 'Errou!',
-                      style: AppTypography.title(size: 18, color: color),
-                    ),
-                    const SizedBox(height: 2),
-                    Text(
-                      correct
-                          ? '+2 passos'
-                          : corrections.isEmpty
-                          ? 'Veja a palavra certa'
-                          : corrections
-                                .map((c) => '${c.got} → ${c.expected}')
-                                .join(' · '),
-                      style: AppTypography.body(
-                        size: 13,
-                        weight: FontWeight.w700,
-                        color: AppColors.textOnDark.withValues(alpha: 0.65),
-                      ),
-                    ),
-                  ],
+          child: GlassCard(
+            tint: color,
+            padding: const EdgeInsets.symmetric(
+              horizontal: AppSpace.lg,
+              vertical: AppSpace.md,
+            ),
+            child: Row(
+              children: [
+                CinematicIcon(
+                  glyph: correct ? CinematicGlyph.check : CinematicGlyph.wrong,
+                  size: 22,
+                  accent: color,
+                  framed: false,
                 ),
-              ),
-            ],
+                const SizedBox(width: 12),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        correct ? 'Acertou' : 'Quase',
+                        style: AppTypography.title(size: 18, color: color),
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        correct
+                            ? '+2 passos'
+                            : corrections.isEmpty
+                            ? 'Veja a palavra certa'
+                            : corrections
+                                  .map((c) => '${c.expected}, não ${c.got}')
+                                  .join(' · '),
+                        style: AppTypography.body(
+                          size: 13,
+                          weight: FontWeight.w700,
+                          color: a.textSecondary,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
         const SizedBox(height: 12),
         CopperCta(
-          label: correct ? 'Seguir' : 'Continuar',
+          label: 'Continuar',
           onTap: onContinue,
           trailing: CinematicGlyph.forward,
         ),

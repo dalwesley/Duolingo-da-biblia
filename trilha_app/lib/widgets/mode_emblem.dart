@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../models/difficulty.dart';
 import '../theme/app_theme.dart';
+import '../utils/appearance.dart';
 import '../utils/difficulty_visuals.dart';
 import '../utils/trail_progress.dart';
 import 'cinematic_icon.dart';
@@ -232,15 +233,16 @@ class _LabeledMode extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     final color = DifficultyVisuals.accentFor(difficulty);
     final onSky = DifficultyVisuals.onSky(color);
     final caption = cleared
         ? 'concluída'
         : locked
-            ? 'bloqueada'
-            : active
-                ? 'atual'
-                : '';
+        ? 'bloqueada'
+        : active
+        ? 'atual'
+        : '';
 
     return GestureDetector(
       onTap: onTap,
@@ -268,7 +270,7 @@ class _LabeledMode extends StatelessWidget {
               letterSpacing: 0.2,
               color: (cleared || active)
                   ? onSky
-                  : Colors.white.withValues(alpha: locked ? 0.38 : 0.62),
+                  : (locked ? a.textFaint : a.textSecondary),
             ),
           ),
           if (caption.isNotEmpty) ...[
@@ -277,11 +279,9 @@ class _LabeledMode extends StatelessWidget {
               caption,
               textAlign: TextAlign.center,
               style: AppTypography.label(
-                size: 9,
+                size: 10,
                 letterSpacing: 0.3,
-                color: cleared
-                    ? onSky.withValues(alpha: 0.88)
-                    : Colors.white.withValues(alpha: 0.4),
+                color: cleared ? onSky.withValues(alpha: 0.88) : a.textFaint,
               ),
             ),
           ],
@@ -314,19 +314,15 @@ class ModeStatusChip extends StatelessWidget {
 
     return Semantics(
       label: label,
+      // Mesma pele do SoftBadge (raio sm, 10×6, body 12 w800).
       child: Container(
-        padding: EdgeInsets.fromLTRB(
-          compact ? 8 : 10,
-          compact ? 5 : 6,
-          compact ? 10 : 12,
-          compact ? 5 : 6,
-        ),
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
         decoration: BoxDecoration(
-          color: Colors.white.withValues(alpha: 0.04),
-          borderRadius: BorderRadius.circular(AppRadii.pill),
+          color: color.withValues(alpha: 0.16),
+          borderRadius: BorderRadius.circular(AppRadii.sm),
           border: Border.all(
             color: onSky.withValues(alpha: cleared ? 0.55 : 0.70),
-            width: 1.15,
+            width: 1.5,
           ),
         ),
         child: Row(
@@ -334,17 +330,18 @@ class ModeStatusChip extends StatelessWidget {
           children: [
             CinematicIcon(
               glyph: DifficultyVisuals.glyphFor(difficulty),
-              size: compact ? 13 : 15,
+              size: compact ? 13 : 14,
               accent: onSky,
               framed: false,
             ),
-            SizedBox(width: compact ? 6 : 8),
+            const SizedBox(width: 4),
             Text(
               label,
-              style: AppTypography.label(
-                size: compact ? 10 : 11,
-                letterSpacing: 0.35,
+              style: AppTypography.body(
+                size: 12,
+                weight: FontWeight.w800,
                 color: onSky,
+                height: 1,
               ),
             ),
           ],

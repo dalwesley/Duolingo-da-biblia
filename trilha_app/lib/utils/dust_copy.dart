@@ -24,7 +24,7 @@ class DustCopy {
       ]);
     }
     return _pick(const [
-      'Ficando pra trás',
+      'Ficando para trás',
       'Pó na sequência',
       'A caravana te ultrapassa',
     ]);
@@ -39,15 +39,15 @@ class DustCopy {
     final days = streak == 1 ? '1 dia' : '$streak dias';
     if (hasFreeze) {
       return _pick([
-        '$name · $countdown e o pó sobe. Um passo limpa — ou o gelo cobre 1 dia.',
+        '$name · $countdown e o pó sobe. Uma cena limpa — ou o gelo cobre 1 dia.',
         'Caravana na frente. Você com $days ainda em jogo. Faltam $countdown.',
-        'Trilha coberta de pó. $countdown · continue a caminhada (gelo à postos).',
+        'Trilha coberta de pó. $countdown · continue a caminhada (gelo a postos).',
       ]);
     }
     return _pick([
-      '$name · sem gelo e comendo poeira. Faltam $countdown. Uma lição e você alcança.',
+      '$name · sem gelo e comendo poeira. Faltam $countdown. Uma cena e você alcança.',
       '$days em risco sob o pó. Faltam $countdown — caminhe antes que suma.',
-      'A poeira engole a sequência. $countdown · uma missão limpa o caminho.',
+      'A poeira engole a sequência. $countdown · uma cena limpa o caminho.',
     ]);
   }
 
@@ -59,11 +59,11 @@ class DustCopy {
     if (hasFreeze) {
       return _pick([
         '$name, o dia vira poeira. Faltam $countdown — caminhe, ou o gelo cobre 1 dia.',
-        'Últimas $countdown. Continue a caminhada antes que a caravana some no pó.',
+        'Últimas $countdown. Continue a caminhada antes que a caravana suma no pó.',
       ]);
     }
     return _pick([
-      '$name, faltam $countdown e sem gelo. Uma lição — ou a sequência vira poeira.',
+      '$name, faltam $countdown e sem gelo. Uma cena — ou a sequência vira poeira.',
       'Noite fechando. $countdown · continue a caminhada agora.',
     ]);
   }
@@ -73,20 +73,20 @@ class DustCopy {
       return _pick(const [
         'Sumiu na poeira',
         'A trilha te espera',
-        'Volta do pó',
+        'Volte do pó',
       ]);
     }
     if (daysAway >= 2) {
       return _pick(const [
         'Dois dias de poeira',
-        'Ainda dá pra alcançar',
+        'Ainda dá para alcançar',
         'Poeira acumulada',
       ]);
     }
     return _pick(const [
       'Um dia de poeira',
       'Trilha empoeirada',
-      'Ficou pra trás',
+      'Ficou para trás',
     ]);
   }
 
@@ -100,16 +100,16 @@ class DustCopy {
     if (daysAway >= 3) {
       return hasFreeze
           ? '$name, $daysAway dias no pó. O gelo ainda cobre 1 falta — retome a caminhada.'
-          : '$name, $daysAway dias comendo poeira. Uma lição limpa o caminho e recomeça.';
+          : '$name, $daysAway dias comendo poeira. Uma cena limpa o caminho e recomeça.';
     }
     if (daysAway >= 2) {
       return hasFreeze
           ? '$name, dois dias de poeira. Gelo ainda pode salvar 1 dia — volte hoje.'
-          : '$name, dois dias pra trás. Uma missão e a caravana te vê de novo.';
+          : '$name, dois dias para trás. Uma cena e a caravana te vê de novo.';
     }
     return streak > 0
-        ? '$name, $days cobertos de pó. Uma lição e você deixa a poeira pra trás.'
-        : '$name, a trilha empoeirou. Um passo basta pra limpar o caminho.';
+        ? '$name, $days cobertos de pó. Uma cena e você deixa a poeira para trás.'
+        : '$name, a trilha empoeirou. Uma cena basta para limpar o caminho.';
   }
 
   // ── UI in-app (curto, sob o card / marcos) ───────────────────────────────
@@ -118,20 +118,20 @@ class DustCopy {
     if (hasFreeze) {
       return _pick(const [
         'Comendo poeira · gelo ainda cobre 1 dia',
-        'Ficando pra trás · gelo à postos',
+        'Ficando para trás · gelo a postos',
         'Pó na trilha · gelo cobre 1 falta',
       ]);
     }
     return _pick(const [
       'Comendo poeira · caminhe agora',
-      'Ficando pra trás · sem gelo',
-      'A caravana some · uma lição alcança',
+      'Ficando para trás · sem gelo',
+      'A caravana some · uma cena alcança',
     ]);
   }
 
   static String uiRiskDetail() => _pick(const [
-        'Ficando pra trás · continue a caminhada',
-        'Comendo poeira · um passo limpa o caminho',
+        'Ficando para trás · continue a caminhada',
+        'Comendo poeira · uma cena limpa o caminho',
         'Pó na sequência · caminhe hoje',
       ]);
 
@@ -145,17 +145,17 @@ class DustCopy {
         ? 'a sequência'
         : 'a sequência de $streak dias';
     if (hasFreeze) {
-      return '$countdown para $seq cair. Faz a missão hoje — o gelo ainda salva 1 dia.';
+      return '$countdown para $seq cair. Faça a cena hoje — o gelo ainda salva 1 dia.';
     }
-    return '$countdown para $seq cair. Faz a missão hoje.';
+    return '$countdown para $seq cair. Faça a cena hoje.';
   }
 
   /// Buraco já aberto (ontem vazio). Gelo da semana não cobre de novo.
   static String heroGapLine({required bool hasFreeze}) {
     if (hasFreeze) {
-      return 'Ontem ficou vazio. Faz a missão hoje — o gelo ainda salva 1 dia.';
+      return 'Ontem ficou vazio. Faça a cena hoje — o gelo ainda salva 1 dia.';
     }
-    return 'Ontem ficou vazio. Faz a missão hoje para não perder a sequência.';
+    return 'Ontem ficou vazio. Faça a cena hoje para não perder a sequência.';
   }
 
   static String _pick(List<String> options) {

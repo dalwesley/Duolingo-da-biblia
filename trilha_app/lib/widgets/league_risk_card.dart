@@ -41,7 +41,7 @@ class LeagueRiskCard extends StatelessWidget {
         children: [
           CinematicIcon(
             glyph: inZone ? CinematicGlyph.demote : CinematicGlyph.rise,
-            size: 40,
+            size: AppMetrics.leadingIcon,
             accent: inZone ? AppColors.error : AppColors.accent,
             glowing: false,
           ),
@@ -65,13 +65,13 @@ class LeagueRiskCard extends StatelessWidget {
                     size: 12,
                     height: 1.35,
                     weight: FontWeight.w600,
-                    color: a.textMuted(0.7),
+                    color: a.textSecondary,
                   ),
                 ),
               ],
             ),
           ),
-          ListChevron(color: a.textMuted(0.45), size: 20),
+          ListChevron(color: a.textFaint),
         ],
       ),
     );

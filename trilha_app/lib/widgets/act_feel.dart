@@ -8,9 +8,10 @@ import '../theme/app_theme.dart';
 /// Vocabulário háptico dos atos — um gesto, um toque.
 class ActHaptics {
   static void tap() => HapticFeedback.selectionClick();
+  static void light() => HapticFeedback.lightImpact();
   static void confirm() => HapticFeedback.mediumImpact();
   static void success() => HapticFeedback.heavyImpact();
-  static void error() => HapticFeedback.heavyImpact();
+  static void error() => HapticFeedback.mediumImpact();
   static void tick() => HapticFeedback.selectionClick();
 }
 

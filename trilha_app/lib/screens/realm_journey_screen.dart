@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import '../models/trail.dart';
 import '../models/trail_catalog.dart';
@@ -14,10 +13,13 @@ import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
 import '../utils/realm_visuals.dart';
 import '../utils/trail_progress.dart';
+import '../widgets/act_feel.dart';
+import '../widgets/app_sheet.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/journey_path.dart';
 import '../widgets/top_bar.dart';
+import '../widgets/ui_primitives.dart';
 import 'trail_map_screen.dart';
 
 /// Peregrinação cinematográfica — trilhas dentro de um reino.
@@ -72,15 +74,16 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
     Map<String, List<String>> clearedTrailModes = const {},
     Map<String, String> trailDifficulties = const {},
   }) {
-    final realmTrails = widget.allTrails
-        .where((t) => TrailRealm.fromId(t.realmId) == widget.realm)
-        .toList()
-      ..sort((a, b) {
-        final ca = TrailCategory.fromId(a.categoryId).order;
-        final cb = TrailCategory.fromId(b.categoryId).order;
-        if (ca != cb) return ca.compareTo(cb);
-        return a.order.compareTo(b.order);
-      });
+    final realmTrails =
+        widget.allTrails
+            .where((t) => TrailRealm.fromId(t.realmId) == widget.realm)
+            .toList()
+          ..sort((a, b) {
+            final ca = TrailCategory.fromId(a.categoryId).order;
+            final cb = TrailCategory.fromId(b.categoryId).order;
+            if (ca != cb) return ca.compareTo(cb);
+            return a.order.compareTo(b.order);
+          });
 
     var sawCurrent = false;
     final items = <JourneyPathItem>[];
@@ -123,10 +126,8 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
       final String? statusLabel;
       if (done && clearedLabel != null) {
         if (replaying) {
-          statusLabel =
-              '${TrailProgress.modeLabel(storedId)} em curso';
-        } else if (openId != null &&
-            !cleared.contains(openId)) {
+          statusLabel = '${TrailProgress.modeLabel(storedId)} em curso';
+        } else if (openId != null && !cleared.contains(openId)) {
           statusLabel = '${TrailProgress.modeLabel(openId)} à frente';
         } else {
           statusLabel = clearedLabel;
@@ -188,7 +189,9 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
   void _scheduleJumpToCurrent() {
     if (!mounted || _jumped) return;
     if (_currentKey.currentContext == null) {
-      WidgetsBinding.instance.addPostFrameCallback((_) => _scheduleJumpToCurrent());
+      WidgetsBinding.instance.addPostFrameCallback(
+        (_) => _scheduleJumpToCurrent(),
+      );
       return;
     }
     _jumped = true;
@@ -196,9 +199,10 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
   }
 
   void _onNodeTap(JourneyPathItem item) {
-    HapticFeedback.selectionClick();
+    ActHaptics.tap();
     final trail = item.trail;
-    final canOpen = item.state == JourneyNodeState.current ||
+    final canOpen =
+        item.state == JourneyNodeState.current ||
         item.state == JourneyNodeState.completed ||
         item.state == JourneyNodeState.upcoming;
 
@@ -208,7 +212,10 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
           transitionDuration: const Duration(milliseconds: 480),
           pageBuilder: (_, animation, secondaryAnimation) {
             return FadeTransition(
-              opacity: CurvedAnimation(parent: animation, curve: Curves.easeOut),
+              opacity: CurvedAnimation(
+                parent: animation,
+                curve: Curves.easeOut,
+              ),
               child: TrailMapScreen(slug: trail.slug),
             );
           },
@@ -222,46 +229,24 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
 
   void _showSoonSheet(JourneyPathItem item) {
     final visuals = RealmVisuals.of(widget.realm);
-    showModalBottomSheet(
-      context: context,
-      backgroundColor: Appearance.of(context).cardFill,
-      shape: const RoundedRectangleBorder(
-        borderRadius: BorderRadius.vertical(top: Radius.circular(AppRadii.xl)),
-      ),
+    showAppSheet<void>(
+      context,
       builder: (ctx) {
-        return Padding(
-          padding: EdgeInsets.fromLTRB(
+        return AppSheetPanel(
+          padding: const EdgeInsets.fromLTRB(
             AppSpace.xxl,
-            AppSpace.lg,
+            AppSpace.md,
             AppSpace.xxl,
-            AppSpace.xxl + MediaQuery.of(ctx).padding.bottom,
+            AppSpace.xxl,
           ),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Container(
-                width: 36,
-                height: 3,
-                decoration: BoxDecoration(
-                  color: Colors.white.withValues(alpha: 0.18),
-                  borderRadius: BorderRadius.circular(2),
-                ),
-              ),
-              const SizedBox(height: AppSpace.xxl),
-              Text(
-                item.trail.title,
-                textAlign: TextAlign.center,
-                style: AppTypography.display(size: 30),
-              ),
-              const SizedBox(height: AppSpace.md),
-              Text(
-                item.trail.description,
-                textAlign: TextAlign.center,
-                style: AppTypography.body(
-                  size: 15,
-                  height: 1.5,
-                  color: Colors.white.withValues(alpha: 0.58),
-                ),
+              const SizedBox(height: AppSpace.sm),
+              AppSheetHeader(
+                title: item.trail.title,
+                subtitle: item.trail.description,
+                center: true,
               ),
               const SizedBox(height: AppSpace.xxl),
               Text(
@@ -318,7 +303,7 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
                       immersive: true,
                       dark: true,
                       title: widget.realm.label,
-                      subtitle: visuals.eyebrow,
+                      subtitle: visuals.eyebrow.toUpperCase(),
                       onBack: () => Navigator.pop(context),
                       leadingGlyph: CinematicGlyph.path,
                       chromeAccent: AppColors.sand,
@@ -359,10 +344,7 @@ class _RealmJourneyScreenState extends State<RealmJourneyScreen> {
               Positioned(
                 right: 18,
                 bottom: 28 + bottom,
-                child: _JumpChip(
-                  accent: visuals.accent,
-                  onTap: _jumpToCurrent,
-                ),
+                child: _JumpChip(accent: visuals.accent, onTap: _jumpToCurrent),
               ),
             ],
           ),
@@ -414,10 +396,10 @@ class _JumpChip extends StatelessWidget {
               ),
               const SizedBox(width: AppSpace.sm),
               Text(
-                'Seu passo',
+                'Onde você está',
                 style: AppTypography.label(
                   size: 12,
-                  color: Colors.white.withValues(alpha: 0.88),
+                  color: Appearance.of(context).text,
                   letterSpacing: 0.3,
                 ),
               ),

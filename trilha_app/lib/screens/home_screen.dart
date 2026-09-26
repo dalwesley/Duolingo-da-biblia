@@ -5,12 +5,11 @@ import 'package:provider/provider.dart';
 import '../data/trail_repository.dart';
 import '../data/season_walk_catalog.dart';
 import '../models/trail.dart';
+import '../widgets/act_feel.dart';
 import '../services/analytics_service.dart';
 import '../services/companion_service.dart';
 import '../services/corner_service.dart';
-import '../services/league_service.dart';
 import '../services/progress_service.dart';
-import '../services/recognition_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
@@ -18,11 +17,13 @@ import '../utils/liturgical_calendar.dart';
 import '../utils/trail_progress.dart';
 import '../utils/tomorrow_hook.dart';
 import '../models/daily_quest.dart';
+import '../widgets/app_sheet.dart';
+import '../widgets/corner_board.dart';
+import '../widgets/corner_home_card.dart';
+import '../widgets/juntos_inbox.dart';
+import '../widgets/home_brand_backdrop.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/comeback_sheet.dart';
-import '../widgets/companion_nudge_home_card.dart';
-import '../widgets/recognition_home_card.dart';
-import '../widgets/corner_home_card.dart';
 import '../widgets/daily_chest_card.dart';
 import '../widgets/daily_quests_card.dart';
 import '../widgets/hero_card_atmosphere.dart';
@@ -30,8 +31,6 @@ import '../widgets/hero_continue_card.dart';
 import '../widgets/home_player_header.dart';
 import '../widgets/home_word_card.dart';
 import '../widgets/immersive_background.dart';
-import '../widgets/league_outcome_card.dart';
-import '../widgets/league_risk_card.dart';
 import '../widgets/offline_curriculum_dialog.dart';
 import '../widgets/reminder_prompt_sheet.dart';
 import '../widgets/streak_repair_banner.dart';
@@ -44,7 +43,7 @@ import 'memory_screen.dart';
 import 'practice_screen.dart';
 import 'season_walk_screen.dart';
 
-/// Home — um único trabalho: a próxima lição.
+/// Home — um único trabalho: a próxima cena.
 class HomeScreen extends StatefulWidget {
   final TrailRepository repo;
   final void Function(String missionSlug) onOpenMission;
@@ -206,6 +205,10 @@ class _HomeScreenState extends State<HomeScreen>
       widget.onOpenBible!();
       return;
     }
+    if (reference != null && reference.isNotEmpty) {
+      BibleReaderScreen.open(context, reference);
+      return;
+    }
     final mode = context.read<ProgressService>().settings.appearanceMode;
     final appearance = AppearanceStyle.resolve(mode);
     Navigator.of(context).push(
@@ -217,20 +220,18 @@ class _HomeScreenState extends State<HomeScreen>
             backgroundColor: Colors.transparent,
             body: ImmersiveBackground(
               appearance: appearance,
-              child: reference == null || reference.isEmpty
-                  ? BibleScreen(
-                      topBar: TopBar(
-                        inline: true,
-                        immersive: true,
-                        dark: appearance.onDark,
-                        title: 'Bíblia',
-                        subtitle: 'A Palavra, offline',
-                        leadingGlyph: CinematicGlyph.book,
-                        chromeAccent: AppColors.cedar,
-                        onBack: () => Navigator.pop(ctx),
-                      ),
-                    )
-                  : BibleReaderScreen(reference: reference),
+              child: BibleScreen(
+                topBar: TopBar(
+                  inline: true,
+                  immersive: true,
+                  dark: appearance.onDark,
+                  title: 'Bíblia',
+                  subtitle: 'A Palavra, offline',
+                  leadingGlyph: CinematicGlyph.book,
+                  chromeAccent: AppColors.cedar,
+                  onBack: () => Navigator.pop(ctx),
+                ),
+              ),
             ),
           ),
         ),
@@ -298,6 +299,111 @@ class _HomeScreenState extends State<HomeScreen>
     );
   }
 
+  void _openDesafioFace() {
+    final corner = context.read<CornerService>().face;
+    if (corner == null) return;
+    _openCardSheet(
+      CornerHomeCard(
+        challenge: corner,
+        onWalk: () {
+          Navigator.of(context).pop();
+          widget.onOpenMission(corner.missionSlug);
+        },
+      ),
+    );
+  }
+
+  /// Cartões compactos de "Mais para hoje" — cada um abre o card completo
+  /// numa folha (ou leva direto ao destino).
+  List<_MoreTile> _moreToday(
+    BuildContext context, {
+    required ProgressService progress,
+    required bool goalMet,
+    required List<Trail> trails,
+    required String? missionSlug,
+  }) {
+    final juntos = JuntosInbox.pending(context);
+    final mistakes = progress.mistakeQuestionIds.length;
+    return [
+      if (progress.dailyChestAvailable)
+        _MoreTile(
+          glyph: CinematicGlyph.gem,
+          title: 'Baú do dia',
+          caption: 'Pronto para abrir',
+          color: AppColors.accent,
+          hot: true,
+          onTap: () => _openCardSheet(const DailyChestCard()),
+        ),
+      if (juntos > 0)
+        _MoreTile(
+          glyph: CinematicGlyph.people,
+          title: 'Juntos',
+          caption: juntos == 1 ? '1 novidade' : '$juntos novidades',
+          color: AppColors.streak,
+          hot: true,
+          onTap: () => widget.onOpenLeague?.call(),
+        ),
+      if (goalMet)
+        _MoreTile(
+          glyph: CinematicGlyph.target,
+          title: 'Tarefas do dia',
+          caption: 'Passos extras',
+          color: AppColors.teal,
+          onTap: () => _openCardSheet(
+            DailyQuestsCard(
+              onQuestTap: (q) {
+                Navigator.of(context).pop();
+                _onQuestTap(q, missionSlug: missionSlug);
+              },
+            ),
+          ),
+        ),
+      if (goalMet)
+        _MoreTile(
+          glyph: CinematicGlyph.crown,
+          title: 'Desafio da estação',
+          caption: 'Ver progresso',
+          color: AppColors.orchid,
+          onTap: () => _openCardSheet(SeasonChallengeBanner(catalog: trails)),
+        ),
+      if (mistakes > 0)
+        _MoreTile(
+          glyph: CinematicGlyph.refresh,
+          title: 'Revisitar',
+          caption: '$mistakes para reforçar',
+          color: AppColors.error,
+          onTap: () => Navigator.of(
+            context,
+          ).push(MaterialPageRoute(builder: (_) => const PracticeScreen())),
+        ),
+    ];
+  }
+
+  Future<void> _openCardSheet(Widget card) {
+    // O card já é o painel (GlassCard próprio): sem AppSheetPanel, para não
+    // empilhar card dentro de card — só a casca e a alça do design system.
+    return showAppSheet<void>(
+      context,
+      builder: (context) {
+        final bottom = MediaQuery.paddingOf(context).bottom;
+        return Padding(
+          padding: EdgeInsets.fromLTRB(12, 0, 12, 12 + bottom),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              // Alça: mostra que a folha fecha arrastando para baixo.
+              const Padding(
+                padding: EdgeInsets.only(bottom: 10),
+                child: SheetGrabber(),
+              ),
+              Flexible(child: SingleChildScrollView(child: card)),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
@@ -328,11 +434,6 @@ class _HomeScreenState extends State<HomeScreen>
     _maybePromptReminders(progress);
 
     final nudge = context.watch<CompanionService>().incomingNudge;
-    final recognitions = context.watch<RecognitionService>().incoming;
-    final corner = context.watch<CornerService>().homeCard;
-    final walk = current != null
-        ? () => widget.onOpenMission(current.slug)
-        : widget.onOpenTrilhas;
 
     final trailMood = resolveHeroCardMood(
       atRisk: progress.isStreakAtRisk,
@@ -345,6 +446,9 @@ class _HomeScreenState extends State<HomeScreen>
       outline: homeTrailOutline(trailMood),
       child: Stack(
         children: [
+          Positioned.fill(
+            child: HomeBrandBackdrop(style: Appearance.of(context)),
+          ),
           ListView(
             padding: EdgeInsets.fromLTRB(
               AppSpace.screen,
@@ -368,33 +472,7 @@ class _HomeScreenState extends State<HomeScreen>
                       _openBible(LiturgicalCalendar.momentFor().focusRef),
                 ),
               ),
-              if (nudge != null) ...[
-                const SizedBox(height: AppSpace.md),
-                _reveal(
-                  0,
-                  CompanionNudgeHomeCard(
-                    companion: nudge,
-                    onWalk: walk,
-                    onOpenCompanhia: widget.onOpenLeague,
-                  ),
-                ),
-              ],
               const SizedBox(height: AppSpace.lg),
-              // Resultado da semana da caravana — coletar na Home (não na aba Juntos).
-              Builder(
-                builder: (context) {
-                  final league = context.watch<LeagueService>();
-                  if (!league.isLoaded || league.pendingOutcome == null) {
-                    return const SizedBox.shrink();
-                  }
-                  return Column(
-                    children: [
-                      _reveal(0, const LeagueOutcomeCard()),
-                      const SizedBox(height: AppSpace.sm),
-                    ],
-                  );
-                },
-              ),
               // CTA dominante: missão pronta.
               _reveal(
                 1,
@@ -416,70 +494,43 @@ class _HomeScreenState extends State<HomeScreen>
                   ],
                 ),
               ),
-              if (recognitions.isNotEmpty) ...[
-                const SizedBox(height: AppSpace.section),
-                _reveal(1, RecognitionHomeCard(items: recognitions)),
-              ],
-              if (corner != null) ...[
+              if (context.watch<CornerService>().face != null) ...[
                 const SizedBox(height: AppSpace.section),
                 _reveal(
-                  1,
-                  CornerHomeCard(
-                    challenge: corner,
-                    onWalk: () => widget.onOpenMission(corner.missionSlug),
+                  2,
+                  DesafioEntry(
+                    onTap: () {
+                      ActHaptics.tap();
+                      _openDesafioFace();
+                    },
                   ),
                 ),
               ],
-              if (recognitions.isEmpty && corner == null)
-                const SizedBox(height: AppSpace.xl)
-              else
-                const SizedBox(height: AppSpace.section),
-              if (goalMet) ...[
-                _reveal(2, SeasonChallengeBanner(catalog: trails)),
-              ],
+              // Uma coisa só abaixo da missão: o reparo da sequência, se houver.
               if (progress.showStreakRepairOffer) ...[
+                const SizedBox(height: AppSpace.section),
                 _reveal(2, const StreakRepairBanner()),
-                const SizedBox(height: AppSpace.section),
               ],
-              if (goalMet)
-                Builder(
-                  builder: (context) {
-                    final league = context.watch<LeagueService>();
-                    if (!league.isLoaded) return const SizedBox.shrink();
-                    final entries = league.standings(
-                      userName: progress.userName,
-                      userWeeklySteps: progress.weeklySteps,
-                    );
-                    final rank = league.userRank(entries);
-                    if (!league.isNearDemotion(rank)) {
-                      return const SizedBox.shrink();
-                    }
-                    return Column(
-                      children: [
-                        _reveal(
-                          3,
-                          LeagueRiskCard(onOpenLeague: widget.onOpenLeague),
-                        ),
-                        const SizedBox(height: AppSpace.section),
-                      ],
-                    );
-                  },
-                ),
-              if (goalMet) ...[
-                _reveal(
-                  3,
-                  DailyQuestsCard(
-                    onQuestTap: (q) =>
-                        _onQuestTap(q, missionSlug: current?.slug),
-                  ),
-                ),
+              // O resto vive em "Mais para hoje" (abre em folha) e na aba
+              // Juntos — nada some, só deixa de disputar com a missão.
+              Builder(
+                builder: (context) {
+                  final tiles = _moreToday(
+                    context,
+                    progress: progress,
+                    goalMet: goalMet,
+                    trails: trails,
+                    missionSlug: current?.slug,
+                  );
+                  if (tiles.isEmpty) return const SizedBox.shrink();
+                  return Padding(
+                    padding: const EdgeInsets.only(top: AppSpace.section),
+                    child: _reveal(3, _MoreToday(tiles: tiles)),
+                  );
+                },
+              ),
+              if (current == null) ...[
                 const SizedBox(height: AppSpace.section),
-              ],
-              if (progress.dailyChestAvailable) ...[
-                _reveal(3, const DailyChestCard()),
-                const SizedBox(height: AppSpace.section),
-              ],
-              if (current == null)
                 _reveal(
                   4,
                   HomeWordCard(
@@ -487,10 +538,6 @@ class _HomeScreenState extends State<HomeScreen>
                     onOpen: (ref) => _openBible(ref),
                   ),
                 ),
-              if (progress.mistakeQuestionIds.isNotEmpty) ...[
-                if (recognitions.isEmpty || current == null)
-                  const SizedBox(height: AppSpace.section),
-                _reveal(4, const _RevisitPracticeLink()),
               ],
             ],
           ),
@@ -501,61 +548,6 @@ class _HomeScreenState extends State<HomeScreen>
   }
 }
 
-/// Só revisitar erros — memorizar vive na própria aba.
-class _RevisitPracticeLink extends StatelessWidget {
-  const _RevisitPracticeLink();
-
-  @override
-  Widget build(BuildContext context) {
-    final progress = context.watch<ProgressService>();
-    final a = Appearance.of(context);
-    final n = progress.mistakeQuestionIds.length;
-
-    return GlassCard(
-      onTap: () => Navigator.of(
-        context,
-      ).push(MaterialPageRoute(builder: (_) => const PracticeScreen())),
-      padding: AppMetrics.cardPaddingCompact,
-      child: Row(
-        children: [
-          CinematicIcon(
-            glyph: CinematicGlyph.refresh,
-            size: AppMetrics.leadingIcon,
-            accent: AppColors.error,
-            glowing: false,
-          ),
-          const SizedBox(width: AppSpace.sm + 2),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  'Revisitar',
-                  style: AppTypography.title(size: 14, color: a.text),
-                ),
-                const SizedBox(height: 2),
-                Text(
-                  '$n para reforçar',
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: AppTypography.body(size: 12, color: a.textMuted(0.55)),
-                ),
-              ],
-            ),
-          ),
-          CinematicIcon(
-            glyph: CinematicGlyph.chevron,
-            size: 18,
-            accent: a.textMuted(0.45),
-            framed: false,
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-/// Catálogo vazio (sem cache + falha de rede) — comum no 1º boot offline.
 class _CatalogUnavailable extends StatelessWidget {
   final bool retrying;
   final VoidCallback onShowDialog;
@@ -582,7 +574,7 @@ class _CatalogUnavailable extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Text(
-                'Missões ainda não chegaram',
+                'As cenas ainda não chegaram',
                 textAlign: TextAlign.center,
                 style: AppTypography.title(size: 18, color: a.text),
               ),
@@ -590,7 +582,7 @@ class _CatalogUnavailable extends StatelessWidget {
               Text(
                 'O currículo baixa na primeira abertura. Se a rede oscilar, toque para tentar de novo.',
                 textAlign: TextAlign.center,
-                style: AppTypography.body(size: 14, color: a.textMuted(0.7)),
+                style: AppTypography.body(size: 14, color: a.textSecondary),
               ),
               const SizedBox(height: AppSpace.xxl),
               CopperCta(
@@ -645,11 +637,19 @@ class _HomeSkeletonState extends State<_HomeSkeleton>
       ),
       physics: const NeverScrollableScrollPhysics(),
       children: [
-        _ShimmerBox(controller: _shimmer, height: 132),
+        // Mesmas alturas do conteúdo real — sem pulo quando carrega.
+        _ShimmerBox(
+          controller: _shimmer,
+          height: HeroContinueCard.homeHeaderReserve,
+        ),
         const SizedBox(height: AppSpace.lg),
-        _ShimmerBox(controller: _shimmer, height: 400),
-        const SizedBox(height: AppSpace.xl),
-        _ShimmerBox(controller: _shimmer, height: 132),
+        _ShimmerBox(
+          controller: _shimmer,
+          height: HeroContinueCard.stageHeight(context),
+          radius: AppMetrics.heroRadius,
+        ),
+        const SizedBox(height: AppSpace.section),
+        _ShimmerBox(controller: _shimmer, height: 96),
       ],
     );
   }
@@ -658,14 +658,19 @@ class _HomeSkeletonState extends State<_HomeSkeleton>
 class _ShimmerBox extends StatelessWidget {
   final AnimationController controller;
   final double height;
+  final double radius;
 
-  const _ShimmerBox({required this.controller, required this.height});
+  const _ShimmerBox({
+    required this.controller,
+    required this.height,
+    this.radius = AppMetrics.cardRadius,
+  });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final base = a.text.withValues(alpha: 0.05);
-    final highlight = a.text.withValues(alpha: 0.12);
+    final base = Color.lerp(a.cardFill, a.text, 0.03)!;
+    final highlight = Color.lerp(a.cardFill, a.text, 0.1)!;
 
     return AnimatedBuilder(
       animation: controller,
@@ -674,7 +679,7 @@ class _ShimmerBox extends StatelessWidget {
         return Container(
           height: height,
           decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(AppRadii.lg),
+            borderRadius: BorderRadius.circular(radius),
             border: Border.all(color: a.cardBorder),
             gradient: LinearGradient(
               begin: Alignment(-1 + 2 * t, 0),
@@ -719,43 +724,44 @@ class _WalkHomeCard extends StatelessWidget {
     if (sameAsHero) {
       return Padding(
         padding: const EdgeInsets.only(top: 4),
-        child: TextButton(
-          onPressed: () => openSeasonWalk(context),
-          child: Text(
-            done
-                ? 'Dia $index de ${campaign.length} feito · ${campaign.title}'
-                : 'Dia $index de ${campaign.length} · ${campaign.title}',
-            style: AppTypography.body(
-              size: 12,
-              weight: FontWeight.w600,
-              color: a.textMuted(0.6),
-            ),
-          ),
+        child: TextCta(
+          label: done
+              ? 'Dia $index de ${campaign.length} feito · ${campaign.title}'
+              : 'Dia $index de ${campaign.length} · ${campaign.title}',
+          onTap: () => openSeasonWalk(context),
+          color: a.textSecondary,
         ),
       );
     }
 
+    // Toque no card inteiro (antes o InkWell ficava dentro do padding).
     return Padding(
-      padding: const EdgeInsets.only(top: 4),
-      child: GlassCard(
-        padding: AppMetrics.cardPaddingCompact,
-        child: InkWell(
+      padding: const EdgeInsets.only(top: AppSpace.sm),
+      child: Semantics(
+        button: true,
+        label: day == null
+            ? '${campaign.title}. ${campaign.subtitle}'
+            : '${campaign.title}. Dia $index${done ? ' feito' : ''}: ${day.title}',
+        excludeSemantics: true,
+        child: GlassCard(
+          padding: AppMetrics.cardPaddingCompact,
           onTap: () => openSeasonWalk(context),
           child: Row(
             children: [
-              CinematicIcon(
+              const CinematicIcon(
                 glyph: CinematicGlyph.calendar,
-                size: 36,
+                size: AppMetrics.leadingIcon,
                 accent: AppColors.accent,
-                framed: false,
               ),
-              const SizedBox(width: 10),
+              const SizedBox(width: AppSpace.md),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       campaign.title,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                       style: AppTypography.title(size: 14, color: a.text),
                     ),
                     Text(
@@ -768,15 +774,291 @@ class _WalkHomeCard extends StatelessWidget {
                       overflow: TextOverflow.ellipsis,
                       style: AppTypography.body(
                         size: 12,
-                        color: a.textMuted(0.65),
+                        color: a.textSecondary,
                       ),
                     ),
                   ],
                 ),
               ),
+              const SizedBox(width: AppSpace.sm),
+              if (done)
+                const CinematicIcon(
+                  glyph: CinematicGlyph.check,
+                  size: 18,
+                  accent: AppColors.teal,
+                  framed: false,
+                )
+              else
+                ListChevron(color: a.textSecondary),
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+class _MoreTile {
+  final CinematicGlyph glyph;
+  final String title;
+  final String caption;
+  final Color color;
+  final bool hot;
+  final VoidCallback onTap;
+
+  const _MoreTile({
+    required this.glyph,
+    required this.title,
+    required this.caption,
+    required this.color,
+    required this.onTap,
+    this.hot = false,
+  });
+}
+
+/// "Mais para hoje": um painel só, com linhas — lista de ações, não
+/// mosaico de cartões soltos. O humor da trilha (borda da sequência) fica
+/// no card da missão; aqui o painel é neutro para não disputar.
+class _MoreToday extends StatelessWidget {
+  final List<_MoreTile> tiles;
+
+  const _MoreToday({required this.tiles});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    const radius = AppRadii.xl;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: AppSpace.xs),
+          child: Row(
+            children: [
+              Semantics(
+                header: true,
+                child: const SectionLabel('Mais para hoje'),
+              ),
+              const SizedBox(width: AppSpace.sm),
+              Expanded(
+                child: Container(
+                  height: 1,
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      colors: [
+                        a.text.withValues(alpha: 0.14),
+                        a.text.withValues(alpha: 0),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        const SizedBox(height: AppSpace.md),
+        DecoratedBox(
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(radius),
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+                Color.lerp(a.cardFill, AppColors.textOnDark, 0.05)!,
+                a.cardFill,
+              ],
+            ),
+            border: Border.all(color: a.cardBorder),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withValues(alpha: 0.28),
+                blurRadius: 24,
+                offset: const Offset(0, 10),
+              ),
+            ],
+          ),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(radius),
+            child: Column(
+              children: [
+                for (var i = 0; i < tiles.length; i++) ...[
+                  if (i > 0)
+                    const ListDivider(
+                      indent: AppSpace.lg + 44 + AppSpace.md,
+                      endIndent: AppSpace.lg,
+                    ),
+                  _MoreTileRow(tile: tiles[i]),
+                ],
+              ],
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class _MoreTileRow extends StatefulWidget {
+  final _MoreTile tile;
+
+  const _MoreTileRow({required this.tile});
+
+  @override
+  State<_MoreTileRow> createState() => _MoreTileRowState();
+}
+
+class _MoreTileRowState extends State<_MoreTileRow> {
+  bool _pressed = false;
+
+  void _setPressed(bool v) {
+    if (_pressed != v) setState(() => _pressed = v);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final tile = widget.tile;
+    final tone = AppColors.glyphInk(tile.color);
+    return Semantics(
+      button: true,
+      label: '${tile.title}, ${tile.caption}',
+      excludeSemantics: true,
+      child: GestureDetector(
+        behavior: HitTestBehavior.opaque,
+        onTapDown: (_) => _setPressed(true),
+        onTapCancel: () => _setPressed(false),
+        onTapUp: (_) => _setPressed(false),
+        onTap: () {
+          ActHaptics.tap();
+          tile.onTap();
+        },
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 140),
+          curve: Curves.easeOut,
+          padding: const EdgeInsets.symmetric(
+            horizontal: AppSpace.lg,
+            vertical: 14,
+          ),
+          decoration: BoxDecoration(
+            // Linha com novidade ganha um brilho da própria cor vindo do
+            // ícone; pressionar clareia a linha inteira.
+            gradient: LinearGradient(
+              colors: [
+                tone.withValues(alpha: tile.hot ? 0.12 : 0),
+                tone.withValues(alpha: 0),
+              ],
+              stops: const [0, 0.7],
+            ),
+          ),
+          foregroundDecoration: BoxDecoration(
+            color: _pressed ? a.text.withValues(alpha: 0.06) : null,
+          ),
+          child: Row(
+            children: [
+              _MoreTileBadge(tile: tile, tone: tone),
+              const SizedBox(width: AppSpace.md),
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(
+                      tile.title,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: AppTypography.title(size: 16, color: a.text),
+                    ),
+                    const SizedBox(height: 3),
+                    Text(
+                      tile.caption,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: AppTypography.body(
+                        size: 12,
+                        weight: tile.hot ? FontWeight.w700 : FontWeight.w600,
+                        color: tile.hot ? tone : a.textSecondary,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(width: AppSpace.sm),
+              AnimatedSlide(
+                duration: const Duration(milliseconds: 140),
+                offset: _pressed ? const Offset(0.15, 0) : Offset.zero,
+                child: Container(
+                  width: 28,
+                  height: 28,
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: tile.hot
+                        ? tone.withValues(alpha: 0.16)
+                        : a.text.withValues(alpha: 0.05),
+                  ),
+                  child: CinematicIcon(
+                    glyph: CinematicGlyph.chevron,
+                    size: 14,
+                    accent: tile.hot ? tone : a.textFaint,
+                    framed: false,
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Ícone da linha: ladrilho com degradê da cor da ação e, se houver
+/// novidade, um ponto aceso no canto — como selo de notificação.
+class _MoreTileBadge extends StatelessWidget {
+  final _MoreTile tile;
+  final Color tone;
+
+  const _MoreTileBadge({required this.tile, required this.tone});
+
+  @override
+  Widget build(BuildContext context) {
+    const size = 44.0;
+    return SizedBox(
+      width: size,
+      height: size,
+      child: Stack(
+        clipBehavior: Clip.none,
+        children: [
+          Container(
+            width: size,
+            height: size,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(AppRadii.md),
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  tone.withValues(alpha: 0.30),
+                  tone.withValues(alpha: 0.10),
+                ],
+              ),
+              border: Border.all(color: tone.withValues(alpha: 0.32)),
+            ),
+            child: CinematicIcon(
+              glyph: tile.glyph,
+              size: 22,
+              accent: tile.color,
+              framed: false,
+            ),
+          ),
+          if (tile.hot)
+            Positioned(
+              top: -3,
+              right: -3,
+              child: AlertDot(color: tone, size: 12, glow: true),
+            ),
+        ],
       ),
     );
   }

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import '../services/app_update_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import 'app_sheet.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
 
@@ -12,10 +12,8 @@ Future<bool> showAppUpdateSheet(
   AppUpdateStatus status,
 ) async {
   if (!status.updateAvailable) return false;
-  final result = await showModalBottomSheet<bool>(
-    context: context,
-    isScrollControlled: true,
-    backgroundColor: Colors.transparent,
+  final result = await showAppSheet<bool>(
+    context,
     isDismissible: status.kind != AppUpdateKind.force,
     enableDrag: status.kind != AppUpdateKind.force,
     builder: (_) => _AppUpdateSheet(status: status),
@@ -33,59 +31,29 @@ class _AppUpdateSheet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final bottom = MediaQuery.paddingOf(context).bottom;
     final accent = _force ? AppColors.ember : AppColors.accent;
 
     return PopScope(
       canPop: !_force,
-      child: Container(
-        margin: const EdgeInsets.fromLTRB(12, 0, 12, 12),
-        padding: EdgeInsets.fromLTRB(20, 18, 20, 16 + bottom),
-        decoration: BoxDecoration(
-          color: _force ? Color.lerp(a.cardFill, accent, 0.08) : a.cardFill,
-          borderRadius: BorderRadius.circular(AppRadii.lg),
-          border: Border.all(
-            color: _force ? accent.withValues(alpha: 0.45) : a.cardBorder,
-          ),
-          boxShadow: _force
-              ? AppMetrics.cardShadow(elevated: true, tint: accent)
-              : AppTheme.cardShadow(elevated: true),
-        ),
+      child: AppSheetPanel(
+        tint: _force ? accent : null,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            CinematicIcon(
-              glyph: _force ? CinematicGlyph.shield : CinematicGlyph.spark,
-              size: 56,
-              accent: accent,
-              glowing: false,
-            ),
-            const SizedBox(height: 14),
-            Text(
-              'O PEREGRINO',
-              style: AppTypography.label(
-                letterSpacing: 1.5,
-                color: accent.withValues(alpha: 0.85),
+            AppSheetHeader(
+              center: true,
+              leading: CinematicIcon(
+                glyph: _force ? CinematicGlyph.shield : CinematicGlyph.spark,
+                size: 56,
+                accent: accent,
+                glowing: false,
               ),
-            ),
-            const SizedBox(height: 6),
-            Text(
-              _force
+              eyebrow: 'O peregrino',
+              eyebrowColor: accent.withValues(alpha: 0.85),
+              title: _force
                   ? 'Esta versão precisa atualizar'
                   : 'Uma versão nova te espera',
-              textAlign: TextAlign.center,
-              style: AppTypography.title(size: 20, color: a.text),
-            ),
-            const SizedBox(height: 8),
-            Text(
-              status.message,
-              textAlign: TextAlign.center,
-              style: AppTypography.body(
-                size: 14,
-                height: 1.4,
-                weight: FontWeight.w600,
-                color: a.textMuted(0.72),
-              ),
+              subtitle: status.message,
             ),
             const SizedBox(height: 16),
             _VersionLane(
@@ -97,7 +65,6 @@ class _AppUpdateSheet extends StatelessWidget {
             CopperCta(
               label: 'Atualizar agora',
               onTap: () async {
-                HapticFeedback.mediumImpact();
                 final ok = await AppUpdateService.openStore(status.storeUrl);
                 if (!context.mounted) return;
                 if (!ok) {
@@ -120,19 +87,13 @@ class _AppUpdateSheet extends StatelessWidget {
             ),
             if (!_force) ...[
               const SizedBox(height: 8),
-              TextButton(
-                onPressed: () async {
-                  HapticFeedback.selectionClick();
+              TextCta(
+                label: 'Agora não',
+                color: a.textFaint,
+                onTap: () async {
                   await AppUpdateService.snoozeSoftPrompt();
                   if (context.mounted) Navigator.of(context).pop(false);
                 },
-                child: Text(
-                  'Agora não',
-                  style: AppTypography.body(
-                    weight: FontWeight.w700,
-                    color: a.textMuted(0.55),
-                  ),
-                ),
               ),
             ],
           ],
@@ -157,41 +118,38 @@ class _VersionLane extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
 
-    return Container(
+    return SizedBox(
       width: double.infinity,
-      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
-      decoration: BoxDecoration(
-        color: a.cardFillSoft,
-        borderRadius: BorderRadius.circular(AppRadii.md),
-        border: Border.all(color: a.cardBorder),
-      ),
-      child: Row(
-        children: [
-          Expanded(
-            child: _VersionMark(
-              kicker: 'Você',
-              value: local,
-              valueColor: a.textMuted(0.85),
+      child: InsetPanel(
+        padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+        child: Row(
+          children: [
+            Expanded(
+              child: _VersionMark(
+                kicker: 'Você',
+                value: local,
+                valueColor: a.textSecondary,
+              ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 8),
-            child: CinematicIcon(
-              glyph: CinematicGlyph.forward,
-              size: 16,
-              accent: a.textMuted(0.45),
-              framed: false,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8),
+              child: CinematicIcon(
+                glyph: CinematicGlyph.forward,
+                size: 16,
+                accent: a.textFaint,
+                framed: false,
+              ),
             ),
-          ),
-          Expanded(
-            child: _VersionMark(
-              kicker: 'Na loja',
-              value: latest,
-              valueColor: accent,
-              alignEnd: true,
+            Expanded(
+              child: _VersionMark(
+                kicker: 'Na loja',
+                value: latest,
+                valueColor: accent,
+                alignEnd: true,
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
@@ -218,14 +176,7 @@ class _VersionMark extends StatelessWidget {
     return Column(
       crossAxisAlignment: align,
       children: [
-        Text(
-          kicker.toUpperCase(),
-          style: AppTypography.label(
-            size: 10,
-            letterSpacing: 1.2,
-            color: a.textMuted(0.5),
-          ),
-        ),
+        SectionLabel(kicker, size: 10, color: a.textFaint),
         const SizedBox(height: 2),
         Text(value, style: AppTypography.title(size: 14, color: valueColor)),
       ],

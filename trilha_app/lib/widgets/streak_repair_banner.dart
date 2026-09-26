@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
@@ -31,7 +30,7 @@ class StreakRepairBanner extends StatelessWidget {
             children: [
               CinematicIcon(
                 glyph: CinematicGlyph.frost,
-                size: 40,
+                size: AppMetrics.leadingIcon,
                 accent: AppColors.streak,
                 glowing: false,
               ),
@@ -42,7 +41,7 @@ class StreakRepairBanner extends StatelessWidget {
                   children: [
                     Text(
                       'Reparar sequência',
-                      style: AppTypography.title(size: 14, color: a.text),
+                      style: AppTypography.title(size: 16, color: a.text),
                     ),
                     const SizedBox(height: 2),
                     Text(
@@ -51,7 +50,7 @@ class StreakRepairBanner extends StatelessWidget {
                         size: 12,
                         height: 1.35,
                         weight: FontWeight.w600,
-                        color: a.textMuted(0.7),
+                        color: a.textSecondary,
                       ),
                     ),
                   ],
@@ -67,7 +66,6 @@ class StreakRepairBanner extends StatelessWidget {
                   label: 'Reparar',
                   trailing: CinematicGlyph.flame,
                   onTap: () async {
-                    HapticFeedback.mediumImpact();
                     final ok = await progress.claimStreakRepair();
                     if (!context.mounted || !ok) return;
                     ScaffoldMessenger.of(context).showSnackBar(
@@ -76,10 +74,12 @@ class StreakRepairBanner extends StatelessWidget {
                           'Sequência restaurada · $restored dias',
                           style: AppTypography.body(
                             weight: FontWeight.w700,
-                            color: Colors.white,
+                            color: a.text,
                           ),
                         ),
-                        backgroundColor: AppColors.streak.withValues(alpha: 0.92),
+                        backgroundColor: AppColors.streak.withValues(
+                          alpha: 0.92,
+                        ),
                         behavior: SnackBarBehavior.floating,
                       ),
                     );
@@ -87,17 +87,12 @@ class StreakRepairBanner extends StatelessWidget {
                 ),
               ),
               const SizedBox(width: 10),
-              TextButton(
-                onPressed: () async {
+              TextCta(
+                label: 'Deixar',
+                color: a.textFaint,
+                onTap: () async {
                   await progress.dismissStreakRepair();
                 },
-                child: Text(
-                  'Deixar',
-                  style: AppTypography.body(
-                    weight: FontWeight.w700,
-                    color: a.textMuted(0.55),
-                  ),
-                ),
               ),
             ],
           ),
@@ -142,34 +137,23 @@ class StreakRepairCelebrationCard extends StatelessWidget {
                 ),
                 const SizedBox(height: 2),
                 Text(
-                  'Segue com $restored · 1× neste mês',
+                  'Continue com $restored · 1× neste mês',
                   style: AppTypography.body(
                     size: 12,
                     height: 1.3,
                     weight: FontWeight.w600,
-                    color: a.textMuted(0.7),
+                    color: a.textSecondary,
                   ),
                 ),
               ],
             ),
           ),
-          TextButton(
-            onPressed: () async {
-              HapticFeedback.mediumImpact();
+          TextCta(
+            label: 'Reparar',
+            color: AppColors.streak,
+            onTap: () async {
               await progress.claimStreakRepair();
             },
-            style: TextButton.styleFrom(
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
-              minimumSize: Size.zero,
-              tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-            ),
-            child: Text(
-              'Reparar',
-              style: AppTypography.title(
-                size: 13,
-                color: AppColors.streak,
-              ),
-            ),
           ),
         ],
       ),

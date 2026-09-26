@@ -57,6 +57,7 @@ class StwayWordmark extends StatelessWidget {
     final chevron = aColor ?? AppColors.accent;
     final style = AppTypography.display(
       size: fontSize,
+      exact: true,
       weight: weight,
       color: letters,
       height: 1,
@@ -150,6 +151,7 @@ class StwayTagline extends StatelessWidget {
       textAlign: TextAlign.center,
       style: AppTypography.label(
         size: size,
+        exact: true,
         letterSpacing: 1.6,
         color: color ?? AppColors.accent,
       ),

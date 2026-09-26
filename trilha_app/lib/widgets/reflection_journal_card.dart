@@ -5,6 +5,7 @@ import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'relic_panel.dart';
+import 'ui_primitives.dart';
 
 /// Anotações de estudo — últimas respostas guardadas nas missões.
 class ReflectionJournalCard extends StatelessWidget {
@@ -25,7 +26,7 @@ class ReflectionJournalCard extends StatelessWidget {
             title: 'Anotações de estudo',
             accent: AppColors.primaryLight,
             whisper: items.isEmpty
-                ? 'Ao fixar uma lição, sua resposta fica registrada aqui.'
+                ? 'Ao fixar uma cena, sua resposta fica registrada aqui.'
                 : null,
           ),
           if (items.isNotEmpty) ...[
@@ -42,21 +43,17 @@ class ReflectionJournalCard extends StatelessWidget {
                     const RelicHairline(accent: AppColors.primaryLight),
                     const SizedBox(height: 14),
                   ],
-                  Text(
-                    title.toUpperCase(),
-                    style: AppTypography.label(
-                      size: 10,
-                      letterSpacing: 1.3,
-                      color: AppColors.accent.withValues(alpha: 0.88),
-                    ),
+                  SectionLabel(
+                    title,
+                    color: AppColors.accent.withValues(alpha: 0.88),
                   ),
                   const SizedBox(height: 8),
                   Text(
                     e.value,
                     style: AppTypography.verse(
-                      size: 17,
+                      size: 16,
                       height: 1.4,
-                      color: a.text.withValues(alpha: 0.92),
+                      color: a.text,
                     ),
                   ),
                   if (i < items.length - 1) const SizedBox(height: 14),

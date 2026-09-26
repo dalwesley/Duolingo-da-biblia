@@ -10,7 +10,7 @@ void main() {
           isReplay: false,
           isBoss: false,
         ),
-        'Missão cumprida',
+        'Cena concluída',
       );
       expect(
         CelebrationCopy.headline(
@@ -34,7 +34,7 @@ void main() {
           isReplay: true,
           isBoss: false,
         ),
-        'REVISÃO',
+        'Revisão',
       );
       expect(
         CelebrationCopy.headline(

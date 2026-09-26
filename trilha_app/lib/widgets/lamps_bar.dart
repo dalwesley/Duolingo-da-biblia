@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
+import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
 import 'lantern_glyph.dart';
 
@@ -29,11 +30,13 @@ class LampsBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     final iconH = compact ? 24.0 : (fullWidth ? 30.0 : 28.0);
     final iconW = compact ? 18.0 : (fullWidth ? 22.0 : 20.0);
     final icons = Row(
-      mainAxisAlignment:
-          fullWidth ? MainAxisAlignment.center : MainAxisAlignment.start,
+      mainAxisAlignment: fullWidth
+          ? MainAxisAlignment.center
+          : MainAxisAlignment.start,
       mainAxisSize: fullWidth ? MainAxisSize.max : MainAxisSize.min,
       children: List.generate(max, (i) {
         final on = i < current;
@@ -72,20 +75,19 @@ class LampsBar extends StatelessWidget {
         ),
         const SizedBox(width: 6),
         Text(
-          'Vidas',
-          style: TextStyle(
-            fontSize: 11,
-            fontWeight: FontWeight.w800,
+          'Lâmpadas',
+          style: AppTypography.label(
+            size: 11,
             letterSpacing: 0.6,
-            color: Colors.white.withValues(alpha: 0.72),
+            color: a.textSecondary,
           ),
         ),
         const SizedBox(width: 8),
         Text(
           '$current/$max',
-          style: TextStyle(
-            fontSize: 12,
-            fontWeight: FontWeight.w900,
+          style: AppTypography.body(
+            size: 12,
+            weight: FontWeight.w900,
             color: accent,
           ),
         ),
@@ -96,8 +98,9 @@ class LampsBar extends StatelessWidget {
       label: '$current de $max lâmpadas. Cada erro apaga uma.',
       child: Column(
         mainAxisSize: MainAxisSize.min,
-        crossAxisAlignment:
-            fullWidth ? CrossAxisAlignment.stretch : CrossAxisAlignment.center,
+        crossAxisAlignment: fullWidth
+            ? CrossAxisAlignment.stretch
+            : CrossAxisAlignment.center,
         children: [
           header,
           SizedBox(height: compact ? 6 : (fullWidth ? 10 : 8)),
@@ -107,10 +110,10 @@ class LampsBar extends StatelessWidget {
             Text(
               'Erro apaga uma · zerar encerra',
               textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 10,
-                fontWeight: FontWeight.w600,
-                color: Colors.white.withValues(alpha: 0.42),
+              style: AppTypography.body(
+                size: 11,
+                weight: FontWeight.w600,
+                color: a.textFaint,
               ),
             ),
           ],

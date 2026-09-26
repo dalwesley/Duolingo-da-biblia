@@ -6,6 +6,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
 import 'icon_well.dart';
+import 'ui_primitives.dart';
 import 'user_avatar.dart';
 
 class FrostController extends ValueNotifier<double> {
@@ -65,6 +66,9 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
   /// Slot livre à direita (ex.: lâmpadas no treino). Ganha de [onTrailingTap].
   final Widget? trailing;
 
+  /// Toque no título (ex.: trocar livro no leitor). Mostra um chevron.
+  final VoidCallback? onTitleTap;
+
   const TopBar({
     super.key,
     required this.title,
@@ -84,6 +88,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
     this.onTrailingTap,
     this.trailingGlyph,
     this.trailing,
+    this.onTitleTap,
   });
 
   @override
@@ -124,6 +129,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
               onTrailingTap: onTrailingTap,
               trailingGlyph: trailingGlyph,
               trailing: trailing,
+              onTitleTap: onTitleTap,
             )
           : AppBar(
               primary: true,
@@ -168,6 +174,7 @@ class TopBar extends StatelessWidget implements PreferredSizeWidget {
                 subtitle: subtitle,
                 personalGreeting: personalGreeting,
                 onDark: onDark,
+                onTap: onTitleTap,
               ),
               actions: showTrailingAvatar
                   ? [
@@ -242,6 +249,7 @@ class _InlineChrome extends StatelessWidget {
   final VoidCallback? onTrailingTap;
   final CinematicGlyph? trailingGlyph;
   final Widget? trailing;
+  final VoidCallback? onTitleTap;
 
   const _InlineChrome({
     required this.appearance,
@@ -263,6 +271,7 @@ class _InlineChrome extends StatelessWidget {
     this.onTrailingTap,
     this.trailingGlyph,
     this.trailing,
+    this.onTitleTap,
   });
 
   @override
@@ -315,6 +324,7 @@ class _InlineChrome extends StatelessWidget {
                 subtitle: subtitle,
                 personalGreeting: personalGreeting,
                 onDark: onDark,
+                onTap: onTitleTap,
               ),
             ),
             if (trailing != null) ...[
@@ -407,16 +417,43 @@ class _TitleBlock extends StatelessWidget {
   final String? subtitle;
   final bool personalGreeting;
   final bool onDark;
+  final VoidCallback? onTap;
 
   const _TitleBlock({
     required this.title,
     required this.subtitle,
     required this.personalGreeting,
     required this.onDark,
+    this.onTap,
   });
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final block = _titleColumn(a);
+    if (onTap == null) return block;
+    return Semantics(
+      button: true,
+      label: subtitle == null ? title : '$title, $subtitle',
+      excludeSemantics: true,
+      child: GestureDetector(
+        onTap: onTap,
+        behavior: HitTestBehavior.opaque,
+        child: Row(
+          children: [
+            Flexible(child: block),
+            const SizedBox(width: 2),
+            RotatedBox(
+              quarterTurns: 1,
+              child: ListChevron(size: 16, color: a.textFaint),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _titleColumn(AppearanceStyle a) {
     if (personalGreeting) {
       return Column(
         mainAxisAlignment: MainAxisAlignment.center,
@@ -430,7 +467,7 @@ class _TitleBlock extends StatelessWidget {
               overflow: TextOverflow.ellipsis,
               style: AppTypography.body(
                 size: 11,
-                color: AppColors.textOnDark.withValues(alpha: 0.6),
+                color: a.textSecondary,
                 weight: FontWeight.w600,
                 height: 1.05,
               ).copyWith(letterSpacing: 0.3),
@@ -468,9 +505,7 @@ class _TitleBlock extends StatelessWidget {
             style: AppTypography.body(
               size: 11,
               height: 1.05,
-              color: onDark
-                  ? AppColors.textOnDark.withValues(alpha: 0.55)
-                  : AppColors.textMuted,
+              color: onDark ? a.textFaint : AppColors.textMuted,
             ),
           ),
       ],

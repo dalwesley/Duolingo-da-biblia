@@ -73,9 +73,7 @@ class PilgrimIdentityCard extends StatelessWidget {
       parts.add(rank <= 3 ? pilgrimRankEpithet(rank) : '$rankº na caravana');
     }
     if (showLeaderDays && leaderDays > 0) {
-      parts.add(
-        leaderDays == 1 ? '1 dia no topo' : '$leaderDays dias no topo',
-      );
+      parts.add(leaderDays == 1 ? '1 dia no topo' : '$leaderDays dias no topo');
     }
     final record = recordLine?.trim();
     if (record != null && record.isNotEmpty) parts.add(record);
@@ -100,20 +98,10 @@ class PilgrimIdentityCard extends StatelessWidget {
     }
 
     if (showSteps) {
-      push(
-        _IdentityStat(
-          value: pilgrimFormatCount(steps),
-          label: 'Passos',
-        ),
-      );
+      push(_IdentityStat(value: pilgrimFormatCount(steps), label: 'Passos'));
     }
     if (showMissions) {
-      push(
-        _IdentityStat(
-          value: pilgrimFormatCount(missions),
-          label: 'Cenas',
-        ),
-      );
+      push(_IdentityStat(value: pilgrimFormatCount(missions), label: 'Cenas'));
     }
     if (_showPrecision) {
       push(
@@ -128,7 +116,12 @@ class PilgrimIdentityCard extends StatelessWidget {
 
     return RelicPanel(
       elevated: true,
-      padding: const EdgeInsets.fromLTRB(18, 18, 18, 16),
+      padding: const EdgeInsets.fromLTRB(
+        AppSpace.xl,
+        AppSpace.xl,
+        AppSpace.xl,
+        AppSpace.lg,
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -144,7 +137,7 @@ class PilgrimIdentityCard extends StatelessWidget {
                 editable: editable,
                 onTap: editable ? onEditPortrait : null,
               ),
-              const SizedBox(width: 14),
+              const SizedBox(width: AppSpace.lg),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -175,7 +168,7 @@ class PilgrimIdentityCard extends StatelessWidget {
                       ],
                     ),
                     if (whisper != null) ...[
-                      const SizedBox(height: 6),
+                      const SizedBox(height: AppSpace.xs + 2),
                       Text(
                         whisper,
                         maxLines: 2,
@@ -183,9 +176,19 @@ class PilgrimIdentityCard extends StatelessWidget {
                         style: AppTypography.body(
                           size: 13,
                           height: 1.3,
+                          weight: rankTone ? FontWeight.w800 : FontWeight.w600,
                           color: rankTone
                               ? pilgrimRankAccent(rank)
-                              : a.textMuted(0.62),
+                              : a.textSecondary,
+                        ),
+                      ),
+                    ] else if (editable) ...[
+                      const SizedBox(height: AppSpace.xs + 2),
+                      Text(
+                        'Peregrino da caravana',
+                        style: AppTypography.body(
+                          size: 13,
+                          color: a.textSecondary,
                         ),
                       ),
                     ],
@@ -195,18 +198,15 @@ class PilgrimIdentityCard extends StatelessWidget {
             ],
           ),
           if (stats.isNotEmpty) ...[
-            const SizedBox(height: 18),
+            const SizedBox(height: AppSpace.xl),
             const RelicHairline(),
-            const SizedBox(height: 14),
-            Row(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: stats,
-            ),
+            const SizedBox(height: AppSpace.md),
+            Row(crossAxisAlignment: CrossAxisAlignment.start, children: stats),
           ],
           if (showWeek) ...[
-            const SizedBox(height: 16),
+            const SizedBox(height: AppSpace.lg),
             const RelicHairline(),
-            const SizedBox(height: 12),
+            const SizedBox(height: AppSpace.md),
             StreakWeek(orbSize: 30, playedOnDate: playedOnDate),
           ],
         ],
@@ -244,14 +244,12 @@ class _IdentityStat extends StatelessWidget {
             ),
           ),
         ),
-        const SizedBox(height: 6),
+        const SizedBox(height: AppSpace.xs + 2),
         Text(
-          label.toUpperCase(),
-          style: AppTypography.label(
-            size: 9,
-            letterSpacing: 1.2,
-            color: a.textMuted(0.5),
-          ),
+          label,
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          style: AppTypography.body(size: 12, color: a.textSecondary),
         ),
       ],
     );

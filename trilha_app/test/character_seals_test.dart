@@ -78,7 +78,7 @@ void main() {
     await tester.tap(find.text('open'));
     await tester.pump();
     await tester.pump(const Duration(milliseconds: 400));
-    expect(find.text('COMPARTILHAR'), findsOneWidget);
+    expect(find.text('Compartilhar'), findsOneWidget);
     expect(find.text('Guardar'), findsNothing);
     expect(find.textContaining('Criou Deus o homem'), findsWidgets);
   });

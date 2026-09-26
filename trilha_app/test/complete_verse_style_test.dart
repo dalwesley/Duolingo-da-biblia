@@ -80,7 +80,7 @@ void main() {
     expect(filledStyle, isNotNull);
     expect(runStyle, isNotNull);
     expect(sawWidgetBlank, isFalse);
-    expect(filledStyle!.fontSize, 22);
+    expect(filledStyle!.fontSize, 24);
     expect(filledStyle!.fontSize, runStyle!.fontSize);
     expect(filledStyle!.fontFamily, runStyle!.fontFamily);
     expect(filledStyle!.fontWeight, runStyle!.fontWeight);

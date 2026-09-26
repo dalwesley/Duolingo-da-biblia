@@ -3,13 +3,15 @@ import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:flutter/services.dart';
 import 'package:share_plus/share_plus.dart';
 
 import '../data/entry_trails.dart';
 import '../theme/app_theme.dart';
+import '../utils/appearance.dart';
+import 'act_feel.dart';
 import 'cinematic_icon.dart';
 import 'stway_brand.dart';
+import 'ui_primitives.dart';
 
 /// Carta do encontro — verso no centro, marca pequena. Não é um ícone gigante.
 class ShareSealCard extends StatelessWidget {
@@ -19,6 +21,7 @@ class ShareSealCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     return ClipRRect(
       borderRadius: BorderRadius.circular(AppRadii.lg),
       child: ConstrainedBox(
@@ -92,21 +95,14 @@ class ShareSealCard extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(height: 22),
-                  Text(
-                    seal.name.toUpperCase(),
-                    style: AppTypography.label(
-                      size: 11,
-                      letterSpacing: 2.2,
-                      color: AppColors.accent,
-                    ),
-                  ),
+                  SectionLabel(seal.name, color: AppColors.accent),
                   const SizedBox(height: 10),
                   Text(
                     seal.verseText,
                     style: AppTypography.verse(
                       size: 20,
                       height: 1.4,
-                      color: Colors.white.withValues(alpha: 0.96),
+                      color: a.text,
                     ),
                   ),
                   const SizedBox(height: 12),
@@ -115,7 +111,7 @@ class ShareSealCard extends StatelessWidget {
                     style: AppTypography.body(
                       size: 12,
                       weight: FontWeight.w700,
-                      color: Colors.white.withValues(alpha: 0.55),
+                      color: a.textFaint,
                     ),
                   ),
                 ],
@@ -132,17 +128,14 @@ Future<void> shareSealImage({
   required GlobalKey boundaryKey,
   required CharacterSeal seal,
 }) async {
-  HapticFeedback.lightImpact();
+  ActHaptics.light();
   await Future<void>.delayed(const Duration(milliseconds: 50));
   await WidgetsBinding.instance.endOfFrame;
   final boundary =
       boundaryKey.currentContext?.findRenderObject() as RenderRepaintBoundary?;
   if (boundary == null) {
     await SharePlus.instance.share(
-      ShareParams(
-        text: _sealShareText(seal),
-        subject: '${seal.name} — Stway',
-      ),
+      ShareParams(text: _sealShareText(seal), subject: '${seal.name} — Stway'),
     );
     return;
   }

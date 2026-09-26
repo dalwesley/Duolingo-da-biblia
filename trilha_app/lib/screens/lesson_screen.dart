@@ -24,6 +24,7 @@ import '../utils/genesis_theme.dart';
 import '../utils/palco_verse.dart';
 import '../utils/trail_progress.dart';
 import '../widgets/act_feel.dart';
+import '../widgets/app_sheet.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/exercise_feedback_dialog.dart';
 import '../widgets/exercise_panel.dart';
@@ -37,6 +38,7 @@ import '../widgets/verse_fill_panel.dart';
 import '../widgets/mission_listen_button.dart';
 import '../screens/celebration_screen.dart';
 import '../services/tts_service.dart';
+import '../widgets/relic_panel.dart';
 import '../screens/difficulty_picker_screen.dart';
 
 /// Sessão única: entrada → atos → (micro) → insight → saída.
@@ -91,7 +93,13 @@ class _LessonScreenState extends State<LessonScreen>
   bool _hintUsed = false;
   Set<String> _eliminated = {};
   bool _outOfLamps = false;
-  int _attempt = 0;
+
+  /// Primeira tentativa de cada ato (true acertou, false errou) — pinta a
+  /// barra de progresso segmentada.
+  final Map<int, bool> _results = {};
+
+  /// "Acertou!" em cena por um instante antes do próximo ato.
+  bool _verdict = false;
   final bool _insightOnConnect = false;
 
   late final AnimationController _impactFlash;
@@ -248,7 +256,7 @@ class _LessonScreenState extends State<LessonScreen>
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(
-            'Não encontramos atos para esta missão. Verifique a conexão e tente de novo.',
+            'Não encontramos atos para esta cena. Verifique a conexão e tente de novo.',
             style: AppTypography.body(color: AppColors.textOnDark),
           ),
           backgroundColor: AppColors.nightElevated,
@@ -391,7 +399,6 @@ class _LessonScreenState extends State<LessonScreen>
 
     if (ex.type.isRevealOnly) {
       SoundService.instance.playCorrect();
-      HapticFeedback.lightImpact();
       setState(() {
         _selected = optionId;
         _isCorrect = true;
@@ -403,10 +410,11 @@ class _LessonScreenState extends State<LessonScreen>
     }
 
     final correct = ex.checkAnswer(optionId);
+    _results.putIfAbsent(_questionIndex, () => correct);
     if (correct) {
       SoundService.instance.playCorrect();
       _combo++;
-      if (_combo >= 2) ActHaptics.success();
+      if (_combo >= 3) ActHaptics.success();
     } else {
       SoundService.instance.playWrong();
       _combo = 0;
@@ -464,9 +472,13 @@ class _LessonScreenState extends State<LessonScreen>
     );
 
     if (correct) {
-      await Future.delayed(const Duration(milliseconds: 420));
+      // Tempo de sentir o acerto: faísca inteira + "Acertou!" em cena.
+      if (mounted) setState(() => _verdict = true);
+      await Future.delayed(const Duration(milliseconds: 900));
       _busy = false;
-      if (mounted) _continue();
+      if (!mounted) return;
+      setState(() => _verdict = false);
+      _continue();
       return;
     }
 
@@ -478,7 +490,7 @@ class _LessonScreenState extends State<LessonScreen>
   void _useHint() {
     if (_mission?.isBoss == true) return;
     if (_hintUsed || _selected != null || _showFeedback) return;
-    HapticFeedback.selectionClick();
+    // Toque já vibra no TextCta da dica.
     final ex = _exercise;
     final correctId = ex.resolvedCorrectAnswer.trim();
     final wrong = ex.effectiveOptions.where((o) => o.id != correctId).toList();
@@ -641,7 +653,7 @@ class _LessonScreenState extends State<LessonScreen>
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(
-            'Não encontramos atos para esta missão. Verifique a conexão e tente de novo.',
+            'Não encontramos atos para esta cena. Verifique a conexão e tente de novo.',
             style: AppTypography.body(color: AppColors.textOnDark),
           ),
           backgroundColor: AppColors.nightElevated,
@@ -651,7 +663,6 @@ class _LessonScreenState extends State<LessonScreen>
     }
     setState(() {
       _phase = _Phase.quiz;
-      _attempt = 0;
     });
     _logExerciseStart();
   }
@@ -675,7 +686,6 @@ class _LessonScreenState extends State<LessonScreen>
         _isCorrect = null;
         _hintUsed = false;
         _eliminated = {};
-        _attempt++;
       });
       return;
     }
@@ -689,7 +699,6 @@ class _LessonScreenState extends State<LessonScreen>
         _isCorrect = null;
         _hintUsed = false;
         _eliminated = {};
-        _attempt = 0;
       });
       _logExerciseStart();
     } else if (_mistakeInSession && !_reviewInserted) {
@@ -730,9 +739,34 @@ class _LessonScreenState extends State<LessonScreen>
       _isCorrect = null;
       _hintUsed = false;
       _eliminated = {};
-      _attempt = 0;
     });
     _logExerciseStart();
+  }
+
+  /// Sair no meio da missão perde o progresso de hoje — pergunta antes.
+  bool get _guardExit => _phase != _Phase.intro;
+
+  Future<void> _confirmExit() async {
+    if (!_guardExit) {
+      Navigator.pop(context);
+      return;
+    }
+    ActHaptics.tap();
+    final total = _itemCount.clamp(1, 999);
+    final leave = await showAppSheet<bool>(
+      context,
+      builder: (context) =>
+          _ExitSheet(act: (_questionIndex + 1).clamp(1, total), total: total),
+    );
+    if (leave != true || !mounted) return;
+    unawaited(
+      AnalyticsService.instance.logEvent('lesson_abandon', {
+        'mission': widget.missionSlug,
+        'index': _questionIndex,
+        'phase': _phase.name,
+      }),
+    );
+    Navigator.pop(context);
   }
 
   @override
@@ -747,9 +781,7 @@ class _LessonScreenState extends State<LessonScreen>
         backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
         body: ImmersiveBackground(
           appearance: appearance,
-          child: const Center(
-            child: CircularProgressIndicator(color: AppColors.accent),
-          ),
+          child: const AppSpinner(),
         ),
       );
     }
@@ -761,211 +793,434 @@ class _LessonScreenState extends State<LessonScreen>
     return Appearance(
       mode: mode,
       style: appearance,
-      child: AnnotatedRegion<SystemUiOverlayStyle>(
-        value: SystemUiOverlayStyle.light,
-        child: Scaffold(
-          backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
-          body: Stack(
-            fit: StackFit.expand,
-            children: [
-              Positioned.fill(
-                child: RepaintBoundary(
-                  child: AmbientAtmosphere(phase: appearance.phase),
-                ),
-              ),
-              Positioned.fill(
-                child: IgnorePointer(
-                  child: DecoratedBox(
-                    decoration: BoxDecoration(
-                      gradient: LinearGradient(
-                        begin: Alignment.topCenter,
-                        end: Alignment.bottomCenter,
-                        colors: [
-                          Colors.black.withValues(alpha: 0.1),
-                          Colors.transparent,
-                          Colors.black.withValues(alpha: 0.38),
-                        ],
-                        stops: const [0, 0.4, 1],
-                      ),
-                    ),
-                  ),
-                ),
-              ),
-              SafeArea(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.fromLTRB(
-                        AppSpace.screen,
-                        AppSpace.sm,
-                        AppSpace.screen,
-                        0,
-                      ),
-                      child: Column(
-                        children: [
-                          TopBar(
-                            inline: true,
-                            immersive: true,
-                            dark: true,
-                            title: switch (_phase) {
-                              _Phase.intro => mission.title,
-                              _Phase.quiz =>
-                                _combo >= 2
-                                    ? '${_questionIndex + 1}/$total · ×$_combo'
-                                    : '${_questionIndex + 1}/$total',
-                              _Phase.micro => 'Bônus',
-                              _Phase.insight => 'Hoje',
-                            },
-                            subtitle: switch (_phase) {
-                              _Phase.intro =>
-                                _difficultyMeta?.label ??
-                                    (mission.isBoss ? 'Desafio' : 'Treino'),
-                              _Phase.quiz => _difficultyMeta?.label,
-                              _Phase.micro => 'Complete o verso',
-                              _Phase.insight => 'O que ficou',
-                            },
-                            onBack: () => Navigator.pop(context),
-                            leadingGlyph: CinematicGlyphResolver.forMission(
-                              mission.title,
-                              isBoss: mission.isBoss,
-                            ),
-                            chromeAccent: accent,
-                            trailing: _phase == _Phase.quiz
-                                ? Padding(
-                                    padding: const EdgeInsets.only(right: 8),
-                                    child: LampsBar(
-                                      current: _lamps,
-                                      max: _maxLamps,
-                                      accent: accent,
-                                      compact: true,
-                                    ),
-                                  )
-                                : null,
-                          ),
-                          const SizedBox(height: 8),
-                        ],
-                      ),
-                    ),
-                    Expanded(
-                      child: switch (_phase) {
-                        _Phase.quiz => RepaintBoundary(
-                          child: ExercisePanel(
-                            key: ValueKey('${_exercise.id}-$_attempt'),
-                            exercise: _exercise,
-                            selected: _selected,
-                            isCorrect: _isCorrect,
-                            showFeedback: _showFeedback,
-                            onSelect: _select,
-                            accent: accent,
-                            hintUsed: _hintUsed,
-                            eliminatedIds: _eliminated,
-                            onHint: mission.isBoss || !_exercise.supportsHint
-                                ? null
-                                : _useHint,
-                            outOfLamps: _outOfLamps,
-                            index: _questionIndex,
-                            total: total,
-                            insightFallback: mission.centralInsight,
-                            boardText: _board?.text,
-                            boardRef: _board?.reference,
-                          ),
-                        ),
-                        _Phase.micro => () {
-                          final v = _microVerse();
-                          if (v == null) return const SizedBox.shrink();
-                          final ref = v.reference;
-                          final text = v.text;
-                          return VerseFillPanel(
-                            key: const ValueKey('micro'),
-                            reference: ref,
-                            verseText: text,
-                            accent: accent,
-                            onDone: _completeMicro,
-                          );
-                        }(),
-                        _Phase.intro => _IntroPanel(
-                          key: const ValueKey('intro'),
-                          mission: mission,
-                          itemCount: total,
-                          accent: accent,
-                          onStart: _startQuiz,
-                        ),
-                        _Phase.insight => _InsightPanel(
-                          key: const ValueKey('insight'),
-                          text: _closingInsight,
-                          accent: accent,
-                          onContinue: () {
-                            _pushCelebration(forced: _celebrationForced);
-                          },
-                        ),
-                      },
-                    ),
-                  ],
-                ),
-              ),
-              if (_phase == _Phase.intro)
-                const Positioned(
-                  left: -140,
-                  top: -140,
-                  child: IgnorePointer(
-                    child: Opacity(opacity: 0.02, child: _ActWarmup()),
-                  ),
-                ),
-              if (_phase == _Phase.quiz)
-                AnimatedBuilder(
-                  animation: _impactFlash,
-                  builder: (context, _) {
-                    if (_impactFlash.value <= 0 || _impactFlash.value >= 1) {
-                      return const SizedBox.shrink();
-                    }
-                    return Positioned.fill(
-                      child: IgnorePointer(
-                        child: DecoratedBox(
-                          decoration: BoxDecoration(
-                            gradient: RadialGradient(
-                              center: const Alignment(0, -0.2),
-                              radius: 1.1,
-                              colors: [
-                                (_impactPositive ? accent : AppColors.error)
-                                    .withValues(
-                                      alpha:
-                                          (1 - _impactFlash.value) *
-                                          (_impactPositive ? 0.28 : 0.22),
-                                    ),
-                                Colors.transparent,
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
-                    );
-                  },
-                ),
-              if (_phase == _Phase.quiz &&
-                  _showFeedback &&
-                  _selected != null &&
-                  _isCorrect != null)
+      child: PopScope(
+        canPop: !_guardExit,
+        onPopInvokedWithResult: (didPop, _) {
+          if (!didPop) _confirmExit();
+        },
+        child: AnnotatedRegion<SystemUiOverlayStyle>(
+          value: SystemUiOverlayStyle.light,
+          child: Scaffold(
+            backgroundColor: DayPhaseHelper.scaffoldBackground(
+              appearance.phase,
+            ),
+            body: Stack(
+              fit: StackFit.expand,
+              children: [
                 Positioned.fill(
-                  child: ExerciseFeedbackDialog(
-                    exercise: _exercise,
-                    selected: _selected!,
-                    isCorrect: _isCorrect!,
-                    isLast:
-                        _outOfLamps ||
-                        (_isCorrect == true && _questionIndex >= total - 1),
-                    accent: accent,
-                    outOfLamps: _outOfLamps,
-                    onContinue: _continue,
-                    missionSlug: widget.missionSlug,
-                    trailSlug: _trailSlug,
-                    difficulty: _difficultyMeta?.difficulty.id,
-                    practiceMode: widget.practiceMode,
+                  child: RepaintBoundary(
+                    child: AmbientAtmosphere(phase: appearance.phase),
                   ),
                 ),
+                Positioned.fill(
+                  child: IgnorePointer(
+                    child: DecoratedBox(
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          begin: Alignment.topCenter,
+                          end: Alignment.bottomCenter,
+                          colors: [
+                            Colors.black.withValues(alpha: 0.1),
+                            Colors.transparent,
+                            Colors.black.withValues(alpha: 0.38),
+                          ],
+                          stops: const [0, 0.4, 1],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+                SafeArea(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(
+                          AppSpace.screen,
+                          AppSpace.sm,
+                          AppSpace.screen,
+                          0,
+                        ),
+                        child: Column(
+                          children: [
+                            TopBar(
+                              inline: true,
+                              immersive: true,
+                              dark: true,
+                              title: switch (_phase) {
+                                _Phase.intro => mission.title,
+                                _Phase.quiz =>
+                                  _combo >= 2
+                                      ? '${_questionIndex + 1}/$total · ×$_combo'
+                                      : '${_questionIndex + 1}/$total',
+                                _Phase.micro => 'Bônus',
+                                _Phase.insight => 'Hoje',
+                              },
+                              subtitle: switch (_phase) {
+                                _Phase.intro =>
+                                  _difficultyMeta?.label ??
+                                      (mission.isBoss ? 'Desafio' : 'Treino'),
+                                _Phase.quiz => _difficultyMeta?.label,
+                                _Phase.micro => 'Complete o verso',
+                                _Phase.insight => 'O que ficou',
+                              },
+                              onBack: _confirmExit,
+                              leadingGlyph: CinematicGlyphResolver.forMission(
+                                mission.title,
+                                isBoss: mission.isBoss,
+                              ),
+                              chromeAccent: accent,
+                              trailing: _phase == _Phase.quiz
+                                  ? Padding(
+                                      padding: const EdgeInsets.only(right: 8),
+                                      child: LampsBar(
+                                        current: _lamps,
+                                        max: _maxLamps,
+                                        accent: accent,
+                                        compact: true,
+                                      ),
+                                    )
+                                  : null,
+                            ),
+                            if (_phase == _Phase.quiz) ...[
+                              const SizedBox(height: 10),
+                              _ActProgress(
+                                total: total,
+                                index: _questionIndex,
+                                results: _results,
+                                accent: accent,
+                              ),
+                              const SizedBox(height: 4),
+                            ] else
+                              const SizedBox(height: 8),
+                          ],
+                        ),
+                      ),
+                      Expanded(
+                        child: switch (_phase) {
+                          // Ato sai para a esquerda, o próximo entra pela direita.
+                          // Tentar de novo não troca a chave: a pergunta fica e só o
+                          // estado local reinicia (mantendo a ordem montada).
+                          _Phase.quiz => AnimatedSwitcher(
+                            duration: const Duration(milliseconds: 320),
+                            switchInCurve: Curves.easeOutCubic,
+                            switchOutCurve: Curves.easeInCubic,
+                            layoutBuilder: (current, previous) => Stack(
+                              alignment: Alignment.topCenter,
+                              children: [...previous, ?current],
+                            ),
+                            transitionBuilder: (child, animation) {
+                              final incoming =
+                                  child.key ==
+                                  ValueKey(
+                                    'act-${_exercise.id}-$_questionIndex',
+                                  );
+                              return FadeTransition(
+                                opacity: animation,
+                                child: SlideTransition(
+                                  position: Tween<Offset>(
+                                    begin: Offset(incoming ? 0.14 : -0.14, 0),
+                                    end: Offset.zero,
+                                  ).animate(animation),
+                                  child: child,
+                                ),
+                              );
+                            },
+                            child: RepaintBoundary(
+                              key: ValueKey(
+                                'act-${_exercise.id}-$_questionIndex',
+                              ),
+                              child: ExercisePanel(
+                                key: ValueKey(
+                                  '${_exercise.id}-$_questionIndex',
+                                ),
+                                exercise: _exercise,
+                                selected: _selected,
+                                isCorrect: _isCorrect,
+                                showFeedback: _showFeedback,
+                                onSelect: _select,
+                                accent: accent,
+                                hintUsed: _hintUsed,
+                                eliminatedIds: _eliminated,
+                                onHint:
+                                    mission.isBoss || !_exercise.supportsHint
+                                    ? null
+                                    : _useHint,
+                                outOfLamps: _outOfLamps,
+                                index: _questionIndex,
+                                total: total,
+                                insightFallback: mission.centralInsight,
+                                boardText: _board?.text,
+                                boardRef: _board?.reference,
+                              ),
+                            ),
+                          ),
+                          _Phase.micro => () {
+                            final v = _microVerse();
+                            if (v == null) return const SizedBox.shrink();
+                            final ref = v.reference;
+                            final text = v.text;
+                            return VerseFillPanel(
+                              key: const ValueKey('micro'),
+                              reference: ref,
+                              verseText: text,
+                              accent: accent,
+                              onDone: _completeMicro,
+                            );
+                          }(),
+                          _Phase.intro => _IntroPanel(
+                            key: const ValueKey('intro'),
+                            mission: mission,
+                            itemCount: total,
+                            accent: accent,
+                            onStart: _startQuiz,
+                          ),
+                          _Phase.insight => _InsightPanel(
+                            key: const ValueKey('insight'),
+                            text: _closingInsight,
+                            accent: accent,
+                            onContinue: () {
+                              _pushCelebration(forced: _celebrationForced);
+                            },
+                          ),
+                        },
+                      ),
+                    ],
+                  ),
+                ),
+                if (_phase == _Phase.intro)
+                  const Positioned(
+                    left: -140,
+                    top: -140,
+                    child: IgnorePointer(
+                      child: Opacity(opacity: 0.02, child: _ActWarmup()),
+                    ),
+                  ),
+                if (_phase == _Phase.quiz)
+                  AnimatedBuilder(
+                    animation: _impactFlash,
+                    builder: (context, _) {
+                      if (_impactFlash.value <= 0 || _impactFlash.value >= 1) {
+                        return const SizedBox.shrink();
+                      }
+                      return Positioned.fill(
+                        child: IgnorePointer(
+                          child: DecoratedBox(
+                            decoration: BoxDecoration(
+                              gradient: RadialGradient(
+                                center: const Alignment(0, -0.2),
+                                radius: 1.1,
+                                colors: [
+                                  (_impactPositive ? accent : AppColors.error)
+                                      .withValues(
+                                        alpha:
+                                            (1 - _impactFlash.value) *
+                                            (_impactPositive ? 0.28 : 0.22),
+                                      ),
+                                  Colors.transparent,
+                                ],
+                              ),
+                            ),
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                if (_phase == _Phase.quiz)
+                  Positioned(
+                    left: 0,
+                    right: 0,
+                    top: MediaQuery.paddingOf(context).top + 104,
+                    child: IgnorePointer(
+                      child: Center(
+                        child: _Verdict(
+                          on: _verdict,
+                          combo: _combo,
+                          accent: accent,
+                        ),
+                      ),
+                    ),
+                  ),
+                if (_phase == _Phase.quiz &&
+                    _showFeedback &&
+                    _selected != null &&
+                    _isCorrect != null)
+                  Positioned.fill(
+                    child: ExerciseFeedbackDialog(
+                      exercise: _exercise,
+                      selected: _selected!,
+                      isCorrect: _isCorrect!,
+                      isLast:
+                          _outOfLamps ||
+                          (_isCorrect == true && _questionIndex >= total - 1),
+                      accent: accent,
+                      outOfLamps: _outOfLamps,
+                      onContinue: _continue,
+                      missionSlug: widget.missionSlug,
+                      trailSlug: _trailSlug,
+                      difficulty: _difficultyMeta?.difficulty.id,
+                      practiceMode: widget.practiceMode,
+                    ),
+                  ),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Barra de atos: um segmento por pergunta — ouro se acertou de primeira,
+/// vermelho discreto se errou, o atual pulsa em branco.
+class _ActProgress extends StatelessWidget {
+  final int total;
+  final int index;
+  final Map<int, bool> results;
+  final Color accent;
+
+  const _ActProgress({
+    required this.total,
+    required this.index,
+    required this.results,
+    required this.accent,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Semantics(
+      label: 'Ato ${index + 1} de $total',
+      child: Row(
+        children: [
+          for (var i = 0; i < total; i++) ...[
+            if (i > 0) const SizedBox(width: 4),
+            Expanded(
+              child: AnimatedContainer(
+                duration: const Duration(milliseconds: 320),
+                curve: Curves.easeOutCubic,
+                height: i == index ? 6 : 4,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(AppRadii.pill),
+                  color: switch (results[i]) {
+                    true => accent,
+                    false => AppColors.error.withValues(alpha: 0.75),
+                    null =>
+                      i == index
+                          ? Colors.white.withValues(alpha: 0.85)
+                          : Colors.white.withValues(alpha: 0.16),
+                  },
+                  boxShadow: results[i] == true
+                      ? [
+                          BoxShadow(
+                            color: accent.withValues(alpha: 0.45),
+                            blurRadius: 8,
+                          ),
+                        ]
+                      : null,
+                ),
+              ),
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+/// "Acertou!" que salta em cena; a partir de 2 seguidas mostra o combo.
+class _Verdict extends StatelessWidget {
+  final bool on;
+  final int combo;
+  final Color accent;
+
+  const _Verdict({required this.on, required this.combo, required this.accent});
+
+  static const _words = ['Acertou', 'Isso aí', 'Muito bem', 'Na mosca'];
+
+  @override
+  Widget build(BuildContext context) {
+    final word = _words[(combo - 1).clamp(0, _words.length - 1)];
+    return AnimatedScale(
+      scale: on ? 1 : 0.6,
+      duration: Duration(milliseconds: on ? 380 : 160),
+      curve: on ? Curves.elasticOut : Curves.easeIn,
+      child: AnimatedOpacity(
+        opacity: on ? 1 : 0,
+        duration: const Duration(milliseconds: 160),
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 10),
+          decoration: BoxDecoration(
+            color: accent,
+            borderRadius: BorderRadius.circular(AppRadii.pill),
+            boxShadow: AppMetrics.accentGlow(color: accent),
+          ),
+          child: Row(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const CinematicIcon(
+                glyph: CinematicGlyph.check,
+                size: 18,
+                accent: AppColors.inkOnAccent,
+                framed: false,
+              ),
+              const SizedBox(width: 8),
+              Text(
+                combo >= 2 ? '$word  ×$combo' : word,
+                style: CopperCta.labelStyle(size: 16),
+              ),
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+/// Confirmação de saída no meio da missão.
+class _ExitSheet extends StatelessWidget {
+  final int act;
+  final int total;
+
+  const _ExitSheet({required this.act, required this.total});
+
+  @override
+  Widget build(BuildContext context) {
+    return AppSheetPanel(
+      padding: const EdgeInsets.fromLTRB(
+        AppSpace.xl,
+        AppSpace.md,
+        AppSpace.xl,
+        AppSpace.lg,
+      ),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          AppSheetHeader(
+            center: true,
+            leading: const CinematicIcon(
+              glyph: CinematicGlyph.lamp,
+              size: 44,
+              accent: AppColors.accent,
+            ),
+            title: 'Sair da cena?',
+            subtitle:
+                'Você está no ato $act de $total. Saindo agora, '
+                'os passos desta cena não contam.',
+          ),
+          const SizedBox(height: 20),
+          CopperCta(
+            label: 'Continuar cena',
+            trailing: null,
+            onTap: () => Navigator.pop(context, false),
+          ),
+          const SizedBox(height: 10),
+          GhostCta(
+            label: 'Sair mesmo assim',
+            danger: true,
+            expanded: true,
+            onTap: () => Navigator.pop(context, true),
+          ),
+        ],
       ),
     );
   }
@@ -994,6 +1249,7 @@ class _IntroPanel extends StatelessWidget {
     final stageText = verse.isNotEmpty
         ? verse
         : (note.isEmpty && fallbackIntro.isNotEmpty ? fallbackIntro : '');
+    final a = Appearance.of(context);
     final pulse = mission.isBoss
         ? 'Desafio · $itemCount atos'
         : '~3 min · $itemCount atos';
@@ -1007,9 +1263,9 @@ class _IntroPanel extends StatelessWidget {
             pulse,
             textAlign: TextAlign.center,
             style: AppTypography.body(
-              size: 12,
-              weight: FontWeight.w600,
-              color: AppColors.textOnDark.withValues(alpha: 0.42),
+              size: 13,
+              weight: FontWeight.w700,
+              color: a.textSecondary,
             ),
           ),
           if (note.isNotEmpty) ...[
@@ -1018,10 +1274,10 @@ class _IntroPanel extends StatelessWidget {
               note,
               textAlign: TextAlign.center,
               style: AppTypography.body(
-                size: 15,
+                size: 14,
                 height: 1.45,
                 weight: FontWeight.w600,
-                color: AppColors.textOnDark.withValues(alpha: 0.72),
+                color: a.textSecondary,
               ),
             ),
           ],
@@ -1037,7 +1293,7 @@ class _IntroPanel extends StatelessWidget {
                       child: Text(
                         stageText,
                         textAlign: TextAlign.center,
-                        style: AppTypography.verse(size: 22, height: 1.55),
+                        style: AppTypography.verse(size: 24, height: 1.5),
                       ),
                     ),
                   ),
@@ -1075,28 +1331,7 @@ class _InsightPanel extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Row(
-            children: [
-              CinematicIcon(
-                glyph: CinematicGlyph.spark,
-                size: 22,
-                accent: accent,
-                framed: false,
-              ),
-              const SizedBox(width: 10),
-              Expanded(
-                child: Text(
-                  'HOJE',
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: AppTypography.title(
-                    size: 18,
-                    color: AppColors.textOnDark,
-                  ).copyWith(letterSpacing: 1.4),
-                ),
-              ),
-            ],
-          ),
+          RelicChapter(title: 'Hoje', accent: accent, divided: false),
           const SizedBox(height: 14),
           Expanded(
             child: _WitnessPlate(
@@ -1105,7 +1340,7 @@ class _InsightPanel extends StatelessWidget {
                 text,
                 textAlign: TextAlign.center,
                 style: AppTypography.title(
-                  size: 22,
+                  size: 20,
                   height: 1.32,
                   color: accent,
                 ),
@@ -1113,7 +1348,7 @@ class _InsightPanel extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 10),
-          CopperCta(label: 'Seguir', onTap: onContinue, trailing: null),
+          CopperCta(label: 'Continuar', onTap: onContinue, trailing: null),
           const SizedBox(height: AppSpace.sm),
         ],
       ),
@@ -1150,15 +1385,7 @@ class _WitnessPlate extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           if (ref.isNotEmpty) ...[
-            Text(
-              ref.toUpperCase(),
-              textAlign: TextAlign.center,
-              style: AppTypography.label(
-                size: 13,
-                letterSpacing: 1.8,
-                color: accent,
-              ),
-            ),
+            Center(child: SectionLabel(ref, size: 13, color: accent)),
             const SizedBox(height: 14),
           ],
           Expanded(

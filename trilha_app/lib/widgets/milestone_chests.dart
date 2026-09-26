@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import '../models/daily_quest.dart';
 import '../services/progress_service.dart';
 import '../services/sound_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import 'act_feel.dart';
+import 'app_sheet.dart';
 import 'cinematic_icon.dart';
 import 'relic_panel.dart';
 import 'ui_primitives.dart';
@@ -25,7 +26,6 @@ class MilestoneChestsCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
-    final a = Appearance.of(context);
     final pct = total > 0 ? (done / total * 100) : 0.0;
 
     return Padding(
@@ -33,14 +33,7 @@ class MilestoneChestsCard extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(
-            'Recompensas',
-            style: AppTypography.body(
-              size: 12,
-              weight: FontWeight.w700,
-              color: a.textMuted(0.5),
-            ),
-          ),
+          const SectionLabel('Recompensas'),
           const SizedBox(height: 12),
           Row(
             children: TrailMilestone.all.map((m) {
@@ -71,13 +64,12 @@ class MilestoneChestsCard extends StatelessWidget {
     ProgressService progress,
     TrailMilestone m,
   ) async {
-    HapticFeedback.mediumImpact();
+    ActHaptics.confirm();
     final ok = await progress.claimChest(m.chestId(trailSlug), m.stepsReward);
     if (!ok || !context.mounted) return;
     SoundService.instance.playStreak();
-    await showDialog<void>(
-      context: context,
-      barrierColor: Colors.black87,
+    await showAppDialog<void>(
+      context,
       builder: (ctx) => _ChestOpenDialog(milestone: m),
     );
   }
@@ -98,6 +90,7 @@ class _ChestTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     final glow = unlocked && !claimed;
     return GestureDetector(
       onTap: onTap,
@@ -149,7 +142,7 @@ class _ChestTile extends StatelessWidget {
                   ? AppColors.teal
                   : unlocked
                   ? AppColors.accent
-                  : Colors.white38,
+                  : a.textFaint,
             ),
             const SizedBox(height: 6),
             Text(
@@ -157,7 +150,7 @@ class _ChestTile extends StatelessWidget {
               style: AppTypography.label(
                 size: 11,
                 weight: FontWeight.w900,
-                color: Colors.white.withValues(alpha: unlocked ? 0.95 : 0.4),
+                color: unlocked ? a.text : a.textFaint,
               ),
             ),
             Text(
@@ -167,9 +160,9 @@ class _ChestTile extends StatelessWidget {
                   ? 'Abrir'
                   : 'Trancado',
               style: AppTypography.label(
-                size: 9,
+                size: 10,
                 weight: FontWeight.w700,
-                color: AppColors.textOnDark.withValues(alpha: 0.45),
+                color: a.textFaint,
               ),
             ),
           ],
@@ -186,6 +179,7 @@ class _ChestOpenDialog extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     return Dialog(
       backgroundColor: Colors.transparent,
       child: Container(
@@ -196,7 +190,7 @@ class _ChestOpenDialog extends StatelessWidget {
             end: Alignment.bottomRight,
             colors: [AppColors.nightElevated, AppColors.night],
           ),
-          borderRadius: BorderRadius.circular(AppRadii.xl),
+          borderRadius: BorderRadius.circular(AppRadii.sheet),
           border: Border.all(color: AppColors.accent.withValues(alpha: 0.5)),
           boxShadow: AppMetrics.cardShadow(elevated: true),
         ),
@@ -221,47 +215,22 @@ class _ChestOpenDialog extends StatelessWidget {
             Text(
               milestone.title,
               textAlign: TextAlign.center,
-              style: AppTypography.title(
-                size: 22,
-                weight: FontWeight.w900,
-                color: AppColors.textOnDark,
-              ),
+              style: AppTypography.title(size: 20, color: a.text),
             ),
             const SizedBox(height: AppSpace.sm),
             Text(
               milestone.subtitle,
               textAlign: TextAlign.center,
-              style: AppTypography.body(
-                size: 13,
-                color: AppColors.textOnDark.withValues(alpha: 0.65),
-              ),
+              style: AppTypography.body(size: 13, color: a.textSecondary),
             ),
             const SizedBox(height: 18),
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 10),
-              decoration: BoxDecoration(
-                gradient: AppGradients.gold,
-                borderRadius: BorderRadius.circular(AppRadii.pill),
-              ),
-              child: Text(
-                '+${milestone.stepsReward} passos',
-                style: AppTypography.title(
-                  size: 16,
-                  weight: FontWeight.w900,
-                  color: AppColors.inkOnAccent,
-                ),
-              ),
-            ),
+            SoftBadge(text: '+${milestone.stepsReward} passos', solid: true),
             const SizedBox(height: AppSpace.screen),
-            TextButton(
-              onPressed: () => Navigator.pop(context),
-              child: Text(
-                'Continuar',
-                style: AppTypography.title(
-                  color: AppColors.textOnDark,
-                  weight: FontWeight.w800,
-                ),
-              ),
+            CopperCta(
+              label: 'Continuar',
+              dense: true,
+              trailing: null,
+              onTap: () => Navigator.pop(context),
             ),
           ],
         ),
@@ -285,12 +254,13 @@ class WeeklyQuestsCard extends StatelessWidget {
           RelicChapter(
             title: 'Passos da semana',
             accent: AppColors.primaryLight,
+            divided: false,
             trailing: Text(
               '${progress.weeklyQuestsCompleted} de ${WeeklyQuestDefs.all.length}',
               style: AppTypography.label(
                 size: 10,
                 letterSpacing: 1.1,
-                color: Appearance.of(context).textMuted(0.5),
+                color: Appearance.of(context).textFaint,
               ),
             ),
           ),
@@ -301,10 +271,7 @@ class WeeklyQuestsCard extends StatelessWidget {
               const RelicHairline(accent: AppColors.primaryLight),
               const SizedBox(height: 12),
             ],
-            _WeeklyQuestRow(
-              quest: WeeklyQuestDefs.all[i],
-              progress: progress,
-            ),
+            _WeeklyQuestRow(quest: WeeklyQuestDefs.all[i], progress: progress),
           ],
         ],
       ),
@@ -335,11 +302,10 @@ class _WeeklyQuestRow extends StatelessWidget {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        RelicDisc(
+        CinematicIcon(
           glyph: CinematicGlyphResolver.forQuest(quest.id),
           accent: tone,
-          size: 44,
-          lit: true,
+          size: AppMetrics.leadingIcon,
         ),
         const SizedBox(width: 12),
         Expanded(
@@ -351,8 +317,7 @@ class _WeeklyQuestRow extends StatelessWidget {
                 style:
                     AppTypography.title(
                       size: 14,
-                      weight: FontWeight.w800,
-                      color: a.text.withValues(alpha: claimed ? 0.45 : 0.95),
+                      color: claimed ? a.textFaint : a.text,
                     ).copyWith(
                       decoration: claimed ? TextDecoration.lineThrough : null,
                     ),
@@ -362,7 +327,7 @@ class _WeeklyQuestRow extends StatelessWidget {
                 '${value.clamp(0, quest.target)} de ${quest.target} · ${quest.subtitle}',
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
-                style: AppTypography.body(size: 12, color: a.textMuted(0.5)),
+                style: AppTypography.body(size: 12, color: a.textFaint),
               ),
               const SizedBox(height: 8),
               RelicProgress(value: pct, accent: bar),

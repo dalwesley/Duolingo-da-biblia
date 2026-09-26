@@ -9,6 +9,7 @@ import '../utils/difficulty_visuals.dart';
 import '../utils/trail_progress.dart';
 import '../utils/trail_visuals.dart';
 import 'cinematic_icon.dart';
+import 'immersive_background.dart';
 import 'mode_emblem.dart';
 import 'ui_primitives.dart';
 
@@ -135,15 +136,7 @@ class _FilmIntertitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Text(
-          label.toUpperCase(),
-          textAlign: TextAlign.center,
-          style: AppTypography.label(
-            size: 11,
-            letterSpacing: 3.2,
-            color: accent.withValues(alpha: 0.85),
-          ),
-        ),
+        SectionLabel(label, color: accent.withValues(alpha: 0.85)),
         const SizedBox(height: 10),
         Container(
           width: 48,
@@ -160,7 +153,7 @@ class _FilmIntertitle extends StatelessWidget {
               style: AppTypography.body(
                 size: 13,
                 height: 1.45,
-                color: Colors.white.withValues(alpha: 0.52),
+                color: Appearance.of(context).textFaint,
               ),
             ),
           ),
@@ -474,11 +467,8 @@ class _HeroStation extends StatelessWidget {
     final pct = item.total > 0 ? item.done / item.total : 0.0;
     final a = Appearance.of(context);
     final mode = TrailDifficulty.fromId(item.activeDifficultyId);
-    final modeCleared =
-        mode != null && item.clearedModeIds.contains(mode.id);
-    final modeColor = mode != null
-        ? DifficultyVisuals.accentFor(mode)
-        : accent;
+    final modeCleared = mode != null && item.clearedModeIds.contains(mode.id);
+    final modeColor = mode != null ? DifficultyVisuals.accentFor(mode) : accent;
     return Material(
       color: Colors.transparent,
       child: InkWell(
@@ -514,50 +504,29 @@ class _HeroStation extends StatelessWidget {
                     children: [
                       Row(
                         children: [
-                          Text(
-                            'CENA ${_roman(item.chapterIndex)}',
-                            style: AppTypography.label(
-                              size: 10,
-                              letterSpacing: 2.4,
-                              color: modeColor.withValues(alpha: 0.9),
-                            ),
+                          SectionLabel(
+                            'Cena ${_roman(item.chapterIndex)}',
+                            size: 10,
+                            color: modeColor.withValues(alpha: 0.9),
                           ),
                           const Spacer(),
-                          Container(
-                            padding: const EdgeInsets.symmetric(
-                              horizontal: 9,
-                              vertical: 4,
-                            ),
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(AppRadii.lg),
-                              color: modeColor,
-                            ),
-                            child: Text(
-                              'AGORA',
-                              style: AppTypography.label(
-                                size: 9,
-                                letterSpacing: 0.8,
-                                color: DifficultyVisuals.inkOn(
-                                  mode ?? TrailDifficulty.semente,
-                                ),
-                              ),
-                            ),
+                          SoftBadge(
+                            text: 'Agora',
+                            accent: modeColor,
+                            solid: true,
                           ),
                         ],
                       ),
                       if (mode != null) ...[
                         const SizedBox(height: AppSpace.sm + 2),
-                        ModeStatusChip(
-                          difficulty: mode,
-                          cleared: modeCleared,
-                        ),
+                        ModeStatusChip(difficulty: mode, cleared: modeCleared),
                       ],
                       const SizedBox(height: AppSpace.md),
                       Text(
                         item.trail.title,
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
-                        style: AppTypography.display(size: 26, height: 1.08),
+                        style: AppTypography.display(size: 24, height: 1.08),
                       ),
                       const SizedBox(height: AppSpace.sm),
                       Text(
@@ -567,7 +536,7 @@ class _HeroStation extends StatelessWidget {
                         style: AppTypography.body(
                           size: 13,
                           height: 1.3,
-                          color: a.textMuted(0.55),
+                          color: a.textFaint,
                         ),
                       ),
                       const SizedBox(height: AppSpace.md),
@@ -585,27 +554,35 @@ class _HeroStation extends StatelessWidget {
                             Expanded(
                               child: Text(
                                 item.statusLabel ??
-                                    '${item.done} de ${item.total} passos',
+                                    '${item.done} de ${item.total} cenas',
                                 maxLines: 1,
                                 overflow: TextOverflow.ellipsis,
                                 style: AppTypography.body(
                                   size: 12,
                                   weight: FontWeight.w600,
                                   color: mode != null
-                                      ? DifficultyVisuals.onSky(modeColor)
-                                          .withValues(alpha: 0.88)
-                                      : a.textMuted(0.5),
+                                      ? DifficultyVisuals.onSky(
+                                          modeColor,
+                                        ).withValues(alpha: 0.88)
+                                      : a.textFaint,
                                 ),
                               ),
                             )
                           else
                             const Spacer(),
                           Text(
-                            'CONTINUAR →',
+                            'Continuar',
                             style: AppTypography.cta(
                               size: 12,
                               color: modeColor,
                             ),
+                          ),
+                          const SizedBox(width: 4),
+                          CinematicIcon(
+                            glyph: CinematicGlyph.forward,
+                            size: 12,
+                            accent: modeColor,
+                            framed: false,
                           ),
                         ],
                       ),
@@ -676,106 +653,100 @@ class _QuietStation extends StatelessWidget {
     final openUncleared =
         openMode != null && !item.clearedModeIds.contains(openMode.id);
 
+    const stationPadding = EdgeInsets.fromLTRB(
+      AppSpace.lg,
+      AppSpace.section,
+      AppSpace.lg,
+      AppSpace.section,
+    );
+    final content = Row(
+      children: [
+        _QuietLeading(
+          visuals: visuals,
+          isDone: isDone,
+          isLocked: isLocked,
+          isSoon: isSoon,
+          accent: chrome ?? accent,
+          clearedModeIds: item.clearedModeIds,
+          openDifficulty: openUncleared && !isLocked ? openMode : null,
+        ),
+        const SizedBox(width: 14),
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SectionLabel(
+                'Cena ${_roman(item.chapterIndex)}',
+                size: 10,
+                color: a.textFaint,
+              ),
+              const SizedBox(height: 3),
+              Text(
+                item.trail.title,
+                style: AppTypography.display(
+                  size: 20,
+                  height: 1.1,
+                  color: isLocked ? a.textSecondary : a.text,
+                ),
+              ),
+              if (openUncleared && !isLocked && !isSoon) ...[
+                const SizedBox(height: 6),
+                ModeStatusChip(difficulty: openMode, compact: true),
+              ],
+              const SizedBox(height: AppSpace.xs),
+              Text(
+                isLocked
+                    ? 'Ainda além do horizonte'
+                    : isSoon
+                    ? 'Em breve neste caminho'
+                    : item.statusLabel ??
+                          (isDone
+                              ? 'Concluída'
+                              : item.total > 0
+                              ? '${item.done}/${item.total} cenas'
+                              : item.trail.description),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: AppTypography.body(
+                  size: 12,
+                  color: chrome != null
+                      ? chrome.withValues(alpha: 0.9)
+                      : a.textFaint,
+                ),
+              ),
+            ],
+          ),
+        ),
+        if (!isLocked) ListChevron(color: a.textFaint),
+      ],
+    );
+
+    final lit = chrome != null && !isLocked && !isSoon;
     return Opacity(
       opacity: alpha,
-      child: Material(
-        color: Colors.transparent,
-        child: InkWell(
-          onTap: onTap,
-          borderRadius: BorderRadius.circular(AppRadii.lg),
-          child: Ink(
-            decoration: chrome != null && !isLocked && !isSoon
-                ? DifficultyVisuals.stationCard(
+      child: lit
+          ? Material(
+              color: Colors.transparent,
+              child: InkWell(
+                onTap: onTap,
+                borderRadius: BorderRadius.circular(AppRadii.lg),
+                child: Ink(
+                  decoration: DifficultyVisuals.stationCard(
                     accent: chrome,
                     baseFill: a.cardFill,
                     lit: false,
                     sealed: sealedIdle,
-                  )
-                : BoxDecoration(
-                    borderRadius: BorderRadius.circular(AppRadii.lg),
-                    color: a.cardFill.withValues(alpha: isLocked ? 0.55 : 1),
-                    border: Border.all(color: a.cardBorder),
                   ),
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(
-                AppSpace.lg,
-                AppSpace.section,
-                AppSpace.lg,
-                AppSpace.section,
+                  child: Padding(padding: stationPadding, child: content),
+                ),
               ),
-              child: Row(
-                children: [
-                  _QuietLeading(
-                    visuals: visuals,
-                    isDone: isDone,
-                    isLocked: isLocked,
-                    isSoon: isSoon,
-                    accent: chrome ?? accent,
-                    clearedModeIds: item.clearedModeIds,
-                    openDifficulty: openUncleared && !isLocked ? openMode : null,
-                  ),
-                  const SizedBox(width: 14),
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        SectionLabel(
-                          'Cena ${_roman(item.chapterIndex)}',
-                          size: 10,
-                          color: Colors.white.withValues(alpha: 0.38),
-                        ),
-                        const SizedBox(height: 3),
-                              Text(
-                                item.trail.title,
-                                style: AppTypography.display(
-                                  size: 20,
-                                  height: 1.1,
-                                  color: Colors.white.withValues(
-                                    alpha: isLocked ? 0.65 : 0.92,
-                                  ),
-                                ),
-                              ),
-                              if (openUncleared && !isLocked && !isSoon) ...[
-                                const SizedBox(height: 6),
-                                ModeStatusChip(
-                                  difficulty: openMode,
-                                  compact: true,
-                                ),
-                              ],
-                              const SizedBox(height: AppSpace.xs),
-                        Text(
-                          isLocked
-                              ? 'Ainda além do horizonte'
-                              : isSoon
-                                  ? 'Em breve neste caminho'
-                                  : item.statusLabel ??
-                                      (isDone
-                                          ? 'Concluída'
-                                          : item.total > 0
-                                              ? '${item.done}/${item.total} passos'
-                                              : item.trail.description),
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: AppTypography.body(
-                            size: 12,
-                            color: chrome != null
-                                ? chrome.withValues(alpha: 0.9)
-                                : Colors.white.withValues(alpha: 0.42),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  if (!isLocked)
-                    ListChevron(
-                      color: Colors.white.withValues(alpha: 0.28),
-                    ),
-                ],
-              ),
+            )
+          : GlassCard(
+              onTap: onTap,
+              padding: stationPadding,
+              color: isLocked ? a.cardFill.withValues(alpha: 0.55) : null,
+              child: content,
             ),
-          ),
-        ),
-      ),
     );
   }
 
@@ -828,6 +799,7 @@ class _QuietLeading extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     if (openDifficulty != null) {
       return ModeEmblem(
         key: ValueKey('mode-emblem-${openDifficulty!.id}'),
@@ -863,15 +835,13 @@ class _QuietLeading extends StatelessWidget {
                   ? CinematicGlyph.lock
                   : CinematicGlyph.calendar,
               size: 22,
-              accent: isDone
-                  ? accent
-                  : Colors.white.withValues(alpha: isLocked ? 0.4 : 0.9),
+              accent: isDone ? accent : (isLocked ? a.textFaint : a.text),
               framed: false,
             )
           : CinematicIcon(
               glyph: visuals.glyph,
               size: 22,
-              accent: Colors.white.withValues(alpha: 0.92),
+              accent: a.text,
               framed: false,
             ),
     );

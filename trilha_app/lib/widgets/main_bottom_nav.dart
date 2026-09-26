@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import 'act_feel.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
 
@@ -12,6 +13,9 @@ class MainBottomNav extends StatelessWidget {
   final bool dark;
   final AppearanceStyle? appearance;
 
+  /// Abas com novidade — ganham um ponto aceso no ícone.
+  final Set<int> alerts;
+
   const MainBottomNav({
     super.key,
     required this.currentIndex,
@@ -19,6 +23,7 @@ class MainBottomNav extends StatelessWidget {
     this.immersive = false,
     this.dark = false,
     this.appearance,
+    this.alerts = const {},
   });
 
   @override
@@ -66,32 +71,87 @@ class MainBottomNav extends StatelessWidget {
                 final color = active ? tone : style.iconMuted;
 
                 return Expanded(
-                  child: InkWell(
-                    onTap: () => onTap(i),
-                    borderRadius: BorderRadius.circular(AppRadii.md),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      mainAxisSize: MainAxisSize.min,
-                      children: [
-                        CinematicIcon(
-                          glyph: tab.glyph,
-                          size: 36,
-                          accent: color,
-                          glowing: false,
-                        ),
-                        const SizedBox(height: 4),
-                        Text(
-                          tab.label,
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: AppTypography.label(
-                            size: 10,
-                            letterSpacing: 0.1,
-                            color: color,
-                            weight: active ? FontWeight.w900 : FontWeight.w700,
+                  child: Semantics(
+                    button: true,
+                    selected: active,
+                    label: alerts.contains(i)
+                        ? '${tab.label}, com novidades'
+                        : tab.label,
+                    excludeSemantics: true,
+                    child: Material(
+                      type: MaterialType.transparency,
+                      child: InkWell(
+                        onTap: () {
+                          if (!active) ActHaptics.tap();
+                          onTap(i);
+                        },
+                        borderRadius: BorderRadius.circular(AppRadii.md),
+                        splashColor: tone.withValues(alpha: 0.12),
+                        highlightColor: Colors.transparent,
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 4),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              // Aba ativa ganha uma pílula acesa atrás do
+                              // ícone — lê "você está aqui" de relance.
+                              AnimatedContainer(
+                                duration: const Duration(milliseconds: 220),
+                                curve: Curves.easeOutCubic,
+                                width: active ? 56 : 40,
+                                height: 32,
+                                decoration: BoxDecoration(
+                                  color: active
+                                      ? tone.withValues(alpha: 0.18)
+                                      : Colors.transparent,
+                                  borderRadius: BorderRadius.circular(
+                                    AppRadii.pill,
+                                  ),
+                                  border: Border.all(
+                                    color: active
+                                        ? tone.withValues(alpha: 0.55)
+                                        : Colors.transparent,
+                                  ),
+                                ),
+                                child: Stack(
+                                  clipBehavior: Clip.none,
+                                  alignment: Alignment.center,
+                                  children: [
+                                    CinematicIcon(
+                                      glyph: tab.glyph,
+                                      size: 22,
+                                      accent: color,
+                                      framed: false,
+                                      glowing: false,
+                                    ),
+                                    if (alerts.contains(i))
+                                      Positioned(
+                                        top: 3,
+                                        right: active ? 12 : 5,
+                                        child: AlertDot(ring: style.navBarFill),
+                                      ),
+                                  ],
+                                ),
+                              ),
+                              const SizedBox(height: 4),
+                              Text(
+                                tab.label,
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: AppTypography.label(
+                                  size: 11,
+                                  letterSpacing: 0.1,
+                                  color: color,
+                                  weight: active
+                                      ? FontWeight.w900
+                                      : FontWeight.w700,
+                                ),
+                              ),
+                            ],
                           ),
                         ),
-                      ],
+                      ),
                     ),
                   ),
                 );

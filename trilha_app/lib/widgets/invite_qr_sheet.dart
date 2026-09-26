@@ -9,6 +9,9 @@ import 'package:share_plus/share_plus.dart';
 import '../services/app_update_service.dart';
 import '../services/invite_deep_link_service.dart';
 import '../theme/app_theme.dart';
+import '../utils/appearance.dart';
+import 'act_feel.dart';
+import 'app_sheet.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
 import 'stway_brand.dart';
@@ -23,10 +26,8 @@ Future<void> showInviteQrSheet(
   String? inviterName,
   bool companionMode = true,
 }) {
-  return showModalBottomSheet<void>(
-    context: context,
-    backgroundColor: Colors.transparent,
-    isScrollControlled: true,
+  return showAppSheet<void>(
+    context,
     builder: (ctx) => _InviteQrSheet(
       code: code,
       title: title,
@@ -104,7 +105,7 @@ $_installUrl
   }
 
   Future<void> _copyCode() async {
-    HapticFeedback.selectionClick();
+    ActHaptics.tap();
     await Clipboard.setData(ClipboardData(text: widget.code));
     if (!mounted) return;
     showAppToastFor(
@@ -117,7 +118,6 @@ $_installUrl
   Future<void> _shareInvite() async {
     if (_busy) return;
     setState(() => _busy = true);
-    HapticFeedback.lightImpact();
     try {
       XFile? imageFile;
       if (widget.companionMode) {
@@ -177,8 +177,7 @@ $_installUrl
 
   @override
   Widget build(BuildContext context) {
-    final bottom = MediaQuery.viewPaddingOf(context).bottom;
-
+    final a = Appearance.of(context);
     return Stack(
       clipBehavior: Clip.none,
       children: [
@@ -204,59 +203,26 @@ $_installUrl
               ),
             ),
           ),
-        Container(
-          margin: const EdgeInsets.fromLTRB(
-            AppSpace.md,
-            0,
-            AppSpace.md,
-            AppSpace.md,
-          ),
-          padding: EdgeInsets.fromLTRB(
+        AppSheetPanel(
+          tint: AppColors.accent,
+          padding: const EdgeInsets.fromLTRB(
             AppSpace.lg,
-            12,
+            AppSpace.md,
             AppSpace.lg,
-            14 + bottom,
-          ),
-          decoration: BoxDecoration(
-            color: AppColors.night,
-            borderRadius: BorderRadius.circular(AppRadii.xl),
-            border: Border.all(color: AppColors.accent.withValues(alpha: 0.65)),
+            14,
           ),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Center(
-                child: Container(
-                  width: 40,
-                  height: 4,
-                  decoration: BoxDecoration(
-                    color: Colors.white.withValues(alpha: 0.2),
-                    borderRadius: BorderRadius.circular(AppRadii.pill),
-                  ),
-                ),
-              ),
-              const SizedBox(height: 12),
-              Text(
-                widget.title,
-                textAlign: TextAlign.center,
-                style: AppTypography.display(
-                  size: 22,
-                  weight: FontWeight.w700,
-                  color: Colors.white,
-                ),
-              ),
-              const SizedBox(height: 4),
-              Text(
-                widget.subtitle ??
+              AppSheetHeader(
+                title: widget.title,
+                subtitle:
+                    widget.subtitle ??
                     (widget.companionMode
                         ? 'Toque no link, mostre o QR ou envie o card'
                         : 'Mostre o QR ou envie o código'),
-                textAlign: TextAlign.center,
-                style: AppTypography.body(
-                  size: 12,
-                  color: Colors.white.withValues(alpha: 0.55),
-                ),
+                center: true,
               ),
               const SizedBox(height: 14),
               if (widget.companionMode)
@@ -278,15 +244,9 @@ $_installUrl
               const SizedBox(height: 12),
               GestureDetector(
                 onTap: _copyCode,
-                child: Container(
+                child: InsetPanel(
                   padding: const EdgeInsets.symmetric(vertical: 12),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(AppRadii.md),
-                    color: Colors.white.withValues(alpha: 0.06),
-                    border: Border.all(
-                      color: AppColors.accent.withValues(alpha: 0.4),
-                    ),
-                  ),
+                  borderColor: AppColors.accent.withValues(alpha: 0.4),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
@@ -302,7 +262,7 @@ $_installUrl
                       CinematicIcon(
                         glyph: CinematicGlyph.copy,
                         size: 16,
-                        accent: Colors.white.withValues(alpha: 0.55),
+                        accent: a.textFaint,
                         framed: false,
                       ),
                     ],
@@ -322,10 +282,7 @@ $_installUrl
               Text(
                 'O link abre o app e aceita sem digitar o código',
                 textAlign: TextAlign.center,
-                style: AppTypography.body(
-                  size: 10,
-                  color: Colors.white.withValues(alpha: 0.4),
-                ),
+                style: AppTypography.body(size: 11, color: a.textFaint),
               ),
             ],
           ),
@@ -344,6 +301,7 @@ class _InvitePreviewTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     return ClipRRect(
       borderRadius: BorderRadius.circular(AppRadii.md),
       child: SizedBox(
@@ -407,16 +365,13 @@ class _InvitePreviewTile extends StatelessWidget {
                     '$inviterName te convidou',
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
-                    style: AppTypography.body(
-                      size: 11,
-                      color: Colors.white.withValues(alpha: 0.7),
-                    ),
+                    style: AppTypography.body(size: 11, color: a.textSecondary),
                   ),
                   const SizedBox(height: 6),
                   Text(
                     code,
                     style: AppTypography.title(
-                      size: 15,
+                      size: 16,
                       weight: FontWeight.w900,
                       color: AppColors.accent,
                     ).copyWith(letterSpacing: 3),
@@ -554,20 +509,15 @@ class InviteShareCard extends StatelessWidget {
                     ),
                     child: Column(
                       children: [
-                        Text(
-                          'CÓDIGO',
-                          style: AppTypography.label(
-                            size: 11,
-                            weight: FontWeight.w800,
-                            letterSpacing: 1.4,
-                            color: Colors.white.withValues(alpha: 0.55),
-                          ),
+                        SectionLabel(
+                          'Código',
+                          color: Colors.white.withValues(alpha: 0.55),
                         ),
                         const SizedBox(height: 6),
                         Text(
                           code,
                           style: AppTypography.title(
-                            size: 28,
+                            size: 24,
                             weight: FontWeight.w900,
                             color: AppColors.accent,
                           ).copyWith(letterSpacing: 8),

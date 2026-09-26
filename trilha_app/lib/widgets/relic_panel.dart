@@ -1,11 +1,8 @@
-import 'dart:math' as math;
-
 import 'package:flutter/material.dart';
 
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'cinematic_icon.dart';
-import 'embossed_glyph.dart';
 import 'immersive_background.dart';
 import 'ui_primitives.dart';
 
@@ -96,6 +93,12 @@ class RelicChapter extends StatelessWidget {
   final Widget? trailing;
   final bool displayTitle;
 
+  /// Ação no canto (olho de privacidade), depois de [trailing].
+  final Widget? action;
+
+  /// Filete sob a linha do título: título · olho, filete, conteúdo.
+  final bool divided;
+
   const RelicChapter({
     super.key,
     required this.title,
@@ -103,6 +106,8 @@ class RelicChapter extends StatelessWidget {
     this.accent = AppColors.accent,
     this.trailing,
     this.displayTitle = true,
+    this.action,
+    this.divided = true,
   });
 
   @override
@@ -118,7 +123,7 @@ class RelicChapter extends StatelessWidget {
               height: 18,
               decoration: BoxDecoration(
                 color: accent,
-                borderRadius: BorderRadius.circular(2),
+                borderRadius: BorderRadius.circular(AppRadii.hair),
               ),
             ),
             const SizedBox(width: 10),
@@ -135,18 +140,26 @@ class RelicChapter extends StatelessWidget {
               ),
             ),
             ?trailing,
+            ?action,
           ],
         ),
+        if (divided) ...[
+          const SizedBox(height: AppSpace.sm),
+          Container(
+            height: 3,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(AppRadii.hair),
+              color: a.divider,
+            ),
+          ),
+        ],
         if (whisper != null && whisper!.isNotEmpty) ...[
-          const SizedBox(height: 6),
+          SizedBox(height: divided ? AppSpace.sm : 6),
           Padding(
             padding: const EdgeInsets.only(left: 13),
             child: Text(
               whisper!,
-              style: AppTypography.body(
-                size: 12,
-                color: a.textMuted(0.55),
-              ),
+              style: AppTypography.body(size: 12, color: a.textMuted(0.55)),
             ),
           ),
         ],
@@ -198,7 +211,7 @@ class RelicProgress extends StatelessWidget {
         children: [
           Container(
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(2),
+              borderRadius: BorderRadius.circular(AppRadii.hair),
               color: Colors.white.withValues(alpha: 0.08),
             ),
           ),
@@ -209,12 +222,9 @@ class RelicProgress extends StatelessWidget {
                 widthFactor: t,
                 child: DecoratedBox(
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(2),
+                    borderRadius: BorderRadius.circular(AppRadii.hair),
                     gradient: LinearGradient(
-                      colors: [
-                        accent.withValues(alpha: 0.55),
-                        accent,
-                      ],
+                      colors: [accent.withValues(alpha: 0.55), accent],
                     ),
                   ),
                 ),
@@ -226,7 +236,11 @@ class RelicProgress extends StatelessWidget {
   }
 }
 
-/// Disco gravado — metal batido, glifo em relevo. Não é ícone em círculo.
+/// Ícone de seção (tarefas, sequência, recorde, trilha, privacidade…).
+///
+/// Chapado num quadrado arredondado de propósito: moeda de metal em relevo
+/// é só medalha, lacre de cera é só selo — o resto não pode parecer
+/// conquista.
 class RelicDisc extends StatelessWidget {
   final CinematicGlyph? glyph;
   final String? mark;
@@ -245,39 +259,35 @@ class RelicDisc extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final metal = RelicMetal.fromAccent(accent, lit: lit);
-    final glyphSize = size * 0.42;
-    return SizedBox(
+    final a = Appearance.of(context);
+    final ink = lit ? accent : a.textMuted(0.45);
+    return Container(
       width: size,
       height: size,
-      child: Stack(
-        alignment: Alignment.center,
-        children: [
-          CustomPaint(
-            size: Size.square(size),
-            painter: _RelicDiscPainter(metal: metal, lit: lit),
-          ),
-          if (glyph != null)
-            EmbossedGlyph(
-              glyph: glyph!,
-              size: glyphSize,
-              fill: metal.glyph,
-              groove: metal.groove,
-              ridge: metal.ridge,
-              depth: lit ? 1.05 : 0.65,
-              opacity: lit ? 1 : 0.42,
-            )
-          else if (mark != null)
-            Text(
-              mark!,
-              style: AppTypography.title(
-                size: size * 0.34,
-                weight: FontWeight.w900,
-                color: metal.glyph,
-              ),
-            ),
-        ],
+      decoration: BoxDecoration(
+        color: ink.withValues(alpha: lit ? 0.14 : 0.06),
+        borderRadius: BorderRadius.circular(size * 0.3),
+        border: Border.all(color: ink.withValues(alpha: lit ? 0.4 : 0.2)),
       ),
+      alignment: Alignment.center,
+      child: glyph != null
+          ? CinematicIcon(
+              glyph: glyph!,
+              size: size * 0.5,
+              accent: ink,
+              framed: false,
+            )
+          : (mark != null
+                ? Text(
+                    mark!,
+                    style: AppTypography.title(
+                      size: size * 0.34,
+                      exact: true,
+                      weight: FontWeight.w900,
+                      color: ink,
+                    ),
+                  )
+                : null),
     );
   }
 }
@@ -330,107 +340,4 @@ class RelicMetal {
       ridge: const Color(0xFFFFF4D0),
     );
   }
-}
-
-class _RelicDiscPainter extends CustomPainter {
-  final RelicMetal metal;
-  final bool lit;
-
-  const _RelicDiscPainter({required this.metal, required this.lit});
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    final center = Offset(size.width / 2, size.height / 2);
-    final r = size.width / 2;
-
-    canvas.drawCircle(
-      center + Offset(0, size.width * 0.04),
-      r * 0.92,
-      Paint()
-        ..color = Colors.black.withValues(alpha: lit ? 0.42 : 0.28)
-        ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 2.4),
-    );
-
-    final rim = Rect.fromCircle(center: center, radius: r * 0.96);
-    canvas.drawCircle(
-      center,
-      r * 0.96,
-      Paint()
-        ..shader = SweepGradient(
-          colors: [
-            metal.rimDark,
-            metal.faceMid,
-            metal.rimLight,
-            metal.faceMid,
-            metal.rimDark,
-          ],
-          stops: const [0.0, 0.22, 0.48, 0.78, 1.0],
-        ).createShader(rim),
-    );
-
-    canvas.drawCircle(
-      center,
-      r * 0.74,
-      Paint()
-        ..shader = RadialGradient(
-          center: const Alignment(-0.38, -0.48),
-          radius: 1.05,
-          colors: [metal.faceLight, metal.faceMid, metal.faceDark],
-          stops: const [0.0, 0.52, 1.0],
-        ).createShader(Rect.fromCircle(center: center, radius: r * 0.74)),
-    );
-
-    canvas.drawCircle(
-      center,
-      r * 0.58,
-      Paint()
-        ..color = metal.rimDark.withValues(alpha: 0.45)
-        ..style = PaintingStyle.stroke
-        ..strokeWidth = 1.1,
-    );
-
-    if (lit) {
-      canvas.save();
-      canvas.clipPath(
-        Path()..addOval(Rect.fromCircle(center: center, radius: r * 0.74)),
-      );
-      canvas.drawOval(
-        Rect.fromCenter(
-          center: center + Offset(-r * 0.16, -r * 0.28),
-          width: r * 1.2,
-          height: r * 0.52,
-        ),
-        Paint()
-          ..shader = LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: [
-              metal.rimLight.withValues(alpha: 0.38),
-              Colors.transparent,
-            ],
-          ).createShader(Rect.fromCircle(center: center, radius: r * 0.74)),
-      );
-      canvas.restore();
-    }
-
-    final tick = Paint()
-      ..color = metal.rimLight.withValues(alpha: lit ? 0.5 : 0.16)
-      ..strokeWidth = 0.7
-      ..strokeCap = StrokeCap.round;
-    const count = 20;
-    for (var i = 0; i < count; i++) {
-      final angle = (i / count) * math.pi * 2;
-      final cos = math.cos(angle);
-      final sin = math.sin(angle);
-      canvas.drawLine(
-        center + Offset(cos * r * 0.86, sin * r * 0.86),
-        center + Offset(cos * r * 0.96, sin * r * 0.96),
-        tick,
-      );
-    }
-  }
-
-  @override
-  bool shouldRepaint(covariant _RelicDiscPainter old) =>
-      old.metal != metal || old.lit != lit;
 }

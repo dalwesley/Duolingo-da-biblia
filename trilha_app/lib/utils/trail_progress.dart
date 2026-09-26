@@ -85,7 +85,7 @@ class TrailProgress {
         liveDone >= total) {
       return '$label concluída';
     }
-    return '$label · $liveDone de $total passos';
+    return '$label · $liveDone de $total cenas';
   }
 
   /// True quando há modo limpo e o modo ativo ainda não foi concluído

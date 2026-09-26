@@ -294,10 +294,13 @@ function paintAct(vh) {
 }
 
 // Menu do topo: acende o link da seção que ocupa o meio da tela.
-const navLinks = [...document.querySelectorAll('.nav a.quiet')].map((link) => ({
-  link,
-  el: document.querySelector(link.getAttribute('href')),
-})).filter((item) => item.el);
+const navLinks = [...document.querySelectorAll('.nav a.quiet')]
+  .filter((link) => (link.getAttribute('href') || '').startsWith('#'))
+  .map((link) => ({
+    link,
+    el: document.querySelector(link.getAttribute('href')),
+  }))
+  .filter((item) => item.el);
 
 function paintNav(vh) {
   for (const { link, el } of navLinks) {

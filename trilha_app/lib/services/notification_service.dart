@@ -75,7 +75,7 @@ class NotificationService {
   static const _channelId = 'trilha_habits';
   static const _channelName = 'Lembretes Stway';
   static const _channelDesc =
-      'Meta diária, missões, prática, memorizar e favoritos';
+      'Meta diária, cenas, prática, memorização e favoritos';
 
   static const _idMorning = 100;
   static const _idAfternoon = 101;
@@ -273,10 +273,10 @@ class NotificationService {
         when: _nextSlot(progress.settings.reminderHour.clamp(6, 22), 0),
         copy: _ReminderCopy(
           title: (progress.nextSceneTitle ?? '').trim().isEmpty
-              ? 'Sua lição te espera'
+              ? 'Sua cena te espera'
               : 'Amanhã',
           body: (progress.nextSceneTitle ?? '').trim().isEmpty
-              ? 'Um passo por dia. A sequência continua amanhã.'
+              ? 'Uma cena por dia. A sequência continua amanhã.'
               : '${progress.nextSceneTitle}. ${progress.nextSceneTease ?? ''}'
                     .trim(),
           action: ReminderAction.home,
@@ -315,7 +315,7 @@ class NotificationService {
         when: _nextWeekday(DateTime.saturday, 11, 0),
         copy: const _ReminderCopy(
           title: 'Passos da semana',
-          body: 'Ainda dá tempo de fechar as missões semanais.',
+          body: 'Ainda dá tempo de fechar a semana.',
           action: ReminderAction.weekly,
           priority: 4,
         ),
@@ -427,12 +427,12 @@ class NotificationService {
                   streak: streak,
                 )
               : returning
-              ? '$name, faz ${progress.daysSinceLastPlayed} ${progress.daysSinceLastPlayed == 1 ? 'dia' : 'dias'} sem lição. A trilha empoeira — um passo limpa o caminho.'
+              ? '$name, faz ${progress.daysSinceLastPlayed} ${progress.daysSinceLastPlayed == 1 ? 'dia' : 'dias'} sem caminhar. A trilha empoeira — uma cena limpa o caminho.'
               : (progress.nextSceneTitle ?? '').trim().isNotEmpty
               ? '$name, ${progress.nextSceneTitle} espera.'
               : streak > 0
-              ? '$name, você já anda há $streak ${streak == 1 ? 'dia' : 'dias'}. Falta${left == 1 ? '' : 'm'} $left missão${left == 1 ? '' : 'ões'} para acompanhar.'
-              : 'Falta${left == 1 ? '' : 'm'} $left missão${left == 1 ? '' : 'ões'} para fechar a meta de hoje.',
+              ? '$name, você já anda há $streak ${streak == 1 ? 'dia' : 'dias'}. Falta${left == 1 ? '' : 'm'} $left cena${left == 1 ? '' : 's'} para acompanhar.'
+              : 'Falta${left == 1 ? '' : 'm'} $left cena${left == 1 ? '' : 's'} para fechar a meta de hoje.',
           action: ReminderAction.home,
           priority: atRisk
               ? 120
@@ -450,7 +450,7 @@ class NotificationService {
         _ReminderCopy(
           title: 'Do dia',
           body: questsLeft == 1
-              ? 'Sobrou 1 gesto. Um passo e o dia fecha.'
+              ? 'Sobrou 1 gesto. Mais um e o dia fecha.'
               : 'Ainda faltam $questsLeft gestos do dia.',
           action: ReminderAction.home,
           priority: 80,
@@ -517,7 +517,7 @@ class NotificationService {
         _ReminderCopy(
           title: title.isEmpty ? 'Até amanhã' : title,
           body: (progress.nextSceneTease ?? '').trim().isEmpty
-              ? 'Um passo. A sequência continua amanhã.'
+              ? 'Meta feita. A sequência continua amanhã.'
               : progress.nextSceneTease!.trim(),
           action: ReminderAction.home,
           priority: 90,

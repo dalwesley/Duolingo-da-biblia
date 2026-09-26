@@ -24,7 +24,7 @@ void main() {
     );
 
     expect(find.text('4 dias ainda podem voltar'), findsOneWidget);
-    expect(find.text('Segue com 5 · 1× neste mês'), findsOneWidget);
+    expect(find.text('Continue com 5 · 1× neste mês'), findsOneWidget);
     expect(find.text('Reparar'), findsOneWidget);
     expect(find.text('REPARAR SEQUÊNCIA'), findsNothing);
     expect(find.text('Recomeçar do 1'), findsNothing);

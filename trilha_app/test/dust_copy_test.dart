@@ -10,7 +10,7 @@ void main() {
     );
     expect(line, contains('12h 24min'));
     expect(line, contains('sequência de 2 dias'));
-    expect(line, contains('missão hoje'));
+    expect(line, contains('cena hoje'));
     expect(line, isNot(contains('Faltam')));
     expect(line, isNot(contains('postos')));
   });
@@ -20,6 +20,6 @@ void main() {
       countdown: '40min',
       hasFreeze: false,
     );
-    expect(line, '40min para a sequência cair. Faz a missão hoje.');
+    expect(line, '40min para a sequência cair. Faça a cena hoje.');
   });
 }

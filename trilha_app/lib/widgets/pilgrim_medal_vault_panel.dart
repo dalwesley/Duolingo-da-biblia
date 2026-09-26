@@ -8,8 +8,12 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'medal_cinematic_widgets.dart';
 import 'medal_unlock_sheet.dart';
+import 'cinematic_icon.dart';
 import 'immersive_background.dart';
 import 'ui_primitives.dart';
+import 'profile_privacy.dart';
+import 'relic_panel.dart';
+import '../models/caravan_profile_prefs.dart';
 
 enum _MedalVaultTab { journey, trails }
 
@@ -21,11 +25,15 @@ class PilgrimMedalVaultsPanel extends StatefulWidget {
   /// Quando visita outro peregrino — coração no sheet do emblema.
   final String? recognizeToUid;
 
+  /// Dono sem nenhuma medalha — CTA que leva de volta à trilha.
+  final VoidCallback? onStartWalking;
+
   const PilgrimMedalVaultsPanel({
     super.key,
     required this.profile,
     this.evalContext = const PilgrimMedalEvalContext(),
     this.recognizeToUid,
+    this.onStartWalking,
   });
 
   @override
@@ -68,14 +76,25 @@ class _PilgrimMedalVaultsPanelState extends State<PilgrimMedalVaultsPanel> {
     setState(() {
       _catalog = catalog;
       _vaults = vaults;
-      _selectedTrailVaultId ??=
-          trailVaults.isNotEmpty ? trailVaults.first.vault.id : null;
+      _selectedTrailVaultId ??= trailVaults.isNotEmpty
+          ? trailVaults.first.vault.id
+          : null;
       if (_selectedTrailVaultId != null &&
           trailVaults.every((v) => v.vault.id != _selectedTrailVaultId)) {
-        _selectedTrailVaultId =
-            trailVaults.isNotEmpty ? trailVaults.first.vault.id : null;
+        _selectedTrailVaultId = trailVaults.isNotEmpty
+            ? trailVaults.first.vault.id
+            : null;
       }
     });
+  }
+
+  PilgrimTrackState? _trackById(String id) {
+    for (final vault in _vaults ?? const <PilgrimVaultState>[]) {
+      for (final track in vault.tracks) {
+        if (track.track.id == id) return track;
+      }
+    }
+    return null;
   }
 
   PilgrimVaultState? _vaultById(String id) {
@@ -116,9 +135,7 @@ class _PilgrimMedalVaultsPanelState extends State<PilgrimMedalVaultsPanel> {
     if (vaults == null) {
       return const Padding(
         padding: EdgeInsets.symmetric(vertical: AppSpace.lg),
-        child: Center(
-          child: CircularProgressIndicator(color: AppColors.accent),
-        ),
+        child: AppSpinner(),
       );
     }
 
@@ -139,12 +156,23 @@ class _PilgrimMedalVaultsPanelState extends State<PilgrimMedalVaultsPanel> {
           : selectedTrail?.vault.id.replaceFirst('trail:', ''),
     );
 
+    // Próxima medalha de toda a coleção (sem prioridade de aba) — a meta
+    // que mais puxa: "Faltam 3 cenas para Prata".
+    final spot = PilgrimMedals.nearestLocked(
+      profile: widget.profile,
+      catalog: _catalog,
+      ctx: widget.evalContext,
+    );
+    final spotTrack = spot == null ? null : _trackById(spot.track.id);
+
     final rareTiles = PilgrimMedals.visibleDiscoveryTiles(_discoveryVault);
     final hiddenRares = PilgrimMedals.hiddenDiscoveryCount(_discoveryVault);
 
     final a = Appearance.of(context);
     final journeyLit = journey?.unlockedCount ?? 0;
     final journeyTotal = journey?.total ?? 0;
+    final anyLit = vaults.any((v) => v.unlockedCount > 0);
+    final showEmpty = !anyLit && widget.onStartWalking != null;
 
     return GlassCard(
       padding: EdgeInsets.zero,
@@ -163,42 +191,66 @@ class _PilgrimMedalVaultsPanelState extends State<PilgrimMedalVaultsPanel> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(16, 16, 16, 18),
+              padding: const EdgeInsets.fromLTRB(
+                AppSpace.lg,
+                AppSpace.lg,
+                AppSpace.lg,
+                AppSpace.lg + 2,
+              ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                  Row(
-                    children: [
-                      Container(
-                        width: 3,
-                        height: 18,
-                        decoration: BoxDecoration(
-                          color: AppColors.medalGold,
-                          borderRadius: BorderRadius.circular(2),
-                        ),
-                      ),
-                      const SizedBox(width: 10),
-                      Expanded(
-                        child: Text(
-                          'Medalhas',
-                          style: AppTypography.title(size: 16, color: a.text),
-                        ),
-                      ),
-                      if (journeyTotal > 0)
-                        CountBadge(
-                          '$journeyLit/$journeyTotal',
-                          color: AppColors.medalGold,
-                        ),
-                    ],
+                  RelicChapter(
+                    title: 'Medalhas',
+                    accent: AppColors.medalGold,
+                    // A barra de progresso já faz o papel do filete.
+                    divided: journeyTotal == 0,
+                    action: const PrivacyEye(
+                      sections: {CaravanProfileSection.medals},
+                      label: 'Medalhas',
+                    ),
                   ),
-                  const SizedBox(height: 14),
+                  if (journeyTotal > 0) ...[
+                    const SizedBox(height: AppSpace.sm),
+                    RelicProgress(
+                      value: journeyLit / journeyTotal,
+                      accent: AppColors.medalGold,
+                    ),
+                  ],
+                  if (spot != null && spotTrack != null) ...[
+                    const SizedBox(height: AppSpace.md),
+                    _NextMedalSpotlight(
+                      proximity: spot,
+                      onTap: () => showTrackDetailSheet(
+                        context,
+                        spotTrack,
+                        highlightLevelIndex: spotTrack.levelIndex + 1,
+                        recognizeToUid: widget.recognizeToUid,
+                      ),
+                    ),
+                  ],
+                  if (showEmpty) ...[
+                    const SizedBox(height: AppSpace.xs + 2),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 13),
+                      child: Text(
+                        'Cada cena concluída acende uma moeda. '
+                        'A primeira está a um passo.',
+                        style: AppTypography.body(
+                          size: 13,
+                          color: a.textSecondary,
+                        ),
+                      ),
+                    ),
+                  ],
+                  const SizedBox(height: AppSpace.md),
                   if (hasTrails) ...[
                     _MedalTabBar(
                       tab: _tab,
                       trailCount: trailVaults.length,
                       onChanged: (tab) => setState(() => _tab = tab),
                     ),
-                    const SizedBox(height: 14),
+                    const SizedBox(height: AppSpace.md),
                   ],
                   if (showJourney && journey != null)
                     _FamilyEmblemRow(
@@ -207,16 +259,12 @@ class _PilgrimMedalVaultsPanelState extends State<PilgrimMedalVaultsPanel> {
                       recognizeToUid: widget.recognizeToUid,
                     ),
                   if (showJourney && _seasonVault != null) ...[
-                    const SizedBox(height: 14),
-                    Text(
-                      'TEMPORADA',
-                      style: AppTypography.label(
-                        size: 9,
-                        letterSpacing: 1.4,
-                        color: AppColors.medalGold.withValues(alpha: 0.72),
-                      ),
+                    const SizedBox(height: AppSpace.lg),
+                    _VaultSubhead(
+                      'Temporada',
+                      color: AppColors.medalGold.withValues(alpha: 0.85),
                     ),
-                    const SizedBox(height: 8),
+                    const SizedBox(height: AppSpace.sm),
                     _FamilyEmblemRow(
                       tracks: _seasonVault!.tracks,
                       featuredTrackId: proximity?.track.id,
@@ -231,11 +279,21 @@ class _PilgrimMedalVaultsPanelState extends State<PilgrimMedalVaultsPanel> {
                     ),
                   if (showJourney &&
                       (rareTiles.isNotEmpty || hiddenRares > 0)) ...[
-                    const SizedBox(height: 18),
+                    const SizedBox(height: AppSpace.lg + 2),
                     _RareStrip(
                       tiles: rareTiles,
                       hiddenCount: hiddenRares,
                       recognizeToUid: widget.recognizeToUid,
+                    ),
+                  ],
+                  if (showEmpty) ...[
+                    const SizedBox(height: AppSpace.lg + 2),
+                    CopperCta(
+                      label: 'Caminhar a próxima cena',
+                      dense: true,
+                      leading: CinematicGlyph.path,
+                      trailing: null,
+                      onTap: widget.onStartWalking,
                     ),
                   ],
                 ],
@@ -351,21 +409,17 @@ class _RareStrip extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Divider(color: AppColors.medalMirra.withValues(alpha: 0.18), height: 1),
-        const SizedBox(height: 12),
-        Text(
-          'DESCOBERTAS',
-          style: AppTypography.label(
-            size: 9,
-            letterSpacing: 1.4,
-            color: AppColors.medalMirra.withValues(alpha: 0.88),
-          ),
+        const ListDivider(),
+        const SizedBox(height: AppSpace.md),
+        _VaultSubhead(
+          'Descobertas',
+          color: AppColors.medalMirra.withValues(alpha: 0.92),
         ),
         if (tiles.isNotEmpty) ...[
-          const SizedBox(height: 10),
+          const SizedBox(height: AppSpace.sm + 2),
           Wrap(
-            spacing: 10,
-            runSpacing: 10,
+            spacing: AppSpace.sm + 2,
+            runSpacing: AppSpace.sm + 2,
             children: [
               for (final tile in tiles)
                 MedalVaultMedallion(
@@ -381,17 +435,30 @@ class _RareStrip extends StatelessWidget {
           ),
         ],
         if (hiddenCount > 0) ...[
-          const SizedBox(height: 8),
-          GestureDetector(
-            onTap: () => showMedalMysterySheet(context, hiddenCount),
-            behavior: HitTestBehavior.opaque,
-            child: Text(
-              tiles.isEmpty
-                  ? 'Revelam-se no caminho — sem dica.'
-                  : 'Outras se revelam no caminho.',
-              style: AppTypography.body(
-                size: 12,
-                color: a.textMuted(0.45),
+          const SizedBox(height: AppSpace.xs),
+          Semantics(
+            button: true,
+            child: InkWell(
+              onTap: () => showMedalMysterySheet(context, hiddenCount),
+              borderRadius: BorderRadius.circular(AppRadii.sm),
+              child: ConstrainedBox(
+                constraints: const BoxConstraints(minHeight: 44),
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Text(
+                        tiles.isEmpty
+                            ? 'Revelam-se no caminho — sem dica.'
+                            : 'Outras se revelam no caminho.',
+                        style: AppTypography.body(
+                          size: 13,
+                          color: a.textSecondary,
+                        ),
+                      ),
+                    ),
+                    ListChevron(color: a.textFaint),
+                  ],
+                ),
               ),
             ),
           ),
@@ -451,40 +518,165 @@ class _MedalChapter extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ink = selected
-        ? AppColors.medalGold
-        : Colors.white.withValues(alpha: 0.42);
-    return Material(
-      color: Colors.transparent,
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(AppRadii.sm),
-        child: Padding(
-          padding: const EdgeInsets.only(bottom: 2),
-          child: Column(
-            children: [
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 8),
-                child: Text(
-                  count == null ? label.toUpperCase() : '${label.toUpperCase()}  $count',
-                  textAlign: TextAlign.center,
-                  style: AppTypography.label(
-                    size: 11,
-                    letterSpacing: 1.4,
-                    color: ink,
+    final a = Appearance.of(context);
+    final ink = selected ? AppColors.medalGold : a.textFaint;
+    final text = count == null ? label : '$label · $count';
+    return Semantics(
+      button: true,
+      selected: selected,
+      label: text,
+      excludeSemantics: true,
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: onTap,
+          borderRadius: BorderRadius.circular(AppRadii.sm),
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(minHeight: 44),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(vertical: AppSpace.sm),
+                  child: Text(
+                    text,
+                    textAlign: TextAlign.center,
+                    style: AppTypography.title(
+                      size: 14,
+                      weight: selected ? FontWeight.w800 : FontWeight.w700,
+                      color: ink,
+                    ),
                   ),
                 ),
-              ),
-              AnimatedContainer(
-                duration: const Duration(milliseconds: 220),
-                curve: Curves.easeOutCubic,
-                height: 2,
-                decoration: BoxDecoration(
-                  color: selected ? AppColors.medalGold : Colors.white.withValues(alpha: 0.08),
-                  borderRadius: BorderRadius.circular(2),
+                AnimatedContainer(
+                  duration: const Duration(milliseconds: 220),
+                  curve: Curves.easeOutCubic,
+                  height: 2,
+                  decoration: BoxDecoration(
+                    color: selected ? AppColors.medalGold : a.textMuted(0.1),
+                    borderRadius: BorderRadius.circular(AppRadii.hair),
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Subtítulo interno do cofre — caixa normal, legível.
+class _VaultSubhead extends StatelessWidget {
+  final String text;
+  final Color color;
+
+  const _VaultSubhead(this.text, {required this.color});
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(text, style: AppTypography.title(size: 12, color: color));
+  }
+}
+
+/// "Próxima medalha": a moeda que falta, o halo do quanto já andou e o
+/// recado de ação ("Faltam 3 cenas para Prata em Palavra").
+class _NextMedalSpotlight extends StatelessWidget {
+  final PilgrimTrackProximity proximity;
+  final VoidCallback onTap;
+
+  const _NextMedalSpotlight({required this.proximity, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final p = proximity;
+    final accent = tierColor(p.nextLevel.tier);
+    final ratio = p.target <= 0 ? 0.0 : (p.current / p.target).clamp(0.0, 1.0);
+    final tile = PilgrimMedalTile.fromLevel(
+      track: p.track,
+      level: p.nextLevel,
+      unlocked: false,
+    );
+    return Semantics(
+      button: true,
+      label: 'Próxima medalha: ${p.message}',
+      excludeSemantics: true,
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: onTap,
+          borderRadius: BorderRadius.circular(AppRadii.md),
+          child: InsetPanel(
+            borderColor: accent.withValues(alpha: 0.45),
+            child: Row(
+              children: [
+                MedalHaloRing(
+                  progress: ratio,
+                  accent: accent,
+                  size: 66,
+                  stroke: 3,
+                  child: MedalVaultMedallion(tile: tile, size: 48),
+                ),
+                const SizedBox(width: AppSpace.md),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        'Próxima medalha',
+                        style: AppTypography.body(
+                          size: 12,
+                          weight: FontWeight.w800,
+                          color: accent,
+                        ),
+                      ),
+                      const SizedBox(height: 2),
+                      Text(
+                        '${tierLabel(p.nextLevel.tier)} · ${p.track.title}',
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: AppTypography.title(size: 16, color: a.text),
+                      ),
+                      const SizedBox(height: 4),
+                      Text(
+                        p.remaining == 1
+                            ? 'Falta 1 ${p.unitLabel}'
+                            : 'Faltam ${p.remaining} ${p.unitLabel}',
+                        style: AppTypography.body(
+                          size: 13,
+                          weight: FontWeight.w600,
+                          color: a.textSecondary,
+                        ),
+                      ),
+                      const SizedBox(height: 8),
+                      Row(
+                        children: [
+                          Expanded(
+                            child: AppProgressBar(
+                              value: ratio,
+                              color: accent,
+                              height: 6,
+                            ),
+                          ),
+                          const SizedBox(width: 8),
+                          Text(
+                            '${p.current}/${p.target}',
+                            style: AppTypography.body(
+                              size: 12,
+                              weight: FontWeight.w800,
+                              color: a.textSecondary,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+                const SizedBox(width: 6),
+                ListChevron(color: a.textFaint),
+              ],
+            ),
           ),
         ),
       ),

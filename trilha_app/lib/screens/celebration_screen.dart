@@ -26,8 +26,10 @@ import '../utils/mascot_messages.dart';
 import '../utils/trail_progress.dart';
 import '../utils/tomorrow_hook.dart';
 import '../models/corner_challenge.dart';
+import '../widgets/act_feel.dart';
 import '../widgets/companion_invite_prompt_sheet.dart';
 import '../widgets/cinematic_icon.dart';
+import '../widgets/coming_soon_trails_card.dart';
 import '../widgets/commit_strip.dart';
 import '../widgets/confetti_overlay.dart';
 import '../widgets/immersive_background.dart';
@@ -72,6 +74,12 @@ class CelebrationScreen extends StatefulWidget {
 class _CelebrationScreenState extends State<CelebrationScreen>
     with TickerProviderStateMixin {
   bool _saved = false;
+
+  /// Sequência antes desta missão — o número anima de ontem para hoje.
+  int? _streakBefore;
+
+  /// A sequência subiu agora (primeira missão do dia): momento próprio.
+  bool _streakUp = false;
   bool _trailComplete = false;
   int _awardedSteps = 0;
   bool _firstLessonSession = false;
@@ -192,9 +200,6 @@ class _CelebrationScreenState extends State<CelebrationScreen>
   Future<void> _leaveCelebration({required bool toTrailMap}) async {
     if (_leaving) return;
     _leaving = true;
-    if (!toTrailMap) {
-      HapticFeedback.heavyImpact();
-    }
     try {
       await _offerRetentionPrompts();
     } catch (_) {}
@@ -219,7 +224,6 @@ class _CelebrationScreenState extends State<CelebrationScreen>
       return;
     }
     _leaving = true;
-    HapticFeedback.mediumImpact();
     if (!mounted) return;
     Navigator.of(context).pushReplacement(
       MaterialPageRoute(builder: (_) => LessonScreen(missionSlug: slug)),
@@ -246,7 +250,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     await showInviteQrSheet(
       context,
       code: code,
-      title: 'Um par na trilha',
+      title: 'Uma companhia na trilha',
       subtitle: 'Um companheiro. Sem ranking — só presença.',
       inviterName: progress.userName,
     );
@@ -268,6 +272,17 @@ class _CelebrationScreenState extends State<CelebrationScreen>
           ? (widget.steps * 0.35).round().clamp(5, widget.steps)
           : widget.steps;
       unawaited(_resolveTomorrowHook(progress));
+      _streakBefore = progress.streak;
+      final walkedBefore = progress.walkedToday;
+      // Fanfarra junto da entrada do herói — não espera rede/salvamento.
+      Future.delayed(const Duration(milliseconds: 300), () {
+        if (!mounted) return;
+        if (widget.perfect) {
+          SoundService.instance.playStreak();
+        } else {
+          SoundService.instance.playComplete(boss: widget.isBoss);
+        }
+      });
       progress
           .completeMission(
             widget.missionSlug,
@@ -279,6 +294,11 @@ class _CelebrationScreenState extends State<CelebrationScreen>
           .then((awarded) async {
             if (mounted && awarded > 0) {
               setState(() => _awardedSteps = awarded);
+            }
+            if (mounted &&
+                !walkedBefore &&
+                progress.streak > (_streakBefore ?? 0)) {
+              setState(() => _streakUp = true);
             }
             final now = DateTime.now();
             final today = DateTime(now.year, now.month, now.day);
@@ -347,9 +367,14 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                 correct: widget.correct,
                 total: widget.total,
               );
+              // Mostra a travessia desta cena assim que eu chego — fechada
+              // ("Chegaram juntos") ou ainda esperando a outra pessoa.
+              final uid = context.read<BackendService>().uid ?? '';
               CornerChallenge? closed;
               for (final c in corners.mine) {
-                if (c.missionSlug == widget.missionSlug && c.bothDone) {
+                if (c.missionSlug == widget.missionSlug &&
+                    c.isThisWeek &&
+                    c.iDone(uid)) {
                   closed = c;
                   break;
                 }
@@ -372,11 +397,6 @@ class _CelebrationScreenState extends State<CelebrationScreen>
               );
             }
             if (!mounted) return;
-            if (widget.perfect) {
-              SoundService.instance.playStreak();
-            } else {
-              SoundService.instance.playComplete(boss: widget.isBoss);
-            }
             if (progress.goalJustReached) {
               progress.clearGoalJustReached();
             }
@@ -435,8 +455,6 @@ class _CelebrationScreenState extends State<CelebrationScreen>
         TrailDifficulty.semente.id;
     final current =
         TrailDifficulty.fromId(currentId) ?? TrailDifficulty.semente;
-    final next = current.next;
-    if (next == null) return;
 
     final trail = await TrailRepository().getTrailBySlug(widget.trailSlug);
     final complete =
@@ -445,15 +463,16 @@ class _CelebrationScreenState extends State<CelebrationScreen>
 
     if (complete) {
       await progress.markTrailModeCleared(widget.trailSlug, current.id);
+      if (mounted) setState(() => _trailComplete = true);
     }
 
     // Sugere próximo modo só após concluir a trilha neste modo.
-    if (!complete) return;
+    final next = current.next;
+    if (!complete || next == null) return;
 
     final meta = await QuestionBank.instance.metaFor(next);
     if (!mounted) return;
     setState(() {
-      _trailComplete = complete;
       _currentMode = current;
       _nextMode = next;
       _nextMeta = meta;
@@ -463,7 +482,6 @@ class _CelebrationScreenState extends State<CelebrationScreen>
   Future<void> _acceptNextMode({required bool replayThisStep}) async {
     final next = _nextMode;
     if (next == null) return;
-    HapticFeedback.mediumImpact();
     final progress = context.read<ProgressService>();
     final trail = await TrailRepository().getTrailBySlug(widget.trailSlug);
     if (!mounted) return;
@@ -511,7 +529,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
   }
 
   String get _kicker {
-    if (_newSeal != null) return 'ENCONTRO';
+    if (_newSeal != null) return 'Encontro';
     return CelebrationCopy.kicker(
       perfect: widget.perfect,
       isReplay: widget.isReplay,
@@ -631,7 +649,8 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                         accent: heroAccent,
                                         perfect: widget.perfect,
                                         isBoss: widget.isBoss,
-                                        compact: compact ||
+                                        compact:
+                                            compact ||
                                             (_hook?.hasEcho ?? false),
                                         pulse: _pulse,
                                         scale: _heroScale,
@@ -644,12 +663,16 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                         count: _countProgress,
                                         awardedSteps: _awardedSteps,
                                         streak: progress.streak,
+                                        streakFrom: _streakUp
+                                            ? _streakBefore
+                                            : null,
+                                        streakUp: _streakUp,
                                         streakGoal:
                                             progress.settings.streakGoal,
                                         pct: pct,
                                         denseStats: true,
-                                        mascot: compact ||
-                                                (_hook?.hasEcho ?? false)
+                                        mascot:
+                                            compact || (_hook?.hasEcho ?? false)
                                             ? null
                                             : MascotMessages.celebration(
                                                 isBoss: isBoss,
@@ -736,35 +759,50 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                       const StreakRepairCelebrationCard(),
                                       const SizedBox(height: AppSpace.md),
                                     ],
-                                    CopperCta(
-                                      label: !_hookResolved || _hook != null
-                                          ? 'ATÉ AMANHÃ'
-                                          : (EntryTrails.continuesTo
-                                                    .containsKey(
-                                                      widget.missionSlug,
-                                                    )
-                                                ? 'SEGUIR NO CÂNON'
-                                                : 'CONTINUAR A TRILHA'),
-                                      trailing: null,
-                                      onTap: () => _leaveCelebration(
-                                        toTrailMap:
-                                            _hookResolved && _hook == null,
+                                    // Meta do dia ainda aberta (ritmo 2–3):
+                                    // o principal é seguir; "até amanhã"
+                                    // vira secundário.
+                                    if (_hook != null &&
+                                        progress.missionsToday <
+                                            progress.settings.dailyGoal) ...[
+                                      CopperCta(
+                                        label: _hook!.trailJustCompleted
+                                            ? 'Continuar no cânon'
+                                            : 'Próxima cena',
+                                        onTap: _openTomorrow,
                                       ),
-                                    ),
-                                    if (_hook != null) ...[
-                                      const SizedBox(height: 4),
-                                      TextButton(
-                                        onPressed: _openTomorrow,
-                                        child: Text(
-                                          _hook!.trailJustCompleted
-                                              ? 'Seguir no cânon'
-                                              : 'Continuar trilha',
-                                          style: AppTypography.cta(
-                                            size: 13,
-                                            color: AppColors.accent,
-                                          ),
+                                      const SizedBox(height: 10),
+                                      GhostCta(
+                                        label: 'Até amanhã',
+                                        onTap: () => _leaveCelebration(
+                                          toTrailMap: false,
                                         ),
                                       ),
+                                    ] else ...[
+                                      CopperCta(
+                                        label: !_hookResolved || _hook != null
+                                            ? 'Até amanhã'
+                                            : (EntryTrails.continuesTo
+                                                      .containsKey(
+                                                        widget.missionSlug,
+                                                      )
+                                                  ? 'Continuar no cânon'
+                                                  : 'Continuar a trilha'),
+                                        trailing: null,
+                                        onTap: () => _leaveCelebration(
+                                          toTrailMap:
+                                              _hookResolved && _hook == null,
+                                        ),
+                                      ),
+                                      if (_hook != null) ...[
+                                        const SizedBox(height: 10),
+                                        GhostCta(
+                                          label: _hook!.trailJustCompleted
+                                              ? 'Continuar no cânon'
+                                              : 'Continuar a trilha',
+                                          onTap: _openTomorrow,
+                                        ),
+                                      ],
                                     ],
                                     _CelebrationSecondaryRow(
                                       appearance: appearance,
@@ -789,6 +827,17 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                           _leaveCelebration(toTrailMap: false),
                                       hideHome: true,
                                     ),
+                                    if (_trailComplete ||
+                                        (_hook?.trailJustCompleted ??
+                                            false)) ...[
+                                      const SizedBox(height: 4),
+                                      TextCta(
+                                        label: 'Ajude a continuar',
+                                        leading: CinematicGlyph.gift,
+                                        color: appearance.textFaint,
+                                        onTap: openDonatePage,
+                                      ),
+                                    ],
                                   ],
                                 ),
                               ),
@@ -825,6 +874,10 @@ class _HeroBeat extends StatelessWidget {
   final Animation<double> count;
   final int awardedSteps;
   final int streak;
+
+  /// Sequência de ontem — quando subiu hoje, o número parte dela.
+  final int? streakFrom;
+  final bool streakUp;
   final int streakGoal;
   final int pct;
   final String? mascot;
@@ -844,6 +897,8 @@ class _HeroBeat extends StatelessWidget {
     required this.streak,
     required this.streakGoal,
     required this.pct,
+    this.streakFrom,
+    this.streakUp = false,
     this.denseStats = false,
     this.insight,
     this.medalLine,
@@ -884,22 +939,14 @@ class _HeroBeat extends StatelessWidget {
         ),
         if (showKicker) ...[
           SizedBox(height: compact ? 6 : 12),
-          Text(
-            kicker,
-            textAlign: TextAlign.center,
-            style: AppTypography.label(
-              size: 11,
-              letterSpacing: 2.6,
-              color: AppColors.accent,
-            ),
-          ),
+          SectionLabel(kicker, color: AppColors.accent),
         ],
         SizedBox(height: showKicker ? 6 : (compact ? 8 : 12)),
         Text(
           headline,
           textAlign: TextAlign.center,
           style: AppTypography.display(
-            size: compact ? 22 : 28,
+            size: compact ? 20 : 28,
             height: 1.12,
             weight: FontWeight.w900,
           ),
@@ -915,13 +962,13 @@ class _HeroBeat extends StatelessWidget {
               size: 14,
               weight: FontWeight.w700,
               height: 1.35,
-              color: a.text.withValues(alpha: 0.82),
+              color: a.textSecondary,
             ),
           ),
         ],
         if (isBoss) ...[
           const SizedBox(height: 10),
-          const _ComboChip(label: 'BOSS', color: AppColors.sand),
+          const _ComboChip(label: 'Desafio', color: AppColors.sand),
         ],
         if ((medalLine ?? '').trim().isNotEmpty) ...[
           const SizedBox(height: 8),
@@ -933,7 +980,10 @@ class _HeroBeat extends StatelessWidget {
           builder: (context, _) {
             final t = count.value;
             final stepsShown = (awardedSteps * t).round();
-            final streakShown = (streak * t).round();
+            final from = streakFrom;
+            final streakShown = from != null
+                ? (from + (streak - from) * t).round()
+                : (streak * t).round();
             final pctShown = (pct * t).round();
             return Row(
               children: [
@@ -978,11 +1028,130 @@ class _HeroBeat extends StatelessWidget {
             );
           },
         ),
+        if (streakUp) ...[
+          SizedBox(height: compact ? 8 : 12),
+          _StreakIgnite(streak: streak, goal: streakGoal),
+        ],
         if ((mascot ?? '').trim().isNotEmpty) ...[
           SizedBox(height: compact ? 10 : 14),
           MascotBubble(glowing: true, message: mascot!.trim()),
         ],
       ],
+    );
+  }
+}
+
+/// A chama acende: "+1 dia", a sequência nova e quanto falta para o
+/// compromisso firmado no onboarding. Entra depois da contagem, com som.
+class _StreakIgnite extends StatefulWidget {
+  final int streak;
+  final int goal;
+
+  const _StreakIgnite({required this.streak, required this.goal});
+
+  @override
+  State<_StreakIgnite> createState() => _StreakIgniteState();
+}
+
+class _StreakIgniteState extends State<_StreakIgnite>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _c = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 900),
+  );
+
+  @override
+  void initState() {
+    super.initState();
+    Future.delayed(const Duration(milliseconds: 700), () {
+      if (!mounted) return;
+      ActHaptics.success();
+      SoundService.instance.playStreak();
+      _c.forward();
+    });
+  }
+
+  @override
+  void dispose() {
+    _c.dispose();
+    super.dispose();
+  }
+
+  String get _line {
+    final left = widget.goal - widget.streak;
+    if (widget.streak == 1) return 'Sua sequência começou hoje.';
+    if (left == 0) return 'Compromisso de ${widget.goal} dias cumprido!';
+    if (left > 0) {
+      return left == 1
+          ? 'Falta 1 dia para o seu compromisso.'
+          : 'Faltam $left dias para o seu compromisso.';
+    }
+    return 'Além do compromisso de ${widget.goal} dias.';
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return AnimatedBuilder(
+      animation: _c,
+      builder: (context, _) {
+        final t = _c.value;
+        final pop = Curves.elasticOut.transform(t);
+        final glow = math.sin(t * math.pi);
+        return Opacity(
+          opacity: Curves.easeOut.transform((t * 2).clamp(0.0, 1.0)),
+          child: Transform.scale(
+            scale: 0.7 + 0.3 * pop,
+            child: GlassCard(
+              padding: const EdgeInsets.fromLTRB(14, 12, 16, 12),
+              radius: AppRadii.md,
+              tint: AppColors.streak,
+              glow: glow,
+              child: Row(
+                children: [
+                  Transform.scale(
+                    scale: 1 + 0.35 * glow,
+                    child: const CinematicIcon(
+                      glyph: CinematicGlyph.flame,
+                      size: 30,
+                      accent: AppColors.streak,
+                      framed: false,
+                      glowing: true,
+                    ),
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          widget.streak == 1
+                              ? '+1 dia · sequência de 1 dia'
+                              : '+1 dia · sequência de ${widget.streak} dias',
+                          style: AppTypography.body(
+                            size: 16,
+                            weight: FontWeight.w800,
+                            color: a.text,
+                          ),
+                        ),
+                        const SizedBox(height: 2),
+                        Text(
+                          _line,
+                          style: AppTypography.body(
+                            size: 13,
+                            weight: FontWeight.w600,
+                            color: a.textSecondary,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        );
+      },
     );
   }
 }
@@ -1005,49 +1174,18 @@ class _CelebrationSecondaryRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final share = onShareSeal != null
-        ? TextButton(
-            onPressed: onShareSeal,
-            style: TextButton.styleFrom(
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
-              minimumSize: Size.zero,
-              tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-            ),
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                CinematicIcon(
-                  glyph: CinematicGlyph.share,
-                  size: 15,
-                  accent: appearance.textMuted(0.7),
-                  framed: false,
-                ),
-                const SizedBox(width: 6),
-                Text(
-                  'Compartilhar',
-                  style: AppTypography.body(
-                    weight: FontWeight.w700,
-                    color: appearance.textMuted(0.7),
-                  ),
-                ),
-              ],
-            ),
+        ? TextCta(
+            label: 'Compartilhar',
+            leading: CinematicGlyph.share,
+            color: appearance.textSecondary,
+            onTap: onShareSeal,
           )
         : shareStreak;
 
-    final home = TextButton(
-      onPressed: onHome,
-      style: TextButton.styleFrom(
-        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
-        minimumSize: Size.zero,
-        tapTargetSize: MaterialTapTargetSize.shrinkWrap,
-      ),
-      child: Text(
-        'Voltar ao início',
-        style: AppTypography.body(
-          weight: FontWeight.w700,
-          color: appearance.textMuted(0.7),
-        ),
-      ),
+    final home = TextCta(
+      label: 'Voltar ao início',
+      color: appearance.textSecondary,
+      onTap: onHome,
     );
 
     if (share == null) {
@@ -1061,7 +1199,7 @@ class _CelebrationSecondaryRow extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         share,
-        Text('·', style: AppTypography.body(color: appearance.textMuted(0.4))),
+        Text('·', style: AppTypography.body(color: appearance.textFaint)),
         home,
       ],
     );
@@ -1077,7 +1215,7 @@ class _TomorrowBeatSkeleton extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        const _TomorrowKicker(label: 'AMANHÃ'),
+        const _TomorrowKicker(label: 'Amanhã'),
         const SizedBox(height: 88),
       ],
     );
@@ -1101,14 +1239,7 @@ class _TomorrowKicker extends StatelessWidget {
         ),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 14),
-          child: Text(
-            label,
-            style: AppTypography.label(
-              size: 12,
-              letterSpacing: 3.2,
-              color: AppColors.accent,
-            ),
-          ),
+          child: SectionLabel(label, color: AppColors.accent, size: 12),
         ),
         Expanded(
           child: Container(
@@ -1148,15 +1279,7 @@ class _TomorrowBeat extends StatelessWidget {
         if (hook.trailJustCompleted &&
             (hook.trailTitle ?? '').trim().isNotEmpty) ...[
           const SizedBox(height: 8),
-          Text(
-            hook.trailTitle!.trim().toUpperCase(),
-            textAlign: TextAlign.center,
-            style: AppTypography.label(
-              size: 10,
-              letterSpacing: 1.6,
-              color: a.textMuted(0.55),
-            ),
-          ),
+          SectionLabel(hook.trailTitle!.trim(), color: a.textFaint, size: 10),
         ] else if (ref.isNotEmpty) ...[
           const SizedBox(height: 8),
           Text(
@@ -1165,7 +1288,7 @@ class _TomorrowBeat extends StatelessWidget {
             style: AppTypography.label(
               size: 11,
               letterSpacing: 1.4,
-              color: a.textMuted(0.58),
+              color: a.textFaint,
             ),
           ),
         ],
@@ -1197,7 +1320,7 @@ class _TomorrowBeat extends StatelessWidget {
               size: 18,
               height: 1.38,
               fontStyle: FontStyle.italic,
-              color: a.text.withValues(alpha: 0.9),
+              color: a.text,
             ),
           ),
         ],
@@ -1240,24 +1363,25 @@ class _EchoBeat extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        const _TomorrowKicker(label: 'HOJE VOCÊ VIU'),
+        const _TomorrowKicker(label: 'Hoje você viu'),
         const SizedBox(height: 18),
         Text(
           planted,
           textAlign: TextAlign.center,
-          style: AppTypography.display(
-            size: 28,
-            height: 1.18,
-            weight: FontWeight.w900,
-            color: a.text,
-          ).copyWith(
-            shadows: [
-              Shadow(
-                color: AppColors.accent.withValues(alpha: 0.32),
-                blurRadius: 28,
+          style:
+              AppTypography.display(
+                size: 28,
+                height: 1.18,
+                weight: FontWeight.w900,
+                color: a.text,
+              ).copyWith(
+                shadows: [
+                  Shadow(
+                    color: AppColors.accent.withValues(alpha: 0.32),
+                    blurRadius: 28,
+                  ),
+                ],
               ),
-            ],
-          ),
         ),
         const SizedBox(height: 20),
         Text(
@@ -1267,7 +1391,7 @@ class _EchoBeat extends StatelessWidget {
             size: 20,
             height: 1.42,
             fontStyle: FontStyle.italic,
-            color: a.text.withValues(alpha: 0.94),
+            color: a.text,
           ),
         ),
         const SizedBox(height: 22),
@@ -1510,43 +1634,37 @@ class _ModeUpgradeCard extends StatelessWidget {
           Text(
             trailComplete
                 ? 'Modo $currentLabel concluído'
-                : 'Bom passo em $currentLabel',
+                : 'Cena concluída em $currentLabel',
             textAlign: TextAlign.center,
-            style: AppTypography.title(size: 14, color: a.text),
+            style: AppTypography.title(size: 16, color: a.text),
           ),
           const SizedBox(height: AppSpace.xs),
           Text(
             trailComplete
                 ? 'Que tal responder de novo em $nextLabel? $nextSubtitle'
-                : 'Quer tentar as perguntas deste passo em $nextLabel?',
+                : 'Quer tentar as perguntas desta cena em $nextLabel?',
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 13,
               height: 1.35,
-              color: a.textMuted(0.72),
+              color: a.textSecondary,
             ),
           ),
           const SizedBox(height: AppSpace.md),
           CopperCta(
             label: trailComplete
-                ? 'REVISAR UM PASSO EM $nextLabel'
-                : 'TENTAR EM $nextLabel',
+                ? 'Revisar uma cena em $nextLabel'
+                : 'Tentar em $nextLabel',
             trailing: null,
             padding: const EdgeInsets.symmetric(vertical: 13),
             onTap: onTryStep,
           ),
           if (onSwitchTrail != null) ...[
             const SizedBox(height: AppSpace.sm),
-            TextButton(
-              onPressed: onSwitchTrail,
-              child: Text(
-                'Mudar a trilha para $nextLabel',
-                style: AppTypography.body(
-                  size: 12,
-                  weight: FontWeight.w700,
-                  color: a.textMuted(0.75),
-                ),
-              ),
+            TextCta(
+              label: 'Mudar a trilha para $nextLabel',
+              color: a.textSecondary,
+              onTap: onSwitchTrail,
             ),
           ],
         ],
@@ -1607,24 +1725,19 @@ class _CornerClosedBeat extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  CornerCopy.closedHeadline(
-                    myUid == null ? 0 : challenge.scoreSign(myUid!),
-                  ),
+                  challenge.headline(myUid ?? ''),
                   style: AppTypography.title(size: 14, color: a.text),
                 ),
                 const SizedBox(height: 2),
                 Text(
                   challenge.subline(myUid ?? ''),
-                  style: AppTypography.body(size: 12, color: a.textMuted(0.7)),
+                  style: AppTypography.body(size: 12, color: a.textSecondary),
                 ),
                 if (challenge.missionTitle.isNotEmpty) ...[
                   const SizedBox(height: 2),
                   Text(
                     challenge.missionTitle,
-                    style: AppTypography.body(
-                      size: 11,
-                      color: a.textMuted(0.5),
-                    ),
+                    style: AppTypography.body(size: 11, color: a.textFaint),
                   ),
                 ],
               ],
@@ -1689,7 +1802,9 @@ class _StatCard extends StatelessWidget {
             borderRadius: BorderRadius.circular(AppRadii.sm),
             boxShadow: [
               BoxShadow(
-                color: color.withValues(alpha: dense ? 0.04 : 0.08 + breath * 0.1),
+                color: color.withValues(
+                  alpha: dense ? 0.04 : 0.08 + breath * 0.1,
+                ),
                 blurRadius: dense ? 6 : 10 + breath * 8,
               ),
             ],
@@ -1719,17 +1834,17 @@ class _StatCard extends StatelessWidget {
             Text(
               value,
               style: AppTypography.title(
-                size: dense ? (featured ? 14 : 13) : (featured ? 18 : 16),
+                size: dense ? (featured ? 14 : 12) : (featured ? 18 : 16),
                 color: featured ? color : a.text,
               ),
             ),
             Text(
               label,
               style: AppTypography.label(
-                size: dense ? 8 : 10,
+                size: 10,
                 weight: FontWeight.w600,
                 letterSpacing: 0.3,
-                color: a.textMuted(0.55),
+                color: a.textFaint,
               ),
             ),
           ],
@@ -1747,22 +1862,6 @@ class _ComboChip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-      decoration: BoxDecoration(
-        color: color.withValues(alpha: 0.2),
-        borderRadius: BorderRadius.circular(AppRadii.pill),
-        border: Border.all(color: color.withValues(alpha: 0.7)),
-      ),
-      child: Text(
-        label,
-        style: AppTypography.label(
-          size: 10,
-          letterSpacing: 1.0,
-          weight: FontWeight.w900,
-          color: color,
-        ),
-      ),
-    );
+    return SoftBadge(text: label, accent: color, textColor: color);
   }
 }

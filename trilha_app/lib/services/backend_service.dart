@@ -886,7 +886,11 @@ class BackendService extends ChangeNotifier {
           lastWalkDate: progress.lastPlayedDate,
           lastSeenDate: today,
           portraitStyle: portraitStyle,
-          extra: {'lastWalk': today},
+          extra: {
+            'lastWalk': progress.lastPlayedDate,
+            'week': _rankingWeekKey(progress, LeagueService.weekKey()),
+            'weekDays': roomWeekDays(progress.playDates),
+          },
         ),
       }, merge: true);
     }
@@ -1140,15 +1144,24 @@ class BackendService extends ChangeNotifier {
     }, SetOptions(merge: true));
   }
 
-  Map<String, dynamic> _roomMemberPayload(String userName, int weeklySteps) {
+  Map<String, dynamic> _roomMemberPayload(
+    String userName,
+    int weeklySteps,
+    String? lastWalkDate,
+    List<String> playDates,
+  ) {
     final today = _todayKey();
     return {
       ..._rankingPayload(
         name: userName,
         score: weeklySteps,
-        lastWalkDate: today,
+        lastWalkDate: lastWalkDate,
         lastSeenDate: today,
-        extra: {'lastWalk': today},
+        extra: {
+          'lastWalk': lastWalkDate,
+          'week': LeagueService.weekKey(),
+          'weekDays': roomWeekDays(playDates),
+        },
       ),
       'joinedAt': FieldValue.serverTimestamp(),
     };
@@ -1159,6 +1172,9 @@ class BackendService extends ChangeNotifier {
     required String name,
     required String userName,
     required int weeklySteps,
+    String? lastWalkDate,
+    List<String> playDates = const [],
+    RoomKind kind = RoomKind.celula,
     int? weeklyGoalSteps,
   }) async {
     if (!isActive) return null;
@@ -1176,6 +1192,7 @@ class BackendService extends ChangeNotifier {
               'name': trimmed,
               'ownerId': _uid,
               'ownerName': userName,
+              'kind': kind.storageKey,
               'createdAt': FieldValue.serverTimestamp(),
               if (weeklyGoalSteps != null && weeklyGoalSteps > 0)
                 'weeklyGoalSteps': weeklyGoalSteps,
@@ -1187,9 +1204,17 @@ class BackendService extends ChangeNotifier {
 
         try {
           await _alignUserWeeklySteps(weeklySteps);
-          await ref.collection('members').doc(_uid).set(
-            _roomMemberPayload(userName, weeklySteps),
-          );
+          await ref
+              .collection('members')
+              .doc(_uid)
+              .set(
+                _roomMemberPayload(
+                  userName,
+                  weeklySteps,
+                  lastWalkDate,
+                  playDates,
+                ),
+              );
         } catch (e) {
           try {
             await ref.delete();
@@ -1204,6 +1229,7 @@ class BackendService extends ChangeNotifier {
           ownerId: _uid!,
           ownerName: userName,
           createdAt: DateTime.now(),
+          kind: kind,
           weeklyGoalSteps: (weeklyGoalSteps != null && weeklyGoalSteps > 0)
               ? weeklyGoalSteps
               : null,
@@ -1234,10 +1260,15 @@ class BackendService extends ChangeNotifier {
   }
 
   /// Entra numa sala pelo código de convite.
+  ///
+  /// Lança [RoomFullException] quando o grupo já tem [kRoomMemberLimit]
+  /// pessoas (quem já é membro sempre volta).
   Future<StudyRoom?> joinRoom({
     required String code,
     required String userName,
     required int weeklySteps,
+    String? lastWalkDate,
+    List<String> playDates = const [],
   }) async {
     if (!isActive) return null;
     final normalized = code.trim().toUpperCase();
@@ -1247,16 +1278,177 @@ class BackendService extends ChangeNotifier {
       final doc = await ref.get();
       if (!doc.exists || doc.data() == null) return null;
 
+      final mine = await ref.collection('members').doc(_uid).get();
+      if (!mine.exists) {
+        final count = await ref.collection('members').count().get();
+        if ((count.count ?? 0) >= kRoomMemberLimit) {
+          throw const RoomFullException();
+        }
+      }
+
       await _alignUserWeeklySteps(weeklySteps);
-      await ref.collection('members').doc(_uid).set(
-        _roomMemberPayload(userName, weeklySteps),
-        SetOptions(merge: true),
-      );
+      await ref
+          .collection('members')
+          .doc(_uid)
+          .set(
+            _roomMemberPayload(userName, weeklySteps, lastWalkDate, playDates),
+            SetOptions(merge: true),
+          );
 
       return StudyRoom.fromMap(normalized, doc.data()!);
+    } on RoomFullException {
+      rethrow;
     } catch (e) {
       debugPrint('Falha ao entrar na sala: $e');
       return null;
+    }
+  }
+
+  /// Dono altera campos do grupo (nome, tipo, estudo, liderança).
+  /// `null` num valor apaga o campo.
+  Future<bool> updateRoom(String code, Map<String, Object?> fields) async {
+    if (!isActive || fields.isEmpty) return false;
+    final normalized = code.trim().toUpperCase();
+    try {
+      await _db.doc('rooms/$normalized').set({
+        for (final e in fields.entries) e.key: e.value ?? FieldValue.delete(),
+        'updatedAt': FieldValue.serverTimestamp(),
+      }, SetOptions(merge: true));
+      return true;
+    } catch (e) {
+      debugPrint('Falha ao atualizar sala: $e');
+      return false;
+    }
+  }
+
+  /// Dono encerra o grupo. Quem abrir depois vê "grupo não encontrado".
+  Future<bool> deleteRoom(String code) async {
+    if (!isActive) return false;
+    final normalized = code.trim().toUpperCase();
+    try {
+      await _db.doc('rooms/$normalized/members/$_uid').delete();
+      await _db.doc('rooms/$normalized').delete();
+      return true;
+    } catch (e) {
+      debugPrint('Falha ao encerrar sala: $e');
+      return false;
+    }
+  }
+
+  /// Marca no próprio membro que o estudo da semana foi feito.
+  Future<bool> markRoomStudyDone(String code, String doneKey) async {
+    if (!isActive) return false;
+    final normalized = code.trim().toUpperCase();
+    try {
+      final ref = _db.doc('rooms/$normalized/members/$_uid');
+      final doc = await ref.get();
+      final data = doc.data();
+      if (!doc.exists || data == null) return false;
+      // A regra do membro exige o placar no mesmo write.
+      final xp = data['xp'] ?? data['steps'] ?? 0;
+      await ref.set({
+        'xp': xp,
+        'steps': xp,
+        'studyDone': doneKey,
+      }, SetOptions(merge: true));
+      return true;
+    } catch (e) {
+      debugPrint('Falha ao marcar estudo da sala: $e');
+      return false;
+    }
+  }
+
+  /// Chama alguém do grupo para estudar. Um chamado por pessoa por dia
+  /// (o doc é por destinatário). Push sai pela function `onRoomNudge`.
+  Future<bool> sendRoomNudge({
+    required String code,
+    required String toUid,
+    required String fromName,
+    required String roomName,
+  }) async {
+    if (!isActive || toUid == _uid) return false;
+    final normalized = code.trim().toUpperCase();
+    final today = _todayKey();
+    try {
+      final ref = _db.doc('rooms/$normalized/nudges/$toUid');
+      final prev = await ref.get();
+      if (prev.exists && prev.data()?['day'] == today) return true;
+      await ref.set({
+        'fromId': _uid,
+        'fromName': fromName.trim().isEmpty ? 'Alguém' : fromName.trim(),
+        'roomName': roomName,
+        'day': today,
+        'at': FieldValue.serverTimestamp(),
+      });
+      return true;
+    } catch (e) {
+      debugPrint('Falha ao chamar membro da sala: $e');
+      return false;
+    }
+  }
+
+  /// Convite dentro do app. O doc é um por pessoa por grupo.
+  /// Push sai pela function `onRoomInvite`.
+  Future<bool> sendRoomInvite({
+    required String code,
+    required String roomName,
+    required RoomKind kind,
+    required String fromName,
+    required String toUid,
+    required String toName,
+    String? toPhotoUrl,
+  }) async {
+    if (!isActive || toUid.isEmpty || toUid == _uid) return false;
+    final normalized = code.trim().toUpperCase();
+    final id = RoomInvite.docId(normalized, toUid);
+    final photo = userPhotoUrl?.trim();
+    try {
+      await _db.doc('roomInvites/$id').set({
+        'roomCode': normalized,
+        'roomName': roomName,
+        'kind': kind.storageKey,
+        'fromUid': _uid,
+        'fromName': fromName.trim().isEmpty ? 'Alguém' : fromName.trim(),
+        'toUid': toUid,
+        'toName': toName.trim().isEmpty ? 'Alguém' : toName.trim(),
+        'participantIds': [_uid, toUid],
+        'status': RoomInviteStatus.pending.name,
+        'createdAt': FieldValue.serverTimestamp(),
+        if (photo != null && photo.isNotEmpty) 'fromPhotoUrl': photo,
+        if (toPhotoUrl != null && toPhotoUrl.trim().isNotEmpty)
+          'toPhotoUrl': toPhotoUrl.trim(),
+      });
+      return true;
+    } catch (e) {
+      debugPrint('Falha ao convidar para a sala: $e');
+      return false;
+    }
+  }
+
+  Future<bool> setRoomInviteStatus(String id, RoomInviteStatus status) async {
+    if (!isActive || id.isEmpty) return false;
+    try {
+      await _db.doc('roomInvites/$id').update({'status': status.name});
+      return true;
+    } catch (e) {
+      debugPrint('Falha ao atualizar convite da sala: $e');
+      return false;
+    }
+  }
+
+  /// Dias (YYYY-MM-DD) em que cada membro já foi chamado hoje.
+  Future<Set<String>> fetchRoomNudgedToday(String code) async {
+    if (!isActive) return const {};
+    final normalized = code.trim().toUpperCase();
+    try {
+      final snap = await _db
+          .collection('rooms/$normalized/nudges')
+          .where('day', isEqualTo: _todayKey())
+          .get();
+      return {for (final d in snap.docs) d.id};
+    } catch (e) {
+      debugPrint('Falha ao ler chamados da sala: $e');
+      return const {};
     }
   }
 
@@ -1282,24 +1474,64 @@ class BackendService extends ChangeNotifier {
           .orderBy('xp', descending: true)
           .limit(50)
           .get();
-      return [
+      final week = LeagueService.weekKey();
+      final members = [
         for (final d in snap.docs)
           RoomMember(
             uid: d.id,
             name: (d.data()['name'] as String?)?.trim().isNotEmpty == true
                 ? d.data()['name'] as String
                 : 'Aprendiz',
-            steps: (d.data()['xp'] as num?)?.toInt() ?? 0,
+            steps: _roomWeekSteps(d.data(), week),
             isUser: d.id == _uid,
-            lastWalk: d.data()['lastWalk'] as String?,
+            lastWalk:
+                (d.data()['lastWalkDate'] as String?) ??
+                d.data()['lastWalk'] as String?,
             photoUrl: _readPhotoUrl(d.data()),
             portraitStyle: _readPortraitStyle(d.data()) ?? PortraitStyle.photo,
+            studyDone: d.data()['studyDone'] as String?,
+            weekDays: _readWeekDays(d.data(), week),
           ),
       ];
+      members.sort((a, b) => b.steps.compareTo(a.steps));
+      return members;
     } catch (e) {
       debugPrint('Falha ao buscar membros da sala: $e');
       return const [];
     }
+  }
+
+  /// Dias (1 = seg … 7 = dom) em que o membro estudou nesta semana.
+  /// Doc antigo, sem o campo: conta ao menos o dia da última caminhada.
+  List<int> _readWeekDays(Map<String, dynamic> data, String week) {
+    if (data['week'] != null && data['week'] != week) return const [];
+    final raw = data['weekDays'];
+    if (raw is List) {
+      return [
+        for (final v in raw)
+          if (v is num && v >= 1 && v <= 7) v.toInt(),
+      ];
+    }
+    final last =
+        (data['lastWalkDate'] as String?) ?? (data['lastWalk'] as String?);
+    if (last == null || last.length < 10) return const [];
+    final d = DateTime.tryParse(last.substring(0, 10));
+    if (d == null || last.substring(0, 10).compareTo(week) < 0) {
+      return const [];
+    }
+    return [d.weekday];
+  }
+
+  /// Passos da semana corrente. Quem não abriu o app na semana nova ainda
+  /// tem o placar da anterior gravado — conta como zero.
+  int _roomWeekSteps(Map<String, dynamic> data, String week) {
+    final xp = (data['xp'] as num?)?.toInt() ?? 0;
+    final memberWeek = data['week'] as String?;
+    if (memberWeek != null) return memberWeek == week ? xp : 0;
+    final last =
+        (data['lastWalkDate'] as String?) ?? (data['lastWalk'] as String?);
+    if (last == null || last.length < 10) return 0;
+    return last.substring(0, 10).compareTo(week) >= 0 ? xp : 0;
   }
 
   Future<bool> leaveRoom(String code) async {
@@ -2192,4 +2424,23 @@ class BackendService extends ChangeNotifier {
     unawaited(_authSub?.cancel());
     super.dispose();
   }
+}
+
+/// Grupo cheio ([kRoomMemberLimit] pessoas).
+class RoomFullException implements Exception {
+  const RoomFullException();
+}
+
+/// Dias da semana corrente (1 = seg … 7 = dom) presentes em [playDates].
+List<int> roomWeekDays(List<String> playDates, [DateTime? now]) {
+  final week = LeagueService.weekKey(now);
+  final days = <int>{};
+  for (final raw in playDates) {
+    if (raw.length < 10) continue;
+    final key = raw.substring(0, 10);
+    if (key.compareTo(week) < 0) continue;
+    final d = DateTime.tryParse(key);
+    if (d != null) days.add(d.weekday);
+  }
+  return days.toList()..sort();
 }

@@ -49,6 +49,15 @@ class AppColors {
   static const iceDeep = Color(0xFF0E2E3C);
 
   static const error = Color(0xFFFF4F63);
+
+  /// Poeira — quem está parado há dias (dupla, semente, aceno).
+  static const dust = Color(0xFFC4A070);
+
+  /// Sombra projetada de palco (cartas, faixas de versículo).
+  static const dropShadow = Color(0x59000000);
+
+  /// Véu atrás de sheets e diálogos — o mesmo em todo o app.
+  static const scrim = Color(0x9E000000);
   static const errorSoft = Color(0xFFFFC4CC);
 
   /// Ouro, coral e orquídea — chrome de modo, sem misturar branco no glifo.

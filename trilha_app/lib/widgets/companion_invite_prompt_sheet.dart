@@ -8,7 +8,7 @@ import '../services/companion_service.dart';
 import '../services/invite_deep_link_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
-import '../utils/appearance.dart';
+import 'app_sheet.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
 
@@ -19,10 +19,8 @@ Future<String?> showCompanionInvitePromptSheet(
   String? tomorrowTitle,
 }) {
   final progress = context.read<ProgressService>();
-  return showModalBottomSheet<String?>(
-    context: context,
-    isScrollControlled: true,
-    backgroundColor: Colors.transparent,
+  return showAppSheet<String?>(
+    context,
     isDismissible: true,
     builder: (_) => _CompanionInvitePromptSheet(tomorrowTitle: tomorrowTitle),
   ).whenComplete(() {
@@ -53,7 +51,6 @@ class _CompanionInvitePromptSheetState
   Future<void> _invite() async {
     if (_busy) return;
     setState(() => _busy = true);
-    HapticFeedback.mediumImpact();
     final progress = context.read<ProgressService>();
     final companions = context.read<CompanionService>();
     await progress.markCompanionInviteOffered();
@@ -79,55 +76,27 @@ class _CompanionInvitePromptSheetState
 
   @override
   Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final bottom = MediaQuery.paddingOf(context).bottom;
     final scene = widget.tomorrowTitle?.trim() ?? '';
     final body = scene.isEmpty
         ? 'Um amigo. Fechem os 7 dias da semana juntos — os dois ganham +${WalkCompanion.weekTogetherBonusSteps} na caravana.'
-        : 'Amanhã: $scene. Chama alguém para chegar junto.';
+        : 'Amanhã: $scene. Chame alguém para chegar junto.';
 
-    return Container(
-      margin: const EdgeInsets.fromLTRB(12, 0, 12, 12),
-      padding: EdgeInsets.fromLTRB(20, 18, 20, 16 + bottom),
-      decoration: BoxDecoration(
-        color: a.cardFill,
-        borderRadius: BorderRadius.circular(AppRadii.lg),
-        border: Border.all(color: a.cardBorder),
-        boxShadow: AppTheme.cardShadow(elevated: true),
-      ),
+    return AppSheetPanel(
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          const CinematicIcon(
-            glyph: CinematicGlyph.people,
-            size: 56,
-            accent: AppColors.accent,
-            glowing: true,
-          ),
-          const SizedBox(height: 14),
-          Text(
-            'COMPANHIA',
-            style: AppTypography.label(
-              letterSpacing: 1.5,
-              color: AppColors.accent.withValues(alpha: 0.85),
+          AppSheetHeader(
+            leading: const CinematicIcon(
+              glyph: CinematicGlyph.people,
+              size: 56,
+              accent: AppColors.accent,
+              glowing: true,
             ),
-          ),
-          const SizedBox(height: 6),
-          Text(
-            'Chame alguém para caminhar',
-            textAlign: TextAlign.center,
-            style: AppTypography.title(size: 20, color: a.text),
-          ),
-          const SizedBox(height: 8),
-          Text(
-            body,
-            textAlign: TextAlign.center,
-            style: AppTypography.body(
-              size: 14,
-              height: 1.4,
-              weight: FontWeight.w600,
-              color: a.textMuted(0.72),
-            ),
+            eyebrow: 'Companhia',
+            eyebrowColor: AppColors.accent.withValues(alpha: 0.85),
+            title: 'Chame alguém para caminhar',
+            subtitle: body,
+            center: true,
           ),
           const SizedBox(height: 20),
           CopperCta(
@@ -137,15 +106,10 @@ class _CompanionInvitePromptSheetState
             busy: _busy,
           ),
           const SizedBox(height: 8),
-          TextButton(
-            onPressed: _busy ? null : _dismiss,
-            child: Text(
-              'Agora não',
-              style: AppTypography.body(
-                weight: FontWeight.w700,
-                color: a.textMuted(0.55),
-              ),
-            ),
+          GhostCta(
+            label: 'Agora não',
+            expanded: true,
+            onTap: _busy ? null : _dismiss,
           ),
         ],
       ),

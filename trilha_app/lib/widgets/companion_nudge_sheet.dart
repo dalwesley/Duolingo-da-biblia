@@ -3,13 +3,15 @@ import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
 import '../models/walk_companion.dart';
 import '../services/companion_service.dart';
 import '../theme/app_theme.dart';
+import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
+import 'act_feel.dart';
+import 'app_sheet.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
 import 'hero_card_atmosphere.dart';
@@ -21,10 +23,8 @@ Future<void> showCompanionNudgeSheet(
   required WalkCompanion companion,
   required String myName,
 }) {
-  return showModalBottomSheet<void>(
-    context: context,
-    isScrollControlled: true,
-    backgroundColor: Colors.transparent,
+  return showAppSheet<void>(
+    context,
     builder: (_) => _CompanionNudgeSheet(companion: companion, myName: myName),
   );
 }
@@ -101,7 +101,6 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
     final companion = context.read<CompanionService>();
     if (live.iNudgedToday) return;
     setState(() => _sending = true);
-    HapticFeedback.mediumImpact();
     final ok = await companion.sendNudge(
       code: widget.companion.code,
       fromName: widget.myName,
@@ -133,7 +132,6 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
   Future<void> _shareWhatsApp() async {
     if (_sending || _sharing) return;
     setState(() => _sharing = true);
-    HapticFeedback.lightImpact();
     final text = widget.companion.nudgeShareText();
     XFile? imageFile;
     try {
@@ -166,7 +164,6 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
 
   @override
   Widget build(BuildContext context) {
-    final bottom = MediaQuery.viewPaddingOf(context).bottom;
     final live = _resolve(watch: true);
     final presets = live.nudgePresets;
     final already = live.iNudgedToday;
@@ -189,70 +186,32 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
             ),
           ),
         ),
-        Container(
-          margin: const EdgeInsets.fromLTRB(
-            AppSpace.md,
-            0,
-            AppSpace.md,
-            AppSpace.md,
-          ),
-          padding: EdgeInsets.fromLTRB(
+        AppSheetPanel(
+          tint: AppColors.accent,
+          padding: const EdgeInsets.fromLTRB(
             AppSpace.lg,
-            12,
+            AppSpace.md,
             AppSpace.lg,
-            14 + bottom,
-          ),
-          decoration: BoxDecoration(
-            color: AppColors.night,
-            borderRadius: BorderRadius.circular(AppRadii.xl),
-            border: Border.all(color: AppColors.accent.withValues(alpha: 0.55)),
+            14,
           ),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              Center(
-                child: Container(
-                  width: 40,
-                  height: 4,
-                  decoration: BoxDecoration(
-                    color: Colors.white.withValues(alpha: 0.2),
-                    borderRadius: BorderRadius.circular(AppRadii.pill),
-                  ),
-                ),
-              ),
-              const SizedBox(height: 16),
-              const Center(
-                child: CinematicIcon(
+              AppSheetHeader(
+                leading: const CinematicIcon(
                   glyph: CinematicGlyph.heart,
                   size: 44,
                   accent: AppColors.accent,
                   glowing: true,
                 ),
-              ),
-              const SizedBox(height: 12),
-              Text(
-                'Animar $_them',
-                textAlign: TextAlign.center,
-                style: AppTypography.display(
-                  size: 22,
-                  weight: FontWeight.w700,
-                  color: Colors.white,
-                ),
-              ),
-              const SizedBox(height: 6),
-              Text(
-                already
-                    ? 'Você já acenou hoje. Manda também no WhatsApp, se quiser.'
+                title: 'Acenar para $_them',
+                subtitle: already
+                    ? 'Você já acenou hoje. Mande também no WhatsApp, se quiser.'
                     : canSendApp
                     ? 'Um aceno na trilha — $_them vê ao abrir o Stway.'
-                    : 'Entre na conta para acenar no app, ou manda no WhatsApp.',
-                textAlign: TextAlign.center,
-                style: AppTypography.body(
-                  size: 13,
-                  height: 1.35,
-                  color: Colors.white.withValues(alpha: 0.6),
-                ),
+                    : 'Entre na conta para acenar no app, ou mande no WhatsApp.',
+                center: true,
               ),
               if (!already) ...[
                 const SizedBox(height: 16),
@@ -268,7 +227,7 @@ class _CompanionNudgeSheetState extends State<_CompanionNudgeSheet> {
                         onTap: busy
                             ? null
                             : () {
-                                HapticFeedback.selectionClick();
+                                ActHaptics.tap();
                                 setState(() => _presetIndex = i);
                               },
                       ),
@@ -333,36 +292,13 @@ class _NudgePresetChip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
-      color: Colors.transparent,
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(AppRadii.pill),
-        child: Ink(
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-          decoration: BoxDecoration(
-            color: selected
-                ? AppColors.accent.withValues(alpha: 0.18)
-                : Colors.white.withValues(alpha: 0.06),
-            borderRadius: BorderRadius.circular(AppRadii.pill),
-            border: Border.all(
-              color: selected
-                  ? AppColors.accent.withValues(alpha: 0.85)
-                  : Colors.white.withValues(alpha: 0.12),
-            ),
-          ),
-          child: Text(
-            label,
-            style: AppTypography.body(
-              size: 12,
-              weight: FontWeight.w800,
-              color: selected
-                  ? AppColors.accent
-                  : Colors.white.withValues(alpha: 0.82),
-            ),
-          ),
-        ),
-      ),
+    return AppSelectChip(
+      label: label,
+      selected: selected,
+      onTap: onTap,
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+      fontSize: 12,
+      unselectedColor: Appearance.of(context).textSecondary,
     );
   }
 }
@@ -439,7 +375,7 @@ class CompanionNudgeShareCard extends StatelessWidget {
                   shape: BoxShape.circle,
                   gradient: RadialGradient(
                     colors: [
-                      const Color(0xFFC4A070).withValues(alpha: 0.22),
+                      AppColors.dust.withValues(alpha: 0.22),
                       Colors.transparent,
                     ],
                   ),
@@ -476,19 +412,13 @@ class CompanionNudgeShareCard extends StatelessWidget {
                             color: Colors.black.withValues(alpha: 0.35),
                             borderRadius: BorderRadius.circular(AppRadii.pill),
                             border: Border.all(
-                              color: const Color(
-                                0xFFC4A070,
-                              ).withValues(alpha: 0.45),
+                              color: AppColors.dust.withValues(alpha: 0.45),
                             ),
                           ),
-                          child: Text(
-                            days == 1 ? '1 DIA FORA' : '$days DIAS FORA',
-                            style: AppTypography.label(
-                              size: 10,
-                              letterSpacing: 0.8,
-                              weight: FontWeight.w900,
-                              color: const Color(0xFFE8C48A),
-                            ),
+                          child: SectionLabel(
+                            days == 1 ? '1 dia fora' : '$days dias fora',
+                            size: 10,
+                            color: const Color(0xFFE8C48A),
                           ),
                         ),
                     ],
@@ -504,9 +434,7 @@ class CompanionNudgeShareCard extends StatelessWidget {
                         shape: BoxShape.circle,
                         color: const Color(0xFF2A1A0C),
                         border: Border.all(
-                          color: const Color(
-                            0xFFC4A070,
-                          ).withValues(alpha: 0.55),
+                          color: AppColors.dust.withValues(alpha: 0.55),
                           width: 2,
                         ),
                         boxShadow: [
@@ -542,7 +470,9 @@ class CompanionNudgeShareCard extends StatelessWidget {
                               width: compact ? 36 : 44,
                               height: compact ? 28 : 34,
                               decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(20),
+                                borderRadius: BorderRadius.circular(
+                                  AppRadii.xl,
+                                ),
                                 color: const Color(
                                   0xFF8B6914,
                                 ).withValues(alpha: 0.35),
@@ -557,28 +487,20 @@ class CompanionNudgeShareCard extends StatelessWidget {
                   Text(
                     them,
                     style: AppTypography.title(
-                      size: compact ? 18 : 22,
+                      size: compact ? 18 : 20,
                       weight: FontWeight.w900,
                       color: Colors.white.withValues(alpha: 0.92),
                     ),
                   ),
                   const SizedBox(height: 4),
-                  Text(
-                    'NA POEIRA',
-                    style: AppTypography.label(
-                      size: 11,
-                      letterSpacing: 1.6,
-                      weight: FontWeight.w900,
-                      color: const Color(0xFFE8C48A),
-                    ),
-                  ),
+                  const SectionLabel('Na poeira', color: Color(0xFFE8C48A)),
                   const Spacer(),
                   Text(
                     headline,
                     textAlign: TextAlign.center,
                     style:
                         AppTypography.display(
-                          size: compact ? 24 : 30,
+                          size: compact ? 24 : 28,
                           weight: FontWeight.w800,
                           color: Colors.white,
                         ).copyWith(
@@ -597,7 +519,7 @@ class CompanionNudgeShareCard extends StatelessWidget {
                     insight,
                     textAlign: TextAlign.center,
                     style: AppTypography.body(
-                      size: compact ? 13 : 15,
+                      size: compact ? 13 : 14,
                       weight: FontWeight.w600,
                       color: Colors.white.withValues(alpha: 0.72),
                     ),
@@ -672,7 +594,7 @@ class CompanionNudgeShareCard extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(AppRadii.lg),
                   border: Border.all(
-                    color: const Color(0xFFC4A070).withValues(alpha: 0.5),
+                    color: AppColors.dust.withValues(alpha: 0.5),
                     width: 1.5,
                   ),
                 ),

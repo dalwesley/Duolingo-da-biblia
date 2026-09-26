@@ -147,6 +147,159 @@ exports.onRecognition = functions.firestore
     }
   });
 
+/** Mesmo teto do app (`kRoomMemberLimit`). */
+const ROOM_MEMBER_LIMIT = 20;
+
+/**
+ * O app confere o teto antes de entrar, mas duas entradas ao mesmo tempo
+ * passam. Aqui quem chegou depois do 20º sai da lista.
+ */
+exports.onRoomMemberCreate = functions.firestore
+  .document('rooms/{code}/members/{uid}')
+  .onCreate(async (snap, context) => {
+    const { code, uid } = context.params;
+    const db = getFirestore();
+    const room = await db.doc(`rooms/${code}`).get();
+    if (!room.exists) return;
+    if (room.data()?.ownerId === uid) return;
+
+    const members = await db.collection(`rooms/${code}/members`).get();
+    if (members.size <= ROOM_MEMBER_LIMIT) return;
+
+    // Nem todo doc tem joinedAt (o save de progresso grava sem ele).
+    const ownerId = room.data()?.ownerId;
+    const byArrival = members.docs
+      .filter((d) => d.id !== ownerId)
+      .sort((a, b) => a.createTime.toMillis() - b.createTime.toMillis());
+    const allowed = new Set(
+      byArrival.slice(0, ROOM_MEMBER_LIMIT - 1).map((d) => d.id),
+    );
+    if (allowed.has(uid)) return;
+    await snap.ref.delete();
+    logger.info('grupo cheio, membro removido', { code, uid });
+  });
+
+/**
+ * Alguém do grupo chamou outra pessoa para estudar.
+ * O corpo não usa texto livre do remetente.
+ */
+exports.onRoomNudge = functions.firestore
+  .document('rooms/{code}/nudges/{toId}')
+  .onWrite(async (change, context) => {
+    const after = change.after.exists ? change.after.data() : null;
+    if (!after) return;
+    const before = change.before.exists ? change.before.data() : null;
+    if (before && before.day === after.day) return;
+
+    const { toId } = context.params;
+    const fromId = (after.fromId || '').trim();
+    if (!fromId || fromId === toId) return;
+
+    const db = getFirestore();
+    const userSnap = await db.doc(`users/${toId}`).get();
+    const token = userSnap.data()?.fcmToken;
+    if (!token || typeof token !== 'string') {
+      logger.info('chamado do grupo sem token FCM', { toId });
+      return;
+    }
+
+    const fromName = (after.fromName || 'Alguém').trim().split(/\s+/)[0] || 'Alguém';
+    const roomName = clip(after.roomName || 'seu grupo', 40) || 'seu grupo';
+
+    try {
+      await getMessaging().send({
+        token,
+        notification: {
+          title: `${fromName} chamou você`,
+          body: `O grupo ${roomName} está estudando. Vem junto.`,
+        },
+        data: {
+          action: 'home',
+          type: 'grupo',
+        },
+        android: {
+          priority: 'high',
+          notification: {
+            channelId: 'trilha_habits',
+            sound: 'default',
+          },
+        },
+        apns: {
+          payload: {
+            aps: {
+              sound: 'default',
+            },
+          },
+        },
+      });
+      logger.info('push de chamado do grupo enviado', {
+        toId,
+        code: context.params.code,
+      });
+    } catch (err) {
+      logger.error('falha no push de chamado do grupo', err);
+    }
+  });
+
+/**
+ * Convite de grupo dentro do app. Só avisa quando o status vira pending
+ * (convite novo ou reenvio depois de uma recusa).
+ */
+exports.onRoomInvite = functions.firestore
+  .document('roomInvites/{id}')
+  .onWrite(async (change) => {
+    const after = change.after.exists ? change.after.data() : null;
+    if (!after || after.status !== 'pending') return;
+    const before = change.before.exists ? change.before.data() : null;
+    if (before && before.status === 'pending') return;
+
+    const toId = (after.toUid || '').trim();
+    const fromId = (after.fromUid || '').trim();
+    if (!toId || !fromId || toId === fromId) return;
+
+    const db = getFirestore();
+    const userSnap = await db.doc(`users/${toId}`).get();
+    const token = userSnap.data()?.fcmToken;
+    if (!token || typeof token !== 'string') {
+      logger.info('convite de grupo sem token FCM', { toId });
+      return;
+    }
+
+    const fromName = (after.fromName || 'Alguém').trim().split(/\s+/)[0] || 'Alguém';
+    const roomName = clip(after.roomName || 'um grupo', 40) || 'um grupo';
+
+    try {
+      await getMessaging().send({
+        token,
+        notification: {
+          title: `${fromName} te chamou`,
+          body: `Entra no grupo ${roomName}. O convite está em Juntos.`,
+        },
+        data: {
+          action: 'league',
+          type: 'grupo-convite',
+        },
+        android: {
+          priority: 'high',
+          notification: {
+            channelId: 'trilha_habits',
+            sound: 'default',
+          },
+        },
+        apns: {
+          payload: {
+            aps: {
+              sound: 'default',
+            },
+          },
+        },
+      });
+      logger.info('push de convite de grupo enviado', { toId, id: change.after.id });
+    } catch (err) {
+      logger.error('falha no push de convite de grupo', err);
+    }
+  });
+
 const SITE_ORIGINS = new Set([
   'https://stway.com.br',
   'https://www.stway.com.br',

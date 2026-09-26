@@ -17,7 +17,7 @@ class EntryTrails {
   static const _anxiety = Trail(
     slug: 'ansiedade',
     title: 'Ansiedade',
-    description: 'Cinco missões para lançar o amanhã no Pai — e seguir no cânon.',
+    description: 'Cinco cenas para lançar o amanhã no Pai — e seguir no cânon.',
     icon: '🌊',
     order: 0,
     comingSoon: false,
@@ -117,7 +117,7 @@ class EntryTrails {
   static const _restart = Trail(
     slug: 'recomeco',
     title: 'Recomeço',
-    description: 'Cinco missões da queda ao chamado — e de volta a Gênesis 1–11.',
+    description: 'Cinco cenas da queda ao chamado — e de volta a Gênesis 1–11.',
     icon: '🌱',
     order: 1,
     comingSoon: false,

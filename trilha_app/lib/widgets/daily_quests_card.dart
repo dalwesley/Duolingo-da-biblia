@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import '../models/daily_quest.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import 'act_feel.dart';
 import 'cinematic_icon.dart';
 import 'immersive_background.dart';
 import 'ui_primitives.dart';
@@ -27,16 +27,29 @@ class DailyQuestsCard extends StatelessWidget {
         )
         .length;
 
+    // Fundo próprio + sombra: também abre numa folha transparente.
     return GlassCard(
-      padding: AppMetrics.cardPaddingCompact,
+      padding: AppMetrics.cardPadding,
+      elevated: true,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           CardHeader(
             label: 'Gestos de hoje',
+            glyph: CinematicGlyph.target,
+            accent: AppColors.teal,
             trailing: CountBadge('$doneCount/${quests.length}'),
           ),
-          const SizedBox(height: 8),
+          const SizedBox(height: AppSpace.xs),
+          Text(
+            'Passos extras além da cena.',
+            style: AppTypography.body(
+              size: 12,
+              weight: FontWeight.w600,
+              color: Appearance.of(context).textSecondary,
+            ),
+          ),
+          const SizedBox(height: AppSpace.sm),
           for (var i = 0; i < quests.length; i++) ...[
             if (i > 0) const SizedBox(height: 2),
             _QuestRow(quest: quests[i], progress: progress, onTap: onQuestTap),
@@ -69,19 +82,22 @@ class _QuestRow extends StatelessWidget {
       child: InkWell(
         onTap: canTap
             ? () {
-                HapticFeedback.selectionClick();
+                ActHaptics.tap();
                 onTap!(q);
               }
             : null,
         borderRadius: BorderRadius.circular(AppRadii.sm),
         child: Padding(
-          padding: const EdgeInsets.symmetric(vertical: AppSpace.sm),
+          padding: const EdgeInsets.symmetric(
+            vertical: AppSpace.sm,
+            horizontal: AppSpace.xs,
+          ),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               CinematicIcon(
                 glyph: CinematicGlyphResolver.forQuest(q.id),
-                size: 32,
+                size: AppMetrics.leadingIcon,
                 accent: tone,
                 glowing: false,
               ),
@@ -93,8 +109,8 @@ class _QuestRow extends StatelessWidget {
                     Text(
                       q.title,
                       style: AppTypography.title(
-                        size: 15,
-                        color: a.text.withValues(alpha: done ? 0.45 : 0.98),
+                        size: 14,
+                        color: done ? a.textFaint : a.text,
                       ),
                     ),
                     const SizedBox(height: 3),
@@ -105,7 +121,7 @@ class _QuestRow extends StatelessWidget {
                       style: AppTypography.body(
                         size: 12,
                         weight: FontWeight.w700,
-                        color: done ? tone : a.textMuted(0.55),
+                        color: done ? tone : a.textFaint,
                       ),
                     ),
                   ],

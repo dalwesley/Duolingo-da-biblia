@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import '../models/walk_companion.dart';
 import '../theme/app_theme.dart';
+import '../utils/appearance.dart';
+import 'act_feel.dart';
+import 'app_sheet.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
 import 'confetti_overlay.dart';
@@ -11,11 +13,9 @@ Future<void> showCompanionFormedSheet(
   BuildContext context, {
   String? partnerName,
 }) {
-  HapticFeedback.mediumImpact();
-  return showModalBottomSheet<void>(
-    context: context,
-    backgroundColor: Colors.transparent,
-    isScrollControlled: true,
+  ActHaptics.confirm();
+  return showAppSheet<void>(
+    context,
     builder: (ctx) => _CompanionFormedSheet(partnerName: partnerName),
   );
 }
@@ -27,84 +27,56 @@ class _CompanionFormedSheet extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final bottom = MediaQuery.viewPaddingOf(context).bottom;
+    final a = Appearance.of(context);
     final name = partnerName?.trim();
     final hasName = name != null && name.isNotEmpty && name != 'Companheiro';
 
-    return Container(
-      margin: const EdgeInsets.fromLTRB(AppSpace.md, 0, AppSpace.md, AppSpace.md),
-      decoration: BoxDecoration(
-        color: AppColors.night,
-        borderRadius: BorderRadius.circular(AppRadii.xl),
-        border: Border.all(color: AppColors.accent.withValues(alpha: 0.7)),
+    return AppSheetPanel(
+      tint: AppColors.accent,
+      background: const ConfettiOverlay(active: true, cinematic: true),
+      padding: const EdgeInsets.fromLTRB(
+        AppSpace.xxl,
+        AppSpace.screen + 8,
+        AppSpace.xxl,
+        AppSpace.screen,
       ),
-      clipBehavior: Clip.antiAlias,
-      child: Stack(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          const Positioned.fill(
-            child: ConfettiOverlay(active: true, cinematic: true),
+          const SizedBox(height: 12),
+          const Center(
+            child: CinematicIcon(
+              glyph: CinematicGlyph.people,
+              size: 56,
+              accent: AppColors.accent,
+              glowing: true,
+            ),
           ),
-          Padding(
-            padding: EdgeInsets.fromLTRB(
-              AppSpace.xxl,
-              AppSpace.screen + 8,
-              AppSpace.xxl,
-              AppSpace.screen + bottom,
+          const SizedBox(height: 20),
+          const AppSheetHeader(
+            title: 'Companhia formada',
+            center: true,
+            celebration: true,
+          ),
+          const SizedBox(height: 10),
+          Text(
+            hasName
+                ? 'Agora você e $name caminham juntos.\nFechem os 7 dias da semana: +${WalkCompanion.weekTogetherBonusSteps} na caravana para os dois.'
+                : 'Vocês caminham juntos agora.\nFechem os 7 dias da semana: +${WalkCompanion.weekTogetherBonusSteps} na caravana para os dois.',
+            textAlign: TextAlign.center,
+            style: AppTypography.body(
+              size: 14,
+              height: 1.45,
+              color: a.textSecondary,
             ),
-            child: Column(
-              mainAxisSize: MainAxisSize.min,
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Center(
-                  child: Container(
-                    width: 40,
-                    height: 4,
-                    decoration: BoxDecoration(
-                      color: Colors.white.withValues(alpha: 0.2),
-                      borderRadius: BorderRadius.circular(AppRadii.pill),
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 28),
-                const Center(
-                  child: CinematicIcon(
-                    glyph: CinematicGlyph.people,
-                    size: 56,
-                    accent: AppColors.accent,
-                    glowing: true,
-                  ),
-                ),
-                const SizedBox(height: 20),
-                Text(
-                  'Companhia formada',
-                  textAlign: TextAlign.center,
-                  style: AppTypography.display(
-                    size: 28,
-                    weight: FontWeight.w800,
-                    color: Colors.white,
-                  ),
-                ),
-                const SizedBox(height: 10),
-                Text(
-                  hasName
-                      ? 'Agora você e $name caminham juntos.\nFechem os 7 dias da semana: +${WalkCompanion.weekTogetherBonusSteps} na caravana para os dois.'
-                      : 'Vocês caminham juntos agora.\nFechem os 7 dias da semana: +${WalkCompanion.weekTogetherBonusSteps} na caravana para os dois.',
-                  textAlign: TextAlign.center,
-                  style: AppTypography.body(
-                    size: 14,
-                    height: 1.45,
-                    color: Colors.white.withValues(alpha: 0.7),
-                  ),
-                ),
-                const SizedBox(height: 28),
-                CopperCta(
-                  label: 'Andar juntos',
-                  onTap: () => Navigator.pop(context),
-                  trailing: null,
-                  dense: true,
-                ),
-              ],
-            ),
+          ),
+          const SizedBox(height: 28),
+          CopperCta(
+            label: 'Andar juntos',
+            onTap: () => Navigator.pop(context),
+            trailing: null,
+            dense: true,
           ),
         ],
       ),

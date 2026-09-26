@@ -13,16 +13,16 @@ import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
-import '../widgets/living_seed_card.dart';
 import '../widgets/milestone_chests.dart';
 import '../widgets/pilgrim_identity_card.dart';
 import '../widgets/pilgrim_profile_sections.dart';
+import '../widgets/profile_privacy.dart';
 import '../widgets/portrait_picker_sheet.dart';
+import '../widgets/profile_hero.dart';
 import '../widgets/reflection_journal_card.dart';
 import '../widgets/relic_panel.dart';
 import '../widgets/recognition_history_sheet.dart';
-import '../widgets/top_bar.dart';
-import '../services/recognition_service.dart';
+import '../widgets/ui_primitives.dart';
 import 'bible_screen.dart';
 import 'settings_screen.dart';
 
@@ -40,18 +40,7 @@ void openMeProfile(BuildContext context) {
           backgroundColor: Colors.transparent,
           body: ImmersiveBackground(
             appearance: appearance,
-            child: MeScreen(
-              topBar: TopBar(
-                inline: true,
-                immersive: true,
-                dark: appearance.onDark,
-                title: 'Perfil',
-                subtitle: 'Sua caminhada',
-                onBack: () => Navigator.pop(ctx),
-                leadingGlyph: CinematicGlyph.humanity,
-                chromeAccent: AppColors.orchid,
-              ),
-            ),
+            child: MeScreen(onBack: () => Navigator.pop(ctx)),
           ),
         ),
       ),
@@ -63,7 +52,11 @@ void openMeProfile(BuildContext context) {
 class MeScreen extends StatefulWidget {
   final Widget? topBar;
 
-  const MeScreen({super.key, this.topBar});
+  /// Com [onBack], o perfil abre com o topo cinematográfico ([ProfileHero])
+  /// no lugar da barra + cartão de identidade.
+  final VoidCallback? onBack;
+
+  const MeScreen({super.key, this.topBar, this.onBack});
 
   @override
   State<MeScreen> createState() => _MeScreenState();
@@ -117,13 +110,18 @@ class _MeScreenState extends State<MeScreen> {
 
   void _openCaravanPrivacySettings() => openSettings(context);
 
+  /// Volta à trilha (home) — o perfil é aberto por cima do shell.
+  void _backToTrail() =>
+      Navigator.of(context).popUntil((route) => route.isFirst);
+
   @override
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
     final backend = context.watch<BackendService>();
     final record = context.watch<CornerService>().record;
     final profile = _caravanProfile;
-    final accuracy = profile?.accuracyPercent ??
+    final accuracy =
+        profile?.accuracyPercent ??
         (progress.lifetimeQuestionsAnswered > 0
             ? ((progress.lifetimeQuestionsCorrect /
                           progress.lifetimeQuestionsAnswered) *
@@ -132,127 +130,180 @@ class _MeScreenState extends State<MeScreen> {
                   .clamp(0, 100)
             : null);
 
+    final hero = widget.onBack != null;
+    String? epithet;
+    Color? epithetColor;
+    if (_overallRank > 0) {
+      epithet = _overallRank <= 3
+          ? pilgrimRankEpithet(_overallRank)
+          : '$_overallRankº na caravana';
+      if (_overallRank <= 3) epithetColor = pilgrimRankAccent(_overallRank);
+    }
+    final leaderDays =
+        profile?.daysAsCaravanLeader ?? progress.daysAsCaravanLeader;
+    if (leaderDays > 0) {
+      final top = leaderDays == 1
+          ? '1 dia no topo'
+          : '$leaderDays dias no topo';
+      epithet = epithet == null ? top : '$epithet · $top';
+    }
+    if (!record.isEmpty) {
+      epithet = epithet == null ? record.line : '$epithet · ${record.line}';
+    }
+
+    Widget pad(Widget child) => Padding(
+      padding: const EdgeInsets.symmetric(horizontal: AppSpace.screen),
+      child: child,
+    );
+
     final body = <Widget>[
-      PilgrimIdentityCard(
-        name: progress.userName,
-        photoUrl: backend.userPhotoUrl,
-        seed: backend.uid,
-        style: progress.settings.portraitStyle,
-        editable: true,
-        onEditPortrait: () => showPortraitPickerSheet(context),
-        steps: progress.steps,
-        missions: progress.completedMissions.length,
-        accuracyPercent: accuracy,
-        accuracyCorrect:
-            profile?.lifetimeQuestionsCorrect ??
-            progress.lifetimeQuestionsCorrect,
-        accuracyTotal:
-            profile?.lifetimeQuestionsAnswered ??
-            progress.lifetimeQuestionsAnswered,
-        rank: _overallRank,
-        leaderDays:
-            profile?.daysAsCaravanLeader ?? progress.daysAsCaravanLeader,
-        recordLine: record.isEmpty ? null : record.line,
+      if (hero)
+        ProfileHero(
+          name: progress.userName,
+          photoUrl: backend.userPhotoUrl,
+          seed: backend.uid,
+          style: progress.settings.portraitStyle,
+          onEditPortrait: () => showPortraitPickerSheet(context),
+          onBack: widget.onBack,
+          onSettings: () => openSettings(context),
+          epithet: epithet,
+          epithetColor: epithetColor,
+          sinceLabel: ProfileHero.sinceFrom(
+            progress.firstLessonDate ?? progress.firstOpenDate,
+          ),
+          steps: progress.steps,
+          missions: progress.completedMissions.length,
+          accuracyPercent: accuracy,
+        )
+      else
+        pad(
+          PilgrimIdentityCard(
+            name: progress.userName,
+            photoUrl: backend.userPhotoUrl,
+            seed: backend.uid,
+            style: progress.settings.portraitStyle,
+            editable: true,
+            onEditPortrait: () => showPortraitPickerSheet(context),
+            steps: progress.steps,
+            missions: progress.completedMissions.length,
+            accuracyPercent: accuracy,
+            accuracyCorrect:
+                profile?.lifetimeQuestionsCorrect ??
+                progress.lifetimeQuestionsCorrect,
+            accuracyTotal:
+                profile?.lifetimeQuestionsAnswered ??
+                progress.lifetimeQuestionsAnswered,
+            rank: _overallRank,
+            leaderDays: leaderDays,
+            recordLine: record.isEmpty ? null : record.line,
+          ),
+        ),
+      const SizedBox(height: AppSpace.section),
+      pad(
+        ConstancyCard(
+          playDates: progress.playDates,
+          streak: progress.streak,
+          goal: progress.settings.streakGoal,
+        ),
       ),
-      const SizedBox(height: AppSpace.section),
-      const _RecognitionHistoryEntry(),
-      const SizedBox(height: AppSpace.section),
-      const LivingSeedCard(),
+      const SizedBox(height: AppSpace.md),
+      pad(const WeeklyQuestsCard()),
     ];
 
     if (_caravanLoading) {
-      body.addAll([
-        const SizedBox(height: AppSpace.xl),
-        const Center(
-          child: CircularProgressIndicator(color: AppColors.accent),
-        ),
-      ]);
+      body.addAll([const SizedBox(height: AppSpace.xl), const AppSpinner()]);
     } else if (profile != null) {
       final today = DateTime.now().toIso8601String().substring(0, 10);
       body.addAll([
         const SizedBox(height: AppSpace.section),
-        PilgrimProfileDetailSections(
-          profile: profile,
-          entry: LeagueEntry(
-            uid: backend.uid,
-            name: progress.userName,
-            steps: progress.steps,
-            isUser: true,
-            lastWalkDate: progress.lastPlayedDate,
-            lastSeenDate: today,
-            photoUrl: backend.userPhotoUrl,
+        pad(
+          PilgrimProfileDetailSections(
+            profile: profile,
+            entry: LeagueEntry(
+              uid: backend.uid,
+              name: progress.userName,
+              steps: progress.steps,
+              isUser: true,
+              lastWalkDate: progress.lastPlayedDate,
+              lastSeenDate: today,
+              photoUrl: backend.userPhotoUrl,
+            ),
+            isOwner: true,
+            onOpenSettings: _openCaravanPrivacySettings,
+            omitSections: const {
+              CaravanProfileSection.ranking,
+              CaravanProfileSection.daysAsLeader,
+              CaravanProfileSection.accuracy,
+              CaravanProfileSection.presence,
+            },
+            includeStreakMilestones: false,
+            collectionsFirst: true,
+            showOwnerPrivacyBanner: false,
+            onStartWalking: _backToTrail,
           ),
-          isOwner: true,
-          onOpenSettings: _openCaravanPrivacySettings,
-          omitSections: const {
-            CaravanProfileSection.ranking,
-            CaravanProfileSection.daysAsLeader,
-            CaravanProfileSection.accuracy,
-            CaravanProfileSection.presence,
-          },
-          includeStreakMilestones: false,
         ),
       ]);
-    } else {
-      body.add(
-        PilgrimOwnerPrivacyBanner(onSettings: _openCaravanPrivacySettings),
-      );
     }
 
     body.addAll([
       const SizedBox(height: AppSpace.section),
-      const WeeklyQuestsCard(),
-      const SizedBox(height: AppSpace.section),
       if (profile != null && !_caravanLoading)
-        const _NaPalavraBlock()
+        pad(const _NaPalavraBlock())
       else ...[
-        const _FavoritesSection(),
-        const _SharedVersesSection(),
+        pad(const _FavoritesSection()),
+        pad(const _SharedVersesSection()),
       ],
       if (progress.missionReflections.isNotEmpty) ...[
-        const SizedBox(height: AppSpace.section),
-        const ReflectionJournalCard(),
+        const SizedBox(height: AppSpace.md),
+        pad(const ReflectionJournalCard()),
       ],
+      const SizedBox(height: AppSpace.section),
+      pad(const RecognitionHistoryCard()),
       const SizedBox(height: AppSpace.sm),
     ]);
 
-    if (widget.topBar == null) {
-      return ListView(
-        padding: EdgeInsets.fromLTRB(
-          AppSpace.screen,
-          AppSpace.lg,
-          AppSpace.screen,
-          scrollPaddingBelowNav(context),
+    // Só no próprio perfil os cards mostram o olho de privacidade.
+    if (hero || widget.topBar == null) {
+      return ProfilePrivacyScope(
+        child: ListView(
+          padding: EdgeInsets.fromLTRB(
+            0,
+            hero ? 0 : AppSpace.lg,
+            0,
+            scrollPaddingBelowNav(context),
+          ),
+          children: body,
         ),
-        children: body,
       );
     }
 
     final topInset = MediaQuery.viewPaddingOf(context).top + AppSpace.sm;
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        Padding(
-          padding: EdgeInsets.fromLTRB(
-            AppSpace.screen,
-            topInset,
-            AppSpace.screen,
-            0,
-          ),
-          child: widget.topBar!,
-        ),
-        Expanded(
-          child: ListView(
+    return ProfilePrivacyScope(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Padding(
             padding: EdgeInsets.fromLTRB(
               AppSpace.screen,
-              AppSpace.afterTopBar,
+              topInset,
               AppSpace.screen,
-              scrollPaddingBelowNav(context),
+              0,
             ),
-            children: body,
+            child: widget.topBar!,
           ),
-        ),
-      ],
+          Expanded(
+            child: ListView(
+              padding: EdgeInsets.fromLTRB(
+                0,
+                AppSpace.afterTopBar,
+                0,
+                scrollPaddingBelowNav(context),
+              ),
+              children: body,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
@@ -278,12 +329,12 @@ class _NaPalavraBlock extends StatelessWidget {
                 ? null
                 : 'Versos que você guarda e os que já saíram daqui.',
           ),
-          const SizedBox(height: 14),
+          const SizedBox(height: AppSpace.md),
           const _FavoritesSection(embedded: true),
           if (hasShared && hasBookmarks) ...[
-            const SizedBox(height: 14),
+            const SizedBox(height: AppSpace.md),
             const RelicHairline(accent: AppColors.cedar),
-            const SizedBox(height: 14),
+            const SizedBox(height: AppSpace.md),
           ],
           const _SharedVersesSection(embedded: true),
         ],
@@ -329,66 +380,68 @@ class _FavoritesSectionState extends State<_FavoritesSection> {
     final progress = context.watch<ProgressService>();
     final bookmarks = progress.parseBookmarks().take(8).toList();
     final a = Appearance.of(context);
+    void openBible() => Navigator.of(
+      context,
+    ).push(MaterialPageRoute(builder: (_) => const BibleScreen()));
 
     final content = Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        RelicChapter(
-          title: 'Guardados',
-          accent: AppColors.cedar,
-          displayTitle: false,
+        CardHeader(
+          label: 'Guardados',
           trailing: bookmarks.isEmpty
               ? null
-              : Text(
+              : CountBadge(
                   '${bookmarks.length}',
-                  style: AppTypography.label(
-                    size: 10,
-                    letterSpacing: 1.1,
-                    color: a.textMuted(0.5),
-                  ),
+                  color: AppColors.cedar,
+                  filled: false,
                 ),
         ),
-        const SizedBox(height: 12),
-        if (bookmarks.isEmpty)
+        const SizedBox(height: AppSpace.md),
+        if (bookmarks.isEmpty) ...[
           Text(
             'Na Bíblia, toque num versículo e guarde no coração.',
-            style: AppTypography.body(size: 13, color: a.textMuted(0.55)),
-          )
-        else
+            style: AppTypography.body(size: 13, color: a.textSecondary),
+          ),
+          const SizedBox(height: AppSpace.md),
+          GhostCta(
+            label: 'Abrir a Bíblia',
+            leading: CinematicGlyph.book,
+            expanded: true,
+            onTap: openBible,
+          ),
+        ] else
           ...bookmarks.asMap().entries.map((entry) {
             final i = entry.key;
             final label = _label(entry.value);
             return Column(
               children: [
                 if (i > 0) const RelicHairline(accent: AppColors.cedar),
-                InkWell(
-                  onTap: () => Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => BibleReaderScreen(reference: label),
-                    ),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 10),
-                    child: Row(
-                      children: [
-                        Expanded(
-                          child: Text(
-                            label,
-                            style: AppTypography.verse(
-                              size: 16,
-                              color: a.text.withValues(alpha: 0.92),
+                Semantics(
+                  button: true,
+                  label: 'Abrir $label',
+                  excludeSemantics: true,
+                  child: InkWell(
+                    borderRadius: BorderRadius.circular(AppRadii.sm),
+                    onTap: () => BibleReaderScreen.open(context, label),
+                    child: ConstrainedBox(
+                      constraints: const BoxConstraints(minHeight: 48),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Text(
+                              label,
+                              style: AppTypography.verse(
+                                size: 16,
+                                color: a.text,
+                              ),
                             ),
                           ),
-                        ),
-                        Text(
-                          'abrir',
-                          style: AppTypography.label(
-                            size: 9,
-                            letterSpacing: 1.1,
-                            color: AppColors.cedar.withValues(alpha: 0.7),
+                          ListChevron(
+                            color: AppColors.cedar.withValues(alpha: 0.8),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
                   ),
                 ),
@@ -398,27 +451,9 @@ class _FavoritesSectionState extends State<_FavoritesSection> {
       ],
     );
 
-    if (widget.embedded) {
-      if (bookmarks.isEmpty) {
-        return GestureDetector(
-          onTap: () => Navigator.of(context).push(
-            MaterialPageRoute(builder: (_) => const BibleScreen()),
-          ),
-          child: content,
-        );
-      }
-      return content;
-    }
+    if (widget.embedded) return content;
 
-    return RelicPanel(
-      accent: AppColors.cedar,
-      onTap: bookmarks.isEmpty
-          ? () => Navigator.of(context).push(
-                MaterialPageRoute(builder: (_) => const BibleScreen()),
-              )
-          : null,
-      child: content,
-    );
+    return RelicPanel(accent: AppColors.cedar, child: content);
   }
 }
 
@@ -436,56 +471,62 @@ class _SharedVersesSection extends StatelessWidget {
     final content = Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        RelicChapter(
-          title: 'Enviados',
-          accent: AppColors.cedar,
-          displayTitle: false,
+        CardHeader(
+          label: 'Enviados',
           trailing: refs.isEmpty
               ? null
-              : Text(
+              : CountBadge(
                   '${refs.length}',
-                  style: AppTypography.label(
-                    size: 10,
-                    letterSpacing: 1.1,
-                    color: a.textMuted(0.5),
-                  ),
+                  color: AppColors.cedar,
+                  filled: false,
                 ),
         ),
-        const SizedBox(height: 12),
+        const SizedBox(height: AppSpace.md),
         if (refs.isEmpty)
           Text(
             'Versículos que você compartilhar aparecem aqui — só a referência.',
-            style: AppTypography.body(size: 13, color: a.textMuted(0.55)),
+            style: AppTypography.body(size: 13, color: a.textSecondary),
           )
         else
           Wrap(
-            spacing: 8,
-            runSpacing: 8,
+            spacing: AppSpace.sm,
+            runSpacing: AppSpace.sm,
             children: [
               for (final ref in refs)
-                GestureDetector(
-                  onTap: () => Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (_) => BibleReaderScreen(reference: ref),
-                    ),
-                  ),
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 12,
-                      vertical: 8,
-                    ),
-                    decoration: BoxDecoration(
+                Semantics(
+                  button: true,
+                  label: 'Abrir $ref',
+                  excludeSemantics: true,
+                  child: Material(
+                    color: AppColors.cedar.withValues(alpha: 0.08),
+                    shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(AppRadii.sm),
-                      border: Border.all(
+                      side: BorderSide(
                         color: AppColors.cedar.withValues(alpha: 0.35),
                       ),
-                      color: AppColors.cedar.withValues(alpha: 0.08),
                     ),
-                    child: Text(
-                      ref,
-                      style: AppTypography.verse(
-                        size: 14,
-                        color: a.text.withValues(alpha: 0.9),
+                    clipBehavior: Clip.antiAlias,
+                    child: InkWell(
+                      onTap: () => BibleReaderScreen.open(context, ref),
+                      child: ConstrainedBox(
+                        constraints: const BoxConstraints(minHeight: 44),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: AppSpace.md,
+                          ),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Text(
+                                ref,
+                                style: AppTypography.verse(
+                                  size: 14,
+                                  color: a.text,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
                       ),
                     ),
                   ),
@@ -500,54 +541,3 @@ class _SharedVersesSection extends StatelessWidget {
     return RelicPanel(accent: AppColors.cedar, child: content);
   }
 }
-
-/// Atalho no perfil — quem reconheceu cena e medalhas.
-class _RecognitionHistoryEntry extends StatelessWidget {
-  const _RecognitionHistoryEntry();
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final count = context.watch<RecognitionService>().recent.length;
-    return GlassCard(
-      onTap: () {
-        showRecognitionHistorySheet(context);
-      },
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-      child: Row(
-        children: [
-          const Icon(Icons.favorite_rounded, size: 20, color: AppColors.clay),
-          const SizedBox(width: 12),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  'Quem reconheceu',
-                  style: AppTypography.title(size: 16, color: a.text),
-                ),
-                const SizedBox(height: 2),
-                Text(
-                  count == 0
-                      ? 'Cena e medalhas que outros viram em você'
-                      : count == 1
-                      ? '1 reconhecimento recente'
-                      : '$count reconhecimentos recentes',
-                  style: AppTypography.body(
-                    size: 13,
-                    color: a.textMuted(0.65),
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Icon(
-            Icons.chevron_right_rounded,
-            color: a.textMuted(0.45),
-          ),
-        ],
-      ),
-    );
-  }
-}
-

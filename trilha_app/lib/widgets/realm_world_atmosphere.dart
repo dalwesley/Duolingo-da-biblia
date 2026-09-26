@@ -13,12 +13,16 @@ class RealmWorldAtmosphere extends StatefulWidget {
   final bool locked;
   final bool featured;
 
+  /// Morros desenhados. Fica falso quando o chão é a arte STWAY.
+  final bool terrain;
+
   const RealmWorldAtmosphere({
     super.key,
     required this.realm,
     this.animate = true,
     this.locked = false,
     this.featured = false,
+    this.terrain = true,
   });
 
   @override
@@ -92,6 +96,7 @@ class _RealmWorldAtmosphereState extends State<RealmWorldAtmosphere>
               realm: widget.realm,
               locked: widget.locked,
               featured: widget.featured,
+              terrain: widget.terrain,
               t: widget.animate ? _drift.value : 0.12,
               motes: _motes,
             ),
@@ -125,6 +130,7 @@ class _RealmWorldPainter extends CustomPainter {
   final TrailRealm realm;
   final bool locked;
   final bool featured;
+  final bool terrain;
   final double t;
   final List<_Mote> motes;
 
@@ -132,6 +138,7 @@ class _RealmWorldPainter extends CustomPainter {
     required this.realm,
     required this.locked,
     required this.featured,
+    required this.terrain,
     required this.t,
     required this.motes,
   });
@@ -197,9 +204,11 @@ class _RealmWorldPainter extends CustomPainter {
     );
 
     _paintAstro(canvas, size, sky, c);
-    _paintTerrain(canvas, size, sky, c);
-    if (realm == TrailRealm.teologia) {
-      _paintPillars(canvas, size, sky, c);
+    if (terrain) {
+      _paintTerrain(canvas, size, sky, c);
+      if (realm == TrailRealm.teologia) {
+        _paintPillars(canvas, size, sky, c);
+      }
     }
     _paintMotes(canvas, size, sky, c);
     _paintVignette(canvas, size);
@@ -392,7 +401,8 @@ class _RealmWorldPainter extends CustomPainter {
       old.t != t ||
       old.realm != realm ||
       old.locked != locked ||
-      old.featured != featured;
+      old.featured != featured ||
+      old.terrain != terrain;
 }
 
 class _Sky {
@@ -437,7 +447,8 @@ class FilmEyebrow extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 12),
           child: Text(
-            text,
+            // Caixa alta aqui, como no SectionLabel: a string fica normal.
+            text.toUpperCase(),
             style: AppTypography.label(
               size: 11,
               letterSpacing: 2.2,

@@ -35,7 +35,7 @@ class LivingSeedCard extends StatelessWidget {
   }
 
   /// Acento de urgência sem vermelho de erro — terra / areia.
-  static const _dustAccent = Color(0xFFC4A070);
+  static const _dustAccent = AppColors.dust;
 
   Color _accent(SpiritualGrowth growth) {
     return switch (growth.mood) {
@@ -44,12 +44,12 @@ class LivingSeedCard extends StatelessWidget {
       SeedMood.frozen => AppColors.ice,
       SeedMood.thriving => AppColors.ember,
       SeedMood.calm => switch (growth.stage) {
-          GrowthStage.seed => AppColors.cedar,
-          GrowthStage.sprout => AppColors.ember,
-          GrowthStage.branch => AppColors.accent,
-          GrowthStage.tree => AppColors.cedar,
-          GrowthStage.fruit => AppColors.accent,
-        },
+        GrowthStage.seed => AppColors.cedar,
+        GrowthStage.sprout => AppColors.ember,
+        GrowthStage.branch => AppColors.accent,
+        GrowthStage.tree => AppColors.cedar,
+        GrowthStage.fruit => AppColors.accent,
+      },
     };
   }
 
@@ -71,10 +71,7 @@ class LivingSeedCard extends StatelessWidget {
     return _profile(context, growth);
   }
 
-  Widget _compact(
-    BuildContext context,
-    SpiritualGrowth growth,
-  ) {
+  Widget _compact(BuildContext context, SpiritualGrowth growth) {
     final a = Appearance.of(context);
     final accent = _accent(growth);
     return RelicPanel(
@@ -109,7 +106,7 @@ class LivingSeedCard extends StatelessWidget {
                     size: 12,
                     color: growth.mood == SeedMood.atRisk
                         ? _dustAccent.withValues(alpha: 0.95)
-                        : a.textMuted(0.6),
+                        : a.textSecondary,
                   ),
                 ),
               ],
@@ -122,7 +119,7 @@ class LivingSeedCard extends StatelessWidget {
                 Text(
                   '${growth.streak}',
                   style: AppTypography.display(
-                    size: 22,
+                    size: 20,
                     weight: FontWeight.w900,
                     color: accent,
                     height: 1,
@@ -130,10 +127,7 @@ class LivingSeedCard extends StatelessWidget {
                 ),
                 Text(
                   growth.streak == 1 ? 'dia' : 'dias',
-                  style: AppTypography.label(
-                    size: 10,
-                    color: a.textMuted(0.55),
-                  ),
+                  style: AppTypography.label(size: 10, color: a.textFaint),
                 ),
               ],
             ),
@@ -142,10 +136,7 @@ class LivingSeedCard extends StatelessWidget {
     );
   }
 
-  Widget _profile(
-    BuildContext context,
-    SpiritualGrowth growth,
-  ) {
+  Widget _profile(BuildContext context, SpiritualGrowth growth) {
     final a = Appearance.of(context);
     final accent = _accent(growth);
     final next = growth.nextStage;
@@ -158,8 +149,9 @@ class LivingSeedCard extends StatelessWidget {
         children: [
           RelicChapter(
             title: growth.title,
-            whisper: 'Cada dia seguido sobe um marco — '
-                'Semente → Broto → Ramo → Árvore → Fruto.',
+            whisper:
+                'Cada dia da sequência sobe um marco: '
+                'Semente, Broto, Ramo, Árvore e Fruto.',
             accent: accent,
             trailing: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
@@ -167,7 +159,7 @@ class LivingSeedCard extends StatelessWidget {
                 Text(
                   '${growth.streak}',
                   style: AppTypography.display(
-                    size: 26,
+                    size: 24,
                     weight: FontWeight.w900,
                     color: accent,
                     height: 1,
@@ -175,20 +167,13 @@ class LivingSeedCard extends StatelessWidget {
                 ),
                 Text(
                   growth.streak == 1 ? 'dia' : 'dias',
-                  style: AppTypography.label(
-                    size: 10,
-                    color: a.textMuted(0.55),
-                  ),
+                  style: AppTypography.label(size: 10, color: a.textFaint),
                 ),
               ],
             ),
           ),
           const SizedBox(height: 16),
-          _StageTrack(
-            current: growth.stage,
-            accent: accent,
-            glyphFor: _glyph,
-          ),
+          _StageTrack(current: growth.stage, accent: accent, glyphFor: _glyph),
           const SizedBox(height: 14),
           if (growth.mood == SeedMood.atRisk)
             Text(
@@ -204,7 +189,7 @@ class LivingSeedCard extends StatelessWidget {
               daysLeft == 0
                   ? 'Próximo marco: ${next.label}'
                   : 'Próximo: ${next.label} · faltam $daysLeft '
-                      '${daysLeft == 1 ? 'dia' : 'dias'} seguidos',
+                        '${daysLeft == 1 ? 'dia' : 'dias'} na sequência',
               style: AppTypography.body(
                 size: 13,
                 weight: FontWeight.w800,
@@ -320,18 +305,15 @@ class _StageNode extends StatelessWidget {
         Text(
           stage.label,
           style: AppTypography.label(
-            size: current ? 9 : 8,
+            size: 10,
             letterSpacing: 0.2,
             weight: current ? FontWeight.w900 : FontWeight.w600,
-            color: current ? a.text : a.textMuted(reached ? 0.55 : 0.35),
+            color: current ? a.text : a.textFaint,
           ),
         ),
         Text(
           stage.shortHint,
-          style: AppTypography.label(
-            size: 7,
-            color: a.textMuted(0.4),
-          ),
+          style: AppTypography.label(size: 10, color: a.textFaint),
         ),
       ],
     );

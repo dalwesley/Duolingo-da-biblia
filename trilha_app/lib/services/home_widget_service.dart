@@ -80,7 +80,7 @@ class HomeWidgetService {
         ? (goalMet ? 'Amanhã: $nextTitle' : 'Hoje: $nextTitle')
         : (goalMet
             ? 'Meta concluída'
-            : '$done/$goal missõ${goal == 1 ? 'ão' : 'es'}');
+            : '$done/$goal cena${goal == 1 ? '' : 's'}');
 
     await HomeWidget.saveWidgetData('streak', streak);
     await HomeWidget.saveWidgetData('missions_done', done);
@@ -119,7 +119,7 @@ class HomeWidgetService {
     if (title.isNotEmpty) return title;
     final left = (goal - done).clamp(1, goal);
     return left == 1
-        ? 'Falta 1 missão hoje'
-        : 'Faltam $left missões hoje';
+        ? 'Falta 1 cena hoje'
+        : 'Faltam $left cenas hoje';
   }
 }

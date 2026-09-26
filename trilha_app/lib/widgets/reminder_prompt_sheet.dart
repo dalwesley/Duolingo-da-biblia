@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import '../services/notification_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import 'act_feel.dart';
+import 'app_sheet.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
 
@@ -29,10 +30,8 @@ const _hours = <_HourOption>[
 /// Pedido de lembrete — depois da 1ª missão, com horário âncora.
 Future<void> showReminderPromptSheet(BuildContext context) async {
   final progress = context.read<ProgressService>();
-  final choice = await showModalBottomSheet<(bool enabled, int hour)>(
-    context: context,
-    isScrollControlled: true,
-    backgroundColor: Colors.transparent,
+  final choice = await showAppSheet<(bool enabled, int hour)>(
+    context,
     isDismissible: true,
     builder: (_) => const _ReminderPromptSheet(),
   );
@@ -51,8 +50,22 @@ Future<void> showReminderPromptSheet(BuildContext context) async {
   await NotificationService.instance.syncFromProgress(progress);
 }
 
+/// Escolha do horário a partir dos Ajustes (ao ligar o lembrete ou mudar
+/// a hora). Devolve a hora escolhida, ou null se a pessoa desistir.
+Future<int?> showReminderHourSheet(BuildContext context) async {
+  final choice = await showAppSheet<(bool enabled, int hour)>(
+    context,
+    builder: (_) => const _ReminderPromptSheet(fromSettings: true),
+  );
+  if (choice == null || !choice.$1) return null;
+  return choice.$2;
+}
+
 class _ReminderPromptSheet extends StatefulWidget {
-  const _ReminderPromptSheet();
+  /// Nos Ajustes a pessoa já pediu o lembrete — sem convite, só a hora.
+  final bool fromSettings;
+
+  const _ReminderPromptSheet({this.fromSettings = false});
 
   @override
   State<_ReminderPromptSheet> createState() => _ReminderPromptSheetState();
@@ -72,54 +85,29 @@ class _ReminderPromptSheetState extends State<_ReminderPromptSheet> {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final bottom = MediaQuery.paddingOf(context).bottom;
     final selected = _hours.firstWhere(
       (h) => h.hour == _hour,
       orElse: () => _hours.first,
     );
 
-    return Container(
-      margin: const EdgeInsets.fromLTRB(12, 0, 12, 12),
-      padding: EdgeInsets.fromLTRB(20, 18, 20, 16 + bottom),
-      decoration: BoxDecoration(
-        color: a.cardFill,
-        borderRadius: BorderRadius.circular(AppRadii.lg),
-        border: Border.all(color: a.cardBorder),
-        boxShadow: AppTheme.cardShadow(elevated: true),
-      ),
+    return AppSheetPanel(
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          const CinematicIcon(
-            glyph: CinematicGlyph.bell,
-            size: 56,
-            accent: AppColors.accent,
-            glowing: false,
-          ),
-          const SizedBox(height: 14),
-          Text(
-            'O PEREGRINO',
-            style: AppTypography.label(
-              letterSpacing: 1.5,
-              color: AppColors.accent.withValues(alpha: 0.85),
+          AppSheetHeader(
+            center: true,
+            leading: const CinematicIcon(
+              glyph: CinematicGlyph.bell,
+              size: 56,
+              accent: AppColors.accent,
+              glowing: false,
             ),
-          ),
-          const SizedBox(height: 6),
-          Text(
-            'Em que hora te chamamos?',
-            textAlign: TextAlign.center,
-            style: AppTypography.title(size: 20, color: a.text),
-          ),
-          const SizedBox(height: 8),
-          Text(
-            'Um horário fixo cola o hábito. Amanhã te avisamos da próxima cena.',
-            textAlign: TextAlign.center,
-            style: AppTypography.body(
-              size: 14,
-              height: 1.4,
-              weight: FontWeight.w600,
-              color: a.textMuted(0.72),
-            ),
+            eyebrow: widget.fromSettings ? 'Lembrete diário' : 'O peregrino',
+            eyebrowColor: AppColors.accent.withValues(alpha: 0.85),
+            title: 'Em que hora lembramos você?',
+            subtitle: widget.fromSettings
+                ? 'Um aviso por dia, no horário que você escolher.'
+                : 'Um horário fixo cola o hábito. Amanhã te avisamos da próxima cena.',
           ),
           const SizedBox(height: 16),
           Row(
@@ -131,7 +119,7 @@ class _ReminderPromptSheetState extends State<_ReminderPromptSheet> {
                     option: _hours[i],
                     selected: _hour == _hours[i].hour,
                     onTap: () {
-                      HapticFeedback.selectionClick();
+                      ActHaptics.tap();
                       setState(() => _hour = _hours[i].hour);
                     },
                   ),
@@ -141,25 +129,18 @@ class _ReminderPromptSheetState extends State<_ReminderPromptSheet> {
           ),
           const SizedBox(height: 20),
           CopperCta(
-            label: 'Chamar às ${selected.echo}',
+            label: 'Lembrar às ${selected.echo}',
             onTap: () {
-              HapticFeedback.mediumImpact();
               Navigator.of(context).pop((true, _hour));
             },
           ),
           const SizedBox(height: 8),
-          TextButton(
-            onPressed: () {
-              HapticFeedback.selectionClick();
+          TextCta(
+            label: widget.fromSettings ? 'Cancelar' : 'Agora não',
+            color: a.textFaint,
+            onTap: () {
               Navigator.of(context).pop((false, _hour));
             },
-            child: Text(
-              'Agora não',
-              style: AppTypography.body(
-                weight: FontWeight.w700,
-                color: a.textMuted(0.55),
-              ),
-            ),
           ),
         ],
       ),
@@ -181,44 +162,28 @@ class _HourChip extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return Material(
-      color: Colors.transparent,
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(AppRadii.md),
-        child: AnimatedContainer(
-          duration: const Duration(milliseconds: 180),
-          padding: const EdgeInsets.symmetric(vertical: 12),
-          decoration: BoxDecoration(
-            color: selected ? AppColors.accent : a.cardFill,
-            borderRadius: BorderRadius.circular(AppRadii.md),
-            border: Border.all(
-              color: selected
-                  ? Colors.transparent
-                  : a.cardBorder.withValues(alpha: 0.55),
+    return AppChoiceTile(
+      selected: selected,
+      onTap: onTap,
+      child: Column(
+        children: [
+          Text(
+            option.label,
+            style: AppTypography.label(
+              size: 11,
+              letterSpacing: 0.8,
+              color: selected ? AppColors.inkOnAccent : a.textSecondary,
             ),
           ),
-          child: Column(
-            children: [
-              Text(
-                option.label,
-                style: AppTypography.label(
-                  size: 10,
-                  letterSpacing: 0.8,
-                  color: selected ? AppColors.inkOnAccent : a.textMuted(0.7),
-                ),
-              ),
-              const SizedBox(height: 4),
-              Text(
-                option.echo,
-                style: AppTypography.title(
-                  size: 16,
-                  color: selected ? AppColors.inkOnAccent : a.text,
-                ),
-              ),
-            ],
+          const SizedBox(height: 4),
+          Text(
+            option.echo,
+            style: AppTypography.title(
+              size: 16,
+              color: selected ? AppColors.inkOnAccent : a.text,
+            ),
           ),
-        ),
+        ],
       ),
     );
   }

@@ -1,14 +1,14 @@
-/// Copy do fim da missão — celebra o passo; ranking vai no cartão da caravana.
+/// Copy do fim da cena — celebra o passo; ranking vai no cartão da caravana.
 class CelebrationCopy {
   static String kicker({
     required bool perfect,
     required bool isReplay,
     required bool isBoss,
   }) {
-    if (perfect) return 'SEM ERRO';
-    if (isReplay) return 'REVISÃO';
-    if (isBoss) return 'O PASSO MAIOR';
-    return 'MAIS UM PASSO';
+    if (perfect) return 'Sem erro';
+    if (isReplay) return 'Revisão';
+    if (isBoss) return 'Desafio final';
+    return 'Mais uma cena';
   }
 
   static String headline({
@@ -19,7 +19,7 @@ class CelebrationCopy {
     if (perfect) return 'Clareza total';
     if (isReplay) return 'Você voltou ao texto';
     if (isBoss) return 'Boss vencido';
-    return 'Missão cumprida';
+    return 'Cena concluída';
   }
 
   static String caravanaTitle({
@@ -36,7 +36,7 @@ class CelebrationCopy {
     required bool inPromotionZone,
   }) {
     if (!inPromotionZone) {
-      return 'Cada missão move o grupo. Continue nesta semana.';
+      return 'Cada cena move a caravana. Continue nesta semana.';
     }
     if (rank == 1) {
       return 'Segure o 1º até o domingo e você avança de caravana.';
@@ -56,12 +56,12 @@ class MascotMessages {
     if (perfect) return 'Nenhuma lâmpada perdida. Isso fica.';
     if (isBoss) {
       return pct >= 80
-          ? 'O passo maior ficou pra trás. Segue o mapa.'
+          ? 'O desafio final ficou para trás. Siga o mapa.'
           : 'Boss feito. Vale reforçar o que ainda tremeu.';
     }
     if (isReplay) return 'Voltar ao texto fortalece o que já caminhou.';
     if (pct == 100) return 'Tudo claro. Volte amanhã para continuar.';
     if (pct >= 70) return 'Bom passo. A trilha te espera amanhã.';
-    return 'Missão feita. Reforce o que faltou — a memória agradece.';
+    return 'Cena feita. Reforce o que faltou — a memória agradece.';
   }
 }

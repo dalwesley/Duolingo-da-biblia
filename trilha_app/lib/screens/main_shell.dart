@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../data/trail_repository.dart';
+import '../models/corner_challenge.dart';
 import '../models/walk_companion.dart';
 import '../services/app_update_service.dart';
 import '../services/backend_service.dart';
@@ -20,8 +21,10 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
 import '../utils/liturgical_calendar.dart';
+import '../widgets/juntos_inbox.dart';
 import '../widgets/app_update_sheet.dart';
 import '../widgets/cinematic_icon.dart';
+import '../widgets/corner_burst.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/main_bottom_nav.dart';
 import '../widgets/top_bar.dart';
@@ -56,6 +59,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
 
   ProgressService? _progressRef;
   BackendService? _backendRef;
+  CornerService? _cornerRef;
 
   /// Evita fetch duplicado se o SO dispara vários `resumed` em sequência.
   bool _resumeHydrateInFlight = false;
@@ -87,6 +91,8 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       _progressRef!.addListener(_onProgressChanged);
       _backendRef = context.read<BackendService>();
       _backendRef!.addListener(_onBackendChanged);
+      _cornerRef = context.read<CornerService>();
+      _cornerRef!.addListener(_onCornerChanged);
       _flushCloudSave();
       _syncReminders();
       NotificationService.instance.onAction = _handleReminderAction;
@@ -228,7 +234,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       messenger.showSnackBar(
         SnackBar(
           content: Text(
-            'A dupla ganhou +${WalkCompanion.weekTogetherBonusSteps} na caravana',
+            'A companhia ganhou +${WalkCompanion.weekTogetherBonusSteps} passos na caravana',
           ),
         ),
       );
@@ -288,6 +294,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
 
       unawaited(_syncCompanionAndCelebrateReferral(progress));
       unawaited(context.read<CornerService>().refresh());
+      rooms.ensureInviteListener();
 
       await backend.settleAndSyncLeague(
         progress,
@@ -297,6 +304,25 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     } finally {
       _resumeHydrateInFlight = false;
     }
+  }
+
+  /// Quem convidou vê a travessia começar quando descobre que o outro aceitou.
+  void _onCornerChanged() {
+    final corners = _cornerRef;
+    final uid = _backendRef?.uid;
+    if (!mounted || corners == null || uid == null) return;
+    final reveal = corners.takeAcceptReveal();
+    if (reveal == null) return;
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      showCornerBurst(
+        context,
+        peerName: reveal.peerName(uid),
+        peerPhoto: reveal.peerPhoto(uid),
+        caption: CornerCopy.acceptedBy(reveal.peerName(uid)),
+        kicker: reveal.missionTitle,
+      );
+    });
   }
 
   void _handleReminderAction(ReminderAction action) {
@@ -345,6 +371,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     NotificationService.instance.onRemoteNudge = null;
     NotificationService.instance.onRemoteToken = null;
     _backendRef?.removeListener(_onBackendChanged);
+    _cornerRef?.removeListener(_onCornerChanged);
     super.dispose();
   }
 
@@ -428,57 +455,66 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       style: appearance,
       extendBody: true,
       body: _frost.attach(
-        IndexedStack(
+        _TabFade(
           index: _index,
-          children: [
-            TickerMode(
-              enabled: _index == 0,
-              child: HomeScreen(
-                repo: _repo,
-                onOpenMission: _openMission,
-                onOpenTrilhas: _goToTrilhas,
-                onOpenProfile: _openProfile,
-                onOpenBible: () => setState(() {
-                  _index = 2;
-                  _frost.value = 0;
-                }),
-                onOpenLeague: () => setState(() {
-                  _index = 3;
-                  _frost.value = 0;
-                }),
+          child: IndexedStack(
+            index: _index,
+            children: [
+              TickerMode(
+                enabled: _index == 0,
+                child: HomeScreen(
+                  repo: _repo,
+                  onOpenMission: _openMission,
+                  onOpenTrilhas: _goToTrilhas,
+                  onOpenProfile: _openProfile,
+                  onOpenBible: () => setState(() {
+                    _index = 2;
+                    _frost.value = 0;
+                  }),
+                  onOpenLeague: () => setState(() {
+                    _index = 3;
+                    _frost.value = 0;
+                  }),
+                ),
               ),
-            ),
-            TickerMode(
-              enabled: _index == 1,
-              child: TrilhasScreen(
-                repo: _repo,
-                topBar: tabBar(1),
-                portalsActive: _index == 1,
+              TickerMode(
+                enabled: _index == 1,
+                child: TrilhasScreen(
+                  repo: _repo,
+                  topBar: tabBar(1),
+                  portalsActive: _index == 1,
+                ),
               ),
-            ),
-            TickerMode(
-              enabled: _index == 2,
-              child: BibleScreen(topBar: tabBar(2)),
-            ),
-            TickerMode(
-              enabled: _index == 3,
-              child: LeagueScreen(
-                topBar: tabBar(3),
-                active: _index == 3,
-                onOpenOwnProfile: _openProfile,
+              TickerMode(
+                enabled: _index == 2,
+                child: BibleScreen(topBar: tabBar(2)),
               ),
-            ),
-            TickerMode(
-              enabled: _index == 4,
-              child: SettingsScreen(
-                topBar: tabBar(4),
-                onOpenProfile: _openProfile,
+              TickerMode(
+                enabled: _index == 3,
+                child: LeagueScreen(
+                  topBar: tabBar(3),
+                  active: _index == 3,
+                  onOpenOwnProfile: _openProfile,
+                  onOpenMission: _openMission,
+                  onGoToday: () => setState(() {
+                    _index = 0;
+                    _frost.value = 0;
+                  }),
+                ),
               ),
-            ),
-          ],
+              TickerMode(
+                enabled: _index == 4,
+                child: SettingsScreen(
+                  topBar: tabBar(4),
+                  onOpenProfile: _openProfile,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
       bottomNavigationBar: MainBottomNav(
+        alerts: {if (JuntosInbox.pending(context) > 0) 3},
         currentIndex: _index,
         onTap: (i) => setState(() {
           if (_index == 2 && i != 2) unawaited(TtsService.instance.stop());
@@ -489,6 +525,60 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
         dark: appearance.onDark,
         appearance: appearance,
       ),
+    );
+  }
+}
+
+/// Troca de aba com um fade curto e leve subida — sem recriar as abas
+/// (o [IndexedStack] por baixo mantém o estado de cada uma).
+class _TabFade extends StatefulWidget {
+  final int index;
+  final Widget child;
+
+  const _TabFade({required this.index, required this.child});
+
+  @override
+  State<_TabFade> createState() => _TabFadeState();
+}
+
+class _TabFadeState extends State<_TabFade>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _c = AnimationController(
+    vsync: this,
+    duration: const Duration(milliseconds: 240),
+    value: 1,
+  );
+
+  @override
+  void didUpdateWidget(covariant _TabFade old) {
+    super.didUpdateWidget(old);
+    if (old.index != widget.index &&
+        !MediaQuery.of(context).disableAnimations) {
+      _c.forward(from: 0);
+    }
+  }
+
+  @override
+  void dispose() {
+    _c.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedBuilder(
+      animation: _c,
+      builder: (context, child) {
+        final t = Curves.easeOutCubic.transform(_c.value);
+        return Opacity(
+          opacity: 0.35 + 0.65 * t,
+          child: Transform.translate(
+            offset: Offset(0, 10 * (1 - t)),
+            child: child,
+          ),
+        );
+      },
+      child: widget.child,
     );
   }
 }

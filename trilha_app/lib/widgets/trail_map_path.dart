@@ -288,16 +288,14 @@ class _MissionSceneCard extends StatelessWidget {
                     Text(
                       mission.isBoss ? '∞' : _indexLabel,
                       style: AppTypography.display(
-                        size: _current ? 28 : 22,
+                        size: _current ? 28 : 20,
                         weight: FontWeight.w700,
                         height: 1,
                         color: unlocked
                             ? (_current
                                   ? onSky
-                                  : a.text.withValues(
-                                      alpha: completed ? 0.35 : 0.75,
-                                    ))
-                            : a.text.withValues(alpha: 0.28),
+                                  : (completed ? a.textFaint : a.textSecondary))
+                            : a.textFaint,
                       ),
                     ),
                     if (_current) ...[
@@ -325,15 +323,15 @@ class _MissionSceneCard extends StatelessWidget {
                               label: mission.isBoss
                                   ? 'Desafio'
                                   : _current
-                                  ? 'Próxima lição'
+                                  ? 'Próxima cena'
                                   : completed
-                                  ? 'Concluído'
-                                  : 'Passo',
+                                  ? 'Concluída'
+                                  : 'Cena',
                               accent: _current
                                   ? onSky
                                   : completed
                                   ? accent.withValues(alpha: 0.55)
-                                  : a.textMuted(unlocked ? 0.45 : 0.28),
+                                  : a.textFaint,
                             ),
                           ),
                           if (!unlocked) ...[
@@ -343,7 +341,7 @@ class _MissionSceneCard extends StatelessWidget {
                               style: AppTypography.body(
                                 size: 11,
                                 weight: FontWeight.w600,
-                                color: a.textMuted(0.35),
+                                color: a.textFaint,
                               ),
                             ),
                           ],
@@ -371,14 +369,12 @@ class _MissionSceneCard extends StatelessWidget {
                                 Text(
                                   mission.title,
                                   style: AppTypography.display(
-                                    size: _current ? 22 : 18,
+                                    size: _current ? 20 : 18,
                                     weight: FontWeight.w800,
                                     height: 1.15,
-                                    color: a.text.withValues(
-                                      alpha: unlocked
-                                          ? (completed ? 0.45 : 0.98)
-                                          : 0.4,
-                                    ),
+                                    color: unlocked && !completed
+                                        ? a.text
+                                        : a.textFaint,
                                   ),
                                 ),
                                 if (mission.subtitle.isNotEmpty) ...[
@@ -391,11 +387,7 @@ class _MissionSceneCard extends StatelessWidget {
                                       size: 13,
                                       height: 1.3,
                                       weight: FontWeight.w500,
-                                      color: a.textMuted(
-                                        unlocked
-                                            ? (completed ? 0.35 : 0.55)
-                                            : 0.3,
-                                      ),
+                                      color: a.textFaint,
                                     ),
                                   ),
                                 ],
@@ -414,26 +406,14 @@ class _MissionSceneCard extends StatelessWidget {
                             size: 13,
                             height: 1.4,
                             weight: FontWeight.w500,
-                            color: a.textMuted(0.6),
+                            color: a.textSecondary,
                           ),
                         ),
                         const SizedBox(height: 14),
-                        Text(
-                          'Continuar →',
-                          style: AppTypography.cta(
-                            size: 14,
-                            color: onSky,
-                          ).copyWith(letterSpacing: 0.2),
-                        ),
+                        _ContinueCue(color: onSky),
                       ] else if (_current) ...[
                         const SizedBox(height: 12),
-                        Text(
-                          'Continuar →',
-                          style: AppTypography.cta(
-                            size: 14,
-                            color: onSky,
-                          ).copyWith(letterSpacing: 0.2),
-                        ),
+                        _ContinueCue(color: onSky),
                       ],
                     ],
                   ),
@@ -453,11 +433,41 @@ class _MissionSceneCard extends StatelessWidget {
       color: Colors.transparent,
       child: InkWell(
         onTap: onTap,
-        borderRadius: BorderRadius.circular(AppRadii.lg),
+        borderRadius: radius,
         splashColor: onSky.withValues(alpha: 0.1),
         highlightColor: onSky.withValues(alpha: 0.05),
         child: faded,
       ),
+    );
+  }
+}
+
+/// Convite a seguir na cena atual — rótulo + glifo, sem seta no texto.
+class _ContinueCue extends StatelessWidget {
+  final Color color;
+
+  const _ContinueCue({required this.color});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        Text(
+          'Continuar',
+          style: AppTypography.cta(
+            size: 14,
+            color: color,
+          ).copyWith(letterSpacing: 0.2),
+        ),
+        const SizedBox(width: 6),
+        CinematicIcon(
+          glyph: CinematicGlyph.forward,
+          size: 14,
+          accent: color,
+          framed: false,
+        ),
+      ],
     );
   }
 }

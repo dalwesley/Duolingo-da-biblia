@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
 
@@ -20,10 +19,7 @@ import 'ui_primitives.dart';
 class SeasonChallengeBanner extends StatelessWidget {
   final List<Trail> catalog;
 
-  const SeasonChallengeBanner({
-    super.key,
-    required this.catalog,
-  });
+  const SeasonChallengeBanner({super.key, required this.catalog});
 
   @override
   Widget build(BuildContext context) {
@@ -48,9 +44,21 @@ class SeasonChallengeBanner extends StatelessWidget {
         break;
       }
     }
-    if (season == null || season.tracks.isEmpty) return const SizedBox.shrink();
+    // Abre numa folha: nunca fica vazio — mostra um estado calmo.
+    if (season == null || season.tracks.isEmpty) {
+      return const _SeasonQuietCard(
+        title: 'Nenhum desafio aberto agora',
+        body: 'O próximo desafio chega com a nova estação litúrgica.',
+      );
+    }
     final track = season.tracks.first;
-    if (track.isComplete) return const SizedBox.shrink();
+    if (track.isComplete) {
+      return _SeasonQuietCard(
+        title: season.vault.title,
+        body: 'Desafio concluído nesta estação. Bem caminhado.',
+        done: true,
+      );
+    }
     final vaultTitle = season.vault.title;
 
     final next = track.nextLevel;
@@ -58,8 +66,8 @@ class SeasonChallengeBanner extends StatelessWidget {
       next?.tier ?? track.currentLevel?.tier ?? PilgrimMedalTier.bronze,
     );
 
-    return Padding(
-      padding: const EdgeInsets.only(bottom: AppSpace.section),
+    return Semantics(
+      container: true,
       child: GlassCard(
         elevated: true,
         padding: AppMetrics.cardPadding,
@@ -70,7 +78,7 @@ class SeasonChallengeBanner extends StatelessWidget {
               children: [
                 CinematicIcon(
                   glyph: track.track.glyph,
-                  size: 40,
+                  size: AppMetrics.leadingIcon,
                   accent: accent,
                   glowing: false,
                 ),
@@ -81,7 +89,7 @@ class SeasonChallengeBanner extends StatelessWidget {
                     children: [
                       Text(
                         vaultTitle,
-                        style: AppTypography.title(size: 14, color: a.text),
+                        style: AppTypography.title(size: 16, color: a.text),
                       ),
                       const SizedBox(height: 2),
                       Text(
@@ -92,7 +100,7 @@ class SeasonChallengeBanner extends StatelessWidget {
                           size: 12,
                           height: 1.35,
                           weight: FontWeight.w600,
-                          color: a.textMuted(0.7),
+                          color: a.textSecondary,
                         ),
                       ),
                     ],
@@ -100,24 +108,22 @@ class SeasonChallengeBanner extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(height: 10),
-            ClipRRect(
-              borderRadius: BorderRadius.circular(AppRadii.sm),
-              child: LinearProgressIndicator(
-                value: track.progress,
-                minHeight: 6,
-                backgroundColor: a.text.withValues(alpha: 0.12),
-                valueColor: AlwaysStoppedAnimation(accent),
+            const SizedBox(height: AppSpace.md),
+            AppProgressBar(value: track.progress, color: accent, height: 6),
+            const SizedBox(height: 6),
+            Text(
+              '${(track.progress * 100).round()}% do caminho',
+              style: AppTypography.body(
+                size: 12,
+                weight: FontWeight.w700,
+                color: accent.withValues(alpha: 0.9),
               ),
             ),
-            const SizedBox(height: 14),
+            const SizedBox(height: AppSpace.md),
             CopperCta(
               label: 'Convidar para o desafio',
               trailing: CinematicGlyph.share,
-              onTap: () {
-                HapticFeedback.mediumImpact();
-                _share(vaultTitle);
-              },
+              onTap: () => _share(vaultTitle),
             ),
           ],
         ),
@@ -125,17 +131,70 @@ class SeasonChallengeBanner extends StatelessWidget {
     );
   }
 
-  Future<void> _share(String title) async {
-    final body = '''
+  static Future<void> _share(String title) async {
+    final body =
+        '''
 🕯️ Entrei no desafio $title no Stway.
 
 Vamos caminhar juntos essa temporada?
 
 ${InviteDeepLinkService.openAppFooter()}
 '''
-        .trim();
-    await SharePlus.instance.share(
-      ShareParams(text: body, subject: title),
+            .trim();
+    await SharePlus.instance.share(ShareParams(text: body, subject: title));
+  }
+}
+
+class _SeasonQuietCard extends StatelessWidget {
+  final String title;
+  final String body;
+  final bool done;
+
+  const _SeasonQuietCard({
+    required this.title,
+    required this.body,
+    this.done = false,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final accent = done ? AppColors.teal : AppColors.orchid;
+    return GlassCard(
+      elevated: true,
+      padding: AppMetrics.cardPadding,
+      child: Row(
+        children: [
+          CinematicIcon(
+            glyph: done ? CinematicGlyph.check : CinematicGlyph.crown,
+            size: AppMetrics.leadingIcon,
+            accent: accent,
+            glowing: false,
+          ),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  title,
+                  style: AppTypography.title(size: 16, color: a.text),
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  body,
+                  style: AppTypography.body(
+                    size: 12,
+                    height: 1.35,
+                    weight: FontWeight.w600,
+                    color: a.textSecondary,
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

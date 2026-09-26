@@ -1426,6 +1426,139 @@ input:focus, textarea:focus, select:focus {
 .prose h2 { color: var(--text); font-size: 1.2rem; margin: 32px 0 8px; }
 .prose a { color: var(--gold); }
 
+.doar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 400px);
+  column-gap: clamp(40px, 7vw, 96px);
+  align-items: start;
+}
+
+.doar-copy .prose { margin-top: 22px; }
+
+.doar-sign {
+  margin-top: 28px;
+  color: var(--gold-soft);
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.35;
+}
+
+.doar-fine {
+  margin-top: 12px;
+  color: var(--dim);
+  font-size: 0.92rem;
+}
+
+.doar-side {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-self: end;
+  width: min(100%, 380px);
+  gap: 20px;
+}
+
+.doar-side-caption {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 14px;
+  text-align: center;
+}
+
+.pix {
+  width: 100%;
+  margin-top: 0;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--card);
+}
+
+.pix h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.pix .pix-lead {
+  margin: 8px 0 0;
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.pix-qr {
+  width: 100%;
+  aspect-ratio: 1;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.pix-qr img { width: 100%; height: 100%; object-fit: contain; }
+
+.pix-qr.is-empty {
+  background: transparent;
+  border: 1px dashed rgba(247, 187, 1, 0.45);
+  color: var(--dim);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.pix-code {
+  margin: 0;
+  min-height: 52px;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: rgba(0, 0, 0, 0.28);
+  color: var(--text);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  line-height: 1.45;
+  word-break: break-all;
+}
+
+.pix-code:empty::before {
+  content: "Código Pix";
+  color: var(--dim);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: "Sora", system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.pix-copy {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.pix-note {
+  margin: 14px 0 0;
+  color: var(--gold-soft);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.pix-note:empty { display: none; }
+
+@media (max-width: 800px) {
+  .doar { grid-template-columns: 1fr; }
+
+  .doar-side {
+    justify-self: center;
+    width: min(100%, 380px);
+    margin-top: 36px;
+  }
+}
+
 /* ─── Reveal ───────────────────────────────────────── */
 
 .js .reveal {

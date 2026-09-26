@@ -19,6 +19,7 @@ import '../utils/difficulty_visuals.dart';
 import '../utils/genesis_theme.dart';
 import '../utils/trail_progress.dart';
 import '../utils/trail_visuals.dart';
+import '../widgets/act_feel.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/genesis_trail_scenery.dart';
 import '../widgets/immersive_background.dart';
@@ -27,6 +28,7 @@ import '../widgets/milestone_chests.dart';
 import '../widgets/mode_emblem.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/trail_map_path.dart';
+import '../widgets/ui_primitives.dart';
 import 'difficulty_picker_screen.dart';
 
 class TrailMapScreen extends StatefulWidget {
@@ -128,7 +130,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
     final progress = context.read<ProgressService>();
     if (!progress.hasDifficultyChoice(widget.slug)) return;
     if (!progress.isDifficultyUnlocked(widget.slug, d)) {
-      HapticFeedback.selectionClick();
+      ActHaptics.tap();
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           content: Text(
@@ -142,7 +144,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
     }
     final before = progress.difficultyForTrail(widget.slug);
     if (before == d.id) return;
-    HapticFeedback.mediumImpact();
+    ActHaptics.confirm();
     progress.setSessionTrailDifficulty(
       widget.slug,
       d.id,
@@ -165,9 +167,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
         backgroundColor: DayPhaseHelper.scaffoldBackground(appearance.phase),
         body: ImmersiveBackground(
           appearance: appearance,
-          child: const Center(
-            child: CircularProgressIndicator(color: AppColors.accent),
-          ),
+          child: const AppSpinner(),
         ),
       );
     }
@@ -178,10 +178,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
       trailSlug: widget.slug,
       missionSlugs: allSlugs,
     );
-    final live = TrailProgress.getLiveProgress(
-      trail,
-      completed,
-    );
+    final live = TrailProgress.getLiveProgress(trail, completed);
     final prog = live; // mapa da trilha = modo ativo
     final difficultyId = progress.difficultyForTrail(widget.slug);
     final cleared = progress.clearedModesFor(widget.slug);
@@ -248,35 +245,11 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                       32,
                     ),
                     children: [
-                      Center(
-                        child: Padding(
-                          padding: const EdgeInsets.all(AppSpace.xxxl),
-                          child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              CinematicIcon(
-                                glyph: CinematicGlyphResolver.forTrail(
-                                  trail.slug,
-                                ),
-                                size: 72,
-                                accent: AppTheme.parseHex(trail.color),
-                              ),
-                              const SizedBox(height: AppSpace.section),
-                              Text(
-                                'Em breve',
-                                style: AppTypography.title(size: 24),
-                              ),
-                              const SizedBox(height: AppSpace.sm),
-                              Text(
-                                trail.description,
-                                textAlign: TextAlign.center,
-                                style: AppTypography.body(
-                                  color: AppColors.textMuted,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
+                      EmptyState(
+                        glyph: CinematicGlyphResolver.forTrail(trail.slug),
+                        title: 'Em breve',
+                        body: trail.description,
+                        accent: AppTheme.parseHex(trail.color),
                       ),
                     ],
                   ),
@@ -294,7 +267,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
     final appearance = AppearanceStyle.resolve(mode);
 
     final eyebrow = _useThematicMap && trail.modules.isNotEmpty
-        ? 'CENA ${_roman(activeModule + 1)}'
+        ? 'Cena ${_roman(activeModule + 1)}'
         : null;
     final headerTitle = _useThematicMap && trail.modules.isNotEmpty
         ? trail.modules[activeModule.clamp(0, trail.modules.length - 1)].title
@@ -339,7 +312,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                                 liveDone: prog.done,
                                 total: prog.total,
                               )
-                            : '${prog.done}/${prog.total} missões'),
+                            : '${prog.done}/${prog.total} cenas'),
                     onBack: () => Navigator.pop(context),
                     leadingGlyph: headerGlyph,
                     chromeAccent: _fromBank
@@ -366,7 +339,8 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                             clearedModeIds: cleared,
                             bannerText: modeBanner,
                             sealedBanner: sealedHint != null,
-                            sessionHint: progress.hasSessionDifficulty(widget.slug)
+                            sessionHint:
+                                progress.hasSessionDifficulty(widget.slug)
                                 ? 'Só nesta sessão · ao fechar o app volta para ${TrailProgress.modeLabel(progress.canonicalDifficultyId(widget.slug))}'
                                 : (progress.hasDifficultyChoice(widget.slug)
                                       ? 'Toque para ver outro modo'
@@ -402,7 +376,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                             difficultyId: null,
                             clearedModeIds: const [],
                             progressCaption:
-                                '$modeName · ${prog.done} de ${prog.total} passos',
+                                '$modeName · ${prog.done} de ${prog.total} cenas',
                           ),
                         ),
                       if (_trailMedalChip(progress, trail) != null)
@@ -438,9 +412,7 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                         );
                         final isActive = mi == activeModule;
                         final modDone = mod.missions
-                            .where(
-                              (m) => completed.contains(m.slug),
-                            )
+                            .where((m) => completed.contains(m.slug))
                             .length;
 
                         final path = TrailMapPath(
@@ -518,14 +490,15 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
         color: Colors.transparent,
         child: InkWell(
           onTap: () {
-            HapticFeedback.selectionClick();
+            ActHaptics.tap();
             final vaults = PilgrimMedals.evaluateVaults(
               profile: profile,
               catalog: [trail],
               ctx: ctx,
             );
             for (final vault in vaults) {
-              if (vault.vault.id != PilgrimMedalCatalog.trailVaultId(trail.slug)) {
+              if (vault.vault.id !=
+                  PilgrimMedalCatalog.trailVaultId(trail.slug)) {
                 continue;
               }
               if (vault.tracks.isEmpty) return;
@@ -533,22 +506,11 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
               return;
             }
           },
-          borderRadius: BorderRadius.circular(AppRadii.pill),
-          child: Container(
-            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-            decoration: BoxDecoration(
-              color: accent.withValues(alpha: 0.12),
-              borderRadius: BorderRadius.circular(AppRadii.pill),
-              border: Border.all(color: accent.withValues(alpha: 0.35)),
-            ),
-            child: Text(
-              proximity.actionMessage,
-              style: AppTypography.label(
-                size: 11,
-                letterSpacing: 0.2,
-                color: accent,
-              ),
-            ),
+          borderRadius: BorderRadius.circular(AppRadii.sm),
+          child: SoftBadge(
+            text: proximity.actionMessage,
+            accent: accent,
+            textColor: accent,
           ),
         ),
       ),
@@ -572,38 +534,13 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
         color: Colors.transparent,
         child: InkWell(
           onTap: unlocked ? () => showCharacterSealSheet(context, seal) : null,
-          borderRadius: BorderRadius.circular(AppRadii.pill),
+          borderRadius: BorderRadius.circular(AppRadii.sm),
           child: Opacity(
             opacity: unlocked ? 1 : 0.5,
-            child: Container(
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-              decoration: BoxDecoration(
-                color: AppColors.accent.withValues(alpha: 0.12),
-                borderRadius: BorderRadius.circular(AppRadii.pill),
-                border: Border.all(
-                  color: AppColors.accent.withValues(alpha: 0.35),
-                ),
-              ),
-              child: Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  CinematicIcon(
-                    glyph: seal.glyph,
-                    size: 18,
-                    accent: AppColors.accent,
-                    framed: false,
-                  ),
-                  const SizedBox(width: 6),
-                  Text(
-                    'Selo ${seal.name}',
-                    style: AppTypography.label(
-                      size: 11,
-                      letterSpacing: 0.2,
-                      color: a.text,
-                    ),
-                  ),
-                ],
-              ),
+            child: SoftBadge(
+              text: 'Selo ${seal.name}',
+              glyph: seal.glyph,
+              textColor: a.text,
             ),
           ),
         ),
@@ -646,7 +583,7 @@ class _ModeReplayBanner extends StatelessWidget {
               style: AppTypography.body(
                 size: 12,
                 weight: FontWeight.w600,
-                color: a.text.withValues(alpha: 0.62),
+                color: a.textSecondary,
                 height: 1.3,
               ),
             ),
@@ -714,7 +651,7 @@ class _ModeCard extends StatelessWidget {
                   style: AppTypography.body(
                     size: 12,
                     weight: FontWeight.w600,
-                    color: a.text.withValues(alpha: 0.78),
+                    color: a.textSecondary,
                     height: 1.3,
                   ),
                 ),
@@ -735,7 +672,7 @@ class _ModeCard extends StatelessWidget {
               sessionHint!,
               style: AppTypography.label(
                 size: 11,
-                color: a.text.withValues(alpha: 0.55),
+                color: a.textFaint,
                 letterSpacing: 0.2,
               ),
             ),

@@ -1,6 +1,5 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:provider/provider.dart';
 import 'dart:async';
@@ -86,7 +85,9 @@ class _LoginScreenState extends State<LoginScreen> {
     final companions = context.read<CompanionService>();
     final rooms = context.read<RoomService>();
     unawaited(companions.applyCloudCodes(progress.companionCodes, progress));
-    unawaited(rooms.applyCloudCode(progress.activeRoomCode, progress: progress));
+    unawaited(
+      rooms.applyCloudCode(progress.activeRoomCode, progress: progress),
+    );
     unawaited(ContentCatalogService.instance.ensureLoaded());
 
     if (!mounted) return;
@@ -112,7 +113,6 @@ class _LoginScreenState extends State<LoginScreen> {
       _error = null;
       _entering = true;
     });
-    HapticFeedback.lightImpact();
 
     debugPrint('[STWAY:Auth] LoginScreen: tap Continuar com Google');
     final result = await backend.signInWithGoogle();
@@ -140,7 +140,6 @@ class _LoginScreenState extends State<LoginScreen> {
       _error = null;
       _entering = true;
     });
-    HapticFeedback.lightImpact();
 
     debugPrint('[STWAY:Auth] LoginScreen: tap Continuar com Apple');
     final result = await backend.signInWithApple();
@@ -195,15 +194,15 @@ class _LoginScreenState extends State<LoginScreen> {
               Text(
                 preparing ? 'Preparando sua jornada' : 'Entre para continuar',
                 textAlign: TextAlign.center,
-                style: AppTypography.display(size: 32),
+                style: AppTypography.display(size: 28),
               ),
               const SizedBox(height: AppSpace.md),
               Text(
                 preparing
-                    ? 'Carregando seus passos, dias e missões…'
-                    : 'Sua conta guarda seus passos, dias e missões — assim nada se perde entre aparelhos.',
+                    ? 'Carregando seus passos, sua sequência e suas cenas…'
+                    : 'Sua conta guarda seus passos, sua sequência e suas cenas — assim nada se perde entre aparelhos.',
                 textAlign: TextAlign.center,
-                style: AppTypography.body(color: a.textMuted(0.65)),
+                style: AppTypography.body(color: a.textSecondary),
               ),
               const Spacer(flex: 3),
               if (_error != null) ...[
@@ -229,63 +228,40 @@ class _LoginScreenState extends State<LoginScreen> {
                   children: [
                     if (!backend.isFirebaseReady &&
                         !backend.isInitializing) ...[
-                      OutlinedButton.icon(
-                        onPressed: busy ? null : () => backend.retry(),
-                        icon: const CinematicIcon(
-                          glyph: CinematicGlyph.refresh,
-                          size: 18,
-                          accent: Colors.white70,
-                          framed: false,
-                        ),
-                        label: Text(
-                          'Tentar reconectar',
-                          style: AppTypography.cta(color: Colors.white70),
-                        ),
-                        style: OutlinedButton.styleFrom(
-                          foregroundColor: Colors.white70,
-                          side: BorderSide(color: a.cardBorder),
-                          padding: const EdgeInsets.symmetric(
-                            vertical: AppSpace.md,
-                          ),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(AppRadii.lg),
-                          ),
-                        ),
+                      GhostCta(
+                        label: 'Tentar reconectar',
+                        leading: CinematicGlyph.refresh,
+                        expanded: true,
+                        onTap: busy ? null : () => backend.retry(),
                       ),
                       const SizedBox(height: AppSpace.sm),
                     ],
                     if (_showApple) ...[
                       Opacity(
                         opacity: busy ? 0.55 : 1,
-                        child: OutlinedButton.icon(
-                          onPressed: busy ? null : _signInWithApple,
-                          icon: busy
-                              ? const SizedBox(
-                                  width: 18,
-                                  height: 18,
-                                  child: CircularProgressIndicator(
-                                    strokeWidth: 2,
-                                    color: Colors.white,
-                                  ),
-                                )
-                              : const Icon(Icons.apple, size: 22),
-                          label: Text(
-                            busy ? 'Entrando…' : 'Continuar com Apple',
-                            style: AppTypography.cta(color: Colors.white),
-                          ),
-                          style: OutlinedButton.styleFrom(
-                            foregroundColor: Colors.white,
-                            backgroundColor: Colors.black.withValues(
-                              alpha: 0.55,
+                        // GhostCta só aceita CinematicGlyph no leading; o logo
+                        // da Apple (obrigatório no botão) fica sobreposto à esquerda.
+                        child: Stack(
+                          alignment: Alignment.centerLeft,
+                          children: [
+                            GhostCta(
+                              label: busy ? 'Entrando…' : 'Continuar com Apple',
+                              expanded: true,
+                              onTap: busy ? null : _signInWithApple,
                             ),
-                            side: BorderSide(color: a.cardBorder),
-                            padding: const EdgeInsets.symmetric(
-                              vertical: AppSpace.md,
+                            Positioned(
+                              left: AppSpace.lg,
+                              child: IgnorePointer(
+                                child: busy
+                                    ? AppSpinner(inline: true, color: a.text)
+                                    : Icon(
+                                        Icons.apple,
+                                        size: 22,
+                                        color: a.text,
+                                      ),
+                              ),
                             ),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(AppRadii.lg),
-                            ),
-                          ),
+                          ],
                         ),
                       ),
                       const SizedBox(height: AppSpace.sm),
@@ -307,7 +283,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 style: AppTypography.label(
                   size: 11,
                   letterSpacing: 0,
-                  color: a.textMuted(0.4),
+                  color: a.textFaint,
                 ),
               ),
               if (_versionLabel != null) ...[
@@ -318,7 +294,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   style: AppTypography.label(
                     size: 10,
                     letterSpacing: 0.8,
-                    color: a.textMuted(0.28),
+                    color: a.textFaint,
                   ),
                 ),
               ],

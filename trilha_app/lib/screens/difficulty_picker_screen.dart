@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:flutter/services.dart' show SystemUiOverlayStyle;
 import 'package:provider/provider.dart';
 import '../data/question_bank.dart';
 import '../data/trail_repository.dart';
@@ -10,9 +10,12 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
 import '../utils/difficulty_visuals.dart';
+import '../widgets/act_feel.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/mode_emblem.dart';
+import '../widgets/top_bar.dart';
+import '../widgets/ui_primitives.dart';
 
 /// Escolha cinematográfica de dificuldade ao iniciar a trilha de Gênesis.
 class DifficultyPickerScreen extends StatefulWidget {
@@ -43,11 +46,7 @@ class DifficultyPickerScreen extends StatefulWidget {
         final id = unlocked.isEmpty
             ? TrailDifficulty.semente.id
             : unlocked.first.id;
-        await progress.setTrailDifficulty(
-          trailSlug,
-          id,
-          missionSlugs: slugs,
-        );
+        await progress.setTrailDifficulty(trailSlug, id, missionSlugs: slugs);
         AnalyticsService.instance.logDifficultyPick(
           trailSlug: trailSlug,
           difficulty: id,
@@ -107,7 +106,7 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen>
   Future<void> _choose(DifficultyMeta meta) async {
     final progress = context.read<ProgressService>();
     if (!progress.isDifficultyUnlocked(widget.trailSlug, meta.difficulty)) {
-      HapticFeedback.selectionClick();
+      ActHaptics.tap();
       if (!mounted) return;
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
@@ -120,7 +119,7 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen>
       );
       return;
     }
-    HapticFeedback.mediumImpact();
+    ActHaptics.confirm();
     final trail = await TrailRepository().getTrailBySlug(widget.trailSlug);
     if (!mounted) return;
     if (!progress.hasDifficultyForTrail(widget.trailSlug)) {
@@ -168,37 +167,21 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen>
                   AppSpace.xxl,
                 ),
                 child: items == null
-                    ? const Center(
-                        child: CircularProgressIndicator(
-                          color: AppColors.accent,
-                        ),
-                      )
+                    ? const AppSpinner()
                     : Column(
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
-                          Align(
-                            alignment: Alignment.centerLeft,
-                            child: IconButton(
-                              onPressed: () => Navigator.pop(context),
-                              icon: Container(
-                                width: 40,
-                                height: 40,
-                                decoration: BoxDecoration(
-                                  color: appearance.cardFillSoft,
-                                  borderRadius: BorderRadius.circular(
-                                    AppRadii.sm,
-                                  ),
-                                ),
-                                child: CinematicIcon(
-                                  glyph: CinematicGlyph.close,
-                                  size: 22,
-                                  accent: appearance.text,
-                                  framed: false,
-                                ),
-                              ),
+                          TopBar(
+                            inline: true,
+                            immersive: true,
+                            dark: true,
+                            title: 'Antes de partir',
+                            onBack: () => Navigator.pop(context),
+                            leadingGlyph: CinematicGlyphResolver.forTrail(
+                              widget.trailSlug,
                             ),
                           ),
-                          const SizedBox(height: AppSpace.sm),
+                          const SizedBox(height: AppSpace.xl),
                           FadeTransition(
                             opacity: CurvedAnimation(
                               parent: _enter,
@@ -210,16 +193,6 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen>
                             ),
                             child: Column(
                               children: [
-                                Text(
-                                  'Antes de partir',
-                                  textAlign: TextAlign.center,
-                                  style: AppTypography.label(
-                                    size: 13,
-                                    letterSpacing: 1.4,
-                                    color: AppColors.accent,
-                                  ),
-                                ),
-                                const SizedBox(height: AppSpace.sm),
                                 Text(
                                   'Escolha o modo\nde dificuldade',
                                   textAlign: TextAlign.center,
@@ -235,7 +208,7 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen>
                                   style: AppTypography.body(
                                     size: 13,
                                     height: 1.4,
-                                    color: appearance.textMuted(0.7),
+                                    color: appearance.textSecondary,
                                   ),
                                 ),
                               ],
@@ -337,12 +310,11 @@ class _DifficultyCard extends StatelessWidget {
     final a = Appearance.of(context);
     final color = DifficultyVisuals.accentFor(meta.difficulty);
     final onSky = DifficultyVisuals.onSky(color);
-    final ink = DifficultyVisuals.inkOn(meta.difficulty);
     final lit = (current || selected) && !locked;
     final xpLabel = meta.stepsMultiplier == 1
         ? 'Passos padrão'
         : '+${((meta.stepsMultiplier - 1) * 100).round()}% passos';
-    final titleColor = locked ? a.textMuted(0.62) : onSky;
+    final titleColor = locked ? a.textSecondary : onSky;
     final railColor = locked ? color.withValues(alpha: 0.35) : onSky;
 
     return Material(
@@ -429,76 +401,28 @@ class _DifficultyCard extends StatelessWidget {
                                 ),
                               ),
                               if (current && !locked)
-                                Container(
-                                  padding: const EdgeInsets.symmetric(
-                                    horizontal: AppSpace.sm + 2,
-                                    vertical: 3,
-                                  ),
-                                  decoration: BoxDecoration(
-                                    color: color,
-                                    borderRadius: BorderRadius.circular(
-                                      AppRadii.pill,
-                                    ),
-                                  ),
-                                  child: Text(
-                                    'Modo atual',
-                                    style: AppTypography.label(
-                                      size: 10,
-                                      color: ink,
-                                      letterSpacing: 0.4,
-                                    ),
-                                  ),
+                                SoftBadge(
+                                  text: 'Modo atual',
+                                  accent: color,
+                                  solid: true,
                                 ),
                               if (cleared)
-                                Container(
-                                  padding: const EdgeInsets.symmetric(
-                                    horizontal: AppSpace.sm + 2,
-                                    vertical: 3,
-                                  ),
-                                  decoration: BoxDecoration(
-                                    color: color.withValues(alpha: 0.28),
-                                    borderRadius: BorderRadius.circular(
-                                      AppRadii.pill,
-                                    ),
-                                  ),
-                                  child: Text(
-                                    'Concluído',
-                                    style: AppTypography.label(
-                                      size: 10,
-                                      color: ink,
-                                      letterSpacing: 0.4,
-                                    ),
-                                  ),
-                                ),
+                                SoftBadge(text: 'Concluído', accent: color),
                               if (locked)
                                 Text(
                                   'Bloqueado',
                                   style: AppTypography.label(
                                     size: 10,
-                                    color: a.textMuted(0.54),
+                                    color: a.textFaint,
                                     letterSpacing: 0.4,
                                   ),
                                 )
                               else
-                                Container(
-                                  padding: const EdgeInsets.symmetric(
-                                    horizontal: AppSpace.sm,
-                                    vertical: 3,
-                                  ),
-                                  decoration: BoxDecoration(
-                                    color: color.withValues(alpha: 0.28),
-                                    borderRadius: BorderRadius.circular(
-                                      AppRadii.pill,
-                                    ),
-                                  ),
-                                  child: Text(
-                                    xpLabel,
-                                    style: AppTypography.label(
-                                      size: 10,
-                                      color: color,
-                                      letterSpacing: 0.4,
-                                    ),
-                                  ),
+                                SoftBadge(
+                                  text: xpLabel,
+                                  accent: color,
+                                  textColor: color,
+                                  bordered: false,
                                 ),
                             ],
                           ),
@@ -507,7 +431,7 @@ class _DifficultyCard extends StatelessWidget {
                             locked ? 'Conclua o modo anterior' : meta.subtitle,
                             style: AppTypography.title(
                               size: 12,
-                              color: locked ? a.textMuted(0.55) : color,
+                              color: locked ? a.textFaint : color,
                             ),
                           ),
                           const SizedBox(height: AppSpace.xs),
@@ -518,9 +442,7 @@ class _DifficultyCard extends StatelessWidget {
                             style: AppTypography.body(
                               size: 13,
                               height: 1.35,
-                              color: locked
-                                  ? a.textMuted(0.5)
-                                  : a.text.withValues(alpha: 0.88),
+                              color: locked ? a.textFaint : a.text,
                             ),
                           ),
                         ],

@@ -3,12 +3,12 @@ import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
 import '../services/bible_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
+import 'app_sheet.dart';
 import 'stway_brand.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
@@ -21,10 +21,8 @@ Future<void> showShareVerseSheet(
   required int verse,
   required String text,
 }) {
-  return showModalBottomSheet<void>(
-    context: context,
-    isScrollControlled: true,
-    backgroundColor: Colors.transparent,
+  return showAppSheet<void>(
+    context,
     builder: (_) => _ShareVerseSheet(
       bookName: bookName,
       chapter: chapter,
@@ -62,14 +60,8 @@ class _ShareVerseSheetState extends State<_ShareVerseSheet> {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (!mounted) return;
-      precacheImage(
-        const AssetImage('assets/icon/splash_bg.png'),
-        context,
-      );
-      precacheImage(
-        const AssetImage('assets/icon/app_icon.png'),
-        context,
-      );
+      precacheImage(const AssetImage('assets/icon/splash_bg.png'), context);
+      precacheImage(const AssetImage('assets/icon/app_icon.png'), context);
     });
   }
 
@@ -81,12 +73,12 @@ class _ShareVerseSheetState extends State<_ShareVerseSheet> {
   Future<void> _shareImage() async {
     if (_busy) return;
     setState(() => _busy = true);
-    HapticFeedback.lightImpact();
     try {
       await Future<void>.delayed(const Duration(milliseconds: 50));
       await WidgetsBinding.instance.endOfFrame;
       final boundary =
-          _boundaryKey.currentContext?.findRenderObject() as RenderRepaintBoundary?;
+          _boundaryKey.currentContext?.findRenderObject()
+              as RenderRepaintBoundary?;
       if (boundary == null) return;
       final image = await boundary.toImage(pixelRatio: 3);
       final bytes = await image.toByteData(format: ui.ImageByteFormat.png);
@@ -110,8 +102,8 @@ class _ShareVerseSheetState extends State<_ShareVerseSheet> {
   }
 
   Future<void> _shareText() async {
-    HapticFeedback.lightImpact();
-    final body = '''
+    final body =
+        '''
 “${widget.text}”
 
 — $_ref
@@ -119,7 +111,7 @@ ${BibleService.translationName}
 
 Via Stway
 '''
-        .trim();
+            .trim();
     await SharePlus.instance.share(
       ShareParams(text: body, subject: '$_ref — Stway'),
     );
@@ -128,36 +120,11 @@ Via Stway
 
   @override
   Widget build(BuildContext context) {
-    final bottom = MediaQuery.of(context).padding.bottom;
-    return Container(
-      margin: const EdgeInsets.fromLTRB(12, 0, 12, 12),
-      padding: EdgeInsets.fromLTRB(18, 14, 18, 14 + bottom),
-      decoration: BoxDecoration(
-        color: AppColors.sheet,
-        borderRadius: BorderRadius.circular(AppRadii.lg),
-        border: Border.all(color: Colors.white.withValues(alpha: 0.1)),
-      ),
+    return AppSheetPanel(
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Container(
-            width: 36,
-            height: 4,
-            decoration: BoxDecoration(
-              color: Colors.white.withValues(alpha: 0.25),
-              borderRadius: BorderRadius.circular(2),
-            ),
-          ),
-          const SizedBox(height: 14),
-          Text(
-            'Compartilhar versículo',
-            style: AppTypography.label(
-              size: 13,
-              weight: FontWeight.w900,
-              letterSpacing: 0.6,
-              color: Colors.white.withValues(alpha: 0.7),
-            ),
-          ),
+          const AppSheetHeader(title: 'Compartilhar versículo', center: true),
           const SizedBox(height: 14),
           RepaintBoundary(
             key: _boundaryKey,
@@ -178,15 +145,9 @@ Via Stway
             busy: _busy,
           ),
           const SizedBox(height: AppSpace.sm),
-          TextButton(
-            onPressed: _busy ? null : _shareText,
-            child: Text(
-              'Compartilhar como texto',
-              style: AppTypography.title(
-                weight: FontWeight.w700,
-                color: Colors.white.withValues(alpha: 0.7),
-              ),
-            ),
+          TextCta(
+            label: 'Compartilhar como texto',
+            onTap: _busy ? null : _shareText,
           ),
         ],
       ),
@@ -278,36 +239,37 @@ class ShareVerseCard extends StatelessWidget {
                   const SizedBox(height: 22),
                   Text(
                     '“$text”',
-                    style: AppTypography.display(
-                      size: 22,
-                      height: 1.35,
-                      weight: FontWeight.w600,
-                      color: Colors.white.withValues(alpha: 0.96),
-                    ).copyWith(
-                      shadows: [
-                        Shadow(
-                          color: Colors.black.withValues(alpha: 0.55),
-                          blurRadius: 12,
-                          offset: const Offset(0, 2),
+                    style:
+                        AppTypography.display(
+                          size: 20,
+                          height: 1.35,
+                          weight: FontWeight.w600,
+                          color: Colors.white.withValues(alpha: 0.96),
+                        ).copyWith(
+                          shadows: [
+                            Shadow(
+                              color: Colors.black.withValues(alpha: 0.55),
+                              blurRadius: 12,
+                              offset: const Offset(0, 2),
+                            ),
+                          ],
                         ),
-                      ],
-                    ),
                   ),
                   const SizedBox(height: 22),
                   Text(
                     '$bookName $chapter:$verse',
-                    style: AppTypography.title(
-                      size: 13,
-                      weight: FontWeight.w800,
-                      color: AppColors.accent.withValues(alpha: 0.95),
-                    ).copyWith(
-                      shadows: [
-                        Shadow(
-                          color: Colors.black.withValues(alpha: 0.45),
-                          blurRadius: 8,
+                    style:
+                        AppTypography.title(
+                          size: 12,
+                          color: AppColors.accent.withValues(alpha: 0.95),
+                        ).copyWith(
+                          shadows: [
+                            Shadow(
+                              color: Colors.black.withValues(alpha: 0.45),
+                              blurRadius: 8,
+                            ),
+                          ],
                         ),
-                      ],
-                    ),
                   ),
                   const SizedBox(height: AppSpace.xs),
                   Text(

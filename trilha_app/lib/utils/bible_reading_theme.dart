@@ -2,6 +2,24 @@ import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 import 'appearance.dart';
 
+/// Papel da página de leitura — escolha no painel "Aa" do leitor.
+enum BiblePaper {
+  auto('Automático'),
+  light('Clara'),
+  sepia('Sépia'),
+  night('Noite');
+
+  final String label;
+  const BiblePaper(this.label);
+
+  static BiblePaper of({required bool? readingNight, required bool sepia}) {
+    if (readingNight == true) return BiblePaper.night;
+    if (sepia) return BiblePaper.sepia;
+    if (readingNight == false) return BiblePaper.light;
+    return BiblePaper.auto;
+  }
+}
+
 /// Tema de leitura bíblica — contraste alto no sol, suave à noite.
 /// Independente do visual do app: a página pode ser noite só para ler.
 /// O tamanho da fonte segue a escala global do app ([MediaQuery.textScaler]).
@@ -56,8 +74,28 @@ class BibleReadingStyle {
   static BibleReadingStyle resolve(
     AppearanceStyle appearance, {
     bool? readingNight,
+    bool sepia = false,
   }) {
     final isDay = readingNight == null ? appearance.isDay : !readingNight;
+    if (isDay && sepia) {
+      const ink = Color(0xFF3B2A1A);
+      const muted = Color(0xFF7A6248);
+      const mark = Color(0xFF9A5B1E);
+      return BibleReadingStyle(
+        isDay: true,
+        page: const Color(0xFFF4E9D4),
+        pageBorder: muted.withValues(alpha: 0.28),
+        ink: ink,
+        inkMuted: muted,
+        verseNumber: mark,
+        highlightFill: const Color(0xFFE8C77A).withValues(alpha: 0.45),
+        highlightBorder: mark,
+        savedFill: mark.withValues(alpha: 0.1),
+        chrome: const Color(0xFFF4E9D4),
+        chromeBorder: muted.withValues(alpha: 0.35),
+        chipFill: const Color(0xFFE8DAC0),
+      );
+    }
     if (isDay) {
       return BibleReadingStyle(
         isDay: true,

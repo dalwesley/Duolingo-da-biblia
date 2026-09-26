@@ -40,14 +40,16 @@ class SoundService {
 
   void setEnabled(bool value) => _enabled = value;
 
+  // Acerto vibra firme, erro vibra pesado — o acerto nunca pode
+  // parecer mais fraco que o erro.
   Future<void> playCorrect() async {
-    HapticFeedback.lightImpact();
+    HapticFeedback.mediumImpact();
     if (!_enabled) return;
     await _playAsset('sounds/correct.mp3', fallback: SystemSoundType.click);
   }
 
   Future<void> playWrong() async {
-    HapticFeedback.mediumImpact();
+    HapticFeedback.heavyImpact();
     if (!_enabled) return;
     await _playAsset('sounds/wrong.mp3', fallback: SystemSoundType.alert);
   }
@@ -55,7 +57,10 @@ class SoundService {
   Future<void> playComplete({bool boss = false}) async {
     HapticFeedback.heavyImpact();
     if (!_enabled) return;
-    await _playAsset(boss ? 'sounds/boss_complete.mp3' : 'sounds/complete.mp3', fallback: SystemSoundType.click);
+    await _playAsset(
+      boss ? 'sounds/boss_complete.mp3' : 'sounds/complete.mp3',
+      fallback: SystemSoundType.click,
+    );
   }
 
   Future<void> playStreak() async {
@@ -64,7 +69,10 @@ class SoundService {
     await _playAsset('sounds/streak.mp3', fallback: SystemSoundType.click);
   }
 
-  Future<void> _playAsset(String asset, {required SystemSoundType fallback}) async {
+  Future<void> _playAsset(
+    String asset, {
+    required SystemSoundType fallback,
+  }) async {
     final player = _player;
     if (!_available || player == null) {
       await SystemSound.play(fallback);

@@ -66,6 +66,7 @@ class TrilhaApp extends StatelessWidget {
           create: (ctx) => RoomService(ctx.read<BackendService>())..init(),
           update: (_, backend, previous) {
             final room = previous ?? RoomService(backend);
+            room.ensureInviteListener();
             if (backend.isActive && !room.hasRoom) {
               room.syncIfNeeded();
             }

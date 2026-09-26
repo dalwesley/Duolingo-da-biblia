@@ -38,10 +38,10 @@ class TomorrowHook {
   }
 
   String get kicker => trailJustCompleted
-      ? 'PRÓXIMA TRILHA'
+      ? 'Próxima trilha'
       : hasEcho
-      ? 'HOJE VOCÊ VIU'
-      : 'AMANHÃ';
+      ? 'Hoje você viu'
+      : 'Amanhã';
 
   /// Linha do cartão de celebração: a fome, não a porta.
   String get trailer {

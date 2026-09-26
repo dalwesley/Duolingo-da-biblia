@@ -24,7 +24,7 @@ class SeasonWalkCatalog {
         id: 'advento-2026',
         kind: SeasonWalkKind.advent,
         title: 'Advento 2026',
-        subtitle: 'Espera do Verbo · um passo por dia',
+        subtitle: 'Espera do Verbo · uma cena por dia',
         start: DateTime(start.year, start.month, start.day),
         days: _advent,
       );

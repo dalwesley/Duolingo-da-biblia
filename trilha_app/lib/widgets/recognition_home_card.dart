@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
 import '../models/recognition.dart';
 import '../services/recognition_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import 'cinematic_icon.dart';
 import 'immersive_background.dart';
 import 'recognition_history_sheet.dart';
 import 'ui_primitives.dart';
 
 /// Nota na Home quando alguém reconheceu a caminhada ou uma medalha.
 ///
-/// Cada reconhecimento é uma linha com um coração. Recebi é o botão do app.
+/// Cada reconhecimento é uma linha com um coração. Entendi é o botão do app.
 class RecognitionHomeCard extends StatelessWidget {
   final List<Recognition> items;
 
@@ -40,12 +40,11 @@ class RecognitionHomeCard extends StatelessWidget {
           _HeartList(groups: groups, single: single, style: a),
           const SizedBox(height: 16),
           CopperCta(
-            label: 'Recebi',
+            label: 'Entendi',
             dense: true,
             leading: null,
             trailing: null,
             onTap: () async {
-              HapticFeedback.lightImpact();
               final service = context.read<RecognitionService>();
               await service.acknowledgeIncoming();
               if (!context.mounted) return;
@@ -53,21 +52,11 @@ class RecognitionHomeCard extends StatelessWidget {
               await showRecognitionHistorySheet(context);
             },
           ),
-          const SizedBox(height: 4),
-          Center(
-            child: TextButton(
-              onPressed: () {
-                HapticFeedback.selectionClick();
-                showRecognitionHistorySheet(context);
-              },
-              child: Text(
-                'Ver quem reconheceu',
-                style: AppTypography.cta(
-                  size: 13,
-                  color: AppColors.accent,
-                ),
-              ),
-            ),
+          const SizedBox(height: AppSpace.sm),
+          GhostCta(
+            label: 'Ver quem reconheceu',
+            expanded: true,
+            onTap: () => showRecognitionHistorySheet(context),
           ),
         ],
       ),
@@ -107,10 +96,11 @@ class _HeartList extends StatelessWidget {
             children: [
               const Padding(
                 padding: EdgeInsets.only(top: 2),
-                child: Icon(
-                  Icons.favorite_rounded,
-                  size: 15,
-                  color: AppColors.clay,
+                child: CinematicIcon(
+                  glyph: CinematicGlyph.heart,
+                  size: 16,
+                  accent: AppColors.clay,
+                  framed: false,
                 ),
               ),
               const SizedBox(width: 8),
@@ -118,10 +108,10 @@ class _HeartList extends StatelessWidget {
                 child: Text(
                   labels[i],
                   style: AppTypography.body(
-                    size: 15,
+                    size: 14,
                     weight: FontWeight.w600,
                     height: 1.3,
-                    color: style.textMuted(0.82),
+                    color: style.textSecondary,
                   ),
                 ),
               ),

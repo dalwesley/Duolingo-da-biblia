@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/network_reachability.dart';
+import 'app_sheet.dart';
 import 'ui_primitives.dart';
 
 /// Diálogo: currículo ainda não baixou (rede, Firebase ou 1ª abertura).
@@ -15,10 +16,9 @@ Future<bool> showOfflineCurriculumDialog(
   if (_offlineDialogOpen) return false;
   _offlineDialogOpen = true;
   try {
-    final result = await showDialog<bool>(
-      context: context,
+    final result = await showAppDialog<bool>(
+      context,
       barrierDismissible: false,
-      barrierColor: Colors.black.withValues(alpha: 0.72),
       builder: (ctx) => _OfflineCurriculumDialog(onRetry: onRetry),
     );
     return result == true;
@@ -95,66 +95,45 @@ class _OfflineCurriculumDialogState extends State<_OfflineCurriculumDialog>
     final a = Appearance.of(context);
     final accent = AppColors.ember;
 
-    return Dialog(
-      backgroundColor: Colors.transparent,
-      insetPadding: const EdgeInsets.symmetric(horizontal: 28),
-      child: PopScope(
-        canPop: false,
-        child: Container(
-          padding: const EdgeInsets.fromLTRB(22, 26, 22, 20),
-          decoration: BoxDecoration(
-            color: Color.lerp(a.cardFill, accent, 0.06),
-            borderRadius: BorderRadius.circular(AppRadii.lg),
-            border: Border.all(color: accent.withValues(alpha: 0.4)),
-            boxShadow: AppTheme.cardShadow(elevated: true),
-          ),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              AnimatedBuilder(
-                animation: _pulse,
-                builder: (context, child) {
-                  final t = _pulse.value;
-                  return Transform.scale(
-                    scale: 0.96 + 0.04 * t,
-                    child: Opacity(
-                      opacity: 0.82 + 0.18 * t,
-                      child: child,
-                    ),
-                  );
-                },
-                child: const _DisconnectedTrailIcon(size: 88),
+    return PopScope(
+      canPop: false,
+      child: AppDialog(
+        title: 'Missões ainda não chegaram',
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            AnimatedBuilder(
+              animation: _pulse,
+              builder: (context, child) {
+                final t = _pulse.value;
+                return Transform.scale(
+                  scale: 0.96 + 0.04 * t,
+                  child: Opacity(opacity: 0.82 + 0.18 * t, child: child),
+                );
+              },
+              child: const _DisconnectedTrailIcon(size: 88),
+            ),
+            const SizedBox(height: AppSpace.md),
+            Text(
+              'Na primeira abertura o STWAY baixa o currículo da nuvem. Precisa de internet uma vez — depois fica no aparelho.',
+              textAlign: TextAlign.center,
+              style: AppTypography.body(
+                size: 14,
+                height: 1.4,
+                weight: FontWeight.w600,
+                color: a.textMuted(0.72),
               ),
-              const SizedBox(height: 18),
-              Text(
-                'Missões ainda não chegaram',
-                textAlign: TextAlign.center,
-                style: AppTypography.title(size: 20, color: a.text),
-              ),
-              const SizedBox(height: 10),
-              Text(
-                'Na primeira abertura o STWAY baixa o currículo da nuvem. Precisa de internet uma vez — depois fica no aparelho.',
-                textAlign: TextAlign.center,
-                style: AppTypography.body(
-                  size: 14,
-                  height: 1.4,
-                  weight: FontWeight.w600,
-                  color: a.textMuted(0.72),
+            ),
+            if (_hint != null) ...[
+              const SizedBox(height: 14),
+              InsetPanel(
+                borderColor: accent.withValues(alpha: 0.3),
+                padding: const EdgeInsets.symmetric(
+                  horizontal: 12,
+                  vertical: 10,
                 ),
-              ),
-              if (_hint != null) ...[
-                const SizedBox(height: 14),
-                Container(
+                child: SizedBox(
                   width: double.infinity,
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 12,
-                    vertical: 10,
-                  ),
-                  decoration: BoxDecoration(
-                    color: accent.withValues(alpha: 0.12),
-                    borderRadius: BorderRadius.circular(AppRadii.md),
-                    border: Border.all(color: accent.withValues(alpha: 0.3)),
-                  ),
                   child: Text(
                     _hint!,
                     textAlign: TextAlign.center,
@@ -165,16 +144,17 @@ class _OfflineCurriculumDialogState extends State<_OfflineCurriculumDialog>
                     ),
                   ),
                 ),
-              ],
-              const SizedBox(height: 22),
-              CopperCta(
-                label: _busy ? 'Baixando…' : 'Tentar de novo',
-                onTap: _busy ? null : _retry,
-                showArrow: false,
               ),
             ],
-          ),
+          ],
         ),
+        actions: [
+          CopperCta(
+            label: _busy ? 'Baixando…' : 'Tentar de novo',
+            onTap: _busy ? null : _retry,
+            showArrow: false,
+          ),
+        ],
       ),
     );
   }
@@ -264,8 +244,16 @@ class _DisconnectedTrailPainter extends CustomPainter {
     canvas.drawPath(right, pathPaint);
 
     final node = Paint()..color = Colors.white.withValues(alpha: 0.9);
-    canvas.drawCircle(Offset(c.dx - s * 0.32, c.dy + s * 0.22), s * 0.045, node);
-    canvas.drawCircle(Offset(c.dx + s * 0.32, c.dy - s * 0.02), s * 0.045, node);
+    canvas.drawCircle(
+      Offset(c.dx - s * 0.32, c.dy + s * 0.22),
+      s * 0.045,
+      node,
+    );
+    canvas.drawCircle(
+      Offset(c.dx + s * 0.32, c.dy - s * 0.02),
+      s * 0.045,
+      node,
+    );
 
     final gapCenter = Offset(c.dx, c.dy + s * 0.06);
     canvas.drawCircle(

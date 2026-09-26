@@ -118,11 +118,13 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
       widget.selected,
     ].whereType<String>().join(' ');
     if (existing.isNotEmpty) {
-      setState(() => _verseText = SessionComposer.clipFeedbackPassage(
-            existing,
-            hint: hint,
-            maxWords: 24,
-          ));
+      setState(
+        () => _verseText = SessionComposer.clipFeedbackPassage(
+          existing,
+          hint: hint,
+          maxWords: 24,
+        ),
+      );
       return;
     }
     final ref = (widget.exercise.reference ?? '').trim();
@@ -132,11 +134,13 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
       translationId: BibleService.palcoTranslationId,
     );
     if (!mounted || full == null || full.trim().isEmpty) return;
-    setState(() => _verseText = SessionComposer.clipFeedbackPassage(
-          full.trim(),
-          hint: hint,
-          maxWords: 24,
-        ));
+    setState(
+      () => _verseText = SessionComposer.clipFeedbackPassage(
+        full.trim(),
+        hint: hint,
+        maxWords: 24,
+      ),
+    );
   }
 
   Future<void> _report() async {
@@ -193,18 +197,18 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
     final title = outOfLamps
         ? 'Sem lâmpadas'
         : isCorrect
-            ? 'Acertou'
-            : 'Quase';
+        ? 'Acertou'
+        : 'Quase';
     final cta = outOfLamps
         ? 'Encerrar com passos parciais'
         : isCorrect
-            ? (widget.isLast ? 'Seguir' : 'Continuar')
-            : 'Tentar de novo';
+        ? 'Continuar'
+        : 'Tentar de novo';
     final glyph = outOfLamps
         ? CinematicGlyph.lamp
         : isCorrect
-            ? CinematicGlyph.check
-            : CinematicGlyph.wrong;
+        ? CinematicGlyph.check
+        : CinematicGlyph.wrong;
     final verse = (_verseText ?? '').trim();
     final ref = (exercise.reference ?? '').trim();
     final showVerse = _needsEvidence && verse.isNotEmpty;
@@ -217,7 +221,9 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
           children: [
             ModalBarrier(
               dismissible: false,
-              color: Colors.black.withValues(alpha: 0.58 * _scrim.value),
+              color: AppColors.scrim.withValues(
+                alpha: AppColors.scrim.a * _scrim.value,
+              ),
             ),
             child!,
           ],
@@ -248,105 +254,99 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 28),
                     child: DecoratedBox(
-                    decoration: BoxDecoration(
-                      color: Color.lerp(a.cardFill, color, 0.08),
-                      borderRadius: BorderRadius.circular(AppRadii.xl),
-                      border: Border.all(
-                        color: color.withValues(alpha: 0.45),
-                        width: 1.4,
+                      decoration: BoxDecoration(
+                        color: Color.lerp(a.cardFill, color, 0.08),
+                        borderRadius: BorderRadius.circular(AppRadii.sheet),
+                        border: Border.all(
+                          color: color.withValues(alpha: 0.45),
+                          width: 1.4,
+                        ),
+                        boxShadow: [...AppTheme.cardShadow(elevated: true)],
                       ),
-                      boxShadow: [
-                        ...AppTheme.cardShadow(elevated: true),
-                      ],
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.fromLTRB(22, 14, 10, 20),
-                      child: Column(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Align(
-                            alignment: Alignment.centerRight,
-                            child: IconButton(
-                              tooltip: 'Relatar problema nesta pergunta',
-                              onPressed: _report,
-                              visualDensity: VisualDensity.compact,
-                              padding: EdgeInsets.zero,
-                              constraints: const BoxConstraints(
-                                minWidth: 36,
-                                minHeight: 36,
-                              ),
-                              icon: CinematicIcon(
-                                glyph: CinematicGlyph.flag,
-                                size: 18,
-                                accent: AppColors.textOnDark.withValues(
-                                  alpha: 0.38,
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(22, 14, 10, 20),
+                        child: Column(
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Align(
+                              alignment: Alignment.centerRight,
+                              child: IconButton(
+                                tooltip: 'Relatar problema nesta pergunta',
+                                onPressed: _report,
+                                visualDensity: VisualDensity.compact,
+                                padding: EdgeInsets.zero,
+                                constraints: const BoxConstraints(
+                                  minWidth: 36,
+                                  minHeight: 36,
                                 ),
-                                framed: false,
+                                icon: CinematicIcon(
+                                  glyph: CinematicGlyph.flag,
+                                  size: 18,
+                                  accent: a.textFaint,
+                                  framed: false,
+                                ),
                               ),
                             ),
-                          ),
-                          _VerdictMark(
-                            glyph: glyph,
-                            color: color,
-                            enter: _enter,
-                            pulse: _pulse,
-                          ),
-                          const SizedBox(height: 18),
-                          Text(
-                            title,
-                            textAlign: TextAlign.center,
-                            style: AppTypography.display(
-                              size: 28,
-                              height: 1.1,
+                            _VerdictMark(
+                              glyph: glyph,
                               color: color,
+                              enter: _enter,
+                              pulse: _pulse,
                             ),
-                          ),
-                          if (feedback.isNotEmpty) ...[
-                            const SizedBox(height: 10),
-                            Padding(
-                              padding: const EdgeInsets.only(right: 12),
-                              child: Text(
-                                feedback,
-                                textAlign: TextAlign.center,
-                                style: AppTypography.body(
-                                  size: 15,
-                                  weight: FontWeight.w700,
-                                  height: 1.4,
-                                  color: AppColors.textOnDark.withValues(
-                                    alpha: 0.9,
+                            const SizedBox(height: 18),
+                            Text(
+                              title,
+                              textAlign: TextAlign.center,
+                              style: AppTypography.display(
+                                size: 28,
+                                height: 1.1,
+                                color: color,
+                              ),
+                            ),
+                            if (feedback.isNotEmpty) ...[
+                              const SizedBox(height: 10),
+                              Padding(
+                                padding: const EdgeInsets.only(right: 12),
+                                child: Text(
+                                  feedback,
+                                  textAlign: TextAlign.center,
+                                  style: AppTypography.body(
+                                    size: 14,
+                                    weight: FontWeight.w700,
+                                    height: 1.4,
+                                    color: a.text,
                                   ),
                                 ),
                               ),
-                            ),
-                          ],
-                          if (showVerse) ...[
-                            const SizedBox(height: 16),
+                            ],
+                            if (showVerse) ...[
+                              const SizedBox(height: 16),
+                              Padding(
+                                padding: const EdgeInsets.only(right: 12),
+                                child: _VerseWell(
+                                  reference: ref,
+                                  verse: verse,
+                                  accent: color,
+                                ),
+                              ),
+                            ],
+                            const SizedBox(height: 22),
                             Padding(
                               padding: const EdgeInsets.only(right: 12),
-                              child: _VerseWell(
-                                reference: ref,
-                                verse: verse,
-                                accent: color,
+                              child: CopperCta(
+                                label: cta,
+                                onTap: widget.onContinue,
+                                trailing: isCorrect
+                                    ? CinematicGlyph.forward
+                                    : CinematicGlyph.refresh,
+                                showArrow: false,
                               ),
                             ),
                           ],
-                          const SizedBox(height: 22),
-                          Padding(
-                            padding: const EdgeInsets.only(right: 12),
-                            child: CopperCta(
-                              label: cta,
-                              onTap: widget.onContinue,
-                              trailing: isCorrect
-                                  ? CinematicGlyph.forward
-                                  : CinematicGlyph.refresh,
-                              showArrow: false,
-                            ),
-                          ),
-                        ],
+                        ),
                       ),
                     ),
                   ),
-                ),
                 ),
               ),
             ),
@@ -376,9 +376,11 @@ class _VerdictMark extends StatelessWidget {
       animation: Listenable.merge([enter, pulse]),
       builder: (context, child) {
         final appear = Curves.easeOutBack.transform(
-          Interval(0.18, 1, curve: Curves.linear)
-              .transform(enter.value)
-              .clamp(0.0, 1.0),
+          Interval(
+            0.18,
+            1,
+            curve: Curves.linear,
+          ).transform(enter.value).clamp(0.0, 1.0),
         );
         final p = pulse.value;
         final tilt = (1 - appear) * 0.18;
@@ -440,14 +442,12 @@ class _VerseWell extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return DecoratedBox(
-      decoration: BoxDecoration(
-        color: Colors.black.withValues(alpha: 0.22),
-        borderRadius: BorderRadius.circular(AppRadii.md),
-        border: Border.all(color: accent.withValues(alpha: 0.22)),
-      ),
-      child: Padding(
-        padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
+    final a = Appearance.of(context);
+    return InsetPanel(
+      borderColor: accent.withValues(alpha: 0.22),
+      padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
+      child: SizedBox(
+        width: double.infinity,
         child: Column(
           children: [
             if (reference.isNotEmpty)
@@ -470,7 +470,7 @@ class _VerseWell extends StatelessWidget {
                 size: 15,
                 weight: FontWeight.w600,
                 height: 1.4,
-                color: AppColors.textOnDark.withValues(alpha: 0.82),
+                color: a.textSecondary,
               ),
             ),
           ],

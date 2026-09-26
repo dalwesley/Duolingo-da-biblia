@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/layout_utils.dart';
+import 'act_feel.dart';
 import 'cinematic_icon.dart';
 
 /// Tokens visuais compartilhados — barras, labels e badges iguais em toda a app.
@@ -70,20 +71,28 @@ class AppMetrics {
     ];
   }
 
-  /// Sombra do CTA — só apoio, sem halo de cor.
+  /// Brilho do CTA ouro — o mesmo do botão do site
+  /// (`0 12px 34px rgba(247,187,1,.26)`).
   static List<BoxShadow> accentGlow({
-    double blur = 10,
-    double alpha = 0.22,
-    Offset offset = const Offset(0, 4),
+    double blur = 34,
+    double alpha = 0.26,
+    Offset offset = const Offset(0, 12),
     Color? color,
-  }) => const [];
+  }) => [
+    BoxShadow(
+      color: (color ?? AppColors.accent).withValues(alpha: alpha),
+      blurRadius: blur,
+      offset: offset,
+    ),
+  ];
 }
 
-/// Botão CTA açafrão — ação principal em cards, sheets e telas.
+/// Botão CTA ouro — ação principal em cards, sheets e telas.
 ///
-/// Padrão: fill [AppColors.accent] chapado, raio [AppRadii.md],
-/// [AppTypography.cta], tinta [AppColors.inkOnAccent].
-class CopperCta extends StatelessWidget {
+/// Mesmo padrão do botão do site (`.btn-gold`): fill [AppColors.accent],
+/// raio [AppRadii.md], altura fixa (52; 44 quando [dense]), texto normal
+/// (sem caixa alta), brilho dourado embaixo e leve aperto no toque.
+class CopperCta extends StatefulWidget {
   final String label;
   final VoidCallback? onTap;
   final CinematicGlyph? trailing;
@@ -92,8 +101,14 @@ class CopperCta extends StatelessWidget {
   final EdgeInsetsGeometry? padding;
   final bool showArrow;
   final bool dense;
+
+  /// Brilho dourado. Ligado por padrão (padrão do site); desligue em
+  /// listas densas onde vários botões ficam lado a lado.
   final bool showGlow;
   final bool busy;
+
+  static const height = 52.0;
+  static const denseHeight = 44.0;
 
   const CopperCta({
     super.key,
@@ -105,86 +120,132 @@ class CopperCta extends StatelessWidget {
     this.padding,
     this.showArrow = false,
     this.dense = false,
-    this.showGlow = false,
+    this.showGlow = true,
     this.busy = false,
   });
 
+  /// Texto do botão: Nunito 700, espaçamento leve — como no site.
+  static TextStyle labelStyle({double size = 16, Color? color}) =>
+      AppTypography.body(
+        size: size,
+        weight: FontWeight.w700,
+        color: color ?? AppColors.inkOnAccent,
+      ).copyWith(letterSpacing: 0.32, height: 1.1);
+
+  @override
+  State<CopperCta> createState() => _CopperCtaState();
+}
+
+class _CopperCtaState extends State<CopperCta> {
+  bool _down = false;
+
+  void _press(bool down) {
+    if (_down != down) setState(() => _down = down);
+  }
+
   @override
   Widget build(BuildContext context) {
-    final enabled = onTap != null && !busy;
+    final w = widget;
+    final enabled = w.onTap != null && !w.busy;
     final pad =
-        padding ??
-        EdgeInsets.symmetric(
-          horizontal: AppSpace.lg,
-          vertical: dense ? 14.0 : AppSpace.lg,
-        );
-    final fontSize = dense ? 13.0 : 15.0;
+        w.padding ?? const EdgeInsets.symmetric(horizontal: AppSpace.lg);
+    final fontSize = w.dense ? 14.0 : 16.0;
+    final glow = w.showGlow && enabled
+        ? (w.dense
+              ? AppMetrics.accentGlow(
+                  blur: 20,
+                  alpha: 0.2,
+                  offset: const Offset(0, 6),
+                )
+              : AppMetrics.accentGlow())
+        : null;
 
     final child = AnimatedOpacity(
       duration: const Duration(milliseconds: 180),
-      opacity: enabled || busy ? 1 : 0.45,
-      child: Container(
-        width: expanded ? double.infinity : null,
-        padding: pad,
-        decoration: BoxDecoration(
-          color: AppColors.accent,
-          borderRadius: BorderRadius.circular(AppRadii.md),
-          boxShadow: showGlow ? AppMetrics.accentGlow() : null,
-        ),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          mainAxisSize: expanded ? MainAxisSize.max : MainAxisSize.min,
-          children: [
-            if (busy) ...[
-              const SizedBox(
-                width: 18,
-                height: 18,
-                child: CircularProgressIndicator(
-                  strokeWidth: 2,
-                  color: AppColors.inkOnAccent,
+      opacity: enabled || w.busy ? 1 : 0.45,
+      child: AnimatedScale(
+        scale: _down ? 0.98 : 1,
+        duration: const Duration(milliseconds: 140),
+        child: Container(
+          width: w.expanded ? double.infinity : null,
+          constraints: BoxConstraints(
+            minHeight: w.dense ? CopperCta.denseHeight : CopperCta.height,
+          ),
+          padding: pad,
+          decoration: BoxDecoration(
+            color: AppColors.accent,
+            borderRadius: BorderRadius.circular(AppRadii.md),
+            boxShadow: glow,
+          ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: w.expanded ? MainAxisSize.max : MainAxisSize.min,
+            children: [
+              if (w.busy) ...[
+                const SizedBox(
+                  width: 18,
+                  height: 18,
+                  child: CircularProgressIndicator(
+                    strokeWidth: 2,
+                    color: AppColors.inkOnAccent,
+                  ),
+                ),
+                const SizedBox(width: 10),
+              ] else if (w.leading != null) ...[
+                CinematicIcon(
+                  glyph: w.leading!,
+                  size: w.dense ? 16 : 18,
+                  accent: AppColors.inkOnAccent,
+                  framed: false,
+                ),
+                const SizedBox(width: 8),
+              ],
+              Flexible(
+                child: Text(
+                  w.label,
+                  textAlign: TextAlign.center,
+                  style: CopperCta.labelStyle(size: fontSize),
                 ),
               ),
-              const SizedBox(width: 8),
-            ] else if (leading != null) ...[
-              CinematicIcon(
-                glyph: leading!,
-                size: dense ? 16 : 18,
-                accent: AppColors.inkOnAccent,
-                framed: false,
-              ),
-              const SizedBox(width: 8),
+              if (!w.busy && w.showArrow) ...[
+                const SizedBox(width: 8),
+                const CinematicIcon(
+                  glyph: CinematicGlyph.forward,
+                  size: 18,
+                  accent: AppColors.inkOnAccent,
+                  framed: false,
+                ),
+              ] else if (!w.busy && w.trailing != null) ...[
+                const SizedBox(width: 8),
+                CinematicIcon(
+                  glyph: w.trailing!,
+                  size: 16,
+                  accent: AppColors.inkOnAccent,
+                  framed: false,
+                ),
+              ],
             ],
-            Flexible(
-              child: Text(
-                label.toUpperCase(),
-                textAlign: TextAlign.center,
-                style: AppTypography.cta(size: fontSize),
-              ),
-            ),
-            if (!busy && showArrow) ...[
-              const SizedBox(width: 8),
-              const CinematicIcon(
-                glyph: CinematicGlyph.forward,
-                size: 18,
-                accent: AppColors.inkOnAccent,
-                framed: false,
-              ),
-            ] else if (!busy && trailing != null) ...[
-              const SizedBox(width: 8),
-              CinematicIcon(
-                glyph: trailing!,
-                size: 16,
-                accent: AppColors.inkOnAccent,
-                framed: false,
-              ),
-            ],
-          ],
+          ),
         ),
       ),
     );
 
-    if (!enabled) return child;
-    return GestureDetector(onTap: onTap, child: child);
+    return Semantics(
+      button: true,
+      enabled: enabled,
+      child: GestureDetector(
+        onTap: enabled
+            ? () {
+                ActHaptics.tap();
+                w.onTap!();
+              }
+            : null,
+        onTapDown: enabled ? (_) => _press(true) : null,
+        onTapUp: enabled ? (_) => _press(false) : null,
+        onTapCancel: enabled ? () => _press(false) : null,
+        child: child,
+      ),
+    );
   }
 }
 
@@ -224,7 +285,7 @@ class OutlineCta extends StatelessWidget {
     this.expanded = true,
     this.padding = const EdgeInsets.symmetric(vertical: 14, horizontal: 12),
     this.color,
-    this.uppercase = true,
+    this.uppercase = false,
   });
 
   @override
@@ -271,7 +332,9 @@ class OutlineCta extends StatelessWidget {
             Text(
               uppercase ? label.toUpperCase() : label,
               textAlign: TextAlign.center,
-              style: AppTypography.cta(size: 13, color: textColor),
+              style: uppercase
+                  ? AppTypography.cta(size: 13, color: textColor)
+                  : CopperCta.labelStyle(size: 15, color: textColor),
             ),
           ],
         ),
@@ -282,7 +345,10 @@ class OutlineCta extends StatelessWidget {
     return Material(
       color: Colors.transparent,
       child: InkWell(
-        onTap: onTap,
+        onTap: () {
+          ActHaptics.tap();
+          onTap!();
+        },
         splashColor: Colors.transparent,
         highlightColor: Colors.transparent,
         overlayColor: const WidgetStatePropertyAll(Colors.transparent),
@@ -323,13 +389,21 @@ class GhostCta extends StatelessWidget {
     return Material(
       color: Colors.transparent,
       child: InkWell(
-        onTap: onTap,
+        onTap: onTap == null
+            ? null
+            : () {
+                danger ? ActHaptics.confirm() : ActHaptics.tap();
+                onTap!();
+              },
         splashColor: Colors.transparent,
         highlightColor: Colors.transparent,
         overlayColor: const WidgetStatePropertyAll(Colors.transparent),
         borderRadius: BorderRadius.circular(AppRadii.md),
         child: Container(
           width: expanded ? double.infinity : null,
+          // Mesma família do CTA ouro (`.btn-ghost` do site): cantos 14,
+          // altura mínima confortável, texto normal.
+          constraints: const BoxConstraints(minHeight: 48),
           padding: padding,
           decoration: BoxDecoration(
             color: danger
@@ -355,11 +429,7 @@ class GhostCta extends StatelessWidget {
                 child: Text(
                   label,
                   textAlign: TextAlign.center,
-                  style: AppTypography.body(
-                    size: 13,
-                    weight: FontWeight.w800,
-                    color: ink,
-                  ),
+                  style: CopperCta.labelStyle(size: 14, color: ink),
                 ),
               ),
             ],
@@ -427,23 +497,140 @@ class AppProgressBar extends StatelessWidget {
   }
 }
 
-/// Label de seção — uppercase, tracking fixo (MISSÕES DIÁRIAS, etc.).
+/// Ação terciária em texto (agora não, atualizar, sair) — alvo ≥ 44dp,
+/// sem competir com o CTA principal. Substitui TextButton no app.
+class TextCta extends StatelessWidget {
+  final String label;
+  final VoidCallback? onTap;
+  final bool danger;
+  final CinematicGlyph? leading;
+  final Color? color;
+
+  const TextCta({
+    super.key,
+    required this.label,
+    required this.onTap,
+    this.danger = false,
+    this.leading,
+    this.color,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final base =
+        color ??
+        (danger ? AppColors.error.withValues(alpha: 0.9) : a.textMuted(0.72));
+    final ink = onTap == null ? base.withValues(alpha: 0.4) : base;
+    return Semantics(
+      button: true,
+      enabled: onTap != null,
+      label: label,
+      excludeSemantics: true,
+      child: Material(
+        color: Colors.transparent,
+        child: InkWell(
+          onTap: onTap == null
+              ? null
+              : () {
+                  danger ? ActHaptics.confirm() : ActHaptics.tap();
+                  onTap!();
+                },
+          borderRadius: BorderRadius.circular(AppRadii.sm),
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(minHeight: 44, minWidth: 44),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: AppSpace.sm),
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  if (leading != null) ...[
+                    CinematicIcon(
+                      glyph: leading!,
+                      size: 16,
+                      accent: ink,
+                      framed: false,
+                    ),
+                    const SizedBox(width: 6),
+                  ],
+                  Flexible(
+                    child: Text(
+                      label,
+                      textAlign: TextAlign.center,
+                      style: AppTypography.body(
+                        size: 13,
+                        weight: FontWeight.w700,
+                        color: ink,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Poço dentro de um card — agrupa um trecho (semana, código, versão)
+/// sem virar outro card: fundo mais fundo, borda quase invisível.
+class InsetPanel extends StatelessWidget {
+  final Widget child;
+  final EdgeInsetsGeometry padding;
+  final Color? borderColor;
+
+  const InsetPanel({
+    super.key,
+    required this.child,
+    this.padding = const EdgeInsets.all(AppSpace.md),
+    this.borderColor,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Container(
+      padding: padding,
+      decoration: BoxDecoration(
+        color: a.insetFill,
+        borderRadius: BorderRadius.circular(AppRadii.md),
+        border: Border.all(color: borderColor ?? a.insetBorder),
+      ),
+      child: child,
+    );
+  }
+}
+
+/// Eyebrow / rótulo de seção — o ÚNICO jeito de escrever texto pequeno em
+/// maiúsculas. Escreva a string em caixa normal; ele caixa-alta sozinho.
+/// Cor padrão [AppearanceStyle.sectionLabel]; accent só em destaque.
 class SectionLabel extends StatelessWidget {
   final String text;
   final Color? color;
   final double size;
+  final TextAlign? textAlign;
 
-  const SectionLabel(this.text, {super.key, this.color, this.size = 11});
+  const SectionLabel(
+    this.text, {
+    super.key,
+    this.color,
+    this.size = 11,
+    this.textAlign,
+  });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     return Text(
       text.toUpperCase(),
+      textAlign: textAlign,
       style: AppTypography.label(
         size: size,
         letterSpacing: 1.3,
-        color: color ?? a.text.withValues(alpha: 0.88),
+        color: color ?? a.sectionLabel,
       ),
     );
   }
@@ -493,6 +680,9 @@ class SoftBadge extends StatelessWidget {
   final Color? textColor;
   final bool bordered;
 
+  /// Preenchido na cor do tom (recompensa, “Ativo”) — texto escuro.
+  final bool solid;
+
   const SoftBadge({
     super.key,
     required this.text,
@@ -500,6 +690,7 @@ class SoftBadge extends StatelessWidget {
     this.accent,
     this.textColor,
     this.bordered = true,
+    this.solid = false,
   });
 
   @override
@@ -507,12 +698,13 @@ class SoftBadge extends StatelessWidget {
     final a = Appearance.of(context);
     final tone = accent ?? AppColors.accent;
     final isBrand = tone.toARGB32() == AppColors.accent.toARGB32();
+    final ink = solid ? AppColors.inkOnAccent : (textColor ?? a.text);
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
       decoration: BoxDecoration(
-        color: tone.withValues(alpha: 0.16),
+        color: solid ? tone : tone.withValues(alpha: 0.16),
         borderRadius: BorderRadius.circular(AppRadii.sm),
-        border: bordered
+        border: bordered && !solid
             ? Border.all(
                 color: isBrand
                     ? AppMetrics.accentBorder(alpha: 0.75)
@@ -528,7 +720,7 @@ class SoftBadge extends StatelessWidget {
             CinematicIcon(
               glyph: glyph!,
               size: AppMetrics.chipIcon,
-              accent: tone,
+              accent: solid ? ink : tone,
               framed: false,
             ),
             const SizedBox(width: 4),
@@ -538,7 +730,7 @@ class SoftBadge extends StatelessWidget {
             style: AppTypography.body(
               size: 12,
               weight: FontWeight.w800,
-              color: textColor ?? a.text,
+              color: ink,
               height: 1,
             ),
           ),
@@ -842,6 +1034,206 @@ class _AppToastCard extends StatelessWidget {
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+/// Divisória entre rows de um card — uma cor, 1px. [indent] alinha com o
+/// texto quando a row tem ícone à esquerda.
+class ListDivider extends StatelessWidget {
+  final double indent;
+  final double endIndent;
+
+  const ListDivider({super.key, this.indent = 0, this.endIndent = 0});
+
+  /// Recuo padrão para rows com ícone de [AppMetrics.leadingIcon].
+  static const iconIndent = AppSpace.lg + AppMetrics.leadingIcon + AppSpace.md;
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Padding(
+      padding: EdgeInsets.only(left: indent, right: endIndent),
+      child: SizedBox(
+        height: 1,
+        width: double.infinity,
+        child: ColoredBox(color: a.divider),
+      ),
+    );
+  }
+}
+
+/// Ponto de novidade (aba, card, avatar). Um tamanho, um anel na cor da
+/// superfície por baixo.
+class AlertDot extends StatelessWidget {
+  final Color color;
+  final Color? ring;
+  final double size;
+  final bool glow;
+
+  const AlertDot({
+    super.key,
+    this.color = AppColors.streak,
+    this.ring,
+    this.size = 9,
+    this.glow = false,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Container(
+      width: size,
+      height: size,
+      decoration: BoxDecoration(
+        color: color,
+        shape: BoxShape.circle,
+        border: Border.all(color: ring ?? a.cardFill, width: 1.5),
+        boxShadow: glow
+            ? [BoxShadow(color: color.withValues(alpha: 0.6), blurRadius: 8)]
+            : null,
+      ),
+    );
+  }
+}
+
+/// Carregando — um spinner só. [inline] para dentro de botão/linha.
+class AppSpinner extends StatelessWidget {
+  final Color color;
+  final bool inline;
+
+  const AppSpinner({
+    super.key,
+    this.color = AppColors.accent,
+    this.inline = false,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final spinner = CircularProgressIndicator(
+      color: color,
+      strokeWidth: inline ? 2 : 3,
+    );
+    if (!inline) return Center(child: spinner);
+    return SizedBox(width: 18, height: 18, child: spinner);
+  }
+}
+
+/// Título de sheet — eyebrow opcional, título 20 e apoio. Use no topo de
+/// todo [AppSheetPanel] comum; celebração usa [celebration] (display 28).
+class AppSheetHeader extends StatelessWidget {
+  final String title;
+  final String? eyebrow;
+  final String? subtitle;
+  final Widget? leading;
+  final Color? eyebrowColor;
+  final bool center;
+  final bool celebration;
+
+  const AppSheetHeader({
+    super.key,
+    required this.title,
+    this.eyebrow,
+    this.subtitle,
+    this.leading,
+    this.eyebrowColor,
+    this.center = false,
+    this.celebration = false,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final align = center ? TextAlign.center : TextAlign.start;
+    return Column(
+      crossAxisAlignment: center
+          ? CrossAxisAlignment.center
+          : CrossAxisAlignment.start,
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        if (leading != null) ...[leading!, const SizedBox(height: AppSpace.md)],
+        if (eyebrow != null) ...[
+          SectionLabel(eyebrow!, color: eyebrowColor, textAlign: align),
+          const SizedBox(height: 6),
+        ],
+        Text(
+          title,
+          textAlign: align,
+          style: celebration
+              ? AppTypography.display(size: 28, color: a.text)
+              : AppTypography.title(size: 20, color: a.text),
+        ),
+        if (subtitle != null) ...[
+          const SizedBox(height: 6),
+          Text(
+            subtitle!,
+            textAlign: align,
+            style: AppTypography.body(
+              size: 14,
+              height: 1.4,
+              color: a.textSecondary,
+            ),
+          ),
+        ],
+      ],
+    );
+  }
+}
+
+/// Estado vazio — glifo 40, título, texto e CTA opcional.
+class EmptyState extends StatelessWidget {
+  final CinematicGlyph glyph;
+  final String title;
+  final String? body;
+  final Widget? action;
+  final Color? accent;
+
+  const EmptyState({
+    super.key,
+    required this.glyph,
+    required this.title,
+    this.body,
+    this.action,
+    this.accent,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Padding(
+      padding: const EdgeInsets.symmetric(
+        horizontal: AppSpace.lg,
+        vertical: AppSpace.xl,
+      ),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          CinematicIcon(
+            glyph: glyph,
+            size: AppMetrics.leadingIcon,
+            accent: accent ?? AppColors.accent,
+          ),
+          const SizedBox(height: AppSpace.md),
+          Text(
+            title,
+            textAlign: TextAlign.center,
+            style: AppTypography.title(size: 18, color: a.text),
+          ),
+          if (body != null) ...[
+            const SizedBox(height: 6),
+            Text(
+              body!,
+              textAlign: TextAlign.center,
+              style: AppTypography.body(
+                size: 14,
+                height: 1.4,
+                color: a.textSecondary,
+              ),
+            ),
+          ],
+          if (action != null) ...[const SizedBox(height: AppSpace.lg), action!],
+        ],
       ),
     );
   }

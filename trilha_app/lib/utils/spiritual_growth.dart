@@ -77,8 +77,8 @@ class SpiritualGrowth {
     if (perfectRecent) {
       mood = SeedMood.perfectGlow;
       subtitle = streak <= 0
-          ? 'Missão perfeita'
-          : 'Missão perfeita · ${base.subtitle}';
+          ? 'Cena perfeita'
+          : 'Cena perfeita · ${base.subtitle}';
     } else if (atRisk) {
       mood = SeedMood.atRisk;
       subtitle = DustCopy.uiRiskLine(hasFreeze: freezeAvailable);
@@ -108,7 +108,7 @@ class SpiritualGrowth {
       return SpiritualGrowth(
         stage: GrowthStage.seed,
         title: 'Semente',
-        subtitle: 'Faça 1 missão hoje para virar Broto',
+        subtitle: 'Faça 1 cena hoje para virar Broto',
         streak: s,
         nextAt: 1,
       );
@@ -119,8 +119,8 @@ class SpiritualGrowth {
         stage: GrowthStage.sprout,
         title: 'Broto',
         subtitle: left == 1
-            ? 'Falta 1 dia seguido para Ramo'
-            : 'Faltam $left dias seguidos para Ramo',
+            ? 'Falta 1 dia de sequência para Ramo'
+            : 'Faltam $left dias de sequência para Ramo',
         streak: s,
         nextAt: 3,
       );
@@ -131,8 +131,8 @@ class SpiritualGrowth {
         stage: GrowthStage.branch,
         title: 'Ramo',
         subtitle: left == 1
-            ? 'Falta 1 dia seguido para Árvore'
-            : 'Faltam $left dias seguidos para Árvore',
+            ? 'Falta 1 dia de sequência para Árvore'
+            : 'Faltam $left dias de sequência para Árvore',
         streak: s,
         nextAt: 7,
       );
@@ -143,8 +143,8 @@ class SpiritualGrowth {
         stage: GrowthStage.tree,
         title: 'Árvore',
         subtitle: left == 1
-            ? 'Falta 1 dia seguido para Fruto'
-            : 'Faltam $left dias seguidos para Fruto',
+            ? 'Falta 1 dia de sequência para Fruto'
+            : 'Faltam $left dias de sequência para Fruto',
         streak: s,
         nextAt: 14,
       );
@@ -152,7 +152,7 @@ class SpiritualGrowth {
     return SpiritualGrowth(
       stage: GrowthStage.fruit,
       title: 'Fruto',
-      subtitle: '$s dias seguidos · a sequência deu fruto',
+      subtitle: '$s dias de sequência · deu fruto',
       streak: s,
       nextAt: s,
     );

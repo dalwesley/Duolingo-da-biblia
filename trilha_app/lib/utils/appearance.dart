@@ -62,6 +62,22 @@ class AppearanceStyle {
         alpha: (isDay ? alpha.clamp(0.72, 0.95) : alpha.clamp(0.55, 0.9)),
       );
 
+  // Três níveis de texto — use estes em vez de alphas soltos:
+  // [text] (principal) › [textSecondary] (legenda, apoio) › [textFaint]
+  // (dica, rodapé, dia futuro).
+  Color get textSecondary => textMuted(0.72);
+
+  Color get textFaint => AppColors.textOnDark.withValues(
+        alpha: isDay ? 0.62 : 0.45,
+      );
+
+  /// Linha divisória entre rows de um card.
+  Color get divider => AppColors.textOnDark.withValues(alpha: 0.07);
+
+  /// Poço dentro de um card ([InsetPanel]).
+  Color get insetFill => Colors.black.withValues(alpha: 0.22);
+  Color get insetBorder => AppColors.textOnDark.withValues(alpha: 0.06);
+
   Color get cardFill => switch (look) {
         AppearanceLook.morning => AppColors.cardMorning,
         AppearanceLook.afternoon => AppColors.cardAfternoon,

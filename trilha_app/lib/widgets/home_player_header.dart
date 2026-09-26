@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import '../services/backend_service.dart';
 import '../services/progress_service.dart';
@@ -7,13 +6,21 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
 import '../utils/liturgical_calendar.dart';
+import 'act_feel.dart';
 import 'cinematic_icon.dart';
 import 'streak_week.dart';
+import 'ui_primitives.dart';
 import 'user_avatar.dart';
 
-/// Saudação do dia — identidade + pulso, sem HUD de lâmpadas (isso é da missão).
+/// Saudação do dia — identidade + pulso, sem HUD de lâmpadas (isso é da cena).
+///
+/// Compacto: uma linha de pulso (sequência · meta · gelo) + a semana em orbs.
+/// O CTA da missão vive só no hero — o header não duplica o toque.
 class HomePlayerHeader extends StatelessWidget {
   final VoidCallback? onProfileTap;
+
+  /// Mantido por compatibilidade: o pulso não abre mais a missão
+  /// (duplicava o CTA do hero).
   final VoidCallback? onTapMission;
   final VoidCallback? onLiturgyTap;
 
@@ -38,19 +45,22 @@ class HomePlayerHeader extends StatelessWidget {
         : progress.userName.trim().split(' ').first;
     final moment = LiturgicalCalendar.momentFor();
     final liturgy = LiturgicalCalendar.accentOf(moment.season);
+    final streak = progress.streak;
+    final freezeUsed = progress.streakFreezeUsedThisWeek;
+    final freezeCount = freezeUsed || progress.streakFreezeAvailable ? 1 : 0;
 
     return Container(
-      padding: const EdgeInsets.fromLTRB(12, 10, 12, 10),
+      padding: const EdgeInsets.fromLTRB(14, 12, 14, 8),
       decoration: BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
           colors: [
             Color.lerp(a.cardFill, liturgy, 0.06)!,
-            a.cardFill.withValues(alpha: 0.82),
+            a.cardFill.withValues(alpha: 0.9),
           ],
         ),
-        borderRadius: BorderRadius.circular(AppRadii.lg),
+        borderRadius: BorderRadius.circular(AppMetrics.cardRadius),
         border: Border.all(
           color:
               (HomeTrailChrome.outlineOf(context) ??
@@ -64,98 +74,101 @@ class HomePlayerHeader extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          GestureDetector(
-            onTap: () {
-              if (onProfileTap == null) return;
-              HapticFeedback.selectionClick();
-              onProfileTap!();
-            },
-            behavior: HitTestBehavior.opaque,
-            child: Row(
-              children: [
-                UserAvatar(
-                  name: progress.userName,
-                  photoUrl: backend.userPhotoUrl,
-                  seed: backend.uid,
-                  style: progress.settings.portraitStyle,
-                  radius: 18,
-                ),
-                const SizedBox(width: 10),
-                Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        DayPhaseHelper.greeting(),
-                        style: AppTypography.label(
-                          size: 9,
-                          letterSpacing: 0.8,
-                          color: a.textMuted(0.5),
-                        ),
+          Row(
+            children: [
+              Expanded(
+                child: Semantics(
+                  button: onProfileTap != null,
+                  label: onProfileTap != null ? 'Abrir perfil de $name' : null,
+                  child: GestureDetector(
+                    onTap: () {
+                      if (onProfileTap == null) return;
+                      ActHaptics.tap();
+                      onProfileTap!();
+                    },
+                    behavior: HitTestBehavior.opaque,
+                    child: ConstrainedBox(
+                      constraints: const BoxConstraints(minHeight: 44),
+                      child: Row(
+                        children: [
+                          UserAvatar(
+                            name: progress.userName,
+                            photoUrl: backend.userPhotoUrl,
+                            seed: backend.uid,
+                            style: progress.settings.portraitStyle,
+                            radius: 18,
+                          ),
+                          const SizedBox(width: 10),
+                          Expanded(
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  DayPhaseHelper.greeting(),
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: AppTypography.body(
+                                    size: 12,
+                                    weight: FontWeight.w600,
+                                    color: a.textSecondary,
+                                  ),
+                                ),
+                                Text(
+                                  name,
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: AppTypography.display(
+                                    size: 18,
+                                    weight: FontWeight.w800,
+                                    color: a.text,
+                                    height: 1.1,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        ],
                       ),
-                      const SizedBox(height: 1),
-                      Text(
-                        name,
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        style: AppTypography.display(
-                          size: 18,
-                          weight: FontWeight.w800,
-                          color: a.text,
-                          height: 1.05,
-                        ),
-                      ),
-                    ],
+                    ),
                   ),
                 ),
-                if (onLiturgyTap != null)
-                  _SeasonChip(
-                    moment: moment,
-                    accent: liturgy,
-                    onTap: onLiturgyTap!,
-                  ),
-              ],
-            ),
+              ),
+              if (onLiturgyTap != null)
+                _SeasonChip(
+                  moment: moment,
+                  accent: liturgy,
+                  onTap: onLiturgyTap!,
+                ),
+            ],
           ),
           const SizedBox(height: 10),
-          GestureDetector(
-            onTap: onTapMission,
-            behavior: HitTestBehavior.opaque,
+          // Pulso do dia — uma linha, sem toque (o CTA é o hero).
+          MergeSemantics(
             child: Row(
               children: [
-                Expanded(
-                  child: _Stat(
-                    glyph: CinematicGlyph.flame,
-                    accent: streakColor,
-                    label: progress.streak > 0 ? '${progress.streak}d' : '0d',
-                    hint: atRisk ? 'risco' : 'sequência',
-                  ),
+                _Stat(
+                  glyph: CinematicGlyph.flame,
+                  accent: streakColor,
+                  value: streak == 1 ? '1 dia' : '$streak dias',
+                  hint: atRisk ? 'em risco' : null,
+                  hintColor: AppColors.error,
                 ),
-                _VDiv(a: a),
-                Expanded(
-                  child: _Stat(
-                    glyph: CinematicGlyph.check,
-                    accent: progress.dailyGoalMet
-                        ? AppColors.accent
-                        : AppColors.sand,
-                    label: '$done/$goal',
-                    hint: 'meta',
-                  ),
+                const Spacer(),
+                _Stat(
+                  glyph: CinematicGlyph.check,
+                  accent: progress.dailyGoalMet
+                      ? AppColors.accent
+                      : AppColors.sand,
+                  value: '$done/$goal',
+                  hint: 'meta',
                 ),
-                _VDiv(a: a),
-                Expanded(
-                  child: _Stat(
-                    glyph: CinematicGlyph.frost,
-                    accent: progress.streakFreezeUsedThisWeek
-                        ? a.textMuted(0.55)
-                        : AppColors.iceSoft,
-                    label:
-                        progress.streakFreezeUsedThisWeek ||
-                            progress.streakFreezeAvailable
-                        ? '1'
-                        : '0',
-                    hint: progress.streakFreezeUsedThisWeek ? 'usado' : 'gelo',
-                  ),
+                const SizedBox(width: AppSpace.md),
+                _Stat(
+                  glyph: CinematicGlyph.frost,
+                  accent: freezeUsed ? a.textFaint : AppColors.iceSoft,
+                  value: '$freezeCount',
+                  hint: freezeUsed ? 'gelo usado' : 'gelo',
                 ),
               ],
             ),
@@ -181,24 +194,29 @@ class _SeasonChip extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        HapticFeedback.selectionClick();
-        onTap();
-      },
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
-        decoration: BoxDecoration(
-          color: accent.withValues(alpha: 0.14),
-          borderRadius: BorderRadius.circular(AppRadii.pill),
-          border: Border.all(color: accent.withValues(alpha: 0.45)),
-        ),
-        child: Text(
-          moment.title,
-          style: AppTypography.label(
-            size: 10,
-            letterSpacing: 0.6,
-            color: accent,
+    return Semantics(
+      button: true,
+      label: '${moment.title} · abrir leitura da estação',
+      excludeSemantics: true,
+      child: GestureDetector(
+        behavior: HitTestBehavior.opaque,
+        onTap: () {
+          ActHaptics.tap();
+          onTap();
+        },
+        // Área de toque ≥44dp; o pill continua pequeno visualmente.
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(minHeight: 44, minWidth: 44),
+          child: Padding(
+            padding: const EdgeInsets.only(left: AppSpace.sm),
+            child: Center(
+              widthFactor: 1,
+              child: SoftBadge(
+                text: moment.title,
+                accent: accent,
+                textColor: accent,
+              ),
+            ),
           ),
         ),
       ),
@@ -206,70 +224,54 @@ class _SeasonChip extends StatelessWidget {
   }
 }
 
-class _VDiv extends StatelessWidget {
-  final AppearanceStyle a;
-  const _VDiv({required this.a});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 1,
-      height: 28,
-      margin: const EdgeInsets.symmetric(horizontal: 4),
-      color: a.cardBorder,
-    );
-  }
-}
-
 class _Stat extends StatelessWidget {
   final CinematicGlyph glyph;
   final Color accent;
-  final String label;
-  final String hint;
+  final String value;
+  final String? hint;
+  final Color? hintColor;
 
   const _Stat({
     required this.glyph,
     required this.accent,
-    required this.label,
-    required this.hint,
+    required this.value,
+    this.hint,
+    this.hintColor,
   });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return Column(
+    return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            CinematicIcon(
-              glyph: glyph,
-              size: 14,
-              accent: accent,
-              glowing: false,
-              framed: false,
-            ),
-            const SizedBox(width: 4),
-            Text(
-              label,
-              style: AppTypography.title(
-                size: 13,
-                weight: FontWeight.w900,
-                color: a.text,
-              ),
-            ),
-          ],
+        CinematicIcon(
+          glyph: glyph,
+          size: 16,
+          accent: accent,
+          glowing: false,
+          framed: false,
         ),
-        const SizedBox(height: 2),
+        const SizedBox(width: 4),
         Text(
-          hint.toUpperCase(),
-          style: AppTypography.label(
-            size: 8,
-            letterSpacing: 0.8,
-            color: a.textMuted(0.55),
+          value,
+          style: AppTypography.title(
+            size: 12,
+            weight: FontWeight.w900,
+            color: a.text,
           ),
         ),
+        if (hint != null) ...[
+          const SizedBox(width: 4),
+          Text(
+            hint!,
+            style: AppTypography.body(
+              size: 12,
+              weight: FontWeight.w600,
+              color: hintColor ?? a.textSecondary,
+            ),
+          ),
+        ],
       ],
     );
   }

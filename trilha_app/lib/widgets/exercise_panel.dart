@@ -5,24 +5,27 @@ import 'package:flutter/material.dart';
 
 import '../models/trail.dart';
 import '../theme/app_theme.dart';
+import '../utils/appearance.dart';
 import 'act_feel.dart';
 import 'brand_flip_card.dart';
 import 'cinematic_icon.dart';
 import 'stage_plate.dart';
+import 'relic_panel.dart';
 import 'ui_primitives.dart';
 
 /// Player dos micro-atos — palco direto no fundo, sem card.
 class _ActSkin {
-  static const radius = 18.0;
+  static const radius = AppRadii.xl;
   static const gap = AppSpace.sm;
-  static const verseSize = 22.0;
+  // Cormorant tem olho pequeno: 25 lê como ~21 num serifado comum.
+  static const verseSize = 24.0; // degrau da escala de versículo
   static const noteSize = 16.0;
   static const pad = EdgeInsets.fromLTRB(14, 14, 16, 14);
   static const anim = Duration(milliseconds: 180);
   static const enter = Duration(milliseconds: 240);
 
   static const plateShadow = [
-    BoxShadow(color: Color(0x59000000), blurRadius: 0, offset: Offset(0, 4)),
+    BoxShadow(color: AppColors.dropShadow, blurRadius: 0, offset: Offset(0, 4)),
   ];
 
   static Color ivory(Color accent) => Color.lerp(AppColors.card, accent, 0.16)!;
@@ -153,7 +156,9 @@ class _ExercisePanelState extends State<ExercisePanel>
         widget.selected == null;
     if (newAct || retry || dismissed) {
       _picked = null;
-      _resetLocal();
+      // Tentar de novo mantém a ordem que a pessoa já montou — só
+      // um ato novo embaralha.
+      _resetLocal(keepOrder: !newAct);
       if (newAct) _enter.forward(from: 0);
     }
     if (widget.selected != null && widget.selected != _picked) {
@@ -166,13 +171,15 @@ class _ExercisePanelState extends State<ExercisePanel>
     }
   }
 
-  void _resetLocal() {
+  void _resetLocal({bool keepOrder = false}) {
     _confirming = false;
     _matchLeft = null;
     _pairs.clear();
-    final items = List<QuestionOption>.from(widget.exercise.effectiveOptions);
-    items.shuffle();
-    _shuffledOrderItems = items;
+    if (!keepOrder) {
+      final items = List<QuestionOption>.from(widget.exercise.effectiveOptions);
+      items.shuffle();
+      _shuffledOrderItems = items;
+    }
     _pulse
       ..stop()
       ..repeat(reverse: true);
@@ -216,7 +223,8 @@ class _ExercisePanelState extends State<ExercisePanel>
 
   void _submit(String answer) {
     if (_locked) return;
-    ActHaptics.confirm();
+    // Só um toque leve: a vibração do veredito vem logo depois.
+    ActHaptics.tap();
     setState(() => _confirming = true);
     widget.onSelect(widget.exercise.canonicalizeAnswer(answer));
   }
@@ -802,17 +810,12 @@ class _ExercisePanelState extends State<ExercisePanel>
         if (hintAvailable)
           Align(
             alignment: Alignment.centerLeft,
-            child: TextButton(
-              onPressed: widget.hintUsed || _locked ? null : widget.onHint,
-              child: Text(
-                widget.hintUsed ? 'Dica usada' : 'Dica',
-                style: AppTypography.body(
-                  size: 13,
-                  color: widget.hintUsed || _locked
-                      ? AppColors.textOnDark.withValues(alpha: 0.35)
-                      : widget.accent,
-                ),
-              ),
+            child: TextCta(
+              label: widget.hintUsed ? 'Dica usada' : 'Dica',
+              onTap: widget.hintUsed || _locked ? null : widget.onHint,
+              color: widget.hintUsed || _locked
+                  ? AppColors.textOnDark
+                  : widget.accent,
             ),
           ),
         CopperCta(
@@ -883,6 +886,7 @@ class _GestureSeal extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     final cue = title.trim();
     return Row(
       crossAxisAlignment: isPrompt
@@ -904,35 +908,25 @@ class _GestureSeal extends StatelessWidget {
               ? Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      label.toUpperCase(),
-                      style: AppTypography.label(
-                        size: 11,
-                        letterSpacing: 1.8,
-                        color: accent,
-                      ),
-                    ),
+                    SectionLabel(label, color: accent),
                     const SizedBox(height: 6),
                     Text(
                       cue,
                       maxLines: 3,
                       overflow: TextOverflow.ellipsis,
                       style: AppTypography.title(
-                        size: 22,
+                        size: 20,
                         height: 1.28,
-                        color: AppColors.textOnDark,
+                        color: a.text,
                       ),
                     ),
                   ],
                 )
               : Text(
-                  cue.toUpperCase(),
+                  cue,
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
-                  style: AppTypography.title(
-                    size: 18,
-                    color: AppColors.textOnDark,
-                  ).copyWith(letterSpacing: 1.4),
+                  style: AppTypography.title(size: 18, color: a.text),
                 ),
         ),
       ],
@@ -953,6 +947,7 @@ class _ContextNote extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     return Column(
       children: [
         Row(
@@ -962,15 +957,7 @@ class _ContextNote extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10),
-              child: Text(
-                label.toUpperCase(),
-                textAlign: TextAlign.center,
-                style: AppTypography.label(
-                  size: 11,
-                  letterSpacing: 1.8,
-                  color: accent,
-                ),
-              ),
+              child: SectionLabel(label, color: accent),
             ),
             Expanded(
               child: Divider(color: accent.withValues(alpha: 0.35), height: 1),
@@ -985,7 +972,7 @@ class _ContextNote extends StatelessWidget {
             size: _ActSkin.noteSize,
             height: 1.45,
             weight: FontWeight.w600,
-            color: AppColors.textOnDark.withValues(alpha: 0.82),
+            color: a.textSecondary,
           ),
         ),
       ],
@@ -1003,11 +990,7 @@ class _RefLabel extends StatelessWidget {
   Widget build(BuildContext context) {
     final ref = reference.trim();
     if (ref.isEmpty) return const SizedBox.shrink();
-    return Text(
-      ref.toUpperCase(),
-      textAlign: TextAlign.center,
-      style: AppTypography.label(size: 13, letterSpacing: 1.8, color: accent),
-    );
+    return Center(child: SectionLabel(ref, color: accent, size: 13));
   }
 }
 
@@ -1439,35 +1422,14 @@ class _InsightView extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Row(
-            children: [
-              CinematicIcon(
-                glyph: CinematicGlyph.spark,
-                size: 22,
-                accent: accent,
-                framed: false,
-              ),
-              const SizedBox(width: 10),
-              Expanded(
-                child: Text(
-                  'HOJE',
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: AppTypography.title(
-                    size: 18,
-                    color: AppColors.textOnDark,
-                  ).copyWith(letterSpacing: 1.4),
-                ),
-              ),
-            ],
-          ),
+          RelicChapter(title: 'Hoje', accent: accent, divided: false),
           const SizedBox(height: 14),
           Expanded(
             child: Container(
               width: double.infinity,
               padding: const EdgeInsets.fromLTRB(22, 20, 22, 22),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(20),
+                borderRadius: BorderRadius.circular(AppRadii.xl),
                 gradient: LinearGradient(
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
@@ -1495,7 +1457,7 @@ class _InsightView extends StatelessWidget {
                     text,
                     textAlign: TextAlign.center,
                     style: AppTypography.title(
-                      size: 22,
+                      size: 20,
                       height: 1.32,
                       color: accent,
                     ),
@@ -1505,7 +1467,7 @@ class _InsightView extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 10),
-          CopperCta(label: 'Seguir', onTap: onContinue, trailing: null),
+          CopperCta(label: 'Continuar', onTap: onContinue, trailing: null),
           const SizedBox(height: AppSpace.lg),
         ],
       ),
@@ -1746,7 +1708,7 @@ class _WordChip extends StatelessWidget {
               textAlign: TextAlign.center,
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
-              style: AppTypography.title(size: 15, color: skin.text),
+              style: AppTypography.title(size: 14, color: skin.text),
             ),
           ),
         ),
@@ -1816,7 +1778,7 @@ class _VfSlab extends StatelessWidget {
               Text(
                 label,
                 textAlign: TextAlign.center,
-                style: AppTypography.title(size: 15, color: skin.text),
+                style: AppTypography.title(size: 14, color: skin.text),
               ),
             ],
           ),
@@ -1882,7 +1844,7 @@ class _OptionTile extends StatelessWidget {
                   ),
                   child: Text(
                     mark!,
-                    style: AppTypography.title(size: 13, color: skin.wellFg),
+                    style: AppTypography.title(size: 12, color: skin.wellFg),
                   ),
                 ),
                 const SizedBox(width: 12),
@@ -1893,7 +1855,7 @@ class _OptionTile extends StatelessWidget {
                   textAlign: TextAlign.start,
                   style:
                       AppTypography.title(
-                        size: 15,
+                        size: 14,
                         height: 1.3,
                         color: skin.text,
                       ).copyWith(
@@ -2007,7 +1969,7 @@ class _OrderPiece extends StatelessWidget {
             ),
             child: Text(
               '${index + 1}',
-              style: AppTypography.title(size: 13, color: skin.wellFg),
+              style: AppTypography.title(size: 12, color: skin.wellFg),
             ),
           ),
           const SizedBox(width: 12),
@@ -2015,7 +1977,7 @@ class _OrderPiece extends StatelessWidget {
             child: Text(
               text,
               style: AppTypography.title(
-                size: 15,
+                size: 14,
                 height: 1.3,
                 color: skin.text,
               ),
@@ -2042,6 +2004,7 @@ class _MatchStepper extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     Widget step(int n, String label, bool on) {
       return Row(
         mainAxisSize: MainAxisSize.min,
@@ -2060,7 +2023,7 @@ class _MatchStepper extends StatelessWidget {
                 size: 11,
                 color: on
                     ? AppColors.inkOnAccent
-                    : AppColors.textOnDark.withValues(alpha: 0.45),
+                    : a.textFaint,
               ),
             ),
           ),
@@ -2070,7 +2033,7 @@ class _MatchStepper extends StatelessWidget {
             style: AppTypography.label(
               size: 10,
               letterSpacing: 0.8,
-              color: on ? accent : AppColors.textOnDark.withValues(alpha: 0.4),
+              color: on ? accent : a.textFaint,
             ),
           ),
         ],
@@ -2086,7 +2049,7 @@ class _MatchStepper extends StatelessWidget {
           child: Container(
             width: 18,
             height: 1,
-            color: Colors.white.withValues(alpha: 0.16),
+            color: a.divider,
           ),
         ),
         step(2, 'Pareie', !pickingLeft),

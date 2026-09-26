@@ -130,7 +130,7 @@ class GenesisModuleTheme {
           swatch: ModulePalettes.liberation,
         ),
       'Conquista' => _theme(
-          narrative: 'Jericó, Ai e a conquista — o Senhor pelea por vós.',
+          narrative: 'Jericó, Ai e a conquista — o Senhor peleja por vós.',
           verse: 'Josué 6–12',
           swatch: ModulePalettes.oppression,
         ),
@@ -185,7 +185,7 @@ class GenesisModuleTheme {
           swatch: ModulePalettes.teaching,
         ),
       'Esperança final' => _theme(
-          narrative: 'Cartas, Cordeiro e nova criação — a esperança dos fieis.',
+          narrative: 'Cartas, Cordeiro e nova criação — a esperança dos fiéis.',
           verse: 'Apocalipse 1–21',
           swatch: ModulePalettes.hope,
         ),
@@ -202,7 +202,7 @@ class GenesisModuleTheme {
       _ => _theme(
           narrative: title.trim().isEmpty
               ? 'Sua jornada pela Palavra.'
-              : '$title — avance nos passos desta cena.',
+              : '$title — avance cena a cena.',
           verse: resolved == TrailRealm.novoTestamento
               ? 'Novo Testamento'
               : 'Antigo Testamento',

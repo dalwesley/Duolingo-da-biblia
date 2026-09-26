@@ -1,21 +1,19 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import 'app_sheet.dart';
 import 'cinematic_icon.dart';
 import 'ui_primitives.dart';
 
-/// Sheet de retorno — sequência em espera + CTA para a próxima lição.
+/// Sheet de retorno — sequência em espera + CTA para a próxima cena.
 Future<void> showComebackSheet(
   BuildContext context, {
   required VoidCallback onContinue,
 }) {
-  return showModalBottomSheet<void>(
-    context: context,
-    isScrollControlled: true,
-    backgroundColor: Colors.transparent,
+  return showAppSheet<void>(
+    context,
     isDismissible: true,
     builder: (_) => _ComebackSheet(onContinue: onContinue),
   );
@@ -30,63 +28,35 @@ class _ComebackSheet extends StatelessWidget {
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
     final a = Appearance.of(context);
-    final bottom = MediaQuery.paddingOf(context).bottom;
     final days = progress.daysSinceLastPlayed;
     final name = progress.userName.trim().isEmpty
         ? 'aprendiz'
         : progress.userName.trim().split(' ').first;
     final daysLabel = days == 1 ? '1 dia' : '$days dias';
 
-    return Container(
-      margin: const EdgeInsets.fromLTRB(12, 0, 12, 12),
-      padding: EdgeInsets.fromLTRB(20, 18, 20, 16 + bottom),
-      decoration: BoxDecoration(
-        color: a.cardFill,
-        borderRadius: BorderRadius.circular(AppRadii.lg),
-        border: Border.all(color: a.cardBorder),
-        boxShadow: AppTheme.cardShadow(elevated: true),
-      ),
+    return AppSheetPanel(
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          CinematicIcon(
-            glyph: CinematicGlyph.flame,
-            size: 56,
-            accent: AppColors.streak,
-            glowing: false,
-          ),
-          const SizedBox(height: 14),
-          Text(
-            'O PEREGRINO',
-            style: AppTypography.label(
-              letterSpacing: 1.5,
-              color: AppColors.streak.withValues(alpha: 0.85),
+          AppSheetHeader(
+            leading: const CinematicIcon(
+              glyph: CinematicGlyph.flame,
+              size: 56,
+              accent: AppColors.streak,
+              glowing: false,
             ),
-          ),
-          const SizedBox(height: 6),
-          Text(
-            'Sua sequência te espera',
-            textAlign: TextAlign.center,
-            style: AppTypography.title(size: 20, color: a.text),
-          ),
-          const SizedBox(height: 8),
-          Text(
-            days >= 2
-                ? '$name, faz $daysLabel sem uma lição. Um passo basta — e você ganha +${ProgressService.comebackBonusSteps} passos de boas-vindas.'
-                : '$name, a caravana sentiu sua falta. Uma lição retoma a sequência — +${ProgressService.comebackBonusSteps} passos te esperam.',
-            textAlign: TextAlign.center,
-            style: AppTypography.body(
-              size: 14,
-              height: 1.4,
-              weight: FontWeight.w600,
-              color: a.textMuted(0.72),
-            ),
+            eyebrow: 'O peregrino',
+            eyebrowColor: AppColors.streak.withValues(alpha: 0.85),
+            title: 'Sua sequência te espera',
+            subtitle: days >= 2
+                ? '$name, faz $daysLabel sem uma cena. Uma só basta — e você ganha +${ProgressService.comebackBonusSteps} passos de boas-vindas.'
+                : '$name, a caravana sentiu sua falta. Uma cena retoma a sequência — +${ProgressService.comebackBonusSteps} passos te esperam.',
+            center: true,
           ),
           const SizedBox(height: 20),
           CopperCta(
             label: 'Continuar',
             onTap: () async {
-              HapticFeedback.lightImpact();
               await progress.acknowledgeComeback();
               if (!context.mounted) return;
               Navigator.of(context).pop();
@@ -94,18 +64,13 @@ class _ComebackSheet extends StatelessWidget {
             },
           ),
           const SizedBox(height: 8),
-          TextButton(
-            onPressed: () async {
+          TextCta(
+            label: 'Agora não',
+            color: a.textFaint,
+            onTap: () async {
               await progress.acknowledgeComeback();
               if (context.mounted) Navigator.of(context).pop();
             },
-            child: Text(
-              'Agora não',
-              style: AppTypography.body(
-                weight: FontWeight.w700,
-                color: a.textMuted(0.55),
-              ),
-            ),
           ),
         ],
       ),
