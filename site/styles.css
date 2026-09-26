@@ -1488,6 +1488,15 @@ input:focus, textarea:focus, select:focus {
   font-size: 0.95rem;
 }
 
+.pix-payee {
+  margin: 16px 0 0;
+  color: var(--text);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.pix-payee:empty { display: none; }
+
 .pix-qr {
   width: 100%;
   aspect-ratio: 1;

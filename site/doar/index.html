@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&family=Sora:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/styles.css?v=doar5" />
+  <link rel="stylesheet" href="/styles.css?v=doar6" />
 </head>
 <body>
   <div class="cosmos" aria-hidden="true"></div>
@@ -59,8 +59,9 @@
           <h2 id="pix-title">Faça parte do próximo passo</h2>
           <p class="pix-lead">Escaneie o QR Code ou copie a chave PIX.</p>
           <p class="pix-lead">Qualquer valor ajuda.</p>
+          <p class="pix-payee" id="pix-payee"></p>
           <p class="pix-code" id="pix-code"></p>
-          <button class="btn btn-gold pix-copy" id="pix-copy" type="button" disabled>Copiar código PIX</button>
+          <button class="btn btn-gold pix-copy" id="pix-copy" type="button" disabled>Copiar chave PIX</button>
           <p class="pix-note" id="pix-status" role="status"></p>
         </section>
       </aside>
@@ -113,11 +114,12 @@
     </div>
   </footer>
   <script>
-    // Preencha só estes dois campos.
-    const PIX_QR = ""; // caminho da imagem, ex.: "/doar/pix-qr.png"
-    const PIX_CODE = ""; // código Pix copia e cola
+    const PIX_QR = "/doar/pix-qr.png";
+    const PIX_CODE = "a56ad8e5-4b31-4e0a-947a-40acf8413b37";
+    const PIX_PAYEE = "Dalwesley Ferreira Duarte · Nu Pagamentos";
 
     const qrBox = document.getElementById("pix-qr");
+    const payeeEl = document.getElementById("pix-payee");
     const codeEl = document.getElementById("pix-code");
     const copyBtn = document.getElementById("pix-copy");
     const statusEl = document.getElementById("pix-status");
@@ -131,6 +133,10 @@
       img.width = 220;
       img.height = 220;
       qrBox.appendChild(img);
+    }
+
+    if (PIX_PAYEE) {
+      payeeEl.textContent = PIX_PAYEE;
     }
 
     if (PIX_CODE) {
@@ -150,8 +156,8 @@
           document.execCommand("copy");
           area.remove();
         }
-        copyBtn.textContent = "Código copiado ✓";
-        statusEl.textContent = "Código copiado ✓ Obrigado por caminhar com o STWAY.";
+        copyBtn.textContent = "Chave copiada ✓";
+        statusEl.textContent = "Chave copiada ✓ Obrigado por caminhar com o STWAY.";
       });
     }
   </script>
