@@ -387,106 +387,127 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                               ],
                             ),
                           ),
-                          const Spacer(flex: 2),
-                          SectionLabel(stepLabel, size: 13, color: style.label),
-                          SizedBox(height: compact ? 6 : 10),
-                          Text(
-                            mission.title,
-                            maxLines: compact ? 2 : 3,
-                            overflow: TextOverflow.ellipsis,
-                            style: AppTypography.display(
-                              size: compact ? 28 : 32,
-                              height: 1.08,
-                              weight: FontWeight.w900,
-                              color: switch (mood) {
-                                HeroCardMood.dusty => const Color(
-                                  0xFFDCC7A4,
-                                ).withValues(alpha: 0.92),
-                                HeroCardMood.frozen => const Color(
-                                  0xFFE8F6FC,
-                                ).withValues(alpha: 0.95),
-                                HeroCardMood.alive => a.text,
-                              },
+                          // Título e frase ficam com todo o meio do cartão: antes
+                          // a frase disputava espaço com os Spacers e perdia a
+                          // segunda linha (corte seco, sem reticências).
+                          Expanded(
+                            child: Align(
+                              alignment: const Alignment(-1, 0.1),
+                              child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  SectionLabel(
+                                    stepLabel,
+                                    size: 13,
+                                    color: style.label,
+                                  ),
+                                  SizedBox(height: compact ? 6 : 10),
+                                  Text(
+                                    mission.title,
+                                    maxLines: compact ? 2 : 3,
+                                    overflow: TextOverflow.ellipsis,
+                                    style: AppTypography.display(
+                                      size: compact ? 28 : 32,
+                                      height: 1.08,
+                                      weight: FontWeight.w900,
+                                      color: switch (mood) {
+                                        HeroCardMood.dusty => const Color(
+                                          0xFFDCC7A4,
+                                        ).withValues(alpha: 0.92),
+                                        HeroCardMood.frozen => const Color(
+                                          0xFFE8F6FC,
+                                        ).withValues(alpha: 0.95),
+                                        HeroCardMood.alive => a.text,
+                                      },
+                                    ),
+                                  ),
+                                  if (riskLine != null) ...[
+                                    SizedBox(height: compact ? 8 : 12),
+                                    Flexible(
+                                      child: Text(
+                                        riskLine,
+                                        maxLines: 2,
+                                        overflow: TextOverflow.ellipsis,
+                                        style: AppTypography.body(
+                                          size: 14,
+                                          weight: FontWeight.w700,
+                                          height: 1.35,
+                                          color: style.label.withValues(
+                                            alpha: 0.92,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                  if (tease.trim().isNotEmpty &&
+                                      mood != HeroCardMood.dusty) ...[
+                                    if (arrived && yesterday != null) ...[
+                                      const SizedBox(height: 8),
+                                      Text(
+                                        yesterday,
+                                        maxLines: 2,
+                                        overflow: TextOverflow.ellipsis,
+                                        style: AppTypography.body(
+                                          size: 13,
+                                          weight: FontWeight.w700,
+                                          color: a.textFaint,
+                                        ),
+                                      ),
+                                    ],
+                                    if (echoDoor != null) ...[
+                                      const SizedBox(height: 10),
+                                      Flexible(
+                                        child: Text(
+                                          echoDoor,
+                                          maxLines: 3,
+                                          overflow: TextOverflow.ellipsis,
+                                          style: AppTypography.verse(
+                                            size: 18,
+                                            height: 1.35,
+                                            fontStyle: FontStyle.italic,
+                                            color: a.text,
+                                          ),
+                                        ),
+                                      ),
+                                    ] else ...[
+                                      SizedBox(height: compact ? 8 : 12),
+                                      Flexible(
+                                        child: Text(
+                                          tease,
+                                          maxLines: 3,
+                                          overflow: TextOverflow.ellipsis,
+                                          style: AppTypography.verse(
+                                            size: 20,
+                                            height: 1.35,
+                                            color: a.text,
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ] else if (mission.subtitle
+                                          .trim()
+                                          .isNotEmpty &&
+                                      mood == HeroCardMood.dusty) ...[
+                                    const SizedBox(height: 10),
+                                    Flexible(
+                                      child: Text(
+                                        mission.subtitle.trim(),
+                                        maxLines: 2,
+                                        overflow: TextOverflow.ellipsis,
+                                        style: AppTypography.body(
+                                          size: 14,
+                                          weight: FontWeight.w600,
+                                          color: a.textSecondary,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ],
+                              ),
                             ),
                           ),
-                          if (riskLine != null) ...[
-                            SizedBox(height: compact ? 8 : 12),
-                            Flexible(
-                              child: Text(
-                                riskLine,
-                                maxLines: 2,
-                                overflow: TextOverflow.ellipsis,
-                                style: AppTypography.body(
-                                  size: 14,
-                                  weight: FontWeight.w700,
-                                  height: 1.35,
-                                  color: style.label.withValues(alpha: 0.92),
-                                ),
-                              ),
-                            ),
-                          ],
-                          if (tease.trim().isNotEmpty &&
-                              mood != HeroCardMood.dusty) ...[
-                            if (arrived && yesterday != null) ...[
-                              const SizedBox(height: 8),
-                              Text(
-                                yesterday,
-                                maxLines: 2,
-                                overflow: TextOverflow.ellipsis,
-                                style: AppTypography.body(
-                                  size: 13,
-                                  weight: FontWeight.w700,
-                                  color: a.textFaint,
-                                ),
-                              ),
-                            ],
-                            if (echoDoor != null) ...[
-                              const SizedBox(height: 10),
-                              Flexible(
-                                child: Text(
-                                  echoDoor,
-                                  maxLines: 3,
-                                  overflow: TextOverflow.ellipsis,
-                                  style: AppTypography.verse(
-                                    size: 18,
-                                    height: 1.35,
-                                    fontStyle: FontStyle.italic,
-                                    color: a.text,
-                                  ),
-                                ),
-                              ),
-                            ] else ...[
-                              SizedBox(height: compact ? 8 : 12),
-                              Flexible(
-                                child: Text(
-                                  tease,
-                                  maxLines: 3,
-                                  overflow: TextOverflow.ellipsis,
-                                  style: AppTypography.verse(
-                                    size: 20,
-                                    height: 1.35,
-                                    color: a.text,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ] else if (mission.subtitle.trim().isNotEmpty &&
-                              mood == HeroCardMood.dusty) ...[
-                            const SizedBox(height: 10),
-                            Flexible(
-                              child: Text(
-                                mission.subtitle.trim(),
-                                maxLines: 2,
-                                overflow: TextOverflow.ellipsis,
-                                style: AppTypography.body(
-                                  size: 14,
-                                  weight: FontWeight.w600,
-                                  color: a.textSecondary,
-                                ),
-                              ),
-                            ),
-                          ],
-                          const Spacer(flex: 3),
+                          SizedBox(height: compact ? 10 : 16),
                           if (resting)
                             GestureDetector(
                               behavior: HitTestBehavior.opaque,

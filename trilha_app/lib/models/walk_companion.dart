@@ -43,7 +43,7 @@ class WalkCompanion {
 
   static const milestones = [3, 7, 14, 30, 60, 100];
 
-  /// Os dois ganham na Caravana só se a dupla fechar os 7 dias (seg–dom).
+  /// Os dois ganham na jornada só se a dupla fechar os 7 dias (seg–dom).
   static const weekTogetherBonusSteps = 50;
 
   const WalkCompanion({

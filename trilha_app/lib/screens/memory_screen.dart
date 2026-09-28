@@ -155,7 +155,7 @@ class _MemoryScreenState extends State<MemoryScreen>
     }
 
     if (_index + 1 >= _deck.length) {
-      await progress.grantBonusSteps(8 + (_known * 4));
+      await progress.claimMemoryDeckSteps(8 + (_known * 4));
       if (!mounted) return;
       setState(() => _finished = true);
       return;

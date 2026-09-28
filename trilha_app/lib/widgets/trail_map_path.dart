@@ -321,7 +321,7 @@ class _MissionSceneCard extends StatelessWidget {
                           Expanded(
                             child: StageEyebrow(
                               label: mission.isBoss
-                                  ? 'Desafio'
+                                  ? 'Travessia'
                                   : _current
                                   ? 'Próxima cena'
                                   : completed

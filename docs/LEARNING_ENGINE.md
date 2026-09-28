@@ -278,14 +278,14 @@ A ação concreta realizada pelo usuário.
 
 ### Glossário de produto
 
-A unidade curta no app chama-se **missão**. Não usar “treino” na copy.
+A unidade curta na **UI** chama-se **cena**. No código/conteúdo: `Mission`. Marketing/tester podem dizer “missão”. Não usar “treino” na copy do app.
 
 | Termo no produto | No código | Nota |
 |------------------|-----------|------|
 | **Missão** | `Mission` | ~2–4 min; mesmo `slug` de progresso |
 | Exercício | `Question` / bank | Tipado (`choice`, `order`, `connect`…) |
 | Preparo | `MissionStudy` | Contexto + texto + conexões da missão |
-| Boss | missão de revisão | Interleaving; mesmos componentes |
+| Boss / **Travessia** | cena de revisão | Interleaving; mesmos componentes; label UI = Travessia |
 
 ---
 
@@ -607,9 +607,9 @@ O princípio é:
 
 ---
 
-## 13.1 Padrão de um treino Rota (arc indutivo)
+## 13.1 Padrão de um treino Compreensão (arc indutivo)
 
-Todo treino Rota deve seguir, em ordem, este arco — sem spoiler de aula antes:
+Todo treino no modo Compreensão (id `caminhada`; legado “Rota”) deve seguir, em ordem, este arco — sem spoiler de aula antes:
 
 ```text
 HIPÓTESE  →  OBSERVE  →  OBSERVE+  →  INTERPRETE  →  CONECTE  →  VIVA
@@ -995,7 +995,7 @@ O usuário pode encontrar o mesmo tema em diferentes níveis.
 
 > Reconhecer.
 
-### Rota
+### Compreensão (id `caminhada`)
 
 > Compreender.
 

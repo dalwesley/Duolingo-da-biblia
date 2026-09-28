@@ -199,6 +199,15 @@ class PilgrimProfileDetailSections extends StatelessWidget {
     }
 
     void addCollections() {
+      if (collectionsFirst && isOwner) {
+        add(
+          const Align(
+            alignment: Alignment.centerLeft,
+            child: SectionLabel('Coleções'),
+          ),
+        );
+      }
+
       final acquiredSeals = CharacterSeals.unlocked(profile.completedMissions);
       if (_show(CaravanProfileSection.trails) &&
           (isOwner || acquiredSeals.isNotEmpty)) {
@@ -219,6 +228,10 @@ class PilgrimProfileDetailSections extends StatelessWidget {
             onStartWalking: isOwner ? onStartWalking : null,
           ),
         );
+      }
+
+      if (collectionsFirst && _show(CaravanProfileSection.bible)) {
+        add(_escriturasPanel());
       }
     }
 
@@ -315,48 +328,8 @@ class PilgrimProfileDetailSections extends StatelessWidget {
       if (accuracy != null) add(accuracy);
     }
 
-    if (_show(CaravanProfileSection.bible)) {
-      final chapters = profile.bibleChaptersRead;
-      final books = profile.completeBibleBooks.length;
-      final subtitle = chapters == 0
-          ? 'Ainda sem leitura registrada'
-          : books == 0
-          ? '$chapters capítulo${chapters == 1 ? '' : 's'} · medalha Palavra'
-          : '$chapters capítulo${chapters == 1 ? '' : 's'} · $books livro${books == 1 ? '' : 's'}';
-      add(
-        RelicPanel(
-          accent: AppColors.cedar,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              RelicChapter(
-                title: 'Escrituras',
-                whisper: subtitle,
-                accent: AppColors.cedar,
-                action: const PrivacyEye(
-                  sections: {CaravanProfileSection.bible},
-                  label: 'Escrituras',
-                ),
-              ),
-              if (chapters > 0 && profile.completeBookNames.isNotEmpty) ...[
-                const SizedBox(height: 14),
-                Wrap(
-                  spacing: 8,
-                  runSpacing: 8,
-                  children: [
-                    for (final name in profile.completeBookNames.take(8))
-                      _ScriptureChip(name: name),
-                    if (profile.completeBookNames.length > 8)
-                      _ScriptureChip(
-                        name: '+${profile.completeBookNames.length - 8}',
-                      ),
-                  ],
-                ),
-              ],
-            ],
-          ),
-        ),
-      );
+    if (_show(CaravanProfileSection.bible) && !collectionsFirst) {
+      add(_escriturasPanel());
     }
 
     if (!collectionsFirst) addCollections();
@@ -381,6 +354,48 @@ class PilgrimProfileDetailSections extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: sections,
+    );
+  }
+
+  Widget _escriturasPanel() {
+    final chapters = profile.bibleChaptersRead;
+    final books = profile.completeBibleBooks.length;
+    final subtitle = chapters == 0
+        ? 'Ainda sem leitura registrada'
+        : books == 0
+        ? '$chapters capítulo${chapters == 1 ? '' : 's'} · medalha Palavra'
+        : '$chapters capítulo${chapters == 1 ? '' : 's'} · $books livro${books == 1 ? '' : 's'}';
+    return RelicPanel(
+      accent: AppColors.cedar,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          RelicChapter(
+            title: 'Escrituras',
+            whisper: subtitle,
+            accent: AppColors.cedar,
+            action: const PrivacyEye(
+              sections: {CaravanProfileSection.bible},
+              label: 'Escrituras',
+            ),
+          ),
+          if (chapters > 0 && profile.completeBookNames.isNotEmpty) ...[
+            const SizedBox(height: 14),
+            Wrap(
+              spacing: 8,
+              runSpacing: 8,
+              children: [
+                for (final name in profile.completeBookNames.take(8))
+                  _ScriptureChip(name: name),
+                if (profile.completeBookNames.length > 8)
+                  _ScriptureChip(
+                    name: '+${profile.completeBookNames.length - 8}',
+                  ),
+              ],
+            ),
+          ],
+        ],
+      ),
     );
   }
 }

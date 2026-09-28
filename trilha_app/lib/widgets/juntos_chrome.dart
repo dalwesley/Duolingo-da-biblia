@@ -244,6 +244,9 @@ enum BondEnd {
 
   /// Não está caminhando — o trecho some.
   gone,
+
+  /// Convite pendente — trecho tracejado (quem já convidou).
+  dashed,
 }
 
 /// Fio que liga dois retratos.
@@ -388,6 +391,24 @@ class _BondPainter extends CustomPainter {
 
     void stretch(double from, double to, BondEnd end) {
       if (end == BondEnd.gone || to <= from) return;
+      if (end == BondEnd.dashed) {
+        final dim = Paint()
+          ..color = Colors.white.withValues(alpha: 0.16)
+          ..strokeWidth = 1.4
+          ..strokeCap = StrokeCap.round;
+        const dash = 5.0;
+        const gap = 5.0;
+        var x = from;
+        while (x < to) {
+          canvas.drawLine(
+            Offset(x, y),
+            Offset(math.min(x + dash, to), y),
+            dim,
+          );
+          x += dash + gap;
+        }
+        return;
+      }
       if (end == BondEnd.lit) {
         canvas.drawLine(Offset(from, y), Offset(to, y), glow);
         canvas.drawLine(Offset(from, y), Offset(to, y), lit);

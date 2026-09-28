@@ -52,6 +52,9 @@ class CelebrationScreen extends StatefulWidget {
   final bool isBoss;
   final bool isReplay;
   final bool perfect;
+
+  /// Lâmpadas acabaram: tentativa — não fecha a cena nem conta na semana.
+  final bool failed;
   final String? todayInsight;
 
   const CelebrationScreen({
@@ -64,6 +67,7 @@ class CelebrationScreen extends StatefulWidget {
     this.isBoss = false,
     this.isReplay = false,
     this.perfect = false,
+    this.failed = false,
     this.todayInsight,
   });
 
@@ -230,8 +234,24 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     );
   }
 
+  /// Replay e tentativa sem lâmpadas: não gravam progresso da cena.
+  bool get _noProgress => widget.isReplay || widget.failed;
+
+  void _retryScene() {
+    if (_leaving) return;
+    _leaving = true;
+    Navigator.of(context).pushReplacement(
+      MaterialPageRoute(
+        builder: (_) => LessonScreen(
+          missionSlug: widget.missionSlug,
+          skipTrailLock: true,
+        ),
+      ),
+    );
+  }
+
   Future<void> _offerRetentionPrompts() async {
-    if (widget.isReplay) return;
+    if (_noProgress) return;
     final progress = context.read<ProgressService>();
     final companions = context.read<CompanionService>();
     final hasPartner = companions.companions.any((c) => !c.awaitingPartner);
@@ -264,19 +284,26 @@ class _CelebrationScreenState extends State<CelebrationScreen>
       final progress = context.read<ProgressService>();
       _firstLessonSession =
           progress.firstLessonDate == null || progress.firstLessonDate!.isEmpty;
-      final firstSealEncounter = CharacterSeals.unlocksOn(
-        widget.missionSlug,
-        progress.completedMissions,
-      );
-      _awardedSteps = widget.isReplay
+      final firstSealEncounter =
+          !widget.failed &&
+          CharacterSeals.unlocksOn(
+            widget.missionSlug,
+            progress.completedMissions,
+          );
+      _awardedSteps = _noProgress
           ? (widget.steps * 0.35).round().clamp(5, widget.steps)
           : widget.steps;
-      unawaited(_resolveTomorrowHook(progress));
+      if (widget.failed) {
+        _hookResolved = true;
+      } else {
+        unawaited(_resolveTomorrowHook(progress));
+      }
       _streakBefore = progress.streak;
       final walkedBefore = progress.walkedToday;
       // Fanfarra junto da entrada do herói — não espera rede/salvamento.
       Future.delayed(const Duration(milliseconds: 300), () {
         if (!mounted) return;
+        if (widget.failed) return;
         if (widget.perfect) {
           SoundService.instance.playStreak();
         } else {
@@ -287,7 +314,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
           .completeMission(
             widget.missionSlug,
             widget.steps,
-            isReplay: widget.isReplay,
+            isReplay: _noProgress,
             correct: widget.correct,
             total: widget.total,
           )
@@ -359,7 +386,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
               isReplay: widget.isReplay,
               perfect: widget.perfect,
             );
-            if (!widget.isReplay && mounted) {
+            if (!_noProgress && mounted) {
               final corners = context.read<CornerService>();
               await corners.reportMissionComplete(
                 progress: progress,
@@ -383,6 +410,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                 setState(() => _closedCorner = closed);
               }
             }
+            if (widget.failed) return;
             final ttv = await progress.markFirstLessonIfNeeded(
               trailSlug: widget.trailSlug,
               missionSlug: widget.missionSlug,
@@ -514,6 +542,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
   }
 
   CinematicGlyph get _heroGlyph {
+    if (widget.failed) return CinematicGlyph.lamp;
     final seal = _newSeal;
     if (seal != null) return seal.glyph;
     if (widget.perfect) return CinematicGlyph.crown;
@@ -529,6 +558,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
   }
 
   String get _kicker {
+    if (widget.failed) return CelebrationCopy.failedKicker;
     if (_newSeal != null) return 'Encontro';
     return CelebrationCopy.kicker(
       perfect: widget.perfect,
@@ -538,6 +568,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
   }
 
   String get _headline {
+    if (widget.failed) return CelebrationCopy.failedHeadline;
     if (_newSeal != null) return _newSeal!.name;
     return CelebrationCopy.headline(
       perfect: widget.perfect,
@@ -551,6 +582,12 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     required bool isBoss,
     required int pct,
   }) {
+    if (widget.failed) {
+      return const MascotBubble(
+        glowing: true,
+        message: CelebrationCopy.failedDetail,
+      );
+    }
     if (_hook != null) {
       return _TomorrowBeat(
         hook: _hook!,
@@ -618,7 +655,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                     );
                   },
                 ),
-                const ConfettiOverlay(active: true, cinematic: true),
+                ConfettiOverlay(active: !widget.failed, cinematic: true),
                 SafeArea(
                   child: LayoutBuilder(
                     builder: (context, constraints) {
@@ -672,7 +709,9 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                         pct: pct,
                                         denseStats: true,
                                         mascot:
-                                            compact || (_hook?.hasEcho ?? false)
+                                            widget.failed ||
+                                                compact ||
+                                                (_hook?.hasEcho ?? false)
                                             ? null
                                             : MascotMessages.celebration(
                                                 isBoss: isBoss,
@@ -762,7 +801,19 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                     // Meta do dia ainda aberta (ritmo 2–3):
                                     // o principal é seguir; "até amanhã"
                                     // vira secundário.
-                                    if (_hook != null &&
+                                    if (widget.failed) ...[
+                                      CopperCta(
+                                        label: 'Tentar de novo',
+                                        onTap: _retryScene,
+                                      ),
+                                      const SizedBox(height: 10),
+                                      GhostCta(
+                                        label: 'Voltar ao mapa',
+                                        onTap: () => _leaveCelebration(
+                                          toTrailMap: true,
+                                        ),
+                                      ),
+                                    ] else if (_hook != null &&
                                         progress.missionsToday <
                                             progress.settings.dailyGoal) ...[
                                       CopperCta(
@@ -968,7 +1019,7 @@ class _HeroBeat extends StatelessWidget {
         ],
         if (isBoss) ...[
           const SizedBox(height: 10),
-          const _ComboChip(label: 'Desafio', color: AppColors.sand),
+          const _ComboChip(label: 'Travessia', color: AppColors.sand),
         ],
         if ((medalLine ?? '').trim().isNotEmpty) ...[
           const SizedBox(height: 8),

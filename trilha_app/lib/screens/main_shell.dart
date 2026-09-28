@@ -234,7 +234,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       messenger.showSnackBar(
         SnackBar(
           content: Text(
-            'A companhia ganhou +${WalkCompanion.weekTogetherBonusSteps} passos na caravana',
+            'A companhia ganhou +${WalkCompanion.weekTogetherBonusSteps} passos na jornada',
           ),
         ),
       );
@@ -425,7 +425,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
         0 => DayPhaseHelper.greeting(), // relógio — não o tema de aparência
         1 => 'O mapa da jornada',
         2 => LiturgicalCalendar.momentFor().subtitle,
-        3 => 'Caravana · Companhia · Grupos',
+        3 => 'Companhia · Caravana · Grupos',
         _ => 'Como você caminha',
       },
     );

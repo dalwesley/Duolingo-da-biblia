@@ -150,6 +150,8 @@ class ProgressService extends ChangeNotifier {
   static const _keyFirstOpenAtMs = 'cohortFirstOpenAtMs';
   static const _keyNotificationsPrompted = 'notificationsPrompted';
   static const _keyCompanionInviteOffered = 'companionInviteOffered';
+  static const _keyGeloTeachSeen = 'geloTeachSeen';
+  static const _keyLampsTeachSeen = 'lampsTeachSeen';
 
   static const maxLamps = 5;
 
@@ -242,6 +244,9 @@ class ProgressService extends ChangeNotifier {
   /// Última recompensa revelada — a UI lê para mostrar "hoje você tirou X".
   String? lastDailyChestRewardId;
 
+  /// Dia (YYYY-MM-DD) em que o treino de memória já rendeu passos (1x/dia).
+  String? memoryRewardDay;
+
   /// Capítulos lidos na Bíblia ("abbrev:capítulo", ex.: "gn:1").
   List<String> readBibleChapters = [];
 
@@ -313,7 +318,7 @@ class ProgressService extends ChangeNotifier {
   /// Códigos de companhia cuja recompensa de referral já foi concedida ao host.
   List<String> claimedReferralRewards = [];
 
-  /// Desafios cuja chegada (+10) já entrou na Caravana.
+  /// Desafios cuja chegada (+10) já entrou na jornada.
   List<String> claimedCornerRewards = [];
 
   /// Coorte de retenção (D7) — datas locais YYYY-MM-DD + epoch do 1º open.
@@ -360,7 +365,16 @@ class ProgressService extends ChangeNotifier {
   /// Convite de companhia da 1ª missão já foi oferecido (aceito ou recusado).
   bool companionInviteOffered = false;
 
-  /// Semana (segunda YYYY-MM-DD) em que o bônus da dupla já entrou na Caravana.
+  /// Sheet "o gelo cobriu ontem" já foi mostrado neste aparelho.
+  bool geloTeachSeen = false;
+
+  /// Toast "restam N lâmpadas" já foi mostrado neste aparelho.
+  bool lampsTeachSeen = false;
+
+  /// Gelo acabou de cobrir ontem neste boot — Home consome 1×.
+  bool _pendingGeloTeach = false;
+
+  /// Semana (segunda YYYY-MM-DD) em que o bônus da dupla já entrou na jornada.
   String? companionWeekBonusWeek;
 
   bool get isLoaded => _loaded;
@@ -466,6 +480,9 @@ class ProgressService extends ChangeNotifier {
     return '${now.year}-${now.month.toString().padLeft(2, '0')}';
   }
 
+  /// Passos do mês corrente (0 se o contador ainda é de um mês anterior).
+  int get currentMonthSteps => monthlyMonth == _monthKey() ? monthlySteps : 0;
+
   Future<void> load() async {
     // Progresso vive no Firebase após o login. Cold start usa defaults em memória.
     // Splash + onboarding + aparência: gates/prefs de aparelho.
@@ -487,6 +504,8 @@ class ProgressService extends ChangeNotifier {
       notificationsPrompted = firstLesson != null && firstLesson.isNotEmpty;
     }
     companionInviteOffered = prefs.getBool(_keyCompanionInviteOffered) ?? false;
+    geloTeachSeen = prefs.getBool(_keyGeloTeachSeen) ?? false;
+    lampsTeachSeen = prefs.getBool(_keyLampsTeachSeen) ?? false;
     nextSceneTitle = prefs.getString(_keyNextSceneTitle);
     nextSceneTease = prefs.getString(_keyNextSceneTease);
     lastInsight = prefs.getString(_keyLastInsight);
@@ -789,6 +808,7 @@ class ProgressService extends ChangeNotifier {
     dailyChestPity = 0;
     dailyChestCollectedIds = [];
     lastDailyChestRewardId = null;
+    memoryRewardDay = null;
     missionReflections = {};
     readBibleChapters = [];
     bibleBookmarks = [];
@@ -978,20 +998,40 @@ class ProgressService extends ChangeNotifier {
     monthlySteps = 0;
   }
 
-  /// Soma passos totais + contadores semanal e mensal de uma vez.
-  void _gainSteps(int amount) {
+  /// Passos de estudo (cena nova concluída): somam no total, no mês e na
+  /// semana — só eles decidem subida/descida na Caravana.
+  void _gainSceneSteps(int amount) {
     _ensureWeeklyWeek();
+    _gainSteps(amount);
+    weeklySteps += amount;
+  }
+
+  /// Passos de participação (missões, baús, bônus sociais, replay): somam
+  /// na jornada (total + mês), nunca na semana da Caravana.
+  void _gainSteps(int amount) {
     _ensureMonthlyMonth();
     steps += amount;
-    weeklySteps += amount;
     monthlySteps += amount;
   }
 
-  /// Bônus avulso (ex.: prêmio de promoção na liga).
+  /// Bônus avulso (ex.: prêmio de promoção na liga). Não conta na semana.
   Future<void> grantBonusSteps(int amount) async {
     _gainSteps(amount);
     await _save();
     notifyListeners();
+  }
+
+  bool get memoryRewardClaimedToday => memoryRewardDay == _todayKey();
+
+  /// Passos do treino de memória — só o primeiro baralho do dia rende.
+  /// Retorna os passos concedidos (0 se já rendeu hoje).
+  Future<int> claimMemoryDeckSteps(int amount) async {
+    if (amount <= 0 || memoryRewardClaimedToday) return 0;
+    memoryRewardDay = _todayKey();
+    _gainSteps(amount);
+    await _save();
+    notifyListeners();
+    return amount;
   }
 
   /// Concede o bônus de referral ao host uma única vez por [code] de companhia.
@@ -1008,7 +1048,7 @@ class ProgressService extends ChangeNotifier {
     return true;
   }
 
-  /// +50 na Caravana para você quando a dupla fecha os 7 dias. O par ganha
+  /// +50 na jornada para você quando a dupla fecha os 7 dias. O par ganha
   /// o mesmo ao sincronizar. 1× por semana.
   Future<bool> claimCompanionWeekTogetherBonus(
     Iterable<WalkCompanion> companions, {
@@ -1032,7 +1072,7 @@ class ProgressService extends ChangeNotifier {
     return true;
   }
 
-  /// +10 na Caravana ao fechar a cena do desafio. 1× por desafio.
+  /// +10 na jornada ao fechar a cena do desafio. 1× por desafio.
   Future<bool> claimCornerArrivalBonus(String cornerId) async {
     final id = cornerId.trim();
     if (id.isEmpty || claimedCornerRewards.contains(id)) return false;
@@ -1918,7 +1958,12 @@ class ProgressService extends ChangeNotifier {
       awarded = isReplay
           ? (rewardSteps * 0.35).round().clamp(5, rewardSteps)
           : rewardSteps;
-      _gainSteps(awarded);
+      // Replay rende só na jornada — semana mede cena nova, não repetição.
+      if (isReplay) {
+        _gainSteps(awarded);
+      } else {
+        _gainSceneSteps(awarded);
+      }
 
       if (!alreadyToday) {
         _recordSession();
@@ -2162,6 +2207,7 @@ class ProgressService extends ChangeNotifier {
       'dailyChestPity': dailyChestPity,
       'dailyChestCollectedIds': dailyChestCollectedIds,
       'lastDailyChestRewardId': lastDailyChestRewardId,
+      'memoryRewardDay': memoryRewardDay,
       'readBibleChapters': readBibleChapters,
       'bibleBookmarks': bibleBookmarks,
       'sharedVerses': sharedVerses,
@@ -2471,6 +2517,12 @@ class ProgressService extends ChangeNotifier {
         dailyChestOpenedDay = today;
       } else if (dailyChestOpenedDay != today) {
         dailyChestOpenedDay = cloudChestDay ?? dailyChestOpenedDay;
+      }
+      final cloudMemoryDay = data['memoryRewardDay'] as String?;
+      if (cloudMemoryDay == today) {
+        memoryRewardDay = today;
+      } else if (memoryRewardDay != today) {
+        memoryRewardDay = cloudMemoryDay ?? memoryRewardDay;
       }
       if (data.containsKey('dailyChestPity')) {
         final cloudPity = (data['dailyChestPity'] as num?)?.toInt() ?? 0;
@@ -2825,6 +2877,9 @@ class ProgressService extends ChangeNotifier {
     final lastPlayedBefore = lastPlayedDate;
     _ensureStreakFreezeWeek();
     final freezeApplied = _applyPendingStreakFreeze();
+    if (freezeApplied && !geloTeachSeen) {
+      _pendingGeloTeach = true;
+    }
     final repairBefore = streakRepairAvailable;
     _ensureStreakRepairMonth();
     await _autoClaimCompletedQuests();
@@ -2838,6 +2893,33 @@ class ProgressService extends ChangeNotifier {
     }
     notifyListeners();
   }
+
+  /// Home: explica o gelo uma vez depois que ele cobre ontem.
+  bool takePendingGeloTeach() {
+    if (!_pendingGeloTeach || geloTeachSeen) return false;
+    _pendingGeloTeach = false;
+    geloTeachSeen = true;
+    unawaited(() async {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setBool(_keyGeloTeachSeen, true);
+    }());
+    return true;
+  }
+
+  /// Lição: explica lâmpadas = vidas no primeiro erro que apaga uma.
+  bool takeLampsTeach() {
+    if (lampsTeachSeen) return false;
+    lampsTeachSeen = true;
+    unawaited(() async {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setBool(_keyLampsTeachSeen, true);
+    }());
+    return true;
+  }
+
+  /// Ainda há quest semanal aberta (não reclamada).
+  bool get hasOpenWeeklyQuests =>
+      WeeklyQuestDefs.all.any((q) => !isWeeklyQuestClaimed(q.id));
 
   Future<void> setSyncedCompanionCodes(List<String> codes) async {
     companionCodes = List<String>.from(codes);
@@ -2930,6 +3012,7 @@ class ProgressService extends ChangeNotifier {
     dailyChestPity = 0;
     dailyChestCollectedIds = [];
     lastDailyChestRewardId = null;
+    memoryRewardDay = null;
     missionReflections = {};
     readBibleChapters = [];
     bibleBookmarks = [];

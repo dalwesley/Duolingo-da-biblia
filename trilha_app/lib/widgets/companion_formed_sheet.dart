@@ -62,8 +62,8 @@ class _CompanionFormedSheet extends StatelessWidget {
           const SizedBox(height: 10),
           Text(
             hasName
-                ? 'Agora você e $name caminham juntos.\nFechem os 7 dias da semana: +${WalkCompanion.weekTogetherBonusSteps} na caravana para os dois.'
-                : 'Vocês caminham juntos agora.\nFechem os 7 dias da semana: +${WalkCompanion.weekTogetherBonusSteps} na caravana para os dois.',
+                ? 'Agora você e $name caminham juntos.\nFechem os 7 dias da semana: +${WalkCompanion.weekTogetherBonusSteps} passos na jornada para os dois.'
+                : 'Vocês caminham juntos agora.\nFechem os 7 dias da semana: +${WalkCompanion.weekTogetherBonusSteps} passos na jornada para os dois.',
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 14,

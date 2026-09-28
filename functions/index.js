@@ -419,3 +419,29 @@ exports.submitSiteForm = functions
       res.status(500).json({ ok: false, error: 'Não foi possível enviar. Tente de novo em instantes.' });
     }
   });
+
+// ---- Caravana: salas e fechamento semanal (ver league.js) -----------------
+
+const league = require('./league');
+
+/** 1º placar da semana numa divisão: senta a pessoa na primeira sala aberta. */
+exports.onLeaguePlayerCreate = functions.firestore
+  .document('leagues/{week}/tiers/{tier}/players/{uid}')
+  .onCreate(async (snap, context) => {
+    const { week, tier, uid } = context.params;
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(week) || !/^[0-4]$/.test(tier)) return;
+    const cohort = await league.assignCohort(getFirestore(), { week, tier, uid });
+    logger.info('caravana: sala', { week, tier, uid, cohort });
+  });
+
+/** Segunda 00:10 (São Paulo): fecha a semana que acabou. */
+exports.settleLeagueWeek = functions
+  .runWith({ timeoutSeconds: 540, memory: '512MB' })
+  .pubsub.schedule('10 0 * * 1')
+  .timeZone(league.TIME_ZONE)
+  .onRun(async () => {
+    const today = league.ymdInZone(new Date());
+    const currentWeek = league.mondayOf(today);
+    const closedWeek = league.addDays(currentWeek, -7);
+    await league.settleWeek(getFirestore(), { closedWeek, currentWeek, logger });
+  });

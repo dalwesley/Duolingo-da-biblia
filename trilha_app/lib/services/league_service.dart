@@ -326,14 +326,28 @@ class LeagueService extends ChangeNotifier {
 
   /// Tamanho do grupo (pool) por divisão — calibrável via [RemoteConfigService].
   static int get groupSize => RemoteConfigService.instance.leagueGroupSize;
-  static const promoteCount = 7;
-  static const demoteCount = 5;
   static const promotionBonusXp = 50;
 
-  /// Outros peregrinos mínimos para o ranking ter tensão (você + 2).
-  static const minPeerCount = 2;
+  /// Quantos sobem num campo de [fieldSize] pessoas (você incluso): ~25%,
+  /// mínimo 1. 20 → 5 · 10 → 3 · 5 → 1.
+  static int promoteCountFor(int fieldSize) {
+    if (fieldSize < 2) return 0;
+    final n = (fieldSize * 0.25).round();
+    return n < 1 ? 1 : n;
+  }
 
-  /// Campo competitivo: pelo menos [minPeerCount] pares reais.
+  /// Quantos descem num campo de [fieldSize] pessoas: ~15%, mínimo 1;
+  /// ninguém desce com menos de 5. 20 → 3 · 10 → 2 · 5 → 1.
+  static int demoteCountFor(int fieldSize) {
+    if (fieldSize < 5) return 0;
+    final n = (fieldSize * 0.15).round();
+    return n < 1 ? 1 : n;
+  }
+
+  /// Outros peregrinos mínimos para o ranking ter tensão (você + 1).
+  static const minPeerCount = 1;
+
+  /// Campo competitivo: pelo menos [minPeerCount] par real.
   static bool fieldIsCompetitive(int peerCount) =>
       peerCount >= minPeerCount;
 
@@ -387,16 +401,18 @@ class LeagueService extends ChangeNotifier {
     return 8 - d.weekday;
   }
 
-  /// Zona de descida (últimos [demoteCount]).
-  bool isInDemotionZone(int rank) {
-    if (tierIndex <= 0 || rank <= 0) return false;
-    return rank > groupSize - demoteCount;
+  /// Zona de descida (últimos [demoteCountFor] de [fieldSize]).
+  bool isInDemotionZone(int rank, int fieldSize) {
+    final demote = demoteCountFor(fieldSize);
+    if (tierIndex <= 0 || rank <= 0 || demote == 0) return false;
+    return rank > fieldSize - demote;
   }
 
   /// Perto da zona de descida (2 posições acima + a zona).
-  bool isNearDemotion(int rank) {
-    if (tierIndex <= 0 || rank <= 0) return false;
-    return rank > groupSize - demoteCount - 2;
+  bool isNearDemotion(int rank, int fieldSize) {
+    final demote = demoteCountFor(fieldSize);
+    if (tierIndex <= 0 || rank <= 0 || demote == 0) return false;
+    return rank > fieldSize - demote - 2;
   }
 
   Future<void> init() async {
@@ -502,12 +518,13 @@ class LeagueService extends ChangeNotifier {
     }
     final finalXp = <int>[...peer, userXp]..sort((a, b) => b.compareTo(a));
     final rank = finalXp.indexOf(userXp) + 1;
+    final fieldSize = finalXp.length;
     var outcome = LeagueOutcome.stayed;
     var delta = 0;
-    if (rank <= promoteCount && tierIndex < maxTierIndex) {
+    if (rank <= promoteCountFor(fieldSize) && tierIndex < maxTierIndex) {
       outcome = LeagueOutcome.promoted;
       delta = 1;
-    } else if (rank > groupSize - demoteCount && tierIndex > 0) {
+    } else if (rank > fieldSize - demoteCountFor(fieldSize) && tierIndex > 0) {
       outcome = LeagueOutcome.demoted;
       delta = -1;
     }
@@ -553,6 +570,60 @@ class LeagueService extends ChangeNotifier {
     _processedWeek = current;
     await _persist();
     notifyListeners();
+  }
+
+  /// Aplica o fechamento feito no servidor (`users/{uid}.leagueResult`).
+  ///
+  /// - Resultado da semana fechada (ou mais novo, ex.: descida por ausência):
+  ///   vale a divisão do servidor e mostra o card.
+  /// - Sem passos na semana fechada: não há resultado a esperar — só avança.
+  /// - Com passos e sem resultado: espera o servidor (tenta de novo depois);
+  ///   passadas 2 semanas, desiste e avança sem card.
+  Future<bool> applyServerResult(
+    Map<String, dynamic>? result, {
+    required bool hadStepsInClosedWeek,
+    DateTime? now,
+  }) async {
+    final current = weekKey(now);
+    if (_processedWeek == current) return false;
+    if (_processedWeek == null) {
+      _processedWeek = current;
+      await _persist();
+      notifyListeners();
+      return true;
+    }
+    final closedWeek = _processedWeek!;
+    final resultWeek = result?['week'] as String?;
+    if (result != null &&
+        resultWeek != null &&
+        resultWeek.compareTo(closedWeek) >= 0) {
+      final tier = (result['tier'] as num?)?.toInt();
+      if (tier != null) {
+        tierIndex = tier.clamp(0, LeagueTier.values.length - 1);
+      }
+      final raw = result['outcome'] as String?;
+      LeagueOutcome? outcome;
+      for (final o in LeagueOutcome.values) {
+        if (o.name == raw) outcome = o;
+      }
+      pendingOutcome = outcome;
+      pendingRank = (result['rank'] as num?)?.toInt() ?? 0;
+      _processedWeek = current;
+      await _persist();
+      notifyListeners();
+      return true;
+    }
+    final stale = closedWeek.compareTo(
+          weekKey((now ?? DateTime.now()).subtract(const Duration(days: 14))),
+        ) <=
+        0;
+    if (!hadStepsInClosedWeek || stale) {
+      _processedWeek = current;
+      await _persist();
+      notifyListeners();
+      return true;
+    }
+    return false;
   }
 
   /// Define (ou limpa, com `null`) o grupo fechado de liga (célula/paróquia/amigos).

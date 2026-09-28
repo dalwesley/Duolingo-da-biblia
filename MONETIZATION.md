@@ -59,12 +59,12 @@ Família (SKU à parte, R$ 179,90/ano): as 5 coisas acima em até 5 contas.
 ## O que o grátis já tem (não entra no Pro)
 
 - Missão do dia, streak, quests
-- Gênesis → NT nos 3 modos (Semente, Rota, Profundezas)
+- Gênesis → NT nos 3 modos (Observação / Compreensão / Interpretação)
 - Bíblia offline
-- 1 sala de ~12 pessoas, Companhia, Caravana
+- 1 grupo de ~12 pessoas, Companhia, Caravana, Desafio
 - 5 lâmpadas · 1 gelo/semana · 1 repair/mês
 - Strong 5× por dia
-- 3 dias de qualquer Caminhada
+- 3 dias de qualquer estação (Advento/Quaresma)
 
 ---
 
@@ -102,7 +102,7 @@ Sem a 1ª Caminhada piloto (próxima Quaresma ou Advento), não abrir IAP.
 
 Nenhuma entra no **Pro individual**. Duas viram Igreja, de outro jeito. Uma não entra nunca.
 
-### 1. Salas maiores — não
+### 1. Grupos maiores — não
 
 Lifeway 2025: célula que discipula tem **8–16** pessoas. Acima disso o membro some, o líder não aguenta, a igreja deveria *abrir outra célula*, não inchar a sala.
 

@@ -439,6 +439,19 @@ class _LessonScreenState extends State<LessonScreen>
     });
 
     final progress = context.read<ProgressService>();
+    if (!correct && progress.takeLampsTeach()) {
+      final left = _lamps;
+      final msg = left <= 0
+          ? 'As lâmpadas acabaram — cada erro apaga uma.'
+          : left == 1
+          ? 'Resta 1 lâmpada — cada erro apaga uma.'
+          : 'Restam $left lâmpadas — cada erro apaga uma.';
+      showAppToastFor(
+        context,
+        message: msg,
+        glyph: CinematicGlyph.lamp,
+      );
+    }
     final trackBankId =
         ex.id.isNotEmpty && (_pickedIds.contains(ex.id) || widget.practiceMode);
     if (trackBankId) {
@@ -564,6 +577,7 @@ class _LessonScreenState extends State<LessonScreen>
           isBoss: _mission!.isBoss,
           isReplay: isReplay,
           perfect: !forced && _correctCount == total && _lamps == maxLamps,
+          failed: _outOfLamps && !widget.practiceMode,
           todayInsight: _mission!.centralInsight,
         ),
       ),
@@ -849,7 +863,7 @@ class _LessonScreenState extends State<LessonScreen>
                               subtitle: switch (_phase) {
                                 _Phase.intro =>
                                   _difficultyMeta?.label ??
-                                      (mission.isBoss ? 'Desafio' : 'Treino'),
+                                      (mission.isBoss ? 'Travessia' : 'Treino'),
                                 _Phase.quiz => _difficultyMeta?.label,
                                 _Phase.micro => 'Complete o verso',
                                 _Phase.insight => 'O que ficou',
@@ -1178,7 +1192,7 @@ class _IntroPanel extends StatelessWidget {
         : (note.isEmpty && fallbackIntro.isNotEmpty ? fallbackIntro : '');
     final a = Appearance.of(context);
     final pulse = mission.isBoss
-        ? 'Desafio · $itemCount atos'
+        ? 'Travessia · $itemCount atos'
         : '~3 min · $itemCount atos';
 
     return Padding(

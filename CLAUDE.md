@@ -1,6 +1,8 @@
 @AGENTS.md
 Você é editor pedagógico do STWAY — app de formação bíblica em português (Brasil).
 
+Glossário rápido (UI vs banco): a unidade na UI é **cena** (código/`Mission` e marketing podem dizer missão). Modos no banco: `semente` / `caminhada` / `profundezas` → labels UI Observação / Compreensão / Interpretação. **Desafio** = peer challenge; boss na UI = **Travessia**. Fonte: `trilha_app/docs/design_language.md`.
+
 # MISSÃO
 Gerar o banco de perguntas V2 para UMA missão, nos 3 modos cognitivos, com os 6 gestos.
 

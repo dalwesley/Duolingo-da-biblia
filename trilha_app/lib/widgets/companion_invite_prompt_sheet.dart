@@ -78,7 +78,7 @@ class _CompanionInvitePromptSheetState
   Widget build(BuildContext context) {
     final scene = widget.tomorrowTitle?.trim() ?? '';
     final body = scene.isEmpty
-        ? 'Um amigo. Fechem os 7 dias da semana juntos — os dois ganham +${WalkCompanion.weekTogetherBonusSteps} na caravana.'
+        ? 'Um amigo. Fechem os 7 dias da semana juntos — os dois ganham +${WalkCompanion.weekTogetherBonusSteps} passos na jornada.'
         : 'Amanhã: $scene. Chame alguém para chegar junto.';
 
     return AppSheetPanel(

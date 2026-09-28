@@ -14,11 +14,13 @@ class RemoteConfigService extends ChangeNotifier {
   static const _keyReferralBonus = 'referral_first_mission_bonus';
   static const _keyRoomChestBonus = 'room_chest_bonus_steps';
   static const _keyLeagueGroupSize = 'league_group_size';
+  static const _keyLeagueServerSettlement = 'league_server_settlement';
 
   static const _defaults = <String, Object>{
     _keyReferralBonus: 50,
     _keyRoomChestBonus: 15,
     _keyLeagueGroupSize: 20,
+    _keyLeagueServerSettlement: false,
   };
 
   FirebaseRemoteConfig? _rc;
@@ -50,6 +52,8 @@ class RemoteConfigService extends ChangeNotifier {
 
   int _int(String key) => _rc?.getInt(key) ?? (_defaults[key] as int);
 
+  bool _bool(String key) => _rc?.getBool(key) ?? (_defaults[key] as bool);
+
   /// Bônus ao host quando o convidado completa a 1ª missão (referral).
   int get referralFirstMissionBonus => _int(_keyReferralBonus);
 
@@ -58,4 +62,8 @@ class RemoteConfigService extends ChangeNotifier {
 
   /// Tamanho do grupo (pool) de cada divisão da Caravana.
   int get leagueGroupSize => _int(_keyLeagueGroupSize);
+
+  /// Subida/descida decidida pela Cloud Function `settleLeagueWeek`
+  /// (`users/{uid}.leagueResult`). Desligado: o app fecha a semana sozinho.
+  bool get leagueServerSettlement => _bool(_keyLeagueServerSettlement);
 }

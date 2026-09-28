@@ -1,5 +1,11 @@
 /// Copy do fim da cena — celebra o passo; ranking vai no cartão da caravana.
 class CelebrationCopy {
+  /// Lâmpadas acabaram: a cena não fecha — fica como tentativa.
+  static const failedKicker = 'Faltou luz';
+  static const failedHeadline = 'Tente de novo';
+  static const failedDetail =
+      'As lâmpadas acabaram antes do fim. A cena espera você — de novo, com calma.';
+
   static String kicker({
     required bool perfect,
     required bool isReplay,
@@ -7,7 +13,7 @@ class CelebrationCopy {
   }) {
     if (perfect) return 'Sem erro';
     if (isReplay) return 'Revisão';
-    if (isBoss) return 'Desafio final';
+    if (isBoss) return 'Travessia final';
     return 'Mais uma cena';
   }
 
@@ -18,7 +24,7 @@ class CelebrationCopy {
   }) {
     if (perfect) return 'Clareza total';
     if (isReplay) return 'Você voltou ao texto';
-    if (isBoss) return 'Boss vencido';
+    if (isBoss) return 'Travessia concluída';
     return 'Cena concluída';
   }
 
@@ -41,7 +47,7 @@ class CelebrationCopy {
     if (rank == 1) {
       return 'Segure o 1º até o domingo e você avança de caravana.';
     }
-    return '$rankº agora · os 7 primeiros sobem no domingo.';
+    return '$rankº agora · os primeiros sobem no domingo.';
   }
 }
 
@@ -57,7 +63,7 @@ class MascotMessages {
     if (isBoss) {
       return pct >= 80
           ? 'O desafio final ficou para trás. Siga o mapa.'
-          : 'Boss feito. Vale reforçar o que ainda tremeu.';
+          : 'Travessia feita. Vale reforçar o que ainda tremeu.';
     }
     if (isReplay) return 'Voltar ao texto fortalece o que já caminhou.';
     if (pct == 100) return 'Tudo claro. Volte amanhã para continuar.';

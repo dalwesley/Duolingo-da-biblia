@@ -9,7 +9,7 @@ import 'analytics_service.dart';
 import 'backend_service.dart';
 import 'progress_service.dart';
 
-/// Desafio na aba Juntos — duas pessoas, a mesma cena, até domingo.
+/// Desafio na aba Juntos (sob Companhia) — duas pessoas, a mesma cena, até domingo.
 /// Um desafio aberto por pessoa.
 class CornerService extends ChangeNotifier {
   CornerService(this.backend);

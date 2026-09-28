@@ -72,6 +72,7 @@ class _HomeScreenState extends State<HomeScreen>
   late final AnimationController _fadeIn;
   bool _comebackChecked = false;
   bool _reminderChecked = false;
+  bool _geloTeachChecked = false;
   bool _retryingCatalog = false;
   bool _offlineDialogShown = false;
 
@@ -196,6 +197,52 @@ class _HomeScreenState extends State<HomeScreen>
       if (_reminderChecked) return;
       _reminderChecked = true;
       showReminderPromptSheet(context);
+    });
+  }
+
+  void _maybeTeachGelo(ProgressService progress) {
+    if (_geloTeachChecked) return;
+    if (progress.shouldShowComeback) return;
+    if (!progress.takePendingGeloTeach()) {
+      _geloTeachChecked = true;
+      return;
+    }
+    _geloTeachChecked = true;
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted) return;
+      final route = ModalRoute.of(context);
+      if (route == null || !route.isCurrent) return;
+      showAppSheet<void>(
+        context,
+        builder: (ctx) {
+          return AppSheetPanel(
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const AppSheetHeader(
+                  leading: CinematicIcon(
+                    glyph: CinematicGlyph.flame,
+                    size: 48,
+                    accent: AppColors.primaryLight,
+                  ),
+                  title: 'O gelo cobriu ontem',
+                  subtitle:
+                      'Você perdeu um dia, mas a sequência continua. O gelo salva uma falta por semana — caminhe hoje para seguir.',
+                  center: true,
+                ),
+                const SizedBox(height: AppSpace.xl),
+                CopperCta(
+                  label: 'Entendi',
+                  onTap: () => Navigator.pop(ctx),
+                  trailing: null,
+                  dense: true,
+                ),
+                SizedBox(height: MediaQuery.viewPaddingOf(ctx).bottom),
+              ],
+            ),
+          );
+        },
+      );
     });
   }
 
@@ -432,6 +479,7 @@ class _HomeScreenState extends State<HomeScreen>
 
     _maybeShowComeback(progress, missionSlug: current?.slug);
     _maybePromptReminders(progress);
+    _maybeTeachGelo(progress);
 
     final nudge = context.watch<CompanionService>().incomingNudge;
 

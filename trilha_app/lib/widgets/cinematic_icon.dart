@@ -71,6 +71,7 @@ enum CinematicGlyph {
   refresh,
   stop,
   sprout,
+  hourglass,
 }
 
 class CinematicGlyphResolver {
@@ -232,7 +233,8 @@ class CinematicGlyphResolver {
       CinematicGlyph.echo => AppColors.clay,
       CinematicGlyph.book => accent ?? AppColors.accent,
       CinematicGlyph.scroll || CinematicGlyph.gap => accent ?? AppColors.sand,
-      CinematicGlyph.calendar => accent ?? AppColors.sand,
+      CinematicGlyph.calendar || CinematicGlyph.hourglass =>
+        accent ?? AppColors.sand,
       CinematicGlyph.check => accent ?? AppColors.accent,
       CinematicGlyph.tune ||
       CinematicGlyph.pencil ||
@@ -472,6 +474,8 @@ class _GlyphPainter extends CustomPainter {
         _stop(canvas, c, s);
       case CinematicGlyph.sprout:
         _sprout(canvas, c, s);
+      case CinematicGlyph.hourglass:
+        _hourglass(canvas, c, s);
     }
   }
 
@@ -1872,6 +1876,39 @@ class _GlyphPainter extends CustomPainter {
       ..close();
     canvas.drawPath(left, _solid);
     canvas.drawPath(right, _soft);
+  }
+
+  void _hourglass(Canvas canvas, Offset c, double s) {
+    final stroke = _stroke(s * 0.07);
+    // Tampas superior e inferior.
+    canvas.drawLine(
+      c + Offset(-s * 0.22, -s * 0.32),
+      c + Offset(s * 0.22, -s * 0.32),
+      stroke,
+    );
+    canvas.drawLine(
+      c + Offset(-s * 0.22, s * 0.32),
+      c + Offset(s * 0.22, s * 0.32),
+      stroke,
+    );
+    // Bulbos (X).
+    final glass = Path()
+      ..moveTo(c.dx - s * 0.2, c.dy - s * 0.3)
+      ..lineTo(c.dx + s * 0.2, c.dy - s * 0.3)
+      ..lineTo(c.dx + s * 0.06, c.dy)
+      ..lineTo(c.dx + s * 0.2, c.dy + s * 0.3)
+      ..lineTo(c.dx - s * 0.2, c.dy + s * 0.3)
+      ..lineTo(c.dx - s * 0.06, c.dy)
+      ..close();
+    canvas.drawPath(glass, stroke);
+    // Areia no bulbo de baixo.
+    final sand = Path()
+      ..moveTo(c.dx - s * 0.12, c.dy + s * 0.3)
+      ..lineTo(c.dx + s * 0.12, c.dy + s * 0.3)
+      ..lineTo(c.dx + s * 0.04, c.dy + s * 0.08)
+      ..lineTo(c.dx - s * 0.04, c.dy + s * 0.08)
+      ..close();
+    canvas.drawPath(sand, _solid);
   }
 
   @override

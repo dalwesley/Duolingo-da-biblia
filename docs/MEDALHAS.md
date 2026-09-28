@@ -1,8 +1,10 @@
 # STWAY — Sistema de medalhas (v2 → v3.2)
 
 **Status:** **v3.2 no app** — faísca + conquistas; Palavra mede capítulos, não catálogo de livros  
-**Atualizado:** 16 set/2026  
+**Atualizado:** 28 set/2026  
 **Fonte de verdade dos marcos/IDs:** [`MEDALHAS_CALIBRATION.md`](MEDALHAS_CALIBRATION.md)
+
+Nota de vocabulário: no app a unidade curta é **cena** (código `Mission`). Critérios que falam “missão” abaixo = mesma unidade.
 
 Este arquivo descreve **arquitetura** (cofres, famílias, loops, persistência).  
 As tabelas de IDs v2 mais abaixo são **históricas** — o app não as usa mais. Critérios vigentes = calibração v3.2 (prefixo consecutivo, diamantes ortogonais como Mirra, cofre sazonal Advento, Pioneiro sem sheet).

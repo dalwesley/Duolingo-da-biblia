@@ -2,18 +2,19 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 
+import '../models/caravan_profile_prefs.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/spiritual_growth.dart';
+import 'act_feel.dart';
 import 'cinematic_icon.dart';
 import 'home_brand_backdrop.dart';
 import 'immersive_background.dart';
 import 'pilgrim_profile_sections.dart';
-import 'ui_primitives.dart';
-import 'user_avatar.dart';
 import 'profile_privacy.dart';
 import 'top_bar.dart';
-import '../models/caravan_profile_prefs.dart';
+import 'ui_primitives.dart';
+import 'user_avatar.dart';
 
 /// Topo do perfil do dono: a trilha STWAY no céu escolhido por trás,
 /// retrato grande com anel de ouro, nome, título e os três números
@@ -340,8 +341,8 @@ class _HeroStats extends StatelessWidget {
 }
 
 /// "Sua sequência": anel da sequência contra o compromisso firmado, a
-/// semana dia a dia e a tendência das últimas 12 semanas em barras.
-class ConstancyCard extends StatelessWidget {
+/// semana dia a dia e a tendência das últimas 12 semanas (sob demanda).
+class ConstancyCard extends StatefulWidget {
   final List<String> playDates;
   final int streak;
   final int goal;
@@ -355,27 +356,47 @@ class ConstancyCard extends StatelessWidget {
 
   static const weeks = 12;
 
+  /// Abre o histórico de jarros por padrão após ~3 semanas de caminhada.
+  static const historyAutoOpenDays = 21;
+
   static String _key(DateTime d) =>
       '${d.year.toString().padLeft(4, '0')}-${d.month.toString().padLeft(2, '0')}-${d.day.toString().padLeft(2, '0')}';
 
   @override
+  State<ConstancyCard> createState() => _ConstancyCardState();
+}
+
+class _ConstancyCardState extends State<ConstancyCard> {
+  late bool _historyOpen;
+
+  @override
+  void initState() {
+    super.initState();
+    _historyOpen = widget.playDates.length >= ConstancyCard.historyAutoOpenDays;
+  }
+
+  @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final played = playDates.toSet();
+    final played = widget.playDates.toSet();
     final now = DateTime.now();
     final today = DateTime(now.year, now.month, now.day);
     // Colunas = semanas (segunda→domingo, como no resto do app); a última
     // termina nesta semana.
     final monday = today.subtract(Duration(days: today.weekday - 1));
-    final start = monday.subtract(const Duration(days: 7 * (weeks - 1)));
+    final start = monday.subtract(
+      const Duration(days: 7 * (ConstancyCard.weeks - 1)),
+    );
     var walked = 0;
-    final perWeek = List<int>.filled(weeks, 0);
+    final perWeek = List<int>.filled(ConstancyCard.weeks, 0);
     for (var i = 0; i <= today.difference(start).inDays; i++) {
-      if (played.contains(_key(start.add(Duration(days: i))))) {
+      if (played.contains(ConstancyCard._key(start.add(Duration(days: i))))) {
         walked++;
         perWeek[i ~/ 7]++;
       }
     }
+    final goal = widget.goal;
+    final streak = widget.streak;
     final ratio = goal <= 0 ? 0.0 : (streak / goal).clamp(0.0, 1.0);
     final done = streak >= goal && goal > 0;
 
@@ -447,7 +468,6 @@ class ConstancyCard extends StatelessWidget {
                               ),
                               if (streak > 0) ...[
                                 const SizedBox(width: 8),
-                                // Estágio da semente (antes num card à parte).
                                 SoftBadge(
                                   text: SpiritualGrowth.fromStreak(
                                     streak,
@@ -490,8 +510,42 @@ class ConstancyCard extends StatelessWidget {
           _WeekDots(start: monday, today: today, played: played),
           const SizedBox(height: AppSpace.lg),
           const ListDivider(),
-          const SizedBox(height: AppSpace.md),
-          _WeeksTrend(perWeek: perWeek, walked: walked, weeks: weeks),
+          const SizedBox(height: AppSpace.sm),
+          Material(
+            color: Colors.transparent,
+            child: InkWell(
+              onTap: () {
+                ActHaptics.tap();
+                setState(() => _historyOpen = !_historyOpen);
+              },
+              borderRadius: BorderRadius.circular(AppRadii.sm),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(vertical: AppSpace.sm),
+                child: Row(
+                  children: [
+                    const Expanded(
+                      child: SectionLabel('Histórico das semanas'),
+                    ),
+                    Icon(
+                      _historyOpen
+                          ? Icons.expand_less_rounded
+                          : Icons.expand_more_rounded,
+                      size: 22,
+                      color: a.textSecondary,
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          if (_historyOpen) ...[
+            const SizedBox(height: AppSpace.sm),
+            _WeeksTrend(
+              perWeek: perWeek,
+              walked: walked,
+              weeks: ConstancyCard.weeks,
+            ),
+          ],
         ],
       ),
     );

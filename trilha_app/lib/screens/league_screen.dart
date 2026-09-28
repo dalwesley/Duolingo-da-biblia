@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
+import '../models/corner_challenge.dart';
 import '../models/pilgrim_medal_models.dart';
 import '../models/study_room.dart';
 import '../models/walk_companion.dart';
@@ -76,8 +77,15 @@ class _LeagueScreenState extends State<LeagueScreen>
   late final AnimationController _enter;
   List<LeagueEntry> _realPlayers = const [];
   List<LeagueEntry> _overallPlayers = const [];
-  int _tab = 0; // 0 = caravana, 1 = companhia, 2 = grupos
-  int _caravanPane = 0; // 0 = geral, 1 = semana, 2 = desafio
+
+  /// Variante A: Companhia primeiro (fosso), depois Caravana, depois Grupos.
+  static const _tabCompanhia = 0;
+  static const _tabCaravana = 1;
+  static const _tabGrupos = 2;
+
+  int _tab = _tabCompanhia;
+  int _companhiaPane = 0; // 0 = amizade, 1 = desafio
+  int _caravanPane = 0; // 0 = mês, 1 = semana
   bool _handlingInvite = false;
   bool _playersLoading = false;
   bool _playersLoadedOnce = false;
@@ -122,7 +130,7 @@ class _LeagueScreenState extends State<LeagueScreen>
     if (roomCode != null) {
       links.takeWantGruposTab();
       _handlingInvite = true;
-      setState(() => _tab = 2);
+      setState(() => _tab = _tabGrupos);
       try {
         await _joinRoomWithCode(context, roomCode);
       } finally {
@@ -131,12 +139,18 @@ class _LeagueScreenState extends State<LeagueScreen>
       return;
     }
     if (links.takeWantCompanhiaTab()) {
-      setState(() => _tab = 1);
+      setState(() {
+        _tab = _tabCompanhia;
+        _companhiaPane = 0;
+      });
     }
     final code = links.takePendingCompanionCode();
     if (code == null) return;
     _handlingInvite = true;
-    setState(() => _tab = 1);
+    setState(() {
+      _tab = _tabCompanhia;
+      _companhiaPane = 0;
+    });
     try {
       await _joinCompanionWithCode(context, code, confirm: true);
     } finally {
@@ -194,7 +208,7 @@ class _LeagueScreenState extends State<LeagueScreen>
         groupCode != null
             ? backend.fetchGroupWeekPlayers(groupCode, week)
             : backend.fetchWeekPlayers(week, tier: league.tierIndex),
-        backend.fetchOverallPlayers(),
+        backend.fetchMonthlyPlayers(),
       ]).timeout(const Duration(seconds: 12));
       final players = fetched[0];
       final overallPlayers = fetched[1];
@@ -283,7 +297,7 @@ class _LeagueScreenState extends State<LeagueScreen>
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(
-              'A companhia ganhou +${WalkCompanion.weekTogetherBonusSteps} na caravana',
+              'A companhia ganhou +${WalkCompanion.weekTogetherBonusSteps} passos na jornada',
             ),
           ),
         );
@@ -346,14 +360,12 @@ class _LeagueScreenState extends State<LeagueScreen>
               index: _tab,
               caravanAlert: JuntosInbox.caravanPending(context) > 0,
               companionAlert:
-                  context.watch<CompanionService>().incomingNudge != null,
+                  context.watch<CompanionService>().incomingNudge != null ||
+                  context.watch<CornerService>().face != null,
               gruposAlert: context.watch<RoomService>().incoming.isNotEmpty,
               onChanged: (i) {
                 ActHaptics.tap();
-                setState(() {
-                  _tab = i;
-                  if (i != 0 && _caravanPane == 2) _caravanPane = 0;
-                });
+                setState(() => _tab = i);
               },
             ),
           ),
@@ -386,11 +398,13 @@ class _LeagueScreenState extends State<LeagueScreen>
               key: ValueKey(_tab),
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: switch (_tab) {
-                0 => [
-                  JuntosInbox(onOpenCaravana: () => setState(() => _tab = 0)),
+                _tabCompanhia => _buildCompanions(context),
+                _tabCaravana => [
+                  JuntosInbox(
+                    onOpenCaravana: () => setState(() => _tab = _tabCaravana),
+                  ),
                   ..._buildLeague(context),
                 ],
-                1 => _buildCompanions(context),
                 _ => _buildRooms(context),
               },
             ),
@@ -422,73 +436,66 @@ class _LeagueScreenState extends State<LeagueScreen>
       ];
     }
 
-    final pane = _caravanPane;
-    final desafioAlert = context.watch<CornerService>().face != null;
+    final today = DateTime.now().toIso8601String().substring(0, 10);
+    final backend = context.watch<BackendService>();
+    final pane = _caravanPane.clamp(0, 1);
+    final weekly = pane == 1;
     final children = <Widget>[
       _reveal(
         1,
-        _RankingPeriodTabs(
+        _CaravanStageCard(
           pane: pane,
-          desafioAlert: desafioAlert,
-          onChanged: (value) => setState(() => _caravanPane = value),
+          onPaneChanged: (value) =>
+              setState(() => _caravanPane = value.clamp(0, 1)),
         ),
       ),
       const SizedBox(height: AppSpace.md),
     ];
 
-    if (pane == 2) {
-      children.add(
-        CornerBoard(
-          onOpenMission: widget.onOpenMission ?? (_) {},
-          onOpenCaravana: () => setState(() => _caravanPane = 0),
-        ),
-      );
-      return children;
+    final weeklyEntries = league.standings(
+      userName: progress.userName,
+      userWeeklySteps: progress.weeklySteps,
+      userUid: backend.uid,
+      userLastWalkDate: progress.lastPlayedDate,
+      userLastSeenDate: today,
+      userPhotoUrl: backend.userPhotoUrl,
+      userPortraitStyle: progress.settings.portraitStyle,
+      realPlayers: _realPlayers,
+    );
+    final weeklyRank = league.userRank(weeklyEntries);
+    final weeklyCompetitive = LeagueService.fieldIsCompetitive(
+      _realPlayers.length,
+    );
+    if (weeklyRank > 0 && _playersLoadedOnce && weeklyCompetitive) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (!mounted) return;
+        context.read<LeagueService>().observeWeeklyRank(weeklyRank);
+      });
     }
 
-    final overall = pane == 0;
-    final today = DateTime.now().toIso8601String().substring(0, 10);
-    final backend = context.watch<BackendService>();
-    final entries = overall
-        ? league.overallStandings(
-            userName: progress.userName,
-            userTotalSteps: progress.steps,
-            userUid: backend.uid,
-            userLastWalkDate: progress.lastPlayedDate,
-            userLastSeenDate: today,
-            userPhotoUrl: backend.userPhotoUrl,
-            userPortraitStyle: progress.settings.portraitStyle,
-            realPlayers: _overallPlayers,
-          )
-        : league.standings(
-            userName: progress.userName,
-            userWeeklySteps: progress.weeklySteps,
-            userUid: backend.uid,
-            userLastWalkDate: progress.lastPlayedDate,
-            userLastSeenDate: today,
-            userPhotoUrl: backend.userPhotoUrl,
-            userPortraitStyle: progress.settings.portraitStyle,
-            realPlayers: _realPlayers,
-          );
+    final entries = league.overallStandings(
+      userName: progress.userName,
+      userTotalSteps: progress.currentMonthSteps,
+      userUid: backend.uid,
+      userLastWalkDate: progress.lastPlayedDate,
+      userLastSeenDate: today,
+      userPhotoUrl: backend.userPhotoUrl,
+      userPortraitStyle: progress.settings.portraitStyle,
+      realPlayers: _overallPlayers,
+    );
     final userRank = league.userRank(entries);
-    if (overall &&
-        userRank == 1 &&
+    if (userRank == 1 &&
         LeagueService.fieldIsCompetitive(_overallPlayers.length)) {
       WidgetsBinding.instance.addPostFrameCallback((_) {
         progress.recordLeaderDay();
       });
     }
-    if (!overall &&
-        userRank > 0 &&
-        _playersLoadedOnce &&
-        LeagueService.fieldIsCompetitive(_realPlayers.length)) {
-      WidgetsBinding.instance.addPostFrameCallback((_) {
-        if (!mounted) return;
-        context.read<LeagueService>().observeWeeklyRank(userRank);
-      });
-    }
+
     final canPromote = league.tierIndex < LeagueTier.values.length - 1;
     final canDemote = league.tierIndex > 0;
+    final overallCompetitive = LeagueService.fieldIsCompetitive(
+      _overallPlayers.length,
+    );
 
     if (_playersError != null) {
       children.addAll([
@@ -501,34 +508,46 @@ class _LeagueScreenState extends State<LeagueScreen>
       ]);
     }
 
-    if (!LeagueService.fieldIsCompetitive(
-          overall ? _overallPlayers.length : _realPlayers.length,
-        ) &&
-        !_playersLoading) {
-      children.add(
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: AppSpace.lg),
-          child: _CaravanEmptyCard(
-            overall: overall,
-            onInvite: () => _shareCaravanInvite(context),
-          ),
-        ),
-      );
+    if (!overallCompetitive && !_playersLoading) {
+      children.add(_reveal(2, const _CaravanEmptyCard()));
     } else if (entries.isNotEmpty) {
       children.add(
         _reveal(
-          3,
+          2,
           _LeaderboardBoard(
             entries: entries,
-            weekly: !overall,
-            canPromote: !overall && canPromote,
-            canDemote: !overall && canDemote,
+            weeklyEntries: weeklyEntries,
+            weekly: weekly,
+            weeklyCompetitive: weeklyCompetitive,
+            canPromote: canPromote,
+            canDemote: canDemote,
             tierIndex: league.tierIndex,
             onOpenOwnProfile: widget.onOpenOwnProfile,
           ),
         ),
       );
     }
+
+    children.addAll([
+      const SizedBox(height: AppSpace.md),
+      CopperCta(
+        label: 'Chamar para a caravana',
+        leading: CinematicGlyph.share,
+        trailing: null,
+        onTap: () => _shareCaravanInvite(context),
+      ),
+      const SizedBox(height: AppSpace.sm),
+      GhostCta(
+        label: 'Ou chamar um companheiro',
+        leading: CinematicGlyph.link,
+        expanded: true,
+        onTap: () => setState(() {
+          _tab = _tabCompanhia;
+          _companhiaPane = 0;
+        }),
+      ),
+    ]);
+
     return children;
   }
 
@@ -536,27 +555,58 @@ class _LeagueScreenState extends State<LeagueScreen>
     final companions = context.watch<CompanionService>();
     final backend = context.watch<BackendService>();
     final progress = context.watch<ProgressService>();
+    final corners = context.watch<CornerService>();
+    final pane = _companhiaPane.clamp(0, 1);
+
+    Widget? stageBody;
+    if (pane == 0 && companions.isLoaded && companions.companions.isEmpty) {
+      stageBody = const _AmizadeExplainer();
+    } else if (pane == 1) {
+      stageBody = const _DesafioExplainer();
+    }
+
+    final list = <Widget>[
+      _reveal(
+        1,
+        _CompanhiaStageCard(
+          pane: pane,
+          companionAlert: companions.incomingNudge != null,
+          desafioAlert: corners.face != null,
+          onPaneChanged: (value) =>
+              setState(() => _companhiaPane = value.clamp(0, 1)),
+          body: stageBody,
+        ),
+      ),
+      const SizedBox(height: AppSpace.md),
+    ];
+
+    if (pane == 1) {
+      list.addAll(_desafioPane(context));
+      return list;
+    }
 
     if (!companions.isLoaded) {
-      return [
+      list.add(
         const Padding(
           padding: EdgeInsets.only(top: AppSpace.xxxl + AppSpace.lg),
           child: AppSpinner(),
         ),
-      ];
+      );
+      return list;
     }
 
     if (!backend.isActive) {
-      return [
+      list.add(
         _reveal(
-          1,
+          2,
           _CompanionsOfflineCard(
             error: backend.lastError,
             loading: backend.isInitializing,
             onRetry: () => backend.retry(),
           ),
         ),
-      ];
+      );
+      return list;
     }
 
     final ordered = [...companions.companions]
@@ -572,8 +622,6 @@ class _LeagueScreenState extends State<LeagueScreen>
 
         return score(a).compareTo(score(b));
       });
-
-    final list = <Widget>[];
 
     if (companions.lastError != null) {
       list.add(
@@ -701,6 +749,24 @@ class _LeagueScreenState extends State<LeagueScreen>
       );
     }
     return list;
+  }
+
+  /// Desafio sob Companhia — mesmo padrão da Amizade: stage → cards → CTA.
+  List<Widget> _desafioPane(BuildContext context) {
+    return [
+      CornerBoard(
+        onOpenMission: widget.onOpenMission ?? (_) {},
+        onOpenCaravana: () => setState(() => _tab = _tabCaravana),
+        hideEmptyChrome: true,
+      ),
+      const SizedBox(height: AppSpace.md),
+      CopperCta(
+        label: CornerCopy.boardOpenCaravan,
+        leading: CinematicGlyph.podium,
+        trailing: null,
+        onTap: () => setState(() => _tab = _tabCaravana),
+      ),
+    ];
   }
 
   Future<void> _shareCaravanInvite(BuildContext context) async {
@@ -1377,38 +1443,364 @@ class _SegmentTabs extends StatelessWidget {
       index: index,
       onChanged: onChanged,
       items: [
-        (label: 'Caravana', glyph: CinematicGlyph.podium, alert: caravanAlert),
         (label: 'Companhia', glyph: CinematicGlyph.link, alert: companionAlert),
+        (label: 'Caravana', glyph: CinematicGlyph.podium, alert: caravanAlert),
         (label: 'Grupos', glyph: CinematicGlyph.people, alert: gruposAlert),
       ],
     );
   }
 }
 
-class _RankingPeriodTabs extends StatelessWidget {
+class _CompanhiaStageCard extends StatelessWidget {
   final int pane;
+  final ValueChanged<int> onPaneChanged;
+  final bool companionAlert;
   final bool desafioAlert;
-  final ValueChanged<int> onChanged;
+  final Widget? body;
 
-  const _RankingPeriodTabs({
+  const _CompanhiaStageCard({
     required this.pane,
-    required this.onChanged,
+    required this.onPaneChanged,
+    this.companionAlert = false,
     this.desafioAlert = false,
+    this.body,
   });
 
   @override
   Widget build(BuildContext context) {
-    // Mesma pílula das abas Caravana · Companhia · Grupos.
-    return JuntosSegmentTabs(
-      index: pane,
-      onChanged: (i) {
-        ActHaptics.tap();
-        onChanged(i);
-      },
-      items: [
-        (label: 'Geral', glyph: CinematicGlyph.path, alert: false),
-        (label: 'Semana', glyph: CinematicGlyph.calendar, alert: false),
-        (label: 'Desafio', glyph: CinematicGlyph.flag, alert: desafioAlert),
+    final hasBody = body != null;
+    return GlassCard(
+      padding: EdgeInsets.zero,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Padding(
+            padding: EdgeInsets.fromLTRB(10, 10, 10, hasBody ? 0 : 10),
+            child: JuntosSegmentTabs(
+              index: pane,
+              onChanged: (i) {
+                ActHaptics.tap();
+                onPaneChanged(i);
+              },
+              items: [
+                (
+                  label: 'Amizade',
+                  glyph: CinematicGlyph.link,
+                  alert: companionAlert,
+                ),
+                (
+                  label: 'Desafio',
+                  glyph: CinematicGlyph.flag,
+                  alert: desafioAlert,
+                ),
+              ],
+            ),
+          ),
+          if (hasBody) ...[
+            const SizedBox(height: AppSpace.md),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(18, 0, 18, 18),
+              child: body!,
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+/// Stage da Caravana — mesmo padrão da Companhia: abas + descrição.
+class _CaravanStageCard extends StatelessWidget {
+  final int pane;
+  final ValueChanged<int> onPaneChanged;
+
+  const _CaravanStageCard({required this.pane, required this.onPaneChanged});
+
+  @override
+  Widget build(BuildContext context) {
+    final weekly = pane == 1;
+    return GlassCard(
+      padding: EdgeInsets.zero,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Padding(
+            padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
+            child: JuntosSegmentTabs(
+              index: pane,
+              onChanged: (i) {
+                ActHaptics.tap();
+                onPaneChanged(i);
+              },
+              items: const [
+                (
+                  label: 'Este mês',
+                  glyph: CinematicGlyph.path,
+                  alert: false,
+                ),
+                (
+                  label: 'Esta semana',
+                  glyph: CinematicGlyph.calendar,
+                  alert: false,
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: AppSpace.md),
+          Padding(
+            padding: const EdgeInsets.fromLTRB(18, 0, 18, 18),
+            child: _CaravanExplainer(weekly: weekly),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _CaravanExplainer extends StatelessWidget {
+  final bool weekly;
+
+  const _CaravanExplainer({required this.weekly});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final title = weekly
+        ? 'Quem avançou nesta semana?'
+        : 'Quem mais caminhou neste mês?';
+    final body = weekly
+        ? 'Só passos de cenas novas, de segunda a domingo. No fim da semana, os primeiros sobem de divisão e os últimos descem.'
+        : 'Tudo conta: cenas, missões, baús e companhia. Zera todo dia 1 — quem chegou agora também pode liderar.';
+    final steps = weekly
+        ? const [
+            (CinematicGlyph.calendar, 'Passos\nda semana'),
+            (CinematicGlyph.podium, 'Lugar no\nranking'),
+            (CinematicGlyph.rise, 'Sobe ou\ndesce'),
+          ]
+        : const [
+            (CinematicGlyph.path, 'Estude\numa cena'),
+            (CinematicGlyph.rise, 'Some\npassos'),
+            (CinematicGlyph.podium, 'Veja o\ncaminho'),
+          ];
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Text(
+          title,
+          textAlign: TextAlign.center,
+          style: AppTypography.display(size: 24, color: a.text),
+        ),
+        const SizedBox(height: AppSpace.sm),
+        Text(
+          body,
+          textAlign: TextAlign.center,
+          style: AppTypography.body(
+            size: 13,
+            height: 1.45,
+            color: a.textSecondary,
+          ),
+        ),
+        const SizedBox(height: AppSpace.lg),
+        _CaravanSteps(steps: steps),
+      ],
+    );
+  }
+}
+
+class _CaravanSteps extends StatelessWidget {
+  final List<(CinematicGlyph, String)> steps;
+
+  const _CaravanSteps({required this.steps});
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Stack(
+      children: [
+        Positioned(
+          left: 40,
+          right: 40,
+          top: 19,
+          child: Container(
+            height: 1,
+            color: AppColors.accent.withValues(alpha: 0.25),
+          ),
+        ),
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            for (final s in steps)
+              Expanded(
+                child: Column(
+                  children: [
+                    Container(
+                      width: 38,
+                      height: 38,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: AppColors.nightMid,
+                        border: Border.all(
+                          color: AppColors.accent.withValues(alpha: 0.5),
+                        ),
+                      ),
+                      child: Center(
+                        child: CinematicIcon(
+                          glyph: s.$1,
+                          size: 18,
+                          accent: AppColors.accent,
+                          framed: false,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    Text(
+                      s.$2,
+                      textAlign: TextAlign.center,
+                      style: AppTypography.body(
+                        size: 12,
+                        height: 1.3,
+                        weight: FontWeight.w700,
+                        color: a.textSecondary,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+          ],
+        ),
+      ],
+    );
+  }
+}
+
+class _AmizadeExplainer extends StatelessWidget {
+  const _AmizadeExplainer();
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Text(
+          'Quem caminha ao seu lado?',
+          textAlign: TextAlign.center,
+          style: AppTypography.display(size: 24, color: a.text),
+        ),
+        const SizedBox(height: AppSpace.sm),
+        Text(
+          'Uma amizade de estudo. No dia em que os dois caminham, o fio acende e a sequência cresce.',
+          textAlign: TextAlign.center,
+          style: AppTypography.body(
+            size: 13,
+            height: 1.45,
+            color: a.textSecondary,
+          ),
+        ),
+        const SizedBox(height: AppSpace.lg),
+        const _CompanionSteps(),
+      ],
+    );
+  }
+}
+
+class _DesafioExplainer extends StatelessWidget {
+  const _DesafioExplainer();
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Text(
+          'Quem chega junto na cena?',
+          textAlign: TextAlign.center,
+          style: AppTypography.display(size: 24, color: a.text),
+        ),
+        const SizedBox(height: AppSpace.sm),
+        Text(
+          'Mesma cena, até domingo. Cada um que chegar ganha ${CornerCopy.reward} — os dois podem ganhar; não é duelo.',
+          textAlign: TextAlign.center,
+          style: AppTypography.body(
+            size: 13,
+            height: 1.45,
+            color: a.textSecondary,
+          ),
+        ),
+        const SizedBox(height: AppSpace.lg),
+        const _DesafioSteps(),
+      ],
+    );
+  }
+}
+
+/// Os três passos do desafio — mesmo idioma visual da Amizade.
+class _DesafioSteps extends StatelessWidget {
+  const _DesafioSteps();
+
+  static const _steps = [
+    (CinematicGlyph.path, 'Mesma\ncena'),
+    (CinematicGlyph.calendar, 'Chegar até\ndomingo'),
+    (CinematicGlyph.rise, 'Cada um\nganha +10'),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Stack(
+      children: [
+        Positioned(
+          left: 40,
+          right: 40,
+          top: 19,
+          child: Container(
+            height: 1,
+            color: AppColors.accent.withValues(alpha: 0.25),
+          ),
+        ),
+        Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            for (final s in _steps)
+              Expanded(
+                child: Column(
+                  children: [
+                    Container(
+                      width: 38,
+                      height: 38,
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: AppColors.nightMid,
+                        border: Border.all(
+                          color: AppColors.accent.withValues(alpha: 0.5),
+                        ),
+                      ),
+                      child: Center(
+                        child: CinematicIcon(
+                          glyph: s.$1,
+                          size: 18,
+                          accent: AppColors.accent,
+                          framed: false,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 8),
+                    Text(
+                      s.$2,
+                      textAlign: TextAlign.center,
+                      style: AppTypography.body(
+                        size: 12,
+                        height: 1.3,
+                        weight: FontWeight.w700,
+                        color: a.textSecondary,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+          ],
+        ),
       ],
     );
   }
@@ -1512,14 +1904,13 @@ class _RoomsEmptyState extends StatelessWidget {
           const _CircleOfSeats(),
           const SizedBox(height: AppSpace.lg),
           Text(
-            'Estudem juntos',
+            'Quem estuda com você?',
             textAlign: TextAlign.center,
             style: AppTypography.display(size: 28, color: a.text),
           ),
           const SizedBox(height: AppSpace.sm),
           Text(
-            'Crie o grupo, marque o estudo da semana e chame as pessoas. '
-            'O convite chega no app ou pelo WhatsApp.',
+            'Um grupo fechado: célula, discipulado ou EBD. Marque a cena da semana e veja quem estudou — o convite vai no app ou no WhatsApp.',
             textAlign: TextAlign.center,
             style: AppTypography.body(
               size: 13,
@@ -2149,78 +2540,11 @@ class _TextInputDialogState extends State<_TextInputDialog> {
   }
 }
 
-class _ZoneLabel extends StatelessWidget {
-  final String text;
-  final bool up;
-
-  const _ZoneLabel({required this.text, required this.up});
-
-  @override
-  Widget build(BuildContext context) {
-    final color = up ? AppColors.accent : AppColors.error;
-    return Padding(
-      padding: const EdgeInsets.fromLTRB(12, 6, 12, 2),
-      child: Row(
-        children: [
-          CinematicIcon(
-            glyph: up ? CinematicGlyph.rise : CinematicGlyph.demote,
-            size: 16,
-            accent: color,
-            framed: false,
-          ),
-          const SizedBox(width: 6),
-          Expanded(
-            child: SectionLabel(
-              text,
-              size: 10,
-              color: color.withValues(alpha: 0.9),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-class _ZoneDivider extends StatelessWidget {
-  const _ZoneDivider();
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-      child: Row(
-        children: [
-          Expanded(
-            child: Container(
-              height: 1,
-              color: AppColors.accent.withValues(alpha: 0.35),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10),
-            child: CinematicIcon(
-              glyph: CinematicGlyph.rise,
-              size: 14,
-              accent: AppColors.accent.withValues(alpha: 0.7),
-              framed: false,
-            ),
-          ),
-          Expanded(
-            child: Container(
-              height: 1,
-              color: AppColors.accent.withValues(alpha: 0.35),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
 class _LeaderboardBoard extends StatelessWidget {
   final List<LeagueEntry> entries;
+  final List<LeagueEntry> weeklyEntries;
   final bool weekly;
+  final bool weeklyCompetitive;
   final bool canPromote;
   final bool canDemote;
   final int tierIndex;
@@ -2228,19 +2552,22 @@ class _LeaderboardBoard extends StatelessWidget {
 
   const _LeaderboardBoard({
     required this.entries,
+    required this.weeklyEntries,
     required this.weekly,
+    required this.weeklyCompetitive,
     required this.canPromote,
     required this.canDemote,
-    this.tierIndex = 0,
+    required this.tierIndex,
     this.onOpenOwnProfile,
   });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final heading = weekly ? 'Esta semana' : 'Toda a jornada';
+    final list = weekly ? weeklyEntries : entries;
     final online = LeagueService.onlineNow(entries);
     final countLabel = LeagueService.onlineCountLabel(online.length);
+
     final onlineChip = Row(
       mainAxisSize: MainAxisSize.min,
       children: [
@@ -2283,81 +2610,96 @@ class _LeaderboardBoard extends StatelessWidget {
         ),
       ],
     );
+
     final rows = <Widget>[
-      Padding(
-        padding: const EdgeInsets.fromLTRB(14, 2, 6, 8),
-        child: Row(
-          children: [
-            SectionLabel(
-              heading,
-              color: AppColors.accent.withValues(alpha: 0.9),
-            ),
-            const Spacer(),
-            if (online.isEmpty)
-              Padding(
-                padding: const EdgeInsets.fromLTRB(6, 4, 8, 4),
-                child: onlineChip,
-              )
-            else
-              Semantics(
-                button: true,
-                label: '$countLabel. Ver quem está na trilha',
-                child: Material(
-                  color: Colors.transparent,
-                  child: InkWell(
-                    onTap: () => _showCaravanOnlineSheet(
-                      context,
-                      people: online,
-                      weekly: weekly,
-                      onOpenOwnProfile: onOpenOwnProfile,
-                    ),
-                    borderRadius: BorderRadius.circular(AppRadii.pill),
-                    child: Padding(
-                      padding: const EdgeInsets.fromLTRB(6, 4, 8, 4),
-                      child: onlineChip,
-                    ),
+      if (online.isEmpty)
+        Padding(
+          padding: const EdgeInsets.fromLTRB(14, 0, 10, 8),
+          child: onlineChip,
+        )
+      else
+        Padding(
+          padding: const EdgeInsets.fromLTRB(8, 0, 4, 6),
+          child: Align(
+            alignment: Alignment.centerLeft,
+            child: Semantics(
+              button: true,
+              label: '$countLabel. Ver quem está na trilha',
+              child: Material(
+                color: Colors.transparent,
+                child: InkWell(
+                  onTap: () => _showCaravanOnlineSheet(
+                    context,
+                    people: online,
+                    onOpenOwnProfile: onOpenOwnProfile,
+                  ),
+                  borderRadius: BorderRadius.circular(AppRadii.pill),
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(6, 4, 8, 4),
+                    child: onlineChip,
                   ),
                 ),
               ),
-          ],
+            ),
+          ),
         ),
-      ),
     ];
 
-    for (var i = 0; i < entries.length; i++) {
-      final rank = i + 1;
-      if (weekly && rank == 1 && canPromote) {
-        rows.add(
-          _ZoneLabel(
-            text:
-                'Zona de subida · ${LeagueTier.values[tierIndex + 1].shortLabel}',
-            up: true,
-          ),
-        );
-      }
-      if (weekly &&
-          rank == LeagueService.groupSize - LeagueService.demoteCount + 1 &&
-          canDemote) {
-        rows.add(
-          _ZoneLabel(
-            text:
-                'Zona de descida · ${LeagueTier.values[tierIndex - 1].shortLabel}',
-            up: false,
-          ),
-        );
-      }
+    if (weekly && (!weeklyCompetitive || list.isEmpty)) {
       rows.add(
-        _StandingRow(
-          entry: entries[i],
-          rank: rank,
-          weeklySteps: weekly,
-          gapToAbove: i == 0 ? 0 : entries[i - 1].steps - entries[i].steps,
-          showDivider: i < entries.length - 1 && !entries[i + 1].isUser,
-          onOpenOwnProfile: onOpenOwnProfile,
+        Padding(
+          padding: const EdgeInsets.fromLTRB(14, 8, 14, 16),
+          child: Text(
+            'O ranking da semana só aparece com gente de verdade na caravana.',
+            textAlign: TextAlign.center,
+            style: AppTypography.body(
+              size: 13,
+              height: 1.35,
+              color: a.textSecondary,
+            ),
+          ),
         ),
       );
-      if (weekly && rank == LeagueService.promoteCount && canPromote) {
-        rows.add(const _ZoneDivider());
+    } else {
+      for (var i = 0; i < list.length; i++) {
+        final rank = i + 1;
+        if (weekly && rank == 1 && canPromote) {
+          rows.add(
+            _WeekZoneLabel(
+              text:
+                  'Zona de subida · ${LeagueTier.values[tierIndex + 1].shortLabel}',
+              up: true,
+            ),
+          );
+        }
+        if (weekly &&
+            LeagueService.demoteCountFor(list.length) > 0 &&
+            rank == list.length - LeagueService.demoteCountFor(list.length) + 1 &&
+            canDemote) {
+          rows.add(
+            _WeekZoneLabel(
+              text:
+                  'Zona de descida · ${LeagueTier.values[tierIndex - 1].shortLabel}',
+              up: false,
+            ),
+          );
+        }
+        rows.add(
+          _StandingRow(
+            entry: list[i],
+            rank: rank,
+            weeklySteps: weekly,
+            gapToAbove: i == 0 ? 0 : list[i - 1].steps - list[i].steps,
+            showDivider: i < list.length - 1 && !list[i + 1].isUser,
+            onOpenOwnProfile: onOpenOwnProfile,
+          ),
+        );
+        if (weekly &&
+            rank == LeagueService.promoteCountFor(list.length) &&
+            rank < list.length &&
+            canPromote) {
+          rows.add(const _WeekZoneDivider());
+        }
       }
     }
 
@@ -2368,33 +2710,93 @@ class _LeaderboardBoard extends StatelessWidget {
   }
 }
 
+class _WeekZoneLabel extends StatelessWidget {
+  final String text;
+  final bool up;
+
+  const _WeekZoneLabel({required this.text, required this.up});
+
+  @override
+  Widget build(BuildContext context) {
+    final color = up ? AppColors.accent : AppColors.error;
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(12, 6, 12, 2),
+      child: Row(
+        children: [
+          CinematicIcon(
+            glyph: up ? CinematicGlyph.rise : CinematicGlyph.demote,
+            size: 16,
+            accent: color,
+            framed: false,
+          ),
+          const SizedBox(width: 6),
+          Expanded(
+            child: SectionLabel(
+              text,
+              size: 10,
+              color: color.withValues(alpha: 0.9),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _WeekZoneDivider extends StatelessWidget {
+  const _WeekZoneDivider();
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+      child: Row(
+        children: [
+          Expanded(
+            child: Container(
+              height: 1,
+              color: AppColors.accent.withValues(alpha: 0.35),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10),
+            child: CinematicIcon(
+              glyph: CinematicGlyph.rise,
+              size: 14,
+              accent: AppColors.accent.withValues(alpha: 0.7),
+              framed: false,
+            ),
+          ),
+          Expanded(
+            child: Container(
+              height: 1,
+              color: AppColors.accent.withValues(alpha: 0.35),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
 void _showCaravanOnlineSheet(
   BuildContext context, {
   required List<({LeagueEntry entry, int rank})> people,
-  required bool weekly,
   VoidCallback? onOpenOwnProfile,
 }) {
   ActHaptics.light();
   showAppSheet<void>(
     context,
-    builder: (ctx) => _CaravanOnlineSheet(
-      people: people,
-      weekly: weekly,
-      onOpenOwnProfile: onOpenOwnProfile,
-    ),
+    builder: (ctx) =>
+        _CaravanOnlineSheet(people: people, onOpenOwnProfile: onOpenOwnProfile),
   );
 }
 
 class _CaravanOnlineSheet extends StatelessWidget {
   final List<({LeagueEntry entry, int rank})> people;
-  final bool weekly;
   final VoidCallback? onOpenOwnProfile;
 
-  const _CaravanOnlineSheet({
-    required this.people,
-    required this.weekly,
-    this.onOpenOwnProfile,
-  });
+  const _CaravanOnlineSheet({required this.people, this.onOpenOwnProfile});
 
   @override
   Widget build(BuildContext context) {
@@ -2465,7 +2867,6 @@ class _CaravanOnlineSheet extends StatelessWidget {
             return _OnlineSheetRow(
               entry: p.entry,
               rank: p.rank,
-              weekly: weekly,
               onOpenOwnProfile: onOpenOwnProfile,
             );
           },
@@ -2478,13 +2879,11 @@ class _CaravanOnlineSheet extends StatelessWidget {
 class _OnlineSheetRow extends StatelessWidget {
   final LeagueEntry entry;
   final int rank;
-  final bool weekly;
   final VoidCallback? onOpenOwnProfile;
 
   const _OnlineSheetRow({
     required this.entry,
     required this.rank,
-    required this.weekly,
     this.onOpenOwnProfile,
   });
 
@@ -2597,7 +2996,7 @@ class _StandingRow extends StatelessWidget {
   const _StandingRow({
     required this.entry,
     required this.rank,
-    required this.weeklySteps,
+    this.weeklySteps = false,
     this.gapToAbove = 0,
     this.showDivider = false,
     this.onOpenOwnProfile,
@@ -3157,18 +3556,12 @@ class _CompanionsEmpty extends StatelessWidget {
     final myUid = context.select((BackendService b) => b.uid);
     final progress = context.watch<ProgressService>();
     final name = progress.userName.trim();
-    final a = Appearance.of(context);
-    return GlassCard(
-      glow: 0.7,
-      padding: const EdgeInsets.fromLTRB(18, 20, 18, 18),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          const Center(
-            child: SectionLabel('Companhia de estudo', color: AppColors.accent),
-          ),
-          const SizedBox(height: AppSpace.lg),
-          Row(
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        GlassCard(
+          padding: const EdgeInsets.fromLTRB(18, 20, 18, 20),
+          child: Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               _BondMember(
@@ -3189,44 +3582,26 @@ class _CompanionsEmpty extends StatelessWidget {
               const _EmptySeat(),
             ],
           ),
-          const SizedBox(height: AppSpace.lg),
-          Text(
-            'Quem caminha ao seu lado?',
-            textAlign: TextAlign.center,
-            style: AppTypography.display(size: 24, color: a.text),
+        ),
+        const SizedBox(height: AppSpace.md),
+        if (loading)
+          const AppSpinner()
+        else ...[
+          CopperCta(
+            label: 'Convidar amigo',
+            onTap: onInvite,
+            leading: CinematicGlyph.people,
+            trailing: null,
           ),
           const SizedBox(height: AppSpace.sm),
-          Text(
-            'Uma pessoa. Quando os dois estudam no mesmo dia, o fio acende e a sequência cresce.',
-            textAlign: TextAlign.center,
-            style: AppTypography.body(
-              size: 13,
-              height: 1.45,
-              color: a.textSecondary,
-            ),
+          GhostCta(
+            label: 'Tenho um código',
+            leading: CinematicGlyph.qr,
+            expanded: true,
+            onTap: onJoin,
           ),
-          const SizedBox(height: AppSpace.lg),
-          const _CompanionSteps(),
-          const SizedBox(height: AppSpace.xl),
-          if (loading)
-            const AppSpinner()
-          else ...[
-            CopperCta(
-              label: 'Convidar amigo',
-              onTap: onInvite,
-              leading: CinematicGlyph.people,
-              trailing: null,
-            ),
-            const SizedBox(height: AppSpace.sm),
-            GhostCta(
-              label: 'Tenho um código',
-              leading: CinematicGlyph.qr,
-              expanded: true,
-              onTap: onJoin,
-            ),
-          ],
         ],
-      ),
+      ],
     );
   }
 }
@@ -3363,36 +3738,20 @@ class _CompanionCard extends StatelessWidget {
       walked: companion.theyWalkedToday,
       away: companion.theyAreDusty,
     );
-    final tint = companion.waitingOnMe
-        ? AppColors.streak
-        : companion.theyAreDusty
-        ? AppColors.sand
-        : AppColors.accent;
     return GlassCard(
-      tint: tint,
-      glow: companion.waitingOnMe || companion.hasIncomingNudge
-          ? 0.95
-          : companion.bothWalkedToday
-          ? 0.7
-          : 0.35,
       padding: const EdgeInsets.fromLTRB(18, 18, 18, 8),
       child: Column(
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Row(
-            children: [
-              SectionLabel('Companhia de estudo', color: tint),
-              const Spacer(),
-              if (companion.sharedDays > 0)
-                SoftBadge(
-                  text:
-                      '${companion.sharedDays} ${companion.sharedDays == 1 ? 'dia' : 'dias'}',
-                  glyph: CinematicGlyph.flame,
-                  accent: AppColors.streak,
-                ),
-            ],
-          ),
+          if (companion.sharedDays > 0)
+            SoftBadge(
+              text:
+                  '${companion.sharedDays} ${companion.sharedDays == 1 ? 'dia' : 'dias'}',
+              glyph: CinematicGlyph.flame,
+              accent: AppColors.streak,
+            ),
+
           const SizedBox(height: AppSpace.lg),
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -3644,7 +4003,6 @@ class _OpenInviteStage extends StatelessWidget {
         : myName.trim().split(' ').first;
     final a = Appearance.of(context);
     return GlassCard(
-      glow: 0.5,
       padding: const EdgeInsets.fromLTRB(18, 18, 18, 8),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -4460,29 +4818,38 @@ class _IncomingNudgeBanner extends StatelessWidget {
 }
 
 class _CaravanEmptyCard extends StatelessWidget {
-  final bool overall;
-  final VoidCallback onInvite;
-
-  const _CaravanEmptyCard({required this.overall, required this.onInvite});
+  const _CaravanEmptyCard();
 
   @override
   Widget build(BuildContext context) {
+    final a = Appearance.of(context);
     return GlassCard(
-      padding: EdgeInsets.zero,
-      child: EmptyState(
-        glyph: CinematicGlyph.people,
-        title: overall
-            ? 'A caravana ainda é pequena'
-            : 'Sua caravana ainda está quieta',
-        body: overall
-            ? 'O ranking geral só aparece com gente de verdade. Chame alguém pra caminhar na caravana.'
-            : 'O ranking da semana só aparece com gente de verdade. Chame alguém pra caminhar na caravana.',
-        action: CopperCta(
-          label: 'Chamar pra caravana',
-          leading: CinematicGlyph.share,
-          onTap: onInvite,
-          dense: true,
-        ),
+      padding: const EdgeInsets.fromLTRB(18, 22, 18, 22),
+      child: Column(
+        children: [
+          const CinematicIcon(
+            glyph: CinematicGlyph.people,
+            size: 40,
+            accent: AppColors.accent,
+            glowing: false,
+          ),
+          const SizedBox(height: 14),
+          Text(
+            'A caravana ainda é pequena',
+            textAlign: TextAlign.center,
+            style: AppTypography.display(size: 24, color: a.text),
+          ),
+          const SizedBox(height: 8),
+          Text(
+            'O ranking aparece com pelo menos mais uma pessoa caminhando. Chame alguém para a caravana — ou comece por uma amizade.',
+            textAlign: TextAlign.center,
+            style: AppTypography.body(
+              size: 13,
+              height: 1.35,
+              color: a.textSecondary,
+            ),
+          ),
+        ],
       ),
     );
   }

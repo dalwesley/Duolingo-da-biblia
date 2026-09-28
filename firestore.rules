@@ -126,7 +126,12 @@ service cloud.firestore {
         && (!('steps' in request.resource.data) || !('xp' in request.resource.data)
             || request.resource.data.steps == request.resource.data.xp)
         && (!('weeklySteps' in request.resource.data) || !('weeklyXp' in request.resource.data)
-            || request.resource.data.weeklySteps == request.resource.data.weeklyXp);
+            || request.resource.data.weeklySteps == request.resource.data.weeklyXp)
+        // Resultado da Caravana é do servidor (Cloud Function settleLeagueWeek).
+        && (resource == null
+            ? !('leagueResult' in request.resource.data)
+            : request.resource.data.get('leagueResult', null)
+                == resource.data.get('leagueResult', null));
     }
 
     // Liga semanal: qualquer autenticado lê; o dono só grava o próprio
@@ -152,6 +157,12 @@ service cloud.firestore {
             || !('weeklyWeek' in userData())
             || userData().weeklyWeek == null
             || userData().weeklyWeek == week);
+    }
+
+    // Salas da semana: só a Cloud Function onLeaguePlayerCreate escreve.
+    match /leagues/{week}/tiers/{tier}/cohorts/{cohort} {
+      allow read: if isSignedIn();
+      allow write: if false;
     }
 
     // Grupo fechado da caravana (célula/paróquia) — mesmo critério da liga semanal.

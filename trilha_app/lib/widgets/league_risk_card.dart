@@ -25,11 +25,13 @@ class LeagueRiskCard extends StatelessWidget {
       userWeeklySteps: progress.weeklySteps,
     );
     final rank = league.userRank(entries);
-    if (!league.isNearDemotion(rank)) return const SizedBox.shrink();
+    if (!league.isNearDemotion(rank, entries.length)) {
+      return const SizedBox.shrink();
+    }
 
     final a = Appearance.of(context);
     final days = LeagueService.daysLeft();
-    final inZone = league.isInDemotionZone(rank);
+    final inZone = league.isInDemotionZone(rank, entries.length);
     final closes = days <= 1 ? 'Fecha hoje' : '$days dias';
     final tier = league.tier.shortLabel;
 

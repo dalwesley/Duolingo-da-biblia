@@ -24,7 +24,7 @@ Cuidado: **três** apps BR já dizem *missão* (Bibliando, Bíblia Fácil, nós)
 
 - Cristãos **PT-BR**, 18–35, celular-first  
 - 5–12 min/dia, querem hábito **e** compreensão  
-- Igreja como **canal** depois que o loop solo retém (Salas / Companhia / Esquina)
+- Igreja como **canal** depois que o loop solo retém (Grupos / Companhia / Desafio)
 
 ---
 

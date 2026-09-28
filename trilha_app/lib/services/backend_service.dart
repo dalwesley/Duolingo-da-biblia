@@ -14,6 +14,7 @@ import '../models/portrait_style.dart';
 import 'analytics_service.dart';
 import 'league_service.dart';
 import 'progress_service.dart';
+import 'remote_config_service.dart';
 
 /// Jogador real vindo da nuvem (liga da semana).
 class CloudPlayer {
@@ -845,10 +846,19 @@ class BackendService extends ChangeNotifier {
       portraitStyle: portraitStyle,
       extra: {'tier': tier},
     );
-    await _putRankingDoc(
-      'leagues/$rankingWeek/tiers/$tier/players/$_uid',
-      weeklyPayload,
-    );
+    // Fechamento no servidor ainda não aplicado: a divisão pode mudar —
+    // não senta a pessoa numa sala da divisão antiga.
+    final tierPending =
+        RemoteConfigService.instance.leagueServerSettlement &&
+        league != null &&
+        league.processedWeek != null &&
+        league.processedWeek != LeagueService.weekKey();
+    if (!tierPending) {
+      await _putRankingDoc(
+        'leagues/$rankingWeek/tiers/$tier/players/$_uid',
+        weeklyPayload,
+      );
+    }
     await _putRankingDoc('leagues/$rankingWeek/players/$_uid', weeklyPayload);
     final groupCode = league?.groupCode;
     if (groupCode != null && groupCode.isNotEmpty) {
@@ -1587,6 +1597,8 @@ class BackendService extends ChangeNotifier {
     int limit = 30,
   }) async {
     if (!isActive) return const [];
+    final seated = await _fetchCohortPlayers(week, tier: tier);
+    if (seated != null) return seated;
     final byUid = <String, CloudPlayer>{};
 
     void put(CloudPlayer p) {
@@ -1655,6 +1667,45 @@ class BackendService extends ChangeNotifier {
     return list.take(limit).toList();
   }
 
+  /// Sala da semana (Cloud Function `onLeaguePlayerCreate`): só as pessoas
+  /// da sua sala, sem você. `null` = ainda sem sala (cai no top da divisão).
+  Future<List<CloudPlayer>?> _fetchCohortPlayers(
+    String week, {
+    required int tier,
+  }) async {
+    final uid = _uid;
+    if (uid == null) return null;
+    try {
+      final seat = await _db
+          .collection('leagues/$week/tiers/$tier/cohorts')
+          .where('members', arrayContains: uid)
+          .limit(1)
+          .get();
+      if (seat.docs.isEmpty) return null;
+      final members = [
+        for (final m in (seat.docs.first.data()['members'] as List? ?? const []))
+          if (m is String && m != uid) m,
+      ];
+      final players = <CloudPlayer>[];
+      for (var i = 0; i < members.length; i += 30) {
+        final part = members.sublist(i, min(i + 30, members.length));
+        final snap = await _db
+            .collection('leagues/$week/tiers/$tier/players')
+            .where(FieldPath.documentId, whereIn: part)
+            .get();
+        players.addAll(_mapCloudPlayers(snap.docs));
+      }
+      players.sort((a, b) {
+        if (b.steps != a.steps) return b.steps.compareTo(a.steps);
+        return a.name.compareTo(b.name);
+      });
+      return players;
+    } catch (e) {
+      debugPrint('Liga: sala da semana falhou: $e');
+      return null;
+    }
+  }
+
   /// Jogadores reais de um grupo fechado de liga (célula/paróquia/amigos)
   /// nesta semana — sem filtro de tier, exclui o próprio usuário.
   Future<List<CloudPlayer>> fetchGroupWeekPlayers(
@@ -1704,6 +1755,28 @@ class BackendService extends ChangeNotifier {
   }) async {
     final closed = league.processedWeek;
     final current = LeagueService.weekKey();
+    if (RemoteConfigService.instance.leagueServerSettlement) {
+      if (isActive && closed != null && closed != current) {
+        Map<String, dynamic>? result;
+        try {
+          final snap = await _db.doc('users/$_uid').get();
+          final raw = snap.data()?['leagueResult'];
+          if (raw is Map) result = Map<String, dynamic>.from(raw);
+        } catch (e) {
+          debugPrint('Liga: leitura do resultado falhou: $e');
+          return;
+        }
+        await league.applyServerResult(
+          result,
+          hadStepsInClosedWeek:
+              progress.lastWeekKey == closed && progress.lastWeekSteps > 0,
+        );
+      }
+      if (isActive) {
+        await saveNow(progress, current, roomCode: roomCode, league: league);
+      }
+      return;
+    }
     var peerSteps = const <int>[];
     if (isActive && closed != null && closed != current) {
       final groupCode = league.groupCode;
@@ -1840,6 +1913,24 @@ class BackendService extends ChangeNotifier {
       return list.take(limit).toList();
     } catch (e) {
       debugPrint('Falha ao buscar ranking geral: $e');
+      return const [];
+    }
+  }
+
+  /// Ranking geral do mês (`monthlyLeagues/{mês}`) — zera todo dia 1, então
+  /// quem chegou agora também disputa. Exclui o próprio usuário.
+  Future<List<CloudPlayer>> fetchMonthlyPlayers({int limit = 50}) async {
+    if (!isActive) return const [];
+    final month = LeagueService.monthKey();
+    try {
+      final snap = await _db
+          .collection('monthlyLeagues/$month/players')
+          .orderBy('xp', descending: true)
+          .limit(limit + 1)
+          .get();
+      return _mapCloudPlayers(snap.docs).take(limit).toList();
+    } catch (e) {
+      debugPrint('Falha ao buscar ranking do mês: $e');
       return const [];
     }
   }

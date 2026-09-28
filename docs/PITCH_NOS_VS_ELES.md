@@ -1,7 +1,7 @@
 # STWAY — Nós vs. eles (1 página)
 
 **Para:** tester · líder de igreja · conversa rápida de produto  
-**Atualizado:** 20 set/2026 (recorte noite) · app v1.0.24+24 · catalog `1787584947461`  
+**Atualizado:** 28 set/2026 · app v1.0.29+29 · catalog `1787584947461`  
 **Frase:** *“Enquanto outros te fazem jogar a Bíblia, o STWAY te põe em missão nela.”*
 
 **Canvas:** `stway-concorrencia-direta-indireta.canvas.tsx` · histórico: `stway-posicionamento-mercado-20set2026` · `stway-posicionamento-mercado-24ago2026`
@@ -12,7 +12,7 @@
 
 O fosso **não** é “missões em português”. Três apps BR já falam *missão*: **Bibliando** (trilhas + XP + IAP), **Bíblia Fácil** (devocional + quiz + oração, 10 mil+ downloads), e nós. **Bible Way** já localiza de verdade (1.4.5, 10 idiomas, inclui PT) com clubes, heróis e IA.
 
-O fosso que ainda é nosso: **treinar a leitura do texto** — 6 gestos, 3 profundidades, palco TB, Strong na missão, validador pedagógico — e **accountability de um par** (Companhia + Esquina), não feed nem PvP.
+O fosso que ainda é nosso: **treinar a leitura do texto** — 6 gestos, 3 profundidades, palco TB, Strong na missão, validador pedagógico — e **accountability de um par** (Companhia + Desafio), não feed nem PvP.
 
 Gigantes indiretos (YouVersion, Hallow) ocupam o **slot de 10 minutos**. Continuam consumo / oração. Não copiar o catálogo deles.
 
@@ -56,7 +56,7 @@ Sensação-alvo: **o verso no centro · o jogo no pulso (voltar amanhã).**
 
 ● forte · ◐ parcial · ○ fraco/ausente
 
-Social STWAY = Caravana + Companhia + Salas + **Esquina** (1.0.24). Forte no par; fraco vs igreja YouVersion ou clube Bible Way.  
+Social STWAY = Caravana + Companhia + Grupos + **Desafio**. Forte no par; fraco vs igreja YouVersion ou clube Bible Way.  
 **Bíblia Fácil** (fora da grade): hábito ● · texto ○ · currículo ○ · áudio/oração ● · PT-BR ● · IAP ◐. Híbrido Hallow-lite + trivia, não pedagogia.
 
 ---
@@ -92,8 +92,8 @@ SESSÃO (2–4 min)
 - **3 profundidades** — Observação / Compreensão / Interpretação  
 - **Bíblia + Strong offline** — na missão (ref do palco) e na aba Bíblia  
 - **Currículo** — 84 trilhas · 8.370 atos V2 · validador pedagógico  
-- **Social leve** — Caravana, Companhia, Salas, Esquina (mesma cena até domingo, +10)  
-- **1.0.24** — retrato (foto / letra / avatar), intro dos livros, pedido de trilha no mapa  
+- **Social leve** — Companhia → Caravana → Grupos; Desafio sob Companhia (mesma cena até domingo, +10)
+- **1.0.29** — simplificação UX (Fases 0–4); retrato; intro dos livros; pedido de trilha no mapa
 - **Branch** — carta do encontro (verso-first) para share; combo na missão  
 
 ---
@@ -128,7 +128,7 @@ SESSÃO (2–4 min)
 ## Pedido desta conversa
 
 1. **Tester:** 1 missão → explicar o app numa frase.  
-2. **Igreja:** 1 célula piloto (Companhia / Sala / Esquina) por 2 semanas.  
+2. **Igreja:** 1 célula piloto (Companhia / Grupo / Desafio) por 2 semanas.  
 3. **Produto:** validar se a sessão *treina* — não se parece YouVersion, Bibliando ou trivia.
 
 ---

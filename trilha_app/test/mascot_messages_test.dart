@@ -53,7 +53,7 @@ void main() {
       );
       expect(
         CelebrationCopy.caravanaDetail(rank: 3, inPromotionZone: true),
-        contains('7 primeiros'),
+        contains('primeiros sobem'),
       );
       expect(
         CelebrationCopy.caravanaTitle(rank: 1, inPromotionZone: true),

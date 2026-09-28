@@ -1,9 +1,9 @@
 # Protocolo D7 — fase “Agora”
 
-**Atualizado:** 20 set/2026 · app **1.0.24+24**  
+**Atualizado:** 28 set/2026 · app **1.0.29+29**  
 **Objetivo:** provar o loop com 10–20 pessoas reais. Critério = conclusão de missão + retorno D7.  
 **Vitrines:** **Sermão do Monte** (cena 1) e/ou **Gênesis 1–11 V2** (banco 8.370 na nuvem).  
-**Norte:** [`ROADMAP.md`](../ROADMAP.md) · pitch: [`PITCH_NOS_VS_ELES.md`](PITCH_NOS_VS_ELES.md)  
+**Norte:** [`ROADMAP.md`](../ROADMAP.md) · pitch: [`PITCH_NOS_VS_ELES.md`](PITCH_NOS_VS_ELES.md) · UX: [`PLANO_SIMPLIFICACAO.md`](PLANO_SIMPLIFICACAO.md)  
 **Planilha:** [`D7_TESTERS.csv`](D7_TESTERS.csv) · convite: [`D7_CONVITE.md`](D7_CONVITE.md)
 
 **Frase para o tester (só isto):** *“é um app de missões curtas pra criar hábito de ler a Bíblia.”*
@@ -41,6 +41,8 @@ cd trilha_app && flutter run --dart-define=OPEN_ALL_TRAILS=true
 | 4. Frase espontânea | *“O que é este app?”* sem induzir | 1 frase |
 | 5. Relato (se errar) | Achou o botão Relatar? | S/N |
 | 6. Abandono | Em qual tela / gesto saiu? | tela + motivo |
+| 7. Juntos (se abriu) | Sem induzir: o que achou que era? | frase Companhia/Desafio |
+| 8. Perfil (se abriu) | Viu histórico/jarros? Entendeu? | S/N + frase |
 
 **Frases alinhadas ao norte:** “missão pra ler a Bíblia”, “academia”, “estudo curto”.  
 **Frases de alerta:** “quiz”, “jogo de Bíblia”, “Duolingo de versículos” *sem* menção a hábito de ler e estudar.

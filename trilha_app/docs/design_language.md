@@ -96,8 +96,13 @@ chip/badge = `AppRadii.sm`; seleção = `AppRadii.pill`.
 | Progresso geral | **jornada** | — |
 | Dias seguidos | **sequência** | constância, dias seguidos |
 | Liga semanal | **caravana** | liga, divisão |
-| Caminhada 1:1 | **companhia**; a pessoa é **companheiro(a)** | dupla, parceria, par |
-| Sala | **grupo** | sala |
+| Par 1:1 | **companhia**; a pessoa é **companheiro(a)** | dupla, parceria, par |
+| Grupo de estudo | **grupo** | sala |
+| Peer challenge (mesma cena até domingo) | **desafio** | esquina, PvP, disputa |
+| Boss / revisão de módulo | **travessia** (shipped na UI; títulos de conteúdo ainda podem dizer “Desafio: …”) | reusar “desafio” sozinho |
+| Desafio litúrgico | **desafio da estação** | só “desafio” |
+| Estação litúrgica (Advento/Quaresma) | **estação** / nome da campanha | caminhada (colide com id do modo) |
+| Histórico semanal no perfil | **lamparina** / jarro | lâmpada (vidas) |
 | Gesto social | **reconhecer** | curtir |
 | Lembrar quem já está (companhia, grupo) | **acenar / aceno** ("Acenar para Ana") | chamar, animar |
 | Trazer alguém novo (convite) | **chamar** ("Chamar pessoas", "Chamar um companheiro") | — |

@@ -170,12 +170,13 @@ class CornerCopy {
   }
 
   // Placar da aba Desafio.
-  static const tallyWon = 'Ganhou';
-  static const tallyLost = 'Perdeu';
+  static const tallyWon = 'ganhou';
+  static const tallyLost = 'perdeu';
+  static const tallyChallenge = 'desafio';
+  static const tallyChallenges = 'desafios';
   static const tallyTogether = 'Juntos';
   static const markLeft = 'Saiu';
   static const closedChapter = 'Encerrados';
-  static const tallyNote = 'Juntos entra em ganhou: os dois levaram os passos.';
   static const boardEmptyTitle = 'Nenhum desafio ainda';
   static const boardEmptyBody =
       'Na caravana, abra alguém na mesma cena e convide. Quem chega até domingo ganha $reward.';

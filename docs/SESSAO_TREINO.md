@@ -1,8 +1,10 @@
 # STWAY — Contrato de sessão (modo único)
 
-**Versão:** 1.3 · set/2026  
+**Versão:** 1.4 · 28 set/2026  
 **Status:** padrão oficial do produto · **implementado no app**  
-**Relaciona:** [`LEARNING_ENGINE.md`](LEARNING_ENGINE.md) · [`PRODUTO.md`](PRODUTO.md) · [`TECNICA.md`](TECNICA.md)
+**Relaciona:** [`LEARNING_ENGINE.md`](LEARNING_ENGINE.md) · [`PRODUTO.md`](PRODUTO.md) · [`TECNICA.md`](TECNICA.md) · glossário UI: [`../trilha_app/docs/design_language.md`](../trilha_app/docs/design_language.md)
+
+Na UI a unidade curta é **cena**; boss = **Travessia**. Código continua `Mission` / boss.
 
 ---
 
@@ -223,7 +225,7 @@ Beat (`Hipótese`, `Freio`…) fica no CMS — **não** na UI.
 | Tipo | Quando | O quê |
 |------|--------|--------|
 | **Micro-review in-session** | 1–2 atos no fim, se errou algo | mesmo conceito, **outro gesto**, sem Nota |
-| **Boss / revisão de cena** | fim do módulo | mistura atos de treinos anteriores |
+| **Travessia (boss / revisão de cena)** | fim do módulo | mistura atos de treinos anteriores; label UI = Travessia |
 | **Spaced (produto)** | D+1…D+7 (prática / quest) | mesmo fato em outro contexto |
 
 Regra de ouro: **mesmo conhecimento, formato novo**.  
@@ -281,7 +283,9 @@ Pergunta-âncora do piloto (Imagem de Deus):
 
 ---
 
-## 11. Ordem típica (Rota)
+## 11. Ordem típica (Compreensão)
+
+Modo Compreensão (id `caminhada`). Ordem sugerida dos gestos na sessão:
 
 ```text
 V/F ou Toque → misturar gestos → Escolher no meio

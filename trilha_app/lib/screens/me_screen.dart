@@ -206,8 +206,10 @@ class _MeScreenState extends State<MeScreen> {
           goal: progress.settings.streakGoal,
         ),
       ),
-      const SizedBox(height: AppSpace.md),
-      pad(const WeeklyQuestsCard()),
+      if (progress.hasOpenWeeklyQuests) ...[
+        const SizedBox(height: AppSpace.md),
+        pad(const WeeklyQuestsCard()),
+      ],
     ];
 
     if (_caravanLoading) {

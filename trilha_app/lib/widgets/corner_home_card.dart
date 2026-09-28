@@ -1,3 +1,5 @@
+import 'dart:math' as math;
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -87,28 +89,10 @@ class CornerHomeCard extends StatelessWidget {
     final themLeft = challenge.theyLeft(uid);
 
     return GlassCard(
-      glow: hasCta ? 0.9 : 0.5,
+      glow: live ? 0.7 : null,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Row(
-            children: [
-              const CinematicIcon(
-                glyph: CinematicGlyph.flag,
-                size: 14,
-                accent: AppColors.accent,
-                framed: false,
-              ),
-              const SizedBox(width: 6),
-              SectionLabel(
-                incoming ? CornerCopy.incomingTitle : CornerCopy.kicker,
-                color: AppColors.accent,
-              ),
-              const Spacer(),
-              const _RewardChip(),
-            ],
-          ),
-          const SizedBox(height: AppSpace.lg),
           _PairRow(
             myName: myName,
             theirName: theirName,
@@ -117,6 +101,8 @@ class CornerHomeCard extends StatelessWidget {
             mySeed: backend.uid,
             portrait: progress.settings.portraitStyle,
             incoming: incoming,
+            awaitingAccept: incoming || waiting,
+            awaitLabel: incoming || waiting ? whisper : null,
             meDone: meDone,
             themDone: themDone,
             meLeft: meLeft,
@@ -130,17 +116,19 @@ class CornerHomeCard extends StatelessWidget {
             overflow: TextOverflow.ellipsis,
             style: AppTypography.display(size: 24, color: a.text),
           ),
-          const SizedBox(height: 4),
-          Text(
-            whisper,
-            maxLines: 2,
-            overflow: TextOverflow.ellipsis,
-            style: AppTypography.body(
-              size: 13,
-              height: 1.35,
-              color: a.textSecondary,
+          if (!(incoming || waiting)) ...[
+            const SizedBox(height: 4),
+            Text(
+              whisper,
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+              style: AppTypography.body(
+                size: 13,
+                height: 1.35,
+                color: a.textSecondary,
+              ),
             ),
-          ),
+          ],
           if (!settled) ...[
             const SizedBox(height: AppSpace.md),
             _WeekFuse(daysLeft: days, label: when),
@@ -246,16 +234,7 @@ class _WeekFuse extends StatelessWidget {
   }
 }
 
-class _RewardChip extends StatelessWidget {
-  const _RewardChip();
-
-  @override
-  Widget build(BuildContext context) {
-    return const SoftBadge(text: CornerCopy.reward, solid: true);
-  }
-}
-
-/// Os dois lado a lado, o fio entre eles e a bandeira de chegada no meio.
+/// Os dois lado a lado; fio e bandeira só depois de aceito.
 class _PairRow extends StatelessWidget {
   final String myName;
   final String theirName;
@@ -264,6 +243,8 @@ class _PairRow extends StatelessWidget {
   final String? mySeed;
   final PortraitStyle portrait;
   final bool incoming;
+  final bool awaitingAccept;
+  final String? awaitLabel;
   final bool meDone;
   final bool themDone;
   final bool meLeft;
@@ -278,6 +259,8 @@ class _PairRow extends StatelessWidget {
     required this.mySeed,
     required this.portrait,
     required this.incoming,
+    required this.awaitingAccept,
+    this.awaitLabel,
     required this.meDone,
     required this.themDone,
     required this.meLeft,
@@ -306,6 +289,12 @@ class _PairRow extends StatelessWidget {
         ? BondState.right
         : BondState.none;
 
+    // Pendente: quem convidou fica sempre à esquerda do layout; some o
+    // fio só do lado de quem ainda não aceitou (direita).
+    final pendingEnds = awaitingAccept
+        ? (BondEnd.dashed, BondEnd.gone)
+        : null;
+
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -320,14 +309,32 @@ class _PairRow extends StatelessWidget {
         ),
         Expanded(
           child: SizedBox(
-            height: 68,
+            height: awaitingAccept ? 96 : 68,
             child: Stack(
-              alignment: Alignment.center,
+              alignment: awaitingAccept
+                  ? Alignment.topCenter
+                  : Alignment.center,
               children: [
-                Positioned.fill(
-                  child: Center(child: BondThread(state: bond)),
+                Positioned(
+                  left: 0,
+                  right: 0,
+                  top: awaitingAccept ? 16 : 0,
+                  bottom: awaitingAccept ? null : 0,
+                  height: awaitingAccept ? 14 : null,
+                  child: Center(
+                    child: pendingEnds != null
+                        ? BondThread(
+                            state: BondState.idle,
+                            left: pendingEnds.$1,
+                            right: pendingEnds.$2,
+                          )
+                        : BondThread(state: bond),
+                  ),
                 ),
-                _FinishMark(lit: leftDone && rightDone),
+                if (awaitingAccept)
+                  _WaitingMark(label: awaitLabel)
+                else
+                  _FinishMark(lit: leftDone && rightDone),
               ],
             ),
           ),
@@ -341,6 +348,99 @@ class _PairRow extends StatelessWidget {
           left: rightLeft,
           showStatus: showStatus,
         ),
+      ],
+    );
+  }
+}
+
+/// Ampulheta no meio enquanto o convite não foi aceito.
+class _WaitingMark extends StatefulWidget {
+  final String? label;
+
+  const _WaitingMark({this.label});
+
+  @override
+  State<_WaitingMark> createState() => _WaitingMarkState();
+}
+
+class _WaitingMarkState extends State<_WaitingMark>
+    with SingleTickerProviderStateMixin {
+  late final AnimationController _flip;
+
+  @override
+  void initState() {
+    super.initState();
+    _flip = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 2200),
+    )..repeat();
+  }
+
+  @override
+  void dispose() {
+    _flip.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final muted = a.textFaint;
+    final reduce = MediaQuery.disableAnimationsOf(context);
+    final label = widget.label?.trim();
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        AnimatedBuilder(
+          animation: _flip,
+          builder: (context, child) {
+            final t = _flip.value;
+            final turn = reduce
+                ? 0.0
+                : (t < 0.72
+                      ? 0.0
+                      : Curves.easeInOut.transform((t - 0.72) / 0.28));
+            return Transform.rotate(
+              angle: turn * math.pi,
+              child: child,
+            );
+          },
+          child: Container(
+            width: 46,
+            height: 46,
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              color: AppColors.night,
+              border: Border.all(
+                color: muted.withValues(alpha: 0.4),
+                width: 1.4,
+              ),
+            ),
+            child: Center(
+              child: CinematicIcon(
+                glyph: CinematicGlyph.hourglass,
+                size: 18,
+                accent: muted,
+                framed: false,
+              ),
+            ),
+          ),
+        ),
+        if (label != null && label.isNotEmpty) ...[
+          const SizedBox(height: 6),
+          Text(
+            label,
+            textAlign: TextAlign.center,
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
+            style: AppTypography.body(
+              size: 11,
+              height: 1.25,
+              weight: FontWeight.w700,
+              color: a.textSecondary,
+            ),
+          ),
+        ],
       ],
     );
   }

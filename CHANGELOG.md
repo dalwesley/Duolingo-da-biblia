@@ -9,6 +9,21 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
+## [1.0.30] — 2026-09-28
+
+### Added
+- Caravana no mesmo padrão da Companhia: stage com descrição e passos, ranking abaixo e CTAs “Chamar para a caravana” / “Ou chamar um companheiro”
+- Fechamento semanal da liga no servidor (`functions/league.js`): cohort por divisão e settle na virada da semana
+
+### Changed
+- **Simplificação UX (Fases 0–4):** Juntos abre em Companhia; Desafio sob Companhia; boss na UI = Travessia; jarros do perfil sob “Histórico das semanas”; sheet 1× do gelo; toast 1× das lâmpadas; quests semanais só se abertas; Coleções agrupadas no perfil
+- Caravana: abas **Toda a jornada** / **Esta semana** no stage; online abaixo; lista no mesmo card
+- Companhia: sem contorno amarelo nos cards de Amizade e Desafio inativo/cancelado — glow só no desafio **ativo**
+- Glossário alinhado: cena (UI), Desafio (peer), Travessia (boss), Grupos — ver `docs/PLANO_SIMPLIFICACAO.md` e `trilha_app/docs/design_language.md`
+
+### Fixed
+- Regras e sync da caravana alinhados ao fechamento semanal no Cloud Functions
+
 ## [1.0.29] — 2026-09-25
 
 ### Added

@@ -1,9 +1,9 @@
 # STWAY — Documentação técnica
 
-**Atualizado:** 20 set/2026  
+**Atualizado:** 28 set/2026  
 **Monorepo:** `trilha_app/` (Flutter) + `admin/` (Vite)  
 **Firebase project:** `trilha-biblia`  
-**App:** 1.0.24+24
+**App:** 1.0.29+29
 
 ---
 
@@ -28,7 +28,7 @@ Currículo é **fonte de verdade no Firestore**. O app sincroniza por versão (`
 
 JSON em `trilha_app/assets/data/` = **origem do seed / backup editorial** — não o runtime do usuário. Composer, UI e analytics ficam no **código Flutter** (APK/IPA).
 
-**Estado 20 set/2026:** catálogo **local + Firestore** alinhados — **8.370** perguntas V2, validador **verde**. Palco TB. Toque no verso. Seed `catalog.version` `1787584947461`. App: cache por trilha (`ensureTrailBank`). Sessão **6/8**. IAP casca inativa. Ver [`docs/PITCH_NOS_VS_ELES.md`](PITCH_NOS_VS_ELES.md) para posicionamento (recorte 20 set: Bibliando, Bible Way PT, Esquina).
+**Estado 28 set/2026:** catálogo **local + Firestore** alinhados — **8.370** perguntas V2, validador **verde**. Palco TB. Toque no verso. Seed `catalog.version` `1787584947461`. App: cache por trilha (`ensureTrailBank`). Sessão **6/8**. IAP casca inativa. Juntos: Companhia → Caravana → Grupos; Desafio sob Companhia (`Corner*`). Ver [`docs/PITCH_NOS_VS_ELES.md`](PITCH_NOS_VS_ELES.md) e [`docs/PLANO_SIMPLIFICACAO.md`](PLANO_SIMPLIFICACAO.md).
 
 ---
 
@@ -83,7 +83,8 @@ lib/
 | `ProgressService` | Passos, streak, missões, settings; mapa local + nuvem |
 | `ContentCatalogService` | Currículo Firestore + cache em disco |
 | `LeagueService` | Tiers semanais promote/demote |
-| `RoomService` / `CompanionService` | Salas e companhia 1:1 |
+| `RoomService` / `CompanionService` | Grupos (`Room*`) e companhia 1:1 |
+| `CornerService` | Desafio peer (mesma cena até domingo) |
 | `NotificationService` | Lembretes locais + token FCM (aceno da companhia) |
 | `SyncService` | Device ID + export/import JSON |
 | `BibleService` / `BibleStudyService` | Bíblia + Strong offline |
@@ -120,7 +121,7 @@ TrailRealm
                     └── Mission (lesson | boss)
 ```
 
-Dificuldades: `semente` | `caminhada` (Rota) | `profundezas` — ver `models/difficulty.dart`.
+Dificuldades: `semente` | `caminhada` | `profundezas` — labels UI Observação / Compreensão / Interpretação (`models/difficulty.dart`).
 
 ### Assets offline (empacotados)
 
@@ -199,7 +200,7 @@ Todo `saveDoc` / `removeDoc` / `batchSet` no admin chama `bumpCatalogVersion()`.
 | `leagues/{week}/…` | Liga semanal e tiers |
 | `monthlyLeagues/{month}/…` | Ranking mensal |
 | `overallPlayers/{uid}` | Mirror global |
-| `rooms/{code}` + `members` | Salas |
+| `rooms/{code}` + `members` | Grupos |
 | `companies/{code}` | Companhias |
 | `admin_users/{uid}` | Perfis do CMS |
 
@@ -256,7 +257,7 @@ JORNADA (progressão narrativa — doc / roadmap)
 
 Runtime atual: atos vêm de **`content_bank_questions`** filtrados por `section` = slug da missão. `missions[].exercises` **não** alimenta o composer.
 
-`missions[].slug` permanece a chave de progresso (`ProgressService`). A unidade no produto é **missão**.
+`missions[].slug` permanece a chave de progresso (`ProgressService`). Na **UI** a unidade curta é **cena**; no código/conteúdo permanece `Mission`.
 
 ### Documento de treino (campos novos em `missions[]` ou `content_trainings/{slug}`)
 

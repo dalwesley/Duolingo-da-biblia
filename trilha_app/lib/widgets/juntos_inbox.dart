@@ -15,7 +15,7 @@ import 'ui_primitives.dart';
 /// Novidades da caravana, no topo da aba Caravana: resultado da semana,
 /// risco de descer e reconhecimentos.
 ///
-/// O desafio mora na aba Desafio. O aceno da companhia já tem banner no
+/// O desafio vive sob Companhia. O aceno da companhia já tem banner no
 /// card da Companhia. Nada fica acima das abas; um ponto na aba avisa.
 /// Na Home, o desafio aparece como linha em "Mais para hoje".
 class JuntosInbox extends StatelessWidget {
@@ -52,7 +52,10 @@ class JuntosInbox extends StatelessWidget {
         userName: progress.userName,
         userWeeklySteps: progress.weeklySteps,
       );
-      nearDemotion = league.isNearDemotion(league.userRank(entries));
+      nearDemotion = league.isNearDemotion(
+        league.userRank(entries),
+        entries.length,
+      );
     }
 
     final items = <Widget>[

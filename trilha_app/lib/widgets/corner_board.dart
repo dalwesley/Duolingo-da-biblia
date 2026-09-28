@@ -48,7 +48,7 @@ class DesafioEntry extends StatelessWidget {
       label: 'Desafio com ${CornerCopy.firstName(them)}',
       excludeSemantics: true,
       child: GlassCard(
-        glow: live != null ? 0.7 : 0.35,
+        glow: challenge.status == CornerStatus.active ? 0.7 : null,
         onTap: onTap,
         child: Row(
           children: [
@@ -149,10 +149,14 @@ class CornerBoard extends StatelessWidget {
   final ValueChanged<String> onOpenMission;
   final VoidCallback onOpenCaravana;
 
+  /// Quando true, o empty fica no stage pai (abas + descrição + CTA).
+  final bool hideEmptyChrome;
+
   const CornerBoard({
     super.key,
     required this.onOpenMission,
     required this.onOpenCaravana,
+    this.hideEmptyChrome = false,
   });
 
   @override
@@ -162,6 +166,7 @@ class CornerBoard extends StatelessWidget {
     final uid = backend.uid ?? '';
 
     if (!backend.isActive) {
+      if (hideEmptyChrome) return const SizedBox.shrink();
       return const EmptyState(
         glyph: CinematicGlyph.flag,
         title: CornerCopy.boardEmptyTitle,
@@ -177,6 +182,7 @@ class CornerBoard extends StatelessWidget {
 
     final board = CornerScoreboard.of(corners.mine, uid);
     if (board.isEmpty) {
+      if (hideEmptyChrome) return const SizedBox.shrink();
       return EmptyState(
         glyph: CinematicGlyph.flag,
         title: CornerCopy.boardEmptyTitle,
@@ -208,69 +214,220 @@ class CornerBoard extends StatelessWidget {
           ],
         if (board.closed.isNotEmpty) ...[
           SizedBox(height: board.open.isEmpty ? 0 : AppSpace.xl),
-          _Tally(won: board.won, together: board.together, lost: board.lost),
-          const SizedBox(height: AppSpace.xl),
-          const Align(
-            alignment: Alignment.centerLeft,
-            child: SectionLabel(CornerCopy.closedChapter),
-          ),
-          const SizedBox(height: AppSpace.sm),
-          _ClosedList(results: board.closed, uid: uid),
+          _ClosedArchive(results: board.closed, uid: uid),
         ],
       ],
     );
   }
 }
 
-class _Tally extends StatelessWidget {
-  final int won;
-  final int together;
-  final int lost;
+enum _ArchiveFilter { all, won, lost }
 
-  const _Tally({required this.won, required this.together, required this.lost});
+class _ClosedArchive extends StatefulWidget {
+  final List<CornerResult> results;
+  final String uid;
+
+  const _ClosedArchive({required this.results, required this.uid});
+
+  @override
+  State<_ClosedArchive> createState() => _ClosedArchiveState();
+}
+
+class _ClosedArchiveState extends State<_ClosedArchive> {
+  _ArchiveFilter? _filter;
+
+  int get _wonCount => widget.results
+      .where(
+        (r) =>
+            r.mark == CornerResultMark.won ||
+            r.mark == CornerResultMark.together,
+      )
+      .length;
+
+  int get _lostCount => widget.results
+      .where(
+        (r) =>
+            r.mark == CornerResultMark.lost ||
+            r.mark == CornerResultMark.left,
+      )
+      .length;
+
+  List<CornerResult> get _visible {
+    final f = _filter;
+    if (f == null) return const [];
+    return switch (f) {
+      _ArchiveFilter.all => widget.results,
+      _ArchiveFilter.won => [
+        for (final r in widget.results)
+          if (r.mark == CornerResultMark.won ||
+              r.mark == CornerResultMark.together)
+            r,
+      ],
+      _ArchiveFilter.lost => [
+        for (final r in widget.results)
+          if (r.mark == CornerResultMark.lost ||
+              r.mark == CornerResultMark.left)
+            r,
+      ],
+    };
+  }
+
+  void _tap(_ArchiveFilter next) {
+    setState(() => _filter = _filter == next ? null : next);
+  }
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return GlassCard(
-      child: Column(
-        children: [
-          Row(
+    final visible = _visible;
+    final challengeLabel = widget.results.length == 1
+        ? CornerCopy.tallyChallenge
+        : CornerCopy.tallyChallenges;
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        GlassCard(
+          child: Row(
             children: [
-              _cell(a, CornerCopy.tallyWon, won, AppColors.accent),
-              _cell(a, CornerCopy.tallyTogether, together, AppColors.teal),
-              _cell(a, CornerCopy.tallyLost, lost, AppColors.clay),
+              _FilterCell(
+                value: widget.results.length,
+                label: challengeLabel,
+                tone: a.text,
+                selected: _filter == _ArchiveFilter.all,
+                onTap: () => _tap(_ArchiveFilter.all),
+              ),
+              _FilterDot(a: a),
+              _FilterCell(
+                value: _wonCount,
+                label: CornerCopy.tallyWon,
+                tone: AppColors.teal,
+                selected: _filter == _ArchiveFilter.won,
+                onTap: _wonCount == 0 ? null : () => _tap(_ArchiveFilter.won),
+              ),
+              _FilterDot(a: a),
+              _FilterCell(
+                value: _lostCount,
+                label: CornerCopy.tallyLost,
+                tone: AppColors.clay,
+                selected: _filter == _ArchiveFilter.lost,
+                onTap: _lostCount == 0 ? null : () => _tap(_ArchiveFilter.lost),
+              ),
             ],
           ),
-          if (together > 0) ...[
-            const SizedBox(height: AppSpace.md),
-            Text(
-              CornerCopy.tallyNote,
-              textAlign: TextAlign.center,
-              style: AppTypography.body(size: 12, color: a.textFaint),
-            ),
-          ],
+        ),
+        if (_filter != null) ...[
+          const SizedBox(height: AppSpace.md),
+          if (visible.isEmpty)
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: AppSpace.md),
+              child: Text(
+                'Nenhum ainda',
+                textAlign: TextAlign.center,
+                style: AppTypography.body(size: 13, color: a.textSecondary),
+              ),
+            )
+          else
+            _ClosedList(results: visible, uid: widget.uid),
         ],
+      ],
+    );
+  }
+}
+
+class _FilterDot extends StatelessWidget {
+  final AppearanceStyle a;
+
+  const _FilterDot({required this.a});
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 4),
+      child: Text(
+        '·',
+        style: AppTypography.body(size: 18, color: a.textFaint),
       ),
     );
   }
+}
 
-  Widget _cell(AppearanceStyle a, String label, int value, Color tone) {
-    final ink = value == 0 ? a.textFaint : tone;
+class _FilterCell extends StatelessWidget {
+  final int value;
+  final String label;
+  final Color tone;
+  final bool selected;
+  final VoidCallback? onTap;
+
+  const _FilterCell({
+    required this.value,
+    required this.label,
+    required this.tone,
+    required this.selected,
+    required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    final canTap = onTap != null;
+    final ink = !canTap
+        ? a.textFaint
+        : selected
+        ? tone
+        : value == 0
+        ? a.textFaint
+        : tone;
+
     return Expanded(
-      child: Column(
-        children: [
-          Text(
-            '$value',
-            style: AppTypography.display(
-              size: 24,
-              weight: FontWeight.w900,
-              color: ink,
+      child: Semantics(
+        button: canTap,
+        selected: selected,
+        enabled: canTap,
+        label: '$value $label',
+        child: Material(
+          color: Colors.transparent,
+          child: InkWell(
+            onTap: onTap,
+            borderRadius: BorderRadius.circular(AppRadii.md),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 4),
+              child: Column(
+                children: [
+                  Text(
+                    '$value',
+                    style: AppTypography.display(
+                      size: 24,
+                      weight: FontWeight.w900,
+                      color: ink,
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    label,
+                    textAlign: TextAlign.center,
+                    style: AppTypography.label(
+                      size: 11,
+                      letterSpacing: 0.3,
+                      weight: FontWeight.w800,
+                      color: ink,
+                    ),
+                  ),
+                  const SizedBox(height: 6),
+                  AnimatedContainer(
+                    duration: const Duration(milliseconds: 180),
+                    height: 2,
+                    width: selected ? 28 : 0,
+                    decoration: BoxDecoration(
+                      color: selected ? tone : Colors.transparent,
+                      borderRadius: BorderRadius.circular(AppRadii.hair),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
-          const SizedBox(height: 4),
-          SectionLabel(label, size: 11, color: ink),
-        ],
+        ),
       ),
     );
   }
