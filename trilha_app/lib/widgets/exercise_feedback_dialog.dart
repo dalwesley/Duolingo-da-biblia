@@ -10,7 +10,8 @@ import 'cinematic_icon.dart';
 import 'question_report_sheet.dart';
 import 'ui_primitives.dart';
 
-/// Veredito do ato — dialog no centro, ícone com pop e pulso.
+/// Veredito do ato — painel na base, mesmo para acerto e erro.
+/// O palco segue visível acima: o aluno vê o versículo enquanto lê o porquê.
 class ExerciseFeedbackDialog extends StatefulWidget {
   final Exercise exercise;
   final String selected;
@@ -23,6 +24,9 @@ class ExerciseFeedbackDialog extends StatefulWidget {
   final String? trailSlug;
   final String? difficulty;
   final bool practiceMode;
+
+  /// Acertos seguidos — a partir de 2 aparece no título.
+  final int combo;
 
   const ExerciseFeedbackDialog({
     super.key,
@@ -37,6 +41,7 @@ class ExerciseFeedbackDialog extends StatefulWidget {
     this.trailSlug,
     this.difficulty,
     this.practiceMode = false,
+    this.combo = 0,
   });
 
   @override
@@ -49,8 +54,15 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
 
   late final AnimationController _enter;
   late final AnimationController _pulse;
+
+  /// Acerto avança sozinho: o botão enche e, cheio, segue.
+  late final AnimationController _auto;
+  bool _advanced = false;
+
+  static const _autoAdvance = Duration(milliseconds: 2200);
+
+  bool get _autoEnabled => widget.isCorrect && !widget.outOfLamps;
   late final Animation<double> _scrim;
-  late final Animation<double> _pop;
   late final Animation<double> _lift;
 
   static final _verdictPrefix = RegExp(
@@ -71,18 +83,19 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
       vsync: this,
       duration: const Duration(milliseconds: 1800),
     );
+    _auto = AnimationController(vsync: this, duration: _autoAdvance)
+      ..addStatusListener((status) {
+        if (status == AnimationStatus.completed) _advance();
+      });
     _enter.addStatusListener((status) {
       if (status == AnimationStatus.completed && mounted) {
         _pulse.repeat();
+        if (_autoEnabled) _auto.forward();
       }
     });
     _scrim = CurvedAnimation(
       parent: _enter,
       curve: const Interval(0, 0.45, curve: Curves.easeOut),
-    );
-    _pop = CurvedAnimation(
-      parent: _enter,
-      curve: const Interval(0.12, 1, curve: Curves.easeOutBack),
     );
     _lift = CurvedAnimation(
       parent: _enter,
@@ -99,7 +112,16 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
   void dispose() {
     _enter.dispose();
     _pulse.dispose();
+    _auto.dispose();
     super.dispose();
+  }
+
+  /// Um avanço só — pelo toque ou pelo fim da contagem.
+  void _advance() {
+    if (_advanced || !mounted) return;
+    _advanced = true;
+    _auto.stop();
+    widget.onContinue();
   }
 
   String _compactFeedback(String raw) {
@@ -144,6 +166,8 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
   }
 
   Future<void> _report() async {
+    // Quem vai relatar precisa de tempo: a contagem para.
+    _auto.stop();
     final exercise = widget.exercise;
     String? optText(String id) {
       for (final o in exercise.options) {
@@ -194,10 +218,13 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
     final feedback = _compactFeedback(
       exercise.feedbackFor(widget.selected, correct: isCorrect),
     );
+    const cheers = ['Acertou!', 'Isso!', 'Muito bem!', 'Na mosca!'];
+    final combo = widget.combo;
+    final cheer = cheers[(combo - 1).clamp(0, cheers.length - 1)];
     final title = outOfLamps
         ? 'Sem lâmpadas'
         : isCorrect
-        ? 'Acertou'
+        ? (combo >= 2 ? '$cheer  ×$combo' : cheer)
         : 'Quase';
     final cta = outOfLamps
         ? 'Encerrar com passos parciais'
@@ -222,7 +249,7 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
             ModalBarrier(
               dismissible: false,
               color: AppColors.scrim.withValues(
-                alpha: AppColors.scrim.a * _scrim.value,
+                alpha: AppColors.scrim.a * 0.55 * _scrim.value,
               ),
             ),
             child!,
@@ -230,29 +257,31 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
         );
       },
       child: SafeArea(
-        child: Center(
+        child: Align(
+          alignment: Alignment.bottomCenter,
           child: AnimatedBuilder(
             animation: _enter,
             builder: (context, child) {
-              final pop = _pop.value;
               return Opacity(
                 opacity: _scrim.value,
                 child: Transform.translate(
-                  offset: Offset(0, (1 - _lift.value) * 22),
-                  child: Transform.scale(
-                    scale: 0.84 + 0.16 * pop,
-                    child: child,
-                  ),
+                  offset: Offset(0, (1 - _lift.value) * 80),
+                  child: child,
                 ),
               );
             },
             child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 360),
+              constraints: const BoxConstraints(maxWidth: 520),
               child: RepaintBoundary(
                 child: Material(
                   color: Colors.transparent,
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 28),
+                    padding: const EdgeInsets.fromLTRB(
+                      AppSpace.screen,
+                      0,
+                      AppSpace.screen,
+                      AppSpace.sm,
+                    ),
                     child: DecoratedBox(
                       decoration: BoxDecoration(
                         color: Color.lerp(a.cardFill, color, 0.08),
@@ -264,44 +293,53 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
                         boxShadow: [...AppTheme.cardShadow(elevated: true)],
                       ),
                       child: Padding(
-                        padding: const EdgeInsets.fromLTRB(22, 14, 10, 20),
+                        padding: const EdgeInsets.fromLTRB(18, 14, 10, 18),
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
+                          crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: [
-                            Align(
-                              alignment: Alignment.centerRight,
-                              child: IconButton(
-                                tooltip: 'Relatar problema nesta pergunta',
-                                onPressed: _report,
-                                visualDensity: VisualDensity.compact,
-                                padding: EdgeInsets.zero,
-                                constraints: const BoxConstraints(
-                                  minWidth: 36,
-                                  minHeight: 36,
+                            Row(
+                              children: [
+                                SizedBox(
+                                  width: 56,
+                                  height: 56,
+                                  child: FittedBox(
+                                    child: _VerdictMark(
+                                      glyph: glyph,
+                                      color: color,
+                                      enter: _enter,
+                                      pulse: _pulse,
+                                    ),
+                                  ),
                                 ),
-                                icon: CinematicIcon(
-                                  glyph: CinematicGlyph.flag,
-                                  size: 18,
-                                  accent: a.textFaint,
-                                  framed: false,
+                                const SizedBox(width: 12),
+                                Expanded(
+                                  child: Text(
+                                    title,
+                                    style: AppTypography.display(
+                                      size: 26,
+                                      height: 1.1,
+                                      color: color,
+                                    ),
+                                  ),
                                 ),
-                              ),
-                            ),
-                            _VerdictMark(
-                              glyph: glyph,
-                              color: color,
-                              enter: _enter,
-                              pulse: _pulse,
-                            ),
-                            const SizedBox(height: 18),
-                            Text(
-                              title,
-                              textAlign: TextAlign.center,
-                              style: AppTypography.display(
-                                size: 28,
-                                height: 1.1,
-                                color: color,
-                              ),
+                                IconButton(
+                                  tooltip: 'Relatar problema nesta pergunta',
+                                  onPressed: _report,
+                                  visualDensity: VisualDensity.compact,
+                                  padding: EdgeInsets.zero,
+                                  constraints: const BoxConstraints(
+                                    minWidth: 36,
+                                    minHeight: 36,
+                                  ),
+                                  icon: CinematicIcon(
+                                    glyph: CinematicGlyph.flag,
+                                    size: 18,
+                                    accent: a.textFaint,
+                                    framed: false,
+                                  ),
+                                ),
+                              ],
                             ),
                             if (feedback.isNotEmpty) ...[
                               const SizedBox(height: 10),
@@ -309,7 +347,7 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
                                 padding: const EdgeInsets.only(right: 12),
                                 child: Text(
                                   feedback,
-                                  textAlign: TextAlign.center,
+                                  textAlign: TextAlign.start,
                                   style: AppTypography.body(
                                     size: 14,
                                     weight: FontWeight.w700,
@@ -330,16 +368,20 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
                                 ),
                               ),
                             ],
-                            const SizedBox(height: 22),
+                            const SizedBox(height: 16),
                             Padding(
                               padding: const EdgeInsets.only(right: 12),
-                              child: CopperCta(
-                                label: cta,
-                                onTap: widget.onContinue,
-                                trailing: isCorrect
-                                    ? CinematicGlyph.forward
-                                    : CinematicGlyph.refresh,
-                                showArrow: false,
+                              child: AnimatedBuilder(
+                                animation: _auto,
+                                builder: (context, _) => CopperCta(
+                                  label: cta,
+                                  onTap: _advance,
+                                  trailing: isCorrect
+                                      ? CinematicGlyph.forward
+                                      : CinematicGlyph.refresh,
+                                  showArrow: false,
+                                  progress: _autoEnabled ? _auto.value : null,
+                                ),
                               ),
                             ),
                           ],

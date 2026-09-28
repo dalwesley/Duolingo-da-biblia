@@ -7,7 +7,6 @@ import '../models/trail.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import 'act_feel.dart';
-import 'brand_flip_card.dart';
 import 'cinematic_icon.dart';
 import 'stage_plate.dart';
 import 'relic_panel.dart';
@@ -325,16 +324,9 @@ class _ExercisePanelState extends State<ExercisePanel>
                   child: _in(
                     0.12,
                     0.72,
-                    SizedBox.expand(
-                      child: BrandFlipCard(
-                        accent: widget.accent,
-                        answer:
-                            _picked ??
-                            widget.selected ??
-                            (_confirming ? 'confirm' : null),
-                        front: palco,
-                      ),
-                    ),
+                    // Palco fixo em todo gesto: o versículo é para ler e tocar,
+                    // nunca uma carta que gira ao toque.
+                    SizedBox.expand(child: palco),
                   ),
                 )
               else
@@ -425,7 +417,10 @@ class _ExercisePanelState extends State<ExercisePanel>
             lit: _lit,
             fill: true,
             onPick: _locked ? null : _pickChoice,
-            stateFor: _state,
+            // Dica elimina uma palavra: ela apaga no versículo.
+            stateFor: (id) => widget.eliminatedIds.contains(id)
+                ? _OptState.dimmed
+                : _state(id),
           );
         }
         return _witnessFromBoard();
@@ -819,7 +814,7 @@ class _ExercisePanelState extends State<ExercisePanel>
             ),
           ),
         CopperCta(
-          label: 'Continuar',
+          label: 'Verificar',
           onTap: canConfirm && !waiting ? _confirmChoice : null,
           trailing: null,
           padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 15),
@@ -851,8 +846,9 @@ TextStyle _verseWordStyle({
   Color? color,
   FontWeight weight = FontWeight.w600,
   double height = 1.55,
+  double? size,
 }) => AppTypography.verse(
-  size: _ActSkin.verseSize,
+  size: size ?? _ActSkin.verseSize,
   weight: weight,
   height: height,
   color: color ?? AppColors.textOnDark,
@@ -1180,6 +1176,7 @@ class _CompleteVerseState extends State<_CompleteVerse> {
         key: const ValueKey('cloze-shake'),
         active: widget.state == _OptState.wrong,
         child: _BlankGap(
+          size: style.fontSize ?? _ActSkin.verseSize,
           filled: widget.filled,
           expected: widget.expected ?? widget.filled ?? 'palavra',
           state: widget.state,
@@ -1199,7 +1196,8 @@ class _CompleteVerseState extends State<_CompleteVerse> {
     final hasBlank = match != null && last != null;
     final before = hasBlank ? template.substring(0, match.start) : template;
     final after = hasBlank ? template.substring(last.end) : '';
-    final style = _verseWordStyle();
+    final size = _verseSizeFor(template);
+    final style = _verseWordStyle(size: size, height: 1.45);
 
     return _Manuscript(
       accent: widget.accent,
@@ -1229,9 +1227,11 @@ class _BlankGap extends StatelessWidget {
   final Color accent;
   final AnimationController pulse;
   final VoidCallback? onClear;
+  final double size;
 
   const _BlankGap({
     required this.filled,
+    this.size = _ActSkin.verseSize,
     required this.expected,
     required this.state,
     required this.accent,
@@ -1242,7 +1242,7 @@ class _BlankGap extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final has = (filled ?? '').trim().isNotEmpty;
-    final probeStyle = _verseWordStyle();
+    final probeStyle = _verseWordStyle(size: size);
     final probe = TextPainter(
       text: TextSpan(text: has ? filled! : expected, style: probeStyle),
       textDirection: TextDirection.ltr,
@@ -1274,7 +1274,7 @@ class _BlankGap extends StatelessWidget {
             textAlign: TextAlign.center,
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
-            style: _verseWordStyle(color: accent, height: 1),
+            style: _verseWordStyle(color: accent, height: 1, size: size),
           ),
         ),
       );
@@ -1282,7 +1282,7 @@ class _BlankGap extends StatelessWidget {
 
     final slot = SizedBox(
       width: minW,
-      height: _ActSkin.verseSize * 1.5,
+      height: size * 1.5,
       child: Align(
         alignment: Alignment.bottomCenter,
         child: Container(
@@ -1338,7 +1338,9 @@ class _BridgePassages extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final caption = _connectCaption(passageA, passageB);
+    final size = _verseSizeFor(
+      '${passageA?.text ?? ''} ${passageB?.text ?? ''}',
+    );
     return _Manuscript(
       accent: accent,
       framed: true,
@@ -1347,13 +1349,14 @@ class _BridgePassages extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          if (passageA != null) _connectStanza(passageA!),
+          if (passageA != null) _connectStanza(passageA!, accent, size),
           if (passageA != null && passageB != null) ...[
             const SizedBox(height: 10),
             ActShake(
               active: state == _OptState.wrong,
               child: Center(
                 child: _BlankGap(
+                  size: size,
                   filled: picked,
                   expected: expected,
                   state: state,
@@ -1365,42 +1368,29 @@ class _BridgePassages extends StatelessWidget {
             ),
             const SizedBox(height: 10),
           ],
-          if (passageB != null) _connectStanza(passageB!),
-          if (caption != null) ...[
-            const SizedBox(height: 16),
-            Text(
-              caption,
-              textAlign: TextAlign.center,
-              style: AppTypography.label(
-                size: 11,
-                letterSpacing: 1.2,
-                color: accent.withValues(alpha: 0.72),
-              ),
-            ),
-          ],
+          if (passageB != null) _connectStanza(passageB!, accent, size),
         ],
       ),
     );
   }
 }
 
-String? _connectCaption(ExercisePassage? a, ExercisePassage? b) {
-  final refs = <String>[
-    if (a != null) a.ref.trim(),
-    if (b != null) b.ref.trim(),
-  ].where((r) => r.isNotEmpty).toList();
-  if (refs.isEmpty) return null;
-  if (refs.length == 2 && refs[0].toLowerCase() == refs[1].toLowerCase()) {
-    return refs[0];
-  }
-  return refs.join('  ·  ');
-}
-
-Widget _connectStanza(ExercisePassage passage) {
-  return Text(
-    passage.text.trim(),
-    textAlign: TextAlign.center,
-    style: _verseWordStyle(height: 1.35),
+/// Cada trecho com a própria referência em cima — como todo palco.
+Widget _connectStanza(ExercisePassage passage, Color accent, double size) {
+  final ref = passage.ref.trim();
+  return Column(
+    mainAxisSize: MainAxisSize.min,
+    children: [
+      if (ref.isNotEmpty) ...[
+        _RefLabel(reference: ref, accent: accent),
+        const SizedBox(height: 8),
+      ],
+      Text(
+        passage.text.trim(),
+        textAlign: TextAlign.center,
+        style: _verseWordStyle(height: 1.45, size: size),
+      ),
+    ],
   );
 }
 
@@ -1475,6 +1465,23 @@ class _InsightView extends StatelessWidget {
   }
 }
 
+/// Escala única do palco (todo gesto): o corpo segue o tamanho do que está
+/// em cena — versículo curto não fica perdido, longo não estoura.
+double _verseSizeFor(String text) {
+  final words = text
+      .trim()
+      .split(RegExp(r'\s+'))
+      .where((w) => w.isNotEmpty)
+      .length;
+  if (words <= 12) return 30;
+  if (words <= 24) return 27;
+  if (words <= 40) return _ActSkin.verseSize;
+  return 22;
+}
+
+/// Pontuação logo após a palavra tocável (", " "." ";") — gruda nela.
+final _leadingPunct = RegExp(r'^[,.;:!?…)»”"]+');
+
 enum _OptState { idle, picked, correct, wrong, dimmed }
 
 class _PassageBlock extends StatelessWidget {
@@ -1509,7 +1516,19 @@ class _PassageBlock extends StatelessWidget {
         ? const <TapSpan>[]
         : buildTapSpans(text, ex.effectiveOptions);
     final tappable = spans.any((s) => s.optionId != null);
-    final style = _verseWordStyle(height: 1.45);
+    final size = _verseSizeFor(text);
+    final style = _verseWordStyle(height: 1.45, size: size);
+    // A marca tem margem interna; a pontuação seguinte vai junto dela,
+    // senão sobra um espaço antes da vírgula ("princípio ,").
+    final tails = <int, String>{};
+    final heads = <int, String>{};
+    for (var i = 0; i + 1 < spans.length; i++) {
+      if (spans[i].optionId == null || spans[i + 1].optionId != null) continue;
+      final m = _leadingPunct.firstMatch(spans[i + 1].text);
+      if (m == null) continue;
+      tails[i] = m.group(0)!;
+      heads[i + 1] = spans[i + 1].text.substring(m.end);
+    }
 
     return _Manuscript(
       accent: accent,
@@ -1522,7 +1541,7 @@ class _PassageBlock extends StatelessWidget {
               TextSpan(
                 style: style,
                 children: [
-                  for (final span in spans)
+                  for (final (i, span) in spans.indexed)
                     if (span.optionId != null)
                       WidgetSpan(
                         alignment: PlaceholderAlignment.baseline,
@@ -1537,6 +1556,8 @@ class _PassageBlock extends StatelessWidget {
                                 : () => onPick!(span.optionId!),
                             child: _VerseMark(
                               text: span.text,
+                              tail: tails[i],
+                              size: size,
                               state:
                                   stateFor?.call(span.optionId!) ??
                                   _OptState.idle,
@@ -1545,8 +1566,8 @@ class _PassageBlock extends StatelessWidget {
                           ),
                         ),
                       )
-                    else
-                      TextSpan(text: span.text),
+                    else if ((heads[i] ?? span.text).isNotEmpty)
+                      TextSpan(text: heads[i] ?? span.text),
                 ],
               ),
               textAlign: TextAlign.center,
@@ -1597,10 +1618,16 @@ class _VerseMark extends StatelessWidget {
   final _OptState state;
   final Color accent;
 
+  /// Pontuação que segue a palavra — fora da marca, mas colada nela.
+  final String? tail;
+  final double size;
+
   const _VerseMark({
     required this.text,
     required this.state,
     required this.accent,
+    this.tail,
+    this.size = _ActSkin.verseSize,
   });
 
   @override
@@ -1627,7 +1654,7 @@ class _VerseMark extends StatelessWidget {
       _ => color,
     };
 
-    return AnimatedScale(
+    final mark = AnimatedScale(
       scale: hot ? 1.04 : 1,
       duration: _ActSkin.anim,
       curve: Curves.easeOutCubic,
@@ -1649,17 +1676,29 @@ class _VerseMark extends StatelessWidget {
               : const [],
         ),
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(5, 2, 5, 3),
+          padding: const EdgeInsets.fromLTRB(3, 2, 3, 3),
           child: Text(
             text,
             textAlign: TextAlign.center,
             style: _verseWordStyle(
               color: color,
               weight: hot ? FontWeight.w700 : FontWeight.w600,
+              size: size,
             ),
           ),
         ),
       ),
+    );
+    final punct = tail;
+    if (punct == null) return mark;
+    return Row(
+      mainAxisSize: MainAxisSize.min,
+      crossAxisAlignment: CrossAxisAlignment.baseline,
+      textBaseline: TextBaseline.alphabetic,
+      children: [
+        mark,
+        Text(punct, style: _verseWordStyle(size: size)),
+      ],
     );
   }
 }
@@ -2021,9 +2060,7 @@ class _MatchStepper extends StatelessWidget {
               '$n',
               style: AppTypography.title(
                 size: 11,
-                color: on
-                    ? AppColors.inkOnAccent
-                    : a.textFaint,
+                color: on ? AppColors.inkOnAccent : a.textFaint,
               ),
             ),
           ),
@@ -2046,11 +2083,7 @@ class _MatchStepper extends StatelessWidget {
         step(1, 'Escolha', pickingLeft),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 10),
-          child: Container(
-            width: 18,
-            height: 1,
-            color: a.divider,
-          ),
+          child: Container(width: 18, height: 1, color: a.divider),
         ),
         step(2, 'Pareie', !pickingLeft),
       ],

@@ -1,0 +1,907 @@
+{
+  "study": {
+    "slug": "gen-01-criador",
+    "passageRef": "Gênesis 1:1–3",
+    "passageText": "No princípio, Deus criou os céus e a terra. A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: \"Que haja luz\"; e houve luz.",
+    "passages": [
+      {
+        "ref": "Gênesis 1:1–3",
+        "text": "No princípio, Deus criou os céus e a terra. A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: \"Que haja luz\"; e houve luz."
+      }
+    ],
+    "context": "Gênesis foi escrito para um povo cercado de relatos em que o mundo nasce da guerra entre deuses. A primeira frase da Bíblia vai na contramão: antes de tudo, há um só Deus, e ele cria.",
+    "keyword": "Criar",
+    "keywordGloss": "No texto, só Deus é sujeito do verbo criar: ele faz existir o que não existia.",
+    "focusQuestion": "O que muda no seu dia quando você começa por Deus, e não por você?",
+    "reflectionPrompts": [
+      "Deus antes de tudo",
+      "O vazio não é o fim",
+      "O Espírito presente"
+    ],
+    "facts": [
+      {
+        "text": "Deus é quem cria os céus e a terra.",
+        "evidenceRef": "Gênesis 1:1",
+        "evidenceSpan": "Deus criou os céus e a terra"
+      },
+      {
+        "text": "No começo, a terra estava sem forma e vazia.",
+        "evidenceRef": "Gênesis 1:2",
+        "evidenceSpan": "estava sem forma e vazia"
+      },
+      {
+        "text": "Havia trevas sobre a face do abismo.",
+        "evidenceRef": "Gênesis 1:2",
+        "evidenceSpan": "havia trevas sobre a face do abismo"
+      },
+      {
+        "text": "O Espírito de Deus pairava sobre as águas.",
+        "evidenceRef": "Gênesis 1:2",
+        "evidenceSpan": "o Espírito de Deus pairava sobre as águas"
+      },
+      {
+        "text": "Deus fala, e a luz passa a existir.",
+        "evidenceRef": "Gênesis 1:3",
+        "evidenceSpan": "e houve luz"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "criou",
+        "gloss": "Verbo que, no texto, só tem Deus como sujeito: ele faz existir, não apenas arruma."
+      },
+      {
+        "term": "pairava",
+        "gloss": "Imagem de presença cuidadosa, como ave sobre o ninho: Deus já está ali antes da ordem."
+      },
+      {
+        "term": "Espírito de Deus",
+        "gloss": "Deus presente e ativo na criação desde o primeiro momento."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Deus cria tudo",
+        "evidenceRef": "Gênesis 1:1"
+      },
+      {
+        "label": "A terra ainda vazia e escura",
+        "evidenceRef": "Gênesis 1:2"
+      },
+      {
+        "label": "O Espírito presente sobre as águas",
+        "evidenceRef": "Gênesis 1:2"
+      },
+      {
+        "label": "Deus fala e a luz existe",
+        "evidenceRef": "Gênesis 1:3"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Depois de dizer que Deus criou tudo, o texto mostra a terra ainda sem forma: a obra começa por fazer.",
+        "marker": "porém",
+        "evidenceRef": "Gênesis 1:2"
+      },
+      {
+        "kind": "resultado",
+        "text": "A palavra de Deus produz o que diz: ele diz \"Que haja luz\", e há luz.",
+        "marker": "houve",
+        "evidenceRef": "Gênesis 1:3"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 33:9",
+        "text": "Porque ele falou, e tudo se fez",
+        "bridge": "Deus cria pela palavra"
+      },
+      {
+        "ref": "João 1:3",
+        "text": "Todas as coisas foram feitas por meio dele",
+        "bridge": "Cristo presente na criação"
+      },
+      {
+        "ref": "Hebreus 11:3",
+        "text": "os mundos foram formados pela palavra de Deus",
+        "bridge": "Crer no Criador"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O caos existia antes de Deus, como matéria sem dono que ele só organizou.",
+        "why": "O texto começa com Deus criando os céus e a terra; nada aparece antes dele."
+      },
+      {
+        "text": "O vazio e as trevas são forças rivais que Deus precisa vencer.",
+        "why": "Não há luta: o Espírito paira sobre as águas e Deus fala. O vazio é ponto de partida, não inimigo."
+      },
+      {
+        "text": "Deus fez o mundo e depois se afastou dele.",
+        "why": "Antes da primeira palavra, o Espírito já está presente sobre as águas."
+      }
+    ],
+    "centralInsight": "Deus é o centro, não eu",
+    "anchorQuestion": "Quem Gênesis 1:1 diz que criou os céus e a terra?",
+    "relatedVerses": [
+      {
+        "reference": "Salmos 33:9",
+        "reason": "Deus cria pela palavra"
+      },
+      {
+        "reference": "João 1:3",
+        "reason": "Cristo presente na criação"
+      },
+      {
+        "reference": "Hebreus 11:3",
+        "reason": "Crer no Criador"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "genesis-1-11-sem-gen-01-criador-01",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "semente",
+      "type": "true_false",
+      "skill": "observe",
+      "question": "Em Gênesis 1:2, o Espírito de Deus pairava sobre as águas.",
+      "prompt": "Em Gênesis 1:2, o Espírito de Deus pairava sobre as águas.",
+      "cue": "Em Gênesis 1:2, o Espírito de Deus pairava sobre as águas.",
+      "verseRef": "Gênesis 1:2",
+      "passageText": "A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas.",
+      "correctOptionId": "true",
+      "evidenceSpan": "o Espírito de Deus pairava sobre as águas",
+      "feedbackCorrect": "O texto diz: antes da luz, o Espírito de Deus já pairava sobre as águas.",
+      "feedbackWrong": {
+        "false": "Releia o fim de Gênesis 1:2: o Espírito de Deus pairava sobre as águas."
+      },
+      "hint": "Olhe o fim do versículo.",
+      "learningObjective": "Observar que o Espírito de Deus já está presente antes da ordem.",
+      "evidence": [
+        "Gênesis 1:2"
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctAnswer": "true"
+    },
+    {
+      "id": "genesis-1-11-sem-gen-01-criador-02",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "skill": "observe",
+      "question": "Em Gênesis 1:1, toque quem criou os céus e a terra.",
+      "prompt": "Em Gênesis 1:1, toque quem criou os céus e a terra.",
+      "cue": "Em Gênesis 1:1, toque quem criou os céus e a terra.",
+      "verseRef": "Gênesis 1:1",
+      "passageText": "No princípio, Deus criou os céus e a terra.",
+      "options": [
+        {
+          "id": "a",
+          "text": "No princípio"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "a terra"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Deus criou",
+      "feedbackCorrect": "Deus é o sujeito da primeira frase da Bíblia: é ele quem cria.",
+      "feedbackWrong": {
+        "a": "\"No princípio\" diz quando, não quem.",
+        "c": "A terra é o que foi criado, não quem criou."
+      },
+      "hint": "Procure quem faz a ação de criar.",
+      "learningObjective": "Identificar Deus como autor da criação.",
+      "evidence": [
+        "Gênesis 1:1"
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": "genesis-1-11-sem-gen-01-criador-03",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "semente",
+      "type": "choice",
+      "skill": "observe",
+      "question": "Segundo Gênesis 1:2, como estava a terra no começo?",
+      "prompt": "Segundo Gênesis 1:2, como estava a terra no começo?",
+      "cue": "Segundo Gênesis 1:2, como estava a terra no começo?",
+      "verseRef": "Gênesis 1:2",
+      "passageText": "A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Já habitada pelo ser humano"
+        },
+        {
+          "id": "b",
+          "text": "Iluminada pelo sol"
+        },
+        {
+          "id": "c",
+          "text": "Cheia de plantas e animais"
+        },
+        {
+          "id": "d",
+          "text": "Sem forma e vazia"
+        }
+      ],
+      "correctOptionId": "d",
+      "evidenceSpan": "estava sem forma e vazia",
+      "feedbackCorrect": "O texto descreve a terra ainda sem forma e vazia, à espera da ação de Deus.",
+      "feedbackWrong": {
+        "a": "O ser humano só é criado em Gênesis 1:27.",
+        "b": "Havia trevas; a luz só vem em Gênesis 1:3.",
+        "c": "Plantas e animais só aparecem nos dias seguintes (Gn 1:11–25)."
+      },
+      "hint": "Leia a primeira parte do versículo.",
+      "learningObjective": "Observar o estado inicial da terra.",
+      "evidence": [
+        "Gênesis 1:2"
+      ],
+      "correctAnswer": "d"
+    },
+    {
+      "id": "genesis-1-11-sem-gen-01-criador-04",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "semente",
+      "type": "order",
+      "skill": "observe",
+      "question": "Monte Gênesis 1:2 na ordem do texto.",
+      "prompt": "Monte Gênesis 1:2 na ordem do texto.",
+      "cue": "Monte Gênesis 1:2 na ordem do texto.",
+      "verseRef": "Gênesis 1:2",
+      "passageText": "A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas.",
+      "options": [
+        {
+          "id": "a",
+          "text": "A terra, porém, estava sem forma e vazia"
+        },
+        {
+          "id": "b",
+          "text": "havia trevas sobre a face do abismo"
+        },
+        {
+          "id": "c",
+          "text": "o Espírito de Deus pairava sobre as águas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "A terra, porém, estava sem forma e vazia",
+      "feedbackCorrect": "É a sequência do versículo: terra vazia, trevas, e o Espírito pairando.",
+      "feedbackWrong": {
+        "default": "Comece pela terra sem forma; o Espírito aparece no fim do versículo."
+      },
+      "hint": "O versículo começa pela terra.",
+      "learningObjective": "Reconhecer a sequência de Gênesis 1:2.",
+      "evidence": [
+        "Gênesis 1:2"
+      ]
+    },
+    {
+      "id": "genesis-1-11-sem-gen-01-criador-05",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "semente",
+      "type": "complete",
+      "skill": "observe",
+      "question": "Em Gênesis 1:2, o que havia sobre a face do abismo?",
+      "prompt": "Em Gênesis 1:2, o que havia sobre a face do abismo?",
+      "cue": "Em Gênesis 1:2, o que havia sobre a face do abismo?",
+      "verseRef": "Gênesis 1:1–2",
+      "passageText": "No princípio, Deus criou os céus e a terra. A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas.",
+      "template": "No princípio, Deus criou os céus e a terra. A terra, porém, estava sem forma e vazia; havia ___ sobre a face do abismo, e o Espírito de Deus pairava sobre as águas.",
+      "options": [
+        {
+          "id": "a",
+          "text": "águas"
+        },
+        {
+          "id": "b",
+          "text": "luz"
+        },
+        {
+          "id": "c",
+          "text": "trevas"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "havia trevas sobre a face do abismo",
+      "feedbackCorrect": "Antes da luz havia trevas sobre o abismo: o ponto de partida que Deus vai transformar.",
+      "feedbackWrong": {
+        "a": "As águas aparecem no fim do versículo; sobre o abismo havia trevas.",
+        "b": "A luz só surge em Gênesis 1:3, quando Deus fala."
+      },
+      "hint": "O que existia antes de Deus fazer a luz?",
+      "learningObjective": "Lembrar o cenário inicial da criação.",
+      "evidence": [
+        "Gênesis 1:1–2"
+      ],
+      "correctAnswer": "c"
+    },
+    {
+      "id": "genesis-1-11-sem-gen-01-criador-06",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "semente",
+      "type": "connect",
+      "skill": "observe",
+      "question": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+      "prompt": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+      "cue": "O que Gênesis 1:1 comunica que se liga a este contexto?",
+      "verseRef": "Gênesis 1:1",
+      "passageText": "No princípio, Deus criou os céus e a terra.",
+      "passageA": {
+        "ref": "Gênesis 1:1",
+        "text": "No princípio, Deus criou os céus e a terra."
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Antes de qualquer coisa existir, já havia Deus."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A terra sempre existiu"
+        },
+        {
+          "id": "b",
+          "text": "Deus existe antes de tudo"
+        },
+        {
+          "id": "c",
+          "text": "O mundo começa por acaso"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "No princípio, Deus criou",
+      "feedbackCorrect": "\"No princípio, Deus\": ele já está lá quando tudo começa.",
+      "feedbackWrong": {
+        "a": "A terra tem começo; só Deus está antes dele.",
+        "c": "O texto dá um autor ao começo: Deus criou."
+      },
+      "hint": "Veja quem já está presente no princípio.",
+      "learningObjective": "Ligar Gênesis 1:1 à ideia de que Deus precede tudo.",
+      "evidence": [
+        "Gênesis 1:1"
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": "genesis-1-11-cam-gen-01-criador-01",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "skill": "understand",
+      "question": "Em Gênesis 1:1–2, a terra aparece pronta e ordenada logo depois da criação dos céus e da terra.",
+      "prompt": "Em Gênesis 1:1–2, a terra aparece pronta e ordenada logo depois da criação dos céus e da terra.",
+      "cue": "Em Gênesis 1:1–2, a terra aparece pronta e ordenada logo depois da criação dos céus e da terra.",
+      "verseRef": "Gênesis 1:1–2",
+      "passageText": "No princípio, Deus criou os céus e a terra. A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas.",
+      "correctOptionId": "false",
+      "evidenceSpan": "A terra, porém, estava sem forma e vazia",
+      "feedbackCorrect": "O \"porém\" marca o contraste: criada, a terra ainda estava sem forma e vazia.",
+      "feedbackWrong": {
+        "true": "Releia o começo de Gênesis 1:2: a terra, porém, estava sem forma e vazia."
+      },
+      "hint": "Repare na palavra que liga os dois versículos.",
+      "learningObjective": "Compreender o contraste entre Gênesis 1:1 e 1:2.",
+      "evidence": [
+        "Gênesis 1:1–2"
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctAnswer": "false"
+    },
+    {
+      "id": "genesis-1-11-cam-gen-01-criador-02",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "skill": "understand",
+      "question": "Em Gênesis 1:2, toque a palavra que marca o contraste com o versículo anterior.",
+      "prompt": "Em Gênesis 1:2, toque a palavra que marca o contraste com o versículo anterior.",
+      "cue": "Em Gênesis 1:2, toque a palavra que marca o contraste com o versículo anterior.",
+      "verseRef": "Gênesis 1:2",
+      "passageText": "A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas.",
+      "options": [
+        {
+          "id": "a",
+          "text": "havia"
+        },
+        {
+          "id": "b",
+          "text": "porém"
+        },
+        {
+          "id": "c",
+          "text": "sobre"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "A terra, porém,",
+      "feedbackCorrect": "\"Porém\" vira a página: Deus criou tudo, mas a terra ainda estava vazia.",
+      "feedbackWrong": {
+        "a": "\"Havia\" só descreve o que existia; o contraste vem antes.",
+        "c": "\"Sobre\" indica lugar, não contraste."
+      },
+      "hint": "Procure uma palavra curta entre vírgulas.",
+      "learningObjective": "Reconhecer o marcador de contraste no texto.",
+      "evidence": [
+        "Gênesis 1:2"
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": "genesis-1-11-cam-gen-01-criador-03",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "skill": "understand",
+      "question": "Como Gênesis 1:2 se relaciona com Gênesis 1:1?",
+      "prompt": "Como Gênesis 1:2 se relaciona com Gênesis 1:1?",
+      "cue": "Como Gênesis 1:2 se relaciona com Gênesis 1:1?",
+      "verseRef": "Gênesis 1:1–2",
+      "passageText": "No princípio, Deus criou os céus e a terra. A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mostra a terra ainda sem forma, à espera de Deus"
+        },
+        {
+          "id": "b",
+          "text": "Mostra a terra surgindo sem a ação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Conta uma segunda criação, feita depois da primeira"
+        },
+        {
+          "id": "d",
+          "text": "Explica de que material Deus fez os céus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A terra, porém, estava sem forma e vazia",
+      "feedbackCorrect": "Depois de dizer que Deus criou tudo, o texto mostra a terra ainda sem forma, à espera dele.",
+      "feedbackWrong": {
+        "b": "A terra está dentro do que Deus criou em 1:1.",
+        "c": "O texto não conta duas criações; continua a mesma cena.",
+        "d": "O texto não fala de material; fala de como a terra estava."
+      },
+      "hint": "Pense no que o \"porém\" faz entre os dois versículos.",
+      "learningObjective": "Relacionar a afirmação de 1:1 com a descrição de 1:2.",
+      "evidence": [
+        "Gênesis 1:1–2"
+      ],
+      "correctAnswer": "a"
+    },
+    {
+      "id": "genesis-1-11-cam-gen-01-criador-04",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "caminhada",
+      "type": "order",
+      "skill": "understand",
+      "question": "Como avança a cena em Gênesis 1:2–3?",
+      "prompt": "Como avança a cena em Gênesis 1:2–3?",
+      "cue": "Como avança a cena em Gênesis 1:2–3?",
+      "verseRef": "Gênesis 1:2–3",
+      "passageText": "A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas. Disse Deus: \"Que haja luz\"; e houve luz.",
+      "options": [
+        {
+          "id": "a",
+          "text": "A terra ainda está vazia e escura"
+        },
+        {
+          "id": "b",
+          "text": "O Espírito de Deus está sobre as águas"
+        },
+        {
+          "id": "c",
+          "text": "Deus fala e a luz passa a existir"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "e houve luz",
+      "feedbackCorrect": "Primeiro o vazio, depois a presença de Deus, e então a palavra que traz luz.",
+      "feedbackWrong": {
+        "default": "A palavra de Deus vem por último: antes, o vazio e o Espírito presente."
+      },
+      "hint": "A luz é o ponto de chegada.",
+      "learningObjective": "Compreender o movimento do vazio à luz.",
+      "evidence": [
+        "Gênesis 1:2–3"
+      ]
+    },
+    {
+      "id": "genesis-1-11-cam-gen-01-criador-05",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "skill": "understand",
+      "question": "Em Gênesis 1:3, o que acontece logo depois que Deus fala?",
+      "prompt": "Em Gênesis 1:3, o que acontece logo depois que Deus fala?",
+      "cue": "Em Gênesis 1:3, o que acontece logo depois que Deus fala?",
+      "verseRef": "Gênesis 1:3",
+      "passageText": "Disse Deus: \"Que haja luz\"; e houve luz.",
+      "template": "Disse Deus: \"Que haja luz\"; e ___ luz.",
+      "options": [
+        {
+          "id": "a",
+          "text": "pediu"
+        },
+        {
+          "id": "b",
+          "text": "faltou"
+        },
+        {
+          "id": "c",
+          "text": "houve"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "e houve luz",
+      "feedbackCorrect": "\"E houve luz\": a palavra de Deus se cumpre na hora, sem esforço nem demora.",
+      "feedbackWrong": {
+        "a": "Quem fala é Deus, e o que ele diz acontece; não há pedido.",
+        "b": "O texto afirma o contrário: a luz passa a existir."
+      },
+      "hint": "A frase mostra o resultado da palavra de Deus.",
+      "learningObjective": "Compreender que a palavra de Deus produz o que diz.",
+      "evidence": [
+        "Gênesis 1:3"
+      ],
+      "correctAnswer": "c"
+    },
+    {
+      "id": "genesis-1-11-cam-gen-01-criador-06",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "skill": "understand",
+      "question": "O que liga Gênesis 1:3 a Salmos 33:9?",
+      "prompt": "O que liga Gênesis 1:3 a Salmos 33:9?",
+      "cue": "O que liga Gênesis 1:3 a Salmos 33:9?",
+      "verseRef": "Gênesis 1:3",
+      "passageText": "Disse Deus: \"Que haja luz\"; e houve luz.",
+      "passageA": {
+        "ref": "Gênesis 1:3",
+        "text": "Disse Deus: \"Que haja luz\"; e houve luz."
+      },
+      "passageB": {
+        "ref": "Salmos 33:9",
+        "text": "Porque ele falou, e tudo se fez"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O mundo nasce do caos"
+        },
+        {
+          "id": "b",
+          "text": "Deus cria pela palavra"
+        },
+        {
+          "id": "c",
+          "text": "Deus cria com esforço"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Disse Deus",
+      "evidence": [
+        "Gênesis 1:3",
+        "Salmos 33:9"
+      ],
+      "feedbackCorrect": "Nos dois textos, basta Deus falar para que aconteça.",
+      "feedbackWrong": {
+        "a": "Quem faz existir é a palavra de Deus, não o caos.",
+        "c": "Nenhum dos textos fala de esforço: ele falou, e tudo se fez."
+      },
+      "hint": "Compare o verbo que abre os dois trechos.",
+      "learningObjective": "Relacionar a criação pela palavra em Gênesis e nos Salmos.",
+      "correctAnswer": "b"
+    },
+    {
+      "id": "genesis-1-11-pro-gen-01-criador-01",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "skill": "interpret",
+      "question": "Gênesis 1:1–2 apresenta o vazio e as trevas como ponto de partida da obra de Deus, não como rivais dele.",
+      "prompt": "Gênesis 1:1–2 apresenta o vazio e as trevas como ponto de partida da obra de Deus, não como rivais dele.",
+      "cue": "Gênesis 1:1–2 apresenta o vazio e as trevas como ponto de partida da obra de Deus, não como rivais dele.",
+      "verseRef": "Gênesis 1:1–2",
+      "passageText": "No princípio, Deus criou os céus e a terra. A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas.",
+      "correctOptionId": "true",
+      "evidenceSpan": "o Espírito de Deus pairava sobre as águas",
+      "feedbackCorrect": "Não há combate: Deus cria, e seu Espírito paira sobre o vazio para dar forma a ele.",
+      "feedbackWrong": {
+        "false": "O texto não mostra luta; mostra Deus presente sobre o vazio, prestes a agir."
+      },
+      "hint": "Veja o que o Espírito de Deus está fazendo.",
+      "learningObjective": "Interpretar o vazio inicial como matéria da obra de Deus, não como rival.",
+      "evidence": [
+        "Gênesis 1:1–2"
+      ],
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctAnswer": "true"
+    },
+    {
+      "id": "genesis-1-11-pro-gen-01-criador-02",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "skill": "interpret",
+      "question": "Em Gênesis 1:2, toque o trecho que mostra Deus presente antes de haver luz.",
+      "prompt": "Em Gênesis 1:2, toque o trecho que mostra Deus presente antes de haver luz.",
+      "cue": "Em Gênesis 1:2, toque o trecho que mostra Deus presente antes de haver luz.",
+      "verseRef": "Gênesis 1:2",
+      "passageText": "A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas.",
+      "options": [
+        {
+          "id": "a",
+          "text": "trevas"
+        },
+        {
+          "id": "b",
+          "text": "Espírito de Deus"
+        },
+        {
+          "id": "c",
+          "text": "face do abismo"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o Espírito de Deus pairava sobre as águas",
+      "feedbackCorrect": "O Espírito de Deus já está ali, sobre as águas, antes da primeira palavra.",
+      "feedbackWrong": {
+        "a": "As trevas descrevem a terra antes da luz; a presença de Deus vem no fim do versículo.",
+        "c": "O abismo descreve o cenário, não a presença de Deus."
+      },
+      "hint": "Procure alguém, não um lugar.",
+      "learningObjective": "Sustentar com o texto que Deus está presente desde o início.",
+      "evidence": [
+        "Gênesis 1:2"
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": "genesis-1-11-pro-gen-01-criador-03",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "skill": "interpret",
+      "question": "Que leitura Gênesis 1:1–2 sustenta sobre o começo do mundo?",
+      "prompt": "Que leitura Gênesis 1:1–2 sustenta sobre o começo do mundo?",
+      "cue": "Que leitura Gênesis 1:1–2 sustenta sobre o começo do mundo?",
+      "verseRef": "Gênesis 1:1–2",
+      "passageText": "No princípio, Deus criou os céus e a terra. A terra, porém, estava sem forma e vazia; havia trevas sobre a face do abismo, e o Espírito de Deus pairava sobre as águas.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus está antes de tudo e presente desde o início"
+        },
+        {
+          "id": "b",
+          "text": "Deus fez o mundo e depois se afastou dele"
+        },
+        {
+          "id": "c",
+          "text": "O caos existia antes de Deus, como matéria sem dono"
+        },
+        {
+          "id": "d",
+          "text": "O vazio é uma força rival que Deus precisa vencer"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "No princípio, Deus criou os céus e a terra",
+      "feedbackCorrect": "O texto começa com Deus criando, e seu Espírito já paira sobre a terra vazia.",
+      "feedbackWrong": {
+        "b": "O Espírito presente sobre as águas desmente um Deus distante.",
+        "c": "Nada aparece antes de Deus: \"No princípio, Deus criou\".",
+        "d": "Não há batalha: o Espírito paira em paz sobre as águas."
+      },
+      "hint": "Compare cada opção com o começo e o fim do trecho.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta sobre a origem do mundo.",
+      "evidence": [
+        "Gênesis 1:1–2"
+      ],
+      "correctAnswer": "a"
+    },
+    {
+      "id": "genesis-1-11-pro-gen-01-criador-04",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "profundezas",
+      "type": "order",
+      "skill": "interpret",
+      "question": "Qual sequência revela o caminho da luz que começa em Gênesis 1:3?",
+      "prompt": "Qual sequência revela o caminho da luz que começa em Gênesis 1:3?",
+      "cue": "Qual sequência revela o caminho da luz que começa em Gênesis 1:3?",
+      "verseRef": "Gênesis 1:3",
+      "passageText": "Disse Deus: \"Que haja luz\"; e houve luz.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus diz \"Que haja luz\", e a luz existe"
+        },
+        {
+          "id": "b",
+          "text": "Deus faz brilhar sua luz no coração de quem crê"
+        },
+        {
+          "id": "c",
+          "text": "Na cidade eterna, o próprio Deus é a luz"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "e houve luz",
+      "evidence": [
+        "Gênesis 1:3",
+        "2 Coríntios 4:6",
+        "Apocalipse 22:5"
+      ],
+      "feedbackCorrect": "A luz da criação aponta para a luz de Deus no coração e, por fim, para a luz eterna.",
+      "feedbackWrong": {
+        "default": "Siga a história: criação (Gn 1:3), fé (2 Co 4:6) e eternidade (Ap 22:5)."
+      },
+      "hint": "Siga a ordem da história bíblica: criação, igreja, eternidade.",
+      "learningObjective": "Ver Gênesis 1:3 como começo de um fio que atravessa a Bíblia."
+    },
+    {
+      "id": "genesis-1-11-pro-gen-01-criador-05",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "skill": "interpret",
+      "question": "Em Gênesis 1:1, que verbo mostra o que Deus faz no princípio?",
+      "prompt": "Em Gênesis 1:1, que verbo mostra o que Deus faz no princípio?",
+      "cue": "Em Gênesis 1:1, que verbo mostra o que Deus faz no princípio?",
+      "verseRef": "Gênesis 1:1",
+      "passageText": "No princípio, Deus criou os céus e a terra.",
+      "template": "No princípio, Deus ___ os céus e a terra.",
+      "options": [
+        {
+          "id": "a",
+          "text": "organizou"
+        },
+        {
+          "id": "b",
+          "text": "criou"
+        },
+        {
+          "id": "c",
+          "text": "encontrou"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Deus criou os céus e a terra",
+      "feedbackCorrect": "No texto, só Deus é sujeito desse verbo: ele faz existir, não só arruma.",
+      "feedbackWrong": {
+        "a": "Organizar supõe algo antes; o texto diz que Deus fez os céus e a terra.",
+        "c": "Deus não acha o mundo pronto; ele o faz existir."
+      },
+      "hint": "É o verbo que dá nome à cena.",
+      "learningObjective": "Lembrar o termo que carrega o sentido da cena.",
+      "evidence": [
+        "Gênesis 1:1"
+      ],
+      "correctAnswer": "b"
+    },
+    {
+      "id": "genesis-1-11-pro-gen-01-criador-06",
+      "trail": "genesis-1-11",
+      "section": "gen-01-criador",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "skill": "interpret",
+      "question": "O que liga Gênesis 1:1 a João 1:3?",
+      "prompt": "O que liga Gênesis 1:1 a João 1:3?",
+      "cue": "O que liga Gênesis 1:1 a João 1:3?",
+      "verseRef": "Gênesis 1:1",
+      "passageText": "No princípio, Deus criou os céus e a terra.",
+      "passageA": {
+        "ref": "Gênesis 1:1",
+        "text": "No princípio, Deus criou os céus e a terra."
+      },
+      "passageB": {
+        "ref": "João 1:3",
+        "text": "Todas as coisas foram feitas por meio dele, e, sem ele, nada do que foi feito se fez."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Uma segunda criação do mundo"
+        },
+        {
+          "id": "b",
+          "text": "Cristo presente na criação"
+        },
+        {
+          "id": "c",
+          "text": "Anjos ajudando Deus a criar"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "No princípio, Deus criou",
+      "evidence": [
+        "Gênesis 1:1",
+        "João 1:1–3"
+      ],
+      "feedbackCorrect": "João relê Gênesis: o Verbo, Jesus, estava no princípio e tudo foi feito por meio dele.",
+      "feedbackWrong": {
+        "a": "João fala da mesma criação de Gênesis, não de outra.",
+        "c": "Nenhum dos textos fala de anjos; tudo foi feito por meio do Verbo."
+      },
+      "hint": "Veja o que João diz sobre por meio de quem tudo foi feito.",
+      "learningObjective": "Ligar a criação de Gênesis à pessoa de Cristo, como o NT faz.",
+      "correctAnswer": "b"
+    }
+  ]
+}

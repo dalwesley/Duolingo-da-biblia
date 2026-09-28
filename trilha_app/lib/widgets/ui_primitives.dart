@@ -107,6 +107,9 @@ class CopperCta extends StatefulWidget {
   final bool showGlow;
   final bool busy;
 
+  /// 0–1: o fundo enche da esquerda para a direita (contagem até avançar).
+  final double? progress;
+
   static const height = 52.0;
   static const denseHeight = 44.0;
 
@@ -122,6 +125,7 @@ class CopperCta extends StatefulWidget {
     this.dense = false,
     this.showGlow = true,
     this.busy = false,
+    this.progress,
   });
 
   /// Texto do botão: Nunito 700, espaçamento leve — como no site.
@@ -138,6 +142,15 @@ class CopperCta extends StatefulWidget {
 
 class _CopperCtaState extends State<CopperCta> {
   bool _down = false;
+
+  /// Parte cheia em ouro; o resto em ouro apagado, como uma barra dentro do botão.
+  static LinearGradient _fillGradient(double t) {
+    final dim = Color.lerp(AppColors.accent, Colors.black, 0.32)!;
+    return LinearGradient(
+      colors: [AppColors.accent, AppColors.accent, dim, dim],
+      stops: [0, t, t, 1],
+    );
+  }
 
   void _press(bool down) {
     if (_down != down) setState(() => _down = down);
@@ -173,7 +186,10 @@ class _CopperCtaState extends State<CopperCta> {
           ),
           padding: pad,
           decoration: BoxDecoration(
-            color: AppColors.accent,
+            color: w.progress == null ? AppColors.accent : null,
+            gradient: w.progress == null
+                ? null
+                : _fillGradient(w.progress!.clamp(0.0, 1.0)),
             borderRadius: BorderRadius.circular(AppRadii.md),
             boxShadow: glow,
           ),

@@ -99,7 +99,6 @@ class _LessonScreenState extends State<LessonScreen>
   final Map<int, bool> _results = {};
 
   /// "Acertou!" em cena por um instante antes do próximo ato.
-  bool _verdict = false;
   final bool _insightOnConnect = false;
 
   late final AnimationController _impactFlash;
@@ -471,18 +470,9 @@ class _LessonScreenState extends State<LessonScreen>
       ),
     );
 
-    if (correct) {
-      // Tempo de sentir o acerto: faísca inteira + "Acertou!" em cena.
-      if (mounted) setState(() => _verdict = true);
-      await Future.delayed(const Duration(milliseconds: 900));
-      _busy = false;
-      if (!mounted) return;
-      setState(() => _verdict = false);
-      _continue();
-      return;
-    }
-
-    await Future.delayed(const Duration(milliseconds: 420));
+    // Acerto e erro caem no mesmo painel: o acerto espera a faísca subir,
+    // e mostra o porquê (feedbackCorrect) em vez de sumir sozinho.
+    await Future.delayed(Duration(milliseconds: correct ? 520 : 420));
     _busy = false;
     if (mounted) setState(() => _showFeedback = true);
   }
@@ -1026,21 +1016,6 @@ class _LessonScreenState extends State<LessonScreen>
                       );
                     },
                   ),
-                if (_phase == _Phase.quiz)
-                  Positioned(
-                    left: 0,
-                    right: 0,
-                    top: MediaQuery.paddingOf(context).top + 104,
-                    child: IgnorePointer(
-                      child: Center(
-                        child: _Verdict(
-                          on: _verdict,
-                          combo: _combo,
-                          accent: accent,
-                        ),
-                      ),
-                    ),
-                  ),
                 if (_phase == _Phase.quiz &&
                     _showFeedback &&
                     _selected != null &&
@@ -1054,6 +1029,7 @@ class _LessonScreenState extends State<LessonScreen>
                           _outOfLamps ||
                           (_isCorrect == true && _questionIndex >= total - 1),
                       accent: accent,
+                      combo: _combo,
                       outOfLamps: _outOfLamps,
                       onContinue: _continue,
                       missionSlug: widget.missionSlug,
@@ -1122,55 +1098,6 @@ class _ActProgress extends StatelessWidget {
             ),
           ],
         ],
-      ),
-    );
-  }
-}
-
-/// "Acertou!" que salta em cena; a partir de 2 seguidas mostra o combo.
-class _Verdict extends StatelessWidget {
-  final bool on;
-  final int combo;
-  final Color accent;
-
-  const _Verdict({required this.on, required this.combo, required this.accent});
-
-  static const _words = ['Acertou', 'Isso aí', 'Muito bem', 'Na mosca'];
-
-  @override
-  Widget build(BuildContext context) {
-    final word = _words[(combo - 1).clamp(0, _words.length - 1)];
-    return AnimatedScale(
-      scale: on ? 1 : 0.6,
-      duration: Duration(milliseconds: on ? 380 : 160),
-      curve: on ? Curves.elasticOut : Curves.easeIn,
-      child: AnimatedOpacity(
-        opacity: on ? 1 : 0,
-        duration: const Duration(milliseconds: 160),
-        child: Container(
-          padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 10),
-          decoration: BoxDecoration(
-            color: accent,
-            borderRadius: BorderRadius.circular(AppRadii.pill),
-            boxShadow: AppMetrics.accentGlow(color: accent),
-          ),
-          child: Row(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              const CinematicIcon(
-                glyph: CinematicGlyph.check,
-                size: 18,
-                accent: AppColors.inkOnAccent,
-                framed: false,
-              ),
-              const SizedBox(width: 8),
-              Text(
-                combo >= 2 ? '$word  ×$combo' : word,
-                style: CopperCta.labelStyle(size: 16),
-              ),
-            ],
-          ),
-        ),
       ),
     );
   }

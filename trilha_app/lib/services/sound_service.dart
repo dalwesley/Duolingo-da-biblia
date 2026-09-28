@@ -40,16 +40,20 @@ class SoundService {
 
   void setEnabled(bool value) => _enabled = value;
 
-  // Acerto vibra firme, erro vibra pesado — o acerto nunca pode
-  // parecer mais fraco que o erro.
+  // Acerto vibra em dois tempos (firme + eco); erro, um toque só, mais leve —
+  // o acerto nunca pode parecer mais fraco que o erro.
   Future<void> playCorrect() async {
-    HapticFeedback.mediumImpact();
+    HapticFeedback.heavyImpact();
+    Future.delayed(
+      const Duration(milliseconds: 90),
+      HapticFeedback.lightImpact,
+    );
     if (!_enabled) return;
     await _playAsset('sounds/correct.mp3', fallback: SystemSoundType.click);
   }
 
   Future<void> playWrong() async {
-    HapticFeedback.heavyImpact();
+    HapticFeedback.mediumImpact();
     if (!_enabled) return;
     await _playAsset('sounds/wrong.mp3', fallback: SystemSoundType.alert);
   }
