@@ -356,24 +356,28 @@ class _HeroContinueCardState extends State<HeroContinueCard>
                             child: Row(
                               mainAxisSize: MainAxisSize.min,
                               children: [
-                                AnimatedBuilder(
-                                  animation: _pulseController,
-                                  builder: (context, child) {
-                                    final scale = mood == HeroCardMood.alive
-                                        ? 1.0 + _pulseController.value * 0.06
-                                        : 1.0;
-                                    return Transform.scale(
-                                      scale: scale,
-                                      alignment: Alignment.center,
-                                      child: child,
-                                    );
-                                  },
-                                  child: CinematicIcon(
-                                    glyph: visuals.glyph,
-                                    size: 16,
-                                    accent: trailAccent,
-                                    glowing: false,
-                                    framed: false,
+                                // Pulso isolado: sem isso cada frame repinta
+                                // o card inteiro (sombras, filtro, textos).
+                                RepaintBoundary(
+                                  child: AnimatedBuilder(
+                                    animation: _pulseController,
+                                    builder: (context, child) {
+                                      final scale = mood == HeroCardMood.alive
+                                          ? 1.0 + _pulseController.value * 0.06
+                                          : 1.0;
+                                      return Transform.scale(
+                                        scale: scale,
+                                        alignment: Alignment.center,
+                                        child: child,
+                                      );
+                                    },
+                                    child: CinematicIcon(
+                                      glyph: visuals.glyph,
+                                      size: 16,
+                                      accent: trailAccent,
+                                      glowing: false,
+                                      framed: false,
+                                    ),
                                   ),
                                 ),
                                 const SizedBox(width: 6),

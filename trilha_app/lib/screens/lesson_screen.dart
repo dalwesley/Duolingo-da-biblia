@@ -446,11 +446,7 @@ class _LessonScreenState extends State<LessonScreen>
           : left == 1
           ? 'Resta 1 lâmpada — cada erro apaga uma.'
           : 'Restam $left lâmpadas — cada erro apaga uma.';
-      showAppToastFor(
-        context,
-        message: msg,
-        glyph: CinematicGlyph.lamp,
-      );
+      showAppToastFor(context, message: msg, glyph: CinematicGlyph.lamp);
     }
     final trackBankId =
         ex.id.isNotEmpty && (_pickedIds.contains(ex.id) || widget.practiceMode);
@@ -997,7 +993,9 @@ class _LessonScreenState extends State<LessonScreen>
                     left: -140,
                     top: -140,
                     child: IgnorePointer(
-                      child: Opacity(opacity: 0.02, child: _ActWarmup()),
+                      child: RepaintBoundary(
+                        child: Opacity(opacity: 0.02, child: _ActWarmup()),
+                      ),
                     ),
                   ),
                 if (_phase == _Phase.quiz)
@@ -1384,7 +1382,10 @@ class _ActWarmup extends StatelessWidget {
         const SizedBox(
           width: 18,
           height: 18,
+          // Determinado: aquece o shader do arco sem animar para sempre
+          // (o indeterminado repintava a intro a cada frame).
           child: CircularProgressIndicator(
+            value: 0.7,
             strokeWidth: 2,
             color: AppColors.inkOnAccent,
           ),

@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:isolate';
 
 import 'package:flutter/services.dart';
 import 'package:path/path.dart' as p;
@@ -116,6 +117,13 @@ class VerseStudy {
   const VerseStudy({required this.tokens, required this.crossRefs});
 }
 
+void _inflateTo(TransferableTypedData compressed, String path) {
+  final bytes = gzip.decode(compressed.materialize().asUint8List());
+  final tmp = File('$path.tmp');
+  tmp.writeAsBytesSync(bytes, flush: true);
+  tmp.renameSync(path);
+}
+
 /// Estudo offline: Strong, morfologia, refs cruzadas e concordância.
 class BibleStudyService {
   static BibleStudyService? _instance;
@@ -145,12 +153,12 @@ class BibleStudyService {
     final file = File(path);
     if (!await file.exists() || await file.length() < 1000000) {
       final data = await rootBundle.load(assetPath);
-      final compressed = data.buffer.asUint8List(
-        data.offsetInBytes,
-        data.lengthInBytes,
-      );
-      final bytes = Uint8List.fromList(gzip.decode(compressed));
-      await file.writeAsBytes(bytes, flush: true);
+      final compressed = TransferableTypedData.fromList([
+        data.buffer.asUint8List(data.offsetInBytes, data.lengthInBytes),
+      ]);
+      // gunzip de ~50 MB fora da UI; grava em .tmp e renomeia para não
+      // deixar banco truncado se o app fechar no meio.
+      await Isolate.run(() => _inflateTo(compressed, path));
     }
     return openDatabase(path, readOnly: true);
   }

@@ -160,97 +160,99 @@ class _PromotionBannerState extends State<_PromotionBanner>
         ? 'Ficou em ${widget.rank}º · agora caminha na ${widget.tierLabel}'
         : 'Agora caminha na ${widget.tierLabel}';
 
-    return AnimatedBuilder(
-      animation: _breathe,
-      builder: (context, _) {
-        final pulse = Curves.easeInOut.transform(_breathe.value);
-        return Container(
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(AppRadii.lg),
-            boxShadow: [
-              BoxShadow(
-                color: AppColors.dropShadow,
-                blurRadius: 16,
-                offset: const Offset(0, 8),
-              ),
-            ],
+    // Só a medalha respira; o cartão (gradientes, confete, textos) não é
+    // reconstruído a cada frame.
+    return Container(
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(AppRadii.lg),
+        boxShadow: [
+          BoxShadow(
+            color: AppColors.dropShadow,
+            blurRadius: 16,
+            offset: const Offset(0, 8),
           ),
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(AppRadii.lg),
-            child: Stack(
-              children: [
-                const Positioned.fill(
-                  child: DecoratedBox(
-                    decoration: BoxDecoration(gradient: AppGradients.gold),
-                  ),
-                ),
-                Positioned.fill(
-                  child: IgnorePointer(
-                    child: DecoratedBox(
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          begin: Alignment.topCenter,
-                          end: Alignment.bottomCenter,
-                          colors: [
-                            Colors.white.withValues(alpha: 0.06),
-                            Colors.transparent,
-                            AppColors.inkOnAccent.withValues(alpha: 0.16),
-                          ],
-                          stops: const [0, 0.42, 1],
-                        ),
-                      ),
+        ],
+      ),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(AppRadii.lg),
+        child: Stack(
+          children: [
+            const Positioned.fill(
+              child: DecoratedBox(
+                decoration: BoxDecoration(gradient: AppGradients.gold),
+              ),
+            ),
+            Positioned.fill(
+              child: IgnorePointer(
+                child: DecoratedBox(
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [
+                        Colors.white.withValues(alpha: 0.06),
+                        Colors.transparent,
+                        AppColors.inkOnAccent.withValues(alpha: 0.16),
+                      ],
+                      stops: const [0, 0.42, 1],
                     ),
                   ),
                 ),
-                const Positioned.fill(child: ConfettiOverlay(active: true)),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(14, 14, 12, 14),
-                  child: Row(
-                    children: [
-                      _PromotionMedal(rank: widget.rank, pulse: pulse),
-                      const SizedBox(width: 12),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'Você avançou de caravana',
-                              style: AppTypography.title(
-                                size: 16,
-                                color: AppColors.inkOnAccent,
-                              ),
-                            ),
-                            const SizedBox(height: 3),
-                            Text(
-                              rankLine,
-                              style: AppTypography.body(
-                                size: 12,
-                                height: 1.35,
-                                weight: FontWeight.w700,
-                                color: AppColors.medalInk.withValues(
-                                  alpha: 0.88,
-                                ),
-                              ),
-                            ),
-                            const SizedBox(height: 8),
-                            _BonusChip(steps: widget.bonusSteps),
-                          ],
-                        ),
-                      ),
-                      const SizedBox(width: 8),
-                      _CollectButton(
-                        label: 'Coletar',
-                        onDarkGold: true,
-                        onTap: widget.onCollect,
-                      ),
-                    ],
-                  ),
-                ),
-              ],
+              ),
             ),
-          ),
-        );
-      },
+            const Positioned.fill(child: ConfettiOverlay(active: true)),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(14, 14, 12, 14),
+              child: Row(
+                children: [
+                  RepaintBoundary(
+                    child: AnimatedBuilder(
+                      animation: _breathe,
+                      builder: (context, _) => _PromotionMedal(
+                        rank: widget.rank,
+                        pulse: Curves.easeInOut.transform(_breathe.value),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Você avançou de caravana',
+                          style: AppTypography.title(
+                            size: 16,
+                            color: AppColors.inkOnAccent,
+                          ),
+                        ),
+                        const SizedBox(height: 3),
+                        Text(
+                          rankLine,
+                          style: AppTypography.body(
+                            size: 12,
+                            height: 1.35,
+                            weight: FontWeight.w700,
+                            color: AppColors.medalInk.withValues(alpha: 0.88),
+                          ),
+                        ),
+                        const SizedBox(height: 8),
+                        _BonusChip(steps: widget.bonusSteps),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(width: 8),
+                  _CollectButton(
+                    label: 'Coletar',
+                    onDarkGold: true,
+                    onTap: widget.onCollect,
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

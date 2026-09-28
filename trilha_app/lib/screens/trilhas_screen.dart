@@ -670,35 +670,39 @@ class _NowPlayingStripState extends State<_NowPlayingStrip>
                           ),
                         ),
                         const SizedBox(width: 14),
-                        AnimatedBuilder(
-                          animation: _pulse,
-                          builder: (context, child) {
-                            final t = Curves.easeInOut.transform(_pulse.value);
-                            return Container(
-                              width: 50,
-                              height: 50,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: AppColors.accent,
-                                boxShadow: [
-                                  BoxShadow(
-                                    color: AppColors.accent.withValues(
-                                      alpha: 0.18 + 0.28 * t,
+                        RepaintBoundary(
+                          child: AnimatedBuilder(
+                            animation: _pulse,
+                            builder: (context, child) {
+                              final t = Curves.easeInOut.transform(
+                                _pulse.value,
+                              );
+                              return Container(
+                                width: 50,
+                                height: 50,
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  color: AppColors.accent,
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: AppColors.accent.withValues(
+                                        alpha: 0.18 + 0.28 * t,
+                                      ),
+                                      blurRadius: 10 + 12 * t,
+                                      spreadRadius: 1 + 2 * t,
                                     ),
-                                    blurRadius: 10 + 12 * t,
-                                    spreadRadius: 1 + 2 * t,
-                                  ),
-                                ],
+                                  ],
+                                ),
+                                child: child,
+                              );
+                            },
+                            child: const Center(
+                              child: CinematicIcon(
+                                glyph: CinematicGlyph.forward,
+                                size: 22,
+                                accent: AppColors.inkOnAccent,
+                                framed: false,
                               ),
-                              child: child,
-                            );
-                          },
-                          child: const Center(
-                            child: CinematicIcon(
-                              glyph: CinematicGlyph.forward,
-                              size: 22,
-                              accent: AppColors.inkOnAccent,
-                              framed: false,
                             ),
                           ),
                         ),
@@ -1156,16 +1160,48 @@ class _BrandFloor extends StatelessWidget {
               colorFilter: ColorFilter.matrix(
                 locked
                     ? const <double>[
-                        0.16, 0.02, 0.01, 0, 4,
-                        0.01, 0.18, 0.03, 0, 4,
-                        0.01, 0.03, 0.22, 0, 6,
-                        0, 0, 0, 1, 0,
+                        0.16,
+                        0.02,
+                        0.01,
+                        0,
+                        4,
+                        0.01,
+                        0.18,
+                        0.03,
+                        0,
+                        4,
+                        0.01,
+                        0.03,
+                        0.22,
+                        0,
+                        6,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
                       ]
                     : const <double>[
-                        0.34, 0.05, 0.02, 0, 8,
-                        0.02, 0.38, 0.08, 0, 10,
-                        0.02, 0.08, 0.52, 0, 14,
-                        0, 0, 0, 1, 0,
+                        0.34,
+                        0.05,
+                        0.02,
+                        0,
+                        8,
+                        0.02,
+                        0.38,
+                        0.08,
+                        0,
+                        10,
+                        0.02,
+                        0.08,
+                        0.52,
+                        0,
+                        14,
+                        0,
+                        0,
+                        0,
+                        1,
+                        0,
                       ],
               ),
               child: const StwayPathBackdrop(

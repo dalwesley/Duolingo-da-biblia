@@ -26,6 +26,7 @@ import '../widgets/immersive_background.dart';
 import '../widgets/medal_unlock_sheet.dart';
 import '../widgets/milestone_chests.dart';
 import '../widgets/mode_emblem.dart';
+import '../widgets/mode_selector.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/trail_map_path.dart';
 import '../widgets/ui_primitives.dart';
@@ -124,32 +125,6 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
         curve: Curves.easeInOutCubic,
       );
     });
-  }
-
-  void _onModeSelected(TrailDifficulty d) {
-    final progress = context.read<ProgressService>();
-    if (!progress.hasDifficultyChoice(widget.slug)) return;
-    if (!progress.isDifficultyUnlocked(widget.slug, d)) {
-      ActHaptics.tap();
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(
-            'Conclua o modo anterior para liberar ${d.labelPt}.',
-            style: AppTypography.body(color: AppColors.textOnDark),
-          ),
-          backgroundColor: AppColors.nightElevated,
-        ),
-      );
-      return;
-    }
-    final before = progress.difficultyForTrail(widget.slug);
-    if (before == d.id) return;
-    ActHaptics.confirm();
-    progress.setSessionTrailDifficulty(
-      widget.slug,
-      d.id,
-      missionSlugs: _trail?.missionSlugs ?? const [],
-    );
   }
 
   TrailRealm get _realm => _trail != null
@@ -333,21 +308,11 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
                             AppSpace.screen,
                             AppSpace.sm,
                           ),
-                          child: _ModeCard(
-                            difficultyId:
-                                difficultyId ?? TrailDifficulty.semente.id,
-                            clearedModeIds: cleared,
-                            bannerText: modeBanner,
-                            sealedBanner: sealedHint != null,
-                            sessionHint:
-                                progress.hasSessionDifficulty(widget.slug)
-                                ? 'Só nesta sessão · ao fechar o app volta para ${TrailProgress.modeLabel(progress.canonicalDifficultyId(widget.slug))}'
-                                : (progress.hasDifficultyChoice(widget.slug)
-                                      ? 'Toque para ver outro modo'
-                                      : null),
-                            onSelect: progress.hasDifficultyChoice(widget.slug)
-                                ? _onModeSelected
-                                : null,
+                          child: ModeBanner(
+                            trailSlug: widget.slug,
+                            trailTitle: trail.title,
+                            missionSlugs: allSlugs,
+                            caption: modeBanner,
                           ),
                         )
                       else if (modeBanner != null)
@@ -588,95 +553,6 @@ class _ModeReplayBanner extends StatelessWidget {
               ),
             ),
           ),
-        ],
-      ),
-    );
-  }
-}
-
-class _ModeCard extends StatelessWidget {
-  final String difficultyId;
-  final List<String> clearedModeIds;
-  final String? bannerText;
-  final bool sealedBanner;
-  final String? sessionHint;
-  final ValueChanged<TrailDifficulty>? onSelect;
-
-  const _ModeCard({
-    required this.difficultyId,
-    required this.clearedModeIds,
-    this.bannerText,
-    this.sealedBanner = false,
-    this.sessionHint,
-    this.onSelect,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final mode =
-        TrailDifficulty.fromId(difficultyId) ?? TrailDifficulty.semente;
-    final accent = DifficultyVisuals.accentFor(mode);
-    final title = bannerText ?? 'Modo ${mode.labelPt}';
-
-    return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.fromLTRB(
-        AppSpace.lg,
-        AppSpace.md,
-        AppSpace.lg,
-        AppSpace.lg,
-      ),
-      decoration: DifficultyVisuals.stationCard(
-        accent: accent,
-        baseFill: a.cardFill,
-        lit: true,
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              ModeEmblem(
-                difficulty: mode,
-                size: 22,
-                cleared: sealedBanner,
-                active: !sealedBanner,
-              ),
-              const SizedBox(width: AppSpace.sm),
-              Expanded(
-                child: Text(
-                  title,
-                  style: AppTypography.body(
-                    size: 12,
-                    weight: FontWeight.w600,
-                    color: a.textSecondary,
-                    height: 1.3,
-                  ),
-                ),
-              ),
-            ],
-          ),
-          const SizedBox(height: AppSpace.md),
-          ModeEmblemStrip(
-            clearedModeIds: clearedModeIds,
-            activeDifficultyId: difficultyId,
-            emblemSize: 32,
-            labeled: true,
-            onSelect: onSelect,
-          ),
-          if (sessionHint != null) ...[
-            const SizedBox(height: AppSpace.sm),
-            Text(
-              sessionHint!,
-              style: AppTypography.label(
-                size: 11,
-                color: a.textFaint,
-                letterSpacing: 0.2,
-              ),
-            ),
-          ],
         ],
       ),
     );

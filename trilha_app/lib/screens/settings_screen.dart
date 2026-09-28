@@ -6,9 +6,7 @@ import 'package:package_info_plus/package_info_plus.dart';
 import 'package:provider/provider.dart';
 import 'package:share_plus/share_plus.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import '../data/question_bank.dart';
 import '../data/trail_repository.dart';
-import '../models/difficulty.dart';
 import '../services/app_update_service.dart';
 import '../services/backend_service.dart';
 import '../services/bible_service.dart';
@@ -26,16 +24,14 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../widgets/relic_panel.dart';
 import '../widgets/app_sheet.dart';
-import '../utils/difficulty_visuals.dart';
 import '../utils/layout_utils.dart';
-import '../utils/trail_progress.dart';
 import '../widgets/act_feel.dart';
 import '../widgets/app_update_sheet.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/coming_soon_trails_card.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/juntos_chrome.dart';
-import '../widgets/mode_emblem.dart';
+import '../widgets/mode_selector.dart';
 import '../widgets/reminder_prompt_sheet.dart';
 import '../widgets/reset_progress_sheet.dart';
 import '../widgets/top_bar.dart';
@@ -97,12 +93,10 @@ class _SettingsScreenState extends State<SettingsScreen>
     with SingleTickerProviderStateMixin {
   final _nameController = TextEditingController();
   bool _nameDirty = false;
-  List<DifficultyMeta>? _difficulties;
   List<String> _genesisMissionSlugs = const [];
   late final AnimationController _entrance;
   String? _versionLabel;
   bool _checkingUpdate = false;
-  bool _creditsOpen = false;
   final _sectionKeys = {
     for (final s in _SettingsSection.values) s: GlobalKey(),
   };
@@ -114,7 +108,7 @@ class _SettingsScreenState extends State<SettingsScreen>
       vsync: this,
       duration: const Duration(milliseconds: 850),
     )..forward();
-    _loadDifficulties();
+    _loadGenesisMissions();
     _loadVersionLabel();
     _nameController.addListener(_onNameChanged);
   }
@@ -163,14 +157,10 @@ class _SettingsScreenState extends State<SettingsScreen>
     if (dirty != _nameDirty) setState(() => _nameDirty = dirty);
   }
 
-  Future<void> _loadDifficulties() async {
-    final items = await QuestionBank.instance.getDifficulties();
+  Future<void> _loadGenesisMissions() async {
     final trail = await TrailRepository().getTrailBySlug(_genesisTrailSlug);
     if (mounted) {
-      setState(() {
-        _difficulties = items;
-        _genesisMissionSlugs = trail?.missionSlugs ?? const [];
-      });
+      setState(() => _genesisMissionSlugs = trail?.missionSlugs ?? const []);
     }
   }
 
@@ -236,11 +226,13 @@ class _SettingsScreenState extends State<SettingsScreen>
         ],
 
         _reveal(0, _passportCard(progress, a)),
-        const SizedBox(height: AppSpace.md),
 
-        // Jornada — ritmo, compromisso e modo de estudo.
+        // Sua jornada — como você estuda e em que ritmo.
+        _reveal(1, _groupLabel(a, 'Sua jornada')),
+        _reveal(2, _studyModeCard(progress, a)),
+        const SizedBox(height: AppSpace.md),
         _reveal(
-          2,
+          3,
           _groupedCard(
             a,
             title: 'Ritmo diário',
@@ -257,45 +249,36 @@ class _SettingsScreenState extends State<SettingsScreen>
             ],
           ),
         ),
-        const SizedBox(height: AppSpace.md),
-        _reveal(3, _studyModeCard(progress, a)),
 
-        // Aparência — o título mora no próprio card; a chave da seção fica
-        // nele para o salto até "Aparência" continuar funcionando.
-        const SizedBox(height: AppSpace.md),
+        // Neste aparelho — o que se vê e o que se ouve.
+        _reveal(4, _groupLabel(a, 'Neste aparelho')),
         _reveal(
-          4,
+          5,
           KeyedSubtree(
             key: _sectionKeys[_SettingsSection.aparencia],
             child: _appearanceCard(progress, a),
           ),
         ),
-
-        // Lembretes — horário (sons e avisos ficam nos atalhos do topo).
         const SizedBox(height: AppSpace.md),
         _reveal(
-          5,
+          6,
           KeyedSubtree(
             key: _sectionKeys[_SettingsSection.lembretes],
             child: _remindersCard(progress, a),
           ),
         ),
 
-        // Conta — backup.
-        const SizedBox(height: AppSpace.md),
+        // Conta e dados — backup, sair e resetar num lugar só.
+        _reveal(7, _groupLabel(a, 'Conta e dados')),
         _reveal(
-          7,
+          8,
           KeyedSubtree(
             key: _sectionKeys[_SettingsSection.conta],
-            child: _backupBlock(a, sync, progress),
+            child: _accountCard(a, sync, progress),
           ),
         ),
         const SizedBox(height: AppSpace.md),
-        _reveal(8, _aboutBlock(a)),
-
-        // Ações que mexem na conta ficam separadas, no fim.
-        const SizedBox(height: AppSpace.xxxl),
-        _reveal(9, _dangerBlock(a, progress)),
+        _reveal(9, _aboutBlock(a)),
         const SizedBox(height: AppSpace.sm),
       ],
     );
@@ -419,94 +402,48 @@ class _SettingsScreenState extends State<SettingsScreen>
     (1.3, 'Extra'),
   ];
 
-  String _fontScaleLabel(double scale) {
-    for (final step in _fontSteps) {
-      if ((scale - step.$1).abs() < 0.01) return step.$2;
-    }
-    return 'Médio';
-  }
-
-  /// Modo de estudo: uma linha com o modo atual; a escolha abre na sheet.
+  /// Modo de estudo: o mesmo banner do mapa da trilha ([ModeBanner]).
   Widget _studyModeCard(ProgressService progress, AppearanceStyle a) {
-    final tint = _SettingsSection.jornada.tint;
-    final selectedId = progress.difficultyForTrail(_genesisTrailSlug);
-    final current = _difficulties
-        ?.where((m) => m.difficulty.id == selectedId)
-        .firstOrNull;
-    return GlassCard(
-      tint: tint,
-      glow: 0.25,
-      padding: const EdgeInsets.symmetric(
-        horizontal: AppSpace.lg,
-        vertical: AppSpace.sm,
-      ),
-      child: _navRow(
-        a,
-        'Modo de estudo',
-        current == null ? 'Gênesis 1–11' : '${current.label} · Gênesis 1–11',
-        glyph: CinematicGlyph.book,
-        accent: tint,
-        onTap: () => _openPickerSheet(
-          eyebrow: 'Modo de estudo',
-          title: 'Como você quer estudar?',
-          subtitle: 'Gênesis 1–11 · o primeiro caminho',
-          glyph: CinematicGlyph.book,
-          tint: tint,
-          body: (p) => _difficultyPicker(p),
-        ),
-      ),
+    return ModeBanner(
+      trailSlug: _genesisTrailSlug,
+      trailTitle: 'Gênesis 1–11 · o primeiro caminho',
+      missionSlugs: _genesisMissionSlugs,
     );
   }
 
-  /// Céu e tamanho do texto: linhas com o valor atual; cada uma abre sua sheet.
+  /// Céu e tamanho do texto direto no card — muda e já se vê, sem sheet.
   Widget _appearanceCard(ProgressService progress, AppearanceStyle a) {
     final tint = _SettingsSection.aparencia.tint;
-    final sky = progress.settings.appearanceMode;
     return _groupedCard(
       a,
       title: 'Aparência',
       tint: tint,
       children: [
-        _navRow(
-          a,
-          'Céu',
-          sky.label,
-          glyph: sky.glyph,
-          accent: tint,
-          onTap: () => _openPickerSheet(
-            eyebrow: 'Céu',
-            title: 'A luz da tela',
-            subtitle: 'Escolha um céu fixo ou deixe seguir o horário.',
-            glyph: CinematicGlyph.sun,
-            tint: tint,
-            body: (p) => _skyPicker(p),
-          ),
-        ),
-        const _SettingsDivider(compact: true),
-        _navRow(
-          a,
-          'Tamanho do texto',
-          _fontScaleLabel(progress.settings.fontScale),
-          glyph: CinematicGlyph.book,
-          accent: tint,
-          onTap: () => _openPickerSheet(
-            eyebrow: 'Leitura',
-            title: 'Tamanho do texto',
-            subtitle: 'Veja como fica o versículo antes de fechar.',
-            glyph: CinematicGlyph.book,
-            tint: tint,
-            body: (p) => Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                _fontScalePicker(p),
-                const SizedBox(height: AppSpace.md),
-                const _FontPreview(),
-              ],
-            ),
-          ),
-        ),
+        _fieldLabel(a, 'Céu'),
+        const SizedBox(height: AppSpace.xs),
+        _fieldHint(a, 'Um céu fixo, ou deixe seguir o horário do dia.'),
+        const SizedBox(height: AppSpace.md),
+        _skyPicker(progress),
+        const _SettingsDivider(),
+        _fieldLabel(a, 'Tamanho do texto'),
+        const SizedBox(height: AppSpace.xs),
+        _fieldHint(a, 'O versículo abaixo muda junto.'),
+        const SizedBox(height: AppSpace.md),
+        _fontScalePicker(progress),
+        const SizedBox(height: AppSpace.md),
+        const _FontPreview(),
       ],
+    );
+  }
+
+  /// Rótulo de grupo entre cards — organiza a tela em quatro blocos.
+  Widget _groupLabel(AppearanceStyle a, String text) {
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(4, AppSpace.xl, 4, AppSpace.sm),
+      child: Semantics(
+        header: true,
+        child: SectionLabel(text, color: a.textFaint),
+      ),
     );
   }
 
@@ -560,7 +497,9 @@ class _SettingsScreenState extends State<SettingsScreen>
     String value, {
     required CinematicGlyph glyph,
     required Color accent,
-    required VoidCallback onTap,
+    required VoidCallback? onTap,
+    Color? labelColor,
+    Widget? trailing,
   }) {
     return MergeSemantics(
       child: Semantics(
@@ -587,7 +526,10 @@ class _SettingsScreenState extends State<SettingsScreen>
                     children: [
                       Text(
                         label,
-                        style: AppTypography.title(size: 14, color: a.text),
+                        style: AppTypography.title(
+                          size: 14,
+                          color: labelColor ?? a.text,
+                        ),
                       ),
                       const SizedBox(height: 2),
                       Text(
@@ -600,12 +542,13 @@ class _SettingsScreenState extends State<SettingsScreen>
                     ],
                   ),
                 ),
-                CinematicIcon(
-                  glyph: CinematicGlyph.chevron,
-                  size: 14,
-                  accent: a.textFaint,
-                  framed: false,
-                ),
+                trailing ??
+                    CinematicIcon(
+                      glyph: CinematicGlyph.chevron,
+                      size: 14,
+                      accent: a.textFaint,
+                      framed: false,
+                    ),
               ],
             ),
           ),
@@ -635,89 +578,6 @@ class _SettingsScreenState extends State<SettingsScreen>
           ),
       ],
     );
-  }
-
-  Widget _difficultyPicker(ProgressService progress) {
-    final items = _difficulties;
-    final selectedId = progress.difficultyForTrail(_genesisTrailSlug);
-
-    if (items == null) {
-      return const Padding(
-        padding: EdgeInsets.symmetric(vertical: 12),
-        child: AppSpinner(),
-      );
-    }
-
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.stretch,
-      children: [
-        for (var i = 0; i < items.length; i++) ...[
-          if (i > 0) const SizedBox(height: 10),
-          Builder(
-            builder: (context) {
-              final meta = items[i];
-              final locked = !progress.isDifficultyUnlocked(
-                _genesisTrailSlug,
-                meta.difficulty,
-              );
-              final selected = selectedId == meta.difficulty.id && !locked;
-              final cleared = progress.hasClearedMode(
-                _genesisTrailSlug,
-                meta.difficulty.id,
-              );
-              return _ModeStation(
-                meta: meta,
-                locked: locked,
-                selected: selected,
-                cleared: cleared,
-                onTap: () => _onDifficultyTap(context, progress, meta, locked),
-              );
-            },
-          ),
-        ],
-      ],
-    );
-  }
-
-  void _onDifficultyTap(
-    BuildContext context,
-    ProgressService progress,
-    DifficultyMeta meta,
-    bool locked,
-  ) {
-    if (locked) {
-      ActHaptics.tap();
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(
-            'Conclua o modo anterior para liberar ${meta.label}.',
-            style: AppTypography.body(color: AppColors.textOnDark),
-          ),
-          backgroundColor: AppColors.nightElevated,
-        ),
-      );
-      return;
-    }
-    ActHaptics.tap();
-    final messenger = ScaffoldMessenger.of(context);
-    Navigator.of(context).maybePop();
-    progress.setSessionTrailDifficulty(
-      _genesisTrailSlug,
-      meta.difficulty.id,
-      missionSlugs: _genesisMissionSlugs,
-    );
-    final canonical = progress.canonicalDifficultyId(_genesisTrailSlug);
-    if (meta.difficulty.id != canonical) {
-      messenger.showSnackBar(
-        SnackBar(
-          content: Text(
-            'Modo ${meta.label} só nesta sessão. Ao fechar o app volta para ${TrailProgress.modeLabel(canonical)}.',
-            style: AppTypography.body(color: AppColors.textOnDark),
-          ),
-          backgroundColor: AppColors.nightElevated,
-        ),
-      );
-    }
   }
 
   Widget _skyPicker(ProgressService progress) {
@@ -1008,113 +868,150 @@ class _SettingsScreenState extends State<SettingsScreen>
     );
   }
 
-  Widget _dangerBlock(AppearanceStyle a, ProgressService progress) {
-    final backend = context.watch<BackendService>();
-    final canSignOut = backend.isSignedIn;
-    return GlassCard(
-      tint: AppColors.error,
-      glow: 0.15,
-      padding: const EdgeInsets.all(AppSpace.lg),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          _cardTitle('Zona de perigo', AppColors.error),
-          const SizedBox(height: AppSpace.sm),
-          Text(
-            canSignOut
-                ? 'Sair limpa este aparelho. Resetar apaga o caminho de vez.'
-                : 'Resetar apaga o caminho de vez. Não dá para desfazer.',
-            style: AppTypography.body(
-              size: 13,
-              height: 1.35,
-              color: a.textSecondary,
-            ),
-          ),
-          const SizedBox(height: AppSpace.lg),
-          Row(
-            children: [
-              if (canSignOut) ...[
-                Expanded(
-                  child: GhostCta(
-                    label: 'Sair da conta',
-                    leading: CinematicGlyph.back,
-                    danger: true,
-                    onTap: backend.isGoogleBusy
-                        ? null
-                        : () => _signOutGoogle(backend),
-                  ),
-                ),
-                const SizedBox(width: AppSpace.sm),
-              ],
-              Expanded(
-                child: GhostCta(
-                  label: 'Resetar',
-                  leading: CinematicGlyph.fall,
-                  danger: true,
-                  onTap: () => _confirmResetProgress(progress),
-                ),
-              ),
-            ],
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _backupBlock(
+  /// Backup, sair e resetar — um card, linhas curtas; o perigoso em
+  /// vermelho no fim e sempre com confirmação.
+  Widget _accountCard(
     AppearanceStyle a,
     SyncService sync,
     ProgressService progress,
   ) {
-    final meta = [
-      if (sync.lastSyncAt != null)
-        'Último backup · ${_shortDate(sync.lastSyncAt!)}',
-      if (sync.deviceId != null) 'Dispositivo · ${sync.deviceId}',
-    ];
+    final backend = context.watch<BackendService>();
+    final tint = _SettingsSection.conta.tint;
+    final last = sync.lastSyncAt;
     return _groupedCard(
       a,
       title: 'Conta',
-      subtitle: 'Exporte o caminho ou cole um backup da área de transferência.',
-      tint: _SettingsSection.conta.tint,
+      tint: tint,
       children: [
-        Row(
-          children: [
-            Expanded(
-              child: GhostCta(
-                label: 'Exportar',
-                leading: CinematicGlyph.share,
-                onTap: () => _exportProgress(progress, sync),
-              ),
-            ),
-            const SizedBox(width: AppSpace.sm),
-            Expanded(
-              child: GhostCta(
-                label: 'Importar',
-                leading: CinematicGlyph.copy,
-                onTap: () => _importProgress(progress, sync),
-              ),
-            ),
-          ],
+        _navRow(
+          a,
+          'Backup manual',
+          last == null
+              ? 'Exportar ou restaurar o seu caminho'
+              : 'Último · ${_shortDate(last)}',
+          glyph: CinematicGlyph.share,
+          accent: tint,
+          onTap: () => _openBackupSheet(sync),
         ),
-        if (meta.isNotEmpty) ...[
-          const SizedBox(height: AppSpace.md),
-          for (final line in meta)
-            Text(
-              line,
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-              style: AppTypography.body(
-                size: 11,
-                weight: FontWeight.w600,
-                color: a.textFaint,
-              ),
-            ),
+        const _SettingsDivider(compact: true),
+        if (backend.isSignedIn) ...[
+          _navRow(
+            a,
+            'Sair da conta',
+            'Limpa este aparelho · o caminho fica na nuvem',
+            glyph: CinematicGlyph.back,
+            accent: AppColors.error,
+            labelColor: AppColors.error,
+            onTap: backend.isGoogleBusy ? null : () => _signOutGoogle(backend),
+          ),
+          const _SettingsDivider(compact: true),
         ],
+        _navRow(
+          a,
+          'Resetar progresso',
+          'Apaga o caminho de vez · pede confirmação',
+          glyph: CinematicGlyph.fall,
+          accent: AppColors.error,
+          labelColor: AppColors.error,
+          onTap: () => _confirmResetProgress(progress),
+        ),
       ],
     );
   }
 
+  Future<void> _openBackupSheet(SyncService sync) {
+    return _openPickerSheet(
+      eyebrow: 'Conta',
+      title: 'Backup manual',
+      subtitle:
+          'Exporte o caminho como texto, ou copie um backup e toque em restaurar.',
+      glyph: CinematicGlyph.share,
+      tint: _SettingsSection.conta.tint,
+      body: (p) => Builder(
+        builder: (ctx) {
+          final a = Appearance.of(ctx);
+          final s = ctx.watch<SyncService>();
+          final meta = [
+            if (s.lastSyncAt != null)
+              'Último backup · ${_shortDate(s.lastSyncAt!)}',
+            if (s.deviceId != null) 'Dispositivo · ${s.deviceId}',
+          ];
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              CopperCta(
+                label: 'Exportar',
+                leading: CinematicGlyph.share,
+                trailing: null,
+                showGlow: false,
+                onTap: () => _exportProgress(p, sync),
+              ),
+              const SizedBox(height: AppSpace.sm),
+              GhostCta(
+                label: 'Restaurar da área de transferência',
+                leading: CinematicGlyph.copy,
+                expanded: true,
+                onTap: () => _importProgress(p, sync),
+              ),
+              if (meta.isNotEmpty) ...[
+                const SizedBox(height: AppSpace.md),
+                for (final line in meta)
+                  Text(
+                    line,
+                    textAlign: TextAlign.center,
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
+                    style: AppTypography.body(
+                      size: 11,
+                      weight: FontWeight.w600,
+                      color: a.textFaint,
+                    ),
+                  ),
+              ],
+            ],
+          );
+        },
+      ),
+    );
+  }
+
+  Future<void> _openCreditsSheet(List<String> credits) {
+    return _openPickerSheet(
+      eyebrow: 'Sobre',
+      title: 'Traduções e créditos',
+      subtitle: 'Textos bíblicos e ferramentas de estudo usados no Stway.',
+      glyph: CinematicGlyph.scroll,
+      tint: _SettingsSection.conta.tint,
+      body: (_) => Builder(
+        builder: (ctx) {
+          final a = Appearance.of(ctx);
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              for (final line in credits)
+                Padding(
+                  padding: const EdgeInsets.only(bottom: AppSpace.sm),
+                  child: Text(
+                    line,
+                    style: AppTypography.body(
+                      size: 13,
+                      height: 1.4,
+                      color: a.textSecondary,
+                    ),
+                  ),
+                ),
+            ],
+          );
+        },
+      ),
+    );
+  }
+
+  /// Sobre: versão, introdução e créditos em linhas; doação no fim.
   Widget _aboutBlock(AppearanceStyle a) {
+    final tint = _SettingsSection.conta.tint;
     final credits = [
       for (final t in BibleService.catalog.where((t) => t.available))
         if (t.attribution != null) '${t.shortName} — ${t.attribution}',
@@ -1124,43 +1021,31 @@ class _SettingsScreenState extends State<SettingsScreen>
       a,
       title: 'Sobre o Stway',
       subtitle: 'Aprenda a Bíblia em cenas curtas, no seu ritmo.',
-      tint: _SettingsSection.conta.tint,
+      tint: tint,
       children: [
-        InsetPanel(
-          padding: const EdgeInsets.fromLTRB(14, 6, 6, 6),
-          child: Row(
-            children: [
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    SectionLabel('Versão', color: a.textFaint),
-                    const SizedBox(height: 2),
-                    Text(
-                      _versionLabel ?? '…',
-                      style: AppTypography.title(size: 16, color: a.text),
-                    ),
-                  ],
-                ),
-              ),
-              OutlineCta(
-                label: _checkingUpdate ? 'Verificando…' : 'Verificar',
-                leading: CinematicGlyph.refresh,
-                expanded: false,
-                padding: const EdgeInsets.symmetric(
-                  vertical: AppSpace.md,
-                  horizontal: AppSpace.md,
-                ),
-                onTap: _checkingUpdate ? null : _checkForUpdates,
-              ),
-            ],
+        _navRow(
+          a,
+          'Versão',
+          _checkingUpdate ? 'Procurando atualização…' : (_versionLabel ?? '…'),
+          glyph: CinematicGlyph.refresh,
+          accent: tint,
+          onTap: _checkingUpdate ? null : _checkForUpdates,
+          trailing: Text(
+            _checkingUpdate ? '' : 'Verificar',
+            style: AppTypography.body(
+              size: 12,
+              weight: FontWeight.w800,
+              color: a.textSecondary,
+            ),
           ),
         ),
-        const SizedBox(height: AppSpace.md),
-        GhostCta(
-          label: 'Rever introdução',
-          leading: CinematicGlyph.scroll,
-          expanded: true,
+        const _SettingsDivider(compact: true),
+        _navRow(
+          a,
+          'Rever introdução',
+          'A apresentação do começo, de novo',
+          glyph: CinematicGlyph.scroll,
+          accent: tint,
           onTap: () async {
             if (!mounted) return;
             await Navigator.of(context).pushAndRemoveUntil(
@@ -1169,7 +1054,16 @@ class _SettingsScreenState extends State<SettingsScreen>
             );
           },
         ),
-        const SizedBox(height: AppSpace.sm),
+        const _SettingsDivider(compact: true),
+        _navRow(
+          a,
+          'Traduções e créditos',
+          'Textos bíblicos e estudo',
+          glyph: CinematicGlyph.book,
+          accent: tint,
+          onTap: () => _openCreditsSheet(credits),
+        ),
+        const SizedBox(height: AppSpace.lg),
         CopperCta(
           label: 'Ajude a continuar',
           leading: CinematicGlyph.gift,
@@ -1177,39 +1071,6 @@ class _SettingsScreenState extends State<SettingsScreen>
           dense: true,
           showGlow: false,
           onTap: openDonatePage,
-        ),
-        AnimatedSize(
-          duration: const Duration(milliseconds: 240),
-          curve: Curves.easeOutCubic,
-          alignment: Alignment.topCenter,
-          child: _creditsOpen
-              ? Padding(
-                  padding: const EdgeInsets.only(top: AppSpace.md),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
-                      for (final line in credits)
-                        Padding(
-                          padding: const EdgeInsets.only(bottom: AppSpace.sm),
-                          child: Text(
-                            line,
-                            style: AppTypography.body(
-                              size: 11,
-                              height: 1.35,
-                              color: a.textFaint,
-                            ),
-                          ),
-                        ),
-                    ],
-                  ),
-                )
-              : const SizedBox(width: double.infinity),
-        ),
-        _ExpandToggle(
-          open: _creditsOpen,
-          closedLabel: 'Traduções e créditos',
-          openLabel: 'Fechar créditos',
-          onTap: () => setState(() => _creditsOpen = !_creditsOpen),
         ),
       ],
     );
@@ -1313,61 +1174,6 @@ class _PlusStrip extends StatelessWidget {
                 )
               else
                 ListChevron(color: AppColors.accent.withValues(alpha: 0.9)),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-/// Rodapé de card que abre/fecha um trecho.
-class _ExpandToggle extends StatelessWidget {
-  final bool open;
-  final String closedLabel;
-  final String openLabel;
-  final VoidCallback onTap;
-
-  const _ExpandToggle({
-    required this.open,
-    required this.closedLabel,
-    required this.openLabel,
-    required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final ink = Appearance.of(context).textSecondary;
-    return Semantics(
-      button: true,
-      expanded: open,
-      label: open ? openLabel : closedLabel,
-      excludeSemantics: true,
-      child: InkWell(
-        onTap: () {
-          ActHaptics.tap();
-          onTap();
-        },
-        borderRadius: BorderRadius.circular(AppRadii.sm),
-        child: ConstrainedBox(
-          constraints: const BoxConstraints(minHeight: 44),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                open ? openLabel : closedLabel,
-                style: AppTypography.body(
-                  size: 13,
-                  weight: FontWeight.w800,
-                  color: ink,
-                ),
-              ),
-              const SizedBox(width: 4),
-              AnimatedRotation(
-                turns: open ? 0.5 : 0,
-                duration: const Duration(milliseconds: 220),
-                child: Icon(Icons.keyboard_arrow_down_rounded, color: ink),
-              ),
             ],
           ),
         ),
@@ -1897,145 +1703,6 @@ class _RhythmCaption extends StatelessWidget {
           ),
         ),
       ],
-    );
-  }
-}
-
-class _ModeStation extends StatelessWidget {
-  final DifficultyMeta meta;
-  final bool locked;
-  final bool selected;
-  final bool cleared;
-  final VoidCallback onTap;
-
-  const _ModeStation({
-    required this.meta,
-    required this.locked,
-    required this.selected,
-    required this.cleared,
-    required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final accent = DifficultyVisuals.accentFor(meta.difficulty);
-
-    return Semantics(
-      button: true,
-      selected: selected,
-      inMutuallyExclusiveGroup: true,
-      label: meta.label,
-      value: locked
-          ? 'Bloqueado'
-          : cleared
-          ? 'Concluído'
-          : null,
-      hint: locked ? 'Conclua o modo anterior' : null,
-      excludeSemantics: true,
-      child: GestureDetector(
-        onTap: onTap,
-        behavior: HitTestBehavior.opaque,
-        child: AnimatedContainer(
-          duration: const Duration(milliseconds: 240),
-          curve: Curves.easeOutCubic,
-          clipBehavior: Clip.antiAlias,
-          decoration: DifficultyVisuals.stationCard(
-            accent: accent,
-            baseFill: a.cardFillSoft,
-            lit: selected && !locked,
-            sealed: cleared,
-          ),
-          child: IntrinsicHeight(
-            child: Row(
-              children: [
-                AnimatedContainer(
-                  duration: const Duration(milliseconds: 240),
-                  width: 5,
-                  color: locked
-                      ? accent.withValues(alpha: 0.22)
-                      : selected
-                      ? accent
-                      : accent.withValues(alpha: 0.4),
-                ),
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.all(AppSpace.md),
-                    child: Row(
-                      children: [
-                        Opacity(
-                          opacity: locked ? 0.46 : 1,
-                          child: ModeEmblem(
-                            difficulty: meta.difficulty,
-                            size: 40,
-                            locked: locked,
-                            cleared: cleared,
-                            active: selected && !locked,
-                          ),
-                        ),
-                        const SizedBox(width: 12),
-                        Expanded(
-                          child: Opacity(
-                            opacity: locked ? 0.55 : 1,
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Text(
-                                  meta.label,
-                                  maxLines: 1,
-                                  overflow: TextOverflow.ellipsis,
-                                  style: AppTypography.title(
-                                    size: 16,
-                                    color: selected && !locked
-                                        ? DifficultyVisuals.onSky(accent)
-                                        : a.text,
-                                  ),
-                                ),
-                                if (meta.subtitle.isNotEmpty) ...[
-                                  const SizedBox(height: 3),
-                                  Text(
-                                    locked
-                                        ? 'Conclua o modo anterior'
-                                        : meta.subtitle,
-                                    maxLines: 1,
-                                    overflow: TextOverflow.ellipsis,
-                                    style: AppTypography.body(
-                                      size: 12,
-                                      color: selected
-                                          ? a.textSecondary
-                                          : a.textFaint,
-                                    ),
-                                  ),
-                                ],
-                              ],
-                            ),
-                          ),
-                        ),
-                        if (locked)
-                          CinematicIcon(
-                            glyph: CinematicGlyph.lock,
-                            size: 16,
-                            accent: a.textFaint,
-                            framed: false,
-                          )
-                        else if (selected)
-                          AlertDot(color: accent, glow: true)
-                        else if (cleared)
-                          CinematicIcon(
-                            glyph: CinematicGlyph.check,
-                            size: 16,
-                            accent: accent,
-                            framed: false,
-                          ),
-                      ],
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ),
-      ),
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
 /// Uma tradução bíblica conhecida pelo app.
@@ -138,6 +139,7 @@ class BibleService {
 
   String _translationId = defaultTranslationId;
   final Map<String, List<BibleBook>> _loaded = {};
+  final Map<String, Future<List<BibleBook>>> _loading = {};
 
   String get translationId => _translationId;
   BibleTranslation get current => byId(_translationId);
@@ -165,21 +167,20 @@ class BibleService {
     }
     final cached = _loaded[useId];
     if (cached != null) return cached;
-    final raw = await rootBundle.loadString(byId(useId).assetPath!);
-    final data = jsonDecode(raw) as List<dynamic>;
-    final list = [
-      for (final b in data)
-        BibleBook(
-          name: (b as Map<String, dynamic>)['name'] as String,
-          abbrev: b['abbrev'] as String,
-          chapters: [
-            for (final c in b['chapters'] as List<dynamic>)
-              [for (final v in c as List<dynamic>) v as String],
-          ],
-        ),
-    ];
-    _loaded[useId] = list;
-    return list;
+    // Uma leitura por tradução, mesmo com vários pedidos simultâneos.
+    return _loading[useId] ??= _decode(useId).then((list) {
+      _loaded[useId] = list;
+      return list;
+    }).whenComplete(() => _loading.remove(useId));
+  }
+
+  Future<List<BibleBook>> _decode(String id) async {
+    // rootBundle só no isolate principal; o parse (~4 MB) vai para outro.
+    final raw = await rootBundle.loadString(
+      byId(id).assetPath!,
+      cache: false,
+    );
+    return compute(_parseBooks, raw);
   }
 
   static String _norm(String s) => s
@@ -316,4 +317,19 @@ class BibleService {
     if (parts.isEmpty) return null;
     return parts.join(' ');
   }
+}
+
+List<BibleBook> _parseBooks(String raw) {
+  final data = jsonDecode(raw) as List<dynamic>;
+  return [
+    for (final b in data)
+      BibleBook(
+        name: (b as Map<String, dynamic>)['name'] as String,
+        abbrev: b['abbrev'] as String,
+        chapters: [
+          for (final c in b['chapters'] as List<dynamic>)
+            [for (final v in c as List<dynamic>) v as String],
+        ],
+      ),
+  ];
 }

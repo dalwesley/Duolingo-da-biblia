@@ -17,11 +17,63 @@ enum TrailDifficulty {
     };
   }
 
+  /// Modo anterior — o que precisa estar concluído para liberar este.
+  TrailDifficulty? get previous {
+    return switch (this) {
+      TrailDifficulty.semente => null,
+      TrailDifficulty.caminhada => TrailDifficulty.semente,
+      TrailDifficulty.profundezas => TrailDifficulty.caminhada,
+    };
+  }
+
   String get labelPt {
     return switch (this) {
       TrailDifficulty.semente => 'Observação',
       TrailDifficulty.caminhada => 'Compreensão',
       TrailDifficulty.profundezas => 'Interpretação',
+    };
+  }
+
+  /// Pergunta que o modo faz ao texto — mesma frase em todo o app.
+  String get taglinePt {
+    return switch (this) {
+      TrailDifficulty.semente => 'O que o texto diz',
+      TrailDifficulty.caminhada => 'O que o texto comunica',
+      TrailDifficulty.profundezas => 'O que o texto significa',
+    };
+  }
+
+  /// Número do modo na escada (I, II, III).
+  String get ordinalPt {
+    return switch (this) {
+      TrailDifficulty.semente => 'I',
+      TrailDifficulty.caminhada => 'II',
+      TrailDifficulty.profundezas => 'III',
+    };
+  }
+
+  /// O que você exercita neste modo — três verbos.
+  List<String> get skillsPt {
+    return switch (this) {
+      TrailDifficulty.semente => const ['Reconhecer', 'Identificar', 'Ordenar'],
+      TrailDifficulty.caminhada => const ['Relacionar', 'Comparar', 'Encadear'],
+      TrailDifficulty.profundezas => const [
+        'Interpretar',
+        'Sustentar',
+        'Aplicar',
+      ],
+    };
+  }
+
+  /// Descrição breve do modo (1 linha, ~60 chars).
+  String get blurbPt {
+    return switch (this) {
+      TrailDifficulty.semente =>
+        'Repare nas palavras, nos fatos e na ordem em que acontecem.',
+      TrailDifficulty.caminhada =>
+        'Ligue os fatos: causas, contexto e o fio da narrativa.',
+      TrailDifficulty.profundezas =>
+        'Busque o sentido: o que o texto revela de Deus e para você.',
     };
   }
 
@@ -60,15 +112,15 @@ class DifficultyMeta {
     const legacy = {'Semente', 'Rota', 'Caminhada', 'Profundezas'};
     final label =
         rawLabel == null || rawLabel.isEmpty || legacy.contains(rawLabel)
-            ? difficulty.labelPt
-            : rawLabel;
+        ? difficulty.labelPt
+        : rawLabel;
     return DifficultyMeta(
       difficulty: difficulty,
       label: label,
       subtitle: json['subtitle'] as String? ?? '',
       description: json['description'] as String? ?? '',
-      stepsMultiplier: ((json['stepsMultiplier'] ?? json['xpMultiplier']) as num)
-          .toDouble(),
+      stepsMultiplier:
+          ((json['stepsMultiplier'] ?? json['xpMultiplier']) as num).toDouble(),
       accent: json['accent'] as String? ?? '#D4A84B',
       icon: json['icon'] as String? ?? 'seed',
     );
@@ -158,10 +210,7 @@ class BankQuestion {
       if (raw is! Map) return null;
       final text = (raw['text'] ?? '').toString();
       if (text.trim().isEmpty) return null;
-      return ExercisePassage(
-        ref: (raw['ref'] ?? '').toString(),
-        text: text,
-      );
+      return ExercisePassage(ref: (raw['ref'] ?? '').toString(), text: text);
     }
 
     final order = <String>[];
@@ -174,10 +223,13 @@ class BankQuestion {
 
     return BankQuestion(
       id: id,
-      trailSlug: json['trail'] as String? ??
+      trailSlug:
+          json['trail'] as String? ??
           json['trailSlug'] as String? ??
           inferredTrail,
-      difficulty: TrailDifficulty.fromId(json['difficulty'] as String) ?? TrailDifficulty.semente,
+      difficulty:
+          TrailDifficulty.fromId(json['difficulty'] as String) ??
+          TrailDifficulty.semente,
       section: json['section'] as String? ?? '',
       question: json['question'] as String? ?? '',
       options: options,
@@ -187,7 +239,9 @@ class BankQuestion {
           ? wrongRaw.map((k, v) => MapEntry(k.toString(), v?.toString() ?? ''))
           : const {},
       verseRef: json['verseRef'] as String?,
-      reveal: json['reveal'] == null || json['reveal'] == 'null' ? null : json['reveal'] as String?,
+      reveal: json['reveal'] == null || json['reveal'] == 'null'
+          ? null
+          : json['reveal'] as String?,
       type: ExerciseType.fromId(json['type'] as String?),
       prompt: json['prompt'] as String?,
       cue: json['cue'] as String?,
@@ -202,7 +256,8 @@ class BankQuestion {
       beat: json['beat'] as String?,
       skill: json['skill'] as String?,
       learningObjective: json['learningObjective'] as String?,
-      evidence: (json['evidence'] as List?)
+      evidence:
+          (json['evidence'] as List?)
               ?.map((e) => e.toString())
               .where((s) => s.trim().isNotEmpty)
               .toList() ??

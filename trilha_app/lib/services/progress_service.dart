@@ -391,7 +391,10 @@ class ProgressService extends ChangeNotifier {
 
   /// Associa o espelho local à conta autenticada.
   void bindCacheUid(String? uid) {
-    _cacheUid = (uid != null && uid.isNotEmpty) ? uid : null;
+    final next = (uid != null && uid.isNotEmpty) ? uid : null;
+    // Espelho pendente pertence à conta anterior — não grava sob a nova.
+    if (next != _cacheUid) _cancelPersist();
+    _cacheUid = next;
   }
 
   Timer? _persistTimer;
@@ -409,10 +412,14 @@ class ProgressService extends ChangeNotifier {
   }
 
   /// Espelho em SharedPreferences — recupera se a nuvem falhar/atrasar.
-  Future<void> persistLocalCache() async {
+  void _cancelPersist() {
     _persistTimer?.cancel();
     _persistTimer = null;
     _persistDirty = false;
+  }
+
+  Future<void> persistLocalCache() async {
+    _cancelPersist();
     final uid = _cacheUid;
     if (uid == null || uid.isEmpty) return;
     final prefs = await SharedPreferences.getInstance();
@@ -443,6 +450,7 @@ class ProgressService extends ChangeNotifier {
   }
 
   Future<void> clearLocalCache() async {
+    _cancelPersist();
     final prefs = await SharedPreferences.getInstance();
     await prefs.remove(_keyProgressCache);
     await prefs.remove(_keyProgressCacheUid);
@@ -777,6 +785,7 @@ class ProgressService extends ChangeNotifier {
     hasSeenOnboarding = false;
     userName = 'Aprendiz';
     _cloudReadyToPersist = false;
+    _cancelPersist();
     _cacheUid = null;
     companionCodes = [];
     activeRoomCode = null;
@@ -1095,13 +1104,29 @@ class ProgressService extends ChangeNotifier {
   }
 
   /// Guarda onde a leitura parou — a aba Bíblia abre o "Continuar" aqui.
-  Future<void> setLastBibleSpot(String bookAbbrev, int chapter) async {
+  /// [notify] false: o leitor grava a cada capítulo sem acordar as abas;
+  /// avisa uma vez ao fechar ([commitBibleSpot]).
+  Future<void> setLastBibleSpot(
+    String bookAbbrev,
+    int chapter, {
+    bool notify = true,
+  }) async {
     final key = bibleChapterKey(bookAbbrev, chapter);
     if (lastBibleSpot == key) return;
     lastBibleSpot = key;
+    if (!notify) _bibleSpotDirty = true;
     final prefs = await SharedPreferences.getInstance();
     await prefs.setString(_keyLastBibleSpot, key);
-    notifyListeners();
+    if (notify) notifyListeners();
+  }
+
+  bool _bibleSpotDirty = false;
+
+  /// Seguro no dispose de uma rota: notifica depois do frame atual.
+  void commitBibleSpot() {
+    if (!_bibleSpotDirty) return;
+    _bibleSpotDirty = false;
+    scheduleMicrotask(notifyListeners);
   }
 
   ({String abbrev, int chapter})? get lastBibleSpotParts {
@@ -1319,7 +1344,9 @@ class ProgressService extends ChangeNotifier {
   }
 
   Future<void> _save({bool notify = true}) async {
-    await persistLocalCache();
+    // Espelho local adiado: uma ação chama _save várias vezes; um só
+    // jsonEncode depois do gesto. Pausa do app força o flush (MainShell).
+    _schedulePersist();
     if (notify) notifyListeners();
   }
 

@@ -214,26 +214,29 @@ class _GlowPortraitState extends State<_GlowPortrait>
 
   @override
   Widget build(BuildContext context) {
-    return AnimatedBuilder(
-      animation: _c,
-      builder: (context, child) {
-        final t = 0.5 + 0.5 * math.sin(_c.value * math.pi * 2);
-        // Só o brilho respira em volta — sem anel afastado, o retrato
-        // encosta na própria borda.
-        return Container(
-          decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            boxShadow: [
-              BoxShadow(
-                color: AppColors.accent.withValues(alpha: 0.18 + 0.16 * t),
-                blurRadius: 26 + 14 * t,
-              ),
-            ],
-          ),
-          child: child,
-        );
-      },
-      child: widget.child,
+    // Só a sombra anima: retrato em cache e o hero não repinta por frame.
+    return RepaintBoundary(
+      child: AnimatedBuilder(
+        animation: _c,
+        builder: (context, child) {
+          final t = 0.5 + 0.5 * math.sin(_c.value * math.pi * 2);
+          // Só o brilho respira em volta — sem anel afastado, o retrato
+          // encosta na própria borda.
+          return Container(
+            decoration: BoxDecoration(
+              shape: BoxShape.circle,
+              boxShadow: [
+                BoxShadow(
+                  color: AppColors.accent.withValues(alpha: 0.18 + 0.16 * t),
+                  blurRadius: 26 + 14 * t,
+                ),
+              ],
+            ),
+            child: child,
+          );
+        },
+        child: RepaintBoundary(child: widget.child),
+      ),
     );
   }
 }

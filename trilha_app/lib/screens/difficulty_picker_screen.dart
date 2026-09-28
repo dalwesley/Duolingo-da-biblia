@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show SystemUiOverlayStyle;
 import 'package:provider/provider.dart';
-import '../data/question_bank.dart';
 import '../data/trail_repository.dart';
 import '../models/difficulty.dart';
 import '../services/analytics_service.dart';
@@ -9,15 +8,13 @@ import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../utils/day_phase.dart';
-import '../utils/difficulty_visuals.dart';
-import '../widgets/act_feel.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
-import '../widgets/mode_emblem.dart';
+import '../widgets/mode_selector.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 
-/// Escolha cinematográfica de dificuldade ao iniciar a trilha de Gênesis.
+/// Primeira escolha do modo de estudo — mesma lista da sheet do mapa.
 class DifficultyPickerScreen extends StatefulWidget {
   final String trailSlug;
   final VoidCallback onSelected;
@@ -78,8 +75,8 @@ class DifficultyPickerScreen extends StatefulWidget {
 
 class _DifficultyPickerScreenState extends State<DifficultyPickerScreen>
     with SingleTickerProviderStateMixin {
-  List<DifficultyMeta>? _items;
-  TrailDifficulty? _hover;
+  List<String> _missionSlugs = const [];
+  String _trailTitle = '';
   late final AnimationController _enter;
 
   @override
@@ -99,53 +96,16 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen>
   }
 
   Future<void> _load() async {
-    final items = await QuestionBank.instance.getDifficulties();
-    if (mounted) setState(() => _items = items);
-  }
-
-  Future<void> _choose(DifficultyMeta meta) async {
-    final progress = context.read<ProgressService>();
-    if (!progress.isDifficultyUnlocked(widget.trailSlug, meta.difficulty)) {
-      ActHaptics.tap();
-      if (!mounted) return;
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(
-          content: Text(
-            'Conclua o modo anterior para liberar ${meta.label}.',
-            style: AppTypography.body(color: AppColors.textOnDark),
-          ),
-          backgroundColor: AppColors.nightElevated,
-        ),
-      );
-      return;
-    }
-    ActHaptics.confirm();
     final trail = await TrailRepository().getTrailBySlug(widget.trailSlug);
     if (!mounted) return;
-    if (!progress.hasDifficultyForTrail(widget.trailSlug)) {
-      await progress.setTrailDifficulty(
-        widget.trailSlug,
-        meta.difficulty.id,
-        missionSlugs: trail?.missionSlugs ?? const [],
-      );
-    } else {
-      progress.setSessionTrailDifficulty(
-        widget.trailSlug,
-        meta.difficulty.id,
-        missionSlugs: trail?.missionSlugs ?? const [],
-      );
-    }
-    AnalyticsService.instance.logDifficultyPick(
-      trailSlug: widget.trailSlug,
-      difficulty: meta.difficulty.id,
-    );
-    if (!mounted) return;
-    widget.onSelected();
+    setState(() {
+      _missionSlugs = trail?.missionSlugs ?? const [];
+      _trailTitle = trail?.title ?? '';
+    });
   }
 
   @override
   Widget build(BuildContext context) {
-    final items = _items;
     final mode = context.watch<ProgressService>().settings.appearanceMode;
     final appearance = AppearanceStyle.resolve(mode);
 
@@ -159,306 +119,83 @@ class _DifficultyPickerScreenState extends State<DifficultyPickerScreen>
           body: ImmersiveBackground(
             appearance: appearance,
             child: SafeArea(
-              child: Padding(
+              child: ListView(
                 padding: const EdgeInsets.fromLTRB(
-                  AppSpace.screen,
+                  0,
                   AppSpace.md,
-                  AppSpace.screen,
+                  0,
                   AppSpace.xxl,
                 ),
-                child: items == null
-                    ? const AppSpinner()
-                    : Column(
-                        crossAxisAlignment: CrossAxisAlignment.stretch,
-                        children: [
-                          TopBar(
-                            inline: true,
-                            immersive: true,
-                            dark: true,
-                            title: 'Antes de partir',
-                            onBack: () => Navigator.pop(context),
-                            leadingGlyph: CinematicGlyphResolver.forTrail(
-                              widget.trailSlug,
-                            ),
-                          ),
-                          const SizedBox(height: AppSpace.xl),
-                          FadeTransition(
-                            opacity: CurvedAnimation(
-                              parent: _enter,
-                              curve: const Interval(
-                                0,
-                                0.4,
-                                curve: Curves.easeOut,
-                              ),
-                            ),
-                            child: Column(
-                              children: [
-                                Text(
-                                  'Escolha o modo\nde dificuldade',
-                                  textAlign: TextAlign.center,
-                                  style: AppTypography.display(
-                                    size: 28,
-                                    height: 1.15,
-                                  ),
-                                ),
-                                const SizedBox(height: AppSpace.md),
-                                Text(
-                                  'Observação, Compreensão ou Interpretação —\noperações diferentes sobre o mesmo texto.\nConclua um modo para liberar o próximo.',
-                                  textAlign: TextAlign.center,
-                                  style: AppTypography.body(
-                                    size: 13,
-                                    height: 1.4,
-                                    color: appearance.textSecondary,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                          const SizedBox(height: AppSpace.xxl),
-                          Expanded(
-                            child: ListView.separated(
-                              itemCount: items.length,
-                              separatorBuilder: (_, _) =>
-                                  const SizedBox(height: AppSpace.section),
-                              itemBuilder: (context, i) {
-                                final meta = items[i];
-                                final progress = context
-                                    .watch<ProgressService>();
-                                final unlocked = progress.isDifficultyUnlocked(
-                                  widget.trailSlug,
-                                  meta.difficulty,
-                                );
-                                final cleared = progress.hasClearedMode(
-                                  widget.trailSlug,
-                                  meta.difficulty.id,
-                                );
-                                final currentId = progress.difficultyForTrail(
-                                  widget.trailSlug,
-                                );
-                                final start = 0.15 + i * 0.12;
-                                final curve = CurvedAnimation(
-                                  parent: _enter,
-                                  curve: Interval(
-                                    start,
-                                    (start + 0.45).clamp(0, 1),
-                                    curve: Curves.easeOutCubic,
-                                  ),
-                                );
-                                return FadeTransition(
-                                  opacity: curve,
-                                  child: SlideTransition(
-                                    position: Tween<Offset>(
-                                      begin: const Offset(0, 0.12),
-                                      end: Offset.zero,
-                                    ).animate(curve),
-                                    child: Opacity(
-                                      opacity: unlocked ? 1 : 0.48,
-                                      child: _DifficultyCard(
-                                        meta: meta,
-                                        selected: _hover == meta.difficulty,
-                                        current:
-                                            currentId == meta.difficulty.id,
-                                        locked: !unlocked,
-                                        cleared: cleared,
-                                        onTap: () => _choose(meta),
-                                        onHighlight: () {
-                                          if (unlocked) {
-                                            setState(
-                                              () => _hover = meta.difficulty,
-                                            );
-                                          }
-                                        },
-                                      ),
-                                    ),
-                                  ),
-                                );
-                              },
-                            ),
-                          ),
-                        ],
-                      ),
-              ),
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class _DifficultyCard extends StatelessWidget {
-  final DifficultyMeta meta;
-  final bool selected;
-  final bool current;
-  final bool locked;
-  final bool cleared;
-  final VoidCallback onTap;
-  final VoidCallback onHighlight;
-
-  const _DifficultyCard({
-    required this.meta,
-    required this.selected,
-    required this.current,
-    required this.locked,
-    required this.cleared,
-    required this.onTap,
-    required this.onHighlight,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final a = Appearance.of(context);
-    final color = DifficultyVisuals.accentFor(meta.difficulty);
-    final onSky = DifficultyVisuals.onSky(color);
-    final lit = (current || selected) && !locked;
-    final xpLabel = meta.stepsMultiplier == 1
-        ? 'Passos padrão'
-        : '+${((meta.stepsMultiplier - 1) * 100).round()}% passos';
-    final titleColor = locked ? a.textSecondary : onSky;
-    final railColor = locked ? color.withValues(alpha: 0.35) : onSky;
-
-    return Material(
-      color: Colors.transparent,
-      child: InkWell(
-        onTap: onTap,
-        onHighlightChanged: (v) {
-          if (v) onHighlight();
-        },
-        borderRadius: BorderRadius.circular(AppRadii.xl),
-        child: AnimatedContainer(
-          duration: const Duration(milliseconds: 220),
-          clipBehavior: Clip.antiAlias,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(AppRadii.xl),
-            gradient: LinearGradient(
-              begin: Alignment.centerLeft,
-              end: Alignment.centerRight,
-              colors: locked
-                  ? [
-                      DifficultyVisuals.chipFill(color, alpha: 0.10),
-                      Colors.white.withValues(alpha: 0.03),
-                    ]
-                  : [
-                      DifficultyVisuals.chipFill(
-                        color,
-                        alpha: lit ? 0.52 : 0.36,
-                      ),
-                      DifficultyVisuals.chipFill(
-                        color,
-                        alpha: lit ? 0.22 : 0.14,
-                      ),
-                      Colors.white.withValues(alpha: 0.04),
-                    ],
-              stops: locked ? null : const [0, 0.42, 1],
-            ),
-            border: Border.all(
-              color: (locked ? color : onSky).withValues(
-                alpha: locked ? 0.28 : (lit ? 1 : 0.78),
-              ),
-              width: lit ? 2.4 : 1.8,
-            ),
-          ),
-          child: Stack(
-            children: [
-              Positioned(
-                left: 0,
-                top: 0,
-                bottom: 0,
-                width: 8,
-                child: ColoredBox(color: railColor),
-              ),
-              Padding(
-                padding: const EdgeInsets.fromLTRB(
-                  AppSpace.xl + 6,
-                  AppSpace.xl,
-                  AppSpace.xl,
-                  AppSpace.xl,
-                ),
-                child: Row(
-                  children: [
-                    ModeEmblem(
-                      difficulty: meta.difficulty,
-                      size: 52,
-                      cleared: cleared,
-                      locked: locked,
-                      active: current && !locked,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: AppSpace.screen,
                     ),
-                    const SizedBox(width: AppSpace.md),
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Wrap(
-                            spacing: AppSpace.sm,
-                            runSpacing: 4,
-                            crossAxisAlignment: WrapCrossAlignment.center,
-                            children: [
-                              Text(
-                                meta.label,
-                                style: AppTypography.title(
-                                  size: 20,
-                                  color: titleColor,
-                                ),
-                              ),
-                              if (current && !locked)
-                                SoftBadge(
-                                  text: 'Modo atual',
-                                  accent: color,
-                                  solid: true,
-                                ),
-                              if (cleared)
-                                SoftBadge(text: 'Concluído', accent: color),
-                              if (locked)
-                                Text(
-                                  'Bloqueado',
-                                  style: AppTypography.label(
-                                    size: 10,
-                                    color: a.textFaint,
-                                    letterSpacing: 0.4,
-                                  ),
-                                )
-                              else
-                                SoftBadge(
-                                  text: xpLabel,
-                                  accent: color,
-                                  textColor: color,
-                                  bordered: false,
-                                ),
-                            ],
-                          ),
-                          const SizedBox(height: AppSpace.xs),
+                    child: TopBar(
+                      inline: true,
+                      immersive: true,
+                      dark: true,
+                      title: 'Antes de partir',
+                      onBack: () => Navigator.pop(context),
+                      leadingGlyph: CinematicGlyphResolver.forTrail(
+                        widget.trailSlug,
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: AppSpace.xl),
+                  FadeTransition(
+                    opacity: CurvedAnimation(
+                      parent: _enter,
+                      curve: const Interval(0, 0.4, curve: Curves.easeOut),
+                    ),
+                    child: Column(
+                      children: [
+                        SectionLabel(
+                          'Modo de estudo',
+                          color: AppColors.accent,
+                          textAlign: TextAlign.center,
+                        ),
+                        const SizedBox(height: AppSpace.sm),
+                        Text(
+                          'Como você quer\nestudar?',
+                          textAlign: TextAlign.center,
+                          style: AppTypography.display(size: 28, height: 1.15),
+                        ),
+                        if (_trailTitle.isNotEmpty) ...[
+                          const SizedBox(height: AppSpace.md),
                           Text(
-                            locked ? 'Conclua o modo anterior' : meta.subtitle,
-                            style: AppTypography.title(
-                              size: 12,
-                              color: locked ? a.textFaint : color,
-                            ),
-                          ),
-                          const SizedBox(height: AppSpace.xs),
-                          Text(
-                            locked
-                                ? 'Termine a trilha no modo atual para liberar.'
-                                : meta.description,
+                            _trailTitle,
+                            textAlign: TextAlign.center,
                             style: AppTypography.body(
                               size: 13,
-                              height: 1.35,
-                              color: locked ? a.textFaint : a.text,
+                              height: 1.4,
+                              color: appearance.textSecondary,
                             ),
                           ),
                         ],
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: AppSpace.xxl),
+                  FadeTransition(
+                    opacity: CurvedAnimation(
+                      parent: _enter,
+                      curve: const Interval(
+                        0.2,
+                        0.8,
+                        curve: Curves.easeOutCubic,
                       ),
                     ),
-                    const SizedBox(width: AppSpace.sm),
-                    CinematicIcon(
-                      glyph: locked ? CinematicGlyph.lock : CinematicGlyph.rise,
-                      size: 20,
-                      accent: locked ? color : onSky,
-                      framed: false,
+                    child: ModeCarousel(
+                      trailSlug: widget.trailSlug,
+                      missionSlugs: _missionSlugs,
+                      height: 420,
+                      onCommitted: (_) => widget.onSelected(),
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
-            ],
+            ),
           ),
         ),
       ),

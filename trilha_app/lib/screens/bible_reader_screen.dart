@@ -70,7 +70,11 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
   /// Versículos pedidos pela referência (só no capítulo de origem).
   ({int bookIndex, int chapter, int start, int end})? _highlight;
 
-  bool _chromeVisible = true;
+  /// Chrome (topo/dock) em notifier: esconder ao rolar não reconstrói o
+  /// PageView nem os versículos.
+  final _chrome = ValueNotifier<bool>(true);
+  ProgressService? _progress;
+  bool get _chromeVisible => _chrome.value;
   final _scrollProgress = ValueNotifier<double>(0);
 
   @override
@@ -82,8 +86,10 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
   @override
   void dispose() {
     TtsService.instance.stop();
+    _progress?.commitBibleSpot();
     _pages?.dispose();
     _scrollProgress.dispose();
+    _chrome.dispose();
     super.dispose();
   }
 
@@ -169,8 +175,8 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
       _bookIndex = bookIndex;
       _chapter = c;
       _pages = PageController(initialPage: c - 1);
-      _chromeVisible = true;
     });
+    _chrome.value = true;
     _scrollProgress.value = 0;
     if (old != null) {
       WidgetsBinding.instance.addPostFrameCallback((_) => old.dispose());
@@ -180,7 +186,10 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
 
   void _onChapterShown() {
     final progress = context.read<ProgressService>();
-    unawaited(progress.setLastBibleSpot(_book.abbrev, _chapter));
+    _progress = progress;
+    unawaited(
+      progress.setLastBibleSpot(_book.abbrev, _chapter, notify: false),
+    );
     final tts = TtsService.instance;
     if (tts.sequenceKey != null && tts.sequenceKey != _chapterKey) {
       unawaited(tts.stop());
@@ -189,10 +198,8 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
 
   void _onPageChanged(int page) {
     ActHaptics.tick();
-    setState(() {
-      _chapter = page + 1;
-      _chromeVisible = true;
-    });
+    setState(() => _chapter = page + 1);
+    _chrome.value = true;
     _scrollProgress.value = 0;
     _onChapterShown();
   }
@@ -235,13 +242,13 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
     if (n is ScrollUpdateNotification && n.dragDetails != null) {
       final dy = n.scrollDelta ?? 0;
       if (dy > 4 && m.pixels > 80 && _chromeVisible) {
-        setState(() => _chromeVisible = false);
+        _chrome.value = false;
       } else if (dy < -4 && !_chromeVisible) {
-        setState(() => _chromeVisible = true);
+        _chrome.value = true;
       }
     }
     if (m.pixels <= 0 && !_chromeVisible) {
-      setState(() => _chromeVisible = true);
+      _chrome.value = true;
     }
     return false;
   }
@@ -267,7 +274,7 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
       return;
     }
     ActHaptics.light();
-    setState(() => _chromeVisible = true);
+    _chrome.value = true;
     unawaited(tts.speakSequence(verses, key: _chapterKey));
   }
 
@@ -408,10 +415,14 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
             left: 0,
             right: 0,
             top: 0,
-            child: AnimatedSlide(
-              offset: _chromeVisible ? Offset.zero : const Offset(0, -1.1),
-              duration: chromeDuration,
-              curve: Curves.easeOutCubic,
+            child: ValueListenableBuilder<bool>(
+              valueListenable: _chrome,
+              builder: (context, visible, child) => AnimatedSlide(
+                offset: visible ? Offset.zero : const Offset(0, -1.1),
+                duration: chromeDuration,
+                curve: Curves.easeOutCubic,
+                child: child,
+              ),
               child: Padding(
                 padding: EdgeInsets.fromLTRB(
                   AppSpace.screen,
@@ -465,10 +476,14 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
             left: 0,
             right: 0,
             bottom: 0,
-            child: AnimatedSlide(
-              offset: _chromeVisible ? Offset.zero : const Offset(0, 1.4),
-              duration: chromeDuration,
-              curve: Curves.easeOutCubic,
+            child: ValueListenableBuilder<bool>(
+              valueListenable: _chrome,
+              builder: (context, visible, child) => AnimatedSlide(
+                offset: visible ? Offset.zero : const Offset(0, 1.4),
+                duration: chromeDuration,
+                curve: Curves.easeOutCubic,
+                child: child,
+              ),
               child: _ReaderDock(
                 reading: reading,
                 chapterKey: _chapterKey,

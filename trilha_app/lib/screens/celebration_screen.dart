@@ -242,10 +242,8 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     _leaving = true;
     Navigator.of(context).pushReplacement(
       MaterialPageRoute(
-        builder: (_) => LessonScreen(
-          missionSlug: widget.missionSlug,
-          skipTrailLock: true,
-        ),
+        builder: (_) =>
+            LessonScreen(missionSlug: widget.missionSlug, skipTrailLock: true),
       ),
     );
   }
@@ -633,27 +631,30 @@ class _CelebrationScreenState extends State<CelebrationScreen>
             child: Stack(
               fit: StackFit.expand,
               children: [
-                // Luz cinematográfica — bloom + raios suaves
-                AnimatedBuilder(
-                  animation: Listenable.merge([_pulse, _heroGlow]),
-                  builder: (context, _) {
-                    final breath =
-                        (math.sin(_pulse.value * math.pi * 2) + 1) / 2;
-                    final reveal = _heroGlow.value;
-                    return IgnorePointer(
-                      child: CustomPaint(
-                        painter: _CelebrationAtmospherePainter(
-                          accent: heroAccent,
-                          gold: AppColors.accent,
-                          breath: breath,
-                          reveal: reveal,
-                          perfect: widget.perfect,
-                          focusY: 0.22,
+                // Luz cinematográfica — bloom + raios suaves. Camada própria:
+                // respirar a luz não repinta o conteúdo por cima.
+                RepaintBoundary(
+                  child: AnimatedBuilder(
+                    animation: Listenable.merge([_pulse, _heroGlow]),
+                    builder: (context, _) {
+                      final breath =
+                          (math.sin(_pulse.value * math.pi * 2) + 1) / 2;
+                      final reveal = _heroGlow.value;
+                      return IgnorePointer(
+                        child: CustomPaint(
+                          painter: _CelebrationAtmospherePainter(
+                            accent: heroAccent,
+                            gold: AppColors.accent,
+                            breath: breath,
+                            reveal: reveal,
+                            perfect: widget.perfect,
+                            focusY: 0.22,
+                          ),
+                          size: Size.infinite,
                         ),
-                        size: Size.infinite,
-                      ),
-                    );
-                  },
+                      );
+                    },
+                  ),
                 ),
                 ConfettiOverlay(active: !widget.failed, cinematic: true),
                 SafeArea(
@@ -809,9 +810,8 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                       const SizedBox(height: 10),
                                       GhostCta(
                                         label: 'Voltar ao mapa',
-                                        onTap: () => _leaveCelebration(
-                                          toTrailMap: true,
-                                        ),
+                                        onTap: () =>
+                                            _leaveCelebration(toTrailMap: true),
                                       ),
                                     ] else if (_hook != null &&
                                         progress.missionsToday <
@@ -968,23 +968,27 @@ class _HeroBeat extends StatelessWidget {
       children: [
         ScaleTransition(
           scale: scale,
-          child: AnimatedBuilder(
-            animation: pulse,
-            builder: (context, child) {
-              final breath = (math.sin(pulse.value * math.pi * 2) + 1) / 2;
-              return _CelebrationEmblem(
-                accent: accent,
-                perfect: perfect,
-                breath: breath,
-                size: emblemSize,
-                child: child!,
-              );
-            },
-            child: CinematicIcon(
-              glyph: glyph,
-              size: iconSize,
-              accent: perfect ? AppColors.inkOnAccent : Colors.white,
-              framed: false,
+          child: RepaintBoundary(
+            child: AnimatedBuilder(
+              animation: pulse,
+              builder: (context, child) {
+                final breath = (math.sin(pulse.value * math.pi * 2) + 1) / 2;
+                return _CelebrationEmblem(
+                  accent: accent,
+                  perfect: perfect,
+                  breath: breath,
+                  size: emblemSize,
+                  child: child!,
+                );
+              },
+              child: RepaintBoundary(
+                child: CinematicIcon(
+                  glyph: glyph,
+                  size: iconSize,
+                  accent: perfect ? AppColors.inkOnAccent : Colors.white,
+                  framed: false,
+                ),
+              ),
             ),
           ),
         ),
@@ -1860,7 +1864,8 @@ class _StatCard extends StatelessWidget {
               ),
             ],
           ),
-          child: child,
+          // Só a sombra respira; o cartão fica numa camada em cache.
+          child: RepaintBoundary(child: child),
         );
       },
       child: GlassCard(

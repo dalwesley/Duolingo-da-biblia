@@ -51,9 +51,32 @@ class MainShell extends StatefulWidget {
 
 class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
   int _index = 0;
+
+  /// Abas já montadas. A aberta monta na hora; as demais entram uma por vez
+  /// depois que a Home assenta — a 1ª abertura não constrói as cinco juntas.
+  final Set<int> _built = {};
+  Timer? _warmTimer;
+  static const _warmOrder = [1, 3, 2, 4];
+
+  void _warmNextTab() {
+    _warmTimer = null;
+    if (!mounted) return;
+    final next = _warmOrder.where((i) => !_built.contains(i)).firstOrNull;
+    if (next == null) return;
+    setState(() => _built.add(next));
+    _warmTimer = Timer(const Duration(milliseconds: 350), _warmNextTab);
+  }
+
+  Widget _lazyTab(int index, Widget Function() build) {
+    if (!_built.contains(index)) return const SizedBox.shrink();
+    return TickerMode(enabled: _index == index, child: build());
+  }
+
   final _repo = TrailRepository();
   final _frost = FrostController();
   Timer? _phaseTimer;
+  Timer? _presenceTimer;
+  bool _presenceSyncing = false;
   AppearanceLook? _lastLook;
   DayPhase? _lastClockPhase;
 
@@ -95,6 +118,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       _cornerRef!.addListener(_onCornerChanged);
       _flushCloudSave();
       _syncReminders();
+      _warmTimer = Timer(const Duration(milliseconds: 1200), _warmNextTab);
       NotificationService.instance.onAction = _handleReminderAction;
       NotificationService.instance.onRemoteToken = (token) {
         context.read<BackendService>().saveFcmToken(token);
@@ -202,7 +226,18 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       league: context.read<LeagueService>(),
     );
     if (progress.walkedToday) {
-      unawaited(_syncCompanionAndCelebrateReferral(progress));
+      // Uma ação dispara vários notify; junta num só sync (Firestore +
+      // refresh da companhia) em vez de um por notify.
+      _presenceTimer?.cancel();
+      _presenceTimer = Timer(const Duration(milliseconds: 1500), () {
+        if (!mounted || _presenceSyncing) return;
+        _presenceSyncing = true;
+        unawaited(
+          _syncCompanionAndCelebrateReferral(
+            progress,
+          ).whenComplete(() => _presenceSyncing = false),
+        );
+      });
     }
     HomeWidgetService.syncFromProgress(progress);
     if (context.read<BackendService>().isSignedIn &&
@@ -364,6 +399,8 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
     _phaseTimer?.cancel();
+    _presenceTimer?.cancel();
+    _warmTimer?.cancel();
     _frost.dispose();
     _progressRef?.removeListener(_onProgressChanged);
     InviteDeepLinkService.instance.removeListener(_onInviteDeepLink);
@@ -442,6 +479,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     final photoUrl = context.select((BackendService b) => b.userPhotoUrl);
     final appearance = AppearanceStyle.resolve(mode);
     _lastLook = appearance.look;
+    _built.add(_index);
 
     Widget tabBar(int index) => _tabTopBar(
       index: index,
@@ -460,9 +498,9 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
           child: IndexedStack(
             index: _index,
             children: [
-              TickerMode(
-                enabled: _index == 0,
-                child: HomeScreen(
+              _lazyTab(
+                0,
+                () => HomeScreen(
                   repo: _repo,
                   onOpenMission: _openMission,
                   onOpenTrilhas: _goToTrilhas,
@@ -477,21 +515,18 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
                   }),
                 ),
               ),
-              TickerMode(
-                enabled: _index == 1,
-                child: TrilhasScreen(
+              _lazyTab(
+                1,
+                () => TrilhasScreen(
                   repo: _repo,
                   topBar: tabBar(1),
                   portalsActive: _index == 1,
                 ),
               ),
-              TickerMode(
-                enabled: _index == 2,
-                child: BibleScreen(topBar: tabBar(2)),
-              ),
-              TickerMode(
-                enabled: _index == 3,
-                child: LeagueScreen(
+              _lazyTab(2, () => BibleScreen(topBar: tabBar(2))),
+              _lazyTab(
+                3,
+                () => LeagueScreen(
                   topBar: tabBar(3),
                   active: _index == 3,
                   onOpenOwnProfile: _openProfile,
@@ -502,9 +537,9 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
                   }),
                 ),
               ),
-              TickerMode(
-                enabled: _index == 4,
-                child: SettingsScreen(
+              _lazyTab(
+                4,
+                () => SettingsScreen(
                   topBar: tabBar(4),
                   onOpenProfile: _openProfile,
                 ),
@@ -513,17 +548,21 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
           ),
         ),
       ),
-      bottomNavigationBar: MainBottomNav(
-        alerts: {if (JuntosInbox.pending(context) > 0) 3},
-        currentIndex: _index,
-        onTap: (i) => setState(() {
-          if (_index == 2 && i != 2) unawaited(TtsService.instance.stop());
-          _index = i;
-          _frost.value = 0;
-        }),
-        immersive: true,
-        dark: appearance.onDark,
-        appearance: appearance,
+      // Builder isola os watch de Juntos: uma novidade só redesenha a barra,
+      // não as cinco abas.
+      bottomNavigationBar: Builder(
+        builder: (context) => MainBottomNav(
+          alerts: {if (JuntosInbox.pending(context) > 0) 3},
+          currentIndex: _index,
+          onTap: (i) => setState(() {
+            if (_index == 2 && i != 2) unawaited(TtsService.instance.stop());
+            _index = i;
+            _frost.value = 0;
+          }),
+          immersive: true,
+          dark: appearance.onDark,
+          appearance: appearance,
+        ),
       ),
     );
   }
@@ -548,6 +587,18 @@ class _TabFadeState extends State<_TabFade>
     duration: const Duration(milliseconds: 240),
     value: 1,
   );
+  late final Animation<double> _t = CurvedAnimation(
+    parent: _c,
+    curve: Curves.easeOutCubic,
+  );
+  late final Animation<double> _opacity = Tween<double>(
+    begin: 0.35,
+    end: 1,
+  ).animate(_t);
+  late final Animation<Offset> _lift = Tween<Offset>(
+    begin: const Offset(0, 10),
+    end: Offset.zero,
+  ).animate(_t);
 
   @override
   void didUpdateWidget(covariant _TabFade old) {
@@ -566,19 +617,15 @@ class _TabFadeState extends State<_TabFade>
 
   @override
   Widget build(BuildContext context) {
-    return AnimatedBuilder(
-      animation: _c,
-      builder: (context, child) {
-        final t = Curves.easeOutCubic.transform(_c.value);
-        return Opacity(
-          opacity: 0.35 + 0.65 * t,
-          child: Transform.translate(
-            offset: Offset(0, 10 * (1 - t)),
-            child: child,
-          ),
-        );
-      },
-      child: widget.child,
+    // FadeTransition não reconstrói as abas a cada frame do fade.
+    return FadeTransition(
+      opacity: _opacity,
+      child: AnimatedBuilder(
+        animation: _lift,
+        builder: (context, child) =>
+            Transform.translate(offset: _lift.value, child: child),
+        child: widget.child,
+      ),
     );
   }
 }

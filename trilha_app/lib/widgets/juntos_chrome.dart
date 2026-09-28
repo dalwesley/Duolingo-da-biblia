@@ -309,8 +309,8 @@ class _BondThreadState extends State<BondThread>
 
   void _sync() {
     final ends = widget.ends;
-    final flows = ends != null &&
-        (ends.$1 == BondEnd.lit || ends.$2 == BondEnd.lit);
+    final flows =
+        ends != null && (ends.$1 == BondEnd.lit || ends.$2 == BondEnd.lit);
     if (!flows) {
       _flow.stop();
     } else if (!_flow.isAnimating) {
@@ -400,11 +400,7 @@ class _BondPainter extends CustomPainter {
         const gap = 5.0;
         var x = from;
         while (x < to) {
-          canvas.drawLine(
-            Offset(x, y),
-            Offset(math.min(x + dash, to), y),
-            dim,
-          );
+          canvas.drawLine(Offset(x, y), Offset(math.min(x + dash, to), y), dim);
           x += dash + gap;
         }
         return;
@@ -508,32 +504,38 @@ class _JuntosHaloState extends State<JuntosHalo>
     return SizedBox(
       width: ring,
       height: ring,
-      child: AnimatedBuilder(
-        animation: _pulse,
-        builder: (context, child) {
-          final t = widget.lit ? Curves.easeInOut.transform(_pulse.value) : 0.0;
-          return DecoratedBox(
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              border: Border.all(
-                color: widget.lit
-                    ? widget.color.withValues(alpha: 0.55 + 0.35 * t)
-                    : Colors.white.withValues(alpha: 0.1),
-                width: 1.6,
+      child: RepaintBoundary(
+        child: AnimatedBuilder(
+          animation: _pulse,
+          builder: (context, child) {
+            final t = widget.lit
+                ? Curves.easeInOut.transform(_pulse.value)
+                : 0.0;
+            return DecoratedBox(
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                border: Border.all(
+                  color: widget.lit
+                      ? widget.color.withValues(alpha: 0.55 + 0.35 * t)
+                      : Colors.white.withValues(alpha: 0.1),
+                  width: 1.6,
+                ),
+                boxShadow: widget.lit
+                    ? [
+                        BoxShadow(
+                          color: widget.color.withValues(
+                            alpha: 0.18 + 0.22 * t,
+                          ),
+                          blurRadius: 10 + 8 * t,
+                        ),
+                      ]
+                    : null,
               ),
-              boxShadow: widget.lit
-                  ? [
-                      BoxShadow(
-                        color: widget.color.withValues(alpha: 0.18 + 0.22 * t),
-                        blurRadius: 10 + 8 * t,
-                      ),
-                    ]
-                  : null,
-            ),
-            child: child,
-          );
-        },
-        child: Center(child: widget.child),
+              child: child,
+            );
+          },
+          child: RepaintBoundary(child: Center(child: widget.child)),
+        ),
       ),
     );
   }

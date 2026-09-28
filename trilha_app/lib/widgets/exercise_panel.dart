@@ -1248,6 +1248,7 @@ class _BlankGap extends StatelessWidget {
       textDirection: TextDirection.ltr,
     )..layout();
     final minW = math.min(260.0, math.max(72.0, probe.width + 8));
+    probe.dispose();
 
     if (has && state == _OptState.wrong) {
       return ConstrainedBox(
@@ -1300,13 +1301,19 @@ class _BlankGap extends StatelessWidget {
       ),
     );
 
-    return AnimatedBuilder(
-      animation: pulse,
-      builder: (context, child) {
-        final t = Curves.easeInOut.transform(pulse.value);
-        return Opacity(opacity: 0.72 + t * 0.28, child: child);
-      },
-      child: slot,
+    // FadeTransition + camada própria: a lacuna pulsa sem repintar o
+    // versículo inteiro a cada frame.
+    return RepaintBoundary(
+      child: FadeTransition(
+        // drive() não prende listener no controller (CurvedAnimation prenderia
+        // um por build).
+        opacity: pulse.drive(
+          CurveTween(
+            curve: Curves.easeInOut,
+          ).chain(Tween<double>(begin: 0.72, end: 1)),
+        ),
+        child: slot,
+      ),
     );
   }
 }

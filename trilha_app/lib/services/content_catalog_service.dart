@@ -271,6 +271,13 @@ class ContentCatalogService {
     ]);
   }
 
+  // Cache do banco passa de MB: parse/serialização fora do isolate da UI.
+  static Future<Object?> _decodeJson(String raw) =>
+      compute<String, Object?>(jsonDecode, raw);
+
+  static Future<String> _encodeJson(Object? value) =>
+      compute<Object?, String>(jsonEncode, value);
+
   Future<void> _loadFromPrefs() async {
     try {
       final prefs = await SharedPreferences.getInstance();
@@ -281,7 +288,7 @@ class ContentCatalogService {
 
       final trailsRaw = await _readCacheFile(_fileTrails);
       if (trailsRaw != null && trailsRaw.isNotEmpty) {
-        final list = jsonDecode(trailsRaw) as List;
+        final list = await _decodeJson(trailsRaw) as List;
         _trails = list
             .map((e) => Trail.fromJson(Map<String, dynamic>.from(e as Map)))
             .toList()
@@ -291,7 +298,7 @@ class ContentCatalogService {
 
       final bankRaw = await _readCacheFile(_fileBank);
       if (bankRaw != null && bankRaw.isNotEmpty) {
-        final data = jsonDecode(bankRaw) as Map<String, dynamic>;
+        final data = await _decodeJson(bankRaw) as Map<String, dynamic>;
         _difficulties = (data['difficulties'] as List? ?? [])
             .map((e) => DifficultyMeta.fromJson(Map<String, dynamic>.from(e as Map)))
             .toList();
@@ -310,14 +317,14 @@ class ContentCatalogService {
       }
       final studiesRaw = await _readCacheFile(_fileStudies);
       if (studiesRaw != null && studiesRaw.isNotEmpty) {
-        final map = jsonDecode(studiesRaw) as Map<String, dynamic>;
+        final map = await _decodeJson(studiesRaw) as Map<String, dynamic>;
         _studies = map.map(
           (k, v) => MapEntry(k, Map<String, dynamic>.from(v as Map)),
         );
       }
       final versesRaw = await _readCacheFile(_fileVerses);
       if (versesRaw != null && versesRaw.isNotEmpty) {
-        final map = jsonDecode(versesRaw) as Map<String, dynamic>;
+        final map = await _decodeJson(versesRaw) as Map<String, dynamic>;
         _verses = map.map((k, v) => MapEntry(k, v as String));
       }
     } catch (e) {
@@ -496,7 +503,7 @@ class ContentCatalogService {
       final prefs = await SharedPreferences.getInstance();
       if (_version != null) await prefs.setInt(_prefsVersionKey, _version!);
       if (_trails != null) {
-        final encoded = jsonEncode(
+        final encoded = await _encodeJson(
           _trails!
               .map(
                 (t) => {
@@ -559,7 +566,7 @@ class ContentCatalogService {
       if (_bankQuestions != null) {
         await _writeCacheFile(
           _fileBank,
-          jsonEncode({
+          await _encodeJson({
             'difficulties': (_difficulties ?? [])
                 .map(
                   (d) => {
@@ -578,10 +585,10 @@ class ContentCatalogService {
         );
       }
       if (_studies != null) {
-        await _writeCacheFile(_fileStudies, jsonEncode(_studies));
+        await _writeCacheFile(_fileStudies, await _encodeJson(_studies));
       }
       if (_verses != null) {
-        await _writeCacheFile(_fileVerses, jsonEncode(_verses));
+        await _writeCacheFile(_fileVerses, await _encodeJson(_verses));
       }
     } catch (e) {
       debugPrint('ContentCatalog cache persist failed: $e');

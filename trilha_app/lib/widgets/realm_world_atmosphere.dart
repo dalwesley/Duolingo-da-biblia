@@ -48,8 +48,7 @@ class _RealmWorldAtmosphereState extends State<RealmWorldAtmosphere>
   @override
   void didUpdateWidget(covariant RealmWorldAtmosphere oldWidget) {
     super.didUpdateWidget(oldWidget);
-    if (oldWidget.realm != widget.realm ||
-        oldWidget.locked != widget.locked) {
+    if (oldWidget.realm != widget.realm || oldWidget.locked != widget.locked) {
       _motes = _buildMotes();
     }
     if (widget.animate && !_drift.isAnimating) {
@@ -65,8 +64,8 @@ class _RealmWorldAtmosphereState extends State<RealmWorldAtmosphere>
     final count = widget.locked
         ? 10
         : widget.featured
-            ? 42
-            : 28;
+        ? 42
+        : 28;
     return List.generate(count, (i) {
       return _Mote(
         x: rng.nextDouble(),
@@ -87,22 +86,25 @@ class _RealmWorldAtmosphereState extends State<RealmWorldAtmosphere>
 
   @override
   Widget build(BuildContext context) {
-    return IgnorePointer(
-      child: AnimatedBuilder(
-        animation: _drift,
-        builder: (context, _) {
-          return CustomPaint(
-            painter: _RealmWorldPainter(
-              realm: widget.realm,
-              locked: widget.locked,
-              featured: widget.featured,
-              terrain: widget.terrain,
-              t: widget.animate ? _drift.value : 0.12,
-              motes: _motes,
-            ),
-            size: Size.infinite,
-          );
-        },
+    // Camada própria: a deriva a 60fps não repinta o pôster por cima.
+    return RepaintBoundary(
+      child: IgnorePointer(
+        child: AnimatedBuilder(
+          animation: _drift,
+          builder: (context, _) {
+            return CustomPaint(
+              painter: _RealmWorldPainter(
+                realm: widget.realm,
+                locked: widget.locked,
+                featured: widget.featured,
+                terrain: widget.terrain,
+                t: widget.animate ? _drift.value : 0.12,
+                motes: _motes,
+              ),
+              size: Size.infinite,
+            );
+          },
+        ),
       ),
     );
   }
@@ -146,37 +148,37 @@ class _RealmWorldPainter extends CustomPainter {
   _Sky _sky() {
     return switch (realm) {
       TrailRealm.antigoTestamento => const _Sky(
-          zenith: Color(0xFF0A1220),
-          mid: Color(0xFF1A2A3C),
-          fire: Color(0xFFC47A28),
-          earth: Color(0xFF0E0A08),
-          star: Color(0xFFFFE08A),
-          sun: Color(0xFFF7BB01),
-        ),
+        zenith: Color(0xFF0A1220),
+        mid: Color(0xFF1A2A3C),
+        fire: Color(0xFFC47A28),
+        earth: Color(0xFF0E0A08),
+        star: Color(0xFFFFE08A),
+        sun: Color(0xFFF7BB01),
+      ),
       TrailRealm.novoTestamento => const _Sky(
-          zenith: Color(0xFF140818),
-          mid: Color(0xFF3A1A28),
-          fire: Color(0xFFFF8A6A),
-          earth: Color(0xFF12080C),
-          star: Color(0xFFFFC4B0),
-          sun: Color(0xFFFF9468),
-        ),
+        zenith: Color(0xFF140818),
+        mid: Color(0xFF3A1A28),
+        fire: Color(0xFFFF8A6A),
+        earth: Color(0xFF12080C),
+        star: Color(0xFFFFC4B0),
+        sun: Color(0xFFFF9468),
+      ),
       TrailRealm.vidaCrista => const _Sky(
-          zenith: Color(0xFF061418),
-          mid: Color(0xFF0E2E34),
-          fire: Color(0xFF2EE6C5),
-          earth: Color(0xFF07120E),
-          star: Color(0xFFB8EAF8),
-          sun: Color(0xFF3DCFBE),
-        ),
+        zenith: Color(0xFF061418),
+        mid: Color(0xFF0E2E34),
+        fire: Color(0xFF2EE6C5),
+        earth: Color(0xFF07120E),
+        star: Color(0xFFB8EAF8),
+        sun: Color(0xFF3DCFBE),
+      ),
       TrailRealm.teologia => const _Sky(
-          zenith: Color(0xFF0A1018),
-          mid: Color(0xFF1A2838),
-          fire: Color(0xFF7EB0D8),
-          earth: Color(0xFF080C12),
-          star: Color(0xFFC8D4E0),
-          sun: Color(0xFF7EB0D8),
-        ),
+        zenith: Color(0xFF0A1018),
+        mid: Color(0xFF1A2838),
+        fire: Color(0xFF7EB0D8),
+        earth: Color(0xFF080C12),
+        star: Color(0xFFC8D4E0),
+        sun: Color(0xFF7EB0D8),
+      ),
     };
   }
 
@@ -220,7 +222,12 @@ class _RealmWorldPainter extends CustomPainter {
     }
   }
 
-  void _paintAstro(Canvas canvas, Size size, _Sky sky, Color Function(Color) c) {
+  void _paintAstro(
+    Canvas canvas,
+    Size size,
+    _Sky sky,
+    Color Function(Color) c,
+  ) {
     final featuredBoost = featured ? 1.12 : 1.0;
     final breath = 0.92 + math.sin(t * math.pi * 2) * 0.08;
     final cx = switch (realm) {
@@ -235,7 +242,8 @@ class _RealmWorldPainter extends CustomPainter {
       TrailRealm.vidaCrista => size.height * 0.22,
       TrailRealm.teologia => size.height * 0.24,
     };
-    final r = size.shortestSide * (featured ? 0.22 : 0.16) * breath * featuredBoost;
+    final r =
+        size.shortestSide * (featured ? 0.22 : 0.16) * breath * featuredBoost;
 
     final halo = Paint()
       ..shader = ui.Gradient.radial(
@@ -281,10 +289,7 @@ class _RealmWorldPainter extends CustomPainter {
     _ridge(far, w, h, 0.62, 0.08, t * 0.4, 2.1);
     far.lineTo(w, h);
     far.close();
-    canvas.drawPath(
-      far,
-      Paint()..color = c(sky.mid).withValues(alpha: 0.55),
-    );
+    canvas.drawPath(far, Paint()..color = c(sky.mid).withValues(alpha: 0.55));
 
     final near = Path()
       ..moveTo(0, h)
@@ -298,10 +303,7 @@ class _RealmWorldPainter extends CustomPainter {
         ..shader = LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
-          colors: [
-            c(sky.earth).withValues(alpha: 0.55),
-            c(sky.earth),
-          ],
+          colors: [c(sky.earth).withValues(alpha: 0.55), c(sky.earth)],
         ).createShader(Rect.fromLTWH(0, h * 0.55, w, h * 0.45)),
     );
   }
@@ -388,10 +390,7 @@ class _RealmWorldPainter extends CustomPainter {
         ..shader = RadialGradient(
           center: Alignment.center,
           radius: 1.05,
-          colors: [
-            Colors.transparent,
-            Colors.black.withValues(alpha: 0.28),
-          ],
+          colors: [Colors.transparent, Colors.black.withValues(alpha: 0.28)],
         ).createShader(Offset.zero & size),
     );
   }
