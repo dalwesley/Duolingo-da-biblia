@@ -103,6 +103,50 @@ Por isso:
 
 Não inventar senha para conta Google-only e colar no `.env` — não vai autenticar o `seed_content.mjs`. Use `make seed_full`.
 
+### Checklist — seed seguro com i18n (pt/en/es)
+
+As traduções EN/ES **não** moram no Firestore. Elas vão no **app** (`trilha_app/assets/l10n/content/`). O Firebase continua sendo a fonte **PT**.
+
+#### ✅ Pode / deve
+
+1. Confirmar login CLI no projeto certo:
+   ```bash
+   firebase login
+   firebase use  # deve ser trilha-biblia (ou o alias do monorepo)
+   firebase projects:list
+   ```
+2. Seed PT a partir dos JSON de sempre (`trilha_app/assets/data/`):
+   ```bash
+   # Da raiz do monorepo
+   make seed_full          # trilhas + banco + estudos + catalog.version
+   # ou só um pack do banco:
+   make seed SEED_ONLY=ot
+   ```
+3. Publicar o **app** (APK/AAB/TestFlight) com os overlays em `assets/l10n/content/` — é isso que ativa EN/ES.
+4. Conferir no app: Ajustes → idioma **Português** ainda mostra PT; English/Español trocam UI + overlays.
+
+#### ❌ Não faça
+
+1. **Não** cole EN/ES por cima dos campos PT no Firestore (`title`, `question`, `prompt`, etc.) — usuário em PT passa a ver outro idioma.
+2. **Não** renomeie `id` / `slug` de pergunta ou missão só por causa de tradução — o overlay casa por id; muda o id e some a tradução.
+3. **Não** apague `passageText` / `verseRef` / tokens do versículo — ficam em PT de propósito.
+4. **Não** rode purge/rebuild do pipeline (`npm run pipeline:v2`) “só para traduzir” — isso reescreve o banco pedagógico.
+5. **Não** suba `questions_en.json` / `trails_en.json` como se fossem `*_questions.json` no Importar do painel.
+6. **Não** use `seed_content.mjs` (email/senha) com conta Google-only — use `make seed_full` / `seed:cli`.
+
+#### Ordem recomendada (release com idioma)
+
+1. Seed PT estável (`make seed_full`) se o currículo mudou.
+2. Build do app com overlays (`flutter build …`).
+3. Testar: pt → en → es → pt de novo (trilhas, uma cena, uma pergunta V/F e uma choice).
+4. Só então publicar na loja.
+
+#### Se algo der errado
+
+- PT sumiu / virou inglês no Firestore: restaurar seed PT (`make seed_full`) — overlays no app **não** alteram a nuvem.
+- EN/ES sem tradução mas UI traduzida: conferir se o binário inclui `assets/l10n/content/` e se o locale não é `pt`.
+- Overlay “não pega”: ids no Firestore diferentes dos do JSON local — alinhar seed com `assets/data/`.
+
 ### Auditoria de rankings (Caravana)
 
 As regras do Firestore validam que o placar em qualquer coleção de ranking (`leagues/`, `overallPlayers/`, `monthlyLeagues/`, `rooms/*/members/`) seja exatamente o mesmo valor gravado em `users/{uid}`. Isso impede que um cliente infle o próprio placar diretamente.
