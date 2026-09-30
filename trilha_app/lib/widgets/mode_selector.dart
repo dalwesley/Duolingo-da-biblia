@@ -336,20 +336,23 @@ class _ModeCarouselState extends State<ModeCarousel>
     );
     final firstPick = !progress.hasDifficultyForTrail(widget.trailSlug);
 
-    return AnimatedBuilder(
-      animation: Listenable.merge([_pages, _nudge]),
-      builder: (context, _) {
-        final offset = _offset;
-        final focused = offset.round().clamp(0, _modes.length - 1);
-        final status = statuses[focused];
+    // CTA e nota seguem a página focada (onPageChanged vira na metade do
+    // arrasto, igual a offset.round()); só portais e pontos acompanham o
+    // dedo frame a frame.
+    final status = statuses[_page.clamp(0, _modes.length - 1)];
 
-        return Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            SizedBox(
-              height: widget.height,
-              child: PageView.builder(
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        SizedBox(
+          height: widget.height,
+          child: AnimatedBuilder(
+            animation: Listenable.merge([_pages, _nudge]),
+            builder: (context, _) {
+              final offset = _offset;
+              final focused = offset.round().clamp(0, _modes.length - 1);
+              return PageView.builder(
                 controller: _pages,
                 itemCount: _modes.length,
                 clipBehavior: Clip.none,
@@ -391,43 +394,47 @@ class _ModeCarouselState extends State<ModeCarousel>
                     ),
                   );
                 },
-              ),
-            ),
-            const SizedBox(height: AppSpace.lg),
-            _ModeDots(offset: offset, statuses: statuses, onTap: _goTo),
-            const SizedBox(height: AppSpace.lg),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: AppSpace.xl),
-              child: status.locked
-                  ? GhostCta(
-                      label: _ctaLabel(status, firstPick),
-                      leading: CinematicGlyph.lock,
-                      expanded: true,
-                      matchCopper: true,
-                      onTap: _busy ? null : () => _confirm(status),
-                    )
-                  : CopperCta(
-                      label: _ctaLabel(status, firstPick),
-                      busy: _busy,
-                      onTap: () => _confirm(status),
-                    ),
-            ),
-            const SizedBox(height: AppSpace.md),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: AppSpace.xl),
-              child: Text(
-                ModeSwitch.footnote(progress, widget.trailSlug),
-                textAlign: TextAlign.center,
-                style: AppTypography.label(
-                  size: 11,
-                  color: Appearance.of(context).textFaint,
-                  letterSpacing: 0.2,
+              );
+            },
+          ),
+        ),
+        const SizedBox(height: AppSpace.lg),
+        AnimatedBuilder(
+          animation: _pages,
+          builder: (context, _) =>
+              _ModeDots(offset: _offset, statuses: statuses, onTap: _goTo),
+        ),
+        const SizedBox(height: AppSpace.lg),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: AppSpace.xl),
+          child: status.locked
+              ? GhostCta(
+                  label: _ctaLabel(status, firstPick),
+                  leading: CinematicGlyph.lock,
+                  expanded: true,
+                  matchCopper: true,
+                  onTap: _busy ? null : () => _confirm(status),
+                )
+              : CopperCta(
+                  label: _ctaLabel(status, firstPick),
+                  busy: _busy,
+                  onTap: () => _confirm(status),
                 ),
-              ),
+        ),
+        const SizedBox(height: AppSpace.md),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: AppSpace.xl),
+          child: Text(
+            ModeSwitch.footnote(progress, widget.trailSlug),
+            textAlign: TextAlign.center,
+            style: AppTypography.label(
+              size: 11,
+              color: Appearance.of(context).textFaint,
+              letterSpacing: 0.2,
             ),
-          ],
-        );
-      },
+          ),
+        ),
+      ],
     );
   }
 }

@@ -177,20 +177,21 @@ class _SettingsScreenState extends State<SettingsScreen>
   }
 
   Widget _reveal(int index, Widget child) {
-    if (_entrance.isCompleted) return child;
+    // Mesma árvore antes e depois da entrada: devolver o filho sem o
+    // wrapper no fim remontava o card inteiro (estado e animações dele).
+    // drive() não prende listener no controller (CurvedAnimation prenderia
+    // um por build).
     final start = (0.08 * index).clamp(0.0, 0.6);
     final end = (start + 0.36).clamp(0.0, 1.0);
-    final curve = CurvedAnimation(
-      parent: _entrance,
-      curve: Interval(start, end, curve: Curves.easeOutCubic),
+    final curve = _entrance.drive(
+      CurveTween(curve: Interval(start, end, curve: Curves.easeOutCubic)),
     );
     return FadeTransition(
       opacity: curve,
       child: SlideTransition(
-        position: Tween<Offset>(
-          begin: const Offset(0, 0.035),
-          end: Offset.zero,
-        ).animate(curve),
+        position: curve.drive(
+          Tween<Offset>(begin: const Offset(0, 0.035), end: Offset.zero),
+        ),
         child: child,
       ),
     );

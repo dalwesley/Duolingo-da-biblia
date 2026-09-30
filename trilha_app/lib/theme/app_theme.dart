@@ -71,6 +71,18 @@ class AppTypeScale {
 /// 11pt; rótulos em caixa alta (label) nunca abaixo de 10pt.
 /// Todo tamanho passa por [AppTypeScale.snap].
 class AppTypography {
+  /// Cada GoogleFonts.x() refaz variante, 2× copyWith e um Future de
+  /// carga — e há centenas de chamadas por build. O estilo é imutável:
+  /// guarda por argumentos. Teto só contra cores animadas (lerp por frame).
+  static final Map<Record, TextStyle> _cache = {};
+
+  static TextStyle _cached(Record key, TextStyle Function() make) {
+    final hit = _cache[key];
+    if (hit != null) return hit;
+    if (_cache.length >= 1024) _cache.clear();
+    return _cache[key] = make();
+  }
+
   /// Headlines de UI / jogo — geometric game.
   static TextStyle display({
     double size = 28,
@@ -79,14 +91,22 @@ class AppTypography {
     double height = 1.1,
     FontStyle fontStyle = FontStyle.normal,
     bool exact = false,
-  }) => GoogleFonts.exo2(
-    fontSize: exact ? size : AppTypeScale.snap(size, AppTypeScale.display),
-    fontWeight: weight,
-    color: color,
-    height: height,
-    fontStyle: fontStyle,
-    letterSpacing: -0.3,
-  );
+  }) {
+    final fontSize = exact
+        ? size
+        : AppTypeScale.snap(size, AppTypeScale.display);
+    return _cached(
+      (#display, fontSize, weight, color, height, fontStyle),
+      () => GoogleFonts.exo2(
+        fontSize: fontSize,
+        fontWeight: weight,
+        color: color,
+        height: height,
+        fontStyle: fontStyle,
+        letterSpacing: -0.3,
+      ),
+    );
+  }
 
   /// Versículo / passagem — só leitura bíblica e citação de estudo.
   static TextStyle verse({
@@ -96,13 +116,19 @@ class AppTypography {
     double height = 1.5,
     FontStyle fontStyle = FontStyle.normal,
     bool exact = false,
-  }) => GoogleFonts.cormorantGaramond(
-    fontSize: exact ? size : AppTypeScale.snap(size, AppTypeScale.verse),
-    fontWeight: weight,
-    color: color,
-    height: height,
-    fontStyle: fontStyle,
-  );
+  }) {
+    final fontSize = exact ? size : AppTypeScale.snap(size, AppTypeScale.verse);
+    return _cached(
+      (#verse, fontSize, weight, color, height, fontStyle),
+      () => GoogleFonts.cormorantGaramond(
+        fontSize: fontSize,
+        fontWeight: weight,
+        color: color,
+        height: height,
+        fontStyle: fontStyle,
+      ),
+    );
+  }
 
   /// Lema hebraico / grego — léxico Strong e palavras originais.
   static TextStyle original({
@@ -112,19 +138,21 @@ class AppTypography {
     Color color = AppColors.textOnDark,
     double height = 1.35,
   }) {
-    if (hebrew) {
-      return GoogleFonts.notoSerifHebrew(
-        fontSize: size,
-        fontWeight: weight,
-        color: color,
-        height: height,
-      );
-    }
-    return GoogleFonts.ebGaramond(
-      fontSize: size,
-      fontWeight: weight,
-      color: color,
-      height: height,
+    return _cached(
+      (#original, hebrew, size, weight, color, height),
+      () => hebrew
+          ? GoogleFonts.notoSerifHebrew(
+              fontSize: size,
+              fontWeight: weight,
+              color: color,
+              height: height,
+            )
+          : GoogleFonts.ebGaramond(
+              fontSize: size,
+              fontWeight: weight,
+              color: color,
+              height: height,
+            ),
     );
   }
 
@@ -134,13 +162,19 @@ class AppTypography {
     Color color = AppColors.textOnDark,
     double height = 1.2,
     bool exact = false,
-  }) => GoogleFonts.exo2(
-    fontSize: exact ? size : AppTypeScale.snap(size, AppTypeScale.title),
-    fontWeight: weight,
-    color: color,
-    height: height,
-    letterSpacing: -0.2,
-  );
+  }) {
+    final fontSize = exact ? size : AppTypeScale.snap(size, AppTypeScale.title);
+    return _cached(
+      (#title, fontSize, weight, color, height),
+      () => GoogleFonts.exo2(
+        fontSize: fontSize,
+        fontWeight: weight,
+        color: color,
+        height: height,
+        letterSpacing: -0.2,
+      ),
+    );
+  }
 
   static TextStyle body({
     double size = 14,
@@ -148,12 +182,18 @@ class AppTypography {
     Color color = AppColors.textOnDark,
     double height = 1.4,
     bool exact = false,
-  }) => GoogleFonts.nunito(
-    fontSize: exact ? size : AppTypeScale.snap(size, AppTypeScale.body),
-    fontWeight: weight,
-    color: color,
-    height: height,
-  );
+  }) {
+    final fontSize = exact ? size : AppTypeScale.snap(size, AppTypeScale.body);
+    return _cached(
+      (#body, fontSize, weight, color, height),
+      () => GoogleFonts.nunito(
+        fontSize: fontSize,
+        fontWeight: weight,
+        color: color,
+        height: height,
+      ),
+    );
+  }
 
   static TextStyle label({
     double size = 11,
@@ -161,23 +201,35 @@ class AppTypography {
     Color color = AppRoles.chrome,
     double letterSpacing = 1.6,
     bool exact = false,
-  }) => GoogleFonts.exo2(
-    fontSize: exact ? size : AppTypeScale.snap(size, AppTypeScale.label),
-    fontWeight: weight,
-    color: color,
-    letterSpacing: letterSpacing,
-  );
+  }) {
+    final fontSize = exact ? size : AppTypeScale.snap(size, AppTypeScale.label);
+    return _cached(
+      (#label, fontSize, weight, color, letterSpacing),
+      () => GoogleFonts.exo2(
+        fontSize: fontSize,
+        fontWeight: weight,
+        color: color,
+        letterSpacing: letterSpacing,
+      ),
+    );
+  }
 
   static TextStyle cta({
     double size = 14,
     Color color = AppColors.inkOnAccent,
     bool exact = false,
-  }) => GoogleFonts.exo2(
-    fontSize: exact ? size : AppTypeScale.snap(size, AppTypeScale.cta),
-    fontWeight: FontWeight.w900,
-    color: color,
-    letterSpacing: 1.0,
-  );
+  }) {
+    final fontSize = exact ? size : AppTypeScale.snap(size, AppTypeScale.cta);
+    return _cached(
+      (#cta, fontSize, color),
+      () => GoogleFonts.exo2(
+        fontSize: fontSize,
+        fontWeight: FontWeight.w900,
+        color: color,
+        letterSpacing: 1.0,
+      ),
+    );
+  }
 }
 
 /// Raios padronizados — painéis de jogo (menos “blob”, mais HUD).

@@ -317,20 +317,21 @@ class _LeagueScreenState extends State<LeagueScreen>
   }
 
   Widget _reveal(int index, Widget child) {
-    if (_enter.isCompleted) return child;
+    // Mesma árvore antes e depois da entrada: devolver o filho sem o
+    // wrapper no fim remontava o card inteiro (estado e animações dele).
+    // drive() não prende listener no controller (CurvedAnimation prenderia
+    // um por build).
     final start = (0.08 * index).clamp(0.0, 0.6);
     final end = (start + 0.4).clamp(0.0, 1.0);
-    final curve = CurvedAnimation(
-      parent: _enter,
-      curve: Interval(start, end, curve: Curves.easeOutCubic),
+    final curve = _enter.drive(
+      CurveTween(curve: Interval(start, end, curve: Curves.easeOutCubic)),
     );
     return FadeTransition(
       opacity: curve,
       child: SlideTransition(
-        position: Tween<Offset>(
-          begin: const Offset(0, 0.06),
-          end: Offset.zero,
-        ).animate(curve),
+        position: curve.drive(
+          Tween<Offset>(begin: const Offset(0, 0.06), end: Offset.zero),
+        ),
         child: child,
       ),
     );
@@ -432,7 +433,17 @@ class _LeagueScreenState extends State<LeagueScreen>
   }
 
   List<Widget> _buildLeague(BuildContext context) {
-    final progress = context.watch<ProgressService>();
+    // Só o que a classificação mostra do próprio peregrino.
+    context.select(
+      (ProgressService p) => (
+        p.userName,
+        p.weeklySteps,
+        p.currentMonthSteps,
+        p.lastPlayedDate,
+        p.settings.portraitStyle,
+      ),
+    );
+    final progress = context.read<ProgressService>();
     final league = context.watch<LeagueService>();
 
     if (!league.isLoaded) {
@@ -454,7 +465,8 @@ class _LeagueScreenState extends State<LeagueScreen>
     }
 
     final today = DateTime.now().toIso8601String().substring(0, 10);
-    final backend = context.watch<BackendService>();
+    context.select((BackendService b) => (b.uid, b.userPhotoUrl));
+    final backend = context.read<BackendService>();
     final pane = _caravanPane.clamp(0, 1);
     final weekly = pane == 1;
     final children = <Widget>[
@@ -571,7 +583,8 @@ class _LeagueScreenState extends State<LeagueScreen>
   List<Widget> _buildCompanions(BuildContext context) {
     final companions = context.watch<CompanionService>();
     final backend = context.watch<BackendService>();
-    final progress = context.watch<ProgressService>();
+    context.select((ProgressService p) => p.userName);
+    final progress = context.read<ProgressService>();
     final corners = context.watch<CornerService>();
     final pane = _companhiaPane.clamp(0, 1);
 
@@ -888,7 +901,8 @@ class _LeagueScreenState extends State<LeagueScreen>
   List<Widget> _buildRooms(BuildContext context) {
     final rooms = context.watch<RoomService>();
     final backend = context.watch<BackendService>();
-    final progress = context.watch<ProgressService>();
+    context.select((ProgressService p) => (p.userName, p.walkedToday));
+    final progress = context.read<ProgressService>();
 
     if (!rooms.isLoaded) {
       return [
@@ -2984,7 +2998,9 @@ class _StandingMedalLine extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final progress = context.watch<ProgressService>();
+    // O cache é por uid (não muda com o progresso): ler basta — watch
+    // reconstruía cada linha da classificação a cada resposta.
+    final progress = context.read<ProgressService>();
     final backend = context.read<BackendService>();
     final uid = entry.isUser ? (backend.uid ?? '') : (entry.uid ?? '');
 

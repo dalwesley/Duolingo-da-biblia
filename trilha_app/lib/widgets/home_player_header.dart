@@ -35,23 +35,39 @@ class HomePlayerHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final progress = context.watch<ProgressService>();
-    final backend = context.watch<BackendService>();
+    // Só os campos do cabeçalho: cada resposta notifica o serviço inteiro.
+    final p = context.select(
+      (ProgressService p) => (
+        goal: p.settings.dailyGoal,
+        today: p.missionsToday,
+        atRisk: p.isStreakAtRisk,
+        goalMet: p.dailyGoalMet,
+        userName: p.userName,
+        streak: p.streak,
+        freezeUsed: p.streakFreezeUsedThisWeek,
+        freezeAvailable: p.streakFreezeAvailable,
+        portraitStyle: p.settings.portraitStyle,
+        steps: p.steps,
+      ),
+    );
+    final b = context.select(
+      (BackendService b) => (photoUrl: b.userPhotoUrl, uid: b.uid),
+    );
     final a = Appearance.of(context);
-    final goal = progress.settings.dailyGoal;
-    final done = progress.missionsToday.clamp(0, goal);
-    final atRisk = progress.isStreakAtRisk;
-    final goalMet = progress.dailyGoalMet;
+    final goal = p.goal;
+    final done = p.today.clamp(0, goal);
+    final atRisk = p.atRisk;
+    final goalMet = p.goalMet;
     final left = (goal - done).clamp(0, goal);
     final l10n = context.l10n;
-    final name = progress.userName.trim().isEmpty
+    final name = p.userName.trim().isEmpty
         ? l10n.homeDefaultName
-        : progress.userName.trim().split(' ').first;
+        : p.userName.trim().split(' ').first;
     final moment = LiturgicalCalendar.momentFor();
     final liturgy = LiturgicalCalendar.accentOf(moment.season);
-    final streak = progress.streak;
-    final freezeUsed = progress.streakFreezeUsedThisWeek;
-    final freezeCount = freezeUsed || progress.streakFreezeAvailable ? 1 : 0;
+    final streak = p.streak;
+    final freezeUsed = p.freezeUsed;
+    final freezeCount = freezeUsed || p.freezeAvailable ? 1 : 0;
     final goalFill = goal <= 0 ? 0.0 : done / goal;
     final barColor = goalMet
         ? AppRoles.reward
@@ -83,10 +99,10 @@ class HomePlayerHeader extends StatelessWidget {
                       child: Row(
                         children: [
                           UserAvatar(
-                            name: progress.userName,
-                            photoUrl: backend.userPhotoUrl,
-                            seed: backend.uid,
-                            style: progress.settings.portraitStyle,
+                            name: p.userName,
+                            photoUrl: b.photoUrl,
+                            seed: b.uid,
+                            style: p.portraitStyle,
                             radius: AppMetrics.avatarMd,
                           ),
                           const SizedBox(width: 10),
@@ -125,11 +141,8 @@ class HomePlayerHeader extends StatelessWidget {
                 ),
               ),
               Semantics(
-                label: l10n.homeStepsSemantics(progress.steps),
-                child: CountBadge(
-                  '${progress.steps}',
-                  color: AppRoles.reward,
-                ),
+                label: l10n.homeStepsSemantics(p.steps),
+                child: CountBadge('${p.steps}', color: AppRoles.reward),
               ),
               if (onLiturgyTap != null)
                 _SeasonChip(

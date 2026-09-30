@@ -86,11 +86,16 @@ class RoomService extends ChangeNotifier {
     if (_listeningUid == uid && _inviteSub != null) return;
     _listeningUid = uid;
     _inviteSub?.cancel();
+    _invitesSeen = false;
     _inviteSub = FirebaseFirestore.instance
         .collection('roomInvites')
         .where('participantIds', arrayContains: uid)
         .snapshots()
         .listen((snap) {
+          // Snapshot sem mudança de documento (só confirmação do servidor):
+          // nada novo para a barra/Juntos redesenhar.
+          if (snap.docChanges.isEmpty && _invitesSeen) return;
+          _invitesSeen = true;
           invites = [
             for (final doc in snap.docs)
               ?RoomInvite.fromDoc(doc.id, doc.data()),
@@ -99,7 +104,10 @@ class RoomService extends ChangeNotifier {
         }, onError: (Object e) => debugPrint('Convites do grupo: $e'));
   }
 
+  bool _invitesSeen = false;
+
   void _stopInviteListener({required bool clear}) {
+    _invitesSeen = false;
     _inviteSub?.cancel();
     _inviteSub = null;
     _listeningUid = null;

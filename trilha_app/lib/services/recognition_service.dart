@@ -40,6 +40,20 @@ class RecognitionService extends ChangeNotifier {
     );
   }
 
+  bool _synced = false;
+  String? _syncedUid;
+
+  /// Chamado a cada notify do [BackendService] (proxy do main). Só religa
+  /// quando a sessão muda — saves e perfil notificam o backend a cada
+  /// resposta, e religar ali refazia o fetch de [recent] no meio da cena.
+  Future<void> syncBinding() {
+    final uid = backend.isActive ? backend.uid : null;
+    if (_synced && uid == _syncedUid) return Future.value();
+    _synced = true;
+    _syncedUid = uid;
+    return bind();
+  }
+
   Future<void> bind() async {
     await _loadGiven();
     if (!backend.isActive || backend.uid == null) {

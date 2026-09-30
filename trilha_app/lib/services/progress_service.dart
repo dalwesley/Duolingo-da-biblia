@@ -1348,11 +1348,26 @@ class ProgressService extends ChangeNotifier {
 
   /// Persiste espelho local; a nuvem segue via listeners (MainShell / saveNow).
   bool _batching = false;
+  Timer? _notifyTimer;
+  bool _disposed = false;
 
+  /// Junta os vários notify de uma ação (_bumpQuest, _save, o do chamador —
+  /// muitas vezes separados por await) num só, no fim da fila de eventos.
+  /// Cada notify reconstrói ~50 widgets que escutam o serviço inteiro.
   @override
   void notifyListeners() {
-    if (_batching) return;
-    super.notifyListeners();
+    if (_batching || _notifyTimer != null) return;
+    _notifyTimer = Timer(Duration.zero, () {
+      _notifyTimer = null;
+      if (!_disposed) super.notifyListeners();
+    });
+  }
+
+  @override
+  void dispose() {
+    _disposed = true;
+    _notifyTimer?.cancel();
+    super.dispose();
   }
 
   Future<void> _save({bool notify = true}) async {
@@ -1369,7 +1384,7 @@ class ProgressService extends ChangeNotifier {
       return await fn();
     } finally {
       _batching = false;
-      super.notifyListeners();
+      notifyListeners();
     }
   }
 
@@ -2928,7 +2943,13 @@ class ProgressService extends ChangeNotifier {
     final repairBefore = streakRepairAvailable;
     _ensureStreakRepairMonth();
     await _autoClaimCompletedQuests();
-    await BibleService.instance.setTranslation(settings.bibleTranslationId);
+    // Fixa a tradução na hora; o texto (~4 MB, parse em isolate) carrega
+    // em paralelo — a splash não espera por ele. Quem lê aguarda books().
+    unawaited(
+      BibleService.instance
+          .setTranslation(settings.bibleTranslationId)
+          .catchError((Object e) => debugPrint('Bíblia não carregou: $e')),
+    );
     _loaded = true;
     if (freezeApplied ||
         freezeBefore != streakFreezeAvailable ||
@@ -2980,7 +3001,20 @@ class ProgressService extends ChangeNotifier {
     await _save();
   }
 
-  bool isMissionCompleted(String slug) => completedMissions.contains(slug);
+  bool isMissionCompleted(String slug) {
+    // Chamado por passo em cada build de mapa/lista: Set em vez de List.
+    final list = completedMissions;
+    if (!identical(_completedFor, list) || _completedLen != list.length) {
+      _completedFor = list;
+      _completedLen = list.length;
+      _completedSet = list.toSet();
+    }
+    return _completedSet.contains(slug);
+  }
+
+  List<String>? _completedFor;
+  int _completedLen = -1;
+  Set<String> _completedSet = const {};
 
   Future<void> setHasSeenSplash(bool value) async {
     hasSeenSplash = value;

@@ -14,7 +14,7 @@ class TrailProgress {
     List<String> completed,
   ) {
     final slugs = missionSlugs(trail);
-    final done = slugs.where(completed.contains).length;
+    final done = slugs.where(_doneSet(completed).contains).length;
     final total = slugs.length;
     final pct = total > 0 ? ((done / total) * 100).round() : 0;
     return (done: done, total: total, pct: pct);
@@ -47,7 +47,7 @@ class TrailProgress {
   }) {
     final slugs = missionSlugs(trail);
     if (slugs.isEmpty) return false;
-    if (slugs.every(completed.contains)) return true;
+    if (slugs.every(_doneSet(completed).contains)) return true;
     return (clearedTrailModes[trail.slug] ?? const []).isNotEmpty;
   }
 
@@ -212,9 +212,9 @@ class TrailProgress {
     final allSlugs = missionSlugs(trail);
     for (final mod in trail.modules) {
       for (final mission in mod.missions) {
-        if (completed.contains(mission.slug)) continue;
+        if (_doneSet(completed).contains(mission.slug)) continue;
         final index = allSlugs.indexOf(mission.slug);
-        if (index <= 0 || completed.contains(allSlugs[index - 1])) {
+        if (index <= 0 || _doneSet(completed).contains(allSlugs[index - 1])) {
           return mission;
         }
       }
@@ -256,6 +256,22 @@ class TrailProgress {
     if (CatalogAccess.openAllForTesting) return true;
     final index = allSlugs.indexOf(missionSlug);
     if (index <= 0) return true;
-    return completed.contains(allSlugs[index - 1]);
+    return _doneSet(completed).contains(allSlugs[index - 1]);
   }
+}
+
+/// Busca O(1) nos passos concluídos. Home e Trilhas cruzam o catálogo
+/// inteiro com esta lista a cada build; o ProgressService troca a instância
+/// quando ela muda, então basta um cache de 1 entrada por identidade.
+List<String>? _doneFor;
+int _doneLen = -1;
+Set<String> _done = const {};
+
+Set<String> _doneSet(List<String> completed) {
+  if (!identical(_doneFor, completed) || _doneLen != completed.length) {
+    _doneFor = completed;
+    _doneLen = completed.length;
+    _done = completed.toSet();
+  }
+  return _done;
 }

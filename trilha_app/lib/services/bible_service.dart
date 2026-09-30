@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:typed_data';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
 
@@ -185,16 +186,22 @@ class BibleService {
     return compute(_parseBooks, raw);
   }
 
-  static String _norm(String s) => s
-      .trim()
-      .toLowerCase()
-      .replaceAll(RegExp(r'[êéè]'), 'e')
-      .replaceAll(RegExp(r'[áàãâ]'), 'a')
-      .replaceAll(RegExp(r'[íî]'), 'i')
-      .replaceAll(RegExp(r'[óôõ]'), 'o')
-      .replaceAll(RegExp(r'[úû]'), 'u')
-      .replaceAll('ç', 'c')
-      .replaceAll(RegExp(r'\s+'), ' ');
+  static String _norm(String s) => _normalize(s);
+
+  /// Índice de busca por tradução: texto normalizado num bloco só, montado
+  /// num isolate na 1ª busca (varrer 31 mil versículos com _norm na UI
+  /// thread travava a tela por centenas de ms).
+  final Map<String, Future<_SearchIndex>> _searchIndex = {};
+
+  Future<_SearchIndex> _indexFor(String id) {
+    return _searchIndex[id] ??= () async {
+      final raw = await rootBundle.loadString(
+        byId(id).assetPath!,
+        cache: false,
+      );
+      return compute(_buildSearchIndex, raw);
+    }();
+  }
 
   /// "livro capítulo[:vIni[–vFim]]"
   static final _refShape = RegExp(
@@ -264,24 +271,33 @@ class BibleService {
       }
     }
 
-    for (var bi = 0; bi < list.length; bi++) {
-      final book = list[bi];
-      for (var ci = 0; ci < book.chapters.length; ci++) {
-        final chapter = book.chapters[ci];
-        for (var vi = 0; vi < chapter.length; vi++) {
-          if (_norm(chapter[vi]).contains(q)) {
-            hits.add(BibleSearchHit(
-              bookIndex: bi,
-              bookName: book.name,
-              abbrev: book.abbrev,
-              chapter: ci + 1,
-              verse: vi + 1,
-              text: chapter[vi],
-            ));
-            if (hits.length >= limit) return hits;
-          }
-        }
+    var useId = _translationId;
+    if (byId(useId).assetPath == null) useId = defaultTranslationId;
+    final index = await _indexFor(useId);
+    // indexOf num bloco só: sem alocar string por versículo.
+    var from = 0;
+    while (hits.length < limit) {
+      final at = index.text.indexOf(q, from);
+      if (at < 0) break;
+      final n = index.verseAt(at);
+      final bi = index.book[n];
+      final ci = index.chapter[n];
+      final vi = index.verse[n];
+      if (bi < list.length &&
+          ci < list[bi].chapters.length &&
+          vi < list[bi].chapters[ci].length) {
+        final book = list[bi];
+        hits.add(BibleSearchHit(
+          bookIndex: bi,
+          bookName: book.name,
+          abbrev: book.abbrev,
+          chapter: ci + 1,
+          verse: vi + 1,
+          text: book.chapters[ci][vi],
+        ));
       }
+      // Um acerto por versículo: segue do próximo.
+      from = n + 1 < index.starts.length ? index.starts[n + 1] : index.text.length;
     }
     return hits;
   }
@@ -334,4 +350,104 @@ List<BibleBook> _parseBooks(String raw) {
         ],
       ),
   ];
+}
+
+bool _isSpace(int c) =>
+    c == 0x20 ||
+    (c >= 0x09 && c <= 0x0D) ||
+    c == 0xA0 ||
+    c == 0x1680 ||
+    (c >= 0x2000 && c <= 0x200A) ||
+    c == 0x2028 ||
+    c == 0x2029 ||
+    c == 0x202F ||
+    c == 0x205F ||
+    c == 0x3000 ||
+    c == 0xFEFF;
+
+/// Minúsculas, sem acento (êéè áàãâ íî óôõ úû ç) e espaços colapsados.
+/// Um passe por código em vez de sete RegExp.
+String _normalize(String s) {
+  final lower = s.trim().toLowerCase();
+  final out = Uint16List(lower.length);
+  var n = 0;
+  var space = false;
+  for (final c in lower.codeUnits) {
+    if (_isSpace(c)) {
+      if (!space) out[n++] = 0x20;
+      space = true;
+      continue;
+    }
+    space = false;
+    out[n++] = switch (c) {
+      0xEA || 0xE9 || 0xE8 => 0x65, // e
+      0xE1 || 0xE0 || 0xE3 || 0xE2 => 0x61, // a
+      0xED || 0xEE => 0x69, // i
+      0xF3 || 0xF4 || 0xF5 => 0x6F, // o
+      0xFA || 0xFB => 0x75, // u
+      0xE7 => 0x63, // c
+      _ => c,
+    };
+  }
+  return String.fromCharCodes(out, 0, n);
+}
+
+class _SearchIndex {
+  /// Versículos normalizados, separados por '\n' (a busca nunca tem '\n').
+  final String text;
+  final Int32List starts;
+  final Uint8List book;
+  final Uint8List chapter;
+  final Uint8List verse;
+
+  _SearchIndex(this.text, this.starts, this.book, this.chapter, this.verse);
+
+  /// Versículo que contém a posição [at] (busca binária em [starts]).
+  int verseAt(int at) {
+    var lo = 0;
+    var hi = starts.length - 1;
+    while (lo < hi) {
+      final mid = (lo + hi + 1) >> 1;
+      if (starts[mid] <= at) {
+        lo = mid;
+      } else {
+        hi = mid - 1;
+      }
+    }
+    return lo;
+  }
+}
+
+_SearchIndex _buildSearchIndex(String raw) {
+  final books = _parseBooks(raw);
+  final text = StringBuffer();
+  final starts = <int>[];
+  final book = <int>[];
+  final chapter = <int>[];
+  final verse = <int>[];
+  var offset = 0;
+  for (var bi = 0; bi < books.length; bi++) {
+    final chapters = books[bi].chapters;
+    for (var ci = 0; ci < chapters.length; ci++) {
+      final verses = chapters[ci];
+      for (var vi = 0; vi < verses.length; vi++) {
+        final v = _normalize(verses[vi]);
+        starts.add(offset);
+        book.add(bi);
+        chapter.add(ci);
+        verse.add(vi);
+        text
+          ..write(v)
+          ..write('\n');
+        offset += v.length + 1;
+      }
+    }
+  }
+  return _SearchIndex(
+    text.toString(),
+    Int32List.fromList(starts),
+    Uint8List.fromList(book),
+    Uint8List.fromList(chapter),
+    Uint8List.fromList(verse),
+  );
 }

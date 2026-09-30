@@ -262,6 +262,8 @@ class CaravanPilgrimProfile {
   }) async {
     final trails = <CaravanTrailSnapshot>[];
     final missionBySlug = <String, ({Mission mission, Trail trail})>{};
+    // Catálogo × passos concluídos: Set evita O(n·m) com List.contains.
+    final completedSet = completedMissions.toSet();
 
     for (final trail in catalog) {
       if (trail.missionSlugs.isEmpty || trail.comingSoon) continue;
@@ -273,13 +275,13 @@ class CaravanPilgrimProfile {
       }
 
       final slugs = trail.missionSlugs;
-      final done = slugs.where(completedMissions.contains).length;
+      final done = slugs.where(completedSet.contains).length;
       if (done == 0 && !(clearedTrailModes[trail.slug]?.isNotEmpty ?? false)) {
         continue;
       }
       String? lastDone;
       for (final slug in slugs) {
-        if (completedMissions.contains(slug)) lastDone = slug;
+        if (completedSet.contains(slug)) lastDone = slug;
       }
       trails.add(
         CaravanTrailSnapshot(

@@ -79,7 +79,9 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     final child = index == 4
         ? build()
         : KeyedSubtree(key: ValueKey(_languageCode), child: build());
-    final active = _index == index;
+    // Coberta por cena / celebração / folha, nenhuma aba está à vista:
+    // congela também a do índice (sem rebuild nem ticker por baixo).
+    final active = _index == index && _routeCurrent;
     return ShellTabScope(
       active: active,
       child: TickerMode(enabled: active, child: child),
@@ -87,6 +89,8 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
   }
 
   String _languageCode = 'pt';
+  bool _routeCurrent = true;
+  bool _medalCheckPending = false;
 
   final _repo = TrailRepository();
   Timer? _phaseTimer;
@@ -256,7 +260,13 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     HomeWidgetService.syncFromProgress(progress);
     if (context.read<BackendService>().isSignedIn &&
         progress.hasSeenOnboarding) {
-      MedalEngagementService.instance.scheduleCheck(context);
+      // Com cena / festa por cima, cada resposta refazia o perfil inteiro
+      // na UI thread. Guarda e confere uma vez ao voltar ao shell.
+      if (_routeCurrent) {
+        MedalEngagementService.instance.scheduleCheck(context);
+      } else {
+        _medalCheckPending = true;
+      }
     }
   }
 
@@ -495,6 +505,14 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     final appearance = AppearanceStyle.resolve(mode);
     _lastLook = appearance.look;
     _built.add(_index);
+    // Reconstrói quando uma rota entra ou sai por cima do shell.
+    _routeCurrent = ModalRoute.isCurrentOf(context) ?? true;
+    if (_routeCurrent && _medalCheckPending) {
+      _medalCheckPending = false;
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) MedalEngagementService.instance.scheduleCheck(context);
+      });
+    }
     // Depende do idioma: o shell reconstrói (e recria as abas) ao trocar.
     _languageCode = Localizations.localeOf(context).languageCode;
 

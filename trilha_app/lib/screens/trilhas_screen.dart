@@ -118,20 +118,21 @@ class _TrilhasScreenState extends State<TrilhasScreen>
   }
 
   Widget _reveal(int index, Widget child) {
-    if (_enter.isCompleted) return child;
+    // Mesma árvore antes e depois da entrada: devolver o filho sem o
+    // wrapper no fim remontava o card inteiro (estado e animações dele).
+    // drive() não prende listener no controller (CurvedAnimation prenderia
+    // um por build).
     final start = (0.08 * index).clamp(0.0, 0.55);
     final end = (start + 0.42).clamp(0.0, 1.0);
-    final curve = CurvedAnimation(
-      parent: _enter,
-      curve: Interval(start, end, curve: Curves.easeOutCubic),
+    final curve = _enter.drive(
+      CurveTween(curve: Interval(start, end, curve: Curves.easeOutCubic)),
     );
     return FadeTransition(
       opacity: curve,
       child: SlideTransition(
-        position: Tween<Offset>(
-          begin: const Offset(0, 0.08),
-          end: Offset.zero,
-        ).animate(curve),
+        position: curve.drive(
+          Tween<Offset>(begin: const Offset(0, 0.08), end: Offset.zero),
+        ),
         child: child,
       ),
     );

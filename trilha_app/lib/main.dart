@@ -106,11 +106,11 @@ class TrilhaApp extends StatelessWidget {
           },
         ),
         ChangeNotifierProxyProvider<BackendService, RecognitionService>(
-          create: (ctx) =>
-              RecognitionService(ctx.read<BackendService>())..bind(),
+          // O update roda logo após o create — é ele quem liga a sessão.
+          create: (ctx) => RecognitionService(ctx.read<BackendService>()),
           update: (_, backend, previous) {
             final recognitions = previous ?? RecognitionService(backend);
-            unawaited(recognitions.bind());
+            unawaited(recognitions.syncBinding());
             return recognitions;
           },
         ),

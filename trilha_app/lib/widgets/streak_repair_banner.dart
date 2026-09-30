@@ -14,11 +14,15 @@ class StreakRepairBanner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final progress = context.watch<ProgressService>();
-    if (!progress.showStreakRepairOffer) return const SizedBox.shrink();
+    final offer = context.select(
+      (ProgressService p) =>
+          (show: p.showStreakRepairOffer, broken: p.brokenStreak),
+    );
+    if (!offer.show) return const SizedBox.shrink();
+    final progress = context.read<ProgressService>();
 
     final a = Appearance.of(context);
-    final broken = progress.brokenStreak;
+    final broken = offer.broken;
     final restored = broken + 1;
 
     return GlassCard(
@@ -99,11 +103,15 @@ class StreakRepairCelebrationCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final progress = context.watch<ProgressService>();
-    if (!progress.showStreakRepairOffer) return const SizedBox.shrink();
+    final offer = context.select(
+      (ProgressService p) =>
+          (show: p.showStreakRepairOffer, broken: p.brokenStreak),
+    );
+    if (!offer.show) return const SizedBox.shrink();
+    final progress = context.read<ProgressService>();
 
     final a = Appearance.of(context);
-    final broken = progress.brokenStreak;
+    final broken = offer.broken;
     final restored = broken + 1;
 
     return GlassCard(

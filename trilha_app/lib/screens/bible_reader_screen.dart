@@ -644,6 +644,48 @@ class _ChapterPageState extends State<_ChapterPage> {
     if (mounted) setState(() => _selected = null);
   }
 
+  List<String>? _wordsFor;
+  int _words = 0;
+
+  /// Blocos já montados: o TTS troca o versículo lido a cada frase e o
+  /// setState reconstruía o capítulo inteiro (até 176 blocos). Mesma
+  /// instância = Flutter pula o bloco; só os que mudaram reconstroem.
+  final Map<int, (Object, _VerseBlock)> _blocks = {};
+
+  _VerseBlock _verseBlock(
+    int i,
+    String text,
+    BibleReadingStyle reading, {
+    required bool highlighted,
+    required bool saved,
+  }) {
+    final number = i + 1;
+    final sig = (
+      text,
+      reading,
+      highlighted,
+      _selected == number,
+      _speaking == number,
+      saved,
+      _verseKeys[i],
+    );
+    final hit = _blocks[i];
+    if (hit != null && hit.$1 == sig) return hit.$2;
+    final block = _VerseBlock(
+      key: _verseKeys[i],
+      number: number,
+      text: text,
+      reading: reading,
+      highlighted: highlighted,
+      selected: _selected == number,
+      speaking: _speaking == number,
+      saved: saved,
+      onTap: () => _openVerse(number),
+    );
+    _blocks[i] = (sig, block);
+    return block;
+  }
+
   @override
   Widget build(BuildContext context) {
     final reading = widget.reading;
@@ -660,8 +702,11 @@ class _ChapterPageState extends State<_ChapterPage> {
       for (final k in bmSig.split('|'))
         if (k.isNotEmpty) int.tryParse(k.split(':').last) ?? -1,
     };
-    final words = verses.fold<int>(0, (n, v) => n + v.split(' ').length);
-    final minutes = (words / 200).ceil().clamp(1, 99);
+    if (!identical(_wordsFor, verses)) {
+      _wordsFor = verses;
+      _words = verses.fold<int>(0, (n, v) => n + v.split(' ').length);
+    }
+    final minutes = (_words / 200).ceil().clamp(1, 99);
     final pad = MediaQuery.paddingOf(context);
     final width = MediaQuery.sizeOf(context).width;
     final side = width > 720 ? (width - 640) / 2 : AppSpace.xl + 4;
@@ -696,19 +741,15 @@ class _ChapterPageState extends State<_ChapterPage> {
           RelicHairline(accent: reading.verseNumber),
           const SizedBox(height: AppSpace.xl),
           for (var i = 0; i < verses.length; i++)
-            _VerseBlock(
-              key: _verseKeys[i],
-              number: i + 1,
-              text: verses[i],
-              reading: reading,
+            _verseBlock(
+              i,
+              verses[i],
+              reading,
               highlighted:
                   widget.highlightStart != null &&
                   i + 1 >= widget.highlightStart! &&
                   i + 1 <= (widget.highlightEnd ?? widget.highlightStart!),
-              selected: _selected == i + 1,
-              speaking: _speaking == i + 1,
               saved: saved.contains(i + 1),
-              onTap: () => _openVerse(i + 1),
             ),
           const SizedBox(height: AppSpace.xxxl),
           _ChapterEnd(

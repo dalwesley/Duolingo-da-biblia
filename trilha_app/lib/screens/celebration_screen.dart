@@ -644,13 +644,28 @@ class _CelebrationScreenState extends State<CelebrationScreen>
 
   @override
   Widget build(BuildContext context) {
-    final progress = context.watch<ProgressService>();
+    // A festa grava medalhas, missão e sequência em série (vários notify):
+    // só reconstrói quando algo que ela mostra muda.
+    context.select(
+      (ProgressService p) => (
+        streak: p.streak,
+        streakGoal: p.settings.streakGoal,
+        repair: p.showStreakRepairOffer,
+        today: p.missionsToday,
+        dailyGoal: p.settings.dailyGoal,
+        userName: p.userName,
+        steps: p.steps,
+      ),
+    );
+    final progress = context.read<ProgressService>();
     final pct = widget.total > 0
         ? ((widget.correct / widget.total) * 100).round()
         : 100;
     final isBoss = widget.isBoss;
     final showModeUp = _nextMode != null && _nextMeta != null;
-    final mode = context.watch<ProgressService>().settings.appearanceMode;
+    final mode = context.select(
+      (ProgressService p) => p.settings.appearanceMode,
+    );
     final appearance = AppearanceStyle.resolve(mode);
     final heroAccent = _heroAccent;
 

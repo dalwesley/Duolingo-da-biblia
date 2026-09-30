@@ -149,7 +149,8 @@ class ContentCatalogService {
         'ContentCatalog: trail $trailSlug +${collected.length} '
         '(banco ${_bankQuestions!.length})',
       );
-      unawaited(_persistPrefs());
+      // Só o banco mudou — não reescreve trilhas/estudos/versículos.
+      unawaited(_persistPrefs(bankOnly: true));
       return true;
     } catch (e) {
       debugPrint('ContentCatalog ensureTrailBank($trailSlug) failed: $e');
@@ -298,21 +299,13 @@ class ContentCatalogService {
 
       final bankRaw = await _readCacheFile(_fileBank);
       if (bankRaw != null && bankRaw.isNotEmpty) {
-        final data = await _decodeJson(bankRaw) as Map<String, dynamic>;
-        _difficulties = (data['difficulties'] as List? ?? [])
-            .map((e) => DifficultyMeta.fromJson(Map<String, dynamic>.from(e as Map)))
-            .toList();
-        final rawQs = data['questions'] as List? ?? [];
-        final hasTypes = rawQs.any(
-          (e) => e is Map && (e['type'] as String?)?.trim().isNotEmpty == true,
-        );
-        if (!hasTypes && rawQs.isNotEmpty) {
+        // Decode + fromJson do banco inteiro no isolate (volta sem cópia).
+        final bank = await compute(_decodeBankCache, bankRaw);
+        _difficulties = bank.difficulties;
+        if (bank.questions == null) {
           debugPrint('ContentCatalog: cache sem type — buscando Firestore');
         } else {
-          _bankQuestions = rawQs
-              .whereType<Map>()
-              .map((e) => BankQuestion.fromJson(Map<String, dynamic>.from(e)))
-              .toList();
+          _bankQuestions = bank.questions;
         }
       }
       final studiesRaw = await _readCacheFile(_fileStudies);
@@ -498,11 +491,11 @@ class ContentCatalogService {
     }
   }
 
-  Future<void> _persistPrefs() async {
+  Future<void> _persistPrefs({bool bankOnly = false}) async {
     try {
       final prefs = await SharedPreferences.getInstance();
       if (_version != null) await prefs.setInt(_prefsVersionKey, _version!);
-      if (_trails != null) {
+      if (_trails != null && !bankOnly) {
         final encoded = await _encodeJson(
           _trails!
               .map(
@@ -564,26 +557,16 @@ class ContentCatalogService {
         await _writeCacheFile(_fileTrails, encoded);
       }
       if (_bankQuestions != null) {
+        // toJson de cada pergunta também vai para o isolate.
         await _writeCacheFile(
           _fileBank,
-          await _encodeJson({
-            'difficulties': (_difficulties ?? [])
-                .map(
-                  (d) => {
-                    'id': d.difficulty.id,
-                    'label': d.label,
-                    'subtitle': d.subtitle,
-                    'description': d.description,
-                    'xpMultiplier': d.stepsMultiplier,
-                    'accent': d.accent,
-                    'icon': d.icon,
-                  },
-                )
-                .toList(),
-            'questions': _bankQuestions!.map((q) => q.toJson()).toList(),
-          }),
+          await compute(_encodeBankCache, (
+            difficulties: List<DifficultyMeta>.of(_difficulties ?? const []),
+            questions: List<BankQuestion>.of(_bankQuestions!),
+          )),
         );
       }
+      if (bankOnly) return;
       if (_studies != null) {
         await _writeCacheFile(_fileStudies, await _encodeJson(_studies));
       }
@@ -594,4 +577,47 @@ class ContentCatalogService {
       debugPrint('ContentCatalog cache persist failed: $e');
     }
   }
+}
+
+({List<DifficultyMeta> difficulties, List<BankQuestion>? questions})
+_decodeBankCache(String raw) {
+  final data = jsonDecode(raw) as Map<String, dynamic>;
+  final difficulties = (data['difficulties'] as List? ?? [])
+      .map((e) => DifficultyMeta.fromJson(Map<String, dynamic>.from(e as Map)))
+      .toList();
+  final rawQs = data['questions'] as List? ?? [];
+  final hasTypes = rawQs.any(
+    (e) => e is Map && (e['type'] as String?)?.trim().isNotEmpty == true,
+  );
+  if (!hasTypes && rawQs.isNotEmpty) {
+    return (difficulties: difficulties, questions: null);
+  }
+  return (
+    difficulties: difficulties,
+    questions: rawQs
+        .whereType<Map>()
+        .map((e) => BankQuestion.fromJson(Map<String, dynamic>.from(e)))
+        .toList(),
+  );
+}
+
+String _encodeBankCache(
+  ({List<DifficultyMeta> difficulties, List<BankQuestion> questions}) bank,
+) {
+  return jsonEncode({
+    'difficulties': bank.difficulties
+        .map(
+          (d) => {
+            'id': d.difficulty.id,
+            'label': d.label,
+            'subtitle': d.subtitle,
+            'description': d.description,
+            'xpMultiplier': d.stepsMultiplier,
+            'accent': d.accent,
+            'icon': d.icon,
+          },
+        )
+        .toList(),
+    'questions': bank.questions.map((q) => q.toJson()).toList(),
+  });
 }

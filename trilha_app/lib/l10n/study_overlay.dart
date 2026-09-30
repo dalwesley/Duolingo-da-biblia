@@ -46,17 +46,12 @@ class StudyOverlay {
   Future<void> _load(String locale) async {
     final asset = 'assets/l10n/content/studies_$locale.json';
     try {
-      final raw = await rootBundle.loadString(asset);
-      final decoded = jsonDecode(raw);
-      if (decoded is! Map) {
+      // Decode e mapa fora da UI thread; sem cache do texto cru no bundle.
+      final raw = await rootBundle.loadString(asset, cache: false);
+      final out = await compute(_decodeEntries, raw);
+      if (out == null) {
         debugPrint('StudyOverlay: $asset não é um objeto JSON');
         return;
-      }
-      final out = <String, Map<String, dynamic>>{};
-      for (final e in decoded.entries) {
-        final v = e.value;
-        if (v is! Map) continue;
-        out[e.key.toString()] = Map<String, dynamic>.from(v);
       }
       _bySlug = out;
       _loadedLocale = locale;
@@ -108,4 +103,16 @@ class StudyOverlay {
         .toList();
     return out.isEmpty ? null : out;
   }
+}
+
+Map<String, Map<String, dynamic>>? _decodeEntries(String raw) {
+  final decoded = jsonDecode(raw);
+  if (decoded is! Map) return null;
+  final out = <String, Map<String, dynamic>>{};
+  for (final e in decoded.entries) {
+    final v = e.value;
+    if (v is! Map) continue;
+    out[e.key.toString()] = Map<String, dynamic>.from(v);
+  }
+  return out;
 }

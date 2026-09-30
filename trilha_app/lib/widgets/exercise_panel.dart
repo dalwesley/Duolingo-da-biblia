@@ -230,17 +230,17 @@ class _ExercisePanelState extends State<ExercisePanel>
   }
 
   Widget _in(double start, double end, Widget child) {
-    final curve = CurvedAnimation(
-      parent: _enter,
-      curve: Interval(start, end, curve: Curves.easeOutCubic),
+    // drive() não prende listener no controller (CurvedAnimation prenderia
+    // um por build — e o painel reconstrói a cada toque).
+    final curve = _enter.drive(
+      CurveTween(curve: Interval(start, end, curve: Curves.easeOutCubic)),
     );
     return FadeTransition(
       opacity: curve,
       child: SlideTransition(
-        position: Tween<Offset>(
-          begin: const Offset(0, 0.04),
-          end: Offset.zero,
-        ).animate(curve),
+        position: curve.drive(
+          Tween<Offset>(begin: const Offset(0, 0.04), end: Offset.zero),
+        ),
         child: child,
       ),
     );

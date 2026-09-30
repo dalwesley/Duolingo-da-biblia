@@ -335,21 +335,22 @@ class _HomeScreenState extends State<HomeScreen>
   }
 
   Widget _reveal(int index, Widget child) {
-    if (_fadeIn.isCompleted) return child;
+    // Mesma árvore antes e depois da entrada: devolver o filho sem o
+    // wrapper no fim remontava o card inteiro (estado e animações dele).
+    // drive() não prende listener no controller (CurvedAnimation prenderia
+    // um por build).
     final start = (0.1 * index).clamp(0.0, 0.65);
     final end = (start + 0.38).clamp(0.0, 1.0);
-    final curve = CurvedAnimation(
-      parent: _fadeIn,
-      curve: Interval(start, end, curve: Curves.easeOutCubic),
+    final curve = _fadeIn.drive(
+      CurveTween(curve: Interval(start, end, curve: Curves.easeOutCubic)),
     );
     // Só fade+slide — ScaleTransition no 1º paint competia com o hero animado.
     return FadeTransition(
       opacity: curve,
       child: SlideTransition(
-        position: Tween<Offset>(
-          begin: const Offset(0, 0.04),
-          end: Offset.zero,
-        ).animate(curve),
+        position: curve.drive(
+          Tween<Offset>(begin: const Offset(0, 0.04), end: Offset.zero),
+        ),
         child: child,
       ),
     );
@@ -765,7 +766,6 @@ class _WalkHomeCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final progress = context.watch<ProgressService>();
     final now = DateTime.now();
     final today = DateTime(now.year, now.month, now.day);
     final campaign = SeasonWalkCatalog.current(today);
@@ -774,10 +774,13 @@ class _WalkHomeCard extends StatelessWidget {
     final day = index == null ? null : campaign.dayAt(index);
     final ymd =
         '${today.year.toString().padLeft(4, '0')}-${today.month.toString().padLeft(2, '0')}-${today.day.toString().padLeft(2, '0')}';
-    final done =
-        day != null &&
-        (progress.isWalkDateDone(campaign.id, ymd) ||
-            progress.isMissionCompleted(day.missionSlug));
+    // Só o "feito hoje" — não reconstrói a cada resposta da cena.
+    final done = context.select(
+      (ProgressService p) =>
+          day != null &&
+          (p.isWalkDateDone(campaign.id, ymd) ||
+              p.isMissionCompleted(day.missionSlug)),
+    );
     final sameAsHero =
         day != null &&
         heroMissionSlug != null &&
