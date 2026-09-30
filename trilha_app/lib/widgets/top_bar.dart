@@ -9,24 +9,6 @@ import 'icon_well.dart';
 import 'ui_primitives.dart';
 import 'user_avatar.dart';
 
-class FrostController extends ValueNotifier<double> {
-  FrostController() : super(0);
-
-  bool _handle(ScrollNotification n) {
-    if (n.metrics.axis == Axis.vertical) {
-      value = n.metrics.pixels;
-    }
-    return false;
-  }
-
-  Widget attach(Widget child) {
-    return NotificationListener<ScrollNotification>(
-      onNotification: _handle,
-      child: child,
-    );
-  }
-}
-
 /// Altura mínima do chrome inline (sem AppBar — evita espaço morto).
 const double kTopBarInlineHeight = 48;
 

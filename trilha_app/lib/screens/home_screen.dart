@@ -9,6 +9,7 @@ import '../models/trail.dart';
 import '../widgets/act_feel.dart';
 import '../services/analytics_service.dart';
 import '../services/companion_service.dart';
+import '../services/content_catalog_service.dart';
 import '../services/corner_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
@@ -32,6 +33,7 @@ import '../widgets/home_word_card.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/offline_curriculum_dialog.dart';
 import '../widgets/reminder_prompt_sheet.dart';
+import '../widgets/shell_tab_scope.dart';
 import '../widgets/streak_repair_banner.dart';
 import '../widgets/season_challenge_banner.dart';
 import '../widgets/top_bar.dart';
@@ -66,7 +68,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen>
-    with SingleTickerProviderStateMixin {
+    with SingleTickerProviderStateMixin, ShellTabFreezeMixin {
   List<Trail>? _trails;
   late final AnimationController _fadeIn;
   bool _comebackChecked = false;
@@ -123,6 +125,17 @@ class _HomeScreenState extends State<HomeScreen>
               tease: hydrated.trailer,
             );
           }());
+          // Banco da trilha ativa em background — abrir cena não espera Firestore.
+          final active = TrailProgress.findActiveTrail(
+            trails,
+            progress.completedMissions,
+            clearedTrailModes: progress.clearedTrailModes,
+          );
+          if (active != null) {
+            unawaited(
+              ContentCatalogService.instance.ensureTrailBank(active.slug),
+            );
+          }
         }
       }
     }
@@ -329,17 +342,15 @@ class _HomeScreenState extends State<HomeScreen>
       parent: _fadeIn,
       curve: Interval(start, end, curve: Curves.easeOutCubic),
     );
+    // Só fade+slide — ScaleTransition no 1º paint competia com o hero animado.
     return FadeTransition(
       opacity: curve,
       child: SlideTransition(
         position: Tween<Offset>(
-          begin: const Offset(0, 0.06),
+          begin: const Offset(0, 0.04),
           end: Offset.zero,
         ).animate(curve),
-        child: ScaleTransition(
-          scale: Tween<double>(begin: 0.96, end: 1).animate(curve),
-          child: child,
-        ),
+        child: child,
       ),
     );
   }
@@ -452,7 +463,14 @@ class _HomeScreenState extends State<HomeScreen>
 
   @override
   Widget build(BuildContext context) {
-    final progress = context.watch<ProgressService>();
+    return freezeTab(() => _buildHome(context));
+  }
+
+  Widget _buildHome(BuildContext context) {
+    final listen = tabListens;
+    final progress = listen
+        ? context.watch<ProgressService>()
+        : context.read<ProgressService>();
 
     if (_trails == null) {
       return const _HomeSkeleton();
@@ -476,11 +494,18 @@ class _HomeScreenState extends State<HomeScreen>
         : null;
     final goalMet = progress.dailyGoalMet;
 
-    _maybeShowComeback(progress, missionSlug: current?.slug);
-    _maybePromptReminders(progress);
-    _maybeTeachGelo(progress);
+    if (listen) {
+      _maybeShowComeback(progress, missionSlug: current?.slug);
+      _maybePromptReminders(progress);
+      _maybeTeachGelo(progress);
+    }
 
-    final nudge = context.watch<CompanionService>().incomingNudge;
+    final nudge = listen
+        ? context.watch<CompanionService>().incomingNudge
+        : context.read<CompanionService>().incomingNudge;
+    final cornerFace = listen
+        ? context.watch<CornerService>().face
+        : context.read<CornerService>().face;
 
     // Fundo = gradiente da fase do dia do shell (ImmersiveScaffold); a arte
     // da trilha vive só dentro do card herói. Cards comuns ficam neutros.
@@ -531,7 +556,7 @@ class _HomeScreenState extends State<HomeScreen>
                 ],
               ),
             ),
-            if (context.watch<CornerService>().face != null) ...[
+            if (cornerFace != null) ...[
               const SizedBox(height: AppSpace.section),
               _reveal(
                 2,

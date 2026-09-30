@@ -27,6 +27,7 @@ import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
 import '../widgets/relic_panel.dart';
 import '../widgets/app_sheet.dart';
+import '../widgets/shell_tab_scope.dart';
 import '../utils/layout_utils.dart';
 import '../widgets/act_feel.dart';
 import '../widgets/app_update_sheet.dart';
@@ -94,7 +95,7 @@ class SettingsScreen extends StatefulWidget {
 }
 
 class _SettingsScreenState extends State<SettingsScreen>
-    with SingleTickerProviderStateMixin {
+    with SingleTickerProviderStateMixin, ShellTabFreezeMixin {
   final _nameController = TextEditingController();
   bool _nameDirty = false;
   List<String> _genesisMissionSlugs = const [];
@@ -197,8 +198,17 @@ class _SettingsScreenState extends State<SettingsScreen>
 
   @override
   Widget build(BuildContext context) {
-    final progress = context.watch<ProgressService>();
-    final sync = context.watch<SyncService>();
+    return freezeTab(() => _buildSettings(context));
+  }
+
+  Widget _buildSettings(BuildContext context) {
+    final listen = tabListens;
+    final progress = listen
+        ? context.watch<ProgressService>()
+        : context.read<ProgressService>();
+    final sync = listen
+        ? context.watch<SyncService>()
+        : context.read<SyncService>();
     final a = Appearance.of(context);
 
     // Mantém o campo alinhado ao progresso (ex.: nome restaurado do Google),
@@ -1063,6 +1073,14 @@ class _SettingsScreenState extends State<SettingsScreen>
           context.l10n.settingsCreditsRowSubtitle,
           glyph: CinematicGlyph.book,
           onTap: () => _openCreditsSheet(credits),
+        ),
+        const _SettingsDivider(compact: true),
+        _navRow(
+          a,
+          context.l10n.settingsAboutPage,
+          context.l10n.settingsAboutPageSubtitle,
+          glyph: CinematicGlyph.path,
+          onTap: openAboutPage,
         ),
         const SizedBox(height: AppSpace.lg),
         CopperCta(

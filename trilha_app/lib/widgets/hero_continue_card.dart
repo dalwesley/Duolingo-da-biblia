@@ -186,13 +186,26 @@ class _HeroContinueCardState extends State<HeroContinueCard>
       widget.trailSlug,
       color: widget.trailColor,
     );
-    final progress = context.watch<ProgressService>();
-    final hasFreeze = progress.hasStreakFreeze;
+    final progress = context.select(
+      (ProgressService p) => (
+        hasFreeze: p.hasStreakFreeze,
+        walkedToday: p.walkedToday,
+        returningAfterGap: p.isReturningAfterGap,
+        yesterdayFrozen: p.yesterdayWasFrozen,
+        nextSceneTitle: p.nextSceneTitle,
+        lastInsight: p.lastInsight,
+        lastEchoQuestion: p.lastEchoQuestion,
+        lastPlayedDate: p.lastPlayedDate,
+        streakRiskCountdown: p.streakRiskCountdown,
+        streak: p.streak,
+      ),
+    );
+    final hasFreeze = progress.hasFreeze;
     final walkedToday = progress.walkedToday;
-    final returningAfterGap = progress.isReturningAfterGap;
+    final returningAfterGap = progress.returningAfterGap;
     final mood = resolveHeroCardMood(
       atRisk: widget.atRisk,
-      yesterdayFrozen: progress.yesterdayWasFrozen,
+      yesterdayFrozen: progress.yesterdayFrozen,
       walkedToday: walkedToday,
       returningAfterGap: returningAfterGap,
     );

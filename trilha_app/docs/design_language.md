@@ -153,10 +153,9 @@ Tudo o mais é subordinado a isso:
 - **lâmpada** é a vida dentro da cena; **lamparina** é a semana no perfil;
 - **medalha** é a recompensa; o conjunto delas é o **cofre**.
 
-Na cena (partida): HUD = progresso + lâmpadas + medidor de sequência
-(`×N` + `ActComboMeter`). Combo não cura lâmpada nem soma passos extras.
-Erro = flash vermelho + lâmpada que apaga. Veredito na base: cheer + `×N`
-no título — sem medidor duplicado nem overlay sobre o gesto.
+Na cena (partida): HUD = progresso das perguntas + lâmpadas. Sequência
+(`×N`) só no veredito da base — sem medidor no topo. Combo não cura
+lâmpada nem soma passos extras. Erro = flash vermelho + lâmpada que apaga.
 
 Na celebração: contagem de passos sobe e, ao fechar, háptico + pop no cartão
 de passos. **Cena limpa** (100% + lâmpadas intactas) aparece como selo;

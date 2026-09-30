@@ -28,8 +28,10 @@ import '../widgets/cinematic_icon.dart';
 import '../widgets/corner_burst.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/main_bottom_nav.dart';
+import '../widgets/shell_tab_scope.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
+import '../services/content_catalog_service.dart';
 import 'bible_screen.dart';
 import 'home_screen.dart';
 import 'league_screen.dart';
@@ -77,13 +79,16 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     final child = index == 4
         ? build()
         : KeyedSubtree(key: ValueKey(_languageCode), child: build());
-    return TickerMode(enabled: _index == index, child: child);
+    final active = _index == index;
+    return ShellTabScope(
+      active: active,
+      child: TickerMode(enabled: active, child: child),
+    );
   }
 
   String _languageCode = 'pt';
 
   final _repo = TrailRepository();
-  final _frost = FrostController();
   Timer? _phaseTimer;
   Timer? _presenceTimer;
   bool _presenceSyncing = false;
@@ -185,7 +190,6 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     }
     setState(() {
       _index = 3;
-      _frost.value = 0;
     });
   }
 
@@ -373,17 +377,14 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       case ReminderAction.home:
         setState(() {
           _index = 0;
-          _frost.value = 0;
         });
       case ReminderAction.league:
         setState(() {
           _index = 3;
-          _frost.value = 0;
         });
       case ReminderAction.practice:
         setState(() {
           _index = 0;
-          _frost.value = 0;
         });
         Navigator.of(
           context,
@@ -391,7 +392,6 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       case ReminderAction.memory:
         setState(() {
           _index = 0;
-          _frost.value = 0;
         });
         Navigator.of(
           context,
@@ -408,7 +408,6 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     _phaseTimer?.cancel();
     _presenceTimer?.cancel();
     _warmTimer?.cancel();
-    _frost.dispose();
     _progressRef?.removeListener(_onProgressChanged);
     InviteDeepLinkService.instance.removeListener(_onInviteDeepLink);
     NotificationService.instance.onAction = null;
@@ -420,20 +419,29 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
   }
 
   void _openTrail(String slug) {
+    unawaited(ContentCatalogService.instance.ensureTrailBank(slug));
     Navigator.of(
       context,
     ).push(MaterialPageRoute(builder: (_) => TrailMapScreen(slug: slug)));
   }
 
   void _openMission(String missionSlug) {
+    unawaited(_prefetchMissionBank(missionSlug));
     Navigator.of(context).pushNamed('/lesson', arguments: missionSlug);
+  }
+
+  Future<void> _prefetchMissionBank(String missionSlug) async {
+    try {
+      final trailSlug = await _repo.getTrailSlugForMission(missionSlug);
+      if (trailSlug == null || trailSlug.isEmpty) return;
+      await ContentCatalogService.instance.ensureTrailBank(trailSlug);
+    } catch (_) {}
   }
 
   void _openProfile() => openMeProfile(context);
 
   void _goToTrilhas() => setState(() {
     _index = 1;
-    _frost.value = 0;
   });
 
   Widget _tabTopBar({
@@ -501,60 +509,49 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       mode: mode,
       style: appearance,
       extendBody: true,
-      body: _frost.attach(
-        _TabFade(
+      body: _TabFade(
+        index: _index,
+        child: IndexedStack(
           index: _index,
-          child: IndexedStack(
-            index: _index,
-            children: [
-              _lazyTab(
-                0,
-                () => HomeScreen(
-                  repo: _repo,
-                  onOpenMission: _openMission,
-                  onOpenTrilhas: _goToTrilhas,
-                  onOpenProfile: _openProfile,
-                  onOpenBible: () => setState(() {
-                    _index = 2;
-                    _frost.value = 0;
-                  }),
-                  onOpenLeague: () => setState(() {
-                    _index = 3;
-                    _frost.value = 0;
-                  }),
-                ),
+          children: [
+            _lazyTab(
+              0,
+              () => HomeScreen(
+                repo: _repo,
+                onOpenMission: _openMission,
+                onOpenTrilhas: _goToTrilhas,
+                onOpenProfile: _openProfile,
+                onOpenBible: () => setState(() => _index = 2),
+                onOpenLeague: () => setState(() => _index = 3),
               ),
-              _lazyTab(
-                1,
-                () => TrilhasScreen(
-                  repo: _repo,
-                  topBar: tabBar(1),
-                  portalsActive: _index == 1,
-                ),
+            ),
+            _lazyTab(
+              1,
+              () => TrilhasScreen(
+                repo: _repo,
+                topBar: tabBar(1),
+                portalsActive: _index == 1,
               ),
-              _lazyTab(2, () => BibleScreen(topBar: tabBar(2))),
-              _lazyTab(
-                3,
-                () => LeagueScreen(
-                  topBar: tabBar(3),
-                  active: _index == 3,
-                  onOpenOwnProfile: _openProfile,
-                  onOpenMission: _openMission,
-                  onGoToday: () => setState(() {
-                    _index = 0;
-                    _frost.value = 0;
-                  }),
-                ),
+            ),
+            _lazyTab(2, () => BibleScreen(topBar: tabBar(2))),
+            _lazyTab(
+              3,
+              () => LeagueScreen(
+                topBar: tabBar(3),
+                active: _index == 3,
+                onOpenOwnProfile: _openProfile,
+                onOpenMission: _openMission,
+                onGoToday: () => setState(() => _index = 0),
               ),
-              _lazyTab(
-                4,
-                () => SettingsScreen(
-                  topBar: tabBar(4),
-                  onOpenProfile: _openProfile,
-                ),
+            ),
+            _lazyTab(
+              4,
+              () => SettingsScreen(
+                topBar: tabBar(4),
+                onOpenProfile: _openProfile,
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
       // Builder isola os watch de Juntos: uma novidade só redesenha a barra,
@@ -566,7 +563,6 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
           onTap: (i) => setState(() {
             if (_index == 2 && i != 2) unawaited(TtsService.instance.stop());
             _index = i;
-            _frost.value = 0;
           }),
           immersive: true,
           dark: appearance.onDark,

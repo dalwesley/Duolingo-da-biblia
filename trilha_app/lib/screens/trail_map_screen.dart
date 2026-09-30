@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
@@ -11,6 +13,7 @@ import '../models/difficulty.dart';
 import '../models/pilgrim_medals.dart';
 import '../models/trail.dart';
 import '../models/trail_catalog.dart';
+import '../services/content_catalog_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
@@ -65,6 +68,8 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
       QuestionBank.instance.hasBankForTrail(widget.slug);
 
   Future<void> _bootstrap() async {
+    // Prefetch do banco enquanto o mapa monta — a cena abre sem esperar.
+    unawaited(ContentCatalogService.instance.ensureTrailBank(widget.slug));
     final trail = await _repo.getTrailBySlug(widget.slug);
     if (!mounted) return;
     setState(() => _trail = trail);
@@ -113,17 +118,20 @@ class _TrailMapScreenState extends State<TrailMapScreen> {
   void _maybeScrollToActive(int moduleIndex) {
     if (_didAutoScroll || moduleIndex <= 0) return;
     _didAutoScroll = true;
+    // Espera o 1º layout assentar — animar no primeiro frame compete com paint.
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (!_scrollController.hasClients) return;
-      final target = (160.0 + moduleIndex * 520).clamp(
-        0.0,
-        _scrollController.position.maxScrollExtent,
-      );
-      _scrollController.animateTo(
-        target,
-        duration: const Duration(milliseconds: 1200),
-        curve: Curves.easeInOutCubic,
-      );
+      Future<void>.delayed(const Duration(milliseconds: 280), () {
+        if (!mounted || !_scrollController.hasClients) return;
+        final target = (160.0 + moduleIndex * 520).clamp(
+          0.0,
+          _scrollController.position.maxScrollExtent,
+        );
+        _scrollController.animateTo(
+          target,
+          duration: const Duration(milliseconds: 700),
+          curve: Curves.easeOutCubic,
+        );
+      });
     });
   }
 

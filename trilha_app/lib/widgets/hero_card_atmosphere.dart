@@ -56,7 +56,7 @@ class _HeroCardAtmosphereState extends State<HeroCardAtmosphere>
     );
     _coarse = _CoarseClock(_pulse, steps: 156);
     _specs = _buildSpecs(widget.mood);
-    _syncMotion();
+    _syncMotion(respectTickerMode: false);
   }
 
   @override
@@ -76,21 +76,32 @@ class _HeroCardAtmosphereState extends State<HeroCardAtmosphere>
       widget.layer != HeroAtmosphereLayer.back ||
       widget.mood == HeroCardMood.alive;
 
-  void _syncMotion() {
-    if (_animated) {
+  void _syncMotion({bool respectTickerMode = true}) {
+    // TickerMode do shell já pausa; aqui evitamos restart inútil ao rebuildar.
+    final tickersOn =
+        !respectTickerMode || TickerMode.valuesOf(context).enabled;
+    if (_animated && tickersOn) {
       if (!_pulse.isAnimating) _pulse.repeat();
     } else {
       _pulse.stop();
-      _pulse.value = 0;
+      if (!_animated) _pulse.value = 0;
     }
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    _syncMotion();
   }
 
   List<_Spec> _buildSpecs(HeroCardMood mood) {
     final rng = math.Random(mood.index * 97 + 11);
+    // Contagens menores: o hero fica no IndexedStack e o CustomPaint
+    // contínuo competia com a troca de aba / abertura de cena.
     final count = switch (mood) {
-      HeroCardMood.frozen => 36,
-      HeroCardMood.dusty => 80,
-      HeroCardMood.alive => 18,
+      HeroCardMood.frozen => 20,
+      HeroCardMood.dusty => 28,
+      HeroCardMood.alive => 10,
     };
     return List.generate(count, (i) {
       return _Spec(

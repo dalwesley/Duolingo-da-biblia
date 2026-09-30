@@ -22,6 +22,7 @@ import '../widgets/immersive_background.dart';
 import '../widgets/offline_curriculum_dialog.dart';
 import '../widgets/realm_world_atmosphere.dart';
 import '../widgets/relic_panel.dart';
+import '../widgets/shell_tab_scope.dart';
 import '../widgets/stway_brand.dart';
 import '../widgets/trail_suggestion_sheet.dart';
 import '../widgets/ui_primitives.dart';
@@ -50,7 +51,7 @@ class TrilhasScreen extends StatefulWidget {
 }
 
 class _TrilhasScreenState extends State<TrilhasScreen>
-    with SingleTickerProviderStateMixin {
+    with SingleTickerProviderStateMixin, ShellTabFreezeMixin {
   List<Trail>? _trails;
   late final AnimationController _enter;
   bool _retryingCatalog = false;
@@ -281,7 +282,13 @@ class _TrilhasScreenState extends State<TrilhasScreen>
 
   @override
   Widget build(BuildContext context) {
-    final progress = context.watch<ProgressService>();
+    return freezeTab(() => _buildTrilhas(context));
+  }
+
+  Widget _buildTrilhas(BuildContext context) {
+    final progress = tabListens
+        ? context.watch<ProgressService>()
+        : context.read<ProgressService>();
     final topInset = MediaQuery.viewPaddingOf(context).top;
 
     if (_trails == null) {

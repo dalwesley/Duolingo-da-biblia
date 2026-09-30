@@ -9,6 +9,16 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
+## [1.0.31] — 2026-09-30
+
+### Added
+- Página **Sobre** no site (`/sobre`): nome (St = step/street · Way = caminho), como funciona, missão, visão, valores e contribuição — com animações próprias
+- Ajustes → Sobre: atalho “Conheça o Stway” abre a página no navegador
+
+### Changed
+- Cena: HUD só com progresso e lâmpadas; sequência `×N` só no veredito (sem medidor no topo)
+- Site: nav/rodapé e sitemap com Sobre; intro da home não roda nas páginas internas
+
 ## [1.0.30] — 2026-09-28
 
 ### Added

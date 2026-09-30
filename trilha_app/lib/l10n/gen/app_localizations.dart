@@ -10779,6 +10779,18 @@ abstract class AppLocalizations {
   /// **'Sobre'**
   String get settingsAbout;
 
+  /// No description provided for @settingsAboutPage.
+  ///
+  /// In pt, this message translates to:
+  /// **'Conheça o Stway'**
+  String get settingsAboutPage;
+
+  /// No description provided for @settingsAboutPageSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Nome, missão, visão e valores'**
+  String get settingsAboutPageSubtitle;
+
   /// No description provided for @settingsAboutSubtitle.
   ///
   /// In pt, this message translates to:

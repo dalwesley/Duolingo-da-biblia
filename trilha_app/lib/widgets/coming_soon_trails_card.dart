@@ -9,8 +9,19 @@ import 'cinematic_icon.dart';
 import 'immersive_background.dart';
 import 'ui_primitives.dart';
 
+/// Página institucional no site (nome, missão, valores).
+const aboutPageUrl = 'https://stway.com.br/sobre';
+
 /// Página de doação no site. O pagamento fica fora do app.
 const donatePageUrl = 'https://stway.com.br/doar';
+
+/// Abre a página Sobre no navegador externo.
+Future<void> openAboutPage() {
+  return launchUrl(
+    Uri.parse(aboutPageUrl),
+    mode: LaunchMode.externalApplication,
+  );
+}
 
 /// Abre a página de doação no navegador externo.
 Future<void> openDonatePage() {

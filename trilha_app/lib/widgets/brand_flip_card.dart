@@ -1,5 +1,4 @@
 import 'dart:math' as math;
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -149,20 +148,7 @@ class _CardWordmark extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      alignment: Alignment.center,
-      children: [
-        ImageFiltered(
-          imageFilter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
-          child: StwayWordmark(
-            fontSize: _size,
-            letterSpacing: _tracking,
-            letterColor: Colors.black.withValues(alpha: 0.72),
-            aColor: Colors.black.withValues(alpha: 0.72),
-          ),
-        ),
-        const StwayWordmark(fontSize: _size, letterSpacing: _tracking),
-      ],
-    );
+    // Sem ImageFiltered.blur — saveLayer a cada frame na troca de ato.
+    return const StwayWordmark(fontSize: _size, letterSpacing: _tracking);
   }
 }

@@ -85,11 +85,16 @@ class PortraitFace extends StatelessWidget {
       case PortraitStyle.avatar:
         return mark;
       case PortraitStyle.photo:
+        final dpr = MediaQuery.devicePixelRatioOf(context);
+        final px = (size * dpr).round().clamp(32, 256);
         return Image.network(
           photoUrl!.trim(),
           fit: BoxFit.cover,
           width: size,
           height: size,
+          cacheWidth: px,
+          cacheHeight: px,
+          filterQuality: FilterQuality.medium,
           gaplessPlayback: true,
           errorBuilder: (_, _, _) => mark,
           loadingBuilder: (context, child, progress) {

@@ -6944,6 +6944,12 @@ class AppLocalizationsEs extends AppLocalizations {
   String get settingsAbout => 'Acerca de';
 
   @override
+  String get settingsAboutPage => 'Conoce Stway';
+
+  @override
+  String get settingsAboutPageSubtitle => 'Nombre, misión, visión y valores';
+
+  @override
   String get settingsAboutSubtitle =>
       'Aprende la Biblia en escenas cortas, a tu ritmo.';
 

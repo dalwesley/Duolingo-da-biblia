@@ -40,6 +40,7 @@ import '../widgets/home_brand_backdrop.dart';
 import '../widgets/icon_well.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/invite_qr_sheet.dart';
+import '../widgets/shell_tab_scope.dart';
 import '../widgets/ui_primitives.dart';
 import '../widgets/user_avatar.dart';
 import '../widgets/recognition_actions.dart';
@@ -77,7 +78,7 @@ class LeagueScreen extends StatefulWidget {
 }
 
 class _LeagueScreenState extends State<LeagueScreen>
-    with SingleTickerProviderStateMixin {
+    with SingleTickerProviderStateMixin, ShellTabFreezeMixin {
   late final AnimationController _enter;
   List<LeagueEntry> _realPlayers = const [];
   List<LeagueEntry> _overallPlayers = const [];
@@ -337,7 +338,21 @@ class _LeagueScreenState extends State<LeagueScreen>
 
   @override
   Widget build(BuildContext context) {
+    return freezeTab(() => _buildRoot(context));
+  }
+
+  Widget _buildRoot(BuildContext context) {
     final style = Appearance.of(context);
+    final listen = tabListens;
+    final companionNudge = listen
+        ? context.watch<CompanionService>().incomingNudge
+        : context.read<CompanionService>().incomingNudge;
+    final cornerFace = listen
+        ? context.watch<CornerService>().face
+        : context.read<CornerService>().face;
+    final roomIncoming = listen
+        ? context.watch<RoomService>().incoming
+        : context.read<RoomService>().incoming;
     return Stack(
       children: [
         // Trilha STWAY velada — lobby social (não cena).
@@ -365,12 +380,8 @@ class _LeagueScreenState extends State<LeagueScreen>
                 _SegmentTabs(
                   index: _tab,
                   caravanAlert: JuntosInbox.caravanPending(context) > 0,
-                  companionAlert:
-                      context.watch<CompanionService>().incomingNudge !=
-                          null ||
-                      context.watch<CornerService>().face != null,
-                  gruposAlert:
-                      context.watch<RoomService>().incoming.isNotEmpty,
+                  companionAlert: companionNudge != null || cornerFace != null,
+                  gruposAlert: roomIncoming.isNotEmpty,
                   onChanged: (i) {
                     ActHaptics.tap();
                     setState(() => _tab = i);
@@ -378,24 +389,19 @@ class _LeagueScreenState extends State<LeagueScreen>
                 ),
               ),
               const SizedBox(height: AppSpace.section),
-              // Troca de aba desliza o conteúdo para o lado da aba escolhida —
-              // o palco muda, a moldura fica.
+              // Troca de aba: um filho só — empilhar o anterior dobrava paint.
               AnimatedSwitcher(
-                duration: const Duration(milliseconds: 280),
+                duration: const Duration(milliseconds: 220),
                 switchInCurve: Curves.easeOutCubic,
                 switchOutCurve: Curves.easeInCubic,
-                layoutBuilder: (current, previous) => Stack(
-                  alignment: Alignment.topCenter,
-                  children: [...previous, ?current],
-                ),
+                layoutBuilder: (current, _) =>
+                    current ?? const SizedBox.shrink(),
                 transitionBuilder: (child, animation) {
-                  final incoming = child.key == ValueKey(_tab);
-                  final dx = incoming ? 0.06 : -0.06;
                   return FadeTransition(
                     opacity: animation,
                     child: SlideTransition(
                       position: Tween<Offset>(
-                        begin: Offset(dx, 0),
+                        begin: const Offset(0.04, 0),
                         end: Offset.zero,
                       ).animate(animation),
                       child: child,

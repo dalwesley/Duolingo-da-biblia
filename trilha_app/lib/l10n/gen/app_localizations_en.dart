@@ -6898,6 +6898,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get settingsAbout => 'About';
 
   @override
+  String get settingsAboutPage => 'About Stway';
+
+  @override
+  String get settingsAboutPageSubtitle => 'Name, mission, vision, and values';
+
+  @override
   String get settingsAboutSubtitle =>
       'Learn the Bible in short scenes, at your own pace.';
 

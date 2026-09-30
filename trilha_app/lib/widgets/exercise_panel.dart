@@ -200,7 +200,7 @@ class _ExercisePanelState extends State<ExercisePanel>
     }
     if (widget.showFeedback || widget.selected != null) {
       _pulse.stop();
-    } else if (!_pulse.isAnimating) {
+    } else if (TickerMode.valuesOf(context).enabled && !_pulse.isAnimating) {
       _pulse.repeat(reverse: true);
     }
   }

@@ -999,7 +999,6 @@ class _LessonScreenState extends State<LessonScreen>
                                 total: total,
                                 index: _questionIndex,
                                 results: _results,
-                                combo: _combo,
                               ),
                               const SizedBox(height: 4),
                             ] else
@@ -1012,25 +1011,20 @@ class _LessonScreenState extends State<LessonScreen>
                           // Ato sai para a esquerda, o próximo entra pela direita.
                           // Tentar de novo não troca a chave: a pergunta fica e só o
                           // estado local reinicia (mantendo a ordem montada).
+                          // Um filho só: empilhar o painel anterior (com pulse
+                          // vivo) + o novo dobrava o custo de paint na troca.
                           _Phase.quiz => AnimatedSwitcher(
-                            duration: const Duration(milliseconds: 320),
+                            duration: const Duration(milliseconds: 220),
                             switchInCurve: Curves.easeOutCubic,
                             switchOutCurve: Curves.easeInCubic,
-                            layoutBuilder: (current, previous) => Stack(
-                              alignment: Alignment.topCenter,
-                              children: [...previous, ?current],
-                            ),
+                            layoutBuilder: (current, _) =>
+                                current ?? const SizedBox.shrink(),
                             transitionBuilder: (child, animation) {
-                              final incoming =
-                                  child.key ==
-                                  ValueKey(
-                                    'act-${_exercise.id}-$_questionIndex',
-                                  );
                               return FadeTransition(
                                 opacity: animation,
                                 child: SlideTransition(
                                   position: Tween<Offset>(
-                                    begin: Offset(incoming ? 0.14 : -0.14, 0),
+                                    begin: const Offset(0.08, 0),
                                     end: Offset.zero,
                                   ).animate(animation),
                                   child: child,
@@ -1179,18 +1173,16 @@ class _LessonScreenState extends State<LessonScreen>
 }
 
 /// Barra de atos: glow se acertou de primeira, vermelho se errou,
-/// o atual em destaque neutro. Combo vira medidor abaixo.
+/// o atual em destaque neutro.
 class _ActProgress extends StatelessWidget {
   final int total;
   final int index;
   final Map<int, bool> results;
-  final int combo;
 
   const _ActProgress({
     required this.total,
     required this.index,
     required this.results,
-    this.combo = 0,
   });
 
   @override
@@ -1198,69 +1190,32 @@ class _ActProgress extends StatelessWidget {
     final a = Appearance.of(context);
     return Semantics(
       label: context.l10n.lessonQuestionProgress(index + 1, total),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
+      child: Row(
         children: [
-          Row(
-            children: [
-              for (var i = 0; i < total; i++) ...[
-                if (i > 0) const SizedBox(width: 4),
-                Expanded(
-                  child: AnimatedContainer(
-                    duration: const Duration(milliseconds: 320),
-                    curve: Curves.easeOutCubic,
-                    height: i == index ? 8 : 5,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(AppRadii.pill),
-                      color: switch (results[i]) {
-                        true => AppRoles.action,
-                        false => AppRoles.error.withValues(alpha: 0.75),
-                        null => i == index ? a.text : a.progressTrack,
-                      },
-                      boxShadow: results[i] == true
-                          ? [
-                              BoxShadow(
-                                color: AppRoles.action.withValues(alpha: 0.45),
-                                blurRadius: 8,
-                              ),
-                            ]
-                          : null,
-                    ),
-                  ),
+          for (var i = 0; i < total; i++) ...[
+            if (i > 0) const SizedBox(width: 4),
+            Expanded(
+              child: AnimatedContainer(
+                duration: const Duration(milliseconds: 320),
+                curve: Curves.easeOutCubic,
+                height: i == index ? 8 : 5,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(AppRadii.pill),
+                  color: switch (results[i]) {
+                    true => AppRoles.action,
+                    false => AppRoles.error.withValues(alpha: 0.75),
+                    null => i == index ? a.text : a.progressTrack,
+                  },
+                  boxShadow: results[i] == true
+                      ? [
+                          BoxShadow(
+                            color: AppRoles.action.withValues(alpha: 0.45),
+                            blurRadius: 8,
+                          ),
+                        ]
+                      : null,
                 ),
-              ],
-            ],
-          ),
-          if (combo >= 2) ...[
-            const SizedBox(height: 8),
-            Row(
-              children: [
-                CinematicIcon(
-                  glyph: CinematicGlyph.flame,
-                  size: 12,
-                  accent: AppRoles.streak,
-                  framed: false,
-                ),
-                const SizedBox(width: 6),
-                Expanded(
-                  child: Semantics(
-                    label: context.l10n.lessonComboMeterSemantics(combo),
-                    child: ActComboMeter(
-                      combo: combo,
-                      color: AppRoles.streak,
-                    ),
-                  ),
-                ),
-                const SizedBox(width: 8),
-                Text(
-                  context.l10n.lessonCombo(combo),
-                  style: AppTypography.body(
-                    size: 12,
-                    weight: FontWeight.w900,
-                    color: AppRoles.streak,
-                  ),
-                ),
-              ],
+              ),
             ),
           ],
         ],

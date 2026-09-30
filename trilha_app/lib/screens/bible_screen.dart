@@ -18,6 +18,7 @@ import '../widgets/cinematic_icon.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/juntos_chrome.dart';
 import '../widgets/relic_panel.dart';
+import '../widgets/shell_tab_scope.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 import 'bible_reader_screen.dart';
@@ -95,7 +96,7 @@ class BibleScreen extends StatefulWidget {
   State<BibleScreen> createState() => _BibleScreenState();
 }
 
-class _BibleScreenState extends State<BibleScreen> {
+class _BibleScreenState extends State<BibleScreen> with ShellTabFreezeMixin {
   List<BibleBook>? _books;
   bool _searching = false;
   final _searchCtrl = TextEditingController();
@@ -234,6 +235,10 @@ class _BibleScreenState extends State<BibleScreen> {
 
   @override
   Widget build(BuildContext context) {
+    return freezeTab(() => _buildBible(context));
+  }
+
+  Widget _buildBible(BuildContext context) {
     final translationId = context.select(
       (ProgressService p) => p.settings.bibleTranslationId,
     );

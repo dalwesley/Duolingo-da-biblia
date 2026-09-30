@@ -110,7 +110,12 @@ function splitWords(el, isKey) {
 
 document.querySelectorAll('[data-words]').forEach((el) => splitWords(el));
 document.querySelectorAll('[data-kinetic]').forEach((el) => {
-  splitWords(el, (word) => /^(missão|nela\.)$/.test(word));
+  const keys = (el.dataset.keys || 'missão|nela.')
+    .split('|')
+    .map((k) => k.trim())
+    .filter(Boolean);
+  const pattern = new RegExp(`^(${keys.map((k) => k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})$`);
+  splitWords(el, (word) => pattern.test(word));
 });
 
 /* ─── Abertura: "No princípio… e houve luz." ───────── */
@@ -146,6 +151,12 @@ document.querySelectorAll('[data-kinetic]').forEach((el) => {
   document.querySelector('.skip-intro')?.addEventListener('click', finish);
 
   if (!motionOk) {
+    replay?.remove();
+    return;
+  }
+
+  // Só a home tem o prólogo de Gênesis; páginas internas não rodam a intro.
+  if (!document.querySelector('.prologue')) {
     replay?.remove();
     return;
   }
