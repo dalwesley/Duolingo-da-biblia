@@ -36,6 +36,7 @@ import '../widgets/companion_formed_sheet.dart';
 import '../widgets/companion_invite_confirm_sheet.dart';
 import '../widgets/companion_nudge_sheet.dart';
 import '../widgets/hero_card_atmosphere.dart';
+import '../widgets/icon_well.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/invite_qr_sheet.dart';
 import '../widgets/ui_primitives.dart';
@@ -1519,7 +1520,11 @@ class _CaravanStageCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final weekly = pane == 1;
+    // Um ponto quente no bloco: tint/glow de recompensa — o resto da
+    // tela fica chrome frio; o ouro diz "isto é jogo".
     return GlassCard(
+      tint: AppRoles.reward,
+      glow: 0.35,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -1601,8 +1606,8 @@ class _CaravanExplainer extends StatelessWidget {
   }
 }
 
-/// Três passos lado a lado, ligados por um fio — Caravana, Companhia e
-/// Desafio falam o mesmo idioma visual (chrome neutro, não amarelo).
+/// Três passos lado a lado, ligados por um fio — poços com chrome frio;
+/// o nó do meio leva [AppRoles.reward] (único ouro do fluxo).
 class _ExplainerSteps extends StatelessWidget {
   final List<(CinematicGlyph, String)> steps;
 
@@ -1611,47 +1616,45 @@ class _ExplainerSteps extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
+    final mid = steps.length ~/ 2;
     return Stack(
       children: [
         Positioned(
           left: 40,
           right: 40,
           top: 19,
-          child: Container(height: 1, color: a.cardBorder),
+          child: Container(
+            height: 1,
+            color: AppRoles.reward.withValues(alpha: 0.35),
+          ),
         ),
         Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            for (final s in steps)
+            for (var i = 0; i < steps.length; i++)
               Expanded(
                 child: Column(
                   children: [
-                    Container(
-                      width: 38,
-                      height: 38,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: a.cardFill,
-                        border: Border.all(color: a.cardBorder),
-                      ),
-                      child: Center(
-                        child: CinematicIcon(
-                          glyph: s.$1,
-                          size: AppMetrics.iconMd,
-                          accent: AppRoles.chrome,
-                          framed: false,
-                        ),
+                    IconWell(
+                      size: 38,
+                      accent: i == mid ? AppRoles.reward : AppRoles.chrome,
+                      glowing: i == mid,
+                      child: CinematicIcon(
+                        glyph: steps[i].$1,
+                        size: AppMetrics.iconMd,
+                        accent: i == mid ? AppRoles.reward : AppRoles.chrome,
+                        framed: false,
                       ),
                     ),
                     const SizedBox(height: 8),
                     Text(
-                      s.$2,
+                      steps[i].$2,
                       textAlign: TextAlign.center,
                       style: AppTypography.body(
                         size: 12,
                         height: 1.3,
                         weight: FontWeight.w700,
-                        color: a.textSecondary,
+                        color: i == mid ? a.textSecondary : a.textFaint,
                       ),
                     ),
                   ],

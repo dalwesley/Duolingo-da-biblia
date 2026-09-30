@@ -88,8 +88,8 @@ void main() {
     expect(filledStyle!.fontFamily, runStyle!.fontFamily);
     expect(filledStyle!.fontWeight, runStyle!.fontWeight);
     expect(filledStyle!.height, runStyle!.height);
-    // Antes de conferir: seleção clara; depois: ouro no acerto.
-    expect(filledStyle!.color, AppRoles.selected);
+    // Lacuna preenchida em ouro — seleção clara some no texto do verso.
+    expect(filledStyle!.color, AppRoles.action);
     expect(filledStyle!.decoration, isNull);
   });
 }

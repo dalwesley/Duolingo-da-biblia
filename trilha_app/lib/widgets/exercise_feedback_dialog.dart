@@ -7,7 +7,6 @@ import '../services/bible_service.dart';
 import '../services/session_composer.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
-import 'act_feel.dart';
 import 'cinematic_icon.dart';
 import 'immersive_background.dart';
 import 'question_report_sheet.dart';
@@ -355,25 +354,13 @@ class _ExerciseFeedbackDialogState extends State<ExerciseFeedbackDialog>
                               ),
                               const SizedBox(width: 12),
                               Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      title,
-                                      style: AppTypography.display(
-                                        size: combo >= 3 ? 28 : 24,
-                                        height: 1.1,
-                                        color: color,
-                                      ),
-                                    ),
-                                    if (isCorrect && combo >= 2) ...[
-                                      const SizedBox(height: 8),
-                                      ActComboMeter(
-                                        combo: combo,
-                                        color: AppRoles.streak,
-                                      ),
-                                    ],
-                                  ],
+                                child: Text(
+                                  title,
+                                  style: AppTypography.display(
+                                    size: combo >= 3 ? 28 : 24,
+                                    height: 1.1,
+                                    color: color,
+                                  ),
                                 ),
                               ),
                               IconButton(

@@ -103,6 +103,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
   late final AnimationController _entrance;
   late final AnimationController _pulse;
   late final AnimationController _count;
+  late final AnimationController _claimPop;
 
   late final Animation<double> _heroScale;
   late final Animation<double> _heroGlow;
@@ -115,6 +116,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
   late final Animation<double> _ctaOpacity;
   late final Animation<Offset> _ctaSlide;
   late final Animation<double> _countProgress;
+  late final Animation<double> _claimScale;
 
   @override
   void initState() {
@@ -131,6 +133,26 @@ class _CelebrationScreenState extends State<CelebrationScreen>
       vsync: this,
       duration: const Duration(milliseconds: 1100),
     );
+    _claimPop = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 520),
+    );
+    _claimScale = TweenSequence<double>([
+      TweenSequenceItem(
+        tween: Tween(
+          begin: 1.0,
+          end: 1.14,
+        ).chain(CurveTween(curve: Curves.easeOutBack)),
+        weight: 45,
+      ),
+      TweenSequenceItem(
+        tween: Tween(
+          begin: 1.14,
+          end: 1.0,
+        ).chain(CurveTween(curve: Curves.easeOutCubic)),
+        weight: 55,
+      ),
+    ]).animate(_claimPop);
 
     _heroScale = CurvedAnimation(
       parent: _entrance,
@@ -189,6 +211,13 @@ class _CelebrationScreenState extends State<CelebrationScreen>
       curve: Curves.easeOutCubic,
     );
 
+    _count.addStatusListener((status) {
+      if (status != AnimationStatus.completed || !mounted) return;
+      if (widget.failed || _awardedSteps <= 0) return;
+      ActHaptics.confirm();
+      _claimPop.forward(from: 0);
+    });
+
     _entrance.forward();
     Future<void>.delayed(const Duration(milliseconds: 520), () {
       if (mounted) _count.forward();
@@ -200,6 +229,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
     _entrance.dispose();
     _pulse.dispose();
     _count.dispose();
+    _claimPop.dispose();
     super.dispose();
   }
 
@@ -697,6 +727,7 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                             (_hook?.hasEcho ?? false),
                                         pulse: _pulse,
                                         scale: _heroScale,
+                                        claimScale: _claimScale,
                                         kicker: _kicker,
                                         headline: _headline,
                                         insight: (_hook?.hasEcho ?? false)
@@ -921,6 +952,7 @@ class _HeroBeat extends StatelessWidget {
   final bool denseStats;
   final AnimationController pulse;
   final Animation<double> scale;
+  final Animation<double>? claimScale;
   final String kicker;
   final String headline;
   final String? insight;
@@ -951,6 +983,7 @@ class _HeroBeat extends StatelessWidget {
     required this.streak,
     required this.streakGoal,
     required this.pct,
+    this.claimScale,
     this.streakFrom,
     this.streakUp = false,
     this.denseStats = false,
@@ -967,6 +1000,7 @@ class _HeroBeat extends StatelessWidget {
     final inCommit = streak > 0 && streak <= streakGoal;
     // Sem "SEM ERRO" — a headline já celebra a missão.
     final showKicker = !perfect && kicker.trim().isNotEmpty;
+    final showClean = perfect;
     return Column(
       children: [
         ScaleTransition(
@@ -1009,6 +1043,15 @@ class _HeroBeat extends StatelessWidget {
             weight: FontWeight.w900,
           ),
         ),
+        if (showClean) ...[
+          const SizedBox(height: 10),
+          SoftBadge(
+            text: context.l10n.celebrationCleanScene,
+            glyph: CinematicGlyph.check,
+            accent: AppRoles.reward,
+            solid: true,
+          ),
+        ],
         if ((insight ?? '').trim().isNotEmpty) ...[
           const SizedBox(height: 8),
           Text(
@@ -1058,6 +1101,7 @@ class _HeroBeat extends StatelessWidget {
                     pulse: pulse,
                     featured: !inCommit,
                     dense: denseStats || compact,
+                    claimScale: claimScale,
                   ),
                 ),
                 SizedBox(width: denseStats || compact ? 6 : AppSpace.sm),
@@ -1823,6 +1867,7 @@ class _StatCard extends StatelessWidget {
   final AnimationController pulse;
   final bool featured;
   final bool dense;
+  final Animation<double>? claimScale;
 
   const _StatCard({
     required this.glyph,
@@ -1833,12 +1878,14 @@ class _StatCard extends StatelessWidget {
     required this.pulse,
     this.featured = false,
     this.dense = false,
+    this.claimScale,
   });
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    return AnimatedBuilder(
+    final claim = claimScale;
+    Widget card = AnimatedBuilder(
       animation: pulse,
       builder: (context, child) {
         final phase = (pulse.value + delay) % 1.0;
@@ -1866,6 +1913,7 @@ class _StatCard extends StatelessWidget {
         ),
         radius: dense ? AppRadii.sm : AppRadii.md,
         tint: featured ? color : null,
+        glow: featured ? 0.35 : null,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
@@ -1874,29 +1922,41 @@ class _StatCard extends StatelessWidget {
               size: dense ? AppMetrics.chipIcon : AppMetrics.iconMd,
               accent: color,
               framed: false,
-              glowing: false,
+              glowing: featured,
             ),
             SizedBox(height: dense ? 2 : AppSpace.xs),
             Text(
               value,
               style: AppTypography.title(
-                size: dense ? (featured ? 14 : 12) : (featured ? 18 : 16),
+                size: dense ? (featured ? 16 : 12) : (featured ? 20 : 16),
+                weight: FontWeight.w900,
                 color: featured ? color : a.text,
               ),
             ),
             Text(
               label,
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
               style: AppTypography.label(
                 size: 10,
                 weight: FontWeight.w600,
                 letterSpacing: 0.3,
-                color: a.textFaint,
+                color: featured ? color.withValues(alpha: 0.85) : a.textFaint,
               ),
             ),
           ],
         ),
       ),
     );
+    if (claim != null) {
+      card = AnimatedBuilder(
+        animation: claim,
+        builder: (context, child) =>
+            Transform.scale(scale: claim.value, child: child),
+        child: card,
+      );
+    }
+    return card;
   }
 }
 

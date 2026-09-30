@@ -364,9 +364,11 @@ class _ActFloatLabelState extends State<ActFloatLabel>
             child: Transform.translate(
               offset: Offset(0, -36 * t),
               child: Transform.scale(
-                scale: 0.82 + 0.28 * Curves.easeOutBack.transform(
-                  (_ctrl.value / 0.45).clamp(0.0, 1.0),
-                ),
+                scale: 0.82 +
+                    0.28 *
+                        Curves.easeOutBack.transform(
+                          (_ctrl.value / 0.45).clamp(0.0, 1.0),
+                        ),
                 child: child,
               ),
             ),
@@ -387,7 +389,7 @@ class _ActFloatLabelState extends State<ActFloatLabel>
   }
 }
 
-/// Cinco pips até reacender lâmpada — o combo vira medidor, não só texto.
+/// Pips de calor da sequência — só ritmo visual, sem prometer recompensa.
 class ActComboMeter extends StatelessWidget {
   final int combo;
   final Color color;

@@ -182,7 +182,9 @@ class AppRoles {
   static const reward = AppColors.accent;
   static const onReward = AppColors.inkOnAccent;
 
-  static const chrome = Color(0xFFE6ECF5);
+  /// Aço frio — distinto do branco de [selected], para o chrome não
+  /// competir com a pílula de seleção (senão a tela vira tudo branco).
+  static const chrome = Color(0xFF9EB0C4);
   static const selected = Color(0xFFF2F5FA);
 
   /// Seleção sobre placa clara (respostas marfim da cena): contorno escuro

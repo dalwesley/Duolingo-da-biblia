@@ -18,7 +18,7 @@ void main() {
           isReplay: false,
           isBoss: false,
         ),
-        '100% de acertos',
+        'Tudo certo · bônus de passos',
       );
       expect(
         CelebrationCopy.headline(

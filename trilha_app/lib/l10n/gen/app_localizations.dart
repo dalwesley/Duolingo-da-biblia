@@ -922,6 +922,12 @@ abstract class AppLocalizations {
   /// **'Voltar ao mapa'**
   String get celebrationBackToMap;
 
+  /// 100% de acertos e nenhuma lâmpada apagada
+  ///
+  /// In pt, this message translates to:
+  /// **'Cena limpa'**
+  String get celebrationCleanScene;
+
   /// No description provided for @celebrationCommitmentBeyond.
   ///
   /// In pt, this message translates to:
@@ -4180,11 +4186,29 @@ abstract class AppLocalizations {
   /// **'Agora'**
   String get journeyNow;
 
+  /// CTA da estação atual no mapa
+  ///
+  /// In pt, this message translates to:
+  /// **'Jogar'**
+  String get journeyPlay;
+
+  /// No description provided for @journeyScenesLeft.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{Falta 1 cena} other{Faltam {count} cenas}}'**
+  String journeyScenesLeft(int count);
+
   /// No description provided for @journeySoonHint.
   ///
   /// In pt, this message translates to:
   /// **'Em breve · esta trilha ainda está sendo escrita.'**
   String get journeySoonHint;
+
+  /// Próxima cena da trilha é boss
+  ///
+  /// In pt, this message translates to:
+  /// **'Travessia à frente'**
+  String get journeyTravessiaAhead;
 
   /// No description provided for @journeyYouAreHere.
   ///
@@ -5418,8 +5442,8 @@ abstract class AppLocalizations {
   /// No description provided for @lessonComboMeterSemantics.
   ///
   /// In pt, this message translates to:
-  /// **'Combo {count} · {filled} de {cycle} até reacender'**
-  String lessonComboMeterSemantics(int count, int filled, int cycle);
+  /// **'Sequência {count}'**
+  String lessonComboMeterSemantics(int count);
 
   /// Duração estimada da cena
   ///
@@ -5462,12 +5486,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'{count, plural, =1{~3 min · 1 pergunta} other{~3 min · {count} perguntas}}'**
   String lessonIntroPulse(int count);
-
-  /// No description provided for @lessonLampRelit.
-  ///
-  /// In pt, this message translates to:
-  /// **'Cinco seguidas: uma lâmpada reacendeu.'**
-  String get lessonLampRelit;
 
   /// Lâmpada = vida dentro da cena
   ///
@@ -5772,7 +5790,7 @@ abstract class AppLocalizations {
   /// No description provided for @mascotHeadlinePerfect.
   ///
   /// In pt, this message translates to:
-  /// **'100% de acertos'**
+  /// **'Tudo certo · bônus de passos'**
   String get mascotHeadlinePerfect;
 
   /// No description provided for @mascotHeadlineReplay.
@@ -5796,7 +5814,7 @@ abstract class AppLocalizations {
   /// No description provided for @mascotKickerPerfect.
   ///
   /// In pt, this message translates to:
-  /// **'Sem erro'**
+  /// **'Cena limpa'**
   String get mascotKickerPerfect;
 
   /// No description provided for @mascotKickerReplay.

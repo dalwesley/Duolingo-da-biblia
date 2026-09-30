@@ -38,8 +38,8 @@ são matéria-prima do tema, não se usam direto em tela nova.
 |---|---|---|
 | Ação principal | `AppRoles.action` (ouro `#F7BB01`) | `CopperCta`, o que avança |
 | Recompensa | `AppRoles.reward` (ouro) | passos, medalha, baú, meta cumprida |
-| Chrome | `AppRoles.chrome` (neutro) | nav, TopBar, ícone de aba — **igual em todas as abas** |
-| Seleção (cena) | fill branco + rim ouro | opção tocada, ainda não confirmada |
+| Chrome | `AppRoles.chrome` (aço frio `#9EB0C4`) | nav, TopBar, ícone de aba — **igual em todas as abas**; nunca o mesmo branco de [selected] |
+| Seleção (cena / segmentado) | fill branco (`selected`) | opção tocada na cena; pílula ativa do `AppSegmentedTabs` |
 | Idle (cena) | `nightElevated` + texto claro | placas de resposta no céu escuro |
 | Acerto na cena | `AppRoles.action` (ouro) | placa, veredito, barra, flash |
 | Sucesso / presença (home) | `AppRoles.presence` (glow) | orbs da semana, "estudou hoje" |
@@ -143,10 +143,18 @@ Tudo o mais é subordinado a isso:
 - **lâmpada** é a vida dentro da cena; **lamparina** é a semana no perfil;
 - **medalha** é a recompensa; o conjunto delas é o **cofre**.
 
-Na cena (partida): HUD = progresso das perguntas + lâmpadas + medidor de
-combo (5 seguidas reacendem). Juice do acerto = flash ouro, `ActFloatLabel`
-no combo, faísca na placa. Erro = flash vermelho + lâmpada que apaga com
-peso. Veredito na base (painel), não tela cheia.
+Na cena (partida): HUD = progresso + lâmpadas + medidor de sequência
+(`×N` + `ActComboMeter`). Combo não cura lâmpada nem soma passos extras.
+Erro = flash vermelho + lâmpada que apaga. Veredito na base: cheer + `×N`
+no título — sem medidor duplicado nem overlay sobre o gesto.
+
+Na celebração: contagem de passos sobe e, ao fechar, háptico + pop no cartão
+de passos. **Cena limpa** (100% + lâmpadas intactas) aparece como selo;
+o multiplicador já está em `computeLessonSteps`.
+
+No mapa da área: estação atual é nível jogável (glow, barra, "Jogar", aviso
+de Travessia). Estações quietas com progresso mostram filete; beacon atual
+pulsa. Toque com `ActPress`.
 
 No Hoje (lobby): `HomePlayerHeader` é cartão de jogador — sequência, meta
 com barra, gelo, passos, semana em orbs. Lâmpadas não aparecem fora da cena.

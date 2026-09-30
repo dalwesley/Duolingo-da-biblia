@@ -521,8 +521,8 @@ class _VerseStage extends StatelessWidget {
     final filled = value != null;
     final wrong = revealed && filled && !correct;
 
-    // Palavra preenchida entra no mesmo recorte do versículo — mesma
-    // família/peso/corpo; só a cor marca a lacuna.
+    // Palavra preenchida no mesmo recorte tipográfico; ouro marca a lacuna
+    // (seleção/chrome ≈ texto do verso e some).
     if (filled && !wrong) {
       final lead = _VerseFillPanelState._leadingPunct(token);
       final trail = _VerseFillPanelState._trailingPunct(token);
@@ -531,7 +531,7 @@ class _VerseStage extends StatelessWidget {
           if (lead.isNotEmpty) TextSpan(text: lead),
           TextSpan(
             text: value,
-            style: verseStyle.copyWith(color: accent),
+            style: verseStyle.copyWith(color: AppRoles.action),
             recognizer: revealed ? null : clearRecognizer(i),
           ),
           if (trail.isNotEmpty) TextSpan(text: trail),
@@ -746,12 +746,10 @@ class _BlankSlot extends StatelessWidget {
     } else {
       slot = GestureDetector(
         onTap: revealed ? null : onTap,
-        // Antes de conferir: claro (seleção); conferido: ouro.
+        // Ouro na lacuna — seleção clara some no texto do verso.
         child: Text(
           value!,
-          style: revealed
-              ? verseStyle.copyWith(color: AppRoles.action)
-              : verseStyle.copyWith(color: AppRoles.selected),
+          style: verseStyle.copyWith(color: AppRoles.action),
         ),
       );
     }
@@ -814,7 +812,10 @@ class _WordChip extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(AppRadii.xl),
-              color: Color.lerp(AppColors.card, accent, 0.16)!,
+              // Usada: placa ouro (seleção na cena). Idle: marfim.
+              color: used
+                  ? AppRoles.action
+                  : Color.lerp(AppColors.card, accent, 0.16)!,
               boxShadow: const [
                 BoxShadow(
                   color: AppColors.dropShadow,
@@ -823,19 +824,12 @@ class _WordChip extends StatelessWidget {
                 ),
               ],
             ),
-            // Palavra já posta: contorno escuro de seleção sobre o marfim.
-            foregroundDecoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(AppRadii.xl),
-              border: used
-                  ? Border.all(
-                      color: AppRoles.selectedOnLight,
-                      width: AppRoles.selectedOutlineWidth,
-                    )
-                  : null,
-            ),
             child: Text(
               label,
-              style: AppTypography.title(size: 14, color: AppColors.night),
+              style: AppTypography.title(
+                size: 14,
+                color: used ? AppRoles.onAction : AppColors.night,
+              ),
             ),
           ),
         ),

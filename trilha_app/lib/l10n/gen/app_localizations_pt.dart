@@ -505,6 +505,9 @@ class AppLocalizationsPt extends AppLocalizations {
   String get celebrationBackToMap => 'Voltar ao mapa';
 
   @override
+  String get celebrationCleanScene => 'Cena limpa';
+
+  @override
   String celebrationCommitmentBeyond(int goal) {
     return 'Além do compromisso de $goal dias.';
   }
@@ -2667,8 +2670,25 @@ class AppLocalizationsPt extends AppLocalizations {
   String get journeyNow => 'Agora';
 
   @override
+  String get journeyPlay => 'Jogar';
+
+  @override
+  String journeyScenesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Faltam $count cenas',
+      one: 'Falta 1 cena',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get journeySoonHint =>
       'Em breve · esta trilha ainda está sendo escrita.';
+
+  @override
+  String get journeyTravessiaAhead => 'Travessia à frente';
 
   @override
   String get journeyYouAreHere => 'Onde você está';
@@ -3481,8 +3501,8 @@ class AppLocalizationsPt extends AppLocalizations {
   }
 
   @override
-  String lessonComboMeterSemantics(int count, int filled, int cycle) {
-    return 'Combo $count · $filled de $cycle até reacender';
+  String lessonComboMeterSemantics(int count) {
+    return 'Sequência $count';
   }
 
   @override
@@ -3523,9 +3543,6 @@ class AppLocalizationsPt extends AppLocalizations {
     );
     return '$_temp0';
   }
-
-  @override
-  String get lessonLampRelit => 'Cinco seguidas: uma lâmpada reacendeu.';
 
   @override
   String lessonLampsLeft(int count) {
@@ -3705,7 +3722,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get mascotHeadlineBoss => 'Travessia concluída';
 
   @override
-  String get mascotHeadlinePerfect => '100% de acertos';
+  String get mascotHeadlinePerfect => 'Tudo certo · bônus de passos';
 
   @override
   String get mascotHeadlineReplay => 'Você voltou ao texto';
@@ -3717,7 +3734,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get mascotKickerBoss => 'Travessia final';
 
   @override
-  String get mascotKickerPerfect => 'Sem erro';
+  String get mascotKickerPerfect => 'Cena limpa';
 
   @override
   String get mascotKickerReplay => 'Revisão';

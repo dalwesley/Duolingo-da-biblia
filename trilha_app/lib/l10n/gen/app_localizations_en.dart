@@ -504,6 +504,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get celebrationBackToMap => 'Back to map';
 
   @override
+  String get celebrationCleanScene => 'Clean scene';
+
+  @override
   String celebrationCommitmentBeyond(int goal) {
     return 'Past your $goal-day commitment.';
   }
@@ -2668,8 +2671,25 @@ class AppLocalizationsEn extends AppLocalizations {
   String get journeyNow => 'Now';
 
   @override
+  String get journeyPlay => 'Play';
+
+  @override
+  String journeyScenesLeft(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count scenes left',
+      one: '1 scene left',
+    );
+    return '$_temp0';
+  }
+
+  @override
   String get journeySoonHint =>
       'Coming soon · this trail is still being written.';
+
+  @override
+  String get journeyTravessiaAhead => 'Crossing ahead';
 
   @override
   String get journeyYouAreHere => 'Where you are';
@@ -3483,8 +3503,8 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String lessonComboMeterSemantics(int count, int filled, int cycle) {
-    return 'Combo $count · $filled of $cycle until a lamp relights';
+  String lessonComboMeterSemantics(int count) {
+    return 'Streak $count';
   }
 
   @override
@@ -3525,9 +3545,6 @@ class AppLocalizationsEn extends AppLocalizations {
     );
     return '$_temp0';
   }
-
-  @override
-  String get lessonLampRelit => 'Five in a row: a lamp relit.';
 
   @override
   String lessonLampsLeft(int count) {
@@ -3708,7 +3725,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get mascotHeadlineBoss => 'Crossing complete';
 
   @override
-  String get mascotHeadlinePerfect => '100% correct';
+  String get mascotHeadlinePerfect => 'All correct · step bonus';
 
   @override
   String get mascotHeadlineReplay => 'You returned to the text';
@@ -3720,7 +3737,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get mascotKickerBoss => 'Final crossing';
 
   @override
-  String get mascotKickerPerfect => 'No mistakes';
+  String get mascotKickerPerfect => 'Clean scene';
 
   @override
   String get mascotKickerReplay => 'Review';

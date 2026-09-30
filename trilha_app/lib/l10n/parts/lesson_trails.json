@@ -314,6 +314,24 @@
     "en": "Now",
     "es": "Ahora"
   },
+  "journeyScenesLeft": {
+    "pt": "{count, plural, =1{Falta 1 cena} other{Faltam {count} cenas}}",
+    "en": "{count, plural, =1{1 scene left} other{{count} scenes left}}",
+    "es": "{count, plural, =1{Falta 1 escena} other{Faltan {count} escenas}}",
+    "placeholders": {"count": "int"}
+  },
+  "journeyTravessiaAhead": {
+    "pt": "Travessia à frente",
+    "en": "Crossing ahead",
+    "es": "Travesía por delante",
+    "description": "Próxima cena da trilha é boss"
+  },
+  "journeyPlay": {
+    "pt": "Jogar",
+    "en": "Play",
+    "es": "Jugar",
+    "description": "CTA da estação atual no mapa"
+  },
   "journeyBeyondHorizon": {
     "pt": "Ainda além do horizonte",
     "en": "Still beyond the horizon",

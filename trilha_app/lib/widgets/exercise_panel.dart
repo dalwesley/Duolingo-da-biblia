@@ -900,12 +900,12 @@ TextStyle _verseWordStyle({
   color: color ?? AppColors.textOnDark,
 );
 
-/// Palavra na lacuna: seleção = claro; acerto = ouro; (erro no poço).
+/// Palavra na lacuna: ouro (seleção clara some no texto do verso); erro no poço.
 TextStyle _filledWordStyle(TextStyle base, _OptState state) {
-  if (state == _OptState.correct) {
-    return base.copyWith(color: AppRoles.action);
-  }
-  return base.copyWith(color: AppRoles.selected);
+  // wrong usa _BlankGap; aqui só picked/correct.
+  return base.copyWith(
+    color: state == _OptState.wrong ? AppRoles.error : AppRoles.action,
+  );
 }
 
 /// Glifo do gesto — pelo tipo, não pelo rótulo (que muda com o idioma).

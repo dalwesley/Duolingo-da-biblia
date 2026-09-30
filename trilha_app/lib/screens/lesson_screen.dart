@@ -107,10 +107,6 @@ class _LessonScreenState extends State<LessonScreen>
   /// Índice da lâmpada que acabou de apagar — flash vermelho no HUD.
   int? _lampFlashOff;
 
-  /// Texto flutuante de combo no impacto (sobe e some).
-  String? _floatLabel;
-  int _floatTick = 0;
-
   /// Primeira tentativa de cada ato (true acertou, false errou) — pinta a
   /// barra de progresso segmentada.
   final Map<int, bool> _results = {};
@@ -442,13 +438,10 @@ class _LessonScreenState extends State<LessonScreen>
     final firstTry = !_results.containsKey(slot);
     final attempt = _wrongsHere + 1;
     _results.putIfAbsent(slot, () => correct);
-    var relit = false;
     if (correct) {
       SoundService.instance.playCorrect();
       _combo++;
       if (_combo >= 3) ActHaptics.success();
-      // Cinco seguidas reacendem uma lâmpada.
-      relit = _combo % 5 == 0 && !_outOfLamps && _lamps < _maxLamps;
     } else {
       SoundService.instance.playWrong();
       _combo = 0;
@@ -474,19 +467,12 @@ class _LessonScreenState extends State<LessonScreen>
       _isCorrect = correct;
       _revealNow = reveal;
       _skipNow = skip;
-      if (relit) _lamps = (_lamps + 1).clamp(0, _maxLamps);
       // Só o primeiro erro de cada pergunta apaga lâmpada.
       if (!correct && firstTry && !requeued) {
         final lost = _lamps - 1;
         _lamps = (_lamps - 1).clamp(0, _maxLamps);
         if (lost >= 0) _lampFlashOff = lost;
         if (_lamps == 0) _outOfLamps = true;
-      }
-      if (correct && _combo >= 2) {
-        _floatLabel = context.l10n.lessonCombo(_combo);
-        _floatTick++;
-      } else {
-        _floatLabel = null;
       }
       _showFeedback = false;
     });
@@ -498,13 +484,6 @@ class _LessonScreenState extends State<LessonScreen>
     }
 
     final progress = context.read<ProgressService>();
-    if (relit) {
-      showAppToastFor(
-        context,
-        message: context.l10n.lessonLampRelit,
-        glyph: CinematicGlyph.lamp,
-      );
-    }
     if (!correct && firstTry && !requeued && progress.takeLampsTeach()) {
       final left = _lamps;
       final msg = context.l10n.lessonLampsLeft(left <= 0 ? 0 : left);
@@ -1165,24 +1144,6 @@ class _LessonScreenState extends State<LessonScreen>
                     },
                   ),
                 if (_phase == _Phase.quiz &&
-                    _floatLabel != null &&
-                    !_showFeedback)
-                  Positioned(
-                    top: 0,
-                    left: 0,
-                    right: 0,
-                    bottom: 0,
-                    child: IgnorePointer(
-                      child: Center(
-                        child: ActFloatLabel(
-                          key: ValueKey('float-$_floatTick'),
-                          text: _floatLabel!,
-                          color: AppRoles.action,
-                        ),
-                      ),
-                    ),
-                  ),
-                if (_phase == _Phase.quiz &&
                     _showFeedback &&
                     _selected != null &&
                     _isCorrect != null)
@@ -1235,9 +1196,6 @@ class _ActProgress extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
-    final filled = combo < 1
-        ? 0
-        : (combo % 5 == 0 ? 5 : combo % 5);
     return Semantics(
       label: context.l10n.lessonQuestionProgress(index + 1, total),
       child: Column(
@@ -1286,11 +1244,7 @@ class _ActProgress extends StatelessWidget {
                 const SizedBox(width: 6),
                 Expanded(
                   child: Semantics(
-                    label: context.l10n.lessonComboMeterSemantics(
-                      combo,
-                      filled,
-                      5,
-                    ),
+                    label: context.l10n.lessonComboMeterSemantics(combo),
                     child: ActComboMeter(
                       combo: combo,
                       color: AppRoles.streak,

@@ -10,6 +10,7 @@ import '../utils/difficulty_visuals.dart';
 import '../utils/trail_progress.dart';
 import '../utils/trail_visuals.dart';
 import 'cinematic_icon.dart';
+import 'act_feel.dart';
 import 'immersive_background.dart';
 import 'mode_emblem.dart';
 import 'relic_panel.dart';
@@ -261,10 +262,10 @@ class _RailBeacon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = isCurrent ? 16.0 : 10.0;
+    final size = isCurrent ? 18.0 : 10.0;
     final a = Appearance.of(context);
     return SizedBox(
-      height: isCurrent ? 26 : 20,
+      height: isCurrent ? 28 : 20,
       child: Center(
         child: Container(
           width: size,
@@ -276,8 +277,17 @@ class _RailBeacon extends StatelessWidget {
                 : (isLocked ? a.cardBorder : a.progressTrack),
             border: Border.all(
               color: isCurrent ? accent : a.cardBorder,
-              width: 1.5,
+              width: isCurrent ? 2 : 1.5,
             ),
+            boxShadow: isCurrent
+                ? [
+                    BoxShadow(
+                      color: accent.withValues(alpha: 0.55),
+                      blurRadius: 12,
+                      spreadRadius: 1,
+                    ),
+                  ]
+                : null,
           ),
           child: isDone
               ? Center(
@@ -288,7 +298,18 @@ class _RailBeacon extends StatelessWidget {
                     framed: false,
                   ),
                 )
-              : null,
+              : (isCurrent
+                  ? Center(
+                      child: Container(
+                        width: 6,
+                        height: 6,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: AppColors.night.withValues(alpha: 0.85),
+                        ),
+                      ),
+                    )
+                  : null),
         ),
       ),
     );
@@ -409,6 +430,17 @@ class _RailPainter extends CustomPainter {
       old.seed != seed;
 }
 
+/// Próxima cena da trilha é travessia (boss), pelo índice de progresso.
+bool _nextIsBoss(JourneyPathItem item) {
+  final missions = item.trail.modules
+      .expand((m) => m.missions)
+      .toList(growable: false);
+  if (missions.isEmpty || item.done < 0 || item.done >= missions.length) {
+    return false;
+  }
+  return missions[item.done].isBoss;
+}
+
 class _HeroStation extends StatelessWidget {
   final JourneyPathItem item;
   final Color accent;
@@ -425,131 +457,183 @@ class _HeroStation extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final pct = item.total > 0 ? item.done / item.total : 0.0;
+    final left = (item.total - item.done).clamp(0, item.total);
     final a = Appearance.of(context);
     final mode = TrailDifficulty.fromId(item.activeDifficultyId);
     final modeCleared = mode != null && item.clearedModeIds.contains(mode.id);
     final modeColor = mode != null ? DifficultyVisuals.accentFor(mode) : accent;
-    return Material(
-      color: Colors.transparent,
-      child: InkWell(
-        onTap: onTap,
-        borderRadius: BorderRadius.circular(AppRadii.lg),
-        child: Ink(
-          decoration: DifficultyVisuals.stationCard(
-            accent: modeColor,
-            baseFill: a.cardFill,
-            lit: true,
-          ),
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(AppRadii.lg),
-            child: Stack(
-              children: [
-                Positioned(
-                  top: 0,
-                  left: 0,
-                  right: 0,
-                  height: 2,
-                  child: ColoredBox(color: modeColor),
-                ),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(
-                    AppSpace.xl,
-                    AppSpace.lg + 2,
-                    AppSpace.xl,
-                    AppSpace.lg,
+    final travessia = _nextIsBoss(item);
+    return ActPress(
+      onTap: onTap,
+      depth: 4,
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(AppRadii.lg),
+          boxShadow: [
+            BoxShadow(
+              color: modeColor.withValues(alpha: 0.28),
+              blurRadius: 18,
+              offset: const Offset(0, 6),
+            ),
+          ],
+        ),
+        child: Material(
+          color: Colors.transparent,
+          child: Ink(
+            decoration: DifficultyVisuals.stationCard(
+              accent: modeColor,
+              baseFill: a.cardFill,
+              lit: true,
+            ),
+            child: ClipRRect(
+              borderRadius: BorderRadius.circular(AppRadii.lg),
+              child: Stack(
+                children: [
+                  Positioned(
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    height: 3,
+                    child: ColoredBox(color: modeColor),
                   ),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        children: [
-                          SectionLabel(
-                            context.l10n.trailsTrailNumber(_roman(item.chapterIndex)),
-                            size: 10,
-                            color: modeColor,
+                  Positioned(
+                    right: -28,
+                    top: -28,
+                    child: IgnorePointer(
+                      child: Container(
+                        width: 110,
+                        height: 110,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          gradient: RadialGradient(
+                            colors: [
+                              modeColor.withValues(alpha: 0.22),
+                              Colors.transparent,
+                            ],
                           ),
-                          const Spacer(),
-                          SoftBadge(
-                            text: context.l10n.journeyNow,
-                            accent: modeColor,
-                            solid: true,
-                          ),
-                        ],
-                      ),
-                      if (mode != null) ...[
-                        const SizedBox(height: AppSpace.sm + 2),
-                        ModeStatusChip(difficulty: mode, cleared: modeCleared),
-                      ],
-                      const SizedBox(height: AppSpace.md),
-                      Text(
-                        item.trail.localizedTitle,
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                        style: AppTypography.display(size: 24, height: 1.08),
-                      ),
-                      const SizedBox(height: AppSpace.sm),
-                      Text(
-                        item.trail.localizedDescription,
-                        maxLines: 2,
-                        overflow: TextOverflow.ellipsis,
-                        style: AppTypography.body(
-                          size: 13,
-                          height: 1.3,
-                          color: a.textFaint,
                         ),
                       ),
-                      const SizedBox(height: AppSpace.md),
-                      if (item.total > 0) ...[
-                        AppProgressBar(
-                          value: pct,
-                          color: modeColor,
-                          trackColor: a.progressTrack,
-                        ),
-                        const SizedBox(height: 8),
-                      ],
-                      Row(
-                        children: [
-                          if (item.total > 0)
-                            Expanded(
-                              child: Text(
-                                item.statusLabel ??
-                                    context.l10n.trailsScenesOf(item.done, item.total),
-                                maxLines: 1,
-                                overflow: TextOverflow.ellipsis,
-                                style: AppTypography.body(
-                                  size: 12,
-                                  weight: FontWeight.w600,
-                                  color: mode != null
-                                      ? DifficultyVisuals.onSky(
-                                          modeColor,
-                                        ).withValues(alpha: 0.88)
-                                      : a.textFaint,
-                                ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.fromLTRB(
+                      AppSpace.xl,
+                      AppSpace.lg + 2,
+                      AppSpace.xl,
+                      AppSpace.lg,
+                    ),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          children: [
+                            SectionLabel(
+                              context.l10n.trailsTrailNumber(
+                                _roman(item.chapterIndex),
                               ),
-                            )
-                          else
-                            const Spacer(),
-                          Text(
-                            context.l10n.commonContinue,
-                            style: AppTypography.cta(
-                              size: 12,
+                              size: 10,
                               color: modeColor,
                             ),
-                          ),
-                          const SizedBox(width: 4),
-                          CinematicIcon(
-                            glyph: CinematicGlyph.forward,
-                            size: AppMetrics.chipIcon,
-                            accent: modeColor,
-                            framed: false,
+                            const Spacer(),
+                            SoftBadge(
+                              text: context.l10n.journeyNow,
+                              accent: modeColor,
+                              solid: true,
+                            ),
+                          ],
+                        ),
+                        if (travessia) ...[
+                          const SizedBox(height: AppSpace.sm),
+                          SoftBadge(
+                            text: context.l10n.journeyTravessiaAhead,
+                            glyph: CinematicGlyph.mountain,
+                            accent: AppRoles.reward,
                           ),
                         ],
-                      ),
-                    ],
+                        if (mode != null) ...[
+                          const SizedBox(height: AppSpace.sm + 2),
+                          ModeStatusChip(
+                            difficulty: mode,
+                            cleared: modeCleared,
+                          ),
+                        ],
+                        const SizedBox(height: AppSpace.md),
+                        Text(
+                          item.trail.localizedTitle,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: AppTypography.display(size: 24, height: 1.08),
+                        ),
+                        const SizedBox(height: AppSpace.sm),
+                        Text(
+                          item.trail.localizedDescription,
+                          maxLines: 2,
+                          overflow: TextOverflow.ellipsis,
+                          style: AppTypography.body(
+                            size: 13,
+                            height: 1.3,
+                            color: a.textFaint,
+                          ),
+                        ),
+                        const SizedBox(height: AppSpace.md),
+                        if (item.total > 0) ...[
+                          AppProgressBar(
+                            value: pct,
+                            color: modeColor,
+                            trackColor: a.progressTrack,
+                            height: 8,
+                          ),
+                          const SizedBox(height: 8),
+                        ],
+                        Row(
+                          children: [
+                            if (item.total > 0)
+                              Expanded(
+                                child: Text(
+                                  left > 0
+                                      ? context.l10n.journeyScenesLeft(left)
+                                      : (item.statusLabel ??
+                                          context.l10n.trailsScenesOf(
+                                            item.done,
+                                            item.total,
+                                          )),
+                                  maxLines: 1,
+                                  overflow: TextOverflow.ellipsis,
+                                  style: AppTypography.body(
+                                    size: 12,
+                                    weight: FontWeight.w700,
+                                    color: mode != null
+                                        ? DifficultyVisuals.onSky(
+                                            modeColor,
+                                          ).withValues(alpha: 0.92)
+                                        : a.textFaint,
+                                  ),
+                                ),
+                              )
+                            else
+                              const Spacer(),
+                            Text(
+                              context.l10n.journeyPlay,
+                              style: AppTypography.cta(
+                                size: 12,
+                                color: modeColor,
+                              ),
+                            ),
+                            const SizedBox(width: 4),
+                            CinematicIcon(
+                              glyph: CinematicGlyph.forward,
+                              size: AppMetrics.chipIcon,
+                              accent: modeColor,
+                              framed: false,
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
         ),
@@ -672,6 +756,19 @@ class _QuietStation extends StatelessWidget {
                   color: chrome ?? a.textFaint,
                 ),
               ),
+              if (!isLocked &&
+                  !isSoon &&
+                  !isDone &&
+                  item.total > 0 &&
+                  item.done > 0) ...[
+                const SizedBox(height: 8),
+                AppProgressBar(
+                  value: item.done / item.total,
+                  color: chrome ?? accent,
+                  trackColor: a.progressTrack,
+                  height: 5,
+                ),
+              ],
             ],
           ),
         ),
@@ -680,31 +777,32 @@ class _QuietStation extends StatelessWidget {
     );
 
     final lit = chrome != null && !isLocked && !isSoon;
+    final body = lit
+        ? Material(
+            color: Colors.transparent,
+            child: Ink(
+              decoration: DifficultyVisuals.stationCard(
+                accent: chrome,
+                baseFill: a.cardFill,
+                lit: item.done > 0 && !isDone,
+                sealed: sealedIdle,
+              ),
+              child: Padding(padding: stationPadding, child: content),
+            ),
+          )
+        : GlassCard(
+            padding: stationPadding,
+            color: isLocked ? a.cardFill.withValues(alpha: 0.55) : null,
+            child: content,
+          );
+
     return Opacity(
       opacity: alpha,
-      child: lit
-          ? Material(
-              color: Colors.transparent,
-              child: InkWell(
-                onTap: onTap,
-                borderRadius: BorderRadius.circular(AppRadii.lg),
-                child: Ink(
-                  decoration: DifficultyVisuals.stationCard(
-                    accent: chrome,
-                    baseFill: a.cardFill,
-                    lit: false,
-                    sealed: sealedIdle,
-                  ),
-                  child: Padding(padding: stationPadding, child: content),
-                ),
-              ),
-            )
-          : GlassCard(
-              onTap: onTap,
-              padding: stationPadding,
-              color: isLocked ? a.cardFill.withValues(alpha: 0.55) : null,
-              child: content,
-            ),
+      child: ActPress(
+        onTap: onTap,
+        depth: isLocked || isSoon ? 0 : 3,
+        child: body,
+      ),
     );
   }
 

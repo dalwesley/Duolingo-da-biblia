@@ -91,7 +91,9 @@ class JuntosSegmentTabs extends StatelessWidget {
     ({String label, CinematicGlyph? glyph, bool alert}) item,
   ) {
     final selected = i == index;
-    final ink = selected ? AppColors.night : a.textSecondary;
+    // Seleção = tinta escura na pílula branca; idle = chrome frio (não
+    // branco/secondary — senão some a hierarquia e a tela fica sem vida).
+    final ink = selected ? AppColors.night : a.iconMuted;
     return Semantics(
       button: true,
       selected: selected,

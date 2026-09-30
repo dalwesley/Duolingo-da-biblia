@@ -312,6 +312,10 @@
   "categorySistematicaTitle": "Sistemática e dogmática",
   "celebrationBackHome": "Voltar ao início",
   "celebrationBackToMap": "Voltar ao mapa",
+  "celebrationCleanScene": "Cena limpa",
+  "@celebrationCleanScene": {
+    "description": "100% de acertos e nenhuma lâmpada apagada"
+  },
   "celebrationCommitmentBeyond": "Além do compromisso de {goal} dias.",
   "@celebrationCommitmentBeyond": {
     "placeholders": {
@@ -1905,7 +1909,23 @@
     }
   },
   "journeyNow": "Agora",
+  "journeyPlay": "Jogar",
+  "@journeyPlay": {
+    "description": "CTA da estação atual no mapa"
+  },
+  "journeyScenesLeft": "{count, plural, =1{Falta 1 cena} other{Faltam {count} cenas}}",
+  "@journeyScenesLeft": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "journeySoonHint": "Em breve · esta trilha ainda está sendo escrita.",
+  "journeyTravessiaAhead": "Travessia à frente",
+  "@journeyTravessiaAhead": {
+    "description": "Próxima cena da trilha é boss"
+  },
   "journeyYouAreHere": "Onde você está",
   "juntosAccept": "Aceitar",
   "juntosBeforeLeaveBody": "Escolha quem vai conduzir o grupo depois de você.",
@@ -2555,16 +2575,10 @@
       }
     }
   },
-  "lessonComboMeterSemantics": "Combo {count} · {filled} de {cycle} até reacender",
+  "lessonComboMeterSemantics": "Sequência {count}",
   "@lessonComboMeterSemantics": {
     "placeholders": {
       "count": {
-        "type": "int"
-      },
-      "filled": {
-        "type": "int"
-      },
-      "cycle": {
         "type": "int"
       }
     }
@@ -2603,7 +2617,6 @@
       }
     }
   },
-  "lessonLampRelit": "Cinco seguidas: uma lâmpada reacendeu.",
   "lessonLampsLeft": "{count, plural, =0{As lâmpadas acabaram — cada erro apaga uma.} =1{Resta 1 lâmpada — cada erro apaga uma.} other{Restam {count} lâmpadas — cada erro apaga uma.}}",
   "@lessonLampsLeft": {
     "description": "Lâmpada = vida dentro da cena",
@@ -2704,11 +2717,11 @@
   "mascotFailedKicker": "Faltou luz",
   "mascotGood": "Boa cena. A trilha te espera amanhã.",
   "mascotHeadlineBoss": "Travessia concluída",
-  "mascotHeadlinePerfect": "100% de acertos",
+  "mascotHeadlinePerfect": "Tudo certo · bônus de passos",
   "mascotHeadlineReplay": "Você voltou ao texto",
   "mascotHeadlineScene": "Cena concluída",
   "mascotKickerBoss": "Travessia final",
-  "mascotKickerPerfect": "Sem erro",
+  "mascotKickerPerfect": "Cena limpa",
   "mascotKickerReplay": "Revisão",
   "mascotKickerScene": "Mais uma cena",
   "mascotPerfect": "Nenhuma lâmpada perdida. Isso fica.",

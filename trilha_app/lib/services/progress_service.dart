@@ -1954,7 +1954,9 @@ class ProgressService extends ChangeNotifier {
     if (changed) await _save();
   }
 
-  /// Calcula passos da lição: base × precisão × bônus perfeito × bônus lâmpadas.
+  /// Calcula passos da lição: base × precisão × bônus de cena limpa.
+  ///
+  /// Cena limpa = 100% de acertos (+25%) e nenhuma lâmpada apagada (+10%).
   static int computeLessonSteps({
     required int baseSteps,
     required int correct,
@@ -1965,8 +1967,8 @@ class ProgressService extends ChangeNotifier {
     if (total <= 0) return baseSteps;
     final accuracy = correct / total;
     var reward = baseSteps * accuracy;
-    if (accuracy >= 1) reward *= 1.25; // perfeito
-    if (lampsLeft >= maxLamps) reward *= 1.1; // sem erros de lâmpada
+    if (accuracy >= 1) reward *= 1.25; // cena limpa: tudo certo
+    if (lampsLeft >= maxLamps) reward *= 1.1; // cena limpa: sem apagar
     return reward.round().clamp(10, baseSteps * 2);
   }
 
